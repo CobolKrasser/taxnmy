@@ -154,6 +154,50 @@ class LintTest(unittest.TestCase):
                                "  - gtin: \"04711174724857\"\n    source: https://example.org/b\n")
         self.assertEqual({(f.rule, f.level) for f in found}, {("S3", "signal")})
 
+    def _product(self, product, name, aliases=()):
+        text = PRODUCT.replace("ds224-plus", product).replace("name: DS224+", f"name: {name}")
+        if aliases:
+            text = text.replace("aliases: []", "aliases:\n" + "".join(f"  - {a}\n" for a in aliases))
+        self.write(f"products/synology/{product}.yaml", text)
+
+    def test_s3_same_words_other_order_is_a_signal(self):
+        self._product("latitude-5430-rugged", "Latitude 5430 Rugged")
+        self._product("latitude-rugged-5430", "Latitude Rugged 5430")
+        found = self.run_lint()
+        self.assertEqual({(f.file, f.line, f.rule, f.level) for f in found}, {
+            ("products/synology/latitude-5430-rugged.yaml", 1, "S3", "signal"),
+            ("products/synology/latitude-rugged-5430.yaml", 1, "S3", "signal"),
+        })
+        new = [f for f in found if f.file == "products/synology/latitude-rugged-5430.yaml"][0]
+        self.assertIn("'synology/latitude-5430-rugged' (products/synology/latitude-5430-rugged.yaml)", new.message)
+        self.assertIn("another order", new.message)
+
+    def test_s3_real_difference_in_order_is_also_a_signal(self):
+        self._product("csv-to-json-converter", "CSV to JSON Converter")
+        self._product("json-to-csv-converter", "JSON to CSV Converter")
+        found = self.run_lint()
+        self.assertEqual(len(found), 2, found)
+        self.assertTrue(all(f.rule == "S3" and f.level == "signal" for f in found), found)
+
+    def test_s3_other_order_of_an_alias_is_a_signal(self):
+        self._product("ds224-plus", "DS224+", aliases=["synology/diskstation-ds224-plus"])
+        self._product("ds224-plus-diskstation", "DS224+ DiskStation")
+        found = self.run_lint()
+        self.assertEqual({(f.line, f.level) for f in found if f.file == "products/synology/ds224-plus.yaml"}, {(10, "signal")})
+        self.assertIn("synology/diskstation-ds224-plus", [f for f in found if f.file.endswith("diskstation.yaml")][0].message)
+
+    def test_s3_other_order_needs_the_same_publisher(self):
+        self.write("publishers/acme.yaml", PUBLISHER.replace("synology", "acme").replace("Synology Inc.", "Acme"))
+        self._product("rugged-5430", "Rugged 5430")
+        self.write("products/acme/5430-rugged.yaml",
+                   PRODUCT.replace("synology/ds224-plus", "acme/5430-rugged").replace("publisher: synology", "publisher: acme").replace("name: DS224+", "name: 5430 Rugged"))
+        self.assertEqual(self.run_lint(), [])
+
+    def test_s3_extra_word_is_not_other_order(self):
+        self._product("ds224-plus", "DS224+")
+        self._product("ds224-plus-ii", "DS224+ II")
+        self.assertEqual(self.run_lint(), [])
+
     def test_rejected_fixture(self):
         found = lint.lint(REPO / "tests/fixtures/rejected", REPO / "schema")
         self.assertTrue(found)
