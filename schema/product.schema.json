@@ -61,8 +61,12 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["source"],
-      "minProperties": 2,
       "maxProperties": 2,
+      "anyOf": [
+        { "required": ["cpe"] },
+        { "required": ["purl"] },
+        { "required": ["gtin"] }
+      ],
       "properties": {
         "cpe": {
           "description": "A CPE 2.3 name.",
