@@ -91,3 +91,4 @@ the old key to `aliases` of the new one.
 ## Licence
 
 By contributing data you agree that it is published under [CC BY 4.0](LICENSE).
+By contributing code you agree that it is published under the [MIT licence](LICENSE-CODE).
