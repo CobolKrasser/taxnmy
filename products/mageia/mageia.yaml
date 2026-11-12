@@ -1,0 +1,11 @@
+key: mageia/mageia
+publisher: mageia
+name: Mageia
+kind: operating-system
+source: https://endoflife.date/mageia
+versions:
+  source: https://endoflife.date/mageia
+identifiers:
+- cpe: cpe:2.3:o:mageia:mageia
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mageia.md
+aliases: []

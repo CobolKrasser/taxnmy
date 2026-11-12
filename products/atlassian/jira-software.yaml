@@ -1,0 +1,11 @@
+key: atlassian/jira-software
+publisher: atlassian
+name: Jira Software
+kind: software
+source: https://endoflife.date/jira-software
+versions:
+  source: https://endoflife.date/jira-software
+identifiers:
+- cpe: cpe:2.3:a:atlassian:jira
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jira-software.md
+aliases: []

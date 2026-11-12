@@ -1,0 +1,17 @@
+key: oracle/mysql
+publisher: oracle
+name: MySQL
+kind: software
+source: https://endoflife.date/mysql
+versions:
+  source: https://endoflife.date/mysql
+identifiers:
+- purl: pkg:generic/mysql
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mysql.md
+- purl: pkg:winget/Oracle.MySQL
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mysql.md
+- purl: pkg:chocolatey/mysql
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mysql.md
+- cpe: cpe:2.3:a:oracle:mysql
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mysql.md
+aliases: []

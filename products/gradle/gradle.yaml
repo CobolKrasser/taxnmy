@@ -1,0 +1,11 @@
+key: gradle/gradle
+publisher: gradle
+name: Gradle
+kind: software
+source: https://endoflife.date/gradle
+versions:
+  source: https://endoflife.date/gradle
+identifiers:
+- cpe: cpe:2.3:a:gradle:gradle
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/gradle.md
+aliases: []

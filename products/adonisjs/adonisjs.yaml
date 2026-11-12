@@ -1,0 +1,13 @@
+key: adonisjs/adonisjs
+publisher: adonisjs
+name: AdonisJS
+kind: software
+source: https://endoflife.date/adonisjs
+versions:
+  source: https://endoflife.date/adonisjs
+identifiers:
+- purl: pkg:github/adonisjs/core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/adonisjs.md
+- purl: pkg:npm/%40adonisjs/core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/adonisjs.md
+aliases: []

@@ -1,0 +1,11 @@
+key: haproxy-ingress/haproxy-ingress
+publisher: haproxy-ingress
+name: HAProxy Ingress
+kind: software
+source: https://endoflife.date/haproxy-ingress
+versions:
+  source: https://endoflife.date/haproxy-ingress
+identifiers:
+- purl: pkg:github/jcmoraisjr/haproxy-ingress
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/haproxy-ingress.md
+aliases: []

@@ -1,0 +1,13 @@
+key: livewire/livewire
+publisher: livewire
+name: Livewire
+kind: software
+source: https://endoflife.date/livewire
+versions:
+  source: https://endoflife.date/livewire
+identifiers:
+- purl: pkg:composer/livewire/livewire
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/livewire.md
+- purl: pkg:github/livewire/livewire
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/livewire.md
+aliases: []

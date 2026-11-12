@@ -1,0 +1,11 @@
+key: slackware/slackware-linux
+publisher: slackware
+name: Slackware Linux
+kind: operating-system
+source: https://endoflife.date/slackware
+versions:
+  source: https://endoflife.date/slackware
+identifiers:
+- cpe: cpe:2.3:o:slackware:slackware_linux
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/slackware.md
+aliases: []

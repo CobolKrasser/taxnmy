@@ -1,0 +1,15 @@
+key: hibernate/hibernate-orm
+publisher: hibernate
+name: Hibernate ORM
+kind: software
+source: https://endoflife.date/hibernate-orm
+versions:
+  source: https://endoflife.date/hibernate-orm
+identifiers:
+- cpe: cpe:2.3:a:hibernate:hibernate_orm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md
+- purl: pkg:maven/org.hibernate.orm/hibernate-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md
+- purl: pkg:maven/org.hibernate/hibernate-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md
+aliases: []

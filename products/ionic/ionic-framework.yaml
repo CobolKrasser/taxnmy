@@ -1,0 +1,13 @@
+key: ionic/ionic-framework
+publisher: ionic
+name: Ionic Framework
+kind: software
+source: https://endoflife.date/ionic
+versions:
+  source: https://endoflife.date/ionic
+identifiers:
+- purl: pkg:github/ionic-team/ionic-framework
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ionic.md
+- purl: pkg:npm/%40ionic/core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ionic.md
+aliases: []

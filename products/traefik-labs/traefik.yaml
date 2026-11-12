@@ -1,0 +1,17 @@
+key: traefik-labs/traefik
+publisher: traefik-labs
+name: Traefik
+kind: software
+source: https://endoflife.date/traefik
+versions:
+  source: https://endoflife.date/traefik
+identifiers:
+- purl: pkg:brew/traefik
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/traefik.md
+- purl: pkg:github/traefik/traefik
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/traefik.md
+- purl: pkg:generic/traefik
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/traefik.md
+- cpe: cpe:2.3:a:traefik:traefik
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/traefik.md
+aliases: []

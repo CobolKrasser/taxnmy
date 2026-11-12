@@ -1,0 +1,11 @@
+key: mikrotik/routeros
+publisher: mikrotik
+name: RouterOS
+kind: operating-system
+source: https://endoflife.date/routeros
+versions:
+  source: https://endoflife.date/routeros
+identifiers:
+- cpe: cpe:2.3:o:mikrotik:routeros
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/routeros.md
+aliases: []

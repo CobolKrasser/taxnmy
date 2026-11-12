@@ -1,0 +1,15 @@
+key: meta/react-native
+publisher: meta
+name: React Native
+kind: software
+source: https://endoflife.date/react-native
+versions:
+  source: https://endoflife.date/react-native
+identifiers:
+- purl: pkg:github/facebook/react-native
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/react-native.md
+- purl: pkg:npm/react-native
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/react-native.md
+- cpe: cpe:2.3:a:facebook:react-native
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/react-native.md
+aliases: []

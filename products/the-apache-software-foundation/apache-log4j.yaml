@@ -1,0 +1,15 @@
+key: the-apache-software-foundation/apache-log4j
+publisher: the-apache-software-foundation
+name: Apache Log4j
+kind: software
+source: https://endoflife.date/log4j
+versions:
+  source: https://endoflife.date/log4j
+identifiers:
+- cpe: cpe:2.3:a:apache:log4j
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/log4j.md
+- purl: pkg:maven/org.apache.logging.log4j/log4j-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/log4j.md
+- purl: pkg:maven/log4j/log4j
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/log4j.md
+aliases: []

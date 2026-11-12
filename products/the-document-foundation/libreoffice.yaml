@@ -1,0 +1,11 @@
+key: the-document-foundation/libreoffice
+publisher: the-document-foundation
+name: LibreOffice
+kind: software
+source: https://endoflife.date/libreoffice
+versions:
+  source: https://endoflife.date/libreoffice
+identifiers:
+- cpe: cpe:2.3:a:libreoffice:libreoffice
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/libreoffice.md
+aliases: []

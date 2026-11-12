@@ -1,0 +1,11 @@
+key: openzfs/openzfs
+publisher: openzfs
+name: OpenZFS
+kind: software
+source: https://endoflife.date/openzfs
+versions:
+  source: https://endoflife.date/openzfs
+identifiers:
+- cpe: cpe:2.3:a:openzfs:openzfs
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openzfs.md
+aliases: []

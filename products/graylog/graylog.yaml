@@ -1,0 +1,11 @@
+key: graylog/graylog
+publisher: graylog
+name: Graylog
+kind: software
+source: https://endoflife.date/graylog
+versions:
+  source: https://endoflife.date/graylog
+identifiers:
+- cpe: cpe:2.3:a:graylog:graylog
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/graylog.md
+aliases: []

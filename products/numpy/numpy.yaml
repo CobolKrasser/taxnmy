@@ -1,0 +1,15 @@
+key: numpy/numpy
+publisher: numpy
+name: NumPy
+kind: software
+source: https://endoflife.date/numpy
+versions:
+  source: https://endoflife.date/numpy
+identifiers:
+- purl: pkg:pypi/numpy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/numpy.md
+- purl: pkg:github/numpy/numpy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/numpy.md
+- cpe: cpe:2.3:a:numpy:numpy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/numpy.md
+aliases: []

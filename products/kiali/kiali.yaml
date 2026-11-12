@@ -1,0 +1,11 @@
+key: kiali/kiali
+publisher: kiali
+name: Kiali
+kind: software
+source: https://endoflife.date/kiali
+versions:
+  source: https://endoflife.date/kiali
+identifiers:
+- purl: pkg:github/kiali/kiali
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kiali.md
+aliases: []

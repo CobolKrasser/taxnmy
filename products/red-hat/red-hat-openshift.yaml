@@ -1,0 +1,11 @@
+key: red-hat/red-hat-openshift
+publisher: red-hat
+name: Red Hat OpenShift
+kind: software
+source: https://endoflife.date/red-hat-openshift
+versions:
+  source: https://endoflife.date/red-hat-openshift
+identifiers:
+- cpe: cpe:2.3:a:redhat:openshift
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/red-hat-openshift.md
+aliases: []

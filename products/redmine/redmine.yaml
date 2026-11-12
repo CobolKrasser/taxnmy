@@ -1,0 +1,11 @@
+key: redmine/redmine
+publisher: redmine
+name: Redmine
+kind: software
+source: https://endoflife.date/redmine
+versions:
+  source: https://endoflife.date/redmine
+identifiers:
+- cpe: cpe:2.3:a:redmine:redmine
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/redmine.md
+aliases: []

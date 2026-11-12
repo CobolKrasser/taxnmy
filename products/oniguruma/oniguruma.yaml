@@ -1,0 +1,13 @@
+key: oniguruma/oniguruma
+publisher: oniguruma
+name: Oniguruma
+kind: software
+source: https://endoflife.date/oniguruma
+versions:
+  source: https://endoflife.date/oniguruma
+identifiers:
+- purl: pkg:github/kkos/oniguruma
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oniguruma.md
+- cpe: cpe:2.3:a:oniguruma_project:oniguruma
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oniguruma.md
+aliases: []

@@ -1,0 +1,11 @@
+key: suse/suse-linux-micro
+publisher: suse
+name: SUSE Linux Micro
+kind: operating-system
+source: https://endoflife.date/suse-linux-micro
+versions:
+  source: https://endoflife.date/suse-linux-micro
+identifiers:
+- cpe: cpe:2.3:o:suse:linux_enterprise_micro
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/suse-linux-micro.md
+aliases: []

@@ -1,0 +1,11 @@
+key: progress-chef/chef-infra-client
+publisher: progress-chef
+name: Chef Infra Client
+kind: software
+source: https://endoflife.date/chef-infra-client
+versions:
+  source: https://endoflife.date/chef-infra-client
+identifiers:
+- cpe: cpe:2.3:a:chef:chef
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/chef-infra-client.md
+aliases: []

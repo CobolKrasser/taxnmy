@@ -1,0 +1,11 @@
+key: exim/exim
+publisher: exim
+name: Exim
+kind: software
+source: https://endoflife.date/exim
+versions:
+  source: https://endoflife.date/exim
+identifiers:
+- cpe: cpe:2.3:a:exim:exim
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/exim.md
+aliases: []

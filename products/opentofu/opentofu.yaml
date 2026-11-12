@@ -1,0 +1,11 @@
+key: opentofu/opentofu
+publisher: opentofu
+name: OpenTofu
+kind: software
+source: https://endoflife.date/opentofu
+versions:
+  source: https://endoflife.date/opentofu
+identifiers:
+- purl: pkg:github/opentofu/opentofu
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/opentofu.md
+aliases: []

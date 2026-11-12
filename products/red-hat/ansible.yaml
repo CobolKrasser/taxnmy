@@ -1,0 +1,15 @@
+key: red-hat/ansible
+publisher: red-hat
+name: Ansible
+kind: software
+source: https://endoflife.date/ansible
+versions:
+  source: https://endoflife.date/ansible
+identifiers:
+- purl: pkg:pypi/ansible
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ansible.md
+- purl: pkg:github/ansible/ansible
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ansible.md
+- cpe: cpe:2.3:a:redhat:ansible
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ansible.md
+aliases: []

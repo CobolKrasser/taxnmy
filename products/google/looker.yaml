@@ -1,0 +1,11 @@
+key: google/looker
+publisher: google
+name: Looker
+kind: software
+source: https://endoflife.date/looker
+versions:
+  source: https://endoflife.date/looker
+identifiers:
+- cpe: cpe:2.3:a:google:looker
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/looker.md
+aliases: []

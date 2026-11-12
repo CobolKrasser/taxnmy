@@ -1,0 +1,11 @@
+key: atlassian/bamboo
+publisher: atlassian
+name: Bamboo
+kind: software
+source: https://endoflife.date/bamboo
+versions:
+  source: https://endoflife.date/bamboo
+identifiers:
+- cpe: cpe:2.3:a:atlassian:bamboo
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bamboo.md
+aliases: []

@@ -1,0 +1,11 @@
+key: ibm/ibm-db2
+publisher: ibm
+name: IBM Db2
+kind: software
+source: https://endoflife.date/ibm-db2
+versions:
+  source: https://endoflife.date/ibm-db2
+identifiers:
+- cpe: cpe:2.3:a:ibm:db2
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ibm-db2.md
+aliases: []

@@ -1,0 +1,11 @@
+key: clickhouse/clickhouse
+publisher: clickhouse
+name: ClickHouse
+kind: software
+source: https://endoflife.date/clickhouse
+versions:
+  source: https://endoflife.date/clickhouse
+identifiers:
+- purl: pkg:github/ClickHouse/ClickHouse
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/clickhouse.md
+aliases: []

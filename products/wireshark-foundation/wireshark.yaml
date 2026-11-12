@@ -1,0 +1,15 @@
+key: wireshark-foundation/wireshark
+publisher: wireshark-foundation
+name: Wireshark
+kind: software
+source: https://endoflife.date/wireshark
+versions:
+  source: https://endoflife.date/wireshark
+identifiers:
+- purl: pkg:winget/WiresharkFoundation.Wireshark
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md
+- purl: pkg:chocolatey/wireshark
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md
+- cpe: cpe:2.3:a:wireshark:wireshark
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md
+aliases: []

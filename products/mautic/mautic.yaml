@@ -1,0 +1,11 @@
+key: mautic/mautic
+publisher: mautic
+name: Mautic
+kind: software
+source: https://endoflife.date/mautic
+versions:
+  source: https://endoflife.date/mautic
+identifiers:
+- purl: pkg:github/mautic/mautic/
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mautic.md
+aliases: []

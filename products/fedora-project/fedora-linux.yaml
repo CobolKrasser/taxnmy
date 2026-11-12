@@ -1,0 +1,11 @@
+key: fedora-project/fedora-linux
+publisher: fedora-project
+name: Fedora Linux
+kind: operating-system
+source: https://endoflife.date/fedora
+versions:
+  source: https://endoflife.date/fedora
+identifiers:
+- cpe: cpe:2.3:o:fedoraproject:fedora
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/fedora.md
+aliases: []

@@ -1,0 +1,13 @@
+key: mend/renovate-cli
+publisher: mend
+name: Renovate CLI
+kind: software
+source: https://endoflife.date/renovate
+versions:
+  source: https://endoflife.date/renovate
+identifiers:
+- purl: pkg:npm/renovate
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/renovate.md
+- purl: pkg:brew/renovate
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/renovate.md
+aliases: []

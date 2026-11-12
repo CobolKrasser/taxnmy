@@ -1,0 +1,11 @@
+key: umbraco/umbraco-cms
+publisher: umbraco
+name: Umbraco CMS
+kind: software
+source: https://endoflife.date/umbraco
+versions:
+  source: https://endoflife.date/umbraco
+identifiers:
+- cpe: cpe:2.3:a:umbraco:umbraco_cms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/umbraco.md
+aliases: []

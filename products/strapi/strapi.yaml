@@ -1,0 +1,13 @@
+key: strapi/strapi
+publisher: strapi
+name: Strapi
+kind: software
+source: https://endoflife.date/strapi
+versions:
+  source: https://endoflife.date/strapi
+identifiers:
+- purl: pkg:github/strapi/strapi
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/strapi.md
+- purl: pkg:npm/%40strapi/strapi
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/strapi.md
+aliases: []

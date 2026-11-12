@@ -1,0 +1,11 @@
+key: sourcegraph/sourcegraph
+publisher: sourcegraph
+name: Sourcegraph
+kind: software
+source: https://endoflife.date/sourcegraph
+versions:
+  source: https://endoflife.date/sourcegraph
+identifiers:
+- cpe: cpe:2.3:a:sourcegraph:sourcegraph
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sourcegraph.md
+aliases: []

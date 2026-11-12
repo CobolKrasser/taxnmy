@@ -1,0 +1,11 @@
+key: microsoft/office
+publisher: microsoft
+name: Office
+kind: software
+source: https://endoflife.date/office
+versions:
+  source: https://endoflife.date/office
+identifiers:
+- cpe: cpe:2.3:a:microsoft:office
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/office.md
+aliases: []

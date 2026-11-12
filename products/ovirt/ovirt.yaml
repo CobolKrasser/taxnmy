@@ -1,0 +1,11 @@
+key: ovirt/ovirt
+publisher: ovirt
+name: oVirt
+kind: software
+source: https://endoflife.date/ovirt
+versions:
+  source: https://endoflife.date/ovirt
+identifiers:
+- purl: pkg:github/ovirt/ovirt-engine
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ovirt.md
+aliases: []

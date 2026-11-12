@@ -1,0 +1,15 @@
+key: the-apache-software-foundation/apache-tomcat
+publisher: the-apache-software-foundation
+name: Apache Tomcat
+kind: software
+source: https://endoflife.date/tomcat
+versions:
+  source: https://endoflife.date/tomcat
+identifiers:
+- purl: pkg:maven/org.apache.tomcat/tomcat
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+- purl: pkg:github/apache/tomcat
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+- cpe: cpe:2.3:a:apache:tomcat
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+aliases: []

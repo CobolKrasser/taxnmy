@@ -1,0 +1,11 @@
+key: hashicorp/nomad
+publisher: hashicorp
+name: Nomad
+kind: software
+source: https://endoflife.date/nomad
+versions:
+  source: https://endoflife.date/nomad
+identifiers:
+- cpe: cpe:2.3:a:hashicorp:nomad
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nomad.md
+aliases: []

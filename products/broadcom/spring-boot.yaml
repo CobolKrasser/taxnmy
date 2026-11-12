@@ -1,0 +1,55 @@
+key: broadcom/spring-boot
+publisher: broadcom
+name: Spring Boot
+kind: software
+source: https://endoflife.date/spring-boot
+versions:
+  source: https://endoflife.date/spring-boot
+identifiers:
+- purl: pkg:maven/org.springframework.boot/spring-boot
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-web
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-jdbc
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-data-mongodb
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-security
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-test
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-thymeleaf
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-amqp
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-websocket
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-actuator
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-undertow
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-autoconfigure
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-webflux
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-aop
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-tomcat
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-logging
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-batch
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-log4j2
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:maven/org.springframework.boot/spring-boot-starter-validation
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+- purl: pkg:github/spring-projects/spring-boot
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-boot.md
+aliases: []

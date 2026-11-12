@@ -1,0 +1,11 @@
+key: adobe/magento
+publisher: adobe
+name: Magento
+kind: software
+source: https://endoflife.date/magento
+versions:
+  source: https://endoflife.date/magento
+identifiers:
+- cpe: cpe:2.3:a:magento:magento
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/magento.md
+aliases: []

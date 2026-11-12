@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/apache-solr
+publisher: the-apache-software-foundation
+name: Apache Solr
+kind: software
+source: https://endoflife.date/solr
+versions:
+  source: https://endoflife.date/solr
+identifiers:
+- cpe: cpe:2.3:a:apache:solr
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/solr.md
+aliases: []

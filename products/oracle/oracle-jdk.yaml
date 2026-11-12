@@ -1,0 +1,15 @@
+key: oracle/oracle-jdk
+publisher: oracle
+name: Oracle JDK
+kind: software
+source: https://endoflife.date/oracle-jdk
+versions:
+  source: https://endoflife.date/oracle-jdk
+identifiers:
+- cpe: cpe:2.3:a:oracle:jdk
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oracle-jdk.md
+- cpe: cpe:2.3:a:oracle:jre
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oracle-jdk.md
+- cpe: cpe:2.3:a:oracle:java_se
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oracle-jdk.md
+aliases: []

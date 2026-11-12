@@ -1,0 +1,11 @@
+key: oracle/graalvm-community-edition
+publisher: oracle
+name: GraalVM Community Edition
+kind: software
+source: https://endoflife.date/graalvm-ce
+versions:
+  source: https://endoflife.date/graalvm-ce
+identifiers:
+- cpe: cpe:2.3:a:oracle:graalvm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/graalvm-ce.md
+aliases: []

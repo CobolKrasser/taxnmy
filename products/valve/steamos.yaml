@@ -1,0 +1,11 @@
+key: valve/steamos
+publisher: valve
+name: SteamOS
+kind: operating-system
+source: https://endoflife.date/steamos
+versions:
+  source: https://endoflife.date/steamos
+identifiers:
+- cpe: cpe:2.3:o:valvesoftware:steamos
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/steamos.md
+aliases: []

@@ -1,0 +1,11 @@
+key: proxmox/proxmox-backup-server
+publisher: proxmox
+name: Proxmox Backup Server
+kind: software
+source: https://endoflife.date/proxmox-backup-server
+versions:
+  source: https://endoflife.date/proxmox-backup-server
+identifiers:
+- purl: pkg:github/proxmox/proxmox-backup
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-backup-server.md
+aliases: []

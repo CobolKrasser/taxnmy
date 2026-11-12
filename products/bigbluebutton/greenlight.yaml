@@ -1,0 +1,11 @@
+key: bigbluebutton/greenlight
+publisher: bigbluebutton
+name: Greenlight
+kind: software
+source: https://endoflife.date/greenlight
+versions:
+  source: https://endoflife.date/greenlight
+identifiers:
+- cpe: cpe:2.3:a:bigbluebutton:greenlight
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/greenlight.md
+aliases: []

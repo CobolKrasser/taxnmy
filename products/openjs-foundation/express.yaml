@@ -1,0 +1,15 @@
+key: openjs-foundation/express
+publisher: openjs-foundation
+name: Express
+kind: software
+source: https://endoflife.date/express
+versions:
+  source: https://endoflife.date/express
+identifiers:
+- purl: pkg:github/expressjs/express
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/express.md
+- purl: pkg:npm/express
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/express.md
+- cpe: cpe:2.3:a:openjsf:express
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/express.md
+aliases: []

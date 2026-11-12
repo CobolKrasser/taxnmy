@@ -1,0 +1,11 @@
+key: proxmox/proxmox-mail-gateway
+publisher: proxmox
+name: Proxmox Mail Gateway
+kind: software
+source: https://endoflife.date/proxmox-mail-gateway
+versions:
+  source: https://endoflife.date/proxmox-mail-gateway
+identifiers:
+- purl: pkg:github/proxmox/pmg-api
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-mail-gateway.md
+aliases: []

@@ -1,0 +1,11 @@
+key: commvault/commvault
+publisher: commvault
+name: Commvault
+kind: software
+source: https://endoflife.date/commvault
+versions:
+  source: https://endoflife.date/commvault
+identifiers:
+- cpe: cpe:2.3:a:commvault:commvault
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/commvault.md
+aliases: []

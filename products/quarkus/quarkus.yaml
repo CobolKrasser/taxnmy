@@ -1,0 +1,13 @@
+key: quarkus/quarkus
+publisher: quarkus
+name: Quarkus
+kind: software
+source: https://endoflife.date/quarkus-framework
+versions:
+  source: https://endoflife.date/quarkus-framework
+identifiers:
+- cpe: cpe:2.3:a:quarkus:quarkus
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/quarkus-framework.md
+- purl: pkg:maven/io.quarkus.platform/quarkus-bom
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/quarkus-framework.md
+aliases: []

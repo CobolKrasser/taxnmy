@@ -1,0 +1,11 @@
+key: the-centos-project/centos-stream
+publisher: the-centos-project
+name: CentOS Stream
+kind: operating-system
+source: https://endoflife.date/centos-stream
+versions:
+  source: https://endoflife.date/centos-stream
+identifiers:
+- cpe: cpe:2.3:o:centos:stream
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/centos-stream.md
+aliases: []

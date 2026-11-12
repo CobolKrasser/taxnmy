@@ -1,0 +1,13 @@
+key: google/angularjs
+publisher: google
+name: AngularJS
+kind: software
+source: https://endoflife.date/angularjs
+versions:
+  source: https://endoflife.date/angularjs
+identifiers:
+- purl: pkg:npm/angular
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/angularjs.md
+- purl: pkg:github/angular/angular.js
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/angularjs.md
+aliases: []

@@ -1,0 +1,11 @@
+key: proxmox/proxmox-datacenter-manager
+publisher: proxmox
+name: Proxmox Datacenter Manager
+kind: software
+source: https://endoflife.date/proxmox-datacenter-manager
+versions:
+  source: https://endoflife.date/proxmox-datacenter-manager
+identifiers:
+- purl: pkg:github/proxmox/proxmox-datacenter-manager
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-datacenter-manager.md
+aliases: []

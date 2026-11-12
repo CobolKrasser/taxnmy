@@ -1,0 +1,11 @@
+key: podman/podman
+publisher: podman
+name: Podman
+kind: software
+source: https://endoflife.date/podman
+versions:
+  source: https://endoflife.date/podman
+identifiers:
+- cpe: cpe:2.3:a:podman_project:podman
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/podman.md
+aliases: []

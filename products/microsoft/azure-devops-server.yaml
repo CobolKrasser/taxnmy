@@ -1,0 +1,11 @@
+key: microsoft/azure-devops-server
+publisher: microsoft
+name: Azure DevOps Server
+kind: software
+source: https://endoflife.date/azure-devops-server
+versions:
+  source: https://endoflife.date/azure-devops-server
+identifiers:
+- cpe: cpe:2.3:o:microsoft:azure_devops_server
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/azure-devops-server.md
+aliases: []

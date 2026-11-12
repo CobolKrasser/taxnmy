@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/apache-lucene
+publisher: the-apache-software-foundation
+name: Apache Lucene
+kind: software
+source: https://endoflife.date/apache-lucene
+versions:
+  source: https://endoflife.date/apache-lucene
+identifiers:
+- cpe: cpe:2.3:a:apache:lucene
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-lucene.md
+aliases: []

@@ -1,0 +1,11 @@
+key: adobe/adobe-coldfusion
+publisher: adobe
+name: Adobe ColdFusion
+kind: software
+source: https://endoflife.date/coldfusion
+versions:
+  source: https://endoflife.date/coldfusion
+identifiers:
+- cpe: cpe:2.3:a:adobe:coldfusion
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
+aliases: []

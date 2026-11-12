@@ -1,0 +1,13 @@
+key: vercel/next-js
+publisher: vercel
+name: Next.js
+kind: software
+source: https://endoflife.date/nextjs
+versions:
+  source: https://endoflife.date/nextjs
+identifiers:
+- purl: pkg:npm/next
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nextjs.md
+- purl: pkg:github/vercel/next.js
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nextjs.md
+aliases: []
