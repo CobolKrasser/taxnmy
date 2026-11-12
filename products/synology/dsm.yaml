@@ -1,0 +1,11 @@
+key: synology/dsm
+publisher: synology
+name: DSM
+kind: operating-system
+source: https://www.synology.com/en-global/dsm
+versions:
+  source: https://www.synology.com/en-global/releaseNote/DSM
+identifiers:
+- cpe: cpe:2.3:o:synology:diskstation_manager
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:synology:diskstation_manager
+aliases: []

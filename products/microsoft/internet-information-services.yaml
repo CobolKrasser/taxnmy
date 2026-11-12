@@ -1,0 +1,11 @@
+key: microsoft/internet-information-services
+publisher: microsoft
+name: Internet Information Services
+kind: software
+source: https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis
+versions:
+  source: https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis
+identifiers:
+- cpe: cpe:2.3:a:microsoft:internet_information_services
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:microsoft:internet_information_services
+aliases: []

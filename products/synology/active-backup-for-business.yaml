@@ -1,0 +1,11 @@
+key: synology/active-backup-for-business
+publisher: synology
+name: Active Backup for Business
+kind: software
+source: https://www.synology.com/en-global/dsm/feature/active-backup-business
+versions:
+  source: https://www.synology.com/en-global/releaseNote/ActiveBackup
+identifiers:
+- cpe: cpe:2.3:a:synology:active_backup_for_business
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:synology:active_backup_for_business
+aliases: []

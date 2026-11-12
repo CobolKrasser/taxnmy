@@ -1,0 +1,11 @@
+key: drupal-association/drupal
+publisher: drupal-association
+name: Drupal
+kind: software
+source: https://www.drupal.org/project/drupal
+versions:
+  source: https://www.drupal.org/project/drupal/releases
+identifiers:
+- cpe: cpe:2.3:a:drupal:drupal
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:drupal:drupal
+aliases: []

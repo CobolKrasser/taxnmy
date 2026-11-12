@@ -1,0 +1,11 @@
+key: microsoft/visual-studio-code
+publisher: microsoft
+name: Visual Studio Code
+kind: software
+source: https://code.visualstudio.com/
+versions:
+  source: https://code.visualstudio.com/updates
+identifiers:
+- cpe: cpe:2.3:a:microsoft:visual_studio_code
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:microsoft:visual_studio_code
+aliases: []

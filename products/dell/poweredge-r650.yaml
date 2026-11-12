@@ -1,0 +1,11 @@
+key: dell/poweredge-r650
+publisher: dell
+name: PowerEdge R650
+kind: device
+source: https://www.dell.com/support/home/en-us/product-support/product/poweredge-r650/docs
+versions:
+  source: https://www.dell.com/support/home/en-us/product-support/product/poweredge-r650/drivers
+identifiers:
+- cpe: cpe:2.3:h:dell:poweredge_r650
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:h:dell:poweredge_r650
+aliases: []

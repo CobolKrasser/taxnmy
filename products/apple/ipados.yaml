@@ -1,0 +1,11 @@
+key: apple/ipados
+publisher: apple
+name: iPadOS
+kind: operating-system
+source: https://www.apple.com/ipados/
+versions:
+  source: https://support.apple.com/en-us/100100
+identifiers:
+- cpe: cpe:2.3:o:apple:ipados
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:apple:ipados
+aliases: []

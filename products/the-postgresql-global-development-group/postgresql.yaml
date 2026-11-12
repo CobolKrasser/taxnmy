@@ -1,0 +1,11 @@
+key: the-postgresql-global-development-group/postgresql
+publisher: the-postgresql-global-development-group
+name: PostgreSQL
+kind: software
+source: https://www.postgresql.org/about/
+versions:
+  source: https://www.postgresql.org/docs/release/
+identifiers:
+- cpe: cpe:2.3:a:postgresql:postgresql
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:postgresql:postgresql
+aliases: []
