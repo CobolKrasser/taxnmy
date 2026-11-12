@@ -111,6 +111,21 @@ code on every pull request; S4–S8 will be judged by an AI referee with the sou
 | S8 | A value that only an AI mentions, without a confirming source, is not accepted. | code and AI |
 | S9 | The rules themselves name no brand or product. | review |
 
+## Scope
+
+TAXNMY records products, their publishers, where their versions are published, and the codes
+others use for them. It does not record:
+
+- **instances**: a single unit of a product, its serial number or where it is installed;
+- **technical specifications**, such as capacity, power use or dimensions. If they are added
+  later, it will only be from a fixed vocabulary, with a unit and a source for every value;
+- **prices**;
+- **composition**: the parts a product is built from, and their firmware;
+- **names in other scripts** than the Latin script.
+
+The schema accepts no fields other than the ones it defines, so a proposal with any of these values
+is rejected on S1. A change of the scope goes through a pull request, like any other change.
+
 ## Repository layout
 
 ```
