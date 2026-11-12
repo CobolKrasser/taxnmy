@@ -80,7 +80,7 @@ products/example/bad.yaml:5: S1: 'kind' is a required property
 ```
 
 - An **error** rejects the pull request.
-- A **signal** (a CPE or GTIN that another product also has) does not reject it. The referee
+- A **signal** (a CPE or GTIN that another product also has, or a key with the same words as another key or alias of the same publisher in another order) does not reject it. The referee
   decides with S4 whether it is a product of its own.
 
 ## Renaming

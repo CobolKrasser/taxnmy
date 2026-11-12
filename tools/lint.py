@@ -173,6 +173,31 @@ def check_unique(records: list, kind: str, findings: list) -> None:
 
     if kind != "product":
         return
+
+    # Same words in another order, within one publisher: a signal for S4.
+    # Words are the parts between the dashes of the product part of a key.
+    orders: dict[tuple, dict] = {}
+    for value, hits in names.items():
+        if value.count("/") != 1:
+            continue
+        publisher, product = value.split("/")
+        orders.setdefault((publisher, tuple(sorted(product.split("-")))), {})[value] = hits
+    for group in orders.values():
+        if len(group) < 2:
+            continue
+        for value, hits in sorted(group.items()):
+            for rec, path, what in hits:
+                others = sorted(
+                    f"{other!r} ({h[0].file})"
+                    for other, other_hits in group.items() if other != value
+                    for h in other_hits if h[0].file != rec.file
+                )
+                if others:
+                    findings.append(Finding(
+                        rec.file, rec.line(*path), "S3",
+                        f"{what} {value!r} has the same words as {', '.join(others)} in another order; "
+                        "the referee checks with S4 whether this is a product of its own", "signal"))
+
     codes: dict[tuple, list] = {}
     for rec in records:
         for i, ident in enumerate(rec.data.get("identifiers", [])):

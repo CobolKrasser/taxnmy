@@ -103,7 +103,7 @@ code on every pull request; S4–S8 will be judged by an AI referee with the sou
 | --- | --- | --- |
 | S1 | All required fields are filled, with a source URL for each value. | code |
 | S2 | The key follows the writing rule; each part is at most 64 characters. | code |
-| S3 | No match on key or alias. A match on a purl is a duplicate; a match on CPE or GTIN is a signal for S4. | code |
+| S3 | No match on key or alias. A match on a purl is a duplicate; a match on CPE or GTIN, or the same words in another order within one publisher, is a signal for S4. | code |
 | S4 | It is a product of its own: its own update stream or its own vulnerabilities. | AI, with the source |
 | S5 | The publisher is whoever publishes the updates. | AI, with the source |
 | S6 | The names are written as in the source. Above 40 characters: is it a name or a description? | AI, with the source |
