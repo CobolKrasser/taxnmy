@@ -133,4 +133,4 @@ Schema; GitHub Actions runs the lint on every pull request.
 The data (`products/`, `publishers/`) is licensed under [CC BY 4.0](LICENSE). Data from
 endoflife.date is used under its MIT licence, with attribution; see [NOTICE](NOTICE).
 
-The licence of the code has not been chosen yet.
+The code (`schema/`, `tools/`, `tests/`) is licensed under the [MIT licence](LICENSE-CODE).
