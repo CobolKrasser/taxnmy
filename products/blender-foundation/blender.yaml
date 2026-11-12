@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:blender:blender
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/blender.md
+- homebrew: blender
+  source: https://formulae.brew.sh/cask/blender
 aliases: []

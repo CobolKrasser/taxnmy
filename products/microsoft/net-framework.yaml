@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/dotnetfx
 versions:
   source: https://endoflife.date/dotnetfx
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:a:microsoft:.net_framework
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:microsoft:.net_framework
 aliases: []

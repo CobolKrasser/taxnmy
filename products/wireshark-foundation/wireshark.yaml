@@ -12,4 +12,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md
 - cpe: cpe:2.3:a:wireshark:wireshark
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md
+- homebrew: wireshark-app
+  source: https://formulae.brew.sh/cask/wireshark-app
 aliases: []

@@ -10,4 +10,6 @@ identifiers:
   source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:mozilla:firefox
 - purl: pkg:generic/firefox
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/firefox.md
+- homebrew: firefox
+  source: https://formulae.brew.sh/cask/firefox
 aliases: []

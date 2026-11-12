@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/bind-9
 versions:
   source: https://endoflife.date/bind-9
-identifiers: []
+identifiers:
+- winget: ISC.Bind
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISC/Bind
 aliases: []

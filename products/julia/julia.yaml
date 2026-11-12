@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:julialang:julia
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/julia.md
+- homebrew: julia-app
+  source: https://formulae.brew.sh/cask/julia-app
 aliases: []

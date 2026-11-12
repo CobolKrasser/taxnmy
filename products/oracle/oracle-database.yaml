@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:oracle:database_server
   source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:oracle:database_server
+- cpe: cpe:2.3:a:oracle:database
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:oracle:database
 aliases: []

@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:microsoft:visual_studio_code
   source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:microsoft:visual_studio_code
+- winget: Microsoft.VisualStudioCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode
 aliases: []

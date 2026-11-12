@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/product.schema.json",
   "title": "TAXNMY product",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "One product that can receive updates. Stored as products/<publisher>/<product>.yaml. The form of the key (rule S2) and uniqueness (rule S3) are checked by tools/lint.py, not by this schema. A product has no parent field: software does not need a parent product.",
   "type": "object",
   "additionalProperties": false,
@@ -58,7 +58,7 @@
       "pattern": "^https?://[^\\s]+$"
     },
     "identifier": {
-      "description": "Exactly one code (cpe, purl or gtin) and the source where it was found.",
+      "description": "Exactly one code (cpe, purl, gtin, winget or homebrew) and the source where it was found.",
       "type": "object",
       "additionalProperties": false,
       "required": ["source"],
@@ -66,7 +66,9 @@
       "anyOf": [
         { "required": ["cpe"] },
         { "required": ["purl"] },
-        { "required": ["gtin"] }
+        { "required": ["gtin"] },
+        { "required": ["winget"] },
+        { "required": ["homebrew"] }
       ],
       "properties": {
         "cpe": {
@@ -83,6 +85,16 @@
           "description": "A GTIN-8, GTIN-12, GTIN-13 or GTIN-14, written as a string.",
           "type": "string",
           "pattern": "^([0-9]{8}|[0-9]{12,14})$"
+        },
+        "winget": {
+          "description": "A winget package identifier, such as Mozilla.Firefox.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_+-]*(\\.[A-Za-z0-9_+-]+)+$"
+        },
+        "homebrew": {
+          "description": "A Homebrew cask or formula token, such as firefox.",
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9@._+-]*$"
         },
         "source": { "$ref": "#/$defs/url" }
       }

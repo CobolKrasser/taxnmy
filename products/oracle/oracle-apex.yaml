@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/oracle-apex
 versions:
   source: https://endoflife.date/oracle-apex
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:a:oracle:apex
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:oracle:apex
 aliases: []

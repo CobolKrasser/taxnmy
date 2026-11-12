@@ -201,17 +201,17 @@ def check_unique(records: list, kind: str, findings: list) -> None:
     codes: dict[tuple, list] = {}
     for rec in records:
         for i, ident in enumerate(rec.data.get("identifiers", [])):
-            for field, norm in (("purl", _norm_purl), ("cpe", _norm_cpe), ("gtin", _norm_gtin)):
+            for field, norm in (("purl", _norm_purl), ("cpe", _norm_cpe), ("gtin", _norm_gtin), ("winget", str.lower), ("homebrew", str.lower)):
                 if field in ident:
                     codes.setdefault((field, norm(ident[field])), []).append((rec, ("identifiers", i, field)))
     for (field, value), hits in sorted(codes.items()):
         if len({h[0].file for h in hits}) < 2:
             continue
-        duplicate = field == "purl" and not value.startswith("pkg:generic/")
+        duplicate = field in ("winget", "homebrew") or (field == "purl" and not value.startswith("pkg:generic/"))
         for rec, path in hits:
             others = ", ".join(sorted({h[0].file for h in hits if h[0].file != rec.file}))
             if duplicate:
-                findings.append(Finding(rec.file, rec.line(*path), "S3", f"purl {value!r} already belongs to {others}; this is a duplicate"))
+                findings.append(Finding(rec.file, rec.line(*path), "S3", f"{field} {value!r} already belongs to {others}; this is a duplicate"))
             else:
                 findings.append(Finding(rec.file, rec.line(*path), "S3", f"{field} {value!r} also appears in {others}; the referee checks with S4 whether this is a product of its own", "signal"))
 

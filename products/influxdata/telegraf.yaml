@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/telegraf
 versions:
   source: https://endoflife.date/telegraf
-identifiers: []
+identifiers:
+- winget: InfluxData.Telegraf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Telegraf
 aliases: []

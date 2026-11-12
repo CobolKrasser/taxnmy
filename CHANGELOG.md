@@ -11,6 +11,13 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 1.1.0 — 2026-11-12
+
+- Identifiers: two new codes, `winget` (a winget package identifier) and `homebrew` (a Homebrew
+  cask or formula token), each with its own `source`. Package URL has no type for either.
+- Like a purl, each points to one package and so to one update stream: a match on another product
+  is a duplicate (S3).
+
 ## 1.0.0 — 2026-11-12
 
 First version.

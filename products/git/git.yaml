@@ -12,4 +12,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/git.md
 - purl: pkg:generic/git
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/git.md
+- winget: Git.Git
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/Git
 aliases: []

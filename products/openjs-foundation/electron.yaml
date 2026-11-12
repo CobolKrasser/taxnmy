@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:electronjs:electron
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/electron.md
+- homebrew: electron
+  source: https://formulae.brew.sh/cask/electron
 aliases: []

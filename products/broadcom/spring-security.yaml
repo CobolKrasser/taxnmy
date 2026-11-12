@@ -18,4 +18,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
 - purl: pkg:maven/org.springframework.security/spring-security-oauth2-client
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+- cpe: cpe:2.3:a:vmware:spring_security
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:vmware:spring_security
 aliases: []

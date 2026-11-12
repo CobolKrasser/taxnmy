@@ -149,6 +149,21 @@ class LintTest(unittest.TestCase):
                                "  - cpe: cpe:2.3:o:synology:ds224:7.2\n    source: https://example.org/b\n")
         self.assertEqual({(f.rule, f.level) for f in found}, {("S3", "signal")})
 
+    def test_s3_winget_is_a_duplicate(self):
+        found = self._two_with("  - winget: Synology.Assistant\n    source: https://example.org/a\n",
+                               "  - winget: synology.assistant\n    source: https://example.org/b\n")
+        self.assertEqual({(f.rule, f.level, f.line) for f in found}, {("S3", "error", 9)})
+        self.assertIn("winget 'synology.assistant' already belongs to", found[0].message)
+
+    def test_s3_homebrew_is_a_duplicate(self):
+        ident = "  - homebrew: synology-drive\n    source: https://example.org/a\n"
+        found = self._two_with(ident, ident)
+        self.assertEqual({(f.rule, f.level) for f in found}, {("S3", "error")})
+
+    def test_s1_winget_must_be_an_identifier(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []", "identifiers:\n  - winget: not an id\n    source: https://example.org/a"))
+        self.assertOnly("S1", 9, contains="identifiers/0")
+
     def test_s3_gtin_is_a_signal(self):
         found = self._two_with("  - gtin: \"4711174724857\"\n    source: https://example.org/a\n",
                                "  - gtin: \"04711174724857\"\n    source: https://example.org/b\n")

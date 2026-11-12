@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:github/opentofu/opentofu
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/opentofu.md
+- winget: OpenTofu.Tofu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu
 aliases: []
