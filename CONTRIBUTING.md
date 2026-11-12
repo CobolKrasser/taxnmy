@@ -40,12 +40,16 @@ identifiers:                         # optional; each code with its own source
     source: https://...
   - gtin: "0123456789012"
     source: https://...
+  - winget: Example.App
+    source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Example/App
+  - homebrew: example
+    source: https://formulae.brew.sh/cask/example
 aliases: []
 ```
 
 - `source` is the page where the name and kind of the product can be read.
 - `versions.source` is the page where the versions of the product are published.
-- Each identifier holds exactly one code (`cpe`, `purl` or `gtin`) and a `source`.
+- Each identifier holds exactly one code (`cpe`, `purl`, `gtin`, `winget` or `homebrew`) and a `source`.
 - A GTIN is written in quotes, so leading zeros are kept.
 - A product has no parent field. Software does not need to name the operating system it runs on.
 

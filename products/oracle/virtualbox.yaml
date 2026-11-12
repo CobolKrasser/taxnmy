@@ -8,4 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:oracle:virtualbox
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/virtualbox.md
+- winget: Oracle.VirtualBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VirtualBox
+- homebrew: virtualbox
+  source: https://formulae.brew.sh/cask/virtualbox
 aliases: []

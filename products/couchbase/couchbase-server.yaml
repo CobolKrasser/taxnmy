@@ -8,4 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:couchbase:couchbase_server
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/couchbase-server.md
+- homebrew: couchbase-server-community
+  source: https://formulae.brew.sh/cask/couchbase-server-community
+- homebrew: couchbase-server-enterprise
+  source: https://formulae.brew.sh/cask/couchbase-server-enterprise
 aliases: []

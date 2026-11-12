@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/veeam-one
 versions:
   source: https://endoflife.date/veeam-one
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:a:veeam:one
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:veeam:one
 aliases: []

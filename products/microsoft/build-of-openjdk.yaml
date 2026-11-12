@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/microsoft-build-of-openjdk
 versions:
   source: https://endoflife.date/microsoft-build-of-openjdk
-identifiers: []
+identifiers:
+- homebrew: microsoft-openjdk
+  source: https://formulae.brew.sh/cask/microsoft-openjdk
 aliases: []

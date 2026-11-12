@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:hashicorp:boundary
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/boundary.md
+- winget: Hashicorp.Boundary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Boundary
 aliases: []

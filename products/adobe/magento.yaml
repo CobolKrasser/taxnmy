@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:magento:magento
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/magento.md
+- cpe: cpe:2.3:a:adobe:magento
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:adobe:magento
 aliases: []

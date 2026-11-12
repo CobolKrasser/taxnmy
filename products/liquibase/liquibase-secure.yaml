@@ -10,4 +10,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/liquibase-secure.md
 - purl: pkg:maven/org.liquibase/liquibase-commercial
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/liquibase-secure.md
+- homebrew: liquibase-secure
+  source: https://formulae.brew.sh/cask/liquibase-secure
 aliases: []

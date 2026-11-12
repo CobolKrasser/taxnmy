@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:github/proxmox/pmg-api
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-mail-gateway.md
+- cpe: cpe:2.3:a:proxmox:proxmox_mail_gateway
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:proxmox:proxmox_mail_gateway
 aliases: []

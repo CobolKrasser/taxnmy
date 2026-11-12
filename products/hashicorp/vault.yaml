@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:hashicorp:vault
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hashicorp-vault.md
+- winget: Hashicorp.Vault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vault
 aliases: []

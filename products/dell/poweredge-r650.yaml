@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:h:dell:poweredge_r650
   source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:h:dell:poweredge_r650
+- cpe: cpe:2.3:o:dell:poweredge_r650_firmware
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:dell:poweredge_r650_firmware
 aliases: []

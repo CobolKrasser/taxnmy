@@ -5,5 +5,7 @@ kind: device
 source: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-fortiwifi-60f-series.pdf
 versions:
   source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:h:fortinet:fortigate_60f
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:h:fortinet:fortigate_60f
 aliases: []

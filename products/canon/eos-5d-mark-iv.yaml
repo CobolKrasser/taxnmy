@@ -5,5 +5,9 @@ kind: device
 source: https://sg.canon/en/support/0400852102
 versions:
   source: https://sg.canon/en/support/0400852102
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:h:canon:eos_5d_mark_iv
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:h:canon:eos_5d_mark_iv
+- cpe: cpe:2.3:o:canon:eos_5d_mark_iv_firmware
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:canon:eos_5d_mark_iv_firmware
 aliases: []

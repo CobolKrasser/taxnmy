@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/cisco-ios-xe
 versions:
   source: https://endoflife.date/cisco-ios-xe
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:o:cisco:ios_xe
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:cisco:ios_xe
 aliases: []
