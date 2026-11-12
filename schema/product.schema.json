@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CobolKrasser/taxnmy/schema/product.schema.json",
+  "title": "TAXNMY product",
+  "description": "One product that can receive updates. Stored as products/<publisher>/<product>.yaml. The form of the key (rule S2) and uniqueness (rule S3) are checked by tools/lint.py, not by this schema. A product has no parent field: software does not need a parent product.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["key", "publisher", "name", "kind", "source", "versions"],
+  "properties": {
+    "key": {
+      "description": "publisher/product, written with the writing rule. Never changes and is never reused.",
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "description": "The key of the publisher: whoever publishes the updates. Must match a file in publishers/.",
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "description": "The product name as the source writes it.",
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "description": "device: a physical product that carries firmware. operating-system: an operating system. software: software.",
+      "enum": ["device", "operating-system", "software"]
+    },
+    "source": {
+      "description": "The page where the name and kind of the product can be read.",
+      "$ref": "#/$defs/url"
+    },
+    "versions": {
+      "description": "Where the versions of this product are published. For a device, the versions are its firmware.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source"],
+      "properties": {
+        "source": { "$ref": "#/$defs/url" }
+      }
+    },
+    "identifiers": {
+      "description": "Existing codes for this product, each with its own source.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/identifier" }
+    },
+    "aliases": {
+      "description": "Earlier or other keys of this product.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "url": {
+      "type": "string",
+      "pattern": "^https?://[^\\s]+$"
+    },
+    "identifier": {
+      "description": "Exactly one code (cpe, purl or gtin) and the source where it was found.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source"],
+      "minProperties": 2,
+      "maxProperties": 2,
+      "properties": {
+        "cpe": {
+          "description": "A CPE 2.3 name.",
+          "type": "string",
+          "pattern": "^cpe:2\\.3:[aho]:[^:\\s]+:[^:\\s]+(:[^:\\s]+)*$"
+        },
+        "purl": {
+          "description": "A package URL, without version or qualifiers.",
+          "type": "string",
+          "pattern": "^pkg:[a-zA-Z.+-]+/[^@?#\\s]+$"
+        },
+        "gtin": {
+          "description": "A GTIN-8, GTIN-12, GTIN-13 or GTIN-14, written as a string.",
+          "type": "string",
+          "pattern": "^([0-9]{8}|[0-9]{12,14})$"
+        },
+        "source": { "$ref": "#/$defs/url" }
+      }
+    }
+  }
+}
