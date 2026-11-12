@@ -83,6 +83,19 @@ products/example/bad.yaml:5: S1: 'kind' is a required property
 - A **signal** (a CPE or GTIN that another product also has, or a key with the same words as another key or alias of the same publisher in another order) does not reject it. The referee
   decides with S4 whether it is a product of its own.
 
+## Changing the schema
+
+The schemas in `schema/` are the taxonomy of TAXNMY, and they carry a version (the field `version`).
+A pull request that changes a schema also raises that version in both schemas, and adds an entry to
+[CHANGELOG.md](CHANGELOG.md):
+
+- **major** when existing files or readers can become invalid;
+- **minor** for an addition that existing files and readers can ignore;
+- **patch** for a change that does not change which files are valid.
+
+The tests check that both schemas carry the same version, and that the newest CHANGELOG entry
+matches it.
+
 ## Renaming
 
 A key never changes and is never reused. When a product is renamed, add a new product file and move
