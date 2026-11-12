@@ -1,0 +1,164 @@
+import shutil
+import sys
+import tempfile
+import textwrap
+import unittest
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "tools"))
+import lint  # noqa: E402
+
+PUBLISHER = """\
+key: synology
+name: Synology Inc.
+source: https://www.synology.com/en-global/company
+aliases: []
+"""
+
+PRODUCT = """\
+key: synology/ds224-plus
+publisher: synology
+name: DS224+
+kind: device
+source: https://www.synology.com/en-global/products/DS224+
+versions:
+  source: https://www.synology.com/en-global/releaseNote/DSM
+identifiers: []
+aliases: []
+"""
+
+
+class LintTest(unittest.TestCase):
+    def setUp(self):
+        self.root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.root)
+        self.write("publishers/synology.yaml", PUBLISHER)
+
+    def write(self, rel, text):
+        path = self.root / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(textwrap.dedent(text), encoding="utf-8")
+
+    def run_lint(self):
+        return lint.lint(self.root, REPO / "schema")
+
+    def errors(self):
+        return [f for f in self.run_lint() if f.level == "error"]
+
+    def assertOnly(self, rule, line, file="products/synology/ds224-plus.yaml", contains=""):
+        found = self.errors()
+        self.assertEqual(len(found), 1, found)
+        self.assertEqual((found[0].file, found[0].line, found[0].rule), (file, line, rule), found)
+        self.assertIn(contains, found[0].message)
+
+    def test_repository_passes(self):
+        self.assertEqual([f for f in lint.lint(REPO) if f.level == "error"], [])
+
+    def test_good_product_passes(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT)
+        self.assertEqual(self.run_lint(), [])
+
+    # S1
+    def test_s1_missing_field(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("kind: device\n", ""))
+        self.assertOnly("S1", 1, contains="'kind' is a required property")
+
+    def test_s1_missing_source_of_versions(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("  source: https://www.synology.com/en-global/releaseNote/DSM\n", "  {}\n").replace("versions:\n  {}", "versions: {}"))
+        self.assertOnly("S1", 6, contains="'source' is a required property")
+
+    def test_s1_identifier_without_source(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []", "identifiers:\n  - gtin: \"4711174724857\""))
+        self.assertOnly("S1", 9, contains="identifiers/0")
+
+    def test_s1_unknown_kind(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("kind: device", "kind: hardware"))
+        self.assertOnly("S1", 4, contains="'hardware' is not one of")
+
+    def test_s1_source_must_be_url(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("source: https://www.synology.com/en-global/products/DS224+", "source: the box"))
+        self.assertOnly("S1", 5, contains="source")
+
+    def test_s1_unknown_publisher(self):
+        (self.root / "publishers/synology.yaml").unlink()
+        self.write("products/synology/ds224-plus.yaml", PRODUCT)
+        self.assertOnly("S1", 2, contains="has no file publishers/synology.yaml")
+
+    def test_s1_software_needs_no_parent(self):
+        self.write("publishers/the-php-group.yaml", "key: the-php-group\nname: The PHP Group\nsource: https://www.php.net/license/\n")
+        self.write("products/the-php-group/php.yaml", "key: the-php-group/php\npublisher: the-php-group\nname: PHP\nkind: software\nsource: https://www.php.net/\nversions:\n  source: https://www.php.net/releases/\n")
+        self.assertEqual(self.errors(), [])
+
+    # S2
+    def test_s2_key_does_not_follow_name(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("key: synology/ds224-plus", "key: synology/ds224"))
+        found = self.errors()
+        self.assertTrue(found and all(f.rule == "S2" and f.line == 1 for f in found), found)
+        self.assertIn("expected synology/ds224-plus", found[0].message)
+
+    def test_s2_key_with_capitals(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("key: synology/ds224-plus", "key: synology/DS224+"))
+        self.assertOnly("S2", 1, contains="has characters other than")
+
+    def test_s2_part_longer_than_64(self):
+        name = "A" * 65
+        self.write(f"products/synology/{name.lower()}.yaml", PRODUCT.replace("ds224-plus", name.lower()).replace("DS224+", name))
+        self.assertOnly("S2", 1, file=f"products/synology/{name.lower()}.yaml", contains="the maximum is 64")
+
+    def test_s2_non_latin_name(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("name: DS224+", "name: DS224+ 专业版"))
+        self.assertOnly("S2", 3, contains="only the Latin script")
+
+    def test_s2_file_name_must_match_key(self):
+        self.write("products/synology/other.yaml", PRODUCT)
+        self.assertOnly("S2", 1, file="products/synology/other.yaml", contains="does not match the file name")
+
+    def test_s2_publisher_key_follows_name(self):
+        self.write("publishers/synology.yaml", PUBLISHER.replace("name: Synology Inc.", "name: Synology Europe"))
+        self.assertOnly("S2", 1, file="publishers/synology.yaml", contains="expected 'synology-europe'")
+
+    # S3
+    def test_s3_key_matches_alias(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT)
+        self.write("products/synology/ds224-plus-ii.yaml", PRODUCT.replace("ds224-plus", "ds224-plus-ii").replace("name: DS224+", "name: DS224+ II").replace("aliases: []", "aliases:\n  - synology/ds224-plus"))
+        found = self.errors()
+        self.assertEqual({(f.file, f.line, f.rule) for f in found}, {
+            ("products/synology/ds224-plus.yaml", 1, "S3"),
+            ("products/synology/ds224-plus-ii.yaml", 10, "S3"),
+        })
+
+    def _two_with(self, ident_a, ident_b):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []", "identifiers:\n" + ident_a))
+        self.write("products/synology/ds423.yaml", PRODUCT.replace("ds224-plus", "ds423").replace("DS224+", "DS423").replace("identifiers: []", "identifiers:\n" + ident_b))
+        return self.run_lint()
+
+    def test_s3_purl_is_a_duplicate(self):
+        ident = "  - purl: pkg:deb/ubuntu/php\n    source: https://example.org/a\n"
+        found = self._two_with(ident, ident.replace("ubuntu/php", "ubuntu/PHP"))
+        self.assertEqual({(f.rule, f.level, f.line) for f in found}, {("S3", "error", 9)})
+        self.assertIn("duplicate", found[0].message)
+
+    def test_s3_generic_purl_is_a_signal(self):
+        ident = "  - purl: pkg:generic/php\n    source: https://example.org/a\n"
+        found = self._two_with(ident, ident)
+        self.assertEqual({(f.rule, f.level) for f in found}, {("S3", "signal")})
+
+    def test_s3_cpe_is_a_signal(self):
+        found = self._two_with("  - cpe: cpe:2.3:h:synology:ds224\n    source: https://example.org/a\n",
+                               "  - cpe: cpe:2.3:o:synology:ds224:7.2\n    source: https://example.org/b\n")
+        self.assertEqual({(f.rule, f.level) for f in found}, {("S3", "signal")})
+
+    def test_s3_gtin_is_a_signal(self):
+        found = self._two_with("  - gtin: \"4711174724857\"\n    source: https://example.org/a\n",
+                               "  - gtin: \"04711174724857\"\n    source: https://example.org/b\n")
+        self.assertEqual({(f.rule, f.level) for f in found}, {("S3", "signal")})
+
+    def test_rejected_fixture(self):
+        found = lint.lint(REPO / "tests/fixtures/rejected", REPO / "schema")
+        self.assertTrue(found)
+        self.assertTrue(all(f.rule == "S2" and f.line == 1 for f in found), found)
+
+
+if __name__ == "__main__":
+    unittest.main()
