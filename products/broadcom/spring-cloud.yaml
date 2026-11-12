@@ -1,0 +1,21 @@
+key: broadcom/spring-cloud
+publisher: broadcom
+name: Spring Cloud
+kind: software
+source: https://endoflife.date/spring-cloud
+versions:
+  source: https://endoflife.date/spring-cloud
+identifiers:
+- purl: pkg:github/spring-cloud/spring-cloud-release
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-cloud.md
+- purl: pkg:maven/org.springframework.cloud/spring-cloud-dependencies
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-cloud.md
+- purl: pkg:maven/org.springframework.cloud/spring-cloud-commons
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-cloud.md
+- purl: pkg:maven/org.springframework.cloud/spring-cloud-config
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-cloud.md
+- purl: pkg:maven/org.springframework.cloud/spring-cloud-gateway
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-cloud.md
+- purl: pkg:maven/org.springframework.cloud/spring-cloud-netflix
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-cloud.md
+aliases: []

@@ -1,0 +1,11 @@
+key: progress-chef/chef-infra-server
+publisher: progress-chef
+name: Chef Infra Server
+kind: software
+source: https://endoflife.date/chef-infra-server
+versions:
+  source: https://endoflife.date/chef-infra-server
+identifiers:
+- cpe: cpe:2.3:a:progress:chef_infra_server
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/chef-infra-server.md
+aliases: []

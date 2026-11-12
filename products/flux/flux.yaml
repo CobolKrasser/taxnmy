@@ -1,0 +1,11 @@
+key: flux/flux
+publisher: flux
+name: Flux
+kind: software
+source: https://endoflife.date/flux
+versions:
+  source: https://endoflife.date/flux
+identifiers:
+- cpe: cpe:2.3:a:fluxcd:flux2
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/flux.md
+aliases: []

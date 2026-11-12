@@ -1,0 +1,11 @@
+key: antix/antix-linux
+publisher: antix
+name: antiX Linux
+kind: operating-system
+source: https://endoflife.date/antix
+versions:
+  source: https://endoflife.date/antix
+identifiers:
+- cpe: cpe:2.3:o:antixlinux:antix_linux
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/antix-linux.md
+aliases: []

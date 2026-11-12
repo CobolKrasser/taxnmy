@@ -1,0 +1,37 @@
+key: amazon-web-services/amazon-corretto
+publisher: amazon-web-services
+name: Amazon Corretto
+kind: software
+source: https://endoflife.date/amazon-corretto
+versions:
+  source: https://endoflife.date/amazon-corretto
+identifiers:
+- cpe: cpe:2.3:a:amazon:corretto
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-27
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-26
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-25
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-24
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-23
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-22
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-21
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-20
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-19
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-18
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-17
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-11
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- purl: pkg:github/corretto/corretto-8
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+aliases: []

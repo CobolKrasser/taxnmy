@@ -1,0 +1,11 @@
+key: argo-project/argo-workflows
+publisher: argo-project
+name: Argo Workflows
+kind: software
+source: https://endoflife.date/argo-workflows
+versions:
+  source: https://endoflife.date/argo-workflows
+identifiers:
+- purl: pkg:github/argoproj/argo-workflows
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/argo-workflows.md
+aliases: []

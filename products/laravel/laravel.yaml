@@ -1,0 +1,15 @@
+key: laravel/laravel
+publisher: laravel
+name: Laravel
+kind: software
+source: https://endoflife.date/laravel
+versions:
+  source: https://endoflife.date/laravel
+identifiers:
+- purl: pkg:composer/laravel/framework
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/laravel.md
+- purl: pkg:github/laravel/framework
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/laravel.md
+- cpe: cpe:2.3:a:laravel:laravel
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/laravel.md
+aliases: []

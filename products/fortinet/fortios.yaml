@@ -1,0 +1,11 @@
+key: fortinet/fortios
+publisher: fortinet
+name: FortiOS
+kind: operating-system
+source: https://endoflife.date/fortios
+versions:
+  source: https://endoflife.date/fortios
+identifiers:
+- cpe: cpe:2.3:o:fortinet:fortios
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/fortios.md
+aliases: []

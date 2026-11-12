@@ -1,0 +1,11 @@
+key: weechat/weechat
+publisher: weechat
+name: WeeChat
+kind: software
+source: https://endoflife.date/weechat
+versions:
+  source: https://endoflife.date/weechat
+identifiers:
+- cpe: cpe:2.3:a:weechat:weechat
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/weechat.md
+aliases: []

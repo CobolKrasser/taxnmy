@@ -1,0 +1,11 @@
+key: atlassian/confluence
+publisher: atlassian
+name: Confluence
+kind: software
+source: https://endoflife.date/confluence
+versions:
+  source: https://endoflife.date/confluence
+identifiers:
+- cpe: cpe:2.3:a:atlassian:confluence
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/confluence.md
+aliases: []

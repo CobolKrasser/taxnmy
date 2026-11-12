@@ -1,0 +1,13 @@
+key: mondoo/cnspec
+publisher: mondoo
+name: cnspec
+kind: software
+source: https://endoflife.date/cnspec
+versions:
+  source: https://endoflife.date/cnspec
+identifiers:
+- cpe: cpe:2.3:a:cnspec:cnspec
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/cnspec.md
+- purl: pkg:github/mondoohq/cnspec
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/cnspec.md
+aliases: []

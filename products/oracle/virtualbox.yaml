@@ -1,0 +1,11 @@
+key: oracle/virtualbox
+publisher: oracle
+name: VirtualBox
+kind: software
+source: https://endoflife.date/virtualbox
+versions:
+  source: https://endoflife.date/virtualbox
+identifiers:
+- cpe: cpe:2.3:a:oracle:virtualbox
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/virtualbox.md
+aliases: []

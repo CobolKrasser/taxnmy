@@ -1,0 +1,11 @@
+key: dovecot/dovecot
+publisher: dovecot
+name: Dovecot
+kind: software
+source: https://endoflife.date/dovecot
+versions:
+  source: https://endoflife.date/dovecot
+identifiers:
+- cpe: cpe:2.3:a:dovecot:dovecot
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dovecot.md
+aliases: []

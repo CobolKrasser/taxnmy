@@ -1,0 +1,11 @@
+key: openvpn/openvpn
+publisher: openvpn
+name: OpenVPN
+kind: software
+source: https://endoflife.date/openvpn
+versions:
+  source: https://endoflife.date/openvpn
+identifiers:
+- purl: pkg:github/openvpn/openvpn
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openvpn.md
+aliases: []

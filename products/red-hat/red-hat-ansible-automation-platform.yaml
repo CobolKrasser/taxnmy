@@ -1,0 +1,11 @@
+key: red-hat/red-hat-ansible-automation-platform
+publisher: red-hat
+name: Red Hat Ansible Automation Platform
+kind: software
+source: https://endoflife.date/red-hat-ansible-automation-platform
+versions:
+  source: https://endoflife.date/red-hat-ansible-automation-platform
+identifiers:
+- cpe: cpe:2.3:a:redhat:ansible_automation_platform
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/red-hat-ansible-automation-platform.md
+aliases: []

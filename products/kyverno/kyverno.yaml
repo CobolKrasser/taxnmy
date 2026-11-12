@@ -1,0 +1,11 @@
+key: kyverno/kyverno
+publisher: kyverno
+name: Kyverno
+kind: software
+source: https://endoflife.date/kyverno
+versions:
+  source: https://endoflife.date/kyverno
+identifiers:
+- purl: pkg:github/kyverno/kyverno
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kyverno.md
+aliases: []

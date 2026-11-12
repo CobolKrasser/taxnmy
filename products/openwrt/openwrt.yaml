@@ -1,0 +1,11 @@
+key: openwrt/openwrt
+publisher: openwrt
+name: OpenWrt
+kind: operating-system
+source: https://endoflife.date/openwrt
+versions:
+  source: https://endoflife.date/openwrt
+identifiers:
+- purl: pkg:github/openwrt/openwrt
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openwrt.md
+aliases: []

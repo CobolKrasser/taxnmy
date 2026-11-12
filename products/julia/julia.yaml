@@ -1,0 +1,11 @@
+key: julia/julia
+publisher: julia
+name: Julia
+kind: software
+source: https://endoflife.date/julia
+versions:
+  source: https://endoflife.date/julia
+identifiers:
+- cpe: cpe:2.3:a:julialang:julia
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/julia.md
+aliases: []

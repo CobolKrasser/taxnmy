@@ -1,0 +1,11 @@
+key: tails/tails
+publisher: tails
+name: Tails
+kind: operating-system
+source: https://endoflife.date/tails
+versions:
+  source: https://endoflife.date/tails
+identifiers:
+- cpe: cpe:2.3:o:tails_project:tails
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tails.md
+aliases: []

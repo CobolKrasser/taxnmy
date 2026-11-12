@@ -1,0 +1,21 @@
+key: broadcom/spring-security
+publisher: broadcom
+name: Spring Security
+kind: software
+source: https://endoflife.date/spring-security
+versions:
+  source: https://endoflife.date/spring-security
+identifiers:
+- purl: pkg:github/spring-projects/spring-security
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+- purl: pkg:maven/org.springframework.security/spring-security-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+- purl: pkg:maven/org.springframework.security/spring-security-web
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+- purl: pkg:maven/org.springframework.security/spring-security-config
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+- purl: pkg:maven/org.springframework.security/spring-security-oauth2-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+- purl: pkg:maven/org.springframework.security/spring-security-oauth2-client
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-security.md
+aliases: []

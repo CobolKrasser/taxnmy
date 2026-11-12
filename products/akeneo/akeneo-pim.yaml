@@ -1,0 +1,13 @@
+key: akeneo/akeneo-pim
+publisher: akeneo
+name: Akeneo PIM
+kind: software
+source: https://endoflife.date/akeneo-pim
+versions:
+  source: https://endoflife.date/akeneo-pim
+identifiers:
+- cpe: cpe:2.3:a:akeneo:product_information_management
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/akeneo-pim.md
+- purl: pkg:github/akeneo/pim-community-dev
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/akeneo-pim.md
+aliases: []

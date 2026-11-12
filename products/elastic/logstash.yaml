@@ -1,0 +1,11 @@
+key: elastic/logstash
+publisher: elastic
+name: Logstash
+kind: software
+source: https://endoflife.date/logstash
+versions:
+  source: https://endoflife.date/logstash
+identifiers:
+- cpe: cpe:2.3:a:elastic:logstash
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/logstash.md
+aliases: []

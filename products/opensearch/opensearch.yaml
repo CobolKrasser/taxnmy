@@ -1,0 +1,11 @@
+key: opensearch/opensearch
+publisher: opensearch
+name: OpenSearch
+kind: software
+source: https://endoflife.date/opensearch
+versions:
+  source: https://endoflife.date/opensearch
+identifiers:
+- cpe: cpe:2.3:a:amazon:opensearch
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/opensearch.md
+aliases: []

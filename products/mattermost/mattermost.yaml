@@ -1,0 +1,11 @@
+key: mattermost/mattermost
+publisher: mattermost
+name: Mattermost
+kind: software
+source: https://endoflife.date/mattermost
+versions:
+  source: https://endoflife.date/mattermost
+identifiers:
+- cpe: cpe:2.3:a:mattermost:mattermost_server
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mattermost.md
+aliases: []

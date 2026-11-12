@@ -1,0 +1,15 @@
+key: phpmyadmin/phpmyadmin
+publisher: phpmyadmin
+name: phpMyAdmin
+kind: software
+source: https://endoflife.date/phpmyadmin
+versions:
+  source: https://endoflife.date/phpmyadmin
+identifiers:
+- purl: pkg:composer/phpmyadmin/phpmyadmin
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/phpmyadmin.md
+- purl: pkg:github/phpmyadmin/phpmyadmin
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/phpmyadmin.md
+- cpe: cpe:2.3:a:phpmyadmin:phpmyadmin
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/phpmyadmin.md
+aliases: []

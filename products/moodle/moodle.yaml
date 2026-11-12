@@ -1,0 +1,11 @@
+key: moodle/moodle
+publisher: moodle
+name: Moodle
+kind: software
+source: https://endoflife.date/moodle
+versions:
+  source: https://endoflife.date/moodle
+identifiers:
+- cpe: cpe:2.3:a:moodle:moodle
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/moodle.md
+aliases: []

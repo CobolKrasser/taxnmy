@@ -1,0 +1,11 @@
+key: ericsson/erlang
+publisher: ericsson
+name: Erlang
+kind: software
+source: https://endoflife.date/erlang
+versions:
+  source: https://endoflife.date/erlang
+identifiers:
+- cpe: cpe:2.3:a:erlang:erlang\/otp
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/erlang.md
+aliases: []

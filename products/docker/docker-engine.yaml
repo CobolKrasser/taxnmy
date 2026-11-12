@@ -1,0 +1,11 @@
+key: docker/docker-engine
+publisher: docker
+name: Docker Engine
+kind: software
+source: https://endoflife.date/docker-engine
+versions:
+  source: https://endoflife.date/docker-engine
+identifiers:
+- cpe: cpe:2.3:a:docker:engine
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/docker-engine.md
+aliases: []

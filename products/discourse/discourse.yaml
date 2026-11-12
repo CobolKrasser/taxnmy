@@ -1,0 +1,11 @@
+key: discourse/discourse
+publisher: discourse
+name: Discourse
+kind: software
+source: https://endoflife.date/discourse
+versions:
+  source: https://endoflife.date/discourse
+identifiers:
+- cpe: cpe:2.3:a:discourse:discourse
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/discourse.md
+aliases: []

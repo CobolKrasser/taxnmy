@@ -1,0 +1,11 @@
+key: linux-mint/linux-mint
+publisher: linux-mint
+name: Linux Mint
+kind: operating-system
+source: https://endoflife.date/linuxmint
+versions:
+  source: https://endoflife.date/linuxmint
+identifiers:
+- cpe: cpe:2.3:o:linuxmint:linuxmint
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/linuxmint.md
+aliases: []

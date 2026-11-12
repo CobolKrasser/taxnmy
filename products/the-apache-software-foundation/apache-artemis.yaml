@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/apache-artemis
+publisher: the-apache-software-foundation
+name: Apache Artemis
+kind: software
+source: https://endoflife.date/apache-artemis
+versions:
+  source: https://endoflife.date/apache-artemis
+identifiers:
+- purl: pkg:github/apache/artemis
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-artemis.md
+aliases: []

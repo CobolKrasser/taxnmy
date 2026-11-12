@@ -1,0 +1,11 @@
+key: quasar/quasar
+publisher: quasar
+name: Quasar
+kind: software
+source: https://endoflife.date/quasar
+versions:
+  source: https://endoflife.date/quasar
+identifiers:
+- purl: pkg:npm/quasar
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/quasar.md
+aliases: []

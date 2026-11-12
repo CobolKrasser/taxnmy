@@ -1,0 +1,41 @@
+key: microsoft/net
+publisher: microsoft
+name: .NET
+kind: software
+source: https://endoflife.date/dotnet
+versions:
+  source: https://endoflife.date/dotnet
+identifiers:
+- purl: pkg:nuget/Microsoft.NETCore.App
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.win-x64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.win-x86
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.win-arm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.win-arm64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.osx-x64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.osx-arm64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-x64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-musl-x64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-musl-arm64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-musl-arm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-bionic-x64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- purl: pkg:nuget/Microsoft.NETCore.App.Runtime.linux-bionic-arm64
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+- cpe: cpe:2.3:a:microsoft:.net
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md
+aliases: []

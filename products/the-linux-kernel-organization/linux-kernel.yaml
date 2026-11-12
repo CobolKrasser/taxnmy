@@ -1,0 +1,11 @@
+key: the-linux-kernel-organization/linux-kernel
+publisher: the-linux-kernel-organization
+name: Linux Kernel
+kind: operating-system
+source: https://endoflife.date/linux
+versions:
+  source: https://endoflife.date/linux
+identifiers:
+- cpe: cpe:2.3:o:linux:linux_kernel
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/linux-kernel.md
+aliases: []

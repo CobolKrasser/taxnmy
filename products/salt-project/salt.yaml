@@ -1,0 +1,11 @@
+key: salt-project/salt
+publisher: salt-project
+name: Salt
+kind: software
+source: https://endoflife.date/salt
+versions:
+  source: https://endoflife.date/salt
+identifiers:
+- cpe: cpe:2.3:a:saltstack:salt
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/salt.md
+aliases: []

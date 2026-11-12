@@ -1,0 +1,11 @@
+key: suse/suse-linux-enterprise-server
+publisher: suse
+name: SUSE Linux Enterprise Server
+kind: operating-system
+source: https://endoflife.date/sles
+versions:
+  source: https://endoflife.date/sles
+identifiers:
+- cpe: cpe:2.3:o:suse:sles
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sles.md
+aliases: []

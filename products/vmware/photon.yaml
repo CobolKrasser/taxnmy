@@ -1,0 +1,11 @@
+key: vmware/photon
+publisher: vmware
+name: Photon
+kind: operating-system
+source: https://endoflife.date/photon
+versions:
+  source: https://endoflife.date/photon
+identifiers:
+- cpe: cpe:2.3:o:vmware:photon_os
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vmware-photon.md
+aliases: []

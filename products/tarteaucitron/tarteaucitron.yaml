@@ -1,0 +1,15 @@
+key: tarteaucitron/tarteaucitron
+publisher: tarteaucitron
+name: tarteaucitron
+kind: software
+source: https://endoflife.date/tarteaucitron
+versions:
+  source: https://endoflife.date/tarteaucitron
+identifiers:
+- purl: pkg:github/AmauriC/tarteaucitron.js
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tarteaucitron.md
+- purl: pkg:npm/tarteaucitronjs
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tarteaucitron.md
+- cpe: cpe:2.3:a:amauri:tarteaucitronjs
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tarteaucitron.md
+aliases: []

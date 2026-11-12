@@ -1,0 +1,11 @@
+key: samba/samba
+publisher: samba
+name: Samba
+kind: software
+source: https://endoflife.date/samba
+versions:
+  source: https://endoflife.date/samba
+identifiers:
+- purl: pkg:github/samba-team/samba
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/samba.md
+aliases: []

@@ -1,0 +1,13 @@
+key: silverstripe/silverstripe-cms
+publisher: silverstripe
+name: Silverstripe CMS
+kind: software
+source: https://endoflife.date/silverstripe
+versions:
+  source: https://endoflife.date/silverstripe
+identifiers:
+- purl: pkg:composer/silverstripe/cms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/silverstripe.md
+- purl: pkg:github/silverstripe/silverstripe-installer
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/silverstripe.md
+aliases: []

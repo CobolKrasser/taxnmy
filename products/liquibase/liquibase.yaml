@@ -1,0 +1,11 @@
+key: liquibase/liquibase
+publisher: liquibase
+name: Liquibase
+kind: software
+source: https://endoflife.date/liquibase
+versions:
+  source: https://endoflife.date/liquibase
+identifiers:
+- cpe: cpe:2.3:a:liquibase:liquibase
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/liquibase.md
+aliases: []

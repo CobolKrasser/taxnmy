@@ -1,0 +1,15 @@
+key: composer/composer
+publisher: composer
+name: Composer
+kind: software
+source: https://endoflife.date/composer
+versions:
+  source: https://endoflife.date/composer
+identifiers:
+- purl: pkg:composer/composer/composer
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/composer.md
+- purl: pkg:github/composer/composer
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/composer.md
+- cpe: cpe:2.3:a:getcomposer:composer
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/composer.md
+aliases: []

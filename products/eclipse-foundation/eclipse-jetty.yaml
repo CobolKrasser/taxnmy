@@ -1,0 +1,13 @@
+key: eclipse-foundation/eclipse-jetty
+publisher: eclipse-foundation
+name: Eclipse Jetty
+kind: software
+source: https://endoflife.date/eclipse-jetty
+versions:
+  source: https://endoflife.date/eclipse-jetty
+identifiers:
+- purl: pkg:maven/org.eclipse.jetty/jetty-server
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eclipse-jetty.md
+- cpe: cpe:2.3:a:eclipse:jetty
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eclipse-jetty.md
+aliases: []

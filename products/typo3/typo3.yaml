@@ -1,0 +1,13 @@
+key: typo3/typo3
+publisher: typo3
+name: TYPO3
+kind: software
+source: https://endoflife.date/typo3
+versions:
+  source: https://endoflife.date/typo3
+identifiers:
+- purl: pkg:composer/typo3/cms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/typo3.md
+- cpe: cpe:2.3:a:typo3:typo3
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/typo3.md
+aliases: []

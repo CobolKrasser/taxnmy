@@ -1,0 +1,11 @@
+key: cksource/ckeditor
+publisher: cksource
+name: CKEditor
+kind: software
+source: https://endoflife.date/ckeditor
+versions:
+  source: https://endoflife.date/ckeditor
+identifiers:
+- cpe: cpe:2.3:a:ckeditor:ckeditor
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ckeditor.md
+aliases: []

@@ -1,0 +1,11 @@
+key: elastic/elastic-beats
+publisher: elastic
+name: Elastic Beats
+kind: software
+source: https://endoflife.date/beats
+versions:
+  source: https://endoflife.date/beats
+identifiers:
+- cpe: cpe:2.3:a:elastic:filebeat
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/beats.md
+aliases: []

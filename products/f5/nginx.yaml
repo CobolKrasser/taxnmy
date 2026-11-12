@@ -8,4 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:f5:nginx
   source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:f5:nginx
+- purl: pkg:generic/nginx
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nginx.md
+- purl: pkg:github/nginx/nginx
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nginx.md
 aliases: []

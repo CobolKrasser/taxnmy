@@ -1,0 +1,13 @@
+key: drush/drush
+publisher: drush
+name: Drush
+kind: software
+source: https://endoflife.date/drush
+versions:
+  source: https://endoflife.date/drush
+identifiers:
+- purl: pkg:composer/drush/drush
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/drush.md
+- purl: pkg:github/drush-ops/drush
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/drush.md
+aliases: []

@@ -1,0 +1,11 @@
+key: gitlab/gitlab
+publisher: gitlab
+name: GitLab
+kind: software
+source: https://endoflife.date/gitlab
+versions:
+  source: https://endoflife.date/gitlab
+identifiers:
+- cpe: cpe:2.3:a:gitlab:gitlab
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/gitlab.md
+aliases: []

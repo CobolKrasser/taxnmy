@@ -1,0 +1,19 @@
+key: bootstrap/bootstrap
+publisher: bootstrap
+name: Bootstrap
+kind: software
+source: https://endoflife.date/bootstrap
+versions:
+  source: https://endoflife.date/bootstrap
+identifiers:
+- purl: pkg:npm/bootstrap
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bootstrap.md
+- purl: pkg:nuget/bootstrap
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bootstrap.md
+- purl: pkg:gem/bootstrap
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bootstrap.md
+- purl: pkg:composer/twbs/bootstrap
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bootstrap.md
+- purl: pkg:github/twbs/bootstrap
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bootstrap.md
+aliases: []

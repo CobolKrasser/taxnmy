@@ -1,0 +1,11 @@
+key: ibm/ibm-mq
+publisher: ibm
+name: IBM MQ
+kind: software
+source: https://endoflife.date/ibm-mq
+versions:
+  source: https://endoflife.date/ibm-mq
+identifiers:
+- cpe: cpe:2.3:a:ibm:mq
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ibm-mq.md
+aliases: []

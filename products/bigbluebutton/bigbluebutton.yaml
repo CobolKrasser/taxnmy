@@ -1,0 +1,11 @@
+key: bigbluebutton/bigbluebutton
+publisher: bigbluebutton
+name: BigBlueButton
+kind: software
+source: https://endoflife.date/bigbluebutton
+versions:
+  source: https://endoflife.date/bigbluebutton
+identifiers:
+- cpe: cpe:2.3:a:bigbluebutton:bigbluebutton
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bigbluebutton.md
+aliases: []

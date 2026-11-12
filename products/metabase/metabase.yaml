@@ -1,0 +1,13 @@
+key: metabase/metabase
+publisher: metabase
+name: Metabase
+kind: software
+source: https://endoflife.date/metabase
+versions:
+  source: https://endoflife.date/metabase
+identifiers:
+- purl: pkg:github/metabase/metabase
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/metabase.md
+- cpe: cpe:2.3:a:metabase:metabase
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/metabase.md
+aliases: []

@@ -1,0 +1,11 @@
+key: gitlab/gitlab-runner
+publisher: gitlab
+name: GitLab Runner
+kind: software
+source: https://endoflife.date/gitlab-runner
+versions:
+  source: https://endoflife.date/gitlab-runner
+identifiers:
+- cpe: cpe:2.3:a:gitlab:runner
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/gitlab-runner.md
+aliases: []

@@ -1,0 +1,13 @@
+key: jruby/jruby
+publisher: jruby
+name: JRuby
+kind: software
+source: https://endoflife.date/jruby
+versions:
+  source: https://endoflife.date/jruby
+identifiers:
+- purl: pkg:github/jruby/jruby
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jruby.md
+- purl: pkg:maven/org.jruby/jruby
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jruby.md
+aliases: []

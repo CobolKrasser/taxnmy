@@ -1,0 +1,11 @@
+key: tarantool/tarantool
+publisher: tarantool
+name: Tarantool
+kind: software
+source: https://endoflife.date/tarantool
+versions:
+  source: https://endoflife.date/tarantool
+identifiers:
+- cpe: cpe:2.3:a:tarantool:tarantool
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tarantool.md
+aliases: []

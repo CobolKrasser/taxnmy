@@ -1,0 +1,11 @@
+key: backdrop-cms/backdrop
+publisher: backdrop-cms
+name: Backdrop
+kind: software
+source: https://endoflife.date/backdrop
+versions:
+  source: https://endoflife.date/backdrop
+identifiers:
+- cpe: cpe:2.3:a:backdropcms:backdrop_cms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/backdrop.md
+aliases: []
