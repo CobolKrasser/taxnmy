@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/apache-http-server
+publisher: the-apache-software-foundation
+name: Apache HTTP Server
+kind: software
+source: https://httpd.apache.org/
+versions:
+  source: https://httpd.apache.org/download.cgi
+identifiers:
+- cpe: cpe:2.3:a:apache:http_server
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:apache:http_server
+aliases: []

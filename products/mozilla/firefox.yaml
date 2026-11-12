@@ -1,0 +1,11 @@
+key: mozilla/firefox
+publisher: mozilla
+name: Firefox
+kind: software
+source: https://www.mozilla.org/en-US/firefox/
+versions:
+  source: https://www.mozilla.org/en-US/firefox/releases/
+identifiers:
+- cpe: cpe:2.3:a:mozilla:firefox
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:mozilla:firefox
+aliases: []

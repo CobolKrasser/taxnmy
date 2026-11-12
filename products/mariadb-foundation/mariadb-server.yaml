@@ -1,0 +1,11 @@
+key: mariadb-foundation/mariadb-server
+publisher: mariadb-foundation
+name: MariaDB Server
+kind: software
+source: https://mariadb.org/download/
+versions:
+  source: https://mariadb.com/docs/release-notes/community-server
+identifiers:
+- cpe: cpe:2.3:a:mariadb:mariadb
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:mariadb:mariadb
+aliases: []

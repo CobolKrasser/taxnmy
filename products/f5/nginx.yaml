@@ -1,0 +1,11 @@
+key: f5/nginx
+publisher: f5
+name: nginx
+kind: software
+source: https://nginx.org/en/
+versions:
+  source: https://nginx.org/en/CHANGES
+identifiers:
+- cpe: cpe:2.3:a:f5:nginx
+  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:f5:nginx
+aliases: []
