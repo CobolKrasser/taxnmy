@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CobolKrasser/taxnmy/schema/publisher.schema.json",
+  "title": "TAXNMY publisher",
+  "description": "Whoever publishes the updates of a product. Stored as publishers/<publisher>.yaml. The form of the key (rule S2) and uniqueness (rule S3) are checked by tools/lint.py, not by this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["key", "name", "source"],
+  "properties": {
+    "key": {
+      "description": "The publisher part of a product key, written with the writing rule. Never changes and is never reused.",
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "description": "The Latin name the publisher uses itself, as the source writes it.",
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "description": "The page where the publisher uses this name.",
+      "type": "string",
+      "pattern": "^https?://[^\\s]+$"
+    },
+    "aliases": {
+      "description": "Earlier or other keys of this publisher.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}
