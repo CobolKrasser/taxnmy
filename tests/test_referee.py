@@ -302,6 +302,21 @@ class RefereeTest(unittest.TestCase):
         # the search counts against the budget: $0.012 tokens + $0.01 search
         self.assertAlmostEqual(referee.spent_before(self.out), 3000 * 4e-6 + 20 * 20e-6 + 0.01)
 
+    def test_search_also_for_a_disallowed_source(self):
+        url = "https://www.synology.com/en-global/products/DS124"
+        sources = self.out / "sources.json"
+        sources.write_text(json.dumps({url: {"url": url, "status": "disallowed", "method": "http"}}))
+        lines = []
+        referee.search_refused(self.search_args(sources, live=False), client=FakeClient(), data_root=FIXTURES / "data", log=lines.append)
+        self.assertIn("1 refused or disallowed sources to search for", lines[0])
+        stored = referee.StoredFetcher({url: {"url": url, "status": "disallowed"},
+                                        f"https://docs.synology.com/x | for {url}": {"url": "https://docs.synology.com/x", "status": "200",
+                                                                                        "text": "y", "instead_of": url}})
+        stager = referee.Stager(FIXTURES / "data")
+        self.addCleanup(stager.close)
+        g01 = stager.stage({c.id: c for c in referee.load_cases(FIXTURES / "cases.yaml")}["G01"])
+        self.assertIn("https://docs.synology.com/x", [s.url for s in referee.gather_sources(stored, g01)])
+
     def test_search_dry_run_sends_nothing(self):
         sources, refused = self.refused_sources()
         client = FakeClient()
