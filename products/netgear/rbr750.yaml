@@ -7,7 +7,7 @@ versions:
   source: https://www.netgear.com/support/product/rbr750
 identifiers:
 - cpe: cpe:2.3:h:netgear:rbr750
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:h:netgear:rbr750
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:h:netgear:rbr750&resultsPerPage=1
 - cpe: cpe:2.3:o:netgear:rbr750_firmware
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:netgear:rbr750_firmware
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:netgear:rbr750_firmware&resultsPerPage=1
 aliases: []

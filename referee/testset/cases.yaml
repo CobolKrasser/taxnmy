@@ -208,13 +208,13 @@ cases:
       publisher: samsung
       name: Galaxy Tab S9 5G
       kind: device
-      source: https://doc.samsungmobile.com/SM-X716B/EUX/doc.html
+      source: https://doc.samsungmobile.com/SM-X716B/026922230710/eng.html
       versions:
-        source: https://doc.samsungmobile.com/SM-X716B/EUX/doc.html
+        source: https://doc.samsungmobile.com/SM-X716B/026922230710/eng.html
       identifiers: []
       aliases: []
-  verify: [https://doc.samsungmobile.com/SM-X716B/EUX/doc.html]
-  note: Looks like a variant of the Galaxy Tab S9 (SM-X710), but has its own firmware per model code, so it is a product of its own (T7).
+  verify: [https://doc.samsungmobile.com/SM-X716B/026922230710/eng.html]
+  note: Looks like a variant of the Galaxy Tab S9 (SM-X710), but has its own firmware per model code, so it is a product of its own (T7). The source is the page that the frame of doc.samsungmobile.com/SM-X716B/EUX/doc.html loads (run A read only the menu around it).
 - id: G28
   type: distribution-package
   expect: [accept, human]
@@ -855,7 +855,7 @@ cases:
   note: A roadmap of features is not a list of versions. Checked 13 Nov - both pages answer 403 to a plain fetch; if they stay unreadable, human is the expected answer.
 - id: B30
   type: saas
-  expect: [reject]
+  expect: [reject, human]
   rules: [S4]
   lint: pass
   proposal:

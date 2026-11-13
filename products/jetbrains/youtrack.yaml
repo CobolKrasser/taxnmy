@@ -7,7 +7,7 @@ versions:
   source: https://endoflife.date/youtrack
 identifiers:
 - cpe: cpe:2.3:a:jetbrains:youtrack
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:jetbrains:youtrack
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:jetbrains:youtrack&resultsPerPage=1
 - winget: JetBrains.YouTrack
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/YouTrack
 aliases: []

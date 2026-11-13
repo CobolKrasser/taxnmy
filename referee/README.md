@@ -85,7 +85,7 @@ it is not an error, but it is a cost.
 
 ## Budget
 
-The budget for fase 2 is **at most $5** from the API credit. Prices are from the Claude API price
+The budget for fase 2 is **at most $20** from the API credit (Fred, 13 November; it was $5). Prices are from the Claude API price
 list of November 2026. Check them before the run.
 
 | | per million input tokens | per million output tokens |
@@ -110,7 +110,7 @@ conditions.
 - **Batches** halve the price of A and M. W can also go in a batch if web search is supported
   there; check that first.
 - **Measure first.** Run the first three proposals of each condition one at a time, read the real
-  token counts, and extrapolate. Stop when the total would pass $5.
+  token counts, and extrapolate. Stop when the total would pass $20.
 - The system prompt is the same for every proposal. Cache it.
 
 ## What the lint does not check yet
@@ -147,12 +147,16 @@ For each case it:
 1. stages the case on a copy of `products/` and `publishers/` and runs the lint. A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
    stops there, with outcome *reject*;
-2. fetches the distinct `source` URLs of the proposal with plain HTTP (condition *fetched* only),
-   and turns each page into text: without scripts, styles and navigation, at most about 6,000
-   tokens. A PDF or another type that is not text gets `status="unreadable"`;
-3. fills in the user message of `prompt.md`. `<existing>` holds the existing product of each
-   signal, the products of the same publisher, and the publishers that share a word with the
-   proposed publisher key;
+2. fetches the distinct `source` URLs of the proposal, and the source of the publisher file, with
+   plain HTTP (condition *fetched* only). It turns each page into text: HTML without scripts,
+   styles and navigation; JSON and plain text as they are; the text of a PDF (with `pypdf`). At
+   most about 6,000 tokens per page. A page with fewer than 200 characters of text, or of another
+   type, gets `status="unreadable"`. When the product's own `source` answers 404 or 410, the case
+   stops there: outcome *reject* on S7, by code;
+3. fills in the user message of `prompt.md`. The publisher file always comes along: in
+   `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
+   existing product of each signal, the products of the same publisher, and the publishers that
+   share a word with the proposed publisher key;
 4. makes one call, with structured output against `verdict.schema.json`;
 5. checks the quotes (condition *fetched* only): a *yes* whose quote is not found in the fetched
    text of its URL, ignoring whitespace and case, becomes *doubt*. A *yes* without any quote also
@@ -175,7 +179,7 @@ Model and effort are `--model` (default `claude-opus-5-5`) and `--effort` (defau
 ### The hard budget
 
 The key may belong to another project, so the harness does not rely on a limit in the Console.
-`--budget` (default $5.00) is a **hard limit** for **all runs in `runs/` together**:
+`--budget` (default $20.00) is a **hard limit** for **all runs in `runs/` together**:
 
 - at the start the harness adds up the cost in every `results.jsonl` in `runs/`, and logs the limit
   and what is spent; `run.json` records both;

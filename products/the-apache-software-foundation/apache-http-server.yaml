@@ -7,7 +7,7 @@ versions:
   source: https://httpd.apache.org/download.cgi
 identifiers:
 - cpe: cpe:2.3:a:apache:http_server
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:apache:http_server
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:apache:http_server&resultsPerPage=1
 - purl: pkg:github/apache/httpd
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-http-server.md
 aliases: []

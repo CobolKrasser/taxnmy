@@ -7,5 +7,5 @@ versions:
   source: https://endoflife.date/citrix-vad
 identifiers:
 - cpe: cpe:2.3:a:citrix:virtual_apps_and_desktops
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:citrix:virtual_apps_and_desktops
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:citrix:virtual_apps_and_desktops&resultsPerPage=1
 aliases: []

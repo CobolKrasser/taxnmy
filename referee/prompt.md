@@ -44,7 +44,8 @@ Definitions
 Rules
 S4  It is a product of its own. Answer "no" if it is a variant of an existing product, or the
     same product as an existing one written in another way (then give that product's key in
-    duplicate_of), or if no source publishes versions of it.
+    duplicate_of), or if no source publishes versions of it. A package that redistributes the
+    releases of another publisher unchanged is not a product of its own.
 S5  The publisher is whoever publishes the updates, and a source shows that.
 S6  The product name and the publisher name appear in a source as proposed: not translated, not
     rephrased, and not a description instead of a name. Word order, capitals and punctuation may
@@ -52,7 +53,9 @@ S6  The product name and the publisher name appear in a source as proposed: not 
 S7  The product demonstrably exists: a source shows it is sold or in use. An announcement,
     a rumour, a concept or a page that does not show the product is not enough.
 S8  Every value in the proposal is confirmed by the source it points to. A value that no source
-    text confirms is not accepted, however likely it is.
+    text confirms is not accepted, however likely it is. Answer no on S8 only when a readable
+    source text does not contain the value or contradicts it. When the source is unavailable,
+    answer doubt.
 
 How to answer
 - For each rule answer "yes", "no" or "doubt". Use "doubt" when the sources do not settle it; a
@@ -80,6 +83,7 @@ so that the long texts are at the end.
 </signals>
 
 <existing>
+{the YAML of the publisher file, if the publisher already exists}
 {for each signal: the YAML of the existing product it points to}
 {the keys and names of all products of the same publisher, one per line}
 {the keys of existing publishers that share a word with the proposed publisher key, one per line}
@@ -89,14 +93,23 @@ so that the long texts are at the end.
 <source url="{url}" status="{HTTP status}">
 {the readable text of the page, without navigation, scripts or styles; at most 6,000 tokens}
 </source>
-… one block per distinct URL in the proposal …
+… one block per distinct URL in the proposal, and for the source of the publisher file …
 </sources>
 ```
 
+The publisher file always comes along, so that S5 and S6 can be judged against the publisher's own
+source: in `<proposal>` when the publisher is new, otherwise first in `<existing>`. Its source is
+fetched like the others.
+
 Fetch the sources with ordinary HTTP. That costs nothing. Follow redirects, and record the final
-status. If a page cannot be read as text (a PDF, a page that only renders with JavaScript), put
-`status="unreadable"` and leave the text empty. The referee will then answer *doubt* where that
-source was needed, and that is the intended result.
+status. JSON and plain text are read as text; the text of a PDF is extracted. If a page cannot be
+read as text, or gives fewer than 200 characters of text (a page that only renders with
+JavaScript, a title alone), put `status="unreadable"` and leave the text empty. The referee will
+then answer *doubt* where that source was needed, and that is the intended result.
+
+When the product's own source (the `source` of the product file) answers 404 or 410, code rejects
+the proposal on S7 without calling the referee: the page that should show the product does not
+exist.
 
 ## Outcome
 

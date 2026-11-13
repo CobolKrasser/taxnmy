@@ -9,5 +9,5 @@ identifiers:
 - purl: pkg:github/Checkmk/checkmk
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/checkmk.md
 - cpe: cpe:2.3:a:checkmk:checkmk
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:checkmk:checkmk
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:checkmk:checkmk&resultsPerPage=1
 aliases: []

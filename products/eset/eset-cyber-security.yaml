@@ -7,7 +7,7 @@ versions:
   source: https://help.eset.com/latestVersions/?lang=en-US
 identifiers:
 - cpe: cpe:2.3:a:eset:cyber_security
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:eset:cyber_security
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:eset:cyber_security&resultsPerPage=1
 - homebrew: eset-cyber-security
   source: https://formulae.brew.sh/cask/eset-cyber-security
 aliases: []

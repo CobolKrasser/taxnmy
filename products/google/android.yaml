@@ -7,5 +7,5 @@ versions:
   source: https://source.android.com/docs/setup/reference/build-numbers
 identifiers:
 - cpe: cpe:2.3:o:google:android
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:o:google:android
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:google:android&resultsPerPage=1
 aliases: []

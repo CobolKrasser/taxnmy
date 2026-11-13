@@ -19,7 +19,7 @@ Conditions (referee/r13-research.md):
     web      no source texts; the model may search the web (at most 3 searches)
 
 Without --live nothing is sent to the API. The budget (--budget, default
-$5.00) is a hard limit for all runs in the output directory together: before
+$20.00) is a hard limit for all runs in the output directory together: before
 each request the harness counts its input tokens (free) and sets max_tokens
 so that the request cannot cost more than what is left; when that leaves too
 little room, it stops. The key is read from ANTHROPIC_API_KEY and is never
@@ -60,6 +60,7 @@ CONDITIONS = ("fetched", "memory", "web")
 MAX_TOKENS = 8000  # per request; the budget may lower it
 MIN_OUTPUT = 2000  # a request with less room for output than this is not sent
 SOURCE_CHARS = 24_000  # about 6,000 tokens per source text (referee/prompt.md)
+MIN_CHARS = 200  # less text than this is no source: a title alone (run A review, §1)
 WEB_ALLOWANCE = 20_000  # web: input tokens reserved per search (not a hard bound)
 WEB_TOOL_OVERHEAD = 2_000  # web: input tokens of the tool definition, which token counting cannot see
 USER_AGENT = "TAXNMY-referee/1.0 (+https://github.com/CobolKrasser/taxnmy)"
@@ -162,6 +163,18 @@ def select(cases: list[Case], ids: list[str] | None, condition: str) -> list[Cas
     return [by_id[i] for i in wanted]
 
 
+def product_file(files: dict) -> tuple[str, dict]:
+    """The proposed product file and its data."""
+    for rel, text in files.items():
+        if rel.startswith("products/"):
+            try:
+                data = yaml.safe_load(text)
+            except yaml.YAMLError:
+                data = None
+            return rel, data if isinstance(data, dict) else {}
+    return "", {}
+
+
 # --------------------------------------------------------------------------- staging (README § Staging a case)
 
 @dataclass
@@ -171,6 +184,7 @@ class Staged:
     lint_ok: bool  # the findings match the field `lint`
     lint_seen: str  # what the findings amount to: pass, signal or error S..
     existing: str  # the <existing> block
+    publisher_source: str = ""  # the source of an existing publisher file, fetched with the others
 
 
 class Stager:
@@ -218,6 +232,7 @@ class Stager:
             for rel in files:  # the proposal is not part of what exists
                 put(rel, None)
             existing = self._existing(case, files, findings)
+            publisher_source = self._publisher_source(files)
         finally:
             for path, content in saved.items():
                 if content is None:
@@ -226,12 +241,35 @@ class Stager:
                 else:
                     path.parent.mkdir(parents=True, exist_ok=True)
                     path.write_bytes(content)
-        return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen, existing=existing)
+        return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen,
+                      existing=existing, publisher_source=publisher_source)
+
+    def _publisher_file(self, files: dict) -> tuple[str, str]:
+        """The existing publisher file of the proposed product, unless the proposal brings it."""
+        _, data = product_file(files)
+        pub = data.get("publisher")
+        if not isinstance(pub, str) or not re.fullmatch(r"[a-z0-9-]+", pub):
+            return "", ""
+        rel = f"publishers/{pub}.yaml"
+        path = self.root / rel
+        if rel in files or not path.is_file():
+            return "", ""
+        return rel, path.read_text(encoding="utf-8")
+
+    def _publisher_source(self, files: dict) -> str:
+        rel, text = self._publisher_file(files)
+        if not rel:
+            return ""
+        source = (yaml.safe_load(text) or {}).get("source", "")
+        return source if isinstance(source, str) and source.startswith(("http://", "https://")) else ""
 
     def _existing(self, case: Case, files: dict, findings: list) -> str:
         """For each signal the existing product it points to; the products of the same publisher;
         the publishers that share a word with the proposed publisher key."""
         parts, shown = [], set()
+        rel, text = self._publisher_file(files)
+        if rel:
+            parts.append(f"# {rel}\n{text.rstrip()}")
         for f in findings:
             if f.level != "signal":
                 continue
@@ -310,6 +348,32 @@ def html_to_text(page: str) -> str:
     return re.sub(r"\s+", " ", " ".join(parser.out)).strip()
 
 
+def pdf_to_text(body: bytes) -> str:
+    try:
+        import io
+
+        import pypdf
+    except ImportError:  # pypdf is in requirements-referee.txt
+        return ""
+    try:
+        reader = pypdf.PdfReader(io.BytesIO(body))
+        return re.sub(r"\s+", " ", " ".join((page.extract_text() or "") for page in reader.pages)).strip()
+    except Exception:  # noqa: BLE001 - a PDF that cannot be read confirms nothing
+        return ""
+
+
+def page_text(body: bytes, ctype: str, charset: str) -> str:
+    """The readable text of a response: HTML without navigation and scripts, JSON and plain text
+    as they are, the text of a PDF. Anything else gives no text."""
+    if ctype == "text/html":
+        return html_to_text(body.decode(charset, errors="replace"))
+    if ctype.startswith("text/") or ctype == "application/json" or ctype.endswith("+json"):
+        return re.sub(r"\s+", " ", body.decode(charset, errors="replace")).strip()
+    if ctype == "application/pdf":
+        return pdf_to_text(body)
+    return ""
+
+
 class HttpFetcher:
     """Ordinary HTTP, following redirects. Costs nothing."""
 
@@ -320,24 +384,19 @@ class HttpFetcher:
     def fetch(self, url: str) -> Source:
         if url in self.cache:
             return self.cache[url]
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,text/plain;q=0.9,*/*;q=0.1"})
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/json,text/plain;q=0.9,*/*;q=0.1"})
         try:
             with urllib.request.urlopen(req, timeout=self.timeout) as resp:  # noqa: S310 - URLs of the test set
                 status, ctype = str(resp.status), resp.headers.get_content_type()
-                body = resp.read(3_000_000)
+                body = resp.read(10_000_000)
                 charset = resp.headers.get_content_charset() or "utf-8"
         except urllib.error.HTTPError as exc:
             src = Source(url, str(exc.code))
         except Exception as exc:  # noqa: BLE001 - any failure means the source confirms nothing
             src = Source(url, f"error: {type(exc).__name__}")
         else:
-            if ctype == "text/html":
-                text = html_to_text(body.decode(charset, errors="replace"))
-            elif ctype.startswith("text/"):
-                text = re.sub(r"\s+", " ", body.decode(charset, errors="replace")).strip()
-            else:
-                text = ""
-            src = Source(url, status if text else "unreadable", text[:SOURCE_CHARS])
+            text = page_text(body, ctype, charset)
+            src = Source(url, status, text[:SOURCE_CHARS]) if len(text) >= MIN_CHARS else Source(url, "unreadable")
         self.cache[url] = src
         return src
 
@@ -417,6 +476,16 @@ def api_schema(schema: dict) -> dict:
 
 def _norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().casefold()
+
+
+def product_gone(files: dict, sources: list[Source]) -> str:
+    """The product's own source answers 404 or 410: a reason to reject on S7, or ''."""
+    _, data = product_file(files)
+    url = data.get("source")
+    for s in sources:
+        if s.url == url and s.status in ("404", "410"):
+            return f"the product source {url} answers {s.status}"
+    return ""
 
 
 def check_quotes(verdict: dict, sources: list[Source]) -> tuple[dict, list[str]]:
@@ -724,10 +793,23 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             elif st.lint_seen.startswith("error"):
                 res.by, res.outcome, res.rule = "code", "reject", st.lint_seen.split()[1]
             else:
-                sources = [fetcher.fetch(u) for u in urls_of(st.files)] if args.condition == "fetched" else []
+                urls = urls_of(st.files)
+                if st.publisher_source and st.publisher_source not in urls:
+                    urls.append(st.publisher_source)
+                sources = [fetcher.fetch(u) for u in urls] if args.condition == "fetched" else []
                 for s in sources:
                     fetched[s.url] = asdict(s)
                 res.sources = [[s.url, s.status] for s in sources]
+                gone = product_gone(st.files, sources)
+                if gone:
+                    # The page that should show the product does not exist: rejected on S7 by code.
+                    res.by, res.outcome, res.rule, res.error = "code", "reject", "S7", gone
+                    res.right = res.outcome in case.expect
+                    log(f"{case.id}: reject (code, {gone}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+                    results.append(res)
+                    jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
+                    jsonl.flush()
+                    continue
                 spent_at_start = budget.spent
                 try:
                     text, stop, usage = review(client, budget, model=args.model, system=system,
@@ -945,7 +1027,7 @@ def parser() -> argparse.ArgumentParser:
     r.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), default="medium")
     r.add_argument("--max-tokens", type=int, default=MAX_TOKENS, help="per request; the budget may lower it")
     r.add_argument("--max-uses", type=int, default=3, help="web: most searches per case")
-    r.add_argument("--budget", type=float, default=5.00, help="dollars, for all runs in --out together")
+    r.add_argument("--budget", type=float, default=20.00, help="dollars, for all runs in --out together")
     r.add_argument("--live", action="store_true", help="call the API; without it nothing is sent")
     for name, default in (("testset", REFEREE / "testset/cases.yaml"), ("prompt", REFEREE / "prompt.md"),
                           ("schema", REFEREE / "verdict.schema.json"), ("prices", REFEREE / "prices.yaml"),
