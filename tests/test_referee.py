@@ -191,6 +191,7 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual([t["name"] for t in client.calls[0]["tools"]], ["web_search", "web_fetch"])
         self.assertEqual(client.calls[0]["tools"][1]["max_uses"], 3)
         self.assertIn(referee.NO_SOURCES["web"], client.calls[0]["messages"][0]["content"])
+        self.assertIn("Read the URLs in the proposal with web fetch", referee.NO_SOURCES["web"])
 
     def test_r13_cases_are_the_default_outside_fetched(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
@@ -490,6 +491,15 @@ class RefereeTest(unittest.TestCase):
         text = referee.compare([first, second])
         self.assertIn("Comparison on 3 shared cases", text)
         self.assertIn("Different outcomes: none", text)
+
+    def test_compare_merges_a_split_run_and_shows_cases(self):
+        _, a, _ = self.run_fake(condition="memory", cases=["G01", "B07"])
+        _, w1, _ = self.run_fake(condition="web", cases=["G01"], now=LATER)
+        _, w2, _ = self.run_fake(condition="web", cases=["B07"], now=datetime(2026, 11, 13, 14, 0, 0, tzinfo=timezone.utc))
+        text = referee.compare([[a], [w1, w2]], show=["B07"])
+        self.assertIn("Comparison on 2 shared cases", text)
+        self.assertIn(f"{w1.name} + {w2.name}", text)
+        self.assertIn("| B07 | alias (S4 no) | alias (S4 no) |", text)
 
     def test_testset_problems_stop_the_run(self):
         bad = self.out / "cases.yaml"
