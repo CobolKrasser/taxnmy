@@ -206,9 +206,11 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 
 | step | `method` | what it does |
 | --- | --- | --- |
+| 0 | `machine` | a source made for machines; one reader per format, never per brand (`tools/machine.py`): an update catalog (a `Manifest` of `SoftwareComponent`, as Dell publishes), AppStream metadata (as LVFS publishes), a CSAF advisory or provider metadata, the NVD CPE API. The reader takes out the part about the product, by its name; `sources.json` keeps it per product |
 | 1 | `api` | a known API instead of a page: an NVD search page becomes the NVD API |
 | 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
 | 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
+| 4 | `search+…` | only for a source that is `refused`: one web search of the API, about $0.01 plus tokens, on the publisher's domains (of the refused URL, the publisher's source and the product's source). The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the refused one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
 
 The ladder stops at a refusal:
 
@@ -237,14 +239,18 @@ The key is a secret of the repository, so a paid measurement runs as the workflo
 (`.github/workflows/referee.yml`). Start it by hand (*Actions → referee → Run workflow*), with the
 condition, the cases, the model, the effort, the budget and *live*.
 
-It has two jobs, so that the key never comes near the JavaScript of other sites:
+It has four jobs, so that the key never comes near the JavaScript of other sites:
 
-- **fetch** reads the sources with the ladder, including the browser. It has no key. It first runs
+- **fetch** reads the sources with steps 0–3, including the browser. It has no key. It first runs
   the tests of the ladder against a real headless Chromium, and keeps `sources.json` as an artifact
   `referee-sources-<id>`. It runs for condition *fetched* and for `task: check-urls`, from any
   branch. That is how the ladder is tested for free.
-- **judge** reads that `sources.json` and calls the referee. Only this job gets the key, only on a
-  live run, and only from `main`. It runs no browser.
+- **search** is step 4 for the refused sources. It has the key and no browser, and runs only on a
+  live run from `main`.
+- **refetch** reads what search found, down steps 1–3, without a key, and keeps the result as
+  `referee-sources-final-<id>`.
+- **judge** reads the sources and calls the referee. It has the key, only on a live run and only
+  from `main`, and runs no browser.
 
 - Without *live* it is a dry run: the key is not passed to it.
 - It runs one at a time. It reads only data files and runs no code from a pull request (hosting

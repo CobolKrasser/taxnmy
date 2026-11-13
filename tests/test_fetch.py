@@ -203,6 +203,33 @@ class LadderTest(unittest.TestCase):
         self.assertEqual(f.fetch("https://a.example/p").method, "browser")
         self.assertEqual(f.fetch("https://a.example/q").status, "not fetched")
 
+    def test_step_0_reads_a_source_for_machines_per_product(self):
+        sys.path.insert(0, str(REPO / "tests"))
+        from test_machine import CATALOG
+        import gzip
+        net = Net({"https://downloads.example.com/catalog/Catalog.xml.gz": ok(gzip.compress(CATALOG), "application/x-gzip")})
+        f = fetcher(net)
+        a = f.fetch("https://downloads.example.com/catalog/Catalog.xml.gz", "PowerEdge R650")
+        b = f.fetch("https://downloads.example.com/catalog/Catalog.xml.gz", "PowerEdge R750")
+        self.assertEqual((a.status, a.method, a.product), ("200", "machine", "PowerEdge R650"))
+        self.assertIn("2 components for PowerEdge R650", a.text)
+        self.assertIn("1 components for PowerEdge R750", b.text)
+        self.assertEqual(net.requests.count("https://downloads.example.com/catalog/Catalog.xml.gz"), 1, "the catalog is read once")
+        self.assertEqual(set(f.cache), {"https://downloads.example.com/catalog/Catalog.xml.gz | PowerEdge R650",
+                                        "https://downloads.example.com/catalog/Catalog.xml.gz | PowerEdge R750"})
+
+    def test_a_page_is_not_a_machine_source(self):
+        s = fetcher(Net({"https://a.example/p": ok(html(LONG))})).fetch("https://a.example/p", "PowerEdge R650")
+        self.assertEqual(s.method, "http")
+
+    def test_stored_fetcher_keys_and_alternatives(self):
+        f = fetch.StoredFetcher({
+            "https://c.example/Catalog.xml | PowerEdge R650": {"url": "https://c.example/Catalog.xml", "status": "200", "text": "x", "method": "machine", "product": "PowerEdge R650"},
+            "https://open.example/p | for https://shut.example/p": {"url": "https://open.example/p", "status": "200", "text": "y", "method": "search+http", "instead_of": "https://shut.example/p"},
+        })
+        self.assertEqual(f.fetch("https://c.example/Catalog.xml", "PowerEdge R650").method, "machine")
+        self.assertEqual([s.url for s in f.alternatives("https://shut.example/p")], ["https://open.example/p"])
+
     def test_single_frame(self):
         self.assertEqual(fetch.single_frame('<frameset><frame src="m.html"></frameset>', "https://a.example/d/x.html"),
                          "https://a.example/d/m.html")

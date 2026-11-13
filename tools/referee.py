@@ -41,6 +41,7 @@ import re
 import shutil
 import sys
 import tempfile
+import urllib.parse
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -52,6 +53,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lint  # noqa: E402
 from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of the harness API
     MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, html_to_text, page_text, pdf_to_text,
+    source_key,
 )
 
 REPO = Path(__file__).resolve().parent.parent
@@ -322,6 +324,24 @@ def case_urls(staged: "Staged") -> list[str]:
     return urls
 
 
+def product_name(staged: "Staged") -> str:
+    """The name of the proposed product: what a source for machines is searched for (step 0)."""
+    name = product_file(staged.files)[1].get("name", "")
+    return name if isinstance(name, str) else ""
+
+
+def gather_sources(fetcher, staged: "Staged") -> list[Source]:
+    """The sources of a case, and for each refused one the sources step 4 found instead."""
+    name = product_name(staged)
+    sources = []
+    for url in case_urls(staged):
+        src = fetcher.fetch(url, name)
+        sources.append(src)
+        if src.status == "refused" and hasattr(fetcher, "alternatives"):
+            sources += fetcher.alternatives(url)
+    return sources
+
+
 def urls_of(files: dict) -> list[str]:
     """Every distinct `source` URL in the proposed files, in order."""
     found = []
@@ -361,7 +381,8 @@ def build_message(staged: Staged, condition: str, sources: list[Source]) -> str:
     proposal = "\n".join(f"# {rel}\n{text.rstrip()}" for rel, text in staged.files.items())
     signals = "\n".join(f"{f.rule}: {f.message}" for f in staged.findings if f.level == "signal") or "none"
     if condition == "fetched":
-        blocks = [f'<source url="{s.url}" status="{s.status}">\n{s.text}\n</source>' for s in sources]
+        blocks = [f'<source url="{s.url}" status="{s.status}"'
+                  + (f' instead-of="{s.instead_of}"' if s.instead_of else "") + f'>\n{s.text}\n</source>' for s in sources]
         body = "\n".join(blocks) if blocks else "none"
     else:
         body = NO_SOURCES[condition]
@@ -719,9 +740,9 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             elif st.lint_seen.startswith("error"):
                 res.by, res.outcome, res.rule = "code", "reject", st.lint_seen.split()[1]
             else:
-                sources = [fetcher.fetch(u) for u in case_urls(st)] if args.condition == "fetched" else []
+                sources = gather_sources(fetcher, st) if args.condition == "fetched" else []
                 for s in sources:
-                    fetched[s.url] = asdict(s)
+                    fetched[source_key(s.url, s.product) + (f" | for {s.instead_of}" if s.instead_of else "")] = asdict(s)
                 res.sources = [[s.url, s.status] for s in sources]
                 gone = product_gone(st.files, sources)
                 if gone:
@@ -951,14 +972,32 @@ def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict
     finally:
         stager.close()
     fetcher = fetcher or Fetcher(use_browser=not args.no_browser, log=log)
-    try:
-        for st in staged:
-            if st.lint_ok and not st.lint_seen.startswith("error"):
-                for url in case_urls(st):
-                    fetcher.fetch(url)
-    finally:
-        fetcher.close()
-    data = {url: asdict(src) for url, src in fetcher.cache.items()}
+    data = {}
+    if getattr(args, "search", None):
+        # The second pass: read the URLs that step 4 found for refused sources, down steps 1-3.
+        data = json.loads(Path(args.sources).read_text(encoding="utf-8"))
+        found = json.loads(Path(args.search).read_text(encoding="utf-8"))
+        try:
+            for refused, hit in found.items():
+                for url in hit["urls"]:
+                    src = fetcher.fetch(url, hit["product"])
+                    if src.status.isdigit() and int(src.status) < 300:
+                        alt = Source(**{**asdict(src), "instead_of": refused, "method": f"search+{src.method}"})
+                        data[f"{source_key(url, src.product)} | for {refused}"] = asdict(alt)
+        finally:
+            if hasattr(fetcher, "close"):
+                fetcher.close()
+    else:
+        try:
+            for st in staged:
+                if st.lint_ok and not st.lint_seen.startswith("error"):
+                    name = product_name(st)
+                    for url in case_urls(st):
+                        fetcher.fetch(url, name)
+        finally:
+            if hasattr(fetcher, "close"):
+                fetcher.close()
+        data = {key: asdict(src) for key, src in fetcher.cache.items()}
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -970,14 +1009,132 @@ def sources_table(data: dict) -> str:
     """How many sources each step read, and what did not come through."""
     counts: dict[tuple, int] = {}
     for src in data.values():
-        key = (src["method"] or "-", src["status"] if not src["status"].isdigit() or int(src["status"]) >= 300 else "read")
+        key = (src.get("method") or "-", src["status"] if not src["status"].isdigit() or int(src["status"]) >= 300 else "read")
         counts[key] = counts.get(key, 0) + 1
     lines = [f"{len(data)} sources", "", "| method | status | sources |", "| --- | --- | --- |"]
     lines += [f"| {m} | {s} | {n} |" for (m, s), n in sorted(counts.items())]
     lines += ["", "| status | method | characters | url |", "| --- | --- | --- | --- |"]
-    lines += [f"| {src['status']} | {src['method'] or '-'} | {src['chars']} | {url} |"
+    lines += [f"| {src['status']} | {src.get('method') or '-'} | {src.get('chars', 0)} | {url} |"
               for url, src in sorted(data.items()) if not src["status"].isdigit() or int(src["status"]) >= 300]
     return "\n".join(lines) + "\n"
+
+
+# --------------------------------------------------------------------------- step 4: search for another open source
+
+SEARCH_PROMPT = (
+    "Run exactly one web search with this query: {query}\n"
+    "Do not answer anything and do not summarise the results; reply with the single word: done."
+)
+SEARCH_RESULTS = 5  # URLs kept per search
+
+
+def registrable(host: str) -> str:
+    """example.com from www.example.com; example.co.jp from support.example.co.jp."""
+    labels = host.lower().strip(".").split(".")
+    if len(labels) >= 3 and len(labels[-1]) == 2 and labels[-2] in {"co", "com", "org", "net", "ac", "gov", "edu", "ne", "or"}:
+        return ".".join(labels[-3:])
+    return ".".join(labels[-2:])
+
+
+def search_domains(refused: str, staged: "Staged") -> list[str]:
+    """The publisher's domains: of the refused URL, of the publisher's source and of the product's source."""
+    hosts = [refused, staged.publisher_source, product_file(staged.files)[1].get("source", "")]
+    for rel, text in staged.files.items():
+        if rel.startswith("publishers/"):
+            hosts.append((yaml.safe_load(text) or {}).get("source", ""))
+    out = []
+    for h in hosts:
+        if isinstance(h, str) and h.startswith(("http://", "https://")):
+            d = registrable(urllib.parse.urlsplit(h).netloc)
+            if d not in out:
+                out.append(d)
+    return out
+
+
+def search_urls(content) -> list[str]:
+    """The URLs in the web search results of a response. The snippets are not kept: a fragment is
+    never evidence (tax-weigerende-sites.md §3)."""
+    urls = []
+    for block in content:
+        if getattr(block, "type", "") == "web_search_tool_result" and isinstance(getattr(block, "content", None), list):
+            for r in block.content:
+                url = getattr(r, "url", "")
+                if url and url not in urls:
+                    urls.append(url)
+    return urls[:SEARCH_RESULTS]
+
+
+def search_refused(args, client=None, data_root: Path = REPO, now=None, log=print) -> dict:
+    """Step 4: for each refused source, one web search on the publisher's domains. Costs money
+    (about $0.01 a search plus tokens) and counts against the budget like a run."""
+    stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
+    cases = select(load_cases(Path(args.testset)), args.cases, "fetched")
+    if args.limit:
+        cases = cases[: args.limit]
+    stager = Stager(data_root)
+    try:
+        staged = [stager.stage(c) for c in cases]
+    finally:
+        stager.close()
+    wanted: dict[str, dict] = {}
+    for st in staged:
+        if not st.lint_ok or st.lint_seen.startswith("error"):
+            continue
+        name = product_name(st)
+        _, prod = product_file(st.files)
+        for url in case_urls(st):
+            if stored.fetch(url, name).status == "refused" and url not in wanted:
+                wanted[url] = {"product": name, "publisher": prod.get("publisher", ""), "domains": search_domains(url, st)}
+    log(f"{len(wanted)} refused sources to search for")
+    out = Path(args.out)
+    found: dict[str, dict] = {}
+    if wanted and not args.live:
+        log("Dry run: nothing was searched. Add --live to search (about $0.01 a search plus tokens).")
+    if wanted and args.live:
+        prices = load_prices(Path(args.prices))
+        if client is None:
+            if not os.environ.get("ANTHROPIC_API_KEY"):
+                raise SystemExit("A live search needs ANTHROPIC_API_KEY")
+            client = AnthropicClient()
+        before = spent_before(out)
+        budget = Budget(args.budget, before, args.model, prices, 2000)
+        log(f"budget: ${args.budget:.2f} for all runs in {out}; spent before: ${before:.4f}")
+        stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
+        run_dir = out / f"{stamp}-search-{args.model}"
+        run_dir.mkdir(parents=True, exist_ok=False)
+        (run_dir / "run.json").write_text(json.dumps({"condition": "search", "model": args.model, "budget": args.budget,
+                                                      "spent_before": round(before, 6), "started": stamp}, indent=2) + "\n", encoding="utf-8")
+        if os.environ.get("GITHUB_OUTPUT"):
+            with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
+                gh.write(f"run_dir={run_dir}\nrun_name={run_dir.name}\n")
+        with (run_dir / "results.jsonl").open("w", encoding="utf-8") as jsonl:
+            for url, want in wanted.items():
+                query = f'"{want["product"]}" {want["publisher"]}'.strip()
+                request = dict(
+                    model=args.model,
+                    messages=[{"role": "user", "content": SEARCH_PROMPT.format(query=query)}],
+                    output_config={"effort": "low"},
+                    tools=[{"type": "web_search_20260209", "name": "web_search", "max_uses": 1, "allowed_domains": want["domains"]}],
+                )
+                spent_at_start = budget.spent
+                try:
+                    request["max_tokens"] = budget.fit(client.count(request), web_allowance(args.model, prices, 1))
+                    response = client.create(request)
+                except BudgetExhausted as exc:
+                    log(f"Stopped before searching for {url}: {exc}")
+                    break
+                except Exception as exc:  # noqa: BLE001 - a failed search leaves the source refused
+                    log(f"search for {url} failed: {type(exc).__name__}")
+                    continue
+                budget.add(response.usage)
+                urls = [u for u in search_urls(response.content) if u != url]
+                found[url] = {"product": want["product"], "query": query, "domains": want["domains"], "urls": urls}
+                cost_now = budget.spent - spent_at_start
+                jsonl.write(json.dumps({"id": "search", "url": url, **found[url], "usage": response.usage, "cost": cost_now}) + "\n")
+                log(f"{url}: {len(urls)} URLs on {', '.join(want['domains'])}, ${cost_now:.4f}; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.output).write_text(json.dumps(found, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return found
 
 
 # --------------------------------------------------------------------------- command line
@@ -1009,6 +1166,19 @@ def parser() -> argparse.ArgumentParser:
     f.add_argument("--limit", type=int)
     f.add_argument("--output", default="sources.json")
     f.add_argument("--no-browser", action="store_true", help="skip the browser step")
+    f.add_argument("--sources", help="with --search: the sources.json of the first pass, to add to")
+    f.add_argument("--search", help="a search.json made by `search`: read the URLs it found (steps 1-3)")
+    s = sub.add_parser("search", help="step 4: search for another open source for each refused source (costs money)")
+    s.add_argument("--sources", required=True, help="the sources.json made by `fetch`")
+    s.add_argument("--output", default="search.json")
+    s.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
+    s.add_argument("--cases", nargs="*")
+    s.add_argument("--limit", type=int)
+    s.add_argument("--model", default="claude-opus-5-5")
+    s.add_argument("--budget", type=float, default=20.00)
+    s.add_argument("--prices", default=str(REFEREE / "prices.yaml"))
+    s.add_argument("--out", default=str(REFEREE / "runs"))
+    s.add_argument("--live", action="store_true", help="search; without it nothing is sent")
     c = sub.add_parser("compare", help="compare runs on the cases they share (R13)")
     c.add_argument("runs", nargs="+", type=Path)
     return p
@@ -1025,9 +1195,12 @@ def main(argv: list[str] | None = None) -> int:
         try:
             print(check_urls(load_cases(Path(args.testset)), fetcher))
         finally:
-            fetcher.close()
+            if hasattr(fetcher, "close"):
+                fetcher.close()
     elif args.command == "fetch":
         fetch_sources(args)
+    elif args.command == "search":
+        search_refused(args)
     else:
         run(args)
     return 0
