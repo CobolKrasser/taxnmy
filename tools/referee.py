@@ -79,7 +79,8 @@ R13_PROMPT = REFEREE / "prompt-r13.md"
 # What the sources block says in the conditions without fetched texts (referee/r13-research.md).
 NO_SOURCES = {
     "memory": "No source texts are given. Answer from what you know; give no quotes.",
-    "web": "Use web search to find sources. Quote only from pages you retrieved.",
+    "web": ("No source texts are given. Read the URLs in the proposal with web fetch, and find other pages with "
+            "web search. Quote only from pages you read with web fetch."),
 }
 
 CASE_SCHEMA = {
@@ -551,7 +552,8 @@ class AnthropicClient:
 
 
 def empty_usage() -> dict:
-    return {"input_tokens": 0, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0, "web_search_requests": 0}
+    return {"input_tokens": 0, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0,
+            "web_search_requests": 0, "web_fetch_requests": 0}
 
 
 def add_usage(total: dict, usage) -> None:
@@ -559,6 +561,7 @@ def add_usage(total: dict, usage) -> None:
         total[name] += getattr(usage, name, 0) or 0
     server = getattr(usage, "server_tool_use", None)
     total["web_search_requests"] += (getattr(server, "web_search_requests", 0) or 0) if server else 0
+    total["web_fetch_requests"] += (getattr(server, "web_fetch_requests", 0) or 0) if server else 0
 
 
 def final_text(content) -> str:
@@ -991,7 +994,8 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
     ]
     t = m["tokens"]
     lines += [f"Tokens: {t['input_tokens']} input, {t['cache_creation_input_tokens']} cache write, "
-              f"{t['cache_read_input_tokens']} cache read, {t['output_tokens']} output; {t['web_search_requests']} web searches.", ""]
+              f"{t['cache_read_input_tokens']} cache read, {t['output_tokens']} output; {t['web_search_requests']} web searches, "
+              f"{t.get('web_fetch_requests', 0)} web fetches.", ""]
     return "\n".join(lines)
 
 
@@ -1000,24 +1004,43 @@ def load_results(run_dir: Path) -> list[Result]:
     return [Result(**json.loads(line)) for line in lines if line.strip()]
 
 
-def compare(dirs: list[Path]) -> str:
-    """R13: the conditions side by side, on the cases they share."""
-    runs = {d.name: {r.id: r for r in load_results(d)} for d in dirs}
+def compare(dirs: list, show: list[str] | None = None) -> str:
+    """R13: the conditions side by side, on the cases they share. An entry may be a list of run
+    directories that together make one condition (a run split by the stop rule). `show` lists cases
+    to set out one by one."""
+    runs = {}
+    for d in dirs:
+        parts = d if isinstance(d, (list, tuple)) else [d]
+        merged = {}
+        for part in parts:
+            merged.update({r.id: r for r in load_results(Path(part))})
+        runs[" + ".join(Path(p).name for p in parts)] = merged
     shared = sorted(set.intersection(*(set(r) for r in runs.values())))
     lines = [f"# Comparison on {len(shared)} shared cases", "",
              "| run | wrongly accepted | wrongly rejected | doubt | " + " | ".join(f"{r} right/wrong/doubt" for r in R13_RULES)
-             + " | confident and wrong | cost per case | searches |",
-             "| --- " * (7 + len(R13_RULES)) + "|"]
+             + " | confident and wrong | cost per case | searches | fetches |",
+             "| --- " * (8 + len(R13_RULES)) + "|"]
     for name, by_id in runs.items():
         rs = [by_id[i] for i in shared]
         m = metrics(rs)
         per = m["r13"]["per_rule"]
         lines.append(f"| {name} | {len(m['let_through'])} | {len(m['good_rejected'])} | {len(m['human'])} | "
                      + " | ".join(f"{per[r]['right']}/{per[r]['wrong']}/{per[r]['doubt']}" for r in R13_RULES)
-                     + f" | {len(m['r13']['confident_wrong'])} | ${m['cost_per_call']:.4f} | {m['tokens']['web_search_requests']} |")
+                     + f" | {len(m['r13']['confident_wrong'])} | ${m['cost_per_call']:.4f} | {m['tokens']['web_search_requests']}"
+                     + f" | {m['tokens'].get('web_fetch_requests', 0)} |")
     differ = [i for i in shared if len({runs[n][i].outcome for n in runs}) > 1]
     lines += ["", "Different outcomes: " + (", ".join(differ) or "none"),
               "", "With 29 cases a difference of one or two is noise (r13-research.md).", ""]
+    if show:
+        names = list(runs)
+        lines += ["## Cases set out one by one", "", "| case | " + " | ".join(names) + " |", "| --- " * (len(names) + 1) + "|"]
+        for cid in show:
+            cells = []
+            for n in names:
+                r = runs[n].get(cid)
+                cells.append("-" if r is None else f"{r.outcome} ({', '.join(f'{k} {v}' for k, v in r.checked.items() if v != 'yes') or 'all yes'})")
+            lines.append(f"| {cid} | " + " | ".join(cells) + " |")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -1271,7 +1294,8 @@ def parser() -> argparse.ArgumentParser:
     s.add_argument("--out", default=str(REFEREE / "runs"))
     s.add_argument("--live", action="store_true", help="search; without it nothing is sent")
     c = sub.add_parser("compare", help="compare runs on the cases they share (R13)")
-    c.add_argument("runs", nargs="+", type=Path)
+    c.add_argument("runs", nargs="+", help="run directories; join directories of one condition with + (a run split by the stop rule)")
+    c.add_argument("--show", nargs="*", help="cases to set out one by one")
     return p
 
 
@@ -1280,7 +1304,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "compare":
         if len(args.runs) < 2:
             raise SystemExit("compare needs at least two run directories")
-        print(compare(args.runs))
+        print(compare([r.split("+") for r in args.runs], args.show))
     elif args.command == "check-urls":
         fetcher = Fetcher(use_browser=not args.no_browser)
         try:
