@@ -1,9 +1,9 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 60 proposals: 28 good, 30 bad, 2 for a person. How to read and run them: referee/testset/README.md.
+# 60 proposals: 28 good, 30 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
-#   id        G.. good, B.. bad, H.. for a person
+#   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
 #   expect    the outcomes that count as right: accept | reject | alias | human
 #   rules     for a bad case: the rules of which at least one must answer "no" (or the lint rule)
 #   alias_of  for expect alias: the key the proposal duplicates
@@ -236,53 +236,23 @@ cases:
   note: The distribution patches PHP without raising the upstream version, so it has its own update stream (T7). Fase 1 left distribution packages out; this case tests the rule, not that choice.
 
 # ---------------------------------------------------------------------------------------------
-# FOR A PERSON — the rules do not settle it yet.
+# AI MODELS — once for a person; good since Fred decided that AI models are in TAX (13 November).
 # ---------------------------------------------------------------------------------------------
 
 - id: H01
   type: ai-model
-  expect: [human]
+  expect: [accept]
   lint: pass
-  proposal:
-    publishers/anthropic.yaml: |
-      key: anthropic
-      name: Anthropic
-      source: https://www.anthropic.com/company
-      aliases: []
-    products/anthropic/claude.yaml: |
-      key: anthropic/claude
-      publisher: anthropic
-      name: Claude
-      kind: software
-      source: https://endoflife.date/claude
-      versions:
-        source: https://endoflife.date/claude
-      identifiers: []
-      aliases: []
+  holdout: [products/anthropic/claude.yaml, publishers/anthropic.yaml]
   verify: [https://www.anthropic.com/company]
-  note: A model gets no updates; it is replaced by a model with another name. Whether the model names are versions of one product is an open question (Fred, 13 Nov). The referee should not decide it.
+  note: AI models belong in TAX (Fred, 13 Nov), one product per provider with the model names as versions and an end date per version, as endoflife.date keeps them. The id stays H01; the case is now a good one.
 - id: H02
   type: ai-model
-  expect: [human]
+  expect: [accept]
   lint: pass
-  proposal:
-    publishers/openai.yaml: |
-      key: openai
-      name: OpenAI
-      source: https://openai.com/about/
-      aliases: []
-    products/openai/openai-api-models.yaml: |
-      key: openai/openai-api-models
-      publisher: openai
-      name: OpenAI API Models
-      kind: software
-      source: https://endoflife.date/openai-api-models
-      versions:
-        source: https://endoflife.date/openai-api-models
-      identifiers: []
-      aliases: []
-  verify: [https://openai.com/about/]
-  note: Checked 13 Nov - the publisher page answers 403 to a plain fetch. As H01. "OpenAI API Models" is also a collective name, not a product name (S6).
+  holdout: [products/openai/openai-api-models.yaml, publishers/openai.yaml]
+  verify: [https://developers.openai.com/api/docs/deprecations]
+  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product.
 
 # ---------------------------------------------------------------------------------------------
 # BAD, caught by code (S1–S3, and the code part of S8). Do not reach the AI.
