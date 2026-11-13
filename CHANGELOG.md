@@ -11,6 +11,13 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 1.2.0 — 2026-11-13
+
+- Publisher: a new optional field `machine_sources`, a list of the sources the publisher makes for
+  machines (an update catalog, AppStream metadata or CSAF provider metadata). Each entry has a
+  `url`, a `format` and a `source`: the page of the publisher that names it.
+- Existing publisher files stay valid; readers that do not know the field can ignore it.
+
 ## 1.1.0 — 2026-11-12
 
 - Identifiers: two new codes, `winget` (a winget package identifier) and `homebrew` (a Homebrew

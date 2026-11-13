@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/publisher.schema.json",
   "title": "TAXNMY publisher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Whoever publishes the updates of a product. Stored as publishers/<publisher>.yaml. The form of the key (rule S2) and uniqueness (rule S3) are checked by tools/lint.py, not by this schema.",
   "type": "object",
   "additionalProperties": false,
@@ -22,6 +22,32 @@
       "description": "The page where the publisher uses this name.",
       "type": "string",
       "pattern": "^https?://[^\\s]+$"
+    },
+    "machine_sources": {
+      "description": "Sources the publisher makes for machines, where its updates can be read without a web page: an update catalog, AppStream metadata or CSAF provider metadata. Optional. Step 0 of the referee's ladder can read them (referee/README.md).",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "format", "source"],
+        "properties": {
+          "url": {
+            "description": "Where the source for machines is.",
+            "type": "string",
+            "pattern": "^https?://[^\\s]+$"
+          },
+          "format": {
+            "description": "The format of the source: update-catalog (a Manifest of SoftwareComponent), appstream (AppStream metadata) or csaf-provider (a CSAF provider-metadata.json).",
+            "enum": ["update-catalog", "appstream", "csaf-provider"]
+          },
+          "source": {
+            "description": "The page of the publisher that names this source for machines.",
+            "type": "string",
+            "pattern": "^https?://[^\\s]+$"
+          }
+        }
+      }
     },
     "aliases": {
       "description": "Earlier or other keys of this publisher.",

@@ -90,6 +90,16 @@ class LintTest(unittest.TestCase):
         self.write("products/the-php-group/php.yaml", "key: the-php-group/php\npublisher: the-php-group\nname: PHP\nkind: software\nsource: https://www.php.net/\nversions:\n  source: https://www.php.net/releases/\n")
         self.assertEqual(self.errors(), [])
 
+    def test_s1_publisher_machine_sources(self):
+        entry = ("machine_sources:\n  - url: https://downloads.example.com/catalog/Catalog.xml.gz\n"
+                 "    format: update-catalog\n    source: https://www.synology.com/en-global/company\n")
+        self.write("publishers/synology.yaml", PUBLISHER + entry)
+        self.assertEqual(self.errors(), [])
+        self.write("publishers/synology.yaml", PUBLISHER + entry.replace("update-catalog", "rss"))
+        self.assertOnly("S1", 7, file="publishers/synology.yaml", contains="machine_sources/0/format")
+        self.write("publishers/synology.yaml", PUBLISHER + entry.replace("    source: https://www.synology.com/en-global/company\n", ""))
+        self.assertOnly("S1", 6, file="publishers/synology.yaml", contains="'source' is a required property")
+
     # S2
     def test_s2_key_does_not_follow_name(self):
         self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("key: synology/ds224-plus", "key: synology/ds224"))
