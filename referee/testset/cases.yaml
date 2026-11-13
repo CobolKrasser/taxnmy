@@ -1,0 +1,872 @@
+# TAXNMY referee testset, version 1 (13 November 2026)
+#
+# 60 proposals: 28 good, 30 bad, 2 for a person. How to read and run them: referee/testset/README.md.
+#
+# Fields per case
+#   id        G.. good, B.. bad, H.. for a person
+#   expect    the outcomes that count as right: accept | reject | alias | human
+#   rules     for a bad case: the rules of which at least one must answer "no" (or the lint rule)
+#   alias_of  for expect alias: the key the proposal duplicates
+#   lint      what tools/lint.py reports on the staged case: pass | signal | error S1/S2/S3
+#   type      the kind of case, used to report results per kind
+#   holdout   files taken out of the dataset and proposed again, unchanged
+#   hide      files taken out of the dataset and not proposed
+#   context   files added to the dataset before the case runs
+#   proposal  files proposed: path -> file content
+#   verify    URLs written for this testset; check them before the run (see README)
+#   note      why the expectation is what it is
+
+version: 1
+cases:
+
+# ---------------------------------------------------------------------------------------------
+# GOOD — existing products proposed again (hold-outs). Sources are real; ground truth is fase 1.
+# ---------------------------------------------------------------------------------------------
+
+- id: G01
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/synology/ds124.yaml]
+- id: G02
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/apple/iphone-17-pro.yaml]
+- id: G03
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/netgear/rbr750.yaml]
+- id: G04
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/shelly/shelly-plus-1pm.yaml]
+- id: G05
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/fortinet/fortigate-60f.yaml]
+  note: The product source is a PDF datasheet; if it is unreadable, human is the expected answer.
+- id: G06
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/sony/ilce-7m4.yaml]
+  note: The model code ILCE-7M4 and the marketing name α7 IV both appear at the source. The name is the model code as the source writes it (S6).
+- id: G07
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/samsung/galaxy-tab-s9.yaml]
+- id: G08
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/google/pixel-8.yaml]
+- id: G09
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/dell/poweredge-r650.yaml]
+- id: G10
+  type: holdout-os
+  expect: [accept]
+  lint: pass
+  holdout: [products/canonical/ubuntu.yaml]
+- id: G11
+  type: holdout-software
+  expect: [accept]
+  lint: pass
+  holdout: [products/elastic/kibana.yaml]
+- id: G12
+  type: holdout-software
+  expect: [accept]
+  lint: pass
+  holdout: [products/python-software-foundation/python.yaml]
+- id: G13
+  type: holdout-software
+  expect: [accept]
+  lint: pass
+  holdout: [products/microsoft/sql-server.yaml]
+- id: G14
+  type: holdout-service
+  expect: [accept]
+  lint: pass
+  holdout: [products/amazon-web-services/amazon-rds-for-mysql.yaml]
+  note: A managed service where the customer chooses the version (R1, T7).
+- id: G15
+  type: holdout-service
+  expect: [accept]
+  lint: pass
+  holdout: [products/microsoft/azure-kubernetes-service.yaml]
+- id: G16
+  type: holdout-software
+  expect: [accept]
+  lint: pass
+  holdout: [products/grafana-labs/grafana.yaml]
+
+# Publisher is the project itself (164 times in fase 1). Right when the project publishes its own releases.
+- id: G17
+  type: project-publisher
+  expect: [accept]
+  lint: pass
+  holdout: [products/caddy/caddy.yaml, publishers/caddy.yaml]
+- id: G18
+  type: project-publisher
+  expect: [accept]
+  lint: pass
+  holdout: [products/openssl/openssl.yaml, publishers/openssl.yaml]
+- id: G19
+  type: project-publisher
+  expect: [accept]
+  lint: pass
+  holdout: [products/nextcloud/nextcloud.yaml, publishers/nextcloud.yaml]
+  note: The publisher has no other products, so it is held out with the product.
+
+# S4 signals from fase 1: one CPE for two products with their own update stream (T7).
+- id: G20
+  type: s4-signal
+  expect: [accept]
+  lint: signal
+  holdout: [products/oracle/oracle-graalvm.yaml]
+  note: Shares cpe oracle:graalvm with GraalVM Community Edition. Separate builds, licences and release pages, so its own update stream.
+- id: G21
+  type: s4-signal
+  expect: [accept]
+  lint: signal
+  holdout: [products/oracle/graalvm-community-edition.yaml]
+- id: G22
+  type: s4-signal
+  expect: [accept]
+  lint: signal
+  holdout: [products/red-hat/ansible-core.yaml]
+  note: ansible-core and the ansible community package have their own version numbers and release cycles.
+- id: G23
+  type: s4-signal
+  expect: [accept, human]
+  lint: signal
+  holdout: [products/red-hat/ansible.yaml]
+  note: Own update stream, so S4 is yes. Who publishes the community package (S5) may need a person.
+
+# Two publishers of one group (S5).
+- id: G24
+  type: related-publisher
+  expect: [accept, human]
+  lint: pass
+  holdout: [products/alibaba-cloud/alibaba-ack.yaml, publishers/alibaba-cloud.yaml]
+  note: The dataset keeps the publisher alibaba. Alibaba Cloud publishes the ACK updates under its own name, as a subsidiary that publishes its own updates. Human is fine if the sources do not show it.
+- id: G25
+  type: related-publisher
+  expect: [accept, human]
+  lint: pass
+  holdout: [products/alibaba/alibaba-dragonwell.yaml, publishers/alibaba.yaml]
+  note: The dataset keeps alibaba-cloud. The publisher source in fase 1 is an endoflife.date page; if it does not show who publishes, human is right.
+
+# New proposals.
+- id: G26
+  type: word-order-different
+  expect: [accept]
+  lint: signal
+  context:
+    publishers/vovsoft.yaml: |
+      key: vovsoft
+      name: Vovsoft
+      source: https://vovsoft.com/
+      aliases: []
+    products/vovsoft/csv-to-json-converter.yaml: |
+      key: vovsoft/csv-to-json-converter
+      publisher: vovsoft
+      name: CSV to JSON Converter
+      kind: software
+      source: https://vovsoft.com/software/csv-to-json-converter/
+      versions:
+        source: https://vovsoft.com/software/csv-to-json-converter/
+      identifiers: []
+      aliases: []
+  proposal:
+    products/vovsoft/json-to-csv-converter.yaml: |
+      key: vovsoft/json-to-csv-converter
+      publisher: vovsoft
+      name: JSON to CSV Converter
+      kind: software
+      source: https://vovsoft.com/software/json-to-csv-converter/
+      versions:
+        source: https://vovsoft.com/software/json-to-csv-converter/
+      identifiers: []
+      aliases: []
+  verify: [https://vovsoft.com/, https://vovsoft.com/software/csv-to-json-converter/, https://vovsoft.com/software/json-to-csv-converter/]
+  note: Same words in another order, but another product. The lint signals it; S4 must say yes.
+- id: G27
+  type: own-firmware
+  expect: [accept, human]
+  lint: pass
+  proposal:
+    products/samsung/galaxy-tab-s9-5g.yaml: |
+      key: samsung/galaxy-tab-s9-5g
+      publisher: samsung
+      name: Galaxy Tab S9 5G
+      kind: device
+      source: https://doc.samsungmobile.com/SM-X716B/EUX/doc.html
+      versions:
+        source: https://doc.samsungmobile.com/SM-X716B/EUX/doc.html
+      identifiers: []
+      aliases: []
+  verify: [https://doc.samsungmobile.com/SM-X716B/EUX/doc.html]
+  note: Looks like a variant of the Galaxy Tab S9 (SM-X710), but has its own firmware per model code, so it is a product of its own (T7).
+- id: G28
+  type: distribution-package
+  expect: [accept, human]
+  lint: pass
+  proposal:
+    products/canonical/php8-3.yaml: |
+      key: canonical/php8-3
+      publisher: canonical
+      name: php8.3
+      kind: software
+      source: https://launchpad.net/ubuntu/+source/php8.3
+      versions:
+        source: https://launchpad.net/ubuntu/+source/php8.3/+changelog
+      identifiers:
+      - purl: pkg:deb/ubuntu/php8.3
+        source: https://launchpad.net/ubuntu/+source/php8.3
+      aliases: []
+  verify: [https://launchpad.net/ubuntu/+source/php8.3, https://launchpad.net/ubuntu/+source/php8.3/+changelog]
+  note: The distribution patches PHP without raising the upstream version, so it has its own update stream (T7). Fase 1 left distribution packages out; this case tests the rule, not that choice.
+
+# ---------------------------------------------------------------------------------------------
+# FOR A PERSON — the rules do not settle it yet.
+# ---------------------------------------------------------------------------------------------
+
+- id: H01
+  type: ai-model
+  expect: [human]
+  lint: pass
+  proposal:
+    publishers/anthropic.yaml: |
+      key: anthropic
+      name: Anthropic
+      source: https://www.anthropic.com/company
+      aliases: []
+    products/anthropic/claude.yaml: |
+      key: anthropic/claude
+      publisher: anthropic
+      name: Claude
+      kind: software
+      source: https://endoflife.date/claude
+      versions:
+        source: https://endoflife.date/claude
+      identifiers: []
+      aliases: []
+  verify: [https://www.anthropic.com/company]
+  note: A model gets no updates; it is replaced by a model with another name. Whether the model names are versions of one product is an open question (Fred, 13 Nov). The referee should not decide it.
+- id: H02
+  type: ai-model
+  expect: [human]
+  lint: pass
+  proposal:
+    publishers/openai.yaml: |
+      key: openai
+      name: OpenAI
+      source: https://openai.com/about/
+      aliases: []
+    products/openai/openai-api-models.yaml: |
+      key: openai/openai-api-models
+      publisher: openai
+      name: OpenAI API Models
+      kind: software
+      source: https://endoflife.date/openai-api-models
+      versions:
+        source: https://endoflife.date/openai-api-models
+      identifiers: []
+      aliases: []
+  verify: [https://openai.com/about/]
+  note: Checked 13 Nov - the publisher page answers 403 to a plain fetch. As H01. "OpenAI API Models" is also a collective name, not a product name (S6).
+
+# ---------------------------------------------------------------------------------------------
+# BAD, caught by code (S1–S3, and the code part of S8). Do not reach the AI.
+# ---------------------------------------------------------------------------------------------
+
+- id: B01
+  type: code
+  expect: [reject]
+  rules: [S1]
+  lint: error S1
+  hide: [products/synology/ds124.yaml]
+  proposal:
+    products/synology/ds124.yaml: |
+      key: synology/ds124
+      publisher: synology
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      identifiers: []
+      aliases: []
+  note: No versions. Every product needs a source of versions (R1).
+- id: B02
+  type: code
+  expect: [reject]
+  rules: [S1]
+  lint: error S1
+  hide: [products/apple/apple-watch-ultra.yaml]
+  proposal:
+    products/apple/apple-watch-ultra.yaml: |
+      key: apple/apple-watch-ultra
+      publisher: apple
+      name: Apple Watch Ultra
+      kind: device
+      source: https://support.apple.com/en-us/108056
+      versions:
+        source: https://support.apple.com/en-us/100100
+      battery_capacity_mah: 542
+      identifiers: []
+      aliases: []
+  note: A technical specification (T8). The schema accepts no other fields.
+- id: B03
+  type: code
+  expect: [reject]
+  rules: [S2]
+  lint: error S2
+  hide: [products/synology/ds124.yaml]
+  proposal:
+    products/synology/ds-124.yaml: |
+      key: synology/ds-124
+      publisher: synology
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+  note: The writing rule makes ds124 of DS124.
+- id: B04
+  type: code
+  expect: [reject]
+  rules: [S2]
+  lint: error S2
+  hide: [products/synology/ds124.yaml]
+  proposal:
+    products/synology/ds124@7-2.yaml: |
+      key: synology/ds124@7.2
+      publisher: synology
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+  note: A version in the key.
+- id: B05
+  type: code
+  expect: [reject, alias]
+  rules: [S3]
+  lint: error S3
+  proposal:
+    publishers/caddyserver.yaml: |
+      key: caddyserver
+      name: caddyserver
+      source: https://caddyserver.com/
+      aliases: []
+    products/caddyserver/caddy.yaml: |
+      key: caddyserver/caddy
+      publisher: caddyserver
+      name: Caddy
+      kind: software
+      source: https://caddyserver.com/
+      versions:
+        source: https://github.com/caddyserver/caddy/releases
+      identifiers:
+      - purl: pkg:github/caddyserver/caddy
+        source: https://github.com/caddyserver/caddy
+      aliases: []
+  note: The purl belongs to caddy/caddy, so this is a duplicate under another publisher key.
+- id: B06
+  type: ai-source
+  expect: [reject, human]
+  rules: [S8]
+  lint: pass
+  hide: [products/fortinet/fortigate-60f.yaml]
+  proposal:
+    products/fortinet/fortigate-60f.yaml: |
+      key: fortinet/fortigate-60f
+      publisher: fortinet
+      name: FortiGate 60F
+      kind: device
+      source: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-fortiwifi-60f-series.pdf
+      versions:
+        source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
+      identifiers:
+      - gtin: "0812345678904"
+        source: https://chatgpt.com/share/6731a2b4-0000-0000-0000-000000000000
+      aliases: []
+  note: The GTIN points to an AI chat, not a source. The lint does not catch this yet (proposal in README); the referee must, under S8.
+
+# ---------------------------------------------------------------------------------------------
+# BAD, judged by the AI.
+# ---------------------------------------------------------------------------------------------
+
+# Same product, words in another order (S3 signal -> S4 alias).
+- id: B07
+  type: word-order-duplicate
+  expect: [alias]
+  alias_of: apple/macbook-pro-14-inch-2021
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/apple/macbook-pro-2021-14-inch.yaml: |
+      key: apple/macbook-pro-2021-14-inch
+      publisher: apple
+      name: MacBook Pro 2021 (14-inch)
+      kind: device
+      source: https://support.apple.com/en-us/108052
+      versions:
+        source: https://support.apple.com/en-us/100100
+      identifiers: []
+      aliases: []
+- id: B08
+  type: word-order-duplicate
+  expect: [alias]
+  alias_of: apple/ipad-pro-12-9-inch-5th-generation
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/apple/ipad-pro-5th-generation-12-9-inch.yaml: |
+      key: apple/ipad-pro-5th-generation-12-9-inch
+      publisher: apple
+      name: iPad Pro 5th generation 12.9-inch
+      kind: device
+      source: https://support.apple.com/en-us/108043
+      versions:
+        source: https://support.apple.com/en-us/100100
+      identifiers: []
+      aliases: []
+- id: B09
+  type: word-order-duplicate
+  expect: [alias]
+  alias_of: apple/apple-tv-4k-3rd-generation
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/apple/apple-tv-3rd-generation-4k.yaml: |
+      key: apple/apple-tv-3rd-generation-4k
+      publisher: apple
+      name: Apple TV 3rd generation 4K
+      kind: device
+      source: https://support.apple.com/en-us/101605
+      versions:
+        source: https://support.apple.com/en-us/102436
+      identifiers: []
+      aliases: []
+- id: B10
+  type: word-order-duplicate
+  expect: [alias]
+  alias_of: shelly/shelly-plus-1pm
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/shelly/shelly-1pm-plus.yaml: |
+      key: shelly/shelly-1pm-plus
+      publisher: shelly
+      name: Shelly 1PM Plus
+      kind: device
+      source: https://www.shelly.com/products/shelly-plus-1pm
+      versions:
+        source: https://shelly-api-docs.shelly.cloud/gen2/changelog/
+      identifiers: []
+      aliases: []
+- id: B11
+  type: word-order-duplicate
+  expect: [alias]
+  alias_of: samsung/galaxy-tab-s9
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/samsung/galaxy-s9-tab.yaml: |
+      key: samsung/galaxy-s9-tab
+      publisher: samsung
+      name: Galaxy S9 Tab
+      kind: device
+      source: https://www.samsung.com/us/tablets/galaxy-tab-s9/
+      versions:
+        source: https://doc.samsungmobile.com/SM-X710/EUX/doc.html
+      identifiers: []
+      aliases: []
+
+# Variant without its own update stream (S4).
+- id: B12
+  type: variant
+  expect: [alias, reject]
+  alias_of: apple/iphone-17-pro
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/apple/iphone-17-pro-256gb-cosmic-orange.yaml: |
+      key: apple/iphone-17-pro-256gb-cosmic-orange
+      publisher: apple
+      name: iPhone 17 Pro 256GB Cosmic Orange
+      kind: device
+      source: https://support.apple.com/en-us/108044
+      versions:
+        source: https://support.apple.com/en-us/123075
+      identifiers: []
+      aliases: []
+  note: Capacity and colour are variants.
+- id: B13
+  type: variant
+  expect: [alias, reject]
+  alias_of: apple/apple-watch-ultra
+  rules: [S4, S6]
+  lint: pass
+  proposal:
+    products/apple/apple-watch-ultra-with-alpine-loop.yaml: |
+      key: apple/apple-watch-ultra-with-alpine-loop
+      publisher: apple
+      name: Apple Watch Ultra with Alpine Loop
+      kind: device
+      source: https://support.apple.com/en-us/108056
+      versions:
+        source: https://support.apple.com/en-us/100100
+      identifiers: []
+      aliases: []
+  note: A band is an accessory.
+- id: B14
+  type: variant
+  expect: [alias, reject]
+  alias_of: fortinet/fortigate-60f
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/fortinet/fortigate-60f-unified-threat-protection-bundle.yaml: |
+      key: fortinet/fortigate-60f-unified-threat-protection-bundle
+      publisher: fortinet
+      name: FortiGate 60F Unified Threat Protection Bundle
+      kind: device
+      source: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-fortiwifi-60f-series.pdf
+      versions:
+        source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
+      identifiers: []
+      aliases: []
+  note: A licence bundle on the same device and firmware.
+- id: B15
+  type: variant
+  expect: [alias, reject]
+  alias_of: sony/ilce-7m4
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/sony/ilce-7m4k.yaml: |
+      key: sony/ilce-7m4k
+      publisher: sony
+      name: ILCE-7M4K
+      kind: device
+      source: https://www.sony.nl/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/downloads
+      versions:
+        source: https://www.sony.nl/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/downloads
+      identifiers: []
+      aliases: []
+  note: The kit with a lens; the same body and firmware. The source shows only ILCE-7M4, so S6 or S8 may also say no.
+
+# A description instead of a name (S6).
+- id: B16
+  type: description
+  expect: [reject]
+  rules: [S6]
+  lint: pass
+  hide: [products/synology/ds124.yaml]
+  proposal:
+    products/synology/ds124-1-bay-nas-for-home-and-personal-cloud-storage.yaml: |
+      key: synology/ds124-1-bay-nas-for-home-and-personal-cloud-storage
+      publisher: synology
+      name: DS124 1-bay NAS for home and personal cloud storage
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+- id: B17
+  type: description
+  expect: [reject]
+  rules: [S6]
+  lint: pass
+  hide: [products/elastic/kibana.yaml]
+  proposal:
+    products/elastic/kibana-data-visualization-and-exploration-tool-for-elasticsearch.yaml: |
+      key: elastic/kibana-data-visualization-and-exploration-tool-for-elasticsearch
+      publisher: elastic
+      name: Kibana data visualization and exploration tool for Elasticsearch
+      kind: software
+      source: https://endoflife.date/kibana
+      versions:
+        source: https://endoflife.date/kibana
+      identifiers: []
+      aliases: []
+
+# A translated name (S6).
+- id: B18
+  type: translated
+  expect: [reject]
+  rules: [S6]
+  lint: pass
+  hide: [products/apple/apple-tv-4k-3rd-generation.yaml]
+  proposal:
+    products/apple/apple-tv-4k-3e-generatie.yaml: |
+      key: apple/apple-tv-4k-3e-generatie
+      publisher: apple
+      name: Apple TV 4K (3e generatie)
+      kind: device
+      source: https://support.apple.com/en-us/101605
+      versions:
+        source: https://support.apple.com/en-us/102436
+      identifiers: []
+      aliases: []
+  note: The source is an English page. With a Dutch source page the Dutch name would be right; that is why the source decides.
+- id: B19
+  type: translated
+  expect: [reject]
+  rules: [S6]
+  lint: pass
+  hide: [products/apple/apple-watch-ultra.yaml]
+  proposal:
+    products/apple/apple-horloge-ultra.yaml: |
+      key: apple/apple-horloge-ultra
+      publisher: apple
+      name: Apple Horloge Ultra
+      kind: device
+      source: https://support.apple.com/en-us/108056
+      versions:
+        source: https://support.apple.com/en-us/100100
+      identifiers: []
+      aliases: []
+
+# A product that does not exist, or a value that only an AI gives (S7, S8).
+- id: B20
+  type: hallucinated
+  expect: [reject, human]
+  rules: [S7, S8]
+  lint: pass
+  proposal:
+    products/shelly/shelly-plus-9pm.yaml: |
+      key: shelly/shelly-plus-9pm
+      publisher: shelly
+      name: Shelly Plus 9PM
+      kind: device
+      source: https://www.shelly.com/products/shelly-plus-9pm
+      versions:
+        source: https://shelly-api-docs.shelly.cloud/gen2/changelog/
+      identifiers: []
+      aliases: []
+  verify: [https://www.shelly.com/products/shelly-plus-9pm]
+  note: Invented model. The product page is expected to give an error or not show the product.
+- id: B21
+  type: hallucinated
+  expect: [reject, human]
+  rules: [S7, S8]
+  lint: pass
+  proposal:
+    products/fortinet/fortigate-66f.yaml: |
+      key: fortinet/fortigate-66f
+      publisher: fortinet
+      name: FortiGate 66F
+      kind: device
+      source: https://www.fortinet.com/products/next-generation-firewall/fortigate-66f
+      versions:
+        source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
+      identifiers: []
+      aliases: []
+  verify: [https://www.fortinet.com/products/next-generation-firewall/fortigate-66f]
+  note: Invented model.
+- id: B22
+  type: hallucinated
+  expect: [reject, human]
+  rules: [S7, S8]
+  lint: pass
+  proposal:
+    products/synology/ds128.yaml: |
+      key: synology/ds128
+      publisher: synology
+      name: DS128
+      kind: device
+      source: https://www.synology.com/en-global/products/DS128
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS128
+      identifiers: []
+      aliases: []
+  verify: [https://www.synology.com/en-global/products/DS128]
+  note: Invented model. The site may answer 200 with a general page; the referee must see that the page does not show the product.
+- id: B23
+  type: unconfirmed-value
+  expect: [reject, human]
+  rules: [S8]
+  lint: pass
+  hide: [products/apple/iphone-17-pro.yaml]
+  proposal:
+    products/apple/iphone-17-pro.yaml: |
+      key: apple/iphone-17-pro
+      publisher: apple
+      name: iPhone 17 Pro
+      kind: device
+      source: https://support.apple.com/en-us/108044
+      versions:
+        source: https://support.apple.com/en-us/123075
+      identifiers:
+      - gtin: "0195949000004"
+        source: https://support.apple.com/en-us/108044
+      aliases: []
+  note: A plausible GTIN that the source page does not contain.
+- id: B24
+  type: unconfirmed-value
+  expect: [reject, human]
+  rules: [S8]
+  lint: pass
+  hide: [products/elastic/kibana.yaml]
+  proposal:
+    products/elastic/kibana.yaml: |
+      key: elastic/kibana
+      publisher: elastic
+      name: Kibana
+      kind: software
+      source: https://endoflife.date/kibana
+      versions:
+        source: https://endoflife.date/kibana
+      identifiers:
+      - cpe: cpe:2.3:a:elastic:kibana_server
+        source: https://endoflife.date/kibana
+      aliases: []
+  note: An invented CPE, pointing to a page that does not contain it.
+
+# The wrong publisher (S5).
+- id: B25
+  type: wrong-publisher
+  expect: [reject]
+  rules: [S5, S7]
+  lint: pass
+  proposal:
+    publishers/amazon.yaml: |
+      key: amazon
+      name: Amazon
+      source: https://www.aboutamazon.com/
+      aliases: []
+    products/amazon/video-doorbell-4.yaml: |
+      key: amazon/video-doorbell-4
+      publisher: amazon
+      name: Video Doorbell 4
+      kind: device
+      source: https://ring.com/products/video-doorbell-4
+      versions:
+        source: https://ring.com/support
+      identifiers: []
+      aliases: []
+  verify: [https://www.aboutamazon.com/, https://ring.com/products/video-doorbell-4, https://ring.com/support]
+  note: The parent company instead of the brand that publishes the firmware. Checked 13 Nov - the product URL redirects to another doorbell, so S7 may say no as well; replace it with a page that shows the product if one is found.
+- id: B26
+  type: wrong-publisher
+  expect: [reject]
+  rules: [S5]
+  lint: pass
+  hide: [products/elastic/kibana.yaml]
+  proposal:
+    publishers/kibana.yaml: |
+      key: kibana
+      name: Kibana
+      source: https://www.elastic.co/kibana
+      aliases: []
+    products/kibana/kibana.yaml: |
+      key: kibana/kibana
+      publisher: kibana
+      name: Kibana
+      kind: software
+      source: https://www.elastic.co/kibana
+      versions:
+        source: https://endoflife.date/kibana
+      identifiers: []
+      aliases: []
+  verify: [https://www.elastic.co/kibana]
+  note: The counterpart of G17-G19. The project name is not the publisher when a company publishes the releases.
+- id: B27
+  type: wrong-publisher
+  expect: [reject]
+  rules: [S5]
+  lint: pass
+  hide: [products/netgear/rbr750.yaml]
+  proposal:
+    publishers/coolblue.yaml: |
+      key: coolblue
+      name: Coolblue
+      source: https://www.coolblue.nl/
+      aliases: []
+    products/coolblue/rbr750.yaml: |
+      key: coolblue/rbr750
+      publisher: coolblue
+      name: RBR750
+      kind: device
+      source: https://www.netgear.com/support/product/rbr750
+      versions:
+        source: https://www.netgear.com/support/product/rbr750
+      identifiers: []
+      aliases: []
+  note: A retailer as publisher.
+- id: B28
+  type: repackaged
+  expect: [reject, alias]
+  alias_of: caddy/caddy
+  rules: [S4, S5]
+  lint: pass
+  proposal:
+    publishers/chocolatey-community.yaml: |
+      key: chocolatey-community
+      name: Chocolatey Community
+      source: https://community.chocolatey.org/
+      aliases: []
+    products/chocolatey-community/caddy.yaml: |
+      key: chocolatey-community/caddy
+      publisher: chocolatey-community
+      name: Caddy
+      kind: software
+      source: https://community.chocolatey.org/packages/caddy
+      versions:
+        source: https://community.chocolatey.org/packages/caddy
+      identifiers: []
+      aliases: []
+  verify: [https://community.chocolatey.org/packages/caddy]
+  note: A package manager that redistributes the upstream releases unchanged has no update stream of its own. Compare G28, where the distribution patches.
+
+# A service without a version the customer can see (R1, S4).
+- id: B29
+  type: saas
+  expect: [reject, human]
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/microsoft/outlook-on-the-web.yaml: |
+      key: microsoft/outlook-on-the-web
+      publisher: microsoft
+      name: Outlook on the web
+      kind: software
+      source: https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook-com-account
+      versions:
+        source: https://www.microsoft.com/en-us/microsoft-365/roadmap
+      identifiers: []
+      aliases: []
+  verify: [https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook-com-account, https://www.microsoft.com/en-us/microsoft-365/roadmap]
+  note: A roadmap of features is not a list of versions. Checked 13 Nov - both pages answer 403 to a plain fetch; if they stay unreadable, human is the expected answer.
+- id: B30
+  type: saas
+  expect: [reject]
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/google/gmail.yaml: |
+      key: google/gmail
+      publisher: google
+      name: Gmail
+      kind: software
+      source: https://workspace.google.com/products/gmail/
+      versions:
+        source: https://workspaceupdates.googleblog.com/
+      identifiers: []
+      aliases: []
+  verify: [https://workspace.google.com/products/gmail/, https://workspaceupdates.googleblog.com/]
