@@ -1,0 +1,119 @@
+version: 1
+cases:
+- id: G01
+  type: holdout-device
+  expect: [accept]
+  lint: pass
+  holdout: [products/synology/ds124.yaml]
+- id: G02
+  type: word-order-different
+  expect: [accept]
+  lint: pass
+  context:
+    products/synology/ds923-plus.yaml: |
+      key: synology/ds923-plus
+      publisher: synology
+      name: DS923+
+      kind: device
+      source: https://www.synology.com/en-global/products/DS923+
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+  proposal:
+    products/synology/ds1522-plus.yaml: |
+      key: synology/ds1522-plus
+      publisher: synology
+      name: DS1522+
+      kind: device
+      source: https://www.synology.com/en-global/products/DS1522+
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+- id: H01
+  type: ai-model
+  expect: [human]
+  lint: pass
+  proposal:
+    publishers/acme.yaml: |
+      key: acme
+      name: Acme
+      source: https://acme.example/about
+      aliases: []
+    products/acme/widget.yaml: |
+      key: acme/widget
+      publisher: acme
+      name: Widget
+      kind: software
+      source: https://acme.example/widget
+      versions:
+        source: https://acme.example/widget
+- id: B01
+  type: code
+  expect: [reject]
+  rules: [S1]
+  lint: error S1
+  hide: [products/synology/ds124.yaml]
+  proposal:
+    products/synology/ds124.yaml: |
+      key: synology/ds124
+      publisher: synology
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+- id: B07
+  type: word-order-duplicate
+  expect: [alias]
+  alias_of: synology/ds224-plus
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/synology/plus-ds224.yaml: |
+      key: synology/plus-ds224
+      publisher: synology
+      name: Plus DS224
+      kind: device
+      source: https://www.synology.com/en-global/products/DS224+
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+- id: B20
+  type: hallucinated
+  expect: [reject, human]
+  rules: [S7, S8]
+  lint: pass
+  proposal:
+    products/synology/ds128.yaml: |
+      key: synology/ds128
+      publisher: synology
+      name: DS128
+      kind: device
+      source: https://www.synology.com/en-global/products/DS128
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+  verify: [https://www.synology.com/en-global/products/DS128]
+- id: B21
+  type: hallucinated
+  expect: [reject, human]
+  rules: [S7]
+  lint: pass
+  proposal:
+    products/synology/ds129.yaml: |
+      key: synology/ds129
+      publisher: synology
+      name: DS129
+      kind: device
+      source: https://www.synology.com/en-global/products/DS129
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+- id: B22
+  type: stale
+  expect: [reject]
+  rules: [S4]
+  lint: signal
+  proposal:
+    products/synology/ds130.yaml: |
+      key: synology/ds130
+      publisher: synology
+      name: DS130
+      kind: device
+      source: https://www.synology.com/en-global/products/DS130
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+  note: Says signal, but the lint passes it.
