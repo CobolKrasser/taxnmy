@@ -7,7 +7,7 @@ versions:
   source: https://www.postgresql.org/docs/release/
 identifiers:
 - cpe: cpe:2.3:a:postgresql:postgresql
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:postgresql:postgresql
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
 - purl: pkg:generic/postgresql
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
 aliases: []

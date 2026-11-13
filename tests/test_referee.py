@@ -34,11 +34,32 @@ def reply(duplicate_of=None, **rules):
 REPLIES = {
     "synology/ds124": reply(**{r: judgment(url="https://www.synology.com/en-global/products/DS124") for r in referee.RULES}),
     "synology/ds1522-plus": reply(S7=judgment(quote="a quote that is not on the page")),
-    "acme/widget": reply(S4=judgment("doubt")),
+    "acme/widget": "this is not JSON",
     "synology/plus-ds224": reply(duplicate_of="synology/ds224-plus", S4=judgment("no")),
-    "synology/ds128": reply(),  # wrongly lets an invented product through
-    "synology/ds129": "this is not JSON",
+    "synology/ds128": reply(),  # never asked: its product source answers 404
+    "synology/ds129": reply(),  # wrongly lets an invented product through
 }
+
+
+def minimal_pdf(text: str) -> bytes:
+    """A one-page PDF with one line of text. pypdf rebuilds the cross-reference table itself."""
+    stream = f"BT /F1 12 Tf 72 712 Td ({text}) Tj ET".encode()
+    objects = [
+        b"<< /Type /Catalog /Pages 2 0 R >>",
+        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        b"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>",
+        b"<< /Length " + str(len(stream)).encode() + b" >>\nstream\n" + stream + b"\nendstream",
+        b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+    ]
+    out, offsets = b"%PDF-1.4\n", []
+    for i, obj in enumerate(objects, 1):
+        offsets.append(len(out))
+        out += f"{i} 0 obj\n".encode() + obj + b"\nendobj\n"
+    xref = len(out)
+    out += f"xref\n0 {len(objects) + 1}\n0000000000 65535 f \n".encode()
+    out += b"".join(f"{o:010d} 00000 n \n".encode() for o in offsets)
+    out += f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R >>\nstartxref\n{xref}\n%%EOF\n".encode()
+    return out
 
 
 class Block:
@@ -116,14 +137,28 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual({i: (r.outcome, r.by, r.right) for i, r in results.items()}, {
             "G01": ("accept", "ai", True),
             "G02": ("human", "ai", False),  # a quote that is not on the page turns yes into doubt
-            "H01": ("human", "ai", True),
+            "H01": ("human", "error", True),
             "B01": ("reject", "code", True),
             "B07": ("alias", "ai", True),
-            "B20": ("accept", "ai", False),
-            "B21": ("human", "error", True),
+            "B20": ("reject", "code", True),
+            "B21": ("accept", "ai", False),
             "B22": ("", "invalid", False),
         })
-        self.assertEqual(len(client.calls), 6, "B01 stops at the lint and B22 does not match its lint field")
+        self.assertEqual(len(client.calls), 5, "B01 stops at the lint, B20 at its 404, and B22 does not match its lint field")
+
+    def test_product_source_404_is_rejected_by_code(self):
+        results, _, client = self.run_fake(cases=["B20"])
+        self.assertEqual((results["B20"].outcome, results["B20"].rule), ("reject", "S7"))
+        self.assertIn("answers 404", results["B20"].error)
+        self.assertEqual(client.calls, [])
+
+    def test_publisher_file_and_its_source_come_along(self):
+        fetcher = FakeFetcher()
+        _, _, client = self.run_fake(fetcher=fetcher, cases=["G01"])
+        self.assertIn("https://www.synology.com/en-global/company", fetcher.urls)
+        message = client.calls[0]["messages"][0]["content"]
+        existing = message[message.index("<existing>"):message.index("</existing>")]
+        self.assertTrue(existing.startswith("<existing>\n# publishers/synology.yaml\nkey: synology"), existing[:80])
 
     def test_quote_check(self):
         results, _, _ = self.run_fake()
@@ -171,6 +206,8 @@ class RefereeTest(unittest.TestCase):
         g01 = stager.stage(cases["G01"])
         self.assertEqual(list(g01.files), ["products/synology/ds124.yaml"])
         self.assertIn("synology/ds224-plus: DS224+", g01.existing)
+        self.assertTrue(g01.existing.startswith("# publishers/synology.yaml\nkey: synology"))
+        self.assertEqual(g01.publisher_source, "https://www.synology.com/en-global/company")
         self.assertNotIn("synology/ds124: DS124", g01.existing, "a hold-out is not part of what exists")
         g02 = stager.stage(cases["G02"])
         self.assertIn("synology/ds923-plus: DS923+", g02.existing, "context files are part of what exists")
@@ -181,6 +218,8 @@ class RefereeTest(unittest.TestCase):
         self.assertIn("# products/synology/ds224-plus.yaml\nkey: synology/ds224-plus", b07.existing)
         h01 = stager.stage(cases["H01"])
         self.assertIn("# publishers that share a word with acme\nnone", h01.existing)
+        self.assertNotIn("# publishers/acme.yaml", h01.existing, "a new publisher is in the proposal")
+        self.assertEqual(h01.publisher_source, "")
         self.assertFalse(stager.stage(cases["B22"]).lint_ok)
 
     def test_message_follows_the_prompt(self):
@@ -203,10 +242,58 @@ class RefereeTest(unittest.TestCase):
         page = "<html><head><style>x{}</style><script>var a</script></head><body><nav>Menu</nav><h1>DS124</h1><p>Caf&eacute;  1</p></body></html>"
         self.assertEqual(referee.html_to_text(page), "DS124 Café 1")
 
+    def test_page_text(self):
+        self.assertEqual(referee.page_text(b'{"cpe": "cpe:2.3:a:oracle:graalvm"}', "application/json", "utf-8"),
+                         '{"cpe": "cpe:2.3:a:oracle:graalvm"}')
+        self.assertEqual(referee.page_text(b"a  b", "text/plain", "utf-8"), "a b")
+        self.assertEqual(referee.page_text(b"\x89PNG", "image/png", "utf-8"), "")
+        self.assertEqual(referee.page_text(minimal_pdf("FortiGate 60F datasheet"), "application/pdf", "utf-8"),
+                         "FortiGate 60F datasheet")
+
+    def test_fetcher_marks_short_pages_unreadable(self):
+        pages = {
+            "https://a.example/json": (200, "application/json; charset=utf-8", json.dumps({"title": "x" * 300}).encode()),
+            "https://a.example/title": (200, "text/html", b"<html><head><title>NVD - Home</title></head><body></body></html>"),
+            "https://a.example/gone": (404, "text/html", b""),
+        }
+
+        class Resp:
+            def __init__(self, status, ctype, body):
+                import email.message
+                self.status, self._body = status, body
+                self.headers = email.message.Message()
+                self.headers["Content-Type"] = ctype
+
+            def read(self, n=-1):
+                return self._body
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def urlopen(req, timeout):
+            status, ctype, body = pages[req.full_url]
+            if status >= 400:
+                raise referee.urllib.error.HTTPError(req.full_url, status, "x", {}, None)
+            return Resp(status, ctype, body)
+
+        fetcher = referee.HttpFetcher()
+        with unittest.mock.patch.object(referee.urllib.request, "urlopen", urlopen):
+            self.assertEqual(fetcher.fetch("https://a.example/json").status, "200")
+            self.assertEqual((fetcher.fetch("https://a.example/title").status, fetcher.fetch("https://a.example/title").text), ("unreadable", ""))
+            self.assertEqual(fetcher.fetch("https://a.example/gone").status, "404")
+
+    def test_budget_default_is_20(self):
+        self.assertEqual(referee.parser().parse_args(["run"]).budget, 20.0)
+
     def test_system_prompt_of_the_analyst(self):
         text = referee.load_system_prompt(REPO / "referee/prompt.md")
         self.assertTrue(text.startswith("You are the referee of TAXNMY"))
         self.assertIn("S8  Every value", text)
+        self.assertIn("When the source is unavailable,\n    answer doubt.", text)
+        self.assertIn("releases of another publisher unchanged is not a product of its own.", text)
         self.assertNotIn("```", text)
 
     def test_api_schema(self):
@@ -221,16 +308,17 @@ class RefereeTest(unittest.TestCase):
     def test_metrics(self):
         results, _, _ = self.run_fake()
         m = referee.metrics(list(results.values()))
-        self.assertEqual(m["let_through"], ["B20"])
+        self.assertEqual(m["let_through"], ["B21"])
         self.assertEqual(m["good_rejected"], [])
-        self.assertEqual(m["human"], ["G02", "H01", "B21"])
+        self.assertEqual(m["human"], ["G02", "H01"])
+        self.assertEqual(m["errors"], ["H01"])
         self.assertEqual(m["invalid"], ["B22"])
-        self.assertEqual(m["right_rule"], {"S1": [1, 1], "S4": [1, 1], "S7": [2, 0], "S8": [1, 0]})
+        self.assertEqual(m["right_rule"], {"S1": [1, 1], "S4": [1, 1], "S7": [2, 1], "S8": [1, 0]})
         self.assertEqual(m["per_type"]["hallucinated"], [2, 1])
         self.assertAlmostEqual(m["cost_per_call"], 0.014)  # 1000 in at $4/M, 500 out at $20/M
         r13 = m["r13"]
         self.assertEqual(r13["per_rule"]["S7"], {"right": 1, "wrong": 1, "doubt": 1})
-        self.assertIn("B20 S7", r13["confident_wrong"])
+        self.assertIn("B21 S7", r13["confident_wrong"])
 
     def test_files_of_a_run(self):
         _, run_dir, _ = self.run_fake()
@@ -265,13 +353,13 @@ class RefereeTest(unittest.TestCase):
     # the budget
 
     def test_budget_counts_earlier_runs_and_stops(self):
-        self.run_fake()  # 6 calls of $0.014
+        self.run_fake()  # 5 calls of $0.014
         client = FakeClient()
         # $0.03 left: less than 1,150 input and 2,000 output tokens cost on Opus 5.5 ($0.0458)
-        results, run_dir, _ = self.run_fake(client=client, budget=0.084 + 0.03, now=LATER)
+        results, run_dir, _ = self.run_fake(client=client, budget=0.07 + 0.03, now=LATER)
         self.assertEqual(client.calls, [])
         self.assertIn("Stopped before G01", (run_dir / "summary.md").read_text())
-        self.assertAlmostEqual(referee.spent_before(self.out), 0.084)
+        self.assertAlmostEqual(referee.spent_before(self.out), 0.07)
 
     def test_max_tokens_fits_what_is_left(self):
         client = FakeClient()
@@ -285,7 +373,7 @@ class RefereeTest(unittest.TestCase):
         _, run_dir, _ = self.run_fake(client=client, budget=0.40)
         self.assertLessEqual(referee.spent_before(self.out), 0.40)
         self.assertGreater(len(client.calls), 0)
-        self.assertLess(len(client.calls), 6)
+        self.assertLess(len(client.calls), 5)
         self.assertIn("Stopped before", (run_dir / "summary.md").read_text())
 
     def test_budget_is_logged(self):

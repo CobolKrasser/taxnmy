@@ -7,7 +7,7 @@ versions:
   source: https://www.drupal.org/project/drupal/releases
 identifiers:
 - cpe: cpe:2.3:a:drupal:drupal
-  source: https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:drupal:drupal
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:drupal:drupal&resultsPerPage=1
 - purl: pkg:composer/drupal/core
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/drupal.md
 - purl: pkg:github/drupal/core
