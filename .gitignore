@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Fetched page texts of referee runs: third-party content, kept in the run artifact only
+referee/runs/*/sources.json
