@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CobolKrasser/taxnmy/referee/verdict.schema.json",
+  "title": "TAXNMY referee verdict",
+  "description": "The answer of the AI referee on one proposal, for rules S4-S8. The outcome (accept, reject, alias, human) is computed from it by code; see referee/prompt.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["S4", "S5", "S6", "S7", "S8", "duplicate_of"],
+  "properties": {
+    "S4": { "$ref": "#/$defs/judgment" },
+    "S5": { "$ref": "#/$defs/judgment" },
+    "S6": { "$ref": "#/$defs/judgment" },
+    "S7": { "$ref": "#/$defs/judgment" },
+    "S8": { "$ref": "#/$defs/judgment" },
+    "duplicate_of": {
+      "description": "The key of the existing product this proposal duplicates (S4), or null.",
+      "type": ["string", "null"]
+    }
+  },
+  "$defs": {
+    "judgment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verdict", "reason", "evidence"],
+      "properties": {
+        "verdict": { "enum": ["yes", "no", "doubt"] },
+        "reason": { "type": "string" },
+        "evidence": {
+          "description": "For yes and no: at least one quote, copied exactly from a source text. Empty for doubt.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "quote"],
+            "properties": {
+              "url": { "type": "string" },
+              "quote": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
