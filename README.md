@@ -71,6 +71,8 @@ Software does not need a parent product, such as the operating system it runs on
 ### Publishers
 
 The publisher is whoever publishes the updates, under a Latin name the publisher uses itself.
+A publisher file may list the sources it makes for machines (`machine_sources`): an update catalog,
+AppStream metadata or CSAF provider metadata, each with the page of the publisher that names it.
 
 ### Versions
 
