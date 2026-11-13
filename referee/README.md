@@ -172,7 +172,7 @@ runs side by side on the cases they share.
 Each live run writes `runs/<time>-<condition>-<model>/`: `run.json` (the settings and the budget),
 `results.jsonl` (one line per case, with the answer, the checked verdicts, the outcome and the
 cost), `sources.json` (the fetched texts, so that the quote check can be redone) and
-`summary.md` (the measures of § Scoring, per rule and per type, and the R13 measures).
+`summary.md` (the measures of § Scoring, per rule and per type, and the R13 measures; *human* is counted by cause: a source closed, or the referee doubts).
 
 Model and effort are `--model` (default `claude-opus-5-5`) and `--effort` (default `medium`).
 `max_tokens` is 8,000 per request unless the budget lowers it. Thinking counts toward it.
@@ -211,13 +211,15 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 | 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
 | 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
 | 0 again | `machine` | for a source that is `refused` or `disallowed`: the publisher's `machine_sources` (schema 1.2.0), each read for the product. What they give is added `instead_of` the closed source |
-| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing (robots.txt closes it, as fortinet.com does for every bot it does not name): one web search of the API, about $0.01 plus tokens, on the publisher's domains (of the refused URL, the publisher's source and the product's source). The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the refused one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
+| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with Claude Sonnet 5.5, which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
 
 The ladder stops at a refusal:
 
 - **401 or 403**: `refused`. It is not tried again, not with a browser either.
 - **429**: one more try after the wait in `Retry-After` (at most 60 seconds). A second 429 is
   `refused`.
+- **A timeout of an API** (step 1, such as the NVD API, which limits requests without a key): one
+  more try after 5 seconds.
 - **robots.txt** forbids the URL: `disallowed`. The URL is not requested.
 - **Fewer than 200 characters** of text in the end: `unreadable`.
 

@@ -45,6 +45,7 @@ MAX_BYTES = 30_000_000  # an update catalog is a few MB, gzipped
 PER_HOST_INTERVAL = 1.0  # seconds between two requests to the same site
 RETRY_AFTER_DEFAULT = 5.0  # seconds, when a 429 does not say how long to wait
 RETRY_AFTER_MAX = 60.0
+API_RETRY_WAIT = 5.0  # seconds before the one retry of an API that timed out (NVD limits requests without a key)
 BROWSER_TIMEOUT_MS = 15_000  # wait at most this long for the network to be quiet
 REFUSED = {401, 403}
 
@@ -325,6 +326,9 @@ class Fetcher:
             return Source(url, "disallowed", method=method, fetched_url=fetched)
 
         resp = self._request(target)
+        if resp.error.endswith("TimeoutError") and method == "api":
+            self._sleep(API_RETRY_WAIT)
+            resp = self._request(target)
         if resp.status == 429:
             self._sleep(retry_after(resp.retry_after))
             resp = self._request(target)

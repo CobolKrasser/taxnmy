@@ -248,11 +248,11 @@ cases:
   note: AI models belong in TAX (Fred, 13 Nov), one product per provider with the model names as versions and an end date per version, as endoflife.date keeps them. The id stays H01; the case is now a good one.
 - id: H02
   type: ai-model
-  expect: [accept]
+  expect: [accept, human]
   lint: pass
   holdout: [products/openai/openai-api-models.yaml, publishers/openai.yaml]
   verify: [https://developers.openai.com/api/docs/deprecations]
-  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product.
+  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (S6) is a real border case, and human is right too (run A2 review §1, point 5).
 
 # ---------------------------------------------------------------------------------------------
 # BAD, caught by code (S1–S3, and the code part of S8). Do not reach the AI.
