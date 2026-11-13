@@ -65,6 +65,8 @@ How to answer
   source text, at most 25 words. A quote that is not in the source text makes the answer invalid.
 - A source text marked as unavailable (an HTTP error, refused, disallowed, unreadable or an empty
   page) confirms nothing.
+- A source marked instead-of was found on the publisher's own site because the source it names
+  refused to be read. It may confirm the values of that refused source, if its text shows them.
 - Judge only what is asked. Do not suggest improvements.
 ```
 
@@ -102,11 +104,17 @@ The publisher file always comes along, so that S5 and S6 can be judged against t
 source: in `<proposal>` when the publisher is new, otherwise first in `<existing>`. Its source is
 fetched like the others.
 
-Fetch the sources with the ladder of `tools/fetch.py`. That costs nothing:
+Fetch the sources with the ladder of `tools/fetch.py`. Steps 0–3 cost nothing:
+0. **machine**: a source made for machines (an update catalog, AppStream metadata, CSAF, the NVD
+   API); a reader per format takes out the part about the product;
 1. **api**: a known API instead of a page (an NVD search page becomes the NVD API);
 2. **http**: a plain request, following redirects. JSON and plain text are read as text, the text
    of a PDF is extracted, and a page with one frame or iframe is followed;
-3. **browser**: a headless Chromium, when an HTML page gives fewer than 200 characters of text.
+3. **browser**: a headless Chromium, when an HTML page gives fewer than 200 characters of text;
+4. **search**, only for a source that refuses: one web search of the API (about $0.01) on the
+   publisher's domains. The URLs it returns go down steps 1–3; what they give is added as a
+   `<source … instead-of="{refused url}">`. The snippets of the search are never given to the
+   referee: a fragment is never evidence.
 
 Record the final status and the step (`method`). A page that gives fewer than 200 characters of
 text in the end gets `status="unreadable"`. A site that refuses (401, 403, or 429 twice) gets

@@ -92,7 +92,7 @@ class FakeFetcher:
     def __init__(self):
         self.urls = []
 
-    def fetch(self, url):
+    def fetch(self, url, product=""):
         self.urls.append(url)
         if url.endswith("DS128"):
             return referee.Source(url, "404")
@@ -259,6 +259,72 @@ class RefereeTest(unittest.TestCase):
         sources = dict(results["G01"].sources)
         self.assertEqual(sources["https://www.synology.com/en-global/products/DS124"], "200")
         self.assertEqual(sources["https://www.synology.com/en-global/company"], "not fetched")
+
+    # step 4
+
+    def refused_sources(self):
+        """A sources.json in which the product page of G01 is refused."""
+        url = "https://www.synology.com/en-global/products/DS124"
+        path = self.out / "sources.json"
+        path.write_text(json.dumps({url: {"url": url, "status": "refused", "method": "http"}}))
+        return path, url
+
+    def search_args(self, sources, **kw):
+        args = Args(self.out, sources=str(sources), output=str(self.out / "search.json"), cases=["G01", "B07"])
+        args.__dict__.update(kw)
+        return args
+
+    def test_search_finds_other_urls_for_a_refused_source(self):
+        sources, refused = self.refused_sources()
+
+        class Result:
+            def __init__(self, url):
+                self.url, self.page_age, self.encrypted_content = url, None, "never kept"
+
+        class SearchClient(FakeClient):
+            def create(self, request):
+                self.calls.append(request)
+                block = Block("web_search_tool_result")
+                block.content = [Result("https://kb.synology.com/en-global/DS124"), Result(refused)]
+                usage = {"input_tokens": 3000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+                         "output_tokens": 20, "web_search_requests": 1}
+                return referee.Response(content=[Block("server_tool_use"), block, Block("text", "done")], stop_reason="end_turn", usage=usage)
+
+        client = SearchClient()
+        found = referee.search_refused(self.search_args(sources), client=client, data_root=FIXTURES / "data", now=NOW, log=QUIET)
+        self.assertEqual(found[refused]["urls"], ["https://kb.synology.com/en-global/DS124"], "the refused URL itself is dropped")
+        self.assertEqual(found[refused]["product"], "DS124")
+        request = client.calls[0]
+        self.assertEqual(request["tools"][0]["allowed_domains"], ["synology.com"])
+        self.assertEqual(request["tools"][0]["max_uses"], 1)
+        self.assertIn('"DS124" synology', request["messages"][0]["content"])
+        self.assertNotIn("never kept", (self.out / "search.json").read_text(), "snippets are never kept")
+        # the search counts against the budget: $0.012 tokens + $0.01 search
+        self.assertAlmostEqual(referee.spent_before(self.out), 3000 * 4e-6 + 20 * 20e-6 + 0.01)
+
+    def test_search_dry_run_sends_nothing(self):
+        sources, refused = self.refused_sources()
+        client = FakeClient()
+        found = referee.search_refused(self.search_args(sources, live=False), client=client, data_root=FIXTURES / "data", log=QUIET)
+        self.assertEqual((found, client.calls), ({}, []))
+
+    def test_found_sources_go_down_the_ladder_and_into_the_message(self):
+        sources, refused = self.refused_sources()
+        search = self.out / "search.json"
+        search.write_text(json.dumps({refused: {"product": "DS124", "urls": ["https://kb.synology.com/en-global/DS124"]}}))
+        args = self.search_args(sources, search=str(search), output=str(self.out / "final.json"), limit=None, no_browser=True)
+        data = referee.fetch_sources(args, fetcher=FakeFetcher(), data_root=FIXTURES / "data", log=QUIET)
+        alt = data[f"https://kb.synology.com/en-global/DS124 | for {refused}"]
+        self.assertEqual((alt["instead_of"], alt["method"], alt["status"]), (refused, "search+", "200"))
+        results, _, client = self.run_fake(fetcher=None, cases=["G01"], sources=str(self.out / "final.json"))
+        message = client.calls[0]["messages"][0]["content"]
+        self.assertIn(f'<source url="https://kb.synology.com/en-global/DS124" status="200" instead-of="{refused}">', message)
+        self.assertIn(f'<source url="{refused}" status="refused">', message)
+
+    def test_registrable(self):
+        self.assertEqual(referee.registrable("www.dell.com"), "dell.com")
+        self.assertEqual(referee.registrable("support.d-imaging.sony.co.jp"), "sony.co.jp")
+        self.assertEqual(referee.registrable("www.sony.nl"), "sony.nl")
 
     def test_budget_default_is_20(self):
         self.assertEqual(referee.parser().parse_args(["run"]).budget, 20.0)

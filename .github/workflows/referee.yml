@@ -2,13 +2,15 @@ name: referee
 
 # A measurement of the AI referee (fase 2). Started by hand.
 #
-# Two jobs, so that the key never comes near code from other sites (hosting plan §8;
-# tax-fase2-pagina-s-lezen.md §4):
-#   fetch  reads the sources with the ladder, including a headless browser that runs the
-#          JavaScript of those sites. It has no key. It keeps sources.json as an artifact.
-#          It may run from any branch, which is how the ladder is tested for free.
-#   judge  reads that sources.json and calls the referee. Only this job gets the key, only on a
-#          live run, and only from main. It runs no browser and no code from a pull request.
+# Four jobs, so that the key never comes near code from other sites (hosting plan §8;
+# tax-fase2-pagina-s-lezen.md §4; tax-weigerende-sites.md §4):
+#   fetch    reads the sources with the ladder (steps 0-3), including a headless browser that
+#            runs the JavaScript of those sites. No key. Keeps sources.json as an artifact.
+#            It may run from any branch, which is how the ladder is tested for free.
+#   search   step 4: one web search per refused source, on the publisher's domains. Key, no
+#            browser; main only, live only. Counts against the budget.
+#   refetch  reads the URLs that search found, down steps 1-3. No key.
+#   judge    reads the sources and calls the referee. Key, no browser; main only.
 
 on:
   workflow_dispatch:
@@ -107,11 +109,110 @@ jobs:
           path: fetched/sources.json
           retention-days: 90
 
-  judge:
+  search:
     needs: fetch
+    if: inputs.task == 'measure' && inputs.condition == 'fetched' && inputs.live && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      found: ${{ steps.search.outputs.found }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - uses: actions/download-artifact@v4
+        with:
+          name: referee-sources-${{ github.run_id }}
+          path: fetched
+      - name: Search for another open source
+        id: search
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CASES: ${{ inputs.cases }}
+          LIMIT: ${{ inputs.limit }}
+          MODEL: ${{ inputs.model }}
+          BUDGET: ${{ inputs.budget }}
+        run: |
+          set -euo pipefail
+          args=(search --sources fetched/sources.json --output fetched/search.json --model "$MODEL" --budget "$BUDGET" --live)
+          if [ -n "$CASES" ]; then read -r -a ids <<< "$CASES"; args+=(--cases "${ids[@]}"); fi
+          if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
+          python tools/referee.py "${args[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+          if [ "$(python -c 'import json; print(bool(json.load(open("fetched/search.json"))))')" = "True" ]; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Keep what was found
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-search-${{ github.run_id }}
+          path: fetched/search.json
+          retention-days: 90
+      - name: Keep the search run
+        if: always() && steps.search.outputs.run_dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.search.outputs.run_name }}
+          path: ${{ steps.search.outputs.run_dir }}
+          retention-days: 90
+
+  refetch:
+    needs: [fetch, search]
+    if: needs.search.result == 'success' && needs.search.outputs.found == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Cache the browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: referee-sources-${{ github.run_id }}
+          path: fetched
+      - uses: actions/download-artifact@v4
+        with:
+          name: referee-search-${{ github.run_id }}
+          path: fetched
+      - name: Read what was found
+        run: |
+          set -euo pipefail
+          python tools/referee.py fetch --sources fetched/sources.json --search fetched/search.json \
+            --output fetched/final/sources.json | tee fetched/log.txt
+          sed -n '/^[0-9]* sources$/,$p' fetched/log.txt >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: referee-sources-final-${{ github.run_id }}
+          path: fetched/final/sources.json
+          retention-days: 90
+
+  judge:
+    needs: [fetch, search, refetch]
     if: >-
       always() && inputs.task == 'measure' && github.ref == 'refs/heads/main' &&
-      (needs.fetch.result == 'success' || needs.fetch.result == 'skipped')
+      (needs.fetch.result == 'success' || needs.fetch.result == 'skipped') &&
+      (needs.search.result == 'success' || needs.search.result == 'skipped') &&
+      (needs.refetch.result == 'success' || needs.refetch.result == 'skipped')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     permissions:
@@ -125,35 +226,22 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt
 
-      # The budget counts every earlier run: the ones committed in referee/runs/ and the ones
-      # kept as artifacts of this workflow. An expired artifact whose run is not committed would
-      # make the count too low, so the measurement stops if there is one.
-      - name: Gather earlier runs
+      - name: Gather earlier runs, the search of this run included
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          mkdir -p referee/runs
-          gh api --paginate "repos/${GITHUB_REPOSITORY}/actions/artifacts?per_page=100" \
-            --jq '.artifacts[] | select(.name | startswith("referee-run-")) | "\(.id) \(.expired) \(.name)"' |
-          while read -r id expired name; do
-            dir="referee/runs/${name#referee-run-}"
-            if [ -e "$dir" ]; then continue; fi
-            if [ "$expired" = "true" ]; then
-              echo "::error::Run ${name#referee-run-} has expired and is not committed; its cost cannot be counted"
-              exit 1
-            fi
-            gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${id}/zip" > /tmp/run.zip
-            mkdir -p "$dir"
-            unzip -q /tmp/run.zip -d "$dir"
-          done
-          ls referee/runs
+        run: .github/scripts/gather-runs.sh
 
       - name: Get the sources
-        if: inputs.condition == 'fetched'
+        if: inputs.condition == 'fetched' && needs.refetch.result != 'success'
         uses: actions/download-artifact@v4
         with:
           name: referee-sources-${{ github.run_id }}
+          path: fetched
+      - name: Get the sources, with what step 4 found
+        if: inputs.condition == 'fetched' && needs.refetch.result == 'success'
+        uses: actions/download-artifact@v4
+        with:
+          name: referee-sources-final-${{ github.run_id }}
           path: fetched
 
       - name: Measure

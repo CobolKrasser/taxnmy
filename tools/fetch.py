@@ -2,6 +2,8 @@
 
 For each URL the fetcher goes down the steps until it has usable text:
 
+0. machine  a source made for machines (an update catalog, AppStream metadata, CSAF, the NVD
+            API): one reader per format takes out the part about the product (tools/machine.py);
 1. api      a known API instead of a page (an NVD search page becomes the NVD API);
 2. http     a plain HTTP request; JSON and text are read as text, the text of a PDF is
             extracted, and a page with one frame or iframe is followed;
@@ -33,11 +35,13 @@ import urllib.robotparser
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
+import machine
+
 USER_AGENT = "TAXNMY-referee/1.0 (+https://github.com/CobolKrasser/taxnmy)"
 ROBOTS_AGENT = "TAXNMY-referee"
 MIN_CHARS = 200  # less text than this is no source: a title alone
 SOURCE_CHARS = 24_000  # about 6,000 tokens per source text (referee/prompt.md)
-MAX_BYTES = 10_000_000
+MAX_BYTES = 30_000_000  # an update catalog is a few MB, gzipped
 PER_HOST_INTERVAL = 1.0  # seconds between two requests to the same site
 RETRY_AFTER_DEFAULT = 5.0  # seconds, when a 429 does not say how long to wait
 RETRY_AFTER_MAX = 60.0
@@ -50,9 +54,16 @@ class Source:
     url: str  # the URL as the proposal gives it
     status: str  # an HTTP status, "unreadable", "refused", "disallowed" or "error: ..."
     text: str = ""
-    method: str = ""  # the step that gave the text: api, http or browser
+    method: str = ""  # the step that gave the text: machine, api, http, browser or search
     fetched_url: str = ""  # what was requested in the end, when it differs from url
     chars: int = 0  # characters of text before the cut to SOURCE_CHARS
+    product: str = ""  # step 0: the product whose part was taken out
+    instead_of: str = ""  # step 4: the refused URL this source was found for
+
+
+def source_key(url: str, product: str = "") -> str:
+    """The key in sources.json: a source for machines depends on the product, a page does not."""
+    return f"{url} | {product}" if product else url
 
 
 # --------------------------------------------------------------------------- text from a response
@@ -247,6 +258,7 @@ class Fetcher:
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
         self.browser = browser if browser is not None else (PlaywrightBrowser() if use_browser and PlaywrightBrowser.available() else None)
         self.cache: dict[str, Source] = {}
+        self._raw: dict[str, tuple] = {}  # url -> (response, fetched_url) of a source for machines
         self.log = log or (lambda *a: None)
 
     # conduct
@@ -287,14 +299,25 @@ class Fetcher:
 
     # the ladder
 
-    def fetch(self, url: str) -> Source:
-        if url not in self.cache:
-            self.cache[url] = self._ladder(url)
-            s = self.cache[url]
-            self.log(f"{s.status:>10}  {s.method or '-':7}  {s.chars:>6}  {url}")
-        return self.cache[url]
+    def fetch(self, url: str, product: str = "") -> Source:
+        """The source at url; for a source made for machines, the part about `product`."""
+        if source_key(url, product) in self.cache:
+            return self.cache[source_key(url, product)]
+        if url in self.cache:
+            return self.cache[url]
+        if url in self._raw:
+            src = self._machine(url, product, *self._raw[url])
+        else:
+            src = self._ladder(url, product)
+        self.cache[source_key(url, product) if src.method == "machine" else url] = src
+        self.log(f"{src.status:>10}  {src.method or '-':7}  {src.chars:>6}  {url}" + (f"  ({product})" if src.method == "machine" else ""))
+        return src
 
-    def _ladder(self, url: str) -> Source:
+    def _machine(self, url: str, product: str, resp: "Response", fetched: str) -> Source:
+        text = machine.read(resp.body, resp.ctype, product) or ""
+        return Source(url, str(resp.status), text[:SOURCE_CHARS], "machine", fetched, len(text), product=product)
+
+    def _ladder(self, url: str, product: str = "") -> Source:
         target = api_url(url) or url
         method = "api" if target != url or urllib.parse.urlsplit(target).netloc in API_HOSTS else "http"
         fetched = target if target != url else ""
@@ -315,6 +338,11 @@ class Fetcher:
             return Source(url, str(resp.status), method=method, fetched_url=fetched)
 
         status = str(resp.status)
+        if product:
+            found = machine.read(resp.body, resp.ctype, product)
+            if found is not None:
+                self._raw[url] = (resp, fetched)
+                return Source(url, status, found[:SOURCE_CHARS], "machine", fetched, len(found), product=product)
         text = page_text(resp.body, resp.ctype, resp.charset)
         is_html = resp.ctype == "text/html"
 
@@ -352,10 +380,14 @@ class StoredFetcher:
     """The sources fetched earlier, by another job: a sources.json of `Fetcher.cache`."""
 
     def __init__(self, data: dict):
-        self.cache = {url: Source(**src) for url, src in data.items()}
+        self.cache = {key: Source(**src) for key, src in data.items()}
 
-    def fetch(self, url: str) -> Source:
-        return self.cache.get(url) or Source(url, "not fetched")
+    def fetch(self, url: str, product: str = "") -> Source:
+        return self.cache.get(source_key(url, product)) or self.cache.get(url) or Source(url, "not fetched")
+
+    def alternatives(self, url: str) -> list[Source]:
+        """Step 4: the sources found for a refused URL."""
+        return [s for s in self.cache.values() if s.instead_of == url]
 
     def close(self) -> None:
         pass
