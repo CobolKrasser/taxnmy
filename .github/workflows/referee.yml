@@ -1,8 +1,14 @@
 name: referee
 
-# A measurement of the AI referee (fase 2). Started by hand, from main only.
-# The key is a secret and reaches only the step that calls the API, and only on a live run.
-# The harness reads only data files; it never runs code from a pull request (hosting plan §8).
+# A measurement of the AI referee (fase 2). Started by hand.
+#
+# Two jobs, so that the key never comes near code from other sites (hosting plan §8;
+# tax-fase2-pagina-s-lezen.md §4):
+#   fetch  reads the sources with the ladder, including a headless browser that runs the
+#          JavaScript of those sites. It has no key. It keeps sources.json as an artifact.
+#          It may run from any branch, which is how the ladder is tested for free.
+#   judge  reads that sources.json and calls the referee. Only this job gets the key, only on a
+#          live run, and only from main. It runs no browser and no code from a pull request.
 
 on:
   workflow_dispatch:
@@ -43,17 +49,74 @@ on:
 
 permissions:
   contents: read
-  actions: read
 
 concurrency:
   group: referee  # one measurement at a time, so the budget cannot be spent twice
   cancel-in-progress: false
 
 jobs:
-  referee:
-    if: github.ref == 'refs/heads/main'
+  fetch:
+    if: inputs.task == 'check-urls' || inputs.condition == 'fetched'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Cache the browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Test the browser step
+        env:
+          TAXNMY_BROWSER_TEST: "1"
+        run: python -m unittest tests.test_fetch -v
+
+      - name: Check the verify URLs
+        if: inputs.task == 'check-urls'
+        run: python tools/referee.py check-urls | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Fetch the sources
+        if: inputs.task == 'measure'
+        env:
+          CASES: ${{ inputs.cases }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          set -euo pipefail
+          mkdir -p fetched
+          args=(fetch --output fetched/sources.json)
+          if [ -n "$CASES" ]; then read -r -a ids <<< "$CASES"; args+=(--cases "${ids[@]}"); fi
+          if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
+          python tools/referee.py "${args[@]}" | tee fetched/log.txt
+          sed -n '/^[0-9]* sources$/,$p' fetched/log.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep the sources
+        if: inputs.task == 'measure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-sources-${{ github.run_id }}
+          path: fetched/sources.json
+          retention-days: 90
+
+  judge:
+    needs: fetch
+    if: >-
+      always() && inputs.task == 'measure' && github.ref == 'refs/heads/main' &&
+      (needs.fetch.result == 'success' || needs.fetch.result == 'skipped')
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    permissions:
+      contents: read
+      actions: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -62,15 +125,10 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt
 
-      - name: Check the verify URLs
-        if: inputs.task == 'check-urls'
-        run: python tools/referee.py check-urls | tee -a "$GITHUB_STEP_SUMMARY"
-
       # The budget counts every earlier run: the ones committed in referee/runs/ and the ones
       # kept as artifacts of this workflow. An expired artifact whose run is not committed would
       # make the count too low, so the measurement stops if there is one.
       - name: Gather earlier runs
-        if: inputs.task == 'measure'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -91,9 +149,15 @@ jobs:
           done
           ls referee/runs
 
+      - name: Get the sources
+        if: inputs.condition == 'fetched'
+        uses: actions/download-artifact@v4
+        with:
+          name: referee-sources-${{ github.run_id }}
+          path: fetched
+
       - name: Measure
         id: run
-        if: inputs.task == 'measure'
         env:
           ANTHROPIC_API_KEY: ${{ inputs.live && secrets.ANTHROPIC_API_KEY || '' }}
           CONDITION: ${{ inputs.condition }}
@@ -106,6 +170,7 @@ jobs:
         run: |
           set -euo pipefail
           args=(run --condition "$CONDITION" --model "$MODEL" --effort "$EFFORT" --budget "$BUDGET")
+          if [ "$CONDITION" = "fetched" ]; then args+=(--sources fetched/sources.json); fi
           if [ -n "$CASES" ]; then read -r -a ids <<< "$CASES"; args+=(--cases "${ids[@]}"); fi
           if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
           if [ "$LIVE" = "true" ]; then args+=(--live); fi

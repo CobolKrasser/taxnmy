@@ -134,7 +134,10 @@ that.
 `prompt.md` (the text block under *System prompt*) and `verdict.schema.json` as they are.
 
 ```
-pip install -r requirements.txt -r requirements-referee.txt
+pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+python -m playwright install chromium                # once, for the browser step
+python tools/referee.py fetch --output sources.json  # read the sources (free, no key)
+python tools/referee.py run --sources sources.json   # dry run with those sources
 python tools/referee.py run                          # dry run of the base run: nothing is sent
 python tools/referee.py run --condition memory       # dry run of R13 M, on the 29 cases
 python tools/referee.py run --live                   # the base run: one call per case
@@ -147,12 +150,10 @@ For each case it:
 1. stages the case on a copy of `products/` and `publishers/` and runs the lint. A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
    stops there, with outcome *reject*;
-2. fetches the distinct `source` URLs of the proposal, and the source of the publisher file, with
-   plain HTTP (condition *fetched* only). It turns each page into text: HTML without scripts,
-   styles and navigation; JSON and plain text as they are; the text of a PDF (with `pypdf`). At
-   most about 6,000 tokens per page. A page with fewer than 200 characters of text, or of another
-   type, gets `status="unreadable"`. When the product's own `source` answers 404 or 410, the case
-   stops there: outcome *reject* on S7, by code;
+2. reads the distinct `source` URLs of the proposal, and the source of the publisher file, with
+   the ladder of [Reading sources](#reading-sources) (condition *fetched* only). At most about
+   6,000 tokens per page. When the product's own `source` answers 404 or 410, the case stops
+   there: outcome *reject* on S7, by code;
 3. fills in the user message of `prompt.md`. The publisher file always comes along: in
    `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
    existing product of each signal, the products of the same publisher, and the publishers that
@@ -198,15 +199,56 @@ is more, it reserves that. On Opus 5.5 with 3 searches that is $0.34 per request
 The key is read from `ANTHROPIC_API_KEY` in the environment only. The harness never writes it to a
 file or a log; a test checks this. Nothing is sent without `--live`.
 
+### Reading sources
+
+`tools/fetch.py` goes down a ladder for each URL until it has usable text
+(`tax-fase2-pagina-s-lezen.md` §3):
+
+| step | `method` | what it does |
+| --- | --- | --- |
+| 1 | `api` | a known API instead of a page: an NVD search page becomes the NVD API |
+| 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
+| 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
+
+The ladder stops at a refusal:
+
+- **401 or 403**: `refused`. It is not tried again, not with a browser either.
+- **429**: one more try after the wait in `Retry-After` (at most 60 seconds). A second 429 is
+  `refused`.
+- **robots.txt** forbids the URL: `disallowed`. The URL is not requested.
+- **Fewer than 200 characters** of text in the end: `unreadable`.
+
+For each source `sources.json` records `status`, `method`, `chars` (the length before the cut to
+6,000 tokens) and `fetched_url`, when that differs from the URL in the proposal: an API, or a frame.
+`python tools/referee.py fetch` prints how many sources each step read.
+
+**Conduct** (§2 of the same note):
+- an honest User-Agent, `TAXNMY-referee/1.0`, with a link to this repository;
+- robots.txt is respected, following RFC 9309;
+- at most one request per second per site;
+- each URL once per run;
+- no imitated browser headers, no proxies and no stealth.
+
+A site that refuses is not worked around. A person decides, or the product gets another source.
+
 ### Running it as an Action
 
 The key is a secret of the repository, so a paid measurement runs as the workflow **referee**
-(`.github/workflows/referee.yml`). Start it by hand from `main` (*Actions → referee → Run
-workflow*), with the condition, the cases, the model, the effort, the budget and *live*.
+(`.github/workflows/referee.yml`). Start it by hand (*Actions → referee → Run workflow*), with the
+condition, the cases, the model, the effort, the budget and *live*.
+
+It has two jobs, so that the key never comes near the JavaScript of other sites:
+
+- **fetch** reads the sources with the ladder, including the browser. It has no key. It first runs
+  the tests of the ladder against a real headless Chromium, and keeps `sources.json` as an artifact
+  `referee-sources-<id>`. It runs for condition *fetched* and for `task: check-urls`, from any
+  branch. That is how the ladder is tested for free.
+- **judge** reads that `sources.json` and calls the referee. Only this job gets the key, only on a
+  live run, and only from `main`. It runs no browser.
 
 - Without *live* it is a dry run: the key is not passed to it.
-- It runs only from `main`, one at a time. It reads only data files and runs no code from a pull
-  request (hosting plan §8).
+- It runs one at a time. It reads only data files and runs no code from a pull request (hosting
+  plan §8).
 - The run directory is kept as an artifact `referee-run-<run>` for 90 days, and its summary is shown
   on the run page.
 - **The budget counts the artifacts of earlier runs and the runs committed in `runs/`.** Commit the

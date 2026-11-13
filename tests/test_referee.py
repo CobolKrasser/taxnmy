@@ -123,9 +123,9 @@ class RefereeTest(unittest.TestCase):
         self.out = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.out)
 
-    def run_fake(self, client=None, fetcher=None, now=NOW, log=QUIET, **kw):
+    def run_fake(self, client=None, fetcher=..., now=NOW, log=QUIET, **kw):
         client = client or FakeClient()
-        fetcher = fetcher or FakeFetcher()
+        fetcher = FakeFetcher() if fetcher is ... else fetcher
         results, run_dir = referee.run(Args(self.out, **kw), client=client, fetcher=fetcher,
                                        data_root=FIXTURES / "data", now=now, log=log)
         return {r.id: r for r in results}, run_dir, client
@@ -250,40 +250,15 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual(referee.page_text(minimal_pdf("FortiGate 60F datasheet"), "application/pdf", "utf-8"),
                          "FortiGate 60F datasheet")
 
-    def test_fetcher_marks_short_pages_unreadable(self):
-        pages = {
-            "https://a.example/json": (200, "application/json; charset=utf-8", json.dumps({"title": "x" * 300}).encode()),
-            "https://a.example/title": (200, "text/html", b"<html><head><title>NVD - Home</title></head><body></body></html>"),
-            "https://a.example/gone": (404, "text/html", b""),
-        }
-
-        class Resp:
-            def __init__(self, status, ctype, body):
-                import email.message
-                self.status, self._body = status, body
-                self.headers = email.message.Message()
-                self.headers["Content-Type"] = ctype
-
-            def read(self, n=-1):
-                return self._body
-
-            def __enter__(self):
-                return self
-
-            def __exit__(self, *a):
-                return False
-
-        def urlopen(req, timeout):
-            status, ctype, body = pages[req.full_url]
-            if status >= 400:
-                raise referee.urllib.error.HTTPError(req.full_url, status, "x", {}, None)
-            return Resp(status, ctype, body)
-
-        fetcher = referee.HttpFetcher()
-        with unittest.mock.patch.object(referee.urllib.request, "urlopen", urlopen):
-            self.assertEqual(fetcher.fetch("https://a.example/json").status, "200")
-            self.assertEqual((fetcher.fetch("https://a.example/title").status, fetcher.fetch("https://a.example/title").text), ("unreadable", ""))
-            self.assertEqual(fetcher.fetch("https://a.example/gone").status, "404")
+    def test_run_can_use_sources_fetched_earlier(self):
+        stored = self.out / "fetched.json"
+        stored.write_text(json.dumps({"https://www.synology.com/en-global/products/DS124": {
+            "url": "https://www.synology.com/en-global/products/DS124", "status": "200", "text": PAGE,
+            "method": "http", "fetched_url": "", "chars": len(PAGE)}}))
+        results, run_dir, client = self.run_fake(fetcher=None, cases=["G01"], sources=str(stored))
+        sources = dict(results["G01"].sources)
+        self.assertEqual(sources["https://www.synology.com/en-global/products/DS124"], "200")
+        self.assertEqual(sources["https://www.synology.com/en-global/company"], "not fetched")
 
     def test_budget_default_is_20(self):
         self.assertEqual(referee.parser().parse_args(["run"]).budget, 20.0)

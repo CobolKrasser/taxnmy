@@ -63,7 +63,8 @@ How to answer
 - Give a short reason for each answer, in one or two sentences.
 - For each "yes" and each "no", give the evidence: the URL and a quote copied exactly from the
   source text, at most 25 words. A quote that is not in the source text makes the answer invalid.
-- A source text marked as unavailable (an HTTP error or an empty page) confirms nothing.
+- A source text marked as unavailable (an HTTP error, refused, disallowed, unreadable or an empty
+  page) confirms nothing.
 - Judge only what is asked. Do not suggest improvements.
 ```
 
@@ -101,11 +102,17 @@ The publisher file always comes along, so that S5 and S6 can be judged against t
 source: in `<proposal>` when the publisher is new, otherwise first in `<existing>`. Its source is
 fetched like the others.
 
-Fetch the sources with ordinary HTTP. That costs nothing. Follow redirects, and record the final
-status. JSON and plain text are read as text; the text of a PDF is extracted. If a page cannot be
-read as text, or gives fewer than 200 characters of text (a page that only renders with
-JavaScript, a title alone), put `status="unreadable"` and leave the text empty. The referee will
-then answer *doubt* where that source was needed, and that is the intended result.
+Fetch the sources with the ladder of `tools/fetch.py`. That costs nothing:
+1. **api**: a known API instead of a page (an NVD search page becomes the NVD API);
+2. **http**: a plain request, following redirects. JSON and plain text are read as text, the text
+   of a PDF is extracted, and a page with one frame or iframe is followed;
+3. **browser**: a headless Chromium, when an HTML page gives fewer than 200 characters of text.
+
+Record the final status and the step (`method`). A page that gives fewer than 200 characters of
+text in the end gets `status="unreadable"`. A site that refuses (401, 403, or 429 twice) gets
+`status="refused"`, and a URL that robots.txt forbids gets `status="disallowed"`; neither is tried
+another way. In all three cases the text is empty, the referee answers *doubt* where that source was
+needed, and that is the intended result.
 
 When the product's own source (the `source` of the product file) answers 404 or 410, code rejects
 the proposal on S7 without calling the referee: the page that should show the product does not
