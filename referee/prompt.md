@@ -111,7 +111,10 @@ Fetch the sources with the ladder of `tools/fetch.py`. Steps 0–3 cost nothing:
 2. **http**: a plain request, following redirects. JSON and plain text are read as text, the text
    of a PDF is extracted, and a page with one frame or iframe is followed;
 3. **browser**: a headless Chromium, when an HTML page gives fewer than 200 characters of text;
-4. **search**, only for a source that refuses or that robots.txt forbids: one web search of the API (about $0.01) on the
+   For a source that refuses or that robots.txt forbids, step 0 first reads the publisher's
+   `machine_sources`; what they give is added as `<source … instead-of="{closed url}">`;
+4. **search**, only for a source that refuses or that robots.txt forbids, when the publisher's
+   `machine_sources` gave nothing: one web search of the API (about $0.01) on the
    publisher's domains. The URLs it returns go down steps 1–3; what they give is added as a
    `<source … instead-of="{refused url}">`. The snippets of the search are never given to the
    referee: a fragment is never evidence.

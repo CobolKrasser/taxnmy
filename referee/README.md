@@ -210,7 +210,8 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 | 1 | `api` | a known API instead of a page: an NVD search page becomes the NVD API |
 | 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
 | 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
-| 4 | `search+…` | only for a source that is `refused` or `disallowed` (robots.txt closes it, as fortinet.com does for every bot it does not name): one web search of the API, about $0.01 plus tokens, on the publisher's domains (of the refused URL, the publisher's source and the product's source). The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the refused one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
+| 0 again | `machine` | for a source that is `refused` or `disallowed`: the publisher's `machine_sources` (schema 1.2.0), each read for the product. What they give is added `instead_of` the closed source |
+| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing (robots.txt closes it, as fortinet.com does for every bot it does not name): one web search of the API, about $0.01 plus tokens, on the publisher's domains (of the refused URL, the publisher's source and the product's source). The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the refused one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
 
 The ladder stops at a refusal:
 

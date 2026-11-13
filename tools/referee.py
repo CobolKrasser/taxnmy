@@ -186,6 +186,7 @@ class Staged:
     lint_seen: str  # what the findings amount to: pass, signal or error S..
     existing: str  # the <existing> block
     publisher_source: str = ""  # the source of an existing publisher file, fetched with the others
+    machine_sources: list = field(default_factory=list)  # the publisher's machine_sources (URLs), for step 0 on a closed source
 
 
 class Stager:
@@ -234,6 +235,7 @@ class Stager:
                 put(rel, None)
             existing = self._existing(case, files, findings)
             publisher_source = self._publisher_source(files)
+            machine_sources = self._machine_sources(files)
         finally:
             for path, content in saved.items():
                 if content is None:
@@ -243,7 +245,7 @@ class Stager:
                     path.parent.mkdir(parents=True, exist_ok=True)
                     path.write_bytes(content)
         return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen,
-                      existing=existing, publisher_source=publisher_source)
+                      existing=existing, publisher_source=publisher_source, machine_sources=machine_sources)
 
     def _publisher_file(self, files: dict) -> tuple[str, str]:
         """The existing publisher file of the proposed product, unless the proposal brings it."""
@@ -256,6 +258,22 @@ class Stager:
         if rel in files or not path.is_file():
             return "", ""
         return rel, path.read_text(encoding="utf-8")
+
+    def _machine_sources(self, files: dict) -> list:
+        """The URLs in machine_sources of the publisher, proposed or existing (schema 1.2.0)."""
+        _, data = product_file(files)
+        rel = f"publishers/{data.get('publisher')}.yaml"
+        if rel in files:
+            text = files[rel]
+        elif re.fullmatch(r"publishers/[a-z0-9-]+\.yaml", rel) and (self.root / rel).is_file():
+            text = (self.root / rel).read_text(encoding="utf-8")
+        else:
+            return []
+        try:
+            entries = (yaml.safe_load(text) or {}).get("machine_sources") or []
+        except yaml.YAMLError:
+            return []
+        return [e["url"] for e in entries if isinstance(e, dict) and isinstance(e.get("url"), str)]
 
     def _publisher_source(self, files: dict) -> str:
         rel, text = self._publisher_file(files)
@@ -988,16 +1006,24 @@ def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict
             if hasattr(fetcher, "close"):
                 fetcher.close()
     else:
+        alternatives = {}
         try:
             for st in staged:
                 if st.lint_ok and not st.lint_seen.startswith("error"):
                     name = product_name(st)
                     for url in case_urls(st):
-                        fetcher.fetch(url, name)
+                        if fetcher.fetch(url, name).status in CLOSED:
+                            # Step 0 on a closed source: the publisher's own sources for machines.
+                            for ms in st.machine_sources:
+                                src = fetcher.fetch(ms, name)
+                                if src.method == "machine" and src.status.isdigit() and int(src.status) < 300:
+                                    alt = Source(**{**asdict(src), "instead_of": url})
+                                    alternatives[f"{source_key(ms, name)} | for {url}"] = asdict(alt)
         finally:
             if hasattr(fetcher, "close"):
                 fetcher.close()
         data = {key: asdict(src) for key, src in fetcher.cache.items()}
+        data.update(alternatives)
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -1084,7 +1110,8 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
         name = product_name(st)
         _, prod = product_file(st.files)
         for url in case_urls(st):
-            if stored.fetch(url, name).status in CLOSED and url not in wanted:
+            # Step 4 only when step 0 found nothing in the publisher's machine_sources.
+            if stored.fetch(url, name).status in CLOSED and not stored.alternatives(url) and url not in wanted:
                 wanted[url] = {"product": name, "publisher": prod.get("publisher", ""), "domains": search_domains(url, st)}
     log(f"{len(wanted)} refused or disallowed sources to search for")
     out = Path(args.out)
