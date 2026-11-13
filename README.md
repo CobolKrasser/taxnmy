@@ -141,8 +141,9 @@ is rejected on S1. A change of the scope goes through a pull request, like any o
 publishers/<publisher>.yaml          one file per publisher
 products/<publisher>/<product>.yaml  one file per product
 schema/                              JSON schemas for both files
-tools/                               the lint (writing rule, S1–S3)
-tests/                               tests for the lint
+tools/                               the lint (writing rule, S1–S3) and the referee harness
+tests/                               tests for the lint and the harness
+referee/                             prompt, test set and runs of the referee (S4–S8)
 ```
 
 How to propose a product: see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -150,7 +151,8 @@ How to propose a product: see [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Stack
 
 Stack: Python 3.12+ with two libraries, PyYAML and jsonschema; data in YAML, checked against JSON
-Schema; GitHub Actions runs the lint on every pull request.
+Schema; GitHub Actions runs the lint on every pull request. The referee harness also uses the
+Anthropic Python SDK (`requirements-referee.txt`); see [referee/README.md](referee/README.md).
 
 ## Licence
 

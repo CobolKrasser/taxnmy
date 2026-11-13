@@ -1,0 +1,124 @@
+name: referee
+
+# A measurement of the AI referee (fase 2). Started by hand, from main only.
+# The key is a secret and reaches only the step that calls the API, and only on a live run.
+# The harness reads only data files; it never runs code from a pull request (hosting plan §8).
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "measure, or check-urls (fetch the verify URLs; free)"
+        type: choice
+        options: [measure, check-urls]
+        default: measure
+      condition:
+        description: "fetched (base run), memory or web (R13)"
+        type: choice
+        options: [fetched, memory, web]
+        default: fetched
+      cases:
+        description: "case ids separated by spaces, or all; empty: all for fetched, the 29 R13 cases otherwise"
+        type: string
+        default: ""
+      limit:
+        description: "only the first N cases (empty: no limit)"
+        type: string
+        default: ""
+      model:
+        type: string
+        default: claude-opus-5-5
+      effort:
+        type: choice
+        options: [low, medium, high]
+        default: medium
+      budget:
+        description: "dollars, for all runs together (hard limit)"
+        type: string
+        default: "5.00"
+      live:
+        description: "call the API (costs money); off is a dry run"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: referee  # one measurement at a time, so the budget cannot be spent twice
+  cancel-in-progress: false
+
+jobs:
+  referee:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+
+      - name: Check the verify URLs
+        if: inputs.task == 'check-urls'
+        run: python tools/referee.py check-urls | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # The budget counts every earlier run: the ones committed in referee/runs/ and the ones
+      # kept as artifacts of this workflow. An expired artifact whose run is not committed would
+      # make the count too low, so the measurement stops if there is one.
+      - name: Gather earlier runs
+        if: inputs.task == 'measure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p referee/runs
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/actions/artifacts?per_page=100" \
+            --jq '.artifacts[] | select(.name | startswith("referee-run-")) | "\(.id) \(.expired) \(.name)"' |
+          while read -r id expired name; do
+            dir="referee/runs/${name#referee-run-}"
+            if [ -e "$dir" ]; then continue; fi
+            if [ "$expired" = "true" ]; then
+              echo "::error::Run ${name#referee-run-} has expired and is not committed; its cost cannot be counted"
+              exit 1
+            fi
+            gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${id}/zip" > /tmp/run.zip
+            mkdir -p "$dir"
+            unzip -q /tmp/run.zip -d "$dir"
+          done
+          ls referee/runs
+
+      - name: Measure
+        id: run
+        if: inputs.task == 'measure'
+        env:
+          ANTHROPIC_API_KEY: ${{ inputs.live && secrets.ANTHROPIC_API_KEY || '' }}
+          CONDITION: ${{ inputs.condition }}
+          CASES: ${{ inputs.cases }}
+          LIMIT: ${{ inputs.limit }}
+          MODEL: ${{ inputs.model }}
+          EFFORT: ${{ inputs.effort }}
+          BUDGET: ${{ inputs.budget }}
+          LIVE: ${{ inputs.live }}
+        run: |
+          set -euo pipefail
+          args=(run --condition "$CONDITION" --model "$MODEL" --effort "$EFFORT" --budget "$BUDGET")
+          if [ -n "$CASES" ]; then read -r -a ids <<< "$CASES"; args+=(--cases "${ids[@]}"); fi
+          if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
+          if [ "$LIVE" = "true" ]; then args+=(--live); fi
+          python tools/referee.py "${args[@]}"
+
+      - name: Summary
+        if: always() && steps.run.outputs.run_dir != ''
+        run: cat "${{ steps.run.outputs.run_dir }}/summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep the run
+        if: always() && steps.run.outputs.run_dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.run.outputs.run_name }}
+          path: ${{ steps.run.outputs.run_dir }}
+          retention-days: 90

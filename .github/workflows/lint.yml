@@ -19,7 +19,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Tests of the lint
+      - name: Tests of the lint and the referee harness
         run: python -m unittest discover -s tests -v
       - name: Lint the data (writing rule, S1-S3)
         run: python tools/lint.py
