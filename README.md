@@ -50,7 +50,9 @@ Names use the Latin script. Names in other scripts are not accepted at this stag
 
 ### Products
 
-A product is something that can receive updates. It is one of three kinds:
+A product is something that can receive updates, and of which a source publishes the versions.
+It carries two names, as a source writes them: the publisher and the product. It is one of three
+kinds:
 
 | kind | meaning |
 | --- | --- |
@@ -72,8 +74,10 @@ The publisher is whoever publishes the updates, under a Latin name the publisher
 
 ### Versions
 
-A version is the text a source publishes about this product. A product file names the source of
-its versions.
+A version is the text a source publishes about this product. Within a product a version is
+unique: `publisher/product@version` points to one version. The same number in another product is
+another version. How a version is built up is observed per product, with its source. Firmware is
+the version axis of a device. A product file names the source of its versions.
 
 ### Identifiers
 
@@ -123,6 +127,9 @@ others use for them. It does not record:
   later, it will only be from a fixed vocabulary, with a unit and a source for every value;
 - **prices**;
 - **composition**: the parts a product is built from, and their firmware;
+- **services without a version the customer can see** (software as a service). A managed service in
+  which the customer chooses and upgrades the version, such as a managed database, is a product of
+  the kind `software`, with the provider as publisher;
 - **names in other scripts** than the Latin script.
 
 The schema accepts no fields other than the ones it defines, so a proposal with any of these values
