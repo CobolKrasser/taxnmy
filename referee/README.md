@@ -165,8 +165,10 @@ For each case it:
 6. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
 The conditions of R13: `--condition fetched` (A, the default, all 60 cases), `memory` (M) and `web`
-(W, web search with at most 3 searches). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 60); the quote check is off in both. `compare` puts
+(W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
+`--cases` says otherwise (`--cases all` for all 60); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+(the text block under *System prompt*), written by the analyst; condition *fetched* reads
+`prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
 
 Each live run writes `runs/<time>-<condition>-<model>/`: `run.json` (the settings and the budget),

@@ -188,7 +188,8 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual(results["G02"].outcome, "accept")
         self.assertIn(referee.NO_SOURCES["memory"], client.calls[0]["messages"][0]["content"])
         results, _, client = self.run_fake(condition="web", cases=["G02"], now=LATER)
-        self.assertEqual([t["name"] for t in client.calls[0]["tools"]], ["web_search"])
+        self.assertEqual([t["name"] for t in client.calls[0]["tools"]], ["web_search", "web_fetch"])
+        self.assertEqual(client.calls[0]["tools"][1]["max_uses"], 3)
         self.assertIn(referee.NO_SOURCES["web"], client.calls[0]["messages"][0]["content"])
 
     def test_r13_cases_are_the_default_outside_fetched(self):
@@ -418,6 +419,22 @@ class RefereeTest(unittest.TestCase):
         self.assertIn("| human because a source is closed (refused, disallowed, error) | 2 |", summary)
         self.assertIn("| human because the referee doubts | 1 |", summary)
 
+    def test_r13_conditions_read_their_own_prompt(self):
+        r13 = self.out / "prompt-r13.md"
+        r13.write_text("## System prompt\n\n```text\nJudge from what you know.\n```\n")
+        default = referee.REFEREE / "prompt.md"
+        with unittest.mock.patch.object(referee, "R13_PROMPT", r13):
+            _, run_dir, client = self.run_fake(condition="memory", cases=["G01"], prompt=default)
+            self.assertEqual(client.calls[0]["system"][0]["text"], "Judge from what you know.\n")
+            self.assertEqual(json.loads((run_dir / "run.json").read_text())["prompt"], str(r13))
+            _, _, client = self.run_fake(condition="fetched", cases=["G01"], prompt=default, now=LATER)
+            self.assertTrue(client.calls[0]["system"][0]["text"].startswith("You are the referee of TAXNMY"))
+
+    def test_r13_prompt_must_exist(self):
+        with unittest.mock.patch.object(referee, "R13_PROMPT", self.out / "missing.md"):
+            with self.assertRaises(SystemExit):
+                self.run_fake(condition="memory", cases=["G01"], prompt=referee.REFEREE / "prompt.md")
+
     def test_registrable(self):
         self.assertEqual(referee.registrable("www.dell.com"), "dell.com")
         self.assertEqual(referee.registrable("support.d-imaging.sony.co.jp"), "sony.co.jp")
@@ -517,7 +534,7 @@ class RefereeTest(unittest.TestCase):
     def test_budget_is_logged(self):
         lines = []
         self.run_fake(budget=1.25, log=lines.append)
-        self.assertIn("budget: $1.25", lines[2])
+        self.assertTrue(any("budget: $1.25" in line for line in lines), lines)
         self.assertTrue(any("spent $0.0140 of $1.25" in line for line in lines))
         run_dir = next(self.out.iterdir())
         self.assertEqual(json.loads((run_dir / "run.json").read_text())["budget"], 1.25)
@@ -525,7 +542,7 @@ class RefereeTest(unittest.TestCase):
     def test_web_reserves_room_for_search(self):
         client = FakeClient()
         self.run_fake(client=client, condition="web", budget=1.0, cases=["G01"])
-        allowance = referee.web_allowance("claude-opus-5-5", referee.load_prices(), 3)
+        allowance = referee.web_allowance("claude-opus-5-5", referee.load_prices(), 3, 3)
         expected = int((1.0 - (1000 * 1.05 + 100) * 5e-6 - allowance) / 20e-6)
         self.assertEqual(client.calls[0]["max_tokens"], min(8000, expected))
 
