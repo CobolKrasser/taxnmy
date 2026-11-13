@@ -337,7 +337,7 @@ def gather_sources(fetcher, staged: "Staged") -> list[Source]:
     for url in case_urls(staged):
         src = fetcher.fetch(url, name)
         sources.append(src)
-        if src.status == "refused" and hasattr(fetcher, "alternatives"):
+        if src.status in CLOSED and hasattr(fetcher, "alternatives"):
             sources += fetcher.alternatives(url)
     return sources
 
@@ -1026,6 +1026,7 @@ SEARCH_PROMPT = (
     "Do not answer anything and do not summarise the results; reply with the single word: done."
 )
 SEARCH_RESULTS = 5  # URLs kept per search
+CLOSED = ("refused", "disallowed")  # a source step 4 searches another open source for
 
 
 def registrable(host: str) -> str:
@@ -1065,7 +1066,7 @@ def search_urls(content) -> list[str]:
 
 
 def search_refused(args, client=None, data_root: Path = REPO, now=None, log=print) -> dict:
-    """Step 4: for each refused source, one web search on the publisher's domains. Costs money
+    """Step 4: for each refused or disallowed source, one web search on the publisher's domains. Costs money
     (about $0.01 a search plus tokens) and counts against the budget like a run."""
     stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
     cases = select(load_cases(Path(args.testset)), args.cases, "fetched")
@@ -1083,9 +1084,9 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
         name = product_name(st)
         _, prod = product_file(st.files)
         for url in case_urls(st):
-            if stored.fetch(url, name).status == "refused" and url not in wanted:
+            if stored.fetch(url, name).status in CLOSED and url not in wanted:
                 wanted[url] = {"product": name, "publisher": prod.get("publisher", ""), "domains": search_domains(url, st)}
-    log(f"{len(wanted)} refused sources to search for")
+    log(f"{len(wanted)} refused or disallowed sources to search for")
     out = Path(args.out)
     found: dict[str, dict] = {}
     if wanted and not args.live:
