@@ -10,6 +10,8 @@ answer and scores it against the expected outcome.
 Usage:
 
     python tools/referee.py run [--condition fetched|memory|web] [--live] ...
+    python tools/referee.py fetch --output sources.json   # read the sources (free, no key)
+    python tools/referee.py run --sources sources.json ...
     python tools/referee.py check-urls
     python tools/referee.py compare RUN_DIR RUN_DIR ...
 
@@ -33,15 +35,12 @@ from __future__ import annotations
 
 import argparse
 import copy
-import html.parser
 import json
 import os
 import re
 import shutil
 import sys
 import tempfile
-import urllib.error
-import urllib.request
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -51,6 +50,9 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lint  # noqa: E402
+from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of the harness API
+    MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, html_to_text, page_text, pdf_to_text,
+)
 
 REPO = Path(__file__).resolve().parent.parent
 REFEREE = REPO / "referee"
@@ -59,11 +61,8 @@ OUTCOMES = ("accept", "reject", "alias", "human")
 CONDITIONS = ("fetched", "memory", "web")
 MAX_TOKENS = 8000  # per request; the budget may lower it
 MIN_OUTPUT = 2000  # a request with less room for output than this is not sent
-SOURCE_CHARS = 24_000  # about 6,000 tokens per source text (referee/prompt.md)
-MIN_CHARS = 200  # less text than this is no source: a title alone (run A review, §1)
 WEB_ALLOWANCE = 20_000  # web: input tokens reserved per search (not a hard bound)
 WEB_TOOL_OVERHEAD = 2_000  # web: input tokens of the tool definition, which token counting cannot see
-USER_AGENT = "TAXNMY-referee/1.0 (+https://github.com/CobolKrasser/taxnmy)"
 
 # The 29 cases of the R13 research (referee/r13-research.md, "Which cases").
 R13_CASES = (
@@ -315,90 +314,12 @@ def lint_matches(expected: str, findings: list) -> bool:
 
 # --------------------------------------------------------------------------- sources
 
-@dataclass
-class Source:
-    url: str
-    status: str  # an HTTP status, "unreadable" or "error: ..."
-    text: str = ""
-
-
-class _Text(html.parser.HTMLParser):
-    SKIP = {"script", "style", "noscript", "nav", "header", "footer", "svg", "template", "iframe"}
-
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.depth, self.out = 0, []
-
-    def handle_starttag(self, tag, attrs):
-        if tag in self.SKIP:
-            self.depth += 1
-
-    def handle_endtag(self, tag):
-        if tag in self.SKIP and self.depth:
-            self.depth -= 1
-
-    def handle_data(self, data):
-        if not self.depth and data.strip():
-            self.out.append(data.strip())
-
-
-def html_to_text(page: str) -> str:
-    parser = _Text()
-    parser.feed(page)
-    return re.sub(r"\s+", " ", " ".join(parser.out)).strip()
-
-
-def pdf_to_text(body: bytes) -> str:
-    try:
-        import io
-
-        import pypdf
-    except ImportError:  # pypdf is in requirements-referee.txt
-        return ""
-    try:
-        reader = pypdf.PdfReader(io.BytesIO(body))
-        return re.sub(r"\s+", " ", " ".join((page.extract_text() or "") for page in reader.pages)).strip()
-    except Exception:  # noqa: BLE001 - a PDF that cannot be read confirms nothing
-        return ""
-
-
-def page_text(body: bytes, ctype: str, charset: str) -> str:
-    """The readable text of a response: HTML without navigation and scripts, JSON and plain text
-    as they are, the text of a PDF. Anything else gives no text."""
-    if ctype == "text/html":
-        return html_to_text(body.decode(charset, errors="replace"))
-    if ctype.startswith("text/") or ctype == "application/json" or ctype.endswith("+json"):
-        return re.sub(r"\s+", " ", body.decode(charset, errors="replace")).strip()
-    if ctype == "application/pdf":
-        return pdf_to_text(body)
-    return ""
-
-
-class HttpFetcher:
-    """Ordinary HTTP, following redirects. Costs nothing."""
-
-    def __init__(self, timeout: float = 20.0):
-        self.timeout = timeout
-        self.cache: dict[str, Source] = {}
-
-    def fetch(self, url: str) -> Source:
-        if url in self.cache:
-            return self.cache[url]
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/json,text/plain;q=0.9,*/*;q=0.1"})
-        try:
-            with urllib.request.urlopen(req, timeout=self.timeout) as resp:  # noqa: S310 - URLs of the test set
-                status, ctype = str(resp.status), resp.headers.get_content_type()
-                body = resp.read(10_000_000)
-                charset = resp.headers.get_content_charset() or "utf-8"
-        except urllib.error.HTTPError as exc:
-            src = Source(url, str(exc.code))
-        except Exception as exc:  # noqa: BLE001 - any failure means the source confirms nothing
-            src = Source(url, f"error: {type(exc).__name__}")
-        else:
-            text = page_text(body, ctype, charset)
-            src = Source(url, status, text[:SOURCE_CHARS]) if len(text) >= MIN_CHARS else Source(url, "unreadable")
-        self.cache[url] = src
-        return src
+def case_urls(staged: "Staged") -> list[str]:
+    """The URLs to fetch for a case: the sources of the proposed files and of the publisher file."""
+    urls = urls_of(staged.files)
+    if staged.publisher_source and staged.publisher_source not in urls:
+        urls.append(staged.publisher_source)
+    return urls
 
 
 def urls_of(files: dict) -> list[str]:
@@ -765,7 +686,12 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("A live run needs ANTHROPIC_API_KEY")
         client = AnthropicClient()
-    fetcher = fetcher or HttpFetcher()
+    if fetcher is None:
+        if getattr(args, "sources", None):
+            fetcher = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
+            log(f"sources: {args.sources} ({len(fetcher.cache)} URLs, fetched by an earlier step)")
+        else:
+            fetcher = Fetcher(log=log)
 
     stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
     run_dir = out / f"{stamp}-{args.condition}-{args.model}"
@@ -793,10 +719,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             elif st.lint_seen.startswith("error"):
                 res.by, res.outcome, res.rule = "code", "reject", st.lint_seen.split()[1]
             else:
-                urls = urls_of(st.files)
-                if st.publisher_source and st.publisher_source not in urls:
-                    urls.append(st.publisher_source)
-                sources = [fetcher.fetch(u) for u in urls] if args.condition == "fetched" else []
+                sources = [fetcher.fetch(u) for u in case_urls(st)] if args.condition == "fetched" else []
                 for s in sources:
                     fetched[s.url] = asdict(s)
                 res.sources = [[s.url, s.status] for s in sources]
@@ -849,6 +772,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             jsonl.flush()
 
     (run_dir / "sources.json").write_text(json.dumps(fetched, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    if hasattr(fetcher, "close"):
+        fetcher.close()
     summary = summarise(results, run_dir.name, args.condition, args.budget, before, stopped)
     (run_dir / "summary.md").write_text(summary, encoding="utf-8")
     log(summary)
@@ -1006,11 +931,52 @@ def compare(dirs: list[Path]) -> str:
 
 def check_urls(cases: list[Case], fetcher) -> str:
     """README § Before the run: fetch the `verify` URLs with the fetcher of the run."""
-    lines = ["| case | url | status | characters of text |", "| --- | --- | --- | --- |"]
+    lines = ["| case | url | status | method | characters of text |", "| --- | --- | --- | --- | --- |"]
     for c in cases:
         for url in c.verify:
             s = fetcher.fetch(url)
-            lines.append(f"| {c.id} | {url} | {s.status} | {len(s.text)} |")
+            lines.append(f"| {c.id} | {url} | {s.status} | {s.method or '-'} | {s.chars} |")
+    return "\n".join(lines) + "\n"
+
+
+def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict:
+    """Fetch the sources of the cases that reach the referee, and write them to args.output.
+    No key is needed or read: this step runs where the key is not (hosting plan §8)."""
+    cases = select(load_cases(Path(args.testset)), args.cases, "fetched")
+    if args.limit:
+        cases = cases[: args.limit]
+    stager = Stager(data_root)
+    try:
+        staged = [stager.stage(c) for c in cases]
+    finally:
+        stager.close()
+    fetcher = fetcher or Fetcher(use_browser=not args.no_browser, log=log)
+    try:
+        for st in staged:
+            if st.lint_ok and not st.lint_seen.startswith("error"):
+                for url in case_urls(st):
+                    fetcher.fetch(url)
+    finally:
+        fetcher.close()
+    data = {url: asdict(src) for url, src in fetcher.cache.items()}
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    log(sources_table(data))
+    return data
+
+
+def sources_table(data: dict) -> str:
+    """How many sources each step read, and what did not come through."""
+    counts: dict[tuple, int] = {}
+    for src in data.values():
+        key = (src["method"] or "-", src["status"] if not src["status"].isdigit() or int(src["status"]) >= 300 else "read")
+        counts[key] = counts.get(key, 0) + 1
+    lines = [f"{len(data)} sources", "", "| method | status | sources |", "| --- | --- | --- |"]
+    lines += [f"| {m} | {s} | {n} |" for (m, s), n in sorted(counts.items())]
+    lines += ["", "| status | method | characters | url |", "| --- | --- | --- | --- |"]
+    lines += [f"| {src['status']} | {src['method'] or '-'} | {src['chars']} | {url} |"
+              for url, src in sorted(data.items()) if not src["status"].isdigit() or int(src["status"]) >= 300]
     return "\n".join(lines) + "\n"
 
 
@@ -1033,8 +999,16 @@ def parser() -> argparse.ArgumentParser:
                           ("schema", REFEREE / "verdict.schema.json"), ("prices", REFEREE / "prices.yaml"),
                           ("out", REFEREE / "runs")):
         r.add_argument(f"--{name}", default=str(default))
+    r.add_argument("--sources", help="a sources.json made by `fetch`; the run then fetches nothing itself")
     u = sub.add_parser("check-urls", help="fetch the verify URLs of the test set (free)")
     u.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
+    u.add_argument("--no-browser", action="store_true", help="skip the browser step")
+    f = sub.add_parser("fetch", help="fetch the sources of the cases into a sources.json (free, no key)")
+    f.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
+    f.add_argument("--cases", nargs="*", help="case ids, or 'all' (default: all)")
+    f.add_argument("--limit", type=int)
+    f.add_argument("--output", default="sources.json")
+    f.add_argument("--no-browser", action="store_true", help="skip the browser step")
     c = sub.add_parser("compare", help="compare runs on the cases they share (R13)")
     c.add_argument("runs", nargs="+", type=Path)
     return p
@@ -1047,7 +1021,13 @@ def main(argv: list[str] | None = None) -> int:
             raise SystemExit("compare needs at least two run directories")
         print(compare(args.runs))
     elif args.command == "check-urls":
-        print(check_urls(load_cases(Path(args.testset)), HttpFetcher()))
+        fetcher = Fetcher(use_browser=not args.no_browser)
+        try:
+            print(check_urls(load_cases(Path(args.testset)), fetcher))
+        finally:
+            fetcher.close()
+    elif args.command == "fetch":
+        fetch_sources(args)
     else:
         run(args)
     return 0
