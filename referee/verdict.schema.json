@@ -26,7 +26,7 @@
         "verdict": { "enum": ["yes", "no", "doubt"] },
         "reason": { "type": "string" },
         "evidence": {
-          "description": "For yes and no: at least one quote, copied exactly from a source text. Empty for doubt.",
+          "description": "For yes and no: the quotes that support the answer, each copied exactly from a source text. Empty for doubt, and empty when the system prompt asks for no evidence.",
           "type": "array",
           "items": {
             "type": "object",

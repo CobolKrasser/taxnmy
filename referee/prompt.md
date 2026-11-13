@@ -129,6 +129,143 @@ When the product's own source (the `source` of the product file) answers 404 or 
 the proposal on S7 without calling the referee: the page that should show the product does not
 exist.
 
+## System prompt in the conditions of R13
+
+Conditions M (*memory*) and W (*web*) of `r13-research.md` give the referee no source texts. The
+system prompt above says the opposite: judge *"using only the source texts you are given"*, and
+*"You do not use your own memory as evidence."* That sentence won from the line in `<sources>`: in
+the first run of M, 28 of the 29 cases ended in *doubt*. M then measured the prompt, not the
+memory.
+
+So M and W use the **same system prompt with three passages replaced**. Everything else stays as
+in A: the definitions, the rules, the user message, the schema, the model and the effort. The
+comparison then differs only in the evidence, as R13 intends.
+
+How the harness applies it:
+- For condition `fetched` the system prompt is used as it is.
+- For `memory` and `web`, each *Replace* block below is replaced by the *With* block that follows
+  it. Each *Replace* text must occur exactly once in the system prompt. If one does not, the run
+  stops before any call.
+- `run.json` records the system prompt that was sent, or its hash, so that a run can be traced to
+  its prompt.
+
+*"Prefer doubt to a guess"* stays in all three conditions. R13 asks whether memory is as often
+right as a fetched source, with the same care. An M that guesses where A doubts would make the
+comparison unfair the other way.
+
+### memory
+
+Replace:
+
+```text
+key follows the writing rule, and that the key is new. You judge five rules, using only the source
+texts you are given. You do not use your own memory as evidence.
+```
+
+With:
+
+```text
+key follows the writing rule, and that the key is new. You judge five rules. You are given no
+source texts. Answer from what you know: here your own knowledge is the evidence.
+```
+
+Replace:
+
+```text
+Rules
+```
+
+With:
+
+```text
+Where a rule below speaks of a source or a source text, read it as: what you know to be true. Where
+it speaks of the source a value points to, judge whether the value is right and whether that URL
+is the kind of page that would publish it. A source does not count as unavailable because its text
+is not given.
+
+Rules
+```
+
+Replace:
+
+```text
+- For each rule answer "yes", "no" or "doubt". Use "doubt" when the sources do not settle it; a
+  person will then decide. Prefer "doubt" to a guess.
+- Give a short reason for each answer, in one or two sentences.
+- For each "yes" and each "no", give the evidence: the URL and a quote copied exactly from the
+  source text, at most 25 words. A quote that is not in the source text makes the answer invalid.
+```
+
+With:
+
+```text
+- For each rule answer "yes", "no" or "doubt". Use "doubt" when what you know does not settle it;
+  a person will then decide. Prefer "doubt" to a guess.
+- Give a short reason for each answer, in one or two sentences, saying what you know.
+- Give no evidence: leave the evidence list empty for every rule, also for "yes" and "no".
+```
+
+### web
+
+Replace:
+
+```text
+key follows the writing rule, and that the key is new. You judge five rules, using only the source
+texts you are given. You do not use your own memory as evidence.
+```
+
+With:
+
+```text
+key follows the writing rule, and that the key is new. You judge five rules. You are given no
+source texts: find them with web search, at most three searches. Only the pages your searches
+returned are evidence. You do not use your own memory as evidence.
+```
+
+Replace:
+
+```text
+Rules
+```
+
+With:
+
+```text
+Where a rule below speaks of a source or a source text, read it as: a page your searches returned.
+Where it speaks of the source a value points to, read it as: that URL if your searches returned it,
+otherwise another page of the same publisher that your searches returned.
+
+Rules
+```
+
+Replace:
+
+```text
+- For each rule answer "yes", "no" or "doubt". Use "doubt" when the sources do not settle it; a
+  person will then decide. Prefer "doubt" to a guess.
+- Give a short reason for each answer, in one or two sentences.
+- For each "yes" and each "no", give the evidence: the URL and a quote copied exactly from the
+  source text, at most 25 words. A quote that is not in the source text makes the answer invalid.
+```
+
+With:
+
+```text
+- For each rule answer "yes", "no" or "doubt". Use "doubt" when the pages your searches returned do
+  not settle it; a person will then decide. Prefer "doubt" to a guess.
+- Give a short reason for each answer, in one or two sentences.
+- For each "yes" and each "no", give the evidence: the URL of a page your searches returned and a
+  quote copied exactly from it, at most 25 words.
+```
+
+The line in `<sources>` (`NO_SOURCES` in the harness) stays as it is. It now says the same as the
+system prompt.
+
+The description of `evidence` in `verdict.schema.json` said *"at least one quote"* for yes and no,
+which would again push M towards doubt. It now says the quotes are empty when the system prompt asks
+for no evidence. For A this changes nothing: its system prompt still asks for a quote with every
+yes and no, and the quote check still applies.
+
 ## Outcome
 
 Code computes the outcome from the answer:
