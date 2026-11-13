@@ -13,14 +13,16 @@ decision.
 
 ## Three conditions, one set of questions
 
-All three conditions use the same model, the same system prompt (`referee/prompt.md`) and the same
-output schema. Only the evidence the model gets differs.
+All three conditions use the same model, the same rules and the same output schema. Only the
+evidence the model gets differs. M and W have a system prompt of their own (`prompt-r13.md`): it
+differs from that of A (`prompt.md`) only in what counts as evidence, because A's says to use only
+the source texts given, and M and W are given none.
 
 | | condition | the `<sources>` block | tools |
 | --- | --- | --- | --- |
 | **A** | *fetched* (the base run of fase 2) | the texts of the URLs in the proposal, fetched by code | none |
 | **M** | *memory* | empty, with the line *"No source texts are given. Answer from what you know; give no quotes."* | none |
-| **W** | *web search* | empty, with the line *"Use web search to find sources. Quote only from pages you retrieved."* | web search, at most 3 searches per proposal |
+| **W** | *web* | empty, with the line *"No source texts are given. Read the URLs in the proposal with web fetch, and find other pages with web search. Quote only from pages you read with web fetch."* | web fetch and web search, each at most 3 uses per proposal |
 
 In condition M, every *yes* or *no* has no evidence. The quote check in `prompt.md` would turn each
 *yes* into *doubt*. For this research the check is **switched off in M and W**, and the raw answer
@@ -54,7 +56,7 @@ Per condition, over the 29 cases:
 2. **Wrongly rejected:** a good case that gets a *no*.
 3. **Doubt:** how often the model sends a case to a person.
 4. **Right per rule:** S4, S5, S7 and S8 separately.
-5. **Cost per proposal:** input and output tokens, and in W the number of searches.
+5. **Cost per proposal:** input and output tokens, and in W the number of searches and fetches.
 
 For condition M one extra count: **confident and wrong**, a *yes* or *no* that the ground truth
 contradicts. That is the hallucination rate.
