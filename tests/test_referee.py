@@ -336,6 +336,39 @@ class RefereeTest(unittest.TestCase):
         self.assertIn(f'<source url="https://kb.synology.com/en-global/DS124" status="200" instead-of="{refused}">', message)
         self.assertIn(f'<source url="{refused}" status="refused">', message)
 
+    def test_closed_source_reads_the_publishers_machine_sources_first(self):
+        import shutil as sh
+        data = self.out / "data"
+        sh.copytree(FIXTURES / "data", data)
+        pub = data / "publishers/synology.yaml"
+        pub.write_text(pub.read_text() + "machine_sources:\n  - url: https://dl.synology.example/catalog.json\n"
+                       "    format: csaf-provider\n    source: https://www.synology.com/en-global/company\n")
+        refused = "https://www.synology.com/en-global/products/DS124"
+
+        class Fetcher(FakeFetcher):
+            cache = {}
+
+            def fetch(self, url, product=""):
+                self.urls.append(url)
+                if url == refused:
+                    src = referee.Source(url, "refused", method="http")
+                elif url.endswith("catalog.json"):
+                    src = referee.Source(url, "200", "CSAF provider metadata ...", "machine", product=product)
+                else:
+                    src = referee.Source(url, "200", f"Page of {url}. {PAGE}", "http")
+                self.cache[referee.source_key(url, product) if src.method == "machine" else url] = src
+                return src
+
+        args = Args(self.out, output=str(self.out / "sources.json"), cases=["G01"], limit=None, no_browser=True)
+        got = referee.fetch_sources(args, fetcher=Fetcher(), data_root=data, log=QUIET)
+        key = f"https://dl.synology.example/catalog.json | DS124 | for {refused}"
+        self.assertEqual((got[key]["method"], got[key]["instead_of"]), ("machine", refused))
+        lines = []
+        found = referee.search_refused(self.search_args(self.out / "sources.json", live=False), client=FakeClient(),
+                                       data_root=data, log=lines.append)
+        self.assertIn("0 refused or disallowed sources to search for", lines[0], "step 0 found something, so no search")
+        self.assertEqual(found, {})
+
     def test_registrable(self):
         self.assertEqual(referee.registrable("www.dell.com"), "dell.com")
         self.assertEqual(referee.registrable("support.d-imaging.sony.co.jp"), "sony.co.jp")
