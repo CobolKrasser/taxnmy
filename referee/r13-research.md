@@ -14,7 +14,7 @@ decision.
 ## Three conditions, one set of questions
 
 All three conditions use the same model, the same rules and the same output schema. Only the
-evidence the model gets differs. M and W have a system prompt of their own (`prompt-r13.md`): it
+evidence the model gets differs. M and W share a system prompt of their own (`prompt-r13.md`): it
 differs from that of A (`prompt.md`) only in what counts as evidence, because A's says to use only
 the source texts given, and M and W are given none.
 
