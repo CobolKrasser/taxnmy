@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for S4–S8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 60 proposals with the expected outcome: 28 good, 30 bad, 2 for a person |
+| `testset/cases.yaml` | 60 proposals with the expected outcome: 30 good (G01–G28, H01–H02), 30 bad |
 | `r13-research.md` | the research into whether an AI can be a source (R13) |
 | `prices.yaml` | the prices per model that the harness counts with, with their source |
 | `runs/<run>/` | the results of a measurement, one directory per run |
@@ -22,7 +22,7 @@ The harness is `tools/referee.py`; see [The harness](#the-harness) below.
 | group | cases | kinds |
 | --- | --- | --- |
 | good | G01–G28 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 S4 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right |
-| for a person | H01–H02 | the AI models of Anthropic and OpenAI |
+| good, AI models | H01–H02 | the AI models of Anthropic and OpenAI: once for a person, good since Fred decided on 13 November that AI models are in TAX |
 | bad, caught by code | B01–B06 | a missing field, a specification (T8), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
 | bad, for the AI | B07–B30 | 5 duplicates in another word order, 4 variants, 2 descriptions, 2 translations, 3 invented products, 2 values that the source does not confirm, 3 wrong publishers, 1 repackaged product, 2 SaaS without versions |
 

@@ -129,7 +129,8 @@ others use for them. It does not record:
 - **composition**: the parts a product is built from, and their firmware;
 - **services without a version the customer can see** (software as a service). A managed service in
   which the customer chooses and upgrades the version, such as a managed database, is a product of
-  the kind `software`, with the provider as publisher;
+  the kind `software`, with the provider as publisher. So are the AI models a provider offers
+  through an API: one product per provider, with the model names as versions;
 - **names in other scripts** than the Latin script.
 
 The schema accepts no fields other than the ones it defines, so a proposal with any of these values
