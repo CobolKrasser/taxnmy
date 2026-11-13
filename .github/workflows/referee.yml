@@ -144,7 +144,7 @@ jobs:
           BUDGET: ${{ inputs.budget }}
         run: |
           set -euo pipefail
-          args=(search --sources fetched/sources.json --output fetched/search.json --model "$MODEL" --budget "$BUDGET" --live)
+          args=(search --sources fetched/sources.json --output fetched/search.json --budget "$BUDGET" --live)
           if [ -n "$CASES" ]; then read -r -a ids <<< "$CASES"; args+=(--cases "${ids[@]}"); fi
           if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
           python tools/referee.py "${args[@]}" | tee -a "$GITHUB_STEP_SUMMARY"

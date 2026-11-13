@@ -141,6 +141,19 @@ class LadderTest(unittest.TestCase):
         self.assertEqual(s.status, "refused")
         self.assertEqual(net.requests.count("https://a.example/p"), 2, "only one retry")
 
+    def test_api_timeout_is_tried_once_more(self):
+        clock = Clock()
+        api = "https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:netgear:rbr750_firmware&resultsPerPage=1"
+        net = Net({api: [Response(status=0, error="error: TimeoutError"), ok(LONG.encode(), "application/json")]})
+        s = fetcher(net, clock=clock).fetch(api)
+        self.assertEqual((s.status, s.method), ("200", "api"))
+        self.assertIn(fetch.API_RETRY_WAIT, clock.slept)
+        self.assertEqual(net.requests.count(api), 2)
+
+    def test_page_timeout_is_not_retried(self):
+        net = Net({"https://a.example/p": [Response(status=0, error="error: TimeoutError"), ok(html(LONG))]})
+        self.assertEqual(fetcher(net).fetch("https://a.example/p").status, "error: TimeoutError")
+
     def test_retry_after(self):
         now = datetime(2026, 11, 13, 12, 0, 0, tzinfo=timezone.utc)
         self.assertEqual(fetch.retry_after("12"), 12.0)

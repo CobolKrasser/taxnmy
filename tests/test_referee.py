@@ -369,6 +369,55 @@ class RefereeTest(unittest.TestCase):
         self.assertIn("0 refused or disallowed sources to search for", lines[0], "step 0 found something, so no search")
         self.assertEqual(found, {})
 
+    def test_one_search_per_query_with_sonnet(self):
+        product, versions = "https://www.synology.com/en-global/products/DS124", "https://www.synology.com/en-global/releaseNote/DSM?model=DS124"
+        sources = self.out / "sources.json"
+        sources.write_text(json.dumps({u: {"url": u, "status": "refused"} for u in (product, versions)}))
+
+        class SearchClient(FakeClient):
+            def create(self, request):
+                self.calls.append(request)
+                block = Block("web_search_tool_result")
+                block.content = [type("R", (), {"url": "https://kb.synology.com/x"})()]
+                usage = {"input_tokens": 1000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+                         "output_tokens": 10, "web_search_requests": 1}
+                return referee.Response(content=[block], stop_reason="end_turn", usage=usage)
+
+        client = SearchClient()
+        args = self.search_args(sources, model=referee.parser().parse_args(["search", "--sources", "x"]).model)
+        found = referee.search_refused(args, client=client, data_root=FIXTURES / "data", now=NOW, log=QUIET)
+        self.assertEqual(len(client.calls), 1, "two closed sources of one product share one search")
+        self.assertEqual(client.calls[0]["model"], "claude-sonnet-5-5")
+        self.assertEqual(set(found), {product, versions})
+        lines = (next(self.out.glob("*-search-*")) / "results.jsonl").read_text().splitlines()
+        self.assertEqual(len(lines), 1)
+        self.assertEqual(json.loads(lines[0])["for"], [product, versions])
+
+    def test_search_domains_come_from_the_publishers_file_and_products(self):
+        import shutil as sh
+        data = self.out / "data"
+        sh.copytree(FIXTURES / "data", data)
+        (data / "products/synology/ds224-plus.yaml").write_text(
+            (FIXTURES / "data/products/synology/ds224-plus.yaml").read_text().replace(
+                "https://www.synology.com/en-global/releaseNote/DSM", "https://support.synology.co.jp/releases"))
+        stager = referee.Stager(data)
+        self.addCleanup(stager.close)
+        g01 = stager.stage({c.id: c for c in referee.load_cases(FIXTURES / "cases.yaml")}["G01"])
+        domains = referee.search_domains("https://www.synology.com/en-global/products/DS124", g01)
+        self.assertEqual(domains, ["synology.com", "synology.co.jp"])
+
+    def test_human_by_cause(self):
+        closed = referee.Result(id="G09", type="t", expect=["accept"], outcome="human", by="ai",
+                                sources=[["https://a/1", "refused"], ["https://a/2", "200"]])
+        timeout = referee.Result(id="G03", type="t", expect=["accept"], outcome="human", by="ai",
+                                 sources=[["https://a/3", "error: TimeoutError"]])
+        doubt = referee.Result(id="G12", type="t", expect=["accept"], outcome="human", by="ai", sources=[["https://a/4", "200"]])
+        m = referee.metrics([closed, timeout, doubt])
+        self.assertEqual((m["human_closed"], m["human_doubt"]), (["G09", "G03"], ["G12"]))
+        summary = referee.summarise([closed, timeout, doubt], "x", "fetched", 20, 0)
+        self.assertIn("| human because a source is closed (refused, disallowed, error) | 2 |", summary)
+        self.assertIn("| human because the referee doubts | 1 |", summary)
+
     def test_registrable(self):
         self.assertEqual(referee.registrable("www.dell.com"), "dell.com")
         self.assertEqual(referee.registrable("support.d-imaging.sony.co.jp"), "sony.co.jp")

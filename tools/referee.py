@@ -187,6 +187,7 @@ class Staged:
     existing: str  # the <existing> block
     publisher_source: str = ""  # the source of an existing publisher file, fetched with the others
     machine_sources: list = field(default_factory=list)  # the publisher's machine_sources (URLs), for step 0 on a closed source
+    publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
 
 
 class Stager:
@@ -236,6 +237,7 @@ class Stager:
             existing = self._existing(case, files, findings)
             publisher_source = self._publisher_source(files)
             machine_sources = self._machine_sources(files)
+            publisher_urls = self._publisher_urls(files)
         finally:
             for path, content in saved.items():
                 if content is None:
@@ -245,7 +247,8 @@ class Stager:
                     path.parent.mkdir(parents=True, exist_ok=True)
                     path.write_bytes(content)
         return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen,
-                      existing=existing, publisher_source=publisher_source, machine_sources=machine_sources)
+                      existing=existing, publisher_source=publisher_source, machine_sources=machine_sources,
+                      publisher_urls=publisher_urls)
 
     def _publisher_file(self, files: dict) -> tuple[str, str]:
         """The existing publisher file of the proposed product, unless the proposal brings it."""
@@ -258,6 +261,30 @@ class Stager:
         if rel in files or not path.is_file():
             return "", ""
         return rel, path.read_text(encoding="utf-8")
+
+    def _publisher_urls(self, files: dict) -> list:
+        """The URLs in the publisher's file (proposed or existing) and in its other products in the data."""
+        _, data = product_file(files)
+        pub = data.get("publisher")
+        if not isinstance(pub, str) or not re.fullmatch(r"[a-z0-9-]+", pub):
+            return []
+        texts = [files[f"publishers/{pub}.yaml"]] if f"publishers/{pub}.yaml" in files else []
+        if not texts and (self.root / f"publishers/{pub}.yaml").is_file():
+            texts.append((self.root / f"publishers/{pub}.yaml").read_text(encoding="utf-8"))
+        texts += [p.read_text(encoding="utf-8") for p in sorted((self.root / "products" / pub).glob("*.yaml"))]
+        urls = []
+        for text in texts:
+            try:
+                urls += [u for u in urls_of({"x": text}) if u not in urls]
+            except yaml.YAMLError:
+                pass
+            try:
+                for e in (yaml.safe_load(text) or {}).get("machine_sources") or []:
+                    if isinstance(e, dict) and isinstance(e.get("url"), str) and e["url"] not in urls:
+                        urls.append(e["url"])
+            except (yaml.YAMLError, AttributeError):
+                pass
+        return urls
 
     def _machine_sources(self, files: dict) -> list:
         """The URLs in machine_sources of the publisher, proposed or existing (schema 1.2.0)."""
@@ -845,6 +872,8 @@ def metrics(results: list[Result]) -> dict:
         "let_through": [r.id for r in bad if r.outcome == "accept"],
         "good_rejected": [r.id for r in good if r.outcome in ("reject", "alias")],
         "human": [r.id for r in ran if r.outcome == "human"],
+        "human_closed": [r.id for r in ran if r.outcome == "human" and source_closed(r)],
+        "human_doubt": [r.id for r in ran if r.outcome == "human" and not source_closed(r)],
         "wrong": [r.id for r in ran if not r.right],
         "invalid": [r.id for r in results if r.by == "invalid"],
         "errors": [r.id for r in results if r.by == "error"],
@@ -858,6 +887,11 @@ def metrics(results: list[Result]) -> dict:
         "per_type": per_type,
         "r13": r13_metrics(results),
     }
+
+
+def source_closed(r: Result) -> bool:
+    """A source of the case was closed: refused, disallowed, an error such as a timeout, or not fetched."""
+    return any(status in CLOSED or status.startswith("error") or status == "not fetched" for _, status in r.sources)
 
 
 def r13_metrics(results: list[Result]) -> dict:
@@ -899,6 +933,8 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
         f"| bad cases let through (target 0) | {len(m['let_through'])} |",
         f"| good cases rejected | {len(m['good_rejected'])} |",
         f"| cases for a person (human) | {len(m['human'])} |",
+        f"| human because a source is closed (refused, disallowed, error) | {len(m['human_closed'])} |",
+        f"| human because the referee doubts | {len(m['human_doubt'])} |",
         f"| outcome in `expect` | {m['right']} of {m['ran']} |",
         f"| failed calls or unusable replies | {len(m['errors'])} |",
         f"| cases whose lint does not match | {len(m['invalid'])} |",
@@ -908,7 +944,8 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
         "",
         f"Let through: {ids(m['let_through'])}  ",
         f"Good rejected: {ids(m['good_rejected'])}  ",
-        f"Human: {ids(m['human'])}  ",
+        f"Human, a source closed: {ids(m['human_closed'])}  ",
+        f"Human, the referee doubts: {ids(m['human_doubt'])}  ",
         f"Not in `expect`: {ids(m['wrong'])}  ",
         f"Errors: {ids(m['errors'])}  ",
         f"Lint does not match: {ids(m['invalid'])}",
@@ -1063,19 +1100,21 @@ def registrable(host: str) -> str:
     return ".".join(labels[-2:])
 
 
+MAX_DOMAINS = 30
+
+
 def search_domains(refused: str, staged: "Staged") -> list[str]:
-    """The publisher's domains: of the refused URL, of the publisher's source and of the product's source."""
-    hosts = [refused, staged.publisher_source, product_file(staged.files)[1].get("source", "")]
-    for rel, text in staged.files.items():
-        if rel.startswith("publishers/"):
-            hosts.append((yaml.safe_load(text) or {}).get("source", ""))
+    """The publisher's domains (run A2 review §1, point 6): of the closed URL, of the product's
+    sources, and of every URL in the publisher's file and its other products in the data. Never
+    a search without domains: sites of others do not count under S5."""
+    hosts = [refused] + urls_of(staged.files) + list(staged.publisher_urls)
     out = []
     for h in hosts:
         if isinstance(h, str) and h.startswith(("http://", "https://")):
             d = registrable(urllib.parse.urlsplit(h).netloc)
             if d not in out:
                 out.append(d)
-    return out
+    return out[:MAX_DOMAINS]
 
 
 def search_urls(content) -> list[str]:
@@ -1126,6 +1165,11 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
             client = AnthropicClient()
         before = spent_before(out)
         budget = Budget(args.budget, before, args.model, prices, 2000)
+        groups: dict[tuple, list[str]] = {}
+        for url, want in wanted.items():
+            query = f'"{want["product"]}" {want["publisher"]}'.strip()
+            groups.setdefault((query, tuple(want["domains"])), []).append(url)
+        log(f"{len(groups)} distinct searches for {len(wanted)} sources, with {args.model}")
         log(f"budget: ${args.budget:.2f} for all runs in {out}; spent before: ${before:.4f}")
         stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
         run_dir = out / f"{stamp}-search-{args.model}"
@@ -1136,8 +1180,8 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
             with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
                 gh.write(f"run_dir={run_dir}\nrun_name={run_dir.name}\n")
         with (run_dir / "results.jsonl").open("w", encoding="utf-8") as jsonl:
-            for url, want in wanted.items():
-                query = f'"{want["product"]}" {want["publisher"]}'.strip()
+            for (query, domains), closed in groups.items():
+                want = wanted[closed[0]]
                 request = dict(
                     model=args.model,
                     messages=[{"role": "user", "content": SEARCH_PROMPT.format(query=query)}],
@@ -1149,17 +1193,20 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
                     request["max_tokens"] = budget.fit(client.count(request), web_allowance(args.model, prices, 1))
                     response = client.create(request)
                 except BudgetExhausted as exc:
-                    log(f"Stopped before searching for {url}: {exc}")
+                    log(f"Stopped before searching {query}: {exc}")
                     break
                 except Exception as exc:  # noqa: BLE001 - a failed search leaves the source refused
-                    log(f"search for {url} failed: {type(exc).__name__}")
+                    log(f"search {query} failed: {type(exc).__name__}")
                     continue
                 budget.add(response.usage)
-                urls = [u for u in search_urls(response.content) if u != url]
-                found[url] = {"product": want["product"], "query": query, "domains": want["domains"], "urls": urls}
+                urls = [u for u in search_urls(response.content) if u not in closed]
+                hit = {"product": want["product"], "query": query, "domains": want["domains"], "urls": urls}
+                for url in closed:
+                    found[url] = hit
                 cost_now = budget.spent - spent_at_start
-                jsonl.write(json.dumps({"id": "search", "url": url, **found[url], "usage": response.usage, "cost": cost_now}) + "\n")
-                log(f"{url}: {len(urls)} URLs on {', '.join(want['domains'])}, ${cost_now:.4f}; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+                jsonl.write(json.dumps({"id": "search", "for": closed, **hit, "usage": response.usage, "cost": cost_now}) + "\n")
+                log(f"{query}: {len(urls)} URLs on {', '.join(want['domains'])} for {len(closed)} closed sources, "
+                    f"${cost_now:.4f}; spent ${budget.spent:.4f} of ${args.budget:.2f}")
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(found, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return found
@@ -1202,7 +1249,7 @@ def parser() -> argparse.ArgumentParser:
     s.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
     s.add_argument("--cases", nargs="*")
     s.add_argument("--limit", type=int)
-    s.add_argument("--model", default="claude-opus-5-5")
+    s.add_argument("--model", default="claude-sonnet-5-5", help="it only returns URLs and judges nothing (run A2 review §1)")
     s.add_argument("--budget", type=float, default=20.00)
     s.add_argument("--prices", default=str(REFEREE / "prices.yaml"))
     s.add_argument("--out", default=str(REFEREE / "runs"))
