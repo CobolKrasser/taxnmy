@@ -73,6 +73,9 @@ R13_CASES = (
 )
 R13_RULES = ("S4", "S5", "S7", "S8")
 
+# The system prompt of conditions memory and web (R13), written by the analyst.
+R13_PROMPT = REFEREE / "prompt-r13.md"
+
 # What the sources block says in the conditions without fetched texts (referee/r13-research.md).
 NO_SOURCES = {
     "memory": "No source texts are given. Answer from what you know; give no quotes.",
@@ -595,9 +598,10 @@ def output_price(model: str, prices: dict) -> float:
     return prices["models"][model]["output"] / 1_000_000
 
 
-def web_allowance(model: str, prices: dict, max_uses: int) -> float:
-    """What web search may add to one request: the tool definition and the results as input, and the searches."""
-    return ((WEB_TOOL_OVERHEAD + max_uses * WEB_ALLOWANCE) * input_price(model, prices)
+def web_allowance(model: str, prices: dict, max_uses: int, fetches: int = 0) -> float:
+    """What the web tools may add to one request: the tool definitions, the search results and the
+    fetched pages as input, and the searches. A fetch has no fee of its own."""
+    return ((WEB_TOOL_OVERHEAD + (max_uses + fetches) * WEB_ALLOWANCE) * input_price(model, prices)
             + max_uses * prices["web_search_per_1000"] / 1000)
 
 
@@ -644,12 +648,17 @@ def review(client, budget: Budget, *, model: str, system: str, message: str, web
         output_config={"effort": effort, "format": {"type": "json_schema", "schema": schema}},
     )
     if web:
-        request["tools"] = [{"type": "web_search_20260209", "name": "web_search", "max_uses": max_uses}]
+        # Condition W of R13: web search, and web fetch to read the pages it finds and the URLs of the
+        # proposal (run A2 review §3). Fetched pages are capped, like the harness caps a source.
+        request["tools"] = [
+            {"type": "web_search_20260209", "name": "web_search", "max_uses": max_uses},
+            {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": max_uses, "max_content_tokens": WEB_ALLOWANCE},
+        ]
     usage = empty_usage()
     for _ in range(4):
-        # Token counting does not take server tools, so web search gets an allowance,
+        # Token counting does not take server tools, so the web tools get an allowance,
         # or twice the largest web request so far if that is more.
-        extra = max(web_allowance(model, budget.prices, max_uses), 2 * largest_web) if web else 0.0
+        extra = max(web_allowance(model, budget.prices, max_uses, max_uses), 2 * largest_web) if web else 0.0
         request["max_tokens"] = budget.fit(client.count(request), extra)
         response = client.create(request)
         for k in usage:
@@ -720,7 +729,14 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
     cases = select(load_cases(Path(args.testset)), args.cases, args.condition)
     if args.limit:
         cases = cases[: args.limit]
-    system = load_system_prompt(Path(args.prompt))
+    prompt = Path(args.prompt)
+    if args.condition != "fetched" and prompt == REFEREE / "prompt.md":
+        # R13: memory and web judge without fetched texts, so they get their own system prompt.
+        prompt = R13_PROMPT
+    if not prompt.is_file():
+        raise SystemExit(f"No prompt at {prompt}")
+    system = load_system_prompt(prompt)
+    log(f"prompt: {prompt}")
     schema = load_schema(Path(args.schema))
     prices = load_prices(Path(args.prices))
     if args.model not in prices["models"]:
@@ -765,7 +781,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
     (run_dir / "run.json").write_text(json.dumps({
         "condition": args.condition, "model": args.model, "effort": args.effort, "max_tokens": args.max_tokens,
         "max_uses": args.max_uses, "budget": args.budget, "spent_before": round(before, 6),
-        "cases": [c.id for c in cases], "testset": str(args.testset), "prompt": str(args.prompt), "started": stamp,
+        "cases": [c.id for c in cases], "testset": str(args.testset), "prompt": str(prompt), "started": stamp,
     }, indent=2) + "\n", encoding="utf-8")
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
