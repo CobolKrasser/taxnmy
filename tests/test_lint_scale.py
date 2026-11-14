@@ -53,7 +53,8 @@ class ScaleTest(unittest.TestCase):
         self.assertEqual(done.returncode, 0, done.stdout[-2000:] + done.stderr[-2000:])
         lines = done.stdout.splitlines()
         self.assertEqual(lines[-1], f"{NEW} changed files checked against {OLD + NEW + 1000}: 0 errors, {NEW // 100} signals")
-        reported = {line.split(":", 1)[0] for line in lines[:-1]}
+        reported = {line.split(":", 1)[0] for line in lines[:-1] if not line.startswith("::")}  # not the CI annotations
+        self.assertEqual(len(reported), NEW // 100)
         self.assertEqual(reported - self.changed, set(), "a signal on a file outside the pull request")
         self.assertLess(seconds, LIMIT)
 
