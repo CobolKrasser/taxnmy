@@ -88,7 +88,7 @@ so that the long texts are at the end.
 <existing>
 {the YAML of the publisher file, if the publisher already exists}
 {for each signal: the YAML of the existing product it points to}
-{the keys and names of all products of the same publisher, one per line}
+{the keys and names of the products of the same publisher that resemble the proposal on key or name, at most 20, one per line}
 {the keys of existing publishers that share a word with the proposed publisher key, one per line}
 </existing>
 

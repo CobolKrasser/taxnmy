@@ -38,9 +38,7 @@ import copy
 import json
 import os
 import re
-import shutil
 import sys
-import tempfile
 import urllib.parse
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
@@ -194,65 +192,54 @@ class Staged:
     publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
 
 
+MAX_EXISTING = 20  # <existing>: at most this many products of the same publisher
+
+
+def words_of(*texts: str) -> set:
+    """The words of keys and names, in lower case: what 'resembles' compares."""
+    return {w for t in texts for w in re.split(r"[^0-9a-z]+", t.casefold()) if len(w) >= 2}
+
+
+def resembles(a: set, b: set) -> int:
+    """How many words of a match a word of b: the same word, or one that begins with the other
+    (at least 3 letters), as a model name with a suffix does."""
+    return sum(any(x == y or (min(len(x), len(y)) >= 3 and (x.startswith(y) or y.startswith(x))) for y in b) for x in a)
+
+
 class Stager:
-    """A copy of products/ and publishers/; each case is staged on it and undone after."""
+    """The data, read once (lint.Dataset). Each case is staged on it in memory, without copying or
+    touching a file, and the lint compares only the files of the case with the rest (TAX-16)."""
 
     def __init__(self, data_root: Path = REPO):
         self.source = data_root
-        self.root = Path(tempfile.mkdtemp(prefix="taxnmy-referee-"))
-        for part in ("products", "publishers"):
-            shutil.copytree(data_root / part, self.root / part)
+        self.data = lint.Dataset(data_root, REPO / "schema", detailed=set())
 
     def close(self) -> None:
-        shutil.rmtree(self.root, ignore_errors=True)
+        pass
 
     def stage(self, case: Case) -> Staged:
-        saved: dict[Path, bytes | None] = {}
-
-        def put(rel: str, text: str | None) -> None:
-            path = self.root / rel
-            if path not in saved:
-                saved[path] = path.read_bytes() if path.exists() else None
-            if text is None:
-                if path.exists():
-                    path.unlink()
-            else:
-                path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text(text, encoding="utf-8")
-
         files = {}
         for rel in case.holdout:
-            src = self.source / rel
-            if not src.is_file():
+            text = self.data.texts.get(rel)
+            if text is None:
                 raise SystemExit(f"case {case.id}: hold-out {rel} is not in the data")
-            files[rel] = src.read_text(encoding="utf-8")
+            files[rel] = text
         files.update(case.proposal)
-        try:
-            for rel in case.holdout + case.hide:
-                put(rel, None)
-            for rel, text in case.context.items():
-                put(rel, text)
-            for rel, text in files.items():
-                put(rel, text)
-            findings = [f for f in lint.lint(self.root, REPO / "schema") if f.file in files]
-            seen = lint_summary(findings)
-            for rel in files:  # the proposal is not part of what exists
-                put(rel, None)
-            existing = self._existing(case, files, findings)
-            publisher_source = self._publisher_source(files)
-            machine_sources = self._machine_sources(files)
-            publisher_urls = self._publisher_urls(files)
-        finally:
-            for path, content in saved.items():
-                if content is None:
-                    if path.exists():
-                        path.unlink()
-                else:
-                    path.parent.mkdir(parents=True, exist_ok=True)
-                    path.write_bytes(content)
+        removed = {rel: None for rel in case.holdout + case.hide}
+        findings = self.data.check(report=set(files), overrides={**removed, **case.context, **files})
+        seen = lint_summary(findings)
+        self.view = {**removed, **case.context, **{rel: None for rel in files}}  # the proposal is not part of what exists
         return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen,
-                      existing=existing, publisher_source=publisher_source, machine_sources=machine_sources,
-                      publisher_urls=publisher_urls)
+                      existing=self._existing(case, files, findings), publisher_source=self._publisher_source(files),
+                      machine_sources=self._machine_sources(files), publisher_urls=self._publisher_urls(files))
+
+    def _text(self, rel: str) -> str | None:
+        return self.data.text(rel, self.view)
+
+    def _products_of(self, pub: str) -> list[str]:
+        prefix = f"products/{pub}/"
+        return [rel for rel in self.data.files("products", self.view)
+                if rel.startswith(prefix) and rel.endswith(".yaml") and "/" not in rel[len(prefix):]]
 
     def _publisher_file(self, files: dict) -> tuple[str, str]:
         """The existing publisher file of the proposed product, unless the proposal brings it."""
@@ -261,10 +248,10 @@ class Stager:
         if not isinstance(pub, str) or not re.fullmatch(r"[a-z0-9-]+", pub):
             return "", ""
         rel = f"publishers/{pub}.yaml"
-        path = self.root / rel
-        if rel in files or not path.is_file():
+        text = self._text(rel)
+        if rel in files or text is None:
             return "", ""
-        return rel, path.read_text(encoding="utf-8")
+        return rel, text
 
     def _publisher_urls(self, files: dict) -> list:
         """The URLs in the publisher's file (proposed or existing) and in its other products in the data."""
@@ -273,9 +260,9 @@ class Stager:
         if not isinstance(pub, str) or not re.fullmatch(r"[a-z0-9-]+", pub):
             return []
         texts = [files[f"publishers/{pub}.yaml"]] if f"publishers/{pub}.yaml" in files else []
-        if not texts and (self.root / f"publishers/{pub}.yaml").is_file():
-            texts.append((self.root / f"publishers/{pub}.yaml").read_text(encoding="utf-8"))
-        texts += [p.read_text(encoding="utf-8") for p in sorted((self.root / "products" / pub).glob("*.yaml"))]
+        if not texts and self._text(f"publishers/{pub}.yaml") is not None:
+            texts.append(self._text(f"publishers/{pub}.yaml"))
+        texts += [self._text(rel) for rel in self._products_of(pub)]
         urls = []
         for text in texts:
             try:
@@ -296,8 +283,8 @@ class Stager:
         rel = f"publishers/{data.get('publisher')}.yaml"
         if rel in files:
             text = files[rel]
-        elif re.fullmatch(r"publishers/[a-z0-9-]+\.yaml", rel) and (self.root / rel).is_file():
-            text = (self.root / rel).read_text(encoding="utf-8")
+        elif re.fullmatch(r"publishers/[a-z0-9-]+\.yaml", rel) and self._text(rel) is not None:
+            text = self._text(rel)
         else:
             return []
         try:
@@ -313,9 +300,17 @@ class Stager:
         source = (yaml.safe_load(text) or {}).get("source", "")
         return source if isinstance(source, str) and source.startswith(("http://", "https://")) else ""
 
+    def _record(self, rel: str) -> dict:
+        rec = self.data.records.get(rel)
+        if rec is not None and rel not in self.view:
+            return rec.data
+        data = yaml.safe_load(self._text(rel) or "")
+        return data if isinstance(data, dict) else {}
+
     def _existing(self, case: Case, files: dict, findings: list) -> str:
-        """For each signal the existing product it points to; the products of the same publisher;
-        the publishers that share a word with the proposed publisher key."""
+        """For each signal the existing product it points to; the products of the same publisher that
+        resemble the proposal on key or name, at most MAX_EXISTING; the publishers that share a word
+        with the proposed publisher key."""
         parts, shown = [], set()
         rel, text = self._publisher_file(files)
         if rel:
@@ -324,19 +319,27 @@ class Stager:
             if f.level != "signal":
                 continue
             for rel in re.findall(r"products/[a-z0-9-]+/[a-z0-9-]+\.yaml", f.message):
-                path = self.root / rel
-                if rel not in shown and rel not in files and path.is_file():
+                text = self._text(rel)
+                if rel not in shown and rel not in files and text is not None:
                     shown.add(rel)
-                    parts.append(f"# {rel}\n{path.read_text(encoding='utf-8').rstrip()}")
+                    parts.append(f"# {rel}\n{text.rstrip()}")
+        proposed = product_file(files)[1]
+        own = words_of(str(proposed.get("key", "")).split("/")[-1], str(proposed.get("name", "")))
         publishers = sorted({_publisher_of(rel, text) for rel, text in files.items() if rel.startswith("products/")} - {""})
         for pub in publishers:
-            lines = []
-            for path in sorted((self.root / "products" / pub).glob("*.yaml")):
-                data = yaml.safe_load(path.read_text(encoding="utf-8"))
-                lines.append(f"{data['key']}: {data['name']}")
-            parts.append(f"# products of publisher {pub}\n" + ("\n".join(lines) if lines else "none"))
+            scored = []
+            for rel in self._products_of(pub):
+                data = self._record(rel)
+                key, name = str(data.get("key", "")), str(data.get("name", ""))
+                score = resembles(own, words_of(key.split("/")[-1], name))
+                if score:
+                    scored.append((-score, key, name))
+            lines = [f"{key}: {name}" for _, key, name in sorted(scored)[:MAX_EXISTING]]
+            parts.append(f"# products of publisher {pub} that resemble the proposal (at most {MAX_EXISTING})\n"
+                         + ("\n".join(lines) if lines else "none"))
             words = set(pub.split("-"))
-            near = sorted(p.stem for p in (self.root / "publishers").glob("*.yaml") if p.stem != pub and words & set(p.stem.split("-")))
+            near = sorted(Path(r).stem for r in self.data.files("publishers", self.view)
+                          if r.count("/") == 1 and Path(r).stem != pub and words & set(Path(r).stem.split("-")))
             parts.append(f"# publishers that share a word with {pub}\n" + ("\n".join(near) if near else "none"))
         return "\n\n".join(parts)
 

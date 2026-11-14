@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Lint the TAXNMY data: the writing rule and referee rules S1-S3.
 
-Usage: python tools/lint.py [ROOT]
+Usage: python tools/lint.py [ROOT] [--changed FILE]
 
 ROOT is the directory that holds products/, publishers/ and schema/
-(default: the repository this script is in). Prints one line per finding:
+(default: the repository this script is in). With --changed, FILE lists
+the changed paths (one per line, relative to ROOT; - for stdin): the lint
+then reports only on those files, compared with the whole dataset, so a
+pull request sees only what its own files cause. Prints one line per finding:
 
     <file>:<line>: <rule>: <message>
 
@@ -14,6 +17,7 @@ No network, no AI, no keys.
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import sys
@@ -27,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import keyrule  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
+LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)  # libyaml when it is there: the same result, faster
 
 
 @dataclass(frozen=True)
@@ -70,11 +75,15 @@ def _line_map(node, path=(), out=None) -> dict:
 
 
 def load(path: Path, root: Path, findings: list) -> Record | None:
-    rel = path.relative_to(root).as_posix()
-    text = path.read_text(encoding="utf-8")
+    return parse(path.relative_to(root).as_posix(), path.read_text(encoding="utf-8"), findings)
+
+
+def parse(rel: str, text: str, findings: list, lines: bool = True) -> Record | None:
+    """A record from the text of a file. Without `lines` no line numbers are kept: for a file whose
+    findings are not reported, which is then read in one pass."""
     try:
-        node = yaml.compose(text)
-        data = yaml.safe_load(text)
+        node = yaml.compose(text, Loader=LOADER) if lines else None
+        data = yaml.load(text, Loader=LOADER)
     except yaml.YAMLError as exc:
         mark = getattr(exc, "problem_mark", None)
         findings.append(Finding(rel, mark.line + 1 if mark else 1, "S1", f"not valid YAML: {exc}"))
@@ -82,7 +91,7 @@ def load(path: Path, root: Path, findings: list) -> Record | None:
     if not isinstance(data, dict):
         findings.append(Finding(rel, 1, "S1", "the file must hold a mapping of fields"))
         return None
-    return Record(rel, data, _line_map(node))
+    return Record(rel, data, _line_map(node) if node is not None else {})
 
 
 def check_schema(rec: Record, validator, findings: list) -> bool:
@@ -157,8 +166,18 @@ def _norm_gtin(gtin: str) -> str:
     return gtin.zfill(14)
 
 
-def check_unique(records: list, kind: str, findings: list) -> None:
-    """S3: no match on key or alias; purl duplicates; CPE and GTIN signals."""
+def check_unique(records: list, kind: str, findings: list, report: set | None = None) -> None:
+    """S3: no match on key or alias; purl duplicates; CPE and GTIN signals. Every record is compared;
+    findings are made only for the files in `report` (None: all files)."""
+    if report is not None:
+        kept: list = []
+        check_unique_all(records, kind, kept, lambda rec: rec.file in report)
+        findings += kept
+        return
+    check_unique_all(records, kind, findings, lambda rec: True)
+
+
+def check_unique_all(records: list, kind: str, findings: list, wanted) -> None:
     names: dict[str, list] = {}
     for rec in records:
         names.setdefault(rec.data["key"], []).append((rec, ("key",), "key"))
@@ -168,6 +187,8 @@ def check_unique(records: list, kind: str, findings: list) -> None:
         if len({h[0].file for h in hits}) < 2:
             continue
         for rec, path, what in hits:
+            if not wanted(rec):
+                continue
             others = sorted({h[0].file for h in hits if h[0].file != rec.file})
             findings.append(Finding(rec.file, rec.line(*path), "S3", f"{what} {value!r} is already used as key or alias by {', '.join(others)}"))
 
@@ -187,6 +208,8 @@ def check_unique(records: list, kind: str, findings: list) -> None:
             continue
         for value, hits in sorted(group.items()):
             for rec, path, what in hits:
+                if not wanted(rec):
+                    continue
                 others = sorted(
                     f"{other!r} ({h[0].file})"
                     for other, other_hits in group.items() if other != value
@@ -209,6 +232,8 @@ def check_unique(records: list, kind: str, findings: list) -> None:
             continue
         duplicate = field in ("winget", "homebrew") or (field == "purl" and not value.startswith("pkg:generic/"))
         for rec, path in hits:
+            if not wanted(rec):
+                continue
             others = ", ".join(sorted({h[0].file for h in hits if h[0].file != rec.file}))
             if duplicate:
                 findings.append(Finding(rec.file, rec.line(*path), "S3", f"{field} {value!r} already belongs to {others}; this is a duplicate"))
@@ -216,41 +241,106 @@ def check_unique(records: list, kind: str, findings: list) -> None:
                 findings.append(Finding(rec.file, rec.line(*path), "S3", f"{field} {value!r} also appears in {others}; the referee checks with S4 whether this is a product of its own", "signal"))
 
 
-def lint(root: Path, schema_dir: Path | None = None) -> list[Finding]:
-    root = root.resolve()
-    schema_dir = schema_dir or (root / "schema")
-    validators = {
+def validators_for(schema_dir: Path) -> dict:
+    return {
         kind: jsonschema.Draft202012Validator(json.loads((schema_dir / f"{kind}.schema.json").read_text(encoding="utf-8")))
         for kind in ("product", "publisher")
     }
-    findings: list[Finding] = []
 
-    publishers = []
-    for path in sorted((root / "publishers").glob("**/*")):
-        if path.is_file():
-            rec = load(path, root, findings)
-            if rec and check_schema(rec, validators["publisher"], findings):
+
+def kind_of(rel: str) -> str | None:
+    if rel.startswith("publishers/"):
+        return "publisher"
+    if rel.startswith("products/"):
+        return "product"
+    return None
+
+
+class Dataset:
+    """Every file of a data root, read once. `check` then lints chosen files against all the others,
+    with files added, changed or taken out (`overrides`) without touching the disk. This is what lets
+    a pull request with thousands of files, and a harness with many cases, lint the dataset once."""
+
+    def __init__(self, root: Path, schema_dir: Path | None = None, detailed: set | None = None):
+        """`detailed`: the files whose findings may be reported, read with line numbers (None: all)."""
+        self.root = root.resolve()
+        self.validators = validators_for(schema_dir or (self.root / "schema"))
+        self.texts: dict[str, str] = {}
+        self.records: dict[str, Record] = {}  # the files that pass the schema
+        self.own: dict[str, list] = {}  # findings of reading a file and of the schema, per file
+        for part in ("publishers", "products"):
+            for path in sorted((self.root / part).glob("**/*")):
+                if path.is_file():
+                    rel = path.relative_to(self.root).as_posix()
+                    self.texts[rel] = path.read_text(encoding="utf-8")
+                    self._read(rel, self.texts[rel], detailed is None or rel in detailed, self.records, self.own)
+
+    def _read(self, rel: str, text: str, lines: bool, records: dict, own: dict) -> None:
+        found: list = []
+        rec = parse(rel, text, found, lines)
+        if rec and check_schema(rec, self.validators[kind_of(rel)], found):
+            records[rel] = rec
+        own[rel] = found
+
+    def files(self, part: str, overrides: dict | None = None) -> list[str]:
+        """The files under products/ or publishers/, with the overrides applied."""
+        overrides = overrides or {}
+        out = {rel for rel in self.texts if rel.startswith(part + "/") and rel not in overrides}
+        out |= {rel for rel, text in overrides.items() if text is not None and rel.startswith(part + "/")}
+        return sorted(out)
+
+    def text(self, rel: str, overrides: dict | None = None) -> str | None:
+        overrides = overrides or {}
+        return overrides[rel] if rel in overrides else self.texts.get(rel)
+
+    def check(self, report: set | None = None, overrides: dict | None = None) -> list[Finding]:
+        """The findings on the files in `report` (None: all files), against the whole dataset with
+        `overrides` (path -> text, or None to take a file out) applied."""
+        overrides = overrides or {}
+        records, own = dict(self.records), dict(self.own)
+        for rel in overrides:
+            records.pop(rel, None)
+            own.pop(rel, None)
+        for rel, text in overrides.items():
+            if text is not None and kind_of(rel):
+                self._read(rel, text, True, records, own)
+        wanted = (lambda rel: True) if report is None else (lambda rel: rel in report)  # noqa: E731
+        findings = [f for rel, found in own.items() if wanted(rel) for f in found]
+        publishers = [rec for rel, rec in sorted(records.items()) if kind_of(rel) == "publisher"]
+        products = [rec for rel, rec in sorted(records.items()) if kind_of(rel) == "product"]
+        known = {rec.data["key"] for rec in publishers}
+        for rec in publishers:
+            if wanted(rec.file):
                 check_publisher(rec, findings)
-                publishers.append(rec)
-    known = {rec.data["key"] for rec in publishers}
-
-    products = []
-    for path in sorted((root / "products").glob("**/*")):
-        if path.is_file():
-            rec = load(path, root, findings)
-            if rec and check_schema(rec, validators["product"], findings):
+        for rec in products:
+            if wanted(rec.file):
                 check_product(rec, known, findings)
-                products.append(rec)
+        check_unique(publishers, "publisher", findings, report)
+        check_unique(products, "product", findings, report)
+        return sorted(findings, key=lambda f: (f.file, f.line, f.rule, f.message))
 
-    check_unique(publishers, "publisher", findings)
-    check_unique(products, "product", findings)
-    return sorted(findings, key=lambda f: (f.file, f.line, f.rule, f.message))
+
+def lint(root: Path, schema_dir: Path | None = None, changed: set | None = None) -> list[Finding]:
+    """The findings of the dataset in root. With `changed`, only those on the changed files."""
+    return Dataset(root, schema_dir, changed).check(changed)
+
+
+def read_changed(source: str, root: Path) -> set:
+    """The changed data files from a list of paths, relative to the root of the data."""
+    text = sys.stdin.read() if source == "-" else Path(source).read_text(encoding="utf-8")
+    return {line.strip() for line in text.splitlines()
+            if line.strip().startswith(("products/", "publishers/")) and (root / line.strip()).is_file()}
 
 
 def main(argv: list[str]) -> int:
-    root = Path(argv[1]) if len(argv) > 1 else REPO
+    p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    p.add_argument("root", nargs="?", default=str(REPO))
+    p.add_argument("--changed", help="a file listing the changed paths, one per line (- for stdin)")
+    args = p.parse_args(argv[1:])
+    root = Path(args.root)
     schema_dir = root / "schema" if (root / "schema").is_dir() else REPO / "schema"
-    findings = lint(root, schema_dir)
+    changed = read_changed(args.changed, root) if args.changed else None
+    findings = lint(root, schema_dir, changed)
     annotate = os.environ.get("GITHUB_ACTIONS") == "true"
     for f in findings:
         print(f)
@@ -260,7 +350,10 @@ def main(argv: list[str]) -> int:
     errors = sum(f.level == "error" for f in findings)
     signals = len(findings) - errors
     files = sum(1 for d in ("products", "publishers") for p in (root / d).glob("**/*") if p.is_file())
-    print(f"{files} files checked: {errors} errors, {signals} signals")
+    if changed is None:
+        print(f"{files} files checked: {errors} errors, {signals} signals")
+    else:
+        print(f"{len(changed)} changed files checked against {files}: {errors} errors, {signals} signals")
     return 1 if errors else 0
 
 

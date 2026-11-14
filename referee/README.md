@@ -147,7 +147,8 @@ python tools/referee.py compare referee/runs/<a> referee/runs/<b> referee/runs/<
 
 For each case it:
 
-1. stages the case on a copy of `products/` and `publishers/` and runs the lint. A case whose lint
+1. stages the case on the data, read once per run and changed in memory only, and runs the lint on
+   the files of the case, compared with the whole dataset (TAX-16). A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
    stops there, with outcome *reject*;
 2. reads the distinct `source` URLs of the proposal, and the source of the publisher file, with
@@ -156,7 +157,8 @@ For each case it:
    there: outcome *reject* on S7, by code;
 3. fills in the user message of `prompt.md`. The publisher file always comes along: in
    `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
-   existing product of each signal, the products of the same publisher, and the publishers that
+   existing product of each signal, the products of the same publisher that resemble the proposal (a word of
+   the key or name in common, or one that begins with the other; at most 20), and the publishers that
    share a word with the proposed publisher key;
 4. makes one call, with structured output against `verdict.schema.json`;
 5. checks the quotes (condition *fetched* only): a *yes* whose quote is not found in the fetched
