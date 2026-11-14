@@ -686,22 +686,26 @@ class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
-        self.assertEqual(len(cases), 60)
-        stager = referee.Stager(REPO)
-        self.addCleanup(stager.close)
+        self.assertEqual(len(self.cases), 60)
         mismatched = {}
-        for case in cases:
-            staged = stager.stage(case)
+        for case in self.cases:
+            staged = self.staged[case.id]
             if not staged.lint_ok:
                 mismatched[case.id] = (case.lint, staged.lint_seen)
         self.assertEqual(mismatched, {})
 
-    def gate_rows(self):
-        cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
+    @classmethod
+    def setUpClass(cls):
+        """The real test set staged once: staging copies and lints the whole dataset per case."""
+        cls.cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
         stager = referee.Stager(REPO)
-        self.addCleanup(stager.close)
-        return {c.id: referee.gate_row(c, stager.stage(c), None) for c in cases}
+        try:
+            cls.staged = {c.id: stager.stage(c) for c in cls.cases}
+        finally:
+            stager.close()
+
+    def gate_rows(self):
+        return {c.id: referee.gate_row(c, self.staged[c.id], None) for c in self.cases}
 
     def test_b06_is_rejected_by_code_on_s8(self):
         row = self.gate_rows()["B06"]
