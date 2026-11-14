@@ -24,7 +24,8 @@ one readable key (publisher/product) and links it to the codes others use for it
 
 A contributor has proposed a product. Code has already checked that the fields are filled, that the
 key follows the writing rule, and that the key is new. You judge five rules, using only the source
-texts you are given. You do not use your own memory as evidence.
+texts you are given. You do not use your own memory as evidence. When code has already settled
+some of them, the message says so in a <decided> block; you then judge only the rules it leaves.
 
 Definitions
 - A product is something that can receive updates, and of which a source publishes the versions:
@@ -68,6 +69,8 @@ How to answer
 - A source marked instead-of was found on the publisher's own site because the source it names
   refused to be read. It may confirm the values of that refused source, if its text shows them.
 - Judge only what is asked. Do not suggest improvements.
+- A <decided> block lists the rules code settled, with its reason, and ends with "Judge only:"
+  and the rules left for you. Answer only those; your answer has no field for the others.
 ```
 
 ## User message
@@ -85,6 +88,11 @@ so that the long texts are at the end.
 {the S3 signals of the lint for this proposal, one per line; or "none"}
 </signals>
 
+<decided>
+{for each rule the gate settled: the rule, its verdict and the reason of code, one per line}
+Judge only: {the rules left for the referee}
+</decided>
+
 <existing>
 {the YAML of the publisher file, if the publisher already exists}
 {for each signal: the YAML of the existing product it points to}
@@ -99,6 +107,9 @@ so that the long texts are at the end.
 … one block per distinct URL in the proposal, and for the source of the publisher file …
 </sources>
 ```
+
+The `<decided>` block is there only when the gate (`tools/gate.py`) settled a rule; see
+`referee/README.md` § The gate. The schema of the answer then holds only the rules left.
 
 The publisher file always comes along, so that S5 and S6 can be judged against the publisher's own
 source: in `<proposal>` when the publisher is new, otherwise first in `<existing>`. Its source is
@@ -145,7 +156,10 @@ Code computes the outcome from the answer:
 | no rule is "no", and at least one is "doubt" | **human** |
 | all rules are "yes" | **accept** |
 
-Before the outcome is computed, code checks every quote: it must appear in the fetched text of its
+The rules the gate settled count as the gate settled them. A *no* of the gate (a source on an AI
+chat) rejects the proposal before the referee is called.
+
+Before the outcome is computed, code checks every quote of the referee: it must appear in the fetched text of its
 URL, ignoring whitespace and case. A "yes" with a quote that is not found becomes "doubt". This is
 the code part of S8, and the check that the referee does not quote from memory.
 

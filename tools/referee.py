@@ -50,6 +50,7 @@ import jsonschema
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import gate  # noqa: E402
 import lint  # noqa: E402
 from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of the harness API
     MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, html_to_text, page_text, pdf_to_text,
@@ -192,6 +193,11 @@ class Staged:
     publisher_source: str = ""  # the source of an existing publisher file, fetched with the others
     machine_sources: list = field(default_factory=list)  # the publisher's machine_sources (URLs), for step 0 on a closed source
     publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
+    publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for S5 and S6
+
+    @property
+    def product(self) -> dict:
+        return product_file(self.files)[1]
 
 
 class Stager:
@@ -242,6 +248,7 @@ class Stager:
             publisher_source = self._publisher_source(files)
             machine_sources = self._machine_sources(files)
             publisher_urls = self._publisher_urls(files)
+            publisher = self._publisher_data(files)
         finally:
             for path, content in saved.items():
                 if content is None:
@@ -252,7 +259,7 @@ class Stager:
                     path.write_bytes(content)
         return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen,
                       existing=existing, publisher_source=publisher_source, machine_sources=machine_sources,
-                      publisher_urls=publisher_urls)
+                      publisher_urls=publisher_urls, publisher=publisher)
 
     def _publisher_file(self, files: dict) -> tuple[str, str]:
         """The existing publisher file of the proposed product, unless the proposal brings it."""
@@ -265,6 +272,19 @@ class Stager:
         if rel in files or not path.is_file():
             return "", ""
         return rel, path.read_text(encoding="utf-8")
+
+    def _publisher_data(self, files: dict) -> dict:
+        """The publisher file of the proposed product: proposed with it, or existing in the data."""
+        pub = product_file(files)[1].get("publisher")
+        if not isinstance(pub, str) or not re.fullmatch(r"[a-z0-9-]+", pub):
+            return {}
+        rel = f"publishers/{pub}.yaml"
+        text = files.get(rel) or ((self.root / rel).read_text(encoding="utf-8") if (self.root / rel).is_file() else "")
+        try:
+            data = yaml.safe_load(text) if text else {}
+        except yaml.YAMLError:
+            return {}
+        return data if isinstance(data, dict) else {}
 
     def _publisher_urls(self, files: dict) -> list:
         """The URLs in the publisher's file (proposed or existing) and in its other products in the data."""
@@ -425,17 +445,23 @@ def load_system_prompt(path: Path) -> str:
     return m.group(1).rstrip() + "\n"
 
 
-def build_message(staged: Staged, condition: str, sources: list[Source]) -> str:
-    """The user message, in the order of referee/prompt.md § User message."""
+def build_message(staged: Staged, condition: str, sources: list[Source], decided: dict | None = None) -> str:
+    """The user message, in the order of referee/prompt.md § User message. `decided` holds the
+    rules the gate settled; the message then says which rules are left for the referee."""
     proposal = "\n".join(f"# {rel}\n{text.rstrip()}" for rel, text in staged.files.items())
     signals = "\n".join(f"{f.rule}: {f.message}" for f in staged.findings if f.level == "signal") or "none"
+    gate_block = ""
+    if decided:
+        lines = [f"{r}: {j['verdict']} ({j['reason']})" for r, j in sorted(decided.items())]
+        lines.append("Judge only: " + ", ".join(r for r in RULES if r not in decided))
+        gate_block = "<decided>\n" + "\n".join(lines) + "\n</decided>\n\n"
     if condition == "fetched":
         blocks = [f'<source url="{s.url}" status="{s.status}"'
                   + (f' instead-of="{s.instead_of}"' if s.instead_of else "") + f'>\n{s.text}\n</source>' for s in sources]
         body = "\n".join(blocks) if blocks else "none"
     else:
         body = NO_SOURCES[condition]
-    return (f"<proposal>\n{proposal}\n</proposal>\n\n<signals>\n{signals}\n</signals>\n\n"
+    return (f"<proposal>\n{proposal}\n</proposal>\n\n<signals>\n{signals}\n</signals>\n\n{gate_block}"
             f"<existing>\n{staged.existing or 'none'}\n</existing>\n\n<sources>\n{body}\n</sources>\n")
 
 
@@ -463,6 +489,16 @@ def api_schema(schema: dict) -> dict:
     return walk(schema)
 
 
+def schema_for(schema: dict, rules) -> dict:
+    """The verdict schema with only the rules the referee is asked; the others the gate settled."""
+    out = copy.deepcopy(schema)
+    drop = [r for r in RULES if r not in rules]
+    for r in drop:
+        out["properties"].pop(r, None)
+    out["required"] = [k for k in out["required"] if k not in drop]
+    return out
+
+
 # --------------------------------------------------------------------------- the outcome (referee/prompt.md § Outcome)
 
 def _norm(text: str) -> str:
@@ -479,12 +515,13 @@ def product_gone(files: dict, sources: list[Source]) -> str:
     return ""
 
 
-def check_quotes(verdict: dict, sources: list[Source]) -> tuple[dict, list[str]]:
+def check_quotes(verdict: dict, sources: list[Source], rules=RULES) -> tuple[dict, list[str]]:
     """A yes whose quotes are not all found in the fetched text of their URL becomes doubt.
-    A yes without any quote becomes doubt too. Returns the checked verdict and what changed."""
+    A yes without any quote becomes doubt too. Returns the checked verdict and what changed.
+    Only `rules` are checked: those the referee answered, not those the gate settled."""
     texts = {s.url: _norm(s.text) for s in sources}
     checked, notes = copy.deepcopy(verdict), []
-    for rule in RULES:
+    for rule in rules:
         j = checked[rule]
         if j["verdict"] != "yes":
             continue
@@ -695,6 +732,8 @@ class Result:
     error: str = ""
     usage: dict = field(default_factory=dict)
     cost: float = 0.0
+    gate: dict = field(default_factory=dict)  # rule -> verdict, for the rules the gate settled (tools/gate.py)
+    ai_rules: list = field(default_factory=list)  # the rules the referee was asked
 
 
 def spent_before(out: Path) -> float:
@@ -748,6 +787,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
     out = Path(args.out)
     before = spent_before(out)
 
+    use_gate = args.condition == "fetched"  # R13 measures the AI alone, so memory and web have no gate
     stager = Stager(data_root)
     try:
         staged = {c.id: stager.stage(c) for c in cases}
@@ -765,8 +805,27 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                           + (len(urls_of(staged[c.id].files)) * SOURCE_CHARS if args.condition == "fetched" else 0),
                           args.model, prices, web, args.max_uses, args.max_tokens) for c in to_ai)
         log(f"most this run could cost: ${top:.2f} (a ceiling, not an estimate)")
+        dry_dir = None
+        if args.condition == "fetched":
+            stored = None
+            if getattr(args, "sources", None):
+                stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
+                log(f"sources: {args.sources} ({len(stored.cache)} URLs, fetched by an earlier step)")
+            else:
+                log("No --sources: the gate reads no source texts, so S6 and S8 go to the referee.")
+            replay = {}
+            if getattr(args, "replay", None):
+                replay = {r.id: r for r in load_results(Path(args.replay))}
+                log(f"replay: the answers of {args.replay}, with the gate in front")
+            rows = [gate_row(c, staged[c.id], stored, replay.get(c.id)) for c in cases]
+            stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
+            dry_dir = out / f"{stamp}-dry-{args.condition}"
+            dry_dir.mkdir(parents=True, exist_ok=False)
+            text = gate_summary(rows, dry_dir.name, args.sources if stored else "", getattr(args, "replay", "") or "")
+            (dry_dir / "summary.md").write_text(text, encoding="utf-8")
+            log(text)
         log("Dry run: nothing was sent. Add --live to call the API.")
-        return [], None
+        return [], dry_dir
     if client is None:
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("A live run needs ANTHROPIC_API_KEY")
@@ -803,6 +862,10 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 res.by, res.error = "invalid", f"the lint gives {st.lint_seen}, the case says {case.lint}"
             elif st.lint_seen.startswith("error"):
                 res.by, res.outcome, res.rule = "code", "reject", st.lint_seen.split()[1]
+            elif use_gate and gate.ai_chat(st.product, st.publisher):
+                # A source on the domain of an AI chat: rejected on S8 by code, and nothing is fetched.
+                chat = gate.ai_chat(st.product, st.publisher)
+                res.by, res.outcome, res.rule, res.error, res.gate = "code", "reject", "S8", chat["reason"], {"S8": "no"}
             else:
                 sources = gather_sources(fetcher, st) if args.condition == "fetched" else []
                 for s in sources:
@@ -818,11 +881,15 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
                     jsonl.flush()
                     continue
+                decided = gate.decide(st.product, st.publisher, sources) if use_gate else {}
+                res.gate = {r: j["verdict"] for r, j in decided.items()}
+                res.ai_rules = [r for r in RULES if r not in decided]
                 spent_at_start = budget.spent
                 try:
                     text, stop, usage = review(client, budget, model=args.model, system=system,
-                                               message=build_message(st, args.condition, sources), web=web,
-                                               effort=args.effort, max_uses=args.max_uses, schema=api, largest_web=largest_web)
+                                               message=build_message(st, args.condition, sources, decided), web=web,
+                                               effort=args.effort, max_uses=args.max_uses,
+                                               schema=schema_for(api, res.ai_rules), largest_web=largest_web)
                 except BudgetExhausted as exc:
                     res.cost = budget.spent - spent_at_start  # a resumed request may have run before the stop
                     if res.cost:
@@ -840,13 +907,16 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     res.usage, res.cost = usage, budget.spent - spent_at_start
                     if web:
                         largest_web = max(largest_web, res.cost)
-                    verdict, why = parse_reply(text, schema) if stop != "refusal" else (None, "the model refused")
+                    verdict, why = (parse_reply(text, schema_for(schema, res.ai_rules)) if stop != "refusal"
+                                    else (None, "the model refused"))
                     if verdict is None:
                         res.by, res.outcome, res.error = "error", "human", why
                     else:
                         res.by, res.verdict, res.duplicate_of = "ai", verdict, verdict.get("duplicate_of")
                         # The quote check is the code part of S8; R13 switches it off in memory and web.
-                        checked, res.quote_notes = check_quotes(verdict, sources) if args.condition == "fetched" else (verdict, [])
+                        checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules) if args.condition == "fetched"
+                                                    else (verdict, []))
+                        checked = {**checked, **decided}  # the rules the gate settled, as the gate settled them
                         res.checked = {r: checked[r]["verdict"] for r in RULES}
                         res.outcome, res.rule = outcome(checked)
             res.right = res.outcome in case.expect
@@ -944,7 +1014,7 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
     lines = [
         f"# Referee run {name}",
         "",
-        f"Condition **{condition}**. {m['cases']} cases: {m['by_code']} stopped by the lint, {m['calls']} sent to the referee.",
+        f"Condition **{condition}**. {m['cases']} cases: {m['by_code']} stopped by code (lint, 404 or the gate), {m['calls']} sent to the referee.",
         "",
         *([f"**{stopped}**", ""] if stopped else []),
         "| measure | value |",
@@ -992,10 +1062,142 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
         f"Confident and wrong: {ids(m['r13']['confident_wrong'])}",
         "",
     ]
+    if any(r.gate or r.ai_rules for r in results):
+        lines += gate_table([GateRow(id=r.id, expect=r.expect, gate=r.gate, ai_rules=r.ai_rules,
+                                     settled="stopped" if r.by == "invalid" or (r.by == "code" and not r.gate) else "")
+                             for r in results])
     t = m["tokens"]
     lines += [f"Tokens: {t['input_tokens']} input, {t['cache_creation_input_tokens']} cache write, "
               f"{t['cache_read_input_tokens']} cache read, {t['output_tokens']} output; {t['web_search_requests']} web searches, "
               f"{t.get('web_fetch_requests', 0)} web fetches.", ""]
+    return "\n".join(lines)
+
+
+# --------------------------------------------------------------------------- the gate in a dry run (tools/gate.py)
+
+@dataclass
+class GateRow:
+    id: str
+    expect: list
+    settled: str = ""  # what stopped the case before the gate: a lint error, a lint mismatch or a 404
+    gate: dict = field(default_factory=dict)  # rule -> verdict, for the rules code settled
+    ai_rules: list = field(default_factory=list)  # the rules left for the referee
+    before: str = ""  # replay: the outcome in the earlier run
+    after: str = ""  # replay: the outcome with the gate in front of the same answers
+
+
+def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> GateRow:
+    """What the gate settles for one case, without calling anything. `stored` gives the source
+    texts of an earlier fetch, or is None. `replayed` is the result of the case in an earlier run:
+    its answers are combined with the gate, to see what the gate would have changed."""
+    row = GateRow(id=case.id, expect=case.expect)
+    if replayed is not None:
+        row.before = row.after = replayed.outcome
+    if not st.lint_ok:
+        row.settled = "lint does not match"
+        return row
+    if st.lint_seen.startswith("error"):
+        row.settled = f"lint {st.lint_seen.split()[1]}"
+        return row
+    sources = gather_sources(stored, st) if stored is not None else None
+    if sources is not None and product_gone(st.files, sources):
+        row.settled = "S7 404"
+        return row
+    decided = gate.decide(st.product, st.publisher, sources)
+    row.gate = {r: j["verdict"] for r, j in decided.items()}
+    no = [r for r, v in row.gate.items() if v == "no"]
+    row.ai_rules = [] if no else [r for r in RULES if r not in decided]
+    if replayed is not None:
+        if no:
+            row.after = "reject"
+        elif replayed.by == "ai" and replayed.checked:
+            merged = {r: {"verdict": replayed.checked[r]} for r in RULES}
+            merged.update({r: {"verdict": v} for r, v in row.gate.items()})
+            row.after = outcome({**merged, "duplicate_of": replayed.duplicate_of})[0]
+        else:
+            row.after = replayed.outcome
+    return row
+
+
+def gate_counts(rows: list) -> dict:
+    """For the cases that reach the gate: of their S5, S6 and S8 judgments, how many code settled,
+    how many were not needed because code rejected the case, and how many go to the referee."""
+    at = [r for r in rows if not r.settled]
+    per_rule = {rule: {"yes": 0, "no": 0, "ai": 0, "moot": 0} for rule in gate.GATE_RULES}
+    for r in at:
+        rejected = "no" in r.gate.values()
+        for rule in gate.GATE_RULES:
+            if rule in r.gate:
+                per_rule[rule][r.gate[rule]] += 1
+            elif rejected:
+                per_rule[rule]["moot"] += 1
+            else:
+                per_rule[rule]["ai"] += 1
+    total = len(at) * len(gate.GATE_RULES)
+    code = sum(v["yes"] + v["no"] for v in per_rule.values())
+    moot = sum(v["moot"] for v in per_rule.values())
+    return {"cases": len(rows), "at_gate": len(at), "judgments": total, "code": code, "moot": moot,
+            "ai": total - code - moot, "per_rule": per_rule}
+
+
+def _pct(n: int, total: int) -> str:
+    return f"{100 * n / total:.0f}%" if total else "-"
+
+
+def gate_table(rows: list) -> list[str]:
+    c = gate_counts(rows)
+    lines = [
+        "## The gate: S5, S6 and S8 by code, before the referee",
+        "",
+        "| measure | value |",
+        "| --- | --- |",
+        f"| cases | {c['cases']} |",
+        f"| stopped before the gate (lint error, lint mismatch, product source 404) | {c['cases'] - c['at_gate']} |",
+        f"| cases at the gate | {c['at_gate']} |",
+        f"| S5, S6 and S8 judgments of those cases | {c['judgments']} |",
+        f"| settled by code | {c['code']} ({_pct(c['code'], c['judgments'])}) |",
+        f"| not needed, because code rejected the case | {c['moot']} |",
+        f"| left for the referee | {c['ai']} ({_pct(c['ai'], c['judgments'])}) |",
+        "",
+        "| rule | code: yes | code: no | not needed | referee |",
+        "| --- | --- | --- | --- | --- |",
+        *[f"| {rule} | {v['yes']} | {v['no']} | {v['moot']} | {v['ai']} |" for rule, v in c["per_rule"].items()],
+        "",
+    ]
+    return lines
+
+
+def gate_summary(rows: list[GateRow], name: str, sources: str = "", replay: str = "") -> str:
+    lines = [f"# Dry run {name}", "",
+             "Nothing was sent to the API. The gate (`tools/gate.py`) settles what code can; the rest is what a live run "
+             "would ask the referee.", "",
+             f"Source texts: {sources or 'none, so S6 and S8 (apart from an AI chat) are left for the referee'}.", ""]
+    lines += gate_table(rows)
+    replayed = [r for r in rows if r.before]
+    head = "| case | stopped before | S5 | S6 | S8 | referee judges |"
+    sep = "| --- | --- | --- | --- | --- | --- |"
+    if replay:
+        head += " outcome in the replayed run | with the gate |"
+        sep += " --- | --- |"
+    lines += ["## Per case", "", head, sep]
+    for r in rows:
+        cells = [r.id, r.settled or "-", *[r.gate.get(rule, "referee" if not r.settled and rule in r.ai_rules else "-")
+                                          for rule in gate.GATE_RULES], ", ".join(r.ai_rules) or "-"]
+        if replay:
+            cells += [r.before or "-", r.after or "-"]
+        lines.append("| " + " | ".join(cells) + " |")
+    lines.append("")
+    if replay:
+        let = lambda key: [r.id for r in replayed if r.id.startswith("B") and getattr(r, key) == "accept"]  # noqa: E731
+        changed = [f"{r.id} {r.before} → {r.after}" for r in replayed if r.before != r.after]
+        lines += [f"## Replay of {replay}", "",
+                  "The answers of that run, with the verdicts of the gate in place of the referee's for the rules code settled.", "",
+                  "| measure | the run | with the gate |", "| --- | --- | --- |",
+                  f"| bad cases let through | {len(let('before'))} | {len(let('after'))} |",
+                  f"| outcome in `expect` | {sum(r.before in r.expect for r in replayed)} of {len(replayed)} | "
+                  f"{sum(r.after in r.expect for r in replayed)} of {len(replayed)} |", "",
+                  f"Let through with the gate: {', '.join(let('after')) or 'none'}  ",
+                  f"Outcome changed: {', '.join(changed) or 'none'}", ""]
     return "\n".join(lines)
 
 
@@ -1131,12 +1333,7 @@ SEARCH_RESULTS = 5  # URLs kept per search
 CLOSED = ("refused", "disallowed")  # a source step 4 searches another open source for
 
 
-def registrable(host: str) -> str:
-    """example.com from www.example.com; example.co.jp from support.example.co.jp."""
-    labels = host.lower().strip(".").split(".")
-    if len(labels) >= 3 and len(labels[-1]) == 2 and labels[-2] in {"co", "com", "org", "net", "ac", "gov", "edu", "ne", "or"}:
-        return ".".join(labels[-3:])
-    return ".".join(labels[-2:])
+registrable = gate.registrable
 
 
 MAX_DOMAINS = 30
@@ -1271,6 +1468,7 @@ def parser() -> argparse.ArgumentParser:
                           ("out", REFEREE / "runs")):
         r.add_argument(f"--{name}", default=str(default))
     r.add_argument("--sources", help="a sources.json made by `fetch`; the run then fetches nothing itself")
+    r.add_argument("--replay", help="dry run: a run directory whose answers are combined with the gate")
     u = sub.add_parser("check-urls", help="fetch the verify URLs of the test set (free)")
     u.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
     u.add_argument("--no-browser", action="store_true", help="skip the browser step")
