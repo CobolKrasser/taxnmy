@@ -117,9 +117,8 @@ conditions.
 
 Two proposals for `tools/lint.py`, from building this testset:
 
-1. **S8, by code:** reject a `source` on a domain of an AI chat (`chatgpt.com`, `chat.openai.com`,
-   `claude.ai`, `gemini.google.com`, `perplexity.ai`, `copilot.microsoft.com`). B06 tests this. The
-   lint passes it today, so the AI must catch it.
+1. ~~**S8, by code:** reject a `source` on a domain of an AI chat.~~ Built in the gate (TAX-15),
+   see [The gate](#the-gate-s5-s6-and-s8-by-code). B06 tests it.
 2. **Publishers, like S3 for products:** a signal when a new publisher key shares its first word
    with an existing one (`alibaba` and `alibaba-cloud`). G24 and G25 test this.
 
@@ -149,20 +148,24 @@ For each case it:
 
 1. stages the case on a copy of `products/` and `publishers/` and runs the lint. A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
-   stops there, with outcome *reject*;
+   stops there, with outcome *reject*. A case with a source on an AI chat stops there too: *reject*
+   on S8, by the gate, and nothing is fetched (condition *fetched* only);
 2. reads the distinct `source` URLs of the proposal, and the source of the publisher file, with
    the ladder of [Reading sources](#reading-sources) (condition *fetched* only). At most about
    6,000 tokens per page. When the product's own `source` answers 404 or 410, the case stops
    there: outcome *reject* on S7, by code;
-3. fills in the user message of `prompt.md`. The publisher file always comes along: in
+3. runs the gate on the fetched texts (condition *fetched* only): code settles S5, S6 and S8 where
+   it can, see [The gate](#the-gate-s5-s6-and-s8-by-code);
+4. fills in the user message of `prompt.md`, with a `<decided>` block for what the gate settled. The publisher file always comes along: in
    `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
    existing product of each signal, the products of the same publisher, and the publishers that
    share a word with the proposed publisher key;
-4. makes one call, with structured output against `verdict.schema.json`;
-5. checks the quotes (condition *fetched* only): a *yes* whose quote is not found in the fetched
+5. makes one call, with structured output against `verdict.schema.json`, holding only the rules the
+   gate left;
+6. checks the quotes of the referee (condition *fetched* only): a *yes* whose quote is not found in the fetched
    text of its URL, ignoring whitespace and case, becomes *doubt*. A *yes* without any quote also
    becomes *doubt*;
-6. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
+7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
 The conditions of R13: `--condition fetched` (A, the default, all 60 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
@@ -178,6 +181,38 @@ cost), `sources.json` (the fetched texts, so that the quote check can be redone)
 
 Model and effort are `--model` (default `claude-opus-5-5`) and `--effort` (default `medium`).
 `max_tokens` is 8,000 per request unless the budget lowers it. Thinking counts toward it.
+
+### The gate: S5, S6 and S8 by code
+
+`tools/gate.py` settles what can be read off literally, before the referee is called (TAX-15;
+`tax-analyse-fable-2026-11-14.md` §4 in keepitfresh). Code only says what it can show; the rest
+goes to the referee, never a guess.
+
+| rule | code says *yes* | code says *no* | otherwise |
+| --- | --- | --- | --- |
+| S5 | the registrable domain of `versions.source` is that of the publisher's `source` | – | referee |
+| S6 | the product name and the publisher name, each at most 40 characters, appear in a source text that was read, capitals and whitespace aside, not glued to other letters or digits | – | referee |
+| S8 | every literal value appears in the text of its own URL, and every source of the product was read | a source is on the domain of an AI chat | referee |
+
+- The literal values for S8 are the product name, in the text of the product's `source`, and each
+  code, in the text of its own `source`. A source found *instead of* another does not count here.
+  `kind` is a classification, not a literal value.
+- On sites where one domain carries many owners, a shared domain proves nothing: on code hosting
+  (`github.com`, …) the owner is the first part of the path, on `*.github.io` and the like the
+  label in front; catalogues, package registries and encyclopaedias (`endoflife.date`, `pypi.org`,
+  …) never count as the publisher's site.
+- The lists in `tools/gate.py` are classes of sites, never a brand or a product of the data (S9, R3).
+- S4 and S7 stay with the referee. Conditions *memory* and *web* (R13) have no gate: they measure
+  the AI alone.
+
+A **dry run** shows per case what the gate settles and what a live run would ask, and writes it to
+`runs/<time>-dry-fetched/summary.md` (no `results.jsonl`, so it costs the budget nothing). Without
+`--sources` the gate has no texts and settles only S5 and the AI chats. `--replay RUN_DIR` puts the
+gate in front of the answers of an earlier run, to see what it would have changed:
+
+```
+python tools/referee.py run --sources sources.json --replay referee/runs/<run>
+```
 
 ### The hard budget
 

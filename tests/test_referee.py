@@ -85,7 +85,17 @@ class FakeClient:
         out = request["max_tokens"] if self.output is None else self.output
         usage = {"input_tokens": self.counted, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
                  "output_tokens": out, "web_search_requests": self.searches}
-        return referee.Response(content=[Block("text", REPLIES[key])], stop_reason="end_turn", usage=usage)
+        return referee.Response(content=[Block("text", asked(REPLIES[key], request))], stop_reason="end_turn", usage=usage)
+
+
+def asked(text, request):
+    """The reply, with only the rules the request asks for: the gate settled the others."""
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return text
+    wanted = request["output_config"]["format"]["schema"]["properties"]
+    return json.dumps({k: v for k, v in data.items() if k in wanted})
 
 
 class FakeFetcher:
@@ -512,8 +522,70 @@ class RefereeTest(unittest.TestCase):
         client, fetcher = FakeClient(), FakeFetcher()
         results, run_dir = referee.run(Args(self.out, live=False), client=client, fetcher=fetcher,
                                        data_root=FIXTURES / "data", now=NOW, log=QUIET)
-        self.assertEqual((results, run_dir, client.calls, fetcher.urls), ([], None, [], []))
-        self.assertEqual(list(self.out.iterdir()), [])
+        self.assertEqual((results, client.calls, fetcher.urls), ([], [], []))
+        self.assertEqual([p.name for p in self.out.iterdir()], ["20261113-120000-dry-fetched"])
+        self.assertEqual([p.name for p in run_dir.iterdir()], ["summary.md"], "no results.jsonl, so the budget counts nothing")
+
+    # the gate (tools/gate.py)
+
+    def test_dry_run_shows_what_the_gate_settles(self):
+        sources = self.out / "sources.json"
+        sources.write_text(json.dumps({u: {"url": u, "status": "200", "text": f"Page of {u}. Synology Inc. {PAGE}"} for u in (
+            "https://www.synology.com/en-global/products/DS124", "https://www.synology.com/en-global/releaseNote/DSM?model=DS124",
+            "https://www.synology.com/en-global/company")}))
+        _, run_dir = referee.run(Args(self.out / "runs", live=False, sources=str(sources)), data_root=FIXTURES / "data", now=NOW, log=QUIET)
+        summary = (run_dir / "summary.md").read_text()
+        self.assertIn("| G01 | - | yes | yes | yes | S4, S7 |", summary)
+        self.assertIn("| B01 | lint S1 | - | - | - | - |", summary)
+        self.assertIn("| G02 | - | yes | referee | referee | S4, S6, S7, S8 |", summary, "its sources were not fetched")
+
+    def test_the_referee_gets_only_the_rules_code_left(self):
+        results, _, client = self.run_fake(cases=["G01"])
+        request = client.calls[0]
+        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["S4", "S6", "S7", "duplicate_of"])
+        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["S4", "S6", "S7", "duplicate_of"])
+        message = request["messages"][0]["content"]
+        self.assertIn("<decided>\nS5: yes (code: the versions are published on synology.com", message)
+        self.assertIn("Judge only: S4, S6, S7\n</decided>", message)
+        g01 = results["G01"]
+        self.assertEqual((g01.gate, g01.ai_rules), ({"S5": "yes", "S8": "yes"}, ["S4", "S6", "S7"]))
+        self.assertEqual(g01.checked, {r: "yes" for r in referee.RULES})
+        self.assertEqual(g01.outcome, "accept")
+
+    def test_a_source_on_an_ai_chat_is_rejected_by_code_and_not_fetched(self):
+        cases = self.out / "cases.yaml"
+        cases.write_text("""cases:
+- id: B06
+  type: ai-source
+  expect: [reject]
+  rules: [S8]
+  lint: pass
+  proposal:
+    products/synology/ds125.yaml: |
+      key: synology/ds125
+      publisher: synology
+      name: DS125
+      kind: device
+      source: https://www.synology.com/en-global/products/DS125
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM
+      identifiers:
+      - gtin: "0812345678904"
+        source: https://chatgpt.com/share/0000
+""")
+        fetcher = FakeFetcher()
+        results, run_dir, client = self.run_fake(fetcher=fetcher, testset=str(cases))
+        b06 = results["B06"]
+        self.assertEqual((b06.outcome, b06.by, b06.rule, b06.gate, b06.right), ("reject", "code", "S8", {"S8": "no"}, True))
+        self.assertEqual((client.calls, fetcher.urls), ([], []))
+        self.assertIn("is an AI chat", b06.error)
+        self.assertEqual(referee.metrics([b06])["right_rule"], {"S8": [1, 1]})
+        self.assertIn("| S8 | 0 | 1 | 0 | 0 |", (run_dir / "summary.md").read_text())
+
+    def test_memory_and_web_have_no_gate(self):
+        results, _, client = self.run_fake(condition="memory", cases=["G01"])
+        self.assertEqual((results["G01"].gate, results["G01"].ai_rules), ({}, list(referee.RULES)))
+        self.assertNotIn("<decided>", client.calls[0]["messages"][0]["content"])
 
     # the budget
 
@@ -614,16 +686,40 @@ class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
-        self.assertEqual(len(cases), 60)
-        stager = referee.Stager(REPO)
-        self.addCleanup(stager.close)
+        self.assertEqual(len(self.cases), 60)
         mismatched = {}
-        for case in cases:
-            staged = stager.stage(case)
+        for case in self.cases:
+            staged = self.staged[case.id]
             if not staged.lint_ok:
                 mismatched[case.id] = (case.lint, staged.lint_seen)
         self.assertEqual(mismatched, {})
+
+    @classmethod
+    def setUpClass(cls):
+        """The real test set staged once: staging copies and lints the whole dataset per case."""
+        cls.cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
+        stager = referee.Stager(REPO)
+        try:
+            cls.staged = {c.id: stager.stage(c) for c in cls.cases}
+        finally:
+            stager.close()
+
+    def gate_rows(self):
+        return {c.id: referee.gate_row(c, self.staged[c.id], None) for c in self.cases}
+
+    def test_b06_is_rejected_by_code_on_s8(self):
+        row = self.gate_rows()["B06"]
+        self.assertEqual((row.gate, row.ai_rules), ({"S8": "no"}, []))
+
+    def test_breaking_the_domain_comparison_lowers_the_count(self):
+        """TAX-15: without source texts the gate settles S5 by domain alone. Breaking the
+        comparison (no URL has an owner any more) must make that count drop to 0."""
+        count = lambda rows: referee.gate_counts(list(rows.values()))["per_rule"]["S5"]["yes"]  # noqa: E731
+        settled = count(self.gate_rows())
+        with unittest.mock.patch.object(referee.gate, "owner", lambda url: None):
+            broken = count(self.gate_rows())
+        self.assertGreaterEqual(settled, 20, "on 13-14 November 2026 the test set gave 23")
+        self.assertEqual(broken, 0)
 
 
 if __name__ == "__main__":
