@@ -55,6 +55,35 @@ class LintTest(unittest.TestCase):
     def test_repository_passes(self):
         self.assertEqual([f for f in lint.lint(REPO) if f.level == "error"], [])
 
+    def test_changed_files_only(self):
+        """TAX-16: with a list of changed files, findings only on those, compared with all files."""
+        cpe = "identifiers:\n- cpe: cpe:2.3:o:synology:diskstation_manager\n  source: https://nvd.example/\n"
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []\n", cpe))
+        self.write("products/synology/ds124.yaml", PRODUCT.replace("ds224-plus", "ds124").replace("DS224+", "DS124")
+                   .replace("identifiers: []\n", cpe))
+        both = self.run_lint()
+        self.assertEqual({(f.rule, f.level) for f in both}, {("S3", "signal")}, both)
+        self.assertEqual(sorted(f.file for f in both), ["products/synology/ds124.yaml", "products/synology/ds224-plus.yaml"])
+        only = lint.lint(self.root, REPO / "schema", {"products/synology/ds124.yaml"})
+        self.assertEqual(only, [f for f in both if f.file == "products/synology/ds124.yaml"])
+        self.assertEqual(lint.lint(self.root, REPO / "schema", set()), [])
+
+    def test_dataset_overrides_match_the_files_on_disk(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT)
+        data = lint.Dataset(self.root, REPO / "schema", detailed=set())
+        wrong = PRODUCT.replace("name: DS224+", "name: DS 224")
+        in_memory = data.check(report={"products/synology/ds224-plus.yaml"}, overrides={"products/synology/ds224-plus.yaml": wrong})
+        self.write("products/synology/ds224-plus.yaml", wrong)
+        self.assertEqual(in_memory, self.run_lint())
+        self.assertTrue(in_memory)
+        self.assertEqual(data.check(), [], "the dataset itself is unchanged")
+
+    def test_read_changed_keeps_data_files(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT)
+        listing = self.root / "changed.txt"
+        listing.write_text("README.md\nproducts/synology/ds224-plus.yaml\nproducts/gone/deleted.yaml\n")
+        self.assertEqual(lint.read_changed(str(listing), self.root), {"products/synology/ds224-plus.yaml"})
+
     def test_good_product_passes(self):
         self.write("products/synology/ds224-plus.yaml", PRODUCT)
         self.assertEqual(self.run_lint(), [])

@@ -14,6 +14,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # the base of a pull request, to list its changed files
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -22,4 +24,37 @@ jobs:
       - name: Tests of the lint and the referee harness
         run: python -m unittest discover -s tests -v
       - name: Lint the data (writing rule, S1-S3)
-        run: python tools/lint.py
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          # On a pull request: findings only on its own data files, compared with the whole dataset (TAX-16).
+          # The whole dataset when the rules themselves change, or a data file is deleted or renamed
+          # (that can break a file the pull request did not touch). On main: always the whole dataset.
+          if [ -n "$BASE" ]; then
+            git diff --name-only --diff-filter=AM "$BASE"...HEAD > changed.txt
+            if git diff --name-only "$BASE"...HEAD | grep -qE '^(schema/|tools/lint\.py|tools/keyrule\.py)' \
+               || git diff --name-only --diff-filter=DR "$BASE"...HEAD | grep -qE '^(products|publishers)/'; then
+              echo "The rules changed, or a data file was deleted or renamed: the whole dataset."
+              python tools/lint.py
+            else
+              python tools/lint.py --changed changed.txt
+            fi
+          else
+            python tools/lint.py
+          fi
+
+  lint-scale:
+    # TAX-16: a pull request of 10,000 new products on a dataset of 20,000 is linted within 10 minutes.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Scale test of the lint
+        env:
+          TAXNMY_SCALE_TEST: "1"
+        run: python -m unittest tests.test_lint_scale -v

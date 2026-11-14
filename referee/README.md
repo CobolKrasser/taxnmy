@@ -146,7 +146,8 @@ python tools/referee.py compare referee/runs/<a> referee/runs/<b> referee/runs/<
 
 For each case it:
 
-1. stages the case on a copy of `products/` and `publishers/` and runs the lint. A case whose lint
+1. stages the case on the data, read once per run and changed in memory only, and runs the lint on
+   the files of the case, compared with the whole dataset (TAX-16). A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
    stops there, with outcome *reject*. A case with a source on an AI chat stops there too: *reject*
    on S8, by the gate, and nothing is fetched (condition *fetched* only);
@@ -158,7 +159,8 @@ For each case it:
    it can, see [The gate](#the-gate-s5-s6-and-s8-by-code);
 4. fills in the user message of `prompt.md`, with a `<decided>` block for what the gate settled. The publisher file always comes along: in
    `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
-   existing product of each signal, the products of the same publisher, and the publishers that
+   existing product of each signal, the products of the same publisher that resemble the proposal (a word of
+   the key or name in common, or one that begins with the other; at most 20), and the publishers that
    share a word with the proposed publisher key;
 5. makes one call, with structured output against `verdict.schema.json`, holding only the rules the
    gate left;

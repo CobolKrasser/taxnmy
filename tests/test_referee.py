@@ -217,14 +217,16 @@ class RefereeTest(unittest.TestCase):
         self.addCleanup(stager.close)
         g01 = stager.stage(cases["G01"])
         self.assertEqual(list(g01.files), ["products/synology/ds124.yaml"])
-        self.assertIn("synology/ds224-plus: DS224+", g01.existing)
+        self.assertIn("# products of publisher synology that resemble the proposal (at most 20)\nnone", g01.existing,
+                      "DS224+ shares no word with DS124")
         self.assertTrue(g01.existing.startswith("# publishers/synology.yaml\nkey: synology"))
         self.assertEqual(g01.publisher_source, "https://www.synology.com/en-global/company")
         self.assertNotIn("synology/ds124: DS124", g01.existing, "a hold-out is not part of what exists")
         g02 = stager.stage(cases["G02"])
         self.assertIn("synology/ds923-plus: DS923+", g02.existing, "context files are part of what exists")
-        self.assertFalse((stager.root / "products/synology/ds923-plus.yaml").exists(), "staging is undone")
-        self.assertTrue((stager.root / "products/synology/ds124.yaml").exists(), "staging is undone")
+        self.assertIn("synology/ds224-plus: DS224+", g02.existing, "DS1522+ and DS224+ share the word plus")
+        self.assertFalse((FIXTURES / "data/products/synology/ds923-plus.yaml").exists(), "staging touches no file")
+        self.assertNotIn("ds923-plus", stager.stage(cases["G01"]).existing, "staging is undone")
         b07 = stager.stage(cases["B07"])
         self.assertEqual(b07.lint_seen, "signal")
         self.assertIn("# products/synology/ds224-plus.yaml\nkey: synology/ds224-plus", b07.existing)
@@ -233,6 +235,34 @@ class RefereeTest(unittest.TestCase):
         self.assertNotIn("# publishers/acme.yaml", h01.existing, "a new publisher is in the proposal")
         self.assertEqual(h01.publisher_source, "")
         self.assertFalse(stager.stage(cases["B22"]).lint_ok)
+
+    def test_existing_shows_only_products_that_resemble_and_at_most_20(self):
+        data = self.out / "data"
+        shutil.copytree(FIXTURES / "data", data)
+        for i in range(30):
+            (data / f"products/synology/ds124-r{i}.yaml").write_text(
+                f"key: synology/ds124-r{i}\npublisher: synology\nname: DS124 R{i}\nkind: device\n"
+                f"source: https://www.synology.com/p/{i}\nversions:\n  source: https://www.synology.com/v/{i}\n")
+        (data / "products/synology/rs3621xs.yaml").write_text(
+            "key: synology/rs3621xs\npublisher: synology\nname: RS3621xs\nkind: device\n"
+            "source: https://www.synology.com/p/rs\nversions:\n  source: https://www.synology.com/v/rs\n")
+        stager = referee.Stager(data)
+        g01 = stager.stage({c.id: c for c in referee.load_cases(FIXTURES / "cases.yaml")}["G01"])
+        block = g01.existing.split("that resemble the proposal (at most 20)\n")[1].split("\n\n")[0].splitlines()
+        self.assertEqual(len(block), 20)
+        self.assertTrue(all(line.startswith("synology/ds124-r") for line in block), block)
+        self.assertNotIn("rs3621xs", g01.existing)
+
+    def test_resembles(self):
+        self.assertEqual(referee.resembles(referee.words_of("ds124"), referee.words_of("ds124j", "DS124j")), 1)
+        self.assertEqual(referee.resembles(referee.words_of("ds124"), referee.words_of("ds224-plus", "DS224+")), 0)
+        self.assertEqual(referee.resembles(referee.words_of("galaxy-tab-s9"), referee.words_of("galaxy-tab-s9-fe")), 3)
+
+    def test_the_data_is_read_once_per_run(self):
+        with unittest.mock.patch.object(referee.lint, "Dataset", wraps=referee.lint.Dataset) as dataset, \
+             unittest.mock.patch.object(referee.lint, "lint", side_effect=AssertionError("no full lint per case")):
+            self.run_fake()
+        self.assertEqual(dataset.call_count, 1)
 
     def test_message_follows_the_prompt(self):
         _, _, client = self.run_fake(cases=["B07"])
