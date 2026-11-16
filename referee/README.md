@@ -140,6 +140,7 @@ python tools/referee.py run --sources sources.json   # dry run with those source
 python tools/referee.py run                          # dry run of the base run: nothing is sent
 python tools/referee.py run --condition memory       # dry run of R13 M, on the 29 cases
 python tools/referee.py run --live                   # the base run: one call per case
+python tools/referee.py run --live --batch           # the same, as one batch, at half price
 python tools/referee.py check-urls                   # fetch the verify URLs (free)
 python tools/referee.py compare referee/runs/<a> referee/runs/<b> referee/runs/<c>
 ```
@@ -274,6 +275,41 @@ For each source `sources.json` records `status`, `method`, `chars` (the length b
 - no imitated browser headers, no proxies and no stealth.
 
 A site that refuses is not worked around. A person decides, or the product gets another source.
+
+### The model measurement (TAX-18)
+
+Which model may judge: Opus 5.5 was measured (A, A2); Haiku 5.5 and Sonnet 5.5 were not. A model
+that lets one bad case through in any of its runs drops out (R7).
+
+`run --batch` sends every case that reaches the referee as one batch (half price, answered within
+hours; not for condition *web*). The budget stays hard: requests go in rounds, each holding what
+fits the budget at its worst, as in [the PR mode](#the-referee-on-a-pull-request).
+
+`measure` runs the test set per model, `--repeats` times, effort *low*, as a batch:
+
+```
+python tools/referee.py measure --budget 13.70 --sources sources.json            # estimate from the tokens of A2
+python tools/referee.py measure --budget 13.70 --sources sources.json --count    # with counted tokens (free, the key)
+python tools/referee.py measure --budget 13.70 --sources sources.json --live     # the measurement
+```
+
+1. **The probe:** cases G01–G03 per model, one small batch each. Their real cost per case is
+   extrapolated to the rest. When that would pass `--budget`, or a probe got no answer, nothing more
+   is sent. The probe is the start of run 1 (`compare` joins the two directories with `+`).
+2. **The runs:** per model the rest of run 1, then runs 2 and 3, each a batch.
+3. **The report** `runs/model-measurement-<time>.md`: per model and per run the bad cases let
+   through, the good cases rejected, the cases for a person (*human*; *parked* in the PR mode), the
+   cases whose outcome differs between the runs, the cost per proposal; and `compare` with A2.
+
+`--budget 13.70` is the $20 of fase 2 minus the $10.70 spent: this measurement can spend at most
+$3.00. The estimate from the tokens of A2 is about $2.70 (Haiku $0.13, Sonnet $2.59); the ceiling,
+with every request at its full `max_tokens` and no cache, is higher, which is why the rounds exist.
+
+As an Action: **referee-models** (*Actions → referee-models → Run workflow*), from `main`, in
+environment `referee`. It reads the sources of A2 (artifact `referee-sources-final-43462875320`,
+kept until 11 February 2027), so it searches and fetches nothing. `live` off and `count` on gives the
+estimate with counted tokens, for free. Each run directory is kept as its own artifact
+`referee-run-<run>`, so the budget counts it; commit them in `runs/` afterwards.
 
 ### The referee on a pull request
 

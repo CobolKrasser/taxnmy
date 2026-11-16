@@ -193,7 +193,7 @@ def park_pending(items: list[dict], reason: str) -> None:
 def spent_on(out: Path, pr: int | None, day: str) -> tuple[float, float]:
     """(spent on this pull request in all its runs, spent on all pull requests today), from the runs in `out`."""
     on_pr = on_day = 0.0
-    for meta in out.glob("*/run.json"):
+    for meta in out.rglob("run.json"):
         info = json.loads(meta.read_text(encoding="utf-8"))
         if info.get("condition") != "pr":
             continue
