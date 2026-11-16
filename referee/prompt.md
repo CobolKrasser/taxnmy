@@ -70,7 +70,8 @@ How to answer
   refused to be read. It may confirm the values of that refused source, if its text shows them.
 - Judge only what is asked. Do not suggest improvements.
 - A <decided> block lists the rules code settled, with its reason, and ends with "Judge only:"
-  and the rules left for you. Answer only those; your answer has no field for the others.
+  and the rules left for you. Answer only those; your answer has no field for the others. A line
+  "in part" says what code checked of a rule that is still yours; judge that rule in full.
 ```
 
 ## User message

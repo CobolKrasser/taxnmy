@@ -1,6 +1,6 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 60 proposals: 28 good, 30 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 65 proposals: 28 good, 35 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
@@ -840,3 +840,118 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://workspace.google.com/products/gmail/, https://workspaceupdates.googleblog.com/]
+
+# The wrong publisher on a domain of its own (S5, TAX-24). Unlike B25-B28, the proposed publisher's
+# source, the product source and the versions source are all on one domain: the domain comparison
+# passes, and only a reading of the pages shows who publishes the updates. Each is a site that
+# offers the downloads of many publishers, with a page and a version list per product.
+- id: B31
+  type: wrong-publisher-own-domain
+  expect: [reject]
+  rules: [S4, S5]
+  lint: pass
+  proposal:
+    publishers/filehippo.yaml: |
+      key: filehippo
+      name: FileHippo
+      source: https://filehippo.com/
+      aliases: []
+    products/filehippo/handbrake.yaml: |
+      key: filehippo/handbrake
+      publisher: filehippo
+      name: HandBrake
+      kind: software
+      source: https://filehippo.com/download_handbrake/
+      versions:
+        source: https://filehippo.com/download_handbrake/history/
+      identifiers: []
+      aliases: []
+  verify: [https://filehippo.com/, https://filehippo.com/download_handbrake/, https://filehippo.com/download_handbrake/history/]
+  note: A download site that lists the releases of another publisher's software on a history page of its own. Its pages say "By HandBrake".
+- id: B32
+  type: wrong-publisher-own-domain
+  expect: [reject]
+  rules: [S4, S5]
+  lint: pass
+  proposal:
+    publishers/uptodown.yaml: |
+      key: uptodown
+      name: Uptodown
+      source: https://www.uptodown.com/
+      aliases: []
+    products/uptodown/vlc-media-player.yaml: |
+      key: uptodown/vlc-media-player
+      publisher: uptodown
+      name: VLC media player
+      kind: software
+      source: https://vlc-media-player.en.uptodown.com/windows
+      versions:
+        source: https://vlc-media-player.en.uptodown.com/windows/versions
+      identifiers: []
+      aliases: []
+  verify: [https://www.uptodown.com/, https://vlc-media-player.en.uptodown.com/windows, https://vlc-media-player.en.uptodown.com/windows/versions]
+  note: An app store that hosts another publisher's releases on a subdomain of its own; the registrable domain is the same.
+- id: B33
+  type: wrong-publisher-own-domain
+  expect: [reject]
+  rules: [S4, S5]
+  lint: pass
+  proposal:
+    publishers/filehorse.yaml: |
+      key: filehorse
+      name: FileHorse
+      source: https://www.filehorse.com/
+      aliases: []
+    products/filehorse/7-zip.yaml: |
+      key: filehorse/7-zip
+      publisher: filehorse
+      name: 7-Zip
+      kind: software
+      source: https://www.filehorse.com/download-7-zip-64/
+      versions:
+        source: https://www.filehorse.com/download-7-zip-64/old-versions/
+      identifiers: []
+      aliases: []
+  verify: [https://www.filehorse.com/, https://www.filehorse.com/download-7-zip-64/, https://www.filehorse.com/download-7-zip-64/old-versions/]
+  note: A download site with an "old versions" page of another publisher's software.
+
+# A wrong `kind`, every other value as in the data (S8, TAX-24). Code finds the name and every code
+# in its own source, so before TAX-24 the gate said S8 yes and the referee was never asked about `kind`.
+- id: B34
+  type: wrong-kind
+  expect: [reject, human]
+  rules: [S8]
+  lint: pass
+  hide: [products/synology/ds124.yaml]
+  proposal:
+    products/synology/ds124.yaml: |
+      key: synology/ds124
+      publisher: synology
+      name: DS124
+      kind: software
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+  note: G01 with kind software. The source shows a NAS, a physical product that carries firmware.
+- id: B35
+  type: wrong-kind
+  expect: [reject, human]
+  rules: [S8]
+  lint: pass
+  hide: [products/microsoft/sql-server.yaml]
+  proposal:
+    products/microsoft/sql-server.yaml: |
+      key: microsoft/sql-server
+      publisher: microsoft
+      name: SQL Server
+      kind: operating-system
+      source: https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
+      versions:
+        source: https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
+      identifiers:
+      - cpe: cpe:2.3:a:microsoft:sql_server
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mssqlserver.md
+      aliases: []
+  note: G13 with kind operating-system. SQL Server is a database server, software; its own CPE part is "a" (application).

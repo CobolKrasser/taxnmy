@@ -192,6 +192,7 @@ class Staged:
     machine_sources: list = field(default_factory=list)  # the publisher's machine_sources (URLs), for step 0 on a closed source
     publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
     publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for S5 and S6
+    known_publisher: bool = False  # the publisher file is in the data and not part of the proposal (the gate, S5)
 
     @property
     def product(self) -> dict:
@@ -245,7 +246,7 @@ class Stager:
         return Staged(files=files, findings=findings, lint_ok=True, lint_seen=lint_summary(findings),
                       existing=self._existing(files, findings), publisher_source=self._publisher_source(files),
                       machine_sources=self._machine_sources(files), publisher_urls=self._publisher_urls(files),
-                      publisher=self._publisher_data(files))
+                      publisher=self._publisher_data(files), known_publisher=bool(self._publisher_file(files)[0]))
 
     def _text(self, rel: str) -> str | None:
         return self.data.text(rel, self.view)
@@ -457,12 +458,16 @@ def load_system_prompt(path: Path) -> str:
 
 def build_message(staged: Staged, condition: str, sources: list[Source], decided: dict | None = None) -> str:
     """The user message, in the order of referee/prompt.md § User message. `decided` holds the
-    rules the gate settled; the message then says which rules are left for the referee."""
+    rules the gate settled (None: no gate); the message then says which rules are left for the
+    referee, with what code found of them (`gate.partly`)."""
     proposal = "\n".join(f"# {rel}\n{text.rstrip()}" for rel, text in staged.files.items())
     signals = "\n".join(f"{f.rule}: {f.message}" for f in staged.findings if f.level == "signal") or "none"
     gate_block = ""
-    if decided:
+    notes = (gate.partly(staged.product, staged.publisher, sources if condition == "fetched" else None, decided,
+                         new_publisher=not staged.known_publisher) if decided is not None else {})
+    if decided or notes:
         lines = [f"{r}: {j['verdict']} ({j['reason']})" for r, j in sorted(decided.items())]
+        lines += [f"{r} in part: {note}" for r, note in sorted(notes.items())]
         lines.append("Judge only: " + ", ".join(r for r in RULES if r not in decided))
         gate_block = "<decided>\n" + "\n".join(lines) + "\n</decided>\n\n"
     if condition == "fetched":
@@ -1016,9 +1021,9 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
                     jsonl.flush()
                     continue
-                decided = gate.decide(st.product, st.publisher, sources) if use_gate else {}
-                res.gate = {r: j["verdict"] for r, j in decided.items()}
-                res.ai_rules = [r for r in RULES if r not in decided]
+                decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher) if use_gate else None
+                res.gate = {r: j["verdict"] for r, j in (decided or {}).items()}
+                res.ai_rules = [r for r in RULES if r not in res.gate]
                 if batch:
                     waiting.append((res, case, sources, decided, build_message(st, args.condition, sources, decided)))
                     continue
@@ -1104,7 +1109,7 @@ def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: lis
     # The quote check is the code part of S8; R13 switches it off in memory and web.
     checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules) if condition == "fetched"
                                 else (verdict, []))
-    checked = {**checked, **decided}  # the rules the gate settled, as the gate settled them
+    checked = {**checked, **(decided or {})}  # the rules the gate settled, as the gate settled them
     res.checked = {r: checked[r]["verdict"] for r in RULES}
     res.outcome, res.rule = outcome(checked)
 
@@ -1277,7 +1282,7 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
     if sources is not None and product_gone(st.files, sources):
         row.settled = "S7 404"
         return row
-    decided = gate.decide(st.product, st.publisher, sources)
+    decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
     row.gate = {r: j["verdict"] for r, j in decided.items()}
     no = [r for r, v in row.gate.items() if v == "no"]
     row.ai_rules = [] if no else [r for r in RULES if r not in decided]
@@ -1772,7 +1777,7 @@ def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=pri
             sources = gather_sources(fetcher, st)
             if product_gone(st.files, sources):
                 continue
-            decided = gate.decide(st.product, st.publisher, sources)
+            decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             rules = [r for r in RULES if r not in decided]
             for model in getattr(args, "models", None) or [args.model]:
                 request = dict(model=model, system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
