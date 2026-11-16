@@ -765,24 +765,47 @@ BATCH_WAIT = 5 * 3600  # seconds to wait for a batch before it is cancelled (a j
 
 
 def fit_batch(client, budget: Budget, requests: list) -> tuple[list, list]:
-    """max_tokens for the requests of one batch, so that the whole batch cannot cost more than what is
-    left in the budget: every input token counted (free) with 5% and 100 tokens of margin, and every
-    request its full max_tokens. The same max_tokens for each, at most budget.max_tokens. When the
-    room is less than MIN_OUTPUT per request, requests are left out from the end until it fits.
-    Returns (the requests that fit, with max_tokens; the custom ids of those left out)."""
-    counted = [(cid, request, client.count(request)) for cid, request in requests]
+    """The requests of one batch that fit what is left in the budget, at their worst: every input token
+    counted (free) with 5% and 100 tokens of margin, and every request its full max_tokens
+    (budget.max_tokens). As many as fit go, in order; when not even one fits at full max_tokens, one
+    goes with what is left, if that is at least MIN_OUTPUT. Returns (the requests that fit, with
+    max_tokens; the requests left out, without)."""
     p_in = input_price(budget.model, budget.prices, budget.batch)
     p_out = output_price(budget.model, budget.prices, budget.batch)
-    kept = list(counted)
-    while kept:
-        fixed = sum((n * 1.05 + 100) * p_in for _, _, n in kept)
-        room = int((budget.left - fixed) / p_out / len(kept))
-        if room >= MIN_OUTPUT:
-            max_tokens = min(budget.max_tokens, room)
-            return ([(cid, {**request, "max_tokens": max_tokens}) for cid, request, _ in kept],
-                    [cid for cid, _, _ in counted[len(kept):]])
-        kept.pop()
-    return [], [cid for cid, _, _ in counted]
+    fitted, total = [], 0.0
+    for n, (cid, request) in enumerate(requests):
+        worst = (client.count(request) * 1.05 + 100) * p_in
+        if total + worst + budget.max_tokens * p_out <= budget.left:
+            total += worst + budget.max_tokens * p_out
+            fitted.append((cid, {**request, "max_tokens": budget.max_tokens}))
+            continue
+        if not fitted:
+            room = int((budget.left - worst) / p_out)
+            if room >= MIN_OUTPUT:
+                fitted.append((cid, {**request, "max_tokens": room}))
+                n += 1
+        return fitted, requests[n:]
+    return fitted, []
+
+
+def batch_rounds(client, budget: Budget, requests: list, log=print, wait: float = BATCH_WAIT,
+                 poll: float = BATCH_POLL, sleep=None) -> tuple[dict, list]:
+    """As many batches as it takes: each holds what fits the budget at its worst, and once it has
+    ended, what it really cost frees the rest for the next. Stops when nothing fits or `wait` is used
+    up. Returns (custom_id -> answer, as run_batch; the custom ids that never fitted)."""
+    import time
+
+    answers, left, started = {}, list(requests), time.monotonic()
+    while left:
+        fitted, left = fit_batch(client, budget, left)
+        if not fitted:
+            break
+        log(f"round of {len(fitted)} requests, max_tokens {fitted[0][1]['max_tokens']}; {len(left)} wait for the next")
+        remaining = max(wait - (time.monotonic() - started), poll)
+        answers.update(run_batch(client, budget, fitted, log=log, wait=remaining, poll=poll, sleep=sleep))
+        if time.monotonic() - started >= wait:
+            break
+    return answers, [cid for cid, _ in left]
 
 
 def run_batch(client, budget: Budget, requests: list, log=print, wait: float = BATCH_WAIT,

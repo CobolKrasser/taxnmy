@@ -184,15 +184,34 @@ class PrRefereeTest(unittest.TestCase):
         self.assertAlmostEqual(referee.spent_before(self.tmp / "runs"), normal / 2)
 
     def test_the_whole_batch_fits_what_is_left(self):
-        budget = referee.Budget(0.10, 0.0, "claude-opus-5-5", referee.load_prices(), 8000, batch=True)
+        budget = referee.Budget(0.30, 0.0, "claude-opus-5-5", referee.load_prices(), 8000, batch=True)
         client = FakeBatchClient(counted=2000)
         fitted, left_out = referee.fit_batch(client, budget, [(f"p{n}", {"messages": []}) for n in range(5)])
         p_in = referee.input_price("claude-opus-5-5", budget.prices, True)
         p_out = referee.output_price("claude-opus-5-5", budget.prices, True)
         worst = sum((2000 * 1.05 + 100) * p_in + r["max_tokens"] * p_out for _, r in fitted)
-        self.assertLessEqual(worst, 0.10)
-        self.assertEqual(len(fitted) + len(left_out), 5)
-        self.assertGreaterEqual(fitted[0][1]["max_tokens"], referee.MIN_OUTPUT)
+        self.assertLessEqual(worst, 0.30)
+        self.assertEqual((len(fitted), len(left_out)), (3, 2), "each at full max_tokens, the rest waits")
+        self.assertEqual({r["max_tokens"] for _, r in fitted}, {8000})
+
+    def test_one_request_may_go_with_less_than_full_max_tokens(self):
+        budget = referee.Budget(0.05, 0.0, "claude-opus-5-5", referee.load_prices(), 8000, batch=True)
+        fitted, left_out = referee.fit_batch(FakeBatchClient(counted=2000), budget, [("p0", {}), ("p1", {})])
+        self.assertEqual(len(fitted), 1)
+        self.assertTrue(referee.MIN_OUTPUT <= fitted[0][1]["max_tokens"] < 8000)
+        self.assertEqual(left_out, [("p1", {})])
+
+    def test_batches_go_in_rounds_until_the_budget_is_used(self):
+        budget = referee.Budget(0.30, 0.0, "claude-opus-5-5", referee.load_prices(), 8000, batch=True)
+        client = FakeBatchClient(counted=2000, output=500)
+        request = {"messages": [{"content": "# products/synology/ds124.yaml\nkey: synology/ds124\n"}],
+                   "output_config": {"format": {"schema": {"properties": dict.fromkeys(referee.RULES)}}}}
+        requests = [(f"p{n}", request) for n in range(5)]
+        answers, never = referee.batch_rounds(client, budget, requests, log=QUIET, sleep=lambda s: None)
+        self.assertGreater(len(client.batches), 1, "the real cost frees room for a next round")
+        self.assertEqual(len(answers) + len(never), 5)
+        self.assertEqual(len(answers), 5)
+        self.assertLessEqual(budget.spent, 0.30)
 
     def test_the_pull_request_ceiling_parks_what_does_not_fit(self):
         items, _, client = self.judged(pr_cap=0.01)

@@ -318,7 +318,9 @@ who disagrees can say so on the pull request. The test set's *human* is *parked*
 | per day (UTC), all pull requests together | $5.00 | `REFEREE_DAY_CAP` |
 | everything in `runs/`, as [The hard budget](#the-hard-budget) | $20.00 | `REFEREE_BUDGET` |
 
-What does not fit is parked, with the ceiling as reason. A batch that is not done after 5 hours is
+Requests go in rounds: each batch holds what fits at its worst, each request with its full
+`max_tokens` (4,000); once it ends, what it really cost frees room for the next round. What never
+fits is parked, with the ceiling as reason. A batch that is not done after 5 hours is
 cancelled; what it did not answer is parked. Each judge run writes `runs/<time>-pr<n>-<model>/`
 (condition `pr`), kept as an artifact like a measurement, so the ceilings and the budget count it.
 

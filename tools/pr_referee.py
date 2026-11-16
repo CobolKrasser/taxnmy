@@ -245,25 +245,22 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None)
             output_config={"effort": args.effort, "format": {"type": "json_schema",
                                                              "schema": referee.schema_for(api, item["ai_rules"])}},
         )))
-    fitted, left_out = referee.fit_batch(client, budget, requests)
     by_id = {f"p{n}": item for n, item in enumerate(pending)}
-    for cid in left_out:
-        item = by_id[cid]
-        settled(item, "parked", ", ".join(item["ai_rules"]), f"the {tightest} ceiling leaves no room for the referee")
-    log(f"{len(pending)} for the referee: {len(fitted)} in the batch, {len(left_out)} parked for the ceiling"
-        + (f"; max_tokens {fitted[0][1]['max_tokens']}" if fitted else ""))
     stamp = now.strftime("%Y%m%d-%H%M%S")
     run_dir = out / f"{stamp}-pr{args.pr or 0}-{args.model}"
     run_dir.mkdir(parents=True, exist_ok=False)
     (run_dir / "run.json").write_text(json.dumps({
         "condition": "pr", "pr": args.pr, "model": args.model, "effort": args.effort, "batch": True,
         "budget": args.budget, "pr_cap": args.pr_cap, "day_cap": args.day_cap, "spent_before": round(before, 6),
-        "max_tokens": fitted[0][1]["max_tokens"] if fitted else 0, "started": stamp,
-        "proposals": [i["id"] for i in pending],
+        "max_tokens": args.max_tokens, "started": stamp, "proposals": [i["id"] for i in pending],
     }, indent=2) + "\n", encoding="utf-8")
-    answers = referee.run_batch(client, budget, fitted, log=log, sleep=sleep, wait=args.wait) if fitted else {}
+    answers, left_out = referee.batch_rounds(client, budget, requests, log=log, sleep=sleep, wait=args.wait)
     for cid, answer in answers.items():
         settle_answer(by_id[cid], answer, schema)
+    for cid in left_out:
+        item = by_id[cid]
+        settled(item, "parked", ", ".join(item["ai_rules"]), f"the {tightest} ceiling leaves no room for the referee")
+    log(f"{len(pending)} for the referee: {len(answers)} answered, {len(left_out)} parked for the ceiling")
     with (run_dir / "results.jsonl").open("w", encoding="utf-8") as jsonl:
         for item in pending:
             jsonl.write(json.dumps({k: item[k] for k in ("id", "key", "outcome", "rule", "reason", "by", "verdict",
