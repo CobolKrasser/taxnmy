@@ -275,9 +275,81 @@ For each source `sources.json` records `status`, `method`, `chars` (the length b
 
 A site that refuses is not worked around. A person decides, or the product gets another source.
 
+### The referee on a pull request
+
+`tools/pr_referee.py` judges the product files of a pull request (TAX-17). Each file gets one
+outcome, in a comment on the pull request:
+
+| outcome | when |
+| --- | --- |
+| *accept* | the lint passes, and every rule is *yes*, by code or by the referee |
+| *reject* | a rule is *no*: the lint (S1–S3), a 404 (S7), an AI chat as source (S8), or the referee; with the rule and the reason |
+| *alias* | the referee finds the same product under another key (S4); the comment names it |
+| *parked* | not taken in now: the referee doubts, a quote is not in its source, the answer is unusable, a ceiling leaves no room, or the pull request comes from a fork. With the rules and the reason |
+
+*Doubt means: not taken in, but parked* (Fred, 14 November). Nothing goes to a person: a contributor
+who disagrees can say so on the pull request. The test set's *human* is *parked* here.
+
+**Two workflows**, so that no code of a pull request runs where the key is
+(`hosting-taxnmy-publiek.md` §4 in keepitfresh):
+
+- **`referee-pr-collect`** (`pull_request`, on `products/**` and `publishers/**`) runs the code of
+  the pull request, so it has no key and a read-only token. It only keeps the data files the pull
+  request adds or changes as an artifact, `proposal.json`.
+- **`referee-pr`** (`workflow_run`, on `main`) reads only that artifact, and checks it before
+  anything else: the pull request number, a commit, paths under `products/` and `publishers/`, at
+  most 2,000 files of 64 KB. The pull request must have that commit as its head. Then:
+  - **gate**, no key: stages each product file (with the publisher file it brings) on the data of
+    `main`, lints it, reads its sources with the ladder of [Reading sources](#reading-sources) and runs
+    [the gate](#the-gate-s5-s6-and-s8-by-code). Free.
+  - **judge**, in environment `referee`: the key, after Fred approves. One request per product that
+    code did not settle, as **one batch** (half price, answered within hours). Model and effort:
+    the repository variables `REFEREE_MODEL` (default `claude-opus-5-5`, until TAX-18 chooses) and
+    `REFEREE_EFFORT` (default `low`). A pull request from a fork never gets here: code judges it, the
+    rest is parked.
+  - **report**: the comment, edited on the next run.
+  - Only `workflow_run` starts it: that trigger can read the cache of `main` but not write it, so an
+    artifact from outside cannot poison it (CodeQL, *cache poisoning*). Its jobs that read an artifact
+    save no cache, and keep the artifact outside the checkout.
+
+**Ceilings, in code.** Before the batch is sent, every request is counted (free) and gets the same
+`max_tokens`, so that the whole batch, at its worst, fits the tightest of three:
+
+| ceiling | default | variable |
+| --- | --- | --- |
+| per pull request, all its runs together | $2.00 | `REFEREE_PR_CAP` |
+| per day (UTC), all pull requests together | $5.00 | `REFEREE_DAY_CAP` |
+| everything in `runs/`, as [The hard budget](#the-hard-budget) | $20.00 | `REFEREE_BUDGET` |
+
+Requests go in rounds: each batch holds what fits at its worst, each request with its full
+`max_tokens` (4,000); once it ends, what it really cost frees room for the next round. What never
+fits is parked, with the ceiling as reason. A batch that is not done after 5 hours is
+cancelled; what it did not answer is parked. Each judge run writes `runs/<time>-pr<n>-<model>/`
+(condition `pr`), kept as an artifact like a measurement, so the ceilings and the budget count it.
+
+**The parking list** is `referee/parked.yaml`: one entry per product key, with `path`, `rule`,
+`reason`, `date`, `pr` and the proposed `files`, so it can be judged again without the pull request.
+
+```
+python tools/pr_referee.py apply verdicts.json       # on the branch: parked to the list, rejected out
+python tools/pr_referee.py parked                    # judge the list again; dry: the rest stays parked
+python tools/pr_referee.py parked --live             # with the referee, one batch
+python tools/pr_referee.py gate --testset            # the test set as a pull request, code only (free)
+python tools/pr_referee.py judge --gated gated/gated.json --live   # and the rest, with the referee
+```
+
+`apply` takes the `verdicts.json` of the run (artifact `referee-pr-verdicts-<id>`) over on a
+checkout of the pull request. `parked` writes an accepted entry to the data and takes it off the
+list, takes rejected ones off, and keeps the rest with the new reason and date.
+
+**The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
+from `main`), the workflow **referee-pr-testset** runs the 60 cases of the test set through the same gate and the same batch, each staged as
+[Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
+test set may take files out of the data; the artifact of a pull request may not.
+
 ### Running it as an Action
 
-The key is a secret of the repository, so a paid measurement runs as the workflow **referee**
+The key is a secret of the environment `referee` (only `main`, Fred approves), so a paid measurement runs as the workflow **referee**
 (`.github/workflows/referee.yml`). Start it by hand (*Actions → referee → Run workflow*), with the
 condition, the cases, the model, the effort, the budget and *live*.
 
@@ -288,11 +360,11 @@ It has four jobs, so that the key never comes near the JavaScript of other sites
   `referee-sources-<id>`. It runs for condition *fetched* and for `task: check-urls`, from any
   branch. That is how the ladder is tested for free.
 - **search** is step 4 for the refused and disallowed sources. It has the key and no browser, and runs only on a
-  live run from `main`.
+  live run from `main`, in environment `referee`: it waits until Fred approves.
 - **refetch** reads what search found, down steps 1–3, without a key, and keeps the result as
   `referee-sources-final-<id>`.
 - **judge** reads the sources and calls the referee. It has the key, only on a live run and only
-  from `main`, and runs no browser.
+  from `main`, and runs no browser. It runs in environment `referee`, so it waits until Fred approves.
 
 - Without *live* it is a dry run: the key is not passed to it.
 - It runs one at a time. It reads only data files and runs no code from a pull request (hosting

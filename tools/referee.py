@@ -231,12 +231,19 @@ class Stager:
                 raise SystemExit(f"case {case.id}: hold-out {rel} is not in the data")
             files[rel] = text
         files.update(case.proposal)
-        removed = {rel: None for rel in case.holdout + case.hide}
-        findings = self.data.check(report=set(files), overrides={**removed, **case.context, **files})
-        seen = lint_summary(findings)
-        self.view = {**removed, **case.context, **{rel: None for rel in files}}  # the proposal is not part of what exists
-        return Staged(files=files, findings=findings, lint_ok=lint_matches(case.lint, findings), lint_seen=seen,
-                      existing=self._existing(case, files, findings), publisher_source=self._publisher_source(files),
+        staged = self.stage_files(files, removed=case.holdout + case.hide, context=case.context)
+        staged.lint_ok = lint_matches(case.lint, staged.findings)
+        return staged
+
+    def stage_files(self, files: dict, removed=(), context: dict | None = None) -> Staged:
+        """Proposed files (path -> text) on the data, with `removed` taken out and `context` added first.
+        The PR mode (tools/pr_referee.py) stages a pull request this way, without removals or context."""
+        removed = {rel: None for rel in removed}
+        context = context or {}
+        findings = self.data.check(report=set(files), overrides={**removed, **context, **files})
+        self.view = {**removed, **context, **{rel: None for rel in files}}  # the proposal is not part of what exists
+        return Staged(files=files, findings=findings, lint_ok=True, lint_seen=lint_summary(findings),
+                      existing=self._existing(files, findings), publisher_source=self._publisher_source(files),
                       machine_sources=self._machine_sources(files), publisher_urls=self._publisher_urls(files),
                       publisher=self._publisher_data(files))
 
@@ -327,7 +334,7 @@ class Stager:
         data = yaml.safe_load(self._text(rel) or "")
         return data if isinstance(data, dict) else {}
 
-    def _existing(self, case: Case, files: dict, findings: list) -> str:
+    def _existing(self, files: dict, findings: list) -> str:
         """For each signal the existing product it points to; the products of the same publisher that
         resemble the proposal on key or name, at most MAX_EXISTING; the publishers that share a word
         with the proposed publisher key."""
@@ -590,6 +597,32 @@ class AnthropicClient:
         add_usage(usage, response.usage)
         return Response(content=list(response.content), stop_reason=response.stop_reason, usage=usage)
 
+    # The Message Batches API: the same requests, answered within 24 hours, at batch_discount of the price.
+
+    def submit(self, requests: list) -> str:
+        """requests: [(custom_id, request)]. Returns the id of the batch."""
+        batch = self._client.messages.batches.create(
+            requests=[{"custom_id": cid, "params": request} for cid, request in requests])
+        return batch.id
+
+    def status(self, batch_id: str) -> str:
+        return self._client.messages.batches.retrieve(batch_id).processing_status
+
+    def cancel(self, batch_id: str) -> None:
+        self._client.messages.batches.cancel(batch_id)
+
+    def results(self, batch_id: str):
+        """(custom_id, Response) for a request that succeeded; (custom_id, why) for one that did not."""
+        for item in self._client.messages.batches.results(batch_id):
+            if item.result.type == "succeeded":
+                msg = item.result.message
+                usage = empty_usage()
+                add_usage(usage, msg.usage)
+                yield item.custom_id, Response(content=list(msg.content), stop_reason=msg.stop_reason, usage=usage)
+            else:
+                error = getattr(getattr(item.result, "error", None), "type", "") or ""
+                yield item.custom_id, f"{item.result.type}{': ' + error if error else ''}"
+
 
 def empty_usage() -> dict:
     return {"input_tokens": 0, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0,
@@ -617,7 +650,16 @@ def load_prices(path: Path = REFEREE / "prices.yaml") -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
-def cost(usage: dict, model: str, prices: dict) -> float:
+def discount(prices: dict, batch: bool) -> float:
+    """What a token costs as part of a batch, as a share of the normal price (prices.yaml)."""
+    if not batch:
+        return 1.0
+    if "batch_discount" not in prices:
+        raise SystemExit("No batch_discount in referee/prices.yaml")
+    return float(prices["batch_discount"])
+
+
+def cost(usage: dict, model: str, prices: dict, batch: bool = False) -> float:
     if model not in prices["models"]:
         raise SystemExit(f"No price for model {model!r} in referee/prices.yaml")
     p = prices["models"][model]
@@ -628,17 +670,18 @@ def cost(usage: dict, model: str, prices: dict) -> float:
             if price not in p:
                 raise SystemExit(f"No {price} price for {model!r} in referee/prices.yaml")
             total += usage[tokens] * p[price] / 1_000_000
+    total *= discount(prices, batch)
     total += usage.get("web_search_requests", 0) * prices["web_search_per_1000"] / 1000
     return total
 
 
-def input_price(model: str, prices: dict) -> float:
+def input_price(model: str, prices: dict, batch: bool = False) -> float:
     p = prices["models"][model]
-    return max(p["input"], p.get("cache_write_5m", 0)) / 1_000_000
+    return max(p["input"], p.get("cache_write_5m", 0)) / 1_000_000 * discount(prices, batch)
 
 
-def output_price(model: str, prices: dict) -> float:
-    return prices["models"][model]["output"] / 1_000_000
+def output_price(model: str, prices: dict, batch: bool = False) -> float:
+    return prices["models"][model]["output"] / 1_000_000 * discount(prices, batch)
 
 
 def web_allowance(model: str, prices: dict, max_uses: int, fetches: int = 0) -> float:
@@ -656,8 +699,10 @@ class Budget:
     """A hard limit on spending. Before each request it fixes max_tokens so that the request
     cannot cost more than what is left; after each request it adds what the API reports."""
 
-    def __init__(self, limit: float, spent: float, model: str, prices: dict, max_tokens: int = MAX_TOKENS):
+    def __init__(self, limit: float, spent: float, model: str, prices: dict, max_tokens: int = MAX_TOKENS,
+                 batch: bool = False):
         self.limit, self.spent, self.model, self.prices, self.max_tokens = limit, spent, model, prices, max_tokens
+        self.batch = batch  # a batch costs batch_discount of the normal price (prices.yaml)
 
     @property
     def left(self) -> float:
@@ -666,8 +711,8 @@ class Budget:
     def fit(self, input_tokens: int, extra: float = 0.0) -> int:
         """max_tokens for a request with this many input tokens, or BudgetExhausted.
         input_tokens gets 5% and 100 tokens of margin, since a count is an estimate."""
-        fixed = (input_tokens * 1.05 + 100) * input_price(self.model, self.prices) + extra
-        room = int((self.left - fixed) / output_price(self.model, self.prices))
+        fixed = (input_tokens * 1.05 + 100) * input_price(self.model, self.prices, self.batch) + extra
+        room = int((self.left - fixed) / output_price(self.model, self.prices, self.batch))
         if room < MIN_OUTPUT:
             raise BudgetExhausted(
                 f"${self.spent:.4f} of ${self.limit:.2f} spent; a request with {input_tokens} input tokens "
@@ -675,7 +720,7 @@ class Budget:
         return min(self.max_tokens, room)
 
     def add(self, usage: dict) -> float:
-        c = cost(usage, self.model, self.prices)
+        c = cost(usage, self.model, self.prices, self.batch)
         self.spent += c
         return c
 
@@ -711,6 +756,88 @@ def review(client, budget: Budget, *, model: str, system: str, message: str, web
             break
         request["messages"] = request["messages"] + [{"role": "assistant", "content": response.content}]
     return final_text(response.content), response.stop_reason, usage
+
+
+# --------------------------------------------------------------------------- a batch
+
+BATCH_POLL = 30  # seconds between two looks at a batch
+BATCH_WAIT = 5 * 3600  # seconds to wait for a batch before it is cancelled (a job may run at most 6 hours)
+
+
+def fit_batch(client, budget: Budget, requests: list) -> tuple[list, list]:
+    """The requests of one batch that fit what is left in the budget, at their worst: every input token
+    counted (free) with 5% and 100 tokens of margin, and every request its full max_tokens
+    (budget.max_tokens). As many as fit go, in order; when not even one fits at full max_tokens, one
+    goes with what is left, if that is at least MIN_OUTPUT. Returns (the requests that fit, with
+    max_tokens; the requests left out, without)."""
+    p_in = input_price(budget.model, budget.prices, budget.batch)
+    p_out = output_price(budget.model, budget.prices, budget.batch)
+    fitted, total = [], 0.0
+    for n, (cid, request) in enumerate(requests):
+        worst = (client.count(request) * 1.05 + 100) * p_in
+        if total + worst + budget.max_tokens * p_out <= budget.left:
+            total += worst + budget.max_tokens * p_out
+            fitted.append((cid, {**request, "max_tokens": budget.max_tokens}))
+            continue
+        if not fitted:
+            room = int((budget.left - worst) / p_out)
+            if room >= MIN_OUTPUT:
+                fitted.append((cid, {**request, "max_tokens": room}))
+                n += 1
+        return fitted, requests[n:]
+    return fitted, []
+
+
+def batch_rounds(client, budget: Budget, requests: list, log=print, wait: float = BATCH_WAIT,
+                 poll: float = BATCH_POLL, sleep=None) -> tuple[dict, list]:
+    """As many batches as it takes: each holds what fits the budget at its worst, and once it has
+    ended, what it really cost frees the rest for the next. Stops when nothing fits or `wait` is used
+    up. Returns (custom_id -> answer, as run_batch; the custom ids that never fitted)."""
+    import time
+
+    answers, left, started = {}, list(requests), time.monotonic()
+    while left:
+        fitted, left = fit_batch(client, budget, left)
+        if not fitted:
+            break
+        log(f"round of {len(fitted)} requests, max_tokens {fitted[0][1]['max_tokens']}; {len(left)} wait for the next")
+        remaining = max(wait - (time.monotonic() - started), poll)
+        answers.update(run_batch(client, budget, fitted, log=log, wait=remaining, poll=poll, sleep=sleep))
+        if time.monotonic() - started >= wait:
+            break
+    return answers, [cid for cid, _ in left]
+
+
+def run_batch(client, budget: Budget, requests: list, log=print, wait: float = BATCH_WAIT,
+              poll: float = BATCH_POLL, sleep=None) -> dict:
+    """Send fitted requests as one batch, wait for it, and add what each answer cost to the budget.
+    A batch that is not done within `wait` seconds is cancelled; what was answered by then counts.
+    Returns custom_id -> {"text", "stop", "usage", "cost", "error"}."""
+    import time
+
+    sleep = sleep or time.sleep
+    batch_id = client.submit(requests)
+    log(f"batch {batch_id}: {len(requests)} requests")
+    waited, cancelled = 0.0, False
+    while (status := client.status(batch_id)) != "ended":
+        if waited >= wait and not cancelled:
+            log(f"batch {batch_id} is not done after {waited / 60:.0f} minutes ({status}): cancelled")
+            client.cancel(batch_id)
+            cancelled = True
+        sleep(poll)
+        waited += poll
+    out = {cid: {"text": "", "stop": "", "usage": empty_usage(), "cost": 0.0, "error": "no result in the batch"}
+           for cid, _ in requests}
+    for cid, answer in client.results(batch_id):
+        if isinstance(answer, Response):
+            c = budget.add(answer.usage)
+            out[cid] = {"text": final_text(answer.content), "stop": answer.stop_reason, "usage": answer.usage,
+                        "cost": c, "error": ""}
+        else:
+            out[cid]["error"] = f"the batch did not answer: {answer}"
+    log(f"batch {batch_id} ended: ${sum(r['cost'] for r in out.values()):.4f}; "
+        f"spent ${budget.spent:.4f} of ${budget.limit:.2f}")
+    return out
 
 
 # --------------------------------------------------------------------------- a run

@@ -4,6 +4,7 @@
 source: https://platform.claude.com/docs/en/about-claude/pricing
 read: 2026-11-13
 web_search_per_1000: 10.00   # web fetch has no charge beyond its tokens
+batch_discount: 0.50   # the Message Batches API: every token type at half price
 models:
   claude-opus-5-5:
     input: 4.00

@@ -1,0 +1,117 @@
+name: referee-pr-testset
+
+# The test set as one pull request (TAX-17): the 60 cases of referee/testset/cases.yaml through the
+# same gate and the same batch as referee-pr, each staged as referee/README.md § Staging a case says.
+# Started by hand, from main. It reads no artifact from outside, only the test set in the repository.
+
+on:
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "ask the referee (costs money, about $1 with Opus 5.5 low); off: code only"
+        type: boolean
+        default: false
+      model:
+        description: "empty: the repository variable REFEREE_MODEL, else claude-opus-5-5"
+        type: string
+        default: ""
+      effort:
+        type: choice
+        options: [low, medium, high]
+        default: low
+      pr_cap:
+        description: "dollars for this run (the ceiling per pull request)"
+        type: string
+        default: "3.00"
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Cache the browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Lint, gate and sources (no key)
+        run: |
+          set -euo pipefail
+          python tools/pr_referee.py gate --testset --output gated/gated.json
+          cat gated/provisional/comment.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: referee-pr-gated-${{ github.run_id }}
+          path: gated/
+          retention-days: 7
+
+  judge:
+    needs: gate
+    if: inputs.live
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    environment: referee
+    concurrency:
+      group: referee-judge
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - uses: actions/download-artifact@v4
+        with:
+          name: referee-pr-gated-${{ github.run_id }}
+          path: ${{ runner.temp }}/gated
+      - name: Judge the rest, as one batch
+        id: judge
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ inputs.model || vars.REFEREE_MODEL || 'claude-opus-5-5' }}
+          EFFORT: ${{ inputs.effort }}
+          PR_CAP: ${{ inputs.pr_cap }}
+          DAY_CAP: ${{ vars.REFEREE_DAY_CAP || '5.00' }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '20.00' }}
+          GATED: ${{ runner.temp }}/gated
+        run: |
+          set -euo pipefail
+          python tools/pr_referee.py judge --gated "$GATED/gated.json" --output verdicts --live \
+            --model "$MODEL" --effort "$EFFORT" --pr-cap "$PR_CAP" --day-cap "$DAY_CAP" --budget "$BUDGET"
+          cat verdicts/score.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.judge.outcome == 'success'
+        with:
+          name: referee-pr-verdicts-${{ github.run_id }}
+          path: verdicts/
+          retention-days: 90
+      - name: Keep the run
+        if: always() && steps.judge.outputs.run_dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.judge.outputs.run_name }}
+          path: ${{ steps.judge.outputs.run_dir }}
+          retention-days: 90
