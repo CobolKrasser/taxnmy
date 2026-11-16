@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for S4–S8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 60 proposals with the expected outcome: 30 good (G01–G28, H01–H02), 30 bad |
+| `testset/cases.yaml` | 65 proposals with the expected outcome: 30 good (G01–G28, H01–H02), 35 bad |
 | `r13-research.md` | the research into whether an AI can be a source (R13) |
 | `prices.yaml` | the prices per model that the harness counts with, with their source |
 | `runs/<run>/` | the results of a measurement, one directory per run |
@@ -25,6 +25,7 @@ The harness is `tools/referee.py`; see [The harness](#the-harness) below.
 | good, AI models | H01–H02 | the AI models of Anthropic and OpenAI: once for a person, good since Fred decided on 13 November that AI models are in TAX |
 | bad, caught by code | B01–B06 | a missing field, a specification (T8), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
 | bad, for the AI | B07–B30 | 5 duplicates in another word order, 4 variants, 2 descriptions, 2 translations, 3 invented products, 2 values that the source does not confirm, 3 wrong publishers, 1 repackaged product, 2 SaaS without versions |
+| bad, past the old gate | B31–B35 | 3 wrong publishers with the product and the versions on a domain of their own (download sites), 2 existing products with a wrong `kind` (TAX-24) |
 
 The good cases are mostly **hold-outs**: an existing product is taken out of the dataset and
 proposed again. Their sources are real, and fase 1 has already checked them. Most bad cases are
@@ -43,7 +44,7 @@ For each case, build a dataset as follows:
      called.
    - With `pass` or `signal`, the case goes to the referee, with the signals.
 
-All 60 cases have been staged this way against `main` (d511371). The lint result of each matches
+All 65 cases have been staged this way against `main` (B31–B35 on 16 November). The lint result of each matches
 its field `lint`.
 
 ### Before the run: check the URLs
@@ -170,9 +171,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of R13: `--condition fetched` (A, the default, all 60 cases), `memory` (M) and `web`
+The conditions of R13: `--condition fetched` (A, the default, all 65 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 60); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 65); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -193,13 +194,24 @@ goes to the referee, never a guess.
 
 | rule | code says *yes* | code says *no* | otherwise |
 | --- | --- | --- | --- |
-| S5 | the registrable domain of `versions.source` is that of the publisher's `source` | – | referee |
+| S5 | the publisher is already in TAX (not in the proposal), `versions.source` was read, and its registrable domain is that of the publisher's `source` | – | referee |
 | S6 | the product name and the publisher name, each at most 40 characters, appear in a source text that was read, capitals and whitespace aside, not glued to other letters or digits | – | referee |
-| S8 | every literal value appears in the text of its own URL, and every source of the product was read | a source is on the domain of an AI chat | referee |
+| S8 | never | a source is on the domain of an AI chat | referee |
 
-- The literal values for S8 are the product name, in the text of the product's `source`, and each
-  code, in the text of its own `source`. A source found *instead of* another does not count here.
-  `kind` is a classification, not a literal value.
+No rule stays untested because code settled another one (TAX-24). Where code checked part of a
+rule that stays with the referee, the `<decided>` block says so in a line `S8 in part: …` or
+`S5 in part: …`; that is a note, not a verdict.
+
+- **S8.** Code looks for the literal values: the product name, in the text of the product's
+  `source`, and each code, in the text of its own `source`, with every source of the product read.
+  A source found *instead of* another does not count. But `kind` is a value too, and a
+  classification that no code reads off, so S8 always goes to the referee; what code found goes
+  along as a note. Before TAX-24 code said S8 *yes* here, and a wrong `kind` reached no one (B34, B35).
+- **S5.** Two URLs on one domain show where the versions are, not who publishes them. For a
+  publisher proposed together with the product, both URLs come from the proposal: a wrong
+  publisher with a site of its own and the versions on that same site passes the comparison
+  (B31–B33). So code says *yes* only for a publisher whose `source` TAX already accepted, and only
+  when the versions source was read itself; a closed source shows nothing (G06).
 - On sites where one domain carries many owners, a shared domain proves nothing: on code hosting
   (`github.com`, …) the owner is the first part of the path, on `*.github.io` and the like the
   label in front; catalogues, package registries and encyclopaedias (`endoflife.date`, `pypi.org`,
@@ -210,7 +222,7 @@ goes to the referee, never a guess.
 
 A **dry run** shows per case what the gate settles and what a live run would ask, and writes it to
 `runs/<time>-dry-fetched/summary.md` (no `results.jsonl`, so it costs the budget nothing). Without
-`--sources` the gate has no texts and settles only S5 and the AI chats. `--replay RUN_DIR` puts the
+`--sources` the gate has no texts and settles only the AI chats. `--replay RUN_DIR` puts the
 gate in front of the answers of an earlier run, to see what it would have changed:
 
 ```
@@ -379,7 +391,7 @@ checkout of the pull request. `parked` writes an accepted entry to the data and 
 list, takes rejected ones off, and keeps the rest with the new reason and date.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 60 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 65 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 

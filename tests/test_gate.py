@@ -30,23 +30,43 @@ def pages(**texts):
 
 class GateTest(unittest.TestCase):
     def test_s5_yes_on_the_publishers_own_domain(self):
-        self.assertEqual(gate.decide(product(), PUBLISHER, None)["S5"]["verdict"], "yes")
+        decided = gate.decide(product(), PUBLISHER, pages(versions="Firmware 1.0"), new_publisher=False)
+        self.assertEqual(decided["S5"]["verdict"], "yes")
 
     def test_s5_left_to_the_ai_on_another_domain(self):
         p = product(versions={"source": "https://releases.other.example/widget-2"})
-        self.assertNotIn("S5", gate.decide(p, PUBLISHER, None))
+        self.assertNotIn("S5", gate.decide(p, PUBLISHER, [page(p["versions"]["source"], "Firmware 1.0")], new_publisher=False))
+
+    def test_s5_only_when_the_versions_source_was_read(self):
+        """TAX-24: a closed versions source shows nothing, wherever it is (G06)."""
+        url = product()["versions"]["source"]
+        for sources in (None, [], [page(url, "", "refused")], [page(url, "", "disallowed")], [page(url, "Not found", "404")],
+                        [Source(url, "200", "Firmware 1.0", instead_of="https://x.example/")]):
+            self.assertNotIn("S5", gate.decide(product(), PUBLISHER, sources, new_publisher=False), sources)
+
+    def test_s5_never_for_a_publisher_proposed_with_the_product(self):
+        """TAX-24: a wrong publisher with a site of its own and the versions on that same site
+        passes the domain comparison. Both URLs come from the proposal, so code proves nothing."""
+        self.assertNotIn("S5", gate.decide(product(), PUBLISHER, pages(versions="Firmware 1.0")))
+        notes = gate.partly(product(), PUBLISHER, pages(versions="Firmware 1.0"), {})
+        self.assertIn("not who publishes them", notes["S5"])
 
     def test_s5_on_a_shared_host_needs_the_same_owner(self):
         pub = {**PUBLISHER, "source": "https://github.com/acme"}
-        self.assertEqual(gate.s5(product(versions={"source": "https://github.com/acme/widget/releases"}), pub)["verdict"], "yes")
-        self.assertIsNone(gate.s5(product(versions={"source": "https://github.com/someone-else/widget/releases"}), pub))
-        self.assertIsNone(gate.s5(product(versions={"source": "https://other.github.io/widget"}), {**PUBLISHER, "source": "https://acme.github.io/"}))
+
+        def s5(versions, publisher=pub):
+            p = product(versions={"source": versions})
+            return gate.s5(p, publisher, {versions: page(versions, "v1.0")}, False)
+
+        self.assertEqual(s5("https://github.com/acme/widget/releases")["verdict"], "yes")
+        self.assertIsNone(s5("https://github.com/someone-else/widget/releases"))
+        self.assertIsNone(s5("https://other.github.io/widget", {**PUBLISHER, "source": "https://acme.github.io/"}))
 
     def test_s5_never_on_a_site_of_many_publishers(self):
-        pub = {**PUBLISHER, "source": "https://endoflife.date/widget"}
-        self.assertIsNone(gate.s5(product(versions={"source": "https://endoflife.date/widget"}), pub))
-        pub = {**PUBLISHER, "source": "https://community.chocolatey.org/"}
-        self.assertIsNone(gate.s5(product(versions={"source": "https://community.chocolatey.org/packages/widget"}), pub))
+        for pub, versions in (("https://endoflife.date/widget", "https://endoflife.date/widget"),
+                              ("https://community.chocolatey.org/", "https://community.chocolatey.org/packages/widget")):
+            p = product(versions={"source": versions})
+            self.assertIsNone(gate.s5(p, {**PUBLISHER, "source": pub}, {versions: page(versions, "v1.0")}, False))
 
     def test_registrable(self):
         self.assertEqual(gate.registrable("support.d-imaging.sony.co.jp"), "sony.co.jp")
@@ -67,29 +87,41 @@ class GateTest(unittest.TestCase):
                          "over 40 characters: maybe a description")
         self.assertNotIn("S6", gate.decide(product(), PUBLISHER, None), "no texts")
 
-    def test_s8_yes_when_every_value_is_in_its_own_source(self):
+    def test_literal_values_found_in_their_own_source(self):
         cpe = "cpe:2.3:h:acme:widget_2"
         p = product(identifiers=[{"cpe": cpe, "source": "https://nvd.example/cpe"}])
         srcs = pages(product="Widget 2", versions="Firmware 1.0") + [page("https://nvd.example/cpe", f"{cpe}:1.0:*:*")]
-        decided = gate.decide(p, PUBLISHER, srcs)
-        self.assertEqual(decided["S8"]["verdict"], "yes")
-        self.assertEqual([e["quote"] for e in decided["S8"]["evidence"]], ["Widget 2", cpe])
+        self.assertEqual([e["quote"] for e in gate.literal(p, gate.own_sources(srcs))["evidence"]], ["Widget 2", cpe])
 
-    def test_s8_left_to_the_ai(self):
+    def test_s8_is_never_yes_by_code_because_of_kind(self):
+        """TAX-24: every literal value found does not make S8 yes: `kind` is a value too, and no
+        code reads it off. S8 goes to the AI, with a note of what code found."""
+        srcs = pages(product="Widget 2", versions="Firmware 1.0")
+        for kind in ("device", "software", "operating-system"):
+            p = product(kind=kind)
+            decided = gate.decide(p, PUBLISHER, srcs, new_publisher=False)
+            self.assertNotIn("S8", decided)
+            self.assertIn("`kind`", gate.partly(p, PUBLISHER, srcs, decided, new_publisher=False)["S8"])
+
+    def test_literal_values_not_found(self):
+        def found(p, srcs):
+            return gate.literal(p, gate.own_sources(srcs)) is not None
+
         p = product(identifiers=[{"cpe": "cpe:2.3:h:acme:widget", "source": "https://nvd.example/cpe"}])
         longer = pages(product="Widget 2", versions="x") + [page("https://nvd.example/cpe", "cpe:2.3:h:acme:widget_2")]
-        self.assertNotIn("S8", gate.decide(p, PUBLISHER, longer), "a longer code is another code")
+        self.assertFalse(found(p, longer), "a longer code is another code")
         elsewhere = pages(product="Widget 2 cpe:2.3:h:acme:widget", versions="x") + [page("https://nvd.example/cpe", "nothing")]
-        self.assertNotIn("S8", gate.decide(p, PUBLISHER, elsewhere), "a value counts only in its own source")
+        self.assertFalse(found(p, elsewhere), "a value counts only in its own source")
         gtin = product(identifiers=[{"gtin": "0812345678904", "source": "https://www.acme.example/widget-2"}])
-        self.assertNotIn("S8", gate.decide(gtin, PUBLISHER, pages(product="Widget 2 EAN 08123456789041", versions="x")))
-        self.assertEqual(gate.decide(gtin, PUBLISHER, pages(product="Widget 2 EAN 0812345678904.", versions="x"))["S8"]["verdict"], "yes")
-        self.assertNotIn("S8", gate.decide(product(), PUBLISHER, pages(product="Widget 2")), "the versions source was not read")
+        self.assertFalse(found(gtin, pages(product="Widget 2 EAN 08123456789041", versions="x")))
+        self.assertTrue(found(gtin, pages(product="Widget 2 EAN 0812345678904.", versions="x")))
+        self.assertFalse(found(product(), pages(product="Widget 2")), "the versions source was not read")
         refused = [page(product()["source"], "Widget 2"), page(product()["versions"]["source"], "", "refused")]
-        self.assertNotIn("S8", gate.decide(product(), PUBLISHER, refused))
+        self.assertFalse(found(product(), refused))
         found_instead = [page(product()["source"], "Widget 2"),
                          Source(product()["versions"]["source"], "200", "Widget 2", instead_of="https://x.example/")]
-        self.assertNotIn("S8", gate.decide(product(), PUBLISHER, found_instead), "a source found instead of another is not its own")
+        self.assertFalse(found(product(), found_instead), "a source found instead of another is not its own")
+        self.assertNotIn("S8", gate.partly(product(), PUBLISHER, refused, {}), "no note when code found nothing")
 
     def test_an_ai_chat_is_never_a_source(self):
         for url in ("https://chatgpt.com/share/abc", "https://claude.ai/share/abc", "https://www.perplexity.ai/search/abc"):

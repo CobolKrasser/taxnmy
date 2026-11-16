@@ -24,7 +24,7 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
     apply     locally, on the branch of the pull request: parked files move to the parking list,
               rejected ones are taken out.
     parked    locally: judge the parking list again (one command).
-    testset   the 60 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 65 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -165,7 +165,7 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             sources = referee.gather_sources(fetcher, st)
             item["sources"] = [asdict(s) for s in sources]
             gone = referee.product_gone(st.files, sources)
-            decided = gate.decide(st.product, st.publisher, sources)
+            decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             item["decided"] = decided
             if gone:
                 settled(item, "reject", "S7", gone)

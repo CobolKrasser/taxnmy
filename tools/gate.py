@@ -8,14 +8,20 @@ else stays with the AI, never a guess.
 
 | rule | code says yes | code says no | otherwise |
 | --- | --- | --- | --- |
-| S5 | the registrable domain of `versions.source` is that of the publisher's `source` | - | AI |
+| S5 | the publisher is already in TAX, `versions.source` was read, and its registrable domain is that of the publisher's `source` | - | AI |
 | S6 | the product name and the publisher name, each at most 40 characters, appear (capitals and whitespace aside) in a source text that was read | - | AI |
-| S8 | every literal value appears in the text of its own URL, and every source of the product was read | a source is on the domain of an AI chat | AI |
+| S8 | never: `kind` is a value no code can read off | a source is on the domain of an AI chat | AI |
 
-The literal values for S8 are the product name, in the text of the product's `source`, and each
-code (cpe, purl, gtin, winget, homebrew), in the text of its own `source`. `kind` is a
-classification, not a literal value; the source of `versions` has no value but itself. Both must
-be read, but are not searched for.
+No rule is left untested because code settled another one (TAX-24). Where code checked part of a
+rule that stays with the AI, `partly` says what it found, and the AI gets that as a note:
+
+- S8: the literal values are the product name, in the text of the product's `source`, and each
+  code (cpe, purl, gtin, winget, homebrew), in the text of its own `source`. Code finds them, but
+  `kind` is a classification, not a literal value, so S8 itself stays with the AI.
+- S5: for a publisher proposed together with the product, both URLs come from the proposal. That
+  they share a domain shows where the versions are, not who publishes them: a wrong publisher
+  with a site of its own and the versions on that same site passes the comparison. Code says yes
+  only for a publisher whose `source` TAX already accepted.
 
 The rules name no brand or product (S9, R3). The domain lists below are classes of sites, not
 exceptions for one product: chat sites of AI models, which are never a source, and hosting sites
@@ -134,15 +140,22 @@ def ai_chat(product: dict, publisher: dict) -> dict | None:
     return None
 
 
-def s5(product: dict, publisher: dict) -> dict | None:
+def same_owner(product: dict, publisher: dict) -> str | None:
+    """The owner of both `versions.source` and the publisher's `source`, or None."""
     versions = (product.get("versions") or {}).get("source")
     pub_source = publisher.get("source")
     if not isinstance(versions, str) or not isinstance(pub_source, str):
         return None
     a, b = owner(versions), owner(pub_source)
-    if a and a == b:
-        return judgment("yes", f"the versions are published on {a}, the publisher's own domain")
-    return None
+    return a if a and a == b else None
+
+
+def s5(product: dict, publisher: dict, own: dict, new_publisher: bool) -> dict | None:
+    """Yes only for a publisher TAX already holds, and a versions source that was read."""
+    domain = same_owner(product, publisher)
+    if domain is None or new_publisher or not read(own.get((product.get("versions") or {}).get("source"))):
+        return None
+    return judgment("yes", f"the versions are published on {domain}, the publisher's own domain, and were read")
 
 
 def s6(product: dict, publisher: dict, texts: dict) -> dict | None:
@@ -161,7 +174,9 @@ def s6(product: dict, publisher: dict, texts: dict) -> dict | None:
                     [{"url": url, "quote": value} for value, url in found.items()])
 
 
-def s8(product: dict, sources: dict) -> dict | None:
+def literal(product: dict, sources: dict) -> dict | None:
+    """The part of S8 code can check: every literal value in the text of its own source, and every
+    source read. Not a judgment on S8: `kind` is not among the values."""
     needed = [u for u in sources_of(product, {}) if u]
     if not needed or not all(read(sources.get(u)) for u in needed):
         return None
@@ -178,27 +193,49 @@ def s8(product: dict, sources: dict) -> dict | None:
         if not isinstance(value, str) or not isinstance(url, str) or not appears(value, sources[url].text, tail):
             return None
         evidence.append({"url": url, "quote": value})
-    return judgment("yes", "every value appears in the text of its own source", evidence)
+    return {"evidence": evidence}
 
 
-def decide(product: dict, publisher: dict, sources: list[Source] | None) -> dict:
+def own_sources(sources: list[Source] | None) -> dict:
+    """url -> the source of that URL itself, not what was found instead of it."""
+    own = {}
+    for s in sources or []:
+        if not s.instead_of and s.url not in own:
+            own[s.url] = s
+    return own
+
+
+def decide(product: dict, publisher: dict, sources: list[Source] | None, new_publisher: bool = True) -> dict:
     """rule -> judgment for the rules code settles; the rules it leaves out go to the AI.
-    `sources` are the fetched sources of the case; None when no texts are at hand (S6 and S8
-    then stay with the AI, except an AI chat)."""
-    out = {}
+    `sources` are the fetched sources of the case; None when no texts are at hand (S5, S6 and S8
+    then stay with the AI, except an AI chat). `new_publisher`: the publisher file is part of the
+    proposal, so its `source` is as unchecked as the rest."""
     chat = ai_chat(product, publisher)
     if chat:
         return {"S8": chat}
-    j = s5(product, publisher)
-    if j:
-        out["S5"] = j
-    if sources is not None:
-        own = {}
-        for s in sources:  # the source of each URL itself, not what was found instead of it
-            if not s.instead_of and s.url not in own:
-                own[s.url] = s
-        texts = {u: s.text for u, s in own.items() if read(s)}
-        for rule, j in (("S6", s6(product, publisher, texts)), ("S8", s8(product, own))):
-            if j:
-                out[rule] = j
+    if sources is None:
+        return {}
+    own = own_sources(sources)
+    texts = {u: s.text for u, s in own.items() if read(s)}
+    out = {}
+    for rule, j in (("S5", s5(product, publisher, own, new_publisher)), ("S6", s6(product, publisher, texts))):
+        if j:
+            out[rule] = j
+    return out
+
+
+def partly(product: dict, publisher: dict, sources: list[Source] | None, decided: dict,
+           new_publisher: bool = True) -> dict:
+    """rule -> what code found of a rule it leaves to the AI: a note for the AI, never a verdict."""
+    out = {}
+    if "S8" in decided:
+        return out
+    if sources is not None and literal(product, own_sources(sources)):
+        out["S8"] = ("code found the name and every code in the text of its own source; `kind` is not a "
+                     "literal value and no code checked it")
+    domain = same_owner(product, publisher)
+    if "S5" not in decided and domain:
+        out["S5"] = (f"the versions source and the publisher's source are both on {domain}; "
+                     + ("both URLs come from this proposal, so that shows where the versions are, not who publishes them"
+                        if new_publisher else "the versions source was not read"))
     return out

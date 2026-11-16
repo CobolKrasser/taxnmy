@@ -38,6 +38,7 @@ REPLIES = {
     "synology/plus-ds224": reply(duplicate_of="synology/ds224-plus", S4=judgment("no")),
     "synology/ds128": reply(),  # never asked: its product source answers 404
     "synology/ds129": reply(),  # wrongly lets an invented product through
+    "synology/ds126": reply(S8=judgment("no", url="https://www.synology.com/en-global/products/DS126")),  # a wrong kind
 }
 
 
@@ -206,8 +207,8 @@ class RefereeTest(unittest.TestCase):
     def test_r13_cases_are_the_default_outside_fetched(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
         self.assertEqual([c.id for c in referee.select(cases, None, "memory")], list(referee.R13_CASES))
-        self.assertEqual(len(referee.select(cases, None, "fetched")), 60)
-        self.assertEqual(len(referee.select(cases, ["all"], "web")), 60)
+        self.assertEqual(len(referee.select(cases, None, "fetched")), 65)
+        self.assertEqual(len(referee.select(cases, ["all"], "web")), 65)
 
     # staging and the message
 
@@ -565,22 +566,53 @@ class RefereeTest(unittest.TestCase):
             "https://www.synology.com/en-global/company")}))
         _, run_dir = referee.run(Args(self.out / "runs", live=False, sources=str(sources)), data_root=FIXTURES / "data", now=NOW, log=QUIET)
         summary = (run_dir / "summary.md").read_text()
-        self.assertIn("| G01 | - | yes | yes | yes | S4, S7 |", summary)
+        self.assertIn("| G01 | - | yes | yes | referee | S4, S7, S8 |", summary, "S8 stays with the referee: `kind`")
         self.assertIn("| B01 | lint S1 | - | - | - | - |", summary)
-        self.assertIn("| G02 | - | yes | referee | referee | S4, S6, S7, S8 |", summary, "its sources were not fetched")
+        self.assertIn("| G02 | - | referee | referee | referee | S4, S5, S6, S7, S8 |", summary, "its sources were not fetched")
 
     def test_the_referee_gets_only_the_rules_code_left(self):
         results, _, client = self.run_fake(cases=["G01"])
         request = client.calls[0]
-        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["S4", "S6", "S7", "duplicate_of"])
-        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["S4", "S6", "S7", "duplicate_of"])
+        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["S4", "S6", "S7", "S8", "duplicate_of"])
+        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["S4", "S6", "S7", "S8", "duplicate_of"])
         message = request["messages"][0]["content"]
         self.assertIn("<decided>\nS5: yes (code: the versions are published on synology.com", message)
-        self.assertIn("Judge only: S4, S6, S7\n</decided>", message)
+        self.assertIn("\nS8 in part: code found the name and every code", message)
+        self.assertIn("`kind` is not a literal value", message)
+        self.assertIn("Judge only: S4, S6, S7, S8\n</decided>", message)
         g01 = results["G01"]
-        self.assertEqual((g01.gate, g01.ai_rules), ({"S5": "yes", "S8": "yes"}, ["S4", "S6", "S7"]))
+        self.assertEqual((g01.gate, g01.ai_rules), ({"S5": "yes"}, ["S4", "S6", "S7", "S8"]))
         self.assertEqual(g01.checked, {r: "yes" for r in referee.RULES})
         self.assertEqual(g01.outcome, "accept")
+
+    def test_a_wrong_kind_with_every_other_value_right_is_not_accepted(self):
+        """TAX-24: code finds the name in its source and the versions source read, but S8 still
+        goes to the referee, so a wrong `kind` can be rejected."""
+        cases = self.out / "cases.yaml"
+        cases.write_text("""cases:
+- id: B31
+  type: wrong-kind
+  expect: [reject, human]
+  rules: [S8]
+  lint: pass
+  proposal:
+    products/synology/ds126.yaml: |
+      key: synology/ds126
+      publisher: synology
+      name: DS126
+      kind: software
+      source: https://www.synology.com/en-global/products/DS126
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS126
+      identifiers: []
+      aliases: []
+""")
+        results, _, client = self.run_fake(testset=str(cases))
+        b31 = results["B31"]
+        self.assertEqual((b31.lint, b31.gate), ("pass", {"S5": "yes"}))
+        self.assertIn("S8", b31.ai_rules)
+        self.assertIn("`kind`", client.calls[0]["messages"][0]["content"])
+        self.assertEqual((b31.outcome, b31.by, b31.rule, b31.right), ("reject", "ai", "S8", True))
 
     def test_a_source_on_an_ai_chat_is_rejected_by_code_and_not_fetched(self):
         cases = self.out / "cases.yaml"
@@ -716,7 +748,7 @@ class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        self.assertEqual(len(self.cases), 60)
+        self.assertEqual(len(self.cases), 65)
         mismatched = {}
         for case in self.cases:
             staged = self.staged[case.id]
@@ -734,23 +766,49 @@ class TestsetTest(unittest.TestCase):
         finally:
             stager.close()
 
-    def gate_rows(self):
-        return {c.id: referee.gate_row(c, self.staged[c.id], None) for c in self.cases}
+    def gate_rows(self, stored=None):
+        return {c.id: referee.gate_row(c, self.staged[c.id], stored) for c in self.cases}
 
     def test_b06_is_rejected_by_code_on_s8(self):
         row = self.gate_rows()["B06"]
         self.assertEqual((row.gate, row.ai_rules), ({"S8": "no"}, []))
 
     def test_breaking_the_domain_comparison_lowers_the_count(self):
-        """TAX-15: without source texts the gate settles S5 by domain alone. Breaking the
-        comparison (no URL has an owner any more) must make that count drop to 0."""
+        """TAX-15: with every source read, the gate settles S5 by domain for the publishers TAX
+        already holds. Breaking the comparison (no URL has an owner any more) must make that count
+        drop to 0, and so must closing every source (TAX-24)."""
         count = lambda rows: referee.gate_counts(list(rows.values()))["per_rule"]["S5"]["yes"]  # noqa: E731
-        settled = count(self.gate_rows())
+        settled = count(self.gate_rows(Readable()))
         with unittest.mock.patch.object(referee.gate, "owner", lambda url: None):
-            broken = count(self.gate_rows())
-        self.assertGreaterEqual(settled, 20, "on 13-14 November 2026 the test set gave 23")
+            broken = count(self.gate_rows(Readable()))
+        self.assertGreaterEqual(settled, 15, "on 16 November 2026 the test set gave 21 with the texts of run A2")
         self.assertEqual(broken, 0)
+        self.assertEqual(count(self.gate_rows(Readable(status="refused"))), 0, "a closed source shows nothing")
+        self.assertEqual(count(self.gate_rows()), 0, "no texts at hand")
 
+    def test_no_rule_is_left_untested_for_the_cases_of_tax_24(self):
+        """TAX-24: with every source read and every value in it, code still leaves S5 to the
+        referee for a publisher proposed on a domain of its own, and S8 (`kind`) for every case."""
+        rows = self.gate_rows(Readable())
+        self.assertEqual([i for i, r in rows.items() if r.gate.get("S8") == "yes"], [])
+        for case in ("B31", "B32", "B33"):
+            self.assertIn("S5", rows[case].ai_rules, case)
+        for case in ("B34", "B35"):
+            self.assertIn("S8", rows[case].ai_rules, case)
+        self.assertEqual(sum(c.id.startswith("B3") and c.type.startswith(("wrong-publisher-own", "wrong-kind"))
+                             for c in self.cases), 5)
+
+
+class Readable:
+    """A fetcher whose every page is read and holds every value: the most code could find."""
+
+    def __init__(self, status="200"):
+        self.status = status
+
+    def fetch(self, url, product=""):
+        if self.status != "200":
+            return referee.Source(url, self.status)
+        return referee.Source(url, "200", f"{product} {url} {PAGE}")
 
 if __name__ == "__main__":
     unittest.main()
