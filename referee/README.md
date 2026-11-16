@@ -308,6 +308,9 @@ who disagrees can say so on the pull request. The test set's *human* is *parked*
     `REFEREE_EFFORT` (default `low`). A pull request from a fork never gets here: code judges it, the
     rest is parked.
   - **report**: the comment, edited on the next run.
+  - Only `workflow_run` starts it: that trigger can read the cache of `main` but not write it, so an
+    artifact from outside cannot poison it (CodeQL, *cache poisoning*). Its jobs that read an artifact
+    save no cache, and keep the artifact outside the checkout.
 
 **Ceilings, in code.** Before the batch is sent, every request is counted (free) and gets the same
 `max_tokens`, so that the whole batch, at its worst, fits the tightest of three:
@@ -339,8 +342,8 @@ python tools/pr_referee.py judge --gated gated/gated.json --live   # and the res
 checkout of the pull request. `parked` writes an accepted entry to the data and takes it off the
 list, takes rejected ones off, and keeps the rest with the new reason and date.
 
-**The test set as a pull request.** Started by hand (*Actions → referee-pr → Run workflow*), the
-workflow runs the 60 cases of the test set through the same gate and the same batch, each staged as
+**The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
+from `main`), the workflow **referee-pr-testset** runs the 60 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 

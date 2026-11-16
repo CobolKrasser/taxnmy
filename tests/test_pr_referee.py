@@ -377,6 +377,19 @@ class WorkflowTest(unittest.TestCase):
                 self.assertNotIn("ref", step.get("with", {}) if "checkout" in step.get("uses", "") else {},
                                  "every checkout is the default branch")
 
+    def test_the_workflow_on_main_cannot_write_the_cache_of_main(self):
+        """workflow_run reads the cache of main but cannot write it; a dispatch could (CodeQL:
+        cache poisoning). So the workflow that reads the artifact of a pull request has no other trigger."""
+        _, wf = self.load("referee-pr.yml")
+        self.assertEqual(set(wf.get("on", wf.get(True))), {"workflow_run"})
+
+    def test_the_test_set_runs_by_hand_and_waits_for_fred(self):
+        text, wf = self.load("referee-pr-testset.yml")
+        self.assertEqual(set(wf.get("on", wf.get(True))), {"workflow_dispatch"})
+        self.assertEqual(wf["jobs"]["judge"]["environment"], "referee")
+        self.assertNotIn("run-id", text, "it reads no artifact of another run")
+        self.assertNotIn("secrets.", yaml.safe_dump(wf["jobs"]["gate"]))
+
     def test_search_and_judge_of_the_measurement_wait_for_fred(self):
         _, wf = self.load("referee.yml")
         self.assertEqual(wf["jobs"]["search"]["environment"], "referee")
