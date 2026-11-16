@@ -1,0 +1,206 @@
+name: referee-pr
+
+# The referee on a pull request (TAX-17), the second half. It runs on main, never with code of the
+# pull request, and reads only the artifact of referee-pr-collect (hosting-taxnmy-publiek.md §4):
+#   gate    no key: checks the artifact strictly, lints the files against the data of main, reads
+#           their sources (with a browser) and runs the gate (S5, S6, S8 by code). Free.
+#   judge   environment referee (the key; Fred approves): one batch for what code left, within a
+#           ceiling per pull request, per day and in all. A pull request from a fork never gets here:
+#           it is judged by code only, the rest is parked.
+#   report  posts the outcome per file as a comment on the pull request.
+# By hand (workflow_dispatch) it runs the test set as if it were one pull request.
+
+on:
+  workflow_run:
+    workflows: [referee-pr-collect]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "ask the referee (costs money); off: code only"
+        type: boolean
+        default: false
+      model:
+        description: "empty: the repository variable REFEREE_MODEL, else claude-opus-5-5"
+        type: string
+        default: ""
+      effort:
+        type: choice
+        options: [low, medium, high]
+        default: low
+      pr_cap:
+        description: "dollars for this run (the ceiling per pull request)"
+        type: string
+        default: "3.00"
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+      actions: read  # the artifact of the collect run
+      pull-requests: read
+    outputs:
+      pending: ${{ steps.gate.outputs.pending }}
+      pr: ${{ steps.pr.outputs.number }}
+    steps:
+      - uses: actions/checkout@v4  # main: the default branch, never the pull request
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Cache the browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Get the data files of the pull request
+        if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v4
+        with:
+          name: referee-pr-proposal
+          path: incoming
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+      - name: Check which pull request it is
+        id: pr
+        if: github.event_name == 'workflow_run'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          number="$(python tools/pr_referee.py pr-number incoming/proposal.json)"
+          head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${number}" --jq .head.sha)"
+          if [ "$head" != "$HEAD_SHA" ]; then
+            echo "::error::The artifact names pull request ${number}, whose head is not the commit of this run"
+            exit 1
+          fi
+          echo "number=${number}" >> "$GITHUB_OUTPUT"
+      - name: Lint, gate and sources (no key)
+        id: gate
+        env:
+          FORK: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_repository.full_name != github.repository }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            python tools/pr_referee.py gate --testset --output gated/gated.json
+          elif [ "$FORK" = "true" ]; then
+            python tools/pr_referee.py gate --proposal incoming/proposal.json --fork --output gated/gated.json
+          else
+            python tools/pr_referee.py gate --proposal incoming/proposal.json --output gated/gated.json
+          fi
+          cat gated/provisional/comment.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: referee-pr-gated-${{ github.run_id }}
+          path: gated/
+          retention-days: 7
+
+  judge:
+    needs: gate
+    if: needs.gate.outputs.pending == 'true' && (github.event_name == 'workflow_run' || inputs.live)
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # a batch may take hours; the harness cancels it after 5
+    environment: referee
+    concurrency:
+      group: referee-judge  # one at a time, so the ceilings cannot be spent twice
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the ceilings
+    outputs:
+      done: ${{ steps.judge.outcome == 'success' }}
+    steps:
+      - uses: actions/checkout@v4  # main
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - uses: actions/download-artifact@v4
+        with:
+          name: referee-pr-gated-${{ github.run_id }}
+          path: gated
+      - name: Judge the rest, as one batch
+        id: judge
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ inputs.model || vars.REFEREE_MODEL || 'claude-opus-5-5' }}
+          EFFORT: ${{ inputs.effort || vars.REFEREE_EFFORT || 'low' }}
+          PR_CAP: ${{ inputs.pr_cap || vars.REFEREE_PR_CAP || '2.00' }}
+          DAY_CAP: ${{ vars.REFEREE_DAY_CAP || '5.00' }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '20.00' }}
+        run: |
+          set -euo pipefail
+          python tools/pr_referee.py judge --gated gated/gated.json --output verdicts --live \
+            --model "$MODEL" --effort "$EFFORT" --pr-cap "$PR_CAP" --day-cap "$DAY_CAP" --budget "$BUDGET"
+          if [ -f verdicts/score.md ]; then cat verdicts/score.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.judge.outcome == 'success'
+        with:
+          name: referee-pr-verdicts-${{ github.run_id }}
+          path: verdicts/
+          retention-days: 90
+      - name: Keep the run
+        if: always() && steps.judge.outputs.run_dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.judge.outputs.run_name }}
+          path: ${{ steps.judge.outputs.run_dir }}
+          retention-days: 90
+
+  report:
+    needs: [gate, judge]
+    if: always() && needs.gate.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      pull-requests: write  # the comment
+    steps:
+      - name: The verdicts of the referee
+        if: needs.judge.outputs.done == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: referee-pr-verdicts-${{ github.run_id }}
+          path: verdicts
+      - name: Or what code settled
+        if: needs.judge.outputs.done != 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: referee-pr-gated-${{ github.run_id }}
+          path: gated
+      - name: Comment on the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ needs.gate.outputs.pr }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          body=verdicts/comment.md
+          if [ ! -f "$body" ]; then body=gated/provisional/comment.md; fi
+          cat "$body" >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$PR" ]; then
+            case "$PR" in *[!0-9]*) echo "::error::not a number"; exit 1;; esac
+            gh pr comment "$PR" -R "$REPO" --edit-last --body-file "$body" 2>/dev/null \
+              || gh pr comment "$PR" -R "$REPO" --body-file "$body"
+          fi
