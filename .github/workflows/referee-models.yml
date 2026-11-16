@@ -59,10 +59,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
-          cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt
       - name: Gather earlier runs
         env:
@@ -72,7 +71,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: referee-sources-final-${{ inputs.sources_run }}
-          path: fetched
+          path: ${{ runner.temp }}/fetched  # outside the checkout
           run-id: ${{ inputs.sources_run }}
           github-token: ${{ github.token }}
       - name: Measure
@@ -85,11 +84,12 @@ jobs:
           BUDGET: ${{ inputs.budget }}
           LIVE: ${{ inputs.live }}
           COUNT: ${{ inputs.count }}
+          FETCHED: ${{ runner.temp }}/fetched
         run: |
           set -euo pipefail
           read -r -a models <<< "$MODELS"
           args=(measure --models "${models[@]}" --repeats "$REPEATS" --effort "$EFFORT" --budget "$BUDGET"
-                --sources fetched/sources.json)
+                --sources "$FETCHED/sources.json")
           if [ "$LIVE" = "true" ]; then args+=(--live); elif [ "$COUNT" = "true" ]; then args+=(--count); fi
           python tools/referee.py "${args[@]}" | tee measure.log
           sed -n '/^| model/,$p' measure.log >> "$GITHUB_STEP_SUMMARY"
