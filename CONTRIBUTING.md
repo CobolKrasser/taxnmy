@@ -68,7 +68,16 @@ aliases: []
    by a vulnerability on its own. A colour, region or packaging variant is not a product of its
    own.
 3. **Find the publisher:** whoever publishes the updates. Add `publishers/<publisher>.yaml` if the
-   file does not exist yet.
+   file does not exist yet. A new publisher names, in `confirmed_by`, a register it does not write
+   itself whose page names its domain (rule TV4):
+
+   ```yaml
+   confirmed_by:
+     register: cve-cna                 # the partner list of the CVE program
+     source: https://www.cve.org/PartnerInformation/ListofPartners/partner/<name>
+   ```
+
+   Without it the proposal is parked for a person.
 4. **Write the key** with the writing rule from the README, from the names as the source writes
    them. Do not shorten, translate or invent a name. If a name is longer than 40 characters, check
    that it is a name and not a description.
@@ -94,6 +103,10 @@ products/example/bad.yaml:5: TR1: 'kind' is a required property
 - An **error** rejects the pull request.
 - A **signal** (a CPE or GTIN that another product also has, or a key with the same words as another key or alias of the same publisher in another order) does not reject it. The referee
   decides with TR4 whether it is a product of its own.
+- A **TV3 signal** (a key or a domain one or two characters from an existing one, or the same once
+  characters that look alike are read as one) does not reject it either, but the proposal is parked
+  for a person. So is a change that moves a source, the publisher or a code of an existing file to
+  another domain or value (TV5).
 
 ## Changing the schema
 

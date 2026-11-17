@@ -11,6 +11,13 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 1.3.0 — 2026-11-17
+
+- Publisher: a new optional field `confirmed_by`, a register the publisher does not write itself
+  that names its domain (rule TV4): a `register` (now `cve-cna`) and a `source`, the page of the
+  register about the publisher. A new publisher is taken in only with one.
+- Existing publisher files stay valid; readers that do not know the field can ignore it.
+
 ## 1.2.0 — 2026-11-13
 
 - Publisher: a new optional field `machine_sources`, a list of the sources the publisher makes for

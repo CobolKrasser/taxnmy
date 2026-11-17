@@ -132,8 +132,8 @@ class GateTest(unittest.TestCase):
         self.assertNotIn("TR8", gate.decide(product(source="https://notchatgpt.com/widget"), PUBLISHER, None))
 
     def test_the_rules_name_no_product_of_the_data(self):
-        """TG4: the gate holds classes of sites (AI chats, hosting, registries), never a product."""
-        text = (REPO / "tools/gate.py").read_text(encoding="utf-8").casefold()
+        """TG4: the gate and the guard hold classes of sites (AI chats, hosting, registries), never a product."""
+        text = "".join((REPO / f"tools/{m}.py").read_text(encoding="utf-8") for m in ("gate", "guard")).casefold()
         keys = [f"{p.parent.name}/{p.stem}" for p in (REPO / "products").glob("*/*.yaml")]
         self.assertGreater(len(keys), 400)
         self.assertEqual([k for k in keys if k in text], [])

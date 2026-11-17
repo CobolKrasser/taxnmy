@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lint the TAXNMY data: the writing rule and referee rules TR1-TR3.
+"""Lint the TAXNMY data: the writing rule, referee rules TR1-TR3 and lookalikes (TV3).
 
 Usage: python tools/lint.py [ROOT] [--changed FILE]
 
@@ -28,6 +28,7 @@ import jsonschema
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import guard  # noqa: E402
 import keyrule  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
@@ -241,6 +242,64 @@ def check_unique_all(records: list, kind: str, findings: list, wanted) -> None:
                 findings.append(Finding(rec.file, rec.line(*path), "TR3", f"{field} {value!r} also appears in {others}; the referee checks with TR4 whether this is a product of its own", "signal"))
 
 
+def check_lookalikes(publishers: list, products: list, findings: list, report: set | None = None) -> None:
+    """TV3: a key or a domain one or two characters from an existing one, or the same once characters
+    that look alike are read as one (tools/guard.py). A signal: the gate holds the proposal for a
+    person. Compared with the files outside `report` (None: with every other file)."""
+    def existing(files: set, rec) -> bool:
+        return bool(files - {rec.file}) if report is None else bool(files - report)
+
+    def wanted(rec) -> bool:
+        return report is None or rec.file in report
+
+    def note(rec, path, what, value, hits, values):
+        for old, why in hits:
+            where = ", ".join(sorted(values[old])[:3])
+            findings.append(Finding(rec.file, rec.line(*path), "TV3",
+                                    f"{what} {value!r} looks like {old!r} ({where}): {why}; a person decides", "signal"))
+
+    keys: dict[str, set] = {}
+    for rec in publishers:
+        for v in [rec.data["key"], *rec.data.get("aliases", [])]:
+            keys.setdefault(v, set()).add(rec.file)
+    for rec in publishers:
+        if wanted(rec):
+            key = rec.data["key"]
+            note(rec, ("key",), "publisher", key,
+                 guard.lookalikes(key, [v for v, f in keys.items() if existing(f, rec)]), keys)
+
+    parts: dict[str, dict[str, set]] = {}
+    for rec in products:
+        for v in [rec.data["key"], *rec.data.get("aliases", [])]:
+            if v.count("/") == 1:
+                pub, part = v.split("/")
+                parts.setdefault(pub, {}).setdefault(part, set()).add(rec.file)
+    for rec in products:
+        if wanted(rec) and rec.data["key"].count("/") == 1:
+            pub, part = rec.data["key"].split("/")
+            same = parts.get(pub, {})
+            note(rec, ("key",), "product", rec.data["key"],
+                 [(f"{pub}/{old}", why) for old, why in guard.lookalikes(part, [v for v, f in same.items() if existing(f, rec)])],
+                 {f"{pub}/{v}": f for v, f in same.items()})
+
+    owners: dict[str, set] = {}
+    mine: dict[str, set] = {}
+    for rec in publishers + products:
+        mine[rec.file] = {o for o in map(guard.owner, guard.urls_in(rec.data)) if o}
+        for o in mine[rec.file]:
+            owners.setdefault(o, set()).add(rec.file)
+    # A domain is new when no other file uses it (outside the pull request, with `report`).
+    known = set(owners) if report is None else {o for o, f in owners.items() if f - report}
+    pool = sorted(known)
+    for rec in publishers + products:
+        if not wanted(rec):
+            continue
+        for o in sorted(mine[rec.file]):
+            if (owners[o] == {rec.file}) if report is None else (o not in known):
+                hits = [(old, why) for old, why in guard.lookalikes(o, pool) if existing(owners[old], rec)]
+                note(rec, ("source",), "domain", o, hits, owners)
+
+
 def validators_for(schema_dir: Path) -> dict:
     return {
         kind: jsonschema.Draft202012Validator(json.loads((schema_dir / f"{kind}.schema.json").read_text(encoding="utf-8")))
@@ -317,6 +376,7 @@ class Dataset:
                 check_product(rec, known, findings)
         check_unique(publishers, "publisher", findings, report)
         check_unique(products, "product", findings, report)
+        check_lookalikes(publishers, products, findings, report)
         return sorted(findings, key=lambda f: (f.file, f.line, f.rule, f.message))
 
 

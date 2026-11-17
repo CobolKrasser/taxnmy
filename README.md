@@ -73,6 +73,8 @@ Software does not need a parent product, such as the operating system it runs on
 The publisher is whoever publishes the updates, under a Latin name the publisher uses itself.
 A publisher file may list the sources it makes for machines (`machine_sources`): an update catalog,
 AppStream metadata or CSAF provider metadata, each with the page of the publisher that names it.
+A new publisher names a register it does not write itself that confirms its domain (`confirmed_by`,
+rule TV4).
 
 ### Versions
 
@@ -146,9 +148,19 @@ Each rule can be checked with yes or no.
 - **TV6 — Being well known is no evidence.** A rule is *yes* only with a quote from the source; what the
   referee knows about a product does not count.
 
-TV6 is in place: every *yes* needs a quote that code finds in the source text. TV1–TV5 are
-being built; until then the test set (`referee/testset/cases.yaml`) holds cases with names and
-domains one or two characters from existing ones, to measure whether the referee reads past them.
+How code applies them (`tools/guard.py`, the lint, and `referee/prompt.md`):
+
+| rule | what code does | outcome |
+| --- | --- | --- |
+| TV1 | Every text from a proposal or a source reaches the referee as data, and cannot write the markers of the message. The referee answers TV1; a *no* quotes the text that addresses it, and code finds that quote. | *reject* |
+| TV2 | The message to the referee holds an `<identity>` block: whether the publisher and each domain is already in TAX, compared character by character. The referee is told not to judge that. | — |
+| TV3 | The lint gives a signal for a publisher key, a product key within its publisher, or a domain that is one or two characters from an existing one, or the same once characters that look alike are read as one (`0` and `o`, `rn` and `m`, …). A difference in digits only (another model number) does not count. | *parked*, with the existing item |
+| TV4 | A new publisher file names, in `confirmed_by`, a register it does not write itself (now `cve-cna`, the partner list of the CVE program) whose page names the domain of the publisher's `source`. | *parked* without it |
+| TV5 | A change to an existing file that moves a source, the publisher, a code or the source of a code to another domain or another value. | *parked* |
+| TV6 | Every *yes* needs a quote that code finds in the source text. | *doubt*, so *parked* |
+
+A proposal held on TV3, TV4 or TV5 still goes to the referee, so that no rule is left untested; a
+*reject* stays a *reject*, anything else is *parked* for a person.
 
 ## Scope
 

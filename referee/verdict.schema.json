@@ -2,16 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/referee/verdict.schema.json",
   "title": "TAXNMY referee verdict",
-  "description": "The answer of the AI referee on one proposal, for rules TR4-TR8. The outcome (accept, reject, alias, human) is computed from it by code; see referee/prompt.md.",
+  "description": "The answer of the AI referee on one proposal, for rules TR4-TR8 and TV1. The outcome (accept, reject, alias, human) is computed from it by code; see referee/prompt.md.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["TR4", "TR5", "TR6", "TR7", "TR8", "duplicate_of"],
+  "required": ["TR4", "TR5", "TR6", "TR7", "TR8", "TV1", "duplicate_of"],
   "properties": {
     "TR4": { "$ref": "#/$defs/own_product" },
     "TR5": { "$ref": "#/$defs/judgment" },
     "TR6": { "$ref": "#/$defs/judgment" },
     "TR7": { "$ref": "#/$defs/judgment" },
     "TR8": { "$ref": "#/$defs/judgment" },
+    "TV1": { "$ref": "#/$defs/judgment" },
     "duplicate_of": {
       "description": "The key of the existing product this proposal duplicates (TR4), or null.",
       "type": ["string", "null"]

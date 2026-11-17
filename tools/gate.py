@@ -32,9 +32,9 @@ from __future__ import annotations
 
 import re
 import unicodedata
-import urllib.parse
 
 from fetch import Source
+from guard import MANY_OWNERS, OWNER_IN_HOST, OWNER_IN_PATH, host_of, on_domain, owner, registrable  # noqa: F401
 
 GATE_RULES = ("TR5", "TR6", "TR8")
 MAX_NAME = 40  # TR6: a longer name may be a description, so the AI judges it
@@ -45,55 +45,10 @@ AI_CHAT_DOMAINS = (
     "copilot.microsoft.com", "chat.deepseek.com", "chat.mistral.ai", "grok.com", "poe.com", "you.com",
 )
 
-# Sites where one registrable domain carries the pages of many owners. On these a shared domain
-# says nothing about who publishes, so TR5 stays with the AI unless the owner is the same too.
-OWNER_IN_PATH = ("github.com", "gitlab.com", "bitbucket.org", "codeberg.org")  # owner: the first path segment
-OWNER_IN_HOST = ("github.io", "gitlab.io", "readthedocs.io", "netlify.app", "vercel.app", "pages.dev",
-                 "sourceforge.io", "blogspot.com", "wordpress.com")  # owner: the label in front
-MANY_OWNERS = (  # never the publisher's own site:
-    # catalogues and encyclopaedias of products
-    "endoflife.date", "wikipedia.org", "wikidata.org", "nist.gov",
-    # package registries and app stores, which carry the packages of many publishers
-    "npmjs.com", "pypi.org", "packagist.org", "nuget.org", "crates.io", "rubygems.org", "docker.com", "docker.io",
-    "chocolatey.org", "brew.sh", "snapcraft.io", "flathub.org", "sourceforge.net", "launchpad.net",
-    # sites where anyone writes
-    "medium.com", "reddit.com",
-)
-
 CODES = ("cpe", "purl", "gtin", "winget", "homebrew")
 
-
-def registrable(host: str) -> str:
-    """example.com from www.example.com; example.co.jp from support.example.co.jp."""
-    labels = host.lower().split(":")[0].strip(".").split(".")
-    if len(labels) >= 3 and len(labels[-1]) == 2 and labels[-2] in {"co", "com", "org", "net", "ac", "gov", "edu", "ne", "or"}:
-        return ".".join(labels[-3:])
-    return ".".join(labels[-2:])
-
-
-def _host(url: str) -> str:
-    return urllib.parse.urlsplit(url).hostname or ""
-
-
-def on_domain(url: str, domains) -> bool:
-    host = _host(url)
-    return any(host == d or host.endswith("." + d) for d in domains)
-
-
-def owner(url: str) -> str | None:
-    """Who a URL belongs to, as far as its address shows; None when the address cannot show it."""
-    parts = urllib.parse.urlsplit(url)
-    host = (parts.hostname or "").lower()
-    domain = registrable(host)
-    if domain in MANY_OWNERS:
-        return None
-    if domain in OWNER_IN_PATH:
-        segment = parts.path.strip("/").split("/")[0].lower()
-        return f"{domain}/{segment}" if segment else None
-    if domain in OWNER_IN_HOST:
-        labels = host.split(".")
-        return ".".join(labels[-3:]) if len(labels) >= 3 else None
-    return domain or None
+# Domains and owners (registrable, owner and the lists of sites with many owners) are in tools/guard.py,
+# which the lint shares (TV3). The lists there are classes of sites, not products.
 
 
 def normalise(text: str) -> str:

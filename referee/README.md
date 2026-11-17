@@ -125,6 +125,9 @@ Two proposals for `tools/lint.py`, from building this testset:
 2. **Publishers, like TR3 for products:** a signal when a new publisher key shares its first word
    with an existing one (`alibaba` and `alibaba-cloud`). G24 and G25 test this.
 
+3. ~~**Lookalikes (TV3):** a signal for a key or a domain one or two characters from an existing
+   one.~~ Built in the lint (TAX-31, `tools/guard.py`). B39–B44 test it.
+
 A finding from fase 1 that is not part of this testset: the source of several publishers is an
 endoflife.date page (`alibaba`, `caddy`, `elastic`). That page shows the product, not who publishes
 it. TR5 needs a page of the publisher itself. The base run will show how often the referee doubts on
@@ -173,9 +176,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 65 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 77 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 65); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 77); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -319,7 +322,7 @@ python tools/referee.py measure --efforts low medium --sources sources.json --li
 3. **The report** `runs/model-measurement-<time>.md`: per stand and per run the bad cases let
    through, the good cases rejected, the cases for a person (*human*; *parked* in the PR mode) and
    the rules that left them there, the cases whose outcome differs between the runs, the quotes code
-   did not find (an TR4 without a version among them), the output tokens and the cost per proposal;
+   did not find (a TR4 without a version among them), the output tokens and the cost per proposal;
    and `compare` with A2.
 
 **The estimate** without `--live`: the input tokens of A2 (or, with `--count`, those counted), and
@@ -335,6 +338,14 @@ on a page of news about it (B30). The test set now holds five cases of a service
 (B29, B30, B36–B38) and six of a name or domain one or two characters from an existing one
 (B39–B44, rules TV2 and TV3). The outcomes of the first and the second measurement are therefore not
 comparable one to one: the prompt differs.
+
+**Protection against intent (TAX-31).** Since then the referee also answers TV1 (no text addresses
+the referee), and the message holds an `<identity>` block (TV2). Code holds a case for a person on
+TV3, TV4 or TV5, whatever the referee answers (`prompt.md` § Outcome): B39–B44 on TV3, B46 on TV4,
+B47 on TV5, and the good cases that propose a publisher as new (G17–G19, G24, G25, H01, H02) on TV4,
+because no register confirms their domain. Those good cases now expect *human*. B45 has a name that
+addresses the referee (TV1). The prompt changed again, so a new measurement is needed before the
+referee judges with it.
 
 As an Action: **referee-models** (*Actions → referee-models → Run workflow*). Its job `sources`
 keeps the sources of A2 (artifact `referee-sources-final-43462875320`, kept until 11 February 2027)
@@ -411,7 +422,7 @@ checkout of the pull request. `parked` writes an accepted entry to the data and 
 list, takes rejected ones off, and keeps the rest with the new reason and date.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 65 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 77 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 
