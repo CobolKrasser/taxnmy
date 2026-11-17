@@ -59,7 +59,7 @@ from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of
 REPO = Path(__file__).resolve().parent.parent
 REFEREE = REPO / "referee"
 RULES = ("TR4", "TR5", "TR6", "TR7", "TR8", "TV1")  # the rules the AI referee answers
-HELD = ("TV3", "TV4", "TV5")  # rules code holds a proposal on for a person, whatever the referee answers
+HELD = ("TV3", "TV5")  # rules code holds a proposal on for a person, whatever the referee answers
 OUTCOMES = ("accept", "reject", "alias", "human")
 CONDITIONS = ("fetched", "memory", "web")
 BUDGET = 50.00  # dollars, every run in referee/runs together (Fred, 17 November 2026; it was $20)
@@ -93,7 +93,7 @@ CASE_SCHEMA = {
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
         "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TR[1-8]|TV[1-6])$"}},
         "alias_of": {"type": "string"},
-        "lint": {"type": "string", "pattern": "^(pass|signal|error TR[1-3])$"},
+        "lint": {"type": "string", "pattern": "^(pass|signal|error (TR[1-3]|TV4))$"},
         "holdout": {"type": "array", "items": {"type": "string"}},
         "hide": {"type": "array", "items": {"type": "string"}},
         "context": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -284,6 +284,9 @@ class Stager:
                 key = data.get("key")
                 there = isinstance(key, str) and self._text(f"publishers/{key}.yaml") is not None
                 lines.append(f"publisher {key}: " + ("already in TAX" if there else "new to TAX"))
+                second = data.get("second_source")
+                lines.append(f"publisher {key}: " + (f"gives a second source, {second}" if isinstance(second, str)
+                                                     else "gives no second source"))
             for o in sorted({o for o in map(guard.owner, guard.urls_in(data)) if o} - seen):
                 seen.add(o)
                 pubs = sorted(p for p in by_owner.get(o, ()) if isinstance(p, str))
@@ -434,21 +437,44 @@ def held_by_code(files: dict, findings: list, old: dict) -> dict:
     return held
 
 
-def hold(staged: "Staged", sources: list | None) -> dict:
-    """Every rule code holds the proposal on (HELD): TV3 and TV5 of the staging, and TV4 for each
-    new publisher file of the proposal, checked against the texts that were read."""
-    held = dict(staged.held)
-    texts = {u: s.text for u, s in gate.own_sources(sources).items() if gate.read(s)} if sources else {}
+def hold(staged: "Staged", sources: list | None = None) -> dict:
+    """Every rule code holds the proposal on (HELD): TV3 and TV5 of the staging. `sources` is not
+    used: what code holds on needs no text."""
+    return {r: staged.held[r] for r in HELD if r in staged.held}
+
+
+def proposed_publishers(staged: "Staged") -> list[tuple[str, dict]]:
+    """(path, data) of every publisher file in the proposal, new or changed."""
+    out = []
     for rel, text in staged.files.items():
-        if rel.startswith("publishers/") and rel not in staged.old:
+        if rel.startswith("publishers/"):
             try:
                 data = yaml.safe_load(text)
             except yaml.YAMLError:
                 continue
-            ok, why = guard.confirmation(data if isinstance(data, dict) else {}, texts)
-            if not ok:
-                held["TV4"] = f"{rel}: {why}"
-    return {r: held[r] for r in HELD if r in held}
+            if isinstance(data, dict):
+                out.append((rel, data))
+    return out
+
+
+def second_source_fault(staged: "Staged", sources: list | None) -> str:
+    """TV4: why a second source that a proposed publisher file gives does not pass, or ''. A second
+    source is optional; one that is given must be readable, off the publisher's domain, and name it.
+    Without texts (`sources` None) nothing is checked."""
+    if sources is None:
+        return ""
+    texts = {u: s.text for u, s in gate.own_sources(sources).items() if gate.read(s)}
+    for rel, data in proposed_publishers(staged):
+        try:
+            before = yaml.safe_load(staged.old[rel]) if rel in staged.old else None
+        except yaml.YAMLError:
+            before = None
+        if isinstance(before, dict) and before.get("second_source") == data.get("second_source"):
+            continue  # a second source TAX already holds is not read again
+        why = guard.second_source(data, texts)
+        if why:
+            return f"{rel}: {why}"
+    return ""
 
 
 def held_outcome(outcome: str, rule: str, held: dict) -> tuple[str, str]:
@@ -488,6 +514,10 @@ def case_urls(staged: "Staged") -> list[str]:
     urls = urls_of(staged.files)
     if staged.publisher_source and staged.publisher_source not in urls:
         urls.append(staged.publisher_source)
+    for _, data in proposed_publishers(staged):
+        second = data.get("second_source")
+        if isinstance(second, str) and second.startswith(("http://", "https://")) and second not in urls:
+            urls.append(second)
     return urls
 
 
@@ -997,7 +1027,7 @@ class Result:
     cost: float = 0.0
     gate: dict = field(default_factory=dict)  # rule -> verdict, for the rules the gate settled (tools/gate.py)
     ai_rules: list = field(default_factory=list)  # the rules the referee was asked
-    held: dict = field(default_factory=dict)  # rule -> reason: held for a person by code (TV3-TV5)
+    held: dict = field(default_factory=dict)  # rule -> reason: held for a person by code (TV3, TV5)
 
 
 def spent_before(out: Path) -> float:
@@ -1142,11 +1172,13 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     fetched[source_key(s.url, s.product) + (f" | for {s.instead_of}" if s.instead_of else "")] = asdict(s)
                 res.sources = [[s.url, s.status] for s in sources]
                 gone = product_gone(st.files, sources)
-                if gone:
-                    # The page that should show the product does not exist: rejected on TR7 by code.
-                    res.by, res.outcome, res.rule, res.error = "code", "reject", "TR7", gone
+                wrong = second_source_fault(st, sources if args.condition == "fetched" else None)
+                if gone or wrong:
+                    # The page that should show the product does not exist (TR7), or a second source that
+                    # is given does not pass (TV4): rejected by code.
+                    res.by, res.outcome, res.rule, res.error = "code", "reject", "TR7" if gone else "TV4", gone or wrong
                     res.right = res.outcome in case.expect
-                    log(f"{case.id}: reject (code, {gone}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+                    log(f"{case.id}: reject (code, {gone or wrong}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
                     results.append(res)
                     jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
                     jsonl.flush()
@@ -1394,7 +1426,7 @@ class GateRow:
     settled: str = ""  # what stopped the case before the gate: a lint error, a lint mismatch or a 404
     gate: dict = field(default_factory=dict)  # rule -> verdict, for the rules code settled
     ai_rules: list = field(default_factory=list)  # the rules left for the referee
-    held: list = field(default_factory=list)  # the rules code holds the case on for a person (TV3-TV5)
+    held: list = field(default_factory=list)  # the rules code holds the case on for a person (TV3, TV5)
     before: str = ""  # replay: the outcome in the earlier run
     after: str = ""  # replay: the outcome with the gate in front of the same answers
 
@@ -1415,6 +1447,9 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
     sources = gather_sources(stored, st) if stored is not None else None
     if sources is not None and product_gone(st.files, sources):
         row.settled = "TR7 404"
+        return row
+    if second_source_fault(st, sources):
+        row.settled = "TV4 second source"
         return row
     decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
     row.gate = {r: j["verdict"] for r, j in decided.items()}

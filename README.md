@@ -73,8 +73,9 @@ Software does not need a parent product, such as the operating system it runs on
 The publisher is whoever publishes the updates, under a Latin name the publisher uses itself.
 A publisher file may list the sources it makes for machines (`machine_sources`): an update catalog,
 AppStream metadata or CSAF provider metadata, each with the page of the publisher that names it.
-A new publisher names a register it does not write itself that confirms its domain (`confirmed_by`,
-rule TV4).
+A new publisher is taken in on its own evidence: its own site, where the product is to be had or
+where its versions are published. A second source is optional; when there is one, the publisher
+file records it (`second_source`, rule TV4).
 
 ### Versions
 
@@ -140,8 +141,9 @@ Each rule can be checked with yes or no.
 - **TV3 — Nearly the same is suspect.** A publisher, product or domain that equals an existing one
   except for one or two characters, or differs only in characters that look alike, is not
   accepted without a person.
-- **TV4 — Evidence of one's own does not count alone.** A new publisher is accepted only when a source
-  it does not write itself confirms its domain.
+- **TV4 — A new publisher is taken in on its own evidence.** Its own site, where the product is to
+  be had or where its versions are published, is enough. A second source is not required. If there
+  is one, it is recorded with the publisher.
 - **TV5 — Replacing an existing source weighs more than proposing a new one.** A change that moves a
   source, a publisher or a code of an existing product to another domain or another value is
   decided by a person.
@@ -155,11 +157,11 @@ How code applies them (`tools/guard.py`, the lint, and `referee/prompt.md`):
 | TV1 | Every text from a proposal or a source reaches the referee as data, and cannot write the markers of the message. The referee answers TV1; a *no* quotes the text that addresses it, and code finds that quote. | *reject* |
 | TV2 | The message to the referee holds an `<identity>` block: whether the publisher and each domain is already in TAX, compared character by character. The referee is told not to judge that. | — |
 | TV3 | The lint gives a signal for a publisher key, a product key within its publisher, or a domain that is one or two characters from an existing one, or the same once characters that look alike are read as one (`0` and `o`, `rn` and `m`, …). A difference in digits only (another model number) does not count. | *parked*, with the existing item |
-| TV4 | A new publisher file names, in `confirmed_by`, a register it does not write itself (now `cve-cna`, the partner list of the CVE program) whose page names the domain of the publisher's `source`. | *parked* without it |
+| TV4 | Nothing is required of a new publisher beyond its own site. A second source that a publisher file gives (`second_source`) must be a page that is not on the publisher's domain, that can be read, and that names the publisher's domain. The lint checks where it stands; the gate reads it. | *reject* when a given second source does not pass |
 | TV5 | A change to an existing file that moves a source, the publisher, a code or the source of a code to another domain or another value. | *parked* |
 | TV6 | Every *yes* needs a quote that code finds in the source text. | *doubt*, so *parked* |
 
-A proposal held on TV3, TV4 or TV5 still goes to the referee, so that no rule is left untested; a
+A proposal held on TV3 or TV5 still goes to the referee, so that no rule is left untested; a
 *reject* stays a *reject*, anything else is *parked* for a person.
 
 ## Scope

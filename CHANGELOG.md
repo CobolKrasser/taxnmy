@@ -13,9 +13,10 @@ The version follows [Semantic Versioning](https://semver.org/):
 
 ## 1.3.0 — 2026-11-17
 
-- Publisher: a new optional field `confirmed_by`, a register the publisher does not write itself
-  that names its domain (rule TV4): a `register` (now `cve-cna`) and a `source`, the page of the
-  register about the publisher. A new publisher is taken in only with one.
+- Publisher: a new optional field `second_source`, a page the publisher does not write itself that
+  names its domain (rule TV4). A new publisher is taken in without one; when it is given, it is
+  recorded with the publisher, and code checks that it is not on the publisher's domain and that
+  it names that domain.
 - Existing publisher files stay valid; readers that do not know the field can ignore it.
 
 ## 1.2.0 — 2026-11-13

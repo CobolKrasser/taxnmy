@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 65 proposals with the expected outcome: 30 good (G01–G28, H01–H02), 35 bad |
+| `testset/cases.yaml` | 79 proposals with the expected outcome: 31 good (G01–G29, H01–H02), 48 bad |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
 | `prices.yaml` | the prices per model that the harness counts with, with their source |
 | `runs/<run>/` | the results of a measurement, one directory per run |
@@ -21,11 +21,12 @@ The harness is `tools/referee.py`; see [The harness](#the-harness) below.
 
 | group | cases | kinds |
 | --- | --- | --- |
-| good | G01–G28 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 TR4 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right |
+| good | G01–G29 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 TR4 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right; 1 small publisher with only its own site (G29) |
 | good, AI models | H01–H02 | the AI models of Anthropic and OpenAI: once for a person, good since Fred decided on 13 November that AI models are in TAX |
 | bad, caught by code | B01–B06 | a missing field, a specification (TP9), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
 | bad, for the AI | B07–B30 | 5 duplicates in another word order, 4 variants, 2 descriptions, 2 translations, 3 invented products, 2 values that the source does not confirm, 3 wrong publishers, 1 repackaged product, 2 SaaS without versions |
 | bad, past the old gate | B31–B35 | 3 wrong publishers with the product and the versions on a domain of their own (download sites), 2 existing products with a wrong `kind` (TAX-24) |
+| bad, protection against intent | B39–B48 | 6 names or domains one or two characters from an existing one (TV3), a name that addresses the referee (TV1), a second source on the publisher's own site (TV4), a versions source moved to someone else (TV5), a new publisher whose site has nothing to download and no versions |
 
 The good cases are mostly **hold-outs**: an existing product is taken out of the dataset and
 proposed again. Their sources are real, and fase 1 has already checked them. Most bad cases are
@@ -59,7 +60,7 @@ plain HTTP request. All load, except these:
 The cases say what that means for the expected outcome. Before the run, fetch them again with the
 fetcher of the run, and check:
 
-- **Good cases** (G26–G28, H01, H02) and the real pages in bad cases (B25, B26, B28–B30): the
+- **Good cases** (G26–G29, H01, H02) and the real pages in bad cases (B25, B26, B28–B30): the
   page must load and show what the case says. If it does not, replace the URL with one that does,
   or drop the case and say so in the result.
 - **Invented products** (B20–B22): the page must *not* show the product. An error is fine. So is a
@@ -74,7 +75,7 @@ An outcome is right when it is in `expect`. Report:
 | measure | target |
 | --- | --- |
 | bad cases let through (outcome *accept* on B01–B30) | **0** |
-| good cases rejected (outcome *reject* or *alias* on G01–G28) | as few as possible; report each one |
+| good cases rejected (outcome *reject* or *alias* on G01–G29, H01–H02) | as few as possible; report each one |
 | cases sent to a person (outcome *human*) | report the number; each costs Fred time |
 | on a bad case: did the right rule say *no*? | report per rule, from `rules` |
 | cost per proposal | input and output tokens, and dollars |
@@ -176,9 +177,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 77 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 79 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 77); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 79); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -341,10 +342,14 @@ comparable one to one: the prompt differs.
 
 **Protection against intent (TAX-31).** Since then the referee also answers TV1 (no text addresses
 the referee), and the message holds an `<identity>` block (TV2). Code holds a case for a person on
-TV3, TV4 or TV5, whatever the referee answers (`prompt.md` § Outcome): B39–B44 on TV3, B46 on TV4,
-B47 on TV5, and the good cases that propose a publisher as new (G17–G19, G24, G25, H01, H02) on TV4,
-because no register confirms their domain. Those good cases now expect *human*. B45 has a name that
-addresses the referee (TV1). The prompt changed again, so a new measurement is needed before the
+TV3 or TV5, whatever the referee answers (`prompt.md` § Outcome): B39–B44 on TV3 and B47 on TV5.
+A new publisher is taken in on its own evidence (TV4); a second source is optional, and one that is
+given and does not pass is rejected by code: B46 gives one on its own site, which the lint rejects.
+The good cases that propose a publisher as new (G17–G19, G24, G25, H01, H02) expect what they
+expected before. G29 is a small publisher with only its own site and a download page (*accept*);
+B48 a new publisher whose site has nothing to download and no versions (not *accept*). B45 has a
+name that addresses the referee (TV1). The `<identity>` block says whether a new publisher gives a
+second source, and judges nothing. The prompt changed again, so a new measurement is needed before the
 referee judges with it.
 
 As an Action: **referee-models** (*Actions → referee-models → Run workflow*). Its job `sources`
@@ -422,7 +427,7 @@ checkout of the pull request. `parked` writes an accepted entry to the data and 
 list, takes rejected ones off, and keeps the rest with the new reason and date.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 77 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 79 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 

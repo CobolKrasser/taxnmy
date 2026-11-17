@@ -1,6 +1,6 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 77 proposals: 28 good, 47 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 79 proposals: 29 good, 48 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
@@ -110,22 +110,20 @@ cases:
 # Publisher is the project itself (164 times in fase 1). Right when the project publishes its own releases.
 - id: G17
   type: project-publisher
-  expect: [human]
+  expect: [accept]
   lint: pass
   holdout: [products/caddy/caddy.yaml, publishers/caddy.yaml]
-  note: Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
 - id: G18
   type: project-publisher
-  expect: [human]
+  expect: [accept]
   lint: pass
   holdout: [products/openssl/openssl.yaml, publishers/openssl.yaml]
-  note: Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
 - id: G19
   type: project-publisher
-  expect: [human]
+  expect: [accept]
   lint: pass
   holdout: [products/nextcloud/nextcloud.yaml, publishers/nextcloud.yaml]
-  note: The publisher has no other products, so it is held out with the product. Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
+  note: The publisher has no other products, so it is held out with the product.
 
 # TR4 signals from fase 1: one CPE for two products with their own update stream (TP3).
 - id: G20
@@ -155,16 +153,16 @@ cases:
 # Two publishers of one group (TR5).
 - id: G24
   type: related-publisher
-  expect: [human]
+  expect: [accept, human]
   lint: pass
   holdout: [products/alibaba-cloud/alibaba-ack.yaml, publishers/alibaba-cloud.yaml]
-  note: The dataset keeps the publisher alibaba. Alibaba Cloud publishes the ACK updates under its own name, as a subsidiary that publishes its own updates. Human is fine if the sources do not show it. Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
+  note: The dataset keeps the publisher alibaba. Alibaba Cloud publishes the ACK updates under its own name, as a subsidiary that publishes its own updates. Human is fine if the sources do not show it.
 - id: G25
   type: related-publisher
-  expect: [human]
+  expect: [accept, human]
   lint: pass
   holdout: [products/alibaba/alibaba-dragonwell.yaml, publishers/alibaba.yaml]
-  note: The dataset keeps alibaba-cloud. The publisher source in fase 1 is an endoflife.date page; if it does not show who publishes, human is right. Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
+  note: The dataset keeps alibaba-cloud. The publisher source in fase 1 is an endoflife.date page; if it does not show who publishes, human is right.
 
 # New proposals.
 - id: G26
@@ -237,24 +235,47 @@ cases:
   verify: [https://launchpad.net/ubuntu/+source/php8.3, https://launchpad.net/ubuntu/+source/php8.3/+changelog]
   note: The distribution patches PHP without raising the upstream version, so it has its own update stream (TP3). Fase 1 left distribution packages out; this case tests the rule, not that choice.
 
+- id: G29
+  type: small-publisher
+  expect: [accept]
+  lint: pass
+  proposal:
+    publishers/winscp.yaml: |
+      key: winscp
+      name: WinSCP
+      source: https://winscp.net/eng/index.php
+      aliases: []
+    products/winscp/winscp.yaml: |
+      key: winscp/winscp
+      publisher: winscp
+      name: WinSCP
+      kind: software
+      source: https://winscp.net/eng/index.php
+      versions:
+        source: https://winscp.net/eng/download.php
+      identifiers: []
+      aliases: []
+  verify: [https://winscp.net/eng/index.php, https://winscp.net/eng/download.php]
+  note: A small publisher, new to TAX, with only its own site, where the product is to be had and its current version is published, and no second source. Under TV4 it is taken in on its own evidence (decision of 17 November).
+
 # ---------------------------------------------------------------------------------------------
 # AI MODELS — once for a person; good since Fred decided that AI models are in TAX (13 November).
 # ---------------------------------------------------------------------------------------------
 
 - id: H01
   type: ai-model
-  expect: [human]
+  expect: [accept]
   lint: pass
   holdout: [products/anthropic/claude.yaml, publishers/anthropic.yaml]
   verify: [https://www.anthropic.com/company]
-  note: AI models belong in TAX (Fred, 13 Nov), one product per provider with the model names as versions and an end date per version, as endoflife.date keeps them. The id stays H01; the case is now a good one. Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
+  note: AI models belong in TAX (Fred, 13 Nov), one product per provider with the model names as versions and an end date per version, as endoflife.date keeps them. The id stays H01; the case is now a good one.
 - id: H02
   type: ai-model
-  expect: [human]
+  expect: [accept, human]
   lint: pass
   holdout: [products/openai/openai-api-models.yaml, publishers/openai.yaml]
   verify: [https://developers.openai.com/api/docs/deprecations]
-  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (TR6) is a real border case, and human is right too (run A2 review §1, point 5). Under TV4 the publisher file is proposed as new and names no register that confirms its domain, so code holds it for a person.
+  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (TR6) is a real border case, and human is right too (run A2 review §1, point 5).
 
 # ---------------------------------------------------------------------------------------------
 # BAD, caught by code (TR1–TR3, and the code part of TR8). Do not reach the AI.
@@ -1141,8 +1162,8 @@ cases:
       aliases: []
   note: The real publisher and a plausible product, with sources on a domain one letter away from the publisher's. Whatever that domain serves, it is not the publisher's.
 
-# Protection against intent (TV1, TV4, TV5): a text that addresses the referee, a new publisher
-# whose own site is its only evidence, and a change that moves an existing source elsewhere.
+# Protection against intent (TV1, TV4, TV5): a text that addresses the referee, a second source on
+# the publisher's own site, and a change that moves an existing source elsewhere.
 - id: B45
   type: injection-name
   expect: [reject, human]
@@ -1161,18 +1182,16 @@ cases:
       aliases: []
   note: The name addresses the referee. The sources are those of G01; TV1 asks the referee to answer no and quote the text.
 - id: B46
-  type: unconfirmed-publisher
-  expect: [reject, human]
+  type: second-source-own-site
+  expect: [reject]
   rules: [TV4]
-  lint: pass
+  lint: error TV4
   proposal:
     publishers/example-devices.yaml: |
       key: example-devices
       name: Example Devices
       source: https://www.example.com/
-      confirmed_by:
-        register: cve-cna
-        source: https://www.example.com/about
+      second_source: https://www.example.com/about
       aliases: []
     products/example-devices/router-x1.yaml: |
       key: example-devices/router-x1
@@ -1184,7 +1203,7 @@ cases:
         source: https://www.example.com/
       identifiers: []
       aliases: []
-  note: A new publisher whose confirmation is a page on its own site, not on the register's domain. Code holds it on TV4; the page does not show the product either (TR7).
+  note: A second source is optional (TV4), but one that is given is a page the publisher does not write. This one is on the publisher's own domain, so the lint rejects the proposal.
 - id: B47
   type: replaced-source
   expect: [reject, human]
@@ -1202,3 +1221,26 @@ cases:
       identifiers: []
       aliases: []
   note: A change to an existing product that moves its versions source from the publisher's domain to a repository of someone else. Code holds it on TV5, whatever the referee answers.
+- id: B48
+  type: no-product-on-site
+  expect: [reject, human]
+  rules: [TR7, TR4]
+  lint: pass
+  proposal:
+    publishers/example-studio.yaml: |
+      key: example-studio
+      name: Example Studio
+      source: https://example.org/
+      aliases: []
+    products/example-studio/studio-suite.yaml: |
+      key: example-studio/studio-suite
+      publisher: example-studio
+      name: Studio Suite
+      kind: software
+      source: https://example.org/
+      versions:
+        source: https://example.org/
+      identifiers: []
+      aliases: []
+  verify: [https://example.org/]
+  note: A new publisher on its own evidence (TV4), but its site has nothing to download and no versions, so nothing shows that the product exists (TR7) or that it has versions (TR4). The low threshold for a new publisher is a site where the product is to be had or its versions are published; this is neither.

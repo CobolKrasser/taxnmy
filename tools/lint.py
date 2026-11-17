@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lint the TAXNMY data: the writing rule, referee rules TR1-TR3 and lookalikes (TV3).
+"""Lint the TAXNMY data: the writing rule, referee rules TR1-TR3 and lookalikes (TV3), and where a second source stands (TV4).
 
 Usage: python tools/lint.py [ROOT] [--changed FILE]
 
@@ -124,6 +124,9 @@ def check_publisher(rec: Record, findings: list) -> None:
         _s2(rec, findings, ("key",), [f"key {key!r} does not match the file name; expected publishers/{key}.yaml"])
     for i, alias in enumerate(rec.data.get("aliases", [])):
         _s2(rec, findings, ("aliases", i), keyrule.part_problems(alias, "alias"))
+    wrong = guard.second_source_place(rec.data)
+    if wrong:
+        findings.append(Finding(rec.file, rec.line("second_source"), "TV4", wrong))
 
 
 def check_product(rec: Record, publishers: set, findings: list) -> None:

@@ -113,6 +113,7 @@ Judge only: {the rules left for the referee}
 
 <identity>
 {for each proposed publisher file: "publisher {key}: already in TAX" or "new to TAX"}
+{for each proposed publisher file: "publisher {key}: gives a second source, {url}" or "gives no second source"}
 {for each domain of the proposal's URLs: "domain {domain}: in TAX for the publisher(s) …" or "new to TAX"}
 </identity>
 
@@ -134,6 +135,9 @@ Judge only: {the rules left for the referee}
 The `<identity>` block is what code found about *who* the proposal is (TV2): the same as an existing
 publisher or domain, or new, compared character by character. A name or domain that only looks like
 an existing one is a TV3 signal of the lint, in `<signals>`. The referee never answers that question.
+A new publisher is taken in on its own evidence: its own site, where the product is to be had or
+where its versions are published (TV4). A second source is optional, and code checks one that is
+given; that a publisher gives none is no reason for a *no* or a *doubt*.
 
 Every text taken from a proposal or a source goes in *inert* (TV1): the `<` of anything that looks
 like one of the markers above (`<source>`, `</sources>`, `<decided>`, …) becomes `&lt;`, so that a
@@ -187,20 +191,20 @@ Code computes the outcome from the answer:
 | no rule is "no", and at least one is "doubt" | **human** |
 | all rules are "yes" | **accept** |
 
-Code holds a proposal for a person on TV3, TV4 or TV5 (`tools/guard.py`), whatever the referee
+Code holds a proposal for a person on TV3 or TV5 (`tools/guard.py`), whatever the referee
 answers: what would be *accept* or *human* is then *human* (*parked* on a pull request) on that rule.
 A *reject* or an *alias* stays. The referee is asked all the same, so that no rule is left untested
 because code held the proposal on another one (TR11).
 
 - **TV3**: the lint signals a key or domain one or two characters from an existing one, or the same
   once characters that look alike are read as one.
-- **TV4**: a publisher file that is new names no register (`confirmed_by`) whose page names the
-  publisher's domain.
 - **TV5**: a change to an existing file moves a source, the publisher or a code to another domain or
   another value.
 
 The rules the gate settled count as the gate settled them. A *no* of the gate (a source on an AI
-chat) rejects the proposal before the referee is called.
+chat) rejects the proposal before the referee is called, and so does a second source that a
+publisher file gives but that does not pass (TV4: it cannot be read, is on the publisher's own
+domain, or does not name it).
 
 Before the outcome is computed, code checks every quote of the referee: it must appear in the fetched text of its
 URL, ignoring whitespace and case. A "yes" with a quote that is not found becomes "doubt". This is

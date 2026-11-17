@@ -4,10 +4,10 @@
 Every product file a pull request adds or changes gets an outcome:
 
     accept   it may be merged
-    reject   on a rule (TR1-TR8, TV1), with the reason
+    reject   on a rule (TR1-TR8, TV1, TV4), with the reason
     alias    it is an existing product written in another way (TR4)
     parked   not taken in, on a rule, with the reason: the referee doubts, a source is closed, the
-             budget or a fork leaves it unjudged, or code holds it for a person (TV3-TV5, tools/guard.py),
+             budget or a fork leaves it unjudged, or code holds it for a person (TV3, TV5, tools/guard.py),
              whatever the referee answers. It goes to the parking list (referee/parked.yaml)
              and can be judged again later with one command.
 
@@ -158,12 +158,14 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         if errors:
             settled(item, "reject", errors[0].rule, errors[0].message)
         elif not referee.product_file(p["files"])[0]:
-            # A publisher file alone: nothing for the referee, but code may hold it (TV3-TV5). TV4 reads
-            # the page of the register its confirmed_by names.
-            sources = [fetcher.fetch(u, "") for u in referee.urls_of(p["files"])]
+            # A publisher file alone: nothing for the referee, but code may hold it (TV3, TV5), and
+            # a second source it gives must pass (TV4).
+            sources = [fetcher.fetch(u, "") for u in referee.case_urls(st)]
             item["sources"] = [asdict(s) for s in sources]
             item["held"] = referee.hold(st, sources)
-            if item["held"]:
+            if wrong := referee.second_source_fault(st, sources):
+                settled(item, "reject", "TV4", wrong)
+            elif item["held"]:
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
             else:
                 settled(item, "accept", reason="a publisher file that passes the lint and the checks of code")
@@ -176,8 +178,11 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             gone = referee.product_gone(st.files, sources)
             decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             item["decided"] = decided
+            wrong = referee.second_source_fault(st, sources)
             if gone:
                 settled(item, "reject", "TR7", gone)
+            elif wrong:
+                settled(item, "reject", "TV4", wrong)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
             else:
@@ -299,7 +304,7 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     outcome, rule = referee.outcome({**checked, "duplicate_of": verdict.get("duplicate_of")})
     held = item.get("held") or {}
     if held and outcome in ("accept", "human"):
-        # Held by code (TV3-TV5): a person decides, whatever the referee answered.
+        # Held by code (TV3, TV5): a person decides, whatever the referee answered.
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         return settled(item, "parked", ", ".join([*held, *doubts]),
                        "; ".join([*held.values(), *notes, *(f"{r}: {checked[r]['reason']}" for r in doubts)]), "code")

@@ -24,10 +24,10 @@ DATA = FIXTURES / "data"
 DS124 = (DATA / "products/synology/ds124.yaml").read_text(encoding="utf-8")
 
 
-def publisher_text(key, name, source, confirmed=None):
+def publisher_text(key, name, source, second=None):
     text = f"key: {key}\nname: {name}\nsource: {source}\n"
-    if confirmed:
-        text += f"confirmed_by:\n  register: cve-cna\n  source: {confirmed}\n"
+    if second:
+        text += f"second_source: {second}\n"
     return text + "aliases: []\n"
 
 
@@ -98,42 +98,52 @@ class LookalikeTest(unittest.TestCase):
         self.assertEqual({f.file for f in found}, set(files))
 
 
-class ConfirmationTest(unittest.TestCase):
-    """TV4: a new publisher needs a register it does not write itself that names its domain."""
+class SecondSourceTest(unittest.TestCase):
+    """TV4: a new publisher is taken in on its own evidence; a second source is optional, and one that
+    is given is off the publisher's domain and names it."""
 
     PUB = {"key": "acme", "name": "Acme", "source": "https://www.acme.example/about"}
-    PAGE = "https://www.cve.org/PartnerInformation/ListofPartners/partner/acme"
+    PAGE = "https://store.example.net/apps/acme-box"
 
-    def check(self, confirmed=None, text=None):
+    def check(self, second=None, text=None):
         pub = dict(self.PUB)
-        if confirmed is not None:
-            pub["confirmed_by"] = confirmed
-        return guard.confirmation(pub, {self.PAGE: text} if text is not None else {})
+        if second is not None:
+            pub["second_source"] = second
+        return guard.second_source(pub, {second: text} if text is not None else {})
 
-    def test_without_a_register(self):
-        self.assertEqual(self.check()[0], False)
-        self.assertIn("no confirmed_by", self.check()[1])
+    def test_no_second_source_is_no_fault(self):
+        self.assertEqual(self.check(), "")
+        self.assertEqual(guard.second_source_place(self.PUB), "")
 
-    def test_a_register_page_that_names_the_domain(self):
-        ok, why = self.check({"register": "cve-cna", "source": self.PAGE}, "Acme. Advisories: https://acme.example/security")
-        self.assertTrue(ok, why)
+    def test_a_page_elsewhere_that_names_the_domain(self):
+        self.assertEqual(self.check(self.PAGE, "Acme Box. Developer: https://acme.example/support"), "")
 
-    def test_what_does_not_confirm(self):
-        conf = {"register": "cve-cna", "source": self.PAGE}
-        for label, args in (
-            ("not read", (conf, None)),
-            ("another domain", (conf, "Advisories: https://acme.example.net/security")),
-            ("a longer domain", (conf, "Advisories: https://acme.example.evil.io/")),
-            ("own site", ({"register": "cve-cna", "source": "https://www.acme.example/cna"}, "acme.example")),
-            ("unknown register", ({"register": "a-blog", "source": self.PAGE}, "acme.example")),
+    def test_what_does_not_pass(self):
+        for label, args, says in (
+            ("not read", (self.PAGE, None), "could not be read"),
+            ("another domain", (self.PAGE, "Developer: https://acme.example.net/"), "does not name"),
+            ("a longer domain", (self.PAGE, "Developer: https://acme.example.evil.io/"), "does not name"),
+            ("own site", ("https://shop.acme.example/about", "acme.example"), "own domain"),
         ):
             with self.subTest(label):
-                self.assertFalse(self.check(*args)[0])
+                self.assertIn(says, self.check(*args))
 
-    def test_every_register_is_in_the_schema(self):
+    def test_a_page_of_another_owner_on_a_shared_host_is_elsewhere(self):
+        pub = {**self.PUB, "source": "https://github.com/acme/box", "second_source": "https://github.com/someone/list"}
+        self.assertEqual(guard.second_source_place(pub), "")
+        pub["second_source"] = "https://github.com/acme/other"
+        self.assertIn("own domain", guard.second_source_place(pub))
+
+    def test_the_lint_rejects_a_second_source_on_the_own_domain(self):
+        files = {"publishers/acme.yaml": publisher_text("acme", "Acme", "https://www.acme.example/",
+                                                        "https://www.acme.example/press")}
+        found = [f for f in lint.Dataset(DATA, REPO / "schema").check(report=set(files), overrides=files) if f.rule == "TV4"]
+        self.assertEqual([f.level for f in found], ["error"])
+
+    def test_the_schema_makes_it_optional(self):
         schema = json.loads((REPO / "schema/publisher.schema.json").read_text(encoding="utf-8"))
-        enum = schema["properties"]["confirmed_by"]["properties"]["register"]["enum"]
-        self.assertEqual(sorted(enum), sorted(guard.REGISTERS))
+        self.assertIn("second_source", schema["properties"])
+        self.assertNotIn("second_source", schema.get("required", []))
 
 
 class ReplacedTest(unittest.TestCase):
@@ -225,7 +235,7 @@ class IdentityTest(unittest.TestCase):
 
 
 class HeldTest(unittest.TestCase):
-    """TV3-TV5 hold a proposal for a person, whatever the referee answers; the referee still judges."""
+    """TV3 and TV5 hold a proposal for a person, whatever the referee answers; the referee still judges."""
 
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
@@ -260,27 +270,46 @@ class HeldTest(unittest.TestCase):
         self.assertIn("TV3", item["rule"])
         self.assertIn("'synology' (publishers/synology.yaml)", item["reason"])
 
-    def test_a_new_publisher_without_a_confirming_register_is_parked(self):
+    def test_a_new_publisher_without_a_second_source_is_not_held(self):
         files = {"publishers/acme.yaml": publisher_text("acme", "Acme", "https://www.acme.example/"),
                  "products/acme/box.yaml": product_text("acme", "box", "Box", "https://www.acme.example/a", "https://www.acme.example/b")}
         item = self.judge([{"id": "products/acme/box.yaml", "files": files}])[0]
-        self.assertEqual(item["outcome"], "parked")
-        self.assertIn("TV4", item["rule"])
+        self.assertNotIn("TV4", item["rule"])
+        self.assertEqual(item["held"], {})
         alone = self.judge([{"id": "publishers/acme.yaml", "files": {"publishers/acme.yaml": files["publishers/acme.yaml"]}}])[0]
-        self.assertEqual((alone["outcome"], alone["rule"]), ("parked", "TV4"))
+        self.assertEqual(alone["outcome"], "accept", alone["reason"])
 
-    def test_a_new_publisher_with_a_confirming_register_is_not_held(self):
-        page = "https://www.cve.org/PartnerInformation/ListofPartners/partner/acme"
-        files = {"publishers/acme.yaml": publisher_text("acme", "Acme", "https://www.acme.example/", page)}
+    def test_a_second_source_that_names_the_domain_passes_and_one_that_does_not_is_rejected(self):
+        page = "https://store.example.net/apps/acme-box"
 
-        class Register(FakeFetcher):
+        class Store(FakeFetcher):
+            text = ""
+
             def fetch(self, url, product=""):
                 if url == page:
-                    return referee.Source(url, "200", "Acme. Security advisories: https://www.acme.example/security")
+                    return referee.Source(url, "200", self.text)
                 return super().fetch(url, product)
 
-        item = pr_referee.gate_proposals([{"id": "publishers/acme.yaml", "files": files}], Register(), DATA, log=QUIET)[0]
+        files = {"publishers/acme.yaml": publisher_text("acme", "Acme", "https://www.acme.example/", page)}
+        good, bad = Store(), Store()
+        good.text, bad.text = "Acme Box. Developer site: https://www.acme.example/", "Acme Box. Developer site: none"
+        item = pr_referee.gate_proposals([{"id": "publishers/acme.yaml", "files": files}], good, DATA, log=QUIET)[0]
         self.assertEqual(item["outcome"], "accept", item["reason"])
+        item = pr_referee.gate_proposals([{"id": "publishers/acme.yaml", "files": files}], bad, DATA, log=QUIET)[0]
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TV4"))
+        self.assertIn("does not name", item["reason"])
+        product = {"products/acme/box.yaml": product_text("acme", "box", "Box", "https://www.acme.example/a", "https://www.acme.example/b")}
+        item = pr_referee.gate_proposals([{"id": "products/acme/box.yaml", "files": {**files, **product}}], bad, DATA, log=QUIET)[0]
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TV4"))
+
+    def test_the_identity_block_says_whether_a_second_source_is_given_and_judges_nothing(self):
+        stager = referee.Stager(DATA)
+        st = stager.stage_files({"publishers/acme.yaml": publisher_text("acme", "Acme", "https://www.acme.example/")})
+        self.assertIn("publisher acme: gives no second source", st.identity)
+        st = stager.stage_files({"publishers/acme.yaml": publisher_text("acme", "Acme", "https://www.acme.example/",
+                                                                        "https://store.example.net/apps/acme-box")})
+        self.assertIn("publisher acme: gives a second source, https://store.example.net/apps/acme-box", st.identity)
+        self.assertNotIn("confirm", st.identity)
 
     def test_apply_gives_a_changed_file_the_text_of_main_back(self):
         """Taking out a parked change to an existing product would delete the product."""
@@ -303,16 +332,22 @@ class HeldTest(unittest.TestCase):
                 self.assertTrue([c.id for c in cases if rule in c.rules and c.bad])
 
     def test_the_test_set_cases_fall_on_their_rule(self):
-        """B39-B44 on TV3, B47 on TV5 and B46 on TV4, by code, before any referee."""
+        """B39-B44 on TV3 and B47 on TV5, held by code; B46 rejected on TV4 by the lint; the good cases
+        with a new publisher (G17-G19, G24, G25, G29, H01, H02) are not held, before any referee."""
         cases = {c.id: c for c in referee.load_cases(REPO / "referee/testset/cases.yaml")}
         stager = referee.Stager()
         for cid, rule in (("B39", "TV3"), ("B40", "TV3"), ("B41", "TV3"), ("B42", "TV3"), ("B43", "TV3"), ("B44", "TV3"),
-                          ("B46", "TV4"), ("B47", "TV5")):
+                          ("B47", "TV5")):
             with self.subTest(case=cid):
                 self.assertIn(rule, referee.hold(stager.stage(cases[cid]), []))
-        for cid in ("G01", "B45"):
-            self.assertEqual(referee.hold(stager.stage(cases[cid]), []), {}, cid)
-
+        st = stager.stage(cases["B46"])
+        self.assertTrue(st.lint_ok and st.lint_seen == "error TV4", st.lint_seen)
+        for cid in ("G01", "B45", "B48", "G17", "G18", "G19", "G24", "G25", "G29", "H01", "H02"):
+            with self.subTest(case=cid):
+                st = stager.stage(cases[cid])
+                self.assertTrue(st.lint_ok, st.lint_seen)
+                self.assertEqual(referee.hold(st, []), {})
+                self.assertEqual(referee.second_source_fault(st, []), "")
 
 if __name__ == "__main__":
     unittest.main()

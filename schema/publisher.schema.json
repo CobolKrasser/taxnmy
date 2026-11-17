@@ -49,22 +49,10 @@
         }
       }
     },
-    "confirmed_by": {
-      "description": "A register the publisher does not write itself that names the domain of the publisher's source (rule TV4). A new publisher is taken in only with one. tools/guard.py checks that the source is on the domain of the register and that its text names the domain. Optional for publishers already in TAX.",
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["register", "source"],
-      "properties": {
-        "register": {
-          "description": "The register: cve-cna (the partner list of the CVE program, www.cve.org). A register is added here and in tools/guard.py (REGISTERS).",
-          "enum": ["cve-cna"]
-        },
-        "source": {
-          "description": "The page of the register about this publisher, which names the publisher's domain.",
-          "type": "string",
-          "pattern": "^https?://[^\\s]+$"
-        }
-      }
+    "second_source": {
+      "description": "Optional (rule TV4): a page the publisher does not write itself that names the domain of the publisher's source, such as an app store, a package registry, a public project or a register. A new publisher is taken in without one; when it is given, it is recorded with the publisher. tools/guard.py checks that it is not on the publisher's own domain and that its text names that domain.",
+      "type": "string",
+      "pattern": "^https?://[^\\s]+$"
     },
     "aliases": {
       "description": "Earlier or other keys of this publisher.",

@@ -8,12 +8,13 @@ and the AI only ever judges *what* something is (TV2).
     TV2  identity      the same, or not: an exact comparison of keys, aliases and domains
     TV3  lookalikes    one or two characters from an existing key or domain, or the same once
                        characters that look alike are read as one (`LOOKALIKE`): held for a person
-    TV4  confirmation  a new publisher is taken in only when a register it does not write itself
-                       names its domain (`REGISTERS`, schema field `confirmed_by`)
+    TV4  second source a new publisher is taken in on its own evidence; a second source is optional.
+                       One that is given (schema field `second_source`) is not on the publisher's
+                       domain and names that domain, or the proposal is wrong
     TV5  replacement   a change that moves a source, the publisher or a code of an existing file to
                        another domain or another value: held for a person
 
-Code here holds a list of characters that look alike and a list of registers. It names no brand
+Code here holds a list of characters that look alike. It names no brand
 and no product (TG4). Standard library only: the lint uses it.
 """
 
@@ -200,40 +201,53 @@ def pairs(values) -> list[tuple[str, str, str]]:
     return [(a, b, why) for a, b in combinations(sorted(set(values)), 2) if (why := near(a, b))]
 
 
-# --------------------------------------------------------------------------- TV4: a register confirms the domain
+# --------------------------------------------------------------------------- TV4: a second source, when there is one
 
-# Registers that a publisher does not write itself, and that name the domain of an organisation.
-# A publisher file names one in `confirmed_by` (schema/publisher.schema.json). Each register is a
-# class of source with the domain where it is published; a new one is added here and in the schema,
-# through a pull request like any other change.
-REGISTERS = {
-    "cve-cna": ("cve.org",),  # the partner list of the CVE program: a CNA with its own advisories page
-}
+# A new publisher is taken in on its own evidence: its own site, where the product is to be had or
+# where its versions are published. A second source is not required. When the proposal gives one
+# (`second_source`, schema/publisher.schema.json), it is recorded with the publisher, so code checks
+# it: a page that is not on the publisher's domain, and that names that domain.
 
 
-def confirmation(publisher: dict, texts: dict) -> tuple[bool, str]:
-    """(True, reason) when the register in the publisher's `confirmed_by` names the domain of the
-    publisher's source; (False, why not) otherwise. `texts`: url -> text that was read."""
-    conf = publisher.get("confirmed_by")
-    domain = owner(publisher.get("source") or "") if isinstance(publisher.get("source"), str) else None
-    if not isinstance(conf, dict):
-        return False, "a new publisher, and no register it does not write itself confirms its domain (no confirmed_by)"
-    register, url = conf.get("register"), conf.get("source")
-    if register not in REGISTERS or not isinstance(url, str):
-        return False, f"confirmed_by names no known register ({register!r})"
-    if not on_domain(url, REGISTERS[register]):
-        return False, f"{url} is not on the domain of the register {register} ({', '.join(REGISTERS[register])})"
+def own_domain(publisher: dict) -> str | None:
+    """The owner of the publisher's source: a registrable domain, or host/owner on a site of many owners."""
+    source = publisher.get("source")
+    return owner(source) if isinstance(source, str) else None
+
+
+def second_source_place(publisher: dict) -> str:
+    """'' when the publisher gives no second source, or one that is not on its own domain; otherwise
+    why it is wrong. Needs no text: the lint checks it."""
+    url = publisher.get("second_source")
+    if url is None:
+        return ""
+    if not isinstance(url, str):
+        return "second_source is not a URL"
+    domain = own_domain(publisher)
     if domain is None:
-        return False, "the publisher's source shows no domain of its own"
-    if on_domain(publisher["source"], REGISTERS[register]):
-        return False, "the publisher's source is the register itself"
+        return "the publisher's source shows no domain of its own"
+    if (owner(url) or host_of(url)) == domain:
+        return f"second_source {url} is on the publisher's own domain {domain}; a second source is a page the publisher does not write"
+    return ""
+
+
+def second_source(publisher: dict, texts: dict) -> str:
+    """'' when the publisher gives no second source, or one that passes; otherwise why it does not.
+    `texts`: url -> text that was read. A second source that cannot be read does not pass: it is
+    recorded to be read again, so it must be readable."""
+    url = publisher.get("second_source")
+    if url is None:
+        return ""
+    wrong = second_source_place(publisher)
+    if wrong:
+        return wrong
+    host = own_domain(publisher).split("/")[0]
     text = texts.get(url)
     if not text:
-        return False, f"{url} of the register {register} could not be read"
-    host = domain.split("/")[0]
+        return f"second_source {url} could not be read; give a page that can be read, or leave the field out"
     if re.search(r"(?<![\w-])" + re.escape(host) + r"(?![\w-]|\.\w)", text.casefold()) is None:
-        return False, f"the register {register} at {url} does not name {host}"
-    return True, f"the register {register} names {host} at {url}"
+        return f"second_source {url} does not name the publisher's domain {host}"
+    return ""
 
 
 # --------------------------------------------------------------------------- TV5: replacing what exists
@@ -275,6 +289,6 @@ def replaced(old: dict, new: dict) -> list[str]:
     for e in new.get("machine_sources") or []:
         if isinstance(e, dict) and isinstance(e.get("url"), str) and _owners([e["url"]]) - old_machine:
             out.append(f"a source for machines on {owner(e['url']) or host_of(e['url'])}, a domain the publisher did not use")
-    if "confirmed_by" in old and new.get("confirmed_by") != old.get("confirmed_by"):
-        out.append("confirmed_by is changed or taken out")
+    if "second_source" in old and new.get("second_source") != old.get("second_source"):
+        out.append("second_source is changed or taken out")
     return out
