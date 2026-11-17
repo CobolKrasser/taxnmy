@@ -60,6 +60,7 @@ cases:
   expect: [accept]
   lint: pass
   holdout: [products/samsung/galaxy-tab-s9.yaml]
+  note: The versions source is the English page of the update notes of the SM-X710 (each build with Android version and date), not the language menu at SM-X710/EUX/doc.html. The number in its address is the date of the first release (230710 is 2023-07-10); every later release is added to the same page. The product source is Samsung's support page for the SM-X710; the old shop address of this tablet now sends the reader to its successor.
 - id: G08
   type: holdout-device
   expect: [accept]
@@ -482,9 +483,9 @@ cases:
       publisher: samsung
       name: Galaxy S9 Tab
       kind: device
-      source: https://www.samsung.com/us/tablets/galaxy-tab-s9/
+      source: https://www.samsung.com/uk/support/model/SM-X710NZAAEUB/
       versions:
-        source: https://doc.samsungmobile.com/SM-X710/EUX/doc.html
+        source: https://doc.samsungmobile.com/SM-X710/026923230710/eng.html
       identifiers: []
       aliases: []
 
