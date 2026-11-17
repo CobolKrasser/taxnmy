@@ -23,9 +23,11 @@ def judgment(verdict="yes", url="https://www.synology.com/en-global/releaseNote/
     return {"verdict": verdict, "reason": "fixture", "evidence": [] if verdict == "doubt" else [{"url": url, "quote": quote}]}
 
 
-def reply(duplicate_of=None, **rules):
+def reply(duplicate_of=None, version=PAGE, **rules):
     data = {r: judgment() for r in referee.RULES}
     data.update(rules)
+    # S4 quotes a version from the versions source; every page of the fake fetcher holds PAGE.
+    data["S4"] = {**data["S4"], "version": data["S4"].get("version", version if data["S4"]["verdict"] == "yes" else None)}
     data["duplicate_of"] = duplicate_of
     return json.dumps(data)
 
@@ -179,8 +181,48 @@ class RefereeTest(unittest.TestCase):
 
     def test_quote_check_ignores_whitespace_and_case(self):
         verdict = json.loads(reply(S5=judgment(quote="  FIRMWARE releases\n are published  ")))
-        checked, notes = referee.check_quotes(verdict, [referee.Source("https://www.synology.com/en-global/releaseNote/DSM", "200", PAGE)])
+        url = "https://www.synology.com/en-global/releaseNote/DSM"
+        checked, notes = referee.check_quotes(verdict, [referee.Source(url, "200", PAGE)], versions=url)
         self.assertEqual((checked["S5"]["verdict"], notes), ("yes", []))
+
+    def test_s4_yes_needs_a_version_from_the_versions_source(self):
+        """B30: news about a service is not a version. S4 is yes only with a version quoted from
+        the text of versions.source, checked like every quote."""
+        versions, product = "https://example.org/releases", "https://example.org/product"
+        sources = [referee.Source(versions, "200", "Release notes. Version 7.2.1 (build 69057) is out."),
+                   referee.Source(product, "200", "The product page. Version 9.9 is mentioned here.")]
+
+        def s4(version, srcs=sources, url=versions):
+            verdict = json.loads(reply(version=version, **{r: judgment(url=product, quote="The product page.") for r in referee.RULES}))
+            checked, notes = referee.check_quotes(verdict, srcs, versions=url)
+            return checked["S4"]["verdict"], notes
+
+        self.assertEqual(s4("version  7.2.1 (BUILD 69057)"), ("yes", []))
+        self.assertEqual(s4(None), ("doubt", ["S4: yes without a version from the versions source"]))
+        self.assertEqual(s4(""), ("doubt", ["S4: yes without a version from the versions source"]))
+        self.assertEqual(s4("Version 9.9"), ("doubt", [f"S4: version not found at {versions}"]), "only the versions source counts")
+        self.assertEqual(s4("7.2.1", url=""), ("doubt", ["S4: version not found at the versions source"]))
+        instead = [referee.Source(versions, "refused"), sources[1],
+                   referee.Source("https://example.org/feed.xml", "200", "Release notes. Version 7.2.1", instead_of=versions)]
+        self.assertEqual(s4("7.2.1", srcs=instead), ("yes", []), "a source found instead of the versions source counts")
+
+    def test_s4_no_and_doubt_need_no_version(self):
+        verdict = json.loads(reply(S4=judgment("no"), duplicate_of="synology/ds224-plus"))
+        self.assertIsNone(verdict["S4"]["version"])
+        checked, notes = referee.check_quotes(verdict, [referee.Source("https://www.synology.com/en-global/releaseNote/DSM", "200", PAGE)])
+        self.assertEqual((checked["S4"]["verdict"], [n for n in notes if n.startswith("S4")]), ("no", []))
+
+    def test_the_schema_asks_s4_for_a_version(self):
+        schema = referee.api_schema(referee.load_schema(REPO / "referee/verdict.schema.json"))
+        self.assertIn("version", schema["properties"]["S4"]["required"])
+        self.assertNotIn("version", schema["properties"]["S5"]["properties"])
+        self.assertIsNone(referee.parse_reply(json.dumps({**json.loads(reply()), "S4": judgment()}), schema)[0],
+                          "an S4 without the field version does not parse")
+
+    def test_versions_url(self):
+        files = {"products/a/b.yaml": "key: a/b\npublisher: a\nversions:\n  source: https://a.example/v\n"}
+        self.assertEqual(referee.versions_url(files), "https://a.example/v")
+        self.assertEqual(referee.versions_url({"products/a/b.yaml": "key: a/b\n"}), "")
 
     def test_yes_without_quote_is_doubt(self):
         verdict = json.loads(reply(S6={"verdict": "yes", "reason": "", "evidence": []}))
@@ -207,8 +249,8 @@ class RefereeTest(unittest.TestCase):
     def test_r13_cases_are_the_default_outside_fetched(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
         self.assertEqual([c.id for c in referee.select(cases, None, "memory")], list(referee.R13_CASES))
-        self.assertEqual(len(referee.select(cases, None, "fetched")), 65)
-        self.assertEqual(len(referee.select(cases, ["all"], "web")), 65)
+        self.assertEqual(len(referee.select(cases, None, "fetched")), 74)
+        self.assertEqual(len(referee.select(cases, ["all"], "web")), 74)
 
     # staging and the message
 
@@ -302,6 +344,29 @@ class RefereeTest(unittest.TestCase):
         sources = dict(results["G01"].sources)
         self.assertEqual(sources["https://www.synology.com/en-global/products/DS124"], "200")
         self.assertEqual(sources["https://www.synology.com/en-global/company"], "not fetched")
+
+    def test_fetch_keeps_a_base_and_fetches_only_what_it_lacks(self):
+        """TAX-18: the measurement reads the sources of A2 and fetches only those of the new cases."""
+        url = "https://www.synology.com/en-global/products/DS124"
+        base = self.out / "a2.json"
+        base.write_text(json.dumps({url: {"url": url, "status": "200", "text": "As read for A2.", "method": "http"}}))
+
+        class Caching(FakeFetcher):
+            def __init__(self):
+                super().__init__()
+                self.cache = {}
+
+            def fetch(self, url, product=""):
+                if url not in self.cache:
+                    self.cache[url] = super().fetch(url, product)
+                return self.cache[url]
+
+        fetcher = Caching()
+        args = Args(self.out, output=str(self.out / "sources.json"), cases=["G01"], no_browser=True, base=str(base))
+        data = referee.fetch_sources(args, fetcher=fetcher, data_root=FIXTURES / "data", log=QUIET)
+        self.assertEqual(data[url]["text"], "As read for A2.")
+        self.assertNotIn(url, fetcher.urls)
+        self.assertIn("https://www.synology.com/en-global/releaseNote/DSM?model=DS124", data)
 
     # step 4
 
@@ -482,8 +547,10 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual(referee.registrable("support.d-imaging.sony.co.jp"), "sony.co.jp")
         self.assertEqual(referee.registrable("www.sony.nl"), "sony.nl")
 
-    def test_budget_default_is_20(self):
-        self.assertEqual(referee.parser().parse_args(["run"]).budget, 20.0)
+    def test_budget_default_is_50(self):
+        """Fred, 17 November 2026: the limit for every run together goes from $20 to $50."""
+        self.assertEqual(referee.parser().parse_args(["run"]).budget, 50.0)
+        self.assertEqual(referee.BUDGET, 50.0)
 
     def test_system_prompt_of_the_analyst(self):
         text = referee.load_system_prompt(REPO / "referee/prompt.md")
@@ -748,7 +815,7 @@ class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        self.assertEqual(len(self.cases), 65)
+        self.assertEqual(len(self.cases), 74)
         mismatched = {}
         for case in self.cases:
             staged = self.staged[case.id]
@@ -797,6 +864,22 @@ class TestsetTest(unittest.TestCase):
             self.assertIn("S8", rows[case].ai_rules, case)
         self.assertEqual(sum(c.id.startswith("B3") and c.type.startswith(("wrong-publisher-own", "wrong-kind"))
                              for c in self.cases), 5)
+
+    def test_the_cases_of_tax_18_reach_the_referee(self):
+        """TAX-18: a service without a version leaves S4 to the referee, and a name or domain one
+        or two characters from an existing one gets no signal from code yet: even with every
+        source read, code settles neither S5 nor S6 for it. The measurement shows whether the
+        referee reads over the spelling."""
+        rows = self.gate_rows(Readable())
+        for case in ("B30", "B36", "B37", "B38", "B43"):
+            self.assertIn("S4", rows[case].ai_rules, case)
+        for case in ("B39", "B40", "B41", "B42", "B44"):
+            self.assertIn("S5", rows[case].ai_rules, case)
+        for case in ("B39", "B40", "B41", "B42", "B43"):
+            self.assertIn("S6", rows[case].ai_rules, case)
+            self.assertEqual(self.staged[case].lint_seen, "pass", case)
+        self.assertEqual(sum(c.type == "saas" for c in self.cases), 5)
+        self.assertEqual(sum(c.type.startswith("lookalike-") for c in self.cases), 6)
 
 
 class Readable:

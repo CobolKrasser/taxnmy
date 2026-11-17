@@ -281,7 +281,7 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     if verdict is None:
         return settled(item, "parked", rules, why + (" (cut off at max_tokens)" if answer["stop"] == "max_tokens" else ""), "ai")
     sources = [Source(**s) for s in item["sources"]]
-    checked, notes = referee.check_quotes(verdict, sources, item["ai_rules"])
+    checked, notes = referee.check_quotes(verdict, sources, item["ai_rules"], referee.versions_url(item["files"]))
     checked = {**checked, **item["decided"]}
     item["verdict"] = verdict
     item["checked"] = {r: checked[r]["verdict"] for r in referee.RULES}
@@ -398,7 +398,7 @@ def add_judge_args(p) -> None:
     p.add_argument("--model", default="claude-opus-5-5", help="until TAX-18 has chosen; see referee/README.md")
     p.add_argument("--effort", choices=("low", "medium", "high"), default="low")
     p.add_argument("--max-tokens", type=int, default=PR_MAX_TOKENS)
-    p.add_argument("--budget", type=float, default=20.00, help="dollars, for all runs in --out together")
+    p.add_argument("--budget", type=float, default=referee.BUDGET, help="dollars, for all runs in --out together")
     p.add_argument("--pr-cap", type=float, default=PR_CAP, help="dollars per pull request, its runs together")
     p.add_argument("--day-cap", type=float, default=DAY_CAP, help="dollars per day (UTC), pull requests together")
     p.add_argument("--wait", type=float, default=referee.BATCH_WAIT, help="seconds to wait for the batch")

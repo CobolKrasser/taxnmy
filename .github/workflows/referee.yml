@@ -43,7 +43,7 @@ on:
       budget:
         description: "dollars, for all runs together (hard limit)"
         type: string
-        default: "20.00"
+        default: "50.00"
       live:
         description: "call the API (costs money); off is a dry run"
         type: boolean

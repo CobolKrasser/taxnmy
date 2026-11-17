@@ -47,6 +47,10 @@ S4  It is a product of its own. Answer "no" if it is a variant of an existing pr
     same product as an existing one written in another way (then give that product's key in
     duplicate_of), or if no source publishes versions of it. A package that redistributes the
     releases of another publisher unchanged is not a product of its own.
+    Answer "yes" only with a version: a version of this product that a customer sees or chooses
+    (a number, a build or the name of a release), copied exactly into the field version from the
+    text of the versions source (versions.source). News about changes to a service is not a
+    version. When that text shows no such version, version is null and S4 is not "yes".
 S5  The publisher is whoever publishes the updates, and a source shows that.
 S6  The product name and the publisher name appear in a source as proposed: not translated, not
     rephrased, and not a description instead of a name. Word order, capitals and punctuation may
@@ -64,6 +68,8 @@ How to answer
 - Give a short reason for each answer, in one or two sentences.
 - For each "yes" and each "no", give the evidence: the URL and a quote copied exactly from the
   source text, at most 25 words. A quote that is not in the source text makes the answer invalid.
+- For S4 also give version: the version you found in the text of the versions source, copied
+  exactly, or null. A "yes" on S4 whose version is not in that text is not accepted.
 - A source text marked as unavailable (an HTTP error, refused, disallowed, unreadable or an empty
   page) confirms nothing.
 - A source marked instead-of was found on the publisher's own site because the source it names
@@ -163,6 +169,12 @@ chat) rejects the proposal before the referee is called.
 Before the outcome is computed, code checks every quote of the referee: it must appear in the fetched text of its
 URL, ignoring whitespace and case. A "yes" with a quote that is not found becomes "doubt". This is
 the code part of S8, and the check that the referee does not quote from memory.
+
+A "yes" on S4 needs one more quote: `version`, a version of the product copied from the text of its
+`versions.source` (or of a source found `instead-of` it). Code checks it the same way; without it,
+or when it is not in that text, S4 becomes "doubt". Code does not judge whether the quote is a
+version: that would need a pattern of version numbers, and no pattern fits every product. It
+checks that the referee read it from the versions source, and not from news about a service.
 
 ## Settings
 

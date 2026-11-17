@@ -2,7 +2,8 @@
 
 You propose a product by opening a pull request that adds or changes data files. Every pull request
 is checked by the lint (rules S1–S3), and then by the referee: code first, and an AI for what code
-cannot settle (rules S4–S8). The rules are described in the [README](README.md#the-referee).
+cannot settle (rules S4–S8). Rule S10 guards against names and sources that imitate existing ones.
+The rules are described in the [README](README.md#the-referee).
 
 The referee leaves a comment on the pull request with one line per file: *accept*, *reject* (with
 the rule), *alias* (an existing product written in another way) or *parked* (with the rule and the

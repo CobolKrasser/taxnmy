@@ -126,7 +126,7 @@ jobs:
           EFFORT: ${{ vars.REFEREE_EFFORT || 'low' }}
           PR_CAP: ${{ vars.REFEREE_PR_CAP || '2.00' }}
           DAY_CAP: ${{ vars.REFEREE_DAY_CAP || '5.00' }}
-          BUDGET: ${{ vars.REFEREE_BUDGET || '20.00' }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
         run: |
           set -euo pipefail
           python tools/pr_referee.py judge --gated gated/gated.json --output verdicts --live \

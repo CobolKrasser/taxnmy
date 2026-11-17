@@ -86,8 +86,10 @@ it is not an error, but it is a cost.
 
 ## Budget
 
-The budget for fase 2 is **at most $20** from the API credit (Fred, 13 November; it was $5). Prices are from the Claude API price
-list of November 2026. Check them before the run.
+The budget for every run of the referee together is **at most $50** from the API credit (Fred,
+17 November 2026; it was $20 for fase 2, and $5 before that). The ceilings per pull request and per
+day stay as they are. Prices are from the Claude API price list of November 2026. Check them before
+the run.
 
 | | per million input tokens | per million output tokens |
 | --- | --- | --- |
@@ -232,7 +234,7 @@ python tools/referee.py run --sources sources.json --replay referee/runs/<run>
 ### The hard budget
 
 The key may belong to another project, so the harness does not rely on a limit in the Console.
-`--budget` (default $20.00) is a **hard limit** for **all runs in `runs/` together**:
+`--budget` (default $50.00) is a **hard limit** for **all runs in `runs/` together**:
 
 - at the start the harness adds up the cost in every `results.jsonl` in `runs/`, and logs the limit
   and what is spent; `run.json` records both;
@@ -290,38 +292,56 @@ A site that refuses is not worked around. A person decides, or the product gets 
 
 ### The model measurement (TAX-18)
 
-Which model may judge: Opus 5.5 was measured (A, A2); Haiku 5.5 and Sonnet 5.5 were not. A model
-that lets one bad case through in any of its runs drops out (R7).
+Which model may judge: Opus 5.5 was measured (A, A2), at effort *medium*. A stand that lets one
+bad case through in any of its runs drops out (R7). In the first measurement (16 November 2026,
+effort *low*) Haiku 5.5 and Sonnet 5.5 both let B30 through and dropped out; Haiku is not measured
+again. Sonnet 5.5 is measured again, at *low* and at *medium*, with the S4 version (below).
 
 `run --batch` sends every case that reaches the referee as one batch (half price, answered within
 hours; not for condition *web*). The budget stays hard: requests go in rounds, each holding what
 fits the budget at its worst, as in [the PR mode](#the-referee-on-a-pull-request).
 
-`measure` runs the test set per model, `--repeats` times, effort *low*, as a batch:
+`measure` runs the test set per **stand**, a model at an effort, `--repeats` times, as a batch.
+`--models` and `--efforts` give the stands: every model at every effort. The default is Sonnet 5.5
+at *low*; the second measurement of TAX-18 is Sonnet 5.5 at *low* and at *medium*:
 
 ```
-python tools/referee.py measure --budget 13.70 --sources sources.json            # estimate from the tokens of A2
-python tools/referee.py measure --budget 13.70 --sources sources.json --count    # with counted tokens (free, the key)
-python tools/referee.py measure --budget 13.70 --sources sources.json --live     # the measurement
+python tools/referee.py measure --efforts low medium --sources sources.json            # estimate from the tokens of A2
+python tools/referee.py measure --efforts low medium --sources sources.json --count    # with counted tokens (free, the key)
+python tools/referee.py measure --efforts low medium --sources sources.json --live     # the measurement
 ```
 
-1. **The probe:** cases G01–G03 per model, one small batch each. Their real cost per case is
+1. **The probe:** cases G01–G03 per stand, one small batch each. Their real cost per case is
    extrapolated to the rest. When that would pass `--budget`, or a probe got no answer, nothing more
    is sent. The probe is the start of run 1 (`compare` joins the two directories with `+`).
-2. **The runs:** per model the rest of run 1, then runs 2 and 3, each a batch.
-3. **The report** `runs/model-measurement-<time>.md`: per model and per run the bad cases let
-   through, the good cases rejected, the cases for a person (*human*; *parked* in the PR mode), the
-   cases whose outcome differs between the runs, the cost per proposal; and `compare` with A2.
+2. **The runs:** per stand the rest of run 1, then runs 2 and 3, each a batch. A batch run carries
+   its effort in its name: `runs/<time>-fetched-<model>-<effort>/`.
+3. **The report** `runs/model-measurement-<time>.md`: per stand and per run the bad cases let
+   through, the good cases rejected, the cases for a person (*human*; *parked* in the PR mode) and
+   the rules that left them there, the cases whose outcome differs between the runs, the quotes code
+   did not find (an S4 without a version among them), the output tokens and the cost per proposal;
+   and `compare` with A2.
 
-`--budget 13.70` is the $20 of fase 2 minus the $10.70 spent: this measurement can spend at most
-$3.00. The estimate from the tokens of A2 is about $2.70 (Haiku $0.13, Sonnet $2.59); the ceiling,
-with every request at its full `max_tokens` and no cache, is higher, which is why the rounds exist.
+**The estimate** without `--live`: the input tokens of A2 (or, with `--count`, those counted), and
+the output tokens of A2 (effort *medium*) times a factor per effort: *low* 0.5 (Sonnet 5.5 wrote
+about 560 tokens per case at *low* in the first measurement, A2 about 1,100), *medium* 1, *high* 2
+(an assumption). A case A2 did not have counts as the mean case of A2. For Sonnet 5.5 at *low* and
+*medium*, three runs each, on the 69 cases past the lint, that is about $2.80 and $3.40: **about
+$6.20** together. About $13.15 of the $50 is spent.
 
-As an Action: **referee-models** (*Actions → referee-models → Run workflow*), from `main`, in
-environment `referee`. It reads the sources of A2 (artifact `referee-sources-final-43462875320`,
-kept until 11 February 2027), so it searches and fetches nothing. `live` off and `count` on gives the
-estimate with counted tokens, for free. Each run directory is kept as its own artifact
-`referee-run-<run>`, so the budget counts it; commit them in `runs/` afterwards.
+**The S4 version.** Since the second measurement, a *yes* on S4 needs a version quoted from the
+versions source (`prompt.md` § Outcome). The first measurement showed a hosted service passing S4
+on a page of news about it (B30). The test set now holds five cases of a service without a version
+(B29, B30, B36–B38) and six of a name or domain one or two characters from an existing one
+(B39–B44, rule S10). The outcomes of the first and the second measurement are therefore not
+comparable one to one: the prompt differs.
+
+As an Action: **referee-models** (*Actions → referee-models → Run workflow*). Its job `sources`
+keeps the sources of A2 (artifact `referee-sources-final-43462875320`, kept until 11 February 2027)
+and fetches with the ladder only what they lack, the sources of the cases added since; no key, so it
+may run from any branch. Its job `measure` runs from `main` only, in environment `referee`. `live`
+off and `count` on gives the estimate with counted tokens, for free. Each run directory is kept as
+its own artifact `referee-run-<run>`, so the budget counts it; commit them in `runs/` afterwards.
 
 ### The referee on a pull request
 
@@ -367,7 +387,7 @@ who disagrees can say so on the pull request. The test set's *human* is *parked*
 | --- | --- | --- |
 | per pull request, all its runs together | $2.00 | `REFEREE_PR_CAP` |
 | per day (UTC), all pull requests together | $5.00 | `REFEREE_DAY_CAP` |
-| everything in `runs/`, as [The hard budget](#the-hard-budget) | $20.00 | `REFEREE_BUDGET` |
+| everything in `runs/`, as [The hard budget](#the-hard-budget) | $50.00 | `REFEREE_BUDGET` |
 
 Requests go in rounds: each batch holds what fits at its worst, each request with its full
 `max_tokens` (4,000); once it ends, what it really cost frees room for the next round. What never
