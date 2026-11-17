@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lint the TAXNMY data: the writing rule and referee rules S1-S3.
+"""Lint the TAXNMY data: the writing rule and referee rules TR1-TR3.
 
 Usage: python tools/lint.py [ROOT] [--changed FILE]
 
@@ -86,10 +86,10 @@ def parse(rel: str, text: str, findings: list, lines: bool = True) -> Record | N
         data = yaml.load(text, Loader=LOADER)
     except yaml.YAMLError as exc:
         mark = getattr(exc, "problem_mark", None)
-        findings.append(Finding(rel, mark.line + 1 if mark else 1, "S1", f"not valid YAML: {exc}"))
+        findings.append(Finding(rel, mark.line + 1 if mark else 1, "TR1", f"not valid YAML: {exc}"))
         return None
     if not isinstance(data, dict):
-        findings.append(Finding(rel, 1, "S1", "the file must hold a mapping of fields"))
+        findings.append(Finding(rel, 1, "TR1", "the file must hold a mapping of fields"))
         return None
     return Record(rel, data, _line_map(node) if node is not None else {})
 
@@ -99,13 +99,13 @@ def check_schema(rec: Record, validator, findings: list) -> bool:
     for err in errors:
         where = "/".join(map(str, err.absolute_path))
         msg = f"{where}: {err.message}" if where else err.message
-        findings.append(Finding(rec.file, rec.line(*err.absolute_path), "S1", msg))
+        findings.append(Finding(rec.file, rec.line(*err.absolute_path), "TR1", msg))
     return not errors
 
 
 def _s2(rec, findings, path, problems):
     for p in problems:
-        findings.append(Finding(rec.file, rec.line(*path), "S2", p))
+        findings.append(Finding(rec.file, rec.line(*path), "TR2", p))
 
 
 def check_publisher(rec: Record, findings: list) -> None:
@@ -132,7 +132,7 @@ def check_product(rec: Record, publishers: set, findings: list) -> None:
         problems.append(f"key {key!r} must not hold a version")
     _s2(rec, findings, ("key",), problems)
     if publisher not in publishers:
-        findings.append(Finding(rec.file, rec.line("publisher"), "S1", f"publisher {publisher!r} has no file publishers/{publisher}.yaml"))
+        findings.append(Finding(rec.file, rec.line("publisher"), "TR1", f"publisher {publisher!r} has no file publishers/{publisher}.yaml"))
     if problems:
         return
     pub_part, prod_part = key.split("/")
@@ -167,7 +167,7 @@ def _norm_gtin(gtin: str) -> str:
 
 
 def check_unique(records: list, kind: str, findings: list, report: set | None = None) -> None:
-    """S3: no match on key or alias; purl duplicates; CPE and GTIN signals. Every record is compared;
+    """TR3: no match on key or alias; purl duplicates; CPE and GTIN signals. Every record is compared;
     findings are made only for the files in `report` (None: all files)."""
     if report is not None:
         kept: list = []
@@ -190,12 +190,12 @@ def check_unique_all(records: list, kind: str, findings: list, wanted) -> None:
             if not wanted(rec):
                 continue
             others = sorted({h[0].file for h in hits if h[0].file != rec.file})
-            findings.append(Finding(rec.file, rec.line(*path), "S3", f"{what} {value!r} is already used as key or alias by {', '.join(others)}"))
+            findings.append(Finding(rec.file, rec.line(*path), "TR3", f"{what} {value!r} is already used as key or alias by {', '.join(others)}"))
 
     if kind != "product":
         return
 
-    # Same words in another order, within one publisher: a signal for S4.
+    # Same words in another order, within one publisher: a signal for TR4.
     # Words are the parts between the dashes of the product part of a key.
     orders: dict[tuple, dict] = {}
     for value, hits in names.items():
@@ -217,9 +217,9 @@ def check_unique_all(records: list, kind: str, findings: list, wanted) -> None:
                 )
                 if others:
                     findings.append(Finding(
-                        rec.file, rec.line(*path), "S3",
+                        rec.file, rec.line(*path), "TR3",
                         f"{what} {value!r} has the same words as {', '.join(others)} in another order; "
-                        "the referee checks with S4 whether this is a product of its own", "signal"))
+                        "the referee checks with TR4 whether this is a product of its own", "signal"))
 
     codes: dict[tuple, list] = {}
     for rec in records:
@@ -236,9 +236,9 @@ def check_unique_all(records: list, kind: str, findings: list, wanted) -> None:
                 continue
             others = ", ".join(sorted({h[0].file for h in hits if h[0].file != rec.file}))
             if duplicate:
-                findings.append(Finding(rec.file, rec.line(*path), "S3", f"{field} {value!r} already belongs to {others}; this is a duplicate"))
+                findings.append(Finding(rec.file, rec.line(*path), "TR3", f"{field} {value!r} already belongs to {others}; this is a duplicate"))
             else:
-                findings.append(Finding(rec.file, rec.line(*path), "S3", f"{field} {value!r} also appears in {others}; the referee checks with S4 whether this is a product of its own", "signal"))
+                findings.append(Finding(rec.file, rec.line(*path), "TR3", f"{field} {value!r} also appears in {others}; the referee checks with TR4 whether this is a product of its own", "signal"))
 
 
 def validators_for(schema_dir: Path) -> dict:

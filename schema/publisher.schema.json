@@ -3,7 +3,7 @@
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/publisher.schema.json",
   "title": "TAXNMY publisher",
   "version": "1.2.0",
-  "description": "Whoever publishes the updates of a product. Stored as publishers/<publisher>.yaml. The form of the key (rule S2) and uniqueness (rule S3) are checked by tools/lint.py, not by this schema.",
+  "description": "Whoever publishes the updates of a product. Stored as publishers/<publisher>.yaml. The form of the key (rule TR2) and uniqueness (rule TR3) are checked by tools/lint.py, not by this schema.",
   "type": "object",
   "additionalProperties": false,
   "required": ["key", "name", "source"],

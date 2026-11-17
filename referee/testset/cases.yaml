@@ -7,7 +7,7 @@
 #   expect    the outcomes that count as right: accept | reject | alias | human
 #   rules     for a bad case: the rules of which at least one must answer "no" (or the lint rule)
 #   alias_of  for expect alias: the key the proposal duplicates
-#   lint      what tools/lint.py reports on the staged case: pass | signal | error S1/S2/S3
+#   lint      what tools/lint.py reports on the staged case: pass | signal | error TR1/TR2/TR3
 #   type      the kind of case, used to report results per kind
 #   holdout   files taken out of the dataset and proposed again, unchanged
 #   hide      files taken out of the dataset and not proposed
@@ -54,7 +54,7 @@ cases:
   expect: [accept]
   lint: pass
   holdout: [products/sony/ilce-7m4.yaml]
-  note: The model code ILCE-7M4 and the marketing name α7 IV both appear at the source. The name is the model code as the source writes it (S6).
+  note: The model code ILCE-7M4 and the marketing name α7 IV both appear at the source. The name is the model code as the source writes it (TR6).
 - id: G07
   type: holdout-device
   expect: [accept]
@@ -95,7 +95,7 @@ cases:
   expect: [accept]
   lint: pass
   holdout: [products/amazon-web-services/amazon-rds-for-mysql.yaml]
-  note: A managed service where the customer chooses the version (R1, T7).
+  note: A managed service where the customer chooses the version (TP1, TP3).
 - id: G15
   type: holdout-service
   expect: [accept]
@@ -125,32 +125,32 @@ cases:
   holdout: [products/nextcloud/nextcloud.yaml, publishers/nextcloud.yaml]
   note: The publisher has no other products, so it is held out with the product.
 
-# S4 signals from fase 1: one CPE for two products with their own update stream (T7).
+# TR4 signals from fase 1: one CPE for two products with their own update stream (TP3).
 - id: G20
-  type: s4-signal
+  type: tr4-signal
   expect: [accept]
   lint: signal
   holdout: [products/oracle/oracle-graalvm.yaml]
   note: Shares cpe oracle:graalvm with GraalVM Community Edition. Separate builds, licences and release pages, so its own update stream.
 - id: G21
-  type: s4-signal
+  type: tr4-signal
   expect: [accept]
   lint: signal
   holdout: [products/oracle/graalvm-community-edition.yaml]
 - id: G22
-  type: s4-signal
+  type: tr4-signal
   expect: [accept]
   lint: signal
   holdout: [products/red-hat/ansible-core.yaml]
   note: ansible-core and the ansible community package have their own version numbers and release cycles.
 - id: G23
-  type: s4-signal
+  type: tr4-signal
   expect: [accept, human]
   lint: signal
   holdout: [products/red-hat/ansible.yaml]
-  note: Own update stream, so S4 is yes. Who publishes the community package (S5) may need a person.
+  note: Own update stream, so TR4 is yes. Who publishes the community package (TR5) may need a person.
 
-# Two publishers of one group (S5).
+# Two publishers of one group (TR5).
 - id: G24
   type: related-publisher
   expect: [accept, human]
@@ -197,7 +197,7 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://vovsoft.com/, https://vovsoft.com/software/csv-to-json-converter/, https://vovsoft.com/software/json-to-csv-converter/]
-  note: Same words in another order, but another product. The lint signals it; S4 must say yes.
+  note: Same words in another order, but another product. The lint signals it; TR4 must say yes.
 - id: G27
   type: own-firmware
   expect: [accept, human]
@@ -214,7 +214,7 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://doc.samsungmobile.com/SM-X716B/026922230710/eng.html]
-  note: Looks like a variant of the Galaxy Tab S9 (SM-X710), but has its own firmware per model code, so it is a product of its own (T7). The source is the page that the frame of doc.samsungmobile.com/SM-X716B/EUX/doc.html loads (run A read only the menu around it).
+  note: Looks like a variant of samsung/galaxy-tab-s9 (SM-X710), but has its own firmware per model code, so it is a product of its own (TP3). The source is the page that the frame of doc.samsungmobile.com/SM-X716B/EUX/doc.html loads (run A read only the menu around it).
 - id: G28
   type: distribution-package
   expect: [accept, human]
@@ -233,7 +233,7 @@ cases:
         source: https://launchpad.net/ubuntu/+source/php8.3
       aliases: []
   verify: [https://launchpad.net/ubuntu/+source/php8.3, https://launchpad.net/ubuntu/+source/php8.3/+changelog]
-  note: The distribution patches PHP without raising the upstream version, so it has its own update stream (T7). Fase 1 left distribution packages out; this case tests the rule, not that choice.
+  note: The distribution patches PHP without raising the upstream version, so it has its own update stream (TP3). Fase 1 left distribution packages out; this case tests the rule, not that choice.
 
 # ---------------------------------------------------------------------------------------------
 # AI MODELS — once for a person; good since Fred decided that AI models are in TAX (13 November).
@@ -252,17 +252,17 @@ cases:
   lint: pass
   holdout: [products/openai/openai-api-models.yaml, publishers/openai.yaml]
   verify: [https://developers.openai.com/api/docs/deprecations]
-  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (S6) is a real border case, and human is right too (run A2 review §1, point 5).
+  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (TR6) is a real border case, and human is right too (run A2 review §1, point 5).
 
 # ---------------------------------------------------------------------------------------------
-# BAD, caught by code (S1–S3, and the code part of S8). Do not reach the AI.
+# BAD, caught by code (TR1–TR3, and the code part of TR8). Do not reach the AI.
 # ---------------------------------------------------------------------------------------------
 
 - id: B01
   type: code
   expect: [reject]
-  rules: [S1]
-  lint: error S1
+  rules: [TR1]
+  lint: error TR1
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds124.yaml: |
@@ -273,12 +273,12 @@ cases:
       source: https://www.synology.com/en-global/products/DS124
       identifiers: []
       aliases: []
-  note: No versions. Every product needs a source of versions (R1).
+  note: No versions. Every product needs a source of versions (TP1).
 - id: B02
   type: code
   expect: [reject]
-  rules: [S1]
-  lint: error S1
+  rules: [TR1]
+  lint: error TR1
   hide: [products/apple/apple-watch-ultra.yaml]
   proposal:
     products/apple/apple-watch-ultra.yaml: |
@@ -292,12 +292,12 @@ cases:
       battery_capacity_mah: 542
       identifiers: []
       aliases: []
-  note: A technical specification (T8). The schema accepts no other fields.
+  note: A technical specification (TP9). The schema accepts no other fields.
 - id: B03
   type: code
   expect: [reject]
-  rules: [S2]
-  lint: error S2
+  rules: [TR2]
+  lint: error TR2
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds-124.yaml: |
@@ -314,8 +314,8 @@ cases:
 - id: B04
   type: code
   expect: [reject]
-  rules: [S2]
-  lint: error S2
+  rules: [TR2]
+  lint: error TR2
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds124@7-2.yaml: |
@@ -332,8 +332,8 @@ cases:
 - id: B05
   type: code
   expect: [reject, alias]
-  rules: [S3]
-  lint: error S3
+  rules: [TR3]
+  lint: error TR3
   proposal:
     publishers/caddyserver.yaml: |
       key: caddyserver
@@ -356,7 +356,7 @@ cases:
 - id: B06
   type: ai-source
   expect: [reject, human]
-  rules: [S8]
+  rules: [TR8]
   lint: pass
   hide: [products/fortinet/fortigate-60f.yaml]
   proposal:
@@ -372,18 +372,18 @@ cases:
       - gtin: "0812345678904"
         source: https://chatgpt.com/share/6731a2b4-0000-0000-0000-000000000000
       aliases: []
-  note: The GTIN points to an AI chat, not a source. The lint does not catch this yet (proposal in README); the referee must, under S8.
+  note: The GTIN points to an AI chat, not a source. The lint does not catch this yet (proposal in README); the referee must, under TR8.
 
 # ---------------------------------------------------------------------------------------------
 # BAD, judged by the AI.
 # ---------------------------------------------------------------------------------------------
 
-# Same product, words in another order (S3 signal -> S4 alias).
+# Same product, words in another order (TR3 signal -> TR4 alias).
 - id: B07
   type: word-order-duplicate
   expect: [alias]
   alias_of: apple/macbook-pro-14-inch-2021
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/apple/macbook-pro-2021-14-inch.yaml: |
@@ -400,7 +400,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: apple/ipad-pro-12-9-inch-5th-generation
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/apple/ipad-pro-5th-generation-12-9-inch.yaml: |
@@ -417,7 +417,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: apple/apple-tv-4k-3rd-generation
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/apple/apple-tv-3rd-generation-4k.yaml: |
@@ -434,7 +434,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: shelly/shelly-plus-1pm
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/shelly/shelly-1pm-plus.yaml: |
@@ -451,7 +451,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: samsung/galaxy-tab-s9
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/samsung/galaxy-s9-tab.yaml: |
@@ -465,12 +465,12 @@ cases:
       identifiers: []
       aliases: []
 
-# Variant without its own update stream (S4).
+# Variant without its own update stream (TR4).
 - id: B12
   type: variant
   expect: [alias, reject]
   alias_of: apple/iphone-17-pro
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/apple/iphone-17-pro-256gb-cosmic-orange.yaml: |
@@ -488,7 +488,7 @@ cases:
   type: variant
   expect: [alias, reject]
   alias_of: apple/apple-watch-ultra
-  rules: [S4, S6]
+  rules: [TR4, TR6]
   lint: pass
   proposal:
     products/apple/apple-watch-ultra-with-alpine-loop.yaml: |
@@ -506,7 +506,7 @@ cases:
   type: variant
   expect: [alias, reject]
   alias_of: fortinet/fortigate-60f
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/fortinet/fortigate-60f-unified-threat-protection-bundle.yaml: |
@@ -524,7 +524,7 @@ cases:
   type: variant
   expect: [alias, reject]
   alias_of: sony/ilce-7m4
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/sony/ilce-7m4k.yaml: |
@@ -537,13 +537,13 @@ cases:
         source: https://www.sony.nl/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/downloads
       identifiers: []
       aliases: []
-  note: The kit with a lens; the same body and firmware. The source shows only ILCE-7M4, so S6 or S8 may also say no.
+  note: The kit with a lens; the same body and firmware. The source shows only ILCE-7M4, so TR6 or TR8 may also say no.
 
-# A description instead of a name (S6).
+# A description instead of a name (TR6).
 - id: B16
   type: description
   expect: [reject]
-  rules: [S6]
+  rules: [TR6]
   lint: pass
   hide: [products/synology/ds124.yaml]
   proposal:
@@ -560,7 +560,7 @@ cases:
 - id: B17
   type: description
   expect: [reject]
-  rules: [S6]
+  rules: [TR6]
   lint: pass
   hide: [products/elastic/kibana.yaml]
   proposal:
@@ -575,11 +575,11 @@ cases:
       identifiers: []
       aliases: []
 
-# A translated name (S6).
+# A translated name (TR6).
 - id: B18
   type: translated
   expect: [reject]
-  rules: [S6]
+  rules: [TR6]
   lint: pass
   hide: [products/apple/apple-tv-4k-3rd-generation.yaml]
   proposal:
@@ -597,7 +597,7 @@ cases:
 - id: B19
   type: translated
   expect: [reject]
-  rules: [S6]
+  rules: [TR6]
   lint: pass
   hide: [products/apple/apple-watch-ultra.yaml]
   proposal:
@@ -612,11 +612,11 @@ cases:
       identifiers: []
       aliases: []
 
-# A product that does not exist, or a value that only an AI gives (S7, S8).
+# A product that does not exist, or a value that only an AI gives (TR7, TR8).
 - id: B20
   type: hallucinated
   expect: [reject, human]
-  rules: [S7, S8]
+  rules: [TR7, TR8]
   lint: pass
   proposal:
     products/shelly/shelly-plus-9pm.yaml: |
@@ -634,7 +634,7 @@ cases:
 - id: B21
   type: hallucinated
   expect: [reject, human]
-  rules: [S7, S8]
+  rules: [TR7, TR8]
   lint: pass
   proposal:
     products/fortinet/fortigate-66f.yaml: |
@@ -652,7 +652,7 @@ cases:
 - id: B22
   type: hallucinated
   expect: [reject, human]
-  rules: [S7, S8]
+  rules: [TR7, TR8]
   lint: pass
   proposal:
     products/synology/ds128.yaml: |
@@ -670,7 +670,7 @@ cases:
 - id: B23
   type: unconfirmed-value
   expect: [reject, human]
-  rules: [S8]
+  rules: [TR8]
   lint: pass
   hide: [products/apple/iphone-17-pro.yaml]
   proposal:
@@ -690,7 +690,7 @@ cases:
 - id: B24
   type: unconfirmed-value
   expect: [reject, human]
-  rules: [S8]
+  rules: [TR8]
   lint: pass
   hide: [products/elastic/kibana.yaml]
   proposal:
@@ -708,11 +708,11 @@ cases:
       aliases: []
   note: An invented CPE, pointing to a page that does not contain it.
 
-# The wrong publisher (S5).
+# The wrong publisher (TR5).
 - id: B25
   type: wrong-publisher
   expect: [reject]
-  rules: [S5, S7]
+  rules: [TR5, TR7]
   lint: pass
   proposal:
     publishers/amazon.yaml: |
@@ -731,11 +731,11 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://www.aboutamazon.com/, https://ring.com/products/video-doorbell-4, https://ring.com/support]
-  note: The parent company instead of the brand that publishes the firmware. Checked 13 Nov - the product URL redirects to another doorbell, so S7 may say no as well; replace it with a page that shows the product if one is found.
+  note: The parent company instead of the brand that publishes the firmware. Checked 13 Nov - the product URL redirects to another doorbell, so TR7 may say no as well; replace it with a page that shows the product if one is found.
 - id: B26
   type: wrong-publisher
   expect: [reject]
-  rules: [S5]
+  rules: [TR5]
   lint: pass
   hide: [products/elastic/kibana.yaml]
   proposal:
@@ -759,7 +759,7 @@ cases:
 - id: B27
   type: wrong-publisher
   expect: [reject]
-  rules: [S5]
+  rules: [TR5]
   lint: pass
   hide: [products/netgear/rbr750.yaml]
   proposal:
@@ -783,7 +783,7 @@ cases:
   type: repackaged
   expect: [reject, alias]
   alias_of: caddy/caddy
-  rules: [S4, S5]
+  rules: [TR4, TR5]
   lint: pass
   proposal:
     publishers/chocolatey-community.yaml: |
@@ -804,11 +804,11 @@ cases:
   verify: [https://community.chocolatey.org/packages/caddy]
   note: A package manager that redistributes the upstream releases unchanged has no update stream of its own. Compare G28, where the distribution patches.
 
-# A service without a version the customer can see (R1, S4).
+# A service without a version the customer can see (TP1, TR4).
 - id: B29
   type: saas
   expect: [reject, human]
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/microsoft/outlook-on-the-web.yaml: |
@@ -826,7 +826,7 @@ cases:
 - id: B30
   type: saas
   expect: [reject, human]
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/google/gmail.yaml: |
@@ -841,14 +841,14 @@ cases:
       aliases: []
   verify: [https://workspace.google.com/products/gmail/, https://workspaceupdates.googleblog.com/]
 
-# The wrong publisher on a domain of its own (S5, TAX-24). Unlike B25-B28, the proposed publisher's
+# The wrong publisher on a domain of its own (TR5, TAX-24). Unlike B25-B28, the proposed publisher's
 # source, the product source and the versions source are all on one domain: the domain comparison
 # passes, and only a reading of the pages shows who publishes the updates. Each is a site that
 # offers the downloads of many publishers, with a page and a version list per product.
 - id: B31
   type: wrong-publisher-own-domain
   expect: [reject]
-  rules: [S4, S5]
+  rules: [TR4, TR5]
   lint: pass
   proposal:
     publishers/filehippo.yaml: |
@@ -871,7 +871,7 @@ cases:
 - id: B32
   type: wrong-publisher-own-domain
   expect: [reject]
-  rules: [S4, S5]
+  rules: [TR4, TR5]
   lint: pass
   proposal:
     publishers/uptodown.yaml: |
@@ -894,7 +894,7 @@ cases:
 - id: B33
   type: wrong-publisher-own-domain
   expect: [reject]
-  rules: [S4, S5]
+  rules: [TR4, TR5]
   lint: pass
   proposal:
     publishers/filehorse.yaml: |
@@ -915,12 +915,12 @@ cases:
   verify: [https://www.filehorse.com/, https://www.filehorse.com/download-7-zip-64/, https://www.filehorse.com/download-7-zip-64/old-versions/]
   note: A download site with an "old versions" page of another publisher's software.
 
-# A wrong `kind`, every other value as in the data (S8, TAX-24). Code finds the name and every code
-# in its own source, so before TAX-24 the gate said S8 yes and the referee was never asked about `kind`.
+# A wrong `kind`, every other value as in the data (TR8, TAX-24). Code finds the name and every code
+# in its own source, so before TAX-24 the gate said TR8 yes and the referee was never asked about `kind`.
 - id: B34
   type: wrong-kind
   expect: [reject, human]
-  rules: [S8]
+  rules: [TR8]
   lint: pass
   hide: [products/synology/ds124.yaml]
   proposal:
@@ -938,7 +938,7 @@ cases:
 - id: B35
   type: wrong-kind
   expect: [reject, human]
-  rules: [S8]
+  rules: [TR8]
   lint: pass
   hide: [products/microsoft/sql-server.yaml]
   proposal:
@@ -956,13 +956,13 @@ cases:
       aliases: []
   note: G13 with kind operating-system. SQL Server is a database server, software; its own CPE part is "a" (application).
 
-# A service without a version (S4, TAX-18). Like B30: the provider changes the service, the customer
+# A service without a version (TR4, TAX-18). Like B30: the provider changes the service, the customer
 # sees or chooses no version, and the page given as versions source publishes news about changes.
-# Before the S4 version quote, B30 was the only case of its kind that reached the referee.
+# Before the TR4 version quote, B30 was the only case of its kind that reached the referee.
 - id: B36
   type: saas
   expect: [reject, human]
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/github/github-com.yaml: |
@@ -979,7 +979,7 @@ cases:
 - id: B37
   type: saas
   expect: [reject, human]
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/amazon-web-services/amazon-s3.yaml: |
@@ -996,7 +996,7 @@ cases:
 - id: B38
   type: saas
   expect: [reject, human]
-  rules: [S4]
+  rules: [TR4]
   lint: pass
   proposal:
     products/microsoft/microsoft-entra-id.yaml: |
@@ -1011,14 +1011,14 @@ cases:
       aliases: []
   note: A "what's new" page of a cloud service. A product of the same publisher with a similar name (a sync tool) does have versions.
 
-# Names that differ from an existing one by one or two characters (S10). Code gives no signal yet:
+# Names that differ from an existing one by one or two characters (TV3). Code gives no signal yet:
 # each key is new and shares no word with an existing key. The sources are those of the product
 # imitated, so a source shows the real name, not the proposed one. Accepted, any of these would put
 # a second publisher or product next to the real one.
 - id: B39
   type: lookalike-publisher
   expect: [reject, human]
-  rules: [S5, S6]
+  rules: [TR5, TR6]
   lint: pass
   proposal:
     publishers/micros0ft.yaml: |
@@ -1040,7 +1040,7 @@ cases:
 - id: B40
   type: lookalike-publisher
   expect: [reject, human]
-  rules: [S5, S6]
+  rules: [TR5, TR6]
   lint: pass
   proposal:
     publishers/mircosoft.yaml: |
@@ -1062,7 +1062,7 @@ cases:
 - id: B41
   type: lookalike-publisher
   expect: [reject, human]
-  rules: [S5, S6]
+  rules: [TR5, TR6]
   lint: pass
   proposal:
     publishers/rnicrosoft.yaml: |
@@ -1084,7 +1084,7 @@ cases:
 - id: B42
   type: lookalike-publisher
   expect: [reject, human]
-  rules: [S5, S6]
+  rules: [TR5, TR6]
   lint: pass
   proposal:
     publishers/synoloqy.yaml: |
@@ -1106,7 +1106,7 @@ cases:
 - id: B43
   type: lookalike-product
   expect: [reject, human]
-  rules: [S4, S6]
+  rules: [TR4, TR6]
   lint: pass
   proposal:
     products/synology/d5124.yaml: |
@@ -1123,7 +1123,7 @@ cases:
 - id: B44
   type: lookalike-domain
   expect: [reject, human]
-  rules: [S5, S7]
+  rules: [TR5, TR7]
   lint: pass
   proposal:
     products/synology/ds225-plus.yaml: |

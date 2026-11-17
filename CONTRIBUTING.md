@@ -1,8 +1,8 @@
 # Contributing to TAXNMY
 
 You propose a product by opening a pull request that adds or changes data files. Every pull request
-is checked by the lint (rules S1–S3), and then by the referee: code first, and an AI for what code
-cannot settle (rules S4–S8). Rule S10 guards against names and sources that imitate existing ones.
+is checked by the lint (rules TR1–TR3), and then by the referee: code first, and an AI for what code
+cannot settle (rules TR4–TR8). Rules TV1–TV6 guard against names and sources that imitate existing ones.
 The rules are described in the [README](README.md#the-referee).
 
 The referee leaves a comment on the pull request with one line per file: *accept*, *reject* (with
@@ -88,12 +88,12 @@ aliases: []
 Each finding names the file, the line and the rule:
 
 ```
-products/example/bad.yaml:5: S1: 'kind' is a required property
+products/example/bad.yaml:5: TR1: 'kind' is a required property
 ```
 
 - An **error** rejects the pull request.
 - A **signal** (a CPE or GTIN that another product also has, or a key with the same words as another key or alias of the same publisher in another order) does not reject it. The referee
-  decides with S4 whether it is a product of its own.
+  decides with TR4 whether it is a product of its own.
 
 ## Changing the schema
 

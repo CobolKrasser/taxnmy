@@ -4,13 +4,13 @@
 Every product file a pull request adds or changes gets an outcome:
 
     accept   it may be merged
-    reject   on a rule (S1-S8), with the reason
-    alias    it is an existing product written in another way (S4)
+    reject   on a rule (TR1-TR8), with the reason
+    alias    it is an existing product written in another way (TR4)
     parked   not taken in, on a rule, with the reason: the referee doubts, a source is closed, the
              budget or a fork leaves it unjudged. It goes to the parking list (referee/parked.yaml)
              and can be judged again later with one command.
 
-First the lint (S1-S3) and the gate (S5, S6 and S8 by code, tools/gate.py), for free; then the AI
+First the lint (TR1-TR3) and the gate (TR5, TR6 and TR8 by code, tools/gate.py), for free; then the AI
 referee, only for what code left, as one batch. Doubt means: not taken in, parked (Fred, 14 November).
 
 The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
@@ -159,8 +159,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         elif not referee.product_file(p["files"])[0]:
             settled(item, "accept", reason="a publisher file that passes the lint")
         elif chat := gate.ai_chat(st.product, st.publisher):
-            settled(item, "reject", "S8", chat["reason"])
-            item["decided"] = {"S8": chat}
+            settled(item, "reject", "TR8", chat["reason"])
+            item["decided"] = {"TR8": chat}
         else:
             sources = referee.gather_sources(fetcher, st)
             item["sources"] = [asdict(s) for s in sources]
@@ -168,7 +168,7 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             item["decided"] = decided
             if gone:
-                settled(item, "reject", "S7", gone)
+                settled(item, "reject", "TR7", gone)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
             else:

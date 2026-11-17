@@ -1,15 +1,15 @@
 # The referee — fase 2
 
-This folder holds what is needed to build and measure the AI referee for rules S4–S8. Rules S1–S3
+This folder holds what is needed to build and measure the AI referee for rules TR4–TR8. Rules TR1–TR3
 are checked by `tools/lint.py`. Nothing in this folder calls an API. The runs are done by the
 harness `tools/referee.py`, within the budget below.
 
 | file | what it is |
 | --- | --- |
-| `prompt.md` | the system prompt and user message for S4–S8, and how the outcome is computed |
+| `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
 | `testset/cases.yaml` | 65 proposals with the expected outcome: 30 good (G01–G28, H01–H02), 35 bad |
-| `r13-research.md` | the research into whether an AI can be a source (R13) |
+| `r13-research.md` | the research into whether an AI can be a source (TE4) |
 | `prices.yaml` | the prices per model that the harness counts with, with their source |
 | `runs/<run>/` | the results of a measurement, one directory per run |
 
@@ -21,9 +21,9 @@ The harness is `tools/referee.py`; see [The harness](#the-harness) below.
 
 | group | cases | kinds |
 | --- | --- | --- |
-| good | G01–G28 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 S4 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right |
+| good | G01–G28 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 TR4 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right |
 | good, AI models | H01–H02 | the AI models of Anthropic and OpenAI: once for a person, good since Fred decided on 13 November that AI models are in TAX |
-| bad, caught by code | B01–B06 | a missing field, a specification (T8), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
+| bad, caught by code | B01–B06 | a missing field, a specification (TP9), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
 | bad, for the AI | B07–B30 | 5 duplicates in another word order, 4 variants, 2 descriptions, 2 translations, 3 invented products, 2 values that the source does not confirm, 3 wrong publishers, 1 repackaged product, 2 SaaS without versions |
 | bad, past the old gate | B31–B35 | 3 wrong publishers with the product and the versions on a domain of their own (download sites), 2 existing products with a wrong `kind` (TAX-24) |
 
@@ -102,12 +102,12 @@ proposal, three source texts) and 1,500 output tokens.
 | run | proposals | Sonnet 5.5 | Opus 5.5 |
 | --- | --- | --- | --- |
 | A: base run, cases that reach the AI (G, H, B07–B30) | 54 | ≈ $1.90; ≈ $0.95 as a batch | ≈ $3.80; ≈ $1.90 as a batch |
-| R13 M: memory | 29 | ≈ $0.55; ≈ $0.28 as a batch | ≈ $1.10; ≈ $0.55 as a batch |
-| R13 W: web search, ≤ 3 searches | 29 | ≈ $2.90, including about $0.30 for searches | ≈ $5.50 |
+| TE4 M: memory | 29 | ≈ $0.55; ≈ $0.28 as a batch | ≈ $1.10; ≈ $0.55 as a batch |
+| TE4 W: web search, ≤ 3 searches | 29 | ≈ $2.90, including about $0.30 for searches | ≈ $5.50 |
 | **total** | | **≈ $4.10** | **over budget** |
 
 **Advice: Sonnet 5.5 for all three conditions.** That fits the budget with room for one rerun of
-the base run. Opus 5.5 fits only for the base run. R13 needs the same model in all three
+the base run. Opus 5.5 fits only for the base run. TE4 needs the same model in all three
 conditions.
 
 - **Batches** halve the price of A and M. W can also go in a batch if web search is supported
@@ -120,14 +120,14 @@ conditions.
 
 Two proposals for `tools/lint.py`, from building this testset:
 
-1. ~~**S8, by code:** reject a `source` on a domain of an AI chat.~~ Built in the gate (TAX-15),
-   see [The gate](#the-gate-s5-s6-and-s8-by-code). B06 tests it.
-2. **Publishers, like S3 for products:** a signal when a new publisher key shares its first word
+1. ~~**TR8, by code:** reject a `source` on a domain of an AI chat.~~ Built in the gate (TAX-15),
+   see [The gate](#the-gate-tr5-tr6-and-tr8-by-code). B06 tests it.
+2. **Publishers, like TR3 for products:** a signal when a new publisher key shares its first word
    with an existing one (`alibaba` and `alibaba-cloud`). G24 and G25 test this.
 
 A finding from fase 1 that is not part of this testset: the source of several publishers is an
 endoflife.date page (`alibaba`, `caddy`, `elastic`). That page shows the product, not who publishes
-it. S5 needs a page of the publisher itself. The base run will show how often the referee doubts on
+it. TR5 needs a page of the publisher itself. The base run will show how often the referee doubts on
 that.
 
 ## The harness
@@ -141,7 +141,7 @@ python -m playwright install chromium                # once, for the browser ste
 python tools/referee.py fetch --output sources.json  # read the sources (free, no key)
 python tools/referee.py run --sources sources.json   # dry run with those sources
 python tools/referee.py run                          # dry run of the base run: nothing is sent
-python tools/referee.py run --condition memory       # dry run of R13 M, on the 29 cases
+python tools/referee.py run --condition memory       # dry run of TE4 M, on the 29 cases
 python tools/referee.py run --live                   # the base run: one call per case
 python tools/referee.py run --live --batch           # the same, as one batch, at half price
 python tools/referee.py check-urls                   # fetch the verify URLs (free)
@@ -154,13 +154,13 @@ For each case it:
    the files of the case, compared with the whole dataset (TAX-16). A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
    stops there, with outcome *reject*. A case with a source on an AI chat stops there too: *reject*
-   on S8, by the gate, and nothing is fetched (condition *fetched* only);
+   on TR8, by the gate, and nothing is fetched (condition *fetched* only);
 2. reads the distinct `source` URLs of the proposal, and the source of the publisher file, with
    the ladder of [Reading sources](#reading-sources) (condition *fetched* only). At most about
    6,000 tokens per page. When the product's own `source` answers 404 or 410, the case stops
-   there: outcome *reject* on S7, by code;
-3. runs the gate on the fetched texts (condition *fetched* only): code settles S5, S6 and S8 where
-   it can, see [The gate](#the-gate-s5-s6-and-s8-by-code);
+   there: outcome *reject* on TR7, by code;
+3. runs the gate on the fetched texts (condition *fetched* only): code settles TR5, TR6 and TR8 where
+   it can, see [The gate](#the-gate-tr5-tr6-and-tr8-by-code);
 4. fills in the user message of `prompt.md`, with a `<decided>` block for what the gate settled. The publisher file always comes along: in
    `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
    existing product of each signal, the products of the same publisher that resemble the proposal (a word of
@@ -173,7 +173,7 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of R13: `--condition fetched` (A, the default, all 65 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 65 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
 `--cases` says otherwise (`--cases all` for all 65); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
@@ -183,12 +183,12 @@ runs side by side on the cases they share.
 Each live run writes `runs/<time>-<condition>-<model>/`: `run.json` (the settings and the budget),
 `results.jsonl` (one line per case, with the answer, the checked verdicts, the outcome and the
 cost), `sources.json` (the fetched texts, so that the quote check can be redone) and
-`summary.md` (the measures of § Scoring, per rule and per type, and the R13 measures; *human* is counted by cause: a source closed, or the referee doubts).
+`summary.md` (the measures of § Scoring, per rule and per type, and the TE4 measures; *human* is counted by cause: a source closed, or the referee doubts).
 
 Model and effort are `--model` (default `claude-opus-5-5`) and `--effort` (default `medium`).
 `max_tokens` is 8,000 per request unless the budget lowers it. Thinking counts toward it.
 
-### The gate: S5, S6 and S8 by code
+### The gate: TR5, TR6 and TR8 by code
 
 `tools/gate.py` settles what can be read off literally, before the referee is called (TAX-15;
 `tax-analyse-fable-2026-11-14.md` §4 in keepitfresh). Code only says what it can show; the rest
@@ -196,20 +196,20 @@ goes to the referee, never a guess.
 
 | rule | code says *yes* | code says *no* | otherwise |
 | --- | --- | --- | --- |
-| S5 | the publisher is already in TAX (not in the proposal), `versions.source` was read, and its registrable domain is that of the publisher's `source` | – | referee |
-| S6 | the product name and the publisher name, each at most 40 characters, appear in a source text that was read, capitals and whitespace aside, not glued to other letters or digits | – | referee |
-| S8 | never | a source is on the domain of an AI chat | referee |
+| TR5 | the publisher is already in TAX (not in the proposal), `versions.source` was read, and its registrable domain is that of the publisher's `source` | – | referee |
+| TR6 | the product name and the publisher name, each at most 40 characters, appear in a source text that was read, capitals and whitespace aside, not glued to other letters or digits | – | referee |
+| TR8 | never | a source is on the domain of an AI chat | referee |
 
 No rule stays untested because code settled another one (TAX-24). Where code checked part of a
-rule that stays with the referee, the `<decided>` block says so in a line `S8 in part: …` or
-`S5 in part: …`; that is a note, not a verdict.
+rule that stays with the referee, the `<decided>` block says so in a line `TR8 in part: …` or
+`TR5 in part: …`; that is a note, not a verdict.
 
-- **S8.** Code looks for the literal values: the product name, in the text of the product's
+- **TR8.** Code looks for the literal values: the product name, in the text of the product's
   `source`, and each code, in the text of its own `source`, with every source of the product read.
   A source found *instead of* another does not count. But `kind` is a value too, and a
-  classification that no code reads off, so S8 always goes to the referee; what code found goes
-  along as a note. Before TAX-24 code said S8 *yes* here, and a wrong `kind` reached no one (B34, B35).
-- **S5.** Two URLs on one domain show where the versions are, not who publishes them. For a
+  classification that no code reads off, so TR8 always goes to the referee; what code found goes
+  along as a note. Before TAX-24 code said TR8 *yes* here, and a wrong `kind` reached no one (B34, B35).
+- **TR5.** Two URLs on one domain show where the versions are, not who publishes them. For a
   publisher proposed together with the product, both URLs come from the proposal: a wrong
   publisher with a site of its own and the versions on that same site passes the comparison
   (B31–B33). So code says *yes* only for a publisher whose `source` TAX already accepted, and only
@@ -218,8 +218,8 @@ rule that stays with the referee, the `<decided>` block says so in a line `S8 in
   (`github.com`, …) the owner is the first part of the path, on `*.github.io` and the like the
   label in front; catalogues, package registries and encyclopaedias (`endoflife.date`, `pypi.org`,
   …) never count as the publisher's site.
-- The lists in `tools/gate.py` are classes of sites, never a brand or a product of the data (S9, R3).
-- S4 and S7 stay with the referee. Conditions *memory* and *web* (R13) have no gate: they measure
+- The lists in `tools/gate.py` are classes of sites, never a brand or a product of the data (TG4).
+- TR4 and TR7 stay with the referee. Conditions *memory* and *web* (TE4) have no gate: they measure
   the AI alone.
 
 A **dry run** shows per case what the gate settles and what a live run would ask, and writes it to
@@ -293,9 +293,9 @@ A site that refuses is not worked around. A person decides, or the product gets 
 ### The model measurement (TAX-18)
 
 Which model may judge: Opus 5.5 was measured (A, A2), at effort *medium*. A stand that lets one
-bad case through in any of its runs drops out (R7). In the first measurement (16 November 2026,
+bad case through in any of its runs drops out (TE2). In the first measurement (16 November 2026,
 effort *low*) Haiku 5.5 and Sonnet 5.5 both let B30 through and dropped out; Haiku is not measured
-again. Sonnet 5.5 is measured again, at *low* and at *medium*, with the S4 version (below).
+again. Sonnet 5.5 is measured again, at *low* and at *medium*, with the TR4 version (below).
 
 `run --batch` sends every case that reaches the referee as one batch (half price, answered within
 hours; not for condition *web*). The budget stays hard: requests go in rounds, each holding what
@@ -319,7 +319,7 @@ python tools/referee.py measure --efforts low medium --sources sources.json --li
 3. **The report** `runs/model-measurement-<time>.md`: per stand and per run the bad cases let
    through, the good cases rejected, the cases for a person (*human*; *parked* in the PR mode) and
    the rules that left them there, the cases whose outcome differs between the runs, the quotes code
-   did not find (an S4 without a version among them), the output tokens and the cost per proposal;
+   did not find (an TR4 without a version among them), the output tokens and the cost per proposal;
    and `compare` with A2.
 
 **The estimate** without `--live`: the input tokens of A2 (or, with `--count`, those counted), and
@@ -329,11 +329,11 @@ about 560 tokens per case at *low* in the first measurement, A2 about 1,100), *m
 *medium*, three runs each, on the 69 cases past the lint, that is about $2.80 and $3.40: **about
 $6.20** together. About $13.15 of the $50 is spent.
 
-**The S4 version.** Since the second measurement, a *yes* on S4 needs a version quoted from the
-versions source (`prompt.md` § Outcome). The first measurement showed a hosted service passing S4
+**The TR4 version.** Since the second measurement, a *yes* on TR4 needs a version quoted from the
+versions source (`prompt.md` § Outcome). The first measurement showed a hosted service passing TR4
 on a page of news about it (B30). The test set now holds five cases of a service without a version
 (B29, B30, B36–B38) and six of a name or domain one or two characters from an existing one
-(B39–B44, rule S10). The outcomes of the first and the second measurement are therefore not
+(B39–B44, rules TV2 and TV3). The outcomes of the first and the second measurement are therefore not
 comparable one to one: the prompt differs.
 
 As an Action: **referee-models** (*Actions → referee-models → Run workflow*). Its job `sources`
@@ -351,8 +351,8 @@ outcome, in a comment on the pull request:
 | outcome | when |
 | --- | --- |
 | *accept* | the lint passes, and every rule is *yes*, by code or by the referee |
-| *reject* | a rule is *no*: the lint (S1–S3), a 404 (S7), an AI chat as source (S8), or the referee; with the rule and the reason |
-| *alias* | the referee finds the same product under another key (S4); the comment names it |
+| *reject* | a rule is *no*: the lint (TR1–TR3), a 404 (TR7), an AI chat as source (TR8), or the referee; with the rule and the reason |
+| *alias* | the referee finds the same product under another key (TR4); the comment names it |
 | *parked* | not taken in now: the referee doubts, a quote is not in its source, the answer is unusable, a ceiling leaves no room, or the pull request comes from a fork. With the rules and the reason |
 
 *Doubt means: not taken in, but parked* (Fred, 14 November). Nothing goes to a person: a contributor
@@ -369,7 +369,7 @@ who disagrees can say so on the pull request. The test set's *human* is *parked*
   most 2,000 files of 64 KB. The pull request must have that commit as its head. Then:
   - **gate**, no key: stages each product file (with the publisher file it brings) on the data of
     `main`, lints it, reads its sources with the ladder of [Reading sources](#reading-sources) and runs
-    [the gate](#the-gate-s5-s6-and-s8-by-code). Free.
+    [the gate](#the-gate-tr5-tr6-and-tr8-by-code). Free.
   - **judge**, in environment `referee`: the key, after Fred approves. One request per product that
     code did not settle, as **one batch** (half price, answered within hours). Model and effort:
     the repository variables `REFEREE_MODEL` (default `claude-opus-5-5`, until TAX-18 chooses) and

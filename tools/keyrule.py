@@ -8,7 +8,7 @@
 5. Version only: spaces become "-"; ".", "+" and "_" stay; step 2 does not apply.
 
 Only the Latin script is accepted. The rule holds no knowledge of brands or
-products (S9): the only list is one of legal forms.
+products (TG4): the only list is one of legal forms.
 """
 
 from __future__ import annotations

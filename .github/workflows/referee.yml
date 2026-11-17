@@ -21,12 +21,12 @@ on:
         options: [measure, check-urls]
         default: measure
       condition:
-        description: "fetched (base run), memory or web (R13)"
+        description: "fetched (base run), memory or web (TE4)"
         type: choice
         options: [fetched, memory, web]
         default: fetched
       cases:
-        description: "case ids separated by spaces, or all; empty: all for fetched, the 29 R13 cases otherwise"
+        description: "case ids separated by spaces, or all; empty: all for fetched, the 29 TE4 cases otherwise"
         type: string
         default: ""
       limit:

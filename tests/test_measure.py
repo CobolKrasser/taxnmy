@@ -170,7 +170,7 @@ class MeasureTest(unittest.TestCase):
         text = Path(report["report"]).read_text()
         self.assertIn("| claude-sonnet-5-5 low | 3 |", text)
         self.assertIn("| claude-sonnet-5-5 medium | 3 |", text)
-        self.assertIn("S4 without a version found", text)
+        self.assertIn("TR4 without a version found", text)
 
     def test_a_dry_measure_estimates_every_stand(self):
         report, _ = self.measure(live=False, models=["claude-sonnet-5-5"], efforts=["low", "medium"])
