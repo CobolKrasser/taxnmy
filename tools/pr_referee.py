@@ -4,10 +4,11 @@
 Every product file a pull request adds or changes gets an outcome:
 
     accept   it may be merged
-    reject   on a rule (TR1-TR8), with the reason
+    reject   on a rule (TR1-TR8, TV1, TV4), with the reason
     alias    it is an existing product written in another way (TR4)
     parked   not taken in, on a rule, with the reason: the referee doubts, a source is closed, the
-             budget or a fork leaves it unjudged. It goes to the parking list (referee/parked.yaml)
+             budget or a fork leaves it unjudged, or code holds it for a person (TV3, TV5, tools/guard.py),
+             whatever the referee answers. It goes to the parking list (referee/parked.yaml)
              and can be judged again later with one command.
 
 First the lint (TR1-TR3) and the gate (TR5, TR6 and TR8 by code, tools/gate.py), for free; then the AI
@@ -24,7 +25,7 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
     apply     locally, on the branch of the pull request: parked files move to the parking list,
               rejected ones are taken out.
     parked    locally: judge the parking list again (one command).
-    testset   the 65 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 77 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -150,14 +151,24 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
     items = []
     for p in proposals:
         st = stager.stage_files(p["files"], removed=p.get("removed", ()), context=p.get("context"))
-        item = {"id": p["id"], "key": key_of(p["files"]), "files": p["files"], "case": p.get("case"),
-                "lint": [str(f) for f in st.findings], "sources": [], "decided": {}, "ai_rules": [], "message": "",
+        item = {"id": p["id"], "key": key_of(p["files"]), "files": p["files"], "case": p.get("case"), "old": st.old,
+                "lint": [str(f) for f in st.findings], "sources": [], "decided": {}, "ai_rules": [], "message": "", "held": {},
                 "outcome": "", "rule": "", "reason": "", "by": "", "cost": 0.0, "verdict": {}, "checked": {}}
         errors = [f for f in st.findings if f.level == "error"]
         if errors:
             settled(item, "reject", errors[0].rule, errors[0].message)
         elif not referee.product_file(p["files"])[0]:
-            settled(item, "accept", reason="a publisher file that passes the lint")
+            # A publisher file alone: nothing for the referee, but code may hold it (TV3, TV5), and
+            # a second source it gives must pass (TV4).
+            sources = [fetcher.fetch(u, "") for u in referee.case_urls(st)]
+            item["sources"] = [asdict(s) for s in sources]
+            item["held"] = referee.hold(st, sources)
+            if wrong := referee.second_source_fault(st, sources):
+                settled(item, "reject", "TV4", wrong)
+            elif item["held"]:
+                settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
+            else:
+                settled(item, "accept", reason="a publisher file that passes the lint and the checks of code")
         elif chat := gate.ai_chat(st.product, st.publisher):
             settled(item, "reject", "TR8", chat["reason"])
             item["decided"] = {"TR8": chat}
@@ -167,11 +178,15 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             gone = referee.product_gone(st.files, sources)
             decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             item["decided"] = decided
+            wrong = referee.second_source_fault(st, sources)
             if gone:
                 settled(item, "reject", "TR7", gone)
+            elif wrong:
+                settled(item, "reject", "TV4", wrong)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
             else:
+                item["held"] = referee.hold(st, sources)
                 item["ai_rules"] = [r for r in referee.RULES if r not in decided]
                 item["message"] = referee.build_message(st, "fetched", sources, decided)
                 item["outcome"] = "pending"
@@ -185,7 +200,8 @@ def park_pending(items: list[dict], reason: str) -> None:
     """What the referee did not judge is parked, with the rules it would have been asked."""
     for item in items:
         if item["outcome"] == "pending":
-            settled(item, "parked", ", ".join(item["ai_rules"]), reason)
+            held = item.get("held") or {}
+            settled(item, "parked", ", ".join([*held, *item["ai_rules"]]), "; ".join([*held.values(), reason]))
 
 
 # --------------------------------------------------------------------------- judge (the key)
@@ -281,11 +297,17 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     if verdict is None:
         return settled(item, "parked", rules, why + (" (cut off at max_tokens)" if answer["stop"] == "max_tokens" else ""), "ai")
     sources = [Source(**s) for s in item["sources"]]
-    checked, notes = referee.check_quotes(verdict, sources, item["ai_rules"], referee.versions_url(item["files"]))
+    checked, notes = referee.check_quotes(verdict, sources, item["ai_rules"], referee.versions_url(item["files"]), item["files"])
     checked = {**checked, **item["decided"]}
     item["verdict"] = verdict
     item["checked"] = {r: checked[r]["verdict"] for r in referee.RULES}
     outcome, rule = referee.outcome({**checked, "duplicate_of": verdict.get("duplicate_of")})
+    held = item.get("held") or {}
+    if held and outcome in ("accept", "human"):
+        # Held by code (TV3, TV5): a person decides, whatever the referee answered.
+        doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
+        return settled(item, "parked", ", ".join([*held, *doubts]),
+                       "; ".join([*held.values(), *notes, *(f"{r}: {checked[r]['reason']}" for r in doubts)]), "code")
     if outcome == "human":
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         reasons = [n for n in notes] + [f"{r}: {checked[r]['reason']}" for r in doubts if not any(n.startswith(r) for n in notes)]
@@ -325,7 +347,7 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
                    run_dir: Path | None = None) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     cost = sum(i.get("cost", 0.0) for i in items)
-    keep = ("id", "key", "outcome", "rule", "reason", "by", "files", "case", "duplicate_of", "cost")
+    keep = ("id", "key", "outcome", "rule", "reason", "by", "files", "old", "case", "duplicate_of", "cost")
     data = {"version": 1, "pr": pr, "head_sha": head_sha, "run": run_dir.name if run_dir else "",
             "counts": counts(items), "cost": round(cost, 6), "verdicts": [{k: i.get(k) for k in keep} for i in items]}
     (out_dir / "verdicts.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -365,8 +387,9 @@ def park_entry(v: dict, day: str) -> dict:
 
 def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
     """Take the outcomes over on a checkout of the pull request: parked proposals move to the parking
-    list, rejected and aliased ones are taken out, accepted ones stay. A publisher file goes only when
-    no product that stays uses it."""
+    list, rejected and aliased ones are taken out, accepted ones stay. A file that changed an existing
+    one gets the text of main back instead (`old`): taking it out would delete what exists. A
+    publisher file goes only when no product that stays uses it."""
     day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
     parked_path = root / "referee/parked.yaml"
     entries = {e["key"]: e for e in load_parked(parked_path)}
@@ -376,12 +399,18 @@ def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
             continue
         if v["outcome"] == "parked":
             entries[v["key"]] = park_entry({**v, "pr": verdicts.get("pr")}, day)
+        old = v.get("old") or {}
         for rel in v["files"]:
-            if rel.startswith("products/") and (root / rel).is_file():
+            if rel in old:
+                (root / rel).write_text(old[rel], encoding="utf-8")
+                gone.append(rel)
+            elif rel.startswith("products/") and (root / rel).is_file():
                 (root / rel).unlink()
                 gone.append(rel)
     for v in verdicts["verdicts"]:
         for rel in v["files"]:
+            if rel in (v.get("old") or {}):
+                continue
             if rel.startswith("publishers/") and v["outcome"] != "accept" and (root / rel).is_file():
                 pub = Path(rel).stem
                 if not any((root / "products" / pub).glob("*.yaml")):

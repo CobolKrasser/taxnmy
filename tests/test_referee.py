@@ -249,8 +249,8 @@ class RefereeTest(unittest.TestCase):
     def test_te4_cases_are_the_default_outside_fetched(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
         self.assertEqual([c.id for c in referee.select(cases, None, "memory")], list(referee.TE4_CASES))
-        self.assertEqual(len(referee.select(cases, None, "fetched")), 74)
-        self.assertEqual(len(referee.select(cases, ["all"], "web")), 74)
+        self.assertEqual(len(referee.select(cases, None, "fetched")), 79)
+        self.assertEqual(len(referee.select(cases, ["all"], "web")), 79)
 
     # staging and the message
 
@@ -633,22 +633,22 @@ class RefereeTest(unittest.TestCase):
             "https://www.synology.com/en-global/company")}))
         _, run_dir = referee.run(Args(self.out / "runs", live=False, sources=str(sources)), data_root=FIXTURES / "data", now=NOW, log=QUIET)
         summary = (run_dir / "summary.md").read_text()
-        self.assertIn("| G01 | - | yes | yes | referee | TR4, TR7, TR8 |", summary, "TR8 stays with the referee: `kind`")
-        self.assertIn("| B01 | lint TR1 | - | - | - | - |", summary)
-        self.assertIn("| G02 | - | referee | referee | referee | TR4, TR5, TR6, TR7, TR8 |", summary, "its sources were not fetched")
+        self.assertIn("| G01 | - | yes | yes | referee | TR4, TR7, TR8, TV1 | - |", summary, "TR8 stays with the referee: `kind`")
+        self.assertIn("| B01 | lint TR1 | - | - | - | - | - |", summary)
+        self.assertIn("| G02 | - | referee | referee | referee | TR4, TR5, TR6, TR7, TR8, TV1 | - |", summary, "its sources were not fetched")
 
     def test_the_referee_gets_only_the_rules_code_left(self):
         results, _, client = self.run_fake(cases=["G01"])
         request = client.calls[0]
-        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["TR4", "TR6", "TR7", "TR8", "duplicate_of"])
-        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["TR4", "TR6", "TR7", "TR8", "duplicate_of"])
+        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["TR4", "TR6", "TR7", "TR8", "TV1", "duplicate_of"])
+        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["TR4", "TR6", "TR7", "TR8", "TV1", "duplicate_of"])
         message = request["messages"][0]["content"]
         self.assertIn("<decided>\nTR5: yes (code: the versions are published on synology.com", message)
         self.assertIn("\nTR8 in part: code found the name and every code", message)
         self.assertIn("`kind` is not a literal value", message)
-        self.assertIn("Judge only: TR4, TR6, TR7, TR8\n</decided>", message)
+        self.assertIn("Judge only: TR4, TR6, TR7, TR8, TV1\n</decided>", message)
         g01 = results["G01"]
-        self.assertEqual((g01.gate, g01.ai_rules), ({"TR5": "yes"}, ["TR4", "TR6", "TR7", "TR8"]))
+        self.assertEqual((g01.gate, g01.ai_rules), ({"TR5": "yes"}, ["TR4", "TR6", "TR7", "TR8", "TV1"]))
         self.assertEqual(g01.checked, {r: "yes" for r in referee.RULES})
         self.assertEqual(g01.outcome, "accept")
 
@@ -815,7 +815,7 @@ class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        self.assertEqual(len(self.cases), 74)
+        self.assertEqual(len(self.cases), 79)
         mismatched = {}
         for case in self.cases:
             staged = self.staged[case.id]
@@ -866,18 +866,20 @@ class TestsetTest(unittest.TestCase):
                              for c in self.cases), 5)
 
     def test_the_cases_of_tax_18_reach_the_referee(self):
-        """TAX-18: a service without a version leaves TR4 to the referee, and a name or domain one
-        or two characters from an existing one gets no signal from code yet: even with every
-        source read, code settles neither TR5 nor TR6 for it. The measurement shows whether the
-        referee reads over the spelling."""
+        """TAX-18 and TAX-31: a service without a version leaves TR4 to the referee. A name or
+        domain one or two characters from an existing one gets a TV3 signal from the lint and is
+        held for a person by code (TV3), and still reaches the referee: code settles neither TR5 nor
+        TR6 for it, so no rule is left untested (TR11)."""
         rows = self.gate_rows(Readable())
         for case in ("B30", "B36", "B37", "B38", "B43"):
             self.assertIn("TR4", rows[case].ai_rules, case)
         for case in ("B39", "B40", "B41", "B42", "B44"):
             self.assertIn("TR5", rows[case].ai_rules, case)
+        for case in ("B39", "B40", "B41", "B42", "B43", "B44"):
+            self.assertIn("TV3", rows[case].held, case)
+            self.assertEqual(self.staged[case].lint_seen, "signal", case)
         for case in ("B39", "B40", "B41", "B42", "B43"):
             self.assertIn("TR6", rows[case].ai_rules, case)
-            self.assertEqual(self.staged[case].lint_seen, "pass", case)
         self.assertEqual(sum(c.type == "saas" for c in self.cases), 5)
         self.assertEqual(sum(c.type.startswith("lookalike-") for c in self.cases), 6)
 

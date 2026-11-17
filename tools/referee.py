@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test harness for the AI referee (rules TR4-TR8).
+"""Test harness for the AI referee (rules TR4-TR8 and TV1; TV2-TV5 by code, tools/guard.py).
 
 Reads the test set (referee/testset/cases.yaml), the prompt (referee/prompt.md)
 and the output schema (referee/verdict.schema.json), and runs each case as
@@ -49,6 +49,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
+import guard  # noqa: E402
 import lint  # noqa: E402
 from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of the harness API
     MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, html_to_text, page_text, pdf_to_text,
@@ -57,7 +58,8 @@ from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of
 
 REPO = Path(__file__).resolve().parent.parent
 REFEREE = REPO / "referee"
-RULES = ("TR4", "TR5", "TR6", "TR7", "TR8")
+RULES = ("TR4", "TR5", "TR6", "TR7", "TR8", "TV1")  # the rules the AI referee answers
+HELD = ("TV3", "TV5")  # rules code holds a proposal on for a person, whatever the referee answers
 OUTCOMES = ("accept", "reject", "alias", "human")
 CONDITIONS = ("fetched", "memory", "web")
 BUDGET = 50.00  # dollars, every run in referee/runs together (Fred, 17 November 2026; it was $20)
@@ -91,7 +93,7 @@ CASE_SCHEMA = {
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
         "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TR[1-8]|TV[1-6])$"}},
         "alias_of": {"type": "string"},
-        "lint": {"type": "string", "pattern": "^(pass|signal|error TR[1-3])$"},
+        "lint": {"type": "string", "pattern": "^(pass|signal|error (TR[1-3]|TV4))$"},
         "holdout": {"type": "array", "items": {"type": "string"}},
         "hide": {"type": "array", "items": {"type": "string"}},
         "context": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -194,6 +196,9 @@ class Staged:
     publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
     publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for TR5 and TR6
     known_publisher: bool = False  # the publisher file is in the data and not part of the proposal (the gate, TR5)
+    old: dict = field(default_factory=dict)  # path -> text in the data, for a proposed file that changes an existing one (TV5)
+    held: dict = field(default_factory=dict)  # rule -> reason: TV3 and TV5, held for a person by code (tools/guard.py)
+    identity: str = ""  # the <identity> block: what code found about who the proposal is (TV2)
 
     @property
     def product(self) -> dict:
@@ -221,6 +226,7 @@ class Stager:
     def __init__(self, data_root: Path = REPO):
         self.source = data_root
         self.data = lint.Dataset(data_root, REPO / "schema", detailed=set())
+        self._owners = None  # rel -> (publisher key, owners of its URLs), built on first use (TV2)
 
     def close(self) -> None:
         pass
@@ -243,11 +249,50 @@ class Stager:
         removed = {rel: None for rel in removed}
         context = context or {}
         findings = self.data.check(report=set(files), overrides={**removed, **context, **files})
+        # A proposed file that is in the data, and not taken out for the case, changes an existing one.
+        old = {rel: self.data.texts[rel] for rel in files
+               if rel in self.data.texts and rel not in removed and rel not in context}
         self.view = {**removed, **context, **{rel: None for rel in files}}  # the proposal is not part of what exists
         return Staged(files=files, findings=findings, lint_ok=True, lint_seen=lint_summary(findings),
                       existing=self._existing(files, findings), publisher_source=self._publisher_source(files),
                       machine_sources=self._machine_sources(files), publisher_urls=self._publisher_urls(files),
-                      publisher=self._publisher_data(files), known_publisher=bool(self._publisher_file(files)[0]))
+                      publisher=self._publisher_data(files), known_publisher=bool(self._publisher_file(files)[0]),
+                      old=old, held=held_by_code(files, findings, old), identity=self._identity(files))
+
+    def _identity(self, files: dict) -> str:
+        """TV2: whether the publisher and each domain of the proposal are the same as an existing one,
+        compared character by character. The referee gets the result, not the question."""
+        if self._owners is None:
+            self._owners = {}
+            for rel, rec in self.data.records.items():
+                pub = rec.data.get("publisher") if rel.startswith("products/") else rec.data.get("key")
+                self._owners[rel] = (pub, {o for o in map(guard.owner, guard.urls_in(rec.data)) if o})
+        by_owner: dict[str, set] = {}
+        for rel, (pub, owners) in self._owners.items():
+            if rel not in self.view:
+                for o in owners:
+                    by_owner.setdefault(o, set()).add(pub)
+        lines, seen = [], set()
+        for rel, text in files.items():
+            try:
+                data = yaml.safe_load(text)
+            except yaml.YAMLError:
+                continue
+            if not isinstance(data, dict):
+                continue
+            if rel.startswith("publishers/"):
+                key = data.get("key")
+                there = isinstance(key, str) and self._text(f"publishers/{key}.yaml") is not None
+                lines.append(f"publisher {key}: " + ("already in TAX" if there else "new to TAX"))
+                second = data.get("second_source")
+                lines.append(f"publisher {key}: " + (f"gives a second source, {second}" if isinstance(second, str)
+                                                     else "gives no second source"))
+            for o in sorted({o for o in map(guard.owner, guard.urls_in(data)) if o} - seen):
+                seen.add(o)
+                pubs = sorted(p for p in by_owner.get(o, ()) if isinstance(p, str))
+                lines.append(f"domain {o}: " + (f"in TAX for the publisher{'s' if len(pubs) > 1 else ''} {', '.join(pubs[:5])}"
+                                                if pubs else "new to TAX"))
+        return "\n".join(lines)
 
     def _text(self, rel: str) -> str | None:
         return self.data.text(rel, self.view)
@@ -373,6 +418,73 @@ class Stager:
         return "\n\n".join(parts)
 
 
+def held_by_code(files: dict, findings: list, old: dict) -> dict:
+    """TV3 and TV5 (tools/guard.py): rule -> the reason code holds the proposal for a person. TV3
+    from the lookalike signals of the lint; TV5 from what a change moves to another domain or value."""
+    held = {}
+    near = [f"{f.file}: {f.message}" for f in findings if f.rule == "TV3"]
+    if near:
+        held["TV3"] = "; ".join(near)
+    moved = []
+    for rel, text in old.items():
+        try:
+            before, after = yaml.safe_load(text), yaml.safe_load(files[rel])
+        except yaml.YAMLError:
+            continue
+        moved += [f"{rel}: {m}" for m in guard.replaced(before, after)]
+    if moved:
+        held["TV5"] = "a change to an existing file, decided by a person: " + "; ".join(moved)
+    return held
+
+
+def hold(staged: "Staged", sources: list | None = None) -> dict:
+    """Every rule code holds the proposal on (HELD): TV3 and TV5 of the staging. `sources` is not
+    used: what code holds on needs no text."""
+    return {r: staged.held[r] for r in HELD if r in staged.held}
+
+
+def proposed_publishers(staged: "Staged") -> list[tuple[str, dict]]:
+    """(path, data) of every publisher file in the proposal, new or changed."""
+    out = []
+    for rel, text in staged.files.items():
+        if rel.startswith("publishers/"):
+            try:
+                data = yaml.safe_load(text)
+            except yaml.YAMLError:
+                continue
+            if isinstance(data, dict):
+                out.append((rel, data))
+    return out
+
+
+def second_source_fault(staged: "Staged", sources: list | None) -> str:
+    """TV4: why a second source that a proposed publisher file gives does not pass, or ''. A second
+    source is optional; one that is given must be readable, off the publisher's domain, and name it.
+    Without texts (`sources` None) nothing is checked."""
+    if sources is None:
+        return ""
+    texts = {u: s.text for u, s in gate.own_sources(sources).items() if gate.read(s)}
+    for rel, data in proposed_publishers(staged):
+        try:
+            before = yaml.safe_load(staged.old[rel]) if rel in staged.old else None
+        except yaml.YAMLError:
+            before = None
+        if isinstance(before, dict) and before.get("second_source") == data.get("second_source"):
+            continue  # a second source TAX already holds is not read again
+        why = guard.second_source(data, texts)
+        if why:
+            return f"{rel}: {why}"
+    return ""
+
+
+def held_outcome(outcome: str, rule: str, held: dict) -> tuple[str, str]:
+    """A held proposal is never accepted: what would be accept, or human, is human on the held rule.
+    A reject or an alias stays: it does not take the proposal in."""
+    if held and outcome in ("accept", "human"):
+        return "human", next(iter(held))
+    return outcome, rule
+
+
 def _publisher_of(rel: str, text: str) -> str:
     try:
         data = yaml.safe_load(text)
@@ -402,6 +514,10 @@ def case_urls(staged: "Staged") -> list[str]:
     urls = urls_of(staged.files)
     if staged.publisher_source and staged.publisher_source not in urls:
         urls.append(staged.publisher_source)
+    for _, data in proposed_publishers(staged):
+        second = data.get("second_source")
+        if isinstance(second, str) and second.startswith(("http://", "https://")) and second not in urls:
+            urls.append(second)
     return urls
 
 
@@ -457,12 +573,21 @@ def load_system_prompt(path: Path) -> str:
     return m.group(1).rstrip() + "\n"
 
 
+MARKERS = re.compile(r"<(?=\s*/?\s*(?:proposal|signals|decided|identity|existing|sources|source)\b)", re.I)
+
+
+def inert(text: str) -> str:
+    """TV1: a text from a proposal or a source cannot write the markers of the message. The `<` of
+    anything that looks like one becomes `&lt;`, so it cannot close a block or open another."""
+    return MARKERS.sub("&lt;", text)
+
+
 def build_message(staged: Staged, condition: str, sources: list[Source], decided: dict | None = None) -> str:
     """The user message, in the order of referee/prompt.md § User message. `decided` holds the
     rules the gate settled (None: no gate); the message then says which rules are left for the
     referee, with what code found of them (`gate.partly`)."""
-    proposal = "\n".join(f"# {rel}\n{text.rstrip()}" for rel, text in staged.files.items())
-    signals = "\n".join(f"{f.rule}: {f.message}" for f in staged.findings if f.level == "signal") or "none"
+    proposal = "\n".join(f"# {rel}\n{inert(text.rstrip())}" for rel, text in staged.files.items())
+    signals = "\n".join(f"{f.rule}: {inert(f.message)}" for f in staged.findings if f.level == "signal") or "none"
     gate_block = ""
     notes = (gate.partly(staged.product, staged.publisher, sources if condition == "fetched" else None, decided,
                          new_publisher=not staged.known_publisher) if decided is not None else {})
@@ -472,13 +597,16 @@ def build_message(staged: Staged, condition: str, sources: list[Source], decided
         lines.append("Judge only: " + ", ".join(r for r in RULES if r not in decided))
         gate_block = "<decided>\n" + "\n".join(lines) + "\n</decided>\n\n"
     if condition == "fetched":
-        blocks = [f'<source url="{s.url}" status="{s.status}"'
-                  + (f' instead-of="{s.instead_of}"' if s.instead_of else "") + f'>\n{s.text}\n</source>' for s in sources]
+        blocks = [f'<source url="{inert(s.url)}" status="{s.status}"'
+                  + (f' instead-of="{inert(s.instead_of)}"' if s.instead_of else "") + f'>\n{inert(s.text)}\n</source>'
+                  for s in sources]
         body = "\n".join(blocks) if blocks else "none"
     else:
         body = NO_SOURCES[condition]
+    identity = inert(staged.identity) or "none"
     return (f"<proposal>\n{proposal}\n</proposal>\n\n<signals>\n{signals}\n</signals>\n\n{gate_block}"
-            f"<existing>\n{staged.existing or 'none'}\n</existing>\n\n<sources>\n{body}\n</sources>\n")
+            f"<identity>\n{identity}\n</identity>\n\n"
+            f"<existing>\n{inert(staged.existing) or 'none'}\n</existing>\n\n<sources>\n{body}\n</sources>\n")
 
 
 def load_schema(path: Path) -> dict:
@@ -538,16 +666,26 @@ def versions_url(files: dict) -> str:
     return str(versions.get("source") or "") if isinstance(versions, dict) else ""
 
 
-def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: str = "") -> tuple[dict, list[str]]:
+def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: str = "",
+                 files: dict | None = None) -> tuple[dict, list[str]]:
     """A yes whose quotes are not all found in the fetched text of their URL becomes doubt.
     A yes without any quote becomes doubt too. Returns the checked verdict and what changed.
     Only `rules` are checked: those the referee answered, not those the gate settled.
     TR4 is yes only with a version quoted from the text of the versions source `versions` (or of a
     source found instead of it): news about a service is not a version (TP4)."""
     texts = {s.url: _norm(s.text) for s in sources}
+    proposal = _norm("\n".join((files or {}).values()))
     checked, notes = copy.deepcopy(verdict), []
     for rule in rules:
         j = checked[rule]
+        if rule == "TV1":
+            # TV1 is "no" when a text addresses the referee: that "no" quotes the text, and code finds
+            # it, or it is doubt. A "yes" (no such text) has nothing to quote.
+            if j["verdict"] == "no" and not any(_norm(ev["quote"]) in texts.get(ev["url"], "") or
+                                                _norm(ev["quote"]) in proposal for ev in j["evidence"]):
+                j["verdict"] = "doubt"
+                notes.append("TV1: no without a quote found in a source or the proposal")
+            continue
         if j["verdict"] != "yes":
             continue
         if not j["evidence"]:
@@ -889,6 +1027,7 @@ class Result:
     cost: float = 0.0
     gate: dict = field(default_factory=dict)  # rule -> verdict, for the rules the gate settled (tools/gate.py)
     ai_rules: list = field(default_factory=list)  # the rules the referee was asked
+    held: dict = field(default_factory=dict)  # rule -> reason: held for a person by code (TV3, TV5)
 
 
 def spent_before(out: Path) -> float:
@@ -1033,11 +1172,13 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     fetched[source_key(s.url, s.product) + (f" | for {s.instead_of}" if s.instead_of else "")] = asdict(s)
                 res.sources = [[s.url, s.status] for s in sources]
                 gone = product_gone(st.files, sources)
-                if gone:
-                    # The page that should show the product does not exist: rejected on TR7 by code.
-                    res.by, res.outcome, res.rule, res.error = "code", "reject", "TR7", gone
+                wrong = second_source_fault(st, sources if args.condition == "fetched" else None)
+                if gone or wrong:
+                    # The page that should show the product does not exist (TR7), or a second source that
+                    # is given does not pass (TV4): rejected by code.
+                    res.by, res.outcome, res.rule, res.error = "code", "reject", "TR7" if gone else "TV4", gone or wrong
                     res.right = res.outcome in case.expect
-                    log(f"{case.id}: reject (code, {gone}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+                    log(f"{case.id}: reject (code, {gone or wrong}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
                     results.append(res)
                     jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
                     jsonl.flush()
@@ -1045,6 +1186,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher) if use_gate else None
                 res.gate = {r: j["verdict"] for r, j in (decided or {}).items()}
                 res.ai_rules = [r for r in RULES if r not in res.gate]
+                res.held = hold(st, sources if args.condition == "fetched" else None)
                 if batch:
                     waiting.append((res, case, sources, decided, build_message(st, args.condition, sources, decided)))
                     continue
@@ -1071,7 +1213,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     res.usage, res.cost = usage, budget.spent - spent_at_start
                     if web:
                         largest_web = max(largest_web, res.cost)
-                    settle_reply(res, text, stop, schema, sources, decided, args.condition, versions_url(st.files))
+                    settle_reply(res, text, stop, schema, sources, decided, args.condition, versions_url(st.files), st.files)
             res.right = res.outcome in case.expect
             log(f"{case.id}: {res.outcome or '-'} ({res.by}){'' if res.right else '  WRONG'}, ${res.cost:.4f}; "
                 f"spent ${budget.spent:.4f} of ${args.budget:.2f}")
@@ -1098,7 +1240,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     res.by, res.outcome, res.error = "error", "human", answer["error"]
                 else:
                     settle_reply(res, answer["text"], answer["stop"], schema, sources, decided, args.condition,
-                                 versions_url(staged[case.id].files))
+                                 versions_url(staged[case.id].files), staged[case.id].files)
                 res.right = res.outcome in case.expect
                 log(f"{case.id}: {res.outcome or '-'} ({res.by}){'' if res.right else '  WRONG'}, ${res.cost:.4f}")
                 results.append(res)
@@ -1120,7 +1262,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
 
 
 def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: list, decided: dict, condition: str,
-                 versions: str = "") -> None:
+                 versions: str = "", files: dict | None = None) -> None:
     """The outcome of one reply: parsed against the schema of the rules asked, quotes checked, and
     the rules the gate settled added as the gate settled them."""
     verdict, why = (parse_reply(text, schema_for(schema, res.ai_rules)) if stop != "refusal"
@@ -1130,11 +1272,11 @@ def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: lis
         return
     res.by, res.verdict, res.duplicate_of = "ai", verdict, verdict.get("duplicate_of")
     # The quote check is the code part of TR8; TE4 switches it off in memory and web.
-    checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions) if condition == "fetched"
+    checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions, files) if condition == "fetched"
                                 else (verdict, []))
     checked = {**checked, **(decided or {})}  # the rules the gate settled, as the gate settled them
     res.checked = {r: checked[r]["verdict"] for r in RULES}
-    res.outcome, res.rule = outcome(checked)
+    res.outcome, res.rule = held_outcome(*outcome(checked), res.held)
 
 
 # --------------------------------------------------------------------------- scoring (README § Scoring, r13-research.md)
@@ -1147,7 +1289,7 @@ def metrics(results: list[Result]) -> dict:
     right_rule = {}  # on a bad case: did one of its rules say no (or the lint rule stop it)?
     for r in bad:
         for rule in r.rules:
-            hit = (r.by == "code" and r.rule == rule) or r.checked.get(rule) == "no"
+            hit = (r.by == "code" and r.rule == rule) or r.checked.get(rule) == "no" or rule in r.held
             right_rule.setdefault(rule, [0, 0])
             right_rule[rule][0] += 1
             right_rule[rule][1] += hit
@@ -1284,6 +1426,7 @@ class GateRow:
     settled: str = ""  # what stopped the case before the gate: a lint error, a lint mismatch or a 404
     gate: dict = field(default_factory=dict)  # rule -> verdict, for the rules code settled
     ai_rules: list = field(default_factory=list)  # the rules left for the referee
+    held: list = field(default_factory=list)  # the rules code holds the case on for a person (TV3, TV5)
     before: str = ""  # replay: the outcome in the earlier run
     after: str = ""  # replay: the outcome with the gate in front of the same answers
 
@@ -1305,17 +1448,22 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
     if sources is not None and product_gone(st.files, sources):
         row.settled = "TR7 404"
         return row
+    if second_source_fault(st, sources):
+        row.settled = "TV4 second source"
+        return row
     decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
     row.gate = {r: j["verdict"] for r, j in decided.items()}
+    held = hold(st, sources)
+    row.held = list(held)
     no = [r for r, v in row.gate.items() if v == "no"]
     row.ai_rules = [] if no else [r for r in RULES if r not in decided]
     if replayed is not None:
         if no:
             row.after = "reject"
         elif replayed.by == "ai" and replayed.checked:
-            merged = {r: {"verdict": replayed.checked[r]} for r in RULES}
+            merged = {r: {"verdict": replayed.checked.get(r, "yes")} for r in RULES}  # an older run has no TV1
             merged.update({r: {"verdict": v} for r, v in row.gate.items()})
-            row.after = outcome({**merged, "duplicate_of": replayed.duplicate_of})[0]
+            row.after = held_outcome(*outcome({**merged, "duplicate_of": replayed.duplicate_of}), held)[0]
         else:
             row.after = replayed.outcome
     return row
@@ -1375,16 +1523,19 @@ def gate_summary(rows: list[GateRow], name: str, sources: str = "", replay: str 
              "would ask the referee.", "",
              f"Source texts: {sources or 'none, so TR6 and TR8 (apart from an AI chat) are left for the referee'}.", ""]
     lines += gate_table(rows)
+    held = [f"{r.id} ({', '.join(r.held)})" for r in rows if r.held]
+    lines += [f"Held for a person by code (TV3–TV5), whatever the referee answers: {len(held)} cases. "
+              f"{', '.join(held) or 'none'}", ""]
     replayed = [r for r in rows if r.before]
-    head = "| case | stopped before | TR5 | TR6 | TR8 | referee judges |"
-    sep = "| --- | --- | --- | --- | --- | --- |"
+    head = "| case | stopped before | TR5 | TR6 | TR8 | referee judges | held for a person |"
+    sep = "| --- | --- | --- | --- | --- | --- | --- |"
     if replay:
         head += " outcome in the replayed run | with the gate |"
         sep += " --- | --- |"
     lines += ["## Per case", "", head, sep]
     for r in rows:
         cells = [r.id, r.settled or "-", *[r.gate.get(rule, "referee" if not r.settled and rule in r.ai_rules else "-")
-                                          for rule in gate.GATE_RULES], ", ".join(r.ai_rules) or "-"]
+                                          for rule in gate.GATE_RULES], ", ".join(r.ai_rules) or "-", ", ".join(r.held) or "-"]
         if replay:
             cells += [r.before or "-", r.after or "-"]
         lines.append("| " + " | ".join(cells) + " |")
