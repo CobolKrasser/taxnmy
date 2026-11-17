@@ -955,3 +955,185 @@ cases:
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mssqlserver.md
       aliases: []
   note: G13 with kind operating-system. SQL Server is a database server, software; its own CPE part is "a" (application).
+
+# A service without a version (S4, TAX-18). Like B30: the provider changes the service, the customer
+# sees or chooses no version, and the page given as versions source publishes news about changes.
+# Before the S4 version quote, B30 was the only case of its kind that reached the referee.
+- id: B36
+  type: saas
+  expect: [reject, human]
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/github/github-com.yaml: |
+      key: github/github-com
+      publisher: github
+      name: GitHub.com
+      kind: software
+      source: https://docs.github.com/en/get-started/learning-about-github/githubs-plans
+      versions:
+        source: https://github.blog/changelog/
+      identifiers: []
+      aliases: []
+  note: A changelog of a hosted service. The self-hosted edition has versions; the hosted service does not.
+- id: B37
+  type: saas
+  expect: [reject, human]
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/amazon-web-services/amazon-s3.yaml: |
+      key: amazon-web-services/amazon-s3
+      publisher: amazon-web-services
+      name: Amazon S3
+      kind: software
+      source: https://aws.amazon.com/s3/
+      versions:
+        source: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WhatsNew.html
+      identifiers: []
+      aliases: []
+  note: A document history of a storage service, with dates and no version the customer chooses.
+- id: B38
+  type: saas
+  expect: [reject, human]
+  rules: [S4]
+  lint: pass
+  proposal:
+    products/microsoft/microsoft-entra-id.yaml: |
+      key: microsoft/microsoft-entra-id
+      publisher: microsoft
+      name: Microsoft Entra ID
+      kind: software
+      source: https://learn.microsoft.com/en-us/entra/fundamentals/whatis
+      versions:
+        source: https://learn.microsoft.com/en-us/entra/fundamentals/whats-new
+      identifiers: []
+      aliases: []
+  note: A "what's new" page of a cloud service. A product of the same publisher with a similar name (a sync tool) does have versions.
+
+# Names that differ from an existing one by one or two characters (S10). Code gives no signal yet:
+# each key is new and shares no word with an existing key. The sources are those of the product
+# imitated, so a source shows the real name, not the proposed one. Accepted, any of these would put
+# a second publisher or product next to the real one.
+- id: B39
+  type: lookalike-publisher
+  expect: [reject, human]
+  rules: [S5, S6]
+  lint: pass
+  proposal:
+    publishers/micros0ft.yaml: |
+      key: micros0ft
+      name: Micros0ft
+      source: https://www.microsoft.com/en-us/about
+      aliases: []
+    products/micros0ft/sql-server.yaml: |
+      key: micros0ft/sql-server
+      publisher: micros0ft
+      name: SQL Server
+      kind: software
+      source: https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
+      versions:
+        source: https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
+      identifiers: []
+      aliases: []
+  note: A digit for a letter in the publisher name. The sources are those of G13.
+- id: B40
+  type: lookalike-publisher
+  expect: [reject, human]
+  rules: [S5, S6]
+  lint: pass
+  proposal:
+    publishers/mircosoft.yaml: |
+      key: mircosoft
+      name: Mircosoft
+      source: https://www.microsoft.com/en-us/about
+      aliases: []
+    products/mircosoft/azure-kubernetes-service.yaml: |
+      key: mircosoft/azure-kubernetes-service
+      publisher: mircosoft
+      name: Azure Kubernetes Service
+      kind: software
+      source: https://endoflife.date/azure-kubernetes-service
+      versions:
+        source: https://endoflife.date/azure-kubernetes-service
+      identifiers: []
+      aliases: []
+  note: Two letters swapped in the publisher name. The sources are those of G15.
+- id: B41
+  type: lookalike-publisher
+  expect: [reject, human]
+  rules: [S5, S6]
+  lint: pass
+  proposal:
+    publishers/rnicrosoft.yaml: |
+      key: rnicrosoft
+      name: Rnicrosoft
+      source: https://www.microsoft.com/en-us/about
+      aliases: []
+    products/rnicrosoft/visual-studio-code.yaml: |
+      key: rnicrosoft/visual-studio-code
+      publisher: rnicrosoft
+      name: Visual Studio Code
+      kind: software
+      source: https://code.visualstudio.com/
+      versions:
+        source: https://code.visualstudio.com/updates
+      identifiers: []
+      aliases: []
+  note: Two letters (r n) that look like one (m) in the publisher name.
+- id: B42
+  type: lookalike-publisher
+  expect: [reject, human]
+  rules: [S5, S6]
+  lint: pass
+  proposal:
+    publishers/synoloqy.yaml: |
+      key: synoloqy
+      name: Synoloqy
+      source: https://www.synology.com/en-global/company
+      aliases: []
+    products/synoloqy/ds124.yaml: |
+      key: synoloqy/ds124
+      publisher: synoloqy
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+  note: A letter that looks like another (q for g) in the publisher name. The sources are those of G01.
+- id: B43
+  type: lookalike-product
+  expect: [reject, human]
+  rules: [S4, S6]
+  lint: pass
+  proposal:
+    products/synology/d5124.yaml: |
+      key: synology/d5124
+      publisher: synology
+      name: D5124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+  note: A digit for a letter in the product name, under the real publisher, with the sources of the real product (G01).
+- id: B44
+  type: lookalike-domain
+  expect: [reject, human]
+  rules: [S5, S7]
+  lint: pass
+  proposal:
+    products/synology/ds225-plus.yaml: |
+      key: synology/ds225-plus
+      publisher: synology
+      name: DS225+
+      kind: device
+      source: https://www.synoloqy.com/en-global/products/DS225+
+      versions:
+        source: https://www.synoloqy.com/en-global/releaseNote/DSM?model=DS225%2B
+      identifiers: []
+      aliases: []
+  note: The real publisher and a plausible product, with sources on a domain one letter away from the publisher's. Whatever that domain serves, it is not the publisher's.

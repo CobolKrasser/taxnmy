@@ -1,19 +1,25 @@
 name: referee-models
 
-# The model measurement of TAX-18: the test set, effort low, as a batch, three runs per model
-# (Haiku 5.5 and Sonnet 5.5), on the sources of run A2, compared with A2. Started by hand from main.
-# No web search, no web fetch: the sources come from the artifact of A2.
+# The model measurement of TAX-18: the test set as a batch, per stand (a model at an effort), three
+# runs per stand, compared with run A2. Started by hand. No web search: the sources of A2 come from
+# its artifact, and job sources reads only those of the cases A2 did not have (TAX-24, TAX-18).
 #
-# The key is in environment referee: Fred approves each run, also the free token count.
-# The budget is a hard limit in code: --budget 13.70 is the $20 of fase 2, of which $10.70 is spent,
-# so this measurement can spend at most $3.00. The probe measures three cases per model first and
-# stops the measurement when the extrapolated total would pass the budget.
+# Two jobs, so that the key never comes near code from other sites (hosting plan §8):
+#   sources  keeps the sources of A2 and fetches what they lack, with the ladder (steps 0-3) and a
+#            headless browser. No key. It may run from any branch: that is free.
+#   measure  the estimate (live off) or the measurement (live on). Key in environment referee:
+#            Fred approves each run, also the free token count. Main only.
+#
+# The budget is a hard limit in code, for every run together: $50 (Fred, 17 November 2026; it was
+# $20). About $13.15 is spent. The probe measures three cases per stand first and stops the
+# measurement when the extrapolated total would pass the budget. Sonnet 5.5 at low and at medium,
+# three runs each, is estimated at about $6.
 
 on:
   workflow_dispatch:
     inputs:
       live:
-        description: "measure (costs money, about $2.70); off: an estimate"
+        description: "measure (costs money, about $6 for Sonnet at low and medium); off: an estimate"
         type: boolean
         default: false
       count:
@@ -22,18 +28,18 @@ on:
         default: true
       models:
         type: string
-        default: "claude-haiku-5-5 claude-sonnet-5-5"
+        default: "claude-sonnet-5-5"
+      efforts:
+        description: "one stand per model and effort (low, medium, high), separated by spaces"
+        type: string
+        default: "low medium"
       repeats:
         type: string
         default: "3"
-      effort:
-        type: choice
-        options: [low, medium, high]
-        default: low
       budget:
-        description: "dollars, for all runs together (hard limit); 13.70 leaves $3.00"
+        description: "dollars, for all runs together (hard limit)"
         type: string
-        default: "13.70"
+        default: "50.00"
       sources_run:
         description: "the run whose artifact referee-sources-final-<run> holds the sources (A2)"
         type: string
@@ -42,19 +48,72 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: referee-judge  # one paid job at a time, so the budget cannot be spent twice
-  cancel-in-progress: false
-
 jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      actions: read  # the sources of A2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Get the sources of A2
+        uses: actions/download-artifact@v4
+        with:
+          name: referee-sources-final-${{ inputs.sources_run }}
+          path: ${{ runner.temp }}/a2  # outside the checkout
+          run-id: ${{ inputs.sources_run }}
+          github-token: ${{ github.token }}
+      - name: Fetch what A2 lacks
+        env:
+          A2: ${{ runner.temp }}/a2
+          OUT: ${{ runner.temp }}/fetched
+        run: |
+          set -euo pipefail
+          mkdir -p "$OUT"
+          python tools/referee.py fetch --base "$A2/sources.json" --output "$OUT/sources.json" | tee "$OUT/log.txt"
+          sed -n '/^[0-9]* sources$/,$p' "$OUT/log.txt" >> "$GITHUB_STEP_SUMMARY"
+      - name: Estimate per stand (from the tokens of A2; no key, nothing sent)
+        env:
+          MODELS: ${{ inputs.models }}
+          EFFORTS: ${{ inputs.efforts }}
+          REPEATS: ${{ inputs.repeats }}
+          BUDGET: ${{ inputs.budget }}
+        run: |
+          set -euo pipefail
+          read -r -a models <<< "$MODELS"
+          read -r -a efforts <<< "$EFFORTS"
+          python tools/referee.py measure --models "${models[@]}" --efforts "${efforts[@]}" --repeats "$REPEATS" \
+            --budget "$BUDGET" --out "$RUNNER_TEMP/no-runs" | tee estimate.log
+          { echo "Estimate from the tokens of A2; the budget left is counted in job measure."; echo
+            sed -n '/^| model |/,$p' estimate.log; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the sources
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-sources-measure-${{ github.run_id }}
+          path: ${{ runner.temp }}/fetched/sources.json
+          retention-days: 90
+
   measure:
+    needs: sources
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 360
     environment: referee
+    concurrency:
+      group: referee-judge  # one paid job at a time, so the budget cannot be spent twice
+      cancel-in-progress: false
     permissions:
       contents: read
-      actions: read  # earlier runs, and the sources of A2
+      actions: read  # earlier runs, and the sources of job sources
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,20 +126,18 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - name: Get the sources of A2
+      - name: Get the sources
         uses: actions/download-artifact@v4
         with:
-          name: referee-sources-final-${{ inputs.sources_run }}
+          name: referee-sources-measure-${{ github.run_id }}
           path: ${{ runner.temp }}/fetched  # outside the checkout
-          run-id: ${{ inputs.sources_run }}
-          github-token: ${{ github.token }}
       - name: Measure
         id: measure
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MODELS: ${{ inputs.models }}
+          EFFORTS: ${{ inputs.efforts }}
           REPEATS: ${{ inputs.repeats }}
-          EFFORT: ${{ inputs.effort }}
           BUDGET: ${{ inputs.budget }}
           LIVE: ${{ inputs.live }}
           COUNT: ${{ inputs.count }}
@@ -88,11 +145,12 @@ jobs:
         run: |
           set -euo pipefail
           read -r -a models <<< "$MODELS"
-          args=(measure --models "${models[@]}" --repeats "$REPEATS" --effort "$EFFORT" --budget "$BUDGET"
+          read -r -a efforts <<< "$EFFORTS"
+          args=(measure --models "${models[@]}" --efforts "${efforts[@]}" --repeats "$REPEATS" --budget "$BUDGET"
                 --sources "$FETCHED/sources.json")
           if [ "$LIVE" = "true" ]; then args+=(--live); elif [ "$COUNT" = "true" ]; then args+=(--count); fi
           python tools/referee.py "${args[@]}" | tee measure.log
-          sed -n '/^| model/,$p' measure.log >> "$GITHUB_STEP_SUMMARY"
+          sed -n '/^| \(model\|stand\) |/,$p' measure.log >> "$GITHUB_STEP_SUMMARY"
       - name: Keep run 1
         if: always() && steps.measure.outputs.dir_1 != ''
         uses: actions/upload-artifact@v4

@@ -95,7 +95,7 @@ jobs:
           EFFORT: ${{ inputs.effort }}
           PR_CAP: ${{ inputs.pr_cap }}
           DAY_CAP: ${{ vars.REFEREE_DAY_CAP || '5.00' }}
-          BUDGET: ${{ vars.REFEREE_BUDGET || '20.00' }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
           GATED: ${{ runner.temp }}/gated
         run: |
           set -euo pipefail

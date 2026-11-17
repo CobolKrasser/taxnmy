@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": ["S4", "S5", "S6", "S7", "S8", "duplicate_of"],
   "properties": {
-    "S4": { "$ref": "#/$defs/judgment" },
+    "S4": { "$ref": "#/$defs/own_product" },
     "S5": { "$ref": "#/$defs/judgment" },
     "S6": { "$ref": "#/$defs/judgment" },
     "S7": { "$ref": "#/$defs/judgment" },
@@ -18,6 +18,33 @@
     }
   },
   "$defs": {
+    "own_product": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "S4: a judgment with, for yes, a version of the product quoted from its versions source.",
+      "required": ["verdict", "reason", "evidence", "version"],
+      "properties": {
+        "verdict": { "enum": ["yes", "no", "doubt"] },
+        "reason": { "type": "string" },
+        "evidence": {
+          "description": "For yes and no: the quotes that support the answer, each copied exactly from a source text. Empty for doubt, and empty when the system prompt asks for no evidence.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "quote"],
+            "properties": {
+              "url": { "type": "string" },
+              "quote": { "type": "string" }
+            }
+          }
+        },
+        "version": {
+          "description": "A version of the product that a customer sees or chooses (a number, a build or the name of a release), copied exactly from the text of the versions source (versions.source). Null when that text shows none; S4 is then not yes.",
+          "type": ["string", "null"]
+        }
+      }
+    },
     "judgment": {
       "type": "object",
       "additionalProperties": false,

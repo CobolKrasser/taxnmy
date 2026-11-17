@@ -21,7 +21,7 @@ Conditions (referee/r13-research.md):
     web      no source texts; the model may search the web (at most 3 searches)
 
 Without --live nothing is sent to the API. The budget (--budget, default
-$20.00) is a hard limit for all runs in the output directory together: before
+$50.00) is a hard limit for all runs in the output directory together: before
 each request the harness counts its input tokens (free) and sets max_tokens
 so that the request cannot cost more than what is left; when that leaves too
 little room, it stops. The key is read from ANTHROPIC_API_KEY and is never
@@ -60,6 +60,7 @@ REFEREE = REPO / "referee"
 RULES = ("S4", "S5", "S6", "S7", "S8")
 OUTCOMES = ("accept", "reject", "alias", "human")
 CONDITIONS = ("fetched", "memory", "web")
+BUDGET = 50.00  # dollars, every run in referee/runs together (Fred, 17 November 2026; it was $20)
 MAX_TOKENS = 8000  # per request; the budget may lower it
 MIN_OUTPUT = 2000  # a request with less room for output than this is not sent
 WEB_ALLOWANCE = 20_000  # web: input tokens reserved per search (not a hard bound)
@@ -530,10 +531,19 @@ def product_gone(files: dict, sources: list[Source]) -> str:
     return ""
 
 
-def check_quotes(verdict: dict, sources: list[Source], rules=RULES) -> tuple[dict, list[str]]:
+def versions_url(files: dict) -> str:
+    """The versions source of the proposed product, or ''."""
+    _, data = product_file(files)
+    versions = data.get("versions") if isinstance(data, dict) else None
+    return str(versions.get("source") or "") if isinstance(versions, dict) else ""
+
+
+def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: str = "") -> tuple[dict, list[str]]:
     """A yes whose quotes are not all found in the fetched text of their URL becomes doubt.
     A yes without any quote becomes doubt too. Returns the checked verdict and what changed.
-    Only `rules` are checked: those the referee answered, not those the gate settled."""
+    Only `rules` are checked: those the referee answered, not those the gate settled.
+    S4 is yes only with a version quoted from the text of the versions source `versions` (or of a
+    source found instead of it): news about a service is not a version (R14)."""
     texts = {s.url: _norm(s.text) for s in sources}
     checked, notes = copy.deepcopy(verdict), []
     for rule in rules:
@@ -549,6 +559,16 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES) -> tuple[dic
                 j["verdict"] = "doubt"
                 notes.append(f"{rule}: quote not found at {ev['url']}")
                 break
+    s4 = checked.get("S4")
+    if "S4" in rules and s4 and s4["verdict"] == "yes":
+        version = _norm(s4.get("version") or "")
+        own = [_norm(s.text) for s in sources if versions and versions in (s.url, s.instead_of)]
+        if not version:
+            s4["verdict"] = "doubt"
+            notes.append("S4: yes without a version from the versions source")
+        elif not any(version in text for text in own):
+            s4["verdict"] = "doubt"
+            notes.append(f"S4: version not found at {versions or 'the versions source'}")
     return checked, notes
 
 
@@ -976,7 +996,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             fetcher = Fetcher(log=log)
 
     stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
-    run_dir = out / f"{stamp}-{args.condition}-{args.model}"
+    # A batch run carries its effort in its name: the measurement compares stands of one model.
+    run_dir = out / (f"{stamp}-{args.condition}-{args.model}" + (f"-{args.effort}" if batch else ""))
     run_dir.mkdir(parents=True, exist_ok=False)
     (run_dir / "run.json").write_text(json.dumps({
         "condition": args.condition, "model": args.model, "effort": args.effort, "max_tokens": args.max_tokens,
@@ -1050,7 +1071,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     res.usage, res.cost = usage, budget.spent - spent_at_start
                     if web:
                         largest_web = max(largest_web, res.cost)
-                    settle_reply(res, text, stop, schema, sources, decided, args.condition)
+                    settle_reply(res, text, stop, schema, sources, decided, args.condition, versions_url(st.files))
             res.right = res.outcome in case.expect
             log(f"{case.id}: {res.outcome or '-'} ({res.by}){'' if res.right else '  WRONG'}, ${res.cost:.4f}; "
                 f"spent ${budget.spent:.4f} of ${args.budget:.2f}")
@@ -1076,7 +1097,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 if answer["error"]:
                     res.by, res.outcome, res.error = "error", "human", answer["error"]
                 else:
-                    settle_reply(res, answer["text"], answer["stop"], schema, sources, decided, args.condition)
+                    settle_reply(res, answer["text"], answer["stop"], schema, sources, decided, args.condition,
+                                 versions_url(staged[case.id].files))
                 res.right = res.outcome in case.expect
                 log(f"{case.id}: {res.outcome or '-'} ({res.by}){'' if res.right else '  WRONG'}, ${res.cost:.4f}")
                 results.append(res)
@@ -1097,7 +1119,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
     return results, run_dir
 
 
-def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: list, decided: dict, condition: str) -> None:
+def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: list, decided: dict, condition: str,
+                 versions: str = "") -> None:
     """The outcome of one reply: parsed against the schema of the rules asked, quotes checked, and
     the rules the gate settled added as the gate settled them."""
     verdict, why = (parse_reply(text, schema_for(schema, res.ai_rules)) if stop != "refusal"
@@ -1107,7 +1130,7 @@ def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: lis
         return
     res.by, res.verdict, res.duplicate_of = "ai", verdict, verdict.get("duplicate_of")
     # The quote check is the code part of S8; R13 switches it off in memory and web.
-    checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules) if condition == "fetched"
+    checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions) if condition == "fetched"
                                 else (verdict, []))
     checked = {**checked, **(decided or {})}  # the rules the gate settled, as the gate settled them
     res.checked = {r: checked[r]["verdict"] for r in RULES}
@@ -1447,6 +1470,11 @@ def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict
     finally:
         stager.close()
     fetcher = fetcher or Fetcher(use_browser=not args.no_browser, log=log)
+    if getattr(args, "base", None):
+        # The sources of an earlier run (A2): kept as they were read then; only what is missing is fetched.
+        base = json.loads(Path(args.base).read_text(encoding="utf-8"))
+        fetcher.cache.update({key: Source(**src) for key, src in base.items()})
+        log(f"base: {args.base} ({len(base)} sources); only what it lacks is fetched")
     data = {}
     if getattr(args, "search", None):
         # The second pass: read the URLs that step 4 found for refused sources, down steps 1-3.
@@ -1631,6 +1659,9 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
 
 A2 = REFEREE / "runs/20261113-163823-fetched-claude-opus-5-5"  # Opus 5.5, effort medium, not a batch
 PROBE = ("G01", "G02", "G03")  # three cases that reach the referee: measured first, then extrapolated
+# Output tokens per effort, against those of A2 (effort medium). Low: Sonnet 5.5 wrote about 560 per
+# case in the measurement of 16 November (workflow run 43890744244), A2 about 1,100. High: an assumption.
+OUTPUT_FACTOR = {"low": 0.5, "medium": 1.0, "high": 2.0}
 
 
 def a2_tokens(a2: Path = A2) -> dict:
@@ -1644,32 +1675,44 @@ def a2_tokens(a2: Path = A2) -> dict:
 
 
 def estimate(model: str, prices: dict, cases: list[str], repeats: int, max_tokens: int, counted: dict | None = None,
-             a2: Path = A2) -> dict:
-    """What `repeats` batch runs of these cases may cost with this model.
+             a2: Path = A2, effort: str = "medium") -> dict:
+    """What `repeats` batch runs of these cases may cost with this model at this effort.
     Input: the tokens counted (token counting), else those of run A2; the part A2 read from the cache
     (the system prompt) at the cache price, the rest at the input price. Output: that of run A2
-    (effort medium, five rules; effort low and fewer rules should need less).
+    (effort medium), times OUTPUT_FACTOR of the effort. A case A2 did not have counts as the mean
+    case of A2 (`new` says how many).
     Ceiling: no cache, and every request its full max_tokens."""
     seen = a2_tokens(a2)
+    mean = tuple(round(sum(v[i] for v in seen.values()) / len(seen)) for i in range(3)) if seen else (0, 0, 0)
     pm = prices["models"][model]
     d = discount(prices, True)
     p_out = output_price(model, prices, True)
-    cached = plain = outp = 0
+    cached = plain = outp = new = 0
     for c in cases:
-        fresh, read, o = seen.get(c, (0, 0, 0))
+        new += c not in seen
+        fresh, read, o = seen.get(c, mean)
         total = (counted or {}).get(c, fresh + read)
         cached += min(read, total)
         plain += total - min(read, total)
-        outp += o
+        outp += round(o * OUTPUT_FACTOR[effort])
     expected = ((plain * pm["input"] + cached * pm["cache_read"]) / 1_000_000 * d + outp * p_out) * repeats
     ceiling = ((plain + cached) * input_price(model, prices, True) + len(cases) * max_tokens * p_out) * repeats
-    return {"model": model, "cases": len(cases), "input": plain + cached, "output": outp, "expected": expected,
-            "ceiling": ceiling, "counted": bool(counted)}
+    return {"model": model, "effort": effort, "cases": len(cases), "new": new, "input": plain + cached,
+            "output": outp, "expected": expected, "ceiling": ceiling, "counted": bool(counted)}
+
+
+def stands(args) -> list[tuple[str, str]]:
+    """(model, effort) for each stand the measurement compares: every model at every effort."""
+    return [(m, e) for m in args.models for e in args.efforts]
+
+
+def stand_name(model: str, effort: str) -> str:
+    return f"{model} {effort}"
 
 
 def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=print, sleep=None) -> dict:
-    """TAX-18: per model, `repeats` batch runs of the test set at the effort given, within the budget.
-    First the probe cases of every model, one small batch each; their real cost per case is
+    """TAX-18: per stand (a model at an effort), `repeats` batch runs of the test set, within the budget.
+    First the probe cases of every stand, one small batch each; their real cost per case is
     extrapolated to the whole measurement, and if that would pass the budget nothing more is sent.
     The probe is the start of run 1: compare joins the two directories with +.
     Without --live it estimates: with --count from counted tokens (free, needs the key), else from
@@ -1686,8 +1729,8 @@ def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, l
     log(f"{len(cases)} cases, {len(to_ai)} past the lint; budget ${args.budget:.2f} for all runs in {out}, "
         f"spent ${before:.4f}, left ${args.budget - before:.4f}")
 
-    def run_args(model, ids, live, **kw):
-        return argparse.Namespace(condition="fetched", cases=ids, limit=None, model=model, effort=args.effort,
+    def run_args(model, ids, live, effort="low", **kw):
+        return argparse.Namespace(condition="fetched", cases=ids, limit=None, model=model, effort=effort,
                                   max_tokens=args.max_tokens, max_uses=0, budget=args.budget, live=live, batch=True,
                                   testset=args.testset, prompt=args.prompt, schema=args.schema, prices=args.prices,
                                   out=str(out), sources=args.sources, replay=None, wait=args.wait, sleep=sleep, **kw)
@@ -1695,17 +1738,24 @@ def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, l
     if not args.live:
         counted = {}
         if args.count:
+            # Token counting does not depend on the effort: one count per model.
             counted = count_cases(run_args(args.models[0], None, False), client, fetcher, data_root, log)
-        rows = [estimate(m, prices, to_ai, args.repeats, args.max_tokens, counted.get(m) if counted else None)
-                for m in args.models]
+        rows = [estimate(m, prices, to_ai, args.repeats, args.max_tokens, counted.get(m) if counted else None, effort=e)
+                for m, e in stands(args)]
         if args.count:
             for row in rows:
                 row["counted"] = True
         total = sum(r["expected"] for r in rows)
-        lines = ["| model | cases | input tokens | output tokens (A2) | expected, %d runs | ceiling |" % args.repeats,
-                 "| --- | --- | --- | --- | --- | --- |"]
-        lines += [f"| {r['model']} | {r['cases']} | {r['input']}{'' if r['counted'] else ' (A2)'} | {r['output']} | "
-                  f"${r['expected']:.2f} | ${r['ceiling']:.2f} |" for r in rows]
+        lines = ["| model | effort | cases | input tokens | output tokens (A2 × effort) | expected, %d runs | ceiling |"
+                 % args.repeats, "| --- | --- | --- | --- | --- | --- | --- |"]
+
+        def basis(r):
+            if r["counted"]:
+                return ""
+            return f" (A2; {r['new']} new cases as its mean case)" if r["new"] else " (A2)"
+
+        lines += [f"| {r['model']} | {r['effort']} | {r['cases']} | {r['input']}{basis(r)} | "
+                  f"{r['output']} | ${r['expected']:.2f} | ${r['ceiling']:.2f} |" for r in rows]
         lines += ["", f"Expected in all: ${total:.2f}; left in the budget: ${args.budget - before:.2f}. "
                   f"{'Fits.' if before + total <= args.budget else 'Does NOT fit: the probe would stop the measurement.'}",
                   "Dry run: nothing was sent. Add --live to measure."]
@@ -1713,23 +1763,25 @@ def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, l
         return {"rows": rows, "total": total, "left": args.budget - before}
 
     stamp = lambda: (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")  # noqa: E731
-    runs: dict[str, list] = {m: [] for m in args.models}
+    pairs = stands(args)
+    runs: dict[str, list] = {stand_name(m, e): [] for m, e in pairs}
     probe = [c for c in PROBE if c in to_ai]
     per_case = {}
-    for n, model in enumerate(args.models):
-        results, run_dir = run(run_args(model, probe, True), client=client, fetcher=fetcher, data_root=data_root,
+    for n, (model, effort) in enumerate(pairs):
+        name = stand_name(model, effort)
+        results, run_dir = run(run_args(model, probe, True, effort), client=client, fetcher=fetcher, data_root=data_root,
                                now=now and now.replace(minute=n), log=log)
         called = [r for r in results if r.usage]
-        per_case[model] = sum(r.cost for r in called) / len(called) if called else 0.0
-        runs[model].append([run_dir])
+        per_case[name] = sum(r.cost for r in called) / len(called) if called else 0.0
+        runs[name].append([run_dir])
     rest = [c.id for c in cases if c.id not in probe]
     rest_ai = [c for c in rest if c in to_ai]
-    projected = sum(per_case[m] * (len(rest_ai) + len(to_ai) * (args.repeats - 1)) for m in args.models)
+    projected = sum(per_case[s] * (len(rest_ai) + len(to_ai) * (args.repeats - 1)) for s in runs)
     spent = spent_before(out)
-    log("probe: " + ", ".join(f"{m} ${per_case[m]:.4f} per case" for m in args.models)
+    log("probe: " + ", ".join(f"{s} ${per_case[s]:.4f} per case" for s in runs)
         + f"; the rest would cost about ${projected:.2f}; spent ${spent:.4f} of ${args.budget:.2f}")
     report = {"runs": runs, "per_case": per_case, "projected": projected, "stopped": ""}
-    unmeasured = [m for m in args.models if not per_case[m]]
+    unmeasured = [s for s in runs if not per_case[s]]
     if unmeasured:
         report["stopped"] = f"Stopped after the probe: no answer to measure for {', '.join(unmeasured)} (the budget, or errors)"
         log(report["stopped"])
@@ -1739,15 +1791,16 @@ def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, l
                              f"passes the budget of ${args.budget:.2f}")
         log(report["stopped"])
         return report
-    for n, model in enumerate(args.models):
+    for n, (model, effort) in enumerate(pairs):
+        name = stand_name(model, effort)
         for k in range(args.repeats):
             ids = rest if k == 0 else [c.id for c in cases]
-            _, run_dir = run(run_args(model, ids, True), client=client, fetcher=fetcher, data_root=data_root,
+            _, run_dir = run(run_args(model, ids, True, effort), client=client, fetcher=fetcher, data_root=data_root,
                              now=now and now.replace(hour=1 + n, minute=k), log=log)
             if k == 0:
-                runs[model][0].append(run_dir)
+                runs[name][0].append(run_dir)
             else:
-                runs[model].append([run_dir])
+                runs[name].append([run_dir])
     text = measurement_report(runs, Path(args.compare_with) if args.compare_with else None)
     path = out / f"model-measurement-{stamp()}.md"
     path.write_text(text, encoding="utf-8")
@@ -1791,13 +1844,17 @@ def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=pri
 
 
 def measurement_report(runs: dict, a2: Path | None = None) -> str:
-    """TAX-18: per model over its runs the five numbers of the story, and the comparison with A2."""
+    """TAX-18: per stand (a model at an effort) over its runs the numbers of the story, and the
+    comparison with A2. Besides the outcomes: the quotes code did not find (S4 without a version
+    among them), the output tokens per proposal, and per rule how often it left a case to a person."""
     lines = ["# Model measurement (TAX-18)", "",
-             "Effort low, as a batch, after the gate (TAX-15). A model that lets one bad case through in any run drops out.", "",
-             "| model | runs | bad let through (per run) | good rejected (per run) | human/parked (per run) | "
-             "cases whose outcome differs between runs | cost per proposal | cost of all runs |",
-             "| --- | --- | --- | --- | --- | --- | --- | --- |"]
-    for model, groups in runs.items():
+             "Per stand (a model at an effort), as a batch, after the gate (TAX-15). A stand that lets one bad case "
+             "through in any run drops out.", "",
+             "| stand | runs | bad let through (per run) | good rejected (per run) | human/parked (per run) | "
+             "cases whose outcome differs between runs | quotes not found (per run) | output tokens per proposal | "
+             "cost per proposal | cost of all runs |",
+             "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    for stand, groups in runs.items():
         per_run = []
         for group in groups:
             merged = {}
@@ -1809,13 +1866,25 @@ def measurement_report(runs: dict, a2: Path | None = None) -> str:
         differ = sorted(i for i in shared if len({r[i].outcome for r in per_run}) > 1)
         called = [r for run_ in per_run for r in run_.values() if r.usage]
         cost_all = sum(r.cost for run_ in per_run for r in run_.values())
-        lines.append(f"| {model} | {len(per_run)} | {' / '.join(str(len(m['let_through'])) for m in ms)} | "
+        notes = [sum(len(r.quote_notes) for r in run_.values()) for run_ in per_run]
+        output = sum(r.usage.get("output_tokens", 0) for r in called) / len(called) if called else 0
+        lines.append(f"| {stand} | {len(per_run)} | {' / '.join(str(len(m['let_through'])) for m in ms)} | "
                      f"{' / '.join(str(len(m['good_rejected'])) for m in ms)} | {' / '.join(str(len(m['human'])) for m in ms)} | "
-                     f"{len(differ)}{': ' + ', '.join(differ) if differ else ''} | "
-                     f"${(sum(r.cost for r in called) / len(called)) if called else 0:.4f} | ${cost_all:.4f} |")
+                     f"{len(differ)}{': ' + ', '.join(differ) if differ else ''} | {' / '.join(map(str, notes))} | "
+                     f"{output:.0f} | ${(sum(r.cost for r in called) / len(called)) if called else 0:.4f} | ${cost_all:.4f} |")
         let = sorted({i for m in ms for i in m["let_through"]})
+        doubt = {}
+        for run_ in per_run:
+            for r in run_.values():
+                if r.outcome == "human":
+                    for rule in (x for x in RULES if r.checked.get(x) == "doubt"):
+                        doubt[rule] = doubt.get(rule, 0) + 1
+        s4 = sum(n.startswith("S4: yes without a version") or n.startswith("S4: version not found")
+                 for run_ in per_run for r in run_.values() for n in r.quote_notes)
         lines.append(f"|  | let through: {', '.join(let) or 'none'} | good rejected: "
-                     f"{', '.join(sorted({i for m in ms for i in m['good_rejected']})) or 'none'} |  |  |  |  |  |")
+                     f"{', '.join(sorted({i for m in ms for i in m['good_rejected']})) or 'none'} | "
+                     f"human by rule: {', '.join(f'{k} {v}' for k, v in sorted(doubt.items())) or 'none'} |  | "
+                     f"S4 without a version found: {s4} |  |  |  |")
     lines += [""]
     if a2 is not None:
         dirs = [[a2]] + [group for groups in runs.values() for group in groups]
@@ -1836,7 +1905,7 @@ def parser() -> argparse.ArgumentParser:
     r.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), default="medium")
     r.add_argument("--max-tokens", type=int, default=MAX_TOKENS, help="per request; the budget may lower it")
     r.add_argument("--max-uses", type=int, default=3, help="web: most searches per case")
-    r.add_argument("--budget", type=float, default=20.00, help="dollars, for all runs in --out together")
+    r.add_argument("--budget", type=float, default=BUDGET, help="dollars, for all runs in --out together")
     r.add_argument("--live", action="store_true", help="call the API; without it nothing is sent")
     r.add_argument("--batch", action="store_true", help="all requests as one batch, at batch_discount of the price (not web)")
     for name, default in (("testset", REFEREE / "testset/cases.yaml"), ("prompt", REFEREE / "prompt.md"),
@@ -1856,6 +1925,7 @@ def parser() -> argparse.ArgumentParser:
     f.add_argument("--no-browser", action="store_true", help="skip the browser step")
     f.add_argument("--sources", help="with --search: the sources.json of the first pass, to add to")
     f.add_argument("--search", help="a search.json made by `search`: read the URLs it found (steps 1-3)")
+    f.add_argument("--base", help="a sources.json of an earlier run: kept, and only the sources it lacks are fetched")
     s = sub.add_parser("search", help="step 4: search for another open source for each refused source (costs money)")
     s.add_argument("--sources", required=True, help="the sources.json made by `fetch`")
     s.add_argument("--output", default="search.json")
@@ -1863,16 +1933,17 @@ def parser() -> argparse.ArgumentParser:
     s.add_argument("--cases", nargs="*")
     s.add_argument("--limit", type=int)
     s.add_argument("--model", default="claude-sonnet-5-5", help="it only returns URLs and judges nothing (run A2 review §1)")
-    s.add_argument("--budget", type=float, default=20.00)
+    s.add_argument("--budget", type=float, default=BUDGET)
     s.add_argument("--prices", default=str(REFEREE / "prices.yaml"))
     s.add_argument("--out", default=str(REFEREE / "runs"))
     s.add_argument("--live", action="store_true", help="search; without it nothing is sent")
     m = sub.add_parser("measure", help="TAX-18: repeated batch runs per model, within the budget")
-    m.add_argument("--models", nargs="+", default=["claude-haiku-5-5", "claude-sonnet-5-5"])
+    m.add_argument("--models", nargs="+", default=["claude-sonnet-5-5"])
     m.add_argument("--repeats", type=int, default=3)
-    m.add_argument("--effort", choices=("low", "medium", "high"), default="low")
+    m.add_argument("--efforts", nargs="+", choices=tuple(OUTPUT_FACTOR), default=["low"],
+                   help="one stand per model and effort: each gets --repeats runs")
     m.add_argument("--max-tokens", type=int, default=4000, help="per request; prompt.md asks for about 2,000")
-    m.add_argument("--budget", type=float, required=True, help="dollars, for all runs in --out together (hard)")
+    m.add_argument("--budget", type=float, default=BUDGET, help="dollars, for all runs in --out together (hard)")
     m.add_argument("--sources", help="a sources.json made by `fetch` (run A2: artifact referee-sources-final-43462875320)")
     m.add_argument("--compare-with", default=str(A2), help="the run to compare with")
     m.add_argument("--wait", type=float, default=BATCH_WAIT, help="seconds to wait for each batch")

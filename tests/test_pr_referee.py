@@ -319,12 +319,24 @@ class PrRefereeTest(unittest.TestCase):
         for e in data["parked"] or []:
             self.assertTrue({"key", "path", "rule", "reason", "date", "files"} <= set(e))
 
+    def test_the_ceilings_per_pull_request_and_day_stay_and_the_budget_is_50(self):
+        """Fred, 17 November 2026: the limit for every run goes to $50; the ceilings of TAX-17 stay."""
+        import argparse
+        p = argparse.ArgumentParser()
+        pr_referee.add_judge_args(p)
+        args = p.parse_args([])
+        self.assertEqual((args.pr_cap, args.day_cap, args.budget), (2.00, 5.00, 50.00))
+        for name in ("referee-pr.yml", "referee-pr-testset.yml"):
+            text = (REPO / ".github/workflows" / name).read_text()
+            self.assertIn("vars.REFEREE_BUDGET || '50.00'", text, name)
+            self.assertIn("vars.REFEREE_DAY_CAP || '5.00'", text, name)
+
     # the real test set, as one pull request
 
-    def test_the_test_set_becomes_65_proposals(self):
+    def test_the_test_set_becomes_74_proposals(self):
         proposals = pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml")
-        self.assertEqual(len(proposals), 65)
-        self.assertEqual(len([p for p in proposals if p["id"].startswith("B")]), 35)
+        self.assertEqual(len(proposals), 74)
+        self.assertEqual(len([p for p in proposals if p["id"].startswith("B")]), 44)
         self.assertTrue(all(p["case"]["expect"] for p in proposals))
 
     def test_score_counts_parked_as_human(self):
