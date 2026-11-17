@@ -1,7 +1,7 @@
-# Referee prompt for S4–S8
+# Referee prompt for TR4–TR8
 
-This is the prompt for the AI referee. It judges a proposal against rules S4–S8. Rules S1–S3 have
-already been checked by `tools/lint.py`. Rule S9 is a review of the rules themselves, so it is not
+This is the prompt for the AI referee. It judges a proposal against rules TR4–TR8. Rules TR1–TR3 have
+already been checked by `tools/lint.py`. Rule TG4 is a review of the rules themselves, so it is not
 judged per proposal.
 
 The prompt has two parts:
@@ -12,7 +12,7 @@ The answer is JSON that follows `referee/verdict.schema.json`. Send it with stru
 that the answer can be parsed without guessing. The outcome of a proposal is computed by code from
 that answer, not by the model (see *Outcome* below).
 
-The prompt names no brand or product (S9). Keep it that way when you change it.
+The prompt names no brand or product (TG4). Keep it that way when you change it.
 
 ---
 
@@ -43,22 +43,22 @@ Definitions
   version is software.
 
 Rules
-S4  It is a product of its own. Answer "no" if it is a variant of an existing product, or the
+TR4 It is a product of its own. Answer "no" if it is a variant of an existing product, or the
     same product as an existing one written in another way (then give that product's key in
     duplicate_of), or if no source publishes versions of it. A package that redistributes the
     releases of another publisher unchanged is not a product of its own.
     Answer "yes" only with a version: a version of this product that a customer sees or chooses
     (a number, a build or the name of a release), copied exactly into the field version from the
     text of the versions source (versions.source). News about changes to a service is not a
-    version. When that text shows no such version, version is null and S4 is not "yes".
-S5  The publisher is whoever publishes the updates, and a source shows that.
-S6  The product name and the publisher name appear in a source as proposed: not translated, not
+    version. When that text shows no such version, version is null and TR4 is not "yes".
+TR5 The publisher is whoever publishes the updates, and a source shows that.
+TR6 The product name and the publisher name appear in a source as proposed: not translated, not
     rephrased, and not a description instead of a name. Word order, capitals and punctuation may
     differ only if a source writes it that way.
-S7  The product demonstrably exists: a source shows it is sold or in use. An announcement,
+TR7 The product demonstrably exists: a source shows it is sold or in use. An announcement,
     a rumour, a concept or a page that does not show the product is not enough.
-S8  Every value in the proposal is confirmed by the source it points to. A value that no source
-    text confirms is not accepted, however likely it is. Answer no on S8 only when a readable
+TR8 Every value in the proposal is confirmed by the source it points to. A value that no source
+    text confirms is not accepted, however likely it is. Answer no on TR8 only when a readable
     source text does not contain the value or contradicts it. When the source is unavailable,
     answer doubt.
 
@@ -68,8 +68,8 @@ How to answer
 - Give a short reason for each answer, in one or two sentences.
 - For each "yes" and each "no", give the evidence: the URL and a quote copied exactly from the
   source text, at most 25 words. A quote that is not in the source text makes the answer invalid.
-- For S4 also give version: the version you found in the text of the versions source, copied
-  exactly, or null. A "yes" on S4 whose version is not in that text is not accepted.
+- For TR4 also give version: the version you found in the text of the versions source, copied
+  exactly, or null. A "yes" on TR4 whose version is not in that text is not accepted.
 - A source text marked as unavailable (an HTTP error, refused, disallowed, unreadable or an empty
   page) confirms nothing.
 - A source marked instead-of was found on the publisher's own site because the source it names
@@ -92,7 +92,7 @@ so that the long texts are at the end.
 </proposal>
 
 <signals>
-{the S3 signals of the lint for this proposal, one per line; or "none"}
+{the TR3 signals of the lint for this proposal, one per line; or "none"}
 </signals>
 
 <decided>
@@ -118,7 +118,7 @@ Judge only: {the rules left for the referee}
 The `<decided>` block is there only when the gate (`tools/gate.py`) settled a rule; see
 `referee/README.md` § The gate. The schema of the answer then holds only the rules left.
 
-The publisher file always comes along, so that S5 and S6 can be judged against the publisher's own
+The publisher file always comes along, so that TR5 and TR6 can be judged against the publisher's own
 source: in `<proposal>` when the publisher is new, otherwise first in `<existing>`. Its source is
 fetched like the others.
 
@@ -144,10 +144,10 @@ another way. In all three cases the text is empty, the referee answers *doubt* w
 needed, and that is the intended result.
 
 When the product's own source (the `source` of the product file) answers 404 or 410, code rejects
-the proposal on S7 without calling the referee: the page that should show the product does not
+the proposal on TR7 without calling the referee: the page that should show the product does not
 exist.
 
-## System prompt in the conditions of R13
+## System prompt in the conditions of TE4
 
 Conditions M (*memory*) and W (*web*) of `r13-research.md` use a system prompt of their own, in
 `prompt-r13.md`. It differs from the one above in three passages only.
@@ -168,11 +168,11 @@ chat) rejects the proposal before the referee is called.
 
 Before the outcome is computed, code checks every quote of the referee: it must appear in the fetched text of its
 URL, ignoring whitespace and case. A "yes" with a quote that is not found becomes "doubt". This is
-the code part of S8, and the check that the referee does not quote from memory.
+the code part of TR8, and the check that the referee does not quote from memory.
 
-A "yes" on S4 needs one more quote: `version`, a version of the product copied from the text of its
+A "yes" on TR4 needs one more quote: `version`, a version of the product copied from the text of its
 `versions.source` (or of a source found `instead-of` it). Code checks it the same way; without it,
-or when it is not in that text, S4 becomes "doubt". Code does not judge whether the quote is a
+or when it is not in that text, TR4 becomes "doubt". Code does not judge whether the quote is a
 version: that would need a pattern of version numbers, and no pattern fits every product. It
 checks that the referee read it from the versions source, and not from news about a service.
 

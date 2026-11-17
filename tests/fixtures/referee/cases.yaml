@@ -48,8 +48,8 @@ cases:
 - id: B01
   type: code
   expect: [reject]
-  rules: [S1]
-  lint: error S1
+  rules: [TR1]
+  lint: error TR1
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds124.yaml: |
@@ -62,7 +62,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: synology/ds224-plus
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/synology/plus-ds224.yaml: |
@@ -76,7 +76,7 @@ cases:
 - id: B20
   type: hallucinated
   expect: [reject, human]
-  rules: [S7, S8]
+  rules: [TR7, TR8]
   lint: pass
   proposal:
     products/synology/ds128.yaml: |
@@ -91,7 +91,7 @@ cases:
 - id: B21
   type: hallucinated
   expect: [reject, human]
-  rules: [S7]
+  rules: [TR7]
   lint: pass
   proposal:
     products/synology/ds129.yaml: |
@@ -105,7 +105,7 @@ cases:
 - id: B22
   type: stale
   expect: [reject]
-  rules: [S4]
+  rules: [TR4]
   lint: signal
   proposal:
     products/synology/ds130.yaml: |

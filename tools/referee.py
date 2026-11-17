@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test harness for the AI referee (rules S4-S8).
+"""Test harness for the AI referee (rules TR4-TR8).
 
 Reads the test set (referee/testset/cases.yaml), the prompt (referee/prompt.md)
 and the output schema (referee/verdict.schema.json), and runs each case as
@@ -57,7 +57,7 @@ from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of
 
 REPO = Path(__file__).resolve().parent.parent
 REFEREE = REPO / "referee"
-RULES = ("S4", "S5", "S6", "S7", "S8")
+RULES = ("TR4", "TR5", "TR6", "TR7", "TR8")
 OUTCOMES = ("accept", "reject", "alias", "human")
 CONDITIONS = ("fetched", "memory", "web")
 BUDGET = 50.00  # dollars, every run in referee/runs together (Fred, 17 November 2026; it was $20)
@@ -66,15 +66,15 @@ MIN_OUTPUT = 2000  # a request with less room for output than this is not sent
 WEB_ALLOWANCE = 20_000  # web: input tokens reserved per search (not a hard bound)
 WEB_TOOL_OVERHEAD = 2_000  # web: input tokens of the tool definition, which token counting cannot see
 
-# The 29 cases of the R13 research (referee/r13-research.md, "Which cases").
-R13_CASES = (
+# The 29 cases of the TE4 research (referee/r13-research.md, "Which cases").
+TE4_CASES = (
     "G02", "G06", "G08", "G17", "G18", "G19", "G20", "G21", "G22", "G23", "G24", "G25", "G27", "G28",
     "B06", "B12", "B14", "B15", "B20", "B21", "B22", "B23", "B24", "B25", "B26", "B27", "B28", "B29", "B30",
 )
-R13_RULES = ("S4", "S5", "S7", "S8")
+TE4_RULES = ("TR4", "TR5", "TR7", "TR8")
 
-# The system prompt of conditions memory and web (R13), written by the analyst.
-R13_PROMPT = REFEREE / "prompt-r13.md"
+# The system prompt of conditions memory and web (TE4), written by the analyst.
+TE4_PROMPT = REFEREE / "prompt-r13.md"
 
 # What the sources block says in the conditions without fetched texts (referee/r13-research.md).
 NO_SOURCES = {
@@ -89,9 +89,9 @@ CASE_SCHEMA = {
         "id": {"type": "string", "pattern": "^[GHB][0-9]{2}$"},
         "type": {"type": "string"},
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
-        "rules": {"type": "array", "items": {"type": "string", "pattern": "^S[1-9]$"}},
+        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TR[1-8]|TV[1-6])$"}},
         "alias_of": {"type": "string"},
-        "lint": {"type": "string", "pattern": "^(pass|signal|error S[1-3])$"},
+        "lint": {"type": "string", "pattern": "^(pass|signal|error TR[1-3])$"},
         "holdout": {"type": "array", "items": {"type": "string"}},
         "hide": {"type": "array", "items": {"type": "string"}},
         "context": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -155,10 +155,10 @@ def load_cases(path: Path) -> list[Case]:
 
 
 def select(cases: list[Case], ids: list[str] | None, condition: str) -> list[Case]:
-    """The cases of a run: the ids given, or all cases for fetched and the R13 cases otherwise."""
+    """The cases of a run: the ids given, or all cases for fetched and the TE4 cases otherwise."""
     if ids == ["all"]:
         return cases
-    wanted = ids or (None if condition == "fetched" else list(R13_CASES))
+    wanted = ids or (None if condition == "fetched" else list(TE4_CASES))
     if wanted is None:
         return cases
     by_id = {c.id: c for c in cases}
@@ -192,8 +192,8 @@ class Staged:
     publisher_source: str = ""  # the source of an existing publisher file, fetched with the others
     machine_sources: list = field(default_factory=list)  # the publisher's machine_sources (URLs), for step 0 on a closed source
     publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
-    publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for S5 and S6
-    known_publisher: bool = False  # the publisher file is in the data and not part of the proposal (the gate, S5)
+    publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for TR5 and TR6
+    known_publisher: bool = False  # the publisher file is in the data and not part of the proposal (the gate, TR5)
 
     @property
     def product(self) -> dict:
@@ -522,7 +522,7 @@ def _norm(text: str) -> str:
 
 
 def product_gone(files: dict, sources: list[Source]) -> str:
-    """The product's own source answers 404 or 410: a reason to reject on S7, or ''."""
+    """The product's own source answers 404 or 410: a reason to reject on TR7, or ''."""
     _, data = product_file(files)
     url = data.get("source")
     for s in sources:
@@ -542,8 +542,8 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: st
     """A yes whose quotes are not all found in the fetched text of their URL becomes doubt.
     A yes without any quote becomes doubt too. Returns the checked verdict and what changed.
     Only `rules` are checked: those the referee answered, not those the gate settled.
-    S4 is yes only with a version quoted from the text of the versions source `versions` (or of a
-    source found instead of it): news about a service is not a version (R14)."""
+    TR4 is yes only with a version quoted from the text of the versions source `versions` (or of a
+    source found instead of it): news about a service is not a version (TP4)."""
     texts = {s.url: _norm(s.text) for s in sources}
     checked, notes = copy.deepcopy(verdict), []
     for rule in rules:
@@ -559,16 +559,16 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: st
                 j["verdict"] = "doubt"
                 notes.append(f"{rule}: quote not found at {ev['url']}")
                 break
-    s4 = checked.get("S4")
-    if "S4" in rules and s4 and s4["verdict"] == "yes":
-        version = _norm(s4.get("version") or "")
+    tr4 = checked.get("TR4")
+    if "TR4" in rules and tr4 and tr4["verdict"] == "yes":
+        version = _norm(tr4.get("version") or "")
         own = [_norm(s.text) for s in sources if versions and versions in (s.url, s.instead_of)]
         if not version:
-            s4["verdict"] = "doubt"
-            notes.append("S4: yes without a version from the versions source")
+            tr4["verdict"] = "doubt"
+            notes.append("TR4: yes without a version from the versions source")
         elif not any(version in text for text in own):
-            s4["verdict"] = "doubt"
-            notes.append(f"S4: version not found at {versions or 'the versions source'}")
+            tr4["verdict"] = "doubt"
+            notes.append(f"TR4: version not found at {versions or 'the versions source'}")
     return checked, notes
 
 
@@ -761,7 +761,7 @@ def review(client, budget: Budget, *, model: str, system: str, message: str, web
         output_config={"effort": effort, "format": {"type": "json_schema", "schema": schema}},
     )
     if web:
-        # Condition W of R13: web search, and web fetch to read the pages it finds and the URLs of the
+        # Condition W of TE4: web search, and web fetch to read the pages it finds and the URLs of the
         # proposal (run A2 review §3). Fetched pages are capped, like the harness caps a source.
         request["tools"] = [
             {"type": "web_search_20260209", "name": "web_search", "max_uses": max_uses},
@@ -928,8 +928,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
         cases = cases[: args.limit]
     prompt = Path(args.prompt)
     if args.condition != "fetched" and prompt == REFEREE / "prompt.md":
-        # R13: memory and web judge without fetched texts, so they get their own system prompt.
-        prompt = R13_PROMPT
+        # TE4: memory and web judge without fetched texts, so they get their own system prompt.
+        prompt = TE4_PROMPT
     if not prompt.is_file():
         raise SystemExit(f"No prompt at {prompt}")
     system = load_system_prompt(prompt)
@@ -945,7 +945,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
     out = Path(args.out)
     before = spent_before(out)
 
-    use_gate = args.condition == "fetched"  # R13 measures the AI alone, so memory and web have no gate
+    use_gate = args.condition == "fetched"  # TE4 measures the AI alone, so memory and web have no gate
     stager = Stager(data_root)
     try:
         staged = {c.id: stager.stage(c) for c in cases}
@@ -970,7 +970,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
                 log(f"sources: {args.sources} ({len(stored.cache)} URLs, fetched by an earlier step)")
             else:
-                log("No --sources: the gate reads no source texts, so S6 and S8 go to the referee.")
+                log("No --sources: the gate reads no source texts, so TR6 and TR8 go to the referee.")
             replay = {}
             if getattr(args, "replay", None):
                 replay = {r.id: r for r in load_results(Path(args.replay))}
@@ -1024,9 +1024,9 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             elif st.lint_seen.startswith("error"):
                 res.by, res.outcome, res.rule = "code", "reject", st.lint_seen.split()[1]
             elif use_gate and gate.ai_chat(st.product, st.publisher):
-                # A source on the domain of an AI chat: rejected on S8 by code, and nothing is fetched.
+                # A source on the domain of an AI chat: rejected on TR8 by code, and nothing is fetched.
                 chat = gate.ai_chat(st.product, st.publisher)
-                res.by, res.outcome, res.rule, res.error, res.gate = "code", "reject", "S8", chat["reason"], {"S8": "no"}
+                res.by, res.outcome, res.rule, res.error, res.gate = "code", "reject", "TR8", chat["reason"], {"TR8": "no"}
             else:
                 sources = gather_sources(fetcher, st) if args.condition == "fetched" else []
                 for s in sources:
@@ -1034,8 +1034,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 res.sources = [[s.url, s.status] for s in sources]
                 gone = product_gone(st.files, sources)
                 if gone:
-                    # The page that should show the product does not exist: rejected on S7 by code.
-                    res.by, res.outcome, res.rule, res.error = "code", "reject", "S7", gone
+                    # The page that should show the product does not exist: rejected on TR7 by code.
+                    res.by, res.outcome, res.rule, res.error = "code", "reject", "TR7", gone
                     res.right = res.outcome in case.expect
                     log(f"{case.id}: reject (code, {gone}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
                     results.append(res)
@@ -1129,7 +1129,7 @@ def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: lis
         res.by, res.outcome, res.error = "error", "human", why
         return
     res.by, res.verdict, res.duplicate_of = "ai", verdict, verdict.get("duplicate_of")
-    # The quote check is the code part of S8; R13 switches it off in memory and web.
+    # The quote check is the code part of TR8; TE4 switches it off in memory and web.
     checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions) if condition == "fetched"
                                 else (verdict, []))
     checked = {**checked, **(decided or {})}  # the rules the gate settled, as the gate settled them
@@ -1176,7 +1176,7 @@ def metrics(results: list[Result]) -> dict:
         "tokens": {k: sum(r.usage.get(k, 0) for r in results) for k in empty_usage()},
         "right_rule": right_rule,
         "per_type": per_type,
-        "r13": r13_metrics(results),
+        "te4": te4_metrics(results),
     }
 
 
@@ -1185,11 +1185,11 @@ def source_closed(r: Result) -> bool:
     return any(status in CLOSED or status.startswith("error") or status == "not fetched" for _, status in r.sources)
 
 
-def r13_metrics(results: list[Result]) -> dict:
+def te4_metrics(results: list[Result]) -> dict:
     """Per rule: right, judged and doubt; and the confident-and-wrong answers (r13-research.md)."""
     judged = [r for r in results if r.by == "ai"]
     per_rule, confident_wrong = {}, []
-    for rule in R13_RULES:
+    for rule in TE4_RULES:
         right = wrong = doubt = 0
         for r in judged:
             v = r.checked.get(rule)
@@ -1253,15 +1253,15 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
         "| --- | --- | --- |",
         *[f"| {t} | {n} | {ok} |" for t, (n, ok) in sorted(m["per_type"].items())],
         "",
-        "## Per rule (R13)",
+        "## Per rule (TE4)",
         "",
         "Right: a good case answered yes, or a bad case answered no on one of its rules.",
         "",
         "| rule | right | wrong | doubt |",
         "| --- | --- | --- | --- |",
-        *[f"| {rule} | {v['right']} | {v['wrong']} | {v['doubt']} |" for rule, v in m["r13"]["per_rule"].items()],
+        *[f"| {rule} | {v['right']} | {v['wrong']} | {v['doubt']} |" for rule, v in m["te4"]["per_rule"].items()],
         "",
-        f"Confident and wrong: {ids(m['r13']['confident_wrong'])}",
+        f"Confident and wrong: {ids(m['te4']['confident_wrong'])}",
         "",
     ]
     if any(r.gate or r.ai_rules for r in results):
@@ -1303,7 +1303,7 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
         return row
     sources = gather_sources(stored, st) if stored is not None else None
     if sources is not None and product_gone(st.files, sources):
-        row.settled = "S7 404"
+        row.settled = "TR7 404"
         return row
     decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
     row.gate = {r: j["verdict"] for r, j in decided.items()}
@@ -1322,7 +1322,7 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
 
 
 def gate_counts(rows: list) -> dict:
-    """For the cases that reach the gate: of their S5, S6 and S8 judgments, how many code settled,
+    """For the cases that reach the gate: of their TR5, TR6 and TR8 judgments, how many code settled,
     how many were not needed because code rejected the case, and how many go to the referee."""
     at = [r for r in rows if not r.settled]
     per_rule = {rule: {"yes": 0, "no": 0, "ai": 0, "moot": 0} for rule in gate.GATE_RULES}
@@ -1349,14 +1349,14 @@ def _pct(n: int, total: int) -> str:
 def gate_table(rows: list) -> list[str]:
     c = gate_counts(rows)
     lines = [
-        "## The gate: S5, S6 and S8 by code, before the referee",
+        "## The gate: TR5, TR6 and TR8 by code, before the referee",
         "",
         "| measure | value |",
         "| --- | --- |",
         f"| cases | {c['cases']} |",
         f"| stopped before the gate (lint error, lint mismatch, product source 404) | {c['cases'] - c['at_gate']} |",
         f"| cases at the gate | {c['at_gate']} |",
-        f"| S5, S6 and S8 judgments of those cases | {c['judgments']} |",
+        f"| TR5, TR6 and TR8 judgments of those cases | {c['judgments']} |",
         f"| settled by code | {c['code']} ({_pct(c['code'], c['judgments'])}) |",
         f"| not needed, because code rejected the case | {c['moot']} |",
         f"| left for the referee | {c['ai']} ({_pct(c['ai'], c['judgments'])}) |",
@@ -1373,10 +1373,10 @@ def gate_summary(rows: list[GateRow], name: str, sources: str = "", replay: str 
     lines = [f"# Dry run {name}", "",
              "Nothing was sent to the API. The gate (`tools/gate.py`) settles what code can; the rest is what a live run "
              "would ask the referee.", "",
-             f"Source texts: {sources or 'none, so S6 and S8 (apart from an AI chat) are left for the referee'}.", ""]
+             f"Source texts: {sources or 'none, so TR6 and TR8 (apart from an AI chat) are left for the referee'}.", ""]
     lines += gate_table(rows)
     replayed = [r for r in rows if r.before]
-    head = "| case | stopped before | S5 | S6 | S8 | referee judges |"
+    head = "| case | stopped before | TR5 | TR6 | TR8 | referee judges |"
     sep = "| --- | --- | --- | --- | --- | --- |"
     if replay:
         head += " outcome in the replayed run | with the gate |"
@@ -1409,7 +1409,7 @@ def load_results(run_dir: Path) -> list[Result]:
 
 
 def compare(dirs: list, show: list[str] | None = None) -> str:
-    """R13: the conditions side by side, on the cases they share. An entry may be a list of run
+    """TE4: the conditions side by side, on the cases they share. An entry may be a list of run
     directories that together make one condition (a run split by the stop rule). `show` lists cases
     to set out one by one."""
     runs = {}
@@ -1421,16 +1421,16 @@ def compare(dirs: list, show: list[str] | None = None) -> str:
         runs[" + ".join(Path(p).name for p in parts)] = merged
     shared = sorted(set.intersection(*(set(r) for r in runs.values())))
     lines = [f"# Comparison on {len(shared)} shared cases", "",
-             "| run | wrongly accepted | wrongly rejected | doubt | " + " | ".join(f"{r} right/wrong/doubt" for r in R13_RULES)
+             "| run | wrongly accepted | wrongly rejected | doubt | " + " | ".join(f"{r} right/wrong/doubt" for r in TE4_RULES)
              + " | confident and wrong | cost per case | searches | fetches |",
-             "| --- " * (8 + len(R13_RULES)) + "|"]
+             "| --- " * (8 + len(TE4_RULES)) + "|"]
     for name, by_id in runs.items():
         rs = [by_id[i] for i in shared]
         m = metrics(rs)
-        per = m["r13"]["per_rule"]
+        per = m["te4"]["per_rule"]
         lines.append(f"| {name} | {len(m['let_through'])} | {len(m['good_rejected'])} | {len(m['human'])} | "
-                     + " | ".join(f"{per[r]['right']}/{per[r]['wrong']}/{per[r]['doubt']}" for r in R13_RULES)
-                     + f" | {len(m['r13']['confident_wrong'])} | ${m['cost_per_call']:.4f} | {m['tokens']['web_search_requests']}"
+                     + " | ".join(f"{per[r]['right']}/{per[r]['wrong']}/{per[r]['doubt']}" for r in TE4_RULES)
+                     + f" | {len(m['te4']['confident_wrong'])} | ${m['cost_per_call']:.4f} | {m['tokens']['web_search_requests']}"
                      + f" | {m['tokens'].get('web_fetch_requests', 0)} |")
     differ = [i for i in shared if len({runs[n][i].outcome for n in runs}) > 1]
     lines += ["", "Different outcomes: " + (", ".join(differ) or "none"),
@@ -1549,7 +1549,7 @@ MAX_DOMAINS = 30
 def search_domains(refused: str, staged: "Staged") -> list[str]:
     """The publisher's domains (run A2 review §1, point 6): of the closed URL, of the product's
     sources, and of every URL in the publisher's file and its other products in the data. Never
-    a search without domains: sites of others do not count under S5."""
+    a search without domains: sites of others do not count under TR5."""
     hosts = [refused] + urls_of(staged.files) + list(staged.publisher_urls)
     out = []
     for h in hosts:
@@ -1845,7 +1845,7 @@ def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=pri
 
 def measurement_report(runs: dict, a2: Path | None = None) -> str:
     """TAX-18: per stand (a model at an effort) over its runs the numbers of the story, and the
-    comparison with A2. Besides the outcomes: the quotes code did not find (S4 without a version
+    comparison with A2. Besides the outcomes: the quotes code did not find (TR4 without a version
     among them), the output tokens per proposal, and per rule how often it left a case to a person."""
     lines = ["# Model measurement (TAX-18)", "",
              "Per stand (a model at an effort), as a batch, after the gate (TAX-15). A stand that lets one bad case "
@@ -1879,12 +1879,12 @@ def measurement_report(runs: dict, a2: Path | None = None) -> str:
                 if r.outcome == "human":
                     for rule in (x for x in RULES if r.checked.get(x) == "doubt"):
                         doubt[rule] = doubt.get(rule, 0) + 1
-        s4 = sum(n.startswith("S4: yes without a version") or n.startswith("S4: version not found")
+        tr4 = sum(n.startswith("TR4: yes without a version") or n.startswith("TR4: version not found")
                  for run_ in per_run for r in run_.values() for n in r.quote_notes)
         lines.append(f"|  | let through: {', '.join(let) or 'none'} | good rejected: "
                      f"{', '.join(sorted({i for m in ms for i in m['good_rejected']})) or 'none'} | "
                      f"human by rule: {', '.join(f'{k} {v}' for k, v in sorted(doubt.items())) or 'none'} |  | "
-                     f"S4 without a version found: {s4} |  |  |  |")
+                     f"TR4 without a version found: {tr4} |  |  |  |")
     lines += [""]
     if a2 is not None:
         dirs = [[a2]] + [group for groups in runs.values() for group in groups]
@@ -1899,7 +1899,7 @@ def parser() -> argparse.ArgumentParser:
     sub = p.add_subparsers(dest="command", required=True)
     r = sub.add_parser("run", help="run cases past the referee")
     r.add_argument("--condition", choices=CONDITIONS, default="fetched")
-    r.add_argument("--cases", nargs="*", help="case ids, or 'all'; default: all for fetched, the 29 R13 cases otherwise")
+    r.add_argument("--cases", nargs="*", help="case ids, or 'all'; default: all for fetched, the 29 TE4 cases otherwise")
     r.add_argument("--limit", type=int, help="only the first N of those cases")
     r.add_argument("--model", default="claude-opus-5-5")
     r.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), default="medium")
@@ -1953,7 +1953,7 @@ def parser() -> argparse.ArgumentParser:
                           ("schema", REFEREE / "verdict.schema.json"), ("prices", REFEREE / "prices.yaml"),
                           ("out", REFEREE / "runs")):
         m.add_argument(f"--{name}", default=str(default))
-    c = sub.add_parser("compare", help="compare runs on the cases they share (R13)")
+    c = sub.add_parser("compare", help="compare runs on the cases they share (TE4)")
     c.add_argument("runs", nargs="+", help="run directories; join directories of one condition with + (a run split by the stop rule)")
     c.add_argument("--show", nargs="*", help="cases to set out one by one")
     return p

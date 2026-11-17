@@ -23,7 +23,7 @@ jobs:
       - run: pip install -r requirements.txt -r requirements-referee.txt
       - name: Tests of the lint and the referee harness
         run: python -m unittest discover -s tests -v
-      - name: Lint the data (writing rule, S1-S3)
+      - name: Lint the data (writing rule, TR1-TR3)
         env:
           BASE: ${{ github.event.pull_request.base.sha }}
         run: |

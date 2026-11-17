@@ -130,11 +130,11 @@ class PrRefereeTest(unittest.TestCase):
     def test_code_settles_what_it_can_before_the_referee(self):
         items = {i["id"]: i for i in self.gated()}
         self.assertEqual(items["B01"]["outcome"], "reject")
-        self.assertEqual(items["B01"]["rule"], "S1")
-        self.assertEqual((items["B20"]["outcome"], items["B20"]["rule"]), ("reject", "S7"))
+        self.assertEqual(items["B01"]["rule"], "TR1")
+        self.assertEqual((items["B20"]["outcome"], items["B20"]["rule"]), ("reject", "TR7"))
         self.assertEqual(items["G01"]["outcome"], "pending")
         self.assertIn("<decided>", items["G01"]["message"])
-        self.assertNotIn("S5", items["G01"]["ai_rules"], "the versions are on the publisher's domain")
+        self.assertNotIn("TR5", items["G01"]["ai_rules"], "the versions are on the publisher's domain")
 
     def test_a_source_on_an_ai_chat_is_rejected_and_not_fetched(self):
         fetcher = FakeFetcher()
@@ -142,7 +142,7 @@ class PrRefereeTest(unittest.TestCase):
             "key: synology/ds140\npublisher: synology\nname: DS140\nkind: device\n"
             "source: https://chatgpt.com/share/abc\nversions:\n  source: https://www.synology.com/en-global/releaseNote/DSM\n")}}
         item = pr_referee.gate_proposals([proposal], fetcher, FIXTURES / "data", log=QUIET)[0]
-        self.assertEqual((item["outcome"], item["rule"], item["by"]), ("reject", "S8", "code"))
+        self.assertEqual((item["outcome"], item["rule"], item["by"]), ("reject", "TR8", "code"))
         self.assertEqual(fetcher.urls, [])
 
     def test_a_fork_is_judged_by_code_only(self):
@@ -170,7 +170,7 @@ class PrRefereeTest(unittest.TestCase):
         })
         self.assertEqual(len(client.batches), 1, "one batch for all of them")
         self.assertEqual(len(client.batches[0]), 6)
-        self.assertIn("S7", items["G02"]["rule"])
+        self.assertIn("TR7", items["G02"]["rule"])
         self.assertIn("quote not found", items["G02"]["reason"])
         self.assertEqual(items["B07"]["duplicate_of"], "synology/ds224-plus")
         self.assertNotIn("human", {i["outcome"] for i in items.values()}, "no case goes to a person")
@@ -276,9 +276,9 @@ class PrRefereeTest(unittest.TestCase):
             (root / rel).parent.mkdir(parents=True, exist_ok=True)
             (root / rel).write_text(text)
         verdicts = {"pr": 7, "verdicts": [
-            {"id": "products/acme/widget.yaml", "key": "acme/widget", "outcome": "parked", "rule": "S5",
-             "reason": "S5: the source does not show who publishes", "files": files},
-            {"id": "products/synology/ds999.yaml", "key": "synology/ds999", "outcome": "reject", "rule": "S8",
+            {"id": "products/acme/widget.yaml", "key": "acme/widget", "outcome": "parked", "rule": "TR5",
+             "reason": "TR5: the source does not show who publishes", "files": files},
+            {"id": "products/synology/ds999.yaml", "key": "synology/ds999", "outcome": "reject", "rule": "TR8",
              "reason": "x", "files": {"products/synology/ds999.yaml": "key: synology/ds999\n"}},
             {"id": "products/synology/ds124.yaml", "key": "synology/ds124", "outcome": "accept", "rule": "", "reason": "",
              "files": {"products/synology/ds124.yaml": "x"}},
@@ -290,7 +290,7 @@ class PrRefereeTest(unittest.TestCase):
         self.assertTrue((root / "products/synology/ds124.yaml").exists())
         self.assertTrue((root / "publishers/synology.yaml").exists())
         parked = pr_referee.load_parked(root / "referee/parked.yaml")
-        self.assertEqual([(e["key"], e["rule"], e["date"], e["pr"]) for e in parked], [("acme/widget", "S5", "2026-11-13", 7)])
+        self.assertEqual([(e["key"], e["rule"], e["date"], e["pr"]) for e in parked], [("acme/widget", "TR5", "2026-11-13", 7)])
         self.assertEqual(parked[0]["files"], files)
 
     def test_the_parking_list_is_judged_again_with_one_command(self):
@@ -301,9 +301,9 @@ class PrRefereeTest(unittest.TestCase):
                   "source: https://acme.example/widget\nversions:\n  source: https://acme.example/widget\n",
                   "publishers/acme.yaml": "key: acme\nname: Acme\nsource: https://acme.example/about\naliases: []\n"}
         pr_referee.save_parked([
-            {"key": "synology/ds124", "path": "products/synology/ds124.yaml", "rule": "S7", "reason": "doubt",
+            {"key": "synology/ds124", "path": "products/synology/ds124.yaml", "rule": "TR7", "reason": "doubt",
              "date": "2026-11-01", "pr": 3, "files": {"products/synology/ds124.yaml": ds124}},
-            {"key": "acme/widget", "path": "products/acme/widget.yaml", "rule": "S5", "reason": "doubt",
+            {"key": "acme/widget", "path": "products/acme/widget.yaml", "rule": "TR5", "reason": "doubt",
              "date": "2026-11-01", "pr": 4, "files": widget},
         ], root / "referee/parked.yaml")
         counts = pr_referee.reprocess(Args(self.tmp / "runs", output=str(self.tmp / "v")), fetcher=FakeFetcher(),

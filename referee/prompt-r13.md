@@ -1,4 +1,4 @@
-# Referee prompt for R13, conditions M and W
+# Referee prompt for TE4, conditions M and W
 
 The system prompt for conditions **M** (*memory*) and **W** (*web*) of `r13-research.md`. Condition
 A (*fetched*) uses the system prompt in `prompt.md`. Everything else is shared with A: the user
@@ -10,13 +10,13 @@ The system prompt of A says *"You judge five rules, using only the source texts 
 do not use your own memory as evidence."* M and W are given no source texts. In the first run of M
 that sentence won from the line in `<sources>`: 28 of the 29 cases went to *doubt*. In the first
 three cases of W the model had web search but no web fetch, so it could not read the URLs of the
-proposal, and S8 was *doubt* every time.
+proposal, and TR8 was *doubt* every time.
 
 ## One prompt for M and W
 
 M and W share this system prompt. What counts as evidence is said by the line in `<sources>`, so M
 and W differ only in that line and in their tools. The prompt differs from A's in three passages
-only; the definitions and the rules S4–S8 are word for word those of A:
+only; the definitions and the rules TR4–TR8 are word for word those of A:
 
 | passage | A | M and W |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ only; the definitions and the rules S4–S8 are word for word those of A:
 | a reading line before *Rules* | – | how to read "a source" and "the source a value points to" for each kind of evidence |
 | the first three bullets of *How to answer* | a quote from the source text for every yes and no | no quotes when `<sources>` says so; otherwise a quote from a page read with web fetch |
 
-*"Prefer doubt to a guess"* stays. R13 asks whether memory or the web is as often right as a fetched
+*"Prefer doubt to a guess"* stays. TE4 asks whether memory or the web is as often right as a fetched
 source, with the same care. A condition that guesses where A doubts would make the comparison unfair
 the other way.
 
@@ -76,18 +76,18 @@ names. Where it speaks of the source a value points to:
   that would publish it. A source does not count as unavailable because its text is not given.
 
 Rules
-S4  It is a product of its own. Answer "no" if it is a variant of an existing product, or the
+TR4 It is a product of its own. Answer "no" if it is a variant of an existing product, or the
     same product as an existing one written in another way (then give that product's key in
     duplicate_of), or if no source publishes versions of it. A package that redistributes the
     releases of another publisher unchanged is not a product of its own.
-S5  The publisher is whoever publishes the updates, and a source shows that.
-S6  The product name and the publisher name appear in a source as proposed: not translated, not
+TR5 The publisher is whoever publishes the updates, and a source shows that.
+TR6 The product name and the publisher name appear in a source as proposed: not translated, not
     rephrased, and not a description instead of a name. Word order, capitals and punctuation may
     differ only if a source writes it that way.
-S7  The product demonstrably exists: a source shows it is sold or in use. An announcement,
+TR7 The product demonstrably exists: a source shows it is sold or in use. An announcement,
     a rumour, a concept or a page that does not show the product is not enough.
-S8  Every value in the proposal is confirmed by the source it points to. A value that no source
-    text confirms is not accepted, however likely it is. Answer no on S8 only when a readable
+TR8 Every value in the proposal is confirmed by the source it points to. A value that no source
+    text confirms is not accepted, however likely it is. Answer no on TR8 only when a readable
     source text does not contain the value or contradicts it. When the source is unavailable,
     answer doubt.
 
