@@ -39,10 +39,15 @@ TR8; what it leaves is pending for the referee, and costs one request each.
 
 Usage:
 
+    python tools/importer.py list --found CSV... --since DATE --out DIR      # the KEV list and its CVE records (free)
     python tools/importer.py group --found CSV... --kev KEV.json --cve DIR [--since DATE] [--first N] --out DIR
-    python tools/importer.py group ... --live            # the grouping as one batch (costs money)
+    python tools/importer.py group ... --live --cap 1.00 # the grouping as one batch (costs money)
     python tools/importer.py propose --found CSV... [--first N] [--classes classes.json] [--fetch] --out DIR
     python tools/importer.py propose ... --write          # write the files and the parking list into the data
+    python tools/importer.py propose ... --fetch --gated gated.json   # then: tools/pr_referee.py judge --gated gated.json
+
+The paid trial runs as the workflow referee-import (TAX-27): list, group, propose, judge, and a pull
+request with the outcome; Fred approves each job with the key in environment referee.
 
 Without --write nothing in the data changes: the files go to --out, with report.md and outcomes.json.
 The importer names no brand or product (R3): every rule here is generic.
@@ -621,7 +626,11 @@ def run_grouping(args, client=None, data_root: Path = REPO, now=None, log=print,
     client = client or referee.AnthropicClient()
     runs = Path(args.runs)
     spent = referee.spent_before(runs)
-    budget = referee.Budget(args.budget, spent, args.model, prices, max_tokens=args.max_tokens, batch=True)
+    # The tightest of two: what is left of the budget for every run together, and the cap of this run.
+    room = max(min(args.budget - spent, args.cap if args.cap is not None else args.budget), 0.0)
+    log(f"budget ${args.budget:.2f} (spent ${spent:.4f}); cap of this run "
+        f"{'none' if args.cap is None else f'${args.cap:.2f}'}: at most ${room:.4f}")
+    budget = referee.Budget(spent + room, spent, args.model, prices, max_tokens=args.max_tokens, batch=True)
     requests = [(g.publisher, group.request(g, decided[g.publisher], system, schema, args.model, args.effort))
                 for g in groups if len(decided[g.publisher]) < len(g.names)]
     answers, never = referee.batch_rounds(client, budget, requests, log=log, wait=args.wait, sleep=sleep)
@@ -638,7 +647,8 @@ def run_grouping(args, client=None, data_root: Path = REPO, now=None, log=print,
     run_dir = runs / f"{stamp}-import-group-{args.model}-{args.effort}"
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "run.json").write_text(json.dumps({"kind": "import-group", "model": args.model, "effort": args.effort,
-                                                  "batch": True, "budget": args.budget, "spent_before": spent,
+                                                  "batch": True, "budget": args.budget, "cap": args.cap,
+                                                  "spent_before": spent,
                                                   "time": stamp}, indent=2) + "\n", encoding="utf-8")
     (run_dir / "results.jsonl").write_text("".join(
         json.dumps({"id": g.publisher, "classes": classes[g.publisher], "notes": notes.get(g.publisher, []),
@@ -648,7 +658,56 @@ def run_grouping(args, client=None, data_root: Path = REPO, now=None, log=print,
     (out / "classes.json").write_text(json.dumps(classes_by_name(groups, classes), indent=1, ensure_ascii=False) + "\n",
                                       encoding="utf-8")
     log(f"grouping: {len(answers)} answered, {len(never)} without room in the budget, ${cost:.4f} -> {run_dir}")
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
+            gh.write(f"run_dir={run_dir}\nrun_name={run_dir.name}\ncost={cost:.6f}\n")
     return {**result, "cost": cost, "dir": run_dir, "never": never}
+
+
+# --------------------------------------------------------------------------- the list
+
+KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+CVE_URL = "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/{year}/{bucket}/{cve}.json"
+CVE_ID = re.compile(r"^CVE-(\d{4})-(\d{4,})$")
+
+
+def _download(url: str) -> bytes:
+    import urllib.request
+    req = urllib.request.Request(url, headers={"User-Agent": "TAXNMY-importer/1.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:  # noqa: S310 - two fixed public hosts
+        return resp.read()
+
+
+def cve_url(cve: str) -> str:
+    m = CVE_ID.fullmatch(cve)
+    if not m:
+        raise ValueError(f"not a CVE id: {cve!r}")
+    return CVE_URL.format(year=m.group(1), bucket=m.group(2)[:-3] + "xxx", cve=cve)
+
+
+def fetch_list(args, get=_download, log=print) -> dict:
+    """The KEV list, and the CVE record of each of its entries whose vendor a row names. A record
+    that cannot be fetched is left out: the grouping then has the name KEV writes only."""
+    rows = first(read_found(args.found), args.first)
+    vendors = {r.vendor for r in rows if r.vendor}
+    out = Path(args.out)
+    (out / "cve").mkdir(parents=True, exist_ok=True)
+    kev = json.loads(get(KEV_URL))
+    (out / "kev.json").write_text(json.dumps(kev), encoding="utf-8")
+    wanted = sorted({e["cveID"] for e in kev.get("vulnerabilities", [])
+                     if e.get("vendorProject") in vendors and e.get("dateAdded", "") >= args.since})
+    missing = []
+    for cve in wanted:
+        try:
+            body = get(cve_url(cve))
+            json.loads(body)
+        except Exception as exc:  # noqa: BLE001 - a missing record is reported, not fatal
+            missing.append(f"{cve} ({type(exc).__name__})")
+            continue
+        (out / "cve" / f"{cve}.json").write_bytes(body)
+    log(f"KEV {kev.get('catalogVersion', '?')}: {len(wanted)} records for {len(vendors)} vendors, "
+        f"{len(wanted) - len(missing)} fetched" + (f"; missing: {', '.join(missing)}" if missing else ""))
+    return {"wanted": wanted, "missing": missing}
 
 
 # --------------------------------------------------------------------------- propose
@@ -664,7 +723,7 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
         if fetcher is None:
             from fetch import Fetcher
             recorder = Recorder()
-            fetcher = Fetcher(use_browser=False, get=recorder, log=log)
+            fetcher = Fetcher(use_browser=args.browser, get=recorder, log=log)
             fetcher.final = recorder.final
         publishers = check_pages(outcomes, fetcher, getattr(fetcher, "final", {}))
         follow(outcomes)
@@ -704,6 +763,12 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
     for e in parked:
         existing.setdefault(e["key"], e)
     pr_referee.save_parked(list(existing.values()), parked_path, pr_referee.load_terms(data_root))
+    if args.gated and args.fetch:
+        # For the referee of the pull request (tools/pr_referee.py judge): the items the gate left pending.
+        gated = Path(args.gated)
+        gated.parent.mkdir(parents=True, exist_ok=True)
+        gated.write_text(json.dumps({"version": 1, "pr": None, "head_sha": "", "fork": False, "items": items},
+                                    ensure_ascii=False) + "\n", encoding="utf-8")
     log(text.split("\n| rij |")[0])
     return {"outcomes": outcomes, "files": files, "parked": parked, "items": items, "report": text}
 
@@ -729,7 +794,8 @@ def parser() -> argparse.ArgumentParser:
     g.add_argument("--model", default=group.MODEL)
     g.add_argument("--effort", default=group.EFFORT)
     g.add_argument("--max-tokens", type=int, default=group.MAX_TOKENS)
-    g.add_argument("--budget", type=float, default=referee.BUDGET)
+    g.add_argument("--budget", type=float, default=referee.BUDGET, help="dollars, for every run together")
+    g.add_argument("--cap", type=float, help="dollars, for this run (the trial: 1.00)")
     g.add_argument("--wait", type=float, default=referee.BATCH_WAIT)
     g.add_argument("--live", action="store_true", help="send the grouping as one batch (costs money)")
     q = sub.choices["propose"]
@@ -737,6 +803,13 @@ def parser() -> argparse.ArgumentParser:
     q.add_argument("--names", help="names.json of the group step, for the estimate of the grouping")
     q.add_argument("--fetch", action="store_true", help="read every page, and run the gate of the pull request (free)")
     q.add_argument("--write", action="store_true", help="write the files and the parking list into the data")
+    q.add_argument("--browser", action="store_true", help="with --fetch: a headless browser for pages without text")
+    q.add_argument("--gated", help="with --fetch: write the gated items for tools/pr_referee.py judge here")
+    k = sub.add_parser("list", help="the KEV list and the CVE records of the vendors of the rows (public, free)")
+    k.add_argument("--found", nargs="+", required=True)
+    k.add_argument("--first", type=int)
+    k.add_argument("--since", default="")
+    k.add_argument("--out", required=True, help="writes kev.json and cve/CVE-YYYY-N.json")
     return p
 
 
@@ -746,6 +819,8 @@ def main(argv: list[str] | None = None) -> int:
         if args.live and not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("--live needs ANTHROPIC_API_KEY")
         run_grouping(args)
+    elif args.command == "list":
+        fetch_list(args)
     else:
         propose(args)
     return 0
