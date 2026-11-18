@@ -27,6 +27,7 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
     parked    judge the parking list again (one command; weekly by workflow referee-parked): what
               is past its term lapses, the rest is judged again as far as its reason allows.
     decide    a person decides on a publisher that code held (TV3, TV5); kept in referee/decisions.yaml.
+    settle    a person settles a collision or an audit finding on a product (`kind`); kept there too.
     waiting   what waits for a decision of a person, per publisher, as JSON.
     testset   the 77 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
@@ -580,6 +581,14 @@ def waiting(entries: list[dict], terms: dict) -> dict:
     return {p: out[p] for p in sorted(out, key=lambda p: (first[p], p))}
 
 
+def save_decisions(decisions: list[dict], path: Path) -> None:
+    """DECISIONS, with its comment head kept."""
+    head = "".join(line + "\n" for line in path.read_text(encoding="utf-8").splitlines() if line.startswith("#")) \
+        if path.is_file() else ""
+    path.write_text(head + yaml.safe_dump({"version": 1, "decisions": decisions}, sort_keys=False, allow_unicode=True,
+                                          width=120), encoding="utf-8")
+
+
 def decide(publisher: str, decision: str, reason: str, root: Path = REPO, by: str = "", now=None, log=print) -> list[dict]:
     """A person decides on what code held the proposals of `publisher` on (TV3, TV5). The decision is
     kept per reason in DECISIONS and holds for every next proposal of that publisher. approve: the
@@ -597,10 +606,7 @@ def decide(publisher: str, decision: str, reason: str, root: Path = REPO, by: st
                  not in {(publisher, r, s) for r, s in subjects}]
     decisions += [{"publisher": publisher, "rule": r, "subject": s, "decision": decision, "date": day,
                    "reason": reason, "by": by} for r, s in subjects]
-    head = "".join(line + "\n" for line in dpath.read_text(encoding="utf-8").splitlines() if line.startswith("#")) \
-        if dpath.is_file() else ""
-    dpath.write_text(head + yaml.safe_dump({"version": 1, "decisions": decisions}, sort_keys=False, allow_unicode=True,
-                                           width=120), encoding="utf-8")
+    save_decisions(decisions, dpath)
     if decision == "reject":
         entries = [e for e in entries if e not in mine]
     else:
@@ -610,6 +616,54 @@ def decide(publisher: str, decision: str, reason: str, root: Path = REPO, by: st
     save_parked(entries, path)
     log(f"{publisher}: {decision} on {len(subjects)} reasons; {len(mine)} entries "
         + ("taken off the list" if decision == "reject" else "wait for the referee again"))
+    return mine
+
+
+# The answers to a kind that never lapses (`kind`), per kind: what happens to the entry. A collision:
+# two parties claim the same product, the first stands until the decision. An audit: a finding on a
+# product already in TAX.
+SETTLE = {
+    "collision": {"stays": "the party in TAXNMY is the publisher: the proposal leaves the list",
+                  "proposal": "the party of the proposal is the publisher: it waits for the referee again"},
+    "audit": {"keep": "the product stays as it is: the finding leaves the list",
+              "fix": "the product is to be fixed, by a proposal of its own: the finding leaves the list",
+              "remove": "the product is taken out of TAXNMY: its file is deleted, the finding leaves the list"},
+}
+
+
+def settle(key: str, answer: str, reason: str, root: Path = REPO, by: str = "", now=None, log=print) -> list[dict]:
+    """A person settles a collision or an audit finding (`kind`) on the product `key`, which never
+    lapses and gets a decision within its term (`decide_by`). The decision is kept in DECISIONS
+    (rule: the kind, subject: the key); the answers per kind are in SETTLE. Returns the entries settled."""
+    day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
+    path, dpath = root / "referee/parked.yaml", root / DECISIONS
+    entries = load_parked(path)
+    mine = [e for e in entries if e.get("key") == key and e.get("kind")]
+    if not mine:
+        raise SystemExit(f"No collision or audit finding on {key} waits for a decision.")
+    kinds = {e["kind"] for e in mine}
+    kind = kinds.pop() if len(kinds) == 1 else ""
+    if answer not in SETTLE.get(kind, {}):
+        raise SystemExit(f"settle: {key} is a {kind or 'mix of kinds'}; it takes {' or '.join(SETTLE.get(kind, {})) or 'no answer here'}")
+    rels = sorted({str(e.get("path") or "") for e in mine})
+    if answer == "remove" and not all(r.startswith("products/") and DATA_PATH.fullmatch(r) for r in rels):
+        raise SystemExit(f"settle: {key} has no product file to remove ({', '.join(rels) or '-'})")
+    decisions = [d for d in load_decisions(dpath) if (d.get("rule"), d.get("subject")) != (kind, key)]
+    decisions.append({"publisher": mine[0].get("publisher") or "", "rule": kind, "subject": key, "decision": answer,
+                      "date": day, "reason": reason, "by": by})
+    save_decisions(decisions, dpath)
+    if answer == "proposal":
+        for e in mine:
+            e.update(waits_for="event", checked=day, reason=f"a person settled the collision on {day}: {reason}")
+            e.pop("kind", None)
+            e.pop("holds", None)
+    else:
+        entries = [x for x in entries if not any(x is e for e in mine)]
+    if answer == "remove":
+        for r in rels:
+            (root / r).unlink(missing_ok=True)
+    save_parked(entries, path)
+    log(f"{key}: {kind}, {answer}: {SETTLE[kind][answer]}")
     return mine
 
 
@@ -729,6 +783,11 @@ def main(argv: list[str] | None = None) -> int:
     d.add_argument("decision", choices=("approve", "reject"))
     d.add_argument("--reason", required=True)
     d.add_argument("--by", default="")
+    t = sub.add_parser("settle", help="a person settles a collision or an audit finding on a product")
+    t.add_argument("key", help="the key of the product, as in the digest")
+    t.add_argument("answer", choices=sorted({a for k in SETTLE.values() for a in k}))
+    t.add_argument("--reason", required=True)
+    t.add_argument("--by", default="")
     sub.add_parser("waiting", help="what waits for a decision of a person, per publisher, as JSON")
     args = p.parse_args(argv)
 
@@ -786,6 +845,8 @@ def main(argv: list[str] | None = None) -> int:
         reprocess(args)
     elif args.command == "decide":
         decide(args.publisher, args.decision, args.reason, by=args.by)
+    elif args.command == "settle":
+        settle(args.key, args.answer, args.reason, by=args.by)
     elif args.command == "waiting":
         print(json.dumps(waiting(load_parked(), load_terms()), indent=1, ensure_ascii=False))
     return 0

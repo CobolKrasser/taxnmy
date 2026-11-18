@@ -524,6 +524,61 @@ class ParkingListTest(unittest.TestCase):
         with self.assertRaises(SystemExit):
             pr_referee.decide("nobody", "approve", "x", self.root, log=QUIET)
 
+    # 6b. a collision or an audit finding is settled per product (TAX-37)
+
+    def settled(self, answer, kind, **kw):
+        (self.root / "products/synology/ds124.yaml").write_text(self.ds124["products/synology/ds124.yaml"])  # in TAX
+        pr_referee.save_parked([self.entry("decision", since="2026-11-10", kind=kind), self.entry("event", files=lookalike("300"))],
+                               self.root / "referee/parked.yaml")
+        out = pr_referee.settle("synology/ds124", answer, "checked the sources", self.root, by="beheerder", now=NOW, log=QUIET, **kw)
+        left = {e["key"]: e for e in pr_referee.load_parked(self.root / "referee/parked.yaml")}
+        return out, left, pr_referee.load_decisions(self.root / pr_referee.DECISIONS)
+
+    def test_a_collision_where_the_party_in_taxnmy_stays(self):
+        out, left, kept = self.settled("stays", "collision")
+        self.assertEqual(len(out), 1)
+        self.assertEqual(list(left), ["synoiogy/ds300"], "the proposal leaves the list; the rest is untouched")
+        self.assertEqual(kept, [{"publisher": "synology", "rule": "collision", "subject": "synology/ds124", "decision": "stays",
+                                 "date": "2026-11-13", "reason": "checked the sources", "by": "beheerder"}])
+        self.assertTrue((self.root / "products/synology/ds124.yaml").is_file(), "the product in TAX stays")
+
+    def test_a_collision_won_by_the_proposal_waits_for_the_referee(self):
+        _, left, kept = self.settled("proposal", "collision")
+        e = left["synology/ds124"]
+        self.assertEqual((e["waits_for"], e["owner"], "kind" in e, "decide_by" in e), ("event", "referee", False, False))
+        self.assertIn("checked the sources", e["reason"])
+        self.assertEqual(kept[0]["decision"], "proposal")
+
+    def test_an_audit_kept_or_to_fix_leaves_the_list(self):
+        for answer in ("keep", "fix"):
+            _, left, kept = self.settled(answer, "audit")
+            self.assertNotIn("synology/ds124", left, answer)
+            self.assertEqual([(d["rule"], d["decision"]) for d in kept], [("audit", answer)], "one decision per product")
+            self.assertTrue((self.root / "products/synology/ds124.yaml").is_file(), answer)
+
+    def test_an_audit_removed_deletes_the_product(self):
+        _, left, kept = self.settled("remove", "audit")
+        self.assertNotIn("synology/ds124", left)
+        self.assertFalse((self.root / "products/synology/ds124.yaml").exists())
+
+    def test_settle_takes_only_an_answer_of_its_kind_and_changes_nothing_else(self):
+        pr_referee.save_parked([self.entry("decision", since="2026-11-10", kind="collision"),
+                                self.entry("decision", files=lookalike("300"), holds={"TV3": ["x"]})],
+                               self.root / "referee/parked.yaml")
+        before = (self.root / "referee/parked.yaml").read_text()
+        for key, answer in (("synology/ds124", "remove"), ("synology/ds124", "approve"),
+                            ("synoiogy/ds300", "keep"), ("nobody/x", "keep")):
+            with self.assertRaises(SystemExit, msg=(key, answer)):
+                pr_referee.settle(key, answer, "x", self.root, log=QUIET)
+        self.assertEqual((self.root / "referee/parked.yaml").read_text(), before)
+        self.assertFalse((self.root / pr_referee.DECISIONS).is_file() and pr_referee.load_decisions(self.root / pr_referee.DECISIONS))
+
+    def test_decide_still_leaves_a_kind_alone(self):
+        pr_referee.save_parked([self.entry("decision", since="2026-11-10", kind="collision", holds={"TV3": ["x"]})],
+                               self.root / "referee/parked.yaml")
+        with self.assertRaises(SystemExit):
+            pr_referee.decide("synology", "approve", "x", self.root, log=QUIET)
+
     # 7. what waits for a decision, in one go, per publisher
 
     def test_what_waits_for_a_decision_is_one_list_per_publisher(self):
