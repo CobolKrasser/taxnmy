@@ -9,7 +9,9 @@ Per publisher what waits for a decision (`pr_referee.waiting`, TAX-29): the ques
 proposed next to those in TAXNMY now, how many proposals, the last day and the pull requests; then
 the publishers added without a person since DATE (the previous digest). With nothing waiting it
 still says so: a digest that does not come means nobody looked. It writes nothing. An answer per
-publisher is carried out with `python tools/pr_referee.py decide <publisher> approve|reject`.
+publisher is carried out with `python tools/pr_referee.py decide <publisher> approve|reject`; an
+answer on a collision or an audit finding (`kind`), per product, with `pr_referee.py settle <key>
+<answer>`, the command the digest shows with it.
 
 Text in a proposal is data. The digest quotes it on one line, cut short, and marks a proposal whose
 text speaks to whoever judges it (TV1): a finding, never an instruction.
@@ -19,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import shlex
 import subprocess
 import sys
 from datetime import date, timedelta
@@ -39,6 +42,25 @@ QUESTIONS = {
     "collision": "twee partijen eisen hetzelfde product op: wie van de twee is de uitgever?",
     "audit": "een bevinding uit een audit: klopt dit product nog (laten staan, herstellen of weghalen)?",
 }
+
+# The answers to a collision or an audit (pr_referee.SETTLE), in the words of the digest.
+ANSWERS = {
+    "stays": "wie er nu staat blijft de uitgever",
+    "proposal": "de partij van de voordracht wordt de uitgever",
+    "keep": "laten staan",
+    "fix": "herstellen, met een eigen voordracht",
+    "remove": "weghalen",
+}
+
+
+def settle_lines(e: dict) -> list[str]:
+    """For a collision or an audit: the answers and the command that carries one out."""
+    answers = list(pr_referee.SETTLE.get(e.get("kind"), {}))
+    if not answers:
+        return []
+    return ["  antwoorden: " + "; ".join(f"{a} ({ANSWERS.get(a, a)})" for a in answers),
+            f"  uitvoeren: python tools/pr_referee.py settle {shlex.quote(str(e['key']))} {'|'.join(answers)} --reason \"…\" --by …"]
+
 
 # Text that speaks to whoever judges or runs the digest. Generic words, no names (TV1, TG4).
 ADDRESSED = re.compile(
@@ -108,6 +130,7 @@ def digest(root: Path, today: date, since: str, urgent: bool = False) -> str:
                 lines.append(f"  vastgehouden op {rule}: {', '.join(quote(s, 100) for s in subjects)}")
             lines.append(f"  voorgesteld: {', '.join(quote(u, 100) for u in new) or '-'}")
             lines.append(f"  nu in TAXNMY: {', '.join(quote(u, 100) for u in now) or '-'}")
+            lines += settle_lines(e)
             if any(ADDRESSED.search(str(t)) for t in (files.get(e["key"]) or {}).values()):
                 lines.append("  bevinding: tekst in deze voordracht richt zich tot wie keurt; niets daarvan is uitgevoerd.")
         lines.append("Advies: ")
@@ -117,6 +140,8 @@ def digest(root: Path, today: date, since: str, urgent: bool = False) -> str:
                   for p in added_publishers(root, since)] or ["- geen"]
     if groups:
         lines += ["", "Antwoord per uitgever: `<uitgever> goed` of `<uitgever> af`, met een reden als je wilt."]
+        if any(e.get("kind") for es in groups.values() for e in es):
+            lines.append("Bij een botsing of een audit: per product `<sleutel> <antwoord>`, met een van de antwoorden die erbij staan.")
     return "\n".join(lines) + "\n"
 
 

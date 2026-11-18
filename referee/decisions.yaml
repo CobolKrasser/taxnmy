@@ -3,5 +3,7 @@
 # Written with: python tools/pr_referee.py decide <publisher> approve|reject --reason "..."
 #   approve  the reason no longer holds a proposal of this publisher; the referee judges it
 #   reject   a proposal of this publisher held for this reason is rejected, with this decision
+# A collision or an audit finding on a product: rule is the kind, subject the product key. Written with:
+# python tools/pr_referee.py settle <product key> stays|proposal (collision), keep|fix|remove (audit)
 version: 1
 decisions: []

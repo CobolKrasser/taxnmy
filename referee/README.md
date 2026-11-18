@@ -451,6 +451,18 @@ of `holds`, with the date and the reason. It holds for every next proposal of th
 for the same subject: *approve* takes the hold away (the referee judges it), *reject* rejects it on
 that rule, `by: person`, with the decision as reason. Another subject still holds it.
 
+A collision or an audit finding (`kind`) is not answered per publisher but per product, with
+`settle`. The answer is kept in `referee/decisions.yaml` with the kind as `rule` and the product key
+as `subject`:
+
+| kind | answer | what happens |
+| --- | --- | --- |
+| `collision` | `stays` | the party in TAXNMY is the publisher: the proposal leaves the list |
+| `collision` | `proposal` | the party of the proposal is the publisher: it waits for the referee again (`event`) |
+| `audit` | `keep` | the product stays as it is: the finding leaves the list |
+| `audit` | `fix` | the product is to be fixed, by a proposal of its own: the finding leaves the list |
+| `audit` | `remove` | the product file is deleted and the finding leaves the list |
+
 ```
 python tools/pr_referee.py apply verdicts.json       # on the branch: parked to the list, rejected out
 python tools/pr_referee.py parked                    # lapse, and judge again; dry: the rest stays parked
@@ -458,6 +470,7 @@ python tools/pr_referee.py parked --live             # with the referee, one bat
 python tools/pr_referee.py waiting                   # what waits for a person, per publisher (JSON)
 python tools/pr_referee.py decide <publisher> approve --reason "..." [--by name]
 python tools/pr_referee.py decide <publisher> reject --reason "..."
+python tools/pr_referee.py settle <product key> stays|proposal|keep|fix|remove --reason "..." [--by name]
 python tools/pr_referee.py gate --testset            # the test set as a pull request, code only (free)
 python tools/pr_referee.py judge --gated gated/gated.json --live   # and the rest, with the referee
 ```

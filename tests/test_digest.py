@@ -90,6 +90,19 @@ class Digest(unittest.TestCase):
         self.assertIn("wie van de twee", text)
         self.assertNotIn("Nieuwe uitgevers", text)
 
+    def test_a_collision_or_audit_shows_the_command_that_settles_it(self):
+        self.park(self.entry(kind="collision"), self.entry("examp1e/b", kind="audit"), self.entry("examp1e/c"))
+        text = self.show()
+        self.assertIn("  uitvoeren: python tools/pr_referee.py settle examp1e/tool stays|proposal --reason", text)
+        self.assertIn("  uitvoeren: python tools/pr_referee.py settle examp1e/b keep|fix|remove --reason", text)
+        self.assertEqual(text.count("uitvoeren:"), 2, "a TV3 hold is answered per publisher, with decide")
+        self.assertIn("Bij een botsing of een audit", text)
+        self.assertEqual(set(digest.ANSWERS), {a for k in pr_referee.SETTLE.values() for a in k})
+
+    def test_a_shown_command_quotes_the_key(self):
+        self.park(self.entry("examp1e/x;rm -rf ~", kind="audit"))
+        self.assertIn("settle 'examp1e/x;rm -rf ~' keep", self.show())
+
     def test_text_that_speaks_to_the_judge_is_a_finding_and_nothing_changes(self):
         self.park(self.entry(text=SPEAKS))
         before = self.parked()
