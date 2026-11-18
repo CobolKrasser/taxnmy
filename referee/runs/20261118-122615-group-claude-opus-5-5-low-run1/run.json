@@ -1,0 +1,14 @@
+{
+  "kind": "group",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "batch": true,
+  "run": 1,
+  "repeats": 3,
+  "testset": "/home/runner/work/taxnmy/taxnmy/referee/testset/groups.yaml",
+  "prompt": "/home/runner/work/taxnmy/taxnmy/referee/prompt-group.md",
+  "budget": 50.0,
+  "spent_before": 31.445198622499994,
+  "unchecked": [],
+  "time": "20261118-122615"
+}
