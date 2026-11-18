@@ -10,6 +10,11 @@ For each URL the fetcher goes down the steps until it has usable text:
 3. browser  a headless Chromium (Playwright), when the steps before give fewer than 200
             characters of HTML text: the page is rendered and its visible text taken.
 
+Only public addresses (TAX-34): a URL whose host is an IP address, localhost or an internal name is
+not requested ("error: blocked"), and every connection, also after a redirect and for robots.txt or
+a frame, goes to an address that was checked to be public (tools/address.py). The browser is held
+to the same.
+
 A refusal stops the ladder: 401 and 403 give "refused"; 429 is tried once more after the
 Retry-After time, and gives "refused" if it comes again. A URL that robots.txt forbids gives
 "disallowed" and is not requested.
@@ -35,6 +40,7 @@ import urllib.robotparser
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
+import address
 import machine
 
 USER_AGENT = "TAXNMY-referee/1.0 (+https://github.com/CobolKrasser/taxnmy)"
@@ -53,7 +59,7 @@ REFUSED = {401, 403}
 @dataclass
 class Source:
     url: str  # the URL as the proposal gives it
-    status: str  # an HTTP status, "unreadable", "refused", "disallowed" or "error: ..."
+    status: str  # an HTTP status, "unreadable", "refused", "disallowed" or "error: ..." ("error: blocked": not a public address)
     text: str = ""
     method: str = ""  # the step that gave the text: machine, api, http, browser or search
     fetched_url: str = ""  # what was requested in the end, when it differs from url
@@ -173,6 +179,19 @@ def retry_after(value: str | None, now: datetime | None = None) -> float:
 
 # --------------------------------------------------------------------------- the fetcher
 
+def public(url: str) -> bool:
+    """A URL on a public address: the name passes address.problem and resolves only to public
+    addresses. For the browser, which connects on its own; urllib checks at the connection."""
+    if address.problem(url):
+        return False
+    parts = urllib.parse.urlsplit(url)
+    try:
+        address.resolve(parts.hostname, parts.port or (443 if parts.scheme == "https" else 80))
+    except OSError:
+        return False
+    return True
+
+
 @dataclass
 class Response:
     status: int  # 0 when there was no answer
@@ -184,10 +203,21 @@ class Response:
     error: str = ""
 
 
+BLOCKED = "error: blocked"  # a URL that is not a public address, or redirects to one (TAX-34)
+_OPENER = address.opener()
+
+
+def _blocked(exc: BaseException) -> bool:
+    return isinstance(exc, address.Blocked) or isinstance(getattr(exc, "reason", None), address.Blocked)
+
+
 def _urlopen_get(url: str, timeout: float) -> Response:
+    """One GET, only to a public address: also after a redirect (tools/address.py)."""
+    if address.problem(url):
+        return Response(status=0, final_url=url, error=BLOCKED)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310 - URLs of the test set
+        with _OPENER.open(req, timeout=timeout) as resp:
             return Response(status=resp.status, ctype=resp.headers.get_content_type(),
                             charset=resp.headers.get_content_charset() or "utf-8",
                             body=resp.read(MAX_BYTES), final_url=resp.geturl())
@@ -196,14 +226,29 @@ def _urlopen_get(url: str, timeout: float) -> Response:
         exc.close()
         return Response(status=exc.code, final_url=url, retry_after=headers.get("Retry-After") if headers else None)
     except Exception as exc:  # noqa: BLE001 - any failure means the source confirms nothing
+        if _blocked(exc):
+            return Response(status=0, final_url=url, error=BLOCKED)
         return Response(status=0, final_url=url, error=f"error: {type(exc).__name__}")
 
 
 class PlaywrightBrowser:
-    """Headless Chromium through Playwright, started on first use. Honest User-Agent, no stealth."""
+    """Headless Chromium through Playwright, started on first use. Honest User-Agent, no stealth.
+    Every request of the page, also a redirect, a frame or a script, goes only to a public address;
+    anything else is aborted (TAX-34)."""
 
-    def __init__(self):
+    def __init__(self, public_only: bool = True):
         self._pw = self._browser = None
+        self.public_only = public_only  # False only for a test on a local page
+
+    def _route(self, route) -> None:
+        url = route.request.url
+        if urllib.parse.urlsplit(url).scheme.lower() not in address.SCHEMES:
+            route.continue_()  # data:, blob: and the like do not leave the browser
+            return
+        if self.public_only and not public(url):
+            route.abort("blockedbyclient")
+            return
+        route.continue_()
 
     @staticmethod
     def available() -> bool:
@@ -222,13 +267,16 @@ class PlaywrightBrowser:
         if self._browser is None:
             self._pw = sync_playwright().start()
             self._browser = self._pw.chromium.launch(headless=True)
-        context = self._browser.new_context(user_agent=USER_AGENT)
+        context = self._browser.new_context(user_agent=USER_AGENT, service_workers="block")
         try:
+            context.route("**/*", self._route)
             page = context.new_page()
             try:
                 response = page.goto(url, wait_until="networkidle", timeout=BROWSER_TIMEOUT_MS)
             except PlaywrightTimeout:
                 response = None  # the network did not get quiet; take what has rendered
+            if self.public_only and not public(page.url):
+                return 0, ""  # the page ended on an address that is not public: nothing is read from it
             status = response.status if response else 200
             texts = []
             for frame in page.frames:
@@ -257,6 +305,7 @@ class Fetcher:
         self._sleep, self._clock = sleep, clock
         self._last: dict[str, float] = {}
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
+        self._blocked: set[str] = set()  # origins whose robots.txt was not requested: no public address
         self.browser = browser if browser is not None else (PlaywrightBrowser() if use_browser and PlaywrightBrowser.available() else None)
         self.cache: dict[str, Source] = {}
         self._raw: dict[str, tuple] = {}  # url -> (response, fetched_url) of a source for machines
@@ -285,6 +334,8 @@ class Fetcher:
         origin = f"{parts.scheme}://{parts.netloc}"
         if origin not in self._robots:
             resp = self._request(origin + "/robots.txt")
+            if resp.error == BLOCKED:
+                self._blocked.add(origin)
             if resp.status == 200:
                 rp = urllib.robotparser.RobotFileParser()
                 rp.parse(resp.body.decode(resp.charset, errors="replace").splitlines())
@@ -322,8 +373,12 @@ class Fetcher:
         target = api_url(url) or url
         method = "api" if target != url or urllib.parse.urlsplit(target).netloc in API_HOSTS else "http"
         fetched = target if target != url else ""
+        if address.problem(target):
+            return Source(url, BLOCKED, method=method, fetched_url=fetched)
         if not self.allowed(target):
-            return Source(url, "disallowed", method=method, fetched_url=fetched)
+            parts = urllib.parse.urlsplit(target)
+            why = BLOCKED if f"{parts.scheme}://{parts.netloc}" in self._blocked else "disallowed"
+            return Source(url, why, method=method, fetched_url=fetched)
 
         resp = self._request(target)
         if resp.error.endswith("TimeoutError") and method == "api":
@@ -352,7 +407,7 @@ class Fetcher:
 
         if is_html and len(text) < MIN_CHARS:
             frame = single_frame(resp.body.decode(resp.charset, errors="replace"), resp.final_url or target)
-            if frame and self.allowed(frame):
+            if frame and not address.problem(frame) and self.allowed(frame):
                 fr = self._request(frame)
                 if fr.status == 200:
                     frame_text = page_text(fr.body, fr.ctype, fr.charset)

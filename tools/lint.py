@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lint the TAXNMY data: the writing rule, referee rules TR1-TR3 and lookalikes (TV3), and where a second source stands (TV4).
+"""Lint the TAXNMY data: the writing rule, referee rules TR1-TR3 (with only public addresses as sources, TAX-34) and lookalikes (TV3), and where a second source stands (TV4).
 
 Usage: python tools/lint.py [ROOT] [--changed FILE]
 
@@ -28,6 +28,7 @@ import jsonschema
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import address  # noqa: E402
 import guard  # noqa: E402
 import keyrule  # noqa: E402
 
@@ -102,6 +103,31 @@ def check_schema(rec: Record, validator, findings: list) -> bool:
         msg = f"{where}: {err.message}" if where else err.message
         findings.append(Finding(rec.file, rec.line(*err.absolute_path), "TR1", msg))
     return not errors
+
+
+URL_FIELDS = {"source", "url", "second_source"}  # the fields that hold a URL, wherever they are
+
+
+def _urls(node, path=()):
+    """(path, value) of every URL field in a record."""
+    if isinstance(node, dict):
+        for k, v in node.items():
+            yield from _urls(v, path + (k,))
+    elif isinstance(node, list):
+        for i, v in enumerate(node):
+            yield from _urls(v, path + (i,))
+    elif isinstance(node, str) and path and path[-1] in URL_FIELDS:
+        yield path, node
+
+
+def check_addresses(rec: Record, findings: list) -> None:
+    """TR1 (TAX-34): a source is on a public address: no IP address, no localhost, no internal name.
+    The scheme (https) is the schema's; this looks at the host. No network: what a name resolves to is
+    checked by the reader when it connects (tools/address.py)."""
+    for path, url in _urls(rec.data):
+        why = address.problem(url)
+        if why and "scheme" not in why:
+            findings.append(Finding(rec.file, rec.line(*path), "TR1", f"{'/'.join(map(str, path))}: {url}: {why}"))
 
 
 def _s2(rec, findings, path, problems):
@@ -374,9 +400,11 @@ class Dataset:
         for rec in publishers:
             if wanted(rec.file):
                 check_publisher(rec, findings)
+                check_addresses(rec, findings)
         for rec in products:
             if wanted(rec.file):
                 check_product(rec, known, findings)
+                check_addresses(rec, findings)
         check_unique(publishers, "publisher", findings, report)
         check_unique(products, "product", findings, report)
         check_lookalikes(publishers, products, findings, report)
