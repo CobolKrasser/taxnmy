@@ -492,6 +492,38 @@ from `main`), the workflow **referee-pr-testset** runs the 79 cases of the test 
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 
+### The limits of the intake (TAX-32)
+
+What one proposal and one submitter may use, in one place: `referee/intake.yaml`. The values are
+provisional and start low; change a number there, not in the code.
+
+- **Per proposal (TV8):** at most `sources_per_proposal` distinct URLs in its files.
+- **Per submitter (TV8):** at most `open_per_submitter` open proposals at the same time: 3 for an
+  unknown submitter, 10 for a known one (a pull request of it was taken in before). Its entries
+  on the parking list and the data files in its earlier open pull requests count. The workflow asks
+  GitHub who the submitter is, on `main` and without code of the pull request.
+- **Over a limit (TV9):** _reject_ with the limit as the reason, before the sources are read. It
+  never goes to the parking list.
+- **The parking list (TV9):** at most `parking_list` entries. When it is full, a new proposal
+  that would be parked is rejected instead.
+- **Known submitters first (TV10):** the referee judges their proposals first, also when the
+  parking list is judged again. Unknown submitters may use at most `unknown_share_of_day` of the day
+  ceiling, so they cannot use up the part of known ones. A pull request from a fork never reaches
+  the referee anyway.
+- **An agreed round** is a submitter under `submitters:` with values of its own (`open`, `day_cap`,
+  `pr_cap`). There is no code for a round.
+
+**Closing the intake (TV11).** TAXNMY is read from the repository: the files, a clone or a
+download. None of that goes through the intake, so closing it changes nothing for a reader. A
+maintainer closes it in one of these ways, the first being the quickest:
+
+1. *Settings → Moderation options → Interaction limits*: limit pull requests and comments to prior
+   contributors or collaborators, for a day up to six months. Undo it in the same place.
+2. *Actions → referee-pr-collect → … → Disable workflow*: pull requests can still be opened, but
+   nothing is collected, read or judged. Enable it again in the same place.
+3. `open: false` in `referee/intake.yaml`, merged to `main`: every new proposal is rejected with
+   the reason that the intake is closed.
+
 ### Running it as an Action
 
 The key is a secret of the environment `referee` (only `main`, Fred approves), so a paid measurement runs as the workflow **referee**

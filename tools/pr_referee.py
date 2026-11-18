@@ -51,6 +51,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
+import intake  # noqa: E402
 import referee  # noqa: E402
 from fetch import Fetcher, Source  # noqa: E402
 
@@ -218,13 +219,17 @@ def decided_hold(st, publisher: str, decisions: list[dict]) -> tuple[dict, dict,
     return referee.join_held(left), holds, rejected
 
 
-def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=print, decisions=None) -> list[dict]:
+def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=print, decisions=None,
+                   submitter: "intake.Submitter | None" = None, limits: dict | None = None) -> list[dict]:
     """Lint, gate and sources for each proposal. Each item gets an outcome, or `pending` with the
     message for the referee and the rules it is asked. The decisions of a person (DECISIONS in
-    `data_root`) take away or settle what code holds a proposal on."""
+    `data_root`) take away or settle what code holds a proposal on. A proposal over a limit of the
+    intake (TAX-32: of the proposal, or of its `submitter`) is rejected before its sources are read."""
     stager = referee.Stager(data_root)
     if decisions is None:
         decisions = load_decisions(data_root / DECISIONS)
+    limits = limits or intake.load(data_root)
+    refused = intake.refusals(proposals, submitter, limits, load_parked(data_root / "referee/parked.yaml"))
     items = []
     for p in proposals:
         st = stager.stage_files(p["files"], removed=p.get("removed", ()), context=p.get("context"))
@@ -232,9 +237,13 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 "case": p.get("case"), "old": st.old,
                 "lint": [str(f) for f in st.findings], "sources": [], "decided": {}, "ai_rules": [], "message": "", "held": {},
                 "holds": {}, "outcome": "", "rule": "", "reason": "", "by": "", "waits_for": "", "cost": 0.0,
-                "verdict": {}, "checked": {}}
+                "verdict": {}, "checked": {},
+                "submitter": p.get("submitter", submitter.login if submitter else ""),
+                "known": p.get("known", submitter.known if submitter else True)}
         errors = [f for f in st.findings if f.level == "error"]
-        if errors:
+        if item["id"] in refused:
+            settled(item, "reject", *refused[item["id"]])
+        elif errors:
             settled(item, "reject", errors[0].rule, errors[0].message)
         elif not referee.product_file(p["files"])[0]:
             # A publisher file alone: nothing for the referee, but code may hold it (TV3, TV5), and
@@ -307,9 +316,34 @@ def spent_on(out: Path, pr: int | None, day: str) -> tuple[float, float]:
     return on_pr, on_day
 
 
-def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None) -> Path | None:
-    """One batch for the pending items, within the ceilings. Writes a run directory and settles every item."""
-    pending = [i for i in items if i["outcome"] == "pending"]
+def spent_today_by(out: Path, day: str) -> dict:
+    """What the referee spent today on proposals of unknown submitters ("unknown") and per submitter
+    (by login), from the results of the runs in `out` (TAX-32). A result without a submitter is
+    counted as known: before TAX-32 only maintainers reached the referee."""
+    by: dict = {"unknown": 0.0}
+    for meta in out.rglob("run.json"):
+        info = json.loads(meta.read_text(encoding="utf-8"))
+        results = meta.parent / "results.jsonl"
+        if info.get("condition") != "pr" or str(info.get("started", ""))[:8] != day or not results.is_file():
+            continue
+        for line in results.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            c = row.get("cost", 0.0)
+            if row.get("known") is False:
+                by["unknown"] += c
+            if row.get("submitter"):
+                by[row["submitter"]] = by.get(row["submitter"], 0.0) + c
+    return by
+
+
+def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None, limits: dict | None = None) -> Path | None:
+    """One batch for the pending items, within the ceilings. Writes a run directory and settles every item.
+    TV10 (TAX-32): known submitters first; unknown submitters only within their part of the day
+    ceiling, so they cannot use up the part of known ones. A submitter with values of its own (an
+    agreed round) has its own day and pull-request ceiling instead of the shared ones."""
+    pending = intake.first_known([i for i in items if i["outcome"] == "pending"])
     if not pending:
         return None
     if not args.live:
@@ -322,7 +356,16 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None)
         raise SystemExit(f"No price for model {args.model!r} in {args.prices}")
     before = referee.spent_before(out)
     on_pr, on_day = spent_on(out, args.pr, now.strftime("%Y%m%d"))
-    caps = {"budget": args.budget - before, "pull request": args.pr_cap - on_pr, "day": args.day_cap - on_day}
+    limits = limits or intake.load()
+    by = spent_today_by(out, now.strftime("%Y%m%d"))
+    logins = {i.get("submitter") for i in pending}
+    mine = intake.own(limits, next(iter(logins))) if len(logins) == 1 and None not in logins else {}
+    pr_cap = float(mine.get("pr_cap", args.pr_cap))
+    if "day_cap" in mine:  # its own ceiling, apart from the shared one
+        day_left = float(mine["day_cap"]) - by.get(next(iter(logins)), 0.0)
+    else:
+        day_left = args.day_cap - on_day
+    caps = {"budget": args.budget - before, "pull request": pr_cap - on_pr, "day": day_left}
     tightest = min(caps, key=caps.get)
     log(f"budget ${args.budget:.2f} (spent ${before:.4f}); pull request ${args.pr_cap:.2f} (spent ${on_pr:.4f}); "
         f"day ${args.day_cap:.2f} (spent ${on_day:.4f}): at most ${max(caps[tightest], 0):.4f} now, set by the {tightest}")
@@ -353,17 +396,30 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None)
         "budget": args.budget, "pr_cap": args.pr_cap, "day_cap": args.day_cap, "spent_before": round(before, 6),
         "max_tokens": args.max_tokens, "started": stamp, "proposals": [i["id"] for i in pending],
     }, indent=2) + "\n", encoding="utf-8")
-    answers, left_out = referee.batch_rounds(client, budget, requests, log=log, sleep=sleep, wait=args.wait)
+    known = [r for r in requests if by_id[r[0]].get("known", True)]
+    unknown = [r for r in requests if not by_id[r[0]].get("known", True)]
+    answers, left_out = referee.batch_rounds(client, budget, known, log=log, sleep=sleep, wait=args.wait) if known else ({}, [])
+    if unknown:
+        share = limits["unknown_share_of_day"] * args.day_cap - by["unknown"]
+        part = referee.Budget(budget.spent + max(min(budget.left, share), 0), budget.spent, args.model, prices,
+                              args.max_tokens, batch=True)
+        log(f"unknown submitters: at most ${max(min(budget.left, share), 0):.4f} "
+            f"({limits['unknown_share_of_day']:.0%} of the day ceiling, ${by['unknown']:.4f} spent today)")
+        more, out_too = referee.batch_rounds(client, part, unknown, log=log, sleep=sleep, wait=args.wait)
+        answers.update(more)
+        left_out += out_too
     for cid, answer in answers.items():
         settle_answer(by_id[cid], answer, schema)
     for cid in left_out:
         item = by_id[cid]
-        settled(item, "parked", ", ".join(item["ai_rules"]), f"the {tightest} ceiling leaves no room for the referee")
+        room = f"the {tightest} ceiling" if item.get("known", True) else "the part of the day ceiling for unknown submitters"
+        settled(item, "parked", ", ".join(item["ai_rules"]), f"{room} leaves no room for the referee")
     log(f"{len(pending)} for the referee: {len(answers)} answered, {len(left_out)} parked for the ceiling")
     with (run_dir / "results.jsonl").open("w", encoding="utf-8") as jsonl:
         for item in pending:
             jsonl.write(json.dumps({k: item[k] for k in ("id", "key", "outcome", "rule", "reason", "by", "verdict",
-                                                         "checked", "cost", "usage", "case") if k in item},
+                                                         "checked", "cost", "usage", "case", "submitter", "known")
+                                    if k in item},
                                    ensure_ascii=False) + "\n")
     return run_dir
 
@@ -450,7 +506,7 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
     out_dir.mkdir(parents=True, exist_ok=True)
     cost = sum(i.get("cost", 0.0) for i in items)
     keep = ("id", "key", "publisher", "outcome", "rule", "reason", "by", "waits_for", "holds", "files", "old", "case",
-            "duplicate_of", "cost")
+            "duplicate_of", "cost", "submitter", "known")
     data = {"version": 1, "pr": pr, "head_sha": head_sha, "run": run_dir.name if run_dir else "",
             "counts": counts(items), "cost": round(cost, 6), "verdicts": [{k: i.get(k) for k in keep} for i in items]}
     (out_dir / "verdicts.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -507,7 +563,7 @@ def with_terms(e: dict, terms: dict) -> dict:
     else:
         out["lapses"] = (since + timedelta(days=waits["lapses_after"])).isoformat()
     out["pr"] = e.get("pr")
-    out.update({k: e[k] for k in ("fingerprint", "files") if k in e})
+    out.update({k: e[k] for k in ("submitter", "known", "fingerprint", "files") if k in e})
     return out
 
 
@@ -543,6 +599,9 @@ def park_entry(v: dict, day: str, old: dict | None = None) -> dict:
     e = {"key": v["key"], "path": v["id"], "publisher": v.get("publisher") or "", "waits_for": v.get("waits_for") or "event",
          "rule": v["rule"], "reason": v["reason"], "since": old.get("since") or day, "checked": day,
          "pr": old.get("pr", v.get("pr")), "fingerprint": fingerprint(v["files"]), "files": v["files"]}
+    if v.get("submitter") or old.get("submitter"):  # TAX-32: whose it is, for the limit per submitter
+        e["submitter"] = old.get("submitter") or v["submitter"]
+        e["known"] = bool(old.get("known", v.get("known")))
     if e["waits_for"] == "decision" and v.get("holds"):
         e["holds"] = v["holds"]
     if old.get("kind"):
@@ -779,6 +838,10 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--fork", action="store_true", help="a pull request from a fork: judged by code only, the rest parked")
     g.add_argument("--no-browser", action="store_true")
     g.add_argument("--output", default="gated/gated.json")
+    g.add_argument("--submitter", help="the account of the pull request (TAX-32), as GitHub gives it")
+    g.add_argument("--known", choices=("true", "false"), default="false",
+                   help="whether a pull request of the submitter was taken in before")
+    g.add_argument("--open-before", type=int, default=0, help="its proposals in earlier open pull requests")
     j = sub.add_parser("judge", help="the key: one batch for what the gate left")
     j.add_argument("--gated", required=True)
     j.add_argument("--output", default="verdicts", help="directory for verdicts.json and comment.md")
@@ -816,9 +879,11 @@ def main(argv: list[str] | None = None) -> int:
             proposals, pr, head = group(data["files"]), data["pr"], data["head_sha"]
         else:
             proposals, pr, head = testset_proposals(Path(args.testset)), None, ""
+        submitter = intake.Submitter(args.submitter, args.known == "true", args.open_before) if args.submitter else None
+        limits = intake.load()
         fetcher = Fetcher(use_browser=not args.no_browser, log=print)
         try:
-            items = gate_proposals(proposals, fetcher)
+            items = gate_proposals(proposals, fetcher, submitter=submitter, limits=limits)
         finally:
             fetcher.close()
         pending = sum(i["outcome"] == "pending" for i in items)
@@ -832,6 +897,7 @@ def main(argv: list[str] | None = None) -> int:
                 else "Provisional: what code settled. The rest waits for the referee.")
         park_pending(provisional, "a pull request from a fork is judged by code only" if args.fork
                      else "waits for the referee")
+        intake.cap_parking(provisional, len(load_parked()), limits)
         write_verdicts(provisional, out.parent / "provisional", pr, head, note)
         print(f"{len(items)} proposals: {len(items) - pending} settled by code, {pending} for the referee")
         if os.environ.get("GITHUB_OUTPUT"):
@@ -841,6 +907,7 @@ def main(argv: list[str] | None = None) -> int:
         data = json.loads(Path(args.gated).read_text(encoding="utf-8"))
         items, args.pr = data["items"], data["pr"]
         run_dir = judge(items, args)
+        intake.cap_parking(items, len(load_parked()), intake.load())
         out = Path(args.output)
         write_verdicts(items, out, data["pr"], data["head_sha"], run_dir=run_dir)
         if any(i.get("case") for i in items):
@@ -891,7 +958,8 @@ def reprocess(args, fetcher=None, client=None, data_root: Path = REPO, now=None,
     if todo:
         fetcher = fetcher or Fetcher(use_browser=not getattr(args, "no_browser", False), log=log)
         try:
-            items = gate_proposals([{"id": e["path"], "files": e["files"]} for e in todo], fetcher, data_root, log)
+            items = gate_proposals([{"id": e["path"], "files": e["files"], "submitter": e.get("submitter", ""),
+                                     "known": e.get("known", False)} for e in todo], fetcher, data_root, log)
         finally:
             if hasattr(fetcher, "close"):
                 fetcher.close()
@@ -901,7 +969,7 @@ def reprocess(args, fetcher=None, client=None, data_root: Path = REPO, now=None,
         elif item["outcome"] == "pending" and (closed := unread(item)):
             settled(item, "parked", ", ".join(item["ai_rules"]), "a source is still not read: " + ", ".join(closed))
     args.pr = None
-    run_dir = judge(items, args, client=client, now=now, log=log, sleep=sleep)
+    run_dir = judge(items, args, client=client, now=now, log=log, sleep=sleep, limits=intake.load(data_root))
     by_path = {e["path"]: e for e in todo}
     keep = list(rest)
     for item in items:

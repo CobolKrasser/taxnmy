@@ -69,17 +69,35 @@ jobs:
             exit 1
           fi
           echo "number=${number}" >> "$GITHUB_OUTPUT"
+      - name: Who proposes (TAX-32)
+        id: who
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ steps.pr.outputs.number }}
+        run: |
+          set -euo pipefail
+          # From GitHub, not from the pull request: its account, whether a pull request of it was
+          # taken in before (known), and how many data files its earlier open pull requests hold.
+          author="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${NUMBER}" --jq .user.login)"
+          merged="$(gh api -X GET search/issues -f q="repo:${GITHUB_REPOSITORY} is:pr is:merged author:${author}" --jq .total_count)"
+          before="$(gh pr list -R "$GITHUB_REPOSITORY" --author "$author" --state open --limit 200 --json number,files \
+            --jq "[.[] | select(.number < ${NUMBER}) | .files[].path | select(test(\"^(products|publishers)/\"))] | length")"
+          { echo "author=${author}"; echo "known=$([ "$merged" -gt 0 ] && echo true || echo false)"; echo "before=${before}"; } >> "$GITHUB_OUTPUT"
       - name: Lint, gate and sources (no key)
         id: gate
         env:
           FORK: ${{ github.event.workflow_run.head_repository.full_name != github.repository }}
           INCOMING: ${{ runner.temp }}/incoming
+          AUTHOR: ${{ steps.who.outputs.author }}
+          KNOWN: ${{ steps.who.outputs.known }}
+          BEFORE: ${{ steps.who.outputs.before }}
         run: |
           set -euo pipefail
+          who=(--submitter "$AUTHOR" --known "$KNOWN" --open-before "$BEFORE")
           if [ "$FORK" = "true" ]; then
-            python tools/pr_referee.py gate --proposal "$INCOMING/proposal.json" --fork --output gated/gated.json
+            python tools/pr_referee.py gate --proposal "$INCOMING/proposal.json" --fork "${who[@]}" --output gated/gated.json
           else
-            python tools/pr_referee.py gate --proposal "$INCOMING/proposal.json" --output gated/gated.json
+            python tools/pr_referee.py gate --proposal "$INCOMING/proposal.json" "${who[@]}" --output gated/gated.json
           fi
           cat gated/provisional/comment.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
