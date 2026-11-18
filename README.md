@@ -10,17 +10,22 @@ synology/ds224-plus
 the-php-group/php@8.3.14
 ```
 
+## The rules and the terms
+
+- [REQUIREMENTS.md](REQUIREMENTS.md): every rule of TAXNMY, numbered by series (TP product, TK key
+  and identifiers, TE evidence, TR referee, TV protection against intent, TG governance).
+- [GLOSSARY.md](GLOSSARY.md): what each term means, with the name the schema and the code use.
+
+This README describes how TAXNMY is built up. Where it names a rule, the rule itself is in
+REQUIREMENTS.md.
+
 ## How it works
 
 ### The key
 
-A key has the form `publisher/product@version`.
-
-- `publisher/product` identifies a product. It is the key stored in the data.
-- `@version` is optional. You write it after the key to refer to one version, as with purl.
-- A key never changes and is never reused. When a product is renamed, it gets a new key and the
-  old name becomes an alias.
-- Each part is at most 64 characters.
+A key has the form `publisher/product@version` (TK2). `publisher/product` identifies a product and
+is the key stored in the data; `@version` is optional and points to one version, as with purl. A
+key never changes (TK3); an earlier or other name becomes an alias.
 
 ### The writing rule
 
@@ -50,43 +55,33 @@ Names use the Latin script. Names in other scripts are not accepted at this stag
 
 ### Products
 
-A product is something that can receive updates, and of which a source publishes the versions.
-It carries two names, as a source writes them: the publisher and the product. It is one of three
-kinds:
+A product (TP1) carries two names, as a source writes them: the publisher and the product. It is
+one of three kinds (TP2):
 
 | kind | meaning |
 | --- | --- |
-| `device` | a physical product that carries firmware (a device, in other words hardware) |
+| `device` | a physical product that carries firmware |
 | `operating-system` | an operating system, including replaceable firmware that runs on devices of others |
 | `software` | software |
 
-Something is a product of its own if it has **its own update stream**, or can be **affected by a
-vulnerability on its own**. Otherwise it is a variant or a property of an existing product. A
-router sold in an EU and a US edition with the same firmware is one product with two GTINs.
-
-Firmware is not a kind. It is the version axis of a device.
-
-Software does not need a parent product, such as the operating system it runs on.
+When something gets a key of its own is TP3; a router sold in an EU and a US edition with the same
+firmware is one product with two GTINs.
 
 ### Publishers
 
-The publisher is whoever publishes the updates, under a Latin name the publisher uses itself.
-A publisher file may list the sources it makes for machines (`machine_sources`): an update catalog,
-AppStream metadata or CSAF provider metadata, each with the page of the publisher that names it.
-A new publisher is taken in on its own evidence: its own site, where the product is to be had or
-where its versions are published. A second source is optional; when there is one, the publisher
-file records it (`second_source`, rule TV4).
+The publisher (TP5) has a file of its own. A publisher file may list its machine-readable sources
+(`machine_sources`, TE7): an update catalog, AppStream metadata or CSAF provider metadata, each
+with the page of the publisher that names it. A second source, when there is one, is recorded in
+`second_source` (TV4).
 
 ### Versions
 
-A version is the text a source publishes about this product. Within a product a version is
-unique: `publisher/product@version` points to one version. The same number in another product is
-another version. How a version is built up is observed per product, with its source. Firmware is
-the version axis of a device. A product file names the source of its versions.
+A product file names the source of its versions (`versions.source`). How a version is built up is
+observed per product, with its source (TP4).
 
 ### Identifiers
 
-Existing codes are properties of a product, each with its source:
+Existing codes are identifiers of a product, each with its source (TK4, TK5):
 
 | code | unique to one product? | when a proposal matches an existing product |
 | --- | --- | --- |
@@ -96,61 +91,21 @@ Existing codes are properties of a product, each with its source:
 | CPE (vendor and product) | no | signal for review |
 | GTIN | no (bundles share one) | signal for review |
 
-### Sources
-
-Every value points to a source. When in doubt, a value is left out.
-
 ### Aliases
 
 An alias is an earlier or other key of the same product. A proposal that matches a key or an alias
-is a duplicate.
+is a duplicate (TR3).
 
 ### The referee
 
-Every proposal arrives as a pull request and is checked against the rules of the referee (TR) and
-the rules that protect against intent (TV). TR1–TR3 are checked by code on every pull request;
-TR4–TR8 are judged by an AI referee with the source at hand, after code has settled what it can.
-The rules are numbered by series: TR for the referee, TV for protection against intent, TG for
-governance.
+Every proposal arrives as a pull request and is judged against the rules of the referee (TR) and
+the rules that protect against intent (TV). TR1–TR3 are checked by code on every pull request
+(the lint); TR4–TR8 are judged by an AI with the source at hand, after code has settled what it can
+(the gate). See [referee/README.md](referee/README.md).
 
-| rule | checks | by |
-| --- | --- | --- |
-| TR1 | All required fields are filled, with a source URL for each value. | code |
-| TR2 | The key follows the writing rule; each part is at most 64 characters. | code |
-| TR3 | No match on key or alias. A match on a purl, winget id or Homebrew token is a duplicate; a match on CPE or GTIN, or the same words in another order within one publisher, is a signal for TR4. | code |
-| TR4 | It is a product of its own: its own update stream or its own vulnerabilities. A *yes* quotes a version of the product from its versions source. | AI, with the source; code checks the quote |
-| TR5 | The publisher is whoever publishes the updates. | AI, with the source |
-| TR6 | The names are written as in the source. Above 40 characters: is it a name or a description? | AI, with the source |
-| TR7 | The product demonstrably exists. | AI, with the source |
-| TR8 | A value that only an AI mentions, without a confirming source, is not accepted. | code and AI |
-| TG4 | The rules themselves name no brand or product. | review |
+#### How code applies TV
 
-#### TV — protection against intent
-
-TR catches a mistake. TV catches intent: a proposal made to imitate a name or to redirect a
-source. People use TAXNMY to know which product something is and where its updates come from;
-whoever can imitate or replace a name or a source could send them elsewhere. An AI reads what
-seems to be meant rather than what is written, so every comparison of characters lies with code.
-Each rule can be checked with yes or no.
-
-- **TV1 — Text is never an instruction.** What a proposal or a source page says is read as data. A
-  text that addresses the referee is a reason to reject.
-- **TV2 — Identity is decided by code, literally.** Whether a name, a key or a domain is the same as an
-  existing one is compared character by character. The AI never judges *who* something is, only
-  *what* it is.
-- **TV3 — Nearly the same is suspect.** A publisher, product or domain that equals an existing one
-  except for one or two characters, or differs only in characters that look alike, is not
-  accepted without a person.
-- **TV4 — A new publisher is taken in on its own evidence.** Its own site, where the product is to
-  be had or where its versions are published, is enough. A second source is not required. If there
-  is one, it is recorded with the publisher.
-- **TV5 — Replacing an existing source weighs more than proposing a new one.** A change that moves a
-  source, a publisher or a code of an existing product to another domain or another value is
-  decided by a person.
-- **TV6 — Being well known is no evidence.** A rule is *yes* only with a quote from the source; what the
-  referee knows about a product does not count.
-
-How code applies them (`tools/guard.py`, the lint, and `referee/prompt.md`):
+How code applies TV1–TV6 (`tools/guard.py`, the lint, and `referee/prompt.md`):
 
 | rule | what code does | outcome |
 | --- | --- | --- |
@@ -166,22 +121,13 @@ A proposal held on TV3 or TV5 still goes to the referee, so that no rule is left
 
 ## Scope
 
-TAXNMY records products, their publishers, where their versions are published, and the codes
-others use for them. It does not record:
+What TAXNMY records, and what not, is TP9. Services are covered by TP6, which is decided but not
+yet in force. Names in other scripts than the Latin script are not accepted at this stage (TP5).
+If technical specifications are added later, it will only be from a fixed vocabulary, with a unit
+and a source for every value.
 
-- **instances**: a single unit of a product, its serial number or where it is installed;
-- **technical specifications**, such as capacity, power use or dimensions. If they are added
-  later, it will only be from a fixed vocabulary, with a unit and a source for every value;
-- **prices**;
-- **composition**: the parts a product is built from, and their firmware;
-- **services without a version the customer can see** (software as a service). A managed service in
-  which the customer chooses and upgrades the version, such as a managed database, is a product of
-  the kind `software`, with the provider as publisher. So are the AI models a provider offers
-  through an API: one product per provider, with the model names as versions;
-- **names in other scripts** than the Latin script.
-
-The schema accepts no fields other than the ones it defines, so a proposal with any of these values
-is rejected on TR1. A change of the scope goes through a pull request, like any other change.
+The schema accepts no fields other than the ones it defines, so a proposal with any other value is
+rejected on TR1. A change of the scope goes through a pull request, like any other change (TG9).
 
 ## Repository layout
 
