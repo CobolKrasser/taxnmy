@@ -418,23 +418,34 @@ class Stager:
         return "\n\n".join(parts)
 
 
-def held_by_code(files: dict, findings: list, old: dict) -> dict:
-    """TV3 and TV5 (tools/guard.py): rule -> the reason code holds the proposal for a person. TV3
+def held_items(files: dict, findings: list, old: dict) -> list[tuple[str, str]]:
+    """TV3 and TV5 (tools/guard.py), one (rule, reason) per thing code holds the proposal on. TV3
     from the lookalike signals of the lint; TV5 from what a change moves to another domain or value."""
-    held = {}
-    near = [f"{f.file}: {f.message}" for f in findings if f.rule == "TV3"]
-    if near:
-        held["TV3"] = "; ".join(near)
-    moved = []
+    items = [("TV3", f"{f.file}: {f.message}") for f in findings if f.rule == "TV3"]
     for rel, text in old.items():
         try:
             before, after = yaml.safe_load(text), yaml.safe_load(files[rel])
         except yaml.YAMLError:
             continue
-        moved += [f"{rel}: {m}" for m in guard.replaced(before, after)]
+        items += [("TV5", f"{rel}: {m}") for m in guard.replaced(before, after)]
+    return items
+
+
+def join_held(items: list[tuple[str, str]]) -> dict:
+    """rule -> the reason code holds the proposal for a person, from `held_items`."""
+    held = {}
+    near = [text for rule, text in items if rule == "TV3"]
+    if near:
+        held["TV3"] = "; ".join(near)
+    moved = [text for rule, text in items if rule == "TV5"]
     if moved:
         held["TV5"] = "a change to an existing file, decided by a person: " + "; ".join(moved)
     return held
+
+
+def held_by_code(files: dict, findings: list, old: dict) -> dict:
+    """TV3 and TV5: rule -> the reason code holds the proposal for a person."""
+    return join_held(held_items(files, findings, old))
 
 
 def hold(staged: "Staged", sources: list | None = None) -> dict:

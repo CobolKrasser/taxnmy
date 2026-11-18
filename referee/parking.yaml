@@ -1,0 +1,20 @@
+# The terms of the parking list (TAX-29). Provisional: change a number here, not in the code.
+# Every parked proposal waits for one of three things; each has an owner and a term in days,
+# counted from the day it was first parked (`since`). After its term an entry lapses: it leaves
+# the list and its pull request hears why. The submitter may propose it again.
+version: 1
+waits_for:
+  event:            # a source is closed or disturbed, or a ceiling or a fork left it unjudged
+    owner: referee  # judged again on a fixed rhythm; the AI only when the sources are read now
+    lapses_after: 90
+  better-proposal:  # the sources were read and do not show what they must show
+    owner: submitter  # not judged again until the proposal changes
+    lapses_after: 90
+  decision:         # code held it for a person (TV3, TV5)
+    owner: person
+    lapses_after: 30
+# Kinds of decision that never lapse, because something is already in TAX: they get a decision
+# within this many days (`decide_by`).
+decide_within:
+  collision: 14     # two parties claim the same product
+  audit: 14         # a finding of an audit on a product in TAX

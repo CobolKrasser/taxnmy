@@ -24,7 +24,10 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
               a ceiling per pull request, per day and in all.
     apply     locally, on the branch of the pull request: parked files move to the parking list,
               rejected ones are taken out.
-    parked    locally: judge the parking list again (one command).
+    parked    judge the parking list again (one command; weekly by workflow referee-parked): what
+              is past its term lapses, the rest is judged again as far as its reason allows.
+    decide    a person decides on a publisher that code held (TV3, TV5); kept in referee/decisions.yaml.
+    waiting   what waits for a decision of a person, per publisher, as JSON.
     testset   the 77 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
@@ -33,13 +36,14 @@ No step imports or runs code from a pull request; they read YAML and JSON only.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import subprocess
 import sys
 from dataclasses import asdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import yaml
@@ -51,6 +55,16 @@ from fetch import Fetcher, Source  # noqa: E402
 
 REPO = referee.REPO
 PARKED = REPO / "referee/parked.yaml"
+TERMS = "referee/parking.yaml"  # the terms of the parking list, relative to a data root
+DECISIONS = "referee/decisions.yaml"  # the decisions of a person per publisher
+# What a parked proposal waits for (TR10, decided 18 November 2026), and how the comment says it.
+WAITS_FOR = {
+    "event": "a source could not be read, or a ceiling or a fork left it unjudged. The referee tries again "
+             "weekly; nothing to do for you",
+    "better-proposal": "the sources were read and do not show what they must. Improve the source or the "
+                       "proposal and propose it again",
+    "decision": "code held it for a person (TV3, TV5), who decides per publisher",
+}
 DATA_PATH = re.compile(r"(products/[a-z0-9-]+/[a-z0-9-]+|publishers/[a-z0-9-]+)\.yaml")
 MAX_FILES = 2000  # per pull request; a larger one is split
 MAX_BYTES = 64 * 1024  # per file
@@ -139,21 +153,85 @@ def key_of(files: dict) -> str:
     return ""
 
 
-def settled(item: dict, outcome: str, rule: str = "", reason: str = "", by: str = "code") -> dict:
-    item.update(outcome=outcome, rule=rule, reason=reason, by=by)
+def settled(item: dict, outcome: str, rule: str = "", reason: str = "", by: str = "code", waits: str = "event") -> dict:
+    """Settle an item. A parked one waits for exactly one thing: a decision when code holds it,
+    otherwise `waits` (an event, unless the caller knows the sources were read)."""
+    item.update(outcome=outcome, rule=rule, reason=reason, by=by,
+                waits_for=("decision" if item.get("held") else waits) if outcome == "parked" else "")
     return item
 
 
-def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=print) -> list[dict]:
+def unread(item: dict) -> list[str]:
+    """The sources of an item that the reader could not read, and for which nothing was found instead."""
+    sources = [Source(**s) for s in item.get("sources") or []]
+    found = {s.instead_of for s in sources if s.instead_of and gate.read(s)}
+    return [s.url for s in sources if not s.instead_of and not gate.read(s) and s.url not in found]
+
+
+# --------------------------------------------------------------------------- decisions of a person per publisher
+
+def load_decisions(path: Path) -> list[dict]:
+    if not path.is_file():
+        return []
+    return list((yaml.safe_load(path.read_text(encoding="utf-8")) or {}).get("decisions") or [])
+
+
+def subject(text: str) -> str:
+    """What a hold is about, without the file it was found in: the same for every proposal of the
+    publisher that is held for the same reason."""
+    text = re.sub(r"^[a-z0-9/._-]+\.yaml: ", "", text)
+    text = re.sub(r" \([^()]*\.yaml[^()]*\)", "", text)
+    return text.removesuffix("; a person decides")
+
+
+def publisher_of(files: dict) -> str:
+    """The publisher key of a proposal: the publisher of its product, or the key of its publisher file."""
+    rel, data = referee.product_file(files)
+    if rel:
+        pub = data.get("publisher")
+        return pub if isinstance(pub, str) else ""
+    for rel, text in files.items():
+        try:
+            data = yaml.safe_load(text)
+        except yaml.YAMLError:
+            continue
+        if isinstance(data, dict) and isinstance(data.get("key"), str):
+            return data["key"]
+    return ""
+
+
+def decided_hold(st, publisher: str, decisions: list[dict]) -> tuple[dict, dict, tuple | None]:
+    """What code holds the staged proposal on, after the decisions of a person on its publisher:
+    (held, holds, rejected). An approved reason no longer holds it; a rejected one rejects it
+    (rejected = (rule, reason)). `holds` is rule -> the subjects still waiting for a person."""
+    mine = {(d.get("rule"), d.get("subject")): d for d in decisions if d.get("publisher") == publisher}
+    left, holds, rejected = [], {}, None
+    for rule, text in referee.held_items(st.files, st.findings, st.old):
+        d = mine.get((rule, subject(text)))
+        if d is None:
+            left.append((rule, text))
+            if subject(text) not in holds.setdefault(rule, []):
+                holds[rule].append(subject(text))
+        elif d.get("decision") == "reject" and rejected is None:
+            rejected = (rule, f"a person decided on {d.get('date')} about {publisher}: {subject(text)}: {d.get('reason', '')}")
+    return referee.join_held(left), holds, rejected
+
+
+def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=print, decisions=None) -> list[dict]:
     """Lint, gate and sources for each proposal. Each item gets an outcome, or `pending` with the
-    message for the referee and the rules it is asked."""
+    message for the referee and the rules it is asked. The decisions of a person (DECISIONS in
+    `data_root`) take away or settle what code holds a proposal on."""
     stager = referee.Stager(data_root)
+    if decisions is None:
+        decisions = load_decisions(data_root / DECISIONS)
     items = []
     for p in proposals:
         st = stager.stage_files(p["files"], removed=p.get("removed", ()), context=p.get("context"))
-        item = {"id": p["id"], "key": key_of(p["files"]), "files": p["files"], "case": p.get("case"), "old": st.old,
+        item = {"id": p["id"], "key": key_of(p["files"]), "publisher": publisher_of(p["files"]), "files": p["files"],
+                "case": p.get("case"), "old": st.old,
                 "lint": [str(f) for f in st.findings], "sources": [], "decided": {}, "ai_rules": [], "message": "", "held": {},
-                "outcome": "", "rule": "", "reason": "", "by": "", "cost": 0.0, "verdict": {}, "checked": {}}
+                "holds": {}, "outcome": "", "rule": "", "reason": "", "by": "", "waits_for": "", "cost": 0.0,
+                "verdict": {}, "checked": {}}
         errors = [f for f in st.findings if f.level == "error"]
         if errors:
             settled(item, "reject", errors[0].rule, errors[0].message)
@@ -162,9 +240,11 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             # a second source it gives must pass (TV4).
             sources = [fetcher.fetch(u, "") for u in referee.case_urls(st)]
             item["sources"] = [asdict(s) for s in sources]
-            item["held"] = referee.hold(st, sources)
+            item["held"], item["holds"], refused = decided_hold(st, item["publisher"], decisions)
             if wrong := referee.second_source_fault(st, sources):
                 settled(item, "reject", "TV4", wrong)
+            elif refused:
+                settled(item, "reject", *refused, by="person")
             elif item["held"]:
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
             else:
@@ -185,8 +265,10 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 settled(item, "reject", "TV4", wrong)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
+            elif (decision := decided_hold(st, item["publisher"], decisions))[2]:
+                settled(item, "reject", *decision[2], by="person")
             else:
-                item["held"] = referee.hold(st, sources)
+                item["held"], item["holds"], _ = decision
                 item["ai_rules"] = [r for r in referee.RULES if r not in decided]
                 item["message"] = referee.build_message(st, "fetched", sources, decided)
                 item["outcome"] = "pending"
@@ -311,7 +393,9 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     if outcome == "human":
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         reasons = [n for n in notes] + [f"{r}: {checked[r]['reason']}" for r in doubts if not any(n.startswith(r) for n in notes)]
-        return settled(item, "parked", ", ".join(doubts), "; ".join(reasons), "ai")
+        # Doubt on sources that were all read: the proposal must get better. Otherwise an event.
+        return settled(item, "parked", ", ".join(doubts), "; ".join(reasons), "ai",
+                       "event" if unread(item) else "better-proposal")
     if outcome == "alias":
         item["duplicate_of"] = verdict.get("duplicate_of")
         return settled(item, "alias", rule, f"the same product as {verdict.get('duplicate_of')}: {checked[rule]['reason']}", "ai")
@@ -336,10 +420,14 @@ def comment(items: list[dict], pr: int | None, cost: float = 0.0, note: str = ""
     lines += ["| file | outcome | rule | by | reason |", "| --- | --- | --- | --- | --- |"]
     for i in items:
         reason = re.sub(r"\s+", " ", i["reason"]).replace("|", "\\|")[:300]
-        lines.append(f"| `{i['id']}` | {i['outcome']} | {i['rule'] or '-'} | {i['by']} | {reason or '-'} |")
-    lines += ["", "*Parked* means not taken in now: it goes to `referee/parked.yaml` and is judged again later "
-              "(`python tools/pr_referee.py parked --live`). To take the outcome over on the branch: "
-              "`python tools/pr_referee.py apply verdicts.json` with the artifact of this run.", ""]
+        out = f"parked, waits for {i.get('waits_for') or 'event'}" if i["outcome"] == "parked" else i["outcome"]
+        lines.append(f"| `{i['id']}` | {out} | {i['rule'] or '-'} | {i['by']} | {reason or '-'} |")
+    lines += ["", "*Parked* means not taken in now: it goes to `referee/parked.yaml` and waits for one thing:", ""]
+    terms = load_terms()["waits_for"]
+    lines += [f"- waits for *{w}*: {text}. It lapses after {terms[w]['lapses_after']} days." for w, text in WAITS_FOR.items()]
+    lines += ["", "A proposal that lapses leaves the list; you may propose it again. The list is judged again "
+              "with `python tools/pr_referee.py parked --live`. To take the outcome over on "
+              "the branch: `python tools/pr_referee.py apply verdicts.json` with the artifact of this run.", ""]
     return "\n".join(lines)
 
 
@@ -347,7 +435,8 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
                    run_dir: Path | None = None) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     cost = sum(i.get("cost", 0.0) for i in items)
-    keep = ("id", "key", "outcome", "rule", "reason", "by", "files", "old", "case", "duplicate_of", "cost")
+    keep = ("id", "key", "publisher", "outcome", "rule", "reason", "by", "waits_for", "holds", "files", "old", "case",
+            "duplicate_of", "cost")
     data = {"version": 1, "pr": pr, "head_sha": head_sha, "run": run_dir.name if run_dir else "",
             "counts": counts(items), "cost": round(cost, 6), "verdicts": [{k: i.get(k) for k in keep} for i in items]}
     (out_dir / "verdicts.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -357,14 +446,69 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
 
 # --------------------------------------------------------------------------- the parking list
 
+def load_terms(root: Path = REPO) -> dict:
+    """The terms of the parking list (TERMS): in `root`, else those of the repository."""
+    path = root / TERMS if (root / TERMS).is_file() else REPO / TERMS
+    return yaml.safe_load(path.read_text(encoding="utf-8"))
+
+
 def load_parked(path: Path = PARKED) -> list[dict]:
     if not path.is_file():
         return []
     data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-    return list(data.get("parked") or [])
+    entries = list(data.get("parked") or [])
+    for e in entries:  # version 1 had one date and no reason to wait
+        e.setdefault("since", e.pop("date", None))
+        e.setdefault("waits_for", "event")
+    return entries
 
 
-def save_parked(entries: list[dict], path: Path = PARKED) -> None:
+def fingerprint(files: dict) -> str:
+    """The files of a proposal as one short hash: a proposal that changed has another."""
+    return hashlib.sha256(json.dumps(files, sort_keys=True).encode("utf-8")).hexdigest()[:16]
+
+
+def _day(text) -> date:
+    return text if isinstance(text, date) else date.fromisoformat(str(text))
+
+
+def with_terms(e: dict, terms: dict) -> dict:
+    """The entry with its owner and its last day: `lapses`, or `decide_by` for a kind that never lapses."""
+    e = {**e, "waits_for": e.get("waits_for") or "event", "since": e.get("since") or e.get("date")}
+    e.pop("date", None)
+    waits = terms["waits_for"][e["waits_for"]]
+    since = _day(e["since"])
+    within = terms.get("decide_within", {}).get(e.get("kind"))
+    out = {k: e[k] for k in ("key", "path", "publisher") if k in e}
+    out.update(waits_for=e["waits_for"], owner=waits["owner"])
+    if e.get("kind"):
+        out["kind"] = e["kind"]
+    out.update({k: e[k] for k in ("rule", "reason") if k in e})
+    if e.get("holds"):
+        out["holds"] = e["holds"]
+    out["since"] = since.isoformat()
+    out["checked"] = str(e.get("checked") or since.isoformat())
+    if within is not None:
+        out["decide_by"] = (since + timedelta(days=within)).isoformat()
+    else:
+        out["lapses"] = (since + timedelta(days=waits["lapses_after"])).isoformat()
+    out["pr"] = e.get("pr")
+    out.update({k: e[k] for k in ("fingerprint", "files") if k in e})
+    return out
+
+
+PARKED_HEAD = """\
+# The parking list (TAX-29): proposals not taken in now. Each waits for exactly one thing:
+#   event            a source could not be read, or a ceiling or a fork left it unjudged; owner: referee
+#   better-proposal  the sources were read and do not show what they must; owner: submitter
+#   decision         code held it for a person (TV3, TV5), or a collision or an audit (`kind`); owner: person
+# `since` is the day it was first parked; it leaves the list on `lapses`, or gets a decision by
+# `decide_by` (a kind that never lapses). The terms are in referee/parking.yaml.
+# Judged again weekly (workflow referee-parked) or with: python tools/pr_referee.py parked --live
+"""
+
+
+def save_parked(entries: list[dict], path: Path = PARKED, terms: dict | None = None) -> None:
     def text_block(dumper, value):
         return dumper.represent_scalar("tag:yaml.org,2002:str", value, style="|" if "\n" in value else None)
 
@@ -372,17 +516,101 @@ def save_parked(entries: list[dict], path: Path = PARKED) -> None:
         pass
 
     Dumper.add_representer(str, text_block)
-    head = ("# The parking list (TAX-17): proposals that were not taken in because the referee doubted, a\n"
-            "# source was closed, or a ceiling or a fork left them unjudged. One entry per product key.\n"
-            "# Judge them again with: python tools/pr_referee.py parked --live\n")
-    body = yaml.dump({"version": 1, "parked": sorted(entries, key=lambda e: e["key"])}, Dumper=Dumper,
-                     sort_keys=False, allow_unicode=True, width=120)
-    path.write_text(head + body, encoding="utf-8")
+    terms = terms or load_terms(path.parent.parent)
+    body = yaml.dump({"version": 2, "parked": sorted((with_terms(e, terms) for e in entries), key=lambda e: e["key"])},
+                     Dumper=Dumper, sort_keys=False, allow_unicode=True, width=120)
+    path.write_text(PARKED_HEAD + body, encoding="utf-8")
 
 
-def park_entry(v: dict, day: str) -> dict:
-    return {"key": v["key"], "path": v["id"], "rule": v["rule"], "reason": v["reason"], "date": day,
-            "pr": v.get("pr"), "files": v["files"]}
+def park_entry(v: dict, day: str, old: dict | None = None) -> dict:
+    """An entry of the parking list for a parked verdict. `old` is the entry it replaces after a new
+    judgement: its first day, its pull request and its kind stay."""
+    old = old or {}
+    e = {"key": v["key"], "path": v["id"], "publisher": v.get("publisher") or "", "waits_for": v.get("waits_for") or "event",
+         "rule": v["rule"], "reason": v["reason"], "since": old.get("since") or day, "checked": day,
+         "pr": old.get("pr", v.get("pr")), "fingerprint": fingerprint(v["files"]), "files": v["files"]}
+    if e["waits_for"] == "decision" and v.get("holds"):
+        e["holds"] = v["holds"]
+    if old.get("kind"):
+        e["kind"] = old["kind"]
+    return e
+
+
+def lapse(entries: list[dict], today: date, terms: dict) -> tuple[list[dict], list[dict]]:
+    """(the entries that stay, those past their term). A kind that never lapses always stays."""
+    keep, gone = [], []
+    for e in entries:
+        full = with_terms(e, terms)
+        (gone if "lapses" in full and today > _day(full["lapses"]) else keep).append(e)
+    return keep, gone
+
+
+def lapsed_comments(gone: list[dict], terms: dict, out_dir: Path) -> list[Path]:
+    """One comment per pull request for what lapsed: <out_dir>/lapsed/<pr>.md."""
+    by_pr: dict[int, list[dict]] = {}
+    for e in gone:
+        if isinstance(e.get("pr"), int):
+            by_pr.setdefault(e["pr"], []).append(e)
+    paths = []
+    for pr, es in sorted(by_pr.items()):
+        lines = ["<!-- taxnmy-parked -->", "## Lapsed from the parking list", ""]
+        for e in es:
+            days = terms["waits_for"][e["waits_for"]]["lapses_after"]
+            reason = re.sub(r"\s+", " ", str(e.get("reason", "")))[:300]
+            lines.append(f"- `{e['key']}` waited for {e['waits_for']} since {e['since']}; its term of {days} days has "
+                         f"passed, so it is not taken in. Last reason: {reason or '-'}")
+        lines += ["", "Nothing stays against it: you may propose it again.", ""]
+        path = out_dir / "lapsed" / f"{pr}.md"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("\n".join(lines), encoding="utf-8")
+        paths.append(path)
+    return paths
+
+
+def waiting(entries: list[dict], terms: dict) -> dict:
+    """What waits for a decision of a person, per publisher, the most urgent first."""
+    out: dict[str, list[dict]] = {}
+    for e in entries:
+        if e["waits_for"] == "decision":
+            full = with_terms(e, terms)
+            out.setdefault(full.get("publisher") or "", []).append(
+                {k: full[k] for k in ("key", "path", "kind", "rule", "reason", "holds", "since", "lapses", "decide_by", "pr")
+                 if k in full})
+    first = {p: min(x.get("decide_by") or x["lapses"] for x in xs) for p, xs in out.items()}
+    return {p: out[p] for p in sorted(out, key=lambda p: (first[p], p))}
+
+
+def decide(publisher: str, decision: str, reason: str, root: Path = REPO, by: str = "", now=None, log=print) -> list[dict]:
+    """A person decides on what code held the proposals of `publisher` on (TV3, TV5). The decision is
+    kept per reason in DECISIONS and holds for every next proposal of that publisher. approve: the
+    entries wait for the referee again; reject: they leave the list. Returns the entries decided."""
+    if decision not in ("approve", "reject"):
+        raise SystemExit("decide: approve or reject")
+    day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
+    path, dpath = root / "referee/parked.yaml", root / DECISIONS
+    entries = load_parked(path)
+    mine = [e for e in entries if e.get("publisher") == publisher and e["waits_for"] == "decision" and not e.get("kind")]
+    subjects = sorted({(rule, s) for e in mine for rule, ss in (e.get("holds") or {}).items() for s in ss})
+    if not subjects:
+        raise SystemExit(f"Nothing of {publisher} waits for a decision on a reason code held it on.")
+    decisions = [d for d in load_decisions(dpath) if (d.get("publisher"), d.get("rule"), d.get("subject"))
+                 not in {(publisher, r, s) for r, s in subjects}]
+    decisions += [{"publisher": publisher, "rule": r, "subject": s, "decision": decision, "date": day,
+                   "reason": reason, "by": by} for r, s in subjects]
+    head = "".join(line + "\n" for line in dpath.read_text(encoding="utf-8").splitlines() if line.startswith("#")) \
+        if dpath.is_file() else ""
+    dpath.write_text(head + yaml.safe_dump({"version": 1, "decisions": decisions}, sort_keys=False, allow_unicode=True,
+                                           width=120), encoding="utf-8")
+    if decision == "reject":
+        entries = [e for e in entries if e not in mine]
+    else:
+        for e in mine:
+            e.update(waits_for="event", checked=day, reason=f"a person approved on {day}: {reason}")
+            e.pop("holds", None)
+    save_parked(entries, path)
+    log(f"{publisher}: {decision} on {len(subjects)} reasons; {len(mine)} entries "
+        + ("taken off the list" if decision == "reject" else "wait for the referee again"))
+    return mine
 
 
 def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
@@ -398,7 +626,7 @@ def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
         if v["outcome"] == "accept":
             continue
         if v["outcome"] == "parked":
-            entries[v["key"]] = park_entry({**v, "pr": verdicts.get("pr")}, day)
+            entries[v["key"]] = park_entry({**v, "pr": verdicts.get("pr")}, day)  # a new proposal: a new term
         old = v.get("old") or {}
         for rel in v["files"]:
             if rel in old:
@@ -492,10 +720,16 @@ def main(argv: list[str] | None = None) -> int:
     a = sub.add_parser("apply", help="take verdicts.json over on a checkout of the pull request")
     a.add_argument("verdicts")
     a.add_argument("--root", default=str(REPO))
-    k = sub.add_parser("parked", help="judge the parking list again: lint, gate, sources and the referee")
+    k = sub.add_parser("parked", help="the parking list: lapse what is past its term, judge the rest again")
     k.add_argument("--no-browser", action="store_true")
-    k.add_argument("--output", default="verdicts")
+    k.add_argument("--output", default="verdicts", help="verdicts.json, comment.md and lapsed/<pr>.md")
     add_judge_args(k)
+    d = sub.add_parser("decide", help="a person decides on what code held the proposals of a publisher on")
+    d.add_argument("publisher")
+    d.add_argument("decision", choices=("approve", "reject"))
+    d.add_argument("--reason", required=True)
+    d.add_argument("--by", default="")
+    sub.add_parser("waiting", help="what waits for a decision of a person, per publisher, as JSON")
     args = p.parse_args(argv)
 
     if args.command == "collect":
@@ -550,43 +784,67 @@ def main(argv: list[str] | None = None) -> int:
         apply(json.loads(Path(args.verdicts).read_text(encoding="utf-8")), Path(args.root))
     elif args.command == "parked":
         reprocess(args)
+    elif args.command == "decide":
+        decide(args.publisher, args.decision, args.reason, by=args.by)
+    elif args.command == "waiting":
+        print(json.dumps(waiting(load_parked(), load_terms()), indent=1, ensure_ascii=False))
     return 0
 
 
 def reprocess(args, fetcher=None, client=None, data_root: Path = REPO, now=None, log=print, sleep=None) -> dict:
-    """The parking list, judged again on the data as it is now: an accepted entry is written to the
-    data and leaves the list, a rejected or aliased one leaves the list, a parked one stays with its
-    new reason and date."""
+    """The parking list, judged again on the data as it is now. First what is past its term lapses.
+    Then, by what an entry waits for:
+
+        event            gate and sources again (free); the referee only if every source is read now
+        better-proposal  nothing, as long as the proposal did not change (its fingerprint)
+        decision         gate again (free): still held, it stays; a person decided, it goes on
+        kind             (a collision, an audit) nothing: a person settles it
+
+    An accepted entry is written to the data and leaves the list, a rejected or aliased one leaves
+    it, a parked one stays with its new reason and its first day."""
     path = data_root / "referee/parked.yaml"
-    entries = load_parked(path)
-    if not entries:
-        log("The parking list is empty.")
-        return {}
-    proposals = [{"id": e["path"], "files": e["files"]} for e in entries]
-    fetcher = fetcher or Fetcher(use_browser=not getattr(args, "no_browser", False), log=log)
-    try:
-        items = gate_proposals(proposals, fetcher, data_root, log)
-    finally:
-        if hasattr(fetcher, "close"):
-            fetcher.close()
+    terms = load_terms(data_root)
+    today = (now or datetime.now(timezone.utc)).date()
+    day = today.isoformat()
+    out = Path(getattr(args, "output", "verdicts"))
+    entries, gone = lapse(load_parked(path), today, terms)
+    for e in gone:
+        log(f"{e['key']}: lapsed (waited for {e['waits_for']} since {e['since']})")
+    lapsed_comments(gone, terms, out)
+    todo = [e for e in entries if not e.get("kind")
+            and not (e["waits_for"] == "better-proposal" and e.get("fingerprint") == fingerprint(e["files"]))]
+    rest = [e for e in entries if e not in todo]
+    items = []
+    if todo:
+        fetcher = fetcher or Fetcher(use_browser=not getattr(args, "no_browser", False), log=log)
+        try:
+            items = gate_proposals([{"id": e["path"], "files": e["files"]} for e in todo], fetcher, data_root, log)
+        finally:
+            if hasattr(fetcher, "close"):
+                fetcher.close()
+    for item in items:  # the referee only for what nothing holds and whose sources are all read
+        if item["outcome"] == "pending" and item["held"]:
+            settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
+        elif item["outcome"] == "pending" and (closed := unread(item)):
+            settled(item, "parked", ", ".join(item["ai_rules"]), "a source is still not read: " + ", ".join(closed))
     args.pr = None
     run_dir = judge(items, args, client=client, now=now, log=log, sleep=sleep)
-    day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
-    by_key = {e["key"]: e for e in entries}
-    keep = []
+    by_path = {e["path"]: e for e in todo}
+    keep = list(rest)
     for item in items:
-        old = by_key.get(item["key"], {})
         if item["outcome"] == "accept":
             for rel, text in item["files"].items():
                 (data_root / rel).parent.mkdir(parents=True, exist_ok=True)
                 (data_root / rel).write_text(text, encoding="utf-8")
         elif item["outcome"] == "parked":
-            keep.append({**park_entry(item, day), "pr": old.get("pr")})
-    save_parked(keep, path)
-    write_verdicts(items, Path(getattr(args, "output", "verdicts")), None, "", run_dir=run_dir)
+            keep.append(park_entry(item, day, by_path.get(item["id"])))
+    save_parked(keep, path, terms)
+    write_verdicts(items, out, None, "", run_dir=run_dir)
     c = counts(items)
-    log(f"{len(entries)} parked entries judged again: {c['accept']} accepted and written to the data, "
-        f"{c['reject'] + c['alias']} rejected or aliased and taken off the list, {c['parked']} still parked")
+    c["lapsed"], c["untouched"] = len(gone), len(rest)
+    log(f"{len(gone)} lapsed; {len(rest)} not judged again (unchanged, or for a person); {len(items)} judged again: "
+        f"{c['accept']} accepted and written to the data, {c['reject'] + c['alias']} rejected or aliased and taken "
+        f"off the list, {c['parked']} still parked")
     return c
 
 

@@ -373,8 +373,9 @@ outcome, in a comment on the pull request:
 | *alias* | the referee finds the same product under another key (TR4); the comment names it |
 | *parked* | not taken in now: the referee doubts, a quote is not in its source, the answer is unusable, a ceiling leaves no room, or the pull request comes from a fork. With the rules and the reason |
 
-*Doubt means: not taken in, but parked* (Fred, 14 November). Nothing goes to a person: a contributor
-who disagrees can say so on the pull request. The test set's *human* is *parked* here.
+*Doubt means: not taken in, but parked* (Fred, 14 November). Only what code holds (TV3, TV5) waits
+for a person; a contributor who disagrees can say so on the pull request. The test set's *human* is
+*parked* here.
 
 **Two workflows**, so that no code of a pull request runs where the key is
 (`hosting-taxnmy-publiek.md` §4 in keepitfresh):
@@ -413,20 +414,59 @@ fits is parked, with the ceiling as reason. A batch that is not done after 5 hou
 cancelled; what it did not answer is parked. Each judge run writes `runs/<time>-pr<n>-<model>/`
 (condition `pr`), kept as an artifact like a measurement, so the ceilings and the budget count it.
 
-**The parking list** is `referee/parked.yaml`: one entry per product key, with `path`, `rule`,
-`reason`, `date`, `pr` and the proposed `files`, so it can be judged again without the pull request.
+**The parking list** is `referee/parked.yaml` (TAX-29). A parked proposal waits for exactly one
+thing; each has an owner and a term, in `referee/parking.yaml` (provisional; change the number there,
+not in the code):
+
+| `waits_for` | when | `owner` | term |
+| --- | --- | --- | --- |
+| `event` | a source could not be read, a ceiling or a fork left it unjudged, or the answer was unusable | `referee`: judged again weekly | lapses after 90 days |
+| `better-proposal` | the referee doubted on sources that were all read | `submitter`: not judged again until the proposal changes | lapses after 90 days |
+| `decision` | code held it for a person (TV3, TV5); or a `kind` that a person adds: `collision`, `audit` | `person`, per publisher | lapses after 30 days; a `kind` never lapses and has `decide_by`, 14 days |
+
+The comment on the pull request names what a parked proposal waits for. Every entry has these
+fields; a reader (such as the daily message, TAX-37) can rely on them:
+
+| field | what it is |
+| --- | --- |
+| `key`, `path`, `publisher` | the product key, its file, and the publisher key |
+| `waits_for`, `owner` | one of the three above, and who is at turn |
+| `kind` | only for a decision that never lapses: `collision` or `audit` |
+| `rule`, `reason` | the rules and the reason of the last judgement |
+| `holds` | only for a decision: rule → what code holds it on, without the file (the subject a decision is about) |
+| `since`, `checked` | the day it was first parked, and the day it was last judged |
+| `lapses` or `decide_by` | the day it leaves the list, or the day a person decides by |
+| `pr`, `fingerprint`, `files` | its pull request, a hash of its files, and the files, so it can be judged again without the pull request |
+
+**Judged again.** The workflow **referee-parked** runs weekly (Mondays) and in environment `referee`
+(Fred approves the key). First what is past its term lapses: it leaves the list, and its pull
+request gets a comment with the reason; the submitter may propose it again. Then, by what an entry
+waits for: an `event` is staged, read and gated again for free, and goes to the referee only when
+nothing holds it and every source is read now; a `better-proposal` is not touched while its
+`fingerprint` is the same; a `decision` is gated again and goes on only when a person has decided.
+A run with nothing for the referee costs nothing. The change comes as a pull request to merge.
+
+**A decision of a person** is kept per publisher in `referee/decisions.yaml`, one line per subject
+of `holds`, with the date and the reason. It holds for every next proposal of that publisher held
+for the same subject: *approve* takes the hold away (the referee judges it), *reject* rejects it on
+that rule, `by: person`, with the decision as reason. Another subject still holds it.
 
 ```
 python tools/pr_referee.py apply verdicts.json       # on the branch: parked to the list, rejected out
-python tools/pr_referee.py parked                    # judge the list again; dry: the rest stays parked
+python tools/pr_referee.py parked                    # lapse, and judge again; dry: the rest stays parked
 python tools/pr_referee.py parked --live             # with the referee, one batch
+python tools/pr_referee.py waiting                   # what waits for a person, per publisher (JSON)
+python tools/pr_referee.py decide <publisher> approve --reason "..." [--by name]
+python tools/pr_referee.py decide <publisher> reject --reason "..."
 python tools/pr_referee.py gate --testset            # the test set as a pull request, code only (free)
 python tools/pr_referee.py judge --gated gated/gated.json --live   # and the rest, with the referee
 ```
 
 `apply` takes the `verdicts.json` of the run (artifact `referee-pr-verdicts-<id>`) over on a
-checkout of the pull request. `parked` writes an accepted entry to the data and takes it off the
-list, takes rejected ones off, and keeps the rest with the new reason and date.
+checkout of the pull request; a proposal parked again starts a new term. `parked` writes an
+accepted entry to the data and takes it off the list, takes rejected ones off, and keeps the rest
+with the new reason, its first day and its pull request. `waiting` groups the entries that wait
+for a decision per publisher, the most urgent publisher first, each with its last day.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
 from `main`), the workflow **referee-pr-testset** runs the 79 cases of the test set through the same gate and the same batch, each staged as
