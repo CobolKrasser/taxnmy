@@ -2,11 +2,19 @@ name: lint
 
 on:
   pull_request:
+    paths-ignore: ["**/*.md", "docs/**", "CHANGELOG.md"]
   push:
     branches: [main]
+    paths-ignore: ["**/*.md", "docs/**", "CHANGELOG.md"]
 
 permissions:
   contents: read
+
+# One run per branch or pull request: a new push cancels the run still going (the Actions minutes
+# of the account are shared, 18 November 2026).
+concurrency:
+  group: lint-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   lint:
