@@ -1,5 +1,9 @@
-# The parking list (TAX-17): proposals that were not taken in because the referee doubted, a
-# source was closed, or a ceiling or a fork left them unjudged. One entry per product key.
-# Judge them again with: python tools/pr_referee.py parked --live
-version: 1
+# The parking list (TAX-29): proposals not taken in now. Each waits for exactly one thing:
+#   event            a source could not be read, or a ceiling or a fork left it unjudged; owner: referee
+#   better-proposal  the sources were read and do not show what they must; owner: submitter
+#   decision         code held it for a person (TV3, TV5), or a collision or an audit (`kind`); owner: person
+# `since` is the day it was first parked; it leaves the list on `lapses`, or gets a decision by
+# `decide_by` (a kind that never lapses). The terms are in referee/parking.yaml.
+# Judged again weekly (workflow referee-parked) or with: python tools/pr_referee.py parked --live
+version: 2
 parked: []

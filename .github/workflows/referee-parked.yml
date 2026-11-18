@@ -1,0 +1,122 @@
+name: referee-parked
+
+# The parking list, weekly (TAX-29). Without a person doing anything but approving the key:
+#   judge    environment referee (the key; Fred approves): what is past its term lapses; an entry
+#            that waits for an event is judged again, the referee only if its sources are read now;
+#            an unchanged better-proposal and what waits for a person are not touched. A run with
+#            nothing for the referee costs nothing. It writes nothing to the repository: it keeps
+#            the change as a patch.
+#   publish  no key: the patch as a pull request for a maintainer to merge, and a comment with the
+#            reason on the pull request of every entry that lapsed.
+# Main only, never with code of a pull request: the list holds data that was merged before.
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"  # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  judge:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    environment: referee
+    concurrency:
+      group: referee-judge  # shared with referee-pr: the ceilings cannot be spent twice
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the ceilings
+    outputs:
+      changed: ${{ steps.patch.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: The browser from the cache, read only
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - name: Lapse, and judge again what may be judged
+        id: parked
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ vars.REFEREE_MODEL || 'claude-opus-5-5' }}
+          EFFORT: ${{ vars.REFEREE_EFFORT || 'low' }}
+          PR_CAP: ${{ vars.REFEREE_PR_CAP || '2.00' }}
+          DAY_CAP: ${{ vars.REFEREE_DAY_CAP || '5.00' }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
+        run: |
+          set -euo pipefail
+          python tools/pr_referee.py parked --live --output "$RUNNER_TEMP/parked" \
+            --model "$MODEL" --effort "$EFFORT" --pr-cap "$PR_CAP" --day-cap "$DAY_CAP" --budget "$BUDGET"
+          cat "$RUNNER_TEMP/parked/comment.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: The change as a patch
+        id: patch
+        run: |
+          set -euo pipefail
+          git add -A products publishers referee/parked.yaml
+          git diff --cached --binary > "$RUNNER_TEMP/parked/parked.patch"
+          if [ -s "$RUNNER_TEMP/parked/parked.patch" ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: referee-parked-${{ github.run_id }}
+          path: ${{ runner.temp }}/parked/
+          retention-days: 90
+
+  publish:
+    needs: judge
+    if: needs.judge.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write  # the branch of the pull request
+      pull-requests: write  # the pull request, and the comments on lapsed entries
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: referee-parked-${{ github.run_id }}
+          path: ${{ runner.temp }}/parked
+      - name: The pull request of this week
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          branch="parked/${RUN}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git apply --index "$RUNNER_TEMP/parked/parked.patch"
+          git commit -m "The parking list, judged again (run ${RUN})"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "The parking list, judged again" \
+            --body-file "$RUNNER_TEMP/parked/comment.md"
+      - name: Tell the pull requests whose entry lapsed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          for f in "$RUNNER_TEMP"/parked/lapsed/*.md; do
+            [ -e "$f" ] || continue
+            pr="$(basename "$f" .md)"
+            case "$pr" in *[!0-9]*) echo "::error::not a number"; exit 1;; esac
+            gh pr comment "$pr" -R "$REPO" --body-file "$f"
+            gh pr close "$pr" -R "$REPO" 2>/dev/null || true  # already merged or closed: the comment is enough
+          done

@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
+from dataclasses import asdict
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "tools"))
@@ -290,7 +291,7 @@ class PrRefereeTest(unittest.TestCase):
         self.assertTrue((root / "products/synology/ds124.yaml").exists())
         self.assertTrue((root / "publishers/synology.yaml").exists())
         parked = pr_referee.load_parked(root / "referee/parked.yaml")
-        self.assertEqual([(e["key"], e["rule"], e["date"], e["pr"]) for e in parked], [("acme/widget", "TR5", "2026-11-13", 7)])
+        self.assertEqual([(e["key"], e["rule"], e["since"], e["pr"]) for e in parked], [("acme/widget", "TR5", "2026-11-13", 7)])
         self.assertEqual(parked[0]["files"], files)
 
     def test_the_parking_list_is_judged_again_with_one_command(self):
@@ -311,13 +312,14 @@ class PrRefereeTest(unittest.TestCase):
         self.assertEqual(counts["accept"], 1)
         self.assertEqual((root / "products/synology/ds124.yaml").read_text(), ds124, "accepted: written to the data")
         left = pr_referee.load_parked(root / "referee/parked.yaml")
-        self.assertEqual([(e["key"], e["date"], e["pr"]) for e in left], [("acme/widget", "2026-11-13", 4)])
+        self.assertEqual([(e["key"], e["since"], e["checked"], e["pr"]) for e in left],
+                         [("acme/widget", "2026-11-01", "2026-11-13", 4)], "the first day stays")
 
     def test_the_parking_list_in_the_repo_is_valid(self):
         data = yaml.safe_load((REPO / "referee/parked.yaml").read_text())
-        self.assertEqual(data["version"], 1)
+        self.assertIn(data["version"], (1, 2))
         for e in data["parked"] or []:
-            self.assertTrue({"key", "path", "rule", "reason", "date", "files"} <= set(e))
+            self.assertTrue({"key", "path", "waits_for", "owner", "rule", "reason", "since", "files"} <= set(e))
 
     def test_the_ceilings_per_pull_request_and_day_stay_and_the_budget_is_50(self):
         """Fred, 17 November 2026: the limit for every run goes to $50; the ceilings of TAX-17 stay."""
@@ -346,6 +348,207 @@ class PrRefereeTest(unittest.TestCase):
         text = pr_referee.score(items)
         self.assertIn("Bad cases accepted (target 0): 1 B08", text)
         self.assertIn("Not in `expect` (parked counts as human): 1 B08", text)
+
+
+def lookalike(n: str) -> dict:
+    """A product of a publisher whose key and domain look like an existing one (TV3)."""
+    return {f"products/synoiogy/ds{n}.yaml": f"key: synoiogy/ds{n}\npublisher: synoiogy\nname: DS{n}\nkind: device\n"
+            f"source: https://www.synoiogy.com/products/DS{n}\nversions:\n  source: https://www.synoiogy.com/releaseNote/DSM\n"
+            "identifiers: []\naliases: []\n",
+            "publishers/synoiogy.yaml": "key: synoiogy\nname: Synoiogy\nsource: https://www.synoiogy.com/company\naliases: []\n"}
+
+
+class ClosedFetcher(FakeFetcher):
+    """A reader for which the sites in `closed` refuse."""
+
+    def __init__(self, *closed):
+        super().__init__()
+        self.closed = closed
+
+    def fetch(self, url, product=""):
+        if any(c in url for c in self.closed):
+            self.urls.append(url)
+            return referee.Source(url, "refused")
+        return super().fetch(url, product)
+
+
+class ParkingListTest(unittest.TestCase):
+    """TAX-29: every parked proposal waits for one thing, with an owner and a term (decided 18 November 2026)."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp)
+        self.root = self.tmp / "root"
+        shutil.copytree(FIXTURES / "data", self.root)
+        (self.root / "referee").mkdir()
+        self.terms = pr_referee.load_terms()
+        ds124 = (self.root / "products/synology/ds124.yaml").read_text()
+        (self.root / "products/synology/ds124.yaml").unlink()
+        self.ds124 = {"products/synology/ds124.yaml": ds124}
+
+    def entry(self, waits, since="2026-11-01", files=None, **kw):
+        files = files or self.ds124
+        rel = next(r for r in files if r.startswith("products/"))
+        return {"key": pr_referee.key_of(files), "path": rel, "publisher": pr_referee.publisher_of(files), "waits_for": waits,
+                "rule": "TR7", "reason": "fixture", "since": since, "pr": 3, "files": files, **kw}
+
+    def run_list(self, entries, fetcher=None, client=None):
+        pr_referee.save_parked(entries, self.root / "referee/parked.yaml")
+        self.fetcher, self.client = fetcher or FakeFetcher(), client or FakeBatchClient()
+        counts = pr_referee.reprocess(Args(self.tmp / "runs", output=str(self.tmp / "v")), fetcher=self.fetcher,
+                                      client=self.client, data_root=self.root, now=NOW, log=QUIET, sleep=lambda s: None)
+        return counts, {e["key"]: e for e in pr_referee.load_parked(self.root / "referee/parked.yaml")}
+
+    def gate(self, files):
+        rel = next(r for r in files if r.startswith("products/"))
+        return pr_referee.gate_proposals([{"id": rel, "files": files}], FakeFetcher(), self.root, log=QUIET)[0]
+
+    # 1. exactly one of three reasons, and the submitter reads it on the pull request
+
+    def test_every_parked_proposal_waits_for_exactly_one_reason(self):
+        proposals = pr_referee.testset_proposals(FIXTURES / "cases.yaml", FIXTURES / "data")
+        proposals.append({"id": "products/synoiogy/ds124.yaml", "files": lookalike("124")})
+        items = pr_referee.gate_proposals(proposals, FakeFetcher(), FIXTURES / "data", log=QUIET)
+        pr_referee.judge(items, Args(self.tmp / "runs"), client=FakeBatchClient(), now=NOW, log=QUIET, sleep=lambda s: None)
+        waits = {i["id"]: i["waits_for"] for i in items if i["outcome"] == "parked"}
+        self.assertEqual(waits, {"G02": "better-proposal",  # doubt on sources that were read
+                                 "H01": "event",  # the answer was unusable
+                                 "products/synoiogy/ds124.yaml": "decision"})  # held by code (TV3)
+        self.assertEqual({i["waits_for"] for i in items if i["outcome"] != "parked"}, {""})
+        text = pr_referee.comment(items, 7)
+        self.assertIn("| `G02` | parked, waits for better-proposal |", text)
+        for w in pr_referee.WAITS_FOR:
+            self.assertIn(f"waits for *{w}*", text)
+
+    def test_a_ceiling_and_an_unread_source_are_events(self):
+        items = pr_referee.gate_proposals(pr_referee.testset_proposals(FIXTURES / "cases.yaml", FIXTURES / "data"),
+                                          FakeFetcher(), FIXTURES / "data", log=QUIET)
+        pr_referee.judge(items, Args(self.tmp / "runs", pr_cap=0.01), client=FakeBatchClient(), now=NOW, log=QUIET)
+        self.assertEqual({i["waits_for"] for i in items if i["outcome"] == "parked"}, {"event"})
+        item = {"sources": [asdict(referee.Source("https://a.example/", "refused")),
+                            asdict(referee.Source("https://b.example/", "200", "text"))]}
+        self.assertEqual(pr_referee.unread(item), ["https://a.example/"])
+        item["sources"].append(asdict(referee.Source("https://c.example/", "200", "text", instead_of="https://a.example/")))
+        self.assertEqual(pr_referee.unread(item), [], "a source found instead counts as read")
+
+    # 2. an event is judged again without a person; the AI only when the source is read now
+
+    def test_an_event_is_judged_again_only_when_its_sources_are_read(self):
+        counts, left = self.run_list([self.entry("event")], fetcher=ClosedFetcher("synology.com"))
+        self.assertEqual(self.client.batches, [], "the source is still closed: no call to the AI")
+        self.assertEqual((left["synology/ds124"]["waits_for"], left["synology/ds124"]["since"]), ("event", "2026-11-01"))
+        self.assertIn("still not read", left["synology/ds124"]["reason"])
+        counts, left = self.run_list(list(left.values()))
+        self.assertEqual(len(self.client.batches), 1, "the source is read now: the referee judges it")
+        self.assertEqual((counts["accept"], left), (1, {}))
+        self.assertTrue((self.root / "products/synology/ds124.yaml").is_file())
+
+    # 3. a better proposal is not judged again while it has not changed
+
+    def test_a_better_proposal_is_not_judged_again_until_it_changes(self):
+        same = self.entry("better-proposal", fingerprint=pr_referee.fingerprint(self.ds124))
+        counts, left = self.run_list([same])
+        self.assertEqual((self.fetcher.urls, self.client.batches, counts["untouched"]), ([], [], 1))
+        self.assertEqual(left["synology/ds124"]["waits_for"], "better-proposal")
+        changed = self.entry("better-proposal", fingerprint="0" * 16)
+        counts, left = self.run_list([changed])
+        self.assertEqual((len(self.client.batches), counts["accept"]), (1, 1))
+
+    # 4. past its term an entry lapses, with the reason on its pull request; it may come again
+
+    def test_an_entry_past_its_term_lapses_with_a_comment(self):
+        widget = lookalike("200")
+        entries = [self.entry("event", since="2026-08-15", pr=5),  # 90 days to the day: stays
+                   self.entry("event", since="2026-08-14", files={"products/synology/ds124.yaml": "key: synology/ds777\n"}, pr=5),
+                   self.entry("decision", since="2026-10-13", files=widget, pr=6, holds={"TV3": ["x"]})]  # 31 days
+        counts, left = self.run_list(entries, fetcher=ClosedFetcher("synology.com"))
+        self.assertEqual(counts["lapsed"], 2)
+        self.assertEqual(sorted(left), ["synology/ds124"])
+        self.assertEqual(sorted(p.name for p in (self.tmp / "v/lapsed").iterdir()), ["5.md", "6.md"])
+        text = (self.tmp / "v/lapsed/5.md").read_text()
+        self.assertIn("`synology/ds777` waited for event since 2026-08-14; its term of 90 days", text)
+        self.assertIn("you may propose it again", text)
+        verdicts = {"pr": 9, "verdicts": [{"id": "products/synoiogy/ds200.yaml", "key": "synoiogy/ds200", "outcome": "parked",
+                                           "rule": "TV3", "reason": "again", "waits_for": "decision", "files": widget}]}
+        pr_referee.apply(verdicts, self.root, now=NOW, log=QUIET)
+        again = {e["key"]: e for e in pr_referee.load_parked(self.root / "referee/parked.yaml")}["synoiogy/ds200"]
+        self.assertEqual((again["since"], again["pr"], again["lapses"]), ("2026-11-13", 9, "2026-12-13"), "a new term")
+
+    # 5. a collision or an audit finding never lapses, and has its last day
+
+    def test_a_collision_or_an_audit_never_lapses(self):
+        entries = [self.entry("decision", since="2026-01-01", kind="collision"),
+                   self.entry("decision", since="2026-11-10", kind="audit", files=lookalike("300"))]
+        counts, left = self.run_list(entries)
+        self.assertEqual((counts["lapsed"], counts["untouched"], self.fetcher.urls), (0, 2, []))
+        self.assertEqual(left["synology/ds124"]["decide_by"], "2026-01-15")
+        self.assertNotIn("lapses", left["synology/ds124"])
+        waiting = pr_referee.waiting(list(left.values()), self.terms)
+        self.assertEqual([(p, [x["decide_by"] for x in xs]) for p, xs in waiting.items()],
+                         [("synology", ["2026-01-15"]), ("synoiogy", ["2026-11-24"])])
+
+    # 6. a decision on a publisher is kept, and holds for its next proposal
+
+    def test_a_decision_on_a_publisher_holds_for_its_next_proposal(self):
+        first = self.gate(lookalike("124"))
+        self.assertIn("TV3", first["held"])
+        pr_referee.save_parked([pr_referee.park_entry({**first, "outcome": "parked", "rule": "TV3", "reason": "held",
+                                                       "waits_for": "decision"}, "2026-11-10")],
+                               self.root / "referee/parked.yaml")
+        decided = pr_referee.decide("synoiogy", "approve", "its own company", self.root, by="beheerder", now=NOW, log=QUIET)
+        self.assertEqual(len(decided), 1)
+        kept = pr_referee.load_decisions(self.root / pr_referee.DECISIONS)
+        self.assertTrue(kept and all((d["publisher"], d["decision"], d["date"], d["reason"]) ==
+                                     ("synoiogy", "approve", "2026-11-13", "its own company") for d in kept))
+        self.assertEqual(pr_referee.load_parked(self.root / "referee/parked.yaml")[0]["waits_for"], "event",
+                         "approved: the referee is at turn again")
+        nxt = self.gate(lookalike("224"))
+        self.assertEqual((nxt["held"], nxt["outcome"]), ({}, "pending"), "the same reason holds it no more")
+        other = self.gate({**lookalike("224"), "products/synoiogy/ds224.yaml":
+                           lookalike("224")["products/synoiogy/ds224.yaml"].replace("synoiogy.com/products", "synologv.com/products")})
+        self.assertIn("synologv.com", other["held"].get("TV3", ""), "another reason still holds it")
+
+    def test_a_rejection_of_a_publisher_rejects_its_next_proposal(self):
+        first = self.gate(lookalike("124"))
+        pr_referee.save_parked([pr_referee.park_entry({**first, "outcome": "parked", "rule": "TV3", "reason": "held",
+                                                       "waits_for": "decision"}, "2026-11-10")],
+                               self.root / "referee/parked.yaml")
+        pr_referee.decide("synoiogy", "reject", "imitates an existing publisher", self.root, now=NOW, log=QUIET)
+        self.assertEqual(pr_referee.load_parked(self.root / "referee/parked.yaml"), [])
+        nxt = self.gate(lookalike("224"))
+        self.assertEqual((nxt["outcome"], nxt["rule"], nxt["by"]), ("reject", "TV3", "person"))
+        self.assertIn("2026-11-13", nxt["reason"])
+        self.assertIn("imitates an existing publisher", nxt["reason"])
+
+    def test_decide_needs_something_that_waits(self):
+        with self.assertRaises(SystemExit):
+            pr_referee.decide("nobody", "approve", "x", self.root, log=QUIET)
+
+    # 7. what waits for a decision, in one go, per publisher
+
+    def test_what_waits_for_a_decision_is_one_list_per_publisher(self):
+        a = self.gate(lookalike("124"))
+        entries = [pr_referee.park_entry({**a, "outcome": "parked", "rule": "TV3", "reason": "held", "waits_for": "decision"},
+                                         "2026-11-12"),
+                   self.entry("decision", since="2026-11-05", files=lookalike("500"), holds={"TV3": ["x"]}),
+                   self.entry("event")]
+        pr_referee.save_parked(entries, self.root / "referee/parked.yaml")
+        waiting = pr_referee.waiting(pr_referee.load_parked(self.root / "referee/parked.yaml"), self.terms)
+        self.assertEqual(list(waiting), ["synoiogy"], "an event waits for no person")
+        self.assertEqual([x["key"] for x in waiting["synoiogy"]], ["synoiogy/ds124", "synoiogy/ds500"])
+        self.assertEqual(waiting["synoiogy"][0]["lapses"], "2026-12-12")
+        self.assertIn("publisher 'synoiogy' looks like 'synology'", " ".join(waiting["synoiogy"][0]["holds"]["TV3"]))
+
+    # the terms are in one place
+
+    def test_the_terms_are_those_decided(self):
+        """Fred, 18 November 2026 (decision 31): 90, 90 and 30 days; a collision or an audit: 14 days."""
+        self.assertEqual({w: t["lapses_after"] for w, t in self.terms["waits_for"].items()},
+                         {"event": 90, "better-proposal": 90, "decision": 30})
+        self.assertEqual({w: t["owner"] for w, t in self.terms["waits_for"].items()},
+                         {"event": "referee", "better-proposal": "submitter", "decision": "person"})
+        self.assertEqual(self.terms["decide_within"], {"collision": 14, "audit": 14})
+        self.assertEqual(set(self.terms["waits_for"]), set(pr_referee.WAITS_FOR))
 
 
 class WorkflowTest(unittest.TestCase):
@@ -401,6 +604,16 @@ class WorkflowTest(unittest.TestCase):
         self.assertEqual(wf["jobs"]["judge"]["environment"], "referee")
         self.assertNotIn("run-id", text, "it reads no artifact of another run")
         self.assertNotIn("secrets.", yaml.safe_dump(wf["jobs"]["gate"]))
+
+    def test_the_parking_list_is_judged_weekly_and_only_the_judge_has_the_key(self):
+        text, wf = self.load("referee-parked.yml")
+        on = wf.get("on", wf.get(True))
+        self.assertEqual(set(on), {"schedule", "workflow_dispatch"})
+        self.assertEqual(wf["jobs"]["judge"]["environment"], "referee")
+        self.assertEqual(wf["jobs"]["judge"]["permissions"], {"contents": "read", "actions": "read"}, "the key cannot write")
+        self.assertNotIn("secrets.", yaml.safe_dump(wf["jobs"]["publish"]))
+        self.assertIn("pr_referee.py parked --live", text)
+        self.assertIn("lapsed/*.md", text)
 
     def test_search_and_judge_of_the_measurement_wait_for_fred(self):
         _, wf = self.load("referee.yml")

@@ -7,9 +7,18 @@ The rules are described in the [README](README.md#the-referee).
 
 The referee leaves a comment on the pull request with one line per file: *accept*, *reject* (with
 the rule), *alias* (an existing product written in another way) or *parked* (with the rule and the
-reason). Parked means not taken in now, because the referee doubts or a source cannot be read; it
-goes to the parking list `referee/parked.yaml` and is judged again later. A pull request from a fork
-is judged by code only; what code cannot settle is parked. How it works:
+reason). Parked means not taken in now; the comment says what it waits for:
+
+- *event*: a source could not be read, or a ceiling left it unjudged. It is judged again weekly;
+  nothing to do for you.
+- *better-proposal*: the sources were read and do not show what they must. Improve the source or
+  the proposal and propose it again.
+- *decision*: it looks like an existing name or domain, or moves an existing source (TV3, TV5). A
+  person decides, once per publisher.
+
+A parked proposal waits on the parking list `referee/parked.yaml` and lapses after its term (90
+days; 30 for a decision). Nothing stays against it: you may propose it again. A pull request from a
+fork is judged by code only; what code cannot settle is parked. How it works:
 [referee/README.md](referee/README.md#the-referee-on-a-pull-request).
 
 ## Structure
