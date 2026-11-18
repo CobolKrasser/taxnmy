@@ -9,6 +9,8 @@ harness `tools/referee.py`, within the budget below.
 | `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
 | `testset/cases.yaml` | 79 proposals with the expected outcome: 31 good (G01–G29, H01–H02), 48 bad |
+| `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
+| `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
 | `prices.yaml` | the prices per model that the harness counts with, with their source |
 | `runs/<run>/` | the results of a measurement, one directory per run |
@@ -461,3 +463,58 @@ It has four jobs, so that the key never comes near the JavaScript of other sites
 - `task: check-urls` fetches the `verify` URLs with the fetcher of the run, as *Before the run*
   asks. It is free and needs no key.
 
+
+## Grouping names per publisher (TAX-26)
+
+A dataset of others writes one product per record: one product gets several names, and an
+edition or a series stands as a product. Judged one proposal at a time, each name looks right on
+its own. `tools/group.py` collects every name a contributor gives for one publisher, with the
+products TAX already has of it, and one request sorts each name into a class:
+
+| class | what follows (TAX-27) |
+| --- | --- |
+| *product* | a candidate: proposed with its own sources and judged by the referee |
+| *alias* | an alias of a product named in the request, also one TAX already has |
+| *edition* | parked: an edition or a version is not a product of its own (TP3) |
+| *series* | parked: several products at once, a family, or a part without an update stream |
+| *doubt* | parked (TR10) |
+
+The prompt, what code decides before and after the request, and the settings are in
+`prompt-group.md`. The grouping is not the referee and its answer is never a source (TE4): a
+*product* still goes past the referee with its own sources.
+
+```
+python tools/group.py collect --kev known_exploited_vulnerabilities.json --cve cves/ --since 2023-11-16 --output names.json
+python tools/group.py collect --candidates candidates.yaml --publishers map.yaml --output names.json
+python tools/group.py run                       # dry run of the test set: the estimate, nothing sent
+python tools/group.py run --live --repeats 3    # the measurement: three runs as one batch
+```
+
+- **collect** reads the KEV list of CISA and the CVE records (CVE List v5) of its entries, or any
+  list of `{publisher, name, record, origin, versions}`. Names from ADP containers and `n/a` are left
+  out. The publisher is matched to TAX character by character, on its key, its name or an alias;
+  `--publishers` maps a publisher the contributor knows by another name.
+- **The test set** `testset/groups.yaml`: 15 publishers of the KEV list (entries since 16 November
+  2023), every name KEV and the CNA write for them, and the class a person gave each name. A list
+  of classes means the hand accepts each. `existing` freezes the products of TAX the case shows.
+- **The tester checks the hand.** Each case is `status: proposed` until the tester has confirmed or
+  corrected every name and set `status: checked`. A live run refuses a case that is not checked
+  (`--unchecked` overrides that, for a trial only).
+- **Scoring** compares the answer with the hand as a partition of the names into products; which
+  name of a group leads is free. A **merge** is one product of the answer that holds two products
+  of the hand, an existing one included: the error this story must not make. A **split** is one
+  product of the hand spread over two. Per name, an error is a class the hand does not accept
+  (*hand → answer*), or a place in a merge or a split. A *doubt* is counted, not as a merge.
+- Each run writes `runs/<time>-group-<model>-<effort>-run<n>/` (`results.jsonl`, `run.json`,
+  `summary.md`); the three runs together `runs/group-measurement-<time>.md`, with the merges, the
+  errors per kind and the cost per publisher per run. The budget is the hard limit of the
+  referee: every run in `runs/` together.
+- **Norm:** in three runs, no merge.
+- **Estimate** (dry run, prices of `prices.yaml`): about $0.61 for three runs on Opus 5.5 at *low* as a
+  batch, about $0.014 per publisher per run; at most $3.76 if every request used its full
+  `max_tokens`.
+
+As an Action: **referee-group** (*Actions → referee-group → Run workflow*). Its job `estimate` is
+the dry run, from any branch and without a key. Its job `measure` runs only with *live*, from
+`main`, in environment `referee`, so Fred approves it. Each run is kept as an artifact
+`referee-run-<run>`, so the budget counts it; commit them in `runs/` afterwards.

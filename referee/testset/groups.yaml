@@ -1,0 +1,1027 @@
+# The test set of the grouping per publisher (TAX-26): 15 publishers of the KEV list of CISA
+# (entries added from 16 November 2023 to 17 November 2026), with every name that KEV and the CNA
+# of each CVE record write for them. Collected with `tools/group.py collect --kev ... --cve ...`
+# (ADP names and "n/a" left out); the versions are those the CNA lists as affected.
+#
+# expect: the class a person gives the name; a list when the hand accepts more than one, the first
+#         being the one meant. of: per class the product it belongs to, an existing key or a name of
+#         the case. For a group of names that are one new product, which one is the product and
+#         which the aliases is free: the comparison looks at the products, not at which name leads.
+# existing: the products of TAX the case shows; others of the publisher are left out, so that the
+#         case does not change when TAX grows.
+# status: "proposed" is the builder's proposal; the tester sets "checked" once every name is
+#         confirmed or corrected. A live run refuses a case that is not checked.
+#
+# The test set may name brands and products (TG4); the prompt may not.
+
+publishers:
+- id: P01
+  publisher: ivanti
+  name: "Ivanti"
+  status: proposed
+  names:
+  - name: "Cloud Services Appliance"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "Cloud Services Appliance (CSA)"
+    seen: {"kev": 3}
+    expect: "alias"
+    of: "Cloud Services Appliance"
+  - name: "Connect Secure"
+    seen: {"kev": 3, "cna": 5}
+    versions: ["25.1.1.3", "22.8R2.6", "22.8R2.4", "25.1.3.0"]
+    together: ["Neurons for ZTA gateways", "Policy Secure"]
+    expect: "product"
+  - name: "Connect Secure and Policy Secure"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "Connect Secure, Policy Secure, and Neurons"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Connect Secure, Policy Secure, and ZTA Gateways"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "CSA (Cloud Services Appliance)"
+    seen: {"cna": 4}
+    versions: ["5.0.2", "4.6 Patch 519", "5.0"]
+    expect: "alias"
+    of: "Cloud Services Appliance"
+  - name: "Endpoint Manager"
+    seen: {"cna": 4}
+    versions: ["2024 SU5", "2024 January-2025 Security Update", "2022 SU6 January-2025 Security Update"]
+    expect: "product"
+  - name: "Endpoint Manager (EPM)"
+    seen: {"kev": 5}
+    expect: "alias"
+    of: "Endpoint Manager"
+  - name: "Endpoint Manager Cloud Service Appliance (EPM CSA)"
+    seen: {"kev": 1}
+    expect: ["alias", "doubt", "product"]
+    of: ["Cloud Services Appliance", null, null]
+  - name: "Endpoint Manager Mobile"
+    seen: {"cna": 5}
+    versions: ["12.8.0.1", "12.7.0.1", "12.6.1.1", "12.x.1.x RPM"]
+    expect: "product"
+  - name: "Endpoint Manager Mobile (EPMM)"
+    seen: {"kev": 5}
+    expect: "alias"
+    of: "Endpoint Manager Mobile"
+  - name: "Endpoint Manager Mobile (EPMM) and MobileIron Core"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "EPM"
+    seen: {"cna": 1}
+    versions: ["2022 SU5"]
+    expect: ["alias", "doubt"]
+    of: ["Endpoint Manager", null]
+  - name: "EPMM"
+    seen: {"cna": 1}
+    versions: ["11.10"]
+    expect: ["alias", "doubt"]
+    of: ["Endpoint Manager Mobile", null]
+  - name: "ICS"
+    seen: {"cna": 3}
+    versions: ["9.1R18", "22.6R2"]
+    together: ["IPS"]
+    expect: ["alias", "doubt"]
+    of: ["Connect Secure", null]
+  - name: "IPS"
+    seen: {"cna": 3}
+    versions: ["9.1R18", "22.6R1"]
+    together: ["ICS"]
+    expect: ["alias", "doubt"]
+    of: ["Policy Secure", null]
+  - name: "Ivanti EPM"
+    seen: {"cna": 1}
+    versions: ["4.6.0-512"]
+    expect: ["alias", "alias", "doubt"]
+    of: ["Endpoint Manager", "Cloud Services Appliance", null]
+  - name: "Neurons for ZTA gateways"
+    seen: {"cna": 2}
+    versions: ["22.8R2.2", "22.7R2", "22.7R2.3", "22.7R2.5"]
+    together: ["Connect Secure", "Policy Secure"]
+    expect: "product"
+  - name: "Policy Secure"
+    seen: {"cna": 2}
+    versions: ["22.7R1.4", "22.7R1", "22.7R1.2"]
+    together: ["Connect Secure", "Neurons for ZTA gateways"]
+    expect: "product"
+  - name: "Sentry"
+    seen: {"kev": 1, "cna": 1}
+    versions: ["R10.5.2", "R10.6.2", "R10.7.1"]
+    expect: "product"
+  - name: "Virtual Traffic Manager"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "vTM"
+    seen: {"cna": 1}
+    versions: ["22.7R2", "22.2R1"]
+    expect: ["alias", "doubt"]
+    of: ["Virtual Traffic Manager", null]
+- id: P02
+  publisher: fortinet
+  name: "Fortinet"
+  status: proposed
+  existing:
+  - fortinet/fortigate-60f
+  - fortinet/fortios
+  names:
+  - name: "FortiAnalyzer"
+    seen: {"cna": 1}
+    versions: ["7.6.0", "7.6.5", "7.4.0", "7.4.9"]
+    together: ["FortiManager", "FortiNAC-F", "FortiOS", "FortiProxy", "FortiWeb"]
+    expect: "product"
+  - name: "FortiCamera"
+    seen: {"cna": 1}
+    versions: ["2.1.0", "2.1.3", "2.0.0", "1.1.0"]
+    together: ["FortiMail", "FortiNDR", "FortiRecorder", "FortiVoice"]
+    expect: "product"
+  - name: "FortiClient EMS"
+    seen: {"kev": 3}
+    expect: "product"
+  - name: "FortiClientEMS"
+    seen: {"cna": 3}
+    versions: ["7.4.4", "7.4.5", "7.4.6", "7.2.0"]
+    expect: "alias"
+    of: "FortiClient EMS"
+  - name: "FortiGate"
+    seen: {"cna": 1}
+    versions: ["5.6.9 and below", "6.0.5 and below", "6.2.0"]
+    expect: ["series", "doubt"]
+  - name: "FortiMail"
+    seen: {"kev": 1, "cna": 2}
+    versions: ["8.0.0", "8.0.1", "7.6.0", "7.6.6"]
+    together: ["FortiCamera", "FortiNDR", "FortiRecorder", "FortiVoice"]
+    expect: "product"
+  - name: "FortiManager"
+    seen: {"cna": 2, "kev": 1}
+    versions: ["7.6.0", "7.6.5", "7.4.0", "7.4.9"]
+    together: ["FortiAnalyzer", "FortiNAC-F", "FortiOS", "FortiProxy", "FortiWeb"]
+    expect: "product"
+  - name: "FortiNAC-F"
+    seen: {"cna": 1}
+    versions: ["7.6.3", "7.6.5"]
+    together: ["FortiAnalyzer", "FortiManager", "FortiOS", "FortiProxy", "FortiWeb"]
+    expect: "product"
+  - name: "FortiNDR"
+    seen: {"cna": 1}
+    versions: ["7.6.0", "7.4.0", "7.4.7", "7.2.0"]
+    together: ["FortiCamera", "FortiMail", "FortiRecorder", "FortiVoice"]
+    expect: "product"
+  - name: "FortiOS"
+    seen: {"cna": 9, "kev": 3}
+    versions: ["7.6.0", "7.6.4", "7.4.0", "7.4.9"]
+    together: ["FortiAnalyzer", "FortiManager", "FortiNAC-F", "FortiPAM", "FortiProxy", "FortiSwitchManager", "FortiWeb"]
+    expect: "alias"
+    of: "fortinet/fortios"
+  - name: "FortiOS and FortiProxy"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "FortiPAM"
+    seen: {"cna": 2}
+    versions: ["1.7.0", "1.6.0", "1.6.2", "1.5.0"]
+    together: ["FortiOS", "FortiProxy", "FortiSwitchManager"]
+    expect: "product"
+  - name: "FortiProxy"
+    seen: {"cna": 7}
+    versions: ["7.6.0", "7.6.4", "7.4.0", "7.4.11"]
+    together: ["FortiAnalyzer", "FortiManager", "FortiNAC-F", "FortiOS", "FortiPAM", "FortiSwitchManager", "FortiWeb"]
+    expect: "product"
+  - name: "FortiRecorder"
+    seen: {"cna": 1}
+    versions: ["7.2.0", "7.2.3", "7.0.0", "7.0.5"]
+    together: ["FortiCamera", "FortiMail", "FortiNDR", "FortiVoice"]
+    expect: "product"
+  - name: "FortiSandbox"
+    seen: {"kev": 2, "cna": 2}
+    versions: ["5.0.0", "5.0.5", "4.4.0", "4.4.8"]
+    together: ["FortiSandbox Cloud", "FortiSandbox PaaS"]
+    expect: "product"
+  - name: "FortiSandbox Cloud"
+    seen: {"cna": 1}
+    versions: ["5.0.4", "5.0.5"]
+    together: ["FortiSandbox", "FortiSandbox PaaS"]
+    expect: ["edition", "product"]
+    of: ["FortiSandbox", null]
+  - name: "FortiSandbox PaaS"
+    seen: {"cna": 2}
+    versions: ["5.0.4", "5.0.5", "23.4.4374", "23.4.4350"]
+    together: ["FortiSandbox", "FortiSandbox Cloud"]
+    expect: ["edition", "product"]
+    of: ["FortiSandbox", null]
+  - name: "FortiSwitchManager"
+    seen: {"cna": 4}
+    versions: ["7.2.0", "7.2.7", "7.0.0", "7.0.6"]
+    together: ["FortiOS", "FortiPAM", "FortiProxy"]
+    expect: "product"
+  - name: "FortiVoice"
+    seen: {"cna": 1}
+    versions: ["7.2.0", "7.0.0", "7.0.6", "6.4.0"]
+    together: ["FortiCamera", "FortiMail", "FortiNDR", "FortiRecorder"]
+    expect: "product"
+  - name: "FortiWeb"
+    seen: {"cna": 4, "kev": 3}
+    versions: ["8.0.0", "8.0.3", "7.6.0", "7.6.6"]
+    together: ["FortiAnalyzer", "FortiManager", "FortiNAC-F", "FortiOS", "FortiProxy"]
+    expect: "product"
+  - name: "Multiple Products"
+    seen: {"kev": 6}
+    expect: "series"
+- id: P03
+  publisher: sonicwall
+  name: "SonicWall"
+  status: proposed
+  names:
+  - name: "SMA100"
+    seen: {"cna": 2}
+    versions: ["10.2.1.9-57sv and earlier versions", "9.0.0.10-28sv and earlier", "10.2.0.7-34sv and earlier", "10.2.1.0-17sv and earlier"]
+    expect: "product"
+  - name: "SMA100 Appliances"
+    seen: {"kev": 2}
+    expect: "alias"
+    of: "SMA100"
+  - name: "SMA1000"
+    seen: {"cna": 6}
+    versions: ["12.4.3-03453 (platform-hotfix) and older versions", "12.5.0-02835 (platform-hotfix) and older versions", "12.4.3-03245", "12.4.3-03434"]
+    expect: "product"
+  - name: "SMA1000 appliance"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "SMA1000"
+  - name: "SMA1000 Appliances"
+    seen: {"kev": 5}
+    expect: "alias"
+    of: "SMA1000"
+  - name: "SonicOS"
+    seen: {"cna": 3, "kev": 2}
+    versions: ["7.3.3-7015 and older versions", "8.2.2-8015 and older versions", "7.1.1-7058 and older versions", "7.1.2-7019"]
+    expect: "product"
+  - name: "SonicOS SSLVPN"
+    seen: {"kev": 1}
+    expect: ["series", "edition", "doubt"]
+    of: [null, "SonicOS", null]
+- id: P04
+  publisher: gitlab
+  name: "GitLab"
+  status: proposed
+  existing:
+  - gitlab/gitlab
+  - gitlab/gitlab-runner
+  names:
+  - name: "Community and Enterprise Editions"
+    seen: {"kev": 1}
+    expect: ["series", "edition", "alias"]
+    of: [null, "gitlab/gitlab", "gitlab/gitlab"]
+  - name: "Community Edition and Enterprise Edition"
+    seen: {"kev": 2}
+    expect: ["series", "edition", "alias"]
+    of: [null, "gitlab/gitlab", "gitlab/gitlab"]
+  - name: "GitLab"
+    seen: {"cna": 5, "kev": 1}
+    versions: ["19.2", "19.2.8", "19.3", "19.3.5"]
+    expect: "alias"
+    of: "gitlab/gitlab"
+  - name: "GitLab CE/EE"
+    seen: {"kev": 1}
+    expect: ["series", "edition", "alias"]
+    of: [null, "gitlab/gitlab", "gitlab/gitlab"]
+- id: P05
+  publisher: citrix
+  name: "Citrix"
+  status: proposed
+  existing:
+  - citrix/citrix-virtual-apps-and-desktops
+  names:
+  - name: "ADC"
+    seen: {"cna": 9}
+    versions: ["14.1-73.41", "13.1-64.28", "14.1-73.41 FIPS", "13.1-37.282"]
+    together: ["Gateway"]
+    expect: ["alias", "doubt"]
+    of: ["NetScaler ADC", null]
+  - name: "Citrix Session Recording"
+    seen: {"cna": 2}
+    versions: ["2407 Current Release", "24.5.200.8", "1912 LTSR", "CU9 hotfix 19.12.9100.6"]
+    expect: "product"
+  - name: "Gateway"
+    seen: {"cna": 9}
+    versions: ["14.1-73.41", "13.1-64.28", "14.1-73.37", "13.1-64.23"]
+    together: ["ADC"]
+    expect: ["alias", "doubt"]
+    of: ["NetScaler Gateway", null]
+  - name: "NetScaler"
+    seen: {"kev": 6}
+    expect: ["series", "doubt"]
+  - name: "NetScaler ADC"
+    seen: {"cna": 2}
+    versions: ["14.1", "12.35", "13.1", "51.15"]
+    together: ["NetScaler Gateway"]
+    expect: "product"
+  - name: "NetScaler ADC and Gateway"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "NetScaler ADC and NetScaler Gateway"
+    seen: {"kev": 3}
+    expect: "series"
+  - name: "NetScaler Gateway"
+    seen: {"cna": 1}
+    versions: ["14.1", "12.35", "13.1", "51.15"]
+    together: ["NetScaler ADC"]
+    expect: ["product", "edition"]
+    of: [null, "NetScaler ADC"]
+  - name: "Session Recording"
+    seen: {"kev": 2}
+    expect: "alias"
+    of: "Citrix Session Recording"
+- id: P06
+  publisher: progress
+  name: "Progress"
+  status: proposed
+  names:
+  - name: "ECS Connections Manager"
+    seen: {"cna": 1}
+    versions: ["V7.2.60.0", "V7.2.63.2"]
+    together: ["LoadMaster", "MOVEit WAF", "Object Scale Connection Manager"]
+    expect: ["edition", "product", "doubt"]
+    of: ["LoadMaster", null, null]
+  - name: "Kemp LoadMaster"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "LoadMaster"
+  - name: "LoadMaster"
+    seen: {"kev": 1, "cna": 2}
+    versions: ["V7.2.60.0", "V7.2.63.2", "V7.2.54.12", "V7.2.54.18"]
+    together: ["ECS Connections Manager", "MOVEit WAF", "Object Scale Connection Manager"]
+    expect: "product"
+  - name: "MOVEit WAF"
+    seen: {"cna": 1}
+    versions: ["V7.2.60.0", "V7.2.63.2"]
+    together: ["ECS Connections Manager", "LoadMaster", "Object Scale Connection Manager"]
+    expect: ["edition", "product", "doubt"]
+    of: ["LoadMaster", null, null]
+  - name: "Object Scale Connection Manager"
+    seen: {"cna": 1}
+    versions: ["V7.2.60.0", "V7.2.63.2"]
+    together: ["ECS Connections Manager", "LoadMaster", "MOVEit WAF"]
+    expect: ["edition", "product", "doubt"]
+    of: ["LoadMaster", null, null]
+  - name: "Telerik Report Server"
+    seen: {"kev": 1, "cna": 1}
+    versions: ["1.0.0", "10.1.24.514"]
+    expect: "product"
+  - name: "WhatsUp Gold"
+    seen: {"kev": 2, "cna": 2}
+    versions: ["2023.1.0", "2023.1.3", "2024.0.0"]
+    expect: "product"
+- id: P07
+  publisher: beyondtrust
+  name: "BeyondTrust"
+  status: proposed
+  names:
+  - name: "Privileged Remote Access"
+    seen: {"cna": 1}
+    versions: ["24.3.1"]
+    together: ["Remote Support"]
+    expect: "product"
+  - name: "Privileged Remote Access (PRA) and Remote Support (RS)"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "Remote Support"
+    seen: {"kev": 1, "cna": 2}
+    versions: ["26.2.3", "24.3.1"]
+    together: ["Privileged Remote Access"]
+    expect: "product"
+  - name: "Remote Support (RS) and Privileged Remote Access (PRA)"
+    spellings: ["Remote Support(RS) & Privileged Remote Access(PRA)"]
+    seen: {"kev": 1, "cna": 2}
+    versions: ["RS 25.3.1", "PRA 24.3.4", "24.3.1"]
+    expect: "series"
+- id: P08
+  publisher: gladinet
+  name: "Gladinet"
+  status: proposed
+  names:
+  - name: "CentreStack"
+    seen: {"kev": 1, "cna": 1}
+    versions: ["16.4.10315.56368"]
+    expect: "product"
+  - name: "CentreStack and Triofox"
+    spellings: ["CentreStack and TrioFox"]
+    seen: {"kev": 2, "cna": 2}
+    versions: ["16.12.10420.56791", "16.7.10368.56560"]
+    expect: "series"
+  - name: "Triofox"
+    spellings: ["TrioFox"]
+    seen: {"kev": 1, "cna": 1}
+    versions: ["16.7.10368.56560"]
+    expect: "product"
+- id: P09
+  publisher: draytek
+  name: "DrayTek"
+  status: proposed
+  names:
+  - name: "Draytek VigorConnect"
+    seen: {"cna": 2}
+    versions: ["1.6.0-B3"]
+    expect: "alias"
+    of: "VigorConnect"
+  - name: "Multiple Vigor Routers"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Vigor Routers"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Vigor2960"
+    seen: {"cna": 1}
+    versions: ["1.5.1.4"]
+    together: ["Vigor300B"]
+    expect: "product"
+  - name: "Vigor300B"
+    seen: {"cna": 1}
+    versions: ["1.5.1.4"]
+    together: ["Vigor2960"]
+    expect: "product"
+  - name: "VigorConnect"
+    seen: {"kev": 2}
+    expect: "product"
+- id: P10
+  publisher: d-link
+  name: "D-Link"
+  status: proposed
+  names:
+  - name: "DCS-2530L and DCS-2670L Devices"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "DIR-600 Router"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "DIR-605 Router"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "DIR-820 Router"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "DIR-823X"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "DIR-859"
+    seen: {"cna": 1}
+    versions: ["1.06B01"]
+    expect: "product"
+  - name: "DIR-859 Router"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "DIR-859"
+  - name: "DNR-322L"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "DNS-320L"
+    seen: {"cna": 2}
+    versions: ["20240403"]
+    together: ["DNS-325", "DNS-327L", "DNS-340L"]
+    expect: "product"
+  - name: "DNS-325"
+    seen: {"cna": 2}
+    versions: ["20240403"]
+    together: ["DNS-320L", "DNS-327L", "DNS-340L"]
+    expect: "product"
+  - name: "DNS-327L"
+    seen: {"cna": 2}
+    versions: ["20240403"]
+    together: ["DNS-320L", "DNS-325", "DNS-340L"]
+    expect: "product"
+  - name: "DNS-340L"
+    seen: {"cna": 2}
+    versions: ["20240403"]
+    together: ["DNS-320L", "DNS-325", "DNS-327L"]
+    expect: "product"
+  - name: "DSL-2750B Devices"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "Multiple NAS Devices"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "Routers"
+    seen: {"kev": 1}
+    expect: "series"
+- id: P11
+  publisher: the-apache-software-foundation
+  name: "Apache"
+  status: proposed
+  existing:
+  - the-apache-software-foundation/apache-activemq-classic
+  - the-apache-software-foundation/apache-artemis
+  - the-apache-software-foundation/apache-flink
+  - the-apache-software-foundation/apache-http-server
+  - the-apache-software-foundation/apache-struts
+  - the-apache-software-foundation/apache-tomcat
+  - the-apache-software-foundation/apache-kafka
+  names:
+  - name: "ActiveMQ"
+    seen: {"kev": 1}
+    expect: ["alias", "series", "doubt"]
+    of: ["the-apache-software-foundation/apache-activemq-classic", null, null]
+  - name: "Apache ActiveMQ"
+    seen: {"cna": 1}
+    versions: ["5.19.4", "6.0.0", "6.2.3"]
+    together: ["Apache ActiveMQ All", "Apache ActiveMQ Broker"]
+    expect: ["alias", "series", "doubt"]
+    of: ["the-apache-software-foundation/apache-activemq-classic", null, null]
+  - name: "Apache ActiveMQ All"
+    seen: {"cna": 1}
+    versions: ["5.19.4", "6.0.0", "6.2.3"]
+    together: ["Apache ActiveMQ", "Apache ActiveMQ Broker"]
+    expect: ["series", "edition", "doubt"]
+    of: [null, "the-apache-software-foundation/apache-activemq-classic", null]
+  - name: "Apache ActiveMQ Broker"
+    seen: {"cna": 1}
+    versions: ["5.19.4", "6.0.0", "6.2.3"]
+    together: ["Apache ActiveMQ", "Apache ActiveMQ All"]
+    expect: ["series", "edition", "doubt"]
+    of: [null, "the-apache-software-foundation/apache-activemq-classic", null]
+  - name: "Apache Flink"
+    seen: {"cna": 1}
+    versions: ["Apache Flink 1.11.0 to 1.11.2"]
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-flink"
+  - name: "Apache HTTP Server"
+    seen: {"cna": 1}
+    versions: ["2.4.0", "2.4.59"]
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-http-server"
+  - name: "Apache HugeGraph-Server"
+    seen: {"cna": 1}
+    versions: ["1.0.0", "1.3.0"]
+    expect: "product"
+  - name: "Apache OFBiz"
+    seen: {"cna": 3}
+    versions: ["18.12.16", "18.12.14", "18.12.13"]
+    expect: "product"
+  - name: "Apache Superset"
+    seen: {"cna": 1}
+    versions: ["2.0.1"]
+    expect: "product"
+  - name: "Apache Tomcat"
+    seen: {"cna": 2}
+    versions: ["11.0.20", "10.1.53", "9.0.116", "11.0.0-M1"]
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-tomcat"
+  - name: "Flink"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-flink"
+  - name: "HTTP Server"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-http-server"
+  - name: "HugeGraph-Server"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "Apache HugeGraph-Server"
+  - name: "OFBiz"
+    seen: {"kev": 3}
+    expect: "alias"
+    of: "Apache OFBiz"
+  - name: "Struts"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-struts"
+  - name: "Superset"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "Apache Superset"
+  - name: "Tomcat"
+    seen: {"kev": 2}
+    expect: "alias"
+    of: "the-apache-software-foundation/apache-tomcat"
+- id: P12
+  publisher: adobe
+  name: "Adobe"
+  status: proposed
+  existing:
+  - adobe/adobe-coldfusion
+  - adobe/magento
+  names:
+  - name: "Acrobat"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "Acrobat 2024"
+    seen: {"cna": 1}
+    versions: ["24.001.30356", "24.001.30362 (Win), 24.001.30360 (Mac)"]
+    together: ["Acrobat DC", "Acrobat Reader DC"]
+    expect: "edition"
+    of: "Acrobat"
+  - name: "Acrobat and Reader"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "Acrobat DC"
+    seen: {"cna": 1}
+    versions: ["26.001.21367", "26.001.21411"]
+    together: ["Acrobat 2024", "Acrobat Reader DC"]
+    expect: ["edition", "alias"]
+    of: ["Acrobat", "Acrobat"]
+  - name: "Acrobat Reader DC"
+    seen: {"cna": 1}
+    versions: ["26.001.21367", "26.001.21411"]
+    together: ["Acrobat 2024", "Acrobat DC"]
+    expect: ["product", "doubt"]
+  - name: "Adobe Acrobat and Reader"
+    seen: {"cna": 1}
+    versions: ["2020.009.20074 and earlier, 2020.001.30002, 2017.011.30171 and earlier, and 2015.006.30523 and earlier versions"]
+    expect: "series"
+  - name: "Adobe ColdFusion ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier"
+    seen: {"cna": 1}
+    versions: ["Adobe ColdFusion ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier"]
+    expect: ["edition", "doubt"]
+    of: ["adobe/adobe-coldfusion", null]
+  - name: "Adobe Commerce"
+    seen: {"cna": 5}
+    versions: ["2.4.9, 2.4.8-p5, 2.4.7-p10, 2.4.6-p15, 2.4.5-p17, 2.4.4-p18", "2.4.9-2026-jul, 2.4.8-2026-jul, 2.4.7-2026-jul, 2.4.6-2026-jul, 2.4.5-2026-jul, 2.4.4-2026-jul", "2.4.9-2026-jul, 2.4.8-2026-aug, 2.4.7-2026-aug, 2.4.6-2026-aug, 2.4.5-2026-aug, 2.4.4-2026-aug", "2.4.9-2026-aug, 2.4.8-2026-aug, 2.4.7-2026-aug, 2.4.6-2026-aug, 2.4.5-2026-aug, 2.4.4-2026-aug"]
+    together: ["Adobe Commerce B2B", "Adobe Commerce Events", "Magento Open Source"]
+    expect: ["edition", "alias"]
+    of: ["adobe/magento", "adobe/magento"]
+  - name: "Adobe Commerce B2B"
+    seen: {"cna": 3}
+    versions: ["1.5.3, 1.5.2-p5, 1.4.2-p10, 1.3.4-p17, 1.3.3-p18", "1.5.3-2026-jul, 1.5.2-2026-jul, 1.4.2-2026-jul, 1.3.4-2026-jul, 1.3.3-2026-jul", "1.5.3-2026-aug, 1.5.2-2026-aug, 1.4.2-2026-aug, 1.3.4-2026-aug, 1.3.3-2026-aug", "Hotfix for CVE-2026-7565"]
+    together: ["Adobe Commerce", "Adobe Commerce Events", "Magento Open Source"]
+    expect: ["product", "series"]
+  - name: "Adobe Commerce Events"
+    seen: {"cna": 1}
+    versions: ["1.20.0", "1.21.0"]
+    together: ["Adobe Commerce", "Adobe Commerce B2B", "Magento Open Source"]
+    expect: ["product", "series"]
+  - name: "Adobe Experience Manager"
+    seen: {"cna": 1}
+    versions: ["6.5.23"]
+    expect: "product"
+  - name: "ColdFusion"
+    seen: {"kev": 5, "cna": 3}
+    versions: ["2021.12", "2023.0.0.330468", "cf2023U1"]
+    expect: "alias"
+    of: "adobe/adobe-coldfusion"
+  - name: "ColdFusion 2023"
+    seen: {"cna": 1}
+    versions: ["20", "21"]
+    together: ["ColdFusion 2025"]
+    expect: "edition"
+    of: "adobe/adobe-coldfusion"
+  - name: "ColdFusion 2025"
+    seen: {"cna": 1}
+    versions: ["9", "10"]
+    together: ["ColdFusion 2023"]
+    expect: "edition"
+    of: "adobe/adobe-coldfusion"
+  - name: "Commerce and Magento"
+    spellings: ["Commerce and Magento"]
+    seen: {"kev": 4}
+    expect: "series"
+  - name: "Commerce and Magento Open Source"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Experience Manager (AEM) Forms"
+    seen: {"kev": 1}
+    expect: ["series", "edition", "doubt"]
+    of: ["Adobe Experience Manager", "Adobe Experience Manager", null]
+  - name: "Flash Player"
+    seen: {"kev": 4}
+    expect: "product"
+  - name: "Magento Open Source"
+    seen: {"cna": 3}
+    versions: ["2.4.9, 2.4.8-p5, 2.4.7-p10, 2.4.6-p15", "2.4.9-2026-jul, 2.4.8-2026-jul, 2.4.7-2026-jul, 2.4.6-2026-jul", "2.4.9-2026-aug, 2.4.8-2026-aug, 2.4.7-2026-aug, 2.4.6-2026-aug", "Hotfix for CVE-2026-7565"]
+    together: ["Adobe Commerce", "Adobe Commerce B2B", "Adobe Commerce Events"]
+    expect: ["edition", "alias"]
+    of: ["adobe/magento", "adobe/magento"]
+- id: P13
+  publisher: atlassian
+  name: "Atlassian"
+  status: proposed
+  existing:
+  - atlassian/bamboo
+  - atlassian/bitbucket
+  - atlassian/confluence
+  - atlassian/jira-service-management
+  - atlassian/jira-software
+  names:
+  - name: "Bamboo Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 10.2.24 and later", "Patch version 12.1.12 and later"]
+    together: ["Bitbucket Data Center", "Confluence Data Center", "Crowd Data Center", "Crucible Data Center", "Fisheye Data Center", "Jira Service Management Data Center", "Jira Software Data Center"]
+    expect: ["edition", "alias"]
+    of: ["atlassian/bamboo", "atlassian/bamboo"]
+  - name: "Bitbucket Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 10.2.8 and later", "Patch version 10.5.1 and later", "Patch version 9.4.26 and later"]
+    together: ["Bamboo Data Center", "Confluence Data Center", "Crowd Data Center", "Crucible Data Center", "Fisheye Data Center", "Jira Service Management Data Center", "Jira Software Data Center"]
+    expect: ["edition", "alias"]
+    of: ["atlassian/bitbucket", "atlassian/bitbucket"]
+  - name: "Confluence Data Center"
+    seen: {"cna": 2}
+    versions: ["All other versions", "Patch version 10.2.19 and later", "Patch version 9.2.26 and later", "< 8.0.0"]
+    together: ["Bamboo Data Center", "Bitbucket Data Center", "Confluence Server", "Crowd Data Center", "Crucible Data Center", "Fisheye Data Center", "Jira Service Management Data Center", "Jira Software Data Center"]
+    expect: ["edition", "alias"]
+    of: ["atlassian/confluence", "atlassian/confluence"]
+  - name: "Confluence Data Center and Server"
+    seen: {"kev": 1}
+    expect: ["series", "edition", "alias"]
+    of: [null, "atlassian/confluence", "atlassian/confluence"]
+  - name: "Confluence Server"
+    seen: {"cna": 1}
+    versions: ["< 8.0.0", ">= 8.0.0", ">= 8.1.0", ">= 8.2.0"]
+    together: ["Confluence Data Center"]
+    expect: ["edition", "alias"]
+    of: ["atlassian/confluence", "atlassian/confluence"]
+  - name: "Crowd Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 7.2.4 and later", "Patch version 7.1.7 and later", "Patch version 7.0.3 and later"]
+    together: ["Bamboo Data Center", "Bitbucket Data Center", "Confluence Data Center", "Crucible Data Center", "Fisheye Data Center", "Jira Service Management Data Center", "Jira Software Data Center"]
+    expect: "product"
+  - name: "Crucible Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 4.9.15 and later"]
+    together: ["Bamboo Data Center", "Bitbucket Data Center", "Confluence Data Center", "Crowd Data Center", "Fisheye Data Center", "Jira Service Management Data Center", "Jira Software Data Center"]
+    expect: "product"
+  - name: "Fisheye Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 4.9.15 and later"]
+    together: ["Bamboo Data Center", "Bitbucket Data Center", "Confluence Data Center", "Crowd Data Center", "Crucible Data Center", "Jira Service Management Data Center", "Jira Software Data Center"]
+    expect: "product"
+  - name: "Jira Data Center"
+    seen: {"cna": 1}
+    versions: ["unspecified", "8.5.14", "8.6.0", "8.13.6"]
+    together: ["Jira Server"]
+    expect: ["edition", "alias", "doubt"]
+    of: ["atlassian/jira-software", "atlassian/jira-software", null]
+  - name: "Jira Server"
+    seen: {"cna": 1}
+    versions: ["unspecified", "8.5.14", "8.6.0", "8.13.6"]
+    together: ["Jira Data Center"]
+    expect: ["edition", "alias", "doubt"]
+    of: ["atlassian/jira-software", "atlassian/jira-software", null]
+  - name: "Jira Server and Data Center"
+    seen: {"kev": 1}
+    expect: ["series", "edition", "alias", "doubt"]
+    of: [null, "atlassian/jira-software", "atlassian/jira-software", null]
+  - name: "Jira Service Management Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 11.3.12 and later", "Patch version 10.3.26 and later", "Patch version 5.12.40 and later"]
+    together: ["Bamboo Data Center", "Bitbucket Data Center", "Confluence Data Center", "Crowd Data Center", "Crucible Data Center", "Fisheye Data Center", "Jira Software Data Center"]
+    expect: ["edition", "alias"]
+    of: ["atlassian/jira-service-management", "atlassian/jira-service-management"]
+  - name: "Jira Software Data Center"
+    seen: {"cna": 1}
+    versions: ["All other versions", "Patch version 11.3.12 and later", "Patch version 10.3.26 and later", "Patch version 9.12.40 and later"]
+    together: ["Bamboo Data Center", "Bitbucket Data Center", "Confluence Data Center", "Crowd Data Center", "Crucible Data Center", "Fisheye Data Center", "Jira Service Management Data Center"]
+    expect: ["edition", "alias"]
+    of: ["atlassian/jira-software", "atlassian/jira-software"]
+  - name: "Multiple Products"
+    seen: {"kev": 1}
+    expect: "series"
+- id: P14
+  publisher: check-point
+  name: "Check Point"
+  status: proposed
+  names:
+  - name: "Check Point Quantum Gateway, Spark Gateway and CloudGuard Network"
+    seen: {"cna": 1}
+    versions: ["Check Point Quantum Gateway and CloudGuard Network versions R81.20, R81.10, R81, R80.40 and Check Point Spark versions R81.10, R80.20."]
+    expect: "series"
+  - name: "Multi-Domain Security Management"
+    seen: {"cna": 1}
+    versions: ["R82.10 with Jumbo Hotfix Take 36 or below", "R82 with Jumbo Hotfix Take 118 or below", "R81.20 with Jumbo Hotfix Take 158 or below", "R81.10, R81, R80.30, R80.20, R80.10, R80, and R77.30"]
+    together: ["Quantum Security Management"]
+    expect: "product"
+  - name: "Multiple Products"
+    seen: {"kev": 3}
+    expect: "series"
+  - name: "Quantum Security Gateway"
+    seen: {"cna": 3}
+    versions: ["R82.10 with Jumbo Hotfix Take 50 or below", "R82.20 with Jumbo Hotfix Take 10 or below", "R82 with Jumbo Hotfix Take 130 or below", "R81.20 with Jumbo Hotfix Take 173 or below"]
+    together: ["Quantum Security Management", "Spark Firewalls"]
+    expect: "product"
+  - name: "Quantum Security Gateways"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "Quantum Security Gateway"
+  - name: "Quantum Security Management"
+    seen: {"cna": 3}
+    versions: ["R82.10 with Jumbo Hotfix Take 50 or below", "R82.20 with Jumbo Hotfix Take 10 or below", "R82 with Jumbo Hotfix Take 130 or below", "R81.20 with Jumbo Hotfix Take 173 or below"]
+    together: ["Multi-Domain Security Management", "Quantum Security Gateway"]
+    expect: "product"
+  - name: "Security Gateway"
+    seen: {"kev": 1}
+    expect: ["alias", "doubt", "product"]
+    of: ["Quantum Security Gateway", null, null]
+  - name: "SmartConsole"
+    seen: {"kev": 1}
+    expect: ["product", "series"]
+  - name: "Spark Firewalls"
+    seen: {"cna": 1}
+    versions: ["R80.20.X, R81.10.X, and R82.00.X"]
+    together: ["Quantum Security Gateway"]
+    expect: ["product", "series"]
+- id: P15
+  publisher: cisco
+  name: "Cisco"
+  status: proposed
+  existing:
+  - cisco/cisco-ios-xe
+  - cisco/clamav
+  names:
+  - name: "Adaptive Security Appliance (ASA)"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+    seen: {"kev": 4}
+    expect: "series"
+  - name: "BroadWorks"
+    seen: {"kev": 1}
+    expect: "product"
+  - name: "Catalyst SD-WAN"
+    seen: {"kev": 1}
+    expect: ["series", "doubt"]
+  - name: "Catalyst SD-WAN Controller and Manager"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Catalyst SD-WAN Manager"
+    seen: {"kev": 5}
+    expect: "product"
+  - name: "Catalyst SD-WAN Manger"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "Catalyst SD-WAN Manager"
+  - name: "Cisco Adaptive Security Appliance (ASA) Software"
+    seen: {"cna": 4}
+    versions: ["9.8.1", "9.8.1.5", "9.8.1.7", "9.8.2"]
+    together: ["Cisco Firepower Threat Defense Software"]
+    expect: "alias"
+    of: "Adaptive Security Appliance (ASA)"
+  - name: "Cisco BroadWorks"
+    seen: {"cna": 1}
+    versions: ["N/A"]
+    expect: "alias"
+    of: "BroadWorks"
+  - name: "Cisco Catalyst SD-WAN"
+    seen: {"cna": 1}
+    versions: ["18.3.1", "19.2.1", "17.2.4", "19.3.0"]
+    together: ["Cisco Catalyst SD-WAN Manager", "Cisco SD-WAN vContainer", "Cisco SD-WAN vEdge Cloud", "Cisco SD-WAN vEdge Router"]
+    expect: ["series", "doubt"]
+  - name: "Cisco Catalyst SD-WAN Controller"
+    seen: {"cna": 2}
+    versions: ["20.6.4", "20.9.2", "20.3.6", "20.7.2"]
+    together: ["Cisco Catalyst SD-WAN Manager"]
+    expect: "product"
+  - name: "Cisco Catalyst SD-WAN Manager"
+    seen: {"cna": 9}
+    versions: ["20.1.12", "19.2.1", "18.4.4", "18.4.5"]
+    together: ["Cisco Catalyst SD-WAN", "Cisco Catalyst SD-WAN Controller", "Cisco SD-WAN vContainer", "Cisco SD-WAN vEdge Cloud", "Cisco SD-WAN vEdge Router"]
+    expect: "alias"
+    of: "Catalyst SD-WAN Manager"
+  - name: "Cisco Firepower Threat Defense Software"
+    seen: {"cna": 3}
+    versions: ["6.2.3", "6.2.3.1", "6.2.3.2", "6.2.3.3"]
+    together: ["Cisco Adaptive Security Appliance (ASA) Software"]
+    expect: "product"
+  - name: "Cisco Identity Services Engine Software"
+    seen: {"cna": 3}
+    versions: ["3.1.0 p8", "3.1.0 p9", "3.3 Patch 2", "3.3 Patch 1"]
+    together: ["Cisco ISE Passive Identity Connector"]
+    expect: "product"
+  - name: "Cisco IOS XE Catalyst SD-WAN"
+    seen: {"cna": 1}
+    versions: ["16.9.1", "16.9.2", "16.9.3", "16.9.4"]
+    together: ["Cisco IOS XE Software", "IOS"]
+    expect: ["edition", "doubt"]
+    of: ["cisco/cisco-ios-xe", null]
+  - name: "Cisco IOS XE Software"
+    seen: {"cna": 1}
+    versions: ["3.5.0E", "3.5.1E", "3.5.2E", "3.5.3E"]
+    together: ["Cisco IOS XE Catalyst SD-WAN", "IOS"]
+    expect: "alias"
+    of: "cisco/cisco-ios-xe"
+  - name: "Cisco ISE Passive Identity Connector"
+    seen: {"cna": 2}
+    versions: ["3.4.0", "3.5.0", "3.2.0", "3.1.0"]
+    together: ["Cisco Identity Services Engine Software"]
+    expect: ["edition", "product", "doubt"]
+    of: ["Cisco Identity Services Engine Software", null, null]
+  - name: "Cisco NX-OS Software"
+    seen: {"cna": 1}
+    versions: ["8.2(5)", "7.3(6)N1(1a)", "7.3(5)D1(1)", "8.4(2)"]
+    expect: "product"
+  - name: "Cisco SD-WAN vContainer"
+    seen: {"cna": 1}
+    versions: ["18.4.5", "20.1.12", "18.3.6", "19.2.1"]
+    together: ["Cisco Catalyst SD-WAN", "Cisco Catalyst SD-WAN Manager", "Cisco SD-WAN vEdge Cloud", "Cisco SD-WAN vEdge Router"]
+    expect: ["product", "series"]
+  - name: "Cisco SD-WAN vEdge Cloud"
+    seen: {"cna": 1}
+    versions: ["19.2.1", "20.1.12", "18.4.4", "19.3.0"]
+    together: ["Cisco Catalyst SD-WAN", "Cisco Catalyst SD-WAN Manager", "Cisco SD-WAN vContainer", "Cisco SD-WAN vEdge Router"]
+    expect: ["product", "edition"]
+    of: [null, "Cisco SD-WAN vEdge Router"]
+  - name: "Cisco SD-WAN vEdge Router"
+    seen: {"cna": 1}
+    versions: ["18.4.303", "18.3.7", "19.3.0", "18.2.0"]
+    together: ["Cisco Catalyst SD-WAN", "Cisco Catalyst SD-WAN Manager", "Cisco SD-WAN vContainer", "Cisco SD-WAN vEdge Cloud"]
+    expect: "product"
+  - name: "Cisco Secure Email"
+    seen: {"cna": 3}
+    versions: ["14.0.0-698", "13.5.1-277", "13.0.0-392", "14.2.0-620"]
+    together: ["Cisco Secure Email and Web Manager"]
+    expect: ["alias", "series", "doubt"]
+    of: ["Secure Email Gateway", null, null]
+  - name: "Cisco Secure Email and Web Manager"
+    seen: {"cna": 1}
+    versions: ["13.6.2-023", "13.6.2-078", "13.0.0-249", "13.0.0-277"]
+    together: ["Cisco Secure Email"]
+    expect: "product"
+  - name: "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software"
+    seen: {"cna": 4}
+    versions: ["9.16.1", "9.16.1.28", "9.16.2", "9.16.2.3"]
+    together: ["Cisco Secure Firewall Threat Defense (FTD) Software"]
+    expect: "alias"
+    of: "Adaptive Security Appliance (ASA)"
+  - name: "Cisco Secure Firewall Management Center (FMC)"
+    seen: {"cna": 3}
+    versions: ["7.0.0", "7.0.0.1", "7.0.1", "7.1.0"]
+    expect: "product"
+  - name: "Cisco Secure Firewall Threat Defense (FTD) Software"
+    seen: {"cna": 4}
+    versions: ["7.0.0", "7.0.0.1", "7.0.1", "7.0.1.1"]
+    together: ["Cisco Secure Firewall Adaptive Security Appliance (ASA) Software"]
+    expect: "alias"
+    of: "Cisco Firepower Threat Defense Software"
+  - name: "Cisco Small Business RV Series Router Firmware"
+    seen: {"cna": 1}
+    versions: ["1.0.1.17", "1.0.2.03", "1.1.0.09", "1.1.1.19"]
+    expect: ["series", "doubt"]
+  - name: "Cisco Smart License Utility"
+    seen: {"cna": 1}
+    versions: ["2.1.0", "2.0.0", "2.2.0"]
+    expect: "product"
+  - name: "Cisco Unified Communications Manager"
+    seen: {"cna": 2}
+    versions: ["14", "14SU1", "14SU2", "14SU3"]
+    together: ["Cisco Unified Communications Manager IM and Presence Service", "Cisco Unity Connection"]
+    expect: "product"
+  - name: "Cisco Unified Communications Manager IM and Presence Service"
+    seen: {"cna": 1}
+    versions: ["12.5(1)", "12.5(1)SU1", "12.5(1)SU2", "12.5(1)SU3"]
+    together: ["Cisco Unified Communications Manager", "Cisco Unity Connection"]
+    expect: "product"
+  - name: "Cisco Unity Connection"
+    seen: {"cna": 1}
+    versions: ["12.5(1)", "12.5(1)SU1", "12.5(1)SU2", "12.5(1)SU3"]
+    together: ["Cisco Unified Communications Manager", "Cisco Unified Communications Manager IM and Presence Service"]
+    expect: "product"
+  - name: "Identity Services Engine"
+    seen: {"kev": 3}
+    expect: "alias"
+    of: "Cisco Identity Services Engine Software"
+  - name: "IOS"
+    seen: {"kev": 1, "cna": 1}
+    versions: ["12.2(55)SE", "12.2(55)SE3", "12.2(55)SE2", "12.2(58)SE"]
+    together: ["Cisco IOS XE Catalyst SD-WAN", "Cisco IOS XE Software"]
+    expect: "product"
+  - name: "IOS and IOS XE"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Multiple Products"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "NX-OS"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "Cisco NX-OS Software"
+  - name: "SD-WAN"
+    seen: {"kev": 1}
+    expect: ["series", "doubt"]
+  - name: "Secure Email Gateway"
+    seen: {"kev": 2}
+    expect: "product"
+  - name: "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
+    seen: {"kev": 2}
+    expect: "series"
+  - name: "Secure Firewall ASA Software and Cisco Secure FTD Software"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Secure Firewall Management Center (FMC)"
+    seen: {"kev": 2}
+    expect: "alias"
+    of: "Cisco Secure Firewall Management Center (FMC)"
+  - name: "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management"
+    seen: {"kev": 1}
+    expect: "series"
+  - name: "Small Business RV Series Routers"
+    seen: {"kev": 1}
+    expect: ["series", "doubt"]
+  - name: "Smart Licensing Utility"
+    seen: {"kev": 1}
+    expect: "alias"
+    of: "Cisco Smart License Utility"
+  - name: "Unified Communications Manager"
+    seen: {"kev": 2}
+    expect: "alias"
+    of: "Cisco Unified Communications Manager"

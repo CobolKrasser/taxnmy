@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CobolKrasser/taxnmy/referee/group.schema.json",
+  "title": "TAXNMY grouping of names per publisher",
+  "description": "The answer of the grouping step (TAX-26): one class per name of one publisher. Code checks it; see referee/prompt-group.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["names"],
+  "properties": {
+    "names": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "class", "of", "reason"],
+        "properties": {
+          "id": { "type": "string", "description": "The id of the name in <names>, such as n3." },
+          "class": { "enum": ["product", "alias", "edition", "series", "doubt"] },
+          "of": {
+            "type": ["string", "null"],
+            "description": "For alias and edition: the key of an existing product, or the id of a name classed product. For a series that is a part of one product: that product. Otherwise null."
+          },
+          "reason": { "type": "string", "description": "One sentence." }
+        }
+      }
+    }
+  }
+}

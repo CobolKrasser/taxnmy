@@ -1,0 +1,124 @@
+name: referee-group
+
+# The measurement of TAX-26: the grouping of names per publisher, on the test set of 15 publishers
+# (referee/testset/groups.yaml), three runs as one batch. Started by hand. No web search and no
+# sources: the names are the input.
+#
+#   estimate  the dry run: the estimate and which cases the tester has not checked. No key.
+#   measure   the measurement. Key in environment referee: Fred approves each run. Main only.
+#
+# The budget is the hard limit in code for every run together ($50, tools/referee.py). The grouping
+# refuses a case whose hand the tester has not checked (status: checked in the test set).
+
+on:
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "measure (costs money, about $0.61 for three runs on Opus 5.5 at low); off: the dry run only"
+        type: boolean
+        default: false
+      model:
+        type: string
+        default: "claude-opus-5-5"
+      effort:
+        type: string
+        default: "low"
+      repeats:
+        type: string
+        default: "3"
+      budget:
+        description: "dollars, for all runs together (hard limit)"
+        type: string
+        default: "50.00"
+
+permissions:
+  contents: read
+
+jobs:
+  estimate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Dry run (nothing sent)
+        env:
+          MODEL: ${{ inputs.model }}
+          EFFORT: ${{ inputs.effort }}
+          REPEATS: ${{ inputs.repeats }}
+        run: |
+          set -euo pipefail
+          python tools/group.py run --model "$MODEL" --effort "$EFFORT" --repeats "$REPEATS" --out "$RUNNER_TEMP/dry"
+          cat "$RUNNER_TEMP"/dry/*/summary.md >> "$GITHUB_STEP_SUMMARY"
+
+  measure:
+    needs: estimate
+    if: github.ref == 'refs/heads/main' && inputs.live
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    environment: referee
+    concurrency:
+      group: referee-judge  # one paid job at a time, so the budget cannot be spent twice
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the budget
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - name: Measure
+        id: measure
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ inputs.model }}
+          EFFORT: ${{ inputs.effort }}
+          REPEATS: ${{ inputs.repeats }}
+          BUDGET: ${{ inputs.budget }}
+        run: |
+          set -euo pipefail
+          python tools/group.py run --live --model "$MODEL" --effort "$EFFORT" --repeats "$REPEATS" --budget "$BUDGET" \
+            | tee measure.log
+          report=$(sed -n 's/^report: //p' measure.log)
+          if [ -n "$report" ]; then cat "$report" >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Keep run 1
+        if: always() && steps.measure.outputs.dir_1 != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.measure.outputs.name_1 }}
+          path: ${{ steps.measure.outputs.dir_1 }}
+          retention-days: 90
+      - name: Keep run 2
+        if: always() && steps.measure.outputs.dir_2 != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.measure.outputs.name_2 }}
+          path: ${{ steps.measure.outputs.dir_2 }}
+          retention-days: 90
+      - name: Keep run 3
+        if: always() && steps.measure.outputs.dir_3 != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.measure.outputs.name_3 }}
+          path: ${{ steps.measure.outputs.dir_3 }}
+          retention-days: 90
+      - name: Keep the report
+        if: always() && steps.measure.outputs.report != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-group-report-${{ github.run_id }}
+          path: ${{ steps.measure.outputs.report }}
+          retention-days: 90
