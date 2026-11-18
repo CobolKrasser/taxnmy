@@ -66,6 +66,36 @@ class Source:
     chars: int = 0  # characters of text before the cut to SOURCE_CHARS
     product: str = ""  # step 0: the product whose part was taken out
     instead_of: str = ""  # step 4: the refused URL this source was found for
+    final_url: str = ""  # where the request ended after its redirects, when that is not the URL requested (TAX-38)
+
+
+def _plain(url: str) -> tuple:
+    """An address without what does not make it another one (TAX-38): the protocol, the case of the
+    host, a default port, a slash at the end of the path, the fragment and the escaping of
+    characters that need none."""
+    parts = urllib.parse.urlsplit(url.strip())
+    host = (parts.hostname or "").rstrip(".")
+    port = parts.port if parts.port not in (None, 80, 443) else None
+    path = urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/:@!$&'()*+,;=-._~").rstrip("/") or "/"
+    query = urllib.parse.quote(urllib.parse.unquote(parts.query), safe="=&/:@!$'()*+,;-._~?")
+    return host, port, path, query
+
+
+def same_address(a: str, b: str) -> bool:
+    """Whether two URLs are the same address. Only the protocol and the way the address is written
+    may differ; another host, path or query is another address."""
+    try:
+        return _plain(a) == _plain(b)
+    except ValueError:
+        return a == b
+
+
+def moved(src: "Source") -> str:
+    """The address a source ended at when that is another address than the one proposed, or ''.
+    An API or a frame the reader chose itself is not a redirect (`fetched_url`)."""
+    end = src.final_url
+    asked = src.fetched_url if src.fetched_url and src.fetched_url == api_url(src.url) else src.url
+    return end if end and not same_address(end, asked) else ""
 
 
 def source_key(url: str, product: str = "") -> str:
@@ -367,7 +397,8 @@ class Fetcher:
 
     def _machine(self, url: str, product: str, resp: "Response", fetched: str) -> Source:
         text = machine.read(resp.body, resp.ctype, product) or ""
-        return Source(url, str(resp.status), text[:SOURCE_CHARS], "machine", fetched, len(text), product=product)
+        return Source(url, str(resp.status), text[:SOURCE_CHARS], "machine", fetched, len(text), product=product,
+                      final_url=_ended(resp, fetched or url))
 
     def _ladder(self, url: str, product: str = "") -> Source:
         target = api_url(url) or url
@@ -397,11 +428,13 @@ class Fetcher:
             return Source(url, str(resp.status), method=method, fetched_url=fetched)
 
         status = str(resp.status)
+        ended = _ended(resp, target)
         if product:
             found = machine.read(resp.body, resp.ctype, product)
             if found is not None:
                 self._raw[url] = (resp, fetched)
-                return Source(url, status, found[:SOURCE_CHARS], "machine", fetched, len(found), product=product)
+                return Source(url, status, found[:SOURCE_CHARS], "machine", fetched, len(found), product=product,
+                              final_url=ended)
         text = page_text(resp.body, resp.ctype, resp.charset)
         is_html = resp.ctype == "text/html"
 
@@ -422,17 +455,24 @@ class Fetcher:
                 self.log(f"browser failed on {target}: {type(exc).__name__}")
             else:
                 if b_status in REFUSED or b_status == 429:
-                    return Source(url, "refused", method="browser", fetched_url=fetched)
+                    return Source(url, "refused", method="browser", fetched_url=fetched, final_url=ended)
                 if len(b_text) >= MIN_CHARS:
-                    return Source(url, str(b_status), b_text[:SOURCE_CHARS], "browser", fetched, len(b_text))
+                    return Source(url, str(b_status), b_text[:SOURCE_CHARS], "browser", fetched, len(b_text),
+                                  final_url=ended)
 
         if len(text) < MIN_CHARS:
-            return Source(url, "unreadable", method=method, fetched_url=fetched, chars=len(text))
-        return Source(url, status, text[:SOURCE_CHARS], method, fetched, len(text))
+            return Source(url, "unreadable", method=method, fetched_url=fetched, chars=len(text), final_url=ended)
+        return Source(url, status, text[:SOURCE_CHARS], method, fetched, len(text), final_url=ended)
 
     def close(self) -> None:
         if self.browser is not None and hasattr(self.browser, "close"):
             self.browser.close()
+
+
+def _ended(resp: "Response", requested: str) -> str:
+    """The address a response came from after its redirects, when that differs from `requested`."""
+    end = resp.final_url or ""
+    return end if end and end != requested else ""
 
 
 class StoredFetcher:

@@ -1,6 +1,6 @@
 name: referee-pr-testset
 
-# The test set as one pull request (TAX-17): the 77 cases of referee/testset/cases.yaml through the
+# The test set as one pull request (TAX-17): the 80 cases of referee/testset/cases.yaml through the
 # same gate and the same batch as referee-pr, each staged as referee/README.md § Staging a case says.
 # Started by hand, from main. It reads no artifact from outside, only the test set in the repository.
 

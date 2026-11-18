@@ -29,7 +29,7 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
     decide    a person decides on a publisher that code held (TV3, TV5); kept in referee/decisions.yaml.
     settle    a person settles a collision or an audit finding on a product (`kind`); kept there too.
     waiting   what waits for a decision of a person, per publisher, as JSON.
-    testset   the 77 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 80 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -53,7 +53,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
 import intake  # noqa: E402
 import referee  # noqa: E402
-from fetch import Fetcher, Source  # noqa: E402
+from fetch import Fetcher, Source, moved  # noqa: E402
 
 REPO = referee.REPO
 PARKED = REPO / "referee/parked.yaml"
@@ -255,6 +255,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 settled(item, "reject", "TV4", wrong)
             elif refused:
                 settled(item, "reject", *refused, by="person")
+            elif moves := redirected(p["files"], sources):
+                park_redirected(item, moves)
             elif item["held"]:
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
             else:
@@ -277,6 +279,9 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
             elif (decision := decided_hold(st, item["publisher"], decisions))[2]:
                 settled(item, "reject", *decision[2], by="person")
+            elif moves := redirected(p["files"], sources):
+                item["held"], item["holds"], _ = decision
+                park_redirected(item, moves)
             else:
                 item["held"], item["holds"], _ = decision
                 item["ai_rules"] = [r for r in referee.RULES if r not in decided]
@@ -286,6 +291,27 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         items.append(item)
     stager.close()
     return items
+
+
+def redirected(files: dict, sources: list) -> list[tuple[str, str]]:
+    """TAX-38: (the URL proposed, where it ended) for each source in the proposed files (of the
+    product, its versions, its codes and its publisher) that ends at another address after a
+    redirect. Sources in TAX that the proposal does not bring are not its doing."""
+    mine = intake.urls(files)
+    out = []
+    for s in sources:
+        if not s.instead_of and s.url in mine and (end := moved(s)) and (s.url, end) not in out:
+            out.append((s.url, end))
+    return out
+
+
+def park_redirected(item: dict, moves: list[tuple[str, str]]) -> dict:
+    """Doubt: the source is not the address where its text is. The submitter may propose that address."""
+    where = "; ".join(f"{url} ends at {end}" for url, end in moves)
+    return settled(item, "parked", "redirect",
+                   f"a source redirects to another address: {where}. The text read is that of the address it ends "
+                   f"at, so it does not show what the proposed address says. Propose the address it ends at, if "
+                   f"that is the page meant", waits="better-proposal")
 
 
 def park_pending(items: list[dict], reason: str) -> None:

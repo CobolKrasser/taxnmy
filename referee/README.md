@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 79 proposals with the expected outcome: 31 good (G01–G29, H01–H02), 48 bad |
+| `testset/cases.yaml` | 80 proposals with the expected outcome: 31 good (G01–G29, H01–H02), 49 bad |
 | `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
 | `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
@@ -179,9 +179,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 79 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 80 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 79); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 80); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -286,6 +286,14 @@ The ladder stops at a refusal:
   urllib connects only to an address it checked, and the browser aborts every other request
   (`tools/address.py`).
 - **Fewer than 200 characters** of text in the end: `unreadable`.
+- **A redirect to another address** (TAX-38): the reader follows it and keeps the address it ended
+  at (`final_url`). When that is another address than the one proposed, the proposal is _parked_,
+  waiting for a better proposal, with both addresses in the reason. This holds for every source in
+  the proposed files: of the product, its versions, its codes and its publisher. Only the protocol
+  (http or https) and the way an address is written (the case of the host, a default port, an
+  empty path, a fragment, escaping) do not make another address. A source that ended on another
+  domain never counts as a source on the publisher's domain (TR5). The importer parks such a
+  candidate too (`moved`).
 
 For each source `sources.json` records `status`, `method`, `chars` (the length before the cut to
 6,000 tokens) and `fetched_url`, when that differs from the URL in the proposal: an API, or a frame.
@@ -488,7 +496,7 @@ with the new reason, its first day and its pull request. `waiting` groups the en
 for a decision per publisher, the most urgent publisher first, each with its last day.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 79 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 80 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 
