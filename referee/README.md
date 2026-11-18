@@ -510,6 +510,9 @@ python tools/group.py run --live --repeats 3    # the measurement: three runs as
   errors per kind and the cost per publisher per run. The budget is the hard limit of the
   referee: every run in `runs/` together.
 - **Norm:** in three runs, no merge.
+- **Result** (18 November 2026, `runs/group-measurement-20261118-122615.md`): the norm is met on
+  Opus 5.5 at *low*: no merge in three runs, 0 or 1 split, 5 or 6 of the 204 names classed otherwise
+  and 13 to 15 doubts, for $0.12 per run ($0.008 per publisher).
 - **Estimate** (dry run, prices of `prices.yaml`): about $0.61 for three runs on Opus 5.5 at *low* as a
   batch, about $0.014 per publisher per run; at most $3.76 if every request used its full
   `max_tokens`.
