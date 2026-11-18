@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/publisher.schema.json",
   "title": "TAXNMY publisher",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Whoever publishes the updates of a product. Stored as publishers/<publisher>.yaml. The form of the key (rule TR2) and uniqueness (rule TR3) are checked by tools/lint.py, not by this schema.",
   "type": "object",
   "additionalProperties": false,
@@ -14,14 +14,12 @@
       "minLength": 1
     },
     "name": {
-      "description": "The Latin name the publisher uses itself, as the source writes it.",
-      "type": "string",
-      "minLength": 1
+      "description": "The Latin name the publisher uses itself, as the source writes it. Plain text: at most 100 characters, no control characters and no < or > (TAX-34).",
+      "$ref": "#/$defs/name"
     },
     "source": {
       "description": "The page where the publisher uses this name.",
-      "type": "string",
-      "pattern": "^https?://[^\\s]+$"
+      "$ref": "#/$defs/url"
     },
     "machine_sources": {
       "description": "Sources the publisher makes for machines, where its updates can be read without a web page: an update catalog, AppStream metadata or CSAF provider metadata. Optional. Step 0 of the referee's ladder can read them (referee/README.md).",
@@ -34,8 +32,7 @@
         "properties": {
           "url": {
             "description": "Where the source for machines is.",
-            "type": "string",
-            "pattern": "^https?://[^\\s]+$"
+            "$ref": "#/$defs/url"
           },
           "format": {
             "description": "The format of the source: update-catalog (a Manifest of SoftwareComponent), appstream (AppStream metadata) or csaf-provider (a CSAF provider-metadata.json).",
@@ -43,22 +40,39 @@
           },
           "source": {
             "description": "The page of the publisher that names this source for machines.",
-            "type": "string",
-            "pattern": "^https?://[^\\s]+$"
+            "$ref": "#/$defs/url"
           }
         }
       }
     },
     "second_source": {
       "description": "Optional (rule TV4): a page the publisher does not write itself that names the domain of the publisher's source, such as an app store, a package registry, a public project or a register. A new publisher is taken in without one; when it is given, it is recorded with the publisher. tools/guard.py checks that it is not on the publisher's own domain and that its text names that domain.",
-      "type": "string",
-      "pattern": "^https?://[^\\s]+$"
+      "$ref": "#/$defs/url"
     },
     "aliases": {
       "description": "Earlier or other keys of this publisher.",
       "type": "array",
       "uniqueItems": true,
-      "items": { "type": "string", "minLength": 1 }
+      "items": { "$ref": "#/$defs/alias" }
+    }
+  },
+  "$defs": {
+    "url": {
+      "description": "A page on a public address, over https only. The host is checked by tools/lint.py: no IP address, no localhost, no internal name (TAX-34).",
+      "type": "string",
+      "pattern": "^https://[^\\s]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[^<>\\u0000-\\u001F\\u007F-\\u009F\\u2028\\u2029\\u202A-\\u202E\\u2066-\\u2069]+$"
+    },
+    "alias": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 130,
+      "pattern": "^[^<>\\u0000-\\u001F\\u007F-\\u009F\\u2028\\u2029\\u202A-\\u202E\\u2066-\\u2069]+$"
     }
   }
 }

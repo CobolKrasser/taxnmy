@@ -11,6 +11,18 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 2.0.0 — 2026-11-18
+
+- Every source (`source`, `versions.source`, the `source` of an identifier, `machine_sources`,
+  `second_source`) is `https` only; `http` is no longer accepted. The lint also refuses a source
+  whose host is an IP address, `localhost` or a name inside a network, such as `.local` or
+  `.internal` (rule TR1).
+- `name` of a product and of a publisher: at most 100 characters; `aliases`: at most 130 characters
+  each. Neither may hold a control character or `<` or `>`: a value from TAXNMY is plain text.
+- Major, because files that were valid can become invalid. No file in TAXNMY is: on 18 November
+  no source used `http`, an IP address or an internal name, the longest name had 45 characters,
+  and no name or alias held one of the characters now refused.
+
 ## 1.3.0 — 2026-11-17
 
 - Publisher: a new optional field `second_source`, a page the publisher does not write itself that

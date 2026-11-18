@@ -411,6 +411,20 @@ def counts(items: list[dict]) -> dict:
     return {o: sum(i["outcome"] == o for i in items) for o in OUTCOMES}
 
 
+def plain(value, limit: int = 300, cell: bool = True) -> str:
+    """A value from a proposal, or a reason that may quote one, as plain text in Markdown (TAX-34, K5):
+    a code span, so markup, HTML and a mention of an account show as they are written and do nothing.
+    On one line, without control characters, cut to `limit`; in a table `cell` a | is escaped."""
+    text = re.sub(r"\s+", " ", str(value or ""))
+    text = "".join(ch for ch in text if ch.isprintable()).strip()[:limit]
+    if not text:
+        return "-"
+    fence = "`" * (max((len(run) for run in re.findall(r"`+", text)), default=0) + 1)
+    pad = " " if text.startswith("`") or text.endswith("`") else ""
+    span = f"{fence}{pad}{text}{pad}{fence}"
+    return span.replace("|", "\\|") if cell else span
+
+
 def comment(items: list[dict], pr: int | None, cost: float = 0.0, note: str = "") -> str:
     c = counts(items)
     lines = ["<!-- taxnmy-referee -->", f"## Referee{f' on #{pr}' if pr else ''}", "",
@@ -420,9 +434,8 @@ def comment(items: list[dict], pr: int | None, cost: float = 0.0, note: str = ""
         lines += [note, ""]
     lines += ["| file | outcome | rule | by | reason |", "| --- | --- | --- | --- | --- |"]
     for i in items:
-        reason = re.sub(r"\s+", " ", i["reason"]).replace("|", "\\|")[:300]
         out = f"parked, waits for {i.get('waits_for') or 'event'}" if i["outcome"] == "parked" else i["outcome"]
-        lines.append(f"| `{i['id']}` | {out} | {i['rule'] or '-'} | {i['by']} | {reason or '-'} |")
+        lines.append(f"| {plain(i['id'])} | {out} | {plain(i['rule'])} | {i['by']} | {plain(i['reason'])} |")
     lines += ["", "*Parked* means not taken in now: it goes to `referee/parked.yaml` and waits for one thing:", ""]
     terms = load_terms()["waits_for"]
     lines += [f"- waits for *{w}*: {text}. It lapses after {terms[w]['lapses_after']} days." for w, text in WAITS_FOR.items()]
@@ -557,9 +570,8 @@ def lapsed_comments(gone: list[dict], terms: dict, out_dir: Path) -> list[Path]:
         lines = ["<!-- taxnmy-parked -->", "## Lapsed from the parking list", ""]
         for e in es:
             days = terms["waits_for"][e["waits_for"]]["lapses_after"]
-            reason = re.sub(r"\s+", " ", str(e.get("reason", "")))[:300]
-            lines.append(f"- `{e['key']}` waited for {e['waits_for']} since {e['since']}; its term of {days} days has "
-                         f"passed, so it is not taken in. Last reason: {reason or '-'}")
+            lines.append(f"- {plain(e['key'], cell=False)} waited for {e['waits_for']} since {e['since']}; its term of {days} days has "
+                         f"passed, so it is not taken in. Last reason: {plain(e.get('reason'), cell=False)}")
         lines += ["", "Nothing stays against it: you may propose it again.", ""]
         path = out_dir / "lapsed" / f"{pr}.md"
         path.parent.mkdir(parents=True, exist_ok=True)

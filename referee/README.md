@@ -281,6 +281,10 @@ The ladder stops at a refusal:
 - **A timeout of an API** (step 1, such as the NVD API, which limits requests without a key): one
   more try after 5 seconds.
 - **robots.txt** forbids the URL: `disallowed`. The URL is not requested.
+- **Not a public address** (TAX-34): an IP address, `localhost`, a name inside a network, a name
+  that resolves to a private address, or a redirect to one: `error: blocked`. It is not requested;
+  urllib connects only to an address it checked, and the browser aborts every other request
+  (`tools/address.py`).
 - **Fewer than 200 characters** of text in the end: `unreadable`.
 
 For each source `sources.json` records `status`, `method`, `chars` (the length before the cut to
@@ -292,7 +296,9 @@ For each source `sources.json` records `status`, `method`, `chars` (the length b
 - robots.txt is respected, following RFC 9309;
 - at most one request per second per site;
 - each URL once per run;
-- no imitated browser headers, no proxies and no stealth.
+- no imitated browser headers, no proxies and no stealth;
+- only public addresses: the lint refuses a source on an IP address, `localhost` or an internal
+  name (TR1), and the reader checks again at every connection.
 
 A site that refuses is not worked around. A person decides, or the product gets another source.
 

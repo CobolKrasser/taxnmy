@@ -274,11 +274,38 @@ class RealBrowserTest(unittest.TestCase):
         server = http.server.HTTPServer(("127.0.0.1", 0), Handler)
         threading.Thread(target=server.serve_forever, daemon=True).start()
         self.addCleanup(server.shutdown)
-        browser = fetch.PlaywrightBrowser()
+        browser = fetch.PlaywrightBrowser(public_only=False)  # a local test page (TAX-34)
         self.addCleanup(browser.close)
         status, text = browser.render(f"http://127.0.0.1:{server.server_port}/")
         self.assertEqual(status, 200)
         self.assertIn("Rendered by script.", text)
+
+    def test_a_local_page_is_not_opened(self):
+        """TAX-34: by default the browser aborts every request to an address that is not public."""
+        import http.server
+        import threading
+
+        hits = []
+
+        class Handler(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                hits.append(self.path)
+                self.send_response(200)
+                self.end_headers()
+
+            def log_message(self, *a):
+                pass
+
+        server = http.server.HTTPServer(("127.0.0.1", 0), Handler)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        self.addCleanup(server.shutdown)
+        browser = fetch.PlaywrightBrowser()
+        self.addCleanup(browser.close)
+        try:
+            browser.render(f"http://127.0.0.1:{server.server_port}/")
+        except Exception:  # noqa: BLE001 - an aborted page is an error in Playwright
+            pass
+        self.assertEqual(hits, [])
 
 
 if __name__ == "__main__":
