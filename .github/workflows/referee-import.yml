@@ -1,0 +1,272 @@
+name: referee-import
+
+# The paid trial of the KEV round (TAX-27): the importer on referee/import/kev-proef-40.csv (the
+# first 40 rows of group 1 of the find round; only the rows of the trial are in the repository),
+# past the grouping (TAX-26), the gate and the referee (TAX-17), and a pull request with the outcome.
+# Started by hand; never merged by itself.
+#
+#   prepare   no key: the KEV list and the CVE records of the vendors of the rows (public), and the
+#             estimate of the grouping (dry run).
+#   group     environment referee (the key; Fred approves): the grouping, one batch. Main only.
+#   propose   no key: the importer reads every page (with a browser), parks what it must, and runs
+#             the gate of the pull request.
+#   judge     environment referee (the key; Fred approves): the referee on what the gate left, one
+#             batch, within what the grouping left of the cap.
+#   pull-request  no key: the outcome on a branch, parked entries in referee/parked.yaml, rejected
+#             and aliased files taken out (tools/pr_referee.py apply), and a pull request.
+#
+# The cap is a hard limit in code for this workflow run (grouping and referee together), next to
+# the budget for every run together ($50, tools/referee.py). A pull request opened with the token of
+# a workflow starts no other workflow: the referee of TAX-17 does not run on it a second time.
+
+on:
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "run the trial (costs money, about $0.32; at most the cap); off: the dry run only"
+        type: boolean
+        default: false
+      budget:
+        description: "dollars, the cap of this run: grouping and referee together (hard limit)"
+        type: string
+        default: "1.00"
+      since:
+        description: "only KEV entries added on or after this date"
+        type: string
+        default: "2023-11-16"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: referee-import
+  cancel-in-progress: true
+
+env:
+  FOUND: referee/import/kev-proef-40.csv
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: The KEV list and its CVE records (public; no key)
+        env:
+          SINCE: ${{ inputs.since }}
+        run: |
+          set -euo pipefail
+          python tools/importer.py list --found "$FOUND" --since "$SINCE" --out "$RUNNER_TEMP/list" | tee list.log
+          python tools/importer.py group --found "$FOUND" --kev "$RUNNER_TEMP/list/kev.json" --cve "$RUNNER_TEMP/list/cve" \
+            --since "$SINCE" --out "$RUNNER_TEMP/dry" | tee dry.log
+          { echo "### Trial of the KEV round: dry run"; echo; cat list.log; echo; cat dry.log; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: import-list-${{ github.run_id }}
+          path: ${{ runner.temp }}/list
+          retention-days: 7
+
+  group:
+    needs: prepare
+    if: github.ref == 'refs/heads/main' && inputs.live
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # a batch may take hours; the harness cancels it after 5
+    environment: referee
+    concurrency:
+      group: referee-judge  # one paid job at a time, so the budget cannot be spent twice
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the budget
+    outputs:
+      cost: ${{ steps.group.outputs.cost }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - uses: actions/download-artifact@v4
+        with:
+          name: import-list-${{ github.run_id }}
+          path: ${{ runner.temp }}/list
+      - name: Group, as one batch
+        id: group
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CAP: ${{ inputs.budget }}
+          SINCE: ${{ inputs.since }}
+        run: |
+          set -euo pipefail
+          python tools/importer.py group --live --cap "$CAP" --found "$FOUND" --kev "$RUNNER_TEMP/list/kev.json" \
+            --cve "$RUNNER_TEMP/list/cve" --since "$SINCE" --out "$RUNNER_TEMP/group" | tee group.log
+          { echo "### Grouping"; echo; cat group.log; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the run
+        if: always() && steps.group.outputs.run_dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.group.outputs.run_name }}
+          path: ${{ steps.group.outputs.run_dir }}
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        with:
+          name: import-group-${{ github.run_id }}
+          path: ${{ runner.temp }}/group
+          retention-days: 7
+
+  propose:
+    needs: group
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: import-group-${{ github.run_id }}
+          path: ${{ runner.temp }}/group
+      - name: Read the pages and run the gate (no key)
+        run: |
+          set -euo pipefail
+          python tools/importer.py propose --found "$FOUND" --classes "$RUNNER_TEMP/group/classes.json" \
+            --names "$RUNNER_TEMP/group/names.json" --fetch --browser --gated "$RUNNER_TEMP/proposed/gated.json" \
+            --out "$RUNNER_TEMP/proposed" > propose.log
+          sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: import-proposed-${{ github.run_id }}
+          path: ${{ runner.temp }}/proposed
+          retention-days: 30
+
+  judge:
+    needs: [group, propose]
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    environment: referee
+    concurrency:
+      group: referee-judge
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the ceilings
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - uses: actions/download-artifact@v4
+        with:
+          name: import-proposed-${{ github.run_id }}
+          path: ${{ runner.temp }}/proposed
+      - name: Judge what the gate left, as one batch
+        id: judge
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CAP: ${{ inputs.budget }}
+          GROUP_COST: ${{ needs.group.outputs.cost }}
+          MODEL: ${{ vars.REFEREE_MODEL || 'claude-opus-5-5' }}
+          EFFORT: ${{ vars.REFEREE_EFFORT || 'low' }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
+        run: |
+          set -euo pipefail
+          left=$(python - <<'PY'
+          import os
+          print(f"{max(float(os.environ['CAP']) - float(os.environ.get('GROUP_COST') or 0), 0):.4f}")
+          PY
+          )
+          echo "What the grouping left of the cap: \$$left" | tee -a "$GITHUB_STEP_SUMMARY"
+          python tools/pr_referee.py judge --gated "$RUNNER_TEMP/proposed/gated.json" --output verdicts --live \
+            --model "$MODEL" --effort "$EFFORT" --pr-cap "$left" --budget "$BUDGET"
+          cat verdicts/comment.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.judge.outcome == 'success'
+        with:
+          name: import-verdicts-${{ github.run_id }}
+          path: verdicts/
+          retention-days: 90
+      - name: Keep the run
+        if: always() && steps.judge.outputs.run_dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: referee-run-${{ steps.judge.outputs.run_name }}
+          path: ${{ steps.judge.outputs.run_dir }}
+          retention-days: 90
+
+  pull-request:
+    needs: judge
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write  # the branch
+      pull-requests: write  # the pull request
+    steps:
+      - uses: actions/checkout@v4  # main, with the token to push a branch
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: import-proposed-${{ github.run_id }}
+          path: ${{ runner.temp }}/proposed
+      - uses: actions/download-artifact@v4
+        with:
+          name: import-verdicts-${{ github.run_id }}
+          path: ${{ runner.temp }}/verdicts
+      - name: The outcome on a branch, and a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATA: ${{ runner.temp }}/proposed/data
+          VERDICTS: ${{ runner.temp }}/verdicts
+          REPORT: ${{ runner.temp }}/proposed/report.md
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          # Only data files and the parking list come over; then the verdicts take out what is not accepted.
+          for d in products publishers; do
+            if [ -d "$DATA/$d" ]; then cp -R "$DATA/$d" .; fi
+          done
+          cp "$DATA/referee/parked.yaml" referee/parked.yaml
+          python tools/pr_referee.py apply "$VERDICTS/verdicts.json" --root .
+          python tools/lint.py
+          branch="import/kev-proef-${RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add products publishers referee/parked.yaml
+          git commit -q -m "TAX-27: the trial of the KEV round (run ${RUN_ID})"
+          git push -q origin "$branch"
+          { echo "Trial of the KEV round (TAX-27), workflow run ${RUN_ID}. Not merged by itself."; echo
+            cat "$VERDICTS/comment.md"; echo; cat "$REPORT"; } | head -c 60000 > body.md
+          if ! gh pr create --base main --head "$branch" --title "TAX-27: proef van 40 uit de KEV-ronde" --body-file body.md \
+               | tee -a "$GITHUB_STEP_SUMMARY"; then
+            # The repository may not let a workflow open a pull request: the branch is there, open it by hand.
+            echo "Open the pull request by hand: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}" \
+              | tee -a "$GITHUB_STEP_SUMMARY"
+          fi

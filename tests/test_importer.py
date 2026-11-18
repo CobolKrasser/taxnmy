@@ -266,7 +266,7 @@ class FilesTest(Base):
 class ProposeTest(Base):
     def args(self, **kw):
         a = dict(found=[str(csv_file(self.tmp, ROWS))], first=None, classes=None, names=None, fetch=True,
-                 write=False, out=str(self.tmp / "out"))
+                 write=False, browser=False, gated=None, out=str(self.tmp / "out"))
         a.update(kw)
         return argparse.Namespace(**a)
 
@@ -328,7 +328,7 @@ class GroupingTest(Base):
         a = dict(found=[str(csv_file(self.tmp, ROWS))], first=None, kev=None, cve=None, since="",
                  prompt=str(REPO / "referee/prompt-group.md"), schema=str(REPO / "referee/group.schema.json"),
                  prices=str(REPO / "referee/prices.yaml"), runs=str(self.tmp / "runs"), model="claude-opus-5-5",
-                 effort="low", max_tokens=8000, budget=50.0, wait=60, live=False, out=str(self.tmp / "g"))
+                 effort="low", max_tokens=8000, budget=50.0, cap=None, wait=60, live=False, out=str(self.tmp / "g"))
         a.update(kw)
         return argparse.Namespace(**a)
 
@@ -369,6 +369,100 @@ class GroupingTest(Base):
         classes = json.loads((self.tmp / "g/classes.json").read_text())
         self.assertEqual(classes["acme"]["widget-pro"]["class"], "product")
         self.assertTrue(list((self.tmp / "runs").glob("*/run.json")), "the budget sees the run")
+
+
+class CapTest(GroupingTest):
+    def test_the_cap_of_this_run_is_the_limit(self):
+        kev, cve = self.kev()
+        client = FakeClient()
+        got = importer.run_grouping(self.args(kev=str(kev), cve=str(cve), live=True, cap=0.0), client=client,
+                                    data_root=self.root, now=NOW, log=QUIET, sleep=lambda s: None)
+        self.assertEqual(client.batches, [], "no room: nothing is sent")
+        self.assertEqual(got["cost"], 0.0)
+        classes = json.loads((self.tmp / "g/classes.json").read_text())
+        self.assertEqual(classes["acme"]["widget-pro"]["class"], "doubt", "what was not asked is doubt, and parked")
+
+
+class ListTest(Base):
+    def test_only_the_records_of_the_vendors_of_the_rows(self):
+        kev = {"catalogVersion": "x", "vulnerabilities": [
+            {"cveID": "CVE-2025-1234", "vendorProject": "Acme", "product": "Widget", "dateAdded": "2025-01-01"},
+            {"cveID": "CVE-2022-0001", "vendorProject": "Acme", "product": "Widget", "dateAdded": "2022-01-01"},
+            {"cveID": "CVE-2025-99999", "vendorProject": "Beta", "product": "Box", "dateAdded": "2025-02-01"},
+            {"cveID": "CVE-2025-5555", "vendorProject": "Other", "product": "Thing", "dateAdded": "2025-02-01"}]}
+        asked = []
+
+        def get(url):
+            asked.append(url)
+            if url == importer.KEV_URL:
+                return json.dumps(kev).encode()
+            if url.endswith("CVE-2025-99999.json"):
+                raise OSError("404")
+            return b'{"containers": {}}'
+
+        args = argparse.Namespace(found=[str(csv_file(self.tmp, ROWS))], first=None, since="2023-11-16", out=str(self.tmp / "l"))
+        got = importer.fetch_list(args, get=get, log=QUIET)
+        self.assertEqual(got["wanted"], ["CVE-2025-1234", "CVE-2025-99999"])
+        self.assertEqual(got["missing"], ["CVE-2025-99999 (OSError)"])
+        self.assertIn("https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/1xxx/CVE-2025-1234.json", asked)
+        self.assertIn("https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2025/99xxx/CVE-2025-99999.json",
+                      [importer.cve_url("CVE-2025-99999")])
+        self.assertTrue((self.tmp / "l/cve/CVE-2025-1234.json").is_file())
+        self.assertTrue((self.tmp / "l/kev.json").is_file())
+
+
+class GatedTest(ProposeTest):
+    def test_the_gated_items_are_for_the_referee_of_the_pull_request(self):
+        gated = self.tmp / "gated/gated.json"
+        importer.propose(self.args(gated=str(gated)), FakeFetcher(pages()), self.root, NOW, QUIET)
+        data = json.loads(gated.read_text())
+        self.assertEqual((data["version"], data["pr"], data["fork"]), (1, None, False))
+        self.assertEqual(sorted(i["id"] for i in data["items"]),
+                         ["products/acme/acme-widget.yaml", "products/beta-systems/beta-box.yaml"])
+        items = data["items"]
+        importer.pr_referee.judge(items, argparse.Namespace(live=False))
+        self.assertEqual({i["outcome"] for i in items}, {"parked"}, "a dry judge parks what it was not asked")
+
+
+class TrialTest(unittest.TestCase):
+    """The input of the paid trial: the first 40 rows of group 1, and nothing more of the find round."""
+
+    def test_forty_rows_with_the_columns_of_the_find_round(self):
+        path = REPO / "referee/import/kev-proef-40.csv"
+        self.assertEqual(path.read_text(encoding="utf-8").splitlines()[0], HEAD)
+        rows = importer.read_found([path])
+        self.assertEqual(len(rows), 40)
+        outcomes = importer.plan(rows)
+        parked, proposed, aside, stop = importer.threshold(outcomes)
+        self.assertEqual(aside, 12, "the dry run of PR 45")
+        self.assertFalse(stop)
+
+
+class WorkflowTest(unittest.TestCase):
+    def test_the_trial_waits_for_fred_and_keeps_the_key_apart(self):
+        wf = yaml.safe_load((REPO / ".github/workflows/referee-import.yml").read_text())
+        on = wf.get("on", wf.get(True))
+        self.assertEqual(set(on), {"workflow_dispatch"})
+        inputs = on["workflow_dispatch"]["inputs"]
+        self.assertFalse(inputs["live"]["default"])
+        self.assertEqual(inputs["budget"]["default"], "1.00")
+        self.assertEqual(wf["concurrency"], {"group": "referee-import", "cancel-in-progress": True})
+        self.assertEqual(wf["permissions"], {"contents": "read"})
+        jobs = wf["jobs"]
+        for name, job in jobs.items():
+            self.assertIn("timeout-minutes", job, name)
+            keyed = "secrets." in json.dumps(job)
+            self.assertEqual(keyed, name in ("group", "judge"), name)
+            if keyed:
+                self.assertEqual(job["environment"], "referee")
+                self.assertEqual(job["concurrency"], {"group": "referee-judge", "cancel-in-progress": False})
+                self.assertNotIn("write", json.dumps(job.get("permissions", {})))
+            for step in job["steps"]:
+                self.assertNotRegex(step.get("run", ""), r"\$\{\{", "inputs reach a script through env only")
+        self.assertEqual(jobs["group"]["if"], "github.ref == 'refs/heads/main' && inputs.live")
+        self.assertEqual(jobs["pull-request"]["permissions"], {"contents": "write", "pull-requests": "write"})
+        self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
+        self.assertEqual(wf["env"]["FOUND"], "referee/import/kev-proef-40.csv")
 
 
 class NoBrandTest(unittest.TestCase):
