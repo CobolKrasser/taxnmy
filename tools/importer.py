@@ -82,6 +82,9 @@ NOTE_EDITION = re.compile(r"^\s*editie of versie van\s+(.+?)\s*$", re.I)
 NOTE_UNSUPPORTED = re.compile(r"niet meer ondersteund", re.I)
 COST_PER_PROPOSAL = 0.027  # dollars per proposal for the referee: Opus 5.5 at effort low, measured (TAX-18)
 CLOSED = {"refused", "disallowed", "429"}
+# What the find round itself set aside as no product or without a versions page (decision 33): apart
+# in the count, and not counted for the threshold of the trial.
+FOUND_ASIDE = {"series", "edition", "not-found", "no-versions"}
 
 # reason -> (what the report says, what the parked entry waits for)
 PARK = {
@@ -497,6 +500,8 @@ def tally(outcomes: list[Outcome]) -> dict:
             by[("opgenomen-kandidaat", "voor de scheidsrechter")] += 1
         elif o.outcome == "alias":
             by[("alias", ALIAS[o.reason])] += 1
+        elif found_aside(o):
+            by[("apart (vindronde)", PARK[o.reason][0])] += 1
         elif o.outcome == "parked":
             by[("geparkeerd", PARK[o.reason][0])] += 1
         else:
@@ -504,10 +509,18 @@ def tally(outcomes: list[Outcome]) -> dict:
     return by
 
 
-def threshold(outcomes: list[Outcome]) -> tuple[int, int, bool]:
-    """(parked for another reason than a closed source, all rows, the round stops): Fred, decision 25."""
-    parked = sum(1 for o in outcomes if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked")
-    return parked, len(outcomes), parked * 3 > len(outcomes)
+def found_aside(o: Outcome) -> bool:
+    """The find round itself showed this row is no product or has no versions page: it is not proposed."""
+    return o.outcome == "parked" and o.reason in FOUND_ASIDE
+
+
+def threshold(outcomes: list[Outcome]) -> tuple[int, int, int, bool]:
+    """(parked for another reason than a closed source, rows proposed, rows set aside by the find round,
+    the round stops). Decision 25, as decision 33 counts it: only over what is proposed; what the find
+    round set aside and closed sources do not count."""
+    proposed = [o for o in outcomes if not found_aside(o)]
+    parked = sum(1 for o in proposed if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked")
+    return parked, len(proposed), len(outcomes) - len(proposed), parked * 3 > len(proposed)
 
 
 def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dict | None, fetched: bool) -> str:
@@ -518,8 +531,9 @@ def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dic
              "| uitkomst | reden | aantal |", "| --- | --- | --- |"]
     for (what, why), n in sorted(tally(outcomes).items()):
         lines.append(f"| {what} | {why} | {n} |")
-    parked, total, stop = threshold(outcomes)
-    lines += ["", f"Geparkeerd om een andere reden dan een gesloten bron: {parked} van {total} "
+    parked, proposed, aside, stop = threshold(outcomes)
+    lines += ["", f"Apart gezet door de vindronde (telt niet mee): {aside}. "
+                  f"Geparkeerd om een andere reden dan een gesloten bron: {parked} van {proposed} voorgedragen "
                   f"({'meer' if stop else 'niet meer'} dan een derde: de ronde {'stopt' if stop else 'gaat door'}).", ""]
     pending = sum(1 for o in outcomes if o.outcome == "candidate")
     lines += [f"Kosten van de scheidsrechter: {pending} voordrachten x ${COST_PER_PROPOSAL} = ${pending * COST_PER_PROPOSAL:.2f}."]

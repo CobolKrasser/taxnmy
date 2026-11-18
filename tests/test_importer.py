@@ -224,10 +224,21 @@ class PagesTest(Base):
 
     def test_the_threshold_leaves_closed_sources_out(self):
         out, _ = self.outcomes(FakeFetcher(pages(**{"https://acme.example/widget": ("refused", "")})))
-        parked, total, stop = importer.threshold(out)
-        self.assertEqual((parked, total, stop), (5, 9, True), "series, edition, not found, no kind, no versions")
+        self.assertEqual(importer.threshold(out), (1, 5, 4, False),
+                         "series, edition, not found and no versions are set aside; the closed pair does not count; no kind does")
         out, _ = self.outcomes(FakeFetcher(pages()), ROWS[:2] + ROWS[4:5] + ROWS[8:])
-        self.assertEqual(importer.threshold(out), (0, 4, False))
+        self.assertEqual(importer.threshold(out), (0, 4, 0, False))
+
+    def test_the_threshold_counts_only_what_is_proposed(self):
+        """Decision 33: two of three proposed rows parked stops the round, however many the find round set aside."""
+        rows = [ROWS[2], ROWS[3], ROWS[5], ROWS[7], ROWS[0], ROWS[6],
+                "Acme;Other;Acme;https://acme.example/;Acme Other;software;https://acme.example/o;https://acme.example/o/n;"]
+        out, _ = self.outcomes(FakeFetcher(pages()), rows)
+        self.assertEqual(importer.threshold(out), (2, 3, 4, True), "no kind and an unreadable page, of three")
+        report = importer.report(out, {}, {}, None, True)
+        self.assertIn("| apart (vindronde) | geen versions.source | 1 |", report)
+        self.assertIn("Apart gezet door de vindronde (telt niet mee): 4.", report)
+        self.assertIn("2 van 3 voorgedragen (meer dan een derde: de ronde stopt)", report)
 
 
 class FilesTest(Base):
