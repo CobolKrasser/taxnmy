@@ -1,0 +1,33 @@
+# The limits of the intake (TAX-32, rules TV8-TV11). Provisional: they start low and are adjusted on
+# what we see (decision 31). Change a number here, not in the code; tools/intake.py reads it.
+version: 1
+
+# TV11: the intake for proposals. false: every new proposal is rejected with that reason. Reading the
+# data does not change. A maintainer can also close it in the settings of the repository; see
+# referee/README.md § Closing the intake.
+open: true
+
+# TV8 per proposal: at most this many distinct URLs (sources) in the files of one proposal. A product
+# has a source, a versions source and one per identifier; its publisher file a source, a second
+# source and its machine sources.
+sources_per_proposal: 10
+
+# TV8 per submitter: open proposals at the same time, parked ones and those in earlier open pull
+# requests counted. Known: someone with a pull request taken in.
+open_per_submitter:
+  unknown: 3
+  known: 10
+
+# The parking list as a whole (TV9). When it is full, a new proposal that would be parked is
+# rejected instead.
+parking_list: 200
+
+# TV10: unknown submitters may use at most this part of the day ceiling for the referee, so they can
+# never use up the part of known submitters. Known submitters are judged first.
+unknown_share_of_day: 0.5
+
+# A submitter with values of its own: an agreed round is nothing more than this. Any of `open`,
+# `day_cap` (dollars per day for this submitter, instead of the shared day ceiling) and `pr_cap`.
+submitters:
+  CobolKrasser:   # the maintainers' own rounds, such as an import of a catalog
+    open: 500
