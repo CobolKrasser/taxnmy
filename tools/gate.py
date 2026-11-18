@@ -108,8 +108,11 @@ def same_owner(product: dict, publisher: dict) -> str | None:
 def tr5(product: dict, publisher: dict, own: dict, new_publisher: bool) -> dict | None:
     """Yes only for a publisher TAX already holds, and a versions source that was read."""
     domain = same_owner(product, publisher)
-    if domain is None or new_publisher or not read(own.get((product.get("versions") or {}).get("source"))):
+    src = own.get((product.get("versions") or {}).get("source"))
+    if domain is None or new_publisher or not read(src):
         return None
+    if src.final_url and owner(src.final_url) != domain:
+        return None  # TAX-38: it ended on another domain, so it is no source on the publisher's domain
     return judgment("yes", f"the versions are published on {domain}, the publisher's own domain, and were read")
 
 

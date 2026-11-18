@@ -70,6 +70,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
+from fetch import moved as ends_elsewhere  # noqa: E402
 import group  # noqa: E402
 import keyrule  # noqa: E402
 import pr_referee  # noqa: E402
@@ -103,6 +104,7 @@ PARK = {
     "closed": ("gesloten bron", "event"),
     "unreadable": ("bron niet leesbaar", "event"),
     "name-not-on-page": ("naam niet op de productpagina", "better-proposal"),
+    "moved": ("bron verwijst door naar een ander adres", "better-proposal"),
 }
 ALIAS = {
     "same-row": "zelfde product als een eerdere rij",
@@ -378,6 +380,8 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
             return "closed", f"{url}: {src.status}"
         if not gate.read(src):
             return "unreadable", f"{url}: {src.status}"
+        if end := ends_elsewhere(src):  # TAX-38: the text is that of another address
+            return "moved", f"{url} -> {end}"
         return None
 
     for o in outcomes:
@@ -409,7 +413,7 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
             if src.status in CLOSED:
                 closed = closed or url
                 continue
-            if gate.read(src) and any(gate.appears(n, src.text) for n in names_of(name)):
+            if gate.read(src) and not ends_elsewhere(src) and any(gate.appears(n, src.text) for n in names_of(name)):
                 chosen = url
                 break
         if chosen:

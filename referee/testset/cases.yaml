@@ -1,6 +1,6 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 79 proposals: 29 good, 48 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 80 proposals: 29 good (3 of them now expected human: their sources redirect, TAX-38), 49 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
@@ -45,10 +45,10 @@ cases:
   holdout: [products/shelly/shelly-plus-1pm.yaml]
 - id: G05
   type: holdout-device
-  expect: [accept]
+  expect: [human]
   lint: pass
   holdout: [products/fortinet/fortigate-60f.yaml]
-  note: The product source is a PDF datasheet; if it is unreadable, human is the expected answer.
+  note: The product source is a PDF datasheet; if it is unreadable, human is the expected answer. Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its versions source redirects to a page deeper in the release notes, so the expected answer is human (parked, waiting for a better proposal).
 - id: G06
   type: holdout-device
   expect: [accept]
@@ -63,9 +63,10 @@ cases:
   note: The versions source is the English page of the update notes of the SM-X710 (each build with Android version and date), not the language menu at SM-X710/EUX/doc.html. The number in its address is the date of the first release (230710 is 2023-07-10); every later release is added to the same page. The product source is Samsung's support page for the SM-X710; the old shop address of this tablet now sends the reader to its successor.
 - id: G08
   type: holdout-device
-  expect: [accept]
+  expect: [human]
   lint: pass
   holdout: [products/google/pixel-8.yaml]
+  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product source now redirects to the shop page of a refurbished device, another product, so the expected answer is human (parked, waiting for a better proposal).
 - id: G09
   type: holdout-device
   expect: [accept]
@@ -88,9 +89,10 @@ cases:
   holdout: [products/python-software-foundation/python.yaml]
 - id: G13
   type: holdout-software
-  expect: [accept]
+  expect: [human]
   lint: pass
   holdout: [products/microsoft/sql-server.yaml]
+  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product and versions source redirect to a page on another host, so the expected answer is human (parked, waiting for a better proposal).
 - id: G14
   type: holdout-service
   expect: [accept]
@@ -528,7 +530,7 @@ cases:
   note: A band is an accessory.
 - id: B14
   type: variant
-  expect: [alias, reject]
+  expect: [alias, reject, human]
   alias_of: fortinet/fortigate-60f
   rules: [TR4]
   lint: pass
@@ -543,7 +545,7 @@ cases:
         source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
       identifiers: []
       aliases: []
-  note: A licence bundle on the same device and firmware.
+  note: Since TAX-38 also human, because its versions source redirects to another address. A licence bundle on the same device and firmware.
 - id: B15
   type: variant
   expect: [alias, reject]
@@ -1245,3 +1247,9 @@ cases:
       aliases: []
   verify: [https://example.org/]
   note: A new publisher on its own evidence (TV4), but its site has nothing to download and no versions, so nothing shows that the product exists (TR7) or that it has versions (TR4). The low threshold for a new publisher is a site where the product is to be had or its versions are published; this is neither.
+- id: B49
+  type: redirect
+  expect: [human]
+  lint: pass
+  holdout: [publishers/vates.yaml, products/vates/xcp-ng.yaml]
+  note: TAX-38. The publisher's source redirects to a page on another host (the documentation site); the text read is that of the address it ends at. Doubt, waiting for a better proposal with that address. The product and versions sources do not redirect.
