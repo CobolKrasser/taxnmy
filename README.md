@@ -189,7 +189,7 @@ is rejected on TR1. A change of the scope goes through a pull request, like any 
 publishers/<publisher>.yaml          one file per publisher
 products/<publisher>/<product>.yaml  one file per product
 schema/                              JSON schemas for both files
-tools/                               the lint (writing rule, TR1–TR3) and the referee harness
+tools/                               the lint (writing rule, TR1–TR3), the referee harness and the count of candidate sources (`census.py`)
 tests/                               tests for the lint and the harness
 referee/                             prompt, test set and runs of the referee (TR4–TR8)
 ```
