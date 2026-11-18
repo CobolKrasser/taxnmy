@@ -18,7 +18,7 @@ publishers:
 - id: P01
   publisher: ivanti
   name: "Ivanti"
-  status: proposed
+  status: checked
   names:
   - name: "Cloud Services Appliance"
     seen: {"kev": 1}
@@ -68,7 +68,8 @@ publishers:
     of: "Endpoint Manager Mobile"
   - name: "Endpoint Manager Mobile (EPMM) and MobileIron Core"
     seen: {"kev": 1}
-    expect: "series"
+    expect: ["alias", "series"]
+    of: ["Endpoint Manager Mobile", null]
   - name: "EPM"
     seen: {"cna": 1}
     versions: ["2022 SU5"]
@@ -121,7 +122,7 @@ publishers:
 - id: P02
   publisher: fortinet
   name: "Fortinet"
-  status: proposed
+  status: checked
   existing:
   - fortinet/fortigate-60f
   - fortinet/fortios
@@ -230,7 +231,7 @@ publishers:
 - id: P03
   publisher: sonicwall
   name: "SonicWall"
-  status: proposed
+  status: checked
   names:
   - name: "SMA100"
     seen: {"cna": 2}
@@ -263,7 +264,7 @@ publishers:
 - id: P04
   publisher: gitlab
   name: "GitLab"
-  status: proposed
+  status: checked
   existing:
   - gitlab/gitlab
   - gitlab/gitlab-runner
@@ -288,7 +289,7 @@ publishers:
 - id: P05
   publisher: citrix
   name: "Citrix"
-  status: proposed
+  status: checked
   existing:
   - citrix/citrix-virtual-apps-and-desktops
   names:
@@ -335,7 +336,7 @@ publishers:
 - id: P06
   publisher: progress
   name: "Progress"
-  status: proposed
+  status: checked
   names:
   - name: "ECS Connections Manager"
     seen: {"cna": 1}
@@ -375,7 +376,7 @@ publishers:
 - id: P07
   publisher: beyondtrust
   name: "BeyondTrust"
-  status: proposed
+  status: checked
   names:
   - name: "Privileged Remote Access"
     seen: {"cna": 1}
@@ -398,7 +399,7 @@ publishers:
 - id: P08
   publisher: gladinet
   name: "Gladinet"
-  status: proposed
+  status: checked
   names:
   - name: "CentreStack"
     seen: {"kev": 1, "cna": 1}
@@ -417,7 +418,7 @@ publishers:
 - id: P09
   publisher: draytek
   name: "DrayTek"
-  status: proposed
+  status: checked
   names:
   - name: "Draytek VigorConnect"
     seen: {"cna": 2}
@@ -446,7 +447,7 @@ publishers:
 - id: P10
   publisher: d-link
   name: "D-Link"
-  status: proposed
+  status: checked
   names:
   - name: "DCS-2530L and DCS-2670L Devices"
     seen: {"kev": 2}
@@ -506,7 +507,7 @@ publishers:
 - id: P11
   publisher: the-apache-software-foundation
   name: "Apache"
-  status: proposed
+  status: checked
   existing:
   - the-apache-software-foundation/apache-activemq-classic
   - the-apache-software-foundation/apache-artemis
@@ -596,7 +597,7 @@ publishers:
 - id: P12
   publisher: adobe
   name: "Adobe"
-  status: proposed
+  status: checked
   existing:
   - adobe/adobe-coldfusion
   - adobe/magento
@@ -673,10 +674,12 @@ publishers:
   - name: "Commerce and Magento"
     spellings: ["Commerce and Magento"]
     seen: {"kev": 4}
-    expect: "series"
+    expect: ["series", "edition", "alias"]
+    of: [null, "adobe/magento", "adobe/magento"]
   - name: "Commerce and Magento Open Source"
     seen: {"kev": 1}
-    expect: "series"
+    expect: ["series", "edition", "alias"]
+    of: [null, "adobe/magento", "adobe/magento"]
   - name: "Experience Manager (AEM) Forms"
     seen: {"kev": 1}
     expect: ["series", "edition", "doubt"]
@@ -693,7 +696,7 @@ publishers:
 - id: P13
   publisher: atlassian
   name: "Atlassian"
-  status: proposed
+  status: checked
   existing:
   - atlassian/bamboo
   - atlassian/bitbucket
@@ -778,7 +781,7 @@ publishers:
 - id: P14
   publisher: check-point
   name: "Check Point"
-  status: proposed
+  status: checked
   names:
   - name: "Check Point Quantum Gateway, Spark Gateway and CloudGuard Network"
     seen: {"cna": 1}
@@ -821,7 +824,7 @@ publishers:
 - id: P15
   publisher: cisco
   name: "Cisco"
-  status: proposed
+  status: checked
   existing:
   - cisco/cisco-ios-xe
   - cisco/clamav
