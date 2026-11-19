@@ -1,6 +1,6 @@
 name: referee-pr-testset
 
-# The test set as one pull request (TAX-17): the 80 cases of referee/testset/cases.yaml through the
+# The test set as one pull request (TAX-17): the 91 cases of referee/testset/cases.yaml through the
 # same gate and the same batch as referee-pr, each staged as referee/README.md § Staging a case says.
 # Started by hand, from main. It reads no artifact from outside, only the test set in the repository.
 
@@ -23,6 +23,10 @@ on:
         description: "dollars for this run (the ceiling per pull request)"
         type: string
         default: "3.00"
+      cases:
+        description: "empty: all cases; else case ids, apart by a space (the alias cases of TAX-40: G30 G31 G32 G33 G34 G35 B50 B51 B52 B53 B54)"
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -49,9 +53,13 @@ jobs:
       - name: Install headless Chromium
         run: python -m playwright install --with-deps chromium
       - name: Lint, gate and sources (no key)
+        env:
+          CASES: ${{ inputs.cases }}
         run: |
           set -euo pipefail
-          python tools/pr_referee.py gate --testset --output gated/gated.json
+          if [[ ! "$CASES" =~ ^([GHB][0-9]{2}( |$))*$ ]]; then echo "cases: ids such as G30 B50, apart by a space"; exit 1; fi
+          set -f
+          python tools/pr_referee.py gate --testset ${CASES:+--cases $CASES} --output gated/gated.json
           cat gated/provisional/comment.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:

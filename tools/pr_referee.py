@@ -50,6 +50,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import alias  # noqa: E402
 import gate  # noqa: E402
 import intake  # noqa: E402
 import referee  # noqa: E402
@@ -202,13 +203,13 @@ def publisher_of(files: dict) -> str:
     return ""
 
 
-def decided_hold(st, publisher: str, decisions: list[dict]) -> tuple[dict, dict, tuple | None]:
+def decided_hold(st, publisher: str, decisions: list[dict], items=None) -> tuple[dict, dict, tuple | None]:
     """What code holds the staged proposal on, after the decisions of a person on its publisher:
     (held, holds, rejected). An approved reason no longer holds it; a rejected one rejects it
     (rejected = (rule, reason)). `holds` is rule -> the subjects still waiting for a person."""
     mine = {(d.get("rule"), d.get("subject")): d for d in decisions if d.get("publisher") == publisher}
     left, holds, rejected = [], {}, None
-    for rule, text in referee.held_items(st.files, st.findings, st.old):
+    for rule, text in (referee.held_items(st.files, st.findings, st.old) if items is None else items):
         d = mine.get((rule, subject(text)))
         if d is None:
             left.append((rule, text))
@@ -261,6 +262,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
             else:
                 settled(item, "accept", reason="a publisher file that passes the lint and the checks of code")
+        elif (new := alias.added(p["files"], st.old)) is not None:
+            gate_alias(item, st, new, fetcher, decisions, stager)
         elif chat := gate.ai_chat(st.product, st.publisher):
             settled(item, "reject", "TR8", chat["reason"])
             item["decided"] = {"TR8": chat}
@@ -291,6 +294,66 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         items.append(item)
     stager.close()
     return items
+
+
+def gate_alias(item: dict, st, new: list[str], fetcher, decisions: list[dict], stager) -> dict:
+    """A change that only adds aliases (TAX-40, tools/alias.py): judged on the aliases alone.
+    Point 1 by code (TV2; TV3 for a person), point 2 by code where a read source of the product
+    writes the name (TR11), else one question for the AI. TR4, TR5, TR7 and TR8 are not judged again."""
+    product = st.product
+    item["alias"] = new
+    item["decided"] = alias.not_judged()
+    if wrong := alias.foreign(product, new):
+        return settled(item, "reject", "TV2", f"an alias is not under the publisher {product.get('publisher')!r} of the "
+                       f"product: {', '.join(wrong)}. An alias is another key of the same product, so of the same publisher")
+    others = {rel: rec.data for rel, rec in stager.data.records.items() if rel.startswith("products/")}
+    held, holds, refused = decided_hold(st, item["publisher"], decisions, alias.lookalike(new, product, others))
+    if refused:
+        return settled(item, "reject", *refused, by="person")
+    item["held"], item["holds"] = held, holds
+    sources = referee.gather_sources(fetcher, st)
+    item["sources"] = [asdict(s) for s in sources]
+    urls = alias.own_urls(product)
+    found = {a: alias.written(a, sources, urls) for a in new}
+    left = [a for a, url in found.items() if not url]
+    item["decided"]["alias"] = gate.judgment(
+        "yes" if not left else "open",
+        "; ".join(f"{a!r} is written at {url}" for a, url in found.items() if url) or "no read source writes the name literally",
+        [{"url": url, "quote": a} for a, url in found.items() if url])
+    if not left:
+        if held:
+            return settled(item, "parked", ", ".join(held), "; ".join(held.values()))
+        return settled(item, "accept", reason=f"an added alias, written at a read source of the product (TR11); "
+                       f"{', '.join(alias.NOT_JUDGED)}: not judged, {alias.WHY_NOT}")
+    if not any(gate.read(s) for s in sources if s.url in urls or s.instead_of in urls):
+        return settled(item, "parked", "alias", "no source of the product could be read, so nothing shows the name "
+                       + ", ".join(left))
+    item["ask"], item["alias"] = "alias", left
+    item["ai_rules"] = ["alias"]
+    item["message"] = alias.message(st.old[next(iter(st.old))],
+                                    left, [s for s in sources if s.url in urls or s.instead_of in urls])
+    item["outcome"] = "pending"
+    return item
+
+
+def settle_alias(item: dict, answer: dict, schema: dict) -> dict:
+    """The outcome of the one question on an added alias: accepted only when every alias asked is
+    proved with a quote of a read source (TV6); otherwise parked, waiting for a better proposal."""
+    item["cost"], item["usage"] = answer["cost"], answer["usage"]
+    if answer["error"] or answer["stop"] == "refusal":
+        return settled(item, "parked", "alias", answer["error"] or "the model refused", "ai")
+    verdict, why = referee.parse_reply(answer["text"], alias.schema_for(schema, item["alias"]))
+    if verdict is None:
+        return settled(item, "parked", "alias", why, "ai")
+    item["verdict"] = verdict
+    proved, notes = alias.check(verdict, item["alias"], [Source(**s) for s in item["sources"]])
+    item["checked"] = {"alias": "yes" if not notes else "doubt"}
+    if notes:
+        return settled(item, "parked", "alias", "; ".join(notes), "ai", "better-proposal")
+    if item.get("held"):
+        return settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()), "code")
+    return settled(item, "accept", reason=f"an added alias, quoted from a read source of the product (TV6); "
+                   f"{', '.join(alias.NOT_JUDGED)}: not judged, {alias.WHY_NOT}", by="ai")
 
 
 def redirected(files: dict, sources: list) -> list[tuple[str, str]]:
@@ -404,14 +467,19 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
     system = referee.load_system_prompt(Path(args.prompt))
     schema = referee.load_schema(Path(args.schema))
     api = referee.api_schema(schema)
+    asks = {"alias": (referee.load_system_prompt(alias.PROMPT), referee.load_schema(alias.SCHEMA))} \
+        if any(i.get("ask") == "alias" for i in pending) else {}
     requests = []
     for n, item in enumerate(pending):
+        if item.get("ask") == "alias":  # one question on an added alias (TAX-40)
+            text, form = asks["alias"][0], alias.schema_for(referee.api_schema(asks["alias"][1]), item["alias"])
+        else:
+            text, form = system, referee.schema_for(api, item["ai_rules"])
         requests.append((f"p{n}", dict(
             model=args.model,
-            system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+            system=[{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": item["message"]}],
-            output_config={"effort": args.effort, "format": {"type": "json_schema",
-                                                             "schema": referee.schema_for(api, item["ai_rules"])}},
+            output_config={"effort": args.effort, "format": {"type": "json_schema", "schema": form}},
         )))
     by_id = {f"p{n}": item for n, item in enumerate(pending)}
     stamp = now.strftime("%Y%m%d-%H%M%S")
@@ -435,7 +503,10 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
         answers.update(more)
         left_out += out_too
     for cid, answer in answers.items():
-        settle_answer(by_id[cid], answer, schema)
+        if by_id[cid].get("ask") == "alias":
+            settle_alias(by_id[cid], answer, asks["alias"][1])
+        else:
+            settle_answer(by_id[cid], answer, schema)
     for cid in left_out:
         item = by_id[cid]
         room = f"the {tightest} ceiling" if item.get("known", True) else "the part of the day ceiling for unknown submitters"
@@ -532,7 +603,7 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
     out_dir.mkdir(parents=True, exist_ok=True)
     cost = sum(i.get("cost", 0.0) for i in items)
     keep = ("id", "key", "publisher", "outcome", "rule", "reason", "by", "waits_for", "holds", "files", "old", "case",
-            "duplicate_of", "cost", "submitter", "known")
+            "duplicate_of", "alias", "cost", "submitter", "known")
     data = {"version": 1, "pr": pr, "head_sha": head_sha, "run": run_dir.name if run_dir else "",
             "counts": counts(items), "cost": round(cost, 6), "verdicts": [{k: i.get(k) for k in keep} for i in items]}
     (out_dir / "verdicts.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -861,6 +932,7 @@ def main(argv: list[str] | None = None) -> int:
     src = g.add_mutually_exclusive_group(required=True)
     src.add_argument("--proposal", help="the proposal.json of the collect step")
     src.add_argument("--testset", nargs="?", const=str(referee.REFEREE / "testset/cases.yaml"), help="the test set as a pull request")
+    g.add_argument("--cases", nargs="+", help="with --testset: only these case ids (e.g. the alias cases of TAX-40)")
     g.add_argument("--fork", action="store_true", help="a pull request from a fork: judged by code only, the rest parked")
     g.add_argument("--no-browser", action="store_true")
     g.add_argument("--output", default="gated/gated.json")
@@ -905,6 +977,11 @@ def main(argv: list[str] | None = None) -> int:
             proposals, pr, head = group(data["files"]), data["pr"], data["head_sha"]
         else:
             proposals, pr, head = testset_proposals(Path(args.testset)), None, ""
+            if args.cases:
+                unknown = set(args.cases) - {p["id"] for p in proposals}
+                if unknown:
+                    raise SystemExit(f"No such cases: {', '.join(sorted(unknown))}")
+                proposals = [p for p in proposals if p["id"] in args.cases]
         submitter = intake.Submitter(args.submitter, args.known == "true", args.open_before) if args.submitter else None
         limits = intake.load()
         fetcher = Fetcher(use_browser=not args.no_browser, log=print)

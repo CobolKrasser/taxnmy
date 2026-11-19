@@ -1,6 +1,6 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 80 proposals: 29 good (3 of them now expected human: their sources redirect, TAX-38), 49 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 91 proposals: 35 good (3 of them now expected human: their sources redirect, TAX-38), 54 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
@@ -1253,3 +1253,278 @@ cases:
   lint: pass
   holdout: [publishers/vates.yaml, products/vates/xcp-ng.yaml]
   note: TAX-38. The publisher's source redirects to a page on another host (the documentation site); the text read is that of the address it ends at. Doubt, waiting for a better proposal with that address. The product and versions sources do not redirect.
+
+# ---------------------------------------------------------------------------------------------
+# ALIAS ONLY (TAX-40) — a change that only adds an alias to a product in TAX is judged on the alias.
+# G30-G35 are the six of the trial of the KEV round (TAX-27); B50-B54 an alias that must not pass.
+# ---------------------------------------------------------------------------------------------
+
+- id: G30
+  type: alias-only
+  expect:
+  - accept
+  lint: pass
+  proposal:
+    products/adobe/adobe-coldfusion.yaml: |
+      key: adobe/adobe-coldfusion
+      publisher: adobe
+      name: Adobe ColdFusion
+      kind: software
+      source: https://endoflife.date/coldfusion
+      versions:
+        source: https://endoflife.date/coldfusion
+      identifiers:
+      - cpe: cpe:2.3:a:adobe:coldfusion
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
+      aliases:
+      - adobe/coldfusion
+  note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias adobe/coldfusion is added to a product in TAX. Judged on the alias alone: its name is the product''s own, so a source
+    of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+- id: G31
+  type: alias-only
+  expect:
+  - accept
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-activemq-classic.yaml: |
+      key: the-apache-software-foundation/apache-activemq-classic
+      publisher: the-apache-software-foundation
+      name: Apache ActiveMQ Classic
+      kind: software
+      source: https://endoflife.date/apache-activemq
+      versions:
+        source: https://endoflife.date/apache-activemq
+      identifiers:
+      - cpe: cpe:2.3:a:apache:activemq
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
+      - purl: pkg:maven/org.apache.activemq/activemq-broker
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
+      aliases:
+      - the-apache-software-foundation/apache-activemq
+  note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/apache-activemq is added to a product in TAX. Judged on the alias alone: its name is
+    the product''s own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+- id: G32
+  type: alias-only
+  expect:
+  - accept
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-flink.yaml: |
+      key: the-apache-software-foundation/apache-flink
+      publisher: the-apache-software-foundation
+      name: Apache Flink
+      kind: software
+      source: https://endoflife.date/apache-flink
+      versions:
+        source: https://endoflife.date/apache-flink
+      identifiers:
+      - purl: pkg:github/apache/flink
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md
+      - cpe: cpe:2.3:a:apache:flink
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md
+      aliases:
+      - the-apache-software-foundation/flink
+  note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/flink is added to a product in TAX. Judged on the alias alone: its name is the product''s
+    own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+- id: G33
+  type: alias-only
+  expect:
+  - accept
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-http-server.yaml: |
+      key: the-apache-software-foundation/apache-http-server
+      publisher: the-apache-software-foundation
+      name: Apache HTTP Server
+      kind: software
+      source: https://httpd.apache.org/
+      versions:
+        source: https://httpd.apache.org/download.cgi
+      identifiers:
+      - cpe: cpe:2.3:a:apache:http_server
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:apache:http_server&resultsPerPage=1
+      - purl: pkg:github/apache/httpd
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-http-server.md
+      aliases:
+      - the-apache-software-foundation/http-server
+  note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/http-server is added to a product in TAX. Judged on the alias alone: its name is the
+    product''s own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+- id: G34
+  type: alias-only
+  expect:
+  - accept
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-struts.yaml: |
+      key: the-apache-software-foundation/apache-struts
+      publisher: the-apache-software-foundation
+      name: Apache Struts
+      kind: software
+      source: https://endoflife.date/apache-struts
+      versions:
+        source: https://endoflife.date/apache-struts
+      identifiers:
+      - cpe: cpe:2.3:a:apache:struts
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
+      - purl: pkg:maven/org.apache.struts/struts2-core
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
+      aliases:
+      - the-apache-software-foundation/struts
+  note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/struts is added to a product in TAX. Judged on the alias alone: its name is the product''s
+    own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+- id: G35
+  type: alias-only
+  expect:
+  - accept
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
+  note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/tomcat is added to a product in TAX. Judged on the alias alone: its name is the product''s
+    own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+- id: B50
+  type: alias-only
+  expect:
+  - reject
+  rules:
+  - TR3
+  lint: error TR3
+  proposal:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - broadcom/spring-boot
+  note: 'TAX-40, point 1. The alias is the key of a product of another publisher: the lint rejects it (TR3).'
+- id: B51
+  type: alias-only
+  expect:
+  - reject
+  rules:
+  - TV2
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - broadcom/tomcat
+  note: 'TAX-40, point 1. The alias is under another publisher than the product: code rejects it (TV2). The name itself is written at the source, so without point 1 it would be taken in: the deliberate
+    break of the story.'
+- id: B52
+  type: alias-only
+  expect:
+  - human
+  rules:
+  - TV6
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/spring-boot
+  note: 'TAX-40, point 2. The alias is the name of a product of another publisher, written under this publisher. No source of the product writes it for this product: parked, waiting for a better proposal.'
+- id: B53
+  type: alias-only
+  expect:
+  - human
+  rules:
+  - TV6
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/kestrel-gateway
+  note: 'TAX-40, point 2. A name that no source writes: parked, waiting for a better proposal.'
+- id: B54
+  type: alias-only
+  expect:
+  - human
+  rules:
+  - TV5
+  lint: pass
+  proposal:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://tomcat.example.org/
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
+  note: 'TAX-40, point 3. An alias together with another change (the source moves to another domain) is no alias-only change: the whole product is judged, and TV5 holds it for a person.'
