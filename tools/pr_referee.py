@@ -475,6 +475,8 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
             text, form = asks["alias"][0], alias.schema_for(referee.api_schema(asks["alias"][1]), item["alias"])
         else:
             text, form = system, referee.schema_for(api, item["ai_rules"])
+        if wrong := referee.format_problems(form):  # refused with a 400 otherwise, before anything is paid
+            raise SystemExit(f"{item['id']}: the answer schema is not one structured outputs take: {'; '.join(wrong)}")
         requests.append((f"p{n}", dict(
             model=args.model,
             system=[{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}],
