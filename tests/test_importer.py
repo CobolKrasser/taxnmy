@@ -6,10 +6,12 @@ import io
 import json
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
 from datetime import datetime, timezone
+from dataclasses import asdict
 from pathlib import Path
 
 import jsonschema
@@ -457,7 +459,8 @@ class TrialCountTest(unittest.TestCase):
     def setUp(self):
         self.outcomes = importer.load_outcomes(TRIAL / "outcomes.json")
         self.verdicts = json.loads((TRIAL / "verdicts.json").read_text())
-        self.keys = importer.existing_keys(REPO)
+        # The products TAX held at the time of the trial, as its outcomes name them: not the data as it is now.
+        self.keys = {o.of for o in self.outcomes if o.outcome == "alias" and "/" in o.of}
 
     def test_the_trial_counted_after_the_verdict_and_per_product_stops(self):
         t = importer.threshold(self.outcomes, self.verdicts, self.keys)
@@ -511,14 +514,25 @@ class TrialCountTest(unittest.TestCase):
     def test_the_rows_of_the_trial_planned_again(self):
         """HugeGraph-Server is a candidate with the other name as alias; MegaRAC SP-X has no versions page."""
         classes = json.loads((TRIAL / "classes.json").read_text())
+        # A data root of its own, frozen as TAX was before the trial: what TAX holds later (such as the
+        # products the trial took in) does not change what this test shows.
+        root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, root)
+        pub = "the-apache-software-foundation"
+        write(root, f"publishers/{pub}.yaml", {"key": pub, "name": "The Apache Software Foundation",
+                                               "source": "https://www.apache.org/", "aliases": []})
+        write(root, f"products/{pub}/apache-activemq-classic.yaml", {
+            "key": f"{pub}/apache-activemq-classic", "publisher": pub, "name": "Apache ActiveMQ Classic",
+            "kind": "software", "source": "https://activemq.apache.org/", "aliases": [],
+            "versions": {"source": "https://activemq.apache.org/components/classic/download"}})
         out = {o.row.line: o for o in importer.plan(importer.read_found([REPO / "referee/import/kev-proef-40.csv"]),
-                                                    REPO, classes)}
+                                                    root, classes)}
         hg, mr = out[30], out[22]
         self.assertEqual((hg.outcome, hg.key), ("candidate", "the-apache-software-foundation/hugegraph-server"))
         self.assertEqual(hg.aliases, ["the-apache-software-foundation/apache-hugegraph-server"])
         self.assertEqual((mr.outcome, mr.reason), ("parked", "no-versions"))
         self.assertTrue(importer.found_aside(mr))
-        self.assertEqual(importer.dangling(list(out.values()), importer.existing_keys(REPO)), [])
+        self.assertEqual(importer.dangling(list(out.values()), importer.existing_keys(root)), [])
         self.assertEqual((out[27].outcome, out[27].of), ("alias", "the-apache-software-foundation/apache-activemq-classic"),
                          "an alias of a product TAX has stays one")
 
@@ -568,9 +582,45 @@ class WorkflowTest(unittest.TestCase):
         self.assertEqual(jobs["group"]["if"], "github.ref == 'refs/heads/main' && inputs.live")
         self.assertEqual(jobs["pull-request"]["permissions"], {"contents": "write", "pull-requests": "write"})
         self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
-        self.assertEqual(wf["env"]["FOUND"], "referee/import/kev-proef-40.csv")
+        self.assertEqual(wf["env"]["FOUND"], "${{ inputs.found }}")
+        self.assertEqual(inputs["found"]["default"], "referee/import/kev-proef-40.csv")
+        for name in ("prepare", "group", "propose", "pull-request"):
+            script = "".join(st.get("run", "") for st in jobs[name]["steps"])
+            self.assertIn('list=$(.github/scripts/import-found.sh "$FOUND")', script, name)
+            self.assertNotIn('--found "$FOUND"', script, name)
+        pr = "".join(st.get("run", "") for st in jobs["pull-request"]["steps"])
+        self.assertIn('branch="import/kev-ronde-${RUN_ID}"', pr)
+        self.assertIn('--title "TAX-27: KEV-ronde, ${names% }"', pr)
+        self.assertNotRegex(pr, r"proef")
         script = next(st["run"] for st in jobs["pull-request"]["steps"] if "run" in st and "importer.py count" in st["run"])
         self.assertLess(script.index("importer.py count"), script.index("cp -R"), "counted against main, before the copy")
+
+
+class FoundTest(unittest.TestCase):
+    """The input `found` of the workflow: files in referee/import/, checked before any job uses them."""
+
+    def found(self, value):
+        r = subprocess.run([str(REPO / ".github/scripts/import-found.sh"), value], cwd=REPO, capture_output=True, text=True)
+        return r.returncode, r.stdout.split()
+
+    def test_names_and_patterns(self):
+        self.assertEqual(self.found("referee/import/kev-proef-40.csv"), (0, ["referee/import/kev-proef-40.csv"]))
+        code, files = self.found("referee/import/kev-groep-0[1-6].csv")
+        self.assertEqual((code, len(files)), (0, 6))
+        code, files = self.found("referee/import/kev-groep-*.csv referee/import/kev-groep-01.csv")
+        self.assertEqual((code, len(files)), (0, 11), "each file once")
+
+    def test_anything_else_stops(self):
+        for value in ("", "../x.csv", "referee/import/../../etc/passwd.csv", "referee/import/a.csv;rm -rf",
+                      "referee/import/none.csv", "referee/testset/cases.yaml", "/referee/import/kev-proef-40.csv"):
+            self.assertNotEqual(self.found(value)[0], 0, value)
+
+    def test_the_round_is_the_find_round(self):
+        rows = importer.read_found(sorted((REPO / "referee/import").glob("kev-groep-*.csv")))
+        self.assertEqual(len(rows), 422)
+        trial = importer.read_found([REPO / "referee/import/kev-proef-40.csv"])
+        self.assertEqual([asdict(r) | {"file": ""} for r in rows[:40]], [asdict(r) | {"file": ""} for r in trial],
+                         "the trial is the first 40 rows of group 1")
 
 
 class NoBrandTest(unittest.TestCase):
