@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 80 proposals with the expected outcome: 31 good (G01–G29, H01–H02), 49 bad |
+| `testset/cases.yaml` | 91 proposals with the expected outcome: 37 good (G01–G35, H01–H02), 54 bad |
 | `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
 | `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
@@ -28,6 +28,8 @@ The harness is `tools/referee.py`; see [The harness](#the-harness) below.
 | bad, caught by code | B01–B06 | a missing field, a specification (TP9), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
 | bad, for the AI | B07–B30 | 5 duplicates in another word order, 4 variants, 2 descriptions, 2 translations, 3 invented products, 2 values that the source does not confirm, 3 wrong publishers, 1 repackaged product, 2 SaaS without versions |
 | bad, past the old gate | B31–B35 | 3 wrong publishers with the product and the versions on a domain of their own (download sites), 2 existing products with a wrong `kind` (TAX-24) |
+| good, alias only | G30–G35 | the six of the trial of the KEV round (TAX-27): only an alias added to a product in TAX (TAX-40) |
+| bad, alias only | B50–B54 | an alias that is the key of another product (TR3), under another publisher (TV2), the name of another publisher's product, a name no source writes, an alias with another change (TV5) |
 | bad, protection against intent | B39–B48 | 6 names or domains one or two characters from an existing one (TV3), a name that addresses the referee (TV1), a second source on the publisher's own site (TV4), a versions source moved to someone else (TV5), a new publisher whose site has nothing to download and no versions |
 
 The good cases are mostly **hold-outs**: an existing product is taken out of the dataset and
@@ -179,9 +181,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 80 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 91 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 80); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 91); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -496,9 +498,28 @@ with the new reason, its first day and its pull request. `waiting` groups the en
 for a decision per publisher, the most urgent publisher first, each with its last day.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 80 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 91 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
+
+### A change that only adds an alias (TAX-40)
+
+A change to a product in TAX whose only difference is one or more added aliases is judged on the
+aliases, not on the whole product again (`tools/alias.py`; Fred, decision 35). An alias proves three
+things:
+
+| point | what | decided by |
+| --- | --- | --- |
+| 1 | it is nobody else's: no key or alias of another product, under the publisher of the product; one or two characters from an existing name of that publisher, a person decides | the lint (TR3), code (TV2), a person (TV3) |
+| 2 | the name exists: a source of the product that was read writes it | code when it stands there literally (TR11); otherwise one question to the AI (`referee/prompt-alias.md`), whose yes counts only with a quote of the name found in a read source (TV6) |
+| 3 | nothing else changes: the file is what TAX holds, but for the added aliases | code |
+
+TR4, TR5, TR7 and TR8 are not judged again: they were judged when the product was taken in; the
+outcome says so. A change that does more, that adds a comment line, or whose alias speaks to
+whoever judges it (TV1), gets the whole review. Without a quote the alias is parked, waiting for a
+better proposal; with no source of the product read, it waits for an event. The sources are those
+of the product itself, not of its publisher: a proposal points to no other source, since the schema
+has no field for it.
 
 ### The limits of the intake (TAX-32)
 

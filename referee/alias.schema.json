@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CobolKrasser/taxnmy/referee/alias.schema.json",
+  "title": "TAXNMY referee answer on an added alias",
+  "description": "The answer of the AI referee on one question (TAX-40): does a source of the product that was read write this name for it? One answer per alias asked. Code computes the outcome; see referee/prompt-alias.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["answers"],
+  "properties": {
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["alias", "verdict", "reason", "evidence"],
+        "properties": {
+          "alias": { "type": "string" },
+          "verdict": { "enum": ["yes", "no", "doubt"] },
+          "reason": { "type": "string" },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["url", "quote"],
+              "properties": {
+                "url": { "type": "string" },
+                "quote": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

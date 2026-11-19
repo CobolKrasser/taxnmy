@@ -125,7 +125,9 @@ class MeasureTest(unittest.TestCase):
     def test_the_new_measurement_is_about_five_dollars(self):
         """TAX-18, again: Sonnet 5.5 at low and at medium, three runs each, about $5.20 (the analyst).
         It fits the $50 by far: the runs in the repo and in the artifacts are about $13.15."""
-        cases = [c.id for c in referee.load_cases(REPO / "referee/testset/cases.yaml") if not c.lint.startswith("error")]
+        # The cases as they were then: the alias-only cases of TAX-40 came later and ask one short question.
+        cases = [c.id for c in referee.load_cases(REPO / "referee/testset/cases.yaml")
+                 if not c.lint.startswith("error") and c.type != "alias-only"]
         prices = referee.load_prices()
         rows = {e: referee.estimate("claude-sonnet-5-5", prices, cases, 3, 4000, effort=e) for e in ("low", "medium")}
         total = sum(r["expected"] for r in rows.values())
