@@ -6,4 +6,387 @@
 # `decide_by` (a kind that never lapses). The terms are in referee/parking.yaml.
 # Judged again weekly (workflow referee-parked) or with: python tools/pr_referee.py parked --live
 version: 2
-parked: []
+parked:
+- key: acclaim-systems/usaherds
+  path: products/acclaim-systems/usaherds.yaml
+  publisher: acclaim-systems
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: d46d513c9b8f0410
+  files:
+    products/acclaim-systems/usaherds.yaml: |
+      key: acclaim-systems/usaherds
+      publisher: acclaim-systems
+      name: USAHERDS
+      kind: software
+      aliases: []
+    publishers/acclaim-systems.yaml: |
+      key: acclaim-systems
+      name: Acclaim Systems
+      source: https://www.acclaimsystems.com/
+      aliases: []
+- key: acronis-international/acronis-backup-advanced
+  path: products/acronis-international/acronis-backup-advanced.yaml
+  publisher: acronis-international
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'het groeperen: reeks, editie of twijfel: doubt'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 86e762a75458cd75
+  files:
+    products/acronis-international/acronis-backup-advanced.yaml: |
+      key: acronis-international/acronis-backup-advanced
+      publisher: acronis-international
+      name: Acronis Backup (Advanced)
+      kind: software
+      source: https://www.acronis.com/en-us/support/protect/15/
+      aliases: []
+    publishers/acronis-international.yaml: |
+      key: acronis-international
+      name: Acronis International GmbH
+      source: https://www.acronis.com/en/products/cyber-infrastructure/
+      aliases: []
+- key: adobe/adobe-acrobat-reader
+  path: products/adobe/adobe-acrobat-reader.yaml
+  publisher: adobe
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'het groeperen: reeks, editie of twijfel: doubt'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 18cabf08493af5c0
+  files:
+    products/adobe/adobe-acrobat-reader.yaml: |
+      key: adobe/adobe-acrobat-reader
+      publisher: adobe
+      name: Adobe Acrobat Reader
+      kind: software
+      source: https://get.adobe.com/reader/
+      versions:
+        source: https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html
+      aliases: []
+- key: adobe/adobe-commerce
+  path: products/adobe/adobe-commerce.yaml
+  publisher: adobe
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://business.adobe.com/products/commerce.html: disallowed'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 3c8094d38eadbd81
+  files:
+    products/adobe/adobe-commerce.yaml: |
+      key: adobe/adobe-commerce
+      publisher: adobe
+      name: Adobe Commerce
+      kind: software
+      source: https://business.adobe.com/products/commerce.html
+      versions:
+        source: https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview
+      aliases: []
+- key: adobe/adobe-experience-manager-forms
+  path: products/adobe/adobe-experience-manager-forms.yaml
+  publisher: adobe
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'het groeperen: reeks, editie of twijfel: doubt'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 0922dd5a2e4d1e6a
+  files:
+    products/adobe/adobe-experience-manager-forms.yaml: |
+      key: adobe/adobe-experience-manager-forms
+      publisher: adobe
+      name: Adobe Experience Manager Forms
+      kind: software
+      source: https://business.adobe.com/products/experience-manager/forms.html
+      versions:
+        source: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes
+      aliases: []
+- key: adobe/adobe-flash-player
+  path: products/adobe/adobe-flash-player.yaml
+  publisher: adobe
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: e87211df68930e17
+  files:
+    products/adobe/adobe-flash-player.yaml: |
+      key: adobe/adobe-flash-player
+      publisher: adobe
+      name: Adobe Flash Player
+      kind: software
+      source: https://www.adobe.com/products/flashplayer/end-of-life.html
+      aliases: []
+- key: advantive/veracore
+  path: products/advantive/veracore.yaml
+  publisher: advantive
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 1e2eed4304563a0b
+  files:
+    products/advantive/veracore.yaml: |
+      key: advantive/veracore
+      publisher: advantive
+      name: VeraCore
+      kind: software
+      source: https://www.advantive.com/products/veracore/
+      aliases: []
+    publishers/advantive.yaml: |
+      key: advantive
+      name: Advantive
+      source: https://www.advantive.com/products/veracore/
+      aliases: []
+- key: ahsay-systems/ahsaycbs
+  path: products/ahsay-systems/ahsaycbs.yaml
+  publisher: ahsay-systems
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'bron verwijst door naar een ander adres: https://www.ahsay.com/support/help-centre/doc/cbs -> https://www.ahsay.com/en/support/help-centre/doc/cbs/v10'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 0d04424c1121839d
+  files:
+    products/ahsay-systems/ahsaycbs.yaml: |
+      key: ahsay-systems/ahsaycbs
+      publisher: ahsay-systems
+      name: AhsayCBS
+      kind: software
+      source: https://www.ahsay.com/support/help-centre/doc/cbs
+      versions:
+        source: https://www.ahsay.com/support/help-centre/release-notes/cbs
+      aliases: []
+    publishers/ahsay-systems.yaml: |
+      key: ahsay-systems
+      name: Ahsay Systems Corporation Limited
+      source: https://ahsay.com/download/download_document_v9_cbs-admin.jsp
+      aliases: []
+- key: ajax-net-professional/ajax-net-professional
+  path: products/ajax-net-professional/ajax-net-professional.yaml
+  publisher: ajax-net-professional
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: ac259efbcfa846c1
+  files:
+    products/ajax-net-professional/ajax-net-professional.yaml: |
+      key: ajax-net-professional/ajax-net-professional
+      publisher: ajax-net-professional
+      name: Ajax.NET Professional
+      kind: software
+      aliases: []
+- key: ami/megarac-sp-x
+  path: products/ami/megarac-sp-x.yaml
+  publisher: ami
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: c6d405cdaf11737b
+  files:
+    products/ami/megarac-sp-x.yaml: |
+      key: ami/megarac-sp-x
+      publisher: ami
+      name: MegaRAC SP-X
+      kind: software
+      source: https://www.ami.com/megarac/
+      aliases: []
+    publishers/ami.yaml: |
+      key: ami
+      name: AMI
+      source: https://www.ami.com/megarac/
+      aliases: []
+- key: apple/multiple-products
+  path: products/apple/multiple-products.yaml
+  publisher: apple
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 2304c4ebbc71016f
+  files:
+    products/apple/multiple-products.yaml: |
+      key: apple/multiple-products
+      publisher: apple
+      name: Multiple Products
+      kind: software
+      aliases: []
+- key: google/framework
+  path: products/google/framework.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Android'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: a32aa271fed03842
+  files:
+    products/google/framework.yaml: |
+      key: google/framework
+      publisher: google
+      name: Android
+      kind: operating-system
+      source: https://www.android.com/
+      versions:
+        source: https://source.android.com/docs/setup/reference/build-numbers
+      aliases: []
+- key: google/kernel
+  path: products/google/kernel.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Android'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 7d98371292ea3aa9
+  files:
+    products/google/kernel.yaml: |
+      key: google/kernel
+      publisher: google
+      name: Android
+      kind: operating-system
+      source: https://www.android.com/
+      versions:
+        source: https://source.android.com/docs/setup/reference/build-numbers
+      aliases: []
+- key: google/pixel
+  path: products/google/pixel.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 8e4b8f010b38d2d2
+  files:
+    products/google/pixel.yaml: |
+      key: google/pixel
+      publisher: google
+      name: Pixel
+      kind: device
+      aliases: []
+- key: google/runtime
+  path: products/google/runtime.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Android'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: 3236997b32af8a68
+  files:
+    products/google/runtime.yaml: |
+      key: google/runtime
+      publisher: google
+      name: Android
+      kind: operating-system
+      source: https://www.android.com/
+      versions:
+        source: https://source.android.com/docs/setup/reference/build-numbers
+      aliases: []
+- key: jakub-vrana/adminer
+  path: products/jakub-vrana/adminer.yaml
+  publisher: jakub-vrana
+  waits_for: better-proposal
+  owner: submitter
+  rule: TR5
+  reason: 'TR5: The page shows the name Jakub Vrána at the bottom, but does not explicitly state that he publishes the updates;
+    the context only implies it.'
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: b82def2a3b4e0c86
+  files:
+    products/jakub-vrana/adminer.yaml: |
+      key: jakub-vrana/adminer
+      publisher: jakub-vrana
+      name: Adminer
+      kind: software
+      source: https://www.adminer.org/
+      versions:
+        source: https://www.adminer.org/
+      aliases: []
+    publishers/jakub-vrana.yaml: |
+      key: jakub-vrana
+      name: Jakub Vrána
+      source: https://www.adminer.org/
+      aliases: []
+- key: the-apache-software-foundation/apache-superset
+  path: products/the-apache-software-foundation/apache-superset.yaml
+  publisher: the-apache-software-foundation
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-19'
+  checked: '2026-11-19'
+  lapses: '2027-02-17'
+  pr: null
+  fingerprint: fece980339f5b1c8
+  files:
+    products/the-apache-software-foundation/apache-superset.yaml: |
+      key: the-apache-software-foundation/apache-superset
+      publisher: the-apache-software-foundation
+      name: Apache Superset
+      kind: software
+      source: https://superset.apache.org/
+      aliases: []

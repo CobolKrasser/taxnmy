@@ -10,4 +10,5 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
 - purl: pkg:maven/org.apache.struts/struts2-core
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
-aliases: []
+aliases:
+- the-apache-software-foundation/struts
