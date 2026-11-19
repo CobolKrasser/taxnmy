@@ -623,6 +623,80 @@ class FoundTest(unittest.TestCase):
                          "the trial is the first 40 rows of group 1")
 
 
+class Silent:
+    """The Message Batches API, answering every request with nothing usable: enough to see who got room."""
+
+    def __init__(self):
+        self.batches = []
+
+    def count(self, request):
+        return 1000
+
+    def submit(self, requests):
+        self.batches.append(requests)
+        return f"batch_{len(self.batches)}"
+
+    def status(self, batch_id):
+        return "ended"
+
+    def cancel(self, batch_id):
+        pass
+
+    def results(self, batch_id):
+        usage = {"input_tokens": 1000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+                 "output_tokens": 10, "web_search_requests": 0}
+        for cid, _ in self.batches[int(batch_id.split("_")[1]) - 1]:
+            yield cid, referee.Response(content=[Block("{}")], stop_reason="end_turn", usage=usage)
+
+
+class AgreedRoundTest(ProposeTest):
+    """Fred, 19 November: the KEV round gets an exception from the ceilings per run, per pull request and
+    per day, with $10 for the whole round as the hard limit; the budget for every run together stays.
+    One place: the submitter kev-ronde-1 in referee/intake.yaml (TAX-32), no code of its own."""
+
+    def test_the_exception_is_one_entry_of_the_intake(self):
+        cfg = importer.intake.load(REPO)
+        self.assertEqual(importer.intake.own(cfg, "kev-ronde-1"), {"open": 500, "day_cap": 10.0})
+        self.assertNotIn("pr_cap", importer.intake.own(cfg, "kev-ronde-1"),
+                         "the ceiling per pull request stays what the grouping left of the budget of the run")
+        self.assertNotIn("kev-ronde", (REPO / "tools/pr_referee.py").read_text() + (REPO / "tools/importer.py").read_text(),
+                         "no code of its own")
+
+    def judged(self, submitter):
+        root = self.root
+        write(root, "referee/intake.yaml", (REPO / "referee/intake.yaml").read_text())
+        gated = self.tmp / f"gated-{submitter or 'none'}.json"
+        importer.propose(self.args(gated=str(gated), submitter=submitter), FakeFetcher(pages()), root, NOW, QUIET)
+        items = json.loads(gated.read_text())["items"]
+        self.assertEqual({i["submitter"] for i in items}, {submitter})
+        out = self.tmp / f"runs-{submitter or 'none'}"
+        out.mkdir()
+        args = argparse.Namespace(model="claude-opus-5-5", effort="low", max_tokens=4000, budget=50.0, pr_cap=1.0,
+                                  day_cap=0.0, wait=60, live=True, prompt=str(REPO / "referee/prompt.md"),
+                                  schema=str(REPO / "referee/verdict.schema.json"), prices=str(REPO / "referee/prices.yaml"),
+                                  out=str(out), pr=None)
+        client = Silent()
+        importer.pr_referee.judge(items, args, client=client, now=NOW, log=QUIET, sleep=lambda s: None,
+                                  limits=importer.intake.load(root))
+        return items, client
+
+    def test_the_round_has_its_own_day_ceiling(self):
+        items, client = self.judged("")
+        self.assertEqual(client.batches, [], "the shared day ceiling (here 0) leaves no room")
+        self.assertTrue(all("ceiling leaves no room" in i["reason"] for i in items))
+        items, client = self.judged("kev-ronde-1")
+        self.assertEqual(len(client.batches[0]), 2, "the day ceiling of the round leaves room for both")
+        self.assertFalse(any("ceiling" in i["reason"] for i in items))
+
+    def test_the_workflow_names_the_round_only_when_asked(self):
+        wf = yaml.safe_load((REPO / ".github/workflows/referee-import.yml").read_text())
+        inputs = wf.get("on", wf.get(True))["workflow_dispatch"]["inputs"]
+        self.assertEqual((inputs["submitter"]["default"], inputs["budget"]["default"]), ("", "1.00"))
+        step = next(st for st in wf["jobs"]["propose"]["steps"] if "importer.py propose" in st.get("run", ""))
+        self.assertEqual(step["env"]["SUBMITTER"], "${{ inputs.submitter }}")
+        self.assertIn('--submitter "$SUBMITTER"', step["run"])
+
+
 class NoBrandTest(unittest.TestCase):
     """R3: the importer names no publisher of the dataset."""
 

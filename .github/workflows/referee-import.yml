@@ -34,6 +34,10 @@ on:
         description: "dollars, the cap of this run: grouping and referee together (hard limit)"
         type: string
         default: "1.00"
+      submitter:
+        description: "an agreed round in referee/intake.yaml (TAX-32), whose values replace the shared ceilings; empty: none"
+        type: string
+        default: ""
       since:
         description: "only KEV entries added on or after this date"
         type: string
@@ -156,12 +160,15 @@ jobs:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
       - name: Read the pages and run the gate (no key)
+        env:
+          SUBMITTER: ${{ inputs.submitter }}  # checked as an account name by tools/intake.py
         run: |
           set -euo pipefail
           list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
           mapfile -t files <<< "$list"
           python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/group/classes.json" \
             --names "$RUNNER_TEMP/group/names.json" --fetch --browser --gated "$RUNNER_TEMP/proposed/gated.json" \
+            --submitter "$SUBMITTER" \
             --out "$RUNNER_TEMP/proposed" > propose.log
           sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
