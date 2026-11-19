@@ -697,6 +697,54 @@ class AgreedRoundTest(ProposeTest):
         self.assertIn('--submitter "$SUBMITTER"', step["run"])
 
 
+class CustomIdTest(GroupingTest):
+    """Run 44583147603: a publisher without a Latin key became a custom id, and the second batch got a
+    400 after the first was paid. The id is a number now, and every id is checked before anything is sent."""
+
+    def test_the_rule_of_the_batches_api(self):
+        ok = [("g0", {}), ("p12", {}), ("r1-P01", {}), ("x" * 64, {})]
+        self.assertEqual(referee.id_problems(ok), [])
+        wrong = referee.id_problems([("例株式会社", {}), ("a b", {}), ("x" * 65, {}), ("", {}), ("g0", {}), ("g0", {})])
+        self.assertEqual(len(wrong), 5, wrong)
+        self.assertIn("twice", wrong[-1])
+
+    def test_nothing_is_sent_with_an_id_the_api_refuses(self):
+        client = FakeClient()
+        budget = referee.Budget(10.0, 0.0, "claude-opus-5-5", referee.load_prices(), batch=True)
+        with self.assertRaisesRegex(SystemExit, "nothing sent"):
+            referee.batch_rounds(client, budget, [("g0", {}), ("例株式会社", {})], log=QUIET, sleep=lambda s: None)
+        self.assertEqual(client.batches, [])
+
+    def test_a_publisher_without_a_latin_key(self):
+        kev, cve = self.kev()
+        rows = ROWS + ["例;Thing;例株式会社;https://rei.example/;Rei Thing;software;https://rei.example/t;https://rei.example/n;",
+                       "例;Other;例株式会社;https://rei.example/;Rei Other;software;https://rei.example/o;https://rei.example/n;"]
+        client = FakeClient()
+        got = importer.run_grouping(self.args(found=[str(csv_file(self.tmp, rows, "rei.csv"))], kev=str(kev), cve=str(cve),
+                                              live=True), client=client, data_root=self.root, now=NOW, log=QUIET,
+                                    sleep=lambda s: None)
+        sent = [cid for cid, _ in client.batches[0]]
+        self.assertEqual(referee.id_problems(client.batches[0]), [])
+        self.assertTrue(all(re.fullmatch(r"g\d+", cid) for cid in sent), sent)
+        classes = json.loads((self.tmp / "g/classes.json").read_text())
+        self.assertIn("例株式会社", classes, "the answer reaches its publisher through the table")
+        self.assertEqual(classes["例株式会社"]["rei-thing"]["class"], "product")
+        self.assertEqual(got["never"], [])
+
+    def test_the_eleven_groups_of_the_round(self):
+        """The real input, without a key: every request of the grouping has an id the API takes."""
+        rows = importer.read_found(sorted((REPO / "referee/import").glob("kev-groep-*.csv")))
+        candidates, mapping = importer.grouping_candidates(rows, None, None, "", REPO)
+        groups = importer.group.collect(candidates, REPO, mapping)
+        self.assertTrue(any(not referee.CUSTOM_ID.fullmatch(g.publisher) for g in groups),
+                        "the round has a publisher key the API would refuse as an id")
+        decided = {g.publisher: importer.group.literal(g) for g in groups}
+        requests, by_id = importer.grouping_requests(groups, decided, "system", {"type": "object"}, "claude-opus-5-5", "low")
+        self.assertGreater(len(requests), 150)
+        self.assertEqual(referee.id_problems(requests), [])
+        self.assertEqual(sorted(by_id.values()), sorted({g.publisher for g in groups if len(decided[g.publisher]) < len(g.names)}))
+
+
 class NoBrandTest(unittest.TestCase):
     """R3: the importer names no publisher of the dataset."""
 

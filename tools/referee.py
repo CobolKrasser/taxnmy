@@ -1001,13 +1001,32 @@ def fit_batch(client, budget: Budget, requests: list) -> tuple[list, list]:
     return fitted, []
 
 
+CUSTOM_ID = re.compile(r"[a-zA-Z0-9_-]{1,64}")  # what the Message Batches API takes as a custom_id
+
+
+def id_problems(requests: list) -> list[str]:
+    """Why the Message Batches API would refuse the custom ids of these requests (a 400 for the whole
+    batch, after the batches before it were paid), or nothing: each must match CUSTOM_ID, and be unique."""
+    problems, seen = [], set()
+    for n, (cid, _) in enumerate(requests):
+        if not isinstance(cid, str) or not CUSTOM_ID.fullmatch(cid):
+            problems.append(f"request {n}: custom_id {str(cid)[:80]!r} does not match ^[a-zA-Z0-9_-]{{1,64}}$")
+        elif cid in seen:
+            problems.append(f"request {n}: custom_id {cid!r} twice")
+        seen.add(cid)
+    return problems
+
+
 def batch_rounds(client, budget: Budget, requests: list, log=print, wait: float = BATCH_WAIT,
                  poll: float = BATCH_POLL, sleep=None) -> tuple[dict, list]:
     """As many batches as it takes: each holds what fits the budget at its worst, and once it has
     ended, what it really cost frees the rest for the next. Stops when nothing fits or `wait` is used
-    up. Returns (custom_id -> answer, as run_batch; the custom ids that never fitted)."""
+    up. Returns (custom_id -> answer, as run_batch; the custom ids that never fitted). Every custom id
+    is checked before anything is sent: one the API refuses would stop a later round."""
     import time
 
+    if wrong := id_problems(requests):
+        raise SystemExit("custom ids the Message Batches API refuses, nothing sent: " + "; ".join(wrong[:5]))
     answers, left, started = {}, list(requests), time.monotonic()
     while left:
         fitted, left = fit_batch(client, budget, left)
