@@ -766,6 +766,16 @@ def classes_by_name(groups: list, classes: dict) -> dict:
     return out
 
 
+def grouping_requests(groups: list, decided: dict, system: str, schema: dict, model: str, effort: str):
+    """([(custom id, request)], custom id -> publisher) for the publishers code did not settle. The
+    custom id is a number, not the publisher: a publisher key may hold any letter (a name without a
+    Latin key) or be longer than the Message Batches API takes."""
+    asked = [g for g in groups if len(decided[g.publisher]) < len(g.names)]
+    requests = [(f"g{n}", group.request(g, decided[g.publisher], system, schema, model, effort))
+                for n, g in enumerate(asked)]
+    return requests, {f"g{n}": g.publisher for n, g in enumerate(asked)}
+
+
 def run_grouping(args, client=None, data_root: Path = REPO, now=None, log=print, sleep=None) -> dict:
     rows = first(read_found(args.found), args.first)
     kev = json.loads(Path(args.kev).read_text(encoding="utf-8")) if args.kev else None
@@ -795,9 +805,10 @@ def run_grouping(args, client=None, data_root: Path = REPO, now=None, log=print,
     log(f"budget ${args.budget:.2f} (spent ${spent:.4f}); cap of this run "
         f"{'none' if args.cap is None else f'${args.cap:.2f}'}: at most ${room:.4f}")
     budget = referee.Budget(spent + room, spent, args.model, prices, max_tokens=args.max_tokens, batch=True)
-    requests = [(g.publisher, group.request(g, decided[g.publisher], system, schema, args.model, args.effort))
-                for g in groups if len(decided[g.publisher]) < len(g.names)]
-    answers, never = referee.batch_rounds(client, budget, requests, log=log, wait=args.wait, sleep=sleep)
+    requests, by_id = grouping_requests(groups, decided, system, schema, args.model, args.effort)
+    answered, never_ids = referee.batch_rounds(client, budget, requests, log=log, wait=args.wait, sleep=sleep)
+    answers = {by_id[cid]: a for cid, a in answered.items()}
+    never = [by_id[cid] for cid in never_ids]
     classes, cost, notes = {}, 0.0, {}
     for g in groups:
         a = answers.get(g.publisher)
