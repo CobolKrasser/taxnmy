@@ -205,6 +205,56 @@ class Gate(unittest.TestCase):
         self.assertNotIn("alias", item["decided"])
 
 
+class Format(unittest.TestCase):
+    """Every answer schema the referee sends is one structured outputs take (run 44550607189 got a
+    400 on maxItems in count_tokens, before anything was paid)."""
+
+    def test_every_schema_that_is_sent_passes(self):
+        import itertools
+        verdict = referee.api_schema(referee.load_schema(REPO / "referee/verdict.schema.json"))
+        for n in range(1, len(referee.RULES) + 1):
+            for rules in itertools.combinations(referee.RULES, n):
+                with self.subTest(rules=rules):
+                    self.assertEqual(referee.format_problems(referee.schema_for(verdict, rules)), [])
+        group = referee.api_schema(referee.load_schema(REPO / "referee/group.schema.json"))
+        self.assertEqual(referee.format_problems(group), [])
+        for names in (["a/b"], ["a/b", "a/c", "a/d"]):
+            form = alias.schema_for(referee.api_schema(referee.load_schema(alias.SCHEMA)), names)
+            self.assertEqual(referee.format_problems(form), [], names)
+
+    def test_what_structured_outputs_refuse_is_found(self):
+        ok = {"type": "object", "additionalProperties": False, "required": ["x"],
+              "properties": {"x": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": ["a"]}}}}
+        self.assertEqual(referee.format_problems(ok), [])
+        for path, change in ((("properties", "x"), {"maxItems": 3}), (("properties", "x"), {"minItems": 2}),
+                             (("properties", "x", "items"), {"minLength": 1}), (("properties", "x", "items"), {"pattern": "^a"}),
+                             ((), {"additionalProperties": True}), ((), {"additionalProperties": None}),
+                             (("properties", "x", "items"), {"format": "regex"}), ((), {"minimum": 0})):
+            bad = json.loads(json.dumps(ok))
+            node = bad
+            for k in path:
+                node = node[k]
+            node.update(change)
+            if change.get("additionalProperties", 0) is None:
+                del bad["additionalProperties"]
+            with self.subTest(change=change):
+                self.assertTrue(referee.format_problems(bad))
+
+    def test_judge_stops_before_a_request_with_a_schema_that_is_refused(self):
+        name = "synology/diskstation-one-two-four"
+        item = pr_referee.gate_proposals([{"id": REL, "files": {REL: with_alias(name)}}], Fetcher(), DATA, log=QUIET,
+                                         decisions=[])[0]
+        real = alias.schema_for
+        alias.schema_for = lambda schema, names: {**real(schema, names), "maxItems": 1}
+        client = AliasClient(answer(name))
+        try:
+            with tempfile.TemporaryDirectory() as tmp, self.assertRaises(SystemExit):
+                pr_referee.judge([item], Args(Path(tmp) / "runs"), client=client, now=NOW, log=QUIET, sleep=lambda s: None)
+        finally:
+            alias.schema_for = real
+        self.assertEqual((client.batches, client.counts), ([], 0), "nothing sent, nothing counted")
+
+
 class Command(unittest.TestCase):
     def test_gate_takes_only_cases_that_exist(self):
         with self.assertRaises(SystemExit):

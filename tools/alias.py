@@ -141,11 +141,12 @@ def message(product_text: str, aliases: list[str], sources: list) -> str:
 
 
 def schema_for(schema: dict, aliases: list[str]) -> dict:
-    """The answer schema, with the aliases asked as the only values of `alias`, one answer each."""
+    """The answer schema, with the aliases asked as the only values of `alias`. How many answers there
+    are is not in the schema: structured outputs take no count of items (referee.format_problems).
+    `check` counts an alias without an answer as not proved."""
     out = copy.deepcopy(schema)
     item = out["properties"]["answers"]["items"]
     item["properties"]["alias"]["enum"] = list(aliases)
-    out["properties"]["answers"]["minItems"] = out["properties"]["answers"]["maxItems"] = len(aliases)
     return out
 
 

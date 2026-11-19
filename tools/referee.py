@@ -644,6 +644,45 @@ def api_schema(schema: dict) -> dict:
     return walk(schema)
 
 
+# What structured outputs take in a schema (output_config.format, the Claude API docs, "JSON Schema
+# limitations"): no recursion, no numerical or string constraints, no count of items beyond
+# minItems 0 or 1, and additionalProperties only false. A schema with anything else is refused with
+# a 400 before anything is paid; format_problems finds it before the request is sent.
+FORMAT_KEYWORDS = {"type", "properties", "required", "additionalProperties", "items", "enum", "const", "anyOf",
+                   "allOf", "$ref", "$defs", "description", "title", "format", "minItems", "default"}
+FORMATS = {"date-time", "time", "date", "duration", "email", "hostname", "uri", "ipv4", "ipv6", "uuid"}
+
+
+def format_problems(schema: dict, where: str = "") -> list[str]:
+    """Why structured outputs would refuse this schema (as sent: after api_schema), or nothing."""
+    problems = []
+    if isinstance(schema, list):
+        for i, v in enumerate(schema):
+            problems += format_problems(v, f"{where}/{i}")
+        return problems
+    if not isinstance(schema, dict):
+        return problems
+    for k, v in schema.items():
+        here = f"{where}/{k}"
+        if k == "properties":
+            for name, sub in v.items():
+                problems += format_problems(sub, f"{here}/{name}")
+            continue
+        if k not in FORMAT_KEYWORDS:
+            problems.append(f"{here}: {k} is not supported")
+        elif k == "minItems" and v not in (0, 1):
+            problems.append(f"{here}: minItems may only be 0 or 1")
+        elif k == "additionalProperties" and v is not False:
+            problems.append(f"{here}: additionalProperties must be false")
+        elif k == "format" and v not in FORMATS:
+            problems.append(f"{here}: format {v!r} is not supported")
+        elif isinstance(v, (dict, list)) and k not in ("enum", "const", "default", "required"):
+            problems += format_problems(v, here)
+    if schema.get("type") == "object" and schema.get("additionalProperties") is not False:
+        problems.append(f"{where or '/'}: an object needs additionalProperties: false")
+    return problems
+
+
 def schema_for(schema: dict, rules) -> dict:
     """The verdict schema with only the rules the referee is asked; the others the gate settled."""
     out = copy.deepcopy(schema)
