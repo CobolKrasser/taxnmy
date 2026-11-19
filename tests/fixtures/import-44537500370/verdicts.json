@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "pr": null,
+ "head_sha": "",
+ "run": "20261119-141532-pr0-claude-opus-5-5",
+ "counts": {
+  "accept": 7,
+  "reject": 0,
+  "alias": 0,
+  "parked": 4
+ },
+ "cost": 0.234555,
+ "verdicts": [
+  {
+   "id": "products/acronis-international/acronis-cyber-infrastructure.yaml",
+   "key": "acronis-international/acronis-cyber-infrastructure",
+   "publisher": "acronis-international",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/acronis-international/acronis-cyber-infrastructure.yaml": "key: acronis-international/acronis-cyber-infrastructure\npublisher: acronis-international\nname: Acronis Cyber Infrastructure\nkind: software\nsource: https://www.acronis.com/en/products/cyber-infrastructure/\nversions:\n  source: https://dl.acronis.com/u/vstorage/relnotes.html\naliases:\n- acronis-international/cyber-infrastructure-aci\n",
+    "publishers/acronis-international.yaml": "key: acronis-international\nname: Acronis International GmbH\nsource: https://www.acronis.com/en/products/cyber-infrastructure/\naliases: []\n"
+   },
+   "old": {},
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0315631,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/adobe/adobe-acrobat.yaml",
+   "key": "adobe/adobe-acrobat",
+   "publisher": "adobe",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/adobe/adobe-acrobat.yaml": "key: adobe/adobe-acrobat\npublisher: adobe\nname: Adobe Acrobat\nkind: software\nsource: https://www.adobe.com/acrobat.html\nversions:\n  source: https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html\naliases:\n- adobe/acrobat\n"
+   },
+   "old": {},
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0427571,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/adobe/adobe-coldfusion.yaml",
+   "key": "adobe/adobe-coldfusion",
+   "publisher": "adobe",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/adobe/adobe-coldfusion.yaml": "key: adobe/adobe-coldfusion\npublisher: adobe\nname: Adobe ColdFusion\nkind: software\nsource: https://endoflife.date/coldfusion\nversions:\n  source: https://endoflife.date/coldfusion\nidentifiers:\n- cpe: cpe:2.3:a:adobe:coldfusion\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md\naliases:\n- adobe/coldfusion\n"
+   },
+   "old": {
+    "products/adobe/adobe-coldfusion.yaml": "key: adobe/adobe-coldfusion\npublisher: adobe\nname: Adobe ColdFusion\nkind: software\nsource: https://endoflife.date/coldfusion\nversions:\n  source: https://endoflife.date/coldfusion\nidentifiers:\n- cpe: cpe:2.3:a:adobe:coldfusion\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md\naliases: []\n"
+   },
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0208495,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/igor-pavlov/7-zip.yaml",
+   "key": "igor-pavlov/7-zip",
+   "publisher": "igor-pavlov",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/igor-pavlov/7-zip.yaml": "key: igor-pavlov/7-zip\npublisher: igor-pavlov\nname: 7-Zip\nkind: software\nsource: https://www.7-zip.org/\nversions:\n  source: https://www.7-zip.org/history.txt\naliases: []\n",
+    "publishers/igor-pavlov.yaml": "key: igor-pavlov\nname: Igor Pavlov\nsource: https://www.7-zip.org/\naliases: []\n"
+   },
+   "old": {},
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.026673099999999998,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/jakub-vrana/adminer.yaml",
+   "key": "jakub-vrana/adminer",
+   "publisher": "jakub-vrana",
+   "outcome": "parked",
+   "rule": "TR5",
+   "reason": "TR5: The page shows the name Jakub Vrána, but only as a footer and translation credit; it does not explicitly say he publishes the updates.",
+   "by": "ai",
+   "waits_for": "better-proposal",
+   "holds": {},
+   "files": {
+    "products/jakub-vrana/adminer.yaml": "key: jakub-vrana/adminer\npublisher: jakub-vrana\nname: Adminer\nkind: software\nsource: https://www.adminer.org/\nversions:\n  source: https://www.adminer.org/\naliases: []\n",
+    "publishers/jakub-vrana.yaml": "key: jakub-vrana\nname: Jakub Vrána\nsource: https://www.adminer.org/\naliases: []\n"
+   },
+   "old": {},
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0105011,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/the-apache-software-foundation/apache-activemq-classic.yaml",
+   "key": "the-apache-software-foundation/apache-activemq-classic",
+   "publisher": "the-apache-software-foundation",
+   "outcome": "parked",
+   "rule": "TR5",
+   "reason": "TR5: The sources say ActiveMQ is an Apache project and point to the Apache ActiveMQ website, but no source text states that The Apache Software Foundation publishes ActiveMQ Classic.",
+   "by": "ai",
+   "waits_for": "better-proposal",
+   "holds": {},
+   "files": {
+    "products/the-apache-software-foundation/apache-activemq-classic.yaml": "key: the-apache-software-foundation/apache-activemq-classic\npublisher: the-apache-software-foundation\nname: Apache ActiveMQ Classic\nkind: software\nsource: https://endoflife.date/apache-activemq\nversions:\n  source: https://endoflife.date/apache-activemq\nidentifiers:\n- cpe: cpe:2.3:a:apache:activemq\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md\n- purl: pkg:maven/org.apache.activemq/activemq-broker\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md\naliases:\n- the-apache-software-foundation/apache-activemq\n"
+   },
+   "old": {
+    "products/the-apache-software-foundation/apache-activemq-classic.yaml": "key: the-apache-software-foundation/apache-activemq-classic\npublisher: the-apache-software-foundation\nname: Apache ActiveMQ Classic\nkind: software\nsource: https://endoflife.date/apache-activemq\nversions:\n  source: https://endoflife.date/apache-activemq\nidentifiers:\n- cpe: cpe:2.3:a:apache:activemq\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md\n- purl: pkg:maven/org.apache.activemq/activemq-broker\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md\naliases: []\n"
+   },
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0197431,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/the-apache-software-foundation/apache-flink.yaml",
+   "key": "the-apache-software-foundation/apache-flink",
+   "publisher": "the-apache-software-foundation",
+   "outcome": "parked",
+   "rule": "TR5",
+   "reason": "TR5: Sources tag Flink as 'apache' and show github apache/flink, but none states explicitly that The Apache Software Foundation publishes Flink's updates.",
+   "by": "ai",
+   "waits_for": "better-proposal",
+   "holds": {},
+   "files": {
+    "products/the-apache-software-foundation/apache-flink.yaml": "key: the-apache-software-foundation/apache-flink\npublisher: the-apache-software-foundation\nname: Apache Flink\nkind: software\nsource: https://endoflife.date/apache-flink\nversions:\n  source: https://endoflife.date/apache-flink\nidentifiers:\n- purl: pkg:github/apache/flink\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md\n- cpe: cpe:2.3:a:apache:flink\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md\naliases:\n- the-apache-software-foundation/flink\n"
+   },
+   "old": {
+    "products/the-apache-software-foundation/apache-flink.yaml": "key: the-apache-software-foundation/apache-flink\npublisher: the-apache-software-foundation\nname: Apache Flink\nkind: software\nsource: https://endoflife.date/apache-flink\nversions:\n  source: https://endoflife.date/apache-flink\nidentifiers:\n- purl: pkg:github/apache/flink\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md\n- cpe: cpe:2.3:a:apache:flink\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md\naliases: []\n"
+   },
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.014535099999999999,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/the-apache-software-foundation/apache-http-server.yaml",
+   "key": "the-apache-software-foundation/apache-http-server",
+   "publisher": "the-apache-software-foundation",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/the-apache-software-foundation/apache-http-server.yaml": "key: the-apache-software-foundation/apache-http-server\npublisher: the-apache-software-foundation\nname: Apache HTTP Server\nkind: software\nsource: https://httpd.apache.org/\nversions:\n  source: https://httpd.apache.org/download.cgi\nidentifiers:\n- cpe: cpe:2.3:a:apache:http_server\n  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:apache:http_server&resultsPerPage=1\n- purl: pkg:github/apache/httpd\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-http-server.md\naliases:\n- the-apache-software-foundation/http-server\n"
+   },
+   "old": {
+    "products/the-apache-software-foundation/apache-http-server.yaml": "key: the-apache-software-foundation/apache-http-server\npublisher: the-apache-software-foundation\nname: Apache HTTP Server\nkind: software\nsource: https://httpd.apache.org/\nversions:\n  source: https://httpd.apache.org/download.cgi\nidentifiers:\n- cpe: cpe:2.3:a:apache:http_server\n  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:apache:http_server&resultsPerPage=1\n- purl: pkg:github/apache/httpd\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-http-server.md\naliases: []\n"
+   },
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.022659,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/the-apache-software-foundation/apache-ofbiz.yaml",
+   "key": "the-apache-software-foundation/apache-ofbiz",
+   "publisher": "the-apache-software-foundation",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/the-apache-software-foundation/apache-ofbiz.yaml": "key: the-apache-software-foundation/apache-ofbiz\npublisher: the-apache-software-foundation\nname: Apache OFBiz\nkind: software\nsource: https://ofbiz.apache.org/\nversions:\n  source: https://ofbiz.apache.org/download.html\naliases:\n- the-apache-software-foundation/ofbiz\n"
+   },
+   "old": {},
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0136214,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/the-apache-software-foundation/apache-struts.yaml",
+   "key": "the-apache-software-foundation/apache-struts",
+   "publisher": "the-apache-software-foundation",
+   "outcome": "parked",
+   "rule": "TR5",
+   "reason": "TR5: The sources name Apache and struts.apache.org, but none explicitly states that The Apache Software Foundation publishes Struts updates.",
+   "by": "ai",
+   "waits_for": "better-proposal",
+   "holds": {},
+   "files": {
+    "products/the-apache-software-foundation/apache-struts.yaml": "key: the-apache-software-foundation/apache-struts\npublisher: the-apache-software-foundation\nname: Apache Struts\nkind: software\nsource: https://endoflife.date/apache-struts\nversions:\n  source: https://endoflife.date/apache-struts\nidentifiers:\n- cpe: cpe:2.3:a:apache:struts\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md\n- purl: pkg:maven/org.apache.struts/struts2-core\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md\naliases:\n- the-apache-software-foundation/struts\n"
+   },
+   "old": {
+    "products/the-apache-software-foundation/apache-struts.yaml": "key: the-apache-software-foundation/apache-struts\npublisher: the-apache-software-foundation\nname: Apache Struts\nkind: software\nsource: https://endoflife.date/apache-struts\nversions:\n  source: https://endoflife.date/apache-struts\nidentifiers:\n- cpe: cpe:2.3:a:apache:struts\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md\n- purl: pkg:maven/org.apache.struts/struts2-core\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md\naliases: []\n"
+   },
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.014469099999999999,
+   "submitter": "",
+   "known": true
+  },
+  {
+   "id": "products/the-apache-software-foundation/apache-tomcat.yaml",
+   "key": "the-apache-software-foundation/apache-tomcat",
+   "publisher": "the-apache-software-foundation",
+   "outcome": "accept",
+   "rule": "",
+   "reason": "",
+   "by": "ai",
+   "waits_for": "",
+   "holds": {},
+   "files": {
+    "products/the-apache-software-foundation/apache-tomcat.yaml": "key: the-apache-software-foundation/apache-tomcat\npublisher: the-apache-software-foundation\nname: Apache Tomcat\nkind: software\nsource: https://endoflife.date/tomcat\nversions:\n  source: https://endoflife.date/tomcat\nidentifiers:\n- purl: pkg:maven/org.apache.tomcat/tomcat\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md\n- purl: pkg:github/apache/tomcat\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md\n- cpe: cpe:2.3:a:apache:tomcat\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md\naliases:\n- the-apache-software-foundation/tomcat\n"
+   },
+   "old": {
+    "products/the-apache-software-foundation/apache-tomcat.yaml": "key: the-apache-software-foundation/apache-tomcat\npublisher: the-apache-software-foundation\nname: Apache Tomcat\nkind: software\nsource: https://endoflife.date/tomcat\nversions:\n  source: https://endoflife.date/tomcat\nidentifiers:\n- purl: pkg:maven/org.apache.tomcat/tomcat\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md\n- purl: pkg:github/apache/tomcat\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md\n- cpe: cpe:2.3:a:apache:tomcat\n  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md\naliases: []\n"
+   },
+   "case": null,
+   "duplicate_of": null,
+   "cost": 0.0171831,
+   "submitter": "",
+   "known": true
+  }
+ ]
+}

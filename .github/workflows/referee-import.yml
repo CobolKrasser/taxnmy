@@ -12,7 +12,7 @@ name: referee-import
 #             the gate of the pull request.
 #   judge     environment referee (the key; Fred approves): the referee on what the gate left, one
 #             batch, within what the grouping left of the cap.
-#   pull-request  no key: the outcome on a branch, parked entries in referee/parked.yaml, rejected
+#   pull-request  no key: the count per product after the verdict (TAX-39), the outcome on a branch, parked entries in referee/parked.yaml, rejected
 #             and aliased files taken out (tools/pr_referee.py apply), and a pull request.
 #
 # The cap is a hard limit in code for this workflow run (grouping and referee together), next to
@@ -248,6 +248,10 @@ jobs:
           RUN_ID: ${{ github.run_id }}
         run: |
           set -euo pipefail
+          # The count per product after the verdict (TAX-39), against the data of main, before anything changes.
+          python tools/importer.py count --outcomes "$RUNNER_TEMP/proposed/outcomes.json" \
+            --verdicts "$VERDICTS/verdicts.json" --out "$RUNNER_TEMP/count.md" > /dev/null
+          cat "$RUNNER_TEMP/count.md" >> "$GITHUB_STEP_SUMMARY"
           # Only data files and the parking list come over; then the verdicts take out what is not accepted.
           for d in products publishers; do
             if [ -d "$DATA/$d" ]; then cp -R "$DATA/$d" .; fi
@@ -263,7 +267,7 @@ jobs:
           git commit -q -m "TAX-27: the trial of the KEV round (run ${RUN_ID})"
           git push -q origin "$branch"
           { echo "Trial of the KEV round (TAX-27), workflow run ${RUN_ID}. Not merged by itself."; echo
-            cat "$VERDICTS/comment.md"; echo; cat "$REPORT"; } | head -c 60000 > body.md
+            cat "$RUNNER_TEMP/count.md"; echo; cat "$VERDICTS/comment.md"; echo; cat "$REPORT"; } | head -c 60000 > body.md
           if ! gh pr create --base main --head "$branch" --title "TAX-27: proef van 40 uit de KEV-ronde" --body-file body.md \
                | tee -a "$GITHUB_STEP_SUMMARY"; then
             # The repository may not let a workflow open a pull request: the branch is there, open it by hand.

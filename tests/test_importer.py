@@ -1,6 +1,8 @@
 """The importer of a CVE round (TAX-27): tools/importer.py."""
 
 import argparse
+import contextlib
+import io
 import json
 import re
 import shutil
@@ -165,7 +167,8 @@ class PlanTest(Base):
                    "beta-systems": {"beta-box": {"class": "alias", "of": "beta-systems/box"}}}
         out = importer.plan(self.rows(), self.root, classes)
         self.assertEqual((out[0].outcome, out[0].reason), ("parked", "grouping"))
-        self.assertEqual((out[8].outcome, out[8].of), ("alias", "beta-systems/box"))
+        self.assertEqual((out[8].outcome, out[8].aliases), ("candidate", ["beta-systems/box"]),
+                         "TAX-39: no alias of a product that is neither in TAX nor proposed; the row is the product")
 
     def test_grouped_aliases_go_to_the_candidate_or_the_existing_product(self):
         out = importer.plan(self.rows(), self.root)
@@ -222,23 +225,31 @@ class PagesTest(Base):
         self.assertNotIn("beta-systems", pubs)
         self.assertEqual((out[8].outcome, out[8].reason), ("parked", "no-publisher-page"))
 
+    def counted(self, out, verdicts=None):
+        t = importer.threshold(out, verdicts, {"acme/router-os"})
+        return t["parked"], t["proposed"], t["aside"], t["final"], t["stop"]
+
     def test_the_threshold_leaves_closed_sources_out(self):
         out, _ = self.outcomes(FakeFetcher(pages(**{"https://acme.example/widget": ("refused", "")})))
-        self.assertEqual(importer.threshold(out), (1, 5, 4, False),
-                         "series, edition, not found and no versions are set aside; the closed pair does not count; no kind does")
+        self.assertEqual(self.counted(out), (1, 4, 4, False, False),
+                         "series, edition, not found and no versions are set aside; the closed product (two rows) "
+                         "does not count as parked; no kind does")
         out, _ = self.outcomes(FakeFetcher(pages()), ROWS[:2] + ROWS[4:5] + ROWS[8:])
-        self.assertEqual(importer.threshold(out), (0, 4, 0, False))
+        self.assertEqual(self.counted(out), (0, 3, 0, False, False), "two rows of one product count once")
 
     def test_the_threshold_counts_only_what_is_proposed(self):
         """Decision 33: two of three proposed rows parked stops the round, however many the find round set aside."""
         rows = [ROWS[2], ROWS[3], ROWS[5], ROWS[7], ROWS[0], ROWS[6],
                 "Acme;Other;Acme;https://acme.example/;Acme Other;software;https://acme.example/o;https://acme.example/o/n;"]
         out, _ = self.outcomes(FakeFetcher(pages()), rows)
-        self.assertEqual(importer.threshold(out), (2, 3, 4, True), "no kind and an unreadable page, of three")
-        report = importer.report(out, {}, {}, None, True)
+        self.assertEqual(self.counted(out), (2, 3, 4, False, False), "no kind and an unreadable page, of three")
+        report = importer.report(out, {}, {}, None, True, set())
         self.assertIn("| apart (vindronde) | geen versions.source | 1 |", report)
-        self.assertIn("Apart gezet door de vindronde (telt niet mee): 4.", report)
-        self.assertIn("2 van 3 voorgedragen (meer dan een derde: de ronde stopt)", report)
+        self.assertIn("Apart gezet door de vindronde (telt niet mee): 4 producten.", report)
+        self.assertIn("Voorlopige stand, vóór het oordeel van de scheidsrechter:** 2 van 3", report)
+        self.assertNotRegex(report, r"\*\*stop\*\*|gaat door", "before the verdict no word on going on (TAX-39)")
+        accept = {"verdicts": [{"id": "products/acme/acme-widget.yaml", "outcome": "accept"}]}
+        self.assertEqual(self.counted(out, accept), (2, 3, 4, True, True), "after the verdict: two of three, stop")
 
 
 class FilesTest(Base):
@@ -433,9 +444,104 @@ class TrialTest(unittest.TestCase):
         rows = importer.read_found([path])
         self.assertEqual(len(rows), 40)
         outcomes = importer.plan(rows)
-        parked, proposed, aside, stop = importer.threshold(outcomes)
-        self.assertEqual(aside, 12, "the dry run of PR 45")
-        self.assertFalse(stop)
+        t = importer.threshold(outcomes, None, importer.existing_keys(REPO))
+        self.assertEqual((t["rows"], t["final"], t["stop"]), (40, False, False), "before the verdict: provisional")
+
+
+TRIAL = REPO / "tests/fixtures/import-44537500370"  # outcomes, verdicts and grouping of the paid trial
+
+
+class TrialCountTest(unittest.TestCase):
+    """TAX-39 on the artifacts of run 44537500370 (pull request 53): no paid calls."""
+
+    def setUp(self):
+        self.outcomes = importer.load_outcomes(TRIAL / "outcomes.json")
+        self.verdicts = json.loads((TRIAL / "verdicts.json").read_text())
+        self.keys = importer.existing_keys(REPO)
+
+    def test_the_trial_counted_after_the_verdict_and_per_product_stops(self):
+        t = importer.threshold(self.outcomes, self.verdicts, self.keys)
+        self.assertEqual((t["parked"], t["proposed"], t["final"], t["stop"]), (9, 22, True, True),
+                         "the analysis of 19 November, section 2: 9 of 22 products; the report said 7 of 30, go on")
+        self.assertEqual((t["rows"], t["products"]), (40, 32))
+        ps = importer.products(self.outcomes, self.verdicts, self.keys)
+        self.assertEqual(sum(len(p["rows"]) for p in ps.values()), 40, "every row one outcome")
+        self.assertEqual(len(ps["adobe/magento-open-source"]["rows"]), 3, "three rows, one product")
+        self.assertEqual(sorted(k for k, p in ps.items() if p["status"] == "verloren"), ["Apache HugeGraph-Server", "MegaRAC SPx"])
+
+    def test_new_publishers_parked_on_tr5(self):
+        got = importer.tr5_new_publishers(self.outcomes, self.verdicts, self.keys)
+        self.assertEqual([(c["publisher"], c["product"]) for c in got], [("jakub-vrana", "jakub-vrana/adminer")],
+                         "three more were parked on TR5, but of a publisher TAX has")
+        self.assertIn("footer", got[0]["reason"])
+        report = importer.final_report(self.outcomes, self.verdicts, self.keys)
+        self.assertIn("**Nieuwe uitgevers geparkeerd op TR5** (besluit 35): 1", report)
+        self.assertIn("9 van 22 voorgedragen producten", report)
+        self.assertIn("**stop**", report)
+
+    def test_break_one_the_referee_parks_everything(self):
+        """Deliberate break: with every verdict parked, the report must say stop."""
+        parked = {**self.verdicts, "verdicts": [{**v, "outcome": "parked", "rule": "TR5", "reason": "TR5: doubt",
+                                                 "waits_for": "better-proposal"} for v in self.verdicts["verdicts"]]}
+        t = importer.threshold(self.outcomes, parked, self.keys)
+        self.assertEqual((t["parked"], t["final"], t["stop"]), (16, True, True))
+
+    def test_break_two_an_alias_of_a_product_that_does_not_exist(self):
+        """Deliberate break: an alias whose product is neither in TAX nor proposed must fail."""
+        lost = importer.dangling(self.outcomes, self.keys)
+        self.assertEqual(sorted(o.row.line for o in lost), [22, 30], "the trial as it ran")
+        root = dataset()
+        self.addCleanup(shutil.rmtree, root)
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp)
+        args = argparse.Namespace(found=[str(csv_file(tmp, ROWS))], first=None, classes=None, names=None, fetch=False,
+                                  write=False, browser=False, gated=None, out=str(tmp / "out"))
+        real = importer.plan
+
+        def broken(rows, data_root, classes):
+            out = real(rows, data_root, classes)
+            out[0].outcome, out[0].reason, out[0].of = "alias", "grouping", "acme/ghost"
+            return out
+
+        importer.plan = broken
+        self.addCleanup(setattr, importer, "plan", real)
+        with self.assertRaisesRegex(SystemExit, "acme/ghost"):
+            importer.propose(args, None, root, NOW, QUIET)
+
+    def test_the_rows_of_the_trial_planned_again(self):
+        """HugeGraph-Server is a candidate with the other name as alias; MegaRAC SP-X has no versions page."""
+        classes = json.loads((TRIAL / "classes.json").read_text())
+        out = {o.row.line: o for o in importer.plan(importer.read_found([REPO / "referee/import/kev-proef-40.csv"]),
+                                                    REPO, classes)}
+        hg, mr = out[30], out[22]
+        self.assertEqual((hg.outcome, hg.key), ("candidate", "the-apache-software-foundation/hugegraph-server"))
+        self.assertEqual(hg.aliases, ["the-apache-software-foundation/apache-hugegraph-server"])
+        self.assertEqual((mr.outcome, mr.reason), ("parked", "no-versions"))
+        self.assertTrue(importer.found_aside(mr))
+        self.assertEqual(importer.dangling(list(out.values()), importer.existing_keys(REPO)), [])
+        self.assertEqual((out[27].outcome, out[27].of), ("alias", "the-apache-software-foundation/apache-activemq-classic"),
+                         "an alias of a product TAX has stays one")
+
+    def test_an_alias_of_a_product_of_the_same_proposal_stays_one(self):
+        root = dataset()
+        self.addCleanup(shutil.rmtree, root)
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp)
+        rows = importer.read_found([csv_file(tmp, [
+            "Acme;W;Acme;https://acme.example/;Acme W;software;https://acme.example/w;https://acme.example/w/n;",
+            "Acme;Widget;Acme;https://acme.example/;Acme Widget;software;https://acme.example/widget;https://acme.example/widget/notes;"])])
+        classes = {"acme": {"acme-w": {"class": "alias", "of": "Acme Widget"}}}
+        out = importer.plan(rows, root, classes)
+        self.assertEqual((out[0].outcome, out[0].of), ("alias", "acme/acme-widget"), "the product comes in a later row")
+        self.assertEqual(out[1].outcome, "candidate")
+
+    def test_the_count_command(self):
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp)
+        with contextlib.redirect_stdout(io.StringIO()):
+            importer.main(["count", "--outcomes", str(TRIAL / "outcomes.json"), "--verdicts", str(TRIAL / "verdicts.json"),
+                           "--out", str(tmp / "count.md")])
+        self.assertIn("**stop**", (tmp / "count.md").read_text())
 
 
 class WorkflowTest(unittest.TestCase):
@@ -463,6 +569,8 @@ class WorkflowTest(unittest.TestCase):
         self.assertEqual(jobs["pull-request"]["permissions"], {"contents": "write", "pull-requests": "write"})
         self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
         self.assertEqual(wf["env"]["FOUND"], "referee/import/kev-proef-40.csv")
+        script = next(st["run"] for st in jobs["pull-request"]["steps"] if "run" in st and "importer.py count" in st["run"])
+        self.assertLess(script.index("importer.py count"), script.index("cp -R"), "counted against main, before the copy")
 
 
 class NoBrandTest(unittest.TestCase):
