@@ -45,6 +45,7 @@ Usage:
     python tools/importer.py propose --found CSV... [--first N] [--classes classes.json] [--fetch] --out DIR
     python tools/importer.py propose ... --write          # write the files and the parking list into the data
     python tools/importer.py propose ... --fetch --gated gated.json   # then: tools/pr_referee.py judge --gated gated.json
+    python tools/importer.py count --outcomes outcomes.json --verdicts verdicts.json   # the count after the verdict
 
 The paid trial runs as the workflow referee-import (TAX-27): list, group, propose, judge, and a pull
 request with the outcome; Fred approves each job with the key in environment referee.
@@ -232,7 +233,9 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
     index = group.publisher_index(data_root)
     have = existing_index(data_root)
     classes = classes or {}
+    keys = existing_keys(data_root)
     out, taken = [], {}  # taken: key -> the outcome of the candidate that holds it
+    later = []  # (outcome, the key the grouping points to): settled once every row is planned
     for row in rows:
         pub, known = publisher_of(row, index)
         listed_key = product_key(pub, row.listed) if pub and row.listed else ""
@@ -256,20 +259,54 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
         elif (hit := (have.get(pub) or {}).get(key.split("/", 1)[1]) or (have.get(pub) or {}).get(group.part(row.name))):
             o.outcome, o.reason, o.of = "alias", "existing", hit
         elif sorted_as and sorted_as["class"] == "alias" and sorted_as.get("of"):
-            o.outcome, o.reason, o.of = "alias", "grouping", sorted_as["of"]
-        elif not row.kind:
-            o.reason = "no-kind"
-        elif not row.versions:
-            o.reason = "no-versions"
-        elif o.new_publisher and not row.publisher_url and not row.source:
-            o.reason = "no-publisher-page"
+            target = sorted_as["of"] if "/" in sorted_as["of"] else product_key(pub, sorted_as["of"])
+            if target in keys:
+                o.outcome, o.reason, o.of = "alias", "grouping", target
+            else:
+                later.append((o, target))  # in this proposal, or no product at all: decided below
         else:
-            o.outcome, o.reason = "candidate", ""
-            if NOTE_UNSUPPORTED.search(row.note):
-                o.detail = "volgens de vinder niet meer ondersteund (TR7 is aan de scheidsrechter)"
-            taken[key] = o
+            as_product(o, taken)
         out.append(o)
+    # TAX-39: a row is an alias only of a product TAX has or this proposal brings. Otherwise it is
+    # the product itself, and the name the grouping pointed to goes with it as an alias.
+    for o, target in later:
+        if target in taken and target != o.key:
+            o.outcome, o.reason, o.of = "alias", "grouping", target
+            o.detail = f"rij {taken[target].row.where}"
+            continue
+        as_product(o, taken)
+        if o.outcome == "candidate" and target and target != o.key and not keyrule.key_problems(target):
+            o.aliases.append(target)
     return out
+
+
+def as_product(o: Outcome, taken: dict) -> None:
+    """The outcome of a row as a product of its own: a candidate, set aside, or parked with the reason."""
+    row = o.row
+    if o.key in taken and taken[o.key] is not o:
+        o.outcome, o.reason, o.of = "alias", "same-row", o.key
+        o.detail = f"rij {taken[o.key].row.where}" + (f"; {row.note}" if NOTE_SAME.match(row.note) else "")
+    elif not row.kind:
+        o.reason = "no-kind"
+    elif not row.versions:
+        o.reason = "no-versions"
+    elif o.new_publisher and not row.publisher_url and not row.source:
+        o.reason = "no-publisher-page"
+    else:
+        o.outcome, o.reason = "candidate", ""
+        if NOTE_UNSUPPORTED.search(row.note):
+            o.detail = "volgens de vinder niet meer ondersteund (TR7 is aan de scheidsrechter)"
+        taken[o.key] = o
+
+
+def existing_keys(data_root: Path) -> set:
+    return {k for parts in existing_index(data_root).values() for k in parts.values()}
+
+
+def dangling(outcomes: list, keys: set) -> list:
+    """Rows whose outcome is alias of a product that is neither in TAX nor proposed now (TAX-39)."""
+    proposed = {o.key for o in outcomes if o.outcome == "candidate"}
+    return [o for o in outcomes if o.outcome == "alias" and o.of not in keys and o.of not in proposed]
 
 
 def add_grouped_aliases(outcomes: list[Outcome], classes: dict) -> dict:
@@ -306,7 +343,7 @@ def follow(outcomes: list[Outcome]) -> None:
         if o.outcome != "alias":
             by_key.setdefault(o.key, o)
     for o in outcomes:
-        if o.outcome == "alias" and o.reason == "same-row":
+        if o.outcome == "alias" and o.reason in ("same-row", "grouping"):
             target = by_key.get(o.of)
             if target is not None and target.outcome != "candidate":
                 o.outcome, o.reason, o.of = target.outcome, target.reason, ""
@@ -523,16 +560,137 @@ def found_aside(o: Outcome) -> bool:
     return o.outcome == "parked" and o.reason in FOUND_ASIDE
 
 
-def threshold(outcomes: list[Outcome]) -> tuple[int, int, int, bool]:
-    """(parked for another reason than a closed source, rows proposed, rows set aside by the find round,
-    the round stops). Decision 25, as decision 33 counts it: only over what is proposed; what the find
-    round set aside and closed sources do not count."""
-    proposed = [o for o in outcomes if not found_aside(o)]
-    parked = sum(1 for o in proposed if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked")
-    return parked, len(proposed), len(outcomes) - len(proposed), parked * 3 > len(proposed)
+# --------------------------------------------------------------------------- the count per product (TAX-39)
+
+CLOSED_TEXT = re.compile(r"\b(refused|disallowed|429|not read|could not be read)\b", re.I)
+STATUS = (  # in the order of the report
+    ("aanvaard", "door de scheidsrechter aanvaard: nieuw product, of een alias bij een bestaand"),
+    ("alias", "door de scheidsrechter als bestaand product herkend"),
+    ("bestaat al", "staat al in TAX; niets nieuws voorgedragen"),
+    ("voor de scheidsrechter", "nog geen oordeel"),
+    ("geparkeerd", "door de poort of de scheidsrechter, om een andere reden dan een gesloten bron"),
+    ("gesloten bron", "geparkeerd: een bron weigert bots"),
+    ("afgewezen", "door de poort of de scheidsrechter"),
+    ("verloren", "alias van een product dat niet bestaat en niet is voorgedragen"),
+    ("apart (vindronde)", "de vindronde wees het aan als geen product of zonder versiepagina"),
+)
 
 
-def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dict | None, fetched: bool) -> str:
+def product_of(o: Outcome) -> str:
+    return o.of if o.outcome == "alias" and o.of else o.key
+
+
+def products(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> dict:
+    """product key -> {rows, status, why, publisher, new}: one outcome per product, after the verdict
+    when there is one. A product listed in several rows counts once."""
+    by_rel = {v["id"]: v for v in (verdicts or {}).get("verdicts", [])}
+    lost = {id(o) for o in dangling(outcomes, keys)}
+    out: dict = {}
+    for o in outcomes:
+        p = out.setdefault(product_of(o), {"rows": [], "publisher": o.publisher, "new": False})
+        p["rows"].append(o)
+        p["new"] = p["new"] or (o.new_publisher and not found_aside(o))
+    for key, p in out.items():
+        rows = [o for o in p["rows"] if not found_aside(o)]
+        v = by_rel.get(f"products/{key}.yaml")
+        parked = [o for o in rows if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked"]
+        if not rows:
+            o = p["rows"][0]
+            p["status"], p["why"] = "apart (vindronde)", PARK[o.reason][0]
+        elif v is not None:
+            rule, text = v.get("rule") or "", (v.get("reason") or "").strip()
+            reason = text if not rule or text.startswith(rule) else f"{rule}: {text}"
+            if v["outcome"] == "accept":
+                p["status"], p["why"] = "aanvaard", ""
+            elif v["outcome"] == "alias":
+                p["status"], p["why"] = "alias", reason
+            elif v["outcome"] == "reject":
+                p["status"], p["why"] = "afgewezen", reason
+            elif v.get("waits_for") == "event" and CLOSED_TEXT.search(v.get("reason") or ""):
+                p["status"], p["why"] = "gesloten bron", reason
+            else:
+                p["status"], p["why"] = "geparkeerd", reason
+        elif parked:
+            o = parked[0]
+            p["status"], p["why"] = "geparkeerd", PARK[o.reason][0] if o.reason in PARK else o.reason
+        elif any(o.outcome == "gate-reject" for o in rows):
+            p["status"], p["why"] = "afgewezen", next(o.reason for o in rows if o.outcome == "gate-reject")
+        elif any(o.outcome == "parked" for o in rows):
+            p["status"], p["why"] = "gesloten bron", next(o.detail for o in rows if o.outcome == "parked")
+        elif all(id(o) in lost for o in rows if o.outcome == "alias") and not any(o.outcome == "candidate" for o in rows):
+            p["status"], p["why"] = "verloren", f"wijst naar {key}"
+        elif any(o.outcome == "candidate" for o in rows):
+            p["status"], p["why"] = "voor de scheidsrechter", ""
+        else:
+            p["status"], p["why"] = "bestaat al", ""
+    return out
+
+
+def threshold(outcomes: list[Outcome], verdicts: dict | None = None, keys: set | None = None) -> dict:
+    """Decision 25 as decisions 33 and 35 count it: products, not rows, after the verdict of the
+    referee. Parked: by the gate or the referee, for another reason than a closed source. Over the
+    products proposed; what the find round set aside does not count. Without the verdict of every
+    candidate the count is provisional and says nothing about going on."""
+    ps = products(outcomes, verdicts, keys if keys is not None else set())
+    proposed = [p for p in ps.values() if p["status"] != "apart (vindronde)"]
+    parked = sum(1 for p in proposed if p["status"] == "geparkeerd")
+    final = verdicts is not None and not any(p["status"] == "voor de scheidsrechter" for p in proposed)
+    return {"parked": parked, "proposed": len(proposed), "aside": len(ps) - len(proposed), "rows": len(outcomes),
+            "products": len(ps), "final": final, "stop": final and parked * 3 > len(proposed)}
+
+
+def tr5_new_publishers(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> list:
+    """Decision 35, point 3: new publishers whose proposal the referee parked on TR5, with its reason."""
+    out = []
+    for key, p in products(outcomes, verdicts, keys).items():
+        v = next((v for v in (verdicts or {}).get("verdicts", []) if v["id"] == f"products/{key}.yaml"), None)
+        if p["new"] and v and v["outcome"] == "parked" and "TR5" in (v.get("rule") or ""):
+            out.append({"publisher": p["publisher"], "product": key, "reason": (v.get("reason") or "").strip()})
+    return out
+
+
+def count_lines(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> list[str]:
+    ps = products(outcomes, verdicts, keys)
+    t = threshold(outcomes, verdicts, keys)
+    rows, prods = Counter(), Counter()
+    for p in ps.values():
+        prods[p["status"]] += 1
+        rows[p["status"]] += len(p["rows"])
+    lines = ["| uitkomst per product | wat | rijen | producten |", "| --- | --- | --- | --- |"]
+    for status, what in STATUS:
+        if prods[status]:
+            lines.append(f"| {status} | {what} | {rows[status]} | {prods[status]} |")
+    lines.append(f"| **samen** | | **{t['rows']}** | **{t['products']}** |")
+    share = f"{t['parked']} van {t['proposed']} voorgedragen producten geparkeerd om een andere reden dan een gesloten bron"
+    if t["final"]:
+        lines += ["", f"**Drempel, na het oordeel van de scheidsrechter:** {share} "
+                      f"({'meer' if t['stop'] else 'niet meer'} dan een derde): **{'stop' if t['stop'] else 'de ronde gaat door'}**."]
+    else:
+        lines += ["", f"**Voorlopige stand, vóór het oordeel van de scheidsrechter:** {share}. "
+                      "Geen uitspraak over doorgaan of stoppen: die volgt na het oordeel (`importer.py count`)."]
+    lines += ["", f"Apart gezet door de vindronde (telt niet mee): {t['aside']} producten."]
+    tr5 = tr5_new_publishers(outcomes, verdicts, keys)
+    if verdicts is not None:
+        lines += ["", f"**Nieuwe uitgevers geparkeerd op TR5** (besluit 35): {len(tr5)}"]
+        lines += [f"- {c['publisher']} ({c['product']}): {c['reason']}" for c in tr5]
+    lines += ["", "| product | rijen | uitkomst | reden |", "| --- | --- | --- | --- |"]
+    for key, p in sorted(ps.items()):
+        lines.append(f"| {key} | {', '.join(str(o.row.line) for o in p['rows'])} | {p['status']} | {p['why'][:200]} |")
+    return lines
+
+
+def load_outcomes(path: Path) -> list[Outcome]:
+    return [Outcome(**{**o, "row": Row(**o["row"])}) for o in json.loads(Path(path).read_text(encoding="utf-8"))]
+
+
+def final_report(outcomes: list[Outcome], verdicts: dict, keys: set) -> str:
+    return "\n".join(["# KEV-ronde, telling na het oordeel", "",
+                      f"Scheidsrechter: {verdicts.get('counts')}, kosten ${verdicts.get('cost', 0):.4f}.", "",
+                      *count_lines(outcomes, verdicts, keys)]) + "\n"
+
+
+def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dict | None, fetched: bool,
+           keys: set | None = None) -> str:
     lines = ["# Importer, droge run", "",
              f"- rijen: {len(outcomes)}; pagina's gelezen: {'ja' if fetched else 'nee'}",
              f"- bestanden voorgedragen: {len(files)} "
@@ -540,10 +698,7 @@ def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dic
              "| uitkomst | reden | aantal |", "| --- | --- | --- |"]
     for (what, why), n in sorted(tally(outcomes).items()):
         lines.append(f"| {what} | {why} | {n} |")
-    parked, proposed, aside, stop = threshold(outcomes)
-    lines += ["", f"Apart gezet door de vindronde (telt niet mee): {aside}. "
-                  f"Geparkeerd om een andere reden dan een gesloten bron: {parked} van {proposed} voorgedragen "
-                  f"({'meer' if stop else 'niet meer'} dan een derde: de ronde {'stopt' if stop else 'gaat door'}).", ""]
+    lines += ["", *count_lines(outcomes, None, keys if keys is not None else set()), ""]
     pending = sum(1 for o in outcomes if o.outcome == "candidate")
     lines += [f"Kosten van de scheidsrechter: {pending} voordrachten x ${COST_PER_PROPOSAL} = ${pending * COST_PER_PROPOSAL:.2f}."]
     if grouping:
@@ -720,6 +875,9 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
     rows = first(read_found(args.found), args.first)
     classes = json.loads(Path(args.classes).read_text(encoding="utf-8")) if args.classes else {}
     outcomes = plan(rows, data_root, classes)
+    if lost := dangling(outcomes, existing_keys(data_root)):
+        raise SystemExit("alias of a product that is neither in TAX nor proposed (TAX-39): "
+                         + ", ".join(f"{o.row.where} -> {o.of}" for o in lost))
     extra = add_grouped_aliases(outcomes, classes)
     day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
     items = []
@@ -753,7 +911,7 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     parked = parked_entries(outcomes, publishers, day)
-    text = report(outcomes, publishers, files, grouping, bool(args.fetch))
+    text = report(outcomes, publishers, files, grouping, bool(args.fetch), existing_keys(data_root))
     (out / "report.md").write_text(text, encoding="utf-8")
     (out / "outcomes.json").write_text(json.dumps([{**asdict(o), "row": asdict(o.row)} for o in outcomes], indent=1,
                                                   ensure_ascii=False) + "\n", encoding="utf-8")
@@ -809,6 +967,10 @@ def parser() -> argparse.ArgumentParser:
     q.add_argument("--write", action="store_true", help="write the files and the parking list into the data")
     q.add_argument("--browser", action="store_true", help="with --fetch: a headless browser for pages without text")
     q.add_argument("--gated", help="with --fetch: write the gated items for tools/pr_referee.py judge here")
+    c = sub.add_parser("count", help="the count per product after the verdict of the referee (TAX-39; free)")
+    c.add_argument("--outcomes", required=True, help="outcomes.json of the propose step")
+    c.add_argument("--verdicts", required=True, help="verdicts.json of tools/pr_referee.py judge")
+    c.add_argument("--out", help="write the report here; else print it")
     k = sub.add_parser("list", help="the KEV list and the CVE records of the vendors of the rows (public, free)")
     k.add_argument("--found", nargs="+", required=True)
     k.add_argument("--first", type=int)
@@ -823,6 +985,12 @@ def main(argv: list[str] | None = None) -> int:
         if args.live and not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("--live needs ANTHROPIC_API_KEY")
         run_grouping(args)
+    elif args.command == "count":
+        text = final_report(load_outcomes(Path(args.outcomes)),
+                            json.loads(Path(args.verdicts).read_text(encoding="utf-8")), existing_keys(REPO))
+        if args.out:
+            Path(args.out).write_text(text, encoding="utf-8")
+        print(text)
     elif args.command == "list":
         fetch_list(args)
     else:
