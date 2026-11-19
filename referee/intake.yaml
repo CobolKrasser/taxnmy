@@ -31,3 +31,11 @@ unknown_share_of_day: 0.5
 submitters:
   CobolKrasser:   # the maintainers' own rounds, such as an import of a catalog
     open: 500
+  kev-ronde-1:    # TAX-27, the KEV round (Fred, 19 November 2026: "maak een uitzondering voor het budget").
+    # Only for this round: the workflow referee-import names it with the input submitter. The hard
+    # limit of the whole round is $10, grouping and referee together: start it once, with budget 10.00.
+    # Instead of the shared day ceiling the referee has this one; the ceiling per
+    # pull request of the run is what the grouping left of the budget. The budget of $50 for every run
+    # together still holds.
+    open: 500
+    day_cap: 10.00

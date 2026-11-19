@@ -6,10 +6,12 @@ import io
 import json
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
 from datetime import datetime, timezone
+from dataclasses import asdict
 from pathlib import Path
 
 import jsonschema
@@ -457,7 +459,8 @@ class TrialCountTest(unittest.TestCase):
     def setUp(self):
         self.outcomes = importer.load_outcomes(TRIAL / "outcomes.json")
         self.verdicts = json.loads((TRIAL / "verdicts.json").read_text())
-        self.keys = importer.existing_keys(REPO)
+        # The products TAX held at the time of the trial, as its outcomes name them: not the data as it is now.
+        self.keys = {o.of for o in self.outcomes if o.outcome == "alias" and "/" in o.of}
 
     def test_the_trial_counted_after_the_verdict_and_per_product_stops(self):
         t = importer.threshold(self.outcomes, self.verdicts, self.keys)
@@ -511,14 +514,25 @@ class TrialCountTest(unittest.TestCase):
     def test_the_rows_of_the_trial_planned_again(self):
         """HugeGraph-Server is a candidate with the other name as alias; MegaRAC SP-X has no versions page."""
         classes = json.loads((TRIAL / "classes.json").read_text())
+        # A data root of its own, frozen as TAX was before the trial: what TAX holds later (such as the
+        # products the trial took in) does not change what this test shows.
+        root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, root)
+        pub = "the-apache-software-foundation"
+        write(root, f"publishers/{pub}.yaml", {"key": pub, "name": "The Apache Software Foundation",
+                                               "source": "https://www.apache.org/", "aliases": []})
+        write(root, f"products/{pub}/apache-activemq-classic.yaml", {
+            "key": f"{pub}/apache-activemq-classic", "publisher": pub, "name": "Apache ActiveMQ Classic",
+            "kind": "software", "source": "https://activemq.apache.org/", "aliases": [],
+            "versions": {"source": "https://activemq.apache.org/components/classic/download"}})
         out = {o.row.line: o for o in importer.plan(importer.read_found([REPO / "referee/import/kev-proef-40.csv"]),
-                                                    REPO, classes)}
+                                                    root, classes)}
         hg, mr = out[30], out[22]
         self.assertEqual((hg.outcome, hg.key), ("candidate", "the-apache-software-foundation/hugegraph-server"))
         self.assertEqual(hg.aliases, ["the-apache-software-foundation/apache-hugegraph-server"])
         self.assertEqual((mr.outcome, mr.reason), ("parked", "no-versions"))
         self.assertTrue(importer.found_aside(mr))
-        self.assertEqual(importer.dangling(list(out.values()), importer.existing_keys(REPO)), [])
+        self.assertEqual(importer.dangling(list(out.values()), importer.existing_keys(root)), [])
         self.assertEqual((out[27].outcome, out[27].of), ("alias", "the-apache-software-foundation/apache-activemq-classic"),
                          "an alias of a product TAX has stays one")
 
@@ -568,9 +582,119 @@ class WorkflowTest(unittest.TestCase):
         self.assertEqual(jobs["group"]["if"], "github.ref == 'refs/heads/main' && inputs.live")
         self.assertEqual(jobs["pull-request"]["permissions"], {"contents": "write", "pull-requests": "write"})
         self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
-        self.assertEqual(wf["env"]["FOUND"], "referee/import/kev-proef-40.csv")
+        self.assertEqual(wf["env"]["FOUND"], "${{ inputs.found }}")
+        self.assertEqual(inputs["found"]["default"], "referee/import/kev-proef-40.csv")
+        for name in ("prepare", "group", "propose", "pull-request"):
+            script = "".join(st.get("run", "") for st in jobs[name]["steps"])
+            self.assertIn('list=$(.github/scripts/import-found.sh "$FOUND")', script, name)
+            self.assertNotIn('--found "$FOUND"', script, name)
+        pr = "".join(st.get("run", "") for st in jobs["pull-request"]["steps"])
+        self.assertIn('branch="import/kev-ronde-${RUN_ID}"', pr)
+        self.assertIn('--title "TAX-27: KEV-ronde, ${names% }"', pr)
+        self.assertNotRegex(pr, r"proef")
         script = next(st["run"] for st in jobs["pull-request"]["steps"] if "run" in st and "importer.py count" in st["run"])
         self.assertLess(script.index("importer.py count"), script.index("cp -R"), "counted against main, before the copy")
+
+
+class FoundTest(unittest.TestCase):
+    """The input `found` of the workflow: files in referee/import/, checked before any job uses them."""
+
+    def found(self, value):
+        r = subprocess.run([str(REPO / ".github/scripts/import-found.sh"), value], cwd=REPO, capture_output=True, text=True)
+        return r.returncode, r.stdout.split()
+
+    def test_names_and_patterns(self):
+        self.assertEqual(self.found("referee/import/kev-proef-40.csv"), (0, ["referee/import/kev-proef-40.csv"]))
+        code, files = self.found("referee/import/kev-groep-0[1-6].csv")
+        self.assertEqual((code, len(files)), (0, 6))
+        code, files = self.found("referee/import/kev-groep-*.csv referee/import/kev-groep-01.csv")
+        self.assertEqual((code, len(files)), (0, 11), "each file once")
+
+    def test_anything_else_stops(self):
+        for value in ("", "../x.csv", "referee/import/../../etc/passwd.csv", "referee/import/a.csv;rm -rf",
+                      "referee/import/none.csv", "referee/testset/cases.yaml", "/referee/import/kev-proef-40.csv"):
+            self.assertNotEqual(self.found(value)[0], 0, value)
+
+    def test_the_round_is_the_find_round(self):
+        rows = importer.read_found(sorted((REPO / "referee/import").glob("kev-groep-*.csv")))
+        self.assertEqual(len(rows), 422)
+        trial = importer.read_found([REPO / "referee/import/kev-proef-40.csv"])
+        self.assertEqual([asdict(r) | {"file": ""} for r in rows[:40]], [asdict(r) | {"file": ""} for r in trial],
+                         "the trial is the first 40 rows of group 1")
+
+
+class Silent:
+    """The Message Batches API, answering every request with nothing usable: enough to see who got room."""
+
+    def __init__(self):
+        self.batches = []
+
+    def count(self, request):
+        return 1000
+
+    def submit(self, requests):
+        self.batches.append(requests)
+        return f"batch_{len(self.batches)}"
+
+    def status(self, batch_id):
+        return "ended"
+
+    def cancel(self, batch_id):
+        pass
+
+    def results(self, batch_id):
+        usage = {"input_tokens": 1000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+                 "output_tokens": 10, "web_search_requests": 0}
+        for cid, _ in self.batches[int(batch_id.split("_")[1]) - 1]:
+            yield cid, referee.Response(content=[Block("{}")], stop_reason="end_turn", usage=usage)
+
+
+class AgreedRoundTest(ProposeTest):
+    """Fred, 19 November: the KEV round gets an exception from the ceilings per run, per pull request and
+    per day, with $10 for the whole round as the hard limit; the budget for every run together stays.
+    One place: the submitter kev-ronde-1 in referee/intake.yaml (TAX-32), no code of its own."""
+
+    def test_the_exception_is_one_entry_of_the_intake(self):
+        cfg = importer.intake.load(REPO)
+        self.assertEqual(importer.intake.own(cfg, "kev-ronde-1"), {"open": 500, "day_cap": 10.0})
+        self.assertNotIn("pr_cap", importer.intake.own(cfg, "kev-ronde-1"),
+                         "the ceiling per pull request stays what the grouping left of the budget of the run")
+        self.assertNotIn("kev-ronde", (REPO / "tools/pr_referee.py").read_text() + (REPO / "tools/importer.py").read_text(),
+                         "no code of its own")
+
+    def judged(self, submitter):
+        root = self.root
+        write(root, "referee/intake.yaml", (REPO / "referee/intake.yaml").read_text())
+        gated = self.tmp / f"gated-{submitter or 'none'}.json"
+        importer.propose(self.args(gated=str(gated), submitter=submitter), FakeFetcher(pages()), root, NOW, QUIET)
+        items = json.loads(gated.read_text())["items"]
+        self.assertEqual({i["submitter"] for i in items}, {submitter})
+        out = self.tmp / f"runs-{submitter or 'none'}"
+        out.mkdir()
+        args = argparse.Namespace(model="claude-opus-5-5", effort="low", max_tokens=4000, budget=50.0, pr_cap=1.0,
+                                  day_cap=0.0, wait=60, live=True, prompt=str(REPO / "referee/prompt.md"),
+                                  schema=str(REPO / "referee/verdict.schema.json"), prices=str(REPO / "referee/prices.yaml"),
+                                  out=str(out), pr=None)
+        client = Silent()
+        importer.pr_referee.judge(items, args, client=client, now=NOW, log=QUIET, sleep=lambda s: None,
+                                  limits=importer.intake.load(root))
+        return items, client
+
+    def test_the_round_has_its_own_day_ceiling(self):
+        items, client = self.judged("")
+        self.assertEqual(client.batches, [], "the shared day ceiling (here 0) leaves no room")
+        self.assertTrue(all("ceiling leaves no room" in i["reason"] for i in items))
+        items, client = self.judged("kev-ronde-1")
+        self.assertEqual(len(client.batches[0]), 2, "the day ceiling of the round leaves room for both")
+        self.assertFalse(any("ceiling" in i["reason"] for i in items))
+
+    def test_the_workflow_names_the_round_only_when_asked(self):
+        wf = yaml.safe_load((REPO / ".github/workflows/referee-import.yml").read_text())
+        inputs = wf.get("on", wf.get(True))["workflow_dispatch"]["inputs"]
+        self.assertEqual((inputs["submitter"]["default"], inputs["budget"]["default"]), ("", "1.00"))
+        step = next(st for st in wf["jobs"]["propose"]["steps"] if "importer.py propose" in st.get("run", ""))
+        self.assertEqual(step["env"]["SUBMITTER"], "${{ inputs.submitter }}")
+        self.assertIn('--submitter "$SUBMITTER"', step["run"])
 
 
 class NoBrandTest(unittest.TestCase):

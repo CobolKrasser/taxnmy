@@ -1,9 +1,9 @@
 name: referee-import
 
-# The paid trial of the KEV round (TAX-27): the importer on referee/import/kev-proef-40.csv (the
-# first 40 rows of group 1 of the find round; only the rows of the trial are in the repository),
-# past the grouping (TAX-26), the gate and the referee (TAX-17), and a pull request with the outcome.
-# Started by hand; never merged by itself.
+# The KEV round (TAX-27): the importer on the input `found` (CSV files of the find round in
+# referee/import/: the eleven groups kev-groep-01..11, or the trial kev-proef-40), past the grouping
+# (TAX-26), the gate and the referee (TAX-17), and a pull request with the outcome. Started by hand;
+# never merged by itself.
 #
 #   prepare   no key: the KEV list and the CVE records of the vendors of the rows (public), and the
 #             estimate of the grouping (dry run).
@@ -22,14 +22,22 @@ name: referee-import
 on:
   workflow_dispatch:
     inputs:
+      found:
+        description: "CSV files in referee/import/, separated by spaces; a pattern such as kev-groep-0[1-6].csv may"
+        type: string
+        default: "referee/import/kev-proef-40.csv"
       live:
-        description: "run the trial (costs money, about $0.32; at most the cap); off: the dry run only"
+        description: "run it (costs money, at most the cap); off: the dry run only, with the estimate"
         type: boolean
         default: false
       budget:
         description: "dollars, the cap of this run: grouping and referee together (hard limit)"
         type: string
         default: "1.00"
+      submitter:
+        description: "an agreed round in referee/intake.yaml (TAX-32), whose values replace the shared ceilings; empty: none"
+        type: string
+        default: ""
       since:
         description: "only KEV entries added on or after this date"
         type: string
@@ -43,12 +51,12 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  FOUND: referee/import/kev-proef-40.csv
+  FOUND: ${{ inputs.found }}  # checked and expanded by .github/scripts/import-found.sh in every job
 
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30  # the whole round fetches about 750 CVE records
     steps:
       - uses: actions/checkout@v4
         with:
@@ -62,10 +70,15 @@ jobs:
           SINCE: ${{ inputs.since }}
         run: |
           set -euo pipefail
-          python tools/importer.py list --found "$FOUND" --since "$SINCE" --out "$RUNNER_TEMP/list" | tee list.log
-          python tools/importer.py group --found "$FOUND" --kev "$RUNNER_TEMP/list/kev.json" --cve "$RUNNER_TEMP/list/cve" \
+          list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
+          mapfile -t files <<< "$list"
+          python tools/importer.py list --found "${files[@]}" --since "$SINCE" --out "$RUNNER_TEMP/list" | tee list.log
+          python tools/importer.py group --found "${files[@]}" --kev "$RUNNER_TEMP/list/kev.json" --cve "$RUNNER_TEMP/list/cve" \
             --since "$SINCE" --out "$RUNNER_TEMP/dry" | tee dry.log
-          { echo "### Trial of the KEV round: dry run"; echo; cat list.log; echo; cat dry.log; } >> "$GITHUB_STEP_SUMMARY"
+          python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/dry/classes.json" \
+            --names "$RUNNER_TEMP/dry/names.json" --out "$RUNNER_TEMP/dry-propose" > propose.log
+          { echo "### KEV round: dry run of ${files[*]}"; echo; cat list.log; echo; cat dry.log; echo
+            sed -n '/^- rijen/,/^Kosten van het groeperen/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: import-list-${{ github.run_id }}
@@ -110,7 +123,9 @@ jobs:
           SINCE: ${{ inputs.since }}
         run: |
           set -euo pipefail
-          python tools/importer.py group --live --cap "$CAP" --found "$FOUND" --kev "$RUNNER_TEMP/list/kev.json" \
+          list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
+          mapfile -t files <<< "$list"
+          python tools/importer.py group --live --cap "$CAP" --found "${files[@]}" --kev "$RUNNER_TEMP/list/kev.json" \
             --cve "$RUNNER_TEMP/list/cve" --since "$SINCE" --out "$RUNNER_TEMP/group" | tee group.log
           { echo "### Grouping"; echo; cat group.log; } >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the run
@@ -145,10 +160,15 @@ jobs:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
       - name: Read the pages and run the gate (no key)
+        env:
+          SUBMITTER: ${{ inputs.submitter }}  # checked as an account name by tools/intake.py
         run: |
           set -euo pipefail
-          python tools/importer.py propose --found "$FOUND" --classes "$RUNNER_TEMP/group/classes.json" \
+          list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
+          mapfile -t files <<< "$list"
+          python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/group/classes.json" \
             --names "$RUNNER_TEMP/group/names.json" --fetch --browser --gated "$RUNNER_TEMP/proposed/gated.json" \
+            --submitter "$SUBMITTER" \
             --out "$RUNNER_TEMP/proposed" > propose.log
           sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
@@ -259,16 +279,19 @@ jobs:
           cp "$DATA/referee/parked.yaml" referee/parked.yaml
           python tools/pr_referee.py apply "$VERDICTS/verdicts.json" --root .
           python tools/lint.py
-          branch="import/kev-proef-${RUN_ID}"
+          list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
+          mapfile -t files <<< "$list"
+          names=$(printf '%s ' "${files[@]##*/}")
+          branch="import/kev-ronde-${RUN_ID}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
           git add products publishers referee/parked.yaml
-          git commit -q -m "TAX-27: the trial of the KEV round (run ${RUN_ID})"
+          git commit -q -m "TAX-27: the KEV round, ${names% } (run ${RUN_ID})"
           git push -q origin "$branch"
-          { echo "Trial of the KEV round (TAX-27), workflow run ${RUN_ID}. Not merged by itself."; echo
+          { echo "KEV round (TAX-27), ${names% }, workflow run ${RUN_ID}. Not merged by itself."; echo
             cat "$RUNNER_TEMP/count.md"; echo; cat "$VERDICTS/comment.md"; echo; cat "$REPORT"; } | head -c 60000 > body.md
-          if ! gh pr create --base main --head "$branch" --title "TAX-27: proef van 40 uit de KEV-ronde" --body-file body.md \
+          if ! gh pr create --base main --head "$branch" --title "TAX-27: KEV-ronde, ${names% }" --body-file body.md \
                | tee -a "$GITHUB_STEP_SUMMARY"; then
             # The repository may not let a workflow open a pull request: the branch is there, open it by hand.
             echo "Open the pull request by hand: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}" \

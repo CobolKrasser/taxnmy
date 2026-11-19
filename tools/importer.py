@@ -73,6 +73,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
 from fetch import moved as ends_elsewhere  # noqa: E402
 import group  # noqa: E402
+import intake  # noqa: E402
 import keyrule  # noqa: E402
 import pr_referee  # noqa: E402
 import referee  # noqa: E402
@@ -518,9 +519,13 @@ def parked_entries(outcomes: list[Outcome], publishers: dict, day: str) -> list[
 
 # --------------------------------------------------------------------------- the gate of the pull request
 
-def through_gate(files: dict, fetcher, data_root: Path = REPO, log=print) -> list[dict]:
-    """The gate of the pull request, as in the workflow (no key): one item per proposal."""
-    return pr_referee.gate_proposals(pr_referee.group(files), fetcher, data_root, log=log)
+def through_gate(files: dict, fetcher, data_root: Path = REPO, log=print, submitter: str = "") -> list[dict]:
+    """The gate of the pull request, as in the workflow (no key): one item per proposal. With a
+    submitter (TAX-32), its proposals carry its name, so that its values of its own in
+    referee/intake.yaml (an agreed round) are the limits of the referee."""
+    sub = intake.Submitter(submitter, known=True) if submitter else None
+    return pr_referee.gate_proposals(pr_referee.group(files), fetcher, data_root, log=log, submitter=sub,
+                                     limits=intake.load(data_root) if sub else None)
 
 
 def apply_gate(outcomes: list[Outcome], items: list[dict]) -> None:
@@ -897,7 +902,7 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
     if args.fetch:
         # The gate as in the workflow: a forecast for the report. The files stay in the pull request,
         # where the gate settles them again and the referee judges what it leaves.
-        items = through_gate(files, fetcher, data_root, log=log)
+        items = through_gate(files, fetcher, data_root, log=log, submitter=getattr(args, "submitter", "") or "")
         apply_gate(outcomes, items)
         follow(outcomes)
         if hasattr(fetcher, "close"):
@@ -967,6 +972,7 @@ def parser() -> argparse.ArgumentParser:
     q.add_argument("--write", action="store_true", help="write the files and the parking list into the data")
     q.add_argument("--browser", action="store_true", help="with --fetch: a headless browser for pages without text")
     q.add_argument("--gated", help="with --fetch: write the gated items for tools/pr_referee.py judge here")
+    q.add_argument("--submitter", default="", help="the submitter of an agreed round in referee/intake.yaml (TAX-32)")
     c = sub.add_parser("count", help="the count per product after the verdict of the referee (TAX-39; free)")
     c.add_argument("--outcomes", required=True, help="outcomes.json of the propose step")
     c.add_argument("--verdicts", required=True, help="verdicts.json of tools/pr_referee.py judge")
