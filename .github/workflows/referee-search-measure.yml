@@ -52,10 +52,10 @@ jobs:
       contents: read
       actions: read  # earlier runs, for the budget and the base
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -63,14 +63,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.base_file == ''
         with:
           name: import-search-${{ inputs.base_run }}
           path: ${{ runner.temp }}/base
           run-id: ${{ inputs.base_run }}
           github-token: ${{ github.token }}
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.base_file == ''
         with:
           pattern: referee-run-*-search-*
@@ -102,37 +102,37 @@ jobs:
           python tools/searchmeasure.py search "${base[@]}" --repeats "$REPEATS" --model "$MODEL" --cap "$CAP" \
             --budget "$BUDGET" --output measure/measure.json --live | tee search.log
           { echo "### The searches"; echo; cat search.log; } >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.search.outputs.dir_1 != ''
         with:
           name: referee-run-${{ steps.search.outputs.name_1 }}
           path: ${{ steps.search.outputs.dir_1 }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.search.outputs.dir_2 != ''
         with:
           name: referee-run-${{ steps.search.outputs.name_2 }}
           path: ${{ steps.search.outputs.dir_2 }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.search.outputs.dir_3 != ''
         with:
           name: referee-run-${{ steps.search.outputs.name_3 }}
           path: ${{ steps.search.outputs.dir_3 }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.search.outputs.dir_4 != ''
         with:
           name: referee-run-${{ steps.search.outputs.name_4 }}
           path: ${{ steps.search.outputs.dir_4 }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.search.outputs.dir_5 != ''
         with:
           name: referee-run-${{ steps.search.outputs.name_5 }}
           path: ${{ steps.search.outputs.dir_5 }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: search-measure-${{ github.run_id }}
           path: measure/
@@ -145,16 +145,16 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: Install headless Chromium
         run: python -m playwright install --with-deps chromium
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: search-measure-${{ github.run_id }}
           path: measure
@@ -163,7 +163,7 @@ jobs:
           set -euo pipefail
           python tools/searchmeasure.py read --measure measure/measure.json --output measure/report.md > read.log
           cat measure/report.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: search-measure-${{ github.run_id }}
           path: measure/

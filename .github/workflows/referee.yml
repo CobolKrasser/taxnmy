@@ -63,14 +63,14 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: Cache the browser
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
@@ -102,7 +102,7 @@ jobs:
 
       - name: Keep the sources
         if: inputs.task == 'measure'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-sources-${{ github.run_id }}
           path: fetched/sources.json
@@ -120,8 +120,8 @@ jobs:
     outputs:
       found: ${{ steps.search.outputs.found }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -130,7 +130,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: referee-sources-${{ github.run_id }}
           path: fetched
@@ -152,14 +152,14 @@ jobs:
             echo "found=true" >> "$GITHUB_OUTPUT"
           fi
       - name: Keep what was found
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-search-${{ github.run_id }}
           path: fetched/search.json
           retention-days: 90
       - name: Keep the search run
         if: always() && steps.search.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.search.outputs.run_name }}
           path: ${{ steps.search.outputs.run_dir }}
@@ -173,24 +173,24 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: Cache the browser
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
       - name: Install headless Chromium
         run: python -m playwright install --with-deps chromium
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: referee-sources-${{ github.run_id }}
           path: fetched
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: referee-search-${{ github.run_id }}
           path: fetched
@@ -200,7 +200,7 @@ jobs:
           python tools/referee.py fetch --sources fetched/sources.json --search fetched/search.json \
             --output fetched/final/sources.json | tee fetched/log.txt
           sed -n '/^[0-9]* sources$/,$p' fetched/log.txt >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: referee-sources-final-${{ github.run_id }}
           path: fetched/final/sources.json
@@ -220,8 +220,8 @@ jobs:
       contents: read
       actions: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -234,13 +234,13 @@ jobs:
 
       - name: Get the sources
         if: inputs.condition == 'fetched' && needs.refetch.result != 'success'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: referee-sources-${{ github.run_id }}
           path: fetched
       - name: Get the sources, with what step 4 found
         if: inputs.condition == 'fetched' && needs.refetch.result == 'success'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: referee-sources-final-${{ github.run_id }}
           path: fetched
@@ -271,7 +271,7 @@ jobs:
 
       - name: Keep the run
         if: always() && steps.run.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.run.outputs.run_name }}
           path: ${{ steps.run.outputs.run_dir }}

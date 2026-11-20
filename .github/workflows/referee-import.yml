@@ -70,10 +70,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30  # the whole round fetches about 750 CVE records
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -91,7 +91,7 @@ jobs:
             --names "$RUNNER_TEMP/dry/names.json" --out "$RUNNER_TEMP/dry-propose" > propose.log
           { echo "### KEV round: dry run of ${files[*]}"; echo; cat list.log; echo; cat dry.log; echo
             sed -n '/^- rows/,/^Cost of the grouping/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-list-${{ github.run_id }}
           path: ${{ runner.temp }}/list
@@ -112,10 +112,10 @@ jobs:
     outputs:
       cost: ${{ steps.group.outputs.cost }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -123,7 +123,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-list-${{ github.run_id }}
           path: ${{ runner.temp }}/list
@@ -142,12 +142,12 @@ jobs:
           { echo "### Grouping"; echo; cat group.log; } >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the run
         if: always() && steps.group.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.group.outputs.run_name }}
           path: ${{ steps.group.outputs.run_dir }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
@@ -167,10 +167,10 @@ jobs:
       contents: read
       actions: read  # with grouping_run: the artifacts of that run
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
@@ -186,19 +186,19 @@ jobs:
             exit 1
           fi
           echo "The grouping of run $GROUPING_RUN, not grouped again" >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run == ''
         with:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run != ''
         with:
           name: import-group-${{ inputs.grouping_run }}
           path: ${{ runner.temp }}/group
           run-id: ${{ inputs.grouping_run }}
           github-token: ${{ github.token }}
-      - uses: actions/download-artifact@v4  # results.jsonl: the reasons of the grouping (TAX-44)
+      - uses: actions/download-artifact@v8  # results.jsonl: the reasons of the grouping (TAX-44)
         if: inputs.grouping_run != ''
         with:
           pattern: referee-run-*-import-group-*
@@ -228,7 +228,7 @@ jobs:
             --submitter "$SUBMITTER" \
             --out "$RUNNER_TEMP/proposed" > propose.log
           sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
@@ -251,10 +251,10 @@ jobs:
     outputs:
       cost: ${{ steps.search.outputs.cost }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -262,7 +262,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
@@ -285,12 +285,12 @@ jobs:
           { echo "### Search for closed pages"; echo; cat search.log; } >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the run
         if: always() && steps.search.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.search.outputs.run_name }}
           path: ${{ steps.search.outputs.run_dir }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-search-${{ github.run_id }}
           path: search/
@@ -305,39 +305,39 @@ jobs:
       contents: read
       actions: read  # with grouping_run: the artifacts of that run
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: Install headless Chromium
         run: python -m playwright install --with-deps chromium
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run == ''
         with:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run != ''
         with:
           name: import-group-${{ inputs.grouping_run }}
           path: ${{ runner.temp }}/group
           run-id: ${{ inputs.grouping_run }}
           github-token: ${{ github.token }}
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run != ''
         with:
           pattern: referee-run-*-import-group-*
           path: ${{ runner.temp }}/group-run
           run-id: ${{ inputs.grouping_run }}
           github-token: ${{ github.token }}
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/first
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-search-${{ github.run_id }}
           path: ${{ runner.temp }}/search
@@ -363,7 +363,7 @@ jobs:
             --submitter "$SUBMITTER" --sources "$RUNNER_TEMP/first/sources.json" --search "$RUNNER_TEMP/search/search.json" \
             --out "$RUNNER_TEMP/proposed" > propose.log
           sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-proposed-${{ github.run_id }}  # replaces the artifact of propose
           path: ${{ runner.temp }}/proposed
@@ -384,10 +384,10 @@ jobs:
       contents: read
       actions: read  # earlier runs, for the ceilings
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -395,7 +395,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
@@ -421,7 +421,7 @@ jobs:
           python tools/pr_referee.py judge --gated "$RUNNER_TEMP/proposed/gated.json" --output verdicts --live \
             --model "$MODEL" --effort "$EFFORT" --pr-cap "$left" --budget "$BUDGET"
           cat verdicts/comment.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.judge.outcome == 'success'
         with:
           name: import-verdicts-${{ github.run_id }}
@@ -429,7 +429,7 @@ jobs:
           retention-days: 90
       - name: Keep the run
         if: always() && steps.judge.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.judge.outputs.run_name }}
           path: ${{ steps.judge.outputs.run_dir }}
@@ -444,16 +444,16 @@ jobs:
       contents: write  # the branch
       pull-requests: write  # the pull request
     steps:
-      - uses: actions/checkout@v4  # main, with the token to push a branch
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7  # main, with the token to push a branch
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-verdicts-${{ github.run_id }}
           path: ${{ runner.temp }}/verdicts

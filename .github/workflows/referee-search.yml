@@ -44,10 +44,10 @@ jobs:
       contents: read
       actions: read  # earlier runs, for the budget
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -72,7 +72,7 @@ jobs:
           { echo "### One search"; echo; cat search.log; } >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the run
         if: always() && steps.search.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.search.outputs.run_name }}
           path: ${{ steps.search.outputs.run_dir }}
