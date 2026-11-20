@@ -41,16 +41,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: Cache the browser
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
@@ -66,7 +66,7 @@ jobs:
           set -f
           python tools/pr_referee.py gate --testset ${CASES:+--cases $CASES} --output gated/gated.json
           cat gated/provisional/comment.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: referee-pr-gated-${{ github.run_id }}
           path: gated/
@@ -85,10 +85,10 @@ jobs:
       contents: read
       actions: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -96,7 +96,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: referee-pr-gated-${{ github.run_id }}
           path: ${{ runner.temp }}/gated
@@ -115,7 +115,7 @@ jobs:
           python tools/pr_referee.py judge --gated "$GATED/gated.json" --output verdicts --live \
             --model "$MODEL" --effort "$EFFORT" --pr-cap "$PR_CAP" --day-cap "$DAY_CAP" --budget "$BUDGET"
           cat verdicts/score.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.judge.outcome == 'success'
         with:
           name: referee-pr-verdicts-${{ github.run_id }}
@@ -123,7 +123,7 @@ jobs:
           retention-days: 90
       - name: Keep the run
         if: always() && steps.judge.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.judge.outputs.run_name }}
           path: ${{ steps.judge.outputs.run_dir }}

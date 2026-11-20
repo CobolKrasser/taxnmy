@@ -32,15 +32,15 @@ jobs:
       pending: ${{ steps.gate.outputs.pending }}
       pr: ${{ steps.pr.outputs.number }}
     steps:
-      - uses: actions/checkout@v4  # main: the default branch, never the pull request
+      - uses: actions/checkout@v7  # main: the default branch, never the pull request
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache: this job reads an untrusted artifact, so it saves nothing
+      - uses: actions/setup-python@v7  # no cache: this job reads an untrusted artifact, so it saves nothing
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: The browser from the cache, read only
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
@@ -48,7 +48,7 @@ jobs:
         run: python -m playwright install --with-deps chromium
 
       - name: Get the data files of the pull request
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: referee-pr-proposal
           path: ${{ runner.temp }}/incoming  # outside the checkout
@@ -104,7 +104,7 @@ jobs:
             python tools/pr_referee.py gate --proposal "$INCOMING/proposal.json" "${who[@]}" --output gated/gated.json
           fi
           cat gated/provisional/comment.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: referee-pr-gated-${{ github.run_id }}
           path: gated/
@@ -125,10 +125,10 @@ jobs:
     outputs:
       done: ${{ steps.judge.outcome == 'success' }}
     steps:
-      - uses: actions/checkout@v4  # main
+      - uses: actions/checkout@v7  # main
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -136,7 +136,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: referee-pr-gated-${{ github.run_id }}
           path: gated
@@ -153,7 +153,7 @@ jobs:
           set -euo pipefail
           python tools/pr_referee.py judge --gated gated/gated.json --output verdicts --live \
             --model "$MODEL" --effort "$EFFORT" --pr-cap "$PR_CAP" --day-cap "$DAY_CAP" --budget "$BUDGET"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.judge.outcome == 'success'
         with:
           name: referee-pr-verdicts-${{ github.run_id }}
@@ -161,7 +161,7 @@ jobs:
           retention-days: 90
       - name: Keep the run
         if: always() && steps.judge.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.judge.outputs.run_name }}
           path: ${{ steps.judge.outputs.run_dir }}
@@ -178,13 +178,13 @@ jobs:
     steps:
       - name: The verdicts of the referee
         if: needs.judge.outputs.done == 'true'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: referee-pr-verdicts-${{ github.run_id }}
           path: verdicts
       - name: Or what code settled
         if: needs.judge.outputs.done != 'true'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: referee-pr-gated-${{ github.run_id }}
           path: gated

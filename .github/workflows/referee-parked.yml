@@ -33,15 +33,15 @@ jobs:
     outputs:
       changed: ${{ steps.patch.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: The browser from the cache, read only
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements-fetch.txt') }}
@@ -72,7 +72,7 @@ jobs:
           git add -A products publishers referee/parked.yaml
           git diff --cached --binary > "$RUNNER_TEMP/parked/parked.patch"
           if [ -s "$RUNNER_TEMP/parked/parked.patch" ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; fi
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: referee-parked-${{ github.run_id }}
           path: ${{ runner.temp }}/parked/
@@ -87,8 +87,8 @@ jobs:
       contents: write  # the branch of the pull request
       pull-requests: write  # the pull request, and the comments on lapsed entries
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
         with:
           name: referee-parked-${{ github.run_id }}
           path: ${{ runner.temp }}/parked
