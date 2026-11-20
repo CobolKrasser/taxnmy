@@ -4,6 +4,7 @@ import json
 import sys
 import tempfile
 import unittest
+import urllib.parse
 from pathlib import Path
 
 import yaml
@@ -111,7 +112,9 @@ class SearchMeasureTest(unittest.TestCase):
         args = searchmeasure.parser().parse_args(["read", "--measure", str(self.tmp / "measure.json"),
                                                   "--output", str(self.tmp / "report.md")])
         text = searchmeasure.read(args, fetcher, QUIET)
-        self.assertFalse([u for u in fetcher.asked if "sec.gov" in u], "a URL elsewhere is never read")
+        hosts = {urllib.parse.urlsplit(u).hostname for u in fetcher.asked}
+        self.assertNotIn("www.sec.gov", hosts, "a URL elsewhere is never read")
+        self.assertEqual(hosts, {"helpx.adobe.com", "docs.fortinet.com"})
         self.assertIn("| claude-opus-5-5, run 44764232264 | 2 | 1 of 2 | 3 | 1 | $0.1191 |", text)
         self.assertIn("| claude-haiku-5-5, run 1 | 2 | 1 of 2 | 2 | 1 | $0.0225 |", text)
         self.assertIn("| Adobe Commerce | 2 / yes / 1 / $0.0596 | 1 / yes / 1 / $0.0112 |", text)
