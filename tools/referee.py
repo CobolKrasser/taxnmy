@@ -97,7 +97,7 @@ CASE_SCHEMA = {
         "id": {"type": "string", "pattern": "^[GHB][0-9]{2}$"},
         "type": {"type": "string"},
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
-        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TP[13]|TP5|TP10|TK[23]|TE1|TV[1-6])$"}},
+        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TP[13]|TP5|TP10|TK[23]|TE[17]|TV[1-6])$"}},
         "alias_of": {"type": "string"},
         "lint": {"type": "string", "pattern": "^(pass|signal|error (TE1|TK[234]|TV[45]|TP10))$"},
         "holdout": {"type": "array", "items": {"type": "string"}},

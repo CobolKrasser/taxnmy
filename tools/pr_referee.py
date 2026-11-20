@@ -30,7 +30,7 @@ The steps, each in its own job:
     settle    a person settles a collision or an audit finding on a product (`kind`); kept there too.
     remove    a maintainer takes a product out (TK3, TG13); the decision is logged there, with what it was.
     waiting   what waits for a decision of a person, per publisher, as JSON.
-    testset   the 104 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 110 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -51,6 +51,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import addition  # noqa: E402
 import alias  # noqa: E402
 import archive  # noqa: E402
 import gate  # noqa: E402
@@ -294,14 +295,20 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             item["held"], item["holds"], by_person = decided_hold(st, item["publisher"], mine)
             if wrong := referee.second_source_fault(st, sources):
                 settled(item, "reject", "TV4", wrong)
+            elif (machine := machine_fault(st, sources))[0]:
+                settled(item, machine[0], "TE7", machine[1])
             elif swap := referee.replacement_fault(st, fetcher):
                 settled(item, "reject", "TV5", swap)
             elif by_person:
                 settled(item, "reject", *by_person, by="person")
-            elif moves := redirected(p["files"], sources):
+            elif moves := redirected(p["files"], sources, st.old):
                 park_redirected(item, moves)
             elif item["held"]:
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
+            elif add := addition.added(p["files"], st.old):
+                what = "second source" if add[0] == "second" else "source for machines"
+                settled(item, "accept", reason=f"an added {what}, shown by code; the rest of the publisher is not "
+                        "judged again (TV5, TAX-48)")
             else:
                 settled(item, "accept", reason="a publisher file that passes the lint and the checks of code")
         elif (life := archive.change(p["files"], st.old)) is not None:
@@ -311,6 +318,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         elif chat := gate.ai_chat(st.product, st.publisher):
             settled(item, "reject", "TE1", chat["reason"])
             item["decided"] = {"TE1": chat}
+        elif gate_identifier(item, st, p["files"], fetcher, mine):
+            pass  # an added identifier its own source shows (TAX-48); otherwise the whole review below
         else:
             sources = referee.gather_sources(fetcher, st)
             item["sources"] = [asdict(s) for s in sources]
@@ -318,17 +327,20 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             item["decided"] = decided
             wrong = referee.second_source_fault(st, sources)
+            machine = machine_fault(st, sources)
             if gone:
                 settled(item, "reject", "TP1", gone)
             elif wrong:
                 settled(item, "reject", "TV4", wrong)
+            elif machine[0]:
+                settled(item, machine[0], "TE7", machine[1])
             elif swap := referee.replacement_fault(st, fetcher):
                 settled(item, "reject", "TV5", swap)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
             elif (decision := decided_hold(st, item["publisher"], mine))[2]:
                 settled(item, "reject", *decision[2], by="person")
-            elif moves := redirected(p["files"], sources):
+            elif moves := redirected(p["files"], sources, st.old):
                 item["held"], item["holds"], _ = decision
                 park_redirected(item, moves)
             else:
@@ -404,6 +416,39 @@ def settle_alias(item: dict, answer: dict, schema: dict) -> dict:
                    f"{', '.join(alias.NOT_JUDGED)}: not judged, {alias.WHY_NOT}", by="ai")
 
 
+def gate_identifier(item: dict, st, files: dict, fetcher, decisions: list[dict]) -> dict | None:
+    """A change that only adds identifiers to a product (TV5, TAX-48, tools/addition.py): accepted by
+    code when the own source of each one was read and writes the code and the product name. None
+    when code cannot show it, or the change is not only that: the whole review follows, and the item
+    is left as it was."""
+    add = addition.added(files, st.old)
+    if not add or add[0] != "identifier" or any(f.rule == "TK4" for f in st.findings) \
+            or decided_hold(st, item["publisher"], decisions)[2]:
+        return None
+    name = referee.product_name(st)
+    sources = [fetcher.fetch(e["source"], name) for e in add[1] if isinstance(e.get("source"), str)]
+    evidence = addition.identifiers(st.product, add[1], sources)
+    if evidence is None:
+        return None
+    item["sources"] = [asdict(s) for s in sources]
+    item["decided"] = {**{r: gate.judgment("not judged", "judged when the product was taken in; a change that only adds "
+                                           "an identifier does not judge them again (TAX-48)") for r in referee.RULES},
+                       "identifier": gate.judgment("yes", "each added code and the product name are written at the "
+                                                   "code's own source", evidence)}
+    codes = ", ".join(e["quote"] for e in evidence)
+    return settled(item, "accept", "TK4", f"an added identifier ({codes}), written with the product name at its own "
+                   f"source (TR11); the rest of the product is not judged again (TV5, TAX-48)")
+
+
+def machine_fault(st, sources: list | None) -> tuple[str, str]:
+    """TE7 for every publisher file of the proposal (tools/addition.py `machine_fault`)."""
+    for rel, data in referee.proposed_publishers(st):
+        outcome, why = addition.machine_fault(data, referee._yaml(st.old.get(rel, "")) or None, sources)
+        if outcome:
+            return outcome, f"{rel}: {why}"
+    return "", ""
+
+
 def gate_archive(item: dict, st, direction: str, url: str, fetcher) -> dict:
     """A change that archives a product or takes it up again (TP10, TAX-47, tools/archive.py): judged
     on that alone. The place of the source by code; the text, when it was read, by one question for
@@ -445,11 +490,12 @@ def settle_archive(item: dict, answer: dict, schema: dict) -> dict:
                    f"{', '.join(archive.NOT_JUDGED)}: not judged, {archive.WHY_NOT}", by="ai")
 
 
-def redirected(files: dict, sources: list) -> list[tuple[str, str]]:
+def redirected(files: dict, sources: list, old: dict | None = None) -> list[tuple[str, str]]:
     """TAX-38: (the URL proposed, where it ended) for each source in the proposed files (of the
     product, its versions, its codes and its publisher) that ends at another address after a
-    redirect. Sources in TAX that the proposal does not bring are not its doing."""
-    mine = intake.urls(files)
+    redirect. Sources in TAX that the proposal does not bring are not its doing: neither those of
+    other files nor those its changed files already held (`old`, TAX-48)."""
+    mine = intake.urls(files) - intake.urls(old or {})
     out = []
     for s in sources:
         if not s.instead_of and s.url in mine and (end := moved(s)) and (s.url, end) not in out:

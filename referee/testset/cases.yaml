@@ -1,6 +1,6 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 104 proposals: 39 good (3 of them now expected parked: their sources redirect, TAX-38), 63 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 110 proposals: 42 good (3 of them now expected parked: their sources redirect, TAX-38), 66 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
@@ -1842,3 +1842,126 @@ cases:
         source: https://www.centos.org/centos-linux/
   verify: [https://www.centos.org/centos-linux/]
   note: TAX-47, criterion 8. The product is archived in the context; the page proposed gives the end of life of its last version, not new updates. It stays archived.
+
+# ---------------------------------------------------------------------------------------------
+# TV5 — a change that only adds is judged on what it adds (TAX-48): an identifier, a source for
+# machines, a second source. One good and one wrong case each; the wrong ones are not accepted.
+# ---------------------------------------------------------------------------------------------
+
+- id: G40
+  type: added-identifier
+  expect: [accept]
+  lint: pass
+  context:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+  note: TAX-48. Only a CPE is added. Its own source writes the code and the product name, so code accepts it; the rest of the product is not judged again.
+- id: B64
+  type: added-identifier
+  expect: [reject, parked]
+  rules: [TE1]
+  lint: pass
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      - purl: pkg:npm/postgresql
+        source: https://www.postgresql.org/about/
+      aliases: []
+  verify: [https://www.postgresql.org/about/]
+  note: TAX-48. A purl is added whose own source does not write it. Code cannot show it, so the whole product is judged. Without the check on the own source this case is accepted by code (the deliberate break of the story).
+- id: G41
+  type: added-machine-source
+  expect: [accept]
+  lint: pass
+  proposal:
+    publishers/red-hat.yaml: |
+      key: red-hat
+      name: Red Hat
+      source: https://www.redhat.com/en/about/company
+      machine_sources:
+      - url: https://security.access.redhat.com/data/csaf/v2/advisories/
+        format: csaf-provider
+        source: https://access.redhat.com/kb/5554431
+      aliases: []
+  verify: [https://access.redhat.com/kb/5554431]
+  note: TAX-48, TE7. A source for machines on the publisher's domain, written on a page of the publisher.
+- id: B65
+  type: added-machine-source
+  expect: [reject]
+  rules: [TE7]
+  lint: pass
+  proposal:
+    publishers/red-hat.yaml: |
+      key: red-hat
+      name: Red Hat
+      source: https://www.redhat.com/en/about/company
+      machine_sources:
+      - url: https://security.access.redhat.com/data/csaf/v2/advisories/
+        format: csaf-provider
+        source: https://www.redhat.com/en/blog/red-hat-vex-files-cves-are-now-generally-available
+      aliases: []
+  verify: [https://www.redhat.com/en/blog/red-hat-vex-files-cves-are-now-generally-available]
+  note: TAX-48, TE7. The page of the publisher names another directory, not this source for machines.
+- id: G42
+  type: added-second-source
+  expect: [accept]
+  lint: pass
+  proposal:
+    publishers/the-postgresql-global-development-group.yaml: |
+      key: the-postgresql-global-development-group
+      name: The PostgreSQL Global Development Group
+      source: https://www.postgresql.org/about/
+      second_source: https://en.wikipedia.org/wiki/PostgreSQL
+      aliases: []
+  verify: [https://en.wikipedia.org/wiki/PostgreSQL]
+  note: TAX-48, TV4. A second source off the publisher's domain that names that domain.
+- id: B66
+  type: added-second-source
+  expect: [reject]
+  rules: [TV4]
+  lint: pass
+  proposal:
+    publishers/the-postgresql-global-development-group.yaml: |
+      key: the-postgresql-global-development-group
+      name: The PostgreSQL Global Development Group
+      source: https://www.postgresql.org/about/
+      second_source: https://en.wikipedia.org/wiki/Relational_database
+      aliases: []
+  verify: [https://en.wikipedia.org/wiki/Relational_database]
+  note: TAX-48, TV4. A second source off the publisher's domain that does not name it.
