@@ -345,6 +345,11 @@ it is about $0.011, almost all of it the fee of the search.
 - **One search on its own**: `tools/referee.py search-one --product … --publisher … --domains …
   [--model …] [--live]`, or the workflow `referee-search` (environment `referee`). It reads no page
   and judges nothing, and shows the URLs, the tokens and the cost.
+- **A measurement of the model**: `tools/searchmeasure.py`, or the workflow `referee-search-measure`
+  (one approval). It repeats the searches of an earlier run (its `search.json`) on one model, within a
+  cap, and judges nothing. A job without the key then reads the URLs as a round does, and the report
+  gives per run and per product: the URLs on the domains, whether a page shows the name, the URLs
+  elsewhere and the cost, next to the earlier run.
 
 ### The agreed model
 

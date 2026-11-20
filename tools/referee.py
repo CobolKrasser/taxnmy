@@ -1963,7 +1963,7 @@ def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path,
     budget = Budget(budget_cap if cap is None else min(budget_cap, before + cap), before, model, prices, 2000)
     groups: dict[tuple, list[str]] = {}
     for url, want in wanted.items():
-        query = f'"{want["product"]}" {want["publisher"]}'.strip()
+        query = want.get("query") or f'"{want["product"]}" {want["publisher"]}'.strip()  # a measurement repeats a query
         groups.setdefault((query, tuple(want["domains"])), []).append(url)
     log(f"{len(groups)} distinct searches for {len(wanted)} sources, with {model} and {search_tool(model)}; "
         f"about ${len(groups) * search_cost(model, prices):.2f}")
