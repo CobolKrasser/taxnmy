@@ -1819,6 +1819,8 @@ def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict
         try:
             for refused, hit in found.items():
                 for url in hit["urls"]:
+                    if url == refused or not on_domains(url, hit.get("domains")):
+                        continue  # TAX-49: a page of someone else never stands in for the publisher's
                     src = fetcher.fetch(url, hit["product"])
                     if src.status.isdigit() and int(src.status) < 300:
                         alt = Source(**{**asdict(src), "instead_of": refused, "method": f"search+{src.method}"})
@@ -1874,9 +1876,43 @@ SEARCH_PROMPT = (
 )
 SEARCH_RESULTS = 5  # URLs kept per search
 CLOSED = ("refused", "disallowed")  # a source step 4 searches another open source for
+# The model of step 4, apart from the referee's (TAX-49): it only returns URLs and judges nothing.
+# The round and the test set both take it from here. referee/README.md § Step 4 says why.
+SEARCH_MODEL = "claude-haiku-5-5"
+# The models that take the newest web search tool (dynamic filtering); every other model takes the
+# basic tool. Claude API docs, Server tools (read 2026-11-20).
+NEWEST_SEARCH_TOOL = "web_search_20260209"
+BASIC_SEARCH_TOOL = "web_search_20250305"
+NEWEST_SEARCH_MODELS = ("claude-fable-", "claude-mythos-", "claude-opus-5-5", "claude-opus-5", "claude-opus-4-8",
+                        "claude-opus-4-7", "claude-opus-4-6", "claude-sonnet-5-5", "claude-sonnet-5", "claude-sonnet-4-6")
+# What one search puts in and out of the model, measured in run 44764232264 (15 searches): the
+# results come in as about 12,000 input tokens (11,959 to 12,005), whatever the product; 85 out.
+SEARCH_INPUT_TOKENS = 12_000
+SEARCH_OUTPUT_TOKENS = 100
+
+
+def search_tool(model: str) -> str:
+    """The version of the web search tool that this model takes."""
+    newest = any(model == m or (m.endswith("-") and model.startswith(m)) for m in NEWEST_SEARCH_MODELS)
+    return NEWEST_SEARCH_TOOL if newest else BASIC_SEARCH_TOOL
+
+
+def search_cost(model: str, prices: dict) -> float:
+    """What one search is expected to cost: the fee, and the tokens of its results."""
+    if model not in prices["models"]:
+        raise SystemExit(f"No price for model {model!r} in referee/prices.yaml")
+    p = prices["models"][model]
+    return ((SEARCH_INPUT_TOKENS * p["input"] + SEARCH_OUTPUT_TOKENS * p["output"]) / 1_000_000
+            + prices["web_search_per_1000"] / 1000)
 
 
 registrable = gate.registrable
+
+
+def on_domains(url: str, domains) -> bool:
+    """Whether a URL that a search found is on one of the publisher's domains (TAX-49). The one check
+    for the round and the test set: the domain limit of the API is not tight. No domains: never."""
+    return bool(domains) and gate.registrable(gate.host_of(url)) in set(domains)
 
 
 MAX_DOMAINS = 30
@@ -1896,7 +1932,7 @@ def search_domains(refused: str, staged: "Staged") -> list[str]:
     return out[:MAX_DOMAINS]
 
 
-def search_urls(content) -> list[str]:
+def search_urls(content, limit: int | None = SEARCH_RESULTS) -> list[str]:
     """The URLs in the web search results of a response. The snippets are not kept: a fragment is
     never evidence (TE6)."""
     urls = []
@@ -1906,15 +1942,16 @@ def search_urls(content) -> list[str]:
                 url = getattr(r, "url", "")
                 if url and url not in urls:
                     urls.append(url)
-    return urls[:SEARCH_RESULTS]
+    return urls[:limit]
 
 
 def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path, out: Path, client=None, now=None,
-                 log=print, cap: float | None = None) -> tuple[dict, float]:
+                 log=print, cap: float | None = None, records: list | None = None) -> tuple[dict, float]:
     """Step 4, live: one web search per distinct (query, domains) of `wanted` (closed URL -> product,
     publisher, domains), on the publisher's domains only. Only the URLs of the results are kept, never
     a snippet (TE6). Returns (closed URL -> what was found, the cost). The run counts against the
-    budget of `out` like any other. Used by the test set (`search`) and by a round (tools/importer.py)."""
+    budget of `out` like any other. Used by the test set (`search`), by a round (tools/importer.py) and by
+    one search on its own (`search-one`). `records` gets the line of results.jsonl of each search."""
     found: dict[str, dict] = {}
     prices = load_prices(prices_path)
     if client is None:
@@ -1928,7 +1965,8 @@ def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path,
     for url, want in wanted.items():
         query = f'"{want["product"]}" {want["publisher"]}'.strip()
         groups.setdefault((query, tuple(want["domains"])), []).append(url)
-    log(f"{len(groups)} distinct searches for {len(wanted)} sources, with {model}")
+    log(f"{len(groups)} distinct searches for {len(wanted)} sources, with {model} and {search_tool(model)}; "
+        f"about ${len(groups) * search_cost(model, prices):.2f}")
     log(f"budget: ${budget_cap:.2f} for all runs in {out}; spent before: ${before:.4f}")
     stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
     run_dir = out / f"{stamp}-search-{model}"
@@ -1945,7 +1983,7 @@ def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path,
                 model=model,
                 messages=[{"role": "user", "content": SEARCH_PROMPT.format(query=query)}],
                 output_config={"effort": "low"},
-                tools=[{"type": "web_search_20260209", "name": "web_search", "max_uses": 1, "allowed_domains": want["domains"]}],
+                tools=[{"type": search_tool(model), "name": "web_search", "max_uses": 1, "allowed_domains": want["domains"]}],
             )
             spent_at_start = budget.spent
             try:
@@ -1955,23 +1993,31 @@ def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path,
                 log(f"Stopped before searching {query}: {exc}")
                 break
             except Exception as exc:  # noqa: BLE001 - a failed search leaves the source refused
-                log(f"search {query} failed: {type(exc).__name__}")
+                log(f"search {query} failed: {type(exc).__name__}: {str(exc)[:300]}")
                 continue
             budget.add(response.usage)
-            urls = [u for u in search_urls(response.content) if u not in closed]
+            every = search_urls(response.content, None)
+            # Only URLs on the publisher's domains are kept; the rest is noted, and never read.
+            elsewhere = [u for u in every if not on_domains(u, want["domains"])]
+            urls = [u for u in every if u not in elsewhere and u not in closed][:SEARCH_RESULTS]
             hit = {"product": want["product"], "query": query, "domains": want["domains"], "urls": urls}
             for url in closed:
                 found[url] = hit
             cost_now = budget.spent - spent_at_start
-            jsonl.write(json.dumps({"id": "search", "for": closed, **hit, "usage": response.usage, "cost": cost_now}) + "\n")
-            log(f"{query}: {len(urls)} URLs on {', '.join(want['domains'])} for {len(closed)} closed sources, "
-                f"${cost_now:.4f}; spent ${budget.spent:.4f} of ${budget_cap:.2f}")
+            record = {"id": "search", "for": closed, **hit, "elsewhere": elsewhere, "tool": search_tool(model),
+                      "usage": response.usage, "cost": cost_now}
+            jsonl.write(json.dumps(record) + "\n")
+            if records is not None:
+                records.append(record)
+            log(f"{query}: {len(urls)} URLs on {', '.join(want['domains'])} for {len(closed)} closed sources"
+                + (f" ({len(elsewhere)} elsewhere, not kept)" if elsewhere else "")
+                + f", {response.usage.get('input_tokens', 0)} input tokens, ${cost_now:.4f}; spent ${budget.spent:.4f} of ${budget_cap:.2f}")
     return found, budget.spent - before
 
 
 def search_refused(args, client=None, data_root: Path = REPO, now=None, log=print) -> dict:
     """Step 4: for each refused or disallowed source, one web search on the publisher's domains. Costs money
-    (about $0.01 a search plus tokens) and counts against the budget like a run."""
+    (`search_cost`: the fee and the tokens of the results) and counts against the budget like a run."""
     stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
     cases = select(load_cases(Path(args.testset)), args.cases, "fetched")
     if args.limit:
@@ -1995,12 +2041,46 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
     out = Path(args.out)
     found: dict[str, dict] = {}
     if wanted and not args.live:
-        log("Dry run: nothing was searched. Add --live to search (about $0.01 a search plus tokens).")
+        log(f"Dry run: nothing was searched. Add --live to search (about ${search_cost(args.model, load_prices(Path(args.prices))):.3f} "
+            f"a search on {args.model}, its results as input tokens included).")
     if wanted and args.live:
         found, _ = run_searches(wanted, args.model, args.budget, Path(args.prices), out, client, now, log)
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(found, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return found
+
+
+def search_one(args, client=None, now=None, log=print) -> dict:
+    """One search on its own (TAX-49): the query of step 4 for one product, on the given domains,
+    with the given model. No page is read and nothing is judged. Shows the URLs found, the tokens
+    and the cost. Without --live it shows the estimate and sends nothing."""
+    model = args.model or SEARCH_MODEL
+    domains = [d for part in args.domains for d in part.replace(",", " ").split() if d]
+    if not domains:
+        raise SystemExit("search-one needs at least one domain of the publisher")
+    prices = load_prices(Path(args.prices))
+    wanted = {f"search-one: {args.product}": {"product": args.product, "publisher": args.publisher, "domains": domains}}
+    log(f"one search for {args.product!r} of {args.publisher!r} on {', '.join(domains)}, with {model} and "
+        f"{search_tool(model)}; about ${search_cost(model, prices):.3f}")
+    if not args.live:
+        log("Dry run: nothing was searched. Add --live to search.")
+        return {}
+    records: list = []
+    run_searches(wanted, model, args.budget, Path(args.prices), Path(args.out), client, now, log, records=records)
+    if not records:
+        log("No result: the search failed or the budget stopped it (see above).")
+        return {}
+    r = records[0]
+    u = r["usage"]
+    lines = ["", "| model | tool | input tokens | output tokens | searches | cost |", "| --- | --- | --- | --- | --- | --- |",
+             f"| {model} | {r['tool']} | {u.get('input_tokens', 0)} | {u.get('output_tokens', 0)} | "
+             f"{u.get('web_search_requests', 0)} | ${r['cost']:.4f} |", "",
+             f"On the publisher's domains, kept ({len(r['urls'])}):"]
+    lines += [f"- {x}" for x in r["urls"]] or ["- none"]
+    lines += ["", f"Elsewhere, never read ({len(r['elsewhere'])}):"]
+    lines += [f"- {x}" for x in r["elsewhere"]] or ["- none"]
+    log("\n".join(lines))
+    return r
 
 
 # --------------------------------------------------------------------------- the model measurement (TAX-18)
@@ -2281,11 +2361,20 @@ def parser() -> argparse.ArgumentParser:
     s.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
     s.add_argument("--cases", nargs="*")
     s.add_argument("--limit", type=int)
-    s.add_argument("--model", default=MODEL, help="it only returns URLs and judges nothing")
+    s.add_argument("--model", default=SEARCH_MODEL, help="the model of step 4, apart from the referee's")
     s.add_argument("--budget", type=float, default=BUDGET)
     s.add_argument("--prices", default=str(REFEREE / "prices.yaml"))
     s.add_argument("--out", default=str(REFEREE / "runs"))
     s.add_argument("--live", action="store_true", help="search; without it nothing is sent")
+    o = sub.add_parser("search-one", help="one search on its own, no page read, nothing judged (costs about $0.01)")
+    o.add_argument("--product", required=True, help="the name of the product, as the query of step 4 has it")
+    o.add_argument("--publisher", default="", help="the name of the publisher, as the query of step 4 has it")
+    o.add_argument("--domains", nargs="+", required=True, help="the publisher's domains, separated by spaces or commas")
+    o.add_argument("--model", default="", help=f"empty: the model of step 4 ({SEARCH_MODEL})")
+    o.add_argument("--budget", type=float, default=BUDGET, help="dollars, for all runs in --out together")
+    o.add_argument("--prices", default=str(REFEREE / "prices.yaml"))
+    o.add_argument("--out", default=str(REFEREE / "runs"))
+    o.add_argument("--live", action="store_true", help="search; without it nothing is sent")
     m = sub.add_parser("measure", help="TAX-18: repeated batch runs per model, within the budget")
     m.add_argument("--models", nargs="+", default=[MODEL])
     m.add_argument("--repeats", type=int, default=3)
@@ -2325,6 +2414,8 @@ def main(argv: list[str] | None = None) -> int:
         fetch_sources(args)
     elif args.command == "search":
         search_refused(args)
+    elif args.command == "search-one":
+        search_one(args)
     elif args.command == "measure":
         report = measure(args)
         if os.environ.get("GITHUB_OUTPUT") and args.live:

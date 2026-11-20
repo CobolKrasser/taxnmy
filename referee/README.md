@@ -272,7 +272,7 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 | 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
 | 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
 | 0 again | `machine` | for a source that is `refused` or `disallowed`: the publisher's `machine_sources` (schema 1.2.0), each read for the product. What they give is added `instead_of` the closed source |
-| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with Claude Sonnet 5.5, which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
+| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with the model of step 4 (see *Step 4: the model of the search* below), which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. Only URLs on those domains are kept: the domain limit of the API is not tight (run 44764232264 returned two of sec.gov for an Adobe product). The round and the test set use the same check (`on_domains`). The URLs kept, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
 
 The ladder stops at a refusal:
 
@@ -328,6 +328,23 @@ For each source `sources.json` records `status`, `method`, `chars` (the length b
   name (TE1), and the reader checks again at every connection.
 
 A site that refuses is not worked around. A person decides, or the product gets another source.
+
+### Step 4: the model of the search
+
+The search has its own model, apart from the referee's: `SEARCH_MODEL` in `tools/referee.py`, now
+Claude Haiku 5.5. The round (`tools/importer.py search`) and the test set (`tools/referee.py search`)
+both take it from there; the workflows pass no model to it. The model judges nothing, so its quality
+does not matter. Its cost does: the results of one search come in as about 12,000 input tokens,
+whatever the product (run 44764232264). On Claude Opus 5.5 a search cost $0.060, on Claude Haiku 5.5
+it is about $0.011, almost all of it the fee of the search.
+
+- **The tool version follows the model** (`search_tool`): the newest web search tool for the models
+  that take it, the basic one (`web_search_20250305`) for every other, Claude Haiku 5.5 included.
+- **The estimate counts the tokens** (`search_cost`): the fee and about 12,000 input tokens per
+  search. The report of a round shows it for its closed pages.
+- **One search on its own**: `tools/referee.py search-one --product … --publisher … --domains …
+  [--model …] [--live]`, or the workflow `referee-search` (environment `referee`). It reads no page
+  and judges nothing, and shows the URLs, the tokens and the cost.
 
 ### The agreed model
 

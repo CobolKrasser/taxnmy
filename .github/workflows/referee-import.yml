@@ -13,7 +13,8 @@ name: referee-import
 #   propose   no key: the importer reads every page (with a browser), parks what it must, and runs
 #             the gate of the pull request. It lists the closed pages (closed.json, TAX-49).
 #   search    environment referee (the key; a maintainer approves), only for closed pages: one web
-#             search each on the publisher's domains, about $0.01, within the cap. Only URLs are kept.
+#             search each on the publisher's domains, within the cap, on the model of step 4
+#             (tools/referee.py SEARCH_MODEL), apart from the referee's. Only URLs on those domains are kept.
 #   reread    no key: propose again on the pages already read, with the URLs of the search. A
 #             closed page is not asked again; another page of the publisher that is read and shows
 #             the name takes its place for the referee. It replaces the artifact of propose.
@@ -271,7 +272,6 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CAP: ${{ inputs.budget }}
           GROUP_COST: ${{ needs.group.outputs.cost }}  # empty with grouping_run: paid in that run
-          MODEL: ${{ vars.REFEREE_MODEL || 'claude-opus-5-5' }}
           BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
         run: |
           set -euo pipefail
@@ -281,7 +281,7 @@ jobs:
           PY
           )
           python tools/importer.py search --closed "$RUNNER_TEMP/proposed/closed.json" --output search/search.json \
-            --live --model "$MODEL" --budget "$BUDGET" --cap "$left" | tee search.log
+            --live --budget "$BUDGET" --cap "$left" | tee search.log  # the model of step 4: referee.SEARCH_MODEL
           { echo "### Search for closed pages"; echo; cat search.log; } >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the run
         if: always() && steps.search.outputs.run_dir != ''

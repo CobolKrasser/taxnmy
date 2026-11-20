@@ -434,9 +434,14 @@ class RefereeTest(unittest.TestCase):
     def test_found_sources_go_down_the_ladder_and_into_the_message(self):
         sources, refused = self.refused_sources()
         search = self.out / "search.json"
-        search.write_text(json.dumps({refused: {"product": "DS124", "urls": ["https://kb.synology.com/en-global/DS124"]}}))
+        elsewhere = "https://www.sec.gov/Archives/synology-10k.htm"
+        search.write_text(json.dumps({refused: {"product": "DS124", "domains": ["synology.com"],
+                                                "urls": [elsewhere, "https://kb.synology.com/en-global/DS124"]}}))
         args = self.search_args(sources, search=str(search), output=str(self.out / "final.json"), limit=None, no_browser=True)
-        data = referee.fetch_sources(args, fetcher=FakeFetcher(), data_root=FIXTURES / "data", log=QUIET)
+        fetcher = FakeFetcher()
+        data = referee.fetch_sources(args, fetcher=fetcher, data_root=FIXTURES / "data", log=QUIET)
+        self.assertNotIn(elsewhere, fetcher.urls, "TAX-49: a URL off the publisher's domains is not read")
+        self.assertFalse([k for k in data if k.startswith(elsewhere)])
         alt = data[f"https://kb.synology.com/en-global/DS124 | for {refused}"]
         self.assertEqual((alt["instead_of"], alt["method"], alt["status"]), (refused, "search+", "200"))
         results, _, client = self.run_fake(fetcher=None, cases=["G01"], sources=str(self.out / "final.json"))
@@ -495,11 +500,95 @@ class RefereeTest(unittest.TestCase):
         args = self.search_args(sources, model=referee.parser().parse_args(["search", "--sources", "x"]).model)
         found = referee.search_refused(args, client=client, data_root=FIXTURES / "data", now=NOW, log=QUIET)
         self.assertEqual(len(client.calls), 1, "two closed sources of one product share one search")
-        self.assertEqual(client.calls[0]["model"], referee.MODEL)
+        self.assertEqual(client.calls[0]["model"], referee.SEARCH_MODEL, "the model of step 4, not the referee's")
+        self.assertNotEqual(referee.SEARCH_MODEL, referee.MODEL)
+        self.assertEqual(client.calls[0]["tools"][0]["type"], referee.search_tool(referee.SEARCH_MODEL))
         self.assertEqual(set(found), {product, versions})
         lines = (next(self.out.glob("*-search-*")) / "results.jsonl").read_text().splitlines()
         self.assertEqual(len(lines), 1)
         self.assertEqual(json.loads(lines[0])["for"], [product, versions])
+
+    def test_the_tool_version_follows_the_model(self):
+        self.assertEqual(referee.search_tool("claude-opus-5-5"), "web_search_20260209")
+        self.assertEqual(referee.search_tool("claude-sonnet-5-5"), "web_search_20260209")
+        self.assertEqual(referee.search_tool("claude-fable-5-2"), "web_search_20260209")
+        self.assertEqual(referee.search_tool("claude-haiku-5-5"), "web_search_20250305")
+        self.assertEqual(referee.search_tool("claude-opus-5-55"), "web_search_20250305", "an exact name, no prefix")
+
+    def test_the_estimate_counts_the_tokens_of_the_results(self):
+        prices = referee.load_prices()
+        self.assertAlmostEqual(referee.search_cost("claude-opus-5-5", prices), 0.060, places=3)  # run 44764232264: $0.0596
+        self.assertAlmostEqual(referee.search_cost("claude-haiku-5-5", prices), 0.011, places=3)
+        with self.assertRaises(SystemExit):
+            referee.search_cost("claude-unknown", prices)
+
+    def test_only_the_publishers_domains_count(self):
+        self.assertTrue(referee.on_domains("https://helpx.adobe.com/x", ["adobe.com"]))
+        self.assertFalse(referee.on_domains("https://www.sec.gov/Archives/adbe.htm", ["adobe.com"]))
+        self.assertFalse(referee.on_domains("https://adobe.com.example.net/x", ["adobe.com"]))
+        self.assertFalse(referee.on_domains("https://helpx.adobe.com/x", []), "no domains: never")
+
+    def search_client(self, urls, tokens=11_967):
+        class SearchClient(FakeClient):
+            def create(self, request):
+                self.calls.append(request)
+                block = Block("web_search_tool_result")
+                block.content = [type("R", (), {"url": u})() for u in urls]
+                usage = {"input_tokens": tokens, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+                         "output_tokens": 85, "web_search_requests": 1}
+                return referee.Response(content=[block], stop_reason="end_turn", usage=usage)
+        return SearchClient()
+
+    def test_a_search_keeps_only_urls_on_the_publishers_domains(self):
+        """Run 44764232264: allowed_domains adobe.com, yet two URLs of sec.gov came back."""
+        urls = ["https://helpx.adobe.com/a", "https://www.sec.gov/1.htm", "https://learning.adobe.com/b",
+                "https://www.sec.gov/2.htm", "https://partners.adobe.com/c"]
+        wanted = {"https://business.adobe.com/products/magento": {"product": "Adobe Commerce", "publisher": "Adobe",
+                                                                  "domains": ["adobe.com"]}}
+        records = []
+        found, spent = referee.run_searches(wanted, "claude-haiku-5-5", 5.0, REPO / "referee/prices.yaml", self.out,
+                                            self.search_client(urls), NOW, QUIET, records=records)
+        hit = found["https://business.adobe.com/products/magento"]
+        self.assertEqual(hit["urls"], [u for u in urls if "adobe" in u])
+        self.assertEqual(records[0]["elsewhere"], ["https://www.sec.gov/1.htm", "https://www.sec.gov/2.htm"])
+        self.assertEqual(records[0]["tool"], "web_search_20250305")
+        self.assertAlmostEqual(spent, 11_967 * 0.10e-6 + 85 * 0.50e-6 + 0.01)
+
+    def test_one_search_on_its_own(self):
+        args = referee.parser().parse_args(["search-one", "--product", "Adobe Commerce", "--publisher", "Adobe",
+                                            "--domains", "adobe.com", "--out", str(self.out)])
+        self.assertEqual(args.model, "", "empty: the model of step 4")
+        client = self.search_client(["https://helpx.adobe.com/a", "https://www.sec.gov/1.htm"])
+        lines = []
+        self.assertEqual(referee.search_one(args, client=client, now=NOW, log=lines.append), {})
+        self.assertEqual(client.calls, [], "without --live nothing is sent")
+        self.assertIn("claude-haiku-5-5 and web_search_20250305; about $0.011", lines[0])
+        args.live = True
+        lines = []
+        r = referee.search_one(args, client=client, now=NOW, log=lines.append)
+        self.assertEqual(len(client.calls), 1)
+        self.assertEqual(client.calls[0]["tools"][0]["allowed_domains"], ["adobe.com"])
+        self.assertEqual((r["urls"], r["elsewhere"]), (["https://helpx.adobe.com/a"], ["https://www.sec.gov/1.htm"]))
+        text = "\n".join(lines)
+        self.assertIn("| claude-haiku-5-5 | web_search_20250305 | 11967 | 85 | 1 | $0.0112 |", text)
+        self.assertIn("- https://www.sec.gov/1.htm", text)
+        self.assertTrue(list(self.out.glob("*-search-claude-haiku-5-5")), "the run counts against the budget")
+
+    def test_the_search_workflows_take_the_model_of_step_4(self):
+        import yaml
+        wf = yaml.safe_load((REPO / ".github/workflows/referee-search.yml").read_text())
+        job = wf["jobs"]["search"]
+        self.assertEqual(job["environment"], "referee")
+        self.assertLessEqual(job["timeout-minutes"], 10)
+        self.assertEqual(wf["concurrency"]["group"], "referee-judge")
+        self.assertEqual(set(wf[True]["workflow_dispatch"]["inputs"]), {"product", "publisher", "domains", "model"})
+        text = json.dumps(job)
+        self.assertIn("search-one", text)
+        self.assertNotIn("requirements-fetch", text, "no page is read")
+        self.assertNotIn("pr_referee", text, "nothing is judged")
+        for name, job_name in (("referee-import.yml", "search"), ("referee.yml", "search")):
+            steps = json.dumps(yaml.safe_load((REPO / ".github/workflows" / name).read_text())["jobs"][job_name])
+            self.assertNotIn("--model", steps, f"{name}: the search takes referee.SEARCH_MODEL")
 
     def test_search_domains_come_from_the_publishers_file_and_products(self):
         import shutil as sh
