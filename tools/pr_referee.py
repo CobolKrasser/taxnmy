@@ -4,17 +4,17 @@
 Every product file a pull request adds or changes gets an outcome:
 
     accept   it may be merged
-    reject   on a rule (TR1-TR8, TV1, TV4), with the reason
-    alias    it is an existing product written in another way (TR4)
+    reject   on a rule (TE1, TK2, TK3, TP1, TP3, TP5, TV1, TV4), with the reason
+    alias    it is an existing product written in another way (TP3)
     parked   not taken in, on a rule, with the reason: the referee doubts, a source is closed, the
              budget or a fork leaves it unjudged, or code holds it for a person (TV3, TV5, tools/guard.py),
              whatever the referee answers. It goes to the parking list (referee/parked.yaml)
              and can be judged again later with one command.
 
-First the lint (TR1-TR3) and the gate (TR5, TR6 and TR8 by code, tools/gate.py), for free; then the AI
-referee, only for what code left, as one batch. Doubt means: not taken in, parked (Fred, 14 November).
+First the lint (TE1, TK2 and TK3) and the gate (TP5, TK2 and TE1 by code, tools/gate.py), for free; then the AI
+referee, only for what code left, as one batch. Doubt means: not taken in, parked (14 November 2026).
 
-The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
+The steps, each in its own job:
 
     collect   pull_request, no key: the changed data files into proposal.json, kept as an artifact.
               It runs the code of the pull request, so nothing downstream trusts what it writes.
@@ -30,7 +30,7 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
     settle    a person settles a collision or an audit finding on a product (`kind`); kept there too.
     remove    a maintainer takes a product out (TK3, TG13); the decision is logged there, with what it was.
     waiting   what waits for a decision of a person, per publisher, as JSON.
-    testset   the 96 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 99 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -293,6 +293,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             item["held"], item["holds"], by_person = decided_hold(st, item["publisher"], mine)
             if wrong := referee.second_source_fault(st, sources):
                 settled(item, "reject", "TV4", wrong)
+            elif swap := referee.replacement_fault(st, fetcher):
+                settled(item, "reject", "TV5", swap)
             elif by_person:
                 settled(item, "reject", *by_person, by="person")
             elif moves := redirected(p["files"], sources):
@@ -304,8 +306,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         elif (new := alias.added(p["files"], st.old)) is not None:
             gate_alias(item, st, new, fetcher, mine, stager)
         elif chat := gate.ai_chat(st.product, st.publisher):
-            settled(item, "reject", "TR8", chat["reason"])
-            item["decided"] = {"TR8": chat}
+            settled(item, "reject", "TE1", chat["reason"])
+            item["decided"] = {"TE1": chat}
         else:
             sources = referee.gather_sources(fetcher, st)
             item["sources"] = [asdict(s) for s in sources]
@@ -314,9 +316,11 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             item["decided"] = decided
             wrong = referee.second_source_fault(st, sources)
             if gone:
-                settled(item, "reject", "TR7", gone)
+                settled(item, "reject", "TP1", gone)
             elif wrong:
                 settled(item, "reject", "TV4", wrong)
+            elif swap := referee.replacement_fault(st, fetcher):
+                settled(item, "reject", "TV5", swap)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
             elif (decision := decided_hold(st, item["publisher"], mine))[2]:
@@ -328,7 +332,7 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 item["held"], item["holds"], _ = decision
                 item["ai_rules"] = [r for r in referee.RULES if r not in decided]
                 item["footer"] = footer_counts()  # TAX-43: the referee is shown the page footer
-                item["names"] = referee.publisher_names(st.publisher)  # what a footer quote for TR5 must name
+                item["names"] = referee.publisher_names(st.publisher)  # what a footer quote for TP5 must name
                 item["message"] = referee.build_message(st, "fetched", sources, decided, item["footer"])
                 item["outcome"] = "pending"
         log(f"{item['id']}: {item['outcome']}" + (f" {item['rule']}" if item["rule"] else ""))
@@ -340,7 +344,7 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
 def gate_alias(item: dict, st, new: list[str], fetcher, decisions: list[dict], stager) -> dict:
     """A change that only adds aliases (TAX-40, tools/alias.py): judged on the aliases alone.
     Point 1 by code (TV2; TV3 for a person), point 2 by code where a read source of the product
-    writes the name (TR11), else one question for the AI. TR4, TR5, TR7 and TR8 are not judged again."""
+    writes the name (TR11), else one question for the AI. TP3, TP5, TP1 and TE1 are not judged again."""
     product = st.product
     item["alias"] = new
     item["decided"] = alias.not_judged()
@@ -589,12 +593,12 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     item["checked"] = {r: checked[r]["verdict"] for r in referee.RULES}
     outcome, rule = referee.outcome({**checked, "duplicate_of": verdict.get("duplicate_of")})
     held = item.get("held") or {}
-    if held and outcome in ("accept", "human"):
+    if held and outcome in ("accept", "parked"):
         # Held by code (TV3, TV5): a person decides, whatever the referee answered.
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         return settled(item, "parked", ", ".join([*held, *doubts]),
                        "; ".join([*held.values(), *notes, *(f"{r}: {checked[r]['reason']}" for r in doubts)]), "code")
-    if outcome == "human":
+    if outcome == "parked":
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         reasons = [n for n in notes] + [f"{r}: {checked[r]['reason']}" for r in doubts if not any(n.startswith(r) for n in notes)]
         # Doubt on sources that were all read: the proposal must get better. Otherwise an event.
@@ -960,8 +964,8 @@ def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
 # --------------------------------------------------------------------------- the commands
 
 def add_judge_args(p) -> None:
-    p.add_argument("--model", default="claude-opus-5-5", help="until TAX-18 has chosen; see referee/README.md")
-    p.add_argument("--effort", choices=("low", "medium", "high"), default="low")
+    p.add_argument("--model", default=referee.MODEL, help="the agreed model; see referee/README.md § The agreed model")
+    p.add_argument("--effort", choices=("low", "medium", "high"), default=referee.EFFORT)
     p.add_argument("--max-tokens", type=int, default=PR_MAX_TOKENS)
     p.add_argument("--budget", type=float, default=referee.BUDGET, help="dollars, for all runs in --out together")
     p.add_argument("--pr-cap", type=float, default=PR_CAP, help="dollars per pull request, its runs together")
@@ -995,16 +999,13 @@ def score(items: list[dict]) -> str:
     c = counts(items)
     bad_accept = [i["id"] for i in items if i["id"].startswith("B") and i["outcome"] == "accept"]
     good_out = [i["id"] for i in items if i["id"][0] in "GH" and i["outcome"] in ("reject", "alias")]
-    # The test set says human where the PR mode parks.
-    wrong = [i["id"] for i in items if i.get("case") and
-             (i["outcome"] if i["outcome"] != "parked" else "human") not in i["case"]["expect"]]
+    wrong = [i["id"] for i in items if i.get("case") and i["outcome"] not in i["case"]["expect"]]
     return "\n".join([
         "## The test set as a pull request", "",
         "| outcome | proposals |", "| --- | --- |", *[f"| {o} | {n} |" for o, n in c.items()], "",
         f"Bad cases accepted (target 0): {len(bad_accept)} {', '.join(bad_accept)}  ",
         f"Good cases rejected or aliased: {len(good_out)} {', '.join(good_out)}  ",
-        f"Not in `expect` (parked counts as human): {len(wrong)} {', '.join(wrong)}  ",
-        "Cases for a person: 0 (the PR mode parks instead)", ""])
+        f"Not in `expect`: {len(wrong)} {', '.join(wrong)}  ", ""])
 
 
 def main(argv: list[str] | None = None) -> int:

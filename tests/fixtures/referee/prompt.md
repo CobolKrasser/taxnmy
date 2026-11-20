@@ -3,7 +3,7 @@
 ## System prompt
 
 ```text
-Judge TR4-TR8.
+Judge TP1, TP3, TP5, TK2 and TE1.
 ```
 
 ## User message

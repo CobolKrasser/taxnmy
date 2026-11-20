@@ -391,7 +391,7 @@ class RunTest(unittest.TestCase):
 
 
 class WorkflowTest(unittest.TestCase):
-    def test_the_measurement_waits_for_fred_and_runs_from_main(self):
+    def test_the_measurement_waits_for_a_maintainer_and_runs_from_main(self):
         text = (REPO / ".github/workflows/referee-group.yml").read_text()
         wf = yaml.safe_load(text)
         on = wf.get("on", wf.get(True))

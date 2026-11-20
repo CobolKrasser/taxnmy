@@ -28,7 +28,7 @@ Per found row, code decides one outcome, in this order:
                grouping          the grouping classed the name alias of another product
     parked     no-kind           no kind
     apart      no-versions       no versions page
-    parked     no-publisher-page a new publisher, and no page of its own names it (TV4, decision 28)
+    parked     no-publisher-page a new publisher, and no page of its own names it (TV4)
                closed            a source refuses bots (401, 403, 429, robots.txt); never worked around
                unreadable        a source gives no text (404, an error, too little text)
                moved             a source redirects, and the address it ends at redirects again
@@ -44,8 +44,8 @@ Every value that is not a URL counts as empty in a URL field, and a placeholder 
 "n/a", ...) counts as empty in a name field. With --fetch every page is read by the reader of the
 referee (tools/fetch.py; no browser in CI): what the importer parks for a closed or unreadable source
 or a name that is not on the page never reaches the referee. What is left goes through the gate of
-the pull request (tools/pr_referee.py gate_proposals) as it would in the workflow: lint, guard, TR5, TR6,
-TR8; what it leaves is pending for the referee, and costs one request each.
+the pull request (tools/pr_referee.py gate_proposals) as it would in the workflow: lint, guard, TP5, TK2,
+TE1; what it leaves is pending for the referee, and costs one request each.
 
 Usage:
 
@@ -58,7 +58,7 @@ Usage:
     python tools/importer.py count --outcomes outcomes.json --verdicts verdicts.json   # the count after the verdict
 
 The paid trial runs as the workflow referee-import (TAX-27): list, group, propose, judge, and a pull
-request with the outcome; Fred approves each job with the key in environment referee.
+request with the outcome; a maintainer approves each job with the key in environment referee.
 
 Without --write nothing in the data changes: the files go to --out, with report.md and outcomes.json.
 The importer names no brand or product (R3): every rule here is generic.
@@ -87,6 +87,7 @@ import intake  # noqa: E402
 import keyrule  # noqa: E402
 import pr_referee  # noqa: E402
 import referee  # noqa: E402
+import sites  # noqa: E402
 
 REPO = referee.REPO
 COLUMNS = ("lijst_leverancier", "lijst_product", "uitgever", "uitgever_url", "productnaam", "soort",
@@ -100,33 +101,33 @@ NOTE_EDITION = re.compile(r"^\s*editie of versie van\s+(.+?)\s*$", re.I)
 NOTE_UNSUPPORTED = re.compile(r"niet meer ondersteund", re.I)
 COST_PER_PROPOSAL = 0.027  # dollars per proposal for the referee: Opus 5.5 at effort low, measured (TAX-18)
 CLOSED = {"refused", "disallowed", "429"}
-# What the find round itself set aside as no product or without a versions page (decision 33), and
+# What the find round itself set aside as no product or without a versions page, and
 # what the grouping showed to be a range of products or an edition of a product that is there
 # (TAX-42): apart in the count, and not counted for the threshold.
 FOUND_ASIDE = {"series", "edition", "not-found", "no-versions", "grouped-series", "grouped-edition"}
-DOUBT = "de namen alleen beslissen het niet"  # the grouping's reason when classes.json gives none
+DOUBT = "the names alone do not decide it"  # the grouping's reason when classes.json gives none
 
 # reason -> (what the report says, what the parked entry waits for)
 PARK = {
-    "series": ("reeks of onderdeel", "better-proposal"),
-    "edition": ("versie of editie", "better-proposal"),
-    "not-found": ("niet gevonden: geen naam, productpagina of uitgever", "better-proposal"),
-    "grouped-series": ("reeks volgens het groeperen", "better-proposal"),
-    "grouped-edition": ("editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen)",
+    "series": ("range or part", "better-proposal"),
+    "edition": ("version or edition", "better-proposal"),
+    "not-found": ("not found: no name, product page or publisher", "better-proposal"),
+    "grouped-series": ("range, by the grouping", "better-proposal"),
+    "grouped-edition": ("edition, range or part of a product in TAX or in this proposal (the grouping)",
                         "better-proposal"),
-    "grouping": ("het groeperen twijfelt, en de vindronde gaf geen productpagina en versiepagina", "better-proposal"),
-    "no-kind": ("geen kind", "better-proposal"),
-    "no-versions": ("geen versions.source", "better-proposal"),
-    "no-publisher-page": ("nieuwe uitgever zonder eigen pagina met zijn naam", "better-proposal"),
-    "closed": ("gesloten bron", "event"),
-    "unreadable": ("bron niet leesbaar", "event"),
-    "name-not-on-page": ("naam niet op de productpagina", "better-proposal"),
-    "moved": ("bron verwijst door, ook vanaf het eindadres", "better-proposal"),
+    "grouping": ("the grouping doubts, and the find round gave no product page and versions page", "better-proposal"),
+    "no-kind": ("no kind", "better-proposal"),
+    "no-versions": ("no versions.source", "better-proposal"),
+    "no-publisher-page": ("new publisher without a page of its own with its name", "better-proposal"),
+    "closed": ("closed source", "event"),
+    "unreadable": ("source not readable", "event"),
+    "name-not-on-page": ("name not on the product page", "better-proposal"),
+    "moved": ("source redirects, also from the address it ended at", "better-proposal"),
 }
 ALIAS = {
-    "same-row": "zelfde product als een eerdere rij",
-    "existing": "bestaat al in TAX",
-    "grouping": "alias volgens het groeperen",
+    "same-row": "same product as an earlier row",
+    "existing": "already in TAX",
+    "grouping": "alias, by the grouping",
 }
 
 
@@ -207,7 +208,7 @@ class Outcome:
             return PARK[self.reason][0]
         if self.outcome == "alias":
             return ALIAS[self.reason]
-        return self.reason or "kandidaat"
+        return self.reason or "candidate"
 
 
 def product_key(publisher: str, name: str) -> str:
@@ -267,29 +268,29 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
         if NOTE_SERIES.match(row.note):
             o.reason, o.key = "series", listed_key or key
         elif m := NOTE_EDITION.match(row.note):
-            o.reason, o.key, o.detail = "edition", listed_key or key, f"van {m.group(1)}"
+            o.reason, o.key, o.detail = "edition", listed_key or key, f"of {m.group(1)}"
         elif not (row.name and row.source and key and (known or row.publisher)):
             # A new publisher needs the finder's name for it: the vendor of the list is no source.
             o.reason = "not-found"
-            o.detail = ", ".join(w for w, v in (("naam", row.name), ("productpagina", row.source),
-                                                ("uitgever", known or row.publisher)) if not v)
+            o.detail = ", ".join(w for w, v in (("name", row.name), ("product page", row.source),
+                                                ("publisher", known or row.publisher)) if not v)
         elif grouped == "series" and not sorted_as.get("of"):
             o.reason, o.detail = "grouped-series", sorted_as.get("reason") or ""
         elif grouped in ("series", "edition"):
             of = sorted_as.get("of") or ""
             target = of if "/" in of else (product_key(pub, of) if of else "")
             if target and target != key and target in keys:
-                o.reason, o.of, o.detail = "grouped-edition", target, f"{grouped} van {target} (in TAX)"
+                o.reason, o.of, o.detail = "grouped-edition", target, f"{grouped} of {target} (in TAX)"
             else:
                 editions.append((o, target))  # in this proposal, or no product at all: decided below
         elif grouped == "doubt" and not (row.source and row.versions):
-            # TAX-44: only with a product page and a versions page can the referee judge TR4 on the sources.
+            # TAX-44: only with a product page and a versions page can the referee judge TP3 on the sources.
             o.reason = "grouping"
-            o.detail = o.doubt + "; " + ", ".join(w for w, v in (("productpagina", row.source),
-                                                                  ("versiepagina", row.versions)) if not v) + " ontbreekt"
+            o.detail = o.doubt + "; " + ", ".join(w for w, v in (("product page", row.source),
+                                                                  ("versions page", row.versions)) if not v) + " missing"
         elif key in taken:
             o.outcome, o.reason, o.of = "alias", "same-row", key
-            o.detail = f"rij {taken[key].row.where}" + (f"; {row.note}" if NOTE_SAME.match(row.note) else "")
+            o.detail = f"row {taken[key].row.where}" + (f"; {row.note}" if NOTE_SAME.match(row.note) else "")
         elif hit := existing_hit(have, pub, key, row.name):
             o.outcome, o.reason, o.of = "alias", "existing", hit
         elif sorted_as and sorted_as["class"] == "alias" and sorted_as.get("of"):
@@ -306,7 +307,7 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
     for o, target in later:
         if target in taken and target != o.key:
             o.outcome, o.reason, o.of = "alias", "grouping", target
-            o.detail = f"rij {taken[target].row.where}"
+            o.detail = f"row {taken[target].row.where}"
             continue
         as_product(o, taken)
         if o.outcome == "candidate" and target and target != o.key and not keyrule.key_problems(target):
@@ -314,16 +315,16 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
     # TAX-42: an edition or a series only of a product TAX has or this proposal brings. Otherwise the
     # row gets the outcome it would get as a product: a candidate, set aside, or parked with the reason.
     for o, target in editions:
-        grouped = "editie of reeks"
+        grouped = "edition or range"
         if target and target != o.key and target in taken:
             o.reason, o.of = "grouped-edition", target
-            o.detail = f"{grouped} van {target} (rij {taken[target].row.where})"
+            o.detail = f"{grouped} of {target} (row {taken[target].row.where})"
         elif hit := existing_hit(have, o.publisher, o.key, o.row.name):
             o.outcome, o.reason, o.of = "alias", "existing", hit
         else:
             as_product(o, taken)
             if o.outcome == "candidate" or not o.detail:
-                note = f"het groeperen: {grouped} van {target or 'een product'}, dat niet in TAX staat en niet is voorgedragen"
+                note = f"the grouping: {grouped} of {target or 'a product'}, which is not in TAX and not proposed"
                 o.detail = "; ".join(d for d in (o.detail, note) if d)
     return out
 
@@ -339,7 +340,7 @@ def as_product(o: Outcome, taken: dict) -> None:
     row = o.row
     if o.key in taken and taken[o.key] is not o:
         o.outcome, o.reason, o.of = "alias", "same-row", o.key
-        o.detail = f"rij {taken[o.key].row.where}" + (f"; {row.note}" if NOTE_SAME.match(row.note) else "")
+        o.detail = f"row {taken[o.key].row.where}" + (f"; {row.note}" if NOTE_SAME.match(row.note) else "")
     elif not row.kind:
         o.reason = "no-kind"
     elif not row.versions:
@@ -349,7 +350,7 @@ def as_product(o: Outcome, taken: dict) -> None:
     else:
         o.outcome, o.reason = "candidate", ""
         if NOTE_UNSUPPORTED.search(row.note):
-            o.detail = "volgens de vinder niet meer ondersteund (TR7 is aan de scheidsrechter)"
+            o.detail = "no longer supported, says the finder (TP1 is for the referee)"
         taken[o.key] = o
 
 
@@ -408,7 +409,7 @@ def follow(outcomes: list[Outcome]) -> None:
             target = by_key.get(o.of)
             if target is not None and target.outcome != "candidate":
                 o.outcome, o.reason, o.of = target.outcome, target.reason, ""
-                o.detail = f"volgt rij {target.row.where}" + (f"; {target.detail}" if target.detail else "")
+                o.detail = f"follows row {target.row.where}" + (f"; {target.detail}" if target.detail else "")
 
 
 # --------------------------------------------------------------------------- the files
@@ -492,7 +493,7 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
                 end = p[1]
                 again = problem(end)
                 if again and again[0] == "moved":
-                    p = ("moved", f"{url} -> {end} -> {again[1]}: het eindadres verwijst opnieuw door, geen tweede poging")
+                    p = ("moved", f"{url} -> {end} -> {again[1]}: the address it ended at redirects again, no second try")
                 else:
                     p = again
                     o.moves.append([url, end])
@@ -507,12 +508,12 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
                 if not gate.appears(o.row.name, fetcher.fetch(url, "").text):
                     o.outcome, o.reason = "parked", "name-not-on-page"
                     asked, moved = next((a for a, e in o.moves if e == url), ""), final.get(url)
-                    o.detail = f"{o.row.name!r} niet op {url}" + (f" (eindadres van {asked})" if asked
-                                                                 else f" (omgeleid naar {moved})" if moved else "")
+                    o.detail = f"{o.row.name!r} not on {url}" + (f" (the address {asked} ended at)" if asked
+                                                                 else f" (redirected to {moved})" if moved else "")
                     break
         if o.moves:
             moved = "; ".join(f"{a} -> {e}" for a, e in o.moves)
-            o.detail = "; ".join(d for d in (o.detail, f"eindadres voorgedragen: {moved}") if d)
+            o.detail = "; ".join(d for d in (o.detail, f"the address it ended at, proposed: {moved}") if d)
 
     publishers: dict = {}
     by_pub: dict = {}
@@ -542,9 +543,9 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
         for m in members:
             m.outcome = "parked"
             if closed:
-                m.reason, m.detail = "closed", f"uitgeverspagina {closed}"
+                m.reason, m.detail = "closed", f"publisher page {closed}"
             else:
-                m.reason, m.detail = "no-publisher-page", f"{name!r} op geen van: {', '.join(tries)}"
+                m.reason, m.detail = "no-publisher-page", f"{name!r} on none of: {', '.join(tries)}"
     return publishers
 
 
@@ -618,7 +619,7 @@ def apply_gate(outcomes: list[Outcome], items: list[dict]) -> None:
         if item is None or item["outcome"] == "pending":
             continue
         if item["outcome"] == "accept":
-            o.reason = "door de poort aanvaard"
+            o.reason = "accepted by the gate"
         else:
             o.outcome = "gate-" + item["outcome"]
             o.reason = f"{item['rule']}: {item['reason'][:160]}"
@@ -626,14 +627,14 @@ def apply_gate(outcomes: list[Outcome], items: list[dict]) -> None:
 
 def mark_doubt(outcomes: list[Outcome], items: list[dict]) -> None:
     """TAX-44: a proposal the grouping doubted says so to the referee, with the grouping's reason,
-    as a line on TR4 in the block of what code decided (referee/prompt.md, User message)."""
+    as a line on TP3 in the block of what code decided (referee/prompt.md, User message)."""
     doubt = {f"products/{o.key}.yaml": o.doubt for o in outcomes if o.outcome == "candidate" and o.doubt}
     for item in items:
-        if item["outcome"] != "pending" or item["id"] not in doubt or "TR4" not in item.get("ai_rules", []):
+        if item["outcome"] != "pending" or item["id"] not in doubt or "TP3" not in item.get("ai_rules", []):
             continue
         item["doubt"] = doubt[item["id"]]
-        line = ("TR4 in part: the grouping, which sees only the names of this publisher, could not decide whether "
-                f"this is a product of its own: {referee.inert(doubt[item['id']]).rstrip('. ')}. Judge TR4 on the sources.")
+        line = ("TP3 in part: the grouping, which sees only the names of this publisher, could not decide whether "
+                f"this is a product of its own: {referee.inert(doubt[item['id']]).rstrip('. ')}. Judge TP3 on the sources.")
         message = item["message"]
         if "\nJudge only: " in message:
             item["message"] = message.replace("\nJudge only: ", f"\n{line}\nJudge only: ", 1)
@@ -649,13 +650,13 @@ def tally(outcomes: list[Outcome]) -> dict:
     by = Counter()
     for o in outcomes:
         if o.outcome == "candidate":
-            by[("opgenomen-kandidaat", "voor de scheidsrechter" + (", na twijfel bij het groeperen" if o.doubt else ""))] += 1
+            by[("candidate", "for the referee" + (", after doubt in the grouping" if o.doubt else ""))] += 1
         elif o.outcome == "alias":
             by[("alias", ALIAS[o.reason])] += 1
         elif found_aside(o):
-            by[("apart", PARK[o.reason][0])] += 1
+            by[("aside", PARK[o.reason][0])] += 1
         elif o.outcome == "parked":
-            by[("geparkeerd", PARK[o.reason][0])] += 1
+            by[("parked", PARK[o.reason][0])] += 1
         else:
             by[(o.outcome, o.reason.split(":")[0])] += 1
     return by
@@ -671,15 +672,15 @@ def found_aside(o: Outcome) -> bool:
 
 CLOSED_TEXT = re.compile(r"\b(refused|disallowed|429|not read|could not be read)\b", re.I)
 STATUS = (  # in the order of the report
-    ("aanvaard", "door de scheidsrechter aanvaard: nieuw product, of een alias bij een bestaand"),
-    ("alias", "door de scheidsrechter als bestaand product herkend"),
-    ("bestaat al", "staat al in TAX; niets nieuws voorgedragen"),
-    ("voor de scheidsrechter", "nog geen oordeel"),
-    ("geparkeerd", "door de poort of de scheidsrechter, om een andere reden dan een gesloten bron"),
-    ("gesloten bron", "geparkeerd: een bron weigert bots"),
-    ("afgewezen", "door de poort of de scheidsrechter"),
-    ("verloren", "alias van een product dat niet bestaat en niet is voorgedragen"),
-    ("apart", "de vindronde of het groeperen wees het aan als geen eigen product, of zonder versiepagina"),
+    ("accepted", "accepted by the referee: a new product, or an alias of an existing one"),
+    ("alias", "recognised by the referee as an existing product"),
+    ("exists", "already in TAX; nothing new proposed"),
+    ("for the referee", "no verdict yet"),
+    ("parked", "by the gate or the referee, for another reason than a closed source"),
+    ("closed source", "parked: a source refuses robots"),
+    ("rejected", "by the gate or the referee"),
+    ("lost", "alias of a product that does not exist and is not proposed"),
+    ("aside", "the find round or the grouping marked it as no product of its own, or without a versions page"),
 )
 
 
@@ -703,55 +704,55 @@ def products(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> dict:
         parked = [o for o in rows if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked"]
         if not rows:
             o = p["rows"][0]
-            p["status"], p["why"] = "apart", PARK[o.reason][0]
+            p["status"], p["why"] = "aside", PARK[o.reason][0]
         elif v is not None:
             rule, text = v.get("rule") or "", (v.get("reason") or "").strip()
             reason = text if not rule or text.startswith(rule) else f"{rule}: {text}"
             if v["outcome"] == "accept":
-                p["status"], p["why"] = "aanvaard", ""
+                p["status"], p["why"] = "accepted", ""
             elif v["outcome"] == "alias":
                 p["status"], p["why"] = "alias", reason
             elif v["outcome"] == "reject":
-                p["status"], p["why"] = "afgewezen", reason
+                p["status"], p["why"] = "rejected", reason
             elif v.get("waits_for") == "event" and CLOSED_TEXT.search(v.get("reason") or ""):
-                p["status"], p["why"] = "gesloten bron", reason
+                p["status"], p["why"] = "closed source", reason
             else:
-                p["status"], p["why"] = "geparkeerd", reason
+                p["status"], p["why"] = "parked", reason
         elif parked:
             o = parked[0]
-            p["status"], p["why"] = "geparkeerd", PARK[o.reason][0] if o.reason in PARK else o.reason
+            p["status"], p["why"] = "parked", PARK[o.reason][0] if o.reason in PARK else o.reason
         elif any(o.outcome == "gate-reject" for o in rows):
-            p["status"], p["why"] = "afgewezen", next(o.reason for o in rows if o.outcome == "gate-reject")
+            p["status"], p["why"] = "rejected", next(o.reason for o in rows if o.outcome == "gate-reject")
         elif any(o.outcome == "parked" for o in rows):
-            p["status"], p["why"] = "gesloten bron", next(o.detail for o in rows if o.outcome == "parked")
+            p["status"], p["why"] = "closed source", next(o.detail for o in rows if o.outcome == "parked")
         elif all(id(o) in lost for o in rows if o.outcome == "alias") and not any(o.outcome == "candidate" for o in rows):
-            p["status"], p["why"] = "verloren", f"wijst naar {key}"
+            p["status"], p["why"] = "lost", f"points to {key}"
         elif any(o.outcome == "candidate" for o in rows):
-            p["status"], p["why"] = "voor de scheidsrechter", ""
+            p["status"], p["why"] = "for the referee", ""
         else:
-            p["status"], p["why"] = "bestaat al", ""
+            p["status"], p["why"] = "exists", ""
     return out
 
 
 def threshold(outcomes: list[Outcome], verdicts: dict | None = None, keys: set | None = None) -> dict:
-    """Decision 25 as decisions 33 and 35 count it: products, not rows, after the verdict of the
+    """Counted as products, not rows: products, not rows, after the verdict of the
     referee. Parked: by the gate or the referee, for another reason than a closed source. Over the
     products proposed; what the find round set aside does not count. Without the verdict of every
     candidate the count is provisional and says nothing about going on."""
     ps = products(outcomes, verdicts, keys if keys is not None else set())
-    proposed = [p for p in ps.values() if p["status"] != "apart"]
-    parked = sum(1 for p in proposed if p["status"] == "geparkeerd")
-    final = verdicts is not None and not any(p["status"] == "voor de scheidsrechter" for p in proposed)
+    proposed = [p for p in ps.values() if p["status"] != "aside"]
+    parked = sum(1 for p in proposed if p["status"] == "parked")
+    final = verdicts is not None and not any(p["status"] == "for the referee" for p in proposed)
     return {"parked": parked, "proposed": len(proposed), "aside": len(ps) - len(proposed), "rows": len(outcomes),
             "products": len(ps), "final": final, "stop": final and parked * 3 > len(proposed)}
 
 
 def tr5_new_publishers(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> list:
-    """Decision 35, point 3: new publishers whose proposal the referee parked on TR5, with its reason."""
+    """new publishers whose proposal the referee parked on TP5, with its reason."""
     out = []
     for key, p in products(outcomes, verdicts, keys).items():
         v = next((v for v in (verdicts or {}).get("verdicts", []) if v["id"] == f"products/{key}.yaml"), None)
-        if p["new"] and v and v["outcome"] == "parked" and "TR5" in (v.get("rule") or ""):
+        if p["new"] and v and v["outcome"] == "parked" and "TP5" in (v.get("rule") or ""):
             out.append({"publisher": p["publisher"], "product": key, "reason": (v.get("reason") or "").strip()})
     return out
 
@@ -763,35 +764,35 @@ def count_lines(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> li
     for p in ps.values():
         prods[p["status"]] += 1
         rows[p["status"]] += len(p["rows"])
-    lines = ["| uitkomst per product | wat | rijen | producten |", "| --- | --- | --- | --- |"]
+    lines = ["| outcome per product | what | rows | products |", "| --- | --- | --- | --- |"]
     for status, what in STATUS:
         if prods[status]:
             lines.append(f"| {status} | {what} | {rows[status]} | {prods[status]} |")
-    lines.append(f"| **samen** | | **{t['rows']}** | **{t['products']}** |")
-    share = f"{t['parked']} van {t['proposed']} voorgedragen producten geparkeerd om een andere reden dan een gesloten bron"
+    lines.append(f"| **together** | | **{t['rows']}** | **{t['products']}** |")
+    share = f"{t['parked']} of {t['proposed']} proposed products parked for another reason than a closed source"
     if t["final"]:
-        lines += ["", f"**Drempel, na het oordeel van de scheidsrechter:** {share} "
-                      f"({'meer' if t['stop'] else 'niet meer'} dan een derde): **{'stop' if t['stop'] else 'de ronde gaat door'}**."]
+        lines += ["", f"**Threshold, after the verdict of the referee:** {share} "
+                      f"({'more' if t['stop'] else 'not more'} than a third): **{'stop' if t['stop'] else 'the round goes on'}**."]
     else:
-        lines += ["", f"**Voorlopige stand, vóór het oordeel van de scheidsrechter:** {share}. "
-                      "Geen uitspraak over doorgaan of stoppen: die volgt na het oordeel (`importer.py count`)."]
-    lines += ["", f"Apart gezet door de vindronde of het groeperen (telt niet mee): {t['aside']} producten."]
+        lines += ["", f"**Provisional count, before the verdict of the referee:** {share}. "
+                      "Nothing is said about going on or stopping: that follows the verdict (`importer.py count`)."]
+    lines += ["", f"Set aside by the find round or the grouping (not counted): {t['aside']} products."]
     # Proposed after the grouping doubted: every row it doubted, but those parked for want of pages.
     doubted = {key: p for key, p in ps.items() if any(o.doubt and o.reason != "grouping" for o in p["rows"])}
     if doubted:
         made = Counter(p["status"] for p in doubted.values())
-        lines += ["", f"**Voorgedragen na twijfel bij het groeperen** (TAX-44): {len(doubted)} producten; "
+        lines += ["", f"**Proposed after doubt in the grouping** (TAX-44): {len(doubted)} products; "
                       + ", ".join(f"{s}: {n}" for s, n in made.most_common())]
         lines += [f"- {key}: {p['status']}" + (f" ({p['why'][:160]})" if p["why"] else "") for key, p in sorted(doubted.items())]
     moves = [(o, a, e) for o in outcomes for a, e in o.moves]
     if moves:
-        lines += ["", f"**Eindadres voorgedragen** (TAX-42): {len(moves)} bronnen"]
+        lines += ["", f"**Address it ended at, proposed** (TAX-42): {len(moves)} sources"]
         lines += [f"- {o.row.where} {o.key}: {a} -> {e}" for o, a, e in moves]
     tr5 = tr5_new_publishers(outcomes, verdicts, keys)
     if verdicts is not None:
-        lines += ["", f"**Nieuwe uitgevers geparkeerd op TR5** (besluit 35): {len(tr5)}"]
+        lines += ["", f"**New publishers parked on TP5**: {len(tr5)}"]
         lines += [f"- {c['publisher']} ({c['product']}): {c['reason']}" for c in tr5]
-    lines += ["", "| product | rijen | uitkomst | reden |", "| --- | --- | --- | --- |"]
+    lines += ["", "| product | rows | outcome | reason |", "| --- | --- | --- | --- |"]
     for key, p in sorted(ps.items()):
         lines.append(f"| {key} | {', '.join(str(o.row.line) for o in p['rows'])} | {p['status']} | {p['why'][:200]} |")
     return lines
@@ -802,30 +803,30 @@ def load_outcomes(path: Path) -> list[Outcome]:
 
 
 def final_report(outcomes: list[Outcome], verdicts: dict, keys: set) -> str:
-    return "\n".join(["# KEV-ronde, telling na het oordeel", "",
-                      f"Scheidsrechter: {verdicts.get('counts')}, kosten ${verdicts.get('cost', 0):.4f}.", "",
+    return "\n".join(["# The round, the count after the verdict", "",
+                      f"Referee: {verdicts.get('counts')}, cost ${verdicts.get('cost', 0):.4f}.", "",
                       *count_lines(outcomes, verdicts, keys)]) + "\n"
 
 
 def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dict | None, fetched: bool,
            keys: set | None = None) -> str:
-    lines = ["# Importer, droge run", "",
-             f"- rijen: {len(outcomes)}; pagina's gelezen: {'ja' if fetched else 'nee'}",
-             f"- bestanden voorgedragen: {len(files)} "
-             f"({sum(1 for f in files if f.startswith('products/'))} product, {sum(1 for f in files if f.startswith('publishers/'))} uitgever)", "",
-             "| uitkomst | reden | aantal |", "| --- | --- | --- |"]
+    lines = ["# Importer, dry run", "",
+             f"- rows: {len(outcomes)}; pages read: {'yes' if fetched else 'no'}",
+             f"- files proposed: {len(files)} "
+             f"({sum(1 for f in files if f.startswith('products/'))} product, {sum(1 for f in files if f.startswith('publishers/'))} publisher)", "",
+             "| outcome | reason | number |", "| --- | --- | --- |"]
     for (what, why), n in sorted(tally(outcomes).items()):
         lines.append(f"| {what} | {why} | {n} |")
     lines += ["", *count_lines(outcomes, None, keys if keys is not None else set()), ""]
     pending = sum(1 for o in outcomes if o.outcome == "candidate")
-    lines += [f"Kosten van de scheidsrechter: {pending} voordrachten x ${COST_PER_PROPOSAL} = ${pending * COST_PER_PROPOSAL:.2f}."]
+    lines += [f"Cost of the referee: {pending} proposals x ${COST_PER_PROPOSAL} = ${pending * COST_PER_PROPOSAL:.2f}."]
     if grouping:
-        lines += [f"Kosten van het groeperen: {grouping['publishers']} uitgevers, {grouping['names']} namen, "
-                  f"±${grouping['expected']:.2f} (hoogstens ${grouping['ceiling']:.2f})."]
-    lines += ["", "| rij | lijst | naam | uitkomst | reden |", "| --- | --- | --- | --- | --- |"]
+        lines += [f"Cost of the grouping: {grouping['publishers']} publishers, {grouping['names']} names, "
+                  f"±${grouping['expected']:.2f} (at most ${grouping['ceiling']:.2f})."]
+    lines += ["", "| row | list | name | outcome | reason |", "| --- | --- | --- | --- | --- |"]
     for o in outcomes:
         r = o.row
-        what = o.outcome + (f" van {o.of}" if o.of else "")
+        what = o.outcome + (f" of {o.of}" if o.of else "")
         why = o.label if o.outcome in ("parked", "alias") else o.reason
         lines.append(f"| {r.where} | {r.vendor}: {r.listed} | {r.name} | {what} | {why}{'; ' + o.detail if o.detail else ''} |")
     return "\n".join(lines) + "\n"
@@ -973,8 +974,8 @@ def run_grouping(args, client=None, data_root: Path = REPO, now=None, log=print,
 
 # --------------------------------------------------------------------------- the list
 
-KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
-CVE_URL = "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/{year}/{bucket}/{cve}.json"
+KEV_URL = sites.value("imports")["kev"]  # referee/sites.yaml (TG4)
+CVE_URL = sites.value("imports")["cve"]
 CVE_ID = re.compile(r"^CVE-(\d{4})-(\d{4,})$")
 
 
@@ -1087,7 +1088,7 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
         gated.parent.mkdir(parents=True, exist_ok=True)
         gated.write_text(json.dumps({"version": 1, "pr": None, "head_sha": "", "fork": False, "items": items},
                                     ensure_ascii=False) + "\n", encoding="utf-8")
-    log(text.split("\n| rij |")[0])
+    log(text.split("\n| row |")[0])
     return {"outcomes": outcomes, "files": files, "parked": parked, "items": items, "report": text}
 
 

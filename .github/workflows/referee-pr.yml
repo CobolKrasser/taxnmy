@@ -1,10 +1,10 @@
 name: referee-pr
 
 # The referee on a pull request (TAX-17), the second half. It runs on main, never with code of the
-# pull request, and reads only the artifact of referee-pr-collect (hosting-taxnmy-publiek.md §4):
+# pull request, and reads only the artifact of referee-pr-collect:
 #   gate    no key: checks the artifact strictly, lints the files against the data of main, reads
-#           their sources (with a browser) and runs the gate (TR5, TR6, TR8 by code). Free.
-#   judge   environment referee (the key; Fred approves): one batch for what code left, within a
+#           their sources (with a browser) and runs the gate (TP5, TK2, TE1 by code). Free.
+#   judge   environment referee (the key; a maintainer approves): one batch for what code left, within a
 #           ceiling per pull request, per day and in all. A pull request from a fork never gets here:
 #           it is judged by code only, the rest is parked.
 #   report  posts the outcome per file as a comment on the pull request.

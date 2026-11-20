@@ -84,8 +84,8 @@ proposal (§5).
 | proposal | a request to take in or change a product or publisher. Arrives as a pull request |
 | contributor | whoever makes a proposal. The parking list names this owner `submitter` |
 | referee | the whole that judges a proposal: the lint, the gate and the AI |
-| lint | the code that checks TR1–TR3 (`tools/lint.py`) |
-| gate | the code that decides, of TR5–TR8, what can be shown literally, before the AI (`tools/gate.py`) |
+| lint | the code that checks TE1, TK2 and TK3 (`tools/lint.py`) |
+| gate | the code that decides, of TP1, TP5, TK2 and TE1, what can be shown literally, before the AI (`tools/gate.py`) |
 | harness | the code that runs the referee (`tools/referee.py`, `tools/pr_referee.py`) |
 | verdict | the answer on one rule: *yes*, *no* or *doubt* |
 | outcome | the decision on one proposal: *accept*, *reject*, *alias* or *parked* |
@@ -93,9 +93,9 @@ proposal (§5).
 | waiting for an event | *parked* because a source is closed or failing, or the ceiling was reached. The referee tries again (`event`) |
 | waiting for a better proposal | *parked* because the source as read does not show what it must. The contributor is next (`better-proposal`) |
 | waiting for a decision | *parked* because code held the proposal for a person (TV3, TV5) (`decision`) |
-| lapse | a parked proposal that leaves the parking list after its term, without anyone doing anything (TV9) |
+| lapse | a parked proposal that leaves the parking list after its term, without anyone doing anything (TV8) |
 | test set | the fixed collection of good and bad proposals with which the referee is measured (`referee/testset/`) |
-| model measurement | the test set three times through one model (TR12) |
+| model measurement | the test set three times through one model (TG12) |
 | ceiling | the amount the referee spends at most (TR13) |
 
 ## 6. The initial fill

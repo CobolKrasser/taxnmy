@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test harness for the AI referee (rules TR4-TR8 and TV1; TV2-TV5 by code, tools/guard.py).
+"""Test harness for the AI referee (rules TP1, TP3, TP5, TK2 and TE1 and TV1; TV2-TV5 by code, tools/guard.py).
 
 Reads the test set (referee/testset/cases.yaml), the prompt (referee/prompt.md)
 and the output schema (referee/verdict.schema.json), and runs each case as
@@ -54,16 +54,20 @@ import keyrule  # noqa: E402
 import lint  # noqa: E402
 from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of the harness API
     MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, footer_counts, html_to_text, page_text,
-    pdf_to_text, source_key,
+    moved, pdf_to_text, source_key,
 )
 
 REPO = Path(__file__).resolve().parent.parent
 REFEREE = REPO / "referee"
-RULES = ("TR4", "TR5", "TR6", "TR7", "TR8", "TV1")  # the rules the AI referee answers
+RULES = ("TP3", "TP5", "TK2", "TP1", "TE1", "TV1")  # the rules the AI referee answers
 HELD = ("TV3", "TV5")  # rules code holds a proposal on for a person, whatever the referee answers
-OUTCOMES = ("accept", "reject", "alias", "human")
+OUTCOMES = ("accept", "reject", "alias", "parked")
 CONDITIONS = ("fetched", "memory", "web")
-BUDGET = 50.00  # dollars, every run in referee/runs together (Fred, 17 November 2026; it was $20)
+# The agreed model of the referee (TG12): every default in code and workflows is this stand.
+# referee/README.md § The agreed model says why; tests/test_numbering.py checks the workflows.
+MODEL = "claude-opus-5-5"
+EFFORT = "low"
+BUDGET = 50.00  # dollars, every run in referee/runs together (17 November 2026; it was $20)
 MAX_TOKENS = 8000  # per request; the budget may lower it
 MIN_OUTPUT = 2000  # a request with less room for output than this is not sent
 WEB_ALLOWANCE = 20_000  # web: input tokens reserved per search (not a hard bound)
@@ -74,7 +78,7 @@ TE4_CASES = (
     "G02", "G06", "G08", "G17", "G18", "G19", "G20", "G21", "G22", "G23", "G24", "G25", "G27", "G28",
     "B06", "B12", "B14", "B15", "B20", "B21", "B22", "B23", "B24", "B25", "B26", "B27", "B28", "B29", "B30",
 )
-TE4_RULES = ("TR4", "TR5", "TR7", "TR8")
+TE4_RULES = ("TP3", "TP5", "TP1", "TE1")
 
 # The system prompt of conditions memory and web (TE4), written by the analyst.
 TE4_PROMPT = REFEREE / "prompt-r13.md"
@@ -92,9 +96,9 @@ CASE_SCHEMA = {
         "id": {"type": "string", "pattern": "^[GHB][0-9]{2}$"},
         "type": {"type": "string"},
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
-        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TR[1-8]|TV[1-6]|TK3)$"}},
+        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TP[13]|TP5|TK[23]|TE1|TV[1-6])$"}},
         "alias_of": {"type": "string"},
-        "lint": {"type": "string", "pattern": "^(pass|signal|error (TR[1-3]|TV4|TK3))$"},
+        "lint": {"type": "string", "pattern": "^(pass|signal|error (TE1|TK[234]|TV[45]))$"},
         "holdout": {"type": "array", "items": {"type": "string"}},
         "hide": {"type": "array", "items": {"type": "string"}},
         "context": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -199,8 +203,8 @@ class Staged:
     publisher_source: str = ""  # the source of an existing publisher file, fetched with the others
     machine_sources: list = field(default_factory=list)  # the publisher's machine_sources (URLs), for step 0 on a closed source
     publisher_urls: list = field(default_factory=list)  # every URL in the publisher's file and its other products: step 4 searches their domains
-    publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for TR5 and TR6
-    known_publisher: bool = False  # the publisher file is in the data and not part of the proposal (the gate, TR5)
+    publisher: dict = field(default_factory=dict)  # the publisher file, proposed or existing: what the gate reads for TP5 and TK2
+    known_publisher: bool = False  # the publisher file is in the data and not part of the proposal (the gate, TP5)
     old: dict = field(default_factory=dict)  # path -> text in the data, for a proposed file that changes an existing one (TV5)
     held: dict = field(default_factory=dict)  # rule -> reason: TV3 and TV5, held for a person by code (tools/guard.py)
     identity: str = ""  # the <identity> block: what code found about who the proposal is (TV2)
@@ -260,8 +264,10 @@ class Stager:
         # A proposed file that is in the data, and not taken out for the case, changes an existing one.
         old = {rel: self.data.texts[rel] for rel in files
                if rel in self.data.texts and rel not in removed and rel not in context}
-        findings = kept_keys(old, files, {rel: self.data.texts[rel] for rel in deleted
-                                          if rel in self.data.texts and rel not in removed}) + findings
+        # A file of the context that the proposal changes is an existing one too (the case says so).
+        old.update({rel: context[rel] for rel in files if rel in context})
+        findings = publisher_replaced(old, files) + kept_keys(
+            old, files, {rel: self.data.texts[rel] for rel in deleted if rel in self.data.texts and rel not in removed}) + findings
         self.view = {**removed, **context, **{rel: None for rel in files}}  # the proposal is not part of what exists
         return Staged(files=files, findings=findings, lint_ok=True, lint_seen=lint_summary(findings),
                       existing=self._existing(files, findings), publisher_source=self._publisher_source(files),
@@ -449,8 +455,20 @@ def join_held(items: list[tuple[str, str]]) -> dict:
         held["TV3"] = "; ".join(near)
     moved = [text for rule, text in items if rule == "TV5"]
     if moved:
-        held["TV5"] = "a change to an existing file, decided by a person: " + "; ".join(moved)
+        held["TV5"] = "a change to an existing file that a person decides on: " + "; ".join(moved)
     return held
+
+
+def publisher_replaced(old: dict, files: dict) -> list:
+    """TV5 (TAX-46): a change that replaces the publisher of an existing product is an error, before
+    any other: the product is proposed again under its publisher."""
+    out = []
+    for rel in sorted(old):
+        who, _ = guard.moves(_yaml(old[rel]), _yaml(files.get(rel, "")))
+        if who:
+            out.append(lint.Finding(rel, 1, "TV5", f"{who}; a change may not replace the publisher. "
+                                                   "The product may be proposed again under its publisher"))
+    return out
 
 
 def kept_keys(old: dict, files: dict, deleted: dict) -> list:
@@ -502,6 +520,25 @@ def proposed_publishers(staged: "Staged") -> list[tuple[str, dict]]:
     return out
 
 
+def replacement_fault(staged: "Staged", fetcher) -> str:
+    """TV5 (TAX-46): why a change to an existing product is rejected, or ''. A source moves to
+    another domain only if the old source, read now, points there (tools/guard.py `points_to`). Without a reader
+    (`fetcher` None) a move is not shown, so it is rejected."""
+    for rel in sorted(staged.old):
+        _, shifts = guard.moves(_yaml(staged.old[rel]), _yaml(staged.files.get(rel, "")))  # the publisher: `publisher_replaced`
+        for label, a, b in shifts:
+            src = fetcher.fetch(a, "") if fetcher is not None else None
+            if src is None or not (gate.read(src) or moved(src)):
+                why = "the old source cannot be read" if src is not None else "the old source was not read"
+            elif guard.points_to(src.text, moved(src), b):
+                continue
+            else:
+                why = "the old source does not point to it"
+            return (f"{rel}: {label} moves from {guard.owner(a) or guard.host_of(a)} to "
+                    f"{(guard.owner(b) or guard.host_of(b)) if b else 'nothing'}, and {why}")
+    return ""
+
+
 def second_source_fault(staged: "Staged", sources: list | None) -> str:
     """TV4: why a second source that a proposed publisher file gives does not pass, or ''. A second
     source is optional; one that is given must be readable, off the publisher's domain, and name it.
@@ -523,10 +560,10 @@ def second_source_fault(staged: "Staged", sources: list | None) -> str:
 
 
 def held_outcome(outcome: str, rule: str, held: dict) -> tuple[str, str]:
-    """A held proposal is never accepted: what would be accept, or human, is human on the held rule.
+    """A held proposal is never accepted: what would be accept, or parked, is parked on the held rule.
     A reject or an alias stays: it does not take the proposal in."""
-    if held and outcome in ("accept", "human"):
-        return "human", next(iter(held))
+    if held and outcome in ("accept", "parked"):
+        return "parked", next(iter(held))
     return outcome, rule
 
 
@@ -740,7 +777,7 @@ def _norm(text: str) -> str:
 
 
 def product_gone(files: dict, sources: list[Source]) -> str:
-    """The product's own source answers 404 or 410: a reason to reject on TR7, or ''."""
+    """The product's own source answers 404 or 410: a reason to reject on TP1, or ''."""
     _, data = product_file(files)
     url = data.get("source")
     for s in sources:
@@ -756,7 +793,7 @@ def versions_url(files: dict) -> str:
     return str(versions.get("source") or "") if isinstance(versions, dict) else ""
 
 
-FOOTER_RULES = ("TR5", "TV1")  # TAX-43: the rules whose quote may come from the footer of a page
+FOOTER_RULES = ("TP5", "TV1")  # TAX-43: the rules whose quote may come from the footer of a page
 
 
 def publisher_names(publisher: dict) -> list[str]:
@@ -773,11 +810,11 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: st
     """A yes whose quotes are not all found in the fetched text of their URL becomes doubt.
     A yes without any quote becomes doubt too. Returns the checked verdict and what changed.
     Only `rules` are checked: those the referee answered, not those the gate settled.
-    TR4 is yes only with a version quoted from the text of the versions source `versions` (or of a
+    TP3 is yes only with a version quoted from the text of the versions source `versions` (or of a
     source found instead of it): news about a service is not a version (TP4).
-    With `footer` (TAX-43, the referee was shown it) a quote for TR5 or TV1 may also stand in the
+    With `footer` (TAX-43, the referee was shown it) a quote for TP5 or TV1 may also stand in the
     footer of its source; for any other rule only in its text. A footer names others too (a hoster,
-    the maker of a theme), so a TR5 yes that rests on a footer quote holds only when that quote
+    the maker of a theme), so a TP5 yes that rests on a footer quote holds only when that quote
     contains the publisher's name, one of `names`."""
     texts = {s.url: _norm(s.text) for s in sources}
     feet = {s.url: _norm(s.footer) for s in sources if footer and s.footer}
@@ -819,16 +856,16 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: st
                 j["verdict"] = "doubt"
                 notes.append(f"{rule}: a quote from the footer of {ev['url']} that does not name the publisher")
                 break
-    tr4 = checked.get("TR4")
-    if "TR4" in rules and tr4 and tr4["verdict"] == "yes":
+    tr4 = checked.get("TP3")
+    if "TP3" in rules and tr4 and tr4["verdict"] == "yes":
         version = _norm(tr4.get("version") or "")
         own = [_norm(s.text) for s in sources if versions and versions in (s.url, s.instead_of)]
         if not version:
             tr4["verdict"] = "doubt"
-            notes.append("TR4: yes without a version from the versions source")
+            notes.append("TP3: yes without a version from the versions source")
         elif not any(version in text for text in own):
             tr4["verdict"] = "doubt"
-            notes.append(f"TR4: version not found at {versions or 'the versions source'}")
+            notes.append(f"TP3: version not found at {versions or 'the versions source'}")
     return checked, notes
 
 
@@ -838,7 +875,7 @@ def outcome(verdict: dict) -> tuple[str, str]:
     if noes:
         return ("alias" if verdict.get("duplicate_of") else "reject"), noes[0]
     if any(verdict[r]["verdict"] == "doubt" for r in RULES):
-        return "human", ""
+        return "parked", ""
     return "accept", ""
 
 
@@ -1151,7 +1188,7 @@ class Result:
     id: str
     type: str
     expect: list
-    outcome: str  # accept, reject, alias, human; "" if the case did not run
+    outcome: str  # accept, reject, alias, parked; "" if the case did not run
     by: str  # code, ai, error or invalid (the lint does not match the case)
     right: bool = False
     rule: str = ""  # the rule the outcome rests on
@@ -1251,7 +1288,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
                 log(f"sources: {args.sources} ({len(stored.cache)} URLs, fetched by an earlier step)")
             else:
-                log("No --sources: the gate reads no source texts, so TR6 and TR8 go to the referee.")
+                log("No --sources: the gate reads no source texts, so TK2 and TE1 go to the referee.")
             replay = {}
             if getattr(args, "replay", None):
                 replay = {r.id: r for r in load_results(Path(args.replay))}
@@ -1305,9 +1342,9 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
             elif st.lint_seen.startswith("error"):
                 res.by, res.outcome, res.rule = "code", "reject", st.lint_seen.split()[1]
             elif use_gate and gate.ai_chat(st.product, st.publisher):
-                # A source on the domain of an AI chat: rejected on TR8 by code, and nothing is fetched.
+                # A source on the domain of an AI chat: rejected on TE1 by code, and nothing is fetched.
                 chat = gate.ai_chat(st.product, st.publisher)
-                res.by, res.outcome, res.rule, res.error, res.gate = "code", "reject", "TR8", chat["reason"], {"TR8": "no"}
+                res.by, res.outcome, res.rule, res.error, res.gate = "code", "reject", "TE1", chat["reason"], {"TE1": "no"}
             else:
                 sources = gather_sources(fetcher, st) if args.condition == "fetched" else []
                 for s in sources:
@@ -1315,12 +1352,14 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 res.sources = [[s.url, s.status] for s in sources]
                 gone = product_gone(st.files, sources)
                 wrong = second_source_fault(st, sources if args.condition == "fetched" else None)
-                if gone or wrong:
-                    # The page that should show the product does not exist (TR7), or a second source that
-                    # is given does not pass (TV4): rejected by code.
-                    res.by, res.outcome, res.rule, res.error = "code", "reject", "TR7" if gone else "TV4", gone or wrong
+                swap = replacement_fault(st, fetcher if args.condition == "fetched" else None) if st.old else ""
+                if gone or wrong or swap:
+                    # The page that should show the product does not exist (TP1), a second source that
+                    # is given does not pass (TV4), or a change replaces (TV5): rejected by code.
+                    rule = "TP1" if gone else "TV4" if wrong else "TV5"
+                    res.by, res.outcome, res.rule, res.error = "code", "reject", rule, gone or wrong or swap
                     res.right = res.outcome in case.expect
-                    log(f"{case.id}: reject (code, {gone or wrong}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+                    log(f"{case.id}: reject (code, {gone or wrong or swap}), $0.0000; spent ${budget.spent:.4f} of ${args.budget:.2f}")
                     results.append(res)
                     jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
                     jsonl.flush()
@@ -1341,7 +1380,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 except BudgetExhausted as exc:
                     res.cost = budget.spent - spent_at_start  # a resumed request may have run before the stop
                     if res.cost:
-                        res.by, res.outcome, res.error = "error", "human", f"stopped by the budget: {exc}"
+                        res.by, res.outcome, res.error = "error", "parked", f"stopped by the budget: {exc}"
                         res.right = res.outcome in case.expect
                         results.append(res)
                         jsonl.write(json.dumps(asdict(res), ensure_ascii=False) + "\n")
@@ -1349,7 +1388,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     log(stopped)
                     break
                 except Exception as exc:  # noqa: BLE001 - any failure is recorded, the run goes on
-                    res.by, res.outcome, res.error = "error", "human", f"{type(exc).__name__}: {exc}"
+                    res.by, res.outcome, res.error = "error", "parked", f"{type(exc).__name__}: {exc}"
                     res.cost = budget.spent - spent_at_start
                 else:
                     res.usage, res.cost = usage, budget.spent - spent_at_start
@@ -1380,7 +1419,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     continue  # never fitted the budget: did not run
                 res.usage, res.cost = answer["usage"], answer["cost"]
                 if answer["error"]:
-                    res.by, res.outcome, res.error = "error", "human", answer["error"]
+                    res.by, res.outcome, res.error = "error", "parked", answer["error"]
                 else:
                     settle_reply(res, answer["text"], answer["stop"], schema, sources, decided, args.condition,
                                  versions_url(staged[case.id].files), staged[case.id].files, footer,
@@ -1412,10 +1451,10 @@ def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: lis
     verdict, why = (parse_reply(text, schema_for(schema, res.ai_rules)) if stop != "refusal"
                     else (None, "the model refused"))
     if verdict is None:
-        res.by, res.outcome, res.error = "error", "human", why
+        res.by, res.outcome, res.error = "error", "parked", why
         return
     res.by, res.verdict, res.duplicate_of = "ai", verdict, verdict.get("duplicate_of")
-    # The quote check is the code part of TR8; TE4 switches it off in memory and web.
+    # The quote check is the code part of TE1; TE4 switches it off in memory and web.
     checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions, files, footer, names) if condition == "fetched"
                                 else (verdict, []))
     checked = {**checked, **(decided or {})}  # the rules the gate settled, as the gate settled them
@@ -1448,9 +1487,9 @@ def metrics(results: list[Result]) -> dict:
         "right": sum(r.right for r in ran),
         "let_through": [r.id for r in bad if r.outcome == "accept"],
         "good_rejected": [r.id for r in good if r.outcome in ("reject", "alias")],
-        "human": [r.id for r in ran if r.outcome == "human"],
-        "human_closed": [r.id for r in ran if r.outcome == "human" and source_closed(r)],
-        "human_doubt": [r.id for r in ran if r.outcome == "human" and not source_closed(r)],
+        "parked": [r.id for r in ran if r.outcome == "parked"],
+        "parked_closed": [r.id for r in ran if r.outcome == "parked" and source_closed(r)],
+        "parked_doubt": [r.id for r in ran if r.outcome == "parked" and not source_closed(r)],
         "wrong": [r.id for r in ran if not r.right],
         "invalid": [r.id for r in results if r.by == "invalid"],
         "errors": [r.id for r in results if r.by == "error"],
@@ -1509,9 +1548,9 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
         "| --- | --- |",
         f"| bad cases let through (target 0) | {len(m['let_through'])} |",
         f"| good cases rejected | {len(m['good_rejected'])} |",
-        f"| cases for a person (human) | {len(m['human'])} |",
-        f"| human because a source is closed (refused, disallowed, error) | {len(m['human_closed'])} |",
-        f"| human because the referee doubts | {len(m['human_doubt'])} |",
+        f"| parked (cases for a person or a better proposal) | {len(m['parked'])} |",
+        f"| parked because a source is closed (refused, disallowed, error) | {len(m['parked_closed'])} |",
+        f"| parked because the referee doubts | {len(m['parked_doubt'])} |",
         f"| outcome in `expect` | {m['right']} of {m['ran']} |",
         f"| failed calls or unusable replies | {len(m['errors'])} |",
         f"| cases whose lint does not match | {len(m['invalid'])} |",
@@ -1521,8 +1560,8 @@ def summarise(results: list[Result], name: str, condition: str, budget: float, b
         "",
         f"Let through: {ids(m['let_through'])}  ",
         f"Good rejected: {ids(m['good_rejected'])}  ",
-        f"Human, a source closed: {ids(m['human_closed'])}  ",
-        f"Human, the referee doubts: {ids(m['human_doubt'])}  ",
+        f"Parked, a source closed: {ids(m['parked_closed'])}  ",
+        f"Parked, the referee doubts: {ids(m['parked_doubt'])}  ",
         f"Not in `expect`: {ids(m['wrong'])}  ",
         f"Errors: {ids(m['errors'])}  ",
         f"Lint does not match: {ids(m['invalid'])}",
@@ -1590,7 +1629,7 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
         return row
     sources = gather_sources(stored, st) if stored is not None else None
     if sources is not None and product_gone(st.files, sources):
-        row.settled = "TR7 404"
+        row.settled = "TP1 404"
         return row
     if second_source_fault(st, sources):
         row.settled = "TV4 second source"
@@ -1614,7 +1653,7 @@ def gate_row(case: Case, st: Staged, stored, replayed: Result | None = None) -> 
 
 
 def gate_counts(rows: list) -> dict:
-    """For the cases that reach the gate: of their TR5, TR6 and TR8 judgments, how many code settled,
+    """For the cases that reach the gate: of their TP5, TK2 and TE1 judgments, how many code settled,
     how many were not needed because code rejected the case, and how many go to the referee."""
     at = [r for r in rows if not r.settled]
     per_rule = {rule: {"yes": 0, "no": 0, "ai": 0, "moot": 0} for rule in gate.GATE_RULES}
@@ -1641,14 +1680,14 @@ def _pct(n: int, total: int) -> str:
 def gate_table(rows: list) -> list[str]:
     c = gate_counts(rows)
     lines = [
-        "## The gate: TR5, TR6 and TR8 by code, before the referee",
+        "## The gate: TP5, TK2 and TE1 by code, before the referee",
         "",
         "| measure | value |",
         "| --- | --- |",
         f"| cases | {c['cases']} |",
         f"| stopped before the gate (lint error, lint mismatch, product source 404) | {c['cases'] - c['at_gate']} |",
         f"| cases at the gate | {c['at_gate']} |",
-        f"| TR5, TR6 and TR8 judgments of those cases | {c['judgments']} |",
+        f"| TP5, TK2 and TE1 judgments of those cases | {c['judgments']} |",
         f"| settled by code | {c['code']} ({_pct(c['code'], c['judgments'])}) |",
         f"| not needed, because code rejected the case | {c['moot']} |",
         f"| left for the referee | {c['ai']} ({_pct(c['ai'], c['judgments'])}) |",
@@ -1665,13 +1704,13 @@ def gate_summary(rows: list[GateRow], name: str, sources: str = "", replay: str 
     lines = [f"# Dry run {name}", "",
              "Nothing was sent to the API. The gate (`tools/gate.py`) settles what code can; the rest is what a live run "
              "would ask the referee.", "",
-             f"Source texts: {sources or 'none, so TR6 and TR8 (apart from an AI chat) are left for the referee'}.", ""]
+             f"Source texts: {sources or 'none, so TK2 and TE1 (apart from an AI chat) are left for the referee'}.", ""]
     lines += gate_table(rows)
     held = [f"{r.id} ({', '.join(r.held)})" for r in rows if r.held]
     lines += [f"Held for a person by code (TV3–TV5), whatever the referee answers: {len(held)} cases. "
               f"{', '.join(held) or 'none'}", ""]
     replayed = [r for r in rows if r.before]
-    head = "| case | stopped before | TR5 | TR6 | TR8 | referee judges | held for a person |"
+    head = "| case | stopped before | TP5 | TK2 | TE1 | referee judges | held for a person |"
     sep = "| --- | --- | --- | --- | --- | --- | --- |"
     if replay:
         head += " outcome in the replayed run | with the gate |"
@@ -1723,7 +1762,7 @@ def compare(dirs: list, show: list[str] | None = None) -> str:
         rs = [by_id[i] for i in shared]
         m = metrics(rs)
         per = m["te4"]["per_rule"]
-        lines.append(f"| {name} | {len(m['let_through'])} | {len(m['good_rejected'])} | {len(m['human'])} | "
+        lines.append(f"| {name} | {len(m['let_through'])} | {len(m['good_rejected'])} | {len(m['parked'])} | "
                      + " | ".join(f"{per[r]['right']}/{per[r]['wrong']}/{per[r]['doubt']}" for r in TE4_RULES)
                      + f" | {len(m['te4']['confident_wrong'])} | ${m['cost_per_call']:.4f} | {m['tokens']['web_search_requests']}"
                      + f" | {m['tokens'].get('web_fetch_requests', 0)} |")
@@ -1755,7 +1794,7 @@ def check_urls(cases: list[Case], fetcher) -> str:
 
 def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict:
     """Fetch the sources of the cases that reach the referee, and write them to args.output.
-    No key is needed or read: this step runs where the key is not (hosting plan §8)."""
+    No key is needed or read: this step runs where the key is not."""
     cases = select(load_cases(Path(args.testset)), args.cases, "fetched")
     if args.limit:
         cases = cases[: args.limit]
@@ -1844,7 +1883,7 @@ MAX_DOMAINS = 30
 def search_domains(refused: str, staged: "Staged") -> list[str]:
     """The publisher's domains (run A2 review §1, point 6): of the closed URL, of the product's
     sources, and of every URL in the publisher's file and its other products in the data. Never
-    a search without domains: sites of others do not count under TR5."""
+    a search without domains: sites of others do not count under TP5."""
     hosts = [refused] + urls_of(staged.files) + list(staged.publisher_urls)
     out = []
     for h in hosts:
@@ -1857,7 +1896,7 @@ def search_domains(refused: str, staged: "Staged") -> list[str]:
 
 def search_urls(content) -> list[str]:
     """The URLs in the web search results of a response. The snippets are not kept: a fragment is
-    never evidence (tax-weigerende-sites.md §3)."""
+    never evidence (TE6)."""
     urls = []
     for block in content:
         if getattr(block, "type", "") == "web_search_tool_result" and isinstance(getattr(block, "content", None), list):
@@ -2141,12 +2180,12 @@ def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=pri
 
 def measurement_report(runs: dict, a2: Path | None = None) -> str:
     """TAX-18: per stand (a model at an effort) over its runs the numbers of the story, and the
-    comparison with A2. Besides the outcomes: the quotes code did not find (TR4 without a version
+    comparison with A2. Besides the outcomes: the quotes code did not find (TP3 without a version
     among them), the output tokens per proposal, and per rule how often it left a case to a person."""
     lines = ["# Model measurement (TAX-18)", "",
              "Per stand (a model at an effort), as a batch, after the gate (TAX-15). A stand that lets one bad case "
              "through in any run drops out.", "",
-             "| stand | runs | bad let through (per run) | good rejected (per run) | human/parked (per run) | "
+             "| stand | runs | bad let through (per run) | good rejected (per run) | parked (per run) | "
              "cases whose outcome differs between runs | quotes not found (per run) | output tokens per proposal | "
              "cost per proposal | cost of all runs |",
              "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
@@ -2165,22 +2204,22 @@ def measurement_report(runs: dict, a2: Path | None = None) -> str:
         notes = [sum(len(r.quote_notes) for r in run_.values()) for run_ in per_run]
         output = sum(r.usage.get("output_tokens", 0) for r in called) / len(called) if called else 0
         lines.append(f"| {stand} | {len(per_run)} | {' / '.join(str(len(m['let_through'])) for m in ms)} | "
-                     f"{' / '.join(str(len(m['good_rejected'])) for m in ms)} | {' / '.join(str(len(m['human'])) for m in ms)} | "
+                     f"{' / '.join(str(len(m['good_rejected'])) for m in ms)} | {' / '.join(str(len(m['parked'])) for m in ms)} | "
                      f"{len(differ)}{': ' + ', '.join(differ) if differ else ''} | {' / '.join(map(str, notes))} | "
                      f"{output:.0f} | ${(sum(r.cost for r in called) / len(called)) if called else 0:.4f} | ${cost_all:.4f} |")
         let = sorted({i for m in ms for i in m["let_through"]})
         doubt = {}
         for run_ in per_run:
             for r in run_.values():
-                if r.outcome == "human":
+                if r.outcome == "parked":
                     for rule in (x for x in RULES if r.checked.get(x) == "doubt"):
                         doubt[rule] = doubt.get(rule, 0) + 1
-        tr4 = sum(n.startswith("TR4: yes without a version") or n.startswith("TR4: version not found")
+        tr4 = sum(n.startswith("TP3: yes without a version") or n.startswith("TP3: version not found")
                  for run_ in per_run for r in run_.values() for n in r.quote_notes)
         lines.append(f"|  | let through: {', '.join(let) or 'none'} | good rejected: "
                      f"{', '.join(sorted({i for m in ms for i in m['good_rejected']})) or 'none'} | "
-                     f"human by rule: {', '.join(f'{k} {v}' for k, v in sorted(doubt.items())) or 'none'} |  | "
-                     f"TR4 without a version found: {tr4} |  |  |  |")
+                     f"parked by rule: {', '.join(f'{k} {v}' for k, v in sorted(doubt.items())) or 'none'} |  | "
+                     f"TP3 without a version found: {tr4} |  |  |  |")
     lines += [""]
     if a2 is not None:
         dirs = [[a2]] + [group for groups in runs.values() for group in groups]
@@ -2197,8 +2236,8 @@ def parser() -> argparse.ArgumentParser:
     r.add_argument("--condition", choices=CONDITIONS, default="fetched")
     r.add_argument("--cases", nargs="*", help="case ids, or 'all'; default: all for fetched, the 29 TE4 cases otherwise")
     r.add_argument("--limit", type=int, help="only the first N of those cases")
-    r.add_argument("--model", default="claude-opus-5-5")
-    r.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), default="medium")
+    r.add_argument("--model", default=MODEL)
+    r.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), default=EFFORT)
     r.add_argument("--max-tokens", type=int, default=MAX_TOKENS, help="per request; the budget may lower it")
     r.add_argument("--max-uses", type=int, default=3, help="web: most searches per case")
     r.add_argument("--budget", type=float, default=BUDGET, help="dollars, for all runs in --out together")
@@ -2228,15 +2267,15 @@ def parser() -> argparse.ArgumentParser:
     s.add_argument("--testset", default=str(REFEREE / "testset/cases.yaml"))
     s.add_argument("--cases", nargs="*")
     s.add_argument("--limit", type=int)
-    s.add_argument("--model", default="claude-sonnet-5-5", help="it only returns URLs and judges nothing (run A2 review §1)")
+    s.add_argument("--model", default=MODEL, help="it only returns URLs and judges nothing")
     s.add_argument("--budget", type=float, default=BUDGET)
     s.add_argument("--prices", default=str(REFEREE / "prices.yaml"))
     s.add_argument("--out", default=str(REFEREE / "runs"))
     s.add_argument("--live", action="store_true", help="search; without it nothing is sent")
     m = sub.add_parser("measure", help="TAX-18: repeated batch runs per model, within the budget")
-    m.add_argument("--models", nargs="+", default=["claude-sonnet-5-5"])
+    m.add_argument("--models", nargs="+", default=[MODEL])
     m.add_argument("--repeats", type=int, default=3)
-    m.add_argument("--efforts", nargs="+", choices=tuple(OUTPUT_FACTOR), default=["low"],
+    m.add_argument("--efforts", nargs="+", choices=tuple(OUTPUT_FACTOR), default=[EFFORT],
                    help="one stand per model and effort: each gets --repeats runs")
     m.add_argument("--max-tokens", type=int, default=4000, help="per request; prompt.md asks for about 2,000")
     m.add_argument("--budget", type=float, default=BUDGET, help="dollars, for all runs in --out together (hard)")

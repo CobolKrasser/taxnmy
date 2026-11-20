@@ -2,8 +2,7 @@ name: referee
 
 # A measurement of the AI referee (fase 2). Started by hand.
 #
-# Four jobs, so that the key never comes near code from other sites (hosting plan §8;
-# tax-fase2-pagina-s-lezen.md §4; tax-weigerende-sites.md §4):
+# Four jobs, so that the key never comes near code from other sites:
 #   fetch    reads the sources with the ladder (steps 0-3), including a headless browser that
 #            runs the JavaScript of those sites. No key. Keeps sources.json as an artifact.
 #            It may run from any branch, which is how the ladder is tested for free.
@@ -39,7 +38,7 @@ on:
       effort:
         type: choice
         options: [low, medium, high]
-        default: medium
+        default: low
       budget:
         description: "dollars, for all runs together (hard limit)"
         type: string
@@ -113,7 +112,7 @@ jobs:
     needs: fetch
     if: inputs.task == 'measure' && inputs.condition == 'fetched' && inputs.live && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    environment: referee  # the key; Fred approves (hosting-taxnmy-publiek.md §4, point 10)
+    environment: referee  # the key; a maintainer approves
     timeout-minutes: 30
     permissions:
       contents: read
@@ -215,7 +214,7 @@ jobs:
       (needs.search.result == 'success' || needs.search.result == 'skipped') &&
       (needs.refetch.result == 'success' || needs.refetch.result == 'skipped')
     runs-on: ubuntu-latest
-    environment: referee  # the key; Fred approves
+    environment: referee  # the key; a maintainer approves
     timeout-minutes: 90
     permissions:
       contents: read

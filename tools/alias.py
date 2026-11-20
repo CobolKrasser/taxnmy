@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""A change that only adds an alias to a product in TAXNMY (TAX-40, decision 35 in keepitfresh).
+"""A change that only adds an alias to a product in TAXNMY (TAX-40).
 
 Such a change is judged on the alias, not on the whole product again. An alias proves three things:
 
-    1  it is nobody else's     not the key or alias of another product (the lint, TR3), under the
+    1  it is nobody else's     not the key or alias of another product (the lint, TK3), under the
                                publisher of the product (TV2), and, when it looks like an existing
                                name of that publisher within one or two characters, a person
                                decides (TV3)
@@ -12,7 +12,7 @@ Such a change is judged on the alias, not on the whole product again. An alias p
                                question, and a yes quotes the name from a read source (TV6)
     3  nothing else changes    the file is what TAXNMY holds, but for the added aliases
 
-TR4, TR5, TR7 and TR8 are not judged again: they were judged when the product was taken in. A
+TP3, TP5, TP1 and TE1 are not judged again: they were judged when the product was taken in. A
 change that does anything more is not alias-only and gets the whole review. So does a change with
 a new comment line, or an alias whose words speak to whoever judges it (TV1): those are judged as
 a whole, where the referee answers TV1.
@@ -33,7 +33,7 @@ import guard
 REFEREE = Path(__file__).resolve().parent.parent / "referee"
 PROMPT = REFEREE / "prompt-alias.md"
 SCHEMA = REFEREE / "alias.schema.json"
-NOT_JUDGED = ("TR4", "TR5", "TR7", "TR8")
+NOT_JUDGED = ("TP3", "TP5", "TP1", "TE1")
 WHY_NOT = "judged when the product was taken in; a change that only adds an alias does not judge them again (TAX-40)"
 
 # Words in an alias that speak to whoever judges it (TV1). An alias with one of them is judged as a whole.

@@ -29,7 +29,7 @@ cases:
         source: https://www.synology.com/en-global/releaseNote/DSM
 - id: H01
   type: ai-model
-  expect: [human]
+  expect: [parked]
   lint: pass
   proposal:
     publishers/acme.yaml: |
@@ -48,8 +48,8 @@ cases:
 - id: B01
   type: code
   expect: [reject]
-  rules: [TR1]
-  lint: error TR1
+  rules: [TE1]
+  lint: error TE1
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds124.yaml: |
@@ -62,7 +62,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: synology/ds224-plus
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/synology/plus-ds224.yaml: |
@@ -75,8 +75,8 @@ cases:
         source: https://www.synology.com/en-global/releaseNote/DSM
 - id: B20
   type: hallucinated
-  expect: [reject, human]
-  rules: [TR7, TR8]
+  expect: [reject, parked]
+  rules: [TP1, TE1]
   lint: pass
   proposal:
     products/synology/ds128.yaml: |
@@ -90,8 +90,8 @@ cases:
   verify: [https://www.synology.com/en-global/products/DS128]
 - id: B21
   type: hallucinated
-  expect: [reject, human]
-  rules: [TR7]
+  expect: [reject, parked]
+  rules: [TP1]
   lint: pass
   proposal:
     products/synology/ds129.yaml: |
@@ -105,7 +105,7 @@ cases:
 - id: B22
   type: stale
   expect: [reject]
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/synology/ds130.yaml: |

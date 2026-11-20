@@ -26,8 +26,8 @@ def judgment(verdict="yes", url="https://www.synology.com/en-global/releaseNote/
 def reply(duplicate_of=None, version=PAGE, **rules):
     data = {r: judgment() for r in referee.RULES}
     data.update(rules)
-    # TR4 quotes a version from the versions source; every page of the fake fetcher holds PAGE.
-    data["TR4"] = {**data["TR4"], "version": data["TR4"].get("version", version if data["TR4"]["verdict"] == "yes" else None)}
+    # TP3 quotes a version from the versions source; every page of the fake fetcher holds PAGE.
+    data["TP3"] = {**data["TP3"], "version": data["TP3"].get("version", version if data["TP3"]["verdict"] == "yes" else None)}
     data["duplicate_of"] = duplicate_of
     return json.dumps(data)
 
@@ -35,12 +35,12 @@ def reply(duplicate_of=None, version=PAGE, **rules):
 # What the fake referee answers, per proposed product key.
 REPLIES = {
     "synology/ds124": reply(**{r: judgment(url="https://www.synology.com/en-global/products/DS124") for r in referee.RULES}),
-    "synology/ds1522-plus": reply(TR7=judgment(quote="a quote that is not on the page")),
+    "synology/ds1522-plus": reply(TP1=judgment(quote="a quote that is not on the page")),
     "acme/widget": "this is not JSON",
-    "synology/plus-ds224": reply(duplicate_of="synology/ds224-plus", TR4=judgment("no")),
+    "synology/plus-ds224": reply(duplicate_of="synology/ds224-plus", TP3=judgment("no")),
     "synology/ds128": reply(),  # never asked: its product source answers 404
     "synology/ds129": reply(),  # wrongly lets an invented product through
-    "synology/ds126": reply(TR8=judgment("no", url="https://www.synology.com/en-global/products/DS126")),  # a wrong kind
+    "synology/ds126": reply(TE1=judgment("no", url="https://www.synology.com/en-global/products/DS126")),  # a wrong kind
 }
 
 
@@ -149,8 +149,8 @@ class RefereeTest(unittest.TestCase):
         results, _, client = self.run_fake()
         self.assertEqual({i: (r.outcome, r.by, r.right) for i, r in results.items()}, {
             "G01": ("accept", "ai", True),
-            "G02": ("human", "ai", False),  # a quote that is not on the page turns yes into doubt
-            "H01": ("human", "error", True),
+            "G02": ("parked", "ai", False),  # a quote that is not on the page turns yes into doubt
+            "H01": ("parked", "error", True),
             "B01": ("reject", "code", True),
             "B07": ("alias", "ai", True),
             "B20": ("reject", "code", True),
@@ -161,7 +161,7 @@ class RefereeTest(unittest.TestCase):
 
     def test_product_source_404_is_rejected_by_code(self):
         results, _, client = self.run_fake(cases=["B20"])
-        self.assertEqual((results["B20"].outcome, results["B20"].rule), ("reject", "TR7"))
+        self.assertEqual((results["B20"].outcome, results["B20"].rule), ("reject", "TP1"))
         self.assertIn("answers 404", results["B20"].error)
         self.assertEqual(client.calls, [])
 
@@ -175,18 +175,18 @@ class RefereeTest(unittest.TestCase):
 
     def test_quote_check(self):
         results, _, _ = self.run_fake()
-        self.assertEqual(results["G02"].checked["TR7"], "doubt")
-        self.assertEqual(results["G02"].verdict["TR7"]["verdict"], "yes")
-        self.assertIn("TR7: quote not found", results["G02"].quote_notes[0])
+        self.assertEqual(results["G02"].checked["TP1"], "doubt")
+        self.assertEqual(results["G02"].verdict["TP1"]["verdict"], "yes")
+        self.assertIn("TP1: quote not found", results["G02"].quote_notes[0])
 
     def test_quote_check_ignores_whitespace_and_case(self):
-        verdict = json.loads(reply(TR5=judgment(quote="  FIRMWARE releases\n are published  ")))
+        verdict = json.loads(reply(TP5=judgment(quote="  FIRMWARE releases\n are published  ")))
         url = "https://www.synology.com/en-global/releaseNote/DSM"
         checked, notes = referee.check_quotes(verdict, [referee.Source(url, "200", PAGE)], versions=url)
-        self.assertEqual((checked["TR5"]["verdict"], notes), ("yes", []))
+        self.assertEqual((checked["TP5"]["verdict"], notes), ("yes", []))
 
     def test_s4_yes_needs_a_version_from_the_versions_source(self):
-        """B30: news about a service is not a version. TR4 is yes only with a version quoted from
+        """B30: news about a service is not a version. TP3 is yes only with a version quoted from
         the text of versions.source, checked like every quote."""
         versions, product = "https://example.org/releases", "https://example.org/product"
         sources = [referee.Source(versions, "200", "Release notes. Version 7.2.1 (build 69057) is out."),
@@ -195,29 +195,29 @@ class RefereeTest(unittest.TestCase):
         def tr4(version, srcs=sources, url=versions):
             verdict = json.loads(reply(version=version, **{r: judgment(url=product, quote="The product page.") for r in referee.RULES}))
             checked, notes = referee.check_quotes(verdict, srcs, versions=url)
-            return checked["TR4"]["verdict"], notes
+            return checked["TP3"]["verdict"], notes
 
         self.assertEqual(tr4("version  7.2.1 (BUILD 69057)"), ("yes", []))
-        self.assertEqual(tr4(None), ("doubt", ["TR4: yes without a version from the versions source"]))
-        self.assertEqual(tr4(""), ("doubt", ["TR4: yes without a version from the versions source"]))
-        self.assertEqual(tr4("Version 9.9"), ("doubt", [f"TR4: version not found at {versions}"]), "only the versions source counts")
-        self.assertEqual(tr4("7.2.1", url=""), ("doubt", ["TR4: version not found at the versions source"]))
+        self.assertEqual(tr4(None), ("doubt", ["TP3: yes without a version from the versions source"]))
+        self.assertEqual(tr4(""), ("doubt", ["TP3: yes without a version from the versions source"]))
+        self.assertEqual(tr4("Version 9.9"), ("doubt", [f"TP3: version not found at {versions}"]), "only the versions source counts")
+        self.assertEqual(tr4("7.2.1", url=""), ("doubt", ["TP3: version not found at the versions source"]))
         instead = [referee.Source(versions, "refused"), sources[1],
                    referee.Source("https://example.org/feed.xml", "200", "Release notes. Version 7.2.1", instead_of=versions)]
         self.assertEqual(tr4("7.2.1", srcs=instead), ("yes", []), "a source found instead of the versions source counts")
 
     def test_s4_no_and_doubt_need_no_version(self):
-        verdict = json.loads(reply(TR4=judgment("no"), duplicate_of="synology/ds224-plus"))
-        self.assertIsNone(verdict["TR4"]["version"])
+        verdict = json.loads(reply(TP3=judgment("no"), duplicate_of="synology/ds224-plus"))
+        self.assertIsNone(verdict["TP3"]["version"])
         checked, notes = referee.check_quotes(verdict, [referee.Source("https://www.synology.com/en-global/releaseNote/DSM", "200", PAGE)])
-        self.assertEqual((checked["TR4"]["verdict"], [n for n in notes if n.startswith("TR4")]), ("no", []))
+        self.assertEqual((checked["TP3"]["verdict"], [n for n in notes if n.startswith("TP3")]), ("no", []))
 
     def test_the_schema_asks_s4_for_a_version(self):
         schema = referee.api_schema(referee.load_schema(REPO / "referee/verdict.schema.json"))
-        self.assertIn("version", schema["properties"]["TR4"]["required"])
-        self.assertNotIn("version", schema["properties"]["TR5"]["properties"])
-        self.assertIsNone(referee.parse_reply(json.dumps({**json.loads(reply()), "TR4": judgment()}), schema)[0],
-                          "an TR4 without the field version does not parse")
+        self.assertIn("version", schema["properties"]["TP3"]["required"])
+        self.assertNotIn("version", schema["properties"]["TP5"]["properties"])
+        self.assertIsNone(referee.parse_reply(json.dumps({**json.loads(reply()), "TP3": judgment()}), schema)[0],
+                          "an TP3 without the field version does not parse")
 
     def test_versions_url(self):
         files = {"products/a/b.yaml": "key: a/b\npublisher: a\nversions:\n  source: https://a.example/v\n"}
@@ -225,16 +225,16 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual(referee.versions_url({"products/a/b.yaml": "key: a/b\n"}), "")
 
     def test_yes_without_quote_is_doubt(self):
-        verdict = json.loads(reply(TR6={"verdict": "yes", "reason": "", "evidence": []}))
+        verdict = json.loads(reply(TK2={"verdict": "yes", "reason": "", "evidence": []}))
         checked, _ = referee.check_quotes(verdict, [])
-        self.assertEqual(checked["TR6"]["verdict"], "doubt")
+        self.assertEqual(checked["TK2"]["verdict"], "doubt")
 
     def test_outcome_rules(self):
         base = {r: {"verdict": "yes"} for r in referee.RULES}
         self.assertEqual(referee.outcome({**base, "duplicate_of": None}), ("accept", ""))
-        self.assertEqual(referee.outcome({**base, "TR6": {"verdict": "no"}, "TR5": {"verdict": "no"}, "duplicate_of": None}), ("reject", "TR5"))
-        self.assertEqual(referee.outcome({**base, "TR4": {"verdict": "no"}, "duplicate_of": "a/b"}), ("alias", "TR4"))
-        self.assertEqual(referee.outcome({**base, "TR8": {"verdict": "doubt"}, "duplicate_of": None}), ("human", ""))
+        self.assertEqual(referee.outcome({**base, "TK2": {"verdict": "no"}, "TP5": {"verdict": "no"}, "duplicate_of": None}), ("reject", "TP5"))
+        self.assertEqual(referee.outcome({**base, "TP3": {"verdict": "no"}, "duplicate_of": "a/b"}), ("alias", "TP3"))
+        self.assertEqual(referee.outcome({**base, "TE1": {"verdict": "doubt"}, "duplicate_of": None}), ("parked", ""))
 
     def test_memory_and_web_skip_the_quote_check(self):
         results, _, client = self.run_fake(condition="memory", cases=["G02"])
@@ -249,8 +249,8 @@ class RefereeTest(unittest.TestCase):
     def test_te4_cases_are_the_default_outside_fetched(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
         self.assertEqual([c.id for c in referee.select(cases, None, "memory")], list(referee.TE4_CASES))
-        self.assertEqual(len(referee.select(cases, None, "fetched")), 96)
-        self.assertEqual(len(referee.select(cases, ["all"], "web")), 96)
+        self.assertEqual(len(referee.select(cases, None, "fetched")), 99)
+        self.assertEqual(len(referee.select(cases, ["all"], "web")), 99)
 
     # staging and the message
 
@@ -310,12 +310,12 @@ class RefereeTest(unittest.TestCase):
     def test_message_follows_the_prompt(self):
         _, _, client = self.run_fake(cases=["B07"])
         call = client.calls[0]
-        self.assertEqual(call["system"][0]["text"], "Judge TR4-TR8.\n")
+        self.assertEqual(call["system"][0]["text"], "Judge TP1, TP3, TP5, TK2 and TE1.\n")
         message = call["messages"][0]["content"]
         for tag in ("<proposal>", "<signals>", "<existing>", "<sources>"):
             self.assertIn(tag, message)
         self.assertLess(message.index("<existing>"), message.index("<sources>"))
-        self.assertIn("TR3: key 'synology/plus-ds224' has the same words", message)
+        self.assertIn("TK3: key 'synology/plus-ds224' has the same words", message)
         self.assertIn(f'<source url="https://www.synology.com/en-global/products/DS224+" status="200">\nPage of', message)
 
     def test_sources_are_the_distinct_urls_of_the_proposal(self):
@@ -477,7 +477,7 @@ class RefereeTest(unittest.TestCase):
         self.assertIn("0 refused or disallowed sources to search for", lines[0], "step 0 found something, so no search")
         self.assertEqual(found, {})
 
-    def test_one_search_per_query_with_sonnet(self):
+    def test_one_search_per_query_with_the_agreed_model(self):
         product, versions = "https://www.synology.com/en-global/products/DS124", "https://www.synology.com/en-global/releaseNote/DSM?model=DS124"
         sources = self.out / "sources.json"
         sources.write_text(json.dumps({u: {"url": u, "status": "refused"} for u in (product, versions)}))
@@ -495,7 +495,7 @@ class RefereeTest(unittest.TestCase):
         args = self.search_args(sources, model=referee.parser().parse_args(["search", "--sources", "x"]).model)
         found = referee.search_refused(args, client=client, data_root=FIXTURES / "data", now=NOW, log=QUIET)
         self.assertEqual(len(client.calls), 1, "two closed sources of one product share one search")
-        self.assertEqual(client.calls[0]["model"], "claude-sonnet-5-5")
+        self.assertEqual(client.calls[0]["model"], referee.MODEL)
         self.assertEqual(set(found), {product, versions})
         lines = (next(self.out.glob("*-search-*")) / "results.jsonl").read_text().splitlines()
         self.assertEqual(len(lines), 1)
@@ -515,16 +515,16 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual(domains, ["synology.com", "synology.co.jp"])
 
     def test_human_by_cause(self):
-        closed = referee.Result(id="G09", type="t", expect=["accept"], outcome="human", by="ai",
+        closed = referee.Result(id="G09", type="t", expect=["accept"], outcome="parked", by="ai",
                                 sources=[["https://a/1", "refused"], ["https://a/2", "200"]])
-        timeout = referee.Result(id="G03", type="t", expect=["accept"], outcome="human", by="ai",
+        timeout = referee.Result(id="G03", type="t", expect=["accept"], outcome="parked", by="ai",
                                  sources=[["https://a/3", "error: TimeoutError"]])
-        doubt = referee.Result(id="G12", type="t", expect=["accept"], outcome="human", by="ai", sources=[["https://a/4", "200"]])
+        doubt = referee.Result(id="G12", type="t", expect=["accept"], outcome="parked", by="ai", sources=[["https://a/4", "200"]])
         m = referee.metrics([closed, timeout, doubt])
-        self.assertEqual((m["human_closed"], m["human_doubt"]), (["G09", "G03"], ["G12"]))
+        self.assertEqual((m["parked_closed"], m["parked_doubt"]), (["G09", "G03"], ["G12"]))
         summary = referee.summarise([closed, timeout, doubt], "x", "fetched", 20, 0)
-        self.assertIn("| human because a source is closed (refused, disallowed, error) | 2 |", summary)
-        self.assertIn("| human because the referee doubts | 1 |", summary)
+        self.assertIn("| parked because a source is closed (refused, disallowed, error) | 2 |", summary)
+        self.assertIn("| parked because the referee doubts | 1 |", summary)
 
     def test_te4_conditions_read_their_own_prompt(self):
         te4 = self.out / "prompt-r13.md"
@@ -548,14 +548,14 @@ class RefereeTest(unittest.TestCase):
         self.assertEqual(referee.registrable("www.sony.nl"), "sony.nl")
 
     def test_budget_default_is_50(self):
-        """Fred, 17 November 2026: the limit for every run together goes from $20 to $50."""
+        """17 November 2026: the limit for every run together goes from $20 to $50."""
         self.assertEqual(referee.parser().parse_args(["run"]).budget, 50.0)
         self.assertEqual(referee.BUDGET, 50.0)
 
     def test_system_prompt_of_the_analyst(self):
         text = referee.load_system_prompt(REPO / "referee/prompt.md")
         self.assertTrue(text.startswith("You are the referee of TAXNMY"))
-        self.assertIn("TR8 Every value", text)
+        self.assertIn("TE1 Every value", text)
         self.assertIn("When the source is unavailable,\n    answer doubt.", text)
         self.assertIn("releases of another publisher unchanged is not a product of its own.", text)
         self.assertNotIn("```", text)
@@ -565,7 +565,7 @@ class RefereeTest(unittest.TestCase):
         text = json.dumps(schema)
         self.assertNotIn("$ref", text)
         self.assertNotIn("$schema", text)
-        self.assertEqual(schema["properties"]["TR4"]["properties"]["verdict"], {"enum": ["yes", "no", "doubt"], "type": "string"})
+        self.assertEqual(schema["properties"]["TP3"]["properties"]["verdict"], {"enum": ["yes", "no", "doubt"], "type": "string"})
 
     # measuring
 
@@ -574,15 +574,15 @@ class RefereeTest(unittest.TestCase):
         m = referee.metrics(list(results.values()))
         self.assertEqual(m["let_through"], ["B21"])
         self.assertEqual(m["good_rejected"], [])
-        self.assertEqual(m["human"], ["G02", "H01"])
+        self.assertEqual(m["parked"], ["G02", "H01"])
         self.assertEqual(m["errors"], ["H01"])
         self.assertEqual(m["invalid"], ["B22"])
-        self.assertEqual(m["right_rule"], {"TR1": [1, 1], "TR4": [1, 1], "TR7": [2, 1], "TR8": [1, 0]})
+        self.assertEqual(m["right_rule"], {"TE1": [2, 1], "TP3": [1, 1], "TP1": [2, 1]})  # the lint and the AI both check TE1
         self.assertEqual(m["per_type"]["hallucinated"], [2, 1])
         self.assertAlmostEqual(m["cost_per_call"], 0.014)  # 1000 in at $4/M, 500 out at $20/M
         te4 = m["te4"]
-        self.assertEqual(te4["per_rule"]["TR7"], {"right": 1, "wrong": 1, "doubt": 1})
-        self.assertIn("B21 TR7", te4["confident_wrong"])
+        self.assertEqual(te4["per_rule"]["TP1"], {"right": 1, "wrong": 1, "doubt": 1})
+        self.assertIn("B21 TP1", te4["confident_wrong"])
 
     def test_files_of_a_run(self):
         _, run_dir, _ = self.run_fake()
@@ -607,7 +607,7 @@ class RefereeTest(unittest.TestCase):
         text = referee.compare([[a], [w1, w2]], show=["B07"])
         self.assertIn("Comparison on 2 shared cases", text)
         self.assertIn(f"{w1.name} + {w2.name}", text)
-        self.assertIn("| B07 | alias (TR4 no) | alias (TR4 no) |", text)
+        self.assertIn("| B07 | alias (TP3 no) | alias (TP3 no) |", text)
 
     def test_testset_problems_stop_the_run(self):
         bad = self.out / "cases.yaml"
@@ -633,34 +633,34 @@ class RefereeTest(unittest.TestCase):
             "https://www.synology.com/en-global/company")}))
         _, run_dir = referee.run(Args(self.out / "runs", live=False, sources=str(sources)), data_root=FIXTURES / "data", now=NOW, log=QUIET)
         summary = (run_dir / "summary.md").read_text()
-        self.assertIn("| G01 | - | yes | yes | referee | TR4, TR7, TR8, TV1 | - |", summary, "TR8 stays with the referee: `kind`")
-        self.assertIn("| B01 | lint TR1 | - | - | - | - | - |", summary)
-        self.assertIn("| G02 | - | referee | referee | referee | TR4, TR5, TR6, TR7, TR8, TV1 | - |", summary, "its sources were not fetched")
+        self.assertIn("| G01 | - | yes | yes | referee | TP3, TP1, TE1, TV1 | - |", summary, "TE1 stays with the referee: `kind`")
+        self.assertIn("| B01 | lint TE1 | - | - | - | - | - |", summary)
+        self.assertIn("| G02 | - | referee | referee | referee | TP3, TP5, TK2, TP1, TE1, TV1 | - |", summary, "its sources were not fetched")
 
     def test_the_referee_gets_only_the_rules_code_left(self):
         results, _, client = self.run_fake(cases=["G01"])
         request = client.calls[0]
-        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["TR4", "TR6", "TR7", "TR8", "TV1", "duplicate_of"])
-        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["TR4", "TR6", "TR7", "TR8", "TV1", "duplicate_of"])
+        self.assertEqual(sorted(request["output_config"]["format"]["schema"]["properties"]), ["TE1", "TK2", "TP1", "TP3", "TV1", "duplicate_of"])
+        self.assertEqual(request["output_config"]["format"]["schema"]["required"], ["TP3", "TK2", "TP1", "TE1", "TV1", "duplicate_of"])
         message = request["messages"][0]["content"]
-        self.assertIn("<decided>\nTR5: yes (code: the versions are published on synology.com", message)
-        self.assertIn("\nTR8 in part: code found the name and every code", message)
+        self.assertIn("<decided>\nTP5: yes (code: the versions are published on synology.com", message)
+        self.assertIn("\nTE1 in part: code found the name and every code", message)
         self.assertIn("`kind` is not a literal value", message)
-        self.assertIn("Judge only: TR4, TR6, TR7, TR8, TV1\n</decided>", message)
+        self.assertIn("Judge only: TP3, TK2, TP1, TE1, TV1\n</decided>", message)
         g01 = results["G01"]
-        self.assertEqual((g01.gate, g01.ai_rules), ({"TR5": "yes"}, ["TR4", "TR6", "TR7", "TR8", "TV1"]))
+        self.assertEqual((g01.gate, g01.ai_rules), ({"TP5": "yes"}, ["TP3", "TK2", "TP1", "TE1", "TV1"]))
         self.assertEqual(g01.checked, {r: "yes" for r in referee.RULES})
         self.assertEqual(g01.outcome, "accept")
 
     def test_a_wrong_kind_with_every_other_value_right_is_not_accepted(self):
-        """TAX-24: code finds the name in its source and the versions source read, but TR8 still
+        """TAX-24: code finds the name in its source and the versions source read, but TE1 still
         goes to the referee, so a wrong `kind` can be rejected."""
         cases = self.out / "cases.yaml"
         cases.write_text("""cases:
 - id: B31
   type: wrong-kind
-  expect: [reject, human]
-  rules: [TR8]
+  expect: [reject, parked]
+  rules: [TE1]
   lint: pass
   proposal:
     products/synology/ds126.yaml: |
@@ -676,10 +676,10 @@ class RefereeTest(unittest.TestCase):
 """)
         results, _, client = self.run_fake(testset=str(cases))
         b31 = results["B31"]
-        self.assertEqual((b31.lint, b31.gate), ("pass", {"TR5": "yes"}))
-        self.assertIn("TR8", b31.ai_rules)
+        self.assertEqual((b31.lint, b31.gate), ("pass", {"TP5": "yes"}))
+        self.assertIn("TE1", b31.ai_rules)
         self.assertIn("`kind`", client.calls[0]["messages"][0]["content"])
-        self.assertEqual((b31.outcome, b31.by, b31.rule, b31.right), ("reject", "ai", "TR8", True))
+        self.assertEqual((b31.outcome, b31.by, b31.rule, b31.right), ("reject", "ai", "TE1", True))
 
     def test_a_source_on_an_ai_chat_is_rejected_by_code_and_not_fetched(self):
         cases = self.out / "cases.yaml"
@@ -687,7 +687,7 @@ class RefereeTest(unittest.TestCase):
 - id: B06
   type: ai-source
   expect: [reject]
-  rules: [TR8]
+  rules: [TE1]
   lint: pass
   proposal:
     products/synology/ds125.yaml: |
@@ -705,11 +705,11 @@ class RefereeTest(unittest.TestCase):
         fetcher = FakeFetcher()
         results, run_dir, client = self.run_fake(fetcher=fetcher, testset=str(cases))
         b06 = results["B06"]
-        self.assertEqual((b06.outcome, b06.by, b06.rule, b06.gate, b06.right), ("reject", "code", "TR8", {"TR8": "no"}, True))
+        self.assertEqual((b06.outcome, b06.by, b06.rule, b06.gate, b06.right), ("reject", "code", "TE1", {"TE1": "no"}, True))
         self.assertEqual((client.calls, fetcher.urls), ([], []))
         self.assertIn("is an AI chat", b06.error)
-        self.assertEqual(referee.metrics([b06])["right_rule"], {"TR8": [1, 1]})
-        self.assertIn("| TR8 | 0 | 1 | 0 | 0 |", (run_dir / "summary.md").read_text())
+        self.assertEqual(referee.metrics([b06])["right_rule"], {"TE1": [1, 1]})
+        self.assertIn("| TE1 | 0 | 1 | 0 | 0 |", (run_dir / "summary.md").read_text())
 
     def test_memory_and_web_have_no_gate(self):
         results, _, client = self.run_fake(condition="memory", cases=["G01"])
@@ -807,15 +807,15 @@ class RefereeTest(unittest.TestCase):
 
     def test_final_text_skips_talk_between_searches(self):
         blocks = [Block("text", "Let me search."), Block("server_tool_use"), Block("web_search_tool_result"),
-                  Block("text", '{"TR4"'), Block("text", ": {}}")]
-        self.assertEqual(referee.final_text(blocks), '{"TR4": {}}')
+                  Block("text", '{"TP3"'), Block("text", ": {}}")]
+        self.assertEqual(referee.final_text(blocks), '{"TP3": {}}')
 
 
 class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        self.assertEqual(len(self.cases), 96)
+        self.assertEqual(len(self.cases), 99)
         mismatched = {}
         for case in self.cases:
             staged = self.staged[case.id]
@@ -838,13 +838,13 @@ class TestsetTest(unittest.TestCase):
 
     def test_b06_is_rejected_by_code_on_s8(self):
         row = self.gate_rows()["B06"]
-        self.assertEqual((row.gate, row.ai_rules), ({"TR8": "no"}, []))
+        self.assertEqual((row.gate, row.ai_rules), ({"TE1": "no"}, []))
 
     def test_breaking_the_domain_comparison_lowers_the_count(self):
-        """TAX-15: with every source read, the gate settles TR5 by domain for the publishers TAX
+        """TAX-15: with every source read, the gate settles TP5 by domain for the publishers TAX
         already holds. Breaking the comparison (no URL has an owner any more) must make that count
         drop to 0, and so must closing every source (TAX-24)."""
-        count = lambda rows: referee.gate_counts(list(rows.values()))["per_rule"]["TR5"]["yes"]  # noqa: E731
+        count = lambda rows: referee.gate_counts(list(rows.values()))["per_rule"]["TP5"]["yes"]  # noqa: E731
         settled = count(self.gate_rows(Readable()))
         with unittest.mock.patch.object(referee.gate, "owner", lambda url: None):
             broken = count(self.gate_rows(Readable()))
@@ -854,32 +854,32 @@ class TestsetTest(unittest.TestCase):
         self.assertEqual(count(self.gate_rows()), 0, "no texts at hand")
 
     def test_no_rule_is_left_untested_for_the_cases_of_tax_24(self):
-        """TAX-24: with every source read and every value in it, code still leaves TR5 to the
-        referee for a publisher proposed on a domain of its own, and TR8 (`kind`) for every case."""
+        """TAX-24: with every source read and every value in it, code still leaves TP5 to the
+        referee for a publisher proposed on a domain of its own, and TE1 (`kind`) for every case."""
         rows = self.gate_rows(Readable())
-        self.assertEqual([i for i, r in rows.items() if r.gate.get("TR8") == "yes"], [])
+        self.assertEqual([i for i, r in rows.items() if r.gate.get("TE1") == "yes"], [])
         for case in ("B31", "B32", "B33"):
-            self.assertIn("TR5", rows[case].ai_rules, case)
+            self.assertIn("TP5", rows[case].ai_rules, case)
         for case in ("B34", "B35"):
-            self.assertIn("TR8", rows[case].ai_rules, case)
+            self.assertIn("TE1", rows[case].ai_rules, case)
         self.assertEqual(sum(c.id.startswith("B3") and c.type.startswith(("wrong-publisher-own", "wrong-kind"))
                              for c in self.cases), 5)
 
     def test_the_cases_of_tax_18_reach_the_referee(self):
-        """TAX-18 and TAX-31: a service without a version leaves TR4 to the referee. A name or
+        """TAX-18 and TAX-31: a service without a version leaves TP3 to the referee. A name or
         domain one or two characters from an existing one gets a TV3 signal from the lint and is
-        held for a person by code (TV3), and still reaches the referee: code settles neither TR5 nor
-        TR6 for it, so no rule is left untested (TR11)."""
+        held for a person by code (TV3), and still reaches the referee: code settles neither TP5 nor
+        TK2 for it, so no rule is left untested (TR11)."""
         rows = self.gate_rows(Readable())
         for case in ("B30", "B36", "B37", "B38", "B43"):
-            self.assertIn("TR4", rows[case].ai_rules, case)
+            self.assertIn("TP3", rows[case].ai_rules, case)
         for case in ("B39", "B40", "B41", "B42", "B44"):
-            self.assertIn("TR5", rows[case].ai_rules, case)
+            self.assertIn("TP5", rows[case].ai_rules, case)
         for case in ("B39", "B40", "B41", "B42", "B43", "B44"):
             self.assertIn("TV3", rows[case].held, case)
             self.assertEqual(self.staged[case].lint_seen, "signal", case)
         for case in ("B39", "B40", "B41", "B42", "B43"):
-            self.assertIn("TR6", rows[case].ai_rules, case)
+            self.assertIn("TK2", rows[case].ai_rules, case)
         self.assertEqual(sum(c.type == "saas" for c in self.cases), 5)
         self.assertEqual(sum(c.type.startswith("lookalike-") for c in self.cases), 6)
 

@@ -37,19 +37,19 @@ REPO = pr_referee.REPO
 URGENT_DAYS = 3
 
 QUESTIONS = {
-    "TV3": "lijkt op een bestaande naam of een bestaand domein: dezelfde partij, een andere, of een nabootsing?",
-    "TV5": "verplaatst een bron of uitgever naar een ander domein: is deze wijziging echt?",
-    "collision": "twee partijen eisen hetzelfde product op: wie van de twee is de uitgever?",
-    "audit": "een bevinding uit een audit: klopt dit product nog (laten staan, herstellen of weghalen)?",
+    "TV3": "looks like an existing name or domain: the same party, another one, or an imitation?",
+    "TV5": "changes a code, a source for machines or a second source of an existing file: is this change real?",
+    "collision": "two parties claim the same product: which of the two is the publisher?",
+    "audit": "a finding from an audit: is this product still right (keep, fix or remove)?",
 }
 
 # The answers to a collision or an audit (pr_referee.SETTLE), in the words of the digest.
 ANSWERS = {
-    "stays": "wie er nu staat blijft de uitgever",
-    "proposal": "de partij van de voordracht wordt de uitgever",
-    "keep": "laten staan",
-    "fix": "herstellen, met een eigen voordracht",
-    "remove": "weghalen",
+    "stays": "the party in TAXNMY stays the publisher",
+    "proposal": "the party of the proposal becomes the publisher",
+    "keep": "keep it as it is",
+    "fix": "fix it, with a proposal of its own",
+    "remove": "take it out",
 }
 
 
@@ -58,8 +58,8 @@ def settle_lines(e: dict) -> list[str]:
     answers = list(pr_referee.SETTLE.get(e.get("kind"), {}))
     if not answers:
         return []
-    return ["  antwoorden: " + "; ".join(f"{a} ({ANSWERS.get(a, a)})" for a in answers),
-            f"  uitvoeren: python tools/pr_referee.py settle {shlex.quote(str(e['key']))} {'|'.join(answers)} --reason \"…\" --by …"]
+    return ["  answers: " + "; ".join(f"{a} ({ANSWERS.get(a, a)})" for a in answers),
+            f"  carry out: python tools/pr_referee.py settle {shlex.quote(str(e['key']))} {'|'.join(answers)} --reason \"…\" --by …"]
 
 
 # Text that speaks to whoever judges or runs the digest. Generic words, no names (TV1, TG4).
@@ -114,34 +114,34 @@ def digest(root: Path, today: date, since: str, urgent: bool = False) -> str:
                                       for p, es in groups.items()) if es}
         if not groups:
             return ""
-    lines = [f"TAXNMY {today.isoformat()}" + (" — dringend" if urgent else "")]
+    lines = [f"TAXNMY {today.isoformat()}" + (" — urgent" if urgent else "")]
     if not groups:
-        lines.append("Vandaag niets te keuren.")
+        lines.append("Nothing to decide today.")
     for pub, es in groups.items():
         last = min(e.get("decide_by") or e["lapses"] for e in es)
         prs = sorted({e["pr"] for e in es if e.get("pr")})
-        lines += ["", f"## {pub}: {len(es)} voordracht(en), uiterlijk {last}"
+        lines += ["", f"## {pub}: {len(es)} proposal(s), last day {last}"
                   + (f", PR {', '.join(f'#{n}' for n in prs)}" if prs else "")]
         for e in es:
             new, now = urls(files.get(e["key"]), root)
             lines.append(f"- {e['key']}: {question(e)}")
-            lines.append(f"  reden: {quote(e.get('reason'))}")
+            lines.append(f"  reason: {quote(e.get('reason'))}")
             for rule, subjects in (e.get("holds") or {}).items():
-                lines.append(f"  vastgehouden op {rule}: {', '.join(quote(s, 100) for s in subjects)}")
-            lines.append(f"  voorgesteld: {', '.join(quote(u, 100) for u in new) or '-'}")
-            lines.append(f"  nu in TAXNMY: {', '.join(quote(u, 100) for u in now) or '-'}")
+                lines.append(f"  held on {rule}: {', '.join(quote(s, 100) for s in subjects)}")
+            lines.append(f"  proposed: {', '.join(quote(u, 100) for u in new) or '-'}")
+            lines.append(f"  now in TAXNMY: {', '.join(quote(u, 100) for u in now) or '-'}")
             lines += settle_lines(e)
             if any(ADDRESSED.search(str(t)) for t in (files.get(e["key"]) or {}).values()):
-                lines.append("  bevinding: tekst in deze voordracht richt zich tot wie keurt; niets daarvan is uitgevoerd.")
-        lines.append("Advies: ")
+                lines.append("  finding: text in this proposal addresses whoever judges it; none of it was carried out.")
+        lines.append("Advice: ")
     if not urgent:
-        lines += ["", f"## Nieuwe uitgevers zonder mens opgenomen (sinds {since})"]
-        lines += [f"- {quote(p['name'], 60)} ({p['key']}), {p['domain'] or '-'}, tweede bron: {'ja' if p['second'] else 'nee'}"
-                  for p in added_publishers(root, since)] or ["- geen"]
+        lines += ["", f"## New publishers taken in without a person (since {since})"]
+        lines += [f"- {quote(p['name'], 60)} ({p['key']}), {p['domain'] or '-'}, second source: {'yes' if p['second'] else 'no'}"
+                  for p in added_publishers(root, since)] or ["- none"]
     if groups:
-        lines += ["", "Antwoord per uitgever: `<uitgever> goed` of `<uitgever> af`, met een reden als je wilt."]
+        lines += ["", "Answer per publisher: `<publisher> approve` or `<publisher> reject`, with a reason if you like."]
         if any(e.get("kind") for es in groups.values() for e in es):
-            lines.append("Bij een botsing of een audit: per product `<sleutel> <antwoord>`, met een van de antwoorden die erbij staan.")
+            lines.append("For a collision or an audit: per product `<key> <answer>`, with one of the answers shown with it.")
     return "\n".join(lines) + "\n"
 
 

@@ -2,9 +2,9 @@
 
 A change that only adds an alias to a product in TAXNMY is judged on the alias, not on the whole
 product again (`tools/alias.py`). Code settles what it can: whether the alias is someone else's
-(TR3, TV2, TV3), whether the file changes anything else, and whether a read source of the product
+(TK3, TV2, TV3), whether the file changes anything else, and whether a read source of the product
 writes the name literally (TR11). Only when code cannot show the name does the AI answer one
-question, with this prompt. TR4, TR5, TR7 and TR8 are not asked: they were judged when the product
+question, with this prompt. TP3, TP5, TP1 and TE1 are not asked: they were judged when the product
 was taken in.
 
 The answer is JSON that follows `referee/alias.schema.json`, one answer per alias. Code computes the

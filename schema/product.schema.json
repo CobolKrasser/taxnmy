@@ -3,7 +3,7 @@
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/product.schema.json",
   "title": "TAXNMY product",
   "version": "2.0.0",
-  "description": "One product that can receive updates. Stored as products/<publisher>/<product>.yaml. The form of the key (rule TR2) and uniqueness (rule TR3) are checked by tools/lint.py, not by this schema. A product has no parent field: software does not need a parent product.",
+  "description": "One product that can receive updates. Stored as products/<publisher>/<product>.yaml. The form of the key (rule TK2) and uniqueness (rule TK3) are checked by tools/lint.py, not by this schema. A product has no parent field: software does not need a parent product.",
   "type": "object",
   "additionalProperties": false,
   "required": ["key", "publisher", "name", "kind", "source", "versions"],

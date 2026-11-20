@@ -1,8 +1,8 @@
 # Contributing to TAXNMY
 
 You propose a product by opening a pull request that adds or changes data files. Every pull request
-is checked by the lint (rules TR1–TR3), and then by the referee: code first, and an AI for what code
-cannot settle (rules TR4–TR8). Rules TV1–TV6 guard against names and sources that imitate existing ones.
+is checked by the lint (rules TE1, TK2 and TK3), and then by the referee: code first, and an AI for what code
+cannot settle (rules TP1, TP3, TP5, TK2 and TE1). Rules TV1–TV6 guard against names and sources that imitate existing ones.
 The rules are described in the [README](README.md#the-referee).
 
 The referee leaves a comment on the pull request with one line per file: *accept*, *reject* (with
@@ -13,8 +13,8 @@ reason). Parked means not taken in now; the comment says what it waits for:
   nothing to do for you.
 - *better-proposal*: the sources were read and do not show what they must. Improve the source or
   the proposal and propose it again.
-- *decision*: it looks like an existing name or domain, or moves an existing source (TV3, TV5). A
-  person decides, once per publisher.
+- *decision*: it looks like an existing name or domain (TV3), or changes a code of an existing
+  product (TV5). A person decides, once per publisher.
 
 A parked proposal waits on the parking list `referee/parked.yaml` and lapses after its term (90
 days; 30 for a decision). Nothing stays against it: you may propose it again. A pull request from a
@@ -107,16 +107,18 @@ aliases: []
 Each finding names the file, the line and the rule:
 
 ```
-products/example/bad.yaml:5: TR1: 'kind' is a required property
+products/example/bad.yaml:5: TE1: 'kind' is a required property
 ```
 
 - An **error** rejects the pull request.
 - A **signal** (a CPE or GTIN that another product also has, or a key with the same words as another key or alias of the same publisher in another order) does not reject it. The referee
-  decides with TR4 whether it is a product of its own.
+  decides with TP3 whether it is a product of its own.
 - A **TV3 signal** (a key or a domain one or two characters from an existing one, or the same once
   characters that look alike are read as one) does not reject it either, but the proposal is parked
-  for a person. So is a change that moves a source, the publisher or a code of an existing file to
-  another domain or value (TV5).
+  for a person. So is a change that replaces a code of an existing product (TV5).
+- A change that **replaces the publisher** of an existing product is rejected (TV5); propose the
+  product again. A source moves to another domain only if the old source points there: it
+  redirects to the new domain, or its text names it. Otherwise the change is rejected.
 
 ## Changing the schema
 
