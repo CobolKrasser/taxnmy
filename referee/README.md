@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 91 proposals with the expected outcome: 37 good (G01–G35, H01–H02), 54 bad |
+| `testset/cases.yaml` | 96 proposals with the expected outcome: 38 good (G01–G36, H01–H02), 58 bad |
 | `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
 | `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
@@ -181,9 +181,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 91 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 96 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 91); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 96); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -505,6 +505,7 @@ python tools/pr_referee.py waiting                   # what waits for a person, 
 python tools/pr_referee.py decide <publisher> approve --reason "..." [--by name]
 python tools/pr_referee.py decide <publisher> reject --reason "..."
 python tools/pr_referee.py settle <product key> stays|proposal|keep|fix|remove --reason "..." [--by name]
+python tools/pr_referee.py remove <product key> --reason "..." [--by name]   # a maintainer takes a product out
 python tools/pr_referee.py gate --testset            # the test set as a pull request, code only (free)
 python tools/pr_referee.py judge --gated gated/gated.json --live   # and the rest, with the referee
 ```
@@ -515,8 +516,18 @@ accepted entry to the data and takes it off the list, takes rejected ones off, a
 with the new reason, its first day and its pull request. `waiting` groups the entries that wait
 for a decision per publisher, the most urgent publisher first, each with its last day.
 
+**A key stays (TK3, TG13).** A pull request that deletes or renames a file in `products/` or
+`publishers/`, or takes a key or an alias out of an existing file, is rejected on TK3. The gate takes
+the deleted and renamed paths from GitHub, not from the artifact. Only a maintainer takes a product
+out, with `remove` (or `settle <key> remove` on an audit finding). The decision goes to
+`referee/decisions.yaml` with the key, the name, the publisher, the sources, the day, the reason and
+who. The log keeps every decision; a later one on the same subject stands next to the earlier one,
+and the last one counts. A maintainer lands the decision and the deletion on `main`. A pull request
+that deletes a file whose removal is already in the log on `main` is accepted. After the removal the
+key is free: a next proposal with it is judged as any new product.
+
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 91 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 96 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 

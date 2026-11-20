@@ -92,13 +92,14 @@ CASE_SCHEMA = {
         "id": {"type": "string", "pattern": "^[GHB][0-9]{2}$"},
         "type": {"type": "string"},
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
-        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TR[1-8]|TV[1-6])$"}},
+        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TR[1-8]|TV[1-6]|TK3)$"}},
         "alias_of": {"type": "string"},
-        "lint": {"type": "string", "pattern": "^(pass|signal|error (TR[1-3]|TV4))$"},
+        "lint": {"type": "string", "pattern": "^(pass|signal|error (TR[1-3]|TV4|TK3))$"},
         "holdout": {"type": "array", "items": {"type": "string"}},
         "hide": {"type": "array", "items": {"type": "string"}},
         "context": {"type": "object", "additionalProperties": {"type": "string"}},
         "proposal": {"type": "object", "additionalProperties": {"type": "string"}},
+        "delete": {"type": "array", "items": {"type": "string"}},
         "verify": {"type": "array", "items": {"type": "string"}},
         "note": {"type": "string"},
     },
@@ -108,6 +109,8 @@ CASE_SCHEMA = {
 
 
 # --------------------------------------------------------------------------- the test set
+
+DATA_FILE = re.compile(r"(products/[a-z0-9-]+/[a-z0-9-]+|publishers/[a-z0-9-]+)\.yaml")
 
 @dataclass
 class Case:
@@ -121,6 +124,7 @@ class Case:
     hide: list = field(default_factory=list)
     context: dict = field(default_factory=dict)
     proposal: dict = field(default_factory=dict)
+    delete: list = field(default_factory=list)
     verify: list = field(default_factory=list)
     note: str = ""
 
@@ -147,8 +151,8 @@ def load_cases(path: Path) -> list[Case]:
         if raw["id"] in seen:
             problems.append(f"case {raw['id']} appears twice")
         seen.add(raw["id"])
-        if not raw.get("holdout") and not raw.get("proposal"):
-            problems.append(f"case {raw['id']} proposes nothing (no holdout, no proposal)")
+        if not raw.get("holdout") and not raw.get("proposal") and not raw.get("delete"):
+            problems.append(f"case {raw['id']} proposes nothing (no holdout, no proposal, no delete)")
         cases.append(Case(**raw))
     if problems:
         raise SystemExit("The test set has problems:\n  " + "\n  ".join(problems))
@@ -240,19 +244,24 @@ class Stager:
                 raise SystemExit(f"case {case.id}: hold-out {rel} is not in the data")
             files[rel] = text
         files.update(case.proposal)
-        staged = self.stage_files(files, removed=case.holdout + case.hide, context=case.context)
+        data_context = {k: v for k, v in case.context.items() if DATA_FILE.fullmatch(k)}  # the log of a case is no data
+        staged = self.stage_files(files, removed=case.holdout + case.hide, context=data_context, deleted=case.delete)
         staged.lint_ok = lint_matches(case.lint, staged.findings)
         return staged
 
-    def stage_files(self, files: dict, removed=(), context: dict | None = None) -> Staged:
+    def stage_files(self, files: dict, removed=(), context: dict | None = None, deleted=()) -> Staged:
         """Proposed files (path -> text) on the data, with `removed` taken out and `context` added first.
-        The PR mode (tools/pr_referee.py) stages a pull request this way, without removals or context."""
+        The PR mode (tools/pr_referee.py) stages a pull request this way, without removals or context.
+        `deleted` are data files the proposal itself deletes or renames: each is an error TK3, and so is
+        a change that takes the key or an alias out of an existing file (TAX-45)."""
         removed = {rel: None for rel in removed}
         context = context or {}
         findings = self.data.check(report=set(files), overrides={**removed, **context, **files})
         # A proposed file that is in the data, and not taken out for the case, changes an existing one.
         old = {rel: self.data.texts[rel] for rel in files
                if rel in self.data.texts and rel not in removed and rel not in context}
+        findings = kept_keys(old, files, {rel: self.data.texts[rel] for rel in deleted
+                                          if rel in self.data.texts and rel not in removed}) + findings
         self.view = {**removed, **context, **{rel: None for rel in files}}  # the proposal is not part of what exists
         return Staged(files=files, findings=findings, lint_ok=True, lint_seen=lint_summary(findings),
                       existing=self._existing(files, findings), publisher_source=self._publisher_source(files),
@@ -442,6 +451,30 @@ def join_held(items: list[tuple[str, str]]) -> dict:
     if moved:
         held["TV5"] = "a change to an existing file, decided by a person: " + "; ".join(moved)
     return held
+
+
+def kept_keys(old: dict, files: dict, deleted: dict) -> list:
+    """TK3 (TAX-45): a key stays with its product and an alias stays with its key. A deleted or
+    renamed data file (`deleted`: path -> its text in the data), or a change that takes a key or an
+    alias out (`old` -> `files`), is an error; only a maintainer takes a product out (TG13)."""
+    out = []
+    for rel, text in sorted(deleted.items()):
+        data = _yaml(text)
+        what = data.get("key") if isinstance(data.get("key"), str) else rel
+        out.append(lint.Finding(rel, 1, "TK3", f"{what} is deleted or renamed; a key and its aliases stay, and only "
+                                               "a maintainer takes a product out (referee/decisions.yaml)"))
+    for rel in sorted(old):
+        for what in guard.taken_out(_yaml(old[rel]), _yaml(files.get(rel, ""))):
+            out.append(lint.Finding(rel, 1, "TK3", f"{what}; a key and its aliases stay"))
+    return out
+
+
+def _yaml(text: str) -> dict:
+    try:
+        data = yaml.safe_load(text or "")
+    except yaml.YAMLError:
+        return {}
+    return data if isinstance(data, dict) else {}
 
 
 def held_by_code(files: dict, findings: list, old: dict) -> dict:

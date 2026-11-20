@@ -42,7 +42,7 @@ TP6 is decided but not yet in force; see below.
 | --- | --- |
 | TK1 | How a product is recorded is described unambiguously and generically. The key is simple and readable. |
 | TK2 | The key has the form `publisher/product@version` and is derived with the writing rule from the names as the source writes them. |
-| TK3 | A key never changes and is never reused. An earlier or other name becomes an alias. |
+| TK3 | A product has one key. It never changes and is never reused, unless a maintainer has taken the product out. An earlier or other name becomes an alias. |
 | TK4 | An identifier is a property of a product, with a source of its own. |
 | TK5 | An identifier that, according to its own register, points to one product belongs to at most one product in TAXNMY. An identifier that can cover more products only says that two products may be the same. |
 
@@ -137,6 +137,7 @@ How code applies TV1–TV6 is described in the [README](README.md#how-code-appli
 | TG8 | The data is free to use with attribution. Data of others keeps its own licence and attribution. |
 | TG9 | The taxonomy is in the schema, with a version number. What TAXNMY does not record is in the documentation. A change of either goes the same route as a proposal. |
 | TG10 | TAXNMY is free where it can be. |
+| TG13 | Every decision of a maintainer is recorded, with the reason. |
 
 *On TG8.* The licences are in [LICENSE](LICENSE) (CC BY 4.0, the data) and
 [LICENSE-CODE](LICENSE-CODE) (MIT, the code); data of others is listed in [NOTICE](NOTICE).

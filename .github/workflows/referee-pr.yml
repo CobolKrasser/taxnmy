@@ -69,6 +69,10 @@ jobs:
             exit 1
           fi
           echo "number=${number}" >> "$GITHUB_OUTPUT"
+          # TK3: what the pull request deletes or renames, from GitHub, not from the artifact.
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/pulls/${number}/files" \
+            --jq '.[] | select(.status == "removed" or .status == "renamed") | (.previous_filename // .filename)' \
+            > "$RUNNER_TEMP/deleted.txt"
       - name: Who proposes (TAX-32)
         id: who
         env:
@@ -93,7 +97,7 @@ jobs:
           BEFORE: ${{ steps.who.outputs.before }}
         run: |
           set -euo pipefail
-          who=(--submitter "$AUTHOR" --known "$KNOWN" --open-before "$BEFORE")
+          who=(--submitter "$AUTHOR" --known "$KNOWN" --open-before "$BEFORE" --deleted "$RUNNER_TEMP/deleted.txt")
           if [ "$FORK" = "true" ]; then
             python tools/pr_referee.py gate --proposal "$INCOMING/proposal.json" --fork "${who[@]}" --output gated/gated.json
           else
