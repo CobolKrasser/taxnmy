@@ -112,7 +112,6 @@ NOTE_EDITION = re.compile(r"^\s*editie of versie van\s+(.+?)\s*$", re.I)
 NOTE_UNSUPPORTED = re.compile(r"niet meer ondersteund", re.I)
 COST_PER_PROPOSAL = 0.027  # dollars per proposal for the referee: Opus 5.5 at effort low, measured (TAX-18)
 CLOSED = {"refused", "disallowed", "429"}
-SEARCH_COST = 0.0125  # dollars per search for a closed source, about: $0.01 a search plus tokens (TAX-49)
 # What the find round itself set aside as no product or without a versions page, and
 # what the grouping showed to be a range of products or an edition of a product that is there
 # (TAX-42): apart in the count, and not counted for the threshold.
@@ -504,9 +503,8 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None, fou
             if src.method == "machine" and gate.read(src):
                 return Source(**{**asdict(src), "instead_of": url})
         hit = (found or {}).get(url) or {}
-        domains = set(hit.get("domains") or [])
         for u in hit.get("urls") or []:
-            if u == url or (domains and gate.registrable(gate.host_of(u)) not in domains):
+            if u == url or not referee.on_domains(u, hit.get("domains")):
                 continue
             src = fetcher.fetch(u, "")
             if gate.read(src) and not ends_elsewhere(src) and gate.appears(o.row.name, src.text):
@@ -720,7 +718,9 @@ def search(args, client=None, now=None, log=print) -> dict:
     """Step 4 for a round (TAX-49): one web search per closed source of closed.json, on the
     publisher's domains, within the cap of the round. Only URLs are kept. With the key; it reads no page."""
     wanted = json.loads(Path(args.closed).read_text(encoding="utf-8"))
-    log(f"{len(wanted)} closed sources to search for; about ${len(wanted) * SEARCH_COST:.2f}")
+    each = referee.search_cost(args.model, referee.load_prices(Path(args.prices)))
+    log(f"{len(wanted)} closed sources to search for, with {args.model}; about ${len(wanted) * each:.2f} "
+        f"(${each:.3f} a search, its results as input tokens included)")
     found, cost = {}, 0.0
     if wanted and args.live:
         found, cost = referee.run_searches(wanted, args.model, args.budget, Path(args.prices), Path(args.runs), client,
@@ -962,6 +962,13 @@ def report(outcomes: list[Outcome], publishers: dict, files: dict, grouping: dic
     lines += ["", *count_lines(outcomes, None, keys if keys is not None else set()), ""]
     pending = sum(1 for o in outcomes if o.outcome == "candidate")
     lines += [f"Cost of the referee: {pending} proposals x ${COST_PER_PROPOSAL} = ${pending * COST_PER_PROPOSAL:.2f}."]
+    # One search per closed page, as closed_sources lists them (TAX-49).
+    closed = len({m.group(1) for o in outcomes if o.outcome == "parked" and o.reason == "closed"
+                  for m in [re.search(r"(https?://[^\s;]+?): ", o.detail)] if m})
+    if closed:
+        each = referee.search_cost(referee.SEARCH_MODEL, referee.load_prices())
+        lines += [f"Cost of the search: at most {closed} closed pages x ${each:.3f} = ${closed * each:.2f} "
+                  f"({referee.SEARCH_MODEL}; the fee and about {referee.SEARCH_INPUT_TOKENS:,} input tokens of results each)."]
     if grouping:
         lines += [f"Cost of the grouping: {grouping['publishers']} publishers, {grouping['names']} names, "
                   f"±${grouping['expected']:.2f} (at most ${grouping['ceiling']:.2f})."]
@@ -1293,12 +1300,12 @@ def parser() -> argparse.ArgumentParser:
     r = sub.add_parser("search", help="step 4 for the closed sources of a round (TAX-49): one search each; the key")
     r.add_argument("--closed", required=True, help="closed.json of the propose step")
     r.add_argument("--output", required=True, help="search.json, for propose --search")
-    r.add_argument("--model", default=referee.MODEL)
+    r.add_argument("--model", default=referee.SEARCH_MODEL, help="the model of step 4, apart from the referee's")
     r.add_argument("--budget", type=float, default=referee.BUDGET, help="dollars, for every run together")
     r.add_argument("--cap", type=float, help="dollars, what the round has left for this step")
     r.add_argument("--prices", default=str(referee.REFEREE / "prices.yaml"))
     r.add_argument("--runs", default=str(referee.REFEREE / "runs"))
-    r.add_argument("--live", action="store_true", help="search (costs money, about $0.01 each)")
+    r.add_argument("--live", action="store_true", help="search (costs money, referee.search_cost each)")
     c = sub.add_parser("count", help="the count per product after the verdict of the referee (TAX-39; free)")
     c.add_argument("--outcomes", required=True, help="outcomes.json of the propose step")
     c.add_argument("--verdicts", required=True, help="verdicts.json of tools/pr_referee.py judge")

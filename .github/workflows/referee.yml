@@ -140,10 +140,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CASES: ${{ inputs.cases }}
           LIMIT: ${{ inputs.limit }}
-          MODEL: ${{ inputs.model }}
           BUDGET: ${{ inputs.budget }}
         run: |
           set -euo pipefail
+          # The model of step 4 is tools/referee.py SEARCH_MODEL, apart from the referee's (TAX-49).
           args=(search --sources fetched/sources.json --output fetched/search.json --budget "$BUDGET" --live)
           if [ -n "$CASES" ]; then read -r -a ids <<< "$CASES"; args+=(--cases "${ids[@]}"); fi
           if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
