@@ -84,7 +84,7 @@ jobs:
           python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/dry/classes.json" \
             --names "$RUNNER_TEMP/dry/names.json" --out "$RUNNER_TEMP/dry-propose" > propose.log
           { echo "### KEV round: dry run of ${files[*]}"; echo; cat list.log; echo; cat dry.log; echo
-            sed -n '/^- rijen/,/^Kosten van het groeperen/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
+            sed -n '/^- rows/,/^Cost of the grouping/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: import-list-${{ github.run_id }}
