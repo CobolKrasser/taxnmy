@@ -29,7 +29,8 @@ Per found row, code decides one outcome, in this order:
     parked     no-kind           no kind
     apart      no-versions       no versions page
     parked     no-publisher-page a new publisher, and no page of its own names it (TV4)
-               closed            a source refuses bots (401, 403, 429, robots.txt); never worked around
+               closed            a source refuses bots (401, 403, 429, robots.txt), not searched yet
+               closed-none       a source refuses bots, and its two steps (below) found no other page
                unreadable        a source gives no text (404, an error, too little text)
                moved             a source redirects, and the address it ends at redirects again
                name-not-on-page  the product page, after its redirects, does not show the name
@@ -40,10 +41,17 @@ A source of the find round that redirects (TAX-38) is proposed once at the addre
 the round chose it, not the finder, it must show the name, the versions page too. When it redirects
 again, the row stays parked: there is no second try.
 
+A closed page gets the two steps of the referee (TAX-49). First the publisher's own sources for
+machines (TE7). Then one web search on the publisher's domains, in its own job with the key
+(`search`); only the URLs of the results are kept. A page found that way is read like any other,
+and counts when it is on a domain of the publisher and shows the name. The closed page is not
+asked again (TE5), and a snippet from the results never reaches the referee (TE6). The report
+counts apart what was closed and read on another page, and what stayed closed.
+
 Every value that is not a URL counts as empty in a URL field, and a placeholder ("niet gevonden",
 "n/a", ...) counts as empty in a name field. With --fetch every page is read by the reader of the
-referee (tools/fetch.py; no browser in CI): what the importer parks for a closed or unreadable source
-or a name that is not on the page never reaches the referee. What is left goes through the gate of
+referee (tools/fetch.py; no browser in CI): what the importer parks for a closed source without another page,
+an unreadable source or a name that is not on the page never reaches the referee. What is left goes through the gate of
 the pull request (tools/pr_referee.py gate_proposals) as it would in the workflow: lint, guard, TP5, TK2,
 TE1; what it leaves is pending for the referee, and costs one request each.
 
@@ -55,13 +63,15 @@ Usage:
     python tools/importer.py propose --found CSV... [--first N] [--classes classes.json] [--fetch] --out DIR
     python tools/importer.py propose ... --write          # write the files and the parking list into the data
     python tools/importer.py propose ... --fetch --gated gated.json   # then: tools/pr_referee.py judge --gated gated.json
+    python tools/importer.py search --closed closed.json --output search.json [--live --cap 0.30]  # step 4 (TAX-49)
+    python tools/importer.py propose ... --fetch --sources sources.json --search search.json        # read what it found
     python tools/importer.py count --outcomes outcomes.json --verdicts verdicts.json   # the count after the verdict
 
-The paid trial runs as the workflow referee-import (TAX-27): list, group, propose, judge, and a pull
-request with the outcome; a maintainer approves each job with the key in environment referee.
+The paid trial runs as the workflow referee-import (TAX-27): list, group, propose, search and reread
+(only for closed pages), judge, and a pull request with the outcome; a maintainer approves each job with the key in environment referee.
 
 Without --write nothing in the data changes: the files go to --out, with report.md and outcomes.json.
-The importer names no brand or product (R3): every rule here is generic.
+The importer names no brand or product (TG4): every rule here is generic.
 """
 
 from __future__ import annotations
@@ -81,8 +91,9 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
-from fetch import moved as ends_elsewhere, publisher_texts  # noqa: E402
+from fetch import Source, moved as ends_elsewhere, publisher_texts  # noqa: E402
 import group  # noqa: E402
+import guard  # noqa: E402
 import intake  # noqa: E402
 import keyrule  # noqa: E402
 import pr_referee  # noqa: E402
@@ -101,6 +112,7 @@ NOTE_EDITION = re.compile(r"^\s*editie of versie van\s+(.+?)\s*$", re.I)
 NOTE_UNSUPPORTED = re.compile(r"niet meer ondersteund", re.I)
 COST_PER_PROPOSAL = 0.027  # dollars per proposal for the referee: Opus 5.5 at effort low, measured (TAX-18)
 CLOSED = {"refused", "disallowed", "429"}
+SEARCH_COST = 0.0125  # dollars per search for a closed source, about: $0.01 a search plus tokens (TAX-49)
 # What the find round itself set aside as no product or without a versions page, and
 # what the grouping showed to be a range of products or an edition of a product that is there
 # (TAX-42): apart in the count, and not counted for the threshold.
@@ -120,6 +132,7 @@ PARK = {
     "no-versions": ("no versions.source", "better-proposal"),
     "no-publisher-page": ("new publisher without a page of its own with its name", "better-proposal"),
     "closed": ("closed source", "event"),
+    "closed-none": ("closed source, and no other page of the publisher found", "event"),
     "unreadable": ("source not readable", "event"),
     "name-not-on-page": ("name not on the product page", "better-proposal"),
     "moved": ("source redirects, also from the address it ended at", "better-proposal"),
@@ -201,6 +214,7 @@ class Outcome:
     aliases: list = field(default_factory=list)  # candidate: keys of other writings (grouping)
     doubt: str = ""  # the reason of the grouping when it doubted, and the row is proposed all the same (TAX-44)
     moves: list = field(default_factory=list)  # [address of the find round, address it ended at] (TAX-42)
+    instead: list = field(default_factory=list)  # [closed address, the other page of the publisher read for it] (TAX-49)
 
     @property
     def label(self) -> str:
@@ -467,15 +481,49 @@ def names_of(publisher: str) -> list[str]:
     return out
 
 
-def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> dict:
+def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None, found: dict | None = None,
+                alternatives: dict | None = None, data_root: Path = REPO) -> dict:
     """Read the pages of each candidate; park what is closed, unreadable, or does not show the name.
+    A closed page gets the two steps of the referee (TAX-49): the publisher's own sources for
+    machines, then the URLs one search found on the publisher's domains (`found`, closed URL -> its
+    hit; None: not searched yet). The closed page is not asked again, and a search result counts
+    only as a page the reader reads itself (TE6). What is read instead goes to `alternatives`
+    (closed URL -> [Source]), for the gate and the referee.
     For a new publisher, choose its source: the first page of the finder, most named first, then the
     product pages, that is read and shows its name. -> publisher key -> (name, source)."""
     final = final if final is not None else {}
+    alternatives = alternatives if alternatives is not None else {}
+    machine = machine_sources(data_root)
 
-    def problem(url: str) -> tuple[str, str] | None:
+    def instead(o: Outcome, url: str):
+        """Another page of the publisher, read, that shows the name; or None."""
+        if url in alternatives:
+            return alternatives[url][0]
+        for ms in machine.get(o.publisher, []):
+            src = fetcher.fetch(ms, o.row.name)
+            if src.method == "machine" and gate.read(src):
+                return Source(**{**asdict(src), "instead_of": url})
+        hit = (found or {}).get(url) or {}
+        domains = set(hit.get("domains") or [])
+        for u in hit.get("urls") or []:
+            if u == url or (domains and gate.registrable(gate.host_of(u)) not in domains):
+                continue
+            src = fetcher.fetch(u, "")
+            if gate.read(src) and not ends_elsewhere(src) and gate.appears(o.row.name, src.text):
+                return Source(**{**asdict(src), "instead_of": url, "method": f"search+{src.method}"})
+        return None
+
+    def problem(url: str, o: Outcome) -> tuple[str, str] | None:
         src = fetcher.fetch(url, "")
         if src.status in CLOSED:
+            alt = instead(o, url)
+            if alt is not None:
+                alternatives[url] = [alt]
+                if [url, alt.url] not in o.instead:
+                    o.instead.append([url, alt.url])
+                return None
+            if found is not None:
+                return "closed-none", f"{url}: {src.status}; the search found no other readable page of the publisher"
             return "closed", f"{url}: {src.status}"
         if not gate.read(src):
             return "unreadable", f"{url}: {src.status}"
@@ -487,11 +535,11 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
         if o.outcome != "candidate":
             continue
         for url in dict.fromkeys([o.row.source, o.row.versions]):
-            p = problem(url)
+            p = problem(url, o)
             if p and p[0] == "moved":
                 # TAX-42: the round proposes the address it ended at, once; that page is checked like any other.
                 end = p[1]
-                again = problem(end)
+                again = problem(end, o)
                 if again and again[0] == "moved":
                     p = ("moved", f"{url} -> {end} -> {again[1]}: the address it ended at redirects again, no second try")
                 else:
@@ -505,12 +553,16 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
         else:
             # The page the round proposed itself must show the name: the finder did not choose it.
             for url in dict.fromkeys([o.row.source, *(end for _, end in o.moves)]):
-                if not gate.appears(o.row.name, fetcher.fetch(url, "").text):
+                read = alternatives[url][0] if url in alternatives else fetcher.fetch(url, "")
+                if not gate.appears(o.row.name, read.text):
                     o.outcome, o.reason = "parked", "name-not-on-page"
                     asked, moved = next((a for a, e in o.moves if e == url), ""), final.get(url)
                     o.detail = f"{o.row.name!r} not on {url}" + (f" (the address {asked} ended at)" if asked
                                                                  else f" (redirected to {moved})" if moved else "")
                     break
+        if o.instead:
+            read = "; ".join(f"{a} (closed) -> {e}" for a, e in o.instead)
+            o.detail = "; ".join(d for d in (o.detail, f"read on another page of the publisher: {read}") if d)
         if o.moves:
             moved = "; ".join(f"{a} -> {e}" for a, e in o.moves)
             o.detail = "; ".join(d for d in (o.detail, f"the address it ended at, proposed: {moved}") if d)
@@ -598,6 +650,90 @@ def parked_entries(outcomes: list[Outcome], publishers: dict, day: str) -> list[
                       "reason": PARK[o.reason][0] + (f": {o.detail}" if o.detail else ""), "since": day, "checked": day,
                       "pr": None, "fingerprint": pr_referee.fingerprint(files), "files": files}
     return list(out.values())
+
+
+def machine_sources(data_root: Path = REPO) -> dict:
+    """publisher key -> the URLs of its sources for machines (TE7), from the data."""
+    out = {}
+    for path in sorted((data_root / "publishers").glob("*.yaml")):
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        urls = [m["url"] for m in data.get("machine_sources") or [] if isinstance(m, dict) and m.get("url")]
+        if urls:
+            out[data.get("key", path.stem)] = urls
+    return out
+
+
+def closed_sources(outcomes: list[Outcome], data_root: Path = REPO) -> dict:
+    """What step 4 searches for (TAX-49): closed URL -> product, publisher and the publisher's domains
+    (of the closed URL, of the row, of its publisher file and its products in the data). Never a
+    search without domains."""
+    out = {}
+    for o in outcomes:
+        if o.outcome != "parked" or o.reason != "closed" or not o.row.name:
+            continue
+        url = o.detail.split(": ")[0]
+        if not url.startswith(("http://", "https://")):
+            continue  # a closed publisher page: the round looks for the publisher on its other pages already
+        urls = [url, o.row.source, o.row.versions, o.row.publisher_url]
+        pub = data_root / "publishers" / f"{o.publisher}.yaml"
+        if pub.is_file():
+            urls += guard.urls_in(yaml.safe_load(pub.read_text(encoding="utf-8")) or {})
+            for prod in sorted((data_root / "products" / o.publisher).glob("*.yaml")):
+                urls += guard.urls_in(yaml.safe_load(prod.read_text(encoding="utf-8")) or {})
+        domains = []
+        for u in urls:
+            if isinstance(u, str) and u.startswith(("http://", "https://")):
+                d = gate.registrable(gate.host_of(u))
+                if d and d not in domains and d not in (*guard.MANY_OWNERS, *guard.OWNER_IN_PATH, *guard.OWNER_IN_HOST):
+                    domains.append(d)
+        if domains and url not in out:
+            out[url] = {"product": o.row.name, "publisher": o.row.publisher or o.publisher,
+                        "domains": domains[:referee.MAX_DOMAINS]}
+    return out
+
+
+class WithAlternatives:
+    """The fetcher of the round, with what step 0 or step 4 read for a closed page (TAX-49): the gate
+    and the referee find it as the referee's own steps would (`referee.gather_sources`)."""
+
+    def __init__(self, fetcher, alternatives: dict):
+        self.fetcher, self.found, self.closed = fetcher, alternatives, {}
+
+    def fetch(self, url: str, product: str = ""):
+        """A page that refused once is not asked again in this run (TE5), whatever the product."""
+        if url in self.closed:
+            return self.closed[url]
+        src = self.fetcher.fetch(url, product)
+        if src.status in CLOSED:
+            self.closed[url] = src
+        return src
+
+    def alternatives(self, url: str) -> list:
+        return list(self.found.get(url, []))
+
+    def close(self) -> None:
+        if hasattr(self.fetcher, "close"):
+            self.fetcher.close()
+
+
+def search(args, client=None, now=None, log=print) -> dict:
+    """Step 4 for a round (TAX-49): one web search per closed source of closed.json, on the
+    publisher's domains, within the cap of the round. Only URLs are kept. With the key; it reads no page."""
+    wanted = json.loads(Path(args.closed).read_text(encoding="utf-8"))
+    log(f"{len(wanted)} closed sources to search for; about ${len(wanted) * SEARCH_COST:.2f}")
+    found, cost = {}, 0.0
+    if wanted and args.live:
+        found, cost = referee.run_searches(wanted, args.model, args.budget, Path(args.prices), Path(args.runs), client,
+                                           now, log, cap=args.cap)
+    elif wanted:
+        log("Dry run: nothing was searched. Add --live to search.")
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(found, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
+            gh.write(f"cost={cost:.4f}\n")
+    return found
 
 
 # --------------------------------------------------------------------------- the gate of the pull request
@@ -701,7 +837,7 @@ def products(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> dict:
     for key, p in out.items():
         rows = [o for o in p["rows"] if not found_aside(o)]
         v = by_rel.get(f"products/{key}.yaml")
-        parked = [o for o in rows if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked"]
+        parked = [o for o in rows if (o.outcome == "parked" and o.reason not in ("closed", "closed-none")) or o.outcome == "gate-parked"]
         if not rows:
             o = p["rows"][0]
             p["status"], p["why"] = "aside", PARK[o.reason][0]
@@ -777,6 +913,12 @@ def count_lines(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> li
         lines += ["", f"**Provisional count, before the verdict of the referee:** {share}. "
                       "Nothing is said about going on or stopping: that follows the verdict (`importer.py count`)."]
     lines += ["", f"Set aside by the find round or the grouping (not counted): {t['aside']} products."]
+    # TAX-49: a closed page that was read on another page of the publisher, apart from one that stayed closed.
+    read = sorted(key for key, p in ps.items() if any(o.instead for o in p["rows"]))
+    shut = sorted(key for key, p in ps.items() if p["status"] == "closed source")
+    lines += [f"Closed, and read on another page of the publisher (TAX-49): {len(read)} products"
+              + (f" ({', '.join(read)})" if read else "") + ".",
+              f"Closed, and still closed: {len(shut)} products."]
     # Proposed after the grouping doubted: every row it doubted, but those parked for want of pages.
     doubted = {key: p for key, p in ps.items() if any(o.doubt and o.reason != "grouping" for o in p["rows"])}
     if doubted:
@@ -1043,7 +1185,15 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
             recorder = Recorder()
             fetcher = Fetcher(use_browser=args.browser, get=recorder, log=log)
             fetcher.final = recorder.final
-        publishers = check_pages(outcomes, fetcher, getattr(fetcher, "final", {}))
+        if getattr(args, "sources", None):
+            # The pages read by the first pass (TAX-49): kept, so a closed page is not asked again.
+            fetcher.cache.update({key: Source(**src) for key, src in
+                                  json.loads(Path(args.sources).read_text(encoding="utf-8")).items()})
+        found = json.loads(Path(args.search).read_text(encoding="utf-8")) if getattr(args, "search", None) else None
+        alternatives: dict = {}
+        final = getattr(fetcher, "final", {})
+        fetcher = WithAlternatives(fetcher, alternatives)
+        publishers = check_pages(outcomes, fetcher, final, found, alternatives, data_root)
         follow(outcomes)
     else:
         publishers = publisher_sources(outcomes)
@@ -1057,6 +1207,7 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
         apply_gate(outcomes, items)
         mark_doubt(outcomes, items)
         follow(outcomes)
+        cache = getattr(fetcher.fetcher, "cache", None)
         if hasattr(fetcher, "close"):
             fetcher.close()
     grouping = None
@@ -1070,6 +1221,16 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
     parked = parked_entries(outcomes, publishers, day)
     text = report(outcomes, publishers, files, grouping, bool(args.fetch), existing_keys(data_root))
     (out / "report.md").write_text(text, encoding="utf-8")
+    if args.fetch:
+        # For step 4 (TAX-49): what is closed, and the pages read, so the next pass reads nothing twice.
+        closed = closed_sources(outcomes, data_root) if found is None else {}
+        (out / "closed.json").write_text(json.dumps(closed, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        if cache is not None:
+            (out / "sources.json").write_text(json.dumps({k: asdict(v) for k, v in cache.items()}, ensure_ascii=False)
+                                              + "\n", encoding="utf-8")
+        if os.environ.get("GITHUB_OUTPUT"):
+            with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
+                gh.write(f"closed={len(closed)}\n")
     (out / "outcomes.json").write_text(json.dumps([{**asdict(o), "row": asdict(o.row)} for o in outcomes], indent=1,
                                                   ensure_ascii=False) + "\n", encoding="utf-8")
     target = data_root if args.write else out / "data"
@@ -1127,6 +1288,17 @@ def parser() -> argparse.ArgumentParser:
     q.add_argument("--browser", action="store_true", help="with --fetch: a headless browser for pages without text")
     q.add_argument("--gated", help="with --fetch: write the gated items for tools/pr_referee.py judge here")
     q.add_argument("--submitter", default="", help="the submitter of an agreed round in referee/intake.yaml (TAX-32)")
+    q.add_argument("--sources", help="with --fetch: sources.json of the first pass; those pages are not read again")
+    q.add_argument("--search", help="with --fetch: search.json of the search step; a closed page gets its other pages")
+    r = sub.add_parser("search", help="step 4 for the closed sources of a round (TAX-49): one search each; the key")
+    r.add_argument("--closed", required=True, help="closed.json of the propose step")
+    r.add_argument("--output", required=True, help="search.json, for propose --search")
+    r.add_argument("--model", default=referee.MODEL)
+    r.add_argument("--budget", type=float, default=referee.BUDGET, help="dollars, for every run together")
+    r.add_argument("--cap", type=float, help="dollars, what the round has left for this step")
+    r.add_argument("--prices", default=str(referee.REFEREE / "prices.yaml"))
+    r.add_argument("--runs", default=str(referee.REFEREE / "runs"))
+    r.add_argument("--live", action="store_true", help="search (costs money, about $0.01 each)")
     c = sub.add_parser("count", help="the count per product after the verdict of the referee (TAX-39; free)")
     c.add_argument("--outcomes", required=True, help="outcomes.json of the propose step")
     c.add_argument("--verdicts", required=True, help="verdicts.json of tools/pr_referee.py judge")
@@ -1153,6 +1325,8 @@ def main(argv: list[str] | None = None) -> int:
         print(text)
     elif args.command == "list":
         fetch_list(args)
+    elif args.command == "search":
+        search(args)
     else:
         propose(args)
     return 0
