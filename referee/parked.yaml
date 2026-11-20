@@ -81,14 +81,17 @@ parked:
 - key: adobe/adobe-commerce
   path: products/adobe/adobe-commerce.yaml
   publisher: adobe
-  waits_for: event
-  owner: referee
-  rule: TAX-27
-  reason: 'closed source: https://business.adobe.com/products/commerce.html: disallowed'
-  since: '2026-11-19'
-  checked: '2026-11-19'
-  lapses: '2027-02-17'
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The versions source is a release notes overview that names no specific version number, build or release name
+    of Adobe Commerce.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
   pr: null
+  submitter: kev-ronde-1
+  known: true
   fingerprint: 3c8094d38eadbd81
   files:
     products/adobe/adobe-commerce.yaml: |
@@ -257,6 +260,470 @@ parked:
       name: Multiple Products
       kind: software
       aliases: []
+- key: check-point-software-technologies/quantum-security-gateway
+  path: products/check-point-software-technologies/quantum-security-gateway.yaml
+  publisher: check-point-software-technologies
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source: publisher page https://support.checkpoint.com/results/sk/sk183506'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a637707b895c4f65
+  files:
+    products/check-point-software-technologies/quantum-security-gateway.yaml: |
+      key: check-point-software-technologies/quantum-security-gateway
+      publisher: check-point-software-technologies
+      name: Quantum Security Gateway
+      kind: software
+      source: https://support.checkpoint.com/results/sk/sk183506
+      versions:
+        source: https://support.checkpoint.com/results/sk/sk183506
+      aliases: []
+    publishers/check-point-software-technologies.yaml: |
+      key: check-point-software-technologies
+      name: Check Point Software Technologies Ltd.
+      source: https://www.checkpoint.com/quantum/next-generation-firewall/
+      aliases: []
+- key: cisco-systems/splunk-enterprise
+  path: products/cisco-systems/splunk-enterprise.yaml
+  publisher: cisco-systems
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates:
+    refused; the search found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9052c20da55fec09
+  files:
+    products/cisco-systems/splunk-enterprise.yaml: |
+      key: cisco-systems/splunk-enterprise
+      publisher: cisco-systems
+      name: Splunk Enterprise
+      kind: software
+      source: https://www.splunk.com/en_us/products/splunk-enterprise.html
+      versions:
+        source: https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates
+      aliases: []
+    publishers/cisco-systems.yaml: |
+      key: cisco-systems
+      name: Cisco Systems, Inc.
+      source: https://www.splunk.com/en_us/products/splunk-enterprise.html
+      aliases: []
+- key: cisco/cisco-ios-xe
+  path: products/cisco/cisco-ios-xe.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: alias
+  reason: 'alias ''cisco/cisco-ios-xe-software'': doubt: The source texts write only ''Cisco IOS XE'' and the ''Cisco IOS
+    XE website''. None of them writes ''Cisco IOS XE Software'', so the texts do not show this name for the product.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: ebd33c581a5d21a6
+  files:
+    products/cisco/cisco-ios-xe.yaml: |
+      key: cisco/cisco-ios-xe
+      publisher: cisco
+      name: Cisco IOS XE
+      kind: operating-system
+      source: https://endoflife.date/cisco-ios-xe
+      versions:
+        source: https://endoflife.date/cisco-ios-xe
+      identifiers:
+      - cpe: cpe:2.3:o:cisco:ios_xe
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:cisco:ios_xe&resultsPerPage=1
+      aliases:
+      - cisco/cisco-ios-xe-software
+- key: d-link/dcs-2530l
+  path: products/d-link/dcs-2530l.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DCS-2530L/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=ce00778d253846c7a8b3f24cdb24781d
+    (closed) -> https://www.dlink.com/xk/sq/products/dcs-2530l-wide-eye-full-hd-180-panoramic-camera'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 2042c3d22e4ca80c
+  files:
+    products/d-link/dcs-2530l.yaml: |
+      key: d-link/dcs-2530l
+      publisher: d-link
+      name: DCS-2530L
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=ce00778d253846c7a8b3f24cdb24781d
+      versions:
+        source: https://legacyfiles.us.dlink.com/DCS-2530L/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-600
+  path: products/d-link/dir-600.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-600/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=4587b63118524aec911191cc81605283
+    (closed) -> https://www.dlink.com/en/-/media/consumer_products/dir/dir-600/datasheet/dir_600_c1_datasheet_03_ww.pdf'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5c53f9c5e6da03ff
+  files:
+    products/d-link/dir-600.yaml: |
+      key: d-link/dir-600
+      publisher: d-link
+      name: DIR-600
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=4587b63118524aec911191cc81605283
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-600/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-605
+  path: products/d-link/dir-605.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-605/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=2b09e95d90ff4cb38830ecc04c89cee5
+    (closed) -> https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10393'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 3bfeed73675702d6
+  files:
+    products/d-link/dir-605.yaml: |
+      key: d-link/dir-605
+      publisher: d-link
+      name: DIR-605
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=2b09e95d90ff4cb38830ecc04c89cee5
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-605/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-820l
+  path: products/d-link/dir-820l.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-820L/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=00c2150966b046b58ba95d8ae3a8f73d
+    (closed) -> http://legacyfiles.us.dlink.com/DIR-820L/REVA/DIR-820L_REVA_MANUAL_1.00_EN.PDF'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 62792e4a9c83426b
+  files:
+    products/d-link/dir-820l.yaml: |
+      key: d-link/dir-820l
+      publisher: d-link
+      name: DIR-820L
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=00c2150966b046b58ba95d8ae3a8f73d
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-820L/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-859
+  path: products/d-link/dir-859.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-859/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=a64612142a3041d98642960e5f840fb6
+    (closed) -> https://www.dlink.com/uk/en/products/dir-859-wireless-ac1750-dual-band-gigabit-router'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 05f9efc1e713db0b
+  files:
+    products/d-link/dir-859.yaml: |
+      key: d-link/dir-859
+      publisher: d-link
+      name: DIR-859
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=a64612142a3041d98642960e5f840fb6
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-859/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dnr-322l
+  path: products/d-link/dnr-322l.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DNR-322L/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=b98a51b9331542808145b120a03339f7
+    (closed) -> https://www.dlink.com/uk/en/products/dnr-322l-cloud-network-video-recorder'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 45534c6f7ce3c28e
+  files:
+    products/d-link/dnr-322l.yaml: |
+      key: d-link/dnr-322l
+      publisher: d-link
+      name: DNR-322L
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=b98a51b9331542808145b120a03339f7
+      versions:
+        source: https://legacyfiles.us.dlink.com/DNR-322L/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: embedd/dd-wrt
+  path: products/embedd/dd-wrt.yaml
+  publisher: embedd
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5, TE1
+  reason: 'TP3: The versions source is disallowed and the instead-of page shows no specific version number or build, so no
+    version can be quoted.; TP5: The site footer names embeDD GmbH as copyright holder and mentions its build servers, but
+    the publisher gives no second source, and the proposal''s own URLs do not independently show who publishes the updates.;
+    TE1: Name, publisher and kind are confirmed by the home page, but the versions source is disallowed and cannot be confirmed.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: e7c940cb1d76594a
+  files:
+    products/embedd/dd-wrt.yaml: |
+      key: embedd/dd-wrt
+      publisher: embedd
+      name: DD-WRT
+      kind: operating-system
+      source: https://dd-wrt.com/
+      versions:
+        source: https://download1.dd-wrt.com/dd-wrtv2/downloads/betas/
+      aliases: []
+    publishers/embedd.yaml: |
+      key: embedd
+      name: embeDD GmbH
+      source: https://dd-wrt.com/
+      aliases: []
+- key: fortinet/forticlient-ems
+  path: products/fortinet/forticlient-ems.yaml
+  publisher: fortinet
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'name not on the product page: ''FortiClient EMS'' not on https://docs.fortinet.com/product/forticlient/8.0 (the
+    address https://docs.fortinet.com/product/forticlient ended at); read on another page of the publisher: https://www.fortinet.com/products/endpoint-security/forticlient
+    (closed) -> https://docs.fortinet.com/document/fortigate/6.4.0/ports-and-protocols/35450/forticlient-ems-endpoint-management-server;
+    the address it ended at, proposed: https://docs.fortinet.com/product/forticlient -> https://docs.fortinet.com/product/forticlient/8.0'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 2412d6402e302811
+  files:
+    products/fortinet/forticlient-ems.yaml: |
+      key: fortinet/forticlient-ems
+      publisher: fortinet
+      name: FortiClient EMS
+      kind: software
+      source: https://www.fortinet.com/products/endpoint-security/forticlient
+      versions:
+        source: https://docs.fortinet.com/product/forticlient/8.0
+      aliases: []
+- key: fortinet/fortimanager
+  path: products/fortinet/fortimanager.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TE1
+  reason: 'TE1: The name and publisher are confirmed by the instead-of source, but the kind ''device'' is not clearly confirmed:
+    the texts show cloud and VM deployments and a ''Hardware'' link without stating it is a device.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 4c90d7a1dd21ba30
+  files:
+    products/fortinet/fortimanager.yaml: |
+      key: fortinet/fortimanager
+      publisher: fortinet
+      name: FortiManager
+      kind: device
+      source: https://www.fortinet.com/products/management/fortimanager
+      versions:
+        source: https://docs.fortinet.com/product/fortimanager/8.0
+      aliases: []
+- key: fortinet/fortiproxy
+  path: products/fortinet/fortiproxy.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TP3, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: c2e4108e0184fa58
+  files:
+    products/fortinet/fortiproxy.yaml: |
+      key: fortinet/fortiproxy
+      publisher: fortinet
+      name: FortiProxy
+      kind: device
+      source: https://www.fortinet.com/products/secure-web-gateway
+      versions:
+        source: https://docs.fortinet.com/product/fortiproxy/7.6
+      aliases: []
+- key: fortinet/fortisandbox
+  path: products/fortinet/fortisandbox.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TP3, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 40653316efcf963a
+  files:
+    products/fortinet/fortisandbox.yaml: |
+      key: fortinet/fortisandbox
+      publisher: fortinet
+      name: FortiSandbox
+      kind: device
+      source: https://www.fortinet.com/products/sandbox/fortisandbox
+      versions:
+        source: https://docs.fortinet.com/product/fortisandbox/5.2
+      aliases: []
+- key: fortinet/fortiweb
+  path: products/fortinet/fortiweb.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TP3, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: b5df84ae900327a9
+  files:
+    products/fortinet/fortiweb.yaml: |
+      key: fortinet/fortiweb
+      publisher: fortinet
+      name: FortiWeb
+      kind: device
+      source: https://www.fortinet.com/products/web-application-firewall/fortiweb
+      versions:
+        source: https://docs.fortinet.com/product/fortiweb/8.0
+      aliases: []
+- key: fortra/goanywhere-mft
+  path: products/fortra/goanywhere-mft.yaml
+  publisher: fortra
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://www.goanywhere.com/products/goanywhere-mft: refused;
+    the search found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c01e422e7a27c4c1
+  files:
+    products/fortra/goanywhere-mft.yaml: |
+      key: fortra/goanywhere-mft
+      publisher: fortra
+      name: GoAnywhere MFT
+      kind: software
+      source: https://www.goanywhere.com/products/goanywhere-mft
+      versions:
+        source: https://hstechdocs.helpsystems.com/releasenotes/Content/_ProductPages/GoAnywhere/GAMFT.htm
+      aliases: []
+    publishers/fortra.yaml: |
+      key: fortra
+      name: Fortra
+      source: https://www.fortra.com/
+      aliases: []
+- key: google/chromium
+  path: products/google/chromium.yaml
+  publisher: google
+  waits_for: event
+  owner: referee
+  rule: TP3, TP5, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 86e2a569eb62419a
+  files:
+    products/google/chromium.yaml: |
+      key: google/chromium
+      publisher: google
+      name: Chromium
+      kind: software
+      source: https://www.chromium.org/chromium-projects/
+      versions:
+        source: https://chromereleases.googleblog.com/
+      aliases: []
 - key: google/framework
   path: products/google/framework.yaml
   publisher: google
@@ -370,6 +837,174 @@ parked:
       name: Jakub Vrána
       source: https://www.adminer.org/
       aliases: []
+- key: juniper-networks/junos-os
+  path: products/juniper-networks/junos-os.yaml
+  publisher: juniper-networks
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf:
+    disallowed; the search found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c5c387075d5c6374
+  files:
+    products/juniper-networks/junos-os.yaml: |
+      key: juniper-networks/junos-os
+      publisher: juniper-networks
+      name: Junos OS
+      kind: operating-system
+      source: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf
+      versions:
+        source: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf
+      aliases: []
+    publishers/juniper-networks.yaml: |
+      key: juniper-networks
+      name: Juniper Networks
+      source: https://www.juniper.net/support/eol/screenos_archive.html
+      aliases: []
+- key: juniper-networks/screenos
+  path: products/juniper-networks/screenos.yaml
+  publisher: juniper-networks
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://www.juniper.net/support/eol/screenos_archive.html:
+    disallowed; the search found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 76abe0c87101885b
+  files:
+    products/juniper-networks/screenos.yaml: |
+      key: juniper-networks/screenos
+      publisher: juniper-networks
+      name: ScreenOS
+      kind: operating-system
+      source: https://www.juniper.net/support/eol/screenos_archive.html
+      versions:
+        source: https://www.juniper.net/support/eol/screenos_archive.html
+      aliases: []
+    publishers/juniper-networks.yaml: |
+      key: juniper-networks
+      name: Juniper Networks
+      source: https://www.juniper.net/support/eol/screenos_archive.html
+      aliases: []
+- key: quest-software/kace-systems-management-appliance-sma
+  path: products/quest-software/kace-systems-management-appliance-sma.yaml
+  publisher: quest-software
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://www.quest.com/products/kace-systems-management-appliance/:
+    disallowed; the search found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 30c7c16cd38678bc
+  files:
+    products/quest-software/kace-systems-management-appliance-sma.yaml: |
+      key: quest-software/kace-systems-management-appliance-sma
+      publisher: quest-software
+      name: KACE Systems Management Appliance (SMA)
+      kind: software
+      source: https://www.quest.com/products/kace-systems-management-appliance/
+      versions:
+        source: https://support.quest.com/technical-documents/doc2257749
+      aliases: []
+    publishers/quest-software.yaml: |
+      key: quest-software
+      name: Quest Software
+      source: https://www.quest.com/
+      aliases: []
+- key: sensorweb/scadabr
+  path: products/sensorweb/scadabr.yaml
+  publisher: sensorweb
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: http://www.scadabr.com.br/: disallowed; the search found
+    no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a44b532d8b6af618
+  files:
+    products/sensorweb/scadabr.yaml: |
+      key: sensorweb/scadabr
+      publisher: sensorweb
+      name: ScadaBR
+      kind: software
+      source: http://www.scadabr.com.br/
+      versions:
+        source: http://www.scadabr.com.br/
+      aliases: []
+    publishers/sensorweb.yaml: |
+      key: sensorweb
+      name: Sensorweb
+      source: http://www.scadabr.com.br/
+      aliases: []
+- key: solarwinds/serv-u
+  path: products/solarwinds/serv-u.yaml
+  publisher: solarwinds
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://www.solarwinds.com/serv-u: refused; the search
+    found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: ebaeab9c4a66f02b
+  files:
+    products/solarwinds/serv-u.yaml: |
+      key: solarwinds/serv-u
+      publisher: solarwinds
+      name: Serv-U
+      kind: software
+      source: https://www.solarwinds.com/serv-u
+      versions:
+        source: https://documentation.solarwinds.com/en/success_center/servu/content/release_notes/release_history.htm
+      aliases: []
+    publishers/solarwinds.yaml: |
+      key: solarwinds
+      name: SolarWinds
+      source: https://www.solarwinds.com/web-help-desk
+      aliases: []
+- key: solarwinds/web-help-desk
+  path: products/solarwinds/web-help-desk.yaml
+  publisher: solarwinds
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'closed source, and no other page of the publisher found: https://www.solarwinds.com/web-help-desk: refused; the
+    search found no other readable page of the publisher'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: df2cd47a95ca32f0
+  files:
+    products/solarwinds/web-help-desk.yaml: |
+      key: solarwinds/web-help-desk
+      publisher: solarwinds
+      name: Web Help Desk
+      kind: software
+      source: https://www.solarwinds.com/web-help-desk
+      versions:
+        source: https://documentation.solarwinds.com/en/success_center/whd/content/release_notes/release_notes_overview.htm
+      aliases: []
+    publishers/solarwinds.yaml: |
+      key: solarwinds
+      name: SolarWinds
+      source: https://www.solarwinds.com/web-help-desk
+      aliases: []
 - key: the-apache-software-foundation/apache-superset
   path: products/the-apache-software-foundation/apache-superset.yaml
   publisher: the-apache-software-foundation
@@ -390,3 +1025,31 @@ parked:
       kind: software
       source: https://superset.apache.org/
       aliases: []
+- key: veeam-software/veeam-backup-and-replication
+  path: products/veeam-software/veeam-backup-and-replication.yaml
+  publisher: veeam-software
+  waits_for: event
+  owner: referee
+  rule: alias
+  reason: the pull request ceiling leaves no room for the referee
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 5c5b3ba654973300
+  files:
+    products/veeam-software/veeam-backup-and-replication.yaml: |
+      key: veeam-software/veeam-backup-and-replication
+      publisher: veeam-software
+      name: Veeam Backup & Replication
+      kind: software
+      source: https://www.veeam.com/kb2680
+      versions:
+        source: https://www.veeam.com/kb2680
+      identifiers:
+      - cpe: cpe:2.3:a:veeam:veeam_backup_\&_replication
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:veeam:veeam_backup_%5C%26_replication&resultsPerPage=1
+      aliases:
+      - veeam-software/backup-and-replication
