@@ -54,7 +54,7 @@ import alias  # noqa: E402
 import gate  # noqa: E402
 import intake  # noqa: E402
 import referee  # noqa: E402
-from fetch import Fetcher, Source, moved  # noqa: E402
+from fetch import Fetcher, Source, footer_counts, moved  # noqa: E402
 
 REPO = referee.REPO
 PARKED = REPO / "referee/parked.yaml"
@@ -288,7 +288,9 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             else:
                 item["held"], item["holds"], _ = decision
                 item["ai_rules"] = [r for r in referee.RULES if r not in decided]
-                item["message"] = referee.build_message(st, "fetched", sources, decided)
+                item["footer"] = footer_counts()  # TAX-43: the referee is shown the page footer
+                item["names"] = referee.publisher_names(st.publisher)  # what a footer quote for TR5 must name
+                item["message"] = referee.build_message(st, "fetched", sources, decided, item["footer"])
                 item["outcome"] = "pending"
         log(f"{item['id']}: {item['outcome']}" + (f" {item['rule']}" if item["rule"] else ""))
         items.append(item)
@@ -464,7 +466,13 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("A live run needs ANTHROPIC_API_KEY")
         client = referee.AnthropicClient()
-    system = referee.load_system_prompt(Path(args.prompt))
+    # TAX-43: the messages were built in the gate, with or without the page footer; the system prompt
+    # must say the same, and one batch has one system prompt.
+    feet = {bool(i.get("footer")) for i in pending if i.get("ask") != "alias"}
+    if len(feet) > 1:
+        raise SystemExit("the pending items were gated with and without the page footer (TAX-43): gate them again")
+    footer = feet == {True}
+    system = referee.load_system_prompt(Path(args.prompt), footer)
     schema = referee.load_schema(Path(args.schema))
     api = referee.api_schema(schema)
     asks = {"alias": (referee.load_system_prompt(alias.PROMPT), referee.load_schema(alias.SCHEMA))} \
@@ -490,7 +498,7 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
     (run_dir / "run.json").write_text(json.dumps({
         "condition": "pr", "pr": args.pr, "model": args.model, "effort": args.effort, "batch": True,
         "budget": args.budget, "pr_cap": args.pr_cap, "day_cap": args.day_cap, "spent_before": round(before, 6),
-        "max_tokens": args.max_tokens, "started": stamp, "proposals": [i["id"] for i in pending],
+        "max_tokens": args.max_tokens, "started": stamp, "proposals": [i["id"] for i in pending], "footer": footer,
     }, indent=2) + "\n", encoding="utf-8")
     known = [r for r in requests if by_id[r[0]].get("known", True)]
     unknown = [r for r in requests if not by_id[r[0]].get("known", True)]
@@ -535,7 +543,8 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     if verdict is None:
         return settled(item, "parked", rules, why + (" (cut off at max_tokens)" if answer["stop"] == "max_tokens" else ""), "ai")
     sources = [Source(**s) for s in item["sources"]]
-    checked, notes = referee.check_quotes(verdict, sources, item["ai_rules"], referee.versions_url(item["files"]), item["files"])
+    checked, notes = referee.check_quotes(verdict, sources, item["ai_rules"], referee.versions_url(item["files"]), item["files"],
+                                          bool(item.get("footer")), item.get("names") or ())
     checked = {**checked, **item["decided"]}
     item["verdict"] = verdict
     item["checked"] = {r: checked[r]["verdict"] for r in referee.RULES}
