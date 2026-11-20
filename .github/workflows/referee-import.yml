@@ -7,12 +7,12 @@ name: referee-import
 #
 #   prepare   no key: the KEV list and the CVE records of the vendors of the rows (public), and the
 #             estimate of the grouping (dry run).
-#   group     environment referee (the key; Fred approves): the grouping, one batch. Main only.
+#   group     environment referee (the key; a maintainer approves): the grouping, one batch. Main only.
 #             With `grouping_run`, it does not run: propose takes the grouping of that earlier run
-#             (decision 37: the grouping is not run again).
+#             (the grouping is not run again).
 #   propose   no key: the importer reads every page (with a browser), parks what it must, and runs
 #             the gate of the pull request.
-#   judge     environment referee (the key; Fred approves): the referee on what the gate left, one
+#   judge     environment referee (the key; a maintainer approves): the referee on what the gate left, one
 #             batch, within what the grouping left of the cap.
 #   pull-request  no key: the count per product after the verdict (TAX-39), the outcome on a branch, parked entries in referee/parked.yaml, rejected
 #             and aliased files taken out (tools/pr_referee.py apply), and a pull request.
@@ -84,7 +84,7 @@ jobs:
           python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/dry/classes.json" \
             --names "$RUNNER_TEMP/dry/names.json" --out "$RUNNER_TEMP/dry-propose" > propose.log
           { echo "### KEV round: dry run of ${files[*]}"; echo; cat list.log; echo; cat dry.log; echo
-            sed -n '/^- rijen/,/^Kosten van het groeperen/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
+            sed -n '/^- rows/,/^Cost of the grouping/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: import-list-${{ github.run_id }}
@@ -177,7 +177,7 @@ jobs:
             echo "::error::grouping_run is not a run id: $GROUPING_RUN" >&2
             exit 1
           fi
-          echo "The grouping of run $GROUPING_RUN, not grouped again (decision 37)" >> "$GITHUB_STEP_SUMMARY"
+          echo "The grouping of run $GROUPING_RUN, not grouped again" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/download-artifact@v4
         if: inputs.grouping_run == ''
         with:
@@ -341,7 +341,7 @@ jobs:
           git push -q origin "$branch"
           { echo "KEV round (TAX-27), ${names% }, workflow run ${RUN_ID}. Not merged by itself."; echo
             cat "$RUNNER_TEMP/count.md"; echo; cat "$VERDICTS/comment.md"; echo; cat "$REPORT"; } | head -c 60000 > body.md
-          if ! gh pr create --base main --head "$branch" --title "TAX-27: KEV-ronde, ${names% }" --body-file body.md \
+          if ! gh pr create --base main --head "$branch" --title "TAX-27: KEV round, ${names% }" --body-file body.md \
                | tee -a "$GITHUB_STEP_SUMMARY"; then
             # The repository may not let a workflow open a pull request: the branch is there, open it by hand.
             echo "Open the pull request by hand: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}" \

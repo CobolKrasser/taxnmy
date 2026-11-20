@@ -60,7 +60,7 @@ class Base(unittest.TestCase):
     def entry(self, n, submitter, known=False):
         p = product(n)
         return pr_referee.park_entry({**p, "key": f"synology/ds{n}", "publisher": "synology", "waits_for": "event",
-                                      "rule": "TR5", "reason": "fixture", "submitter": submitter, "known": known,
+                                      "rule": "TP5", "reason": "fixture", "submitter": submitter, "known": known,
                                       "pr": 3}, "2026-11-10")
 
 
@@ -89,20 +89,20 @@ class OnePlaceTest(unittest.TestCase):
 
 
 class PerSubmitterTest(Base):
-    """TV8 and TV9: over the limit of a submitter is rejected, never parked, and its sources are not read."""
+    """TV8 and TV8: over the limit of a submitter is rejected, never parked, and its sources are not read."""
 
     def test_an_unknown_submitter_has_three(self):
         items = self.gate([product(n) for n in range(501, 506)], intake.Submitter("newcomer", False))
         out = [items[f"products/synology/ds{n}.yaml"] for n in range(501, 506)]
         self.assertEqual([i["outcome"] != "reject" for i in out], [True, True, True, False, False])
         for i in out[3:]:
-            self.assertEqual(i["rule"], "TV9")
+            self.assertEqual(i["rule"], "TV8")
             self.assertIn("the limit of 3 open proposals per submitter (unknown)", i["reason"])
         self.assertFalse([u for u in self.fetcher.urls if "DS504" in u or "DS505" in u], "over the limit, still read")
 
     def test_a_known_submitter_has_ten(self):
         items = self.gate([product(n) for n in range(501, 513)], intake.Submitter("regular", True))
-        self.assertEqual(sum(i["outcome"] == "reject" and i["rule"] == "TV9" for i in items.values()), 2)
+        self.assertEqual(sum(i["outcome"] == "reject" and i["rule"] == "TV8" for i in items.values()), 2)
 
     def test_parked_and_earlier_open_proposals_count(self):
         self.park([self.entry(601, "newcomer")])
@@ -134,14 +134,14 @@ class PerSubmitterTest(Base):
 
     def test_without_a_submitter_there_is_no_limit_per_submitter(self):
         items = self.gate([product(n) for n in range(501, 506)])
-        self.assertFalse([i for i in items.values() if i["rule"] == "TV9"])
+        self.assertFalse([i for i in items.values() if i["rule"] == "TV8"])
 
 
 class PerProposalTest(Base):
     def test_too_many_sources_is_rejected_unread(self):
         items = self.gate([product(501, sources=9), product(502, sources=8)], intake.Submitter("newcomer", False))
         big, fits = items["products/synology/ds501.yaml"], items["products/synology/ds502.yaml"]
-        self.assertEqual((big["outcome"], big["rule"]), ("reject", "TV9"))
+        self.assertEqual((big["outcome"], big["rule"]), ("reject", "TV8"))
         self.assertIn("11 sources in one proposal; the limit is 10", big["reason"])
         self.assertNotEqual(fits["outcome"], "reject")
         self.assertFalse([u for u in self.fetcher.urls if "/x/501/" in u])
@@ -155,14 +155,14 @@ class PerProposalTest(Base):
 
 class ParkingListFullTest(Base):
     def items(self, *known):
-        return [{"id": f"p{n}", "outcome": "parked", "known": k, "rule": "TR5", "reason": "doubt"}
+        return [{"id": f"p{n}", "outcome": "parked", "known": k, "rule": "TP5", "reason": "doubt"}
                 for n, k in enumerate(known)]
 
     def test_a_full_list_rejects_instead_of_parking(self):
         items = self.items(False, False)
         rejected = intake.cap_parking(items, 199, LIMITS)
         self.assertEqual([i["outcome"] for i in items], ["parked", "reject"])
-        self.assertEqual((rejected[0]["rule"], rejected[0]["waits_for"]), ("TV9", ""))
+        self.assertEqual((rejected[0]["rule"], rejected[0]["waits_for"]), ("TV8", ""))
         self.assertIn("the parking list is full (200 proposals)", rejected[0]["reason"])
 
     def test_the_last_places_go_to_known_submitters(self):

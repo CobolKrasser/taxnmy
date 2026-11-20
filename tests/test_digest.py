@@ -53,22 +53,22 @@ class Digest(unittest.TestCase):
 
     def test_nothing_waits_still_says_so(self):
         text = self.show()
-        self.assertIn("Vandaag niets te keuren.", text)
-        self.assertIn("- geen", text)
-        self.assertNotIn("Antwoord per uitgever", text)
+        self.assertIn("Nothing to decide today.", text)
+        self.assertIn("- none", text)
+        self.assertNotIn("Answer per publisher", text)
 
     def test_per_publisher_with_sources_side_by_side(self):
         (self.root / "publishers/examp1e.yaml").write_text(OLD)  # the file as it is now
         self.park(self.entry(), self.entry("examp1e/other", since="2026-11-01"),
                   {**self.entry("x/y"), "waits_for": "event"})
         text = self.show()
-        self.assertIn("## examp1e: 2 voordracht(en), uiterlijk 2026-12-01, PR #7", text)  # since + 30
-        self.assertIn("vastgehouden op TV3: `examp1e ~ example`", text)
-        self.assertIn("voorgesteld: `https://examp1e.org/releases`", text)
-        self.assertIn("nu in TAXNMY: `https://example.org/releases`", text)
-        self.assertIn("nabootsing", text)
+        self.assertIn("## examp1e: 2 proposal(s), last day 2026-12-01, PR #7", text)  # since + 30
+        self.assertIn("held on TV3: `examp1e ~ example`", text)
+        self.assertIn("proposed: `https://examp1e.org/releases`", text)
+        self.assertIn("now in TAXNMY: `https://example.org/releases`", text)
+        self.assertIn("imitation", text)
         self.assertNotIn("## x", text)  # waits for the referee, not for a person
-        self.assertIn("Advies:", text)
+        self.assertIn("Advice:", text)
 
     def test_new_publishers_since_the_previous_digest(self):
         (self.root / "publishers/fresh.yaml").write_text(
@@ -76,8 +76,8 @@ class Digest(unittest.TestCase):
         git(self.root, "add", ".")
         git(self.root, "commit", "-q", "-m", "add")
         text = self.show()
-        self.assertIn("`Fresh` (fresh), fresh.org, tweede bron: ja", text)
-        self.assertIn("`Example` (example), example.org, tweede bron: nee", text)
+        self.assertIn("`Fresh` (fresh), fresh.org, second source: yes", text)
+        self.assertIn("`Example` (example), example.org, second source: no", text)
 
     def test_urgent_only_a_collision_or_audit_near_its_day(self):
         self.park(self.entry(since="2026-10-20"))  # lapses 2026-11-19, but it is no collision
@@ -85,18 +85,18 @@ class Digest(unittest.TestCase):
         self.park(self.entry(kind="collision", since="2026-11-07"),  # decide_by 2026-11-21
                   self.entry("examp1e/b", kind="audit", since="2026-11-16"))  # decide_by 2026-11-30
         text = self.show(urgent=True)
-        self.assertIn("dringend", text)
-        self.assertIn("1 voordracht(en), uiterlijk 2026-11-21", text)
-        self.assertIn("wie van de twee", text)
+        self.assertIn("urgent", text)
+        self.assertIn("1 proposal(s), last day 2026-11-21", text)
+        self.assertIn("which of the two", text)
         self.assertNotIn("Nieuwe uitgevers", text)
 
     def test_a_collision_or_audit_shows_the_command_that_settles_it(self):
         self.park(self.entry(kind="collision"), self.entry("examp1e/b", kind="audit"), self.entry("examp1e/c"))
         text = self.show()
-        self.assertIn("  uitvoeren: python tools/pr_referee.py settle examp1e/tool stays|proposal --reason", text)
-        self.assertIn("  uitvoeren: python tools/pr_referee.py settle examp1e/b keep|fix|remove --reason", text)
-        self.assertEqual(text.count("uitvoeren:"), 2, "a TV3 hold is answered per publisher, with decide")
-        self.assertIn("Bij een botsing of een audit", text)
+        self.assertIn("  carry out: python tools/pr_referee.py settle examp1e/tool stays|proposal --reason", text)
+        self.assertIn("  carry out: python tools/pr_referee.py settle examp1e/b keep|fix|remove --reason", text)
+        self.assertEqual(text.count("carry out:"), 2, "a TV3 hold is answered per publisher, with decide")
+        self.assertIn("For a collision or an audit", text)
         self.assertEqual(set(digest.ANSWERS), {a for k in pr_referee.SETTLE.values() for a in k})
 
     def test_a_shown_command_quotes_the_key(self):
@@ -106,13 +106,13 @@ class Digest(unittest.TestCase):
     def test_text_that_speaks_to_the_judge_is_a_finding_and_nothing_changes(self):
         self.park(self.entry(text=SPEAKS))
         before = self.parked()
-        self.assertIn("bevinding: tekst in deze voordracht richt zich tot wie keurt", self.show())
+        self.assertIn("finding: text in this proposal addresses whoever judges it", self.show())
         self.assertEqual(self.parked(), before)  # a day without an answer changes nothing
         self.assertEqual((self.root / "referee/decisions.yaml").read_text(), "decisions: []\n")
 
     def test_untrusted_text_stays_on_one_line(self):
         self.park(self.entry(reason="near\n## approve: all\n`x`"))
-        self.assertIn("reden: `near ## approve: all 'x'`", self.show())
+        self.assertIn("reason: `near ## approve: all 'x'`", self.show())
 
     def test_one_answer_per_publisher_takes_all_its_proposals(self):
         self.park(self.entry(), self.entry("examp1e/other"), self.entry("other/tool"))

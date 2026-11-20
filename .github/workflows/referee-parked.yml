@@ -1,7 +1,7 @@
 name: referee-parked
 
 # The parking list, weekly (TAX-29). Without a person doing anything but approving the key:
-#   judge    environment referee (the key; Fred approves): what is past its term lapses; an entry
+#   judge    environment referee (the key; a maintainer approves): what is past its term lapses; an entry
 #            that waits for an event is judged again, the referee only if its sources are read now;
 #            an unchanged better-proposal and what waits for a person are not touched. A run with
 #            nothing for the referee costs nothing. It writes nothing to the repository: it keeps

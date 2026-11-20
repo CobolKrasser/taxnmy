@@ -1,4 +1,4 @@
-"""TAX-43: the footer of a page counts for who the publisher is (TR5, the importer), never for TR6.
+"""TAX-43: the footer of a page counts for who the publisher is (TP5, the importer), never for TK2.
 
 The footer is a text of its own (`Source.footer`), next to the text. The switch `fetch.footer_counts()`
 (TAX_FOOTER=1 or 0) says whether it counts; off, nothing changes for code or for the referee.
@@ -52,7 +52,7 @@ class ReaderTest(unittest.TestCase):
         self.assertEqual(fetch.html_to_text(PAGE), text)
 
     def test_the_text_is_the_same_as_before(self):
-        """TR6 stays as it is: the text holds nothing of the header, the nav or the footer."""
+        """TK2 stays as it is: the text holds nothing of the header, the nav or the footer."""
         page = ("<body><nav>Menu</nav><footer>a<nav>b</nav>c<svg>d</svg></footer><p>e</p>"
                 "<footer><footer>f</footer>g</footer>h</body>")
         self.assertEqual(fetch.html_parts(page), ("e h", "a c f g"))
@@ -95,7 +95,7 @@ class ReaderTest(unittest.TestCase):
             self.assertEqual(fetch.publisher_texts(src), ["text", "foot"])
 
     def test_off_until_the_measurement(self):
-        """Eerst de meting, dan de bouw aanzetten (TR12). Flip this only with the three runs in TAX-43."""
+        """Eerst de meting, dan de bouw aanzetten (TG12). Flip this only with the three runs in TAX-43."""
         self.assertFalse(fetch.FOOTER_COUNTS)
 
 
@@ -126,9 +126,9 @@ class RefereeTest(unittest.TestCase):
         self.assertNotIn("page-footer", plain)
         with_footer = referee.load_system_prompt(prompt, footer=True)
         self.assertTrue(with_footer.startswith(plain))
-        self.assertIn("The footer counts only for TR5", with_footer)
-        self.assertNotIn("TR5 The publisher is whoever publishes the updates, and a source shows that.\n",
-                         with_footer[len(plain):], "the question of TR5 is not changed (decision 35, point 3)")
+        self.assertIn("The footer counts only for TP5", with_footer)
+        self.assertNotIn("TP5 The publisher is whoever publishes the updates, and a source shows that.\n",
+                         with_footer[len(plain):], "the question of TP5 is not changed")
 
     def check(self, rule, quote, footer=True, names=("Beta Systems GmbH", "beta systems")):
         verdict = json.loads(reply(**{rule: judgment(quote=quote)}))
@@ -138,27 +138,27 @@ class RefereeTest(unittest.TestCase):
 
     def test_a_footer_quote_holds_for_tr5(self):
         """TV6: a quote from the footer is checked as any other: it stands in the text that was read."""
-        self.assertEqual(self.check("TR5", "© 2026 Beta Systems GmbH"), ("yes", []))
-        self.assertEqual(self.check("TR5", "© 2026 Beta Systems GmbH", footer=False)[0], "doubt",
+        self.assertEqual(self.check("TP5", "© 2026 Beta Systems GmbH"), ("yes", []))
+        self.assertEqual(self.check("TP5", "© 2026 Beta Systems GmbH", footer=False)[0], "doubt",
                          "off: the referee was not shown the footer")
-        self.assertEqual(self.check("TR5", "© 2026 Acme Ltd")[0], "doubt", "not in the footer either")
+        self.assertEqual(self.check("TP5", "© 2026 Acme Ltd")[0], "doubt", "not in the footer either")
 
     def test_break_a_product_name_only_in_the_footer_is_no_tr6(self):
-        """Opzettelijke breuk 1: TR6 never rests on the footer."""
-        verdict, notes = self.check("TR6", "Beta Systems GmbH")
+        """Opzettelijke breuk 1: TK2 never rests on the footer."""
+        verdict, notes = self.check("TK2", "Beta Systems GmbH")
         self.assertEqual(verdict, "doubt")
-        self.assertIn("TR6: quote not found", notes[0])
+        self.assertIn("TK2: quote not found", notes[0])
         own = {URL: Source(URL, "200", f"Some text {TEXT}", footer="Beta Box by Beta Systems GmbH")}
         with on():
-            self.assertNotIn("TR6", gate.decide({"name": "Beta Box", "source": URL}, {"name": "Beta Systems GmbH"},
+            self.assertNotIn("TK2", gate.decide({"name": "Beta Box", "source": URL}, {"name": "Beta Systems GmbH"},
                                                 list(own.values())), "the gate reads only the text")
 
     def test_break_another_party_in_the_footer_is_no_tr5(self):
         """Opzettelijke breuk 2: a hoster or the maker of a theme in the footer, the publisher nowhere."""
-        verdict, notes = self.check("TR5", "Theme by Cloudy Inc.")
+        verdict, notes = self.check("TP5", "Theme by Cloudy Inc.")
         self.assertEqual(verdict, "doubt")
         self.assertIn("does not name the publisher", notes[0])
-        self.assertEqual(self.check("TR5", "Theme by Cloudy Inc.", names=())[0], "doubt", "no name, no footer quote")
+        self.assertEqual(self.check("TP5", "Theme by Cloudy Inc.", names=())[0], "doubt", "no name, no footer quote")
 
     def test_tv1_finds_a_text_in_the_footer(self):
         verdict = json.loads(reply(TV1={"verdict": "no", "reason": "x", "evidence": [{"url": URL, "quote": "Theme by Cloudy Inc."}]}))

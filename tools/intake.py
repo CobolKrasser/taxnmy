@@ -1,5 +1,5 @@
 """The limits of the intake (TAX-32): what one proposal and one submitter may use (TV8), what goes over
-them is rejected and never parked (TV9), known submitters go first (TV10), and the intake can be
+them is rejected and never parked (TV8), known submitters go first (TV10), and the intake can be
 closed without touching how the data is read (TV11).
 
 The values are in referee/intake.yaml, in one place. A submitter is the account of a pull request;
@@ -95,7 +95,7 @@ def urls(files: dict) -> set:
 
 
 def refusals(proposals: list[dict], sub: Submitter | None, cfg: dict, parked: list[dict]) -> dict:
-    """proposal id -> (rule, reason) for each proposal that goes over a limit (TV8, TV9) or finds the
+    """proposal id -> (rule, reason) for each proposal that goes over a limit (TV8, TV8) or finds the
     intake closed (TV11); the others are admitted. Without a submitter (the test set, an import run
     by a maintainer) only the limit per proposal applies. The proposals are taken in their order;
     one that is refused for itself does not use the room of the submitter."""
@@ -107,7 +107,7 @@ def refusals(proposals: list[dict], sub: Submitter | None, cfg: dict, parked: li
     for p in proposals:
         n = len(urls(p["files"]))
         if n > most:
-            out[p["id"]] = ("TV9", f"{n} sources in one proposal; the limit is {most} (TV8)")
+            out[p["id"]] = ("TV8", f"{n} sources in one proposal; the limit is {most} (TV8)")
     if sub is None:
         return out
     limit = open_limit(cfg, sub)
@@ -120,13 +120,13 @@ def refusals(proposals: list[dict], sub: Submitter | None, cfg: dict, parked: li
         if room > 0:
             room -= 1
             continue
-        out[p["id"]] = ("TV9", f"the limit of {limit} open proposals per submitter ({kind}) is reached: "
+        out[p["id"]] = ("TV8", f"the limit of {limit} open proposals per submitter ({kind}) is reached: "
                                f"{waiting} on the parking list, {sub.open_before} in earlier open pull requests (TV8)")
     return out
 
 
 def cap_parking(items: list[dict], on_list: int, cfg: dict) -> list[dict]:
-    """TV9: a new proposal that would be parked while the parking list is full is rejected instead.
+    """TV8: a new proposal that would be parked while the parking list is full is rejected instead.
     Known submitters first, so the room left goes to them. Returns the items it rejected."""
     most = cfg["parking_list"]
     rejected = []
@@ -134,7 +134,7 @@ def cap_parking(items: list[dict], on_list: int, cfg: dict) -> list[dict]:
         if on_list < most:
             on_list += 1
             continue
-        item.update(outcome="reject", rule="TV9", by="code", waits_for="",
+        item.update(outcome="reject", rule="TV8", by="code", waits_for="",
                     reason=f"the parking list is full ({most} proposals); a proposal that would be parked is "
                            f"rejected instead. You may propose it again later")
         rejected.append(item)

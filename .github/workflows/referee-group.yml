@@ -5,7 +5,7 @@ name: referee-group
 # sources: the names are the input.
 #
 #   estimate  the dry run: the estimate and which cases the tester has not checked. No key.
-#   measure   the measurement. Key in environment referee: Fred approves each run. Main only.
+#   measure   the measurement. Key in environment referee: a maintainer approves each run. Main only.
 #
 # The budget is the hard limit in code for every run together ($50, tools/referee.py). The grouping
 # refuses a case whose hand the tester has not checked (status: checked in the test set).

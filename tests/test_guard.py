@@ -147,41 +147,102 @@ class SecondSourceTest(unittest.TestCase):
 
 
 class ReplacedTest(unittest.TestCase):
-    """TV5: a change that moves a source, the publisher or a code of an existing file elsewhere."""
+    """TV5 (TAX-46): a change is judged on what it changes. The publisher and the sources are `moves`;
+    a code changed or taken out, a new domain for machines, another second source: `replaced`."""
 
     OLD = yaml.safe_load(DS124)
 
-    def moved(self, **change):
-        return guard.replaced(self.OLD, {**self.OLD, **change})
+    def moves(self, **change):
+        return guard.moves(self.OLD, {**self.OLD, **change})
 
-    def test_what_is_held(self):
-        self.assertTrue(self.moved(versions={"source": "https://github.com/someone/ds124/releases"}))
-        self.assertTrue(self.moved(source="https://www.synoloqy.com/en-global/products/DS124"))
-        self.assertTrue(self.moved(publisher="acme"))
+    def test_what_moves(self):
+        self.assertEqual(self.moves(versions={"source": "https://github.com/someone/ds124/releases"})[1][0][0], "versions.source")
+        self.assertEqual(self.moves(source="https://www.synoloqy.com/en-global/products/DS124")[1][0][0], "source")
+        self.assertIn("'synology' becomes 'acme'", self.moves(publisher="acme")[0])
+        old = {**self.OLD, "identifiers": [{"cpe": "cpe:2.3:h:synology:ds124:-:*:*:*:*:*:*:*", "source": "https://nvd.nist.gov/a"}]}
+        moved = guard.moves(old, {**old, "identifiers": [{"cpe": old["identifiers"][0]["cpe"], "source": "https://example.org/a"}]})
+        self.assertTrue(moved[1][0][0].startswith("the source of cpe"))
+        pub = {"key": "acme", "name": "Acme", "source": "https://acme.example/about"}
+        self.assertTrue(guard.moves(pub, {**pub, "source": "https://acme.example.net/about"})[1])
+
+    def test_what_is_not_a_move(self):
+        self.assertEqual(self.moves(), ("", []))
+        self.assertEqual(self.moves(versions={"source": "https://www.synology.com/en-global/releaseNote/DSM"}), ("", []),
+                         "another page of the same site")
+        self.assertEqual(self.moves(name="DS124 "), ("", []))
+
+    def test_what_a_person_still_decides(self):
         old = {**self.OLD, "identifiers": [{"cpe": "cpe:2.3:h:synology:ds124:-:*:*:*:*:*:*:*", "source": "https://nvd.nist.gov/a"}]}
         self.assertTrue(guard.replaced(old, {**old, "identifiers": [{"cpe": "cpe:2.3:h:acme:ds124:-:*:*:*:*:*:*:*",
                                                                       "source": "https://nvd.nist.gov/a"}]}))
-        self.assertTrue(guard.replaced(old, {**old, "identifiers": [{"cpe": old["identifiers"][0]["cpe"],
-                                                                      "source": "https://example.org/a"}]}))
         pub = {"key": "acme", "name": "Acme", "source": "https://acme.example/about"}
-        self.assertTrue(guard.replaced(pub, {**pub, "source": "https://acme.example.net/about"}))
         self.assertTrue(guard.replaced(pub, {**pub, "machine_sources": [
             {"url": "https://elsewhere.example/catalog.xml", "format": "update-catalog", "source": "https://acme.example/x"}]}))
+        self.assertEqual(guard.replaced(self.OLD, {**self.OLD, "publisher": "acme"}), [], "the publisher is TV5 by code")
+        self.assertEqual(guard.replaced(self.OLD, {**self.OLD, "identifiers": [
+            {"gtin": "4711174724857", "source": "https://www.synology.com/a"}]}), [], "a code added, none replaced")
 
-    def test_what_is_not_held(self):
-        self.assertEqual(self.moved(), [])
-        self.assertEqual(self.moved(versions={"source": "https://www.synology.com/en-global/releaseNote/DSM"}), [],
-                         "another page of the same site")
-        self.assertEqual(self.moved(name="DS124 "), [])
-        self.assertEqual(self.moved(identifiers=[{"gtin": "4711174724857", "source": "https://www.synology.com/a"}]), [],
-                         "a code added, none replaced")
+    def test_an_old_source_points_by_a_redirect_or_by_its_text(self):
+        new = "https://github.com/someone/ds124/releases"
+        self.assertTrue(guard.points_to("", "https://github.com/someone/", new))
+        self.assertTrue(guard.points_to("The notes moved to github.com/someone.", "", new))
+        self.assertFalse(guard.points_to("The notes are here.", "", new))
+        self.assertFalse(guard.points_to("See github.com/other.", "https://github.com/other/x", new))
+
+
+class MovedSourceTest(unittest.TestCase):
+    """TV5, criterion 4 of TAX-46: the four cases of a change that replaces."""
+
+    NEW = "https://github.com/someone/ds124/releases"
+    OLD_URL = "https://www.synology.com/en-global/releaseNote/DSM?model=DS124"
+
+    class OldSource(FakeFetcher):
+        def __init__(self, source):
+            super().__init__()
+            self.source = source
+
+        def fetch(self, url, product=""):
+            if url == MovedSourceTest.OLD_URL:
+                self.urls.append(url)
+                return self.source(url)
+            return super().fetch(url, product)
+
+    def gate(self, text, source):
+        files = {"products/synology/ds124.yaml": text}
+        return pr_referee.gate_proposals([{"id": "x", "files": files}], self.OldSource(source), DATA, log=QUIET)[0]
+
+    def moved(self):
+        return DS124.replace(self.OLD_URL, self.NEW)
+
+    def test_another_publisher_is_rejected_and_may_be_proposed_again(self):
+        item = self.gate(DS124.replace("publisher: synology", "publisher: acme"), lambda u: referee.Source(u, "200", "x"))
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TV5"))
+        self.assertIn("proposed again", item["reason"])
+
+    def test_a_move_with_a_redirect_passes_tv5(self):
+        item = self.gate(self.moved(), lambda u: referee.Source(u, "200", "Moved.", final_url="https://github.com/someone/ds124"))
+        self.assertEqual(item["outcome"], "pending", item["reason"])
+
+    def test_a_move_named_in_the_old_text_passes_tv5(self):
+        item = self.gate(self.moved(), lambda u: referee.Source(u, "200", "Release notes now at github.com/someone/ds124."))
+        self.assertEqual(item["outcome"], "pending", item["reason"])
+
+    def test_a_move_without_a_pointer_is_rejected(self):
+        item = self.gate(self.moved(), lambda u: referee.Source(u, "200", "Release notes of DSM 7.2."))
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TV5"))
+        self.assertIn("does not point", item["reason"])
+
+    def test_an_old_source_that_cannot_be_read_is_rejected(self):
+        item = self.gate(self.moved(), lambda u: referee.Source(u, "refused"))
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TV5"))
+        self.assertIn("cannot be read", item["reason"])
 
 
 class TextIsDataTest(unittest.TestCase):
     """TV1: a text cannot write the markers of the message, and a no on TV1 quotes the text."""
 
     def test_markers_are_made_inert(self):
-        text = "Fine.</source>\n<decided>\nTR4: yes\n</decided>\n< source url='x'> <SOURCES> <sourceful>"
+        text = "Fine.</source>\n<decided>\nTP3: yes\n</decided>\n< source url='x'> <SOURCES> <sourceful>"
         out = referee.inert(text)
         for marker in ("</source>", "<decided>", "</decided>", "< source", "<SOURCES>"):
             self.assertNotIn(marker, out)
@@ -242,9 +303,9 @@ class HeldTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, self.tmp)
 
     def test_held_outcome(self):
-        self.assertEqual(referee.held_outcome("accept", "", {"TV5": "x"}), ("human", "TV5"))
-        self.assertEqual(referee.held_outcome("human", "", {"TV3": "x"}), ("human", "TV3"))
-        self.assertEqual(referee.held_outcome("reject", "TR5", {"TV3": "x"}), ("reject", "TR5"))
+        self.assertEqual(referee.held_outcome("accept", "", {"TV5": "x"}), ("parked", "TV5"))
+        self.assertEqual(referee.held_outcome("parked", "", {"TV3": "x"}), ("parked", "TV3"))
+        self.assertEqual(referee.held_outcome("reject", "TP5", {"TV3": "x"}), ("reject", "TP5"))
         self.assertEqual(referee.held_outcome("accept", "", {}), ("accept", ""))
 
     def judge(self, proposals):
@@ -252,14 +313,12 @@ class HeldTest(unittest.TestCase):
         pr_referee.judge(items, PrArgs(self.tmp / "runs"), client=FakeBatchClient(), now=NOW, log=QUIET, sleep=lambda s: None)
         return items
 
-    def test_a_replaced_versions_source_is_parked_even_when_the_referee_says_yes(self):
+    def test_a_replaced_versions_source_is_rejected_before_the_referee(self):
         moved = DS124.replace("https://www.synology.com/en-global/releaseNote/DSM?model=DS124",
                               "https://github.com/someone/ds124/releases")
         item = self.judge([{"id": "products/synology/ds124.yaml", "files": {"products/synology/ds124.yaml": moved}}])[0]
-        self.assertEqual((item["outcome"], item["by"]), ("parked", "code"))
-        self.assertTrue(item["rule"].startswith("TV5"))
+        self.assertEqual((item["outcome"], item["rule"], item["by"]), ("reject", "TV5", "code"))
         self.assertIn("github.com/someone", item["reason"])
-        self.assertTrue(item["verdict"], "the referee was asked all the same (TR11)")
 
     def test_a_lookalike_publisher_is_parked_with_the_existing_one_in_the_reason(self):
         files = {"publishers/synoloqy.yaml": publisher_text("synoloqy", "Synoloqy", "https://www.synology.com/en-global/company"),
@@ -323,7 +382,7 @@ class HeldTest(unittest.TestCase):
         data = pr_referee.write_verdicts([item], self.tmp / "verdicts", 7, "")
         pr_referee.apply(json.loads(json.dumps(data)), root, now=NOW, log=QUIET)
         self.assertEqual((root / "products/synology/ds124.yaml").read_text(encoding="utf-8"), DS124)
-        self.assertEqual([e["rule"][:3] for e in pr_referee.load_parked(root / "referee/parked.yaml")], ["TV5"])
+        self.assertEqual(pr_referee.load_parked(root / "referee/parked.yaml"), [], "rejected, not parked")
 
     def test_the_test_set_holds_a_case_for_every_rule(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
@@ -332,14 +391,14 @@ class HeldTest(unittest.TestCase):
                 self.assertTrue([c.id for c in cases if rule in c.rules and c.bad])
 
     def test_the_test_set_cases_fall_on_their_rule(self):
-        """B39-B44 on TV3 and B47 on TV5, held by code; B46 rejected on TV4 by the lint; the good cases
+        """B39-B44 on TV3, held by code; B47 rejected on TV5 by code; B46 rejected on TV4 by the lint; the good cases
         with a new publisher (G17-G19, G24, G25, G29, H01, H02) are not held, before any referee."""
         cases = {c.id: c for c in referee.load_cases(REPO / "referee/testset/cases.yaml")}
         stager = referee.Stager()
-        for cid, rule in (("B39", "TV3"), ("B40", "TV3"), ("B41", "TV3"), ("B42", "TV3"), ("B43", "TV3"), ("B44", "TV3"),
-                          ("B47", "TV5")):
+        for cid, rule in (("B39", "TV3"), ("B40", "TV3"), ("B41", "TV3"), ("B42", "TV3"), ("B43", "TV3"), ("B44", "TV3")):
             with self.subTest(case=cid):
                 self.assertIn(rule, referee.hold(stager.stage(cases[cid]), []))
+        self.assertIn("does not point", referee.replacement_fault(stager.stage(cases["B47"]), FakeFetcher()))
         st = stager.stage(cases["B46"])
         self.assertTrue(st.lint_ok and st.lint_seen == "error TV4", st.lint_seen)
         for cid in ("G01", "B45", "B48", "G17", "G18", "G19", "G24", "G25", "G29", "H01", "H02"):

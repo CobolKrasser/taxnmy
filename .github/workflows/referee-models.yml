@@ -4,13 +4,13 @@ name: referee-models
 # runs per stand, compared with run A2. Started by hand. No web search: the sources of A2 come from
 # its artifact, and job sources reads only those of the cases A2 did not have (TAX-24, TAX-18).
 #
-# Two jobs, so that the key never comes near code from other sites (hosting plan §8):
+# Two jobs, so that the key never comes near code from other sites:
 #   sources  keeps the sources of A2 and fetches what they lack, with the ladder (steps 0-3) and a
 #            headless browser. No key. It may run from any branch: that is free.
 #   measure  the estimate (live off) or the measurement (live on). Key in environment referee:
-#            Fred approves each run, also the free token count. Main only.
+#            a maintainer approves each run, also the free token count. Main only.
 #
-# The budget is a hard limit in code, for every run together: $50 (Fred, 17 November 2026; it was
+# The budget is a hard limit in code, for every run together: $50 (17 November 2026; it was
 # $20). About $13.15 is spent. The probe measures three cases per stand first and stops the
 # measurement when the extrapolated total would pass the budget. Sonnet 5.5 at low and at medium,
 # three runs each, is estimated at about $6.
@@ -28,11 +28,11 @@ on:
         default: true
       models:
         type: string
-        default: "claude-sonnet-5-5"
+        default: "claude-opus-5-5"
       efforts:
         description: "one stand per model and effort (low, medium, high), separated by spaces"
         type: string
-        default: "low medium"
+        default: "low"
       repeats:
         type: string
         default: "3"

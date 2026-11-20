@@ -1,6 +1,6 @@
 name: referee-pr-testset
 
-# The test set as one pull request (TAX-17): the 96 cases of referee/testset/cases.yaml through the
+# The test set as one pull request (TAX-17): the 99 cases of referee/testset/cases.yaml through the
 # same gate and the same batch as referee-pr, each staged as referee/README.md § Staging a case says.
 # Started by hand, from main. It reads no artifact from outside, only the test set in the repository.
 
@@ -28,7 +28,7 @@ on:
         type: string
         default: ""
       footer:
-        description: "TAX-43: show the referee the page footer, for TR5 only (the measurement of TR12); off: as the code says (FOOTER_COUNTS)"
+        description: "TAX-43: show the referee the page footer, for TP5 only (the measurement of TG12); off: as the code says (FOOTER_COUNTS)"
         type: boolean
         default: false
 

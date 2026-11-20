@@ -3,7 +3,7 @@
 This is the prompt of the grouping step. A dataset of others writes one product per record: one
 product gets several names, and an edition or a series stands as a product. One request per
 publisher sorts every name given for it into a class, so that one product gets one key and the
-other writings become aliases. It is TR4 applied to a list instead of to one proposal.
+other writings become aliases. It is TP3 applied to a list instead of to one proposal.
 
 The grouping is not the referee. A name classed *product* is a candidate: it is proposed and judged
 by the referee like any proposal, with its own sources (`prompt.md`). The answer is never a source

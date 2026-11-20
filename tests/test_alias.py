@@ -130,7 +130,7 @@ class Gate(unittest.TestCase):
 
     def test_the_key_of_another_product_is_rejected_by_the_lint(self):
         item = self.gate("synology/ds224-plus")
-        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TR3"))
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TK3"))
 
     def test_an_alias_that_looks_like_another_product_waits_for_a_person(self):
         item = self.gate("synology/ds224-pius", fetcher=Fetcher(page="the DS224 pius"))
@@ -158,7 +158,7 @@ class Gate(unittest.TestCase):
         self.assertEqual((item["outcome"], item["ask"], item["alias"]), ("pending", "alias", ["synology/diskstation-one-two-four"]))
         self.assertIn("<alias>synology/diskstation-one-two-four</alias>", item["message"])
         self.assertIn(URL, item["message"])
-        self.assertNotIn("TR5", item["message"])
+        self.assertNotIn("TP5", item["message"])
 
     def test_a_yes_with_a_quote_of_a_read_source_is_accepted(self):
         name = "synology/diskstation-one-two-four"

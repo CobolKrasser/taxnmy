@@ -3,7 +3,7 @@ name: referee-pr-collect
 # The first half of the referee on a pull request (TAX-17). It runs the code of the pull request,
 # so it gets no key and no write access: it only keeps the data files the pull request adds or
 # changes as an artifact. The workflow referee-pr reads that artifact, on main, and judges it.
-# No pull_request_target (hosting-taxnmy-publiek.md §4 in keepitfresh).
+# No pull_request_target.
 
 on:
   pull_request:
