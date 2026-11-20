@@ -48,6 +48,7 @@ import jsonschema
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import archive  # noqa: E402
 import gate  # noqa: E402
 import guard  # noqa: E402
 import keyrule  # noqa: E402
@@ -96,9 +97,9 @@ CASE_SCHEMA = {
         "id": {"type": "string", "pattern": "^[GHB][0-9]{2}$"},
         "type": {"type": "string"},
         "expect": {"type": "array", "items": {"enum": list(OUTCOMES)}, "minItems": 1},
-        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TP[13]|TP5|TK[23]|TE1|TV[1-6])$"}},
+        "rules": {"type": "array", "items": {"type": "string", "pattern": "^(TP[13]|TP5|TP10|TK[23]|TE1|TV[1-6])$"}},
         "alias_of": {"type": "string"},
-        "lint": {"type": "string", "pattern": "^(pass|signal|error (TE1|TK[234]|TV[45]))$"},
+        "lint": {"type": "string", "pattern": "^(pass|signal|error (TE1|TK[234]|TV[45]|TP10))$"},
         "holdout": {"type": "array", "items": {"type": "string"}},
         "hide": {"type": "array", "items": {"type": "string"}},
         "context": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -267,7 +268,8 @@ class Stager:
         # A file of the context that the proposal changes is an existing one too (the case says so).
         old.update({rel: context[rel] for rel in files if rel in context})
         findings = publisher_replaced(old, files) + kept_keys(
-            old, files, {rel: self.data.texts[rel] for rel in deleted if rel in self.data.texts and rel not in removed}) + findings
+            old, files, {rel: self.data.texts[rel] for rel in deleted if rel in self.data.texts and rel not in removed}) \
+            + archive.faults(old, files) + findings
         self.view = {**removed, **context, **{rel: None for rel in files}}  # the proposal is not part of what exists
         return Staged(files=files, findings=findings, lint_ok=True, lint_seen=lint_summary(findings),
                       existing=self._existing(files, findings), publisher_source=self._publisher_source(files),

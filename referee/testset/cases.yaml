@@ -1,6 +1,6 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 99 proposals: 37 good (3 of them now expected parked: their sources redirect, TAX-38), 60 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 104 proposals: 39 good (3 of them now expected parked: their sources redirect, TAX-38), 63 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
@@ -1693,3 +1693,152 @@ cases:
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jenkins.md
       aliases: []
   note: TAX-46, point 4c. The versions source moves to another domain, and the old source cannot be read. TV5 rejects it.
+
+# ---------------------------------------------------------------------------------------------
+# TP10 — a product is archived only on a proposal for it, and taken up again the same way
+# (TAX-47). The source is a page of the publisher, on its domain; the end is quoted from it.
+# ---------------------------------------------------------------------------------------------
+
+- id: G38
+  type: archive
+  expect: [accept]
+  lint: pass
+  proposal:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      archived:
+        source: https://blog.centos.org/2020/12/future-is-centos-stream/
+  verify: [https://blog.centos.org/2020/12/future-is-centos-stream/]
+  note: TAX-47, case 1. The publisher writes that it shifts from CentOS Linux to CentOS Stream and that CentOS Linux ends. The page is on centos.org, the publisher's domain.
+- id: B61
+  type: archive
+  expect: [parked, reject]
+  rules: [TP10]
+  lint: pass
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+      archived:
+        source: https://www.postgresql.org/about/
+  verify: [https://www.postgresql.org/about/]
+  note: TAX-47, case 2. The page is the publisher's, but it shows a product in active development, not its end. Without the check on the quote this case is accepted (the deliberate break of the story).
+- id: B62
+  type: archive
+  expect: [reject]
+  rules: [TP10]
+  lint: pass
+  proposal:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      archived:
+        source: https://endoflife.date/centos
+  note: TAX-47, case 3. The page that names the end is not on the publisher's domain. Code rejects it before any AI.
+- id: G39
+  type: resume
+  expect: [accept]
+  lint: pass
+  context:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+      archived:
+        source: https://www.postgresql.org/about/
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+      resumed:
+        source: https://www.postgresql.org/
+  verify: [https://www.postgresql.org/]
+  note: TAX-47, criterion 8. The product is archived in the context; the publisher's front page shows a new release, so it gets updates again.
+- id: B63
+  type: resume
+  expect: [parked, reject]
+  rules: [TP10]
+  lint: pass
+  context:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      archived:
+        source: https://blog.centos.org/2020/12/future-is-centos-stream/
+  proposal:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      resumed:
+        source: https://www.centos.org/centos-linux/
+  verify: [https://www.centos.org/centos-linux/]
+  note: TAX-47, criterion 8. The product is archived in the context; the page proposed gives the end of life of its last version, not new updates. It stays archived.

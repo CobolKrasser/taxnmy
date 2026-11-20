@@ -34,8 +34,15 @@ a **person**, a **measurement**, or the **set-up** of the repository and its wor
 | TP7 | The AI models of a provider are together one product, with the model names as versions. | AI |
 | TP8 | A product has no required parent. | code |
 | TP9 | TAXNMY records only this about a product: the names, the kind, the sources and the identifiers. No instances, specifications, prices or composition. | code |
+| TP10 | A product is archived only on a proposal to do so. | code where it can, otherwise AI |
 
-TP6 and TP10 are decided but not yet in force; see below.
+TP6 is decided but not yet in force; see below.
+
+*On TP10.* Archived means the publisher has ended the product: it gets no more updates. The
+proposal gives a page of the publisher, on its domain, that shows the end (`archived`), and the
+same way a page that shows updates again (`resumed`). Code checks the domain; the AI says whether
+the page shows it, with a quote that code finds. The product keeps its key and its aliases.
+Nothing in TAXNMY archives a product by itself, after a term or a count.
 
 *On TP3.* A proposal that is a variant of an existing product becomes an alias of it. A *yes* on
 TP3 quotes a version from the versions source.
@@ -169,7 +176,6 @@ check them. When one is built, it moves to its series above with the same number
 | # | requirement | by |
 | --- | --- | --- |
 | TP6 | A service belongs in TAXNMY if the consumer decides which version runs and when to upgrade. | AI |
-| TP10 | A product is archived only on a proposal to do so. | code and AI |
 | TE3 | A source is reliable if the publisher writes it itself. | code and AI |
 | TE8 | A third-party dataset supplies only candidates, a reference to a page of the publisher, or the evidence of its own identifier. | code |
 | TG1 | TAXNMY is maintained by the community, publishers and, where it can, AI. Support in the community is a goal. | — |

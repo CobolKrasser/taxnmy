@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/product.schema.json",
   "title": "TAXNMY product",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "One product that can receive updates. Stored as products/<publisher>/<product>.yaml. The form of the key (rule TK2) and uniqueness (rule TK3) are checked by tools/lint.py, not by this schema. A product has no parent field: software does not need a parent product.",
   "type": "object",
   "additionalProperties": false,
@@ -49,9 +49,27 @@
       "type": "array",
       "uniqueItems": true,
       "items": { "$ref": "#/$defs/alias" }
+    },
+    "archived": {
+      "description": "The publisher has ended the product: it gets no more updates (rule TP10). Set only by a change that proposes it. The product keeps its key and its aliases.",
+      "$ref": "#/$defs/lifecycle"
+    },
+    "resumed": {
+      "description": "The publisher took up an archived product again: it gets updates again (rule TP10). It replaces `archived`.",
+      "$ref": "#/$defs/lifecycle"
     }
   },
+  "not": { "required": ["archived", "resumed"] },
   "$defs": {
+    "lifecycle": {
+      "description": "A page of the publisher, on the publisher's domain, that shows the change.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source"],
+      "properties": {
+        "source": { "$ref": "#/$defs/url" }
+      }
+    },
     "url": {
       "description": "A page on a public address, over https only. The host is checked by tools/lint.py: no IP address, no localhost, no internal name (TAX-34).",
       "type": "string",
