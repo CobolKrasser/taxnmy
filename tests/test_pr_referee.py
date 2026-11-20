@@ -334,10 +334,10 @@ class PrRefereeTest(unittest.TestCase):
 
     # the real test set, as one pull request
 
-    def test_the_test_set_becomes_104_proposals(self):
+    def test_the_test_set_becomes_110_proposals(self):
         proposals = pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml")
-        self.assertEqual(len(proposals), 104)
-        self.assertEqual(len([p for p in proposals if p["id"].startswith("B")]), 63)
+        self.assertEqual(len(proposals), 110)
+        self.assertEqual(len([p for p in proposals if p["id"].startswith("B")]), 66)
         self.assertTrue(all(p["case"]["expect"] for p in proposals))
 
     def test_score_counts_parked_as_human(self):

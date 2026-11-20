@@ -249,8 +249,8 @@ class RefereeTest(unittest.TestCase):
     def test_te4_cases_are_the_default_outside_fetched(self):
         cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
         self.assertEqual([c.id for c in referee.select(cases, None, "memory")], list(referee.TE4_CASES))
-        self.assertEqual(len(referee.select(cases, None, "fetched")), 104)
-        self.assertEqual(len(referee.select(cases, ["all"], "web")), 104)
+        self.assertEqual(len(referee.select(cases, None, "fetched")), 110)
+        self.assertEqual(len(referee.select(cases, ["all"], "web")), 110)
 
     # staging and the message
 
@@ -815,7 +815,7 @@ class TestsetTest(unittest.TestCase):
     """The real test set, staged on the real data, without network or API."""
 
     def test_every_case_matches_its_lint_field(self):
-        self.assertEqual(len(self.cases), 104)
+        self.assertEqual(len(self.cases), 110)
         mismatched = {}
         for case in self.cases:
             staged = self.staged[case.id]

@@ -128,6 +128,8 @@ the publisher, it names that domain, and it is recorded with the publisher.
 *On TV5.* The old source points to the new domain if it redirects there, or if its text names the
 new domain. A source that moves within the domain of the publisher is allowed. A source that is
 gone: a maintainer takes the product out (TK3), and it is proposed again.
+A change that only adds an alias, an identifier, a source for machines or a second source is
+judged on the addition. What code cannot show of an identifier gets the whole review.
 
 *On "a person" (TV3).* A person is a maintainer who looks and decides; not an AI and not code.
 A decision about a publisher is recorded and applies to every later proposal of that publisher. The
