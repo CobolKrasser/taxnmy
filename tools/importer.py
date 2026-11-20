@@ -10,25 +10,35 @@ Three inputs, none of them a source for a name or a publisher on its own:
                      productpagina_url;versiepagina_url;opmerking
     the list         the KEV list of CISA and the CVE records of its entries (CVE List v5): the names
                      that are asked of the grouping (tools/group.py, TAX-26)
-    the grouping     optional: classes.json of `importer.py group --live`; a name classed series,
-                     edition or doubt is parked, an alias is added to the product it names
+    the grouping     optional: classes.json of `importer.py group --live`; see below what a class
+                     series, edition or doubt does; an alias is added to the product it names
 
 Per found row, code decides one outcome, in this order:
 
-    parked     series            the row is more than one product, or a part
-               edition           the row is an edition or a version of another product
+    apart      series            the row is more than one product, or a part (the find round says so)
+               edition           the row is an edition or a version of another product (idem)
                not-found         no name, no product page, or no publisher
-               grouping          the grouping classed the name series, edition or doubt
+               grouped-series    the grouping classed the name series of no product: a range of products
+               grouped-edition   the grouping classed the name edition or series of a product that TAX has
+                                 or this proposal brings (TAX-42); of another product, the row is a product
+    parked     grouping          the grouping doubts, and the find round gave no product and versions page;
+                                 with both, the row is proposed with the doubt for the referee (TAX-44)
     alias      same-row          an earlier row gives the same key
                existing          TAX has the product already (by key, alias or name, TV2)
                grouping          the grouping classed the name alias of another product
     parked     no-kind           no kind
-               no-versions       no versions page
-               no-publisher-page a new publisher, and no page of its own names it (TV4, decision 28)
+    apart      no-versions       no versions page
+    parked     no-publisher-page a new publisher, and no page of its own names it (TV4, decision 28)
                closed            a source refuses bots (401, 403, 429, robots.txt); never worked around
                unreadable        a source gives no text (404, an error, too little text)
+               moved             a source redirects, and the address it ends at redirects again
                name-not-on-page  the product page, after its redirects, does not show the name
     candidate                    product file (and publisher file) for the gate and the referee
+
+A source of the find round that redirects (TAX-38) is proposed once at the address it ends at
+(TAX-42): here the round is the submitter. That address is checked like any other source, and as
+the round chose it, not the finder, it must show the name, the versions page too. When it redirects
+again, the row stays parked: there is no second try.
 
 Every value that is not a URL counts as empty in a URL field, and a placeholder ("niet gevonden",
 "n/a", ...) counts as empty in a name field. With --fetch every page is read by the reader of the
@@ -90,23 +100,28 @@ NOTE_EDITION = re.compile(r"^\s*editie of versie van\s+(.+?)\s*$", re.I)
 NOTE_UNSUPPORTED = re.compile(r"niet meer ondersteund", re.I)
 COST_PER_PROPOSAL = 0.027  # dollars per proposal for the referee: Opus 5.5 at effort low, measured (TAX-18)
 CLOSED = {"refused", "disallowed", "429"}
-# What the find round itself set aside as no product or without a versions page (decision 33): apart
-# in the count, and not counted for the threshold of the trial.
-FOUND_ASIDE = {"series", "edition", "not-found", "no-versions"}
+# What the find round itself set aside as no product or without a versions page (decision 33), and
+# what the grouping showed to be a range of products or an edition of a product that is there
+# (TAX-42): apart in the count, and not counted for the threshold.
+FOUND_ASIDE = {"series", "edition", "not-found", "no-versions", "grouped-series", "grouped-edition"}
+DOUBT = "de namen alleen beslissen het niet"  # the grouping's reason when classes.json gives none
 
 # reason -> (what the report says, what the parked entry waits for)
 PARK = {
     "series": ("reeks of onderdeel", "better-proposal"),
     "edition": ("versie of editie", "better-proposal"),
     "not-found": ("niet gevonden: geen naam, productpagina of uitgever", "better-proposal"),
-    "grouping": ("het groeperen: reeks, editie of twijfel", "better-proposal"),
+    "grouped-series": ("reeks volgens het groeperen", "better-proposal"),
+    "grouped-edition": ("editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen)",
+                        "better-proposal"),
+    "grouping": ("het groeperen twijfelt, en de vindronde gaf geen productpagina en versiepagina", "better-proposal"),
     "no-kind": ("geen kind", "better-proposal"),
     "no-versions": ("geen versions.source", "better-proposal"),
     "no-publisher-page": ("nieuwe uitgever zonder eigen pagina met zijn naam", "better-proposal"),
     "closed": ("gesloten bron", "event"),
     "unreadable": ("bron niet leesbaar", "event"),
     "name-not-on-page": ("naam niet op de productpagina", "better-proposal"),
-    "moved": ("bron verwijst door naar een ander adres", "better-proposal"),
+    "moved": ("bron verwijst door, ook vanaf het eindadres", "better-proposal"),
 }
 ALIAS = {
     "same-row": "zelfde product als een eerdere rij",
@@ -183,6 +198,8 @@ class Outcome:
     of: str = ""  # alias: the key it is another writing of
     detail: str = ""
     aliases: list = field(default_factory=list)  # candidate: keys of other writings (grouping)
+    doubt: str = ""  # the reason of the grouping when it doubted, and the row is proposed all the same (TAX-44)
+    moves: list = field(default_factory=list)  # [address of the find round, address it ended at] (TAX-42)
 
     @property
     def label(self) -> str:
@@ -237,12 +254,16 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
     keys = existing_keys(data_root)
     out, taken = [], {}  # taken: key -> the outcome of the candidate that holds it
     later = []  # (outcome, the key the grouping points to): settled once every row is planned
+    editions = []  # (outcome, the key of the product the grouping says it belongs to): idem (TAX-42)
     for row in rows:
         pub, known = publisher_of(row, index)
         listed_key = product_key(pub, row.listed) if pub and row.listed else ""
         key = product_key(pub, row.name) if pub and row.name else ""
         o = Outcome(row=row, outcome="parked", key=key or listed_key, publisher=pub, new_publisher=bool(pub) and not known)
         sorted_as = (classes.get(pub) or {}).get(group.part(row.name)) if row.name else None
+        grouped = sorted_as["class"] if sorted_as else ""
+        if grouped == "doubt":
+            o.doubt = sorted_as.get("reason") or DOUBT
         if NOTE_SERIES.match(row.note):
             o.reason, o.key = "series", listed_key or key
         elif m := NOTE_EDITION.match(row.note):
@@ -252,12 +273,24 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
             o.reason = "not-found"
             o.detail = ", ".join(w for w, v in (("naam", row.name), ("productpagina", row.source),
                                                 ("uitgever", known or row.publisher)) if not v)
-        elif sorted_as and sorted_as["class"] in ("series", "edition", "doubt"):
-            o.reason, o.detail = "grouping", sorted_as["class"]
+        elif grouped == "series" and not sorted_as.get("of"):
+            o.reason, o.detail = "grouped-series", sorted_as.get("reason") or ""
+        elif grouped in ("series", "edition"):
+            of = sorted_as.get("of") or ""
+            target = of if "/" in of else (product_key(pub, of) if of else "")
+            if target and target != key and target in keys:
+                o.reason, o.of, o.detail = "grouped-edition", target, f"{grouped} van {target} (in TAX)"
+            else:
+                editions.append((o, target))  # in this proposal, or no product at all: decided below
+        elif grouped == "doubt" and not (row.source and row.versions):
+            # TAX-44: only with a product page and a versions page can the referee judge TR4 on the sources.
+            o.reason = "grouping"
+            o.detail = o.doubt + "; " + ", ".join(w for w, v in (("productpagina", row.source),
+                                                                  ("versiepagina", row.versions)) if not v) + " ontbreekt"
         elif key in taken:
             o.outcome, o.reason, o.of = "alias", "same-row", key
             o.detail = f"rij {taken[key].row.where}" + (f"; {row.note}" if NOTE_SAME.match(row.note) else "")
-        elif (hit := (have.get(pub) or {}).get(key.split("/", 1)[1]) or (have.get(pub) or {}).get(group.part(row.name))):
+        elif hit := existing_hit(have, pub, key, row.name):
             o.outcome, o.reason, o.of = "alias", "existing", hit
         elif sorted_as and sorted_as["class"] == "alias" and sorted_as.get("of"):
             target = sorted_as["of"] if "/" in sorted_as["of"] else product_key(pub, sorted_as["of"])
@@ -278,7 +311,27 @@ def plan(rows: list[Row], data_root: Path = REPO, classes: dict | None = None) -
         as_product(o, taken)
         if o.outcome == "candidate" and target and target != o.key and not keyrule.key_problems(target):
             o.aliases.append(target)
+    # TAX-42: an edition or a series only of a product TAX has or this proposal brings. Otherwise the
+    # row gets the outcome it would get as a product: a candidate, set aside, or parked with the reason.
+    for o, target in editions:
+        grouped = "editie of reeks"
+        if target and target != o.key and target in taken:
+            o.reason, o.of = "grouped-edition", target
+            o.detail = f"{grouped} van {target} (rij {taken[target].row.where})"
+        elif hit := existing_hit(have, o.publisher, o.key, o.row.name):
+            o.outcome, o.reason, o.of = "alias", "existing", hit
+        else:
+            as_product(o, taken)
+            if o.outcome == "candidate" or not o.detail:
+                note = f"het groeperen: {grouped} van {target or 'een product'}, dat niet in TAX staat en niet is voorgedragen"
+                o.detail = "; ".join(d for d in (o.detail, note) if d)
     return out
+
+
+def existing_hit(have: dict, pub: str, key: str, name: str) -> str:
+    """The key of the product in TAX this row names (by key, alias or name, TV2), or ''."""
+    parts = have.get(pub) or {}
+    return parts.get(key.split("/", 1)[1]) or parts.get(group.part(name)) or ""
 
 
 def as_product(o: Outcome, taken: dict) -> None:
@@ -308,6 +361,13 @@ def dangling(outcomes: list, keys: set) -> list:
     """Rows whose outcome is alias of a product that is neither in TAX nor proposed now (TAX-39)."""
     proposed = {o.key for o in outcomes if o.outcome == "candidate"}
     return [o for o in outcomes if o.outcome == "alias" and o.of not in keys and o.of not in proposed]
+
+
+def orphans(outcomes: list, keys: set) -> list:
+    """Rows set apart as an edition or a series of a product that is neither in TAX nor proposed now
+    (TAX-42): the product would disappear unseen."""
+    proposed = {o.key for o in outcomes if o.outcome == "candidate"}
+    return [o for o in outcomes if o.reason == "grouped-edition" and o.of not in keys and o.of not in proposed]
 
 
 def add_grouped_aliases(outcomes: list[Outcome], classes: dict) -> dict:
@@ -419,22 +479,40 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
         if not gate.read(src):
             return "unreadable", f"{url}: {src.status}"
         if end := ends_elsewhere(src):  # TAX-38: the text is that of another address
-            return "moved", f"{url} -> {end}"
+            return "moved", end
         return None
 
     for o in outcomes:
         if o.outcome != "candidate":
             continue
         for url in dict.fromkeys([o.row.source, o.row.versions]):
-            if p := problem(url):
+            p = problem(url)
+            if p and p[0] == "moved":
+                # TAX-42: the round proposes the address it ended at, once; that page is checked like any other.
+                end = p[1]
+                again = problem(end)
+                if again and again[0] == "moved":
+                    p = ("moved", f"{url} -> {end} -> {again[1]}: het eindadres verwijst opnieuw door, geen tweede poging")
+                else:
+                    p = again
+                    o.moves.append([url, end])
+                    o.row.source = end if o.row.source == url else o.row.source
+                    o.row.versions = end if o.row.versions == url else o.row.versions
+            if p:
                 o.outcome, (o.reason, o.detail) = "parked", p
                 break
         else:
-            text = fetcher.fetch(o.row.source, "").text
-            if not gate.appears(o.row.name, text):
-                o.outcome, o.reason = "parked", "name-not-on-page"
-                moved = final.get(o.row.source)
-                o.detail = f"{o.row.name!r} niet op {o.row.source}" + (f" (omgeleid naar {moved})" if moved else "")
+            # The page the round proposed itself must show the name: the finder did not choose it.
+            for url in dict.fromkeys([o.row.source, *(end for _, end in o.moves)]):
+                if not gate.appears(o.row.name, fetcher.fetch(url, "").text):
+                    o.outcome, o.reason = "parked", "name-not-on-page"
+                    asked, moved = next((a for a, e in o.moves if e == url), ""), final.get(url)
+                    o.detail = f"{o.row.name!r} niet op {url}" + (f" (eindadres van {asked})" if asked
+                                                                 else f" (omgeleid naar {moved})" if moved else "")
+                    break
+        if o.moves:
+            moved = "; ".join(f"{a} -> {e}" for a, e in o.moves)
+            o.detail = "; ".join(d for d in (o.detail, f"eindadres voorgedragen: {moved}") if d)
 
     publishers: dict = {}
     by_pub: dict = {}
@@ -448,6 +526,8 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
         chosen = closed = ""
         for url in tries:
             src = fetcher.fetch(url, "")
+            if end := ends_elsewhere(src):  # TAX-42: the address it ends at, once
+                url, src = end, fetcher.fetch(end, "")
             if src.status in CLOSED:
                 closed = closed or url
                 continue
@@ -542,17 +622,36 @@ def apply_gate(outcomes: list[Outcome], items: list[dict]) -> None:
             o.reason = f"{item['rule']}: {item['reason'][:160]}"
 
 
+def mark_doubt(outcomes: list[Outcome], items: list[dict]) -> None:
+    """TAX-44: a proposal the grouping doubted says so to the referee, with the grouping's reason,
+    as a line on TR4 in the block of what code decided (referee/prompt.md, User message)."""
+    doubt = {f"products/{o.key}.yaml": o.doubt for o in outcomes if o.outcome == "candidate" and o.doubt}
+    for item in items:
+        if item["outcome"] != "pending" or item["id"] not in doubt or "TR4" not in item.get("ai_rules", []):
+            continue
+        item["doubt"] = doubt[item["id"]]
+        line = ("TR4 in part: the grouping, which sees only the names of this publisher, could not decide whether "
+                f"this is a product of its own: {referee.inert(doubt[item['id']])}. Judge TR4 on the sources.")
+        message = item["message"]
+        if "\nJudge only: " in message:
+            item["message"] = message.replace("\nJudge only: ", f"\n{line}\nJudge only: ", 1)
+        else:
+            rules = ", ".join(item["ai_rules"])
+            item["message"] = message.replace("<identity>\n", f"<decided>\n{line}\nJudge only: {rules}\n</decided>\n\n"
+                                              "<identity>\n", 1)
+
+
 # --------------------------------------------------------------------------- the report
 
 def tally(outcomes: list[Outcome]) -> dict:
     by = Counter()
     for o in outcomes:
         if o.outcome == "candidate":
-            by[("opgenomen-kandidaat", "voor de scheidsrechter")] += 1
+            by[("opgenomen-kandidaat", "voor de scheidsrechter" + (", na twijfel bij het groeperen" if o.doubt else ""))] += 1
         elif o.outcome == "alias":
             by[("alias", ALIAS[o.reason])] += 1
         elif found_aside(o):
-            by[("apart (vindronde)", PARK[o.reason][0])] += 1
+            by[("apart", PARK[o.reason][0])] += 1
         elif o.outcome == "parked":
             by[("geparkeerd", PARK[o.reason][0])] += 1
         else:
@@ -561,7 +660,8 @@ def tally(outcomes: list[Outcome]) -> dict:
 
 
 def found_aside(o: Outcome) -> bool:
-    """The find round itself showed this row is no product or has no versions page: it is not proposed."""
+    """The find round showed this row is no product or has no versions page, or the grouping showed it
+    is a range of products or an edition of a product that is there: it is not proposed."""
     return o.outcome == "parked" and o.reason in FOUND_ASIDE
 
 
@@ -577,7 +677,7 @@ STATUS = (  # in the order of the report
     ("gesloten bron", "geparkeerd: een bron weigert bots"),
     ("afgewezen", "door de poort of de scheidsrechter"),
     ("verloren", "alias van een product dat niet bestaat en niet is voorgedragen"),
-    ("apart (vindronde)", "de vindronde wees het aan als geen product of zonder versiepagina"),
+    ("apart", "de vindronde of het groeperen wees het aan als geen eigen product, of zonder versiepagina"),
 )
 
 
@@ -601,7 +701,7 @@ def products(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> dict:
         parked = [o for o in rows if (o.outcome == "parked" and o.reason != "closed") or o.outcome == "gate-parked"]
         if not rows:
             o = p["rows"][0]
-            p["status"], p["why"] = "apart (vindronde)", PARK[o.reason][0]
+            p["status"], p["why"] = "apart", PARK[o.reason][0]
         elif v is not None:
             rule, text = v.get("rule") or "", (v.get("reason") or "").strip()
             reason = text if not rule or text.startswith(rule) else f"{rule}: {text}"
@@ -637,7 +737,7 @@ def threshold(outcomes: list[Outcome], verdicts: dict | None = None, keys: set |
     products proposed; what the find round set aside does not count. Without the verdict of every
     candidate the count is provisional and says nothing about going on."""
     ps = products(outcomes, verdicts, keys if keys is not None else set())
-    proposed = [p for p in ps.values() if p["status"] != "apart (vindronde)"]
+    proposed = [p for p in ps.values() if p["status"] != "apart"]
     parked = sum(1 for p in proposed if p["status"] == "geparkeerd")
     final = verdicts is not None and not any(p["status"] == "voor de scheidsrechter" for p in proposed)
     return {"parked": parked, "proposed": len(proposed), "aside": len(ps) - len(proposed), "rows": len(outcomes),
@@ -673,7 +773,18 @@ def count_lines(outcomes: list[Outcome], verdicts: dict | None, keys: set) -> li
     else:
         lines += ["", f"**Voorlopige stand, vóór het oordeel van de scheidsrechter:** {share}. "
                       "Geen uitspraak over doorgaan of stoppen: die volgt na het oordeel (`importer.py count`)."]
-    lines += ["", f"Apart gezet door de vindronde (telt niet mee): {t['aside']} producten."]
+    lines += ["", f"Apart gezet door de vindronde of het groeperen (telt niet mee): {t['aside']} producten."]
+    # Proposed after the grouping doubted: every row it doubted, but those parked for want of pages.
+    doubted = {key: p for key, p in ps.items() if any(o.doubt and o.reason != "grouping" for o in p["rows"])}
+    if doubted:
+        made = Counter(p["status"] for p in doubted.values())
+        lines += ["", f"**Voorgedragen na twijfel bij het groeperen** (TAX-44): {len(doubted)} producten; "
+                      + ", ".join(f"{s}: {n}" for s, n in made.most_common())]
+        lines += [f"- {key}: {p['status']}" + (f" ({p['why'][:160]})" if p["why"] else "") for key, p in sorted(doubted.items())]
+    moves = [(o, a, e) for o in outcomes for a, e in o.moves]
+    if moves:
+        lines += ["", f"**Eindadres voorgedragen** (TAX-42): {len(moves)} bronnen"]
+        lines += [f"- {o.row.where} {o.key}: {a} -> {e}" for o, a, e in moves]
     tr5 = tr5_new_publishers(outcomes, verdicts, keys)
     if verdicts is not None:
         lines += ["", f"**Nieuwe uitgevers geparkeerd op TR5** (besluit 35): {len(tr5)}"]
@@ -762,8 +873,27 @@ def classes_by_name(groups: list, classes: dict) -> dict:
             of = d.get("of")
             of = names[of].name if of in names else of
             for spelling in [n.name, *n.spellings]:
-                mine[group.part(spelling)] = {"class": d["class"], "of": of}
+                mine[group.part(spelling)] = {"class": d["class"], "of": of, "reason": d.get("reason") or ""}
     return out
+
+
+def with_reasons(classes: dict, names: Path, results: Path) -> dict:
+    """classes.json of a run before TAX-44 holds no reason: take it from the run of the grouping
+    (results.jsonl, one line per publisher with its classes by name id) and names.json."""
+    reasons: dict = {}
+    for line in Path(results).read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            r = json.loads(line)
+            reasons[r["id"]] = {i: d.get("reason") or "" for i, d in (r.get("classes") or {}).items()}
+    for g in json.loads(Path(names).read_text(encoding="utf-8"))["groups"]:
+        mine = classes.get(g["publisher"]) or {}
+        for n in g["names"]:
+            why = (reasons.get(g["publisher"]) or {}).get(n["id"])
+            for spelling in [n["name"], *(n.get("spellings") or [])]:
+                d = mine.get(group.part(spelling))
+                if why and d is not None and not d.get("reason"):
+                    d["reason"] = why
+    return classes
 
 
 def grouping_requests(groups: list, decided: dict, system: str, schema: dict, model: str, effort: str):
@@ -890,9 +1020,16 @@ def fetch_list(args, get=_download, log=print) -> dict:
 def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> dict:
     rows = first(read_found(args.found), args.first)
     classes = json.loads(Path(args.classes).read_text(encoding="utf-8")) if args.classes else {}
+    if getattr(args, "group_results", None):
+        if not args.names:
+            raise SystemExit("--group-results needs --names")
+        classes = with_reasons(classes, Path(args.names), Path(args.group_results))
     outcomes = plan(rows, data_root, classes)
     if lost := dangling(outcomes, existing_keys(data_root)):
         raise SystemExit("alias of a product that is neither in TAX nor proposed (TAX-39): "
+                         + ", ".join(f"{o.row.where} -> {o.of}" for o in lost))
+    if lost := orphans(outcomes, existing_keys(data_root)):
+        raise SystemExit("edition or series of a product that is neither in TAX nor proposed (TAX-42): "
                          + ", ".join(f"{o.row.where} -> {o.of}" for o in lost))
     extra = add_grouped_aliases(outcomes, classes)
     day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
@@ -915,6 +1052,7 @@ def propose(args, fetcher=None, data_root: Path = REPO, now=None, log=print) -> 
         # where the gate settles them again and the referee judges what it leaves.
         items = through_gate(files, fetcher, data_root, log=log, submitter=getattr(args, "submitter", "") or "")
         apply_gate(outcomes, items)
+        mark_doubt(outcomes, items)
         follow(outcomes)
         if hasattr(fetcher, "close"):
             fetcher.close()
@@ -979,6 +1117,8 @@ def parser() -> argparse.ArgumentParser:
     q = sub.choices["propose"]
     q.add_argument("--classes", help="classes.json of the group step")
     q.add_argument("--names", help="names.json of the group step, for the estimate of the grouping")
+    q.add_argument("--group-results", help="results.jsonl of the run of the grouping, with --names: its reasons, "
+                                           "for a classes.json that holds none (before TAX-44)")
     q.add_argument("--fetch", action="store_true", help="read every page, and run the gate of the pull request (free)")
     q.add_argument("--write", action="store_true", help="write the files and the parking list into the data")
     q.add_argument("--browser", action="store_true", help="with --fetch: a headless browser for pages without text")

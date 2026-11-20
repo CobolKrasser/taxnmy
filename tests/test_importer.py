@@ -168,7 +168,8 @@ class PlanTest(Base):
         classes = {"acme": {"acme-widget": {"class": "series", "of": None}},
                    "beta-systems": {"beta-box": {"class": "alias", "of": "beta-systems/box"}}}
         out = importer.plan(self.rows(), self.root, classes)
-        self.assertEqual((out[0].outcome, out[0].reason), ("parked", "grouping"))
+        self.assertEqual((out[0].outcome, out[0].reason), ("parked", "grouped-series"), "a range of products: apart")
+        self.assertTrue(importer.found_aside(out[0]))
         self.assertEqual((out[8].outcome, out[8].aliases), ("candidate", ["beta-systems/box"]),
                          "TAX-39: no alias of a product that is neither in TAX nor proposed; the row is the product")
 
@@ -246,8 +247,8 @@ class PagesTest(Base):
         out, _ = self.outcomes(FakeFetcher(pages()), rows)
         self.assertEqual(self.counted(out), (2, 3, 4, False, False), "no kind and an unreadable page, of three")
         report = importer.report(out, {}, {}, None, True, set())
-        self.assertIn("| apart (vindronde) | geen versions.source | 1 |", report)
-        self.assertIn("Apart gezet door de vindronde (telt niet mee): 4 producten.", report)
+        self.assertIn("| apart | geen versions.source | 1 |", report)
+        self.assertIn("Apart gezet door de vindronde of het groeperen (telt niet mee): 4 producten.", report)
         self.assertIn("Voorlopige stand, vóór het oordeel van de scheidsrechter:** 2 van 3", report)
         self.assertNotRegex(report, r"\*\*stop\*\*|gaat door", "before the verdict no word on going on (TAX-39)")
         accept = {"verdicts": [{"id": "products/acme/acme-widget.yaml", "outcome": "accept"}]}
@@ -369,7 +370,9 @@ class GroupingTest(Base):
         got = importer.run_grouping(self.args(kev=str(kev), cve=str(cve)), client=object(), data_root=self.root, log=QUIET)
         self.assertLess(got["estimate"]["expected"], 0.10)
         classes = json.loads((self.tmp / "g/classes.json").read_text())
-        self.assertEqual(classes["acme"]["router-os"], {"class": "alias", "of": "acme/router-os"}, "decided by code")
+        self.assertEqual({k: classes["acme"]["router-os"][k] for k in ("class", "of")},
+                         {"class": "alias", "of": "acme/router-os"}, "decided by code")
+        self.assertTrue(classes["acme"]["router-os"]["reason"].startswith("code:"), "with its reason (TAX-44)")
         self.assertFalse((self.tmp / "runs").exists())
 
     def test_a_live_run_is_one_batch(self):
@@ -755,6 +758,225 @@ class NoBrandTest(unittest.TestCase):
             for n in {p["key"].replace("-", " "), p["name"]}:
                 if len(n) >= 4:
                     self.assertIsNone(re.search(rf"(?<![\w-]){re.escape(n.lower())}(?![\w-])", code), n)
+
+
+class EndFetcher(FakeFetcher):
+    """FakeFetcher whose sources may end at another address (TAX-38): url -> the address it ends at."""
+
+    def __init__(self, pages: dict, ends: dict):
+        super().__init__(pages)
+        self.ends = ends
+
+    def fetch(self, url, product=""):
+        src = super().fetch(url, product)
+        src.final_url = self.ends.get(url, "")
+        return src
+
+
+PRO = "Acme;Widget Pro;Acme;https://acme.example/;Acme Widget Pro;software;https://acme.example/pro;https://acme.example/pro/notes;"
+GHOST = "Acme;Ghost 9;Acme;https://acme.example/;Acme Ghost 9;software;https://acme.example/g9;https://acme.example/g9/notes;"
+
+
+class EndAddressTest(Base):
+    """TAX-42: a source of the find round that redirects is proposed once at the address it ends at."""
+
+    def outcomes(self, fetcher, rows=ROWS):
+        out = importer.plan(self.rows(rows), self.root)
+        pubs = importer.check_pages(out, fetcher)
+        importer.follow(out)
+        return out, pubs
+
+    def test_the_same_page_at_a_new_address_is_proposed_there(self):
+        end = "https://beta.example/en/box"
+        f = EndFetcher(pages(**{end: ("200", f"Beta Box {TEXT}")}), {"https://beta.example/box": end})
+        out, pubs = self.outcomes(f)
+        o = out[8]
+        self.assertEqual(o.outcome, "candidate")
+        self.assertEqual((o.row.source, o.moves), (end, [["https://beta.example/box", end]]))
+        self.assertIn(f"eindadres voorgedragen: https://beta.example/box -> {end}", o.detail)
+        self.assertEqual(yaml.safe_load(importer.product_text(o))["source"], end, "the file holds the address it ends at")
+        report = importer.report(out, pubs, {}, None, True, set())
+        self.assertIn(f"- 261118-kev-groep-01.csv:10 beta-systems/beta-box: https://beta.example/box -> {end}", report)
+
+    def test_a_versions_page_at_a_new_address(self):
+        end = "https://beta.example/box/firmware"
+        f = EndFetcher(pages(**{end: ("200", f"Beta Box firmware {TEXT}")}), {"https://beta.example/box/fw": end})
+        o = self.outcomes(f)[0][8]
+        self.assertEqual((o.outcome, o.row.versions, o.row.source), ("candidate", end, "https://beta.example/box"))
+
+    def test_an_end_address_that_redirects_again_stays_parked(self):
+        a, b, c = "https://beta.example/box", "https://beta.example/b2", "https://beta.example/b3"
+        f = EndFetcher(pages(**{b: ("200", f"Beta Box {TEXT}"), c: ("200", f"Beta Box {TEXT}")}), {a: b, b: c})
+        o = self.outcomes(f)[0][8]
+        self.assertEqual((o.outcome, o.reason), ("parked", "moved"))
+        self.assertIn(f"{a} -> {b} -> {c}", o.detail)
+        self.assertIn("geen tweede poging", o.detail)
+        self.assertNotIn(c, f.asked, "no second try")
+        self.assertEqual(o.row.source, a, "nothing proposed")
+
+    def test_an_end_address_about_another_product_falls_on_the_name(self):
+        """The case of TAX-38: the page of a box ends at the page of a sandbox."""
+        end = "https://beta.example/sandbox"
+        f = EndFetcher(pages(**{end: ("200", f"Beta Sandbox {TEXT}")}), {"https://beta.example/box": end})
+        o = self.outcomes(f)[0][8]
+        self.assertEqual((o.outcome, o.reason), ("parked", "name-not-on-page"))
+        self.assertIn(f"niet op {end} (eindadres van https://beta.example/box)", o.detail)
+
+    def test_a_versions_page_that_ends_on_a_home_page_falls_on_the_name(self):
+        """The round chose that address, not the finder: it must show the name, the versions page too."""
+        f = EndFetcher(pages(), {"https://beta.example/box/fw": "https://beta.example/"})
+        o = self.outcomes(f)[0][8]
+        self.assertEqual((o.outcome, o.reason), ("parked", "name-not-on-page"))
+        self.assertIn("niet op https://beta.example/ (eindadres van https://beta.example/box/fw)", o.detail)
+
+    def test_an_end_address_that_is_closed_or_unreadable(self):
+        end = "https://beta.example/en/box"
+        o = self.outcomes(EndFetcher(pages(**{end: ("refused", "")}), {"https://beta.example/box": end}))[0][8]
+        self.assertEqual((o.outcome, o.reason), ("parked", "closed"))
+        o = self.outcomes(EndFetcher(pages(), {"https://beta.example/box": end}))[0][8]
+        self.assertEqual((o.outcome, o.reason), ("parked", "unreadable"))
+
+    def test_a_publisher_page_at_a_new_address(self):
+        end = "https://beta.example/en/"
+        f = EndFetcher(pages(**{end: ("200", f"Beta Systems {TEXT}")}), {"https://beta.example/": end})
+        _, pubs = self.outcomes(f)
+        self.assertEqual(pubs["beta-systems"], ("Beta Systems GmbH", end))
+
+
+class EditionTest(Base):
+    """TAX-42: an edition or a series only of a product TAX has or this proposal brings."""
+
+    def plan(self, classes, rows=ROWS):
+        return importer.plan(self.rows(rows), self.root, classes)
+
+    def test_an_edition_of_a_product_in_taxnmy_is_set_apart(self):
+        out = self.plan({"acme": {"acme-widget-pro": {"class": "edition", "of": "acme/router-os"}}}, ROWS + [PRO])
+        o = out[-1]
+        self.assertEqual((o.outcome, o.reason, o.of), ("parked", "grouped-edition", "acme/router-os"))
+        self.assertTrue(importer.found_aside(o))
+
+    def test_an_edition_of_a_product_of_the_same_proposal_is_set_apart(self):
+        out = self.plan({"acme": {"acme-widget-pro": {"class": "edition", "of": "Acme Widget"}}}, [PRO] + ROWS)
+        o = out[0]
+        self.assertEqual((o.reason, o.of), ("grouped-edition", "acme/acme-widget"), "also when that row comes later")
+        self.assertIn("rij 261118-kev-groep-01.csv:3", o.detail)
+        out = self.plan({"acme": {"acme-widget-pro": {"class": "series", "of": "acme/acme-widget"}}}, ROWS + [PRO])
+        self.assertEqual(out[-1].reason, "grouped-edition", "a part of a product: the same")
+
+    def test_an_edition_of_no_product_is_the_product(self):
+        """BIND 9, Kentico Xperience 13: the grouping names a product that is neither in TAX nor proposed."""
+        out = self.plan({"acme": {"acme-ghost-9": {"class": "edition", "of": "Acme Ghost"}}}, ROWS + [GHOST])
+        o = out[-1]
+        self.assertEqual((o.outcome, o.key, o.of), ("candidate", "acme/acme-ghost-9", ""))
+        self.assertIn("editie of reeks van acme/acme-ghost, dat niet in TAX staat en niet is voorgedragen", o.detail)
+        self.assertEqual(importer.orphans(out, importer.existing_keys(self.root)), [])
+
+    def test_an_edition_of_no_product_gets_the_outcome_of_a_product(self):
+        rows = [GHOST.replace("https://acme.example/g9/notes", ""), GHOST.replace(";software;", ";;").replace("g9", "g8")
+                .replace("Ghost 9", "Ghost 8")]
+        classes = {"acme": {"acme-ghost-9": {"class": "edition", "of": "acme/acme-ghost"},
+                            "acme-ghost-8": {"class": "edition", "of": None}}}
+        out = self.plan(classes, rows)
+        self.assertEqual([(o.outcome, o.reason) for o in out], [("parked", "no-versions"), ("parked", "no-kind")])
+        self.assertIn("acme/acme-ghost", out[0].detail)
+        out = self.plan({"acme": {"router-os-2": {"class": "edition", "of": "acme/ghost"}}},
+                        ["Acme;ROS 2;Acme;;ROS;software;https://acme.example/os2;https://acme.example/os2/n;"])
+        self.assertEqual((out[0].outcome, out[0].reason, out[0].of), ("alias", "existing", "acme/router-os"),
+                         "a name TAX has stays an alias of it")
+
+    def test_a_range_of_products_is_set_apart(self):
+        out = self.plan({"acme": {"acme-widget-pro": {"class": "series", "of": None, "reason": "a family"}}}, [PRO])
+        self.assertEqual((out[0].reason, out[0].detail), ("grouped-series", "a family"))
+
+    def test_apart_does_not_count_for_the_threshold(self):
+        classes = {"acme": {"acme-widget-pro": {"class": "edition", "of": "acme/router-os"}}}
+        out = self.plan(classes, [ROWS[0], PRO])
+        t = importer.threshold(out, None, importer.existing_keys(self.root))
+        self.assertEqual((t["proposed"], t["aside"], t["parked"]), (1, 1, 0))
+        report = importer.report(out, {}, {}, None, False, importer.existing_keys(self.root))
+        self.assertIn("| apart | editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen) | 1 |",
+                      report)
+
+    def test_an_edition_of_a_product_that_is_not_there_stops_the_proposal(self):
+        """The guard: an edition set apart must belong to a product in TAX or in the proposal."""
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp)
+        args = argparse.Namespace(found=[str(csv_file(tmp, ROWS))], first=None, classes=None, names=None, fetch=False,
+                                  write=False, browser=False, gated=None, out=str(tmp / "out"))
+        real = importer.plan
+
+        def broken(rows, data_root, classes):
+            out = real(rows, data_root, classes)
+            out[4].outcome, out[4].reason, out[4].of = "parked", "grouped-edition", "acme/ghost"
+            return out
+
+        importer.plan = broken
+        self.addCleanup(setattr, importer, "plan", real)
+        with self.assertRaisesRegex(SystemExit, "TAX-42.*acme/ghost"):
+            importer.propose(args, None, self.root, NOW, QUIET)
+
+
+class DoubtTest(Base):
+    """TAX-44: a doubt of the grouping goes to the referee when the find round gave both pages."""
+
+    CLASSES = {"acme": {"acme-widget-pro": {"class": "doubt", "of": None, "reason": "the names do not settle it"}}}
+
+    def test_with_both_pages_the_row_is_proposed_with_the_doubt(self):
+        o = importer.plan(self.rows([PRO]), self.root, self.CLASSES)[0]
+        self.assertEqual((o.outcome, o.doubt), ("candidate", "the names do not settle it"))
+        self.assertIn("| opgenomen-kandidaat | voor de scheidsrechter, na twijfel bij het groeperen | 1 |",
+                      importer.report([o], {}, {}, None, False, set()))
+
+    def test_without_a_versions_page_the_row_stays_parked(self):
+        """Opzettelijke breuk of TAX-44: the versions page taken away."""
+        o = importer.plan(self.rows([PRO.replace("https://acme.example/pro/notes", "")]), self.root, self.CLASSES)[0]
+        self.assertEqual((o.outcome, o.reason), ("parked", "grouping"))
+        self.assertEqual(o.detail, "the names do not settle it; versiepagina ontbreekt")
+        self.assertFalse(importer.found_aside(o), "it counts for the threshold")
+        entry = importer.parked_entries([o], {}, "2026-11-20")[0]
+        self.assertIn("the names do not settle it", entry["reason"])
+
+    def test_a_doubt_without_a_reason(self):
+        classes = {"acme": {"acme-widget-pro": {"class": "doubt", "of": None}}}
+        self.assertEqual(importer.plan(self.rows([PRO]), self.root, classes)[0].doubt, importer.DOUBT)
+
+    def test_the_referee_is_told(self):
+        o = importer.plan(self.rows([PRO, ROWS[0]]), self.root, self.CLASSES)
+        msg = "<proposal>\nx\n</proposal>\n\n<signals>\nnone\n</signals>\n\n<decided>\nTR6: yes (code)\nJudge only: TR4, TR5\n" \
+              "</decided>\n\n<identity>\nnone\n</identity>\n"
+        items = [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TR4", "TR5"], "message": msg},
+                 {"id": "products/acme/acme-widget.yaml", "outcome": "pending", "ai_rules": ["TR4", "TR5"], "message": msg}]
+        importer.mark_doubt(o, items)
+        self.assertIn("TR6: yes (code)\nTR4 in part: the grouping, which sees only the names of this publisher, could not "
+                      "decide whether this is a product of its own: the names do not settle it. Judge TR4 on the sources.\n"
+                      "Judge only: TR4, TR5\n", items[0]["message"])
+        self.assertEqual(items[0]["doubt"], "the names do not settle it")
+        self.assertEqual(items[1]["message"], msg, "no doubt, no line")
+        bare = {"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TR4"],
+                "message": "<signals>\nnone\n</signals>\n\n<identity>\nnone\n</identity>\n"}
+        importer.mark_doubt(o, [bare])
+        self.assertIn("</signals>\n\n<decided>\nTR4 in part: ", bare["message"])
+        self.assertIn("Judge only: TR4\n</decided>\n\n<identity>", bare["message"])
+
+    def test_the_count_shows_what_the_referee_made_of_it(self):
+        out = importer.plan(self.rows([PRO, PRO.replace("https://acme.example/pro/notes", "").replace("Pro", "Max")]),
+                            self.root, {"acme": {**self.CLASSES["acme"], "acme-widget-max": self.CLASSES["acme"]["acme-widget-pro"]}})
+        verdicts = {"verdicts": [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "parked", "rule": "TR4",
+                                  "reason": "TR4: an edition", "waits_for": "better-proposal"}]}
+        text = importer.final_report(out, verdicts, set())
+        self.assertIn("**Voorgedragen na twijfel bij het groeperen** (TAX-44): 1 producten; geparkeerd: 1", text)
+        self.assertIn("- acme/acme-widget-pro: geparkeerd (TR4: an edition)", text)
+        self.assertNotIn("- acme/acme-widget-max", text, "not proposed: it had no versions page")
+
+    def test_the_reasons_of_a_run_before_tax_44(self):
+        names = self.tmp / "names.json"
+        names.write_text(json.dumps({"groups": [{"publisher": "acme", "names": [
+            {"id": "n1", "name": "Acme Widget Pro", "spellings": ["Widget Pro"]}]}]}))
+        results = self.tmp / "results.jsonl"
+        results.write_text(json.dumps({"id": "acme", "classes": {"n1": {"class": "doubt", "of": None, "reason": "why"}}}) + "\n")
+        classes = {"acme": {"acme-widget-pro": {"class": "doubt", "of": None}, "widget-pro": {"class": "doubt", "of": None}}}
+        got = importer.with_reasons(classes, names, results)
+        self.assertEqual([d["reason"] for d in got["acme"].values()], ["why", "why"])
 
 
 if __name__ == "__main__":
