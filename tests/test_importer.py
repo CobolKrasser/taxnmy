@@ -277,6 +277,87 @@ class FilesTest(Base):
         self.assertEqual(e["fingerprint"], importer.pr_referee.fingerprint(e["files"]))
 
 
+class ClosedRoundTest(Base):
+    """TAX-49: a round gives a closed page the two steps of the referee (machine sources, then one
+    search on the publisher's domains); what it reads instead goes to the referee, a snippet never."""
+
+    CLOSED = "https://acme.example/widget"
+    OTHER = "https://acme.example/products/widget"
+
+    def args(self, **kw):
+        a = dict(found=[str(csv_file(self.tmp, ROWS))], first=None, classes=None, names=None, fetch=True,
+                 write=False, browser=False, gated=None, out=str(self.tmp / "out"), sources=None, search=None)
+        a.update(kw)
+        return argparse.Namespace(**a)
+
+    def search_file(self, urls):
+        path = self.tmp / "search.json"
+        path.write_text(json.dumps({self.CLOSED: {"product": "Acme Widget", "query": "q", "domains": ["acme.example"],
+                                                  "urls": urls}}))
+        return str(path)
+
+    def fetcher(self):
+        return FakeFetcher(pages(**{self.CLOSED: ("refused", ""), self.OTHER: ("200", f"The Acme Widget, all models {TEXT}")}))
+
+    def test_a_closed_page_with_another_readable_page_goes_to_the_referee(self):
+        f = self.fetcher()
+        got = importer.propose(self.args(search=self.search_file([self.OTHER])), f, self.root, NOW, QUIET)
+        o = next(o for o in got["outcomes"] if o.row.name == "Acme Widget" and o.row.listed == "Widget")
+        self.assertEqual(o.outcome, "candidate")
+        self.assertEqual(o.instead, [[self.CLOSED, self.OTHER]])
+        item = next(i for i in got["items"] if i["id"] == "products/acme/acme-widget.yaml")
+        self.assertEqual(item["outcome"], "pending", item["reason"])
+        self.assertIn(f'instead-of="{self.CLOSED}"', item["message"])
+        self.assertEqual(f.asked.count(self.CLOSED), 1, "the closed page is not asked again")
+        self.assertIn("Closed, and read on another page of the publisher (TAX-49): 1 products", got["report"])
+
+    def test_a_closed_page_without_another_page_is_parked_with_the_reason(self):
+        got = importer.propose(self.args(search=self.search_file([])), self.fetcher(), self.root, NOW, QUIET)
+        o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
+        self.assertEqual((o.outcome, o.reason), ("parked", "closed-none"))
+        self.assertIn(self.CLOSED, o.detail)
+        self.assertIn("no other readable page", o.detail)
+        self.assertIn("Closed, and still closed: 1 products.", got["report"])
+
+    def test_without_the_search_the_closed_page_is_parked_and_listed_for_it(self):
+        got = importer.propose(self.args(), self.fetcher(), self.root, NOW, QUIET)
+        o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
+        self.assertEqual((o.outcome, o.reason), ("parked", "closed"), "the deliberate break: no search, parked")
+        closed = json.loads((self.tmp / "out/closed.json").read_text())
+        self.assertEqual(list(closed), [self.CLOSED])
+        self.assertEqual((closed[self.CLOSED]["product"], closed[self.CLOSED]["domains"]), ("Acme Widget", ["acme.example"]))
+
+    def test_a_result_off_the_publishers_domains_or_without_the_name_does_not_count(self):
+        for urls, page in ((["https://elsewhere.example/acme-widget"], "https://elsewhere.example/acme-widget"),
+                           ([self.OTHER], None)):
+            f = self.fetcher()
+            if page:
+                f.pages[page] = ("200", f"The Acme Widget {TEXT}")
+            else:
+                f.pages[self.OTHER] = ("200", f"Another product {TEXT}")
+            got = importer.propose(self.args(search=self.search_file(urls)), f, self.root, NOW, QUIET)
+            o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
+            self.assertEqual(o.reason, "closed-none", urls)
+
+    def test_only_urls_of_the_search_reach_the_round(self):
+        """The search keeps the URLs of the results, never their text (TE6), as for the referee."""
+        class Block:
+            def __init__(self, **kw):
+                self.__dict__.update(kw)
+        content = [Block(type="web_search_tool_result", content=[Block(url=self.OTHER, encrypted_content="snippet")])]
+        self.assertEqual(importer.referee.search_urls(content), [self.OTHER])
+
+    def test_the_search_step_dry_spends_nothing(self):
+        closed = self.tmp / "closed.json"
+        closed.write_text(json.dumps({self.CLOSED: {"product": "Acme Widget", "publisher": "Acme", "domains": ["acme.example"]}}))
+        args = argparse.Namespace(closed=str(closed), output=str(self.tmp / "search.json"), live=False, model="m",
+                                  budget=1.0, cap=0.3, prices="", runs=str(self.tmp / "runs"))
+        lines = []
+        self.assertEqual(importer.search(args, log=lines.append), {})
+        self.assertIn("about $0.01", lines[0])
+        self.assertFalse((self.tmp / "runs").exists())
+
+
 class ProposeTest(Base):
     def args(self, **kw):
         a = dict(found=[str(csv_file(self.tmp, ROWS))], first=None, classes=None, names=None, fetch=True,
@@ -575,7 +656,7 @@ class WorkflowTest(unittest.TestCase):
         for name, job in jobs.items():
             self.assertIn("timeout-minutes", job, name)
             keyed = "secrets." in json.dumps(job)
-            self.assertEqual(keyed, name in ("group", "judge"), name)
+            self.assertEqual(keyed, name in ("group", "search", "judge"), name)
             if keyed:
                 self.assertEqual(job["environment"], "referee")
                 self.assertEqual(job["concurrency"], {"group": "referee-judge", "cancel-in-progress": False})
@@ -588,6 +669,13 @@ class WorkflowTest(unittest.TestCase):
         self.assertIn("needs.group.result == 'success'", jobs["propose"]["if"])
         self.assertIn("inputs.grouping_run != '' && github.ref == 'refs/heads/main' && inputs.live", jobs["propose"]["if"])
         self.assertEqual(jobs["propose"]["permissions"], {"contents": "read", "actions": "read"})
+        # TAX-49: the search has the key and reads no page; the pages it found are read without it.
+        self.assertNotIn("requirements-fetch", json.dumps(jobs["search"]), "the key never comes near a browser")
+        self.assertNotIn("playwright", json.dumps(jobs["search"]))
+        self.assertIn("inputs.live", jobs["search"]["if"])
+        self.assertIn("needs.propose.outputs.closed != '0'", jobs["search"]["if"])
+        self.assertIn("--search", json.dumps(jobs["reread"]))
+        self.assertEqual(jobs["judge"]["needs"], ["group", "propose", "search", "reread"])
         for name in ("judge", "pull-request"):
             self.assertTrue(jobs[name]["if"].startswith("${{ !cancelled() && needs."), name)
         steps = jobs["propose"]["steps"]
@@ -601,7 +689,7 @@ class WorkflowTest(unittest.TestCase):
         self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
         self.assertEqual(wf["env"]["FOUND"], "${{ inputs.found }}")
         self.assertEqual(inputs["found"]["default"], "referee/import/kev-proef-40.csv")
-        for name in ("prepare", "group", "propose", "pull-request"):
+        for name in ("prepare", "group", "propose", "reread", "pull-request"):
             script = "".join(st.get("run", "") for st in jobs[name]["steps"])
             self.assertIn('list=$(.github/scripts/import-found.sh "$FOUND")', script, name)
             self.assertNotIn('--found "$FOUND"', script, name)

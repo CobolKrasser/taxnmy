@@ -171,7 +171,7 @@ class ImporterTest(unittest.TestCase):
                 return referee.Source(url, "200", f"DS501 {PAGE}", final_url=url + "-other" if "products" in url else "")
 
         row = type("Row", (), {"source": PRODUCT, "versions": VERSIONS, "name": "DS501"})()
-        o = type("O", (), {"outcome": "candidate", "row": row, "new_publisher": False, "reason": "", "detail": "", "moves": []})()
+        o = type("O", (), {"outcome": "candidate", "row": row, "new_publisher": False, "reason": "", "detail": "", "moves": [], "instead": [], "publisher": ""})()
         importer.check_pages([o], F())
         self.assertEqual((o.outcome, o.reason), ("parked", "moved"), "TAX-42: the address it ends at redirects again")
         self.assertIn(PRODUCT + "-other", o.detail)

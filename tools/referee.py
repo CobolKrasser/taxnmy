@@ -1907,6 +1907,66 @@ def search_urls(content) -> list[str]:
     return urls[:SEARCH_RESULTS]
 
 
+def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path, out: Path, client=None, now=None,
+                 log=print, cap: float | None = None) -> tuple[dict, float]:
+    """Step 4, live: one web search per distinct (query, domains) of `wanted` (closed URL -> product,
+    publisher, domains), on the publisher's domains only. Only the URLs of the results are kept, never
+    a snippet (TE6). Returns (closed URL -> what was found, the cost). The run counts against the
+    budget of `out` like any other. Used by the test set (`search`) and by a round (tools/importer.py)."""
+    found: dict[str, dict] = {}
+    prices = load_prices(prices_path)
+    if client is None:
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            raise SystemExit("A live search needs ANTHROPIC_API_KEY")
+        client = AnthropicClient()
+    before = spent_before(out)
+    # `cap`: dollars for these searches (a round's cap), within the budget for every run together.
+    budget = Budget(budget_cap if cap is None else min(budget_cap, before + cap), before, model, prices, 2000)
+    groups: dict[tuple, list[str]] = {}
+    for url, want in wanted.items():
+        query = f'"{want["product"]}" {want["publisher"]}'.strip()
+        groups.setdefault((query, tuple(want["domains"])), []).append(url)
+    log(f"{len(groups)} distinct searches for {len(wanted)} sources, with {model}")
+    log(f"budget: ${budget_cap:.2f} for all runs in {out}; spent before: ${before:.4f}")
+    stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
+    run_dir = out / f"{stamp}-search-{model}"
+    run_dir.mkdir(parents=True, exist_ok=False)
+    (run_dir / "run.json").write_text(json.dumps({"condition": "search", "model": model, "budget": budget_cap,
+                                                  "spent_before": round(before, 6), "started": stamp}, indent=2) + "\n", encoding="utf-8")
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
+            gh.write(f"run_dir={run_dir}\nrun_name={run_dir.name}\n")
+    with (run_dir / "results.jsonl").open("w", encoding="utf-8") as jsonl:
+        for (query, domains), closed in groups.items():
+            want = wanted[closed[0]]
+            request = dict(
+                model=model,
+                messages=[{"role": "user", "content": SEARCH_PROMPT.format(query=query)}],
+                output_config={"effort": "low"},
+                tools=[{"type": "web_search_20260209", "name": "web_search", "max_uses": 1, "allowed_domains": want["domains"]}],
+            )
+            spent_at_start = budget.spent
+            try:
+                request["max_tokens"] = budget.fit(client.count(request), web_allowance(model, prices, 1))
+                response = client.create(request)
+            except BudgetExhausted as exc:
+                log(f"Stopped before searching {query}: {exc}")
+                break
+            except Exception as exc:  # noqa: BLE001 - a failed search leaves the source refused
+                log(f"search {query} failed: {type(exc).__name__}")
+                continue
+            budget.add(response.usage)
+            urls = [u for u in search_urls(response.content) if u not in closed]
+            hit = {"product": want["product"], "query": query, "domains": want["domains"], "urls": urls}
+            for url in closed:
+                found[url] = hit
+            cost_now = budget.spent - spent_at_start
+            jsonl.write(json.dumps({"id": "search", "for": closed, **hit, "usage": response.usage, "cost": cost_now}) + "\n")
+            log(f"{query}: {len(urls)} URLs on {', '.join(want['domains'])} for {len(closed)} closed sources, "
+                f"${cost_now:.4f}; spent ${budget.spent:.4f} of ${budget_cap:.2f}")
+    return found, budget.spent - before
+
+
 def search_refused(args, client=None, data_root: Path = REPO, now=None, log=print) -> dict:
     """Step 4: for each refused or disallowed source, one web search on the publisher's domains. Costs money
     (about $0.01 a search plus tokens) and counts against the budget like a run."""
@@ -1935,55 +1995,7 @@ def search_refused(args, client=None, data_root: Path = REPO, now=None, log=prin
     if wanted and not args.live:
         log("Dry run: nothing was searched. Add --live to search (about $0.01 a search plus tokens).")
     if wanted and args.live:
-        prices = load_prices(Path(args.prices))
-        if client is None:
-            if not os.environ.get("ANTHROPIC_API_KEY"):
-                raise SystemExit("A live search needs ANTHROPIC_API_KEY")
-            client = AnthropicClient()
-        before = spent_before(out)
-        budget = Budget(args.budget, before, args.model, prices, 2000)
-        groups: dict[tuple, list[str]] = {}
-        for url, want in wanted.items():
-            query = f'"{want["product"]}" {want["publisher"]}'.strip()
-            groups.setdefault((query, tuple(want["domains"])), []).append(url)
-        log(f"{len(groups)} distinct searches for {len(wanted)} sources, with {args.model}")
-        log(f"budget: ${args.budget:.2f} for all runs in {out}; spent before: ${before:.4f}")
-        stamp = (now or datetime.now(timezone.utc)).strftime("%Y%m%d-%H%M%S")
-        run_dir = out / f"{stamp}-search-{args.model}"
-        run_dir.mkdir(parents=True, exist_ok=False)
-        (run_dir / "run.json").write_text(json.dumps({"condition": "search", "model": args.model, "budget": args.budget,
-                                                      "spent_before": round(before, 6), "started": stamp}, indent=2) + "\n", encoding="utf-8")
-        if os.environ.get("GITHUB_OUTPUT"):
-            with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh:
-                gh.write(f"run_dir={run_dir}\nrun_name={run_dir.name}\n")
-        with (run_dir / "results.jsonl").open("w", encoding="utf-8") as jsonl:
-            for (query, domains), closed in groups.items():
-                want = wanted[closed[0]]
-                request = dict(
-                    model=args.model,
-                    messages=[{"role": "user", "content": SEARCH_PROMPT.format(query=query)}],
-                    output_config={"effort": "low"},
-                    tools=[{"type": "web_search_20260209", "name": "web_search", "max_uses": 1, "allowed_domains": want["domains"]}],
-                )
-                spent_at_start = budget.spent
-                try:
-                    request["max_tokens"] = budget.fit(client.count(request), web_allowance(args.model, prices, 1))
-                    response = client.create(request)
-                except BudgetExhausted as exc:
-                    log(f"Stopped before searching {query}: {exc}")
-                    break
-                except Exception as exc:  # noqa: BLE001 - a failed search leaves the source refused
-                    log(f"search {query} failed: {type(exc).__name__}")
-                    continue
-                budget.add(response.usage)
-                urls = [u for u in search_urls(response.content) if u not in closed]
-                hit = {"product": want["product"], "query": query, "domains": want["domains"], "urls": urls}
-                for url in closed:
-                    found[url] = hit
-                cost_now = budget.spent - spent_at_start
-                jsonl.write(json.dumps({"id": "search", "for": closed, **hit, "usage": response.usage, "cost": cost_now}) + "\n")
-                log(f"{query}: {len(urls)} URLs on {', '.join(want['domains'])} for {len(closed)} closed sources, "
-                    f"${cost_now:.4f}; spent ${budget.spent:.4f} of ${args.budget:.2f}")
+        found, _ = run_searches(wanted, args.model, args.budget, Path(args.prices), out, client, now, log)
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(found, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return found
