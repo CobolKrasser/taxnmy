@@ -582,7 +582,21 @@ class WorkflowTest(unittest.TestCase):
                 self.assertNotIn("write", json.dumps(job.get("permissions", {})))
             for step in job["steps"]:
                 self.assertNotRegex(step.get("run", ""), r"\$\{\{", "inputs reach a script through env only")
-        self.assertEqual(jobs["group"]["if"], "github.ref == 'refs/heads/main' && inputs.live")
+        self.assertEqual(jobs["group"]["if"], "github.ref == 'refs/heads/main' && inputs.live && inputs.grouping_run == ''")
+        # Decision 37: propose may take the grouping of an earlier run; main only and live, as the grouping is.
+        self.assertEqual(inputs["grouping_run"]["default"], "")
+        self.assertIn("needs.group.result == 'success'", jobs["propose"]["if"])
+        self.assertIn("inputs.grouping_run != '' && github.ref == 'refs/heads/main' && inputs.live", jobs["propose"]["if"])
+        self.assertEqual(jobs["propose"]["permissions"], {"contents": "read", "actions": "read"})
+        for name in ("judge", "pull-request"):
+            self.assertTrue(jobs[name]["if"].startswith("${{ !cancelled() && needs."), name)
+        steps = jobs["propose"]["steps"]
+        check = next(st for st in steps if st.get("name") == "The earlier run of the grouping")
+        self.assertIn('[[ "$GROUPING_RUN" =~ ^[0-9]{1,20}$ ]]', check["run"])
+        earlier = [st["with"] for st in steps if st.get("with", {}).get("run-id")]
+        self.assertEqual([w.get("name") or w.get("pattern") for w in earlier],
+                         ["import-group-${{ inputs.grouping_run }}", "referee-run-*-import-group-*"])
+        self.assertIn('reasons=(--group-results "${results[0]}")', "".join(st.get("run", "") for st in steps))
         self.assertEqual(jobs["pull-request"]["permissions"], {"contents": "write", "pull-requests": "write"})
         self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
         self.assertEqual(wf["env"]["FOUND"], "${{ inputs.found }}")
@@ -946,11 +960,12 @@ class DoubtTest(Base):
               "</decided>\n\n<identity>\nnone\n</identity>\n"
         items = [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TR4", "TR5"], "message": msg},
                  {"id": "products/acme/acme-widget.yaml", "outcome": "pending", "ai_rules": ["TR4", "TR5"], "message": msg}]
+        o[0].doubt += "."  # a reason ends with a full stop: one, not two
         importer.mark_doubt(o, items)
         self.assertIn("TR6: yes (code)\nTR4 in part: the grouping, which sees only the names of this publisher, could not "
                       "decide whether this is a product of its own: the names do not settle it. Judge TR4 on the sources.\n"
                       "Judge only: TR4, TR5\n", items[0]["message"])
-        self.assertEqual(items[0]["doubt"], "the names do not settle it")
+        self.assertEqual(items[0]["doubt"], "the names do not settle it.")
         self.assertEqual(items[1]["message"], msg, "no doubt, no line")
         bare = {"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TR4"],
                 "message": "<signals>\nnone\n</signals>\n\n<identity>\nnone\n</identity>\n"}

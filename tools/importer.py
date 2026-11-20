@@ -631,7 +631,7 @@ def mark_doubt(outcomes: list[Outcome], items: list[dict]) -> None:
             continue
         item["doubt"] = doubt[item["id"]]
         line = ("TR4 in part: the grouping, which sees only the names of this publisher, could not decide whether "
-                f"this is a product of its own: {referee.inert(doubt[item['id']])}. Judge TR4 on the sources.")
+                f"this is a product of its own: {referee.inert(doubt[item['id']]).rstrip('. ')}. Judge TR4 on the sources.")
         message = item["message"]
         if "\nJudge only: " in message:
             item["message"] = message.replace("\nJudge only: ", f"\n{line}\nJudge only: ", 1)
