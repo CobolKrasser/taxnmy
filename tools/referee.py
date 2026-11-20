@@ -1877,7 +1877,8 @@ SEARCH_PROMPT = (
 SEARCH_RESULTS = 5  # URLs kept per search
 CLOSED = ("refused", "disallowed")  # a source step 4 searches another open source for
 # The model of step 4, apart from the referee's (TAX-49): it only returns URLs and judges nothing.
-# The round and the test set both take it from here. referee/README.md § Step 4 says why.
+# The round and the test set both take it from here. Agreed on the measurement of run 44776351618:
+# 15 of 15 products read in each of three runs, as Opus 5.5; referee/README.md § Step 4.
 SEARCH_MODEL = "claude-haiku-5-5"
 # The models that take the newest web search tool (dynamic filtering); every other model takes the
 # basic tool. Claude API docs, Server tools (read 2026-11-20).

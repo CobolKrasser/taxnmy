@@ -338,6 +338,20 @@ does not matter. Its cost does: the results of one search come in as about 12,00
 whatever the product (run 44764232264). On Claude Opus 5.5 a search cost $0.060, on Claude Haiku 5.5
 it is about $0.011, almost all of it the fee of the search.
 
+**Measured (20 November 2026, run 44776351618).** The 15 searches of run 44764232264, three times on
+Claude Haiku 5.5, nothing judged. The norm: in each run as many products read as Opus 5.5 read in
+its one run. Haiku 5.5 met it.
+
+| run | products read on another page of the publisher | URLs on the domains | URLs elsewhere, never read | cost |
+| --- | --- | --- | --- | --- |
+| Opus 5.5, run 44764232264 | 15 of 15 | 68 | 2 | $0.89 |
+| Haiku 5.5, run 1 | 15 of 15 | 75 | 5 | $0.18 |
+| Haiku 5.5, run 2 | 15 of 15 | 75 | 5 | $0.18 |
+| Haiku 5.5, run 3 | 15 of 15 | 75 | 4 | $0.18 |
+
+The 15 products are of 5 publishers; for others it is an assumption. The report of each round counts
+the closed sources read after all. If that number drops, that is the sign to measure again.
+
 - **The tool version follows the model** (`search_tool`): the newest web search tool for the models
   that take it, the basic one (`web_search_20250305`) for every other, Claude Haiku 5.5 included.
 - **The estimate counts the tokens** (`search_cost`): the fee and about 12,000 input tokens per
@@ -358,6 +372,10 @@ and effort, in code (`MODEL` and `EFFORT` in `tools/referee.py`) and in the work
 the repository variables `REFEREE_MODEL` and `REFEREE_EFFORT` may override it. A test checks that
 every workflow default is the same. A model is used only once it takes in no wrong proposal in three
 runs on the test set (TG12). A change to the prompt asks for that measurement again.
+
+The search of step 4 has its own agreed model, **Claude Haiku 5.5** (`SEARCH_MODEL`), measured in run
+44776351618: see [Step 4: the model of the search](#step-4-the-model-of-the-search). It judges
+nothing, so TG12 does not apply to it.
 
 ### The model measurement (TAX-18)
 
