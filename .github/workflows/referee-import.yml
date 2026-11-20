@@ -8,6 +8,8 @@ name: referee-import
 #   prepare   no key: the KEV list and the CVE records of the vendors of the rows (public), and the
 #             estimate of the grouping (dry run).
 #   group     environment referee (the key; Fred approves): the grouping, one batch. Main only.
+#             With `grouping_run`, it does not run: propose takes the grouping of that earlier run
+#             (decision 37: the grouping is not run again).
 #   propose   no key: the importer reads every page (with a browser), parks what it must, and runs
 #             the gate of the pull request.
 #   judge     environment referee (the key; Fred approves): the referee on what the gate left, one
@@ -42,6 +44,10 @@ on:
         description: "only KEV entries added on or after this date"
         type: string
         default: "2023-11-16"
+      grouping_run:
+        description: "the id of an earlier run of this workflow whose grouping propose takes, instead of grouping again (same found); empty: group"
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -87,7 +93,7 @@ jobs:
 
   group:
     needs: prepare
-    if: github.ref == 'refs/heads/main' && inputs.live
+    if: github.ref == 'refs/heads/main' && inputs.live && inputs.grouping_run == ''
     runs-on: ubuntu-latest
     timeout-minutes: 360  # a batch may take hours; the harness cancels it after 5
     environment: referee
@@ -143,8 +149,15 @@ jobs:
 
   propose:
     needs: group
+    # After the grouping of this run, or, with `grouping_run`, of that earlier run (group is skipped).
+    if: >-
+      !cancelled() && (needs.group.result == 'success' || (needs.group.result == 'skipped'
+      && inputs.grouping_run != '' && github.ref == 'refs/heads/main' && inputs.live))
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    permissions:
+      contents: read
+      actions: read  # with grouping_run: the artifacts of that run
     steps:
       - uses: actions/checkout@v4
         with:
@@ -155,19 +168,54 @@ jobs:
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
       - name: Install headless Chromium
         run: python -m playwright install --with-deps chromium
+      - name: The earlier run of the grouping
+        if: inputs.grouping_run != ''
+        env:
+          GROUPING_RUN: ${{ inputs.grouping_run }}
+        run: |
+          if ! [[ "$GROUPING_RUN" =~ ^[0-9]{1,20}$ ]]; then
+            echo "::error::grouping_run is not a run id: $GROUPING_RUN" >&2
+            exit 1
+          fi
+          echo "The grouping of run $GROUPING_RUN, not grouped again (decision 37)" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/download-artifact@v4
+        if: inputs.grouping_run == ''
         with:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
+      - uses: actions/download-artifact@v4
+        if: inputs.grouping_run != ''
+        with:
+          name: import-group-${{ inputs.grouping_run }}
+          path: ${{ runner.temp }}/group
+          run-id: ${{ inputs.grouping_run }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4  # results.jsonl: the reasons of the grouping (TAX-44)
+        if: inputs.grouping_run != ''
+        with:
+          pattern: referee-run-*-import-group-*
+          path: ${{ runner.temp }}/group-run
+          run-id: ${{ inputs.grouping_run }}
+          github-token: ${{ github.token }}
       - name: Read the pages and run the gate (no key)
         env:
           SUBMITTER: ${{ inputs.submitter }}  # checked as an account name by tools/intake.py
+          GROUPING_RUN: ${{ inputs.grouping_run }}
         run: |
           set -euo pipefail
           list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
           mapfile -t files <<< "$list"
+          reasons=()
+          if [ -n "$GROUPING_RUN" ]; then
+            mapfile -t results < <(find "$RUNNER_TEMP/group-run" -name results.jsonl)
+            if [ "${#results[@]}" -ne 1 ]; then
+              echo "::error::run $GROUPING_RUN has ${#results[@]} results.jsonl of the grouping, not one" >&2
+              exit 1
+            fi
+            reasons=(--group-results "${results[0]}")
+          fi
           python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/group/classes.json" \
-            --names "$RUNNER_TEMP/group/names.json" --fetch --browser --gated "$RUNNER_TEMP/proposed/gated.json" \
+            --names "$RUNNER_TEMP/group/names.json" "${reasons[@]}" --fetch --browser --gated "$RUNNER_TEMP/proposed/gated.json" \
             --submitter "$SUBMITTER" \
             --out "$RUNNER_TEMP/proposed" > propose.log
           sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
@@ -179,6 +227,7 @@ jobs:
 
   judge:
     needs: [group, propose]
+    if: ${{ !cancelled() && needs.propose.result == 'success' }}  # group may be skipped (grouping_run)
     runs-on: ubuntu-latest
     timeout-minutes: 360
     environment: referee
@@ -209,7 +258,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CAP: ${{ inputs.budget }}
-          GROUP_COST: ${{ needs.group.outputs.cost }}
+          GROUP_COST: ${{ needs.group.outputs.cost }}  # empty with grouping_run: paid in that run
           MODEL: ${{ vars.REFEREE_MODEL || 'claude-opus-5-5' }}
           EFFORT: ${{ vars.REFEREE_EFFORT || 'low' }}
           BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
@@ -240,6 +289,7 @@ jobs:
 
   pull-request:
     needs: judge
+    if: ${{ !cancelled() && needs.judge.result == 'success' }}  # group may be skipped (grouping_run)
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
