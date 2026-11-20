@@ -335,10 +335,10 @@ class PrRefereeTest(unittest.TestCase):
 
     # the real test set, as one pull request
 
-    def test_the_test_set_becomes_91_proposals(self):
+    def test_the_test_set_becomes_96_proposals(self):
         proposals = pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml")
-        self.assertEqual(len(proposals), 91)
-        self.assertEqual(len([p for p in proposals if p["id"].startswith("B")]), 54)
+        self.assertEqual(len(proposals), 96)
+        self.assertEqual(len([p for p in proposals if p["id"].startswith("B")]), 58)
         self.assertTrue(all(p["case"]["expect"] for p in proposals))
 
     def test_score_counts_parked_as_human(self):
@@ -553,7 +553,7 @@ class ParkingListTest(unittest.TestCase):
         for answer in ("keep", "fix"):
             _, left, kept = self.settled(answer, "audit")
             self.assertNotIn("synology/ds124", left, answer)
-            self.assertEqual([(d["rule"], d["decision"]) for d in kept], [("audit", answer)], "one decision per product")
+            self.assertEqual([(d["rule"], d["decision"]) for d in kept][-1], ("audit", answer), "the last decision counts")
             self.assertTrue((self.root / "products/synology/ds124.yaml").is_file(), answer)
 
     def test_an_audit_removed_deletes_the_product(self):
@@ -604,6 +604,117 @@ class ParkingListTest(unittest.TestCase):
                          {"event": "referee", "better-proposal": "submitter", "decision": "person"})
         self.assertEqual(self.terms["decide_within"], {"collision": 14, "audit": 14})
         self.assertEqual(set(self.terms["waits_for"]), set(pr_referee.WAITS_FOR))
+
+
+class KeyStaysTest(unittest.TestCase):
+    """TAX-45 (TK3, TG13): a key stays; only a logged decision of a maintainer takes a product out."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp)
+        self.root = self.tmp / "root"
+        shutil.copytree(FIXTURES / "data", self.root)
+        (self.root / "referee").mkdir()
+        ds124 = self.root / "products/synology/ds124.yaml"
+        ds124.write_text(ds124.read_text().replace("aliases: []", "aliases:\n- synology/diskstation-ds124"))
+        self.ds124 = ds124.read_text()
+
+    def gate(self, files=None, deleted=()):
+        return {i["id"]: i for i in pr_referee.gate_proposals(pr_referee.group(files or {}, deleted), FakeFetcher(),
+                                                              self.root, log=QUIET)}
+
+    def test_a_deleted_product_is_rejected_on_tk3(self):
+        items = self.gate(deleted=["products/synology/ds124.yaml"])
+        i = items["products/synology/ds124.yaml"]
+        self.assertEqual((i["outcome"], i["rule"], i["key"]), ("reject", "TK3", "synology/ds124"))
+        self.assertIn("only a maintainer", i["reason"])
+
+    def test_a_deleted_publisher_is_rejected_on_tk3(self):
+        i = self.gate(deleted=["publishers/synology.yaml"])["publishers/synology.yaml"]
+        self.assertEqual((i["outcome"], i["rule"]), ("reject", "TK3"))
+
+    def test_a_renamed_product_is_rejected_on_tk3(self):
+        items = self.gate({"products/synology/ds-124.yaml": self.ds124}, deleted=["products/synology/ds124.yaml"])
+        self.assertEqual((items["products/synology/ds124.yaml"]["outcome"], items["products/synology/ds124.yaml"]["rule"]),
+                         ("reject", "TK3"))
+        self.assertEqual(items["products/synology/ds-124.yaml"]["outcome"], "reject", "the new path holds a key in use")
+
+    def test_an_alias_taken_out_is_rejected_on_tk3(self):
+        changed = self.ds124.replace("aliases:\n- synology/diskstation-ds124", "aliases: []")
+        i = self.gate({"products/synology/ds124.yaml": changed})["products/synology/ds124.yaml"]
+        self.assertEqual((i["outcome"], i["rule"]), ("reject", "TK3"))
+        self.assertIn("synology/diskstation-ds124", i["reason"])
+
+    def test_a_changed_key_is_rejected_on_tk3(self):
+        changed = self.ds124.replace("key: synology/ds124", "key: synology/ds125")
+        self.assertEqual(self.gate({"products/synology/ds124.yaml": changed})["products/synology/ds124.yaml"]["rule"], "TK3")
+
+    def test_apply_puts_a_deleted_file_back(self):
+        items = list(self.gate(deleted=["products/synology/ds124.yaml"]).values())
+        data = pr_referee.write_verdicts(items, self.tmp / "v", 7, SHA)
+        (self.root / "products/synology/ds124.yaml").unlink()  # the branch of the pull request
+        pr_referee.apply(data, self.root, now=NOW, log=QUIET)
+        self.assertEqual((self.root / "products/synology/ds124.yaml").read_text(), self.ds124)
+
+    def test_collect_lists_what_a_pull_request_deletes_or_renames(self):
+        import subprocess
+        repo = self.tmp / "git"
+        shutil.copytree(self.root, repo)
+        git = lambda *a: subprocess.run(["git", *a], cwd=repo, check=True, capture_output=True, text=True).stdout.strip()
+        git("init", "-q"); git("add", "-A"); git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "base")
+        base = git("rev-parse", "HEAD")
+        git("mv", "products/synology/ds124.yaml", "products/synology/ds-124.yaml")
+        git("rm", "-q", "publishers/synology.yaml")
+        git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "head")
+        data = pr_referee.collect(base, git("rev-parse", "HEAD"), 7, repo)
+        self.assertEqual(data["deleted"], ["products/synology/ds124.yaml", "publishers/synology.yaml"])
+        self.assertEqual(list(data["files"]), ["products/synology/ds-124.yaml"])
+
+    def test_the_gate_reads_the_list_of_github_and_checks_it(self):
+        path = self.tmp / "deleted.txt"
+        path.write_text("products/synology/ds124.yaml\n.github/workflows/lint.yml\nREADME.md\n")
+        self.assertEqual(pr_referee.deleted_list(path), ["products/synology/ds124.yaml"])
+        good = {"version": 1, "pr": 12, "head_sha": SHA, "files": {}}
+        for bad in ({**good, "deleted": "products/synology/ds124.yaml"}, {**good, "deleted": ["tools/lint.py"]}):
+            proposal = self.tmp / "p.json"
+            proposal.write_text(json.dumps(bad))
+            with self.subTest(bad=bad["deleted"]), self.assertRaises(SystemExit):
+                pr_referee.load_proposal(proposal)
+
+    def test_remove_logs_what_the_product_was_and_frees_the_key(self):
+        entry = pr_referee.remove("synology/ds124", "abuse of the name", self.root, by="maintainer", now=NOW, log=QUIET)
+        self.assertFalse((self.root / "products/synology/ds124.yaml").exists())
+        log = pr_referee.load_decisions(self.root / pr_referee.DECISIONS)
+        self.assertEqual(log, [entry])
+        for field, value in (("subject", "synology/ds124"), ("name", "DS124"), ("removed_publisher", "synology"),
+                             ("date", "2026-11-13"), ("reason", "abuse of the name"), ("by", "maintainer")):
+            self.assertEqual(entry[field], value, field)
+        self.assertIn("https://www.synology.com/en-global/products/DS124", entry["sources"])
+        # the key is free: a new proposal with it is judged as any new product
+        i = self.gate({"products/synology/ds124.yaml": self.ds124})["products/synology/ds124.yaml"]
+        self.assertEqual((i["outcome"], i["old"]), ("pending", {}))
+
+    def test_a_deletion_after_the_logged_decision_is_accepted(self):
+        pr_referee.save_decisions([{"publisher": "synology", "rule": "remove", "subject": "synology/ds124",
+                                    "decision": "remove", "date": "2026-11-13", "reason": "abuse", "by": "maintainer"}],
+                                  self.root / pr_referee.DECISIONS)
+        i = self.gate(deleted=["products/synology/ds124.yaml"])["products/synology/ds124.yaml"]
+        self.assertEqual((i["outcome"], i["by"]), ("accept", "person"))
+
+    def test_the_log_keeps_every_decision(self):
+        pr_referee.remove("synology/ds124", "first", self.root, now=NOW, log=QUIET)
+        (self.root / "products/synology/ds124.yaml").write_text(self.ds124)
+        pr_referee.remove("synology/ds124", "second", self.root, now=NOW, log=QUIET)
+        self.assertEqual([d["reason"] for d in pr_referee.load_decisions(self.root / pr_referee.DECISIONS)],
+                         ["first", "second"])
+
+    def test_the_four_cases_of_the_test_set_are_rejected_on_tk3(self):
+        proposals = [p for p in pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml")
+                     if p["id"] in ("B55", "B56", "B57", "B58", "G36")]
+        items = {i["id"]: i for i in pr_referee.gate_proposals(proposals, FakeFetcher(), log=QUIET)}
+        for cid in ("B55", "B56", "B57", "B58"):
+            self.assertEqual((items[cid]["outcome"], items[cid]["rule"]), ("reject", "TK3"), cid)
+        self.assertNotEqual(items["G36"]["outcome"], "reject", "a freed key is judged as any new product")
 
 
 class WorkflowTest(unittest.TestCase):

@@ -5,5 +5,8 @@
 #   reject   a proposal of this publisher held for this reason is rejected, with this decision
 # A collision or an audit finding on a product: rule is the kind, subject the product key. Written with:
 # python tools/pr_referee.py settle <product key> stays|proposal (collision), keep|fix|remove (audit)
+# A maintainer takes a product out (TK3, TG13): rule remove, subject the key, with its name, publisher
+# and sources. Written with: python tools/pr_referee.py remove <product key> --reason "..." --by <who>
+# Every decision is kept; a later one on the same subject stands next to it, and the last one counts.
 version: 1
 decisions: []

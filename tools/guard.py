@@ -13,6 +13,7 @@ and the AI only ever judges *what* something is (TV2).
                        domain and names that domain, or the proposal is wrong
     TV5  replacement   a change that moves a source, the publisher or a code of an existing file to
                        another domain or another value: held for a person
+    TK3  kept          a change keeps the key and every alias of an existing file (`taken_out`)
 
 Code here holds a list of characters that look alike. It names no brand
 and no product (TG4). Standard library only: the lint uses it.
@@ -257,6 +258,21 @@ CODES = ("cpe", "purl", "gtin", "winget", "homebrew")
 
 def _owners(urls) -> set:
     return {owner(u) or host_of(u) for u in urls if isinstance(u, str)}
+
+
+def taken_out(old: dict, new: dict) -> list[str]:
+    """TK3: what a change to an existing file takes away of its key or its aliases; [] when nothing.
+    A key never changes and an alias stays: only a maintainer takes a product out (TAX-45)."""
+    if not isinstance(old, dict) or not isinstance(new, dict):
+        return []
+    out = []
+    if isinstance(old.get("key"), str) and new.get("key") != old["key"]:
+        out.append(f"the key {old['key']!r} becomes {new.get('key')!r}")
+    kept = new.get("aliases") if isinstance(new.get("aliases"), list) else []
+    for a in old.get("aliases") or []:
+        if isinstance(a, str) and a not in kept:
+            out.append(f"the alias {a!r} is taken out")
+    return out
 
 
 def replaced(old: dict, new: dict) -> list[str]:

@@ -1,18 +1,19 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 91 proposals: 35 good (3 of them now expected human: their sources redirect, TAX-38), 54 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 96 proposals: 36 good (3 of them now expected human: their sources redirect, TAX-38), 58 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
 #   expect    the outcomes that count as right: accept | reject | alias | human
 #   rules     for a bad case: the rules of which at least one must answer "no" (or the lint rule)
 #   alias_of  for expect alias: the key the proposal duplicates
-#   lint      what tools/lint.py reports on the staged case: pass | signal | error TR1/TR2/TR3
+#   lint      what tools/lint.py reports on the staged case: pass | signal | error TR1/TR2/TR3/TK3
 #   type      the kind of case, used to report results per kind
 #   holdout   files taken out of the dataset and proposed again, unchanged
 #   hide      files taken out of the dataset and not proposed
 #   context   files added to the dataset before the case runs
 #   proposal  files proposed: path -> file content
+#   delete    data files the proposal deletes or renames (TK3)
 #   verify    URLs written for this testset; check them before the run (see README)
 #   note      why the expectation is what it is
 
@@ -1447,6 +1448,7 @@ cases:
       - cpe: cpe:2.3:a:apache:tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
+      - the-apache-software-foundation/tomcat
       - broadcom/tomcat
   note: 'TAX-40, point 1. The alias is under another publisher than the product: code rejects it (TV2). The name itself is written at the source, so without point 1 it would be taken in: the deliberate
     break of the story.'
@@ -1474,6 +1476,7 @@ cases:
       - cpe: cpe:2.3:a:apache:tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
+      - the-apache-software-foundation/tomcat
       - the-apache-software-foundation/spring-boot
   note: 'TAX-40, point 2. The alias is the name of a product of another publisher, written under this publisher. No source of the product writes it for this product: parked, waiting for a better proposal.'
 - id: B53
@@ -1500,6 +1503,7 @@ cases:
       - cpe: cpe:2.3:a:apache:tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
+      - the-apache-software-foundation/tomcat
       - the-apache-software-foundation/kestrel-gateway
   note: 'TAX-40, point 2. A name that no source writes: parked, waiting for a better proposal.'
 - id: B54
@@ -1528,3 +1532,77 @@ cases:
       aliases:
       - the-apache-software-foundation/tomcat
   note: 'TAX-40, point 3. An alias together with another change (the source moves to another domain) is no alias-only change: the whole product is judged, and TV5 holds it for a person.'
+
+# ---------------------------------------------------------------------------------------------
+# TK3 — a key stays (TAX-45). Only a maintainer takes a product out, with a logged decision.
+# ---------------------------------------------------------------------------------------------
+
+- id: B55
+  type: key-deleted
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  delete: [products/synology/ds124.yaml]
+  note: TAX-45. A pull request deletes a product file. The key would vanish and could be used again.
+- id: B56
+  type: key-renamed
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  delete: [products/shelly/shelly-plus-1pm.yaml]
+  proposal:
+    products/shelly/shelly-plus-1-pm.yaml: |
+      key: shelly/shelly-plus-1pm
+      publisher: shelly
+      name: Shelly Plus 1PM
+      kind: device
+      source: https://www.shelly.com/products/shelly-plus-1pm
+      versions:
+        source: https://shelly-api-docs.shelly.cloud/gen2/changelog/
+      identifiers: []
+      aliases: []
+  note: TAX-45. A pull request renames a product file. The old path is deleted, so the key moves.
+- id: B57
+  type: key-deleted
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  delete: [publishers/synology.yaml]
+  note: TAX-45. A pull request deletes a publisher file.
+- id: B58
+  type: alias-taken-out
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  proposal:
+    products/adobe/adobe-acrobat.yaml: |
+      key: adobe/adobe-acrobat
+      publisher: adobe
+      name: Adobe Acrobat
+      kind: software
+      source: https://www.adobe.com/acrobat.html
+      versions:
+        source: https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html
+      aliases: []
+  note: TAX-45. A change takes an alias out of an existing product. An alias stays with its key.
+- id: G36
+  type: key-freed
+  expect: [accept]
+  lint: pass
+  holdout: [products/netgear/rbr750.yaml]
+  context:
+    referee/decisions.yaml: |
+      version: 1
+      decisions:
+      - publisher: netgear
+        rule: remove
+        subject: netgear/rbr750
+        decision: remove
+        date: '2026-11-20'
+        reason: a test of a key that is free again
+        by: maintainer
+        name: RBR750
+        removed_publisher: netgear
+        path: products/netgear/rbr750.yaml
+        sources: [https://www.netgear.com/support/product/rbr750]
+  note: TAX-45. A maintainer took this key out; the key is free again. The proposal is judged as any new product. The log is context of the case, not data.
