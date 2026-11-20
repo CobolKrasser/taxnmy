@@ -91,6 +91,14 @@ referee, which checks with TP3 whether it is a product of its own.
 An alias is an earlier or other key of the same product. A proposal that matches a key or an alias
 is a duplicate (TK3).
 
+### Archived products
+
+A product is archived when its publisher has ended it: it gets no more updates (TP10). Only a
+change that proposes it sets `archived`, with a page of the publisher that shows the end; a change
+that takes the product up again replaces it with `resumed` and a page that shows new updates.
+Nothing in TAXNMY archives a product by itself, after a term or a count. An archived product keeps
+its key and its aliases, and its file stays where it is.
+
 ### The referee
 
 Every proposal arrives as a pull request and is judged against the rules of the referee (TR) and

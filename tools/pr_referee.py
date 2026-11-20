@@ -30,7 +30,7 @@ The steps, each in its own job:
     settle    a person settles a collision or an audit finding on a product (`kind`); kept there too.
     remove    a maintainer takes a product out (TK3, TG13); the decision is logged there, with what it was.
     waiting   what waits for a decision of a person, per publisher, as JSON.
-    testset   the 99 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 104 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -52,6 +52,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import alias  # noqa: E402
+import archive  # noqa: E402
 import gate  # noqa: E402
 import intake  # noqa: E402
 import referee  # noqa: E402
@@ -303,6 +304,8 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
             else:
                 settled(item, "accept", reason="a publisher file that passes the lint and the checks of code")
+        elif (life := archive.change(p["files"], st.old)) is not None:
+            gate_archive(item, st, *life, fetcher)
         elif (new := alias.added(p["files"], st.old)) is not None:
             gate_alias(item, st, new, fetcher, mine, stager)
         elif chat := gate.ai_chat(st.product, st.publisher):
@@ -399,6 +402,47 @@ def settle_alias(item: dict, answer: dict, schema: dict) -> dict:
         return settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()), "code")
     return settled(item, "accept", reason=f"an added alias, quoted from a read source of the product (TV6); "
                    f"{', '.join(alias.NOT_JUDGED)}: not judged, {alias.WHY_NOT}", by="ai")
+
+
+def gate_archive(item: dict, st, direction: str, url: str, fetcher) -> dict:
+    """A change that archives a product or takes it up again (TP10, TAX-47, tools/archive.py): judged
+    on that alone. The place of the source by code; the text, when it was read, by one question for
+    the AI. The other rules are not judged again."""
+    item["archive"] = direction
+    item["decided"] = archive.not_judged()
+    outcome, why = archive.place(url, st.publisher)
+    if outcome:
+        return settled(item, outcome, archive.RULE, why, waits="better-proposal")
+    src = fetcher.fetch(url, referee.product_name(st))
+    item["sources"] = [asdict(src)]
+    if end := moved(src):
+        return park_redirected(item, [(url, end)])
+    if not gate.read(src):
+        return settled(item, "parked", archive.RULE, f"{url} could not be read ({src.status}); the referee tries again")
+    item["ask"], item["ai_rules"] = "archive", [archive.RULE]
+    item["message"] = archive.message(st.old[next(iter(st.old))], direction, [src])
+    item["outcome"] = "pending"
+    return item
+
+
+def settle_archive(item: dict, answer: dict, schema: dict) -> dict:
+    """The outcome of the one question on archiving or taking up again: accepted only when the answer
+    is yes with a quote of the read source that names the product (TV6); otherwise parked."""
+    item["cost"], item["usage"] = answer["cost"], answer["usage"]
+    if answer["error"] or answer["stop"] == "refusal":
+        return settled(item, "parked", archive.RULE, answer["error"] or "the model refused", "ai")
+    verdict, why = referee.parse_reply(answer["text"], archive.schema_for(schema, item["archive"]))
+    if verdict is None:
+        return settled(item, "parked", archive.RULE, why, "ai")
+    item["verdict"] = verdict
+    product = referee.product_file(item["files"])[1]
+    why = archive.check(verdict, item["archive"], product, [Source(**s) for s in item["sources"]])
+    item["checked"] = {archive.RULE: "yes" if not why else "doubt"}
+    if why:
+        return settled(item, "parked", archive.RULE, why, "ai", "better-proposal")
+    done = "the publisher ended the product" if item["archive"] == "archive" else "the product gets updates again"
+    return settled(item, "accept", archive.RULE, f"{done}, quoted from a source of the publisher (TV6); "
+                   f"{', '.join(archive.NOT_JUDGED)}: not judged, {archive.WHY_NOT}", by="ai")
 
 
 def redirected(files: dict, sources: list) -> list[tuple[str, str]]:
@@ -511,19 +555,19 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
         client = referee.AnthropicClient()
     # TAX-43: the messages were built in the gate, with or without the page footer; the system prompt
     # must say the same, and one batch has one system prompt.
-    feet = {bool(i.get("footer")) for i in pending if i.get("ask") != "alias"}
+    feet = {bool(i.get("footer")) for i in pending if not i.get("ask")}
     if len(feet) > 1:
         raise SystemExit("the pending items were gated with and without the page footer (TAX-43): gate them again")
     footer = feet == {True}
     system = referee.load_system_prompt(Path(args.prompt), footer)
     schema = referee.load_schema(Path(args.schema))
     api = referee.api_schema(schema)
-    asks = {"alias": (referee.load_system_prompt(alias.PROMPT), referee.load_schema(alias.SCHEMA))} \
-        if any(i.get("ask") == "alias" for i in pending) else {}
+    asks = {a: (referee.load_system_prompt(ASKS[a][0]), referee.load_schema(ASKS[a][1]))
+            for a in {i["ask"] for i in pending if i.get("ask")}}
     requests = []
     for n, item in enumerate(pending):
-        if item.get("ask") == "alias":  # one question on an added alias (TAX-40)
-            text, form = asks["alias"][0], alias.schema_for(referee.api_schema(asks["alias"][1]), item["alias"])
+        if ask := item.get("ask"):  # one question of its own: an added alias (TAX-40), archiving (TAX-47)
+            text, form = asks[ask][0], ASKS[ask][2](referee.api_schema(asks[ask][1]), item)
         else:
             text, form = system, referee.schema_for(api, item["ai_rules"])
         if wrong := referee.format_problems(form):  # refused with a 400 otherwise, before anything is paid
@@ -556,8 +600,8 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
         answers.update(more)
         left_out += out_too
     for cid, answer in answers.items():
-        if by_id[cid].get("ask") == "alias":
-            settle_alias(by_id[cid], answer, asks["alias"][1])
+        if ask := by_id[cid].get("ask"):
+            ASKS[ask][3](by_id[cid], answer, asks[ask][1])
         else:
             settle_answer(by_id[cid], answer, schema)
     for cid in left_out:
@@ -572,6 +616,11 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
                                     if k in item},
                                    ensure_ascii=False) + "\n")
     return run_dir
+
+
+# The questions of their own: ask -> (prompt, answer schema, the schema for one item, settle).
+ASKS = {"alias": (alias.PROMPT, alias.SCHEMA, lambda s, i: alias.schema_for(s, i["alias"]), settle_alias),
+        "archive": (archive.PROMPT, archive.SCHEMA, lambda s, i: archive.schema_for(s, i["archive"]), settle_archive)}
 
 
 def settle_answer(item: dict, answer: dict, schema: dict) -> None:
@@ -657,7 +706,7 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
     out_dir.mkdir(parents=True, exist_ok=True)
     cost = sum(i.get("cost", 0.0) for i in items)
     keep = ("id", "key", "publisher", "outcome", "rule", "reason", "by", "waits_for", "holds", "files", "deleted", "old", "case",
-            "duplicate_of", "alias", "cost", "submitter", "known")
+            "duplicate_of", "alias", "archive", "cost", "submitter", "known")
     data = {"version": 1, "pr": pr, "head_sha": head_sha, "run": run_dir.name if run_dir else "",
             "counts": counts(items), "cost": round(cost, 6), "verdicts": [{k: i.get(k) for k in keep} for i in items]}
     (out_dir / "verdicts.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

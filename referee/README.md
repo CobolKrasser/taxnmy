@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for TP1, TP3, TP5, TK2 and TE1, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 99 proposals with the expected outcome: 39 good (G01–G37, H01–H02), 60 bad |
+| `testset/cases.yaml` | 104 proposals with the expected outcome: 41 good (G01–G39, H01–H02), 63 bad |
 | `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
 | `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
@@ -182,9 +182,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 99 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 104 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 99); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 104); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -535,7 +535,7 @@ that deletes a file whose removal is already in the log on `main` is accepted. A
 key is free: a next proposal with it is judged as any new product.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 99 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 104 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 
@@ -557,6 +557,22 @@ whoever judges it (TV1), gets the whole review. Without a quote the alias is par
 better proposal; with no source of the product read, it waits for an event. The sources are those
 of the product itself, not of its publisher: a proposal points to no other source, since the schema
 has no field for it.
+
+### Archiving a product, and taking it up again (TAX-47)
+
+A product is archived only on a proposal for it (TP10). The change adds `archived: {source: ...}`
+to a product in TAX, or replaces it with `resumed: {source: ...}`, and does nothing else
+(`tools/archive.py`). It is judged on that alone:
+
+| step | what | outcome when it fails |
+| --- | --- | --- |
+| 1 | the source is on the publisher's domain as TAX holds it: the owner of the publisher's `source` or of a source for machines | *reject* by code; *parked* (better proposal) when TAX holds no domain of the publisher |
+| 2 | the source is read | *parked*, waiting for an event |
+| 3 | the text shows the end, or new updates: one question to the AI (`referee/prompt-archive.md`), whose yes counts only with a quote found in the text that names the product (TV6) | *parked*, waiting for a better proposal |
+
+TP3, TP5, TK2, TP1 and TE1 are not judged again. A change that touches `archived` or `resumed` and
+anything else, a new product with either field, or a change that takes `archived` out without
+`resumed`, is an error TP10 of the gate.
 
 ### The limits of the intake (TAX-32)
 
