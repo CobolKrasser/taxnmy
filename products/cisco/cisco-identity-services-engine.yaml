@@ -1,0 +1,9 @@
+key: cisco/cisco-identity-services-engine
+publisher: cisco
+name: Cisco Identity Services Engine
+kind: software
+source: https://www.cisco.com/c/en/us/support/security/identity-services-engine/series.html
+versions:
+  source: https://www.cisco.com/c/en/us/support/security/identity-services-engine/products-release-notes-list.html
+aliases:
+- cisco/cisco-identity-services-engine-software
