@@ -23,6 +23,12 @@ Conduct (tax-fase2-pagina-s-lezen.md §2): an honest User-Agent with a link to t
 robots.txt is respected; at most one request per second per site; each URL once per run (the
 cache). No imitated browser headers, no proxies, no stealth.
 
+The footer of a page (TAX-43) is kept as a text of its own, `Source.footer`, next to the text: it
+is where a publisher writes its name (the copyright line), and it is a list of links that proves no
+product name. So it counts only where the question is who the publisher is (TR5, and the importer's
+check on the name of a new publisher), never for TR6. Whether it counts at all is the switch
+`footer_counts()`: off until three runs on the test set show 0 wrong accepts (TR12).
+
 No network access happens at import. Costs nothing.
 """
 
@@ -31,6 +37,7 @@ from __future__ import annotations
 import email.utils
 import html.parser
 import io
+import os
 import re
 import time
 import urllib.error
@@ -54,6 +61,22 @@ RETRY_AFTER_MAX = 60.0
 API_RETRY_WAIT = 5.0  # seconds before the one retry of an API that timed out (NVD limits requests without a key)
 BROWSER_TIMEOUT_MS = 15_000  # wait at most this long for the network to be quiet
 REFUSED = {401, 403}
+FOOTER_CHARS = 3_000  # the footer of a page: a copyright line and some links; a longer one keeps its end,
+                      # where the copyright line stands
+
+# TAX-43: whether the footer of a page counts for the question who the publisher is. Off until the
+# measurement on the test set (TR12); the environment variable TAX_FOOTER (1 or 0) overrides it.
+FOOTER_COUNTS = False
+
+
+def footer_counts() -> bool:
+    """The switch of TAX-43: TAX_FOOTER=1 or 0 when it is set, else FOOTER_COUNTS."""
+    value = os.environ.get("TAX_FOOTER", "").strip().lower()
+    if value in ("1", "true", "on", "yes"):
+        return True
+    if value in ("0", "false", "off", "no"):
+        return False
+    return FOOTER_COUNTS
 
 
 @dataclass
@@ -67,6 +90,14 @@ class Source:
     product: str = ""  # step 0: the product whose part was taken out
     instead_of: str = ""  # step 4: the refused URL this source was found for
     final_url: str = ""  # where the request ended after its redirects, when that is not the URL requested (TAX-38)
+    footer: str = ""  # TAX-43: the text in the <footer> of an HTML page, apart from `text`; only for who publishes
+
+
+def publisher_texts(src: "Source", footer: bool | None = None) -> list[str]:
+    """The texts of a source that may show who the publisher is: the text, and its footer when the
+    switch is on (TAX-43). Never for whether a product name stands in a source (TR6)."""
+    on = footer_counts() if footer is None else footer
+    return [src.text] + ([src.footer] if on and src.footer else [])
 
 
 def _plain(url: str) -> tuple:
@@ -106,29 +137,47 @@ def source_key(url: str, product: str = "") -> str:
 # --------------------------------------------------------------------------- text from a response
 
 class _Text(html.parser.HTMLParser):
+    """The text of a page without what is skipped; the text of its footer apart (TAX-43). What is in a
+    footer and also in something else skipped (a script, a nav in the footer) is in neither."""
     SKIP = {"script", "style", "noscript", "nav", "header", "footer", "svg", "template", "iframe"}
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.depth, self.out = 0, []
+        self.open, self.foot = [], []  # the skipped tags that are open, one per depth; the footer text
 
     def handle_starttag(self, tag, attrs):
         if tag in self.SKIP:
             self.depth += 1
+            self.open.append(tag)
 
     def handle_endtag(self, tag):
         if tag in self.SKIP and self.depth:
             self.depth -= 1
+            self.open.pop()
 
     def handle_data(self, data):
-        if not self.depth and data.strip():
+        if not data.strip():
+            return
+        if not self.depth:
             self.out.append(data.strip())
+        elif all(t == "footer" for t in self.open):
+            self.foot.append(data.strip())
+
+
+def _space(parts: list[str]) -> str:
+    return re.sub(r"\s+", " ", " ".join(parts)).strip()
+
+
+def html_parts(page: str) -> tuple[str, str]:
+    """(the text of a page, the text of its footer)."""
+    parser = _Text()
+    parser.feed(page)
+    return _space(parser.out), _space(parser.foot)
 
 
 def html_to_text(page: str) -> str:
-    parser = _Text()
-    parser.feed(page)
-    return re.sub(r"\s+", " ", " ".join(parser.out)).strip()
+    return html_parts(page)[0]
 
 
 class _Frames(html.parser.HTMLParser):
@@ -172,6 +221,13 @@ def page_text(body: bytes, ctype: str, charset: str) -> str:
     if ctype == "application/pdf":
         return pdf_to_text(body)
     return ""
+
+
+def page_footer(body: bytes, ctype: str, charset: str) -> str:
+    """The text of the footer of an HTML page (TAX-43); '' for anything else."""
+    if ctype != "text/html":
+        return ""
+    return html_parts(body.decode(charset, errors="replace"))[1]
 
 
 # --------------------------------------------------------------------------- step 1: known APIs
@@ -436,6 +492,7 @@ class Fetcher:
                 return Source(url, status, found[:SOURCE_CHARS], "machine", fetched, len(found), product=product,
                               final_url=ended)
         text = page_text(resp.body, resp.ctype, resp.charset)
+        footer = page_footer(resp.body, resp.ctype, resp.charset)
         is_html = resp.ctype == "text/html"
 
         if is_html and len(text) < MIN_CHARS:
@@ -446,6 +503,7 @@ class Fetcher:
                     frame_text = page_text(fr.body, fr.ctype, fr.charset)
                     if len(frame_text) > len(text):
                         text, fetched = f"{text} {frame_text}".strip(), frame
+                        footer = f"{footer} {page_footer(fr.body, fr.ctype, fr.charset)}".strip()
 
         if is_html and len(text) < MIN_CHARS and self.browser is not None:
             self._wait_for(target)
@@ -462,7 +520,8 @@ class Fetcher:
 
         if len(text) < MIN_CHARS:
             return Source(url, "unreadable", method=method, fetched_url=fetched, chars=len(text), final_url=ended)
-        return Source(url, status, text[:SOURCE_CHARS], method, fetched, len(text), final_url=ended)
+        return Source(url, status, text[:SOURCE_CHARS], method, fetched, len(text), final_url=ended,
+                      footer=footer[-FOOTER_CHARS:])
 
     def close(self) -> None:
         if self.browser is not None and hasattr(self.browser, "close"):

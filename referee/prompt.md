@@ -91,6 +91,23 @@ How to answer
   "in part" says what code checked of a rule that is still yours; judge that rule in full.
 ```
 
+## Page footer (TAX-43)
+
+Only when the switch is on (`footer_counts()` in `tools/fetch.py`, or `TAX_FOOTER=1`): this text is
+added to the system prompt, and a source block ends with the footer of its page in
+`<page-footer>`. With the switch off, neither is there. The question of TR5 stays as it is
+(decision 35, point 3); only where the referee may find the answer changes.
+
+```text
+Page footer
+- A <source> block may end with a <page-footer> block: the text in the footer of that page, kept
+  apart from the rest. It belongs to that source: quote it with the URL of its source.
+- The footer counts only for TR5, who publishes the updates; a copyright line there may show it.
+  For TR4, TR6, TR7 and TR8 a value that appears only in a <page-footer> does not count.
+- A footer often names others than the publisher: a hoster, the maker of a theme or a platform.
+  Such a name shows nothing about who publishes the updates.
+```
+
 ## User message
 
 Fill in the placeholders. Keep the order. The existing products come first and the sources last,
@@ -126,7 +143,10 @@ Judge only: {the rules left for the referee}
 
 <sources>
 <source url="{url}" status="{HTTP status}">
-{the readable text of the page, without navigation, scripts or styles; at most 6,000 tokens}
+{the readable text of the page, without navigation, header, footer, scripts or styles; at most 6,000 tokens}
+<page-footer>
+{only with the switch of § Page footer: the text in the footer of the page; at most 3,000 characters, its end}
+</page-footer>
 </source>
 … one block per distinct URL in the proposal, and for the source of the publisher file …
 </sources>

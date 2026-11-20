@@ -50,10 +50,11 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
 import guard  # noqa: E402
+import keyrule  # noqa: E402
 import lint  # noqa: E402
 from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of the harness API
-    MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, html_to_text, page_text, pdf_to_text,
-    source_key,
+    MIN_CHARS, SOURCE_CHARS, USER_AGENT, Fetcher, Source, StoredFetcher, footer_counts, html_to_text, page_text,
+    pdf_to_text, source_key,
 )
 
 REPO = Path(__file__).resolve().parent.parent
@@ -575,16 +576,19 @@ def urls_of(files: dict) -> list[str]:
 
 # --------------------------------------------------------------------------- the prompt and the message
 
-def load_system_prompt(path: Path) -> str:
-    """The text block under '## System prompt' in referee/prompt.md."""
+def load_system_prompt(path: Path, footer: bool = False) -> str:
+    """The text block under '## System prompt' in referee/prompt.md; with `footer` (TAX-43), and a
+    section '## Page footer' in the file, followed by the text block of that section."""
     text = path.read_text(encoding="utf-8")
     m = re.search(r"^## System prompt\s*$.*?^```text\n(.*?)^```", text, re.S | re.M)
     if not m:
         raise SystemExit(f"No system prompt (a ```text block under '## System prompt') in {path}")
-    return m.group(1).rstrip() + "\n"
+    prompt = m.group(1).rstrip() + "\n"
+    f = re.search(r"^## Page footer\b[^\n]*$.*?^```text\n(.*?)^```", text, re.S | re.M) if footer else None
+    return prompt + "\n" + f.group(1).rstrip() + "\n" if f else prompt
 
 
-MARKERS = re.compile(r"<(?=\s*/?\s*(?:proposal|signals|decided|identity|existing|sources|source)\b)", re.I)
+MARKERS = re.compile(r"<(?=\s*/?\s*(?:proposal|signals|decided|identity|existing|sources|source|page-footer)\b)", re.I)
 
 
 def inert(text: str) -> str:
@@ -593,10 +597,12 @@ def inert(text: str) -> str:
     return MARKERS.sub("&lt;", text)
 
 
-def build_message(staged: Staged, condition: str, sources: list[Source], decided: dict | None = None) -> str:
+def build_message(staged: Staged, condition: str, sources: list[Source], decided: dict | None = None,
+                  footer: bool = False) -> str:
     """The user message, in the order of referee/prompt.md § User message. `decided` holds the
     rules the gate settled (None: no gate); the message then says which rules are left for the
-    referee, with what code found of them (`gate.partly`)."""
+    referee, with what code found of them (`gate.partly`). With `footer` (TAX-43) a source block
+    ends with the footer of its page, in <page-footer>."""
     proposal = "\n".join(f"# {rel}\n{inert(text.rstrip())}" for rel, text in staged.files.items())
     signals = "\n".join(f"{f.rule}: {inert(f.message)}" for f in staged.findings if f.level == "signal") or "none"
     gate_block = ""
@@ -609,7 +615,8 @@ def build_message(staged: Staged, condition: str, sources: list[Source], decided
         gate_block = "<decided>\n" + "\n".join(lines) + "\n</decided>\n\n"
     if condition == "fetched":
         blocks = [f'<source url="{inert(s.url)}" status="{s.status}"'
-                  + (f' instead-of="{inert(s.instead_of)}"' if s.instead_of else "") + f'>\n{inert(s.text)}\n</source>'
+                  + (f' instead-of="{inert(s.instead_of)}"' if s.instead_of else "") + f'>\n{inert(s.text)}\n'
+                  + (f'<page-footer>\n{inert(s.footer)}\n</page-footer>\n' if footer and s.footer else "") + '</source>'
                   for s in sources]
         body = "\n".join(blocks) if blocks else "none"
     else:
@@ -716,14 +723,41 @@ def versions_url(files: dict) -> str:
     return str(versions.get("source") or "") if isinstance(versions, dict) else ""
 
 
+FOOTER_RULES = ("TR5", "TV1")  # TAX-43: the rules whose quote may come from the footer of a page
+
+
+def publisher_names(publisher: dict) -> list[str]:
+    """The name of a publisher file, and that name without its legal form (TAX-43)."""
+    name = publisher.get("name") if isinstance(publisher, dict) else None
+    if not isinstance(name, str) or not name.strip():
+        return []
+    stripped = keyrule.strip_legal_form(name).strip(" ,.")
+    return [name] + ([stripped] if stripped and stripped != keyrule.fold(name) else [])
+
+
 def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: str = "",
-                 files: dict | None = None) -> tuple[dict, list[str]]:
+                 files: dict | None = None, footer: bool = False, names=()) -> tuple[dict, list[str]]:
     """A yes whose quotes are not all found in the fetched text of their URL becomes doubt.
     A yes without any quote becomes doubt too. Returns the checked verdict and what changed.
     Only `rules` are checked: those the referee answered, not those the gate settled.
     TR4 is yes only with a version quoted from the text of the versions source `versions` (or of a
-    source found instead of it): news about a service is not a version (TP4)."""
+    source found instead of it): news about a service is not a version (TP4).
+    With `footer` (TAX-43, the referee was shown it) a quote for TR5 or TV1 may also stand in the
+    footer of its source; for any other rule only in its text. A footer names others too (a hoster,
+    the maker of a theme), so a TR5 yes that rests on a footer quote holds only when that quote
+    contains the publisher's name, one of `names`."""
     texts = {s.url: _norm(s.text) for s in sources}
+    feet = {s.url: _norm(s.footer) for s in sources if footer and s.footer}
+
+    def where(quote: str, url: str, rule: str) -> str:
+        q = _norm(quote)
+        if q in texts.get(url, ""):
+            return "text"
+        return "footer" if rule in FOOTER_RULES and q in feet.get(url, "") else ""
+
+    def found(quote: str, url: str, rule: str) -> bool:
+        return bool(where(quote, url, rule))
+
     proposal = _norm("\n".join((files or {}).values()))
     checked, notes = copy.deepcopy(verdict), []
     for rule in rules:
@@ -731,7 +765,7 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: st
         if rule == "TV1":
             # TV1 is "no" when a text addresses the referee: that "no" quotes the text, and code finds
             # it, or it is doubt. A "yes" (no such text) has nothing to quote.
-            if j["verdict"] == "no" and not any(_norm(ev["quote"]) in texts.get(ev["url"], "") or
+            if j["verdict"] == "no" and not any(found(ev["quote"], ev["url"], rule) or
                                                 _norm(ev["quote"]) in proposal for ev in j["evidence"]):
                 j["verdict"] = "doubt"
                 notes.append("TV1: no without a quote found in a source or the proposal")
@@ -743,9 +777,14 @@ def check_quotes(verdict: dict, sources: list[Source], rules=RULES, versions: st
             notes.append(f"{rule}: yes without a quote")
             continue
         for ev in j["evidence"]:
-            if _norm(ev["quote"]) not in texts.get(ev["url"], ""):
+            at = where(ev["quote"], ev["url"], rule)
+            if not at:
                 j["verdict"] = "doubt"
                 notes.append(f"{rule}: quote not found at {ev['url']}")
+                break
+            if at == "footer" and not any(gate.appears(n, ev["quote"]) for n in names):
+                j["verdict"] = "doubt"
+                notes.append(f"{rule}: a quote from the footer of {ev['url']} that does not name the publisher")
                 break
     tr4 = checked.get("TR4")
     if "TR4" in rules and tr4 and tr4["verdict"] == "yes":
@@ -1140,8 +1179,9 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
         prompt = TE4_PROMPT
     if not prompt.is_file():
         raise SystemExit(f"No prompt at {prompt}")
-    system = load_system_prompt(prompt)
-    log(f"prompt: {prompt}")
+    footer = footer_counts() and args.condition == "fetched"  # TAX-43
+    system = load_system_prompt(prompt, footer)
+    log(f"prompt: {prompt}" + (" (with the page footer, TAX-43)" if footer else ""))
     schema = load_schema(Path(args.schema))
     prices = load_prices(Path(args.prices))
     if args.model not in prices["models"]:
@@ -1257,12 +1297,12 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                 res.ai_rules = [r for r in RULES if r not in res.gate]
                 res.held = hold(st, sources if args.condition == "fetched" else None)
                 if batch:
-                    waiting.append((res, case, sources, decided, build_message(st, args.condition, sources, decided)))
+                    waiting.append((res, case, sources, decided, build_message(st, args.condition, sources, decided, footer)))
                     continue
                 spent_at_start = budget.spent
                 try:
                     text, stop, usage = review(client, budget, model=args.model, system=system,
-                                               message=build_message(st, args.condition, sources, decided), web=web,
+                                               message=build_message(st, args.condition, sources, decided, footer), web=web,
                                                effort=args.effort, max_uses=args.max_uses,
                                                schema=schema_for(api, res.ai_rules), largest_web=largest_web)
                 except BudgetExhausted as exc:
@@ -1282,7 +1322,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     res.usage, res.cost = usage, budget.spent - spent_at_start
                     if web:
                         largest_web = max(largest_web, res.cost)
-                    settle_reply(res, text, stop, schema, sources, decided, args.condition, versions_url(st.files), st.files)
+                    settle_reply(res, text, stop, schema, sources, decided, args.condition, versions_url(st.files), st.files, footer,
+                                 publisher_names(st.publisher))
             res.right = res.outcome in case.expect
             log(f"{case.id}: {res.outcome or '-'} ({res.by}){'' if res.right else '  WRONG'}, ${res.cost:.4f}; "
                 f"spent ${budget.spent:.4f} of ${args.budget:.2f}")
@@ -1309,7 +1350,8 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
                     res.by, res.outcome, res.error = "error", "human", answer["error"]
                 else:
                     settle_reply(res, answer["text"], answer["stop"], schema, sources, decided, args.condition,
-                                 versions_url(staged[case.id].files), staged[case.id].files)
+                                 versions_url(staged[case.id].files), staged[case.id].files, footer,
+                                 publisher_names(staged[case.id].publisher))
                 res.right = res.outcome in case.expect
                 log(f"{case.id}: {res.outcome or '-'} ({res.by}){'' if res.right else '  WRONG'}, ${res.cost:.4f}")
                 results.append(res)
@@ -1331,7 +1373,7 @@ def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=p
 
 
 def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: list, decided: dict, condition: str,
-                 versions: str = "", files: dict | None = None) -> None:
+                 versions: str = "", files: dict | None = None, footer: bool = False, names=()) -> None:
     """The outcome of one reply: parsed against the schema of the rules asked, quotes checked, and
     the rules the gate settled added as the gate settled them."""
     verdict, why = (parse_reply(text, schema_for(schema, res.ai_rules)) if stop != "refusal"
@@ -1341,7 +1383,7 @@ def settle_reply(res: "Result", text: str, stop: str, schema: dict, sources: lis
         return
     res.by, res.verdict, res.duplicate_of = "ai", verdict, verdict.get("duplicate_of")
     # The quote check is the code part of TR8; TE4 switches it off in memory and web.
-    checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions, files) if condition == "fetched"
+    checked, res.quote_notes = (check_quotes(verdict, sources, res.ai_rules, versions, files, footer, names) if condition == "fetched"
                                 else (verdict, []))
     checked = {**checked, **(decided or {})}  # the rules the gate settled, as the gate settled them
     res.checked = {r: checked[r]["verdict"] for r in RULES}
@@ -2036,7 +2078,8 @@ def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=pri
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("Token counting needs ANTHROPIC_API_KEY (it is free, but it is an API call)")
         client = AnthropicClient()
-    system = load_system_prompt(Path(args.prompt))
+    footer = footer_counts()  # TAX-43
+    system = load_system_prompt(Path(args.prompt), footer)
     api = api_schema(load_schema(Path(args.schema)))
     stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8"))) if args.sources else None
     fetcher = fetcher or stored or Fetcher(log=log)
@@ -2054,7 +2097,7 @@ def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=pri
             rules = [r for r in RULES if r not in decided]
             for model in getattr(args, "models", None) or [args.model]:
                 request = dict(model=model, system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
-                               messages=[{"role": "user", "content": build_message(st, "fetched", sources, decided)}],
+                               messages=[{"role": "user", "content": build_message(st, "fetched", sources, decided, footer)}],
                                output_config={"effort": args.effort, "format": {"type": "json_schema", "schema": schema_for(api, rules)}})
                 out.setdefault(model, {})[case.id] = client.count(request)
     finally:

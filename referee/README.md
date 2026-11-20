@@ -297,6 +297,24 @@ The ladder stops at a refusal:
   domain never counts as a source on the publisher's domain (TR5). The importer parks such a
   candidate too (`moved`).
 
+**The footer of a page** (TAX-43). Step 2 leaves the header, the navigation and the footer out of
+the text: a list of links proves no product name (TR6). The footer is kept as a text of its own,
+`footer` in `sources.json` (at most 3,000 characters; a longer one keeps its end, where the
+copyright line stands; the links of a navigation inside it stay out). It counts only where the
+question is who the publisher is, and only when the switch is on (`FOOTER_COUNTS` in
+`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`):
+
+| where | with the switch on |
+| --- | --- |
+| the importer, a new publisher | its name may stand in the text or in the footer of the page (`no-publisher-page` otherwise); the product name only in the text (`name-not-on-page`) |
+| the gate | nothing changes: TR6 reads only the text |
+| the referee | a source block ends with `<page-footer>`, and the system prompt gets § Page footer of `prompt.md`; the question of TR5 is the same |
+| the quote check | a quote for TR5 or TV1 may stand in the footer of its source; for TR5 only when it contains the publisher's name, because a footer also names a hoster or the maker of a theme. For every other rule only the text counts |
+
+The gate writes into each item whether its message held the footer (`footer`); a batch with items
+of both kinds is refused, because one batch has one system prompt. `run.json` says which it was.
+The browser (step 3) takes the visible text of the page, a footer included, as before.
+
 For each source `sources.json` records `status`, `method`, `chars` (the length before the cut to
 6,000 tokens) and `fetched_url`, when that differs from the URL in the proposal: an API, or a frame.
 `python tools/referee.py fetch` prints how many sources each step read.

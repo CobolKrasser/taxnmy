@@ -81,7 +81,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
-from fetch import moved as ends_elsewhere  # noqa: E402
+from fetch import moved as ends_elsewhere, publisher_texts  # noqa: E402
 import group  # noqa: E402
 import intake  # noqa: E402
 import keyrule  # noqa: E402
@@ -531,7 +531,9 @@ def check_pages(outcomes: list[Outcome], fetcher, final: dict | None = None) -> 
             if src.status in CLOSED:
                 closed = closed or url
                 continue
-            if gate.read(src) and not ends_elsewhere(src) and any(gate.appears(n, src.text) for n in names_of(name)):
+            # TAX-43: with the switch on, the footer of the page counts for the publisher's name (not for the product's).
+            if gate.read(src) and not ends_elsewhere(src) and any(gate.appears(n, t) for n in names_of(name)
+                                                                  for t in publisher_texts(src)):
                 chosen = url
                 break
         if chosen:
