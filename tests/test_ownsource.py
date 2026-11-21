@@ -54,19 +54,19 @@ class OwnersTest(unittest.TestCase):
         cands = [Candidate("homebrew", "https://shop.example/"), Candidate("winget", "https://shop.example/a"),
                  Candidate("cna", "https://psirt.vendor.example/", vouch=("vendor.example",)),
                  Candidate("npm", "https://lone.example/"), Candidate("scoop", "https://acme.example/")]
-        got = os_.trusted(PUB, cands, known={"known.example"})
+        got = os_.own_domains(PUB, cands, known={"known.example"})
         self.assertEqual(got, {"shop.example": "finders", "vendor.example": "cna", "acme.example": "name"})
-        self.assertEqual(os_.trusted(PUB, [Candidate("npm", "https://known.example/")], {"known.example"}),
+        self.assertEqual(os_.own_domains(PUB, [Candidate("npm", "https://known.example/")], {"known.example"}),
                          {"known.example": "known"})
 
     def test_a_domain_of_another_publisher_not_by_name(self):
         c = [Candidate("release-policy", "https://acmelabs-addon.example/")]
-        self.assertEqual(os_.trusted(PUB, c, set()), {"acmelabs-addon.example": "name"})
-        self.assertEqual(os_.trusted(PUB, c, set(), others={"acmelabs-addon.example"}), {})
+        self.assertEqual(os_.own_domains(PUB, c, set()), {"acmelabs-addon.example": "name"})
+        self.assertEqual(os_.own_domains(PUB, c, set(), others={"acmelabs-addon.example"}), {})
 
     def test_a_cna_vouches_only_for_its_mail_domain(self):
         c = Candidate("cna", "https://bugbounty.example/acme", vouch=("vendor.example",))
-        self.assertEqual(os_.trusted(PUB, [c], set()), {})
+        self.assertEqual(os_.own_domains(PUB, [c], set()), {})
 
 
 class ChooseTest(unittest.TestCase):

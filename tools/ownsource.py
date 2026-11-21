@@ -133,7 +133,7 @@ def known_owners(publisher: dict, products: list[dict]) -> set[str]:
     return {owner(u) for u in urls if u and not third_party(u)}
 
 
-def trusted(publisher: dict, candidates: list[Candidate], known: set[str], others: set[str] = frozenset()) -> dict[str, str]:
+def own_domains(publisher: dict, candidates: list[Candidate], known: set[str], others: set[str] = frozenset()) -> dict[str, str]:
     """owner -> the reason it counts as the publisher's own domain (see the docstring). A domain that
     TAX gives to another publisher (`others`) does not count by its name alone (TV2)."""
     by_owner: dict[str, set] = {}
@@ -192,7 +192,7 @@ def named(src, name: str) -> bool:
 def choose(publisher: dict, candidates: list[Candidate], known: set[str], fetcher,
            others: set[str] = frozenset()) -> Result:
     res = Result(publisher["key"], publisher.get("name", ""), publisher.get("source", ""))
-    reasons = trusted(publisher, candidates, known, others)
+    reasons = own_domains(publisher, candidates, known, others)
     for c in candidates:
         if third_party(c.url):
             res.rejected.append([c.url, f"{c.finder}: not an own site"])
