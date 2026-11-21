@@ -1,0 +1,9 @@
+key: gnu/the-gnu-c-library
+publisher: gnu
+name: The GNU C Library
+kind: software
+source: https://www.gnu.org/software/libc/
+versions:
+  source: https://ftp.gnu.org/gnu/libc/
+aliases:
+- gnu/gnu-c-library

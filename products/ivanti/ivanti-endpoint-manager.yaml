@@ -1,0 +1,9 @@
+key: ivanti/ivanti-endpoint-manager
+publisher: ivanti
+name: Ivanti Endpoint Manager
+kind: software
+source: https://www.ivanti.com/products/endpoint-manager
+versions:
+  source: https://download.ivanti.com/downloads/Readme/Pages/EPM2024-SU8.html
+aliases:
+- ivanti/endpoint-manager

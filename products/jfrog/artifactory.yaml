@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:jfrog:artifactory
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/artifactory.md
-aliases: []
+aliases:
+- jfrog/jfrog-artifactory

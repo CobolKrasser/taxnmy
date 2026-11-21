@@ -12,4 +12,5 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/laravel.md
 - cpe: cpe:2.3:a:laravel:laravel
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/laravel.md
-aliases: []
+aliases:
+- laravel/laravel-framework
