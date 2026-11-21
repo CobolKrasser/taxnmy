@@ -2,9 +2,9 @@ key: grafana-labs/grafana-loki
 publisher: grafana-labs
 name: Grafana Loki
 kind: software
-source: https://grafana.com/docs/loki/latest/release-notes/
+source: https://endoflife.date/grafana-loki
 versions:
-  source: https://grafana.com/docs/loki/latest/release-notes/
+  source: https://endoflife.date/grafana-loki
 identifiers:
 - purl: pkg:github/grafana/loki
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/grafana-loki.md

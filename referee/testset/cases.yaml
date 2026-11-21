@@ -1292,7 +1292,7 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache ActiveMQ Classic
       kind: software
-      source: https://activemq.apache.org/support.html
+      source: https://endoflife.date/apache-activemq
       versions:
         source: https://activemq.apache.org/support.html
       identifiers:
@@ -1315,9 +1315,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Flink
       kind: software
-      source: https://flink.apache.org/
+      source: https://endoflife.date/apache-flink
       versions:
-        source: https://flink.apache.org/downloads/
+        source: https://endoflife.date/apache-flink
       identifiers:
       - purl: pkg:github/apache/flink
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md
@@ -1361,9 +1361,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Struts
       kind: software
-      source: https://struts.apache.org/releases.html
+      source: https://endoflife.date/apache-struts
       versions:
-        source: https://struts.apache.org/releases.html
+        source: https://endoflife.date/apache-struts
       identifiers:
       - cpe: cpe:2.3:a:apache:struts
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md

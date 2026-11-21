@@ -2,9 +2,9 @@ key: bellsoft/bellsoft-liberica-jdk
 publisher: bellsoft
 name: Bellsoft Liberica JDK
 kind: software
-source: https://bell-sw.com/support/
+source: https://endoflife.date/bellsoft-liberica
 versions:
-  source: https://bell-sw.com/support/
+  source: https://endoflife.date/bellsoft-liberica
 identifiers:
 - purl: pkg:scoop/liberica-jdk
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bellsoft-liberica.md

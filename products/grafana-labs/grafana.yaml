@@ -2,9 +2,9 @@ key: grafana-labs/grafana
 publisher: grafana-labs
 name: Grafana
 kind: software
-source: https://grafana.com/docs/grafana/latest/upgrade-guide/when-to-upgrade/
+source: https://endoflife.date/grafana
 versions:
-  source: https://grafana.com/docs/grafana/latest/upgrade-guide/when-to-upgrade/
+  source: https://endoflife.date/grafana
 identifiers:
 - purl: pkg:github/grafana/grafana
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/grafana.md

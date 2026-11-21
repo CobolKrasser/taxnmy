@@ -2,9 +2,9 @@ key: the-qt/qt
 publisher: the-qt
 name: Qt
 kind: software
-source: https://www.qt.io/development/qt-framework/maintenance-periods
+source: https://endoflife.date/qt
 versions:
-  source: https://www.qt.io/development/qt-framework/maintenance-periods
+  source: https://endoflife.date/qt
 identifiers:
 - cpe: cpe:2.3:a:qt:qt
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/qt.md
