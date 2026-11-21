@@ -81,14 +81,17 @@ parked:
 - key: adobe/adobe-commerce
   path: products/adobe/adobe-commerce.yaml
   publisher: adobe
-  waits_for: event
-  owner: referee
-  rule: TAX-27
-  reason: 'closed source: https://business.adobe.com/products/commerce.html: disallowed'
-  since: '2026-11-19'
-  checked: '2026-11-19'
-  lapses: '2027-02-17'
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The versions source is a release notes overview that names no specific version number, build or release name
+    of Adobe Commerce.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
   pr: null
+  submitter: kev-ronde-1
+  known: true
   fingerprint: 3c8094d38eadbd81
   files:
     products/adobe/adobe-commerce.yaml: |
@@ -888,7 +891,7 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://support.checkpoint.com/results/sk/sk183506: disallowed'
+  reason: 'closed source: publisher page https://support.checkpoint.com/results/sk/sk183506'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -966,7 +969,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates: refused'
+  reason: 'closed source, and no other page of the publisher found: https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates:
+    refused; the search found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1059,9 +1063,8 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: alias
-  reason: 'alias ''cisco/cisco-ios-xe-software'': doubt: The sources write the name only as "Cisco IOS XE". The NVD record
-    is "Cisco IOS XE 2.4.0". No source text writes "Cisco IOS XE Software", and none uses that name for something else, so
-    the texts do not settle it.'
+  reason: 'alias ''cisco/cisco-ios-xe-software'': doubt: The source texts write only ''Cisco IOS XE'' and the ''Cisco IOS
+    XE website''. None of them writes ''Cisco IOS XE Software'', so the texts do not show this name for the product.'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1355,7 +1358,9 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=ce00778d253846c7a8b3f24cdb24781d: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DCS-2530L/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=ce00778d253846c7a8b3f24cdb24781d
+    (closed) -> https://www.dlink.com/xk/sq/products/dcs-2530l-wide-eye-full-hd-180-panoramic-camera'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1407,7 +1412,9 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=4587b63118524aec911191cc81605283: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-600/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=4587b63118524aec911191cc81605283
+    (closed) -> https://www.dlink.com/en/-/media/consumer_products/dir/dir-600/datasheet/dir_600_c1_datasheet_03_ww.pdf'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1434,7 +1441,9 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=2b09e95d90ff4cb38830ecc04c89cee5: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-605/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=2b09e95d90ff4cb38830ecc04c89cee5
+    (closed) -> https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10393'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1461,7 +1470,9 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=00c2150966b046b58ba95d8ae3a8f73d: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-820L/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=00c2150966b046b58ba95d8ae3a8f73d
+    (closed) -> http://legacyfiles.us.dlink.com/DIR-820L/REVA/DIR-820L_REVA_MANUAL_1.00_EN.PDF'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1512,7 +1523,9 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=a64612142a3041d98642960e5f840fb6: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DIR-859/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=a64612142a3041d98642960e5f840fb6
+    (closed) -> https://www.dlink.com/uk/en/products/dir-859-wireless-ac1750-dual-band-gigabit-router'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1539,7 +1552,9 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=b98a51b9331542808145b120a03339f7: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://legacyfiles.us.dlink.com/DNR-322L/: disallowed;
+    the search found no other readable page of the publisher; read on another page of the publisher: https://legacy.us.dlink.com/pages/product.aspx?id=b98a51b9331542808145b120a03339f7
+    (closed) -> https://www.dlink.com/uk/en/products/dnr-322l-cloud-network-video-recorder'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -1923,14 +1938,19 @@ parked:
 - key: embedd/dd-wrt
   path: products/embedd/dd-wrt.yaml
   publisher: embedd
-  waits_for: event
-  owner: referee
-  rule: TAX-27
-  reason: 'gesloten bron: https://download1.dd-wrt.com/dd-wrtv2/downloads/betas/: disallowed'
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5, TE1
+  reason: 'TP3: The versions source is disallowed and the instead-of page shows no specific version number or build, so no
+    version can be quoted.; TP5: The site footer names embeDD GmbH as copyright holder and mentions its build servers, but
+    the publisher gives no second source, and the proposal''s own URLs do not independently show who publishes the updates.;
+    TE1: Name, publisher and kind are confirmed by the home page, but the versions source is disallowed and cannot be confirmed.'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
   pr: null
+  submitter: kev-ronde-1
+  known: true
   fingerprint: e7c940cb1d76594a
   files:
     products/embedd/dd-wrt.yaml: |
@@ -1972,15 +1992,18 @@ parked:
 - key: fortinet/forticlient-ems
   path: products/fortinet/forticlient-ems.yaml
   publisher: fortinet
-  waits_for: event
-  owner: referee
+  waits_for: better-proposal
+  owner: submitter
   rule: TAX-27
-  reason: 'gesloten bron: https://www.fortinet.com/products/endpoint-security/forticlient: disallowed'
+  reason: 'name not on the product page: ''FortiClient EMS'' not on https://docs.fortinet.com/product/forticlient/8.0 (the
+    address https://docs.fortinet.com/product/forticlient ended at); read on another page of the publisher: https://www.fortinet.com/products/endpoint-security/forticlient
+    (closed) -> https://docs.fortinet.com/document/fortigate/6.4.0/ports-and-protocols/35450/forticlient-ems-endpoint-management-server;
+    the address it ended at, proposed: https://docs.fortinet.com/product/forticlient -> https://docs.fortinet.com/product/forticlient/8.0'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 79d5e691c47ca1ea
+  fingerprint: 2412d6402e302811
   files:
     products/fortinet/forticlient-ems.yaml: |
       key: fortinet/forticlient-ems
@@ -1989,7 +2012,7 @@ parked:
       kind: software
       source: https://www.fortinet.com/products/endpoint-security/forticlient
       versions:
-        source: https://docs.fortinet.com/product/forticlient
+        source: https://docs.fortinet.com/product/forticlient/8.0
       aliases: []
 - key: fortinet/fortimail
   path: products/fortinet/fortimail.yaml
@@ -2018,13 +2041,16 @@ parked:
   publisher: fortinet
   waits_for: event
   owner: referee
-  rule: TAX-27
-  reason: 'gesloten bron: https://www.fortinet.com/products/management/fortimanager: disallowed'
+  rule: TE1
+  reason: 'TE1: The name and publisher are confirmed by the instead-of source, but the kind ''device'' is not clearly confirmed:
+    the texts show cloud and VM deployments and a ''Hardware'' link without stating it is a device.'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 97ca92ba3f692ca3
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 4c90d7a1dd21ba30
   files:
     products/fortinet/fortimanager.yaml: |
       key: fortinet/fortimanager
@@ -2033,20 +2059,22 @@ parked:
       kind: device
       source: https://www.fortinet.com/products/management/fortimanager
       versions:
-        source: https://docs.fortinet.com/product/fortimanager
+        source: https://docs.fortinet.com/product/fortimanager/8.0
       aliases: []
 - key: fortinet/fortiproxy
   path: products/fortinet/fortiproxy.yaml
   publisher: fortinet
   waits_for: event
   owner: referee
-  rule: TAX-27
-  reason: 'gesloten bron: https://www.fortinet.com/products/secure-web-gateway: disallowed'
+  rule: TP3, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 6a28f7861b7dc114
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: c2e4108e0184fa58
   files:
     products/fortinet/fortiproxy.yaml: |
       key: fortinet/fortiproxy
@@ -2055,20 +2083,22 @@ parked:
       kind: device
       source: https://www.fortinet.com/products/secure-web-gateway
       versions:
-        source: https://docs.fortinet.com/product/fortiproxy
+        source: https://docs.fortinet.com/product/fortiproxy/7.6
       aliases: []
 - key: fortinet/fortisandbox
   path: products/fortinet/fortisandbox.yaml
   publisher: fortinet
   waits_for: event
   owner: referee
-  rule: TAX-27
-  reason: 'gesloten bron: https://www.fortinet.com/products/sandbox/fortisandbox: disallowed'
+  rule: TP3, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: df29b72dd4738891
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 40653316efcf963a
   files:
     products/fortinet/fortisandbox.yaml: |
       key: fortinet/fortisandbox
@@ -2077,20 +2107,22 @@ parked:
       kind: device
       source: https://www.fortinet.com/products/sandbox/fortisandbox
       versions:
-        source: https://docs.fortinet.com/product/fortisandbox
+        source: https://docs.fortinet.com/product/fortisandbox/5.2
       aliases: []
 - key: fortinet/fortiweb
   path: products/fortinet/fortiweb.yaml
   publisher: fortinet
   waits_for: event
   owner: referee
-  rule: TAX-27
-  reason: 'gesloten bron: https://www.fortinet.com/products/web-application-firewall/fortiweb: disallowed'
+  rule: TP3, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: fa4dcf1ed07987ad
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: b5df84ae900327a9
   files:
     products/fortinet/fortiweb.yaml: |
       key: fortinet/fortiweb
@@ -2099,7 +2131,7 @@ parked:
       kind: device
       source: https://www.fortinet.com/products/web-application-firewall/fortiweb
       versions:
-        source: https://docs.fortinet.com/product/fortiweb
+        source: https://docs.fortinet.com/product/fortiweb/8.0
       aliases: []
 - key: fortinet/multiple-products
   path: products/fortinet/multiple-products.yaml
@@ -2126,7 +2158,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://www.goanywhere.com/products/goanywhere-mft: refused'
+  reason: 'closed source, and no other page of the publisher found: https://www.goanywhere.com/products/goanywhere-mft: refused;
+    the search found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -2389,12 +2422,10 @@ parked:
 - key: google/chromium
   path: products/google/chromium.yaml
   publisher: google
-  waits_for: better-proposal
-  owner: submitter
-  rule: TP3, TP5
-  reason: 'TP3: The versions source text shows Chrome release labels and archive dates but no Chromium version number, so
-    no version can be quoted.; TP5: The source calls Chromium the open-source project behind Google Chrome, but no text states
-    that Google publishes Chromium''s updates.'
+  waits_for: event
+  owner: referee
+  rule: TP3, TP5, TP1, TE1, TV1
+  reason: the pull request ceiling leaves no room for the referee
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -2872,8 +2903,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf:
-    disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf:
+    disallowed; the search found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -2900,7 +2931,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://www.juniper.net/support/eol/screenos_archive.html: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://www.juniper.net/support/eol/screenos_archive.html:
+    disallowed; the search found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -4515,7 +4547,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://www.quest.com/products/kace-systems-management-appliance/: disallowed'
+  reason: 'closed source, and no other page of the publisher found: https://www.quest.com/products/kace-systems-management-appliance/:
+    disallowed; the search found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -4888,7 +4921,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: http://www.scadabr.com.br/: disallowed'
+  reason: 'closed source, and no other page of the publisher found: http://www.scadabr.com.br/: disallowed; the search found
+    no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -5087,7 +5121,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://www.solarwinds.com/serv-u: refused'
+  reason: 'closed source, and no other page of the publisher found: https://www.solarwinds.com/serv-u: refused; the search
+    found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -5114,7 +5149,8 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://www.solarwinds.com/web-help-desk: refused'
+  reason: 'closed source, and no other page of the publisher found: https://www.solarwinds.com/web-help-desk: refused; the
+    search found no other readable page of the publisher'
   since: '2026-11-20'
   checked: '2026-11-20'
   lapses: '2027-02-18'
@@ -5681,6 +5717,34 @@ parked:
       name: Unitronics
       source: https://unitronicsplc.com/programmable-controllers-vision-series/
       aliases: []
+- key: veeam-software/veeam-backup-and-replication
+  path: products/veeam-software/veeam-backup-and-replication.yaml
+  publisher: veeam-software
+  waits_for: event
+  owner: referee
+  rule: alias
+  reason: the pull request ceiling leaves no room for the referee
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 5c5b3ba654973300
+  files:
+    products/veeam-software/veeam-backup-and-replication.yaml: |
+      key: veeam-software/veeam-backup-and-replication
+      publisher: veeam-software
+      name: Veeam Backup & Replication
+      kind: software
+      source: https://www.veeam.com/kb2680
+      versions:
+        source: https://www.veeam.com/kb2680
+      identifiers:
+      - cpe: cpe:2.3:a:veeam:veeam_backup_\&_replication
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:veeam:veeam_backup_%5C%26_replication&resultsPerPage=1
+      aliases:
+      - veeam-software/backup-and-replication
 - key: versa-networks/versa-concerto
   path: products/versa-networks/versa-concerto.yaml
   publisher: versa-networks
