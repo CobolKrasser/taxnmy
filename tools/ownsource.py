@@ -471,19 +471,19 @@ def run(args, fetcher=None, root: Path = ROOT, log=print) -> list[Result]:
     todo = [k for k, p in pubs.items() if third_party(p.get("source", ""))]
     if args.only:
         todo = [k for k in todo if k in args.only]
-    for n, key in enumerate(todo, 1):
-        pub, products = pubs[key], prods.get(key, [])
+    for n, slug in enumerate(todo, 1):
+        pub, products = pubs[slug], prods.get(slug, [])
         cands = cna_candidates(pub, cnas)
         for p in products:
             cands += product_candidates(p, eol, brew, lookup)
         lookup.save()
-        others = {owner(p.get("source", "")) for k, p in pubs.items() if k != key and not third_party(p.get("source", ""))}
+        others = {owner(p.get("source", "")) for k, p in pubs.items() if k != slug and not third_party(p.get("source", ""))}
         res = choose(pub, cands, known_owners(pub, products), fetcher, others)
         res_found = f"{res.finder}/{res.reason} {res.source}" if res.source else f"{res.outcome}: {res.detail}"
-        log(f"[{n}/{len(todo)}] {key}: {res_found}")
+        log(f"[{n}/{len(todo)}] {slug}: {res_found}")
         results.append(res)
         if args.write and res.source:
-            set_source(root / "publishers" / f"{key}.yaml", res.source)
+            set_source(root / "publishers" / f"{slug}.yaml", res.source)
     lookup.save()
     return results
 
