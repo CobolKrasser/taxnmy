@@ -840,10 +840,12 @@ class CustomIdTest(GroupingTest):
         self.assertEqual(got["never"], [])
 
     def test_the_eleven_groups_of_the_round(self):
-        """The real input, without a key: every request of the grouping has an id the API takes."""
+        """The real input, without a key: every request of the grouping has an id the API takes.
+        Grouped on an empty dataset, so the count stays the same once the round is in TAX."""
         rows = importer.read_found(sorted((REPO / "referee/import").glob("kev-groep-*.csv")))
-        candidates, mapping = importer.grouping_candidates(rows, None, None, "", REPO)
-        groups = importer.group.collect(candidates, REPO, mapping)
+        with tempfile.TemporaryDirectory() as empty:
+            candidates, mapping = importer.grouping_candidates(rows, None, None, "", Path(empty))
+            groups = importer.group.collect(candidates, Path(empty), mapping)
         self.assertTrue(any(not referee.CUSTOM_ID.fullmatch(g.publisher) for g in groups),
                         "the round has a publisher key the API would refuse as an id")
         decided = {g.publisher: importer.group.literal(g) for g in groups}
