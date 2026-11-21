@@ -912,6 +912,18 @@ class TestsetTest(unittest.TestCase):
                 mismatched[case.id] = (case.lint, staged.lint_seen)
         self.assertEqual(mismatched, {})
 
+    def test_a_case_carries_every_file_it_changes(self):
+        """A case that changes an existing file names that file in `context`. The case then
+        stays the same when an import adds an alias or a source to that file on main."""
+        loose = {}
+        for case in self.cases:
+            taken_out = set(case.holdout) | set(case.hide)
+            changed = [rel for rel in case.proposal
+                       if (REPO / rel).is_file() and rel not in taken_out and rel not in case.context]
+            if changed:
+                loose[case.id] = changed
+        self.assertEqual(loose, {})
+
     @classmethod
     def setUpClass(cls):
         """The real test set staged once: staging copies and lints the whole dataset per case."""

@@ -1213,6 +1213,17 @@ cases:
   expect: [reject]
   rules: [TV5]
   lint: pass
+  context:
+    products/synology/ds124.yaml: |
+      key: synology/ds124
+      publisher: synology
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
   proposal:
     products/synology/ds124.yaml: |
       key: synology/ds124
@@ -1265,6 +1276,20 @@ cases:
   expect:
   - accept
   lint: pass
+  context:
+    products/adobe/adobe-coldfusion.yaml: |
+      key: adobe/adobe-coldfusion
+      publisher: adobe
+      name: Adobe ColdFusion
+      kind: software
+      source: https://endoflife.date/coldfusion
+      versions:
+        source: https://endoflife.date/coldfusion
+      identifiers:
+      - cpe: cpe:2.3:a:adobe:coldfusion
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
+      aliases:
+      - adobe/coldfusion
   proposal:
     products/adobe/adobe-coldfusion.yaml: |
       key: adobe/adobe-coldfusion
@@ -1286,6 +1311,22 @@ cases:
   expect:
   - accept
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-activemq-classic.yaml: |
+      key: the-apache-software-foundation/apache-activemq-classic
+      publisher: the-apache-software-foundation
+      name: Apache ActiveMQ Classic
+      kind: software
+      source: https://endoflife.date/apache-activemq
+      versions:
+        source: https://endoflife.date/apache-activemq
+      identifiers:
+      - cpe: cpe:2.3:a:apache:activemq
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
+      - purl: pkg:maven/org.apache.activemq/activemq-broker
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
+      aliases:
+      - the-apache-software-foundation/apache-activemq
   proposal:
     products/the-apache-software-foundation/apache-activemq-classic.yaml: |
       key: the-apache-software-foundation/apache-activemq-classic
@@ -1309,6 +1350,22 @@ cases:
   expect:
   - accept
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-flink.yaml: |
+      key: the-apache-software-foundation/apache-flink
+      publisher: the-apache-software-foundation
+      name: Apache Flink
+      kind: software
+      source: https://endoflife.date/apache-flink
+      versions:
+        source: https://endoflife.date/apache-flink
+      identifiers:
+      - purl: pkg:github/apache/flink
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md
+      - cpe: cpe:2.3:a:apache:flink
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md
+      aliases:
+      - the-apache-software-foundation/flink
   proposal:
     products/the-apache-software-foundation/apache-flink.yaml: |
       key: the-apache-software-foundation/apache-flink
@@ -1332,6 +1389,22 @@ cases:
   expect:
   - accept
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-http-server.yaml: |
+      key: the-apache-software-foundation/apache-http-server
+      publisher: the-apache-software-foundation
+      name: Apache HTTP Server
+      kind: software
+      source: https://httpd.apache.org/
+      versions:
+        source: https://httpd.apache.org/download.cgi
+      identifiers:
+      - cpe: cpe:2.3:a:apache:http_server
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:apache:http_server&resultsPerPage=1
+      - purl: pkg:github/apache/httpd
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-http-server.md
+      aliases:
+      - the-apache-software-foundation/http-server
   proposal:
     products/the-apache-software-foundation/apache-http-server.yaml: |
       key: the-apache-software-foundation/apache-http-server
@@ -1355,6 +1428,22 @@ cases:
   expect:
   - accept
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-struts.yaml: |
+      key: the-apache-software-foundation/apache-struts
+      publisher: the-apache-software-foundation
+      name: Apache Struts
+      kind: software
+      source: https://endoflife.date/apache-struts
+      versions:
+        source: https://endoflife.date/apache-struts
+      identifiers:
+      - cpe: cpe:2.3:a:apache:struts
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
+      - purl: pkg:maven/org.apache.struts/struts2-core
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
+      aliases:
+      - the-apache-software-foundation/struts
   proposal:
     products/the-apache-software-foundation/apache-struts.yaml: |
       key: the-apache-software-foundation/apache-struts
@@ -1378,6 +1467,24 @@ cases:
   expect:
   - accept
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1405,6 +1512,24 @@ cases:
   rules:
   - TK3
   lint: error TK3
+  context:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1431,6 +1556,24 @@ cases:
   rules:
   - TV2
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1459,6 +1602,24 @@ cases:
   rules:
   - TV6
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1486,6 +1647,24 @@ cases:
   rules:
   - TV6
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1513,6 +1692,24 @@ cases:
   rules:
   - TV5
   lint: pass
+  context:
+    products/the-apache-software-foundation/apache-tomcat.yaml: |
+      key: the-apache-software-foundation/apache-tomcat
+      publisher: the-apache-software-foundation
+      name: Apache Tomcat
+      kind: software
+      source: https://endoflife.date/tomcat
+      versions:
+        source: https://endoflife.date/tomcat
+      identifiers:
+      - purl: pkg:maven/org.apache.tomcat/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - purl: pkg:github/apache/tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      - cpe: cpe:2.3:a:apache:tomcat
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
+      aliases:
+      - the-apache-software-foundation/tomcat
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1574,6 +1771,17 @@ cases:
   expect: [reject]
   rules: [TK3]
   lint: error TK3
+  context:
+    products/adobe/adobe-acrobat.yaml: |
+      key: adobe/adobe-acrobat
+      publisher: adobe
+      name: Adobe Acrobat
+      kind: software
+      source: https://www.adobe.com/acrobat.html
+      versions:
+        source: https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html
+      aliases:
+      - adobe/acrobat
   proposal:
     products/adobe/adobe-acrobat.yaml: |
       key: adobe/adobe-acrobat
@@ -1617,6 +1825,17 @@ cases:
   expect: [reject]
   rules: [TV5]
   lint: error TV5
+  context:
+    products/synology/ds124.yaml: |
+      key: synology/ds124
+      publisher: synology
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
   proposal:
     products/synology/ds124.yaml: |
       key: synology/ds124
@@ -1703,6 +1922,19 @@ cases:
   type: archive
   expect: [accept]
   lint: pass
+  context:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
   proposal:
     products/the-centos-project/centos-linux.yaml: |
       key: the-centos-project/centos-linux
@@ -1725,6 +1957,21 @@ cases:
   expect: [parked, reject]
   rules: [TP10]
   lint: pass
+  context:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
   proposal:
     products/the-postgresql-global-development-group/postgresql.yaml: |
       key: the-postgresql-global-development-group/postgresql
@@ -1749,6 +1996,19 @@ cases:
   expect: [reject]
   rules: [TP10]
   lint: pass
+  context:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
   proposal:
     products/the-centos-project/centos-linux.yaml: |
       key: the-centos-project/centos-linux
@@ -1886,6 +2146,21 @@ cases:
   expect: [reject, parked]
   rules: [TE1]
   lint: pass
+  context:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
   proposal:
     products/the-postgresql-global-development-group/postgresql.yaml: |
       key: the-postgresql-global-development-group/postgresql
@@ -1909,6 +2184,12 @@ cases:
   type: added-machine-source
   expect: [accept]
   lint: pass
+  context:
+    publishers/red-hat.yaml: |
+      key: red-hat
+      name: Red Hat
+      source: https://www.redhat.com/en/about/company
+      aliases: []
   proposal:
     publishers/red-hat.yaml: |
       key: red-hat
@@ -1926,6 +2207,12 @@ cases:
   expect: [reject]
   rules: [TE7]
   lint: pass
+  context:
+    publishers/red-hat.yaml: |
+      key: red-hat
+      name: Red Hat
+      source: https://www.redhat.com/en/about/company
+      aliases: []
   proposal:
     publishers/red-hat.yaml: |
       key: red-hat
@@ -1942,6 +2229,12 @@ cases:
   type: added-second-source
   expect: [accept]
   lint: pass
+  context:
+    publishers/the-postgresql-global-development-group.yaml: |
+      key: the-postgresql-global-development-group
+      name: The PostgreSQL Global Development Group
+      source: https://www.postgresql.org/about/
+      aliases: []
   proposal:
     publishers/the-postgresql-global-development-group.yaml: |
       key: the-postgresql-global-development-group
@@ -1956,6 +2249,12 @@ cases:
   expect: [reject]
   rules: [TV4]
   lint: pass
+  context:
+    publishers/the-postgresql-global-development-group.yaml: |
+      key: the-postgresql-global-development-group
+      name: The PostgreSQL Global Development Group
+      source: https://www.postgresql.org/about/
+      aliases: []
   proposal:
     publishers/the-postgresql-global-development-group.yaml: |
       key: the-postgresql-global-development-group
