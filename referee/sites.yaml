@@ -73,3 +73,21 @@ cpe_dictionary_format: NVD_CPE
 imports:
   kev: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
   cve: https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/{year}/{bucket}/{cve}.json
+
+# Datasets of third parties that name products (TE8): a finder of candidates, never the publisher's
+# own page. Owners as tools/guard.py `owner` gives them.
+datasets: [endoflife.date, github.com/endoflife-date]
+
+# Where the finders of tools/ownsource.py look up one package (TAX-20). `{id}` is the package as the
+# identifier gives it; a list is tried in order. GitHub paths go to the GitHub API.
+finders:
+  scoop:
+    - 'https://raw.githubusercontent.com/ScoopInstaller/Main/master/bucket/{id}.json'
+    - 'https://raw.githubusercontent.com/ScoopInstaller/Extras/master/bucket/{id}.json'
+  npm: ['https://registry.npmjs.org/{id}']
+  composer: ['https://repo.packagist.org/p2/{id}.json']
+  github_repo: ['repos/{id}']
+  github_owner: ['users/{id}']
+  winget_dir: ['repos/microsoft/winget-pkgs/contents/manifests/{id}']
+  winget_file: ['https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/{id}']
+  github_api: ['https://api.github.com/']
