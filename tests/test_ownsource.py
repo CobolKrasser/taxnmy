@@ -79,11 +79,21 @@ class ChooseTest(unittest.TestCase):
         self.assertEqual(stub.asked, [], "a page on another domain is not even read")
         self.assertIn("not shown to be the publisher's", res.rejected[0][1])
 
-    def test_found_with_the_name_in_the_footer(self):
+    def test_found_as_the_gate_reads_it_on_tk2(self):
         cands = [Candidate("homebrew", "https://acme.example/")]
-        stub = Stub({"https://acme.example/": ("200", TEXT, "© 2026 Acme Labs", "")})
+        stub = Stub({"https://acme.example/": ("200", TEXT + " Acme Labs", "", "")})
         res = os_.choose(PUB, cands, set(), stub)
         self.assertEqual((res.source, res.finder, res.reason), ("https://acme.example/", "homebrew", "name"))
+
+    def test_the_footer_does_not_count_for_tk2(self):
+        stub = Stub({"https://acme.example/": ("200", TEXT, "© 2026 Acme Labs", "")})
+        res = os_.choose(PUB, [Candidate("homebrew", "https://acme.example/")], set(), stub)
+        self.assertEqual(res.outcome, "not-named")
+
+    def test_the_name_as_tax_writes_it(self):
+        stub = Stub({"https://acme.example/": ("200", TEXT + " Acme", "", "")})
+        res = os_.choose(PUB, [Candidate("homebrew", "https://acme.example/")], set(), stub)
+        self.assertEqual(res.outcome, "not-named", "Acme alone is not the name Acme Labs")
 
     def test_the_name_must_stand_on_the_page(self):
         stub = Stub({"https://acme.example/": ("200", TEXT, "", "")})
@@ -102,7 +112,7 @@ class ChooseTest(unittest.TestCase):
     def test_the_home_page_of_an_own_domain_after_the_pages_found(self):
         cands = [Candidate("release-policy", "https://wiki.acme.example/releases")]
         stub = Stub({"https://wiki.acme.example/releases": ("200", TEXT, "", ""),
-                     "https://acme.example/": ("200", TEXT, "© Acme Labs", "")})
+                     "https://acme.example/": ("200", TEXT + " Acme Labs", "", "")})
         res = os_.choose(PUB, cands, set(), stub)
         self.assertEqual((res.source, res.finder), ("https://acme.example/", "release-policy"))
 
@@ -121,11 +131,21 @@ class ChooseTest(unittest.TestCase):
         res = os_.choose(PUB, [Candidate("homebrew", "https://acme.example/")], set(), stub)
         self.assertEqual(res.source, "")
 
-    def test_an_own_domain_before_a_path_on_a_shared_site(self):
+    def test_a_site_with_many_owners_is_never_taken(self):
         shared = f"https://{'github.com'}/acme"
-        cands = [Candidate("github", shared), Candidate("homebrew", "https://acme.example/")]
-        stub = Stub({shared: ("200", TEXT + " Acme Labs", "", ""), "https://acme.example/": ("200", TEXT + " Acme Labs", "", "")})
-        self.assertEqual(os_.choose(PUB, cands, set(), stub).source, "https://acme.example/")
+        stub = Stub({shared: ("200", TEXT + " Acme Labs", "", "")})
+        res = os_.choose(PUB, [Candidate("github", shared), Candidate("npm", shared)], set(), stub)
+        self.assertEqual((res.source, res.outcome), ("", "untrusted"))
+        self.assertIn("many owners", res.rejected[0][1])
+        self.assertTrue(os_.needs_source({"source": shared}))
+
+    def test_the_domain_of_the_versions_first(self):
+        cands = [Candidate("cna", "https://psirt.acme.example/", vouch=("acme.example",)),
+                 Candidate("release-policy", "https://acmelabs.example/releases", "acme-labs/a"),
+                 Candidate("release-policy", "https://acmelabs.example/support", "acme-labs/b")]
+        stub = Stub({u: ("200", TEXT + " Acme Labs", "", "") for u in
+                     ("https://psirt.acme.example/", "https://acmelabs.example/releases")})
+        self.assertEqual(os_.choose(PUB, cands, set(), stub).source, "https://acmelabs.example/releases")
 
 
 class FindersTest(unittest.TestCase):
