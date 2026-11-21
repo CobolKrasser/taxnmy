@@ -94,9 +94,10 @@ class ReaderTest(unittest.TestCase):
         with on():
             self.assertEqual(fetch.publisher_texts(src), ["text", "foot"])
 
-    def test_off_until_the_measurement(self):
-        """Eerst de meting, dan de bouw aanzetten (TG12). Flip this only with the three runs in TAX-43."""
-        self.assertFalse(fetch.FOOTER_COUNTS)
+    def test_on_after_the_measurement(self):
+        """Eerst de meting, dan de bouw aanzetten (TG12): on since runs 44903884643, 44907105590 and 44908160978,
+        each with 0 wrong accepts. Turn it off only with a new measurement in a story."""
+        self.assertTrue(fetch.FOOTER_COUNTS)
 
 
 class RefereeTest(unittest.TestCase):

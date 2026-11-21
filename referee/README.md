@@ -301,7 +301,10 @@ the text: a list of links proves no product name (TK2). The footer is kept as a 
 `footer` in `sources.json` (at most 3,000 characters; a longer one keeps its end, where the
 copyright line stands; the links of a navigation inside it stay out). It counts only where the
 question is who the publisher is, and only when the switch is on (`FOOTER_COUNTS` in
-`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`):
+`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`). The switch is
+on since 21 November 2026: three runs on the test set with the footer (44903884643, 44907105590 and 44908160978) each had 0 wrong
+accepts and 0 good cases rejected (TG12). `TAX_FOOTER=0`, or `footer` off in the workflow, reads
+without it, as before:
 
 | where | with the switch on |
 | --- | --- |
