@@ -246,13 +246,17 @@ parked:
   publisher: anyscale
   waits_for: better-proposal
   owner: submitter
-  rule: TAX-27
-  reason: geen versions.source
+  rule: TP5, TE1
+  reason: 'TP5: The releases come from the ray-project GitHub organisation; the ray.io footer shows © Anyscale, Inc, but the
+    sources do not settle whether Anyscale or the ray-project community publishes the updates.; TE1: The name and kind fit,
+    but the publisher name ''Anyscale, Inc'' appears only in the page footer, which does not count for TE1.'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: c34cea4abfd423ce
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 725f205f40085010
   files:
     products/anyscale/ray.yaml: |
       key: anyscale/ray
@@ -260,6 +264,8 @@ parked:
       name: Ray
       kind: software
       source: https://www.ray.io/
+      versions:
+        source: https://github.com/ray-project/ray/releases
       aliases: []
     publishers/anyscale.yaml: |
       key: anyscale
@@ -473,9 +479,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 481e0c025b74780e
@@ -608,9 +614,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: cfb513a216665d4b
@@ -1063,10 +1069,11 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: alias
-  reason: 'alias ''cisco/cisco-ios-xe-software'': doubt: The source texts write only ''Cisco IOS XE'' and the ''Cisco IOS
-    XE website''. None of them writes ''Cisco IOS XE Software'', so the texts do not show this name for the product.'
+  reason: 'alias ''cisco/cisco-ios-xe-software'': no: The source texts write the product only as "Cisco IOS XE" (and "Cisco
+    IOS XE 2.4.0"). None of them writes "Cisco IOS XE Software". The endoflife.date page uses the word "software" only in
+    "Software maintenance", not as part of the product name.'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   submitter: kev-ronde-1
@@ -1387,9 +1394,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 2c573d6117af9768
@@ -1581,9 +1588,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 4035b3df877ed2a9
@@ -1678,9 +1685,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 349d5cf708cd36bc
@@ -1700,22 +1707,26 @@ parked:
 - key: dell-technologies/recoverpoint-for-virtual-machines
   path: products/dell-technologies/recoverpoint-for-virtual-machines.yaml
   publisher: dell-technologies
-  waits_for: better-proposal
-  owner: submitter
+  waits_for: event
+  owner: referee
   rule: TAX-27
-  reason: geen versions.source
+  reason: 'closed source, and no other page of the publisher found: https://www.dell.com/support/kbdoc/en-us/000376653: refused;
+    the search found no other readable page of the publisher; the address it ended at, proposed: https://www.dell.com/en-us/dt/data-protection/recoverpoint.htm
+    -> https://www.dell.com/en-us/learn/it-infrastructure/lp/cyber-resilience/data-protection-suite-recoverpoint-for-virtual-machines'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: dbbdfd1cff6b9762
+  fingerprint: 610f2b699628889a
   files:
     products/dell-technologies/recoverpoint-for-virtual-machines.yaml: |
       key: dell-technologies/recoverpoint-for-virtual-machines
       publisher: dell-technologies
       name: RecoverPoint for Virtual Machines
       kind: software
-      source: https://www.dell.com/en-us/dt/data-protection/recoverpoint.htm
+      source: https://www.dell.com/en-us/learn/it-infrastructure/lp/cyber-resilience/data-protection-suite-recoverpoint-for-virtual-machines
+      versions:
+        source: https://www.dell.com/support/kbdoc/en-us/000376653
       aliases: []
     publishers/dell-technologies.yaml: |
       key: dell-technologies
@@ -1728,9 +1739,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 82d56d2656e28820
@@ -1889,9 +1900,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: f00a3cc17f929613
@@ -2214,9 +2225,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: df39917b5e6417d4
@@ -2356,9 +2367,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: a9816cee08abb0b7
@@ -2600,9 +2611,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: f6b835773e58bc52
@@ -2642,15 +2653,15 @@ parked:
 - key: hewlett-packard-enterprise/hpe-oneview
   path: products/hewlett-packard-enterprise/hpe-oneview.yaml
   publisher: hewlett-packard-enterprise
-  waits_for: better-proposal
-  owner: submitter
+  waits_for: event
+  owner: referee
   rule: TAX-27
-  reason: geen versions.source
+  reason: 'closed source: publisher page https://www.hpe.com/nl/en/software/oneview.html'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 27c425122a1f2ea0
+  fingerprint: 432c67fb3edbadf9
   files:
     products/hewlett-packard-enterprise/hpe-oneview.yaml: |
       key: hewlett-packard-enterprise/hpe-oneview
@@ -2658,6 +2669,8 @@ parked:
       name: HPE OneView
       kind: software
       source: https://www.hpe.com/nl/en/software/oneview.html
+      versions:
+        source: https://support.hpe.com/docs/display/public/synergy-sw-release/Whats_New.html
       aliases: []
     publishers/hewlett-packard-enterprise.yaml: |
       key: hewlett-packard-enterprise
@@ -2959,10 +2972,10 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: 'geen versions.source: het groeperen: editie of reeks van justice-av-solutions/viewer, dat niet in TAX staat en
-    niet is voorgedragen'
+  reason: 'no versions.source: the grouping: edition or range of justice-av-solutions/viewer, which is not in TAX and not
+    proposed'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 01ed8166bfe54bb8
@@ -3119,13 +3132,17 @@ parked:
   publisher: laravel
   waits_for: better-proposal
   owner: submitter
-  rule: TAX-27
-  reason: geen versions.source
+  rule: TP5, TE1
+  reason: 'TP5: Releases are published under the livewire GitHub organisation, not clearly by Laravel. The livewire.laravel.com
+    domain suggests a link, but no source shows that Laravel publishes the updates.; TE1: The name and the kind (software)
+    fit the sources. The publisher value laravel is not clearly confirmed as the publisher of the updates.'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 1f4595e696aa1dc4
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: b1e4e8ee78adcfcf
   files:
     products/laravel/livewire.yaml: |
       key: laravel/livewire
@@ -3133,6 +3150,8 @@ parked:
       name: Livewire
       kind: software
       source: https://livewire.laravel.com/
+      versions:
+        source: https://github.com/livewire/livewire/releases
       aliases: []
 - key: libraesva/libraesva-email-security-gateway
   path: products/libraesva/libraesva-email-security-gateway.yaml
@@ -3212,12 +3231,14 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: 'name not on the product page: ''HFS ~ HTTP File Server'' not on https://github.com/rejetto/hfs/releases/tag/v3.4.1
+    (the address https://github.com/rejetto/hfs/releases/latest ended at); the address it ended at, proposed: https://github.com/rejetto/hfs/releases/latest
+    -> https://github.com/rejetto/hfs/releases/tag/v3.4.1'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 9a0136f8475b0321
+  fingerprint: c23ba4e7dff2ba31
   files:
     products/massimo-melina/hfs-http-file-server.yaml: |
       key: massimo-melina/hfs-http-file-server
@@ -3225,6 +3246,8 @@ parked:
       name: HFS ~ HTTP File Server
       kind: software
       source: https://www.rejetto.com/hfs/
+      versions:
+        source: https://github.com/rejetto/hfs/releases/tag/v3.4.1
       aliases: []
     publishers/massimo-melina.yaml: |
       key: massimo-melina
@@ -3414,9 +3437,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: c61fc1229d9c5eaa
@@ -3452,9 +3475,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: b746ab65428404c0
@@ -3472,9 +3495,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 17e787542d79f440
@@ -3536,9 +3559,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: fb55f0e843091c71
@@ -3600,15 +3623,17 @@ parked:
 - key: mitel-networks/micollab
   path: products/mitel-networks/micollab.yaml
   publisher: mitel-networks
-  waits_for: better-proposal
-  owner: submitter
+  waits_for: event
+  owner: referee
   rule: TAX-27
-  reason: geen versions.source
+  reason: 'closed source, and no other page of the publisher found: https://www.mitel.com/document-center/applications/collaboration/micollab/micollab-server:
+    refused; the search found no other readable page of the publisher; read on another page of the publisher: https://www.mitel.com/products/applications/collaboration/micollab
+    (closed) -> https://www.mitel.com/sites/default/files/2025-03/MiCollab%20100%20EULA%2002DEC2024.pdf'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: b9f64288a8ec0bc5
+  fingerprint: 699ddabdf66ea7f3
   files:
     products/mitel-networks/micollab.yaml: |
       key: mitel-networks/micollab
@@ -3616,6 +3641,8 @@ parked:
       name: MiCollab
       kind: software
       source: https://www.mitel.com/products/applications/collaboration/micollab
+      versions:
+        source: https://www.mitel.com/document-center/applications/collaboration/micollab/micollab-server
       aliases: []
     publishers/mitel-networks.yaml: |
       key: mitel-networks
@@ -3817,9 +3844,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 9f2e7bf8e270d9ae
@@ -3842,9 +3869,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 4ac6dcd99a7c1b3a
@@ -3892,9 +3919,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 9cf1f0264c5194ad
@@ -3941,9 +3968,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: e3256cc82e328525
@@ -4137,9 +4164,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 2d3e8d854294d1b0
@@ -4258,9 +4285,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 3ff94409d866e70c
@@ -4410,9 +4437,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 5574c6b34d8a546d
@@ -4459,25 +4486,31 @@ parked:
   publisher: qlik
   waits_for: better-proposal
   owner: submitter
-  rule: TAX-27
-  reason: geen versions.source
+  rule: TP5
+  reason: 'TP5: a quote from the footer of https://help.qlik.com/en-US/sense/November2026/Content/Sense_Helpsites/WhatsNew/What-is-new-QlikSense.htm
+    that does not name the publisher'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: '8519068634612282'
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: f81df97173aa7c49
   files:
     products/qlik/qlik-sense.yaml: |
       key: qlik/qlik-sense
       publisher: qlik
       name: Qlik Sense
       kind: software
-      source: https://www.qlik.com/us/products/qlik-sense
-      aliases: []
+      source: https://www.qlik.com/us/da/products/qlik-sense
+      versions:
+        source: https://help.qlik.com/en-US/sense/November2026/Content/Sense_Helpsites/WhatsNew/What-is-new-QlikSense.htm
+      aliases:
+      - qlik/sense
     publishers/qlik.yaml: |
       key: qlik
       name: Qlik
-      source: https://www.qlik.com/us/products/qlik-sense
+      source: https://www.qlik.com/us/da/products/qlik-sense
       aliases: []
 - key: qnap-systems/viostor-nvr
   path: products/qnap-systems/viostor-nvr.yaml
@@ -4807,9 +4840,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: cabfcbba41f41a08
@@ -4875,9 +4908,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 22beb210c8226601
@@ -5050,12 +5083,12 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: 'name not on the product page: ''Sitecore Experience Manager (XM)'' not on https://www.sitecore.com/platform/experience-manager'
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 89c8c137e56556df
+  fingerprint: 9200ed767cc9d2fb
   files:
     products/sitecore/sitecore-experience-manager-xm.yaml: |
       key: sitecore/sitecore-experience-manager-xm
@@ -5063,6 +5096,8 @@ parked:
       name: Sitecore Experience Manager (XM)
       kind: software
       source: https://www.sitecore.com/platform/experience-manager
+      versions:
+        source: https://developers.sitecore.com/downloads/Sitecore_Experience_Platform
       aliases: []
     publishers/sitecore.yaml: |
       key: sitecore
@@ -5232,12 +5267,12 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: 127c5bd451b88bc4
+  fingerprint: 7661919989376b8d
   files:
     products/sophos/cyberoamos.yaml: |
       key: sophos/cyberoamos
@@ -5249,7 +5284,7 @@ parked:
     publishers/sophos.yaml: |
       key: sophos
       name: Sophos
-      source: https://www.sophos.com/en-us/products/next-gen-firewall/
+      source: https://www.sophos.com/en-us/content/product-lifecycle
       aliases: []
 - key: sophos/sophos-web-appliance
   path: products/sophos/sophos-web-appliance.yaml
@@ -5257,12 +5292,12 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
-  fingerprint: d6e7de9c845295e5
+  fingerprint: ae1a976c1c993cc3
   files:
     products/sophos/sophos-web-appliance.yaml: |
       key: sophos/sophos-web-appliance
@@ -5274,7 +5309,7 @@ parked:
     publishers/sophos.yaml: |
       key: sophos
       name: Sophos
-      source: https://www.sophos.com/en-us/products/next-gen-firewall/
+      source: https://www.sophos.com/en-us/content/product-lifecycle
       aliases: []
 - key: spreadsheet-parseexcel/spreadsheet-parseexcel
   path: products/spreadsheet-parseexcel/spreadsheet-parseexcel.yaml
@@ -5358,9 +5393,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 04e9d21f3319075c
@@ -5467,9 +5502,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: a0c04fa7eec7d26c
@@ -5625,9 +5660,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 5751346834dedaa1
@@ -5650,9 +5685,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: 0430b93299aa1757
@@ -5751,9 +5786,9 @@ parked:
   waits_for: better-proposal
   owner: submitter
   rule: TAX-27
-  reason: geen versions.source
+  reason: no versions.source
   since: '2026-11-20'
-  checked: '2026-11-20'
+  checked: '2026-11-21'
   lapses: '2027-02-18'
   pr: null
   fingerprint: d8427d939d3f5b7b
