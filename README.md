@@ -91,6 +91,14 @@ referee, which checks with TP3 whether it is a product of its own.
 An alias is an earlier or other key of the same product. A proposal that matches a key or an alias
 is a duplicate (TK3).
 
+### Archived products
+
+A product is archived when its publisher has ended it: it gets no more updates (TP10). Only a
+change that proposes it sets `archived`, with a page of the publisher that shows the end; a change
+that takes the product up again replaces it with `resumed` and a page that shows new updates.
+Nothing in TAXNMY archives a product by itself, after a term or a count. An archived product keeps
+its key and its aliases, and its file stays where it is.
+
 ### The referee
 
 Every proposal arrives as a pull request and is judged against the rules of the referee (TR) and
@@ -108,7 +116,7 @@ How code applies TV1–TV6 (`tools/guard.py`, the lint, and `referee/prompt.md`)
 | TV2 | The message to the referee holds an `<identity>` block: whether the publisher and each domain is already in TAX, compared character by character. The referee is told not to judge that. | — |
 | TV3 | The lint gives a signal for a publisher key, a product key within its publisher, or a domain that is one or two characters from an existing one, or the same once characters that look alike are read as one (`0` and `o`, `rn` and `m`, …). A difference in digits only (another model number) does not count. | *parked*, with the existing item |
 | TV4 | Nothing is required of a new publisher beyond its own site. A second source that a publisher file gives (`second_source`) must be a page that is not on the publisher's domain, that can be read, and that names the publisher's domain. The lint checks where it stands; the gate reads it. | *reject* when a given second source does not pass |
-| TV5 | A change to an existing product is judged on what it changes. A change that replaces the publisher is rejected; the product may be proposed again. A source that moves to another domain passes only if the old source, read now, redirects there or names the new domain. A code that is changed or taken out, a new domain for machines, or another second source is held for a person. | *reject*, or *parked* for a code |
+| TV5 | A change to an existing product is judged on what it changes. A change that replaces the publisher is rejected; the product may be proposed again. A source that moves to another domain passes only if the old source, read now, redirects there or names the new domain. A code that is changed or taken out, a new domain for machines, or another second source is held for a person. A change that only adds an alias, an identifier, a source for machines or a second source is judged on the addition; code accepts what it can show, and the rest gets the whole review. | *reject*, or *parked* for a code |
 | TV6 | Every *yes* needs a quote that code finds in the source text. | *doubt*, so *parked* |
 
 A proposal held for a person (TV3, or TV5 on a code) still goes to the referee, so that no rule is

@@ -8,7 +8,7 @@ harness `tools/referee.py`, within the budget below.
 | --- | --- |
 | `prompt.md` | the system prompt and user message for TP1, TP3, TP5, TK2 and TE1, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 99 proposals with the expected outcome: 39 good (G01–G37, H01–H02), 60 bad |
+| `testset/cases.yaml` | 110 proposals with the expected outcome: 44 good (G01–G42, H01–H02), 66 bad |
 | `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
 | `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
@@ -182,9 +182,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 99 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 110 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 99); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 110); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -272,7 +272,7 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 | 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
 | 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
 | 0 again | `machine` | for a source that is `refused` or `disallowed`: the publisher's `machine_sources` (schema 1.2.0), each read for the product. What they give is added `instead_of` the closed source |
-| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with Claude Sonnet 5.5, which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
+| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with the model of step 4 (see *Step 4: the model of the search* below), which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. Only URLs on those domains are kept: the domain limit of the API is not tight (run 44764232264 returned two of sec.gov for an Adobe product). The round and the test set use the same check (`on_domains`). The URLs kept, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
 
 The ladder stops at a refusal:
 
@@ -301,7 +301,10 @@ the text: a list of links proves no product name (TK2). The footer is kept as a 
 `footer` in `sources.json` (at most 3,000 characters; a longer one keeps its end, where the
 copyright line stands; the links of a navigation inside it stay out). It counts only where the
 question is who the publisher is, and only when the switch is on (`FOOTER_COUNTS` in
-`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`):
+`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`). The switch is
+on since 21 November 2026: three runs on the test set with the footer (44903884643, 44907105590 and 44908160978) each had 0 wrong
+accepts and 0 good cases rejected (TG12). `TAX_FOOTER=0`, or `footer` off in the workflow, reads
+without it, as before:
 
 | where | with the switch on |
 | --- | --- |
@@ -329,6 +332,42 @@ For each source `sources.json` records `status`, `method`, `chars` (the length b
 
 A site that refuses is not worked around. A person decides, or the product gets another source.
 
+### Step 4: the model of the search
+
+The search has its own model, apart from the referee's: `SEARCH_MODEL` in `tools/referee.py`, now
+Claude Haiku 5.5. The round (`tools/importer.py search`) and the test set (`tools/referee.py search`)
+both take it from there; the workflows pass no model to it. The model judges nothing, so its quality
+does not matter. Its cost does: the results of one search come in as about 12,000 input tokens,
+whatever the product (run 44764232264). On Claude Opus 5.5 a search cost $0.060, on Claude Haiku 5.5
+it is about $0.011, almost all of it the fee of the search.
+
+**Measured (20 November 2026, run 44776351618).** The 15 searches of run 44764232264, three times on
+Claude Haiku 5.5, nothing judged. The norm: in each run as many products read as Opus 5.5 read in
+its one run. Haiku 5.5 met it.
+
+| run | products read on another page of the publisher | URLs on the domains | URLs elsewhere, never read | cost |
+| --- | --- | --- | --- | --- |
+| Opus 5.5, run 44764232264 | 15 of 15 | 68 | 2 | $0.89 |
+| Haiku 5.5, run 1 | 15 of 15 | 75 | 5 | $0.18 |
+| Haiku 5.5, run 2 | 15 of 15 | 75 | 5 | $0.18 |
+| Haiku 5.5, run 3 | 15 of 15 | 75 | 4 | $0.18 |
+
+The 15 products are of 5 publishers; for others it is an assumption. The report of each round counts
+the closed sources read after all. If that number drops, that is the sign to measure again.
+
+- **The tool version follows the model** (`search_tool`): the newest web search tool for the models
+  that take it, the basic one (`web_search_20250305`) for every other, Claude Haiku 5.5 included.
+- **The estimate counts the tokens** (`search_cost`): the fee and about 12,000 input tokens per
+  search. The report of a round shows it for its closed pages.
+- **One search on its own**: `tools/referee.py search-one --product … --publisher … --domains …
+  [--model …] [--live]`, or the workflow `referee-search` (environment `referee`). It reads no page
+  and judges nothing, and shows the URLs, the tokens and the cost.
+- **A measurement of the model**: `tools/searchmeasure.py`, or the workflow `referee-search-measure`
+  (one approval). It repeats the searches of an earlier run (its `search.json`) on one model, within a
+  cap, and judges nothing. A job without the key then reads the URLs as a round does, and the report
+  gives per run and per product: the URLs on the domains, whether a page shows the name, the URLs
+  elsewhere and the cost, next to the earlier run.
+
 ### The agreed model
 
 The referee is **Claude Opus 5.5 at effort *low*** (`claude-opus-5-5`, `low`). Every default for model
@@ -336,6 +375,10 @@ and effort, in code (`MODEL` and `EFFORT` in `tools/referee.py`) and in the work
 the repository variables `REFEREE_MODEL` and `REFEREE_EFFORT` may override it. A test checks that
 every workflow default is the same. A model is used only once it takes in no wrong proposal in three
 runs on the test set (TG12). A change to the prompt asks for that measurement again.
+
+The search of step 4 has its own agreed model, **Claude Haiku 5.5** (`SEARCH_MODEL`), measured in run
+44776351618: see [Step 4: the model of the search](#step-4-the-model-of-the-search). It judges
+nothing, so TG12 does not apply to it.
 
 ### The model measurement (TAX-18)
 
@@ -535,7 +578,7 @@ that deletes a file whose removal is already in the log on `main` is accepted. A
 key is free: a next proposal with it is judged as any new product.
 
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 99 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 110 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 
@@ -557,6 +600,38 @@ whoever judges it (TV1), gets the whole review. Without a quote the alias is par
 better proposal; with no source of the product read, it waits for an event. The sources are those
 of the product itself, not of its publisher: a proposal points to no other source, since the schema
 has no field for it.
+
+### A change that only adds an identifier or a source (TAX-48)
+
+A change to a file in TAX that only adds is judged on the addition (`tools/addition.py`), as the
+alias is (TAX-40):
+
+| addition | what code checks | when code cannot show it |
+| --- | --- | --- |
+| an identifier | its own source was read, ended where it was asked, and writes the code literally and the product name outside the code | the whole review, as for any change |
+| a source for machines (TE7) | the page that names it is on the publisher's domain, was read, and writes its address | *reject*; *parked* when the page was not read |
+| a second source (TV4) | it is off the publisher's domain, was read, and names that domain | *reject* |
+
+An identifier that is already on another product (signal TK4) gets the whole review: TP3 asks
+whether it is a product of its own. A change that does more than one addition gets the whole
+review too. A source the changed file already held is not the proposal's doing: when it redirects,
+the change is not parked for it.
+
+### Archiving a product, and taking it up again (TAX-47)
+
+A product is archived only on a proposal for it (TP10). The change adds `archived: {source: ...}`
+to a product in TAX, or replaces it with `resumed: {source: ...}`, and does nothing else
+(`tools/archive.py`). It is judged on that alone:
+
+| step | what | outcome when it fails |
+| --- | --- | --- |
+| 1 | the source is on the publisher's domain as TAX holds it: the owner of the publisher's `source` or of a source for machines | *reject* by code; *parked* (better proposal) when TAX holds no domain of the publisher |
+| 2 | the source is read | *parked*, waiting for an event |
+| 3 | the text shows the end, or new updates: one question to the AI (`referee/prompt-archive.md`), whose yes counts only with a quote found in the text that names the product (TV6) | *parked*, waiting for a better proposal |
+
+TP3, TP5, TK2, TP1 and TE1 are not judged again. A change that touches `archived` or `resumed` and
+anything else, a new product with either field, or a change that takes `archived` out without
+`resumed`, is an error TP10 of the gate.
 
 ### The limits of the intake (TAX-32)
 

@@ -323,6 +323,8 @@ class ClosedRoundTest(Base):
         got = importer.propose(self.args(), self.fetcher(), self.root, NOW, QUIET)
         o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
         self.assertEqual((o.outcome, o.reason), ("parked", "closed"), "the deliberate break: no search, parked")
+        self.assertIn("Cost of the search: at most 1 closed pages x $0.011 = $0.01 (claude-haiku-5-5; the fee and "
+                      "about 12,000 input tokens", got["report"])
         closed = json.loads((self.tmp / "out/closed.json").read_text())
         self.assertEqual(list(closed), [self.CLOSED])
         self.assertEqual((closed[self.CLOSED]["product"], closed[self.CLOSED]["domains"]), ("Acme Widget", ["acme.example"]))
@@ -350,11 +352,12 @@ class ClosedRoundTest(Base):
     def test_the_search_step_dry_spends_nothing(self):
         closed = self.tmp / "closed.json"
         closed.write_text(json.dumps({self.CLOSED: {"product": "Acme Widget", "publisher": "Acme", "domains": ["acme.example"]}}))
-        args = argparse.Namespace(closed=str(closed), output=str(self.tmp / "search.json"), live=False, model="m",
-                                  budget=1.0, cap=0.3, prices="", runs=str(self.tmp / "runs"))
+        args = importer.parser().parse_args(["search", "--closed", str(closed), "--output", str(self.tmp / "search.json"),
+                                             "--runs", str(self.tmp / "runs")])
+        self.assertEqual(args.model, referee.SEARCH_MODEL, "the model of step 4, not the referee's")
         lines = []
         self.assertEqual(importer.search(args, log=lines.append), {})
-        self.assertIn("about $0.01", lines[0])
+        self.assertIn("with claude-haiku-5-5; about $0.01 ($0.011 a search", lines[0])
         self.assertFalse((self.tmp / "runs").exists())
 
 

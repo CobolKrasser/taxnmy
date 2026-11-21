@@ -11,6 +11,16 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 2.1.0 — 2026-11-20
+
+- Product: two new optional fields, `archived` and `resumed`, each with the `source` of the
+  publisher that shows the change (rule TP10). `archived`: the publisher has ended the product; it
+  gets no more updates. `resumed`: the publisher took an archived product up again. A file holds at
+  most one of the two.
+- Only a change that proposes it sets either field; nothing in TAXNMY archives a product by
+  itself. An archived product keeps its key and its aliases.
+- Existing files stay valid; readers that do not know the fields can ignore them.
+
 ## 2.0.0 — 2026-11-18
 
 - Every source (`source`, `versions.source`, the `source` of an identifier, `machine_sources`,

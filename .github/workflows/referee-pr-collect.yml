@@ -19,11 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0  # the base, to list the changed files
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -34,7 +34,7 @@ jobs:
           HEAD: ${{ github.event.pull_request.head.sha }}
           PR: ${{ github.event.pull_request.number }}
         run: python tools/pr_referee.py collect --base "$BASE" --head "$HEAD" --pr "$PR" --output pr/proposal.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: referee-pr-proposal
           path: pr/proposal.json

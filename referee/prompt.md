@@ -93,7 +93,8 @@ How to answer
 
 ## Page footer (TAX-43)
 
-Only when the switch is on (`footer_counts()` in `tools/fetch.py`, or `TAX_FOOTER=1`): this text is
+Only when the switch is on (`footer_counts()` in `tools/fetch.py`, or `TAX_FOOTER=1`; on since
+the runs 44903884643, 44907105590 and 44908160978 on the test set, TG12): this text is
 added to the system prompt, and a source block ends with the footer of its page in
 `<page-footer>`. With the switch off, neither is there. The question of TP5 stays as it is;
 only where the referee may find the answer changes.

@@ -1,0 +1,79 @@
+name: referee-search
+
+# One web search on its own (TAX-49), as step 4 does it for a closed page: the query for one
+# product, on the publisher's domains, with a model of choice. Started by hand.
+#
+# No page is read and nothing is judged. The summary shows the URLs found (on the publisher's
+# domains, and elsewhere), the tokens and the cost. About $0.01 on Claude Haiku 5.5. The run counts
+# against the budget for every run together, like any other, and is kept as an artifact for it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      product:
+        description: "the name of the product, as the query of step 4 has it (for example: Adobe Commerce)"
+        type: string
+        required: true
+      publisher:
+        description: "the name of the publisher, as the query of step 4 has it (for example: Adobe)"
+        type: string
+        default: ""
+      domains:
+        description: "the publisher's domains, separated by spaces (for example: adobe.com)"
+        type: string
+        required: true
+      model:
+        description: "empty: the model of step 4 (tools/referee.py SEARCH_MODEL)"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: referee-judge  # one paid job at a time, so the budget cannot be spent twice
+  cancel-in-progress: false
+
+jobs:
+  search:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: referee  # the key; a maintainer approves
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the budget
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - name: One search, no page is read
+        id: search
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PRODUCT: ${{ inputs.product }}
+          PUBLISHER: ${{ inputs.publisher }}
+          DOMAINS: ${{ inputs.domains }}
+          MODEL: ${{ inputs.model }}
+          BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
+        run: |
+          set -euo pipefail
+          read -r -a domains <<< "$DOMAINS"
+          python tools/referee.py search-one --product "$PRODUCT" --publisher "$PUBLISHER" --domains "${domains[@]}" \
+            --model "$MODEL" --budget "$BUDGET" --live | tee search.log
+          { echo "### One search"; echo; cat search.log; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the run
+        if: always() && steps.search.outputs.run_dir != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: referee-run-${{ steps.search.outputs.run_name }}
+          path: ${{ steps.search.outputs.run_dir }}
+          retention-days: 90
