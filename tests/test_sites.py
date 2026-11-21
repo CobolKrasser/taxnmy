@@ -16,7 +16,9 @@ import sites  # noqa: E402
 class SitesTest(unittest.TestCase):
     def test_no_site_of_the_file_is_in_the_code(self):
         data = sites.load()
-        names = [n for key in ("ai_chats", "owner_in_path", "owner_in_host", "many_owners", "api_hosts") for n in data[key]]
+        names = [n for key in ("ai_chats", "owner_in_path", "owner_in_host", "many_owners", "api_hosts", "datasets")
+                 for n in data[key]]
+        names += [re.sub(r"^https?://([^/]+).*$", r"\1", u) for us in data["finders"].values() for u in us if "://" in u]
         names += [re.sub(r"^https?://([^/]+).*$", r"\1", u) for u in (data["project_url"], *data["imports"].values())]
         hits = [f"{p.name}: {n}" for p in sorted((REPO / "tools").glob("*.py")) for n in names
                 if n in p.read_text(encoding="utf-8")]
