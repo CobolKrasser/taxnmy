@@ -1,0 +1,9 @@
+key: cisco/cisco-broadworks
+publisher: cisco
+name: Cisco BroadWorks
+kind: software
+source: https://www.cisco.com/c/en/us/support/unified-communications/broadworks/series.html
+versions:
+  source: https://www.cisco.com/c/en/us/support/unified-communications/broadworks/products-release-notes-list.html
+aliases:
+- cisco/broadworks

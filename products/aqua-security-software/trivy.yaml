@@ -1,0 +1,8 @@
+key: aqua-security-software/trivy
+publisher: aqua-security-software
+name: Trivy
+kind: software
+source: https://trivy.dev/
+versions:
+  source: https://github.com/aquasecurity/trivy/releases/
+aliases: []
