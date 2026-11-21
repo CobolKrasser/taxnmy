@@ -27,7 +27,8 @@ The footer of a page (TAX-43) is kept as a text of its own, `Source.footer`, nex
 is where a publisher writes its name (the copyright line), and it is a list of links that proves no
 product name. So it counts only where the question is who the publisher is (TP5, and the importer's
 check on the name of a new publisher), never for TK2. Whether it counts at all is the switch
-`footer_counts()`: off until three runs on the test set show 0 wrong accepts (TG12).
+`footer_counts()`: on since three runs on the test set with the footer showed 0 wrong accepts
+(TG12; runs 44903884643, 44907105590 and 44908160978, 21 November 2026).
 
 No network access happens at import. Costs nothing.
 """
@@ -65,9 +66,10 @@ REFUSED = {401, 403}
 FOOTER_CHARS = 3_000  # the footer of a page: a copyright line and some links; a longer one keeps its end,
                       # where the copyright line stands
 
-# TAX-43: whether the footer of a page counts for the question who the publisher is. Off until the
-# measurement on the test set (TG12); the environment variable TAX_FOOTER (1 or 0) overrides it.
-FOOTER_COUNTS = False
+# TAX-43: whether the footer of a page counts for the question who the publisher is. On since the
+# measurement on the test set (TG12): runs 44903884643, 44907105590 and 44908160978, each 0 wrong accepts and 0
+# good cases rejected. The environment variable TAX_FOOTER (1 or 0) overrides it.
+FOOTER_COUNTS = True
 
 
 def footer_counts() -> bool:
