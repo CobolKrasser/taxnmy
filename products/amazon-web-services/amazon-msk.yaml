@@ -2,8 +2,8 @@ key: amazon-web-services/amazon-msk
 publisher: amazon-web-services
 name: Amazon MSK
 kind: software
-source: https://endoflife.date/amazon-msk
+source: https://docs.aws.amazon.com/msk/latest/developerguide/version-support.html
 versions:
-  source: https://endoflife.date/amazon-msk
+  source: https://docs.aws.amazon.com/msk/latest/developerguide/version-support.html
 identifiers: []
 aliases: []

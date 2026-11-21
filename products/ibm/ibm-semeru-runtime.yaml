@@ -2,9 +2,9 @@ key: ibm/ibm-semeru-runtime
 publisher: ibm
 name: IBM Semeru Runtime
 kind: software
-source: https://endoflife.date/ibm-semeru-runtime
+source: https://www.ibm.com/support/pages/node/6451203
 versions:
-  source: https://endoflife.date/ibm-semeru-runtime
+  source: https://www.ibm.com/support/pages/node/6451203
 identifiers:
 - cpe: cpe:2.3:a:ibm:semeru_runtime
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:ibm:semeru_runtime&resultsPerPage=1

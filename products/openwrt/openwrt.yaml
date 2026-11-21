@@ -2,9 +2,9 @@ key: openwrt/openwrt
 publisher: openwrt
 name: OpenWrt
 kind: operating-system
-source: https://endoflife.date/openwrt
+source: https://openwrt.org/docs/guide-developer/security#support_status
 versions:
-  source: https://endoflife.date/openwrt
+  source: https://openwrt.org/docs/guide-developer/security#support_status
 identifiers:
 - purl: pkg:github/openwrt/openwrt
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openwrt.md

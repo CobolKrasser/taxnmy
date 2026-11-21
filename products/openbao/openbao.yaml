@@ -2,9 +2,9 @@ key: openbao/openbao
 publisher: openbao
 name: OpenBao
 kind: software
-source: https://endoflife.date/openbao
+source: https://openbao.org/docs/policies/support/
 versions:
-  source: https://endoflife.date/openbao
+  source: https://openbao.org/docs/policies/support/
 identifiers:
 - purl: pkg:github/openbao/openbao
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openbao.md

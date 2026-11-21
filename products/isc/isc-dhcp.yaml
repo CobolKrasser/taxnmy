@@ -2,9 +2,9 @@ key: isc/isc-dhcp
 publisher: isc
 name: ISC DHCP
 kind: software
-source: https://endoflife.date/isc-dhcp
+source: https://kb.isc.org/docs/aa-00896#isc-dhcp-eol
 versions:
-  source: https://endoflife.date/isc-dhcp
+  source: https://kb.isc.org/docs/aa-00896#isc-dhcp-eol
 identifiers:
 - cpe: cpe:2.3:a:isc:dhcp
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:isc:dhcp&resultsPerPage=1

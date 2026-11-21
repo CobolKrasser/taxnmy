@@ -2,9 +2,9 @@ key: mend/renovate-cli
 publisher: mend
 name: Renovate CLI
 kind: software
-source: https://endoflife.date/renovate
+source: https://docs.renovatebot.com/faq/#which-renovate-versions-are-officially-supported
 versions:
-  source: https://endoflife.date/renovate
+  source: https://docs.renovatebot.com/faq/#which-renovate-versions-are-officially-supported
 identifiers:
 - purl: pkg:npm/renovate
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/renovate.md

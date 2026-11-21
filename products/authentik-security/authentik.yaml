@@ -2,9 +2,9 @@ key: authentik-security/authentik
 publisher: authentik-security
 name: authentik
 kind: software
-source: https://endoflife.date/authentik
+source: https://docs.goauthentik.io/enterprise/enterprise-support/#product-version-support
 versions:
-  source: https://endoflife.date/authentik
+  source: https://docs.goauthentik.io/enterprise/enterprise-support/#product-version-support
 identifiers:
 - purl: pkg:github/goauthentik/authentik
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/authentik.md

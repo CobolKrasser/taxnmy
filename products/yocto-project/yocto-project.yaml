@@ -2,9 +2,9 @@ key: yocto-project/yocto-project
 publisher: yocto-project
 name: Yocto Project
 kind: operating-system
-source: https://endoflife.date/yocto
+source: https://wiki.yoctoproject.org/wiki/Stable_Release_and_LTS
 versions:
-  source: https://endoflife.date/yocto
+  source: https://wiki.yoctoproject.org/wiki/Stable_Release_and_LTS
 identifiers:
 - cpe: cpe:2.3:a:linuxfoundation:yocto
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/yocto.md

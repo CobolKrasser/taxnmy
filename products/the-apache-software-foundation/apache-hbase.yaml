@@ -2,9 +2,9 @@ key: the-apache-software-foundation/apache-hbase
 publisher: the-apache-software-foundation
 name: Apache HBase
 kind: software
-source: https://endoflife.date/hbase
+source: https://hbase.apache.org/downloads
 versions:
-  source: https://endoflife.date/hbase
+  source: https://hbase.apache.org/downloads
 identifiers:
 - cpe: cpe:2.3:a:apache:hbase
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hbase.md

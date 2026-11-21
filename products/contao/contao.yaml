@@ -2,9 +2,9 @@ key: contao/contao
 publisher: contao
 name: Contao
 kind: software
-source: https://endoflife.date/contao
+source: https://contao.org/de/release-plan
 versions:
-  source: https://endoflife.date/contao
+  source: https://contao.org/de/release-plan
 identifiers:
 - cpe: cpe:2.3:a:contao:contao
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/contao.md

@@ -2,9 +2,9 @@ key: the-apache-software-foundation/apache-tomcat
 publisher: the-apache-software-foundation
 name: Apache Tomcat
 kind: software
-source: https://endoflife.date/tomcat
+source: https://tomcat.apache.org/whichversion.html
 versions:
-  source: https://endoflife.date/tomcat
+  source: https://tomcat.apache.org/whichversion.html
 identifiers:
 - purl: pkg:maven/org.apache.tomcat/tomcat
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md

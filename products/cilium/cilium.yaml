@@ -2,9 +2,9 @@ key: cilium/cilium
 publisher: cilium
 name: Cilium
 kind: software
-source: https://endoflife.date/cilium
+source: https://docs.cilium.io/en/stable/contributing/release/
 versions:
-  source: https://endoflife.date/cilium
+  source: https://docs.cilium.io/en/stable/contributing/release/
 identifiers:
 - purl: pkg:github/cilium/cilium
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/cilium.md

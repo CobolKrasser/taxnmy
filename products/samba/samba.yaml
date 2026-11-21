@@ -2,9 +2,9 @@ key: samba/samba
 publisher: samba
 name: Samba
 kind: software
-source: https://endoflife.date/samba
+source: https://wiki.samba.org/index.php/Samba_Release_Planning
 versions:
-  source: https://endoflife.date/samba
+  source: https://wiki.samba.org/index.php/Samba_Release_Planning
 identifiers:
 - purl: pkg:github/samba-team/samba
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/samba.md

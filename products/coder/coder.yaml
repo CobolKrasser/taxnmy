@@ -2,9 +2,9 @@ key: coder/coder
 publisher: coder
 name: Coder
 kind: software
-source: https://endoflife.date/coder
+source: https://coder.com/docs/reference/releases
 versions:
-  source: https://endoflife.date/coder
+  source: https://coder.com/docs/reference/releases
 identifiers:
 - purl: pkg:github/coder/coder
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coder.md

@@ -2,9 +2,9 @@ key: nixos/nixos
 publisher: nixos
 name: NixOS
 kind: operating-system
-source: https://endoflife.date/nixos
+source: https://nixos.org/blog/announcements/
 versions:
-  source: https://endoflife.date/nixos
+  source: https://nixos.org/blog/announcements/
 identifiers:
 - cpe: cpe:2.3:o:nixos:nixos
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nixos.md

@@ -2,9 +2,9 @@ key: jfrog/artifactory
 publisher: jfrog
 name: Artifactory
 kind: software
-source: https://endoflife.date/artifactory
+source: https://docs.jfrog.com/releases/docs/artifactory-end-of-life
 versions:
-  source: https://endoflife.date/artifactory
+  source: https://docs.jfrog.com/releases/docs/artifactory-end-of-life
 identifiers:
 - cpe: cpe:2.3:a:jfrog:artifactory
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/artifactory.md

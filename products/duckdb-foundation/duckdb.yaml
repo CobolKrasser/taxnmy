@@ -2,9 +2,9 @@ key: duckdb-foundation/duckdb
 publisher: duckdb-foundation
 name: DuckDB
 kind: software
-source: https://endoflife.date/duckdb
+source: https://duckdb.org/community_support
 versions:
-  source: https://endoflife.date/duckdb
+  source: https://duckdb.org/community_support
 identifiers:
 - cpe: cpe:2.3:a:duckdb:duckdb
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/duckdb.md

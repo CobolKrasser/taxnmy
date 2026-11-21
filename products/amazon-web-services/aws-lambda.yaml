@@ -2,8 +2,8 @@ key: amazon-web-services/aws-lambda
 publisher: amazon-web-services
 name: AWS Lambda
 kind: software
-source: https://endoflife.date/aws-lambda
+source: https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html
 versions:
-  source: https://endoflife.date/aws-lambda
+  source: https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html
 identifiers: []
 aliases: []

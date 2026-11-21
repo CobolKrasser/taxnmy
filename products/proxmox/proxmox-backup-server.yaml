@@ -2,9 +2,9 @@ key: proxmox/proxmox-backup-server
 publisher: proxmox
 name: Proxmox Backup Server
 kind: software
-source: https://endoflife.date/proxmox-backup-server
+source: https://pbs.proxmox.com/docs/faq.html#how-long-will-my-proxmox-backup-server-version-be-supported
 versions:
-  source: https://endoflife.date/proxmox-backup-server
+  source: https://pbs.proxmox.com/docs/faq.html#how-long-will-my-proxmox-backup-server-version-be-supported
 identifiers:
 - purl: pkg:github/proxmox/proxmox-backup
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-backup-server.md
