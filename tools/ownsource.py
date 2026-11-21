@@ -442,9 +442,10 @@ def load_brew(*paths: Path | None) -> dict:
     for path in paths:
         if path:
             for e in json.loads(path.read_text()):
-                token = e.get("token") or e.get("name")
-                if token and e.get("homepage"):
-                    out.setdefault(token.lower(), e["homepage"])
+                # The field that names a formula or cask is data (`homebrew_name` in referee/sites.yaml).
+                package = next((e.get(f) for f in sites.value("finders")["homebrew_name"] if e.get(f)), "")
+                if package and e.get("homepage"):
+                    out.setdefault(package.lower(), e["homepage"])
     return out
 
 

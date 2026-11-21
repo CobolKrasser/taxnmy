@@ -91,3 +91,4 @@ finders:
   winget_dir: ['repos/microsoft/winget-pkgs/contents/manifests/{id}']
   winget_file: ['https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/{id}']
   github_api: ['https://api.github.com/']
+  homebrew_name: [token, name]  # the fields of formula.json and cask.json that name the package
