@@ -2,9 +2,9 @@ key: atlassian/jira-service-management
 publisher: atlassian
 name: Jira Service Management
 kind: software
-source: https://endoflife.date/jira-service-management
+source: https://confluence.atlassian.com/enterprise/atlassian-enterprise-releases-948227420.html#LongTermSupportreleases-Policyanddetails
 versions:
-  source: https://endoflife.date/jira-service-management
+  source: https://confluence.atlassian.com/enterprise/atlassian-enterprise-releases-948227420.html#LongTermSupportreleases-Policyanddetails
 identifiers:
 - cpe: cpe:2.3:a:atlassian:jira_service_desk
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jira-service-management.md

@@ -2,9 +2,9 @@ key: python-software-foundation/python
 publisher: python-software-foundation
 name: Python
 kind: software
-source: https://endoflife.date/python
+source: https://devguide.python.org/versions/
 versions:
-  source: https://endoflife.date/python
+  source: https://devguide.python.org/versions/
 identifiers:
 - purl: pkg:generic/python
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/python.md

@@ -2,9 +2,9 @@ key: nextcloud/nextcloud
 publisher: nextcloud
 name: Nextcloud
 kind: software
-source: https://endoflife.date/nextcloud
+source: https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule
 versions:
-  source: https://endoflife.date/nextcloud
+  source: https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule
 identifiers:
 - cpe: cpe:2.3:a:nextcloud:nextcloud_server
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nextcloud.md

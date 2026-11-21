@@ -2,8 +2,8 @@ key: microsoft/nano-server
 publisher: microsoft
 name: Nano Server
 kind: operating-system
-source: https://endoflife.date/windows-nano-server
+source: https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/base-image-lifecycle
 versions:
-  source: https://endoflife.date/windows-nano-server
+  source: https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/base-image-lifecycle
 identifiers: []
 aliases: []

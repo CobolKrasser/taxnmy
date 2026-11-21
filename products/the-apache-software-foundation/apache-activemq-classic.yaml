@@ -2,9 +2,9 @@ key: the-apache-software-foundation/apache-activemq-classic
 publisher: the-apache-software-foundation
 name: Apache ActiveMQ Classic
 kind: software
-source: https://endoflife.date/apache-activemq
+source: https://activemq.apache.org/support.html
 versions:
-  source: https://endoflife.date/apache-activemq
+  source: https://activemq.apache.org/support.html
 identifiers:
 - cpe: cpe:2.3:a:apache:activemq
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md

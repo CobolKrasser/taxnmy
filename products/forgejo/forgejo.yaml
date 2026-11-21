@@ -2,9 +2,9 @@ key: forgejo/forgejo
 publisher: forgejo
 name: Forgejo
 kind: software
-source: https://endoflife.date/forgejo
+source: https://forgejo.org/docs/latest/admin/upgrade/#release-life-cycle
 versions:
-  source: https://endoflife.date/forgejo
+  source: https://forgejo.org/docs/latest/admin/upgrade/#release-life-cycle
 identifiers:
 - cpe: cpe:2.3:a:forgejo:forgejo
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/forgejo.md

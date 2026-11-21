@@ -2,9 +2,9 @@ key: eclipse-adoptium/eclipse-temurin
 publisher: eclipse-adoptium
 name: Eclipse Temurin
 kind: software
-source: https://endoflife.date/eclipse-temurin
+source: https://adoptium.net/support/
 versions:
-  source: https://endoflife.date/eclipse-temurin
+  source: https://adoptium.net/support/
 identifiers:
 - cpe: cpe:2.3:a:eclipse:temurin
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eclipse-temurin.md

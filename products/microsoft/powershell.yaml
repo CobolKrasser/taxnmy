@@ -2,9 +2,9 @@ key: microsoft/powershell
 publisher: microsoft
 name: PowerShell
 kind: software
-source: https://endoflife.date/powershell
+source: https://learn.microsoft.com/en-us/powershell/scripting/install/powershell-support-lifecycle?view=powershell-7.6
 versions:
-  source: https://endoflife.date/powershell
+  source: https://learn.microsoft.com/en-us/powershell/scripting/install/powershell-support-lifecycle?view=powershell-7.6
 identifiers:
 - purl: pkg:github/powershell/powershell
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/powershell.md

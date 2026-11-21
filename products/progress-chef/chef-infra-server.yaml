@@ -2,9 +2,9 @@ key: progress-chef/chef-infra-server
 publisher: progress-chef
 name: Chef Infra Server
 kind: software
-source: https://endoflife.date/chef-infra-server
+source: https://docs.chef.io/versions/
 versions:
-  source: https://endoflife.date/chef-infra-server
+  source: https://docs.chef.io/versions/
 identifiers:
 - cpe: cpe:2.3:a:progress:chef_infra_server
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/chef-infra-server.md

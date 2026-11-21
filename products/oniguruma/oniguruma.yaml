@@ -2,9 +2,9 @@ key: oniguruma/oniguruma
 publisher: oniguruma
 name: Oniguruma
 kind: software
-source: https://endoflife.date/oniguruma
+source: https://github.com/kkos/oniguruma
 versions:
-  source: https://endoflife.date/oniguruma
+  source: https://github.com/kkos/oniguruma
 identifiers:
 - purl: pkg:github/kkos/oniguruma
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oniguruma.md

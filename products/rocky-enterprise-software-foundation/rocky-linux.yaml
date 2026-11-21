@@ -2,9 +2,9 @@ key: rocky-enterprise-software-foundation/rocky-linux
 publisher: rocky-enterprise-software-foundation
 name: Rocky Linux
 kind: operating-system
-source: https://endoflife.date/rocky-linux
+source: https://docs.rockylinux.org/releases/
 versions:
-  source: https://endoflife.date/rocky-linux
+  source: https://docs.rockylinux.org/releases/
 identifiers:
 - cpe: cpe:2.3:o:rocky:rocky
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/rocky-linux.md

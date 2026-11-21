@@ -2,9 +2,9 @@ key: jenkins/jenkins
 publisher: jenkins
 name: Jenkins
 kind: software
-source: https://endoflife.date/jenkins
+source: https://www.jenkins.io/download/lts/
 versions:
-  source: https://endoflife.date/jenkins
+  source: https://www.jenkins.io/download/lts/
 identifiers:
 - cpe: cpe:2.3:a:jenkins:jenkins
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jenkins.md

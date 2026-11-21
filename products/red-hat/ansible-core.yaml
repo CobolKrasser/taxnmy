@@ -2,9 +2,9 @@ key: red-hat/ansible-core
 publisher: red-hat
 name: Ansible-core
 kind: software
-source: https://endoflife.date/ansible-core
+source: https://access.redhat.com/support/policy/updates/ansible-automation-platform
 versions:
-  source: https://endoflife.date/ansible-core
+  source: https://access.redhat.com/support/policy/updates/ansible-automation-platform
 identifiers:
 - cpe: cpe:2.3:a:redhat:ansible
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ansible-core.md

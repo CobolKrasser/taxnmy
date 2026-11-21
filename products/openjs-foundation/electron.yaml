@@ -2,9 +2,9 @@ key: openjs-foundation/electron
 publisher: openjs-foundation
 name: Electron
 kind: software
-source: https://endoflife.date/electron
+source: https://www.electronjs.org/docs/latest/tutorial/electron-timelines
 versions:
-  source: https://endoflife.date/electron
+  source: https://www.electronjs.org/docs/latest/tutorial/electron-timelines
 identifiers:
 - cpe: cpe:2.3:a:electronjs:electron
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/electron.md

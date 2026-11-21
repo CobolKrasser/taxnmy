@@ -2,9 +2,9 @@ key: valkey/valkey
 publisher: valkey
 name: Valkey
 kind: software
-source: https://endoflife.date/valkey
+source: https://valkey.io/topics/releases/
 versions:
-  source: https://endoflife.date/valkey
+  source: https://valkey.io/topics/releases/
 identifiers:
 - purl: pkg:github/valkey-io/valkey
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/valkey.md

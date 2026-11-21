@@ -2,9 +2,9 @@ key: rocket-chat/rocket-chat
 publisher: rocket-chat
 name: Rocket.Chat
 kind: software
-source: https://endoflife.date/rocket-chat
+source: https://docs.rocket.chat/docs/support-prerequisites
 versions:
-  source: https://endoflife.date/rocket-chat
+  source: https://docs.rocket.chat/docs/support-prerequisites
 identifiers:
 - cpe: cpe:2.3:a:rocket.chat:rocket.chat
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:rocket.chat:rocket.chat&resultsPerPage=1

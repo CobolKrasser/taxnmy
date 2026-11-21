@@ -1273,7 +1273,7 @@ cases:
       kind: software
       source: https://endoflife.date/coldfusion
       versions:
-        source: https://endoflife.date/coldfusion
+        source: https://helpx.adobe.com/x-productkb/policy-pricing/policy_enterprise_lifecycle.html
       identifiers:
       - cpe: cpe:2.3:a:adobe:coldfusion
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
@@ -1292,9 +1292,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache ActiveMQ Classic
       kind: software
-      source: https://endoflife.date/apache-activemq
+      source: https://activemq.apache.org/support.html
       versions:
-        source: https://endoflife.date/apache-activemq
+        source: https://activemq.apache.org/support.html
       identifiers:
       - cpe: cpe:2.3:a:apache:activemq
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
@@ -1315,9 +1315,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Flink
       kind: software
-      source: https://endoflife.date/apache-flink
+      source: https://flink.apache.org/
       versions:
-        source: https://endoflife.date/apache-flink
+        source: https://flink.apache.org/downloads/
       identifiers:
       - purl: pkg:github/apache/flink
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-flink.md
@@ -1361,9 +1361,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Struts
       kind: software
-      source: https://endoflife.date/apache-struts
+      source: https://struts.apache.org/releases.html
       versions:
-        source: https://endoflife.date/apache-struts
+        source: https://struts.apache.org/releases.html
       identifiers:
       - cpe: cpe:2.3:a:apache:struts
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-struts.md
@@ -1384,9 +1384,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Tomcat
       kind: software
-      source: https://endoflife.date/tomcat
+      source: https://tomcat.apache.org/whichversion.html
       versions:
-        source: https://endoflife.date/tomcat
+        source: https://tomcat.apache.org/whichversion.html
       identifiers:
       - purl: pkg:maven/org.apache.tomcat/tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
@@ -1411,9 +1411,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Tomcat
       kind: software
-      source: https://endoflife.date/tomcat
+      source: https://tomcat.apache.org/whichversion.html
       versions:
-        source: https://endoflife.date/tomcat
+        source: https://tomcat.apache.org/whichversion.html
       identifiers:
       - purl: pkg:maven/org.apache.tomcat/tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
@@ -1437,9 +1437,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Tomcat
       kind: software
-      source: https://endoflife.date/tomcat
+      source: https://tomcat.apache.org/whichversion.html
       versions:
-        source: https://endoflife.date/tomcat
+        source: https://tomcat.apache.org/whichversion.html
       identifiers:
       - purl: pkg:maven/org.apache.tomcat/tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
@@ -1465,9 +1465,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Tomcat
       kind: software
-      source: https://endoflife.date/tomcat
+      source: https://tomcat.apache.org/whichversion.html
       versions:
-        source: https://endoflife.date/tomcat
+        source: https://tomcat.apache.org/whichversion.html
       identifiers:
       - purl: pkg:maven/org.apache.tomcat/tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
@@ -1492,9 +1492,9 @@ cases:
       publisher: the-apache-software-foundation
       name: Apache Tomcat
       kind: software
-      source: https://endoflife.date/tomcat
+      source: https://tomcat.apache.org/whichversion.html
       versions:
-        source: https://endoflife.date/tomcat
+        source: https://tomcat.apache.org/whichversion.html
       identifiers:
       - purl: pkg:maven/org.apache.tomcat/tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
@@ -1521,7 +1521,7 @@ cases:
       kind: software
       source: https://tomcat.example.org/
       versions:
-        source: https://endoflife.date/tomcat
+        source: https://tomcat.apache.org/whichversion.html
       identifiers:
       - purl: pkg:maven/org.apache.tomcat/tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md

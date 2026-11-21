@@ -2,9 +2,9 @@ key: oracle/oracle-solaris
 publisher: oracle
 name: Oracle Solaris
 kind: operating-system
-source: https://endoflife.date/oracle-solaris
+source: https://www.oracle.com/support/lifetime-support/
 versions:
-  source: https://endoflife.date/oracle-solaris
+  source: https://www.oracle.com/support/lifetime-support/
 identifiers:
 - cpe: cpe:2.3:o:oracle:solaris
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:oracle:solaris&resultsPerPage=1

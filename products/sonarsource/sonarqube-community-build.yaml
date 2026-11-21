@@ -2,9 +2,9 @@ key: sonarsource/sonarqube-community-build
 publisher: sonarsource
 name: SonarQube Community Build
 kind: software
-source: https://endoflife.date/sonarqube-community
+source: https://docs.sonarsource.com/sonarqube-community-build/server-update-and-maintenance/update/release-cycle-model
 versions:
-  source: https://endoflife.date/sonarqube-community
+  source: https://docs.sonarsource.com/sonarqube-community-build/server-update-and-maintenance/update/release-cycle-model
 identifiers:
 - cpe: cpe:2.3:a:sonarsource:sonarqube
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sonarqube-community.md

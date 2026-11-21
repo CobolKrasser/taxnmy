@@ -2,9 +2,9 @@ key: hibernate/hibernate-orm
 publisher: hibernate
 name: Hibernate ORM
 kind: software
-source: https://endoflife.date/hibernate-orm
+source: https://hibernate.org/support/maintenance-policy/
 versions:
-  source: https://endoflife.date/hibernate-orm
+  source: https://hibernate.org/support/maintenance-policy/
 identifiers:
 - cpe: cpe:2.3:a:hibernate:hibernate_orm
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md

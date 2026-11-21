@@ -2,9 +2,9 @@ key: ceph/ceph
 publisher: ceph
 name: Ceph
 kind: software
-source: https://endoflife.date/ceph
+source: https://docs.ceph.com/en/latest/releases/general/
 versions:
-  source: https://endoflife.date/ceph
+  source: https://docs.ceph.com/en/latest/releases/general/
 identifiers:
 - purl: pkg:github/ceph/ceph
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ceph.md

@@ -2,9 +2,9 @@ key: eclipse-foundation/eclipse-jetty
 publisher: eclipse-foundation
 name: Eclipse Jetty
 kind: software
-source: https://endoflife.date/eclipse-jetty
+source: https://jetty.org/download.html
 versions:
-  source: https://endoflife.date/eclipse-jetty
+  source: https://jetty.org/download.html
 identifiers:
 - purl: pkg:maven/org.eclipse.jetty/jetty-server
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eclipse-jetty.md

@@ -2,9 +2,9 @@ key: northern-tech/cfengine
 publisher: northern-tech
 name: CFEngine
 kind: software
-source: https://endoflife.date/cfengine
+source: https://cfengine.com
 versions:
-  source: https://endoflife.date/cfengine
+  source: https://cfengine.com
 identifiers:
 - purl: pkg:brew/cfengine
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/cfengine.md

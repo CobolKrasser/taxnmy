@@ -2,9 +2,9 @@ key: wireshark-foundation/wireshark
 publisher: wireshark-foundation
 name: Wireshark
 kind: software
-source: https://endoflife.date/wireshark
+source: https://wiki.wireshark.org/Development/LifeCycle
 versions:
-  source: https://endoflife.date/wireshark
+  source: https://wiki.wireshark.org/Development/LifeCycle
 identifiers:
 - purl: pkg:winget/WiresharkFoundation.Wireshark
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md

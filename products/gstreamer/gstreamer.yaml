@@ -2,9 +2,9 @@ key: gstreamer/gstreamer
 publisher: gstreamer
 name: GStreamer
 kind: software
-source: https://endoflife.date/gstreamer
+source: https://gstreamer.freedesktop.org/
 versions:
-  source: https://endoflife.date/gstreamer
+  source: https://gstreamer.freedesktop.org/
 identifiers:
 - cpe: cpe:2.3:a:gstreamer:gstreamer
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/gstreamer.md

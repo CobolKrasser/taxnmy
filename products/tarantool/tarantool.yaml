@@ -2,9 +2,9 @@ key: tarantool/tarantool
 publisher: tarantool
 name: Tarantool
 kind: software
-source: https://endoflife.date/tarantool
+source: https://www.tarantool.io/en/doc/latest/release/policy/
 versions:
-  source: https://endoflife.date/tarantool
+  source: https://www.tarantool.io/en/doc/latest/release/policy/
 identifiers:
 - cpe: cpe:2.3:a:tarantool:tarantool
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tarantool.md

@@ -2,9 +2,9 @@ key: the-netbsd-foundation/netbsd
 publisher: the-netbsd-foundation
 name: NetBSD
 kind: operating-system
-source: https://endoflife.date/netbsd
+source: https://www.netbsd.org/releases/
 versions:
-  source: https://endoflife.date/netbsd
+  source: https://www.netbsd.org/releases/
 identifiers:
 - cpe: cpe:2.3:o:netbsd:netbsd
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/netbsd.md

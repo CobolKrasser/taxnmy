@@ -2,9 +2,9 @@ key: bigbluebutton/bigbluebutton
 publisher: bigbluebutton
 name: BigBlueButton
 kind: software
-source: https://endoflife.date/bigbluebutton
+source: https://github.com/bigbluebutton/bigbluebutton/security
 versions:
-  source: https://endoflife.date/bigbluebutton
+  source: https://github.com/bigbluebutton/bigbluebutton/security
 identifiers:
 - cpe: cpe:2.3:a:bigbluebutton:bigbluebutton
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bigbluebutton.md

@@ -2,9 +2,9 @@ key: phpmyadmin/phpmyadmin
 publisher: phpmyadmin
 name: phpMyAdmin
 kind: software
-source: https://endoflife.date/phpmyadmin
+source: https://www.phpmyadmin.net/downloads/#versions
 versions:
-  source: https://endoflife.date/phpmyadmin
+  source: https://www.phpmyadmin.net/downloads/#versions
 identifiers:
 - purl: pkg:composer/phpmyadmin/phpmyadmin
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/phpmyadmin.md

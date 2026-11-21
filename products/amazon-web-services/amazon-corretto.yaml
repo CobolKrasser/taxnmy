@@ -2,9 +2,9 @@ key: amazon-web-services/amazon-corretto
 publisher: amazon-web-services
 name: Amazon Corretto
 kind: software
-source: https://endoflife.date/amazon-corretto
+source: https://aws.amazon.com/corretto/faqs/
 versions:
-  source: https://endoflife.date/amazon-corretto
+  source: https://aws.amazon.com/corretto/faqs/
 identifiers:
 - cpe: cpe:2.3:a:amazon:corretto
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
