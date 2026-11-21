@@ -44,7 +44,8 @@ For each case, build a dataset as follows:
 
 1. Copy `products/` and `publishers/` from `main`.
 2. Remove the files in `holdout` and `hide`.
-3. Add the files in `context`.
+3. Add the files in `context`. A case that changes an existing file carries that file here, as the
+   case was written against it. New data on `main` then leaves the case as it is.
 4. Add the proposal: the files in `holdout` (unchanged from `main`) and the files in `proposal`.
 5. Run `tools/lint.py` on it. The findings on the proposal must match the field `lint`.
    - With `error`, the case stops there: the outcome is *reject* on that rule, and no AI is
