@@ -2,9 +2,9 @@ key: mastodon/mastodon
 publisher: mastodon
 name: Mastodon
 kind: software
-source: https://github.com/mastodon/mastodon/security/policy
+source: https://endoflife.date/mastodon
 versions:
-  source: https://github.com/mastodon/mastodon/security/policy
+  source: https://endoflife.date/mastodon
 identifiers:
 - cpe: cpe:2.3:a:joinmastodon:mastodon
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mastodon.md

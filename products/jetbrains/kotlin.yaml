@@ -2,9 +2,9 @@ key: jetbrains/kotlin
 publisher: jetbrains
 name: Kotlin
 kind: software
-source: https://endoflife.date/kotlin
+source: https://kotlinlang.org/docs/security.html
 versions:
-  source: https://endoflife.date/kotlin
+  source: https://kotlinlang.org/docs/security.html
 identifiers:
 - cpe: cpe:2.3:a:jetbrains:kotlin
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:jetbrains:kotlin&resultsPerPage=1

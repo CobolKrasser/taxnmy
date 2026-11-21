@@ -58,6 +58,27 @@ class JudgeTest(unittest.TestCase):
                          "https://docs.acme.example/policy")
 
 
+class MeasureTest(unittest.TestCase):
+    """The measure of the story: for how many products the gate recognises the publisher in code (TP5)."""
+
+    def product(self, versions):
+        return {**PRODUCT, "versions": {"source": versions}}
+
+    def test_yes_on_the_domain_of_the_publisher_and_read(self):
+        stub = Stub({"https://docs.acme.example/policy": ("200", TEXT, "", "")})
+        self.assertEqual(ov.recognised(self.product("https://docs.acme.example/policy"), PUB, stub), "yes")
+
+    def test_why_not(self):
+        stub = Stub({"https://docs.acme.example/closed": ("refused", "", "", ""),
+                     "https://docs.acme.example/moved": ("200", TEXT, "", "https://elsewhere.example/")})
+        self.assertEqual(ov.recognised(PRODUCT, PUB, stub), "versions-third-party")
+        self.assertEqual(ov.recognised(self.product("https://other.example/v"), PUB, stub), "versions-other-domain")
+        self.assertEqual(ov.recognised(self.product("https://docs.acme.example/closed"), PUB, stub), "versions-closed")
+        self.assertEqual(ov.recognised(self.product("https://docs.acme.example/moved"), PUB, stub), "versions-unreadable")
+        self.assertEqual(ov.recognised(self.product("https://docs.acme.example/policy"),
+                                       {**PUB, "source": "https://endoflife.date/acme"}, stub), "publisher-not-own")
+
+
 class WriteTest(unittest.TestCase):
     def test_only_the_two_sources_change(self):
         text = ("key: acme/tool\npublisher: acme\nname: Acme Tool\nkind: software\nsource: https://endoflife.date/tool\n"

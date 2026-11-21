@@ -15,6 +15,10 @@ A link to another domain is not taken. What is not taken keeps its source; the r
 report. The rules name no brand or product (TG4).
 
     python tools/ownversions.py --eol eol.json --out ownversions.json [--write]
+    python tools/ownversions.py --eol eol.json --measure .     # the measure: TP5 recognised in code
+
+The measure of the story is for how many products the gate recognises the publisher in code
+(`gate.tr5`: the versions source read, on the domain of the publisher's source).
 
 Costs nothing: no AI. Pages are read with the ladder of tools/fetch.py (robots.txt and refusals are
 respected, TE5).
@@ -34,7 +38,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gate  # noqa: E402
 from fetch import moved  # noqa: E402
 from guard import owner  # noqa: E402
-from ownsource import CLOSED, load_data, load_eol, third_party  # noqa: E402
+from ownsource import CLOSED, load_data, load_eol, needs_source, third_party  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -60,7 +64,7 @@ def policy_link(product: dict, eol: dict) -> str:
 def judge(product: dict, publisher: dict, link: str, fetcher) -> Result:
     res = Result(product.get("key", ""), link)
     pub_source = publisher.get("source", "")
-    if third_party(pub_source):
+    if needs_source(publisher):
         res.outcome, res.detail = "publisher-not-own", f"the publisher's source is {pub_source}"
         return res
     if not link:
@@ -137,6 +141,35 @@ def count(root: Path = ROOT) -> dict:
             "versions.source": sum(third_party((p.get("versions") or {}).get("source", "")) for p in ps)}
 
 
+# --------------------------------------------------------------------------- the measure (TAX-21)
+
+
+def recognised(product: dict, publisher: dict, fetcher) -> str:
+    """Whether the gate recognises the publisher in code (TP5, `gate.tr5`) for a product of TAX:
+    'yes', or why not."""
+    versions = (product.get("versions") or {}).get("source", "")
+    if needs_source(publisher):
+        return "publisher-not-own"
+    if third_party(versions):
+        return "versions-third-party"
+    if gate.same_owner(product, publisher) is None:
+        return "versions-other-domain"
+    src = fetcher.fetch(versions, "")
+    if src.status in CLOSED:
+        return "versions-closed"
+    return "yes" if gate.tr5(product, publisher, {versions: src}, new_publisher=False) else "versions-unreadable"
+
+
+def measure(root: Path, fetcher, log=print) -> Counter:
+    """For how many products of TAX the gate recognises the publisher in code, and why not."""
+    pubs, prods = load_data(root)
+    out = Counter()
+    for slug, ps in prods.items():
+        for p in ps:
+            out[recognised(p, pubs.get(slug, {}), fetcher)] += 1
+    return out
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--eol", type=Path, required=True, help="the full product list of the dataset the sources point to (JSON)")
@@ -144,7 +177,13 @@ def main(argv=None) -> int:
     ap.add_argument("--only", nargs="*", help="only these product or publisher keys")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--verbose", action="store_true")
+    ap.add_argument("--measure", type=Path, metavar="ROOT", help="only count, for the data under ROOT, for how many "
+                    "products the gate recognises the publisher in code (TP5); writes nothing")
     args = ap.parse_args(argv)
+    if args.measure:
+        from fetch import Fetcher
+        print("TP5 in code: " + ", ".join(f"{k} {v}" for k, v in measure(args.measure, Fetcher()).most_common()))
+        return 0
     before = count()
     results = run(args)
     if args.out:

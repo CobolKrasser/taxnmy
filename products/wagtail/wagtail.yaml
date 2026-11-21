@@ -2,9 +2,9 @@ key: wagtail/wagtail
 publisher: wagtail
 name: Wagtail
 kind: software
-source: https://github.com/wagtail/wagtail/wiki/Release-schedule
+source: https://endoflife.date/wagtail
 versions:
-  source: https://github.com/wagtail/wagtail/wiki/Release-schedule
+  source: https://endoflife.date/wagtail
 identifiers:
 - purl: pkg:pypi/wagtail
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wagtail.md
