@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:veeam:veeam_backup_\&_replication
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:veeam:veeam_backup_%5C%26_replication&resultsPerPage=1
-aliases: []
+aliases:
+- veeam-software/backup-and-replication

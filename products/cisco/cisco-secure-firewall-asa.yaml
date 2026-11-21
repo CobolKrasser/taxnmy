@@ -1,0 +1,9 @@
+key: cisco/cisco-secure-firewall-asa
+publisher: cisco
+name: Cisco Secure Firewall ASA
+kind: operating-system
+source: https://www.cisco.com/c/en/us/support/security/adaptive-security-appliance-asa-software/series.html
+versions:
+  source: https://www.cisco.com/c/en/us/support/security/adaptive-security-appliance-asa-software/products-release-notes-list.html
+aliases:
+- cisco/cisco-adaptive-security-appliance-asa-software

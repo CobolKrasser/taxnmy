@@ -238,6 +238,31 @@ parked:
       name: AMI
       source: https://www.ami.com/megarac/
       aliases: []
+- key: anyscale/ray
+  path: products/anyscale/ray.yaml
+  publisher: anyscale
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c34cea4abfd423ce
+  files:
+    products/anyscale/ray.yaml: |
+      key: anyscale/ray
+      publisher: anyscale
+      name: Ray
+      kind: software
+      source: https://www.ray.io/
+      aliases: []
+    publishers/anyscale.yaml: |
+      key: anyscale
+      name: Anyscale, Inc
+      source: https://www.ray.io/
+      aliases: []
 - key: apple/multiple-products
   path: products/apple/multiple-products.yaml
   publisher: apple
@@ -256,6 +281,2157 @@ parked:
       publisher: apple
       name: Multiple Products
       kind: software
+      aliases: []
+- key: aqua-security-software/trivy
+  path: products/aqua-security-software/trivy.yaml
+  publisher: aqua-security-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 7e3af6dad492c1c2
+  files:
+    products/aqua-security-software/trivy.yaml: |
+      key: aqua-security-software/trivy
+      publisher: aqua-security-software
+      name: Trivy
+      kind: software
+      source: https://trivy.dev/
+      aliases: []
+    publishers/aqua-security-software.yaml: |
+      key: aqua-security-software
+      name: Aqua Security Software Ltd.
+      source: https://trivy.dev/
+      aliases: []
+- key: arista-networks/arista-extensible-operating-system-eos
+  path: products/arista-networks/arista-extensible-operating-system-eos.yaml
+  publisher: arista-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Arista Extensible Operating System (EOS)'' niet op https://www.arista.com/en/products/eos'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 4cd6ed78ae4c13cf
+  files:
+    products/arista-networks/arista-extensible-operating-system-eos.yaml: |
+      key: arista-networks/arista-extensible-operating-system-eos
+      publisher: arista-networks
+      name: Arista Extensible Operating System (EOS)
+      kind: operating-system
+      source: https://www.arista.com/en/products/eos
+      versions:
+        source: https://www.arista.com/en/support/product-documentation
+      aliases: []
+    publishers/arista-networks.yaml: |
+      key: arista-networks
+      name: Arista Networks
+      source: https://www.arista.com/en/products/eos
+      aliases: []
+- key: arista-networks/velocloud-orchestrator
+  path: products/arista-networks/velocloud-orchestrator.yaml
+  publisher: arista-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''VeloCloud Orchestrator'' niet op https://www.arista.com/en/orchestrator-guide-vc-7-0/sd-wan-7-0-velocloud-orchestrator-deployment-and-monitoring-guide'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: ee58230181f40f87
+  files:
+    products/arista-networks/velocloud-orchestrator.yaml: |
+      key: arista-networks/velocloud-orchestrator
+      publisher: arista-networks
+      name: VeloCloud Orchestrator
+      kind: software
+      source: https://www.arista.com/en/orchestrator-guide-vc-7-0/sd-wan-7-0-velocloud-orchestrator-deployment-and-monitoring-guide
+      versions:
+        source: https://www.arista.com/assets/data/pdf/release-notes/VC-SD-WAN-6.4-Release-Notes.pdf
+      aliases: []
+    publishers/arista-networks.yaml: |
+      key: arista-networks
+      name: Arista Networks
+      source: https://www.arista.com/en/products/eos
+      aliases: []
+- key: arm/mali-gpus-kernel-device-drivers
+  path: products/arm/mali-gpus-kernel-device-drivers.yaml
+  publisher: arm
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://developer.arm.com/downloads/-/mali-drivers/avalon-kernel: unreadable'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: cd7a0e7c42a857a8
+  files:
+    products/arm/mali-gpus-kernel-device-drivers.yaml: |
+      key: arm/mali-gpus-kernel-device-drivers
+      publisher: arm
+      name: Mali GPUs Kernel Device Drivers
+      kind: software
+      source: https://developer.arm.com/downloads/-/mali-drivers/avalon-kernel
+      versions:
+        source: https://developer.arm.com/Downloads/-/Mali%205th%20Gen%20GPU%20Architecture
+      aliases: []
+    publishers/arm.yaml: |
+      key: arm
+      name: Arm
+      source: https://developer.arm.com/downloads/-/mali-drivers/avalon-kernel
+      aliases: []
+- key: array-networks/ag-vxag-arrayos
+  path: products/array-networks/ag-vxag-arrayos.yaml
+  publisher: array-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 6f94c2bffa474490
+  files:
+    products/array-networks/ag-vxag-arrayos.yaml: |
+      key: array-networks/ag-vxag-arrayos
+      publisher: array-networks
+      name: AG/vxAG ArrayOS
+      kind: operating-system
+      aliases: []
+    publishers/array-networks.yaml: |
+      key: array-networks
+      name: Array Networks
+      source: https://www.arraynetworks.com/products-secure-access-gateways-ag-series.html
+      aliases: []
+- key: array-networks/arrayos-ag
+  path: products/array-networks/arrayos-ag.yaml
+  publisher: array-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1cfac2107122d26e
+  files:
+    products/array-networks/arrayos-ag.yaml: |
+      key: array-networks/arrayos-ag
+      publisher: array-networks
+      name: ArrayOS AG
+      kind: operating-system
+      aliases: []
+    publishers/array-networks.yaml: |
+      key: array-networks
+      name: Array Networks
+      source: https://www.arraynetworks.com/products-secure-access-gateways-ag-series.html
+      aliases: []
+- key: ascensio-system-sia/onlyoffice-docs
+  path: products/ascensio-system-sia/onlyoffice-docs.yaml
+  publisher: ascensio-system-sia
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Ascensio System SIA'' op geen van: https://www.onlyoffice.com/docs-enterprise.aspx,
+    https://www.onlyoffice.com/docs-enterprise'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 52fac13b1237f486
+  files:
+    products/ascensio-system-sia/onlyoffice-docs.yaml: |
+      key: ascensio-system-sia/onlyoffice-docs
+      publisher: ascensio-system-sia
+      name: ONLYOFFICE Docs
+      kind: software
+      source: https://www.onlyoffice.com/docs-enterprise
+      versions:
+        source: https://helpcenter.onlyoffice.com/docs/changelog
+      aliases: []
+    publishers/ascensio-system-sia.yaml: |
+      key: ascensio-system-sia
+      name: Ascensio System SIA
+      source: https://www.onlyoffice.com/docs-enterprise.aspx
+      aliases: []
+- key: asus/asus-live-update
+  path: products/asus/asus-live-update.yaml
+  publisher: asus
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 481e0c025b74780e
+  files:
+    products/asus/asus-live-update.yaml: |
+      key: asus/asus-live-update
+      publisher: asus
+      name: ASUS Live Update
+      kind: software
+      source: https://www.asus.com/support/faq/1018727/
+      aliases: []
+    publishers/asus.yaml: |
+      key: asus
+      name: ASUS
+      source: https://www.asus.com/support/download-center/
+      aliases: []
+- key: asus/routers
+  path: products/asus/routers.yaml
+  publisher: asus
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 35c8e489d4a15892
+  files:
+    products/asus/routers.yaml: |
+      key: asus/routers
+      publisher: asus
+      name: Routers
+      aliases: []
+    publishers/asus.yaml: |
+      key: asus
+      name: ASUS
+      source: https://www.asus.com/support/download-center/
+      aliases: []
+- key: atlassian/confluence-data-center
+  path: products/atlassian/confluence-data-center.yaml
+  publisher: atlassian
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen): edition van atlassian/confluence
+    (in TAX)'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 648a54f589b1843a
+  files:
+    products/atlassian/confluence-data-center.yaml: |
+      key: atlassian/confluence-data-center
+      publisher: atlassian
+      name: Confluence Data Center
+      kind: software
+      source: https://www.atlassian.com/enterprise/data-center/confluence
+      versions:
+        source: https://confluence.atlassian.com/doc/confluence-release-notes-327.html
+      aliases: []
+- key: atlassian/confluence-server
+  path: products/atlassian/confluence-server.yaml
+  publisher: atlassian
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen): edition van atlassian/confluence
+    (in TAX)'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 88bec5754d1e7cd5
+  files:
+    products/atlassian/confluence-server.yaml: |
+      key: atlassian/confluence-server
+      publisher: atlassian
+      name: Confluence Server
+      kind: software
+      source: https://www.atlassian.com/licensing/server-end-of-support
+      versions:
+        source: https://confluence.atlassian.com/doc/confluence-release-notes-327.html
+      aliases: []
+- key: atlassian/jira-software-server
+  path: products/atlassian/jira-software-server.yaml
+  publisher: atlassian
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen): edition van atlassian/jira-software
+    (in TAX)'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: bbdb3c7d9dabd2b0
+  files:
+    products/atlassian/jira-software-server.yaml: |
+      key: atlassian/jira-software-server
+      publisher: atlassian
+      name: Jira Software Server
+      kind: software
+      source: https://www.atlassian.com/licensing/server-end-of-support
+      versions:
+        source: https://confluence.atlassian.com/jirasoftware/jira-software-release-notes-776821069.html
+      aliases: []
+- key: atlassian/multiple-products
+  path: products/atlassian/multiple-products.yaml
+  publisher: atlassian
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c771b92b44d38c62
+  files:
+    products/atlassian/multiple-products.yaml: |
+      key: atlassian/multiple-products
+      publisher: atlassian
+      name: Multiple Products
+      aliases: []
+- key: audinate/dante-discovery
+  path: products/audinate/dante-discovery.yaml
+  publisher: audinate
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: cfb513a216665d4b
+  files:
+    products/audinate/dante-discovery.yaml: |
+      key: audinate/dante-discovery
+      publisher: audinate
+      name: Dante Discovery
+      kind: software
+      source: https://www.audinate.com/learning/faqs/what-is-dante-discovery
+      aliases: []
+    publishers/audinate.yaml: |
+      key: audinate
+      name: Audinate
+      source: https://www.audinate.com/learning/faqs/what-is-dante-discovery
+      aliases: []
+- key: aviatrix/aviatrix-controller
+  path: products/aviatrix/aviatrix-controller.yaml
+  publisher: aviatrix
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://docs.aviatrix.com/docs/enterprise/8.2/concepts-architectures/components/controlplane/controller:
+    404'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a568eb10dde75605
+  files:
+    products/aviatrix/aviatrix-controller.yaml: |
+      key: aviatrix/aviatrix-controller
+      publisher: aviatrix
+      name: Aviatrix Controller
+      kind: software
+      source: https://docs.aviatrix.com/docs/enterprise/8.2/concepts-architectures/components/controlplane/controller
+      versions:
+        source: https://docs.aviatrix.com/documentation/v7.2/release-notices/controller-software-release-notes/controller-software-release-notes.html
+      aliases: []
+    publishers/aviatrix.yaml: |
+      key: aviatrix
+      name: Aviatrix
+      source: https://aviatrix.ai/
+      aliases: []
+- key: barracuda-networks/barracuda-email-security-gateway
+  path: products/barracuda-networks/barracuda-email-security-gateway.yaml
+  publisher: barracuda-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Barracuda Email Security Gateway'' niet op https://www.barracuda.com/products/email-protection/email-security-gateway'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: dc4c67fbc7efb26c
+  files:
+    products/barracuda-networks/barracuda-email-security-gateway.yaml: |
+      key: barracuda-networks/barracuda-email-security-gateway
+      publisher: barracuda-networks
+      name: Barracuda Email Security Gateway
+      kind: device
+      source: https://www.barracuda.com/products/email-protection/email-security-gateway
+      versions:
+        source: https://documentation.campus.barracuda.com/wiki/spaces/BSFv51/pages/6684682/Release+Notes
+      aliases: []
+    publishers/barracuda-networks.yaml: |
+      key: barracuda-networks
+      name: Barracuda Networks
+      source: https://www.barracuda.com/products/email-protection/email-security-gateway
+      aliases: []
+- key: barracuda-networks/multiple-products
+  path: products/barracuda-networks/multiple-products.yaml
+  publisher: barracuda-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c8f6a10f6358992f
+  files:
+    products/barracuda-networks/multiple-products.yaml: |
+      key: barracuda-networks/multiple-products
+      publisher: barracuda-networks
+      name: Multiple Products
+      aliases: []
+    publishers/barracuda-networks.yaml: |
+      key: barracuda-networks
+      name: Barracuda Networks
+      source: https://www.barracuda.com/products/email-protection/email-security-gateway
+      aliases: []
+- key: berrie-ai/litellm
+  path: products/berrie-ai/litellm.yaml
+  publisher: berrie-ai
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Berrie AI Incorporated'' op geen van: https://www.litellm.ai/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: fb6eb12a9330bb9b
+  files:
+    products/berrie-ai/litellm.yaml: |
+      key: berrie-ai/litellm
+      publisher: berrie-ai
+      name: LiteLLM
+      kind: software
+      source: https://www.litellm.ai/
+      versions:
+        source: https://docs.litellm.ai/release_notes/
+      aliases: []
+    publishers/berrie-ai.yaml: |
+      key: berrie-ai
+      name: Berrie AI Incorporated
+      source: https://www.litellm.ai/
+      aliases: []
+- key: broadcom/vmware-aria-operations
+  path: products/broadcom/vmware-aria-operations.yaml
+  publisher: broadcom
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: Broadcom hosts the updates, but the register already maps broadcom.com to a separate publisher, vmware. The
+    product carries the VMware brand. A person should decide whether the publisher is broadcom or vmware.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: d75a6673c351277d
+  files:
+    products/broadcom/vmware-aria-operations.yaml: |
+      key: broadcom/vmware-aria-operations
+      publisher: broadcom
+      name: VMware Aria Operations
+      kind: software
+      source: https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations/8-18.html
+      versions:
+        source: https://knowledge.broadcom.com/external/article/379176
+      aliases: []
+- key: broadcom/vmware-esx
+  path: products/broadcom/vmware-esx.yaml
+  publisher: broadcom
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''VMware ESX'' niet op https://www.vmware.com/products/cloud-infrastructure/vsphere
+    (eindadres van https://www.vmware.com/products/cloud-infrastructure/esxi-and-esx); eindadres voorgedragen: https://www.vmware.com/products/cloud-infrastructure/esxi-and-esx
+    -> https://www.vmware.com/products/cloud-infrastructure/vsphere'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: e0085c96bf22544d
+  files:
+    products/broadcom/vmware-esx.yaml: |
+      key: broadcom/vmware-esx
+      publisher: broadcom
+      name: VMware ESX
+      kind: operating-system
+      source: https://www.vmware.com/products/cloud-infrastructure/vsphere
+      versions:
+        source: https://knowledge.broadcom.com/external/article/316595
+      aliases: []
+- key: broadcom/vmware-esxi
+  path: products/broadcom/vmware-esxi.yaml
+  publisher: broadcom
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5
+  reason: 'TP3: The release notes list ESXi versions such as 7.0 Update 3w. However, broadcom.com belongs to the existing
+    publisher vmware, so this may duplicate an existing VMware ESXi entry that is not shown.; TP5: The updates are published
+    on broadcom.com, but that domain is registered in TAX for the publisher vmware and the product is branded VMware. Whether
+    broadcom or vmware is the right publisher needs a person.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: a62ebe3c2f3ba3c1
+  files:
+    products/broadcom/vmware-esxi.yaml: |
+      key: broadcom/vmware-esxi
+      publisher: broadcom
+      name: VMware ESXi
+      kind: operating-system
+      source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/release-notes/esxi-update-and-patch-release-notes.html
+      versions:
+        source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/release-notes/esxi-update-and-patch-release-notes.html
+      aliases:
+      - broadcom/esxi
+- key: broadcom/vmware-tools
+  path: products/broadcom/vmware-tools.yaml
+  publisher: broadcom
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: The docs are on Broadcom''s site, but the identity block says broadcom.com is registered for the publisher
+    vmware, so whether the publisher should be broadcom or vmware needs a person.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: adcf2bf2b181918a
+  files:
+    products/broadcom/vmware-tools.yaml: |
+      key: broadcom/vmware-tools
+      publisher: broadcom
+      name: VMware Tools
+      kind: software
+      source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/tools/13-0-0.html
+      versions:
+        source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/tools/13-0-0/release-notes.html
+      aliases: []
+- key: broadcom/vmware-vcenter-server
+  path: products/broadcom/vmware-vcenter-server.yaml
+  publisher: broadcom
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: The release notes are hosted on Broadcom''s site, but the identity block shows broadcom.com is registered
+    for the publisher vmware. This leaves open whether the publisher should be broadcom or the existing vmware publisher.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 37f463f6c3bfc265
+  files:
+    products/broadcom/vmware-vcenter-server.yaml: |
+      key: broadcom/vmware-vcenter-server
+      publisher: broadcom
+      name: VMware vCenter Server
+      kind: software
+      source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/vcenter-server-update-and-patch-release-notes.html
+      versions:
+        source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/vcenter-server-update-and-patch-release-notes.html
+      aliases:
+      - broadcom/vcenter
+      - broadcom/vcenter-server
+      - broadcom/vmware-vcenter
+- key: check-point-software-technologies/multiple-products
+  path: products/check-point-software-technologies/multiple-products.yaml
+  publisher: check-point-software-technologies
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 548423de692a3fb1
+  files:
+    products/check-point-software-technologies/multiple-products.yaml: |
+      key: check-point-software-technologies/multiple-products
+      publisher: check-point-software-technologies
+      name: Multiple Products
+      aliases: []
+    publishers/check-point-software-technologies.yaml: |
+      key: check-point-software-technologies
+      name: Check Point Software Technologies Ltd.
+      source: https://www.checkpoint.com/quantum/next-generation-firewall/
+      aliases: []
+- key: check-point-software-technologies/quantum-security-gateway
+  path: products/check-point-software-technologies/quantum-security-gateway.yaml
+  publisher: check-point-software-technologies
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://support.checkpoint.com/results/sk/sk183506: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a637707b895c4f65
+  files:
+    products/check-point-software-technologies/quantum-security-gateway.yaml: |
+      key: check-point-software-technologies/quantum-security-gateway
+      publisher: check-point-software-technologies
+      name: Quantum Security Gateway
+      kind: software
+      source: https://support.checkpoint.com/results/sk/sk183506
+      versions:
+        source: https://support.checkpoint.com/results/sk/sk183506
+      aliases: []
+    publishers/check-point-software-technologies.yaml: |
+      key: check-point-software-technologies
+      name: Check Point Software Technologies Ltd.
+      source: https://www.checkpoint.com/quantum/next-generation-firewall/
+      aliases: []
+- key: check-point-software-technologies/smartconsole
+  path: products/check-point-software-technologies/smartconsole.yaml
+  publisher: check-point-software-technologies
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://sc1.checkpoint.com/documents/Jumbo_HFA/R82_SC/R82.00/R82-Downloads.htm: 404'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: f11f5b15ea047f39
+  files:
+    products/check-point-software-technologies/smartconsole.yaml: |
+      key: check-point-software-technologies/smartconsole
+      publisher: check-point-software-technologies
+      name: SmartConsole
+      kind: software
+      source: https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_SecurityManagement_AdminGuide/Content/Topics-SECMG/SmartConsole-Packages.htm
+      versions:
+        source: https://sc1.checkpoint.com/documents/Jumbo_HFA/R82_SC/R82.00/R82-Downloads.htm
+      aliases: []
+    publishers/check-point-software-technologies.yaml: |
+      key: check-point-software-technologies
+      name: Check Point Software Technologies Ltd.
+      source: https://www.checkpoint.com/quantum/next-generation-firewall/
+      aliases: []
+- key: choreo-labs/multiple-products
+  path: products/choreo-labs/multiple-products.yaml
+  publisher: choreo-labs
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c5b4dd654e9d1387
+  files:
+    products/choreo-labs/multiple-products.yaml: |
+      key: choreo-labs/multiple-products
+      publisher: choreo-labs
+      name: Multiple Products
+      kind: software
+      aliases: []
+    publishers/choreo-labs.yaml: |
+      key: choreo-labs
+      name: Choreo Labs LLC
+      source: https://choreolabs.com/
+      aliases: []
+- key: cisco-systems/splunk-enterprise
+  path: products/cisco-systems/splunk-enterprise.yaml
+  publisher: cisco-systems
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates: refused'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9052c20da55fec09
+  files:
+    products/cisco-systems/splunk-enterprise.yaml: |
+      key: cisco-systems/splunk-enterprise
+      publisher: cisco-systems
+      name: Splunk Enterprise
+      kind: software
+      source: https://www.splunk.com/en_us/products/splunk-enterprise.html
+      versions:
+        source: https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates
+      aliases: []
+    publishers/cisco-systems.yaml: |
+      key: cisco-systems
+      name: Cisco Systems, Inc.
+      source: https://www.splunk.com/en_us/products/splunk-enterprise.html
+      aliases: []
+- key: cisco/catalyst-sd-wan
+  path: products/cisco/catalyst-sd-wan.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 91bd14e4d01081c2
+  files:
+    products/cisco/catalyst-sd-wan.yaml: |
+      key: cisco/catalyst-sd-wan
+      publisher: cisco
+      name: Catalyst SD-WAN
+      kind: software
+      aliases: []
+- key: cisco/cisco-broadworks
+  path: products/cisco/cisco-broadworks.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 94c93d099641ffc7
+  files:
+    products/cisco/cisco-broadworks.yaml: |
+      key: cisco/cisco-broadworks
+      publisher: cisco
+      name: Cisco BroadWorks
+      kind: software
+      source: https://www.cisco.com/c/en/us/support/unified-communications/broadworks/series.html
+      aliases: []
+- key: cisco/cisco-catalyst-sd-wan-manager
+  path: products/cisco/cisco-catalyst-sd-wan-manager.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The versions source lists Cisco Catalyst SD-WAN Control Components releases (e.g. 20.18.x), but it never names
+    SD-WAN Manager. It does not show that these versions belong to this product.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: d2e61b5848e65e30
+  files:
+    products/cisco/cisco-catalyst-sd-wan-manager.yaml: |
+      key: cisco/cisco-catalyst-sd-wan-manager
+      publisher: cisco
+      name: Cisco Catalyst SD-WAN Manager
+      kind: software
+      source: https://www.cisco.com/site/us/en/products/networking/wan/sd-wan-manager/index.html
+      versions:
+        source: https://www.cisco.com/c/en/us/support/routers/sd-wan/products-release-notes-list.html
+      aliases:
+      - cisco/catalyst-sd-wan-manager
+      - cisco/catalyst-sd-wan-manger
+- key: cisco/cisco-ios-xe
+  path: products/cisco/cisco-ios-xe.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: alias
+  reason: 'alias ''cisco/cisco-ios-xe-software'': doubt: The sources write the name only as "Cisco IOS XE". The NVD record
+    is "Cisco IOS XE 2.4.0". No source text writes "Cisco IOS XE Software", and none uses that name for something else, so
+    the texts do not settle it.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: ebd33c581a5d21a6
+  files:
+    products/cisco/cisco-ios-xe.yaml: |
+      key: cisco/cisco-ios-xe
+      publisher: cisco
+      name: Cisco IOS XE
+      kind: operating-system
+      source: https://endoflife.date/cisco-ios-xe
+      versions:
+        source: https://endoflife.date/cisco-ios-xe
+      identifiers:
+      - cpe: cpe:2.3:o:cisco:ios_xe
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:cisco:ios_xe&resultsPerPage=1
+      aliases:
+      - cisco/cisco-ios-xe-software
+- key: cisco/cisco-nx-os
+  path: products/cisco/cisco-nx-os.yaml
+  publisher: cisco
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://www.cisco.com/c/en/us/products/ios-nx-os-software/nx-os/index.html: 404'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c4a2d53a34470f8c
+  files:
+    products/cisco/cisco-nx-os.yaml: |
+      key: cisco/cisco-nx-os
+      publisher: cisco
+      name: Cisco NX-OS
+      kind: operating-system
+      source: https://www.cisco.com/c/en/us/products/ios-nx-os-software/nx-os/index.html
+      versions:
+        source: https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-release-notes-list.html
+      aliases: []
+- key: cisco/cisco-secure-firewall-threat-defense
+  path: products/cisco/cisco-secure-firewall-threat-defense.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TE1
+  reason: 'TE1: Name, publisher and versions are confirmed, but no source text explicitly states the kind operating-system,
+    and the alias name is not literally shown.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 535a7b0eea4787f9
+  files:
+    products/cisco/cisco-secure-firewall-threat-defense.yaml: |
+      key: cisco/cisco-secure-firewall-threat-defense
+      publisher: cisco
+      name: Cisco Secure Firewall Threat Defense
+      kind: operating-system
+      source: https://www.cisco.com/c/en/us/support/security/firepower-ngfw/series.html
+      versions:
+        source: https://www.cisco.com/c/en/us/support/security/firepower-ngfw/products-release-notes-list.html
+      aliases:
+      - cisco/cisco-firepower-threat-defense-software
+- key: cisco/multiple-products
+  path: products/cisco/multiple-products.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 083134738d3be4e6
+  files:
+    products/cisco/multiple-products.yaml: |
+      key: cisco/multiple-products
+      publisher: cisco
+      name: Multiple Products
+      kind: software
+      aliases: []
+- key: cisco/sd-wan
+  path: products/cisco/sd-wan.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a8d92da9dbd3ddbe
+  files:
+    products/cisco/sd-wan.yaml: |
+      key: cisco/sd-wan
+      publisher: cisco
+      name: SD-WAN
+      kind: software
+      aliases: []
+- key: cisco/small-business-rv-series-routers
+  path: products/cisco/small-business-rv-series-routers.yaml
+  publisher: cisco
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 00de294d02aa8ceb
+  files:
+    products/cisco/small-business-rv-series-routers.yaml: |
+      key: cisco/small-business-rv-series-routers
+      publisher: cisco
+      name: Small Business RV Series Routers
+      kind: device
+      aliases: []
+- key: cleo/multiple-products
+  path: products/cleo/multiple-products.yaml
+  publisher: cleo
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 83c7549fe7814683
+  files:
+    products/cleo/multiple-products.yaml: |
+      key: cleo/multiple-products
+      publisher: cleo
+      name: Multiple Products
+      kind: software
+      aliases: []
+    publishers/cleo.yaml: |
+      key: cleo
+      name: Cleo
+      source: https://www.cleo.com/
+      aliases: []
+- key: collabora-productivity/collabora-online-built-in-code-server
+  path: products/collabora-productivity/collabora-online-built-in-code-server.yaml
+  publisher: collabora-productivity
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Collabora Online Development Edition'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 79aed57121de6139
+  files:
+    products/collabora-productivity/collabora-online-built-in-code-server.yaml: |
+      key: collabora-productivity/collabora-online-built-in-code-server
+      publisher: collabora-productivity
+      name: Collabora Online Development Edition
+      kind: software
+      source: https://www.collaboraonline.com/code/
+      versions:
+        source: https://www.collaboraonline.com/code-26-04-release-notes/
+      aliases: []
+    publishers/collabora-productivity.yaml: |
+      key: collabora-productivity
+      name: Collabora Productivity Ltd
+      source: https://www.collaboraonline.com/code/
+      aliases: []
+- key: commvault/command-center
+  path: products/commvault/command-center.yaml
+  publisher: commvault
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The versions source lists maintenance releases of Commvault Software as a whole, not of Command Center; Command
+    Center appears to be an interface of the Commvault platform sharing its updates, so it may not be a product of its own.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 2ecac2cb3fdd62e5
+  files:
+    products/commvault/command-center.yaml: |
+      key: commvault/command-center
+      publisher: commvault
+      name: Command Center
+      kind: software
+      source: https://documentation.commvault.com/11.40/commcell-console/command_center.html
+      versions:
+        source: https://documentation.commvault.com/11.40/software/list_of_maintenance_releases_in_11_40.html
+      aliases: []
+- key: commvault/web-server
+  path: products/commvault/web-server.yaml
+  publisher: commvault
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The Web Server is a server package installed as part of the CommServe installation; the versions source lists
+    only Commvault platform maintenance releases, not separate Web Server versions, so it may be a component of the Commvault
+    platform rather than a product of its own.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: a8f77fe935c3237b
+  files:
+    products/commvault/web-server.yaml: |
+      key: commvault/web-server
+      publisher: commvault
+      name: Web Server
+      kind: software
+      source: https://documentation.commvault.com/11.40/commcell-console/installing_web_server.html
+      versions:
+        source: https://documentation.commvault.com/11.40/software/list_of_maintenance_releases_in_11_40.html
+      aliases: []
+- key: connectwise/connectwise-screenconnect
+  path: products/connectwise/connectwise-screenconnect.yaml
+  publisher: connectwise
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://docs.connectwise.com/ConnectWise_ScreenConnect_Documentation/News_and_release_notes:
+    unreadable'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1b2f64ab6f5e447e
+  files:
+    products/connectwise/connectwise-screenconnect.yaml: |
+      key: connectwise/connectwise-screenconnect
+      publisher: connectwise
+      name: ConnectWise ScreenConnect
+      kind: software
+      source: https://docs.connectwise.com/ConnectWise_ScreenConnect_Documentation/News_and_release_notes
+      versions:
+        source: https://screenconnect.product.connectwise.com/communities/26-screenconnect-output-stream
+      aliases: []
+    publishers/connectwise.yaml: |
+      key: connectwise
+      name: ConnectWise
+      source: https://www.connectwise.com/
+      aliases: []
+- key: control-web-panel/control-web-panel
+  path: products/control-web-panel/control-web-panel.yaml
+  publisher: control-web-panel
+  waits_for: better-proposal
+  owner: submitter
+  rule: TE1
+  reason: 'TE1: The name, kind and versions source are confirmed. The alias centos-web-panel does not appear in any source
+    text.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: d8aaf4088491ad54
+  files:
+    products/control-web-panel/control-web-panel.yaml: |
+      key: control-web-panel/control-web-panel
+      publisher: control-web-panel
+      name: Control Web Panel
+      kind: software
+      source: https://control-webpanel.com/
+      versions:
+        source: https://control-webpanel.com/changelog
+      aliases:
+      - control-web-panel/centos-web-panel
+    publishers/control-web-panel.yaml: |
+      key: control-web-panel
+      name: Control Web Panel
+      source: https://control-webpanel.com/
+      aliases: []
+- key: d-link/dcs-2530l
+  path: products/d-link/dcs-2530l.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=ce00778d253846c7a8b3f24cdb24781d: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 2042c3d22e4ca80c
+  files:
+    products/d-link/dcs-2530l.yaml: |
+      key: d-link/dcs-2530l
+      publisher: d-link
+      name: DCS-2530L
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=ce00778d253846c7a8b3f24cdb24781d
+      versions:
+        source: https://legacyfiles.us.dlink.com/DCS-2530L/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dcs-2670l
+  path: products/d-link/dcs-2670l.yaml
+  publisher: d-link
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 2c573d6117af9768
+  files:
+    products/d-link/dcs-2670l.yaml: |
+      key: d-link/dcs-2670l
+      publisher: d-link
+      name: DCS-2670L
+      kind: device
+      source: https://www.dlink.com/uk/en/products/dcs-2670l-full-hd-180-outdoor-wifi-camera
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-600
+  path: products/d-link/dir-600.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=4587b63118524aec911191cc81605283: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5c53f9c5e6da03ff
+  files:
+    products/d-link/dir-600.yaml: |
+      key: d-link/dir-600
+      publisher: d-link
+      name: DIR-600
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=4587b63118524aec911191cc81605283
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-600/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-605
+  path: products/d-link/dir-605.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=2b09e95d90ff4cb38830ecc04c89cee5: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 3bfeed73675702d6
+  files:
+    products/d-link/dir-605.yaml: |
+      key: d-link/dir-605
+      publisher: d-link
+      name: DIR-605
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=2b09e95d90ff4cb38830ecc04c89cee5
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-605/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-820l
+  path: products/d-link/dir-820l.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=00c2150966b046b58ba95d8ae3a8f73d: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 62792e4a9c83426b
+  files:
+    products/d-link/dir-820l.yaml: |
+      key: d-link/dir-820l
+      publisher: d-link
+      name: DIR-820L
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=00c2150966b046b58ba95d8ae3a8f73d
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-820L/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-823x
+  path: products/d-link/dir-823x.yaml
+  publisher: d-link
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5e68fe778977c1cb
+  files:
+    products/d-link/dir-823x.yaml: |
+      key: d-link/dir-823x
+      publisher: d-link
+      name: DIR-823X
+      kind: device
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dir-859
+  path: products/d-link/dir-859.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=a64612142a3041d98642960e5f840fb6: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 05f9efc1e713db0b
+  files:
+    products/d-link/dir-859.yaml: |
+      key: d-link/dir-859
+      publisher: d-link
+      name: DIR-859
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=a64612142a3041d98642960e5f840fb6
+      versions:
+        source: https://legacyfiles.us.dlink.com/DIR-859/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dnr-322l
+  path: products/d-link/dnr-322l.yaml
+  publisher: d-link
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://legacy.us.dlink.com/pages/product.aspx?id=b98a51b9331542808145b120a03339f7: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 45534c6f7ce3c28e
+  files:
+    products/d-link/dnr-322l.yaml: |
+      key: d-link/dnr-322l
+      publisher: d-link
+      name: DNR-322L
+      kind: device
+      source: https://legacy.us.dlink.com/pages/product.aspx?id=b98a51b9331542808145b120a03339f7
+      versions:
+        source: https://legacyfiles.us.dlink.com/DNR-322L/
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/dsl-2750b
+  path: products/d-link/dsl-2750b.yaml
+  publisher: d-link
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 4035b3df877ed2a9
+  files:
+    products/d-link/dsl-2750b.yaml: |
+      key: d-link/dsl-2750b
+      publisher: d-link
+      name: DSL-2750B
+      kind: device
+      source: https://www.dlink.com/uk/en/products/dsl-2750b-wireless-n-adsl2-plus-modem-router
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/multiple-nas-devices
+  path: products/d-link/multiple-nas-devices.yaml
+  publisher: d-link
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 198ad2adb2188932
+  files:
+    products/d-link/multiple-nas-devices.yaml: |
+      key: d-link/multiple-nas-devices
+      publisher: d-link
+      name: Multiple NAS Devices
+      kind: device
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: d-link/routers
+  path: products/d-link/routers.yaml
+  publisher: d-link
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 80453d4a4894a75a
+  files:
+    products/d-link/routers.yaml: |
+      key: d-link/routers
+      publisher: d-link
+      name: Routers
+      kind: device
+      aliases: []
+    publishers/d-link.yaml: |
+      key: d-link
+      name: D-Link
+      source: https://www.dlink.com/uk/en/about
+      aliases: []
+- key: dahua-technology/ip-camera-firmware
+  path: products/dahua-technology/ip-camera-firmware.yaml
+  publisher: dahua-technology
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: dee0d7d0d9017d40
+  files:
+    products/dahua-technology/ip-camera-firmware.yaml: |
+      key: dahua-technology/ip-camera-firmware
+      publisher: dahua-technology
+      name: IP Camera Firmware
+      kind: device
+      aliases: []
+    publishers/dahua-technology.yaml: |
+      key: dahua-technology
+      name: Dahua Technology Co., Ltd.
+      source: https://www.dahuasecurity.com/
+      aliases: []
+- key: dassault-systemes/delmia-apriso
+  path: products/dassault-systemes/delmia-apriso.yaml
+  publisher: dassault-systemes
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 349d5cf708cd36bc
+  files:
+    products/dassault-systemes/delmia-apriso.yaml: |
+      key: dassault-systemes/delmia-apriso
+      publisher: dassault-systemes
+      name: DELMIA Apriso
+      kind: software
+      source: https://www.3ds.com/products/delmia/apriso
+      aliases: []
+    publishers/dassault-systemes.yaml: |
+      key: dassault-systemes
+      name: Dassault Systèmes
+      source: https://www.3ds.com/
+      aliases: []
+- key: dell-technologies/recoverpoint-for-virtual-machines
+  path: products/dell-technologies/recoverpoint-for-virtual-machines.yaml
+  publisher: dell-technologies
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: dbbdfd1cff6b9762
+  files:
+    products/dell-technologies/recoverpoint-for-virtual-machines.yaml: |
+      key: dell-technologies/recoverpoint-for-virtual-machines
+      publisher: dell-technologies
+      name: RecoverPoint for Virtual Machines
+      kind: software
+      source: https://www.dell.com/en-us/dt/data-protection/recoverpoint.htm
+      aliases: []
+    publishers/dell-technologies.yaml: |
+      key: dell-technologies
+      name: Dell Technologies
+      source: https://www.dell.com/en-us/dt/data-protection/recoverpoint.htm
+      aliases: []
+- key: digiever/ds-2105-pro
+  path: products/digiever/ds-2105-pro.yaml
+  publisher: digiever
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 82d56d2656e28820
+  files:
+    products/digiever/ds-2105-pro.yaml: |
+      key: digiever/ds-2105-pro
+      publisher: digiever
+      name: DS-2105 Pro
+      kind: device
+      source: https://www.digiever.com/product/product.php?param1=DS-2105+Pro
+      aliases: []
+    publishers/digiever.yaml: |
+      key: digiever
+      name: DIGIEVER Corporation
+      source: https://www.digiever.com/
+      aliases: []
+- key: disc-soft/daemon-tools-lite
+  path: products/disc-soft/daemon-tools-lite.yaml
+  publisher: disc-soft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Disc Soft Limited'' op geen van: https://www.daemon-tools.cc/products/dtLite'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 8956407b931f9132
+  files:
+    products/disc-soft/daemon-tools-lite.yaml: |
+      key: disc-soft/daemon-tools-lite
+      publisher: disc-soft
+      name: DAEMON Tools Lite
+      kind: software
+      source: https://www.daemon-tools.cc/products/dtLite
+      versions:
+        source: https://www.daemon-tools.cc/releasenotes/dtlite
+      aliases: []
+    publishers/disc-soft.yaml: |
+      key: disc-soft
+      name: Disc Soft Limited
+      source: https://www.daemon-tools.cc/products/dtLite
+      aliases: []
+- key: draytek/multiple-vigor-routers
+  path: products/draytek/multiple-vigor-routers.yaml
+  publisher: draytek
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: b05b1cc1ca30a904
+  files:
+    products/draytek/multiple-vigor-routers.yaml: |
+      key: draytek/multiple-vigor-routers
+      publisher: draytek
+      name: Multiple Vigor Routers
+      kind: device
+      aliases: []
+    publishers/draytek.yaml: |
+      key: draytek
+      name: DrayTek
+      source: https://www.draytek.com/products/utility/
+      aliases: []
+- key: draytek/vigor-routers
+  path: products/draytek/vigor-routers.yaml
+  publisher: draytek
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 192c46be2a1225bf
+  files:
+    products/draytek/vigor-routers.yaml: |
+      key: draytek/vigor-routers
+      publisher: draytek
+      name: Vigor Routers
+      kind: device
+      aliases: []
+    publishers/draytek.yaml: |
+      key: draytek
+      name: DrayTek
+      source: https://www.draytek.com/products/utility/
+      aliases: []
+- key: draytek/vigorconnect
+  path: products/draytek/vigorconnect.yaml
+  publisher: draytek
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''VigorConnect'' niet op https://www.draytek.com/ (eindadres van https://www.draytek.com/products/utility/);
+    eindadres voorgedragen: https://www.draytek.com/products/utility/ -> https://www.draytek.com/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 74f2e71354bafae4
+  files:
+    products/draytek/vigorconnect.yaml: |
+      key: draytek/vigorconnect
+      publisher: draytek
+      name: VigorConnect
+      kind: software
+      source: https://www.draytek.com/products/vigorconnect/
+      versions:
+        source: https://www.draytek.com/
+      aliases: []
+    publishers/draytek.yaml: |
+      key: draytek
+      name: DrayTek
+      source: https://www.draytek.com/products/utility/
+      aliases: []
+- key: drupal/drupal-core
+  path: products/drupal/drupal-core.yaml
+  publisher: drupal
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5, TE1
+  reason: 'TP5: The domain drupal.org is registered in TAX for the publisher drupal-association, and the sources do not show
+    whether the updates are published by an entity named ''Drupal'' or by the Drupal Association.; TE1: The name, the versions
+    and the kind (software) are confirmed, but the publisher value ''drupal'' as the publisher of the updates is not clearly
+    confirmed against the existing drupal-association.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 7b67a75fb7ff271a
+  files:
+    products/drupal/drupal-core.yaml: |
+      key: drupal/drupal-core
+      publisher: drupal
+      name: Drupal core
+      kind: software
+      source: https://www.drupal.org/project/drupal
+      versions:
+        source: https://www.drupal.org/project/drupal/releases
+      aliases:
+      - drupal/core
+    publishers/drupal.yaml: |
+      key: drupal
+      name: Drupal
+      source: https://www.drupal.org/project/drupal
+      aliases: []
+- key: edimax-technology/ic-7100
+  path: products/edimax-technology/ic-7100.yaml
+  publisher: edimax-technology
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: f00a3cc17f929613
+  files:
+    products/edimax-technology/ic-7100.yaml: |
+      key: edimax-technology/ic-7100
+      publisher: edimax-technology
+      name: IC-7100
+      kind: device
+      source: https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/global/home_legacy_ip_cameras_network_cameras/ic-7100/
+      aliases: []
+    publishers/edimax-technology.yaml: |
+      key: edimax-technology
+      name: Edimax Technology
+      source: https://www.edimax.com/edimax/post/post/data/edimax/global/press_releases/4801/
+      aliases: []
+- key: eg-secure-solutions/siteguard-server-edition
+  path: products/eg-secure-solutions/siteguard-server-edition.yaml
+  publisher: eg-secure-solutions
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''EG Secure Solutions Inc.'' op geen van: https://eg-secure.co.jp/siteguard/product/siteguard-server-edition'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1924c9d8273a5ca1
+  files:
+    products/eg-secure-solutions/siteguard-server-edition.yaml: |
+      key: eg-secure-solutions/siteguard-server-edition
+      publisher: eg-secure-solutions
+      name: SiteGuard Server Edition
+      kind: software
+      source: https://eg-secure.co.jp/siteguard/product/siteguard-server-edition
+      versions:
+        source: https://eg-secure.co.jp/siteguard/support/support-ver/
+      aliases: []
+    publishers/eg-secure-solutions.yaml: |
+      key: eg-secure-solutions
+      name: EG Secure Solutions Inc.
+      source: https://eg-secure.co.jp/siteguard/product/siteguard-server-edition
+      aliases: []
+- key: embedd/dd-wrt
+  path: products/embedd/dd-wrt.yaml
+  publisher: embedd
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://download1.dd-wrt.com/dd-wrtv2/downloads/betas/: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: e7c940cb1d76594a
+  files:
+    products/embedd/dd-wrt.yaml: |
+      key: embedd/dd-wrt
+      publisher: embedd
+      name: DD-WRT
+      kind: operating-system
+      source: https://dd-wrt.com/
+      versions:
+        source: https://download1.dd-wrt.com/dd-wrtv2/downloads/betas/
+      aliases: []
+    publishers/embedd.yaml: |
+      key: embedd
+      name: embeDD GmbH
+      source: https://dd-wrt.com/
+      aliases: []
+- key: f5/big-ip-apm
+  path: products/f5/big-ip-apm.yaml
+  publisher: f5
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van BIG-IP'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 589c260541e61b93
+  files:
+    products/f5/big-ip-apm.yaml: |
+      key: f5/big-ip-apm
+      publisher: f5
+      name: BIG-IP Zero Trust Access
+      kind: device
+      source: https://www.f5.com/products/big-ip-services/access-policy-manager
+      versions:
+        source: https://techdocs.f5.com/en-us/bigip-21-0-0/big-ip-release-notes.html
+      aliases: []
+- key: fortinet/forticlient-ems
+  path: products/fortinet/forticlient-ems.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.fortinet.com/products/endpoint-security/forticlient: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 79d5e691c47ca1ea
+  files:
+    products/fortinet/forticlient-ems.yaml: |
+      key: fortinet/forticlient-ems
+      publisher: fortinet
+      name: FortiClient EMS
+      kind: software
+      source: https://www.fortinet.com/products/endpoint-security/forticlient
+      versions:
+        source: https://docs.fortinet.com/product/forticlient
+      aliases: []
+- key: fortinet/fortimail
+  path: products/fortinet/fortimail.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.fortinet.com/products/email-security: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5c0c8ed84791c580
+  files:
+    products/fortinet/fortimail.yaml: |
+      key: fortinet/fortimail
+      publisher: fortinet
+      name: FortiMail
+      kind: device
+      source: https://www.fortinet.com/products/email-security
+      versions:
+        source: https://docs.fortinet.com/product/fortimail
+      aliases: []
+- key: fortinet/fortimanager
+  path: products/fortinet/fortimanager.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.fortinet.com/products/management/fortimanager: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 97ca92ba3f692ca3
+  files:
+    products/fortinet/fortimanager.yaml: |
+      key: fortinet/fortimanager
+      publisher: fortinet
+      name: FortiManager
+      kind: device
+      source: https://www.fortinet.com/products/management/fortimanager
+      versions:
+        source: https://docs.fortinet.com/product/fortimanager
+      aliases: []
+- key: fortinet/fortiproxy
+  path: products/fortinet/fortiproxy.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.fortinet.com/products/secure-web-gateway: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 6a28f7861b7dc114
+  files:
+    products/fortinet/fortiproxy.yaml: |
+      key: fortinet/fortiproxy
+      publisher: fortinet
+      name: FortiProxy
+      kind: device
+      source: https://www.fortinet.com/products/secure-web-gateway
+      versions:
+        source: https://docs.fortinet.com/product/fortiproxy
+      aliases: []
+- key: fortinet/fortisandbox
+  path: products/fortinet/fortisandbox.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.fortinet.com/products/sandbox/fortisandbox: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: df29b72dd4738891
+  files:
+    products/fortinet/fortisandbox.yaml: |
+      key: fortinet/fortisandbox
+      publisher: fortinet
+      name: FortiSandbox
+      kind: device
+      source: https://www.fortinet.com/products/sandbox/fortisandbox
+      versions:
+        source: https://docs.fortinet.com/product/fortisandbox
+      aliases: []
+- key: fortinet/fortiweb
+  path: products/fortinet/fortiweb.yaml
+  publisher: fortinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.fortinet.com/products/web-application-firewall/fortiweb: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: fa4dcf1ed07987ad
+  files:
+    products/fortinet/fortiweb.yaml: |
+      key: fortinet/fortiweb
+      publisher: fortinet
+      name: FortiWeb
+      kind: device
+      source: https://www.fortinet.com/products/web-application-firewall/fortiweb
+      versions:
+        source: https://docs.fortinet.com/product/fortiweb
+      aliases: []
+- key: fortinet/multiple-products
+  path: products/fortinet/multiple-products.yaml
+  publisher: fortinet
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 91b7517c7ca3bcdc
+  files:
+    products/fortinet/multiple-products.yaml: |
+      key: fortinet/multiple-products
+      publisher: fortinet
+      name: Multiple Products
+      kind: device
+      aliases: []
+- key: fortra/goanywhere-mft
+  path: products/fortra/goanywhere-mft.yaml
+  publisher: fortra
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.goanywhere.com/products/goanywhere-mft: refused'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c01e422e7a27c4c1
+  files:
+    products/fortra/goanywhere-mft.yaml: |
+      key: fortra/goanywhere-mft
+      publisher: fortra
+      name: GoAnywhere MFT
+      kind: software
+      source: https://www.goanywhere.com/products/goanywhere-mft
+      versions:
+        source: https://hstechdocs.helpsystems.com/releasenotes/Content/_ProductPages/GoAnywhere/GAMFT.htm
+      aliases: []
+    publishers/fortra.yaml: |
+      key: fortra
+      name: Fortra
+      source: https://www.fortra.com/
+      aliases: []
+- key: fxc/ae1021pe
+  path: products/fxc/ae1021pe.yaml
+  publisher: fxc
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''AE1021PE'' niet op https://www.fxc.jp/firmware/ (eindadres van https://www.fxc.jp/support/firmware/);
+    eindadres voorgedragen: https://www.fxc.jp/support/firmware/ -> https://www.fxc.jp/firmware/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: ac17036b08c8ce59
+  files:
+    products/fxc/ae1021pe.yaml: |
+      key: fxc/ae1021pe
+      publisher: fxc
+      name: AE1021PE
+      kind: device
+      source: https://www.fxc.jp/products/wireless/ae1021_ae1021pe/
+      versions:
+        source: https://www.fxc.jp/firmware/
+      aliases: []
+    publishers/fxc.yaml: |
+      key: fxc
+      name: FXC, Inc.
+      source: https://www.fxc.jp/
+      aliases: []
+- key: geosolutions/jai-ext
+  path: products/geosolutions/jai-ext.yaml
+  publisher: geosolutions
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: df39917b5e6417d4
+  files:
+    products/geosolutions/jai-ext.yaml: |
+      key: geosolutions/jai-ext
+      publisher: geosolutions
+      name: JAI-EXT
+      kind: software
+      source: https://geosolutionsgroup.com/blog/developers-corner-jai-ext-the-open-source-replacement-for-oracle-jai
+      aliases: []
+    publishers/geosolutions.yaml: |
+      key: geosolutions
+      name: GeoSolutions
+      source: https://geosolutionsgroup.com/blog/developers-corner-jai-ext-the-open-source-replacement-for-oracle-jai
+      aliases: []
+- key: geovision/multiple-devices
+  path: products/geovision/multiple-devices.yaml
+  publisher: geovision
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 7462accc83f905de
+  files:
+    products/geovision/multiple-devices.yaml: |
+      key: geovision/multiple-devices
+      publisher: geovision
+      name: Multiple Devices
+      kind: device
+      aliases: []
+    publishers/geovision.yaml: |
+      key: geovision
+      name: GeoVision Inc.
+      source: https://www.geovision.com.tw/
+      aliases: []
+- key: gitlab/community-and-enterprise-editions
+  path: products/gitlab/community-and-enterprise-editions.yaml
+  publisher: gitlab
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van GitLab'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 38a0a240f15663c1
+  files:
+    products/gitlab/community-and-enterprise-editions.yaml: |
+      key: gitlab/community-and-enterprise-editions
+      publisher: gitlab
+      name: GitLab
+      kind: software
+      source: https://about.gitlab.com/install/ce-or-ee/
+      versions:
+        source: https://docs.gitlab.com/releases/
+      aliases: []
+- key: gitlab/community-edition-and-enterprise-edition
+  path: products/gitlab/community-edition-and-enterprise-edition.yaml
+  publisher: gitlab
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van GitLab'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1ca490c28c0b463a
+  files:
+    products/gitlab/community-edition-and-enterprise-edition.yaml: |
+      key: gitlab/community-edition-and-enterprise-edition
+      publisher: gitlab
+      name: GitLab
+      kind: software
+      source: https://about.gitlab.com/install/ce-or-ee/
+      versions:
+        source: https://docs.gitlab.com/releases/
+      aliases: []
+- key: gitlab/gitlab-ce-ee
+  path: products/gitlab/gitlab-ce-ee.yaml
+  publisher: gitlab
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van GitLab'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: aabc0f42c502a84e
+  files:
+    products/gitlab/gitlab-ce-ee.yaml: |
+      key: gitlab/gitlab-ce-ee
+      publisher: gitlab
+      name: GitLab
+      kind: software
+      source: https://about.gitlab.com/install/ce-or-ee/
+      versions:
+        source: https://docs.gitlab.com/releases/
+      aliases: []
+- key: gladinet/centrestack
+  path: products/gladinet/centrestack.yaml
+  publisher: gladinet
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://access.centrestack.com/management1/releases/History.aspx: 503'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 507c86fc0ff1f2a4
+  files:
+    products/gladinet/centrestack.yaml: |
+      key: gladinet/centrestack
+      publisher: gladinet
+      name: CentreStack
+      kind: software
+      source: https://www.centrestack.com/
+      versions:
+        source: https://access.centrestack.com/management1/releases/History.aspx
+      aliases: []
+    publishers/gladinet.yaml: |
+      key: gladinet
+      name: Gladinet, Inc.
+      source: https://www.gladinet.com/
+      aliases: []
+- key: gladinet/triofox
+  path: products/gladinet/triofox.yaml
+  publisher: gladinet
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a9816cee08abb0b7
+  files:
+    products/gladinet/triofox.yaml: |
+      key: gladinet/triofox
+      publisher: gladinet
+      name: Triofox
+      kind: software
+      source: https://www.triofox.com/
+      aliases: []
+    publishers/gladinet.yaml: |
+      key: gladinet
+      name: Gladinet, Inc.
+      source: https://www.gladinet.com/
+      aliases: []
+- key: gogs/gogs
+  path: products/gogs/gogs.yaml
+  publisher: gogs
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 28ec78131fd84e6a
+  files:
+    products/gogs/gogs.yaml: |
+      key: gogs/gogs
+      publisher: gogs
+      name: Gogs
+      kind: software
+      source: https://gogs.io/
+      aliases: []
+    publishers/gogs.yaml: |
+      key: gogs
+      name: Gogs
+      source: https://gogs.io/
+      aliases: []
+- key: google/brotli
+  path: products/google/brotli.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9bd5e90fee398d2d
+  files:
+    products/google/brotli.yaml: |
+      key: google/brotli
+      publisher: google
+      name: Brotli
+      kind: software
+      aliases: []
+- key: google/chromium
+  path: products/google/chromium.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5
+  reason: 'TP3: The versions source text shows Chrome release labels and archive dates but no Chromium version number, so
+    no version can be quoted.; TP5: The source calls Chromium the open-source project behind Google Chrome, but no text states
+    that Google publishes Chromium''s updates.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 86e2a569eb62419a
+  files:
+    products/google/chromium.yaml: |
+      key: google/chromium
+      publisher: google
+      name: Chromium
+      kind: software
+      source: https://www.chromium.org/chromium-projects/
+      versions:
+        source: https://chromereleases.googleblog.com/
+      aliases: []
+- key: google/dawn
+  path: products/google/dawn.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'het groeperen twijfelt, en de vindronde gaf geen productpagina en versiepagina: Dawn is a WebGPU implementation
+    used in Chromium; unclear whether it is tracked as its own product.; versiepagina ontbreekt'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: bf647319a465af19
+  files:
+    products/google/dawn.yaml: |
+      key: google/dawn
+      publisher: google
+      name: Dawn
+      kind: software
+      source: https://dawn.googlesource.com/dawn
       aliases: []
 - key: google/framework
   path: products/google/framework.yaml
@@ -342,18 +2518,310 @@ parked:
       versions:
         source: https://source.android.com/docs/setup/reference/build-numbers
       aliases: []
+- key: google/skia
+  path: products/google/skia.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: The sources show Skia serves Google Chrome and is hosted on googlesource, but no text states that Google publishes
+    Skia''s updates.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 17c57a8b93bba567
+  files:
+    products/google/skia.yaml: |
+      key: google/skia
+      publisher: google
+      name: Skia
+      kind: software
+      source: https://skia.org/
+      versions:
+        source: https://skia.googlesource.com/skia/+/main/RELEASE_NOTES.md
+      aliases: []
+- key: google/v8
+  path: products/google/v8.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 8290d97cfd8346ff
+  files:
+    products/google/v8.yaml: |
+      key: google/v8
+      publisher: google
+      name: V8
+      kind: software
+      source: https://v8.dev/
+      aliases: []
+- key: google/webrtc
+  path: products/google/webrtc.yaml
+  publisher: google
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: f6b835773e58bc52
+  files:
+    products/google/webrtc.yaml: |
+      key: google/webrtc
+      publisher: google
+      name: WebRTC
+      kind: software
+      source: https://webrtc.org/
+      aliases: []
+- key: gpustack-ai/gpustack
+  path: products/gpustack-ai/gpustack.yaml
+  publisher: gpustack-ai
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 858d34fcb8b7a33a
+  files:
+    products/gpustack-ai/gpustack.yaml: |
+      key: gpustack-ai/gpustack
+      publisher: gpustack-ai
+      name: GPUStack
+      kind: software
+      source: https://gpustack.ai/
+      aliases: []
+    publishers/gpustack-ai.yaml: |
+      key: gpustack-ai
+      name: GPUStack.ai
+      source: https://gpustack.ai/
+      aliases: []
+- key: hewlett-packard-enterprise/hpe-oneview
+  path: products/hewlett-packard-enterprise/hpe-oneview.yaml
+  publisher: hewlett-packard-enterprise
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 27c425122a1f2ea0
+  files:
+    products/hewlett-packard-enterprise/hpe-oneview.yaml: |
+      key: hewlett-packard-enterprise/hpe-oneview
+      publisher: hewlett-packard-enterprise
+      name: HPE OneView
+      kind: software
+      source: https://www.hpe.com/nl/en/software/oneview.html
+      aliases: []
+    publishers/hewlett-packard-enterprise.yaml: |
+      key: hewlett-packard-enterprise
+      name: Hewlett Packard Enterprise
+      source: https://www.hpe.com/nl/en/software/oneview.html
+      aliases: []
+- key: hikvision/multiple-products
+  path: products/hikvision/multiple-products.yaml
+  publisher: hikvision
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 0e3c3e005322d76d
+  files:
+    products/hikvision/multiple-products.yaml: |
+      key: hikvision/multiple-products
+      publisher: hikvision
+      name: Multiple Products
+      kind: device
+      aliases: []
+- key: ibm/ibm-aspera-faspex
+  path: products/ibm/ibm-aspera-faspex.yaml
+  publisher: ibm
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9bb7db64f96877dd
+  files:
+    products/ibm/ibm-aspera-faspex.yaml: |
+      key: ibm/ibm-aspera-faspex
+      publisher: ibm
+      name: IBM Aspera Faspex
+      kind: software
+      aliases: []
+- key: imagemagick-studio/imagemagick
+  path: products/imagemagick-studio/imagemagick.yaml
+  publisher: imagemagick-studio
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''ImageMagick Studio LLC'' op geen van: https://imagemagick.org/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 054be49802ce0862
+  files:
+    products/imagemagick-studio/imagemagick.yaml: |
+      key: imagemagick-studio/imagemagick
+      publisher: imagemagick-studio
+      name: ImageMagick
+      kind: software
+      source: https://imagemagick.org/
+      versions:
+        source: https://imagemagick.org/download/
+      aliases: []
+    publishers/imagemagick-studio.yaml: |
+      key: imagemagick-studio
+      name: ImageMagick Studio LLC
+      source: https://imagemagick.org/
+      aliases: []
+- key: internet-systems-consortium/bind-9
+  path: products/internet-systems-consortium/bind-9.yaml
+  publisher: internet-systems-consortium
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Internet Systems Consortium, Inc.'' op geen van: https://www.isc.org/bind/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9d8d00fc68ca1a19
+  files:
+    products/internet-systems-consortium/bind-9.yaml: |
+      key: internet-systems-consortium/bind-9
+      publisher: internet-systems-consortium
+      name: BIND 9
+      kind: software
+      source: https://www.isc.org/bind/
+      versions:
+        source: https://www.isc.org/bind/
+      aliases: []
+    publishers/internet-systems-consortium.yaml: |
+      key: internet-systems-consortium
+      name: Internet Systems Consortium, Inc.
+      source: https://www.isc.org/bind/
+      aliases: []
+- key: ivanti/ivanti-endpoint-manager-mobile-epmm
+  path: products/ivanti/ivanti-endpoint-manager-mobile-epmm.yaml
+  publisher: ivanti
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Ivanti Endpoint Manager Mobile (EPMM)'' niet op https://www.ivanti.com/products/endpoint-manager-mobile'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 27b555bdd620f26c
+  files:
+    products/ivanti/ivanti-endpoint-manager-mobile-epmm.yaml: |
+      key: ivanti/ivanti-endpoint-manager-mobile-epmm
+      publisher: ivanti
+      name: Ivanti Endpoint Manager Mobile (EPMM)
+      kind: software
+      source: https://www.ivanti.com/products/endpoint-manager-mobile
+      versions:
+        source: https://help.ivanti.com/mi/help/en_us/core/12.x/rn/CoreConnectorReleaseNotes/IvantiEPMM_rn_12.x.pdf
+      aliases: []
+    publishers/ivanti.yaml: |
+      key: ivanti
+      name: Ivanti
+      source: https://www.ivanti.com/products
+      aliases: []
+- key: ivanti/ivanti-neurons-for-zero-trust-access
+  path: products/ivanti/ivanti-neurons-for-zero-trust-access.yaml
+  publisher: ivanti
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Ivanti Neurons for Zero Trust Access'' niet op https://www.ivanti.com/en-au/products/zero-trust-access
+    (eindadres van https://www.ivanti.com/en-au/products/ivanti-neurons-zero-trust-access); eindadres voorgedragen: https://www.ivanti.com/en-au/products/ivanti-neurons-zero-trust-access
+    -> https://www.ivanti.com/en-au/products/zero-trust-access'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 64e670818e2ae9e8
+  files:
+    products/ivanti/ivanti-neurons-for-zero-trust-access.yaml: |
+      key: ivanti/ivanti-neurons-for-zero-trust-access
+      publisher: ivanti
+      name: Ivanti Neurons for Zero Trust Access
+      kind: software
+      source: https://www.ivanti.com/en-au/products/zero-trust-access
+      versions:
+        source: https://docs.ivanti.com/ps/help/en_us/nsa/22x/nsa-zta/rn
+      aliases: []
+    publishers/ivanti.yaml: |
+      key: ivanti
+      name: Ivanti
+      source: https://www.ivanti.com/products
+      aliases: []
+- key: ivanti/ivanti-virtual-traffic-manager-vtm
+  path: products/ivanti/ivanti-virtual-traffic-manager-vtm.yaml
+  publisher: ivanti
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Ivanti Virtual Traffic Manager (vTM)'' niet op https://www.ivanti.com/products/virtual-application-delivery-controller'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 358152136f0cad67
+  files:
+    products/ivanti/ivanti-virtual-traffic-manager-vtm.yaml: |
+      key: ivanti/ivanti-virtual-traffic-manager-vtm
+      publisher: ivanti
+      name: Ivanti Virtual Traffic Manager (vTM)
+      kind: software
+      source: https://www.ivanti.com/products/virtual-application-delivery-controller
+      versions:
+        source: https://help.ivanti.com/ps/help/en_US/VTM/22.x/ps-vtm-relnotes.pdf
+      aliases: []
+    publishers/ivanti.yaml: |
+      key: ivanti
+      name: Ivanti
+      source: https://www.ivanti.com/products
+      aliases: []
 - key: jakub-vrana/adminer
   path: products/jakub-vrana/adminer.yaml
   publisher: jakub-vrana
   waits_for: better-proposal
   owner: submitter
   rule: TP5
-  reason: 'TP5: The page shows the name Jakub Vrána at the bottom, but does not explicitly state that he publishes the updates;
-    the context only implies it.'
-  since: '2026-11-19'
-  checked: '2026-11-19'
-  lapses: '2027-02-17'
+  reason: 'TP5: The page names Jakub Vrána at the bottom and as translator, but does not explicitly state that he publishes
+    the updates.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
   pr: null
+  submitter: kev-ronde-1
+  known: true
   fingerprint: b82def2a3b4e0c86
   files:
     products/jakub-vrana/adminer.yaml: |
@@ -369,6 +2837,2618 @@ parked:
       key: jakub-vrana
       name: Jakub Vrána
       source: https://www.adminer.org/
+      aliases: []
+- key: jenkins-project/jenkins-cli
+  path: products/jenkins-project/jenkins-cli.yaml
+  publisher: jenkins-project
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen): editie of reeks van jenkins-project/jenkins
+    (rij kev-groep-06.csv:20)'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 443c37b0e2f71cca
+  files:
+    products/jenkins-project/jenkins-cli.yaml: |
+      key: jenkins-project/jenkins-cli
+      publisher: jenkins-project
+      name: Jenkins CLI
+      kind: software
+      source: https://www.jenkins.io/doc/book/managing/cli/
+      versions:
+        source: https://www.jenkins.io/changelog-stable/
+      aliases: []
+    publishers/jenkins-project.yaml: |
+      key: jenkins-project
+      name: Jenkins project
+      source: https://www.jenkins.io/
+      aliases: []
+- key: juniper-networks/junos-os
+  path: products/juniper-networks/junos-os.yaml
+  publisher: juniper-networks
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf:
+    disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c5c387075d5c6374
+  files:
+    products/juniper-networks/junos-os.yaml: |
+      key: juniper-networks/junos-os
+      publisher: juniper-networks
+      name: Junos OS
+      kind: operating-system
+      source: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf
+      versions:
+        source: https://www.juniper.net/documentation/us/en/software/junos/release-notes/25.4/junos-release-notes-25.4r1/junos-release-notes-25.4r1.pdf
+      aliases: []
+    publishers/juniper-networks.yaml: |
+      key: juniper-networks
+      name: Juniper Networks
+      source: https://www.juniper.net/support/eol/screenos_archive.html
+      aliases: []
+- key: juniper-networks/screenos
+  path: products/juniper-networks/screenos.yaml
+  publisher: juniper-networks
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.juniper.net/support/eol/screenos_archive.html: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 76abe0c87101885b
+  files:
+    products/juniper-networks/screenos.yaml: |
+      key: juniper-networks/screenos
+      publisher: juniper-networks
+      name: ScreenOS
+      kind: operating-system
+      source: https://www.juniper.net/support/eol/screenos_archive.html
+      versions:
+        source: https://www.juniper.net/support/eol/screenos_archive.html
+      aliases: []
+    publishers/juniper-networks.yaml: |
+      key: juniper-networks
+      name: Juniper Networks
+      source: https://www.juniper.net/support/eol/screenos_archive.html
+      aliases: []
+- key: justice-av-solutions/viewer-8
+  path: products/justice-av-solutions/viewer-8.yaml
+  publisher: justice-av-solutions
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'geen versions.source: het groeperen: editie of reeks van justice-av-solutions/viewer, dat niet in TAX staat en
+    niet is voorgedragen'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 01ed8166bfe54bb8
+  files:
+    products/justice-av-solutions/viewer-8.yaml: |
+      key: justice-av-solutions/viewer-8
+      publisher: justice-av-solutions
+      name: Viewer 8
+      kind: software
+      source: https://www.javs.com/?p=48199
+      aliases: []
+    publishers/justice-av-solutions.yaml: |
+      key: justice-av-solutions
+      name: Justice AV Solutions
+      source: https://www.javs.com/faqs/
+      aliases: []
+- key: kestra/kestra-open-source-edition
+  path: products/kestra/kestra-open-source-edition.yaml
+  publisher: kestra
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://kestra.io/docs/changelog/v1.2.11: 404'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 2509ec24288d4961
+  files:
+    products/kestra/kestra-open-source-edition.yaml: |
+      key: kestra/kestra-open-source-edition
+      publisher: kestra
+      name: Kestra Open-Source Edition
+      kind: software
+      source: https://kestra.io/docs/changelog/v1.2.11
+      versions:
+        source: https://kestra.io/docs/releases
+      aliases: []
+    publishers/kestra.yaml: |
+      key: kestra
+      name: Kestra
+      source: https://kestra.io/blogs/the-story-behind-our-series-a
+      aliases: []
+- key: kingsoft-office-software/wps-office
+  path: products/kingsoft-office-software/wps-office.yaml
+  publisher: kingsoft-office-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Kingsoft Office Software'' op geen van: https://www.wps.com/whatsnew/pc/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a68cf0acbecac891
+  files:
+    products/kingsoft-office-software/wps-office.yaml: |
+      key: kingsoft-office-software/wps-office
+      publisher: kingsoft-office-software
+      name: WPS Office
+      kind: software
+      source: https://www.wps.com/whatsnew/pc/
+      versions:
+        source: https://www.wps.com/whatsnew/pc/
+      aliases: []
+    publishers/kingsoft-office-software.yaml: |
+      key: kingsoft-office-software
+      name: Kingsoft Office Software
+      source: https://www.wps.com/whatsnew/pc/
+      aliases: []
+- key: knx-association/knx-protocol-connection-authorization-option-1
+  path: products/knx-association/knx-protocol-connection-authorization-option-1.yaml
+  publisher: knx-association
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 71eb4551f495bf42
+  files:
+    products/knx-association/knx-protocol-connection-authorization-option-1.yaml: |
+      key: knx-association/knx-protocol-connection-authorization-option-1
+      publisher: knx-association
+      name: KNX Protocol Connection Authorization Option 1
+      aliases: []
+    publishers/knx-association.yaml: |
+      key: knx-association
+      name: KNX Association
+      source: https://www.knx.org/news/knx-association-overview-our-legacy-mission-and-objectives
+      aliases: []
+- key: langflow/langflow
+  path: products/langflow/langflow.yaml
+  publisher: langflow
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: The sources show Langflow releases and its team, but no text clearly names the entity that publishes the updates
+    under the name Langflow as a publisher.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: b886b92a081dbd5c
+  files:
+    products/langflow/langflow.yaml: |
+      key: langflow/langflow
+      publisher: langflow
+      name: Langflow
+      kind: software
+      source: https://www.langflow.org/
+      versions:
+        source: https://docs.langflow.org/release-notes
+      aliases: []
+    publishers/langflow.yaml: |
+      key: langflow
+      name: Langflow
+      source: https://www.langflow.org/
+      aliases: []
+- key: lantronix/eds5000-series
+  path: products/lantronix/eds5000-series.yaml
+  publisher: lantronix
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'reeks volgens het groeperen: EDS5000 Series names the range of EDS5000 models, a family rather than a single product
+    key.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c3c6cd2462ab6326
+  files:
+    products/lantronix/eds5000-series.yaml: |
+      key: lantronix/eds5000-series
+      publisher: lantronix
+      name: EDS5000 Series
+      kind: device
+      source: https://www.lantronix.com/products/eds5000-series/
+      versions:
+        source: https://ts.lantronix.com/ftp/EDS5000/2.1.0.0R3/
+      aliases: []
+    publishers/lantronix.yaml: |
+      key: lantronix
+      name: Lantronix
+      source: https://www.lantronix.com/technical-support/security-matters/vulnerability-library/cve-2025-67038-eds-5000-eds-3000/
+      aliases: []
+- key: laravel/livewire
+  path: products/laravel/livewire.yaml
+  publisher: laravel
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1f4595e696aa1dc4
+  files:
+    products/laravel/livewire.yaml: |
+      key: laravel/livewire
+      publisher: laravel
+      name: Livewire
+      kind: software
+      source: https://livewire.laravel.com/
+      aliases: []
+- key: libraesva/libraesva-email-security-gateway
+  path: products/libraesva/libraesva-email-security-gateway.yaml
+  publisher: libraesva
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Libraesva Email Security Gateway'' niet op https://www.libraesva.com/email-security'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 60403a3fa2301ab3
+  files:
+    products/libraesva/libraesva-email-security-gateway.yaml: |
+      key: libraesva/libraesva-email-security-gateway
+      publisher: libraesva
+      name: Libraesva Email Security Gateway
+      kind: software
+      source: https://www.libraesva.com/email-security
+      versions:
+        source: https://docs.libraesva.com/category/libraesva-esg/
+      aliases: []
+    publishers/libraesva.yaml: |
+      key: libraesva
+      name: Libraesva
+      source: https://www.libraesva.com/about-us
+      aliases: []
+- key: looking-glass/multi-router-looking-glass-mrlg
+  path: products/looking-glass/multi-router-looking-glass-mrlg.yaml
+  publisher: looking-glass
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 930b4164f0902e68
+  files:
+    products/looking-glass/multi-router-looking-glass-mrlg.yaml: |
+      key: looking-glass/multi-router-looking-glass-mrlg
+      publisher: looking-glass
+      name: Multi-Router Looking Glass (MRLG)
+      aliases: []
+- key: marcus-glocker/nostromo
+  path: products/marcus-glocker/nostromo.yaml
+  publisher: marcus-glocker
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Marcus Glocker'' op geen van: https://www.nazgul.ch/dev_nostromo.html'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: b16805fba0208830
+  files:
+    products/marcus-glocker/nostromo.yaml: |
+      key: marcus-glocker/nostromo
+      publisher: marcus-glocker
+      name: nostromo
+      kind: software
+      source: https://www.nazgul.ch/dev_nostromo.html
+      versions:
+        source: https://www.nazgul.ch/dev_nostromo.html
+      aliases: []
+    publishers/marcus-glocker.yaml: |
+      key: marcus-glocker
+      name: Marcus Glocker
+      source: https://www.nazgul.ch/dev_nostromo.html
+      aliases: []
+- key: massimo-melina/hfs-http-file-server
+  path: products/massimo-melina/hfs-http-file-server.yaml
+  publisher: massimo-melina
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9a0136f8475b0321
+  files:
+    products/massimo-melina/hfs-http-file-server.yaml: |
+      key: massimo-melina/hfs-http-file-server
+      publisher: massimo-melina
+      name: HFS ~ HTTP File Server
+      kind: software
+      source: https://www.rejetto.com/hfs/
+      aliases: []
+    publishers/massimo-melina.yaml: |
+      key: massimo-melina
+      name: Massimo Melina
+      source: https://www.rejetto.com/hfs/
+      aliases: []
+- key: meta-platforms/react-server-components
+  path: products/meta-platforms/react-server-components.yaml
+  publisher: meta-platforms
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van React'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 10332ff4ed89873a
+  files:
+    products/meta-platforms/react-server-components.yaml: |
+      key: meta-platforms/react-server-components
+      publisher: meta-platforms
+      name: React Server Components
+      kind: software
+      source: https://react.dev/reference/rsc/server-components
+      versions:
+        source: https://react.dev/versions
+      aliases: []
+    publishers/meta-platforms.yaml: |
+      key: meta-platforms
+      name: Meta Platforms, Inc
+      source: https://react.dev/reference/rsc/server-components
+      aliases: []
+- key: microsoft/active-directory-federation-services
+  path: products/microsoft/active-directory-federation-services.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows Server'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 81eb1974ed7e706b
+  files:
+    products/microsoft/active-directory-federation-services.yaml: |
+      key: microsoft/active-directory-federation-services
+      publisher: microsoft
+      name: Windows Server
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows-server
+      versions:
+        source: https://learn.microsoft.com/en-us/windows-server/get-started/windows-server-release-info
+      aliases: []
+- key: microsoft/defender
+  path: products/microsoft/defender.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 3a127bff48c00844
+  files:
+    products/microsoft/defender.yaml: |
+      key: microsoft/defender
+      publisher: microsoft
+      name: Defender
+      aliases: []
+- key: microsoft/directx
+  path: products/microsoft/directx.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 197e81d535e28f97
+  files:
+    products/microsoft/directx.yaml: |
+      key: microsoft/directx
+      publisher: microsoft
+      name: Windows
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows
+      versions:
+        source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+      aliases: []
+- key: microsoft/dwm-core-library
+  path: products/microsoft/dwm-core-library.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: dfb11dd89115fe64
+  files:
+    products/microsoft/dwm-core-library.yaml: |
+      key: microsoft/dwm-core-library
+      publisher: microsoft
+      name: Windows
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows
+      versions:
+        source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+      aliases: []
+- key: microsoft/internet-key-exchange-ike-service-extensions
+  path: products/microsoft/internet-key-exchange-ike-service-extensions.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 53e86cf5852fd762
+  files:
+    products/microsoft/internet-key-exchange-ike-service-extensions.yaml: |
+      key: microsoft/internet-key-exchange-ike-service-extensions
+      publisher: microsoft
+      name: Windows
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows
+      versions:
+        source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+      aliases: []
+- key: microsoft/microsoft
+  path: products/microsoft/microsoft.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: fb4ae9e4ff9d75bd
+  files:
+    products/microsoft/microsoft.yaml: |
+      key: microsoft/microsoft
+      publisher: microsoft
+      name: Microsoft
+      aliases: []
+- key: microsoft/microsoft-outlook
+  path: products/microsoft/microsoft-outlook.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The versions source lists Current Channel builds of the Microsoft 365 Apps suite, which include Outlook fixes.
+    It is unclear whether Outlook has its own update stream or is part of the suite''s.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 96cb0c53b8585597
+  files:
+    products/microsoft/microsoft-outlook.yaml: |
+      key: microsoft/microsoft-outlook
+      publisher: microsoft
+      name: Microsoft Outlook
+      kind: software
+      source: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
+      versions:
+        source: https://learn.microsoft.com/en-us/officeupdates/current-channel
+      aliases:
+      - microsoft/office-outlook
+- key: microsoft/microsoft-publisher
+  path: products/microsoft/microsoft-publisher.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: c61fc1229d9c5eaa
+  files:
+    products/microsoft/microsoft-publisher.yaml: |
+      key: microsoft/microsoft-publisher
+      publisher: microsoft
+      name: Microsoft Publisher
+      kind: software
+      source: https://support.microsoft.com/en-us/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7
+      aliases: []
+- key: microsoft/office
+  path: products/microsoft/office.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 95fefa94df8b69e6
+  files:
+    products/microsoft/office.yaml: |
+      key: microsoft/office
+      publisher: microsoft
+      name: Office
+      aliases: []
+- key: microsoft/partner-center
+  path: products/microsoft/partner-center.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: b746ab65428404c0
+  files:
+    products/microsoft/partner-center.yaml: |
+      key: microsoft/partner-center
+      publisher: microsoft
+      name: Partner Center
+      kind: software
+      source: https://learn.microsoft.com/en-us/partner-center/
+      aliases: []
+- key: microsoft/power-pages
+  path: products/microsoft/power-pages.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 17e787542d79f440
+  files:
+    products/microsoft/power-pages.yaml: |
+      key: microsoft/power-pages
+      publisher: microsoft
+      name: Power Pages
+      kind: software
+      source: https://www.microsoft.com/en-us/power-platform/products/power-pages
+      aliases: []
+- key: microsoft/smartscreen-prompt
+  path: products/microsoft/smartscreen-prompt.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9336b33cda64679f
+  files:
+    products/microsoft/smartscreen-prompt.yaml: |
+      key: microsoft/smartscreen-prompt
+      publisher: microsoft
+      name: Windows
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows
+      versions:
+        source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+      aliases: []
+- key: microsoft/streaming-service
+  path: products/microsoft/streaming-service.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 776d203eae2ab131
+  files:
+    products/microsoft/streaming-service.yaml: |
+      key: microsoft/streaming-service
+      publisher: microsoft
+      name: Windows
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows
+      versions:
+        source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+      aliases: []
+- key: microsoft/visual-basic-for-applications
+  path: products/microsoft/visual-basic-for-applications.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: fb55f0e843091c71
+  files:
+    products/microsoft/visual-basic-for-applications.yaml: |
+      key: microsoft/visual-basic-for-applications
+      publisher: microsoft
+      name: Visual Basic for Applications
+      kind: software
+      source: https://learn.microsoft.com/en-us/office/vba/api/overview/
+      aliases: []
+- key: microsoft/windows-ancillary-function-driver-for-winsock
+  path: products/microsoft/windows-ancillary-function-driver-for-winsock.yaml
+  publisher: microsoft
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van Windows'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 4d672c491b4fdf08
+  files:
+    products/microsoft/windows-ancillary-function-driver-for-winsock.yaml: |
+      key: microsoft/windows-ancillary-function-driver-for-winsock
+      publisher: microsoft
+      name: Windows
+      kind: operating-system
+      source: https://www.microsoft.com/en-us/windows
+      versions:
+        source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+      aliases: []
+- key: mirasvit/full-page-cache-warmer-for-magento-2
+  path: products/mirasvit/full-page-cache-warmer-for-magento-2.yaml
+  publisher: mirasvit
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: f082c47833763cb2
+  files:
+    products/mirasvit/full-page-cache-warmer-for-magento-2.yaml: |
+      key: mirasvit/full-page-cache-warmer-for-magento-2
+      publisher: mirasvit
+      name: Full Page Cache Warmer for Magento 2
+      kind: software
+      source: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
+      aliases: []
+    publishers/mirasvit.yaml: |
+      key: mirasvit
+      name: Mirasvit
+      source: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
+      aliases: []
+- key: mitel-networks/micollab
+  path: products/mitel-networks/micollab.yaml
+  publisher: mitel-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: b9f64288a8ec0bc5
+  files:
+    products/mitel-networks/micollab.yaml: |
+      key: mitel-networks/micollab
+      publisher: mitel-networks
+      name: MiCollab
+      kind: software
+      source: https://www.mitel.com/products/applications/collaboration/micollab
+      aliases: []
+    publishers/mitel-networks.yaml: |
+      key: mitel-networks
+      name: Mitel Networks Corp.
+      source: https://www.mitel.com/products/applications/collaboration/micollab
+      aliases: []
+- key: mitel-networks/sip-phones
+  path: products/mitel-networks/sip-phones.yaml
+  publisher: mitel-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 49094664464b7f0c
+  files:
+    products/mitel-networks/sip-phones.yaml: |
+      key: mitel-networks/sip-phones
+      publisher: mitel-networks
+      name: SIP Phones
+      aliases: []
+    publishers/mitel-networks.yaml: |
+      key: mitel-networks
+      name: Mitel Networks Corp.
+      source: https://www.mitel.com/products/applications/collaboration/micollab
+      aliases: []
+- key: mlflow-project/mlflow
+  path: products/mlflow-project/mlflow.yaml
+  publisher: mlflow-project
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''MLflow Project'' op geen van: https://mlflow.org/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 85052582e326789f
+  files:
+    products/mlflow-project/mlflow.yaml: |
+      key: mlflow-project/mlflow
+      publisher: mlflow-project
+      name: MLflow
+      kind: software
+      source: https://mlflow.org/
+      versions:
+        source: https://mlflow.org/releases
+      aliases: []
+    publishers/mlflow-project.yaml: |
+      key: mlflow-project
+      name: MLflow Project
+      source: https://mlflow.org/
+      aliases: []
+- key: mongodb/mongodb-and-mongodb-server
+  path: products/mongodb/mongodb-and-mongodb-server.yaml
+  publisher: mongodb
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van MongoDB'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 23c07860b5e8d7b0
+  files:
+    products/mongodb/mongodb-and-mongodb-server.yaml: |
+      key: mongodb/mongodb-and-mongodb-server
+      publisher: mongodb
+      name: MongoDB Community Server
+      kind: software
+      source: https://www.mongodb.com/try/download/community
+      versions:
+        source: https://www.mongodb.com/docs/manual/release-notes/
+      aliases: []
+- key: motex/lanscope-endpoint-manager
+  path: products/motex/lanscope-endpoint-manager.yaml
+  publisher: motex
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a516d6d9da080e86
+  files:
+    products/motex/lanscope-endpoint-manager.yaml: |
+      key: motex/lanscope-endpoint-manager
+      publisher: motex
+      name: LANSCOPE Endpoint Manager
+      aliases: []
+- key: mozilla/multiple-products
+  path: products/mozilla/multiple-products.yaml
+  publisher: mozilla
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 505a2a7d051fd818
+  files:
+    products/mozilla/multiple-products.yaml: |
+      key: mozilla/multiple-products
+      publisher: mozilla
+      name: Multiple Products
+      aliases: []
+- key: netscaler/netscaler
+  path: products/netscaler/netscaler.yaml
+  publisher: netscaler
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: de2a4fdcec5d79b7
+  files:
+    products/netscaler/netscaler.yaml: |
+      key: netscaler/netscaler
+      publisher: netscaler
+      name: NetScaler
+      kind: device
+      aliases: []
+    publishers/netscaler.yaml: |
+      key: netscaler
+      name: NetScaler
+      source: https://www.netscaler.com/
+      aliases: []
+- key: netscaler/netscaler-adc
+  path: products/netscaler/netscaler-adc.yaml
+  publisher: netscaler
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://docs.netscaler.com/en-us/citrix-adc/current-release.html: unreadable'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 3251904714278a4e
+  files:
+    products/netscaler/netscaler-adc.yaml: |
+      key: netscaler/netscaler-adc
+      publisher: netscaler
+      name: NetScaler ADC
+      kind: device
+      source: https://docs.netscaler.com/en-us/citrix-adc/current-release.html
+      versions:
+        source: https://docs.netscaler.com/en-us/citrix-adc/current-release/citrix-adc-release-notes.html
+      aliases: []
+    publishers/netscaler.yaml: |
+      key: netscaler
+      name: NetScaler
+      source: https://www.netscaler.com/
+      aliases: []
+- key: netscaler/netscaler-gateway
+  path: products/netscaler/netscaler-gateway.yaml
+  publisher: netscaler
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''NetScaler Gateway'' niet op https://docs.netscaler.com/us/en/citrix-adc/current-release/citrix-adc-release-notes.html
+    (eindadres van https://docs.netscaler.com/en-us/citrix-adc/current-release/citrix-adc-release-notes.html); eindadres voorgedragen:
+    https://docs.netscaler.com/en-us/netscaler-gateway/current-release.html -> https://docs.netscaler.com/us/en/netscaler-gateway/current-release.html;
+    https://docs.netscaler.com/en-us/citrix-adc/current-release/citrix-adc-release-notes.html -> https://docs.netscaler.com/us/en/citrix-adc/current-release/citrix-adc-release-notes.html'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: f307014e0b135007
+  files:
+    products/netscaler/netscaler-gateway.yaml: |
+      key: netscaler/netscaler-gateway
+      publisher: netscaler
+      name: NetScaler Gateway
+      kind: device
+      source: https://docs.netscaler.com/us/en/netscaler-gateway/current-release.html
+      versions:
+        source: https://docs.netscaler.com/us/en/citrix-adc/current-release/citrix-adc-release-notes.html
+      aliases: []
+    publishers/netscaler.yaml: |
+      key: netscaler
+      name: NetScaler
+      source: https://www.netscaler.com/
+      aliases: []
+- key: nextgen-healthcare/mirth-connect
+  path: products/nextgen-healthcare/mirth-connect.yaml
+  publisher: nextgen-healthcare
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9f2e7bf8e270d9ae
+  files:
+    products/nextgen-healthcare/mirth-connect.yaml: |
+      key: nextgen-healthcare/mirth-connect
+      publisher: nextgen-healthcare
+      name: Mirth® Connect
+      kind: software
+      source: https://www.nextgen.com/solutions/interoperability/mirth-integration-engine
+      aliases: []
+    publishers/nextgen-healthcare.yaml: |
+      key: nextgen-healthcare
+      name: NextGen Healthcare
+      source: https://www.nextgen.com/solutions/interoperability/mirth-integration-engine
+      aliases: []
+- key: nice-north-america/emerge-e3-series
+  path: products/nice-north-america/emerge-e3-series.yaml
+  publisher: nice-north-america
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 4ac6dcd99a7c1b3a
+  files:
+    products/nice-north-america/emerge-e3-series.yaml: |
+      key: nice-north-america/emerge-e3-series
+      publisher: nice-north-america
+      name: eMerge e3-Series
+      kind: device
+      source: https://linear-solutions.com/browser-based-access-control/
+      aliases: []
+    publishers/nice-north-america.yaml: |
+      key: nice-north-america
+      name: Nice North America LLC
+      source: https://linear-solutions.com/browser-based-access-control/
+      aliases: []
+- key: nrwl/nx-console
+  path: products/nrwl/nx-console.yaml
+  publisher: nrwl
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 75e22eeace6d05d5
+  files:
+    products/nrwl/nx-console.yaml: |
+      key: nrwl/nx-console
+      publisher: nrwl
+      name: Nx Console
+      kind: software
+      source: https://nx.dev/docs/getting-started/editor-setup
+      aliases: []
+    publishers/nrwl.yaml: |
+      key: nrwl
+      name: Nrwl
+      source: https://nx.dev/docs/getting-started/editor-setup
+      aliases: []
+- key: nuuo/nvrmini-2
+  path: products/nuuo/nvrmini-2.yaml
+  publisher: nuuo
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 9cf1f0264c5194ad
+  files:
+    products/nuuo/nvrmini-2.yaml: |
+      key: nuuo/nvrmini-2
+      publisher: nuuo
+      name: NVRmini 2
+      kind: device
+      source: https://www.nuuo.com/support-discontinued-product/
+      aliases: []
+    publishers/nuuo.yaml: |
+      key: nuuo
+      name: NUUO Inc.
+      source: https://www.nuuo.com/
+      aliases: []
+- key: nuuo/nvrmini-devices
+  path: products/nuuo/nvrmini-devices.yaml
+  publisher: nuuo
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 978ae5def43fccbc
+  files:
+    products/nuuo/nvrmini-devices.yaml: |
+      key: nuuo/nvrmini-devices
+      publisher: nuuo
+      name: NVRmini Devices
+      kind: device
+      aliases: []
+    publishers/nuuo.yaml: |
+      key: nuuo
+      name: NUUO Inc.
+      source: https://www.nuuo.com/
+      aliases: []
+- key: omnissa/workspace-one-uem
+  path: products/omnissa/workspace-one-uem.yaml
+  publisher: omnissa
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: e3256cc82e328525
+  files:
+    products/omnissa/workspace-one-uem.yaml: |
+      key: omnissa/workspace-one-uem
+      publisher: omnissa
+      name: Workspace ONE UEM
+      kind: software
+      source: https://www.omnissa.com/products/workspace-one-unified-endpoint-management/
+      aliases: []
+- key: open-source-geospatial-foundation/geoserver
+  path: products/open-source-geospatial-foundation/geoserver.yaml
+  publisher: open-source-geospatial-foundation
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: The page only shows a copyright footer for Open Source Geospatial Foundation; it does not clearly state that
+    OSGeo publishes the updates rather than the GeoServer community.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: f6a3abae00b5805d
+  files:
+    products/open-source-geospatial-foundation/geoserver.yaml: |
+      key: open-source-geospatial-foundation/geoserver
+      publisher: open-source-geospatial-foundation
+      name: GeoServer
+      kind: software
+      source: https://geoserver.org/download/
+      versions:
+        source: https://geoserver.org/download/
+      aliases: []
+    publishers/open-source-geospatial-foundation.yaml: |
+      key: open-source-geospatial-foundation
+      name: Open Source Geospatial Foundation
+      source: https://geoserver.org/download/
+      aliases: []
+- key: openwave-messaging/webtop-media-transcoder
+  path: products/openwave-messaging/webtop-media-transcoder.yaml
+  publisher: openwave-messaging
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 4b89726443b9a709
+  files:
+    products/openwave-messaging/webtop-media-transcoder.yaml: |
+      key: openwave-messaging/webtop-media-transcoder
+      publisher: openwave-messaging
+      name: Webtop Media Transcoder
+      aliases: []
+- key: oracle/fusion-middleware
+  path: products/oracle/fusion-middleware.yaml
+  publisher: oracle
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 60962ba295e426d0
+  files:
+    products/oracle/fusion-middleware.yaml: |
+      key: oracle/fusion-middleware
+      publisher: oracle
+      name: Fusion Middleware
+      kind: software
+      aliases: []
+- key: oracle/oracle-adf-faces-components
+  path: products/oracle/oracle-adf-faces-components.yaml
+  publisher: oracle
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: The source lists versions only next to the Oracle ADF Faces Components Demo WAR file. The components themselves
+    appear to ship inside the ADF Runtime / FMW Infrastructure, so it is unclear whether they have an update stream of their
+    own.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: bf83fe9a1177b4f6
+  files:
+    products/oracle/oracle-adf-faces-components.yaml: |
+      key: oracle/oracle-adf-faces-components
+      publisher: oracle
+      name: Oracle ADF Faces Components
+      kind: software
+      source: https://www.oracle.com/tools/downloads/application-development-framework-downloads.html
+      versions:
+        source: https://www.oracle.com/tools/downloads/application-development-framework-downloads.html
+      aliases:
+      - oracle/adf-faces
+- key: oracle/oracle-e-business-suite
+  path: products/oracle/oracle-e-business-suite.yaml
+  publisher: oracle
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: Oracle E-Business Suite looks like its own product, but the versions source shows no release number of the
+    suite itself. The ''April 2025 Update'' belongs to the Enterprise Command Centers component.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: af553cee4cf575ee
+  files:
+    products/oracle/oracle-e-business-suite.yaml: |
+      key: oracle/oracle-e-business-suite
+      publisher: oracle
+      name: Oracle E-Business Suite
+      kind: software
+      source: https://www.oracle.com/applications/ebusiness/
+      versions:
+        source: https://www.oracle.com/applications/ebusiness/
+      aliases:
+      - oracle/e-business-suite
+- key: owncloud/owncloud-core
+  path: products/owncloud/owncloud-core.yaml
+  publisher: owncloud
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5, TK2, TE1
+  reason: 'TP5: The changelog on owncloud.com publishes the releases, but no source names ownCloud GmbH as the publisher;
+    the homepage mentions Kiteworks operating under the ownCloud brand.; TK2: The product name ''ownCloud Core'' appears in
+    the changelog, but the publisher name ''ownCloud GmbH'' does not appear in any source text.; TE1: The product name and
+    versions are confirmed, but the publisher name ''ownCloud GmbH'' is not found in its source text, which shows only ''ownCloud''.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: ec0a3412d43bc1a0
+  files:
+    products/owncloud/owncloud-core.yaml: |
+      key: owncloud/owncloud-core
+      publisher: owncloud
+      name: ownCloud Core
+      kind: software
+      source: https://owncloud.com/changelog/server/
+      versions:
+        source: https://owncloud.com/changelog/server/
+      aliases: []
+    publishers/owncloud.yaml: |
+      key: owncloud
+      name: ownCloud GmbH
+      source: https://owncloud.com/
+      aliases: []
+- key: owncloud/owncloud-graphapi
+  path: products/owncloud/owncloud-graphapi.yaml
+  publisher: owncloud
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 3e9b1bb3732df46b
+  files:
+    products/owncloud/owncloud-graphapi.yaml: |
+      key: owncloud/owncloud-graphapi
+      publisher: owncloud
+      name: ownCloud graphapi
+      kind: software
+      aliases: []
+    publishers/owncloud.yaml: |
+      key: owncloud
+      name: ownCloud GmbH
+      source: https://owncloud.com/
+      aliases: []
+- key: palo-alto-networks/expedition
+  path: products/palo-alto-networks/expedition.yaml
+  publisher: palo-alto-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 2d3e8d854294d1b0
+  files:
+    products/palo-alto-networks/expedition.yaml: |
+      key: palo-alto-networks/expedition
+      publisher: palo-alto-networks
+      name: Expedition
+      kind: software
+      source: https://pan.dev/expedition/docs/
+      aliases: []
+- key: papercut-software/papercut-mf
+  path: products/papercut-software/papercut-mf.yaml
+  publisher: papercut-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''PaperCut Software Pty Ltd'' op geen van: https://www.papercut.com/products/ng/,
+    https://www.papercut.com/products/mf/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 716b836599eea834
+  files:
+    products/papercut-software/papercut-mf.yaml: |
+      key: papercut-software/papercut-mf
+      publisher: papercut-software
+      name: PaperCut MF
+      kind: software
+      source: https://www.papercut.com/products/mf/
+      versions:
+        source: https://www.papercut.com/products/mf/
+      aliases: []
+    publishers/papercut-software.yaml: |
+      key: papercut-software
+      name: PaperCut Software Pty Ltd
+      source: https://www.papercut.com/products/ng/
+      aliases: []
+- key: papercut-software/papercut-ng
+  path: products/papercut-software/papercut-ng.yaml
+  publisher: papercut-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''PaperCut Software Pty Ltd'' op geen van: https://www.papercut.com/products/ng/,
+    https://www.papercut.com/products/mf/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 12644aec289ca29b
+  files:
+    products/papercut-software/papercut-ng.yaml: |
+      key: papercut-software/papercut-ng
+      publisher: papercut-software
+      name: PaperCut NG
+      kind: software
+      source: https://www.papercut.com/products/ng/
+      versions:
+        source: https://www.papercut.com/products/ng/release-history/
+      aliases: []
+    publishers/papercut-software.yaml: |
+      key: papercut-software
+      name: PaperCut Software Pty Ltd
+      source: https://www.papercut.com/products/ng/
+      aliases: []
+- key: pentaho/pentaho-business-analytics
+  path: products/pentaho/pentaho-business-analytics.yaml
+  publisher: pentaho
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Pentaho Business Analytics'' niet op https://pentaho.com/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: ac98b5eb8da043cc
+  files:
+    products/pentaho/pentaho-business-analytics.yaml: |
+      key: pentaho/pentaho-business-analytics
+      publisher: pentaho
+      name: Pentaho Business Analytics
+      kind: software
+      source: https://pentaho.com/
+      versions:
+        source: https://docs.pentaho.com/whats-new/release-notes-11.0
+      aliases: []
+    publishers/pentaho.yaml: |
+      key: pentaho
+      name: Pentaho
+      source: https://pentaho.com/
+      aliases: []
+- key: php/phpmailer
+  path: products/php/phpmailer.yaml
+  publisher: php
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: d4d979c917d8c4ef
+  files:
+    products/php/phpmailer.yaml: |
+      key: php/phpmailer
+      publisher: php
+      name: PHPMailer
+      aliases: []
+- key: plex/plex-media-server
+  path: products/plex/plex-media-server.yaml
+  publisher: plex
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 3ff94409d866e70c
+  files:
+    products/plex/plex-media-server.yaml: |
+      key: plex/plex-media-server
+      publisher: plex
+      name: Plex Media Server
+      kind: software
+      source: https://www.plex.tv/media-server-downloads/
+      aliases: []
+    publishers/plex.yaml: |
+      key: plex
+      name: Plex
+      source: https://www.plex.tv/media-server-downloads/
+      aliases: []
+- key: prettier/eslint-config-prettier
+  path: products/prettier/eslint-config-prettier.yaml
+  publisher: prettier
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: bdbafd6b2803c1f4
+  files:
+    products/prettier/eslint-config-prettier.yaml: |
+      key: prettier/eslint-config-prettier
+      publisher: prettier
+      name: eslint-config-prettier
+      kind: software
+      source: https://prettier.io/docs/integrating-with-linters
+      aliases: []
+    publishers/prettier.yaml: |
+      key: prettier
+      name: Prettier
+      source: https://prettier.io/docs/integrating-with-linters
+      aliases: []
+- key: proftpd/proftpd
+  path: products/proftpd/proftpd.yaml
+  publisher: proftpd
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a2fdb641f0e88945
+  files:
+    products/proftpd/proftpd.yaml: |
+      key: proftpd/proftpd
+      publisher: proftpd
+      name: ProFTPD
+      aliases: []
+- key: progress-software/progress-kemp-loadmaster
+  path: products/progress-software/progress-kemp-loadmaster.yaml
+  publisher: progress-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Progress Software Corporation'' op geen van: https://www.progress.com/network-monitoring,
+    https://docs.progress.com/category/loadmaster-ltsf-documentation, https://www.telerik.com/report-server'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 685816c1d035ff41
+  files:
+    products/progress-software/progress-kemp-loadmaster.yaml: |
+      key: progress-software/progress-kemp-loadmaster
+      publisher: progress-software
+      name: Progress Kemp LoadMaster
+      kind: device
+      source: https://docs.progress.com/category/loadmaster-ltsf-documentation
+      versions:
+        source: https://docs.progress.com/category/loadmaster-ltsf-documentation
+      aliases: []
+    publishers/progress-software.yaml: |
+      key: progress-software
+      name: Progress Software Corporation
+      source: https://www.progress.com/network-monitoring
+      aliases: []
+- key: progress-software/telerik-report-server
+  path: products/progress-software/telerik-report-server.yaml
+  publisher: progress-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Progress Software Corporation'' op geen van: https://www.progress.com/network-monitoring,
+    https://docs.progress.com/category/loadmaster-ltsf-documentation, https://www.telerik.com/report-server'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 6336fbbaa7b00513
+  files:
+    products/progress-software/telerik-report-server.yaml: |
+      key: progress-software/telerik-report-server
+      publisher: progress-software
+      name: Telerik Report Server
+      kind: software
+      source: https://www.telerik.com/report-server
+      versions:
+        source: https://www.telerik.com/support/whats-new/report-server/release-history
+      aliases: []
+    publishers/progress-software.yaml: |
+      key: progress-software
+      name: Progress Software Corporation
+      source: https://www.progress.com/network-monitoring
+      aliases: []
+- key: progress-software/whatsup-gold
+  path: products/progress-software/whatsup-gold.yaml
+  publisher: progress-software
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Progress Software Corporation'' op geen van: https://www.progress.com/network-monitoring,
+    https://docs.progress.com/category/loadmaster-ltsf-documentation, https://www.telerik.com/report-server'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: f33560f506ea6bf2
+  files:
+    products/progress-software/whatsup-gold.yaml: |
+      key: progress-software/whatsup-gold
+      publisher: progress-software
+      name: WhatsUp Gold
+      kind: software
+      source: https://www.progress.com/network-monitoring
+      versions:
+        source: https://docs.progress.com/category/whatsupgold-documentation
+      aliases: []
+    publishers/progress-software.yaml: |
+      key: progress-software
+      name: Progress Software Corporation
+      source: https://www.progress.com/network-monitoring
+      aliases: []
+- key: ptc/flexplm
+  path: products/ptc/flexplm.yaml
+  publisher: ptc
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5574c6b34d8a546d
+  files:
+    products/ptc/flexplm.yaml: |
+      key: ptc/flexplm
+      publisher: ptc
+      name: FlexPLM
+      kind: software
+      source: https://ptc.com/en/industries/retail/flexplm
+      aliases: []
+    publishers/ptc.yaml: |
+      key: ptc
+      name: PTC
+      source: https://www.ptc.com/en/products/windchill
+      aliases: []
+- key: ptzoptics/pt30x-sdi-ndi-xx
+  path: products/ptzoptics/pt30x-sdi-ndi-xx.yaml
+  publisher: ptzoptics
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'reeks volgens het groeperen: The name covers both SDI and NDI variants with a range of model suffixes.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 8deb112871f83984
+  files:
+    products/ptzoptics/pt30x-sdi-ndi-xx.yaml: |
+      key: ptzoptics/pt30x-sdi-ndi-xx
+      publisher: ptzoptics
+      name: PT30X-SDI/NDI-xx
+      kind: device
+      source: https://ptzoptics.com/firmware-finder/
+      aliases: []
+    publishers/ptzoptics.yaml: |
+      key: ptzoptics
+      name: PTZOptics
+      source: https://ptzoptics.com/known-vulnerabilities-and-fixes
+      aliases: []
+- key: qlik/qlik-sense
+  path: products/qlik/qlik-sense.yaml
+  publisher: qlik
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: '8519068634612282'
+  files:
+    products/qlik/qlik-sense.yaml: |
+      key: qlik/qlik-sense
+      publisher: qlik
+      name: Qlik Sense
+      kind: software
+      source: https://www.qlik.com/us/products/qlik-sense
+      aliases: []
+    publishers/qlik.yaml: |
+      key: qlik
+      name: Qlik
+      source: https://www.qlik.com/us/products/qlik-sense
+      aliases: []
+- key: qnap-systems/viostor-nvr
+  path: products/qnap-systems/viostor-nvr.yaml
+  publisher: qnap-systems
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: e7ee66a1070106af
+  files:
+    products/qnap-systems/viostor-nvr.yaml: |
+      key: qnap-systems/viostor-nvr
+      publisher: qnap-systems
+      name: VioStor NVR
+      kind: device
+      aliases: []
+    publishers/qnap-systems.yaml: |
+      key: qnap-systems
+      name: QNAP Systems, Inc.
+      source: https://www.qnap.com/en/product/legacy-nvr
+      aliases: []
+- key: qualcomm/multiple-chipsets
+  path: products/qualcomm/multiple-chipsets.yaml
+  publisher: qualcomm
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: d44b605ead81dc3e
+  files:
+    products/qualcomm/multiple-chipsets.yaml: |
+      key: qualcomm/multiple-chipsets
+      publisher: qualcomm
+      name: Multiple Chipsets
+      kind: device
+      aliases: []
+- key: qualitia/active-mail
+  path: products/qualitia/active-mail.yaml
+  publisher: qualitia
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a4e3b235a5149a0b
+  files:
+    products/qualitia/active-mail.yaml: |
+      key: qualitia/active-mail
+      publisher: qualitia
+      name: Active! mail
+      kind: software
+      aliases: []
+- key: quest-software/kace-systems-management-appliance-sma
+  path: products/quest-software/kace-systems-management-appliance-sma.yaml
+  publisher: quest-software
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.quest.com/products/kace-systems-management-appliance/: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 30c7c16cd38678bc
+  files:
+    products/quest-software/kace-systems-management-appliance-sma.yaml: |
+      key: quest-software/kace-systems-management-appliance-sma
+      publisher: quest-software
+      name: KACE Systems Management Appliance (SMA)
+      kind: software
+      source: https://www.quest.com/products/kace-systems-management-appliance/
+      versions:
+        source: https://support.quest.com/technical-documents/doc2257749
+      aliases: []
+    publishers/quest-software.yaml: |
+      key: quest-software
+      name: Quest Software
+      source: https://www.quest.com/
+      aliases: []
+- key: rails/ruby-on-rails
+  path: products/rails/ruby-on-rails.yaml
+  publisher: rails
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 746a826e7ce7709a
+  files:
+    products/rails/ruby-on-rails.yaml: |
+      key: rails/ruby-on-rails
+      publisher: rails
+      name: Ruby on Rails
+      kind: software
+      source: https://rubyonrails.org/
+      versions:
+        source: https://rubyonrails.org/category/releases
+      aliases: []
+- key: react-native-community/cli
+  path: products/react-native-community/cli.yaml
+  publisher: react-native-community
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a13f609c5dd5c447
+  files:
+    products/react-native-community/cli.yaml: |
+      key: react-native-community/cli
+      publisher: react-native-community
+      name: CLI
+      kind: software
+      aliases: []
+- key: red-hat/abrt
+  path: products/red-hat/abrt.yaml
+  publisher: red-hat
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 662c045d6714b717
+  files:
+    products/red-hat/abrt.yaml: |
+      key: red-hat/abrt
+      publisher: red-hat
+      name: ABRT
+      kind: software
+      aliases: []
+- key: red-hat/libuser
+  path: products/red-hat/libuser.yaml
+  publisher: red-hat
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1489680deebbc480
+  files:
+    products/red-hat/libuser.yaml: |
+      key: red-hat/libuser
+      publisher: red-hat
+      name: Libuser
+      kind: software
+      aliases: []
+- key: reolink/multiple-ip-cameras
+  path: products/reolink/multiple-ip-cameras.yaml
+  publisher: reolink
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: d498180c24e14464
+  files:
+    products/reolink/multiple-ip-cameras.yaml: |
+      key: reolink/multiple-ip-cameras
+      publisher: reolink
+      name: Multiple IP Cameras
+      kind: device
+      aliases: []
+    publishers/reolink.yaml: |
+      key: reolink
+      name: Reolink
+      source: https://reolink.com/download-center/
+      aliases: []
+- key: reolink/rlc-410w-ip-camera
+  path: products/reolink/rlc-410w-ip-camera.yaml
+  publisher: reolink
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 6d48f91394024a5c
+  files:
+    products/reolink/rlc-410w-ip-camera.yaml: |
+      key: reolink/rlc-410w-ip-camera
+      publisher: reolink
+      name: RLC-410W IP Camera
+      kind: device
+      aliases: []
+    publishers/reolink.yaml: |
+      key: reolink
+      name: Reolink
+      source: https://reolink.com/download-center/
+      aliases: []
+- key: reviewdog/action-setup-github-action
+  path: products/reviewdog/action-setup-github-action.yaml
+  publisher: reviewdog
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 59178180ee4d7da0
+  files:
+    products/reviewdog/action-setup-github-action.yaml: |
+      key: reviewdog/action-setup-github-action
+      publisher: reviewdog
+      name: action-setup GitHub Action
+      kind: software
+      aliases: []
+- key: rockwell/multiple-products
+  path: products/rockwell/multiple-products.yaml
+  publisher: rockwell
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: bf45fd4b9fc63c53
+  files:
+    products/rockwell/multiple-products.yaml: |
+      key: rockwell/multiple-products
+      publisher: rockwell
+      name: Multiple Products
+      aliases: []
+- key: roundcube-webmail-dev-team/roundcube-webmail
+  path: products/roundcube-webmail-dev-team/roundcube-webmail.yaml
+  publisher: roundcube-webmail-dev-team
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Roundcube Webmail Dev Team'' op geen van: https://roundcube.net/about/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 28c7b02857b193d4
+  files:
+    products/roundcube-webmail-dev-team/roundcube-webmail.yaml: |
+      key: roundcube-webmail-dev-team/roundcube-webmail
+      publisher: roundcube-webmail-dev-team
+      name: Roundcube Webmail
+      kind: software
+      source: https://roundcube.net/about/
+      versions:
+        source: https://roundcube.net/download/
+      aliases: []
+    publishers/roundcube-webmail-dev-team.yaml: |
+      key: roundcube-webmail-dev-team
+      name: Roundcube Webmail Dev Team
+      source: https://roundcube.net/about/
+      aliases: []
+- key: samsung/magicinfo-9-server
+  path: products/samsung/magicinfo-9-server.yaml
+  publisher: samsung
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''MagicINFO 9 Server'' niet op https://www.samsung.com/de/business/display-solutions/magicinfo/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 7fa7a49594358686
+  files:
+    products/samsung/magicinfo-9-server.yaml: |
+      key: samsung/magicinfo-9-server
+      publisher: samsung
+      name: MagicINFO 9 Server
+      kind: software
+      source: https://www.samsung.com/de/business/display-solutions/magicinfo/
+      versions:
+        source: https://docs.samsungvx.com/docs/display/MSRI/Release+Information
+      aliases: []
+- key: samsung/mobile-devices
+  path: products/samsung/mobile-devices.yaml
+  publisher: samsung
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5735b70c2c8846b4
+  files:
+    products/samsung/mobile-devices.yaml: |
+      key: samsung/mobile-devices
+      publisher: samsung
+      name: Mobile Devices
+      kind: device
+      aliases: []
+- key: sangoma/freepbx
+  path: products/sangoma/freepbx.yaml
+  publisher: sangoma
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: cabfcbba41f41a08
+  files:
+    products/sangoma/freepbx.yaml: |
+      key: sangoma/freepbx
+      publisher: sangoma
+      name: FreePBX
+      kind: software
+      source: https://www.freepbx.org/
+      aliases: []
+    publishers/sangoma.yaml: |
+      key: sangoma
+      name: Sangoma
+      source: https://www.freepbx.org/?p=27313
+      aliases: []
+- key: sangoma/switchvox
+  path: products/sangoma/switchvox.yaml
+  publisher: sangoma
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 7adaf17723b64503
+  files:
+    products/sangoma/switchvox.yaml: |
+      key: sangoma/switchvox
+      publisher: sangoma
+      name: Switchvox
+      kind: software
+      aliases: []
+    publishers/sangoma.yaml: |
+      key: sangoma
+      name: Sangoma
+      source: https://www.freepbx.org/?p=27313
+      aliases: []
+- key: sap/netweaver
+  path: products/sap/netweaver.yaml
+  publisher: sap
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 6446f646f14d2235
+  files:
+    products/sap/netweaver.yaml: |
+      key: sap/netweaver
+      publisher: sap
+      name: NetWeaver
+      kind: software
+      aliases: []
+- key: sap/sap-commerce-cloud
+  path: products/sap/sap-commerce-cloud.yaml
+  publisher: sap
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 22beb210c8226601
+  files:
+    products/sap/sap-commerce-cloud.yaml: |
+      key: sap/sap-commerce-cloud
+      publisher: sap
+      name: SAP Commerce Cloud
+      kind: software
+      source: https://www.sap.com/products/crm/commerce-cloud.html
+      aliases: []
+- key: semtech/aleos
+  path: products/semtech/aleos.yaml
+  publisher: semtech
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 8c8b9240c5566bf7
+  files:
+    products/semtech/aleos.yaml: |
+      key: semtech/aleos
+      publisher: semtech
+      name: ALEOS
+      kind: operating-system
+      versions:
+        source: https://source.sierrawireless.com/resources/airlink/software_reference_docs/release-notes/aleos
+      aliases: []
+    publishers/semtech.yaml: |
+      key: semtech
+      name: Semtech
+      source: https://www.semtech.com/products/wireless-rf/cellular-routers
+      aliases: []
+- key: sensorweb/scadabr
+  path: products/sensorweb/scadabr.yaml
+  publisher: sensorweb
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: http://www.scadabr.com.br/: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a44b532d8b6af618
+  files:
+    products/sensorweb/scadabr.yaml: |
+      key: sensorweb/scadabr
+      publisher: sensorweb
+      name: ScadaBR
+      kind: software
+      source: http://www.scadabr.com.br/
+      versions:
+        source: http://www.scadabr.com.br/
+      aliases: []
+    publishers/sensorweb.yaml: |
+      key: sensorweb
+      name: Sensorweb
+      source: http://www.scadabr.com.br/
+      aliases: []
+- key: servicenow/utah-vancouver-and-washington-dc-now-platform
+  path: products/servicenow/utah-vancouver-and-washington-dc-now-platform.yaml
+  publisher: servicenow
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van ServiceNow AI Platform'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 68f487eadc2f8bbc
+  files:
+    products/servicenow/utah-vancouver-and-washington-dc-now-platform.yaml: |
+      key: servicenow/utah-vancouver-and-washington-dc-now-platform
+      publisher: servicenow
+      name: ServiceNow AI Platform
+      kind: software
+      source: https://www.servicenow.com/now-platform.html
+      versions:
+        source: https://www.servicenow.com/docs/r/Iru_OmfY8svQHlgM89Nuiw/Y53zrloNLPXUusqAeEpYAg
+      aliases: []
+    publishers/servicenow.yaml: |
+      key: servicenow
+      name: ServiceNow
+      source: https://www.servicenow.com/now-platform.html
+      aliases: []
+- key: siemens/siemens-software-center
+  path: products/siemens/siemens-software-center.yaml
+  publisher: siemens
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 6f0a053b82de3e4d
+  files:
+    products/siemens/siemens-software-center.yaml: |
+      key: siemens/siemens-software-center
+      publisher: siemens
+      name: Siemens Software Center
+      kind: software
+      source: https://www.siemens.com/de-ch/support/siemens-software-center/
+      aliases: []
+    publishers/siemens.yaml: |
+      key: siemens
+      name: Siemens
+      source: https://www.siemens.com/de-ch/support/siemens-software-center/
+      aliases: []
+- key: signalwire/freeswitch
+  path: products/signalwire/freeswitch.yaml
+  publisher: signalwire
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 7fe8cb4accc0ed87
+  files:
+    products/signalwire/freeswitch.yaml: |
+      key: signalwire/freeswitch
+      publisher: signalwire
+      name: FreeSWITCH
+      kind: software
+      source: https://www.signalwire.com/freeswitch
+      aliases: []
+    publishers/signalwire.yaml: |
+      key: signalwire
+      name: SignalWire
+      source: https://www.signalwire.com/freeswitch
+      aliases: []
+- key: sitecore/multiple-products
+  path: products/sitecore/multiple-products.yaml
+  publisher: sitecore
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5cb253ddbe213485
+  files:
+    products/sitecore/multiple-products.yaml: |
+      key: sitecore/multiple-products
+      publisher: sitecore
+      name: Multiple Products
+      kind: software
+      aliases: []
+    publishers/sitecore.yaml: |
+      key: sitecore
+      name: Sitecore
+      source: https://www.sitecore.com/platform/experience-platform
+      aliases: []
+- key: sitecore/sitecore-experience-manager-xm
+  path: products/sitecore/sitecore-experience-manager-xm.yaml
+  publisher: sitecore
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 89c8c137e56556df
+  files:
+    products/sitecore/sitecore-experience-manager-xm.yaml: |
+      key: sitecore/sitecore-experience-manager-xm
+      publisher: sitecore
+      name: Sitecore Experience Manager (XM)
+      kind: software
+      source: https://www.sitecore.com/platform/experience-manager
+      aliases: []
+    publishers/sitecore.yaml: |
+      key: sitecore
+      name: Sitecore
+      source: https://www.sitecore.com/platform/experience-platform
+      aliases: []
+- key: smarsh/tm-sgnl
+  path: products/smarsh/tm-sgnl.yaml
+  publisher: smarsh
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 4b7328f9f6e9f594
+  files:
+    products/smarsh/tm-sgnl.yaml: |
+      key: smarsh/tm-sgnl
+      publisher: smarsh
+      name: TM SGNL
+      kind: software
+      aliases: []
+    publishers/smarsh.yaml: |
+      key: smarsh
+      name: Smarsh
+      source: https://www.smarsh.com/?p=636153
+      aliases: []
+- key: smartbedded/meteobridge
+  path: products/smartbedded/meteobridge.yaml
+  publisher: smartbedded
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a72f2f96ac824e96
+  files:
+    products/smartbedded/meteobridge.yaml: |
+      key: smartbedded/meteobridge
+      publisher: smartbedded
+      name: Meteobridge
+      kind: device
+      source: https://www.meteobridge.com/
+      versions:
+        source: https://www.meteobridge.com/wiki/index.php?title=Forum
+      aliases: []
+- key: solarwinds/serv-u
+  path: products/solarwinds/serv-u.yaml
+  publisher: solarwinds
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.solarwinds.com/serv-u: refused'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: ebaeab9c4a66f02b
+  files:
+    products/solarwinds/serv-u.yaml: |
+      key: solarwinds/serv-u
+      publisher: solarwinds
+      name: Serv-U
+      kind: software
+      source: https://www.solarwinds.com/serv-u
+      versions:
+        source: https://documentation.solarwinds.com/en/success_center/servu/content/release_notes/release_history.htm
+      aliases: []
+    publishers/solarwinds.yaml: |
+      key: solarwinds
+      name: SolarWinds
+      source: https://www.solarwinds.com/web-help-desk
+      aliases: []
+- key: solarwinds/web-help-desk
+  path: products/solarwinds/web-help-desk.yaml
+  publisher: solarwinds
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.solarwinds.com/web-help-desk: refused'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: df2cd47a95ca32f0
+  files:
+    products/solarwinds/web-help-desk.yaml: |
+      key: solarwinds/web-help-desk
+      publisher: solarwinds
+      name: Web Help Desk
+      kind: software
+      source: https://www.solarwinds.com/web-help-desk
+      versions:
+        source: https://documentation.solarwinds.com/en/success_center/whd/content/release_notes/release_notes_overview.htm
+      aliases: []
+    publishers/solarwinds.yaml: |
+      key: solarwinds
+      name: SolarWinds
+      source: https://www.solarwinds.com/web-help-desk
+      aliases: []
+- key: soliton-systems/filezen
+  path: products/soliton-systems/filezen.yaml
+  publisher: soliton-systems
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Soliton Systems K.K.'' op geen van: https://www.soliton.co.jp/products/filezen/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 23021b766dd241ea
+  files:
+    products/soliton-systems/filezen.yaml: |
+      key: soliton-systems/filezen
+      publisher: soliton-systems
+      name: FileZen
+      kind: device
+      source: https://www.soliton.co.jp/products/filezen/
+      versions:
+        source: https://www.soliton.co.jp/support/soliton/hardware/filezen/
+      aliases: []
+    publishers/soliton-systems.yaml: |
+      key: soliton-systems
+      name: Soliton Systems K.K.
+      source: https://www.soliton.co.jp/products/filezen/
+      aliases: []
+- key: sonicwall/sma-100-series
+  path: products/sonicwall/sma-100-series.yaml
+  publisher: sonicwall
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://www.sonicwall.com/support/technical-documentation/docs/sma_100-10-2-1-release_notes:
+    404'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: bbaf62d9937c6417
+  files:
+    products/sonicwall/sma-100-series.yaml: |
+      key: sonicwall/sma-100-series
+      publisher: sonicwall
+      name: SMA 100 Series
+      kind: device
+      source: https://www.sonicwall.com/products/remote-access/
+      versions:
+        source: https://www.sonicwall.com/support/technical-documentation/docs/sma_100-10-2-1-release_notes
+      aliases: []
+    publishers/sonicwall.yaml: |
+      key: sonicwall
+      name: SonicWall
+      source: https://www.sonicwall.com/products/remote-access/
+      aliases: []
+- key: sophos/cyberoamos
+  path: products/sophos/cyberoamos.yaml
+  publisher: sophos
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 127c5bd451b88bc4
+  files:
+    products/sophos/cyberoamos.yaml: |
+      key: sophos/cyberoamos
+      publisher: sophos
+      name: CyberoamOS
+      kind: operating-system
+      source: https://community.sophos.com/cyberoamos/b/blog
+      aliases: []
+    publishers/sophos.yaml: |
+      key: sophos
+      name: Sophos
+      source: https://www.sophos.com/en-us/products/next-gen-firewall/
+      aliases: []
+- key: sophos/sophos-web-appliance
+  path: products/sophos/sophos-web-appliance.yaml
+  publisher: sophos
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: d6e7de9c845295e5
+  files:
+    products/sophos/sophos-web-appliance.yaml: |
+      key: sophos/sophos-web-appliance
+      publisher: sophos
+      name: Sophos Web Appliance
+      kind: device
+      source: https://www.sophos.com/en-us/content/product-lifecycle
+      aliases: []
+    publishers/sophos.yaml: |
+      key: sophos
+      name: Sophos
+      source: https://www.sophos.com/en-us/products/next-gen-firewall/
+      aliases: []
+- key: spreadsheet-parseexcel/spreadsheet-parseexcel
+  path: products/spreadsheet-parseexcel/spreadsheet-parseexcel.yaml
+  publisher: spreadsheet-parseexcel
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina, uitgever'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 87cfe971a837d0f0
+  files:
+    products/spreadsheet-parseexcel/spreadsheet-parseexcel.yaml: |
+      key: spreadsheet-parseexcel/spreadsheet-parseexcel
+      publisher: spreadsheet-parseexcel
+      name: Spreadsheet::ParseExcel
+      kind: software
+      aliases: []
+- key: srimax/output-messenger
+  path: products/srimax/output-messenger.yaml
+  publisher: srimax
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Srimax'' op geen van: https://www.outputmessenger.com/release-notes/windows/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: d4d0ec46909522c8
+  files:
+    products/srimax/output-messenger.yaml: |
+      key: srimax/output-messenger
+      publisher: srimax
+      name: Output Messenger
+      kind: software
+      source: https://www.outputmessenger.com/release-notes/windows/
+      versions:
+        source: https://www.outputmessenger.com/release-notes/windows/
+      aliases: []
+    publishers/srimax.yaml: |
+      key: srimax
+      name: Srimax
+      source: https://www.outputmessenger.com/release-notes/windows/
+      aliases: []
+- key: sudo/sudo
+  path: products/sudo/sudo.yaml
+  publisher: sudo
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: Sudo is clearly its own software with its own releases, but the readable text of the versions source (the
+    changelog) shows no sudo version number. The only version there is for the embedded zlib.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: da41305df5316cba
+  files:
+    products/sudo/sudo.yaml: |
+      key: sudo/sudo
+      publisher: sudo
+      name: Sudo
+      kind: software
+      source: https://www.sudo.ws/
+      versions:
+        source: https://www.sudo.ws/releases/changelog/
+      aliases: []
+    publishers/sudo.yaml: |
+      key: sudo
+      name: Sudo
+      source: https://www.sudo.ws/
+      aliases: []
+- key: sunhillo/sureline
+  path: products/sunhillo/sureline.yaml
+  publisher: sunhillo
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 04e9d21f3319075c
+  files:
+    products/sunhillo/sureline.yaml: |
+      key: sunhillo/sureline
+      publisher: sunhillo
+      name: SureLine®
+      kind: software
+      source: https://www.sunhillo.com/sureline/
+      aliases: []
+    publishers/sunhillo.yaml: |
+      key: sunhillo
+      name: Sunhillo Corporation
+      source: https://www.sunhillo.com/sureline/
+      aliases: []
+- key: synacor/zimbra-collaboration
+  path: products/synacor/zimbra-collaboration.yaml
+  publisher: synacor
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP5
+  reason: 'TP5: The zimbra.com homepage carries a Synacor, Inc. copyright, but the wiki footer says Zimbra, Inc. So it is
+    not settled who publishes the updates.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: ac943ffaa3a805f5
+  files:
+    products/synacor/zimbra-collaboration.yaml: |
+      key: synacor/zimbra-collaboration
+      publisher: synacor
+      name: Zimbra Collaboration
+      kind: software
+      source: https://wiki.zimbra.com/wiki/Zimbra_Releases
+      versions:
+        source: https://wiki.zimbra.com/wiki/Zimbra_Releases
+      aliases:
+      - synacor/collaboration
+      - synacor/zimbra-collaboration-suite
+      - synacor/zimbra-collaboration-suite-zcs
+    publishers/synacor.yaml: |
+      key: synacor
+      name: Synacor, Inc.
+      source: https://www.zimbra.com/
+      aliases: []
+- key: sysaid-technologies/sysaid-on-prem
+  path: products/sysaid-technologies/sysaid-on-prem.yaml
+  publisher: sysaid-technologies
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'versie of editie: van SysAid'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1eadc311022a42cc
+  files:
+    products/sysaid-technologies/sysaid-on-prem.yaml: |
+      key: sysaid-technologies/sysaid-on-prem
+      publisher: sysaid-technologies
+      name: SysAid
+      kind: software
+      source: https://www.sysaid.com/?p=10099
+      versions:
+        source: https://documentation.sysaid.com/docs/whats-new-on-premise
+      aliases: []
+    publishers/sysaid-technologies.yaml: |
+      key: sysaid-technologies
+      name: SysAid Technologies
+      source: https://www.sysaid.com/plans/on-premises
+      aliases: []
+- key: tanstack/tanstack
+  path: products/tanstack/tanstack.yaml
+  publisher: tanstack
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 591a7d15db57a0c1
+  files:
+    products/tanstack/tanstack.yaml: |
+      key: tanstack/tanstack
+      publisher: tanstack
+      name: TanStack
+      kind: software
+      aliases: []
+    publishers/tanstack.yaml: |
+      key: tanstack
+      name: TanStack LLC
+      source: https://tanstack.com/
+      aliases: []
+- key: teamt5/threatsonar-anti-ransomware
+  path: products/teamt5/threatsonar-anti-ransomware.yaml
+  publisher: teamt5
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a0c04fa7eec7d26c
+  files:
+    products/teamt5/threatsonar-anti-ransomware.yaml: |
+      key: teamt5/threatsonar-anti-ransomware
+      publisher: teamt5
+      name: ThreatSonar Anti-Ransomware
+      kind: software
+      source: https://teamt5.org/en/platform/threatsonar-anti-ransomware
+      aliases: []
+    publishers/teamt5.yaml: |
+      key: teamt5
+      name: TeamT5
+      source: https://teamt5.org/en/
       aliases: []
 - key: the-apache-software-foundation/apache-superset
   path: products/the-apache-software-foundation/apache-superset.yaml
@@ -389,4 +5469,626 @@ parked:
       name: Apache Superset
       kind: software
       source: https://superset.apache.org/
+      aliases: []
+- key: the-freetype-project/freetype
+  path: products/the-freetype-project/freetype.yaml
+  publisher: the-freetype-project
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3
+  reason: 'TP3: FreeType is clearly its own software library, but the versions source (download page) shows no current version
+    number, only a mention of the historical FreeType 1 release.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 8ec0ffa1b7ca516a
+  files:
+    products/the-freetype-project/freetype.yaml: |
+      key: the-freetype-project/freetype
+      publisher: the-freetype-project
+      name: FreeType
+      kind: software
+      source: https://freetype.org/
+      versions:
+        source: https://freetype.org/download.html
+      aliases: []
+    publishers/the-freetype-project.yaml: |
+      key: the-freetype-project
+      name: The FreeType Project
+      source: https://freetype.org/
+      aliases: []
+- key: the-linux-kernel-archives/linux-kernel
+  path: products/the-linux-kernel-archives/linux-kernel.yaml
+  publisher: the-linux-kernel-archives
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5
+  reason: 'TP3: The versions source shows kernel versions such as 6.18. However, kernel.org already belongs in TAX to the-linux-kernel-organization,
+    so this may duplicate an existing product whose key is not shown.; TP5: "The Linux Kernel Archives" is the name of the
+    distribution site. The sources say releases are maintained by Linus Torvalds and the stable maintainers, and kernel.org
+    is already registered to another publisher.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 1537a8fbad2249bb
+  files:
+    products/the-linux-kernel-archives/linux-kernel.yaml: |
+      key: the-linux-kernel-archives/linux-kernel
+      publisher: the-linux-kernel-archives
+      name: Linux kernel
+      kind: operating-system
+      source: https://www.kernel.org/
+      versions:
+        source: https://www.kernel.org/releases.html
+      aliases:
+      - the-linux-kernel-archives/kernel
+      - the-linux-kernel-archives/linux
+    publishers/the-linux-kernel-archives.yaml: |
+      key: the-linux-kernel-archives
+      name: The Linux Kernel Archives
+      source: https://www.kernel.org/
+      aliases: []
+- key: tp-link/multiple-routers
+  path: products/tp-link/multiple-routers.yaml
+  publisher: tp-link
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a6874854e2bdec6f
+  files:
+    products/tp-link/multiple-routers.yaml: |
+      key: tp-link/multiple-routers
+      publisher: tp-link
+      name: Multiple Routers
+      kind: device
+      aliases: []
+    publishers/tp-link.yaml: |
+      key: tp-link
+      name: TP-Link
+      source: https://www.tp-link.com/uk/support/download/tl-wa855re/
+      aliases: []
+- key: trend-micro/trend-micro-apex-one
+  path: products/trend-micro/trend-micro-apex-one.yaml
+  publisher: trend-micro
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 485bcd3660b742bb
+  files:
+    products/trend-micro/trend-micro-apex-one.yaml: |
+      key: trend-micro/trend-micro-apex-one
+      publisher: trend-micro
+      name: Trend Micro Apex One
+      kind: software
+      source: https://docs.trendmicro.com/o-help/ent/apex-one/2019/en-us/apexOne_2019_server_readme.htm
+      aliases: []
+    publishers/trend-micro.yaml: |
+      key: trend-micro
+      name: Trend Micro Incorporated
+      source: https://docs.trendmicro.com/o-help/ent/apex-one/2019/en-us/apexOne_2019_server_readme.htm
+      aliases: []
+- key: trimble/cityworks
+  path: products/trimble/cityworks.yaml
+  publisher: trimble
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 5751346834dedaa1
+  files:
+    products/trimble/cityworks.yaml: |
+      key: trimble/cityworks
+      publisher: trimble
+      name: Cityworks
+      kind: software
+      source: https://www.cityworks.com/
+      aliases: []
+    publishers/trimble.yaml: |
+      key: trimble
+      name: Trimble
+      source: https://news.trimble.com/2020-07-08-Trimble-and-Cityworks-Introduces-Real-Time-Asset-Management-Solution-for-Water-and-Wastewater-Utilities
+      aliases: []
+- key: twilio/authy
+  path: products/twilio/authy.yaml
+  publisher: twilio
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 0430b93299aa1757
+  files:
+    products/twilio/authy.yaml: |
+      key: twilio/authy
+      publisher: twilio
+      name: Authy
+      kind: software
+      source: https://www.authy.com/
+      aliases: []
+    publishers/twilio.yaml: |
+      key: twilio
+      name: Twilio Inc.
+      source: https://www.authy.com/
+      aliases: []
+- key: ubiquiti/unifi-os
+  path: products/ubiquiti/unifi-os.yaml
+  publisher: ubiquiti
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'niet gevonden: geen naam, productpagina of uitgever: naam, productpagina'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: e2081f39239e6757
+  files:
+    products/ubiquiti/unifi-os.yaml: |
+      key: ubiquiti/unifi-os
+      publisher: ubiquiti
+      name: UniFi OS
+      kind: operating-system
+      aliases: []
+    publishers/ubiquiti.yaml: |
+      key: ubiquiti
+      name: Ubiquiti, Inc.
+      source: https://www.ui.com/
+      aliases: []
+- key: unitronics/vision-plc-and-hmi
+  path: products/unitronics/vision-plc-and-hmi.yaml
+  publisher: unitronics
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 46865604bb83c90f
+  files:
+    products/unitronics/vision-plc-and-hmi.yaml: |
+      key: unitronics/vision-plc-and-hmi
+      publisher: unitronics
+      name: Vision PLC and HMI
+      kind: device
+      aliases: []
+    publishers/unitronics.yaml: |
+      key: unitronics
+      name: Unitronics
+      source: https://unitronicsplc.com/programmable-controllers-vision-series/
+      aliases: []
+- key: versa-networks/versa-concerto
+  path: products/versa-networks/versa-concerto.yaml
+  publisher: versa-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: geen versions.source
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: d8427d939d3f5b7b
+  files:
+    products/versa-networks/versa-concerto.yaml: |
+      key: versa-networks/versa-concerto
+      publisher: versa-networks
+      name: Versa Concerto
+      kind: software
+      source: https://docs.versa-networks.com/Management_and_Orchestration/Versa_Concerto_Orchestrator/01_Getting_Started/01_Versa_Concerto_Overview
+      aliases: []
+    publishers/versa-networks.yaml: |
+      key: versa-networks
+      name: Versa Networks
+      source: https://docs.versa-networks.com/Management_and_Orchestration/Versa_Concerto_Orchestrator/01_Getting_Started/01_Versa_Concerto_Overview
+      aliases: []
+- key: versa-networks/versa-director
+  path: products/versa-networks/versa-director.yaml
+  publisher: versa-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''Versa Director'' niet op https://docs.versa-networks.com/Special:AuthenticationProviders?returntotitle=Getting_Started%2FRelease_Notes
+    (eindadres van https://docs.versa-networks.com/Getting_Started/Release_Notes); eindadres voorgedragen: https://docs.versa-networks.com/Getting_Started/Release_Notes
+    -> https://docs.versa-networks.com/Special:AuthenticationProviders?returntotitle=Getting_Started%2FRelease_Notes'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: a6fcc9e60feabd06
+  files:
+    products/versa-networks/versa-director.yaml: |
+      key: versa-networks/versa-director
+      publisher: versa-networks
+      name: Versa Director
+      kind: software
+      source: https://docs.versa-networks.com/Management_and_Orchestration/Versa_Director
+      versions:
+        source: https://docs.versa-networks.com/Special:AuthenticationProviders?returntotitle=Getting_Started%2FRelease_Notes
+      aliases: []
+    publishers/versa-networks.yaml: |
+      key: versa-networks
+      name: Versa Networks
+      source: https://docs.versa-networks.com/Management_and_Orchestration/Versa_Director
+      aliases: []
+- key: voidzero/vite
+  path: products/voidzero/vite.yaml
+  publisher: voidzero
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''VoidZero Inc.'' op geen van: https://vite.dev/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 73cbdd4c2d8c27db
+  files:
+    products/voidzero/vite.yaml: |
+      key: voidzero/vite
+      publisher: voidzero
+      name: Vite
+      kind: software
+      source: https://vite.dev/
+      versions:
+        source: https://vite.dev/releases
+      aliases: []
+    publishers/voidzero.yaml: |
+      key: voidzero
+      name: VoidZero Inc.
+      source: https://vite.dev/
+      aliases: []
+- key: watchguard-technologies/firebox
+  path: products/watchguard-technologies/firebox.yaml
+  publisher: watchguard-technologies
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''WatchGuard Technologies'' op geen van: https://www.watchguard.com/wgrd-products/firewall-appliances,
+    https://www.watchguard.com/wgrd-products/firewalls'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: ae18202807c6a422
+  files:
+    products/watchguard-technologies/firebox.yaml: |
+      key: watchguard-technologies/firebox
+      publisher: watchguard-technologies
+      name: Firebox
+      kind: device
+      source: https://www.watchguard.com/wgrd-products/firewalls
+      versions:
+        source: https://www.watchguard.com/wgrd-help/documentation/release-notes/fireware
+      aliases: []
+    publishers/watchguard-technologies.yaml: |
+      key: watchguard-technologies
+      name: WatchGuard Technologies
+      source: https://www.watchguard.com/wgrd-products/firewall-appliances
+      aliases: []
+- key: wazuh/wazuh-server
+  path: products/wazuh/wazuh-server.yaml
+  publisher: wazuh
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5, TK2, TE1
+  reason: 'TP3: The release notes publish versions of Wazuh as a whole platform, with the server (manager) as one component.
+    The sources do not settle whether the Wazuh server is a product of its own or part of the Wazuh platform.; TP5: The sources
+    show that Wazuh publishes the releases. No source shows the legal name "Wazuh, Inc." as the publisher.; TK2: "Wazuh server"
+    appears in the source as proposed. The publisher name "Wazuh, Inc." appears in no source text.; TE1: The source confirms
+    the product name, but no source text contains the publisher name "Wazuh, Inc.".'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: 9ec49828860307ad
+  files:
+    products/wazuh/wazuh-server.yaml: |
+      key: wazuh/wazuh-server
+      publisher: wazuh
+      name: Wazuh server
+      kind: software
+      source: https://wazuh.com/platform/overview/
+      versions:
+        source: https://documentation.wazuh.com/current/release-notes/index.html
+      aliases: []
+    publishers/wazuh.yaml: |
+      key: wazuh
+      name: Wazuh, Inc.
+      source: https://wazuh.com/platform/overview/
+      aliases: []
+- key: webpros-international/cpanel-and-whm
+  path: products/webpros-international/cpanel-and-whm.yaml
+  publisher: webpros-international
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'naam niet op de productpagina: ''cPanel & WHM'' niet op https://www.cpanel.net/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 765a8ee01a32e7de
+  files:
+    products/webpros-international/cpanel-and-whm.yaml: |
+      key: webpros-international/cpanel-and-whm
+      publisher: webpros-international
+      name: cPanel & WHM
+      kind: software
+      source: https://www.cpanel.net/
+      versions:
+        source: https://docs.cpanel.net/changelogs/
+      aliases: []
+    publishers/webpros-international.yaml: |
+      key: webpros-international
+      name: WebPros International L.L.C.
+      source: https://www.cpanel.net/
+      aliases: []
+- key: webpros-international/wp-squared
+  path: products/webpros-international/wp-squared.yaml
+  publisher: webpros-international
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''WebPros International LLC'' op geen van: https://wpsquared.com/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: cd181ef9c967870c
+  files:
+    products/webpros-international/wp-squared.yaml: |
+      key: webpros-international/wp-squared
+      publisher: webpros-international
+      name: WP Squared
+      kind: software
+      source: https://wpsquared.com/
+      versions:
+        source: https://docs.wpsquared.com/release-notes/releases/releasenote/
+      aliases: []
+    publishers/webpros-international.yaml: |
+      key: webpros-international
+      name: WebPros International LLC
+      source: https://wpsquared.com/
+      aliases: []
+- key: whatsapp/whatsapp
+  path: products/whatsapp/whatsapp.yaml
+  publisher: whatsapp
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'het groeperen twijfelt, en de vindronde gaf geen productpagina en versiepagina: Plain "WhatsApp" may mean the messenger
+    in general or a family of client apps across platforms, so the names do not settle which product it is.; versiepagina
+    ontbreekt'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 617bf5a21cf94fbc
+  files:
+    products/whatsapp/whatsapp.yaml: |
+      key: whatsapp/whatsapp
+      publisher: whatsapp
+      name: WhatsApp
+      kind: software
+      source: https://www.whatsapp.com/download
+      aliases: []
+    publishers/whatsapp.yaml: |
+      key: whatsapp
+      name: WhatsApp LLC
+      source: https://www.whatsapp.com/android
+      aliases: []
+- key: widget-factory-pty/jce
+  path: products/widget-factory-pty/jce.yaml
+  publisher: widget-factory-pty
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: 'nieuwe uitgever zonder eigen pagina met zijn naam: ''Widget Factory (Pty) Ltd.'' op geen van: https://www.joomlacontenteditor.net/'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 64e8bfadcce1897f
+  files:
+    products/widget-factory-pty/jce.yaml: |
+      key: widget-factory-pty/jce
+      publisher: widget-factory-pty
+      name: JCE
+      kind: software
+      source: https://www.joomlacontenteditor.net/
+      versions:
+        source: https://www.joomlacontenteditor.net/support/changelog/editor/30x
+      aliases: []
+    publishers/widget-factory-pty.yaml: |
+      key: widget-factory-pty
+      name: Widget Factory (Pty) Ltd.
+      source: https://www.joomlacontenteditor.net/
+      aliases: []
+- key: win-rar/winrar
+  path: products/win-rar/winrar.yaml
+  publisher: win-rar
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'gesloten bron: https://www.win-rar.com/: disallowed'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: cffb5c75f98f012d
+  files:
+    products/win-rar/winrar.yaml: |
+      key: win-rar/winrar
+      publisher: win-rar
+      name: WinRAR
+      kind: software
+      source: https://www.win-rar.com/
+      versions:
+        source: https://www.rarlab.com/rarnew.htm
+      aliases: []
+    publishers/win-rar.yaml: |
+      key: win-rar
+      name: win.rar GmbH
+      source: https://www.win-rar.com/
+      aliases: []
+- key: wordpress-org/wordpress
+  path: products/wordpress-org/wordpress.yaml
+  publisher: wordpress-org
+  waits_for: better-proposal
+  owner: submitter
+  rule: TP3, TP5
+  reason: 'TP3: The versions source shows versions such as 7.1.5, but wordpress.org is already registered to the existing
+    publisher ''wordpress''. This proposal may therefore duplicate a product already filed under that publisher, which the
+    listing of wordpress-org products cannot rule out.; TP5: The sources show releases on wordpress.org but do not name who
+    publishes them. The domain already belongs to the existing publisher ''wordpress'', so ''wordpress-org'' may be a second
+    key for the same publisher.'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  submitter: kev-ronde-1
+  known: true
+  fingerprint: cd0d87a0e908b130
+  files:
+    products/wordpress-org/wordpress.yaml: |
+      key: wordpress-org/wordpress
+      publisher: wordpress-org
+      name: WordPress
+      kind: software
+      source: https://wordpress.org/download/
+      versions:
+        source: https://wordpress.org/download/releases/
+      aliases:
+      - wordpress-org/core
+      - wordpress-org/wordpress-core
+    publishers/wordpress-org.yaml: |
+      key: wordpress-org
+      name: WordPress.org
+      source: https://wordpress.org/download/releases/
+      aliases: []
+- key: xwiki/xwiki-platform
+  path: products/xwiki/xwiki-platform.yaml
+  publisher: xwiki
+  waits_for: event
+  owner: referee
+  rule: TAX-27
+  reason: 'bron niet leesbaar: https://www.xwiki.org/xwiki/bin/view/ReleaseNotes/: error: TimeoutError'
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: b06b81b8dcb156a8
+  files:
+    products/xwiki/xwiki-platform.yaml: |
+      key: xwiki/xwiki-platform
+      publisher: xwiki
+      name: XWiki Platform
+      kind: software
+      source: https://www.xwiki.org/xwiki/bin/view/ReleaseNotes/
+      versions:
+        source: https://www.xwiki.org/xwiki/bin/view/ReleaseNotes/
+      aliases: []
+    publishers/xwiki.yaml: |
+      key: xwiki
+      name: XWiki
+      source: https://www.xwiki.org/
+      aliases: []
+- key: zyxel-communications/dsl-cpe-devices
+  path: products/zyxel-communications/dsl-cpe-devices.yaml
+  publisher: zyxel-communications
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 74add3a19f6a1ce7
+  files:
+    products/zyxel-communications/dsl-cpe-devices.yaml: |
+      key: zyxel-communications/dsl-cpe-devices
+      publisher: zyxel-communications
+      name: DSL CPE Devices
+      kind: device
+      aliases: []
+    publishers/zyxel-communications.yaml: |
+      key: zyxel-communications
+      name: Zyxel Communications
+      source: https://www.zyxel.com/service-provider/global/en
+      aliases: []
+- key: zyxel-networks/gs1900-series-switches
+  path: products/zyxel-networks/gs1900-series-switches.yaml
+  publisher: zyxel-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 1ed4577e254c6b2b
+  files:
+    products/zyxel-networks/gs1900-series-switches.yaml: |
+      key: zyxel-networks/gs1900-series-switches
+      publisher: zyxel-networks
+      name: GS1900 Series Switches
+      kind: device
+      aliases: []
+    publishers/zyxel-networks.yaml: |
+      key: zyxel-networks
+      name: Zyxel Networks
+      source: https://www.zyxel.com/global/en/products/switch/gs1900-series
+      aliases: []
+- key: zyxel-networks/multiple-firewalls
+  path: products/zyxel-networks/multiple-firewalls.yaml
+  publisher: zyxel-networks
+  waits_for: better-proposal
+  owner: submitter
+  rule: TAX-27
+  reason: reeks of onderdeel
+  since: '2026-11-20'
+  checked: '2026-11-20'
+  lapses: '2027-02-18'
+  pr: null
+  fingerprint: 0791928cbe325122
+  files:
+    products/zyxel-networks/multiple-firewalls.yaml: |
+      key: zyxel-networks/multiple-firewalls
+      publisher: zyxel-networks
+      name: Multiple Firewalls
+      kind: device
+      aliases: []
+    publishers/zyxel-networks.yaml: |
+      key: zyxel-networks
+      name: Zyxel Networks
+      source: https://www.zyxel.com/global/en/products/security-firewall
       aliases: []
