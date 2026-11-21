@@ -22,13 +22,17 @@ When a candidate counts as on the publisher's own domain (its owner, as tools/gu
     finders   two finders or more point to it
     name      the publisher's key, name or an alias stands in the name of the domain
 
-A candidate on any other domain is not taken: a link of one finder to someone else's site. The
-classes of sites are data (`referee/sites.yaml`); the rules name no brand or product (TG4).
+A candidate on any other domain is not taken: a link of one finder to someone else's site. Nor is
+a page on a site that carries many owners (the owner in the path or in the host): it is a domain of
+its own that the publisher writes. Among the own domains, the one where most of the publisher's
+products publish their versions (their release policy links) comes first, so that the gate can
+recognise the publisher in code (TP5: the versions source on the domain of the publisher's source).
+The classes of sites are data (`referee/sites.yaml`); the rules name no brand or product (TG4).
 
 The reading is the ladder of tools/fetch.py: robots.txt and a refusal are respected (TE5); a closed
-page is skipped for the next candidate of the same publisher. The name check is that of the
-importer for a new publisher: the name, or the name without its legal form, in the text or (TAX-43)
-in the footer of the page.
+page is skipped for the next candidate of the same publisher. The name check is that of the gate on
+TK2 (`gate.tr6`): the publisher's name as TAX writes it, in the text of the page. The footer counts
+for who publishes, never for TK2, so it does not count here.
 
     python tools/ownsource.py --eol eol.json --cnas CNAsList.json \\
         --brew formula.json --cask cask.json --cache finders.json --out ownsource.json [--write]
@@ -57,8 +61,8 @@ import gate  # noqa: E402
 import keyrule  # noqa: E402
 import sites  # noqa: E402
 from census import fold, fold_company  # noqa: E402
-from fetch import USER_AGENT, moved, publisher_texts  # noqa: E402
-from guard import host_of, owner, registrable  # noqa: E402
+from fetch import USER_AGENT, moved  # noqa: E402
+from guard import OWNER_IN_HOST, host_of, owner, registrable  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATASETS = sites.names("datasets")
@@ -97,6 +101,17 @@ def third_party(url: str) -> bool:
     """A URL that is not the publisher's own: no owner can be read off it, or a dataset of others."""
     own = owner(url or "")
     return own is None or own in DATASETS
+
+
+def shared_site(url: str) -> bool:
+    """A page on a site that carries many owners: the owner in the path or in the host."""
+    own = owner(url or "") or ""
+    return "/" in own or registrable(own) in OWNER_IN_HOST
+
+
+def needs_source(publisher: dict) -> bool:
+    """A publisher whose `source` is no domain of its own."""
+    return third_party(publisher.get("source", "")) or shared_site(publisher.get("source", ""))
 
 
 def label_of(own: str) -> str:
@@ -138,7 +153,7 @@ def own_domains(publisher: dict, candidates: list[Candidate], known: set[str], o
     TAX gives to another publisher (`others`) does not count by its name alone (TV2)."""
     by_owner: dict[str, set] = {}
     for c in candidates:
-        if not third_party(c.url):
+        if not third_party(c.url) and not shared_site(c.url):
             by_owner.setdefault(owner(c.url), set()).add(c.finder)
     out = {}
     for own, finders in by_owner.items():
@@ -155,10 +170,11 @@ def own_domains(publisher: dict, candidates: list[Candidate], known: set[str], o
 
 
 def ordered(candidates: list[Candidate], reasons: dict[str, str]) -> list[Candidate]:
-    """The candidates on the publisher's own domains: a domain of its own before a path on a site
-    with many owners, then by the strength of the reason and the order of the finders."""
+    """The candidates on the publisher's own domains: first the domain where most of its products
+    publish their versions, then by the strength of the reason and the order of the finders."""
     kept = [c for c in candidates if not third_party(c.url) and owner(c.url) in reasons]
-    return sorted(kept, key=lambda c: ("/" in owner(c.url), REASONS.index(reasons[owner(c.url)]),
+    versions = Counter(owner(c.url) for c in kept if c.finder == "release-policy")
+    return sorted(kept, key=lambda c: (-versions[owner(c.url)], REASONS.index(reasons[owner(c.url)]),
                                        FINDERS.index(c.finder)))
 
 
@@ -171,7 +187,7 @@ def home_pages(candidates: list[Candidate], reasons: dict[str, str]) -> list[Can
     out = []
     for c in ordered(candidates, reasons):
         own = owner(c.url)
-        if "/" not in own and own not in [owner(h.url) for h in out]:
+        if own not in [owner(h.url) for h in out]:
             host = re.match(r"^https?://([^/:?#]+)", c.url).group(1)
             out.append(Candidate(c.finder, f"https://{host if host.startswith('www.') else own}/", c.via, c.vouch))
     return out
@@ -186,7 +202,13 @@ def names_of(name: str) -> list[str]:
 
 
 def named(src, name: str) -> bool:
-    return gate.read(src) and any(gate.appears(n, t) for n in names_of(name) for t in publisher_texts(src))
+    """The gate on TK2: the name as TAX writes it, in the text that was read. A name longer than the
+    gate takes (`gate.MAX_NAME`) goes to the AI there; here it may stand without its legal form."""
+    if not gate.read(src):
+        return False
+    if len(name) <= gate.MAX_NAME:
+        return gate.appears(name, src.text)
+    return any(gate.appears(n, src.text) for n in names_of(name))
 
 
 def choose(publisher: dict, candidates: list[Candidate], known: set[str], fetcher,
@@ -196,6 +218,8 @@ def choose(publisher: dict, candidates: list[Candidate], known: set[str], fetche
     for c in candidates:
         if third_party(c.url):
             res.rejected.append([c.url, f"{c.finder}: not an own site"])
+        elif shared_site(c.url):
+            res.rejected.append([c.url, f"{c.finder}: a site with many owners"])
         elif owner(c.url) not in reasons:
             res.rejected.append([c.url, f"{c.finder}: {owner(c.url)} is not shown to be the publisher's"])
     if not candidates:
@@ -468,7 +492,7 @@ def run(args, fetcher=None, root: Path = ROOT, log=print) -> list[Result]:
         from fetch import Fetcher
         fetcher = Fetcher(log=log if args.verbose else None)
     results = []
-    todo = [k for k, p in pubs.items() if third_party(p.get("source", ""))]
+    todo = [k for k, p in pubs.items() if needs_source(p)]
     if args.only:
         todo = [k for k in todo if k in args.only]
     for n, slug in enumerate(todo, 1):
@@ -477,7 +501,7 @@ def run(args, fetcher=None, root: Path = ROOT, log=print) -> list[Result]:
         for p in products:
             cands += product_candidates(p, eol, brew, lookup)
         lookup.save()
-        others = {owner(p.get("source", "")) for k, p in pubs.items() if k != slug and not third_party(p.get("source", ""))}
+        others = {owner(p.get("source", "")) for k, p in pubs.items() if k != slug and not needs_source(p)}
         res = choose(pub, cands, known_owners(pub, products), fetcher, others)
         res_found = f"{res.finder}/{res.reason} {res.source}" if res.source else f"{res.outcome}: {res.detail}"
         log(f"[{n}/{len(todo)}] {slug}: {res_found}")
@@ -513,7 +537,7 @@ def main(argv=None) -> int:
     ap.add_argument("--verbose", action="store_true")
     args = ap.parse_args(argv)
     pubs, _ = load_data()
-    before = sum(1 for p in pubs.values() if third_party(p.get("source", "")))
+    before = sum(1 for p in pubs.values() if needs_source(p))
     results = run(args)
     if args.out:
         args.out.write_text(json.dumps([asdict(r) for r in results], indent=1))
