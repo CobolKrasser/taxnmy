@@ -2,9 +2,9 @@ key: redis/redis
 publisher: redis
 name: Redis
 kind: software
-source: https://endoflife.date/redis
+source: https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/
 versions:
-  source: https://endoflife.date/redis
+  source: https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/
 identifiers:
 - purl: pkg:generic/redis
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/redis.md

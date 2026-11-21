@@ -2,9 +2,9 @@ key: the-kubernetes-authors/kubernetes
 publisher: the-kubernetes-authors
 name: Kubernetes
 kind: software
-source: https://endoflife.date/kubernetes
+source: https://kubernetes.io/releases/patch-releases/
 versions:
-  source: https://endoflife.date/kubernetes
+  source: https://kubernetes.io/releases/patch-releases/
 identifiers:
 - purl: pkg:github/kubernetes/kubernetes
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes.md

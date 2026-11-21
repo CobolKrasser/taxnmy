@@ -2,8 +2,8 @@ key: amazon-web-services/amazon-rds-for-mariadb
 publisher: amazon-web-services
 name: Amazon RDS for MariaDB
 kind: software
-source: https://endoflife.date/amazon-rds-mariadb
+source: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MariaDB.Concepts.VersionMgmt.html
 versions:
-  source: https://endoflife.date/amazon-rds-mariadb
+  source: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MariaDB.Concepts.VersionMgmt.html
 identifiers: []
 aliases: []

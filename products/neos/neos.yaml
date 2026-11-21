@@ -2,9 +2,9 @@ key: neos/neos
 publisher: neos
 name: Neos
 kind: software
-source: https://endoflife.date/neos
+source: https://www.neos.io/features/release-process.html
 versions:
-  source: https://endoflife.date/neos
+  source: https://www.neos.io/features/release-process.html
 identifiers:
 - purl: pkg:composer/neos/neos
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/neos.md

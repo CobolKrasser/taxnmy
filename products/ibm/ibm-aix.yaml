@@ -2,9 +2,9 @@ key: ibm/ibm-aix
 publisher: ibm
 name: IBM AIX
 kind: operating-system
-source: https://endoflife.date/ibm-aix
+source: https://www.ibm.com/support/pages/aix-support-lifecycle-information
 versions:
-  source: https://endoflife.date/ibm-aix
+  source: https://www.ibm.com/support/pages/aix-support-lifecycle-information
 identifiers:
 - cpe: cpe:2.3:o:ibm:aix
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ibm-aix.md

@@ -2,9 +2,9 @@ key: bitcoin-core/bitcoin-core
 publisher: bitcoin-core
 name: Bitcoin Core
 kind: software
-source: https://endoflife.date/bitcoin-core
+source: https://bitcoincore.org/en/lifecycle/
 versions:
-  source: https://endoflife.date/bitcoin-core
+  source: https://bitcoincore.org/en/lifecycle/
 identifiers:
 - homebrew: bitcoin-core
   source: https://formulae.brew.sh/cask/bitcoin-core

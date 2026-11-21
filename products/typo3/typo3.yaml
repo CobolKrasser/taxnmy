@@ -2,9 +2,9 @@ key: typo3/typo3
 publisher: typo3
 name: TYPO3
 kind: software
-source: https://endoflife.date/typo3
+source: https://get.typo3.org/
 versions:
-  source: https://endoflife.date/typo3
+  source: https://get.typo3.org/
 identifiers:
 - purl: pkg:composer/typo3/cms
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/typo3.md

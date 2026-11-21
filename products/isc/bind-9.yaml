@@ -2,9 +2,9 @@ key: isc/bind-9
 publisher: isc
 name: BIND 9
 kind: software
-source: https://endoflife.date/bind-9
+source: https://kb.isc.org/docs/aa-00896
 versions:
-  source: https://endoflife.date/bind-9
+  source: https://kb.isc.org/docs/aa-00896
 identifiers:
 - winget: ISC.Bind
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISC/Bind

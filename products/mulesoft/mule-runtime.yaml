@@ -2,9 +2,9 @@ key: mulesoft/mule-runtime
 publisher: mulesoft
 name: Mule Runtime
 kind: software
-source: https://endoflife.date/mulesoft-runtime
+source: https://docs.mulesoft.com/release-notes/mule-runtime/lts-edge-release-cadence
 versions:
-  source: https://endoflife.date/mulesoft-runtime
+  source: https://docs.mulesoft.com/release-notes/mule-runtime/lts-edge-release-cadence
 identifiers:
 - cpe: cpe:2.3:a:mulesoft:mule_runtime
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:mulesoft:mule_runtime&resultsPerPage=1

@@ -2,9 +2,9 @@ key: roundcube/roundcube-webmail
 publisher: roundcube
 name: Roundcube Webmail
 kind: software
-source: https://endoflife.date/roundcube
+source: https://roundcube.net/download/
 versions:
-  source: https://endoflife.date/roundcube
+  source: https://roundcube.net/download/
 identifiers:
 - cpe: cpe:2.3:a:roundcube:webmail
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/roundcube.md

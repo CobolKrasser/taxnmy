@@ -2,9 +2,9 @@ key: blender-foundation/blender
 publisher: blender-foundation
 name: Blender
 kind: software
-source: https://endoflife.date/blender
+source: https://developer.blender.org/docs/handbook/release_process/release_cycle/
 versions:
-  source: https://endoflife.date/blender
+  source: https://developer.blender.org/docs/handbook/release_process/release_cycle/
 identifiers:
 - cpe: cpe:2.3:a:blender:blender
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/blender.md

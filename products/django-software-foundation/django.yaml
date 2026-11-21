@@ -2,9 +2,9 @@ key: django-software-foundation/django
 publisher: django-software-foundation
 name: Django
 kind: software
-source: https://endoflife.date/django
+source: https://www.djangoproject.com/download/#supported-versions
 versions:
-  source: https://endoflife.date/django
+  source: https://www.djangoproject.com/download/#supported-versions
 identifiers:
 - purl: pkg:github/django/django
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/django.md

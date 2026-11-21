@@ -2,9 +2,9 @@ key: microsoft/net
 publisher: microsoft
 name: .NET
 kind: software
-source: https://endoflife.date/dotnet
+source: https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core
 versions:
-  source: https://endoflife.date/dotnet
+  source: https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core
 identifiers:
 - purl: pkg:nuget/Microsoft.NETCore.App
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dotnet.md

@@ -2,9 +2,9 @@ key: citrix/citrix-virtual-apps-and-desktops
 publisher: citrix
 name: Citrix Virtual Apps and Desktops
 kind: software
-source: https://endoflife.date/citrix-vad
+source: https://www.citrix.com/support/product-lifecycle/product-matrix
 versions:
-  source: https://endoflife.date/citrix-vad
+  source: https://www.citrix.com/support/product-lifecycle/product-matrix
 identifiers:
 - cpe: cpe:2.3:a:citrix:virtual_apps_and_desktops
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:citrix:virtual_apps_and_desktops&resultsPerPage=1

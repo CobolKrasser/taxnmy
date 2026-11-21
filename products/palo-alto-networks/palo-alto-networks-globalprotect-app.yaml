@@ -4,7 +4,7 @@ name: Palo Alto Networks GlobalProtect App
 kind: software
 source: https://endoflife.date/pangp
 versions:
-  source: https://endoflife.date/pangp
+  source: https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary
 identifiers:
 - cpe: cpe:2.3:a:paloaltonetworks:globalprotect
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/pan-gp.md

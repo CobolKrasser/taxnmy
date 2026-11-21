@@ -2,9 +2,9 @@ key: geoserver/geoserver
 publisher: geoserver
 name: GeoServer
 kind: software
-source: https://endoflife.date/geoserver
+source: https://geoserver.org/roadmap/
 versions:
-  source: https://endoflife.date/geoserver
+  source: https://geoserver.org/roadmap/
 identifiers:
 - cpe: cpe:2.3:a:geoserver:geoserver
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:geoserver:geoserver&resultsPerPage=1

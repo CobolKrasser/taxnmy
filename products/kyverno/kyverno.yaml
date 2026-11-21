@@ -2,9 +2,9 @@ key: kyverno/kyverno
 publisher: kyverno
 name: Kyverno
 kind: software
-source: https://endoflife.date/kyverno
+source: https://kyverno.io/docs/installation/releases/
 versions:
-  source: https://endoflife.date/kyverno
+  source: https://kyverno.io/docs/installation/releases/
 identifiers:
 - purl: pkg:github/kyverno/kyverno
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kyverno.md

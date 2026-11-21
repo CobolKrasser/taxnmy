@@ -2,9 +2,9 @@ key: prometheus/prometheus
 publisher: prometheus
 name: Prometheus
 kind: software
-source: https://endoflife.date/prometheus
+source: https://prometheus.io/docs/introduction/release-cycle/
 versions:
-  source: https://endoflife.date/prometheus
+  source: https://prometheus.io/docs/introduction/release-cycle/
 identifiers:
 - purl: pkg:github/prometheus/prometheus
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/prometheus.md

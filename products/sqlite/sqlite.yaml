@@ -2,9 +2,9 @@ key: sqlite/sqlite
 publisher: sqlite
 name: SQLite
 kind: software
-source: https://endoflife.date/sqlite
+source: https://www.sqlite.org/support.html
 versions:
-  source: https://endoflife.date/sqlite
+  source: https://www.sqlite.org/support.html
 identifiers:
 - purl: pkg:generic/sqlite
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sqlite.md

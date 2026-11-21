@@ -2,9 +2,9 @@ key: the-apache-software-foundation/apache-spark
 publisher: the-apache-software-foundation
 name: Apache Spark
 kind: software
-source: https://endoflife.date/apache-spark
+source: https://spark.apache.org/versioning-policy.html
 versions:
-  source: https://endoflife.date/apache-spark
+  source: https://spark.apache.org/versioning-policy.html
 identifiers:
 - cpe: cpe:2.3:a:apache:spark
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-spark.md

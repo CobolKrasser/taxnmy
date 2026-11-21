@@ -2,9 +2,9 @@ key: api-platform/api-platform
 publisher: api-platform
 name: API Platform
 kind: software
-source: https://endoflife.date/api-platform
+source: https://api-platform.com/docs/extra/releases/
 versions:
-  source: https://endoflife.date/api-platform
+  source: https://api-platform.com/docs/extra/releases/
 identifiers:
 - purl: pkg:composer/api-platform/core
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/api-platform.md

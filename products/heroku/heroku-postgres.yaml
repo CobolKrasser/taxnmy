@@ -2,8 +2,8 @@ key: heroku/heroku-postgres
 publisher: heroku
 name: Heroku Postgres
 kind: software
-source: https://endoflife.date/heroku-postgres
+source: https://devcenter.heroku.com/articles/heroku-postgres-version-support
 versions:
-  source: https://endoflife.date/heroku-postgres
+  source: https://devcenter.heroku.com/articles/heroku-postgres-version-support
 identifiers: []
 aliases: []

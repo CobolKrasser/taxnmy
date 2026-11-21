@@ -2,9 +2,9 @@ key: vmware/vcenter-server
 publisher: vmware
 name: vCenter Server
 kind: software
-source: https://endoflife.date/vcenter
+source: https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html
 versions:
-  source: https://endoflife.date/vcenter
+  source: https://knowledge.broadcom.com/external/article/326316/build-numbers-and-versions-of-vmware-vce.html
 identifiers:
 - cpe: cpe:2.3:a:vmware:vcenter_server
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vmware-vcenter.md

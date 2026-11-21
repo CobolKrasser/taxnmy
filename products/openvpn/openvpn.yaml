@@ -2,9 +2,9 @@ key: openvpn/openvpn
 publisher: openvpn
 name: OpenVPN
 kind: software
-source: https://endoflife.date/openvpn
+source: https://community.openvpn.net/Pages/Supported%20versions
 versions:
-  source: https://endoflife.date/openvpn
+  source: https://community.openvpn.net/Pages/Supported%20versions
 identifiers:
 - purl: pkg:github/openvpn/openvpn
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openvpn.md

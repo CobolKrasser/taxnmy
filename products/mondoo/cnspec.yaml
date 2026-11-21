@@ -2,9 +2,9 @@ key: mondoo/cnspec
 publisher: mondoo
 name: cnspec
 kind: software
-source: https://endoflife.date/cnspec
+source: https://mondoo.com/docs/cnspec/install/update
 versions:
-  source: https://endoflife.date/cnspec
+  source: https://mondoo.com/docs/cnspec/install/update
 identifiers:
 - cpe: cpe:2.3:a:cnspec:cnspec
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/cnspec.md

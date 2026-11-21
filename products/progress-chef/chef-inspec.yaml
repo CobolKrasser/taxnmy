@@ -2,9 +2,9 @@ key: progress-chef/chef-inspec
 publisher: progress-chef
 name: Chef InSpec
 kind: software
-source: https://endoflife.date/chef-inspec
+source: https://docs.chef.io/versions/
 versions:
-  source: https://endoflife.date/chef-inspec
+  source: https://docs.chef.io/versions/
 identifiers:
 - cpe: cpe:2.3:a:chef:inspec
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/chef-inspec.md

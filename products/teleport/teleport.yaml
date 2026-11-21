@@ -2,9 +2,9 @@ key: teleport/teleport
 publisher: teleport
 name: Teleport
 kind: software
-source: https://endoflife.date/teleport
+source: https://goteleport.com/docs/upcoming-releases/
 versions:
-  source: https://endoflife.date/teleport
+  source: https://goteleport.com/docs/upcoming-releases/
 identifiers:
 - purl: pkg:github/gravitational/teleport
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/teleport.md

@@ -2,9 +2,9 @@ key: godot/godot
 publisher: godot
 name: Godot
 kind: software
-source: https://endoflife.date/godot
+source: https://docs.godotengine.org/en/latest/about/release_policy.html
 versions:
-  source: https://endoflife.date/godot
+  source: https://docs.godotengine.org/en/latest/about/release_policy.html
 identifiers:
 - cpe: cpe:2.3:a:godotengine:godot
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/godot.md

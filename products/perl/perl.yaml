@@ -2,9 +2,9 @@ key: perl/perl
 publisher: perl
 name: Perl
 kind: software
-source: https://endoflife.date/perl
+source: https://perldoc.perl.org/perlpolicy#MAINTENANCE-AND-SUPPORT
 versions:
-  source: https://endoflife.date/perl
+  source: https://perldoc.perl.org/perlpolicy#MAINTENANCE-AND-SUPPORT
 identifiers:
 - purl: pkg:generic/perl
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/perl.md
