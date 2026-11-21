@@ -4,7 +4,7 @@ name: Apache Hadoop
 kind: software
 source: https://endoflife.date/apache-hadoop
 versions:
-  source: https://endoflife.date/apache-hadoop
+  source: https://cwiki.apache.org/confluence/spaces/HADOOP/pages/89071895/Hadoop+Active+Release+Lines
 identifiers:
 - cpe: cpe:2.3:a:apache:hadoop
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md

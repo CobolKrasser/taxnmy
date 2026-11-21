@@ -2,9 +2,9 @@ key: quarkus/quarkus
 publisher: quarkus
 name: Quarkus
 kind: software
-source: https://endoflife.date/quarkus-framework
+source: https://quarkus.io/security/
 versions:
-  source: https://endoflife.date/quarkus-framework
+  source: https://quarkus.io/security/
 identifiers:
 - cpe: cpe:2.3:a:quarkus:quarkus
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/quarkus-framework.md

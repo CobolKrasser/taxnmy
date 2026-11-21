@@ -2,9 +2,9 @@ key: mautic/mautic
 publisher: mautic
 name: Mautic
 kind: software
-source: https://endoflife.date/mautic
+source: https://mautic.org/releases/
 versions:
-  source: https://endoflife.date/mautic
+  source: https://mautic.org/releases/
 identifiers:
 - purl: pkg:github/mautic/mautic/
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mautic.md

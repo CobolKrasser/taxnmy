@@ -2,9 +2,9 @@ key: jreleaser/jreleaser
 publisher: jreleaser
 name: JReleaser
 kind: software
-source: https://endoflife.date/jreleaser
+source: https://jreleaser.org/guide/latest/release-history.html
 versions:
-  source: https://endoflife.date/jreleaser
+  source: https://jreleaser.org/guide/latest/release-history.html
 identifiers:
 - purl: pkg:brew/jreleaser
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md

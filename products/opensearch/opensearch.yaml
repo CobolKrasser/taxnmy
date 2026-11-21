@@ -2,9 +2,9 @@ key: opensearch/opensearch
 publisher: opensearch
 name: OpenSearch
 kind: software
-source: https://endoflife.date/opensearch
+source: https://opensearch.org/releases/
 versions:
-  source: https://endoflife.date/opensearch
+  source: https://opensearch.org/releases/
 identifiers:
 - cpe: cpe:2.3:a:amazon:opensearch
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/opensearch.md

@@ -2,9 +2,9 @@ key: plesk/plesk
 publisher: plesk
 name: Plesk
 kind: software
-source: https://endoflife.date/plesk
+source: https://www.plesk.com/lifecycle-policy/
 versions:
-  source: https://endoflife.date/plesk
+  source: https://www.plesk.com/lifecycle-policy/
 identifiers:
 - cpe: cpe:2.3:a:plesk:plesk
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/plesk.md

@@ -2,9 +2,9 @@ key: openssl/openssl
 publisher: openssl
 name: OpenSSL
 kind: software
-source: https://endoflife.date/openssl
+source: https://openssl-library.org/policies/releasestrat/index.html
 versions:
-  source: https://endoflife.date/openssl
+  source: https://openssl-library.org/policies/releasestrat/index.html
 identifiers:
 - cpe: cpe:2.3:a:openssl:openssl
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openssl.md

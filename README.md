@@ -138,7 +138,7 @@ rejected on TE1. A change of the scope goes through a pull request, like any oth
 publishers/<publisher>.yaml          one file per publisher
 products/<publisher>/<product>.yaml  one file per product
 schema/                              JSON schemas for both files
-tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness and the count of candidate sources (`census.py`)
+tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness, the count of candidate sources (`census.py`) and the finders of a source of the publisher itself, for a publisher (`ownsource.py`) and for a product (`ownversions.py`)
 tests/                               tests for the lint and the harness
 referee/                             prompt, test set and runs of the referee (TP1, TP3, TP5, TK2 and TE1)
 ```

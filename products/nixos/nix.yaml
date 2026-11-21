@@ -2,9 +2,9 @@ key: nixos/nix
 publisher: nixos
 name: nix
 kind: software
-source: https://endoflife.date/nix
+source: https://nixos.org/blog/announcements/
 versions:
-  source: https://endoflife.date/nix
+  source: https://nixos.org/blog/announcements/
 identifiers:
 - cpe: cpe:2.3:a:nixos:nix
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:nixos:nix&resultsPerPage=1

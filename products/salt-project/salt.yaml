@@ -2,9 +2,9 @@ key: salt-project/salt
 publisher: salt-project
 name: Salt
 kind: software
-source: https://endoflife.date/salt
+source: https://docs.saltproject.io/salt/install-guide/en/latest/topics/salt-version-support-lifecycle.html
 versions:
-  source: https://endoflife.date/salt
+  source: https://docs.saltproject.io/salt/install-guide/en/latest/topics/salt-version-support-lifecycle.html
 identifiers:
 - cpe: cpe:2.3:a:saltstack:salt
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/salt.md

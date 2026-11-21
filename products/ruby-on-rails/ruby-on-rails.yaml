@@ -2,9 +2,9 @@ key: ruby-on-rails/ruby-on-rails
 publisher: ruby-on-rails
 name: Ruby on Rails
 kind: software
-source: https://endoflife.date/rails
+source: https://rubyonrails.org/maintenance
 versions:
-  source: https://endoflife.date/rails
+  source: https://rubyonrails.org/maintenance
 identifiers:
 - purl: pkg:gem/rails
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ruby-on-rails.md

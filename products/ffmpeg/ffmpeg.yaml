@@ -2,9 +2,9 @@ key: ffmpeg/ffmpeg
 publisher: ffmpeg
 name: FFmpeg
 kind: software
-source: https://endoflife.date/ffmpeg
+source: https://ffmpeg.org/
 versions:
-  source: https://endoflife.date/ffmpeg
+  source: https://ffmpeg.org/
 identifiers:
 - purl: pkg:brew/ffmpeg
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ffmpeg.md

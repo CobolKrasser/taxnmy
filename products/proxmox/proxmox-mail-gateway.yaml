@@ -2,9 +2,9 @@ key: proxmox/proxmox-mail-gateway
 publisher: proxmox
 name: Proxmox Mail Gateway
 kind: software
-source: https://endoflife.date/proxmox-mail-gateway
+source: https://pmg.proxmox.com/wiki/Roadmap
 versions:
-  source: https://endoflife.date/proxmox-mail-gateway
+  source: https://pmg.proxmox.com/wiki/Roadmap
 identifiers:
 - purl: pkg:github/proxmox/pmg-api
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-mail-gateway.md

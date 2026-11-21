@@ -2,9 +2,9 @@ key: vinyl-cache/vinyl-cache
 publisher: vinyl-cache
 name: Vinyl Cache
 kind: software
-source: https://endoflife.date/vinyl-cache
+source: https://vinyl-cache.org/releases/index.html
 versions:
-  source: https://endoflife.date/vinyl-cache
+  source: https://vinyl-cache.org/releases/index.html
 identifiers:
 - purl: pkg:brew/varnish
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vinyl-cache.md

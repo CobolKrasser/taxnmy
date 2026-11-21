@@ -4,7 +4,7 @@ name: Elasticsearch
 kind: software
 source: https://endoflife.date/elasticsearch
 versions:
-  source: https://endoflife.date/elasticsearch
+  source: https://www.elastic.co/support_policy
 identifiers:
 - purl: pkg:github/elastic/elasticsearch
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/elasticsearch.md

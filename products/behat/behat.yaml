@@ -2,9 +2,9 @@ key: behat/behat
 publisher: behat
 name: Behat
 kind: software
-source: https://endoflife.date/behat
+source: https://docs.behat.org/en/latest/releases.html
 versions:
-  source: https://endoflife.date/behat
+  source: https://docs.behat.org/en/latest/releases.html
 identifiers:
 - purl: pkg:composer/behat/behat
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/behat.md

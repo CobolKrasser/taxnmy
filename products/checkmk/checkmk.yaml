@@ -2,9 +2,9 @@ key: checkmk/checkmk
 publisher: checkmk
 name: Checkmk
 kind: software
-source: https://endoflife.date/checkmk
+source: https://docs.checkmk.com/latest/en/cmk_versions.html
 versions:
-  source: https://endoflife.date/checkmk
+  source: https://docs.checkmk.com/latest/en/cmk_versions.html
 identifiers:
 - purl: pkg:github/Checkmk/checkmk
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/checkmk.md

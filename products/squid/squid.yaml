@@ -2,9 +2,9 @@ key: squid/squid
 publisher: squid
 name: Squid
 kind: software
-source: https://endoflife.date/squid
+source: https://wiki.squid-cache.org/ReleaseSchedule
 versions:
-  source: https://endoflife.date/squid
+  source: https://wiki.squid-cache.org/ReleaseSchedule
 identifiers:
 - cpe: cpe:2.3:a:squid-cache:squid
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/squid.md

@@ -1,0 +1,9 @@
+key: sophos/sophos-firewall
+publisher: sophos
+name: Sophos Firewall
+kind: operating-system
+source: https://www.sophos.com/en-us/products/next-gen-firewall/
+versions:
+  source: https://docs.sophos.com/releasenotes/output/en-us/nsg/sf_215_rn.html
+aliases:
+- sophos/xg-firewall

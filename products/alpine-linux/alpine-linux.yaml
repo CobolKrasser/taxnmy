@@ -2,9 +2,9 @@ key: alpine-linux/alpine-linux
 publisher: alpine-linux
 name: Alpine Linux
 kind: operating-system
-source: https://endoflife.date/alpine-linux
+source: https://alpinelinux.org/releases/
 versions:
-  source: https://endoflife.date/alpine-linux
+  source: https://alpinelinux.org/releases/
 identifiers:
 - cpe: cpe:2.3:o:alpinelinux:alpine_linux
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/alpine-linux.md

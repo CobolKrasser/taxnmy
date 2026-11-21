@@ -2,9 +2,9 @@ key: concrete-cms/concrete-cms
 publisher: concrete-cms
 name: Concrete CMS
 kind: software
-source: https://endoflife.date/concrete-cms
+source: https://documentation.concretecms.org/9-x/developers/introduction/versioning-numbering-guide
 versions:
-  source: https://endoflife.date/concrete-cms
+  source: https://documentation.concretecms.org/9-x/developers/introduction/versioning-numbering-guide
 identifiers:
 - purl: pkg:composer/concrete5/core
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/concrete-cms.md

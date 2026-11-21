@@ -2,9 +2,9 @@ key: commvault/commvault
 publisher: commvault
 name: Commvault
 kind: software
-source: https://endoflife.date/commvault
+source: https://documentation.commvault.com/v11/software/commvault_software_releases_release_types_and_release_tracks.html
 versions:
-  source: https://endoflife.date/commvault
+  source: https://documentation.commvault.com/v11/software/commvault_software_releases_release_types_and_release_tracks.html
 identifiers:
 - cpe: cpe:2.3:a:commvault:commvault
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/commvault.md

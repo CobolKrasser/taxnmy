@@ -2,9 +2,9 @@ key: amazon-web-services/amazon-linux
 publisher: amazon-web-services
 name: Amazon Linux
 kind: operating-system
-source: https://endoflife.date/amazon-linux
+source: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2.html
 versions:
-  source: https://endoflife.date/amazon-linux
+  source: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2.html
 identifiers:
 - cpe: cpe:2.3:o:amazon:linux
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-linux.md

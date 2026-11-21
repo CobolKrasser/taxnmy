@@ -2,9 +2,9 @@ key: arangodb/arangodb
 publisher: arangodb
 name: ArangoDB
 kind: software
-source: https://endoflife.date/arangodb
+source: https://arango.ai/arangodb-product-support-end-of-life-announcements/
 versions:
-  source: https://endoflife.date/arangodb
+  source: https://arango.ai/arangodb-product-support-end-of-life-announcements/
 identifiers:
 - cpe: cpe:2.3:a:arangodb:arangodb
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/arangodb.md

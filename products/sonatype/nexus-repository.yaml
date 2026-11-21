@@ -2,9 +2,9 @@ key: sonatype/nexus-repository
 publisher: sonatype
 name: Nexus Repository
 kind: software
-source: https://endoflife.date/nexus
+source: https://help.sonatype.com/en/sonatype-sunsetting-information.html
 versions:
-  source: https://endoflife.date/nexus
+  source: https://help.sonatype.com/en/sonatype-sunsetting-information.html
 identifiers:
 - purl: pkg:github/sonatype/nexus-public
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nexus.md

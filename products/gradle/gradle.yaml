@@ -2,9 +2,9 @@ key: gradle/gradle
 publisher: gradle
 name: Gradle
 kind: software
-source: https://endoflife.date/gradle
+source: https://docs.gradle.org/current/userguide/feature_lifecycle.html#eol_support
 versions:
-  source: https://endoflife.date/gradle
+  source: https://docs.gradle.org/current/userguide/feature_lifecycle.html#eol_support
 identifiers:
 - cpe: cpe:2.3:a:gradle:gradle
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/gradle.md

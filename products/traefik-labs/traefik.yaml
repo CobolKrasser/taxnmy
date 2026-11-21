@@ -2,9 +2,9 @@ key: traefik-labs/traefik
 publisher: traefik-labs
 name: Traefik
 kind: software
-source: https://endoflife.date/traefik
+source: https://doc.traefik.io/traefik/deprecation/releases
 versions:
-  source: https://endoflife.date/traefik
+  source: https://doc.traefik.io/traefik/deprecation/releases
 identifiers:
 - purl: pkg:brew/traefik
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/traefik.md

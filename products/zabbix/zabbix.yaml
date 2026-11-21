@@ -2,9 +2,9 @@ key: zabbix/zabbix
 publisher: zabbix
 name: Zabbix
 kind: software
-source: https://endoflife.date/zabbix
+source: https://www.zabbix.com/life_cycle_and_release_policy
 versions:
-  source: https://endoflife.date/zabbix
+  source: https://www.zabbix.com/life_cycle_and_release_policy
 identifiers:
 - purl: pkg:brew/zabbix
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/zabbix.md

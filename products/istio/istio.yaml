@@ -2,9 +2,9 @@ key: istio/istio
 publisher: istio
 name: Istio
 kind: software
-source: https://endoflife.date/istio
+source: https://istio.io/latest/docs/releases/supported-releases/#support-policy
 versions:
-  source: https://endoflife.date/istio
+  source: https://istio.io/latest/docs/releases/supported-releases/#support-policy
 identifiers:
 - purl: pkg:brew/istioctl
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/istio.md

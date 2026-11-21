@@ -2,9 +2,9 @@ key: ruby/ruby
 publisher: ruby
 name: Ruby
 kind: software
-source: https://endoflife.date/ruby
+source: https://www.ruby-lang.org/en/downloads/branches/
 versions:
-  source: https://endoflife.date/ruby
+  source: https://www.ruby-lang.org/en/downloads/branches/
 identifiers:
 - purl: pkg:brew/ruby
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ruby.md

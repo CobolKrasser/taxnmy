@@ -2,9 +2,9 @@ key: metabase/metabase
 publisher: metabase
 name: Metabase
 kind: software
-source: https://endoflife.date/metabase
+source: https://www.metabase.com/version-support
 versions:
-  source: https://endoflife.date/metabase
+  source: https://www.metabase.com/version-support
 identifiers:
 - purl: pkg:github/metabase/metabase
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/metabase.md

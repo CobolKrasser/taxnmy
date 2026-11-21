@@ -2,9 +2,9 @@ key: haproxy/haproxy
 publisher: haproxy
 name: HAProxy
 kind: software
-source: https://endoflife.date/haproxy
+source: https://www.haproxy.org/
 versions:
-  source: https://endoflife.date/haproxy
+  source: https://www.haproxy.org/
 identifiers:
 - purl: pkg:generic/haproxy
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/haproxy.md

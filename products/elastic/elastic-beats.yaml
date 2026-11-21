@@ -4,7 +4,7 @@ name: Elastic Beats
 kind: software
 source: https://endoflife.date/beats
 versions:
-  source: https://endoflife.date/beats
+  source: https://www.elastic.co/support_policy
 identifiers:
 - cpe: cpe:2.3:a:elastic:filebeat
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/beats.md

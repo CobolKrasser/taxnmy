@@ -1,0 +1,9 @@
+key: broadcom/brocade-fabric-os
+publisher: broadcom
+name: Brocade Fabric OS
+kind: operating-system
+source: https://docs.broadcom.com/doc/GA-DS-998
+versions:
+  source: https://docs.broadcom.com/doc/FOS-1001-RN
+aliases:
+- broadcom/fabric-os

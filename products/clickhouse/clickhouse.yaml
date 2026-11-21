@@ -2,9 +2,9 @@ key: clickhouse/clickhouse
 publisher: clickhouse
 name: ClickHouse
 kind: software
-source: https://endoflife.date/clickhouse
+source: https://clickhouse.com/docs/resources/support-center/knowledge-base/setup-installation/production#how-to-choose-between-clickhouse-releases
 versions:
-  source: https://endoflife.date/clickhouse
+  source: https://clickhouse.com/docs/resources/support-center/knowledge-base/setup-installation/production#how-to-choose-between-clickhouse-releases
 identifiers:
 - purl: pkg:github/ClickHouse/ClickHouse
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/clickhouse.md

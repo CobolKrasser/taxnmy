@@ -2,9 +2,9 @@ key: deno/deno
 publisher: deno
 name: Deno
 kind: software
-source: https://endoflife.date/deno
+source: https://docs.deno.com/runtime/fundamentals/stability_and_releases/
 versions:
-  source: https://endoflife.date/deno
+  source: https://docs.deno.com/runtime/fundamentals/stability_and_releases/
 identifiers:
 - purl: pkg:brew/deno
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/deno.md

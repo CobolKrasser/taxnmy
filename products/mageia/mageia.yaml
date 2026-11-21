@@ -2,9 +2,9 @@ key: mageia/mageia
 publisher: mageia
 name: Mageia
 kind: operating-system
-source: https://endoflife.date/mageia
+source: https://www.mageia.org/en/support/
 versions:
-  source: https://endoflife.date/mageia
+  source: https://www.mageia.org/en/support/
 identifiers:
 - cpe: cpe:2.3:o:mageia:mageia
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mageia.md
