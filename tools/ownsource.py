@@ -422,12 +422,11 @@ def cna_candidates(publisher: dict, cnas: list[dict]) -> list[Candidate]:
 def load_data(root: Path = ROOT):
     pubs = {}
     for f in sorted((root / "publishers").glob("*.yaml")):
-        p = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
-        pubs[p.get("key") or f.stem] = p
+        # The file name is the key (the writing rule); the lint checks that they agree.
+        pubs[f.stem] = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
     prods: dict[str, list] = {}
     for f in sorted((root / "products").glob("*/*.yaml")):
-        p = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
-        prods.setdefault(p.get("publisher") or f.parent.name, []).append(p)
+        prods.setdefault(f.parent.name, []).append(yaml.safe_load(f.read_text(encoding="utf-8")) or {})
     return pubs, prods
 
 
