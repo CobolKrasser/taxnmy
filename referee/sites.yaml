@@ -1,0 +1,75 @@
+# The sites that code treats as a class (TG4): data, not code. The code in tools/ names no site,
+# brand or register; it reads them here (tools/sites.py). A maintainer changes this file with a
+# pull request, like any other data.
+version: 1
+
+# The address of TAXNMY itself, in the User-Agent of the fetcher (TE5).
+project_url: https://github.com/CobolKrasser/taxnmy
+
+# AI chats: a source on one of these domains is never evidence (TE4, TE1).
+ai_chats:
+  - chatgpt.com
+  - chat.openai.com
+  - claude.ai
+  - gemini.google.com
+  - bard.google.com
+  - perplexity.ai
+  - copilot.microsoft.com
+  - chat.deepseek.com
+  - chat.mistral.ai
+  - grok.com
+  - poe.com
+  - you.com
+
+# Sites where one registrable domain carries the pages of many owners: the owner is the first path
+# segment (owner_in_path) or the label in front of the domain (owner_in_host) (TV2).
+owner_in_path: [github.com, gitlab.com, bitbucket.org, codeberg.org]
+owner_in_host: [github.io, gitlab.io, readthedocs.io, netlify.app, vercel.app, pages.dev, sourceforge.io,
+                blogspot.com, wordpress.com]
+
+# Sites that are never the publisher's own site (TV2, TV4).
+many_owners:
+  # catalogues and encyclopaedias of products
+  - endoflife.date
+  - wikipedia.org
+  - wikidata.org
+  - nist.gov
+  # package registries and app stores, which carry the packages of many publishers
+  - npmjs.com
+  - pypi.org
+  - packagist.org
+  - nuget.org
+  - crates.io
+  - rubygems.org
+  - docker.com
+  - docker.io
+  - chocolatey.org
+  - brew.sh
+  - snapcraft.io
+  - flathub.org
+  - sourceforge.net
+  - launchpad.net
+  # sites where anyone writes
+  - medium.com
+  - reddit.com
+
+# Machine-readable sources that answer as an API (step 1 of the ladder, TE7): requests to these
+# hosts are an API call, retried once after a timeout.
+api_hosts: [services.nvd.nist.gov]
+
+# A search page that has an API with the same answer: `page` is a regular expression on the URL,
+# `query` the parameter that holds the value, `prefix` what the value must start with, and `api`
+# the URL with {value} for it.
+api_routes:
+  - page: '^https://nvd\.nist\.gov/products/cpe/search/results\?(.*)$'
+    query: keyword
+    prefix: 'cpe:2.3:'
+    api: 'https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString={value}&resultsPerPage=1'
+
+# The value of `format` in a JSON answer that is a CPE dictionary (step 0, tools/machine.py).
+cpe_dictionary_format: NVD_CPE
+
+# The lists that an import round reads (tools/importer.py fetch).
+imports:
+  kev: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+  cve: https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/{year}/{bucket}/{cve}.json

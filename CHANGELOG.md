@@ -11,12 +11,22 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 2.1.0 — 2026-11-20
+
+- Product: two new optional fields, `archived` and `resumed`, each with the `source` of the
+  publisher that shows the change (rule TP10). `archived`: the publisher has ended the product; it
+  gets no more updates. `resumed`: the publisher took an archived product up again. A file holds at
+  most one of the two.
+- Only a change that proposes it sets either field; nothing in TAXNMY archives a product by
+  itself. An archived product keeps its key and its aliases.
+- Existing files stay valid; readers that do not know the fields can ignore them.
+
 ## 2.0.0 — 2026-11-18
 
 - Every source (`source`, `versions.source`, the `source` of an identifier, `machine_sources`,
   `second_source`) is `https` only; `http` is no longer accepted. The lint also refuses a source
   whose host is an IP address, `localhost` or a name inside a network, such as `.local` or
-  `.internal` (rule TR1).
+  `.internal` (rule TE1).
 - `name` of a product and of a publisher: at most 100 characters; `aliases`: at most 130 characters
   each. Neither may hold a control character or `<` or `>`: a value from TAXNMY is plain text.
 - Major, because files that were valid can become invalid. No file in TAXNMY is: on 18 November
@@ -43,7 +53,7 @@ The version follows [Semantic Versioning](https://semver.org/):
 - Identifiers: two new codes, `winget` (a winget package identifier) and `homebrew` (a Homebrew
   cask or formula token), each with its own `source`. Package URL has no type for either.
 - Like a purl, each points to one package and so to one update stream: a match on another product
-  is a duplicate (TR3).
+  is a duplicate (TK3).
 
 ## 1.0.0 — 2026-11-12
 

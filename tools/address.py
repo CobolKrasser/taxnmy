@@ -5,7 +5,7 @@ Two checks, one for each place that needs one:
     problem(url)         without the network: the scheme is https or http, the host is a name with a
                          dot in it, not an IP address, not localhost and not a name that only lives
                          inside a network (.local, .internal, .home.arpa and the like). The lint uses
-                         it on every URL of a file (TR1); the reader uses it before each request.
+                         it on every URL of a file (TE1); the reader uses it before each request.
     public_socket(...)   at the moment the reader connects: every address the name resolves to must be
                          a public one, and the reader connects to the address it checked. A public page
                          that redirects to an internal address, or a name that resolves to one, is

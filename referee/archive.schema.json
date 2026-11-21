@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CobolKrasser/taxnmy/referee/archive.schema.json",
+  "title": "TAXNMY referee answer on archiving a product",
+  "description": "The answer of the AI referee on one question (TAX-47): does the source of the publisher that was read show that the publisher ended the product (archive), or that the product gets updates again (resume)? Code computes the outcome; see referee/prompt-archive.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["change", "verdict", "reason", "evidence"],
+  "properties": {
+    "change": { "enum": ["archive", "resume"] },
+    "verdict": { "enum": ["yes", "no", "doubt"] },
+    "reason": { "type": "string" },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "quote"],
+        "properties": {
+          "url": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    }
+  }
+}

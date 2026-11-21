@@ -1,16 +1,16 @@
 """Step 0 of the ladder: sources made for machines.
 
-One reader per format, never per brand (tax-weigerende-sites.md §4). Each reader recognises its
+One reader per format, never per brand. Each reader recognises its
 format from the content, takes out the part about one product, and writes it as plain lines of
 text, so that the referee can quote from it.
 
 | format | example | what is taken out |
 | --- | --- | --- |
-| update catalog (Manifest of SoftwareComponent) | downloads.dell.com/catalog/Catalog.xml.gz | the components whose supported system is the product: name, version, date, type |
-| AppStream metadata (components) | firmware metadata as LVFS publishes it | the components whose name is the product: name, developer, releases |
+| update catalog (Manifest of SoftwareComponent) | a catalog of driver and firmware updates | the components whose supported system is the product: name, version, date, type |
+| AppStream metadata (components) | firmware metadata as a firmware service publishes it | the components whose name is the product: name, developer, releases |
 | CSAF 2.0 document | a security advisory, often under /.well-known/csaf/ | the publisher, the products in the tree that match, and the vulnerabilities with their status |
 | CSAF provider metadata | /.well-known/csaf/provider-metadata.json | the publisher and where its advisories are |
-| NVD CPE API | services.nvd.nist.gov/rest/json/cpes/2.0 | the CPE names and titles |
+| CPE dictionary (JSON) | an API of the CPE dictionary, its format named in referee/sites.yaml | the CPE names and titles |
 
 A reader returns None when the content is not its format. Matching a product is by name: all
 words of the product name must occur in the entry, ignoring case. That is generic and cheap; it
@@ -23,6 +23,8 @@ import gzip
 import json
 import re
 import xml.etree.ElementTree as ET
+
+import sites
 
 MAX_UNPACKED = 300_000_000
 MAX_LINES = 400
@@ -131,10 +133,10 @@ def read_csaf_provider(data: dict, product: str) -> list[str] | None:
     return lines
 
 
-def read_nvd_cpe(data: dict, product: str) -> list[str] | None:
-    if data.get("format") != "NVD_CPE":
+def read_cpe_dictionary(data: dict, product: str) -> list[str] | None:
+    if data.get("format") != sites.value("cpe_dictionary_format"):
         return None
-    lines = [f"NVD CPE dictionary: {data.get('totalResults', 0)} matching records."]
+    lines = [f"CPE dictionary: {data.get('totalResults', 0)} matching records."]
     for p in data.get("products", []) or []:
         cpe = p.get("cpe", {})
         title = next((t.get("title", "") for t in cpe.get("titles", []) if t.get("lang") == "en"), "")
@@ -143,7 +145,7 @@ def read_nvd_cpe(data: dict, product: str) -> list[str] | None:
 
 
 XML_READERS = (read_update_catalog, read_appstream)
-JSON_READERS = (read_csaf, read_csaf_provider, read_nvd_cpe)
+JSON_READERS = (read_csaf, read_csaf_provider, read_cpe_dictionary)
 
 
 def read(body: bytes, ctype: str, product: str) -> str | None:

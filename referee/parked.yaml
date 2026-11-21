@@ -84,7 +84,7 @@ parked:
   waits_for: event
   owner: referee
   rule: TAX-27
-  reason: 'gesloten bron: https://business.adobe.com/products/commerce.html: disallowed'
+  reason: 'closed source: https://business.adobe.com/products/commerce.html: disallowed'
   since: '2026-11-19'
   checked: '2026-11-19'
   lapses: '2027-02-17'
@@ -734,8 +734,8 @@ parked:
   publisher: broadcom
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: Broadcom hosts the updates, but the register already maps broadcom.com to a separate publisher, vmware. The
+  rule: TP5
+  reason: 'TP5: Broadcom hosts the updates, but the register already maps broadcom.com to a separate publisher, vmware. The
     product carries the VMware brand. A person should decide whether the publisher is broadcom or vmware.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -783,9 +783,9 @@ parked:
   publisher: broadcom
   waits_for: better-proposal
   owner: submitter
-  rule: TR4, TR5
-  reason: 'TR4: The release notes list ESXi versions such as 7.0 Update 3w. However, broadcom.com belongs to the existing
-    publisher vmware, so this may duplicate an existing VMware ESXi entry that is not shown.; TR5: The updates are published
+  rule: TP3, TP5
+  reason: 'TP3: The release notes list ESXi versions such as 7.0 Update 3w. However, broadcom.com belongs to the existing
+    publisher vmware, so this may duplicate an existing VMware ESXi entry that is not shown.; TP5: The updates are published
     on broadcom.com, but that domain is registered in TAX for the publisher vmware and the product is branded VMware. Whether
     broadcom or vmware is the right publisher needs a person.'
   since: '2026-11-20'
@@ -811,8 +811,8 @@ parked:
   publisher: broadcom
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The docs are on Broadcom''s site, but the identity block says broadcom.com is registered for the publisher
+  rule: TP5
+  reason: 'TP5: The docs are on Broadcom''s site, but the identity block says broadcom.com is registered for the publisher
     vmware, so whether the publisher should be broadcom or vmware needs a person.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -836,8 +836,8 @@ parked:
   publisher: broadcom
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The release notes are hosted on Broadcom''s site, but the identity block shows broadcom.com is registered
+  rule: TP5
+  reason: 'TP5: The release notes are hosted on Broadcom''s site, but the identity block shows broadcom.com is registered
     for the publisher vmware. This leaves open whether the publisher should be broadcom or the existing vmware publisher.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -1031,8 +1031,8 @@ parked:
   publisher: cisco
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: The versions source lists Cisco Catalyst SD-WAN Control Components releases (e.g. 20.18.x), but it never names
+  rule: TP3
+  reason: 'TP3: The versions source lists Cisco Catalyst SD-WAN Control Components releases (e.g. 20.18.x), but it never names
     SD-WAN Manager. It does not show that these versions belong to this product.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -1110,8 +1110,8 @@ parked:
   publisher: cisco
   waits_for: better-proposal
   owner: submitter
-  rule: TR8
-  reason: 'TR8: Name, publisher and versions are confirmed, but no source text explicitly states the kind operating-system,
+  rule: TE1
+  reason: 'TE1: Name, publisher and versions are confirmed, but no source text explicitly states the kind operating-system,
     and the alias name is not literally shown.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -1244,8 +1244,8 @@ parked:
   publisher: commvault
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: The versions source lists maintenance releases of Commvault Software as a whole, not of Command Center; Command
+  rule: TP3
+  reason: 'TP3: The versions source lists maintenance releases of Commvault Software as a whole, not of Command Center; Command
     Center appears to be an interface of the Commvault platform sharing its updates, so it may not be a product of its own.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -1269,8 +1269,8 @@ parked:
   publisher: commvault
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: The Web Server is a server package installed as part of the CommServe installation; the versions source lists
+  rule: TP3
+  reason: 'TP3: The Web Server is a server package installed as part of the CommServe installation; the versions source lists
     only Commvault platform maintenance releases, not separate Web Server versions, so it may be a component of the Commvault
     platform rather than a product of its own.'
   since: '2026-11-20'
@@ -1323,8 +1323,8 @@ parked:
   publisher: control-web-panel
   waits_for: better-proposal
   owner: submitter
-  rule: TR8
-  reason: 'TR8: The name, kind and versions source are confirmed. The alias centos-web-panel does not appear in any source
+  rule: TE1
+  reason: 'TE1: The name, kind and versions source are confirmed. The alias centos-web-panel does not appear in any source
     text.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -1840,9 +1840,9 @@ parked:
   publisher: drupal
   waits_for: better-proposal
   owner: submitter
-  rule: TR5, TR8
-  reason: 'TR5: The domain drupal.org is registered in TAX for the publisher drupal-association, and the sources do not show
-    whether the updates are published by an entity named ''Drupal'' or by the Drupal Association.; TR8: The name, the versions
+  rule: TP5, TE1
+  reason: 'TP5: The domain drupal.org is registered in TAX for the publisher drupal-association, and the sources do not show
+    whether the updates are published by an entity named ''Drupal'' or by the Drupal Association.; TE1: The name, the versions
     and the kind (software) are confirmed, but the publisher value ''drupal'' as the publisher of the updates is not clearly
     confirmed against the existing drupal-association.'
   since: '2026-11-20'
@@ -2391,9 +2391,9 @@ parked:
   publisher: google
   waits_for: better-proposal
   owner: submitter
-  rule: TR4, TR5
-  reason: 'TR4: The versions source text shows Chrome release labels and archive dates but no Chromium version number, so
-    no version can be quoted.; TR5: The source calls Chromium the open-source project behind Google Chrome, but no text states
+  rule: TP3, TP5
+  reason: 'TP3: The versions source text shows Chrome release labels and archive dates but no Chromium version number, so
+    no version can be quoted.; TP5: The source calls Chromium the open-source project behind Google Chrome, but no text states
     that Google publishes Chromium''s updates.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -2523,8 +2523,8 @@ parked:
   publisher: google
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The sources show Skia serves Google Chrome and is hosted on googlesource, but no text states that Google publishes
+  rule: TP5
+  reason: 'TP5: The sources show Skia serves Google Chrome and is hosted on googlesource, but no text states that Google publishes
     Skia''s updates.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -2813,8 +2813,8 @@ parked:
   publisher: jakub-vrana
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The page names Jakub Vrána at the bottom and as translator, but does not explicitly state that he publishes
+  rule: TP5
+  reason: 'TP5: The page names Jakub Vrána at the bottom and as translator, but does not explicitly state that he publishes
     the updates.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -3029,8 +3029,8 @@ parked:
   publisher: langflow
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The sources show Langflow releases and its team, but no text clearly names the entity that publishes the updates
+  rule: TP5
+  reason: 'TP5: The sources show Langflow releases and its team, but no text clearly names the entity that publishes the updates
     under the name Langflow as a publisher.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -3355,8 +3355,8 @@ parked:
   publisher: microsoft
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: The versions source lists Current Channel builds of the Microsoft 365 Apps suite, which include Outlook fixes.
+  rule: TP3
+  reason: 'TP3: The versions source lists Current Channel builds of the Microsoft 365 Apps suite, which include Outlook fixes.
     It is unclear whether Outlook has its own update stream or is part of the suite''s.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -3928,8 +3928,8 @@ parked:
   publisher: open-source-geospatial-foundation
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The page only shows a copyright footer for Open Source Geospatial Foundation; it does not clearly state that
+  rule: TP5
+  reason: 'TP5: The page only shows a copyright footer for Open Source Geospatial Foundation; it does not clearly state that
     OSGeo publishes the updates rather than the GeoServer community.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -3995,8 +3995,8 @@ parked:
   publisher: oracle
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: The source lists versions only next to the Oracle ADF Faces Components Demo WAR file. The components themselves
+  rule: TP3
+  reason: 'TP3: The source lists versions only next to the Oracle ADF Faces Components Demo WAR file. The components themselves
     appear to ship inside the ADF Runtime / FMW Infrastructure, so it is unclear whether they have an update stream of their
     own.'
   since: '2026-11-20'
@@ -4022,8 +4022,8 @@ parked:
   publisher: oracle
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: Oracle E-Business Suite looks like its own product, but the versions source shows no release number of the
+  rule: TP3
+  reason: 'TP3: Oracle E-Business Suite looks like its own product, but the versions source shows no release number of the
     suite itself. The ''April 2025 Update'' belongs to the Enterprise Command Centers component.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -4048,10 +4048,10 @@ parked:
   publisher: owncloud
   waits_for: better-proposal
   owner: submitter
-  rule: TR5, TR6, TR8
-  reason: 'TR5: The changelog on owncloud.com publishes the releases, but no source names ownCloud GmbH as the publisher;
-    the homepage mentions Kiteworks operating under the ownCloud brand.; TR6: The product name ''ownCloud Core'' appears in
-    the changelog, but the publisher name ''ownCloud GmbH'' does not appear in any source text.; TR8: The product name and
+  rule: TP5, TK2, TE1
+  reason: 'TP5: The changelog on owncloud.com publishes the releases, but no source names ownCloud GmbH as the publisher;
+    the homepage mentions Kiteworks operating under the ownCloud brand.; TK2: The product name ''ownCloud Core'' appears in
+    the changelog, but the publisher name ''ownCloud GmbH'' does not appear in any source text.; TE1: The product name and
     versions are confirmed, but the publisher name ''ownCloud GmbH'' is not found in its source text, which shows only ''ownCloud''.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -5291,8 +5291,8 @@ parked:
   publisher: sudo
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: Sudo is clearly its own software with its own releases, but the readable text of the versions source (the
+  rule: TP3
+  reason: 'TP3: Sudo is clearly its own software with its own releases, but the readable text of the versions source (the
     changelog) shows no sudo version number. The only version there is for the embedded zlib.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -5346,8 +5346,8 @@ parked:
   publisher: synacor
   waits_for: better-proposal
   owner: submitter
-  rule: TR5
-  reason: 'TR5: The zimbra.com homepage carries a Synacor, Inc. copyright, but the wiki footer says Zimbra, Inc. So it is
+  rule: TP5
+  reason: 'TP5: The zimbra.com homepage carries a Synacor, Inc. copyright, but the wiki footer says Zimbra, Inc. So it is
     not settled who publishes the updates.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -5475,8 +5475,8 @@ parked:
   publisher: the-freetype-project
   waits_for: better-proposal
   owner: submitter
-  rule: TR4
-  reason: 'TR4: FreeType is clearly its own software library, but the versions source (download page) shows no current version
+  rule: TP3
+  reason: 'TP3: FreeType is clearly its own software library, but the versions source (download page) shows no current version
     number, only a mention of the historical FreeType 1 release.'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -5505,9 +5505,9 @@ parked:
   publisher: the-linux-kernel-archives
   waits_for: better-proposal
   owner: submitter
-  rule: TR4, TR5
-  reason: 'TR4: The versions source shows kernel versions such as 6.18. However, kernel.org already belongs in TAX to the-linux-kernel-organization,
-    so this may duplicate an existing product whose key is not shown.; TR5: "The Linux Kernel Archives" is the name of the
+  rule: TP3, TP5
+  reason: 'TP3: The versions source shows kernel versions such as 6.18. However, kernel.org already belongs in TAX to the-linux-kernel-organization,
+    so this may duplicate an existing product whose key is not shown.; TP5: "The Linux Kernel Archives" is the name of the
     distribution site. The sources say releases are maintained by Linus Torvalds and the stable maintainers, and kernel.org
     is already registered to another publisher.'
   since: '2026-11-20'
@@ -5795,11 +5795,11 @@ parked:
   publisher: wazuh
   waits_for: better-proposal
   owner: submitter
-  rule: TR4, TR5, TR6, TR8
-  reason: 'TR4: The release notes publish versions of Wazuh as a whole platform, with the server (manager) as one component.
-    The sources do not settle whether the Wazuh server is a product of its own or part of the Wazuh platform.; TR5: The sources
-    show that Wazuh publishes the releases. No source shows the legal name "Wazuh, Inc." as the publisher.; TR6: "Wazuh server"
-    appears in the source as proposed. The publisher name "Wazuh, Inc." appears in no source text.; TR8: The source confirms
+  rule: TP3, TP5, TK2, TE1
+  reason: 'TP3: The release notes publish versions of Wazuh as a whole platform, with the server (manager) as one component.
+    The sources do not settle whether the Wazuh server is a product of its own or part of the Wazuh platform.; TP5: The sources
+    show that Wazuh publishes the releases. No source shows the legal name "Wazuh, Inc." as the publisher.; TK2: "Wazuh server"
+    appears in the source as proposed. The publisher name "Wazuh, Inc." appears in no source text.; TE1: The source confirms
     the product name, but no source text contains the publisher name "Wazuh, Inc.".'
   since: '2026-11-20'
   checked: '2026-11-20'
@@ -5963,10 +5963,10 @@ parked:
   publisher: wordpress-org
   waits_for: better-proposal
   owner: submitter
-  rule: TR4, TR5
-  reason: 'TR4: The versions source shows versions such as 7.1.5, but wordpress.org is already registered to the existing
+  rule: TP3, TP5
+  reason: 'TP3: The versions source shows versions such as 7.1.5, but wordpress.org is already registered to the existing
     publisher ''wordpress''. This proposal may therefore duplicate a product already filed under that publisher, which the
-    listing of wordpress-org products cannot rule out.; TR5: The sources show releases on wordpress.org but do not name who
+    listing of wordpress-org products cannot rule out.; TP5: The sources show releases on wordpress.org but do not name who
     publishes them. The domain already belongs to the existing publisher ''wordpress'', so ''wordpress-org'' may be a second
     key for the same publisher.'
   since: '2026-11-20'

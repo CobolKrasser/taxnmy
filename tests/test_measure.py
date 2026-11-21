@@ -45,8 +45,8 @@ class BatchRunTest(unittest.TestCase):
         results, run_dir, client = self.run_batch()
         self.assertEqual({i: (r.outcome, r.by, r.right) for i, r in results.items()}, {
             "G01": ("accept", "ai", True),
-            "G02": ("human", "ai", False),
-            "H01": ("human", "error", True),
+            "G02": ("parked", "ai", False),
+            "H01": ("parked", "error", True),
             "B01": ("reject", "code", True),
             "B07": ("alias", "ai", True),
             "B20": ("reject", "code", True),
@@ -125,9 +125,11 @@ class MeasureTest(unittest.TestCase):
     def test_the_new_measurement_is_about_five_dollars(self):
         """TAX-18, again: Sonnet 5.5 at low and at medium, three runs each, about $5.20 (the analyst).
         It fits the $50 by far: the runs in the repo and in the artifacts are about $13.15."""
-        # The cases as they were then: the alias-only cases of TAX-40 came later and ask one short question.
+        # The cases as they were then: the alias cases of TAX-40, the archive cases of TAX-47 and the
+        # additions of TAX-48 came later, and are judged on their change alone.
         cases = [c.id for c in referee.load_cases(REPO / "referee/testset/cases.yaml")
-                 if not c.lint.startswith("error") and c.type != "alias-only"]
+                 if not c.lint.startswith("error") and c.type not in ("alias-only", "archive", "resume")
+                 and not c.type.startswith("added-")]
         prices = referee.load_prices()
         rows = {e: referee.estimate("claude-sonnet-5-5", prices, cases, 3, 4000, effort=e) for e in ("low", "medium")}
         total = sum(r["expected"] for r in rows.values())
@@ -172,7 +174,7 @@ class MeasureTest(unittest.TestCase):
         text = Path(report["report"]).read_text()
         self.assertIn("| claude-sonnet-5-5 low | 3 |", text)
         self.assertIn("| claude-sonnet-5-5 medium | 3 |", text)
-        self.assertIn("TR4 without a version found", text)
+        self.assertIn("TP3 without a version found", text)
 
     def test_a_dry_measure_estimates_every_stand(self):
         report, _ = self.measure(live=False, models=["claude-sonnet-5-5"], efforts=["low", "medium"])
@@ -180,9 +182,9 @@ class MeasureTest(unittest.TestCase):
                          [("claude-sonnet-5-5", "low"), ("claude-sonnet-5-5", "medium")])
         self.assertAlmostEqual(report["total"], sum(r["expected"] for r in report["rows"]))
 
-    def test_the_measure_defaults_are_sonnet_and_the_budget(self):
+    def test_the_measure_defaults_are_the_agreed_model_and_the_budget(self):
         args = referee.parser().parse_args(["measure"])
-        self.assertEqual((args.models, args.efforts, args.repeats, args.budget), (["claude-sonnet-5-5"], ["low"], 3, 50.0))
+        self.assertEqual((args.models, args.efforts, args.repeats, args.budget), (["claude-opus-5-5"], ["low"], 3, 50.0))
 
     def test_the_probe_stops_a_measurement_that_would_pass_the_budget(self):
         report, client = self.measure(budget=0.05)
@@ -203,14 +205,14 @@ class MeasureTest(unittest.TestCase):
         lines = [json.loads(line) for line in path.read_text().splitlines()]
         for r in lines:
             if r["id"] == "G01":
-                r["outcome"] = "human"
+                r["outcome"] = "parked"
         path.write_text("\n".join(json.dumps(r) for r in lines) + "\n")
         text = referee.measurement_report(report["runs"])
         self.assertIn("| 1: G01 |", text)
 
 
 class WorkflowTest(unittest.TestCase):
-    def test_the_measurement_waits_for_fred_and_has_a_hard_budget(self):
+    def test_the_measurement_waits_for_a_maintainer_and_has_a_hard_budget(self):
         text = (REPO / ".github/workflows/referee-models.yml").read_text()
         wf = yaml.safe_load(text)
         job = wf["jobs"]["measure"]
@@ -221,7 +223,7 @@ class WorkflowTest(unittest.TestCase):
         self.assertEqual(set(on), {"workflow_dispatch"})
         inputs = on["workflow_dispatch"]["inputs"]
         self.assertEqual(inputs["budget"]["default"], "50.00")
-        self.assertEqual((inputs["models"]["default"], inputs["efforts"]["default"]), ("claude-sonnet-5-5", "low medium"))
+        self.assertEqual((inputs["models"]["default"], inputs["efforts"]["default"]), ("claude-opus-5-5", "low"))
         self.assertFalse(inputs["live"]["default"])
         self.assertNotIn("web_search", text)
         for name, j in wf["jobs"].items():

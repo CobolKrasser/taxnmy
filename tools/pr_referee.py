@@ -4,17 +4,17 @@
 Every product file a pull request adds or changes gets an outcome:
 
     accept   it may be merged
-    reject   on a rule (TR1-TR8, TV1, TV4), with the reason
-    alias    it is an existing product written in another way (TR4)
+    reject   on a rule (TE1, TK2, TK3, TP1, TP3, TP5, TV1, TV4), with the reason
+    alias    it is an existing product written in another way (TP3)
     parked   not taken in, on a rule, with the reason: the referee doubts, a source is closed, the
              budget or a fork leaves it unjudged, or code holds it for a person (TV3, TV5, tools/guard.py),
              whatever the referee answers. It goes to the parking list (referee/parked.yaml)
              and can be judged again later with one command.
 
-First the lint (TR1-TR3) and the gate (TR5, TR6 and TR8 by code, tools/gate.py), for free; then the AI
-referee, only for what code left, as one batch. Doubt means: not taken in, parked (Fred, 14 November).
+First the lint (TE1, TK2 and TK3) and the gate (TP5, TK2 and TE1 by code, tools/gate.py), for free; then the AI
+referee, only for what code left, as one batch. Doubt means: not taken in, parked (14 November 2026).
 
-The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
+The steps, each in its own job:
 
     collect   pull_request, no key: the changed data files into proposal.json, kept as an artifact.
               It runs the code of the pull request, so nothing downstream trusts what it writes.
@@ -28,8 +28,9 @@ The steps, each in its own job (hosting-taxnmy-publiek.md §4 in keepitfresh):
               is past its term lapses, the rest is judged again as far as its reason allows.
     decide    a person decides on a publisher that code held (TV3, TV5); kept in referee/decisions.yaml.
     settle    a person settles a collision or an audit finding on a product (`kind`); kept there too.
+    remove    a maintainer takes a product out (TK3, TG13); the decision is logged there, with what it was.
     waiting   what waits for a decision of a person, per publisher, as JSON.
-    testset   the 80 cases of referee/testset/cases.yaml, run as if they were one pull request.
+    testset   the 110 cases of referee/testset/cases.yaml, run as if they were one pull request.
 
 No step imports or runs code from a pull request; they read YAML and JSON only.
 """
@@ -50,7 +51,9 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import addition  # noqa: E402
 import alias  # noqa: E402
+import archive  # noqa: E402
 import gate  # noqa: E402
 import intake  # noqa: E402
 import referee  # noqa: E402
@@ -80,11 +83,21 @@ OUTCOMES = ("accept", "reject", "alias", "parked")
 # --------------------------------------------------------------------------- collect (no key; untrusted)
 
 def collect(base: str, head: str, pr: int, root: Path = REPO) -> dict:
-    """The data files the pull request adds or changes, with their text at head."""
-    names = subprocess.run(["git", "diff", "--name-only", "--diff-filter=AM", f"{base}...{head}"], cwd=root,
-                           check=True, capture_output=True, text=True).stdout.split()
-    files = {n: (root / n).read_text(encoding="utf-8") for n in names if DATA_PATH.fullmatch(n)}
-    return {"version": 1, "pr": pr, "head_sha": head, "files": files}
+    """The data files the pull request adds or changes, with their text at head, and the data files it
+    deletes (TK3). Without rename detection a renamed file is a deleted one and an added one."""
+    lines = subprocess.run(["git", "diff", "--name-status", "--no-renames", f"{base}...{head}"], cwd=root,
+                           check=True, capture_output=True, text=True).stdout.splitlines()
+    status = [(ln.split("\t", 1)[0][:1], ln.split("\t", 1)[1]) for ln in lines if "\t" in ln]
+    files = {n: (root / n).read_text(encoding="utf-8") for st, n in status if st in "AM" and DATA_PATH.fullmatch(n)}
+    deleted = sorted(n for st, n in status if st == "D" and DATA_PATH.fullmatch(n))
+    return {"version": 1, "pr": pr, "head_sha": head, "files": files, "deleted": deleted}
+
+
+def deleted_list(path: Path) -> list[str]:
+    """The data files a pull request deletes or renames, one path per line, as GitHub lists them.
+    The gate takes these from GitHub, not from the artifact: the collect step runs code of the pull request."""
+    names = [ln.strip() for ln in path.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    return sorted({n for n in names if DATA_PATH.fullmatch(n)})
 
 
 # --------------------------------------------------------------------------- the artifact (checked strictly)
@@ -96,8 +109,13 @@ def load_proposal(path: Path) -> dict:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise SystemExit(f"{path}: not readable JSON ({type(exc).__name__})")
-    if not isinstance(data, dict) or set(data) != {"version", "pr", "head_sha", "files"} or data["version"] != 1:
+    if not isinstance(data, dict) or set(data) - {"deleted"} != {"version", "pr", "head_sha", "files"} \
+            or data["version"] != 1:
         raise SystemExit(f"{path}: not a proposal of version 1")
+    deleted = data.setdefault("deleted", [])
+    if not isinstance(deleted, list) or len(deleted) > MAX_FILES or \
+            not all(isinstance(d, str) and DATA_PATH.fullmatch(d) for d in deleted):
+        raise SystemExit(f"{path}: deleted is not a list of data files")
     if not isinstance(data["pr"], int) or isinstance(data["pr"], bool) or data["pr"] <= 0:
         raise SystemExit(f"{path}: pr is not a number")
     if not isinstance(data["head_sha"], str) or not re.fullmatch(r"[0-9a-f]{40}", data["head_sha"]):
@@ -115,9 +133,10 @@ def load_proposal(path: Path) -> dict:
     return data
 
 
-def group(files: dict) -> list[dict]:
+def group(files: dict, deleted=()) -> list[dict]:
     """One proposal per product file, with its publisher file when the pull request brings that too.
-    A publisher file that no product of the pull request uses is a proposal of its own."""
+    A publisher file that no product of the pull request uses is a proposal of its own, and so is
+    every data file the pull request deletes or renames (`deleted`, TK3)."""
     proposals, used = [], set()
     for rel in sorted(f for f in files if f.startswith("products/")):
         pub = f"publishers/{rel.split('/')[1]}.yaml"
@@ -135,6 +154,8 @@ def group(files: dict) -> list[dict]:
         proposals.append({"id": rel, "files": own})
     for rel in sorted(f for f in files if f.startswith("publishers/") and f not in used):
         proposals.append({"id": rel, "files": {rel: files[rel]}})
+    for rel in sorted(set(deleted) - set(files)):
+        proposals.append({"id": rel, "files": {}, "deleted": [rel]})
     return proposals
 
 
@@ -203,6 +224,17 @@ def publisher_of(files: dict) -> str:
     return ""
 
 
+def removal(decisions: list[dict], text: str) -> dict | None:
+    """The decision of a maintainer that took the product of `text` out of TAX (TK3, TG13), or None."""
+    try:
+        data = yaml.safe_load(text)
+    except yaml.YAMLError:
+        return None
+    key = data.get("key") if isinstance(data, dict) else None
+    found = [d for d in decisions if d.get("decision") == "remove" and d.get("subject") == key]
+    return found[-1] if found else None
+
+
 def decided_hold(st, publisher: str, decisions: list[dict], items=None) -> tuple[dict, dict, tuple | None]:
     """What code holds the staged proposal on, after the decisions of a person on its publisher:
     (held, holds, rejected). An approved reason no longer holds it; a rejected one rejects it
@@ -233,9 +265,13 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
     refused = intake.refusals(proposals, submitter, limits, load_parked(data_root / "referee/parked.yaml"))
     items = []
     for p in proposals:
-        st = stager.stage_files(p["files"], removed=p.get("removed", ()), context=p.get("context"))
-        item = {"id": p["id"], "key": key_of(p["files"]), "publisher": publisher_of(p["files"]), "files": p["files"],
-                "case": p.get("case"), "old": st.old,
+        mine = decisions if "decisions" not in p else p["decisions"]
+        gone = {rel: stager.data.texts[rel] for rel in p.get("deleted", ()) if rel in stager.data.texts}
+        by_maintainer = {rel: d for rel in gone if (d := removal(mine, gone[rel]))}
+        st = stager.stage_files(p["files"], removed=p.get("removed", ()), context=p.get("context"),
+                                deleted=[rel for rel in gone if rel not in by_maintainer])
+        item = {"id": p["id"], "key": key_of(p["files"] or gone), "publisher": publisher_of(p["files"] or gone),
+                "files": p["files"], "deleted": sorted(gone), "case": p.get("case"), "old": {**gone, **st.old},
                 "lint": [str(f) for f in st.findings], "sources": [], "decided": {}, "ai_rules": [], "message": "", "held": {},
                 "holds": {}, "outcome": "", "rule": "", "reason": "", "by": "", "waits_for": "", "cost": 0.0,
                 "verdict": {}, "checked": {},
@@ -244,6 +280,11 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
         errors = [f for f in st.findings if f.level == "error"]
         if item["id"] in refused:
             settled(item, "reject", *refused[item["id"]])
+        elif by_maintainer and not errors and not p["files"]:
+            d = next(iter(by_maintainer.values()))
+            settled(item, "accept", "TK3", f"a maintainer took {item['key']} out on {d.get('date')}: {d.get('reason', '')}",
+                    by="person")
+            item["old"] = {}
         elif errors:
             settled(item, "reject", errors[0].rule, errors[0].message)
         elif not referee.product_file(p["files"])[0]:
@@ -251,22 +292,34 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             # a second source it gives must pass (TV4).
             sources = [fetcher.fetch(u, "") for u in referee.case_urls(st)]
             item["sources"] = [asdict(s) for s in sources]
-            item["held"], item["holds"], refused = decided_hold(st, item["publisher"], decisions)
+            item["held"], item["holds"], by_person = decided_hold(st, item["publisher"], mine)
             if wrong := referee.second_source_fault(st, sources):
                 settled(item, "reject", "TV4", wrong)
-            elif refused:
-                settled(item, "reject", *refused, by="person")
-            elif moves := redirected(p["files"], sources):
+            elif (machine := machine_fault(st, sources))[0]:
+                settled(item, machine[0], "TE7", machine[1])
+            elif swap := referee.replacement_fault(st, fetcher):
+                settled(item, "reject", "TV5", swap)
+            elif by_person:
+                settled(item, "reject", *by_person, by="person")
+            elif moves := redirected(p["files"], sources, st.old):
                 park_redirected(item, moves)
             elif item["held"]:
                 settled(item, "parked", ", ".join(item["held"]), "; ".join(item["held"].values()))
+            elif add := addition.added(p["files"], st.old):
+                what = "second source" if add[0] == "second" else "source for machines"
+                settled(item, "accept", reason=f"an added {what}, shown by code; the rest of the publisher is not "
+                        "judged again (TV5, TAX-48)")
             else:
                 settled(item, "accept", reason="a publisher file that passes the lint and the checks of code")
+        elif (life := archive.change(p["files"], st.old)) is not None:
+            gate_archive(item, st, *life, fetcher)
         elif (new := alias.added(p["files"], st.old)) is not None:
-            gate_alias(item, st, new, fetcher, decisions, stager)
+            gate_alias(item, st, new, fetcher, mine, stager)
         elif chat := gate.ai_chat(st.product, st.publisher):
-            settled(item, "reject", "TR8", chat["reason"])
-            item["decided"] = {"TR8": chat}
+            settled(item, "reject", "TE1", chat["reason"])
+            item["decided"] = {"TE1": chat}
+        elif gate_identifier(item, st, p["files"], fetcher, mine):
+            pass  # an added identifier its own source shows (TAX-48); otherwise the whole review below
         else:
             sources = referee.gather_sources(fetcher, st)
             item["sources"] = [asdict(s) for s in sources]
@@ -274,22 +327,27 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
             decided = gate.decide(st.product, st.publisher, sources, not st.known_publisher)
             item["decided"] = decided
             wrong = referee.second_source_fault(st, sources)
+            machine = machine_fault(st, sources)
             if gone:
-                settled(item, "reject", "TR7", gone)
+                settled(item, "reject", "TP1", gone)
             elif wrong:
                 settled(item, "reject", "TV4", wrong)
+            elif machine[0]:
+                settled(item, machine[0], "TE7", machine[1])
+            elif swap := referee.replacement_fault(st, fetcher):
+                settled(item, "reject", "TV5", swap)
             elif no := [r for r, j in decided.items() if j["verdict"] == "no"]:
                 settled(item, "reject", no[0], decided[no[0]]["reason"])
-            elif (decision := decided_hold(st, item["publisher"], decisions))[2]:
+            elif (decision := decided_hold(st, item["publisher"], mine))[2]:
                 settled(item, "reject", *decision[2], by="person")
-            elif moves := redirected(p["files"], sources):
+            elif moves := redirected(p["files"], sources, st.old):
                 item["held"], item["holds"], _ = decision
                 park_redirected(item, moves)
             else:
                 item["held"], item["holds"], _ = decision
                 item["ai_rules"] = [r for r in referee.RULES if r not in decided]
                 item["footer"] = footer_counts()  # TAX-43: the referee is shown the page footer
-                item["names"] = referee.publisher_names(st.publisher)  # what a footer quote for TR5 must name
+                item["names"] = referee.publisher_names(st.publisher)  # what a footer quote for TP5 must name
                 item["message"] = referee.build_message(st, "fetched", sources, decided, item["footer"])
                 item["outcome"] = "pending"
         log(f"{item['id']}: {item['outcome']}" + (f" {item['rule']}" if item["rule"] else ""))
@@ -301,7 +359,7 @@ def gate_proposals(proposals: list[dict], fetcher, data_root: Path = REPO, log=p
 def gate_alias(item: dict, st, new: list[str], fetcher, decisions: list[dict], stager) -> dict:
     """A change that only adds aliases (TAX-40, tools/alias.py): judged on the aliases alone.
     Point 1 by code (TV2; TV3 for a person), point 2 by code where a read source of the product
-    writes the name (TR11), else one question for the AI. TR4, TR5, TR7 and TR8 are not judged again."""
+    writes the name (TR11), else one question for the AI. TP3, TP5, TP1 and TE1 are not judged again."""
     product = st.product
     item["alias"] = new
     item["decided"] = alias.not_judged()
@@ -358,11 +416,86 @@ def settle_alias(item: dict, answer: dict, schema: dict) -> dict:
                    f"{', '.join(alias.NOT_JUDGED)}: not judged, {alias.WHY_NOT}", by="ai")
 
 
-def redirected(files: dict, sources: list) -> list[tuple[str, str]]:
+def gate_identifier(item: dict, st, files: dict, fetcher, decisions: list[dict]) -> dict | None:
+    """A change that only adds identifiers to a product (TV5, TAX-48, tools/addition.py): accepted by
+    code when the own source of each one was read and writes the code and the product name. None
+    when code cannot show it, or the change is not only that: the whole review follows, and the item
+    is left as it was."""
+    add = addition.added(files, st.old)
+    if not add or add[0] != "identifier" or any(f.rule == "TK4" for f in st.findings) \
+            or decided_hold(st, item["publisher"], decisions)[2]:
+        return None
+    name = referee.product_name(st)
+    sources = [fetcher.fetch(e["source"], name) for e in add[1] if isinstance(e.get("source"), str)]
+    evidence = addition.identifiers(st.product, add[1], sources)
+    if evidence is None:
+        return None
+    item["sources"] = [asdict(s) for s in sources]
+    item["decided"] = {**{r: gate.judgment("not judged", "judged when the product was taken in; a change that only adds "
+                                           "an identifier does not judge them again (TAX-48)") for r in referee.RULES},
+                       "identifier": gate.judgment("yes", "each added code and the product name are written at the "
+                                                   "code's own source", evidence)}
+    codes = ", ".join(e["quote"] for e in evidence)
+    return settled(item, "accept", "TK4", f"an added identifier ({codes}), written with the product name at its own "
+                   f"source (TR11); the rest of the product is not judged again (TV5, TAX-48)")
+
+
+def machine_fault(st, sources: list | None) -> tuple[str, str]:
+    """TE7 for every publisher file of the proposal (tools/addition.py `machine_fault`)."""
+    for rel, data in referee.proposed_publishers(st):
+        outcome, why = addition.machine_fault(data, referee._yaml(st.old.get(rel, "")) or None, sources)
+        if outcome:
+            return outcome, f"{rel}: {why}"
+    return "", ""
+
+
+def gate_archive(item: dict, st, direction: str, url: str, fetcher) -> dict:
+    """A change that archives a product or takes it up again (TP10, TAX-47, tools/archive.py): judged
+    on that alone. The place of the source by code; the text, when it was read, by one question for
+    the AI. The other rules are not judged again."""
+    item["archive"] = direction
+    item["decided"] = archive.not_judged()
+    outcome, why = archive.place(url, st.publisher)
+    if outcome:
+        return settled(item, outcome, archive.RULE, why, waits="better-proposal")
+    src = fetcher.fetch(url, referee.product_name(st))
+    item["sources"] = [asdict(src)]
+    if end := moved(src):
+        return park_redirected(item, [(url, end)])
+    if not gate.read(src):
+        return settled(item, "parked", archive.RULE, f"{url} could not be read ({src.status}); the referee tries again")
+    item["ask"], item["ai_rules"] = "archive", [archive.RULE]
+    item["message"] = archive.message(st.old[next(iter(st.old))], direction, [src])
+    item["outcome"] = "pending"
+    return item
+
+
+def settle_archive(item: dict, answer: dict, schema: dict) -> dict:
+    """The outcome of the one question on archiving or taking up again: accepted only when the answer
+    is yes with a quote of the read source that names the product (TV6); otherwise parked."""
+    item["cost"], item["usage"] = answer["cost"], answer["usage"]
+    if answer["error"] or answer["stop"] == "refusal":
+        return settled(item, "parked", archive.RULE, answer["error"] or "the model refused", "ai")
+    verdict, why = referee.parse_reply(answer["text"], archive.schema_for(schema, item["archive"]))
+    if verdict is None:
+        return settled(item, "parked", archive.RULE, why, "ai")
+    item["verdict"] = verdict
+    product = referee.product_file(item["files"])[1]
+    why = archive.check(verdict, item["archive"], product, [Source(**s) for s in item["sources"]])
+    item["checked"] = {archive.RULE: "yes" if not why else "doubt"}
+    if why:
+        return settled(item, "parked", archive.RULE, why, "ai", "better-proposal")
+    done = "the publisher ended the product" if item["archive"] == "archive" else "the product gets updates again"
+    return settled(item, "accept", archive.RULE, f"{done}, quoted from a source of the publisher (TV6); "
+                   f"{', '.join(archive.NOT_JUDGED)}: not judged, {archive.WHY_NOT}", by="ai")
+
+
+def redirected(files: dict, sources: list, old: dict | None = None) -> list[tuple[str, str]]:
     """TAX-38: (the URL proposed, where it ended) for each source in the proposed files (of the
     product, its versions, its codes and its publisher) that ends at another address after a
-    redirect. Sources in TAX that the proposal does not bring are not its doing."""
-    mine = intake.urls(files)
+    redirect. Sources in TAX that the proposal does not bring are not its doing: neither those of
+    other files nor those its changed files already held (`old`, TAX-48)."""
+    mine = intake.urls(files) - intake.urls(old or {})
     out = []
     for s in sources:
         if not s.instead_of and s.url in mine and (end := moved(s)) and (s.url, end) not in out:
@@ -468,19 +601,19 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
         client = referee.AnthropicClient()
     # TAX-43: the messages were built in the gate, with or without the page footer; the system prompt
     # must say the same, and one batch has one system prompt.
-    feet = {bool(i.get("footer")) for i in pending if i.get("ask") != "alias"}
+    feet = {bool(i.get("footer")) for i in pending if not i.get("ask")}
     if len(feet) > 1:
         raise SystemExit("the pending items were gated with and without the page footer (TAX-43): gate them again")
     footer = feet == {True}
     system = referee.load_system_prompt(Path(args.prompt), footer)
     schema = referee.load_schema(Path(args.schema))
     api = referee.api_schema(schema)
-    asks = {"alias": (referee.load_system_prompt(alias.PROMPT), referee.load_schema(alias.SCHEMA))} \
-        if any(i.get("ask") == "alias" for i in pending) else {}
+    asks = {a: (referee.load_system_prompt(ASKS[a][0]), referee.load_schema(ASKS[a][1]))
+            for a in {i["ask"] for i in pending if i.get("ask")}}
     requests = []
     for n, item in enumerate(pending):
-        if item.get("ask") == "alias":  # one question on an added alias (TAX-40)
-            text, form = asks["alias"][0], alias.schema_for(referee.api_schema(asks["alias"][1]), item["alias"])
+        if ask := item.get("ask"):  # one question of its own: an added alias (TAX-40), archiving (TAX-47)
+            text, form = asks[ask][0], ASKS[ask][2](referee.api_schema(asks[ask][1]), item)
         else:
             text, form = system, referee.schema_for(api, item["ai_rules"])
         if wrong := referee.format_problems(form):  # refused with a 400 otherwise, before anything is paid
@@ -513,8 +646,8 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
         answers.update(more)
         left_out += out_too
     for cid, answer in answers.items():
-        if by_id[cid].get("ask") == "alias":
-            settle_alias(by_id[cid], answer, asks["alias"][1])
+        if ask := by_id[cid].get("ask"):
+            ASKS[ask][3](by_id[cid], answer, asks[ask][1])
         else:
             settle_answer(by_id[cid], answer, schema)
     for cid in left_out:
@@ -529,6 +662,11 @@ def judge(items: list[dict], args, client=None, now=None, log=print, sleep=None,
                                     if k in item},
                                    ensure_ascii=False) + "\n")
     return run_dir
+
+
+# The questions of their own: ask -> (prompt, answer schema, the schema for one item, settle).
+ASKS = {"alias": (alias.PROMPT, alias.SCHEMA, lambda s, i: alias.schema_for(s, i["alias"]), settle_alias),
+        "archive": (archive.PROMPT, archive.SCHEMA, lambda s, i: archive.schema_for(s, i["archive"]), settle_archive)}
 
 
 def settle_answer(item: dict, answer: dict, schema: dict) -> None:
@@ -550,12 +688,12 @@ def settle_answer(item: dict, answer: dict, schema: dict) -> None:
     item["checked"] = {r: checked[r]["verdict"] for r in referee.RULES}
     outcome, rule = referee.outcome({**checked, "duplicate_of": verdict.get("duplicate_of")})
     held = item.get("held") or {}
-    if held and outcome in ("accept", "human"):
+    if held and outcome in ("accept", "parked"):
         # Held by code (TV3, TV5): a person decides, whatever the referee answered.
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         return settled(item, "parked", ", ".join([*held, *doubts]),
                        "; ".join([*held.values(), *notes, *(f"{r}: {checked[r]['reason']}" for r in doubts)]), "code")
-    if outcome == "human":
+    if outcome == "parked":
         doubts = [r for r in referee.RULES if checked[r]["verdict"] == "doubt"]
         reasons = [n for n in notes] + [f"{r}: {checked[r]['reason']}" for r in doubts if not any(n.startswith(r) for n in notes)]
         # Doubt on sources that were all read: the proposal must get better. Otherwise an event.
@@ -613,8 +751,8 @@ def write_verdicts(items: list[dict], out_dir: Path, pr: int | None, head_sha: s
                    run_dir: Path | None = None) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     cost = sum(i.get("cost", 0.0) for i in items)
-    keep = ("id", "key", "publisher", "outcome", "rule", "reason", "by", "waits_for", "holds", "files", "old", "case",
-            "duplicate_of", "alias", "cost", "submitter", "known")
+    keep = ("id", "key", "publisher", "outcome", "rule", "reason", "by", "waits_for", "holds", "files", "deleted", "old", "case",
+            "duplicate_of", "alias", "archive", "cost", "submitter", "known")
     data = {"version": 1, "pr": pr, "head_sha": head_sha, "run": run_dir.name if run_dir else "",
             "counts": counts(items), "cost": round(cost, 6), "verdicts": [{k: i.get(k) for k in keep} for i in items]}
     (out_dir / "verdicts.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -781,8 +919,7 @@ def decide(publisher: str, decision: str, reason: str, root: Path = REPO, by: st
     subjects = sorted({(rule, s) for e in mine for rule, ss in (e.get("holds") or {}).items() for s in ss})
     if not subjects:
         raise SystemExit(f"Nothing of {publisher} waits for a decision on a reason code held it on.")
-    decisions = [d for d in load_decisions(dpath) if (d.get("publisher"), d.get("rule"), d.get("subject"))
-                 not in {(publisher, r, s) for r, s in subjects}]
+    decisions = load_decisions(dpath)  # every decision is kept; the last one on a subject counts (TG13)
     decisions += [{"publisher": publisher, "rule": r, "subject": s, "decision": decision, "date": day,
                    "reason": reason, "by": by} for r, s in subjects]
     save_decisions(decisions, dpath)
@@ -827,9 +964,12 @@ def settle(key: str, answer: str, reason: str, root: Path = REPO, by: str = "", 
     rels = sorted({str(e.get("path") or "") for e in mine})
     if answer == "remove" and not all(r.startswith("products/") and DATA_PATH.fullmatch(r) for r in rels):
         raise SystemExit(f"settle: {key} has no product file to remove ({', '.join(rels) or '-'})")
-    decisions = [d for d in load_decisions(dpath) if (d.get("rule"), d.get("subject")) != (kind, key)]
-    decisions.append({"publisher": mine[0].get("publisher") or "", "rule": kind, "subject": key, "decision": answer,
-                      "date": day, "reason": reason, "by": by})
+    decisions = load_decisions(dpath)  # every decision is kept; the last one on a subject counts (TG13)
+    entry = {"publisher": mine[0].get("publisher") or "", "rule": kind, "subject": key, "decision": answer,
+             "date": day, "reason": reason, "by": by}
+    if answer == "remove":
+        entry.update(what_was(root, rels))
+    decisions.append(entry)
     save_decisions(decisions, dpath)
     if answer == "proposal":
         for e in mine:
@@ -844,6 +984,40 @@ def settle(key: str, answer: str, reason: str, root: Path = REPO, by: str = "", 
     save_parked(entries, path)
     log(f"{key}: {kind}, {answer}: {SETTLE[kind][answer]}")
     return mine
+
+
+def what_was(root: Path, rels: list[str]) -> dict:
+    """What the log keeps of a product a maintainer takes out (TK3, TG13): its name, its publisher and
+    its sources, so a reader of a key that is free again can see what it was."""
+    data = {}
+    for rel in rels:
+        if (root / rel).is_file():
+            data = yaml.safe_load((root / rel).read_text(encoding="utf-8")) or {}
+            break
+    sources = referee.urls_of({"x.yaml": yaml.safe_dump(data)}) if data else []
+    return {"name": data.get("name", ""), "removed_publisher": data.get("publisher", ""), "path": rels[0] if rels else "",
+            "sources": sources}
+
+
+def remove(key: str, reason: str, root: Path = REPO, by: str = "", now=None, log=print) -> dict:
+    """A maintainer takes the product `key` out of TAX (TK3, TG13). The decision goes to DECISIONS with
+    the key, the name, the publisher, the sources, the day, the reason and who; then the file is
+    deleted. The key is free again: a next proposal with it is judged as any new product."""
+    if not reason.strip():
+        raise SystemExit("remove: a reason is required")
+    rels = [r.relative_to(root).as_posix() for r in sorted((root / "products").glob("*/*.yaml"))
+            if (yaml.safe_load(r.read_text(encoding="utf-8")) or {}).get("key") == key]
+    if not rels:
+        raise SystemExit(f"remove: no product file has the key {key}")
+    day = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
+    entry = {"publisher": key.split("/")[0], "rule": "remove", "subject": key, "decision": "remove", "date": day,
+             "reason": reason, "by": by, **what_was(root, rels)}
+    dpath = root / DECISIONS
+    save_decisions(load_decisions(dpath) + [entry], dpath)
+    for r in rels:
+        (root / r).unlink()
+    log(f"{key}: taken out ({', '.join(rels)}); the decision is in {DECISIONS}")
+    return entry
 
 
 def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
@@ -861,7 +1035,7 @@ def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
         if v["outcome"] == "parked":
             entries[v["key"]] = park_entry({**v, "pr": verdicts.get("pr")}, day)  # a new proposal: a new term
         old = v.get("old") or {}
-        for rel in v["files"]:
+        for rel in [*v["files"], *(v.get("deleted") or [])]:
             if rel in old:
                 (root / rel).write_text(old[rel], encoding="utf-8")
                 gone.append(rel)
@@ -885,8 +1059,8 @@ def apply(verdicts: dict, root: Path = REPO, now=None, log=print) -> dict:
 # --------------------------------------------------------------------------- the commands
 
 def add_judge_args(p) -> None:
-    p.add_argument("--model", default="claude-opus-5-5", help="until TAX-18 has chosen; see referee/README.md")
-    p.add_argument("--effort", choices=("low", "medium", "high"), default="low")
+    p.add_argument("--model", default=referee.MODEL, help="the agreed model; see referee/README.md § The agreed model")
+    p.add_argument("--effort", choices=("low", "medium", "high"), default=referee.EFFORT)
     p.add_argument("--max-tokens", type=int, default=PR_MAX_TOKENS)
     p.add_argument("--budget", type=float, default=referee.BUDGET, help="dollars, for all runs in --out together")
     p.add_argument("--pr-cap", type=float, default=PR_CAP, help="dollars per pull request, its runs together")
@@ -907,7 +1081,10 @@ def testset_proposals(path: Path, data_root: Path = REPO) -> list[dict]:
     for case in referee.load_cases(path):
         files = {rel: texts[rel] for rel in case.holdout}
         files.update(case.proposal)
-        out.append({"id": case.id, "files": files, "removed": case.holdout + case.hide, "context": case.context,
+        extra = {"decisions": (yaml.safe_load(case.context[DECISIONS]) or {}).get("decisions") or []} \
+            if DECISIONS in case.context else {}
+        out.append({**extra, "id": case.id, "files": files, "removed": case.holdout + case.hide, "deleted": case.delete,
+                    "context": {k: v for k, v in case.context.items() if k != DECISIONS},
                     "case": {"expect": case.expect, "lint": case.lint, "rules": case.rules}})
     return out
 
@@ -917,16 +1094,13 @@ def score(items: list[dict]) -> str:
     c = counts(items)
     bad_accept = [i["id"] for i in items if i["id"].startswith("B") and i["outcome"] == "accept"]
     good_out = [i["id"] for i in items if i["id"][0] in "GH" and i["outcome"] in ("reject", "alias")]
-    # The test set says human where the PR mode parks.
-    wrong = [i["id"] for i in items if i.get("case") and
-             (i["outcome"] if i["outcome"] != "parked" else "human") not in i["case"]["expect"]]
+    wrong = [i["id"] for i in items if i.get("case") and i["outcome"] not in i["case"]["expect"]]
     return "\n".join([
         "## The test set as a pull request", "",
         "| outcome | proposals |", "| --- | --- |", *[f"| {o} | {n} |" for o, n in c.items()], "",
         f"Bad cases accepted (target 0): {len(bad_accept)} {', '.join(bad_accept)}  ",
         f"Good cases rejected or aliased: {len(good_out)} {', '.join(good_out)}  ",
-        f"Not in `expect` (parked counts as human): {len(wrong)} {', '.join(wrong)}  ",
-        "Cases for a person: 0 (the PR mode parks instead)", ""])
+        f"Not in `expect`: {len(wrong)} {', '.join(wrong)}  ", ""])
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -947,6 +1121,7 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--fork", action="store_true", help="a pull request from a fork: judged by code only, the rest parked")
     g.add_argument("--no-browser", action="store_true")
     g.add_argument("--output", default="gated/gated.json")
+    g.add_argument("--deleted", help="a file with the data files the pull request deletes or renames, as GitHub lists them")
     g.add_argument("--submitter", help="the account of the pull request (TAX-32), as GitHub gives it")
     g.add_argument("--known", choices=("true", "false"), default="false",
                    help="whether a pull request of the submitter was taken in before")
@@ -972,6 +1147,10 @@ def main(argv: list[str] | None = None) -> int:
     t.add_argument("answer", choices=sorted({a for k in SETTLE.values() for a in k}))
     t.add_argument("--reason", required=True)
     t.add_argument("--by", default="")
+    r = sub.add_parser("remove", help="a maintainer takes a product out; the decision is logged (TK3, TG13)")
+    r.add_argument("key", help="the key of the product")
+    r.add_argument("--reason", required=True)
+    r.add_argument("--by", default="")
     sub.add_parser("waiting", help="what waits for a decision of a person, per publisher, as JSON")
     args = p.parse_args(argv)
 
@@ -979,13 +1158,14 @@ def main(argv: list[str] | None = None) -> int:
         data = collect(args.base, args.head, args.pr)
         Path(args.output).parent.mkdir(parents=True, exist_ok=True)
         Path(args.output).write_text(json.dumps(data, ensure_ascii=False) + "\n", encoding="utf-8")
-        print(f"{len(data['files'])} data files of pull request {args.pr}")
+        print(f"{len(data['files'])} data files of pull request {args.pr}; {len(data['deleted'])} deleted")
     elif args.command == "pr-number":
         print(load_proposal(Path(args.proposal))["pr"])
     elif args.command == "gate":
         if args.proposal:
             data = load_proposal(Path(args.proposal))
-            proposals, pr, head = group(data["files"]), data["pr"], data["head_sha"]
+            deleted = set(data["deleted"]) | set(deleted_list(Path(args.deleted)) if args.deleted else ())
+            proposals, pr, head = group(data["files"], deleted), data["pr"], data["head_sha"]
         else:
             proposals, pr, head = testset_proposals(Path(args.testset)), None, ""
             if args.cases:
@@ -1040,6 +1220,8 @@ def main(argv: list[str] | None = None) -> int:
         decide(args.publisher, args.decision, args.reason, by=args.by)
     elif args.command == "settle":
         settle(args.key, args.answer, args.reason, by=args.by)
+    elif args.command == "remove":
+        remove(args.key, args.reason, by=args.by)
     elif args.command == "waiting":
         print(json.dumps(waiting(load_parked(), load_terms()), indent=1, ensure_ascii=False))
     return 0

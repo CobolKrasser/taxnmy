@@ -1,5 +1,5 @@
 # The limits of the intake (TAX-32, rules TV8-TV11). Provisional: they start low and are adjusted on
-# what we see (decision 31). Change a number here, not in the code; tools/intake.py reads it.
+# what we see. Change a number here, not in the code; tools/intake.py reads it.
 version: 1
 
 # TV11: the intake for proposals. false: every new proposal is rejected with that reason. Reading the
@@ -18,7 +18,7 @@ open_per_submitter:
   unknown: 3
   known: 10
 
-# The parking list as a whole (TV9). When it is full, a new proposal that would be parked is
+# The parking list as a whole (TV8). When it is full, a new proposal that would be parked is
 # rejected instead.
 parking_list: 200
 
@@ -31,7 +31,7 @@ unknown_share_of_day: 0.5
 submitters:
   CobolKrasser:   # the maintainers' own rounds, such as an import of a catalog
     open: 500
-  kev-ronde-1:    # TAX-27, the KEV round (Fred, 19 November 2026: "maak een uitzondering voor het budget").
+  kev-ronde-1:    # TAX-27, the KEV round (19 November 2026: an exception to the budget).
     # Only for this round: the workflow referee-import names it with the input submitter. The hard
     # limit of the whole round is $10, grouping and referee together: start it once, with budget 10.00.
     # Instead of the shared day ceiling the referee has this one; the ceiling per

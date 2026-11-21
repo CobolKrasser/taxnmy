@@ -50,3 +50,27 @@ class NumberingTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AgreedModelTest(unittest.TestCase):
+    """TG12 (TAX-46): every default for model and effort, in code and in workflows, is the agreed stand."""
+
+    def test_every_default_is_the_agreed_stand(self):
+        import re
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
+        import referee
+        root = Path(__file__).resolve().parent.parent
+        models, efforts = set(), set()
+        for wf in sorted((root / ".github/workflows").glob("*.yml")):
+            text = wf.read_text(encoding="utf-8")
+            models |= set(re.findall(r"REFEREE_MODEL \|\| '([^']+)'", text))
+            efforts |= set(re.findall(r"REFEREE_EFFORT \|\| '([^']+)'", text))
+            for block in re.findall(r"\n      (model|models|effort|efforts):\n((?:        .*\n)+)", text):
+                default = re.search(r"default: \"?([^\"\n]*)\"?", block[1])
+                if default and default.group(1):
+                    (models if block[0].startswith("model") else efforts).update(default.group(1).split())
+        self.assertEqual(models, {referee.MODEL})
+        self.assertEqual(efforts, {referee.EFFORT})
+        readme = (root / "referee/README.md").read_text(encoding="utf-8")
+        self.assertEqual(readme.count("### The agreed model"), 1)

@@ -145,7 +145,7 @@ class GateTest(unittest.TestCase):
     def test_a_rejection_still_wins(self):
         dead = "https://www.synology.com/en-global/products/DS128"  # the fake answers 404
         item = self.gate({"products/synology/ds501.yaml": product(source=dead)}, {VERSIONS: VERSIONS + "&x=1"})
-        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TR7"))
+        self.assertEqual((item["outcome"], item["rule"]), ("reject", "TP1"))
 
 
 class PublisherDomainTest(unittest.TestCase):
@@ -171,11 +171,11 @@ class ImporterTest(unittest.TestCase):
                 return referee.Source(url, "200", f"DS501 {PAGE}", final_url=url + "-other" if "products" in url else "")
 
         row = type("Row", (), {"source": PRODUCT, "versions": VERSIONS, "name": "DS501"})()
-        o = type("O", (), {"outcome": "candidate", "row": row, "new_publisher": False, "reason": "", "detail": "", "moves": []})()
+        o = type("O", (), {"outcome": "candidate", "row": row, "new_publisher": False, "reason": "", "detail": "", "moves": [], "instead": [], "publisher": ""})()
         importer.check_pages([o], F())
         self.assertEqual((o.outcome, o.reason), ("parked", "moved"), "TAX-42: the address it ends at redirects again")
         self.assertIn(PRODUCT + "-other", o.detail)
-        self.assertIn("geen tweede poging", o.detail)
+        self.assertIn("no second try", o.detail)
 
 
 if __name__ == "__main__":

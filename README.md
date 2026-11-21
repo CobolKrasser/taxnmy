@@ -81,26 +81,29 @@ observed per product, with its source (TP4).
 
 ### Identifiers
 
-Existing codes are identifiers of a product, each with its source (TK4, TK5):
-
-| code | unique to one product? | when a proposal matches an existing product |
-| --- | --- | --- |
-| purl (without version and qualifiers) | yes, except type `generic` | duplicate |
-| winget package identifier | yes | duplicate |
-| Homebrew token | yes | duplicate |
-| CPE (vendor and product) | no | signal for review |
-| GTIN | no (bundles share one) | signal for review |
+Existing codes are identifiers of a product, each with a source of its own (TK4): purl (without
+version and qualifiers), winget package identifier, Homebrew token, CPE (vendor and product) and
+GTIN. An identifier that is already on another product is a signal: the proposal goes to the
+referee, which checks with TP3 whether it is a product of its own.
 
 ### Aliases
 
 An alias is an earlier or other key of the same product. A proposal that matches a key or an alias
-is a duplicate (TR3).
+is a duplicate (TK3).
+
+### Archived products
+
+A product is archived when its publisher has ended it: it gets no more updates (TP10). Only a
+change that proposes it sets `archived`, with a page of the publisher that shows the end; a change
+that takes the product up again replaces it with `resumed` and a page that shows new updates.
+Nothing in TAXNMY archives a product by itself, after a term or a count. An archived product keeps
+its key and its aliases, and its file stays where it is.
 
 ### The referee
 
 Every proposal arrives as a pull request and is judged against the rules of the referee (TR) and
-the rules that protect against intent (TV). TR1–TR3 are checked by code on every pull request
-(the lint); TR4–TR8 are judged by an AI with the source at hand, after code has settled what it can
+the rules that protect against intent (TV). TE1, TK2 and TK3 are checked by code on every pull request
+(the lint); TP1, TP3, TP5, TK2 and TE1 are judged by an AI with the source at hand, after code has settled what it can
 (the gate). See [referee/README.md](referee/README.md).
 
 #### How code applies TV
@@ -113,11 +116,11 @@ How code applies TV1–TV6 (`tools/guard.py`, the lint, and `referee/prompt.md`)
 | TV2 | The message to the referee holds an `<identity>` block: whether the publisher and each domain is already in TAX, compared character by character. The referee is told not to judge that. | — |
 | TV3 | The lint gives a signal for a publisher key, a product key within its publisher, or a domain that is one or two characters from an existing one, or the same once characters that look alike are read as one (`0` and `o`, `rn` and `m`, …). A difference in digits only (another model number) does not count. | *parked*, with the existing item |
 | TV4 | Nothing is required of a new publisher beyond its own site. A second source that a publisher file gives (`second_source`) must be a page that is not on the publisher's domain, that can be read, and that names the publisher's domain. The lint checks where it stands; the gate reads it. | *reject* when a given second source does not pass |
-| TV5 | A change to an existing file that moves a source, the publisher, a code or the source of a code to another domain or another value. | *parked* |
+| TV5 | A change to an existing product is judged on what it changes. A change that replaces the publisher is rejected; the product may be proposed again. A source that moves to another domain passes only if the old source, read now, redirects there or names the new domain. A code that is changed or taken out, a new domain for machines, or another second source is held for a person. A change that only adds an alias, an identifier, a source for machines or a second source is judged on the addition; code accepts what it can show, and the rest gets the whole review. | *reject*, or *parked* for a code |
 | TV6 | Every *yes* needs a quote that code finds in the source text. | *doubt*, so *parked* |
 
-A proposal held on TV3 or TV5 still goes to the referee, so that no rule is left untested; a
-*reject* stays a *reject*, anything else is *parked* for a person.
+A proposal held for a person (TV3, or TV5 on a code) still goes to the referee, so that no rule is
+left untested; a *reject* stays a *reject*, anything else is *parked* for a person.
 
 ## Scope
 
@@ -127,7 +130,7 @@ If technical specifications are added later, it will only be from a fixed vocabu
 and a source for every value.
 
 The schema accepts no fields other than the ones it defines, so a proposal with any other value is
-rejected on TR1. A change of the scope goes through a pull request, like any other change (TG9).
+rejected on TE1. A change of the scope goes through a pull request, like any other change (TG9).
 
 ## Repository layout
 
@@ -135,9 +138,9 @@ rejected on TR1. A change of the scope goes through a pull request, like any oth
 publishers/<publisher>.yaml          one file per publisher
 products/<publisher>/<product>.yaml  one file per product
 schema/                              JSON schemas for both files
-tools/                               the lint (writing rule, TR1–TR3), the referee harness and the count of candidate sources (`census.py`)
+tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness and the count of candidate sources (`census.py`)
 tests/                               tests for the lint and the harness
-referee/                             prompt, test set and runs of the referee (TR4–TR8)
+referee/                             prompt, test set and runs of the referee (TP1, TP3, TP5, TK2 and TE1)
 ```
 
 How to propose a product: see [CONTRIBUTING.md](CONTRIBUTING.md).

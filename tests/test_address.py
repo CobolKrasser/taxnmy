@@ -129,7 +129,7 @@ class ProblemTest(unittest.TestCase):
                 self.assertFalse(address.is_public(ip))
 
 
-# --------------------------------------------------------------------------- the lint (TR1)
+# --------------------------------------------------------------------------- the lint (TE1)
 
 class LintAddressTest(unittest.TestCase):
     def setUp(self):
@@ -148,7 +148,7 @@ class LintAddressTest(unittest.TestCase):
     def assertRefused(self, source, contains):
         self.write("products/synology/ds224-plus.yaml", product(source=source))
         found = self.errors()
-        self.assertEqual([(f.file, f.line, f.rule) for f in found], [("products/synology/ds224-plus.yaml", 5, "TR1")], found)
+        self.assertEqual([(f.file, f.line, f.rule) for f in found], [("products/synology/ds224-plus.yaml", 5, "TE1")], found)
         self.assertIn(contains, found[0].message)
 
     def test_a_good_product_passes(self):
@@ -173,24 +173,24 @@ class LintAddressTest(unittest.TestCase):
               source: https://www.synology.com/en-global/company
             """))
         found = self.errors()
-        self.assertEqual(sorted((f.line, f.rule) for f in found), [(5, "TR1"), (7, "TR1")], found)
+        self.assertEqual(sorted((f.line, f.rule) for f in found), [(5, "TE1"), (7, "TE1")], found)
 
     def test_http_is_refused_by_the_schema(self):
         self.assertRefused("http://www.synology.com/en-global/products/DS224+", "does not match")
 
     def test_a_long_name_is_refused(self):
         self.write("products/synology/ds224-plus.yaml", product(name="D" * 101))
-        self.assertIn("is too long", " ".join(f.message for f in self.errors() if f.rule == "TR1"))
+        self.assertIn("is too long", " ".join(f.message for f in self.errors() if f.rule == "TE1"))
 
     def test_a_name_with_html_or_a_control_character_is_refused(self):
         for name in ('"DS224+ <img src=x onerror=alert(1)>"', '"DS224+\\u0007"', '"DS224+\\u202Etxt"'):
             with self.subTest(name=name):
                 self.write("products/synology/ds224-plus.yaml", product(name=name))
-                self.assertIn("does not match", " ".join(f.message for f in self.errors() if f.rule == "TR1"))
+                self.assertIn("does not match", " ".join(f.message for f in self.errors() if f.rule == "TE1"))
 
     def test_an_alias_with_html_is_refused(self):
         self.write("products/synology/ds224-plus.yaml", product(aliases='["synology/<b>x</b>"]'))
-        self.assertTrue(any(f.rule == "TR1" and "does not match" in f.message for f in self.errors()))
+        self.assertTrue(any(f.rule == "TE1" and "does not match" in f.message for f in self.errors()))
 
 
 # --------------------------------------------------------------------------- the reader
@@ -321,7 +321,7 @@ class CommentTest(unittest.TestCase):
     NAME = "**Bold** <img src=x onerror=alert(1)> [link](https://evil.example) @someone `tick` | pipe"
 
     def item(self):
-        return {"id": "products/acme/widget.yaml", "outcome": "reject", "rule": "TR1", "by": "code",
+        return {"id": "products/acme/widget.yaml", "outcome": "reject", "rule": "TE1", "by": "code",
                 "reason": f"name {self.NAME!r} is not the name on the source", "waits_for": None}
 
     def test_a_name_with_markup_or_a_mention_shows_as_written(self):

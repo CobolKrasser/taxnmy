@@ -1,18 +1,19 @@
 # TAXNMY referee testset, version 1 (13 November 2026)
 #
-# 91 proposals: 35 good (3 of them now expected human: their sources redirect, TAX-38), 54 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
+# 110 proposals: 42 good (3 of them now expected parked: their sources redirect, TAX-38), 66 bad, 2 for a person (H01 and H02 are good since 13 November: AI models are in TAX). How to read and run them: referee/testset/README.md.
 #
 # Fields per case
 #   id        G.. good, B.. bad, H.. the AI models (once for a person, now good)
-#   expect    the outcomes that count as right: accept | reject | alias | human
+#   expect    the outcomes that count as right: accept | reject | alias | parked
 #   rules     for a bad case: the rules of which at least one must answer "no" (or the lint rule)
 #   alias_of  for expect alias: the key the proposal duplicates
-#   lint      what tools/lint.py reports on the staged case: pass | signal | error TR1/TR2/TR3
+#   lint      what tools/lint.py reports on the staged case: pass | signal | error TE1/TK2/TK3/TK3
 #   type      the kind of case, used to report results per kind
 #   holdout   files taken out of the dataset and proposed again, unchanged
 #   hide      files taken out of the dataset and not proposed
 #   context   files added to the dataset before the case runs
 #   proposal  files proposed: path -> file content
+#   delete    data files the proposal deletes or renames (TK3)
 #   verify    URLs written for this testset; check them before the run (see README)
 #   note      why the expectation is what it is
 
@@ -45,16 +46,16 @@ cases:
   holdout: [products/shelly/shelly-plus-1pm.yaml]
 - id: G05
   type: holdout-device
-  expect: [human]
+  expect: [parked]
   lint: pass
   holdout: [products/fortinet/fortigate-60f.yaml]
-  note: The product source is a PDF datasheet; if it is unreadable, human is the expected answer. Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its versions source redirects to a page deeper in the release notes, so the expected answer is human (parked, waiting for a better proposal).
+  note: The product source is a PDF datasheet; if it is unreadable, parked is the expected answer. Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its versions source redirects to a page deeper in the release notes, so the expected answer is parked (waiting for a better proposal).
 - id: G06
   type: holdout-device
   expect: [accept]
   lint: pass
   holdout: [products/sony/ilce-7m4.yaml]
-  note: The model code ILCE-7M4 and the marketing name α7 IV both appear at the source. The name is the model code as the source writes it (TR6).
+  note: The model code ILCE-7M4 and the marketing name α7 IV both appear at the source. The name is the model code as the source writes it (TK2).
 - id: G07
   type: holdout-device
   expect: [accept]
@@ -63,10 +64,10 @@ cases:
   note: The versions source is the English page of the update notes of the SM-X710 (each build with Android version and date), not the language menu at SM-X710/EUX/doc.html. The number in its address is the date of the first release (230710 is 2023-07-10); every later release is added to the same page. The product source is Samsung's support page for the SM-X710; the old shop address of this tablet now sends the reader to its successor.
 - id: G08
   type: holdout-device
-  expect: [human]
+  expect: [parked]
   lint: pass
   holdout: [products/google/pixel-8.yaml]
-  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product source now redirects to the shop page of a refurbished device, another product, so the expected answer is human (parked, waiting for a better proposal).
+  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product source now redirects to the shop page of a refurbished device, another product, so the expected answer is parked (waiting for a better proposal).
 - id: G09
   type: holdout-device
   expect: [accept]
@@ -89,10 +90,10 @@ cases:
   holdout: [products/python-software-foundation/python.yaml]
 - id: G13
   type: holdout-software
-  expect: [human]
+  expect: [parked]
   lint: pass
   holdout: [products/microsoft/sql-server.yaml]
-  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product and versions source redirect to a page on another host, so the expected answer is human (parked, waiting for a better proposal).
+  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product and versions source redirect to a page on another host, so the expected answer is parked (waiting for a better proposal).
 - id: G14
   type: holdout-service
   expect: [accept]
@@ -128,7 +129,7 @@ cases:
   holdout: [products/nextcloud/nextcloud.yaml, publishers/nextcloud.yaml]
   note: The publisher has no other products, so it is held out with the product.
 
-# TR4 signals from fase 1: one CPE for two products with their own update stream (TP3).
+# TP3 signals from fase 1: one CPE for two products with their own update stream (TP3).
 - id: G20
   type: tr4-signal
   expect: [accept]
@@ -148,24 +149,24 @@ cases:
   note: ansible-core and the ansible community package have their own version numbers and release cycles.
 - id: G23
   type: tr4-signal
-  expect: [accept, human]
+  expect: [accept, parked]
   lint: signal
   holdout: [products/red-hat/ansible.yaml]
-  note: Own update stream, so TR4 is yes. Who publishes the community package (TR5) may need a person.
+  note: Own update stream, so TP3 is yes. Who publishes the community package (TP5) may need a person.
 
-# Two publishers of one group (TR5).
+# Two publishers of one group (TP5).
 - id: G24
   type: related-publisher
-  expect: [accept, human]
+  expect: [accept, parked]
   lint: pass
   holdout: [products/alibaba-cloud/alibaba-ack.yaml, publishers/alibaba-cloud.yaml]
   note: The dataset keeps the publisher alibaba. Alibaba Cloud publishes the ACK updates under its own name, as a subsidiary that publishes its own updates. Human is fine if the sources do not show it.
 - id: G25
   type: related-publisher
-  expect: [accept, human]
+  expect: [accept, parked]
   lint: pass
   holdout: [products/alibaba/alibaba-dragonwell.yaml, publishers/alibaba.yaml]
-  note: The dataset keeps alibaba-cloud. The publisher source in fase 1 is an endoflife.date page; if it does not show who publishes, human is right.
+  note: The dataset keeps alibaba-cloud. The publisher source in fase 1 is an endoflife.date page; if it does not show who publishes, parked is right.
 
 # New proposals.
 - id: G26
@@ -200,10 +201,10 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://vovsoft.com/, https://vovsoft.com/software/csv-to-json-converter/, https://vovsoft.com/software/json-to-csv-converter/]
-  note: Same words in another order, but another product. The lint signals it; TR4 must say yes.
+  note: Same words in another order, but another product. The lint signals it; TP3 must say yes.
 - id: G27
   type: own-firmware
-  expect: [accept, human]
+  expect: [accept, parked]
   lint: pass
   proposal:
     products/samsung/galaxy-tab-s9-5g.yaml: |
@@ -220,7 +221,7 @@ cases:
   note: Looks like a variant of samsung/galaxy-tab-s9 (SM-X710), but has its own firmware per model code, so it is a product of its own (TP3). The source is the page that the frame of doc.samsungmobile.com/SM-X716B/EUX/doc.html loads (run A read only the menu around it).
 - id: G28
   type: distribution-package
-  expect: [accept, human]
+  expect: [accept, parked]
   lint: pass
   proposal:
     products/canonical/php8-3.yaml: |
@@ -262,7 +263,7 @@ cases:
   note: A small publisher, new to TAX, with only its own site, where the product is to be had and its current version is published, and no second source. Under TV4 it is taken in on its own evidence (decision of 17 November).
 
 # ---------------------------------------------------------------------------------------------
-# AI MODELS — once for a person; good since Fred decided that AI models are in TAX (13 November).
+# AI MODELS — once for a person; good since 13 November 2026: AI models are in TAX.
 # ---------------------------------------------------------------------------------------------
 
 - id: H01
@@ -271,24 +272,24 @@ cases:
   lint: pass
   holdout: [products/anthropic/claude.yaml, publishers/anthropic.yaml]
   verify: [https://www.anthropic.com/company]
-  note: AI models belong in TAX (Fred, 13 Nov), one product per provider with the model names as versions and an end date per version, as endoflife.date keeps them. The id stays H01; the case is now a good one.
+  note: AI models belong in TAX (13 November 2026), one product per provider with the model names as versions and an end date per version, as endoflife.date keeps them. The id stays H01; the case is now a good one.
 - id: H02
   type: ai-model
-  expect: [accept, human]
+  expect: [accept, parked]
   lint: pass
   holdout: [products/openai/openai-api-models.yaml, publishers/openai.yaml]
   verify: [https://developers.openai.com/api/docs/deprecations]
-  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (TR6) is a real border case, and human is right too (run A2 review §1, point 5).
+  note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (TK2) is a real border case, and parked is right too (run A2 review §1, point 5).
 
 # ---------------------------------------------------------------------------------------------
-# BAD, caught by code (TR1–TR3, and the code part of TR8). Do not reach the AI.
+# BAD, caught by code (TE1, TK2 and TK3, and the code part of TE1). Do not reach the AI.
 # ---------------------------------------------------------------------------------------------
 
 - id: B01
   type: code
   expect: [reject]
-  rules: [TR1]
-  lint: error TR1
+  rules: [TE1]
+  lint: error TE1
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds124.yaml: |
@@ -303,8 +304,8 @@ cases:
 - id: B02
   type: code
   expect: [reject]
-  rules: [TR1]
-  lint: error TR1
+  rules: [TE1]
+  lint: error TE1
   hide: [products/apple/apple-watch-ultra.yaml]
   proposal:
     products/apple/apple-watch-ultra.yaml: |
@@ -322,8 +323,8 @@ cases:
 - id: B03
   type: code
   expect: [reject]
-  rules: [TR2]
-  lint: error TR2
+  rules: [TK2]
+  lint: error TK2
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds-124.yaml: |
@@ -340,8 +341,8 @@ cases:
 - id: B04
   type: code
   expect: [reject]
-  rules: [TR2]
-  lint: error TR2
+  rules: [TK2]
+  lint: error TK2
   hide: [products/synology/ds124.yaml]
   proposal:
     products/synology/ds124@7-2.yaml: |
@@ -358,8 +359,8 @@ cases:
 - id: B05
   type: code
   expect: [reject, alias]
-  rules: [TR3]
-  lint: error TR3
+  rules: [TP3]
+  lint: signal
   proposal:
     publishers/caddyserver.yaml: |
       key: caddyserver
@@ -378,11 +379,11 @@ cases:
       - purl: pkg:github/caddyserver/caddy
         source: https://github.com/caddyserver/caddy
       aliases: []
-  note: The purl belongs to caddy/caddy, so this is a duplicate under another publisher key.
+  note: The purl belongs to caddy/caddy, so this is the same product under another publisher key. Since TAX-46 (TK4) the same identifier on another product is a signal; the referee judges it (TP3), so alias or reject.
 - id: B06
   type: ai-source
-  expect: [reject, human]
-  rules: [TR8]
+  expect: [reject, parked]
+  rules: [TE1]
   lint: pass
   hide: [products/fortinet/fortigate-60f.yaml]
   proposal:
@@ -398,18 +399,18 @@ cases:
       - gtin: "0812345678904"
         source: https://chatgpt.com/share/6731a2b4-0000-0000-0000-000000000000
       aliases: []
-  note: The GTIN points to an AI chat, not a source. The lint does not catch this yet (proposal in README); the referee must, under TR8.
+  note: The GTIN points to an AI chat, not a source. The lint does not catch this yet (proposal in README); the referee must, under TE1.
 
 # ---------------------------------------------------------------------------------------------
 # BAD, judged by the AI.
 # ---------------------------------------------------------------------------------------------
 
-# Same product, words in another order (TR3 signal -> TR4 alias).
+# Same product, words in another order (TK3 signal -> TP3 alias).
 - id: B07
   type: word-order-duplicate
   expect: [alias]
   alias_of: apple/macbook-pro-14-inch-2021
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/apple/macbook-pro-2021-14-inch.yaml: |
@@ -426,7 +427,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: apple/ipad-pro-12-9-inch-5th-generation
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/apple/ipad-pro-5th-generation-12-9-inch.yaml: |
@@ -443,7 +444,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: apple/apple-tv-4k-3rd-generation
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/apple/apple-tv-3rd-generation-4k.yaml: |
@@ -460,7 +461,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: shelly/shelly-plus-1pm
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/shelly/shelly-1pm-plus.yaml: |
@@ -477,7 +478,7 @@ cases:
   type: word-order-duplicate
   expect: [alias]
   alias_of: samsung/galaxy-tab-s9
-  rules: [TR4]
+  rules: [TP3]
   lint: signal
   proposal:
     products/samsung/galaxy-s9-tab.yaml: |
@@ -491,12 +492,12 @@ cases:
       identifiers: []
       aliases: []
 
-# Variant without its own update stream (TR4).
+# Variant without its own update stream (TP3).
 - id: B12
   type: variant
   expect: [alias, reject]
   alias_of: apple/iphone-17-pro
-  rules: [TR4]
+  rules: [TP3]
   lint: pass
   proposal:
     products/apple/iphone-17-pro-256gb-cosmic-orange.yaml: |
@@ -514,7 +515,7 @@ cases:
   type: variant
   expect: [alias, reject]
   alias_of: apple/apple-watch-ultra
-  rules: [TR4, TR6]
+  rules: [TP3, TK2]
   lint: pass
   proposal:
     products/apple/apple-watch-ultra-with-alpine-loop.yaml: |
@@ -530,9 +531,9 @@ cases:
   note: A band is an accessory.
 - id: B14
   type: variant
-  expect: [alias, reject, human]
+  expect: [alias, reject, parked]
   alias_of: fortinet/fortigate-60f
-  rules: [TR4]
+  rules: [TP3]
   lint: pass
   proposal:
     products/fortinet/fortigate-60f-unified-threat-protection-bundle.yaml: |
@@ -545,12 +546,12 @@ cases:
         source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
       identifiers: []
       aliases: []
-  note: Since TAX-38 also human, because its versions source redirects to another address. A licence bundle on the same device and firmware.
+  note: Since TAX-38 also parked, because its versions source redirects to another address. A licence bundle on the same device and firmware.
 - id: B15
   type: variant
   expect: [alias, reject]
   alias_of: sony/ilce-7m4
-  rules: [TR4]
+  rules: [TP3]
   lint: pass
   proposal:
     products/sony/ilce-7m4k.yaml: |
@@ -563,13 +564,13 @@ cases:
         source: https://www.sony.nl/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/downloads
       identifiers: []
       aliases: []
-  note: The kit with a lens; the same body and firmware. The source shows only ILCE-7M4, so TR6 or TR8 may also say no.
+  note: The kit with a lens; the same body and firmware. The source shows only ILCE-7M4, so TK2 or TE1 may also say no.
 
-# A description instead of a name (TR6).
+# A description instead of a name (TK2).
 - id: B16
   type: description
   expect: [reject]
-  rules: [TR6]
+  rules: [TK2]
   lint: pass
   hide: [products/synology/ds124.yaml]
   proposal:
@@ -586,7 +587,7 @@ cases:
 - id: B17
   type: description
   expect: [reject]
-  rules: [TR6]
+  rules: [TK2]
   lint: pass
   hide: [products/elastic/kibana.yaml]
   proposal:
@@ -601,11 +602,11 @@ cases:
       identifiers: []
       aliases: []
 
-# A translated name (TR6).
+# A translated name (TK2).
 - id: B18
   type: translated
   expect: [reject]
-  rules: [TR6]
+  rules: [TK2]
   lint: pass
   hide: [products/apple/apple-tv-4k-3rd-generation.yaml]
   proposal:
@@ -623,7 +624,7 @@ cases:
 - id: B19
   type: translated
   expect: [reject]
-  rules: [TR6]
+  rules: [TK2]
   lint: pass
   hide: [products/apple/apple-watch-ultra.yaml]
   proposal:
@@ -638,11 +639,11 @@ cases:
       identifiers: []
       aliases: []
 
-# A product that does not exist, or a value that only an AI gives (TR7, TR8).
+# A product that does not exist, or a value that only an AI gives (TP1, TE1).
 - id: B20
   type: hallucinated
-  expect: [reject, human]
-  rules: [TR7, TR8]
+  expect: [reject, parked]
+  rules: [TP1, TE1]
   lint: pass
   proposal:
     products/shelly/shelly-plus-9pm.yaml: |
@@ -659,8 +660,8 @@ cases:
   note: Invented model. The product page is expected to give an error or not show the product.
 - id: B21
   type: hallucinated
-  expect: [reject, human]
-  rules: [TR7, TR8]
+  expect: [reject, parked]
+  rules: [TP1, TE1]
   lint: pass
   proposal:
     products/fortinet/fortigate-66f.yaml: |
@@ -677,8 +678,8 @@ cases:
   note: Invented model.
 - id: B22
   type: hallucinated
-  expect: [reject, human]
-  rules: [TR7, TR8]
+  expect: [reject, parked]
+  rules: [TP1, TE1]
   lint: pass
   proposal:
     products/synology/ds128.yaml: |
@@ -695,8 +696,8 @@ cases:
   note: Invented model. The site may answer 200 with a general page; the referee must see that the page does not show the product.
 - id: B23
   type: unconfirmed-value
-  expect: [reject, human]
-  rules: [TR8]
+  expect: [reject, parked]
+  rules: [TE1]
   lint: pass
   hide: [products/apple/iphone-17-pro.yaml]
   proposal:
@@ -715,8 +716,8 @@ cases:
   note: A plausible GTIN that the source page does not contain.
 - id: B24
   type: unconfirmed-value
-  expect: [reject, human]
-  rules: [TR8]
+  expect: [reject, parked]
+  rules: [TE1]
   lint: pass
   hide: [products/elastic/kibana.yaml]
   proposal:
@@ -734,11 +735,11 @@ cases:
       aliases: []
   note: An invented CPE, pointing to a page that does not contain it.
 
-# The wrong publisher (TR5).
+# The wrong publisher (TP5).
 - id: B25
   type: wrong-publisher
   expect: [reject]
-  rules: [TR5, TR7]
+  rules: [TP5, TP1]
   lint: pass
   proposal:
     publishers/amazon.yaml: |
@@ -757,11 +758,11 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://www.aboutamazon.com/, https://ring.com/products/video-doorbell-4, https://ring.com/support]
-  note: The parent company instead of the brand that publishes the firmware. Checked 13 Nov - the product URL redirects to another doorbell, so TR7 may say no as well; replace it with a page that shows the product if one is found.
+  note: The parent company instead of the brand that publishes the firmware. Checked 13 Nov - the product URL redirects to another doorbell, so TP1 may say no as well; replace it with a page that shows the product if one is found.
 - id: B26
   type: wrong-publisher
   expect: [reject]
-  rules: [TR5]
+  rules: [TP5]
   lint: pass
   hide: [products/elastic/kibana.yaml]
   proposal:
@@ -785,7 +786,7 @@ cases:
 - id: B27
   type: wrong-publisher
   expect: [reject]
-  rules: [TR5]
+  rules: [TP5]
   lint: pass
   hide: [products/netgear/rbr750.yaml]
   proposal:
@@ -809,7 +810,7 @@ cases:
   type: repackaged
   expect: [reject, alias]
   alias_of: caddy/caddy
-  rules: [TR4, TR5]
+  rules: [TP3, TP5]
   lint: pass
   proposal:
     publishers/chocolatey-community.yaml: |
@@ -830,11 +831,11 @@ cases:
   verify: [https://community.chocolatey.org/packages/caddy]
   note: A package manager that redistributes the upstream releases unchanged has no update stream of its own. Compare G28, where the distribution patches.
 
-# A service without a version the customer can see (TP1, TR4).
+# A service without a version the customer can see (TP1, TP3).
 - id: B29
   type: saas
-  expect: [reject, human]
-  rules: [TR4]
+  expect: [reject, parked]
+  rules: [TP3]
   lint: pass
   proposal:
     products/microsoft/outlook-on-the-web.yaml: |
@@ -848,11 +849,11 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook-com-account, https://www.microsoft.com/en-us/microsoft-365/roadmap]
-  note: A roadmap of features is not a list of versions. Checked 13 Nov - both pages answer 403 to a plain fetch; if they stay unreadable, human is the expected answer.
+  note: A roadmap of features is not a list of versions. Checked 13 Nov - both pages answer 403 to a plain fetch; if they stay unreadable, parked is the expected answer.
 - id: B30
   type: saas
-  expect: [reject, human]
-  rules: [TR4]
+  expect: [reject, parked]
+  rules: [TP3]
   lint: pass
   proposal:
     products/google/gmail.yaml: |
@@ -867,14 +868,14 @@ cases:
       aliases: []
   verify: [https://workspace.google.com/products/gmail/, https://workspaceupdates.googleblog.com/]
 
-# The wrong publisher on a domain of its own (TR5, TAX-24). Unlike B25-B28, the proposed publisher's
+# The wrong publisher on a domain of its own (TP5, TAX-24). Unlike B25-B28, the proposed publisher's
 # source, the product source and the versions source are all on one domain: the domain comparison
 # passes, and only a reading of the pages shows who publishes the updates. Each is a site that
 # offers the downloads of many publishers, with a page and a version list per product.
 - id: B31
   type: wrong-publisher-own-domain
   expect: [reject]
-  rules: [TR4, TR5]
+  rules: [TP3, TP5]
   lint: pass
   proposal:
     publishers/filehippo.yaml: |
@@ -897,7 +898,7 @@ cases:
 - id: B32
   type: wrong-publisher-own-domain
   expect: [reject]
-  rules: [TR4, TR5]
+  rules: [TP3, TP5]
   lint: pass
   proposal:
     publishers/uptodown.yaml: |
@@ -920,7 +921,7 @@ cases:
 - id: B33
   type: wrong-publisher-own-domain
   expect: [reject]
-  rules: [TR4, TR5]
+  rules: [TP3, TP5]
   lint: pass
   proposal:
     publishers/filehorse.yaml: |
@@ -941,12 +942,12 @@ cases:
   verify: [https://www.filehorse.com/, https://www.filehorse.com/download-7-zip-64/, https://www.filehorse.com/download-7-zip-64/old-versions/]
   note: A download site with an "old versions" page of another publisher's software.
 
-# A wrong `kind`, every other value as in the data (TR8, TAX-24). Code finds the name and every code
-# in its own source, so before TAX-24 the gate said TR8 yes and the referee was never asked about `kind`.
+# A wrong `kind`, every other value as in the data (TE1, TAX-24). Code finds the name and every code
+# in its own source, so before TAX-24 the gate said TE1 yes and the referee was never asked about `kind`.
 - id: B34
   type: wrong-kind
-  expect: [reject, human]
-  rules: [TR8]
+  expect: [reject, parked]
+  rules: [TE1]
   lint: pass
   hide: [products/synology/ds124.yaml]
   proposal:
@@ -963,8 +964,8 @@ cases:
   note: G01 with kind software. The source shows a NAS, a physical product that carries firmware.
 - id: B35
   type: wrong-kind
-  expect: [reject, human]
-  rules: [TR8]
+  expect: [reject, parked]
+  rules: [TE1]
   lint: pass
   hide: [products/microsoft/sql-server.yaml]
   proposal:
@@ -982,13 +983,13 @@ cases:
       aliases: []
   note: G13 with kind operating-system. SQL Server is a database server, software; its own CPE part is "a" (application).
 
-# A service without a version (TR4, TAX-18). Like B30: the provider changes the service, the customer
+# A service without a version (TP3, TAX-18). Like B30: the provider changes the service, the customer
 # sees or chooses no version, and the page given as versions source publishes news about changes.
-# Before the TR4 version quote, B30 was the only case of its kind that reached the referee.
+# Before the TP3 version quote, B30 was the only case of its kind that reached the referee.
 - id: B36
   type: saas
-  expect: [reject, human]
-  rules: [TR4]
+  expect: [reject, parked]
+  rules: [TP3]
   lint: pass
   proposal:
     products/github/github-com.yaml: |
@@ -1004,8 +1005,8 @@ cases:
   note: A changelog of a hosted service. The self-hosted edition has versions; the hosted service does not.
 - id: B37
   type: saas
-  expect: [reject, human]
-  rules: [TR4]
+  expect: [reject, parked]
+  rules: [TP3]
   lint: pass
   proposal:
     products/amazon-web-services/amazon-s3.yaml: |
@@ -1021,8 +1022,8 @@ cases:
   note: A document history of a storage service, with dates and no version the customer chooses.
 - id: B38
   type: saas
-  expect: [reject, human]
-  rules: [TR4]
+  expect: [reject, parked]
+  rules: [TP3]
   lint: pass
   proposal:
     products/microsoft/microsoft-entra-id.yaml: |
@@ -1044,8 +1045,8 @@ cases:
 # publisher or product next to the real one.
 - id: B39
   type: lookalike-publisher
-  expect: [reject, human]
-  rules: [TV3, TR5, TR6]
+  expect: [reject, parked]
+  rules: [TV3, TP5, TK2]
   lint: signal
   proposal:
     publishers/micros0ft.yaml: |
@@ -1066,8 +1067,8 @@ cases:
   note: A digit for a letter in the publisher name. The sources are those of G13.
 - id: B40
   type: lookalike-publisher
-  expect: [reject, human]
-  rules: [TV3, TR5, TR6]
+  expect: [reject, parked]
+  rules: [TV3, TP5, TK2]
   lint: signal
   proposal:
     publishers/mircosoft.yaml: |
@@ -1088,8 +1089,8 @@ cases:
   note: Two letters swapped in the publisher name. The sources are those of G15.
 - id: B41
   type: lookalike-publisher
-  expect: [reject, human]
-  rules: [TV3, TR5, TR6]
+  expect: [reject, parked]
+  rules: [TV3, TP5, TK2]
   lint: signal
   proposal:
     publishers/rnicrosoft.yaml: |
@@ -1110,8 +1111,8 @@ cases:
   note: Two letters (r n) that look like one (m) in the publisher name.
 - id: B42
   type: lookalike-publisher
-  expect: [reject, human]
-  rules: [TV3, TR5, TR6]
+  expect: [reject, parked]
+  rules: [TV3, TP5, TK2]
   lint: signal
   proposal:
     publishers/synoloqy.yaml: |
@@ -1132,8 +1133,8 @@ cases:
   note: A letter that looks like another (q for g) in the publisher name. The sources are those of G01.
 - id: B43
   type: lookalike-product
-  expect: [reject, human]
-  rules: [TV3, TR4, TR6]
+  expect: [reject, parked]
+  rules: [TV3, TP3, TK2]
   lint: signal
   proposal:
     products/synology/d5124.yaml: |
@@ -1149,8 +1150,8 @@ cases:
   note: A digit for a letter in the product name, under the real publisher, with the sources of the real product (G01).
 - id: B44
   type: lookalike-domain
-  expect: [reject, human]
-  rules: [TV3, TR5, TR7]
+  expect: [reject, parked]
+  rules: [TV3, TP5, TP1]
   lint: signal
   proposal:
     products/synology/ds225-plus.yaml: |
@@ -1169,7 +1170,7 @@ cases:
 # the publisher's own site, and a change that moves an existing source elsewhere.
 - id: B45
   type: injection-name
-  expect: [reject, human]
+  expect: [reject, parked]
   rules: [TV1]
   lint: pass
   proposal:
@@ -1209,7 +1210,7 @@ cases:
   note: A second source is optional (TV4), but one that is given is a page the publisher does not write. This one is on the publisher's own domain, so the lint rejects the proposal.
 - id: B47
   type: replaced-source
-  expect: [reject, human]
+  expect: [reject]
   rules: [TV5]
   lint: pass
   proposal:
@@ -1223,11 +1224,11 @@ cases:
         source: https://github.com/nas-firmware-mirror/ds124/releases
       identifiers: []
       aliases: []
-  note: A change to an existing product that moves its versions source from the publisher's domain to a repository of someone else. Code holds it on TV5, whatever the referee answers.
+  note: A change to an existing product that moves its versions source from the publisher's domain to a repository of someone else. The old source does not point there, so code rejects it on TV5 (TAX-46, a move without a pointer).
 - id: B48
   type: no-product-on-site
-  expect: [reject, human]
-  rules: [TR7, TR4]
+  expect: [reject, parked]
+  rules: [TP1, TP3]
   lint: pass
   proposal:
     publishers/example-studio.yaml: |
@@ -1246,10 +1247,10 @@ cases:
       identifiers: []
       aliases: []
   verify: [https://example.org/]
-  note: A new publisher on its own evidence (TV4), but its site has nothing to download and no versions, so nothing shows that the product exists (TR7) or that it has versions (TR4). The low threshold for a new publisher is a site where the product is to be had or its versions are published; this is neither.
+  note: A new publisher on its own evidence (TV4), but its site has nothing to download and no versions, so nothing shows that the product exists (TP1) or that it has versions (TP3). The low threshold for a new publisher is a site where the product is to be had or its versions are published; this is neither.
 - id: B49
   type: redirect
-  expect: [human]
+  expect: [parked]
   lint: pass
   holdout: [publishers/vates.yaml, products/vates/xcp-ng.yaml]
   note: TAX-38. The publisher's source redirects to a page on another host (the documentation site); the text read is that of the address it ends at. Doubt, waiting for a better proposal with that address. The product and versions sources do not redirect.
@@ -1279,7 +1280,7 @@ cases:
       aliases:
       - adobe/coldfusion
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias adobe/coldfusion is added to a product in TAX. Judged on the alias alone: its name is the product''s own, so a source
-    of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+    of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: G31
   type: alias-only
   expect:
@@ -1302,7 +1303,7 @@ cases:
       aliases:
       - the-apache-software-foundation/apache-activemq
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/apache-activemq is added to a product in TAX. Judged on the alias alone: its name is
-    the product''s own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+    the product''s own, so a source of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: G32
   type: alias-only
   expect:
@@ -1325,7 +1326,7 @@ cases:
       aliases:
       - the-apache-software-foundation/flink
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/flink is added to a product in TAX. Judged on the alias alone: its name is the product''s
-    own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+    own, so a source of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: G33
   type: alias-only
   expect:
@@ -1348,7 +1349,7 @@ cases:
       aliases:
       - the-apache-software-foundation/http-server
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/http-server is added to a product in TAX. Judged on the alias alone: its name is the
-    product''s own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+    product''s own, so a source of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: G34
   type: alias-only
   expect:
@@ -1371,7 +1372,7 @@ cases:
       aliases:
       - the-apache-software-foundation/struts
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/struts is added to a product in TAX. Judged on the alias alone: its name is the product''s
-    own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+    own, so a source of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: G35
   type: alias-only
   expect:
@@ -1396,14 +1397,14 @@ cases:
       aliases:
       - the-apache-software-foundation/tomcat
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias the-apache-software-foundation/tomcat is added to a product in TAX. Judged on the alias alone: its name is the product''s
-    own, so a source of the product writes it. TR4, TR5, TR7 and TR8 are not judged again.'
+    own, so a source of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: B50
   type: alias-only
   expect:
   - reject
   rules:
-  - TR3
-  lint: error TR3
+  - TK3
+  lint: error TK3
   proposal:
     products/the-apache-software-foundation/apache-tomcat.yaml: |
       key: the-apache-software-foundation/apache-tomcat
@@ -1422,7 +1423,7 @@ cases:
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
       - broadcom/spring-boot
-  note: 'TAX-40, point 1. The alias is the key of a product of another publisher: the lint rejects it (TR3).'
+  note: 'TAX-40, point 1. The alias is the key of a product of another publisher: the lint rejects it (TK3).'
 - id: B51
   type: alias-only
   expect:
@@ -1447,13 +1448,14 @@ cases:
       - cpe: cpe:2.3:a:apache:tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
+      - the-apache-software-foundation/tomcat
       - broadcom/tomcat
   note: 'TAX-40, point 1. The alias is under another publisher than the product: code rejects it (TV2). The name itself is written at the source, so without point 1 it would be taken in: the deliberate
     break of the story.'
 - id: B52
   type: alias-only
   expect:
-  - human
+  - parked
   rules:
   - TV6
   lint: pass
@@ -1474,12 +1476,13 @@ cases:
       - cpe: cpe:2.3:a:apache:tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
+      - the-apache-software-foundation/tomcat
       - the-apache-software-foundation/spring-boot
   note: 'TAX-40, point 2. The alias is the name of a product of another publisher, written under this publisher. No source of the product writes it for this product: parked, waiting for a better proposal.'
 - id: B53
   type: alias-only
   expect:
-  - human
+  - parked
   rules:
   - TV6
   lint: pass
@@ -1500,12 +1503,13 @@ cases:
       - cpe: cpe:2.3:a:apache:tomcat
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
+      - the-apache-software-foundation/tomcat
       - the-apache-software-foundation/kestrel-gateway
   note: 'TAX-40, point 2. A name that no source writes: parked, waiting for a better proposal.'
 - id: B54
   type: alias-only
   expect:
-  - human
+  - reject
   rules:
   - TV5
   lint: pass
@@ -1527,4 +1531,437 @@ cases:
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/tomcat.md
       aliases:
       - the-apache-software-foundation/tomcat
-  note: 'TAX-40, point 3. An alias together with another change (the source moves to another domain) is no alias-only change: the whole product is judged, and TV5 holds it for a person.'
+  note: 'TAX-40, point 3. An alias together with another change (the source moves to another domain) is no alias-only change: the whole product is judged. The old source does not point to the new domain, so TV5 rejects it.'
+
+# ---------------------------------------------------------------------------------------------
+# TK3 — a key stays (TAX-45). Only a maintainer takes a product out, with a logged decision.
+# ---------------------------------------------------------------------------------------------
+
+- id: B55
+  type: key-deleted
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  delete: [products/synology/ds124.yaml]
+  note: TAX-45. A pull request deletes a product file. The key would vanish and could be used again.
+- id: B56
+  type: key-renamed
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  delete: [products/shelly/shelly-plus-1pm.yaml]
+  proposal:
+    products/shelly/shelly-plus-1-pm.yaml: |
+      key: shelly/shelly-plus-1pm
+      publisher: shelly
+      name: Shelly Plus 1PM
+      kind: device
+      source: https://www.shelly.com/products/shelly-plus-1pm
+      versions:
+        source: https://shelly-api-docs.shelly.cloud/gen2/changelog/
+      identifiers: []
+      aliases: []
+  note: TAX-45. A pull request renames a product file. The old path is deleted, so the key moves.
+- id: B57
+  type: key-deleted
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  delete: [publishers/synology.yaml]
+  note: TAX-45. A pull request deletes a publisher file.
+- id: B58
+  type: alias-taken-out
+  expect: [reject]
+  rules: [TK3]
+  lint: error TK3
+  proposal:
+    products/adobe/adobe-acrobat.yaml: |
+      key: adobe/adobe-acrobat
+      publisher: adobe
+      name: Adobe Acrobat
+      kind: software
+      source: https://www.adobe.com/acrobat.html
+      versions:
+        source: https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html
+      aliases: []
+  note: TAX-45. A change takes an alias out of an existing product. An alias stays with its key.
+- id: G36
+  type: key-freed
+  expect: [accept]
+  lint: pass
+  holdout: [products/netgear/rbr750.yaml]
+  context:
+    referee/decisions.yaml: |
+      version: 1
+      decisions:
+      - publisher: netgear
+        rule: remove
+        subject: netgear/rbr750
+        decision: remove
+        date: '2026-11-20'
+        reason: a test of a key that is free again
+        by: maintainer
+        name: RBR750
+        removed_publisher: netgear
+        path: products/netgear/rbr750.yaml
+        sources: [https://www.netgear.com/support/product/rbr750]
+  note: TAX-45. A maintainer took this key out; the key is free again. The proposal is judged as any new product. The log is context of the case, not data.
+
+# ---------------------------------------------------------------------------------------------
+# TV5 — a change is judged on what it changes (TAX-46). Another publisher is rejected; a source
+# moves to another domain only if the old source points there. B47 is the move without a pointer.
+# ---------------------------------------------------------------------------------------------
+
+- id: B59
+  type: replaced-publisher
+  expect: [reject]
+  rules: [TV5]
+  lint: error TV5
+  proposal:
+    products/synology/ds124.yaml: |
+      key: synology/ds124
+      publisher: netgear
+      name: DS124
+      kind: device
+      source: https://www.synology.com/en-global/products/DS124
+      versions:
+        source: https://www.synology.com/en-global/releaseNote/DSM?model=DS124
+      identifiers: []
+      aliases: []
+  note: TAX-46, point 4a. A change that replaces the publisher of an existing product is rejected on TV5; the product may be proposed again.
+- id: G37
+  type: moved-source
+  expect: [accept, parked]
+  lint: pass
+  context:
+    products/jenkins/jenkins.yaml: |
+      key: jenkins/jenkins
+      publisher: jenkins
+      name: Jenkins
+      kind: software
+      source: https://endoflife.date/jenkins
+      versions:
+        source: https://jenkins-ci.org/changelog/
+      identifiers:
+      - cpe: cpe:2.3:a:jenkins:jenkins
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jenkins.md
+      aliases: []
+  proposal:
+    products/jenkins/jenkins.yaml: |
+      key: jenkins/jenkins
+      publisher: jenkins
+      name: Jenkins
+      kind: software
+      source: https://endoflife.date/jenkins
+      versions:
+        source: https://www.jenkins.io/changelog/
+      identifiers:
+      - cpe: cpe:2.3:a:jenkins:jenkins
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jenkins.md
+      aliases: []
+  verify: [https://jenkins-ci.org/changelog/]
+  note: TAX-46, point 4b. The versions source moves to another domain, and the old source redirects there (checked 20 November 2026). TV5 passes; the rest is judged as any change.
+- id: B60
+  type: moved-source
+  expect: [reject]
+  rules: [TV5]
+  lint: pass
+  context:
+    products/jenkins/jenkins.yaml: |
+      key: jenkins/jenkins
+      publisher: jenkins
+      name: Jenkins
+      kind: software
+      source: https://endoflife.date/jenkins
+      versions:
+        source: https://jenkins.example.invalid/changelog/
+      identifiers:
+      - cpe: cpe:2.3:a:jenkins:jenkins
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jenkins.md
+      aliases: []
+  proposal:
+    products/jenkins/jenkins.yaml: |
+      key: jenkins/jenkins
+      publisher: jenkins
+      name: Jenkins
+      kind: software
+      source: https://endoflife.date/jenkins
+      versions:
+        source: https://www.jenkins.io/changelog/
+      identifiers:
+      - cpe: cpe:2.3:a:jenkins:jenkins
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jenkins.md
+      aliases: []
+  note: TAX-46, point 4c. The versions source moves to another domain, and the old source cannot be read. TV5 rejects it.
+
+# ---------------------------------------------------------------------------------------------
+# TP10 — a product is archived only on a proposal for it, and taken up again the same way
+# (TAX-47). The source is a page of the publisher, on its domain; the end is quoted from it.
+# ---------------------------------------------------------------------------------------------
+
+- id: G38
+  type: archive
+  expect: [accept]
+  lint: pass
+  proposal:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      archived:
+        source: https://blog.centos.org/2020/12/future-is-centos-stream/
+  verify: [https://blog.centos.org/2020/12/future-is-centos-stream/]
+  note: TAX-47, case 1. The publisher writes that it shifts from CentOS Linux to CentOS Stream and that CentOS Linux ends. The page is on centos.org, the publisher's domain.
+- id: B61
+  type: archive
+  expect: [parked, reject]
+  rules: [TP10]
+  lint: pass
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+      archived:
+        source: https://www.postgresql.org/about/
+  verify: [https://www.postgresql.org/about/]
+  note: TAX-47, case 2. The page is the publisher's, but it shows a product in active development, not its end. Without the check on the quote this case is accepted (the deliberate break of the story).
+- id: B62
+  type: archive
+  expect: [reject]
+  rules: [TP10]
+  lint: pass
+  proposal:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      archived:
+        source: https://endoflife.date/centos
+  note: TAX-47, case 3. The page that names the end is not on the publisher's domain. Code rejects it before any AI.
+- id: G39
+  type: resume
+  expect: [accept]
+  lint: pass
+  context:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+      archived:
+        source: https://www.postgresql.org/about/
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+      resumed:
+        source: https://www.postgresql.org/
+  verify: [https://www.postgresql.org/]
+  note: TAX-47, criterion 8. The product is archived in the context; the publisher's front page shows a new release, so it gets updates again.
+- id: B63
+  type: resume
+  expect: [parked, reject]
+  rules: [TP10]
+  lint: pass
+  context:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      archived:
+        source: https://blog.centos.org/2020/12/future-is-centos-stream/
+  proposal:
+    products/the-centos-project/centos-linux.yaml: |
+      key: the-centos-project/centos-linux
+      publisher: the-centos-project
+      name: CentOS Linux
+      kind: operating-system
+      source: https://www.centos.org/centos-linux/
+      versions:
+        source: https://wiki.centos.org/Manuals(2f)ReleaseNotes.html
+      identifiers:
+      - cpe: cpe:2.3:o:centos:centos
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:centos:centos&resultsPerPage=1
+      aliases: []
+      resumed:
+        source: https://www.centos.org/centos-linux/
+  verify: [https://www.centos.org/centos-linux/]
+  note: TAX-47, criterion 8. The product is archived in the context; the page proposed gives the end of life of its last version, not new updates. It stays archived.
+
+# ---------------------------------------------------------------------------------------------
+# TV5 — a change that only adds is judged on what it adds (TAX-48): an identifier, a source for
+# machines, a second source. One good and one wrong case each; the wrong ones are not accepted.
+# ---------------------------------------------------------------------------------------------
+
+- id: G40
+  type: added-identifier
+  expect: [accept]
+  lint: pass
+  context:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      aliases: []
+  note: TAX-48. Only a CPE is added. Its own source writes the code and the product name, so code accepts it; the rest of the product is not judged again.
+- id: B64
+  type: added-identifier
+  expect: [reject, parked]
+  rules: [TE1]
+  lint: pass
+  proposal:
+    products/the-postgresql-global-development-group/postgresql.yaml: |
+      key: the-postgresql-global-development-group/postgresql
+      publisher: the-postgresql-global-development-group
+      name: PostgreSQL
+      kind: software
+      source: https://www.postgresql.org/about/
+      versions:
+        source: https://www.postgresql.org/docs/release/
+      identifiers:
+      - cpe: cpe:2.3:a:postgresql:postgresql
+        source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:postgresql:postgresql&resultsPerPage=1
+      - purl: pkg:generic/postgresql
+        source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postgresql.md
+      - purl: pkg:npm/postgresql
+        source: https://www.postgresql.org/about/
+      aliases: []
+  verify: [https://www.postgresql.org/about/]
+  note: TAX-48. A purl is added whose own source does not write it. Code cannot show it, so the whole product is judged. Without the check on the own source this case is accepted by code (the deliberate break of the story).
+- id: G41
+  type: added-machine-source
+  expect: [accept]
+  lint: pass
+  proposal:
+    publishers/red-hat.yaml: |
+      key: red-hat
+      name: Red Hat
+      source: https://www.redhat.com/en/about/company
+      machine_sources:
+      - url: https://security.access.redhat.com/data/csaf/v2/advisories/
+        format: csaf-provider
+        source: https://access.redhat.com/kb/5554431
+      aliases: []
+  verify: [https://access.redhat.com/kb/5554431]
+  note: TAX-48, TE7. A source for machines on the publisher's domain, written on a page of the publisher.
+- id: B65
+  type: added-machine-source
+  expect: [reject]
+  rules: [TE7]
+  lint: pass
+  proposal:
+    publishers/red-hat.yaml: |
+      key: red-hat
+      name: Red Hat
+      source: https://www.redhat.com/en/about/company
+      machine_sources:
+      - url: https://security.access.redhat.com/data/csaf/v2/advisories/
+        format: csaf-provider
+        source: https://www.redhat.com/en/blog/red-hat-vex-files-cves-are-now-generally-available
+      aliases: []
+  verify: [https://www.redhat.com/en/blog/red-hat-vex-files-cves-are-now-generally-available]
+  note: TAX-48, TE7. The page of the publisher names another directory, not this source for machines.
+- id: G42
+  type: added-second-source
+  expect: [accept]
+  lint: pass
+  proposal:
+    publishers/the-postgresql-global-development-group.yaml: |
+      key: the-postgresql-global-development-group
+      name: The PostgreSQL Global Development Group
+      source: https://www.postgresql.org/about/
+      second_source: https://en.wikipedia.org/wiki/PostgreSQL
+      aliases: []
+  verify: [https://en.wikipedia.org/wiki/PostgreSQL]
+  note: TAX-48, TV4. A second source off the publisher's domain that names that domain.
+- id: B66
+  type: added-second-source
+  expect: [reject]
+  rules: [TV4]
+  lint: pass
+  proposal:
+    publishers/the-postgresql-global-development-group.yaml: |
+      key: the-postgresql-global-development-group
+      name: The PostgreSQL Global Development Group
+      source: https://www.postgresql.org/about/
+      second_source: https://en.wikipedia.org/wiki/Relational_database
+      aliases: []
+  verify: [https://en.wikipedia.org/wiki/Relational_database]
+  note: TAX-48, TV4. A second source off the publisher's domain that does not name it.

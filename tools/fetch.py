@@ -2,9 +2,9 @@
 
 For each URL the fetcher goes down the steps until it has usable text:
 
-0. machine  a source made for machines (an update catalog, AppStream metadata, CSAF, the NVD
-            API): one reader per format takes out the part about the product (tools/machine.py);
-1. api      a known API instead of a page (an NVD search page becomes the NVD API);
+0. machine  a source made for machines (an update catalog, AppStream metadata, CSAF, a CPE
+            dictionary): one reader per format takes out the part about the product (tools/machine.py);
+1. api      a known API instead of a page (`api_routes` in referee/sites.yaml);
 2. http     a plain HTTP request; JSON and text are read as text, the text of a PDF is
             extracted, and a page with one frame or iframe is followed;
 3. browser  a headless Chromium (Playwright), when the steps before give fewer than 200
@@ -19,15 +19,16 @@ A refusal stops the ladder: 401 and 403 give "refused"; 429 is tried once more a
 Retry-After time, and gives "refused" if it comes again. A URL that robots.txt forbids gives
 "disallowed" and is not requested.
 
-Conduct (tax-fase2-pagina-s-lezen.md §2): an honest User-Agent with a link to the repository;
+Conduct: an honest User-Agent with a link to the repository;
 robots.txt is respected; at most one request per second per site; each URL once per run (the
 cache). No imitated browser headers, no proxies, no stealth.
 
 The footer of a page (TAX-43) is kept as a text of its own, `Source.footer`, next to the text: it
 is where a publisher writes its name (the copyright line), and it is a list of links that proves no
-product name. So it counts only where the question is who the publisher is (TR5, and the importer's
-check on the name of a new publisher), never for TR6. Whether it counts at all is the switch
-`footer_counts()`: off until three runs on the test set show 0 wrong accepts (TR12).
+product name. So it counts only where the question is who the publisher is (TP5, and the importer's
+check on the name of a new publisher), never for TK2. Whether it counts at all is the switch
+`footer_counts()`: on since three runs on the test set with the footer showed 0 wrong accepts
+(TG12; runs 44903884643, 44907105590 and 44908160978, 21 November 2026).
 
 No network access happens at import. Costs nothing.
 """
@@ -49,8 +50,9 @@ from datetime import datetime, timezone
 
 import address
 import machine
+import sites
 
-USER_AGENT = "TAXNMY-referee/1.0 (+https://github.com/CobolKrasser/taxnmy)"
+USER_AGENT = f"TAXNMY-referee/1.0 (+{sites.value('project_url')})"
 ROBOTS_AGENT = "TAXNMY-referee"
 MIN_CHARS = 200  # less text than this is no source: a title alone
 SOURCE_CHARS = 24_000  # about 6,000 tokens per source text (referee/prompt.md)
@@ -58,15 +60,16 @@ MAX_BYTES = 30_000_000  # an update catalog is a few MB, gzipped
 PER_HOST_INTERVAL = 1.0  # seconds between two requests to the same site
 RETRY_AFTER_DEFAULT = 5.0  # seconds, when a 429 does not say how long to wait
 RETRY_AFTER_MAX = 60.0
-API_RETRY_WAIT = 5.0  # seconds before the one retry of an API that timed out (NVD limits requests without a key)
+API_RETRY_WAIT = 5.0  # seconds before the one retry of an API that timed out (an API may limit requests without a key)
 BROWSER_TIMEOUT_MS = 15_000  # wait at most this long for the network to be quiet
 REFUSED = {401, 403}
 FOOTER_CHARS = 3_000  # the footer of a page: a copyright line and some links; a longer one keeps its end,
                       # where the copyright line stands
 
-# TAX-43: whether the footer of a page counts for the question who the publisher is. Off until the
-# measurement on the test set (TR12); the environment variable TAX_FOOTER (1 or 0) overrides it.
-FOOTER_COUNTS = False
+# TAX-43: whether the footer of a page counts for the question who the publisher is. On since the
+# measurement on the test set (TG12): runs 44903884643, 44907105590 and 44908160978, each 0 wrong accepts and 0
+# good cases rejected. The environment variable TAX_FOOTER (1 or 0) overrides it.
+FOOTER_COUNTS = True
 
 
 def footer_counts() -> bool:
@@ -95,7 +98,7 @@ class Source:
 
 def publisher_texts(src: "Source", footer: bool | None = None) -> list[str]:
     """The texts of a source that may show who the publisher is: the text, and its footer when the
-    switch is on (TAX-43). Never for whether a product name stands in a source (TR6)."""
+    switch is on (TAX-43). Never for whether a product name stands in a source (TK2)."""
     on = footer_counts() if footer is None else footer
     return [src.text] + ([src.footer] if on and src.footer else [])
 
@@ -232,18 +235,18 @@ def page_footer(body: bytes, ctype: str, charset: str) -> str:
 
 # --------------------------------------------------------------------------- step 1: known APIs
 
-NVD_SEARCH = re.compile(r"^https://nvd\.nist\.gov/products/cpe/search/results\?(.*)$")
-API_HOSTS = {"services.nvd.nist.gov"}
+API_HOSTS = set(sites.names("api_hosts"))  # referee/sites.yaml (TG4)
+API_ROUTES = [(re.compile(r["page"]), r["query"], r.get("prefix", ""), r["api"]) for r in sites.value("api_routes") or []]
 
 
 def api_url(url: str) -> str:
-    """The API URL for a page that has one, or ''."""
-    m = NVD_SEARCH.match(url)
-    if m:
-        keyword = urllib.parse.parse_qs(m.group(1)).get("keyword", [""])[0]
-        if keyword.startswith("cpe:2.3:"):
-            return ("https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString="
-                    + urllib.parse.quote(keyword, safe=":*") + "&resultsPerPage=1")
+    """The API URL for a page that has one (`api_routes` in referee/sites.yaml), or ''."""
+    for page, query, prefix, api in API_ROUTES:
+        m = page.match(url)
+        if m:
+            value = urllib.parse.parse_qs(m.group(1)).get(query, [""])[0]
+            if value.startswith(prefix):
+                return api.format(value=urllib.parse.quote(value, safe=":*"))
     return ""
 
 

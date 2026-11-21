@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/referee/verdict.schema.json",
   "title": "TAXNMY referee verdict",
-  "description": "The answer of the AI referee on one proposal, for rules TR4-TR8 and TV1. The outcome (accept, reject, alias, human) is computed from it by code; see referee/prompt.md.",
+  "description": "The answer of the AI referee on one proposal, for rules TP1, TP3, TP5, TK2 and TE1 and TV1. The outcome (accept, reject, alias, parked) is computed from it by code; see referee/prompt.md.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["TR4", "TR5", "TR6", "TR7", "TR8", "TV1", "duplicate_of"],
+  "required": ["TP3", "TP5", "TK2", "TP1", "TE1", "TV1", "duplicate_of"],
   "properties": {
-    "TR4": { "$ref": "#/$defs/own_product" },
-    "TR5": { "$ref": "#/$defs/judgment" },
-    "TR6": { "$ref": "#/$defs/judgment" },
-    "TR7": { "$ref": "#/$defs/judgment" },
-    "TR8": { "$ref": "#/$defs/judgment" },
+    "TP3": { "$ref": "#/$defs/own_product" },
+    "TP5": { "$ref": "#/$defs/judgment" },
+    "TK2": { "$ref": "#/$defs/judgment" },
+    "TP1": { "$ref": "#/$defs/judgment" },
+    "TE1": { "$ref": "#/$defs/judgment" },
     "TV1": { "$ref": "#/$defs/judgment" },
     "duplicate_of": {
-      "description": "The key of the existing product this proposal duplicates (TR4), or null.",
+      "description": "The key of the existing product this proposal duplicates (TP3), or null.",
       "type": ["string", "null"]
     }
   },
@@ -22,7 +22,7 @@
     "own_product": {
       "type": "object",
       "additionalProperties": false,
-      "description": "TR4: a judgment with, for yes, a version of the product quoted from its versions source.",
+      "description": "TP3: a judgment with, for yes, a version of the product quoted from its versions source.",
       "required": ["verdict", "reason", "evidence", "version"],
       "properties": {
         "verdict": { "enum": ["yes", "no", "doubt"] },
@@ -41,7 +41,7 @@
           }
         },
         "version": {
-          "description": "A version of the product that a customer sees or chooses (a number, a build or the name of a release), copied exactly from the text of the versions source (versions.source). Null when that text shows none; TR4 is then not yes.",
+          "description": "A version of the product that a customer sees or chooses (a number, a build or the name of a release), copied exactly from the text of the versions source (versions.source). Null when that text shows none; TP3 is then not yes.",
           "type": ["string", "null"]
         }
       }

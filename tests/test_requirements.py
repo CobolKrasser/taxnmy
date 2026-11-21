@@ -44,9 +44,9 @@ class RequirementsTest(unittest.TestCase):
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            (root / "REQUIREMENTS.md").write_text("| # | requirement |\n| --- | --- |\n| TR1 | Filled. |\n")
+            (root / "REQUIREMENTS.md").write_text("| # | requirement |\n| --- | --- |\n| TE1 | Filled. |\n")
             (root / "tools").mkdir()
-            (root / "tools/x.py").write_text("RULES = ('TR1', 'TR99')\n")
+            (root / "tools/x.py").write_text("RULES = ('TE1', 'TR99')\n")
             (root / "referee/runs/r").mkdir(parents=True)
             (root / "referee/runs/r/summary.md").write_text("TR42 stays in a run\n")
             self.assertEqual(unknown_numbers(root), ["tools/x.py:1: TR99"])

@@ -162,7 +162,7 @@ class PlanTest(Base):
         self.assertEqual(importer.plan(rows, self.root)[0].reason, "not-found", "no page, no candidate")
         rows = self.rows(["Gamma;Widget;;;Gamma Widget;software;https://g.example/w;https://g.example/n;"])
         o = importer.plan(rows, self.root)[0]
-        self.assertEqual((o.reason, o.detail), ("not-found", "uitgever"), "a new publisher only by the finder's name")
+        self.assertEqual((o.reason, o.detail), ("not-found", "publisher"), "a new publisher only by the finder's name")
 
     def test_the_grouping_parks_and_aliases(self):
         classes = {"acme": {"acme-widget": {"class": "series", "of": None}},
@@ -202,7 +202,7 @@ class PagesTest(Base):
         out, _ = self.outcomes(f)
         self.assertEqual((out[0].outcome, out[0].reason), ("parked", "closed"))
         self.assertEqual((out[1].outcome, out[1].reason), ("parked", "closed"), "the same product follows its row")
-        self.assertIn("volgt rij", out[1].detail)
+        self.assertIn("follows row", out[1].detail)
         self.assertEqual(f.asked.count("https://acme.example/widget"), 1)
 
     def test_an_unreadable_source(self):
@@ -214,7 +214,7 @@ class PagesTest(Base):
                         final={"https://beta.example/box": "https://beta.example/sandbox"})
         out, _ = self.outcomes(f)
         self.assertEqual((out[8].outcome, out[8].reason), ("parked", "name-not-on-page"))
-        self.assertIn("omgeleid naar https://beta.example/sandbox", out[8].detail)
+        self.assertIn("redirected to https://beta.example/sandbox", out[8].detail)
 
     def test_a_wrong_publisher_page_is_passed_over(self):
         f = FakeFetcher(pages(**{"https://beta.example/": ("200", f"Another {TEXT}"),
@@ -241,15 +241,15 @@ class PagesTest(Base):
         self.assertEqual(self.counted(out), (0, 3, 0, False, False), "two rows of one product count once")
 
     def test_the_threshold_counts_only_what_is_proposed(self):
-        """Decision 33: two of three proposed rows parked stops the round, however many the find round set aside."""
+        """two of three proposed rows parked stops the round, however many the find round set aside."""
         rows = [ROWS[2], ROWS[3], ROWS[5], ROWS[7], ROWS[0], ROWS[6],
                 "Acme;Other;Acme;https://acme.example/;Acme Other;software;https://acme.example/o;https://acme.example/o/n;"]
         out, _ = self.outcomes(FakeFetcher(pages()), rows)
         self.assertEqual(self.counted(out), (2, 3, 4, False, False), "no kind and an unreadable page, of three")
         report = importer.report(out, {}, {}, None, True, set())
-        self.assertIn("| apart | geen versions.source | 1 |", report)
-        self.assertIn("Apart gezet door de vindronde of het groeperen (telt niet mee): 4 producten.", report)
-        self.assertIn("Voorlopige stand, vóór het oordeel van de scheidsrechter:** 2 van 3", report)
+        self.assertIn("| aside | no versions.source | 1 |", report)
+        self.assertIn("Set aside by the find round or the grouping (not counted): 4 products.", report)
+        self.assertIn("Provisional count, before the verdict of the referee:** 2 of 3", report)
         self.assertNotRegex(report, r"\*\*stop\*\*|gaat door", "before the verdict no word on going on (TAX-39)")
         accept = {"verdicts": [{"id": "products/acme/acme-widget.yaml", "outcome": "accept"}]}
         self.assertEqual(self.counted(out, accept), (2, 3, 4, True, True), "after the verdict: two of three, stop")
@@ -273,8 +273,92 @@ class FilesTest(Base):
         self.assertEqual(set(entries), {"acme/multiple-products", "acme/widget-core", "acme/thing", "acme/kindless",
                                         "acme/noversions"})
         e = entries["acme/noversions"]
-        self.assertEqual((e["waits_for"], e["reason"]), ("better-proposal", "geen versions.source"))
+        self.assertEqual((e["waits_for"], e["reason"]), ("better-proposal", "no versions.source"))
         self.assertEqual(e["fingerprint"], importer.pr_referee.fingerprint(e["files"]))
+
+
+class ClosedRoundTest(Base):
+    """TAX-49: a round gives a closed page the two steps of the referee (machine sources, then one
+    search on the publisher's domains); what it reads instead goes to the referee, a snippet never."""
+
+    CLOSED = "https://acme.example/widget"
+    OTHER = "https://acme.example/products/widget"
+
+    def args(self, **kw):
+        a = dict(found=[str(csv_file(self.tmp, ROWS))], first=None, classes=None, names=None, fetch=True,
+                 write=False, browser=False, gated=None, out=str(self.tmp / "out"), sources=None, search=None)
+        a.update(kw)
+        return argparse.Namespace(**a)
+
+    def search_file(self, urls):
+        path = self.tmp / "search.json"
+        path.write_text(json.dumps({self.CLOSED: {"product": "Acme Widget", "query": "q", "domains": ["acme.example"],
+                                                  "urls": urls}}))
+        return str(path)
+
+    def fetcher(self):
+        return FakeFetcher(pages(**{self.CLOSED: ("refused", ""), self.OTHER: ("200", f"The Acme Widget, all models {TEXT}")}))
+
+    def test_a_closed_page_with_another_readable_page_goes_to_the_referee(self):
+        f = self.fetcher()
+        got = importer.propose(self.args(search=self.search_file([self.OTHER])), f, self.root, NOW, QUIET)
+        o = next(o for o in got["outcomes"] if o.row.name == "Acme Widget" and o.row.listed == "Widget")
+        self.assertEqual(o.outcome, "candidate")
+        self.assertEqual(o.instead, [[self.CLOSED, self.OTHER]])
+        item = next(i for i in got["items"] if i["id"] == "products/acme/acme-widget.yaml")
+        self.assertEqual(item["outcome"], "pending", item["reason"])
+        self.assertIn(f'instead-of="{self.CLOSED}"', item["message"])
+        self.assertEqual(f.asked.count(self.CLOSED), 1, "the closed page is not asked again")
+        self.assertIn("Closed, and read on another page of the publisher (TAX-49): 1 products", got["report"])
+
+    def test_a_closed_page_without_another_page_is_parked_with_the_reason(self):
+        got = importer.propose(self.args(search=self.search_file([])), self.fetcher(), self.root, NOW, QUIET)
+        o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
+        self.assertEqual((o.outcome, o.reason), ("parked", "closed-none"))
+        self.assertIn(self.CLOSED, o.detail)
+        self.assertIn("no other readable page", o.detail)
+        self.assertIn("Closed, and still closed: 1 products.", got["report"])
+
+    def test_without_the_search_the_closed_page_is_parked_and_listed_for_it(self):
+        got = importer.propose(self.args(), self.fetcher(), self.root, NOW, QUIET)
+        o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
+        self.assertEqual((o.outcome, o.reason), ("parked", "closed"), "the deliberate break: no search, parked")
+        self.assertIn("Cost of the search: at most 1 closed pages x $0.011 = $0.01 (claude-haiku-5-5; the fee and "
+                      "about 12,000 input tokens", got["report"])
+        closed = json.loads((self.tmp / "out/closed.json").read_text())
+        self.assertEqual(list(closed), [self.CLOSED])
+        self.assertEqual((closed[self.CLOSED]["product"], closed[self.CLOSED]["domains"]), ("Acme Widget", ["acme.example"]))
+
+    def test_a_result_off_the_publishers_domains_or_without_the_name_does_not_count(self):
+        for urls, page in ((["https://elsewhere.example/acme-widget"], "https://elsewhere.example/acme-widget"),
+                           ([self.OTHER], None)):
+            f = self.fetcher()
+            if page:
+                f.pages[page] = ("200", f"The Acme Widget {TEXT}")
+            else:
+                f.pages[self.OTHER] = ("200", f"Another product {TEXT}")
+            got = importer.propose(self.args(search=self.search_file(urls)), f, self.root, NOW, QUIET)
+            o = next(o for o in got["outcomes"] if o.row.listed == "Widget")
+            self.assertEqual(o.reason, "closed-none", urls)
+
+    def test_only_urls_of_the_search_reach_the_round(self):
+        """The search keeps the URLs of the results, never their text (TE6), as for the referee."""
+        class Block:
+            def __init__(self, **kw):
+                self.__dict__.update(kw)
+        content = [Block(type="web_search_tool_result", content=[Block(url=self.OTHER, encrypted_content="snippet")])]
+        self.assertEqual(importer.referee.search_urls(content), [self.OTHER])
+
+    def test_the_search_step_dry_spends_nothing(self):
+        closed = self.tmp / "closed.json"
+        closed.write_text(json.dumps({self.CLOSED: {"product": "Acme Widget", "publisher": "Acme", "domains": ["acme.example"]}}))
+        args = importer.parser().parse_args(["search", "--closed", str(closed), "--output", str(self.tmp / "search.json"),
+                                             "--runs", str(self.tmp / "runs")])
+        self.assertEqual(args.model, referee.SEARCH_MODEL, "the model of step 4, not the referee's")
+        lines = []
+        self.assertEqual(importer.search(args, log=lines.append), {})
+        self.assertIn("with claude-haiku-5-5; about $0.01 ($0.011 a search", lines[0])
+        self.assertFalse((self.tmp / "runs").exists())
 
 
 class ProposeTest(Base):
@@ -292,8 +376,8 @@ class ProposeTest(Base):
         self.assertTrue((out / "data/products/acme/acme-widget.yaml").is_file())
         parked = yaml.safe_load((out / "data/referee/parked.yaml").read_text())["parked"]
         self.assertEqual(len(parked), 5)
-        self.assertIn("| opgenomen-kandidaat | voor de scheidsrechter | 2 |", got["report"])
-        self.assertIn("2 voordrachten x $0.027 = $0.05", got["report"])
+        self.assertIn("| candidate | for the referee | 2 |", got["report"])
+        self.assertIn("2 proposals x $0.027 = $0.05", got["report"])
         self.assertEqual({i["outcome"] for i in got["items"]}, {"pending"}, "the gate leaves both to the referee")
 
     def test_write_puts_the_files_into_the_data(self):
@@ -473,21 +557,21 @@ class TrialCountTest(unittest.TestCase):
         ps = importer.products(self.outcomes, self.verdicts, self.keys)
         self.assertEqual(sum(len(p["rows"]) for p in ps.values()), 40, "every row one outcome")
         self.assertEqual(len(ps["adobe/magento-open-source"]["rows"]), 3, "three rows, one product")
-        self.assertEqual(sorted(k for k, p in ps.items() if p["status"] == "verloren"), ["Apache HugeGraph-Server", "MegaRAC SPx"])
+        self.assertEqual(sorted(k for k, p in ps.items() if p["status"] == "lost"), ["Apache HugeGraph-Server", "MegaRAC SPx"])
 
     def test_new_publishers_parked_on_tr5(self):
         got = importer.tr5_new_publishers(self.outcomes, self.verdicts, self.keys)
         self.assertEqual([(c["publisher"], c["product"]) for c in got], [("jakub-vrana", "jakub-vrana/adminer")],
-                         "three more were parked on TR5, but of a publisher TAX has")
+                         "three more were parked on TP5, but of a publisher TAX has")
         self.assertIn("footer", got[0]["reason"])
         report = importer.final_report(self.outcomes, self.verdicts, self.keys)
-        self.assertIn("**Nieuwe uitgevers geparkeerd op TR5** (besluit 35): 1", report)
-        self.assertIn("9 van 22 voorgedragen producten", report)
+        self.assertIn("**New publishers parked on TP5**: 1", report)
+        self.assertIn("9 of 22 proposed products", report)
         self.assertIn("**stop**", report)
 
     def test_break_one_the_referee_parks_everything(self):
         """Deliberate break: with every verdict parked, the report must say stop."""
-        parked = {**self.verdicts, "verdicts": [{**v, "outcome": "parked", "rule": "TR5", "reason": "TR5: doubt",
+        parked = {**self.verdicts, "verdicts": [{**v, "outcome": "parked", "rule": "TP5", "reason": "TP5: doubt",
                                                  "waits_for": "better-proposal"} for v in self.verdicts["verdicts"]]}
         t = importer.threshold(self.outcomes, parked, self.keys)
         self.assertEqual((t["parked"], t["final"], t["stop"]), (16, True, True))
@@ -562,7 +646,7 @@ class TrialCountTest(unittest.TestCase):
 
 
 class WorkflowTest(unittest.TestCase):
-    def test_the_trial_waits_for_fred_and_keeps_the_key_apart(self):
+    def test_the_trial_waits_for_a_maintainer_and_keeps_the_key_apart(self):
         wf = yaml.safe_load((REPO / ".github/workflows/referee-import.yml").read_text())
         on = wf.get("on", wf.get(True))
         self.assertEqual(set(on), {"workflow_dispatch"})
@@ -575,7 +659,7 @@ class WorkflowTest(unittest.TestCase):
         for name, job in jobs.items():
             self.assertIn("timeout-minutes", job, name)
             keyed = "secrets." in json.dumps(job)
-            self.assertEqual(keyed, name in ("group", "judge"), name)
+            self.assertEqual(keyed, name in ("group", "search", "judge"), name)
             if keyed:
                 self.assertEqual(job["environment"], "referee")
                 self.assertEqual(job["concurrency"], {"group": "referee-judge", "cancel-in-progress": False})
@@ -583,11 +667,18 @@ class WorkflowTest(unittest.TestCase):
             for step in job["steps"]:
                 self.assertNotRegex(step.get("run", ""), r"\$\{\{", "inputs reach a script through env only")
         self.assertEqual(jobs["group"]["if"], "github.ref == 'refs/heads/main' && inputs.live && inputs.grouping_run == ''")
-        # Decision 37: propose may take the grouping of an earlier run; main only and live, as the grouping is.
+        # propose may take the grouping of an earlier run; main only and live, as the grouping is.
         self.assertEqual(inputs["grouping_run"]["default"], "")
         self.assertIn("needs.group.result == 'success'", jobs["propose"]["if"])
         self.assertIn("inputs.grouping_run != '' && github.ref == 'refs/heads/main' && inputs.live", jobs["propose"]["if"])
         self.assertEqual(jobs["propose"]["permissions"], {"contents": "read", "actions": "read"})
+        # TAX-49: the search has the key and reads no page; the pages it found are read without it.
+        self.assertNotIn("requirements-fetch", json.dumps(jobs["search"]), "the key never comes near a browser")
+        self.assertNotIn("playwright", json.dumps(jobs["search"]))
+        self.assertIn("inputs.live", jobs["search"]["if"])
+        self.assertIn("needs.propose.outputs.closed != '0'", jobs["search"]["if"])
+        self.assertIn("--search", json.dumps(jobs["reread"]))
+        self.assertEqual(jobs["judge"]["needs"], ["group", "propose", "search", "reread"])
         for name in ("judge", "pull-request"):
             self.assertTrue(jobs[name]["if"].startswith("${{ !cancelled() && needs."), name)
         steps = jobs["propose"]["steps"]
@@ -601,13 +692,13 @@ class WorkflowTest(unittest.TestCase):
         self.assertNotRegex(json.dumps(wf), r"pr merge|--auto|auto-merge", "never merged by itself")
         self.assertEqual(wf["env"]["FOUND"], "${{ inputs.found }}")
         self.assertEqual(inputs["found"]["default"], "referee/import/kev-proef-40.csv")
-        for name in ("prepare", "group", "propose", "pull-request"):
+        for name in ("prepare", "group", "propose", "reread", "pull-request"):
             script = "".join(st.get("run", "") for st in jobs[name]["steps"])
             self.assertIn('list=$(.github/scripts/import-found.sh "$FOUND")', script, name)
             self.assertNotIn('--found "$FOUND"', script, name)
         pr = "".join(st.get("run", "") for st in jobs["pull-request"]["steps"])
         self.assertIn('branch="import/kev-ronde-${RUN_ID}"', pr)
-        self.assertIn('--title "TAX-27: KEV-ronde, ${names% }"', pr)
+        self.assertIn('--title "TAX-27: KEV round, ${names% }"', pr)
         self.assertNotRegex(pr, r"proef")
         script = next(st["run"] for st in jobs["pull-request"]["steps"] if "run" in st and "importer.py count" in st["run"])
         self.assertLess(script.index("importer.py count"), script.index("cp -R"), "counted against main, before the copy")
@@ -667,7 +758,7 @@ class Silent:
 
 
 class AgreedRoundTest(ProposeTest):
-    """Fred, 19 November: the KEV round gets an exception from the ceilings per run, per pull request and
+    """19 November: the KEV round gets an exception from the ceilings per run, per pull request and
     per day, with $10 for the whole round as the hard limit; the budget for every run together stays.
     One place: the submitter kev-ronde-1 in referee/intake.yaml (TAX-32), no code of its own."""
 
@@ -807,7 +898,7 @@ class EndAddressTest(Base):
         o = out[8]
         self.assertEqual(o.outcome, "candidate")
         self.assertEqual((o.row.source, o.moves), (end, [["https://beta.example/box", end]]))
-        self.assertIn(f"eindadres voorgedragen: https://beta.example/box -> {end}", o.detail)
+        self.assertIn(f"the address it ended at, proposed: https://beta.example/box -> {end}", o.detail)
         self.assertEqual(yaml.safe_load(importer.product_text(o))["source"], end, "the file holds the address it ends at")
         report = importer.report(out, pubs, {}, None, True, set())
         self.assertIn(f"- 261118-kev-groep-01.csv:10 beta-systems/beta-box: https://beta.example/box -> {end}", report)
@@ -824,7 +915,7 @@ class EndAddressTest(Base):
         o = self.outcomes(f)[0][8]
         self.assertEqual((o.outcome, o.reason), ("parked", "moved"))
         self.assertIn(f"{a} -> {b} -> {c}", o.detail)
-        self.assertIn("geen tweede poging", o.detail)
+        self.assertIn("no second try", o.detail)
         self.assertNotIn(c, f.asked, "no second try")
         self.assertEqual(o.row.source, a, "nothing proposed")
 
@@ -834,14 +925,14 @@ class EndAddressTest(Base):
         f = EndFetcher(pages(**{end: ("200", f"Beta Sandbox {TEXT}")}), {"https://beta.example/box": end})
         o = self.outcomes(f)[0][8]
         self.assertEqual((o.outcome, o.reason), ("parked", "name-not-on-page"))
-        self.assertIn(f"niet op {end} (eindadres van https://beta.example/box)", o.detail)
+        self.assertIn(f"not on {end} (the address https://beta.example/box ended at)", o.detail)
 
     def test_a_versions_page_that_ends_on_a_home_page_falls_on_the_name(self):
         """The round chose that address, not the finder: it must show the name, the versions page too."""
         f = EndFetcher(pages(), {"https://beta.example/box/fw": "https://beta.example/"})
         o = self.outcomes(f)[0][8]
         self.assertEqual((o.outcome, o.reason), ("parked", "name-not-on-page"))
-        self.assertIn("niet op https://beta.example/ (eindadres van https://beta.example/box/fw)", o.detail)
+        self.assertIn("not on https://beta.example/ (the address https://beta.example/box/fw ended at)", o.detail)
 
     def test_an_end_address_that_is_closed_or_unreadable(self):
         end = "https://beta.example/en/box"
@@ -873,7 +964,7 @@ class EditionTest(Base):
         out = self.plan({"acme": {"acme-widget-pro": {"class": "edition", "of": "Acme Widget"}}}, [PRO] + ROWS)
         o = out[0]
         self.assertEqual((o.reason, o.of), ("grouped-edition", "acme/acme-widget"), "also when that row comes later")
-        self.assertIn("rij 261118-kev-groep-01.csv:3", o.detail)
+        self.assertIn("row 261118-kev-groep-01.csv:3", o.detail)
         out = self.plan({"acme": {"acme-widget-pro": {"class": "series", "of": "acme/acme-widget"}}}, ROWS + [PRO])
         self.assertEqual(out[-1].reason, "grouped-edition", "a part of a product: the same")
 
@@ -882,7 +973,7 @@ class EditionTest(Base):
         out = self.plan({"acme": {"acme-ghost-9": {"class": "edition", "of": "Acme Ghost"}}}, ROWS + [GHOST])
         o = out[-1]
         self.assertEqual((o.outcome, o.key, o.of), ("candidate", "acme/acme-ghost-9", ""))
-        self.assertIn("editie of reeks van acme/acme-ghost, dat niet in TAX staat en niet is voorgedragen", o.detail)
+        self.assertIn("edition or range of acme/acme-ghost, which is not in TAX and not proposed", o.detail)
         self.assertEqual(importer.orphans(out, importer.existing_keys(self.root)), [])
 
     def test_an_edition_of_no_product_gets_the_outcome_of_a_product(self):
@@ -908,7 +999,7 @@ class EditionTest(Base):
         t = importer.threshold(out, None, importer.existing_keys(self.root))
         self.assertEqual((t["proposed"], t["aside"], t["parked"]), (1, 1, 0))
         report = importer.report(out, {}, {}, None, False, importer.existing_keys(self.root))
-        self.assertIn("| apart | editie, reeks of onderdeel van een product in TAX of in deze voordracht (het groeperen) | 1 |",
+        self.assertIn("| aside | edition, range or part of a product in TAX or in this proposal (the grouping) | 1 |",
                       report)
 
     def test_an_edition_of_a_product_that_is_not_there_stops_the_proposal(self):
@@ -938,14 +1029,14 @@ class DoubtTest(Base):
     def test_with_both_pages_the_row_is_proposed_with_the_doubt(self):
         o = importer.plan(self.rows([PRO]), self.root, self.CLASSES)[0]
         self.assertEqual((o.outcome, o.doubt), ("candidate", "the names do not settle it"))
-        self.assertIn("| opgenomen-kandidaat | voor de scheidsrechter, na twijfel bij het groeperen | 1 |",
+        self.assertIn("| candidate | for the referee, after doubt in the grouping | 1 |",
                       importer.report([o], {}, {}, None, False, set()))
 
     def test_without_a_versions_page_the_row_stays_parked(self):
         """Opzettelijke breuk of TAX-44: the versions page taken away."""
         o = importer.plan(self.rows([PRO.replace("https://acme.example/pro/notes", "")]), self.root, self.CLASSES)[0]
         self.assertEqual((o.outcome, o.reason), ("parked", "grouping"))
-        self.assertEqual(o.detail, "the names do not settle it; versiepagina ontbreekt")
+        self.assertEqual(o.detail, "the names do not settle it; versions page missing")
         self.assertFalse(importer.found_aside(o), "it counts for the threshold")
         entry = importer.parked_entries([o], {}, "2026-11-20")[0]
         self.assertIn("the names do not settle it", entry["reason"])
@@ -956,31 +1047,31 @@ class DoubtTest(Base):
 
     def test_the_referee_is_told(self):
         o = importer.plan(self.rows([PRO, ROWS[0]]), self.root, self.CLASSES)
-        msg = "<proposal>\nx\n</proposal>\n\n<signals>\nnone\n</signals>\n\n<decided>\nTR6: yes (code)\nJudge only: TR4, TR5\n" \
+        msg = "<proposal>\nx\n</proposal>\n\n<signals>\nnone\n</signals>\n\n<decided>\nTK2: yes (code)\nJudge only: TP3, TP5\n" \
               "</decided>\n\n<identity>\nnone\n</identity>\n"
-        items = [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TR4", "TR5"], "message": msg},
-                 {"id": "products/acme/acme-widget.yaml", "outcome": "pending", "ai_rules": ["TR4", "TR5"], "message": msg}]
+        items = [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TP3", "TP5"], "message": msg},
+                 {"id": "products/acme/acme-widget.yaml", "outcome": "pending", "ai_rules": ["TP3", "TP5"], "message": msg}]
         o[0].doubt += "."  # a reason ends with a full stop: one, not two
         importer.mark_doubt(o, items)
-        self.assertIn("TR6: yes (code)\nTR4 in part: the grouping, which sees only the names of this publisher, could not "
-                      "decide whether this is a product of its own: the names do not settle it. Judge TR4 on the sources.\n"
-                      "Judge only: TR4, TR5\n", items[0]["message"])
+        self.assertIn("TK2: yes (code)\nTP3 in part: the grouping, which sees only the names of this publisher, could not "
+                      "decide whether this is a product of its own: the names do not settle it. Judge TP3 on the sources.\n"
+                      "Judge only: TP3, TP5\n", items[0]["message"])
         self.assertEqual(items[0]["doubt"], "the names do not settle it.")
         self.assertEqual(items[1]["message"], msg, "no doubt, no line")
-        bare = {"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TR4"],
+        bare = {"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TP3"],
                 "message": "<signals>\nnone\n</signals>\n\n<identity>\nnone\n</identity>\n"}
         importer.mark_doubt(o, [bare])
-        self.assertIn("</signals>\n\n<decided>\nTR4 in part: ", bare["message"])
-        self.assertIn("Judge only: TR4\n</decided>\n\n<identity>", bare["message"])
+        self.assertIn("</signals>\n\n<decided>\nTP3 in part: ", bare["message"])
+        self.assertIn("Judge only: TP3\n</decided>\n\n<identity>", bare["message"])
 
     def test_the_count_shows_what_the_referee_made_of_it(self):
         out = importer.plan(self.rows([PRO, PRO.replace("https://acme.example/pro/notes", "").replace("Pro", "Max")]),
                             self.root, {"acme": {**self.CLASSES["acme"], "acme-widget-max": self.CLASSES["acme"]["acme-widget-pro"]}})
-        verdicts = {"verdicts": [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "parked", "rule": "TR4",
-                                  "reason": "TR4: an edition", "waits_for": "better-proposal"}]}
+        verdicts = {"verdicts": [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "parked", "rule": "TP3",
+                                  "reason": "TP3: an edition", "waits_for": "better-proposal"}]}
         text = importer.final_report(out, verdicts, set())
-        self.assertIn("**Voorgedragen na twijfel bij het groeperen** (TAX-44): 1 producten; geparkeerd: 1", text)
-        self.assertIn("- acme/acme-widget-pro: geparkeerd (TR4: an edition)", text)
+        self.assertIn("**Proposed after doubt in the grouping** (TAX-44): 1 products; parked: 1", text)
+        self.assertIn("- acme/acme-widget-pro: parked (TP3: an edition)", text)
         self.assertNotIn("- acme/acme-widget-max", text, "not proposed: it had no versions page")
 
     def test_the_reasons_of_a_run_before_tax_44(self):

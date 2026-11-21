@@ -1,14 +1,14 @@
 # The referee — fase 2
 
-This folder holds what is needed to build and measure the AI referee for rules TR4–TR8. Rules TR1–TR3
+This folder holds what is needed to build and measure the AI referee for rules TP1, TP3, TP5, TK2 and TE1. Rules TE1, TK2 and TK3
 are checked by `tools/lint.py`. Nothing in this folder calls an API. The runs are done by the
 harness `tools/referee.py`, within the budget below.
 
 | file | what it is |
 | --- | --- |
-| `prompt.md` | the system prompt and user message for TR4–TR8, and how the outcome is computed |
+| `prompt.md` | the system prompt and user message for TP1, TP3, TP5, TK2 and TE1, and how the outcome is computed |
 | `verdict.schema.json` | the JSON the referee answers with (structured output) |
-| `testset/cases.yaml` | 91 proposals with the expected outcome: 37 good (G01–G35, H01–H02), 54 bad |
+| `testset/cases.yaml` | 110 proposals with the expected outcome: 44 good (G01–G42, H01–H02), 66 bad |
 | `prompt-group.md`, `group.schema.json` | the prompt and the answer of the grouping per publisher (TAX-26) |
 | `testset/groups.yaml` | 15 publishers of the KEV data, 204 names, each with the class a person gave it |
 | `r13-research.md` | the research into whether an AI can be a source (TE4) |
@@ -23,14 +23,16 @@ The harness is `tools/referee.py`; see [The harness](#the-harness) below.
 
 | group | cases | kinds |
 | --- | --- | --- |
-| good | G01–G29 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 TR4 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right; 1 small publisher with only its own site (G29) |
-| good, AI models | H01–H02 | the AI models of Anthropic and OpenAI: once for a person, good since Fred decided on 13 November that AI models are in TAX |
-| bad, caught by code | B01–B06 | a missing field, a specification (TP9), two keys against the writing rule, a purl duplicate, a source that is an AI chat |
+| good | G01–G29 | 16 existing products proposed again (devices, an OS, software, managed services); 3 where the publisher is the project itself; the 4 TP3 signals of fase 1 (GraalVM, Ansible); 2 related publishers (`alibaba`, `alibaba-cloud`); 3 new ones that look wrong but are right; 1 small publisher with only its own site (G29) |
+| good, AI models | H01–H02 | the AI models of Anthropic and OpenAI: once for a person, good since 13 November 2026: AI models are in TAX |
+| bad, caught by code | B01–B06 | a missing field, a specification (TP9), two keys against the writing rule, a purl on another product (TK4: a signal, so the referee judges it), a source that is an AI chat |
 | bad, for the AI | B07–B30 | 5 duplicates in another word order, 4 variants, 2 descriptions, 2 translations, 3 invented products, 2 values that the source does not confirm, 3 wrong publishers, 1 repackaged product, 2 SaaS without versions |
 | bad, past the old gate | B31–B35 | 3 wrong publishers with the product and the versions on a domain of their own (download sites), 2 existing products with a wrong `kind` (TAX-24) |
 | good, alias only | G30–G35 | the six of the trial of the KEV round (TAX-27): only an alias added to a product in TAX (TAX-40) |
-| bad, alias only | B50–B54 | an alias that is the key of another product (TR3), under another publisher (TV2), the name of another publisher's product, a name no source writes, an alias with another change (TV5) |
+| bad, alias only | B50–B54 | an alias that is the key of another product (TK3), under another publisher (TV2), the name of another publisher's product, a name no source writes, an alias with another change (TV5) |
 | bad, protection against intent | B39–B48 | 6 names or domains one or two characters from an existing one (TV3), a name that addresses the referee (TV1), a second source on the publisher's own site (TV4), a versions source moved to someone else (TV5), a new publisher whose site has nothing to download and no versions |
+| key stays (TAX-45) | B55–B58, G36 | a product deleted, a product renamed, a publisher deleted, an alias taken out (all TK3); a key that a maintainer took out, proposed again |
+| a change that replaces (TAX-46) | B59, B60, G37 | another publisher, a move to a domain whose old source cannot be read (TV5), a move with a redirect from the old source |
 
 The good cases are mostly **hold-outs**: an existing product is taken out of the dataset and
 proposed again. Their sources are real, and fase 1 has already checked them. Most bad cases are
@@ -80,7 +82,7 @@ An outcome is right when it is in `expect`. Report:
 | --- | --- |
 | bad cases let through (outcome *accept* on B01–B30) | **0** |
 | good cases rejected (outcome *reject* or *alias* on G01–G29, H01–H02) | as few as possible; report each one |
-| cases sent to a person (outcome *human*) | report the number; each costs Fred time |
+| cases sent to a person (outcome *human*) | report the number; each costs a maintainer time |
 | on a bad case: did the right rule say *no*? | report per rule, from `rules` |
 | cost per proposal | input and output tokens, and dollars |
 
@@ -91,8 +93,7 @@ it is not an error, but it is a cost.
 
 ## Budget
 
-The budget for every run of the referee together is **at most $50** from the API credit (Fred,
-17 November 2026; it was $20 for fase 2, and $5 before that). The ceilings per pull request and per
+The budget for every run of the referee together is **at most $50** from the API credit (17 November 2026; it was $20 for fase 2, and $5 before that). The ceilings per pull request and per
 day stay as they are. Prices are from the Claude API price list of November 2026. Check them before
 the run.
 
@@ -125,9 +126,9 @@ conditions.
 
 Two proposals for `tools/lint.py`, from building this testset:
 
-1. ~~**TR8, by code:** reject a `source` on a domain of an AI chat.~~ Built in the gate (TAX-15),
+1. ~~**TE1, by code:** reject a `source` on a domain of an AI chat.~~ Built in the gate (TAX-15),
    see [The gate](#the-gate-tr5-tr6-and-tr8-by-code). B06 tests it.
-2. **Publishers, like TR3 for products:** a signal when a new publisher key shares its first word
+2. **Publishers, like TK3 for products:** a signal when a new publisher key shares its first word
    with an existing one (`alibaba` and `alibaba-cloud`). G24 and G25 test this.
 
 3. ~~**Lookalikes (TV3):** a signal for a key or a domain one or two characters from an existing
@@ -135,7 +136,7 @@ Two proposals for `tools/lint.py`, from building this testset:
 
 A finding from fase 1 that is not part of this testset: the source of several publishers is an
 endoflife.date page (`alibaba`, `caddy`, `elastic`). That page shows the product, not who publishes
-it. TR5 needs a page of the publisher itself. The base run will show how often the referee doubts on
+it. TP5 needs a page of the publisher itself. The base run will show how often the referee doubts on
 that.
 
 ## The harness
@@ -162,12 +163,12 @@ For each case it:
    the files of the case, compared with the whole dataset (TAX-16). A case whose lint
    result does not match its field `lint` does not run; the summary lists it. A case with an error
    stops there, with outcome *reject*. A case with a source on an AI chat stops there too: *reject*
-   on TR8, by the gate, and nothing is fetched (condition *fetched* only);
+   on TE1, by the gate, and nothing is fetched (condition *fetched* only);
 2. reads the distinct `source` URLs of the proposal, and the source of the publisher file, with
    the ladder of [Reading sources](#reading-sources) (condition *fetched* only). At most about
    6,000 tokens per page. When the product's own `source` answers 404 or 410, the case stops
-   there: outcome *reject* on TR7, by code;
-3. runs the gate on the fetched texts (condition *fetched* only): code settles TR5, TR6 and TR8 where
+   there: outcome *reject* on TP1, by code;
+3. runs the gate on the fetched texts (condition *fetched* only): code settles TP5, TK2 and TE1 where
    it can, see [The gate](#the-gate-tr5-tr6-and-tr8-by-code);
 4. fills in the user message of `prompt.md`, with a `<decided>` block for what the gate settled. The publisher file always comes along: in
    `<proposal>` when it is new, otherwise first in `<existing>`. `<existing>` also holds the
@@ -181,9 +182,9 @@ For each case it:
    becomes *doubt*;
 7. computes the outcome as in `prompt.md` § Outcome, and scores it: right when it is in `expect`.
 
-The conditions of TE4: `--condition fetched` (A, the default, all 91 cases), `memory` (M) and `web`
+The conditions of TE4: `--condition fetched` (A, the default, all 110 cases), `memory` (M) and `web`
 (W, web search and web fetch, at most 3 of each). M and W run the 29 cases of `r13-research.md` unless
-`--cases` says otherwise (`--cases all` for all 91); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
+`--cases` says otherwise (`--cases all` for all 110); the quote check is off in both. Both read their own system prompt, `referee/prompt-r13.md`
 (the text block under *System prompt*), written by the analyst; condition *fetched* reads
 `prompt.md`. `--prompt` overrides both. `compare` puts
 runs side by side on the cases they share.
@@ -193,31 +194,30 @@ Each live run writes `runs/<time>-<condition>-<model>/`: `run.json` (the setting
 cost), `sources.json` (the fetched texts, so that the quote check can be redone) and
 `summary.md` (the measures of § Scoring, per rule and per type, and the TE4 measures; *human* is counted by cause: a source closed, or the referee doubts).
 
-Model and effort are `--model` (default `claude-opus-5-5`) and `--effort` (default `medium`).
+Model and effort are `--model` and `--effort`; the default is [the agreed model](#the-agreed-model).
 `max_tokens` is 8,000 per request unless the budget lowers it. Thinking counts toward it.
 
-### The gate: TR5, TR6 and TR8 by code
+### The gate: TP5, TK2 and TE1 by code
 
-`tools/gate.py` settles what can be read off literally, before the referee is called (TAX-15;
-`tax-analyse-fable-2026-11-14.md` §4 in keepitfresh). Code only says what it can show; the rest
+`tools/gate.py` settles what can be read off literally, before the referee is called (TAX-15). Code only says what it can show; the rest
 goes to the referee, never a guess.
 
 | rule | code says *yes* | code says *no* | otherwise |
 | --- | --- | --- | --- |
-| TR5 | the publisher is already in TAX (not in the proposal), `versions.source` was read, and its registrable domain is that of the publisher's `source` | – | referee |
-| TR6 | the product name and the publisher name, each at most 40 characters, appear in a source text that was read, capitals and whitespace aside, not glued to other letters or digits | – | referee |
-| TR8 | never | a source is on the domain of an AI chat | referee |
+| TP5 | the publisher is already in TAX (not in the proposal), `versions.source` was read, and its registrable domain is that of the publisher's `source` | – | referee |
+| TK2 | the product name and the publisher name, each at most 40 characters, appear in a source text that was read, capitals and whitespace aside, not glued to other letters or digits | – | referee |
+| TE1 | never | a source is on the domain of an AI chat | referee |
 
 No rule stays untested because code settled another one (TAX-24). Where code checked part of a
-rule that stays with the referee, the `<decided>` block says so in a line `TR8 in part: …` or
-`TR5 in part: …`; that is a note, not a verdict.
+rule that stays with the referee, the `<decided>` block says so in a line `TE1 in part: …` or
+`TP5 in part: …`; that is a note, not a verdict.
 
-- **TR8.** Code looks for the literal values: the product name, in the text of the product's
+- **TE1.** Code looks for the literal values: the product name, in the text of the product's
   `source`, and each code, in the text of its own `source`, with every source of the product read.
   A source found *instead of* another does not count. But `kind` is a value too, and a
-  classification that no code reads off, so TR8 always goes to the referee; what code found goes
-  along as a note. Before TAX-24 code said TR8 *yes* here, and a wrong `kind` reached no one (B34, B35).
-- **TR5.** Two URLs on one domain show where the versions are, not who publishes them. For a
+  classification that no code reads off, so TE1 always goes to the referee; what code found goes
+  along as a note. Before TAX-24 code said TE1 *yes* here, and a wrong `kind` reached no one (B34, B35).
+- **TP5.** Two URLs on one domain show where the versions are, not who publishes them. For a
   publisher proposed together with the product, both URLs come from the proposal: a wrong
   publisher with a site of its own and the versions on that same site passes the comparison
   (B31–B33). So code says *yes* only for a publisher whose `source` TAX already accepted, and only
@@ -227,7 +227,7 @@ rule that stays with the referee, the `<decided>` block says so in a line `TR8 i
   label in front; catalogues, package registries and encyclopaedias (`endoflife.date`, `pypi.org`,
   …) never count as the publisher's site.
 - The lists in `tools/gate.py` are classes of sites, never a brand or a product of the data (TG4).
-- TR4 and TR7 stay with the referee. Conditions *memory* and *web* (TE4) have no gate: they measure
+- TP3 and TP1 stay with the referee. Conditions *memory* and *web* (TE4) have no gate: they measure
   the AI alone.
 
 A **dry run** shows per case what the gate settles and what a live run would ask, and writes it to
@@ -263,8 +263,7 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 
 ### Reading sources
 
-`tools/fetch.py` goes down a ladder for each URL until it has usable text
-(`tax-fase2-pagina-s-lezen.md` §3):
+`tools/fetch.py` goes down a ladder for each URL until it has usable text:
 
 | step | `method` | what it does |
 | --- | --- | --- |
@@ -273,7 +272,7 @@ file or a log; a test checks this. Nothing is sent without `--live`.
 | 2 | `http` | a plain request; HTML without scripts, styles and navigation; JSON and plain text as they are; the text of a PDF (`pypdf`); a page with one frame or iframe is followed |
 | 3 | `browser` | a headless Chromium (Playwright), when an HTML page gives fewer than 200 characters of text. It waits until the network is quiet, at most 15 seconds, and takes the visible text, frames included |
 | 0 again | `machine` | for a source that is `refused` or `disallowed`: the publisher's `machine_sources` (schema 1.2.0), each read for the product. What they give is added `instead_of` the closed source |
-| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with Claude Sonnet 5.5, which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. The URLs that come back, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
+| 4 | `search+…` | only for a source that is `refused` or `disallowed` and for which the publisher's `machine_sources` gave nothing: one web search of the API with the model of step 4 (see *Step 4: the model of the search* below), which only returns URLs and judges nothing. The search is limited to the publisher's domains: of the closed URL, of the product's sources, and of every URL in the publisher's file and its other products (at most 30). Each query runs once per run, also when several sources of one product are closed. Only URLs on those domains are kept: the domain limit of the API is not tight (run 44764232264 returned two of sec.gov for an Adobe product). The round and the test set use the same check (`on_domains`). The URLs kept, at most 5, go down steps 1–3 and are added as sources `instead_of` the closed one. The snippets are never kept or given to the referee. It counts against the budget, like a run (`runs/<time>-search-<model>/`) |
 
 The ladder stops at a refusal:
 
@@ -294,22 +293,25 @@ The ladder stops at a refusal:
   the proposed files: of the product, its versions, its codes and its publisher. Only the protocol
   (http or https) and the way an address is written (the case of the host, a default port, an
   empty path, a fragment, escaping) do not make another address. A source that ended on another
-  domain never counts as a source on the publisher's domain (TR5). The importer parks such a
+  domain never counts as a source on the publisher's domain (TP5). The importer parks such a
   candidate too (`moved`).
 
 **The footer of a page** (TAX-43). Step 2 leaves the header, the navigation and the footer out of
-the text: a list of links proves no product name (TR6). The footer is kept as a text of its own,
+the text: a list of links proves no product name (TK2). The footer is kept as a text of its own,
 `footer` in `sources.json` (at most 3,000 characters; a longer one keeps its end, where the
 copyright line stands; the links of a navigation inside it stay out). It counts only where the
 question is who the publisher is, and only when the switch is on (`FOOTER_COUNTS` in
-`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`):
+`tools/fetch.py`, or `TAX_FOOTER=1`; the input `footer` of `referee-pr-testset`). The switch is
+on since 21 November 2026: three runs on the test set with the footer (44903884643, 44907105590 and 44908160978) each had 0 wrong
+accepts and 0 good cases rejected (TG12). `TAX_FOOTER=0`, or `footer` off in the workflow, reads
+without it, as before:
 
 | where | with the switch on |
 | --- | --- |
 | the importer, a new publisher | its name may stand in the text or in the footer of the page (`no-publisher-page` otherwise); the product name only in the text (`name-not-on-page`) |
-| the gate | nothing changes: TR6 reads only the text |
-| the referee | a source block ends with `<page-footer>`, and the system prompt gets § Page footer of `prompt.md`; the question of TR5 is the same |
-| the quote check | a quote for TR5 or TV1 may stand in the footer of its source; for TR5 only when it contains the publisher's name, because a footer also names a hoster or the maker of a theme. For every other rule only the text counts |
+| the gate | nothing changes: TK2 reads only the text |
+| the referee | a source block ends with `<page-footer>`, and the system prompt gets § Page footer of `prompt.md`; the question of TP5 is the same |
+| the quote check | a quote for TP5 or TV1 may stand in the footer of its source; for TP5 only when it contains the publisher's name, because a footer also names a hoster or the maker of a theme. For every other rule only the text counts |
 
 The gate writes into each item whether its message held the footer (`footer`); a batch with items
 of both kinds is refused, because one batch has one system prompt. `run.json` says which it was.
@@ -326,29 +328,78 @@ For each source `sources.json` records `status`, `method`, `chars` (the length b
 - each URL once per run;
 - no imitated browser headers, no proxies and no stealth;
 - only public addresses: the lint refuses a source on an IP address, `localhost` or an internal
-  name (TR1), and the reader checks again at every connection.
+  name (TE1), and the reader checks again at every connection.
 
 A site that refuses is not worked around. A person decides, or the product gets another source.
+
+### Step 4: the model of the search
+
+The search has its own model, apart from the referee's: `SEARCH_MODEL` in `tools/referee.py`, now
+Claude Haiku 5.5. The round (`tools/importer.py search`) and the test set (`tools/referee.py search`)
+both take it from there; the workflows pass no model to it. The model judges nothing, so its quality
+does not matter. Its cost does: the results of one search come in as about 12,000 input tokens,
+whatever the product (run 44764232264). On Claude Opus 5.5 a search cost $0.060, on Claude Haiku 5.5
+it is about $0.011, almost all of it the fee of the search.
+
+**Measured (20 November 2026, run 44776351618).** The 15 searches of run 44764232264, three times on
+Claude Haiku 5.5, nothing judged. The norm: in each run as many products read as Opus 5.5 read in
+its one run. Haiku 5.5 met it.
+
+| run | products read on another page of the publisher | URLs on the domains | URLs elsewhere, never read | cost |
+| --- | --- | --- | --- | --- |
+| Opus 5.5, run 44764232264 | 15 of 15 | 68 | 2 | $0.89 |
+| Haiku 5.5, run 1 | 15 of 15 | 75 | 5 | $0.18 |
+| Haiku 5.5, run 2 | 15 of 15 | 75 | 5 | $0.18 |
+| Haiku 5.5, run 3 | 15 of 15 | 75 | 4 | $0.18 |
+
+The 15 products are of 5 publishers; for others it is an assumption. The report of each round counts
+the closed sources read after all. If that number drops, that is the sign to measure again.
+
+- **The tool version follows the model** (`search_tool`): the newest web search tool for the models
+  that take it, the basic one (`web_search_20250305`) for every other, Claude Haiku 5.5 included.
+- **The estimate counts the tokens** (`search_cost`): the fee and about 12,000 input tokens per
+  search. The report of a round shows it for its closed pages.
+- **One search on its own**: `tools/referee.py search-one --product … --publisher … --domains …
+  [--model …] [--live]`, or the workflow `referee-search` (environment `referee`). It reads no page
+  and judges nothing, and shows the URLs, the tokens and the cost.
+- **A measurement of the model**: `tools/searchmeasure.py`, or the workflow `referee-search-measure`
+  (one approval). It repeats the searches of an earlier run (its `search.json`) on one model, within a
+  cap, and judges nothing. A job without the key then reads the URLs as a round does, and the report
+  gives per run and per product: the URLs on the domains, whether a page shows the name, the URLs
+  elsewhere and the cost, next to the earlier run.
+
+### The agreed model
+
+The referee is **Claude Opus 5.5 at effort *low*** (`claude-opus-5-5`, `low`). Every default for model
+and effort, in code (`MODEL` and `EFFORT` in `tools/referee.py`) and in the workflows, is this stand;
+the repository variables `REFEREE_MODEL` and `REFEREE_EFFORT` may override it. A test checks that
+every workflow default is the same. A model is used only once it takes in no wrong proposal in three
+runs on the test set (TG12). A change to the prompt asks for that measurement again.
+
+The search of step 4 has its own agreed model, **Claude Haiku 5.5** (`SEARCH_MODEL`), measured in run
+44776351618: see [Step 4: the model of the search](#step-4-the-model-of-the-search). It judges
+nothing, so TG12 does not apply to it.
 
 ### The model measurement (TAX-18)
 
 Which model may judge: Opus 5.5 was measured (A, A2), at effort *medium*. A stand that lets one
-bad case through in any of its runs drops out (TE2). In the first measurement (16 November 2026,
+bad case through in any of its runs drops out (TG12). In the first measurement (16 November 2026,
 effort *low*) Haiku 5.5 and Sonnet 5.5 both let B30 through and dropped out; Haiku is not measured
-again. Sonnet 5.5 is measured again, at *low* and at *medium*, with the TR4 version (below).
+again. Sonnet 5.5 is measured again, at *low* and at *medium*, with the TP3 version (below).
 
 `run --batch` sends every case that reaches the referee as one batch (half price, answered within
 hours; not for condition *web*). The budget stays hard: requests go in rounds, each holding what
 fits the budget at its worst, as in [the PR mode](#the-referee-on-a-pull-request).
 
 `measure` runs the test set per **stand**, a model at an effort, `--repeats` times, as a batch.
-`--models` and `--efforts` give the stands: every model at every effort. The default is Sonnet 5.5
-at *low*; the second measurement of TAX-18 is Sonnet 5.5 at *low* and at *medium*:
+`--models` and `--efforts` give the stands: every model at every effort. The default is
+[the agreed model](#the-agreed-model). The second measurement of TAX-18 was Sonnet 5.5 at *low* and
+at *medium*:
 
 ```
-python tools/referee.py measure --efforts low medium --sources sources.json            # estimate from the tokens of A2
-python tools/referee.py measure --efforts low medium --sources sources.json --count    # with counted tokens (free, the key)
-python tools/referee.py measure --efforts low medium --sources sources.json --live     # the measurement
+python tools/referee.py measure --models claude-sonnet-5-5 --efforts low medium --sources sources.json            # estimate from the tokens of A2
+python tools/referee.py measure --models claude-sonnet-5-5 --efforts low medium --sources sources.json --count    # with counted tokens (free, the key)
+python tools/referee.py measure --models claude-sonnet-5-5 --efforts low medium --sources sources.json --live     # the measurement
 ```
 
 1. **The probe:** cases G01–G03 per stand, one small batch each. Their real cost per case is
@@ -359,7 +410,7 @@ python tools/referee.py measure --efforts low medium --sources sources.json --li
 3. **The report** `runs/model-measurement-<time>.md`: per stand and per run the bad cases let
    through, the good cases rejected, the cases for a person (*human*; *parked* in the PR mode) and
    the rules that left them there, the cases whose outcome differs between the runs, the quotes code
-   did not find (a TR4 without a version among them), the output tokens and the cost per proposal;
+   did not find (a TP3 without a version among them), the output tokens and the cost per proposal;
    and `compare` with A2.
 
 **The estimate** without `--live`: the input tokens of A2 (or, with `--count`, those counted), and
@@ -369,8 +420,8 @@ about 560 tokens per case at *low* in the first measurement, A2 about 1,100), *m
 *medium*, three runs each, on the 69 cases past the lint, that is about $2.80 and $3.40: **about
 $6.20** together. About $13.15 of the $50 is spent.
 
-**The TR4 version.** Since the second measurement, a *yes* on TR4 needs a version quoted from the
-versions source (`prompt.md` § Outcome). The first measurement showed a hosted service passing TR4
+**The TP3 version.** Since the second measurement, a *yes* on TP3 needs a version quoted from the
+versions source (`prompt.md` § Outcome). The first measurement showed a hosted service passing TP3
 on a page of news about it (B30). The test set now holds five cases of a service without a version
 (B29, B30, B36–B38) and six of a name or domain one or two characters from an existing one
 (B39–B44, rules TV2 and TV3). The outcomes of the first and the second measurement are therefore not
@@ -378,7 +429,8 @@ comparable one to one: the prompt differs.
 
 **Protection against intent (TAX-31).** Since then the referee also answers TV1 (no text addresses
 the referee), and the message holds an `<identity>` block (TV2). Code holds a case for a person on
-TV3 or TV5, whatever the referee answers (`prompt.md` § Outcome): B39–B44 on TV3 and B47 on TV5.
+TV3 or TV5, whatever the referee answers (`prompt.md` § Outcome): B39–B44 on TV3. Since TAX-46 code
+rejects B47 and B60 on TV5, and B59 by the lint; G37 moves with a pointer.
 A new publisher is taken in on its own evidence (TV4); a second source is optional, and one that is
 given and does not pass is rejected by code: B46 gives one on its own site, which the lint rejects.
 The good cases that propose a publisher as new (G17–G19, G24, G25, H01, H02) expect what they
@@ -403,16 +455,15 @@ outcome, in a comment on the pull request:
 | outcome | when |
 | --- | --- |
 | *accept* | the lint passes, and every rule is *yes*, by code or by the referee |
-| *reject* | a rule is *no*: the lint (TR1–TR3), a 404 (TR7), an AI chat as source (TR8), or the referee; with the rule and the reason |
-| *alias* | the referee finds the same product under another key (TR4); the comment names it |
+| *reject* | a rule is *no*: the lint (TE1, TK2 and TK3), a 404 (TP1), an AI chat as source (TE1), or the referee; with the rule and the reason |
+| *alias* | the referee finds the same product under another key (TP3); the comment names it |
 | *parked* | not taken in now: the referee doubts, a quote is not in its source, the answer is unusable, a ceiling leaves no room, or the pull request comes from a fork. With the rules and the reason |
 
-*Doubt means: not taken in, but parked* (Fred, 14 November). Only what code holds (TV3, TV5) waits
+*Doubt means: not taken in, but parked* (14 November 2026). Only what code holds (TV3, TV5) waits
 for a person; a contributor who disagrees can say so on the pull request. The test set's *human* is
 *parked* here.
 
-**Two workflows**, so that no code of a pull request runs where the key is
-(`hosting-taxnmy-publiek.md` §4 in keepitfresh):
+**Two workflows**, so that no code of a pull request runs where the key is:
 
 - **`referee-pr-collect`** (`pull_request`, on `products/**` and `publishers/**`) runs the code of
   the pull request, so it has no key and a read-only token. It only keeps the data files the pull
@@ -423,10 +474,10 @@ for a person; a contributor who disagrees can say so on the pull request. The te
   - **gate**, no key: stages each product file (with the publisher file it brings) on the data of
     `main`, lints it, reads its sources with the ladder of [Reading sources](#reading-sources) and runs
     [the gate](#the-gate-tr5-tr6-and-tr8-by-code). Free.
-  - **judge**, in environment `referee`: the key, after Fred approves. One request per product that
+  - **judge**, in environment `referee`: the key, after a maintainer approves. One request per product that
     code did not settle, as **one batch** (half price, answered within hours). Model and effort:
-    the repository variables `REFEREE_MODEL` (default `claude-opus-5-5`, until TAX-18 chooses) and
-    `REFEREE_EFFORT` (default `low`). A pull request from a fork never gets here: code judges it, the
+    the repository variables `REFEREE_MODEL` and `REFEREE_EFFORT`; by default
+    [the agreed model](#the-agreed-model). A pull request from a fork never gets here: code judges it, the
     rest is parked.
   - **report**: the comment, edited on the next run.
   - Only `workflow_run` starts it: that trigger can read the cache of `main` but not write it, so an
@@ -473,7 +524,7 @@ fields; a reader (such as the daily message, TAX-37) can rely on them:
 | `pr`, `fingerprint`, `files` | its pull request, a hash of its files, and the files, so it can be judged again without the pull request |
 
 **Judged again.** The workflow **referee-parked** runs weekly (Mondays) and in environment `referee`
-(Fred approves the key). First what is past its term lapses: it leaves the list, and its pull
+(a maintainer approves the key). First what is past its term lapses: it leaves the list, and its pull
 request gets a comment with the reason; the submitter may propose it again. Then, by what an entry
 waits for: an `event` is staged, read and gated again for free, and goes to the referee only when
 nothing holds it and every source is read now; a `better-proposal` is not touched while its
@@ -505,6 +556,7 @@ python tools/pr_referee.py waiting                   # what waits for a person, 
 python tools/pr_referee.py decide <publisher> approve --reason "..." [--by name]
 python tools/pr_referee.py decide <publisher> reject --reason "..."
 python tools/pr_referee.py settle <product key> stays|proposal|keep|fix|remove --reason "..." [--by name]
+python tools/pr_referee.py remove <product key> --reason "..." [--by name]   # a maintainer takes a product out
 python tools/pr_referee.py gate --testset            # the test set as a pull request, code only (free)
 python tools/pr_referee.py judge --gated gated/gated.json --live   # and the rest, with the referee
 ```
@@ -515,29 +567,71 @@ accepted entry to the data and takes it off the list, takes rejected ones off, a
 with the new reason, its first day and its pull request. `waiting` groups the entries that wait
 for a decision per publisher, the most urgent publisher first, each with its last day.
 
+**A key stays (TK3, TG13).** A pull request that deletes or renames a file in `products/` or
+`publishers/`, or takes a key or an alias out of an existing file, is rejected on TK3. The gate takes
+the deleted and renamed paths from GitHub, not from the artifact. Only a maintainer takes a product
+out, with `remove` (or `settle <key> remove` on an audit finding). The decision goes to
+`referee/decisions.yaml` with the key, the name, the publisher, the sources, the day, the reason and
+who. The log keeps every decision; a later one on the same subject stands next to the earlier one,
+and the last one counts. A maintainer lands the decision and the deletion on `main`. A pull request
+that deletes a file whose removal is already in the log on `main` is accepted. After the removal the
+key is free: a next proposal with it is judged as any new product.
+
 **The test set as a pull request.** Started by hand (*Actions → referee-pr-testset → Run workflow*,
-from `main`), the workflow **referee-pr-testset** runs the 91 cases of the test set through the same gate and the same batch, each staged as
+from `main`), the workflow **referee-pr-testset** runs the 110 cases of the test set through the same gate and the same batch, each staged as
 [Staging a case](#staging-a-case) says, and writes the count per outcome to the run page. Only the
 test set may take files out of the data; the artifact of a pull request may not.
 
 ### A change that only adds an alias (TAX-40)
 
 A change to a product in TAX whose only difference is one or more added aliases is judged on the
-aliases, not on the whole product again (`tools/alias.py`; Fred, decision 35). An alias proves three
+aliases, not on the whole product again (`tools/alias.py`). An alias proves three
 things:
 
 | point | what | decided by |
 | --- | --- | --- |
-| 1 | it is nobody else's: no key or alias of another product, under the publisher of the product; one or two characters from an existing name of that publisher, a person decides | the lint (TR3), code (TV2), a person (TV3) |
+| 1 | it is nobody else's: no key or alias of another product, under the publisher of the product; one or two characters from an existing name of that publisher, a person decides | the lint (TK3), code (TV2), a person (TV3) |
 | 2 | the name exists: a source of the product that was read writes it | code when it stands there literally (TR11); otherwise one question to the AI (`referee/prompt-alias.md`), whose yes counts only with a quote of the name found in a read source (TV6) |
 | 3 | nothing else changes: the file is what TAX holds, but for the added aliases | code |
 
-TR4, TR5, TR7 and TR8 are not judged again: they were judged when the product was taken in; the
+TP3, TP5, TP1 and TE1 are not judged again: they were judged when the product was taken in; the
 outcome says so. A change that does more, that adds a comment line, or whose alias speaks to
 whoever judges it (TV1), gets the whole review. Without a quote the alias is parked, waiting for a
 better proposal; with no source of the product read, it waits for an event. The sources are those
 of the product itself, not of its publisher: a proposal points to no other source, since the schema
 has no field for it.
+
+### A change that only adds an identifier or a source (TAX-48)
+
+A change to a file in TAX that only adds is judged on the addition (`tools/addition.py`), as the
+alias is (TAX-40):
+
+| addition | what code checks | when code cannot show it |
+| --- | --- | --- |
+| an identifier | its own source was read, ended where it was asked, and writes the code literally and the product name outside the code | the whole review, as for any change |
+| a source for machines (TE7) | the page that names it is on the publisher's domain, was read, and writes its address | *reject*; *parked* when the page was not read |
+| a second source (TV4) | it is off the publisher's domain, was read, and names that domain | *reject* |
+
+An identifier that is already on another product (signal TK4) gets the whole review: TP3 asks
+whether it is a product of its own. A change that does more than one addition gets the whole
+review too. A source the changed file already held is not the proposal's doing: when it redirects,
+the change is not parked for it.
+
+### Archiving a product, and taking it up again (TAX-47)
+
+A product is archived only on a proposal for it (TP10). The change adds `archived: {source: ...}`
+to a product in TAX, or replaces it with `resumed: {source: ...}`, and does nothing else
+(`tools/archive.py`). It is judged on that alone:
+
+| step | what | outcome when it fails |
+| --- | --- | --- |
+| 1 | the source is on the publisher's domain as TAX holds it: the owner of the publisher's `source` or of a source for machines | *reject* by code; *parked* (better proposal) when TAX holds no domain of the publisher |
+| 2 | the source is read | *parked*, waiting for an event |
+| 3 | the text shows the end, or new updates: one question to the AI (`referee/prompt-archive.md`), whose yes counts only with a quote found in the text that names the product (TV6) | *parked*, waiting for a better proposal |
+
+TP3, TP5, TK2, TP1 and TE1 are not judged again. A change that touches `archived` or `resumed` and
+anything else, a new product with either field, or a change that takes `archived` out without
+`resumed`, is an error TP10 of the gate.
 
 ### The limits of the intake (TAX-32)
 
@@ -549,9 +643,9 @@ provisional and start low; change a number there, not in the code.
   unknown submitter, 10 for a known one (a pull request of it was taken in before). Its entries
   on the parking list and the data files in its earlier open pull requests count. The workflow asks
   GitHub who the submitter is, on `main` and without code of the pull request.
-- **Over a limit (TV9):** _reject_ with the limit as the reason, before the sources are read. It
+- **Over a limit (TV8):** _reject_ with the limit as the reason, before the sources are read. It
   never goes to the parking list.
-- **The parking list (TV9):** at most `parking_list` entries. When it is full, a new proposal
+- **The parking list (TV8):** at most `parking_list` entries. When it is full, a new proposal
   that would be parked is rejected instead.
 - **Known submitters first (TV10):** the referee judges their proposals first, also when the
   parking list is judged again. Unknown submitters may use at most `unknown_share_of_day` of the day
@@ -573,7 +667,7 @@ maintainer closes it in one of these ways, the first being the quickest:
 
 ### Running it as an Action
 
-The key is a secret of the environment `referee` (only `main`, Fred approves), so a paid measurement runs as the workflow **referee**
+The key is a secret of the environment `referee` (only `main`, a maintainer approves), so a paid measurement runs as the workflow **referee**
 (`.github/workflows/referee.yml`). Start it by hand (*Actions → referee → Run workflow*), with the
 condition, the cases, the model, the effort, the budget and *live*.
 
@@ -584,11 +678,11 @@ It has four jobs, so that the key never comes near the JavaScript of other sites
   `referee-sources-<id>`. It runs for condition *fetched* and for `task: check-urls`, from any
   branch. That is how the ladder is tested for free.
 - **search** is step 4 for the refused and disallowed sources. It has the key and no browser, and runs only on a
-  live run from `main`, in environment `referee`: it waits until Fred approves.
+  live run from `main`, in environment `referee`: it waits until a maintainer approves.
 - **refetch** reads what search found, down steps 1–3, without a key, and keeps the result as
   `referee-sources-final-<id>`.
 - **judge** reads the sources and calls the referee. It has the key, only on a live run and only
-  from `main`, and runs no browser. It runs in environment `referee`, so it waits until Fred approves.
+  from `main`, and runs no browser. It runs in environment `referee`, so it waits until a maintainer approves.
 
 - Without *live* it is a dry run: the key is not passed to it.
 - It runs one at a time. It reads only data files and runs no code from a pull request (hosting
@@ -657,5 +751,5 @@ python tools/group.py run --live --repeats 3    # the measurement: three runs as
 
 As an Action: **referee-group** (*Actions → referee-group → Run workflow*). Its job `estimate` is
 the dry run, from any branch and without a key. Its job `measure` runs only with *live*, from
-`main`, in environment `referee`, so Fred approves it. Each run is kept as an artifact
+`main`, in environment `referee`, so a maintainer approves it. Each run is kept as an artifact
 `referee-run-<run>`, so the budget counts it; commit them in `runs/` afterwards.

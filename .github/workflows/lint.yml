@@ -21,17 +21,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0  # the base of a pull request, to list its changed files
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt -r requirements-referee.txt
       - name: Tests of the lint and the referee harness
         run: python -m unittest discover -s tests -v
-      - name: Lint the data (writing rule, TR1-TR3)
+      - name: Lint the data (writing rule, TE1, TK2 and TK3)
         env:
           BASE: ${{ github.event.pull_request.base.sha }}
         run: |
@@ -56,8 +56,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip

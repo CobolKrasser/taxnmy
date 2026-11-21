@@ -11,11 +11,14 @@ and the AI only ever judges *what* something is (TV2).
     TV4  second source a new publisher is taken in on its own evidence; a second source is optional.
                        One that is given (schema field `second_source`) is not on the publisher's
                        domain and names that domain, or the proposal is wrong
-    TV5  replacement   a change that moves a source, the publisher or a code of an existing file to
-                       another domain or another value: held for a person
+    TV5  replacement   a change that replaces the publisher of an existing file is rejected; a source
+                       that moves to another domain must be pointed to by the old source (`moves`).
+                       A code that is changed or taken out, a new domain for machines, or another
+                       second source: held for a person (`replaced`)
+    TK3  kept          a change keeps the key and every alias of an existing file (`taken_out`)
 
-Code here holds a list of characters that look alike. It names no brand
-and no product (TG4). Standard library only: the lint uses it.
+Code here holds a list of characters that look alike. It names no site, brand or product (TG4);
+the classes of sites are in referee/sites.yaml.
 """
 
 from __future__ import annotations
@@ -25,22 +28,16 @@ import urllib.parse
 from functools import lru_cache
 from itertools import combinations
 
+import sites
+
 # --------------------------------------------------------------------------- domains and owners
 
-# Sites where one registrable domain carries the pages of many owners: the owner is part of the
-# address (the first path segment, or the label in front of the domain).
-OWNER_IN_PATH = ("github.com", "gitlab.com", "bitbucket.org", "codeberg.org")
-OWNER_IN_HOST = ("github.io", "gitlab.io", "readthedocs.io", "netlify.app", "vercel.app", "pages.dev",
-                 "sourceforge.io", "blogspot.com", "wordpress.com")
-MANY_OWNERS = (  # never the publisher's own site:
-    # catalogues and encyclopaedias of products
-    "endoflife.date", "wikipedia.org", "wikidata.org", "nist.gov",
-    # package registries and app stores, which carry the packages of many publishers
-    "npmjs.com", "pypi.org", "packagist.org", "nuget.org", "crates.io", "rubygems.org", "docker.com", "docker.io",
-    "chocolatey.org", "brew.sh", "snapcraft.io", "flathub.org", "sourceforge.net", "launchpad.net",
-    # sites where anyone writes
-    "medium.com", "reddit.com",
-)
+# The classes of sites (TG4) are data, in referee/sites.yaml: sites where one registrable domain
+# carries the pages of many owners (the owner in the path, or the label in front of the domain), and
+# sites that are never the publisher's own.
+OWNER_IN_PATH = sites.names("owner_in_path")
+OWNER_IN_HOST = sites.names("owner_in_host")
+MANY_OWNERS = sites.names("many_owners")
 
 
 def registrable(host: str) -> str:
@@ -259,23 +256,36 @@ def _owners(urls) -> set:
     return {owner(u) or host_of(u) for u in urls if isinstance(u, str)}
 
 
-def replaced(old: dict, new: dict) -> list[str]:
-    """What a change to an existing file moves to another domain or another value; [] when nothing.
-    A URL may change within the same owner (another page of the same site); a value may not."""
-    out = []
+def taken_out(old: dict, new: dict) -> list[str]:
+    """TK3: what a change to an existing file takes away of its key or its aliases; [] when nothing.
+    A key never changes and an alias stays: only a maintainer takes a product out (TAX-45)."""
     if not isinstance(old, dict) or not isinstance(new, dict):
-        return out
+        return []
+    out = []
+    if isinstance(old.get("key"), str) and new.get("key") != old["key"]:
+        out.append(f"the key {old['key']!r} becomes {new.get('key')!r}")
+    kept = new.get("aliases") if isinstance(new.get("aliases"), list) else []
+    for a in old.get("aliases") or []:
+        if isinstance(a, str) and a not in kept:
+            out.append(f"the alias {a!r} is taken out")
+    return out
+
+
+def moves(old: dict, new: dict) -> tuple[str, list[tuple[str, str, str]]]:
+    """TV5 (TAX-46): what a change to an existing file replaces. (the publisher replaced, or ''; and
+    per source that moves to another owner: (label, old URL, new URL)). A URL may change within the
+    same owner (another page of the same site) without a check."""
+    if not isinstance(old, dict) or not isinstance(new, dict):
+        return "", []
+    who = ""
     if "publisher" in old and new.get("publisher") != old.get("publisher"):
-        out.append(f"publisher {old.get('publisher')!r} becomes {new.get('publisher')!r}")
+        who = f"the publisher {old.get('publisher')!r} becomes {new.get('publisher')!r}"
+    out = []
     for label, get in (("source", lambda d: d.get("source")),
                        ("versions.source", lambda d: (d.get("versions") or {}).get("source") if isinstance(d.get("versions"), dict) else None)):
         a, b = get(old), get(new)
         if isinstance(a, str) and a != b and _owners([a]) != _owners([b]):
-            out.append(f"{label} moves from {owner(a) or host_of(a)} to {owner(b) or host_of(b) if isinstance(b, str) else 'nothing'}")
-    old_codes = {(c, str(i[c])) for i in old.get("identifiers") or [] if isinstance(i, dict) for c in CODES if c in i}
-    new_codes = {(c, str(i[c])) for i in new.get("identifiers") or [] if isinstance(i, dict) for c in CODES if c in i}
-    for c, v in sorted(old_codes - new_codes):
-        out.append(f"{c} {v!r} is changed or taken out")
+            out.append((label, a, b if isinstance(b, str) else ""))
     old_src = {(c, str(i[c])): i.get("source") for i in old.get("identifiers") or [] if isinstance(i, dict) for c in CODES if c in i}
     for i in new.get("identifiers") or []:
         if not isinstance(i, dict):
@@ -283,7 +293,33 @@ def replaced(old: dict, new: dict) -> list[str]:
         for c in CODES:
             a, b = old_src.get((c, str(i.get(c)))), i.get("source")
             if c in i and isinstance(a, str) and a != b and _owners([a]) != _owners([b]):
-                out.append(f"the source of {c} {i[c]!r} moves from {owner(a) or host_of(a)} to {owner(b) or host_of(b) if isinstance(b, str) else 'nothing'}")
+                out.append((f"the source of {c} {i[c]!r}", a, b if isinstance(b, str) else ""))
+    return who, out
+
+
+def points_to(old_text: str, final_url: str, new_url: str) -> bool:
+    """TV5: whether an old source, as read now, points to the domain of `new_url`: it redirects there
+    (`final_url`), or its text names that domain."""
+    if not new_url:
+        return False
+    want = owner(new_url) or host_of(new_url)
+    if final_url and (owner(final_url) or host_of(final_url)) == want:
+        return True
+    text = (old_text or "").lower()
+    return bool(want) and want.lower() in text
+
+
+def replaced(old: dict, new: dict) -> list[str]:
+    """What a change to an existing file replaces that a person decides on (TV5); [] when nothing: a
+    code that is changed or taken out, a source for machines on a new domain, another second source.
+    The publisher and the sources are `moves`."""
+    out = []
+    if not isinstance(old, dict) or not isinstance(new, dict):
+        return out
+    old_codes = {(c, str(i[c])) for i in old.get("identifiers") or [] if isinstance(i, dict) for c in CODES if c in i}
+    new_codes = {(c, str(i[c])) for i in new.get("identifiers") or [] if isinstance(i, dict) for c in CODES if c in i}
+    for c, v in sorted(old_codes - new_codes):
+        out.append(f"{c} {v!r} is changed or taken out")
     old_machine = _owners([e.get("url") for e in old.get("machine_sources") or [] if isinstance(e, dict)]
                           + [old.get("source")])
     for e in new.get("machine_sources") or []:

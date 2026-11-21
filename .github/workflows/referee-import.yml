@@ -7,13 +7,19 @@ name: referee-import
 #
 #   prepare   no key: the KEV list and the CVE records of the vendors of the rows (public), and the
 #             estimate of the grouping (dry run).
-#   group     environment referee (the key; Fred approves): the grouping, one batch. Main only.
+#   group     environment referee (the key; a maintainer approves): the grouping, one batch. Main only.
 #             With `grouping_run`, it does not run: propose takes the grouping of that earlier run
-#             (decision 37: the grouping is not run again).
+#             (the grouping is not run again).
 #   propose   no key: the importer reads every page (with a browser), parks what it must, and runs
-#             the gate of the pull request.
-#   judge     environment referee (the key; Fred approves): the referee on what the gate left, one
-#             batch, within what the grouping left of the cap.
+#             the gate of the pull request. It lists the closed pages (closed.json, TAX-49).
+#   search    environment referee (the key; a maintainer approves), only for closed pages: one web
+#             search each on the publisher's domains, within the cap, on the model of step 4
+#             (tools/referee.py SEARCH_MODEL), apart from the referee's. Only URLs on those domains are kept.
+#   reread    no key: propose again on the pages already read, with the URLs of the search. A
+#             closed page is not asked again; another page of the publisher that is read and shows
+#             the name takes its place for the referee. It replaces the artifact of propose.
+#   judge     environment referee (the key; a maintainer approves): the referee on what the gate left, one
+#             batch, within what the grouping and the search left of the cap.
 #   pull-request  no key: the count per product after the verdict (TAX-39), the outcome on a branch, parked entries in referee/parked.yaml, rejected
 #             and aliased files taken out (tools/pr_referee.py apply), and a pull request.
 #
@@ -64,10 +70,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30  # the whole round fetches about 750 CVE records
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -84,8 +90,8 @@ jobs:
           python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/dry/classes.json" \
             --names "$RUNNER_TEMP/dry/names.json" --out "$RUNNER_TEMP/dry-propose" > propose.log
           { echo "### KEV round: dry run of ${files[*]}"; echo; cat list.log; echo; cat dry.log; echo
-            sed -n '/^- rijen/,/^Kosten van het groeperen/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+            sed -n '/^- rows/,/^Cost of the grouping/p' "$RUNNER_TEMP/dry-propose/report.md"; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
         with:
           name: import-list-${{ github.run_id }}
           path: ${{ runner.temp }}/list
@@ -106,10 +112,10 @@ jobs:
     outputs:
       cost: ${{ steps.group.outputs.cost }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -117,7 +123,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-list-${{ github.run_id }}
           path: ${{ runner.temp }}/list
@@ -136,12 +142,12 @@ jobs:
           { echo "### Grouping"; echo; cat group.log; } >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the run
         if: always() && steps.group.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.group.outputs.run_name }}
           path: ${{ steps.group.outputs.run_dir }}
           retention-days: 90
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
@@ -149,6 +155,8 @@ jobs:
 
   propose:
     needs: group
+    outputs:
+      closed: ${{ steps.propose.outputs.closed }}
     # After the grouping of this run, or, with `grouping_run`, of that earlier run (group is skipped).
     if: >-
       !cancelled() && (needs.group.result == 'success' || (needs.group.result == 'skipped'
@@ -159,10 +167,10 @@ jobs:
       contents: read
       actions: read  # with grouping_run: the artifacts of that run
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
@@ -177,20 +185,20 @@ jobs:
             echo "::error::grouping_run is not a run id: $GROUPING_RUN" >&2
             exit 1
           fi
-          echo "The grouping of run $GROUPING_RUN, not grouped again (decision 37)" >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/download-artifact@v4
+          echo "The grouping of run $GROUPING_RUN, not grouped again" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run == ''
         with:
           name: import-group-${{ github.run_id }}
           path: ${{ runner.temp }}/group
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         if: inputs.grouping_run != ''
         with:
           name: import-group-${{ inputs.grouping_run }}
           path: ${{ runner.temp }}/group
           run-id: ${{ inputs.grouping_run }}
           github-token: ${{ github.token }}
-      - uses: actions/download-artifact@v4  # results.jsonl: the reasons of the grouping (TAX-44)
+      - uses: actions/download-artifact@v8  # results.jsonl: the reasons of the grouping (TAX-44)
         if: inputs.grouping_run != ''
         with:
           pattern: referee-run-*-import-group-*
@@ -198,6 +206,7 @@ jobs:
           run-id: ${{ inputs.grouping_run }}
           github-token: ${{ github.token }}
       - name: Read the pages and run the gate (no key)
+        id: propose
         env:
           SUBMITTER: ${{ inputs.submitter }}  # checked as an account name by tools/intake.py
           GROUPING_RUN: ${{ inputs.grouping_run }}
@@ -219,15 +228,152 @@ jobs:
             --submitter "$SUBMITTER" \
             --out "$RUNNER_TEMP/proposed" > propose.log
           sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
           retention-days: 30
 
-  judge:
+  search:
     needs: [group, propose]
-    if: ${{ !cancelled() && needs.propose.result == 'success' }}  # group may be skipped (grouping_run)
+    if: >-
+      !cancelled() && needs.propose.result == 'success' && needs.propose.outputs.closed != '0'
+      && needs.propose.outputs.closed != '' && github.ref == 'refs/heads/main' && inputs.live
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: referee
+    concurrency:
+      group: referee-judge  # one paid job at a time, so the budget cannot be spent twice
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read  # earlier runs, for the budget
+    outputs:
+      cost: ${{ steps.search.outputs.cost }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt
+      - name: Gather earlier runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/gather-runs.sh
+      - uses: actions/download-artifact@v8
+        with:
+          name: import-proposed-${{ github.run_id }}
+          path: ${{ runner.temp }}/proposed
+      - name: One search per closed page (TAX-49), no page is read here
+        id: search
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CAP: ${{ inputs.budget }}
+          GROUP_COST: ${{ needs.group.outputs.cost }}  # empty with grouping_run: paid in that run
+          BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
+        run: |
+          set -euo pipefail
+          left=$(python - <<'PY'
+          import os
+          print(f"{max(float(os.environ['CAP']) - float(os.environ.get('GROUP_COST') or 0), 0):.4f}")
+          PY
+          )
+          python tools/importer.py search --closed "$RUNNER_TEMP/proposed/closed.json" --output search/search.json \
+            --live --budget "$BUDGET" --cap "$left" | tee search.log  # the model of step 4: referee.SEARCH_MODEL
+          { echo "### Search for closed pages"; echo; cat search.log; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the run
+        if: always() && steps.search.outputs.run_dir != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: referee-run-${{ steps.search.outputs.run_name }}
+          path: ${{ steps.search.outputs.run_dir }}
+          retention-days: 90
+      - uses: actions/upload-artifact@v7
+        with:
+          name: import-search-${{ github.run_id }}
+          path: search/
+          retention-days: 7
+
+  reread:
+    needs: [propose, search]
+    if: ${{ !cancelled() && needs.search.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      actions: read  # with grouping_run: the artifacts of that run
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-referee.txt -r requirements-fetch.txt
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+      - uses: actions/download-artifact@v8
+        if: inputs.grouping_run == ''
+        with:
+          name: import-group-${{ github.run_id }}
+          path: ${{ runner.temp }}/group
+      - uses: actions/download-artifact@v8
+        if: inputs.grouping_run != ''
+        with:
+          name: import-group-${{ inputs.grouping_run }}
+          path: ${{ runner.temp }}/group
+          run-id: ${{ inputs.grouping_run }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v8
+        if: inputs.grouping_run != ''
+        with:
+          pattern: referee-run-*-import-group-*
+          path: ${{ runner.temp }}/group-run
+          run-id: ${{ inputs.grouping_run }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v8
+        with:
+          name: import-proposed-${{ github.run_id }}
+          path: ${{ runner.temp }}/first
+      - uses: actions/download-artifact@v8
+        with:
+          name: import-search-${{ github.run_id }}
+          path: ${{ runner.temp }}/search
+      - name: Read what the search found, and run the gate again (no key)
+        env:
+          SUBMITTER: ${{ inputs.submitter }}  # checked as an account name by tools/intake.py
+          GROUPING_RUN: ${{ inputs.grouping_run }}
+        run: |
+          set -euo pipefail
+          list=$(.github/scripts/import-found.sh "$FOUND")  # stops the step on a wrong input
+          mapfile -t files <<< "$list"
+          reasons=()
+          if [ -n "$GROUPING_RUN" ]; then
+            mapfile -t results < <(find "$RUNNER_TEMP/group-run" -name results.jsonl)
+            if [ "${#results[@]}" -ne 1 ]; then
+              echo "::error::run $GROUPING_RUN has ${#results[@]} results.jsonl of the grouping, not one" >&2
+              exit 1
+            fi
+            reasons=(--group-results "${results[0]}")
+          fi
+          python tools/importer.py propose --found "${files[@]}" --classes "$RUNNER_TEMP/group/classes.json" \
+            --names "$RUNNER_TEMP/group/names.json" "${reasons[@]}" --fetch --browser --gated "$RUNNER_TEMP/proposed/gated.json" \
+            --submitter "$SUBMITTER" --sources "$RUNNER_TEMP/first/sources.json" --search "$RUNNER_TEMP/search/search.json" \
+            --out "$RUNNER_TEMP/proposed" > propose.log
+          sed -n '/^# Importer/,$p' propose.log >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: import-proposed-${{ github.run_id }}  # replaces the artifact of propose
+          path: ${{ runner.temp }}/proposed
+          retention-days: 30
+          overwrite: true
+
+  judge:
+    needs: [group, propose, search, reread]
+    # search and reread run only for closed pages; skipped, the artifact of propose stands
+    if: ${{ !cancelled() && needs.propose.result == 'success' && needs.search.result != 'failure' && needs.reread.result != 'failure' }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
     environment: referee
@@ -238,10 +384,10 @@ jobs:
       contents: read
       actions: read  # earlier runs, for the ceilings
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5  # no cache in a job that reads artifacts
+      - uses: actions/setup-python@v7  # no cache in a job that reads artifacts
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r requirements-referee.txt
@@ -249,7 +395,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: .github/scripts/gather-runs.sh
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
@@ -259,6 +405,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CAP: ${{ inputs.budget }}
           GROUP_COST: ${{ needs.group.outputs.cost }}  # empty with grouping_run: paid in that run
+          SEARCH_COST: ${{ needs.search.outputs.cost }}  # empty without closed pages
           MODEL: ${{ vars.REFEREE_MODEL || 'claude-opus-5-5' }}
           EFFORT: ${{ vars.REFEREE_EFFORT || 'low' }}
           BUDGET: ${{ vars.REFEREE_BUDGET || '50.00' }}
@@ -266,14 +413,15 @@ jobs:
           set -euo pipefail
           left=$(python - <<'PY'
           import os
-          print(f"{max(float(os.environ['CAP']) - float(os.environ.get('GROUP_COST') or 0), 0):.4f}")
+          spent = float(os.environ.get('GROUP_COST') or 0) + float(os.environ.get('SEARCH_COST') or 0)
+          print(f"{max(float(os.environ['CAP']) - spent, 0):.4f}")
           PY
           )
-          echo "What the grouping left of the cap: \$$left" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "What the grouping and the search left of the cap: \$$left" | tee -a "$GITHUB_STEP_SUMMARY"
           python tools/pr_referee.py judge --gated "$RUNNER_TEMP/proposed/gated.json" --output verdicts --live \
             --model "$MODEL" --effort "$EFFORT" --pr-cap "$left" --budget "$BUDGET"
           cat verdicts/comment.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.judge.outcome == 'success'
         with:
           name: import-verdicts-${{ github.run_id }}
@@ -281,7 +429,7 @@ jobs:
           retention-days: 90
       - name: Keep the run
         if: always() && steps.judge.outputs.run_dir != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: referee-run-${{ steps.judge.outputs.run_name }}
           path: ${{ steps.judge.outputs.run_dir }}
@@ -296,16 +444,16 @@ jobs:
       contents: write  # the branch
       pull-requests: write  # the pull request
     steps:
-      - uses: actions/checkout@v4  # main, with the token to push a branch
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7  # main, with the token to push a branch
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-proposed-${{ github.run_id }}
           path: ${{ runner.temp }}/proposed
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: import-verdicts-${{ github.run_id }}
           path: ${{ runner.temp }}/verdicts
@@ -341,7 +489,7 @@ jobs:
           git push -q origin "$branch"
           { echo "KEV round (TAX-27), ${names% }, workflow run ${RUN_ID}. Not merged by itself."; echo
             cat "$RUNNER_TEMP/count.md"; echo; cat "$VERDICTS/comment.md"; echo; cat "$REPORT"; } | head -c 60000 > body.md
-          if ! gh pr create --base main --head "$branch" --title "TAX-27: KEV-ronde, ${names% }" --body-file body.md \
+          if ! gh pr create --base main --head "$branch" --title "TAX-27: KEV round, ${names% }" --body-file body.md \
                | tee -a "$GITHUB_STEP_SUMMARY"; then
             # The repository may not let a workflow open a pull request: the branch is there, open it by hand.
             echo "Open the pull request by hand: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}" \
