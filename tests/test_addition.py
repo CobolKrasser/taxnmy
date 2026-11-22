@@ -168,7 +168,7 @@ class TestSet(unittest.TestCase):
 
     def gate(self):
         proposals = [p for p in pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml") if p["id"] in self.IDS]
-        return {i["id"]: i for i in pr_referee.gate_proposals(proposals, Fetcher(page="", pages=self.PAGES), log=QUIET)}
+        return {i["id"]: i for i in pr_referee.gate_proposals(proposals, Fetcher(page="", pages=self.PAGES), referee.TESTSET_DATA, log=QUIET)}
 
     def test_the_good_cases_are_accepted_by_code_and_the_wrong_ones_not(self):
         items = self.gate()

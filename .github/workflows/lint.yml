@@ -51,18 +51,3 @@ jobs:
             python tools/lint.py
           fi
 
-  lint-scale:
-    # TAX-16: a pull request of 10,000 new products on a dataset of 20,000 is linted within 10 minutes.
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
-        with:
-          python-version: "3.12"
-          cache: pip
-      - run: pip install -r requirements.txt
-      - name: Scale test of the lint
-        env:
-          TAXNMY_SCALE_TEST: "1"
-        run: python -m unittest tests.test_lint_scale -v

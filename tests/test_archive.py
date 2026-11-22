@@ -206,7 +206,7 @@ class Break(unittest.TestCase):
 
     def run_cases(self, client, ids=("B61", "B63")):
         proposals = [p for p in pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml") if p["id"] in ids]
-        items = pr_referee.gate_proposals(proposals, Fetcher(pages=self.PAGES), log=QUIET)
+        items = pr_referee.gate_proposals(proposals, Fetcher(pages=self.PAGES), referee.TESTSET_DATA, log=QUIET)
         with tempfile.TemporaryDirectory() as tmp:
             pr_referee.judge(items, Args(Path(tmp) / "runs"), client=client, now=NOW, log=QUIET, sleep=lambda s: None)
         return {i["id"]: i["outcome"] for i in items}

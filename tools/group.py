@@ -253,7 +253,7 @@ class Case:
     note: str = ""
 
 
-def load_testset(path: Path, data_root: Path = REPO) -> list[Case]:
+def load_testset(path: Path, data_root: Path = referee.TESTSET_DATA) -> list[Case]:
     data = yaml.safe_load(path.read_text(encoding="utf-8"))
     cases = []
     for p in data["publishers"]:
@@ -525,7 +525,7 @@ def estimate(cases: list[Case], system: str, model: str, prices: dict, repeats: 
             "per_publisher": expected / max(len(cases), 1)}
 
 
-def run(args, client=None, data_root: Path = REPO, now=None, log=print, sleep=None) -> dict:
+def run(args, client=None, data_root: Path = referee.TESTSET_DATA, now=None, log=print, sleep=None) -> dict:
     cases = load_testset(Path(args.testset), data_root)
     if args.cases:
         cases = [c for c in cases if c.id in args.cases]

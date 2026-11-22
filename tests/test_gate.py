@@ -134,7 +134,7 @@ class GateTest(unittest.TestCase):
     def test_the_rules_name_no_product_of_the_data(self):
         """TG4: the gate and the guard hold classes of sites (AI chats, hosting, registries), never a product."""
         text = "".join((REPO / f"tools/{m}.py").read_text(encoding="utf-8") for m in ("gate", "guard")).casefold()
-        keys = [f"{p.parent.name}/{p.stem}" for p in (REPO / "products").glob("*/*.yaml")]
+        keys = [f"{p.parent.name}/{p.stem}" for p in (REPO / "referee/testset/data/products").glob("*/*.yaml")]  # fixed (TAX-56)
         self.assertGreater(len(keys), 400)
         self.assertEqual([k for k in keys if k in text], [])
 

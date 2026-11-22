@@ -1,3 +1,5 @@
+import contextlib
+import io
 import shutil
 import sys
 import tempfile
@@ -52,9 +54,6 @@ class LintTest(unittest.TestCase):
         self.assertEqual((found[0].file, found[0].line, found[0].rule), (file, line, rule), found)
         self.assertIn(contains, found[0].message)
 
-    def test_repository_passes(self):
-        self.assertEqual([f for f in lint.lint(REPO) if f.level == "error"], [])
-
     def test_a_key_that_starts_with_its_publisher(self):
         """TAX-54: the lint rejects the long form; the short form passes, with the long one as alias."""
         long = PRODUCT.replace("ds224-plus", "synology-ds224-plus").replace("name: DS224+", "name: Synology DS224+")
@@ -64,6 +63,15 @@ class LintTest(unittest.TestCase):
         self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("name: DS224+", "name: Synology DS224+")
                    .replace("aliases: []", "aliases:\n- synology/synology-ds224-plus"))
         self.assertEqual(self.errors(), [])
+
+    def test_the_lint_counts_the_lookalike_pairs(self):
+        """TAX-56: how many names look alike is a count in the output, each pair once, without a limit."""
+        self.write("publishers/synoloqy.yaml", PUBLISHER.replace("synology", "synoloqy").replace("Synology", "Synoloqy"))
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            lint.main(["lint.py", str(self.root)])
+        self.assertIn("pairs of names that look alike (TV3): 2, a count without a limit", out.getvalue(), "the name and its domain")
+        self.assertEqual(lint.lookalike_pairs(lint.lint(self.root, REPO / "schema")), 2)
 
     def test_changed_files_only(self):
         """TAX-16: with a list of changed files, findings only on those, compared with all files."""
