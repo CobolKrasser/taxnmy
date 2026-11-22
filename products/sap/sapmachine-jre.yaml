@@ -1,0 +1,27 @@
+key: sap/sapmachine-jre
+publisher: sap
+name: SapMachine JRE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/11/JRE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/11/JRE
+identifiers:
+- winget: SAP.SapMachine.11.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/11/JRE
+- winget: SAP.SapMachine.17.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/17/JRE
+- winget: SAP.SapMachine.21.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/21/JRE
+- winget: SAP.SapMachine.22.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/22/JRE
+- winget: SAP.SapMachine.23.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/23/JRE
+- winget: SAP.SapMachine.24.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/24/JRE
+- winget: SAP.SapMachine.25.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/25/JRE
+- winget: SAP.SapMachine.26.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/26/JRE
+- winget: SAP.SapMachine.27.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/27/JRE
+aliases: []

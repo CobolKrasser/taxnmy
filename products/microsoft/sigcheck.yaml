@@ -1,0 +1,11 @@
+key: microsoft/sigcheck
+publisher: microsoft
+name: Sigcheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Sigcheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Sigcheck
+identifiers:
+- winget: Microsoft.Sysinternals.Sigcheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Sigcheck
+aliases: []

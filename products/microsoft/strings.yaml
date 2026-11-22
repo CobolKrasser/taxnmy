@@ -1,0 +1,11 @@
+key: microsoft/strings
+publisher: microsoft
+name: Strings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Strings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Strings
+identifiers:
+- winget: Microsoft.Sysinternals.Strings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Strings
+aliases: []

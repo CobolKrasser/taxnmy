@@ -1,0 +1,11 @@
+key: progress-chef/inspec
+publisher: progress-chef
+name: InSpec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChefSoftware/Inspec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChefSoftware/Inspec
+identifiers:
+- winget: ChefSoftware.Inspec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChefSoftware/Inspec
+aliases: []

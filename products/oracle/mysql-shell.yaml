@@ -1,0 +1,11 @@
+key: oracle/mysql-shell
+publisher: oracle
+name: MySQL Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQLShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQLShell
+identifiers:
+- winget: Oracle.MySQLShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQLShell
+aliases: []

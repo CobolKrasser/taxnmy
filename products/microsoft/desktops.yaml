@@ -1,0 +1,11 @@
+key: microsoft/desktops
+publisher: microsoft
+name: Desktops
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Desktops
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Desktops
+identifiers:
+- winget: Microsoft.Sysinternals.Desktops
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Desktops
+aliases: []

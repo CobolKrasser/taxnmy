@@ -1,0 +1,11 @@
+key: microsoft/sysinternals-suite
+publisher: microsoft
+name: Sysinternals Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Suite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Suite
+identifiers:
+- winget: Microsoft.Sysinternals.Suite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Suite
+aliases: []

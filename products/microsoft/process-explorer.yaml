@@ -1,0 +1,11 @@
+key: microsoft/process-explorer
+publisher: microsoft
+name: Process Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer
+identifiers:
+- winget: Microsoft.Sysinternals.ProcessExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer
+aliases: []

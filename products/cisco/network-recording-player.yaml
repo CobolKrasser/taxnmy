@@ -1,0 +1,11 @@
+key: cisco/network-recording-player
+publisher: cisco
+name: Network Recording Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/NetworkRecordingPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/NetworkRecordingPlayer
+identifiers:
+- winget: Cisco.NetworkRecordingPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/NetworkRecordingPlayer
+aliases: []

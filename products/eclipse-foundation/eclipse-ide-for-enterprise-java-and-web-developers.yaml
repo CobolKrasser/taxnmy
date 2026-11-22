@@ -1,0 +1,11 @@
+key: eclipse-foundation/eclipse-ide-for-enterprise-java-and-web-developers
+publisher: eclipse-foundation
+name: Eclipse IDE for Enterprise Java and Web Developers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/JEE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/JEE
+identifiers:
+- winget: EclipseFoundation.Eclipse.JEE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/JEE
+aliases: []

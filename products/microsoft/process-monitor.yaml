@@ -1,0 +1,11 @@
+key: microsoft/process-monitor
+publisher: microsoft
+name: Process Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessMonitor
+identifiers:
+- winget: Microsoft.Sysinternals.ProcessMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessMonitor
+aliases: []

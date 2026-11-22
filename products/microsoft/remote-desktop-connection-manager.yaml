@@ -1,0 +1,11 @@
+key: microsoft/remote-desktop-connection-manager
+publisher: microsoft
+name: Remote Desktop Connection Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RDCMan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RDCMan
+identifiers:
+- winget: Microsoft.Sysinternals.RDCMan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RDCMan
+aliases: []

@@ -1,0 +1,11 @@
+key: eclipse-foundation/eclipse-ide-for-rcp-and-rap-developers
+publisher: eclipse-foundation
+name: Eclipse IDE for RCP and RAP Developers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/RCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/RCP
+identifiers:
+- winget: EclipseFoundation.Eclipse.RCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/RCP
+aliases: []

@@ -1,0 +1,11 @@
+key: gnu/gnu-midnight-commander
+publisher: gnu
+name: GNU Midnight Commander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/MidnightCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/MidnightCommander
+identifiers:
+- winget: GNU.MidnightCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/MidnightCommander
+aliases: []

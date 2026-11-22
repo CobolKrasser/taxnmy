@@ -1,0 +1,11 @@
+key: mozilla/xulrunner
+publisher: mozilla
+name: XULRunner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/XULRunner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/XULRunner
+identifiers:
+- winget: Mozilla.XULRunner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/XULRunner
+aliases: []

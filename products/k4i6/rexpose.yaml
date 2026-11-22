@@ -1,0 +1,11 @@
+key: k4i6/rexpose
+publisher: k4i6
+name: rexpose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rexpose/rexpose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rexpose/rexpose
+identifiers:
+- winget: rexpose.rexpose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rexpose/rexpose
+aliases: []

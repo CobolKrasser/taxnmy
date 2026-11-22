@@ -1,0 +1,11 @@
+key: cisco/webex-wrf-to-wmv
+publisher: cisco
+name: Webex WRF to WMV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexWRFtoWMV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexWRFtoWMV
+identifiers:
+- winget: Cisco.WebexWRFtoWMV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexWRFtoWMV
+aliases: []

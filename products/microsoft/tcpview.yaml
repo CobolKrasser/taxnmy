@@ -1,0 +1,11 @@
+key: microsoft/tcpview
+publisher: microsoft
+name: TCPView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/TCPView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/TCPView
+identifiers:
+- winget: Microsoft.Sysinternals.TCPView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/TCPView
+aliases: []
