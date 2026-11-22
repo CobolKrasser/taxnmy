@@ -1,0 +1,11 @@
+key: microsoft/bginfo
+publisher: microsoft
+name: BGInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/BGInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/BGInfo
+identifiers:
+- winget: Microsoft.Sysinternals.BGInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/BGInfo
+aliases: []

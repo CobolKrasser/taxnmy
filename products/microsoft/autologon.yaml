@@ -1,0 +1,11 @@
+key: microsoft/autologon
+publisher: microsoft
+name: Autologon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Autologon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Autologon
+identifiers:
+- winget: Microsoft.Sysinternals.Autologon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Autologon
+aliases: []

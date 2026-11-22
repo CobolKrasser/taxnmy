@@ -1,0 +1,11 @@
+key: wireshark-foundation/stratoshark
+publisher: wireshark-foundation
+name: Stratoshark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiresharkFoundation/Stratoshark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiresharkFoundation/Stratoshark
+identifiers:
+- winget: WiresharkFoundation.Stratoshark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiresharkFoundation/Stratoshark
+aliases: []

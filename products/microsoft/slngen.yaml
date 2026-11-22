@@ -1,0 +1,11 @@
+key: microsoft/slngen
+publisher: microsoft
+name: SlnGen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/SlnGen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/SlnGen
+identifiers:
+- winget: Microsoft.VisualStudio.SlnGen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/SlnGen
+aliases: []

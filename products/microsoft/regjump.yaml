@@ -1,0 +1,11 @@
+key: microsoft/regjump
+publisher: microsoft
+name: RegJump
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RegJump
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RegJump
+identifiers:
+- winget: Microsoft.Sysinternals.RegJump
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RegJump
+aliases: []

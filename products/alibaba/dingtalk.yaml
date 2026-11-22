@@ -1,0 +1,13 @@
+key: alibaba/dingtalk
+publisher: alibaba
+name: DingTalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalk/Mainland
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalk/Mainland
+identifiers:
+- winget: Alibaba.DingTalk.Mainland
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalk/Mainland
+- winget: Alibaba.DingTalk.Overseas
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalk/Overseas
+aliases: []

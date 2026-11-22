@@ -1,0 +1,11 @@
+key: alibaba/teambition
+publisher: alibaba
+name: Teambition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/Teambition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/Teambition
+identifiers:
+- winget: Alibaba.Teambition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/Teambition
+aliases: []

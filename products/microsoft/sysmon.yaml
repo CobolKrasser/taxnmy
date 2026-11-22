@@ -1,0 +1,11 @@
+key: microsoft/sysmon
+publisher: microsoft
+name: Sysmon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Sysmon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Sysmon
+identifiers:
+- winget: Microsoft.Sysinternals.Sysmon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Sysmon
+aliases: []

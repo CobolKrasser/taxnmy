@@ -1,0 +1,11 @@
+key: balena/balenaetcher
+publisher: balena
+name: balenaEtcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/Etcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/Etcher
+identifiers:
+- winget: Balena.Etcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/Etcher
+aliases: []

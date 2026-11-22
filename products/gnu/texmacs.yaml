@@ -1,0 +1,11 @@
+key: gnu/texmacs
+publisher: gnu
+name: Texmacs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/TeXmacs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/TeXmacs
+identifiers:
+- winget: GNU.TeXmacs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/TeXmacs
+aliases: []

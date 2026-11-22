@@ -1,0 +1,11 @@
+key: rongjian-zhang/debugtron
+publisher: rongjian-zhang
+name: Debugtron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Debugtron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Debugtron
+identifiers:
+- winget: ByteDance.Debugtron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Debugtron
+aliases: []
