@@ -1,0 +1,11 @@
+key: gnu/gforth
+publisher: gnu
+name: Gforth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Gforth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Gforth
+identifiers:
+- winget: GNU.Gforth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Gforth
+aliases: []

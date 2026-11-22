@@ -1,0 +1,11 @@
+key: the-document-foundation/libreoffice-prerelease
+publisher: the-document-foundation
+name: LibreOffice PreRelease
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/PreRelease
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/PreRelease
+identifiers:
+- winget: TheDocumentFoundation.LibreOffice.PreRelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/PreRelease
+aliases: []

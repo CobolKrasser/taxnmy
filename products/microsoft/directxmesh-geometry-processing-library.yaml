@@ -1,0 +1,11 @@
+key: microsoft/directxmesh-geometry-processing-library
+publisher: microsoft
+name: DirectXMesh geometry processing library
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/Mesh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/Mesh
+identifiers:
+- winget: Microsoft.DirectX.Mesh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/Mesh
+aliases: []

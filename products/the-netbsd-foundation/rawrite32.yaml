@@ -1,0 +1,11 @@
+key: the-netbsd-foundation/rawrite32
+publisher: the-netbsd-foundation
+name: Rawrite32
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/netbsd/rawrite32
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/netbsd/rawrite32
+identifiers:
+- winget: netbsd.rawrite32
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/netbsd/rawrite32
+aliases: []

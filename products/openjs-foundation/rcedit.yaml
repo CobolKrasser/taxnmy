@@ -1,0 +1,11 @@
+key: openjs-foundation/rcedit
+publisher: openjs-foundation
+name: rcedit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCommunity/rcedit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCommunity/rcedit
+identifiers:
+- winget: ElectronCommunity.rcedit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCommunity/rcedit
+aliases: []

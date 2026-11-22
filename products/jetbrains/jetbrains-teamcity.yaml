@@ -1,0 +1,11 @@
+key: jetbrains/jetbrains-teamcity
+publisher: jetbrains
+name: JetBrains TeamCity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/TeamCity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/TeamCity
+identifiers:
+- winget: JetBrains.TeamCity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/TeamCity
+aliases: []

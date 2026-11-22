@@ -1,0 +1,11 @@
+key: microsoft/certification-test-tool-for-azure-certified-vms
+publisher: microsoft
+name: Certification Test Tool for Azure Certified VMs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CertifiedToolAzureVM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CertifiedToolAzureVM
+identifiers:
+- winget: Microsoft.CertifiedToolAzureVM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CertifiedToolAzureVM
+aliases: []

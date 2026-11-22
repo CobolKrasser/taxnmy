@@ -1,0 +1,11 @@
+key: mikrotik/winbox-beta
+publisher: mikrotik
+name: Winbox Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Winbox/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Winbox/Beta
+identifiers:
+- winget: Mikrotik.Winbox.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Winbox/Beta
+aliases: []

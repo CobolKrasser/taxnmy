@@ -1,0 +1,11 @@
+key: ibm/ibm-aspera-connect
+publisher: ibm
+name: IBM Aspera Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Aspera/Connect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Aspera/Connect
+identifiers:
+- winget: IBM.Aspera.Connect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Aspera/Connect
+aliases: []

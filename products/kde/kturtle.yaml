@@ -1,0 +1,11 @@
+key: kde/kturtle
+publisher: kde
+name: kturtle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KTurtle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KTurtle
+identifiers:
+- winget: KDE.KTurtle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KTurtle
+aliases: []

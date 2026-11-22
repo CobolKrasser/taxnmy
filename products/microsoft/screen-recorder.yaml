@@ -1,0 +1,11 @@
+key: microsoft/screen-recorder
+publisher: microsoft
+name: Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ScreenRecorder
+identifiers:
+- winget: Microsoft.ScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ScreenRecorder
+aliases: []

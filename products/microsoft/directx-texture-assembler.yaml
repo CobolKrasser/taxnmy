@@ -1,0 +1,11 @@
+key: microsoft/directx-texture-assembler
+publisher: microsoft
+name: DirectX Texture Assembler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texassemble
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texassemble
+identifiers:
+- winget: Microsoft.DirectXTex.Texassemble
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texassemble
+aliases: []

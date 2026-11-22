@@ -1,0 +1,11 @@
+key: microsoft/remote-desktop-agent-boot-loader
+publisher: microsoft
+name: Remote Desktop Agent Boot Loader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsVirtualDesktopBootloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsVirtualDesktopBootloader
+identifiers:
+- winget: Microsoft.WindowsVirtualDesktopBootloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsVirtualDesktopBootloader
+aliases: []

@@ -1,0 +1,13 @@
+key: kde/kstars-desktop-planetarium
+publisher: kde
+name: KStars Desktop Planetarium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KStars
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KStars
+identifiers:
+- winget: KDE.KStars
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KStars
+- winget: KDE.KStars.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KStars/AppX
+aliases: []

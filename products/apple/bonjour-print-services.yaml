@@ -1,0 +1,11 @@
+key: apple/bonjour-print-services
+publisher: apple
+name: Bonjour Print Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/BonjourPrintServices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/BonjourPrintServices
+identifiers:
+- winget: Apple.BonjourPrintServices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/BonjourPrintServices
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/kontact
+publisher: kde
+name: Kontact
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kontact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kontact
+identifiers:
+- winget: KDE.Kontact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kontact
+aliases: []

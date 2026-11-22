@@ -1,0 +1,11 @@
+key: apple/bonjour
+publisher: apple
+name: Bonjour
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Bonjour
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Bonjour
+identifiers:
+- winget: Apple.Bonjour
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Bonjour
+aliases: []

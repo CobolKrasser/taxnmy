@@ -1,0 +1,11 @@
+key: microsoft/setupdiag
+publisher: microsoft
+name: SetupDiag
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SetupDiag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SetupDiag
+identifiers:
+- winget: Microsoft.SetupDiag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SetupDiag
+aliases: []

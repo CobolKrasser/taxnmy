@@ -1,0 +1,11 @@
+key: google/android-cli
+publisher: google
+name: Android CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidCLI
+identifiers:
+- winget: Google.AndroidCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidCLI
+aliases: []

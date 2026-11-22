@@ -1,0 +1,27 @@
+key: microsoft/microsoft-net-runtime
+publisher: microsoft
+name: Microsoft .NET Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/5
+identifiers:
+- winget: Microsoft.DotNet.Runtime.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/10
+- winget: Microsoft.DotNet.Runtime.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/11
+- winget: Microsoft.DotNet.Runtime.2_2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/2_2
+- winget: Microsoft.DotNet.Runtime.3_1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/3_1
+- winget: Microsoft.DotNet.Runtime.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/5
+- winget: Microsoft.DotNet.Runtime.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/6
+- winget: Microsoft.DotNet.Runtime.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/7
+- winget: Microsoft.DotNet.Runtime.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/8
+- winget: Microsoft.DotNet.Runtime.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Runtime/9
+aliases: []

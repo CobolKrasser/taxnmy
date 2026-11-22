@@ -1,0 +1,11 @@
+key: synology/synology-presto
+publisher: synology
+name: Synology Presto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/Presto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/Presto
+identifiers:
+- winget: Synology.Presto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/Presto
+aliases: []

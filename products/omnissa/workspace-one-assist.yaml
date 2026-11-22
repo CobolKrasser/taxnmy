@@ -1,0 +1,11 @@
+key: omnissa/workspace-one-assist
+publisher: omnissa
+name: Workspace ONE Assist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONE/Assist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONE/Assist
+identifiers:
+- winget: Omnissa.WorkspaceONE.Assist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONE/Assist
+aliases: []

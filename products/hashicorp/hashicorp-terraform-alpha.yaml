@@ -1,0 +1,11 @@
+key: hashicorp/hashicorp-terraform-alpha
+publisher: hashicorp
+name: Hashicorp Terraform Alpha
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/Alpha
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/Alpha
+identifiers:
+- winget: Hashicorp.Terraform.Alpha
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/Alpha
+aliases: []

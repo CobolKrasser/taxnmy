@@ -1,0 +1,11 @@
+key: google/quick-share-from-google
+publisher: google
+name: Quick Share from Google
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/QuickShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/QuickShare
+identifiers:
+- winget: Google.QuickShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/QuickShare
+aliases: []

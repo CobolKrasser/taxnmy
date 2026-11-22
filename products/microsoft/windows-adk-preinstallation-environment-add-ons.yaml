@@ -1,0 +1,11 @@
+key: microsoft/windows-adk-preinstallation-environment-add-ons
+publisher: microsoft
+name: Windows ADK Preinstallation Environment Add-ons
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsADK/WinPEAddon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsADK/WinPEAddon
+identifiers:
+- winget: Microsoft.WindowsADK.WinPEAddon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsADK/WinPEAddon
+aliases: []

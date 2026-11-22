@@ -1,0 +1,11 @@
+key: microsoft/system-center-operations-manager-console
+publisher: microsoft
+name: System Center Operations Manager Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SystemCenter/OperationsManager/OperationsConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SystemCenter/OperationsManager/OperationsConsole
+identifiers:
+- winget: Microsoft.SystemCenter.OperationsManager.OperationsConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SystemCenter/OperationsManager/OperationsConsole
+aliases: []

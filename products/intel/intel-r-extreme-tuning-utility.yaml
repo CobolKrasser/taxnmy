@@ -1,0 +1,11 @@
+key: intel/intel-r-extreme-tuning-utility
+publisher: intel
+name: Intel(R) Extreme Tuning Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/IntelExtremeTuningUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/IntelExtremeTuningUtility
+identifiers:
+- winget: Intel.IntelExtremeTuningUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/IntelExtremeTuningUtility
+aliases: []

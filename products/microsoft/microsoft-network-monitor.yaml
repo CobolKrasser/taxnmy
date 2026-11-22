@@ -1,0 +1,11 @@
+key: microsoft/microsoft-network-monitor
+publisher: microsoft
+name: Microsoft Network Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/NetMon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/NetMon
+identifiers:
+- winget: Microsoft.NetMon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/NetMon
+aliases: []

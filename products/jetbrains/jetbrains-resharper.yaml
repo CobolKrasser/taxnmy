@@ -1,0 +1,13 @@
+key: jetbrains/jetbrains-resharper
+publisher: jetbrains
+name: JetBrains ReSharper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ReSharper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ReSharper
+identifiers:
+- winget: JetBrains.ReSharper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ReSharper
+- winget: JetBrains.ReSharper.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ReSharper/EAP
+aliases: []

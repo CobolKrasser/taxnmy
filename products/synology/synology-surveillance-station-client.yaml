@@ -1,0 +1,11 @@
+key: synology/synology-surveillance-station-client
+publisher: synology
+name: Synology Surveillance Station Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/SurveillanceStationClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/SurveillanceStationClient
+identifiers:
+- winget: Synology.SurveillanceStationClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/SurveillanceStationClient
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/microsoft-net-framework-version-redistributable-package
+publisher: microsoft
+name: Microsoft .NET Framework Version Redistributable Package
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/Redistributable/1_1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/Redistributable/1_1
+identifiers:
+- winget: Microsoft.DotNet.Framework.Redistributable.1_1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/Redistributable/1_1
+aliases: []

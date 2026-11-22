@@ -1,0 +1,11 @@
+key: red-hat/openshift-client
+publisher: red-hat
+name: OpenShift Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/OpenShift-Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/OpenShift-Client
+identifiers:
+- winget: RedHat.OpenShift-Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/OpenShift-Client
+aliases: []

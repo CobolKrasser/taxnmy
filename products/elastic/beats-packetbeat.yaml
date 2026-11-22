@@ -1,0 +1,11 @@
+key: elastic/beats-packetbeat
+publisher: elastic
+name: Beats packetbeat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Packetbeat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Packetbeat
+identifiers:
+- winget: Elastic.Packetbeat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Packetbeat
+aliases: []

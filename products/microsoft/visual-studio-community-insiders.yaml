@@ -1,0 +1,11 @@
+key: microsoft/visual-studio-community-insiders
+publisher: microsoft
+name: Visual Studio Community Insiders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Community/Insiders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Community/Insiders
+identifiers:
+- winget: Microsoft.VisualStudio.Community.Insiders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Community/Insiders
+aliases: []

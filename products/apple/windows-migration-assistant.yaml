@@ -1,0 +1,11 @@
+key: apple/windows-migration-assistant
+publisher: apple
+name: Windows Migration Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/WindowsMigrationAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/WindowsMigrationAssistant
+identifiers:
+- winget: Apple.WindowsMigrationAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/WindowsMigrationAssistant
+aliases: []

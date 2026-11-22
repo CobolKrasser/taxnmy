@@ -1,0 +1,11 @@
+key: oracle/instant-client-for-microsoft-windows
+publisher: oracle
+name: Instant Client for Microsoft Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/InstantClient/Basic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/InstantClient/Basic
+identifiers:
+- winget: Oracle.InstantClient.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/InstantClient/Basic
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/umbrello
+publisher: kde
+name: Umbrello
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Umbrello
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Umbrello
+identifiers:
+- winget: KDE.Umbrello
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Umbrello
+aliases: []

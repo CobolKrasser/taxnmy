@@ -1,0 +1,11 @@
+key: microsoft/vsix-bootstrapper
+publisher: microsoft
+name: VSIX Bootstrapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSIXBootstrapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSIXBootstrapper
+identifiers:
+- winget: Microsoft.VSIXBootstrapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSIXBootstrapper
+aliases: []

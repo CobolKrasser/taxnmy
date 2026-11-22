@@ -1,0 +1,11 @@
+key: microsoft/directx-capabilities-viewer
+publisher: microsoft
+name: DirectX Capabilities Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/CapsViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/CapsViewer
+identifiers:
+- winget: Microsoft.DirectX.CapsViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/CapsViewer
+aliases: []

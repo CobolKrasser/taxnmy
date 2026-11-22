@@ -1,0 +1,11 @@
+key: microsoft/directx-end-user-runtime-installer
+publisher: microsoft
+name: DirectX End-User Runtime Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX
+identifiers:
+- winget: Microsoft.DirectX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX
+aliases: []

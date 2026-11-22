@@ -1,0 +1,13 @@
+key: microsoft/microsoft-ui-xaml
+publisher: microsoft
+name: Microsoft.UI.Xaml
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UI/Xaml/2/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UI/Xaml/2/5
+identifiers:
+- winget: Microsoft.UI.Xaml.2.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UI/Xaml/2/5
+- winget: Microsoft.UI.Xaml.2.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UI/Xaml/2/6
+aliases: []

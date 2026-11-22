@@ -1,0 +1,11 @@
+key: microsoft/gaming-services-repair-tool-for-pc
+publisher: microsoft
+name: Gaming Services Repair Tool for PC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GamingServicesRepairTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GamingServicesRepairTool
+identifiers:
+- winget: Microsoft.Gaming.GamingServicesRepairTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GamingServicesRepairTool
+aliases: []

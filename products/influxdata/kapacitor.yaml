@@ -1,0 +1,11 @@
+key: influxdata/kapacitor
+publisher: influxdata
+name: Kapacitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Kapacitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Kapacitor
+identifiers:
+- winget: InfluxData.Kapacitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Kapacitor
+aliases: []

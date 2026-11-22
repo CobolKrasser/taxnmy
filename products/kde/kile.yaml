@@ -1,0 +1,11 @@
+key: kde/kile
+publisher: kde
+name: Kile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kile
+identifiers:
+- winget: KDE.Kile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kile
+aliases: []

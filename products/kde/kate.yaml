@@ -1,0 +1,11 @@
+key: kde/kate
+publisher: kde
+name: Kate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kate
+identifiers:
+- winget: KDE.Kate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kate
+aliases: []

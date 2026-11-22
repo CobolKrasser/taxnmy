@@ -1,0 +1,11 @@
+key: intel/intel-driver-and-support-assistant
+publisher: intel
+name: Intel® Driver & Support Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/IntelDriverAndSupportAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/IntelDriverAndSupportAssistant
+identifiers:
+- winget: Intel.IntelDriverAndSupportAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/IntelDriverAndSupportAssistant
+aliases: []

@@ -1,0 +1,11 @@
+key: valve/steam
+publisher: valve
+name: Steam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valve/Steam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valve/Steam
+identifiers:
+- winget: Valve.Steam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valve/Steam
+aliases: []

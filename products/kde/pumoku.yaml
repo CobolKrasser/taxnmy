@@ -1,0 +1,11 @@
+key: kde/pumoku
+publisher: kde
+name: PuMoKu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/PuMoKu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/PuMoKu
+identifiers:
+- winget: KDE.PuMoKu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/PuMoKu
+aliases: []

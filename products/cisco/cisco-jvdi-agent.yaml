@@ -1,0 +1,11 @@
+key: cisco/cisco-jvdi-agent
+publisher: cisco
+name: Cisco JVDI Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/JabberVDIAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/JabberVDIAgent
+identifiers:
+- winget: Cisco.JabberVDIAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/JabberVDIAgent
+aliases: []

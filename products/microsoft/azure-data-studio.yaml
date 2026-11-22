@@ -1,0 +1,11 @@
+key: microsoft/azure-data-studio
+publisher: microsoft
+name: Azure Data Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/DataStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/DataStudio
+identifiers:
+- winget: Microsoft.Azure.DataStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/DataStudio
+aliases: []

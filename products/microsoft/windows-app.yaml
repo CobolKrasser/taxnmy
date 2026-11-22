@@ -1,0 +1,11 @@
+key: microsoft/windows-app
+publisher: microsoft
+name: Windows App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsApp
+identifiers:
+- winget: Microsoft.WindowsApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsApp
+aliases: []

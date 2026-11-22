@@ -1,0 +1,11 @@
+key: docker/docker-buildx
+publisher: docker
+name: Docker Buildx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/Buildx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/Buildx
+identifiers:
+- winget: Docker.Buildx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/Buildx
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/mrdl-periodic-table-of-the-elements
+publisher: microsoft
+name: MRDL Periodic Table of the Elements
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MRDL/UnityPeriodicTable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MRDL/UnityPeriodicTable
+identifiers:
+- winget: Microsoft.MRDL.UnityPeriodicTable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MRDL/UnityPeriodicTable
+aliases: []

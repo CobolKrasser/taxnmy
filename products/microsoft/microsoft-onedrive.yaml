@@ -1,0 +1,11 @@
+key: microsoft/microsoft-onedrive
+publisher: microsoft
+name: Microsoft OneDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneDrive
+identifiers:
+- winget: Microsoft.OneDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneDrive
+aliases: []

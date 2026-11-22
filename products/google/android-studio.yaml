@@ -1,0 +1,11 @@
+key: google/android-studio
+publisher: google
+name: Android Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidStudio
+identifiers:
+- winget: Google.AndroidStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidStudio
+aliases: []

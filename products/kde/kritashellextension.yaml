@@ -1,0 +1,11 @@
+key: kde/kritashellextension
+publisher: kde
+name: KritaShellExtension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KritaShellExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KritaShellExtension
+identifiers:
+- winget: KDE.KritaShellExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KritaShellExtension
+aliases: []

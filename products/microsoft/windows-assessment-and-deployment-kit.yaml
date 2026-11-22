@@ -1,0 +1,11 @@
+key: microsoft/windows-assessment-and-deployment-kit
+publisher: microsoft
+name: Windows Assessment and Deployment Kit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsADK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsADK
+identifiers:
+- winget: Microsoft.WindowsADK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsADK
+aliases: []

@@ -1,0 +1,11 @@
+key: azul/icedtea-web
+publisher: azul
+name: IcedTea-Web
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/IcedTea-Web
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/IcedTea-Web
+identifiers:
+- winget: Azul.IcedTea-Web
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/IcedTea-Web
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/directaccess-client-troubleshooting-tool
+publisher: microsoft
+name: DirectAccess Client Troubleshooting Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectAccessCTST
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectAccessCTST
+identifiers:
+- winget: Microsoft.DirectAccessCTST
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectAccessCTST
+aliases: []

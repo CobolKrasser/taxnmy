@@ -1,0 +1,11 @@
+key: suse/opensuse-tumbleweed
+publisher: suse
+name: openSUSE Tumbleweed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/openSUSE/Tumbleweed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/openSUSE/Tumbleweed
+identifiers:
+- winget: SUSE.openSUSE.Tumbleweed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/openSUSE/Tumbleweed
+aliases: []

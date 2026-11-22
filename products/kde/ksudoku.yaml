@@ -1,0 +1,11 @@
+key: kde/ksudoku
+publisher: kde
+name: ksudoku
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSudoku
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSudoku
+identifiers:
+- winget: KDE.KSudoku
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSudoku
+aliases: []

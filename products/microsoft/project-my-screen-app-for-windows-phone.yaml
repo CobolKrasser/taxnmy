@@ -1,0 +1,11 @@
+key: microsoft/project-my-screen-app-for-windows-phone
+publisher: microsoft
+name: Project My Screen App for Windows Phone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProjectMyScreen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProjectMyScreen
+identifiers:
+- winget: Microsoft.ProjectMyScreen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProjectMyScreen
+aliases: []

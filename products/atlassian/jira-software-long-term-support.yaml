@@ -1,0 +1,11 @@
+key: atlassian/jira-software-long-term-support
+publisher: atlassian
+name: Jira Software Long Term Support
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/JiraSoftwareLTS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/JiraSoftwareLTS
+identifiers:
+- winget: Atlassian.JiraSoftwareLTS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/JiraSoftwareLTS
+aliases: []

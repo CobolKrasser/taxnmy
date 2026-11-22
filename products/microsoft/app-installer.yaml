@@ -1,0 +1,11 @@
+key: microsoft/app-installer
+publisher: microsoft
+name: App Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppInstaller
+identifiers:
+- winget: Microsoft.AppInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppInstaller
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/kblocks
+publisher: kde
+name: kblocks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KBlocks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KBlocks
+identifiers:
+- winget: KDE.KBlocks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KBlocks
+aliases: []

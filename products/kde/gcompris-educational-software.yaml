@@ -1,0 +1,11 @@
+key: kde/gcompris-educational-software
+publisher: kde
+name: GCompris Educational Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/GCompris
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/GCompris
+identifiers:
+- winget: KDE.GCompris
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/GCompris
+aliases: []

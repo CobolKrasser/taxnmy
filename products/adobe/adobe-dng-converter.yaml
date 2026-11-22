@@ -1,0 +1,11 @@
+key: adobe/adobe-dng-converter
+publisher: adobe
+name: Adobe DNG Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/DNGConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/DNGConverter
+identifiers:
+- winget: Adobe.DNGConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/DNGConverter
+aliases: []

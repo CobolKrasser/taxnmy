@@ -1,0 +1,11 @@
+key: apple/airport-utility
+publisher: apple
+name: AirPort Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/AirPort
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/AirPort
+identifiers:
+- winget: Apple.AirPort
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/AirPort
+aliases: []

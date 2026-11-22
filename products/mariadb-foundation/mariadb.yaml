@@ -1,0 +1,11 @@
+key: mariadb-foundation/mariadb
+publisher: mariadb-foundation
+name: MariaDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MariaDB/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MariaDB/Server
+identifiers:
+- winget: MariaDB.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MariaDB/Server
+aliases: []

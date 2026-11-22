@@ -1,0 +1,11 @@
+key: docker/dash-by-docker
+publisher: docker
+name: Dash by Docker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/ds
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/ds
+identifiers:
+- winget: Docker.ds
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/ds
+aliases: []

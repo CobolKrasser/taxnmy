@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-redshift-odbc-driver-64-bit
+publisher: amazon-web-services
+name: Amazon Redshift ODBC Driver 64-bit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Redshift/ODBC/v2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Redshift/ODBC/v2
+identifiers:
+- winget: Amazon.Redshift.ODBC.v2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Redshift/ODBC/v2
+aliases: []

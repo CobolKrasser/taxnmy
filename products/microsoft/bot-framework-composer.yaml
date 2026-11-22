@@ -1,0 +1,11 @@
+key: microsoft/bot-framework-composer
+publisher: microsoft
+name: Bot Framework Composer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BotFrameworkComposer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BotFrameworkComposer
+identifiers:
+- winget: Microsoft.BotFrameworkComposer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BotFrameworkComposer
+aliases: []

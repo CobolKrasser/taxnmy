@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/openoffice
+publisher: the-apache-software-foundation
+name: OpenOffice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/OpenOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/OpenOffice
+identifiers:
+- winget: Apache.OpenOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/OpenOffice
+aliases: []

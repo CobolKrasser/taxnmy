@@ -1,0 +1,31 @@
+key: oracle/java-tm-se-development-kit
+publisher: oracle
+name: Java(TM) SE Development Kit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/17
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/17
+identifiers:
+- winget: Oracle.JDK.17
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/17
+- winget: Oracle.JDK.18
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/18
+- winget: Oracle.JDK.19
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/19
+- winget: Oracle.JDK.20
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/20
+- winget: Oracle.JDK.21
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/21
+- winget: Oracle.JDK.22
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/22
+- winget: Oracle.JDK.23
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/23
+- winget: Oracle.JDK.24
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/24
+- winget: Oracle.JDK.25
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/25
+- winget: Oracle.JDK.26
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/26
+- winget: Oracle.JDK.27
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JDK/27
+aliases: []

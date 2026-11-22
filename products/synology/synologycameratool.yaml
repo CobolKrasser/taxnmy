@@ -1,0 +1,11 @@
+key: synology/synologycameratool
+publisher: synology
+name: SynologyCameraTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CameraTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CameraTool
+identifiers:
+- winget: Synology.CameraTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CameraTool
+aliases: []

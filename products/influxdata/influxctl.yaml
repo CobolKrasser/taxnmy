@@ -1,0 +1,11 @@
+key: influxdata/influxctl
+publisher: influxdata
+name: influxctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/influxctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/influxctl
+identifiers:
+- winget: InfluxData.influxctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/influxctl
+aliases: []

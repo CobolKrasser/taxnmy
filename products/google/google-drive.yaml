@@ -1,0 +1,11 @@
+key: google/google-drive
+publisher: google
+name: Google Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleDrive
+identifiers:
+- winget: Google.GoogleDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleDrive
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/microsoft-bluetooth-test-platform
+publisher: microsoft
+name: Microsoft Bluetooth Test Platform
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BTP
+identifiers:
+- winget: Microsoft.BTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BTP
+aliases: []

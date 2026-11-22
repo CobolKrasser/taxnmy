@@ -1,0 +1,13 @@
+key: jetbrains/jetbrains-rider
+publisher: jetbrains
+name: JetBrains Rider
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Rider
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Rider
+identifiers:
+- winget: JetBrains.Rider
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Rider
+- winget: JetBrains.Rider.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Rider/EAP
+aliases: []

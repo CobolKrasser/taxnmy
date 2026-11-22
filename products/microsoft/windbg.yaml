@@ -1,0 +1,11 @@
+key: microsoft/windbg
+publisher: microsoft
+name: WinDbg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WinDbg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WinDbg
+identifiers:
+- winget: Microsoft.WinDbg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WinDbg
+aliases: []

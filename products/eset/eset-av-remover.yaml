@@ -1,0 +1,11 @@
+key: eset/eset-av-remover
+publisher: eset
+name: ESET AV Remover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/AVRemover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/AVRemover
+identifiers:
+- winget: ESET.AVRemover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/AVRemover
+aliases: []

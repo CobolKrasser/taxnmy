@@ -1,0 +1,11 @@
+key: grafana-labs/grafanaoss
+publisher: grafana-labs
+name: GrafanaOSS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Grafana/OSS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Grafana/OSS
+identifiers:
+- winget: GrafanaLabs.Grafana.OSS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Grafana/OSS
+aliases: []

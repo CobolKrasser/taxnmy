@@ -1,0 +1,11 @@
+key: google/google-desktop
+publisher: google
+name: Google Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleDesktop
+identifiers:
+- winget: Google.GoogleDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleDesktop
+aliases: []

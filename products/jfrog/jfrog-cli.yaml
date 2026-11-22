@@ -1,0 +1,11 @@
+key: jfrog/jfrog-cli
+publisher: jfrog
+name: JFrog CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Cli
+identifiers:
+- winget: JFrog.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Cli
+aliases: []

@@ -1,0 +1,11 @@
+key: mikrotik/mikrotik-flashfig
+publisher: mikrotik
+name: MikroTik Flashfig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Flashfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Flashfig
+identifiers:
+- winget: Mikrotik.Flashfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Flashfig
+aliases: []

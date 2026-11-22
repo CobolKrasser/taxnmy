@@ -1,0 +1,11 @@
+key: kde/blinken
+publisher: kde
+name: Blinken
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Blinken
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Blinken
+identifiers:
+- winget: KDE.Blinken
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Blinken
+aliases: []

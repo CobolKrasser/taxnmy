@@ -1,0 +1,11 @@
+key: python-software-foundation/python-embeddable-package
+publisher: python-software-foundation
+name: Python Embeddable Package
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Python/PythonEmbeddablePackage/3/14
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Python/PythonEmbeddablePackage/3/14
+identifiers:
+- winget: Python.PythonEmbeddablePackage.3.14
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Python/PythonEmbeddablePackage/3/14
+aliases: []

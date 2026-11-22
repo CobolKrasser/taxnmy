@@ -1,0 +1,11 @@
+key: kde/krita
+publisher: kde
+name: Krita
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Krita
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Krita
+identifiers:
+- winget: KDE.Krita
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Krita
+aliases: []

@@ -1,0 +1,11 @@
+key: owasp/threat-dragon-ng
+publisher: owasp
+name: Threat-Dragon-ng
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OWASP/ThreatDragon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OWASP/ThreatDragon
+identifiers:
+- winget: OWASP.ThreatDragon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OWASP/ThreatDragon
+aliases: []

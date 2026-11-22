@@ -1,0 +1,11 @@
+key: dapr/dapr-cli
+publisher: dapr
+name: Dapr CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dapr/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dapr/CLI
+identifiers:
+- winget: Dapr.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dapr/CLI
+aliases: []

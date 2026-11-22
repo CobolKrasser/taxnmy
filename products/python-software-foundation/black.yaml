@@ -1,0 +1,11 @@
+key: python-software-foundation/black
+publisher: python-software-foundation
+name: Black
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psf/black
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psf/black
+identifiers:
+- winget: psf.black
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psf/black
+aliases: []

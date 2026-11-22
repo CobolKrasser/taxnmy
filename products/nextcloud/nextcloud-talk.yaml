@@ -1,0 +1,11 @@
+key: nextcloud/nextcloud-talk
+publisher: nextcloud
+name: Nextcloud Talk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/Talk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/Talk
+identifiers:
+- winget: Nextcloud.Talk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/Talk
+aliases: []

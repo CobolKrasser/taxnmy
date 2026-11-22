@@ -1,0 +1,11 @@
+key: microsoft/remote-desktop-services-infrastructure-agent
+publisher: microsoft
+name: Remote Desktop Services Infrastructure Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsVirtualDesktopAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsVirtualDesktopAgent
+identifiers:
+- winget: Microsoft.WindowsVirtualDesktopAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsVirtualDesktopAgent
+aliases: []

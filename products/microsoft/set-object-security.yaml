@@ -1,0 +1,11 @@
+key: microsoft/set-object-security
+publisher: microsoft
+name: Set Object Security
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/SetObjectSecurity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/SetObjectSecurity
+identifiers:
+- winget: Microsoft.SecurityComplianceToolkit.SetObjectSecurity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/SetObjectSecurity
+aliases: []

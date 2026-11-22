@@ -1,0 +1,11 @@
+key: hashicorp/hashicorp-waypoint
+publisher: hashicorp
+name: HashiCorp Waypoint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Waypoint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Waypoint
+identifiers:
+- winget: Hashicorp.Waypoint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Waypoint
+aliases: []

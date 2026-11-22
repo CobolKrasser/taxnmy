@@ -1,0 +1,11 @@
+key: synology/synology-assistant
+publisher: synology
+name: Synology Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/Assistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/Assistant
+identifiers:
+- winget: Synology.Assistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/Assistant
+aliases: []

@@ -1,0 +1,11 @@
+key: anthropic/claude-science
+publisher: anthropic
+name: Claude Science
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/ClaudeScience
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/ClaudeScience
+identifiers:
+- winget: Anthropic.ClaudeScience
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/ClaudeScience
+aliases: []

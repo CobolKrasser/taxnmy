@@ -1,0 +1,11 @@
+key: microsoft/microsoft-edge-webview2-runtime
+publisher: microsoft
+name: Microsoft Edge WebView2 Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EdgeWebView2Runtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EdgeWebView2Runtime
+identifiers:
+- winget: Microsoft.EdgeWebView2Runtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EdgeWebView2Runtime
+aliases: []

@@ -1,0 +1,11 @@
+key: google/magika
+publisher: google
+name: Magika
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Magika
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Magika
+identifiers:
+- winget: Google.Magika
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Magika
+aliases: []

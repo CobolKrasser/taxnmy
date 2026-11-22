@@ -1,0 +1,11 @@
+key: jetbrains/jetbrains-gateway
+publisher: jetbrains
+name: JetBrains Gateway
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Gateway
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Gateway
+identifiers:
+- winget: JetBrains.Gateway
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Gateway
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/karp
+publisher: kde
+name: Karp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Karp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Karp
+identifiers:
+- winget: KDE.Karp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Karp
+aliases: []

@@ -1,0 +1,11 @@
+key: google/google-ads-editor
+publisher: google
+name: Google Ads Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AdsEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AdsEditor
+identifiers:
+- winget: Google.AdsEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AdsEditor
+aliases: []

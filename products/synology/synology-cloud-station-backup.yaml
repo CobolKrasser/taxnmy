@@ -1,0 +1,11 @@
+key: synology/synology-cloud-station-backup
+publisher: synology
+name: Synology Cloud Station Backup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CloudStationBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CloudStationBackup
+identifiers:
+- winget: Synology.CloudStationBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CloudStationBackup
+aliases: []

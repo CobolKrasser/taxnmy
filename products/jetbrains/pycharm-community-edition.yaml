@@ -1,0 +1,13 @@
+key: jetbrains/pycharm-community-edition
+publisher: jetbrains
+name: PyCharm Community Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm/Community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm/Community
+identifiers:
+- winget: JetBrains.PyCharm.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm/Community
+- winget: JetBrains.PyCharm.Community.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm/Community/EAP
+aliases: []

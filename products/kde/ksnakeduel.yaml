@@ -1,0 +1,11 @@
+key: kde/ksnakeduel
+publisher: kde
+name: ksnakeduel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSnakeDuel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSnakeDuel
+identifiers:
+- winget: KDE.KSnakeDuel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSnakeDuel
+aliases: []

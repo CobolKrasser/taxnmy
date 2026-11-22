@@ -1,0 +1,11 @@
+key: mozilla/jsshell
+publisher: mozilla
+name: jsshell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/jsshell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/jsshell
+identifiers:
+- winget: Mozilla.jsshell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/jsshell
+aliases: []

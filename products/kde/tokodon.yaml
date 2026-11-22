@@ -1,0 +1,11 @@
+key: kde/tokodon
+publisher: kde
+name: Tokodon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Tokodon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Tokodon
+identifiers:
+- winget: KDE.Tokodon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Tokodon
+aliases: []

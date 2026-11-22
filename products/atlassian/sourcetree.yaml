@@ -1,0 +1,11 @@
+key: atlassian/sourcetree
+publisher: atlassian
+name: Sourcetree
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Sourcetree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Sourcetree
+identifiers:
+- winget: Atlassian.Sourcetree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Sourcetree
+aliases: []

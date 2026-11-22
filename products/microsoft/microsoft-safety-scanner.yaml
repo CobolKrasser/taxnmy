@@ -1,0 +1,11 @@
+key: microsoft/microsoft-safety-scanner
+publisher: microsoft
+name: Microsoft Safety Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SafetyScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SafetyScanner
+identifiers:
+- winget: Microsoft.SafetyScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SafetyScanner
+aliases: []

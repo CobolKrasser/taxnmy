@@ -1,0 +1,11 @@
+key: grafana-labs/alloy
+publisher: grafana-labs
+name: Alloy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Alloy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Alloy
+identifiers:
+- winget: GrafanaLabs.Alloy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Alloy
+aliases: []

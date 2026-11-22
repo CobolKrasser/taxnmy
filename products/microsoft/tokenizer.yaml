@@ -1,0 +1,11 @@
+key: microsoft/tokenizer
+publisher: microsoft
+name: Tokenizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Tokenizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Tokenizer
+identifiers:
+- winget: Microsoft.Tokenizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Tokenizer
+aliases: []

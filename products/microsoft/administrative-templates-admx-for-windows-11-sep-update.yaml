@@ -1,0 +1,11 @@
+key: microsoft/administrative-templates-admx-for-windows-11-sep-update
+publisher: microsoft
+name: Administrative Templates (.admx) for Windows 11 Sep Update
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AdministrativeTemplates
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AdministrativeTemplates
+identifiers:
+- winget: Microsoft.AdministrativeTemplates
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AdministrativeTemplates
+aliases: []

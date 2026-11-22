@@ -1,0 +1,11 @@
+key: microsoft/ebpf-for-windows
+publisher: microsoft
+name: eBPF for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/eBPFforWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/eBPFforWindows
+identifiers:
+- winget: Microsoft.eBPFforWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/eBPFforWindows
+aliases: []

@@ -1,0 +1,11 @@
+key: bellsoft/liberica-nik-full-jdk-11
+publisher: bellsoft
+name: Liberica NIK Full (JDK 11)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/22/JDK11/Full
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/22/JDK11/Full
+identifiers:
+- winget: BellSoft.LibericaNIK.22.JDK11.Full
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/22/JDK11/Full
+aliases: []

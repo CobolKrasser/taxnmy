@@ -1,0 +1,11 @@
+key: microsoft/microsoft-purview-information-protection
+publisher: microsoft
+name: Microsoft Purview Information Protection
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PurviewInformationProtection
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PurviewInformationProtection
+identifiers:
+- winget: Microsoft.PurviewInformationProtection
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PurviewInformationProtection
+aliases: []

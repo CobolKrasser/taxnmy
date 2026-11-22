@@ -1,0 +1,11 @@
+key: microsoft/pairwise-independent-combinatorial-testing
+publisher: microsoft
+name: Pairwise Independent Combinatorial Testing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PICT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PICT
+identifiers:
+- winget: Microsoft.PICT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PICT
+aliases: []

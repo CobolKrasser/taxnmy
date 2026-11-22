@@ -1,0 +1,15 @@
+key: microsoft/visual-studio-professional
+publisher: microsoft
+name: Visual Studio Professional
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Professional
+identifiers:
+- winget: Microsoft.VisualStudio.2019.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2019/Professional
+- winget: Microsoft.VisualStudio.2022.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2022/Professional
+- winget: Microsoft.VisualStudio.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Professional
+aliases: []

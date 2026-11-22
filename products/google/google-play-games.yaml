@@ -1,0 +1,11 @@
+key: google/google-play-games
+publisher: google
+name: Google Play Games
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlayGames
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlayGames
+identifiers:
+- winget: Google.PlayGames
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlayGames
+aliases: []

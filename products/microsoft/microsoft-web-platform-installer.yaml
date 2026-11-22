@@ -1,0 +1,11 @@
+key: microsoft/microsoft-web-platform-installer
+publisher: microsoft
+name: Microsoft Web Platform Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/webpicmd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/webpicmd
+identifiers:
+- winget: Microsoft.webpicmd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/webpicmd
+aliases: []

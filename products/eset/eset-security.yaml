@@ -1,0 +1,15 @@
+key: eset/eset-security
+publisher: eset
+name: ESET Security
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/Nod32
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/Nod32
+identifiers:
+- winget: ESET.Nod32
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/Nod32
+- winget: ESET.Security
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/Security
+- winget: ESET.Security.SmallBusiness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/Security/SmallBusiness
+aliases: []

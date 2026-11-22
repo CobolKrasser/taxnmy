@@ -1,0 +1,13 @@
+key: jetbrains/dataspell
+publisher: jetbrains
+name: DataSpell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataSpell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataSpell
+identifiers:
+- winget: JetBrains.DataSpell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataSpell
+- winget: JetBrains.DataSpell.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataSpell/EAP
+aliases: []

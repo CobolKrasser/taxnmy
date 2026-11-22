@@ -1,0 +1,11 @@
+key: microsoft/microsoft-visual-studio-code-cli
+publisher: microsoft
+name: Microsoft Visual Studio Code CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/CLI
+identifiers:
+- winget: Microsoft.VisualStudioCode.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/CLI
+aliases: []

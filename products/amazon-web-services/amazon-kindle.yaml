@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-kindle
+publisher: amazon-web-services
+name: Amazon Kindle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Kindle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Kindle
+identifiers:
+- winget: Amazon.Kindle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Kindle
+aliases: []

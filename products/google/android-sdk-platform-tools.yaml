@@ -1,0 +1,11 @@
+key: google/android-sdk-platform-tools
+publisher: google
+name: Android SDK Platform-Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlatformTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlatformTools
+identifiers:
+- winget: Google.PlatformTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlatformTools
+aliases: []

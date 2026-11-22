@@ -1,0 +1,11 @@
+key: microsoft/azure-cosmos-db-emulator
+publisher: microsoft
+name: Azure Cosmos DB Emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/CosmosEmulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/CosmosEmulator
+identifiers:
+- winget: Microsoft.Azure.CosmosEmulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/CosmosEmulator
+aliases: []

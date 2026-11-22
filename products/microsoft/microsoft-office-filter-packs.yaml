@@ -1,0 +1,11 @@
+key: microsoft/microsoft-office-filter-packs
+publisher: microsoft
+name: Microsoft Office Filter Packs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Office/2010/FilterPacks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Office/2010/FilterPacks
+identifiers:
+- winget: Microsoft.Office.2010.FilterPacks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Office/2010/FilterPacks
+aliases: []

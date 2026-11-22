@@ -1,0 +1,11 @@
+key: jetbrains/jetbrains-dottrace
+publisher: jetbrains
+name: JetBrains dotTrace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotTrace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotTrace
+identifiers:
+- winget: JetBrains.dotTrace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotTrace
+aliases: []

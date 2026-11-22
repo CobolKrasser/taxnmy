@@ -1,0 +1,17 @@
+key: microsoft/visual-studio-enterprise
+publisher: microsoft
+name: Visual Studio Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Enterprise
+identifiers:
+- winget: Microsoft.VisualStudio.2017.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2017/Enterprise
+- winget: Microsoft.VisualStudio.2019.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2019/Enterprise
+- winget: Microsoft.VisualStudio.2022.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2022/Enterprise
+- winget: Microsoft.VisualStudio.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Enterprise
+aliases: []

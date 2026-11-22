@@ -1,0 +1,11 @@
+key: jetbrains/jetbrains-dotultimate
+publisher: jetbrains
+name: JetBrains dotUltimate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotUltimate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotUltimate
+identifiers:
+- winget: JetBrains.dotUltimate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotUltimate
+aliases: []
