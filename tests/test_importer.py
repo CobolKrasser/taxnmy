@@ -642,7 +642,7 @@ class TrialCountTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, tmp)
         with contextlib.redirect_stdout(io.StringIO()):
             importer.main(["count", "--outcomes", str(TRIAL / "outcomes.json"), "--verdicts", str(TRIAL / "verdicts.json"),
-                           "--out", str(tmp / "count.md")])
+                           "--out", str(tmp / "count.md"), "--root", str(FIXED)])
         self.assertIn("**stop**", (tmp / "count.md").read_text())
 
 

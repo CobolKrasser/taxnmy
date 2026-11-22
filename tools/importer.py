@@ -1313,6 +1313,7 @@ def parser() -> argparse.ArgumentParser:
     c.add_argument("--outcomes", required=True, help="outcomes.json of the propose step")
     c.add_argument("--verdicts", required=True, help="verdicts.json of tools/pr_referee.py judge")
     c.add_argument("--out", help="write the report here; else print it")
+    c.add_argument("--root", default=str(REPO), help="the data whose keys count as in TAX (default: this repository)")
     k = sub.add_parser("list", help="the KEV list and the CVE records of the vendors of the rows (public, free)")
     k.add_argument("--found", nargs="+", required=True)
     k.add_argument("--first", type=int)
@@ -1329,7 +1330,7 @@ def main(argv: list[str] | None = None) -> int:
         run_grouping(args)
     elif args.command == "count":
         text = final_report(load_outcomes(Path(args.outcomes)),
-                            json.loads(Path(args.verdicts).read_text(encoding="utf-8")), existing_keys(REPO))
+                            json.loads(Path(args.verdicts).read_text(encoding="utf-8")), existing_keys(Path(args.root)))
         if args.out:
             Path(args.out).write_text(text, encoding="utf-8")
         print(text)
