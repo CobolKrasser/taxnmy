@@ -1,0 +1,11 @@
+key: makeworld/merkdir
+publisher: makeworld
+name: merkdir
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makeworld/merkdir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makeworld/merkdir
+identifiers:
+- winget: makeworld.merkdir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makeworld/merkdir
+aliases: []

@@ -1,0 +1,11 @@
+key: 8bit2qubit/omniconsole
+publisher: 8bit2qubit
+name: OmniConsole
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8bit2qubit/OmniConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8bit2qubit/OmniConsole
+identifiers:
+- winget: 8bit2qubit.OmniConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8bit2qubit/OmniConsole
+aliases: []

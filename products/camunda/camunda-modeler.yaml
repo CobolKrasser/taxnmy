@@ -1,0 +1,11 @@
+key: camunda/camunda-modeler
+publisher: camunda
+name: Camunda Modeler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Camunda/Modeler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Camunda/Modeler
+identifiers:
+- winget: Camunda.Modeler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Camunda/Modeler
+aliases: []

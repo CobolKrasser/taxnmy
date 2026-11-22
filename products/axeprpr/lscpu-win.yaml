@@ -1,0 +1,11 @@
+key: axeprpr/lscpu-win
+publisher: axeprpr
+name: lscpu-win
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axeprpr/lscpu-win
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axeprpr/lscpu-win
+identifiers:
+- winget: axeprpr.lscpu-win
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axeprpr/lscpu-win
+aliases: []

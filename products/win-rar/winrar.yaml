@@ -1,0 +1,11 @@
+key: win-rar/winrar
+publisher: win-rar
+name: WinRAR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RARLab/WinRAR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RARLab/WinRAR
+identifiers:
+- winget: RARLab.WinRAR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RARLab/WinRAR
+aliases: []

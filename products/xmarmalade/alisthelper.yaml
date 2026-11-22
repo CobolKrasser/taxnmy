@@ -1,0 +1,11 @@
+key: xmarmalade/alisthelper
+publisher: xmarmalade
+name: AlistHelper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmarmalade/AlistHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmarmalade/AlistHelper
+identifiers:
+- winget: Xmarmalade.AlistHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmarmalade/AlistHelper
+aliases: []

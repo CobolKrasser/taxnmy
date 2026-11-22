@@ -1,0 +1,11 @@
+key: 0install-net/zero-install
+publisher: 0install-net
+name: Zero Install
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroInstall/ZeroInstall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroInstall/ZeroInstall
+identifiers:
+- winget: ZeroInstall.ZeroInstall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroInstall/ZeroInstall
+aliases: []

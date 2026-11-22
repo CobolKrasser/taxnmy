@@ -12,4 +12,6 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome
 - homebrew: google-chrome
   source: https://formulae.brew.sh/cask/google-chrome
+- winget: Google.Chrome.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/EXE
 aliases: []

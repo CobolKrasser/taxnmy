@@ -1,0 +1,11 @@
+key: skiff/skiff
+publisher: skiff
+name: Skiff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skiff/Skiff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skiff/Skiff
+identifiers:
+- winget: Skiff.Skiff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skiff/Skiff
+aliases: []

@@ -1,0 +1,11 @@
+key: arduino/arduino-ide
+publisher: arduino
+name: Arduino IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/stable
+identifiers:
+- winget: ArduinoSA.IDE.stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/stable
+aliases: []

@@ -1,0 +1,11 @@
+key: malinka/malinka-file-manager
+publisher: malinka
+name: Malinka File Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/malinka/filemanager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/malinka/filemanager
+identifiers:
+- winget: malinka.filemanager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/malinka/filemanager
+aliases: []

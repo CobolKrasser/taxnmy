@@ -1,0 +1,11 @@
+key: redsalamanders/redsalamander
+publisher: redsalamanders
+name: RedSalamander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedSalamanders/RedSalamander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedSalamanders/RedSalamander
+identifiers:
+- winget: RedSalamanders.RedSalamander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedSalamanders/RedSalamander
+aliases: []

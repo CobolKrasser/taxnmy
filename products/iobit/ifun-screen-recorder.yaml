@@ -1,0 +1,11 @@
+key: iobit/ifun-screen-recorder
+publisher: iobit
+name: iFun Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/iFunScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/iFunScreenRecorder
+identifiers:
+- winget: IObit.iFunScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/iFunScreenRecorder
+aliases: []

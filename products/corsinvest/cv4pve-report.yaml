@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-report
+publisher: corsinvest
+name: cv4pve-report
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/report
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/report
+identifiers:
+- winget: Corsinvest.cv4pve.report
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/report
+aliases: []

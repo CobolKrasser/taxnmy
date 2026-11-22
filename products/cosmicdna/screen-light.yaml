@@ -1,0 +1,11 @@
+key: cosmicdna/screen-light
+publisher: cosmicdna
+name: Screen Light
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmicDNA/ScreenLight
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmicDNA/ScreenLight
+identifiers:
+- winget: CosmicDNA.ScreenLight
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmicDNA/ScreenLight
+aliases: []

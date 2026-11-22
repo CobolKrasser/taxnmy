@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-vcf-merger
+publisher: vovsoft
+name: Vovsoft VCF Merger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFMerger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFMerger
+identifiers:
+- winget: VovSoft.VCFMerger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFMerger
+aliases: []

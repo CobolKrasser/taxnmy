@@ -1,0 +1,11 @@
+key: nartick-team/nartick
+publisher: nartick-team
+name: NarTick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Muye/FlickerList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Muye/FlickerList
+identifiers:
+- winget: Muye.FlickerList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Muye/FlickerList
+aliases: []

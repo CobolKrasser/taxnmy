@@ -1,0 +1,11 @@
+key: ringcentral/ringcentral-for-teams-desktop-plugin
+publisher: ringcentral
+name: RingCentral for Teams Desktop Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralTeamsDesktopPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralTeamsDesktopPlugin
+identifiers:
+- winget: RingCentral.RingCentralTeamsDesktopPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralTeamsDesktopPlugin
+aliases: []

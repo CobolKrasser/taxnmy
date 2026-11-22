@@ -1,0 +1,11 @@
+key: boxstar/deepvocal
+publisher: boxstar
+name: DeepVocal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boxstar/DeepVocal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boxstar/DeepVocal
+identifiers:
+- winget: Boxstar.DeepVocal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boxstar/DeepVocal
+aliases: []

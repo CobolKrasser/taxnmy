@@ -1,0 +1,11 @@
+key: thorlabs/qepas
+publisher: thorlabs
+name: QEPAS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/QEPAS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/QEPAS
+identifiers:
+- winget: Thorlabs.QEPAS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/QEPAS
+aliases: []

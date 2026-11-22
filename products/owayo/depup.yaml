@@ -1,0 +1,11 @@
+key: owayo/depup
+publisher: owayo
+name: depup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/owayo/depup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/owayo/depup
+identifiers:
+- winget: owayo.depup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/owayo/depup
+aliases: []

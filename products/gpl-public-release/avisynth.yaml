@@ -1,0 +1,11 @@
+key: gpl-public-release/avisynth
+publisher: gpl-public-release
+name: AviSynth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AviSynth/AviSynth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AviSynth/AviSynth
+identifiers:
+- winget: AviSynth.AviSynth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AviSynth/AviSynth
+aliases: []

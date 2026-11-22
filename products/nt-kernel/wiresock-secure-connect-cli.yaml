@@ -1,0 +1,11 @@
+key: nt-kernel/wiresock-secure-connect-cli
+publisher: nt-kernel
+name: WireSock Secure Connect CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTKERNEL/WireSockVPNClientCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTKERNEL/WireSockVPNClientCLI
+identifiers:
+- winget: NTKERNEL.WireSockVPNClientCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTKERNEL/WireSockVPNClientCLI
+aliases: []

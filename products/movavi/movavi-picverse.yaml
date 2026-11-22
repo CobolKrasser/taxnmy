@@ -1,0 +1,13 @@
+key: movavi/movavi-picverse
+publisher: movavi
+name: Movavi Picverse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPicverse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPicverse
+identifiers:
+- winget: Movavi.MovaviPhotoManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoManager
+- winget: Movavi.MovaviPicverse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPicverse
+aliases: []

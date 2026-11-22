@@ -1,0 +1,11 @@
+key: new-breed-software/tux-paint
+publisher: new-breed-software
+name: Tux Paint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewBreedSoftware/TuxPaint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewBreedSoftware/TuxPaint
+identifiers:
+- winget: NewBreedSoftware.TuxPaint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewBreedSoftware/TuxPaint
+aliases: []

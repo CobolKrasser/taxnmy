@@ -1,0 +1,11 @@
+key: xavier/x-cli
+publisher: xavier
+name: x-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XuanyuanLuoxue/XCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XuanyuanLuoxue/XCLI
+identifiers:
+- winget: XuanyuanLuoxue.XCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XuanyuanLuoxue/XCLI
+aliases: []

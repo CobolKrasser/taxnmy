@@ -1,0 +1,11 @@
+key: minimax/minimax-code
+publisher: minimax
+name: MiniMax Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxCode
+identifiers:
+- winget: MiniMax.MiniMaxCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxCode
+aliases: []

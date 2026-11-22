@@ -1,0 +1,11 @@
+key: passmark-software/passmark-fragger
+publisher: passmark-software
+name: PassMark Fragger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Fragger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Fragger
+identifiers:
+- winget: PassMark.Fragger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Fragger
+aliases: []

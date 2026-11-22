@@ -1,0 +1,11 @@
+key: avendoapp/avendo
+publisher: avendoapp
+name: Avendo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvendoApp/Avendo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvendoApp/Avendo
+identifiers:
+- winget: AvendoApp.Avendo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvendoApp/Avendo
+aliases: []

@@ -1,0 +1,11 @@
+key: struis-ict/inlook
+publisher: struis-ict
+name: InLook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/InLook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/InLook
+identifiers:
+- winget: StruisICT.InLook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/InLook
+aliases: []

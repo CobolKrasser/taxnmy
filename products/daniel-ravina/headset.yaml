@@ -1,0 +1,11 @@
+key: daniel-ravina/headset
+publisher: daniel-ravina
+name: Headset
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headsetapp/Headset
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headsetapp/Headset
+identifiers:
+- winget: Headsetapp.Headset
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headsetapp/Headset
+aliases: []

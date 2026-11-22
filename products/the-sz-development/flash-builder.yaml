@@ -1,0 +1,11 @@
+key: the-sz-development/flash-builder
+publisher: the-sz-development
+name: Flash Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/FlashBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/FlashBuilder
+identifiers:
+- winget: the-sz.FlashBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/FlashBuilder
+aliases: []

@@ -1,0 +1,11 @@
+key: const/const-api
+publisher: const
+name: CONST API
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/llxisdsh/ConstAPI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/llxisdsh/ConstAPI
+identifiers:
+- winget: llxisdsh.ConstAPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/llxisdsh/ConstAPI
+aliases: []

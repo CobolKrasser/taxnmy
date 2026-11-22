@@ -1,0 +1,11 @@
+key: dexcom/dexcom-uploader
+publisher: dexcom
+name: Dexcom Uploader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dexcom/DexcomUploader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dexcom/DexcomUploader
+identifiers:
+- winget: Dexcom.DexcomUploader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dexcom/DexcomUploader
+aliases: []

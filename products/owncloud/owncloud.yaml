@@ -1,0 +1,11 @@
+key: owncloud/owncloud
+publisher: owncloud
+name: ownCloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ownCloud/ownCloudDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ownCloud/ownCloudDesktop
+identifiers:
+- winget: ownCloud.ownCloudDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ownCloud/ownCloudDesktop
+aliases: []

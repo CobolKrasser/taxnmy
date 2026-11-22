@@ -1,0 +1,11 @@
+key: sky/mcport
+publisher: sky
+name: MCPort
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sky32/MCPort
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sky32/MCPort
+identifiers:
+- winget: sky32.MCPort
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sky32/MCPort
+aliases: []

@@ -1,0 +1,11 @@
+key: mediahuman/mediahuman-audio-converter
+publisher: mediahuman
+name: MediaHuman Audio Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/AudioConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/AudioConverter
+identifiers:
+- winget: MediaHuman.AudioConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/AudioConverter
+aliases: []

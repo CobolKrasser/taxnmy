@@ -1,0 +1,11 @@
+key: artistic-style/artistic-style
+publisher: artistic-style
+name: Artistic Style
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtisticStyle/ArtisticStyle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtisticStyle/ArtisticStyle
+identifiers:
+- winget: ArtisticStyle.ArtisticStyle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtisticStyle/ArtisticStyle
+aliases: []

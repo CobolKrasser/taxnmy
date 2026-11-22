@@ -1,0 +1,11 @@
+key: softsea/cr2-converter
+publisher: softsea
+name: CR2 Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CR2Converter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CR2Converter
+identifiers:
+- winget: SoftSea.CR2Converter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CR2Converter
+aliases: []

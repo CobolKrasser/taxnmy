@@ -1,0 +1,11 @@
+key: orica/shotplus-tunnel
+publisher: orica
+name: SHOTPlus Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orica/SHOTPlus/Tunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orica/SHOTPlus/Tunnel
+identifiers:
+- winget: Orica.SHOTPlus.Tunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orica/SHOTPlus/Tunnel
+aliases: []

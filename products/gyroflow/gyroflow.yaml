@@ -1,0 +1,11 @@
+key: gyroflow/gyroflow
+publisher: gyroflow
+name: Gyroflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyroflow/Gyroflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyroflow/Gyroflow
+identifiers:
+- winget: Gyroflow.Gyroflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyroflow/Gyroflow
+aliases: []

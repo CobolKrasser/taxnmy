@@ -1,0 +1,11 @@
+key: ea4k/klog
+publisher: ea4k
+name: KLog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EA4K/KLog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EA4K/KLog
+identifiers:
+- winget: EA4K.KLog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EA4K/KLog
+aliases: []

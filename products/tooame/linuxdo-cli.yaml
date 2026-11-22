@@ -1,0 +1,11 @@
+key: tooame/linuxdo-cli
+publisher: tooame
+name: linuxdo-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TooAme/linuxdo-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TooAme/linuxdo-cli
+identifiers:
+- winget: TooAme.linuxdo-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TooAme/linuxdo-cli
+aliases: []

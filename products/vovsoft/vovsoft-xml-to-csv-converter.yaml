@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-xml-to-csv-converter
+publisher: vovsoft
+name: Vovsoft XML to CSV Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/XMLtoCSVConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/XMLtoCSVConverter
+identifiers:
+- winget: VovSoft.XMLtoCSVConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/XMLtoCSVConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: vb-audio-software/voicemeeter
+publisher: vb-audio-software
+name: Voicemeeter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter
+identifiers:
+- winget: VB-Audio.Voicemeeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter
+aliases: []

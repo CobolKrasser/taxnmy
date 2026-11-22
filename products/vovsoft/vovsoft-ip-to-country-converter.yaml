@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-ip-to-country-converter
+publisher: vovsoft
+name: Vovsoft IP to Country Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/IPtoCountryConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/IPtoCountryConverter
+identifiers:
+- winget: VovSoft.IPtoCountryConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/IPtoCountryConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: saito-games/petwings
+publisher: saito-games
+name: PetWings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/PetWings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/PetWings
+identifiers:
+- winget: SaitoGames.PetWings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/PetWings
+aliases: []

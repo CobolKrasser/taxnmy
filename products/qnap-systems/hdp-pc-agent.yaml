@@ -1,0 +1,11 @@
+key: qnap-systems/hdp-pc-agent
+publisher: qnap-systems
+name: HDP PC Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/NetBakPCAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/NetBakPCAgent
+identifiers:
+- winget: QNAP.NetBakPCAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/NetBakPCAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: byetype/byetype
+publisher: byetype
+name: ByeType
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/devonmochi/ByeType
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/devonmochi/ByeType
+identifiers:
+- winget: devonmochi.ByeType
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/devonmochi/ByeType
+aliases: []

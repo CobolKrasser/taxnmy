@@ -1,0 +1,11 @@
+key: hangzhou-deepseek-artificial-intelligence/deepseek-harness
+publisher: hangzhou-deepseek-artificial-intelligence
+name: DeepSeek Harness
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepSeek/DeepSeekHarnessDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepSeek/DeepSeekHarnessDesktop
+identifiers:
+- winget: DeepSeek.DeepSeekHarnessDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepSeek/DeepSeekHarnessDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: futuremark/futuremark-systeminfo
+publisher: futuremark
+name: Futuremark SystemInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futuremark/FuturemarkSystemInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futuremark/FuturemarkSystemInfo
+identifiers:
+- winget: Futuremark.FuturemarkSystemInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futuremark/FuturemarkSystemInfo
+aliases: []

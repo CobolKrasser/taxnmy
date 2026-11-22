@@ -1,0 +1,11 @@
+key: cogin/queuemonitor-standard
+publisher: cogin
+name: QueueMonitor Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cogin/QueueMonitor/Std
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cogin/QueueMonitor/Std
+identifiers:
+- winget: Cogin.QueueMonitor.Std
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cogin/QueueMonitor/Std
+aliases: []

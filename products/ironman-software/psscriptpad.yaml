@@ -1,0 +1,11 @@
+key: ironman-software/psscriptpad
+publisher: ironman-software
+name: PSScriptPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PSScriptPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PSScriptPad
+identifiers:
+- winget: IronmanSoftware.PSScriptPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PSScriptPad
+aliases: []

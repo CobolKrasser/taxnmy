@@ -1,0 +1,11 @@
+key: shanghai-kafan-info-security/minibrowser
+publisher: shanghai-kafan-info-security
+name: MiniBrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kafan/MiniBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kafan/MiniBrowser
+identifiers:
+- winget: Kafan.MiniBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kafan/MiniBrowser
+aliases: []

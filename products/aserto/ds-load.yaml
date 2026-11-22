@@ -1,0 +1,11 @@
+key: aserto/ds-load
+publisher: aserto
+name: ds-load
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/DSLoad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/DSLoad
+identifiers:
+- winget: Aserto.DSLoad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/DSLoad
+aliases: []

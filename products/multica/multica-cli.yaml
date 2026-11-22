@@ -1,0 +1,11 @@
+key: multica/multica-cli
+publisher: multica
+name: Multica CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multica/MulticaCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multica/MulticaCLI
+identifiers:
+- winget: Multica.MulticaCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multica/MulticaCLI
+aliases: []

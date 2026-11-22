@@ -1,0 +1,11 @@
+key: lilimozi/hanaagent
+publisher: lilimozi
+name: HanaAgent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/liliMozi/HanaAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/liliMozi/HanaAgent
+identifiers:
+- winget: liliMozi.HanaAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/liliMozi/HanaAgent
+aliases: []

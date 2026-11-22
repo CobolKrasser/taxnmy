@@ -1,0 +1,11 @@
+key: cplee-org/act
+publisher: cplee-org
+name: act
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nektos/act
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nektos/act
+identifiers:
+- winget: nektos.act
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nektos/act
+aliases: []

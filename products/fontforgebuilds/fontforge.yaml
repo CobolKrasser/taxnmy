@@ -1,0 +1,11 @@
+key: fontforgebuilds/fontforge
+publisher: fontforgebuilds
+name: FontForge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FontForge/FontForge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FontForge/FontForge
+identifiers:
+- winget: FontForge.FontForge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FontForge/FontForge
+aliases: []

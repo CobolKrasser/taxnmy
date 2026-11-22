@@ -1,0 +1,11 @@
+key: japplis/the-desktop-watchmaker
+publisher: japplis
+name: The Desktop Watchmaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/DesktopWatchmaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/DesktopWatchmaker
+identifiers:
+- winget: Japplis.DesktopWatchmaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/DesktopWatchmaker
+aliases: []

@@ -1,0 +1,11 @@
+key: the-clonespy-team/clonespy
+publisher: the-clonespy-team
+name: CloneSpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloneSpy/CloneSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloneSpy/CloneSpy
+identifiers:
+- winget: CloneSpy.CloneSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloneSpy/CloneSpy
+aliases: []

@@ -1,0 +1,11 @@
+key: shift-crypto/bitboxapp
+publisher: shift-crypto
+name: BitBoxApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiftCryptoAG/BitBoxApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiftCryptoAG/BitBoxApp
+identifiers:
+- winget: ShiftCryptoAG.BitBoxApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiftCryptoAG/BitBoxApp
+aliases: []

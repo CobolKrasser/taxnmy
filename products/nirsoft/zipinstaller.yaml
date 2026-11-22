@@ -1,0 +1,11 @@
+key: nirsoft/zipinstaller
+publisher: nirsoft
+name: ZipInstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ZipInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ZipInstaller
+identifiers:
+- winget: NirSoft.ZipInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ZipInstaller
+aliases: []

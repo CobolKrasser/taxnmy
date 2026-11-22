@@ -1,0 +1,11 @@
+key: visionaid-international/visionaid-international-japanese-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Japanese Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Japanese
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Japanese
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Japanese
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Japanese
+aliases: []

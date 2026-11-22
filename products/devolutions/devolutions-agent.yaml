@@ -1,0 +1,11 @@
+key: devolutions/devolutions-agent
+publisher: devolutions
+name: Devolutions Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Agent
+identifiers:
+- winget: Devolutions.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Agent
+aliases: []

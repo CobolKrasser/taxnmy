@@ -1,0 +1,11 @@
+key: gu-sean/time-manager
+publisher: gu-sean
+name: Time Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gu-sean/TimeManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gu-sean/TimeManager
+identifiers:
+- winget: gu-sean.TimeManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gu-sean/TimeManager
+aliases: []

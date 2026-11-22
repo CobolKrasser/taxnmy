@@ -1,0 +1,11 @@
+key: langflowdesktop/langflow
+publisher: langflowdesktop
+name: Langflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Langflow/Langflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Langflow/Langflow
+identifiers:
+- winget: Langflow.Langflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Langflow/Langflow
+aliases: []

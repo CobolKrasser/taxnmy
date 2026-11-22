@@ -1,0 +1,11 @@
+key: the-openbve-project/openbve
+publisher: the-openbve-project
+name: openBVE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leezer3/OpenBVE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leezer3/OpenBVE
+identifiers:
+- winget: leezer3.OpenBVE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leezer3/OpenBVE
+aliases: []

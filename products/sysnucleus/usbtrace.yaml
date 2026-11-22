@@ -1,0 +1,11 @@
+key: sysnucleus/usbtrace
+publisher: sysnucleus
+name: USBTrace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SysNucleus/USBTrace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SysNucleus/USBTrace
+identifiers:
+- winget: SysNucleus.USBTrace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SysNucleus/USBTrace
+aliases: []

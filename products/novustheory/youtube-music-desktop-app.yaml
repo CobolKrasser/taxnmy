@@ -1,0 +1,11 @@
+key: novustheory/youtube-music-desktop-app
+publisher: novustheory
+name: YouTube Music Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Ytmdesktop/Ytmdesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Ytmdesktop/Ytmdesktop
+identifiers:
+- winget: Ytmdesktop.Ytmdesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Ytmdesktop/Ytmdesktop
+aliases: []

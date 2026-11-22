@@ -1,0 +1,11 @@
+key: brave-software/brave-updater
+publisher: brave-software
+name: Brave Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveUpdater
+identifiers:
+- winget: Brave.BraveUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveUpdater
+aliases: []

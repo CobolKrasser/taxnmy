@@ -1,0 +1,11 @@
+key: cingano-development/wtop
+publisher: cingano-development
+name: wtop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cingano/wtop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cingano/wtop
+identifiers:
+- winget: Cingano.wtop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cingano/wtop
+aliases: []

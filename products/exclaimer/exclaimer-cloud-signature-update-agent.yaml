@@ -1,0 +1,11 @@
+key: exclaimer/exclaimer-cloud-signature-update-agent
+publisher: exclaimer
+name: Exclaimer Cloud Signature Update Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exclaimer/CloudSignatureUpdateAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exclaimer/CloudSignatureUpdateAgent
+identifiers:
+- winget: Exclaimer.CloudSignatureUpdateAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exclaimer/CloudSignatureUpdateAgent
+aliases: []

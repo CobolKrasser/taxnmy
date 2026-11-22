@@ -1,0 +1,11 @@
+key: mamedev/mame
+publisher: mamedev
+name: MAME
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMEdev/MAME
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMEdev/MAME
+identifiers:
+- winget: MAMEdev.MAME
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMEdev/MAME
+aliases: []

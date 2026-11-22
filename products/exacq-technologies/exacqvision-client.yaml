@@ -1,0 +1,11 @@
+key: exacq-technologies/exacqvision-client
+publisher: exacq-technologies
+name: exacqVision Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExacqTechnologies/exacqVisionClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExacqTechnologies/exacqVisionClient
+identifiers:
+- winget: ExacqTechnologies.exacqVisionClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExacqTechnologies/exacqVisionClient
+aliases: []

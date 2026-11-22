@@ -1,0 +1,11 @@
+key: ashley-stone/defaultaudio
+publisher: ashley-stone
+name: DefaultAudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AshleyStone/DefaultAudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AshleyStone/DefaultAudio
+identifiers:
+- winget: AshleyStone.DefaultAudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AshleyStone/DefaultAudio
+aliases: []

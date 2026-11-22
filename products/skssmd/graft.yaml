@@ -1,0 +1,11 @@
+key: skssmd/graft
+publisher: skssmd
+name: Graft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skssmd/Graft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skssmd/Graft
+identifiers:
+- winget: skssmd.Graft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skssmd/Graft
+aliases: []

@@ -1,0 +1,13 @@
+key: rambox/rambox
+publisher: rambox
+name: Rambox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambox/Rambox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambox/Rambox
+identifiers:
+- winget: Rambox.Rambox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambox/Rambox
+- winget: Rambox.Rambox.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambox/Rambox/Community
+aliases: []

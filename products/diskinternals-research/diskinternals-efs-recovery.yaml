@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-efs-recovery
+publisher: diskinternals-research
+name: DiskInternals EFS Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/EFSRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/EFSRecovery
+identifiers:
+- winget: DiskInternals.EFSRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/EFSRecovery
+aliases: []

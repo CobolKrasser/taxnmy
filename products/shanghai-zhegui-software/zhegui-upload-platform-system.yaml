@@ -1,0 +1,11 @@
+key: shanghai-zhegui-software/zhegui-upload-platform-system
+publisher: shanghai-zhegui-software
+name: Zhegui upload platform system
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_upload
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_upload
+identifiers:
+- winget: Zheguisoft.zg_upload
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_upload
+aliases: []

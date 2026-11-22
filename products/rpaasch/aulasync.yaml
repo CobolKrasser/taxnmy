@@ -1,0 +1,11 @@
+key: rpaasch/aulasync
+publisher: rpaasch
+name: AulaSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rpaasch/AulaSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rpaasch/AulaSync
+identifiers:
+- winget: rpaasch.AulaSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rpaasch/AulaSync
+aliases: []

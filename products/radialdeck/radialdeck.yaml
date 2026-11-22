@@ -1,0 +1,11 @@
+key: radialdeck/radialdeck
+publisher: radialdeck
+name: RadialDeck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadialDeck/RadialDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadialDeck/RadialDeck
+identifiers:
+- winget: RadialDeck.RadialDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadialDeck/RadialDeck
+aliases: []

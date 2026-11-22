@@ -1,0 +1,11 @@
+key: beijing-feishu-technology/feishurooms
+publisher: beijing-feishu-technology
+name: FeishuRooms
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/FeishuRooms
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/FeishuRooms
+identifiers:
+- winget: ByteDance.FeishuRooms
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/FeishuRooms
+aliases: []

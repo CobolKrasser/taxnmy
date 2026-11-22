@@ -1,0 +1,11 @@
+key: gnit/bbl
+publisher: gnit
+name: bbl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gnit/Bbl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gnit/Bbl
+identifiers:
+- winget: Gnit.Bbl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gnit/Bbl
+aliases: []

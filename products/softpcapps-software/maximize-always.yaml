@@ -1,0 +1,11 @@
+key: softpcapps-software/maximize-always
+publisher: softpcapps-software
+name: Maximize Always
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softpcapps/MaximizeAlways
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softpcapps/MaximizeAlways
+identifiers:
+- winget: Softpcapps.MaximizeAlways
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softpcapps/MaximizeAlways
+aliases: []

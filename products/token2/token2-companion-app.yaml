@@ -1,0 +1,11 @@
+key: token2/token2-companion-app
+publisher: token2
+name: Token2 Companion App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/token2/CompanionApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/token2/CompanionApp
+identifiers:
+- winget: token2.CompanionApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/token2/CompanionApp
+aliases: []

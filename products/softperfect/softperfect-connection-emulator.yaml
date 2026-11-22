@@ -1,0 +1,11 @@
+key: softperfect/softperfect-connection-emulator
+publisher: softperfect
+name: SoftPerfect Connection Emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/ConnectionEmulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/ConnectionEmulator
+identifiers:
+- winget: SoftPerfect.ConnectionEmulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/ConnectionEmulator
+aliases: []

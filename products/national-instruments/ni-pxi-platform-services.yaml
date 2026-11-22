@@ -1,0 +1,11 @@
+key: national-instruments/ni-pxi-platform-services
+publisher: national-instruments
+name: NI PXI Platform Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-pxiplatformservices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-pxiplatformservices
+identifiers:
+- winget: NI.ni-pxiplatformservices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-pxiplatformservices
+aliases: []

@@ -1,0 +1,11 @@
+key: dev47apps/droidcam-client
+publisher: dev47apps
+name: DroidCam Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev47apps/DroidCam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev47apps/DroidCam
+identifiers:
+- winget: dev47apps.DroidCam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev47apps/DroidCam
+aliases: []

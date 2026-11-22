@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-dose-response
+publisher: adinstruments
+name: ADInstruments Dose Response
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/DoseResponse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/DoseResponse
+identifiers:
+- winget: ADInstruments.LabChart.Module.DoseResponse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/DoseResponse
+aliases: []

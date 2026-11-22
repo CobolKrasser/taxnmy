@@ -1,0 +1,11 @@
+key: mersenne-research/prime95
+publisher: mersenne-research
+name: Prime95
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mersenne/prime95
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mersenne/prime95
+identifiers:
+- winget: mersenne.prime95
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mersenne/prime95
+aliases: []

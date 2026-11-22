@@ -1,0 +1,11 @@
+key: zoom/zoom-outlook-plugin
+publisher: zoom
+name: Zoom Outlook Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomOutlookPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomOutlookPlugin
+identifiers:
+- winget: Zoom.ZoomOutlookPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomOutlookPlugin
+aliases: []

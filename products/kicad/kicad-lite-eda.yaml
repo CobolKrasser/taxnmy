@@ -1,0 +1,11 @@
+key: kicad/kicad-lite-eda
+publisher: kicad
+name: KiCad Lite EDA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiCad/KiCad/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiCad/KiCad/Lite
+identifiers:
+- winget: KiCad.KiCad.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiCad/KiCad/Lite
+aliases: []

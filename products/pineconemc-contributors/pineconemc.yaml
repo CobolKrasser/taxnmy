@@ -1,0 +1,13 @@
+key: pineconemc-contributors/pineconemc
+publisher: pineconemc-contributors
+name: PineconeMC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElyPrismLauncher/ElyPrismLauncher/MSVC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElyPrismLauncher/ElyPrismLauncher/MSVC
+identifiers:
+- winget: ElyPrismLauncher.ElyPrismLauncher.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElyPrismLauncher/ElyPrismLauncher/MSVC
+- winget: ElyPrismLauncher.ElyPrismLauncher.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElyPrismLauncher/ElyPrismLauncher/MinGW
+aliases: []

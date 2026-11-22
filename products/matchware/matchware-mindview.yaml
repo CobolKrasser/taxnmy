@@ -1,0 +1,11 @@
+key: matchware/matchware-mindview
+publisher: matchware
+name: MatchWare MindView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatchWare/MindView/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatchWare/MindView/9
+identifiers:
+- winget: MatchWare.MindView.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatchWare/MindView/9
+aliases: []

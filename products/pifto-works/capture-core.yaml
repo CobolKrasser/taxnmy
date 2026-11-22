@@ -1,0 +1,11 @@
+key: pifto-works/capture-core
+publisher: pifto-works
+name: Capture Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiftoWorks/CaptureCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiftoWorks/CaptureCore
+identifiers:
+- winget: PiftoWorks.CaptureCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiftoWorks/CaptureCore
+aliases: []

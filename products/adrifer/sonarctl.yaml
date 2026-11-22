@@ -1,0 +1,11 @@
+key: adrifer/sonarctl
+publisher: adrifer
+name: sonarctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adrifer/Sonarctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adrifer/Sonarctl
+identifiers:
+- winget: Adrifer.Sonarctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adrifer/Sonarctl
+aliases: []

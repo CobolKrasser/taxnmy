@@ -1,0 +1,11 @@
+key: johannes-passing/elevate
+publisher: johannes-passing
+name: Elevate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jpassing/elevate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jpassing/elevate
+identifiers:
+- winget: jpassing.elevate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jpassing/elevate
+aliases: []

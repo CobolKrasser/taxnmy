@@ -1,0 +1,11 @@
+key: delinea/delinea-privilege-manager-agent
+publisher: delinea
+name: Delinea Privilege Manager Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticAgent
+identifiers:
+- winget: Delinea.ThycoticAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticAgent
+aliases: []

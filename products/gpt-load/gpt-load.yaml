@@ -1,0 +1,11 @@
+key: gpt-load/gpt-load
+publisher: gpt-load
+name: GPT-Load
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tbphp/GPTLoad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tbphp/GPTLoad
+identifiers:
+- winget: tbphp.GPTLoad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tbphp/GPTLoad
+aliases: []

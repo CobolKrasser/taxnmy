@@ -1,0 +1,11 @@
+key: splitmedialabs/vcam
+publisher: splitmedialabs
+name: VCam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/VCam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/VCam
+identifiers:
+- winget: SplitmediaLabs.VCam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/VCam
+aliases: []

@@ -1,0 +1,11 @@
+key: chemtable-software/autorun-organizer
+publisher: chemtable-software
+name: Autorun Organizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/AutorunOrganizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/AutorunOrganizer
+identifiers:
+- winget: ChemTableSoftware.AutorunOrganizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/AutorunOrganizer
+aliases: []

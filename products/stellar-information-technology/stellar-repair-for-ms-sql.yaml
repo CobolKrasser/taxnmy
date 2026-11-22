@@ -1,0 +1,11 @@
+key: stellar-information-technology/stellar-repair-for-ms-sql
+publisher: stellar-information-technology
+name: Stellar Repair for MS SQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairForMSSQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairForMSSQL
+identifiers:
+- winget: StellarDataRecovery.StellarRepairForMSSQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairForMSSQL
+aliases: []

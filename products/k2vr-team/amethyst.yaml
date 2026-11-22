@@ -1,0 +1,11 @@
+key: k2vr-team/amethyst
+publisher: k2vr-team
+name: Amethyst
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K2VRTeam/Amethyst/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K2VRTeam/Amethyst/Portable
+identifiers:
+- winget: K2VRTeam.Amethyst.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K2VRTeam/Amethyst/Portable
+aliases: []

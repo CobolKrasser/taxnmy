@@ -1,0 +1,11 @@
+key: beijing-feishu-technology/feishu-deployment-tool
+publisher: beijing-feishu-technology
+name: Feishu Deployment Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu/MSI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu/MSI
+identifiers:
+- winget: ByteDance.Feishu.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu/MSI
+aliases: []

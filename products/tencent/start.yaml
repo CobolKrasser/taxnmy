@@ -1,0 +1,11 @@
+key: tencent/start
+publisher: tencent
+name: START
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/START
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/START
+identifiers:
+- winget: Tencent.START
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/START
+aliases: []

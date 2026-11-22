@@ -1,0 +1,11 @@
+key: jam-software/treesize
+publisher: jam-software
+name: TreeSize
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/TreeSize
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/TreeSize
+identifiers:
+- winget: JAMSoftware.TreeSize
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/TreeSize
+aliases: []

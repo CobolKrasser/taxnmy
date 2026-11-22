@@ -1,0 +1,11 @@
+key: smath/smath-studio
+publisher: smath
+name: SMath Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMath/SMathStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMath/SMathStudio
+identifiers:
+- winget: SMath.SMathStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMath/SMathStudio
+aliases: []

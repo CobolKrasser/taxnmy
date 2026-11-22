@@ -1,0 +1,11 @@
+key: acro-software/cutepdf-writer
+publisher: acro-software
+name: CutePDF Writer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcroSoftware/CutePDFWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcroSoftware/CutePDFWriter
+identifiers:
+- winget: AcroSoftware.CutePDFWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcroSoftware/CutePDFWriter
+aliases: []

@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-noise-detector
+publisher: vovsoft
+name: Vovsoft Noise Detector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NoiseDetector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NoiseDetector
+identifiers:
+- winget: VovSoft.NoiseDetector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NoiseDetector
+aliases: []

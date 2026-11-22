@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-ai-automator
+publisher: vovsoft
+name: Vovsoft AI Automator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AIAutomator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AIAutomator
+identifiers:
+- winget: VovSoft.AIAutomator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AIAutomator
+aliases: []

@@ -1,0 +1,11 @@
+key: basti-def/helloworld-package
+publisher: basti-def
+name: helloworld.package
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basti-def/helloworld/package
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basti-def/helloworld/package
+identifiers:
+- winget: Basti-def.helloworld.package
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basti-def/helloworld/package
+aliases: []

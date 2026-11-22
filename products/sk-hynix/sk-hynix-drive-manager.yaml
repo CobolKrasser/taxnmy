@@ -1,0 +1,11 @@
+key: sk-hynix/sk-hynix-drive-manager
+publisher: sk-hynix
+name: SK hynix Drive Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKHynix/DriverManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKHynix/DriverManager
+identifiers:
+- winget: SKHynix.DriverManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKHynix/DriverManager
+aliases: []

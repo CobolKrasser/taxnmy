@@ -1,0 +1,11 @@
+key: scrambleid/scrambleid
+publisher: scrambleid
+name: ScrambleID
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScrambleID/ScrambleID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScrambleID/ScrambleID
+identifiers:
+- winget: ScrambleID.ScrambleID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScrambleID/ScrambleID
+aliases: []

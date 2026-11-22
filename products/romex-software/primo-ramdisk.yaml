@@ -1,0 +1,11 @@
+key: romex-software/primo-ramdisk
+publisher: romex-software
+name: Primo Ramdisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RomexSoftware/PrimoRamdisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RomexSoftware/PrimoRamdisk
+identifiers:
+- winget: RomexSoftware.PrimoRamdisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RomexSoftware/PrimoRamdisk
+aliases: []

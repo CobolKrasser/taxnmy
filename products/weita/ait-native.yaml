@@ -1,0 +1,11 @@
+key: weita/ait-native
+publisher: weita
+name: ait-native
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Weita/AitNative
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Weita/AitNative
+identifiers:
+- winget: Weita.AitNative
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Weita/AitNative
+aliases: []

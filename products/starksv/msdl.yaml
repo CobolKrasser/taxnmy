@@ -1,0 +1,11 @@
+key: starksv/msdl
+publisher: starksv
+name: msdl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/starkSV/msdl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/starkSV/msdl
+identifiers:
+- winget: starkSV.msdl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/starkSV/msdl
+aliases: []

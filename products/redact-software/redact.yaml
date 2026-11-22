@@ -1,0 +1,11 @@
+key: redact-software/redact
+publisher: redact-software
+name: Redact
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedactSoftware/Redact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedactSoftware/Redact
+identifiers:
+- winget: RedactSoftware.Redact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedactSoftware/Redact
+aliases: []

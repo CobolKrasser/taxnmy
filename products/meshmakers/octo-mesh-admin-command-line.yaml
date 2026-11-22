@@ -1,0 +1,11 @@
+key: meshmakers/octo-mesh-admin-command-line
+publisher: meshmakers
+name: Octo Mesh Admin Command Line
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meshmakers/octo-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meshmakers/octo-cli
+identifiers:
+- winget: meshmakers.octo-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meshmakers/octo-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: trelliscard/trellis-card
+publisher: trelliscard
+name: Trellis-Card
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/czm15053/TrellisCard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/czm15053/TrellisCard
+identifiers:
+- winget: czm15053.TrellisCard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/czm15053/TrellisCard
+aliases: []

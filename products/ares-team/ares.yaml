@@ -1,0 +1,11 @@
+key: ares-team/ares
+publisher: ares-team
+name: ares
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ares-emulator/ares
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ares-emulator/ares
+identifiers:
+- winget: ares-emulator.ares
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ares-emulator/ares
+aliases: []

@@ -1,0 +1,11 @@
+key: broadcast-radio/hardware-service
+publisher: broadcast-radio
+name: Hardware Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/HardwareService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/HardwareService
+identifiers:
+- winget: BroadcastRadio.HardwareService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/HardwareService
+aliases: []

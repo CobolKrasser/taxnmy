@@ -1,0 +1,11 @@
+key: certum/procertum-smartsign-simplysign-desktop
+publisher: certum
+name: proCertum SmartSign SimplySign Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certum/SmartSignSimplySignDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certum/SmartSignSimplySignDesktop
+identifiers:
+- winget: Certum.SmartSignSimplySignDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certum/SmartSignSimplySignDesktop
+aliases: []

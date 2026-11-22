@@ -1,0 +1,11 @@
+key: box/box-tools
+publisher: box
+name: Box Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxTools
+identifiers:
+- winget: Box.BoxTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxTools
+aliases: []

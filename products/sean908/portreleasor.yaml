@@ -1,0 +1,11 @@
+key: sean908/portreleasor
+publisher: sean908
+name: PortReleasor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sean908/PortReleasor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sean908/PortReleasor
+identifiers:
+- winget: sean908.PortReleasor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sean908/PortReleasor
+aliases: []

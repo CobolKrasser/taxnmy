@@ -1,0 +1,11 @@
+key: sleipnirgroup/choreo
+publisher: sleipnirgroup
+name: Choreo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SleipnirGroup/choreo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SleipnirGroup/choreo
+identifiers:
+- winget: SleipnirGroup.choreo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SleipnirGroup/choreo
+aliases: []

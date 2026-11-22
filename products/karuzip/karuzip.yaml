@@ -1,0 +1,11 @@
+key: karuzip/karuzip
+publisher: karuzip
+name: Karuzip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Karuzip/Karuzip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Karuzip/Karuzip
+identifiers:
+- winget: Karuzip.Karuzip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Karuzip/Karuzip
+aliases: []

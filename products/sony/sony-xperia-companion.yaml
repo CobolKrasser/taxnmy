@@ -1,0 +1,11 @@
+key: sony/sony-xperia-companion
+publisher: sony
+name: Sony Xperia Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sony/XperiaCompanion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sony/XperiaCompanion
+identifiers:
+- winget: Sony.XperiaCompanion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sony/XperiaCompanion
+aliases: []

@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-pepper
+publisher: corsinvest
+name: cv4pve-pepper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/pepper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/pepper
+identifiers:
+- winget: Corsinvest.cv4pve.pepper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/pepper
+aliases: []

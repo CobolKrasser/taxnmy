@@ -1,0 +1,11 @@
+key: circleci/circleci-cli-preview
+publisher: circleci
+name: CircleCI CLI Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircleCI/CLI/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircleCI/CLI/Preview
+identifiers:
+- winget: CircleCI.CLI.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircleCI/CLI/Preview
+aliases: []

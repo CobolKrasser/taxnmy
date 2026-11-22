@@ -1,0 +1,11 @@
+key: per-gantelius/fspy
+publisher: per-gantelius
+name: fSpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stuffmatic/fSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stuffmatic/fSpy
+identifiers:
+- winget: Stuffmatic.fSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stuffmatic/fSpy
+aliases: []

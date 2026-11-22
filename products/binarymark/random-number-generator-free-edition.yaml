@@ -1,0 +1,11 @@
+key: binarymark/random-number-generator-free-edition
+publisher: binarymark
+name: Random Number Generator Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/RandomNumberGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/RandomNumberGenerator
+identifiers:
+- winget: BinaryMark.RandomNumberGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/RandomNumberGenerator
+aliases: []

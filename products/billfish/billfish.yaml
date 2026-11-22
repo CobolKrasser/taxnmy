@@ -1,0 +1,11 @@
+key: billfish/billfish
+publisher: billfish
+name: Billfish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Billfish/Billfish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Billfish/Billfish
+identifiers:
+- winget: Billfish.Billfish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Billfish/Billfish
+aliases: []

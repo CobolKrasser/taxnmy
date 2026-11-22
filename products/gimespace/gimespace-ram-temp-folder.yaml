@@ -1,0 +1,11 @@
+key: gimespace/gimespace-ram-temp-folder
+publisher: gimespace
+name: GiMeSpace RAM Temp Folder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GiMeSpace/RAMTempFolder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GiMeSpace/RAMTempFolder
+identifiers:
+- winget: GiMeSpace.RAMTempFolder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GiMeSpace/RAMTempFolder
+aliases: []

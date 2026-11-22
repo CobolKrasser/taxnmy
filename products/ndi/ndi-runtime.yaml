@@ -1,0 +1,11 @@
+key: ndi/ndi-runtime
+publisher: ndi
+name: NDI Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDI/NDIRuntime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDI/NDIRuntime
+identifiers:
+- winget: NDI.NDIRuntime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDI/NDIRuntime
+aliases: []

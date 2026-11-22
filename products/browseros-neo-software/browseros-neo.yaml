@@ -1,0 +1,11 @@
+key: browseros-neo-software/browseros-neo
+publisher: browseros-neo-software
+name: BrowserOS neo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS/Neo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS/Neo
+identifiers:
+- winget: BrowserOS.BrowserOS.Neo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS/Neo
+aliases: []

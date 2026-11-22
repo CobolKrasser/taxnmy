@@ -1,0 +1,11 @@
+key: sacd-ripper/sacd-ripper
+publisher: sacd-ripper
+name: SACD Ripper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sacd-ripper/sacd-ripper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sacd-ripper/sacd-ripper
+identifiers:
+- winget: sacd-ripper.sacd-ripper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sacd-ripper/sacd-ripper
+aliases: []

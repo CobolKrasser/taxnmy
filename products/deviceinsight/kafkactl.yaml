@@ -1,0 +1,11 @@
+key: deviceinsight/kafkactl
+publisher: deviceinsight
+name: kafkactl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl
+identifiers:
+- winget: deviceinsight.kafkactl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl
+aliases: []

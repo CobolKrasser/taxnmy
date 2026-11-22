@@ -1,0 +1,11 @@
+key: gregory/sd-search-and-displace
+publisher: gregory
+name: sd - search & displace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chmln/sd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chmln/sd
+identifiers:
+- winget: chmln.sd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chmln/sd
+aliases: []

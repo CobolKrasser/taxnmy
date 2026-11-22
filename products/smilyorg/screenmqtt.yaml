@@ -1,0 +1,11 @@
+key: smilyorg/screenmqtt
+publisher: smilyorg
+name: screenmqtt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmilyOrg/screenmqtt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmilyOrg/screenmqtt
+identifiers:
+- winget: SmilyOrg.screenmqtt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmilyOrg/screenmqtt
+aliases: []

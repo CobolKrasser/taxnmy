@@ -1,0 +1,11 @@
+key: vvvv/vvvv-gamma
+publisher: vvvv
+name: vvvv gamma
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vvvv/gamma
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vvvv/gamma
+identifiers:
+- winget: vvvv.gamma
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vvvv/gamma
+aliases: []

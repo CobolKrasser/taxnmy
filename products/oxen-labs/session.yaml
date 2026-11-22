@@ -1,0 +1,11 @@
+key: oxen-labs/session
+publisher: oxen-labs
+name: Session
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Session/Session
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Session/Session
+identifiers:
+- winget: Session.Session
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Session/Session
+aliases: []

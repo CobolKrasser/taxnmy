@@ -1,0 +1,11 @@
+key: smoke-turner/vouch
+publisher: smoke-turner
+name: Vouch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmokeTurner/Vouch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmokeTurner/Vouch
+identifiers:
+- winget: SmokeTurner.Vouch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmokeTurner/Vouch
+aliases: []

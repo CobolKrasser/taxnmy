@@ -1,0 +1,11 @@
+key: cojudge/cojudge
+publisher: cojudge
+name: Cojudge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cojudge/Cojudge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cojudge/Cojudge
+identifiers:
+- winget: Cojudge.Cojudge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cojudge/Cojudge
+aliases: []

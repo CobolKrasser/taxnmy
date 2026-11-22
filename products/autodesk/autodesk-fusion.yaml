@@ -1,0 +1,11 @@
+key: autodesk/autodesk-fusion
+publisher: autodesk
+name: Autodesk Fusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/Fusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/Fusion
+identifiers:
+- winget: Autodesk.Fusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/Fusion
+aliases: []

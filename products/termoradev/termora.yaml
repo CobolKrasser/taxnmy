@@ -1,0 +1,11 @@
+key: termoradev/termora
+publisher: termoradev
+name: Termora
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TermoraDev/Termora
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TermoraDev/Termora
+identifiers:
+- winget: TermoraDev.Termora
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TermoraDev/Termora
+aliases: []

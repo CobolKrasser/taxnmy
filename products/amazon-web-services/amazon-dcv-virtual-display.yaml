@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-dcv-virtual-display
+publisher: amazon-web-services
+name: Amazon DCV Virtual Display
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NICESoftware/AmazonDCVVirtualDisplay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NICESoftware/AmazonDCVVirtualDisplay
+identifiers:
+- winget: NICESoftware.AmazonDCVVirtualDisplay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NICESoftware/AmazonDCVVirtualDisplay
+aliases: []

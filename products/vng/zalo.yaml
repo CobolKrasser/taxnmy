@@ -1,0 +1,11 @@
+key: vng/zalo
+publisher: vng
+name: Zalo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VNGCorp/Zalo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VNGCorp/Zalo
+identifiers:
+- winget: VNGCorp.Zalo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VNGCorp/Zalo
+aliases: []

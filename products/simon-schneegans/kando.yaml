@@ -1,0 +1,11 @@
+key: simon-schneegans/kando
+publisher: simon-schneegans
+name: Kando
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KandoMenu/Kando
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KandoMenu/Kando
+identifiers:
+- winget: KandoMenu.Kando
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KandoMenu/Kando
+aliases: []

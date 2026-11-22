@@ -1,0 +1,11 @@
+key: japplis/m2-repo-cleaner
+publisher: japplis
+name: M2 Repo Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/M2RepoCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/M2RepoCleaner
+identifiers:
+- winget: Japplis.M2RepoCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/M2RepoCleaner
+aliases: []

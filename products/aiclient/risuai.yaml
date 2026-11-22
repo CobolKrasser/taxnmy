@@ -1,0 +1,11 @@
+key: aiclient/risuai
+publisher: aiclient
+name: RisuAI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kwaroran/RisuAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kwaroran/RisuAI
+identifiers:
+- winget: kwaroran.RisuAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kwaroran/RisuAI
+aliases: []

@@ -1,0 +1,11 @@
+key: proton/proton-mail
+publisher: proton
+name: Proton Mail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMail
+identifiers:
+- winget: Proton.ProtonMail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMail
+aliases: []

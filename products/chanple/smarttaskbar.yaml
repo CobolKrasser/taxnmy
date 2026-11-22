@@ -1,0 +1,11 @@
+key: chanple/smarttaskbar
+publisher: chanple
+name: SmartTaskbar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chanplecai/smarttaskbar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chanplecai/smarttaskbar
+identifiers:
+- winget: chanplecai.smarttaskbar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chanplecai/smarttaskbar
+aliases: []

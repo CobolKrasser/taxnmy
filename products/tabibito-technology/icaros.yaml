@@ -1,0 +1,11 @@
+key: tabibito-technology/icaros
+publisher: tabibito-technology
+name: Icaros
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xanashi/Icaros
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xanashi/Icaros
+identifiers:
+- winget: Xanashi.Icaros
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xanashi/Icaros
+aliases: []

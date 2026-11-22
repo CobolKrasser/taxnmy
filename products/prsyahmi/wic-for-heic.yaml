@@ -1,0 +1,11 @@
+key: prsyahmi/wic-for-heic
+publisher: prsyahmi
+name: WIC for HEIC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prsyahmi/WicHeic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prsyahmi/WicHeic
+identifiers:
+- winget: prsyahmi.WicHeic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prsyahmi/WicHeic
+aliases: []

@@ -1,0 +1,11 @@
+key: firedaemon/firedaemon-openssl
+publisher: firedaemon
+name: FireDaemon OpenSSL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/OpenSSL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/OpenSSL
+identifiers:
+- winget: FireDaemon.OpenSSL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/OpenSSL
+aliases: []

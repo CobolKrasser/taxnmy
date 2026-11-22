@@ -1,0 +1,11 @@
+key: blocknet-project/blocknet
+publisher: blocknet-project
+name: Blocknet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blocknetproject/Blocknet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blocknetproject/Blocknet
+identifiers:
+- winget: Blocknetproject.Blocknet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blocknetproject/Blocknet
+aliases: []

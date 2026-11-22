@@ -1,0 +1,11 @@
+key: d-tools/d-tools-system-integrator
+publisher: d-tools
+name: D-Tools System Integrator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Tools/D-ToolsSystemIntegrator/24
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Tools/D-ToolsSystemIntegrator/24
+identifiers:
+- winget: D-Tools.D-ToolsSystemIntegrator.24
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Tools/D-ToolsSystemIntegrator/24
+aliases: []

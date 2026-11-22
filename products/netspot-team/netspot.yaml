@@ -1,0 +1,11 @@
+key: netspot-team/netspot
+publisher: netspot-team
+name: NetSpot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSpot/NetSpot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSpot/NetSpot
+identifiers:
+- winget: NetSpot.NetSpot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSpot/NetSpot
+aliases: []

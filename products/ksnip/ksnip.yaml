@@ -1,0 +1,11 @@
+key: ksnip/ksnip
+publisher: ksnip
+name: ksnip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/ksnip/ksnip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/ksnip/ksnip
+identifiers:
+- winget: ksnip.ksnip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/ksnip/ksnip
+aliases: []

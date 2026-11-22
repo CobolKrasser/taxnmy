@@ -1,0 +1,11 @@
+key: acorn-labs/gptscript
+publisher: acorn-labs
+name: gptscript
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gptscript-ai/gptscript
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gptscript-ai/gptscript
+identifiers:
+- winget: gptscript-ai.gptscript
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gptscript-ai/gptscript
+aliases: []

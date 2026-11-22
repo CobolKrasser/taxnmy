@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-snowflake
+publisher: premiumsoft-cybertech
+name: Navicat for Snowflake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatSnowflake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatSnowflake
+identifiers:
+- winget: PremiumSoft.NavicatSnowflake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatSnowflake
+aliases: []

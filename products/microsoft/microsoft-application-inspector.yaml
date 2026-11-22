@@ -1,0 +1,11 @@
+key: microsoft/microsoft-application-inspector
+publisher: microsoft
+name: Microsoft Application Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ApplicationInspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ApplicationInspector
+identifiers:
+- winget: Microsoft.ApplicationInspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ApplicationInspector
+aliases: []

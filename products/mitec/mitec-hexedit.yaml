@@ -1,0 +1,11 @@
+key: mitec/mitec-hexedit
+publisher: mitec
+name: MiTeC HexEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/HexEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/HexEdit
+identifiers:
+- winget: MiTeC.HexEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/HexEdit
+aliases: []

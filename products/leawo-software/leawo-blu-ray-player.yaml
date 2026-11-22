@@ -1,0 +1,11 @@
+key: leawo-software/leawo-blu-ray-player
+publisher: leawo-software
+name: Leawo Blu-ray Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeawoSoftware/Blu-rayPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeawoSoftware/Blu-rayPlayer
+identifiers:
+- winget: LeawoSoftware.Blu-rayPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeawoSoftware/Blu-rayPlayer
+aliases: []

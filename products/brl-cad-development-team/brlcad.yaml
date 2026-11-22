@@ -1,0 +1,11 @@
+key: brl-cad-development-team/brlcad
+publisher: brl-cad-development-team
+name: BRLCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRL-CAD/brlcad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRL-CAD/brlcad
+identifiers:
+- winget: BRL-CAD.brlcad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRL-CAD/brlcad
+aliases: []

@@ -1,0 +1,11 @@
+key: code-systems/turbo-net-desktop
+publisher: code-systems
+name: Turbo.net Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSystems/Turbo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSystems/Turbo
+identifiers:
+- winget: CodeSystems.Turbo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSystems/Turbo
+aliases: []

@@ -1,0 +1,11 @@
+key: flexense-computing-systems/diskpulse-pro
+publisher: flexense-computing-systems
+name: DiskPulse Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskPulsePro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskPulsePro
+identifiers:
+- winget: Flexense.DiskPulsePro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskPulsePro
+aliases: []

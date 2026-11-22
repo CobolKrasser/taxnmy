@@ -1,0 +1,11 @@
+key: quba/quba
+publisher: quba
+name: Quba
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZugferdCommunity/QubaViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZugferdCommunity/QubaViewer
+identifiers:
+- winget: ZugferdCommunity.QubaViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZugferdCommunity/QubaViewer
+aliases: []

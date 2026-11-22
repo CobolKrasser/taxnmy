@@ -1,0 +1,11 @@
+key: mathpix/mathpix-snipping-tool
+publisher: mathpix
+name: Mathpix Snipping Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mathpix/MathpixSnippingTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mathpix/MathpixSnippingTool
+identifiers:
+- winget: Mathpix.MathpixSnippingTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mathpix/MathpixSnippingTool
+aliases: []

@@ -1,0 +1,11 @@
+key: xidicone-p-l/agent-svn
+publisher: xidicone-p-l
+name: Agent SVN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xidicone/AgentSVN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xidicone/AgentSVN
+identifiers:
+- winget: Xidicone.AgentSVN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xidicone/AgentSVN
+aliases: []

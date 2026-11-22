@@ -1,0 +1,11 @@
+key: aserto/check2decision
+publisher: aserto
+name: Check2Decision
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/Check2Decision
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/Check2Decision
+identifiers:
+- winget: Aserto.Check2Decision
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/Check2Decision
+aliases: []

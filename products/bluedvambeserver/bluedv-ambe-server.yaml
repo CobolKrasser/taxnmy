@@ -1,0 +1,11 @@
+key: bluedvambeserver/bluedv-ambe-server
+publisher: bluedvambeserver
+name: BlueDV AMBE Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PA7LIM/BlueDV/AMBEServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PA7LIM/BlueDV/AMBEServer
+identifiers:
+- winget: PA7LIM.BlueDV.AMBEServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PA7LIM/BlueDV/AMBEServer
+aliases: []

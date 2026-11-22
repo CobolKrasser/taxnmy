@@ -1,0 +1,11 @@
+key: nirsoft/csvfileview
+publisher: nirsoft
+name: CSVFileView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/CSVFileView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/CSVFileView
+identifiers:
+- winget: NirSoft.CSVFileView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/CSVFileView
+aliases: []

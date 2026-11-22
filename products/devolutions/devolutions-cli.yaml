@@ -1,0 +1,11 @@
+key: devolutions/devolutions-cli
+publisher: devolutions
+name: Devolutions CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Cli
+identifiers:
+- winget: Devolutions.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Cli
+aliases: []

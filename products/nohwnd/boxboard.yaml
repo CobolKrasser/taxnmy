@@ -1,0 +1,11 @@
+key: nohwnd/boxboard
+publisher: nohwnd
+name: Boxboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nohwnd/Boxboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nohwnd/Boxboard
+identifiers:
+- winget: nohwnd.Boxboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nohwnd/Boxboard
+aliases: []

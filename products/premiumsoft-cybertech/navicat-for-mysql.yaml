@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-mysql
+publisher: premiumsoft-cybertech
+name: Navicat for MySQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMySQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMySQL
+identifiers:
+- winget: PremiumSoft.NavicatMySQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMySQL
+aliases: []

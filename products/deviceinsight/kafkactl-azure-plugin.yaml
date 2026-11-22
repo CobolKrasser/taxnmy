@@ -1,0 +1,11 @@
+key: deviceinsight/kafkactl-azure-plugin
+publisher: deviceinsight
+name: kafkactl-azure-plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl-azure-plugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl-azure-plugin
+identifiers:
+- winget: deviceinsight.kafkactl-azure-plugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl-azure-plugin
+aliases: []

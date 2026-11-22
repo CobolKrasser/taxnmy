@@ -1,0 +1,11 @@
+key: reiner-sct/cyberjack-driverpackage
+publisher: reiner-sct
+name: cyberJack DriverPackage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REINERSCT/cyberJackDriverPackage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REINERSCT/cyberJackDriverPackage
+identifiers:
+- winget: REINERSCT.cyberJackDriverPackage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REINERSCT/cyberJackDriverPackage
+aliases: []

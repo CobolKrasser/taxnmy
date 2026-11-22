@@ -1,0 +1,13 @@
+key: sdl-limited-a-part-of-the-rws-holdings-plc-group/trados-studio
+publisher: sdl-limited-a-part-of-the-rws-holdings-plc-group
+name: Trados Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2022
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2022
+identifiers:
+- winget: Trados.TradosStudio.2022
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2022
+- winget: Trados.TradosStudio.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2024
+aliases: []

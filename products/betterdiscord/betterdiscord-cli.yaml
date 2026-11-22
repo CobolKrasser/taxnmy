@@ -1,0 +1,11 @@
+key: betterdiscord/betterdiscord-cli
+publisher: betterdiscord
+name: BetterDiscord CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/betterdiscord/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/betterdiscord/cli
+identifiers:
+- winget: betterdiscord.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/betterdiscord/cli
+aliases: []

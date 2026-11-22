@@ -1,0 +1,11 @@
+key: lenovo/suhelper
+publisher: lenovo
+name: SUHelper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/SUHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/SUHelper
+identifiers:
+- winget: Lenovo.SUHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/SUHelper
+aliases: []

@@ -1,0 +1,11 @@
+key: interceptsuite/interceptsuite-pro
+publisher: interceptsuite
+name: InterceptSuite Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/InterceptSuite/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/InterceptSuite/Pro
+identifiers:
+- winget: InterceptSuite.InterceptSuite.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/InterceptSuite/Pro
+aliases: []

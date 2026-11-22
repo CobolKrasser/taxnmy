@@ -1,0 +1,11 @@
+key: concept2/concept2-utility
+publisher: concept2
+name: Concept2 Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Concept2/Utility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Concept2/Utility
+identifiers:
+- winget: Concept2.Utility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Concept2/Utility
+aliases: []

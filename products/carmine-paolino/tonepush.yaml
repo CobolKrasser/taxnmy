@@ -1,0 +1,11 @@
+key: carmine-paolino/tonepush
+publisher: carmine-paolino
+name: TonePush
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/crmne/TonePush
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/crmne/TonePush
+identifiers:
+- winget: crmne.TonePush
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/crmne/TonePush
+aliases: []

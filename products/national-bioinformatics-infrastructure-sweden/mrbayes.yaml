@@ -1,0 +1,11 @@
+key: national-bioinformatics-infrastructure-sweden/mrbayes
+publisher: national-bioinformatics-infrastructure-sweden
+name: MrBayes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NBIS/MrBayes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NBIS/MrBayes
+identifiers:
+- winget: NBIS.MrBayes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NBIS/MrBayes
+aliases: []

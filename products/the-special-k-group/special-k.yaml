@@ -1,0 +1,11 @@
+key: the-special-k-group/special-k
+publisher: the-special-k-group
+name: Special K
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecialK/SpecialK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecialK/SpecialK
+identifiers:
+- winget: SpecialK.SpecialK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecialK/SpecialK
+aliases: []

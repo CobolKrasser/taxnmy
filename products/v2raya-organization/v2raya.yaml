@@ -1,0 +1,11 @@
+key: v2raya-organization/v2raya
+publisher: v2raya-organization
+name: v2rayA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2rayA/v2rayA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2rayA/v2rayA
+identifiers:
+- winget: v2rayA.v2rayA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2rayA/v2rayA
+aliases: []

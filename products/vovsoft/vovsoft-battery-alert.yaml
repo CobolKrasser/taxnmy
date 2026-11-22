@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-battery-alert
+publisher: vovsoft
+name: Vovsoft Battery Alert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatteryAlert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatteryAlert
+identifiers:
+- winget: VovSoft.BatteryAlert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatteryAlert
+aliases: []

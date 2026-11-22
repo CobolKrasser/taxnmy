@@ -1,0 +1,11 @@
+key: sound-exchange-ng/sox-ng
+publisher: sound-exchange-ng
+name: SoX_ng
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sox_ng/sox_ng
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sox_ng/sox_ng
+identifiers:
+- winget: sox_ng.sox_ng
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sox_ng/sox_ng
+aliases: []

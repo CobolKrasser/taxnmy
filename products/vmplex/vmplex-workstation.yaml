@@ -1,0 +1,11 @@
+key: vmplex/vmplex-workstation
+publisher: vmplex
+name: VMPlex Workstation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMPlex/VMPlex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMPlex/VMPlex
+identifiers:
+- winget: VMPlex.VMPlex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMPlex/VMPlex
+aliases: []

@@ -1,0 +1,11 @@
+key: sillanum-software/visual-analyser-version
+publisher: sillanum-software
+name: Visual Analyser version
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SillanumSoftware/VisualAnalyser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SillanumSoftware/VisualAnalyser
+identifiers:
+- winget: SillanumSoftware.VisualAnalyser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SillanumSoftware/VisualAnalyser
+aliases: []

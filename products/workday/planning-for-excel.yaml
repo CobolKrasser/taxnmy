@@ -1,0 +1,11 @@
+key: workday/planning-for-excel
+publisher: workday
+name: Planning for Excel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorkdayInc/PlanningforExcel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorkdayInc/PlanningforExcel
+identifiers:
+- winget: WorkdayInc.PlanningforExcel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorkdayInc/PlanningforExcel
+aliases: []

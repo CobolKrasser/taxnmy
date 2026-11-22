@@ -1,0 +1,11 @@
+key: chuccp/win-sshpass
+publisher: chuccp
+name: win-sshpass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chuccp/win-sshpass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chuccp/win-sshpass
+identifiers:
+- winget: chuccp.win-sshpass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chuccp/win-sshpass
+aliases: []

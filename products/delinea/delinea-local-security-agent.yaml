@@ -1,0 +1,11 @@
+key: delinea/delinea-local-security-agent
+publisher: delinea
+name: Delinea Local Security Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticLocalSecurityAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticLocalSecurityAgent
+identifiers:
+- winget: Delinea.ThycoticLocalSecurityAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticLocalSecurityAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: cloudops/k8studio
+publisher: cloudops
+name: K8Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudOpsSL/K8Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudOpsSL/K8Studio
+identifiers:
+- winget: CloudOpsSL.K8Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudOpsSL/K8Studio
+aliases: []

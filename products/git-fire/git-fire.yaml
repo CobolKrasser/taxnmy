@@ -1,0 +1,11 @@
+key: git-fire/git-fire
+publisher: git-fire
+name: git-fire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-fire/git-fire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-fire/git-fire
+identifiers:
+- winget: git-fire.git-fire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-fire/git-fire
+aliases: []

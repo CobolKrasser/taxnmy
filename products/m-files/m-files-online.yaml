@@ -1,0 +1,11 @@
+key: m-files/m-files-online
+publisher: m-files
+name: M-Files Online
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M-FilesCorporation/M-FilesOnline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M-FilesCorporation/M-FilesOnline
+identifiers:
+- winget: M-FilesCorporation.M-FilesOnline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M-FilesCorporation/M-FilesOnline
+aliases: []

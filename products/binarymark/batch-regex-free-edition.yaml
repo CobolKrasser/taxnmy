@@ -1,0 +1,11 @@
+key: binarymark/batch-regex-free-edition
+publisher: binarymark
+name: Batch RegEx Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchRegEx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchRegEx
+identifiers:
+- winget: BinaryMark.BatchRegEx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchRegEx
+aliases: []

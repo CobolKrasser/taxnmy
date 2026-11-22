@@ -1,0 +1,11 @@
+key: xxnuo/open-coreui
+publisher: xxnuo
+name: Open CoreUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xxnuo/OpenCoreUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xxnuo/OpenCoreUI
+identifiers:
+- winget: xxnuo.OpenCoreUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xxnuo/OpenCoreUI
+aliases: []

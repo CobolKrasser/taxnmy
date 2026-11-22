@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:github/fluent/fluent-bit
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/fluent-bit.md
+- winget: Chronosphere.FluentBit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chronosphere/FluentBit
 aliases: []

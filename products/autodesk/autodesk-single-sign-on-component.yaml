@@ -1,0 +1,11 @@
+key: autodesk/autodesk-single-sign-on-component
+publisher: autodesk
+name: Autodesk Single Sign On Component
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/SingleSignOn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/SingleSignOn
+identifiers:
+- winget: Autodesk.SingleSignOn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/SingleSignOn
+aliases: []

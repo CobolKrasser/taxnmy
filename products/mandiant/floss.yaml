@@ -1,0 +1,11 @@
+key: mandiant/floss
+publisher: mandiant
+name: FLOSS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mandiant/FLOSS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mandiant/FLOSS
+identifiers:
+- winget: Mandiant.FLOSS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mandiant/FLOSS
+aliases: []

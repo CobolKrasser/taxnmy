@@ -1,0 +1,11 @@
+key: usama-ejaz/peekwin
+publisher: usama-ejaz
+name: peekwin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UsamaEjaz/PeekWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UsamaEjaz/PeekWin
+identifiers:
+- winget: UsamaEjaz.PeekWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UsamaEjaz/PeekWin
+aliases: []

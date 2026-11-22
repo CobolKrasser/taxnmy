@@ -1,0 +1,11 @@
+key: regin-larsen/switcheroo
+publisher: regin-larsen
+name: Switcheroo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kvakulo/switcheroo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kvakulo/switcheroo
+identifiers:
+- winget: kvakulo.switcheroo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kvakulo/switcheroo
+aliases: []

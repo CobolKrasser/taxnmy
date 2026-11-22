@@ -1,0 +1,11 @@
+key: minh-duy-utility/windows-network-manager
+publisher: minh-duy-utility
+name: Windows Network Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/WinNetManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/WinNetManager
+identifiers:
+- winget: Buffer124.WinNetManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/WinNetManager
+aliases: []

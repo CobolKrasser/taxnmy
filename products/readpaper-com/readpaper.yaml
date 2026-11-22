@@ -1,0 +1,11 @@
+key: readpaper-com/readpaper
+publisher: readpaper-com
+name: ReadPaper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDEA/ReadPaper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDEA/ReadPaper
+identifiers:
+- winget: IDEA.ReadPaper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDEA/ReadPaper
+aliases: []

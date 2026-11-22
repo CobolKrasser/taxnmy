@@ -1,0 +1,11 @@
+key: mendeley/mendeley-reference-manager
+publisher: mendeley
+name: Mendeley Reference Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elsevier/MendeleyReferenceManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elsevier/MendeleyReferenceManager
+identifiers:
+- winget: Elsevier.MendeleyReferenceManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elsevier/MendeleyReferenceManager
+aliases: []

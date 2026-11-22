@@ -1,0 +1,11 @@
+key: objective/objective-redact
+publisher: objective
+name: Objective Redact
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Objective/Redact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Objective/Redact
+identifiers:
+- winget: Objective.Redact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Objective/Redact
+aliases: []

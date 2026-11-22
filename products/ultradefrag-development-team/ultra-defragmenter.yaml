@@ -1,0 +1,11 @@
+key: ultradefrag-development-team/ultra-defragmenter
+publisher: ultradefrag-development-team
+name: Ultra Defragmenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UltraDefrag/UltraDefrag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UltraDefrag/UltraDefrag
+identifiers:
+- winget: UltraDefrag.UltraDefrag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UltraDefrag/UltraDefrag
+aliases: []

@@ -1,0 +1,11 @@
+key: pmqueiroz/nova
+publisher: pmqueiroz
+name: Nova
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pmqueiroz/Nova
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pmqueiroz/Nova
+identifiers:
+- winget: pmqueiroz.Nova
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pmqueiroz/Nova
+aliases: []

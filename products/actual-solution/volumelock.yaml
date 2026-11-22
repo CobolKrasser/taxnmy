@@ -1,0 +1,11 @@
+key: actual-solution/volumelock
+publisher: actual-solution
+name: VolumeLock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/actualsolution/VolumeLock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/actualsolution/VolumeLock
+identifiers:
+- winget: actualsolution.VolumeLock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/actualsolution/VolumeLock
+aliases: []

@@ -1,0 +1,11 @@
+key: yubico/yubikey-smart-card-minidriver
+publisher: yubico
+name: YubiKey Smart Card Minidriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubiKeySmartCardMinidriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubiKeySmartCardMinidriver
+identifiers:
+- winget: Yubico.YubiKeySmartCardMinidriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubiKeySmartCardMinidriver
+aliases: []

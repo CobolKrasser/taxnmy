@@ -1,0 +1,11 @@
+key: windscribe/windscribe
+publisher: windscribe
+name: Windscribe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Windscribe/Windscribe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Windscribe/Windscribe
+identifiers:
+- winget: Windscribe.Windscribe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Windscribe/Windscribe
+aliases: []

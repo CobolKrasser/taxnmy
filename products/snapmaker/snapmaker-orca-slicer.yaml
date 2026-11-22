@@ -1,0 +1,11 @@
+key: snapmaker/snapmaker-orca-slicer
+publisher: snapmaker
+name: Snapmaker Orca Slicer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/OrcaSlicer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/OrcaSlicer
+identifiers:
+- winget: Snapmaker.OrcaSlicer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/OrcaSlicer
+aliases: []

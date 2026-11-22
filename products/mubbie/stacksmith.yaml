@@ -1,0 +1,11 @@
+key: mubbie/stacksmith
+publisher: mubbie
+name: Stacksmith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mubbie/Stacksmith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mubbie/Stacksmith
+identifiers:
+- winget: Mubbie.Stacksmith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mubbie/Stacksmith
+aliases: []

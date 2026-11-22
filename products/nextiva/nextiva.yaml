@@ -1,0 +1,11 @@
+key: nextiva/nextiva
+publisher: nextiva
+name: Nextiva
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextiva/NextivaONE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextiva/NextivaONE
+identifiers:
+- winget: Nextiva.NextivaONE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextiva/NextivaONE
+aliases: []

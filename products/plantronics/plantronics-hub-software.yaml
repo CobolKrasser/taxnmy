@@ -1,0 +1,11 @@
+key: plantronics/plantronics-hub-software
+publisher: plantronics
+name: Plantronics Hub Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Poly/PlantronicsHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Poly/PlantronicsHub
+identifiers:
+- winget: Poly.PlantronicsHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Poly/PlantronicsHub
+aliases: []

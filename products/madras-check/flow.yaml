@@ -1,0 +1,11 @@
+key: madras-check/flow
+publisher: madras-check
+name: flow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MadrasCheck/flow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MadrasCheck/flow
+identifiers:
+- winget: MadrasCheck.flow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MadrasCheck/flow
+aliases: []

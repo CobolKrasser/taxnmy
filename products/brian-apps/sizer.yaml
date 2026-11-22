@@ -1,0 +1,13 @@
+key: brian-apps/sizer
+publisher: brian-apps
+name: Sizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrianApps/Sizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrianApps/Sizer
+identifiers:
+- winget: BrianApps.Sizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrianApps/Sizer
+- winget: BrianApps.Sizer.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrianApps/Sizer/Dev
+aliases: []

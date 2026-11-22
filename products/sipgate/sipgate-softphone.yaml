@@ -1,0 +1,11 @@
+key: sipgate/sipgate-softphone
+publisher: sipgate
+name: sipgate softphone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sipgate/sipgatesoftphone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sipgate/sipgatesoftphone
+identifiers:
+- winget: sipgate.sipgatesoftphone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sipgate/sipgatesoftphone
+aliases: []

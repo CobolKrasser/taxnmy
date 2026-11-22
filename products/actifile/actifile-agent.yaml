@@ -1,0 +1,11 @@
+key: actifile/actifile-agent
+publisher: actifile
+name: Actifile Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Actifile/ActifileAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Actifile/ActifileAgent
+identifiers:
+- winget: Actifile.ActifileAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Actifile/ActifileAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: midiox-computing/midi-ox
+publisher: midiox-computing
+name: MIDI-OX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JamieOConnell/MIDI-OX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JamieOConnell/MIDI-OX
+identifiers:
+- winget: JamieOConnell.MIDI-OX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JamieOConnell/MIDI-OX
+aliases: []

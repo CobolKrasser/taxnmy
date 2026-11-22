@@ -1,0 +1,11 @@
+key: studio-xid/protopie
+publisher: studio-xid
+name: ProtoPie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioXID/ProtoPie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioXID/ProtoPie
+identifiers:
+- winget: StudioXID.ProtoPie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioXID/ProtoPie
+aliases: []

@@ -1,0 +1,11 @@
+key: litecoin-core-project/litecoin-core
+publisher: litecoin-core-project
+name: Litecoin Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Litecoin/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Litecoin/Core
+identifiers:
+- winget: Litecoin.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Litecoin/Core
+aliases: []

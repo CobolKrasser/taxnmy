@@ -1,0 +1,11 @@
+key: qiagen-aarhus/clc-server-command-line-tools
+publisher: qiagen-aarhus
+name: CLC Server Command Line Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QIAGEN/CLCServerCommandLineTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QIAGEN/CLCServerCommandLineTools
+identifiers:
+- winget: QIAGEN.CLCServerCommandLineTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QIAGEN/CLCServerCommandLineTools
+aliases: []

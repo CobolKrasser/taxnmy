@@ -1,0 +1,11 @@
+key: coinomi-holdings/coinomi-wallet
+publisher: coinomi-holdings
+name: Coinomi Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coinomi/CoinomiWallet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coinomi/CoinomiWallet
+identifiers:
+- winget: Coinomi.CoinomiWallet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coinomi/CoinomiWallet
+aliases: []

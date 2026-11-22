@@ -1,0 +1,11 @@
+key: bitwig/bitwig-studio
+publisher: bitwig
+name: Bitwig Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitwig/bitwig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitwig/bitwig
+identifiers:
+- winget: bitwig.bitwig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitwig/bitwig
+aliases: []

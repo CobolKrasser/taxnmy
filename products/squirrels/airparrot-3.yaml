@@ -1,0 +1,11 @@
+key: squirrels/airparrot-3
+publisher: squirrels
+name: AirParrot 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/AirParrot3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/AirParrot3
+identifiers:
+- winget: Squirrels.AirParrot3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/AirParrot3
+aliases: []

@@ -1,0 +1,11 @@
+key: sunfish-shogi/shogihome
+publisher: sunfish-shogi
+name: ShogiHome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sunfish-shogi/shogihome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sunfish-shogi/shogihome
+identifiers:
+- winget: sunfish-shogi.shogihome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sunfish-shogi/shogihome
+aliases: []

@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-partition-recovery
+publisher: lsoft-technologies
+name: Active@ Partition Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActivePartitionRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActivePartitionRecovery
+identifiers:
+- winget: LSoftTechnologies.ActivePartitionRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActivePartitionRecovery
+aliases: []

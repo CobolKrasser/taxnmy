@@ -1,0 +1,11 @@
+key: sebastian-thiel/disk-usage-analyzer
+publisher: sebastian-thiel
+name: Disk Usage Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Byron/dua-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Byron/dua-cli
+identifiers:
+- winget: Byron.dua-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Byron/dua-cli
+aliases: []

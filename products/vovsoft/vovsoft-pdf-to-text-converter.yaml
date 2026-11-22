@@ -1,0 +1,13 @@
+key: vovsoft/vovsoft-pdf-to-text-converter
+publisher: vovsoft
+name: Vovsoft PDF to Text Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFtoTextConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFtoTextConverter
+identifiers:
+- winget: VovSoft.PDFtoTextConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFtoTextConverter
+- winget: VovSoft.TextToPDFConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToPDFConverter
+aliases: []

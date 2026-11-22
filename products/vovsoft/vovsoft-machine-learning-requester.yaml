@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-machine-learning-requester
+publisher: vovsoft
+name: Vovsoft Machine Learning Requester
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MachineLearningRequester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MachineLearningRequester
+identifiers:
+- winget: VovSoft.MachineLearningRequester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MachineLearningRequester
+aliases: []

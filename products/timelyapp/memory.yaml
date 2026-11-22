@@ -1,0 +1,11 @@
+key: timelyapp/memory
+publisher: timelyapp
+name: Memory
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timely/Memory
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timely/Memory
+identifiers:
+- winget: Timely.Memory
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timely/Memory
+aliases: []

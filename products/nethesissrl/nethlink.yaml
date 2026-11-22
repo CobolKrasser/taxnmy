@@ -1,0 +1,11 @@
+key: nethesissrl/nethlink
+publisher: nethesissrl
+name: NethLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethesis/NethLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethesis/NethLink
+identifiers:
+- winget: Nethesis.NethLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethesis/NethLink
+aliases: []

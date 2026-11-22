@@ -1,0 +1,11 @@
+key: brother-industries/brother-iprint-and-scan
+publisher: brother-industries
+name: Brother iPrint&Scan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brother/iPrintScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brother/iPrintScan
+identifiers:
+- winget: Brother.iPrintScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brother/iPrintScan
+aliases: []

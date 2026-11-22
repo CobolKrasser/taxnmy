@@ -1,0 +1,11 @@
+key: sigil-ebook/sigil
+publisher: sigil-ebook
+name: Sigil
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigil-Ebook/Sigil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigil-Ebook/Sigil
+identifiers:
+- winget: Sigil-Ebook.Sigil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigil-Ebook/Sigil
+aliases: []

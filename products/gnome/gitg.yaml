@@ -1,0 +1,11 @@
+key: gnome/gitg
+publisher: gnome
+name: gitg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gitg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gitg
+identifiers:
+- winget: gnome.gitg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gitg
+aliases: []

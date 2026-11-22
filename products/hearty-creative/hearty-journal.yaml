@@ -1,0 +1,11 @@
+key: hearty-creative/hearty-journal
+publisher: hearty-creative
+name: Hearty Journal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hearty/HeartyJournal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hearty/HeartyJournal
+identifiers:
+- winget: Hearty.HeartyJournal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hearty/HeartyJournal
+aliases: []

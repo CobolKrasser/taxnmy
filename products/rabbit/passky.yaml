@@ -1,0 +1,11 @@
+key: rabbit/passky
+publisher: rabbit
+name: Passky
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RabbitCompany/Passky
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RabbitCompany/Passky
+identifiers:
+- winget: RabbitCompany.Passky
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RabbitCompany/Passky
+aliases: []

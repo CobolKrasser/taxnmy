@@ -1,0 +1,11 @@
+key: fork/fork-a-fast-and-friendly-git-client
+publisher: fork
+name: Fork - a fast and friendly git client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fork/Fork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fork/Fork
+identifiers:
+- winget: Fork.Fork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fork/Fork
+aliases: []

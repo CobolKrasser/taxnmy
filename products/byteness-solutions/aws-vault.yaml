@@ -1,0 +1,11 @@
+key: byteness-solutions/aws-vault
+publisher: byteness-solutions
+name: AWS Vault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteNess/AWSVault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteNess/AWSVault
+identifiers:
+- winget: ByteNess.AWSVault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteNess/AWSVault
+aliases: []

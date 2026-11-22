@@ -1,0 +1,11 @@
+key: jackaudio-org/jack2
+publisher: jackaudio-org
+name: JACK2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jackaudio/JACK2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jackaudio/JACK2
+identifiers:
+- winget: Jackaudio.JACK2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jackaudio/JACK2
+aliases: []

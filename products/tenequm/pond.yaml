@@ -1,0 +1,11 @@
+key: tenequm/pond
+publisher: tenequm
+name: pond
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tenequm/pond
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tenequm/pond
+identifiers:
+- winget: tenequm.pond
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tenequm/pond
+aliases: []

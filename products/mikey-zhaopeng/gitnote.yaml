@@ -1,0 +1,11 @@
+key: mikey-zhaopeng/gitnote
+publisher: mikey-zhaopeng
+name: GitNote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhaopengme/gitnote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhaopengme/gitnote
+identifiers:
+- winget: zhaopengme.gitnote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhaopengme/gitnote
+aliases: []

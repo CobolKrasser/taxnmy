@@ -1,0 +1,11 @@
+key: cjwdev/group-manager-free-edition
+publisher: cjwdev
+name: Group Manager Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/GroupManager/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/GroupManager/Free
+identifiers:
+- winget: Cjwdev.GroupManager.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/GroupManager/Free
+aliases: []

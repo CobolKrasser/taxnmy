@@ -1,0 +1,11 @@
+key: maxcut-software/maxcut
+publisher: maxcut-software
+name: MaxCut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxCut/MaxCut
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxCut/MaxCut
+identifiers:
+- winget: MaxCut.MaxCut
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxCut/MaxCut
+aliases: []

@@ -1,0 +1,11 @@
+key: met-mechatronics-designed/mcad
+publisher: met-mechatronics-designed
+name: MCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MET/MCAD2026
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MET/MCAD2026
+identifiers:
+- winget: MET.MCAD2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MET/MCAD2026
+aliases: []

@@ -1,0 +1,11 @@
+key: amekoproject/ameko
+publisher: amekoproject
+name: Ameko
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmekoProject/Ameko
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmekoProject/Ameko
+identifiers:
+- winget: AmekoProject.Ameko
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmekoProject/Ameko
+aliases: []

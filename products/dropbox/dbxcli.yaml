@@ -1,0 +1,11 @@
+key: dropbox/dbxcli
+publisher: dropbox
+name: dbxcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/dbxcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/dbxcli
+identifiers:
+- winget: Dropbox.dbxcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/dbxcli
+aliases: []

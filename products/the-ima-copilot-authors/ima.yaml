@@ -1,0 +1,11 @@
+key: the-ima-copilot-authors/ima
+publisher: the-ima-copilot-authors
+name: ima
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/ima-copilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/ima-copilot
+identifiers:
+- winget: Tencent.ima-copilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/ima-copilot
+aliases: []

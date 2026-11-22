@@ -1,0 +1,11 @@
+key: steelseries/steelseries-engine
+publisher: steelseries
+name: SteelSeries Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/SteelSeriesEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/SteelSeriesEngine
+identifiers:
+- winget: SteelSeries.SteelSeriesEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/SteelSeriesEngine
+aliases: []

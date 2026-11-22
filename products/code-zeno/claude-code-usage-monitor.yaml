@@ -1,0 +1,11 @@
+key: code-zeno/claude-code-usage-monitor
+publisher: code-zeno
+name: Claude Code Usage Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeZeno/ClaudeCodeUsageMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeZeno/ClaudeCodeUsageMonitor
+identifiers:
+- winget: CodeZeno.ClaudeCodeUsageMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeZeno/ClaudeCodeUsageMonitor
+aliases: []

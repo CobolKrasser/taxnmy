@@ -1,0 +1,11 @@
+key: necdet-sanli/eyerest
+publisher: necdet-sanli
+name: EyeRest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NecdetSanli/EyeRest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NecdetSanli/EyeRest
+identifiers:
+- winget: NecdetSanli.EyeRest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NecdetSanli/EyeRest
+aliases: []

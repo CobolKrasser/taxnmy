@@ -1,0 +1,11 @@
+key: fabio-spampinato/notable
+publisher: fabio-spampinato
+name: Notable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/notable/notable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/notable/notable
+identifiers:
+- winget: notable.notable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/notable/notable
+aliases: []

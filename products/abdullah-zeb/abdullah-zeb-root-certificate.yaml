@@ -1,0 +1,11 @@
+key: abdullah-zeb/abdullah-zeb-root-certificate
+publisher: abdullah-zeb
+name: Abdullah Zeb Root Certificate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbdullahZeb/PPMCertificate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbdullahZeb/PPMCertificate
+identifiers:
+- winget: AbdullahZeb.PPMCertificate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbdullahZeb/PPMCertificate
+aliases: []

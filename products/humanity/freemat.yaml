@@ -1,0 +1,11 @@
+key: humanity/freemat
+publisher: humanity
+name: FreeMat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeMat/FreeMat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeMat/FreeMat
+identifiers:
+- winget: FreeMat.FreeMat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeMat/FreeMat
+aliases: []

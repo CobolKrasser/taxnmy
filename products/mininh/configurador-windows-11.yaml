@@ -1,0 +1,11 @@
+key: mininh/configurador-windows-11
+publisher: mininh
+name: Configurador Windows 11
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mininh/ConfiguradorWindows11
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mininh/ConfiguradorWindows11
+identifiers:
+- winget: mininh.ConfiguradorWindows11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mininh/ConfiguradorWindows11
+aliases: []

@@ -1,0 +1,11 @@
+key: revopoint/revo-scan-5-metrox
+publisher: revopoint
+name: Revo Scan 5 MetroX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoScan/MetroX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoScan/MetroX
+identifiers:
+- winget: Revopoint.RevoScan.MetroX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoScan/MetroX
+aliases: []

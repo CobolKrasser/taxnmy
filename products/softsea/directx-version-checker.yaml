@@ -1,0 +1,11 @@
+key: softsea/directx-version-checker
+publisher: softsea
+name: DirectX Version Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DirectXVersionChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DirectXVersionChecker
+identifiers:
+- winget: SoftSea.DirectXVersionChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DirectXVersionChecker
+aliases: []

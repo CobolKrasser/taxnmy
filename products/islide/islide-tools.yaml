@@ -1,0 +1,11 @@
+key: islide/islide-tools
+publisher: islide
+name: iSlide Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iSlide/iSlide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iSlide/iSlide
+identifiers:
+- winget: iSlide.iSlide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iSlide/iSlide
+aliases: []

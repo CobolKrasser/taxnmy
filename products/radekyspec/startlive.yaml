@@ -1,0 +1,11 @@
+key: radekyspec/startlive
+publisher: radekyspec
+name: StartLive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Radekyspec/StartLive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Radekyspec/StartLive
+identifiers:
+- winget: Radekyspec.StartLive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Radekyspec/StartLive
+aliases: []

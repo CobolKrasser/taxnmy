@@ -1,0 +1,11 @@
+key: refractored/tiny-clips
+publisher: refractored
+name: Tiny Clips
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Refractored/TinyClips
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Refractored/TinyClips
+identifiers:
+- winget: Refractored.TinyClips
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Refractored/TinyClips
+aliases: []

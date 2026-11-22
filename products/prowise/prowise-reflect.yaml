@@ -1,0 +1,11 @@
+key: prowise/prowise-reflect
+publisher: prowise
+name: Prowise Reflect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/ProwiseReflect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/ProwiseReflect
+identifiers:
+- winget: Prowise.ProwiseReflect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/ProwiseReflect
+aliases: []

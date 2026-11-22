@@ -1,0 +1,11 @@
+key: box/box-sync
+publisher: box
+name: Box Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxSync
+identifiers:
+- winget: Box.BoxSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxSync
+aliases: []

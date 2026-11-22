@@ -1,0 +1,11 @@
+key: qforce/docfetcher
+publisher: qforce
+name: DocFetcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qforce/DocFetcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qforce/DocFetcher
+identifiers:
+- winget: qforce.DocFetcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qforce/DocFetcher
+aliases: []

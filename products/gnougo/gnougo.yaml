@@ -1,0 +1,11 @@
+key: gnougo/gnougo
+publisher: gnougo
+name: GnOuGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnOuGo/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnOuGo/Agent
+identifiers:
+- winget: GnOuGo.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnOuGo/Agent
+aliases: []

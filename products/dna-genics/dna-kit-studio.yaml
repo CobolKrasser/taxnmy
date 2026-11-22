@@ -1,0 +1,11 @@
+key: dna-genics/dna-kit-studio
+publisher: dna-genics
+name: DNA Kit Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DNAGenics/DNAKitStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DNAGenics/DNAKitStudio
+identifiers:
+- winget: DNAGenics.DNAKitStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DNAGenics/DNAKitStudio
+aliases: []

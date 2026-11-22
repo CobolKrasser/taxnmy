@@ -1,0 +1,11 @@
+key: netio-products/netio-discover
+publisher: netio-products
+name: NETIO Discover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETIO/NETIODiscover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETIO/NETIODiscover
+identifiers:
+- winget: NETIO.NETIODiscover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETIO/NETIODiscover
+aliases: []

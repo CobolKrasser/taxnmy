@@ -1,0 +1,11 @@
+key: novaquark/dual-universe
+publisher: novaquark
+name: Dual Universe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novaquark/DualUniverse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novaquark/DualUniverse
+identifiers:
+- winget: Novaquark.DualUniverse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novaquark/DualUniverse
+aliases: []

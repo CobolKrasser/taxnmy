@@ -1,0 +1,11 @@
+key: yubico/yubico-piv-tool
+publisher: yubico
+name: Yubico PIV Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/PIVTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/PIVTool
+identifiers:
+- winget: Yubico.PIVTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/PIVTool
+aliases: []

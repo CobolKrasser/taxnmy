@@ -1,0 +1,11 @@
+key: lollipopkit/serverbox
+publisher: lollipopkit
+name: ServerBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lollipopkit/serverbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lollipopkit/serverbox
+identifiers:
+- winget: lollipopkit.serverbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lollipopkit/serverbox
+aliases: []

@@ -1,0 +1,11 @@
+key: xiaowei-cloud/calendartask
+publisher: xiaowei-cloud
+name: CalendarTask
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoweiCloud/CalendarTask
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoweiCloud/CalendarTask
+identifiers:
+- winget: XiaoweiCloud.CalendarTask
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoweiCloud/CalendarTask
+aliases: []

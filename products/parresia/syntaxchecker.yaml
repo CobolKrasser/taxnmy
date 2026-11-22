@@ -1,0 +1,11 @@
+key: parresia/syntaxchecker
+publisher: parresia
+name: SyntaxChecker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parresia/SyntaxChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parresia/SyntaxChecker
+identifiers:
+- winget: Parresia.SyntaxChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parresia/SyntaxChecker
+aliases: []

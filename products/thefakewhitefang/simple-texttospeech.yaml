@@ -1,0 +1,11 @@
+key: thefakewhitefang/simple-texttospeech
+publisher: thefakewhitefang
+name: Simple-TextToSpeech
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simple/TextToSpeech
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simple/TextToSpeech
+identifiers:
+- winget: Simple.TextToSpeech
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simple/TextToSpeech
+aliases: []

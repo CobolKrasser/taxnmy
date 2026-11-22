@@ -1,0 +1,11 @@
+key: famatech/radmin-server
+publisher: famatech
+name: Radmin Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/Radmin/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/Radmin/Server
+identifiers:
+- winget: Famatech.Radmin.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/Radmin/Server
+aliases: []

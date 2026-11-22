@@ -1,0 +1,11 @@
+key: resolume/resolume-avenue
+publisher: resolume
+name: Resolume Avenue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resolume/Avenue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resolume/Avenue
+identifiers:
+- winget: Resolume.Avenue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resolume/Avenue
+aliases: []

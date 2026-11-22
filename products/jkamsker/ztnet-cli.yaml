@@ -1,0 +1,11 @@
+key: jkamsker/ztnet-cli
+publisher: jkamsker
+name: ZTNet CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JKamsker/ZTNetCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JKamsker/ZTNetCLI
+identifiers:
+- winget: JKamsker.ZTNetCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JKamsker/ZTNetCLI
+aliases: []

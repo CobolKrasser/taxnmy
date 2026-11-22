@@ -1,0 +1,11 @@
+key: localtv/localtv-remote
+publisher: localtv
+name: LocalTV Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalTV/Remote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalTV/Remote
+identifiers:
+- winget: LocalTV.Remote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalTV/Remote
+aliases: []

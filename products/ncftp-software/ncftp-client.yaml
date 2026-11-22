@@ -1,0 +1,11 @@
+key: ncftp-software/ncftp-client
+publisher: ncftp-software
+name: NcFTP Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NcFTP/NcFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NcFTP/NcFTP
+identifiers:
+- winget: NcFTP.NcFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NcFTP/NcFTP
+aliases: []

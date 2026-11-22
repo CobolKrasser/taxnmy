@@ -1,0 +1,11 @@
+key: snyk/snyk
+publisher: snyk
+name: Snyk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snyk/Snyk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snyk/Snyk
+identifiers:
+- winget: Snyk.Snyk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snyk/Snyk
+aliases: []

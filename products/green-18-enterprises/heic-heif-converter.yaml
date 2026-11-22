@@ -1,0 +1,11 @@
+key: green-18-enterprises/heic-heif-converter
+publisher: green-18-enterprises
+name: HEIC-HEIF Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMDSoftware/HEICConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMDSoftware/HEICConverter
+identifiers:
+- winget: PMDSoftware.HEICConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMDSoftware/HEICConverter
+aliases: []

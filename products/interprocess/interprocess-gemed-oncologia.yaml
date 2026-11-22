@@ -1,0 +1,11 @@
+key: interprocess/interprocess-gemed-oncologia
+publisher: interprocess
+name: Interprocess Gemed Oncologia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Interprocess/GemedOncologia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Interprocess/GemedOncologia
+identifiers:
+- winget: Interprocess.GemedOncologia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Interprocess/GemedOncologia
+aliases: []

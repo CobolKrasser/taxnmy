@@ -1,0 +1,11 @@
+key: silvatower/towermaster
+publisher: silvatower
+name: TowerMaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silvatower/TowerMaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silvatower/TowerMaster
+identifiers:
+- winget: Silvatower.TowerMaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silvatower/TowerMaster
+aliases: []

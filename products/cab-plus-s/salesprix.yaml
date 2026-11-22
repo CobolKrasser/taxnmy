@@ -1,0 +1,11 @@
+key: cab-plus-s/salesprix
+publisher: cab-plus-s
+name: SalesPrix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CABS/SalesPrix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CABS/SalesPrix
+identifiers:
+- winget: CABS.SalesPrix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CABS/SalesPrix
+aliases: []

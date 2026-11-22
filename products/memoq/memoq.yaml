@@ -1,0 +1,11 @@
+key: memoq/memoq
+publisher: memoq
+name: memoQ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/memoQ/memoQ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/memoQ/memoQ
+identifiers:
+- winget: memoQ.memoQ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/memoQ/memoQ
+aliases: []

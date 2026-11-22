@@ -1,0 +1,11 @@
+key: borvid/httpmaster-express-edition
+publisher: borvid
+name: HttpMaster Express Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Borvid/HttpMasterExpress
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Borvid/HttpMasterExpress
+identifiers:
+- winget: Borvid.HttpMasterExpress
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Borvid/HttpMasterExpress
+aliases: []

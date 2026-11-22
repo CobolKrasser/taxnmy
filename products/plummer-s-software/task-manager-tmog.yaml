@@ -1,0 +1,11 @@
+key: plummer-s-software/task-manager-tmog
+publisher: plummer-s-software
+name: Task Manager TMOG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlummersSoftwareLLC/TMOG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlummersSoftwareLLC/TMOG
+identifiers:
+- winget: PlummersSoftwareLLC.TMOG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlummersSoftwareLLC/TMOG
+aliases: []

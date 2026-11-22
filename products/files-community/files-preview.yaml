@@ -1,0 +1,11 @@
+key: files-community/files-preview
+publisher: files-community
+name: Files - Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilesCommunity/FilesPreview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilesCommunity/FilesPreview
+identifiers:
+- winget: FilesCommunity.FilesPreview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilesCommunity/FilesPreview
+aliases: []

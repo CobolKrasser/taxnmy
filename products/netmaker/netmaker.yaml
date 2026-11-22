@@ -1,0 +1,11 @@
+key: netmaker/netmaker
+publisher: netmaker
+name: Netmaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netmaker/Netmaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netmaker/Netmaker
+identifiers:
+- winget: Netmaker.Netmaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netmaker/Netmaker
+aliases: []

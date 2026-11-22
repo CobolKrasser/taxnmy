@@ -1,0 +1,11 @@
+key: cyotek/cyotek-copytools
+publisher: cyotek
+name: Cyotek CopyTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/CopyTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/CopyTools
+identifiers:
+- winget: Cyotek.CopyTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/CopyTools
+aliases: []

@@ -1,0 +1,11 @@
+key: etx-software/duckdns
+publisher: etx-software
+name: DuckDns
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ETXSoftwareInc/DuckDns
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ETXSoftwareInc/DuckDns
+identifiers:
+- winget: ETXSoftwareInc.DuckDns
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ETXSoftwareInc/DuckDns
+aliases: []

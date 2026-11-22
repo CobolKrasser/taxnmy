@@ -1,0 +1,11 @@
+key: opendcl-consortium/opendcl-studio
+publisher: opendcl-consortium
+name: OpenDCL Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDCL/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDCL/Studio
+identifiers:
+- winget: OpenDCL.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDCL/Studio
+aliases: []

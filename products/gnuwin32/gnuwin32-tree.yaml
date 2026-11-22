@@ -1,0 +1,11 @@
+key: gnuwin32/gnuwin32-tree
+publisher: gnuwin32
+name: 'GnuWin32: Tree'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Tree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Tree
+identifiers:
+- winget: GnuWin32.Tree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Tree
+aliases: []

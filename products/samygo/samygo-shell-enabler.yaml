@@ -1,0 +1,11 @@
+key: samygo/samygo-shell-enabler
+publisher: samygo
+name: SamyGO Shell Enabler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/ShellEnable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/ShellEnable
+identifiers:
+- winget: SamyGO.ShellEnable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/ShellEnable
+aliases: []

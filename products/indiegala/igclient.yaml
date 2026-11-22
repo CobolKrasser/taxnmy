@@ -1,0 +1,11 @@
+key: indiegala/igclient
+publisher: indiegala
+name: IGClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IG/IGClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IG/IGClient
+identifiers:
+- winget: IG.IGClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IG/IGClient
+aliases: []

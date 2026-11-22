@@ -1,0 +1,11 @@
+key: neoaxis-group/neoaxis-launcher
+publisher: neoaxis-group
+name: NeoAxis Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeoAxis/Engine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeoAxis/Engine
+identifiers:
+- winget: NeoAxis.Engine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeoAxis/Engine
+aliases: []

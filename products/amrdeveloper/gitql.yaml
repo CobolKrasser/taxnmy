@@ -1,0 +1,11 @@
+key: amrdeveloper/gitql
+publisher: amrdeveloper
+name: GitQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amrdeveloper/gitql
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amrdeveloper/gitql
+identifiers:
+- winget: amrdeveloper.gitql
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amrdeveloper/gitql
+aliases: []

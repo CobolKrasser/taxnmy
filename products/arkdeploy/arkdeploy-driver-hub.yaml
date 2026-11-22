@@ -1,0 +1,11 @@
+key: arkdeploy/arkdeploy-driver-hub
+publisher: arkdeploy
+name: ArkDeploy Driver Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArkDeploy/DriverHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArkDeploy/DriverHub
+identifiers:
+- winget: ArkDeploy.DriverHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArkDeploy/DriverHub
+aliases: []

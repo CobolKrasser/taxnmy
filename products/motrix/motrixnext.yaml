@@ -1,0 +1,11 @@
+key: motrix/motrixnext
+publisher: motrix
+name: MotrixNext
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnInsomniacy/MotrixNext
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnInsomniacy/MotrixNext
+identifiers:
+- winget: AnInsomniacy.MotrixNext
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnInsomniacy/MotrixNext
+aliases: []

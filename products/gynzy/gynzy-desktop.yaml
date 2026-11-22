@@ -1,0 +1,11 @@
+key: gynzy/gynzy-desktop
+publisher: gynzy
+name: Gynzy Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gynzy/GynzyDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gynzy/GynzyDesktop
+identifiers:
+- winget: Gynzy.GynzyDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gynzy/GynzyDesktop
+aliases: []

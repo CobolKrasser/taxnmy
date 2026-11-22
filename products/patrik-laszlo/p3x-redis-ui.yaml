@@ -1,0 +1,11 @@
+key: patrik-laszlo/p3x-redis-ui
+publisher: patrik-laszlo
+name: P3X Redis UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatrikLaszlo/P3XRedisUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatrikLaszlo/P3XRedisUI
+identifiers:
+- winget: PatrikLaszlo.P3XRedisUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatrikLaszlo/P3XRedisUI
+aliases: []

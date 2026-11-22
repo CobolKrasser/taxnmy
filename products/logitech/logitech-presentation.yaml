@@ -1,0 +1,11 @@
+key: logitech/logitech-presentation
+publisher: logitech
+name: Logitech Presentation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Presentation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Presentation
+identifiers:
+- winget: Logitech.Presentation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Presentation
+aliases: []

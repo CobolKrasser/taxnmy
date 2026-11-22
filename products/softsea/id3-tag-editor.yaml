@@ -1,0 +1,11 @@
+key: softsea/id3-tag-editor
+publisher: softsea
+name: ID3 Tag Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ID3TagEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ID3TagEditor
+identifiers:
+- winget: SoftSea.ID3TagEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ID3TagEditor
+aliases: []

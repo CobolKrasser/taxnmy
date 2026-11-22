@@ -1,0 +1,11 @@
+key: envbox/aura
+publisher: envbox
+name: Aura
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnvBox/Aura
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnvBox/Aura
+identifiers:
+- winget: EnvBox.Aura
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnvBox/Aura
+aliases: []

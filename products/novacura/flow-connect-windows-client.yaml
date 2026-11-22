@@ -1,0 +1,11 @@
+key: novacura/flow-connect-windows-client
+publisher: novacura
+name: Flow Connect - Windows Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/WindowsClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/WindowsClient
+identifiers:
+- winget: Novacura.WindowsClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/WindowsClient
+aliases: []

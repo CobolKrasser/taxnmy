@@ -1,0 +1,11 @@
+key: supernova-nebula/karing
+publisher: supernova-nebula
+name: Karing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KaringX/Karing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KaringX/Karing
+identifiers:
+- winget: KaringX.Karing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KaringX/Karing
+aliases: []

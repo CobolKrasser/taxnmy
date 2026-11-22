@@ -1,0 +1,11 @@
+key: cwdio/cwdio-file-manager
+publisher: cwdio
+name: Cwdio File Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cwdio/CwdioFileManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cwdio/CwdioFileManager
+identifiers:
+- winget: Cwdio.CwdioFileManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cwdio/CwdioFileManager
+aliases: []

@@ -1,0 +1,11 @@
+key: yarc/yarc-launcher
+publisher: yarc
+name: YARC Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YARC/YARCLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YARC/YARCLauncher
+identifiers:
+- winget: YARC.YARCLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YARC/YARCLauncher
+aliases: []

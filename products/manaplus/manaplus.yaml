@@ -1,0 +1,11 @@
+key: manaplus/manaplus
+publisher: manaplus
+name: ManaPlus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManaPlus/ManaPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManaPlus/ManaPlus
+identifiers:
+- winget: ManaPlus.ManaPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManaPlus/ManaPlus
+aliases: []

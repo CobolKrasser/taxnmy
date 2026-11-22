@@ -1,0 +1,11 @@
+key: dave-weaver/silo
+publisher: dave-weaver
+name: Silo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaveWeaver/Silo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaveWeaver/Silo
+identifiers:
+- winget: DaveWeaver.Silo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaveWeaver/Silo
+aliases: []

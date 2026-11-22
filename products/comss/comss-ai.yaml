@@ -1,0 +1,11 @@
+key: comss/comss-ai
+publisher: comss
+name: COMSS AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comss/COMSSAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comss/COMSSAI
+identifiers:
+- winget: Comss.COMSSAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comss/COMSSAI
+aliases: []

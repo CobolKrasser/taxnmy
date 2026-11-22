@@ -1,0 +1,11 @@
+key: sikalabs/sikalabs-kubernetes-oidc-login
+publisher: sikalabs
+name: sikalabs-kubernetes-oidc-login
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/sikalabs-kubernetes-oidc-login
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/sikalabs-kubernetes-oidc-login
+identifiers:
+- winget: sikalabs.sikalabs-kubernetes-oidc-login
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/sikalabs-kubernetes-oidc-login
+aliases: []

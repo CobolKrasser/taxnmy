@@ -1,0 +1,11 @@
+key: threema/threema-work-web
+publisher: threema
+name: threema-work-web
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/Work
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/Work
+identifiers:
+- winget: Threema.Threema.Work
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/Work
+aliases: []

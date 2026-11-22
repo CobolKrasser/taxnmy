@@ -1,0 +1,11 @@
+key: nwea/nwea-secure-testing-browser
+publisher: nwea
+name: NWEA Secure Testing Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NWEA/NWEASecureTestingBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NWEA/NWEASecureTestingBrowser
+identifiers:
+- winget: NWEA.NWEASecureTestingBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NWEA/NWEASecureTestingBrowser
+aliases: []

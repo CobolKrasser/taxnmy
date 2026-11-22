@@ -1,0 +1,11 @@
+key: nirsoft/whoisthisdomain
+publisher: nirsoft
+name: WhoisThisDomain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WhoisThisDomain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WhoisThisDomain
+identifiers:
+- winget: NirSoft.WhoisThisDomain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WhoisThisDomain
+aliases: []

@@ -1,0 +1,11 @@
+key: famatech/radmin-vpn
+publisher: famatech
+name: Radmin VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/RadminVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/RadminVPN
+identifiers:
+- winget: Famatech.RadminVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/RadminVPN
+aliases: []

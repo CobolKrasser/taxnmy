@@ -1,0 +1,11 @@
+key: pvsyst/pvsyst
+publisher: pvsyst
+name: PVsyst
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVsyst/PVsyst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVsyst/PVsyst
+identifiers:
+- winget: PVsyst.PVsyst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVsyst/PVsyst
+aliases: []

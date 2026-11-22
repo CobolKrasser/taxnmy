@@ -1,0 +1,11 @@
+key: firedaemon/firedaemon-pro
+publisher: firedaemon
+name: FireDaemon Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonPro
+identifiers:
+- winget: FireDaemon.FireDaemonPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonPro
+aliases: []

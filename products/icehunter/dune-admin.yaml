@@ -1,0 +1,11 @@
+key: icehunter/dune-admin
+publisher: icehunter
+name: dune-admin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icehunter/dune-admin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icehunter/dune-admin
+identifiers:
+- winget: Icehunter.dune-admin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icehunter/dune-admin
+aliases: []

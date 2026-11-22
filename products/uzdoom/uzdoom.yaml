@@ -1,0 +1,11 @@
+key: uzdoom/uzdoom
+publisher: uzdoom
+name: UZDoom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UZDoom/UZDoom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UZDoom/UZDoom
+identifiers:
+- winget: UZDoom.UZDoom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UZDoom/UZDoom
+aliases: []

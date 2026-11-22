@@ -1,0 +1,11 @@
+key: appeon/powerserver-toolkit-r3
+publisher: appeon
+name: PowerServer Toolkit R3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Appeon/PowerServerToolkit2022R3-MR03
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Appeon/PowerServerToolkit2022R3-MR03
+identifiers:
+- winget: Appeon.PowerServerToolkit2022R3-MR03
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Appeon/PowerServerToolkit2022R3-MR03
+aliases: []

@@ -1,0 +1,11 @@
+key: stoplight/stoplight-studio
+publisher: stoplight
+name: Stoplight Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Studio
+identifiers:
+- winget: Stoplight.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Studio
+aliases: []

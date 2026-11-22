@@ -1,0 +1,11 @@
+key: simply-ca/typeless
+publisher: simply-ca
+name: Typeless
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimplyCA/Typeless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimplyCA/Typeless
+identifiers:
+- winget: SimplyCA.Typeless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimplyCA/Typeless
+aliases: []

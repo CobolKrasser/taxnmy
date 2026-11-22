@@ -1,0 +1,11 @@
+key: power-bi-alm-toolkit/power-bi-alm-toolkit
+publisher: power-bi-alm-toolkit
+name: Power BI ALM Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianWade/PowerBIALMToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianWade/PowerBIALMToolkit
+identifiers:
+- winget: ChristianWade.PowerBIALMToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianWade/PowerBIALMToolkit
+aliases: []

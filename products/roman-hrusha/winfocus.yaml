@@ -1,0 +1,11 @@
+key: roman-hrusha/winfocus
+publisher: roman-hrusha
+name: WinFocus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rhrusha/WinFocus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rhrusha/WinFocus
+identifiers:
+- winget: rhrusha.WinFocus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rhrusha/WinFocus
+aliases: []

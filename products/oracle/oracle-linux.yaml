@@ -8,4 +8,14 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:oracle:linux
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/oracle-linux.md
+- winget: Oracle.OracleLinux.7.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OracleLinux/7/9
+- winget: Oracle.OracleLinux.8.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OracleLinux/8/10
+- winget: Oracle.OracleLinux.8.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OracleLinux/8/7
+- winget: Oracle.OracleLinux.9.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OracleLinux/9/1
+- winget: Oracle.OracleLinux.9.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OracleLinux/9/5
 aliases: []

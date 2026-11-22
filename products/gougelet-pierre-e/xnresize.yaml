@@ -1,0 +1,11 @@
+key: gougelet-pierre-e/xnresize
+publisher: gougelet-pierre-e
+name: XnResize
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnResize
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnResize
+identifiers:
+- winget: XnSoft.XnResize
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnResize
+aliases: []

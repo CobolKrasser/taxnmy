@@ -1,0 +1,11 @@
+key: cinny/cinny-desktop
+publisher: cinny
+name: Cinny desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cinnyapp/cinny-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cinnyapp/cinny-desktop
+identifiers:
+- winget: cinnyapp.cinny-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cinnyapp/cinny-desktop
+aliases: []

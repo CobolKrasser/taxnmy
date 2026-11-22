@@ -1,0 +1,11 @@
+key: tldr-pages/tlrc
+publisher: tldr-pages
+name: tlrc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldr-pages/tlrc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldr-pages/tlrc
+identifiers:
+- winget: tldr-pages.tlrc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldr-pages/tlrc
+aliases: []

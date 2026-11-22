@@ -1,0 +1,11 @@
+key: benthic-software/benthic-software-goldview-4-x
+publisher: benthic-software
+name: 'Benthic Software: Goldview 4.x'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/Goldview/4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/Goldview/4
+identifiers:
+- winget: BenthicSoftware.Goldview.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/Goldview/4
+aliases: []

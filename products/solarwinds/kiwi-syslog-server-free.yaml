@@ -1,0 +1,11 @@
+key: solarwinds/kiwi-syslog-server-free
+publisher: solarwinds
+name: Kiwi Syslog Server Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/KiwiSyslogServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/KiwiSyslogServer
+identifiers:
+- winget: SolarWinds.KiwiSyslogServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/KiwiSyslogServer
+aliases: []

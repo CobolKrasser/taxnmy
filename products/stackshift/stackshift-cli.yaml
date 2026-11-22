@@ -1,0 +1,11 @@
+key: stackshift/stackshift-cli
+publisher: stackshift
+name: StackShift CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StackShift/StackShift
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StackShift/StackShift
+identifiers:
+- winget: StackShift.StackShift
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StackShift/StackShift
+aliases: []

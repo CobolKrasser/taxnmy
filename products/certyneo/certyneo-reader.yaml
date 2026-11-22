@@ -1,0 +1,11 @@
+key: certyneo/certyneo-reader
+publisher: certyneo
+name: Certyneo Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certyneo/Reader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certyneo/Reader
+identifiers:
+- winget: Certyneo.Reader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certyneo/Reader
+aliases: []

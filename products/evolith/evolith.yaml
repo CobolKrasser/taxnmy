@@ -1,0 +1,11 @@
+key: evolith/evolith
+publisher: evolith
+name: Evolith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evolith/Evolith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evolith/Evolith
+identifiers:
+- winget: Evolith.Evolith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evolith/Evolith
+aliases: []

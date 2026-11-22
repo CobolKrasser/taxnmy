@@ -1,0 +1,11 @@
+key: cilium/cilium-cli
+publisher: cilium
+name: Cilium CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cilium/CiliumCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cilium/CiliumCLI
+identifiers:
+- winget: Cilium.CiliumCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cilium/CiliumCLI
+aliases: []

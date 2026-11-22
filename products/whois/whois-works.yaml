@@ -1,0 +1,11 @@
+key: whois/whois-works
+publisher: whois
+name: WHOIS WORKS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Whois/Works
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Whois/Works
+identifiers:
+- winget: Whois.Works
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Whois/Works
+aliases: []

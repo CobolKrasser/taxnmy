@@ -1,0 +1,11 @@
+key: winngs/winngs-featurecounts
+publisher: winngs
+name: WinNGS featureCounts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/featureCounts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/featureCounts
+identifiers:
+- winget: WinNGS.featureCounts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/featureCounts
+aliases: []

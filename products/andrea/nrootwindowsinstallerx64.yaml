@@ -1,0 +1,11 @@
+key: andrea/nrootwindowsinstallerx64
+publisher: andrea
+name: NRootWindowsInstallerx64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Andrea/NRootx64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Andrea/NRootx64
+identifiers:
+- winget: Andrea.NRootx64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Andrea/NRootx64
+aliases: []

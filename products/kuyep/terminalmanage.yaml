@@ -1,0 +1,11 @@
+key: kuyep/terminalmanage
+publisher: kuyep
+name: terminalManage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WEBNSNM/terminalManage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WEBNSNM/terminalManage
+identifiers:
+- winget: WEBNSNM.terminalManage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WEBNSNM/terminalManage
+aliases: []

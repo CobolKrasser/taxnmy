@@ -1,0 +1,11 @@
+key: wilson-glasser/https-basemaster-org
+publisher: wilson-glasser
+name: https://basemaster.org
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilsonGlasser/BaseMaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilsonGlasser/BaseMaster
+identifiers:
+- winget: WilsonGlasser.BaseMaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilsonGlasser/BaseMaster
+aliases: []

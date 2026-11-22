@@ -1,0 +1,11 @@
+key: iterate/mountain-duck
+publisher: iterate
+name: Mountain Duck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/MountainDuck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/MountainDuck
+identifiers:
+- winget: Iterate.MountainDuck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/MountainDuck
+aliases: []

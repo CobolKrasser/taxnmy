@@ -1,0 +1,11 @@
+key: pocket-sync/pocket-sync
+publisher: pocket-sync
+name: Pocket Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketSync/PocketSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketSync/PocketSync
+identifiers:
+- winget: PocketSync.PocketSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketSync/PocketSync
+aliases: []

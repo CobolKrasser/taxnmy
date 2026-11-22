@@ -1,0 +1,11 @@
+key: eli-weitzman/ett-admin
+publisher: eli-weitzman
+name: ETT-Admin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EliWeitzman/ETT-Admin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EliWeitzman/ETT-Admin
+identifiers:
+- winget: EliWeitzman.ETT-Admin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EliWeitzman/ETT-Admin
+aliases: []

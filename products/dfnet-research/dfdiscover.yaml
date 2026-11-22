@@ -1,0 +1,11 @@
+key: dfnet-research/dfdiscover
+publisher: dfnet-research
+name: DFdiscover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFdiscover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFdiscover
+identifiers:
+- winget: DFNetResearch.DFdiscover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFdiscover
+aliases: []

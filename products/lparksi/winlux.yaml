@@ -1,0 +1,11 @@
+key: lparksi/winlux
+publisher: lparksi
+name: WinLux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lparksi/WinLux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lparksi/WinLux
+identifiers:
+- winget: Lparksi.WinLux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lparksi/WinLux
+aliases: []

@@ -1,0 +1,11 @@
+key: databricks/databrickscli
+publisher: databricks
+name: DatabricksCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Databricks/DatabricksCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Databricks/DatabricksCLI
+identifiers:
+- winget: Databricks.DatabricksCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Databricks/DatabricksCLI
+aliases: []

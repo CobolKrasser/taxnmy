@@ -1,0 +1,11 @@
+key: epilogue/epilogue-operator
+publisher: epilogue
+name: Epilogue Operator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epilogue/EpilogueOperator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epilogue/EpilogueOperator
+identifiers:
+- winget: Epilogue.EpilogueOperator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epilogue/EpilogueOperator
+aliases: []

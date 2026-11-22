@@ -1,0 +1,11 @@
+key: novacura/flow-classic-windows-client
+publisher: novacura
+name: Flow Classic - Windows Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowClient
+identifiers:
+- winget: Novacura.FlowClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowClient
+aliases: []

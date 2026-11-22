@@ -1,0 +1,11 @@
+key: brocatscript/powersetsetup
+publisher: brocatscript
+name: PowerSetSetup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrocatScript/PowerSetSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrocatScript/PowerSetSetup
+identifiers:
+- winget: BrocatScript.PowerSetSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrocatScript/PowerSetSetup
+aliases: []

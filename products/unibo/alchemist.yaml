@@ -1,0 +1,11 @@
+key: unibo/alchemist
+publisher: unibo
+name: Alchemist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unibo/Alchemist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unibo/Alchemist
+identifiers:
+- winget: Unibo.Alchemist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unibo/Alchemist
+aliases: []

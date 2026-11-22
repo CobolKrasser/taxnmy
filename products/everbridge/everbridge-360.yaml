@@ -1,0 +1,11 @@
+key: everbridge/everbridge-360
+publisher: everbridge
+name: Everbridge 360
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Everbridge/Everbridge360
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Everbridge/Everbridge360
+identifiers:
+- winget: Everbridge.Everbridge360
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Everbridge/Everbridge360
+aliases: []

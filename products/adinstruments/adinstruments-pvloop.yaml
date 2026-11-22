@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-pvloop
+publisher: adinstruments
+name: ADInstruments PVLoop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/PVLoop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/PVLoop
+identifiers:
+- winget: ADInstruments.LabChart.Module.PVLoop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/PVLoop
+aliases: []

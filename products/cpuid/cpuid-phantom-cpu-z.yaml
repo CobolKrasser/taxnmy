@@ -1,0 +1,11 @@
+key: cpuid/cpuid-phantom-cpu-z
+publisher: cpuid
+name: CPUID PHANTOM CPU-Z
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/PHANTOM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/PHANTOM
+identifiers:
+- winget: CPUID.CPU-Z.PHANTOM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/PHANTOM
+aliases: []

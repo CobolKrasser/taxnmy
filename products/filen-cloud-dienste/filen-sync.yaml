@@ -1,0 +1,11 @@
+key: filen-cloud-dienste/filen-sync
+publisher: filen-cloud-dienste
+name: Filen Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilenCloud/FilenSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilenCloud/FilenSync
+identifiers:
+- winget: FilenCloud.FilenSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilenCloud/FilenSync
+aliases: []

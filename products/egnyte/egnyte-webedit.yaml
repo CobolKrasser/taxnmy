@@ -1,0 +1,11 @@
+key: egnyte/egnyte-webedit
+publisher: egnyte
+name: Egnyte WebEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egnyte/EgnyteWebEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egnyte/EgnyteWebEdit
+identifiers:
+- winget: Egnyte.EgnyteWebEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egnyte/EgnyteWebEdit
+aliases: []

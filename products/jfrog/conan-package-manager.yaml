@@ -1,0 +1,11 @@
+key: jfrog/conan-package-manager
+publisher: jfrog
+name: Conan Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Conan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Conan
+identifiers:
+- winget: JFrog.Conan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Conan
+aliases: []

@@ -1,0 +1,11 @@
+key: tenpi/waifu2x-gui
+publisher: tenpi
+name: Waifu2x GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/Waifu2xGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/Waifu2xGUI
+identifiers:
+- winget: Tenpi.Waifu2xGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/Waifu2xGUI
+aliases: []

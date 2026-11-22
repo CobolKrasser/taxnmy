@@ -1,0 +1,11 @@
+key: microsoft/bicep-cli
+publisher: microsoft
+name: Bicep CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Bicep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Bicep
+identifiers:
+- winget: Microsoft.Bicep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Bicep
+aliases: []

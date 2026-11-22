@@ -1,0 +1,11 @@
+key: fastly/fastly-cli
+publisher: fastly
+name: Fastly CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fastly/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fastly/CLI
+identifiers:
+- winget: Fastly.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fastly/CLI
+aliases: []

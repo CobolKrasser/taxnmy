@@ -1,0 +1,11 @@
+key: yeelight/yeelight-home
+publisher: yeelight
+name: Yeelight Home
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeelight/yeelight-home
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeelight/yeelight-home
+identifiers:
+- winget: Yeelight.yeelight-home
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeelight/yeelight-home
+aliases: []

@@ -1,0 +1,11 @@
+key: mrerrorsan/thinkvision-control
+publisher: mrerrorsan
+name: ThinkVision Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MrErrorSan/ThinkVisionControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MrErrorSan/ThinkVisionControl
+identifiers:
+- winget: MrErrorSan.ThinkVisionControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MrErrorSan/ThinkVisionControl
+aliases: []

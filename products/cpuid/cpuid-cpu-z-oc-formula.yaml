@@ -1,0 +1,11 @@
+key: cpuid/cpuid-cpu-z-oc-formula
+publisher: cpuid
+name: CPUID CPU-Z OC Formula
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/ASR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/ASR
+identifiers:
+- winget: CPUID.CPU-Z.ASR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/ASR
+aliases: []

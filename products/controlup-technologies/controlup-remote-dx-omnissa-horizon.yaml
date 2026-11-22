@@ -1,0 +1,11 @@
+key: controlup-technologies/controlup-remote-dx-omnissa-horizon
+publisher: controlup-technologies
+name: ControlUp Remote DX - Omnissa Horizon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Omnissa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Omnissa
+identifiers:
+- winget: ControlUp.RemoteDX.Omnissa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Omnissa
+aliases: []

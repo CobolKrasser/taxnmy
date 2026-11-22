@@ -1,0 +1,11 @@
+key: iobit/advanced-systemcare
+publisher: iobit
+name: Advanced SystemCare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/AdvancedSystemCare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/AdvancedSystemCare
+identifiers:
+- winget: IObit.AdvancedSystemCare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/AdvancedSystemCare
+aliases: []

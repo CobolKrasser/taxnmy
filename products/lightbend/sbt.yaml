@@ -1,0 +1,11 @@
+key: lightbend/sbt
+publisher: lightbend
+name: sbt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sbt/sbt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sbt/sbt
+identifiers:
+- winget: sbt.sbt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sbt/sbt
+aliases: []

@@ -1,0 +1,11 @@
+key: cisco/chez-scheme
+publisher: cisco
+name: Chez Scheme
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/ChezScheme
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/ChezScheme
+identifiers:
+- winget: Cisco.ChezScheme
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/ChezScheme
+aliases: []

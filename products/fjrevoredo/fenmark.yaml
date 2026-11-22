@@ -1,0 +1,11 @@
+key: fjrevoredo/fenmark
+publisher: fjrevoredo
+name: Fenmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fjrevoredo/MiniDiarium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fjrevoredo/MiniDiarium
+identifiers:
+- winget: fjrevoredo.MiniDiarium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fjrevoredo/MiniDiarium
+aliases: []

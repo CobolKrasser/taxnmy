@@ -1,0 +1,11 @@
+key: josh/psmux
+publisher: josh
+name: psmux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/psmux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/psmux
+identifiers:
+- winget: marlocarlo.psmux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/psmux
+aliases: []

@@ -1,0 +1,11 @@
+key: jenius-apps/nightingale-rest-client
+publisher: jenius-apps
+name: Nightingale REST Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeniusApps/Nightingale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeniusApps/Nightingale
+identifiers:
+- winget: JeniusApps.Nightingale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeniusApps/Nightingale
+aliases: []

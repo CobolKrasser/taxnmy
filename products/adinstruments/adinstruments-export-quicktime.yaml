@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-export-quicktime
+publisher: adinstruments
+name: ADInstruments Export QuickTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/ExportQuickTime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/ExportQuickTime
+identifiers:
+- winget: ADInstruments.LabChart.Extension.ExportQuickTime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/ExportQuickTime
+aliases: []

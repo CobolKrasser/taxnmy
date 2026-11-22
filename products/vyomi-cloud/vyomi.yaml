@@ -1,0 +1,11 @@
+key: vyomi-cloud/vyomi
+publisher: vyomi-cloud
+name: Vyomi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vyomi/Vyomi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vyomi/Vyomi
+identifiers:
+- winget: Vyomi.Vyomi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vyomi/Vyomi
+aliases: []

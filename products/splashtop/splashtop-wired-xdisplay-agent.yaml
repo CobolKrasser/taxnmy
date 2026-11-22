@@ -1,0 +1,11 @@
+key: splashtop/splashtop-wired-xdisplay-agent
+publisher: splashtop
+name: Splashtop Wired XDisplay Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopWiredXDisplay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopWiredXDisplay
+identifiers:
+- winget: Splashtop.SplashtopWiredXDisplay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopWiredXDisplay
+aliases: []

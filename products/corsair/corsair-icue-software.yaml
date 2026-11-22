@@ -1,0 +1,13 @@
+key: corsair/corsair-icue-software
+publisher: corsair
+name: CORSAIR iCUE Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/3
+identifiers:
+- winget: Corsair.iCUE.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/3
+- winget: Corsair.iCUE.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/4
+aliases: []

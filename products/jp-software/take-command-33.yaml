@@ -1,0 +1,11 @@
+key: jp-software/take-command-33
+publisher: jp-software
+name: Take Command 33
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPSoft/tcmd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPSoft/tcmd
+identifiers:
+- winget: JPSoft.tcmd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPSoft/tcmd
+aliases: []

@@ -1,0 +1,11 @@
+key: blife-team/custom-cursor
+publisher: blife-team
+name: Custom Cursor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BLife/CustomCursor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BLife/CustomCursor
+identifiers:
+- winget: BLife.CustomCursor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BLife/CustomCursor
+aliases: []

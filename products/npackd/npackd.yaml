@@ -1,0 +1,11 @@
+key: npackd/npackd
+publisher: npackd
+name: Npackd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Npackd/Npackd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Npackd/Npackd
+identifiers:
+- winget: Npackd.Npackd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Npackd/Npackd
+aliases: []

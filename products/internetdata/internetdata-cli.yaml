@@ -1,0 +1,11 @@
+key: internetdata/internetdata-cli
+publisher: internetdata
+name: InternetData CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InternetData/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InternetData/CLI
+identifiers:
+- winget: InternetData.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InternetData/CLI
+aliases: []

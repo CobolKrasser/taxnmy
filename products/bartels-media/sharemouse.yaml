@@ -1,0 +1,11 @@
+key: bartels-media/sharemouse
+publisher: bartels-media
+name: ShareMouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartelsMedia/ShareMouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartelsMedia/ShareMouse
+identifiers:
+- winget: BartelsMedia.ShareMouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartelsMedia/ShareMouse
+aliases: []

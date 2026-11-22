@@ -1,0 +1,11 @@
+key: flexense-computing-systems/sysgauge-server
+publisher: flexense-computing-systems
+name: SysGauge Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/SysGaugeServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/SysGaugeServer
+identifiers:
+- winget: Flexense.SysGaugeServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/SysGaugeServer
+aliases: []

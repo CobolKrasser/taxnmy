@@ -1,0 +1,13 @@
+key: freecad-team/freecad
+publisher: freecad-team
+name: FreeCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCAD/FreeCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCAD/FreeCAD
+identifiers:
+- winget: FreeCAD.FreeCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCAD/FreeCAD
+- winget: FreeCAD.FreeCAD.Weekly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCAD/FreeCAD/Weekly
+aliases: []

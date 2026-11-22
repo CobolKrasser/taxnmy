@@ -1,0 +1,11 @@
+key: streetwriters/notesnook
+publisher: streetwriters
+name: Notesnook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streetwriters/Notesnook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streetwriters/Notesnook
+identifiers:
+- winget: Streetwriters.Notesnook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streetwriters/Notesnook
+aliases: []

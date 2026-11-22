@@ -1,0 +1,11 @@
+key: connect2x/tammy
+publisher: connect2x
+name: Tammy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/connect2xGmbH/Tammy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/connect2xGmbH/Tammy
+identifiers:
+- winget: connect2xGmbH.Tammy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/connect2xGmbH/Tammy
+aliases: []

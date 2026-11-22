@@ -1,0 +1,11 @@
+key: turtle170/omniculator
+publisher: turtle170
+name: Omniculator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omniculator/Omniculator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omniculator/Omniculator
+identifiers:
+- winget: Omniculator.Omniculator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omniculator/Omniculator
+aliases: []

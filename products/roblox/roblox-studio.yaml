@@ -1,0 +1,11 @@
+key: roblox/roblox-studio
+publisher: roblox
+name: Roblox Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roblox/RobloxStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roblox/RobloxStudio
+identifiers:
+- winget: Roblox.RobloxStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roblox/RobloxStudio
+aliases: []

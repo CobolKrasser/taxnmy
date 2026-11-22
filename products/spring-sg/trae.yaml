@@ -1,0 +1,11 @@
+key: spring-sg/trae
+publisher: spring-sg
+name: Trae
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Trae
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Trae
+identifiers:
+- winget: ByteDance.Trae
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Trae
+aliases: []

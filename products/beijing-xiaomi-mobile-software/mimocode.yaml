@@ -1,0 +1,13 @@
+key: beijing-xiaomi-mobile-software/mimocode
+publisher: beijing-xiaomi-mobile-software
+name: MiMoCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoCode
+identifiers:
+- winget: Xiaomi.MiMoCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoCode
+- winget: Xiaomi.MiMoCode.Baseline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoCode/Baseline
+aliases: []

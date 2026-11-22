@@ -1,0 +1,11 @@
+key: microsoft/microsoft-azure-cli
+publisher: microsoft
+name: Microsoft Azure CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureCLI
+identifiers:
+- winget: Microsoft.AzureCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureCLI
+aliases: []

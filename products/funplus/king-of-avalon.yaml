@@ -1,0 +1,11 @@
+key: funplus/king-of-avalon
+publisher: funplus
+name: King of Avalon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KingsGroup/KingOfAvalon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KingsGroup/KingOfAvalon
+identifiers:
+- winget: KingsGroup.KingOfAvalon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KingsGroup/KingOfAvalon
+aliases: []

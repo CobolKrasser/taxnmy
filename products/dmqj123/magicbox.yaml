@@ -1,0 +1,11 @@
+key: dmqj123/magicbox
+publisher: dmqj123
+name: MagicBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeMiracle/MagicBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeMiracle/MagicBox
+identifiers:
+- winget: CodeMiracle.MagicBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeMiracle/MagicBox
+aliases: []

@@ -1,0 +1,11 @@
+key: amn/icon-extractor
+publisher: amn
+name: Icon Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/IconExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/IconExtractor
+identifiers:
+- winget: AmN.IconExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/IconExtractor
+aliases: []

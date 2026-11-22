@@ -1,0 +1,11 @@
+key: it-dev-team/uup-media-creator
+publisher: it-dev-team
+name: UUP Media Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITDevTeam/UUPMediaCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITDevTeam/UUPMediaCreator
+identifiers:
+- winget: ITDevTeam.UUPMediaCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITDevTeam/UUPMediaCreator
+aliases: []

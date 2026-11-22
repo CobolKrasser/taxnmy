@@ -1,0 +1,11 @@
+key: lexora/lexora-buddy
+publisher: lexora
+name: Lexora Buddy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexora/LexoraBuddy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexora/LexoraBuddy
+identifiers:
+- winget: Lexora.LexoraBuddy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexora/LexoraBuddy
+aliases: []

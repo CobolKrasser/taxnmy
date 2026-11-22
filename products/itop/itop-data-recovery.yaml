@@ -1,0 +1,11 @@
+key: itop/itop-data-recovery
+publisher: itop
+name: iTop Data Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopDataRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopDataRecovery
+identifiers:
+- winget: iTop.iTopDataRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopDataRecovery
+aliases: []

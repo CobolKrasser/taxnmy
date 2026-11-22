@@ -1,0 +1,11 @@
+key: saturn9/flow-cli
+publisher: saturn9
+name: Flow CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturn9/FlowCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturn9/FlowCLI
+identifiers:
+- winget: Saturn9.FlowCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturn9/FlowCLI
+aliases: []

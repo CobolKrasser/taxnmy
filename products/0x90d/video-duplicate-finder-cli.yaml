@@ -1,0 +1,11 @@
+key: 0x90d/video-duplicate-finder-cli
+publisher: '0x90d'
+name: Video Duplicate Finder CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x90d/VideoDuplicateFinder/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x90d/VideoDuplicateFinder/CLI
+identifiers:
+- winget: 0x90d.VideoDuplicateFinder.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x90d/VideoDuplicateFinder/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: vovsoft/vov-stop-start
+publisher: vovsoft
+name: Vov Stop Start
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovStopStart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovStopStart
+identifiers:
+- winget: VovSoft.VovStopStart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovStopStart
+aliases: []

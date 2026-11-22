@@ -1,0 +1,11 @@
+key: lisk-foundation/lisk
+publisher: lisk-foundation
+name: Lisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiskFoundation/LiskHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiskFoundation/LiskHub
+identifiers:
+- winget: LiskFoundation.LiskHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiskFoundation/LiskHub
+aliases: []

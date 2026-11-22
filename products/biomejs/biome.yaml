@@ -1,0 +1,11 @@
+key: biomejs/biome
+publisher: biomejs
+name: Biome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiomeJS/Biome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiomeJS/Biome
+identifiers:
+- winget: BiomeJS.Biome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiomeJS/Biome
+aliases: []

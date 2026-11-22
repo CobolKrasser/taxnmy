@@ -1,0 +1,11 @@
+key: oras-project/oras-cli
+publisher: oras-project
+name: ORAS CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ORASProject/ORAS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ORASProject/ORAS
+identifiers:
+- winget: ORASProject.ORAS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ORASProject/ORAS
+aliases: []

@@ -1,0 +1,11 @@
+key: dfnet-research/dfsend
+publisher: dfnet-research
+name: DFsend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFsend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFsend
+identifiers:
+- winget: DFNetResearch.DFsend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFsend
+aliases: []

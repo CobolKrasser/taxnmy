@@ -1,0 +1,11 @@
+key: aptivi/mediaboom
+publisher: aptivi
+name: MediaBoom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/MediaBoom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/MediaBoom
+identifiers:
+- winget: Aptivi.MediaBoom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/MediaBoom
+aliases: []

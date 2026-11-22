@@ -1,0 +1,11 @@
+key: osheep/osheep
+publisher: osheep
+name: Osheep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psheep303/Osheep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psheep303/Osheep
+identifiers:
+- winget: psheep303.Osheep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psheep303/Osheep
+aliases: []

@@ -1,0 +1,11 @@
+key: western-digital/kitfox
+publisher: western-digital
+name: Kitfox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WesternDigital/Kitfox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WesternDigital/Kitfox
+identifiers:
+- winget: WesternDigital.Kitfox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WesternDigital/Kitfox
+aliases: []

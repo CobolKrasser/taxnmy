@@ -1,0 +1,11 @@
+key: v-kontakte/vk-messenger
+publisher: v-kontakte
+name: VK Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VKontakte/VKMessenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VKontakte/VKMessenger
+identifiers:
+- winget: VKontakte.VKMessenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VKontakte/VKMessenger
+aliases: []

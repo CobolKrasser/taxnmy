@@ -1,0 +1,11 @@
+key: prey/prey-anti-theft
+publisher: prey
+name: Prey Anti-Theft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prey/Prey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prey/Prey
+identifiers:
+- winget: Prey.Prey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prey/Prey
+aliases: []

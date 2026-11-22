@@ -1,0 +1,11 @@
+key: squirreldisk/squirreldisk
+publisher: squirreldisk
+name: SquirrelDisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/squirreldisk/SquirrelDisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/squirreldisk/SquirrelDisk
+identifiers:
+- winget: squirreldisk.SquirrelDisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/squirreldisk/SquirrelDisk
+aliases: []

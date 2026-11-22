@@ -1,0 +1,11 @@
+key: autobrr/upbrr-gui
+publisher: autobrr
+name: upbrr GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/autobrr/upbrr/gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/autobrr/upbrr/gui
+identifiers:
+- winget: autobrr.upbrr.gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/autobrr/upbrr/gui
+aliases: []

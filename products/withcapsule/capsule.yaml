@@ -1,0 +1,11 @@
+key: withcapsule/capsule
+publisher: withcapsule
+name: Capsule
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithCapsule/Capsule
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithCapsule/Capsule
+identifiers:
+- winget: WithCapsule.Capsule
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithCapsule/Capsule
+aliases: []

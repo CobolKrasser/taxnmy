@@ -1,0 +1,11 @@
+key: tyrrrz/discordchatexporter-cli
+publisher: tyrrrz
+name: DiscordChatExporter.CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tyrrrz/DiscordChatExporter/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tyrrrz/DiscordChatExporter/CLI
+identifiers:
+- winget: Tyrrrz.DiscordChatExporter.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tyrrrz/DiscordChatExporter/CLI
+aliases: []

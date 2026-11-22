@@ -1,0 +1,11 @@
+key: tasemulators/bizhawk
+publisher: tasemulators
+name: BizHawk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TASEmulators/BizHawk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TASEmulators/BizHawk
+identifiers:
+- winget: TASEmulators.BizHawk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TASEmulators/BizHawk
+aliases: []

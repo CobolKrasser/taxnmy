@@ -1,0 +1,11 @@
+key: containers/podmantui
+publisher: containers
+name: PodmanTUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Containers/PodmanTUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Containers/PodmanTUI
+identifiers:
+- winget: Containers.PodmanTUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Containers/PodmanTUI
+aliases: []

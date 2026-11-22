@@ -1,0 +1,13 @@
+key: receita-federal-do-brasil/irpf
+publisher: receita-federal-do-brasil
+name: IRPF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/IRPF2023
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/IRPF2023
+identifiers:
+- winget: ReceitaFederaldoBrasil.IRPF2023
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/IRPF2023
+- winget: ReceitaFederaldoBrasil.IRPF2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/IRPF2026
+aliases: []

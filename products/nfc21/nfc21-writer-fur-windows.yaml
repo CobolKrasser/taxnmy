@@ -1,0 +1,11 @@
+key: nfc21/nfc21-writer-fur-windows
+publisher: nfc21
+name: NFC21 Writer für Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NFC21/Writer/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NFC21/Writer/Portable
+identifiers:
+- winget: NFC21.Writer.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NFC21/Writer/Portable
+aliases: []

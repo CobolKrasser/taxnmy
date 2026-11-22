@@ -1,0 +1,11 @@
+key: wargaming-net/wargaming-net-game-center
+publisher: wargaming-net
+name: Wargaming.net Game Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wargaming/GameCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wargaming/GameCenter
+identifiers:
+- winget: Wargaming.GameCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wargaming/GameCenter
+aliases: []

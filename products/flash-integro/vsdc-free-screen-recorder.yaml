@@ -1,0 +1,11 @@
+key: flash-integro/vsdc-free-screen-recorder
+publisher: flash-integro
+name: VSDC Free Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/ScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/ScreenRecorder
+identifiers:
+- winget: VSDC.ScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/ScreenRecorder
+aliases: []

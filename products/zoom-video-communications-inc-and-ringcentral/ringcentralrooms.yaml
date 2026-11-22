@@ -1,0 +1,11 @@
+key: zoom-video-communications-inc-and-ringcentral/ringcentralrooms
+publisher: zoom-video-communications-inc-and-ringcentral
+name: RingCentralRooms
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralMeetingsRooms
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralMeetingsRooms
+identifiers:
+- winget: RingCentral.RingCentralMeetingsRooms
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralMeetingsRooms
+aliases: []

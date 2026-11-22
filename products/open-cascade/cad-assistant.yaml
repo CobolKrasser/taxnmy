@@ -1,0 +1,11 @@
+key: open-cascade/cad-assistant
+publisher: open-cascade
+name: CAD Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCascade/CADAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCascade/CADAssistant
+identifiers:
+- winget: OpenCascade.CADAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCascade/CADAssistant
+aliases: []

@@ -1,0 +1,11 @@
+key: 0x192/universal-android-debloater-gui
+publisher: '0x192'
+name: Universal Android Debloater GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x192/UniversalAndroidDebloaterGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x192/UniversalAndroidDebloaterGUI
+identifiers:
+- winget: 0x192.UniversalAndroidDebloaterGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x192/UniversalAndroidDebloaterGUI
+aliases: []

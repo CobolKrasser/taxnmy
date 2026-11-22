@@ -1,0 +1,11 @@
+key: xwartz/pupafm
+publisher: xwartz
+name: PupaFM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xwartz/PupaFM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xwartz/PupaFM
+identifiers:
+- winget: xwartz.PupaFM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xwartz/PupaFM
+aliases: []

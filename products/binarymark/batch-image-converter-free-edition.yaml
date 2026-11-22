@@ -1,0 +1,11 @@
+key: binarymark/batch-image-converter-free-edition
+publisher: binarymark
+name: Batch Image Converter Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageConverter
+identifiers:
+- winget: BinaryMark.BatchImageConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageConverter
+aliases: []

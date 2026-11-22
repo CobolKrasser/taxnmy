@@ -1,0 +1,13 @@
+key: mysolutions-nordic/nsclient-plus-plus
+publisher: mysolutions-nordic
+name: NSClient++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mickem/NSClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mickem/NSClient
+identifiers:
+- winget: Mickem.NSClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mickem/NSClient
+- winget: MySolutionsNORDIC.NSClient++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MySolutionsNORDIC/NSClient++
+aliases: []

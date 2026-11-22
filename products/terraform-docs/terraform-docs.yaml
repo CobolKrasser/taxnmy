@@ -1,0 +1,11 @@
+key: terraform-docs/terraform-docs
+publisher: terraform-docs
+name: terraform-docs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terraform-docs/Terraform-docs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terraform-docs/Terraform-docs
+identifiers:
+- winget: Terraform-docs.Terraform-docs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terraform-docs/Terraform-docs
+aliases: []

@@ -1,0 +1,11 @@
+key: bitdefender/bitdefender-agent
+publisher: bitdefender
+name: BitDefender Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitdefender/Bitdefender
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitdefender/Bitdefender
+identifiers:
+- winget: Bitdefender.Bitdefender
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitdefender/Bitdefender
+aliases: []

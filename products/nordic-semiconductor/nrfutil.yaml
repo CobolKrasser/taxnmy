@@ -1,0 +1,11 @@
+key: nordic-semiconductor/nrfutil
+publisher: nordic-semiconductor
+name: nrfutil
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordicSemiconductor/nrfutil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordicSemiconductor/nrfutil
+identifiers:
+- winget: NordicSemiconductor.nrfutil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordicSemiconductor/nrfutil
+aliases: []

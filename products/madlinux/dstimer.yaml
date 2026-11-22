@@ -1,0 +1,11 @@
+key: madlinux/dstimer
+publisher: madlinux
+name: dstimer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madLinux/dstimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madLinux/dstimer
+identifiers:
+- winget: madLinux.dstimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madLinux/dstimer
+aliases: []

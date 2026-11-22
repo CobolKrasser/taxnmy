@@ -1,0 +1,11 @@
+key: snipe-group/snipe
+publisher: snipe-group
+name: Snipe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnipeGroupLimited/Snipe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnipeGroupLimited/Snipe
+identifiers:
+- winget: SnipeGroupLimited.Snipe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnipeGroupLimited/Snipe
+aliases: []

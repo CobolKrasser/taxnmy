@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-cpu-benchmark
+publisher: vovsoft
+name: Vovsoft CPU Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CPUBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CPUBenchmark
+identifiers:
+- winget: VovSoft.CPUBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CPUBenchmark
+aliases: []

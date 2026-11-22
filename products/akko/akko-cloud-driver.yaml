@@ -1,0 +1,11 @@
+key: akko/akko-cloud-driver
+publisher: akko
+name: Akko Cloud Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akko/CloudDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akko/CloudDriver
+identifiers:
+- winget: Akko.CloudDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akko/CloudDriver
+aliases: []

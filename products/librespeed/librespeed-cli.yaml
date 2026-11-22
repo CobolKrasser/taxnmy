@@ -1,0 +1,11 @@
+key: librespeed/librespeed-cli
+publisher: librespeed
+name: librespeed-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreSpeed/librespeed-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreSpeed/librespeed-cli
+identifiers:
+- winget: LibreSpeed.librespeed-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreSpeed/librespeed-cli
+aliases: []

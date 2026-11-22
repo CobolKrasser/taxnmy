@@ -1,0 +1,11 @@
+key: dave-kerr/sharpshell-server-registration-manager
+publisher: dave-kerr
+name: SharpShell - Server Registration Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dwmkerr/SharpShell/ServerRegistrationManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dwmkerr/SharpShell/ServerRegistrationManager
+identifiers:
+- winget: dwmkerr.SharpShell.ServerRegistrationManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dwmkerr/SharpShell/ServerRegistrationManager
+aliases: []

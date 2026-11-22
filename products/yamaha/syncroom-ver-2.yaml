@@ -1,0 +1,11 @@
+key: yamaha/syncroom-ver-2
+publisher: yamaha
+name: SYNCROOM Ver.2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/SYNCROOM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/SYNCROOM
+identifiers:
+- winget: Yamaha.SYNCROOM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/SYNCROOM
+aliases: []

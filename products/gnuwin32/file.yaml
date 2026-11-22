@@ -1,0 +1,11 @@
+key: gnuwin32/file
+publisher: gnuwin32
+name: File
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/File
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/File
+identifiers:
+- winget: GnuWin32.File
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/File
+aliases: []

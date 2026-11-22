@@ -1,0 +1,11 @@
+key: virtual-desktop/virtual-desktop-streamer
+publisher: virtual-desktop
+name: Virtual Desktop Streamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualDesktop/Streamer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualDesktop/Streamer
+identifiers:
+- winget: VirtualDesktop.Streamer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualDesktop/Streamer
+aliases: []

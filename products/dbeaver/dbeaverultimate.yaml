@@ -1,0 +1,11 @@
+key: dbeaver/dbeaverultimate
+publisher: dbeaver
+name: DBeaverUltimate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Ultimate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Ultimate
+identifiers:
+- winget: DBeaver.DBeaver.Ultimate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Ultimate
+aliases: []

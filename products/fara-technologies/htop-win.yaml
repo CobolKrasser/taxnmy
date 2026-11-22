@@ -1,0 +1,11 @@
+key: fara-technologies/htop-win
+publisher: fara-technologies
+name: htop-win
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/faratech/htop-win
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/faratech/htop-win
+identifiers:
+- winget: faratech.htop-win
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/faratech/htop-win
+aliases: []

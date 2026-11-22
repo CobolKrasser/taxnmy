@@ -1,0 +1,11 @@
+key: gilgamech/cat
+publisher: gilgamech
+name: Cat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gilgamech/Cat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gilgamech/Cat
+identifiers:
+- winget: Gilgamech.Cat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gilgamech/Cat
+aliases: []

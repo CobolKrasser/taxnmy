@@ -1,0 +1,11 @@
+key: mitec/mitec-project-maker
+publisher: mitec
+name: MiTeC Project Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/ProjectMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/ProjectMaker
+identifiers:
+- winget: MiTeC.ProjectMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/ProjectMaker
+aliases: []

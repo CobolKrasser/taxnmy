@@ -1,0 +1,11 @@
+key: nitrokey/nitrokey-app
+publisher: nitrokey
+name: Nitrokey-App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitrokeyGmbH/Nitrokey-App
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitrokeyGmbH/Nitrokey-App
+identifiers:
+- winget: NitrokeyGmbH.Nitrokey-App
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitrokeyGmbH/Nitrokey-App
+aliases: []

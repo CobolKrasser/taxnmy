@@ -1,0 +1,11 @@
+key: virtualhere/virtualhere-usb-client
+publisher: virtualhere
+name: VirtualHere USB Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualHere/USBClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualHere/USBClient
+identifiers:
+- winget: VirtualHere.USBClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualHere/USBClient
+aliases: []

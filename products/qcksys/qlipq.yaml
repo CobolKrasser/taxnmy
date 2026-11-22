@@ -1,0 +1,11 @@
+key: qcksys/qlipq
+publisher: qcksys
+name: qlipq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qcksys/qlipq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qcksys/qlipq
+identifiers:
+- winget: qcksys.qlipq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qcksys/qlipq
+aliases: []

@@ -1,0 +1,11 @@
+key: daimler-fleetboard/fleetboard-cockpit
+publisher: daimler-fleetboard
+name: Fleetboard Cockpit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaimlerTruck/FleetboardCockpit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaimlerTruck/FleetboardCockpit
+identifiers:
+- winget: DaimlerTruck.FleetboardCockpit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaimlerTruck/FleetboardCockpit
+aliases: []

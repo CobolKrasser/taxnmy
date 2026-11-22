@@ -1,0 +1,11 @@
+key: high-motion-software/imwatcher
+publisher: high-motion-software
+name: ImWatcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/ImWatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/ImWatcher
+identifiers:
+- winget: HighMotionSoftware.ImWatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/ImWatcher
+aliases: []

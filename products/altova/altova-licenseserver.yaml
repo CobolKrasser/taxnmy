@@ -1,0 +1,13 @@
+key: altova/altova-licenseserver
+publisher: altova
+name: Altova LicenseServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/LicenseServer/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/LicenseServer/3
+identifiers:
+- winget: Altova.LicenseServer.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/LicenseServer/2025
+- winget: Altova.LicenseServer.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/LicenseServer/3
+aliases: []

@@ -1,0 +1,11 @@
+key: soupbuild/soup-build
+publisher: soupbuild
+name: Soup Build
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoupBuild/Soup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoupBuild/Soup
+identifiers:
+- winget: SoupBuild.Soup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoupBuild/Soup
+aliases: []

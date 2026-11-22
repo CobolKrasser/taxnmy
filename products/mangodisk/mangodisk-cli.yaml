@@ -1,0 +1,11 @@
+key: mangodisk/mangodisk-cli
+publisher: mangodisk
+name: MangoDisk CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MangoDisk/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MangoDisk/CLI
+identifiers:
+- winget: MangoDisk.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MangoDisk/CLI
+aliases: []

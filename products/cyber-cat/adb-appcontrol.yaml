@@ -1,0 +1,11 @@
+key: cyber-cat/adb-appcontrol
+publisher: cyber-cat
+name: ADB AppControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberCat/ADBAppControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberCat/ADBAppControl
+identifiers:
+- winget: CyberCat.ADBAppControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberCat/ADBAppControl
+aliases: []

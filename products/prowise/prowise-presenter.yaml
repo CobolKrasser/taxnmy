@@ -1,0 +1,11 @@
+key: prowise/prowise-presenter
+publisher: prowise
+name: Prowise Presenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/ProwisePresenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/ProwisePresenter
+identifiers:
+- winget: Prowise.ProwisePresenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/ProwisePresenter
+aliases: []

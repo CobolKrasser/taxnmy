@@ -1,0 +1,11 @@
+key: trimble/sketchup-pro
+publisher: trimble
+name: SketchUp Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2022
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2022
+identifiers:
+- winget: Trimble.SketchUp.2022
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2022
+aliases: []

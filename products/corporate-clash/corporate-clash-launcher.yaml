@@ -1,0 +1,11 @@
+key: corporate-clash/corporate-clash-launcher
+publisher: corporate-clash
+name: Corporate Clash Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorporateClashCrew/ToontownCorporateClash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorporateClashCrew/ToontownCorporateClash
+identifiers:
+- winget: CorporateClashCrew.ToontownCorporateClash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorporateClashCrew/ToontownCorporateClash
+aliases: []

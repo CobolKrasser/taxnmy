@@ -1,0 +1,11 @@
+key: devolutions/devolutions-microsoft-rdp-extensions
+publisher: devolutions
+name: Devolutions Microsoft RDP Extensions
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/MsRdpEx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/MsRdpEx
+identifiers:
+- winget: Devolutions.MsRdpEx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/MsRdpEx
+aliases: []

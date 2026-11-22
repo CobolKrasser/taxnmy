@@ -1,0 +1,11 @@
+key: qualcomm/qualcomm-geniex-cli
+publisher: qualcomm
+name: Qualcomm GenieX CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qualcomm/GenieX/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qualcomm/GenieX/CLI
+identifiers:
+- winget: Qualcomm.GenieX.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qualcomm/GenieX/CLI
+aliases: []

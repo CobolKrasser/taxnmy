@@ -1,0 +1,11 @@
+key: twingate/twingate
+publisher: twingate
+name: Twingate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twingate/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twingate/Client
+identifiers:
+- winget: Twingate.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twingate/Client
+aliases: []

@@ -1,0 +1,11 @@
+key: thanh-le/refi-app
+publisher: thanh-le
+name: Refi App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThanhLe/RefiApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThanhLe/RefiApp
+identifiers:
+- winget: ThanhLe.RefiApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThanhLe/RefiApp
+aliases: []

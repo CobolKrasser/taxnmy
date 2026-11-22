@@ -1,0 +1,11 @@
+key: femto-community/legendutil
+publisher: femto-community
+name: LegendUtil
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/femtoCommunity/LegendUtil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/femtoCommunity/LegendUtil
+identifiers:
+- winget: femtoCommunity.LegendUtil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/femtoCommunity/LegendUtil
+aliases: []

@@ -1,0 +1,11 @@
+key: arviceblot/eso-addon-manager
+publisher: arviceblot
+name: ESO Addon Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arviceblot/eso-addon-manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arviceblot/eso-addon-manager
+identifiers:
+- winget: arviceblot.eso-addon-manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arviceblot/eso-addon-manager
+aliases: []

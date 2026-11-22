@@ -1,0 +1,11 @@
+key: c-dogs-sdl-team/c-dogs-sdl
+publisher: c-dogs-sdl-team
+name: C-Dogs SDL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CongusBongus/CDogsSDL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CongusBongus/CDogsSDL
+identifiers:
+- winget: CongusBongus.CDogsSDL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CongusBongus/CDogsSDL
+aliases: []

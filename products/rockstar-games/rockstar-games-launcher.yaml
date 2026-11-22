@@ -1,0 +1,11 @@
+key: rockstar-games/rockstar-games-launcher
+publisher: rockstar-games
+name: Rockstar Games Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RockstarGames/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RockstarGames/Launcher
+identifiers:
+- winget: RockstarGames.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RockstarGames/Launcher
+aliases: []

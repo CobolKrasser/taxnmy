@@ -1,0 +1,11 @@
+key: sangoma-technologies/sangoma-phone
+publisher: sangoma-technologies
+name: Sangoma Phone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaPhone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaPhone
+identifiers:
+- winget: Sangoma.SangomaPhone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaPhone
+aliases: []

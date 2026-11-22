@@ -1,0 +1,13 @@
+key: hindsight-labs/paprika-recipe-manager
+publisher: hindsight-labs
+name: Paprika Recipe Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaprikaApp/Paprika/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaprikaApp/Paprika/1
+identifiers:
+- winget: PaprikaApp.Paprika.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaprikaApp/Paprika/1
+- winget: PaprikaApp.Paprika.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaprikaApp/Paprika/3
+aliases: []

@@ -1,0 +1,11 @@
+key: peter-pawlowski/foobar
+publisher: peter-pawlowski
+name: foobar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterPawlowski/foobar2000
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterPawlowski/foobar2000
+identifiers:
+- winget: PeterPawlowski.foobar2000
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterPawlowski/foobar2000
+aliases: []

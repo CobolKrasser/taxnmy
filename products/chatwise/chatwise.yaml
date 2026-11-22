@@ -1,0 +1,11 @@
+key: chatwise/chatwise
+publisher: chatwise
+name: ChatWise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egoist/ChatWise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egoist/ChatWise
+identifiers:
+- winget: egoist.ChatWise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egoist/ChatWise
+aliases: []

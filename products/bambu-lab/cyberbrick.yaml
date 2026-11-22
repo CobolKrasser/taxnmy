@@ -1,0 +1,11 @@
+key: bambu-lab/cyberbrick
+publisher: bambu-lab
+name: CyberBrick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bambulab/CyberBrick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bambulab/CyberBrick
+identifiers:
+- winget: Bambulab.CyberBrick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bambulab/CyberBrick
+aliases: []

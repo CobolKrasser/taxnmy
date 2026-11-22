@@ -1,0 +1,11 @@
+key: sidneys/pb-for-desktop
+publisher: sidneys
+name: PB for Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sidneys/pb-for-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sidneys/pb-for-desktop
+identifiers:
+- winget: sidneys.pb-for-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sidneys/pb-for-desktop
+aliases: []

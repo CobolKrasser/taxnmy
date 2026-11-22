@@ -1,0 +1,11 @@
+key: cevio/cevio-ai
+publisher: cevio
+name: CeVIO AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CeVIO/CeVIOAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CeVIO/CeVIOAI
+identifiers:
+- winget: CeVIO.CeVIOAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CeVIO/CeVIOAI
+aliases: []

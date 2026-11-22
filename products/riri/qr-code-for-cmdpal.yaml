@@ -1,0 +1,11 @@
+key: riri/qr-code-for-cmdpal
+publisher: riri
+name: QR Code for CmdPal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riri/QRCodeforCmdPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riri/QRCodeforCmdPal
+identifiers:
+- winget: Riri.QRCodeforCmdPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riri/QRCodeforCmdPal
+aliases: []

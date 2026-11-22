@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-prevent-disk-sleep
+publisher: vovsoft
+name: Vovsoft Prevent Disk Sleep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PreventDiskSleep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PreventDiskSleep
+identifiers:
+- winget: VovSoft.PreventDiskSleep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PreventDiskSleep
+aliases: []

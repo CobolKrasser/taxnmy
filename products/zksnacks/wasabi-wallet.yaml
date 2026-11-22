@@ -1,0 +1,11 @@
+key: zksnacks/wasabi-wallet
+publisher: zksnacks
+name: Wasabi Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zkSNACKs/WasabiWallet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zkSNACKs/WasabiWallet
+identifiers:
+- winget: zkSNACKs.WasabiWallet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zkSNACKs/WasabiWallet
+aliases: []

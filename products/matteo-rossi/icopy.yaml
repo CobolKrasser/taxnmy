@@ -1,0 +1,11 @@
+key: matteo-rossi/icopy
+publisher: matteo-rossi
+name: iCopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatteoRossi/iCopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatteoRossi/iCopy
+identifiers:
+- winget: MatteoRossi.iCopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatteoRossi/iCopy
+aliases: []

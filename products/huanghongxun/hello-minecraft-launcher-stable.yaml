@@ -1,0 +1,17 @@
+key: huanghongxun/hello-minecraft-launcher-stable
+publisher: huanghongxun
+name: Hello Minecraft! Launcher Stable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Stable
+identifiers:
+- winget: HMCL.HMCL.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Stable
+- winget: HMCL.HMCL.Stable.CNB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Stable/CNB
+- winget: HMCL.HMCL.Stable.Maven
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Stable/Maven
+- winget: HMCL.HMCL.Stable.Maven.TencentCloudMirror
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Stable/Maven/TencentCloudMirror
+aliases: []

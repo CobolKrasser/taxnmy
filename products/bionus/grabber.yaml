@@ -1,0 +1,11 @@
+key: bionus/grabber
+publisher: bionus
+name: Grabber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bionus/Imgbrd-Grabber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bionus/Imgbrd-Grabber
+identifiers:
+- winget: Bionus.Imgbrd-Grabber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bionus/Imgbrd-Grabber
+aliases: []

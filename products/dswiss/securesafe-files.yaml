@@ -1,0 +1,11 @@
+key: dswiss/securesafe-files
+publisher: dswiss
+name: SecureSafe Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DSwiss/SecureSafeFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DSwiss/SecureSafeFiles
+identifiers:
+- winget: DSwiss.SecureSafeFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DSwiss/SecureSafeFiles
+aliases: []

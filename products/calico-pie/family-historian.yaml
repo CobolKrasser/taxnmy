@@ -1,0 +1,11 @@
+key: calico-pie/family-historian
+publisher: calico-pie
+name: Family Historian
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CalicoPie/FamilyHistorian/7
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CalicoPie/FamilyHistorian/7
+identifiers:
+- winget: CalicoPie.FamilyHistorian.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CalicoPie/FamilyHistorian/7
+aliases: []

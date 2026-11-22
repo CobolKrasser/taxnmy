@@ -1,0 +1,11 @@
+key: ultimate-gadget-laboratories/uhk-agent
+publisher: ultimate-gadget-laboratories
+name: UHK Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UltimateGadgetLaboratories/UHKAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UltimateGadgetLaboratories/UHKAgent
+identifiers:
+- winget: UltimateGadgetLaboratories.UHKAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UltimateGadgetLaboratories/UHKAgent
+aliases: []

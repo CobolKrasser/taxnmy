@@ -1,0 +1,11 @@
+key: appwork/jdownloader-2
+publisher: appwork
+name: JDownloader 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppWork/JDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppWork/JDownloader
+identifiers:
+- winget: AppWork.JDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppWork/JDownloader
+aliases: []

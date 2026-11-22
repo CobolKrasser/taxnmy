@@ -1,0 +1,11 @@
+key: charmbracelet/sequin
+publisher: charmbracelet
+name: sequin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/sequin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/sequin
+identifiers:
+- winget: charmbracelet.sequin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/sequin
+aliases: []

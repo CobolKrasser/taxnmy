@@ -1,0 +1,11 @@
+key: sam-vanheer/half-life-asset-manager
+publisher: sam-vanheer
+name: Half-Life Asset Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamVanheer/HalfLifeAssetManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamVanheer/HalfLifeAssetManager
+identifiers:
+- winget: SamVanheer.HalfLifeAssetManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamVanheer/HalfLifeAssetManager
+aliases: []

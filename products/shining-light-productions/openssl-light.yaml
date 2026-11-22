@@ -1,0 +1,11 @@
+key: shining-light-productions/openssl-light
+publisher: shining-light-productions
+name: OpenSSL Light
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiningLight/OpenSSL/Light
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiningLight/OpenSSL/Light
+identifiers:
+- winget: ShiningLight.OpenSSL.Light
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiningLight/OpenSSL/Light
+aliases: []

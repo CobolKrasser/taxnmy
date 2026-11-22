@@ -1,0 +1,11 @@
+key: vws-python/vumark
+publisher: vws-python
+name: vumark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VWSPython/vumark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VWSPython/vumark
+identifiers:
+- winget: VWSPython.vumark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VWSPython/vumark
+aliases: []

@@ -1,0 +1,11 @@
+key: the-sabnzbd-team/sabnzbd
+publisher: the-sabnzbd-team
+name: SABnzbd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SABnzbdTeam/SABnzbd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SABnzbdTeam/SABnzbd
+identifiers:
+- winget: SABnzbdTeam.SABnzbd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SABnzbdTeam/SABnzbd
+aliases: []

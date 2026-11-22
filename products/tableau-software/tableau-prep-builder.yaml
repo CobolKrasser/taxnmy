@@ -1,0 +1,11 @@
+key: tableau-software/tableau-prep-builder
+publisher: tableau-software
+name: Tableau Prep Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tableau/PrepBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tableau/PrepBuilder
+identifiers:
+- winget: Tableau.PrepBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tableau/PrepBuilder
+aliases: []

@@ -1,0 +1,11 @@
+key: purocean/yank-note
+publisher: purocean
+name: Yank Note
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/purocean/YankNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/purocean/YankNote
+identifiers:
+- winget: purocean.YankNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/purocean/YankNote
+aliases: []

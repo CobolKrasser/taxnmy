@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-http-requester
+publisher: vovsoft
+name: Vovsoft HTTP Requester
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HTTPRequester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HTTPRequester
+identifiers:
+- winget: VovSoft.HTTPRequester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HTTPRequester
+aliases: []

@@ -1,0 +1,13 @@
+key: bitwarden/bitwarden-directory-connector
+publisher: bitwarden
+name: Bitwarden Directory Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/DirectoryConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/DirectoryConnector
+identifiers:
+- winget: Bitwarden.DirectoryConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/DirectoryConnector
+- winget: Bitwarden.DirectoryConnector.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/DirectoryConnector/CLI
+aliases: []

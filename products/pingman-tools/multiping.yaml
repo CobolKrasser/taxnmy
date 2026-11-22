@@ -1,0 +1,11 @@
+key: pingman-tools/multiping
+publisher: pingman-tools
+name: MultiPing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pingman/MultiPing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pingman/MultiPing
+identifiers:
+- winget: Pingman.MultiPing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pingman/MultiPing
+aliases: []

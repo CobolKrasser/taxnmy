@@ -1,0 +1,11 @@
+key: anywhere365/anywhere365-integrator
+publisher: anywhere365
+name: Anywhere365 Integrator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Workstreampeople/Anywhere365Integrator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Workstreampeople/Anywhere365Integrator
+identifiers:
+- winget: Workstreampeople.Anywhere365Integrator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Workstreampeople/Anywhere365Integrator
+aliases: []

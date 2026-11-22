@@ -1,0 +1,11 @@
+key: backstaff/installbuilder-enterprise
+publisher: backstaff
+name: InstallBuilder Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Enterprise
+identifiers:
+- winget: BackstaffSoftware.InstallBuilder.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Enterprise
+aliases: []

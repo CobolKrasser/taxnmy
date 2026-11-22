@@ -1,0 +1,11 @@
+key: makerbot/makerbot-print
+publisher: makerbot
+name: MakerBot Print
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MakerBot/MakerBotPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MakerBot/MakerBotPrint
+identifiers:
+- winget: MakerBot.MakerBotPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MakerBot/MakerBotPrint
+aliases: []

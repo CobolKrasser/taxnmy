@@ -1,0 +1,11 @@
+key: hello-efficiency/raven-reader
+publisher: hello-efficiency
+name: Raven Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hello-efficiency-inc/raven-reader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hello-efficiency-inc/raven-reader
+identifiers:
+- winget: hello-efficiency-inc.raven-reader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hello-efficiency-inc/raven-reader
+aliases: []

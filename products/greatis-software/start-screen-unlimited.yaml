@@ -1,0 +1,11 @@
+key: greatis-software/start-screen-unlimited
+publisher: greatis-software
+name: Start Screen Unlimited
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/StartScreenUnlimited
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/StartScreenUnlimited
+identifiers:
+- winget: Greatis.StartScreenUnlimited
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/StartScreenUnlimited
+aliases: []

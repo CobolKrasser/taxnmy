@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-turkey-server
+publisher: riot-games
+name: League of Legends (Turkey server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/TR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/TR
+identifiers:
+- winget: RiotGames.LeagueOfLegends.TR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/TR
+aliases: []

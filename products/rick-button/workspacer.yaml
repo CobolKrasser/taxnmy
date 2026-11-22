@@ -1,0 +1,11 @@
+key: rick-button/workspacer
+publisher: rick-button
+name: workspacer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rickbutton/workspacer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rickbutton/workspacer
+identifiers:
+- winget: rickbutton.workspacer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rickbutton/workspacer
+aliases: []

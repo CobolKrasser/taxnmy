@@ -1,0 +1,11 @@
+key: lizardsystems/terminal-services-manager
+publisher: lizardsystems
+name: Terminal Services Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LizardSystems/TerminalServicesManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LizardSystems/TerminalServicesManager
+identifiers:
+- winget: LizardSystems.TerminalServicesManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LizardSystems/TerminalServicesManager
+aliases: []

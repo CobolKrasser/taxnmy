@@ -1,0 +1,11 @@
+key: steve-the-killer/killershell
+publisher: steve-the-killer
+name: KillerShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteveTheKiller/KillerShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteveTheKiller/KillerShell
+identifiers:
+- winget: SteveTheKiller.KillerShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteveTheKiller/KillerShell
+aliases: []

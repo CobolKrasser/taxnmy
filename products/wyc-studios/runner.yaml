@@ -1,0 +1,11 @@
+key: wyc-studios/runner
+publisher: wyc-studios
+name: Runner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YichengWang/Runner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YichengWang/Runner
+identifiers:
+- winget: YichengWang.Runner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YichengWang/Runner
+aliases: []

@@ -1,0 +1,11 @@
+key: qgis-org/qgis
+publisher: qgis-org
+name: QGIS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSGeo/QGIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSGeo/QGIS
+identifiers:
+- winget: OSGeo.QGIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSGeo/QGIS
+aliases: []

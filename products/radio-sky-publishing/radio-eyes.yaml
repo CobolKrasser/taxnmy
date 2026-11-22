@@ -1,0 +1,11 @@
+key: radio-sky-publishing/radio-eyes
+publisher: radio-sky-publishing
+name: Radio Eyes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/RadioEyes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/RadioEyes
+identifiers:
+- winget: RadioSky.RadioEyes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/RadioEyes
+aliases: []

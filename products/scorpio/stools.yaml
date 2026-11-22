@@ -1,0 +1,11 @@
+key: scorpio/stools
+publisher: scorpio
+name: stools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scorpio/stools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scorpio/stools
+identifiers:
+- winget: Scorpio.stools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scorpio/stools
+aliases: []

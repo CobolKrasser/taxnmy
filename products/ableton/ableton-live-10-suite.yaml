@@ -1,0 +1,11 @@
+key: ableton/ableton-live-10-suite
+publisher: ableton
+name: Ableton Live 10 Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ableton/AbletonLive10Suite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ableton/AbletonLive10Suite
+identifiers:
+- winget: Ableton.AbletonLive10Suite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ableton/AbletonLive10Suite
+aliases: []

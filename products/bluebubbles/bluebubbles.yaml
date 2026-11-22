@@ -1,0 +1,11 @@
+key: bluebubbles/bluebubbles
+publisher: bluebubbles
+name: BlueBubbles
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueBubbles/BlueBubbles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueBubbles/BlueBubbles
+identifiers:
+- winget: BlueBubbles.BlueBubbles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueBubbles/BlueBubbles
+aliases: []

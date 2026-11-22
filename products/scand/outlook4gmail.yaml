@@ -1,0 +1,11 @@
+key: scand/outlook4gmail
+publisher: scand
+name: Outlook4Gmail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scand/Outlook4Gmail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scand/Outlook4Gmail
+identifiers:
+- winget: Scand.Outlook4Gmail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scand/Outlook4Gmail
+aliases: []

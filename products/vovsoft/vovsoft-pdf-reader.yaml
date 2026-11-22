@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-pdf-reader
+publisher: vovsoft
+name: Vovsoft PDF Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFReader
+identifiers:
+- winget: VovSoft.PDFReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFReader
+aliases: []

@@ -1,0 +1,11 @@
+key: aliasgui-team/aliasgui
+publisher: aliasgui-team
+name: AliasGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gary-zy/AliasGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gary-zy/AliasGUI
+identifiers:
+- winget: Gary-zy.AliasGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gary-zy/AliasGUI
+aliases: []

@@ -1,0 +1,11 @@
+key: freesm-team/freesm-launcher
+publisher: freesm-team
+name: Freesm Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreesmTeam/FreesmLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreesmTeam/FreesmLauncher
+identifiers:
+- winget: FreesmTeam.FreesmLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreesmTeam/FreesmLauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: gauzytech-inc/neatreader
+publisher: gauzytech-inc
+name: NeatReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GauzyTech/NeatReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GauzyTech/NeatReader
+identifiers:
+- winget: GauzyTech.NeatReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GauzyTech/NeatReader
+aliases: []

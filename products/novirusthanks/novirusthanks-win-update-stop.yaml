@@ -1,0 +1,13 @@
+key: novirusthanks/novirusthanks-win-update-stop
+publisher: novirusthanks
+name: NoVirusThanks Win Update Stop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/WinUpdateStop/Standard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/WinUpdateStop/Standard
+identifiers:
+- winget: NoVirusThanks.WinUpdateStop.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/WinUpdateStop/Enterprise
+- winget: NoVirusThanks.WinUpdateStop.Standard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/WinUpdateStop/Standard
+aliases: []

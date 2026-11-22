@@ -1,0 +1,11 @@
+key: spencer-putt/wabbitemu
+publisher: spencer-putt
+name: Wabbitemu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sputt/Wabbitemu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sputt/Wabbitemu
+identifiers:
+- winget: sputt.Wabbitemu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sputt/Wabbitemu
+aliases: []

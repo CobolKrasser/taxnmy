@@ -1,0 +1,11 @@
+key: swiftpoint/swiftpoint-x1-control-panel
+publisher: swiftpoint
+name: Swiftpoint X1 Control Panel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Swiftpoint/X1ControlPanel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Swiftpoint/X1ControlPanel
+identifiers:
+- winget: Swiftpoint.X1ControlPanel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Swiftpoint/X1ControlPanel
+aliases: []

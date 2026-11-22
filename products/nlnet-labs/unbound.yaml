@@ -1,0 +1,11 @@
+key: nlnet-labs/unbound
+publisher: nlnet-labs
+name: Unbound
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NLnetLabs/Unbound
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NLnetLabs/Unbound
+identifiers:
+- winget: NLnetLabs.Unbound
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NLnetLabs/Unbound
+aliases: []

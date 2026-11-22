@@ -1,0 +1,11 @@
+key: pavel-yosifovich/total-registry
+publisher: pavel-yosifovich
+name: Total Registry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PavelYosifovich/TotalRegistry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PavelYosifovich/TotalRegistry
+identifiers:
+- winget: PavelYosifovich.TotalRegistry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PavelYosifovich/TotalRegistry
+aliases: []

@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-audio-output
+publisher: adinstruments
+name: ADInstruments Audio Output
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/AudioOutput
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/AudioOutput
+identifiers:
+- winget: ADInstruments.LabChart.Extension.AudioOutput
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/AudioOutput
+aliases: []

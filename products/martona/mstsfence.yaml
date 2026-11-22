@@ -1,0 +1,11 @@
+key: martona/mstsfence
+publisher: martona
+name: mstsfence
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/martona/mstsfence
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/martona/mstsfence
+identifiers:
+- winget: martona.mstsfence
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/martona/mstsfence
+aliases: []

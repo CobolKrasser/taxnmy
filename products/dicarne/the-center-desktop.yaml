@@ -1,0 +1,11 @@
+key: dicarne/the-center-desktop
+publisher: dicarne
+name: the_center_desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dicarne/TheCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dicarne/TheCenter
+identifiers:
+- winget: Dicarne.TheCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dicarne/TheCenter
+aliases: []

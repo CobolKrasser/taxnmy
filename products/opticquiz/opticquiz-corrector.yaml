@@ -1,0 +1,11 @@
+key: opticquiz/opticquiz-corrector
+publisher: opticquiz
+name: OpticQuiz Corrector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpticQuiz/Corrector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpticQuiz/Corrector
+identifiers:
+- winget: OpticQuiz.Corrector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpticQuiz/Corrector
+aliases: []

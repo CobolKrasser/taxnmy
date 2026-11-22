@@ -1,0 +1,11 @@
+key: microsoft/pave
+publisher: microsoft
+name: Pave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Pave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Pave
+identifiers:
+- winget: Microsoft.Pave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Pave
+aliases: []

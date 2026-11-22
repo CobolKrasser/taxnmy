@@ -1,0 +1,11 @@
+key: 3cx/3cx-phone-system
+publisher: 3cx
+name: 3CX Phone System
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3CX/PhoneSystem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3CX/PhoneSystem
+identifiers:
+- winget: 3CX.PhoneSystem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3CX/PhoneSystem
+aliases: []

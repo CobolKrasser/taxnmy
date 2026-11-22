@@ -1,0 +1,11 @@
+key: sagernet/sing-box
+publisher: sagernet
+name: sing-box
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SagerNet/sing-box
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SagerNet/sing-box
+identifiers:
+- winget: SagerNet.sing-box
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SagerNet/sing-box
+aliases: []

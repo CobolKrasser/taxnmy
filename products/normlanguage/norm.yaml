@@ -1,0 +1,11 @@
+key: normlanguage/norm
+publisher: normlanguage
+name: Norm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NormLanguage/Norm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NormLanguage/Norm
+identifiers:
+- winget: NormLanguage.Norm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NormLanguage/Norm
+aliases: []

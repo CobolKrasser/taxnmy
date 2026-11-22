@@ -1,0 +1,11 @@
+key: getquantumdrive/quantumdrive
+publisher: getquantumdrive
+name: QuantumDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GetQuantumDrive/QuantumDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GetQuantumDrive/QuantumDrive
+identifiers:
+- winget: GetQuantumDrive.QuantumDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GetQuantumDrive/QuantumDrive
+aliases: []

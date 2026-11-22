@@ -1,0 +1,11 @@
+key: naglecode/packet-sender
+publisher: naglecode
+name: Packet Sender
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NagleCode/PacketSender
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NagleCode/PacketSender
+identifiers:
+- winget: NagleCode.PacketSender
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NagleCode/PacketSender
+aliases: []

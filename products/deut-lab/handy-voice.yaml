@@ -1,0 +1,11 @@
+key: deut-lab/handy-voice
+publisher: deut-lab
+name: Handy Voice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeutLab/HandyVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeutLab/HandyVoice
+identifiers:
+- winget: DeutLab.HandyVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeutLab/HandyVoice
+aliases: []

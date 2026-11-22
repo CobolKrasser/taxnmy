@@ -1,0 +1,11 @@
+key: reshade/reshade-setup-full-add-on-support
+publisher: reshade
+name: ReShade Setup (Full Add-on Support)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reshade/Setup/AddonsSupport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reshade/Setup/AddonsSupport
+identifiers:
+- winget: Reshade.Setup.AddonsSupport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reshade/Setup/AddonsSupport
+aliases: []

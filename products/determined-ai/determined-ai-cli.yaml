@@ -1,0 +1,11 @@
+key: determined-ai/determined-ai-cli
+publisher: determined-ai
+name: Determined AI CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeterminedAI/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeterminedAI/CLI
+identifiers:
+- winget: DeterminedAI.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeterminedAI/CLI
+aliases: []

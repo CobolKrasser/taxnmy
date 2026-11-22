@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-rename-multiple-files
+publisher: vovsoft
+name: Vovsoft Rename Multiple Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RenameMultipleFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RenameMultipleFiles
+identifiers:
+- winget: VovSoft.RenameMultipleFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RenameMultipleFiles
+aliases: []

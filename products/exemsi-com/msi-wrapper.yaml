@@ -1,0 +1,11 @@
+key: exemsi-com/msi-wrapper
+publisher: exemsi-com
+name: MSI Wrapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EXEMSI/MSIWrapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EXEMSI/MSIWrapper
+identifiers:
+- winget: EXEMSI.MSIWrapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EXEMSI/MSIWrapper
+aliases: []

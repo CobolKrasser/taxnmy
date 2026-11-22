@@ -1,0 +1,11 @@
+key: metacubex/metacubexd
+publisher: metacubex
+name: MetaCubeXD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/MetaCubeXD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/MetaCubeXD
+identifiers:
+- winget: MetaCubeX.MetaCubeXD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/MetaCubeXD
+aliases: []

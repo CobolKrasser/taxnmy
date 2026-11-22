@@ -1,0 +1,11 @@
+key: motionteam/motion-desktop-app
+publisher: motionteam
+name: Motion Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MotionTeam/MotionDesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MotionTeam/MotionDesktopApp
+identifiers:
+- winget: MotionTeam.MotionDesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MotionTeam/MotionDesktopApp
+aliases: []

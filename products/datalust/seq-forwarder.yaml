@@ -1,0 +1,11 @@
+key: datalust/seq-forwarder
+publisher: datalust
+name: Seq Forwarder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/seqfwd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/seqfwd
+identifiers:
+- winget: Datalust.seqfwd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/seqfwd
+aliases: []

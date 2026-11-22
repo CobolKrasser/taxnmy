@@ -1,0 +1,11 @@
+key: muse-group/musehub
+publisher: muse-group
+name: MuseHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Muse/MuseHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Muse/MuseHub
+identifiers:
+- winget: Muse.MuseHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Muse/MuseHub
+aliases: []

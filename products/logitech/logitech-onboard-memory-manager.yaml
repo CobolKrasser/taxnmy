@@ -1,0 +1,11 @@
+key: logitech/logitech-onboard-memory-manager
+publisher: logitech
+name: Logitech Onboard Memory Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/OnboardMemoryManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/OnboardMemoryManager
+identifiers:
+- winget: Logitech.OnboardMemoryManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/OnboardMemoryManager
+aliases: []

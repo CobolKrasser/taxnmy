@@ -1,0 +1,11 @@
+key: jared-breland/universal-extractor
+publisher: jared-breland
+name: Universal Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jbreland/uniextract
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jbreland/uniextract
+identifiers:
+- winget: jbreland.uniextract
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jbreland/uniextract
+aliases: []

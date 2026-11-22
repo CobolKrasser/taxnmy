@@ -1,0 +1,11 @@
+key: loganai/portghost
+publisher: loganai
+name: PortGhost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortGhost/PortGhost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortGhost/PortGhost
+identifiers:
+- winget: PortGhost.PortGhost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortGhost/PortGhost
+aliases: []

@@ -1,0 +1,11 @@
+key: team-sophia/sophiapp
+publisher: team-sophia
+name: SophiApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSophia/SophiApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSophia/SophiApp
+identifiers:
+- winget: TeamSophia.SophiApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSophia/SophiApp
+aliases: []

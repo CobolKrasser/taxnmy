@@ -1,0 +1,11 @@
+key: cognition-ai/devin-cli
+publisher: cognition-ai
+name: Devin CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CognitionAI/DevinCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CognitionAI/DevinCLI
+identifiers:
+- winget: CognitionAI.DevinCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CognitionAI/DevinCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: lumin/lumin
+publisher: lumin
+name: Lumin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wmwlwmwl/LuminSSH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wmwlwmwl/LuminSSH
+identifiers:
+- winget: wmwlwmwl.LuminSSH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wmwlwmwl/LuminSSH
+aliases: []

@@ -1,0 +1,11 @@
+key: binjr/binjr
+publisher: binjr
+name: binjr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binjr/core-x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binjr/core-x64
+identifiers:
+- winget: binjr.core-x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binjr/core-x64
+aliases: []

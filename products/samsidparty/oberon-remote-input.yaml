@@ -1,0 +1,11 @@
+key: samsidparty/oberon-remote-input
+publisher: samsidparty
+name: Oberon Remote Input
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/OberonRemote/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/OberonRemote/Client
+identifiers:
+- winget: SamsidParty.OberonRemote.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/OberonRemote/Client
+aliases: []

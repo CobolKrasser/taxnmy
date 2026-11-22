@@ -1,0 +1,11 @@
+key: marlocarlo/psnet
+publisher: marlocarlo
+name: psnet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/psnet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/psnet
+identifiers:
+- winget: marlocarlo.psnet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/psnet
+aliases: []

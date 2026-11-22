@@ -1,0 +1,11 @@
+key: easeus/easeus-recexperts
+publisher: easeus
+name: EaseUS RecExperts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/RecExperts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/RecExperts
+identifiers:
+- winget: EaseUS.RecExperts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/RecExperts
+aliases: []

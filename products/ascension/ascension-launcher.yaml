@@ -1,0 +1,11 @@
+key: ascension/ascension-launcher
+publisher: ascension
+name: Ascension Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascension/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascension/Launcher
+identifiers:
+- winget: Ascension.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascension/Launcher
+aliases: []

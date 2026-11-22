@@ -1,0 +1,11 @@
+key: ideamk/dds-viewer
+publisher: ideamk
+name: DDS Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/DDSViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/DDSViewer
+identifiers:
+- winget: IdeaMK.DDSViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/DDSViewer
+aliases: []

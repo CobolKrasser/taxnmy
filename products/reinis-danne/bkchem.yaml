@@ -1,0 +1,11 @@
+key: reinis-danne/bkchem
+publisher: reinis-danne
+name: BKChem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BedaKosata/BKChem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BedaKosata/BKChem
+identifiers:
+- winget: BedaKosata.BKChem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BedaKosata/BKChem
+aliases: []

@@ -1,0 +1,11 @@
+key: pouriya-parniyan/pulse
+publisher: pouriya-parniyan
+name: Pulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wl-std/pulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wl-std/pulse
+identifiers:
+- winget: wl-std.pulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wl-std/pulse
+aliases: []

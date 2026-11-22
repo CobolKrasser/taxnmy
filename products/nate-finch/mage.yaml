@@ -1,0 +1,11 @@
+key: nate-finch/mage
+publisher: nate-finch
+name: Mage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magefile/mage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magefile/mage
+identifiers:
+- winget: Magefile.mage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magefile/mage
+aliases: []

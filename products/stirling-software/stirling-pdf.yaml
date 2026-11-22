@@ -1,0 +1,11 @@
+key: stirling-software/stirling-pdf
+publisher: stirling-software
+name: Stirling-PDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StirlingTools/StirlingPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StirlingTools/StirlingPDF
+identifiers:
+- winget: StirlingTools.StirlingPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StirlingTools/StirlingPDF
+aliases: []

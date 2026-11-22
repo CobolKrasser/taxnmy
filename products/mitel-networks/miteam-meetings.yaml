@@ -1,0 +1,11 @@
+key: mitel-networks/miteam-meetings
+publisher: mitel-networks
+name: MiTeam Meetings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mitel/MiTeamMeetings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mitel/MiTeamMeetings
+identifiers:
+- winget: Mitel.MiTeamMeetings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mitel/MiTeamMeetings
+aliases: []

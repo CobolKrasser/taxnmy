@@ -1,0 +1,11 @@
+key: orica/shotplus
+publisher: orica
+name: SHOTPlus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orica/SHOTPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orica/SHOTPlus
+identifiers:
+- winget: Orica.SHOTPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orica/SHOTPlus
+aliases: []

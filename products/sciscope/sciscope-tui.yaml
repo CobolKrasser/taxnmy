@@ -1,0 +1,11 @@
+key: sciscope/sciscope-tui
+publisher: sciscope
+name: SciScope TUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SciScope/SciScopeTUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SciScope/SciScopeTUI
+identifiers:
+- winget: SciScope.SciScopeTUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SciScope/SciScopeTUI
+aliases: []

@@ -1,0 +1,11 @@
+key: framefilter/keyroost
+publisher: framefilter
+name: keyroost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Framefilter/Keyroost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Framefilter/Keyroost
+identifiers:
+- winget: Framefilter.Keyroost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Framefilter/Keyroost
+aliases: []

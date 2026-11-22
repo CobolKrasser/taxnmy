@@ -1,0 +1,11 @@
+key: zoom/zoom-skype-for-business-plugin
+publisher: zoom
+name: Zoom Skype for Business Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomSkypeForBusinessPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomSkypeForBusinessPlugin
+identifiers:
+- winget: Zoom.ZoomSkypeForBusinessPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomSkypeForBusinessPlugin
+aliases: []

@@ -1,0 +1,11 @@
+key: streamingdv/pxplay
+publisher: streamingdv
+name: PXPlay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/streamingdv/PXPlay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/streamingdv/PXPlay
+identifiers:
+- winget: streamingdv.PXPlay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/streamingdv/PXPlay
+aliases: []

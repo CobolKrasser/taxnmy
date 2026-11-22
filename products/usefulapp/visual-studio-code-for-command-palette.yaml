@@ -1,0 +1,11 @@
+key: usefulapp/visual-studio-code-for-command-palette
+publisher: usefulapp
+name: Visual Studio / Code for Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/15722UsefulApp/WorkspaceLauncherForVSCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/15722UsefulApp/WorkspaceLauncherForVSCode
+identifiers:
+- winget: 15722UsefulApp.WorkspaceLauncherForVSCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/15722UsefulApp/WorkspaceLauncherForVSCode
+aliases: []

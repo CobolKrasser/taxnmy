@@ -1,0 +1,11 @@
+key: opendsc/opendsc-local-configuration-manager
+publisher: opendsc
+name: OpenDsc Local Configuration Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Lcm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Lcm
+identifiers:
+- winget: OpenDsc.Lcm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Lcm
+aliases: []

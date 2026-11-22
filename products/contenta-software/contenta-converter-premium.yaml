@@ -1,0 +1,11 @@
+key: contenta-software/contenta-converter-premium
+publisher: contenta-software
+name: Contenta Converter PREMIUM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContentaSoft/ContentaConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContentaSoft/ContentaConverter
+identifiers:
+- winget: ContentaSoft.ContentaConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContentaSoft/ContentaConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: turtle-beach/turtle-beach-audio-hub
+publisher: turtle-beach
+name: Turtle Beach Audio Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TurtleBeach/AudioHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TurtleBeach/AudioHub
+identifiers:
+- winget: TurtleBeach.AudioHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TurtleBeach/AudioHub
+aliases: []

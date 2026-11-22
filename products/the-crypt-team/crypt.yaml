@@ -1,0 +1,11 @@
+key: the-crypt-team/crypt
+publisher: the-crypt-team
+name: Crypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheCryptTeam/Crypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheCryptTeam/Crypt
+identifiers:
+- winget: TheCryptTeam.Crypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheCryptTeam/Crypt
+aliases: []

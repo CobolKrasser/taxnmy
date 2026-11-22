@@ -1,0 +1,11 @@
+key: the-lightspark-developers/lightspark
+publisher: the-lightspark-developers
+name: Lightspark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lightspark/lightspark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lightspark/lightspark
+identifiers:
+- winget: lightspark.lightspark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lightspark/lightspark
+aliases: []

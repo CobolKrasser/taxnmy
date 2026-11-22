@@ -1,0 +1,11 @@
+key: wherewhere/apk-installer
+publisher: wherewhere
+name: APK Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wherewhere/APKInstaller/Classic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wherewhere/APKInstaller/Classic
+identifiers:
+- winget: wherewhere.APKInstaller.Classic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wherewhere/APKInstaller/Classic
+aliases: []

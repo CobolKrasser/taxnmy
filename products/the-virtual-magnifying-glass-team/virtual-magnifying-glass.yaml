@@ -1,0 +1,11 @@
+key: the-virtual-magnifying-glass-team/virtual-magnifying-glass
+publisher: the-virtual-magnifying-glass-team
+name: Virtual Magnifying Glass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualMagnifyingGlass/VirtualMagnifyingGlass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualMagnifyingGlass/VirtualMagnifyingGlass
+identifiers:
+- winget: VirtualMagnifyingGlass.VirtualMagnifyingGlass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualMagnifyingGlass/VirtualMagnifyingGlass
+aliases: []

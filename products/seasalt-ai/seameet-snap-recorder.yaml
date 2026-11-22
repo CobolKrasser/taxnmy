@@ -1,0 +1,11 @@
+key: seasalt-ai/seameet-snap-recorder
+publisher: seasalt-ai
+name: SeaMeet Snap Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeasaltAI/SeaMeetSnapRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeasaltAI/SeaMeetSnapRecorder
+identifiers:
+- winget: SeasaltAI.SeaMeetSnapRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeasaltAI/SeaMeetSnapRecorder
+aliases: []

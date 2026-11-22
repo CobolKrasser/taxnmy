@@ -1,0 +1,11 @@
+key: deviceinsight/kafkactl-aws-plugin
+publisher: deviceinsight
+name: kafkactl-aws-plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl-aws-plugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl-aws-plugin
+identifiers:
+- winget: deviceinsight.kafkactl-aws-plugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceinsight/kafkactl-aws-plugin
+aliases: []

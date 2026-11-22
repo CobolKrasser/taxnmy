@@ -1,0 +1,11 @@
+key: navimatics/winfsp-beta2
+publisher: navimatics
+name: WinFsp Beta2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFsp/WinFsp/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFsp/WinFsp/Beta
+identifiers:
+- winget: WinFsp.WinFsp.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFsp/WinFsp/Beta
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/haystack-editor
+publisher: microsoft
+name: Haystack Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaystackSoftware/HaystackEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaystackSoftware/HaystackEditor
+identifiers:
+- winget: HaystackSoftware.HaystackEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaystackSoftware/HaystackEditor
+aliases: []

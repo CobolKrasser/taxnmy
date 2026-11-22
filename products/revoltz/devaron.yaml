@@ -1,0 +1,11 @@
+key: revoltz/devaron
+publisher: revoltz
+name: Devaron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revoltz/Devaron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revoltz/Devaron
+identifiers:
+- winget: Revoltz.Devaron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revoltz/Devaron
+aliases: []

@@ -1,0 +1,11 @@
+key: supergames/flying-cube
+publisher: supergames
+name: Flying Cube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/realsast/FlyingCube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/realsast/FlyingCube
+identifiers:
+- winget: realsast.FlyingCube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/realsast/FlyingCube
+aliases: []

@@ -1,0 +1,11 @@
+key: vcc/vcc
+publisher: vcc
+name: VCC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mateo-ki/VCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mateo-ki/VCC
+identifiers:
+- winget: mateo-ki.VCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mateo-ki/VCC
+aliases: []

@@ -1,0 +1,11 @@
+key: broadcast-radio/broadcast-radio-live
+publisher: broadcast-radio
+name: Broadcast Radio Live
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/BRLiveStudioClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/BRLiveStudioClient
+identifiers:
+- winget: BroadcastRadio.BRLiveStudioClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/BRLiveStudioClient
+aliases: []

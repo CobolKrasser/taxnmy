@@ -1,0 +1,11 @@
+key: lune-devs/lune
+publisher: lune-devs
+name: Lune
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/saraansx/Lune
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/saraansx/Lune
+identifiers:
+- winget: saraansx.Lune
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/saraansx/Lune
+aliases: []

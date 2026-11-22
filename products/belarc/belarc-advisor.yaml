@@ -1,0 +1,11 @@
+key: belarc/belarc-advisor
+publisher: belarc
+name: Belarc Advisor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belarc/Advisor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belarc/Advisor
+identifiers:
+- winget: Belarc.Advisor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belarc/Advisor
+aliases: []

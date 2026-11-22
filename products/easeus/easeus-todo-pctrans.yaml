@@ -1,0 +1,11 @@
+key: easeus/easeus-todo-pctrans
+publisher: easeus
+name: EaseUS Todo PCTrans
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/TodoPCTrans
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/TodoPCTrans
+identifiers:
+- winget: EaseUS.TodoPCTrans
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/TodoPCTrans
+aliases: []

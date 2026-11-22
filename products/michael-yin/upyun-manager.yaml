@@ -1,0 +1,11 @@
+key: michael-yin/upyun-manager
+publisher: michael-yin
+name: Upyun Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/layerssss/manager-for-upyun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/layerssss/manager-for-upyun
+identifiers:
+- winget: layerssss.manager-for-upyun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/layerssss/manager-for-upyun
+aliases: []

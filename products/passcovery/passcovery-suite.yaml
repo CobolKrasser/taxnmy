@@ -1,0 +1,11 @@
+key: passcovery/passcovery-suite
+publisher: passcovery
+name: Passcovery Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Passcovery/PasscoverySuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Passcovery/PasscoverySuite
+identifiers:
+- winget: Passcovery.PasscoverySuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Passcovery/PasscoverySuite
+aliases: []

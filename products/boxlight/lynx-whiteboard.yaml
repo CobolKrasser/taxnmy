@@ -1,0 +1,11 @@
+key: boxlight/lynx-whiteboard
+publisher: boxlight
+name: LYNX Whiteboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoxlightCorporation/LYNXWhiteboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoxlightCorporation/LYNXWhiteboard
+identifiers:
+- winget: BoxlightCorporation.LYNXWhiteboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoxlightCorporation/LYNXWhiteboard
+aliases: []

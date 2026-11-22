@@ -1,0 +1,11 @@
+key: lobsterai/lobsterai
+publisher: lobsterai
+name: LobsterAI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetEase/LobsterAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetEase/LobsterAI
+identifiers:
+- winget: NetEase.LobsterAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetEase/LobsterAI
+aliases: []

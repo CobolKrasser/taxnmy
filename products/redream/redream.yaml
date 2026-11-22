@@ -1,0 +1,11 @@
+key: redream/redream
+publisher: redream
+name: redream
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redream/redream
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redream/redream
+identifiers:
+- winget: redream.redream
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redream/redream
+aliases: []

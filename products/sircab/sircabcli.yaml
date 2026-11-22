@@ -1,0 +1,11 @@
+key: sircab/sircabcli
+publisher: sircab
+name: SirCabCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirCab/SirCabCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirCab/SirCabCLI
+identifiers:
+- winget: SirCab.SirCabCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirCab/SirCabCLI
+aliases: []

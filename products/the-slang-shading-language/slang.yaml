@@ -1,0 +1,11 @@
+key: the-slang-shading-language/slang
+publisher: the-slang-shading-language
+name: Slang
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shader-slang/slang
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shader-slang/slang
+identifiers:
+- winget: shader-slang.slang
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shader-slang/slang
+aliases: []

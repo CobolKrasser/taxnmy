@@ -1,0 +1,11 @@
+key: openvr-advanced-settings-team/openvr-advanced-settings
+publisher: openvr-advanced-settings-team
+name: OpenVR Advanced Settings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OVRASTeam/OpenVR-AdvancedSettings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OVRASTeam/OpenVR-AdvancedSettings
+identifiers:
+- winget: OVRASTeam.OpenVR-AdvancedSettings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OVRASTeam/OpenVR-AdvancedSettings
+aliases: []

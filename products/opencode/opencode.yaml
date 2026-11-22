@@ -1,0 +1,11 @@
+key: opencode/opencode
+publisher: opencode
+name: OpenCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anomaly/OpenCode/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anomaly/OpenCode/Desktop
+identifiers:
+- winget: Anomaly.OpenCode.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anomaly/OpenCode/Desktop
+aliases: []

@@ -1,0 +1,11 @@
+key: discriminatornl/pdw-paging-decoder-software
+publisher: discriminatornl
+name: PDW Paging Decoder Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discriminator/PDW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discriminator/PDW
+identifiers:
+- winget: Discriminator.PDW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discriminator/PDW
+aliases: []

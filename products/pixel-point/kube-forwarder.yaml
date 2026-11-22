@@ -1,0 +1,11 @@
+key: pixel-point/kube-forwarder
+publisher: pixel-point
+name: Kube Forwarder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pixel-point/kube-forwarder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pixel-point/kube-forwarder
+identifiers:
+- winget: pixel-point.kube-forwarder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pixel-point/kube-forwarder
+aliases: []

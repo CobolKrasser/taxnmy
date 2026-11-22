@@ -1,0 +1,11 @@
+key: is-decisions/isdecisions-userlock-agent
+publisher: is-decisions
+name: ISDecisions UserLock Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISDecisions/UserLockAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISDecisions/UserLockAgent
+identifiers:
+- winget: ISDecisions.UserLockAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISDecisions/UserLockAgent
+aliases: []

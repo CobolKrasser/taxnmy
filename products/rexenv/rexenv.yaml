@@ -1,0 +1,11 @@
+key: rexenv/rexenv
+publisher: rexenv
+name: rexenv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rexenv/rexenv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rexenv/rexenv
+identifiers:
+- winget: rexenv.rexenv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rexenv/rexenv
+aliases: []

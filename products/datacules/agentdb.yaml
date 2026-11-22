@@ -1,0 +1,11 @@
+key: datacules/agentdb
+publisher: datacules
+name: AgentDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datacules/AgentDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datacules/AgentDB
+identifiers:
+- winget: Datacules.AgentDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datacules/AgentDB
+aliases: []

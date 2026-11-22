@@ -1,0 +1,11 @@
+key: tidal-music/tidal
+publisher: tidal-music
+name: TIDAL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TIDALMusicAS/TIDAL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TIDALMusicAS/TIDAL
+identifiers:
+- winget: TIDALMusicAS.TIDAL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TIDALMusicAS/TIDAL
+aliases: []

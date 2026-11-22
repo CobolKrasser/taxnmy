@@ -1,0 +1,11 @@
+key: serverdata-net/elevate-teams-desktop-plugin
+publisher: serverdata-net
+name: Elevate Teams Desktop plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ElevateTeamsDesktopPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ElevateTeamsDesktopPlugin
+identifiers:
+- winget: Serverdata.ElevateTeamsDesktopPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ElevateTeamsDesktopPlugin
+aliases: []

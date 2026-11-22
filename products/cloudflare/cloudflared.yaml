@@ -1,0 +1,11 @@
+key: cloudflare/cloudflared
+publisher: cloudflare
+name: cloudflared
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudflare/cloudflared
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudflare/cloudflared
+identifiers:
+- winget: Cloudflare.cloudflared
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudflare/cloudflared
+aliases: []

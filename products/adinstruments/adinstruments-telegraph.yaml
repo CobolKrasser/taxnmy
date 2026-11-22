@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-telegraph
+publisher: adinstruments
+name: ADInstruments Telegraph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Telegraph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Telegraph
+identifiers:
+- winget: ADInstruments.LabChart.Extension.Telegraph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Telegraph
+aliases: []

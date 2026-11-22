@@ -1,0 +1,11 @@
+key: the-sz-development/cpugrabex
+publisher: the-sz-development
+name: CPUGrabEx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CPUGrabEx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CPUGrabEx
+identifiers:
+- winget: the-sz.CPUGrabEx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CPUGrabEx
+aliases: []

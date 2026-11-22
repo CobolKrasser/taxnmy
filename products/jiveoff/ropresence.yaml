@@ -1,0 +1,11 @@
+key: jiveoff/ropresence
+publisher: jiveoff
+name: ropresence
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JiveOff/roPresence
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JiveOff/roPresence
+identifiers:
+- winget: JiveOff.roPresence
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JiveOff/roPresence
+aliases: []

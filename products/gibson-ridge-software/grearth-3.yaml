@@ -1,0 +1,11 @@
+key: gibson-ridge-software/grearth-3
+publisher: gibson-ridge-software
+name: GREarth 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GREarth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GREarth
+identifiers:
+- winget: GRLevelX.GREarth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GREarth
+aliases: []

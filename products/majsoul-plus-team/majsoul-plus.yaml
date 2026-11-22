@@ -1,0 +1,11 @@
+key: majsoul-plus-team/majsoul-plus
+publisher: majsoul-plus-team
+name: Majsoul Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MajsoulPlus/MajsoulPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MajsoulPlus/MajsoulPlus
+identifiers:
+- winget: MajsoulPlus.MajsoulPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MajsoulPlus/MajsoulPlus
+aliases: []

@@ -1,0 +1,11 @@
+key: xsplit/xsplit-broadcaster
+publisher: xsplit
+name: XSplit Broadcaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitBroadcaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitBroadcaster
+identifiers:
+- winget: SplitmediaLabs.XSplitBroadcaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitBroadcaster
+aliases: []

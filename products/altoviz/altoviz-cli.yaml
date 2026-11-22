@@ -1,0 +1,11 @@
+key: altoviz/altoviz-cli
+publisher: altoviz
+name: Altoviz CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altoviz/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altoviz/CLI
+identifiers:
+- winget: Altoviz.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altoviz/CLI
+aliases: []

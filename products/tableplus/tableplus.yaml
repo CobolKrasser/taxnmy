@@ -1,0 +1,11 @@
+key: tableplus/tableplus
+publisher: tableplus
+name: TablePlus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TablePlus/TablePlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TablePlus/TablePlus
+identifiers:
+- winget: TablePlus.TablePlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TablePlus/TablePlus
+aliases: []

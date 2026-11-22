@@ -1,0 +1,11 @@
+key: aome510/spotify-player
+publisher: aome510
+name: spotify_player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aome510/spotify-player
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aome510/spotify-player
+identifiers:
+- winget: aome510.spotify-player
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aome510/spotify-player
+aliases: []

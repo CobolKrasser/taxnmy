@@ -1,0 +1,11 @@
+key: japplis/applet-runner-pro
+publisher: japplis
+name: Applet Runner Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/AppletRunnerPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/AppletRunnerPro
+identifiers:
+- winget: Japplis.AppletRunnerPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/AppletRunnerPro
+aliases: []

@@ -1,0 +1,11 @@
+key: lxb-studio/envoy
+publisher: lxb-studio
+name: Envoy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LXBStudio/Envoy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LXBStudio/Envoy
+identifiers:
+- winget: LXBStudio.Envoy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LXBStudio/Envoy
+aliases: []

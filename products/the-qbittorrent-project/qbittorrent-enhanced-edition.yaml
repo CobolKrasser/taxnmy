@@ -1,0 +1,11 @@
+key: the-qbittorrent-project/qbittorrent-enhanced-edition
+publisher: the-qbittorrent-project
+name: qBittorrent Enhanced Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/c0re100/qBittorrent-Enhanced-Edition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/c0re100/qBittorrent-Enhanced-Edition
+identifiers:
+- winget: c0re100.qBittorrent-Enhanced-Edition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/c0re100/qBittorrent-Enhanced-Edition
+aliases: []

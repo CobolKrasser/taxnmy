@@ -1,0 +1,11 @@
+key: greatis-software/a1runguard
+publisher: greatis-software
+name: A1RunGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/A1RunGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/A1RunGuard
+identifiers:
+- winget: Greatis.A1RunGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/A1RunGuard
+aliases: []

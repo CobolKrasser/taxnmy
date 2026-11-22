@@ -1,0 +1,11 @@
+key: bzflag/bzflag
+publisher: bzflag
+name: BZFlag
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BZFlag/BZFlag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BZFlag/BZFlag
+identifiers:
+- winget: BZFlag.BZFlag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BZFlag/BZFlag
+aliases: []

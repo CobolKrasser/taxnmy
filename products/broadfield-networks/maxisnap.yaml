@@ -1,0 +1,11 @@
+key: broadfield-networks/maxisnap
+publisher: broadfield-networks
+name: Maxisnap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadfieldNetworks/Maxisnap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadfieldNetworks/Maxisnap
+identifiers:
+- winget: BroadfieldNetworks.Maxisnap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadfieldNetworks/Maxisnap
+aliases: []

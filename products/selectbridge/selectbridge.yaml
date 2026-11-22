@@ -1,0 +1,11 @@
+key: selectbridge/selectbridge
+publisher: selectbridge
+name: SelectBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k4if3ng/SelectBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k4if3ng/SelectBridge
+identifiers:
+- winget: k4if3ng.SelectBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k4if3ng/SelectBridge
+aliases: []

@@ -1,0 +1,11 @@
+key: fahrenheit-research/rustmaps
+publisher: fahrenheit-research
+name: RustMaps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustMaps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustMaps
+identifiers:
+- winget: FahrenheitResearch.RustMaps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustMaps
+aliases: []

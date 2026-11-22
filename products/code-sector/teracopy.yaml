@@ -1,0 +1,11 @@
+key: code-sector/teracopy
+publisher: code-sector
+name: TeraCopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSector/TeraCopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSector/TeraCopy
+identifiers:
+- winget: CodeSector.TeraCopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSector/TeraCopy
+aliases: []

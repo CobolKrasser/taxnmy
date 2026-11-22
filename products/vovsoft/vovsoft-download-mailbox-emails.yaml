@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-download-mailbox-emails
+publisher: vovsoft
+name: Vovsoft Download Mailbox Emails
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DownloadMailboxEmails
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DownloadMailboxEmails
+identifiers:
+- winget: VovSoft.DownloadMailboxEmails
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DownloadMailboxEmails
+aliases: []

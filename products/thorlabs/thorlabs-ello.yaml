@@ -1,0 +1,11 @@
+key: thorlabs/thorlabs-ello
+publisher: thorlabs
+name: Thorlabs ELLO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ELLO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ELLO
+identifiers:
+- winget: Thorlabs.ELLO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ELLO
+aliases: []

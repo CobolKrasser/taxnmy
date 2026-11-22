@@ -1,0 +1,11 @@
+key: yarlis/sdods
+publisher: yarlis
+name: SDODS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDODS/SDODS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDODS/SDODS
+identifiers:
+- winget: SDODS.SDODS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDODS/SDODS
+aliases: []

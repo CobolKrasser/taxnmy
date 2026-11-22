@@ -1,0 +1,11 @@
+key: runsafe/browser-picker
+publisher: runsafe
+name: Browser Picker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mortenn/BrowserPicker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mortenn/BrowserPicker
+identifiers:
+- winget: mortenn.BrowserPicker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mortenn/BrowserPicker
+aliases: []

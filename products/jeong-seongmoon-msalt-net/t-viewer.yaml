@@ -1,0 +1,11 @@
+key: jeong-seongmoon-msalt-net/t-viewer
+publisher: jeong-seongmoon-msalt-net
+name: T.Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/msaltnet/TViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/msaltnet/TViewer
+identifiers:
+- winget: msaltnet.TViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/msaltnet/TViewer
+aliases: []

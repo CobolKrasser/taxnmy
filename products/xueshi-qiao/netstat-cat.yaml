@@ -1,0 +1,11 @@
+key: xueshi-qiao/netstat-cat
+publisher: xueshi-qiao
+name: Netstat Cat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XueshiQiao/NetstatCat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XueshiQiao/NetstatCat
+identifiers:
+- winget: XueshiQiao.NetstatCat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XueshiQiao/NetstatCat
+aliases: []

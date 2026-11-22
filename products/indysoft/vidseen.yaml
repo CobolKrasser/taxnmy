@@ -1,0 +1,11 @@
+key: indysoft/vidseen
+publisher: indysoft
+name: VidSeen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IndySoft/VidSeen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IndySoft/VidSeen
+identifiers:
+- winget: IndySoft.VidSeen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IndySoft/VidSeen
+aliases: []

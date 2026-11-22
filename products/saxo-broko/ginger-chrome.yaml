@@ -1,0 +1,11 @@
+key: saxo-broko/ginger-chrome
+publisher: saxo-broko
+name: Ginger Chrome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saxo_Broko/GingerChrome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saxo_Broko/GingerChrome
+identifiers:
+- winget: Saxo_Broko.GingerChrome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saxo_Broko/GingerChrome
+aliases: []

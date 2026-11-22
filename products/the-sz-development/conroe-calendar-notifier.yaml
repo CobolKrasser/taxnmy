@@ -1,0 +1,11 @@
+key: the-sz-development/conroe-calendar-notifier
+publisher: the-sz-development
+name: Conroe Calendar Notifier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Conroe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Conroe
+identifiers:
+- winget: the-sz.Conroe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Conroe
+aliases: []

@@ -1,0 +1,11 @@
+key: jessie-wadman/securedelete
+publisher: jessie-wadman
+name: SecureDelete
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JessieWadman/SecureDelete
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JessieWadman/SecureDelete
+identifiers:
+- winget: JessieWadman.SecureDelete
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JessieWadman/SecureDelete
+aliases: []

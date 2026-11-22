@@ -1,0 +1,11 @@
+key: smartbooth/portalert
+publisher: smartbooth
+name: PortAlert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/PortAlert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/PortAlert
+identifiers:
+- winget: Smartbooth.PortAlert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/PortAlert
+aliases: []

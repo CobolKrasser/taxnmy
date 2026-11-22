@@ -1,0 +1,11 @@
+key: cytrence-technologies/cytrencekiwi
+publisher: cytrence-technologies
+name: CytrenceKiwi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cytrence/Kiwi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cytrence/Kiwi
+identifiers:
+- winget: Cytrence.Kiwi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cytrence/Kiwi
+aliases: []

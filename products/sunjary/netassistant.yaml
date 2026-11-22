@@ -1,0 +1,11 @@
+key: sunjary/netassistant
+publisher: sunjary
+name: NetAssistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SunJary/NetAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SunJary/NetAssistant
+identifiers:
+- winget: SunJary.NetAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SunJary/NetAssistant
+aliases: []

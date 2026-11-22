@@ -1,0 +1,11 @@
+key: japplis/sheet-viewer
+publisher: japplis
+name: Sheet Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/SheetViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/SheetViewer
+identifiers:
+- winget: Japplis.SheetViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/SheetViewer
+aliases: []

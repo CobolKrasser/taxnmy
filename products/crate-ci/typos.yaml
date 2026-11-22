@@ -1,0 +1,11 @@
+key: crate-ci/typos
+publisher: crate-ci
+name: Typos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crate-CI/Typos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crate-CI/Typos
+identifiers:
+- winget: Crate-CI.Typos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crate-CI/Typos
+aliases: []

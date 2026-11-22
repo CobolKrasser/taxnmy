@@ -1,0 +1,11 @@
+key: the-pokemon-company-international/pokemon-trading-card-game-live
+publisher: the-pokemon-company-international
+name: Pokemon Trading Card Game Live
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePokemonCompany/PokemonTCGLive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePokemonCompany/PokemonTCGLive
+identifiers:
+- winget: ThePokemonCompany.PokemonTCGLive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePokemonCompany/PokemonTCGLive
+aliases: []

@@ -1,0 +1,11 @@
+key: bodaay/huggingface-model-downloader
+publisher: bodaay
+name: HuggingFace Model Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bodaay/hfdownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bodaay/hfdownloader
+identifiers:
+- winget: bodaay.hfdownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bodaay/hfdownloader
+aliases: []

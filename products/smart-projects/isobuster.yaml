@@ -1,0 +1,11 @@
+key: smart-projects/isobuster
+publisher: smart-projects
+name: IsoBuster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartProjects/IsoBuster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartProjects/IsoBuster
+identifiers:
+- winget: SmartProjects.IsoBuster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartProjects/IsoBuster
+aliases: []

@@ -1,0 +1,11 @@
+key: k-software/dxlog-net
+publisher: k-software
+name: DXLog.net
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K-Software/DXLog/net
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K-Software/DXLog/net
+identifiers:
+- winget: K-Software.DXLog.net
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K-Software/DXLog/net
+aliases: []

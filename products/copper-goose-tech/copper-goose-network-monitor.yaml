@@ -1,0 +1,11 @@
+key: copper-goose-tech/copper-goose-network-monitor
+publisher: copper-goose-tech
+name: Copper Goose Network Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopperGooseTech/CopperGooseNetworkMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopperGooseTech/CopperGooseNetworkMonitor
+identifiers:
+- winget: CopperGooseTech.CopperGooseNetworkMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopperGooseTech/CopperGooseNetworkMonitor
+aliases: []

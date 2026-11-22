@@ -1,0 +1,11 @@
+key: cjwdev/process-prompt
+publisher: cjwdev
+name: Process Prompt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ProcessPrompt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ProcessPrompt
+identifiers:
+- winget: Cjwdev.ProcessPrompt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ProcessPrompt
+aliases: []

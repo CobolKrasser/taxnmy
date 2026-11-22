@@ -1,0 +1,11 @@
+key: appest-com/ticktick
+publisher: appest-com
+name: TickTick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Appest/TickTick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Appest/TickTick
+identifiers:
+- winget: Appest.TickTick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Appest/TickTick
+aliases: []

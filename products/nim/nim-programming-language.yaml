@@ -1,0 +1,11 @@
+key: nim/nim-programming-language
+publisher: nim
+name: Nim programming language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nim/nim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nim/nim
+identifiers:
+- winget: nim.nim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nim/nim
+aliases: []

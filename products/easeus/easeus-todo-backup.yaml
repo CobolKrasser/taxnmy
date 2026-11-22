@@ -1,0 +1,11 @@
+key: easeus/easeus-todo-backup
+publisher: easeus
+name: EaseUS Todo Backup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/TodoBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/TodoBackup
+identifiers:
+- winget: EaseUS.TodoBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/TodoBackup
+aliases: []

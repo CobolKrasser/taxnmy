@@ -1,0 +1,11 @@
+key: backstaff/installbuilder-for-qt-windows
+publisher: backstaff
+name: InstallBuilder for Qt - Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Qt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Qt
+identifiers:
+- winget: BackstaffSoftware.InstallBuilder.Qt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Qt
+aliases: []

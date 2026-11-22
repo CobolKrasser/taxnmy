@@ -1,0 +1,11 @@
+key: sysinfotools/sysinfo-mbox-exporter-tool
+publisher: sysinfotools
+name: SysInfo MBOX Exporter Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SysInfoTools/MBOXExporterTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SysInfoTools/MBOXExporterTool
+identifiers:
+- winget: SysInfoTools.MBOXExporterTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SysInfoTools/MBOXExporterTool
+aliases: []

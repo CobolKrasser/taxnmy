@@ -1,0 +1,11 @@
+key: nuviomedia/nuvio-desktop
+publisher: nuviomedia
+name: Nuvio Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuvioMedia/NuvioDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuvioMedia/NuvioDesktop
+identifiers:
+- winget: NuvioMedia.NuvioDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuvioMedia/NuvioDesktop
+aliases: []

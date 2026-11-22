@@ -1,0 +1,11 @@
+key: counterpath/bria
+publisher: counterpath
+name: Bria
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bria/Bria
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bria/Bria
+identifiers:
+- winget: Bria.Bria
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bria/Bria
+aliases: []

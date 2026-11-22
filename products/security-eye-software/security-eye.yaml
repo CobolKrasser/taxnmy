@@ -1,0 +1,11 @@
+key: security-eye-software/security-eye
+publisher: security-eye-software
+name: Security Eye
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityEyeSoftware/SecurityEye
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityEyeSoftware/SecurityEye
+identifiers:
+- winget: SecurityEyeSoftware.SecurityEye
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityEyeSoftware/SecurityEye
+aliases: []

@@ -1,0 +1,11 @@
+key: team-spotube/spotube
+publisher: team-spotube
+name: Spotube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KRTirtho/Spotube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KRTirtho/Spotube
+identifiers:
+- winget: KRTirtho.Spotube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KRTirtho/Spotube
+aliases: []

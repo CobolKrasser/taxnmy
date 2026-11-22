@@ -1,0 +1,11 @@
+key: chromatix/chromatix-music-player
+publisher: chromatix
+name: Chromatix Music Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatix/Chromatix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatix/Chromatix
+identifiers:
+- winget: Chromatix.Chromatix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatix/Chromatix
+aliases: []

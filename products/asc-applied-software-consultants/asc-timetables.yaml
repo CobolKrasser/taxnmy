@@ -1,0 +1,11 @@
+key: asc-applied-software-consultants/asc-timetables
+publisher: asc-applied-software-consultants
+name: aSc TimeTables
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aSc/aScTimeTables
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aSc/aScTimeTables
+identifiers:
+- winget: aSc.aScTimeTables
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aSc/aScTimeTables
+aliases: []

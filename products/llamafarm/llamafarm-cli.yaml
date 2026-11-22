@@ -1,0 +1,11 @@
+key: llamafarm/llamafarm-cli
+publisher: llamafarm
+name: LlamaFarm CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LlamaFarm/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LlamaFarm/CLI
+identifiers:
+- winget: LlamaFarm.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LlamaFarm/CLI
+aliases: []

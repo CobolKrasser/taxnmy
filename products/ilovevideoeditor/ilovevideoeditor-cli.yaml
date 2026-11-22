@@ -1,0 +1,11 @@
+key: ilovevideoeditor/ilovevideoeditor-cli
+publisher: ilovevideoeditor
+name: iLoveVideoEditor CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iLoveVideoEditor/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iLoveVideoEditor/CLI
+identifiers:
+- winget: iLoveVideoEditor.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iLoveVideoEditor/CLI
+aliases: []

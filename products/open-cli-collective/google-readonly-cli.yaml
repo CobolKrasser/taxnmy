@@ -1,0 +1,11 @@
+key: open-cli-collective/google-readonly-cli
+publisher: open-cli-collective
+name: Google Readonly CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/google-readonly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/google-readonly
+identifiers:
+- winget: OpenCLICollective.google-readonly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/google-readonly
+aliases: []

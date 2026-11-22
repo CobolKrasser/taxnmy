@@ -1,0 +1,11 @@
+key: tamas-geschitz/etcd-manager
+publisher: tamas-geschitz
+name: etcd-manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gtamas/etcdmanager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gtamas/etcdmanager
+identifiers:
+- winget: gtamas.etcdmanager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gtamas/etcdmanager
+aliases: []

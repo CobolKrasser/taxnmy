@@ -1,0 +1,11 @@
+key: agsoto/timeline-timer
+publisher: agsoto
+name: Timeline Timer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGSoto/TimelineTimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGSoto/TimelineTimer
+identifiers:
+- winget: AGSoto.TimelineTimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGSoto/TimelineTimer
+aliases: []

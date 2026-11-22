@@ -1,0 +1,11 @@
+key: japplis/japplis-watch
+publisher: japplis
+name: Japplis Watch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Watch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Watch
+identifiers:
+- winget: Japplis.Watch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Watch
+aliases: []

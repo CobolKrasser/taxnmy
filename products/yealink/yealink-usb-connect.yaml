@@ -1,0 +1,13 @@
+key: yealink/yealink-usb-connect
+publisher: yealink
+name: Yealink USB Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yealink/YealinkUSBConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yealink/YealinkUSBConnect
+identifiers:
+- winget: Yealink.YealinkUSBConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yealink/YealinkUSBConnect
+- winget: Yealink.YealinkUSBConnect.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yealink/YealinkUSBConnect/CN
+aliases: []

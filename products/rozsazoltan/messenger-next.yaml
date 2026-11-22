@@ -1,0 +1,11 @@
+key: rozsazoltan/messenger-next
+publisher: rozsazoltan
+name: Messenger Next
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rozsazoltan/MessengerNext
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rozsazoltan/MessengerNext
+identifiers:
+- winget: Rozsazoltan.MessengerNext
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rozsazoltan/MessengerNext
+aliases: []

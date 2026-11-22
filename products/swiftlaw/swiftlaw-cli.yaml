@@ -1,0 +1,11 @@
+key: swiftlaw/swiftlaw-cli
+publisher: swiftlaw
+name: SwiftLaw CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwiftLaw/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwiftLaw/CLI
+identifiers:
+- winget: SwiftLaw.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwiftLaw/CLI
+aliases: []

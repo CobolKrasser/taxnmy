@@ -1,0 +1,11 @@
+key: friard-o-and-gamba-m/boris-for-microsoft-windows
+publisher: friard-o-and-gamba-m
+name: BORIS for Microsoft-Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BORIS/BORIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BORIS/BORIS
+identifiers:
+- winget: BORIS.BORIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BORIS/BORIS
+aliases: []

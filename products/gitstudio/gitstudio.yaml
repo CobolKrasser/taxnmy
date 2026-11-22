@@ -1,0 +1,11 @@
+key: gitstudio/gitstudio
+publisher: gitstudio
+name: GitStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitStudioHQ/GitStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitStudioHQ/GitStudio
+identifiers:
+- winget: GitStudioHQ.GitStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitStudioHQ/GitStudio
+aliases: []

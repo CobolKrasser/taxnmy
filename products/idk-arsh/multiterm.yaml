@@ -1,0 +1,11 @@
+key: idk-arsh/multiterm
+publisher: idk-arsh
+name: MultiTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/idk-arsh/MultiTerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/idk-arsh/MultiTerm
+identifiers:
+- winget: idk-arsh.MultiTerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/idk-arsh/MultiTerm
+aliases: []

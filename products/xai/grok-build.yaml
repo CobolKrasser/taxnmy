@@ -1,0 +1,11 @@
+key: xai/grok-build
+publisher: xai
+name: Grok Build
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xAI/GrokBuild
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xAI/GrokBuild
+identifiers:
+- winget: xAI.GrokBuild
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xAI/GrokBuild
+aliases: []

@@ -1,0 +1,11 @@
+key: clarivate-analytics/endnote
+publisher: clarivate-analytics
+name: EndNote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClarivateAnalytics/EndNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClarivateAnalytics/EndNote
+identifiers:
+- winget: ClarivateAnalytics.EndNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClarivateAnalytics/EndNote
+aliases: []

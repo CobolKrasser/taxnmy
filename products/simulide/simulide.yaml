@@ -1,0 +1,11 @@
+key: simulide/simulide
+publisher: simulide
+name: SimulIDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimulIDE/SimulIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimulIDE/SimulIDE
+identifiers:
+- winget: SimulIDE.SimulIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimulIDE/SimulIDE
+aliases: []

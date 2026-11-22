@@ -1,0 +1,11 @@
+key: wix-toolset/wix-toolset-additional-tools
+publisher: wix-toolset
+name: WiX Toolset Additional Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXAdditionalTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXAdditionalTools
+identifiers:
+- winget: WiXToolset.WiXAdditionalTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXAdditionalTools
+aliases: []

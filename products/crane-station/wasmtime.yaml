@@ -1,0 +1,11 @@
+key: crane-station/wasmtime
+publisher: crane-station
+name: Wasmtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime
+identifiers:
+- winget: BytecodeAlliance.Wasmtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime
+aliases: []

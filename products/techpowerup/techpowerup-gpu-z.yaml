@@ -1,0 +1,11 @@
+key: techpowerup/techpowerup-gpu-z
+publisher: techpowerup
+name: TechPowerUp GPU-Z
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/GPU-Z
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/GPU-Z
+identifiers:
+- winget: TechPowerUp.GPU-Z
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/GPU-Z
+aliases: []

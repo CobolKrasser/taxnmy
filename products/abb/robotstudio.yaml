@@ -1,0 +1,11 @@
+key: abb/robotstudio
+publisher: abb
+name: RobotStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/RobotStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/RobotStudio
+identifiers:
+- winget: ABB.RobotStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/RobotStudio
+aliases: []

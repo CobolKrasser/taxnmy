@@ -1,0 +1,11 @@
+key: scott-willeke/lessmsi
+publisher: scott-willeke
+name: lessmsi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/activescott/lessmsi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/activescott/lessmsi
+identifiers:
+- winget: activescott.lessmsi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/activescott/lessmsi
+aliases: []

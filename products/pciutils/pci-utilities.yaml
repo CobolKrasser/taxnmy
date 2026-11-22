@@ -1,0 +1,11 @@
+key: pciutils/pci-utilities
+publisher: pciutils
+name: PCI Utilities
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pciutils/pciutils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pciutils/pciutils
+identifiers:
+- winget: pciutils.pciutils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pciutils/pciutils
+aliases: []

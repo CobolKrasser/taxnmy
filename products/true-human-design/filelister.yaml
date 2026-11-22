@@ -1,0 +1,11 @@
+key: true-human-design/filelister
+publisher: true-human-design
+name: Filelister
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueHumanDesign/FileLister
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueHumanDesign/FileLister
+identifiers:
+- winget: TrueHumanDesign.FileLister
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueHumanDesign/FileLister
+aliases: []

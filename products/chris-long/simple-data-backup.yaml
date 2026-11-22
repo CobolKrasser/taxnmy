@@ -1,0 +1,11 @@
+key: chris-long/simple-data-backup
+publisher: chris-long
+name: Simple Data Backup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/SimpleDataBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/SimpleDataBackup
+identifiers:
+- winget: ChrisLong.SimpleDataBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/SimpleDataBackup
+aliases: []

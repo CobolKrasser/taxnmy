@@ -1,0 +1,11 @@
+key: todesk-remote-desktop/todesk
+publisher: todesk-remote-desktop
+name: ToDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Youqu/ToDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Youqu/ToDesk
+identifiers:
+- winget: Youqu.ToDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Youqu/ToDesk
+aliases: []

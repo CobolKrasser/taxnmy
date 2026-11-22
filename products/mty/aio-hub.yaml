@@ -1,0 +1,11 @@
+key: mty/aio-hub
+publisher: mty
+name: AIO Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/miaotouy/AIOHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/miaotouy/AIOHub
+identifiers:
+- winget: miaotouy.AIOHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/miaotouy/AIOHub
+aliases: []

@@ -1,0 +1,11 @@
+key: lemonpop/lemonpop-app
+publisher: lemonpop
+name: LemonPop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LemonPop/LemonPop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LemonPop/LemonPop
+identifiers:
+- winget: LemonPop.LemonPop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LemonPop/LemonPop
+aliases: []

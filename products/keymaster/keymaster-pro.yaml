@@ -1,0 +1,11 @@
+key: keymaster/keymaster-pro
+publisher: keymaster
+name: KeyMaster-Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyMasterPro/KeyMasterPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyMasterPro/KeyMasterPro
+identifiers:
+- winget: KeyMasterPro.KeyMasterPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyMasterPro/KeyMasterPro
+aliases: []

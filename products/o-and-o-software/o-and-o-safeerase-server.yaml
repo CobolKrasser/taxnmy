@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-safeerase-server
+publisher: o-and-o-software
+name: O&O SafeErase Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/SafeErase/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/SafeErase/Server
+identifiers:
+- winget: OO-Software.SafeErase.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/SafeErase/Server
+aliases: []

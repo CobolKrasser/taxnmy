@@ -1,0 +1,11 @@
+key: voiden/voiden-beta
+publisher: voiden
+name: Voiden Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voiden/Voiden-Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voiden/Voiden-Beta
+identifiers:
+- winget: Voiden.Voiden-Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voiden/Voiden-Beta
+aliases: []

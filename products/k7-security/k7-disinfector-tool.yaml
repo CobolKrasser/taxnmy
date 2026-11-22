@@ -1,0 +1,11 @@
+key: k7-security/k7-disinfector-tool
+publisher: k7-security
+name: K7 Disinfector Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K7Security/DisinfectorTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K7Security/DisinfectorTool
+identifiers:
+- winget: K7Security.DisinfectorTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K7Security/DisinfectorTool
+aliases: []

@@ -1,0 +1,11 @@
+key: quorthon13/oled-sleeper
+publisher: quorthon13
+name: OLED Sleeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quorthon13/OLEDSleeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quorthon13/OLEDSleeper
+identifiers:
+- winget: Quorthon13.OLEDSleeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quorthon13/OLEDSleeper
+aliases: []

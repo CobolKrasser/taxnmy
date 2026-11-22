@@ -1,0 +1,11 @@
+key: amarbego/gittop
+publisher: amarbego
+name: GitTop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmarBego/GitTop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmarBego/GitTop
+identifiers:
+- winget: AmarBego.GitTop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmarBego/GitTop
+aliases: []

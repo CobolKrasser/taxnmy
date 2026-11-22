@@ -1,0 +1,11 @@
+key: sony-interactive-entertainment/ps-remote-play
+publisher: sony-interactive-entertainment
+name: PS Remote Play
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlayStation/PSRemotePlay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlayStation/PSRemotePlay
+identifiers:
+- winget: PlayStation.PSRemotePlay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlayStation/PSRemotePlay
+aliases: []

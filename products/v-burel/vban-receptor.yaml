@@ -1,0 +1,11 @@
+key: v-burel/vban-receptor
+publisher: v-burel
+name: VBAN Receptor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VBurel/VBAN/Receptor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VBurel/VBAN/Receptor
+identifiers:
+- winget: VBurel.VBAN.Receptor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VBurel/VBAN/Receptor
+aliases: []

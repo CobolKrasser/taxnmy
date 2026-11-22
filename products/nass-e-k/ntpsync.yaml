@@ -1,0 +1,11 @@
+key: nass-e-k/ntpsync
+publisher: nass-e-k
+name: NTPSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/NTPSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/NTPSync
+identifiers:
+- winget: NASS.NTPSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/NTPSync
+aliases: []

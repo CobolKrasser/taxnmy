@@ -1,0 +1,11 @@
+key: humanity/goldendict-ng
+publisher: humanity
+name: goldendict-ng
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiaoyifang/GoldenDict-ng
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiaoyifang/GoldenDict-ng
+identifiers:
+- winget: xiaoyifang.GoldenDict-ng
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiaoyifang/GoldenDict-ng
+aliases: []

@@ -1,0 +1,11 @@
+key: ordinlabs/ssh-autocomplete
+publisher: ordinlabs
+name: ssh-autocomplete
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrdinLabs/ssh-autocomplete
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrdinLabs/ssh-autocomplete
+identifiers:
+- winget: OrdinLabs.ssh-autocomplete
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrdinLabs/ssh-autocomplete
+aliases: []

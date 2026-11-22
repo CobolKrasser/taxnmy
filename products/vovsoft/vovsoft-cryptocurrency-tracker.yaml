@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-cryptocurrency-tracker
+publisher: vovsoft
+name: Vovsoft Cryptocurrency Tracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CryptocurrencyTracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CryptocurrencyTracker
+identifiers:
+- winget: VovSoft.CryptocurrencyTracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CryptocurrencyTracker
+aliases: []

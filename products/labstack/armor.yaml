@@ -1,0 +1,11 @@
+key: labstack/armor
+publisher: labstack
+name: armor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Labstack/armor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Labstack/armor
+identifiers:
+- winget: Labstack.armor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Labstack/armor
+aliases: []

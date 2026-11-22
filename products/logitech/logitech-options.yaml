@@ -1,0 +1,11 @@
+key: logitech/logitech-options
+publisher: logitech
+name: Logitech Options
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Options
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Options
+identifiers:
+- winget: Logitech.Options
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Options
+aliases: []

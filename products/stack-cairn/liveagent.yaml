@@ -1,0 +1,11 @@
+key: stack-cairn/liveagent
+publisher: stack-cairn
+name: LiveAgent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stack-Cairn/LiveAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stack-Cairn/LiveAgent
+identifiers:
+- winget: Stack-Cairn.LiveAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stack-Cairn/LiveAgent
+aliases: []

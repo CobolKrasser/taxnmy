@@ -1,0 +1,11 @@
+key: fluxcd/flux
+publisher: fluxcd
+name: Flux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FluxCD/Flux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FluxCD/Flux
+identifiers:
+- winget: FluxCD.Flux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FluxCD/Flux
+aliases: []

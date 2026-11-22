@@ -1,0 +1,11 @@
+key: webprofusion/certify-certificate-manager
+publisher: webprofusion
+name: Certify Certificate Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CertifyTheWeb/CertifySSLManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CertifyTheWeb/CertifySSLManager
+identifiers:
+- winget: CertifyTheWeb.CertifySSLManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CertifyTheWeb/CertifySSLManager
+aliases: []

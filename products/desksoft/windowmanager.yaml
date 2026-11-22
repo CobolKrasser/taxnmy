@@ -1,0 +1,11 @@
+key: desksoft/windowmanager
+publisher: desksoft
+name: WindowManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/WindowManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/WindowManager
+identifiers:
+- winget: DeskSoft.WindowManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/WindowManager
+aliases: []

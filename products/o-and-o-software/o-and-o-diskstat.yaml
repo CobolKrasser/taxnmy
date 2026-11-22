@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-diskstat
+publisher: o-and-o-software
+name: O&O DiskStat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskStat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskStat
+identifiers:
+- winget: OO-Software.DiskStat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskStat
+aliases: []

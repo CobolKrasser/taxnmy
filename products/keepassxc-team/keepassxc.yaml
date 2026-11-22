@@ -1,0 +1,11 @@
+key: keepassxc-team/keepassxc
+publisher: keepassxc-team
+name: KeePassXC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeePassXCTeam/KeePassXC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeePassXCTeam/KeePassXC
+identifiers:
+- winget: KeePassXCTeam.KeePassXC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeePassXCTeam/KeePassXC
+aliases: []

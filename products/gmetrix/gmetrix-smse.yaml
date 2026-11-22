@@ -1,0 +1,11 @@
+key: gmetrix/gmetrix-smse
+publisher: gmetrix
+name: GMetrix SMSe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GMetrix/GMetrixSMSe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GMetrix/GMetrixSMSe
+identifiers:
+- winget: GMetrix.GMetrixSMSe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GMetrix/GMetrixSMSe
+aliases: []

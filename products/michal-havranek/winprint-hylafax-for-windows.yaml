@@ -1,0 +1,11 @@
+key: michal-havranek/winprint-hylafax-for-windows
+publisher: michal-havranek
+name: WinPrint Hylafax for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/michalhavranek/wphfxwin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/michalhavranek/wphfxwin
+identifiers:
+- winget: michalhavranek.wphfxwin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/michalhavranek/wphfxwin
+aliases: []

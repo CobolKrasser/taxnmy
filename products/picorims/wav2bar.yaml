@@ -1,0 +1,11 @@
+key: picorims/wav2bar
+publisher: picorims
+name: Wav2Bar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Picorims/wav2bar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Picorims/wav2bar
+identifiers:
+- winget: Picorims.wav2bar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Picorims/wav2bar
+aliases: []

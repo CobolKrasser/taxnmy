@@ -1,0 +1,11 @@
+key: simba-technologies/simba-spark-odbc-driver
+publisher: simba-technologies
+name: Simba Spark ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Databricks/SparkODBCDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Databricks/SparkODBCDriver
+identifiers:
+- winget: Databricks.SparkODBCDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Databricks/SparkODBCDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: vss-core-team-and-vooka-sai-siddharth/vss-programming-language
+publisher: vss-core-team-and-vooka-sai-siddharth
+name: VSS Programming Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSS/VSS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSS/VSS
+identifiers:
+- winget: VSS.VSS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSS/VSS
+aliases: []

@@ -1,0 +1,11 @@
+key: localstack/localstack-cli
+publisher: localstack
+name: LocalStack CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalStack/localstack-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalStack/localstack-cli
+identifiers:
+- winget: LocalStack.localstack-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalStack/localstack-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: medoo-software/themeswitcher
+publisher: medoo-software
+name: ThemeSwitcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medoo/ThemeSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medoo/ThemeSwitcher
+identifiers:
+- winget: Medoo.ThemeSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medoo/ThemeSwitcher
+aliases: []

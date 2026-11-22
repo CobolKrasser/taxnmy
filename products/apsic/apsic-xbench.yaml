@@ -1,0 +1,11 @@
+key: apsic/apsic-xbench
+publisher: apsic
+name: ApSIC Xbench
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApSIC/Xbench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApSIC/Xbench
+identifiers:
+- winget: ApSIC.Xbench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApSIC/Xbench
+aliases: []

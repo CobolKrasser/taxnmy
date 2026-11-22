@@ -1,0 +1,11 @@
+key: lemonade/lemonade
+publisher: lemonade
+name: Lemonade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lemonade/Lemonade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lemonade/Lemonade
+identifiers:
+- winget: Lemonade.Lemonade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lemonade/Lemonade
+aliases: []

@@ -1,0 +1,11 @@
+key: ktsu-dev/blastmerge
+publisher: ktsu-dev
+name: BlastMerge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/ktsu/BlastMerge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/ktsu/BlastMerge
+identifiers:
+- winget: ktsu.BlastMerge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/ktsu/BlastMerge
+aliases: []

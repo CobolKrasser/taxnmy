@@ -1,0 +1,11 @@
+key: initex/yogadns
+publisher: initex
+name: YogaDNS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Initex/YogaDNS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Initex/YogaDNS
+identifiers:
+- winget: Initex.YogaDNS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Initex/YogaDNS
+aliases: []

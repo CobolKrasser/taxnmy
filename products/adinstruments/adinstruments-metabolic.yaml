@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-metabolic
+publisher: adinstruments
+name: ADInstruments Metabolic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/Metabolic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/Metabolic
+identifiers:
+- winget: ADInstruments.LabChart.Module.Metabolic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/Metabolic
+aliases: []

@@ -1,0 +1,11 @@
+key: riot-games/valorant-latin-america-server
+publisher: riot-games
+name: VALORANT (Latin America server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/LATAM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/LATAM
+identifiers:
+- winget: RiotGames.Valorant.LATAM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/LATAM
+aliases: []

@@ -1,0 +1,11 @@
+key: jagex/runescape-launcher
+publisher: jagex
+name: Runescape Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jagex/Runescape
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jagex/Runescape
+identifiers:
+- winget: Jagex.Runescape
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jagex/Runescape
+aliases: []

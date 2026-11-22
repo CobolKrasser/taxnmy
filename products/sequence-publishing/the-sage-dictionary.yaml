@@ -1,0 +1,11 @@
+key: sequence-publishing/the-sage-dictionary
+publisher: sequence-publishing
+name: The Sage Dictionary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SequencePublishing/TheSageDictionary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SequencePublishing/TheSageDictionary
+identifiers:
+- winget: SequencePublishing.TheSageDictionary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SequencePublishing/TheSageDictionary
+aliases: []

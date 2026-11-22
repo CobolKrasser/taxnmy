@@ -1,0 +1,11 @@
+key: deif/iectl
+publisher: deif
+name: iectl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEIF/iectl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEIF/iectl
+identifiers:
+- winget: DEIF.iectl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEIF/iectl
+aliases: []

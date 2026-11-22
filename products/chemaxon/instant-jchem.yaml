@@ -1,0 +1,11 @@
+key: chemaxon/instant-jchem
+publisher: chemaxon
+name: Instant JChem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/instantjchem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/instantjchem
+identifiers:
+- winget: ChemAxon.instantjchem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/instantjchem
+aliases: []

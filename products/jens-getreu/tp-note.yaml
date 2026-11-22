@@ -1,0 +1,11 @@
+key: jens-getreu/tp-note
+publisher: jens-getreu
+name: Tp-Note
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getreu/tpnote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getreu/tpnote
+identifiers:
+- winget: getreu.tpnote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getreu/tpnote
+aliases: []

@@ -1,0 +1,11 @@
+key: draftable/draftable-desktop
+publisher: draftable
+name: Draftable Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Draftable/Draftable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Draftable/Draftable
+identifiers:
+- winget: Draftable.Draftable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Draftable/Draftable
+aliases: []

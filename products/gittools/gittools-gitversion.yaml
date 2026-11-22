@@ -1,0 +1,11 @@
+key: gittools/gittools-gitversion
+publisher: gittools
+name: GitTools GitVersion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitTools/GitVersion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitTools/GitVersion
+identifiers:
+- winget: GitTools.GitVersion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitTools/GitVersion
+aliases: []

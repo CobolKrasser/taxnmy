@@ -1,0 +1,11 @@
+key: bsharper/atv-desktop-remote
+publisher: bsharper
+name: ATV Desktop Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bsharper/ATVDesktopRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bsharper/ATVDesktopRemote
+identifiers:
+- winget: bsharper.ATVDesktopRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bsharper/ATVDesktopRemote
+aliases: []

@@ -1,0 +1,11 @@
+key: pay-skill/pay
+publisher: pay-skill
+name: pay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pay-skill/pay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pay-skill/pay
+identifiers:
+- winget: pay-skill.pay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pay-skill/pay
+aliases: []

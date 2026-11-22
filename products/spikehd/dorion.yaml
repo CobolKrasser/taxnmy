@@ -1,0 +1,11 @@
+key: spikehd/dorion
+publisher: spikehd
+name: Dorion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpikeHD/Dorion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpikeHD/Dorion
+identifiers:
+- winget: SpikeHD.Dorion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpikeHD/Dorion
+aliases: []

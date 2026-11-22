@@ -1,0 +1,11 @@
+key: predidit/kazumi
+publisher: predidit
+name: Kazumi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Predidit/Kazumi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Predidit/Kazumi
+identifiers:
+- winget: Predidit.Kazumi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Predidit/Kazumi
+aliases: []

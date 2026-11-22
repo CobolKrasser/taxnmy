@@ -1,0 +1,11 @@
+key: neocom-software/trbonet-watch
+publisher: neocom-software
+name: TRBOnet Watch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeocomSoftware/TRBOnetWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeocomSoftware/TRBOnetWatch
+identifiers:
+- winget: NeocomSoftware.TRBOnetWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeocomSoftware/TRBOnetWatch
+aliases: []

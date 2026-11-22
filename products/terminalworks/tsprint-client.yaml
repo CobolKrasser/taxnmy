@@ -1,0 +1,11 @@
+key: terminalworks/tsprint-client
+publisher: terminalworks
+name: TSPrint Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TerminalWorks/TSPrintClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TerminalWorks/TSPrintClient
+identifiers:
+- winget: TerminalWorks.TSPrintClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TerminalWorks/TSPrintClient
+aliases: []

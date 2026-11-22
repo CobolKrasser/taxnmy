@@ -1,0 +1,11 @@
+key: sparsh-sam/openreader
+publisher: sparsh-sam
+name: OpenReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparshSam/OpenReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparshSam/OpenReader
+identifiers:
+- winget: SparshSam.OpenReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparshSam/OpenReader
+aliases: []

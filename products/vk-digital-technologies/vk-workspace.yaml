@@ -1,0 +1,11 @@
+key: vk-digital-technologies/vk-workspace
+publisher: vk-digital-technologies
+name: VK WorkSpace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VK/VKWorkspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VK/VKWorkspace
+identifiers:
+- winget: VK.VKWorkspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VK/VKWorkspace
+aliases: []

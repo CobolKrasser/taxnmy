@@ -1,0 +1,11 @@
+key: sqlbi/sqlbi-whiteboard
+publisher: sqlbi
+name: SQLBI Whiteboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SQLBI/Whiteboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SQLBI/Whiteboard
+identifiers:
+- winget: SQLBI.Whiteboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SQLBI/Whiteboard
+aliases: []

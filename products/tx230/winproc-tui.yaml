@@ -1,0 +1,11 @@
+key: tx230/winproc-tui
+publisher: tx230
+name: winproc-tui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TX230/winproc-tui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TX230/winproc-tui
+identifiers:
+- winget: TX230.winproc-tui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TX230/winproc-tui
+aliases: []

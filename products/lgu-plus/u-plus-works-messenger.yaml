@@ -1,0 +1,11 @@
+key: lgu-plus/u-plus-works-messenger
+publisher: lgu-plus
+name: U+Works Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LGUplus/UplusWorksMessenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LGUplus/UplusWorksMessenger
+identifiers:
+- winget: LGUplus.UplusWorksMessenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LGUplus/UplusWorksMessenger
+aliases: []

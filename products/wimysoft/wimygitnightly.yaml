@@ -1,0 +1,11 @@
+key: wimysoft/wimygitnightly
+publisher: wimysoft
+name: WimyGitNightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wimysoft/WimyGit/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wimysoft/WimyGit/Nightly
+identifiers:
+- winget: Wimysoft.WimyGit.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wimysoft/WimyGit/Nightly
+aliases: []

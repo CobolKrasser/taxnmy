@@ -1,0 +1,11 @@
+key: novirusthanks/novirusthanks-usb-radar-standard
+publisher: novirusthanks
+name: NoVirusThanks USB Radar (STANDARD)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/USBRadar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/USBRadar
+identifiers:
+- winget: NoVirusThanks.USBRadar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/USBRadar
+aliases: []

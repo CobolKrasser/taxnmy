@@ -1,0 +1,11 @@
+key: martin-prikryl/winscp-rc
+publisher: martin-prikryl
+name: WinSCP RC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinSCP/WinSCP/RC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinSCP/WinSCP/RC
+identifiers:
+- winget: WinSCP.WinSCP.RC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinSCP/WinSCP/RC
+aliases: []

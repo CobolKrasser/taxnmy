@@ -1,0 +1,11 @@
+key: solvespace/solvespace
+publisher: solvespace
+name: SolveSpace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolveSpace/SolveSpace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolveSpace/SolveSpace
+identifiers:
+- winget: SolveSpace.SolveSpace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolveSpace/SolveSpace
+aliases: []

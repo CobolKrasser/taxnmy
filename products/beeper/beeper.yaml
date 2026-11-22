@@ -1,0 +1,11 @@
+key: beeper/beeper
+publisher: beeper
+name: Beeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Beeper/Beeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Beeper/Beeper
+identifiers:
+- winget: Beeper.Beeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Beeper/Beeper
+aliases: []

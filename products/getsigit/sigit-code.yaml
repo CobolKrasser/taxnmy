@@ -1,0 +1,11 @@
+key: getsigit/sigit-code
+publisher: getsigit
+name: siGit Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getSigit/siGitCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getSigit/siGitCode
+identifiers:
+- winget: getSigit.siGitCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getSigit/siGitCode
+aliases: []

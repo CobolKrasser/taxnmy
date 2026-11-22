@@ -1,0 +1,11 @@
+key: pecb/pecb-exams
+publisher: pecb
+name: PECB Exams
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PECB/PECBExams
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PECB/PECBExams
+identifiers:
+- winget: PECB.PECBExams
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PECB/PECBExams
+aliases: []

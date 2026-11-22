@@ -1,0 +1,11 @@
+key: deepin/deepin-cloud-scan-server
+publisher: deepin
+name: Deepin Cloud Scan Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnionTech/DeepinCloudScanServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnionTech/DeepinCloudScanServer
+identifiers:
+- winget: UnionTech.DeepinCloudScanServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnionTech/DeepinCloudScanServer
+aliases: []

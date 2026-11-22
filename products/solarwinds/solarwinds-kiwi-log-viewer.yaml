@@ -1,0 +1,11 @@
+key: solarwinds/solarwinds-kiwi-log-viewer
+publisher: solarwinds
+name: SolarWinds Kiwi Log Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/KiwiLogViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/KiwiLogViewer
+identifiers:
+- winget: SolarWinds.KiwiLogViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/KiwiLogViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: genesys/genesys-cloud-background-assistant
+publisher: genesys
+name: Genesys Cloud Background Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genesys/GenesysCloudBackgroundAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genesys/GenesysCloudBackgroundAssistant
+identifiers:
+- winget: Genesys.GenesysCloudBackgroundAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genesys/GenesysCloudBackgroundAssistant
+aliases: []

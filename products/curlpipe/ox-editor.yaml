@@ -1,0 +1,11 @@
+key: curlpipe/ox-editor
+publisher: curlpipe
+name: Ox editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/curlpipe/ox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/curlpipe/ox
+identifiers:
+- winget: curlpipe.ox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/curlpipe/ox
+aliases: []

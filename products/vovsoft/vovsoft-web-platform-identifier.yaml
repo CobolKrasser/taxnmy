@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-web-platform-identifier
+publisher: vovsoft
+name: Vovsoft Web Platform Identifier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebPlatformIdentifier
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebPlatformIdentifier
+identifiers:
+- winget: VovSoft.WebPlatformIdentifier
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebPlatformIdentifier
+aliases: []

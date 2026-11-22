@@ -1,0 +1,11 @@
+key: the-dichromate-authors/dichromate
+publisher: the-dichromate-authors
+name: Dichromate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dichromate/Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dichromate/Browser
+identifiers:
+- winget: Dichromate.Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dichromate/Browser
+aliases: []

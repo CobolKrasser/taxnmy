@@ -1,0 +1,11 @@
+key: sunpet-industries/xploview-wireless
+publisher: sunpet-industries
+name: xploview wireless
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview/wireless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview/wireless
+identifiers:
+- winget: xploview.xploview.wireless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview/wireless
+aliases: []

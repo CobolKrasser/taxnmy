@@ -1,0 +1,11 @@
+key: xiaobei/netsend
+publisher: xiaobei
+name: NetSend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/williamnie/NetSend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/williamnie/NetSend
+identifiers:
+- winget: williamnie.NetSend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/williamnie/NetSend
+aliases: []

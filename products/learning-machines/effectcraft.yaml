@@ -1,0 +1,11 @@
+key: learning-machines/effectcraft
+publisher: learning-machines
+name: EffectCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/EffectCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/EffectCraft
+identifiers:
+- winget: ArtCraft.EffectCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/EffectCraft
+aliases: []

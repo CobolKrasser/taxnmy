@@ -1,0 +1,11 @@
+key: cority/rsiguard-stretch-edition
+publisher: cority
+name: RSIGuard Stretch Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cority/RSIGuard/StretchEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cority/RSIGuard/StretchEdition
+identifiers:
+- winget: Cority.RSIGuard.StretchEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cority/RSIGuard/StretchEdition
+aliases: []

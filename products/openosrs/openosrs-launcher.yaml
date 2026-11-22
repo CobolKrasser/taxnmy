@@ -1,0 +1,11 @@
+key: openosrs/openosrs-launcher
+publisher: openosrs
+name: OpenOSRS Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenOSRS/OpenOSRSLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenOSRS/OpenOSRSLauncher
+identifiers:
+- winget: OpenOSRS.OpenOSRSLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenOSRS/OpenOSRSLauncher
+aliases: []

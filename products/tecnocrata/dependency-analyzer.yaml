@@ -1,0 +1,11 @@
+key: tecnocrata/dependency-analyzer
+publisher: tecnocrata
+name: Dependency Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecnocrata/depscop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecnocrata/depscop
+identifiers:
+- winget: tecnocrata.depscop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecnocrata/depscop
+aliases: []

@@ -1,0 +1,11 @@
+key: keysight-technologies/keysight-pathwave-license-manager
+publisher: keysight-technologies
+name: Keysight PathWave License Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/PathWaveLicenseManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/PathWaveLicenseManager
+identifiers:
+- winget: Keysight.PathWaveLicenseManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/PathWaveLicenseManager
+aliases: []

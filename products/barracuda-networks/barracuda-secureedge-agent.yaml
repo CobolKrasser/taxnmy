@@ -1,0 +1,11 @@
+key: barracuda-networks/barracuda-secureedge-agent
+publisher: barracuda-networks
+name: Barracuda SecureEdge Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Barracuda/SecureEdgeAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Barracuda/SecureEdgeAgent
+identifiers:
+- winget: Barracuda.SecureEdgeAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Barracuda/SecureEdgeAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: monotype-imaging/monotype-connect
+publisher: monotype-imaging
+name: Monotype Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonotypeImaging/Extensis/ConnectFonts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonotypeImaging/Extensis/ConnectFonts
+identifiers:
+- winget: MonotypeImaging.Extensis.ConnectFonts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonotypeImaging/Extensis/ConnectFonts
+aliases: []

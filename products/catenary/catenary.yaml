@@ -1,0 +1,11 @@
+key: catenary/catenary
+publisher: catenary
+name: Catenary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catenary/Catenary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catenary/Catenary
+identifiers:
+- winget: Catenary.Catenary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catenary/Catenary
+aliases: []

@@ -1,0 +1,11 @@
+key: angry-ip-scanner/angry-ip-scanner
+publisher: angry-ip-scanner
+name: Angry IP Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/angryziber/AngryIPScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/angryziber/AngryIPScanner
+identifiers:
+- winget: angryziber.AngryIPScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/angryziber/AngryIPScanner
+aliases: []

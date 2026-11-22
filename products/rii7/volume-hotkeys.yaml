@@ -1,0 +1,11 @@
+key: rii7/volume-hotkeys
+publisher: rii7
+name: Volume Hotkeys
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/VolumeHotkeys
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/VolumeHotkeys
+identifiers:
+- winget: RII7.VolumeHotkeys
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/VolumeHotkeys
+aliases: []

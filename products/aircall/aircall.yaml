@@ -1,0 +1,11 @@
+key: aircall/aircall
+publisher: aircall
+name: Aircall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aircall/Aircall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aircall/Aircall
+identifiers:
+- winget: Aircall.Aircall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aircall/Aircall
+aliases: []

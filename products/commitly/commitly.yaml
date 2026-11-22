@@ -1,0 +1,11 @@
+key: commitly/commitly
+publisher: commitly
+name: Commitly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Commitly/Commitly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Commitly/Commitly
+identifiers:
+- winget: Commitly.Commitly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Commitly/Commitly
+aliases: []

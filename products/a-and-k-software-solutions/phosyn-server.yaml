@@ -1,0 +1,11 @@
+key: a-and-k-software-solutions/phosyn-server
+publisher: a-and-k-software-solutions
+name: Phosyn Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kostfos/Phosyn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kostfos/Phosyn
+identifiers:
+- winget: kostfos.Phosyn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kostfos/Phosyn
+aliases: []

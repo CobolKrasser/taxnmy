@@ -1,0 +1,13 @@
+key: tacit-dynamics/foldersync
+publisher: tacit-dynamics
+name: FolderSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TacitDynamics/FolderSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TacitDynamics/FolderSync
+identifiers:
+- winget: TacitDynamics.FolderSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TacitDynamics/FolderSync
+- winget: TacitDynamics.FolderSyncCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TacitDynamics/FolderSyncCLI
+aliases: []

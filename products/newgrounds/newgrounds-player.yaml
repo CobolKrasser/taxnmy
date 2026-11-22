@@ -1,0 +1,11 @@
+key: newgrounds/newgrounds-player
+publisher: newgrounds
+name: Newgrounds Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Newgrounds/NewgroundsPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Newgrounds/NewgroundsPlayer
+identifiers:
+- winget: Newgrounds.NewgroundsPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Newgrounds/NewgroundsPlayer
+aliases: []

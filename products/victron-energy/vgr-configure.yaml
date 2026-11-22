@@ -1,0 +1,11 @@
+key: victron-energy/vgr-configure
+publisher: victron-energy
+name: VGR Configure
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VGRConfigure
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VGRConfigure
+identifiers:
+- winget: VictronEnergy.VGRConfigure
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VGRConfigure
+aliases: []

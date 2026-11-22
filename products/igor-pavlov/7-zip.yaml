@@ -5,4 +5,7 @@ kind: software
 source: https://www.7-zip.org/
 versions:
   source: https://www.7-zip.org/history.txt
+identifiers:
+- winget: 7zip.7zip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7zip/7zip
 aliases: []

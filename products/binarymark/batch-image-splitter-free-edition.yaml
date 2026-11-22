@@ -1,0 +1,11 @@
+key: binarymark/batch-image-splitter-free-edition
+publisher: binarymark
+name: Batch Image Splitter Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageSplitter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageSplitter
+identifiers:
+- winget: BinaryMark.BatchImageSplitter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageSplitter
+aliases: []

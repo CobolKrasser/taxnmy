@@ -1,0 +1,11 @@
+key: binarymark/batch-file-rename-free-edition
+publisher: binarymark
+name: Batch File Rename Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileRename
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileRename
+identifiers:
+- winget: BinaryMark.BatchFileRename
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileRename
+aliases: []

@@ -1,0 +1,11 @@
+key: the-sz-development/newfield-news
+publisher: the-sz-development
+name: Newfield News
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Newfield
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Newfield
+identifiers:
+- winget: the-sz.Newfield
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Newfield
+aliases: []

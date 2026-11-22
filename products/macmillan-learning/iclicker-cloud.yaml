@@ -1,0 +1,11 @@
+key: macmillan-learning/iclicker-cloud
+publisher: macmillan-learning
+name: iClicker Cloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacmillanLearning/iClickerCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacmillanLearning/iClickerCloud
+identifiers:
+- winget: MacmillanLearning.iClickerCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacmillanLearning/iClickerCloud
+aliases: []

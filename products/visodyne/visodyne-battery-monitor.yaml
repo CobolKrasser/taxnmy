@@ -1,0 +1,11 @@
+key: visodyne/visodyne-battery-monitor
+publisher: visodyne
+name: VisoDyne Battery Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisoDyne/BatteryMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisoDyne/BatteryMonitor
+identifiers:
+- winget: VisoDyne.BatteryMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisoDyne/BatteryMonitor
+aliases: []

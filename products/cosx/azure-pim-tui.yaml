@@ -1,0 +1,11 @@
+key: cosx/azure-pim-tui
+publisher: cosx
+name: Azure PIM TUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosX/AzurePimTui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosX/AzurePimTui
+identifiers:
+- winget: CosX.AzurePimTui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosX/AzurePimTui
+aliases: []

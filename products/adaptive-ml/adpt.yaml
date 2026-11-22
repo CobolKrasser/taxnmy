@@ -1,0 +1,11 @@
+key: adaptive-ml/adpt
+publisher: adaptive-ml
+name: adpt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaptiveML/adpt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaptiveML/adpt
+identifiers:
+- winget: AdaptiveML.adpt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaptiveML/adpt
+aliases: []

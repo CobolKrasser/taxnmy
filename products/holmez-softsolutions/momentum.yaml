@@ -1,0 +1,11 @@
+key: holmez-softsolutions/momentum
+publisher: holmez-softsolutions
+name: Momentum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HolmeZ/Momentum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HolmeZ/Momentum
+identifiers:
+- winget: HolmeZ.Momentum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HolmeZ/Momentum
+aliases: []

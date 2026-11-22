@@ -1,0 +1,11 @@
+key: eth-zurich/safe-exam-browser
+publisher: eth-zurich
+name: Safe Exam Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ETHZurich/SafeExamBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ETHZurich/SafeExamBrowser
+identifiers:
+- winget: ETHZurich.SafeExamBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ETHZurich/SafeExamBrowser
+aliases: []

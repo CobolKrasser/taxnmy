@@ -1,0 +1,11 @@
+key: mitec/mitec-windows-file-analayzer
+publisher: mitec
+name: MiTeC Windows File Analayzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/WindowsFileAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/WindowsFileAnalyzer
+identifiers:
+- winget: MiTeC.WindowsFileAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/WindowsFileAnalyzer
+aliases: []

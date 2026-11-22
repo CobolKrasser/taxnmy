@@ -1,0 +1,11 @@
+key: guangzhou-chicken-run-network-technology/gamesir-connect
+publisher: guangzhou-chicken-run-network-technology
+name: GameSir Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GameSir/GameSirConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GameSir/GameSirConnect
+identifiers:
+- winget: GameSir.GameSirConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GameSir/GameSirConnect
+aliases: []

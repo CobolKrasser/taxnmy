@@ -1,0 +1,11 @@
+key: opensees/opensees
+publisher: opensees
+name: OpenSees
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSees/OpenSees
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSees/OpenSees
+identifiers:
+- winget: OpenSees.OpenSees
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSees/OpenSees
+aliases: []

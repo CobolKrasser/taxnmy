@@ -1,0 +1,11 @@
+key: emmanouil-konstantinidis/gitify
+publisher: emmanouil-konstantinidis
+name: Gitify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitify/Gitify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitify/Gitify
+identifiers:
+- winget: Gitify.Gitify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitify/Gitify
+aliases: []

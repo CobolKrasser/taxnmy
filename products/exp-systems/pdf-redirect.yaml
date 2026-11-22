@@ -1,0 +1,11 @@
+key: exp-systems/pdf-redirect
+publisher: exp-systems
+name: PDF reDirect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EXPSystems/PDFreDirect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EXPSystems/PDFreDirect
+identifiers:
+- winget: EXPSystems.PDFreDirect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EXPSystems/PDFreDirect
+aliases: []

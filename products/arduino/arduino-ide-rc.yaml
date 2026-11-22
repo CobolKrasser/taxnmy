@@ -1,0 +1,11 @@
+key: arduino/arduino-ide-rc
+publisher: arduino
+name: Arduino IDE RC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/rc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/rc
+identifiers:
+- winget: ArduinoSA.IDE.rc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/rc
+aliases: []

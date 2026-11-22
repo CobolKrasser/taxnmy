@@ -1,0 +1,11 @@
+key: ekahau/ekahau-capture
+publisher: ekahau
+name: Ekahau Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ekahau/Capture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ekahau/Capture
+identifiers:
+- winget: Ekahau.Capture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ekahau/Capture
+aliases: []

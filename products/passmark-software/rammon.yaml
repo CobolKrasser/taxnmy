@@ -1,0 +1,11 @@
+key: passmark-software/rammon
+publisher: passmark-software
+name: RAMMon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/RAMMon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/RAMMon
+identifiers:
+- winget: PassMark.RAMMon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/RAMMon
+aliases: []

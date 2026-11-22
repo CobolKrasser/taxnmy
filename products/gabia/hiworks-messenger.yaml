@@ -1,0 +1,11 @@
+key: gabia/hiworks-messenger
+publisher: gabia
+name: Hiworks Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gabia/HiworksMessenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gabia/HiworksMessenger
+identifiers:
+- winget: Gabia.HiworksMessenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gabia/HiworksMessenger
+aliases: []

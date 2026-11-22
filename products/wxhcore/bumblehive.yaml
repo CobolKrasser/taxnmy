@@ -1,0 +1,11 @@
+key: wxhcore/bumblehive
+publisher: wxhcore
+name: BumbleHive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wxhcore/BumbleHive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wxhcore/BumbleHive
+identifiers:
+- winget: wxhcore.BumbleHive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wxhcore/BumbleHive
+aliases: []

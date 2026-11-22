@@ -1,0 +1,11 @@
+key: master-packager/master-packager-dev
+publisher: master-packager
+name: Master Packager Dev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterPackager/MasterPackagerDev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterPackager/MasterPackagerDev
+identifiers:
+- winget: MasterPackager.MasterPackagerDev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterPackager/MasterPackagerDev
+aliases: []

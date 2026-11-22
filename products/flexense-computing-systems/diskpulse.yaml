@@ -1,0 +1,11 @@
+key: flexense-computing-systems/diskpulse
+publisher: flexense-computing-systems
+name: DiskPulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskPulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskPulse
+identifiers:
+- winget: Flexense.DiskPulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskPulse
+aliases: []

@@ -1,0 +1,11 @@
+key: bk-one/bright-kitchen-print-bridge
+publisher: bk-one
+name: Bright Kitchen Print Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightKitchen/PrintBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightKitchen/PrintBridge
+identifiers:
+- winget: BrightKitchen.PrintBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightKitchen/PrintBridge
+aliases: []

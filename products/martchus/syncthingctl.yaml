@@ -1,0 +1,11 @@
+key: martchus/syncthingctl
+publisher: martchus
+name: syncthingctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Martchus/syncthingctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Martchus/syncthingctl
+identifiers:
+- winget: Martchus.syncthingctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Martchus/syncthingctl
+aliases: []

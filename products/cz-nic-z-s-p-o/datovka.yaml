@@ -1,0 +1,11 @@
+key: cz-nic-z-s-p-o/datovka
+publisher: cz-nic-z-s-p-o
+name: Datovka
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CZNIC/Datovka
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CZNIC/Datovka
+identifiers:
+- winget: CZNIC.Datovka
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CZNIC/Datovka
+aliases: []

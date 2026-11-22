@@ -1,0 +1,11 @@
+key: zellij-contributors/zellij
+publisher: zellij-contributors
+name: Zellij
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zellij/Zellij
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zellij/Zellij
+identifiers:
+- winget: Zellij.Zellij
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zellij/Zellij
+aliases: []

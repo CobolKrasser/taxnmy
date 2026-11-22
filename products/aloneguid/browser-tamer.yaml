@@ -1,0 +1,11 @@
+key: aloneguid/browser-tamer
+publisher: aloneguid
+name: Browser Tamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aloneguid/bt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aloneguid/bt
+identifiers:
+- winget: aloneguid.bt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aloneguid/bt
+aliases: []

@@ -1,0 +1,11 @@
+key: beyerdynamic/beyerdynamic-update-hub
+publisher: beyerdynamic
+name: beyerdynamic Update Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/beyerdynamic/UpdateHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/beyerdynamic/UpdateHub
+identifiers:
+- winget: beyerdynamic.UpdateHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/beyerdynamic/UpdateHub
+aliases: []

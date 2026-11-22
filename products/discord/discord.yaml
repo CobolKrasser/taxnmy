@@ -1,0 +1,15 @@
+key: discord/discord
+publisher: discord
+name: Discord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord
+identifiers:
+- winget: Discord.Discord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord
+- winget: Discord.Discord.arm64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/arm64
+- winget: Discord.Discord.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/x86
+aliases: []

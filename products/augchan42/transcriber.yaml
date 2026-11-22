@@ -1,0 +1,11 @@
+key: augchan42/transcriber
+publisher: augchan42
+name: Transcriber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Augchan42/Transcriber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Augchan42/Transcriber
+identifiers:
+- winget: Augchan42.Transcriber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Augchan42/Transcriber
+aliases: []

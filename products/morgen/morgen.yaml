@@ -1,0 +1,11 @@
+key: morgen/morgen
+publisher: morgen
+name: Morgen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morgen/Morgen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morgen/Morgen
+identifiers:
+- winget: Morgen.Morgen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morgen/Morgen
+aliases: []

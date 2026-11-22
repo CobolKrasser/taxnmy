@@ -1,0 +1,11 @@
+key: relic/relic
+publisher: relic
+name: Relic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Relic/Relic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Relic/Relic
+identifiers:
+- winget: Relic.Relic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Relic/Relic
+aliases: []

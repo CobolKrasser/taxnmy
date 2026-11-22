@@ -1,0 +1,11 @@
+key: myshic/savy
+publisher: myshic
+name: Savy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Myshic/Savy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Myshic/Savy
+identifiers:
+- winget: Myshic.Savy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Myshic/Savy
+aliases: []

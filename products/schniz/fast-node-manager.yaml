@@ -1,0 +1,11 @@
+key: schniz/fast-node-manager
+publisher: schniz
+name: Fast Node Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Schniz/fnm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Schniz/fnm
+identifiers:
+- winget: Schniz.fnm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Schniz/fnm
+aliases: []

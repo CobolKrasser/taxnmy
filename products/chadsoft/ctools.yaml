@@ -1,0 +1,11 @@
+key: chadsoft/ctools
+publisher: chadsoft
+name: CTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chadsoft/CTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chadsoft/CTools
+identifiers:
+- winget: Chadsoft.CTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chadsoft/CTools
+aliases: []

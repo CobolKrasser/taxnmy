@@ -1,0 +1,11 @@
+key: the-sz-development/quartz
+publisher: the-sz-development
+name: Quartz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Quartz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Quartz
+identifiers:
+- winget: the-sz.Quartz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Quartz
+aliases: []

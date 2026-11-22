@@ -1,0 +1,11 @@
+key: dave-kerr/sharpshell
+publisher: dave-kerr
+name: SharpShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dwmkerr/SharpShell/ServerManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dwmkerr/SharpShell/ServerManager
+identifiers:
+- winget: dwmkerr.SharpShell.ServerManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dwmkerr/SharpShell/ServerManager
+aliases: []

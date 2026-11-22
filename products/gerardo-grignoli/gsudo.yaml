@@ -1,0 +1,11 @@
+key: gerardo-grignoli/gsudo
+publisher: gerardo-grignoli
+name: gsudo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gerardog/gsudo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gerardog/gsudo
+identifiers:
+- winget: gerardog.gsudo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gerardog/gsudo
+aliases: []

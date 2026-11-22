@@ -1,0 +1,11 @@
+key: stephen-james-hurd/syncterm
+publisher: stephen-james-hurd
+name: SyncTERM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncTERM/SyncTERM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncTERM/SyncTERM
+identifiers:
+- winget: SyncTERM.SyncTERM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncTERM/SyncTERM
+aliases: []

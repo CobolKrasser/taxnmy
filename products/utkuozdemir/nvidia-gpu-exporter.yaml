@@ -1,0 +1,11 @@
+key: utkuozdemir/nvidia-gpu-exporter
+publisher: utkuozdemir
+name: Nvidia GPU Exporter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/utkuozdemir/nvidia_gpu_exporter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/utkuozdemir/nvidia_gpu_exporter
+identifiers:
+- winget: utkuozdemir.nvidia_gpu_exporter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/utkuozdemir/nvidia_gpu_exporter
+aliases: []

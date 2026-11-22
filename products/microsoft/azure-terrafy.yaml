@@ -1,0 +1,11 @@
+key: microsoft/azure-terrafy
+publisher: microsoft
+name: Azure Terrafy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Aztfy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Aztfy
+identifiers:
+- winget: Microsoft.Azure.Aztfy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Aztfy
+aliases: []

@@ -1,0 +1,11 @@
+key: harbour/harbour
+publisher: harbour
+name: Harbour
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Harbour/Harbour
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Harbour/Harbour
+identifiers:
+- winget: Harbour.Harbour
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Harbour/Harbour
+aliases: []

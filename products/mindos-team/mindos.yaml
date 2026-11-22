@@ -1,0 +1,11 @@
+key: mindos-team/mindos
+publisher: mindos-team
+name: MindOS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeminiLight/MindOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeminiLight/MindOS
+identifiers:
+- winget: GeminiLight.MindOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeminiLight/MindOS
+aliases: []

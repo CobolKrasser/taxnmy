@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-event-manager
+publisher: adinstruments
+name: ADInstruments Event Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/EventManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/EventManager
+identifiers:
+- winget: ADInstruments.LabChart.Extension.EventManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/EventManager
+aliases: []

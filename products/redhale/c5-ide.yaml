@@ -1,0 +1,11 @@
+key: redhale/c5-ide
+publisher: redhale
+name: c5-ide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redhale/c5-ide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redhale/c5-ide
+identifiers:
+- winget: redhale.c5-ide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redhale/c5-ide
+aliases: []

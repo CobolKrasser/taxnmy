@@ -1,0 +1,11 @@
+key: atola-technology/multidrive
+publisher: atola-technology
+name: MultiDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atola/MultiDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atola/MultiDrive
+identifiers:
+- winget: Atola.MultiDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atola/MultiDrive
+aliases: []

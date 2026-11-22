@@ -1,0 +1,11 @@
+key: google/brotli
+publisher: google
+name: Brotli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Brotli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Brotli
+identifiers:
+- winget: Google.Brotli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Brotli
+aliases: []

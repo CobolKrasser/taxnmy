@@ -1,0 +1,11 @@
+key: arcthesia/arccreate
+publisher: arcthesia
+name: ArcCreate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arcthesia/ArcCreate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arcthesia/ArcCreate
+identifiers:
+- winget: Arcthesia.ArcCreate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arcthesia/ArcCreate
+aliases: []

@@ -1,0 +1,11 @@
+key: tom-laird-mcconnell/outlook-for-outlook-com
+publisher: tom-laird-mcconnell
+name: Outlook for Outlook.com
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tomlm/electron-outlook-com
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tomlm/electron-outlook-com
+identifiers:
+- winget: tomlm.electron-outlook-com
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tomlm/electron-outlook-com
+aliases: []

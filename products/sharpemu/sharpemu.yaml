@@ -1,0 +1,11 @@
+key: sharpemu/sharpemu
+publisher: sharpemu
+name: SharpEmu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharpemu/SharpEmu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharpemu/SharpEmu
+identifiers:
+- winget: sharpemu.SharpEmu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharpemu/SharpEmu
+aliases: []

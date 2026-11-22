@@ -1,0 +1,11 @@
+key: chris-lovett/mymoney-net
+publisher: chris-lovett
+name: MyMoney.Net
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LovettSoftware/MyMoney/Net
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LovettSoftware/MyMoney/Net
+identifiers:
+- winget: LovettSoftware.MyMoney.Net
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LovettSoftware/MyMoney/Net
+aliases: []

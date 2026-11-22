@@ -1,0 +1,11 @@
+key: solarwinds/solarwinds-tftp-server
+publisher: solarwinds
+name: SolarWinds TFTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/SolarWindsTFTPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/SolarWindsTFTPServer
+identifiers:
+- winget: SolarWinds.SolarWindsTFTPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolarWinds/SolarWindsTFTPServer
+aliases: []

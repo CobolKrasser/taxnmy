@@ -1,0 +1,11 @@
+key: celerp/celerp
+publisher: celerp
+name: Celerp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Celerp/Celerp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Celerp/Celerp
+identifiers:
+- winget: Celerp.Celerp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Celerp/Celerp
+aliases: []

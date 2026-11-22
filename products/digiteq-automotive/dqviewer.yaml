@@ -1,0 +1,11 @@
+key: digiteq-automotive/dqviewer
+publisher: digiteq-automotive
+name: DQViewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiteqAutomotive/DQViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiteqAutomotive/DQViewer
+identifiers:
+- winget: DigiteqAutomotive.DQViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiteqAutomotive/DQViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: gridcoin-project/gridcoin
+publisher: gridcoin-project
+name: Gridcoin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gridcoin/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gridcoin/Client
+identifiers:
+- winget: Gridcoin.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gridcoin/Client
+aliases: []

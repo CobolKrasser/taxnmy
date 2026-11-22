@@ -1,0 +1,11 @@
+key: sdcc/small-device-c-compiler
+publisher: sdcc
+name: Small Device C Compiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDCC/SDCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDCC/SDCC
+identifiers:
+- winget: SDCC.SDCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDCC/SDCC
+aliases: []

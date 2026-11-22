@@ -1,0 +1,11 @@
+key: john-kerl/miller
+publisher: john-kerl
+name: Miller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miller/Miller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miller/Miller
+identifiers:
+- winget: Miller.Miller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miller/Miller
+aliases: []

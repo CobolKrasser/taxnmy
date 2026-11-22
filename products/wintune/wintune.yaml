@@ -1,0 +1,11 @@
+key: wintune/wintune
+publisher: wintune
+name: WinTune
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinTune/WinTune
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinTune/WinTune
+identifiers:
+- winget: WinTune.WinTune
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinTune/WinTune
+aliases: []

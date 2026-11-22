@@ -1,0 +1,11 @@
+key: itri/quicksecs
+publisher: itri
+name: QuickSECS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITRI/QuickSECS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITRI/QuickSECS
+identifiers:
+- winget: ITRI.QuickSECS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITRI/QuickSECS
+aliases: []

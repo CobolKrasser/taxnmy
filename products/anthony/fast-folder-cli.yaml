@@ -1,0 +1,11 @@
+key: anthony/fast-folder-cli
+publisher: anthony
+name: fast-folder-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnthonyCZ6/FastFolderCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnthonyCZ6/FastFolderCLI
+identifiers:
+- winget: AnthonyCZ6.FastFolderCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnthonyCZ6/FastFolderCLI
+aliases: []

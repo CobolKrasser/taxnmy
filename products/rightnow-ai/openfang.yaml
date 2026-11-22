@@ -1,0 +1,11 @@
+key: rightnow-ai/openfang
+publisher: rightnow-ai
+name: OpenFang
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RightNow-AI/OpenFang
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RightNow-AI/OpenFang
+identifiers:
+- winget: RightNow-AI.OpenFang
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RightNow-AI/OpenFang
+aliases: []

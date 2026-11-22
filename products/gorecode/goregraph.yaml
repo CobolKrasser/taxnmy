@@ -1,0 +1,11 @@
+key: gorecode/goregraph
+publisher: gorecode
+name: GoreGraph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoreCode/GoreGraph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoreCode/GoreGraph
+identifiers:
+- winget: GoreCode.GoreGraph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoreCode/GoreGraph
+aliases: []

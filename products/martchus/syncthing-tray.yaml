@@ -1,0 +1,11 @@
+key: martchus/syncthing-tray
+publisher: martchus
+name: Syncthing Tray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Martchus/syncthingtray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Martchus/syncthingtray
+identifiers:
+- winget: Martchus.syncthingtray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Martchus/syncthingtray
+aliases: []

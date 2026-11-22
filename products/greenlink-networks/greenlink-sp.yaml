@@ -1,0 +1,11 @@
+key: greenlink-networks/greenlink-sp
+publisher: greenlink-networks
+name: Greenlink SP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreenLinkNetworks/GreenlinkSP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreenLinkNetworks/GreenlinkSP
+identifiers:
+- winget: GreenLinkNetworks.GreenlinkSP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreenLinkNetworks/GreenlinkSP
+aliases: []

@@ -1,0 +1,13 @@
+key: skills-transfer-hub/sth
+publisher: skills-transfer-hub
+name: sth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/STH/STH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/STH/STH
+identifiers:
+- winget: Grandpied33.STH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grandpied33/STH
+- winget: STH.STH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/STH/STH
+aliases: []

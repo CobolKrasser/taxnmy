@@ -1,0 +1,11 @@
+key: artem-izmaylov/aimp
+publisher: artem-izmaylov
+name: AIMP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIMP/AIMP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIMP/AIMP
+identifiers:
+- winget: AIMP.AIMP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIMP/AIMP
+aliases: []

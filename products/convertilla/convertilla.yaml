@@ -1,0 +1,11 @@
+key: convertilla/convertilla
+publisher: convertilla
+name: Convertilla
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Convertilla/Convertilla
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Convertilla/Convertilla
+identifiers:
+- winget: Convertilla.Convertilla
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Convertilla/Convertilla
+aliases: []

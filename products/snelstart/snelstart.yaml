@@ -1,0 +1,11 @@
+key: snelstart/snelstart
+publisher: snelstart
+name: SnelStart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnelStart/SnelStart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnelStart/SnelStart
+identifiers:
+- winget: SnelStart.SnelStart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnelStart/SnelStart
+aliases: []

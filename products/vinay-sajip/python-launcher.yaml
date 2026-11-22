@@ -1,0 +1,11 @@
+key: vinay-sajip/python-launcher
+publisher: vinay-sajip
+name: Python Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VinaySajip/PythonLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VinaySajip/PythonLauncher
+identifiers:
+- winget: VinaySajip.PythonLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VinaySajip/PythonLauncher
+aliases: []

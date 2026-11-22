@@ -1,0 +1,11 @@
+key: visionaid-international/visionaid-international-gaelic-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Gaelic Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Gaelic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Gaelic
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Gaelic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Gaelic
+aliases: []

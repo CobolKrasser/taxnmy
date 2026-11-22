@@ -1,0 +1,11 @@
+key: schrodinger/pymol
+publisher: schrodinger
+name: PyMOL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Schrodinger/PyMOL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Schrodinger/PyMOL
+identifiers:
+- winget: Schrodinger.PyMOL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Schrodinger/PyMOL
+aliases: []

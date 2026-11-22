@@ -1,0 +1,13 @@
+key: misfit-code/misfit-model-3d
+publisher: misfit-code
+name: Misfit Model 3D
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisfitCode/MisfitModel3D
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisfitCode/MisfitModel3D
+identifiers:
+- winget: MisfitCode.MisfitModel3D
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisfitCode/MisfitModel3D
+- winget: MisfitCode.MisfitModel3D.dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisfitCode/MisfitModel3D/dev
+aliases: []

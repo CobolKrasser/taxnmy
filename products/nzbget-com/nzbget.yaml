@@ -1,0 +1,11 @@
+key: nzbget-com/nzbget
+publisher: nzbget-com
+name: NZBGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nzbget/nzbget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nzbget/nzbget
+identifiers:
+- winget: nzbget.nzbget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nzbget/nzbget
+aliases: []

@@ -1,0 +1,11 @@
+key: pressly/goose
+publisher: pressly
+name: Goose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pressly/Goose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pressly/Goose
+identifiers:
+- winget: Pressly.Goose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pressly/Goose
+aliases: []

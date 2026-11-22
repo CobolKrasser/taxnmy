@@ -1,0 +1,11 @@
+key: shortarrow/runex
+publisher: shortarrow
+name: runex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShortArrow/runex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShortArrow/runex
+identifiers:
+- winget: ShortArrow.runex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShortArrow/runex
+aliases: []

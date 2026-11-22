@@ -1,0 +1,11 @@
+key: prql-developers/prql-compiler-cli-prqlc
+publisher: prql-developers
+name: PRQL compiler CLI - prqlc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PRQL/prqlc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PRQL/prqlc
+identifiers:
+- winget: PRQL.prqlc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PRQL/prqlc
+aliases: []

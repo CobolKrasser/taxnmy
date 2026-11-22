@@ -1,0 +1,11 @@
+key: tagstudiodev/tagstudio
+publisher: tagstudiodev
+name: TagStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TagStudioDev/TagStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TagStudioDev/TagStudio
+identifiers:
+- winget: TagStudioDev.TagStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TagStudioDev/TagStudio
+aliases: []

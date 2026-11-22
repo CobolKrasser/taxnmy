@@ -1,0 +1,11 @@
+key: thxnlo/tether
+publisher: thxnlo
+name: tether
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thxnlo/tether
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thxnlo/tether
+identifiers:
+- winget: thxnlo.tether
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thxnlo/tether
+aliases: []

@@ -1,0 +1,11 @@
+key: thunderhead-technologies/wxclient
+publisher: thunderhead-technologies
+name: WxClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxClient
+identifiers:
+- winget: Thunderhead.WxClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxClient
+aliases: []

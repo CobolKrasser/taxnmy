@@ -1,0 +1,11 @@
+key: stardock/clairvoyance
+publisher: stardock
+name: Clairvoyance
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Clairvoyance
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Clairvoyance
+identifiers:
+- winget: Stardock.Clairvoyance
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Clairvoyance
+aliases: []

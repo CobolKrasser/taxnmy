@@ -1,0 +1,11 @@
+key: ntwind/screenshot-remote
+publisher: ntwind
+name: Screenshot Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/ScreenshotRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/ScreenshotRemote
+identifiers:
+- winget: ntwind.ScreenshotRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/ScreenshotRemote
+aliases: []

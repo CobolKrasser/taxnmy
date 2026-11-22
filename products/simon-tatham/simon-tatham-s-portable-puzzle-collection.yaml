@@ -1,0 +1,11 @@
+key: simon-tatham/simon-tatham-s-portable-puzzle-collection
+publisher: simon-tatham
+name: Simon Tatham's Portable Puzzle Collection
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonTatham/Puzzles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonTatham/Puzzles
+identifiers:
+- winget: SimonTatham.Puzzles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonTatham/Puzzles
+aliases: []

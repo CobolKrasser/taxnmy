@@ -1,0 +1,11 @@
+key: rgdevment/linkunbound
+publisher: rgdevment
+name: LinkUnbound
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rgdevment/LinkUnbound
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rgdevment/LinkUnbound
+identifiers:
+- winget: rgdevment.LinkUnbound
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rgdevment/LinkUnbound
+aliases: []

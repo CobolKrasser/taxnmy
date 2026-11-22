@@ -1,0 +1,11 @@
+key: keepassrdp/keepassrdp
+publisher: keepassrdp
+name: KeePassRDP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeePassRDP/KeePassRDP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeePassRDP/KeePassRDP
+identifiers:
+- winget: KeePassRDP.KeePassRDP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeePassRDP/KeePassRDP
+aliases: []

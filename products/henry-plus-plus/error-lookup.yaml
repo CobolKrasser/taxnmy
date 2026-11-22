@@ -1,0 +1,11 @@
+key: henry-plus-plus/error-lookup
+publisher: henry-plus-plus
+name: Error Lookup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/ErrorLookup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/ErrorLookup
+identifiers:
+- winget: Henry++.ErrorLookup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/ErrorLookup
+aliases: []

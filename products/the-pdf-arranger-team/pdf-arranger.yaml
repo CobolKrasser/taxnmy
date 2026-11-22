@@ -1,0 +1,11 @@
+key: the-pdf-arranger-team/pdf-arranger
+publisher: the-pdf-arranger-team
+name: PDF Arranger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFArranger/PDFArranger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFArranger/PDFArranger
+identifiers:
+- winget: PDFArranger.PDFArranger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFArranger/PDFArranger
+aliases: []

@@ -1,0 +1,11 @@
+key: colony-labs/scribe
+publisher: colony-labs
+name: Scribe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColonyLabs/ScribeDesktopCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColonyLabs/ScribeDesktopCapture
+identifiers:
+- winget: ColonyLabs.ScribeDesktopCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColonyLabs/ScribeDesktopCapture
+aliases: []

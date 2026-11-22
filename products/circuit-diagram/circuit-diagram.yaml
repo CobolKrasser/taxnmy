@@ -1,0 +1,11 @@
+key: circuit-diagram/circuit-diagram
+publisher: circuit-diagram
+name: Circuit Diagram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircuitDiagram/CircuitDiagram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircuitDiagram/CircuitDiagram
+identifiers:
+- winget: CircuitDiagram.CircuitDiagram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircuitDiagram/CircuitDiagram
+aliases: []

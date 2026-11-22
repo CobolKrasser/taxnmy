@@ -1,0 +1,11 @@
+key: victron-energy/veflash-veconfig-and-ve-bus-configure-tools
+publisher: victron-energy
+name: VEFlash, VEConfig and VE.Bus configure tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VEConfigureTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VEConfigureTools
+identifiers:
+- winget: VictronEnergy.VEConfigureTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VEConfigureTools
+aliases: []

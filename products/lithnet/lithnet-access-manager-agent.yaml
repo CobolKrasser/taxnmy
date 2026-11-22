@@ -1,0 +1,11 @@
+key: lithnet/lithnet-access-manager-agent
+publisher: lithnet
+name: Lithnet Access Manager Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lithnet/AccessManager/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lithnet/AccessManager/Agent
+identifiers:
+- winget: Lithnet.AccessManager.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lithnet/AccessManager/Agent
+aliases: []

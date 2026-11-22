@@ -1,0 +1,11 @@
+key: openorienteering/openorienteering-mapper
+publisher: openorienteering
+name: OpenOrienteering Mapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenOrienteering/Mapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenOrienteering/Mapper
+identifiers:
+- winget: OpenOrienteering.Mapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenOrienteering/Mapper
+aliases: []

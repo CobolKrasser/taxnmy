@@ -1,0 +1,11 @@
+key: nordpass-team/nordpass
+publisher: nordpass-team
+name: NordPass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordPass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordPass
+identifiers:
+- winget: NordSecurity.NordPass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordPass
+aliases: []

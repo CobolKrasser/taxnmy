@@ -1,0 +1,11 @@
+key: jakobdev/jdminecraftlauncher
+publisher: jakobdev
+name: jdMinecraftLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JakobDev/jdMinecraftLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JakobDev/jdMinecraftLauncher
+identifiers:
+- winget: JakobDev.jdMinecraftLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JakobDev/jdMinecraftLauncher
+aliases: []

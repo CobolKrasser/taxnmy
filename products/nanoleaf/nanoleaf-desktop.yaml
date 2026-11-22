@@ -1,0 +1,11 @@
+key: nanoleaf/nanoleaf-desktop
+publisher: nanoleaf
+name: Nanoleaf Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nanoleaf/NanoleafDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nanoleaf/NanoleafDesktop
+identifiers:
+- winget: Nanoleaf.NanoleafDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nanoleaf/NanoleafDesktop
+aliases: []

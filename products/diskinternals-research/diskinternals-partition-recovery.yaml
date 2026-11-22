@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-partition-recovery
+publisher: diskinternals-research
+name: DiskInternals Partition Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/PartitionRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/PartitionRecovery
+identifiers:
+- winget: DiskInternals.PartitionRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/PartitionRecovery
+aliases: []

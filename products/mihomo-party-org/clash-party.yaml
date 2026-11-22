@@ -1,0 +1,11 @@
+key: mihomo-party-org/clash-party
+publisher: mihomo-party-org
+name: Clash Party
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihomo-Party/Clash-Party
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihomo-Party/Clash-Party
+identifiers:
+- winget: Mihomo-Party.Clash-Party
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihomo-Party/Clash-Party
+aliases: []

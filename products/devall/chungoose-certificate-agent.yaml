@@ -1,0 +1,11 @@
+key: devall/chungoose-certificate-agent
+publisher: devall
+name: Chungoose Certificate Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevallCompany/ChungooseCertAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevallCompany/ChungooseCertAgent
+identifiers:
+- winget: DevallCompany.ChungooseCertAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevallCompany/ChungooseCertAgent
+aliases: []

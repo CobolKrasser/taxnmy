@@ -1,0 +1,11 @@
+key: trelby-org/trelby
+publisher: trelby-org
+name: Trelby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trelby/Trelby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trelby/Trelby
+identifiers:
+- winget: Trelby.Trelby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trelby/Trelby
+aliases: []

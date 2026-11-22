@@ -1,0 +1,11 @@
+key: geoslope-international/geostudio
+publisher: geoslope-international
+name: GeoStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GEOSLOPE/GeoStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GEOSLOPE/GeoStudio
+identifiers:
+- winget: GEOSLOPE.GeoStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GEOSLOPE/GeoStudio
+aliases: []

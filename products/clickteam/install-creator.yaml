@@ -1,0 +1,11 @@
+key: clickteam/install-creator
+publisher: clickteam
+name: Install Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clickteam/InstallCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clickteam/InstallCreator
+identifiers:
+- winget: Clickteam.InstallCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clickteam/InstallCreator
+aliases: []

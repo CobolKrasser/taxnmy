@@ -1,0 +1,11 @@
+key: samygo/remote-lan-control
+publisher: samygo
+name: Remote LAN Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/RemoteLANControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/RemoteLANControl
+identifiers:
+- winget: SamyGO.RemoteLANControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/RemoteLANControl
+aliases: []

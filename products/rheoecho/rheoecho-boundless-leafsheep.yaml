@@ -1,0 +1,11 @@
+key: rheoecho/rheoecho-boundless-leafsheep
+publisher: rheoecho
+name: RheoEcho Boundless LeafSheep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rheoecho/leafsheep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rheoecho/leafsheep
+identifiers:
+- winget: Rheoecho.leafsheep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rheoecho/leafsheep
+aliases: []

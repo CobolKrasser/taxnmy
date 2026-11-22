@@ -1,0 +1,11 @@
+key: the-sz-development/doro
+publisher: the-sz-development
+name: Doro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Doro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Doro
+identifiers:
+- winget: the-sz.Doro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Doro
+aliases: []

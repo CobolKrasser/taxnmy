@@ -1,0 +1,11 @@
+key: broadcast-radio/myriad-playout-support-applications
+publisher: broadcast-radio
+name: Myriad Playout Support Applications
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadPlayoutSupportApplications
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadPlayoutSupportApplications
+identifiers:
+- winget: BroadcastRadio.MyriadPlayoutSupportApplications
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadPlayoutSupportApplications
+aliases: []

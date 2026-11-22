@@ -1,0 +1,11 @@
+key: bosse/httpdisk
+publisher: bosse
+name: HttpDisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/httpdisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/httpdisk
+identifiers:
+- winget: bosse.httpdisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/httpdisk
+aliases: []

@@ -1,0 +1,11 @@
+key: eductool/eductool
+publisher: eductool
+name: Eductool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eductool/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eductool/Desktop
+identifiers:
+- winget: Eductool.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eductool/Desktop
+aliases: []

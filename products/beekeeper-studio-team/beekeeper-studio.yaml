@@ -1,0 +1,11 @@
+key: beekeeper-studio-team/beekeeper-studio
+publisher: beekeeper-studio-team
+name: Beekeeper Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/beekeeper-studio/beekeeper-studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/beekeeper-studio/beekeeper-studio
+identifiers:
+- winget: beekeeper-studio.beekeeper-studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/beekeeper-studio/beekeeper-studio
+aliases: []

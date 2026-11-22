@@ -1,0 +1,11 @@
+key: boeksolutions/libsync
+publisher: boeksolutions
+name: LibSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoekSolutions/LibSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoekSolutions/LibSync
+identifiers:
+- winget: BoekSolutions.LibSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoekSolutions/LibSync
+aliases: []

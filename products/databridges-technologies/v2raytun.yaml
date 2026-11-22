@@ -1,0 +1,11 @@
+key: databridges-technologies/v2raytun
+publisher: databridges-technologies
+name: v2RayTun
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2RayTun/Windows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2RayTun/Windows
+identifiers:
+- winget: v2RayTun.Windows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2RayTun/Windows
+aliases: []

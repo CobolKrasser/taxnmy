@@ -1,0 +1,11 @@
+key: cute-chess-authors/cute-chess
+publisher: cute-chess-authors
+name: Cute Chess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CuteChess/CuteChess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CuteChess/CuteChess
+identifiers:
+- winget: CuteChess.CuteChess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CuteChess/CuteChess
+aliases: []

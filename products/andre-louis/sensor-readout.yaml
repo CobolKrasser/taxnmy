@@ -1,0 +1,11 @@
+key: andre-louis/sensor-readout
+publisher: andre-louis
+name: Sensor Readout
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnjLouis/SensorReadout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnjLouis/SensorReadout
+identifiers:
+- winget: OnjLouis.SensorReadout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnjLouis/SensorReadout
+aliases: []

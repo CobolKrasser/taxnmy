@@ -1,0 +1,11 @@
+key: mayakron/acrylic-dns
+publisher: mayakron
+name: Acrylic DNS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mayakron/AcrylicDNS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mayakron/AcrylicDNS
+identifiers:
+- winget: Mayakron.AcrylicDNS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mayakron/AcrylicDNS
+aliases: []

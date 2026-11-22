@@ -1,0 +1,11 @@
+key: deezer/deezer
+publisher: deezer
+name: Deezer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deezer/Deezer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deezer/Deezer
+identifiers:
+- winget: Deezer.Deezer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deezer/Deezer
+aliases: []

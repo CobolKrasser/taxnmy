@@ -1,0 +1,11 @@
+key: the-comet-authors/comet
+publisher: the-comet-authors
+name: Comet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perplexity/Comet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perplexity/Comet
+identifiers:
+- winget: Perplexity.Comet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perplexity/Comet
+aliases: []

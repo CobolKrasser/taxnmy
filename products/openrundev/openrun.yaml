@@ -1,0 +1,11 @@
+key: openrundev/openrun
+publisher: openrundev
+name: OpenRun
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRunDev/OpenRun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRunDev/OpenRun
+identifiers:
+- winget: OpenRunDev.OpenRun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRunDev/OpenRun
+aliases: []

@@ -1,0 +1,11 @@
+key: evgeniy-mamonov/screen-recorder
+publisher: evgeniy-mamonov
+name: Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMONOV/ScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMONOV/ScreenRecorder
+identifiers:
+- winget: MAMONOV.ScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMONOV/ScreenRecorder
+aliases: []

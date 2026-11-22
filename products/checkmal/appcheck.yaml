@@ -1,0 +1,11 @@
+key: checkmal/appcheck
+publisher: checkmal
+name: AppCheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CheckMAL/AppCheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CheckMAL/AppCheck
+identifiers:
+- winget: CheckMAL.AppCheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CheckMAL/AppCheck
+aliases: []

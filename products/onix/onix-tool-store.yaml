@@ -1,0 +1,11 @@
+key: onix/onix-tool-store
+publisher: onix
+name: Onix Tool Store
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Onix/ToolStore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Onix/ToolStore
+identifiers:
+- winget: Onix.ToolStore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Onix/ToolStore
+aliases: []

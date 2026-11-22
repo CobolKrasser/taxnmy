@@ -1,0 +1,11 @@
+key: dinoda-tennakoon/student-task-manager
+publisher: dinoda-tennakoon
+name: Student Task Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DinodaTennakoon/StudentTaskManagerInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DinodaTennakoon/StudentTaskManagerInstaller
+identifiers:
+- winget: DinodaTennakoon.StudentTaskManagerInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DinodaTennakoon/StudentTaskManagerInstaller
+aliases: []

@@ -1,0 +1,11 @@
+key: mach/mach
+publisher: mach
+name: Mach
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MachFramework/Mach
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MachFramework/Mach
+identifiers:
+- winget: MachFramework.Mach
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MachFramework/Mach
+aliases: []

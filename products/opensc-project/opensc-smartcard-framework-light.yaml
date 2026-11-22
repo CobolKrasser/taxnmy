@@ -1,0 +1,11 @@
+key: opensc-project/opensc-smartcard-framework-light
+publisher: opensc-project
+name: OpenSC smartcard framework Light
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSC/OpenSC/Light
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSC/OpenSC/Light
+identifiers:
+- winget: OpenSC.OpenSC.Light
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSC/OpenSC/Light
+aliases: []

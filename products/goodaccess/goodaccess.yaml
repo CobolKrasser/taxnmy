@@ -1,0 +1,11 @@
+key: goodaccess/goodaccess
+publisher: goodaccess
+name: GoodAccess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoodAccess/GoodAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoodAccess/GoodAccess
+identifiers:
+- winget: GoodAccess.GoodAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoodAccess/GoodAccess
+aliases: []

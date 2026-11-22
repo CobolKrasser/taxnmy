@@ -1,0 +1,11 @@
+key: alacritty/alacritty
+publisher: alacritty
+name: Alacritty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alacritty/Alacritty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alacritty/Alacritty
+identifiers:
+- winget: Alacritty.Alacritty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alacritty/Alacritty
+aliases: []

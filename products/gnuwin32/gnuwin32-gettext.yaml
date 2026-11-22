@@ -1,0 +1,11 @@
+key: gnuwin32/gnuwin32-gettext
+publisher: gnuwin32
+name: 'GnuWin32: GetText'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/GetText
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/GetText
+identifiers:
+- winget: GnuWin32.GetText
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/GetText
+aliases: []

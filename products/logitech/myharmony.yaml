@@ -1,0 +1,11 @@
+key: logitech/myharmony
+publisher: logitech
+name: MyHarmony
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/MyHarmony
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/MyHarmony
+identifiers:
+- winget: Logitech.MyHarmony
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/MyHarmony
+aliases: []

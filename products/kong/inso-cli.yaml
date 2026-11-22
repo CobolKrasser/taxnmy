@@ -1,0 +1,11 @@
+key: kong/inso-cli
+publisher: kong
+name: Inso CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insomnia/Inso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insomnia/Inso
+identifiers:
+- winget: Insomnia.Inso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insomnia/Inso
+aliases: []

@@ -1,0 +1,11 @@
+key: gistrec/filecast
+publisher: gistrec
+name: filecast
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gistrec/filecast
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gistrec/filecast
+identifiers:
+- winget: gistrec.filecast
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gistrec/filecast
+aliases: []

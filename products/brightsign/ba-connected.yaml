@@ -1,0 +1,11 @@
+key: brightsign/ba-connected
+publisher: brightsign
+name: BA connected
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightSign/BAconnected
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightSign/BAconnected
+identifiers:
+- winget: BrightSign.BAconnected
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightSign/BAconnected
+aliases: []

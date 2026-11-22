@@ -1,0 +1,11 @@
+key: connectwise/connectwise-manage-client-64-bit
+publisher: connectwise
+name: ConnectWise Manage Client 64-bit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConnectWise/ConnectWiseManageClient64-bit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConnectWise/ConnectWiseManageClient64-bit
+identifiers:
+- winget: ConnectWise.ConnectWiseManageClient64-bit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConnectWise/ConnectWiseManageClient64-bit
+aliases: []

@@ -1,0 +1,11 @@
+key: mingo/mingo
+publisher: mingo
+name: Mingo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mingo/Mingo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mingo/Mingo
+identifiers:
+- winget: Mingo.Mingo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mingo/Mingo
+aliases: []

@@ -1,0 +1,11 @@
+key: tisun2/oof-manager
+publisher: tisun2
+name: OOF Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tisun2/OofManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tisun2/OofManager
+identifiers:
+- winget: tisun2.OofManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tisun2/OofManager
+aliases: []

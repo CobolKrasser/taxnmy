@@ -1,0 +1,11 @@
+key: toby-allen/docto
+publisher: toby-allen
+name: DocTo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TobyAllen/DocTo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TobyAllen/DocTo
+identifiers:
+- winget: TobyAllen.DocTo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TobyAllen/DocTo
+aliases: []

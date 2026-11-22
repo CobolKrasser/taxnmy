@@ -1,0 +1,11 @@
+key: roblox/roblox-player
+publisher: roblox
+name: Roblox Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roblox/Roblox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roblox/Roblox
+identifiers:
+- winget: Roblox.Roblox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roblox/Roblox
+aliases: []

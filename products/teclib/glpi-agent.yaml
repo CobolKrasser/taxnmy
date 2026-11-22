@@ -1,0 +1,11 @@
+key: teclib/glpi-agent
+publisher: teclib
+name: GLPI Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GLPI-Project/GLPI-Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GLPI-Project/GLPI-Agent
+identifiers:
+- winget: GLPI-Project.GLPI-Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GLPI-Project/GLPI-Agent
+aliases: []

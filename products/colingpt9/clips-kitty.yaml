@@ -1,0 +1,11 @@
+key: colingpt9/clips-kitty
+publisher: colingpt9
+name: Clips Kitty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColinGPT9/ClipsKitty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColinGPT9/ClipsKitty
+identifiers:
+- winget: ColinGPT9.ClipsKitty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColinGPT9/ClipsKitty
+aliases: []

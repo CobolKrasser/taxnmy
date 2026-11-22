@@ -1,0 +1,11 @@
+key: cozmix/alignmix-territory-mapping
+publisher: cozmix
+name: AlignMix Territory Mapping
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cozmix/AlignMix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cozmix/AlignMix
+identifiers:
+- winget: Cozmix.AlignMix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cozmix/AlignMix
+aliases: []

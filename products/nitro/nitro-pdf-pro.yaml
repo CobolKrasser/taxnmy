@@ -1,0 +1,11 @@
+key: nitro/nitro-pdf-pro
+publisher: nitro
+name: Nitro PDF Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroSoftware/NitroPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroSoftware/NitroPro
+identifiers:
+- winget: NitroSoftware.NitroPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroSoftware/NitroPro
+aliases: []

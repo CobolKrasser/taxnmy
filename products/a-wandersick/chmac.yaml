@@ -1,0 +1,11 @@
+key: a-wandersick/chmac
+publisher: a-wandersick
+name: ChMac
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wandersick/ChMac
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wandersick/ChMac
+identifiers:
+- winget: wandersick.ChMac
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wandersick/ChMac
+aliases: []

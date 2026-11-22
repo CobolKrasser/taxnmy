@@ -1,0 +1,11 @@
+key: nextdns/nextdns
+publisher: nextdns
+name: NextDNS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextDNS/NextDNS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextDNS/NextDNS
+identifiers:
+- winget: NextDNS.NextDNS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextDNS/NextDNS
+aliases: []

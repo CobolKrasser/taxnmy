@@ -1,0 +1,11 @@
+key: tenpi/music-player
+publisher: tenpi
+name: Music Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/MusicPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/MusicPlayer
+identifiers:
+- winget: Tenpi.MusicPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/MusicPlayer
+aliases: []

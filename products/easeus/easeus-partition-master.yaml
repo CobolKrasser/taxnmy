@@ -1,0 +1,11 @@
+key: easeus/easeus-partition-master
+publisher: easeus
+name: EaseUS Partition Master
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/PartitionMaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/PartitionMaster
+identifiers:
+- winget: EaseUS.PartitionMaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/PartitionMaster
+aliases: []

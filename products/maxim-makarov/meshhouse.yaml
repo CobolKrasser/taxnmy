@@ -1,0 +1,11 @@
+key: maxim-makarov/meshhouse
+publisher: maxim-makarov
+name: MeshHouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshHouse/MeshHouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshHouse/MeshHouse
+identifiers:
+- winget: MeshHouse.MeshHouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshHouse/MeshHouse
+aliases: []

@@ -1,0 +1,11 @@
+key: pilotedge/pilotedge-pilot-client
+publisher: pilotedge
+name: PilotEdge Pilot Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PilotEdge/MSFSclient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PilotEdge/MSFSclient
+identifiers:
+- winget: PilotEdge.MSFSclient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PilotEdge/MSFSclient
+aliases: []

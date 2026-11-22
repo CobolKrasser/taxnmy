@@ -1,0 +1,11 @@
+key: mercatorocean/copernicus-marine-toolbox
+publisher: mercatorocean
+name: Copernicus-Marine-Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MercatorOcean/Copernicus-Marine-Toolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MercatorOcean/Copernicus-Marine-Toolbox
+identifiers:
+- winget: MercatorOcean.Copernicus-Marine-Toolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MercatorOcean/Copernicus-Marine-Toolbox
+aliases: []

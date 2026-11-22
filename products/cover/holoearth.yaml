@@ -1,0 +1,11 @@
+key: cover/holoearth
+publisher: cover
+name: Holoearth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COVERCorp/Holoearth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COVERCorp/Holoearth
+identifiers:
+- winget: COVERCorp.Holoearth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COVERCorp/Holoearth
+aliases: []

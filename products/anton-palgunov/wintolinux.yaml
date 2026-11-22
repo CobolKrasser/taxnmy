@@ -1,0 +1,11 @@
+key: anton-palgunov/wintolinux
+publisher: anton-palgunov
+name: WinToLinux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toxblh/WinToLinux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toxblh/WinToLinux
+identifiers:
+- winget: Toxblh.WinToLinux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toxblh/WinToLinux
+aliases: []

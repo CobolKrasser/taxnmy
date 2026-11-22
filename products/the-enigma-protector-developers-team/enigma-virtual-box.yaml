@@ -1,0 +1,11 @@
+key: the-enigma-protector-developers-team/enigma-virtual-box
+publisher: the-enigma-protector-developers-team
+name: Enigma Virtual Box
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enigma/VirtualBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enigma/VirtualBox
+identifiers:
+- winget: Enigma.VirtualBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enigma/VirtualBox
+aliases: []

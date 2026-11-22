@@ -1,0 +1,11 @@
+key: thorlabs/thorlabs-exulus
+publisher: thorlabs
+name: Thorlabs EXULUS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/EXULUS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/EXULUS
+identifiers:
+- winget: Thorlabs.EXULUS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/EXULUS
+aliases: []

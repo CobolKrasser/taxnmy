@@ -1,0 +1,11 @@
+key: pcsx2-team/pcsx2
+publisher: pcsx2-team
+name: PCSX2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCSX2Team/PCSX2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCSX2Team/PCSX2
+identifiers:
+- winget: PCSX2Team.PCSX2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCSX2Team/PCSX2
+aliases: []

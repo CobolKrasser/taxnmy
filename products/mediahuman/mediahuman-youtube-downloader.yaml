@@ -1,0 +1,11 @@
+key: mediahuman/mediahuman-youtube-downloader
+publisher: mediahuman
+name: MediaHuman YouTube Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/YouTubeDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/YouTubeDownloader
+identifiers:
+- winget: MediaHuman.YouTubeDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/YouTubeDownloader
+aliases: []

@@ -1,0 +1,11 @@
+key: sublimehq/sublime-merge
+publisher: sublimehq
+name: Sublime Merge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeMerge/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeMerge/Portable
+identifiers:
+- winget: SublimeHQ.SublimeMerge.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeMerge/Portable
+aliases: []

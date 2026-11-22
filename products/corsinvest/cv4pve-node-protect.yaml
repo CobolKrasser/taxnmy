@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-node-protect
+publisher: corsinvest
+name: cv4pve-node-protect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/nodeprotect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/nodeprotect
+identifiers:
+- winget: Corsinvest.cv4pve.nodeprotect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/nodeprotect
+aliases: []

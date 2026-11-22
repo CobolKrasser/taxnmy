@@ -1,0 +1,11 @@
+key: substratesystems/endstate-cli
+publisher: substratesystems
+name: Endstate CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubstrateSystems/EndstateCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubstrateSystems/EndstateCLI
+identifiers:
+- winget: SubstrateSystems.EndstateCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubstrateSystems/EndstateCLI
+aliases: []

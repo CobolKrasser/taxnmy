@@ -1,0 +1,11 @@
+key: aker/wsus-offline-update-community-edition
+publisher: aker
+name: WSUS Offline Update Community Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WSUSOfflineUpdate/CommunityEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WSUSOfflineUpdate/CommunityEdition
+identifiers:
+- winget: WSUSOfflineUpdate.CommunityEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WSUSOfflineUpdate/CommunityEdition
+aliases: []

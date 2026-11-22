@@ -1,0 +1,11 @@
+key: epic-games/lore
+publisher: epic-games
+name: Lore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/Lore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/Lore
+identifiers:
+- winget: EpicGames.Lore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/Lore
+aliases: []

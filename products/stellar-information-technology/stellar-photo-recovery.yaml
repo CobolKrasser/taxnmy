@@ -1,0 +1,11 @@
+key: stellar-information-technology/stellar-photo-recovery
+publisher: stellar-information-technology
+name: Stellar Photo Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarPhotoRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarPhotoRecovery
+identifiers:
+- winget: StellarDataRecovery.StellarPhotoRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarPhotoRecovery
+aliases: []

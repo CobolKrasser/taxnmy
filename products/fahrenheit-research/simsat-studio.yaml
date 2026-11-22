@@ -1,0 +1,11 @@
+key: fahrenheit-research/simsat-studio
+publisher: fahrenheit-research
+name: SimSat Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/SimSat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/SimSat
+identifiers:
+- winget: FahrenheitResearch.SimSat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/SimSat
+aliases: []

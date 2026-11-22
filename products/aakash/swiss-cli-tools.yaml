@@ -1,0 +1,11 @@
+key: aakash/swiss-cli-tools
+publisher: aakash
+name: Swiss CLI Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aakash/Swiss
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aakash/Swiss
+identifiers:
+- winget: Aakash.Swiss
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aakash/Swiss
+aliases: []

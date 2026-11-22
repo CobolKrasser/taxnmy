@@ -1,0 +1,11 @@
+key: tastyworks/tastytrade
+publisher: tastyworks
+name: tastytrade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tastyworks/tastytrade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tastyworks/tastytrade
+identifiers:
+- winget: tastyworks.tastytrade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tastyworks/tastytrade
+aliases: []

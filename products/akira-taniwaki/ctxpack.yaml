@@ -1,0 +1,11 @@
+key: akira-taniwaki/ctxpack
+publisher: akira-taniwaki
+name: CtxPack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/ctxpack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/ctxpack
+identifiers:
+- winget: atani.ctxpack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/ctxpack
+aliases: []

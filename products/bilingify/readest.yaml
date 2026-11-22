@@ -1,0 +1,11 @@
+key: bilingify/readest
+publisher: bilingify
+name: Readest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrox/Readest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrox/Readest
+identifiers:
+- winget: chrox.Readest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrox/Readest
+aliases: []

@@ -1,0 +1,11 @@
+key: enderbyte-programs/studentpick
+publisher: enderbyte-programs
+name: StudentPick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/StudentPick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/StudentPick
+identifiers:
+- winget: EnderbytePrograms.StudentPick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/StudentPick
+aliases: []

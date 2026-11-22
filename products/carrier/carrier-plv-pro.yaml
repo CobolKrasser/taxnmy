@@ -1,0 +1,11 @@
+key: carrier/carrier-plv-pro
+publisher: carrier
+name: Carrier PLV Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/PLVPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/PLVPro
+identifiers:
+- winget: Carrier.PLVPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/PLVPro
+aliases: []

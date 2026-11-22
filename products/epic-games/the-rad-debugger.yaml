@@ -1,0 +1,11 @@
+key: epic-games/the-rad-debugger
+publisher: epic-games
+name: The RAD Debugger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/RADDebugger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/RADDebugger
+identifiers:
+- winget: EpicGames.RADDebugger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/RADDebugger
+aliases: []

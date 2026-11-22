@@ -1,0 +1,11 @@
+key: supermicro/ipmiview
+publisher: supermicro
+name: IPMIView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Supermicro/IPMIView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Supermicro/IPMIView
+identifiers:
+- winget: Supermicro.IPMIView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Supermicro/IPMIView
+aliases: []

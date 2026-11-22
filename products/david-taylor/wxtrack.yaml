@@ -1,0 +1,11 @@
+key: david-taylor/wxtrack
+publisher: david-taylor
+name: WXtrack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatSignal/WXtrack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatSignal/WXtrack
+identifiers:
+- winget: SatSignal.WXtrack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatSignal/WXtrack
+aliases: []

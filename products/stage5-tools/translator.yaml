@@ -1,0 +1,11 @@
+key: stage5-tools/translator
+publisher: stage5-tools
+name: Translator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stage5Tools/Translator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stage5Tools/Translator
+identifiers:
+- winget: Stage5Tools.Translator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stage5Tools/Translator
+aliases: []

@@ -1,0 +1,11 @@
+key: d-link/d-link-dwa-x1850-driver
+publisher: d-link
+name: D-Link DWA-X1850 Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Link/DWA-X1850Driver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Link/DWA-X1850Driver
+identifiers:
+- winget: D-Link.DWA-X1850Driver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Link/DWA-X1850Driver
+aliases: []

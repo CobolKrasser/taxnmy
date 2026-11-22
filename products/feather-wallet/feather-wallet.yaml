@@ -1,0 +1,11 @@
+key: feather-wallet/feather-wallet
+publisher: feather-wallet
+name: Feather Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FeatherWallet/Feather
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FeatherWallet/Feather
+identifiers:
+- winget: FeatherWallet.Feather
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FeatherWallet/Feather
+aliases: []

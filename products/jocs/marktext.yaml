@@ -1,0 +1,11 @@
+key: jocs/marktext
+publisher: jocs
+name: MarkText
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkText/MarkText
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkText/MarkText
+identifiers:
+- winget: MarkText.MarkText
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkText/MarkText
+aliases: []

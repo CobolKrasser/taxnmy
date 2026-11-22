@@ -1,0 +1,11 @@
+key: snaildos/snailfm
+publisher: snaildos
+name: SnailFM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/SnailFM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/SnailFM
+identifiers:
+- winget: SnailDOS.SnailFM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/SnailFM
+aliases: []

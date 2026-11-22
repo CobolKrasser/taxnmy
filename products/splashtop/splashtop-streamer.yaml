@@ -1,0 +1,11 @@
+key: splashtop/splashtop-streamer
+publisher: splashtop
+name: Splashtop Streamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopStreamer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopStreamer
+identifiers:
+- winget: Splashtop.SplashtopStreamer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopStreamer
+aliases: []

@@ -1,0 +1,11 @@
+key: qmk/qmk-toolbox
+publisher: qmk
+name: QMK Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QMK/QMKToolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QMK/QMKToolbox
+identifiers:
+- winget: QMK.QMKToolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QMK/QMKToolbox
+aliases: []

@@ -1,0 +1,11 @@
+key: quadspinner/quadspinner-gaea
+publisher: quadspinner
+name: QuadSpinner Gaea
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuadSpinner/Gaea
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuadSpinner/Gaea
+identifiers:
+- winget: QuadSpinner.Gaea
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuadSpinner/Gaea
+aliases: []

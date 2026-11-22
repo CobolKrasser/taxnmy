@@ -1,0 +1,11 @@
+key: codectory/autoactions
+publisher: codectory
+name: AutoActions
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codectory/AutoActions
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codectory/AutoActions
+identifiers:
+- winget: Codectory.AutoActions
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codectory/AutoActions
+aliases: []

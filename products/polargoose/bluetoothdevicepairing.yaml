@@ -1,0 +1,11 @@
+key: polargoose/bluetoothdevicepairing
+publisher: polargoose
+name: BluetoothDevicePairing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/BluetoothDevicePairing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/BluetoothDevicePairing
+identifiers:
+- winget: PolarGoose.BluetoothDevicePairing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/BluetoothDevicePairing
+aliases: []

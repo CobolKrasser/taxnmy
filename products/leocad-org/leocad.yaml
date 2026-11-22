@@ -1,0 +1,11 @@
+key: leocad-org/leocad
+publisher: leocad-org
+name: LeoCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeonardoZide/LeoCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeonardoZide/LeoCAD
+identifiers:
+- winget: LeonardoZide.LeoCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeonardoZide/LeoCAD
+aliases: []

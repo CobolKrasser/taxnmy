@@ -1,0 +1,11 @@
+key: felix-cusson/wol
+publisher: felix-cusson
+name: wol
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarkfullDante/wol
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarkfullDante/wol
+identifiers:
+- winget: DarkfullDante.wol
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarkfullDante/wol
+aliases: []

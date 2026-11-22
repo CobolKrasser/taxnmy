@@ -1,0 +1,11 @@
+key: kameleo/kameleo-app
+publisher: kameleo
+name: Kameleo App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kameleo/App
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kameleo/App
+identifiers:
+- winget: Kameleo.App
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kameleo/App
+aliases: []

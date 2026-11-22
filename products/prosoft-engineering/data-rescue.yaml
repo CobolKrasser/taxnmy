@@ -1,0 +1,11 @@
+key: prosoft-engineering/data-rescue
+publisher: prosoft-engineering
+name: Data Rescue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProsoftEngineering/DataRescue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProsoftEngineering/DataRescue
+identifiers:
+- winget: ProsoftEngineering.DataRescue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProsoftEngineering/DataRescue
+aliases: []

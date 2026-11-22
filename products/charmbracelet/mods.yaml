@@ -1,0 +1,11 @@
+key: charmbracelet/mods
+publisher: charmbracelet
+name: mods
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/mods
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/mods
+identifiers:
+- winget: charmbracelet.mods
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/mods
+aliases: []

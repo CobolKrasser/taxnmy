@@ -1,0 +1,11 @@
+key: starship-contributors/starship
+publisher: starship-contributors
+name: starship
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starship/Starship
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starship/Starship
+identifiers:
+- winget: Starship.Starship
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starship/Starship
+aliases: []

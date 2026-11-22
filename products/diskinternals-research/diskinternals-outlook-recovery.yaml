@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-outlook-recovery
+publisher: diskinternals-research
+name: DiskInternals Outlook Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/OutlookRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/OutlookRecovery
+identifiers:
+- winget: DiskInternals.OutlookRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/OutlookRecovery
+aliases: []

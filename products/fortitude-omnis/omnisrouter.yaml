@@ -1,0 +1,11 @@
+key: fortitude-omnis/omnisrouter
+publisher: fortitude-omnis
+name: OmnisRouter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortitudeOmnis/OmnisRouter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortitudeOmnis/OmnisRouter
+identifiers:
+- winget: FortitudeOmnis.OmnisRouter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortitudeOmnis/OmnisRouter
+aliases: []

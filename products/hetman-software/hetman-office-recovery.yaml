@@ -1,0 +1,11 @@
+key: hetman-software/hetman-office-recovery
+publisher: hetman-software
+name: Hetman Office Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/OfficeRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/OfficeRecovery
+identifiers:
+- winget: Hetman.OfficeRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/OfficeRecovery
+aliases: []

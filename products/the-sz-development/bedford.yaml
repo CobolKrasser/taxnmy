@@ -1,0 +1,11 @@
+key: the-sz-development/bedford
+publisher: the-sz-development
+name: Bedford
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bedford
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bedford
+identifiers:
+- winget: the-sz.Bedford
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bedford
+aliases: []

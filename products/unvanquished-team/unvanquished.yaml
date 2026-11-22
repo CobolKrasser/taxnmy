@@ -1,0 +1,11 @@
+key: unvanquished-team/unvanquished
+publisher: unvanquished-team
+name: Unvanquished
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unvanquished/Unvanquished
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unvanquished/Unvanquished
+identifiers:
+- winget: Unvanquished.Unvanquished
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unvanquished/Unvanquished
+aliases: []

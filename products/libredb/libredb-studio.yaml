@@ -1,0 +1,11 @@
+key: libredb/libredb-studio
+publisher: libredb
+name: LibreDB Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreDB/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreDB/Studio
+identifiers:
+- winget: LibreDB.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreDB/Studio
+aliases: []

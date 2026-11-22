@@ -1,0 +1,11 @@
+key: thorlabs/kurios
+publisher: thorlabs
+name: Kurios
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/Kurios
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/Kurios
+identifiers:
+- winget: Thorlabs.Kurios
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/Kurios
+aliases: []

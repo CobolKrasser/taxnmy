@@ -1,0 +1,11 @@
+key: sharefile/sharefile-for-outlook
+publisher: sharefile
+name: ShareFile for Outlook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareFile/ShareFileforOutlook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareFile/ShareFileforOutlook
+identifiers:
+- winget: ShareFile.ShareFileforOutlook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareFile/ShareFileforOutlook
+aliases: []

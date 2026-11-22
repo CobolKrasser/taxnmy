@@ -1,0 +1,11 @@
+key: cotilab/mcx-studio
+publisher: cotilab
+name: MCX Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coti/mcxstudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coti/mcxstudio
+identifiers:
+- winget: coti.mcxstudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coti/mcxstudio
+aliases: []

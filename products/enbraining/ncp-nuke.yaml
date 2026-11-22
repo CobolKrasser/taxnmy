@@ -1,0 +1,11 @@
+key: enbraining/ncp-nuke
+publisher: enbraining
+name: NCP Nuke
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enbraining/NCPNuke
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enbraining/NCPNuke
+identifiers:
+- winget: Enbraining.NCPNuke
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enbraining/NCPNuke
+aliases: []

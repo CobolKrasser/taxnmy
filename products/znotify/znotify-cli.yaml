@@ -1,0 +1,11 @@
+key: znotify/znotify-cli
+publisher: znotify
+name: ZNotify Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zxilly/NotifyCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zxilly/NotifyCli
+identifiers:
+- winget: Zxilly.NotifyCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zxilly/NotifyCli
+aliases: []

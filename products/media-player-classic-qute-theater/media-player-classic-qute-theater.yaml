@@ -1,0 +1,11 @@
+key: media-player-classic-qute-theater/media-player-classic-qute-theater
+publisher: media-player-classic-qute-theater
+name: Media Player Classic Qute Theater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mpc-qt/mpc-qt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mpc-qt/mpc-qt
+identifiers:
+- winget: mpc-qt.mpc-qt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mpc-qt/mpc-qt
+aliases: []

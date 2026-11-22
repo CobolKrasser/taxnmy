@@ -1,0 +1,11 @@
+key: hestudio-community/apksignergui
+publisher: hestudio-community
+name: APKSignerGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heStudioCommunity/APKSignerGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heStudioCommunity/APKSignerGUI
+identifiers:
+- winget: heStudioCommunity.APKSignerGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heStudioCommunity/APKSignerGUI
+aliases: []

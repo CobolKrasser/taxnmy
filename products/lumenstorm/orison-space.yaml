@@ -1,0 +1,11 @@
+key: lumenstorm/orison-space
+publisher: lumenstorm
+name: Orison Space
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LumenStorm/OrisonSpace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LumenStorm/OrisonSpace
+identifiers:
+- winget: LumenStorm.OrisonSpace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LumenStorm/OrisonSpace
+aliases: []

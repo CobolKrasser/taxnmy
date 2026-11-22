@@ -1,0 +1,11 @@
+key: automattic/wordpress-com
+publisher: automattic
+name: WordPress.com
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/Wordpress
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/Wordpress
+identifiers:
+- winget: Automattic.Wordpress
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/Wordpress
+aliases: []

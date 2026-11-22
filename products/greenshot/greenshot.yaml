@@ -1,0 +1,11 @@
+key: greenshot/greenshot
+publisher: greenshot
+name: Greenshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greenshot/Greenshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greenshot/Greenshot
+identifiers:
+- winget: Greenshot.Greenshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greenshot/Greenshot
+aliases: []

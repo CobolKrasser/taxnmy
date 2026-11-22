@@ -1,0 +1,11 @@
+key: crossplane/crossplane-cli
+publisher: crossplane
+name: Crossplane CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crossplane/CrossplaneCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crossplane/CrossplaneCli
+identifiers:
+- winget: Crossplane.CrossplaneCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crossplane/CrossplaneCli
+aliases: []

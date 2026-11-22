@@ -1,0 +1,11 @@
+key: devolutions/unigetui
+publisher: devolutions
+name: UniGetUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/UniGetUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/UniGetUI
+identifiers:
+- winget: Devolutions.UniGetUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/UniGetUI
+aliases: []

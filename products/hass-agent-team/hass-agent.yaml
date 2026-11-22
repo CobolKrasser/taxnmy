@@ -1,0 +1,11 @@
+key: hass-agent-team/hass-agent
+publisher: hass-agent-team
+name: HASS.Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hass/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hass/Agent
+identifiers:
+- winget: Hass.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hass/Agent
+aliases: []

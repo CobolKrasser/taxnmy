@@ -1,0 +1,11 @@
+key: proton/proton-authenticator
+publisher: proton
+name: Proton Authenticator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonAuthenticator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonAuthenticator
+identifiers:
+- winget: Proton.ProtonAuthenticator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonAuthenticator
+aliases: []

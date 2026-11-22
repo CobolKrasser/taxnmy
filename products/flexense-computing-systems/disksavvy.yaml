@@ -1,0 +1,11 @@
+key: flexense-computing-systems/disksavvy
+publisher: flexense-computing-systems
+name: DiskSavvy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskSavvy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskSavvy
+identifiers:
+- winget: Flexense.DiskSavvy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskSavvy
+aliases: []

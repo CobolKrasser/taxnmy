@@ -1,0 +1,11 @@
+key: transcend-information/ssdscopeapp
+publisher: transcend-information
+name: SSDScopeApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransendInfo/SSDScopeApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransendInfo/SSDScopeApp
+identifiers:
+- winget: TransendInfo.SSDScopeApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransendInfo/SSDScopeApp
+aliases: []

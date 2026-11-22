@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-placebo-cleaner
+publisher: vovsoft
+name: Vovsoft Placebo Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PlaceboCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PlaceboCleaner
+identifiers:
+- winget: VovSoft.PlaceboCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PlaceboCleaner
+aliases: []

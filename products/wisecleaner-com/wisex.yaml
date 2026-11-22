@@ -1,0 +1,11 @@
+key: wisecleaner-com/wisex
+publisher: wisecleaner-com
+name: WiseX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseX
+identifiers:
+- winget: WiseCleaner.WiseX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseX
+aliases: []

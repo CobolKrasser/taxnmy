@@ -1,0 +1,27 @@
+key: rootsmagic/rootsmagic
+publisher: rootsmagic
+name: RootsMagic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/3
+identifiers:
+- winget: RootsMagic.RootsMagic.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/10
+- winget: RootsMagic.RootsMagic.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/11
+- winget: RootsMagic.RootsMagic.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/3
+- winget: RootsMagic.RootsMagic.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/4
+- winget: RootsMagic.RootsMagic.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/5
+- winget: RootsMagic.RootsMagic.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/6
+- winget: RootsMagic.RootsMagic.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/7
+- winget: RootsMagic.RootsMagic.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/8
+- winget: RootsMagic.RootsMagic.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RootsMagic/RootsMagic/9
+aliases: []

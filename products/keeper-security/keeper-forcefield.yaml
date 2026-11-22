@@ -1,0 +1,11 @@
+key: keeper-security/keeper-forcefield
+publisher: keeper-security
+name: Keeper Forcefield
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/KeeperForcefield
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/KeeperForcefield
+identifiers:
+- winget: KeeperSecurity.KeeperForcefield
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/KeeperForcefield
+aliases: []

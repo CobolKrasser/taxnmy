@@ -1,0 +1,11 @@
+key: tibold-kandrai/svg-see
+publisher: tibold-kandrai
+name: SVG See
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SVGExplorerExtension/SVGExplorerExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SVGExplorerExtension/SVGExplorerExtension
+identifiers:
+- winget: SVGExplorerExtension.SVGExplorerExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SVGExplorerExtension/SVGExplorerExtension
+aliases: []

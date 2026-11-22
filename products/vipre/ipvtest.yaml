@@ -1,0 +1,11 @@
+key: vipre/ipvtest
+publisher: vipre
+name: IPVTest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vipre/IPVTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vipre/IPVTest
+identifiers:
+- winget: Vipre.IPVTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vipre/IPVTest
+aliases: []

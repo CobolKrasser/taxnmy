@@ -1,0 +1,11 @@
+key: circle/circle
+publisher: circle
+name: Circle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Circle/DesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Circle/DesktopApp
+identifiers:
+- winget: Circle.DesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Circle/DesktopApp
+aliases: []

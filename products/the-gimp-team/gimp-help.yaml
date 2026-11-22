@@ -1,0 +1,11 @@
+key: the-gimp-team/gimp-help
+publisher: the-gimp-team
+name: GIMP Help
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/Help/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/Help/3
+identifiers:
+- winget: GIMP.Help.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/Help/3
+aliases: []

@@ -1,0 +1,11 @@
+key: frame-io/frame-io-drive
+publisher: frame-io
+name: Frame.io Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Frameio/FrameioDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Frameio/FrameioDrive
+identifiers:
+- winget: Frameio.FrameioDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Frameio/FrameioDrive
+aliases: []

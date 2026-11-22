@@ -1,0 +1,11 @@
+key: tom-ehlert-software/snapshot
+publisher: tom-ehlert-software
+name: Snapshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomEhlertSoftware/Snapshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomEhlertSoftware/Snapshot
+identifiers:
+- winget: TomEhlertSoftware.Snapshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomEhlertSoftware/Snapshot
+aliases: []

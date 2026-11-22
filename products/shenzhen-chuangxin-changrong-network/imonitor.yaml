@@ -1,0 +1,11 @@
+key: shenzhen-chuangxin-changrong-network/imonitor
+publisher: shenzhen-chuangxin-changrong-network
+name: iMonitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TRUSTSING/iMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TRUSTSING/iMonitor
+identifiers:
+- winget: TRUSTSING.iMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TRUSTSING/iMonitor
+aliases: []

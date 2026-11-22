@@ -34,4 +34,30 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
 - purl: pkg:github/corretto/corretto-8
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-corretto.md
+- winget: Amazon.Corretto.11.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/11/JDK
+- winget: Amazon.Corretto.17.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/17/JDK
+- winget: Amazon.Corretto.18.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/18/JDK
+- winget: Amazon.Corretto.19.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/19/JDK
+- winget: Amazon.Corretto.20.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/20/JDK
+- winget: Amazon.Corretto.21.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/21/JDK
+- winget: Amazon.Corretto.22.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/22/JDK
+- winget: Amazon.Corretto.23.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/23/JDK
+- winget: Amazon.Corretto.24.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/24/JDK
+- winget: Amazon.Corretto.25.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/25/JDK
+- winget: Amazon.Corretto.26.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/26/JDK
+- winget: Amazon.Corretto.27.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/27/JDK
+- winget: Amazon.Corretto.8.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/8/JDK
 aliases: []

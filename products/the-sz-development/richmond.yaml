@@ -1,0 +1,11 @@
+key: the-sz-development/richmond
+publisher: the-sz-development
+name: Richmond
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Richmond
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Richmond
+identifiers:
+- winget: the-sz.Richmond
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Richmond
+aliases: []

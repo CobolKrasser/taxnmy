@@ -1,0 +1,11 @@
+key: softwareok/freecellok
+publisher: softwareok
+name: FreeCellOK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FreeCellOK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FreeCellOK
+identifiers:
+- winget: SoftwareOK.FreeCellOK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FreeCellOK
+aliases: []

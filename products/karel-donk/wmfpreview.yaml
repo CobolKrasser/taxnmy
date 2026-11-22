@@ -1,0 +1,11 @@
+key: karel-donk/wmfpreview
+publisher: karel-donk
+name: WMFPreview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KarelDonk/WMFPreview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KarelDonk/WMFPreview
+identifiers:
+- winget: KarelDonk.WMFPreview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KarelDonk/WMFPreview
+aliases: []

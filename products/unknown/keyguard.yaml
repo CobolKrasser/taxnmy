@@ -1,0 +1,11 @@
+key: unknown/keyguard
+publisher: unknown
+name: Keyguard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtemChepurnyi/Keyguard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtemChepurnyi/Keyguard
+identifiers:
+- winget: ArtemChepurnyi.Keyguard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtemChepurnyi/Keyguard
+aliases: []

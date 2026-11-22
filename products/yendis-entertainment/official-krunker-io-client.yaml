@@ -1,0 +1,11 @@
+key: yendis-entertainment/official-krunker-io-client
+publisher: yendis-entertainment
+name: Official Krunker.io Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YendisEntertainment/KrunkerClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YendisEntertainment/KrunkerClient
+identifiers:
+- winget: YendisEntertainment.KrunkerClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YendisEntertainment/KrunkerClient
+aliases: []

@@ -1,0 +1,11 @@
+key: cornell-university/raven-annotate
+publisher: cornell-university
+name: Raven Annotate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenAnnotate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenAnnotate
+identifiers:
+- winget: CornellLabOfOrnithology.RavenAnnotate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenAnnotate
+aliases: []

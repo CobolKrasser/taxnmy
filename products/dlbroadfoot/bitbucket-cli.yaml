@@ -1,0 +1,11 @@
+key: dlbroadfoot/bitbucket-cli
+publisher: dlbroadfoot
+name: Bitbucket CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dlbroadfoot/bb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dlbroadfoot/bb
+identifiers:
+- winget: dlbroadfoot.bb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dlbroadfoot/bb
+aliases: []

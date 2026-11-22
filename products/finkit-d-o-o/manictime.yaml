@@ -1,0 +1,11 @@
+key: finkit-d-o-o/manictime
+publisher: finkit-d-o-o
+name: ManicTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManicTime/ManicTime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManicTime/ManicTime
+identifiers:
+- winget: ManicTime.ManicTime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManicTime/ManicTime
+aliases: []

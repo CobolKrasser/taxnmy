@@ -1,0 +1,11 @@
+key: couchcoding/logbert
+publisher: couchcoding
+name: Logbert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchcoding/Logbert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchcoding/Logbert
+identifiers:
+- winget: Couchcoding.Logbert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchcoding/Logbert
+aliases: []

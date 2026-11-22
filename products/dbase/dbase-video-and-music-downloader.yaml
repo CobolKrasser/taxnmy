@@ -1,0 +1,11 @@
+key: dbase/dbase-video-and-music-downloader
+publisher: dbase
+name: DBase Video & Music Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBaseInRs/Downloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBaseInRs/Downloader
+identifiers:
+- winget: DBaseInRs.Downloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBaseInRs/Downloader
+aliases: []

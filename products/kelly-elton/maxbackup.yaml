@@ -1,0 +1,11 @@
+key: kelly-elton/maxbackup
+publisher: kelly-elton
+name: MaxBackup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KellyElton/Max/Backup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KellyElton/Max/Backup
+identifiers:
+- winget: KellyElton.Max.Backup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KellyElton/Max/Backup
+aliases: []

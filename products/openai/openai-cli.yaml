@@ -1,0 +1,11 @@
+key: openai/openai-cli
+publisher: openai
+name: OpenAI CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/OpenAICLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/OpenAICLI
+identifiers:
+- winget: OpenAI.OpenAICLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/OpenAICLI
+aliases: []

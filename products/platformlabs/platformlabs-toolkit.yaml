@@ -1,0 +1,11 @@
+key: platformlabs/platformlabs-toolkit
+publisher: platformlabs
+name: PlatformLabs Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlatformLabs/Toolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlatformLabs/Toolkit
+identifiers:
+- winget: PlatformLabs.Toolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlatformLabs/Toolkit
+aliases: []

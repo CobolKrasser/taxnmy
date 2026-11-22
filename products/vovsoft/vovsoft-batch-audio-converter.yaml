@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-batch-audio-converter
+publisher: vovsoft
+name: Vovsoft Batch Audio Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchAudioConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchAudioConverter
+identifiers:
+- winget: VovSoft.BatchAudioConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchAudioConverter
+aliases: []

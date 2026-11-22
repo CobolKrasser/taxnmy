@@ -1,0 +1,11 @@
+key: palmeral/min
+publisher: palmeral
+name: Min
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MinBrowser/Min
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MinBrowser/Min
+identifiers:
+- winget: MinBrowser.Min
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MinBrowser/Min
+aliases: []

@@ -1,0 +1,11 @@
+key: deltaforge/deltaforge-odbc-driver
+publisher: deltaforge
+name: DeltaForge ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/ODBCDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/ODBCDriver
+identifiers:
+- winget: DeltaForge.ODBCDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/ODBCDriver
+aliases: []

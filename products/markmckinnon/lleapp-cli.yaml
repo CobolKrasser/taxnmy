@@ -1,0 +1,11 @@
+key: markmckinnon/lleapp-cli
+publisher: markmckinnon
+name: lLeapp CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/markmckinnon/lLeapp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/markmckinnon/lLeapp
+identifiers:
+- winget: markmckinnon.lLeapp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/markmckinnon/lLeapp
+aliases: []

@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-link-analyzer
+publisher: vovsoft
+name: Vovsoft Link Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/LinkAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/LinkAnalyzer
+identifiers:
+- winget: VovSoft.LinkAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/LinkAnalyzer
+aliases: []

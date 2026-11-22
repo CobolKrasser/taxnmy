@@ -1,0 +1,11 @@
+key: ec-software/ewriter-viewer
+publisher: ec-software
+name: eWriter Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/eWriterViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/eWriterViewer
+identifiers:
+- winget: ECSoftware.eWriterViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/eWriterViewer
+aliases: []

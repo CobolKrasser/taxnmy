@@ -1,0 +1,11 @@
+key: stardock-systems/deskscapes
+publisher: stardock-systems
+name: DeskScapes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/DeskScapes2026
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/DeskScapes2026
+identifiers:
+- winget: StardockSystems.DeskScapes2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/DeskScapes2026
+aliases: []

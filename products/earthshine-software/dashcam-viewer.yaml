@@ -1,0 +1,11 @@
+key: earthshine-software/dashcam-viewer
+publisher: earthshine-software
+name: Dashcam Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Earthshine/DashcamViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Earthshine/DashcamViewer
+identifiers:
+- winget: Earthshine.DashcamViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Earthshine/DashcamViewer
+aliases: []

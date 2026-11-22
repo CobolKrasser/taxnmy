@@ -1,0 +1,11 @@
+key: ancilla/subconscious
+publisher: ancilla
+name: Subconscious
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ancilla/Subconscious-Chat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ancilla/Subconscious-Chat
+identifiers:
+- winget: Ancilla.Subconscious-Chat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ancilla/Subconscious-Chat
+aliases: []

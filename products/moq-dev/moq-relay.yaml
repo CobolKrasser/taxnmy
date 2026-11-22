@@ -1,0 +1,11 @@
+key: moq-dev/moq-relay
+publisher: moq-dev
+name: moq-relay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moq-dev/moq-relay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moq-dev/moq-relay
+identifiers:
+- winget: moq-dev.moq-relay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moq-dev/moq-relay
+aliases: []

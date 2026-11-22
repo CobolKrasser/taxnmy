@@ -1,0 +1,11 @@
+key: artcraft/artcraft
+publisher: artcraft
+name: ArtCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/ArtCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/ArtCraft
+identifiers:
+- winget: ArtCraft.ArtCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/ArtCraft
+aliases: []

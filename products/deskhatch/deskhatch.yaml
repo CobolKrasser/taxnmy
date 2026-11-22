@@ -1,0 +1,11 @@
+key: deskhatch/deskhatch
+publisher: deskhatch
+name: DeskHatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Theta/DeskHatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Theta/DeskHatch
+identifiers:
+- winget: Theta.DeskHatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Theta/DeskHatch
+aliases: []

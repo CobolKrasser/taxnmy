@@ -1,0 +1,11 @@
+key: kiwix/kiwix-js-electron
+publisher: kiwix
+name: Kiwix JS Electron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/KiwixJS/Electron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/KiwixJS/Electron
+identifiers:
+- winget: Kiwix.KiwixJS.Electron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/KiwixJS/Electron
+aliases: []

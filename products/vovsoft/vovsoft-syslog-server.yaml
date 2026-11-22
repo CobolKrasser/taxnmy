@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-syslog-server
+publisher: vovsoft
+name: Vovsoft Syslog Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SyslogServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SyslogServer
+identifiers:
+- winget: VovSoft.SyslogServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SyslogServer
+aliases: []

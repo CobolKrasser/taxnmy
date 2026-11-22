@@ -1,0 +1,11 @@
+key: visualsvn-software/visualsvn-server
+publisher: visualsvn-software
+name: VisualSVN Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualSVNSoftwareLtd/VisualSVNServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualSVNSoftwareLtd/VisualSVNServer
+identifiers:
+- winget: VisualSVNSoftwareLtd.VisualSVNServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualSVNSoftwareLtd/VisualSVNServer
+aliases: []

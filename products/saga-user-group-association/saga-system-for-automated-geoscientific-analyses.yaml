@@ -1,0 +1,11 @@
+key: saga-user-group-association/saga-system-for-automated-geoscientific-analyses
+publisher: saga-user-group-association
+name: SAGA - System for Automated Geoscientific Analyses
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAGAUserGroupAssociation/SAGAGIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAGAUserGroupAssociation/SAGAGIS
+identifiers:
+- winget: SAGAUserGroupAssociation.SAGAGIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAGAUserGroupAssociation/SAGAGIS
+aliases: []

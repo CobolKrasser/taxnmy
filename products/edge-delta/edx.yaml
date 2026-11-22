@@ -1,0 +1,11 @@
+key: edge-delta/edx
+publisher: edge-delta
+name: edx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgeDelta/edx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgeDelta/edx
+identifiers:
+- winget: EdgeDelta.edx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgeDelta/edx
+aliases: []

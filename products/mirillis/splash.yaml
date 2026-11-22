@@ -1,0 +1,11 @@
+key: mirillis/splash
+publisher: mirillis
+name: Splash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirillis/SplashUltimate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirillis/SplashUltimate
+identifiers:
+- winget: Mirillis.SplashUltimate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirillis/SplashUltimate
+aliases: []

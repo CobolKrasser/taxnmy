@@ -1,0 +1,11 @@
+key: manfred-mueller/relock
+publisher: manfred-mueller
+name: Relock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManfredMueller/Relock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManfredMueller/Relock
+identifiers:
+- winget: ManfredMueller.Relock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManfredMueller/Relock
+aliases: []

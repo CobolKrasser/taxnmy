@@ -1,0 +1,11 @@
+key: haskell/cabal
+publisher: haskell
+name: Cabal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haskell/cabal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haskell/cabal
+identifiers:
+- winget: haskell.cabal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haskell/cabal
+aliases: []

@@ -1,0 +1,11 @@
+key: hyperfetch/hyperfetch
+publisher: hyperfetch
+name: HyperFetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HyperFetch/HyperFetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HyperFetch/HyperFetch
+identifiers:
+- winget: HyperFetch.HyperFetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HyperFetch/HyperFetch
+aliases: []

@@ -1,0 +1,11 @@
+key: asys/vantage
+publisher: asys
+name: Vantage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASYS/Vantage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASYS/Vantage
+identifiers:
+- winget: ASYS.Vantage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASYS/Vantage
+aliases: []

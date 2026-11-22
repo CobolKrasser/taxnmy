@@ -1,0 +1,11 @@
+key: softperfect/softperfect-ram-disk
+publisher: softperfect
+name: SoftPerfect RAM Disk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/RAMDisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/RAMDisk
+identifiers:
+- winget: SoftPerfect.RAMDisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/RAMDisk
+aliases: []

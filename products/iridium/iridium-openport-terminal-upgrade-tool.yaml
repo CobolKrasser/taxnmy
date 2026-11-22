@@ -1,0 +1,11 @@
+key: iridium/iridium-openport-terminal-upgrade-tool
+publisher: iridium
+name: Iridium OpenPort Terminal Upgrade Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/AO10003
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/AO10003
+identifiers:
+- winget: GlobalMarineNet.AO10003
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/AO10003
+aliases: []

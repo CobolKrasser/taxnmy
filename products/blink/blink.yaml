@@ -1,0 +1,11 @@
+key: blink/blink
+publisher: blink
+name: Blink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperSmashing/Blink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperSmashing/Blink
+identifiers:
+- winget: SuperSmashing.Blink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperSmashing/Blink
+aliases: []

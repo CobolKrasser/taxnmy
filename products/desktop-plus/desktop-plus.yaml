@@ -1,0 +1,11 @@
+key: desktop-plus/desktop-plus
+publisher: desktop-plus
+name: Desktop Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DesktopPlus/DesktopPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DesktopPlus/DesktopPlus
+identifiers:
+- winget: DesktopPlus.DesktopPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DesktopPlus/DesktopPlus
+aliases: []

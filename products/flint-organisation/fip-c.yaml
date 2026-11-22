@@ -1,0 +1,11 @@
+key: flint-organisation/fip-c
+publisher: flint-organisation
+name: fip-c
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Fip-C
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Fip-C
+identifiers:
+- winget: Flint.Fip-C
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Fip-C
+aliases: []

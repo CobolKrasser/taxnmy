@@ -1,0 +1,11 @@
+key: stacks-labs/clarinet
+publisher: stacks-labs
+name: Clarinet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StacksLabs/Clarinet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StacksLabs/Clarinet
+identifiers:
+- winget: StacksLabs.Clarinet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StacksLabs/Clarinet
+aliases: []

@@ -1,0 +1,11 @@
+key: ohrudi/sims-3-package-reducer
+publisher: ohrudi
+name: Sims 3 Package Reducer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OhRudi/S3PR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OhRudi/S3PR
+identifiers:
+- winget: OhRudi.S3PR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OhRudi/S3PR
+aliases: []

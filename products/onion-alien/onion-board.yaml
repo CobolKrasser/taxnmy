@@ -1,0 +1,11 @@
+key: onion-alien/onion-board
+publisher: onion-alien
+name: Onion Board
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionAlien/OnionBoard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionAlien/OnionBoard
+identifiers:
+- winget: OnionAlien.OnionBoard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionAlien/OnionBoard
+aliases: []

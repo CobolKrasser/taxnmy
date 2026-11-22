@@ -1,0 +1,11 @@
+key: langdock/langdock
+publisher: langdock
+name: Langdock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Langdock/Langdock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Langdock/Langdock
+identifiers:
+- winget: Langdock.Langdock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Langdock/Langdock
+aliases: []

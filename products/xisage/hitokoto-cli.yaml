@@ -1,0 +1,11 @@
+key: xisage/hitokoto-cli
+publisher: xisage
+name: hitokoto-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiSage/hitokoto-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiSage/hitokoto-cli
+identifiers:
+- winget: xiSage.hitokoto-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiSage/hitokoto-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: softperfect/connection-quality-monitor
+publisher: softperfect
+name: Connection Quality Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/ConnectionQualityMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/ConnectionQualityMonitor
+identifiers:
+- winget: SoftPerfect.ConnectionQualityMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/ConnectionQualityMonitor
+aliases: []

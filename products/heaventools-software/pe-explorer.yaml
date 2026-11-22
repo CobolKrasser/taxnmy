@@ -1,0 +1,11 @@
+key: heaventools-software/pe-explorer
+publisher: heaventools-software
+name: PE Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heaventools/PEexplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heaventools/PEexplorer
+identifiers:
+- winget: Heaventools.PEexplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heaventools/PEexplorer
+aliases: []

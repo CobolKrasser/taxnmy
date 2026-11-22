@@ -1,0 +1,11 @@
+key: unikey-org/unikey
+publisher: unikey-org
+name: UniKey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniKey/UniKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniKey/UniKey
+identifiers:
+- winget: UniKey.UniKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniKey/UniKey
+aliases: []

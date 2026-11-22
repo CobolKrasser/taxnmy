@@ -1,0 +1,11 @@
+key: uutils/coreutils
+publisher: uutils
+name: coreutils
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uutils/coreutils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uutils/coreutils
+identifiers:
+- winget: uutils.coreutils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uutils/coreutils
+aliases: []

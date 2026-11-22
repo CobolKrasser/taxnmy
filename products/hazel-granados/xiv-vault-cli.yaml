@@ -1,0 +1,11 @@
+key: hazel-granados/xiv-vault-cli
+publisher: hazel-granados
+name: XIV Vault CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hazeliscoding/XIVVault/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hazeliscoding/XIVVault/CLI
+identifiers:
+- winget: hazeliscoding.XIVVault.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hazeliscoding/XIVVault/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: synfig/synfig-studio
+publisher: synfig
+name: Synfig Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synfig/SynfigStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synfig/SynfigStudio
+identifiers:
+- winget: Synfig.SynfigStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synfig/SynfigStudio
+aliases: []

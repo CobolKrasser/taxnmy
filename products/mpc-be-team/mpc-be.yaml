@@ -1,0 +1,11 @@
+key: mpc-be-team/mpc-be
+publisher: mpc-be-team
+name: MPC-BE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MPC-BE/MPC-BE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MPC-BE/MPC-BE
+identifiers:
+- winget: MPC-BE.MPC-BE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MPC-BE/MPC-BE
+aliases: []

@@ -1,0 +1,11 @@
+key: resolume/resolume-arena
+publisher: resolume
+name: Resolume Arena
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resolume/Arena
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resolume/Arena
+identifiers:
+- winget: Resolume.Arena
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resolume/Arena
+aliases: []

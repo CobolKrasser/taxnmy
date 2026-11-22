@@ -1,0 +1,11 @@
+key: serpro/assinador-serpro
+publisher: serpro
+name: Assinador Serpro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SERPRO/AssinadorSERPRO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SERPRO/AssinadorSERPRO
+identifiers:
+- winget: SERPRO.AssinadorSERPRO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SERPRO/AssinadorSERPRO
+aliases: []

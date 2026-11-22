@@ -1,0 +1,11 @@
+key: comfy-org/comfyui
+publisher: comfy-org
+name: ComfyUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comfy/ComfyUI-Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comfy/ComfyUI-Desktop
+identifiers:
+- winget: Comfy.ComfyUI-Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comfy/ComfyUI-Desktop
+aliases: []

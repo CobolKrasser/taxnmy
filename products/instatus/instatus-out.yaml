@@ -1,0 +1,11 @@
+key: instatus/instatus-out
+publisher: instatus
+name: Instatus Out
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Instatus/Out
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Instatus/Out
+identifiers:
+- winget: Instatus.Out
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Instatus/Out
+aliases: []

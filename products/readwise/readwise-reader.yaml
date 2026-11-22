@@ -1,0 +1,11 @@
+key: readwise/readwise-reader
+publisher: readwise
+name: Readwise Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Readwise/Reader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Readwise/Reader
+identifiers:
+- winget: Readwise.Reader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Readwise/Reader
+aliases: []

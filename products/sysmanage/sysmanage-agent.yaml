@@ -1,0 +1,11 @@
+key: sysmanage/sysmanage-agent
+publisher: sysmanage
+name: SysManage Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sysmanage/sysmanage-agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sysmanage/sysmanage-agent
+identifiers:
+- winget: sysmanage.sysmanage-agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sysmanage/sysmanage-agent
+aliases: []

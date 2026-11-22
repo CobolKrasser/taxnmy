@@ -1,0 +1,13 @@
+key: xd/cindy
+publisher: xd
+name: Cindy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cindy/Cindy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cindy/Cindy
+identifiers:
+- winget: Cindy.Cindy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cindy/Cindy
+- winget: Cindy.Cindy.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cindy/Cindy/CN
+aliases: []

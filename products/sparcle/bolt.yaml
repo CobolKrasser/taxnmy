@@ -1,0 +1,11 @@
+key: sparcle/bolt
+publisher: sparcle
+name: Bolt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sparcle/BoltEnterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sparcle/BoltEnterprise
+identifiers:
+- winget: Sparcle.BoltEnterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sparcle/BoltEnterprise
+aliases: []

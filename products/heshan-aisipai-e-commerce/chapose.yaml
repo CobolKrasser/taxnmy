@@ -1,0 +1,11 @@
+key: heshan-aisipai-e-commerce/chapose
+publisher: heshan-aisipai-e-commerce
+name: ChaPose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/ChaPose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/ChaPose
+identifiers:
+- winget: GAI.ChaPose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/ChaPose
+aliases: []

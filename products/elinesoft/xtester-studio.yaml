@@ -1,0 +1,11 @@
+key: elinesoft/xtester-studio
+publisher: elinesoft
+name: XTester Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elinesoft/XTester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elinesoft/XTester
+identifiers:
+- winget: Elinesoft.XTester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elinesoft/XTester
+aliases: []

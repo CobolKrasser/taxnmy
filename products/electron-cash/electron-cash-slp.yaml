@@ -1,0 +1,11 @@
+key: electron-cash/electron-cash-slp
+publisher: electron-cash
+name: Electron Cash SLP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimpleLedger/ElectronCashSLP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimpleLedger/ElectronCashSLP
+identifiers:
+- winget: SimpleLedger.ElectronCashSLP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimpleLedger/ElectronCashSLP
+aliases: []

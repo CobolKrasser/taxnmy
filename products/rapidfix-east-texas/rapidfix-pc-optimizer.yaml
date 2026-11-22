@@ -1,0 +1,11 @@
+key: rapidfix-east-texas/rapidfix-pc-optimizer
+publisher: rapidfix-east-texas
+name: RapidFix PC Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RapidFixEastTexas/RapidFixPCOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RapidFixEastTexas/RapidFixPCOptimizer
+identifiers:
+- winget: RapidFixEastTexas.RapidFixPCOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RapidFixEastTexas/RapidFixPCOptimizer
+aliases: []

@@ -1,0 +1,11 @@
+key: ironman-software/powershell-universal
+publisher: ironman-software
+name: PowerShell Universal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PowerShellUniversal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PowerShellUniversal
+identifiers:
+- winget: IronmanSoftware.PowerShellUniversal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PowerShellUniversal
+aliases: []

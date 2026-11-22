@@ -1,0 +1,11 @@
+key: choioki/clarity-deck
+publisher: choioki
+name: Clarity Deck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/choioki/ClarityDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/choioki/ClarityDeck
+identifiers:
+- winget: choioki.ClarityDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/choioki/ClarityDeck
+aliases: []

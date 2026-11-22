@@ -1,0 +1,11 @@
+key: iobit/iobit-software-updater
+publisher: iobit
+name: IObit Software Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitSoftwareUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitSoftwareUpdater
+identifiers:
+- winget: IObit.IObitSoftwareUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitSoftwareUpdater
+aliases: []

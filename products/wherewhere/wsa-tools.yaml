@@ -1,0 +1,11 @@
+key: wherewhere/wsa-tools
+publisher: wherewhere
+name: WSA Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wherewhere/WSATools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wherewhere/WSATools
+identifiers:
+- winget: wherewhere.WSATools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wherewhere/WSATools
+aliases: []

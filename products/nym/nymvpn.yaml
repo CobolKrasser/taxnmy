@@ -1,0 +1,11 @@
+key: nym/nymvpn
+publisher: nym
+name: NymVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NymTech/NymVPNClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NymTech/NymVPNClient
+identifiers:
+- winget: NymTech.NymVPNClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NymTech/NymVPNClient
+aliases: []

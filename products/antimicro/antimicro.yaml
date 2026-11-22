@@ -1,0 +1,11 @@
+key: antimicro/antimicro
+publisher: antimicro
+name: AntiMicro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicro/AntiMicro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicro/AntiMicro
+identifiers:
+- winget: AntiMicro.AntiMicro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicro/AntiMicro
+aliases: []

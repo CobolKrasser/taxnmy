@@ -1,0 +1,11 @@
+key: sumdog/yenka-german
+publisher: sumdog
+name: Yenka (German)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/DE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/DE
+identifiers:
+- winget: Sumdog.Yenka.DE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/DE
+aliases: []

@@ -1,0 +1,11 @@
+key: lenovo/lenovo-dock-manager
+publisher: lenovo
+name: Lenovo Dock Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/DockManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/DockManager
+identifiers:
+- winget: Lenovo.DockManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/DockManager
+aliases: []

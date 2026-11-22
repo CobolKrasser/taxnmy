@@ -1,0 +1,11 @@
+key: voidtools/es-everything-cli
+publisher: voidtools
+name: ES (Everything CLI)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Cli
+identifiers:
+- winget: voidtools.Everything.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Cli
+aliases: []

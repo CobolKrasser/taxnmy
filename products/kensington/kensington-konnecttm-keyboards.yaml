@@ -1,0 +1,11 @@
+key: kensington/kensington-konnecttm-keyboards
+publisher: kensington
+name: Kensington Konnect™ (Keyboards)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/KensingtonKonnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/KensingtonKonnect
+identifiers:
+- winget: Kensington.KensingtonKonnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/KensingtonKonnect
+aliases: []

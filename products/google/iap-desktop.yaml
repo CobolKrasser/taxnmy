@@ -1,0 +1,11 @@
+key: google/iap-desktop
+publisher: google
+name: IAP Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/IAPDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/IAPDesktop
+identifiers:
+- winget: Google.IAPDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/IAPDesktop
+aliases: []

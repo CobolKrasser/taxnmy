@@ -1,0 +1,11 @@
+key: jsdelivr/globalping-cli
+publisher: jsdelivr
+name: Globalping CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jsdelivr/Globalping
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jsdelivr/Globalping
+identifiers:
+- winget: jsdelivr.Globalping
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jsdelivr/Globalping
+aliases: []

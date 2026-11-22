@@ -1,0 +1,11 @@
+key: netmetrik/hiztesti-cli
+publisher: netmetrik
+name: HIZTESTI CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETMETRIK/Hiztesti
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETMETRIK/Hiztesti
+identifiers:
+- winget: NETMETRIK.Hiztesti
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETMETRIK/Hiztesti
+aliases: []

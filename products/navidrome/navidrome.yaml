@@ -1,0 +1,11 @@
+key: navidrome/navidrome
+publisher: navidrome
+name: Navidrome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navidrome/Navidrome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navidrome/Navidrome
+identifiers:
+- winget: Navidrome.Navidrome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navidrome/Navidrome
+aliases: []

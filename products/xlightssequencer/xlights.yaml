@@ -1,0 +1,11 @@
+key: xlightssequencer/xlights
+publisher: xlightssequencer
+name: xLights
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xLightsSequencer/xLights
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xLightsSequencer/xLights
+identifiers:
+- winget: xLightsSequencer.xLights
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xLightsSequencer/xLights
+aliases: []

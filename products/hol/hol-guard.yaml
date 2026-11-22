@@ -1,0 +1,11 @@
+key: hol/hol-guard
+publisher: hol
+name: HOL Guard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HOL/Guard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HOL/Guard
+identifiers:
+- winget: HOL.Guard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HOL/Guard
+aliases: []

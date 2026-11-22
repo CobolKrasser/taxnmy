@@ -1,0 +1,11 @@
+key: bavlik/credscope
+publisher: bavlik
+name: CredScope
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bavlik/CredScope
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bavlik/CredScope
+identifiers:
+- winget: Bavlik.CredScope
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bavlik/CredScope
+aliases: []

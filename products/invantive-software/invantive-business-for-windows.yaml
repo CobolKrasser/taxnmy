@@ -1,0 +1,11 @@
+key: invantive-software/invantive-business-for-windows
+publisher: invantive-software
+name: Invantive Business for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveBusinessForWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveBusinessForWindows
+identifiers:
+- winget: Invantive.InvantiveBusinessForWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveBusinessForWindows
+aliases: []

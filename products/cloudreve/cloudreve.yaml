@@ -1,0 +1,11 @@
+key: cloudreve/cloudreve
+publisher: cloudreve
+name: Cloudreve
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudreve/Cloudreve
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudreve/Cloudreve
+identifiers:
+- winget: Cloudreve.Cloudreve
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudreve/Cloudreve
+aliases: []

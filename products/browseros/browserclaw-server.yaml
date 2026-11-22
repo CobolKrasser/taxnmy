@@ -1,0 +1,11 @@
+key: browseros/browserclaw-server
+publisher: browseros
+name: BrowserClaw Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserClawServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserClawServer
+identifiers:
+- winget: BrowserOS.BrowserClawServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserClawServer
+aliases: []

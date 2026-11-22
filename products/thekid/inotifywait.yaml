@@ -1,0 +1,11 @@
+key: thekid/inotifywait
+publisher: thekid
+name: inotifywait
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thekid/inotifywait
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thekid/inotifywait
+identifiers:
+- winget: thekid.inotifywait
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thekid/inotifywait
+aliases: []

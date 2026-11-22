@@ -1,0 +1,11 @@
+key: flowersauce/eqm
+publisher: flowersauce
+name: EQM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowersauce/EQAPOProfileManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowersauce/EQAPOProfileManager
+identifiers:
+- winget: Flowersauce.EQAPOProfileManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowersauce/EQAPOProfileManager
+aliases: []

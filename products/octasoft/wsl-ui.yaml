@@ -1,0 +1,11 @@
+key: octasoft/wsl-ui
+publisher: octasoft
+name: WSL UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctasoftLtd/WSLUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctasoftLtd/WSLUI
+identifiers:
+- winget: OctasoftLtd.WSLUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctasoftLtd/WSLUI
+aliases: []

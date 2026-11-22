@@ -1,0 +1,11 @@
+key: nirsoft/netbscanner
+publisher: nirsoft
+name: NetBScanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetBScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetBScanner
+identifiers:
+- winget: NirSoft.NetBScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetBScanner
+aliases: []

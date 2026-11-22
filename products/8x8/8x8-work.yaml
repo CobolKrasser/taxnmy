@@ -1,0 +1,11 @@
+key: 8x8/8x8-work
+publisher: 8x8
+name: 8x8 Work
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8x8/Work
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8x8/Work
+identifiers:
+- winget: 8x8.Work
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8x8/Work
+aliases: []

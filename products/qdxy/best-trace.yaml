@@ -1,0 +1,11 @@
+key: qdxy/best-trace
+publisher: qdxy
+name: Best Trace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPIP/BestTrace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPIP/BestTrace
+identifiers:
+- winget: IPIP.BestTrace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPIP/BestTrace
+aliases: []

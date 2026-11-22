@@ -1,0 +1,11 @@
+key: mojang/minecraft-launcher
+publisher: mojang
+name: Minecraft Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mojang/MinecraftLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mojang/MinecraftLauncher
+identifiers:
+- winget: Mojang.MinecraftLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mojang/MinecraftLauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: myskyaccess/entrapass-web
+publisher: myskyaccess
+name: EntraPass web
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MySky/EntraPassWeb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MySky/EntraPassWeb
+identifiers:
+- winget: MySky.EntraPassWeb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MySky/EntraPassWeb
+aliases: []

@@ -1,0 +1,11 @@
+key: ntwind/gallery-remote
+publisher: ntwind
+name: Gallery Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/GalleryRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/GalleryRemote
+identifiers:
+- winget: ntwind.GalleryRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/GalleryRemote
+aliases: []

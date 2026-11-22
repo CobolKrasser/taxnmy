@@ -1,0 +1,11 @@
+key: qqrm/brightwheel
+publisher: qqrm
+name: BrightWheel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQRM/BrightWheel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQRM/BrightWheel
+identifiers:
+- winget: QQRM.BrightWheel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQRM/BrightWheel
+aliases: []

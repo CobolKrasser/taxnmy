@@ -1,0 +1,11 @@
+key: pyrevitlabs/pyrevit-cli
+publisher: pyrevitlabs
+name: pyRevit CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyRevit/pyRevit/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyRevit/pyRevit/CLI
+identifiers:
+- winget: pyRevit.pyRevit.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyRevit/pyRevit/CLI
+aliases: []

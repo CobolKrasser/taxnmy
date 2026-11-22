@@ -1,0 +1,11 @@
+key: matt-hartley/netwatch
+publisher: matt-hartley
+name: netwatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MattHartley/netwatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MattHartley/netwatch
+identifiers:
+- winget: MattHartley.netwatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MattHartley/netwatch
+aliases: []

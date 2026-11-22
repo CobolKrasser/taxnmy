@@ -1,0 +1,11 @@
+key: robertasta/temp-cleaner
+publisher: robertasta
+name: Temp Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobertasTa/TempCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobertasTa/TempCleaner
+identifiers:
+- winget: RobertasTa.TempCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobertasTa/TempCleaner
+aliases: []

@@ -1,0 +1,11 @@
+key: churchapps/freeshow
+publisher: churchapps
+name: FreeShow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChurchApps/FreeShow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChurchApps/FreeShow
+identifiers:
+- winget: ChurchApps.FreeShow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChurchApps/FreeShow
+aliases: []

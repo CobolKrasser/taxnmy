@@ -1,0 +1,11 @@
+key: ginger-bill/odin-programming-language
+publisher: ginger-bill
+name: Odin Programming Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/odin-lang/Odin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/odin-lang/Odin
+identifiers:
+- winget: odin-lang.Odin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/odin-lang/Odin
+aliases: []

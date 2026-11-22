@@ -1,0 +1,11 @@
+key: pcvisit-software/pcvisit-remotehost
+publisher: pcvisit-software
+name: pcvisit RemoteHost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcvisit/pcvisitRemoteHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcvisit/pcvisitRemoteHost
+identifiers:
+- winget: pcvisit.pcvisitRemoteHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcvisit/pcvisitRemoteHost
+aliases: []

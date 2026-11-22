@@ -1,0 +1,13 @@
+key: minimax/minimax-hub
+publisher: minimax
+name: MiniMax Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxHub
+identifiers:
+- winget: MiniMax.MiniMaxHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxHub
+- winget: MiniMax.MiniMaxHub.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxHub/CN
+aliases: []

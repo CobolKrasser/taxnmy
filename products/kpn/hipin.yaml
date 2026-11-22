@@ -1,0 +1,11 @@
+key: kpn/hipin
+publisher: kpn
+name: HIPIN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KPN/HIPIN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KPN/HIPIN
+identifiers:
+- winget: KPN.HIPIN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KPN/HIPIN
+aliases: []

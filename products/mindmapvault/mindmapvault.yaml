@@ -1,0 +1,11 @@
+key: mindmapvault/mindmapvault
+publisher: mindmapvault
+name: MindMapVault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindMapVault/MindMapVault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindMapVault/MindMapVault
+identifiers:
+- winget: MindMapVault.MindMapVault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindMapVault/MindMapVault
+aliases: []

@@ -1,0 +1,11 @@
+key: 64gram/64gram-desktop
+publisher: 64gram
+name: 64Gram Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/6/64Gram/64Gram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/6/64Gram/64Gram
+identifiers:
+- winget: 64Gram.64Gram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/6/64Gram/64Gram
+aliases: []

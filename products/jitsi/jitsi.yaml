@@ -1,0 +1,11 @@
+key: jitsi/jitsi
+publisher: jitsi
+name: Jitsi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Jitsi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Jitsi
+identifiers:
+- winget: Jitsi.Jitsi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Jitsi
+aliases: []

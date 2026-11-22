@@ -1,0 +1,11 @@
+key: zo/deepseek-desktop
+publisher: zo
+name: DeepSeek Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zcx960/DeepSeekDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zcx960/DeepSeekDesktop
+identifiers:
+- winget: zcx960.DeepSeekDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zcx960/DeepSeekDesktop
+aliases: []

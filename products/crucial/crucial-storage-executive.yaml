@@ -1,0 +1,11 @@
+key: crucial/crucial-storage-executive
+publisher: crucial
+name: Crucial Storage Executive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crucial/StorageExecutive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crucial/StorageExecutive
+identifiers:
+- winget: Crucial.StorageExecutive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crucial/StorageExecutive
+aliases: []

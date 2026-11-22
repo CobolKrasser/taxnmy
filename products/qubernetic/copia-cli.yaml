@@ -1,0 +1,11 @@
+key: qubernetic/copia-cli
+publisher: qubernetic
+name: copia-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qubernetic/copia-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qubernetic/copia-cli
+identifiers:
+- winget: Qubernetic.copia-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qubernetic/copia-cli
+aliases: []

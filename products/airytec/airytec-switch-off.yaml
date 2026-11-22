@@ -1,0 +1,11 @@
+key: airytec/airytec-switch-off
+publisher: airytec
+name: Airytec Switch Off
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airytec/SwitchOff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airytec/SwitchOff
+identifiers:
+- winget: Airytec.SwitchOff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airytec/SwitchOff
+aliases: []

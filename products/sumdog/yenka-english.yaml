@@ -1,0 +1,11 @@
+key: sumdog/yenka-english
+publisher: sumdog
+name: Yenka (English)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/EN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/EN
+identifiers:
+- winget: Sumdog.Yenka.EN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/EN
+aliases: []

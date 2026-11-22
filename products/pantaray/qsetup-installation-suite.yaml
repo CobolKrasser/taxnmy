@@ -1,0 +1,11 @@
+key: pantaray/qsetup-installation-suite
+publisher: pantaray
+name: QSetup Installation Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pantaray/QSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pantaray/QSetup
+identifiers:
+- winget: Pantaray.QSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pantaray/QSetup
+aliases: []

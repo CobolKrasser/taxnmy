@@ -1,0 +1,11 @@
+key: appcontrol-labs/appcontrol-setup
+publisher: appcontrol-labs
+name: AppControl Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppControlLabs/AppControlSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppControlLabs/AppControlSetup
+identifiers:
+- winget: AppControlLabs.AppControlSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppControlLabs/AppControlSetup
+aliases: []

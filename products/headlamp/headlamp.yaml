@@ -1,0 +1,11 @@
+key: headlamp/headlamp
+publisher: headlamp
+name: Headlamp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headlamp/Headlamp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headlamp/Headlamp
+identifiers:
+- winget: Headlamp.Headlamp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headlamp/Headlamp
+aliases: []

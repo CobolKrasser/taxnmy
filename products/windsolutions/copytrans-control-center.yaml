@@ -1,0 +1,11 @@
+key: windsolutions/copytrans-control-center
+publisher: windsolutions
+name: CopyTrans Control Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindSolutions/CopyTransControlCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindSolutions/CopyTransControlCenter
+identifiers:
+- winget: WindSolutions.CopyTransControlCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindSolutions/CopyTransControlCenter
+aliases: []

@@ -1,0 +1,11 @@
+key: duckweb/md2html
+publisher: duckweb
+name: md2html
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckWeb/md2html
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckWeb/md2html
+identifiers:
+- winget: DuckWeb.md2html
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckWeb/md2html
+aliases: []

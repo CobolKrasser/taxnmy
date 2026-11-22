@@ -1,0 +1,11 @@
+key: greenshot/greenshot-preview
+publisher: greenshot
+name: Greenshot Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greenshot/Greenshot/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greenshot/Greenshot/Preview
+identifiers:
+- winget: Greenshot.Greenshot.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greenshot/Greenshot/Preview
+aliases: []

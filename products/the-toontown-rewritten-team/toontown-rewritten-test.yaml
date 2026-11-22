@@ -1,0 +1,11 @@
+key: the-toontown-rewritten-team/toontown-rewritten-test
+publisher: the-toontown-rewritten-team
+name: Toontown Rewritten Test
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheTTRTeam/ToontownRewrittenTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheTTRTeam/ToontownRewrittenTest
+identifiers:
+- winget: TheTTRTeam.ToontownRewrittenTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheTTRTeam/ToontownRewrittenTest
+aliases: []

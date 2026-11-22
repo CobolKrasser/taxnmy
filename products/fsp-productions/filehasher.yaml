@@ -1,0 +1,11 @@
+key: fsp-productions/filehasher
+publisher: fsp-productions
+name: FileHasher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FSPProductions/FileHasher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FSPProductions/FileHasher
+identifiers:
+- winget: FSPProductions.FileHasher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FSPProductions/FileHasher
+aliases: []

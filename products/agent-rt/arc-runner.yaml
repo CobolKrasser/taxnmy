@@ -1,0 +1,11 @@
+key: agent-rt/arc-runner
+publisher: agent-rt
+name: arc runner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agent-rt/arc-runner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agent-rt/arc-runner
+identifiers:
+- winget: agent-rt.arc-runner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agent-rt/arc-runner
+aliases: []

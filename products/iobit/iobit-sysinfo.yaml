@@ -1,0 +1,11 @@
+key: iobit/iobit-sysinfo
+publisher: iobit
+name: IObit SysInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitSysInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitSysInfo
+identifiers:
+- winget: IObit.IObitSysInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitSysInfo
+aliases: []

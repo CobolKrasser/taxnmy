@@ -1,0 +1,11 @@
+key: easybits/magic-desktop-kiosk-edition
+publisher: easybits
+name: Magic Desktop Kiosk Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Easybits/MagicDesktop/Kiosk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Easybits/MagicDesktop/Kiosk
+identifiers:
+- winget: Easybits.MagicDesktop.Kiosk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Easybits/MagicDesktop/Kiosk
+aliases: []

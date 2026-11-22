@@ -1,0 +1,11 @@
+key: hp/hp-connection-optimizer
+publisher: hp
+name: HP Connection Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/ConnectionOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/ConnectionOptimizer
+identifiers:
+- winget: HP.ConnectionOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/ConnectionOptimizer
+aliases: []

@@ -1,0 +1,11 @@
+key: firedaemon/firedaemon-fusion
+publisher: firedaemon
+name: FireDaemon Fusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonFusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonFusion
+identifiers:
+- winget: FireDaemon.FireDaemonFusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonFusion
+aliases: []

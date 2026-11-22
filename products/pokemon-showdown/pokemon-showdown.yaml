@@ -1,0 +1,11 @@
+key: pokemon-showdown/pokemon-showdown
+publisher: pokemon-showdown
+name: Pokemon Showdown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smogon/PokemonShowdown
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smogon/PokemonShowdown
+identifiers:
+- winget: Smogon.PokemonShowdown
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smogon/PokemonShowdown
+aliases: []

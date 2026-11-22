@@ -1,0 +1,11 @@
+key: cyberbotics/webots
+publisher: cyberbotics
+name: Webots
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyberbotics/Webots
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyberbotics/Webots
+identifiers:
+- winget: Cyberbotics.Webots
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyberbotics/Webots
+aliases: []

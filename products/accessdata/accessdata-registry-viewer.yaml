@@ -1,0 +1,11 @@
+key: accessdata/accessdata-registry-viewer
+publisher: accessdata
+name: AccessData Registry Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AccessData/RegistryViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AccessData/RegistryViewer
+identifiers:
+- winget: AccessData.RegistryViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AccessData/RegistryViewer
+aliases: []

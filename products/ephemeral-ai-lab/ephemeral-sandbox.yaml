@@ -1,0 +1,11 @@
+key: ephemeral-ai-lab/ephemeral-sandbox
+publisher: ephemeral-ai-lab
+name: Ephemeral Sandbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephemeral-AI-Lab/EphemeralSandbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephemeral-AI-Lab/EphemeralSandbox
+identifiers:
+- winget: Ephemeral-AI-Lab.EphemeralSandbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephemeral-AI-Lab/EphemeralSandbox
+aliases: []

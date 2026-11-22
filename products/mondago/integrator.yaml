@@ -1,0 +1,11 @@
+key: mondago/integrator
+publisher: mondago
+name: Integrator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mondago/GoIntegratorCara
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mondago/GoIntegratorCara
+identifiers:
+- winget: Mondago.GoIntegratorCara
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mondago/GoIntegratorCara
+aliases: []

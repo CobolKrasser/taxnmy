@@ -1,0 +1,11 @@
+key: synctrayzor/synctrayzor-x64
+publisher: synctrayzor
+name: SyncTrayzor (x64)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GermanCoding/SyncTrayzor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GermanCoding/SyncTrayzor
+identifiers:
+- winget: GermanCoding.SyncTrayzor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GermanCoding/SyncTrayzor
+aliases: []

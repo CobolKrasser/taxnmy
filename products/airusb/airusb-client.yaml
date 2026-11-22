@@ -1,0 +1,11 @@
+key: airusb/airusb-client
+publisher: airusb
+name: AirUSB Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirUSB/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirUSB/Client
+identifiers:
+- winget: AirUSB.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirUSB/Client
+aliases: []

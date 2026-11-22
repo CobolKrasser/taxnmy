@@ -1,0 +1,11 @@
+key: binary-fortress-software/cloudshow-launcher
+publisher: binary-fortress-software
+name: CloudShow Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/CloudShow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/CloudShow
+identifiers:
+- winget: BinaryFortress.CloudShow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/CloudShow
+aliases: []

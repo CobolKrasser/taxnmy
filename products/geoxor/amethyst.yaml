@@ -1,0 +1,11 @@
+key: geoxor/amethyst
+publisher: geoxor
+name: Amethyst
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geoxor/Amethyst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geoxor/Amethyst
+identifiers:
+- winget: Geoxor.Amethyst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geoxor/Amethyst
+aliases: []

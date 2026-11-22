@@ -1,0 +1,11 @@
+key: computec/computec-appengine
+publisher: computec
+name: CompuTec AppEngine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompuTec/AppEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompuTec/AppEngine
+identifiers:
+- winget: CompuTec.AppEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompuTec/AppEngine
+aliases: []

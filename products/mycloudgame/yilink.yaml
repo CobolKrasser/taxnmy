@@ -1,0 +1,11 @@
+key: mycloudgame/yilink
+publisher: mycloudgame
+name: YiLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyCloudGame/YiLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyCloudGame/YiLink
+identifiers:
+- winget: MyCloudGame.YiLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyCloudGame/YiLink
+aliases: []

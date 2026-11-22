@@ -1,0 +1,11 @@
+key: code-sector/direct-folders
+publisher: code-sector
+name: Direct Folders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSector/DirectFolders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSector/DirectFolders
+identifiers:
+- winget: CodeSector.DirectFolders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSector/DirectFolders
+aliases: []

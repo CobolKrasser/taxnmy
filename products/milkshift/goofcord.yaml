@@ -1,0 +1,11 @@
+key: milkshift/goofcord
+publisher: milkshift
+name: GoofCord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MilkShift/GoofCord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MilkShift/GoofCord
+identifiers:
+- winget: MilkShift.GoofCord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MilkShift/GoofCord
+aliases: []

@@ -1,0 +1,13 @@
+key: imagemagick-studio/imagemagick-q8
+publisher: imagemagick-studio
+name: ImageMagick Q8
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q8
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q8
+identifiers:
+- winget: ImageMagick.ImageMagick.Q8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/ImageMagick/Q8
+- winget: ImageMagick.Q8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q8
+aliases: []

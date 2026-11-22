@@ -1,0 +1,11 @@
+key: plogue/plogue-alterego
+publisher: plogue
+name: Plogue AlterEgo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/plogue/alterego
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/plogue/alterego
+identifiers:
+- winget: plogue.alterego
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/plogue/alterego
+aliases: []

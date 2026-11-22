@@ -1,0 +1,11 @@
+key: santesoft/sante-dvd-burning-server
+publisher: santesoft
+name: Sante DVD Burning Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDvdBurningServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDvdBurningServer
+identifiers:
+- winget: Santesoft.SanteDvdBurningServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDvdBurningServer
+aliases: []

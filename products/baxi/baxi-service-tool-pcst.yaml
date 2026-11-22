@@ -1,0 +1,11 @@
+key: baxi/baxi-service-tool-pcst
+publisher: baxi
+name: Baxi Service Tool (PCST)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baxi/ServiceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baxi/ServiceTool
+identifiers:
+- winget: Baxi.ServiceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baxi/ServiceTool
+aliases: []

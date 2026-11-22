@@ -1,0 +1,11 @@
+key: redeye-network-solutions/hopper
+publisher: redeye-network-solutions
+name: Hopper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworkSolutions/Hopper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworkSolutions/Hopper
+identifiers:
+- winget: RedEyeNetworkSolutions.Hopper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworkSolutions/Hopper
+aliases: []

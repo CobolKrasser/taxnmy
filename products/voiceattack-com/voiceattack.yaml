@@ -1,0 +1,11 @@
+key: voiceattack-com/voiceattack
+publisher: voiceattack-com
+name: VoiceAttack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoiceAttack/VoiceAttack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoiceAttack/VoiceAttack
+identifiers:
+- winget: VoiceAttack.VoiceAttack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoiceAttack/VoiceAttack
+aliases: []

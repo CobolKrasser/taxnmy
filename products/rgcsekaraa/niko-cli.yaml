@@ -1,0 +1,11 @@
+key: rgcsekaraa/niko-cli
+publisher: rgcsekaraa
+name: Niko CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rgcsekaraa/NikoCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rgcsekaraa/NikoCLI
+identifiers:
+- winget: rgcsekaraa.NikoCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rgcsekaraa/NikoCLI
+aliases: []

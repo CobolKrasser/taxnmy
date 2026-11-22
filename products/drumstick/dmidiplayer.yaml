@@ -1,0 +1,11 @@
+key: drumstick/dmidiplayer
+publisher: drumstick
+name: dmidiplayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Drumstick/dmidiplayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Drumstick/dmidiplayer
+identifiers:
+- winget: Drumstick.dmidiplayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Drumstick/dmidiplayer
+aliases: []

@@ -1,0 +1,11 @@
+key: mmozeiko/twitchnotify
+publisher: mmozeiko
+name: TwitchNotify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmozeiko/TwitchNotify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmozeiko/TwitchNotify
+identifiers:
+- winget: mmozeiko.TwitchNotify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmozeiko/TwitchNotify
+aliases: []

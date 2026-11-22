@@ -1,0 +1,11 @@
+key: decred/decrediton
+publisher: decred
+name: Decrediton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Decred/Decrediton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Decred/Decrediton
+identifiers:
+- winget: Decred.Decrediton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Decred/Decrediton
+aliases: []

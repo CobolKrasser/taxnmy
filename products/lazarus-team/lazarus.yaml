@@ -1,0 +1,11 @@
+key: lazarus-team/lazarus
+publisher: lazarus-team
+name: Lazarus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lazarus/Lazarus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lazarus/Lazarus
+identifiers:
+- winget: Lazarus.Lazarus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lazarus/Lazarus
+aliases: []

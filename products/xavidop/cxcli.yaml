@@ -1,0 +1,11 @@
+key: xavidop/cxcli
+publisher: xavidop
+name: cxcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xavidop/cxcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xavidop/cxcli
+identifiers:
+- winget: xavidop.cxcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xavidop/cxcli
+aliases: []

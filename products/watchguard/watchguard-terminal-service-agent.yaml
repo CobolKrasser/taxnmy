@@ -1,0 +1,11 @@
+key: watchguard/watchguard-terminal-service-agent
+publisher: watchguard
+name: WatchGuard Terminal Service Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatchGuard/WatchGuardTerminalServiceAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatchGuard/WatchGuardTerminalServiceAgent
+identifiers:
+- winget: WatchGuard.WatchGuardTerminalServiceAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatchGuard/WatchGuardTerminalServiceAgent
+aliases: []

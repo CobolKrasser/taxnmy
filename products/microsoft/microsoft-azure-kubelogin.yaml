@@ -1,0 +1,11 @@
+key: microsoft/microsoft-azure-kubelogin
+publisher: microsoft
+name: Microsoft Azure Kubelogin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Kubelogin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Kubelogin
+identifiers:
+- winget: Microsoft.Azure.Kubelogin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Kubelogin
+aliases: []

@@ -1,0 +1,11 @@
+key: nero/nero-burning-rom-and-express
+publisher: nero
+name: Nero Burning ROM & Express
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nero/NeroBurningROM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nero/NeroBurningROM
+identifiers:
+- winget: Nero.NeroBurningROM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nero/NeroBurningROM
+aliases: []

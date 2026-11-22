@@ -1,0 +1,11 @@
+key: florian-muecke/exebundle
+publisher: florian-muecke
+name: ExeBundle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fmuecke/ExeBundle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fmuecke/ExeBundle
+identifiers:
+- winget: fmuecke.ExeBundle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fmuecke/ExeBundle
+aliases: []

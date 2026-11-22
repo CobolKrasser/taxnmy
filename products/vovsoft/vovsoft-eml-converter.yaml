@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-eml-converter
+publisher: vovsoft
+name: Vovsoft EML Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/EMLConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/EMLConverter
+identifiers:
+- winget: VovSoft.EMLConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/EMLConverter
+aliases: []

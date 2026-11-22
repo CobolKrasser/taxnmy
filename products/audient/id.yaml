@@ -1,0 +1,11 @@
+key: audient/id
+publisher: audient
+name: iD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/iD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/iD
+identifiers:
+- winget: Audient.iD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/iD
+aliases: []

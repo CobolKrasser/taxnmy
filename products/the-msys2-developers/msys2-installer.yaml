@@ -1,0 +1,11 @@
+key: the-msys2-developers/msys2-installer
+publisher: the-msys2-developers
+name: MSYS2 Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSYS2/MSYS2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSYS2/MSYS2
+identifiers:
+- winget: MSYS2.MSYS2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSYS2/MSYS2
+aliases: []

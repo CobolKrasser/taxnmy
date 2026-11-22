@@ -1,0 +1,11 @@
+key: overmind/overmindcli
+publisher: overmind
+name: OvermindCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overmind/OvermindCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overmind/OvermindCLI
+identifiers:
+- winget: Overmind.OvermindCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overmind/OvermindCLI
+aliases: []

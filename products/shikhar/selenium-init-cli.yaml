@@ -1,0 +1,11 @@
+key: shikhar/selenium-init-cli
+publisher: shikhar
+name: Selenium Init CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shikhar/seleniuminit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shikhar/seleniuminit
+identifiers:
+- winget: shikhar.seleniuminit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shikhar/seleniuminit
+aliases: []

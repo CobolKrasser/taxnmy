@@ -1,0 +1,11 @@
+key: simnet/simple-sticky-notes
+publisher: simnet
+name: Simple Sticky Notes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simnet/SimpleStickyNotes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simnet/SimpleStickyNotes
+identifiers:
+- winget: Simnet.SimpleStickyNotes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simnet/SimpleStickyNotes
+aliases: []

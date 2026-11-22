@@ -1,0 +1,11 @@
+key: cryptotrust/onlykey-app
+publisher: cryptotrust
+name: OnlyKey App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTrust/OnlyKeyApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTrust/OnlyKeyApp
+identifiers:
+- winget: CryptoTrust.OnlyKeyApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTrust/OnlyKeyApp
+aliases: []

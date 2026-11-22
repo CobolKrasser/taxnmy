@@ -1,0 +1,11 @@
+key: geod/geod-cli
+publisher: geod
+name: GeoD CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoD/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoD/CLI
+identifiers:
+- winget: GeoD.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoD/CLI
+aliases: []

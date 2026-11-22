@@ -1,0 +1,11 @@
+key: microsoft/intune-wsl-plugin
+publisher: microsoft
+name: Intune WSL Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IntuneWSLPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IntuneWSLPlugin
+identifiers:
+- winget: Microsoft.IntuneWSLPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IntuneWSLPlugin
+aliases: []

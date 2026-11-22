@@ -1,0 +1,11 @@
+key: meiro/uuid-cli
+publisher: meiro
+name: UUID_CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meiro/Uuid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meiro/Uuid
+identifiers:
+- winget: Meiro.Uuid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meiro/Uuid
+aliases: []

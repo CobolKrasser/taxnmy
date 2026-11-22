@@ -1,0 +1,11 @@
+key: edrawsoft/mindmaster
+publisher: edrawsoft
+name: MindMaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/EdrawMind/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/EdrawMind/CN
+identifiers:
+- winget: EdrawSoft.EdrawMind.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/EdrawMind/CN
+aliases: []

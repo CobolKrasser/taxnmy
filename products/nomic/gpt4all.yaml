@@ -1,0 +1,11 @@
+key: nomic/gpt4all
+publisher: nomic
+name: GPT4All
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomic/gpt4all
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomic/gpt4all
+identifiers:
+- winget: nomic.gpt4all
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomic/gpt4all
+aliases: []

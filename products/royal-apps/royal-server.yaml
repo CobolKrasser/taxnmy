@@ -1,0 +1,11 @@
+key: royal-apps/royal-server
+publisher: royal-apps
+name: Royal Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalServer
+identifiers:
+- winget: RoyalApps.RoyalServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalServer
+aliases: []

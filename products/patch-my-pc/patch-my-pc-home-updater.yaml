@@ -1,0 +1,11 @@
+key: patch-my-pc/patch-my-pc-home-updater
+publisher: patch-my-pc
+name: Patch My PC Home Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatchMyPC/PatchMyPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatchMyPC/PatchMyPC
+identifiers:
+- winget: PatchMyPC.PatchMyPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatchMyPC/PatchMyPC
+aliases: []

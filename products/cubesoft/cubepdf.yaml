@@ -1,0 +1,11 @@
+key: cubesoft/cubepdf
+publisher: cubesoft
+name: CubePDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubeSoft/CubePDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubeSoft/CubePDF
+identifiers:
+- winget: CubeSoft.CubePDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubeSoft/CubePDF
+aliases: []

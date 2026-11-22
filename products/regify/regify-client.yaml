@@ -1,0 +1,11 @@
+key: regify/regify-client
+publisher: regify
+name: regify client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regimail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regimail
+identifiers:
+- winget: regify.regimail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regimail
+aliases: []

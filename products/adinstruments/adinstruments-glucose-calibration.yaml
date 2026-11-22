@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-glucose-calibration
+publisher: adinstruments
+name: ADInstruments Glucose Calibration
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/GlucoseCalibration
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/GlucoseCalibration
+identifiers:
+- winget: ADInstruments.LabChart.Extension.GlucoseCalibration
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/GlucoseCalibration
+aliases: []

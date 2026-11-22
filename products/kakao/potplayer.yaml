@@ -1,0 +1,11 @@
+key: kakao/potplayer
+publisher: kakao
+name: PotPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Daum/PotPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Daum/PotPlayer
+identifiers:
+- winget: Daum.PotPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Daum/PotPlayer
+aliases: []

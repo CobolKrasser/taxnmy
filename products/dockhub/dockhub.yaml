@@ -1,0 +1,11 @@
+key: dockhub/dockhub
+publisher: dockhub
+name: DockHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DockHub/DockHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DockHub/DockHub
+identifiers:
+- winget: DockHub.DockHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DockHub/DockHub
+aliases: []

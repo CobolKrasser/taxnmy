@@ -1,0 +1,11 @@
+key: flashpatch-team/clean-flash-player-installer
+publisher: flashpatch-team
+name: Clean Flash Player Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlashPatchTeam/CleanFlashPlayerInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlashPatchTeam/CleanFlashPlayerInstaller
+identifiers:
+- winget: FlashPatchTeam.CleanFlashPlayerInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlashPatchTeam/CleanFlashPlayerInstaller
+aliases: []

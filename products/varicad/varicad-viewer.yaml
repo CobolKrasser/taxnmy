@@ -1,0 +1,11 @@
+key: varicad/varicad-viewer
+publisher: varicad
+name: VariCAD Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VariCAD/VariCADViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VariCAD/VariCADViewer
+identifiers:
+- winget: VariCAD.VariCADViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VariCAD/VariCADViewer
+aliases: []

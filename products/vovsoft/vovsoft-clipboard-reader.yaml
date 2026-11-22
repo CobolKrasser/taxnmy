@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-clipboard-reader
+publisher: vovsoft
+name: Vovsoft Clipboard Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ClipboardReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ClipboardReader
+identifiers:
+- winget: VovSoft.ClipboardReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ClipboardReader
+aliases: []

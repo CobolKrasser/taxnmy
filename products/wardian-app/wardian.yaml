@@ -1,0 +1,11 @@
+key: wardian-app/wardian
+publisher: wardian-app
+name: Wardian
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WardianApp/Wardian
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WardianApp/Wardian
+identifiers:
+- winget: WardianApp.Wardian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WardianApp/Wardian
+aliases: []

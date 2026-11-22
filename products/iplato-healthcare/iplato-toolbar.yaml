@@ -1,0 +1,11 @@
+key: iplato-healthcare/iplato-toolbar
+publisher: iplato-healthcare
+name: iPlato toolbar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iPlato/iPlatoToolbar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iPlato/iPlatoToolbar
+identifiers:
+- winget: iPlato.iPlatoToolbar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iPlato/iPlatoToolbar
+aliases: []

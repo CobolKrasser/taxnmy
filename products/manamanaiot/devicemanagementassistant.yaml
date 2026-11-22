@@ -1,0 +1,11 @@
+key: manamanaiot/devicemanagementassistant
+publisher: manamanaiot
+name: DeviceManagementAssistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManaManaIoT/DeviceManagementAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManaManaIoT/DeviceManagementAssistant
+identifiers:
+- winget: ManaManaIoT.DeviceManagementAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManaManaIoT/DeviceManagementAssistant
+aliases: []

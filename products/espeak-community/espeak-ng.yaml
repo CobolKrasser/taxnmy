@@ -1,0 +1,11 @@
+key: espeak-community/espeak-ng
+publisher: espeak-community
+name: eSpeak NG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eSpeak-NG/eSpeak-NG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eSpeak-NG/eSpeak-NG
+identifiers:
+- winget: eSpeak-NG.eSpeak-NG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eSpeak-NG/eSpeak-NG
+aliases: []

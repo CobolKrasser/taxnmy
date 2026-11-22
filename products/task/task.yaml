@@ -1,0 +1,11 @@
+key: task/task
+publisher: task
+name: Task
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Task/Task
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Task/Task
+identifiers:
+- winget: Task.Task
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Task/Task
+aliases: []

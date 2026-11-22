@@ -1,0 +1,11 @@
+key: the-syncthing-authors/syncthing
+publisher: the-syncthing-authors
+name: Syncthing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncthing/Syncthing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncthing/Syncthing
+identifiers:
+- winget: Syncthing.Syncthing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncthing/Syncthing
+aliases: []

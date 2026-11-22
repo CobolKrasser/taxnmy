@@ -1,0 +1,11 @@
+key: awaescher/fusion-plus-plus
+publisher: awaescher
+name: Fusion++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awaescher/Fusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awaescher/Fusion
+identifiers:
+- winget: awaescher.Fusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awaescher/Fusion
+aliases: []

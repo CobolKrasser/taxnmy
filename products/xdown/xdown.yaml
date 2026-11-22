@@ -1,0 +1,11 @@
+key: xdown/xdown
+publisher: xdown
+name: XDown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XDown/XDown
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XDown/XDown
+identifiers:
+- winget: XDown.XDown
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XDown/XDown
+aliases: []

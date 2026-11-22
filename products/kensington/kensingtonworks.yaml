@@ -1,0 +1,11 @@
+key: kensington/kensingtonworks
+publisher: kensington
+name: KensingtonWorks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/KensingtonWorks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/KensingtonWorks
+identifiers:
+- winget: Kensington.KensingtonWorks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/KensingtonWorks
+aliases: []

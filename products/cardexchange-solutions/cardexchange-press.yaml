@@ -1,0 +1,11 @@
+key: cardexchange-solutions/cardexchange-press
+publisher: cardexchange-solutions
+name: CardExchange Press
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/Press
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/Press
+identifiers:
+- winget: CardExchange.Press
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/Press
+aliases: []

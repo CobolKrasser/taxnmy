@@ -1,0 +1,11 @@
+key: qnap-systems/qsirch-pc-edition
+publisher: qnap-systems
+name: Qsirch PC Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/Qsirch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/Qsirch
+identifiers:
+- winget: QNAP.Qsirch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/Qsirch
+aliases: []

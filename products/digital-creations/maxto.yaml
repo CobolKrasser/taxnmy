@@ -1,0 +1,11 @@
+key: digital-creations/maxto
+publisher: digital-creations
+name: MaxTo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalCreations/MaxTo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalCreations/MaxTo
+identifiers:
+- winget: DigitalCreations.MaxTo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalCreations/MaxTo
+aliases: []

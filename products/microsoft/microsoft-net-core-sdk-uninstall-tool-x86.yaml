@@ -1,0 +1,11 @@
+key: microsoft/microsoft-net-core-sdk-uninstall-tool-x86
+publisher: microsoft
+name: Microsoft .NET Core SDK Uninstall Tool (x86)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/UninstallTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/UninstallTool
+identifiers:
+- winget: Microsoft.DotNet.UninstallTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/UninstallTool
+aliases: []

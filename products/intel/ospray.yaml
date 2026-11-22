@@ -1,0 +1,11 @@
+key: intel/ospray
+publisher: intel
+name: OSPRay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OSPRay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OSPRay
+identifiers:
+- winget: Intel.OSPRay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OSPRay
+aliases: []

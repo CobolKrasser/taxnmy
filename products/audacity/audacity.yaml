@@ -1,0 +1,11 @@
+key: audacity/audacity
+publisher: audacity
+name: Audacity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audacity/Audacity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audacity/Audacity
+identifiers:
+- winget: Audacity.Audacity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audacity/Audacity
+aliases: []

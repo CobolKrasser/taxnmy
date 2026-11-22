@@ -1,0 +1,13 @@
+key: tandem/tandem
+publisher: tandem
+name: Tandem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TandemHealth/Tandem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TandemHealth/Tandem
+identifiers:
+- winget: TandemHealth.Tandem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TandemHealth/Tandem
+- winget: TandemHealth.Tandem.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TandemHealth/Tandem/MSI
+aliases: []

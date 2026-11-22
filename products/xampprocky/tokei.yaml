@@ -1,0 +1,11 @@
+key: xampprocky/tokei
+publisher: xampprocky
+name: tokei
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XAMPPRocky/Tokei
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XAMPPRocky/Tokei
+identifiers:
+- winget: XAMPPRocky.Tokei
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XAMPPRocky/Tokei
+aliases: []

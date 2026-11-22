@@ -1,0 +1,11 @@
+key: nirsoft/insideclipboard
+publisher: nirsoft
+name: InsideClipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InsideClipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InsideClipboard
+identifiers:
+- winget: NirSoft.InsideClipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InsideClipboard
+aliases: []

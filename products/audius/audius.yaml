@@ -1,0 +1,11 @@
+key: audius/audius
+publisher: audius
+name: Audius
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audius/Audius
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audius/Audius
+identifiers:
+- winget: Audius.Audius
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audius/Audius
+aliases: []

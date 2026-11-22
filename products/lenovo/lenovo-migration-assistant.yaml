@@ -1,0 +1,11 @@
+key: lenovo/lenovo-migration-assistant
+publisher: lenovo
+name: Lenovo Migration Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/MigrationAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/MigrationAssistant
+identifiers:
+- winget: Lenovo.MigrationAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/MigrationAssistant
+aliases: []

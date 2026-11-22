@@ -1,0 +1,11 @@
+key: software-companions/viewcompanion-premium
+publisher: software-companions
+name: ViewCompanion Premium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionPremium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionPremium
+identifiers:
+- winget: SoftwareCompanions.ViewCompanionPremium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionPremium
+aliases: []

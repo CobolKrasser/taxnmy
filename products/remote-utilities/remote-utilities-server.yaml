@@ -1,0 +1,11 @@
+key: remote-utilities/remote-utilities-server
+publisher: remote-utilities
+name: Remote Utilities Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoteUtilities/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoteUtilities/Server
+identifiers:
+- winget: RemoteUtilities.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoteUtilities/Server
+aliases: []

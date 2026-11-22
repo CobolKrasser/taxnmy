@@ -1,0 +1,11 @@
+key: admobilize/admobilizevisionservice
+publisher: admobilize
+name: AdMobilizeVisionService
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/VisionService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/VisionService
+identifiers:
+- winget: Admobilize.AdMobilize.VisionService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/VisionService
+aliases: []

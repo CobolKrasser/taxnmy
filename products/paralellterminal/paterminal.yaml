@@ -1,0 +1,11 @@
+key: paralellterminal/paterminal
+publisher: paralellterminal
+name: PATerminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/paralellterminal/PATerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/paralellterminal/PATerminal
+identifiers:
+- winget: paralellterminal.PATerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/paralellterminal/PATerminal
+aliases: []

@@ -1,0 +1,11 @@
+key: morpheusly/morpheusly-secure-connections
+publisher: morpheusly
+name: 'Morpheusly: Secure Connections'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morpheusly/SecureConnections
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morpheusly/SecureConnections
+identifiers:
+- winget: Morpheusly.SecureConnections
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morpheusly/SecureConnections
+aliases: []

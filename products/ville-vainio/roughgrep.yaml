@@ -1,0 +1,11 @@
+key: ville-vainio/roughgrep
+publisher: ville-vainio
+name: RoughGrep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vivainio/RoughGrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vivainio/RoughGrep
+identifiers:
+- winget: vivainio.RoughGrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vivainio/RoughGrep
+aliases: []

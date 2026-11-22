@@ -1,0 +1,11 @@
+key: hiddify/hiddify-next
+publisher: hiddify
+name: Hiddify Next
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hiddify/Next
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hiddify/Next
+identifiers:
+- winget: Hiddify.Next
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hiddify/Next
+aliases: []

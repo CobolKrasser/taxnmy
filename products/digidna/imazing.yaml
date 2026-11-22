@@ -1,0 +1,11 @@
+key: digidna/imazing
+publisher: digidna
+name: iMazing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazing
+identifiers:
+- winget: DigiDNA.iMazing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazing
+aliases: []

@@ -1,0 +1,11 @@
+key: scancircle/scancircle
+publisher: scancircle
+name: ScanCircle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScanCircle/ScanCircle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScanCircle/ScanCircle
+identifiers:
+- winget: ScanCircle.ScanCircle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScanCircle/ScanCircle
+aliases: []

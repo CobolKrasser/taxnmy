@@ -1,0 +1,11 @@
+key: windosx/zentao-cli
+publisher: windosx
+name: zentao-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/windosx/zentao-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/windosx/zentao-cli
+identifiers:
+- winget: windosx.zentao-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/windosx/zentao-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: espresso/espressoflow
+publisher: espresso
+name: espressoFlow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EspressoDisplays/espressoFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EspressoDisplays/espressoFlow
+identifiers:
+- winget: EspressoDisplays.espressoFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EspressoDisplays/espressoFlow
+aliases: []

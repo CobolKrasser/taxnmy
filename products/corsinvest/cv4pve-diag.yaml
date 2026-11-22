@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-diag
+publisher: corsinvest
+name: cv4pve-diag
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/diag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/diag
+identifiers:
+- winget: Corsinvest.cv4pve.diag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/diag
+aliases: []

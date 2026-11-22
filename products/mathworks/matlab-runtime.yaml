@@ -1,0 +1,11 @@
+key: mathworks/matlab-runtime
+publisher: mathworks
+name: MATLAB Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MathWorks/MATLABRuntime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MathWorks/MATLABRuntime
+identifiers:
+- winget: MathWorks.MATLABRuntime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MathWorks/MATLABRuntime
+aliases: []

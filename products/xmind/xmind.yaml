@@ -1,0 +1,13 @@
+key: xmind/xmind
+publisher: xmind
+name: Xmind
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmind/Xmind
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmind/Xmind
+identifiers:
+- winget: Xmind.Xmind
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmind/Xmind
+- winget: Xmind.Xmind.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmind/Xmind/8
+aliases: []

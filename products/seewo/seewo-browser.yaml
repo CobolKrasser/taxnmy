@@ -1,0 +1,11 @@
+key: seewo/seewo-browser
+publisher: seewo
+name: seewo browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seewo/SeewoBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seewo/SeewoBrowser
+identifiers:
+- winget: Seewo.SeewoBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seewo/SeewoBrowser
+aliases: []

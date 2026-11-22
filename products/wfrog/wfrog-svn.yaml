@@ -1,0 +1,11 @@
+key: wfrog/wfrog-svn
+publisher: wfrog
+name: Wfrog SVN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfrog/Wfrog/SVN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfrog/Wfrog/SVN
+identifiers:
+- winget: Wfrog.Wfrog.SVN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfrog/Wfrog/SVN
+aliases: []

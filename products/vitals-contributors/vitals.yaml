@@ -1,0 +1,11 @@
+key: vitals-contributors/vitals
+publisher: vitals-contributors
+name: Vitals
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vitals/Vitals
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vitals/Vitals
+identifiers:
+- winget: Vitals.Vitals
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vitals/Vitals
+aliases: []

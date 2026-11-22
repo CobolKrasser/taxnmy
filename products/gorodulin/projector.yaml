@@ -1,0 +1,11 @@
+key: gorodulin/projector
+publisher: gorodulin
+name: Projector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gorodulin/prj
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gorodulin/prj
+identifiers:
+- winget: gorodulin.prj
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gorodulin/prj
+aliases: []

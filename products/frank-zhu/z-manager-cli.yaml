@@ -1,0 +1,11 @@
+key: frank-zhu/z-manager-cli
+publisher: frank-zhu
+name: Z-Manager CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrankZhu/ZManagerCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrankZhu/ZManagerCLI
+identifiers:
+- winget: FrankZhu.ZManagerCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrankZhu/ZManagerCLI
+aliases: []

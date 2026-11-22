@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-multipoint-calibration
+publisher: adinstruments
+name: ADInstruments Multipoint Calibration
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/MultipointCalibration
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/MultipointCalibration
+identifiers:
+- winget: ADInstruments.LabChart.Extension.MultipointCalibration
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/MultipointCalibration
+aliases: []

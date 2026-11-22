@@ -1,0 +1,11 @@
+key: machinewrapped/smartcopy
+publisher: machinewrapped
+name: SmartCopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/machinewrapped/SmartCopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/machinewrapped/SmartCopy
+identifiers:
+- winget: machinewrapped.SmartCopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/machinewrapped/SmartCopy
+aliases: []

@@ -1,0 +1,11 @@
+key: kuracloud/kuracloud-desktop
+publisher: kuracloud
+name: kuraCloud Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/kuraCloudDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/kuraCloudDesktop
+identifiers:
+- winget: ADInstruments.kuraCloudDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/kuraCloudDesktop
+aliases: []

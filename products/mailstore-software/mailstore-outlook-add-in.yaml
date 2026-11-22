@@ -1,0 +1,11 @@
+key: mailstore-software/mailstore-outlook-add-in
+publisher: mailstore-software
+name: MailStore Outlook Add-In
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailStore/OutlookAddIn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailStore/OutlookAddIn
+identifiers:
+- winget: MailStore.OutlookAddIn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailStore/OutlookAddIn
+aliases: []

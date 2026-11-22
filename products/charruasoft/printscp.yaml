@@ -1,0 +1,11 @@
+key: charruasoft/printscp
+publisher: charruasoft
+name: PrintSCP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/PrintSCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/PrintSCP
+identifiers:
+- winget: CharruaSoft.PrintSCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/PrintSCP
+aliases: []

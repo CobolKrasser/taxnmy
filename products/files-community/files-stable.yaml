@@ -1,0 +1,11 @@
+key: files-community/files-stable
+publisher: files-community
+name: Files - Stable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilesCommunity/Files
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilesCommunity/Files
+identifiers:
+- winget: FilesCommunity.Files
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FilesCommunity/Files
+aliases: []

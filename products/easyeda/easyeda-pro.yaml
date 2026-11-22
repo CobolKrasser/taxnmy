@@ -1,0 +1,11 @@
+key: easyeda/easyeda-pro
+publisher: easyeda
+name: EasyEDA Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JLC/EasyEDA/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JLC/EasyEDA/Pro
+identifiers:
+- winget: JLC.EasyEDA.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JLC/EasyEDA/Pro
+aliases: []

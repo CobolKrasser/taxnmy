@@ -1,0 +1,11 @@
+key: core-ftp/core-ftp-server
+publisher: core-ftp
+name: Core FTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/CoreFTPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/CoreFTPServer
+identifiers:
+- winget: CoreFTP.CoreFTPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/CoreFTPServer
+aliases: []

@@ -1,0 +1,15 @@
+key: kingsoft/wps-office
+publisher: kingsoft
+name: WPS Office
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingsoft/WPSOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingsoft/WPSOffice
+identifiers:
+- winget: Kingsoft.WPSOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingsoft/WPSOffice
+- winget: Kingsoft.WPSOffice.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingsoft/WPSOffice/CN
+- winget: Kingsoft.WPSOffice.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingsoft/WPSOffice/x64
+aliases: []

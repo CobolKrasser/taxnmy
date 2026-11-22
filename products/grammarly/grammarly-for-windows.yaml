@@ -1,0 +1,11 @@
+key: grammarly/grammarly-for-windows
+publisher: grammarly
+name: Grammarly for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grammarly/Grammarly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grammarly/Grammarly
+identifiers:
+- winget: Grammarly.Grammarly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grammarly/Grammarly
+aliases: []

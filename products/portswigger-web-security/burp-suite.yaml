@@ -1,0 +1,11 @@
+key: portswigger-web-security/burp-suite
+publisher: portswigger-web-security
+name: Burp Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortSwigger/BurpSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortSwigger/BurpSuite
+identifiers:
+- winget: PortSwigger.BurpSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortSwigger/BurpSuite
+aliases: []

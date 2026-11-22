@@ -1,0 +1,11 @@
+key: segger/segger-embedded-studio-for-arm
+publisher: segger
+name: SEGGER Embedded Studio for ARM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Segger/EmbeddedStudioARM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Segger/EmbeddedStudioARM
+identifiers:
+- winget: Segger.EmbeddedStudioARM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Segger/EmbeddedStudioARM
+aliases: []

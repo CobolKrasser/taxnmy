@@ -1,0 +1,11 @@
+key: softsea/uif-to-iso
+publisher: softsea
+name: UIF to ISO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/UIFtoISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/UIFtoISO
+identifiers:
+- winget: SoftSea.UIFtoISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/UIFtoISO
+aliases: []

@@ -1,0 +1,11 @@
+key: git-cola/git-cola
+publisher: git-cola
+name: git-cola
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-cola/git-cola
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-cola/git-cola
+identifiers:
+- winget: git-cola.git-cola
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-cola/git-cola
+aliases: []

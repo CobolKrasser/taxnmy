@@ -1,0 +1,11 @@
+key: internxt/internxt-drive
+publisher: internxt
+name: Internxt Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Internxt/Drive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Internxt/Drive
+identifiers:
+- winget: Internxt.Drive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Internxt/Drive
+aliases: []

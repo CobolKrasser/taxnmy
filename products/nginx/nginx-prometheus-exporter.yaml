@@ -1,0 +1,11 @@
+key: nginx/nginx-prometheus-exporter
+publisher: nginx
+name: nginx-prometheus-exporter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nginx/nginx-prometheus-exporter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nginx/nginx-prometheus-exporter
+identifiers:
+- winget: nginx.nginx-prometheus-exporter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nginx/nginx-prometheus-exporter
+aliases: []

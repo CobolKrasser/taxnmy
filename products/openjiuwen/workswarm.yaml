@@ -1,0 +1,11 @@
+key: openjiuwen/workswarm
+publisher: openjiuwen
+name: WorkSwarm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openJiuwen/WorkSwarm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openJiuwen/WorkSwarm
+identifiers:
+- winget: openJiuwen.WorkSwarm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openJiuwen/WorkSwarm
+aliases: []

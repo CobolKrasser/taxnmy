@@ -1,0 +1,11 @@
+key: santesoft/sante-dicom-viewer-lite
+publisher: santesoft
+name: Sante DICOM Viewer Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomViewerLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomViewerLite
+identifiers:
+- winget: Santesoft.SanteDicomViewerLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomViewerLite
+aliases: []

@@ -1,0 +1,11 @@
+key: cerberauth/openapi-oathkeeper
+publisher: cerberauth
+name: openapi-oathkeeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CerberAuth/openapi-oathkeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CerberAuth/openapi-oathkeeper
+identifiers:
+- winget: CerberAuth.openapi-oathkeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CerberAuth/openapi-oathkeeper
+aliases: []

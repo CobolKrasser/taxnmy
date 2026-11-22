@@ -1,0 +1,11 @@
+key: softdeluxe/free-download-manager
+publisher: softdeluxe
+name: Free Download Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftDeluxe/FreeDownloadManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftDeluxe/FreeDownloadManager
+identifiers:
+- winget: SoftDeluxe.FreeDownloadManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftDeluxe/FreeDownloadManager
+aliases: []

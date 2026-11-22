@@ -1,0 +1,11 @@
+key: mistral-ai/mistral-vibe
+publisher: mistral-ai
+name: Mistral Vibe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MistralAI/MistralVibe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MistralAI/MistralVibe
+identifiers:
+- winget: MistralAI.MistralVibe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MistralAI/MistralVibe
+aliases: []

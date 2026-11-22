@@ -1,0 +1,11 @@
+key: daring-development/horizon
+publisher: daring-development
+name: Horizon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaringDevelopmentInc/Horizon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaringDevelopmentInc/Horizon
+identifiers:
+- winget: DaringDevelopmentInc.Horizon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaringDevelopmentInc/Horizon
+aliases: []

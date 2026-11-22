@@ -1,0 +1,11 @@
+key: fullscreensavers/neon-time-screensaver
+publisher: fullscreensavers
+name: Neon Time Screensaver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FullScreensavers/NeonTime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FullScreensavers/NeonTime
+identifiers:
+- winget: FullScreensavers.NeonTime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FullScreensavers/NeonTime
+aliases: []

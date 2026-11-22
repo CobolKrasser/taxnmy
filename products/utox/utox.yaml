@@ -1,0 +1,11 @@
+key: utox/utox
+publisher: utox
+name: uTox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uTox/uTox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uTox/uTox
+identifiers:
+- winget: uTox.uTox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uTox/uTox
+aliases: []

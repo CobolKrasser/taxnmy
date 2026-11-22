@@ -1,0 +1,11 @@
+key: firejox/winsocat
+publisher: firejox
+name: WinSocat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firejox/WinSocat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firejox/WinSocat
+identifiers:
+- winget: Firejox.WinSocat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firejox/WinSocat
+aliases: []

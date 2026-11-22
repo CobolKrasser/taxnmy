@@ -1,0 +1,11 @@
+key: dmitry-isaenko/ns-usbloader
+publisher: dmitry-isaenko
+name: NS-USBloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/developersu/ns-usbloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/developersu/ns-usbloader
+identifiers:
+- winget: developersu.ns-usbloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/developersu/ns-usbloader
+aliases: []

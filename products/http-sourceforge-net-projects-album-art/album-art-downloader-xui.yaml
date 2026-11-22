@@ -1,0 +1,11 @@
+key: http-sourceforge-net-projects-album-art/album-art-downloader-xui
+publisher: http-sourceforge-net-projects-album-art
+name: Album Art Downloader XUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alexvallat/AlbumArtDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alexvallat/AlbumArtDownloader
+identifiers:
+- winget: alexvallat.AlbumArtDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alexvallat/AlbumArtDownloader
+aliases: []

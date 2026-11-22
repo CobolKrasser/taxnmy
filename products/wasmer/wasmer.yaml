@@ -1,0 +1,11 @@
+key: wasmer/wasmer
+publisher: wasmer
+name: Wasmer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasmer/Wasmer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasmer/Wasmer
+identifiers:
+- winget: Wasmer.Wasmer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasmer/Wasmer
+aliases: []

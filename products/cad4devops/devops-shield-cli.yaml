@@ -1,0 +1,11 @@
+key: cad4devops/devops-shield-cli
+publisher: cad4devops
+name: DevOps Shield CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevOpsShield/dos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevOpsShield/dos
+identifiers:
+- winget: DevOpsShield.dos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevOpsShield/dos
+aliases: []

@@ -1,0 +1,11 @@
+key: xink/xink-client-ad
+publisher: xink
+name: Xink Client AD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xink/XinkClientAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xink/XinkClientAD
+identifiers:
+- winget: Xink.XinkClientAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xink/XinkClientAD
+aliases: []

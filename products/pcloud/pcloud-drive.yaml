@@ -1,0 +1,11 @@
+key: pcloud/pcloud-drive
+publisher: pcloud
+name: pCloud Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pCloudAG/pCloudDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pCloudAG/pCloudDrive
+identifiers:
+- winget: pCloudAG.pCloudDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pCloudAG/pCloudDrive
+aliases: []

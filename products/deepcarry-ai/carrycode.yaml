@@ -1,0 +1,11 @@
+key: deepcarry-ai/carrycode
+publisher: deepcarry-ai
+name: CarryCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepCarryAI/CarryCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepCarryAI/CarryCode
+identifiers:
+- winget: DeepCarryAI.CarryCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepCarryAI/CarryCode
+aliases: []

@@ -1,0 +1,11 @@
+key: coing/clockify
+publisher: coing
+name: Clockify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clockify/Clockify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clockify/Clockify
+identifiers:
+- winget: Clockify.Clockify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clockify/Clockify
+aliases: []

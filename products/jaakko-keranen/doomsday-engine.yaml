@@ -1,0 +1,13 @@
+key: jaakko-keranen/doomsday-engine
+publisher: jaakko-keranen
+name: Doomsday Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEngine/DoomsdayEngine/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEngine/DoomsdayEngine/Stable
+identifiers:
+- winget: DEngine.DoomsdayEngine.Candidate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEngine/DoomsdayEngine/Candidate
+- winget: DEngine.DoomsdayEngine.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEngine/DoomsdayEngine/Stable
+aliases: []

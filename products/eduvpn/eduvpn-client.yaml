@@ -1,0 +1,11 @@
+key: eduvpn/eduvpn-client
+publisher: eduvpn
+name: eduVPN Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eduVPN/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eduVPN/Client
+identifiers:
+- winget: eduVPN.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eduVPN/Client
+aliases: []

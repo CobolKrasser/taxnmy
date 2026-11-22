@@ -1,0 +1,11 @@
+key: kbs/kong
+publisher: kbs
+name: Kong
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KBS/Kong
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KBS/Kong
+identifiers:
+- winget: KBS.Kong
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KBS/Kong
+aliases: []

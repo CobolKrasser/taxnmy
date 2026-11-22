@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-window-resizer
+publisher: vovsoft
+name: Vovsoft Window Resizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WindowResizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WindowResizer
+identifiers:
+- winget: VovSoft.WindowResizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WindowResizer
+aliases: []

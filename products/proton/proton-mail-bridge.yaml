@@ -1,0 +1,11 @@
+key: proton/proton-mail-bridge
+publisher: proton
+name: Proton Mail Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMailBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMailBridge
+identifiers:
+- winget: Proton.ProtonMailBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMailBridge
+aliases: []

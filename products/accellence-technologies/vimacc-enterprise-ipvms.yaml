@@ -1,0 +1,13 @@
+key: accellence-technologies/vimacc-enterprise-ipvms
+publisher: accellence-technologies
+name: vimacc Enterprise IPVMS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimacc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimacc
+identifiers:
+- winget: accellence.vimacc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimacc
+- winget: accellence.vimaccEnterprise_2215
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccEnterprise_2215
+aliases: []

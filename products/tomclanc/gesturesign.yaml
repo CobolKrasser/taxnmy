@@ -1,0 +1,11 @@
+key: tomclanc/gesturesign
+publisher: tomclanc
+name: GestureSign
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tomclanc/GestureSignV2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tomclanc/GestureSignV2
+identifiers:
+- winget: Tomclanc.GestureSignV2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tomclanc/GestureSignV2
+aliases: []

@@ -1,0 +1,11 @@
+key: pharo-project/pharolauncher
+publisher: pharo-project
+name: PharoLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pharoproject/PharoLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pharoproject/PharoLauncher
+identifiers:
+- winget: Pharoproject.PharoLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pharoproject/PharoLauncher
+aliases: []

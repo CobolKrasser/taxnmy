@@ -1,0 +1,11 @@
+key: meta/pyrefly
+publisher: meta
+name: Pyrefly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/facebook/pyrefly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/facebook/pyrefly
+identifiers:
+- winget: facebook.pyrefly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/facebook/pyrefly
+aliases: []

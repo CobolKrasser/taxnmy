@@ -1,0 +1,11 @@
+key: netdata/netdata
+publisher: netdata
+name: Netdata
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netdata/Netdata
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netdata/Netdata
+identifiers:
+- winget: Netdata.Netdata
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netdata/Netdata
+aliases: []

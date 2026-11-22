@@ -1,0 +1,11 @@
+key: agentclash/agentclash
+publisher: agentclash
+name: AgentClash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentClash/AgentClash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentClash/AgentClash
+identifiers:
+- winget: AgentClash.AgentClash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentClash/AgentClash
+aliases: []

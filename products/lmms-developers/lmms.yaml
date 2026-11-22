@@ -1,0 +1,11 @@
+key: lmms-developers/lmms
+publisher: lmms-developers
+name: LMMS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LMMS/LMMS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LMMS/LMMS
+identifiers:
+- winget: LMMS.LMMS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LMMS/LMMS
+aliases: []

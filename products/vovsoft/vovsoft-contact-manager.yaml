@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-contact-manager
+publisher: vovsoft
+name: Vovsoft Contact Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ContactManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ContactManager
+identifiers:
+- winget: VovSoft.ContactManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ContactManager
+aliases: []

@@ -1,0 +1,11 @@
+key: synergenics/echolink
+publisher: synergenics
+name: EchoLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EchoLink/EchoLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EchoLink/EchoLink
+identifiers:
+- winget: EchoLink.EchoLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EchoLink/EchoLink
+aliases: []

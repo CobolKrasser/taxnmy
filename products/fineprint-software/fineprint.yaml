@@ -1,0 +1,11 @@
+key: fineprint-software/fineprint
+publisher: fineprint-software
+name: FinePrint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FineprintSoftware/FinePrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FineprintSoftware/FinePrint
+identifiers:
+- winget: FineprintSoftware.FinePrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FineprintSoftware/FinePrint
+aliases: []

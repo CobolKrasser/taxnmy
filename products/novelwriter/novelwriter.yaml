@@ -1,0 +1,11 @@
+key: novelwriter/novelwriter
+publisher: novelwriter
+name: novelWriter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vkbo/novelWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vkbo/novelWriter
+identifiers:
+- winget: vkbo.novelWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vkbo/novelWriter
+aliases: []

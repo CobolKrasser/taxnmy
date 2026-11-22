@@ -1,0 +1,11 @@
+key: craftbag/craftbag
+publisher: craftbag
+name: craftbag
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craftbag/Craftbag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craftbag/Craftbag
+identifiers:
+- winget: Craftbag.Craftbag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craftbag/Craftbag
+aliases: []

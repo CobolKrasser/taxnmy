@@ -1,0 +1,11 @@
+key: paodingai/pdflux
+publisher: paodingai
+name: PDFlux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaodingAI/PDFlux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaodingAI/PDFlux
+identifiers:
+- winget: PaodingAI.PDFlux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaodingAI/PDFlux
+aliases: []

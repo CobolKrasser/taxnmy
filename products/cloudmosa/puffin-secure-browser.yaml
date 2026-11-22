@@ -1,0 +1,11 @@
+key: cloudmosa/puffin-secure-browser
+publisher: cloudmosa
+name: Puffin Secure Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudMosaInc/PuffinSecureBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudMosaInc/PuffinSecureBrowser
+identifiers:
+- winget: CloudMosaInc.PuffinSecureBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudMosaInc/PuffinSecureBrowser
+aliases: []

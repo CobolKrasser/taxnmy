@@ -1,0 +1,11 @@
+key: enpass-technologies/enpass
+publisher: enpass-technologies
+name: Enpass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sinew/Enpass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sinew/Enpass
+identifiers:
+- winget: Sinew.Enpass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sinew/Enpass
+aliases: []

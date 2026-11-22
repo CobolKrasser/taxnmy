@@ -1,0 +1,11 @@
+key: privax/hma-vpn
+publisher: privax
+name: HMA VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Privax/HMAVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Privax/HMAVPN
+identifiers:
+- winget: Privax.HMAVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Privax/HMAVPN
+aliases: []

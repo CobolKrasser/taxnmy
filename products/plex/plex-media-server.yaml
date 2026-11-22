@@ -1,0 +1,11 @@
+key: plex/plex-media-server
+publisher: plex
+name: Plex Media Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexMediaServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexMediaServer
+identifiers:
+- winget: Plex.PlexMediaServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexMediaServer
+aliases: []

@@ -1,0 +1,11 @@
+key: infobyte/oe-classic
+publisher: infobyte
+name: OE Classic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OEClassic/OEClassic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OEClassic/OEClassic
+identifiers:
+- winget: OEClassic.OEClassic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OEClassic/OEClassic
+aliases: []

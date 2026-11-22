@@ -1,0 +1,11 @@
+key: hex-rays/ida-freeware
+publisher: hex-rays
+name: IDA Freeware
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hex-Rays/IDA/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hex-Rays/IDA/Free
+identifiers:
+- winget: Hex-Rays.IDA.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hex-Rays/IDA/Free
+aliases: []

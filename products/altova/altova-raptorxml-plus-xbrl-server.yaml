@@ -1,0 +1,13 @@
+key: altova/altova-raptorxml-plus-xbrl-server
+publisher: altova
+name: Altova RaptorXML+XBRL Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2025/XBRL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2025/XBRL
+identifiers:
+- winget: Altova.RaptorXMLServer.2025.XBRL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2025/XBRL
+- winget: Altova.RaptorXMLServer.2026.XBRL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2026/XBRL
+aliases: []

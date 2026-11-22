@@ -1,0 +1,11 @@
+key: mitec/mitec-infobar
+publisher: mitec
+name: MiTeC InfoBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/InfoBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/InfoBar
+identifiers:
+- winget: MiTeC.InfoBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/InfoBar
+aliases: []

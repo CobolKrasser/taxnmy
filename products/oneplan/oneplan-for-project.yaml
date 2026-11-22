@@ -1,0 +1,11 @@
+key: oneplan/oneplan-for-project
+publisher: oneplan
+name: OnePlan For Project
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnePlan/OnePlanForProject
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnePlan/OnePlanForProject
+identifiers:
+- winget: OnePlan.OnePlanForProject
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnePlan/OnePlanForProject
+aliases: []

@@ -1,0 +1,11 @@
+key: nilesoft/nilesoft-shell
+publisher: nilesoft
+name: Nilesoft Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nilesoft/Shell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nilesoft/Shell
+identifiers:
+- winget: Nilesoft.Shell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nilesoft/Shell
+aliases: []

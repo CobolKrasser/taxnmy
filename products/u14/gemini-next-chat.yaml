@@ -1,0 +1,11 @@
+key: u14/gemini-next-chat
+publisher: u14
+name: gemini-next-chat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/U14/GeminiNextChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/U14/GeminiNextChat
+identifiers:
+- winget: U14.GeminiNextChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/U14/GeminiNextChat
+aliases: []

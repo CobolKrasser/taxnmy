@@ -1,0 +1,11 @@
+key: ironship/word-hunter
+publisher: ironship
+name: Word Hunter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ironship/WordHunter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ironship/WordHunter
+identifiers:
+- winget: Ironship.WordHunter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ironship/WordHunter
+aliases: []

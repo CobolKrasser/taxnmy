@@ -1,0 +1,11 @@
+key: voidstar/file-pilot
+publisher: voidstar
+name: File Pilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voidstar/FilePilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voidstar/FilePilot
+identifiers:
+- winget: Voidstar.FilePilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voidstar/FilePilot
+aliases: []

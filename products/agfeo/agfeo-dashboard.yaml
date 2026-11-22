@@ -1,0 +1,11 @@
+key: agfeo/agfeo-dashboard
+publisher: agfeo
+name: AGFEO Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGFEO/AGFEODashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGFEO/AGFEODashboard
+identifiers:
+- winget: AGFEO.AGFEODashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGFEO/AGFEODashboard
+aliases: []

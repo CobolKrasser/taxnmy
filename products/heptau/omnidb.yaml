@@ -1,0 +1,11 @@
+key: heptau/omnidb
+publisher: heptau
+name: OmniDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heptau/OmniDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heptau/OmniDB
+identifiers:
+- winget: heptau.OmniDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heptau/OmniDB
+aliases: []

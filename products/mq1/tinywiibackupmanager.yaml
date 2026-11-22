@@ -1,0 +1,11 @@
+key: mq1/tinywiibackupmanager
+publisher: mq1
+name: TinyWiiBackupManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mq1/TinyWiiBackupManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mq1/TinyWiiBackupManager
+identifiers:
+- winget: mq1.TinyWiiBackupManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mq1/TinyWiiBackupManager
+aliases: []

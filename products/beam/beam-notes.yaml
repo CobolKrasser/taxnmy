@@ -1,0 +1,11 @@
+key: beam/beam-notes
+publisher: beam
+name: Beam Notes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeamUp/BeamNotes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeamUp/BeamNotes
+identifiers:
+- winget: BeamUp.BeamNotes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeamUp/BeamNotes
+aliases: []

@@ -1,0 +1,11 @@
+key: horizon-eda/horizon-eda
+publisher: horizon-eda
+name: Horizon EDA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HorizonEDA/horizon-eda
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HorizonEDA/horizon-eda
+identifiers:
+- winget: HorizonEDA.horizon-eda
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HorizonEDA/horizon-eda
+aliases: []

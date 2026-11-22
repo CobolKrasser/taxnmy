@@ -1,0 +1,11 @@
+key: mediahuman/mediahuman-video-converter
+publisher: mediahuman
+name: MediaHuman Video Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/VideoConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/VideoConverter
+identifiers:
+- winget: MediaHuman.VideoConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/VideoConverter
+aliases: []

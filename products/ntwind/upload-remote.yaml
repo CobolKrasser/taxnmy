@@ -1,0 +1,11 @@
+key: ntwind/upload-remote
+publisher: ntwind
+name: Upload Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/UploadRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/UploadRemote
+identifiers:
+- winget: ntwind.UploadRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/UploadRemote
+aliases: []

@@ -1,0 +1,11 @@
+key: mitec/mitec-xml-viewer
+publisher: mitec
+name: MiTeC XML Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/XMLViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/XMLViewer
+identifiers:
+- winget: MiTeC.XMLViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/XMLViewer
+aliases: []

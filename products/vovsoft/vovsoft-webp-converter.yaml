@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-webp-converter
+publisher: vovsoft
+name: Vovsoft WebP Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WEBPConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WEBPConverter
+identifiers:
+- winget: VovSoft.WEBPConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WEBPConverter
+aliases: []

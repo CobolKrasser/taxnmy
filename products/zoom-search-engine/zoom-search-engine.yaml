@@ -1,0 +1,11 @@
+key: zoom-search-engine/zoom-search-engine
+publisher: zoom-search-engine
+name: Zoom Search Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/ZoomSearchEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/ZoomSearchEngine
+identifiers:
+- winget: PassMark.ZoomSearchEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/ZoomSearchEngine
+aliases: []

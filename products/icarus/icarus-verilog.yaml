@@ -1,0 +1,11 @@
+key: icarus/icarus-verilog
+publisher: icarus
+name: Icarus Verilog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icarus/Verilog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icarus/Verilog
+identifiers:
+- winget: Icarus.Verilog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icarus/Verilog
+aliases: []

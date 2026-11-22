@@ -1,0 +1,11 @@
+key: openteams/openteams
+publisher: openteams
+name: openteams
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTeams/OpenTeams
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTeams/OpenTeams
+identifiers:
+- winget: OpenTeams.OpenTeams
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTeams/OpenTeams
+aliases: []

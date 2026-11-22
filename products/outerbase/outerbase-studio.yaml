@@ -1,0 +1,11 @@
+key: outerbase/outerbase-studio
+publisher: outerbase
+name: Outerbase Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Outerbase/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Outerbase/Studio
+identifiers:
+- winget: Outerbase.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Outerbase/Studio
+aliases: []

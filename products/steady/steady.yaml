@@ -1,0 +1,11 @@
+key: steady/steady
+publisher: steady
+name: Steady
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steady/Steady
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steady/Steady
+identifiers:
+- winget: Steady.Steady
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steady/Steady
+aliases: []

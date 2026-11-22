@@ -1,0 +1,11 @@
+key: feitian/feitian-sk-manager
+publisher: feitian
+name: FEITIAN SK Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FEITIAN/SKManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FEITIAN/SKManager
+identifiers:
+- winget: FEITIAN.SKManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FEITIAN/SKManager
+aliases: []

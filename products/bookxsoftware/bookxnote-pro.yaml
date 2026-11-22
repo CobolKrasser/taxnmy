@@ -1,0 +1,11 @@
+key: bookxsoftware/bookxnote-pro
+publisher: bookxsoftware
+name: BookxNote Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BookxSoftware/BookxNotePro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BookxSoftware/BookxNotePro
+identifiers:
+- winget: BookxSoftware.BookxNotePro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BookxSoftware/BookxNotePro
+aliases: []

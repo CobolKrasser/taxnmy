@@ -1,0 +1,11 @@
+key: virtualhere/virtualhere-usb-server
+publisher: virtualhere
+name: VirtualHere USB Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualHere/USBServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualHere/USBServer
+identifiers:
+- winget: VirtualHere.USBServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualHere/USBServer
+aliases: []

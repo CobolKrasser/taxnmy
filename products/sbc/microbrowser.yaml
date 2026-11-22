@@ -1,0 +1,11 @@
+key: sbc/microbrowser
+publisher: sbc
+name: MicroBrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SBC/MicroBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SBC/MicroBrowser
+identifiers:
+- winget: SBC.MicroBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SBC/MicroBrowser
+aliases: []

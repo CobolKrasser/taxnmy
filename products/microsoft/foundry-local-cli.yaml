@@ -1,0 +1,11 @@
+key: microsoft/foundry-local-cli
+publisher: microsoft
+name: Foundry Local CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FoundryLocal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FoundryLocal
+identifiers:
+- winget: Microsoft.FoundryLocal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FoundryLocal
+aliases: []

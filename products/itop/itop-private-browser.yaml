@@ -1,0 +1,11 @@
+key: itop/itop-private-browser
+publisher: itop
+name: iTop Private Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopPrivateBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopPrivateBrowser
+identifiers:
+- winget: iTop.iTopPrivateBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopPrivateBrowser
+aliases: []

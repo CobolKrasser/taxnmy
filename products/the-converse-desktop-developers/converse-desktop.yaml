@@ -1,0 +1,11 @@
+key: the-converse-desktop-developers/converse-desktop
+publisher: the-converse-desktop-developers
+name: Converse Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/converse/converse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/converse/converse
+identifiers:
+- winget: converse.converse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/converse/converse
+aliases: []

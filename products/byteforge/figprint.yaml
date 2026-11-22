@@ -1,0 +1,11 @@
+key: byteforge/figprint
+publisher: byteforge
+name: FIGPrint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteForge/FIGPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteForge/FIGPrint
+identifiers:
+- winget: ByteForge.FIGPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteForge/FIGPrint
+aliases: []

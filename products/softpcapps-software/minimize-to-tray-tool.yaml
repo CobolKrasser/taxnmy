@@ -1,0 +1,11 @@
+key: softpcapps-software/minimize-to-tray-tool
+publisher: softpcapps-software
+name: Minimize to Tray Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softpcapps/MinimizetoTrayTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softpcapps/MinimizetoTrayTool
+identifiers:
+- winget: Softpcapps.MinimizetoTrayTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softpcapps/MinimizetoTrayTool
+aliases: []

@@ -1,0 +1,11 @@
+key: httpie/httpie
+publisher: httpie
+name: HTTPie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTTPie/HTTPie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTTPie/HTTPie
+identifiers:
+- winget: HTTPie.HTTPie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTTPie/HTTPie
+aliases: []

@@ -1,0 +1,11 @@
+key: chylex/discord-history-tracker
+publisher: chylex
+name: Discord History Tracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chylex/DiscordHistoryTracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chylex/DiscordHistoryTracker
+identifiers:
+- winget: chylex.DiscordHistoryTracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chylex/DiscordHistoryTracker
+aliases: []

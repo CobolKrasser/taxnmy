@@ -1,0 +1,11 @@
+key: cn-deepcool-com/deepcool
+publisher: cn-deepcool-com
+name: DeepCool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepCool/DeepCool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepCool/DeepCool
+identifiers:
+- winget: DeepCool.DeepCool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepCool/DeepCool
+aliases: []

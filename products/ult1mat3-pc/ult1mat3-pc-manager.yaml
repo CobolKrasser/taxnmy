@@ -1,0 +1,11 @@
+key: ult1mat3-pc/ult1mat3-pc-manager
+publisher: ult1mat3-pc
+name: ULT1MAT3 PC Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ULT1MAT3/PCManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ULT1MAT3/PCManager
+identifiers:
+- winget: ULT1MAT3.PCManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ULT1MAT3/PCManager
+aliases: []

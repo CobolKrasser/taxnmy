@@ -1,0 +1,11 @@
+key: timocop/basicpawn
+publisher: timocop
+name: BasicPawn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timocop/BasicPawn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timocop/BasicPawn
+identifiers:
+- winget: Timocop.BasicPawn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timocop/BasicPawn
+aliases: []

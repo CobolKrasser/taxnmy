@@ -1,0 +1,13 @@
+key: sumo-logic/sumo-logic-opentelemetry-collector
+publisher: sumo-logic
+name: Sumo Logic OpenTelemetry Collector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumologic/OtelcolSumo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumologic/OtelcolSumo
+identifiers:
+- winget: Sumologic.OtelcolSumo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumologic/OtelcolSumo
+- winget: Sumologic.OtelcolSumo.Fips
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumologic/OtelcolSumo/Fips
+aliases: []

@@ -1,0 +1,11 @@
+key: brice-lambson/image-resizer-for-windows
+publisher: brice-lambson
+name: Image Resizer for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BriceLambson/ImageResizerforWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BriceLambson/ImageResizerforWindows
+identifiers:
+- winget: BriceLambson.ImageResizerforWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BriceLambson/ImageResizerforWindows
+aliases: []

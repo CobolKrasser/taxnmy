@@ -1,0 +1,11 @@
+key: db-browser-for-sqlite-team/db-browser-for-sqlite
+publisher: db-browser-for-sqlite-team
+name: DB Browser for SQLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBBrowserForSQLite/DBBrowserForSQLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBBrowserForSQLite/DBBrowserForSQLite
+identifiers:
+- winget: DBBrowserForSQLite.DBBrowserForSQLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBBrowserForSQLite/DBBrowserForSQLite
+aliases: []

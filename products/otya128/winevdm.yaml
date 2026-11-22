@@ -1,0 +1,11 @@
+key: otya128/winevdm
+publisher: otya128
+name: winevdm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/otya128/winevdm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/otya128/winevdm
+identifiers:
+- winget: otya128.winevdm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/otya128/winevdm
+aliases: []

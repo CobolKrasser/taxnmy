@@ -1,0 +1,11 @@
+key: nero/nero-start
+publisher: nero
+name: Nero Start
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nero/NeroCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nero/NeroCore
+identifiers:
+- winget: Nero.NeroCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nero/NeroCore
+aliases: []

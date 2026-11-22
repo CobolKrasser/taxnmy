@@ -1,0 +1,11 @@
+key: kakao/kakaotalk
+publisher: kakao
+name: KakaoTalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kakao/KakaoTalk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kakao/KakaoTalk
+identifiers:
+- winget: Kakao.KakaoTalk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kakao/KakaoTalk
+aliases: []

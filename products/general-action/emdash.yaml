@@ -1,0 +1,11 @@
+key: general-action/emdash
+publisher: general-action
+name: Emdash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralAction/Emdash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralAction/Emdash
+identifiers:
+- winget: GeneralAction.Emdash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralAction/Emdash
+aliases: []

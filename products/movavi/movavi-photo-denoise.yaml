@@ -1,0 +1,11 @@
+key: movavi/movavi-photo-denoise
+publisher: movavi
+name: Movavi Photo DeNoise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoDeNoise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoDeNoise
+identifiers:
+- winget: Movavi.MovaviPhotoDeNoise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoDeNoise
+aliases: []

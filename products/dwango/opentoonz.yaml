@@ -1,0 +1,13 @@
+key: dwango/opentoonz
+publisher: dwango
+name: OpenToonz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DWANGO/OpenToonz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DWANGO/OpenToonz
+identifiers:
+- winget: DWANGO.OpenToonz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DWANGO/OpenToonz
+- winget: DWANGO.OpenToonz.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DWANGO/OpenToonz/Nightly
+aliases: []

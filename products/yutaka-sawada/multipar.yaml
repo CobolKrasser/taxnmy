@@ -1,0 +1,13 @@
+key: yutaka-sawada/multipar
+publisher: yutaka-sawada
+name: MultiPar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YutakaSawada/MultiPar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YutakaSawada/MultiPar
+identifiers:
+- winget: YutakaSawada.MultiPar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YutakaSawada/MultiPar
+- winget: YutakaSawada.MultiPar.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YutakaSawada/MultiPar/Beta
+aliases: []

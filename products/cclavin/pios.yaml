@@ -1,0 +1,11 @@
+key: cclavin/pios
+publisher: cclavin
+name: pios
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cclavin/pios
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cclavin/pios
+identifiers:
+- winget: cclavin.pios
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cclavin/pios
+aliases: []

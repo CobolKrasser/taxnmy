@@ -1,0 +1,11 @@
+key: itop/itop-vpn
+publisher: itop
+name: iTop VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopVPN
+identifiers:
+- winget: iTop.iTopVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopVPN
+aliases: []

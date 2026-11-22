@@ -1,0 +1,11 @@
+key: potato-team/potato-browser
+publisher: potato-team
+name: Potato Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Potato/Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Potato/Browser
+identifiers:
+- winget: Potato.Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Potato/Browser
+aliases: []

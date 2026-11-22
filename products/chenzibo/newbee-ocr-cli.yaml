@@ -1,0 +1,11 @@
+key: chenzibo/newbee-ocr-cli
+publisher: chenzibo
+name: newbee_ocr_cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChenZibo/NewbeeOCRCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChenZibo/NewbeeOCRCLI
+identifiers:
+- winget: ChenZibo.NewbeeOCRCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChenZibo/NewbeeOCRCLI
+aliases: []

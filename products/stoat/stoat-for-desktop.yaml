@@ -1,0 +1,11 @@
+key: stoat/stoat-for-desktop
+publisher: stoat
+name: Stoat for Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoat/Stoat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoat/Stoat
+identifiers:
+- winget: Stoat.Stoat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoat/Stoat
+aliases: []

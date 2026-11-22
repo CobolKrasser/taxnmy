@@ -1,0 +1,11 @@
+key: withsecure/withsecure-elements-agent
+publisher: withsecure
+name: WithSecure Elements Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithSecure/ElementsAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithSecure/ElementsAgent
+identifiers:
+- winget: WithSecure.ElementsAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithSecure/ElementsAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: feeperfect/feem
+publisher: feeperfect
+name: Feem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FeePerfect/Feem/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FeePerfect/Feem/Beta
+identifiers:
+- winget: FeePerfect.Feem.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FeePerfect/Feem/Beta
+aliases: []

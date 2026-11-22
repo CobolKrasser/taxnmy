@@ -1,0 +1,11 @@
+key: ags-project-team/adventure-game-studio
+publisher: ags-project-team
+name: Adventure Game Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGSProjectTeam/AdventureGameStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGSProjectTeam/AdventureGameStudio
+identifiers:
+- winget: AGSProjectTeam.AdventureGameStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGSProjectTeam/AdventureGameStudio
+aliases: []

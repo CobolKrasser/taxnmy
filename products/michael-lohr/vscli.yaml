@@ -1,0 +1,11 @@
+key: michael-lohr/vscli
+publisher: michael-lohr
+name: vscli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/michidk/vscli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/michidk/vscli
+identifiers:
+- winget: michidk.vscli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/michidk/vscli
+aliases: []

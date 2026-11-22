@@ -1,0 +1,11 @@
+key: axes4/pdf-accessibility-checker
+publisher: axes4
+name: PDF Accessibility Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axes4/PAC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axes4/PAC
+identifiers:
+- winget: axes4.PAC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axes4/PAC
+aliases: []

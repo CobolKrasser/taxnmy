@@ -1,0 +1,11 @@
+key: razer/razer-synapse-3
+publisher: razer
+name: Razer Synapse 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazerInc/RazerInstaller/Synapse3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazerInc/RazerInstaller/Synapse3
+identifiers:
+- winget: RazerInc.RazerInstaller.Synapse3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazerInc/RazerInstaller/Synapse3
+aliases: []

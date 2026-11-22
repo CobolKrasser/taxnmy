@@ -1,0 +1,11 @@
+key: llvm/clangd
+publisher: llvm
+name: clangd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LLVM/clangd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LLVM/clangd
+identifiers:
+- winget: LLVM.clangd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LLVM/clangd
+aliases: []

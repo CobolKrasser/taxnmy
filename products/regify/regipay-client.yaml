@@ -1,0 +1,11 @@
+key: regify/regipay-client
+publisher: regify
+name: regipay Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regipay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regipay
+identifiers:
+- winget: regify.regipay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regipay
+aliases: []

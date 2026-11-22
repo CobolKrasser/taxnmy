@@ -1,0 +1,11 @@
+key: silhouette-america/silhouette-studio
+publisher: silhouette-america
+name: Silhouette Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silhouette/SilhouetteStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silhouette/SilhouetteStudio
+identifiers:
+- winget: Silhouette.SilhouetteStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silhouette/SilhouetteStudio
+aliases: []

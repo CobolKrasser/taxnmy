@@ -1,0 +1,11 @@
+key: 7pace/7pace-timetracker
+publisher: 7pace
+name: 7pace Timetracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7pace/Timetracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7pace/Timetracker
+identifiers:
+- winget: 7pace.Timetracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7pace/Timetracker
+aliases: []

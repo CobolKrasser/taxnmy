@@ -1,0 +1,11 @@
+key: gaetan-sencie/simple-image-converter
+publisher: gaetan-sencie
+name: Simple Image Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaetanSencie/SimpleImageConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaetanSencie/SimpleImageConverter
+identifiers:
+- winget: GaetanSencie.SimpleImageConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaetanSencie/SimpleImageConverter
+aliases: []

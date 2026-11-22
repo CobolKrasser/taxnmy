@@ -1,0 +1,11 @@
+key: brecht-sanders/winlibs-mcf-threads-ucrt-runtime
+publisher: brecht-sanders
+name: WinLibs (MCF threads, UCRT runtime)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/MCF/UCRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/MCF/UCRT
+identifiers:
+- winget: BrechtSanders.WinLibs.MCF.UCRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/MCF/UCRT
+aliases: []

@@ -1,0 +1,11 @@
+key: rizinorg/rizin
+publisher: rizinorg
+name: Rizin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rizin/Rizin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rizin/Rizin
+identifiers:
+- winget: Rizin.Rizin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rizin/Rizin
+aliases: []

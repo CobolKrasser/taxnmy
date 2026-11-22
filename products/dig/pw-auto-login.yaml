@@ -1,0 +1,11 @@
+key: dig/pw-auto-login
+publisher: dig
+name: PW Auto Login
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DIG/PWAutoLogin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DIG/PWAutoLogin
+identifiers:
+- winget: DIG.PWAutoLogin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DIG/PWAutoLogin
+aliases: []

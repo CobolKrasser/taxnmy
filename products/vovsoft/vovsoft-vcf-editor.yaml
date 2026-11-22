@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-vcf-editor
+publisher: vovsoft
+name: Vovsoft VCF Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFEditor
+identifiers:
+- winget: VovSoft.VCFEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFEditor
+aliases: []

@@ -1,0 +1,11 @@
+key: redm-services/sia-reader
+publisher: redm-services
+name: SIA Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SIA/SIAReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SIA/SIAReader
+identifiers:
+- winget: SIA.SIAReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SIA/SIAReader
+aliases: []

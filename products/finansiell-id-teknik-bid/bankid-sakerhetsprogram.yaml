@@ -1,0 +1,11 @@
+key: finansiell-id-teknik-bid/bankid-sakerhetsprogram
+publisher: finansiell-id-teknik-bid
+name: BankID säkerhetsprogram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FinancialID/BankID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FinancialID/BankID
+identifiers:
+- winget: FinancialID.BankID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FinancialID/BankID
+aliases: []

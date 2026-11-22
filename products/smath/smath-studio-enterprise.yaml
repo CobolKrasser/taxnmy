@@ -1,0 +1,11 @@
+key: smath/smath-studio-enterprise
+publisher: smath
+name: SMath Studio Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMath/SMathStudio/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMath/SMathStudio/Enterprise
+identifiers:
+- winget: SMath.SMathStudio.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMath/SMathStudio/Enterprise
+aliases: []

@@ -1,0 +1,11 @@
+key: runebook/tome
+publisher: runebook
+name: Tome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Runebook/Tome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Runebook/Tome
+identifiers:
+- winget: Runebook.Tome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Runebook/Tome
+aliases: []

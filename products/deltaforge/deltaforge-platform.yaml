@@ -1,0 +1,11 @@
+key: deltaforge/deltaforge-platform
+publisher: deltaforge
+name: DeltaForge Platform
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/Platform
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/Platform
+identifiers:
+- winget: DeltaForge.Platform
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/Platform
+aliases: []

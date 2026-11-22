@@ -1,0 +1,11 @@
+key: andrew-ayer/git-crypt
+publisher: andrew-ayer
+name: git-crypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGWA/git-crypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGWA/git-crypt
+identifiers:
+- winget: AGWA.git-crypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGWA/git-crypt
+aliases: []

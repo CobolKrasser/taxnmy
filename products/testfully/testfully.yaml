@@ -1,0 +1,11 @@
+key: testfully/testfully
+publisher: testfully
+name: Testfully
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Testfully/Testfully
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Testfully/Testfully
+identifiers:
+- winget: Testfully.Testfully
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Testfully/Testfully
+aliases: []

@@ -1,0 +1,11 @@
+key: sl/sl
+publisher: sl
+name: sl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScaryRawr/SL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScaryRawr/SL
+identifiers:
+- winget: ScaryRawr.SL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScaryRawr/SL
+aliases: []

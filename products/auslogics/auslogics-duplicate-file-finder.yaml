@@ -1,0 +1,11 @@
+key: auslogics/auslogics-duplicate-file-finder
+publisher: auslogics
+name: Auslogics Duplicate File Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/DuplicateFileFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/DuplicateFileFinder
+identifiers:
+- winget: Auslogics.DuplicateFileFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/DuplicateFileFinder
+aliases: []

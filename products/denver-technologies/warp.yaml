@@ -1,0 +1,11 @@
+key: denver-technologies/warp
+publisher: denver-technologies
+name: Warp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Warp/Warp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Warp/Warp
+identifiers:
+- winget: Warp.Warp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Warp/Warp
+aliases: []

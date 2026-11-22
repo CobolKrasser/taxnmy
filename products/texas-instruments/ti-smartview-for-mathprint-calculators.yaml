@@ -1,0 +1,11 @@
+key: texas-instruments/ti-smartview-for-mathprint-calculators
+publisher: texas-instruments
+name: TI-SmartView for MathPrint Calculators
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-SmartView/MathPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-SmartView/MathPrint
+identifiers:
+- winget: TexasInstruments.TI-SmartView.MathPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-SmartView/MathPrint
+aliases: []

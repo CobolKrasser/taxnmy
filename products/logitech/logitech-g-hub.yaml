@@ -1,0 +1,11 @@
+key: logitech/logitech-g-hub
+publisher: logitech
+name: Logitech G HUB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/GHUB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/GHUB
+identifiers:
+- winget: Logitech.GHUB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/GHUB
+aliases: []

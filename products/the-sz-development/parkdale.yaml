@@ -1,0 +1,11 @@
+key: the-sz-development/parkdale
+publisher: the-sz-development
+name: Parkdale
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Parkdale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Parkdale
+identifiers:
+- winget: the-sz.Parkdale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Parkdale
+aliases: []

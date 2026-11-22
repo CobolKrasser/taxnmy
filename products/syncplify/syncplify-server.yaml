@@ -1,0 +1,11 @@
+key: syncplify/syncplify-server
+publisher: syncplify
+name: Syncplify Server!
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncplify/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncplify/Server
+identifiers:
+- winget: Syncplify.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncplify/Server
+aliases: []

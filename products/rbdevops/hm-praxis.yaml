@@ -1,0 +1,11 @@
+key: rbdevops/hm-praxis
+publisher: rbdevops
+name: HM Praxis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RbDevOps/HMPraxis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RbDevOps/HMPraxis
+identifiers:
+- winget: RbDevOps.HMPraxis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RbDevOps/HMPraxis
+aliases: []

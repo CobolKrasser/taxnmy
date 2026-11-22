@@ -1,0 +1,11 @@
+key: borvid/httpmaster
+publisher: borvid
+name: HttpMaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Borvid/HttpMasterProfessional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Borvid/HttpMasterProfessional
+identifiers:
+- winget: Borvid.HttpMasterProfessional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Borvid/HttpMasterProfessional
+aliases: []

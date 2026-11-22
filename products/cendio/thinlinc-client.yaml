@@ -1,0 +1,11 @@
+key: cendio/thinlinc-client
+publisher: cendio
+name: ThinLinc client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cendio/ThinLincClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cendio/ThinLincClient
+identifiers:
+- winget: Cendio.ThinLincClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cendio/ThinLincClient
+aliases: []

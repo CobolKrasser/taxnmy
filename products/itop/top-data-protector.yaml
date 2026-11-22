@@ -1,0 +1,11 @@
+key: itop/top-data-protector
+publisher: itop
+name: Top Data Protector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/TopDataProtector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/TopDataProtector
+identifiers:
+- winget: iTop.TopDataProtector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/TopDataProtector
+aliases: []

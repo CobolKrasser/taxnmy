@@ -1,0 +1,11 @@
+key: texas-instruments/ti-smartview-ce-for-the-ti-84-plus-family
+publisher: texas-instruments
+name: TI-SmartView CE for the TI-84 Plus Family
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-SmartView/TI-84Plus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-SmartView/TI-84Plus
+identifiers:
+- winget: TexasInstruments.TI-SmartView.TI-84Plus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-SmartView/TI-84Plus
+aliases: []

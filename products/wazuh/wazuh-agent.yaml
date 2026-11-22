@@ -1,0 +1,11 @@
+key: wazuh/wazuh-agent
+publisher: wazuh
+name: Wazuh Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wazuh/WazuhAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wazuh/WazuhAgent
+identifiers:
+- winget: Wazuh.WazuhAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wazuh/WazuhAgent
+aliases: []

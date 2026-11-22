@@ -1,0 +1,11 @@
+key: victron-energy/victronconnect
+publisher: victron-energy
+name: VictronConnect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VictronConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VictronConnect
+identifiers:
+- winget: VictronEnergy.VictronConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VictronConnect
+aliases: []

@@ -1,0 +1,11 @@
+key: binary-fortress-software/fileseek
+publisher: binary-fortress-software
+name: FileSeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/FileSeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/FileSeek
+identifiers:
+- winget: BinaryFortress.FileSeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/FileSeek
+aliases: []

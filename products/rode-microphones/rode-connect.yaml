@@ -1,0 +1,11 @@
+key: rode-microphones/rode-connect
+publisher: rode-microphones
+name: RØDE Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/Rode-Connect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/Rode-Connect
+identifiers:
+- winget: RODE.Rode-Connect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/Rode-Connect
+aliases: []

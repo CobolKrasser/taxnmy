@@ -1,0 +1,11 @@
+key: gnuplot-development-team/gnuplot
+publisher: gnuplot-development-team
+name: gnuplot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnuplot/gnuplot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnuplot/gnuplot
+identifiers:
+- winget: gnuplot.gnuplot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnuplot/gnuplot
+aliases: []

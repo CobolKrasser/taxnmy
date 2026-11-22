@@ -1,0 +1,11 @@
+key: defined-networking/dnclient-desktop
+publisher: defined-networking
+name: DNClient Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefinedNet/DNClient/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefinedNet/DNClient/Desktop
+identifiers:
+- winget: DefinedNet.DNClient.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefinedNet/DNClient/Desktop
+aliases: []

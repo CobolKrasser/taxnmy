@@ -1,0 +1,11 @@
+key: lionel-jouin/pip-tool
+publisher: lionel-jouin
+name: PiP-Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LionelJouin/PiP-Tool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LionelJouin/PiP-Tool
+identifiers:
+- winget: LionelJouin.PiP-Tool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LionelJouin/PiP-Tool
+aliases: []

@@ -1,0 +1,11 @@
+key: glarysoft/glary-utilities
+publisher: glarysoft
+name: Glary Utilities
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/GlaryUtilities
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/GlaryUtilities
+identifiers:
+- winget: Glarysoft.GlaryUtilities
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/GlaryUtilities
+aliases: []

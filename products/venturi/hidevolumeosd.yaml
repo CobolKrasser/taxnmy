@@ -1,0 +1,11 @@
+key: venturi/hidevolumeosd
+publisher: venturi
+name: HideVolumeOSD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Venturi/HideVolumeOSD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Venturi/HideVolumeOSD
+identifiers:
+- winget: Venturi.HideVolumeOSD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Venturi/HideVolumeOSD
+aliases: []

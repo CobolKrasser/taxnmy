@@ -1,0 +1,11 @@
+key: serverdata-net/ascend-teams-desktop-plugin
+publisher: serverdata-net
+name: Ascend Teams Desktop plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/AscendTeamsDesktopPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/AscendTeamsDesktopPlugin
+identifiers:
+- winget: Serverdata.AscendTeamsDesktopPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/AscendTeamsDesktopPlugin
+aliases: []

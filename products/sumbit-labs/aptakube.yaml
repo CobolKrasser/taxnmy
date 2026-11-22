@@ -1,0 +1,11 @@
+key: sumbit-labs/aptakube
+publisher: sumbit-labs
+name: Aptakube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SumbitLabs/Aptakube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SumbitLabs/Aptakube
+identifiers:
+- winget: SumbitLabs.Aptakube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SumbitLabs/Aptakube
+aliases: []

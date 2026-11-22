@@ -1,0 +1,11 @@
+key: tsudev/tsudev-cwico
+publisher: tsudev
+name: tsudev-cwico
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tsudev/cwico
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tsudev/cwico
+identifiers:
+- winget: tsudev.cwico
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tsudev/cwico
+aliases: []

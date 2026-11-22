@@ -1,0 +1,11 @@
+key: kkrainbow/easytier-gui
+publisher: kkrainbow
+name: easytier-gui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyTier/EasyTierGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyTier/EasyTierGUI
+identifiers:
+- winget: EasyTier.EasyTierGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyTier/EasyTierGUI
+aliases: []

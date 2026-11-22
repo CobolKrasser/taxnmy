@@ -1,0 +1,11 @@
+key: cologne-code/xyplorer-portable
+publisher: cologne-code
+name: XYplorer Portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CologneCodeCompany/XYplorerPortable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CologneCodeCompany/XYplorerPortable
+identifiers:
+- winget: CologneCodeCompany.XYplorerPortable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CologneCodeCompany/XYplorerPortable
+aliases: []

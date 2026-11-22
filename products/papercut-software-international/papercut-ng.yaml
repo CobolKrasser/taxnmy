@@ -1,0 +1,11 @@
+key: papercut-software-international/papercut-ng
+publisher: papercut-software-international
+name: PaperCut NG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/NG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/NG
+identifiers:
+- winget: PaperCutSoftware.NG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/NG
+aliases: []

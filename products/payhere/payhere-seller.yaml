@@ -1,0 +1,11 @@
+key: payhere/payhere-seller
+publisher: payhere
+name: Payhere Seller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/payhereinc/PayhereSeller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/payhereinc/PayhereSeller
+identifiers:
+- winget: payhereinc.PayhereSeller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/payhereinc/PayhereSeller
+aliases: []

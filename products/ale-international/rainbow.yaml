@@ -1,0 +1,11 @@
+key: ale-international/rainbow
+publisher: ale-international
+name: Rainbow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALE/Rainbow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALE/Rainbow
+identifiers:
+- winget: ALE.Rainbow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALE/Rainbow
+aliases: []

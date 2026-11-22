@@ -1,0 +1,11 @@
+key: absolute-software/absolute-secure-access-client
+publisher: absolute-software
+name: Absolute Secure Access Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Absolute/SecureAccessClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Absolute/SecureAccessClient
+identifiers:
+- winget: Absolute.SecureAccessClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Absolute/SecureAccessClient
+aliases: []

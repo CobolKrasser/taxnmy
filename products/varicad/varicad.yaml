@@ -1,0 +1,11 @@
+key: varicad/varicad
+publisher: varicad
+name: VariCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VariCAD/VariCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VariCAD/VariCAD
+identifiers:
+- winget: VariCAD.VariCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VariCAD/VariCAD
+aliases: []

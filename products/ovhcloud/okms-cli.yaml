@@ -1,0 +1,11 @@
+key: ovhcloud/okms-cli
+publisher: ovhcloud
+name: okms-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ovh/okms-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ovh/okms-cli
+identifiers:
+- winget: ovh.okms-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ovh/okms-cli
+aliases: []

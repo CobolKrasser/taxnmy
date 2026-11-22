@@ -1,0 +1,11 @@
+key: defguard/defguard
+publisher: defguard
+name: Defguard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefGuard/Defguard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefGuard/Defguard
+identifiers:
+- winget: DefGuard.Defguard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefGuard/Defguard
+aliases: []

@@ -1,0 +1,11 @@
+key: nefarius-software-solutions-e-u/vigem-bus-driver
+publisher: nefarius-software-solutions-e-u
+name: ViGEm Bus Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViGEm/ViGEmBus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViGEm/ViGEmBus
+identifiers:
+- winget: ViGEm.ViGEmBus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViGEm/ViGEmBus
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/symcrypt
+publisher: microsoft
+name: SymCrypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SymCryptUnitTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SymCryptUnitTest
+identifiers:
+- winget: Microsoft.SymCryptUnitTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SymCryptUnitTest
+aliases: []

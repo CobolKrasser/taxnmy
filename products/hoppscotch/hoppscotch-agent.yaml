@@ -1,0 +1,11 @@
+key: hoppscotch/hoppscotch-agent
+publisher: hoppscotch
+name: Hoppscotch Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hoppscotch/agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hoppscotch/agent
+identifiers:
+- winget: hoppscotch.agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hoppscotch/agent
+aliases: []

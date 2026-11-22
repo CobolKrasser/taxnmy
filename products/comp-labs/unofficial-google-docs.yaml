@@ -1,0 +1,11 @@
+key: comp-labs/unofficial-google-docs
+publisher: comp-labs
+name: Unofficial Google Docs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompLabs/GoogleDocs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompLabs/GoogleDocs
+identifiers:
+- winget: CompLabs.GoogleDocs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompLabs/GoogleDocs
+aliases: []

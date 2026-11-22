@@ -1,0 +1,11 @@
+key: andreas-buchen/portfolio-performance
+publisher: andreas-buchen
+name: Portfolio Performance
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buchen/portfolio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buchen/portfolio
+identifiers:
+- winget: buchen.portfolio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buchen/portfolio
+aliases: []

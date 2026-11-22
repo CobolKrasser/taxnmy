@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-desktop-diary
+publisher: vovsoft
+name: Vovsoft Desktop Diary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DesktopDiary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DesktopDiary
+identifiers:
+- winget: VovSoft.DesktopDiary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DesktopDiary
+aliases: []

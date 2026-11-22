@@ -1,0 +1,15 @@
+key: dagaza/qube
+publisher: dagaza
+name: Qube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dagaza/Qube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dagaza/Qube
+identifiers:
+- winget: dagaza.Qube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dagaza/Qube
+- winget: dagaza.Qube.CUDA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dagaza/Qube/CUDA
+- winget: dagaza.Qube.Vulkan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dagaza/Qube/Vulkan
+aliases: []

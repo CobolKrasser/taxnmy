@@ -1,0 +1,11 @@
+key: tda-45/tpulse
+publisher: tda-45
+name: TPulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tda45/TPulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tda45/TPulse
+identifiers:
+- winget: tda45.TPulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tda45/TPulse
+aliases: []

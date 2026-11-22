@@ -1,0 +1,11 @@
+key: learning-machines/wordcraft
+publisher: learning-machines
+name: WordCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/WordCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/WordCraft
+identifiers:
+- winget: ArtCraft.WordCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/WordCraft
+aliases: []

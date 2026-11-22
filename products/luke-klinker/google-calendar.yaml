@@ -1,0 +1,11 @@
+key: luke-klinker/google-calendar
+publisher: luke-klinker
+name: Google Calendar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/klinker24/google-calendar-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/klinker24/google-calendar-desktop
+identifiers:
+- winget: klinker24.google-calendar-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/klinker24/google-calendar-desktop
+aliases: []

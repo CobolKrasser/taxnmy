@@ -1,0 +1,13 @@
+key: canva/canva
+publisher: canva
+name: Canva
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Canva
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Canva
+identifiers:
+- winget: Canva.Canva
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Canva
+- winget: Canva.Canva.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Canva/CN
+aliases: []

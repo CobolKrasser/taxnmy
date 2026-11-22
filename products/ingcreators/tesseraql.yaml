@@ -1,0 +1,11 @@
+key: ingcreators/tesseraql
+publisher: ingcreators
+name: TesseraQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ingcreators/TesseraQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ingcreators/TesseraQL
+identifiers:
+- winget: ingcreators.TesseraQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ingcreators/TesseraQL
+aliases: []

@@ -1,0 +1,11 @@
+key: genivia/ugrep
+publisher: genivia
+name: ugrep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genivia/ugrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genivia/ugrep
+identifiers:
+- winget: Genivia.ugrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genivia/ugrep
+aliases: []

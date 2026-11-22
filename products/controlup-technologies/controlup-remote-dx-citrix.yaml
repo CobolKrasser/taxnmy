@@ -1,0 +1,11 @@
+key: controlup-technologies/controlup-remote-dx-citrix
+publisher: controlup-technologies
+name: ControlUp Remote DX - Citrix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Citrix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Citrix
+identifiers:
+- winget: ControlUp.RemoteDX.Citrix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Citrix
+aliases: []

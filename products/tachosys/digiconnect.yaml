@@ -1,0 +1,11 @@
+key: tachosys/digiconnect
+publisher: tachosys
+name: digiConnect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiConnect
+identifiers:
+- winget: Tachosys.digiConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiConnect
+aliases: []

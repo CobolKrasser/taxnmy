@@ -1,0 +1,11 @@
+key: andrew-hess-clawsoft/clawpdf
+publisher: andrew-hess-clawsoft
+name: clawPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clawSoft/clawPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clawSoft/clawPDF
+identifiers:
+- winget: clawSoft.clawPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clawSoft/clawPDF
+aliases: []

@@ -1,0 +1,11 @@
+key: coq/coq-beta
+publisher: coq
+name: Coq Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform/Beta
+identifiers:
+- winget: Coq.CoqPlatform.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform/Beta
+aliases: []

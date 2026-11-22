@@ -1,0 +1,11 @@
+key: norsehorse/pgpony
+publisher: norsehorse
+name: PGPony
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NorseHorse/PGPony
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NorseHorse/PGPony
+identifiers:
+- winget: NorseHorse.PGPony
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NorseHorse/PGPony
+aliases: []

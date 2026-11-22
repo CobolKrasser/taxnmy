@@ -1,0 +1,11 @@
+key: lightform/lightform-creator
+publisher: lightform
+name: Lightform Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lightform/LightformCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lightform/LightformCreator
+identifiers:
+- winget: Lightform.LightformCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lightform/LightformCreator
+aliases: []

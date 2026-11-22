@@ -1,0 +1,11 @@
+key: dataelement/dsh-desktop
+publisher: dataelement
+name: DSH Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataElement/DSHDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataElement/DSHDesktop
+identifiers:
+- winget: DataElement.DSHDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataElement/DSHDesktop
+aliases: []

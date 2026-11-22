@@ -1,0 +1,11 @@
+key: hdos/hdos-launcher
+publisher: hdos
+name: HDOS Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HDOS/HDOSLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HDOS/HDOSLauncher
+identifiers:
+- winget: HDOS.HDOSLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HDOS/HDOSLauncher
+aliases: []

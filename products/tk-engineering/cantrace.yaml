@@ -1,0 +1,11 @@
+key: tk-engineering/cantrace
+publisher: tk-engineering
+name: CANtrace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TKEngineering/CANtrace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TKEngineering/CANtrace
+identifiers:
+- winget: TKEngineering.CANtrace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TKEngineering/CANtrace
+aliases: []

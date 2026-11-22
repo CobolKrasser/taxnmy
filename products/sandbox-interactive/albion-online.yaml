@@ -1,0 +1,11 @@
+key: sandbox-interactive/albion-online
+publisher: sandbox-interactive
+name: Albion Online
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Albion/Online
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Albion/Online
+identifiers:
+- winget: Albion.Online
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Albion/Online
+aliases: []

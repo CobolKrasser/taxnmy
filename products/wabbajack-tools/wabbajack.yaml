@@ -1,0 +1,11 @@
+key: wabbajack-tools/wabbajack
+publisher: wabbajack-tools
+name: Wabbajack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WabbajackTools/Wabbajack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WabbajackTools/Wabbajack
+identifiers:
+- winget: WabbajackTools.Wabbajack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WabbajackTools/Wabbajack
+aliases: []

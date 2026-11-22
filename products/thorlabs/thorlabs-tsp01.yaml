@@ -1,0 +1,11 @@
+key: thorlabs/thorlabs-tsp01
+publisher: thorlabs
+name: Thorlabs TSP01
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/TSP01
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/TSP01
+identifiers:
+- winget: Thorlabs.TSP01
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/TSP01
+aliases: []

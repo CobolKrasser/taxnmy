@@ -1,0 +1,11 @@
+key: uncrustify/uncrustify-code-beautifier
+publisher: uncrustify
+name: Uncrustify Code Beautifier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uncrustify/Uncrustify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uncrustify/Uncrustify
+identifiers:
+- winget: Uncrustify.Uncrustify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uncrustify/Uncrustify
+aliases: []

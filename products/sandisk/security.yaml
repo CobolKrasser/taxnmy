@@ -1,0 +1,11 @@
+key: sandisk/security
+publisher: sandisk
+name: Security
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/Security
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/Security
+identifiers:
+- winget: SanDisk.Security
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/Security
+aliases: []

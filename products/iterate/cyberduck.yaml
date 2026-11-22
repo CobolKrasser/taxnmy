@@ -1,0 +1,11 @@
+key: iterate/cyberduck
+publisher: iterate
+name: Cyberduck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/Cyberduck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/Cyberduck
+identifiers:
+- winget: Iterate.Cyberduck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/Cyberduck
+aliases: []

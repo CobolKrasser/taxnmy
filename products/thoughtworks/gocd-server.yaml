@@ -1,0 +1,11 @@
+key: thoughtworks/gocd-server
+publisher: thoughtworks
+name: GoCD Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoCD/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoCD/Server
+identifiers:
+- winget: GoCD.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoCD/Server
+aliases: []

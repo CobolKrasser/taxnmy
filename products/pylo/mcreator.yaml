@@ -1,0 +1,11 @@
+key: pylo/mcreator
+publisher: pylo
+name: MCreator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MCreator/MCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MCreator/MCreator
+identifiers:
+- winget: MCreator.MCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MCreator/MCreator
+aliases: []

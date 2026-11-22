@@ -1,0 +1,11 @@
+key: mzdyl/liteloaderqqnt-installer
+publisher: mzdyl
+name: LiteLoaderQQNT Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mzdyl/LiteLoaderQQNT_Install/PyInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mzdyl/LiteLoaderQQNT_Install/PyInstaller
+identifiers:
+- winget: Mzdyl.LiteLoaderQQNT_Install.PyInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mzdyl/LiteLoaderQQNT_Install/PyInstaller
+aliases: []

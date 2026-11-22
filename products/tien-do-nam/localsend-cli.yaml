@@ -1,0 +1,11 @@
+key: tien-do-nam/localsend-cli
+publisher: tien-do-nam
+name: LocalSend CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend/CLI
+identifiers:
+- winget: LocalSend.LocalSend.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend/CLI
+aliases: []

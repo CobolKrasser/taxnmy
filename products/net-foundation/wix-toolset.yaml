@@ -1,0 +1,11 @@
+key: net-foundation/wix-toolset
+publisher: net-foundation
+name: WiX Toolset
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXToolset
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXToolset
+identifiers:
+- winget: WiXToolset.WiXToolset
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXToolset
+aliases: []

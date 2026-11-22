@@ -1,0 +1,11 @@
+key: unigine/unigine-superposition-benchmark
+publisher: unigine
+name: Unigine Superposition Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/SuperpositionBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/SuperpositionBenchmark
+identifiers:
+- winget: Unigine.SuperpositionBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/SuperpositionBenchmark
+aliases: []

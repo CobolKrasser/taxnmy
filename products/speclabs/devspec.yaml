@@ -1,0 +1,11 @@
+key: speclabs/devspec
+publisher: speclabs
+name: devspec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecLabs/Devspec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecLabs/Devspec
+identifiers:
+- winget: SpecLabs.Devspec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecLabs/Devspec
+aliases: []

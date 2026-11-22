@@ -1,0 +1,11 @@
+key: caphyon/packit
+publisher: caphyon
+name: PacKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caphyon/PacKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caphyon/PacKit
+identifiers:
+- winget: Caphyon.PacKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caphyon/PacKit
+aliases: []

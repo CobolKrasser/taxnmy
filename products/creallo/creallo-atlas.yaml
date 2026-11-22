@@ -1,0 +1,11 @@
+key: creallo/creallo-atlas
+publisher: creallo
+name: Creallo Atlas
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creallo/Atlas
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creallo/Atlas
+identifiers:
+- winget: Creallo.Atlas
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creallo/Atlas
+aliases: []

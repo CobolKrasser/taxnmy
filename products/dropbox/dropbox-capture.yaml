@@ -1,0 +1,11 @@
+key: dropbox/dropbox-capture
+publisher: dropbox
+name: Dropbox Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/Capture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/Capture
+identifiers:
+- winget: Dropbox.Capture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/Capture
+aliases: []

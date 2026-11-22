@@ -1,0 +1,11 @@
+key: agentseal/codeburn-menubar
+publisher: agentseal
+name: CodeBurn Menubar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentSeal/CodeBurnMenubar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentSeal/CodeBurnMenubar
+identifiers:
+- winget: AgentSeal.CodeBurnMenubar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentSeal/CodeBurnMenubar
+aliases: []

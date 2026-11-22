@@ -1,0 +1,11 @@
+key: marcodamato/wincontig
+publisher: marcodamato
+name: WinContig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcoDAmato/WinContig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcoDAmato/WinContig
+identifiers:
+- winget: MarcoDAmato.WinContig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcoDAmato/WinContig
+aliases: []

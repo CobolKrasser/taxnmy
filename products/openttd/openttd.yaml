@@ -1,0 +1,11 @@
+key: openttd/openttd
+publisher: openttd
+name: OpenTTD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTTD/OpenTTD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTTD/OpenTTD
+identifiers:
+- winget: OpenTTD.OpenTTD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTTD/OpenTTD
+aliases: []

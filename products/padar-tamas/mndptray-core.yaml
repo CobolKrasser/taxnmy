@@ -1,0 +1,11 @@
+key: padar-tamas/mndptray-core
+publisher: padar-tamas
+name: MndpTray.Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MndpTray/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MndpTray/Core
+identifiers:
+- winget: MndpTray.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MndpTray/Core
+aliases: []

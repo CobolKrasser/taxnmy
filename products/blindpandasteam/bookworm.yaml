@@ -1,0 +1,11 @@
+key: blindpandasteam/bookworm
+publisher: blindpandasteam
+name: Bookworm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlindPandasTeam/Bookworm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlindPandasTeam/Bookworm
+identifiers:
+- winget: BlindPandasTeam.Bookworm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlindPandasTeam/Bookworm
+aliases: []

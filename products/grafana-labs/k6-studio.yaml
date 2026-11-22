@@ -1,0 +1,11 @@
+key: grafana-labs/k6-studio
+publisher: grafana-labs
+name: k6 Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/k6Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/k6Studio
+identifiers:
+- winget: GrafanaLabs.k6Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/k6Studio
+aliases: []

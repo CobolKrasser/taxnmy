@@ -1,0 +1,11 @@
+key: dymo/labelwriter-print-server-control-center
+publisher: dymo
+name: LabelWriter Print Server Control Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/PrintServerControlCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/PrintServerControlCenter
+identifiers:
+- winget: DYMO.PrintServerControlCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/PrintServerControlCenter
+aliases: []

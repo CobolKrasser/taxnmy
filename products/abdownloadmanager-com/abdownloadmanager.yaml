@@ -1,0 +1,11 @@
+key: abdownloadmanager-com/abdownloadmanager
+publisher: abdownloadmanager-com
+name: ABDownloadManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amir1376/ABDownloadManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amir1376/ABDownloadManager
+identifiers:
+- winget: amir1376.ABDownloadManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amir1376/ABDownloadManager
+aliases: []

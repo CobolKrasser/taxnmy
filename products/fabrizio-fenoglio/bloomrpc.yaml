@@ -1,0 +1,11 @@
+key: fabrizio-fenoglio/bloomrpc
+publisher: fabrizio-fenoglio
+name: BloomRPC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uw-labs/BloomRPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uw-labs/BloomRPC
+identifiers:
+- winget: uw-labs.BloomRPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uw-labs/BloomRPC
+aliases: []

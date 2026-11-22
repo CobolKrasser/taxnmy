@@ -1,0 +1,11 @@
+key: cpuid/cpuid-coolermaster-cpu-z
+publisher: cpuid
+name: CPUID CoolerMaster CPU-Z
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/CM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/CM
+identifiers:
+- winget: CPUID.CPU-Z.CM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/CM
+aliases: []

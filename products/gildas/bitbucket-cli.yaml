@@ -1,0 +1,11 @@
+key: gildas/bitbucket-cli
+publisher: gildas
+name: Bitbucket-CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gildas/Bitbucket-CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gildas/Bitbucket-CLI
+identifiers:
+- winget: Gildas.Bitbucket-CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gildas/Bitbucket-CLI
+aliases: []

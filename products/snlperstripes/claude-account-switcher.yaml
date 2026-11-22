@@ -1,0 +1,11 @@
+key: snlperstripes/claude-account-switcher
+publisher: snlperstripes
+name: Claude Account Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnlperStripes/ClaudeAccountSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnlperStripes/ClaudeAccountSwitcher
+identifiers:
+- winget: SnlperStripes.ClaudeAccountSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnlperStripes/ClaudeAccountSwitcher
+aliases: []

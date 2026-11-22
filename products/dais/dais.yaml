@@ -1,0 +1,11 @@
+key: dais/dais
+publisher: dais
+name: Dais
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dais/Dais
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dais/Dais
+identifiers:
+- winget: Dais.Dais
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dais/Dais
+aliases: []

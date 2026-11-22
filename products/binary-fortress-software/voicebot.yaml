@@ -1,0 +1,11 @@
+key: binary-fortress-software/voicebot
+publisher: binary-fortress-software
+name: VoiceBot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/VoiceBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/VoiceBot
+identifiers:
+- winget: BinaryFortress.VoiceBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/VoiceBot
+aliases: []

@@ -1,0 +1,11 @@
+key: thorlabs/tl-devicesdk
+publisher: thorlabs
+name: TL_DeviceSDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorlabsDeviceSDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorlabsDeviceSDK
+identifiers:
+- winget: Thorlabs.ThorlabsDeviceSDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorlabsDeviceSDK
+aliases: []

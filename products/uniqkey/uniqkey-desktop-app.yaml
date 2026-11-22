@@ -1,0 +1,11 @@
+key: uniqkey/uniqkey-desktop-app
+publisher: uniqkey
+name: Uniqkey Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uniqkey/UniqkeyDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uniqkey/UniqkeyDesktop
+identifiers:
+- winget: Uniqkey.UniqkeyDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uniqkey/UniqkeyDesktop
+aliases: []

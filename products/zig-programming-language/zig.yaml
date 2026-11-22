@@ -1,0 +1,11 @@
+key: zig-programming-language/zig
+publisher: zig-programming-language
+name: Zig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zig/zig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zig/zig
+identifiers:
+- winget: zig.zig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zig/zig
+aliases: []

@@ -1,0 +1,11 @@
+key: luxira/warpsend
+publisher: luxira
+name: WarpSend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WarpSend/WarpSend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WarpSend/WarpSend
+identifiers:
+- winget: WarpSend.WarpSend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WarpSend/WarpSend
+aliases: []

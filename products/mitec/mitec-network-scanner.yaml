@@ -1,0 +1,11 @@
+key: mitec/mitec-network-scanner
+publisher: mitec
+name: MiTeC Network Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/NetworkScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/NetworkScanner
+identifiers:
+- winget: MiTeC.NetworkScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/NetworkScanner
+aliases: []

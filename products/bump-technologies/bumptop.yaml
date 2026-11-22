@@ -1,0 +1,11 @@
+key: bump-technologies/bumptop
+publisher: bump-technologies
+name: BumpTop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BumpTechnologies/BumpTop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BumpTechnologies/BumpTop
+identifiers:
+- winget: BumpTechnologies.BumpTop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BumpTechnologies/BumpTop
+aliases: []

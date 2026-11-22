@@ -1,0 +1,11 @@
+key: awesomedog/soma
+publisher: awesomedog
+name: Soma
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/soma
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/soma
+identifiers:
+- winget: AwesomeDog.soma
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/soma
+aliases: []

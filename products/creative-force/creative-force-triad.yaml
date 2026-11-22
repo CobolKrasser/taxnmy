@@ -1,0 +1,11 @@
+key: creative-force/creative-force-triad
+publisher: creative-force
+name: Creative Force Triad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CreativeForce/Triad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CreativeForce/Triad
+identifiers:
+- winget: CreativeForce.Triad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CreativeForce/Triad
+aliases: []

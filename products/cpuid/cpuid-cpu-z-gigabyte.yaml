@@ -1,0 +1,11 @@
+key: cpuid/cpuid-cpu-z-gigabyte
+publisher: cpuid
+name: CPUID CPU-Z Gigabyte
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/GBT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/GBT
+identifiers:
+- winget: CPUID.CPU-Z.GBT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/GBT
+aliases: []

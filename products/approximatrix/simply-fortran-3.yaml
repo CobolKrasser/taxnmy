@@ -1,0 +1,11 @@
+key: approximatrix/simply-fortran-3
+publisher: approximatrix
+name: Simply Fortran 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Approximatrix/SimplyFortran
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Approximatrix/SimplyFortran
+identifiers:
+- winget: Approximatrix.SimplyFortran
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Approximatrix/SimplyFortran
+aliases: []

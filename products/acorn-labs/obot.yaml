@@ -1,0 +1,11 @@
+key: acorn-labs/obot
+publisher: acorn-labs
+name: obot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/obot-platform/obot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/obot-platform/obot
+identifiers:
+- winget: obot-platform.obot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/obot-platform/obot
+aliases: []

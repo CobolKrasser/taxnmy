@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-voice-changer
+publisher: vovsoft
+name: Vovsoft Voice Changer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VoiceChanger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VoiceChanger
+identifiers:
+- winget: VovSoft.VoiceChanger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VoiceChanger
+aliases: []

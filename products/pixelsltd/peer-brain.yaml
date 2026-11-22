@@ -1,0 +1,11 @@
+key: pixelsltd/peer-brain
+publisher: pixelsltd
+name: Peer Brain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixelsLTD/PeerBrain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixelsLTD/PeerBrain
+identifiers:
+- winget: PixelsLTD.PeerBrain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixelsLTD/PeerBrain
+aliases: []

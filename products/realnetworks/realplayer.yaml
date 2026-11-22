@@ -1,0 +1,11 @@
+key: realnetworks/realplayer
+publisher: realnetworks
+name: RealPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealNetworks/RealPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealNetworks/RealPlayer
+identifiers:
+- winget: RealNetworks.RealPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealNetworks/RealPlayer
+aliases: []

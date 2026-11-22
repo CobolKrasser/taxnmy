@@ -1,0 +1,11 @@
+key: mozilla/icecat
+publisher: mozilla
+name: IceCat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icecat/Icecat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icecat/Icecat
+identifiers:
+- winget: Icecat.Icecat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icecat/Icecat
+aliases: []

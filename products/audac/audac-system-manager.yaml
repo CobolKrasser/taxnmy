@@ -1,0 +1,11 @@
+key: audac/audac-system-manager
+publisher: audac
+name: AUDAC System Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/AUDACSystemManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/AUDACSystemManager
+identifiers:
+- winget: PVS.AUDACSystemManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/AUDACSystemManager
+aliases: []

@@ -1,0 +1,11 @@
+key: automox/automox-agent
+publisher: automox
+name: Automox Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automox/AutomoxAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automox/AutomoxAgent
+identifiers:
+- winget: Automox.AutomoxAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automox/AutomoxAgent
+aliases: []

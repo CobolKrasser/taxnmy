@@ -1,0 +1,11 @@
+key: muimsd/tilefeed
+publisher: muimsd
+name: tilefeed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muimsd/tilefeed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muimsd/tilefeed
+identifiers:
+- winget: muimsd.tilefeed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muimsd/tilefeed
+aliases: []

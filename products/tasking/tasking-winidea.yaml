@@ -1,0 +1,11 @@
+key: tasking/tasking-winidea
+publisher: tasking
+name: TASKING winIDEA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TASKING/winIDEA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TASKING/winIDEA
+identifiers:
+- winget: TASKING.winIDEA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TASKING/winIDEA
+aliases: []

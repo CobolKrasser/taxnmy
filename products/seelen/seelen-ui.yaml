@@ -1,0 +1,11 @@
+key: seelen/seelen-ui
+publisher: seelen
+name: Seelen UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seelen/SeelenUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seelen/SeelenUI
+identifiers:
+- winget: Seelen.SeelenUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seelen/SeelenUI
+aliases: []

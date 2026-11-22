@@ -1,0 +1,11 @@
+key: xingkongliang/skills-manager
+publisher: xingkongliang
+name: Skills Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xingkongliang/SkillsManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xingkongliang/SkillsManager
+identifiers:
+- winget: xingkongliang.SkillsManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xingkongliang/SkillsManager
+aliases: []

@@ -1,0 +1,11 @@
+key: routebase/routebase
+publisher: routebase
+name: Routebase
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Routebase/Routebase
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Routebase/Routebase
+identifiers:
+- winget: Routebase.Routebase
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Routebase/Routebase
+aliases: []

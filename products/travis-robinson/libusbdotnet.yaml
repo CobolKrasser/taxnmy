@@ -1,0 +1,11 @@
+key: travis-robinson/libusbdotnet
+publisher: travis-robinson
+name: LibUsbDotNet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisRobinson/LibUsbDotNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisRobinson/LibUsbDotNet
+identifiers:
+- winget: TravisRobinson.LibUsbDotNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisRobinson/LibUsbDotNet
+aliases: []

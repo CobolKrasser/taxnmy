@@ -1,0 +1,11 @@
+key: nettracex/nettracex-tui
+publisher: nettracex
+name: NetTraceX TUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetTraceX/TUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetTraceX/TUI
+identifiers:
+- winget: NetTraceX.TUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetTraceX/TUI
+aliases: []

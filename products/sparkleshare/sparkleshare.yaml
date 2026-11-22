@@ -1,0 +1,11 @@
+key: sparkleshare/sparkleshare
+publisher: sparkleshare
+name: SparkleShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparkleShare/SparkleShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparkleShare/SparkleShare
+identifiers:
+- winget: SparkleShare.SparkleShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparkleShare/SparkleShare
+aliases: []

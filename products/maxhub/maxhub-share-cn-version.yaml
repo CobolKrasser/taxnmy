@@ -1,0 +1,11 @@
+key: maxhub/maxhub-share-cn-version
+publisher: maxhub
+name: MAXHUB Share (CN version)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAXHUB/MAXHUBShare/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAXHUB/MAXHUBShare/CN
+identifiers:
+- winget: MAXHUB.MAXHUBShare.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAXHUB/MAXHUBShare/CN
+aliases: []

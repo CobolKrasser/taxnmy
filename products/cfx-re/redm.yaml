@@ -1,0 +1,11 @@
+key: cfx-re/redm
+publisher: cfx-re
+name: RedM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cfx/re/RedM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cfx/re/RedM
+identifiers:
+- winget: Cfx.re.RedM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cfx/re/RedM
+aliases: []

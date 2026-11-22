@@ -1,0 +1,11 @@
+key: prog/prog-finder
+publisher: prog
+name: Prog Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgFinder
+identifiers:
+- winget: Prog.ProgFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgFinder
+aliases: []

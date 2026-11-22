@@ -1,0 +1,11 @@
+key: yourmoln/moligeek
+publisher: yourmoln
+name: moligeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yourmoln/moligeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yourmoln/moligeek
+identifiers:
+- winget: yourmoln.moligeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yourmoln/moligeek
+aliases: []

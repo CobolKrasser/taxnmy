@@ -1,0 +1,11 @@
+key: softros-systems/logonexpert
+publisher: softros-systems
+name: LogonExpert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/LogonExpert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/LogonExpert
+identifiers:
+- winget: Softros.LogonExpert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/LogonExpert
+aliases: []

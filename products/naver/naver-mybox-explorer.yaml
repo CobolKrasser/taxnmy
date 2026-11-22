@@ -1,0 +1,11 @@
+key: naver/naver-mybox-explorer
+publisher: naver
+name: NAVER MYBOX Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/MYBOX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/MYBOX
+identifiers:
+- winget: NAVER.MYBOX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/MYBOX
+aliases: []

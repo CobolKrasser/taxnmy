@@ -1,0 +1,11 @@
+key: fleet-device-management/fleetctl
+publisher: fleet-device-management
+name: fleetctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fleet/fleetctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fleet/fleetctl
+identifiers:
+- winget: Fleet.fleetctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fleet/fleetctl
+aliases: []

@@ -1,0 +1,11 @@
+key: tiny-craft/tiny-rdm
+publisher: tiny-craft
+name: Tiny RDM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyCraft/TinyRDM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyCraft/TinyRDM
+identifiers:
+- winget: TinyCraft.TinyRDM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyCraft/TinyRDM
+aliases: []

@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-glp-client
+publisher: adinstruments
+name: ADInstruments GLP Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/GLPClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/GLPClient
+identifiers:
+- winget: ADInstruments.GLPClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/GLPClient
+aliases: []

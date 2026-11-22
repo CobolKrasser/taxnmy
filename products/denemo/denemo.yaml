@@ -1,0 +1,11 @@
+key: denemo/denemo
+publisher: denemo
+name: Denemo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Denemo/Denemo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Denemo/Denemo
+identifiers:
+- winget: Denemo.Denemo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Denemo/Denemo
+aliases: []

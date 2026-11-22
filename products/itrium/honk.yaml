@@ -1,0 +1,11 @@
+key: itrium/honk
+publisher: itrium
+name: Honk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Itrium/Honk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Itrium/Honk
+identifiers:
+- winget: Itrium.Honk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Itrium/Honk
+aliases: []

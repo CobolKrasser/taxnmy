@@ -1,0 +1,11 @@
+key: the-sz-development/temple
+publisher: the-sz-development
+name: Temple
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Temple
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Temple
+identifiers:
+- winget: the-sz.Temple
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Temple
+aliases: []

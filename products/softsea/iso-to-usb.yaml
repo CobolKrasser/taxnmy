@@ -1,0 +1,11 @@
+key: softsea/iso-to-usb
+publisher: softsea
+name: ISO to USB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOtoUSB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOtoUSB
+identifiers:
+- winget: SoftSea.ISOtoUSB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOtoUSB
+aliases: []

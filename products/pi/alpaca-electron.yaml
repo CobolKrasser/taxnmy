@@ -1,0 +1,11 @@
+key: pi/alpaca-electron
+publisher: pi
+name: Alpaca Electron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ItsPi3141/AlpacaElectron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ItsPi3141/AlpacaElectron
+identifiers:
+- winget: ItsPi3141.AlpacaElectron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ItsPi3141/AlpacaElectron
+aliases: []

@@ -1,0 +1,11 @@
+key: donislawdev/testing-files-generator
+publisher: donislawdev
+name: Testing Files Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonislawDev/TestingFilesGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonislawDev/TestingFilesGenerator
+identifiers:
+- winget: DonislawDev.TestingFilesGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonislawDev/TestingFilesGenerator
+aliases: []

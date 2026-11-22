@@ -1,0 +1,11 @@
+key: the-sz-development/preyhelper
+publisher: the-sz-development
+name: PreyHelper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/PreyHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/PreyHelper
+identifiers:
+- winget: the-sz.PreyHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/PreyHelper
+aliases: []

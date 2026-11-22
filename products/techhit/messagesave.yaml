@@ -1,0 +1,11 @@
+key: techhit/messagesave
+publisher: techhit
+name: MessageSave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechHit/MessageSave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechHit/MessageSave
+identifiers:
+- winget: TechHit.MessageSave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechHit/MessageSave
+aliases: []

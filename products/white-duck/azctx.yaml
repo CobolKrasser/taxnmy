@@ -1,0 +1,11 @@
+key: white-duck/azctx
+publisher: white-duck
+name: azctx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/whiteducksoftware/azctx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/whiteducksoftware/azctx
+identifiers:
+- winget: whiteducksoftware.azctx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/whiteducksoftware/azctx
+aliases: []

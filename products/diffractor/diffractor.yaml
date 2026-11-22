@@ -1,0 +1,11 @@
+key: diffractor/diffractor
+publisher: diffractor
+name: Diffractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diffractor/Diffractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diffractor/Diffractor
+identifiers:
+- winget: Diffractor.Diffractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diffractor/Diffractor
+aliases: []

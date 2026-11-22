@@ -1,0 +1,11 @@
+key: dominique-ottello-alias-otomatic/wampserver
+publisher: dominique-ottello-alias-otomatic
+name: Wampserver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wampserver/Wampserver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wampserver/Wampserver
+identifiers:
+- winget: Wampserver.Wampserver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wampserver/Wampserver
+aliases: []

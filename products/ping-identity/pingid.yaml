@@ -1,0 +1,11 @@
+key: ping-identity/pingid
+publisher: ping-identity
+name: PingID
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PingIdentity/PingID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PingIdentity/PingID
+identifiers:
+- winget: PingIdentity.PingID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PingIdentity/PingID
+aliases: []

@@ -1,0 +1,11 @@
+key: cc-one/cc-one
+publisher: cc-one
+name: CC One
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buktal/CCOne
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buktal/CCOne
+identifiers:
+- winget: Buktal.CCOne
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buktal/CCOne
+aliases: []

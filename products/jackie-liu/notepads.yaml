@@ -1,0 +1,11 @@
+key: jackie-liu/notepads
+publisher: jackie-liu
+name: Notepads
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackieLiu/NotepadsApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackieLiu/NotepadsApp
+identifiers:
+- winget: JackieLiu.NotepadsApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackieLiu/NotepadsApp
+aliases: []

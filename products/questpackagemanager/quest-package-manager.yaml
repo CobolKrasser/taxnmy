@@ -1,0 +1,11 @@
+key: questpackagemanager/quest-package-manager
+publisher: questpackagemanager
+name: Quest Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuestPackageManager/QuestPackageManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuestPackageManager/QuestPackageManager
+identifiers:
+- winget: QuestPackageManager.QuestPackageManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuestPackageManager/QuestPackageManager
+aliases: []

@@ -1,0 +1,11 @@
+key: darktable-team/darktable
+publisher: darktable-team
+name: darktable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darktable/darktable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darktable/darktable
+identifiers:
+- winget: darktable.darktable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darktable/darktable
+aliases: []

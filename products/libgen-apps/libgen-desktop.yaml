@@ -1,0 +1,11 @@
+key: libgen-apps/libgen-desktop
+publisher: libgen-apps
+name: Libgen Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibgenApps/LibgenDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibgenApps/LibgenDesktop
+identifiers:
+- winget: LibgenApps.LibgenDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibgenApps/LibgenDesktop
+aliases: []

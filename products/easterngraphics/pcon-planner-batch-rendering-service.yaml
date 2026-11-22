@@ -1,0 +1,11 @@
+key: easterngraphics/pcon-planner-batch-rendering-service
+publisher: easterngraphics
+name: pCon.planner - Batch Rendering Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasternGraphics/pCon-planner/Plugin/BatchRenderingService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasternGraphics/pCon-planner/Plugin/BatchRenderingService
+identifiers:
+- winget: EasternGraphics.pCon-planner.Plugin.BatchRenderingService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasternGraphics/pCon-planner/Plugin/BatchRenderingService
+aliases: []

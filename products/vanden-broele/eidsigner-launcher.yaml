@@ -1,0 +1,11 @@
+key: vanden-broele/eidsigner-launcher
+publisher: vanden-broele
+name: eIDSigner.Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VandenBroele/eIDSignerLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VandenBroele/eIDSignerLauncher
+identifiers:
+- winget: VandenBroele.eIDSignerLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VandenBroele/eIDSignerLauncher
+aliases: []

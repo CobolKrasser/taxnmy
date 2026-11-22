@@ -1,0 +1,11 @@
+key: key-metric-software/foldersizes
+publisher: key-metric-software
+name: FolderSizes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyMetricSoftware/FolderSizes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyMetricSoftware/FolderSizes
+identifiers:
+- winget: KeyMetricSoftware.FolderSizes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyMetricSoftware/FolderSizes
+aliases: []

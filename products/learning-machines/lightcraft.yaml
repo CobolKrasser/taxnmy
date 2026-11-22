@@ -1,0 +1,11 @@
+key: learning-machines/lightcraft
+publisher: learning-machines
+name: LightCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/LightCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/LightCraft
+identifiers:
+- winget: ArtCraft.LightCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/LightCraft
+aliases: []

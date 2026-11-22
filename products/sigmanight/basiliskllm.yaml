@@ -1,0 +1,11 @@
+key: sigmanight/basiliskllm
+publisher: sigmanight
+name: basiliskLLM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaNight/basiliskLLM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaNight/basiliskLLM
+identifiers:
+- winget: SigmaNight.basiliskLLM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaNight/basiliskLLM
+aliases: []

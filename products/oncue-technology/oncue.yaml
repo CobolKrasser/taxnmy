@@ -1,0 +1,11 @@
+key: oncue-technology/oncue
+publisher: oncue-technology
+name: OnCue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnCue/OnCue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnCue/OnCue
+identifiers:
+- winget: OnCue.OnCue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnCue/OnCue
+aliases: []

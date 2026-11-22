@@ -1,0 +1,11 @@
+key: agisoft/metashape
+publisher: agisoft
+name: Metashape
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agisoft/Metashape/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agisoft/Metashape/Professional
+identifiers:
+- winget: Agisoft.Metashape.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agisoft/Metashape/Professional
+aliases: []

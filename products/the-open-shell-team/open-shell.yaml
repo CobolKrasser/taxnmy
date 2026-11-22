@@ -1,0 +1,11 @@
+key: the-open-shell-team/open-shell
+publisher: the-open-shell-team
+name: Open-Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Open-Shell/Open-Shell-Menu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Open-Shell/Open-Shell-Menu
+identifiers:
+- winget: Open-Shell.Open-Shell-Menu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Open-Shell/Open-Shell-Menu
+aliases: []

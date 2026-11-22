@@ -1,0 +1,11 @@
+key: mission-labs/circleloop
+publisher: mission-labs
+name: CircleLoop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MissionLabs/CircleLoop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MissionLabs/CircleLoop
+identifiers:
+- winget: MissionLabs.CircleLoop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MissionLabs/CircleLoop
+aliases: []

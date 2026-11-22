@@ -1,0 +1,11 @@
+key: seiraiyu/keon-cli
+publisher: seiraiyu
+name: Keon CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seiraiyu/Keon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seiraiyu/Keon
+identifiers:
+- winget: Seiraiyu.Keon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seiraiyu/Keon
+aliases: []

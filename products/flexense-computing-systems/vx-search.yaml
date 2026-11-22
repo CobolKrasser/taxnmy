@@ -1,0 +1,11 @@
+key: flexense-computing-systems/vx-search
+publisher: flexense-computing-systems
+name: VX Search
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/VXSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/VXSearch
+identifiers:
+- winget: Flexense.VXSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/VXSearch
+aliases: []

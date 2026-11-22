@@ -1,0 +1,11 @@
+key: vgn/vgn-vhub
+publisher: vgn
+name: VGN VHUB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VGN/VGNHUB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VGN/VGNHUB
+identifiers:
+- winget: VGN.VGNHUB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VGN/VGNHUB
+aliases: []

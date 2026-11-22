@@ -1,0 +1,11 @@
+key: libusb-win32/libusb-win32
+publisher: libusb-win32
+name: LibUSB-Win32
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcuee/libusb-win32
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcuee/libusb-win32
+identifiers:
+- winget: mcuee.libusb-win32
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcuee/libusb-win32
+aliases: []

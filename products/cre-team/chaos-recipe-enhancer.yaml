@@ -1,0 +1,11 @@
+key: cre-team/chaos-recipe-enhancer
+publisher: cre-team
+name: Chaos Recipe Enhancer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChaosRecipeEnhancer/ChaosRecipeEnhancer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChaosRecipeEnhancer/ChaosRecipeEnhancer
+identifiers:
+- winget: ChaosRecipeEnhancer.ChaosRecipeEnhancer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChaosRecipeEnhancer/ChaosRecipeEnhancer
+aliases: []

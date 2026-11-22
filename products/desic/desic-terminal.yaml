@@ -1,0 +1,11 @@
+key: desic/desic-terminal
+publisher: desic
+name: Desic Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiazhi88/Desic-Terminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiazhi88/Desic-Terminal
+identifiers:
+- winget: xiazhi88.Desic-Terminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiazhi88/Desic-Terminal
+aliases: []

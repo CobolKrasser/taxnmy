@@ -1,0 +1,11 @@
+key: theserver-lab/fly
+publisher: theserver-lab
+name: Fly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheServer-lab/Fly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheServer-lab/Fly
+identifiers:
+- winget: TheServer-lab.Fly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheServer-lab/Fly
+aliases: []

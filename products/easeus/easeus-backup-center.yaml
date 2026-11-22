@@ -1,0 +1,11 @@
+key: easeus/easeus-backup-center
+publisher: easeus
+name: EaseUS Backup Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/BackupCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/BackupCenter
+identifiers:
+- winget: EaseUS.BackupCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/BackupCenter
+aliases: []

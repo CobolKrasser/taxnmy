@@ -1,0 +1,11 @@
+key: papercut-software-int/ghost-trap
+publisher: papercut-software-int
+name: Ghost Trap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/GhostTrap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/GhostTrap
+identifiers:
+- winget: PaperCutSoftware.GhostTrap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/GhostTrap
+aliases: []

@@ -1,0 +1,11 @@
+key: azurejoga/aurora-windows-optimizer
+publisher: azurejoga
+name: Aurora Windows Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/azurejoga/aurorawindowsoptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/azurejoga/aurorawindowsoptimizer
+identifiers:
+- winget: azurejoga.aurorawindowsoptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/azurejoga/aurorawindowsoptimizer
+aliases: []

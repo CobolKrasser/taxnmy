@@ -1,0 +1,11 @@
+key: mythicsoft/filelocator-pro-lite
+publisher: mythicsoft
+name: FileLocator Pro/Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mythicsoft/FileLocator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mythicsoft/FileLocator
+identifiers:
+- winget: Mythicsoft.FileLocator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mythicsoft/FileLocator
+aliases: []

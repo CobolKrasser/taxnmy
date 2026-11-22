@@ -1,0 +1,11 @@
+key: cc-desktop-switch/cc-desktop-switch
+publisher: cc-desktop-switch
+name: CC Desktop Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lonr-6/CCDesktopSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lonr-6/CCDesktopSwitch
+identifiers:
+- winget: lonr-6.CCDesktopSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lonr-6/CCDesktopSwitch
+aliases: []

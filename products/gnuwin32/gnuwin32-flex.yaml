@@ -1,0 +1,11 @@
+key: gnuwin32/gnuwin32-flex
+publisher: gnuwin32
+name: 'GnuWin32: Flex'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Flex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Flex
+identifiers:
+- winget: GnuWin32.Flex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Flex
+aliases: []

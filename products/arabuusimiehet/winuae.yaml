@@ -1,0 +1,11 @@
+key: arabuusimiehet/winuae
+publisher: arabuusimiehet
+name: WinUAE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinUAE/WinUAE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinUAE/WinUAE
+identifiers:
+- winget: WinUAE.WinUAE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinUAE/WinUAE
+aliases: []

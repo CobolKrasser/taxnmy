@@ -1,0 +1,11 @@
+key: daniel-gehriger/msi2xml
+publisher: daniel-gehriger
+name: msi2xml
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanielGehriger/MSI2XML
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanielGehriger/MSI2XML
+identifiers:
+- winget: DanielGehriger.MSI2XML
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanielGehriger/MSI2XML
+aliases: []

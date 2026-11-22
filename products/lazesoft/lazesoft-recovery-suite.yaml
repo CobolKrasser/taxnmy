@@ -1,0 +1,11 @@
+key: lazesoft/lazesoft-recovery-suite
+publisher: lazesoft
+name: Lazesoft Recovery Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lazesoft/LazesoftRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lazesoft/LazesoftRecovery
+identifiers:
+- winget: Lazesoft.LazesoftRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lazesoft/LazesoftRecovery
+aliases: []

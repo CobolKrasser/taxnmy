@@ -1,0 +1,11 @@
+key: noderr/noderr-micronode
+publisher: noderr
+name: Noderr Micronode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Noderr/Micronode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Noderr/Micronode
+identifiers:
+- winget: Noderr.Micronode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Noderr/Micronode
+aliases: []

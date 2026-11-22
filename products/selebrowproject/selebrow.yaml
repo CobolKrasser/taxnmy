@@ -1,0 +1,11 @@
+key: selebrowproject/selebrow
+publisher: selebrowproject
+name: Selebrow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SelebrowProject/Selebrow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SelebrowProject/Selebrow
+identifiers:
+- winget: SelebrowProject.Selebrow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SelebrowProject/Selebrow
+aliases: []

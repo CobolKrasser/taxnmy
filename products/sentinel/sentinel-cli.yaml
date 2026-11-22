@@ -1,0 +1,11 @@
+key: sentinel/sentinel-cli
+publisher: sentinel
+name: Sentinel CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sentinel/SentinelCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sentinel/SentinelCLI
+identifiers:
+- winget: Sentinel.SentinelCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sentinel/SentinelCLI
+aliases: []

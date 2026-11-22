@@ -1,0 +1,11 @@
+key: ironman-software/powershell-universal-desktop
+publisher: ironman-software
+name: PowerShell Universal Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PowerShellUniversal/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PowerShellUniversal/Desktop
+identifiers:
+- winget: IronmanSoftware.PowerShellUniversal.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IronmanSoftware/PowerShellUniversal/Desktop
+aliases: []

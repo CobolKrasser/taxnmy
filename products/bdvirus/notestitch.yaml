@@ -1,0 +1,11 @@
+key: bdvirus/notestitch
+publisher: bdvirus
+name: NoteStitch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BDvirus/NoteStitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BDvirus/NoteStitch
+identifiers:
+- winget: BDvirus.NoteStitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BDvirus/NoteStitch
+aliases: []

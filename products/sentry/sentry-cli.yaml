@@ -1,0 +1,11 @@
+key: sentry/sentry-cli
+publisher: sentry
+name: sentry-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sentry/sentry-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sentry/sentry-cli
+identifiers:
+- winget: Sentry.sentry-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sentry/sentry-cli
+aliases: []

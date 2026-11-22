@@ -1,0 +1,11 @@
+key: dassault-systemes/scilab
+publisher: dassault-systemes
+name: scilab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scilab/Scilab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scilab/Scilab
+identifiers:
+- winget: Scilab.Scilab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scilab/Scilab
+aliases: []

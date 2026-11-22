@@ -1,0 +1,11 @@
+key: airspy/spy-server
+publisher: airspy
+name: Spy Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/SpyServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/SpyServer
+identifiers:
+- winget: Airspy.SpyServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/SpyServer
+aliases: []

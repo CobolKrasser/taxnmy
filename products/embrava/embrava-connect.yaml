@@ -1,0 +1,11 @@
+key: embrava/embrava-connect
+publisher: embrava
+name: Embrava Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EmbravaPtyLtd/EmbravaConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EmbravaPtyLtd/EmbravaConnect
+identifiers:
+- winget: EmbravaPtyLtd.EmbravaConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EmbravaPtyLtd/EmbravaConnect
+aliases: []

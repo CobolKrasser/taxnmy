@@ -1,0 +1,13 @@
+key: vovsoft/vovsoft-photos-to-video
+publisher: vovsoft
+name: Vovsoft Photos to Video
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PhotosToVideo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PhotosToVideo
+identifiers:
+- winget: VovSoft.PhotosToVideo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PhotosToVideo
+- winget: VovSoft.VideoToPhotos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VideoToPhotos
+aliases: []

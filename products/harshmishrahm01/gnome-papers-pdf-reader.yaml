@@ -1,0 +1,11 @@
+key: harshmishrahm01/gnome-papers-pdf-reader
+publisher: harshmishrahm01
+name: GNOME Papers PDF reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Papers/PDF/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Papers/PDF/Desktop
+identifiers:
+- winget: Papers.PDF.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Papers/PDF/Desktop
+aliases: []

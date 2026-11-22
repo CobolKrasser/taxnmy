@@ -1,0 +1,11 @@
+key: badlion/badlion-client
+publisher: badlion
+name: Badlion Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Badlion/BadlionClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Badlion/BadlionClient
+identifiers:
+- winget: Badlion.BadlionClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Badlion/BadlionClient
+aliases: []

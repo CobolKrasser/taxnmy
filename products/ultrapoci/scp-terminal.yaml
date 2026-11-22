@@ -1,0 +1,11 @@
+key: ultrapoci/scp-terminal
+publisher: ultrapoci
+name: scp_terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ultrapoci/scp_terminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ultrapoci/scp_terminal
+identifiers:
+- winget: ultrapoci.scp_terminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ultrapoci/scp_terminal
+aliases: []

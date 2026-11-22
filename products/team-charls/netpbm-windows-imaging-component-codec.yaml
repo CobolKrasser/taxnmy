@@ -1,0 +1,11 @@
+key: team-charls/netpbm-windows-imaging-component-codec
+publisher: team-charls
+name: Netpbm Windows Imaging Component Codec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamCharLS/NetpbmWicCodec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamCharLS/NetpbmWicCodec
+identifiers:
+- winget: TeamCharLS.NetpbmWicCodec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamCharLS/NetpbmWicCodec
+aliases: []

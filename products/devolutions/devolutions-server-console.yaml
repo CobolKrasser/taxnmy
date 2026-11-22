@@ -1,0 +1,11 @@
+key: devolutions/devolutions-server-console
+publisher: devolutions
+name: Devolutions Server Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/ServerConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/ServerConsole
+identifiers:
+- winget: Devolutions.ServerConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/ServerConsole
+aliases: []

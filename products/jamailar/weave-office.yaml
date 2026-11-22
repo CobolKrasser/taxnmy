@@ -1,0 +1,11 @@
+key: jamailar/weave-office
+publisher: jamailar
+name: Weave Office
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamailar/WeaveOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamailar/WeaveOffice
+identifiers:
+- winget: Jamailar.WeaveOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamailar/WeaveOffice
+aliases: []

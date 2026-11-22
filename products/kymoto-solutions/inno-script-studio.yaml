@@ -1,0 +1,11 @@
+key: kymoto-solutions/inno-script-studio
+publisher: kymoto-solutions
+name: Inno Script Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kymoto/InnoScriptStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kymoto/InnoScriptStudio
+identifiers:
+- winget: kymoto.InnoScriptStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kymoto/InnoScriptStudio
+aliases: []

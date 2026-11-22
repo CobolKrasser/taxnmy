@@ -1,0 +1,11 @@
+key: yerong/office-tool-plus
+publisher: yerong
+name: Office Tool Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yerong/OfficeToolPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yerong/OfficeToolPlus
+identifiers:
+- winget: Yerong.OfficeToolPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yerong/OfficeToolPlus
+aliases: []

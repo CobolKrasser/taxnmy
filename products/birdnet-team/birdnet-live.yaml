@@ -1,0 +1,11 @@
+key: birdnet-team/birdnet-live
+publisher: birdnet-team
+name: BirdNET Live
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirdNETTeam/BirdNETLive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirdNETTeam/BirdNETLive
+identifiers:
+- winget: BirdNETTeam.BirdNETLive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirdNETTeam/BirdNETLive
+aliases: []

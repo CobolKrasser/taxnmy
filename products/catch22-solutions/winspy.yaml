@@ -1,0 +1,11 @@
+key: catch22-solutions/winspy
+publisher: catch22-solutions
+name: WinSpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catch22/WinSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catch22/WinSpy
+identifiers:
+- winget: Catch22.WinSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catch22/WinSpy
+aliases: []

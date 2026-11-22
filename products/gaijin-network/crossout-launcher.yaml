@@ -1,0 +1,11 @@
+key: gaijin-network/crossout-launcher
+publisher: gaijin-network
+name: Crossout Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/Crossout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/Crossout
+identifiers:
+- winget: GaijinNetwork.Crossout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/Crossout
+aliases: []

@@ -1,0 +1,11 @@
+key: startpack/firework
+publisher: startpack
+name: Firework
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Startpack/Firework
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Startpack/Firework
+identifiers:
+- winget: Startpack.Firework
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Startpack/Firework
+aliases: []

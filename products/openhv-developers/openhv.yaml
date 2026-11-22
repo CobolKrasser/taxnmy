@@ -1,0 +1,11 @@
+key: openhv-developers/openhv
+publisher: openhv-developers
+name: OpenHV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenHV/OpenHV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenHV/OpenHV
+identifiers:
+- winget: OpenHV.OpenHV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenHV/OpenHV
+aliases: []

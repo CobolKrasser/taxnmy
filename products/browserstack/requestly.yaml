@@ -1,0 +1,11 @@
+key: browserstack/requestly
+publisher: browserstack
+name: Requestly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserStackInc/Requestly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserStackInc/Requestly
+identifiers:
+- winget: BrowserStackInc.Requestly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserStackInc/Requestly
+aliases: []

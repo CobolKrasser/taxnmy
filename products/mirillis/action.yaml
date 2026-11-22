@@ -1,0 +1,11 @@
+key: mirillis/action
+publisher: mirillis
+name: Action!
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirillis/Action
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirillis/Action
+identifiers:
+- winget: Mirillis.Action
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirillis/Action
+aliases: []

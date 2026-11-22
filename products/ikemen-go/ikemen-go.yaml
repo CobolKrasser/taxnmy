@@ -1,0 +1,11 @@
+key: ikemen-go/ikemen-go
+publisher: ikemen-go
+name: Ikemen GO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IkemenGO/IkemenGO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IkemenGO/IkemenGO
+identifiers:
+- winget: IkemenGO.IkemenGO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IkemenGO/IkemenGO
+aliases: []

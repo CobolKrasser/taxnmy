@@ -1,0 +1,11 @@
+key: foundry-376/mailspring
+publisher: foundry-376
+name: Mailspring
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foundry376/Mailspring
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foundry376/Mailspring
+identifiers:
+- winget: Foundry376.Mailspring
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foundry376/Mailspring
+aliases: []

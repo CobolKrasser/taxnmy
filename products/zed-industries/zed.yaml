@@ -1,0 +1,11 @@
+key: zed-industries/zed
+publisher: zed-industries
+name: Zed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Zed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Zed
+identifiers:
+- winget: ZedIndustries.Zed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Zed
+aliases: []

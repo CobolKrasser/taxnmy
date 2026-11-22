@@ -1,0 +1,11 @@
+key: freetube-team/freetube
+publisher: freetube-team
+name: FreeTube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeTube/FreeTube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeTube/FreeTube
+identifiers:
+- winget: FreeTube.FreeTube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeTube/FreeTube
+aliases: []

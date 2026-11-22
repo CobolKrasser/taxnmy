@@ -1,0 +1,11 @@
+key: cpys/codex-quota-overlay
+publisher: cpys
+name: Codex Quota Overlay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cpys/CodexQuotaOverlay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cpys/CodexQuotaOverlay
+identifiers:
+- winget: cpys.CodexQuotaOverlay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cpys/CodexQuotaOverlay
+aliases: []

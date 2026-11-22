@@ -1,0 +1,11 @@
+key: gnuwin32/patch
+publisher: gnuwin32
+name: Patch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Patch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Patch
+identifiers:
+- winget: GnuWin32.Patch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Patch
+aliases: []

@@ -1,0 +1,11 @@
+key: logtag-recorders/logtag-xpress
+publisher: logtag-recorders
+name: LogTag Xpress
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogTag/LogTagXpress
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogTag/LogTagXpress
+identifiers:
+- winget: LogTag.LogTagXpress
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogTag/LogTagXpress
+aliases: []

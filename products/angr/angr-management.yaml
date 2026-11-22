@@ -1,0 +1,11 @@
+key: angr/angr-management
+publisher: angr
+name: angr-management
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/angr/angr-management
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/angr/angr-management
+identifiers:
+- winget: angr.angr-management
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/angr/angr-management
+aliases: []

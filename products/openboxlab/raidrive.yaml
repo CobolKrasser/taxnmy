@@ -1,0 +1,13 @@
+key: openboxlab/raidrive
+publisher: openboxlab
+name: RaiDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBoxLab/RaiDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBoxLab/RaiDrive
+identifiers:
+- winget: OpenBoxLab.RaiDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBoxLab/RaiDrive
+- winget: OpenBoxLab.RaiDrive.Managed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBoxLab/RaiDrive/Managed
+aliases: []

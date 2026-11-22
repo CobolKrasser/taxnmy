@@ -1,0 +1,11 @@
+key: new-relic/new-relic-infrastructure-agent
+publisher: new-relic
+name: New Relic Infrastructure Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewRelic/InfrastructureAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewRelic/InfrastructureAgent
+identifiers:
+- winget: NewRelic.InfrastructureAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewRelic/InfrastructureAgent
+aliases: []

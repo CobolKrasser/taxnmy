@@ -1,0 +1,11 @@
+key: daniel-porrey/virtual-zpl-printer
+publisher: daniel-porrey
+name: Virtual-ZPL-Printer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Porrey/VirtualZPLPrinter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Porrey/VirtualZPLPrinter
+identifiers:
+- winget: Porrey.VirtualZPLPrinter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Porrey/VirtualZPLPrinter
+aliases: []

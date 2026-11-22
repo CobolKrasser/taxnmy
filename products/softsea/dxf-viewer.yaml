@@ -1,0 +1,11 @@
+key: softsea/dxf-viewer
+publisher: softsea
+name: DXF Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DXFViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DXFViewer
+identifiers:
+- winget: SoftSea.DXFViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DXFViewer
+aliases: []

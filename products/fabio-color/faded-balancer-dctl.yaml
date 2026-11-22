@@ -1,0 +1,11 @@
+key: fabio-color/faded-balancer-dctl
+publisher: fabio-color
+name: Faded Balancer DCTL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FabioColor/FadedBalancerDCTL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FabioColor/FadedBalancerDCTL
+identifiers:
+- winget: FabioColor.FadedBalancerDCTL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FabioColor/FadedBalancerDCTL
+aliases: []

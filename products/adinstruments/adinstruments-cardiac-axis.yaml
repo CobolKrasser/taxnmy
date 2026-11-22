@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-cardiac-axis
+publisher: adinstruments
+name: ADInstruments Cardiac Axis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/CardiacAxis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/CardiacAxis
+identifiers:
+- winget: ADInstruments.LabChart.Extension.CardiacAxis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/CardiacAxis
+aliases: []

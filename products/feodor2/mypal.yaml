@@ -1,0 +1,11 @@
+key: feodor2/mypal
+publisher: feodor2
+name: Mypal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feodor2/Mypal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feodor2/Mypal
+identifiers:
+- winget: Feodor2.Mypal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feodor2/Mypal
+aliases: []

@@ -1,0 +1,11 @@
+key: faceit/faceit-anti-cheat
+publisher: faceit
+name: FACEIT Anti-Cheat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FACEITLTD/FACEITAC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FACEITLTD/FACEITAC
+identifiers:
+- winget: FACEITLTD.FACEITAC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FACEITLTD/FACEITAC
+aliases: []

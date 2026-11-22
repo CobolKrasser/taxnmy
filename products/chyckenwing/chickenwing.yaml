@@ -1,0 +1,11 @@
+key: chyckenwing/chickenwing
+publisher: chyckenwing
+name: Chickenwing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chyckenwing/Chickenwing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chyckenwing/Chickenwing
+identifiers:
+- winget: Chyckenwing.Chickenwing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chyckenwing/Chickenwing
+aliases: []

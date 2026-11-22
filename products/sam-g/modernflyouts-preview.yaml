@@ -1,0 +1,11 @@
+key: sam-g/modernflyouts-preview
+publisher: sam-g
+name: ModernFlyouts (Preview)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModernFlyouts/ModernFlyouts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModernFlyouts/ModernFlyouts
+identifiers:
+- winget: ModernFlyouts.ModernFlyouts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModernFlyouts/ModernFlyouts
+aliases: []

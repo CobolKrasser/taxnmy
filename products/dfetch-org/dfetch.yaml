@@ -1,0 +1,11 @@
+key: dfetch-org/dfetch
+publisher: dfetch-org
+name: dfetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFetch-org/DFetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFetch-org/DFetch
+identifiers:
+- winget: DFetch-org.DFetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFetch-org/DFetch
+aliases: []

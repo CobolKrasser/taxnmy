@@ -1,0 +1,11 @@
+key: landis-technologies/attendant-pro
+publisher: landis-technologies
+name: Attendant Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Landis/AttendantPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Landis/AttendantPro
+identifiers:
+- winget: Landis.AttendantPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Landis/AttendantPro
+aliases: []

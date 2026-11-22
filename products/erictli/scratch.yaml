@@ -1,0 +1,11 @@
+key: erictli/scratch
+publisher: erictli
+name: Scratch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erictli/scratch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erictli/scratch
+identifiers:
+- winget: erictli.scratch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erictli/scratch
+aliases: []

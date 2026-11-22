@@ -1,0 +1,11 @@
+key: the-goxlr-on-linux-team/goxlr-utility
+publisher: the-goxlr-on-linux-team
+name: GoXLR Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoXLR-on-Linux/GoXLR-Utility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoXLR-on-Linux/GoXLR-Utility
+identifiers:
+- winget: GoXLR-on-Linux.GoXLR-Utility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoXLR-on-Linux/GoXLR-Utility
+aliases: []

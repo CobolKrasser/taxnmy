@@ -1,0 +1,11 @@
+key: carbide-3d/carbide-create
+publisher: carbide-3d
+name: Carbide Create
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carbide3D/CarbideCreate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carbide3D/CarbideCreate
+identifiers:
+- winget: Carbide3D.CarbideCreate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carbide3D/CarbideCreate
+aliases: []

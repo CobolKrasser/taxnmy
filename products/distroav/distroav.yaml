@@ -1,0 +1,11 @@
+key: distroav/distroav
+publisher: distroav
+name: DistroAV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DistroAV/DistroAV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DistroAV/DistroAV
+identifiers:
+- winget: DistroAV.DistroAV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DistroAV/DistroAV
+aliases: []

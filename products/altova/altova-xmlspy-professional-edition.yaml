@@ -1,0 +1,17 @@
+key: altova/altova-xmlspy-professional-edition
+publisher: altova
+name: Altova XMLSpy Professional Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/XMLSpy/2023/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/XMLSpy/2023/Professional
+identifiers:
+- winget: Altova.XMLSpy.2023.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/XMLSpy/2023/Professional
+- winget: Altova.XMLSpy.2024.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/XMLSpy/2024/Professional
+- winget: Altova.XMLSpy.2025.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/XMLSpy/2025/Professional
+- winget: Altova.XMLSpy.2026.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/XMLSpy/2026/Professional
+aliases: []

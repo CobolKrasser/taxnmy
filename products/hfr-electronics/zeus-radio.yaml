@@ -1,0 +1,11 @@
+key: hfr-electronics/zeus-radio
+publisher: hfr-electronics
+name: Zeus Radio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HFRElectronics/ZeusRadio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HFRElectronics/ZeusRadio
+identifiers:
+- winget: HFRElectronics.ZeusRadio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HFRElectronics/ZeusRadio
+aliases: []

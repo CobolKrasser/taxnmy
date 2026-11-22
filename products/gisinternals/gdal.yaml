@@ -1,0 +1,11 @@
+key: gisinternals/gdal
+publisher: gisinternals
+name: GDAL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL
+identifiers:
+- winget: GISInternals.GDAL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL
+aliases: []

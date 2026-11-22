@@ -1,0 +1,11 @@
+key: tree-sitter/tree-sitter-cli
+publisher: tree-sitter
+name: tree-sitter-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tree-sitter/tree-sitter-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tree-sitter/tree-sitter-cli
+identifiers:
+- winget: tree-sitter.tree-sitter-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tree-sitter/tree-sitter-cli
+aliases: []

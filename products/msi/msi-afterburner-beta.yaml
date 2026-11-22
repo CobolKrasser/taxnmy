@@ -1,0 +1,11 @@
+key: msi/msi-afterburner-beta
+publisher: msi
+name: MSI Afterburner Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/Afterburner/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/Afterburner/Beta
+identifiers:
+- winget: Guru3D.Afterburner.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/Afterburner/Beta
+aliases: []

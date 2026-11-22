@@ -1,0 +1,11 @@
+key: coati-software/sourcetrail-64-bit
+publisher: coati-software
+name: Sourcetrail 64-bit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoatiSoftware/Sourcetrail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoatiSoftware/Sourcetrail
+identifiers:
+- winget: CoatiSoftware.Sourcetrail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoatiSoftware/Sourcetrail
+aliases: []

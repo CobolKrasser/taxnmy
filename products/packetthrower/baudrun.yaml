@@ -1,0 +1,11 @@
+key: packetthrower/baudrun
+publisher: packetthrower
+name: Baudrun
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/Baudrun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/Baudrun
+identifiers:
+- winget: packetThrower.Baudrun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/Baudrun
+aliases: []

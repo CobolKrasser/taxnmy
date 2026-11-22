@@ -1,0 +1,13 @@
+key: kitware/paraview
+publisher: kitware
+name: ParaView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/ParaView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/ParaView
+identifiers:
+- winget: Kitware.ParaView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/ParaView
+- winget: Kitware.ParaView.MPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/ParaView/MPI
+aliases: []

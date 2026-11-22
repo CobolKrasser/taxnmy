@@ -1,0 +1,11 @@
+key: invantive-software/invantive-runtime
+publisher: invantive-software
+name: Invantive Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveRuntime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveRuntime
+identifiers:
+- winget: Invantive.InvantiveRuntime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveRuntime
+aliases: []

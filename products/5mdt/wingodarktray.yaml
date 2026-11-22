@@ -1,0 +1,11 @@
+key: 5mdt/wingodarktray
+publisher: 5mdt
+name: WinGoDarkTray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/5/5mdt/WinGoDarkTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/5/5mdt/WinGoDarkTray
+identifiers:
+- winget: 5mdt.WinGoDarkTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/5/5mdt/WinGoDarkTray
+aliases: []

@@ -1,0 +1,11 @@
+key: vscodium/vscodium-insiders
+publisher: vscodium
+name: VSCodium Insiders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSCodium/VSCodium/Insiders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSCodium/VSCodium/Insiders
+identifiers:
+- winget: VSCodium.VSCodium.Insiders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSCodium/VSCodium/Insiders
+aliases: []

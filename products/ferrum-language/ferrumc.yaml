@@ -1,0 +1,11 @@
+key: ferrum-language/ferrumc
+publisher: ferrum-language
+name: ferrumc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FerumLanguage/ferrumc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FerumLanguage/ferrumc
+identifiers:
+- winget: FerumLanguage.ferrumc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FerumLanguage/ferrumc
+aliases: []

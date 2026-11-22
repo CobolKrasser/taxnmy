@@ -1,0 +1,11 @@
+key: winaero/winaero-tweaker
+publisher: winaero
+name: Winaero Tweaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winaero/tweaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winaero/tweaker
+identifiers:
+- winget: winaero.tweaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winaero/tweaker
+aliases: []

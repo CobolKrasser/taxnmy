@@ -1,0 +1,11 @@
+key: vultr/vultr-cli
+publisher: vultr
+name: vultr-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vultr/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vultr/CLI
+identifiers:
+- winget: Vultr.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vultr/CLI
+aliases: []

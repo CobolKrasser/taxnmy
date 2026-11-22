@@ -1,0 +1,11 @@
+key: e-sun-commercial-bank/esunbank-webatm-service
+publisher: e-sun-commercial-bank
+name: ESUNBank WebATM Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESUNBank/WebATMService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESUNBank/WebATMService
+identifiers:
+- winget: ESUNBank.WebATMService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESUNBank/WebATMService
+aliases: []

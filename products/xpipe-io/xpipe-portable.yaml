@@ -1,0 +1,11 @@
+key: xpipe-io/xpipe-portable
+publisher: xpipe-io
+name: XPipe Portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpipe-io/xpipe/portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpipe-io/xpipe/portable
+identifiers:
+- winget: xpipe-io.xpipe.portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpipe-io/xpipe/portable
+aliases: []

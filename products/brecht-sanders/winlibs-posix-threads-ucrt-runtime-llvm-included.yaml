@@ -1,0 +1,11 @@
+key: brecht-sanders/winlibs-posix-threads-ucrt-runtime-llvm-included
+publisher: brecht-sanders
+name: WinLibs (POSIX threads, UCRT runtime, LLVM included)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/POSIX/UCRT/LLVM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/POSIX/UCRT/LLVM
+identifiers:
+- winget: BrechtSanders.WinLibs.POSIX.UCRT.LLVM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/POSIX/UCRT/LLVM
+aliases: []

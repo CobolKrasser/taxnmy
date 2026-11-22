@@ -1,0 +1,11 @@
+key: conda-forge/miniforge3
+publisher: conda-forge
+name: Miniforge3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Miniforge3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Miniforge3
+identifiers:
+- winget: CondaForge.Miniforge3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Miniforge3
+aliases: []

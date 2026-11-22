@@ -1,0 +1,11 @@
+key: cloudcdn/stratos
+publisher: cloudcdn
+name: Stratos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudCDN/Stratos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudCDN/Stratos
+identifiers:
+- winget: CloudCDN.Stratos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudCDN/Stratos
+aliases: []

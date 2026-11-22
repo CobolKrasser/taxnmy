@@ -1,0 +1,11 @@
+key: talkdesk/callbar
+publisher: talkdesk
+name: Callbar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Talkdesk/Callbar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Talkdesk/Callbar
+identifiers:
+- winget: Talkdesk.Callbar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Talkdesk/Callbar
+aliases: []

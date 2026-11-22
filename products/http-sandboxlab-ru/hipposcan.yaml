@@ -1,0 +1,11 @@
+key: http-sandboxlab-ru/hipposcan
+publisher: http-sandboxlab-ru
+name: HippoScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sandboxlab/HippoScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sandboxlab/HippoScan
+identifiers:
+- winget: sandboxlab.HippoScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sandboxlab/HippoScan
+aliases: []

@@ -1,0 +1,11 @@
+key: webcodr/jwtd
+publisher: webcodr
+name: jwtd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCodr/jwtd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCodr/jwtd
+identifiers:
+- winget: WebCodr.jwtd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCodr/jwtd
+aliases: []

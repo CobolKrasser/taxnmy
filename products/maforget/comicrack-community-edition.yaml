@@ -1,0 +1,11 @@
+key: maforget/comicrack-community-edition
+publisher: maforget
+name: ComicRack Community Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maforget/ComicRackCE/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maforget/ComicRackCE/Nightly
+identifiers:
+- winget: maforget.ComicRackCE.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maforget/ComicRackCE/Nightly
+aliases: []

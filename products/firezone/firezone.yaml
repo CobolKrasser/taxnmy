@@ -1,0 +1,11 @@
+key: firezone/firezone
+publisher: firezone
+name: Firezone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firezone/Client/GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firezone/Client/GUI
+identifiers:
+- winget: Firezone.Client.GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firezone/Client/GUI
+aliases: []

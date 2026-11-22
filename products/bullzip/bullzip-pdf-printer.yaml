@@ -1,0 +1,11 @@
+key: bullzip/bullzip-pdf-printer
+publisher: bullzip
+name: Bullzip PDF Printer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bullzip/PDFPrinter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bullzip/PDFPrinter
+identifiers:
+- winget: Bullzip.PDFPrinter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bullzip/PDFPrinter
+aliases: []

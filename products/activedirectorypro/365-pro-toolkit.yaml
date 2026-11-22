@@ -1,0 +1,11 @@
+key: activedirectorypro/365-pro-toolkit
+publisher: activedirectorypro
+name: 365 Pro Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDirectoryPro/365ProToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDirectoryPro/365ProToolkit
+identifiers:
+- winget: ActiveDirectoryPro.365ProToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDirectoryPro/365ProToolkit
+aliases: []

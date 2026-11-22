@@ -1,0 +1,11 @@
+key: fstl-contributors/fstl
+publisher: fstl-contributors
+name: fstl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstl/fstl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstl/fstl
+identifiers:
+- winget: fstl.fstl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstl/fstl
+aliases: []

@@ -1,0 +1,11 @@
+key: mayday/snow-app
+publisher: mayday
+name: Snow App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MayDay/SnowApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MayDay/SnowApp
+identifiers:
+- winget: MayDay.SnowApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MayDay/SnowApp
+aliases: []

@@ -1,0 +1,11 @@
+key: a9gent/mindfs
+publisher: a9gent
+name: MindFS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/a9gent/MindFS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/a9gent/MindFS
+identifiers:
+- winget: a9gent.MindFS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/a9gent/MindFS
+aliases: []

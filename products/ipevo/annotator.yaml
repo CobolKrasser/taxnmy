@@ -1,0 +1,11 @@
+key: ipevo/annotator
+publisher: ipevo
+name: Annotator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/Annotator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/Annotator
+identifiers:
+- winget: IPEVO.Annotator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/Annotator
+aliases: []

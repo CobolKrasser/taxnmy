@@ -1,0 +1,11 @@
+key: tragiccode/busly-cli
+publisher: tragiccode
+name: Busly CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TragicCode/BuslyCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TragicCode/BuslyCLI
+identifiers:
+- winget: TragicCode.BuslyCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TragicCode/BuslyCLI
+aliases: []

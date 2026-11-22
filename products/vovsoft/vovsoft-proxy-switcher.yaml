@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-proxy-switcher
+publisher: vovsoft
+name: Vovsoft Proxy Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxySwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxySwitcher
+identifiers:
+- winget: VovSoft.ProxySwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxySwitcher
+aliases: []

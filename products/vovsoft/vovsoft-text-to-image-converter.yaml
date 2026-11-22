@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-text-to-image-converter
+publisher: vovsoft
+name: Vovsoft Text to Image Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToImageConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToImageConverter
+identifiers:
+- winget: VovSoft.TextToImageConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToImageConverter
+aliases: []

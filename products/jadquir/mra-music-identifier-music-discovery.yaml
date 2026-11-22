@@ -1,0 +1,11 @@
+key: jadquir/mra-music-identifier-music-discovery
+publisher: jadquir
+name: MRA - Music Identifier - Music Discovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jadquir/MRA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jadquir/MRA
+identifiers:
+- winget: jadquir.MRA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jadquir/MRA
+aliases: []

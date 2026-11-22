@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-random-wordlist-generator
+publisher: vovsoft
+name: Vovsoft Random Wordlist Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RandomWordlistGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RandomWordlistGenerator
+identifiers:
+- winget: VovSoft.RandomWordlistGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RandomWordlistGenerator
+aliases: []

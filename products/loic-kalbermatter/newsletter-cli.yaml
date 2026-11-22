@@ -1,0 +1,11 @@
+key: loic-kalbermatter/newsletter-cli
+publisher: loic-kalbermatter
+name: newsletter-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loickal/NewsletterCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loickal/NewsletterCLI
+identifiers:
+- winget: Loickal.NewsletterCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loickal/NewsletterCLI
+aliases: []

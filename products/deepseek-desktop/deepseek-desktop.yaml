@@ -1,0 +1,11 @@
+key: deepseek-desktop/deepseek-desktop
+publisher: deepseek-desktop
+name: DeepSeek Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buktal/DeepSeekDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buktal/DeepSeekDesktop
+identifiers:
+- winget: Buktal.DeepSeekDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buktal/DeepSeekDesktop
+aliases: []

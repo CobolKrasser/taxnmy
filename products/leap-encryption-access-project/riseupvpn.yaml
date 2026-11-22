@@ -1,0 +1,11 @@
+key: leap-encryption-access-project/riseupvpn
+publisher: leap-encryption-access-project
+name: RiseupVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riseup/RiseupVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riseup/RiseupVPN
+identifiers:
+- winget: Riseup.RiseupVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riseup/RiseupVPN
+aliases: []

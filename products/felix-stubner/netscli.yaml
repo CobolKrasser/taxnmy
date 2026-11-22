@@ -1,0 +1,11 @@
+key: felix-stubner/netscli
+publisher: felix-stubner
+name: netscli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstubner/netscli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstubner/netscli
+identifiers:
+- winget: fstubner.netscli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstubner/netscli
+aliases: []

@@ -1,0 +1,11 @@
+key: movavi/movavi-suite
+publisher: movavi
+name: Movavi Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoSuite
+identifiers:
+- winget: Movavi.MovaviVideoSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoSuite
+aliases: []

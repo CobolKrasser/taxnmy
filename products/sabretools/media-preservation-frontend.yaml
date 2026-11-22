@@ -1,0 +1,11 @@
+key: sabretools/media-preservation-frontend
+publisher: sabretools
+name: Media Preservation Frontend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SabreTools/MPF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SabreTools/MPF
+identifiers:
+- winget: SabreTools.MPF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SabreTools/MPF
+aliases: []

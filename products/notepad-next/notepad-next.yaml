@@ -1,0 +1,11 @@
+key: notepad-next/notepad-next
+publisher: notepad-next
+name: Notepad Next
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dail8859/NotepadNext
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dail8859/NotepadNext
+identifiers:
+- winget: dail8859.NotepadNext
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dail8859/NotepadNext
+aliases: []

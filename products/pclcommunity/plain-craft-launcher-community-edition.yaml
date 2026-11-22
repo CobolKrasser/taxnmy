@@ -1,0 +1,11 @@
+key: pclcommunity/plain-craft-launcher-community-edition
+publisher: pclcommunity
+name: Plain Craft Launcher Community Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCLCommunity/PCL2-CE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCLCommunity/PCL2-CE
+identifiers:
+- winget: PCLCommunity.PCL2-CE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCLCommunity/PCL2-CE
+aliases: []

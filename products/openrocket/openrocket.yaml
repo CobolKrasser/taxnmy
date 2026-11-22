@@ -1,0 +1,11 @@
+key: openrocket/openrocket
+publisher: openrocket
+name: OpenRocket
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRocket/OpenRocket
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRocket/OpenRocket
+identifiers:
+- winget: OpenRocket.OpenRocket
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRocket/OpenRocket
+aliases: []

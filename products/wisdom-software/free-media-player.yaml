@@ -1,0 +1,11 @@
+key: wisdom-software/free-media-player
+publisher: wisdom-software
+name: Free Media Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/FreeMediaPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/FreeMediaPlayer
+identifiers:
+- winget: WisdomSoftware.FreeMediaPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/FreeMediaPlayer
+aliases: []

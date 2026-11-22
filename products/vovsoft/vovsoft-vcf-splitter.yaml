@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-vcf-splitter
+publisher: vovsoft
+name: Vovsoft VCF Splitter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFSplitter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFSplitter
+identifiers:
+- winget: VovSoft.VCFSplitter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFSplitter
+aliases: []

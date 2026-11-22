@@ -1,0 +1,11 @@
+key: myiam/myiam-cli
+publisher: myiam
+name: MyIAM CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myiam/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myiam/Cli
+identifiers:
+- winget: myiam.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myiam/Cli
+aliases: []

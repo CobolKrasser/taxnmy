@@ -1,0 +1,11 @@
+key: genea/opentranscribe
+publisher: genea
+name: OpenTranscribe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genea/OpenTranscribe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genea/OpenTranscribe
+identifiers:
+- winget: Genea.OpenTranscribe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genea/OpenTranscribe
+aliases: []

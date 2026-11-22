@@ -1,0 +1,11 @@
+key: peter-rudenko/helio
+publisher: peter-rudenko
+name: Helio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HelioFM/HelioSequencer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HelioFM/HelioSequencer
+identifiers:
+- winget: HelioFM.HelioSequencer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HelioFM/HelioSequencer
+aliases: []

@@ -1,0 +1,11 @@
+key: glarysoft/glarysoft-file-recovery
+publisher: glarysoft
+name: Glarysoft File Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/FileRecoveryFree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/FileRecoveryFree
+identifiers:
+- winget: Glarysoft.FileRecoveryFree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/FileRecoveryFree
+aliases: []

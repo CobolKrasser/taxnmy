@@ -1,0 +1,11 @@
+key: stacher/stacher
+publisher: stacher
+name: Stacher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stacher/Stacher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stacher/Stacher
+identifiers:
+- winget: Stacher.Stacher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stacher/Stacher
+aliases: []

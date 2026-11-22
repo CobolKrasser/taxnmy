@@ -1,0 +1,11 @@
+key: the-cppcheck-team/cppcheck
+publisher: the-cppcheck-team
+name: Cppcheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cppcheck/Cppcheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cppcheck/Cppcheck
+identifiers:
+- winget: Cppcheck.Cppcheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cppcheck/Cppcheck
+aliases: []

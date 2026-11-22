@@ -1,0 +1,11 @@
+key: the-xreveal-team/xreveal
+publisher: the-xreveal-team
+name: Xreveal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XrevealTeam/Xreveal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XrevealTeam/Xreveal
+identifiers:
+- winget: XrevealTeam.Xreveal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XrevealTeam/Xreveal
+aliases: []

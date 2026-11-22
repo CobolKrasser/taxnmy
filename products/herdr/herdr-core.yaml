@@ -1,0 +1,11 @@
+key: herdr/herdr-core
+publisher: herdr
+name: herdr-core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/HerdrCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/HerdrCore
+identifiers:
+- winget: Herdr.HerdrCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/HerdrCore
+aliases: []

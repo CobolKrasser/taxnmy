@@ -1,0 +1,11 @@
+key: zendev-sh/zenflow
+publisher: zendev-sh
+name: Zenflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zendev-sh/Zenflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zendev-sh/Zenflow
+identifiers:
+- winget: zendev-sh.Zenflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zendev-sh/Zenflow
+aliases: []

@@ -1,0 +1,11 @@
+key: rymcu/rycom
+publisher: rymcu
+name: RYCOM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rymcu/RYCOM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rymcu/RYCOM
+identifiers:
+- winget: rymcu.RYCOM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rymcu/RYCOM
+aliases: []

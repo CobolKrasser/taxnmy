@@ -1,0 +1,11 @@
+key: lancom-systems/lanmonitor-wlanmonitor
+publisher: lancom-systems
+name: LANmonitor/WLANmonitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANmonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANmonitor
+identifiers:
+- winget: LANCOM.LANmonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANmonitor
+aliases: []

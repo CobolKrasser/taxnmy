@@ -1,0 +1,11 @@
+key: huawei-device/pc-clone
+publisher: huawei-device
+name: PC Clone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/PCClone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/PCClone
+identifiers:
+- winget: Huawei.PCClone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/PCClone
+aliases: []

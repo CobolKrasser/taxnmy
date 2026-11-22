@@ -1,0 +1,11 @@
+key: emule-project-net/emule-community-version
+publisher: emule-project-net
+name: eMule (community version)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule/community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule/community
+identifiers:
+- winget: eMule.eMule.community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule/community
+aliases: []

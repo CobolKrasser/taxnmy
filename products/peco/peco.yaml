@@ -1,0 +1,11 @@
+key: peco/peco
+publisher: peco
+name: peco
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/peco/peco
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/peco/peco
+identifiers:
+- winget: peco.peco
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/peco/peco
+aliases: []

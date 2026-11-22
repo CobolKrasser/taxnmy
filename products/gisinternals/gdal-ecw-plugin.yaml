@@ -1,0 +1,11 @@
+key: gisinternals/gdal-ecw-plugin
+publisher: gisinternals
+name: GDAL ECW plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/ECW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/ECW
+identifiers:
+- winget: GISInternals.GDAL.ECW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/ECW
+aliases: []

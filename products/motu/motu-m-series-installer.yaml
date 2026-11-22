@@ -1,0 +1,11 @@
+key: motu/motu-m-series-installer
+publisher: motu
+name: MOTU M-Series Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MOTU/MSeries
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MOTU/MSeries
+identifiers:
+- winget: MOTU.MSeries
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MOTU/MSeries
+aliases: []

@@ -1,0 +1,11 @@
+key: mangodisk/mangodisk
+publisher: mangodisk
+name: MangoDisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MangoDisk/MangoDisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MangoDisk/MangoDisk
+identifiers:
+- winget: MangoDisk.MangoDisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MangoDisk/MangoDisk
+aliases: []

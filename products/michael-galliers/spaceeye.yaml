@@ -1,0 +1,11 @@
+key: michael-galliers/spaceeye
+publisher: michael-galliers
+name: SpaceEye
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KYDronePilot/SpaceEye
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KYDronePilot/SpaceEye
+identifiers:
+- winget: KYDronePilot.SpaceEye
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KYDronePilot/SpaceEye
+aliases: []

@@ -1,0 +1,11 @@
+key: arduino/arduino-ide-beta
+publisher: arduino
+name: Arduino IDE Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/beta
+identifiers:
+- winget: ArduinoSA.IDE.beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/IDE/beta
+aliases: []

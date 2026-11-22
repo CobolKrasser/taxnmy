@@ -1,0 +1,11 @@
+key: manas-technology-solutions/crystal
+publisher: manas-technology-solutions
+name: Crystal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal
+identifiers:
+- winget: CrystalLang.Crystal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal
+aliases: []

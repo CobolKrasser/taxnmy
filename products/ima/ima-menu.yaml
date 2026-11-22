@@ -1,0 +1,11 @@
+key: ima/ima-menu
+publisher: ima
+name: iMA Menu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ima/menu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ima/menu
+identifiers:
+- winget: ima.menu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ima/menu
+aliases: []

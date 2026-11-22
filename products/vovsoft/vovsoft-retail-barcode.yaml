@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-retail-barcode
+publisher: vovsoft
+name: Vovsoft Retail Barcode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RetailBarcode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RetailBarcode
+identifiers:
+- winget: VovSoft.RetailBarcode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RetailBarcode
+aliases: []

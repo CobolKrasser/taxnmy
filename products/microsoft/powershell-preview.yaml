@@ -1,0 +1,11 @@
+key: microsoft/powershell-preview
+publisher: microsoft
+name: PowerShell Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerShell/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerShell/Preview
+identifiers:
+- winget: Microsoft.PowerShell.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerShell/Preview
+aliases: []

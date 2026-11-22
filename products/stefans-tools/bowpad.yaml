@@ -1,0 +1,11 @@
+key: stefans-tools/bowpad
+publisher: stefans-tools
+name: BowPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/BowPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/BowPad
+identifiers:
+- winget: StefansTools.BowPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/BowPad
+aliases: []

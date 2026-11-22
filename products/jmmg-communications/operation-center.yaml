@@ -1,0 +1,11 @@
+key: jmmg-communications/operation-center
+publisher: jmmg-communications
+name: Operation Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JMMG/OCWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JMMG/OCWin
+identifiers:
+- winget: JMMG.OCWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JMMG/OCWin
+aliases: []

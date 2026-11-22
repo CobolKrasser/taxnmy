@@ -1,0 +1,11 @@
+key: softsea/md5-calculator
+publisher: softsea
+name: MD5 Calculator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MD5Calculator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MD5Calculator
+identifiers:
+- winget: SoftSea.MD5Calculator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MD5Calculator
+aliases: []

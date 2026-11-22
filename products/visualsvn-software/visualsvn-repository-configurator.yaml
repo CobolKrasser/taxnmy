@@ -1,0 +1,11 @@
+key: visualsvn-software/visualsvn-repository-configurator
+publisher: visualsvn-software
+name: VisualSVN Repository Configurator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualSVNSoftwareLtd/VisualSVNRepositoryConfigurator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualSVNSoftwareLtd/VisualSVNRepositoryConfigurator
+identifiers:
+- winget: VisualSVNSoftwareLtd.VisualSVNRepositoryConfigurator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualSVNSoftwareLtd/VisualSVNRepositoryConfigurator
+aliases: []

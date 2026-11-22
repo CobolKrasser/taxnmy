@@ -1,0 +1,11 @@
+key: tweaking-com/tweaking-com-windows-repair
+publisher: tweaking-com
+name: Tweaking.com - Windows Repair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking/WindowsRepair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking/WindowsRepair
+identifiers:
+- winget: Tweaking.WindowsRepair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking/WindowsRepair
+aliases: []

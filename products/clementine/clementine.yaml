@@ -1,0 +1,11 @@
+key: clementine/clementine
+publisher: clementine
+name: Clementine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clementine/Clementine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clementine/Clementine
+identifiers:
+- winget: Clementine.Clementine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clementine/Clementine
+aliases: []

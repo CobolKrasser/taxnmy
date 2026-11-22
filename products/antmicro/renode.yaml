@@ -1,0 +1,11 @@
+key: antmicro/renode
+publisher: antmicro
+name: Renode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renode/Renode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renode/Renode
+identifiers:
+- winget: Renode.Renode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renode/Renode
+aliases: []

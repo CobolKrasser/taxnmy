@@ -1,0 +1,11 @@
+key: stephan-assmus/code-assistant
+publisher: stephan-assmus
+name: Code Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stippi/CodeAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stippi/CodeAssistant
+identifiers:
+- winget: stippi.CodeAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stippi/CodeAssistant
+aliases: []

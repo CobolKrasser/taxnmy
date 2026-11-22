@@ -1,0 +1,11 @@
+key: openlist-team/openlist-desktop
+publisher: openlist-team
+name: OpenList Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenListDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenListDesktop
+identifiers:
+- winget: OpenListTeam.OpenListDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenListDesktop
+aliases: []

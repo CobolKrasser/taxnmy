@@ -1,0 +1,11 @@
+key: ahmet-alp-balkan/kubectx
+publisher: ahmet-alp-balkan
+name: kubectx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahmetb/kubectx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahmetb/kubectx
+identifiers:
+- winget: ahmetb.kubectx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahmetb/kubectx
+aliases: []

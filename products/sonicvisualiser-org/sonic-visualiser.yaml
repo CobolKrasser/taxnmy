@@ -1,0 +1,11 @@
+key: sonicvisualiser-org/sonic-visualiser
+publisher: sonicvisualiser-org
+name: Sonic Visualiser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicVisualiser/SonicVisualiser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicVisualiser/SonicVisualiser
+identifiers:
+- winget: SonicVisualiser.SonicVisualiser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicVisualiser/SonicVisualiser
+aliases: []

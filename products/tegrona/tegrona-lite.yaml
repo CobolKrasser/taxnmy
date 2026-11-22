@@ -1,0 +1,11 @@
+key: tegrona/tegrona-lite
+publisher: tegrona
+name: Tegrona Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tegrona/TegronaLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tegrona/TegronaLite
+identifiers:
+- winget: Tegrona.TegronaLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tegrona/TegronaLite
+aliases: []

@@ -1,0 +1,11 @@
+key: linear-orbit/linear
+publisher: linear-orbit
+name: Linear
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinearOrbit/Linear
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinearOrbit/Linear
+identifiers:
+- winget: LinearOrbit.Linear
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinearOrbit/Linear
+aliases: []

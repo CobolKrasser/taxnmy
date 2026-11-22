@@ -1,0 +1,11 @@
+key: soundux/soundux
+publisher: soundux
+name: Soundux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soundux/Soundux/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soundux/Soundux/Portable
+identifiers:
+- winget: Soundux.Soundux.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soundux/Soundux/Portable
+aliases: []

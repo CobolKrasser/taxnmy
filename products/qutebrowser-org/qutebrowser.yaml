@@ -1,0 +1,11 @@
+key: qutebrowser-org/qutebrowser
+publisher: qutebrowser-org
+name: qutebrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qutebrowser/qutebrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qutebrowser/qutebrowser
+identifiers:
+- winget: qutebrowser.qutebrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qutebrowser/qutebrowser
+aliases: []

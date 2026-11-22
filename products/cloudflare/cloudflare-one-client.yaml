@@ -1,0 +1,11 @@
+key: cloudflare/cloudflare-one-client
+publisher: cloudflare
+name: Cloudflare One Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudflare/Warp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudflare/Warp
+identifiers:
+- winget: Cloudflare.Warp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudflare/Warp
+aliases: []

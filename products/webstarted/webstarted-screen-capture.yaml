@@ -1,0 +1,11 @@
+key: webstarted/webstarted-screen-capture
+publisher: webstarted
+name: Webstarted Screen Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webstarted/ScreenCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webstarted/ScreenCapture
+identifiers:
+- winget: Webstarted.ScreenCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webstarted/ScreenCapture
+aliases: []

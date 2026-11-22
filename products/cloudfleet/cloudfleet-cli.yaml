@@ -1,0 +1,11 @@
+key: cloudfleet/cloudfleet-cli
+publisher: cloudfleet
+name: Cloudfleet CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudfleet/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudfleet/CLI
+identifiers:
+- winget: Cloudfleet.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudfleet/CLI
+aliases: []

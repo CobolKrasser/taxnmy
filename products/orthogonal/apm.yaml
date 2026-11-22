@@ -1,0 +1,11 @@
+key: orthogonal/apm
+publisher: orthogonal
+name: APM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orthogonal/APM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orthogonal/APM
+identifiers:
+- winget: Orthogonal.APM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orthogonal/APM
+aliases: []

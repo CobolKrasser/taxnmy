@@ -1,0 +1,11 @@
+key: box/box-for-office
+publisher: box
+name: Box for Office
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxForOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxForOffice
+identifiers:
+- winget: Box.BoxForOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/BoxForOffice
+aliases: []

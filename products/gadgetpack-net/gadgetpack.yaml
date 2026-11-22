@@ -1,0 +1,11 @@
+key: gadgetpack-net/gadgetpack
+publisher: gadgetpack-net
+name: GadgetPack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HelmutBuhler/8GadgetPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HelmutBuhler/8GadgetPack
+identifiers:
+- winget: HelmutBuhler.8GadgetPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HelmutBuhler/8GadgetPack
+aliases: []

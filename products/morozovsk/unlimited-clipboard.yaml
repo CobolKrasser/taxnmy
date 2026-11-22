@@ -1,0 +1,11 @@
+key: morozovsk/unlimited-clipboard
+publisher: morozovsk
+name: unlimited-clipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unlimited-clipboard/unlimited-clipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unlimited-clipboard/unlimited-clipboard
+identifiers:
+- winget: unlimited-clipboard.unlimited-clipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unlimited-clipboard/unlimited-clipboard
+aliases: []

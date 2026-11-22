@@ -1,0 +1,11 @@
+key: hypixel-studios-canada/hytale-launcher
+publisher: hypixel-studios-canada
+name: Hytale Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HypixelStudios/Hytale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HypixelStudios/Hytale
+identifiers:
+- winget: HypixelStudios.Hytale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HypixelStudios/Hytale
+aliases: []

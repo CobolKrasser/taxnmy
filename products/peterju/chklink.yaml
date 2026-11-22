@@ -1,0 +1,11 @@
+key: peterju/chklink
+publisher: peterju
+name: chkLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterJu/chkLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterJu/chkLink
+identifiers:
+- winget: PeterJu.chkLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterJu/chkLink
+aliases: []

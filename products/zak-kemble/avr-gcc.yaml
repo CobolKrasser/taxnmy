@@ -1,0 +1,11 @@
+key: zak-kemble/avr-gcc
+publisher: zak-kemble
+name: AVR-GCC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZakKemble/avr-gcc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZakKemble/avr-gcc
+identifiers:
+- winget: ZakKemble.avr-gcc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZakKemble/avr-gcc
+aliases: []

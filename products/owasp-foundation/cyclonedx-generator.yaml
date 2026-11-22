@@ -1,0 +1,11 @@
+key: owasp-foundation/cyclonedx-generator
+publisher: owasp-foundation
+name: CycloneDX Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CycloneDX/cdxgen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CycloneDX/cdxgen
+identifiers:
+- winget: CycloneDX.cdxgen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CycloneDX/cdxgen
+aliases: []

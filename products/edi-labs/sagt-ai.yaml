@@ -1,0 +1,11 @@
+key: edi-labs/sagt-ai
+publisher: edi-labs
+name: Sagt.ai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDILabs/Sagt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDILabs/Sagt
+identifiers:
+- winget: EDILabs.Sagt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDILabs/Sagt
+aliases: []

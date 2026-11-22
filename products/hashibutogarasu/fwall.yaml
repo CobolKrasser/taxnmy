@@ -1,0 +1,11 @@
+key: hashibutogarasu/fwall
+publisher: hashibutogarasu
+name: fwall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashibutogarasu/FirewallConsoleApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashibutogarasu/FirewallConsoleApp
+identifiers:
+- winget: Hashibutogarasu.FirewallConsoleApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashibutogarasu/FirewallConsoleApp
+aliases: []

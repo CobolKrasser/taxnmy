@@ -1,0 +1,11 @@
+key: ipmhub/ipm
+publisher: ipmhub
+name: IPM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPMHub/IPM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPMHub/IPM
+identifiers:
+- winget: IPMHub.IPM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPMHub/IPM
+aliases: []

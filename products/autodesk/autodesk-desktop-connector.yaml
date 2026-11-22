@@ -1,0 +1,11 @@
+key: autodesk/autodesk-desktop-connector
+publisher: autodesk
+name: Autodesk Desktop Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesktopConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesktopConnector
+identifiers:
+- winget: Autodesk.DesktopConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesktopConnector
+aliases: []

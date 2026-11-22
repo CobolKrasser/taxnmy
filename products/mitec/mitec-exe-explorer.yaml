@@ -1,0 +1,11 @@
+key: mitec/mitec-exe-explorer
+publisher: mitec
+name: MiTeC EXE Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/ExeExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/ExeExplorer
+identifiers:
+- winget: MiTeC.ExeExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/ExeExplorer
+aliases: []

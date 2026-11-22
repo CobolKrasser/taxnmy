@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-website-file-collector
+publisher: vovsoft
+name: Vovsoft Website File Collector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebsiteFileCollector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebsiteFileCollector
+identifiers:
+- winget: VovSoft.WebsiteFileCollector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebsiteFileCollector
+aliases: []

@@ -1,0 +1,13 @@
+key: cloud-foundry-foundation/cloud-foundry-cli
+publisher: cloud-foundry-foundation
+name: Cloud Foundry CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudFoundry/CLI/v7
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudFoundry/CLI/v7
+identifiers:
+- winget: CloudFoundry.CLI.v7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudFoundry/CLI/v7
+- winget: CloudFoundry.CLI.v8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudFoundry/CLI/v8
+aliases: []

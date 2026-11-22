@@ -1,0 +1,11 @@
+key: keepsolid/vpn-unlimited
+publisher: keepsolid
+name: VPN Unlimited
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeepSolid/VPNUnlimited
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeepSolid/VPNUnlimited
+identifiers:
+- winget: KeepSolid.VPNUnlimited
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeepSolid/VPNUnlimited
+aliases: []

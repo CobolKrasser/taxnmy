@@ -1,0 +1,11 @@
+key: invantive-software/invantive-optimizer
+publisher: invantive-software
+name: Invantive Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveOptimizer
+identifiers:
+- winget: Invantive.InvantiveOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveOptimizer
+aliases: []

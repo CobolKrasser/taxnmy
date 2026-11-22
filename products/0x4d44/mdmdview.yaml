@@ -1,0 +1,11 @@
+key: 0x4d44/mdmdview
+publisher: '0x4d44'
+name: mdmdview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x4D44/mdmdview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x4D44/mdmdview
+identifiers:
+- winget: 0x4D44.mdmdview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0x4D44/mdmdview
+aliases: []

@@ -1,0 +1,11 @@
+key: nasm/nasm
+publisher: nasm
+name: NASM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASM/NASM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASM/NASM
+identifiers:
+- winget: NASM.NASM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASM/NASM
+aliases: []

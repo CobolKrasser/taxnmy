@@ -1,0 +1,11 @@
+key: squirrels/reflector-teacher
+publisher: squirrels
+name: Reflector Teacher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/Teacher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/Teacher
+identifiers:
+- winget: Squirrels.Reflector.Teacher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/Teacher
+aliases: []

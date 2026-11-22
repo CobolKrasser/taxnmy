@@ -1,0 +1,11 @@
+key: softperfect/softperfect-cache-relocator
+publisher: softperfect
+name: SoftPerfect Cache Relocator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/CacheRelocator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/CacheRelocator
+identifiers:
+- winget: SoftPerfect.CacheRelocator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/CacheRelocator
+aliases: []

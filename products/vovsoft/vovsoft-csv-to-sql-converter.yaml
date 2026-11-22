@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-csv-to-sql-converter
+publisher: vovsoft
+name: Vovsoft CSV to SQL Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoSQLConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoSQLConverter
+identifiers:
+- winget: VovSoft.CSVtoSQLConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoSQLConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: jpexs/jpexs-free-flash-decompiler
+publisher: jpexs
+name: JPEXS Free Flash Decompiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPEXS/FFDec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPEXS/FFDec
+identifiers:
+- winget: JPEXS.FFDec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPEXS/FFDec
+aliases: []

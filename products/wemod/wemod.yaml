@@ -1,0 +1,11 @@
+key: wemod/wemod
+publisher: wemod
+name: WeMod
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeMod/WeMod
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeMod/WeMod
+identifiers:
+- winget: WeMod.WeMod
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeMod/WeMod
+aliases: []

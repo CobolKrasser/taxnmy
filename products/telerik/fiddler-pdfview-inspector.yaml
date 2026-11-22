@@ -1,0 +1,11 @@
+key: telerik/fiddler-pdfview-inspector
+publisher: telerik
+name: Fiddler PDFView Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telerik/FiddlerPDFView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telerik/FiddlerPDFView
+identifiers:
+- winget: Telerik.FiddlerPDFView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telerik/FiddlerPDFView
+aliases: []

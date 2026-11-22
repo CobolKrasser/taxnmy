@@ -1,0 +1,11 @@
+key: ideamk/pcx-viewer
+publisher: ideamk
+name: PCX Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/PCXViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/PCXViewer
+identifiers:
+- winget: IdeaMK.PCXViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/PCXViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: enderbyte-programs/timeit
+publisher: enderbyte-programs
+name: timeit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/TimeIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/TimeIt
+identifiers:
+- winget: EnderbytePrograms.TimeIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/TimeIt
+aliases: []

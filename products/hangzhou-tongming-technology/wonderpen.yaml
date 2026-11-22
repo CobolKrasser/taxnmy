@@ -1,0 +1,11 @@
+key: hangzhou-tongming-technology/wonderpen
+publisher: hangzhou-tongming-technology
+name: WonderPen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TominLab/WonderPen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TominLab/WonderPen
+identifiers:
+- winget: TominLab.WonderPen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TominLab/WonderPen
+aliases: []

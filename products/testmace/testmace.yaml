@@ -1,0 +1,11 @@
+key: testmace/testmace
+publisher: testmace
+name: TestMace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/testmace/testmace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/testmace/testmace
+identifiers:
+- winget: testmace.testmace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/testmace/testmace
+aliases: []

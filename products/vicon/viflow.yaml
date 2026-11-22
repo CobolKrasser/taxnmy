@@ -1,0 +1,11 @@
+key: vicon/viflow
+publisher: vicon
+name: viflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow
+identifiers:
+- winget: ViCon.viflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow
+aliases: []

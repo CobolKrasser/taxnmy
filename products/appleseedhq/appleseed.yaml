@@ -1,0 +1,11 @@
+key: appleseedhq/appleseed
+publisher: appleseedhq
+name: appleseed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/appleseedhq/appleseed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/appleseedhq/appleseed
+identifiers:
+- winget: appleseedhq.appleseed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/appleseedhq/appleseed
+aliases: []

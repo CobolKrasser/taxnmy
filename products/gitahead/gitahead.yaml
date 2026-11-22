@@ -1,0 +1,11 @@
+key: gitahead/gitahead
+publisher: gitahead
+name: GitAhead
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitAhead/GitAhead
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitAhead/GitAhead
+identifiers:
+- winget: GitAhead.GitAhead
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitAhead/GitAhead
+aliases: []

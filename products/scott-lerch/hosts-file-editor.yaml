@@ -1,0 +1,11 @@
+key: scott-lerch/hosts-file-editor
+publisher: scott-lerch
+name: Hosts File Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/scottlerch/hosts-file-editor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/scottlerch/hosts-file-editor
+identifiers:
+- winget: scottlerch.hosts-file-editor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/scottlerch/hosts-file-editor
+aliases: []

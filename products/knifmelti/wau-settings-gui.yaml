@@ -1,0 +1,11 @@
+key: knifmelti/wau-settings-gui
+publisher: knifmelti
+name: WAU Settings GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KnifMelti/WAU-Settings-GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KnifMelti/WAU-Settings-GUI
+identifiers:
+- winget: KnifMelti.WAU-Settings-GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KnifMelti/WAU-Settings-GUI
+aliases: []

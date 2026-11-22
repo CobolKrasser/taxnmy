@@ -1,0 +1,11 @@
+key: cypherpunks/pidgin-otr
+publisher: cypherpunks
+name: pidgin-otr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cypherpunks/pidgin-otr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cypherpunks/pidgin-otr
+identifiers:
+- winget: cypherpunks.pidgin-otr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cypherpunks/pidgin-otr
+aliases: []

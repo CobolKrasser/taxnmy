@@ -1,0 +1,11 @@
+key: aircall/aircall-workspace
+publisher: aircall
+name: Aircall Workspace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aircall/AircallWorkspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aircall/AircallWorkspace
+identifiers:
+- winget: Aircall.AircallWorkspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aircall/AircallWorkspace
+aliases: []

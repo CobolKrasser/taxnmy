@@ -1,0 +1,11 @@
+key: chainguard/chainguard-control
+publisher: chainguard
+name: Chainguard Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chainguard/chainctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chainguard/chainctl
+identifiers:
+- winget: Chainguard.chainctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chainguard/chainctl
+aliases: []

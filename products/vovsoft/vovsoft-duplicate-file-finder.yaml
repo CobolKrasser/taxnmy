@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-duplicate-file-finder
+publisher: vovsoft
+name: Vovsoft Duplicate File Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DuplicateFileFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DuplicateFileFinder
+identifiers:
+- winget: VovSoft.DuplicateFileFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DuplicateFileFinder
+aliases: []

@@ -1,0 +1,11 @@
+key: kindel-systems/mce-controller
+publisher: kindel-systems
+name: MCE Controller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/mcec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/mcec
+identifiers:
+- winget: Kindel.mcec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/mcec
+aliases: []

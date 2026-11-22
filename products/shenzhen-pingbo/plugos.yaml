@@ -1,0 +1,11 @@
+key: shenzhen-pingbo/plugos
+publisher: shenzhen-pingbo
+name: PlugOS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShenzhenPingbo/PlugOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShenzhenPingbo/PlugOS
+identifiers:
+- winget: ShenzhenPingbo.PlugOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShenzhenPingbo/PlugOS
+aliases: []

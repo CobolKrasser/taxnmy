@@ -1,0 +1,11 @@
+key: discwright/discwright
+publisher: discwright
+name: DiscWright
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscWright/DiscWright
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscWright/DiscWright
+identifiers:
+- winget: DiscWright.DiscWright
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscWright/DiscWright
+aliases: []

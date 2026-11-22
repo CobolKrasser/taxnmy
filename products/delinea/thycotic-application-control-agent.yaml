@@ -1,0 +1,11 @@
+key: delinea/thycotic-application-control-agent
+publisher: delinea
+name: Thycotic Application Control Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticApplicationControlAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticApplicationControlAgent
+identifiers:
+- winget: Delinea.ThycoticApplicationControlAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticApplicationControlAgent
+aliases: []

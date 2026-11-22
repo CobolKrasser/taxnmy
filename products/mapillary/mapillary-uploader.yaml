@@ -1,0 +1,11 @@
+key: mapillary/mapillary-uploader
+publisher: mapillary
+name: Mapillary Uploader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mapillary/MapillaryUploader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mapillary/MapillaryUploader
+identifiers:
+- winget: Mapillary.MapillaryUploader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mapillary/MapillaryUploader
+aliases: []

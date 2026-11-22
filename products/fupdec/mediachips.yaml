@@ -1,0 +1,11 @@
+key: fupdec/mediachips
+publisher: fupdec
+name: mediaChips
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fupdec/mediaChips
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fupdec/mediaChips
+identifiers:
+- winget: fupdec.mediaChips
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fupdec/mediaChips
+aliases: []

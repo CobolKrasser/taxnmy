@@ -1,0 +1,11 @@
+key: liquidfiles/liquidfiles-windows-agent-and-outlook-add-in
+publisher: liquidfiles
+name: LiquidFiles Windows Agent and Outlook Add-in
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/WindowsAgentOutlookAddin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/WindowsAgentOutlookAddin
+identifiers:
+- winget: LiquidFiles.WindowsAgentOutlookAddin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/WindowsAgentOutlookAddin
+aliases: []

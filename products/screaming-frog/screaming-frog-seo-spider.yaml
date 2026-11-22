@@ -1,0 +1,11 @@
+key: screaming-frog/screaming-frog-seo-spider
+publisher: screaming-frog
+name: Screaming Frog SEO Spider
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreamingFrog/SEOSpider
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreamingFrog/SEOSpider
+identifiers:
+- winget: ScreamingFrog.SEOSpider
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreamingFrog/SEOSpider
+aliases: []

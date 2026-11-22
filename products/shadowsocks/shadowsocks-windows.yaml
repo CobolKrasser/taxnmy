@@ -1,0 +1,11 @@
+key: shadowsocks/shadowsocks-windows
+publisher: shadowsocks
+name: shadowsocks-windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shadowsocks/shadowsocks-windows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shadowsocks/shadowsocks-windows
+identifiers:
+- winget: shadowsocks.shadowsocks-windows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shadowsocks/shadowsocks-windows
+aliases: []

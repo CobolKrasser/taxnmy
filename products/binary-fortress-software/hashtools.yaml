@@ -1,0 +1,11 @@
+key: binary-fortress-software/hashtools
+publisher: binary-fortress-software
+name: HashTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/HashTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/HashTools
+identifiers:
+- winget: BinaryFortress.HashTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/HashTools
+aliases: []

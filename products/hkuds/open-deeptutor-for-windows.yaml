@@ -1,0 +1,11 @@
+key: hkuds/open-deeptutor-for-windows
+publisher: hkuds
+name: Open DeepTutor for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HKUDS/DeepTutor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HKUDS/DeepTutor
+identifiers:
+- winget: HKUDS.DeepTutor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HKUDS/DeepTutor
+aliases: []

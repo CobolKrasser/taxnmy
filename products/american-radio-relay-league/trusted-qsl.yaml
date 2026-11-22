@@ -1,0 +1,11 @@
+key: american-radio-relay-league/trusted-qsl
+publisher: american-radio-relay-league
+name: Trusted QSL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmericanRadioRelayLeague/TrustedQSL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmericanRadioRelayLeague/TrustedQSL
+identifiers:
+- winget: AmericanRadioRelayLeague.TrustedQSL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmericanRadioRelayLeague/TrustedQSL
+aliases: []

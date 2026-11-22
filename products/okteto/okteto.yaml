@@ -1,0 +1,11 @@
+key: okteto/okteto
+publisher: okteto
+name: okteto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okteto/okteto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okteto/okteto
+identifiers:
+- winget: okteto.okteto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okteto/okteto
+aliases: []

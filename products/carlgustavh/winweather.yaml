@@ -1,0 +1,11 @@
+key: carlgustavh/winweather
+publisher: carlgustavh
+name: WinWeather
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/carlgustavh/WinWeather
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/carlgustavh/WinWeather
+identifiers:
+- winget: carlgustavh.WinWeather
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/carlgustavh/WinWeather
+aliases: []

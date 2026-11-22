@@ -1,0 +1,11 @@
+key: mapillary/mapillary-tools
+publisher: mapillary
+name: Mapillary Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mapillary/MapillaryTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mapillary/MapillaryTools
+identifiers:
+- winget: Mapillary.MapillaryTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mapillary/MapillaryTools
+aliases: []

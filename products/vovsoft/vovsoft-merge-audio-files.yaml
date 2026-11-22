@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-merge-audio-files
+publisher: vovsoft
+name: Vovsoft Merge Audio Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeAudioFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeAudioFiles
+identifiers:
+- winget: VovSoft.MergeAudioFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeAudioFiles
+aliases: []

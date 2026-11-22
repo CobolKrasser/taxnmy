@@ -1,0 +1,11 @@
+key: packetthrower/portfinder
+publisher: packetthrower
+name: PortFinder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/PortFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/PortFinder
+identifiers:
+- winget: packetThrower.PortFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/PortFinder
+aliases: []

@@ -1,0 +1,11 @@
+key: softsea/free-iso-creator
+publisher: softsea
+name: Free ISO Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/FreeISOCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/FreeISOCreator
+identifiers:
+- winget: SoftSea.FreeISOCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/FreeISOCreator
+aliases: []

@@ -1,0 +1,11 @@
+key: prog/prog-media-server-for-small-networks
+publisher: prog
+name: Prog Media Server for small networks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgMediaServer/Small
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgMediaServer/Small
+identifiers:
+- winget: Prog.ProgMediaServer.Small
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgMediaServer/Small
+aliases: []

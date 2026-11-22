@@ -1,0 +1,11 @@
+key: r-core-team/r-for-windows
+publisher: r-core-team
+name: R for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RProject/R
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RProject/R
+identifiers:
+- winget: RProject.R
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RProject/R
+aliases: []

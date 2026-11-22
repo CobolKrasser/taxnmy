@@ -1,0 +1,11 @@
+key: usual-expat/spec-watcher
+publisher: usual-expat
+name: spec-watcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UsualExpat/SpecWatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UsualExpat/SpecWatcher
+identifiers:
+- winget: UsualExpat.SpecWatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UsualExpat/SpecWatcher
+aliases: []

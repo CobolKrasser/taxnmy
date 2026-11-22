@@ -1,0 +1,11 @@
+key: standard-notes/standard-notes
+publisher: standard-notes
+name: Standard Notes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StandardNotes/StandardNotes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StandardNotes/StandardNotes
+identifiers:
+- winget: StandardNotes.StandardNotes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StandardNotes/StandardNotes
+aliases: []

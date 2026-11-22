@@ -1,0 +1,11 @@
+key: midas-it/mdesk
+publisher: midas-it
+name: MDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIDAS/MDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIDAS/MDesk
+identifiers:
+- winget: MIDAS.MDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIDAS/MDesk
+aliases: []

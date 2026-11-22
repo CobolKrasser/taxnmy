@@ -1,0 +1,11 @@
+key: ton-torrent/ton-torrent
+publisher: ton-torrent
+name: TON Torrent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xssnick/TON-Torrent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xssnick/TON-Torrent
+identifiers:
+- winget: xssnick.TON-Torrent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xssnick/TON-Torrent
+aliases: []

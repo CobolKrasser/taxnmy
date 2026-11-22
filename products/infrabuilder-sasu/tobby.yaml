@@ -1,0 +1,11 @@
+key: infrabuilder-sasu/tobby
+publisher: infrabuilder-sasu
+name: tobby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tobby-fetch/tobby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tobby-fetch/tobby
+identifiers:
+- winget: tobby-fetch.tobby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tobby-fetch/tobby
+aliases: []

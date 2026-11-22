@@ -1,0 +1,11 @@
+key: kubis/focustray
+publisher: kubis
+name: FocusTray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubis1982/FocusTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubis1982/FocusTray
+identifiers:
+- winget: Kubis1982.FocusTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubis1982/FocusTray
+aliases: []

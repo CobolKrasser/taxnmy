@@ -1,0 +1,11 @@
+key: the-sz-development/malden
+publisher: the-sz-development
+name: Malden
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Malden
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Malden
+identifiers:
+- winget: the-sz.Malden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Malden
+aliases: []

@@ -1,0 +1,11 @@
+key: med-zed/youtube-mp3
+publisher: med-zed
+name: Youtube-mp3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MedZed/youtubetomp3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MedZed/youtubetomp3
+identifiers:
+- winget: MedZed.youtubetomp3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MedZed/youtubetomp3
+aliases: []

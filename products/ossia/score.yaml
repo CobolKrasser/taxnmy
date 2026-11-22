@@ -1,0 +1,11 @@
+key: ossia/score
+publisher: ossia
+name: score
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ossia/score
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ossia/score
+identifiers:
+- winget: ossia.score
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ossia/score
+aliases: []

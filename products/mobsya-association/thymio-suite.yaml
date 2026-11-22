@@ -1,0 +1,11 @@
+key: mobsya-association/thymio-suite
+publisher: mobsya-association
+name: Thymio Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mobsya/ThymioSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mobsya/ThymioSuite
+identifiers:
+- winget: Mobsya.ThymioSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mobsya/ThymioSuite
+aliases: []

@@ -1,0 +1,11 @@
+key: lego/lego-mindstorms-edu-nxt-software
+publisher: lego
+name: LEGO MINDSTORMS Edu NXT Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/MindstormsEduNXT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/MindstormsEduNXT
+identifiers:
+- winget: LEGO.MindstormsEduNXT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/MindstormsEduNXT
+aliases: []

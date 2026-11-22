@@ -1,0 +1,11 @@
+key: namecoin-project/electrum-nmc
+publisher: namecoin-project
+name: Electrum-NMC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NamecoinProject/Electrum-NMC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NamecoinProject/Electrum-NMC
+identifiers:
+- winget: NamecoinProject.Electrum-NMC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NamecoinProject/Electrum-NMC
+aliases: []

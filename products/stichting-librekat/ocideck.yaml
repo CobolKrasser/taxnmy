@@ -1,0 +1,11 @@
+key: stichting-librekat/ocideck
+publisher: stichting-librekat
+name: OciDeck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreKAT/OciDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreKAT/OciDeck
+identifiers:
+- winget: LibreKAT.OciDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreKAT/OciDeck
+aliases: []

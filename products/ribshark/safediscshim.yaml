@@ -1,0 +1,11 @@
+key: ribshark/safediscshim
+publisher: ribshark
+name: SafeDiscShim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RibShark/SafeDiscShim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RibShark/SafeDiscShim
+identifiers:
+- winget: RibShark.SafeDiscShim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RibShark/SafeDiscShim
+aliases: []

@@ -1,0 +1,11 @@
+key: yubsoft/hash
+publisher: yubsoft
+name: hash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubsoft/HashCalculator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubsoft/HashCalculator
+identifiers:
+- winget: Yubsoft.HashCalculator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubsoft/HashCalculator
+aliases: []

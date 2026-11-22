@@ -1,0 +1,11 @@
+key: burnaware/burnaware-free
+publisher: burnaware
+name: BurnAware Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Burnaware/BurnAwareFree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Burnaware/BurnAwareFree
+identifiers:
+- winget: Burnaware.BurnAwareFree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Burnaware/BurnAwareFree
+aliases: []

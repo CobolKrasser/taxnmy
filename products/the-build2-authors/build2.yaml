@@ -1,0 +1,13 @@
+key: the-build2-authors/build2
+publisher: the-build2-authors
+name: build2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build2/build2/MSVC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build2/build2/MSVC
+identifiers:
+- winget: build2.build2.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build2/build2/MSVC
+- winget: build2.build2.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build2/build2/MinGW
+aliases: []

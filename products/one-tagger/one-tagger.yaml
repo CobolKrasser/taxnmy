@@ -1,0 +1,11 @@
+key: one-tagger/one-tagger
+publisher: one-tagger
+name: One Tagger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneTagger/OneTagger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneTagger/OneTagger
+identifiers:
+- winget: OneTagger.OneTagger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneTagger/OneTagger
+aliases: []

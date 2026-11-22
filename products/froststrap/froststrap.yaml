@@ -1,0 +1,11 @@
+key: froststrap/froststrap
+publisher: froststrap
+name: Froststrap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Froststrap/Froststrap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Froststrap/Froststrap
+identifiers:
+- winget: Froststrap.Froststrap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Froststrap/Froststrap
+aliases: []

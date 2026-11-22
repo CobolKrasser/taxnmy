@@ -1,0 +1,11 @@
+key: simpleprax/simpleprax-desktop
+publisher: simpleprax
+name: Simpleprax Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simpleprax/SimplepraxDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simpleprax/SimplepraxDesktop
+identifiers:
+- winget: Simpleprax.SimplepraxDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simpleprax/SimplepraxDesktop
+aliases: []

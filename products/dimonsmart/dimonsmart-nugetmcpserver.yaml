@@ -1,0 +1,11 @@
+key: dimonsmart/dimonsmart-nugetmcpserver
+publisher: dimonsmart
+name: DimonSmart.NugetMcpServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/NugetMcpServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/NugetMcpServer
+identifiers:
+- winget: DimonSmart.NugetMcpServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/NugetMcpServer
+aliases: []

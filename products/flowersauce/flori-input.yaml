@@ -1,0 +1,11 @@
+key: flowersauce/flori-input
+publisher: flowersauce
+name: Flori Input
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowersauce/FSClicker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowersauce/FSClicker
+identifiers:
+- winget: Flowersauce.FSClicker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowersauce/FSClicker
+aliases: []

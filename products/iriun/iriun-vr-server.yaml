@@ -1,0 +1,11 @@
+key: iriun/iriun-vr-server
+publisher: iriun
+name: Iriun VR Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iriun/IriunVR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iriun/IriunVR
+identifiers:
+- winget: Iriun.IriunVR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iriun/IriunVR
+aliases: []

@@ -1,0 +1,11 @@
+key: openscreen/openscreen
+publisher: openscreen
+name: OpenScreen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScreen/OpenScreen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScreen/OpenScreen
+identifiers:
+- winget: OpenScreen.OpenScreen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScreen/OpenScreen
+aliases: []

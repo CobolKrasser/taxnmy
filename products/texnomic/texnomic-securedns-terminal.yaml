@@ -1,0 +1,11 @@
+key: texnomic/texnomic-securedns-terminal
+publisher: texnomic
+name: Texnomic SecureDNS Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Texnomic/SecureDNS-Terminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Texnomic/SecureDNS-Terminal
+identifiers:
+- winget: Texnomic.SecureDNS-Terminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Texnomic/SecureDNS-Terminal
+aliases: []

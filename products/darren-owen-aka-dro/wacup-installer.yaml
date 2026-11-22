@@ -1,0 +1,11 @@
+key: darren-owen-aka-dro/wacup-installer
+publisher: darren-owen-aka-dro
+name: WACUP Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WACUP/WACUP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WACUP/WACUP
+identifiers:
+- winget: WACUP.WACUP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WACUP/WACUP
+aliases: []

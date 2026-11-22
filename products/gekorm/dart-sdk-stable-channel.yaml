@@ -1,0 +1,11 @@
+key: gekorm/dart-sdk-stable-channel
+publisher: gekorm
+name: Dart SDK - stable channel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gekorm/Dart/stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gekorm/Dart/stable
+identifiers:
+- winget: Gekorm.Dart.stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gekorm/Dart/stable
+aliases: []

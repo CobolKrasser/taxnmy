@@ -1,0 +1,11 @@
+key: sirstrap/cli
+publisher: sirstrap
+name: CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sirstrap/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sirstrap/CLI
+identifiers:
+- winget: Sirstrap.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sirstrap/CLI
+aliases: []

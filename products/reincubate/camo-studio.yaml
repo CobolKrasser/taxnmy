@@ -1,0 +1,11 @@
+key: reincubate/camo-studio
+publisher: reincubate
+name: Camo Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/CamoStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/CamoStudio
+identifiers:
+- winget: ReincubateLtd.CamoStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/CamoStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: adam-yarris/ms-paint-ide
+publisher: adam-yarris
+name: MS Paint IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSPaintIDE/MSPaintIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSPaintIDE/MSPaintIDE
+identifiers:
+- winget: MSPaintIDE.MSPaintIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSPaintIDE/MSPaintIDE
+aliases: []

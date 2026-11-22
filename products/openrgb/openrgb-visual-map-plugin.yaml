@@ -1,0 +1,11 @@
+key: openrgb/openrgb-visual-map-plugin
+publisher: openrgb
+name: OpenRGB Visual Map Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBVisualMapPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBVisualMapPlugin
+identifiers:
+- winget: OpenRGB.OpenRGBVisualMapPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBVisualMapPlugin
+aliases: []

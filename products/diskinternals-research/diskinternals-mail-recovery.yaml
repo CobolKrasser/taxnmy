@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-mail-recovery
+publisher: diskinternals-research
+name: DiskInternals Mail Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MailRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MailRecovery
+identifiers:
+- winget: DiskInternals.MailRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MailRecovery
+aliases: []

@@ -1,0 +1,11 @@
+key: utopia/eden-x86-64-arm64-instruction-sets-pgo
+publisher: utopia
+name: Eden («x86_64- »/ARM64 instruction sets, PGO)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Utopia/Eden/MinGW-PGO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Utopia/Eden/MinGW-PGO
+identifiers:
+- winget: Utopia.Eden.MinGW-PGO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Utopia/Eden/MinGW-PGO
+aliases: []

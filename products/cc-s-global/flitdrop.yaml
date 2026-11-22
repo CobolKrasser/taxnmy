@@ -1,0 +1,11 @@
+key: cc-s-global/flitdrop
+publisher: cc-s-global
+name: Flitdrop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCsGlobal/Flitdrop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCsGlobal/Flitdrop
+identifiers:
+- winget: CCsGlobal.Flitdrop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCsGlobal/Flitdrop
+aliases: []

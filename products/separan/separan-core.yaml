@@ -1,0 +1,11 @@
+key: separan/separan-core
+publisher: separan
+name: Separan Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Separan/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Separan/Core
+identifiers:
+- winget: Separan.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Separan/Core
+aliases: []

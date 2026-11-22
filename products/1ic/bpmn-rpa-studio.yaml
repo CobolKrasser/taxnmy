@@ -1,0 +1,11 @@
+key: 1ic/bpmn-rpa-studio
+publisher: 1ic
+name: BPMN-RPA Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/1IC/BPMN-RPAStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/1IC/BPMN-RPAStudio
+identifiers:
+- winget: 1IC.BPMN-RPAStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/1IC/BPMN-RPAStudio
+aliases: []

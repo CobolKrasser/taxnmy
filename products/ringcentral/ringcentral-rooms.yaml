@@ -1,0 +1,11 @@
+key: ringcentral/ringcentral-rooms
+publisher: ringcentral
+name: RingCentral Rooms
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralRooms
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralRooms
+identifiers:
+- winget: RingCentral.RingCentralRooms
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralRooms
+aliases: []

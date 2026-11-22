@@ -1,0 +1,11 @@
+key: somepythonthings/somepythonthings-zip-manager
+publisher: somepythonthings
+name: SomePythonThings Zip Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SomePythonThings/ZipManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SomePythonThings/ZipManager
+identifiers:
+- winget: SomePythonThings.ZipManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SomePythonThings/ZipManager
+aliases: []

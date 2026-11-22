@@ -1,0 +1,11 @@
+key: thorlabs/thorlabs-chrolis-instrument-driver
+publisher: thorlabs
+name: Thorlabs CHROLIS - Instrument Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ChrolisInstrumentDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ChrolisInstrumentDriver
+identifiers:
+- winget: Thorlabs.ChrolisInstrumentDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ChrolisInstrumentDriver
+aliases: []

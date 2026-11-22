@@ -1,0 +1,11 @@
+key: opengeos/geolibre-desktop
+publisher: opengeos
+name: GeoLibre Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGeos/GeoLibre
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGeos/GeoLibre
+identifiers:
+- winget: OpenGeos.GeoLibre
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGeos/GeoLibre
+aliases: []

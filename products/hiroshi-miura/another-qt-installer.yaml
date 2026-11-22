@@ -1,0 +1,11 @@
+key: hiroshi-miura/another-qt-installer
+publisher: hiroshi-miura
+name: Another Qt installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/miurahr/aqtinstall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/miurahr/aqtinstall
+identifiers:
+- winget: miurahr.aqtinstall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/miurahr/aqtinstall
+aliases: []

@@ -1,0 +1,11 @@
+key: ahmed-khaled/switchboard
+publisher: ahmed-khaled
+name: Switchboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bylalo/Switchboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bylalo/Switchboard
+identifiers:
+- winget: bylalo.Switchboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bylalo/Switchboard
+aliases: []

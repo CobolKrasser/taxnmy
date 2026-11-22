@@ -1,0 +1,11 @@
+key: dmitry-sheiko/puppetry
+publisher: dmitry-sheiko
+name: puppetry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dsheiko/puppetry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dsheiko/puppetry
+identifiers:
+- winget: dsheiko.puppetry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dsheiko/puppetry
+aliases: []

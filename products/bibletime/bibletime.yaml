@@ -1,0 +1,11 @@
+key: bibletime/bibletime
+publisher: bibletime
+name: BibleTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BibleTime/BibleTime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BibleTime/BibleTime
+identifiers:
+- winget: BibleTime.BibleTime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BibleTime/BibleTime
+aliases: []

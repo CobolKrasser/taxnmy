@@ -1,0 +1,11 @@
+key: endless-sky/endless-sky
+publisher: endless-sky
+name: Endless Sky
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EndlessSky/EndlessSky
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EndlessSky/EndlessSky
+identifiers:
+- winget: EndlessSky.EndlessSky
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EndlessSky/EndlessSky
+aliases: []

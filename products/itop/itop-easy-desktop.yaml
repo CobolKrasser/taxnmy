@@ -1,0 +1,11 @@
+key: itop/itop-easy-desktop
+publisher: itop
+name: iTop Easy Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopEasyDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopEasyDesktop
+identifiers:
+- winget: iTop.iTopEasyDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopEasyDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: redisant/opcua-client-simulator
+publisher: redisant
+name: OPCUA Client Simulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/OPCUAClientSimulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/OPCUAClientSimulator
+identifiers:
+- winget: Redisant.OPCUAClientSimulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/OPCUAClientSimulator
+aliases: []

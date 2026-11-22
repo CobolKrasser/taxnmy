@@ -1,0 +1,11 @@
+key: oss-winget/dtc
+publisher: oss-winget
+name: dtc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oss-winget/dtc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oss-winget/dtc
+identifiers:
+- winget: oss-winget.dtc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oss-winget/dtc
+aliases: []

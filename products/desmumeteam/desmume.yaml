@@ -1,0 +1,11 @@
+key: desmumeteam/desmume
+publisher: desmumeteam
+name: DeSmuME
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeSmuMETeam/DeSmuME
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeSmuMETeam/DeSmuME
+identifiers:
+- winget: DeSmuMETeam.DeSmuME
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeSmuMETeam/DeSmuME
+aliases: []

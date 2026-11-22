@@ -1,0 +1,11 @@
+key: nextdns/nextdns-cli
+publisher: nextdns
+name: NextDNS CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextDNS/NextDNS/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextDNS/NextDNS/CLI
+identifiers:
+- winget: NextDNS.NextDNS.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextDNS/NextDNS/CLI
+aliases: []

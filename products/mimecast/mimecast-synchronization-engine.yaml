@@ -1,0 +1,11 @@
+key: mimecast/mimecast-synchronization-engine
+publisher: mimecast
+name: Mimecast Synchronization Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mimecast/MimecastSynchronizationEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mimecast/MimecastSynchronizationEngine
+identifiers:
+- winget: Mimecast.MimecastSynchronizationEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mimecast/MimecastSynchronizationEngine
+aliases: []

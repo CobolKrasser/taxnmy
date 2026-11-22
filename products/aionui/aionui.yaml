@@ -1,0 +1,11 @@
+key: aionui/aionui
+publisher: aionui
+name: AionUi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOfficeAI/AionUi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOfficeAI/AionUi
+identifiers:
+- winget: iOfficeAI.AionUi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOfficeAI/AionUi
+aliases: []

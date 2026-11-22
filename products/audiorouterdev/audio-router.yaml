@@ -1,0 +1,11 @@
+key: audiorouterdev/audio-router
+publisher: audiorouterdev
+name: audio-router
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/audiorouterdev/audio-router
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/audiorouterdev/audio-router
+identifiers:
+- winget: audiorouterdev.audio-router
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/audiorouterdev/audio-router
+aliases: []

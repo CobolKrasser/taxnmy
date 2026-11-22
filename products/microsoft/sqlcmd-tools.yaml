@@ -1,0 +1,11 @@
+key: microsoft/sqlcmd-tools
+publisher: microsoft
+name: Sqlcmd Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sqlcmd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sqlcmd
+identifiers:
+- winget: Microsoft.Sqlcmd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sqlcmd
+aliases: []

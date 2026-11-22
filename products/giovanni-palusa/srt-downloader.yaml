@@ -1,0 +1,11 @@
+key: giovanni-palusa/srt-downloader
+publisher: giovanni-palusa
+name: SRT Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GioPalusa/SRTDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GioPalusa/SRTDownloader
+identifiers:
+- winget: GioPalusa.SRTDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GioPalusa/SRTDownloader
+aliases: []

@@ -1,0 +1,11 @@
+key: authoritygate/racksight-desktop
+publisher: authoritygate
+name: RackSight Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/RackSight
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/RackSight
+identifiers:
+- winget: AuthorityGate.RackSight
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/RackSight
+aliases: []

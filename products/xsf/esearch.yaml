@@ -1,0 +1,11 @@
+key: xsf/esearch
+publisher: xsf
+name: eSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xushengfeng/eSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xushengfeng/eSearch
+identifiers:
+- winget: xushengfeng.eSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xushengfeng/eSearch
+aliases: []

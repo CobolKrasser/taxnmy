@@ -1,0 +1,11 @@
+key: navitel/navitel-dvr-player
+publisher: navitel
+name: Navitel DVR Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navitel/NavitelDvrPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navitel/NavitelDvrPlayer
+identifiers:
+- winget: Navitel.NavitelDvrPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navitel/NavitelDvrPlayer
+aliases: []

@@ -1,0 +1,11 @@
+key: devflow/uzi
+publisher: devflow
+name: Uzi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devflow/Uzi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devflow/Uzi
+identifiers:
+- winget: Devflow.Uzi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devflow/Uzi
+aliases: []

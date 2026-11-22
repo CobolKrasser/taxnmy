@@ -1,0 +1,11 @@
+key: confluent/confluent-cli
+publisher: confluent
+name: Confluent CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConfluentInc/Confluent-CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConfluentInc/Confluent-CLI
+identifiers:
+- winget: ConfluentInc.Confluent-CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConfluentInc/Confluent-CLI
+aliases: []

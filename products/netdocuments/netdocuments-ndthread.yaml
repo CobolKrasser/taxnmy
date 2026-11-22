@@ -1,0 +1,11 @@
+key: netdocuments/netdocuments-ndthread
+publisher: netdocuments
+name: NetDocuments ndThread
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetDocuments/ndThread
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetDocuments/ndThread
+identifiers:
+- winget: NetDocuments.ndThread
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetDocuments/ndThread
+aliases: []

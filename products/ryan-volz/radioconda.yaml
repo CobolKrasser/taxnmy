@@ -1,0 +1,11 @@
+key: ryan-volz/radioconda
+publisher: ryan-volz
+name: radioconda
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ryanvolz/radioconda
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ryanvolz/radioconda
+identifiers:
+- winget: ryanvolz.radioconda
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ryanvolz/radioconda
+aliases: []

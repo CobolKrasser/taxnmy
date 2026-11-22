@@ -1,0 +1,11 @@
+key: anker-innovations-technology/ankerwork
+publisher: anker-innovations-technology
+name: AnkerWork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anker/AnkerWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anker/AnkerWork
+identifiers:
+- winget: Anker.AnkerWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anker/AnkerWork
+aliases: []

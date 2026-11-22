@@ -1,0 +1,11 @@
+key: galvanize/galvanize-cirrus
+publisher: galvanize
+name: Galvanize Cirrus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GalvanizeInc/GalvanizeCirrus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GalvanizeInc/GalvanizeCirrus
+identifiers:
+- winget: GalvanizeInc.GalvanizeCirrus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GalvanizeInc/GalvanizeCirrus
+aliases: []

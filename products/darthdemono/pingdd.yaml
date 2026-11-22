@@ -1,0 +1,11 @@
+key: darthdemono/pingdd
+publisher: darthdemono
+name: PingDD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarthDemono/PingDD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarthDemono/PingDD
+identifiers:
+- winget: DarthDemono.PingDD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarthDemono/PingDD
+aliases: []

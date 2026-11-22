@@ -1,0 +1,11 @@
+key: elements-media-storage/zxpinstaller
+publisher: elements-media-storage
+name: ZXPInstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/guideguide/ZXPInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/guideguide/ZXPInstaller
+identifiers:
+- winget: guideguide.ZXPInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/guideguide/ZXPInstaller
+aliases: []

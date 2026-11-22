@@ -1,0 +1,11 @@
+key: wispr-flow/wisprflow
+publisher: wispr-flow
+name: WisprFlow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisprFlow/WisprFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisprFlow/WisprFlow
+identifiers:
+- winget: WisprFlow.WisprFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisprFlow/WisprFlow
+aliases: []

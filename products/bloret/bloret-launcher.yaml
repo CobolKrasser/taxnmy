@@ -1,0 +1,13 @@
+key: bloret/bloret-launcher
+publisher: bloret
+name: Bloret Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloret/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloret/Launcher
+identifiers:
+- winget: Bloret.BloretLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloret/BloretLauncher
+- winget: Bloret.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloret/Launcher
+aliases: []

@@ -1,0 +1,11 @@
+key: fahrenheit-research/rustdar
+publisher: fahrenheit-research
+name: RustDar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustDar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustDar
+identifiers:
+- winget: FahrenheitResearch.RustDar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustDar
+aliases: []

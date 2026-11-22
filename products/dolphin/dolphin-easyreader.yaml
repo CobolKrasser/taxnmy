@@ -1,0 +1,11 @@
+key: dolphin/dolphin-easyreader
+publisher: dolphin
+name: Dolphin EasyReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DolphinComputerAccess/EasyReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DolphinComputerAccess/EasyReader
+identifiers:
+- winget: DolphinComputerAccess.EasyReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DolphinComputerAccess/EasyReader
+aliases: []

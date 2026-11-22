@@ -1,0 +1,11 @@
+key: pichit-me/pickit
+publisher: pichit-me
+name: Pickit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicHit/Pickit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicHit/Pickit
+identifiers:
+- winget: PicHit.Pickit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicHit/Pickit
+aliases: []

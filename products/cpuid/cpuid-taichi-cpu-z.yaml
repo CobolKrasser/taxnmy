@@ -1,0 +1,11 @@
+key: cpuid/cpuid-taichi-cpu-z
+publisher: cpuid
+name: CPUID TAICHI CPU-Z
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/TAICHI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/TAICHI
+identifiers:
+- winget: CPUID.CPU-Z.TAICHI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/TAICHI
+aliases: []

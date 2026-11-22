@@ -1,0 +1,11 @@
+key: seconddesk/second-desk
+publisher: seconddesk
+name: Second Desk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryanisgood/SecondDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryanisgood/SecondDesk
+identifiers:
+- winget: Ryanisgood.SecondDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryanisgood/SecondDesk
+aliases: []

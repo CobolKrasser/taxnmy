@@ -1,0 +1,11 @@
+key: dnscrypt/dnscrypt-proxy
+publisher: dnscrypt
+name: dnscrypt-proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DNSCrypt/dnscrypt-proxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DNSCrypt/dnscrypt-proxy
+identifiers:
+- winget: DNSCrypt.dnscrypt-proxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DNSCrypt/dnscrypt-proxy
+aliases: []

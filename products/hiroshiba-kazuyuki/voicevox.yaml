@@ -1,0 +1,13 @@
+key: hiroshiba-kazuyuki/voicevox
+publisher: hiroshiba-kazuyuki
+name: VOICEVOX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshibaKazuyuki/VOICEVOX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshibaKazuyuki/VOICEVOX
+identifiers:
+- winget: HiroshibaKazuyuki.VOICEVOX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshibaKazuyuki/VOICEVOX
+- winget: HiroshibaKazuyuki.VOICEVOX.CPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshibaKazuyuki/VOICEVOX/CPU
+aliases: []

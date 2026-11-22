@@ -1,0 +1,11 @@
+key: stoplight/prism
+publisher: stoplight
+name: Prism
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Prism
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Prism
+identifiers:
+- winget: Stoplight.Prism
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Prism
+aliases: []

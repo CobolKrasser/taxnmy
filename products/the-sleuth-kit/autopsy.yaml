@@ -1,0 +1,11 @@
+key: the-sleuth-kit/autopsy
+publisher: the-sleuth-kit
+name: Autopsy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SleuthKit/Autopsy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SleuthKit/Autopsy
+identifiers:
+- winget: SleuthKit.Autopsy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SleuthKit/Autopsy
+aliases: []

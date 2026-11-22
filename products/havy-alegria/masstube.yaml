@@ -1,0 +1,11 @@
+key: havy-alegria/masstube
+publisher: havy-alegria
+name: MassTube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Havysoft/MassTube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Havysoft/MassTube
+identifiers:
+- winget: Havysoft.MassTube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Havysoft/MassTube
+aliases: []

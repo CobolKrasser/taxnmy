@@ -1,0 +1,11 @@
+key: hanthor/bluefincli
+publisher: hanthor
+name: BluefinCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanthor/BluefinCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanthor/BluefinCLI
+identifiers:
+- winget: Hanthor.BluefinCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanthor/BluefinCLI
+aliases: []

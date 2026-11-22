@@ -1,0 +1,13 @@
+key: tesseract-ocr-community/tesseract-ocr-open-source-ocr-engine
+publisher: tesseract-ocr-community
+name: Tesseract-OCR - open source OCR engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tesseract-ocr/tesseract
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tesseract-ocr/tesseract
+identifiers:
+- winget: UB-Mannheim.TesseractOCR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UB-Mannheim/TesseractOCR
+- winget: tesseract-ocr.tesseract
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tesseract-ocr/tesseract
+aliases: []

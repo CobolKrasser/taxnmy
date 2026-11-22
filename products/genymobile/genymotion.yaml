@@ -1,0 +1,11 @@
+key: genymobile/genymotion
+publisher: genymobile
+name: Genymotion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genymobile/Genymotion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genymobile/Genymotion
+identifiers:
+- winget: Genymobile.Genymotion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genymobile/Genymotion
+aliases: []

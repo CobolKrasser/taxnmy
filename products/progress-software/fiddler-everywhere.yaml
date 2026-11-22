@@ -1,0 +1,11 @@
+key: progress-software/fiddler-everywhere
+publisher: progress-software
+name: Fiddler Everywhere
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telerik/Fiddler/Everywhere
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telerik/Fiddler/Everywhere
+identifiers:
+- winget: Telerik.Fiddler.Everywhere
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telerik/Fiddler/Everywhere
+aliases: []

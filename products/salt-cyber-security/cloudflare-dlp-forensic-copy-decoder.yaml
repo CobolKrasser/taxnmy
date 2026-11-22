@@ -1,0 +1,11 @@
+key: salt-cyber-security/cloudflare-dlp-forensic-copy-decoder
+publisher: salt-cyber-security
+name: Cloudflare DLP Forensic Copy Decoder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolvio-B-V/cf-dlp-decode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolvio-B-V/cf-dlp-decode
+identifiers:
+- winget: Devolvio-B-V.cf-dlp-decode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolvio-B-V/cf-dlp-decode
+aliases: []

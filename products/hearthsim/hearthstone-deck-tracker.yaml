@@ -1,0 +1,11 @@
+key: hearthsim/hearthstone-deck-tracker
+publisher: hearthsim
+name: Hearthstone Deck Tracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HearthSim/HearthstoneDeckTracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HearthSim/HearthstoneDeckTracker
+identifiers:
+- winget: HearthSim.HearthstoneDeckTracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HearthSim/HearthstoneDeckTracker
+aliases: []

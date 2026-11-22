@@ -1,0 +1,11 @@
+key: colin-harrison/xming
+publisher: colin-harrison
+name: Xming
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xming/Xming
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xming/Xming
+identifiers:
+- winget: Xming.Xming
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xming/Xming
+aliases: []

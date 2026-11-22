@@ -1,0 +1,11 @@
+key: epos-group/epos-connect
+publisher: epos-group
+name: EPOS Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPOS/EPOSConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPOS/EPOSConnect
+identifiers:
+- winget: EPOS.EPOSConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPOS/EPOSConnect
+aliases: []

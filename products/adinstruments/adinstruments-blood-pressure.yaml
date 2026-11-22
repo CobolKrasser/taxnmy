@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-blood-pressure
+publisher: adinstruments
+name: ADInstruments Blood Pressure
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/BloodPressure
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/BloodPressure
+identifiers:
+- winget: ADInstruments.LabChart.Module.BloodPressure
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/BloodPressure
+aliases: []

@@ -1,0 +1,13 @@
+key: knime/knime-analytics-platform
+publisher: knime
+name: KNIME Analytics Platform
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Knime/AnalyticsPlatform/LTS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Knime/AnalyticsPlatform/LTS
+identifiers:
+- winget: KNIMEAG.KNIMEAnalyticsPlatform
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KNIMEAG/KNIMEAnalyticsPlatform
+- winget: Knime.AnalyticsPlatform.LTS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Knime/AnalyticsPlatform/LTS
+aliases: []

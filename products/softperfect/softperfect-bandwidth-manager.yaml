@@ -1,0 +1,11 @@
+key: softperfect/softperfect-bandwidth-manager
+publisher: softperfect
+name: SoftPerfect Bandwidth Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/BandwidthManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/BandwidthManager
+identifiers:
+- winget: SoftPerfect.BandwidthManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/BandwidthManager
+aliases: []

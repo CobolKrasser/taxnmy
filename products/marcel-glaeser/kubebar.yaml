@@ -1,0 +1,11 @@
+key: marcel-glaeser/kubebar
+publisher: marcel-glaeser
+name: Kubebar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcelGlaeser/Kubebar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcelGlaeser/Kubebar
+identifiers:
+- winget: MarcelGlaeser.Kubebar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcelGlaeser/Kubebar
+aliases: []

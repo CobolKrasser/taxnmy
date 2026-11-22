@@ -1,0 +1,11 @@
+key: greatis-software/greatis-windowse
+publisher: greatis-software
+name: Greatis WinDowse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/WinDowse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/WinDowse
+identifiers:
+- winget: Greatis.WinDowse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/WinDowse
+aliases: []

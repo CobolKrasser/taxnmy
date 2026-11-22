@@ -1,0 +1,11 @@
+key: elegoo/elegoo-slicer
+publisher: elegoo
+name: Elegoo Slicer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elegoo/ElegooSlicer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elegoo/ElegooSlicer
+identifiers:
+- winget: Elegoo.ElegooSlicer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elegoo/ElegooSlicer
+aliases: []

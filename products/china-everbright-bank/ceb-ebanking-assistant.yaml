@@ -1,0 +1,11 @@
+key: china-everbright-bank/ceb-ebanking-assistant
+publisher: china-everbright-bank
+name: CEB EBanking Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CEB/CEBEBankAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CEB/CEBEBankAssistant
+identifiers:
+- winget: CEB.CEBEBankAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CEB/CEBEBankAssistant
+aliases: []

@@ -1,0 +1,11 @@
+key: andrew-cantino/mcfly
+publisher: andrew-cantino
+name: McFly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewCantino/McFly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewCantino/McFly
+identifiers:
+- winget: AndrewCantino.McFly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewCantino/McFly
+aliases: []

@@ -1,0 +1,11 @@
+key: movavi/movavi-gecata
+publisher: movavi
+name: Movavi Gecata
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviGecata
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviGecata
+identifiers:
+- winget: Movavi.MovaviGecata
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviGecata
+aliases: []

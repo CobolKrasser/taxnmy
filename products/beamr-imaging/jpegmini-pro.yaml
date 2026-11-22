@@ -1,0 +1,11 @@
+key: beamr-imaging/jpegmini-pro
+publisher: beamr-imaging
+name: JPEGmini Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Beamr/JPEGminiPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Beamr/JPEGminiPro
+identifiers:
+- winget: Beamr.JPEGminiPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Beamr/JPEGminiPro
+aliases: []

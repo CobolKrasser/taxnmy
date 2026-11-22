@@ -1,0 +1,11 @@
+key: nzxt/nzxt-cam
+publisher: nzxt
+name: NZXT CAM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NZXT/CAM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NZXT/CAM
+identifiers:
+- winget: NZXT.CAM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NZXT/CAM
+aliases: []

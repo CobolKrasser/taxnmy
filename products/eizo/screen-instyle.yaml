@@ -1,0 +1,11 @@
+key: eizo/screen-instyle
+publisher: eizo
+name: Screen InStyle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EIZO/ScreenInStyle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EIZO/ScreenInStyle
+identifiers:
+- winget: EIZO.ScreenInStyle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EIZO/ScreenInStyle
+aliases: []

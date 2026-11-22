@@ -1,0 +1,11 @@
+key: cloudbrew/hopsmd
+publisher: cloudbrew
+name: HopsMD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBrew/HopsMD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBrew/HopsMD
+identifiers:
+- winget: CloudBrew.HopsMD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBrew/HopsMD
+aliases: []

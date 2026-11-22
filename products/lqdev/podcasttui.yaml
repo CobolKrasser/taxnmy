@@ -1,0 +1,11 @@
+key: lqdev/podcasttui
+publisher: lqdev
+name: PodcastTUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lqdev/PodcastTUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lqdev/PodcastTUI
+identifiers:
+- winget: lqdev.PodcastTUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lqdev/PodcastTUI
+aliases: []

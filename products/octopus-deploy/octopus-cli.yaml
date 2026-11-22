@@ -1,0 +1,11 @@
+key: octopus-deploy/octopus-cli
+publisher: octopus-deploy
+name: Octopus CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Cli
+identifiers:
+- winget: OctopusDeploy.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Cli
+aliases: []

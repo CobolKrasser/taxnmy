@@ -1,0 +1,11 @@
+key: tapatch/clickmeter
+publisher: tapatch
+name: ClickMeter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TAPATCH/ClickMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TAPATCH/ClickMeter
+identifiers:
+- winget: TAPATCH.ClickMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TAPATCH/ClickMeter
+aliases: []

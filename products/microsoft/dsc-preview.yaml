@@ -1,0 +1,11 @@
+key: microsoft/dsc-preview
+publisher: microsoft
+name: DSC Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DSC/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DSC/Preview
+identifiers:
+- winget: Microsoft.DSC.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DSC/Preview
+aliases: []

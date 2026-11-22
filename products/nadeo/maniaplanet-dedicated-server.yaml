@@ -1,0 +1,11 @@
+key: nadeo/maniaplanet-dedicated-server
+publisher: nadeo
+name: ManiaPlanet Dedicated Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nadeo/ManiaplanetServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nadeo/ManiaplanetServer
+identifiers:
+- winget: Nadeo.ManiaplanetServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nadeo/ManiaplanetServer
+aliases: []

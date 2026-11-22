@@ -1,0 +1,11 @@
+key: nirsoft/appreadwritecounter
+publisher: nirsoft
+name: AppReadWriteCounter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AppReadWriteCounter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AppReadWriteCounter
+identifiers:
+- winget: NirSoft.AppReadWriteCounter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AppReadWriteCounter
+aliases: []

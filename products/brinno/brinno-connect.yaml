@@ -1,0 +1,11 @@
+key: brinno/brinno-connect
+publisher: brinno
+name: Brinno Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brinno/BrinnoConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brinno/BrinnoConnect
+identifiers:
+- winget: Brinno.BrinnoConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brinno/BrinnoConnect
+aliases: []

@@ -1,0 +1,11 @@
+key: charmbracelet/glow
+publisher: charmbracelet
+name: glow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/glow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/glow
+identifiers:
+- winget: charmbracelet.glow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/glow
+aliases: []

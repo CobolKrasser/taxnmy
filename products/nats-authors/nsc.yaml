@@ -1,0 +1,11 @@
+key: nats-authors/nsc
+publisher: nats-authors
+name: nsc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/nsc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/nsc
+identifiers:
+- winget: NATSAuthors.nsc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/nsc
+aliases: []

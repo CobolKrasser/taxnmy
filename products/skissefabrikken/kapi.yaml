@@ -1,0 +1,11 @@
+key: skissefabrikken/kapi
+publisher: skissefabrikken
+name: Kapi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neokapi/Kapi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neokapi/Kapi
+identifiers:
+- winget: Neokapi.Kapi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neokapi/Kapi
+aliases: []

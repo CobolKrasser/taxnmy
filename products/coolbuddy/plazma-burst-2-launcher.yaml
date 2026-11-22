@@ -1,0 +1,11 @@
+key: coolbuddy/plazma-burst-2-launcher
+publisher: coolbuddy
+name: Plazma Burst 2 launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlazmaBurst2/PlazmaBurst2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlazmaBurst2/PlazmaBurst2
+identifiers:
+- winget: PlazmaBurst2.PlazmaBurst2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlazmaBurst2/PlazmaBurst2
+aliases: []

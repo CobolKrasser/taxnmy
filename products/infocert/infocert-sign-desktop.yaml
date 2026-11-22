@@ -1,0 +1,11 @@
+key: infocert/infocert-sign-desktop
+publisher: infocert
+name: Infocert Sign Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfoCert/InfocertSignDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfoCert/InfocertSignDesktop
+identifiers:
+- winget: InfoCert.InfocertSignDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfoCert/InfocertSignDesktop
+aliases: []

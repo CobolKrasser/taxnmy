@@ -1,0 +1,11 @@
+key: flexoptix/flexoptix-app
+publisher: flexoptix
+name: FLEXOPTIX App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexoptix/FlexoptixApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexoptix/FlexoptixApp
+identifiers:
+- winget: Flexoptix.FlexoptixApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexoptix/FlexoptixApp
+aliases: []

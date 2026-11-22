@@ -1,0 +1,11 @@
+key: scorpio-software/pavel-tools
+publisher: scorpio-software
+name: Pavel Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScorpioSoftware/PavelTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScorpioSoftware/PavelTools
+identifiers:
+- winget: ScorpioSoftware.PavelTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScorpioSoftware/PavelTools
+aliases: []

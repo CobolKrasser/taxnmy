@@ -1,0 +1,11 @@
+key: nimblething/nimbletext
+publisher: nimblething
+name: NimbleText
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbleThingPtyLtd/NimbleText
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbleThingPtyLtd/NimbleText
+identifiers:
+- winget: NimbleThingPtyLtd.NimbleText
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbleThingPtyLtd/NimbleText
+aliases: []

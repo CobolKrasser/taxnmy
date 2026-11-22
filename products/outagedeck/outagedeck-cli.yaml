@@ -1,0 +1,11 @@
+key: outagedeck/outagedeck-cli
+publisher: outagedeck
+name: OutageDeck CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OutageDeck/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OutageDeck/CLI
+identifiers:
+- winget: OutageDeck.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OutageDeck/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: openai/codex-cli
+publisher: openai
+name: Codex CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/Codex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/Codex
+identifiers:
+- winget: OpenAI.Codex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/Codex
+aliases: []

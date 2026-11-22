@@ -1,0 +1,11 @@
+key: apecloud/kbcli
+publisher: apecloud
+name: kbcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApeCloud/kbcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApeCloud/kbcli
+identifiers:
+- winget: ApeCloud.kbcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApeCloud/kbcli
+aliases: []

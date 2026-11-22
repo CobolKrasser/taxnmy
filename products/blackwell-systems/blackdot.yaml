@@ -1,0 +1,11 @@
+key: blackwell-systems/blackdot
+publisher: blackwell-systems
+name: blackdot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/blackdot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/blackdot
+identifiers:
+- winget: BlackwellSystems.blackdot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/blackdot
+aliases: []

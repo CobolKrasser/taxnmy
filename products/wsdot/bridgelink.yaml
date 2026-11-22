@@ -1,0 +1,11 @@
+key: wsdot/bridgelink
+publisher: wsdot
+name: BridgeLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WSDOT/BridgeLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WSDOT/BridgeLink
+identifiers:
+- winget: WSDOT.BridgeLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WSDOT/BridgeLink
+aliases: []

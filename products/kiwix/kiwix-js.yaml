@@ -1,0 +1,11 @@
+key: kiwix/kiwix-js
+publisher: kiwix
+name: Kiwix JS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/KiwixJS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/KiwixJS
+identifiers:
+- winget: Kiwix.KiwixJS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/KiwixJS
+aliases: []

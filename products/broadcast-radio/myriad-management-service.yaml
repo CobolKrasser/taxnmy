@@ -1,0 +1,11 @@
+key: broadcast-radio/myriad-management-service
+publisher: broadcast-radio
+name: Myriad Management Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadManagementService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadManagementService
+identifiers:
+- winget: BroadcastRadio.MyriadManagementService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadManagementService
+aliases: []

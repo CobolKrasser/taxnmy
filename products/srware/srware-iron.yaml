@@ -1,0 +1,11 @@
+key: srware/srware-iron
+publisher: srware
+name: SRWare Iron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SRWare/Iron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SRWare/Iron
+identifiers:
+- winget: SRWare.Iron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SRWare/Iron
+aliases: []

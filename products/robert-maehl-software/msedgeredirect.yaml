@@ -1,0 +1,11 @@
+key: robert-maehl-software/msedgeredirect
+publisher: robert-maehl-software
+name: MSEdgeRedirect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rcmaehl/MSEdgeRedirect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rcmaehl/MSEdgeRedirect
+identifiers:
+- winget: rcmaehl.MSEdgeRedirect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rcmaehl/MSEdgeRedirect
+aliases: []

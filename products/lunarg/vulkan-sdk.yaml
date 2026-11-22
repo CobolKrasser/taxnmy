@@ -1,0 +1,11 @@
+key: lunarg/vulkan-sdk
+publisher: lunarg
+name: Vulkan SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KhronosGroup/VulkanSDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KhronosGroup/VulkanSDK
+identifiers:
+- winget: KhronosGroup.VulkanSDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KhronosGroup/VulkanSDK
+aliases: []

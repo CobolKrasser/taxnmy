@@ -1,0 +1,15 @@
+key: discord/discord-canary
+publisher: discord
+name: Discord Canary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Canary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Canary
+identifiers:
+- winget: Discord.Discord.Canary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Canary
+- winget: Discord.Discord.Canary.arm64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Canary/arm64
+- winget: Discord.Discord.Canary.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Canary/x86
+aliases: []

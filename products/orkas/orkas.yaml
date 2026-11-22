@@ -1,0 +1,11 @@
+key: orkas/orkas
+publisher: orkas
+name: Orkas
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orkas-AI/Orkas
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orkas-AI/Orkas
+identifiers:
+- winget: Orkas-AI.Orkas
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orkas-AI/Orkas
+aliases: []

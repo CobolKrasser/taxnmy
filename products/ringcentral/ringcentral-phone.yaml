@@ -1,0 +1,11 @@
+key: ringcentral/ringcentral-phone
+publisher: ringcentral
+name: RingCentral Phone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralPhone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralPhone
+identifiers:
+- winget: RingCentral.RingCentralPhone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralPhone
+aliases: []

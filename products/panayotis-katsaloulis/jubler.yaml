@@ -1,0 +1,11 @@
+key: panayotis-katsaloulis/jubler
+publisher: panayotis-katsaloulis
+name: Jubler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jubler/App
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jubler/App
+identifiers:
+- winget: Jubler.App
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jubler/App
+aliases: []

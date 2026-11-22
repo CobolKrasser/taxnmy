@@ -1,0 +1,11 @@
+key: ravitz-computers/hare
+publisher: ravitz-computers
+name: HARE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RC/HareRGB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RC/HareRGB
+identifiers:
+- winget: RC.HareRGB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RC/HareRGB
+aliases: []

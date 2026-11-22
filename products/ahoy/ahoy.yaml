@@ -1,0 +1,11 @@
+key: ahoy/ahoy
+publisher: ahoy
+name: Ahoy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ahoy/Ahoy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ahoy/Ahoy
+identifiers:
+- winget: Ahoy.Ahoy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ahoy/Ahoy
+aliases: []

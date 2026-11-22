@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-singapore-server
+publisher: riot-games
+name: League of Legends (Singapore server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/SG2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/SG2
+identifiers:
+- winget: RiotGames.LeagueOfLegends.SG2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/SG2
+aliases: []

@@ -1,0 +1,11 @@
+key: shinovon/kemulator
+publisher: shinovon
+name: KEmulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shinovon/KEmnn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shinovon/KEmnn
+identifiers:
+- winget: shinovon.KEmnn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shinovon/KEmnn
+aliases: []

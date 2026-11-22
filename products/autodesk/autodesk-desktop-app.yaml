@@ -1,0 +1,11 @@
+key: autodesk/autodesk-desktop-app
+publisher: autodesk
+name: Autodesk Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesktopApp
+identifiers:
+- winget: Autodesk.DesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesktopApp
+aliases: []

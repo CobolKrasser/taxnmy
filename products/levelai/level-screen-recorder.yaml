@@ -1,0 +1,11 @@
+key: levelai/level-screen-recorder
+publisher: levelai
+name: Level Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LevelAI/LevelScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LevelAI/LevelScreenRecorder
+identifiers:
+- winget: LevelAI.LevelScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LevelAI/LevelScreenRecorder
+aliases: []

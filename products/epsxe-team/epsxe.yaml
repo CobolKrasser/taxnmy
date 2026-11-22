@@ -1,0 +1,11 @@
+key: epsxe-team/epsxe
+publisher: epsxe-team
+name: ePSXe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ePSXe/ePSXe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ePSXe/ePSXe
+identifiers:
+- winget: ePSXe.ePSXe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ePSXe/ePSXe
+aliases: []

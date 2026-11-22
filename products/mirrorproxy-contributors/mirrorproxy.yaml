@@ -1,0 +1,11 @@
+key: mirrorproxy-contributors/mirrorproxy
+publisher: mirrorproxy-contributors
+name: MirrorProxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Inbjo/MirrorProxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Inbjo/MirrorProxy
+identifiers:
+- winget: Inbjo.MirrorProxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Inbjo/MirrorProxy
+aliases: []

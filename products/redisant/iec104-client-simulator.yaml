@@ -1,0 +1,11 @@
+key: redisant/iec104-client-simulator
+publisher: redisant
+name: IEC104 Client Simulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC104ClientSimulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC104ClientSimulator
+identifiers:
+- winget: Redisant.IEC104ClientSimulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC104ClientSimulator
+aliases: []

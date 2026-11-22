@@ -1,0 +1,11 @@
+key: directcompare/directcompare
+publisher: directcompare
+name: DirectCompare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirectCompare/DirectCompare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirectCompare/DirectCompare
+identifiers:
+- winget: DirectCompare.DirectCompare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirectCompare/DirectCompare
+aliases: []

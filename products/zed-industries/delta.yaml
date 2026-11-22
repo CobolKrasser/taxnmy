@@ -1,0 +1,11 @@
+key: zed-industries/delta
+publisher: zed-industries
+name: Delta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Delta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Delta
+identifiers:
+- winget: ZedIndustries.Delta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Delta
+aliases: []

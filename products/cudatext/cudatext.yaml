@@ -1,0 +1,11 @@
+key: cudatext/cudatext
+publisher: cudatext
+name: CudaText
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CudaText/CudaText
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CudaText/CudaText
+identifiers:
+- winget: CudaText.CudaText
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CudaText/CudaText
+aliases: []

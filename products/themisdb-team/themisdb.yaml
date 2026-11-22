@@ -1,0 +1,11 @@
+key: themisdb-team/themisdb
+publisher: themisdb-team
+name: ThemisDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThemisDB/ThemisDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThemisDB/ThemisDB
+identifiers:
+- winget: ThemisDB.ThemisDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThemisDB/ThemisDB
+aliases: []

@@ -1,0 +1,11 @@
+key: paludour/tenclips
+publisher: paludour
+name: TenClips
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paludour/TenClips
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paludour/TenClips
+identifiers:
+- winget: Paludour.TenClips
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paludour/TenClips
+aliases: []

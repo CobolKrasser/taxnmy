@@ -1,0 +1,11 @@
+key: signpath/signpath-crypto-providers-windows-ksp
+publisher: signpath
+name: SignPath Crypto Providers - Windows KSP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SignPath/CryptoProviders/WindowsKSP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SignPath/CryptoProviders/WindowsKSP
+identifiers:
+- winget: SignPath.CryptoProviders.WindowsKSP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SignPath/CryptoProviders/WindowsKSP
+aliases: []

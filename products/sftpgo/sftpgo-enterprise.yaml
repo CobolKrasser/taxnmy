@@ -1,0 +1,11 @@
+key: sftpgo/sftpgo-enterprise
+publisher: sftpgo
+name: SFTPGo Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drakkan/SFTPGoEnterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drakkan/SFTPGoEnterprise
+identifiers:
+- winget: drakkan.SFTPGoEnterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drakkan/SFTPGoEnterprise
+aliases: []

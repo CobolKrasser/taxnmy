@@ -1,0 +1,13 @@
+key: shane-harris/sidequest
+publisher: shane-harris
+name: SideQuest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SideQuestVR/SideQuest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SideQuestVR/SideQuest
+identifiers:
+- winget: SideQuestVR.SideQuest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SideQuestVR/SideQuest
+- winget: SideQuestVR.SideQuestEasyInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SideQuestVR/SideQuestEasyInstaller
+aliases: []

@@ -1,0 +1,11 @@
+key: monolith/monolith
+publisher: monolith
+name: Monolith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amine123max/Monolith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amine123max/Monolith
+identifiers:
+- winget: amine123max.Monolith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amine123max/Monolith
+aliases: []

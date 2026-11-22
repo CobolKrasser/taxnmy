@@ -1,0 +1,11 @@
+key: ntwind/clipboard-remote
+publisher: ntwind
+name: Clipboard Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/ClipboardRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/ClipboardRemote
+identifiers:
+- winget: ntwind.ClipboardRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/ClipboardRemote
+aliases: []

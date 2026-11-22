@@ -1,0 +1,15 @@
+key: voidtools/everything
+publisher: voidtools
+name: Everything
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything
+identifiers:
+- winget: voidtools.Everything
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything
+- winget: voidtools.Everything.Alpha
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Alpha
+- winget: voidtools.Everything.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Beta
+aliases: []

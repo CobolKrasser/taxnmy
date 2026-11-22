@@ -1,0 +1,11 @@
+key: zaarrg/stremio-community
+publisher: zaarrg
+name: Stremio Community
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zaarrg/StremioCommunity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zaarrg/StremioCommunity
+identifiers:
+- winget: Zaarrg.StremioCommunity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zaarrg/StremioCommunity
+aliases: []

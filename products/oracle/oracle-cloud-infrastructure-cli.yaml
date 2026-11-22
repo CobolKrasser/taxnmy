@@ -1,0 +1,11 @@
+key: oracle/oracle-cloud-infrastructure-cli
+publisher: oracle
+name: Oracle Cloud Infrastructure CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OCI-CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OCI-CLI
+identifiers:
+- winget: Oracle.OCI-CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/OCI-CLI
+aliases: []

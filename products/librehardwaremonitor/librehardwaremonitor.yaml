@@ -1,0 +1,11 @@
+key: librehardwaremonitor/librehardwaremonitor
+publisher: librehardwaremonitor
+name: LibreHardwareMonitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreHardwareMonitor/LibreHardwareMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreHardwareMonitor/LibreHardwareMonitor
+identifiers:
+- winget: LibreHardwareMonitor.LibreHardwareMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreHardwareMonitor/LibreHardwareMonitor
+aliases: []

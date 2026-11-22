@@ -1,0 +1,11 @@
+key: binarymark/file-hash-generator-free-edition
+publisher: binarymark
+name: File Hash Generator Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/FileHashGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/FileHashGenerator
+identifiers:
+- winget: BinaryMark.FileHashGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/FileHashGenerator
+aliases: []

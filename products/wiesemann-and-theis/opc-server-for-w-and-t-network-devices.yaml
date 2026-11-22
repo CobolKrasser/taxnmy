@@ -1,0 +1,11 @@
+key: wiesemann-and-theis/opc-server-for-w-and-t-network-devices
+publisher: wiesemann-and-theis
+name: OPC Server for W&T Network Devices
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/NetworkOPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/NetworkOPC
+identifiers:
+- winget: Wiesemann-Theis.NetworkOPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/NetworkOPC
+aliases: []

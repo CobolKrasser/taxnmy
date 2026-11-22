@@ -1,0 +1,11 @@
+key: dave-jeffery/todesktop
+publisher: dave-jeffery
+name: ToDesktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToDesktop/ToDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToDesktop/ToDesktop
+identifiers:
+- winget: ToDesktop.ToDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToDesktop/ToDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: tecwindow/wikisearch
+publisher: tecwindow
+name: WikiSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecwindow/WikiSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecwindow/WikiSearch
+identifiers:
+- winget: tecwindow.WikiSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecwindow/WikiSearch
+aliases: []

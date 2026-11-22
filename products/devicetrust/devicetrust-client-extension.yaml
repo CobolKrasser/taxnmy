@@ -1,0 +1,11 @@
+key: devicetrust/devicetrust-client-extension
+publisher: devicetrust
+name: deviceTRUST Client Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceTRUST/deviceTRUSTClientExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceTRUST/deviceTRUSTClientExtension
+identifiers:
+- winget: deviceTRUST.deviceTRUSTClientExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deviceTRUST/deviceTRUSTClientExtension
+aliases: []

@@ -1,0 +1,11 @@
+key: movavi/movavi-video-converter
+publisher: movavi
+name: Movavi Video Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoConverter
+identifiers:
+- winget: Movavi.MovaviVideoConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoConverter
+aliases: []

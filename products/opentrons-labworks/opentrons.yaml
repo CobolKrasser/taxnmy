@@ -1,0 +1,11 @@
+key: opentrons-labworks/opentrons
+publisher: opentrons-labworks
+name: Opentrons
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpentronsLabworks/Opentrons
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpentronsLabworks/Opentrons
+identifiers:
+- winget: OpentronsLabworks.Opentrons
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpentronsLabworks/Opentrons
+aliases: []

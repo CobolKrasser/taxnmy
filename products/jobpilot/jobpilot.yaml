@@ -1,0 +1,11 @@
+key: jobpilot/jobpilot
+publisher: jobpilot
+name: JobPilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jlifeng/JobPilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jlifeng/JobPilot
+identifiers:
+- winget: jlifeng.JobPilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jlifeng/JobPilot
+aliases: []

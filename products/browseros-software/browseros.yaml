@@ -1,0 +1,13 @@
+key: browseros-software/browseros
+publisher: browseros-software
+name: BrowserOS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS
+identifiers:
+- winget: BrowserOS.BrowserOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS
+- winget: BrowserOS.BrowserOSCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOSCLI
+aliases: []

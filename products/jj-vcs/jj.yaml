@@ -1,0 +1,11 @@
+key: jj-vcs/jj
+publisher: jj-vcs
+name: jj
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jj-vcs/jj
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jj-vcs/jj
+identifiers:
+- winget: jj-vcs.jj
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jj-vcs/jj
+aliases: []

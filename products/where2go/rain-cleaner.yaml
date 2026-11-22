@@ -1,0 +1,11 @@
+key: where2go/rain-cleaner
+publisher: where2go
+name: Rain Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TVasilev/RainCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TVasilev/RainCleaner
+identifiers:
+- winget: TVasilev.RainCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TVasilev/RainCleaner
+aliases: []

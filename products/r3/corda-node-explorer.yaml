@@ -1,0 +1,11 @@
+key: r3/corda-node-explorer
+publisher: r3
+name: Corda Node Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/corda/node-explorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/corda/node-explorer
+identifiers:
+- winget: corda.node-explorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/corda/node-explorer
+aliases: []

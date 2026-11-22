@@ -1,0 +1,13 @@
+key: bosyun/pixso
+publisher: bosyun
+name: Pixso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/Pixso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/Pixso
+identifiers:
+- winget: Bosyun.Pixso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/Pixso
+- winget: Bosyun.Pixso.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/Pixso/CN
+aliases: []

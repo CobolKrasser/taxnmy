@@ -1,0 +1,11 @@
+key: dsherret/dprint
+publisher: dsherret
+name: dprint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dprint/dprint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dprint/dprint
+identifiers:
+- winget: dprint.dprint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dprint/dprint
+aliases: []

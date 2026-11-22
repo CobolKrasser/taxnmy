@@ -1,0 +1,11 @@
+key: loxone-electronics/loxone-config
+publisher: loxone-electronics
+name: Loxone Config
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loxone/LoxoneConfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loxone/LoxoneConfig
+identifiers:
+- winget: Loxone.LoxoneConfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loxone/LoxoneConfig
+aliases: []

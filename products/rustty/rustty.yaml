@@ -1,0 +1,11 @@
+key: rustty/rustty
+publisher: rustty
+name: Rustty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rustty/Rustty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rustty/Rustty
+identifiers:
+- winget: rustty.Rustty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rustty/Rustty
+aliases: []

@@ -1,0 +1,11 @@
+key: henrypp/hostsmgr
+publisher: henrypp
+name: hostsmgr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/henrypp/hostsmgr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/henrypp/hostsmgr
+identifiers:
+- winget: henrypp.hostsmgr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/henrypp/hostsmgr
+aliases: []

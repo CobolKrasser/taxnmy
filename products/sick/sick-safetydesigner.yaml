@@ -1,0 +1,11 @@
+key: sick/sick-safetydesigner
+publisher: sick
+name: SICK SafetyDesigner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SICK/SafetyDesigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SICK/SafetyDesigner
+identifiers:
+- winget: SICK.SafetyDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SICK/SafetyDesigner
+aliases: []

@@ -1,0 +1,11 @@
+key: azat-tazayan/processcap
+publisher: azat-tazayan
+name: ProcessCap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tazayan/ProcessCap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tazayan/ProcessCap
+identifiers:
+- winget: tazayan.ProcessCap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tazayan/ProcessCap
+aliases: []

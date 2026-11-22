@@ -1,0 +1,11 @@
+key: ams-solution/ams-client
+publisher: ams-solution
+name: ams.Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ams/SolutionAG/ams/Client/X64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ams/SolutionAG/ams/Client/X64
+identifiers:
+- winget: ams.SolutionAG.ams.Client.X64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ams/SolutionAG/ams/Client/X64
+aliases: []

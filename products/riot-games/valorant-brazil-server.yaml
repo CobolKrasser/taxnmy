@@ -1,0 +1,11 @@
+key: riot-games/valorant-brazil-server
+publisher: riot-games
+name: VALORANT (Brazil server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/BR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/BR
+identifiers:
+- winget: RiotGames.Valorant.BR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/BR
+aliases: []

@@ -1,0 +1,11 @@
+key: mtrop/doomtools
+publisher: mtrop
+name: DoomTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MTrop/DoomTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MTrop/DoomTools
+identifiers:
+- winget: MTrop.DoomTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MTrop/DoomTools
+aliases: []

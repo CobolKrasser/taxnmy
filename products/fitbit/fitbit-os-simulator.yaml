@@ -1,0 +1,11 @@
+key: fitbit/fitbit-os-simulator
+publisher: fitbit
+name: Fitbit OS Simulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fitbit/FitbitOSSimulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fitbit/FitbitOSSimulator
+identifiers:
+- winget: Fitbit.FitbitOSSimulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fitbit/FitbitOSSimulator
+aliases: []

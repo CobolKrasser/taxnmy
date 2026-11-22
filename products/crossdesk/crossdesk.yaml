@@ -1,0 +1,11 @@
+key: crossdesk/crossdesk
+publisher: crossdesk
+name: CrossDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JunkunDi/CrossDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JunkunDi/CrossDesk
+identifiers:
+- winget: JunkunDi.CrossDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JunkunDi/CrossDesk
+aliases: []

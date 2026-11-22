@@ -1,0 +1,11 @@
+key: browsh/browsh
+publisher: browsh
+name: Browsh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/browsh/browsh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/browsh/browsh
+identifiers:
+- winget: browsh.browsh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/browsh/browsh
+aliases: []

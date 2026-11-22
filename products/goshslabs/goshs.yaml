@@ -1,0 +1,11 @@
+key: goshslabs/goshs
+publisher: goshslabs
+name: goshs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoshsLabs/Goshs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoshsLabs/Goshs
+identifiers:
+- winget: GoshsLabs.Goshs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoshsLabs/Goshs
+aliases: []

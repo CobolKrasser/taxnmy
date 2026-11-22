@@ -1,0 +1,11 @@
+key: pvs/audactouch
+publisher: pvs
+name: AudacTouch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/AUDACTouch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/AUDACTouch
+identifiers:
+- winget: PVS.AUDACTouch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/AUDACTouch
+aliases: []

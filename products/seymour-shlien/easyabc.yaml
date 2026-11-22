@@ -1,0 +1,11 @@
+key: seymour-shlien/easyabc
+publisher: seymour-shlien
+name: EasyABC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyABC/EasyABC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyABC/EasyABC
+identifiers:
+- winget: EasyABC.EasyABC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyABC/EasyABC
+aliases: []

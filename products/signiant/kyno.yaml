@@ -1,0 +1,11 @@
+key: signiant/kyno
+publisher: signiant
+name: Kyno
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Signiant/Kyno
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Signiant/Kyno
+identifiers:
+- winget: Signiant.Kyno
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Signiant/Kyno
+aliases: []

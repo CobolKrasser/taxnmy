@@ -1,0 +1,13 @@
+key: suse/rancher-desktop
+publisher: suse
+name: Rancher Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/RancherDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/RancherDesktop
+identifiers:
+- winget: SUSE.RancherDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/RancherDesktop
+- winget: SUSE.RancherDesktop.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SUSE/RancherDesktop/2
+aliases: []

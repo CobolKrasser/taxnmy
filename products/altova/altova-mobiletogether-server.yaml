@@ -1,0 +1,11 @@
+key: altova/altova-mobiletogether-server
+publisher: altova
+name: Altova MobileTogether Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MobileTogetherServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MobileTogetherServer
+identifiers:
+- winget: Altova.MobileTogetherServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MobileTogetherServer
+aliases: []

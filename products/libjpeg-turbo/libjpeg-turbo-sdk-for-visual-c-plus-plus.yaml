@@ -1,0 +1,11 @@
+key: libjpeg-turbo/libjpeg-turbo-sdk-for-visual-c-plus-plus
+publisher: libjpeg-turbo
+name: libjpeg-turbo SDK for Visual C++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libjpeg-turbo/libjpeg-turbo/VC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libjpeg-turbo/libjpeg-turbo/VC
+identifiers:
+- winget: libjpeg-turbo.libjpeg-turbo.VC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libjpeg-turbo/libjpeg-turbo/VC
+aliases: []

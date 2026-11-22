@@ -1,0 +1,11 @@
+key: danish-myo-technology/myoview
+publisher: danish-myo-technology
+name: MyoVIEW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoVIEW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoVIEW
+identifiers:
+- winget: DMT.MyoVIEW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoVIEW
+aliases: []

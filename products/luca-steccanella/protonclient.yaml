@@ -1,0 +1,11 @@
+key: luca-steccanella/protonclient
+publisher: luca-steccanella
+name: ProtonClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steccas/ProtonClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steccas/ProtonClient
+identifiers:
+- winget: Steccas.ProtonClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steccas/ProtonClient
+aliases: []

@@ -1,0 +1,11 @@
+key: axon-hub/axon
+publisher: axon-hub
+name: axon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxonHub/Axon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxonHub/Axon
+identifiers:
+- winget: AxonHub.Axon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxonHub/Axon
+aliases: []

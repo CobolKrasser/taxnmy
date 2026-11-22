@@ -1,0 +1,11 @@
+key: prsm-contributors/prsm-language
+publisher: prsm-contributors
+name: PrSM Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrSM/PrSM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrSM/PrSM
+identifiers:
+- winget: PrSM.PrSM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrSM/PrSM
+aliases: []

@@ -1,0 +1,11 @@
+key: chemaxon/chemaxon-marvin-suite
+publisher: chemaxon
+name: ChemAxon Marvin Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/Marvin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/Marvin
+identifiers:
+- winget: ChemAxon.Marvin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/Marvin
+aliases: []

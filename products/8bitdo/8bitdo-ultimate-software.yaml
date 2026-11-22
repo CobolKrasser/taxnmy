@@ -1,0 +1,11 @@
+key: 8bitdo/8bitdo-ultimate-software
+publisher: 8bitdo
+name: 8BitDo Ultimate Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8BitDo/UltimateSoftwareV2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8BitDo/UltimateSoftwareV2
+identifiers:
+- winget: 8BitDo.UltimateSoftwareV2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8BitDo/UltimateSoftwareV2
+aliases: []

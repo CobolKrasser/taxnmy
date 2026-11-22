@@ -1,0 +1,11 @@
+key: furlab/furlab-cli
+publisher: furlab
+name: FurLab CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FurLab/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FurLab/CLI
+identifiers:
+- winget: FurLab.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FurLab/CLI
+aliases: []

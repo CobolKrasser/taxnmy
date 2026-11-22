@@ -1,0 +1,11 @@
+key: freifunk-muenchen/freifunkmeet
+publisher: freifunk-muenchen
+name: FreifunkMeet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freifunkMUC/FreifunkMeet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freifunkMUC/FreifunkMeet
+identifiers:
+- winget: freifunkMUC.FreifunkMeet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freifunkMUC/FreifunkMeet
+aliases: []

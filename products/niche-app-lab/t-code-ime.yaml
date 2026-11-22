@@ -1,0 +1,13 @@
+key: niche-app-lab/t-code-ime
+publisher: niche-app-lab
+name: T-Code IME
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NicheAppLab/T-CodeIME
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NicheAppLab/T-CodeIME
+identifiers:
+- winget: NicheAppLab.T-CodeIME
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NicheAppLab/T-CodeIME
+- winget: NicheAppLab.T-CodeIME-JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NicheAppLab/T-CodeIME-JRE
+aliases: []

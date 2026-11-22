@@ -1,0 +1,11 @@
+key: sparrow-wallet/sparrow-bitcoin-wallet
+publisher: sparrow-wallet
+name: Sparrow Bitcoin Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sparrowwallet/sparrow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sparrowwallet/sparrow
+identifiers:
+- winget: sparrowwallet.sparrow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sparrowwallet/sparrow
+aliases: []

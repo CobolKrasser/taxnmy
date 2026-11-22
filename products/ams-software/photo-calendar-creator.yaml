@@ -1,0 +1,11 @@
+key: ams-software/photo-calendar-creator
+publisher: ams-software
+name: Photo Calendar Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoCalendarCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoCalendarCreator
+identifiers:
+- winget: AMSSoftware.PhotoCalendarCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoCalendarCreator
+aliases: []

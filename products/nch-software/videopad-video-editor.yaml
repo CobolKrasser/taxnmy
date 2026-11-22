@@ -1,0 +1,11 @@
+key: nch-software/videopad-video-editor
+publisher: nch-software
+name: VideoPad Video Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/VideoPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/VideoPad
+identifiers:
+- winget: NCHSoftware.VideoPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/VideoPad
+aliases: []

@@ -1,0 +1,11 @@
+key: hex/mirror-for-photoshop-server
+publisher: hex
+name: Mirror for Photoshop Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hex/MirrorForPhotoshopServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hex/MirrorForPhotoshopServer
+identifiers:
+- winget: Hex.MirrorForPhotoshopServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hex/MirrorForPhotoshopServer
+aliases: []

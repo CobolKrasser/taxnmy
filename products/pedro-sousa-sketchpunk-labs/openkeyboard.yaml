@@ -1,0 +1,11 @@
+key: pedro-sousa-sketchpunk-labs/openkeyboard
+publisher: pedro-sousa-sketchpunk-labs
+name: OpenKeyboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sketchpunk/OpenKeyboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sketchpunk/OpenKeyboard
+identifiers:
+- winget: Sketchpunk.OpenKeyboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sketchpunk/OpenKeyboard
+aliases: []

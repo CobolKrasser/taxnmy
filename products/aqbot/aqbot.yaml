@@ -1,0 +1,11 @@
+key: aqbot/aqbot
+publisher: aqbot
+name: AQBot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AQBot/AQBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AQBot/AQBot
+identifiers:
+- winget: AQBot.AQBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AQBot/AQBot
+aliases: []

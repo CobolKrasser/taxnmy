@@ -1,0 +1,11 @@
+key: vald/vald-forcedecks-suite
+publisher: vald
+name: VALD ForceDecks Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VALD/ForceDecksSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VALD/ForceDecksSuite
+identifiers:
+- winget: VALD.ForceDecksSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VALD/ForceDecksSuite
+aliases: []

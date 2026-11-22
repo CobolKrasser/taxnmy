@@ -1,0 +1,11 @@
+key: cryptographic-triangles/cryptographic-triangles-qt-wallet
+publisher: cryptographic-triangles
+name: Cryptographic Triangles Qt Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptographicTriangles/TrianglesQt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptographicTriangles/TrianglesQt
+identifiers:
+- winget: CryptographicTriangles.TrianglesQt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptographicTriangles/TrianglesQt
+aliases: []

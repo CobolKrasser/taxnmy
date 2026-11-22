@@ -1,0 +1,11 @@
+key: taisei-project/taisei-project
+publisher: taisei-project
+name: Taisei Project
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taisei/Taisei
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taisei/Taisei
+identifiers:
+- winget: Taisei.Taisei
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taisei/Taisei
+aliases: []

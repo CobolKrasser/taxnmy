@@ -1,0 +1,11 @@
+key: satoshilabs/trezor-bridge
+publisher: satoshilabs
+name: Trezor Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatoshiLabs/TrezorBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatoshiLabs/TrezorBridge
+identifiers:
+- winget: SatoshiLabs.TrezorBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatoshiLabs/TrezorBridge
+aliases: []

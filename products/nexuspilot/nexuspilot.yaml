@@ -1,0 +1,11 @@
+key: nexuspilot/nexuspilot
+publisher: nexuspilot
+name: NexusPilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuqierMcl/NexusPilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuqierMcl/NexusPilot
+identifiers:
+- winget: GuqierMcl.NexusPilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuqierMcl/NexusPilot
+aliases: []

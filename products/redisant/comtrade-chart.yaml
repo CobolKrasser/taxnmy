@@ -1,0 +1,11 @@
+key: redisant/comtrade-chart
+publisher: redisant
+name: Comtrade Chart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ComtradeChart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ComtradeChart
+identifiers:
+- winget: Redisant.ComtradeChart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ComtradeChart
+aliases: []

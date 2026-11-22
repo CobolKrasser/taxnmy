@@ -1,0 +1,11 @@
+key: samsung-sds/brity-meeting
+publisher: samsung-sds
+name: Brity Meeting
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsungSDS/BrityMeeting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsungSDS/BrityMeeting
+identifiers:
+- winget: SamsungSDS.BrityMeeting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsungSDS/BrityMeeting
+aliases: []

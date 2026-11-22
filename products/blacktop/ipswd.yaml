@@ -1,0 +1,11 @@
+key: blacktop/ipswd
+publisher: blacktop
+name: ipswd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blacktop/ipswd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blacktop/ipswd
+identifiers:
+- winget: blacktop.ipswd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blacktop/ipswd
+aliases: []

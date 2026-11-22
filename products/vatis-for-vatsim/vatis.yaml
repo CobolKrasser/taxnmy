@@ -1,0 +1,11 @@
+key: vatis-for-vatsim/vatis
+publisher: vatis-for-vatsim
+name: vATIS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vatis-project/vAtis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vatis-project/vAtis
+identifiers:
+- winget: vatis-project.vAtis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vatis-project/vAtis
+aliases: []

@@ -1,0 +1,11 @@
+key: cobalt-ssg/cobalt-ssg
+publisher: cobalt-ssg
+name: Cobalt SSG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cobalt-org/cobalt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cobalt-org/cobalt
+identifiers:
+- winget: cobalt-org.cobalt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cobalt-org/cobalt
+aliases: []

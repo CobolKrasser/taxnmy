@@ -1,0 +1,11 @@
+key: gryt/gryt-chat
+publisher: gryt
+name: Gryt Chat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gryt/GrytChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gryt/GrytChat
+identifiers:
+- winget: Gryt.GrytChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gryt/GrytChat
+aliases: []

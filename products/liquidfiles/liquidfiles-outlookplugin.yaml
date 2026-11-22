@@ -1,0 +1,11 @@
+key: liquidfiles/liquidfiles-outlookplugin
+publisher: liquidfiles
+name: LiquidFiles OutlookPlugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/LiquidFilesOutlookPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/LiquidFilesOutlookPlugin
+identifiers:
+- winget: LiquidFiles.LiquidFilesOutlookPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/LiquidFilesOutlookPlugin
+aliases: []

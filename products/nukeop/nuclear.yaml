@@ -1,0 +1,11 @@
+key: nukeop/nuclear
+publisher: nukeop
+name: nuclear
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nukeop/nuclear
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nukeop/nuclear
+identifiers:
+- winget: nukeop.nuclear
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nukeop/nuclear
+aliases: []

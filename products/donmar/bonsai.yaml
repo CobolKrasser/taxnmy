@@ -1,0 +1,11 @@
+key: donmar/bonsai
+publisher: donmar
+name: bonsai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/donmar/bonsai
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/donmar/bonsai
+identifiers:
+- winget: donmar.bonsai
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/donmar/bonsai
+aliases: []

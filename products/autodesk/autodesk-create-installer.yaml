@@ -1,0 +1,11 @@
+key: autodesk/autodesk-create-installer
+publisher: autodesk
+name: Autodesk Create Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/NavisworksFreedom/2026
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/NavisworksFreedom/2026
+identifiers:
+- winget: Autodesk.NavisworksFreedom.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/NavisworksFreedom/2026
+aliases: []

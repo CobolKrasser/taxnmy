@@ -1,0 +1,11 @@
+key: elaborate-bytes/virtualclonedrive
+publisher: elaborate-bytes
+name: VirtualCloneDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElaborateBytes/VirtualCloneDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElaborateBytes/VirtualCloneDrive
+identifiers:
+- winget: ElaborateBytes.VirtualCloneDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElaborateBytes/VirtualCloneDrive
+aliases: []

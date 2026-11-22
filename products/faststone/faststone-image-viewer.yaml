@@ -1,0 +1,11 @@
+key: faststone/faststone-image-viewer
+publisher: faststone
+name: FastStone Image Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastStone/Viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastStone/Viewer
+identifiers:
+- winget: FastStone.Viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastStone/Viewer
+aliases: []

@@ -1,0 +1,11 @@
+key: mailwing/mailwing
+publisher: mailwing
+name: Mailwing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mailwing/Mailwing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mailwing/Mailwing
+identifiers:
+- winget: Mailwing.Mailwing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mailwing/Mailwing
+aliases: []

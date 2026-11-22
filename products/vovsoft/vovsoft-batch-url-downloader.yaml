@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-batch-url-downloader
+publisher: vovsoft
+name: Vovsoft Batch URL Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchURLDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchURLDownloader
+identifiers:
+- winget: VovSoft.BatchURLDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchURLDownloader
+aliases: []

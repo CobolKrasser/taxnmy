@@ -1,0 +1,11 @@
+key: project-env/project-env-shell
+publisher: project-env
+name: Project-Env Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectEnv/ProjectEnvShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectEnv/ProjectEnvShell
+identifiers:
+- winget: ProjectEnv.ProjectEnvShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectEnv/ProjectEnvShell
+aliases: []

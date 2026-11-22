@@ -1,0 +1,11 @@
+key: ribomx/overlayapp
+publisher: ribomx
+name: OverlayApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RibomX/OverlayApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RibomX/OverlayApp
+identifiers:
+- winget: RibomX.OverlayApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RibomX/OverlayApp
+aliases: []

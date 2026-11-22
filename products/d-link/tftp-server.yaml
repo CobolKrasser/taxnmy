@@ -1,0 +1,11 @@
+key: d-link/tftp-server
+publisher: d-link
+name: TFTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Link/TFTPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Link/TFTPServer
+identifiers:
+- winget: D-Link.TFTPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/D-Link/TFTPServer
+aliases: []

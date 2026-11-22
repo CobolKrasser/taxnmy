@@ -1,0 +1,11 @@
+key: fujitsu-client-computing/deskupdate
+publisher: fujitsu-client-computing
+name: DeskUpdate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FujitsuClientComputingLimited/DeskUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FujitsuClientComputingLimited/DeskUpdate
+identifiers:
+- winget: FujitsuClientComputingLimited.DeskUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FujitsuClientComputingLimited/DeskUpdate
+aliases: []

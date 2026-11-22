@@ -1,0 +1,13 @@
+key: msi/msi-kombustor
+publisher: msi
+name: MSI Kombustor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/Kombustor/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/Kombustor/2
+identifiers:
+- winget: MSI.Kombustor.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/Kombustor/2
+- winget: MSI.Kombustor.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/Kombustor/3
+aliases: []

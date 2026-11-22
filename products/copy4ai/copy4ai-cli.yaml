@@ -1,0 +1,11 @@
+key: copy4ai/copy4ai-cli
+publisher: copy4ai
+name: Copy4AI CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Copy4AI/Copy4AI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Copy4AI/Copy4AI
+identifiers:
+- winget: Copy4AI.Copy4AI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Copy4AI/Copy4AI
+aliases: []

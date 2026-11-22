@@ -1,0 +1,11 @@
+key: samuel-elliott/nintendo-switch-online
+publisher: samuel-elliott
+name: Nintendo Switch Online
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamuelElliott/NintendoSwitchOnline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamuelElliott/NintendoSwitchOnline
+identifiers:
+- winget: SamuelElliott.NintendoSwitchOnline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamuelElliott/NintendoSwitchOnline
+aliases: []

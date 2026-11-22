@@ -1,0 +1,13 @@
+key: flash-integro/vsdc-free-video-editor
+publisher: flash-integro
+name: VSDC Free Video Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/Editor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/Editor
+identifiers:
+- winget: VSDC.Editor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/Editor
+- winget: VSDC.Editor.32-bit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSDC/Editor/32-bit
+aliases: []

@@ -1,0 +1,11 @@
+key: cxworld/capframex-beta
+publisher: cxworld
+name: CapFrameX Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CXWorld/CapFrameX/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CXWorld/CapFrameX/Beta
+identifiers:
+- winget: CXWorld.CapFrameX.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CXWorld/CapFrameX/Beta
+aliases: []

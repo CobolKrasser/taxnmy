@@ -1,0 +1,11 @@
+key: softanics/armdot
+publisher: softanics
+name: ArmDot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softanics/ArmDot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softanics/ArmDot
+identifiers:
+- winget: Softanics.ArmDot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softanics/ArmDot
+aliases: []

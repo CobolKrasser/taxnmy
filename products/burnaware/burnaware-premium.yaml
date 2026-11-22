@@ -1,0 +1,11 @@
+key: burnaware/burnaware-premium
+publisher: burnaware
+name: BurnAware Premium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Burnaware/BurnAwarePremium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Burnaware/BurnAwarePremium
+identifiers:
+- winget: Burnaware.BurnAwarePremium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Burnaware/BurnAwarePremium
+aliases: []

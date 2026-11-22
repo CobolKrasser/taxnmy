@@ -1,0 +1,11 @@
+key: reliant-labs/reliant
+publisher: reliant-labs
+name: Reliant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReliantLabs/Reliant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReliantLabs/Reliant
+identifiers:
+- winget: ReliantLabs.Reliant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReliantLabs/Reliant
+aliases: []

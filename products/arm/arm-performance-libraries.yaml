@@ -1,0 +1,11 @@
+key: arm/arm-performance-libraries
+publisher: arm
+name: Arm Performance Libraries
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/ArmPerformanceLibraries
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/ArmPerformanceLibraries
+identifiers:
+- winget: Arm.ArmPerformanceLibraries
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/ArmPerformanceLibraries
+aliases: []

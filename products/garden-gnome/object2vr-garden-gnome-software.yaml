@@ -1,0 +1,11 @@
+key: garden-gnome/object2vr-garden-gnome-software
+publisher: garden-gnome
+name: Object2VR - Garden Gnome Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GardenGnome/Object2VR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GardenGnome/Object2VR
+identifiers:
+- winget: GardenGnome.Object2VR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GardenGnome/Object2VR
+aliases: []

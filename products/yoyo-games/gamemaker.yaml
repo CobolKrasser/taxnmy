@@ -1,0 +1,11 @@
+key: yoyo-games/gamemaker
+publisher: yoyo-games
+name: GameMaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YoYoGames/GameMaker/Studio/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YoYoGames/GameMaker/Studio/2
+identifiers:
+- winget: YoYoGames.GameMaker.Studio.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YoYoGames/GameMaker/Studio/2
+aliases: []

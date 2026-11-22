@@ -1,0 +1,11 @@
+key: robingame/robin
+publisher: robingame
+name: Robin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobinGame/Robin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobinGame/Robin
+identifiers:
+- winget: RobinGame.Robin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobinGame/Robin
+aliases: []

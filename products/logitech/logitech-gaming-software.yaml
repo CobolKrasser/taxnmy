@@ -1,0 +1,11 @@
+key: logitech/logitech-gaming-software
+publisher: logitech
+name: Logitech Gaming Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LGS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LGS
+identifiers:
+- winget: Logitech.LGS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LGS
+aliases: []

@@ -1,0 +1,11 @@
+key: setcce/setcce-proxsign
+publisher: setcce
+name: SETCCE proXSign®
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SETCCE/ProXSign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SETCCE/ProXSign
+identifiers:
+- winget: SETCCE.ProXSign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SETCCE/ProXSign
+aliases: []

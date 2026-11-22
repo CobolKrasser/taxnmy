@@ -1,0 +1,11 @@
+key: wasabi/wasabi-explorer-for-cloud-storage
+publisher: wasabi
+name: Wasabi Explorer for Cloud Storage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasabi/WasabiExplorerForCloudStorage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasabi/WasabiExplorerForCloudStorage
+identifiers:
+- winget: Wasabi.WasabiExplorerForCloudStorage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasabi/WasabiExplorerForCloudStorage
+aliases: []

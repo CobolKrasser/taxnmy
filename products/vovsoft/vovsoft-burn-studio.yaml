@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-burn-studio
+publisher: vovsoft
+name: Vovsoft Burn Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BurnStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BurnStudio
+identifiers:
+- winget: VovSoft.BurnStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BurnStudio
+aliases: []

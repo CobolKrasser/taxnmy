@@ -1,0 +1,11 @@
+key: tesseract-cat/uwp-mm-midi-adapter
+publisher: tesseract-cat
+name: UWP → MM MIDI Adapter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TesseractCat/UWP-MIDI-Adapter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TesseractCat/UWP-MIDI-Adapter
+identifiers:
+- winget: TesseractCat.UWP-MIDI-Adapter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TesseractCat/UWP-MIDI-Adapter
+aliases: []

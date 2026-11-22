@@ -1,0 +1,11 @@
+key: i2p/i2p-easy-install-bundle
+publisher: i2p
+name: I2P Easy Install Bundle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i2p/I2PEasyInstallBundle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i2p/I2PEasyInstallBundle
+identifiers:
+- winget: i2p.I2PEasyInstallBundle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i2p/I2PEasyInstallBundle
+aliases: []

@@ -1,0 +1,11 @@
+key: antibody-software/wizkey
+publisher: antibody-software
+name: WizKey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizKey
+identifiers:
+- winget: AntibodySoftware.WizKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizKey
+aliases: []

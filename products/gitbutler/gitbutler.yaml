@@ -1,0 +1,11 @@
+key: gitbutler/gitbutler
+publisher: gitbutler
+name: GitButler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitButler/GitButler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitButler/GitButler
+identifiers:
+- winget: GitButler.GitButler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitButler/GitButler
+aliases: []

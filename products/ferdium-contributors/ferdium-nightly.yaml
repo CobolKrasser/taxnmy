@@ -1,0 +1,11 @@
+key: ferdium-contributors/ferdium-nightly
+publisher: ferdium-contributors
+name: Ferdium Nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Ferdium/Ferdium/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Ferdium/Ferdium/Nightly
+identifiers:
+- winget: Ferdium.Ferdium.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Ferdium/Ferdium/Nightly
+aliases: []

@@ -1,0 +1,11 @@
+key: haivision-systems/libsrt
+publisher: haivision-systems
+name: libsrt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Haivision/libsrt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Haivision/libsrt
+identifiers:
+- winget: Haivision.libsrt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Haivision/libsrt
+aliases: []

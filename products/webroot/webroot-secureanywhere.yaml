@@ -1,0 +1,11 @@
+key: webroot/webroot-secureanywhere
+publisher: webroot
+name: Webroot SecureAnywhere
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webroot/SecureAnywhere
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webroot/SecureAnywhere
+identifiers:
+- winget: Webroot.SecureAnywhere
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webroot/SecureAnywhere
+aliases: []

@@ -1,0 +1,11 @@
+key: resplendence-software-projects-sp/latencymon
+publisher: resplendence-software-projects-sp
+name: LatencyMon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/LatencyMon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/LatencyMon
+identifiers:
+- winget: Resplendence.LatencyMon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/LatencyMon
+aliases: []

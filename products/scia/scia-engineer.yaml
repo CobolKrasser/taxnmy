@@ -1,0 +1,17 @@
+key: scia/scia-engineer
+publisher: scia
+name: SCIA Engineer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SCIA/SCIAEngineer/24
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SCIA/SCIAEngineer/24
+identifiers:
+- winget: SCIA.SCIAEngineer.24
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SCIA/SCIAEngineer/24
+- winget: SCIA.SCIAEngineer.25
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SCIA/SCIAEngineer/25
+- winget: SCIA.SCIAEngineer.26
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SCIA/SCIAEngineer/26
+- winget: SCIA.SCIAEngineer.27
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SCIA/SCIAEngineer/27
+aliases: []

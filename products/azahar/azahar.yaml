@@ -1,0 +1,11 @@
+key: azahar/azahar
+publisher: azahar
+name: Azahar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar
+identifiers:
+- winget: AzaharEmu.Azahar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar
+aliases: []

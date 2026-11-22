@@ -1,0 +1,11 @@
+key: uniclipboard/uniclipboard
+publisher: uniclipboard
+name: UniClipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniClipboard/UniClipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniClipboard/UniClipboard
+identifiers:
+- winget: UniClipboard.UniClipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniClipboard/UniClipboard
+aliases: []

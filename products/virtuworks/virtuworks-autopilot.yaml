@@ -1,0 +1,11 @@
+key: virtuworks/virtuworks-autopilot
+publisher: virtuworks
+name: Virtuworks Autopilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Virtuworks/MSPControlAutopilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Virtuworks/MSPControlAutopilot
+identifiers:
+- winget: Virtuworks.MSPControlAutopilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Virtuworks/MSPControlAutopilot
+aliases: []

@@ -1,0 +1,11 @@
+key: gittower/gittower-gitflownext
+publisher: gittower
+name: GitTower GitFlowNext
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitTower/GitFlowNext
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitTower/GitFlowNext
+identifiers:
+- winget: GitTower.GitFlowNext
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitTower/GitFlowNext
+aliases: []

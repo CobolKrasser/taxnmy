@@ -1,0 +1,11 @@
+key: vinh-nguyen/vt-code
+publisher: vinh-nguyen
+name: VT Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vinhnx/VTCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vinhnx/VTCode
+identifiers:
+- winget: vinhnx.VTCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vinhnx/VTCode
+aliases: []

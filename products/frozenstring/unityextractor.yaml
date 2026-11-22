@@ -1,0 +1,11 @@
+key: frozenstring/unityextractor
+publisher: frozenstring
+name: UnityExtractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnityExtractor/UnityExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnityExtractor/UnityExtractor
+identifiers:
+- winget: UnityExtractor.UnityExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnityExtractor/UnityExtractor
+aliases: []

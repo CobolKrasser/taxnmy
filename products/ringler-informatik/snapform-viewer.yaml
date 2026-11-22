@@ -1,0 +1,11 @@
+key: ringler-informatik/snapform-viewer
+publisher: ringler-informatik
+name: Snapform Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ringler/SnapformViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ringler/SnapformViewer
+identifiers:
+- winget: Ringler.SnapformViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ringler/SnapformViewer
+aliases: []

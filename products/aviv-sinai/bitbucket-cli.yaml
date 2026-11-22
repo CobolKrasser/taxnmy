@@ -1,0 +1,11 @@
+key: aviv-sinai/bitbucket-cli
+publisher: aviv-sinai
+name: Bitbucket CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvivSinai/Bitbucket-CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvivSinai/Bitbucket-CLI
+identifiers:
+- winget: AvivSinai.Bitbucket-CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvivSinai/Bitbucket-CLI
+aliases: []

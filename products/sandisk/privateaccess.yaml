@@ -1,0 +1,11 @@
+key: sandisk/privateaccess
+publisher: sandisk
+name: PrivateAccess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/PrivateAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/PrivateAccess
+identifiers:
+- winget: SanDisk.PrivateAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/PrivateAccess
+aliases: []

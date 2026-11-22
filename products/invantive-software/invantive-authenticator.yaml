@@ -1,0 +1,13 @@
+key: invantive-software/invantive-authenticator
+publisher: invantive-software
+name: Invantive Authenticator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveAuthenticator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveAuthenticator
+identifiers:
+- winget: Invantive.InvantiveAuthenticator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveAuthenticator
+- winget: Invantive.InvantiveBridgeForDevelopers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveBridgeForDevelopers
+aliases: []

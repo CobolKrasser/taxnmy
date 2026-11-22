@@ -1,0 +1,11 @@
+key: serialtool/serialtool
+publisher: serialtool
+name: SerialTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialTool/SerialTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialTool/SerialTool
+identifiers:
+- winget: SerialTool.SerialTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialTool/SerialTool
+aliases: []

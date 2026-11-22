@@ -1,0 +1,11 @@
+key: datronicsoft/spacedesk-windows-driver
+publisher: datronicsoft
+name: spacedesk Windows DRIVER
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datronicsoft/SpacedeskDriver/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datronicsoft/SpacedeskDriver/Server
+identifiers:
+- winget: Datronicsoft.SpacedeskDriver.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datronicsoft/SpacedeskDriver/Server
+aliases: []

@@ -1,0 +1,11 @@
+key: hurdle-group/hurdle-live
+publisher: hurdle-group
+name: Hurdle.LIVE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hurdle/Hurdle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hurdle/Hurdle
+identifiers:
+- winget: Hurdle.Hurdle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hurdle/Hurdle
+aliases: []

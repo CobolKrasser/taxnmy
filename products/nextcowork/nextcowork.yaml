@@ -1,0 +1,11 @@
+key: nextcowork/nextcowork
+publisher: nextcowork
+name: NextCoWork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIDotNet/NextCoWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIDotNet/NextCoWork
+identifiers:
+- winget: AIDotNet.NextCoWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIDotNet/NextCoWork
+aliases: []

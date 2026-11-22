@@ -1,0 +1,13 @@
+key: plfjy/context-menu-manager-plus
+publisher: plfjy
+name: Context Menu Manager Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PLFJY/ContextMenuMgrPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PLFJY/ContextMenuMgrPlus
+identifiers:
+- winget: PLFJY.ContextMenuMgrPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PLFJY/ContextMenuMgrPlus
+- winget: PLFJY.ContextMenuMgrPlus.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PLFJY/ContextMenuMgrPlus/Beta
+aliases: []

@@ -1,0 +1,11 @@
+key: sigstore/rekor-cli
+publisher: sigstore
+name: rekor-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Rekor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Rekor
+identifiers:
+- winget: Sigstore.Rekor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Rekor
+aliases: []

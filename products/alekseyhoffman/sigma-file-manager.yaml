@@ -1,0 +1,11 @@
+key: alekseyhoffman/sigma-file-manager
+publisher: alekseyhoffman
+name: Sigma File Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlekseyHoffman/SigmaFileManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlekseyHoffman/SigmaFileManager
+identifiers:
+- winget: AlekseyHoffman.SigmaFileManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlekseyHoffman/SigmaFileManager
+aliases: []

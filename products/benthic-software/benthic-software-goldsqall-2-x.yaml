@@ -1,0 +1,11 @@
+key: benthic-software/benthic-software-goldsqall-2-x
+publisher: benthic-software
+name: 'Benthic Software: GoldSqall 2.x'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/GoldSqall/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/GoldSqall/2
+identifiers:
+- winget: BenthicSoftware.GoldSqall.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/GoldSqall/2
+aliases: []

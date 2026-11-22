@@ -1,0 +1,11 @@
+key: tofuutils/tenv
+publisher: tofuutils
+name: tenv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tofuutils/Tenv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tofuutils/Tenv
+identifiers:
+- winget: Tofuutils.Tenv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tofuutils/Tenv
+aliases: []

@@ -1,0 +1,11 @@
+key: ossama-hjaji/onefetch
+publisher: ossama-hjaji
+name: onefetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/o2sh/onefetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/o2sh/onefetch
+identifiers:
+- winget: o2sh.onefetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/o2sh/onefetch
+aliases: []

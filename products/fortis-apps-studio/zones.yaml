@@ -1,0 +1,11 @@
+key: fortis-apps-studio/zones
+publisher: fortis-apps-studio
+name: Zones
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortisAppsStudio/Zones
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortisAppsStudio/Zones
+identifiers:
+- winget: FortisAppsStudio.Zones
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortisAppsStudio/Zones
+aliases: []

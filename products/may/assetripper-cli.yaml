@@ -1,0 +1,11 @@
+key: may/assetripper-cli
+publisher: may
+name: AssetRipper CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeikoMei16/AssetRipperCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeikoMei16/AssetRipperCLI
+identifiers:
+- winget: MeikoMei16.AssetRipperCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeikoMei16/AssetRipperCLI
+aliases: []

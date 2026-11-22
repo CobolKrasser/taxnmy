@@ -1,0 +1,11 @@
+key: sulake/habbo-launcher
+publisher: sulake
+name: Habbo Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SulakeOy/HabboLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SulakeOy/HabboLauncher
+identifiers:
+- winget: SulakeOy.HabboLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SulakeOy/HabboLauncher
+aliases: []

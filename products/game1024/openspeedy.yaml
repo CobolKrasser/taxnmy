@@ -1,0 +1,11 @@
+key: game1024/openspeedy
+publisher: game1024
+name: OpenSpeedy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Game1024/OpenSpeedy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Game1024/OpenSpeedy
+identifiers:
+- winget: Game1024.OpenSpeedy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Game1024/OpenSpeedy
+aliases: []

@@ -1,0 +1,11 @@
+key: dune-3d-project/dune-3d
+publisher: dune-3d-project
+name: Dune 3D
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dune3d/dune3d
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dune3d/dune3d
+identifiers:
+- winget: dune3d.dune3d
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dune3d/dune3d
+aliases: []

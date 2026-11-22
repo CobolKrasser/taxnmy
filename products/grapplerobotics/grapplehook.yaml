@@ -1,0 +1,11 @@
+key: grapplerobotics/grapplehook
+publisher: grapplerobotics
+name: GrappleHook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/grapplerobotics/GrappleHook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/grapplerobotics/GrappleHook
+identifiers:
+- winget: grapplerobotics.GrappleHook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/grapplerobotics/GrappleHook
+aliases: []

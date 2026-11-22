@@ -1,0 +1,13 @@
+key: kunobi-ninja/kunobi
+publisher: kunobi-ninja
+name: kunobi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kunobi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kunobi
+identifiers:
+- winget: kunobi-ninja.kunobi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kunobi
+- winget: kunobi-ninja.kunobi.Unstable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kunobi/Unstable
+aliases: []

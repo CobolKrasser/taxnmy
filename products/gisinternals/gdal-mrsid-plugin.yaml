@@ -1,0 +1,11 @@
+key: gisinternals/gdal-mrsid-plugin
+publisher: gisinternals
+name: GDAL MrSID plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/MrSID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/MrSID
+identifiers:
+- winget: GISInternals.GDAL.MrSID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/MrSID
+aliases: []

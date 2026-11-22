@@ -1,0 +1,11 @@
+key: steven-hawley/weigh-station
+publisher: steven-hawley
+name: Weigh Station
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twistedst/scale-serial-reader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twistedst/scale-serial-reader
+identifiers:
+- winget: Twistedst.scale-serial-reader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twistedst/scale-serial-reader
+aliases: []

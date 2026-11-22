@@ -1,0 +1,11 @@
+key: appium-developers/appium-server-gui
+publisher: appium-developers
+name: Appium Server GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JSFoundation/Appium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JSFoundation/Appium
+identifiers:
+- winget: JSFoundation.Appium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JSFoundation/Appium
+aliases: []

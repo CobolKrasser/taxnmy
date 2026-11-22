@@ -1,0 +1,11 @@
+key: xmirror-security/opensca-cli
+publisher: xmirror-security
+name: OpenSCA-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XmirrorSecurity/OpenSCA-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XmirrorSecurity/OpenSCA-cli
+identifiers:
+- winget: XmirrorSecurity.OpenSCA-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XmirrorSecurity/OpenSCA-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: the-eask-authors/eask-cli
+publisher: the-eask-authors
+name: eask-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eask/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eask/cli
+identifiers:
+- winget: eask.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eask/cli
+aliases: []

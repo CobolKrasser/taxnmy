@@ -1,0 +1,11 @@
+key: mahir-gul/rsipclient
+publisher: mahir-gul
+name: rsipclient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MahirGul/rsipclient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MahirGul/rsipclient
+identifiers:
+- winget: MahirGul.rsipclient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MahirGul/rsipclient
+aliases: []

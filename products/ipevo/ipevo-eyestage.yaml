@@ -1,0 +1,11 @@
+key: ipevo/ipevo-eyestage
+publisher: ipevo
+name: IPEVO EyeStage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/EyeStage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/EyeStage
+identifiers:
+- winget: IPEVO.EyeStage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/EyeStage
+aliases: []

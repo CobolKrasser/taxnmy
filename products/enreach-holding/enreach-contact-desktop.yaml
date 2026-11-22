@@ -1,0 +1,11 @@
+key: enreach-holding/enreach-contact-desktop
+publisher: enreach-holding
+name: Enreach Contact Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enreach/Contact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enreach/Contact
+identifiers:
+- winget: Enreach.Contact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enreach/Contact
+aliases: []

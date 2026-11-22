@@ -1,0 +1,11 @@
+key: cherry/cherry-keys
+publisher: cherry
+name: CHERRY KEYS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHERRY/CHERRYKEYS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHERRY/CHERRYKEYS
+identifiers:
+- winget: CHERRY.CHERRYKEYS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHERRY/CHERRYKEYS
+aliases: []

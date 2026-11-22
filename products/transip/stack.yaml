@@ -1,0 +1,11 @@
+key: transip/stack
+publisher: transip
+name: STACK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransIP/STACK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransIP/STACK
+identifiers:
+- winget: TransIP.STACK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransIP/STACK
+aliases: []

@@ -1,0 +1,11 @@
+key: privacypal/ai
+publisher: privacypal
+name: AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivacyPal/AI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivacyPal/AI
+identifiers:
+- winget: PrivacyPal.AI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivacyPal/AI
+aliases: []

@@ -1,0 +1,11 @@
+key: pr-electronics/preset
+publisher: pr-electronics
+name: PReset
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PRelectronics/PReset
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PRelectronics/PReset
+identifiers:
+- winget: PRelectronics.PReset
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PRelectronics/PReset
+aliases: []

@@ -1,0 +1,11 @@
+key: true-human-design/nfopad
+publisher: true-human-design
+name: NFOPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueHumanDesign/NFOPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueHumanDesign/NFOPad
+identifiers:
+- winget: TrueHumanDesign.NFOPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueHumanDesign/NFOPad
+aliases: []

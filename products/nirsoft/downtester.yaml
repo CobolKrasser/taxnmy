@@ -1,0 +1,11 @@
+key: nirsoft/downtester
+publisher: nirsoft
+name: DownTester
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DownTester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DownTester
+identifiers:
+- winget: NirSoft.DownTester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DownTester
+aliases: []

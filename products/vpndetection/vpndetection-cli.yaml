@@ -1,0 +1,11 @@
+key: vpndetection/vpndetection-cli
+publisher: vpndetection
+name: VPNDetection CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPNDetection/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPNDetection/CLI
+identifiers:
+- winget: VPNDetection.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPNDetection/CLI
+aliases: []

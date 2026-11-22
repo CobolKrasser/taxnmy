@@ -1,0 +1,11 @@
+key: ccseer/seer
+publisher: ccseer
+name: Seer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccseer/Seer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccseer/Seer
+identifiers:
+- winget: ccseer.Seer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccseer/Seer
+aliases: []

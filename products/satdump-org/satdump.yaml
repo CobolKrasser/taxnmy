@@ -1,0 +1,11 @@
+key: satdump-org/satdump
+publisher: satdump-org
+name: SatDump
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatDump/SatDump
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatDump/SatDump
+identifiers:
+- winget: SatDump.SatDump
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatDump/SatDump
+aliases: []

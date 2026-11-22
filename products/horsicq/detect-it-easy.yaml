@@ -1,0 +1,11 @@
+key: horsicq/detect-it-easy
+publisher: horsicq
+name: Detect It Easy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/horsicq/DIE-engine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/horsicq/DIE-engine
+identifiers:
+- winget: horsicq.DIE-engine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/horsicq/DIE-engine
+aliases: []

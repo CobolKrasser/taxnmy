@@ -1,0 +1,11 @@
+key: steerania/oryx
+publisher: steerania
+name: Oryx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steerania/Oryx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steerania/Oryx
+identifiers:
+- winget: Steerania.Oryx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Steerania/Oryx
+aliases: []

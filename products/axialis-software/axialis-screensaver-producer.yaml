@@ -1,0 +1,11 @@
+key: axialis-software/axialis-screensaver-producer
+publisher: axialis-software
+name: Axialis Screensaver Producer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axialis/ScreensaverProducer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axialis/ScreensaverProducer
+identifiers:
+- winget: Axialis.ScreensaverProducer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axialis/ScreensaverProducer
+aliases: []

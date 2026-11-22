@@ -1,0 +1,11 @@
+key: airspy/sdr-sharp
+publisher: airspy
+name: SDR#
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/SDRSharp/DotNet9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/SDRSharp/DotNet9
+identifiers:
+- winget: Airspy.SDRSharp.DotNet9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/SDRSharp/DotNet9
+aliases: []

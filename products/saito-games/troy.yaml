@@ -1,0 +1,11 @@
+key: saito-games/troy
+publisher: saito-games
+name: Troy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/Troy2000
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/Troy2000
+identifiers:
+- winget: SaitoGames.Troy2000
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/Troy2000
+aliases: []

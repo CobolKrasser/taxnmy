@@ -1,0 +1,11 @@
+key: open-cli-collective/confluence-cli
+publisher: open-cli-collective
+name: Confluence CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/cfl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/cfl
+identifiers:
+- winget: OpenCLICollective.cfl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/cfl
+aliases: []

@@ -1,0 +1,11 @@
+key: contributors/jedit
+publisher: contributors
+name: jEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jEdit/jEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jEdit/jEdit
+identifiers:
+- winget: jEdit.jEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jEdit/jEdit
+aliases: []

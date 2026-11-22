@@ -1,0 +1,11 @@
+key: charmbracelet/pop
+publisher: charmbracelet
+name: pop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/pop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/pop
+identifiers:
+- winget: charmbracelet.pop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/pop
+aliases: []

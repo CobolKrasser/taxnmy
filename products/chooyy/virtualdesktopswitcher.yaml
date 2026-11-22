@@ -1,0 +1,11 @@
+key: chooyy/virtualdesktopswitcher
+publisher: chooyy
+name: VirtualDesktopSwitcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chooyy/VirtualDesktopSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chooyy/VirtualDesktopSwitcher
+identifiers:
+- winget: Chooyy.VirtualDesktopSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chooyy/VirtualDesktopSwitcher
+aliases: []

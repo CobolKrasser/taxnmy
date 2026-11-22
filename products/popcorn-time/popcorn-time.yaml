@@ -1,0 +1,11 @@
+key: popcorn-time/popcorn-time
+publisher: popcorn-time
+name: Popcorn-Time
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PopcornTime/Popcorn-Time
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PopcornTime/Popcorn-Time
+identifiers:
+- winget: PopcornTime.Popcorn-Time
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PopcornTime/Popcorn-Time
+aliases: []

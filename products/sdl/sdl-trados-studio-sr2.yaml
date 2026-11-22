@@ -1,0 +1,11 @@
+key: sdl/sdl-trados-studio-sr2
+publisher: sdl
+name: SDL Trados Studio SR2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2021
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2021
+identifiers:
+- winget: Trados.TradosStudio.2021
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trados/TradosStudio/2021
+aliases: []

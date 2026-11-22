@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-regeditor
+publisher: o-and-o-software
+name: O&O RegEditor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/RegEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/RegEditor
+identifiers:
+- winget: OO-Software.RegEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/RegEditor
+aliases: []

@@ -1,0 +1,11 @@
+key: raul-argente/argente-duplicate-finder
+publisher: raul-argente
+name: Argente Duplicate Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/DuplicateFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/DuplicateFinder
+identifiers:
+- winget: Argente.DuplicateFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/DuplicateFinder
+aliases: []

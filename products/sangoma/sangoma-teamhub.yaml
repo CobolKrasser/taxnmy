@@ -1,0 +1,11 @@
+key: sangoma/sangoma-teamhub
+publisher: sangoma
+name: Sangoma TeamHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaTeamHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaTeamHub
+identifiers:
+- winget: Sangoma.SangomaTeamHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaTeamHub
+aliases: []

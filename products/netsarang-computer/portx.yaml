@@ -1,0 +1,11 @@
+key: netsarang-computer/portx
+publisher: netsarang-computer
+name: PortX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSarangComputer/PortX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSarangComputer/PortX
+identifiers:
+- winget: NetSarangComputer.PortX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSarangComputer/PortX
+aliases: []

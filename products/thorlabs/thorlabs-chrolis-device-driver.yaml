@@ -1,0 +1,11 @@
+key: thorlabs/thorlabs-chrolis-device-driver
+publisher: thorlabs
+name: Thorlabs CHROLIS - Device Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ChrolisDeviceDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ChrolisDeviceDriver
+identifiers:
+- winget: Thorlabs.ChrolisDeviceDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ChrolisDeviceDriver
+aliases: []

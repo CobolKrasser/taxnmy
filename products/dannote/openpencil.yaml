@@ -1,0 +1,11 @@
+key: dannote/openpencil
+publisher: dannote
+name: OpenPencil
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPencil/OpenPencil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPencil/OpenPencil
+identifiers:
+- winget: OpenPencil.OpenPencil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPencil/OpenPencil
+aliases: []

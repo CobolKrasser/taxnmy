@@ -1,0 +1,11 @@
+key: ryo-maruyama/jasper
+publisher: ryo-maruyama
+name: jasper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jasperapp/jasper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jasperapp/jasper
+identifiers:
+- winget: jasperapp.jasper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jasperapp/jasper
+aliases: []

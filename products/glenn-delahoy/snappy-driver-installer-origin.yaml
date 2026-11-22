@@ -1,0 +1,11 @@
+key: glenn-delahoy/snappy-driver-installer-origin
+publisher: glenn-delahoy
+name: Snappy Driver Installer Origin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin
+identifiers:
+- winget: GlennDelahoy.SnappyDriverInstallerOrigin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin
+aliases: []

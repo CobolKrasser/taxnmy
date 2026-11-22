@@ -1,0 +1,11 @@
+key: neelaboratory/neeview
+publisher: neelaboratory
+name: NeeView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/neelabo/NeeView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/neelabo/NeeView
+identifiers:
+- winget: neelabo.NeeView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/neelabo/NeeView
+aliases: []

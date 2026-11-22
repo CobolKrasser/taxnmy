@@ -1,0 +1,11 @@
+key: dymo/dymo-scale
+publisher: dymo
+name: DYMO Scale
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOScale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOScale
+identifiers:
+- winget: DYMO.DYMOScale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOScale
+aliases: []

@@ -1,0 +1,11 @@
+key: omnisecure/strix
+publisher: omnisecure
+name: Strix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniSecure/Strix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniSecure/Strix
+identifiers:
+- winget: OmniSecure.Strix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniSecure/Strix
+aliases: []

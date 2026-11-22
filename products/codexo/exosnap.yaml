@@ -1,0 +1,11 @@
+key: codexo/exosnap
+publisher: codexo
+name: ExoSnap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codexo/ExoSnap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codexo/ExoSnap
+identifiers:
+- winget: Codexo.ExoSnap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codexo/ExoSnap
+aliases: []

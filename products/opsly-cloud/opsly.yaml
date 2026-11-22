@@ -1,0 +1,11 @@
+key: opsly-cloud/opsly
+publisher: opsly-cloud
+name: opsly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpslyCloud/opsly-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpslyCloud/opsly-cli
+identifiers:
+- winget: OpslyCloud.opsly-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpslyCloud/opsly-cli
+aliases: []

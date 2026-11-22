@@ -1,0 +1,11 @@
+key: caoyue/windowresizer
+publisher: caoyue
+name: WindowResizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/caoyue/WindowResizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/caoyue/WindowResizer
+identifiers:
+- winget: caoyue.WindowResizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/caoyue/WindowResizer
+aliases: []

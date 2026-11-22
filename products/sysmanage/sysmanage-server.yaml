@@ -1,0 +1,11 @@
+key: sysmanage/sysmanage-server
+publisher: sysmanage
+name: SysManage Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sysmanage/sysmanage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sysmanage/sysmanage
+identifiers:
+- winget: sysmanage.sysmanage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sysmanage/sysmanage
+aliases: []

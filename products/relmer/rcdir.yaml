@@ -1,0 +1,11 @@
+key: relmer/rcdir
+publisher: relmer
+name: RCDir
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/relmer/RCDir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/relmer/RCDir
+identifiers:
+- winget: relmer.RCDir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/relmer/RCDir
+aliases: []

@@ -1,0 +1,11 @@
+key: hp/hp-click
+publisher: hp
+name: HP Click
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/HPClick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/HPClick
+identifiers:
+- winget: HP.HPClick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/HPClick
+aliases: []

@@ -1,0 +1,11 @@
+key: agora/flat
+publisher: agora
+name: Flat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/netless-io/flat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/netless-io/flat
+identifiers:
+- winget: netless-io.flat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/netless-io/flat
+aliases: []

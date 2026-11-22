@@ -1,0 +1,11 @@
+key: ec-software/ec-software-ewriter
+publisher: ec-software
+name: EC Software eWriter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/eWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/eWriter
+identifiers:
+- winget: ECSoftware.eWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/eWriter
+aliases: []

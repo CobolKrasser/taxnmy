@@ -1,0 +1,11 @@
+key: estmob/send-anywhere
+publisher: estmob
+name: Send Anywhere
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Estmob/SendAnywhere
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Estmob/SendAnywhere
+identifiers:
+- winget: Estmob.SendAnywhere
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Estmob/SendAnywhere
+aliases: []

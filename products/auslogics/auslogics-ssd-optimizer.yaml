@@ -1,0 +1,11 @@
+key: auslogics/auslogics-ssd-optimizer
+publisher: auslogics
+name: Auslogics SSD Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/SSDOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/SSDOptimizer
+identifiers:
+- winget: Auslogics.SSDOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/SSDOptimizer
+aliases: []

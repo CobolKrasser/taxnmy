@@ -8,4 +8,6 @@ versions:
 identifiers:
 - winget: Adobe.Acrobat.Pro
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Acrobat/Pro
+- winget: Adobe.Acrobat.Pro.2020
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Acrobat/Pro/2020
 aliases: []

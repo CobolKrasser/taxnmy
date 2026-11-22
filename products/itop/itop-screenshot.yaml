@@ -1,0 +1,11 @@
+key: itop/itop-screenshot
+publisher: itop
+name: iTop Screenshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopScreenshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopScreenshot
+identifiers:
+- winget: iTop.iTopScreenshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopScreenshot
+aliases: []

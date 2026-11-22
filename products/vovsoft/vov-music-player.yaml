@@ -1,0 +1,11 @@
+key: vovsoft/vov-music-player
+publisher: vovsoft
+name: Vov Music Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovMusicPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovMusicPlayer
+identifiers:
+- winget: VovSoft.VovMusicPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovMusicPlayer
+aliases: []

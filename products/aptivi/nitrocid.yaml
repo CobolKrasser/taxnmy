@@ -1,0 +1,15 @@
+key: aptivi/nitrocid
+publisher: aptivi
+name: Nitrocid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/Nitrocid/0/1/0/x
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/Nitrocid/0/1/0/x
+identifiers:
+- winget: Aptivi.Nitrocid.0.1.0.x
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/Nitrocid/0/1/0/x
+- winget: Aptivi.Nitrocid.0.2.0.x
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/Nitrocid/0/2/0/x
+- winget: Aptivi.Nitrocid.0.2.1.x
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/Nitrocid/0/2/1/x
+aliases: []

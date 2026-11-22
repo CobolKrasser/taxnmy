@@ -1,0 +1,11 @@
+key: iris-instruments/monitoring-terra
+publisher: iris-instruments
+name: Monitoring Terra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/MonitoringTerra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/MonitoringTerra
+identifiers:
+- winget: IrisInstruments.MonitoringTerra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/MonitoringTerra
+aliases: []

@@ -1,0 +1,13 @@
+key: emco-software/emco-ping-monitor
+publisher: emco-software
+name: EMCO Ping Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCOSoftware/PingMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCOSoftware/PingMonitor
+identifiers:
+- winget: EMCO.PingMonitor.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/PingMonitor/9
+- winget: EMCOSoftware.PingMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCOSoftware/PingMonitor
+aliases: []

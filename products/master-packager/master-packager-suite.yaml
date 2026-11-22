@@ -1,0 +1,11 @@
+key: master-packager/master-packager-suite
+publisher: master-packager
+name: Master Packager Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterPackager/MasterPackager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterPackager/MasterPackager
+identifiers:
+- winget: MasterPackager.MasterPackager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterPackager/MasterPackager
+aliases: []

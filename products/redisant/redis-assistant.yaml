@@ -1,0 +1,11 @@
+key: redisant/redis-assistant
+publisher: redisant
+name: Redis Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RedisAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RedisAssistant
+identifiers:
+- winget: Redisant.RedisAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RedisAssistant
+aliases: []

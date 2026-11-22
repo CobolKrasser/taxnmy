@@ -1,0 +1,11 @@
+key: aja/aja-retail-installer
+publisher: aja
+name: AJA Retail Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AJA/RetailInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AJA/RetailInstaller
+identifiers:
+- winget: AJA.RetailInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AJA/RetailInstaller
+aliases: []

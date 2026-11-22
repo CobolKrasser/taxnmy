@@ -1,0 +1,11 @@
+key: elitech-technology/elitechlogwin
+publisher: elitech-technology
+name: ElitechLogWin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elitech/ElitechLogWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elitech/ElitechLogWin
+identifiers:
+- winget: Elitech.ElitechLogWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elitech/ElitechLogWin
+aliases: []

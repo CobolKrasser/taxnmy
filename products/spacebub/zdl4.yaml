@@ -1,0 +1,11 @@
+key: spacebub/zdl4
+publisher: spacebub
+name: ZDL4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacebub/qzdl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacebub/qzdl
+identifiers:
+- winget: spacebub.qzdl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacebub/qzdl
+aliases: []

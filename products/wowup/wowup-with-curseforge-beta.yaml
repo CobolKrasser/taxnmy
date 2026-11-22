@@ -1,0 +1,11 @@
+key: wowup/wowup-with-curseforge-beta
+publisher: wowup
+name: WowUp with CurseForge beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/CFbeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/CFbeta
+identifiers:
+- winget: WowUp.CFbeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/CFbeta
+aliases: []

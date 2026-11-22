@@ -1,0 +1,11 @@
+key: rebex/rebex-drive
+publisher: rebex
+name: Rebex Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rebex/RebexDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rebex/RebexDrive
+identifiers:
+- winget: Rebex.RebexDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rebex/RebexDrive
+aliases: []

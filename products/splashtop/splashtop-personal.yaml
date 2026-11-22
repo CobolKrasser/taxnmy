@@ -1,0 +1,11 @@
+key: splashtop/splashtop-personal
+publisher: splashtop
+name: Splashtop Personal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopPersonal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopPersonal
+identifiers:
+- winget: Splashtop.SplashtopPersonal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopPersonal
+aliases: []

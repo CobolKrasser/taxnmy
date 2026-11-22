@@ -1,0 +1,11 @@
+key: valtrainer-contributors/valtrainer
+publisher: valtrainer-contributors
+name: ValTrainer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valtrainer/ValTrainer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valtrainer/ValTrainer
+identifiers:
+- winget: Valtrainer.ValTrainer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valtrainer/ValTrainer
+aliases: []

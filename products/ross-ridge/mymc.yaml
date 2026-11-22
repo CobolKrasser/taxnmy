@@ -1,0 +1,11 @@
+key: ross-ridge/mymc
+publisher: ross-ridge
+name: mymc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RossRidge/mymc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RossRidge/mymc
+identifiers:
+- winget: RossRidge.mymc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RossRidge/mymc
+aliases: []

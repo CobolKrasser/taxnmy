@@ -1,0 +1,11 @@
+key: sonic-pi/sonic-pi
+publisher: sonic-pi
+name: Sonic Pi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicPi/SonicPi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicPi/SonicPi
+identifiers:
+- winget: SonicPi.SonicPi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicPi/SonicPi
+aliases: []

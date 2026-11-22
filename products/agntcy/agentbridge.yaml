@@ -1,0 +1,11 @@
+key: agntcy/agentbridge
+publisher: agntcy
+name: agentbridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGNTCY/agentbridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGNTCY/agentbridge
+identifiers:
+- winget: AGNTCY.agentbridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGNTCY/agentbridge
+aliases: []

@@ -1,0 +1,11 @@
+key: gcn-development/gnu-radio
+publisher: gcn-development
+name: GNU Radio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gcndevelopment/GNURadio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gcndevelopment/GNURadio
+identifiers:
+- winget: Gcndevelopment.GNURadio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gcndevelopment/GNURadio
+aliases: []

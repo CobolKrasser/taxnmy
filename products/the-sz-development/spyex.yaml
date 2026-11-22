@@ -1,0 +1,11 @@
+key: the-sz-development/spyex
+publisher: the-sz-development
+name: SpyEx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/SpyEx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/SpyEx
+identifiers:
+- winget: the-sz.SpyEx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/SpyEx
+aliases: []

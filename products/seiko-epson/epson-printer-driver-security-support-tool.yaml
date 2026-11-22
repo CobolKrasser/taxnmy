@@ -1,0 +1,11 @@
+key: seiko-epson/epson-printer-driver-security-support-tool
+publisher: seiko-epson
+name: Epson Printer Driver Security Support Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PrinterDriverSecuritySupportTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PrinterDriverSecuritySupportTool
+identifiers:
+- winget: EPSON.PrinterDriverSecuritySupportTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PrinterDriverSecuritySupportTool
+aliases: []

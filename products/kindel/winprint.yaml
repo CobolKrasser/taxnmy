@@ -1,0 +1,11 @@
+key: kindel/winprint
+publisher: kindel
+name: WinPrint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/WinPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/WinPrint
+identifiers:
+- winget: Kindel.WinPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/WinPrint
+aliases: []

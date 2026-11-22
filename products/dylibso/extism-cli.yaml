@@ -1,0 +1,11 @@
+key: dylibso/extism-cli
+publisher: dylibso
+name: Extism CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dylibso/Extism/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dylibso/Extism/CLI
+identifiers:
+- winget: Dylibso.Extism.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dylibso/Extism/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: james-fordham/codexbar-for-windows
+publisher: james-fordham
+name: CodexBar for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dontcallmejames/CodexBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dontcallmejames/CodexBar
+identifiers:
+- winget: dontcallmejames.CodexBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dontcallmejames/CodexBar
+aliases: []

@@ -1,0 +1,13 @@
+key: aldaviva/authenticatorchooser
+publisher: aldaviva
+name: AuthenticatorChooser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aldaviva/AuthenticatorChooser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aldaviva/AuthenticatorChooser
+identifiers:
+- winget: Aldaviva.AuthenticatorChooser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aldaviva/AuthenticatorChooser
+- winget: Aldaviva.AuthenticatorChooser.Prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aldaviva/AuthenticatorChooser/Prerelease
+aliases: []

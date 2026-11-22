@@ -1,0 +1,11 @@
+key: rus/rus-zip
+publisher: rus
+name: rus-zip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rus/zip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rus/zip
+identifiers:
+- winget: rus.zip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rus/zip
+aliases: []

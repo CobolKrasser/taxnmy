@@ -1,0 +1,11 @@
+key: moggla/wincom
+publisher: moggla
+name: wincom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moggla/wincom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moggla/wincom
+identifiers:
+- winget: Moggla.wincom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moggla/wincom
+aliases: []

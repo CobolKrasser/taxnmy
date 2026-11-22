@@ -1,0 +1,11 @@
+key: http-xanasoft-com/sandboxie-plus
+publisher: http-xanasoft-com
+name: Sandboxie-Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandboxie/Plus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandboxie/Plus
+identifiers:
+- winget: Sandboxie.Plus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandboxie/Plus
+aliases: []

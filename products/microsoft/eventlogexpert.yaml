@@ -1,0 +1,11 @@
+key: microsoft/eventlogexpert
+publisher: microsoft
+name: EventLogExpert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EventLogExpert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EventLogExpert
+identifiers:
+- winget: Microsoft.EventLogExpert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EventLogExpert
+aliases: []

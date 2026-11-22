@@ -1,0 +1,11 @@
+key: golangci/golangci-lint
+publisher: golangci
+name: golangci-lint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GolangCI/golangci-lint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GolangCI/golangci-lint
+identifiers:
+- winget: GolangCI.golangci-lint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GolangCI/golangci-lint
+aliases: []

@@ -1,0 +1,11 @@
+key: poqdavid/potatowall
+publisher: poqdavid
+name: PotatoWall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/POQDavid/PotatoWall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/POQDavid/PotatoWall
+identifiers:
+- winget: POQDavid.PotatoWall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/POQDavid/PotatoWall
+aliases: []

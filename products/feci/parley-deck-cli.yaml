@@ -1,0 +1,11 @@
+key: feci/parley-deck-cli
+publisher: feci
+name: Parley Deck CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feci/ParleyDeckCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feci/ParleyDeckCli
+identifiers:
+- winget: Feci.ParleyDeckCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feci/ParleyDeckCli
+aliases: []

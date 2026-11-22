@@ -1,0 +1,11 @@
+key: fnmt-rcm/configurador-fnmt
+publisher: fnmt-rcm
+name: Configurador FNMT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FNMT/ConfiguradorFNMT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FNMT/ConfiguradorFNMT
+identifiers:
+- winget: FNMT.ConfiguradorFNMT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FNMT/ConfiguradorFNMT
+aliases: []

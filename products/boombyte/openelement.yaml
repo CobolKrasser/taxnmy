@@ -1,0 +1,11 @@
+key: boombyte/openelement
+publisher: boombyte
+name: openElement
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementTechnologie/openElement
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementTechnologie/openElement
+identifiers:
+- winget: ElementTechnologie.openElement
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementTechnologie/openElement
+aliases: []

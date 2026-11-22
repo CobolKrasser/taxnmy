@@ -1,0 +1,11 @@
+key: realvnc/realvnc-connect-viewer
+publisher: realvnc
+name: RealVNC Connect Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCConnect/Viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCConnect/Viewer
+identifiers:
+- winget: RealVNC.VNCConnect.Viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCConnect/Viewer
+aliases: []

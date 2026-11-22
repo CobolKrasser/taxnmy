@@ -1,0 +1,11 @@
+key: popokey/hl7-soup-integration-host
+publisher: popokey
+name: HL7 Soup Integration Host
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Popokey/HL7SoupIntegrationHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Popokey/HL7SoupIntegrationHost
+identifiers:
+- winget: Popokey.HL7SoupIntegrationHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Popokey/HL7SoupIntegrationHost
+aliases: []

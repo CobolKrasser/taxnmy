@@ -1,0 +1,11 @@
+key: schoolcraft/worksheet-crafter-testversion
+publisher: schoolcraft
+name: Worksheet Crafter Testversion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchoolCraft/WorksheetCrafter/Trial
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchoolCraft/WorksheetCrafter/Trial
+identifiers:
+- winget: SchoolCraft.WorksheetCrafter.Trial
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchoolCraft/WorksheetCrafter/Trial
+aliases: []

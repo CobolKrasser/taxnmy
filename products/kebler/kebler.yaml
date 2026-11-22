@@ -1,0 +1,11 @@
+key: kebler/kebler
+publisher: kebler
+name: Kebler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kebler/Kebler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kebler/Kebler
+identifiers:
+- winget: Kebler.Kebler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kebler/Kebler
+aliases: []

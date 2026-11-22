@@ -1,0 +1,11 @@
+key: fastfetch-cli/fastfetch
+publisher: fastfetch-cli
+name: fastfetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fastfetch-cli/Fastfetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fastfetch-cli/Fastfetch
+identifiers:
+- winget: Fastfetch-cli.Fastfetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fastfetch-cli/Fastfetch
+aliases: []

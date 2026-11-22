@@ -1,0 +1,11 @@
+key: ayangweb/bongocat
+publisher: ayangweb
+name: BongoCat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ayangweb/BongoCat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ayangweb/BongoCat
+identifiers:
+- winget: ayangweb.BongoCat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ayangweb/BongoCat
+aliases: []

@@ -1,0 +1,11 @@
+key: actual-budget/actual-budget
+publisher: actual-budget
+name: Actual Budget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActualBudget/ActualBudget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActualBudget/ActualBudget
+identifiers:
+- winget: ActualBudget.ActualBudget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActualBudget/ActualBudget
+aliases: []

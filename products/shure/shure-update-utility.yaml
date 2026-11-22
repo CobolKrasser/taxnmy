@@ -1,0 +1,11 @@
+key: shure/shure-update-utility
+publisher: shure
+name: Shure Update Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shure/UpdateUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shure/UpdateUtility
+identifiers:
+- winget: Shure.UpdateUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shure/UpdateUtility
+aliases: []

@@ -1,0 +1,11 @@
+key: powcal/powcal
+publisher: powcal
+name: PowCal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowCal/PowCal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowCal/PowCal
+identifiers:
+- winget: PowCal.PowCal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowCal/PowCal
+aliases: []

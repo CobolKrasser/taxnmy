@@ -1,0 +1,11 @@
+key: bandicam/bandicam-mpeg-1-decoder
+publisher: bandicam
+name: Bandicam MPEG-1 Decoder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/BandicamMPEG-1Decoder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/BandicamMPEG-1Decoder
+identifiers:
+- winget: BandicamCompany.BandicamMPEG-1Decoder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/BandicamMPEG-1Decoder
+aliases: []

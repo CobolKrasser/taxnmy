@@ -1,0 +1,11 @@
+key: browserstack/browserstacklocal
+publisher: browserstack
+name: BrowserStackLocal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserStack/BrowserStackLocal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserStack/BrowserStackLocal
+identifiers:
+- winget: BrowserStack.BrowserStackLocal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserStack/BrowserStackLocal
+aliases: []

@@ -1,0 +1,11 @@
+key: cooldesk/cooldesk
+publisher: cooldesk
+name: CoolDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoolDesk/CoolDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoolDesk/CoolDesk
+identifiers:
+- winget: CoolDesk.CoolDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoolDesk/CoolDesk
+aliases: []

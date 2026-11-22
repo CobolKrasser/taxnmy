@@ -1,0 +1,11 @@
+key: dubb/dubb-desktop
+publisher: dubb
+name: Dubb Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DubbInc/DubbDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DubbInc/DubbDesktop
+identifiers:
+- winget: DubbInc.DubbDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DubbInc/DubbDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: topala-software-solutions/siw
+publisher: topala-software-solutions
+name: SIW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopalaSoftwareSolutions/SIW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopalaSoftwareSolutions/SIW
+identifiers:
+- winget: TopalaSoftwareSolutions.SIW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopalaSoftwareSolutions/SIW
+aliases: []

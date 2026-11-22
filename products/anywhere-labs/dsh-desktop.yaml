@@ -1,0 +1,11 @@
+key: anywhere-labs/dsh-desktop
+publisher: anywhere-labs
+name: DSH Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnywhereLabs/DSHDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnywhereLabs/DSHDesktop
+identifiers:
+- winget: AnywhereLabs.DSHDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnywhereLabs/DSHDesktop
+aliases: []

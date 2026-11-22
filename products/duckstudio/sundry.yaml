@@ -1,0 +1,11 @@
+key: duckstudio/sundry
+publisher: duckstudio
+name: Sundry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/Sundry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/Sundry
+identifiers:
+- winget: DuckStudio.Sundry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/Sundry
+aliases: []

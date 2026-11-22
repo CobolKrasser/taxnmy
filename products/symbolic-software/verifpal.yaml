@@ -1,0 +1,11 @@
+key: symbolic-software/verifpal
+publisher: symbolic-software
+name: Verifpal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SymbolicSoftware/Verifpal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SymbolicSoftware/Verifpal
+identifiers:
+- winget: SymbolicSoftware.Verifpal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SymbolicSoftware/Verifpal
+aliases: []

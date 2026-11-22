@@ -1,0 +1,11 @@
+key: xlight-ftp/xlight-ftp-server
+publisher: xlight-ftp
+name: Xlight FTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XlightFTP/XlightFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XlightFTP/XlightFTP
+identifiers:
+- winget: XlightFTP.XlightFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XlightFTP/XlightFTP
+aliases: []

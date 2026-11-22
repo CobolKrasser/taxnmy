@@ -1,0 +1,11 @@
+key: broadcast-radio/myriad-autotrack-se
+publisher: broadcast-radio
+name: Myriad AutoTrack SE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadAutoTrackSE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadAutoTrackSE
+identifiers:
+- winget: BroadcastRadio.MyriadAutoTrackSE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadAutoTrackSE
+aliases: []

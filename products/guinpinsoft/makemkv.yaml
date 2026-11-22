@@ -1,0 +1,11 @@
+key: guinpinsoft/makemkv
+publisher: guinpinsoft
+name: MakeMKV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuinpinSoft/MakeMKV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuinpinSoft/MakeMKV
+identifiers:
+- winget: GuinpinSoft.MakeMKV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuinpinSoft/MakeMKV
+aliases: []

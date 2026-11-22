@@ -1,0 +1,13 @@
+key: cozy-cloud/cozy-drive
+publisher: cozy-cloud
+name: Cozy Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CozyCloud/CozyDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CozyCloud/CozyDrive
+identifiers:
+- winget: CozyCloud.CozyDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CozyCloud/CozyDrive
+- winget: CozyCloud.CozyDrive.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CozyCloud/CozyDrive/Beta
+aliases: []

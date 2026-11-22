@@ -1,0 +1,11 @@
+key: raysafe/raysafe-view
+publisher: raysafe
+name: RaySafe View
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaySafe/RaySafeView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaySafe/RaySafeView
+identifiers:
+- winget: RaySafe.RaySafeView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaySafe/RaySafeView
+aliases: []

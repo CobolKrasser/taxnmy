@@ -1,0 +1,11 @@
+key: learning-machines/designcraft
+publisher: learning-machines
+name: DesignCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/DesignCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/DesignCraft
+identifiers:
+- winget: ArtCraft.DesignCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/DesignCraft
+aliases: []

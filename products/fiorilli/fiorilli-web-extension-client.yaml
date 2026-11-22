@@ -1,0 +1,11 @@
+key: fiorilli/fiorilli-web-extension-client
+publisher: fiorilli
+name: Fiorilli Web Extension Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fiorilli/FiorilliWebExtensionClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fiorilli/FiorilliWebExtensionClient
+identifiers:
+- winget: Fiorilli.FiorilliWebExtensionClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fiorilli/FiorilliWebExtensionClient
+aliases: []

@@ -1,0 +1,11 @@
+key: lsd-rs/lsdeluxe
+publisher: lsd-rs
+name: LSDeluxe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lsd-rs/lsd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lsd-rs/lsd
+identifiers:
+- winget: lsd-rs.lsd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lsd-rs/lsd
+aliases: []

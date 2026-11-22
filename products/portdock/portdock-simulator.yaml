@@ -1,0 +1,11 @@
+key: portdock/portdock-simulator
+publisher: portdock
+name: PortDock Simulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortDock/Simulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortDock/Simulator
+identifiers:
+- winget: PortDock.Simulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortDock/Simulator
+aliases: []

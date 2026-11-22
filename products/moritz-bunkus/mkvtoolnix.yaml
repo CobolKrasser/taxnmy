@@ -1,0 +1,11 @@
+key: moritz-bunkus/mkvtoolnix
+publisher: moritz-bunkus
+name: MKVToolNix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoritzBunkus/MKVToolNix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoritzBunkus/MKVToolNix
+identifiers:
+- winget: MoritzBunkus.MKVToolNix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoritzBunkus/MKVToolNix
+aliases: []

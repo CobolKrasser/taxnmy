@@ -1,0 +1,11 @@
+key: circleci/circleci-cli
+publisher: circleci
+name: CircleCI CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircleCI/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircleCI/CLI
+identifiers:
+- winget: CircleCI.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CircleCI/CLI
+aliases: []

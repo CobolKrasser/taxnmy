@@ -1,0 +1,11 @@
+key: btbn/ffmpeg-gpl-shared-variant-master-branch
+publisher: btbn
+name: FFmpeg (GPL shared variant, master branch)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/GPL/Shared
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/GPL/Shared
+identifiers:
+- winget: BtbN.FFmpeg.GPL.Shared
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/GPL/Shared
+aliases: []

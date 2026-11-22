@@ -1,0 +1,11 @@
+key: rayoscompany/rayoai
+publisher: rayoscompany
+name: RayoAI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rayoscompany/RayoAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rayoscompany/RayoAI
+identifiers:
+- winget: rayoscompany.RayoAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rayoscompany/RayoAI
+aliases: []

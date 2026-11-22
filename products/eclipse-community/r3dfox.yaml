@@ -1,0 +1,11 @@
+key: eclipse-community/r3dfox
+publisher: eclipse-community
+name: r3dfox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseCommunity/r3dfox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseCommunity/r3dfox
+identifiers:
+- winget: EclipseCommunity.r3dfox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseCommunity/r3dfox
+aliases: []

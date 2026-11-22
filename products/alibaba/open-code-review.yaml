@@ -1,0 +1,11 @@
+key: alibaba/open-code-review
+publisher: alibaba
+name: Open Code Review
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/OpenCodeReview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/OpenCodeReview
+identifiers:
+- winget: Alibaba.OpenCodeReview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/OpenCodeReview
+aliases: []

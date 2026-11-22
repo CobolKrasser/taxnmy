@@ -1,0 +1,11 @@
+key: henry-plus-plus/mem-reduct
+publisher: henry-plus-plus
+name: Mem Reduct
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/MemReduct
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/MemReduct
+identifiers:
+- winget: Henry++.MemReduct
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/MemReduct
+aliases: []

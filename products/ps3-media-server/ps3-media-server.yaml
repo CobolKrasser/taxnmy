@@ -1,0 +1,11 @@
+key: ps3-media-server/ps3-media-server
+publisher: ps3-media-server
+name: PS3 Media Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shagrath/PS3MediaServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shagrath/PS3MediaServer
+identifiers:
+- winget: shagrath.PS3MediaServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shagrath/PS3MediaServer
+aliases: []

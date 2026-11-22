@@ -1,0 +1,11 @@
+key: pxstudio/openpnt
+publisher: pxstudio
+name: OpenPnt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PXStudio/OpenPnt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PXStudio/OpenPnt
+identifiers:
+- winget: PXStudio.OpenPnt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PXStudio/OpenPnt
+aliases: []

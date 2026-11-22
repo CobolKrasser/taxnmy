@@ -1,0 +1,11 @@
+key: happ/happ-proxy-utility
+publisher: happ
+name: Happ - Proxy Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Happ/Happ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Happ/Happ
+identifiers:
+- winget: Happ.Happ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Happ/Happ
+aliases: []

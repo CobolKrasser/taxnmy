@@ -1,0 +1,11 @@
+key: ubisoft/ubisoft-connect
+publisher: ubisoft
+name: Ubisoft Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubisoft/Connect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubisoft/Connect
+identifiers:
+- winget: Ubisoft.Connect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubisoft/Connect
+aliases: []

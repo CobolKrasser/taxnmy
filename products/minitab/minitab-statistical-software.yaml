@@ -1,0 +1,11 @@
+key: minitab/minitab-statistical-software
+publisher: minitab
+name: Minitab Statistical Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Minitab/MinitabStatisticalSoftware/22
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Minitab/MinitabStatisticalSoftware/22
+identifiers:
+- winget: Minitab.MinitabStatisticalSoftware.22
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Minitab/MinitabStatisticalSoftware/22
+aliases: []

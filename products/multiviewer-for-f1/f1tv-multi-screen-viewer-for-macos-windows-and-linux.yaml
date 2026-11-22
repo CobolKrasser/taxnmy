@@ -1,0 +1,11 @@
+key: multiviewer-for-f1/f1tv-multi-screen-viewer-for-macos-windows-and-linux
+publisher: multiviewer-for-f1
+name: F1TV Multi-Screen Viewer for macOS, Windows and Linux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MultiViewer/MultiViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MultiViewer/MultiViewer
+identifiers:
+- winget: MultiViewer.MultiViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MultiViewer/MultiViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: mark-harmstone/winbtrfs
+publisher: mark-harmstone
+name: WinBtrfs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maharmstone/btrfs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maharmstone/btrfs
+identifiers:
+- winget: maharmstone.btrfs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maharmstone/btrfs
+aliases: []

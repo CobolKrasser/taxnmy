@@ -1,0 +1,11 @@
+key: h-shirouzu-and-fastcopy-lab/fastcopy
+publisher: h-shirouzu-and-fastcopy-lab
+name: FastCopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/FastCopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/FastCopy
+identifiers:
+- winget: FastCopy.FastCopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/FastCopy
+aliases: []

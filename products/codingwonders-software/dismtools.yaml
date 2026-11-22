@@ -1,0 +1,11 @@
+key: codingwonders-software/dismtools
+publisher: codingwonders-software
+name: DISMTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodingWondersSoftware/DISMTools/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodingWondersSoftware/DISMTools/Stable
+identifiers:
+- winget: CodingWondersSoftware.DISMTools.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodingWondersSoftware/DISMTools/Stable
+aliases: []

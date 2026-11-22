@@ -1,0 +1,11 @@
+key: redeye-network-solutions/logivore
+publisher: redeye-network-solutions
+name: Logivore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/Logivore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/Logivore
+identifiers:
+- winget: RedEyeNetworks.Logivore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/Logivore
+aliases: []

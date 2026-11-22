@@ -1,0 +1,11 @@
+key: tenable/tenable-nessus
+publisher: tenable
+name: Tenable Nessus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/Nessus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/Nessus
+identifiers:
+- winget: Tenable.Nessus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/Nessus
+aliases: []

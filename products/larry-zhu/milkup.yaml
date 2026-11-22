@@ -1,0 +1,11 @@
+key: larry-zhu/milkup
+publisher: larry-zhu
+name: milkup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auto-Plugin/milkup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auto-Plugin/milkup
+identifiers:
+- winget: Auto-Plugin.milkup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auto-Plugin/milkup
+aliases: []

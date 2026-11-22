@@ -1,0 +1,11 @@
+key: egnyte/egnyte-desktop-app
+publisher: egnyte
+name: Egnyte Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egnyte/EgnyteDesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egnyte/EgnyteDesktopApp
+identifiers:
+- winget: Egnyte.EgnyteDesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egnyte/EgnyteDesktopApp
+aliases: []

@@ -1,0 +1,11 @@
+key: bleriot-noguia/lockbox-local
+publisher: bleriot-noguia
+name: Lockbox Local
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/noguia/lockbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/noguia/lockbox
+identifiers:
+- winget: noguia.lockbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/noguia/lockbox
+aliases: []

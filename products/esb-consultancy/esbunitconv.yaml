@@ -1,0 +1,11 @@
+key: esb-consultancy/esbunitconv
+publisher: esb-consultancy
+name: ESBUnitConv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBUnitConv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBUnitConv
+identifiers:
+- winget: ESBConsultancy.ESBUnitConv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBUnitConv
+aliases: []

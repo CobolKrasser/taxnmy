@@ -1,0 +1,11 @@
+key: datto/datto-workplace
+publisher: datto
+name: Datto Workplace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/Workplace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/Workplace
+identifiers:
+- winget: Datto.Workplace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/Workplace
+aliases: []

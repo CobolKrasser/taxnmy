@@ -1,0 +1,11 @@
+key: blackwell-systems/agent-lsp
+publisher: blackwell-systems
+name: agent-lsp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/agent-lsp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/agent-lsp
+identifiers:
+- winget: BlackwellSystems.agent-lsp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/agent-lsp
+aliases: []

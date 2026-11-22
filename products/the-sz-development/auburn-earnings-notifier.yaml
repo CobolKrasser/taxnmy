@@ -1,0 +1,11 @@
+key: the-sz-development/auburn-earnings-notifier
+publisher: the-sz-development
+name: Auburn Earnings Notifier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Auburn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Auburn
+identifiers:
+- winget: the-sz.Auburn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Auburn
+aliases: []

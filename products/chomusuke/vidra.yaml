@@ -1,0 +1,11 @@
+key: chomusuke/vidra
+publisher: chomusuke
+name: Vidra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chomusuke/Vidra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chomusuke/Vidra
+identifiers:
+- winget: Chomusuke.Vidra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chomusuke/Vidra
+aliases: []

@@ -1,0 +1,11 @@
+key: ganksoft/nanopad
+publisher: ganksoft
+name: Nanopad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ganksoft/Nanopad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ganksoft/Nanopad
+identifiers:
+- winget: Ganksoft.Nanopad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ganksoft/Nanopad
+aliases: []

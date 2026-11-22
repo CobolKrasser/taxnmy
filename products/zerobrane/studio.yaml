@@ -1,0 +1,11 @@
+key: zerobrane/studio
+publisher: zerobrane
+name: Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroBrane/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroBrane/Studio
+identifiers:
+- winget: ZeroBrane.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroBrane/Studio
+aliases: []

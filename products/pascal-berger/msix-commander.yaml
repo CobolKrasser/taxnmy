@@ -1,0 +1,11 @@
+key: pascal-berger/msix-commander
+publisher: pascal-berger
+name: MSIX Commander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PascalBerger/MSIXCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PascalBerger/MSIXCommander
+identifiers:
+- winget: PascalBerger.MSIXCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PascalBerger/MSIXCommander
+aliases: []

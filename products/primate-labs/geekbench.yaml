@@ -1,0 +1,21 @@
+key: primate-labs/geekbench
+publisher: primate-labs
+name: Geekbench
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/2
+identifiers:
+- winget: PrimateLabs.Geekbench.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/2
+- winget: PrimateLabs.Geekbench.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/3
+- winget: PrimateLabs.Geekbench.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/4
+- winget: PrimateLabs.Geekbench.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/5
+- winget: PrimateLabs.Geekbench.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/6
+- winget: PrimateLabs.Geekbench.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/Geekbench/7
+aliases: []

@@ -1,0 +1,11 @@
+key: incredibuild-software/incredibuild
+publisher: incredibuild-software
+name: Incredibuild
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Incredibuild/Incredibuild
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Incredibuild/Incredibuild
+identifiers:
+- winget: Incredibuild.Incredibuild
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Incredibuild/Incredibuild
+aliases: []

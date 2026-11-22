@@ -1,0 +1,11 @@
+key: ascensio-system-sia/avs-video-editor
+publisher: ascensio-system-sia
+name: AVS Video Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSVideoEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSVideoEditor
+identifiers:
+- winget: Ascensio.AVSVideoEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSVideoEditor
+aliases: []

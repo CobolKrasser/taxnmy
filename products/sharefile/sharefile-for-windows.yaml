@@ -1,0 +1,11 @@
+key: sharefile/sharefile-for-windows
+publisher: sharefile
+name: ShareFile For Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareFile/ShareFileForWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareFile/ShareFileForWindows
+identifiers:
+- winget: ShareFile.ShareFileForWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareFile/ShareFileForWindows
+aliases: []

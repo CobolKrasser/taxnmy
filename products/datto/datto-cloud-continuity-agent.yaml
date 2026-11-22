@@ -1,0 +1,11 @@
+key: datto/datto-cloud-continuity-agent
+publisher: datto
+name: Datto Cloud Continuity Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/CloudContinuityAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/CloudContinuityAgent
+identifiers:
+- winget: Datto.CloudContinuityAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/CloudContinuityAgent
+aliases: []

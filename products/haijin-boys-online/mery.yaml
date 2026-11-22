@@ -1,0 +1,13 @@
+key: haijin-boys-online/mery
+publisher: haijin-boys-online
+name: Mery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuro/Mery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuro/Mery
+identifiers:
+- winget: Kuro.Mery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuro/Mery
+- winget: Kuro.Mery.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuro/Mery/Beta
+aliases: []

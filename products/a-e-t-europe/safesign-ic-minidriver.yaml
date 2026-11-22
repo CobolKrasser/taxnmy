@@ -1,0 +1,11 @@
+key: a-e-t-europe/safesign-ic-minidriver
+publisher: a-e-t-europe
+name: SafeSign IC MiniDriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETEurope/SafeSignICMiniDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETEurope/SafeSignICMiniDriver
+identifiers:
+- winget: AETEurope.SafeSignICMiniDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETEurope/SafeSignICMiniDriver
+aliases: []

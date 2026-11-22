@@ -1,0 +1,11 @@
+key: tintin-plus-plus-development-team/wintin-plus-plus
+publisher: tintin-plus-plus-development-team
+name: WinTin++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scandum/WinTin++
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scandum/WinTin++
+identifiers:
+- winget: Scandum.WinTin++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scandum/WinTin++
+aliases: []

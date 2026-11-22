@@ -1,0 +1,11 @@
+key: ian-fogarty/assignment-packer
+publisher: ian-fogarty
+name: Assignment Packer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cat-forgor/ap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cat-forgor/ap
+identifiers:
+- winget: cat-forgor.ap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cat-forgor/ap
+aliases: []

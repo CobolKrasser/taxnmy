@@ -1,0 +1,11 @@
+key: www-everedit-net/everedit
+publisher: www-everedit-net
+name: EverEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EverEdit/EverEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EverEdit/EverEdit
+identifiers:
+- winget: EverEdit.EverEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EverEdit/EverEdit
+aliases: []

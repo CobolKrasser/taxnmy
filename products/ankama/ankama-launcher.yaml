@@ -1,0 +1,11 @@
+key: ankama/ankama-launcher
+publisher: ankama
+name: Ankama Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ankama/AnkamaLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ankama/AnkamaLauncher
+identifiers:
+- winget: Ankama.AnkamaLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ankama/AnkamaLauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: itop/itop-pdf
+publisher: itop
+name: iTop PDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopPDF
+identifiers:
+- winget: iTop.iTopPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopPDF
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/microsoft-azure-export-for-terraform
+publisher: microsoft
+name: Microsoft Azure Export for Terraform
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/AztfExport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/AztfExport
+identifiers:
+- winget: Microsoft.Azure.AztfExport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/AztfExport
+aliases: []

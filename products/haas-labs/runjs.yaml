@@ -1,0 +1,11 @@
+key: haas-labs/runjs
+publisher: haas-labs
+name: RunJS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lukehaas/RunJS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lukehaas/RunJS
+identifiers:
+- winget: lukehaas.RunJS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lukehaas/RunJS
+aliases: []

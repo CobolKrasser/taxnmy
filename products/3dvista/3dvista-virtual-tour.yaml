@@ -1,0 +1,11 @@
+key: 3dvista/3dvista-virtual-tour
+publisher: 3dvista
+name: 3DVista Virtual Tour
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3DVista/VirtualTour
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3DVista/VirtualTour
+identifiers:
+- winget: 3DVista.VirtualTour
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3DVista/VirtualTour
+aliases: []

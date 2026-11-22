@@ -1,0 +1,11 @@
+key: sunpet-industries/xploview
+publisher: sunpet-industries
+name: xploview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview/wired
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview/wired
+identifiers:
+- winget: xploview.xploview.wired
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview/wired
+aliases: []

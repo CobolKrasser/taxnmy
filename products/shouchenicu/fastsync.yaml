@@ -1,0 +1,11 @@
+key: shouchenicu/fastsync
+publisher: shouchenicu
+name: FastSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShouChenICU/FastSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShouChenICU/FastSync
+identifiers:
+- winget: ShouChenICU.FastSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShouChenICU/FastSync
+aliases: []

@@ -1,0 +1,11 @@
+key: alexander-burobin/game-server-watcher
+publisher: alexander-burobin
+name: Game Server Watcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lxndr/gswatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lxndr/gswatcher
+identifiers:
+- winget: lxndr.gswatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lxndr/gswatcher
+aliases: []

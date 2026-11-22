@@ -1,0 +1,11 @@
+key: digidna/imazing-heic-converter
+publisher: digidna
+name: iMazing HEIC Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazingHEICConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazingHEICConverter
+identifiers:
+- winget: DigiDNA.iMazingHEICConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazingHEICConverter
+aliases: []

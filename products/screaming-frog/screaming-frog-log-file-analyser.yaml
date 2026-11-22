@@ -1,0 +1,11 @@
+key: screaming-frog/screaming-frog-log-file-analyser
+publisher: screaming-frog
+name: Screaming Frog Log File Analyser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreamingFrog/LogFileAnalyser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreamingFrog/LogFileAnalyser
+identifiers:
+- winget: ScreamingFrog.LogFileAnalyser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreamingFrog/LogFileAnalyser
+aliases: []

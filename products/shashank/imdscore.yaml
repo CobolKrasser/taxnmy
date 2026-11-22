@@ -1,0 +1,11 @@
+key: shashank/imdscore
+publisher: shashank
+name: IMDSCore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SashaOM/IMDSCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SashaOM/IMDSCore
+identifiers:
+- winget: SashaOM.IMDSCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SashaOM/IMDSCore
+aliases: []

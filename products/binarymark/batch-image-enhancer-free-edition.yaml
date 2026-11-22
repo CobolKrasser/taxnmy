@@ -1,0 +1,11 @@
+key: binarymark/batch-image-enhancer-free-edition
+publisher: binarymark
+name: Batch Image Enhancer Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageEnhancer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageEnhancer
+identifiers:
+- winget: BinaryMark.BatchImageEnhancer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageEnhancer
+aliases: []

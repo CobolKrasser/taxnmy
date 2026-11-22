@@ -1,0 +1,11 @@
+key: winedt-team/winedt
+publisher: winedt-team
+name: WinEdt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinEdtTeam/WinEdt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinEdtTeam/WinEdt
+identifiers:
+- winget: WinEdtTeam.WinEdt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinEdtTeam/WinEdt
+aliases: []

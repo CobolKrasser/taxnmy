@@ -1,0 +1,11 @@
+key: hai-robo/windows-companion
+publisher: hai-robo
+name: Windows Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hairobo/WindowsCompanion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hairobo/WindowsCompanion
+identifiers:
+- winget: Hairobo.WindowsCompanion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hairobo/WindowsCompanion
+aliases: []

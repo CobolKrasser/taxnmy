@@ -1,0 +1,11 @@
+key: logi/logi-bolt
+publisher: logi
+name: Logi Bolt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LogiBolt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LogiBolt
+identifiers:
+- winget: Logitech.LogiBolt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LogiBolt
+aliases: []

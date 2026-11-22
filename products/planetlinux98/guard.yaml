@@ -1,0 +1,11 @@
+key: planetlinux98/guard
+publisher: planetlinux98
+name: GUARD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlanetLinux98/GUARD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlanetLinux98/GUARD
+identifiers:
+- winget: PlanetLinux98.GUARD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlanetLinux98/GUARD
+aliases: []

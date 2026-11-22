@@ -1,0 +1,11 @@
+key: cwe-computer-services/gsak
+publisher: cwe-computer-services
+name: GSAK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CWEcomputerservices/GSAK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CWEcomputerservices/GSAK
+identifiers:
+- winget: CWEcomputerservices.GSAK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CWEcomputerservices/GSAK
+aliases: []

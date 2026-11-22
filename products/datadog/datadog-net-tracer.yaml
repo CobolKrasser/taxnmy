@@ -1,0 +1,11 @@
+key: datadog/datadog-net-tracer
+publisher: datadog
+name: Datadog .NET Tracer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/dd-trace-dotnet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/dd-trace-dotnet
+identifiers:
+- winget: Datadog.dd-trace-dotnet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/dd-trace-dotnet
+aliases: []

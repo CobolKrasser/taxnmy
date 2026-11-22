@@ -1,0 +1,11 @@
+key: samsung/netcoredbg
+publisher: samsung
+name: NetCoreDbg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/NetCoreDbg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/NetCoreDbg
+identifiers:
+- winget: Samsung.NetCoreDbg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/NetCoreDbg
+aliases: []

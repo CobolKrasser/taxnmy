@@ -1,0 +1,11 @@
+key: contasimple/contasimple-desktop
+publisher: contasimple
+name: Contasimple Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Contasimple/ContasimpleDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Contasimple/ContasimpleDesktop
+identifiers:
+- winget: Contasimple.ContasimpleDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Contasimple/ContasimpleDesktop
+aliases: []

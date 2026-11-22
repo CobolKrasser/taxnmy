@@ -1,0 +1,11 @@
+key: appmakes/belfry
+publisher: appmakes
+name: Belfry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChengSoon/Belfry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChengSoon/Belfry
+identifiers:
+- winget: ChengSoon.Belfry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChengSoon/Belfry
+aliases: []

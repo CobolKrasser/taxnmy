@@ -1,0 +1,11 @@
+key: slacked-lime/timespent
+publisher: slacked-lime
+name: TimeSpent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackedLime/TimeSpent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackedLime/TimeSpent
+identifiers:
+- winget: SlackedLime.TimeSpent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackedLime/TimeSpent
+aliases: []

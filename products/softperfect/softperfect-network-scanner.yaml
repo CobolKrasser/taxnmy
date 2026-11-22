@@ -1,0 +1,11 @@
+key: softperfect/softperfect-network-scanner
+publisher: softperfect
+name: SoftPerfect Network Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/NetworkScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/NetworkScanner
+identifiers:
+- winget: SoftPerfect.NetworkScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/NetworkScanner
+aliases: []

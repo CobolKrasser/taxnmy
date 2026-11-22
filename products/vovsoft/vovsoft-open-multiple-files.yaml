@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-open-multiple-files
+publisher: vovsoft
+name: Vovsoft Open Multiple Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/OpenMultipleFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/OpenMultipleFiles
+identifiers:
+- winget: VovSoft.OpenMultipleFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/OpenMultipleFiles
+aliases: []

@@ -1,0 +1,11 @@
+key: chuthree/brew-guide
+publisher: chuthree
+name: Brew Guide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chuthree/BrewGuide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chuthree/BrewGuide
+identifiers:
+- winget: chuthree.BrewGuide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chuthree/BrewGuide
+aliases: []

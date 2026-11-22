@@ -1,0 +1,11 @@
+key: bose/bose-updater
+publisher: bose
+name: Bose Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bose/Updater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bose/Updater
+identifiers:
+- winget: Bose.Updater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bose/Updater
+aliases: []

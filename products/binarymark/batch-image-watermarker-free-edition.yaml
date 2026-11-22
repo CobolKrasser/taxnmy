@@ -1,0 +1,11 @@
+key: binarymark/batch-image-watermarker-free-edition
+publisher: binarymark
+name: Batch Image Watermarker Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageWatermarker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageWatermarker
+identifiers:
+- winget: BinaryMark.BatchImageWatermarker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageWatermarker
+aliases: []

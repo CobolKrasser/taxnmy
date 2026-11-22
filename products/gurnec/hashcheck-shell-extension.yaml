@@ -1,0 +1,11 @@
+key: gurnec/hashcheck-shell-extension
+publisher: gurnec
+name: HashCheck Shell Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gurnec/HashCheckShellExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gurnec/HashCheckShellExtension
+identifiers:
+- winget: gurnec.HashCheckShellExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gurnec/HashCheckShellExtension
+aliases: []

@@ -1,0 +1,11 @@
+key: rand-lee/wyvern
+publisher: rand-lee
+name: Wyvern
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/randlee/wyvern
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/randlee/wyvern
+identifiers:
+- winget: randlee.wyvern
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/randlee/wyvern
+aliases: []

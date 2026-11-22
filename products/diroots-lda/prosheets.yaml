@@ -1,0 +1,11 @@
+key: diroots-lda/prosheets
+publisher: diroots-lda
+name: ProSheets
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/ProSheets
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/ProSheets
+identifiers:
+- winget: DiRoots.ProSheets
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/ProSheets
+aliases: []

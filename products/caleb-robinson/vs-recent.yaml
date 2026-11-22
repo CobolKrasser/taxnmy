@@ -1,0 +1,11 @@
+key: caleb-robinson/vs-recent
+publisher: caleb-robinson
+name: VS Recent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calebrob6/VSRecent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calebrob6/VSRecent
+identifiers:
+- winget: calebrob6.VSRecent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calebrob6/VSRecent
+aliases: []

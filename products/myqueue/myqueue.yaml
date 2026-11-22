@@ -1,0 +1,11 @@
+key: myqueue/myqueue
+publisher: myqueue
+name: MyQueue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyQueueLOL/MyQueue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyQueueLOL/MyQueue
+identifiers:
+- winget: MyQueueLOL.MyQueue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyQueueLOL/MyQueue
+aliases: []

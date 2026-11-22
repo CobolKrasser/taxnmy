@@ -1,0 +1,11 @@
+key: stellar-information-technology/stellar-repair-for-mysql
+publisher: stellar-information-technology
+name: Stellar Repair for MySQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairForMySQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairForMySQL
+identifiers:
+- winget: StellarDataRecovery.StellarRepairForMySQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairForMySQL
+aliases: []

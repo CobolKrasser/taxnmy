@@ -1,0 +1,11 @@
+key: squigit-org/squigit-stt
+publisher: squigit-org
+name: Squigit STT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SquigitOrg/SquigitSTT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SquigitOrg/SquigitSTT
+identifiers:
+- winget: SquigitOrg.SquigitSTT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SquigitOrg/SquigitSTT
+aliases: []

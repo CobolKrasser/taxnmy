@@ -1,0 +1,11 @@
+key: tauri-app/mini-term
+publisher: tauri-app
+name: Mini-Term
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dreamlonglll/Mini-Term
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dreamlonglll/Mini-Term
+identifiers:
+- winget: dreamlonglll.Mini-Term
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dreamlonglll/Mini-Term
+aliases: []

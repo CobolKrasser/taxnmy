@@ -1,0 +1,11 @@
+key: daynix-computing/usbdk
+publisher: daynix-computing
+name: UsbDk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/daynix/UsbDk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/daynix/UsbDk
+identifiers:
+- winget: daynix.UsbDk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/daynix/UsbDk
+aliases: []

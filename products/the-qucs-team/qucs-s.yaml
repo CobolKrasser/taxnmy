@@ -1,0 +1,11 @@
+key: the-qucs-team/qucs-s
+publisher: the-qucs-team
+name: Qucs-S
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheQucsTeam/Qucs-S
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheQucsTeam/Qucs-S
+identifiers:
+- winget: TheQucsTeam.Qucs-S
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheQucsTeam/Qucs-S
+aliases: []

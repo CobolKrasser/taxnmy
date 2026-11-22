@@ -1,0 +1,11 @@
+key: tuyenvm/openkey
+publisher: tuyenvm
+name: OpenKey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tuyenvm/OpenKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tuyenvm/OpenKey
+identifiers:
+- winget: Tuyenvm.OpenKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tuyenvm/OpenKey
+aliases: []

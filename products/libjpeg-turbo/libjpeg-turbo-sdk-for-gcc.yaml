@@ -1,0 +1,11 @@
+key: libjpeg-turbo/libjpeg-turbo-sdk-for-gcc
+publisher: libjpeg-turbo
+name: libjpeg-turbo SDK for GCC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libjpeg-turbo/libjpeg-turbo/GCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libjpeg-turbo/libjpeg-turbo/GCC
+identifiers:
+- winget: libjpeg-turbo.libjpeg-turbo.GCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libjpeg-turbo/libjpeg-turbo/GCC
+aliases: []

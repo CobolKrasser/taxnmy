@@ -1,0 +1,11 @@
+key: arm-holdings/arm-gnu-toolchain
+publisher: arm-holdings
+name: Arm GNU Toolchain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/ArmGnuToolchain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/ArmGnuToolchain
+identifiers:
+- winget: Arm.ArmGnuToolchain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/ArmGnuToolchain
+aliases: []

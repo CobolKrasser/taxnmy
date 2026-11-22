@@ -1,0 +1,11 @@
+key: plebone/nos
+publisher: plebone
+name: nos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlebOne/nos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlebOne/nos
+identifiers:
+- winget: PlebOne.nos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlebOne/nos
+aliases: []

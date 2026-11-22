@@ -1,0 +1,11 @@
+key: treexy/driver-fusion
+publisher: treexy
+name: Driver Fusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Treexy/DriverFusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Treexy/DriverFusion
+identifiers:
+- winget: Treexy.DriverFusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Treexy/DriverFusion
+aliases: []

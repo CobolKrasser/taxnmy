@@ -1,0 +1,11 @@
+key: the-betaflight-open-source-project/betaflight-configurator
+publisher: the-betaflight-open-source-project
+name: Betaflight Configurator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Betaflight/Betaflight-Configurator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Betaflight/Betaflight-Configurator
+identifiers:
+- winget: Betaflight.Betaflight-Configurator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Betaflight/Betaflight-Configurator
+aliases: []

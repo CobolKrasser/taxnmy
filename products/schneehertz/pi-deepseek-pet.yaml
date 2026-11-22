@@ -1,0 +1,11 @@
+key: schneehertz/pi-deepseek-pet
+publisher: schneehertz
+name: Pi DeepSeek Pet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchneeHertz/PiDeepSeekPet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchneeHertz/PiDeepSeekPet
+identifiers:
+- winget: SchneeHertz.PiDeepSeekPet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchneeHertz/PiDeepSeekPet
+aliases: []

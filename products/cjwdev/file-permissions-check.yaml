@@ -1,0 +1,11 @@
+key: cjwdev/file-permissions-check
+publisher: cjwdev
+name: File Permissions Check
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/FilePermissionsCheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/FilePermissionsCheck
+identifiers:
+- winget: Cjwdev.FilePermissionsCheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/FilePermissionsCheck
+aliases: []

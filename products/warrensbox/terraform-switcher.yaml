@@ -1,0 +1,11 @@
+key: warrensbox/terraform-switcher
+publisher: warrensbox
+name: Terraform Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Warrensbox/TerraformSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Warrensbox/TerraformSwitcher
+identifiers:
+- winget: Warrensbox.TerraformSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Warrensbox/TerraformSwitcher
+aliases: []

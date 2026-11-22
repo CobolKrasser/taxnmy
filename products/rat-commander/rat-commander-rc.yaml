@@ -1,0 +1,11 @@
+key: rat-commander/rat-commander-rc
+publisher: rat-commander
+name: rat-commander (rc)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/rat-commander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/rat-commander
+identifiers:
+- winget: dividebysandwich.rat-commander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/rat-commander
+aliases: []

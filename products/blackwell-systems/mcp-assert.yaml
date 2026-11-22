@@ -1,0 +1,11 @@
+key: blackwell-systems/mcp-assert
+publisher: blackwell-systems
+name: mcp-assert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/mcp-assert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/mcp-assert
+identifiers:
+- winget: BlackwellSystems.mcp-assert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/mcp-assert
+aliases: []

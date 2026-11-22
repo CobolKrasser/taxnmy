@@ -1,0 +1,11 @@
+key: token2/fido2-manage
+publisher: token2
+name: fido2-manage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/token2/fido2-manage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/token2/fido2-manage
+identifiers:
+- winget: token2.fido2-manage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/token2/fido2-manage
+aliases: []

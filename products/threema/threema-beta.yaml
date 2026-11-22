@@ -1,0 +1,11 @@
+key: threema/threema-beta
+publisher: threema
+name: Threema Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/2
+identifiers:
+- winget: Threema.Threema.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/2
+aliases: []

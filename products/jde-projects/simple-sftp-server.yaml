@@ -1,0 +1,11 @@
+key: jde-projects/simple-sftp-server
+publisher: jde-projects
+name: Simple SFTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleSFTPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleSFTPServer
+identifiers:
+- winget: JDE-Projects.SimpleSFTPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleSFTPServer
+aliases: []

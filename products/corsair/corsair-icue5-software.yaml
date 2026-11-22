@@ -1,0 +1,11 @@
+key: corsair/corsair-icue5-software
+publisher: corsair
+name: Corsair iCUE5 Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/5
+identifiers:
+- winget: Corsair.iCUE.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsair/iCUE/5
+aliases: []

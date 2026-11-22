@@ -1,0 +1,11 @@
+key: shining-light-productions/openssl-light-lts
+publisher: shining-light-productions
+name: OpenSSL Light LTS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiningLight/OpenSSL/LTS/Light
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiningLight/OpenSSL/LTS/Light
+identifiers:
+- winget: ShiningLight.OpenSSL.LTS.Light
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiningLight/OpenSSL/LTS/Light
+aliases: []

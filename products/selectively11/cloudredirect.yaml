@@ -1,0 +1,11 @@
+key: selectively11/cloudredirect
+publisher: selectively11
+name: CloudRedirect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudRedirect/CloudRedirect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudRedirect/CloudRedirect
+identifiers:
+- winget: CloudRedirect.CloudRedirect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudRedirect/CloudRedirect
+aliases: []

@@ -1,0 +1,11 @@
+key: developer-in-a-box/agent-dvr
+publisher: developer-in-a-box
+name: Agent DVR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeveloperInABox/AgentDVR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeveloperInABox/AgentDVR
+identifiers:
+- winget: DeveloperInABox.AgentDVR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeveloperInABox/AgentDVR
+aliases: []

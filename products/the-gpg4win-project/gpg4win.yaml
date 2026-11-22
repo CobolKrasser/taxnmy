@@ -1,0 +1,13 @@
+key: the-gpg4win-project/gpg4win
+publisher: the-gpg4win-project
+name: Gpg4win
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/Gpg4win
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/Gpg4win
+identifiers:
+- winget: GnuPG.Gpg4win
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/Gpg4win
+- winget: GnuPG.Gpg4win.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/Gpg4win/Beta
+aliases: []

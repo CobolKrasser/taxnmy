@@ -1,0 +1,11 @@
+key: linwood/flow
+publisher: linwood
+name: Flow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodDev/Flow/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodDev/Flow/Nightly
+identifiers:
+- winget: LinwoodDev.Flow.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodDev/Flow/Nightly
+aliases: []

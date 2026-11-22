@@ -1,0 +1,11 @@
+key: vortenia/overwatch
+publisher: vortenia
+name: Overwatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vortenia/Overwatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vortenia/Overwatch
+identifiers:
+- winget: Vortenia.Overwatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vortenia/Overwatch
+aliases: []

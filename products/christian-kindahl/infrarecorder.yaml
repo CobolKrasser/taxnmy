@@ -1,0 +1,11 @@
+key: christian-kindahl/infrarecorder
+publisher: christian-kindahl
+name: InfraRecorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianKindahl/InfraRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianKindahl/InfraRecorder
+identifiers:
+- winget: ChristianKindahl.InfraRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianKindahl/InfraRecorder
+aliases: []

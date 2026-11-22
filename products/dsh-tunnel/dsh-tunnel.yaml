@@ -1,0 +1,11 @@
+key: dsh-tunnel/dsh-tunnel
+publisher: dsh-tunnel
+name: DSH Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liu-Bot24/DSH-Tunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liu-Bot24/DSH-Tunnel
+identifiers:
+- winget: Liu-Bot24.DSH-Tunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liu-Bot24/DSH-Tunnel
+aliases: []

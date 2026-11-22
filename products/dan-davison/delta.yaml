@@ -1,0 +1,11 @@
+key: dan-davison/delta
+publisher: dan-davison
+name: delta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dandavison/delta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dandavison/delta
+identifiers:
+- winget: dandavison.delta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dandavison/delta
+aliases: []

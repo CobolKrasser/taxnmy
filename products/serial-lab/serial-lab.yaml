@@ -1,0 +1,11 @@
+key: serial-lab/serial-lab
+publisher: serial-lab
+name: Serial Lab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialLab/SerialLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialLab/SerialLab
+identifiers:
+- winget: SerialLab.SerialLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialLab/SerialLab
+aliases: []

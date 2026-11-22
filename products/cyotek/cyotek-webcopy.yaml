@@ -1,0 +1,11 @@
+key: cyotek/cyotek-webcopy
+publisher: cyotek
+name: Cyotek WebCopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/WebCopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/WebCopy
+identifiers:
+- winget: Cyotek.WebCopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/WebCopy
+aliases: []

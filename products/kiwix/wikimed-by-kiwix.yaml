@@ -1,0 +1,13 @@
+key: kiwix/wikimed-by-kiwix
+publisher: kiwix
+name: WikiMed by Kiwix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/WikiMed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/WikiMed
+identifiers:
+- winget: Kiwix.WikiMed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/WikiMed
+- winget: Kiwix.WikiMed.Electron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/WikiMed/Electron
+aliases: []

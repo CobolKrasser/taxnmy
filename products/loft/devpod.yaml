@@ -1,0 +1,13 @@
+key: loft/devpod
+publisher: loft
+name: DevPod
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoftLabs/DevPod
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoftLabs/DevPod
+identifiers:
+- winget: LoftLabs.DevPod
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoftLabs/DevPod
+- winget: Skvetter.DevPod
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skvetter/DevPod
+aliases: []

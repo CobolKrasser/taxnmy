@@ -1,0 +1,11 @@
+key: softsea/csv-to-vcard
+publisher: softsea
+name: CSV to vCard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CSVtovCard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CSVtovCard
+identifiers:
+- winget: SoftSea.CSVtovCard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CSVtovCard
+aliases: []

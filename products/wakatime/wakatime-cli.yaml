@@ -1,0 +1,11 @@
+key: wakatime/wakatime-cli
+publisher: wakatime
+name: WakaTime CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wakatime/CLIWakatime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wakatime/CLIWakatime
+identifiers:
+- winget: Wakatime.CLIWakatime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wakatime/CLIWakatime
+aliases: []

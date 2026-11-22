@@ -1,0 +1,11 @@
+key: parostatus-de/parostatus-de-xml
+publisher: parostatus-de
+name: ParoStatus.de XML
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParoStatus/ParoStatusXML
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParoStatus/ParoStatusXML
+identifiers:
+- winget: ParoStatus.ParoStatusXML
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParoStatus/ParoStatusXML
+aliases: []

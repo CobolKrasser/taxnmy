@@ -1,0 +1,11 @@
+key: neotys/neoload
+publisher: neotys
+name: NeoLoad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neotys/NeoLoad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neotys/NeoLoad
+identifiers:
+- winget: Neotys.NeoLoad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neotys/NeoLoad
+aliases: []

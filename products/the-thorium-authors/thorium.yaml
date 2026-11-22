@@ -1,0 +1,15 @@
+key: the-thorium-authors/thorium
+publisher: the-thorium-authors
+name: Thorium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alex313031/Thorium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alex313031/Thorium
+identifiers:
+- winget: Alex313031.Thorium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alex313031/Thorium
+- winget: Alex313031.Thorium.AVX2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alex313031/Thorium/AVX2
+- winget: Alex313031.Thorium.SSE4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alex313031/Thorium/SSE4
+aliases: []

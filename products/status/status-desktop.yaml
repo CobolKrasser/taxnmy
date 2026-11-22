@@ -1,0 +1,11 @@
+key: status/status-desktop
+publisher: status
+name: Status-Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Status/Status
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Status/Status
+identifiers:
+- winget: Status.Status
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Status/Status
+aliases: []

@@ -1,0 +1,11 @@
+key: headwindsim/headwind-installer
+publisher: headwindsim
+name: Headwind Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headwindsim/HeadwindInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headwindsim/HeadwindInstaller
+identifiers:
+- winget: Headwindsim.HeadwindInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Headwindsim/HeadwindInstaller
+aliases: []

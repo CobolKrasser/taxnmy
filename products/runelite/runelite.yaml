@@ -1,0 +1,11 @@
+key: runelite/runelite
+publisher: runelite
+name: RuneLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RuneLite/RuneLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RuneLite/RuneLite
+identifiers:
+- winget: RuneLite.RuneLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RuneLite/RuneLite
+aliases: []

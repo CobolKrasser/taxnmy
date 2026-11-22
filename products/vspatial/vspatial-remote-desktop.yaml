@@ -1,0 +1,11 @@
+key: vspatial/vspatial-remote-desktop
+publisher: vspatial
+name: vSpatial Remote Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vSpatialInc/vSpatialRemoteDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vSpatialInc/vSpatialRemoteDesktop
+identifiers:
+- winget: vSpatialInc.vSpatialRemoteDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vSpatialInc/vSpatialRemoteDesktop
+aliases: []

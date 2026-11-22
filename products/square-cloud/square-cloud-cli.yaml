@@ -1,0 +1,11 @@
+key: square-cloud/square-cloud-cli
+publisher: square-cloud
+name: Square Cloud CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SquareCloud/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SquareCloud/CLI
+identifiers:
+- winget: SquareCloud.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SquareCloud/CLI
+aliases: []

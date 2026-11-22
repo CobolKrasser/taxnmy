@@ -1,0 +1,11 @@
+key: bullzip/bullzip-pdf-studio
+publisher: bullzip
+name: Bullzip PDF Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bullzip/BullzipPDFStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bullzip/BullzipPDFStudio
+identifiers:
+- winget: Bullzip.BullzipPDFStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bullzip/BullzipPDFStudio
+aliases: []

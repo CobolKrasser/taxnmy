@@ -1,0 +1,11 @@
+key: cross-tech/clipboard-pro
+publisher: cross-tech
+name: Clipboard Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrossTech/ClipboardPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrossTech/ClipboardPro
+identifiers:
+- winget: CrossTech.ClipboardPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrossTech/ClipboardPro
+aliases: []

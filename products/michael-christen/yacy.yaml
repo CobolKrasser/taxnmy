@@ -1,0 +1,11 @@
+key: michael-christen/yacy
+publisher: michael-christen
+name: YaCy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YaCy/YaCy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YaCy/YaCy
+identifiers:
+- winget: YaCy.YaCy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YaCy/YaCy
+aliases: []

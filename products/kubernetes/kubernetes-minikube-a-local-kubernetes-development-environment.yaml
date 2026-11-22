@@ -1,0 +1,11 @@
+key: kubernetes/kubernetes-minikube-a-local-kubernetes-development-environment
+publisher: kubernetes
+name: Kubernetes - Minikube - A Local Kubernetes Development Environment
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/minikube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/minikube
+identifiers:
+- winget: Kubernetes.minikube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/minikube
+aliases: []

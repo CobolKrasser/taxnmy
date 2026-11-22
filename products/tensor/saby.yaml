@@ -1,0 +1,11 @@
+key: tensor/saby
+publisher: tensor
+name: Saby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tensor/Saby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tensor/Saby
+identifiers:
+- winget: Tensor.Saby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tensor/Saby
+aliases: []

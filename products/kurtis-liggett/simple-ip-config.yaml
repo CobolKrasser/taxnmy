@@ -1,0 +1,11 @@
+key: kurtis-liggett/simple-ip-config
+publisher: kurtis-liggett
+name: Simple IP Config
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KurtisLiggett/SimpleIPConfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KurtisLiggett/SimpleIPConfig
+identifiers:
+- winget: KurtisLiggett.SimpleIPConfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KurtisLiggett/SimpleIPConfig
+aliases: []

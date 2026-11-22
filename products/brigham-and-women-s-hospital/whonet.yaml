@@ -1,0 +1,11 @@
+key: brigham-and-women-s-hospital/whonet
+publisher: brigham-and-women-s-hospital
+name: WHONET
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/WHONET
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/WHONET
+identifiers:
+- winget: WHONET.WHONET
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/WHONET
+aliases: []

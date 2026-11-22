@@ -1,0 +1,11 @@
+key: enigma-devel/enigma
+publisher: enigma-devel
+name: Enigma
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnigmaGame/Enigma
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnigmaGame/Enigma
+identifiers:
+- winget: EnigmaGame.Enigma
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnigmaGame/Enigma
+aliases: []

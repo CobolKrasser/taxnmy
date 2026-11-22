@@ -1,0 +1,11 @@
+key: vovsoft/vovsoft-cpu-monitor-gadget
+publisher: vovsoft
+name: Vovsoft CPU Monitor Gadget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CPUMonitorGadget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CPUMonitorGadget
+identifiers:
+- winget: VovSoft.CPUMonitorGadget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CPUMonitorGadget
+aliases: []

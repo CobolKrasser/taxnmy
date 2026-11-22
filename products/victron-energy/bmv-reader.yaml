@@ -1,0 +1,11 @@
+key: victron-energy/bmv-reader
+publisher: victron-energy
+name: BMV Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/BMVReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/BMVReader
+identifiers:
+- winget: VictronEnergy.BMVReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/BMVReader
+aliases: []

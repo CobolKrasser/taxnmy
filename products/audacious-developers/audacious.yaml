@@ -1,0 +1,11 @@
+key: audacious-developers/audacious
+publisher: audacious-developers
+name: Audacious
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audacious/MediaPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audacious/MediaPlayer
+identifiers:
+- winget: Audacious.MediaPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audacious/MediaPlayer
+aliases: []

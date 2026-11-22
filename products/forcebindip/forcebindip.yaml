@@ -1,0 +1,11 @@
+key: forcebindip/forcebindip
+publisher: forcebindip
+name: ForceBindIP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForceBindIP/ForceBindIP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForceBindIP/ForceBindIP
+identifiers:
+- winget: ForceBindIP.ForceBindIP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForceBindIP/ForceBindIP
+aliases: []

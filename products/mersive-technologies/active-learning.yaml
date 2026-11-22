@@ -1,0 +1,11 @@
+key: mersive-technologies/active-learning
+publisher: mersive-technologies
+name: Active Learning
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mersive/SolsticeActiveLearning
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mersive/SolsticeActiveLearning
+identifiers:
+- winget: Mersive.SolsticeActiveLearning
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mersive/SolsticeActiveLearning
+aliases: []

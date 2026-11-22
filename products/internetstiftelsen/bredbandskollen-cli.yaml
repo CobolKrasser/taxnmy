@@ -1,0 +1,11 @@
+key: internetstiftelsen/bredbandskollen-cli
+publisher: internetstiftelsen
+name: Bredbandskollen CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotse/bredbandskollen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotse/bredbandskollen
+identifiers:
+- winget: dotse.bredbandskollen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotse/bredbandskollen
+aliases: []

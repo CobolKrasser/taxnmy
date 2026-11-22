@@ -1,0 +1,11 @@
+key: openworker/openworker
+publisher: openworker
+name: OpenWorker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewNg/OpenWorker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewNg/OpenWorker
+identifiers:
+- winget: AndrewNg.OpenWorker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewNg/OpenWorker
+aliases: []

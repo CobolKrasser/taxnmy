@@ -1,0 +1,11 @@
+key: kubus/bimcollab-installer
+publisher: kubus
+name: BIMcollab Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BIMcollabInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BIMcollabInstaller
+identifiers:
+- winget: Kubus.BIMcollabInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BIMcollabInstaller
+aliases: []

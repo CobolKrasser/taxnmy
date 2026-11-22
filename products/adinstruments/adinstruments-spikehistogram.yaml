@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-spikehistogram
+publisher: adinstruments
+name: ADInstruments SpikeHistogram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/SpikeHistogram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/SpikeHistogram
+identifiers:
+- winget: ADInstruments.LabChart.Module.SpikeHistogram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/SpikeHistogram
+aliases: []

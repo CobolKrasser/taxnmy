@@ -1,0 +1,11 @@
+key: cocioaba-cornel/fastpad
+publisher: cocioaba-cornel
+name: FastPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coccor/FastPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coccor/FastPad
+identifiers:
+- winget: coccor.FastPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coccor/FastPad
+aliases: []

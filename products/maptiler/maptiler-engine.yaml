@@ -1,0 +1,11 @@
+key: maptiler/maptiler-engine
+publisher: maptiler
+name: MapTiler Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MapTiler/MapTilerEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MapTiler/MapTilerEngine
+identifiers:
+- winget: MapTiler.MapTilerEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MapTiler/MapTilerEngine
+aliases: []

@@ -1,0 +1,13 @@
+key: twintype/twintype-cloud
+publisher: twintype
+name: twintype-cloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwinType/twintype-cloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwinType/twintype-cloud
+identifiers:
+- winget: TwinType.TwinTypeCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwinType/TwinTypeCloud
+- winget: TwinType.twintype-cloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwinType/twintype-cloud
+aliases: []

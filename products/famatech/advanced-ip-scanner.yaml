@@ -1,0 +1,11 @@
+key: famatech/advanced-ip-scanner
+publisher: famatech
+name: Advanced IP Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/AdvancedIPScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/AdvancedIPScanner
+identifiers:
+- winget: Famatech.AdvancedIPScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/AdvancedIPScanner
+aliases: []

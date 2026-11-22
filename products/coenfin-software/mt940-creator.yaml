@@ -1,0 +1,11 @@
+key: coenfin-software/mt940-creator
+publisher: coenfin-software
+name: MT940 Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/MT940Creator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/MT940Creator
+identifiers:
+- winget: CoenFin.MT940Creator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/MT940Creator
+aliases: []

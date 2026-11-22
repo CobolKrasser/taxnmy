@@ -1,0 +1,11 @@
+key: tombi-toml/tombi
+publisher: tombi-toml
+name: tombi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tombi-toml/tombi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tombi-toml/tombi
+identifiers:
+- winget: tombi-toml.tombi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tombi-toml/tombi
+aliases: []

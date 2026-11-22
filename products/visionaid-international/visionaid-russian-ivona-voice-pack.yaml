@@ -1,0 +1,11 @@
+key: visionaid-international/visionaid-russian-ivona-voice-pack
+publisher: visionaid-international
+name: VisionAid Russian Ivona Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/IvonaVoicePack/Russian
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/IvonaVoicePack/Russian
+identifiers:
+- winget: VisionAid.IvonaVoicePack.Russian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/IvonaVoicePack/Russian
+aliases: []

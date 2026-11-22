@@ -1,0 +1,11 @@
+key: bioruebe/cicdec
+publisher: bioruebe
+name: cicdec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bioruebe/cicdec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bioruebe/cicdec
+identifiers:
+- winget: Bioruebe.cicdec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bioruebe/cicdec
+aliases: []

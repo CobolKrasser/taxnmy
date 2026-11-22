@@ -1,0 +1,11 @@
+key: bome-software/bome-sendsx
+publisher: bome-software
+name: Bome SendSX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bome/SendSX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bome/SendSX
+identifiers:
+- winget: Bome.SendSX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bome/SendSX
+aliases: []

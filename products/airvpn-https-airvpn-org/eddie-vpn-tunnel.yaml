@@ -1,0 +1,11 @@
+key: airvpn-https-airvpn-org/eddie-vpn-tunnel
+publisher: airvpn-https-airvpn-org
+name: Eddie - VPN Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirVPN/Eddie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirVPN/Eddie
+identifiers:
+- winget: AirVPN.Eddie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirVPN/Eddie
+aliases: []

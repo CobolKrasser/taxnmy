@@ -1,0 +1,11 @@
+key: cardexchange-solutions/cardexchange-producer
+publisher: cardexchange-solutions
+name: CardExchange Producer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/Producer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/Producer
+identifiers:
+- winget: CardExchange.Producer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/Producer
+aliases: []

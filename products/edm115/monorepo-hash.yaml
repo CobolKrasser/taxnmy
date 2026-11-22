@@ -1,0 +1,11 @@
+key: edm115/monorepo-hash
+publisher: edm115
+name: monorepo-hash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDM115/monorepo-hash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDM115/monorepo-hash
+identifiers:
+- winget: EDM115.monorepo-hash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDM115/monorepo-hash
+aliases: []

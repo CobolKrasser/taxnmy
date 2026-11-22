@@ -1,0 +1,11 @@
+key: techygeekshome/drivergeek
+publisher: techygeekshome
+name: DriverGeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/DriverGeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/DriverGeek
+identifiers:
+- winget: TechyGeeksHome.DriverGeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/DriverGeek
+aliases: []

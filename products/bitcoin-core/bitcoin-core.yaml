@@ -8,4 +8,6 @@ versions:
 identifiers:
 - homebrew: bitcoin-core
   source: https://formulae.brew.sh/cask/bitcoin-core
+- winget: BitcoinCoreProject.BitcoinCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitcoinCoreProject/BitcoinCore
 aliases: []

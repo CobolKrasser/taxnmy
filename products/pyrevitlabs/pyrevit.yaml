@@ -1,0 +1,11 @@
+key: pyrevitlabs/pyrevit
+publisher: pyrevitlabs
+name: pyRevit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyRevit/pyRevit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyRevit/pyRevit
+identifiers:
+- winget: pyRevit.pyRevit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyRevit/pyRevit
+aliases: []

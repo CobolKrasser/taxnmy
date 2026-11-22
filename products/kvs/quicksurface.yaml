@@ -1,0 +1,11 @@
+key: kvs/quicksurface
+publisher: kvs
+name: QUICKSURFACE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KVS/QUICKSURFACE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KVS/QUICKSURFACE
+identifiers:
+- winget: KVS.QUICKSURFACE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KVS/QUICKSURFACE
+aliases: []

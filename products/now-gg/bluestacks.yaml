@@ -1,0 +1,11 @@
+key: now-gg/bluestacks
+publisher: now-gg
+name: BlueStacks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueStack/BlueStacks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueStack/BlueStacks
+identifiers:
+- winget: BlueStack.BlueStacks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueStack/BlueStacks
+aliases: []

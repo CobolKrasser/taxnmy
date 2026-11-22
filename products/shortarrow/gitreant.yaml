@@ -1,0 +1,11 @@
+key: shortarrow/gitreant
+publisher: shortarrow
+name: gitreant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShortArrow/gitreant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShortArrow/gitreant
+identifiers:
+- winget: ShortArrow.gitreant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShortArrow/gitreant
+aliases: []

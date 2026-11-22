@@ -1,0 +1,11 @@
+key: shep-pm/shep
+publisher: shep-pm
+name: shep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shep-pm/shep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shep-pm/shep
+identifiers:
+- winget: shep-pm.shep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shep-pm/shep
+aliases: []

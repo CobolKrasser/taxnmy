@@ -1,0 +1,11 @@
+key: cybelsoft/drivers-cloud
+publisher: cybelsoft
+name: Drivers Cloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cybelsoft/DriversCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cybelsoft/DriversCloud
+identifiers:
+- winget: Cybelsoft.DriversCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cybelsoft/DriversCloud
+aliases: []

@@ -1,0 +1,11 @@
+key: tsutsu3/pi-hole-client
+publisher: tsutsu3
+name: Pi-hole client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tsutsu3/Pi-hole-client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tsutsu3/Pi-hole-client
+identifiers:
+- winget: tsutsu3.Pi-hole-client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tsutsu3/Pi-hole-client
+aliases: []

@@ -1,0 +1,11 @@
+key: ten-framework-team/tman
+publisher: ten-framework-team
+name: tman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ten-framework/tman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ten-framework/tman
+identifiers:
+- winget: ten-framework.tman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ten-framework/tman
+aliases: []

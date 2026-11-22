@@ -1,0 +1,11 @@
+key: binarymark/batch-file-split-and-join-free-edition
+publisher: binarymark
+name: Batch File Split & Join Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileSplitJoin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileSplitJoin
+identifiers:
+- winget: BinaryMark.BatchFileSplitJoin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileSplitJoin
+aliases: []

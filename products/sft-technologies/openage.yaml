@@ -1,0 +1,11 @@
+key: sft-technologies/openage
+publisher: sft-technologies
+name: openage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFTtech/openage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFTtech/openage
+identifiers:
+- winget: SFTtech.openage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFTtech/openage
+aliases: []

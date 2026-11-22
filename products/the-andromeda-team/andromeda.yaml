@@ -1,0 +1,11 @@
+key: the-andromeda-team/andromeda
+publisher: the-andromeda-team
+name: Andromeda
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Andromeda/Andromeda
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Andromeda/Andromeda
+identifiers:
+- winget: Andromeda.Andromeda
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Andromeda/Andromeda
+aliases: []

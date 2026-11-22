@@ -1,0 +1,11 @@
+key: now-tv/now-tv-player
+publisher: now-tv
+name: NOW TV Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NOWTV/NOWTVPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NOWTV/NOWTVPlayer
+identifiers:
+- winget: NOWTV.NOWTVPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NOWTV/NOWTVPlayer
+aliases: []

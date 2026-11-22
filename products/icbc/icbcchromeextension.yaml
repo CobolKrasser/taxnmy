@@ -1,0 +1,11 @@
+key: icbc/icbcchromeextension
+publisher: icbc
+name: ICBCChromeExtension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCChromeExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCChromeExtension
+identifiers:
+- winget: ICBC.ICBCChromeExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCChromeExtension
+aliases: []

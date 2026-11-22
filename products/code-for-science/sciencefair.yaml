@@ -1,0 +1,11 @@
+key: code-for-science/sciencefair
+publisher: code-for-science
+name: ScienceFair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeforScience/ScienceFair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeforScience/ScienceFair
+identifiers:
+- winget: CodeforScience.ScienceFair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeforScience/ScienceFair
+aliases: []

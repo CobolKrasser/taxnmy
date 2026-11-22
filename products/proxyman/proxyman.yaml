@@ -1,0 +1,11 @@
+key: proxyman/proxyman
+publisher: proxyman
+name: Proxyman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proxyman/Proxyman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proxyman/Proxyman
+identifiers:
+- winget: Proxyman.Proxyman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proxyman/Proxyman
+aliases: []

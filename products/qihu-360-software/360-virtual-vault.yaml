@@ -1,0 +1,11 @@
+key: qihu-360-software/360-virtual-vault
+publisher: qihu-360-software
+name: 360 Virtual Vault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/360VirtualVault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/360VirtualVault
+identifiers:
+- winget: 360.360VirtualVault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/360VirtualVault
+aliases: []

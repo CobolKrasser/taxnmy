@@ -1,0 +1,11 @@
+key: association-pour-la-modernisation-du-clavier-francais/azerty-global
+publisher: association-pour-la-modernisation-du-clavier-francais
+name: AZERTY Global
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMCF/AZERTYGlobal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMCF/AZERTYGlobal
+identifiers:
+- winget: AMCF.AZERTYGlobal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMCF/AZERTYGlobal
+aliases: []

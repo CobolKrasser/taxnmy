@@ -1,0 +1,11 @@
+key: adinstruments/adinstruments-scheduler
+publisher: adinstruments
+name: ADInstruments Scheduler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Scheduler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Scheduler
+identifiers:
+- winget: ADInstruments.LabChart.Extension.Scheduler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Scheduler
+aliases: []

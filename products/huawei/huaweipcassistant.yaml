@@ -1,0 +1,11 @@
+key: huawei/huaweipcassistant
+publisher: huawei
+name: HuaweiPCAssistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/QuickAppPCAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/QuickAppPCAssistant
+identifiers:
+- winget: Huawei.QuickAppPCAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/QuickAppPCAssistant
+aliases: []

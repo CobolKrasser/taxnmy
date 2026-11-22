@@ -1,0 +1,11 @@
+key: trancy/trancy-air
+publisher: trancy
+name: Trancy Air
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trancy/TrancyAir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trancy/TrancyAir
+identifiers:
+- winget: Trancy.TrancyAir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trancy/TrancyAir
+aliases: []

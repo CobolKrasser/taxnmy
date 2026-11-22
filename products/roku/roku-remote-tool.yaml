@@ -1,0 +1,11 @@
+key: roku/roku-remote-tool
+publisher: roku
+name: roku_remote_tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roku/RemoteTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roku/RemoteTool
+identifiers:
+- winget: Roku.RemoteTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roku/RemoteTool
+aliases: []

@@ -1,0 +1,11 @@
+key: filips/pwasforfirefox
+publisher: filips
+name: PWAsForFirefox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/filips/FirefoxPWA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/filips/FirefoxPWA
+identifiers:
+- winget: filips.FirefoxPWA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/filips/FirefoxPWA
+aliases: []

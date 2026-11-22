@@ -1,0 +1,11 @@
+key: acacia-avenue/heads-up-display
+publisher: acacia-avenue
+name: Heads-Up Display
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcaciaAve/HUD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcaciaAve/HUD
+identifiers:
+- winget: AcaciaAve.HUD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcaciaAve/HUD
+aliases: []

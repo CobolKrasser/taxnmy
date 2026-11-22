@@ -1,0 +1,11 @@
+key: internetdata/mmdb
+publisher: internetdata
+name: mmdb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InternetData/Mmdb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InternetData/Mmdb
+identifiers:
+- winget: InternetData.Mmdb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InternetData/Mmdb
+aliases: []

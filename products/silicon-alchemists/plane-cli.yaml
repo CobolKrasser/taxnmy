@@ -1,0 +1,11 @@
+key: silicon-alchemists/plane-cli
+publisher: silicon-alchemists
+name: plane-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RenderCoder/PlaneCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RenderCoder/PlaneCLI
+identifiers:
+- winget: RenderCoder.PlaneCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RenderCoder/PlaneCLI
+aliases: []

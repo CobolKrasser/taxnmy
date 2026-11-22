@@ -1,0 +1,11 @@
+key: sea-schliess-systeme/sea-oss-access
+publisher: sea-schliess-systeme
+name: SEA-OSS Access
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SEA/OssAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SEA/OssAccess
+identifiers:
+- winget: SEA.OssAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SEA/OssAccess
+aliases: []

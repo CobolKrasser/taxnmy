@@ -1,0 +1,11 @@
+key: pcman/pcman-bbs
+publisher: pcman
+name: PCMan-BBS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCMan-BBS/PCMan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCMan-BBS/PCMan
+identifiers:
+- winget: PCMan-BBS.PCMan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCMan-BBS/PCMan
+aliases: []

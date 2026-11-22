@@ -1,0 +1,13 @@
+key: adoptopenjdk/adoptopenjdk-jdk-with-eclipse-openj9
+publisher: adoptopenjdk
+name: AdoptOpenJDK JDK with Eclipse OpenJ9
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdoptOpenJDK/OpenJDK/16/OpenJ9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdoptOpenJDK/OpenJDK/16/OpenJ9
+identifiers:
+- winget: AdoptOpenJDK.OpenJDK.16.OpenJ9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdoptOpenJDK/OpenJDK/16/OpenJ9
+- winget: AdoptOpenJDK.OpenJDK.17.OpenJ9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdoptOpenJDK/OpenJDK/17/OpenJ9
+aliases: []

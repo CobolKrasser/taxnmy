@@ -1,0 +1,11 @@
+key: lenovo/lenovo-thin-installer
+publisher: lenovo
+name: Lenovo Thin Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/ThinInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/ThinInstaller
+identifiers:
+- winget: Lenovo.ThinInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/ThinInstaller
+aliases: []

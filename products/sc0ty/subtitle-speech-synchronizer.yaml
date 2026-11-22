@@ -1,0 +1,11 @@
+key: sc0ty/subtitle-speech-synchronizer
+publisher: sc0ty
+name: Subtitle Speech Synchronizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sc0ty/SubSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sc0ty/SubSync
+identifiers:
+- winget: sc0ty.SubSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sc0ty/SubSync
+aliases: []

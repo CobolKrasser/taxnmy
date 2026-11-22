@@ -1,0 +1,11 @@
+key: carrier/building-system-optimizer
+publisher: carrier
+name: Building System Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/BuildingSystemOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/BuildingSystemOptimizer
+identifiers:
+- winget: Carrier.BuildingSystemOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/BuildingSystemOptimizer
+aliases: []

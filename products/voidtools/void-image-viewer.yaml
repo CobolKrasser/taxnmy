@@ -1,0 +1,11 @@
+key: voidtools/void-image-viewer
+publisher: voidtools
+name: void Image Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/voidImageViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/voidImageViewer
+identifiers:
+- winget: voidtools.voidImageViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/voidImageViewer
+aliases: []

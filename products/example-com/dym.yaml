@@ -1,0 +1,11 @@
+key: example-com/dym
+publisher: example-com
+name: dYm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Everless321/dYm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Everless321/dYm
+identifiers:
+- winget: Everless321.dYm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Everless321/dYm
+aliases: []

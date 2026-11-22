@@ -1,0 +1,13 @@
+key: bartosz-cichecki/lenovo-legion-toolkit
+publisher: bartosz-cichecki
+name: Lenovo Legion Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartoszCichecki/LenovoLegionToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartoszCichecki/LenovoLegionToolkit
+identifiers:
+- winget: BartoszCichecki.LenovoLegionToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartoszCichecki/LenovoLegionToolkit
+- winget: LenovoLegionToolkitTeam.LenovoLegionToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LenovoLegionToolkitTeam/LenovoLegionToolkit
+aliases: []

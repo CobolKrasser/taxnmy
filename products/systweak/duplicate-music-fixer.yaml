@@ -1,0 +1,11 @@
+key: systweak/duplicate-music-fixer
+publisher: systweak
+name: Duplicate Music Fixer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/DuplicateMusicFixer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/DuplicateMusicFixer
+identifiers:
+- winget: SystweakSoftware.DuplicateMusicFixer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/DuplicateMusicFixer
+aliases: []

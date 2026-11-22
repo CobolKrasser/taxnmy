@@ -1,0 +1,11 @@
+key: gadwin/gadwin-printscreen
+publisher: gadwin
+name: Gadwin PrintScreen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/PrintScreen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/PrintScreen
+identifiers:
+- winget: Gadwin.PrintScreen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/PrintScreen
+aliases: []

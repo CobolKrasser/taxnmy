@@ -1,0 +1,11 @@
+key: lexicool-com/lexibar-greek
+publisher: lexicool-com
+name: Lexibar Greek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/EL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/EL
+identifiers:
+- winget: Lexicool.Lexibar.EL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/EL
+aliases: []

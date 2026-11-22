@@ -1,0 +1,11 @@
+key: nti-ufsm-cs/sie-remoto-ufsm
+publisher: nti-ufsm-cs
+name: SIE Remoto UFSM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTI-UFSM-CS/SIERemotoUFSM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTI-UFSM-CS/SIERemotoUFSM
+identifiers:
+- winget: NTI-UFSM-CS.SIERemotoUFSM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTI-UFSM-CS/SIERemotoUFSM
+aliases: []

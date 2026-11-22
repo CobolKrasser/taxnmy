@@ -1,0 +1,11 @@
+key: vijua/kotobee-reader
+publisher: vijua
+name: Kotobee Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vijua/KotobeeReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vijua/KotobeeReader
+identifiers:
+- winget: Vijua.KotobeeReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vijua/KotobeeReader
+aliases: []

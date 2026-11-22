@@ -1,0 +1,11 @@
+key: felix-rieseberg/windows95
+publisher: felix-rieseberg
+name: windows95
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FelixRieseberg/Windows95
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FelixRieseberg/Windows95
+identifiers:
+- winget: FelixRieseberg.Windows95
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FelixRieseberg/Windows95
+aliases: []

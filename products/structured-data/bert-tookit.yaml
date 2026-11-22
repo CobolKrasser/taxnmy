@@ -1,0 +1,11 @@
+key: structured-data/bert-tookit
+publisher: structured-data
+name: BERT Tookit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StructuredData/BERTTookit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StructuredData/BERTTookit
+identifiers:
+- winget: StructuredData.BERTTookit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StructuredData/BERTTookit
+aliases: []

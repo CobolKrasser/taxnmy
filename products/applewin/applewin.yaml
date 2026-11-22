@@ -1,0 +1,11 @@
+key: applewin/applewin
+publisher: applewin
+name: AppleWin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppleWin/AppleWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppleWin/AppleWin
+identifiers:
+- winget: AppleWin.AppleWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppleWin/AppleWin
+aliases: []

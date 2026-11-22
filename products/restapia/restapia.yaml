@@ -1,0 +1,11 @@
+key: restapia/restapia
+publisher: restapia
+name: RestApia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RestApia/RestApiaDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RestApia/RestApiaDesktop
+identifiers:
+- winget: RestApia.RestApiaDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RestApia/RestApiaDesktop
+aliases: []
