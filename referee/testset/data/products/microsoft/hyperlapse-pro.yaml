@@ -1,0 +1,12 @@
+key: microsoft/hyperlapse-pro
+publisher: microsoft
+name: Microsoft Hyperlapse Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HyperlapsePro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HyperlapsePro
+identifiers:
+- winget: Microsoft.HyperlapsePro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HyperlapsePro
+aliases:
+- microsoft/microsoft-hyperlapse-pro

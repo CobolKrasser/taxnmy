@@ -1,0 +1,11 @@
+key: microsoft/time-travel-debugging-ttd
+publisher: microsoft
+name: Time Travel Debugging (TTD)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/TimeTravelDebugging
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/TimeTravelDebugging
+identifiers:
+- winget: Microsoft.TimeTravelDebugging
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/TimeTravelDebugging
+aliases: []

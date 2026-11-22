@@ -1,0 +1,13 @@
+key: openjs-foundation/electron
+publisher: openjs-foundation
+name: Electron
+kind: software
+source: https://www.electronjs.org/docs/latest/tutorial/electron-timelines
+versions:
+  source: https://www.electronjs.org/docs/latest/tutorial/electron-timelines
+identifiers:
+- cpe: cpe:2.3:a:electronjs:electron
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/electron.md
+- homebrew: electron
+  source: https://formulae.brew.sh/cask/electron
+aliases: []

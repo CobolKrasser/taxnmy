@@ -1,0 +1,12 @@
+key: mozilla/firefox-en-us
+publisher: mozilla
+name: Mozilla Firefox (en-US)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Firefox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Firefox
+identifiers:
+- winget: Mozilla.Firefox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Firefox
+aliases:
+- mozilla/mozilla-firefox-en-us

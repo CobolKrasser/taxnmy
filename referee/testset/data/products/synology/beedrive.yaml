@@ -1,0 +1,11 @@
+key: synology/beedrive
+publisher: synology
+name: BeeDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/BeeDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/BeeDrive
+identifiers:
+- winget: Synology.BeeDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/BeeDrive
+aliases: []

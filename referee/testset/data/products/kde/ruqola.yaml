@@ -1,0 +1,13 @@
+key: kde/ruqola
+publisher: kde
+name: Ruqola
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ruqola
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ruqola
+identifiers:
+- winget: KDE.Ruqola
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ruqola
+- winget: KDE.Ruqola.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ruqola/AppX
+aliases: []

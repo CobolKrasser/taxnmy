@@ -1,0 +1,11 @@
+key: paessler/prtg-desktop
+publisher: paessler
+name: PRTG Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paessler/PRTGDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paessler/PRTGDesktop
+identifiers:
+- winget: Paessler.PRTGDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paessler/PRTGDesktop
+aliases: []

@@ -1,0 +1,13 @@
+key: kde/ark
+publisher: kde
+name: ark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ark
+identifiers:
+- winget: KDE.Ark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ark
+- winget: KDE.Ark.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Ark/AppX
+aliases: []

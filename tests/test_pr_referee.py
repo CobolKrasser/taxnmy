@@ -710,7 +710,7 @@ class KeyStaysTest(unittest.TestCase):
     def test_the_four_cases_of_the_test_set_are_rejected_on_tk3(self):
         proposals = [p for p in pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml")
                      if p["id"] in ("B55", "B56", "B57", "B58", "G36")]
-        items = {i["id"]: i for i in pr_referee.gate_proposals(proposals, FakeFetcher(), log=QUIET)}
+        items = {i["id"]: i for i in pr_referee.gate_proposals(proposals, FakeFetcher(), referee.TESTSET_DATA, log=QUIET)}
         for cid in ("B55", "B56", "B57", "B58"):
             self.assertEqual((items[cid]["outcome"], items[cid]["rule"]), ("reject", "TK3"), cid)
         self.assertNotEqual(items["G36"]["outcome"], "reject", "a freed key is judged as any new product")

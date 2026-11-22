@@ -1,0 +1,11 @@
+key: microsoft/git
+publisher: microsoft
+name: Git
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Git
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Git
+identifiers:
+- winget: Microsoft.Git
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Git
+aliases: []

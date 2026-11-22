@@ -1,0 +1,11 @@
+key: broadcom/spring-tools-for-eclipse
+publisher: broadcom
+name: Spring Tools for Eclipse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMware/SpringToolSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMware/SpringToolSuite
+identifiers:
+- winget: VMware.SpringToolSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMware/SpringToolSuite
+aliases: []

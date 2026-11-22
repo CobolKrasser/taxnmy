@@ -1,0 +1,13 @@
+key: cisco/webex
+publisher: cisco
+name: Webex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Webex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Webex
+identifiers:
+- winget: Cisco.Webex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Webex
+- winget: Cisco.Webex.Bundle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Webex/Bundle
+aliases: []

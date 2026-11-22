@@ -1,0 +1,11 @@
+key: ronny-wegener/hakuneko-desktop
+publisher: ronny-wegener
+name: HakuNeko Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HakuNeko/HakuNeko
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HakuNeko/HakuNeko
+identifiers:
+- winget: HakuNeko.HakuNeko
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HakuNeko/HakuNeko
+aliases: []

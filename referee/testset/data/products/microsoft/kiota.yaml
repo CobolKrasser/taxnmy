@@ -1,0 +1,11 @@
+key: microsoft/kiota
+publisher: microsoft
+name: Kiota
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenAPI/Kiota
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenAPI/Kiota
+identifiers:
+- winget: Microsoft.OpenAPI.Kiota
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenAPI/Kiota
+aliases: []

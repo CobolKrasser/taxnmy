@@ -1,0 +1,9 @@
+key: owncloud/core
+publisher: owncloud
+name: ownCloud Core
+kind: software
+source: https://owncloud.com/changelog/server/
+versions:
+  source: https://owncloud.com/changelog/server/
+aliases:
+- owncloud/owncloud-core

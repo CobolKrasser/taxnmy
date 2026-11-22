@@ -1,0 +1,11 @@
+key: mozilla/llamafile
+publisher: mozilla
+name: llamafile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/llamafile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/llamafile
+identifiers:
+- winget: Mozilla.llamafile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/llamafile
+aliases: []

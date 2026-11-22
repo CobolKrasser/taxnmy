@@ -1,0 +1,11 @@
+key: splunk/splunk
+publisher: splunk
+name: Splunk
+kind: software
+source: https://www.splunk.com/en_us/legal/splunk-software-support-policy.html
+versions:
+  source: https://www.splunk.com/en_us/legal/splunk-software-support-policy.html
+identifiers:
+- cpe: cpe:2.3:a:splunk:splunk
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/splunk.md
+aliases: []

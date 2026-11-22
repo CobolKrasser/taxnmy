@@ -1,0 +1,11 @@
+key: microsoft/xmlnotepad
+publisher: microsoft
+name: XmlNotepad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/XMLNotepad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/XMLNotepad
+identifiers:
+- winget: Microsoft.XMLNotepad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/XMLNotepad
+aliases: []

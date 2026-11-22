@@ -1,0 +1,13 @@
+key: neos/neos
+publisher: neos
+name: Neos
+kind: software
+source: https://www.neos.io/features/release-process.html
+versions:
+  source: https://www.neos.io/features/release-process.html
+identifiers:
+- purl: pkg:composer/neos/neos
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/neos.md
+- cpe: cpe:2.3:a:neos:neos_cms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/neos.md
+aliases: []

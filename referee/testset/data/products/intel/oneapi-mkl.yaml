@@ -1,0 +1,12 @@
+key: intel/oneapi-mkl
+publisher: intel
+name: Intel oneAPI MKL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/oneMKL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/oneMKL
+identifiers:
+- winget: Intel.oneMKL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/oneMKL
+aliases:
+- intel/intel-oneapi-mkl

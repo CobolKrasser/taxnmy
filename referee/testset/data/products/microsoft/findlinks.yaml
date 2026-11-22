@@ -1,0 +1,11 @@
+key: microsoft/findlinks
+publisher: microsoft
+name: FindLinks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/FindLinks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/FindLinks
+identifiers:
+- winget: Microsoft.Sysinternals.FindLinks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/FindLinks
+aliases: []

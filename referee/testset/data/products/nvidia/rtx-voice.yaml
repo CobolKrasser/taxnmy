@@ -1,0 +1,11 @@
+key: nvidia/rtx-voice
+publisher: nvidia
+name: RTX Voice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/RTXVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/RTXVoice
+identifiers:
+- winget: Nvidia.RTXVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/RTXVoice
+aliases: []

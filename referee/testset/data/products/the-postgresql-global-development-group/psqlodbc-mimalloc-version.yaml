@@ -1,0 +1,11 @@
+key: the-postgresql-global-development-group/psqlodbc-mimalloc-version
+publisher: the-postgresql-global-development-group
+name: psqlodbc (mimalloc version)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/psqlODBC/mimalloc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/psqlODBC/mimalloc
+identifiers:
+- winget: PostgreSQL.psqlODBC.mimalloc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/psqlODBC/mimalloc
+aliases: []

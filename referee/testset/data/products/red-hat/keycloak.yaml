@@ -1,0 +1,15 @@
+key: red-hat/keycloak
+publisher: red-hat
+name: Keycloak
+kind: software
+source: https://endoflife.date/keycloak
+versions:
+  source: https://endoflife.date/keycloak
+identifiers:
+- purl: pkg:github/keycloak/keycloak
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/keycloak.md
+- purl: pkg:maven/org.keycloak/keycloak-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/keycloak.md
+- cpe: cpe:2.3:a:redhat:keycloak
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/keycloak.md
+aliases: []

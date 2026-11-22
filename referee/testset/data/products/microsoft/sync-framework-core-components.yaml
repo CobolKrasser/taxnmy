@@ -1,0 +1,12 @@
+key: microsoft/sync-framework-core-components
+publisher: microsoft
+name: Microsoft Sync Framework Core Components
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/CoreComponents
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/CoreComponents
+identifiers:
+- winget: Microsoft.SyncFramework.CoreComponents
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/CoreComponents
+aliases:
+- microsoft/microsoft-sync-framework-core-components

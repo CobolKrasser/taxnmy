@@ -1,0 +1,11 @@
+key: github/hub
+publisher: github
+name: hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/hub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/hub
+identifiers:
+- winget: GitHub.hub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/hub
+aliases: []

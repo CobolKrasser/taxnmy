@@ -1,0 +1,11 @@
+key: jetbrains/gitclient
+publisher: jetbrains
+name: GitClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GitClient/EAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GitClient/EAP
+identifiers:
+- winget: JetBrains.GitClient.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GitClient/EAP
+aliases: []

@@ -1,0 +1,13 @@
+key: microsoft/visual-studio-code
+publisher: microsoft
+name: Visual Studio Code
+kind: software
+source: https://code.visualstudio.com/
+versions:
+  source: https://code.visualstudio.com/updates
+identifiers:
+- cpe: cpe:2.3:a:microsoft:visual_studio_code
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:microsoft:visual_studio_code&resultsPerPage=1
+- winget: Microsoft.VisualStudioCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode
+aliases: []

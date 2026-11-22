@@ -1,0 +1,9 @@
+key: kestra/kestra
+publisher: kestra
+name: Kestra
+kind: software
+source: https://kestra.io/docs/changelog/v1.2.11
+versions:
+  source: https://kestra.io/docs/releases
+aliases:
+- kestra/kestra-open-source-edition

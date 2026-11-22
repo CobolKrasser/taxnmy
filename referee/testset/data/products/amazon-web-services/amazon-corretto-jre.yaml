@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-corretto-jre
+publisher: amazon-web-services
+name: Amazon Corretto JRE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/8/JRE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/8/JRE
+identifiers:
+- winget: Amazon.Corretto.8.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Corretto/8/JRE
+aliases: []

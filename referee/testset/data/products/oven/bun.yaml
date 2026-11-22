@@ -1,0 +1,17 @@
+key: oven/bun
+publisher: oven
+name: Bun
+kind: software
+source: https://endoflife.date/bun
+versions:
+  source: https://endoflife.date/bun
+identifiers:
+- purl: pkg:github/oven-sh/bun
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
+- purl: pkg:brew/oven-sh/bun/bun
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
+- purl: pkg:npm/bun
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
+- purl: pkg:scoop/bun
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
+aliases: []

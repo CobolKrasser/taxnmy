@@ -1,0 +1,11 @@
+key: microsoft/visual-studio-locator
+publisher: microsoft
+name: Visual Studio Locator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Locator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Locator
+identifiers:
+- winget: Microsoft.VisualStudio.Locator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Locator
+aliases: []

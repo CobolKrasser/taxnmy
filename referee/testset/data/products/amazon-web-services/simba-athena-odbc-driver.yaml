@@ -1,0 +1,11 @@
+key: amazon-web-services/simba-athena-odbc-driver
+publisher: amazon-web-services
+name: Simba Athena ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AthenaODBCDriver/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AthenaODBCDriver/1
+identifiers:
+- winget: Amazon.AthenaODBCDriver.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AthenaODBCDriver/1
+aliases: []

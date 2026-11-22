@@ -1,0 +1,12 @@
+key: proxmox/datacenter-manager
+publisher: proxmox
+name: Proxmox Datacenter Manager
+kind: software
+source: https://pdm.proxmox.com/docs/faq.html#how-long-will-my-proxmox-datacenter-manager-version-be-supported
+versions:
+  source: https://pdm.proxmox.com/docs/faq.html#how-long-will-my-proxmox-datacenter-manager-version-be-supported
+identifiers:
+- purl: pkg:github/proxmox/proxmox-datacenter-manager
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proxmox-datacenter-manager.md
+aliases:
+- proxmox/proxmox-datacenter-manager

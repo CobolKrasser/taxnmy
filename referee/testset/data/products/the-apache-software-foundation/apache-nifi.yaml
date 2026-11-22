@@ -1,0 +1,15 @@
+key: the-apache-software-foundation/apache-nifi
+publisher: the-apache-software-foundation
+name: Apache NiFi
+kind: software
+source: https://endoflife.date/apache-nifi
+versions:
+  source: https://endoflife.date/apache-nifi
+identifiers:
+- cpe: cpe:2.3:a:apache:nifi
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-nifi.md
+- purl: pkg:github/apache/nifi
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-nifi.md
+- purl: pkg:maven/org.apache.nifi/nifi
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-nifi.md
+aliases: []

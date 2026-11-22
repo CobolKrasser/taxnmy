@@ -1,0 +1,15 @@
+key: sylius/sylius
+publisher: sylius
+name: Sylius
+kind: software
+source: https://endoflife.date/sylius
+versions:
+  source: https://endoflife.date/sylius
+identifiers:
+- cpe: cpe:2.3:a:sylius:sylius
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sylius.md
+- purl: pkg:composer/sylius/sylius
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sylius.md
+- purl: pkg:github/sylius/sylius
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sylius.md
+aliases: []

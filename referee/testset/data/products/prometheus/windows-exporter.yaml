@@ -1,0 +1,11 @@
+key: prometheus/windows-exporter
+publisher: prometheus
+name: windows_exporter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prometheus/WindowsExporter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prometheus/WindowsExporter
+identifiers:
+- winget: Prometheus.WindowsExporter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prometheus/WindowsExporter
+aliases: []

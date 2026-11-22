@@ -1,0 +1,11 @@
+key: containerd/containerd
+publisher: containerd
+name: containerd
+kind: software
+source: https://containerd.io/releases/
+versions:
+  source: https://containerd.io/releases/
+identifiers:
+- cpe: cpe:2.3:a:linuxfoundation:containerd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/containerd.md
+aliases: []

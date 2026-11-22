@@ -1,0 +1,13 @@
+key: jetbrains/intellij-idea-ultimate-edition
+publisher: jetbrains
+name: IntelliJ IDEA Ultimate Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Ultimate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Ultimate
+identifiers:
+- winget: JetBrains.IntelliJIDEA.Ultimate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Ultimate
+- winget: JetBrains.IntelliJIDEA.Ultimate.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Ultimate/EAP
+aliases: []

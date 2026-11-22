@@ -1,0 +1,12 @@
+key: microsoft/azure-storage-emulator
+publisher: microsoft
+name: Microsoft Azure Storage Emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/StorageEmulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/StorageEmulator
+identifiers:
+- winget: Microsoft.Azure.StorageEmulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/StorageEmulator
+aliases:
+- microsoft/microsoft-azure-storage-emulator

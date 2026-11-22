@@ -1,0 +1,11 @@
+key: microsoft/malicious-software-removal-tool
+publisher: microsoft
+name: Malicious Software Removal Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MaliciousSoftwareRemovalTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MaliciousSoftwareRemovalTool
+identifiers:
+- winget: Microsoft.MaliciousSoftwareRemovalTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MaliciousSoftwareRemovalTool
+aliases: []

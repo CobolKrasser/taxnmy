@@ -1,0 +1,12 @@
+key: cisco/webex-productivity-tools
+publisher: cisco
+name: Cisco Webex Productivity Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/webex-outlook-plugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/webex-outlook-plugin
+identifiers:
+- winget: Cisco.webex-outlook-plugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/webex-outlook-plugin
+aliases:
+- cisco/cisco-webex-productivity-tools

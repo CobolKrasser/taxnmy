@@ -1,0 +1,11 @@
+key: influxdata/influxdb
+publisher: influxdata
+name: InfluxDB
+kind: software
+source: https://www.influxdata.com/legal/support-policy/
+versions:
+  source: https://www.influxdata.com/legal/support-policy/
+identifiers:
+- cpe: cpe:2.3:a:influxdata:influxdb
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/influxdb.md
+aliases: []

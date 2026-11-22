@@ -1,0 +1,11 @@
+key: kde/marble
+publisher: kde
+name: Marble
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Marble
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Marble
+identifiers:
+- winget: KDE.Marble
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Marble
+aliases: []

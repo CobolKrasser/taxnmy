@@ -1,0 +1,11 @@
+key: google/android
+publisher: google
+name: Android
+kind: operating-system
+source: https://source.android.com/
+versions:
+  source: https://source.android.com/docs/setup/reference/build-numbers
+identifiers:
+- cpe: cpe:2.3:o:google:android
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:google:android&resultsPerPage=1
+aliases: []

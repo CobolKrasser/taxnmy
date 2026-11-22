@@ -1,0 +1,11 @@
+key: google/picasa
+publisher: google
+name: Picasa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Picasa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Picasa
+identifiers:
+- winget: Google.Picasa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Picasa
+aliases: []

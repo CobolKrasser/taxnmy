@@ -1,0 +1,15 @@
+key: clickhouse/clickhouse
+publisher: clickhouse
+name: ClickHouse
+kind: software
+source: https://clickhouse.com/docs/resources/support-center/knowledge-base/setup-installation/production#how-to-choose-between-clickhouse-releases
+versions:
+  source: https://clickhouse.com/docs/resources/support-center/knowledge-base/setup-installation/production#how-to-choose-between-clickhouse-releases
+identifiers:
+- purl: pkg:github/ClickHouse/ClickHouse
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/clickhouse.md
+- cpe: cpe:2.3:a:clickhouse:clickhouse
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:clickhouse:clickhouse&resultsPerPage=1
+- homebrew: clickhouse
+  source: https://formulae.brew.sh/cask/clickhouse
+aliases: []

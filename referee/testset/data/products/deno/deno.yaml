@@ -1,0 +1,19 @@
+key: deno/deno
+publisher: deno
+name: Deno
+kind: software
+source: https://docs.deno.com/runtime/fundamentals/stability_and_releases/
+versions:
+  source: https://docs.deno.com/runtime/fundamentals/stability_and_releases/
+identifiers:
+- purl: pkg:brew/deno
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/deno.md
+- purl: pkg:cargo/deno
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/deno.md
+- purl: pkg:github/denoland/deno
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/deno.md
+- purl: pkg:npm/deno
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/deno.md
+- cpe: cpe:2.3:a:deno:deno
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/deno.md
+aliases: []

@@ -1,0 +1,12 @@
+key: kde/plasma
+publisher: kde
+name: KDE Plasma
+kind: operating-system
+source: https://community.kde.org/Schedules/Plasma_6
+versions:
+  source: https://community.kde.org/Schedules/Plasma_6
+identifiers:
+- cpe: cpe:2.3:a:kde:plasma
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kde-plasma.md
+aliases:
+- kde/kde-plasma

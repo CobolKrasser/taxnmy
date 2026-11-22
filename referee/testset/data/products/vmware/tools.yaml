@@ -1,0 +1,9 @@
+key: vmware/tools
+publisher: vmware
+name: VMware Tools
+kind: software
+source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/tools/13-0-0.html
+versions:
+  source: https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/tools/13-0-0/release-notes.html
+aliases:
+- vmware/vmware-tools

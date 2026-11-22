@@ -1,0 +1,11 @@
+key: microsoft/windows-pc-health-check
+publisher: microsoft
+name: Windows PC Health Check
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsPCHealthCheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsPCHealthCheck
+identifiers:
+- winget: Microsoft.WindowsPCHealthCheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsPCHealthCheck
+aliases: []

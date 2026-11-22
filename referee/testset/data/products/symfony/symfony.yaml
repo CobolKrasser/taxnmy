@@ -1,0 +1,11 @@
+key: symfony/symfony
+publisher: symfony
+name: Symfony
+kind: software
+source: https://symfony.com/releases
+versions:
+  source: https://symfony.com/releases
+identifiers:
+- cpe: cpe:2.3:a:sensiolabs:symfony
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/symfony.md
+aliases: []

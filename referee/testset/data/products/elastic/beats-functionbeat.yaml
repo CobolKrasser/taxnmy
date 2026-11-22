@@ -1,0 +1,11 @@
+key: elastic/beats-functionbeat
+publisher: elastic
+name: Beats functionbeat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Functionbeat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Functionbeat
+identifiers:
+- winget: Elastic.Functionbeat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Functionbeat
+aliases: []

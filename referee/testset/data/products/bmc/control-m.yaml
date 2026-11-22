@@ -1,0 +1,11 @@
+key: bmc/control-m
+publisher: bmc
+name: Control-M
+kind: software
+source: https://endoflife.date/controlm
+versions:
+  source: https://endoflife.date/controlm
+identifiers:
+- cpe: cpe:2.3:a:bmc:control-m
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/controlm.md
+aliases: []

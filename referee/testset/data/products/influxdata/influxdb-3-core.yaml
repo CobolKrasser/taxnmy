@@ -1,0 +1,11 @@
+key: influxdata/influxdb-3-core
+publisher: influxdata
+name: InfluxDB 3 Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/Core
+identifiers:
+- winget: InfluxData.InfluxDB.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/Core
+aliases: []

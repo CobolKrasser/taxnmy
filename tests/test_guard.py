@@ -40,7 +40,7 @@ class LookalikeTest(unittest.TestCase):
     """TV3: one or two characters from an existing key or domain, or characters that look alike."""
 
     def test_the_four_names_of_the_analysis_are_caught(self):
-        publishers = [p.stem for p in (REPO / "publishers").glob("*.yaml")]
+        publishers = [p.stem for p in (referee.TESTSET_DATA / "publishers").glob("*.yaml")]
         for new, old in (("micros0ft", "microsoft"), ("mircosoft", "microsoft"), ("rnicrosoft", "microsoft"),
                          ("synoloqy", "synology")):
             with self.subTest(new=new):
@@ -63,12 +63,10 @@ class LookalikeTest(unittest.TestCase):
             with self.subTest(a=a, b=b):
                 self.assertEqual(guard.near(a, b), "")
 
-    def test_few_pairs_in_the_data(self):
-        """Little false alarm: the pairs the data holds now (17 November 2026: one, jruby and ruby)."""
-        publishers = [p.stem for p in (REPO / "publishers").glob("*.yaml")]
-        found = guard.pairs(publishers)
-        self.assertIn(("jruby", "ruby", "1 character apart"), found)
-        self.assertLess(len(found), 5, found)
+    def test_the_pairs_of_a_fixed_list(self):
+        """How many pairs the data holds is a count in the output of the lint (TAX-56); this checks the code."""
+        found = guard.pairs(["jruby", "ruby", "synology", "microsoft", "valkey", "valve"])
+        self.assertEqual(found, [("jruby", "ruby", "1 character apart")])
 
     def test_the_lint_signals_a_lookalike_publisher_product_and_domain(self):
         data = lint.Dataset(DATA, REPO / "schema")
@@ -394,7 +392,7 @@ class HeldTest(unittest.TestCase):
         """B39-B44 on TV3, held by code; B47 rejected on TV5 by code; B46 rejected on TV4 by the lint; the good cases
         with a new publisher (G17-G19, G24, G25, G29, H01, H02) are not held, before any referee."""
         cases = {c.id: c for c in referee.load_cases(REPO / "referee/testset/cases.yaml")}
-        stager = referee.Stager()
+        stager = referee.Stager(referee.TESTSET_DATA)
         for cid, rule in (("B39", "TV3"), ("B40", "TV3"), ("B41", "TV3"), ("B42", "TV3"), ("B43", "TV3"), ("B44", "TV3")):
             with self.subTest(case=cid):
                 self.assertIn(rule, referee.hold(stager.stage(cases[cid]), []))

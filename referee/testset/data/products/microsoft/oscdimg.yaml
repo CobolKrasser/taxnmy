@@ -1,0 +1,11 @@
+key: microsoft/oscdimg
+publisher: microsoft
+name: OSCDIMG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OSCDIMG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OSCDIMG
+identifiers:
+- winget: Microsoft.OSCDIMG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OSCDIMG
+aliases: []

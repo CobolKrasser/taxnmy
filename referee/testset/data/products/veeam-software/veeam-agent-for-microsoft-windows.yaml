@@ -1,0 +1,11 @@
+key: veeam-software/veeam-agent-for-microsoft-windows
+publisher: veeam-software
+name: Veeam Agent for Microsoft Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veeam/VeeamAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veeam/VeeamAgent
+identifiers:
+- winget: Veeam.VeeamAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veeam/VeeamAgent
+aliases: []

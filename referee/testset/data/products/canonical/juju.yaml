@@ -1,0 +1,11 @@
+key: canonical/juju
+publisher: canonical
+name: Juju
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Juju
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Juju
+identifiers:
+- winget: Canonical.Juju
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Juju
+aliases: []

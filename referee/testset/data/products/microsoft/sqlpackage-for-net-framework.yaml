@@ -1,0 +1,12 @@
+key: microsoft/sqlpackage-for-net-framework
+publisher: microsoft
+name: Microsoft SqlPackage for .NET Framework
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SqlPackage/NETFramework
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SqlPackage/NETFramework
+identifiers:
+- winget: Microsoft.SqlPackage.NETFramework
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SqlPackage/NETFramework
+aliases:
+- microsoft/microsoft-sqlpackage-for-net-framework

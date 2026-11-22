@@ -1,0 +1,11 @@
+key: microsoft/desktop-companion-application-for-dynamics-365-contact-center
+publisher: microsoft
+name: Desktop companion application for Dynamics 365 Contact Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Dynamics365ContactCenterDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Dynamics365ContactCenterDesktop
+identifiers:
+- winget: Microsoft.Dynamics365ContactCenterDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Dynamics365ContactCenterDesktop
+aliases: []

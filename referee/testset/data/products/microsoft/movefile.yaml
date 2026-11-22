@@ -1,0 +1,11 @@
+key: microsoft/movefile
+publisher: microsoft
+name: MoveFile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/MoveFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/MoveFile
+identifiers:
+- winget: Microsoft.Sysinternals.MoveFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/MoveFile
+aliases: []

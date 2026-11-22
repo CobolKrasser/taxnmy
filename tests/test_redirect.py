@@ -172,7 +172,7 @@ class ImporterTest(unittest.TestCase):
 
         row = type("Row", (), {"source": PRODUCT, "versions": VERSIONS, "name": "DS501"})()
         o = type("O", (), {"outcome": "candidate", "row": row, "new_publisher": False, "reason": "", "detail": "", "moves": [], "instead": [], "publisher": ""})()
-        importer.check_pages([o], F())
+        importer.check_pages([o], F(), data_root=referee.TESTSET_DATA)
         self.assertEqual((o.outcome, o.reason), ("parked", "moved"), "TAX-42: the address it ends at redirects again")
         self.assertIn(PRODUCT + "-other", o.detail)
         self.assertIn("no second try", o.detail)

@@ -1,0 +1,12 @@
+key: google/workspace-synctm-for-microsoft-outlook
+publisher: google
+name: Google Workspace Sync™ for Microsoft Outlook®
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/WorkspaceSyncForMicrosoftOutlook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/WorkspaceSyncForMicrosoftOutlook
+identifiers:
+- winget: Google.WorkspaceSyncForMicrosoftOutlook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/WorkspaceSyncForMicrosoftOutlook
+aliases:
+- google/google-workspace-synctm-for-microsoft-outlook

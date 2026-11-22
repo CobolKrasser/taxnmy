@@ -1,0 +1,11 @@
+key: meta/oculus
+publisher: meta
+name: Oculus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/Oculus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/Oculus
+identifiers:
+- winget: Meta.Oculus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/Oculus
+aliases: []

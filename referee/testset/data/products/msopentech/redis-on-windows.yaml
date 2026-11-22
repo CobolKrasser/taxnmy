@@ -1,0 +1,11 @@
+key: msopentech/redis-on-windows
+publisher: msopentech
+name: Redis on Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redis/Redis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redis/Redis
+identifiers:
+- winget: Redis.Redis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redis/Redis
+aliases: []

@@ -1,0 +1,11 @@
+key: cinc-project/cinc-workstation
+publisher: cinc-project
+name: CINC Workstation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CINCSoftware/Workstation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CINCSoftware/Workstation
+identifiers:
+- winget: CINCSoftware.Workstation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CINCSoftware/Workstation
+aliases: []

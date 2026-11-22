@@ -1,0 +1,11 @@
+key: microsoft/net-codecontracts
+publisher: microsoft
+name: .NET CodeContracts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/CodeContracts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/CodeContracts
+identifiers:
+- winget: Microsoft.DotNet.CodeContracts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/CodeContracts
+aliases: []

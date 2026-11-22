@@ -1,0 +1,11 @@
+key: microsoft/entity-framework-core-net-command-line-tools
+publisher: microsoft
+name: Entity Framework Core .NET Command-line Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/dotnet-ef
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/dotnet-ef
+identifiers:
+- winget: Microsoft.DotNet.dotnet-ef
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/dotnet-ef
+aliases: []

@@ -1,0 +1,11 @@
+key: siemens/jt2go
+publisher: siemens
+name: JT2Go
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Siemens/JT2Go
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Siemens/JT2Go
+identifiers:
+- winget: Siemens.JT2Go
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Siemens/JT2Go
+aliases: []

@@ -144,7 +144,9 @@ def long_form(key: str, name: str) -> str | None:
         full = product_part(name)
     except KeyRuleError:
         return None
-    return f"{pub}/{full}" if full != part and without_publisher(full, pub) == part else None
+    if full == part or without_publisher(full, pub) != part or len(full) > MAX_PART:
+        return None  # no shorter key, or a long form that is no valid key part
+    return f"{pub}/{full}"
 
 
 def make_key(publisher: str, product: str, version: str | None = None) -> str:

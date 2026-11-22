@@ -1,0 +1,12 @@
+key: docker/cli
+publisher: docker
+name: Docker CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCLI
+identifiers:
+- winget: Docker.DockerCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCLI
+aliases:
+- docker/docker-cli

@@ -1,0 +1,12 @@
+key: veeam-software/veeam-backup-and-replication
+publisher: veeam-software
+name: Veeam Backup & Replication
+kind: software
+source: https://www.veeam.com/kb2680
+versions:
+  source: https://www.veeam.com/kb2680
+identifiers:
+- cpe: cpe:2.3:a:veeam:veeam_backup_\&_replication
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:veeam:veeam_backup_%5C%26_replication&resultsPerPage=1
+aliases:
+- veeam-software/backup-and-replication

@@ -1,0 +1,9 @@
+key: wazuh/wazuh
+publisher: wazuh
+name: Wazuh
+kind: software
+source: https://wazuh.com/platform/overview/
+versions:
+  source: https://documentation.wazuh.com/current/release-notes/index.html
+aliases:
+- wazuh/wazuh-server

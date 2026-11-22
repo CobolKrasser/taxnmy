@@ -1,0 +1,11 @@
+key: unrealircd/unrealircd
+publisher: unrealircd
+name: UnrealIRCd
+kind: software
+source: https://www.unrealircd.org/docs/UnrealIRCd_releases
+versions:
+  source: https://www.unrealircd.org/docs/UnrealIRCd_releases
+identifiers:
+- cpe: cpe:2.3:a:unrealircd:unrealircd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/unrealircd.md
+aliases: []

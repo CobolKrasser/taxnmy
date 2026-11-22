@@ -1,0 +1,14 @@
+key: godot/engine
+publisher: godot
+name: Godot Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotEngine/GodotEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotEngine/GodotEngine
+identifiers:
+- winget: GodotEngine.GodotEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotEngine/GodotEngine
+- winget: GodotEngine.GodotEngine.Mono
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotEngine/GodotEngine/Mono
+aliases:
+- godot/godot-engine

@@ -1,0 +1,12 @@
+key: ibm/cloud-cli
+publisher: ibm
+name: IBM Cloud CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Cloud/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Cloud/CLI
+identifiers:
+- winget: IBM.Cloud.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Cloud/CLI
+aliases:
+- ibm/ibm-cloud-cli

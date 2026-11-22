@@ -1,0 +1,11 @@
+key: microsoft/visual-studio-professional-insiders
+publisher: microsoft
+name: Visual Studio Professional Insiders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Professional/Insiders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Professional/Insiders
+identifiers:
+- winget: Microsoft.VisualStudio.Professional.Insiders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Professional/Insiders
+aliases: []

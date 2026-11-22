@@ -1,0 +1,11 @@
+key: virt-viewer-project/virtviewer
+publisher: virt-viewer-project
+name: VirtViewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/VirtViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/VirtViewer
+identifiers:
+- winget: RedHat.VirtViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/VirtViewer
+aliases: []

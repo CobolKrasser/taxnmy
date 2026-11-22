@@ -1,0 +1,11 @@
+key: microsoft/azure-connected-machine-agent
+publisher: microsoft
+name: Azure Connected Machine Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ConnectedMachineAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ConnectedMachineAgent
+identifiers:
+- winget: Microsoft.Azure.ConnectedMachineAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ConnectedMachineAgent
+aliases: []

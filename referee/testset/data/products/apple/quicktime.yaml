@@ -1,0 +1,11 @@
+key: apple/quicktime
+publisher: apple
+name: QuickTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/QuickTime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/QuickTime
+identifiers:
+- winget: Apple.QuickTime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/QuickTime
+aliases: []

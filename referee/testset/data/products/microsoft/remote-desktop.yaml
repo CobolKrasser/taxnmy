@@ -1,0 +1,11 @@
+key: microsoft/remote-desktop
+publisher: microsoft
+name: Remote Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteDesktopClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteDesktopClient
+identifiers:
+- winget: Microsoft.RemoteDesktopClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteDesktopClient
+aliases: []

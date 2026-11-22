@@ -1,0 +1,11 @@
+key: google/protractor
+publisher: google
+name: Protractor
+kind: software
+source: https://endoflife.date/protractor
+versions:
+  source: https://endoflife.date/protractor
+identifiers:
+- purl: pkg:npm/protractor
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/protractor.md
+aliases: []

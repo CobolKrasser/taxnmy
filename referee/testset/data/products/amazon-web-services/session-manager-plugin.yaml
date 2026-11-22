@@ -1,0 +1,11 @@
+key: amazon-web-services/session-manager-plugin
+publisher: amazon-web-services
+name: Session Manager Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SessionManagerPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SessionManagerPlugin
+identifiers:
+- winget: Amazon.SessionManagerPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SessionManagerPlugin
+aliases: []

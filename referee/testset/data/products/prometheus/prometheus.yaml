@@ -1,0 +1,15 @@
+key: prometheus/prometheus
+publisher: prometheus
+name: Prometheus
+kind: software
+source: https://prometheus.io/docs/introduction/release-cycle/
+versions:
+  source: https://prometheus.io/docs/introduction/release-cycle/
+identifiers:
+- purl: pkg:github/prometheus/prometheus
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/prometheus.md
+- purl: pkg:golang/github.com/prometheus/prometheus
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/prometheus.md
+- cpe: cpe:2.3:a:prometheus:prometheus
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/prometheus.md
+aliases: []

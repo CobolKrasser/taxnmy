@@ -1,0 +1,13 @@
+key: kde/lokalize
+publisher: kde
+name: Lokalize
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Lokalize
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Lokalize
+identifiers:
+- winget: KDE.Lokalize
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Lokalize
+- winget: KDE.Lokalize.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Lokalize/AppX
+aliases: []

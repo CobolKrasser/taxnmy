@@ -1,0 +1,11 @@
+key: microsoft/windows-resource-kit-tools-frsdiag-exe
+publisher: microsoft
+name: Windows Resource Kit Tools - FRSDiag.exe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FRSDiag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FRSDiag
+identifiers:
+- winget: Microsoft.FRSDiag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FRSDiag
+aliases: []

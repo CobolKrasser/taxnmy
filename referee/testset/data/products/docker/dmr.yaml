@@ -1,0 +1,11 @@
+key: docker/dmr
+publisher: docker
+name: dmr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/dmr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/dmr
+identifiers:
+- winget: Docker.dmr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/dmr
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/waratah
+publisher: microsoft
+name: Waratah
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HIDTools/Waratah
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HIDTools/Waratah
+identifiers:
+- winget: Microsoft.HIDTools.Waratah
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HIDTools/Waratah
+aliases: []

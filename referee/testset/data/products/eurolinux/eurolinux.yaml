@@ -1,0 +1,11 @@
+key: eurolinux/eurolinux
+publisher: eurolinux
+name: EuroLinux
+kind: operating-system
+source: https://endoflife.date/eurolinux
+versions:
+  source: https://endoflife.date/eurolinux
+identifiers:
+- cpe: cpe:2.3:o:eurolinux:eurolinux
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eurolinux.md
+aliases: []

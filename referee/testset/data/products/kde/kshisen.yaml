@@ -1,0 +1,11 @@
+key: kde/kshisen
+publisher: kde
+name: kshisen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KShisen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KShisen
+identifiers:
+- winget: KDE.KShisen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KShisen
+aliases: []

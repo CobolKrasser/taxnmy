@@ -1,0 +1,11 @@
+key: kde/marknote
+publisher: kde
+name: marknote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Marknote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Marknote
+identifiers:
+- winget: KDE.Marknote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Marknote
+aliases: []

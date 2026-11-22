@@ -1,0 +1,12 @@
+key: microsoft/sql-server-native-client
+publisher: microsoft
+name: Microsoft SQL Server Native Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2012/NativeClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2012/NativeClient
+identifiers:
+- winget: Microsoft.SQLServer.2012.NativeClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2012/NativeClient
+aliases:
+- microsoft/microsoft-sql-server-native-client

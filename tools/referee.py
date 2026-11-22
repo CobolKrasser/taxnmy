@@ -59,6 +59,9 @@ from fetch import (  # noqa: E402,F401 - Source and the text helpers are part of
 )
 
 REPO = Path(__file__).resolve().parent.parent
+# The test set runs on data of its own, fixed: a filling round in products/ and publishers/ leaves its
+# outcome as it is (TAX-56). A copy of the data of main on 22 November 2026, before the full winget round.
+TESTSET_DATA = REPO / "referee/testset/data"
 REFEREE = REPO / "referee"
 RULES = ("TP3", "TP5", "TK2", "TP1", "TE1", "TV1")  # the rules the AI referee answers
 HELD = ("TV3", "TV5")  # rules code holds a proposal on for a person, whatever the referee answers
@@ -1241,7 +1244,7 @@ def ceiling(chars: int, model: str, prices: dict, web: bool, max_uses: int, max_
     return total + (web_allowance(model, prices, max_uses) if web else 0.0)
 
 
-def run(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=print) -> tuple[list[Result], Path | None]:
+def run(args, client=None, fetcher=None, data_root: Path = TESTSET_DATA, now=None, log=print) -> tuple[list[Result], Path | None]:
     cases = select(load_cases(Path(args.testset)), args.cases, args.condition)
     if args.limit:
         cases = cases[: args.limit]
@@ -1794,7 +1797,7 @@ def check_urls(cases: list[Case], fetcher) -> str:
     return "\n".join(lines) + "\n"
 
 
-def fetch_sources(args, fetcher=None, data_root: Path = REPO, log=print) -> dict:
+def fetch_sources(args, fetcher=None, data_root: Path = TESTSET_DATA, log=print) -> dict:
     """Fetch the sources of the cases that reach the referee, and write them to args.output.
     No key is needed or read: this step runs where the key is not."""
     cases = select(load_cases(Path(args.testset)), args.cases, "fetched")
@@ -2016,7 +2019,7 @@ def run_searches(wanted: dict, model: str, budget_cap: float, prices_path: Path,
     return found, budget.spent - before
 
 
-def search_refused(args, client=None, data_root: Path = REPO, now=None, log=print) -> dict:
+def search_refused(args, client=None, data_root: Path = TESTSET_DATA, now=None, log=print) -> dict:
     """Step 4: for each refused or disallowed source, one web search on the publisher's domains. Costs money
     (`search_cost`: the fee and the tokens of the results) and counts against the budget like a run."""
     stored = StoredFetcher(json.loads(Path(args.sources).read_text(encoding="utf-8")))
@@ -2139,7 +2142,7 @@ def stand_name(model: str, effort: str) -> str:
     return f"{model} {effort}"
 
 
-def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, log=print, sleep=None) -> dict:
+def measure(args, client=None, fetcher=None, data_root: Path = TESTSET_DATA, now=None, log=print, sleep=None) -> dict:
     """TAX-18: per stand (a model at an effort), `repeats` batch runs of the test set, within the budget.
     First the probe cases of every stand, one small batch each; their real cost per case is
     extrapolated to the whole measurement, and if that would pass the budget nothing more is sent.
@@ -2238,7 +2241,7 @@ def measure(args, client=None, fetcher=None, data_root: Path = REPO, now=None, l
     return report
 
 
-def count_cases(args, client=None, fetcher=None, data_root: Path = REPO, log=print) -> dict:
+def count_cases(args, client=None, fetcher=None, data_root: Path = TESTSET_DATA, log=print) -> dict:
     """model -> case -> the input tokens of its request, counted by the API (free; needs the key).
     Builds the same requests as a run, and sends none of them."""
     if client is None:

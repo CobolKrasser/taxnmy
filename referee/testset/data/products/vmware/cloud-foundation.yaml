@@ -1,0 +1,11 @@
+key: vmware/cloud-foundation
+publisher: vmware
+name: Cloud Foundation
+kind: software
+source: https://endoflife.date/vmware-cloud-foundation
+versions:
+  source: https://ftpdocs.broadcom.com/WebInterface/phpdocs/0/MSPSaccount/COMPAT/AllProdDates.HTML
+identifiers:
+- cpe: cpe:2.3:a:vmware:cloud_foundation
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:vmware:cloud_foundation&resultsPerPage=1
+aliases: []

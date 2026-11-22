@@ -1,0 +1,11 @@
+key: kde/ghostwriter
+publisher: kde
+name: ghostwriter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/ghostwriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/ghostwriter
+identifiers:
+- winget: KDE.ghostwriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/ghostwriter
+aliases: []

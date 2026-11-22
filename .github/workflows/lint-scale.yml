@@ -1,0 +1,42 @@
+name: lint-scale
+
+# TAX-16: a pull request of 10,000 new products on a dataset of 20,000 is linted within 10 minutes.
+# A load test with made-up data: it runs only when the code of the lint changes, or by hand (TAX-56).
+# A filling round changes data only, so it does not start this test. The Actions minutes of the
+# account are shared (18 November 2026).
+
+on:
+  pull_request:
+    paths:
+      - "tools/lint.py"
+      - "tools/keyrule.py"
+      - "tools/guard.py"
+      - "tools/address.py"
+      - "schema/**"
+      - "tests/test_lint_scale.py"
+      - "tests/bulkdata.py"
+      - ".github/workflows/lint-scale.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lint-scale-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-scale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Scale test of the lint
+        env:
+          TAXNMY_SCALE_TEST: "1"
+        run: python -m unittest tests.test_lint_scale -v

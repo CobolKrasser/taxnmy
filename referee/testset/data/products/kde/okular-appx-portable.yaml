@@ -1,0 +1,11 @@
+key: kde/okular-appx-portable
+publisher: kde
+name: Okular (AppX / Portable)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular/AppX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular/AppX
+identifiers:
+- winget: KDE.Okular.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular/AppX
+aliases: []

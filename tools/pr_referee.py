@@ -1072,7 +1072,7 @@ def add_judge_args(p) -> None:
         p.add_argument(f"--{name}", default=str(default))
 
 
-def testset_proposals(path: Path, data_root: Path = REPO) -> list[dict]:
+def testset_proposals(path: Path, data_root: Path = referee.TESTSET_DATA) -> list[dict]:
     """The cases of the test set as proposals of one pull request: each staged as README § Staging a
     case says, with its hold-outs, hidden files and context. Only the test set may take files out."""
     texts = {p.relative_to(data_root).as_posix(): p.read_text(encoding="utf-8")
@@ -1162,12 +1162,14 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "pr-number":
         print(load_proposal(Path(args.proposal))["pr"])
     elif args.command == "gate":
+        data_root = REPO
         if args.proposal:
             data = load_proposal(Path(args.proposal))
             deleted = set(data["deleted"]) | set(deleted_list(Path(args.deleted)) if args.deleted else ())
             proposals, pr, head = group(data["files"], deleted), data["pr"], data["head_sha"]
         else:
             proposals, pr, head = testset_proposals(Path(args.testset)), None, ""
+            data_root = referee.TESTSET_DATA  # the test set runs on its fixed data (TAX-56)
             if args.cases:
                 unknown = set(args.cases) - {p["id"] for p in proposals}
                 if unknown:
@@ -1177,7 +1179,7 @@ def main(argv: list[str] | None = None) -> int:
         limits = intake.load()
         fetcher = Fetcher(use_browser=not args.no_browser, log=print)
         try:
-            items = gate_proposals(proposals, fetcher, submitter=submitter, limits=limits)
+            items = gate_proposals(proposals, fetcher, data_root, submitter=submitter, limits=limits)
         finally:
             fetcher.close()
         pending = sum(i["outcome"] == "pending" for i in items)

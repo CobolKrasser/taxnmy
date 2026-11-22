@@ -1,0 +1,11 @@
+key: oracle/weblogic-remote-console
+publisher: oracle
+name: WebLogic Remote Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/WebLogicRemoteConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/WebLogicRemoteConsole
+identifiers:
+- winget: Oracle.WebLogicRemoteConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/WebLogicRemoteConsole
+aliases: []

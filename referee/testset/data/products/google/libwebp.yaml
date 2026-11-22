@@ -1,0 +1,11 @@
+key: google/libwebp
+publisher: google
+name: libwebp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Libwebp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Libwebp
+identifiers:
+- winget: Google.Libwebp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Libwebp
+aliases: []

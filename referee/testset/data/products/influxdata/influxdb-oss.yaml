@@ -1,0 +1,11 @@
+key: influxdata/influxdb-oss
+publisher: influxdata
+name: InfluxDB OSS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/OSS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/OSS
+identifiers:
+- winget: InfluxData.InfluxDB.OSS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/OSS
+aliases: []

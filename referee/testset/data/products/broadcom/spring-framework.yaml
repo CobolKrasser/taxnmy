@@ -1,0 +1,41 @@
+key: broadcom/spring-framework
+publisher: broadcom
+name: Spring Framework
+kind: software
+source: https://endoflife.date/spring-framework
+versions:
+  source: https://endoflife.date/spring-framework
+identifiers:
+- purl: pkg:github/spring-projects/spring-framework
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-aop
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-beans
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-context
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-expression
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-jdbc
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-jms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-messaging
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-orm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-oxm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-tx
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-web
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-webmvc
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- purl: pkg:maven/org.springframework/spring-websocket
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/spring-framework.md
+- cpe: cpe:2.3:a:vmware:spring_framework
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:vmware:spring_framework&resultsPerPage=1
+aliases: []

@@ -1,0 +1,11 @@
+key: splunk/acs
+publisher: splunk
+name: ACS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splunk/ACS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splunk/ACS
+identifiers:
+- winget: Splunk.ACS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splunk/ACS
+aliases: []

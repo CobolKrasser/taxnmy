@@ -1,0 +1,11 @@
+key: privatebin/privatebin
+publisher: privatebin
+name: PrivateBin
+kind: software
+source: https://endoflife.date/privatebin
+versions:
+  source: https://endoflife.date/privatebin
+identifiers:
+- cpe: cpe:2.3:a:privatebin:privatebin
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/privatebin.md
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/iis-manager-for-remote-administration
+publisher: microsoft
+name: IIS Manager for Remote Administration
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IISManagerRemoteAdministration
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IISManagerRemoteAdministration
+identifiers:
+- winget: Microsoft.IISManagerRemoteAdministration
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IISManagerRemoteAdministration
+aliases: []

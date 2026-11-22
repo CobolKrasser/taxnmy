@@ -1,0 +1,12 @@
+key: microsoft/powerapps-cli
+publisher: microsoft
+name: Microsoft PowerApps CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAppsCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAppsCLI
+identifiers:
+- winget: Microsoft.PowerAppsCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAppsCLI
+aliases:
+- microsoft/microsoft-powerapps-cli

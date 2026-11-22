@@ -1,0 +1,11 @@
+key: kde/kate-appx-portable
+publisher: kde
+name: Kate (AppX / Portable)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kate/AppX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kate/AppX
+identifiers:
+- winget: KDE.Kate.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kate/AppX
+aliases: []

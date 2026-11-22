@@ -1,0 +1,13 @@
+key: contour/contour
+publisher: contour
+name: Contour
+kind: software
+source: https://projectcontour.io/resources/support/
+versions:
+  source: https://projectcontour.io/resources/support/
+identifiers:
+- purl: pkg:github/projectcontour/contour
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/contour.md
+- cpe: cpe:2.3:a:projectcontour:contour
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/contour.md
+aliases: []

@@ -1,0 +1,9 @@
+key: oracle/weblogic-server
+publisher: oracle
+name: Oracle WebLogic Server
+kind: software
+source: https://www.oracle.com/java/weblogic/
+versions:
+  source: https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html
+aliases:
+- oracle/oracle-weblogic-server

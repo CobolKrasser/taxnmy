@@ -1,0 +1,13 @@
+key: dbt-labs/dbt-fusion
+publisher: dbt-labs
+name: dbt Fusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbtLabs/dbt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbtLabs/dbt
+identifiers:
+- winget: dbtLabs.dbt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbtLabs/dbt
+- winget: dbtLabs.dbtFusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbtLabs/dbtFusion
+aliases: []

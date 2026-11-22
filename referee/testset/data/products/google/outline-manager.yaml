@@ -1,0 +1,11 @@
+key: google/outline-manager
+publisher: google
+name: Outline Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jigsaw/OutlineManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jigsaw/OutlineManager
+identifiers:
+- winget: Jigsaw.OutlineManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jigsaw/OutlineManager
+aliases: []

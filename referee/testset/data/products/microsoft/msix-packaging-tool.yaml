@@ -1,0 +1,11 @@
+key: microsoft/msix-packaging-tool
+publisher: microsoft
+name: MSIX Packaging Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIXPackagingTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIXPackagingTool
+identifiers:
+- winget: Microsoft.MSIXPackagingTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIXPackagingTool
+aliases: []

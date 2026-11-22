@@ -1,0 +1,11 @@
+key: microsoft/azure-cloud-hsm-client-sdk
+publisher: microsoft
+name: Azure Cloud HSM Client SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/CloudHSM-ClientSDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/CloudHSM-ClientSDK
+identifiers:
+- winget: Microsoft.Azure.CloudHSM-ClientSDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/CloudHSM-ClientSDK
+aliases: []

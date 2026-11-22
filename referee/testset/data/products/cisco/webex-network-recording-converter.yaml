@@ -1,0 +1,12 @@
+key: cisco/webex-network-recording-converter
+publisher: cisco
+name: Cisco Webex Network Recording Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexNetworkRecordingConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexNetworkRecordingConverter
+identifiers:
+- winget: Cisco.WebexNetworkRecordingConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexNetworkRecordingConverter
+aliases:
+- cisco/cisco-webex-network-recording-converter

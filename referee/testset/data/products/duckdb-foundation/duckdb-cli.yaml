@@ -1,0 +1,11 @@
+key: duckdb-foundation/duckdb-cli
+publisher: duckdb-foundation
+name: DuckDB CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckDB/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckDB/cli
+identifiers:
+- winget: DuckDB.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckDB/cli
+aliases: []

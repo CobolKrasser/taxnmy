@@ -2,6 +2,7 @@
 intent, TG for governance. The old numbers S1-S10 no longer appear as a word, outside the runs of
 the referee (which stay as they were written) and the data (where a product name may hold one)."""
 
+import os
 import re
 import unittest
 from pathlib import Path
@@ -10,6 +11,16 @@ REPO = Path(__file__).resolve().parent.parent
 SKIP = ("referee/runs/", "products/", "publishers/", "tests/test_numbering.py")  # this file names them
 TEXT = {".py", ".md", ".yaml", ".yml", ".json", ".txt", ".sh", ".toml", ".cfg"}
 OLD = re.compile(r"\bS(10|[1-9])\b")
+
+
+def files(root: Path) -> list[Path]:
+    """Every file under root, without walking into the folders of SKIP: the data is not read (TAX-56)."""
+    out = []
+    for folder, dirs, names in os.walk(root):
+        rel = Path(folder).relative_to(root).as_posix() + "/"
+        dirs[:] = [d for d in dirs if not (rel.lstrip("./") + d + "/").startswith(SKIP)]
+        out += [Path(folder) / n for n in names]
+    return sorted(out)
 
 
 def is_name(rel: str, line: str) -> bool:
@@ -21,7 +32,7 @@ def is_name(rel: str, line: str) -> bool:
 
 def old_numbers(root: Path = REPO) -> list[str]:
     hits = []
-    for path in sorted(root.rglob("*")):
+    for path in files(root):
         rel = path.relative_to(root).as_posix()
         if not path.is_file() or rel.startswith(SKIP) or "/." in "/" + rel or path.suffix not in TEXT:
             continue

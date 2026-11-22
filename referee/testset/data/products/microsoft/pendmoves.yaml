@@ -1,0 +1,11 @@
+key: microsoft/pendmoves
+publisher: microsoft
+name: PendMoves
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/PendMoves
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/PendMoves
+identifiers:
+- winget: Microsoft.Sysinternals.PendMoves
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/PendMoves
+aliases: []

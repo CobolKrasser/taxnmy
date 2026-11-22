@@ -1,0 +1,11 @@
+key: influxdata/telegraf
+publisher: influxdata
+name: Telegraf
+kind: software
+source: https://www.influxdata.com/legal/support-policy/
+versions:
+  source: https://www.influxdata.com/legal/support-policy/
+identifiers:
+- winget: InfluxData.Telegraf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Telegraf
+aliases: []

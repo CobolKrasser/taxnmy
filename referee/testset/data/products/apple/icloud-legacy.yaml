@@ -1,0 +1,11 @@
+key: apple/icloud-legacy
+publisher: apple
+name: iCloud (Legacy)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/iCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/iCloud
+identifiers:
+- winget: Apple.iCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/iCloud
+aliases: []

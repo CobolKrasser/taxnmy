@@ -1,0 +1,13 @@
+key: jetbrains/rubymine
+publisher: jetbrains
+name: RubyMine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/RubyMine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/RubyMine
+identifiers:
+- winget: JetBrains.RubyMine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/RubyMine
+- winget: JetBrains.RubyMine.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/RubyMine/EAP
+aliases: []

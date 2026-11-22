@@ -1,0 +1,11 @@
+key: asus/displaywidget-center
+publisher: asus
+name: DisplayWidget Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/DisplayWidgetCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/DisplayWidgetCenter
+identifiers:
+- winget: Asus.DisplayWidgetCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/DisplayWidgetCenter
+aliases: []

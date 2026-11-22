@@ -1,0 +1,11 @@
+key: kde/klickety
+publisher: kde
+name: klickety
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Klickety
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Klickety
+identifiers:
+- winget: KDE.Klickety
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Klickety
+aliases: []

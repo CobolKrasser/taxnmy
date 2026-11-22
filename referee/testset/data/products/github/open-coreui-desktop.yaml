@@ -1,0 +1,11 @@
+key: github/open-coreui-desktop
+publisher: github
+name: Open CoreUI Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xxnuo/OpenCoreUI/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xxnuo/OpenCoreUI/Desktop
+identifiers:
+- winget: xxnuo.OpenCoreUI.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xxnuo/OpenCoreUI/Desktop
+aliases: []

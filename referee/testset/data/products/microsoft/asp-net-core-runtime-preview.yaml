@@ -1,0 +1,12 @@
+key: microsoft/asp-net-core-runtime-preview
+publisher: microsoft
+name: Microsoft ASP.NET Core Runtime Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/AspNetCore/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/AspNetCore/Preview
+identifiers:
+- winget: Microsoft.DotNet.AspNetCore.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/AspNetCore/Preview
+aliases:
+- microsoft/microsoft-asp-net-core-runtime-preview

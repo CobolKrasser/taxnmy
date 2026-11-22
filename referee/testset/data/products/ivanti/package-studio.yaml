@@ -1,0 +1,12 @@
+key: ivanti/package-studio
+publisher: ivanti
+name: Ivanti Package Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivanti/PackageStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivanti/PackageStudio
+identifiers:
+- winget: Ivanti.PackageStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivanti/PackageStudio
+aliases:
+- ivanti/ivanti-package-studio

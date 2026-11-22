@@ -1,0 +1,11 @@
+key: microsoft/log-parser
+publisher: microsoft
+name: Log Parser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LogParser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LogParser
+identifiers:
+- winget: Microsoft.LogParser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LogParser
+aliases: []

@@ -1,0 +1,11 @@
+key: lua/lua
+publisher: lua
+name: Lua
+kind: software
+source: https://www.lua.org/versions.html
+versions:
+  source: https://www.lua.org/versions.html
+identifiers:
+- cpe: cpe:2.3:a:lua:lua
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/lua.md
+aliases: []

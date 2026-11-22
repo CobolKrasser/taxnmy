@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-cloudhsm-jce
+publisher: amazon-web-services
+name: AWS CloudHSM JCE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCloudHSM/JCE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCloudHSM/JCE
+identifiers:
+- winget: Amazon.AWSCloudHSM.JCE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCloudHSM/JCE
+aliases: []

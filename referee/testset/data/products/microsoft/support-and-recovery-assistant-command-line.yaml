@@ -1,0 +1,12 @@
+key: microsoft/support-and-recovery-assistant-command-line
+publisher: microsoft
+name: Microsoft Support and Recovery Assistant Command Line
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SaRACmd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SaRACmd
+identifiers:
+- winget: Microsoft.SaRACmd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SaRACmd
+aliases:
+- microsoft/microsoft-support-and-recovery-assistant-command-line

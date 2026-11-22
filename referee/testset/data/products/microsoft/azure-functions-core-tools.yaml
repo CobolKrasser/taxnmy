@@ -1,0 +1,11 @@
+key: microsoft/azure-functions-core-tools
+publisher: microsoft
+name: Azure Functions Core Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/FunctionsCoreTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/FunctionsCoreTools
+identifiers:
+- winget: Microsoft.Azure.FunctionsCoreTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/FunctionsCoreTools
+aliases: []

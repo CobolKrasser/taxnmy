@@ -1,0 +1,12 @@
+key: microsoft/visual-studio-tools-for-office-runtime
+publisher: microsoft
+name: Microsoft Visual Studio Tools for Office Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSTOR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSTOR
+identifiers:
+- winget: Microsoft.VSTOR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSTOR
+aliases:
+- microsoft/microsoft-visual-studio-tools-for-office-runtime

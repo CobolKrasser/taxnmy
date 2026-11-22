@@ -1,0 +1,12 @@
+key: hashicorp/terraform-beta
+publisher: hashicorp
+name: Hashicorp Terraform Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/Beta
+identifiers:
+- winget: Hashicorp.Terraform.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/Beta
+aliases:
+- hashicorp/hashicorp-terraform-beta

@@ -1,0 +1,11 @@
+key: kde/parley
+publisher: kde
+name: parley
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Parley
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Parley
+identifiers:
+- winget: KDE.Parley
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Parley
+aliases: []

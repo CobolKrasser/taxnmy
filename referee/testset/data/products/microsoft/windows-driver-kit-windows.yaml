@@ -1,0 +1,17 @@
+key: microsoft/windows-driver-kit-windows
+publisher: microsoft
+name: Windows Driver Kit - Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsWDK/10/0/22000
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsWDK/10/0/22000
+identifiers:
+- winget: Microsoft.WindowsWDK.10.0.22000
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsWDK/10/0/22000
+- winget: Microsoft.WindowsWDK.10.0.22621
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsWDK/10/0/22621
+- winget: Microsoft.WindowsWDK.10.0.26100
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsWDK/10/0/26100
+- winget: Microsoft.WindowsWDK.10.0.28000
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsWDK/10/0/28000
+aliases: []

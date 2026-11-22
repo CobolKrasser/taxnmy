@@ -1,0 +1,11 @@
+key: microsoft/vmmap
+publisher: microsoft
+name: VMMap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/VMMap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/VMMap
+identifiers:
+- winget: Microsoft.Sysinternals.VMMap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/VMMap
+aliases: []

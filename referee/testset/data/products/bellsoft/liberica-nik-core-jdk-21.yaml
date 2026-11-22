@@ -1,0 +1,11 @@
+key: bellsoft/liberica-nik-core-jdk-21
+publisher: bellsoft
+name: Liberica NIK Core (JDK 21)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/23/JDK21/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/23/JDK21/Core
+identifiers:
+- winget: BellSoft.LibericaNIK.23.JDK21.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/23/JDK21/Core
+aliases: []

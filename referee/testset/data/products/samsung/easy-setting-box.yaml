@@ -1,0 +1,11 @@
+key: samsung/easy-setting-box
+publisher: samsung
+name: Easy Setting Box
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasySettingBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasySettingBox
+identifiers:
+- winget: Samsung.EasySettingBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasySettingBox
+aliases: []

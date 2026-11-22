@@ -1,0 +1,11 @@
+key: the-freebsd-project/freebsd
+publisher: the-freebsd-project
+name: FreeBSD
+kind: operating-system
+source: https://www.freebsd.org/security/#sup
+versions:
+  source: https://www.freebsd.org/security/#sup
+identifiers:
+- cpe: cpe:2.3:o:freebsd:freebsd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/freebsd.md
+aliases: []

@@ -191,7 +191,7 @@ class ImporterTest(unittest.TestCase):
         base = {u: (s, t) for u, (s, t) in pages().items()}
         base.update(changes)
         out = importer.plan(self.rows(ROWS), self.root)
-        pubs = importer.check_pages(out, FooterFetcher(base))
+        pubs = importer.check_pages(out, FooterFetcher(base), data_root=self.root)
         importer.follow(out)
         return out, pubs
 

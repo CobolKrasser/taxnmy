@@ -1,0 +1,13 @@
+key: drush/drush
+publisher: drush
+name: Drush
+kind: software
+source: https://www.drush.org/latest/install/#drupal-compatibility
+versions:
+  source: https://www.drush.org/latest/install/#drupal-compatibility
+identifiers:
+- purl: pkg:composer/drush/drush
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/drush.md
+- purl: pkg:github/drush-ops/drush
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/drush.md
+aliases: []

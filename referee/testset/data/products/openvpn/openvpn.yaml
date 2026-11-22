@@ -1,0 +1,13 @@
+key: openvpn/openvpn
+publisher: openvpn
+name: OpenVPN
+kind: software
+source: https://community.openvpn.net/Pages/Supported%20versions
+versions:
+  source: https://community.openvpn.net/Pages/Supported%20versions
+identifiers:
+- purl: pkg:github/openvpn/openvpn
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openvpn.md
+- cpe: cpe:2.3:a:openvpn:openvpn
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:openvpn:openvpn&resultsPerPage=1
+aliases: []

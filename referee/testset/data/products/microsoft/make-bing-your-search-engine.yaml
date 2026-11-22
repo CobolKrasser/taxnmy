@@ -1,0 +1,11 @@
+key: microsoft/make-bing-your-search-engine
+publisher: microsoft
+name: Make Bing Your Search Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MakeBingYourSearchEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MakeBingYourSearchEngine
+identifiers:
+- winget: Microsoft.MakeBingYourSearchEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MakeBingYourSearchEngine
+aliases: []

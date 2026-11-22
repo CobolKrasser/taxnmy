@@ -1,0 +1,11 @@
+key: microsoft/net-framework
+publisher: microsoft
+name: .NET Framework
+kind: software
+source: https://dotnet.microsoft.com/en-us/download/dotnet-framework
+versions:
+  source: https://dotnet.microsoft.com/en-us/download/dotnet-framework
+identifiers:
+- cpe: cpe:2.3:a:microsoft:.net_framework
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:microsoft:.net_framework&resultsPerPage=1
+aliases: []

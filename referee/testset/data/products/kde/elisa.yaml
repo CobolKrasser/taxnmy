@@ -1,0 +1,11 @@
+key: kde/elisa
+publisher: kde
+name: Elisa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Elisa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Elisa
+identifiers:
+- winget: KDE.Elisa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Elisa
+aliases: []

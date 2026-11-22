@@ -1,0 +1,11 @@
+key: microsoft/pstools-suite
+publisher: microsoft
+name: PsTools Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/PsTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/PsTools
+identifiers:
+- winget: Microsoft.Sysinternals.PsTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/PsTools
+aliases: []

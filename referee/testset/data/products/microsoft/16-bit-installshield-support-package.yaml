@@ -1,0 +1,11 @@
+key: microsoft/16-bit-installshield-support-package
+publisher: microsoft
+name: 16-Bit InstallShield Support Package
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/16BitInstallShieldSupport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/16BitInstallShieldSupport
+identifiers:
+- winget: Microsoft.16BitInstallShieldSupport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/16BitInstallShieldSupport
+aliases: []

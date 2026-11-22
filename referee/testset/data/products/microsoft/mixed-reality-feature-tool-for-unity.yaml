@@ -1,0 +1,11 @@
+key: microsoft/mixed-reality-feature-tool-for-unity
+publisher: microsoft
+name: Mixed Reality Feature Tool for Unity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MixedRealityFeatureTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MixedRealityFeatureTool
+identifiers:
+- winget: Microsoft.MixedRealityFeatureTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MixedRealityFeatureTool
+aliases: []

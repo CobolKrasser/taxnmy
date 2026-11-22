@@ -1,0 +1,15 @@
+key: the-apache-software-foundation/apache-camel
+publisher: the-apache-software-foundation
+name: Apache Camel
+kind: software
+source: https://endoflife.date/apache-camel
+versions:
+  source: https://endoflife.date/apache-camel
+identifiers:
+- cpe: cpe:2.3:a:apache:camel
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-camel.md
+- purl: pkg:github/apache/camel
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-camel.md
+- purl: pkg:maven/org.apache.camel/camel
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-camel.md
+aliases: []

@@ -1,0 +1,11 @@
+key: veeam-software/veeam-one
+publisher: veeam-software
+name: Veeam ONE
+kind: software
+source: https://www.veeam.com/product-lifecycle.html
+versions:
+  source: https://www.veeam.com/product-lifecycle.html
+identifiers:
+- cpe: cpe:2.3:a:veeam:one
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:veeam:one&resultsPerPage=1
+aliases: []

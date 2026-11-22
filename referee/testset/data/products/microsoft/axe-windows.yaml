@@ -1,0 +1,11 @@
+key: microsoft/axe-windows
+publisher: microsoft
+name: Axe.Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AxeWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AxeWindows
+identifiers:
+- winget: Microsoft.AxeWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AxeWindows
+aliases: []
