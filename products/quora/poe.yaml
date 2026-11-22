@@ -1,0 +1,11 @@
+key: quora/poe
+publisher: quora
+name: Poe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quora/Poe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quora/Poe
+identifiers:
+- winget: Quora.Poe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quora/Poe
+aliases: []

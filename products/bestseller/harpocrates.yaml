@@ -1,0 +1,11 @@
+key: bestseller/harpocrates
+publisher: bestseller
+name: harpocrates
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bestseller/harpocrates
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bestseller/harpocrates
+identifiers:
+- winget: bestseller.harpocrates
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bestseller/harpocrates
+aliases: []

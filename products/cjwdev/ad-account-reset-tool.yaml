@@ -1,0 +1,11 @@
+key: cjwdev/ad-account-reset-tool
+publisher: cjwdev
+name: AD Account Reset Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADAccountResetTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADAccountResetTool
+identifiers:
+- winget: Cjwdev.ADAccountResetTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADAccountResetTool
+aliases: []

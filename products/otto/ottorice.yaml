@@ -1,0 +1,11 @@
+key: otto/ottorice
+publisher: otto
+name: OttoRice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuiOttoni/OttoRice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuiOttoni/OttoRice
+identifiers:
+- winget: GuiOttoni.OttoRice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuiOttoni/OttoRice
+aliases: []

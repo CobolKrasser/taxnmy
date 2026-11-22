@@ -1,0 +1,11 @@
+key: grafana-labs/flint
+publisher: grafana-labs
+name: Flint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Flint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Flint
+identifiers:
+- winget: GrafanaLabs.Flint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Flint
+aliases: []

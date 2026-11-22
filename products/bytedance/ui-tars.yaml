@@ -1,0 +1,11 @@
+key: bytedance/ui-tars
+publisher: bytedance
+name: UI TARS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/UI-TARS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/UI-TARS
+identifiers:
+- winget: ByteDance.UI-TARS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/UI-TARS
+aliases: []

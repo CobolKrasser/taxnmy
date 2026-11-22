@@ -1,0 +1,11 @@
+key: qlogexplorer/qlogexplorer
+publisher: qlogexplorer
+name: QLogExplorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QLogExplorer/QLogExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QLogExplorer/QLogExplorer
+identifiers:
+- winget: QLogExplorer.QLogExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QLogExplorer/QLogExplorer
+aliases: []

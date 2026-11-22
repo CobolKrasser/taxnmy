@@ -1,0 +1,11 @@
+key: workflowy/workflowy
+publisher: workflowy
+name: WorkFlowy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FunRoutine/WorkFlowy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FunRoutine/WorkFlowy
+identifiers:
+- winget: FunRoutine.WorkFlowy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FunRoutine/WorkFlowy
+aliases: []

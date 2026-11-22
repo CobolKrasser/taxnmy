@@ -1,0 +1,12 @@
+key: vovsoft/website-screenshot-generator
+publisher: vovsoft
+name: Vovsoft Website Screenshot Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebsiteScreenshotGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebsiteScreenshotGenerator
+identifiers:
+- winget: VovSoft.WebsiteScreenshotGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebsiteScreenshotGenerator
+aliases:
+- vovsoft/vovsoft-website-screenshot-generator

@@ -1,0 +1,11 @@
+key: scratch-foundation/scratch
+publisher: scratch-foundation
+name: Scratch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/Scratch/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/Scratch/3
+identifiers:
+- winget: MITMediaLab.Scratch.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/Scratch/3
+aliases: []

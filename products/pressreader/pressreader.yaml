@@ -1,0 +1,11 @@
+key: pressreader/pressreader
+publisher: pressreader
+name: PressReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PressReader/PressReader/Classic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PressReader/PressReader/Classic
+identifiers:
+- winget: PressReader.PressReader.Classic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PressReader/PressReader/Classic
+aliases: []

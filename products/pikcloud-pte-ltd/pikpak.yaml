@@ -1,0 +1,11 @@
+key: pikcloud-pte-ltd/pikpak
+publisher: pikcloud-pte-ltd
+name: PikPak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PIKCLOUD/PikPak
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PIKCLOUD/PikPak
+identifiers:
+- winget: PIKCLOUD.PikPak
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PIKCLOUD/PikPak
+aliases: []

@@ -1,0 +1,11 @@
+key: conduit-technologies/conduitai-cli
+publisher: conduit-technologies
+name: conduitAI CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConduitTechnologies/conduitai
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConduitTechnologies/conduitai
+identifiers:
+- winget: ConduitTechnologies.conduitai
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConduitTechnologies/conduitai
+aliases: []

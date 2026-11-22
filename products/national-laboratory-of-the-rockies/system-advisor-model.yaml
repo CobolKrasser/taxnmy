@@ -1,0 +1,11 @@
+key: national-laboratory-of-the-rockies/system-advisor-model
+publisher: national-laboratory-of-the-rockies
+name: System Advisor Model
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NatLabRockies/SAM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NatLabRockies/SAM
+identifiers:
+- winget: NatLabRockies.SAM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NatLabRockies/SAM
+aliases: []

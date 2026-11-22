@@ -18,6 +18,7 @@ import jsonschema
 import yaml
 
 REPO = Path(__file__).resolve().parent.parent
+FIXED = REPO / "referee/testset/data"  # the fixed data of the test set (TAX-56)
 sys.path.insert(0, str(REPO / "tools"))
 sys.path.insert(0, str(REPO / "tests"))
 import importer  # noqa: E402
@@ -187,7 +188,7 @@ class PlanTest(Base):
 class PagesTest(Base):
     def outcomes(self, fetcher, rows=ROWS):
         out = importer.plan(self.rows(rows), self.root)
-        pubs = importer.check_pages(out, fetcher, getattr(fetcher, "final", {}))
+        pubs = importer.check_pages(out, fetcher, getattr(fetcher, "final", {}), data_root=self.root)
         importer.follow(out)
         return out, pubs
 
@@ -258,7 +259,7 @@ class PagesTest(Base):
 class FilesTest(Base):
     def test_the_files_pass_the_schemas(self):
         out = importer.plan(self.rows(), self.root)
-        pubs = importer.check_pages(out, FakeFetcher(pages()))
+        pubs = importer.check_pages(out, FakeFetcher(pages()), data_root=self.root)
         files = importer.files_of(out, pubs, {}, self.root)
         self.assertEqual(sorted(files), ["products/acme/widget.yaml", "products/beta-systems/beta-box.yaml",
                                          "publishers/beta-systems.yaml"])
@@ -532,8 +533,8 @@ class TrialTest(unittest.TestCase):
         self.assertEqual(path.read_text(encoding="utf-8").splitlines()[0], HEAD)
         rows = importer.read_found([path])
         self.assertEqual(len(rows), 40)
-        outcomes = importer.plan(rows)
-        t = importer.threshold(outcomes, None, importer.existing_keys(REPO))
+        outcomes = importer.plan(rows, FIXED)
+        t = importer.threshold(outcomes, None, importer.existing_keys(FIXED))
         self.assertEqual((t["rows"], t["final"], t["stop"]), (40, False, False), "before the verdict: provisional")
 
 
@@ -641,7 +642,7 @@ class TrialCountTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, tmp)
         with contextlib.redirect_stdout(io.StringIO()):
             importer.main(["count", "--outcomes", str(TRIAL / "outcomes.json"), "--verdicts", str(TRIAL / "verdicts.json"),
-                           "--out", str(tmp / "count.md")])
+                           "--out", str(tmp / "count.md"), "--root", str(FIXED)])
         self.assertIn("**stop**", (tmp / "count.md").read_text())
 
 
@@ -860,7 +861,7 @@ class NoBrandTest(unittest.TestCase):
 
     def test_no_publisher_name_in_the_code(self):
         code = (REPO / "tools/importer.py").read_text().lower()
-        for f in (REPO / "publishers").glob("*.yaml"):
+        for f in (FIXED / "publishers").glob("*.yaml"):  # a fixed list, not the data (TAX-56)
             p = yaml.safe_load(f.read_text())
             for n in {p["key"].replace("-", " "), p["name"]}:
                 if len(n) >= 4:
@@ -889,7 +890,7 @@ class EndAddressTest(Base):
 
     def outcomes(self, fetcher, rows=ROWS):
         out = importer.plan(self.rows(rows), self.root)
-        pubs = importer.check_pages(out, fetcher)
+        pubs = importer.check_pages(out, fetcher, data_root=self.root)
         importer.follow(out)
         return out, pubs
 

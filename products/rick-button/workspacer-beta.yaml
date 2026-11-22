@@ -1,0 +1,11 @@
+key: rick-button/workspacer-beta
+publisher: rick-button
+name: workspacer beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rickbutton/workspacer/beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rickbutton/workspacer/beta
+identifiers:
+- winget: rickbutton.workspacer.beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rickbutton/workspacer/beta
+aliases: []

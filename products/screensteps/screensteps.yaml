@@ -1,0 +1,11 @@
+key: screensteps/screensteps
+publisher: screensteps
+name: ScreenSteps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenSteps/ScreenSteps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenSteps/ScreenSteps
+identifiers:
+- winget: ScreenSteps.ScreenSteps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenSteps/ScreenSteps
+aliases: []

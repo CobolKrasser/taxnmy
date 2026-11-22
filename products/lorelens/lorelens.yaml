@@ -1,0 +1,11 @@
+key: lorelens/lorelens
+publisher: lorelens
+name: LoreLens
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zenogrid/LoreLens
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zenogrid/LoreLens
+identifiers:
+- winget: zenogrid.LoreLens
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zenogrid/LoreLens
+aliases: []

@@ -1,0 +1,11 @@
+key: autonomous-software/metronome-wallet
+publisher: autonomous-software
+name: Metronome Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutonomousSoftware/MetronomeWallet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutonomousSoftware/MetronomeWallet
+identifiers:
+- winget: AutonomousSoftware.MetronomeWallet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutonomousSoftware/MetronomeWallet
+aliases: []

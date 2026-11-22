@@ -1,0 +1,11 @@
+key: firenzelor/gemini-collector
+publisher: firenzelor
+name: gemini-collector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FirenzeLor/gemini-collector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FirenzeLor/gemini-collector
+identifiers:
+- winget: FirenzeLor.gemini-collector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FirenzeLor/gemini-collector
+aliases: []

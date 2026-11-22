@@ -1,0 +1,11 @@
+key: glyph/glyphpdf
+publisher: glyph
+name: GlyphPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glyph/GlyphPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glyph/GlyphPDF
+identifiers:
+- winget: Glyph.GlyphPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glyph/GlyphPDF
+aliases: []

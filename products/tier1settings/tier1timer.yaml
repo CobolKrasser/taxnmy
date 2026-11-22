@@ -1,0 +1,11 @@
+key: tier1settings/tier1timer
+publisher: tier1settings
+name: Tier1Timer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tier1Settings/Tier1Timer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tier1Settings/Tier1Timer
+identifiers:
+- winget: Tier1Settings.Tier1Timer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tier1Settings/Tier1Timer
+aliases: []

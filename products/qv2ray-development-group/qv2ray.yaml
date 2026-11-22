@@ -1,0 +1,11 @@
+key: qv2ray-development-group/qv2ray
+publisher: qv2ray-development-group
+name: Qv2ray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qv2ray/Qv2ray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qv2ray/Qv2ray
+identifiers:
+- winget: Qv2ray.Qv2ray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qv2ray/Qv2ray
+aliases: []

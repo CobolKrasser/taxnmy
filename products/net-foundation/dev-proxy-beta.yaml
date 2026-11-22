@@ -1,0 +1,11 @@
+key: net-foundation/dev-proxy-beta
+publisher: net-foundation
+name: Dev Proxy Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevProxy/DevProxy/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevProxy/DevProxy/Beta
+identifiers:
+- winget: DevProxy.DevProxy.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevProxy/DevProxy/Beta
+aliases: []

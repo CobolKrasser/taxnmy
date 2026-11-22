@@ -1,0 +1,11 @@
+key: orbmu2k/nvidia-profile-inspector
+publisher: orbmu2k
+name: NVIDIA Profile Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orbmu2k/nvidiaProfileInspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orbmu2k/nvidiaProfileInspector
+identifiers:
+- winget: Orbmu2k.nvidiaProfileInspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orbmu2k/nvidiaProfileInspector
+aliases: []

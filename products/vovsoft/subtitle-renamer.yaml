@@ -1,0 +1,12 @@
+key: vovsoft/subtitle-renamer
+publisher: vovsoft
+name: Vovsoft Subtitle Renamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SubtitleRenamer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SubtitleRenamer
+identifiers:
+- winget: VovSoft.SubtitleRenamer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SubtitleRenamer
+aliases:
+- vovsoft/vovsoft-subtitle-renamer

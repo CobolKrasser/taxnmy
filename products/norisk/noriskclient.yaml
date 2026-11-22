@@ -1,0 +1,11 @@
+key: norisk/noriskclient
+publisher: norisk
+name: NoRiskClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoRiskClient/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoRiskClient/Launcher
+identifiers:
+- winget: NoRiskClient.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoRiskClient/Launcher
+aliases: []

@@ -1,0 +1,11 @@
+key: stripe/stripe
+publisher: stripe
+name: stripe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stripe/StripeCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stripe/StripeCli
+identifiers:
+- winget: Stripe.StripeCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stripe/StripeCli
+aliases: []

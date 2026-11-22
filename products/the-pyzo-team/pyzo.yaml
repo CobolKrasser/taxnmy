@@ -1,0 +1,11 @@
+key: the-pyzo-team/pyzo
+publisher: the-pyzo-team
+name: pyzo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePyzoteam/pyzo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePyzoteam/pyzo
+identifiers:
+- winget: ThePyzoteam.pyzo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePyzoteam/pyzo
+aliases: []

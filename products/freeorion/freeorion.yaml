@@ -1,0 +1,11 @@
+key: freeorion/freeorion
+publisher: freeorion
+name: FreeOrion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeOrion/FreeOrion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeOrion/FreeOrion
+identifiers:
+- winget: FreeOrion.FreeOrion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeOrion/FreeOrion
+aliases: []

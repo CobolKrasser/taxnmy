@@ -1,0 +1,11 @@
+key: ant-software/ant-renamer
+publisher: ant-software
+name: Ant Renamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntSoftware/AntRenamer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntSoftware/AntRenamer
+identifiers:
+- winget: AntSoftware.AntRenamer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntSoftware/AntRenamer
+aliases: []

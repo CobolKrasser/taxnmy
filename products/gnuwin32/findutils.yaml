@@ -1,0 +1,12 @@
+key: gnuwin32/findutils
+publisher: gnuwin32
+name: 'GnuWin32: FindUtils'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/FindUtils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/FindUtils
+identifiers:
+- winget: GnuWin32.FindUtils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/FindUtils
+aliases:
+- gnuwin32/gnuwin32-findutils

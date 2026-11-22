@@ -1,0 +1,11 @@
+key: citadel5/gs-base
+publisher: citadel5
+name: GS-Base
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citadel5-JP/GS-Base
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citadel5-JP/GS-Base
+identifiers:
+- winget: Citadel5-JP.GS-Base
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citadel5-JP/GS-Base
+aliases: []

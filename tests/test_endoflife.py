@@ -107,8 +107,12 @@ class EndOfLifeTest(unittest.TestCase):
         self.assertEqual((phone["name"], phone["kind"], phone["source"], phone["versions"]["source"]),
                          ("Acme Phone 3", "device", page, page))
         self.assertEqual(phone["aliases"], ["acme/acme-phone-3"], "the long form is an alias (TAX-54)")
+        self.assertNotIn("archived", phone)
+        old = yaml.safe_load(got["products"]["acme/phone-2"].text())
+        self.assertEqual(old["archived"], {"source": page}, "a model without support comes in archived (TP10)")
         zed = yaml.safe_load(got["products"]["zed/os"].text())
         self.assertEqual(zed["kind"], "operating-system")
+        self.assertNotIn("archived", zed, "a page that is one product is never archived by the round")
         self.assertEqual(set(got["publishers"]), {"zed"}, "only the new publishers the round uses")
         pub = yaml.safe_load(endoflife.publisher_text("zed", got["publishers"]["zed"]))
         self.assertEqual((pub["name"], pub["source"]), ("Zed", endoflife.PAGE.format(slug="zed-os")))
@@ -126,7 +130,7 @@ class EndOfLifeTest(unittest.TestCase):
 
     def test_the_report_counts_per_line(self):
         got, _ = self.run_round()
-        self.assertIn("| acme-phone | 5 | 4 | 3 | 1 | 0 |", got["report"])
+        self.assertIn("| acme-phone | 5 | 4 | 3 | 1 | 1 | 0 |", got["report"])
         self.assertIn("No AI call", got["report"])
 
     def test_the_list_of_the_repository_names_a_publisher_for_every_line(self):

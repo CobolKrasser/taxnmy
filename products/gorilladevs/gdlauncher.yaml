@@ -1,0 +1,11 @@
+key: gorilladevs/gdlauncher
+publisher: gorilladevs
+name: GDLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GorillaDevs/GDLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GorillaDevs/GDLauncher
+identifiers:
+- winget: GorillaDevs.GDLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GorillaDevs/GDLauncher
+aliases: []

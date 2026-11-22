@@ -1,0 +1,11 @@
+key: kuingsmile/piclist
+publisher: kuingsmile
+name: PicList
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuingsmile/PicList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuingsmile/PicList
+identifiers:
+- winget: Kuingsmile.PicList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuingsmile/PicList
+aliases: []

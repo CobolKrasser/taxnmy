@@ -1,0 +1,11 @@
+key: kirra-enterprises/presenter-version-5-express-edition
+publisher: kirra-enterprises
+name: Presenter Version 5 Express Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirraEnterprises/Presenter/Express
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirraEnterprises/Presenter/Express
+identifiers:
+- winget: KirraEnterprises.Presenter.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirraEnterprises/Presenter/Express
+aliases: []

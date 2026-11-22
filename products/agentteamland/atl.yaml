@@ -1,0 +1,11 @@
+key: agentteamland/atl
+publisher: agentteamland
+name: atl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentteamland/atl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentteamland/atl
+identifiers:
+- winget: agentteamland.atl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentteamland/atl
+aliases: []

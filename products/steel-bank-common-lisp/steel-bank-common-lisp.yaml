@@ -1,0 +1,11 @@
+key: steel-bank-common-lisp/steel-bank-common-lisp
+publisher: steel-bank-common-lisp
+name: Steel Bank Common Lisp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SBCL/SBCL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SBCL/SBCL
+identifiers:
+- winget: SBCL.SBCL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SBCL/SBCL
+aliases: []

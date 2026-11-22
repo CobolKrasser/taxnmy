@@ -1,0 +1,11 @@
+key: jake-robertson/houdoku
+publisher: jake-robertson
+name: Houdoku
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xgi/houdoku
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xgi/houdoku
+identifiers:
+- winget: xgi.houdoku
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xgi/houdoku
+aliases: []

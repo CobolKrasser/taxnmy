@@ -1,0 +1,11 @@
+key: parallels-international/parallels-client
+publisher: parallels-international
+name: Parallels Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parallels/Parallels
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parallels/Parallels
+identifiers:
+- winget: Parallels.Parallels
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parallels/Parallels
+aliases: []

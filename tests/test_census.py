@@ -14,6 +14,7 @@ from pathlib import Path
 import yaml
 
 REPO = Path(__file__).resolve().parent.parent
+FIXED = REPO / "referee/testset/data"  # the fixed data of the test set (TAX-56)
 sys.path.insert(0, str(REPO / "tools"))
 import census  # noqa: E402
 
@@ -155,7 +156,7 @@ class NoBrandTest(unittest.TestCase):
 
     def test_no_publisher_name_in_the_code(self):
         code = (REPO / "tools/census.py").read_text().lower()
-        for f in (REPO / "publishers").glob("*.yaml"):
+        for f in (FIXED / "publishers").glob("*.yaml"):  # a fixed list, not the data (TAX-56)
             p = yaml.safe_load(f.read_text())
             for n in {p["key"].replace("-", " "), p["name"]}:
                 if len(n) >= 4:

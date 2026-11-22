@@ -1,0 +1,11 @@
+key: antlab-solutions/antconc
+publisher: antlab-solutions
+name: AntConc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntLab/AntConc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntLab/AntConc
+identifiers:
+- winget: AntLab.AntConc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntLab/AntConc
+aliases: []

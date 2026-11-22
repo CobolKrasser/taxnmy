@@ -1,0 +1,11 @@
+key: edgeless/ept
+publisher: edgeless
+name: ept
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgelessPE/ept
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgelessPE/ept
+identifiers:
+- winget: EdgelessPE.ept
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgelessPE/ept
+aliases: []

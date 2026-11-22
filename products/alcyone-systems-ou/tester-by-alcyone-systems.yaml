@@ -1,0 +1,11 @@
+key: alcyone-systems-ou/tester-by-alcyone-systems
+publisher: alcyone-systems-ou
+name: Tester by Alcyone Systems
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlcyoneSystems/Tester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlcyoneSystems/Tester
+identifiers:
+- winget: AlcyoneSystems.Tester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlcyoneSystems/Tester
+aliases: []

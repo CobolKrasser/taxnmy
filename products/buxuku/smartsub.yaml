@@ -1,0 +1,11 @@
+key: buxuku/smartsub
+publisher: buxuku
+name: SmartSub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub
+identifiers:
+- winget: buxuku.SmartSub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub
+aliases: []

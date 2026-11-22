@@ -1,0 +1,11 @@
+key: edrawsoft/pdf-viewer-component
+publisher: edrawsoft
+name: PDF Viewer Component
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/ViewerComponent/PDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/ViewerComponent/PDF
+identifiers:
+- winget: EdrawSoft.ViewerComponent.PDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/ViewerComponent/PDF
+aliases: []

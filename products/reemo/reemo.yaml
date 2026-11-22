@@ -1,0 +1,11 @@
+key: reemo/reemo
+publisher: reemo
+name: Reemo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reemo/Reemo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reemo/Reemo
+identifiers:
+- winget: Reemo.Reemo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reemo/Reemo
+aliases: []

@@ -1,0 +1,12 @@
+key: nullcarbon/revit-export
+publisher: nullcarbon
+name: nullCarbon Revit Export
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nullCarbon/RevitExport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nullCarbon/RevitExport
+identifiers:
+- winget: nullCarbon.RevitExport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nullCarbon/RevitExport
+aliases:
+- nullcarbon/nullcarbon-revit-export

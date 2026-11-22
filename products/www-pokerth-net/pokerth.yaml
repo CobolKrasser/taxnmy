@@ -1,0 +1,11 @@
+key: www-pokerth-net/pokerth
+publisher: www-pokerth-net
+name: PokerTH
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PokerTH/PokerTH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PokerTH/PokerTH
+identifiers:
+- winget: PokerTH.PokerTH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PokerTH/PokerTH
+aliases: []

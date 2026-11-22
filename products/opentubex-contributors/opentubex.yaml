@@ -1,0 +1,11 @@
+key: opentubex-contributors/opentubex
+publisher: opentubex-contributors
+name: OpenTubeX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTubeX/OpenTubeX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTubeX/OpenTubeX
+identifiers:
+- winget: OpenTubeX.OpenTubeX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTubeX/OpenTubeX
+aliases: []

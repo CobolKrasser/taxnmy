@@ -1,0 +1,11 @@
+key: martin-wendt/stressor
+publisher: martin-wendt
+name: stressor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mar10/stressor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mar10/stressor
+identifiers:
+- winget: mar10.stressor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mar10/stressor
+aliases: []

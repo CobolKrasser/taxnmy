@@ -1,0 +1,11 @@
+key: ojdkbuild-open-source-project/ojdkbuild-openjdk-jre
+publisher: ojdkbuild-open-source-project
+name: ojdkbuild OpenJDK JRE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/17/jre
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/17/jre
+identifiers:
+- winget: ojdkbuild.openjdk.17.jre
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/17/jre
+aliases: []

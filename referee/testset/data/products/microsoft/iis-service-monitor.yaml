@@ -1,0 +1,12 @@
+key: microsoft/iis-service-monitor
+publisher: microsoft
+name: Microsoft IIS Service Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/ServiceMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/ServiceMonitor
+identifiers:
+- winget: Microsoft.IIS.ServiceMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/ServiceMonitor
+aliases:
+- microsoft/microsoft-iis-service-monitor

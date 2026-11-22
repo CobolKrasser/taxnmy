@@ -1,0 +1,11 @@
+key: espeak/espeak
+publisher: espeak
+name: eSpeak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/espeak/espeak
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/espeak/espeak
+identifiers:
+- winget: espeak.espeak
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/espeak/espeak
+aliases: []

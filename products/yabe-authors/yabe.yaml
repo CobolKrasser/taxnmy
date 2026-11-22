@@ -1,0 +1,11 @@
+key: yabe-authors/yabe
+publisher: yabe-authors
+name: Yabe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YABE/YetAnotherBacnetExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YABE/YetAnotherBacnetExplorer
+identifiers:
+- winget: YABE.YetAnotherBacnetExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YABE/YetAnotherBacnetExplorer
+aliases: []

@@ -1,0 +1,11 @@
+key: canva/affinity
+publisher: canva
+name: Affinity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Affinity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Affinity
+identifiers:
+- winget: Canva.Affinity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Affinity
+aliases: []

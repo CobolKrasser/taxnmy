@@ -1,0 +1,12 @@
+key: quotation-factory/cli
+publisher: quotation-factory
+name: Quotation Factory CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuotationFactory/QFC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuotationFactory/QFC
+identifiers:
+- winget: QuotationFactory.QFC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuotationFactory/QFC
+aliases:
+- quotation-factory/quotation-factory-cli

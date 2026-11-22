@@ -1,0 +1,11 @@
+key: wikimedia-foundation/mediawiki
+publisher: wikimedia-foundation
+name: MediaWiki
+kind: software
+source: https://www.mediawiki.org/wiki/Version_lifecycle
+versions:
+  source: https://www.mediawiki.org/wiki/Version_lifecycle
+identifiers:
+- cpe: cpe:2.3:a:mediawiki:mediawiki
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mediawiki.md
+aliases: []

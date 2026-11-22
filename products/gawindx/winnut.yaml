@@ -1,0 +1,11 @@
+key: gawindx/winnut
+publisher: gawindx
+name: WinNUT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gawindx/WinNUT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gawindx/WinNUT
+identifiers:
+- winget: Gawindx.WinNUT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gawindx/WinNUT
+aliases: []

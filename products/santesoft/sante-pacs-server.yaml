@@ -1,0 +1,11 @@
+key: santesoft/sante-pacs-server
+publisher: santesoft
+name: Sante PACS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SantePacsServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SantePacsServer
+identifiers:
+- winget: Santesoft.SantePacsServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SantePacsServer
+aliases: []

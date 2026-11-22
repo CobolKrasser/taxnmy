@@ -1,0 +1,12 @@
+key: picgo/beta
+publisher: picgo
+name: PicGo Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGo/PicGo/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGo/PicGo/Beta
+identifiers:
+- winget: PicGo.PicGo.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGo/PicGo/Beta
+aliases:
+- picgo/picgo-beta

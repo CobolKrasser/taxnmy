@@ -1,0 +1,11 @@
+key: stellar-information-technology/stellar-repair-for-active-directory
+publisher: stellar-information-technology
+name: Stellar Repair for Active Directory
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairforActiveDirectory
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairforActiveDirectory
+identifiers:
+- winget: StellarDataRecovery.StellarRepairforActiveDirectory
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairforActiveDirectory
+aliases: []

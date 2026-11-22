@@ -1,0 +1,11 @@
+key: nvidia/vr-capture-and-replay
+publisher: nvidia
+name: VR Capture & Replay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/VCR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/VCR
+identifiers:
+- winget: Nvidia.VCR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/VCR
+aliases: []

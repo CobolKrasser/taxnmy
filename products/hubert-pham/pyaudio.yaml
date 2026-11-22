@@ -1,0 +1,11 @@
+key: hubert-pham/pyaudio
+publisher: hubert-pham
+name: PyAudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/intxcc/pyaudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/intxcc/pyaudio
+identifiers:
+- winget: intxcc.pyaudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/intxcc/pyaudio
+aliases: []

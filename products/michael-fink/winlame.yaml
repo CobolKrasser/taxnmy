@@ -1,0 +1,11 @@
+key: michael-fink/winlame
+publisher: michael-fink
+name: winLAME
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vividos/winLAME
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vividos/winLAME
+identifiers:
+- winget: vividos.winLAME
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vividos/winLAME
+aliases: []

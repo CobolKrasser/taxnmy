@@ -1,0 +1,11 @@
+key: ratspeak/ratspeak
+publisher: ratspeak
+name: Ratspeak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ratspeak/Ratspeak
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ratspeak/Ratspeak
+identifiers:
+- winget: Ratspeak.Ratspeak
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ratspeak/Ratspeak
+aliases: []

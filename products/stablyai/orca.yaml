@@ -1,0 +1,11 @@
+key: stablyai/orca
+publisher: stablyai
+name: Orca
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StablyAI/Orca
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StablyAI/Orca
+identifiers:
+- winget: StablyAI.Orca
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StablyAI/Orca
+aliases: []

@@ -1,0 +1,11 @@
+key: softros-systems/transparent-lock-screen
+publisher: softros-systems
+name: Transparent Lock Screen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/TransparentLockScreen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/TransparentLockScreen
+identifiers:
+- winget: Softros.TransparentLockScreen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/TransparentLockScreen
+aliases: []

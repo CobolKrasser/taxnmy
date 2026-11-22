@@ -1,0 +1,11 @@
+key: brian/rad
+publisher: brian
+name: rad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brian/rad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brian/rad
+identifiers:
+- winget: Brian.rad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brian/rad
+aliases: []

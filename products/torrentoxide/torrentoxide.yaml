@@ -1,0 +1,11 @@
+key: torrentoxide/torrentoxide
+publisher: torrentoxide
+name: TorrentOxide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/TorrentOxide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/TorrentOxide
+identifiers:
+- winget: dividebysandwich.TorrentOxide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/TorrentOxide
+aliases: []

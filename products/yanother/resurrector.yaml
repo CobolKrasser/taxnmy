@@ -1,0 +1,11 @@
+key: yanother/resurrector
+publisher: yanother
+name: Resurrector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yanother/Resurrector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yanother/Resurrector
+identifiers:
+- winget: Yanother.Resurrector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yanother/Resurrector
+aliases: []

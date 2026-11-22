@@ -1,0 +1,13 @@
+key: cold-turkey-software/cold-turkey-blocker
+publisher: cold-turkey-software
+name: Cold Turkey Blocker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdTurkey/Blocker/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdTurkey/Blocker/Free
+identifiers:
+- winget: ColdTurkey.Blocker.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdTurkey/Blocker/Free
+- winget: ColdTurkeySoftware.ColdTurkeyBlocker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdTurkeySoftware/ColdTurkeyBlocker
+aliases: []

@@ -1,0 +1,11 @@
+key: kirill-birger/wintabber
+publisher: kirill-birger
+name: WinTabber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kbirger/WinTabber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kbirger/WinTabber
+identifiers:
+- winget: kbirger.WinTabber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kbirger/WinTabber
+aliases: []

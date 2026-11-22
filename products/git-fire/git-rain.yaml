@@ -1,0 +1,11 @@
+key: git-fire/git-rain
+publisher: git-fire
+name: git-rain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-rain/git-rain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-rain/git-rain
+identifiers:
+- winget: git-rain.git-rain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/git-rain/git-rain
+aliases: []

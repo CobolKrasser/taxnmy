@@ -1,0 +1,11 @@
+key: neuron-workspace/neuron
+publisher: neuron-workspace
+name: Neuron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeuronWorkspace/Neuron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeuronWorkspace/Neuron
+identifiers:
+- winget: NeuronWorkspace.Neuron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeuronWorkspace/Neuron
+aliases: []

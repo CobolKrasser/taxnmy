@@ -1,0 +1,11 @@
+key: aloneguid/apache-parquet-for-net
+publisher: aloneguid
+name: Apache Parquet for .NET
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aloneguid/ParquetDotnet/floor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aloneguid/ParquetDotnet/floor
+identifiers:
+- winget: aloneguid.ParquetDotnet.floor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aloneguid/ParquetDotnet/floor
+aliases: []

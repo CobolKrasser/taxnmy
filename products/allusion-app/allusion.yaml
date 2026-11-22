@@ -1,0 +1,11 @@
+key: allusion-app/allusion
+publisher: allusion-app
+name: Allusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Allusion/Allusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Allusion/Allusion
+identifiers:
+- winget: Allusion.Allusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Allusion/Allusion
+aliases: []

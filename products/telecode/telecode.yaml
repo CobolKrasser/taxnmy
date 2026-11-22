@@ -1,0 +1,11 @@
+key: telecode/telecode
+publisher: telecode
+name: TeleCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeleCode/TeleCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeleCode/TeleCode
+identifiers:
+- winget: TeleCode.TeleCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeleCode/TeleCode
+aliases: []

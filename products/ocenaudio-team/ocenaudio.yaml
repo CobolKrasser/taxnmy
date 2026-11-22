@@ -1,0 +1,11 @@
+key: ocenaudio-team/ocenaudio
+publisher: ocenaudio-team
+name: ocenaudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ocenaudio/Ocenaudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ocenaudio/Ocenaudio
+identifiers:
+- winget: Ocenaudio.Ocenaudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ocenaudio/Ocenaudio
+aliases: []

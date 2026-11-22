@@ -1,0 +1,11 @@
+key: serverdata-net/elevate-uc
+publisher: serverdata-net
+name: Elevate UC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ElevateUC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ElevateUC
+identifiers:
+- winget: Serverdata.ElevateUC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ElevateUC
+aliases: []

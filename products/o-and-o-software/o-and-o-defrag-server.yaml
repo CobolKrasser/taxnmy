@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-defrag-server
+publisher: o-and-o-software
+name: O&O Defrag Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/Defrag/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/Defrag/Server
+identifiers:
+- winget: OO-Software.Defrag.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/Defrag/Server
+aliases: []

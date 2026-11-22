@@ -1,0 +1,12 @@
+key: adguard/home
+publisher: adguard
+name: AdGuard Home
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardHome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardHome
+identifiers:
+- winget: AdGuard.AdGuardHome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardHome
+aliases:
+- adguard/adguard-home

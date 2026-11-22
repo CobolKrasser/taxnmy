@@ -1,0 +1,11 @@
+key: savard-software/turbotop
+publisher: savard-software
+name: TurboTop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SavardSoftware/TurboTop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SavardSoftware/TurboTop
+identifiers:
+- winget: SavardSoftware.TurboTop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SavardSoftware/TurboTop
+aliases: []

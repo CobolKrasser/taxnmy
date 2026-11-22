@@ -1,0 +1,12 @@
+key: vovsoft/image-to-cartoon-converter
+publisher: vovsoft
+name: Vovsoft Image to Cartoon Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImageToCartoonConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImageToCartoonConverter
+identifiers:
+- winget: VovSoft.ImageToCartoonConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImageToCartoonConverter
+aliases:
+- vovsoft/vovsoft-image-to-cartoon-converter

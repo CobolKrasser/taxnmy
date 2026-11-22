@@ -1,0 +1,11 @@
+key: oscillicious/rocket-streaming-audio-server
+publisher: oscillicious
+name: Rocket Streaming Audio Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscillicious/RocketStreamingAudioServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscillicious/RocketStreamingAudioServer
+identifiers:
+- winget: Oscillicious.RocketStreamingAudioServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscillicious/RocketStreamingAudioServer
+aliases: []

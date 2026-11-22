@@ -1,0 +1,11 @@
+key: cobaltfusion/debugviewpp
+publisher: cobaltfusion
+name: DebugViewPP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CobaltFusion/DebugViewPP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CobaltFusion/DebugViewPP
+identifiers:
+- winget: CobaltFusion.DebugViewPP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CobaltFusion/DebugViewPP
+aliases: []

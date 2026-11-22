@@ -1,0 +1,11 @@
+key: swift-org/swift
+publisher: swift-org
+name: Swift
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Swift/Toolchain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Swift/Toolchain
+identifiers:
+- winget: Swift.Toolchain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Swift/Toolchain
+aliases: []

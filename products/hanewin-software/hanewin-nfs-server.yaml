@@ -1,0 +1,11 @@
+key: hanewin-software/hanewin-nfs-server
+publisher: hanewin-software
+name: haneWIN NFS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/NFSServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/NFSServer
+identifiers:
+- winget: haneWIN.NFSServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/NFSServer
+aliases: []

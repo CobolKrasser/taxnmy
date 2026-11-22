@@ -1,0 +1,11 @@
+key: chromium/chromedriver
+publisher: chromium
+name: ChromeDriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromium/ChromeDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromium/ChromeDriver
+identifiers:
+- winget: Chromium.ChromeDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromium/ChromeDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: cz600/autodocxproofreading
+publisher: cz600
+name: AutoDocxProofreading
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CZ600/AutoDocxProofread
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CZ600/AutoDocxProofread
+identifiers:
+- winget: CZ600.AutoDocxProofread
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CZ600/AutoDocxProofread
+aliases: []

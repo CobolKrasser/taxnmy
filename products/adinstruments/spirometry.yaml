@@ -1,0 +1,12 @@
+key: adinstruments/spirometry
+publisher: adinstruments
+name: ADInstruments Spirometry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Spirometry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Spirometry
+identifiers:
+- winget: ADInstruments.LabChart.Extension.Spirometry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/Spirometry
+aliases:
+- adinstruments/adinstruments-spirometry

@@ -1,0 +1,11 @@
+key: astrocomma/astrogrep
+publisher: astrocomma
+name: AstroGrep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstroComma/AstroGrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstroComma/AstroGrep
+identifiers:
+- winget: AstroComma.AstroGrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstroComma/AstroGrep
+aliases: []

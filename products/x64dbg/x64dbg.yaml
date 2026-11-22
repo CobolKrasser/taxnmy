@@ -1,0 +1,11 @@
+key: x64dbg/x64dbg
+publisher: x64dbg
+name: x64dbg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x64dbg/x64dbg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x64dbg/x64dbg
+identifiers:
+- winget: x64dbg.x64dbg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x64dbg/x64dbg
+aliases: []

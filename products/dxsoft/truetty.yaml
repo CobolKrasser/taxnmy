@@ -1,0 +1,11 @@
+key: dxsoft/truetty
+publisher: dxsoft
+name: TrueTTY
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DXsoft/TrueTTY
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DXsoft/TrueTTY
+identifiers:
+- winget: DXsoft.TrueTTY
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DXsoft/TrueTTY
+aliases: []

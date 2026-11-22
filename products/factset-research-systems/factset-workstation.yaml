@@ -1,0 +1,11 @@
+key: factset-research-systems/factset-workstation
+publisher: factset-research-systems
+name: FactSet Workstation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactSet/FactSetWorkstation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactSet/FactSetWorkstation
+identifiers:
+- winget: FactSet.FactSetWorkstation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactSet/FactSetWorkstation
+aliases: []

@@ -1,0 +1,11 @@
+key: quantumsecure-technologies/fusion-programming-language
+publisher: quantumsecure-technologies
+name: Fusion Programming Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QSTech/Fusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QSTech/Fusion
+identifiers:
+- winget: QSTech.Fusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QSTech/Fusion
+aliases: []

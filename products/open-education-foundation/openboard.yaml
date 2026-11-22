@@ -1,0 +1,11 @@
+key: open-education-foundation/openboard
+publisher: open-education-foundation
+name: OpenBoard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenEducationFoundation/OpenBoard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenEducationFoundation/OpenBoard
+identifiers:
+- winget: OpenEducationFoundation.OpenBoard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenEducationFoundation/OpenBoard
+aliases: []

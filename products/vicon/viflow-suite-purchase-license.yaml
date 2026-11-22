@@ -1,0 +1,13 @@
+key: vicon/viflow-suite-purchase-license
+publisher: vicon
+name: viflow Suite (purchase license)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow/9
+identifiers:
+- winget: ViCon.viflow.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow/8
+- winget: ViCon.viflow.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViCon/viflow/9
+aliases: []

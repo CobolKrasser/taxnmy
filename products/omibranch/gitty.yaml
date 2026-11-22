@@ -1,0 +1,11 @@
+key: omibranch/gitty
+publisher: omibranch
+name: gitty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omibranch/Gitty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omibranch/Gitty
+identifiers:
+- winget: Omibranch.Gitty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omibranch/Gitty
+aliases: []

@@ -1,0 +1,11 @@
+key: hiro-systems/chainhook
+publisher: hiro-systems
+name: chainhook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroSystems/Chainhook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroSystems/Chainhook
+identifiers:
+- winget: HiroSystems.Chainhook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroSystems/Chainhook
+aliases: []

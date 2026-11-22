@@ -1,0 +1,11 @@
+key: qnap-systems/qenc-decrypter
+publisher: qnap-systems
+name: QENC Decrypter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/QENCDecrypter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/QENCDecrypter
+identifiers:
+- winget: QNAP.QENCDecrypter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/QENCDecrypter
+aliases: []

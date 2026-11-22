@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-disk-monitor
+publisher: lsoft-technologies
+name: Active@ Disk Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDiskMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDiskMonitor
+identifiers:
+- winget: LSoftTechnologies.ActiveDiskMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDiskMonitor
+aliases: []

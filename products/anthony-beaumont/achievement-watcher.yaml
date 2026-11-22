@@ -1,0 +1,13 @@
+key: anthony-beaumont/achievement-watcher
+publisher: anthony-beaumont
+name: Achievement Watcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnthonyBeaumont/AchievementWatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnthonyBeaumont/AchievementWatcher
+identifiers:
+- winget: AnthonyBeaumont.AchievementWatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnthonyBeaumont/AchievementWatcher
+- winget: darktakayanagi.Achievement-Watcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darktakayanagi/Achievement-Watcher
+aliases: []

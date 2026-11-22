@@ -6,4 +6,7 @@ source: https://endoflife.date/dbt-core
 versions:
   source: https://docs.getdbt.com/docs/dbt-versions
 identifiers: []
+identifiers:
+- winget: dbtLabs.dbt-core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbtLabs/dbt-core
 aliases: []

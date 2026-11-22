@@ -1,0 +1,11 @@
+key: gopass-authors/gopass-jsonapi
+publisher: gopass-authors
+name: gopass-jsonapi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gopass/gopass-jsonapi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gopass/gopass-jsonapi
+identifiers:
+- winget: gopass.gopass-jsonapi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gopass/gopass-jsonapi
+aliases: []

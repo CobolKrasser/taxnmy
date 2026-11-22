@@ -1,0 +1,12 @@
+key: ossec/hids
+publisher: ossec
+name: OSSEC HIDS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSSEC/OSSECAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSSEC/OSSECAgent
+identifiers:
+- winget: OSSEC.OSSECAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSSEC/OSSECAgent
+aliases:
+- ossec/ossec-hids

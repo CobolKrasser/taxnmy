@@ -1,0 +1,11 @@
+key: travis-cobbs/ldview
+publisher: travis-cobbs
+name: LDView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisCobbs/LDView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisCobbs/LDView
+identifiers:
+- winget: TravisCobbs.LDView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisCobbs/LDView
+aliases: []

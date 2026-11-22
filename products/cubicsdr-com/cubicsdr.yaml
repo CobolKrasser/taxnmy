@@ -1,0 +1,11 @@
+key: cubicsdr-com/cubicsdr
+publisher: cubicsdr-com
+name: CubicSDR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubicSDR/CubicSDR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubicSDR/CubicSDR
+identifiers:
+- winget: CubicSDR.CubicSDR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubicSDR/CubicSDR
+aliases: []

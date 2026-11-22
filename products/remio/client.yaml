@@ -1,0 +1,12 @@
+key: remio/client
+publisher: remio
+name: Remio Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remio/RemioClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remio/RemioClient
+identifiers:
+- winget: Remio.RemioClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remio/RemioClient
+aliases:
+- remio/remio-client

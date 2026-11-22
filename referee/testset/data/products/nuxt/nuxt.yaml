@@ -1,0 +1,17 @@
+key: nuxt/nuxt
+publisher: nuxt
+name: Nuxt
+kind: software
+source: https://nuxt.com/docs/4.x/community/roadmap
+versions:
+  source: https://nuxt.com/docs/4.x/community/roadmap
+identifiers:
+- cpe: cpe:2.3:a:nuxt:framework
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nuxt.md
+- purl: pkg:npm/nuxt
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nuxt.md
+- purl: pkg:github/nuxt/nuxt
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nuxt.md
+- cpe: cpe:2.3:a:nuxt:nuxt
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:nuxt:nuxt&resultsPerPage=1
+aliases: []

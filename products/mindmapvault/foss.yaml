@@ -1,0 +1,12 @@
+key: mindmapvault/foss
+publisher: mindmapvault
+name: MindMapVault FOSS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindMapVault/MindMapVaultFOSS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindMapVault/MindMapVaultFOSS
+identifiers:
+- winget: MindMapVault.MindMapVaultFOSS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindMapVault/MindMapVaultFOSS
+aliases:
+- mindmapvault/mindmapvault-foss

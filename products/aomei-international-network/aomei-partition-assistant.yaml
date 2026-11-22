@@ -1,0 +1,13 @@
+key: aomei-international-network/aomei-partition-assistant
+publisher: aomei-international-network
+name: AOMEI Partition Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/PartitionAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/PartitionAssistant
+identifiers:
+- winget: AOMEI.PartitionAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/PartitionAssistant
+- winget: AOMEI.PartitionAssistant.ARM64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/PartitionAssistant/ARM64
+aliases: []

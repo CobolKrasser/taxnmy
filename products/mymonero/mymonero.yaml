@@ -1,0 +1,11 @@
+key: mymonero/mymonero
+publisher: mymonero
+name: MyMonero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyMonero/MyMonero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyMonero/MyMonero
+identifiers:
+- winget: MyMonero.MyMonero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyMonero/MyMonero
+aliases: []

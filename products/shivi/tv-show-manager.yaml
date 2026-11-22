@@ -1,0 +1,11 @@
+key: shivi/tv-show-manager
+publisher: shivi
+name: TV Show Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shivi/TVShowManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shivi/TVShowManager
+identifiers:
+- winget: Shivi.TVShowManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shivi/TVShowManager
+aliases: []

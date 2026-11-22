@@ -1,0 +1,11 @@
+key: goldwave/goldwave
+publisher: goldwave
+name: GoldWave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoldWave/GoldWave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoldWave/GoldWave
+identifiers:
+- winget: GoldWave.GoldWave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoldWave/GoldWave
+aliases: []

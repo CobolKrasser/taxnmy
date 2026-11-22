@@ -1,0 +1,11 @@
+key: pro-ware/aca-1095-reporting-multiclient
+publisher: pro-ware
+name: ACA 1095 Reporting MultiClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProWare/ACA1095ReportingMultiClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProWare/ACA1095ReportingMultiClient
+identifiers:
+- winget: ProWare.ACA1095ReportingMultiClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProWare/ACA1095ReportingMultiClient
+aliases: []

@@ -1,0 +1,11 @@
+key: mozilla/mozregression
+publisher: mozilla
+name: mozregression
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/mozregression
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/mozregression
+identifiers:
+- winget: Mozilla.mozregression
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/mozregression
+aliases: []

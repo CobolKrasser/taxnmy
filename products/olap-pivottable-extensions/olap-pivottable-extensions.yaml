@@ -1,0 +1,11 @@
+key: olap-pivottable-extensions/olap-pivottable-extensions
+publisher: olap-pivottable-extensions
+name: OLAP PivotTable Extensions
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregGalloway/OLAPPivotTableExtensions
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregGalloway/OLAPPivotTableExtensions
+identifiers:
+- winget: GregGalloway.OLAPPivotTableExtensions
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregGalloway/OLAPPivotTableExtensions
+aliases: []

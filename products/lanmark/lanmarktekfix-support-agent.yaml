@@ -1,0 +1,11 @@
+key: lanmark/lanmarktekfix-support-agent
+publisher: lanmark
+name: LanmarkTekFix Support Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lanmark/TekFixSupportAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lanmark/TekFixSupportAgent
+identifiers:
+- winget: Lanmark.TekFixSupportAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lanmark/TekFixSupportAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: evan-r/image-encode
+publisher: evan-r
+name: Image Encode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvanR/ImageFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvanR/ImageFiles
+identifiers:
+- winget: EvanR.ImageFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvanR/ImageFiles
+aliases: []

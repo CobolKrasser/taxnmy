@@ -1,0 +1,11 @@
+key: redeye-network-solutions/logivore-for-veeam
+publisher: redeye-network-solutions
+name: Logivore for Veeam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/LogivoreForVeeam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/LogivoreForVeeam
+identifiers:
+- winget: RedEyeNetworks.LogivoreForVeeam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/LogivoreForVeeam
+aliases: []

@@ -1,0 +1,11 @@
+key: national-instruments/ni-serial
+publisher: national-instruments
+name: NI-Serial
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-serial
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-serial
+identifiers:
+- winget: NI.ni-serial
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-serial
+aliases: []

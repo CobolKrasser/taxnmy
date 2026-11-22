@@ -1,0 +1,11 @@
+key: colibrisec/ojo
+publisher: colibrisec
+name: ojo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/colibrisec/ojo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/colibrisec/ojo
+identifiers:
+- winget: colibrisec.ojo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/colibrisec/ojo
+aliases: []

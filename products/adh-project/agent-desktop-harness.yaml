@@ -1,0 +1,11 @@
+key: adh-project/agent-desktop-harness
+publisher: adh-project
+name: Agent Desktop Harness
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADHProject/ADH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADHProject/ADH
+identifiers:
+- winget: ADHProject.ADH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADHProject/ADH
+aliases: []

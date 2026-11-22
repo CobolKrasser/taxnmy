@@ -1,0 +1,11 @@
+key: apple/pkl
+publisher: apple
+name: Pkl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Pkl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Pkl
+identifiers:
+- winget: Apple.Pkl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Pkl
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/active-directory-management-pack-helper-object
+publisher: microsoft
+name: Active Directory Management Pack Helper Object
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ADMPHO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ADMPHO
+identifiers:
+- winget: Microsoft.ADMPHO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ADMPHO
+aliases: []

@@ -1,0 +1,11 @@
+key: martin-dvorak/mindforger
+publisher: martin-dvorak
+name: MindForger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinDvorak/MindForger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinDvorak/MindForger
+identifiers:
+- winget: MartinDvorak.MindForger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinDvorak/MindForger
+aliases: []

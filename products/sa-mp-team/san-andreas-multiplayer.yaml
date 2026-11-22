@@ -1,0 +1,11 @@
+key: sa-mp-team/san-andreas-multiplayer
+publisher: sa-mp-team
+name: San Andreas Multiplayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SampTeam/samp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SampTeam/samp
+identifiers:
+- winget: SampTeam.samp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SampTeam/samp
+aliases: []

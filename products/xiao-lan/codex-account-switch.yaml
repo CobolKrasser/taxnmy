@@ -1,0 +1,11 @@
+key: xiao-lan/codex-account-switch
+publisher: xiao-lan
+name: Codex Account Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoLan/CodexAccountSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoLan/CodexAccountSwitch
+identifiers:
+- winget: XiaoLan.CodexAccountSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoLan/CodexAccountSwitch
+aliases: []

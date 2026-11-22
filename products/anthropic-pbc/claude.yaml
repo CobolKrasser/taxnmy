@@ -1,0 +1,11 @@
+key: anthropic-pbc/claude
+publisher: anthropic-pbc
+name: Claude
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Claude
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Claude
+identifiers:
+- winget: Anthropic.Claude
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Claude
+aliases: []

@@ -1,0 +1,11 @@
+key: shanghai-wuju-information-technology/yomail
+publisher: shanghai-wuju-information-technology
+name: YoMail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yomail/yomail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yomail/yomail
+identifiers:
+- winget: yomail.yomail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yomail/yomail
+aliases: []

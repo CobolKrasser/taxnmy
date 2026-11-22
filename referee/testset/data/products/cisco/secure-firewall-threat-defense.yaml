@@ -1,0 +1,9 @@
+key: cisco/secure-firewall-threat-defense
+publisher: cisco
+name: Cisco Secure Firewall Threat Defense
+kind: operating-system
+source: https://www.cisco.com/c/en/us/support/security/firepower-ngfw/series.html
+versions:
+  source: https://www.cisco.com/c/en/us/support/security/firepower-ngfw/products-release-notes-list.html
+aliases:
+- cisco/cisco-secure-firewall-threat-defense

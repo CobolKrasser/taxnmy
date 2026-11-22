@@ -1,0 +1,12 @@
+key: raudo/iptv
+publisher: raudo
+name: Raudo IPTV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Raudo/RaudoIPTV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Raudo/RaudoIPTV
+identifiers:
+- winget: Raudo.RaudoIPTV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Raudo/RaudoIPTV
+aliases:
+- raudo/raudo-iptv

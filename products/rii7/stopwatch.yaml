@@ -1,0 +1,11 @@
+key: rii7/stopwatch
+publisher: rii7
+name: Stopwatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/Stopwatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/Stopwatch
+identifiers:
+- winget: RII7.Stopwatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/Stopwatch
+aliases: []

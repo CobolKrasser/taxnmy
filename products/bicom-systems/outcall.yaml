@@ -1,0 +1,11 @@
+key: bicom-systems/outcall
+publisher: bicom-systems
+name: OutCALL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/OutCALL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/OutCALL
+identifiers:
+- winget: BicomSystems.OutCALL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/OutCALL
+aliases: []

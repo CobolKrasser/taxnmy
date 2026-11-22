@@ -1,0 +1,12 @@
+key: transifex/cli
+publisher: transifex
+name: Transifex CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Transifex/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Transifex/CLI
+identifiers:
+- winget: Transifex.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Transifex/CLI
+aliases:
+- transifex/transifex-cli

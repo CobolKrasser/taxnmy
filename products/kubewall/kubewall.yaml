@@ -1,0 +1,11 @@
+key: kubewall/kubewall
+publisher: kubewall
+name: kubewall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubewall/kubewall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubewall/kubewall
+identifiers:
+- winget: kubewall.kubewall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubewall/kubewall
+aliases: []

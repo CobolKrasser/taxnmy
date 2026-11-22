@@ -1,0 +1,11 @@
+key: univrsal/tuna
+publisher: univrsal
+name: tuna
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/univrsal/tuna
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/univrsal/tuna
+identifiers:
+- winget: univrsal.tuna
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/univrsal/tuna
+aliases: []

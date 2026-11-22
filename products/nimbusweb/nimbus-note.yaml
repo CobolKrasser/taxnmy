@@ -1,0 +1,11 @@
+key: nimbusweb/nimbus-note
+publisher: nimbusweb
+name: Nimbus Note
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbusWeb/NimbusNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbusWeb/NimbusNote
+identifiers:
+- winget: NimbusWeb.NimbusNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbusWeb/NimbusNote
+aliases: []

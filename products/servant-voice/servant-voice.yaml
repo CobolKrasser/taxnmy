@@ -1,0 +1,11 @@
+key: servant-voice/servant-voice
+publisher: servant-voice
+name: Servant Voice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ServantVoice/ServantVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ServantVoice/ServantVoice
+identifiers:
+- winget: ServantVoice.ServantVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ServantVoice/ServantVoice
+aliases: []

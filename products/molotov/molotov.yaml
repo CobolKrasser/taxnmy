@@ -1,0 +1,11 @@
+key: molotov/molotov
+publisher: molotov
+name: Molotov
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MolotovTV/Molotov
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MolotovTV/Molotov
+identifiers:
+- winget: MolotovTV.Molotov
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MolotovTV/Molotov
+aliases: []

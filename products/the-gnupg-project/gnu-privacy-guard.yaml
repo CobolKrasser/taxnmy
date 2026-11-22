@@ -1,0 +1,11 @@
+key: the-gnupg-project/gnu-privacy-guard
+publisher: the-gnupg-project
+name: GNU Privacy Guard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/GnuPG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/GnuPG
+identifiers:
+- winget: GnuPG.GnuPG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/GnuPG
+aliases: []

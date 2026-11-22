@@ -1,0 +1,11 @@
+key: mikrotik/winbox
+publisher: mikrotik
+name: WinBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Winbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Winbox
+identifiers:
+- winget: Mikrotik.Winbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/Winbox
+aliases: []

@@ -1,0 +1,11 @@
+key: hoptodesk/hoptodesk
+publisher: hoptodesk
+name: HopToDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HopToDesk/HopToDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HopToDesk/HopToDesk
+identifiers:
+- winget: HopToDesk.HopToDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HopToDesk/HopToDesk
+aliases: []

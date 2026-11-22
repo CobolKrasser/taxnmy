@@ -1,0 +1,11 @@
+key: snowdreamtech/unistack
+publisher: snowdreamtech
+name: unistack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowdreamTech/unistack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowdreamTech/unistack
+identifiers:
+- winget: SnowdreamTech.unistack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowdreamTech/unistack
+aliases: []

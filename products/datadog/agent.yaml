@@ -1,0 +1,12 @@
+key: datadog/agent
+publisher: datadog
+name: Datadog Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/Agent
+identifiers:
+- winget: Datadog.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/Agent
+aliases:
+- datadog/datadog-agent

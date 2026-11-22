@@ -1,0 +1,11 @@
+key: raycarrot/rayman-control-panel
+publisher: raycarrot
+name: Rayman Control Panel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayCarrot/RaymanControlPanel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayCarrot/RaymanControlPanel
+identifiers:
+- winget: RayCarrot.RaymanControlPanel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayCarrot/RaymanControlPanel
+aliases: []

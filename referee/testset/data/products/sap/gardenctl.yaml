@@ -1,0 +1,11 @@
+key: sap/gardenctl
+publisher: sap
+name: gardenctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gardener/gardenctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gardener/gardenctl
+identifiers:
+- winget: Gardener.gardenctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gardener/gardenctl
+aliases: []

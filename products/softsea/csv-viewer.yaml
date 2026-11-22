@@ -1,0 +1,11 @@
+key: softsea/csv-viewer
+publisher: softsea
+name: CSV Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CSVViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CSVViewer
+identifiers:
+- winget: SoftSea.CSVViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CSVViewer
+aliases: []

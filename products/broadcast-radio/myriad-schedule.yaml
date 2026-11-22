@@ -1,0 +1,11 @@
+key: broadcast-radio/myriad-schedule
+publisher: broadcast-radio
+name: Myriad Schedule
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadSchedule
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadSchedule
+identifiers:
+- winget: BroadcastRadio.MyriadSchedule
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadSchedule
+aliases: []

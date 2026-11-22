@@ -1,0 +1,11 @@
+key: appflowy-io/appflowy
+publisher: appflowy-io
+name: AppFlowy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppFlowy/AppFlowy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppFlowy/AppFlowy
+identifiers:
+- winget: AppFlowy.AppFlowy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppFlowy/AppFlowy
+aliases: []

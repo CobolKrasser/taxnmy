@@ -1,0 +1,11 @@
+key: microsoft/tgrep
+publisher: microsoft
+name: tgrep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/tgrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/tgrep
+identifiers:
+- winget: Microsoft.tgrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/tgrep
+aliases: []

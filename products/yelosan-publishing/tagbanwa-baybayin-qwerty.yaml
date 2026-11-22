@@ -1,0 +1,11 @@
+key: yelosan-publishing/tagbanwa-baybayin-qwerty
+publisher: yelosan-publishing
+name: Tagbanwa Baybayin (QWERTY)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yelosan/PH-UKL/TagbQRTY
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yelosan/PH-UKL/TagbQRTY
+identifiers:
+- winget: yelosan.PH-UKL.TagbQRTY
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yelosan/PH-UKL/TagbQRTY
+aliases: []

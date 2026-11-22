@@ -1,0 +1,11 @@
+key: taozuhong/kangaroo-sqlserver
+publisher: taozuhong
+name: Kangaroo SQLServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taozuhong/KangarooSQLServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taozuhong/KangarooSQLServer
+identifiers:
+- winget: Taozuhong.KangarooSQLServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taozuhong/KangarooSQLServer
+aliases: []

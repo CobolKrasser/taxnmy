@@ -1,0 +1,11 @@
+key: nirsoft/managewirelessnetworks
+publisher: nirsoft
+name: ManageWirelessNetworks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ManageWirelessNetworks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ManageWirelessNetworks
+identifiers:
+- winget: NirSoft.ManageWirelessNetworks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ManageWirelessNetworks
+aliases: []

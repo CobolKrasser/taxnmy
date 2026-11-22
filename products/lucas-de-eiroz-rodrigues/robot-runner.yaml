@@ -1,0 +1,11 @@
+key: lucas-de-eiroz-rodrigues/robot-runner
+publisher: lucas-de-eiroz-rodrigues
+name: Robot Runner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lucasdeeiroz/RobotRunner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lucasdeeiroz/RobotRunner
+identifiers:
+- winget: lucasdeeiroz.RobotRunner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lucasdeeiroz/RobotRunner
+aliases: []

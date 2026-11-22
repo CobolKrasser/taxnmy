@@ -1,0 +1,11 @@
+key: element/element
+publisher: element
+name: Element
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Element/Element
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Element/Element
+identifiers:
+- winget: Element.Element
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Element/Element
+aliases: []

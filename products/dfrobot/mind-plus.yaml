@@ -1,0 +1,11 @@
+key: dfrobot/mind-plus
+publisher: dfrobot
+name: Mind+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFRobot/Mind+
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFRobot/Mind+
+identifiers:
+- winget: DFRobot.Mind+
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFRobot/Mind+
+aliases: []

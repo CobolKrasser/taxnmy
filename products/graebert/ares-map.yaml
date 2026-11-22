@@ -1,0 +1,13 @@
+key: graebert/ares-map
+publisher: graebert
+name: ARES Map
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graebert/AresMap/2022
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graebert/AresMap/2022
+identifiers:
+- winget: Graebert.AresMap.2022
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graebert/AresMap/2022
+- winget: Graebert.AresMap.2023
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graebert/AresMap/2023
+aliases: []

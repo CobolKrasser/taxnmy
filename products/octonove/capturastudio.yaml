@@ -1,0 +1,11 @@
+key: octonove/capturastudio
+publisher: octonove
+name: CapturaStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Octonove/CapturaStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Octonove/CapturaStudio
+identifiers:
+- winget: Octonove.CapturaStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Octonove/CapturaStudio
+aliases: []

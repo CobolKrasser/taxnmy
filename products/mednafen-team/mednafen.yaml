@@ -1,0 +1,11 @@
+key: mednafen-team/mednafen
+publisher: mednafen-team
+name: Mednafen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MednafenTeam/Mednafen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MednafenTeam/Mednafen
+identifiers:
+- winget: MednafenTeam.Mednafen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MednafenTeam/Mednafen
+aliases: []

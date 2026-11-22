@@ -1,0 +1,11 @@
+key: nexttrace-community/ntr
+publisher: nexttrace-community
+name: NTR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextTrace/NTR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextTrace/NTR
+identifiers:
+- winget: NextTrace.NTR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextTrace/NTR
+aliases: []

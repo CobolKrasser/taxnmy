@@ -1,0 +1,11 @@
+key: holepunch/keet
+publisher: holepunch
+name: Keet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Holepunch/Keet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Holepunch/Keet
+identifiers:
+- winget: Holepunch.Keet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Holepunch/Keet
+aliases: []

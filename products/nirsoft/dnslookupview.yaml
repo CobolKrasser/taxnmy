@@ -1,0 +1,12 @@
+key: nirsoft/dnslookupview
+publisher: nirsoft
+name: NirSoft DNSLookupView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DNSLookupView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DNSLookupView
+identifiers:
+- winget: NirSoft.DNSLookupView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DNSLookupView
+aliases:
+- nirsoft/nirsoft-dnslookupview

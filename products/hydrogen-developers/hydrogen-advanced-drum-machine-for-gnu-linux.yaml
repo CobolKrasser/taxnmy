@@ -1,0 +1,11 @@
+key: hydrogen-developers/hydrogen-advanced-drum-machine-for-gnu-linux
+publisher: hydrogen-developers
+name: Hydrogen (Advanced drum machine for GNU/Linux)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hydrogen-Music/Hydrogen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hydrogen-Music/Hydrogen
+identifiers:
+- winget: Hydrogen-Music.Hydrogen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hydrogen-Music/Hydrogen
+aliases: []

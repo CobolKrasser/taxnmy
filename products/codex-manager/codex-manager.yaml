@@ -1,0 +1,11 @@
+key: codex-manager/codex-manager
+publisher: codex-manager
+name: Codex Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RioArisk/CodexManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RioArisk/CodexManager
+identifiers:
+- winget: RioArisk.CodexManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RioArisk/CodexManager
+aliases: []

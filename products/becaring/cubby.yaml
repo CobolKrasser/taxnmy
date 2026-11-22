@@ -1,0 +1,11 @@
+key: becaring/cubby
+publisher: becaring
+name: Cubby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/becaring/Cubby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/becaring/Cubby
+identifiers:
+- winget: becaring.Cubby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/becaring/Cubby
+aliases: []

@@ -1,0 +1,11 @@
+key: project-maker-fr/dashboard-pm
+publisher: project-maker-fr
+name: Dashboard PM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/project-maker/fr/DashboardPM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/project-maker/fr/DashboardPM
+identifiers:
+- winget: project-maker.fr.DashboardPM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/project-maker/fr/DashboardPM
+aliases: []

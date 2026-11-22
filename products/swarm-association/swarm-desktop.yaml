@@ -1,0 +1,11 @@
+key: swarm-association/swarm-desktop
+publisher: swarm-association
+name: Swarm Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethersphere/Swarm-Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethersphere/Swarm-Desktop
+identifiers:
+- winget: Ethersphere.Swarm-Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethersphere/Swarm-Desktop
+aliases: []

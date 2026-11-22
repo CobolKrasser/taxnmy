@@ -1,0 +1,11 @@
+key: dennis-park/jdbgen
+publisher: dennis-park
+name: jdbgen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Jdbgen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Jdbgen
+identifiers:
+- winget: Xcomart.Jdbgen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Jdbgen
+aliases: []

@@ -1,0 +1,11 @@
+key: bdrive/rcloneview
+publisher: bdrive
+name: RcloneView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bdrive/RcloneView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bdrive/RcloneView
+identifiers:
+- winget: Bdrive.RcloneView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bdrive/RcloneView
+aliases: []

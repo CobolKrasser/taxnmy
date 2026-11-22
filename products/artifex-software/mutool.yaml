@@ -1,0 +1,11 @@
+key: artifex-software/mutool
+publisher: artifex-software
+name: mutool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtifexSoftware/mutool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtifexSoftware/mutool
+identifiers:
+- winget: ArtifexSoftware.mutool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtifexSoftware/mutool
+aliases: []

@@ -1,0 +1,11 @@
+key: controlup-technologies/controlup-real-time-agent-and-manager
+publisher: controlup-technologies
+name: ControlUp Real-Time Agent (and Manager)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/ControlUpAgentManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/ControlUpAgentManager
+identifiers:
+- winget: ControlUp.ControlUpAgentManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/ControlUpAgentManager
+aliases: []

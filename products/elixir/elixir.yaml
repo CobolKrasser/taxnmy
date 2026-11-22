@@ -6,4 +6,7 @@ source: https://endoflife.date/elixir
 versions:
   source: https://endoflife.date/elixir
 identifiers: []
+identifiers:
+- winget: Elixir.Elixir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elixir/Elixir
 aliases: []

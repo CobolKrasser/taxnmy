@@ -1,0 +1,11 @@
+key: xenia/xeniacanary
+publisher: xenia
+name: XeniaCanary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xenia/XeniaCanary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xenia/XeniaCanary
+identifiers:
+- winget: Xenia.XeniaCanary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xenia/XeniaCanary
+aliases: []

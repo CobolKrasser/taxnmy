@@ -1,0 +1,11 @@
+key: usernameisnotavailiable/whatthefile
+publisher: usernameisnotavailiable
+name: WhatTheFile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CmdUtil/WhatTheFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CmdUtil/WhatTheFile
+identifiers:
+- winget: CmdUtil.WhatTheFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CmdUtil/WhatTheFile
+aliases: []

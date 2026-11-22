@@ -1,0 +1,11 @@
+key: softwareok/dirprintok
+publisher: softwareok
+name: DirPrintOK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/DirPrintOK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/DirPrintOK
+identifiers:
+- winget: SoftwareOK.DirPrintOK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/DirPrintOK
+aliases: []

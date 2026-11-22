@@ -1,0 +1,12 @@
+key: sejda/pdf-desktop
+publisher: sejda
+name: Sejda PDF Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sejda/PDFDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sejda/PDFDesktop
+identifiers:
+- winget: Sejda.PDFDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sejda/PDFDesktop
+aliases:
+- sejda/sejda-pdf-desktop

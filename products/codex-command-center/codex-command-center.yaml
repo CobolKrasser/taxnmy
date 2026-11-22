@@ -1,0 +1,11 @@
+key: codex-command-center/codex-command-center
+publisher: codex-command-center
+name: Codex Command Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sevensir888/CodexCommandCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sevensir888/CodexCommandCenter
+identifiers:
+- winget: sevensir888.CodexCommandCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sevensir888/CodexCommandCenter
+aliases: []

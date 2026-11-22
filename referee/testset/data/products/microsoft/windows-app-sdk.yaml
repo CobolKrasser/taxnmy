@@ -1,0 +1,15 @@
+key: microsoft/windows-app-sdk
+publisher: microsoft
+name: Windows App SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAppRuntime/1/0
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAppRuntime/1/0
+identifiers:
+- winget: Microsoft.WindowsAppRuntime.1.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAppRuntime/1/0
+- winget: Microsoft.WindowsAppRuntime.1.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAppRuntime/1/1
+- winget: Microsoft.WindowsAppRuntime.1.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAppRuntime/1/2
+aliases: []

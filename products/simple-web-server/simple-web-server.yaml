@@ -1,0 +1,11 @@
+key: simple-web-server/simple-web-server
+publisher: simple-web-server
+name: Simple Web Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/terreng/SimpleWebServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/terreng/SimpleWebServer
+identifiers:
+- winget: terreng.SimpleWebServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/terreng/SimpleWebServer
+aliases: []

@@ -1,0 +1,11 @@
+key: itop/iotransfer
+publisher: itop
+name: IOTransfer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/IOTransfer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/IOTransfer
+identifiers:
+- winget: iTop.IOTransfer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/IOTransfer
+aliases: []

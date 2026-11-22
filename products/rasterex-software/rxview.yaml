@@ -1,0 +1,11 @@
+key: rasterex-software/rxview
+publisher: rasterex-software
+name: RxView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RasterexSoftware/RxView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RasterexSoftware/RxView
+identifiers:
+- winget: RasterexSoftware.RxView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RasterexSoftware/RxView
+aliases: []

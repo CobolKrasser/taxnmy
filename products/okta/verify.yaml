@@ -1,0 +1,12 @@
+key: okta/verify
+publisher: okta
+name: Okta Verify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Okta/OktaVerify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Okta/OktaVerify
+identifiers:
+- winget: Okta.OktaVerify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Okta/OktaVerify
+aliases:
+- okta/okta-verify

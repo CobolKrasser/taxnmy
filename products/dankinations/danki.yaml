@@ -1,0 +1,11 @@
+key: dankinations/danki
+publisher: dankinations
+name: Danki
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dankinations/Catboxxer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dankinations/Catboxxer
+identifiers:
+- winget: Dankinations.Catboxxer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dankinations/Catboxxer
+aliases: []

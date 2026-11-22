@@ -1,0 +1,11 @@
+key: boc/seceditctl-boc
+publisher: boc
+name: SecEditCtl.BOC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BOC/SecEditCtl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BOC/SecEditCtl
+identifiers:
+- winget: BOC.SecEditCtl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BOC/SecEditCtl
+aliases: []

@@ -1,0 +1,11 @@
+key: int128/kubelogin
+publisher: int128
+name: kubelogin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/int128/kubelogin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/int128/kubelogin
+identifiers:
+- winget: int128.kubelogin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/int128/kubelogin
+aliases: []

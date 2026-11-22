@@ -1,0 +1,11 @@
+key: hellowind777/hellogrok-cli
+publisher: hellowind777
+name: hellogrok-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hellowind777/hellogrok/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hellowind777/hellogrok/CLI
+identifiers:
+- winget: hellowind777.hellogrok.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hellowind777/hellogrok/CLI
+aliases: []

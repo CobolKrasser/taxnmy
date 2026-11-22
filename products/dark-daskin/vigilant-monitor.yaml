@@ -1,0 +1,11 @@
+key: dark-daskin/vigilant-monitor
+publisher: dark-daskin
+name: Vigilant Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarkDaskin/VigilantMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarkDaskin/VigilantMonitor
+identifiers:
+- winget: DarkDaskin.VigilantMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarkDaskin/VigilantMonitor
+aliases: []

@@ -1,0 +1,11 @@
+key: steve-the-killer/killerscan
+publisher: steve-the-killer
+name: KillerScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteveTheKiller/KillerScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteveTheKiller/KillerScan
+identifiers:
+- winget: SteveTheKiller.KillerScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteveTheKiller/KillerScan
+aliases: []

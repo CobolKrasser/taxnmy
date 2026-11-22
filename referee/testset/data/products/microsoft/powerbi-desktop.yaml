@@ -1,0 +1,12 @@
+key: microsoft/powerbi-desktop
+publisher: microsoft
+name: Microsoft PowerBI Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBI
+identifiers:
+- winget: Microsoft.PowerBI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBI
+aliases:
+- microsoft/microsoft-powerbi-desktop

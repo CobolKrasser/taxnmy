@@ -1,0 +1,11 @@
+key: llnl/visit
+publisher: llnl
+name: VisIt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisIt/VisIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisIt/VisIt
+identifiers:
+- winget: VisIt.VisIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisIt/VisIt
+aliases: []

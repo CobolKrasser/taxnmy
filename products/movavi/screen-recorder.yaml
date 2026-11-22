@@ -1,0 +1,12 @@
+key: movavi/screen-recorder
+publisher: movavi
+name: Movavi Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviScreenRecorder
+identifiers:
+- winget: Movavi.MovaviScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviScreenRecorder
+aliases:
+- movavi/movavi-screen-recorder

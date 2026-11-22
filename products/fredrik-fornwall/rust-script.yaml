@@ -1,0 +1,11 @@
+key: fredrik-fornwall/rust-script
+publisher: fredrik-fornwall
+name: Rust-Script
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredrikFornwall/Rust-Script
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredrikFornwall/Rust-Script
+identifiers:
+- winget: FredrikFornwall.Rust-Script
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredrikFornwall/Rust-Script
+aliases: []

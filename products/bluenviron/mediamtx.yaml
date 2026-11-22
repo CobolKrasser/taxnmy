@@ -1,0 +1,11 @@
+key: bluenviron/mediamtx
+publisher: bluenviron
+name: mediamtx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bluenviron/mediamtx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bluenviron/mediamtx
+identifiers:
+- winget: bluenviron.mediamtx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bluenviron/mediamtx
+aliases: []

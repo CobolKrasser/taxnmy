@@ -1,0 +1,11 @@
+key: robomatter/robotc-for-lego-mindstorms
+publisher: robomatter
+name: ROBOTC for LEGO Mindstorms
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/ROBOTC/LEGOMindstorms
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/ROBOTC/LEGOMindstorms
+identifiers:
+- winget: Robomatter.ROBOTC.LEGOMindstorms
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/ROBOTC/LEGOMindstorms
+aliases: []

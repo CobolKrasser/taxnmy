@@ -1,0 +1,11 @@
+key: expresslrs-configurator-contributors/expresslrs-configurator
+publisher: expresslrs-configurator-contributors
+name: ExpressLRS Configurator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExpressLRS/ExpressLRS-Configurator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExpressLRS/ExpressLRS-Configurator
+identifiers:
+- winget: ExpressLRS.ExpressLRS-Configurator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExpressLRS/ExpressLRS-Configurator
+aliases: []

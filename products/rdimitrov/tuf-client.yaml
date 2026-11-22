@@ -1,0 +1,11 @@
+key: rdimitrov/tuf-client
+publisher: rdimitrov
+name: tuf-client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rdimitrov/tuf-client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rdimitrov/tuf-client
+identifiers:
+- winget: rdimitrov.tuf-client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rdimitrov/tuf-client
+aliases: []

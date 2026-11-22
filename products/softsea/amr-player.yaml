@@ -1,0 +1,11 @@
+key: softsea/amr-player
+publisher: softsea
+name: AMR Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/AMRPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/AMRPlayer
+identifiers:
+- winget: SoftSea.AMRPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/AMRPlayer
+aliases: []

@@ -1,0 +1,11 @@
+key: jimsapps/snaz
+publisher: jimsapps
+name: Snaz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snaz/Snaz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snaz/Snaz
+identifiers:
+- winget: Snaz.Snaz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snaz/Snaz
+aliases: []

@@ -1,0 +1,11 @@
+key: us-epa/epanet
+publisher: us-epa
+name: EPANET
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/USEPA/EPANET
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/USEPA/EPANET
+identifiers:
+- winget: USEPA.EPANET
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/USEPA/EPANET
+aliases: []

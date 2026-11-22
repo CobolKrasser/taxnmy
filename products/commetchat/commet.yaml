@@ -1,0 +1,11 @@
+key: commetchat/commet
+publisher: commetchat
+name: commet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/commetchat/commet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/commetchat/commet
+identifiers:
+- winget: commetchat.commet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/commetchat/commet
+aliases: []

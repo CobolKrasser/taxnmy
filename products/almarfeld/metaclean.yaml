@@ -1,0 +1,11 @@
+key: almarfeld/metaclean
+publisher: almarfeld
+name: MetaClean
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALMARFELD/MetaClean
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALMARFELD/MetaClean
+identifiers:
+- winget: ALMARFELD.MetaClean
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALMARFELD/MetaClean
+aliases: []

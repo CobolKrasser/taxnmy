@@ -1,0 +1,11 @@
+key: luca-gualandi/gitsearcher
+publisher: luca-gualandi
+name: GitSearcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parresia/GitSearcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parresia/GitSearcher
+identifiers:
+- winget: Parresia.GitSearcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parresia/GitSearcher
+aliases: []

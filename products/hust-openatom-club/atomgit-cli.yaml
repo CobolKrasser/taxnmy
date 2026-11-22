@@ -1,0 +1,11 @@
+key: hust-openatom-club/atomgit-cli
+publisher: hust-openatom-club
+name: AtomGit CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HUSTOpenAtomClub/AtomGitCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HUSTOpenAtomClub/AtomGitCLI
+identifiers:
+- winget: HUSTOpenAtomClub.AtomGitCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HUSTOpenAtomClub/AtomGitCLI
+aliases: []

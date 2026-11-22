@@ -1,0 +1,11 @@
+key: beaglesoftware/beagleeditor
+publisher: beaglesoftware
+name: BeagleEditor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeagleSoftware/BeagleEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeagleSoftware/BeagleEditor
+identifiers:
+- winget: BeagleSoftware.BeagleEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeagleSoftware/BeagleEditor
+aliases: []

@@ -1,0 +1,11 @@
+key: itk-snap/itk-snap
+publisher: itk-snap
+name: ITK-SNAP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITK-SNAP/ITK-SNAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITK-SNAP/ITK-SNAP
+identifiers:
+- winget: ITK-SNAP.ITK-SNAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ITK-SNAP/ITK-SNAP
+aliases: []

@@ -1,0 +1,11 @@
+key: todoreminder-team/todoreminder
+publisher: todoreminder-team
+name: ToDoReminder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IsHexx/ToDoReminder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IsHexx/ToDoReminder
+identifiers:
+- winget: IsHexx.ToDoReminder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IsHexx/ToDoReminder
+aliases: []

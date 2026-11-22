@@ -1,0 +1,11 @@
+key: logmein/hamachi
+publisher: logmein
+name: Hamachi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogMeIn/Hamachi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogMeIn/Hamachi
+identifiers:
+- winget: LogMeIn.Hamachi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogMeIn/Hamachi
+aliases: []

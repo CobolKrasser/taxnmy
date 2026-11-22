@@ -1,0 +1,11 @@
+key: the-frels-holdings/smartbrain
+publisher: the-frels-holdings
+name: SmartBrain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureCloudGroup/SmartBrain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureCloudGroup/SmartBrain
+identifiers:
+- winget: SecureCloudGroup.SmartBrain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureCloudGroup/SmartBrain
+aliases: []

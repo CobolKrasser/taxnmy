@@ -1,0 +1,11 @@
+key: danish-myo-technology/myopull
+publisher: danish-myo-technology
+name: MyoPULL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoPULL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoPULL
+identifiers:
+- winget: DMT.MyoPULL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoPULL
+aliases: []

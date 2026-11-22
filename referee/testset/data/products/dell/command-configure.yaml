@@ -1,0 +1,12 @@
+key: dell/command-configure
+publisher: dell
+name: Dell Command | Configure
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandConfigure
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandConfigure
+identifiers:
+- winget: Dell.CommandConfigure
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandConfigure
+aliases:
+- dell/dell-command-configure

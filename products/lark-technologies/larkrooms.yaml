@@ -1,0 +1,11 @@
+key: lark-technologies/larkrooms
+publisher: lark-technologies
+name: LarkRooms
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/LarkRooms
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/LarkRooms
+identifiers:
+- winget: ByteDance.LarkRooms
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/LarkRooms
+aliases: []

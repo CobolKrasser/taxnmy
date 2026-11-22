@@ -1,0 +1,11 @@
+key: pgadmin/pgadmin
+publisher: pgadmin
+name: pgAdmin
+kind: software
+source: https://www.pgadmin.org/community/
+versions:
+  source: https://www.pgadmin.org/community/
+identifiers:
+- cpe: cpe:2.3:a:pgadmin:pgadmin_4
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/pgadmin.md
+aliases: []

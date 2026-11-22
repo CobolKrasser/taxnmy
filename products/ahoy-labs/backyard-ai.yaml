@@ -1,0 +1,11 @@
+key: ahoy-labs/backyard-ai
+publisher: ahoy-labs
+name: Backyard AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhoyLabs/BackyardAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhoyLabs/BackyardAI
+identifiers:
+- winget: AhoyLabs.BackyardAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhoyLabs/BackyardAI
+aliases: []

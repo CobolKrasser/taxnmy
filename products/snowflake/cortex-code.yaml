@@ -1,0 +1,11 @@
+key: snowflake/cortex-code
+publisher: snowflake
+name: Cortex Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/CortexCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/CortexCode
+identifiers:
+- winget: Snowflake.CortexCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/CortexCode
+aliases: []

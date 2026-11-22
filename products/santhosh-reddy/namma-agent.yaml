@@ -1,0 +1,11 @@
+key: santhosh-reddy/namma-agent
+publisher: santhosh-reddy
+name: Namma Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanthoshReddy352/NammaAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanthoshReddy352/NammaAgent
+identifiers:
+- winget: SanthoshReddy352.NammaAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanthoshReddy352/NammaAgent
+aliases: []

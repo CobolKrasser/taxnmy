@@ -1,0 +1,11 @@
+key: the-paciello-group/colour-contrast-analyser
+publisher: the-paciello-group
+name: Colour Contrast Analyser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TPGi/CCA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TPGi/CCA
+identifiers:
+- winget: TPGi.CCA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TPGi/CCA
+aliases: []

@@ -1,0 +1,11 @@
+key: anysphere/cursor
+publisher: anysphere
+name: Cursor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anysphere/Cursor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anysphere/Cursor
+identifiers:
+- winget: Anysphere.Cursor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anysphere/Cursor
+aliases: []

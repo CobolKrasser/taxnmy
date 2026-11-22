@@ -1,0 +1,37 @@
+key: eclipse-adoptium/eclipse-temurin-jdk-with-hotspot
+publisher: eclipse-adoptium
+name: Eclipse Temurin JDK with Hotspot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/8/JDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/8/JDK
+identifiers:
+- winget: EclipseAdoptium.Temurin.11.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/11/JDK
+- winget: EclipseAdoptium.Temurin.16.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/16/JDK
+- winget: EclipseAdoptium.Temurin.17.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/17/JDK
+- winget: EclipseAdoptium.Temurin.18.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/18/JDK
+- winget: EclipseAdoptium.Temurin.19.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/19/JDK
+- winget: EclipseAdoptium.Temurin.20.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/20/JDK
+- winget: EclipseAdoptium.Temurin.21.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/21/JDK
+- winget: EclipseAdoptium.Temurin.22.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/22/JDK
+- winget: EclipseAdoptium.Temurin.23.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/23/JDK
+- winget: EclipseAdoptium.Temurin.24.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/24/JDK
+- winget: EclipseAdoptium.Temurin.25.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/25/JDK
+- winget: EclipseAdoptium.Temurin.26.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/26/JDK
+- winget: EclipseAdoptium.Temurin.27.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/27/JDK
+- winget: EclipseAdoptium.Temurin.8.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseAdoptium/Temurin/8/JDK
+aliases: []

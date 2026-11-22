@@ -1,0 +1,11 @@
+key: extraterm-org/extraterm-terminal-emulator
+publisher: extraterm-org
+name: Extraterm - Terminal emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sedwards2009/extraterm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sedwards2009/extraterm
+identifiers:
+- winget: sedwards2009.extraterm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sedwards2009/extraterm
+aliases: []

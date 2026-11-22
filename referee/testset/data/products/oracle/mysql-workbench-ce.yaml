@@ -1,0 +1,11 @@
+key: oracle/mysql-workbench-ce
+publisher: oracle
+name: MySQL Workbench CE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQLWorkbench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQLWorkbench
+identifiers:
+- winget: Oracle.MySQLWorkbench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQLWorkbench
+aliases: []

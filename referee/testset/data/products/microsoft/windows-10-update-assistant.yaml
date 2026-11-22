@@ -1,0 +1,11 @@
+key: microsoft/windows-10-update-assistant
+publisher: microsoft
+name: Windows 10 Update Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateAssistant
+identifiers:
+- winget: Microsoft.UpdateAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateAssistant
+aliases: []

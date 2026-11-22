@@ -1,0 +1,11 @@
+key: shemeshg/midi-router-client
+publisher: shemeshg
+name: Midi Router Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shemeshg/MidiRouterClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shemeshg/MidiRouterClient
+identifiers:
+- winget: Shemeshg.MidiRouterClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shemeshg/MidiRouterClient
+aliases: []

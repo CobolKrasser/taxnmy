@@ -1,0 +1,11 @@
+key: helm/helm
+publisher: helm
+name: Helm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helm/Helm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helm/Helm
+identifiers:
+- winget: Helm.Helm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helm/Helm
+aliases: []

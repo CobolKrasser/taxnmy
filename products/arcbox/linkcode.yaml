@@ -1,0 +1,11 @@
+key: arcbox/linkcode
+publisher: arcbox
+name: LinkCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcBox/LinkCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcBox/LinkCode
+identifiers:
+- winget: ArcBox.LinkCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcBox/LinkCode
+aliases: []

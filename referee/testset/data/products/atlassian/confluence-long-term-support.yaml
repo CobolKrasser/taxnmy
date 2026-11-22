@@ -1,0 +1,11 @@
+key: atlassian/confluence-long-term-support
+publisher: atlassian
+name: Confluence Long Term Support
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Confluence
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Confluence
+identifiers:
+- winget: Atlassian.Confluence
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Confluence
+aliases: []

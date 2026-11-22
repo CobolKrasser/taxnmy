@@ -1,0 +1,11 @@
+key: visigrid/visigrid
+publisher: visigrid
+name: VisiGrid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisiGrid/VisiGrid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisiGrid/VisiGrid
+identifiers:
+- winget: VisiGrid.VisiGrid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisiGrid/VisiGrid
+aliases: []

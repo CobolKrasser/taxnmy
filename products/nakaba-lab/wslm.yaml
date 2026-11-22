@@ -1,0 +1,11 @@
+key: nakaba-lab/wslm
+publisher: nakaba-lab
+name: wslm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NakabaLab/wslm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NakabaLab/wslm
+identifiers:
+- winget: NakabaLab.wslm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NakabaLab/wslm
+aliases: []

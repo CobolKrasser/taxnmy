@@ -1,0 +1,12 @@
+key: vovsoft/folder-splitter
+publisher: vovsoft
+name: Vovsoft Folder Splitter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FolderSplitter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FolderSplitter
+identifiers:
+- winget: VovSoft.FolderSplitter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FolderSplitter
+aliases:
+- vovsoft/vovsoft-folder-splitter

@@ -1,0 +1,11 @@
+key: today-ai/today
+publisher: today-ai
+name: Today
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TodayAI/Today
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TodayAI/Today
+identifiers:
+- winget: TodayAI.Today
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TodayAI/Today
+aliases: []

@@ -1,0 +1,12 @@
+key: febooti/command-line-email
+publisher: febooti
+name: Febooti Command Line Email
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/CommandLineEmail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/CommandLineEmail
+identifiers:
+- winget: Febooti.CommandLineEmail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/CommandLineEmail
+aliases:
+- febooti/febooti-command-line-email

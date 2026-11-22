@@ -1,0 +1,17 @@
+key: the-php-group/php-non-thread-safe
+publisher: the-php-group
+name: PHP - Non-thread safe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/NTS/8/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/NTS/8/2
+identifiers:
+- winget: PHP.PHP.NTS.8.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/NTS/8/2
+- winget: PHP.PHP.NTS.8.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/NTS/8/3
+- winget: PHP.PHP.NTS.8.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/NTS/8/4
+- winget: PHP.PHP.NTS.8.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/NTS/8/5
+aliases: []

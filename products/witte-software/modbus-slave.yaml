@@ -1,0 +1,11 @@
+key: witte-software/modbus-slave
+publisher: witte-software
+name: Modbus Slave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusSlave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusSlave
+identifiers:
+- winget: WitteSoftware.ModbusSlave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusSlave
+aliases: []

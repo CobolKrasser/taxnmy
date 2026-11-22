@@ -1,0 +1,11 @@
+key: keda/keda
+publisher: keda
+name: KEDA
+kind: software
+source: https://endoflife.date/keda
+versions:
+  source: https://endoflife.date/keda
+identifiers:
+- purl: pkg:github/kedacore/keda
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/keda.md
+aliases: []

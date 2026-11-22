@@ -1,0 +1,11 @@
+key: paddy-xu/quicklook
+publisher: paddy-xu
+name: QuickLook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QL-Win/QuickLook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QL-Win/QuickLook
+identifiers:
+- winget: QL-Win.QuickLook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QL-Win/QuickLook
+aliases: []

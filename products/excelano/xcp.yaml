@@ -1,0 +1,11 @@
+key: excelano/xcp
+publisher: excelano
+name: xcp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xcp
+identifiers:
+- winget: Excelano.xcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xcp
+aliases: []

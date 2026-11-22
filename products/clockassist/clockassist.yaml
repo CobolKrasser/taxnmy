@@ -1,0 +1,11 @@
+key: clockassist/clockassist
+publisher: clockassist
+name: ClockAssist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClockAssist/ClockAssist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClockAssist/ClockAssist
+identifiers:
+- winget: ClockAssist.ClockAssist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClockAssist/ClockAssist
+aliases: []

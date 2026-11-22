@@ -1,0 +1,11 @@
+key: gao-youbo/hexoclient
+publisher: gao-youbo
+name: HexoClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaoYoubo/HexoClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaoYoubo/HexoClient
+identifiers:
+- winget: GaoYoubo.HexoClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaoYoubo/HexoClient
+aliases: []

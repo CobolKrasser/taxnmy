@@ -1,0 +1,12 @@
+key: world-of-workflows/pe
+publisher: world-of-workflows
+name: World of Workflows PE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorldofWorkflows/WorldofWorkflowsPE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorldofWorkflows/WorldofWorkflowsPE
+identifiers:
+- winget: WorldofWorkflows.WorldofWorkflowsPE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorldofWorkflows/WorldofWorkflowsPE
+aliases:
+- world-of-workflows/world-of-workflows-pe

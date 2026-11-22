@@ -1,0 +1,11 @@
+key: rfidresearchgroup/chameleonultra-cli
+publisher: rfidresearchgroup
+name: ChameleonUltra Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RfidResearchGroup/ChameleonUltraCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RfidResearchGroup/ChameleonUltraCli
+identifiers:
+- winget: RfidResearchGroup.ChameleonUltraCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RfidResearchGroup/ChameleonUltraCli
+aliases: []

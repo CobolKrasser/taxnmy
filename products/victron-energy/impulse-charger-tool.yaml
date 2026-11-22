@@ -1,0 +1,11 @@
+key: victron-energy/impulse-charger-tool
+publisher: victron-energy
+name: Impulse Charger Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/ImpulseChargerTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/ImpulseChargerTool
+identifiers:
+- winget: VictronEnergy.ImpulseChargerTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/ImpulseChargerTool
+aliases: []

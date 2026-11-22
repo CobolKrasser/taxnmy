@@ -1,0 +1,10 @@
+key: microsoft/entra-connect-sync
+publisher: microsoft
+name: Microsoft Entra Connect Sync
+kind: software
+source: https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis
+versions:
+  source: https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history
+identifiers: []
+aliases:
+- microsoft/microsoft-entra-connect-sync

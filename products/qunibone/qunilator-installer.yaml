@@ -1,0 +1,11 @@
+key: qunibone/qunilator-installer
+publisher: qunibone
+name: QUniLator Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QUniBone/QUniLatorInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QUniBone/QUniLatorInstaller
+identifiers:
+- winget: QUniBone.QUniLatorInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QUniBone/QUniLatorInstaller
+aliases: []

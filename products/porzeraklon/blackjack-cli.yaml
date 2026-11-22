@@ -1,0 +1,11 @@
+key: porzeraklon/blackjack-cli
+publisher: porzeraklon
+name: BlackJack CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Porzeraklon/BlackJackCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Porzeraklon/BlackJackCLI
+identifiers:
+- winget: Porzeraklon.BlackJackCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Porzeraklon/BlackJackCLI
+aliases: []

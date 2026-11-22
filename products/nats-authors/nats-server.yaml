@@ -1,0 +1,11 @@
+key: nats-authors/nats-server
+publisher: nats-authors
+name: NATS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/NATSServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/NATSServer
+identifiers:
+- winget: NATSAuthors.NATSServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/NATSServer
+aliases: []

@@ -1,0 +1,11 @@
+key: the-sz-development/yale
+publisher: the-sz-development
+name: Yale
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Yale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Yale
+identifiers:
+- winget: the-sz.Yale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Yale
+aliases: []

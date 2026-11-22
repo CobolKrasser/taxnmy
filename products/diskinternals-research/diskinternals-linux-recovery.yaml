@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-linux-recovery
+publisher: diskinternals-research
+name: DiskInternals Linux Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/LinuxRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/LinuxRecovery
+identifiers:
+- winget: DiskInternals.LinuxRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/LinuxRecovery
+aliases: []

@@ -1,0 +1,11 @@
+key: lightburn-software/lightburn
+publisher: lightburn-software
+name: LightBurn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LightBurnSoftware/LightBurn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LightBurnSoftware/LightBurn
+identifiers:
+- winget: LightBurnSoftware.LightBurn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LightBurnSoftware/LightBurn
+aliases: []

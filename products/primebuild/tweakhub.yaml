@@ -1,0 +1,11 @@
+key: primebuild/tweakhub
+publisher: primebuild
+name: TweakHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/TweakHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/TweakHub
+identifiers:
+- winget: PrimeBuild.TweakHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/TweakHub
+aliases: []

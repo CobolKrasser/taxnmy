@@ -1,0 +1,11 @@
+key: ahmet-alp-balkan/kubens
+publisher: ahmet-alp-balkan
+name: kubens
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahmetb/kubens
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahmetb/kubens
+identifiers:
+- winget: ahmetb.kubens
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahmetb/kubens
+aliases: []

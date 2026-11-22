@@ -1,0 +1,11 @@
+key: thorlabs/s5fc
+publisher: thorlabs
+name: S5FC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/S5FC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/S5FC
+identifiers:
+- winget: Thorlabs.S5FC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/S5FC
+aliases: []

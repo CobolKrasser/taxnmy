@@ -1,0 +1,11 @@
+key: sia-desktime/desktime
+publisher: sia-desktime
+name: DeskTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskTime/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskTime/Desktop
+identifiers:
+- winget: DeskTime.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskTime/Desktop
+aliases: []

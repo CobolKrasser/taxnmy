@@ -1,0 +1,11 @@
+key: open-observatory-of-network-interference/ooni-probe
+publisher: open-observatory-of-network-interference
+name: OONI Probe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OONI/OONI-Probe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OONI/OONI-Probe
+identifiers:
+- winget: OONI.OONI-Probe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OONI/OONI-Probe
+aliases: []

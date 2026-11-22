@@ -1,0 +1,11 @@
+key: davide-maggi/koncierge-ui
+publisher: davide-maggi
+name: Koncierge UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavideMaggi/KonciergeUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavideMaggi/KonciergeUI
+identifiers:
+- winget: DavideMaggi.KonciergeUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavideMaggi/KonciergeUI
+aliases: []

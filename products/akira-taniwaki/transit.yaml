@@ -1,0 +1,11 @@
+key: akira-taniwaki/transit
+publisher: akira-taniwaki
+name: Transit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/transit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/transit
+identifiers:
+- winget: atani.transit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/transit
+aliases: []

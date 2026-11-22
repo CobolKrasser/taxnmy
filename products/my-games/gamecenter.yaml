@@ -1,0 +1,12 @@
+key: my-games/gamecenter
+publisher: my-games
+name: MY.GAMES GameCenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyGames/GameCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyGames/GameCenter
+identifiers:
+- winget: MyGames.GameCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyGames/GameCenter
+aliases:
+- my-games/my-games-gamecenter

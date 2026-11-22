@@ -1,0 +1,11 @@
+key: microsoft/onenote-client-diagnostics-tool
+publisher: microsoft
+name: OneNote Client Diagnostics Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneNoteDiagnostics
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneNoteDiagnostics
+identifiers:
+- winget: Microsoft.OneNoteDiagnostics
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneNoteDiagnostics
+aliases: []

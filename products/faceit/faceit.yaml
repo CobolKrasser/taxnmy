@@ -1,0 +1,11 @@
+key: faceit/faceit
+publisher: faceit
+name: FACEIT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FACEITLTD/FACEITClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FACEITLTD/FACEITClient
+identifiers:
+- winget: FACEITLTD.FACEITClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FACEITLTD/FACEITClient
+aliases: []

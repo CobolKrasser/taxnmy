@@ -1,0 +1,11 @@
+key: quirkos/quirkos
+publisher: quirkos
+name: Quirkos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quirkos/Quirkos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quirkos/Quirkos
+identifiers:
+- winget: Quirkos.Quirkos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quirkos/Quirkos
+aliases: []

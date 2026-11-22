@@ -1,0 +1,11 @@
+key: adinstruments/oxford-optronix-device
+publisher: adinstruments
+name: Oxford Optronix Device
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/OxfordOptronix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/OxfordOptronix
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.OxfordOptronix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/OxfordOptronix
+aliases: []

@@ -1,0 +1,11 @@
+key: teamviewer/teamviewer
+publisher: teamviewer
+name: TeamViewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer
+identifiers:
+- winget: TeamViewer.TeamViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer
+aliases: []

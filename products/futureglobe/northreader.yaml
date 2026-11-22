@@ -1,0 +1,11 @@
+key: futureglobe/northreader
+publisher: futureglobe
+name: NorthReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futureglobe/NorthReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futureglobe/NorthReader
+identifiers:
+- winget: Futureglobe.NorthReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futureglobe/NorthReader
+aliases: []

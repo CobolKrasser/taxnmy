@@ -1,0 +1,11 @@
+key: international-geogebra-institute/geogebra-geometry
+publisher: international-geogebra-institute
+name: GeoGebra Geometry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Geometry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Geometry
+identifiers:
+- winget: GeoGebra.Geometry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Geometry
+aliases: []

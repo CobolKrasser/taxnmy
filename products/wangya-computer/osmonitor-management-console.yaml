@@ -1,0 +1,11 @@
+key: wangya-computer/osmonitor-management-console
+publisher: wangya-computer
+name: OsMonitor Management Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NanJingWangYa/OsMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NanJingWangYa/OsMonitor
+identifiers:
+- winget: NanJingWangYa.OsMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NanJingWangYa/OsMonitor
+aliases: []

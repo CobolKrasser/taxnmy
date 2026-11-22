@@ -1,0 +1,11 @@
+key: pwlot/chunkymonkey
+publisher: pwlot
+name: ChunkyMonkey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pwlot/ChunkyMonkey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pwlot/ChunkyMonkey
+identifiers:
+- winget: Pwlot.ChunkyMonkey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pwlot/ChunkyMonkey
+aliases: []

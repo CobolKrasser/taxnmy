@@ -1,0 +1,11 @@
+key: kandev/kandev
+publisher: kandev
+name: Kandev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kdlbs/KanDev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kdlbs/KanDev
+identifiers:
+- winget: kdlbs.KanDev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kdlbs/KanDev
+aliases: []

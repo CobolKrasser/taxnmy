@@ -1,0 +1,11 @@
+key: lablicate/openchrom
+publisher: lablicate
+name: OpenChrom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lablicate/OpenChrom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lablicate/OpenChrom
+identifiers:
+- winget: Lablicate.OpenChrom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lablicate/OpenChrom
+aliases: []

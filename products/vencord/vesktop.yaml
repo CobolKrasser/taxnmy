@@ -1,0 +1,11 @@
+key: vencord/vesktop
+publisher: vencord
+name: Vesktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vencord/Vesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vencord/Vesktop
+identifiers:
+- winget: Vencord.Vesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vencord/Vesktop
+aliases: []

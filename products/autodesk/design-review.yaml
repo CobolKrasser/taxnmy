@@ -1,0 +1,12 @@
+key: autodesk/design-review
+publisher: autodesk
+name: Autodesk Design Review
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesignReview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesignReview
+identifiers:
+- winget: Autodesk.DesignReview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/DesignReview
+aliases:
+- autodesk/autodesk-design-review

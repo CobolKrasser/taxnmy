@@ -1,0 +1,11 @@
+key: demkada/argy-code
+publisher: demkada
+name: Argy Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/demkada/ArgyCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/demkada/ArgyCode
+identifiers:
+- winget: demkada.ArgyCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/demkada/ArgyCode
+aliases: []

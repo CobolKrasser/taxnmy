@@ -1,0 +1,11 @@
+key: irccloud/irccloud
+publisher: irccloud
+name: IRCCloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IRCCloud/IRCCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IRCCloud/IRCCloud
+identifiers:
+- winget: IRCCloud.IRCCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IRCCloud/IRCCloud
+aliases: []

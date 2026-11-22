@@ -1,0 +1,11 @@
+key: cue/cue
+publisher: cue
+name: Cue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CueLang/Cue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CueLang/Cue
+identifiers:
+- winget: CueLang.Cue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CueLang/Cue
+aliases: []

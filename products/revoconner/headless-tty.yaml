@@ -1,0 +1,11 @@
+key: revoconner/headless-tty
+publisher: revoconner
+name: Headless-TTY
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revoconner/HeadlessTTY
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revoconner/HeadlessTTY
+identifiers:
+- winget: Revoconner.HeadlessTTY
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revoconner/HeadlessTTY
+aliases: []

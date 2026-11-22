@@ -1,0 +1,11 @@
+key: coldhighsun/manageddrive
+publisher: coldhighsun
+name: ManagedDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coldhighsun/ManagedDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coldhighsun/ManagedDrive
+identifiers:
+- winget: coldhighsun.ManagedDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coldhighsun/ManagedDrive
+aliases: []

@@ -1,0 +1,11 @@
+key: sebastian-erhart/lego
+publisher: sebastian-erhart
+name: lego
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoACME/lego
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoACME/lego
+identifiers:
+- winget: GoACME.lego
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoACME/lego
+aliases: []

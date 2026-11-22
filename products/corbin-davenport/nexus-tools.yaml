@@ -1,0 +1,11 @@
+key: corbin-davenport/nexus-tools
+publisher: corbin-davenport
+name: Nexus Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorbinDavenport/NexusTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorbinDavenport/NexusTools
+identifiers:
+- winget: CorbinDavenport.NexusTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorbinDavenport/NexusTools
+aliases: []

@@ -1,0 +1,11 @@
+key: dbeaver/dbeaverlite
+publisher: dbeaver
+name: DBeaverLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Lite
+identifiers:
+- winget: DBeaver.DBeaver.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Lite
+aliases: []

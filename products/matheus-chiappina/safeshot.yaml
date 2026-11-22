@@ -1,0 +1,11 @@
+key: matheus-chiappina/safeshot
+publisher: matheus-chiappina
+name: SafeShot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chiappina/SafeShot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chiappina/SafeShot
+identifiers:
+- winget: Chiappina.SafeShot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chiappina/SafeShot
+aliases: []

@@ -1,0 +1,11 @@
+key: corporation-for-digital-scholarship/zotero
+publisher: corporation-for-digital-scholarship
+name: Zotero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScholar/Zotero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScholar/Zotero
+identifiers:
+- winget: DigitalScholar.Zotero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScholar/Zotero
+aliases: []

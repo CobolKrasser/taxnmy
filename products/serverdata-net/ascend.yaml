@@ -1,0 +1,11 @@
+key: serverdata-net/ascend
+publisher: serverdata-net
+name: Ascend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/Ascend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/Ascend
+identifiers:
+- winget: Serverdata.Ascend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/Ascend
+aliases: []

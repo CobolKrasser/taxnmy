@@ -1,0 +1,12 @@
+key: urbackup/server
+publisher: urbackup
+name: UrBackup Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UrBackup/UrBackup/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UrBackup/UrBackup/Server
+identifiers:
+- winget: UrBackup.UrBackup.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UrBackup/UrBackup/Server
+aliases:
+- urbackup/urbackup-server

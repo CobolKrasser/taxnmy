@@ -1,0 +1,11 @@
+key: crunchyroll-games/masterofgarden
+publisher: crunchyroll-games
+name: MasterofGarden
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crunchyroll/MasterofGarden
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crunchyroll/MasterofGarden
+identifiers:
+- winget: Crunchyroll.MasterofGarden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crunchyroll/MasterofGarden
+aliases: []

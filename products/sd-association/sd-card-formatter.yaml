@@ -1,0 +1,11 @@
+key: sd-association/sd-card-formatter
+publisher: sd-association
+name: SD Card Formatter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDAssociation/SDMemoryCardFormatter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDAssociation/SDMemoryCardFormatter
+identifiers:
+- winget: SDAssociation.SDMemoryCardFormatter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDAssociation/SDMemoryCardFormatter
+aliases: []

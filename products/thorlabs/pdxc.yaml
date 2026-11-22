@@ -1,0 +1,11 @@
+key: thorlabs/pdxc
+publisher: thorlabs
+name: PDXC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/PDXC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/PDXC
+identifiers:
+- winget: Thorlabs.PDXC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/PDXC
+aliases: []

@@ -1,0 +1,11 @@
+key: openless/openless
+publisher: openless
+name: OpenLess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLess/OpenLess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLess/OpenLess
+identifiers:
+- winget: OpenLess.OpenLess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLess/OpenLess
+aliases: []

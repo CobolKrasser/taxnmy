@@ -1,0 +1,11 @@
+key: projectkudu/armclient
+publisher: projectkudu
+name: ARMClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/projectkudu/ARMClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/projectkudu/ARMClient
+identifiers:
+- winget: projectkudu.ARMClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/projectkudu/ARMClient
+aliases: []

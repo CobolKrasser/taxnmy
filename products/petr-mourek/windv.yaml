@@ -1,0 +1,11 @@
+key: petr-mourek/windv
+publisher: petr-mourek
+name: WinDV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PetrMourek/WinDV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PetrMourek/WinDV
+identifiers:
+- winget: PetrMourek.WinDV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PetrMourek/WinDV
+aliases: []

@@ -1,0 +1,11 @@
+key: envarly/envarly
+publisher: envarly
+name: Envarly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Envarly/Envarly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Envarly/Envarly
+identifiers:
+- winget: Envarly.Envarly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Envarly/Envarly
+aliases: []

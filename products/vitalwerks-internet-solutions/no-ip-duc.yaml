@@ -1,0 +1,11 @@
+key: vitalwerks-internet-solutions/no-ip-duc
+publisher: vitalwerks-internet-solutions
+name: No-IP DUC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoIP/DUC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoIP/DUC
+identifiers:
+- winget: NoIP.DUC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoIP/DUC
+aliases: []

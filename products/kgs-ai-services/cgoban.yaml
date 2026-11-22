@@ -1,0 +1,11 @@
+key: kgs-ai-services/cgoban
+publisher: kgs-ai-services
+name: CGoban
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KGSAI/CGoban
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KGSAI/CGoban
+identifiers:
+- winget: KGSAI.CGoban
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KGSAI/CGoban
+aliases: []

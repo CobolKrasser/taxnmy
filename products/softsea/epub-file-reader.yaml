@@ -1,0 +1,11 @@
+key: softsea/epub-file-reader
+publisher: softsea
+name: EPUB File Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/EPUBFileReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/EPUBFileReader
+identifiers:
+- winget: SoftSea.EPUBFileReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/EPUBFileReader
+aliases: []

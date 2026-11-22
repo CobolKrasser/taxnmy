@@ -1,0 +1,11 @@
+key: loftlabs/devpod-cli
+publisher: loftlabs
+name: DevPod CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoftLabs/DevPod/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoftLabs/DevPod/CLI
+identifiers:
+- winget: LoftLabs.DevPod.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoftLabs/DevPod/CLI
+aliases: []

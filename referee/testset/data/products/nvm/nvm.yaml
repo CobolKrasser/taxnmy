@@ -1,0 +1,11 @@
+key: nvm/nvm
+publisher: nvm
+name: nvm
+kind: software
+source: https://endoflife.date/nvm
+versions:
+  source: https://endoflife.date/nvm
+identifiers:
+- purl: pkg:github/nvm-sh/nvm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nvm.md
+aliases: []

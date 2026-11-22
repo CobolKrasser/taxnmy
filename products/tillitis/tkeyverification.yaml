@@ -1,0 +1,11 @@
+key: tillitis/tkeyverification
+publisher: tillitis
+name: TKeyVerification
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tillitis/TKeyVerification
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tillitis/TKeyVerification
+identifiers:
+- winget: Tillitis.TKeyVerification
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tillitis/TKeyVerification
+aliases: []

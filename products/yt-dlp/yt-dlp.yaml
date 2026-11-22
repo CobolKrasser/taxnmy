@@ -1,0 +1,11 @@
+key: yt-dlp/yt-dlp
+publisher: yt-dlp
+name: yt-dlp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/yt-dlp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/yt-dlp
+identifiers:
+- winget: yt-dlp.yt-dlp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/yt-dlp
+aliases: []

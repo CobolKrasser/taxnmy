@@ -1,0 +1,11 @@
+key: emachineshop/emachineshop
+publisher: emachineshop
+name: eMachineShop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMachineShop/eMachineShop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMachineShop/eMachineShop
+identifiers:
+- winget: eMachineShop.eMachineShop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMachineShop/eMachineShop
+aliases: []

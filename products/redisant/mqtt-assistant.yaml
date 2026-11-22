@@ -1,0 +1,11 @@
+key: redisant/mqtt-assistant
+publisher: redisant
+name: MQTT Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/MQTTAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/MQTTAssistant
+identifiers:
+- winget: Redisant.MQTTAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/MQTTAssistant
+aliases: []

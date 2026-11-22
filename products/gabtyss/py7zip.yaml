@@ -1,0 +1,11 @@
+key: gabtyss/py7zip
+publisher: gabtyss
+name: Py7Zip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gabtyss/Py7z
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gabtyss/Py7z
+identifiers:
+- winget: Gabtyss.Py7z
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gabtyss/Py7z
+aliases: []

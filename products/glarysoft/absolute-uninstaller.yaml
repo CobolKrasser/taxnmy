@@ -1,0 +1,11 @@
+key: glarysoft/absolute-uninstaller
+publisher: glarysoft
+name: Absolute Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/AbsoluteUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/AbsoluteUninstaller
+identifiers:
+- winget: Glarysoft.AbsoluteUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glarysoft/AbsoluteUninstaller
+aliases: []

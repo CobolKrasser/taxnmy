@@ -1,0 +1,11 @@
+key: binarymark/batch-hex-editor-free-edition
+publisher: binarymark
+name: Batch Hex Editor Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchHexEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchHexEditor
+identifiers:
+- winget: BinaryMark.BatchHexEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchHexEditor
+aliases: []

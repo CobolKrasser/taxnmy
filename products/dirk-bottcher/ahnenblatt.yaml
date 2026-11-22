@@ -1,0 +1,13 @@
+key: dirk-bottcher/ahnenblatt
+publisher: dirk-bottcher
+name: Ahnenblatt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirkBoettcher/Ahnenblatt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirkBoettcher/Ahnenblatt
+identifiers:
+- winget: DirkBoettcher.Ahnenblatt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirkBoettcher/Ahnenblatt
+- winget: DirkBoettcher.Ahnenblatt.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DirkBoettcher/Ahnenblatt/Free
+aliases: []

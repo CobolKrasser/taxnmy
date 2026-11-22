@@ -1,0 +1,11 @@
+key: gephi/gephi
+publisher: gephi
+name: Gephi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gephi/Gephi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gephi/Gephi
+identifiers:
+- winget: Gephi.Gephi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gephi/Gephi
+aliases: []

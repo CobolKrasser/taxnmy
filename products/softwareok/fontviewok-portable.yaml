@@ -1,0 +1,11 @@
+key: softwareok/fontviewok-portable
+publisher: softwareok
+name: FontViewOK (Portable)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FontViewOK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FontViewOK
+identifiers:
+- winget: SoftwareOK.FontViewOK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FontViewOK
+aliases: []

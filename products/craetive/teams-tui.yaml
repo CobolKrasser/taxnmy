@@ -1,0 +1,11 @@
+key: craetive/teams-tui
+publisher: craetive
+name: teams-tui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craetive/teams-tui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craetive/teams-tui
+identifiers:
+- winget: Craetive.teams-tui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craetive/teams-tui
+aliases: []

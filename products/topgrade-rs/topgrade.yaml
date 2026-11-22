@@ -1,0 +1,11 @@
+key: topgrade-rs/topgrade
+publisher: topgrade-rs
+name: topgrade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/topgrade-rs/topgrade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/topgrade-rs/topgrade
+identifiers:
+- winget: topgrade-rs.topgrade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/topgrade-rs/topgrade
+aliases: []

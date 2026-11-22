@@ -1,0 +1,11 @@
+key: opera-software/opera-gx-stable
+publisher: opera-software
+name: Opera GX Stable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/OperaGX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/OperaGX
+identifiers:
+- winget: Opera.OperaGX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/OperaGX
+aliases: []

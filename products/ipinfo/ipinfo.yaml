@@ -1,0 +1,11 @@
+key: ipinfo/ipinfo
+publisher: ipinfo
+name: ipinfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ipinfo/ipinfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ipinfo/ipinfo
+identifiers:
+- winget: ipinfo.ipinfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ipinfo/ipinfo
+aliases: []

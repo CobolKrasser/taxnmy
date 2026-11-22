@@ -1,0 +1,11 @@
+key: alexd/metapad
+publisher: alexd
+name: Metapad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alexd/Metapad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alexd/Metapad
+identifiers:
+- winget: alexd.Metapad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alexd/Metapad
+aliases: []

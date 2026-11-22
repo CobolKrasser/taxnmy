@@ -1,0 +1,11 @@
+key: dimmy/dimmy
+publisher: dimmy
+name: Dimmy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dimmy/Dimmy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dimmy/Dimmy
+identifiers:
+- winget: Dimmy.Dimmy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dimmy/Dimmy
+aliases: []

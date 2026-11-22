@@ -1,0 +1,12 @@
+key: wecreat/makeit
+publisher: wecreat
+name: WeCreat MakeIt!
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeCreat/MakeIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeCreat/MakeIt
+identifiers:
+- winget: WeCreat.MakeIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeCreat/MakeIt
+aliases:
+- wecreat/wecreat-makeit

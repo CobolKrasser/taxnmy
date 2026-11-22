@@ -1,0 +1,11 @@
+key: serverdata-net/sharesync
+publisher: serverdata-net
+name: ShareSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ShareSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ShareSync
+identifiers:
+- winget: Serverdata.ShareSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverdata/ShareSync
+aliases: []

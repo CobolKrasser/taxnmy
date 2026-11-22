@@ -1,0 +1,11 @@
+key: emco-software/emco-msi-package-builder
+publisher: emco-software
+name: EMCO MSI Package Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/MSIPackageBuilder/12
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/MSIPackageBuilder/12
+identifiers:
+- winget: EMCO.MSIPackageBuilder.12
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/MSIPackageBuilder/12
+aliases: []

@@ -1,0 +1,11 @@
+key: tianzhentech/neatchat
+publisher: tianzhentech
+name: NeatChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TianZhen/NeatChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TianZhen/NeatChat
+identifiers:
+- winget: TianZhen.NeatChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TianZhen/NeatChat
+aliases: []

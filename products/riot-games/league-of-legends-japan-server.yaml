@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-japan-server
+publisher: riot-games
+name: League of Legends (Japan server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/JP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/JP
+identifiers:
+- winget: RiotGames.LeagueOfLegends.JP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/JP
+aliases: []

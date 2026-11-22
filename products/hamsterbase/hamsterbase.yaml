@@ -1,0 +1,11 @@
+key: hamsterbase/hamsterbase
+publisher: hamsterbase
+name: HamsterBase
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HamsterBase/HamsterBase/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HamsterBase/HamsterBase/Server
+identifiers:
+- winget: HamsterBase.HamsterBase.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HamsterBase/HamsterBase/Server
+aliases: []

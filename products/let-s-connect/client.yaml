@@ -1,0 +1,12 @@
+key: let-s-connect/client
+publisher: let-s-connect
+name: Let's Connect! Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LetsConnect/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LetsConnect/Client
+identifiers:
+- winget: LetsConnect.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LetsConnect/Client
+aliases:
+- let-s-connect/let-s-connect-client

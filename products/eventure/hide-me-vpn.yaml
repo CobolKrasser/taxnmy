@@ -1,0 +1,11 @@
+key: eventure/hide-me-vpn
+publisher: eventure
+name: hide.me VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eVenture/HideMe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eVenture/HideMe
+identifiers:
+- winget: eVenture.HideMe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eVenture/HideMe
+aliases: []

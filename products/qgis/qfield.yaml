@@ -1,0 +1,11 @@
+key: qgis/qfield
+publisher: qgis
+name: QField
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QGIS/QField
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QGIS/QField
+identifiers:
+- winget: QGIS.QField
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QGIS/QField
+aliases: []

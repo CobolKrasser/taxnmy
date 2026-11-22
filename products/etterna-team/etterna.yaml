@@ -1,0 +1,11 @@
+key: etterna-team/etterna
+publisher: etterna-team
+name: Etterna
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EtternaProject/EtternaGame
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EtternaProject/EtternaGame
+identifiers:
+- winget: EtternaProject.EtternaGame
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EtternaProject/EtternaGame
+aliases: []

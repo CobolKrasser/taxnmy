@@ -1,0 +1,11 @@
+key: simon-tatham/putty-cac
+publisher: simon-tatham
+name: PuTTY CAC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMoreFood/PuTTY-CAC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMoreFood/PuTTY-CAC
+identifiers:
+- winget: NoMoreFood.PuTTY-CAC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMoreFood/PuTTY-CAC
+aliases: []

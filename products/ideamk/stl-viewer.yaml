@@ -1,0 +1,11 @@
+key: ideamk/stl-viewer
+publisher: ideamk
+name: STL Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/STLViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/STLViewer
+identifiers:
+- winget: IdeaMK.STLViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/STLViewer
+aliases: []

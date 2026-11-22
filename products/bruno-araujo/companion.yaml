@@ -1,0 +1,11 @@
+key: bruno-araujo/companion
+publisher: bruno-araujo
+name: Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brunurd/companion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brunurd/companion
+identifiers:
+- winget: brunurd.companion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brunurd/companion
+aliases: []

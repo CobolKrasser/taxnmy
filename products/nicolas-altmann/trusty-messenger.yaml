@@ -1,0 +1,11 @@
+key: nicolas-altmann/trusty-messenger
+publisher: nicolas-altmann
+name: Trusty Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sibexico/Trusty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sibexico/Trusty
+identifiers:
+- winget: sibexico.Trusty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sibexico/Trusty
+aliases: []

@@ -1,0 +1,11 @@
+key: faradey/proga-cmd
+publisher: faradey
+name: Proga CMD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Faradey/Proga-CMD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Faradey/Proga-CMD
+identifiers:
+- winget: Faradey.Proga-CMD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Faradey/Proga-CMD
+aliases: []

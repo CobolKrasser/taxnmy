@@ -1,0 +1,11 @@
+key: devtoys/devtoys
+publisher: devtoys
+name: DevToys
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevToys-app/DevToys
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevToys-app/DevToys
+identifiers:
+- winget: DevToys-app.DevToys
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevToys-app/DevToys
+aliases: []

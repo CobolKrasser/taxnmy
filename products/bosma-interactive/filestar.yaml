@@ -1,0 +1,11 @@
+key: bosma-interactive/filestar
+publisher: bosma-interactive
+name: Filestar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filestar/Filestar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filestar/Filestar
+identifiers:
+- winget: Filestar.Filestar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filestar/Filestar
+aliases: []

@@ -1,0 +1,11 @@
+key: gsl-biotech/snapgene
+publisher: gsl-biotech
+name: SnapGene
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GSLBiotech/SnapGene
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GSLBiotech/SnapGene
+identifiers:
+- winget: GSLBiotech.SnapGene
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GSLBiotech/SnapGene
+aliases: []

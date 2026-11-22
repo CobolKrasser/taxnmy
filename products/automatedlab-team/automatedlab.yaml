@@ -1,0 +1,11 @@
+key: automatedlab-team/automatedlab
+publisher: automatedlab-team
+name: AutomatedLab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutomatedLab/AutomatedLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutomatedLab/AutomatedLab
+identifiers:
+- winget: AutomatedLab.AutomatedLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutomatedLab/AutomatedLab
+aliases: []

@@ -1,0 +1,11 @@
+key: famatech/radmin-viewer
+publisher: famatech
+name: Radmin Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/Radmin/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/Radmin/Client
+identifiers:
+- winget: Famatech.Radmin.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Famatech/Radmin/Client
+aliases: []

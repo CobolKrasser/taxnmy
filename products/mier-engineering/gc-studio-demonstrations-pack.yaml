@@ -1,0 +1,11 @@
+key: mier-engineering/gc-studio-demonstrations-pack
+publisher: mier-engineering
+name: GC Studio Demonstrations Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GCStudio/DemonstrationsPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GCStudio/DemonstrationsPack
+identifiers:
+- winget: GCStudio.DemonstrationsPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GCStudio/DemonstrationsPack
+aliases: []

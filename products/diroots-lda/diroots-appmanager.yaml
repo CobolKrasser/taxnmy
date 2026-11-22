@@ -1,0 +1,11 @@
+key: diroots-lda/diroots-appmanager
+publisher: diroots-lda
+name: DiRoots.AppManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/AppManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/AppManager
+identifiers:
+- winget: DiRoots.AppManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/AppManager
+aliases: []

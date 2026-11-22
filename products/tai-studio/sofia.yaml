@@ -1,0 +1,11 @@
+key: tai-studio/sofia
+publisher: tai-studio
+name: Sofia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaiStudio/Sofia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaiStudio/Sofia
+identifiers:
+- winget: TaiStudio.Sofia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaiStudio/Sofia
+aliases: []

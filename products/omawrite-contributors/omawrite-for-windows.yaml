@@ -1,0 +1,11 @@
+key: omawrite-contributors/omawrite-for-windows
+publisher: omawrite-contributors
+name: OmaWrite for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbrarZShahriar/OmaWrite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbrarZShahriar/OmaWrite
+identifiers:
+- winget: AbrarZShahriar.OmaWrite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbrarZShahriar/OmaWrite
+aliases: []

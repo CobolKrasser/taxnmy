@@ -1,0 +1,11 @@
+key: spectrumqt/xxmi-launcher
+publisher: spectrumqt
+name: XXMI Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpectrumQT/XXMILauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpectrumQT/XXMILauncher
+identifiers:
+- winget: SpectrumQT.XXMILauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpectrumQT/XXMILauncher
+aliases: []

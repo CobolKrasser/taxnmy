@@ -1,0 +1,11 @@
+key: lmo-lab/bamboomintkey
+publisher: lmo-lab
+name: BambooMintKey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BambooMintKey/BambooMintKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BambooMintKey/BambooMintKey
+identifiers:
+- winget: BambooMintKey.BambooMintKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BambooMintKey/BambooMintKey
+aliases: []

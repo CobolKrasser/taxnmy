@@ -1,0 +1,11 @@
+key: chuyu-team/dism-plus-plus-multi-language
+publisher: chuyu-team
+name: DISM++ Multi Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChuyuTeam/DISM++
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChuyuTeam/DISM++
+identifiers:
+- winget: ChuyuTeam.DISM++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChuyuTeam/DISM++
+aliases: []

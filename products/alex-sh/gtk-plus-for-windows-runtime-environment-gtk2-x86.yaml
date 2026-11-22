@@ -1,0 +1,11 @@
+key: alex-sh/gtk-plus-for-windows-runtime-environment-gtk2-x86
+publisher: alex-sh
+name: GTK+ for Windows Runtime Environment (GTK2 x86)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alex-sh/GTK2-Runtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alex-sh/GTK2-Runtime
+identifiers:
+- winget: alex-sh.GTK2-Runtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alex-sh/GTK2-Runtime
+aliases: []

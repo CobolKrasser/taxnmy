@@ -1,0 +1,11 @@
+key: y8-games/y8-browser
+publisher: y8-games
+name: Y8 Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Y8Games/Y8Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Y8Games/Y8Browser
+identifiers:
+- winget: Y8Games.Y8Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Y8Games/Y8Browser
+aliases: []

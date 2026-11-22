@@ -1,0 +1,12 @@
+key: microsoft/sql-server
+publisher: microsoft
+name: SQL Server
+kind: software
+source: https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
+versions:
+  source: https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
+identifiers:
+- cpe: cpe:2.3:a:microsoft:sql_server
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mssqlserver.md
+aliases:
+- microsoft/microsoft-sql-server

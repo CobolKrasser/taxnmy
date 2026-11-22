@@ -1,0 +1,11 @@
+key: han-li/vfox
+publisher: han-li
+name: vfox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/version-fox/vfox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/version-fox/vfox
+identifiers:
+- winget: version-fox.vfox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/version-fox/vfox
+aliases: []

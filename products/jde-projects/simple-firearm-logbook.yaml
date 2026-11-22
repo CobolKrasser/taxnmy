@@ -1,0 +1,11 @@
+key: jde-projects/simple-firearm-logbook
+publisher: jde-projects
+name: Simple Firearm Logbook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDEProjects/SimpleFirearmLogbook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDEProjects/SimpleFirearmLogbook
+identifiers:
+- winget: JDEProjects.SimpleFirearmLogbook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDEProjects/SimpleFirearmLogbook
+aliases: []

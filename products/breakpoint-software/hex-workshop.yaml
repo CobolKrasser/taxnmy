@@ -1,0 +1,11 @@
+key: breakpoint-software/hex-workshop
+publisher: breakpoint-software
+name: Hex Workshop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BreakPointSoftware/HexWorkshop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BreakPointSoftware/HexWorkshop
+identifiers:
+- winget: BreakPointSoftware.HexWorkshop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BreakPointSoftware/HexWorkshop
+aliases: []

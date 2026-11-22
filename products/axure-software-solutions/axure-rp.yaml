@@ -1,0 +1,15 @@
+key: axure-software-solutions/axure-rp
+publisher: axure-software-solutions
+name: Axure RP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axure/AxureRP/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axure/AxureRP/9
+identifiers:
+- winget: Axure.AxureRP.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axure/AxureRP/10
+- winget: Axure.AxureRP.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axure/AxureRP/11
+- winget: Axure.AxureRP.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axure/AxureRP/9
+aliases: []

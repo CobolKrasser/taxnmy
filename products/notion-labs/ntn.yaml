@@ -1,0 +1,11 @@
+key: notion-labs/ntn
+publisher: notion-labs
+name: ntn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/ntn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/ntn
+identifiers:
+- winget: Notion.ntn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/ntn
+aliases: []

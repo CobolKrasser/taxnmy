@@ -1,0 +1,11 @@
+key: movieshelf/movieshelf
+publisher: movieshelf
+name: MovieShelf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunasans/MovieShelf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunasans/MovieShelf
+identifiers:
+- winget: Lunasans.MovieShelf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunasans/MovieShelf
+aliases: []

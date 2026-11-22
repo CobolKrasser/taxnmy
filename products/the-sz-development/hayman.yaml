@@ -1,0 +1,11 @@
+key: the-sz-development/hayman
+publisher: the-sz-development
+name: Hayman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Hayman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Hayman
+identifiers:
+- winget: the-sz.Hayman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Hayman
+aliases: []

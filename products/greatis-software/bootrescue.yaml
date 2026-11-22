@@ -1,0 +1,11 @@
+key: greatis-software/bootrescue
+publisher: greatis-software
+name: BootRescue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootRescue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootRescue
+identifiers:
+- winget: Greatis.BootRescue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootRescue
+aliases: []

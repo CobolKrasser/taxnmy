@@ -1,0 +1,11 @@
+key: open-cli-collective/new-relic-cli
+publisher: open-cli-collective
+name: New Relic CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/newrelic-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/newrelic-cli
+identifiers:
+- winget: OpenCLICollective.newrelic-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/newrelic-cli
+aliases: []

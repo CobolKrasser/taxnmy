@@ -1,0 +1,11 @@
+key: microsoft/exchange-server
+publisher: microsoft
+name: Exchange Server
+kind: software
+source: https://learn.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates
+versions:
+  source: https://learn.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates
+identifiers:
+- cpe: cpe:2.3:a:microsoft:exchange_server
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:microsoft:exchange_server&resultsPerPage=1
+aliases: []

@@ -1,0 +1,13 @@
+key: shixinhuang/czkawkatauri
+publisher: shixinhuang
+name: CzkawkaTauri
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shixinhuang99/Czkawka/Tauri
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shixinhuang99/Czkawka/Tauri
+identifiers:
+- winget: shixinhuang99.Czkawka.Tauri
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shixinhuang99/Czkawka/Tauri
+- winget: shixinhuang99.Czkawka.Tauri.FFmpeg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shixinhuang99/Czkawka/Tauri/FFmpeg
+aliases: []

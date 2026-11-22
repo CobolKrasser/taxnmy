@@ -1,0 +1,15 @@
+key: thunderhead-engineering/pyrosim
+publisher: thunderhead-engineering
+name: PyroSim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/PyroSim/2024
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/PyroSim/2024
+identifiers:
+- winget: Thunderhead.PyroSim.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/PyroSim/2024
+- winget: Thunderhead.PyroSim.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/PyroSim/2025
+- winget: Thunderhead.PyroSim.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/PyroSim/2026
+aliases: []

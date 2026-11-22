@@ -1,0 +1,11 @@
+key: deminimis/minimal-firewall
+publisher: deminimis
+name: Minimal Firewall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deminimis/MinimalFirewall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deminimis/MinimalFirewall
+identifiers:
+- winget: Deminimis.MinimalFirewall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deminimis/MinimalFirewall
+aliases: []

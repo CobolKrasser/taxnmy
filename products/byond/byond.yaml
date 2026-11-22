@@ -1,0 +1,11 @@
+key: byond/byond
+publisher: byond
+name: BYOND
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BYOND/BYOND
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BYOND/BYOND
+identifiers:
+- winget: BYOND.BYOND
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BYOND/BYOND
+aliases: []

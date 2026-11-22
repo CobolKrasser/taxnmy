@@ -1,0 +1,11 @@
+key: phomv/phomv
+publisher: phomv
+name: phomv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/phomv/phomv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/phomv/phomv
+identifiers:
+- winget: phomv.phomv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/phomv/phomv
+aliases: []

@@ -1,0 +1,11 @@
+key: yatli/fvim
+publisher: yatli
+name: fvim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yatli/fvim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yatli/fvim
+identifiers:
+- winget: yatli.fvim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yatli/fvim
+aliases: []

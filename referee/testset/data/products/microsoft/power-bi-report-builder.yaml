@@ -1,0 +1,11 @@
+key: microsoft/power-bi-report-builder
+publisher: microsoft
+name: Power BI Report Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBIReportBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBIReportBuilder
+identifiers:
+- winget: Microsoft.PowerBIReportBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBIReportBuilder
+aliases: []

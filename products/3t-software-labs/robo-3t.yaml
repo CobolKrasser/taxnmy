@@ -1,0 +1,11 @@
+key: 3t-software-labs/robo-3t
+publisher: 3t-software-labs
+name: Robo 3T
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3TSoftwareLabs/Robo3T
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3TSoftwareLabs/Robo3T
+identifiers:
+- winget: 3TSoftwareLabs.Robo3T
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3TSoftwareLabs/Robo3T
+aliases: []

@@ -1,0 +1,11 @@
+key: tauri/orange
+publisher: tauri
+name: Orange
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/naaive/Orange
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/naaive/Orange
+identifiers:
+- winget: naaive.Orange
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/naaive/Orange
+aliases: []

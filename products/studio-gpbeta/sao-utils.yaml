@@ -1,0 +1,13 @@
+key: studio-gpbeta/sao-utils
+publisher: studio-gpbeta
+name: SAO Utils
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPBeta/SAOUtils/Exp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPBeta/SAOUtils/Exp
+identifiers:
+- winget: GPBeta.SAOUtils.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPBeta/SAOUtils/2
+- winget: GPBeta.SAOUtils.Exp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPBeta/SAOUtils/Exp
+aliases: []

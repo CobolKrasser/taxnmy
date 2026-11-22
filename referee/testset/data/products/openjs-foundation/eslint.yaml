@@ -1,0 +1,15 @@
+key: openjs-foundation/eslint
+publisher: openjs-foundation
+name: ESLint
+kind: software
+source: https://endoflife.date/eslint
+versions:
+  source: https://endoflife.date/eslint
+identifiers:
+- purl: pkg:github/eslint/eslint
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eslint.md
+- purl: pkg:npm/eslint
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eslint.md
+- cpe: cpe:2.3:a:openjsf:eslint
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/eslint.md
+aliases: []

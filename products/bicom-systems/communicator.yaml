@@ -1,0 +1,11 @@
+key: bicom-systems/communicator
+publisher: bicom-systems
+name: Communicator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/Communicator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/Communicator
+identifiers:
+- winget: BicomSystems.Communicator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/Communicator
+aliases: []

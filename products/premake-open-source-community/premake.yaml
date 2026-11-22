@@ -1,0 +1,11 @@
+key: premake-open-source-community/premake
+publisher: premake-open-source-community
+name: Premake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Premake/Premake/5/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Premake/Premake/5/Beta
+identifiers:
+- winget: Premake.Premake.5.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Premake/Premake/5/Beta
+aliases: []

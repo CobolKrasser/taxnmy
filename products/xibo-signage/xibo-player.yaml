@@ -1,0 +1,11 @@
+key: xibo-signage/xibo-player
+publisher: xibo-signage
+name: Xibo Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiboSignage/XiboPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiboSignage/XiboPlayer
+identifiers:
+- winget: XiboSignage.XiboPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiboSignage/XiboPlayer
+aliases: []

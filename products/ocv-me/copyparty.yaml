@@ -1,0 +1,11 @@
+key: ocv-me/copyparty
+publisher: ocv-me
+name: copyparty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/9001/copyparty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/9001/copyparty
+identifiers:
+- winget: 9001.copyparty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/9001/copyparty
+aliases: []

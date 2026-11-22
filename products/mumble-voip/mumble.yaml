@@ -1,0 +1,11 @@
+key: mumble-voip/mumble
+publisher: mumble-voip
+name: Mumble
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mumble/Mumble/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mumble/Mumble/Client
+identifiers:
+- winget: Mumble.Mumble.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mumble/Mumble/Client
+aliases: []

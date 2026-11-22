@@ -1,0 +1,11 @@
+key: qnap-systems/qnap-external-raid-manager
+publisher: qnap-systems
+name: QNAP External RAID Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/ExternalRAIDManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/ExternalRAIDManager
+identifiers:
+- winget: QNAP.ExternalRAIDManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/ExternalRAIDManager
+aliases: []

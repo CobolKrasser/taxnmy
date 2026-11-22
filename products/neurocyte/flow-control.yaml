@@ -1,0 +1,11 @@
+key: neurocyte/flow-control
+publisher: neurocyte
+name: Flow Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/neurocyte/flow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/neurocyte/flow
+identifiers:
+- winget: neurocyte.flow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/neurocyte/flow
+aliases: []

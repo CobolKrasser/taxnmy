@@ -1,0 +1,12 @@
+key: mimecast/for-outlook
+publisher: mimecast
+name: Mimecast for Outlook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mimecast/MimecastForOutlook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mimecast/MimecastForOutlook
+identifiers:
+- winget: Mimecast.MimecastForOutlook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mimecast/MimecastForOutlook
+aliases:
+- mimecast/mimecast-for-outlook

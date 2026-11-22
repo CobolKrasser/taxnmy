@@ -1,0 +1,11 @@
+key: dh2i/dxenterprise
+publisher: dh2i
+name: DxEnterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DH2iCompany/DxEnterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DH2iCompany/DxEnterprise
+identifiers:
+- winget: DH2iCompany.DxEnterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DH2iCompany/DxEnterprise
+aliases: []

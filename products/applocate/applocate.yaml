@@ -1,0 +1,11 @@
+key: applocate/applocate
+publisher: applocate
+name: AppLocate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppLocate/AppLocate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppLocate/AppLocate
+identifiers:
+- winget: AppLocate.AppLocate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppLocate/AppLocate
+aliases: []

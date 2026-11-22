@@ -1,0 +1,11 @@
+key: apache-netbeans/apache-netbeans
+publisher: apache-netbeans
+name: Apache NetBeans
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codelerity/NetBeans
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codelerity/NetBeans
+identifiers:
+- winget: Codelerity.NetBeans
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codelerity/NetBeans
+aliases: []

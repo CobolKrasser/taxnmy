@@ -1,0 +1,11 @@
+key: angrymiao/am-master
+publisher: angrymiao
+name: AM_Master
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AngryMiao/AMMaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AngryMiao/AMMaster
+identifiers:
+- winget: AngryMiao.AMMaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AngryMiao/AMMaster
+aliases: []

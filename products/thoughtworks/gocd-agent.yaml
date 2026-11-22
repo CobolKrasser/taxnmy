@@ -1,0 +1,11 @@
+key: thoughtworks/gocd-agent
+publisher: thoughtworks
+name: GoCD Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoCD/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoCD/Agent
+identifiers:
+- winget: GoCD.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoCD/Agent
+aliases: []

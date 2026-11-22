@@ -1,0 +1,11 @@
+key: digital-extremes/warframe
+publisher: digital-extremes
+name: Warframe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalExtremes/Warframe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalExtremes/Warframe
+identifiers:
+- winget: DigitalExtremes.Warframe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalExtremes/Warframe
+aliases: []

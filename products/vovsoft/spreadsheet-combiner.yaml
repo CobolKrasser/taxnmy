@@ -1,0 +1,12 @@
+key: vovsoft/spreadsheet-combiner
+publisher: vovsoft
+name: Vovsoft Spreadsheet Combiner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SpreadsheetCombiner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SpreadsheetCombiner
+identifiers:
+- winget: VovSoft.SpreadsheetCombiner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SpreadsheetCombiner
+aliases:
+- vovsoft/vovsoft-spreadsheet-combiner

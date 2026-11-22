@@ -1,0 +1,11 @@
+key: the-texniccenter-team/texniccenter
+publisher: the-texniccenter-team
+name: TeXnicCenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXnicCenter/TeXnicCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXnicCenter/TeXnicCenter
+identifiers:
+- winget: TeXnicCenter.TeXnicCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXnicCenter/TeXnicCenter
+aliases: []

@@ -1,0 +1,12 @@
+key: comodo/dragon
+publisher: comodo
+name: Comodo Dragon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comodo/ComodoDragon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comodo/ComodoDragon
+identifiers:
+- winget: Comodo.ComodoDragon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comodo/ComodoDragon
+aliases:
+- comodo/comodo-dragon

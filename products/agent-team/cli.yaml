@@ -1,0 +1,12 @@
+key: agent-team/cli
+publisher: agent-team
+name: Agent Team CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentTeam/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentTeam/Cli
+identifiers:
+- winget: AgentTeam.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentTeam/Cli
+aliases:
+- agent-team/agent-team-cli

@@ -1,0 +1,13 @@
+key: advanced-health-and-care/advanced-docman-10-migration-agent
+publisher: advanced-health-and-care
+name: Advanced Docman 10 Migration Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman10MigrationAgent/England
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman10MigrationAgent/England
+identifiers:
+- winget: PCTI.Docman10MigrationAgent.England
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman10MigrationAgent/England
+- winget: PCTI.Docman10MigrationAgent.Scotland
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman10MigrationAgent/Scotland
+aliases: []

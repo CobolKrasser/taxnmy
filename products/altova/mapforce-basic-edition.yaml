@@ -1,0 +1,18 @@
+key: altova/mapforce-basic-edition
+publisher: altova
+name: Altova MapForce Basic Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MapForce/2023/Basic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MapForce/2023/Basic
+identifiers:
+- winget: Altova.MapForce.2023.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MapForce/2023/Basic
+- winget: Altova.MapForce.2024.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MapForce/2024/Basic
+- winget: Altova.MapForce.2025.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MapForce/2025/Basic
+- winget: Altova.MapForce.2026.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MapForce/2026/Basic
+aliases:
+- altova/altova-mapforce-basic-edition

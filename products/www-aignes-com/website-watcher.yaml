@@ -1,0 +1,11 @@
+key: www-aignes-com/website-watcher
+publisher: www-aignes-com
+name: WebSite-Watcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aignesberger/WebSiteWatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aignesberger/WebSiteWatcher
+identifiers:
+- winget: Aignesberger.WebSiteWatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aignesberger/WebSiteWatcher
+aliases: []

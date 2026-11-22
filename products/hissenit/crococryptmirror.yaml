@@ -1,0 +1,11 @@
+key: hissenit/crococryptmirror
+publisher: hissenit
+name: CrococryptMirror
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HissenIT/CrococryptMirror-Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HissenIT/CrococryptMirror-Portable
+identifiers:
+- winget: HissenIT.CrococryptMirror-Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HissenIT/CrococryptMirror-Portable
+aliases: []

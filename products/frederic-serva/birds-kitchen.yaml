@@ -1,0 +1,11 @@
+key: frederic-serva/birds-kitchen
+publisher: frederic-serva
+name: Birds Kitchen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fredserva/birdskitchen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fredserva/birdskitchen
+identifiers:
+- winget: fredserva.birdskitchen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fredserva/birdskitchen
+aliases: []

@@ -1,0 +1,11 @@
+key: davegallant/vpngate
+publisher: davegallant
+name: vpngate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/davegallant/vpngate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/davegallant/vpngate
+identifiers:
+- winget: davegallant.vpngate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/davegallant/vpngate
+aliases: []

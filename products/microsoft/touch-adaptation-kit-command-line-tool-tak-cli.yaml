@@ -1,0 +1,11 @@
+key: microsoft/touch-adaptation-kit-command-line-tool-tak-cli
+publisher: microsoft
+name: Touch Adaptation Kit Command Line Tool (TAK CLI)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/TAK/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/TAK/CLI
+identifiers:
+- winget: Microsoft.Gaming.TAK.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/TAK/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: high-motion-software/imbatch
+publisher: high-motion-software
+name: ImBatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/ImBatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/ImBatch
+identifiers:
+- winget: HighMotionSoftware.ImBatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/ImBatch
+aliases: []

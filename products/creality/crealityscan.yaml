@@ -1,0 +1,13 @@
+key: creality/crealityscan
+publisher: creality
+name: CrealityScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityScan
+identifiers:
+- winget: Creality.CrealityScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityScan
+- winget: Creality.CrealityScan.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityScan/4
+aliases: []

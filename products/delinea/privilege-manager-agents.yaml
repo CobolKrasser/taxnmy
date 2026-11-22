@@ -1,0 +1,11 @@
+key: delinea/privilege-manager-agents
+publisher: delinea
+name: Privilege Manager Agents
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/PrivilegeManagerAgents
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/PrivilegeManagerAgents
+identifiers:
+- winget: Delinea.PrivilegeManagerAgents
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/PrivilegeManagerAgents
+aliases: []

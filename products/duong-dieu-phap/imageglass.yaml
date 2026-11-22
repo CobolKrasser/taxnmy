@@ -1,0 +1,13 @@
+key: duong-dieu-phap/imageglass
+publisher: duong-dieu-phap
+name: ImageGlass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuongDieuPhap/ImageGlass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuongDieuPhap/ImageGlass
+identifiers:
+- winget: DuongDieuPhap.ImageGlass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuongDieuPhap/ImageGlass
+- winget: DuongDieuPhap.ImageGlass.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuongDieuPhap/ImageGlass/MSI
+aliases: []

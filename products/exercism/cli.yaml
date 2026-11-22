@@ -1,0 +1,12 @@
+key: exercism/cli
+publisher: exercism
+name: Exercism CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exercism/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exercism/CLI
+identifiers:
+- winget: Exercism.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exercism/CLI
+aliases:
+- exercism/exercism-cli

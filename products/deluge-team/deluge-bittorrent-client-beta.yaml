@@ -1,0 +1,11 @@
+key: deluge-team/deluge-bittorrent-client-beta
+publisher: deluge-team
+name: Deluge BitTorrent Client Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DelugeTeam/DelugeBeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DelugeTeam/DelugeBeta
+identifiers:
+- winget: DelugeTeam.DelugeBeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DelugeTeam/DelugeBeta
+aliases: []

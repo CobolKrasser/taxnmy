@@ -1,0 +1,11 @@
+key: todesk-remote-desktop/deskin
+publisher: todesk-remote-desktop
+name: DeskIn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZulerTechnology/DeskIn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZulerTechnology/DeskIn
+identifiers:
+- winget: ZulerTechnology.DeskIn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZulerTechnology/DeskIn
+aliases: []

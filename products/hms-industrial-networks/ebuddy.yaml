@@ -1,0 +1,11 @@
+key: hms-industrial-networks/ebuddy
+publisher: hms-industrial-networks
+name: eBuddy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/eBuddy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/eBuddy
+identifiers:
+- winget: HMS.eBuddy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/eBuddy
+aliases: []

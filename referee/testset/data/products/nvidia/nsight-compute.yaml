@@ -1,0 +1,11 @@
+key: nvidia/nsight-compute
+publisher: nvidia
+name: Nsight Compute
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/Nsight/Compute
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/Nsight/Compute
+identifiers:
+- winget: Nvidia.Nsight.Compute
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/Nsight/Compute
+aliases: []

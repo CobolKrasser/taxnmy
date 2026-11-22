@@ -1,0 +1,12 @@
+key: simplex/chat
+publisher: simplex
+name: SimpleX Chat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimpleX/SimpleX-Chat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimpleX/SimpleX-Chat
+identifiers:
+- winget: SimpleX.SimpleX-Chat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimpleX/SimpleX-Chat
+aliases:
+- simplex/simplex-chat

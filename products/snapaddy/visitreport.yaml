@@ -1,0 +1,11 @@
+key: snapaddy/visitreport
+publisher: snapaddy
+name: VisitReport
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snapADDY/VisitReport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snapADDY/VisitReport
+identifiers:
+- winget: snapADDY.VisitReport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snapADDY/VisitReport
+aliases: []

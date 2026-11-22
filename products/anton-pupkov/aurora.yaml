@@ -1,0 +1,11 @@
+key: anton-pupkov/aurora
+publisher: anton-pupkov
+name: Aurora
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aurora/Aurora
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aurora/Aurora
+identifiers:
+- winget: Aurora.Aurora
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aurora/Aurora
+aliases: []

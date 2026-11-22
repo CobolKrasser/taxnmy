@@ -1,0 +1,11 @@
+key: albert-kalchmair/keymapper
+publisher: albert-kalchmair
+name: keymapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/houmain/keymapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/houmain/keymapper
+identifiers:
+- winget: houmain.keymapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/houmain/keymapper
+aliases: []

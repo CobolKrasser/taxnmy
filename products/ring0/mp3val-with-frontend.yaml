@@ -1,0 +1,11 @@
+key: ring0/mp3val-with-frontend
+publisher: ring0
+name: MP3val (With Frontend)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ring0/MP3val/WF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ring0/MP3val/WF
+identifiers:
+- winget: ring0.MP3val.WF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ring0/MP3val/WF
+aliases: []

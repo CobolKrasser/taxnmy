@@ -1,0 +1,11 @@
+key: tongtianlu/tongtop-store
+publisher: tongtianlu
+name: TongTop Store
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TongTianLu/TongTopStore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TongTianLu/TongTopStore
+identifiers:
+- winget: TongTianLu.TongTopStore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TongTianLu/TongTopStore
+aliases: []

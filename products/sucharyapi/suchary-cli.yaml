@@ -1,0 +1,11 @@
+key: sucharyapi/suchary-cli
+publisher: sucharyapi
+name: Suchary CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SucharyAPI/SucharyCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SucharyAPI/SucharyCLI
+identifiers:
+- winget: SucharyAPI.SucharyCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SucharyAPI/SucharyCLI
+aliases: []

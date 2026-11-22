@@ -1,0 +1,11 @@
+key: cato-networks/cato-client
+publisher: cato-networks
+name: Cato Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatoNetworks/CatoClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatoNetworks/CatoClient
+identifiers:
+- winget: CatoNetworks.CatoClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatoNetworks/CatoClient
+aliases: []

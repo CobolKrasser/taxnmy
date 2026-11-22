@@ -1,0 +1,11 @@
+key: claude-config-manager/claude-code-config-manager
+publisher: claude-config-manager
+name: claude-code-config-manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ronghuaxueleng/ClaudeCodeConfigManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ronghuaxueleng/ClaudeCodeConfigManager
+identifiers:
+- winget: ronghuaxueleng.ClaudeCodeConfigManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ronghuaxueleng/ClaudeCodeConfigManager
+aliases: []

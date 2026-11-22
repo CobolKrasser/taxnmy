@@ -1,0 +1,11 @@
+key: microsoft/azure-developer-cli
+publisher: microsoft
+name: Azure Developer CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azd
+identifiers:
+- winget: Microsoft.Azd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azd
+aliases: []

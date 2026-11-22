@@ -1,0 +1,11 @@
+key: hunter-beanland/autover
+publisher: hunter-beanland
+name: AutoVer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoVer/AutoVer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoVer/AutoVer
+identifiers:
+- winget: AutoVer.AutoVer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoVer/AutoVer
+aliases: []

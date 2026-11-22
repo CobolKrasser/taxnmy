@@ -1,0 +1,11 @@
+key: gramdown/gramdown
+publisher: gramdown
+name: gramdown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gramdown/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gramdown/CLI
+identifiers:
+- winget: Gramdown.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gramdown/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: logmein/goto-opener-multi-user
+publisher: logmein
+name: GoTo Opener (Multi User)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToOpener
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToOpener
+identifiers:
+- winget: GoTo.GoToOpener
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToOpener
+aliases: []

@@ -1,0 +1,11 @@
+key: martin-prikryl/winscp
+publisher: martin-prikryl
+name: WinSCP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinSCP/WinSCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinSCP/WinSCP
+identifiers:
+- winget: WinSCP.WinSCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinSCP/WinSCP
+aliases: []

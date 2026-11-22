@@ -1,0 +1,11 @@
+key: nordvpn/nordlocker
+publisher: nordvpn
+name: NordLocker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLocker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLocker
+identifiers:
+- winget: NordSecurity.NordLocker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLocker
+aliases: []

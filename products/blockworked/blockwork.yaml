@@ -1,0 +1,11 @@
+key: blockworked/blockwork
+publisher: blockworked
+name: Blockwork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blockworked/Blockwork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blockworked/Blockwork
+identifiers:
+- winget: Blockworked.Blockwork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blockworked/Blockwork
+aliases: []

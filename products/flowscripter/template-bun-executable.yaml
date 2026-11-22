@@ -1,0 +1,11 @@
+key: flowscripter/template-bun-executable
+publisher: flowscripter
+name: Template Bun Executable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/template-bun-executable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/template-bun-executable
+identifiers:
+- winget: Flowscripter.template-bun-executable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/template-bun-executable
+aliases: []

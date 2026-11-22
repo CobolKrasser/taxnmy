@@ -1,0 +1,11 @@
+key: danielbrendel/aquashell
+publisher: danielbrendel
+name: AquaShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielbrendel/AquaShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielbrendel/AquaShell
+identifiers:
+- winget: danielbrendel.AquaShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielbrendel/AquaShell
+aliases: []

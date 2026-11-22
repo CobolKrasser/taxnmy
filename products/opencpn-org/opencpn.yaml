@@ -1,0 +1,11 @@
+key: opencpn-org/opencpn
+publisher: opencpn-org
+name: OpenCPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCPN/OpenCPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCPN/OpenCPN
+identifiers:
+- winget: OpenCPN.OpenCPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCPN/OpenCPN
+aliases: []

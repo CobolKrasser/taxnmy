@@ -1,0 +1,13 @@
+key: imagemagick-studio/imagemagick-q16
+publisher: imagemagick-studio
+name: ImageMagick Q16
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q16
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q16
+identifiers:
+- winget: ImageMagick.ImageMagick.Q16
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/ImageMagick/Q16
+- winget: ImageMagick.Q16
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q16
+aliases: []

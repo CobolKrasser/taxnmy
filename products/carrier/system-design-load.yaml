@@ -1,0 +1,11 @@
+key: carrier/system-design-load
+publisher: carrier
+name: System Design Load
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/SystemDesignLoad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/SystemDesignLoad
+identifiers:
+- winget: Carrier.SystemDesignLoad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/SystemDesignLoad
+aliases: []

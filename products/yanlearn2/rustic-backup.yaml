@@ -1,0 +1,11 @@
+key: yanlearn2/rustic-backup
+publisher: yanlearn2
+name: Rustic Backup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yanlearn2/rustic-backup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yanlearn2/rustic-backup
+identifiers:
+- winget: yanlearn2.rustic-backup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yanlearn2/rustic-backup
+aliases: []

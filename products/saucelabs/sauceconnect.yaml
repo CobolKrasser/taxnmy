@@ -1,0 +1,11 @@
+key: saucelabs/sauceconnect
+publisher: saucelabs
+name: SauceConnect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SauceLabs/SauceConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SauceLabs/SauceConnect
+identifiers:
+- winget: SauceLabs.SauceConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SauceLabs/SauceConnect
+aliases: []

@@ -1,0 +1,12 @@
+key: microsoft/ntttcp
+publisher: microsoft
+name: Microsoft Ntttcp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Ntttcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Ntttcp
+identifiers:
+- winget: Microsoft.Ntttcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Ntttcp
+aliases:
+- microsoft/microsoft-ntttcp

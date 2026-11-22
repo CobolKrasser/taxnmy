@@ -1,0 +1,11 @@
+key: smartmontools-org/smartmontools
+publisher: smartmontools-org
+name: smartmontools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/smartmontools/smartmontools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/smartmontools/smartmontools
+identifiers:
+- winget: smartmontools.smartmontools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/smartmontools/smartmontools
+aliases: []

@@ -1,0 +1,11 @@
+key: bruno-banelli/pci-z
+publisher: bruno-banelli
+name: PCI-Z
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunoBanelli/PCI-Z
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunoBanelli/PCI-Z
+identifiers:
+- winget: BrunoBanelli.PCI-Z
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunoBanelli/PCI-Z
+aliases: []

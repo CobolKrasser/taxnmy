@@ -1,0 +1,11 @@
+key: nexdm-engineering/nexdm
+publisher: nexdm-engineering
+name: NeXDM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NexDM/NexDM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NexDM/NexDM
+identifiers:
+- winget: NexDM.NexDM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NexDM/NexDM
+aliases: []

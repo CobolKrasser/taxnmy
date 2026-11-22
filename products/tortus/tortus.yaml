@@ -1,0 +1,11 @@
+key: tortus/tortus
+publisher: tortus
+name: TORTUS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TORTUSAI/TORTUS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TORTUSAI/TORTUS
+identifiers:
+- winget: TORTUSAI.TORTUS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TORTUSAI/TORTUS
+aliases: []

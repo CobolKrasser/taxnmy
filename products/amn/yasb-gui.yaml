@@ -1,0 +1,11 @@
+key: amn/yasb-gui
+publisher: amn
+name: YASB GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/YASBGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/YASBGUI
+identifiers:
+- winget: AmN.YASBGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/YASBGUI
+aliases: []

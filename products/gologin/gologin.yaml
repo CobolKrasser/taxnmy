@@ -1,0 +1,11 @@
+key: gologin/gologin
+publisher: gologin
+name: Gologin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gologin/Gologin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gologin/Gologin
+identifiers:
+- winget: Gologin.Gologin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gologin/Gologin
+aliases: []

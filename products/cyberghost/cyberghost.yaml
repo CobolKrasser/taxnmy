@@ -1,0 +1,11 @@
+key: cyberghost/cyberghost
+publisher: cyberghost
+name: CyberGhost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberGhost/CyberGhost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberGhost/CyberGhost
+identifiers:
+- winget: CyberGhost.CyberGhost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberGhost/CyberGhost
+aliases: []

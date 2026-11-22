@@ -1,0 +1,11 @@
+key: filegram/filegram
+publisher: filegram
+name: Filegram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filegram/FilegramDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filegram/FilegramDesktop
+identifiers:
+- winget: Filegram.FilegramDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filegram/FilegramDesktop
+aliases: []

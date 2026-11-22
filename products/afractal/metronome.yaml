@@ -1,0 +1,11 @@
+key: afractal/metronome
+publisher: afractal
+name: Metronome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/afractal/Metronome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/afractal/Metronome
+identifiers:
+- winget: afractal.Metronome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/afractal/Metronome
+aliases: []

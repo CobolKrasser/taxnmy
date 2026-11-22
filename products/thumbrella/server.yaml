@@ -1,0 +1,12 @@
+key: thumbrella/server
+publisher: thumbrella
+name: Thumbrella Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thumbrella/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thumbrella/Server
+identifiers:
+- winget: Thumbrella.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thumbrella/Server
+aliases:
+- thumbrella/thumbrella-server

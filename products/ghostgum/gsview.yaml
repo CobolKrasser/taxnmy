@@ -1,0 +1,11 @@
+key: ghostgum/gsview
+publisher: ghostgum
+name: GSview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostgum/GSview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostgum/GSview
+identifiers:
+- winget: Ghostgum.GSview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostgum/GSview
+aliases: []

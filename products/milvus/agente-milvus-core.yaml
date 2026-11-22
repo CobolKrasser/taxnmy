@@ -1,0 +1,11 @@
+key: milvus/agente-milvus-core
+publisher: milvus
+name: Agente Milvus Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Milvus/AgenteMilvusCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Milvus/AgenteMilvusCore
+identifiers:
+- winget: Milvus.AgenteMilvusCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Milvus/AgenteMilvusCore
+aliases: []

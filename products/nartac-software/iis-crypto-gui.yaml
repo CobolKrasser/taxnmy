@@ -1,0 +1,11 @@
+key: nartac-software/iis-crypto-gui
+publisher: nartac-software
+name: IIS Crypto GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NartacSoftwareInc/IISCryptoGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NartacSoftwareInc/IISCryptoGUI
+identifiers:
+- winget: NartacSoftwareInc.IISCryptoGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NartacSoftwareInc/IISCryptoGUI
+aliases: []

@@ -1,0 +1,12 @@
+key: nvidia/geforce-now
+publisher: nvidia
+name: NVIDIA GeForce NOW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/GeForceNow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/GeForceNow
+identifiers:
+- winget: Nvidia.GeForceNow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/GeForceNow
+aliases:
+- nvidia/nvidia-geforce-now

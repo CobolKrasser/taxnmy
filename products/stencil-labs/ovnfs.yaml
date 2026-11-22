@@ -1,0 +1,11 @@
+key: stencil-labs/ovnfs
+publisher: stencil-labs
+name: ovnfs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StencilLabs/ovnfs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StencilLabs/ovnfs
+identifiers:
+- winget: StencilLabs.ovnfs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StencilLabs/ovnfs
+aliases: []

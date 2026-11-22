@@ -1,0 +1,11 @@
+key: yugecin-robin-and-duckstudio/osukps
+publisher: yugecin-robin-and-duckstudio
+name: osukps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/osukps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/osukps
+identifiers:
+- winget: DuckStudio.osukps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/osukps
+aliases: []

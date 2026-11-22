@@ -1,0 +1,12 @@
+key: avaya/workplace
+publisher: avaya
+name: Avaya Workplace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/AvayaWorkplace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/AvayaWorkplace
+identifiers:
+- winget: Avaya.AvayaWorkplace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/AvayaWorkplace
+aliases:
+- avaya/avaya-workplace

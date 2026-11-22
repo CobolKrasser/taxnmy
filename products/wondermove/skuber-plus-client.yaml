@@ -1,0 +1,11 @@
+key: wondermove/skuber-plus-client
+publisher: wondermove
+name: Skuber+ Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondermove/SkuberPlusClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondermove/SkuberPlusClient
+identifiers:
+- winget: Wondermove.SkuberPlusClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondermove/SkuberPlusClient
+aliases: []

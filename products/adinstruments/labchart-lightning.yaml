@@ -1,0 +1,12 @@
+key: adinstruments/labchart-lightning
+publisher: adinstruments
+name: ADInstruments LabChart Lightning
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChartLightning
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChartLightning
+identifiers:
+- winget: ADInstruments.LabChartLightning
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChartLightning
+aliases:
+- adinstruments/adinstruments-labchart-lightning

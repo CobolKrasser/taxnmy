@@ -1,0 +1,11 @@
+key: smartbear-software/readyapi-loadui-agent
+publisher: smartbear-software
+name: ReadyAPI LoadUI Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/ReadyAPILoadUIAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/ReadyAPILoadUIAgent
+identifiers:
+- winget: SmartBear.ReadyAPILoadUIAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/ReadyAPILoadUIAgent
+aliases: []

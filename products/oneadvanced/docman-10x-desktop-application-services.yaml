@@ -1,0 +1,13 @@
+key: oneadvanced/docman-10x-desktop-application-services
+publisher: oneadvanced
+name: Docman 10X Desktop Application Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman/GP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman/GP
+identifiers:
+- winget: PCTI.Docman.GP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman/GP
+- winget: PCTI.Docman.RMS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCTI/Docman/RMS
+aliases: []

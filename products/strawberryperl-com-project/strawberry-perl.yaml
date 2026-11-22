@@ -1,0 +1,11 @@
+key: strawberryperl-com-project/strawberry-perl
+publisher: strawberryperl-com-project
+name: Strawberry Perl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StrawberryPerl/StrawberryPerl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StrawberryPerl/StrawberryPerl
+identifiers:
+- winget: StrawberryPerl.StrawberryPerl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StrawberryPerl/StrawberryPerl
+aliases: []

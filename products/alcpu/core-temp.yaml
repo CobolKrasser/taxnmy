@@ -1,0 +1,11 @@
+key: alcpu/core-temp
+publisher: alcpu
+name: Core Temp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALCPU/CoreTemp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALCPU/CoreTemp
+identifiers:
+- winget: ALCPU.CoreTemp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALCPU/CoreTemp
+aliases: []

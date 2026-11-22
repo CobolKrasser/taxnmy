@@ -1,0 +1,11 @@
+key: makeblock/laserbox-for-mcreate
+publisher: makeblock
+name: Laserbox for mCreate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Makeblock/LaserBox/mCreate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Makeblock/LaserBox/mCreate
+identifiers:
+- winget: Makeblock.LaserBox.mCreate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Makeblock/LaserBox/mCreate
+aliases: []

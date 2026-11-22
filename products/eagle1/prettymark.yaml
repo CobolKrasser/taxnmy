@@ -1,0 +1,11 @@
+key: eagle1/prettymark
+publisher: eagle1
+name: PrettyMark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eagle1/PrettyMark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eagle1/PrettyMark
+identifiers:
+- winget: Eagle1.PrettyMark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eagle1/PrettyMark
+aliases: []

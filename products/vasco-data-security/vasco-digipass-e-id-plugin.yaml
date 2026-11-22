@@ -1,0 +1,11 @@
+key: vasco-data-security/vasco-digipass-e-id-plugin
+publisher: vasco-data-security
+name: VASCO DIGIPASS e-ID plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneSpan/DIGIPASSeIDPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneSpan/DIGIPASSeIDPlugin
+identifiers:
+- winget: OneSpan.DIGIPASSeIDPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneSpan/DIGIPASSeIDPlugin
+aliases: []

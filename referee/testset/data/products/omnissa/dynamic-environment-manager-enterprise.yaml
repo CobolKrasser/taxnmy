@@ -1,0 +1,12 @@
+key: omnissa/dynamic-environment-manager-enterprise
+publisher: omnissa
+name: Omnissa Dynamic Environment Manager Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/DEM/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/DEM/Enterprise
+identifiers:
+- winget: Omnissa.DEM.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/DEM/Enterprise
+aliases:
+- omnissa/omnissa-dynamic-environment-manager-enterprise

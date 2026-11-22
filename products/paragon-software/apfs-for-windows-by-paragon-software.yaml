@@ -1,0 +1,11 @@
+key: paragon-software/apfs-for-windows-by-paragon-software
+publisher: paragon-software
+name: APFS for Windows by Paragon Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/APFS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/APFS
+identifiers:
+- winget: Paragon.APFS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/APFS
+aliases: []

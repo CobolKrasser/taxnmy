@@ -1,0 +1,11 @@
+key: libredsc/dsc-databricks-cli
+publisher: libredsc
+name: DSC Databricks CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreDsc/DscDatabricks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreDsc/DscDatabricks
+identifiers:
+- winget: LibreDsc.DscDatabricks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreDsc/DscDatabricks
+aliases: []

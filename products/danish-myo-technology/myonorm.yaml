@@ -1,0 +1,11 @@
+key: danish-myo-technology/myonorm
+publisher: danish-myo-technology
+name: MyoNORM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoNORM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoNORM
+identifiers:
+- winget: DMT.MyoNORM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoNORM
+aliases: []

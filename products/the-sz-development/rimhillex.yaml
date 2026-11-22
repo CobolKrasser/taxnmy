@@ -1,0 +1,11 @@
+key: the-sz-development/rimhillex
+publisher: the-sz-development
+name: RimhillEx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Rimhill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Rimhill
+identifiers:
+- winget: the-sz.Rimhill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Rimhill
+aliases: []

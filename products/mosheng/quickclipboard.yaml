@@ -1,0 +1,11 @@
+key: mosheng/quickclipboard
+publisher: mosheng
+name: QuickClipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoSheng/QuickClipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoSheng/QuickClipboard
+identifiers:
+- winget: MoSheng.QuickClipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoSheng/QuickClipboard
+aliases: []

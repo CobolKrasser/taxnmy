@@ -1,0 +1,12 @@
+key: elcomsoft/blackberry-backup-explorer
+publisher: elcomsoft
+name: Elcomsoft Blackberry Backup Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/BlackberryBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/BlackberryBackup
+identifiers:
+- winget: Elcomsoft.BlackberryBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/BlackberryBackup
+aliases:
+- elcomsoft/elcomsoft-blackberry-backup-explorer

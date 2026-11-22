@@ -1,0 +1,11 @@
+key: voltkraft/immich-folder-watch
+publisher: voltkraft
+name: Immich Folder Watch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoltKraft/ImmichFolderWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoltKraft/ImmichFolderWatch
+identifiers:
+- winget: VoltKraft.ImmichFolderWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoltKraft/ImmichFolderWatch
+aliases: []

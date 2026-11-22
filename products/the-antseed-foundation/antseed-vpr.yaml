@@ -1,0 +1,11 @@
+key: the-antseed-foundation/antseed-vpr
+publisher: the-antseed-foundation
+name: AntSeed VPR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntSeed/VPR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntSeed/VPR
+identifiers:
+- winget: AntSeed.VPR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntSeed/VPR
+aliases: []

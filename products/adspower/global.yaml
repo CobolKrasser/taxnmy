@@ -1,0 +1,12 @@
+key: adspower/global
+publisher: adspower
+name: AdsPower Global
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdsPower/AdsPower
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdsPower/AdsPower
+identifiers:
+- winget: AdsPower.AdsPower
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdsPower/AdsPower
+aliases:
+- adspower/adspower-global

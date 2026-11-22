@@ -1,0 +1,11 @@
+key: cavemansoft/cavebutler
+publisher: cavemansoft
+name: CaveButler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CavemanSoft/CaveButler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CavemanSoft/CaveButler
+identifiers:
+- winget: CavemanSoft.CaveButler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CavemanSoft/CaveButler
+aliases: []

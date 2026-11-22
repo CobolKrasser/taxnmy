@@ -1,0 +1,11 @@
+key: loresoft/msbuild-community-tasks
+publisher: loresoft
+name: MSBuild Community Tasks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoreSoft/MSBuildCommunityTasks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoreSoft/MSBuildCommunityTasks
+identifiers:
+- winget: LoreSoft.MSBuildCommunityTasks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoreSoft/MSBuildCommunityTasks
+aliases: []

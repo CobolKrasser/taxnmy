@@ -1,0 +1,11 @@
+key: frogthefrog/steam-rom-manager
+publisher: frogthefrog
+name: Steam ROM Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamGridDB/RomManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamGridDB/RomManager
+identifiers:
+- winget: SteamGridDB.RomManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamGridDB/RomManager
+aliases: []

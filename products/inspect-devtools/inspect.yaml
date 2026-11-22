@@ -1,0 +1,11 @@
+key: inspect-devtools/inspect
+publisher: inspect-devtools
+name: Inspect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InspectDevTools/Inspect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InspectDevTools/Inspect
+identifiers:
+- winget: InspectDevTools.Inspect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InspectDevTools/Inspect
+aliases: []

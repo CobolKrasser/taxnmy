@@ -1,0 +1,11 @@
+key: jde-projects/simple-project-manager
+publisher: jde-projects
+name: Simple Project Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleProjectManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleProjectManager
+identifiers:
+- winget: JDE-Projects.SimpleProjectManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleProjectManager
+aliases: []

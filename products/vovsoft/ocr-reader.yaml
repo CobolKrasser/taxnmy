@@ -1,0 +1,12 @@
+key: vovsoft/ocr-reader
+publisher: vovsoft
+name: Vovsoft OCR Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/OCRReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/OCRReader
+identifiers:
+- winget: VovSoft.OCRReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/OCRReader
+aliases:
+- vovsoft/vovsoft-ocr-reader

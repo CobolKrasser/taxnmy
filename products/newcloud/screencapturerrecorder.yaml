@@ -1,0 +1,12 @@
+key: newcloud/screencapturerrecorder
+publisher: newcloud
+name: NewCloud.ScreenCapturerRecorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/ScreenCaptureRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/ScreenCaptureRecorder
+identifiers:
+- winget: NewCloud.ScreenCaptureRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/ScreenCaptureRecorder
+aliases:
+- newcloud/newcloud-screencapturerrecorder

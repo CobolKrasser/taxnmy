@@ -1,0 +1,11 @@
+key: rwk-systems/testpackage
+publisher: rwk-systems
+name: TestPackage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RWKSystems/TestPackage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RWKSystems/TestPackage
+identifiers:
+- winget: RWKSystems.TestPackage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RWKSystems/TestPackage
+aliases: []

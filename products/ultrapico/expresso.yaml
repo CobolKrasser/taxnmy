@@ -1,0 +1,11 @@
+key: ultrapico/expresso
+publisher: ultrapico
+name: Expresso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ultrapico/expresso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ultrapico/expresso
+identifiers:
+- winget: ultrapico.expresso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ultrapico/expresso
+aliases: []

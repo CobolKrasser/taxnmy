@@ -1,0 +1,11 @@
+key: readai/read-ai
+publisher: readai
+name: Read AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReadAI/ReadAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReadAI/ReadAI
+identifiers:
+- winget: ReadAI.ReadAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReadAI/ReadAI
+aliases: []

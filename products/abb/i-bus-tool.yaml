@@ -1,0 +1,11 @@
+key: abb/i-bus-tool
+publisher: abb
+name: i-bus Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/i-busTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/i-busTool
+identifiers:
+- winget: ABB.i-busTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/i-busTool
+aliases: []

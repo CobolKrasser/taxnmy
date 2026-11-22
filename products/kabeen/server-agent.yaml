@@ -1,0 +1,12 @@
+key: kabeen/server-agent
+publisher: kabeen
+name: Kabeen Server Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kabeen/KabeenServerAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kabeen/KabeenServerAgent
+identifiers:
+- winget: Kabeen.KabeenServerAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kabeen/KabeenServerAgent
+aliases:
+- kabeen/kabeen-server-agent

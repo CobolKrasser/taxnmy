@@ -1,0 +1,11 @@
+key: ipep/scantailor-experimental
+publisher: ipep
+name: Scantailor-Experimental
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEP/Scantailor-Experimental
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEP/Scantailor-Experimental
+identifiers:
+- winget: IPEP.Scantailor-Experimental
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEP/Scantailor-Experimental
+aliases: []

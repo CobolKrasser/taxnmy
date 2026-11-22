@@ -1,0 +1,11 @@
+key: zen/zen
+publisher: zen
+name: Zen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZenPrivacy/ZenDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZenPrivacy/ZenDesktop
+identifiers:
+- winget: ZenPrivacy.ZenDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZenPrivacy/ZenDesktop
+aliases: []

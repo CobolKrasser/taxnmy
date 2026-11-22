@@ -1,0 +1,11 @@
+key: unidata/netcdf
+publisher: unidata
+name: NetCDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unidata/NetCDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unidata/NetCDF
+identifiers:
+- winget: Unidata.NetCDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unidata/NetCDF
+aliases: []

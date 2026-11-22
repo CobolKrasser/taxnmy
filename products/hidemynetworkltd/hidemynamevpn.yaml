@@ -1,0 +1,11 @@
+key: hidemynetworkltd/hidemynamevpn
+publisher: hidemynetworkltd
+name: HidemyNameVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HidemyNetworkLtd/HidemyNameVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HidemyNetworkLtd/HidemyNameVPN
+identifiers:
+- winget: HidemyNetworkLtd.HidemyNameVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HidemyNetworkLtd/HidemyNameVPN
+aliases: []

@@ -1,0 +1,11 @@
+key: the-xournal-plus-plus-team/xournal-plus-plus
+publisher: the-xournal-plus-plus-team
+name: Xournal++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xournal++/Xournal++
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xournal++/Xournal++
+identifiers:
+- winget: Xournal++.Xournal++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xournal++/Xournal++
+aliases: []

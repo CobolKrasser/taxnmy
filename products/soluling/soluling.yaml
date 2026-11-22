@@ -1,0 +1,11 @@
+key: soluling/soluling
+publisher: soluling
+name: Soluling
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soluling/Soluling
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soluling/Soluling
+identifiers:
+- winget: Soluling.Soluling
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soluling/Soluling
+aliases: []

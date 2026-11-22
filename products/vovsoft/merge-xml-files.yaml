@@ -1,0 +1,12 @@
+key: vovsoft/merge-xml-files
+publisher: vovsoft
+name: Vovsoft Merge XML Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeXMLFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeXMLFiles
+identifiers:
+- winget: VovSoft.MergeXMLFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeXMLFiles
+aliases:
+- vovsoft/vovsoft-merge-xml-files

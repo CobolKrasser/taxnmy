@@ -1,0 +1,11 @@
+key: oksion/xi-control
+publisher: oksion
+name: Xi Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oksion/XiControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oksion/XiControl
+identifiers:
+- winget: Oksion.XiControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oksion/XiControl
+aliases: []

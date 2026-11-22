@@ -1,0 +1,11 @@
+key: visual-computing-lab-isti-cnr/qutemol
+publisher: visual-computing-lab-isti-cnr
+name: QuteMol
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CNRISTI/QuteMol
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CNRISTI/QuteMol
+identifiers:
+- winget: CNRISTI.QuteMol
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CNRISTI/QuteMol
+aliases: []

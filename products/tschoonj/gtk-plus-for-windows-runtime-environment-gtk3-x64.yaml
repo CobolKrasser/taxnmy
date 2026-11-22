@@ -1,0 +1,11 @@
+key: tschoonj/gtk-plus-for-windows-runtime-environment-gtk3-x64
+publisher: tschoonj
+name: GTK+ for Windows Runtime Environment (GTK3 x64)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tschoonj/GTKForWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tschoonj/GTKForWindows
+identifiers:
+- winget: tschoonj.GTKForWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tschoonj/GTKForWindows
+aliases: []

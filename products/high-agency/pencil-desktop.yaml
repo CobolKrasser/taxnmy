@@ -1,0 +1,11 @@
+key: high-agency/pencil-desktop
+publisher: high-agency
+name: Pencil-Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pencil/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pencil/Desktop
+identifiers:
+- winget: Pencil.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pencil/Desktop
+aliases: []

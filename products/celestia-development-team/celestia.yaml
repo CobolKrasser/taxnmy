@@ -1,0 +1,11 @@
+key: celestia-development-team/celestia
+publisher: celestia-development-team
+name: Celestia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Celestia/Celestia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Celestia/Celestia
+identifiers:
+- winget: Celestia.Celestia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Celestia/Celestia
+aliases: []

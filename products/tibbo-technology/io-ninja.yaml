@@ -1,0 +1,11 @@
+key: tibbo-technology/io-ninja
+publisher: tibbo-technology
+name: IO Ninja
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tibbo/ioninja
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tibbo/ioninja
+identifiers:
+- winget: tibbo.ioninja
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tibbo/ioninja
+aliases: []

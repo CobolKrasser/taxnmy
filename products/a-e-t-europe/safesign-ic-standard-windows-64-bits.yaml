@@ -1,0 +1,11 @@
+key: a-e-t-europe/safesign-ic-standard-windows-64-bits
+publisher: a-e-t-europe
+name: SafeSign IC Standard Windows 64-bits
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETEurope/SafeSignICStandard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETEurope/SafeSignICStandard
+identifiers:
+- winget: AETEurope.SafeSignICStandard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETEurope/SafeSignICStandard
+aliases: []

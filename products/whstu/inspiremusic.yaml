@@ -1,0 +1,11 @@
+key: whstu/inspiremusic
+publisher: whstu
+name: InspireMusic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHStudio/InspireMusic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHStudio/InspireMusic
+identifiers:
+- winget: WHStudio.InspireMusic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHStudio/InspireMusic
+aliases: []

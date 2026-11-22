@@ -1,0 +1,11 @@
+key: aurelio-avila/pc-tweaker
+publisher: aurelio-avila
+name: PC Tweaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/PCTweaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/PCTweaker
+identifiers:
+- winget: AurelioAvila.PCTweaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/PCTweaker
+aliases: []

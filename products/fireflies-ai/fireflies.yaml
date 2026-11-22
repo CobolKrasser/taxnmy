@@ -1,0 +1,11 @@
+key: fireflies-ai/fireflies
+publisher: fireflies-ai
+name: Fireflies
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fireflies/Fireflies
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fireflies/Fireflies
+identifiers:
+- winget: Fireflies.Fireflies
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fireflies/Fireflies
+aliases: []

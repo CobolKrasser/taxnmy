@@ -1,0 +1,11 @@
+key: rouchant/zenit
+publisher: rouchant
+name: Zenit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rouchant/Zenit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rouchant/Zenit
+identifiers:
+- winget: Rouchant.Zenit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rouchant/Zenit
+aliases: []

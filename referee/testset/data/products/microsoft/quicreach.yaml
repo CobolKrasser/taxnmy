@@ -1,0 +1,11 @@
+key: microsoft/quicreach
+publisher: microsoft
+name: quicreach
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/quicreach
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/quicreach
+identifiers:
+- winget: Microsoft.quicreach
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/quicreach
+aliases: []

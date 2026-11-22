@@ -1,0 +1,11 @@
+key: cline/cline
+publisher: cline
+name: Cline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cline/ClineDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cline/ClineDesktop
+identifiers:
+- winget: Cline.ClineDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cline/ClineDesktop
+aliases: []

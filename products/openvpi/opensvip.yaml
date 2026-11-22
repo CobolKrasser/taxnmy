@@ -1,0 +1,11 @@
+key: openvpi/opensvip
+publisher: openvpi
+name: Opensvip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVPI/Opensvip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVPI/Opensvip
+identifiers:
+- winget: OpenVPI.Opensvip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVPI/Opensvip
+aliases: []

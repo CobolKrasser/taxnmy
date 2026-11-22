@@ -1,0 +1,11 @@
+key: autobrr/upbrr-cli
+publisher: autobrr
+name: upbrr CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/autobrr/upbrr/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/autobrr/upbrr/cli
+identifiers:
+- winget: autobrr.upbrr.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/autobrr/upbrr/cli
+aliases: []

@@ -1,0 +1,11 @@
+key: where2go/rain-driver
+publisher: where2go
+name: Rain Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TVasilev/RainDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TVasilev/RainDriver
+identifiers:
+- winget: TVasilev.RainDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TVasilev/RainDriver
+aliases: []

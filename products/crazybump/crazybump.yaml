@@ -1,0 +1,11 @@
+key: crazybump/crazybump
+publisher: crazybump
+name: Crazybump
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crazybump/Crazybump
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crazybump/Crazybump
+identifiers:
+- winget: Crazybump.Crazybump
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crazybump/Crazybump
+aliases: []

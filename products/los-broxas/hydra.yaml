@@ -1,0 +1,11 @@
+key: los-broxas/hydra
+publisher: los-broxas
+name: Hydra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydraLauncher/Hydra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydraLauncher/Hydra
+identifiers:
+- winget: HydraLauncher.Hydra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydraLauncher/Hydra
+aliases: []

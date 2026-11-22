@@ -1,0 +1,11 @@
+key: warframe-community-developers/wfinfo
+publisher: warframe-community-developers
+name: WFInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WFCD/WFInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WFCD/WFInfo
+identifiers:
+- winget: WFCD.WFInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WFCD/WFInfo
+aliases: []

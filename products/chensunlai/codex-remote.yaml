@@ -1,0 +1,11 @@
+key: chensunlai/codex-remote
+publisher: chensunlai
+name: Codex Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chensunlai/CodexRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chensunlai/CodexRemote
+identifiers:
+- winget: chensunlai.CodexRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chensunlai/CodexRemote
+aliases: []

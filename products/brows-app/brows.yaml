@@ -1,0 +1,11 @@
+key: brows-app/brows
+publisher: brows-app
+name: Brows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brows/App
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brows/App
+identifiers:
+- winget: Brows.App
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brows/App
+aliases: []

@@ -1,0 +1,11 @@
+key: chillibits/spice
+publisher: chillibits
+name: Spice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliBits/Spice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliBits/Spice
+identifiers:
+- winget: ChilliBits.Spice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliBits/Spice
+aliases: []

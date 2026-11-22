@@ -1,0 +1,11 @@
+key: pbh-btn-community/peerbanhelper
+publisher: pbh-btn-community
+name: PeerBanHelper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PBH-BTN/PeerBanHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PBH-BTN/PeerBanHelper
+identifiers:
+- winget: PBH-BTN.PeerBanHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PBH-BTN/PeerBanHelper
+aliases: []

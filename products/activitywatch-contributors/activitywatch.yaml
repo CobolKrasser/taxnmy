@@ -1,0 +1,11 @@
+key: activitywatch-contributors/activitywatch
+publisher: activitywatch-contributors
+name: ActivityWatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActivityWatch/ActivityWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActivityWatch/ActivityWatch
+identifiers:
+- winget: ActivityWatch.ActivityWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActivityWatch/ActivityWatch
+aliases: []

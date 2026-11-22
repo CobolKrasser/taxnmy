@@ -1,0 +1,11 @@
+key: bestnotes/bestnotes
+publisher: bestnotes
+name: BestNotes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BestNotes/BestNotes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BestNotes/BestNotes
+identifiers:
+- winget: BestNotes.BestNotes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BestNotes/BestNotes
+aliases: []

@@ -1,0 +1,11 @@
+key: blinue/magpie
+publisher: blinue
+name: Magpie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blinue/Magpie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blinue/Magpie
+identifiers:
+- winget: Blinue.Magpie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blinue/Magpie
+aliases: []

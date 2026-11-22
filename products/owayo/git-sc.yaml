@@ -1,0 +1,11 @@
+key: owayo/git-sc
+publisher: owayo
+name: git-sc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/owayo/git-sc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/owayo/git-sc
+identifiers:
+- winget: owayo.git-sc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/owayo/git-sc
+aliases: []

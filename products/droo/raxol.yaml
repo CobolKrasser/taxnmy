@@ -1,0 +1,11 @@
+key: droo/raxol
+publisher: droo
+name: Raxol
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DROOdotFOO/RaxolCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DROOdotFOO/RaxolCLI
+identifiers:
+- winget: DROOdotFOO.RaxolCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DROOdotFOO/RaxolCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: thomas-dybdahl-ahle/pychess
+publisher: thomas-dybdahl-ahle
+name: pychess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pychess/pychess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pychess/pychess
+identifiers:
+- winget: pychess.pychess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pychess/pychess
+aliases: []

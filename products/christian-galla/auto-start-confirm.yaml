@@ -1,0 +1,11 @@
+key: christian-galla/auto-start-confirm
+publisher: christian-galla
+name: Auto Start Confirm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianGalla/AutoStartConfirm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianGalla/AutoStartConfirm
+identifiers:
+- winget: ChristianGalla.AutoStartConfirm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristianGalla/AutoStartConfirm
+aliases: []

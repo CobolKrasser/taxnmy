@@ -1,0 +1,11 @@
+key: anystorage/anystorage
+publisher: anystorage
+name: AnyStorage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyStorage/AnyStorage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyStorage/AnyStorage
+identifiers:
+- winget: AnyStorage.AnyStorage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyStorage/AnyStorage
+aliases: []

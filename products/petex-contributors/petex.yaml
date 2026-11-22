@@ -1,0 +1,11 @@
+key: petex-contributors/petex
+publisher: petex-contributors
+name: Petex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iebb/Petex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iebb/Petex
+identifiers:
+- winget: iebb.Petex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iebb/Petex
+aliases: []

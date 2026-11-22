@@ -1,0 +1,11 @@
+key: remote-it/remoteit
+publisher: remote-it
+name: remoteit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/remoteit/remoteit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/remoteit/remoteit
+identifiers:
+- winget: remoteit.remoteit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/remoteit/remoteit
+aliases: []

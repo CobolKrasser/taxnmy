@@ -1,0 +1,11 @@
+key: microsoft/nuget
+publisher: microsoft
+name: NuGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/NuGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/NuGet
+identifiers:
+- winget: Microsoft.NuGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/NuGet
+aliases: []

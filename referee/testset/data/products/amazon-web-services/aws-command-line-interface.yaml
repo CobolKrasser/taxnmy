@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-command-line-interface
+publisher: amazon-web-services
+name: AWS Command Line Interface
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCLI
+identifiers:
+- winget: Amazon.AWSCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCLI
+aliases: []

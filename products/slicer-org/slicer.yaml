@@ -1,0 +1,11 @@
+key: slicer-org/slicer
+publisher: slicer-org
+name: Slicer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/Slicer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/Slicer
+identifiers:
+- winget: Kitware.Slicer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/Slicer
+aliases: []

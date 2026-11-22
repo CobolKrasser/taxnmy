@@ -1,0 +1,11 @@
+key: nimbalyst-team/nimbalyst
+publisher: nimbalyst-team
+name: Nimbalyst
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nimbalyst/Nimbalyst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nimbalyst/Nimbalyst
+identifiers:
+- winget: Nimbalyst.Nimbalyst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nimbalyst/Nimbalyst
+aliases: []

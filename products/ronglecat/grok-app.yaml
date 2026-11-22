@@ -1,0 +1,11 @@
+key: ronglecat/grok-app
+publisher: ronglecat
+name: Grok App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RongleCat/GrokApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RongleCat/GrokApp
+identifiers:
+- winget: RongleCat.GrokApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RongleCat/GrokApp
+aliases: []

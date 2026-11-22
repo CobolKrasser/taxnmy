@@ -1,0 +1,11 @@
+key: humanity/xmoto
+publisher: humanity
+name: xmoto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XMoto/XMoto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XMoto/XMoto
+identifiers:
+- winget: XMoto.XMoto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XMoto/XMoto
+aliases: []

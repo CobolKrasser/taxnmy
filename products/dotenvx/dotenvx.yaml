@@ -1,0 +1,11 @@
+key: dotenvx/dotenvx
+publisher: dotenvx
+name: dotenvx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotenvx/dotenvx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotenvx/dotenvx
+identifiers:
+- winget: dotenvx.dotenvx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotenvx/dotenvx
+aliases: []

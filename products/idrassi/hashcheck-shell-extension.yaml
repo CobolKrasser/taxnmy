@@ -1,0 +1,11 @@
+key: idrassi/hashcheck-shell-extension
+publisher: idrassi
+name: HashCheck Shell Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/idrassi/HashCheckShellExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/idrassi/HashCheckShellExtension
+identifiers:
+- winget: idrassi.HashCheckShellExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/idrassi/HashCheckShellExtension
+aliases: []

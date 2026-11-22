@@ -1,0 +1,11 @@
+key: eugene-barsky/evb-player
+publisher: eugene-barsky
+name: EVB Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EugeneBarsky/EVBPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EugeneBarsky/EVBPlayer
+identifiers:
+- winget: EugeneBarsky.EVBPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EugeneBarsky/EVBPlayer
+aliases: []

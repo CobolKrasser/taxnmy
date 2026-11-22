@@ -1,0 +1,11 @@
+key: https-github-com-snoopwpf/snoop
+publisher: https-github-com-snoopwpf
+name: Snoop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnoopWpf/Snoop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnoopWpf/Snoop
+identifiers:
+- winget: SnoopWpf.Snoop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnoopWpf/Snoop
+aliases: []

@@ -919,7 +919,7 @@ class TestsetTest(unittest.TestCase):
         for case in self.cases:
             taken_out = set(case.holdout) | set(case.hide)
             changed = [rel for rel in case.proposal
-                       if (REPO / rel).is_file() and rel not in taken_out and rel not in case.context]
+                       if (referee.TESTSET_DATA / rel).is_file() and rel not in taken_out and rel not in case.context]
             if changed:
                 loose[case.id] = changed
         self.assertEqual(loose, {})
@@ -928,7 +928,7 @@ class TestsetTest(unittest.TestCase):
     def setUpClass(cls):
         """The real test set staged once: staging copies and lints the whole dataset per case."""
         cls.cases = referee.load_cases(REPO / "referee/testset/cases.yaml")
-        stager = referee.Stager(REPO)
+        stager = referee.Stager(referee.TESTSET_DATA)  # fixed data: a filling round leaves the outcome (TAX-56)
         try:
             cls.staged = {c.id: stager.stage(c) for c in cls.cases}
         finally:

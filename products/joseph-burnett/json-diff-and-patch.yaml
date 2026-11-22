@@ -1,0 +1,11 @@
+key: joseph-burnett/json-diff-and-patch
+publisher: joseph-burnett
+name: JSON diff and patch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/josephburnett/jd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/josephburnett/jd
+identifiers:
+- winget: josephburnett.jd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/josephburnett/jd
+aliases: []

@@ -1,0 +1,11 @@
+key: moonlight-game-streaming-project/moonlight-game-streaming-client
+publisher: moonlight-game-streaming-project
+name: Moonlight Game Streaming Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonlightGameStreamingProject/Moonlight
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonlightGameStreamingProject/Moonlight
+identifiers:
+- winget: MoonlightGameStreamingProject.Moonlight
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonlightGameStreamingProject/Moonlight
+aliases: []

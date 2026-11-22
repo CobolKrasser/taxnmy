@@ -1,0 +1,11 @@
+key: opera-software/opera-beta
+publisher: opera-software
+name: Opera beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/Opera/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/Opera/Beta
+identifiers:
+- winget: Opera.Opera.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/Opera/Beta
+aliases: []

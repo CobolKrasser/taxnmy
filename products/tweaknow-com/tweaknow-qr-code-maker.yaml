@@ -1,0 +1,11 @@
+key: tweaknow-com/tweaknow-qr-code-maker
+publisher: tweaknow-com
+name: TweakNow QR Code Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TweakNow/QRCodeMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TweakNow/QRCodeMaker
+identifiers:
+- winget: TweakNow.QRCodeMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TweakNow/QRCodeMaker
+aliases: []

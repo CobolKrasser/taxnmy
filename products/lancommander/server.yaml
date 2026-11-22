@@ -1,0 +1,12 @@
+key: lancommander/server
+publisher: lancommander
+name: LANCommander Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCommander/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCommander/Server
+identifiers:
+- winget: LANCommander.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCommander/Server
+aliases:
+- lancommander/lancommander-server

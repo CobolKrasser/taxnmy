@@ -1,0 +1,11 @@
+key: netrust/nsign-desktop
+publisher: netrust
+name: nSign Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netrust/nSignDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netrust/nSignDesktop
+identifiers:
+- winget: Netrust.nSignDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netrust/nSignDesktop
+aliases: []

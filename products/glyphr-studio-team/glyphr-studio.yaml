@@ -1,0 +1,11 @@
+key: glyphr-studio-team/glyphr-studio
+publisher: glyphr-studio-team
+name: Glyphr Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlyphrStudio/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlyphrStudio/Desktop
+identifiers:
+- winget: GlyphrStudio.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlyphrStudio/Desktop
+aliases: []

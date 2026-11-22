@@ -1,0 +1,11 @@
+key: john-j-jordan/joe-s-own-editor-for-windows
+publisher: john-j-jordan
+name: Joe's Own Editor for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joe/joe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joe/joe
+identifiers:
+- winget: joe.joe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joe/joe
+aliases: []

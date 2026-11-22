@@ -1,0 +1,12 @@
+key: veracode/cli
+publisher: veracode
+name: Veracode CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veracode/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veracode/CLI
+identifiers:
+- winget: Veracode.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veracode/CLI
+aliases:
+- veracode/veracode-cli

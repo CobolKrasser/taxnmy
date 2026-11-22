@@ -1,0 +1,11 @@
+key: bendix-tonn/tsw-mod-manager
+publisher: bendix-tonn
+name: TSW Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskPlays/TSWModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskPlays/TSWModManager
+identifiers:
+- winget: TaskPlays.TSWModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskPlays/TSWModManager
+aliases: []

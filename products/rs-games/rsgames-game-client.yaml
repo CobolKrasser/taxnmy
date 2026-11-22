@@ -1,0 +1,11 @@
+key: rs-games/rsgames-game-client
+publisher: rs-games
+name: RSGames Game Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RSGames/RSGames/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RSGames/RSGames/Client
+identifiers:
+- winget: RSGames.RSGames.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RSGames/RSGames/Client
+aliases: []

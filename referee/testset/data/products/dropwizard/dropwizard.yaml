@@ -1,0 +1,11 @@
+key: dropwizard/dropwizard
+publisher: dropwizard
+name: Dropwizard
+kind: software
+source: https://endoflife.date/dropwizard
+versions:
+  source: https://endoflife.date/dropwizard
+identifiers:
+- purl: pkg:github/dropwizard/dropwizard
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dropwizard.md
+aliases: []

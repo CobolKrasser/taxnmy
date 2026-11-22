@@ -1,0 +1,11 @@
+key: sordum/update-time
+publisher: sordum
+name: Update Time
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/UpdateTime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/UpdateTime
+identifiers:
+- winget: sordum.UpdateTime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/UpdateTime
+aliases: []

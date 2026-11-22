@@ -1,0 +1,11 @@
+key: qpdf/qpdf
+publisher: qpdf
+name: QPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QPDF/QPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QPDF/QPDF
+identifiers:
+- winget: QPDF.QPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QPDF/QPDF
+aliases: []

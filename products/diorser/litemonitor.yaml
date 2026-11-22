@@ -1,0 +1,11 @@
+key: diorser/litemonitor
+publisher: diorser
+name: LiteMonitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diorser/LiteMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diorser/LiteMonitor
+identifiers:
+- winget: Diorser.LiteMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diorser/LiteMonitor
+aliases: []

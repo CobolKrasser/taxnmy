@@ -1,0 +1,11 @@
+key: duplicati-team/duplicati
+publisher: duplicati-team
+name: Duplicati
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Duplicati/Duplicati
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Duplicati/Duplicati
+identifiers:
+- winget: Duplicati.Duplicati
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Duplicati/Duplicati
+aliases: []

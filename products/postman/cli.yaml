@@ -1,0 +1,12 @@
+key: postman/cli
+publisher: postman
+name: Postman CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman/CLI
+identifiers:
+- winget: Postman.Postman.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman/CLI
+aliases:
+- postman/postman-cli

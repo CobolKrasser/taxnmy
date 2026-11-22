@@ -1,0 +1,11 @@
+key: canonical/multipass
+publisher: canonical
+name: Multipass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Multipass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Multipass
+identifiers:
+- winget: Canonical.Multipass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Multipass
+aliases: []

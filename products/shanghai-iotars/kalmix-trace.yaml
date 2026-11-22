@@ -1,0 +1,11 @@
+key: shanghai-iotars/kalmix-trace
+publisher: shanghai-iotars
+name: KALMIX Trace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kalmix/Trace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kalmix/Trace
+identifiers:
+- winget: Kalmix.Trace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kalmix/Trace
+aliases: []

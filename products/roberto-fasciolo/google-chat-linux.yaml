@@ -1,0 +1,11 @@
+key: roberto-fasciolo/google-chat-linux
+publisher: roberto-fasciolo
+name: google-chat-linux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/squalou/google-chat-linux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/squalou/google-chat-linux
+identifiers:
+- winget: squalou.google-chat-linux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/squalou/google-chat-linux
+aliases: []

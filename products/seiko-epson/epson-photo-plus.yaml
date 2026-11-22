@@ -1,0 +1,11 @@
+key: seiko-epson/epson-photo-plus
+publisher: seiko-epson
+name: Epson Photo+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PhotoPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PhotoPlus
+identifiers:
+- winget: EPSON.PhotoPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PhotoPlus
+aliases: []

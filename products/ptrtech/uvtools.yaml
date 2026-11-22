@@ -1,0 +1,11 @@
+key: ptrtech/uvtools
+publisher: ptrtech
+name: UVtools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTRTECH/UVtools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTRTECH/UVtools
+identifiers:
+- winget: PTRTECH.UVtools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTRTECH/UVtools
+aliases: []

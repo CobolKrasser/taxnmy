@@ -1,0 +1,11 @@
+key: learning-machines/photocraft
+publisher: learning-machines
+name: PhotoCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/PhotoCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/PhotoCraft
+identifiers:
+- winget: ArtCraft.PhotoCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/PhotoCraft
+aliases: []

@@ -1,0 +1,11 @@
+key: shkas/ssm
+publisher: shkas
+name: SSM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SHKAS/SSM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SHKAS/SSM
+identifiers:
+- winget: SHKAS.SSM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SHKAS/SSM
+aliases: []

@@ -1,0 +1,12 @@
+key: synology/drive-client
+publisher: synology
+name: Synology Drive Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/DriveClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/DriveClient
+identifiers:
+- winget: Synology.DriveClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/DriveClient
+aliases:
+- synology/synology-drive-client

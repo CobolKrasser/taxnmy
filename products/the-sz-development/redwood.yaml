@@ -1,0 +1,11 @@
+key: the-sz-development/redwood
+publisher: the-sz-development
+name: Redwood
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Redwood
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Redwood
+identifiers:
+- winget: the-sz.Redwood
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Redwood
+aliases: []

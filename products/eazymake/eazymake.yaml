@@ -1,0 +1,11 @@
+key: eazymake/eazymake
+publisher: eazymake
+name: EazyMake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EazyMake/EazyMake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EazyMake/EazyMake
+identifiers:
+- winget: EazyMake.EazyMake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EazyMake/EazyMake
+aliases: []

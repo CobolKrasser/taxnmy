@@ -1,0 +1,11 @@
+key: avr-dudes/avrdude-mingw-clang
+publisher: avr-dudes
+name: AVRDUDE MinGW Clang
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW/Clang
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW/Clang
+identifiers:
+- winget: AVRDudes.AVRDUDE.MinGW.Clang
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW/Clang
+aliases: []

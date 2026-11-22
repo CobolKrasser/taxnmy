@@ -1,0 +1,12 @@
+key: novacura/flow-classic-studio
+publisher: novacura
+name: Novacura Flow Classic Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowStudio
+identifiers:
+- winget: Novacura.FlowStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowStudio
+aliases:
+- novacura/novacura-flow-classic-studio

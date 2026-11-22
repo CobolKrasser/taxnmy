@@ -1,0 +1,11 @@
+key: avr-dudes/avrdude-mingw-ucrt
+publisher: avr-dudes
+name: AVRDUDE MinGW UCRT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW/UCRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW/UCRT
+identifiers:
+- winget: AVRDudes.AVRDUDE.MinGW.UCRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW/UCRT
+aliases: []

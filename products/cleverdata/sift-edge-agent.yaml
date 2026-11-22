@@ -1,0 +1,11 @@
+key: cleverdata/sift-edge-agent
+publisher: cleverdata
+name: Sift Edge Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverData/SiftAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverData/SiftAgent
+identifiers:
+- winget: CleverData.SiftAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverData/SiftAgent
+aliases: []

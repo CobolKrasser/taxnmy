@@ -1,0 +1,11 @@
+key: bonsai-foundation/bonsai
+publisher: bonsai-foundation
+name: Bonsai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BonsaiFoundation/Bonsai
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BonsaiFoundation/Bonsai
+identifiers:
+- winget: BonsaiFoundation.Bonsai
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BonsaiFoundation/Bonsai
+aliases: []

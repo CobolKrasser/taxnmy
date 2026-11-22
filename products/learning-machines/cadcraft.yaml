@@ -1,0 +1,11 @@
+key: learning-machines/cadcraft
+publisher: learning-machines
+name: CADCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/CadCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/CadCraft
+identifiers:
+- winget: ArtCraft.CadCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/CadCraft
+aliases: []

@@ -1,0 +1,11 @@
+key: bogdan-calapod/pdq-cli
+publisher: bogdan-calapod
+name: pdq-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BogdanCalapod/pdq-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BogdanCalapod/pdq-cli
+identifiers:
+- winget: BogdanCalapod.pdq-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BogdanCalapod/pdq-cli
+aliases: []

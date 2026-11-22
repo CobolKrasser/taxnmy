@@ -1,0 +1,11 @@
+key: conda-forge/mambaforge-pypy3
+publisher: conda-forge
+name: Mambaforge-pypy3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Mambaforge/PyPy3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Mambaforge/PyPy3
+identifiers:
+- winget: CondaForge.Mambaforge.PyPy3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Mambaforge/PyPy3
+aliases: []

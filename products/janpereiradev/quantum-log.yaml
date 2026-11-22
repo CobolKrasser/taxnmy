@@ -1,0 +1,11 @@
+key: janpereiradev/quantum-log
+publisher: janpereiradev
+name: QUANTUM_LOG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanPereiraDev/QuantumLog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanPereiraDev/QuantumLog
+identifiers:
+- winget: JanPereiraDev.QuantumLog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanPereiraDev/QuantumLog
+aliases: []

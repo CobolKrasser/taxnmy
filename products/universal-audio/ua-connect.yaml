@@ -1,0 +1,11 @@
+key: universal-audio/ua-connect
+publisher: universal-audio
+name: UA Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalAudio/UAConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalAudio/UAConnect
+identifiers:
+- winget: UniversalAudio.UAConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalAudio/UAConnect
+aliases: []

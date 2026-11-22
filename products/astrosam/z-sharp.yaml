@@ -1,0 +1,11 @@
+key: astrosam/z-sharp
+publisher: astrosam
+name: Z-Sharp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sam-astro/Z-Sharp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sam-astro/Z-Sharp
+identifiers:
+- winget: sam-astro.Z-Sharp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sam-astro/Z-Sharp
+aliases: []

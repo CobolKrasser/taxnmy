@@ -1,0 +1,11 @@
+key: mcserv/mcserv
+publisher: mcserv
+name: McServ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/McServ/McServ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/McServ/McServ
+identifiers:
+- winget: McServ.McServ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/McServ/McServ
+aliases: []

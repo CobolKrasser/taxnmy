@@ -1,0 +1,11 @@
+key: happytalk/happytalk
+publisher: happytalk
+name: happytalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MBISolution/happytalk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MBISolution/happytalk
+identifiers:
+- winget: MBISolution.happytalk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MBISolution/happytalk
+aliases: []

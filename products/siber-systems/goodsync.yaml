@@ -1,0 +1,11 @@
+key: siber-systems/goodsync
+publisher: siber-systems
+name: GoodSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiberSystems/GoodSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiberSystems/GoodSync
+identifiers:
+- winget: SiberSystems.GoodSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiberSystems/GoodSync
+aliases: []

@@ -1,0 +1,11 @@
+key: softsea/exif-data-viewer
+publisher: softsea
+name: Exif Data Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ExifDataViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ExifDataViewer
+identifiers:
+- winget: SoftSea.ExifDataViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ExifDataViewer
+aliases: []

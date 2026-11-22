@@ -1,0 +1,11 @@
+key: croppick/croppickvoice
+publisher: croppick
+name: CroppickVoice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Croppick/CroppickVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Croppick/CroppickVoice
+identifiers:
+- winget: Croppick.CroppickVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Croppick/CroppickVoice
+aliases: []

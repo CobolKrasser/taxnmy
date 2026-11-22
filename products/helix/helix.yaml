@@ -1,0 +1,11 @@
+key: helix/helix
+publisher: helix
+name: Helix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helix/Helix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helix/Helix
+identifiers:
+- winget: Helix.Helix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helix/Helix
+aliases: []

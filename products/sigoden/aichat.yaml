@@ -1,0 +1,11 @@
+key: sigoden/aichat
+publisher: sigoden
+name: AIChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/AIChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/AIChat
+identifiers:
+- winget: sigoden.AIChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/AIChat
+aliases: []

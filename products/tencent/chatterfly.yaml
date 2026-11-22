@@ -1,0 +1,11 @@
+key: tencent/chatterfly
+publisher: tencent
+name: Chatterfly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Chatterfly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Chatterfly
+identifiers:
+- winget: Tencent.Chatterfly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Chatterfly
+aliases: []

@@ -1,0 +1,11 @@
+key: watchman/watchman
+publisher: watchman
+name: watchman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/facebook/watchman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/facebook/watchman
+identifiers:
+- winget: facebook.watchman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/facebook/watchman
+aliases: []

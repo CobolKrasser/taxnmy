@@ -1,0 +1,12 @@
+key: virustotal/uploader
+publisher: virustotal
+name: VirusTotal Uploader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/VirusTotalUploader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/VirusTotalUploader
+identifiers:
+- winget: VirusTotal.VirusTotalUploader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/VirusTotalUploader
+aliases:
+- virustotal/virustotal-uploader

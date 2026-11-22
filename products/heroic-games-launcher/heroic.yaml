@@ -1,0 +1,11 @@
+key: heroic-games-launcher/heroic
+publisher: heroic-games-launcher
+name: Heroic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroicGamesLauncher/HeroicGamesLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroicGamesLauncher/HeroicGamesLauncher
+identifiers:
+- winget: HeroicGamesLauncher.HeroicGamesLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroicGamesLauncher/HeroicGamesLauncher
+aliases: []

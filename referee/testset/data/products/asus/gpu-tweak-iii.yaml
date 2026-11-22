@@ -1,0 +1,11 @@
+key: asus/gpu-tweak-iii
+publisher: asus
+name: GPU Tweak III
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/GpuTweak3/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/GpuTweak3/Stable
+identifiers:
+- winget: Asus.GpuTweak3.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/GpuTweak3/Stable
+aliases: []

@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:debian:debian_linux
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:debian:debian_linux&resultsPerPage=1
+- winget: Debian.Debian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Debian/Debian
 aliases: []

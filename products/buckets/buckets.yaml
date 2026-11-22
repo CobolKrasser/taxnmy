@@ -1,0 +1,11 @@
+key: buckets/buckets
+publisher: buckets
+name: Buckets
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnePartRain/Buckets
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnePartRain/Buckets
+identifiers:
+- winget: OnePartRain.Buckets
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnePartRain/Buckets
+aliases: []

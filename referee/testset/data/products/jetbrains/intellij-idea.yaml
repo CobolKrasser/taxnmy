@@ -1,0 +1,13 @@
+key: jetbrains/intellij-idea
+publisher: jetbrains
+name: IntelliJ IDEA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA
+identifiers:
+- winget: JetBrains.IntelliJIDEA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA
+- winget: JetBrains.IntelliJIDEA.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/EAP
+aliases: []

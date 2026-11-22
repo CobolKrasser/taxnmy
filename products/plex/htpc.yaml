@@ -1,0 +1,12 @@
+key: plex/htpc
+publisher: plex
+name: Plex HTPC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexHTPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexHTPC
+identifiers:
+- winget: Plex.PlexHTPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexHTPC
+aliases:
+- plex/plex-htpc

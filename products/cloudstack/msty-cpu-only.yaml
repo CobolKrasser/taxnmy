@@ -1,0 +1,11 @@
+key: cloudstack/msty-cpu-only
+publisher: cloudstack
+name: Msty (CPU only)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudStack/Msty/CPU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudStack/Msty/CPU
+identifiers:
+- winget: CloudStack.Msty.CPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudStack/Msty/CPU
+aliases: []

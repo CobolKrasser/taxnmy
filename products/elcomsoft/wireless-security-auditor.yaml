@@ -1,0 +1,12 @@
+key: elcomsoft/wireless-security-auditor
+publisher: elcomsoft
+name: Elcomsoft Wireless Security Auditor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/WirelessSecurityAuditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/WirelessSecurityAuditor
+identifiers:
+- winget: Elcomsoft.WirelessSecurityAuditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/WirelessSecurityAuditor
+aliases:
+- elcomsoft/elcomsoft-wireless-security-auditor

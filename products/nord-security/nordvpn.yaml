@@ -1,0 +1,11 @@
+key: nord-security/nordvpn
+publisher: nord-security
+name: NordVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordVPN
+identifiers:
+- winget: NordSecurity.NordVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordVPN
+aliases: []

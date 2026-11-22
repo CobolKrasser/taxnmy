@@ -1,0 +1,11 @@
+key: typora-io/typora
+publisher: typora-io
+name: Typora
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/appmakes/Typora
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/appmakes/Typora
+identifiers:
+- winget: appmakes.Typora
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/appmakes/Typora
+aliases: []

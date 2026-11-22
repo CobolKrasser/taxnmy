@@ -1,0 +1,11 @@
+key: kalytera-systems/ipcamlapse
+publisher: kalytera-systems
+name: IPCamLapse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KalyteraSystems/IPCamLapse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KalyteraSystems/IPCamLapse
+identifiers:
+- winget: KalyteraSystems.IPCamLapse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KalyteraSystems/IPCamLapse
+aliases: []

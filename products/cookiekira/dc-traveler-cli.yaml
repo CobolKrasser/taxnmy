@@ -1,0 +1,11 @@
+key: cookiekira/dc-traveler-cli
+publisher: cookiekira
+name: DC Traveler CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cookiekira/DCTravelerCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cookiekira/DCTravelerCli
+identifiers:
+- winget: Cookiekira.DCTravelerCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cookiekira/DCTravelerCli
+aliases: []

@@ -1,0 +1,11 @@
+key: eccam/reqview
+publisher: eccam
+name: ReqView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eccam/ReqView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eccam/ReqView
+identifiers:
+- winget: Eccam.ReqView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eccam/ReqView
+aliases: []

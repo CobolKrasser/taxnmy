@@ -1,0 +1,15 @@
+key: google/angular
+publisher: google
+name: Angular
+kind: software
+source: https://endoflife.date/angular
+versions:
+  source: https://endoflife.date/angular
+identifiers:
+- purl: pkg:npm/%40angular/core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/angular.md
+- purl: pkg:github/angular/angular
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/angular.md
+- cpe: cpe:2.3:a:angular:angular
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/angular.md
+aliases: []

@@ -1,0 +1,11 @@
+key: oss-winget/gperf
+publisher: oss-winget
+name: gperf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oss-winget/gperf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oss-winget/gperf
+identifiers:
+- winget: oss-winget.gperf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oss-winget/gperf
+aliases: []

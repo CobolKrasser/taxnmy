@@ -1,0 +1,11 @@
+key: korigamik/mangureader
+publisher: korigamik
+name: ManguReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KorigamiK/mangu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KorigamiK/mangu
+identifiers:
+- winget: KorigamiK.mangu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KorigamiK/mangu
+aliases: []

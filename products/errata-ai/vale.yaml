@@ -1,0 +1,11 @@
+key: errata-ai/vale
+publisher: errata-ai
+name: Vale
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/errata-ai/Vale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/errata-ai/Vale
+identifiers:
+- winget: errata-ai.Vale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/errata-ai/Vale
+aliases: []

@@ -1,0 +1,12 @@
+key: locklizard/safeguard-pdf-viewer
+publisher: locklizard
+name: Locklizard Safeguard - PDF Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFViewer
+identifiers:
+- winget: Locklizard.SafeguardPDFViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFViewer
+aliases:
+- locklizard/locklizard-safeguard-pdf-viewer

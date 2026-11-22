@@ -1,0 +1,12 @@
+key: fortunnels/cli
+publisher: fortunnels
+name: ForTunnels CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForTunnels/ForTunnels
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForTunnels/ForTunnels
+identifiers:
+- winget: ForTunnels.ForTunnels
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForTunnels/ForTunnels
+aliases:
+- fortunnels/fortunnels-cli

@@ -1,0 +1,11 @@
+key: private-internet-access/private-internet-access
+publisher: private-internet-access
+name: Private Internet Access
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivateInternetAccess/PrivateInternetAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivateInternetAccess/PrivateInternetAccess
+identifiers:
+- winget: PrivateInternetAccess.PrivateInternetAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivateInternetAccess/PrivateInternetAccess
+aliases: []

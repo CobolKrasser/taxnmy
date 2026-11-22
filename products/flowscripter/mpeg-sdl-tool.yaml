@@ -1,0 +1,11 @@
+key: flowscripter/mpeg-sdl-tool
+publisher: flowscripter
+name: MPEG SDL Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/mpeg-sdl-tool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/mpeg-sdl-tool
+identifiers:
+- winget: Flowscripter.mpeg-sdl-tool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/mpeg-sdl-tool
+aliases: []

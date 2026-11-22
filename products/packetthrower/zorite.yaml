@@ -1,0 +1,11 @@
+key: packetthrower/zorite
+publisher: packetthrower
+name: Zorite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/Zorite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/Zorite
+identifiers:
+- winget: packetThrower.Zorite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/packetThrower/Zorite
+aliases: []

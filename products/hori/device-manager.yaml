@@ -1,0 +1,12 @@
+key: hori/device-manager
+publisher: hori
+name: HORI Device Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HORI/DeviceManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HORI/DeviceManager
+identifiers:
+- winget: HORI.DeviceManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HORI/DeviceManager
+aliases:
+- hori/hori-device-manager

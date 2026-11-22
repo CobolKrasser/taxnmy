@@ -1,0 +1,11 @@
+key: opencppcoverage/opencppcoverage
+publisher: opencppcoverage
+name: OpenCppCoverage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCppCoverage/OpenCppCoverage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCppCoverage/OpenCppCoverage
+identifiers:
+- winget: OpenCppCoverage.OpenCppCoverage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCppCoverage/OpenCppCoverage
+aliases: []

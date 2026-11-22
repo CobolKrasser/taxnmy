@@ -1,0 +1,14 @@
+key: vovsoft/csv-to-vcf-converter
+publisher: vovsoft
+name: Vovsoft CSV to VCF Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoVCFConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoVCFConverter
+identifiers:
+- winget: VovSoft.CSVtoVCFConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoVCFConverter
+- winget: VovSoft.VCFtoCSVConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoCSVConverter
+aliases:
+- vovsoft/vovsoft-csv-to-vcf-converter

@@ -1,0 +1,11 @@
+key: moygoldenage/sniptoss
+publisher: moygoldenage
+name: SnipToss
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoyGoldenAge/SnipToss
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoyGoldenAge/SnipToss
+identifiers:
+- winget: MoyGoldenAge.SnipToss
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoyGoldenAge/SnipToss
+aliases: []

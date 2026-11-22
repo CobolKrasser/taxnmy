@@ -1,0 +1,11 @@
+key: the-psi-team/psi
+publisher: the-psi-team
+name: Psi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psi/Psi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psi/Psi
+identifiers:
+- winget: Psi.Psi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psi/Psi
+aliases: []

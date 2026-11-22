@@ -1,0 +1,11 @@
+key: crystal-dew-world/crystaldiskinfo
+publisher: crystal-dew-world
+name: CrystalDiskInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalDewWorld/CrystalDiskInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalDewWorld/CrystalDiskInfo
+identifiers:
+- winget: CrystalDewWorld.CrystalDiskInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalDewWorld/CrystalDiskInfo
+aliases: []

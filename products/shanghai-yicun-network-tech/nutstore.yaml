@@ -1,0 +1,11 @@
+key: shanghai-yicun-network-tech/nutstore
+publisher: shanghai-yicun-network-tech
+name: Nutstore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nutstore/Nutstore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nutstore/Nutstore
+identifiers:
+- winget: Nutstore.Nutstore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nutstore/Nutstore
+aliases: []

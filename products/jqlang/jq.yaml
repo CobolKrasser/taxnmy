@@ -1,0 +1,11 @@
+key: jqlang/jq
+publisher: jqlang
+name: jq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jqlang/jq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jqlang/jq
+identifiers:
+- winget: jqlang.jq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jqlang/jq
+aliases: []

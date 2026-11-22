@@ -1,0 +1,11 @@
+key: inmusic-brands/inmusic-software-center
+publisher: inmusic-brands
+name: inMusic Software Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inMusicBrands/inMusicSoftwareCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inMusicBrands/inMusicSoftwareCenter
+identifiers:
+- winget: inMusicBrands.inMusicSoftwareCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inMusicBrands/inMusicSoftwareCenter
+aliases: []

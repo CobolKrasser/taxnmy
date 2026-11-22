@@ -1,0 +1,11 @@
+key: perforce-software/p4-apps
+publisher: perforce-software
+name: P4 Apps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perforce/P4V
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perforce/P4V
+identifiers:
+- winget: Perforce.P4V
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perforce/P4V
+aliases: []

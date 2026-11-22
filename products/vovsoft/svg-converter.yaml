@@ -1,0 +1,12 @@
+key: vovsoft/svg-converter
+publisher: vovsoft
+name: Vovsoft SVG Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SVGConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SVGConverter
+identifiers:
+- winget: VovSoft.SVGConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SVGConverter
+aliases:
+- vovsoft/vovsoft-svg-converter

@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-diskimage-premium
+publisher: o-and-o-software
+name: O&O DiskImage Premium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskImage/Premium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskImage/Premium
+identifiers:
+- winget: OO-Software.DiskImage.Premium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskImage/Premium
+aliases: []

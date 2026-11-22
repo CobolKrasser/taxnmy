@@ -1,0 +1,11 @@
+key: microsoft/perfview
+publisher: microsoft
+name: PerfView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PerfView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PerfView
+identifiers:
+- winget: Microsoft.PerfView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PerfView
+aliases: []

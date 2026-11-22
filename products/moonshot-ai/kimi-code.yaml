@@ -1,0 +1,11 @@
+key: moonshot-ai/kimi-code
+publisher: moonshot-ai
+name: Kimi Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonshotAI/KimiCodeDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonshotAI/KimiCodeDesktop
+identifiers:
+- winget: MoonshotAI.KimiCodeDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonshotAI/KimiCodeDesktop
+aliases: []

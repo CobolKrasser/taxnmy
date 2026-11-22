@@ -1,0 +1,11 @@
+key: regsofts-software/free-window-registry-repair
+publisher: regsofts-software
+name: Free Window Registry Repair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RegsoftsSoftware/RegistryRepair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RegsoftsSoftware/RegistryRepair
+identifiers:
+- winget: RegsoftsSoftware.RegistryRepair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RegsoftsSoftware/RegistryRepair
+aliases: []

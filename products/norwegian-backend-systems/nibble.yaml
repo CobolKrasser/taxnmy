@@ -1,0 +1,11 @@
+key: norwegian-backend-systems/nibble
+publisher: norwegian-backend-systems
+name: nibble
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/backendsystems/nibble
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/backendsystems/nibble
+identifiers:
+- winget: backendsystems.nibble
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/backendsystems/nibble
+aliases: []

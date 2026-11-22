@@ -1,0 +1,11 @@
+key: rainer-schuetze/visual-d-visual-studio-integration-of-the-d-programming-language
+publisher: rainer-schuetze
+name: Visual D - Visual Studio Integration of the D Programming Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dlang/VisualD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dlang/VisualD
+identifiers:
+- winget: Dlang.VisualD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dlang/VisualD
+aliases: []

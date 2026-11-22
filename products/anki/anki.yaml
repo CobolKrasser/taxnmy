@@ -1,0 +1,11 @@
+key: anki/anki
+publisher: anki
+name: Anki
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anki/Anki
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anki/Anki
+identifiers:
+- winget: Anki.Anki
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anki/Anki
+aliases: []

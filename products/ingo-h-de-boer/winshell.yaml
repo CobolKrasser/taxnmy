@@ -1,0 +1,11 @@
+key: ingo-h-de-boer/winshell
+publisher: ingo-h-de-boer
+name: WinShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IngoHdeBoer/WinShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IngoHdeBoer/WinShell
+identifiers:
+- winget: IngoHdeBoer.WinShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IngoHdeBoer/WinShell
+aliases: []

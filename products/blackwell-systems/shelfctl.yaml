@@ -1,0 +1,11 @@
+key: blackwell-systems/shelfctl
+publisher: blackwell-systems
+name: shelfctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/shelfctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/shelfctl
+identifiers:
+- winget: BlackwellSystems.shelfctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackwellSystems/shelfctl
+aliases: []

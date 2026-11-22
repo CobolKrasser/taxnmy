@@ -1,0 +1,11 @@
+key: scene-group/cavalry
+publisher: scene-group
+name: Cavalry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Cavalry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Cavalry
+identifiers:
+- winget: Canva.Cavalry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canva/Cavalry
+aliases: []

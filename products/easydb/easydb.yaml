@@ -1,0 +1,11 @@
+key: easydb/easydb
+publisher: easydb
+name: EasyDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qingwz1994/EasyDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qingwz1994/EasyDB
+identifiers:
+- winget: qingwz1994.EasyDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qingwz1994/EasyDB
+aliases: []

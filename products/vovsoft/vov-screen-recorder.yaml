@@ -1,0 +1,11 @@
+key: vovsoft/vov-screen-recorder
+publisher: vovsoft
+name: Vov Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovScreenRecorder
+identifiers:
+- winget: VovSoft.VovScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovScreenRecorder
+aliases: []

@@ -1,0 +1,23 @@
+key: jreleaser/jreleaser
+publisher: jreleaser
+name: JReleaser
+kind: software
+source: https://jreleaser.org/guide/latest/release-history.html
+versions:
+  source: https://jreleaser.org/guide/latest/release-history.html
+identifiers:
+- purl: pkg:brew/jreleaser
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md
+- purl: pkg:chocolatey/jreleaser
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md
+- purl: pkg:github/jreleaser/jreleaser
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md
+- purl: pkg:maven/org.jreleaser/jreleaser
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md
+- purl: pkg:scoop/jreleaser
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md
+- purl: pkg:winget/JReleaser.jreleaser
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jreleaser.md
+- winget: JReleaser.jreleaser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JReleaser/jreleaser
+aliases: []

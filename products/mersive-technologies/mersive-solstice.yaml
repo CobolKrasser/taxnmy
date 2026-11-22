@@ -1,0 +1,11 @@
+key: mersive-technologies/mersive-solstice
+publisher: mersive-technologies
+name: Mersive Solstice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mersive/Solstice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mersive/Solstice
+identifiers:
+- winget: Mersive.Solstice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mersive/Solstice
+aliases: []

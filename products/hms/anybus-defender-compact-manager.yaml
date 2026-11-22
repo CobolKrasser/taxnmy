@@ -1,0 +1,11 @@
+key: hms/anybus-defender-compact-manager
+publisher: hms
+name: Anybus Defender Compact Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/AnybusDefenderCompactManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/AnybusDefenderCompactManager
+identifiers:
+- winget: HMS.AnybusDefenderCompactManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/AnybusDefenderCompactManager
+aliases: []

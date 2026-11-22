@@ -1,0 +1,11 @@
+key: nullsoft-and-contributors/nullsoft-install-system
+publisher: nullsoft-and-contributors
+name: Nullsoft Install System
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NSIS/NSIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NSIS/NSIS
+identifiers:
+- winget: NSIS.NSIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NSIS/NSIS
+aliases: []

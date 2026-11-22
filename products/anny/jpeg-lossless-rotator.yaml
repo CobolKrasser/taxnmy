@@ -1,0 +1,11 @@
+key: anny/jpeg-lossless-rotator
+publisher: anny
+name: JPEG Lossless Rotator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnnyStudio/JPEGLosslessRotator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnnyStudio/JPEGLosslessRotator
+identifiers:
+- winget: AnnyStudio.JPEGLosslessRotator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnnyStudio/JPEGLosslessRotator
+aliases: []

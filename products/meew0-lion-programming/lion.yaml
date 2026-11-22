@@ -1,0 +1,11 @@
+key: meew0-lion-programming/lion
+publisher: meew0-lion-programming
+name: Lion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meew0/Lion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meew0/Lion
+identifiers:
+- winget: meew0.Lion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meew0/Lion
+aliases: []

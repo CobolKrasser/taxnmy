@@ -1,0 +1,11 @@
+key: pfoj-enterprises/modern-csv
+publisher: pfoj-enterprises
+name: Modern CSV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PFOJEnterprisesLLC/ModernCSV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PFOJEnterprisesLLC/ModernCSV
+identifiers:
+- winget: PFOJEnterprisesLLC.ModernCSV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PFOJEnterprisesLLC/ModernCSV
+aliases: []

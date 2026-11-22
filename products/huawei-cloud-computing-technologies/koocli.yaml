@@ -1,0 +1,11 @@
+key: huawei-cloud-computing-technologies/koocli
+publisher: huawei-cloud-computing-technologies
+name: KooCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/KooCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/KooCLI
+identifiers:
+- winget: Huawei.KooCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/KooCLI
+aliases: []

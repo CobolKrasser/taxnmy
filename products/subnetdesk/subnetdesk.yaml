@@ -1,0 +1,11 @@
+key: subnetdesk/subnetdesk
+publisher: subnetdesk
+name: SubnetDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubnetDesk/SubnetDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubnetDesk/SubnetDesk
+identifiers:
+- winget: SubnetDesk.SubnetDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubnetDesk/SubnetDesk
+aliases: []

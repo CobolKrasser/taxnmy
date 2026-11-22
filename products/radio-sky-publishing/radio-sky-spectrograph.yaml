@@ -1,0 +1,11 @@
+key: radio-sky-publishing/radio-sky-spectrograph
+publisher: radio-sky-publishing
+name: Radio-Sky Spectrograph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/Spectrograph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/Spectrograph
+identifiers:
+- winget: RadioSky.Spectrograph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/Spectrograph
+aliases: []

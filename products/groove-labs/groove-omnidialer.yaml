@@ -1,0 +1,11 @@
+key: groove-labs/groove-omnidialer
+publisher: groove-labs
+name: Groove OmniDialer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrooveLabs/OmniDialer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrooveLabs/OmniDialer
+identifiers:
+- winget: GrooveLabs.OmniDialer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrooveLabs/OmniDialer
+aliases: []

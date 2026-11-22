@@ -1,0 +1,11 @@
+key: egf-studio/egf-vpn
+publisher: egf-studio
+name: egf vpn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egf_studio/egfvpn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egf_studio/egfvpn
+identifiers:
+- winget: egf_studio.egfvpn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egf_studio/egfvpn
+aliases: []

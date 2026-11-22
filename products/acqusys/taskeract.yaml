@@ -1,0 +1,11 @@
+key: acqusys/taskeract
+publisher: acqusys
+name: Taskeract
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acqusys/Taskeract
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acqusys/Taskeract
+identifiers:
+- winget: Acqusys.Taskeract
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acqusys/Taskeract
+aliases: []

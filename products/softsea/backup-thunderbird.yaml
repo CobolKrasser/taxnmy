@@ -1,0 +1,11 @@
+key: softsea/backup-thunderbird
+publisher: softsea
+name: Backup Thunderbird
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/BackupThunderbird
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/BackupThunderbird
+identifiers:
+- winget: SoftSea.BackupThunderbird
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/BackupThunderbird
+aliases: []

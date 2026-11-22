@@ -1,0 +1,12 @@
+key: replylayer/cli
+publisher: replylayer
+name: ReplyLayer CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReplyLayer/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReplyLayer/CLI
+identifiers:
+- winget: ReplyLayer.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReplyLayer/CLI
+aliases:
+- replylayer/replylayer-cli

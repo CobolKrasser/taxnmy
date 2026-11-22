@@ -1,0 +1,11 @@
+key: myob-technology/myob-accountright-server-edition
+publisher: myob-technology
+name: MYOB AccountRight Server Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYOB/AccountRight/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYOB/AccountRight/Server
+identifiers:
+- winget: MYOB.AccountRight.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYOB/AccountRight/Server
+aliases: []

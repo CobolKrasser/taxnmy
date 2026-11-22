@@ -1,0 +1,12 @@
+key: easeus/mobimover
+publisher: easeus
+name: EaseUS MobiMover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/MobiMover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/MobiMover
+identifiers:
+- winget: EaseUS.MobiMover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/MobiMover
+aliases:
+- easeus/easeus-mobimover

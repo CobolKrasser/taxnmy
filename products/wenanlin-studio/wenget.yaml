@@ -1,0 +1,11 @@
+key: wenanlin-studio/wenget
+publisher: wenanlin-studio
+name: wenget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WenanLin/wenget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WenanLin/wenget
+identifiers:
+- winget: WenanLin.wenget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WenanLin/wenget
+aliases: []

@@ -1,0 +1,11 @@
+key: sparkleflow/adn-silent-switch-finder
+publisher: sparkleflow
+name: ADN Silent Switch Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppDeployNews/SilentSwitchFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppDeployNews/SilentSwitchFinder
+identifiers:
+- winget: AppDeployNews.SilentSwitchFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppDeployNews/SilentSwitchFinder
+aliases: []

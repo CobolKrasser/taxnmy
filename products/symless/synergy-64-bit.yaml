@@ -1,0 +1,11 @@
+key: symless/synergy-64-bit
+publisher: symless
+name: Synergy (64-bit)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symless/Synergy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symless/Synergy
+identifiers:
+- winget: Symless.Synergy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symless/Synergy
+aliases: []

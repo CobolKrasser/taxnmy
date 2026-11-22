@@ -1,0 +1,11 @@
+key: kde/ksquares
+publisher: kde
+name: ksquares
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSquares
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSquares
+identifiers:
+- winget: KDE.KSquares
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KSquares
+aliases: []

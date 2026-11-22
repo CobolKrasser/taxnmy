@@ -1,0 +1,11 @@
+key: hardcoded-software/dupeguru
+publisher: hardcoded-software
+name: dupeGuru
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DupeGuru/DupeGuru
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DupeGuru/DupeGuru
+identifiers:
+- winget: DupeGuru.DupeGuru
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DupeGuru/DupeGuru
+aliases: []

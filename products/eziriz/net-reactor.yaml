@@ -1,0 +1,11 @@
+key: eziriz/net-reactor
+publisher: eziriz
+name: .NET Reactor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eziriz/DotNetReactor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eziriz/DotNetReactor
+identifiers:
+- winget: Eziriz.DotNetReactor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eziriz/DotNetReactor
+aliases: []

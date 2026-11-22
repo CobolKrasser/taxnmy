@@ -1,0 +1,12 @@
+key: vovsoft/ram-benchmark
+publisher: vovsoft
+name: Vovsoft RAM Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RAMBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RAMBenchmark
+identifiers:
+- winget: VovSoft.RAMBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RAMBenchmark
+aliases:
+- vovsoft/vovsoft-ram-benchmark

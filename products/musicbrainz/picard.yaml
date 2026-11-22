@@ -1,0 +1,12 @@
+key: musicbrainz/picard
+publisher: musicbrainz
+name: MusicBrainz Picard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MusicBrainz/Picard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MusicBrainz/Picard
+identifiers:
+- winget: MusicBrainz.Picard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MusicBrainz/Picard
+aliases:
+- musicbrainz/musicbrainz-picard

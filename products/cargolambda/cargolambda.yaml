@@ -1,0 +1,11 @@
+key: cargolambda/cargolambda
+publisher: cargolambda
+name: CargoLambda
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CargoLambda/CargoLambda
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CargoLambda/CargoLambda
+identifiers:
+- winget: CargoLambda.CargoLambda
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CargoLambda/CargoLambda
+aliases: []

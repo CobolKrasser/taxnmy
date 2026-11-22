@@ -1,0 +1,11 @@
+key: partex-marking-systems/promark-creator
+publisher: partex-marking-systems
+name: Promark Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PartexMarkingSystems/PromarkCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PartexMarkingSystems/PromarkCreator
+identifiers:
+- winget: PartexMarkingSystems.PromarkCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PartexMarkingSystems/PromarkCreator
+aliases: []

@@ -1,0 +1,11 @@
+key: collapse-project-team/collapse
+publisher: collapse-project-team
+name: Collapse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollapseLauncher/Collapse/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollapseLauncher/Collapse/Preview
+identifiers:
+- winget: CollapseLauncher.Collapse.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollapseLauncher/Collapse/Preview
+aliases: []

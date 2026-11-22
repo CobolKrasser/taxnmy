@@ -1,0 +1,11 @@
+key: raul-argente/argente-drive-analyzer
+publisher: raul-argente
+name: Argente Drive Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/DriveAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/DriveAnalyzer
+identifiers:
+- winget: Argente.DriveAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/DriveAnalyzer
+aliases: []

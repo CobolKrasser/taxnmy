@@ -1,0 +1,11 @@
+key: readany/readany
+publisher: readany
+name: ReadAny
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codedogQBY/ReadAny
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codedogQBY/ReadAny
+identifiers:
+- winget: codedogQBY.ReadAny
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codedogQBY/ReadAny
+aliases: []

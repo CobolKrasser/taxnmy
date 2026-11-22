@@ -1,0 +1,11 @@
+key: popokey/hl7-soup
+publisher: popokey
+name: HL7 Soup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Popokey/HL7Soup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Popokey/HL7Soup
+identifiers:
+- winget: Popokey.HL7Soup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Popokey/HL7Soup
+aliases: []

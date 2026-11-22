@@ -1,0 +1,11 @@
+key: deliro/mt
+publisher: deliro
+name: mt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deliro/Mt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deliro/Mt
+identifiers:
+- winget: Deliro.Mt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deliro/Mt
+aliases: []

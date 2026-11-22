@@ -1,0 +1,11 @@
+key: karakun/openwebstart
+publisher: karakun
+name: OpenWebStart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/karakun/OpenWebStart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/karakun/OpenWebStart
+identifiers:
+- winget: karakun.OpenWebStart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/karakun/OpenWebStart
+aliases: []

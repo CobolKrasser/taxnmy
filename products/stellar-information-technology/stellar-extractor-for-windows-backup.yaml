@@ -1,0 +1,11 @@
+key: stellar-information-technology/stellar-extractor-for-windows-backup
+publisher: stellar-information-technology
+name: Stellar Extractor for Windows Backup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarExtractorforWindowsBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarExtractorforWindowsBackup
+identifiers:
+- winget: StellarDataRecovery.StellarExtractorforWindowsBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarExtractorforWindowsBackup
+aliases: []

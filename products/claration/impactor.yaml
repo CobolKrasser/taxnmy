@@ -1,0 +1,11 @@
+key: claration/impactor
+publisher: claration
+name: Impactor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLARATION/Impactor/GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLARATION/Impactor/GUI
+identifiers:
+- winget: CLARATION.Impactor.GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLARATION/Impactor/GUI
+aliases: []

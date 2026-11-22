@@ -1,0 +1,11 @@
+key: flowscripter/example-host-application
+publisher: flowscripter
+name: Example Host Application
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/example-host-application
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/example-host-application
+identifiers:
+- winget: Flowscripter.example-host-application
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/example-host-application
+aliases: []

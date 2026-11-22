@@ -1,0 +1,11 @@
+key: protagonist-labs/file-labs
+publisher: protagonist-labs
+name: File Labs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProtagonistLabs/FileLabs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProtagonistLabs/FileLabs
+identifiers:
+- winget: ProtagonistLabs.FileLabs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProtagonistLabs/FileLabs
+aliases: []

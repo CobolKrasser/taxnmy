@@ -1,0 +1,11 @@
+key: rpglogs/warcraft-logs-uploader
+publisher: rpglogs
+name: Warcraft Logs Uploader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WarcraftLogs/Uploader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WarcraftLogs/Uploader
+identifiers:
+- winget: WarcraftLogs.Uploader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WarcraftLogs/Uploader
+aliases: []

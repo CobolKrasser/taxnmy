@@ -1,0 +1,11 @@
+key: shattered-chaos/fightplanner
+publisher: shattered-chaos
+name: FightPlanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShatteredChaos/FightPlanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShatteredChaos/FightPlanner
+identifiers:
+- winget: ShatteredChaos.FightPlanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShatteredChaos/FightPlanner
+aliases: []

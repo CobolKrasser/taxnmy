@@ -1,0 +1,11 @@
+key: afractal/echo
+publisher: afractal
+name: Echo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/afractal/Echo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/afractal/Echo
+identifiers:
+- winget: afractal.Echo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/afractal/Echo
+aliases: []

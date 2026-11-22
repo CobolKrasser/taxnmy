@@ -1,0 +1,11 @@
+key: madsen/vbindiff
+publisher: madsen
+name: VBinDiff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Madsen/VBinDiff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Madsen/VBinDiff
+identifiers:
+- winget: Madsen.VBinDiff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Madsen/VBinDiff
+aliases: []

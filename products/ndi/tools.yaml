@@ -1,0 +1,12 @@
+key: ndi/tools
+publisher: ndi
+name: NDI Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDI/NDITools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDI/NDITools
+identifiers:
+- winget: NDI.NDITools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDI/NDITools
+aliases:
+- ndi/ndi-tools

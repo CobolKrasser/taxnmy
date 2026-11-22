@@ -1,0 +1,11 @@
+key: silicondust/hdhomerun
+publisher: silicondust
+name: HDHomeRun
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silicondust/HDHomeRun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silicondust/HDHomeRun
+identifiers:
+- winget: Silicondust.HDHomeRun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Silicondust/HDHomeRun
+aliases: []

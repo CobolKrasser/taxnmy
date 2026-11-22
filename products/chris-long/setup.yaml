@@ -1,0 +1,13 @@
+key: chris-long/setup
+publisher: chris-long
+name: Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/TextMorph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/TextMorph
+identifiers:
+- winget: ChrisLong.NTFSHiddenDataFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/NTFSHiddenDataFinder
+- winget: ChrisLong.TextMorph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/TextMorph
+aliases: []

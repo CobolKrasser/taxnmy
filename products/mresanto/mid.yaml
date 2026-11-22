@@ -1,0 +1,11 @@
+key: mresanto/mid
+publisher: mresanto
+name: Mid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mresanto/mid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mresanto/mid
+identifiers:
+- winget: mresanto.mid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mresanto/mid
+aliases: []

@@ -1,0 +1,12 @@
+key: microsoft/printer-metadata-troubleshooter-tool
+publisher: microsoft
+name: Microsoft Printer Metadata Troubleshooter Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PrintMetadataTroubleshooter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PrintMetadataTroubleshooter
+identifiers:
+- winget: Microsoft.PrintMetadataTroubleshooter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PrintMetadataTroubleshooter
+aliases:
+- microsoft/microsoft-printer-metadata-troubleshooter-tool

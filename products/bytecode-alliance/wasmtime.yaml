@@ -1,0 +1,11 @@
+key: bytecode-alliance/wasmtime
+publisher: bytecode-alliance
+name: Wasmtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime/Portable
+identifiers:
+- winget: BytecodeAlliance.Wasmtime.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime/Portable
+aliases: []

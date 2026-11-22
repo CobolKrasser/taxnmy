@@ -1,0 +1,11 @@
+key: donationcoder/screenshot-captor
+publisher: donationcoder
+name: Screenshot Captor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonationCoder/ScreenshotCaptor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonationCoder/ScreenshotCaptor
+identifiers:
+- winget: DonationCoder.ScreenshotCaptor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonationCoder/ScreenshotCaptor
+aliases: []

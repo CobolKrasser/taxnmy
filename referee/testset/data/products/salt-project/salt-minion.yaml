@@ -1,0 +1,11 @@
+key: salt-project/salt-minion
+publisher: salt-project
+name: Salt Minion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaltStack/SaltMinion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaltStack/SaltMinion
+identifiers:
+- winget: SaltStack.SaltMinion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaltStack/SaltMinion
+aliases: []

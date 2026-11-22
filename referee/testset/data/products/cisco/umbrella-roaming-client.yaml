@@ -1,0 +1,11 @@
+key: cisco/umbrella-roaming-client
+publisher: cisco
+name: Umbrella Roaming Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/UmbrellaRoamingClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/UmbrellaRoamingClient
+identifiers:
+- winget: Cisco.UmbrellaRoamingClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/UmbrellaRoamingClient
+aliases: []

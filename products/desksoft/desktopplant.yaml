@@ -1,0 +1,11 @@
+key: desksoft/desktopplant
+publisher: desksoft
+name: DesktopPlant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/DesktopPlant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/DesktopPlant
+identifiers:
+- winget: DeskSoft.DesktopPlant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/DesktopPlant
+aliases: []

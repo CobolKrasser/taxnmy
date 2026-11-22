@@ -1,0 +1,11 @@
+key: qymistech/qymcad
+publisher: qymistech
+name: QymCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QymIsTech/QymCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QymIsTech/QymCAD
+identifiers:
+- winget: QymIsTech.QymCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QymIsTech/QymCAD
+aliases: []

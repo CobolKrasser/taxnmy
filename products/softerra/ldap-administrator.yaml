@@ -1,0 +1,14 @@
+key: softerra/ldap-administrator
+publisher: softerra
+name: Softerra LDAP Administrator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPAdministrator/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPAdministrator/2025
+identifiers:
+- winget: Softerra.LDAPAdministrator.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPAdministrator/2025
+- winget: Softerra.LDAPAdministrator.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPAdministrator/2026
+aliases:
+- softerra/softerra-ldap-administrator

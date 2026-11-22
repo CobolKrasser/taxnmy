@@ -1,0 +1,13 @@
+key: gam-team/gam
+publisher: gam-team
+name: gam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/gam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/gam
+identifiers:
+- winget: GAM-Team.gam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/gam
+- winget: GAM-Team.gam.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/gam/Portable
+aliases: []

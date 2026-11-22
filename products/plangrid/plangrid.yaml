@@ -1,0 +1,11 @@
+key: plangrid/plangrid
+publisher: plangrid
+name: PlanGrid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlanGrid/PlanGrid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlanGrid/PlanGrid
+identifiers:
+- winget: PlanGrid.PlanGrid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlanGrid/PlanGrid
+aliases: []

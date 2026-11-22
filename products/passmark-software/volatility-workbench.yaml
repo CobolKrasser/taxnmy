@@ -1,0 +1,11 @@
+key: passmark-software/volatility-workbench
+publisher: passmark-software
+name: Volatility Workbench
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/VolatilityWorkbench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/VolatilityWorkbench
+identifiers:
+- winget: PassMark.VolatilityWorkbench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/VolatilityWorkbench
+aliases: []

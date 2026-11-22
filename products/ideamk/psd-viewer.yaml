@@ -1,0 +1,11 @@
+key: ideamk/psd-viewer
+publisher: ideamk
+name: PSD Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/PSDViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/PSDViewer
+identifiers:
+- winget: IdeaMK.PSDViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/PSDViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: elsten-software/astiga
+publisher: elsten-software
+name: astiga
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElstenSoftware/Astiga
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElstenSoftware/Astiga
+identifiers:
+- winget: ElstenSoftware.Astiga
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElstenSoftware/Astiga
+aliases: []

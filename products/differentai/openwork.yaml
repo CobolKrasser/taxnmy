@@ -1,0 +1,11 @@
+key: differentai/openwork
+publisher: differentai
+name: OpenWork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DifferentAI/OpenWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DifferentAI/OpenWork
+identifiers:
+- winget: DifferentAI.OpenWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DifferentAI/OpenWork
+aliases: []

@@ -1,0 +1,11 @@
+key: texas-instruments/ti-connecttm
+publisher: texas-instruments
+name: TI Connect™
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TIConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TIConnect
+identifiers:
+- winget: TexasInstruments.TIConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TIConnect
+aliases: []

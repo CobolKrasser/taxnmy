@@ -1,0 +1,11 @@
+key: kroum-grigorov/kpym-telnet-ssh-server
+publisher: kroum-grigorov
+name: KpyM Telnet/SSH Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KpyM/TelnetSSHServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KpyM/TelnetSSHServer
+identifiers:
+- winget: KpyM.TelnetSSHServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KpyM/TelnetSSHServer
+aliases: []

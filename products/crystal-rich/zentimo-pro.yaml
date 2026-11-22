@@ -1,0 +1,11 @@
+key: crystal-rich/zentimo-pro
+publisher: crystal-rich
+name: Zentimo PRO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/Zentimo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/Zentimo
+identifiers:
+- winget: CrystalRich.Zentimo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/Zentimo
+aliases: []

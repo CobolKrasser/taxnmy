@@ -1,0 +1,11 @@
+key: exeldro/audio-monitor
+publisher: exeldro
+name: audio-monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/exeldro/OBSAudioMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/exeldro/OBSAudioMonitor
+identifiers:
+- winget: exeldro.OBSAudioMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/exeldro/OBSAudioMonitor
+aliases: []

@@ -1,0 +1,12 @@
+key: vpnetwork/llc-torguard-online-privacy-protection-services
+publisher: vpnetwork
+name: VPNetwork LLC - TorGuard - Online Privacy Protection Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPNetwork/TorGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPNetwork/TorGuard
+identifiers:
+- winget: VPNetwork.TorGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPNetwork/TorGuard
+aliases:
+- vpnetwork/vpnetwork-llc-torguard-online-privacy-protection-services

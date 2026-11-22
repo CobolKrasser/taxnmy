@@ -1,0 +1,11 @@
+key: aiko-chan-ai/discordbotclient
+publisher: aiko-chan-ai
+name: DiscordBotClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aiko-chan-ai/DiscordBotClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aiko-chan-ai/DiscordBotClient
+identifiers:
+- winget: aiko-chan-ai.DiscordBotClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aiko-chan-ai/DiscordBotClient
+aliases: []

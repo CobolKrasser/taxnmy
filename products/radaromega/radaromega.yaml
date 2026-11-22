@@ -1,0 +1,11 @@
+key: radaromega/radaromega
+publisher: radaromega
+name: RadarOmega
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadarOmega/RadarOmega
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadarOmega/RadarOmega
+identifiers:
+- winget: RadarOmega.RadarOmega
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadarOmega/RadarOmega
+aliases: []

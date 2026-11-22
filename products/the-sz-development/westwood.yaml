@@ -1,0 +1,11 @@
+key: the-sz-development/westwood
+publisher: the-sz-development
+name: Westwood
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Westwood
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Westwood
+identifiers:
+- winget: the-sz.Westwood
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Westwood
+aliases: []

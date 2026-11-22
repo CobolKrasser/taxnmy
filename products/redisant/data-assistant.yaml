@@ -1,0 +1,11 @@
+key: redisant/data-assistant
+publisher: redisant
+name: Data Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/DataAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/DataAssistant
+identifiers:
+- winget: Redisant.DataAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/DataAssistant
+aliases: []

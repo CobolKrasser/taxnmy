@@ -1,0 +1,11 @@
+key: comfort-software-group/free-virtual-keyboard
+publisher: comfort-software-group
+name: Free Virtual Keyboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/FreeVirtualKeyboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/FreeVirtualKeyboard
+identifiers:
+- winget: ComfortSoftwareGroup.FreeVirtualKeyboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/FreeVirtualKeyboard
+aliases: []

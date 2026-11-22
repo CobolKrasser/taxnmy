@@ -1,0 +1,11 @@
+key: huawei-cloud/officeace
+publisher: huawei-cloud
+name: OfficeAce
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/OfficeAce
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/OfficeAce
+identifiers:
+- winget: Huawei.OfficeAce
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/OfficeAce
+aliases: []

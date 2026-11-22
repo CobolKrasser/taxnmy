@@ -1,0 +1,11 @@
+key: simon-knuth/scanner
+publisher: simon-knuth
+name: Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonKnuth/Scanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonKnuth/Scanner
+identifiers:
+- winget: SimonKnuth.Scanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonKnuth/Scanner
+aliases: []

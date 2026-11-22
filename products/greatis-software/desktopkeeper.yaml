@@ -1,0 +1,11 @@
+key: greatis-software/desktopkeeper
+publisher: greatis-software
+name: DesktopKeeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/DesktopKeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/DesktopKeeper
+identifiers:
+- winget: Greatis.DesktopKeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/DesktopKeeper
+aliases: []

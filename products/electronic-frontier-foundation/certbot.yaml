@@ -1,0 +1,11 @@
+key: electronic-frontier-foundation/certbot
+publisher: electronic-frontier-foundation
+name: Certbot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFF/Certbot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFF/Certbot
+identifiers:
+- winget: EFF.Certbot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFF/Certbot
+aliases: []

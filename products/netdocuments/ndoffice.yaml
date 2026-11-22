@@ -1,0 +1,12 @@
+key: netdocuments/ndoffice
+publisher: netdocuments
+name: NetDocuments ndOffice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetDocuments/ndOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetDocuments/ndOffice
+identifiers:
+- winget: NetDocuments.ndOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetDocuments/ndOffice
+aliases:
+- netdocuments/netdocuments-ndoffice

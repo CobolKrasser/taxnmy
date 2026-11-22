@@ -1,0 +1,13 @@
+key: foxit-software/foxit-pdf-reader
+publisher: foxit-software
+name: Foxit PDF Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/FoxitReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/FoxitReader
+identifiers:
+- winget: Foxit.FoxitReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/FoxitReader
+- winget: Foxit.FoxitReader.Inno
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/FoxitReader/Inno
+aliases: []

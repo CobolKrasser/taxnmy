@@ -1,0 +1,11 @@
+key: fsd-bluecape-lda/bluecfd-core
+publisher: fsd-bluecape-lda
+name: blueCFD-Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bluecfd/bluecfd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bluecfd/bluecfd
+identifiers:
+- winget: bluecfd.bluecfd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bluecfd/bluecfd
+aliases: []

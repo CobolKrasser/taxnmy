@@ -1,0 +1,11 @@
+key: waterlan/dos2unix
+publisher: waterlan
+name: dos2unix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/waterlan/dos2unix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/waterlan/dos2unix
+identifiers:
+- winget: waterlan.dos2unix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/waterlan/dos2unix
+aliases: []

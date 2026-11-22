@@ -1,0 +1,11 @@
+key: canonical/ubuntu
+publisher: canonical
+name: Ubuntu
+kind: operating-system
+source: https://ubuntu.com/server
+versions:
+  source: https://wiki.ubuntu.com/Releases
+identifiers:
+- cpe: cpe:2.3:o:canonical:ubuntu_linux
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:canonical:ubuntu_linux&resultsPerPage=1
+aliases: []

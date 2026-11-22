@@ -1,0 +1,11 @@
+key: yovan-castro/claudebar-for-windows
+publisher: yovan-castro
+name: ClaudeBar for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yovancas/ClaudeBarWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yovancas/ClaudeBarWin
+identifiers:
+- winget: Yovancas.ClaudeBarWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yovancas/ClaudeBarWin
+aliases: []

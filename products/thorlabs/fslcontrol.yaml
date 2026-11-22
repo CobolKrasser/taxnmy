@@ -1,0 +1,11 @@
+key: thorlabs/fslcontrol
+publisher: thorlabs
+name: FSLControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/FSLControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/FSLControl
+identifiers:
+- winget: Thorlabs.FSLControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/FSLControl
+aliases: []

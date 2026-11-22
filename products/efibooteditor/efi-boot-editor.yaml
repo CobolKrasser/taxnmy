@@ -1,0 +1,11 @@
+key: efibooteditor/efi-boot-editor
+publisher: efibooteditor
+name: EFI Boot Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFIBootEditor/EFIBootEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFIBootEditor/EFIBootEditor
+identifiers:
+- winget: EFIBootEditor.EFIBootEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFIBootEditor/EFIBootEditor
+aliases: []

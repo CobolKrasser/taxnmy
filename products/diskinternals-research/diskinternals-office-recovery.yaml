@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-office-recovery
+publisher: diskinternals-research
+name: DiskInternals Office Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/OfficeRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/OfficeRecovery
+identifiers:
+- winget: DiskInternals.OfficeRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/OfficeRecovery
+aliases: []

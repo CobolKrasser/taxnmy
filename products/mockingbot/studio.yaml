@@ -1,0 +1,12 @@
+key: mockingbot/studio
+publisher: mockingbot
+name: mockingbot-studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Mockitt/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Mockitt/CN
+identifiers:
+- winget: Wondershare.Mockitt.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Mockitt/CN
+aliases:
+- mockingbot/mockingbot-studio

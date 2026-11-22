@@ -1,0 +1,11 @@
+key: hibitsoftware/hibit-uninstaller
+publisher: hibitsoftware
+name: HiBit Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiBitSoftware/HiBitUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiBitSoftware/HiBitUninstaller
+identifiers:
+- winget: HiBitSoftware.HiBitUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiBitSoftware/HiBitUninstaller
+aliases: []

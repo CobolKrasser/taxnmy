@@ -1,0 +1,12 @@
+key: vovsoft/software-manager
+publisher: vovsoft
+name: Vovsoft Software Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SoftwareManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SoftwareManager
+identifiers:
+- winget: VovSoft.SoftwareManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SoftwareManager
+aliases:
+- vovsoft/vovsoft-software-manager

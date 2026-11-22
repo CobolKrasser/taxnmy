@@ -1,0 +1,11 @@
+key: freebasic/freebasic
+publisher: freebasic
+name: FreeBASIC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeBASIC/FreeBASIC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeBASIC/FreeBASIC
+identifiers:
+- winget: FreeBASIC.FreeBASIC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeBASIC/FreeBASIC
+aliases: []

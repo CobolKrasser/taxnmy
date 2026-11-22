@@ -1,0 +1,11 @@
+key: vma-broadcast/vma-monitor-for-tbs-6508
+publisher: vma-broadcast
+name: VMA Monitor for TBS-6508
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMAMonitor/TBS6508
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMAMonitor/TBS6508
+identifiers:
+- winget: VMABroadcast.VMAMonitor.TBS6508
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMAMonitor/TBS6508
+aliases: []

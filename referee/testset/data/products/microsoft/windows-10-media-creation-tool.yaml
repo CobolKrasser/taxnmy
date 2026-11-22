@@ -1,0 +1,11 @@
+key: microsoft/windows-10-media-creation-tool
+publisher: microsoft
+name: Windows 10 Media Creation Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MediaCreationTool/Windows10
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MediaCreationTool/Windows10
+identifiers:
+- winget: Microsoft.MediaCreationTool.Windows10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MediaCreationTool/Windows10
+aliases: []

@@ -1,0 +1,11 @@
+key: hms-industrial-networks/ixxat-cananalyser
+publisher: hms-industrial-networks
+name: Ixxat canAnalyser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/IxxatCanAnalyser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/IxxatCanAnalyser
+identifiers:
+- winget: HMS.IxxatCanAnalyser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/IxxatCanAnalyser
+aliases: []

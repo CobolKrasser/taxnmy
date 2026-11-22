@@ -1,0 +1,10 @@
+key: heroku/postgres
+publisher: heroku
+name: Heroku Postgres
+kind: software
+source: https://devcenter.heroku.com/articles/heroku-postgres-version-support
+versions:
+  source: https://devcenter.heroku.com/articles/heroku-postgres-version-support
+identifiers: []
+aliases:
+- heroku/heroku-postgres

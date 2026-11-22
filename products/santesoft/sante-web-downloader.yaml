@@ -1,0 +1,11 @@
+key: santesoft/sante-web-downloader
+publisher: santesoft
+name: Sante Web Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteWebDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteWebDownloader
+identifiers:
+- winget: Santesoft.SanteWebDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteWebDownloader
+aliases: []

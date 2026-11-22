@@ -1,0 +1,11 @@
+key: wire/wire
+publisher: wire
+name: Wire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wire/wire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wire/wire
+identifiers:
+- winget: wire.wire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wire/wire
+aliases: []

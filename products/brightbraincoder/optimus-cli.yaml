@@ -1,0 +1,11 @@
+key: brightbraincoder/optimus-cli
+publisher: brightbraincoder
+name: Optimus CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightBrainCoder/OptimusCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightBrainCoder/OptimusCli
+identifiers:
+- winget: BrightBrainCoder.OptimusCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightBrainCoder/OptimusCli
+aliases: []

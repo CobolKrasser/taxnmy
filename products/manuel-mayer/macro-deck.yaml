@@ -1,0 +1,11 @@
+key: manuel-mayer/macro-deck
+publisher: manuel-mayer
+name: Macro Deck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacroDeck/MacroDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacroDeck/MacroDeck
+identifiers:
+- winget: MacroDeck.MacroDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacroDeck/MacroDeck
+aliases: []

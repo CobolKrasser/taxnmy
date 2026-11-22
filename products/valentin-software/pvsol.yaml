@@ -1,0 +1,13 @@
+key: valentin-software/pvsol
+publisher: valentin-software
+name: PVSOL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ValentinSoftware/PVSOL/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ValentinSoftware/PVSOL/2025
+identifiers:
+- winget: ValentinSoftware.PVSOL.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ValentinSoftware/PVSOL/2025
+- winget: ValentinSoftware.PVSOL.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ValentinSoftware/PVSOL/2026
+aliases: []

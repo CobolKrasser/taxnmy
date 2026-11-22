@@ -1,0 +1,11 @@
+key: nextest/cargo-nextest
+publisher: nextest
+name: cargo-nextest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nextest/cargo-nextest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nextest/cargo-nextest
+identifiers:
+- winget: nextest.cargo-nextest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nextest/cargo-nextest
+aliases: []

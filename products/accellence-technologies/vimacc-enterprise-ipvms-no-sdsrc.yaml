@@ -1,0 +1,11 @@
+key: accellence-technologies/vimacc-enterprise-ipvms-no-sdsrc
+publisher: accellence-technologies
+name: vimacc Enterprise IPVMS (no SDSRC)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccEnterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccEnterprise
+identifiers:
+- winget: accellence.vimaccEnterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccEnterprise
+aliases: []

@@ -1,0 +1,11 @@
+key: wasstv/easypal
+publisher: wasstv
+name: EasyPal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WASSTV/EasyPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WASSTV/EasyPal
+identifiers:
+- winget: WASSTV.EasyPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WASSTV/EasyPal
+aliases: []

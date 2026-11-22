@@ -1,0 +1,11 @@
+key: matterhackers/mattercontrol
+publisher: matterhackers
+name: MatterControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatterHackers/MatterControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatterHackers/MatterControl
+identifiers:
+- winget: MatterHackers.MatterControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MatterHackers/MatterControl
+aliases: []

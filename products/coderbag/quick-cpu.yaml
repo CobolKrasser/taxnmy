@@ -1,0 +1,11 @@
+key: coderbag/quick-cpu
+publisher: coderbag
+name: Quick CPU
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoderBag/QuickCPUx64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoderBag/QuickCPUx64
+identifiers:
+- winget: CoderBag.QuickCPUx64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoderBag/QuickCPUx64
+aliases: []

@@ -1,0 +1,11 @@
+key: objz/mcl-launcher
+publisher: objz
+name: mcl-launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Objz/MclLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Objz/MclLauncher
+identifiers:
+- winget: Objz.MclLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Objz/MclLauncher
+aliases: []

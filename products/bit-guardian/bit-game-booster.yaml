@@ -1,0 +1,11 @@
+key: bit-guardian/bit-game-booster
+publisher: bit-guardian
+name: Bit Game Booster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitGuardian/BitGameBooster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitGuardian/BitGameBooster
+identifiers:
+- winget: BitGuardian.BitGameBooster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitGuardian/BitGameBooster
+aliases: []

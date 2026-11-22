@@ -1,0 +1,11 @@
+key: dogecoin-core-project/dogecoin-core
+publisher: dogecoin-core-project
+name: Dogecoin Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DogecoinCoreproject/DogecoinCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DogecoinCoreproject/DogecoinCore
+identifiers:
+- winget: DogecoinCoreproject.DogecoinCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DogecoinCoreproject/DogecoinCore
+aliases: []

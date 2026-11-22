@@ -1,0 +1,11 @@
+key: julien-blitte/qwerty-fr
+publisher: julien-blitte
+name: QWERTY-fr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qwerty-fr/qwerty-fr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qwerty-fr/qwerty-fr
+identifiers:
+- winget: qwerty-fr.qwerty-fr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qwerty-fr/qwerty-fr
+aliases: []

@@ -1,0 +1,11 @@
+key: wendy-labs/wendy
+publisher: wendy-labs
+name: Wendy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WendyLabs/Wendy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WendyLabs/Wendy
+identifiers:
+- winget: WendyLabs.Wendy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WendyLabs/Wendy
+aliases: []

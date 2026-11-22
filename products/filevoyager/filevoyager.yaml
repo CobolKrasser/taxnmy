@@ -1,0 +1,11 @@
+key: filevoyager/filevoyager
+publisher: filevoyager
+name: FileVoyager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileVoyager/FileVoyager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileVoyager/FileVoyager
+identifiers:
+- winget: FileVoyager.FileVoyager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileVoyager/FileVoyager
+aliases: []

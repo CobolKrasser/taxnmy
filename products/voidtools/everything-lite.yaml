@@ -1,0 +1,11 @@
+key: voidtools/everything-lite
+publisher: voidtools
+name: Everything Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Lite
+identifiers:
+- winget: voidtools.Everything.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/voidtools/Everything/Lite
+aliases: []

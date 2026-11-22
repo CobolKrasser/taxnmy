@@ -1,0 +1,11 @@
+key: tatsh/bpmdetect
+publisher: tatsh
+name: BPMDetect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/BPMDetect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/BPMDetect
+identifiers:
+- winget: Tatsh.BPMDetect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/BPMDetect
+aliases: []

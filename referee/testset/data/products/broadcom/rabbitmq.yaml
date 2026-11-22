@@ -1,0 +1,13 @@
+key: broadcom/rabbitmq
+publisher: broadcom
+name: RabbitMQ
+kind: software
+source: https://www.rabbitmq.com/release-information
+versions:
+  source: https://www.rabbitmq.com/release-information
+identifiers:
+- cpe: cpe:2.3:a:pivotal_software:rabbitmq
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/rabbitmq.md
+- cpe: cpe:2.3:a:vmware:rabbitmq
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/rabbitmq.md
+aliases: []

@@ -1,0 +1,11 @@
+key: the-remoteapp-tool-developers/remoteapp-tool
+publisher: the-remoteapp-tool-developers
+name: RemoteApp Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KimKnight/RemoteAppTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KimKnight/RemoteAppTool
+identifiers:
+- winget: KimKnight.RemoteAppTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KimKnight/RemoteAppTool
+aliases: []

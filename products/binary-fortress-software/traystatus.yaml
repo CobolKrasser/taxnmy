@@ -1,0 +1,11 @@
+key: binary-fortress-software/traystatus
+publisher: binary-fortress-software
+name: TrayStatus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/TrayStatus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/TrayStatus
+identifiers:
+- winget: BinaryFortress.TrayStatus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/TrayStatus
+aliases: []

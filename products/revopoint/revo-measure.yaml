@@ -1,0 +1,11 @@
+key: revopoint/revo-measure
+publisher: revopoint
+name: Revo Measure
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMeasure
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMeasure
+identifiers:
+- winget: Revopoint.RevoMeasure
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMeasure
+aliases: []

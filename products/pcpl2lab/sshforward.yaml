@@ -1,0 +1,11 @@
+key: pcpl2lab/sshforward
+publisher: pcpl2lab
+name: sshforward
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcpl2lab/sshforward
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcpl2lab/sshforward
+identifiers:
+- winget: pcpl2lab.sshforward
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcpl2lab/sshforward
+aliases: []

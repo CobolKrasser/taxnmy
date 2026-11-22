@@ -1,0 +1,11 @@
+key: net-foundation/ironpython
+publisher: net-foundation
+name: IronPython
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IronPython/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IronPython/3
+identifiers:
+- winget: Microsoft.IronPython.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IronPython/3
+aliases: []

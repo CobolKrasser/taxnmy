@@ -1,0 +1,11 @@
+key: softland/backup4all
+publisher: softland
+name: Backup4all
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/Backup4all/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/Backup4all/9
+identifiers:
+- winget: Softland.Backup4all.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/Backup4all/9
+aliases: []

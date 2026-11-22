@@ -1,0 +1,11 @@
+key: xdpxi/xd-s-code
+publisher: xdpxi
+name: XD's Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xdpxi/xds-code
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xdpxi/xds-code
+identifiers:
+- winget: xdpxi.xds-code
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xdpxi/xds-code
+aliases: []

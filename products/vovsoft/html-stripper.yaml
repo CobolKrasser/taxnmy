@@ -1,0 +1,12 @@
+key: vovsoft/html-stripper
+publisher: vovsoft
+name: Vovsoft HTML Stripper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HTMLStripper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HTMLStripper
+identifiers:
+- winget: VovSoft.HTMLStripper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HTMLStripper
+aliases:
+- vovsoft/vovsoft-html-stripper

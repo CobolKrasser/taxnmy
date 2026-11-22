@@ -1,0 +1,11 @@
+key: svr2kos2/taskmgrplayer
+publisher: svr2kos2
+name: TaskmgrPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/svr2kos2/TaskmgrPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/svr2kos2/TaskmgrPlayer
+identifiers:
+- winget: svr2kos2.TaskmgrPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/svr2kos2/TaskmgrPlayer
+aliases: []

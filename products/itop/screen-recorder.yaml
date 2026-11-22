@@ -1,0 +1,12 @@
+key: itop/screen-recorder
+publisher: itop
+name: iTop Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopScreenRecorder
+identifiers:
+- winget: iTop.iTopScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopScreenRecorder
+aliases:
+- itop/itop-screen-recorder

@@ -1,0 +1,12 @@
+key: termius/beta
+publisher: termius
+name: Termius Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termius/Termius/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termius/Termius/Beta
+identifiers:
+- winget: Termius.Termius.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termius/Termius/Beta
+aliases:
+- termius/termius-beta

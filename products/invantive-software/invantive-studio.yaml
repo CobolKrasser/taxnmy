@@ -1,0 +1,11 @@
+key: invantive-software/invantive-studio
+publisher: invantive-software
+name: Invantive Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveStudio
+identifiers:
+- winget: Invantive.InvantiveStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveStudio
+aliases: []

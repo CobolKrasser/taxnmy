@@ -1,0 +1,11 @@
+key: wolfvision/vsolution-app
+publisher: wolfvision
+name: vSolution App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolfVision/vSolutionApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolfVision/vSolutionApp
+identifiers:
+- winget: WolfVision.vSolutionApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolfVision/vSolutionApp
+aliases: []

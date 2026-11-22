@@ -1,0 +1,11 @@
+key: jakub-parez/ntp-client
+publisher: jakub-parez
+name: NTP Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JakubParez/NTP-Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JakubParez/NTP-Client
+identifiers:
+- winget: JakubParez.NTP-Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JakubParez/NTP-Client
+aliases: []

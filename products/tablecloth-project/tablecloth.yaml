@@ -1,0 +1,11 @@
+key: tablecloth-project/tablecloth
+publisher: tablecloth-project
+name: TableCloth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TableClothProject/TableCloth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TableClothProject/TableCloth
+identifiers:
+- winget: TableClothProject.TableCloth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TableClothProject/TableCloth
+aliases: []

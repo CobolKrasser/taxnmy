@@ -1,0 +1,11 @@
+key: eventhelix-com/visualether
+publisher: eventhelix-com
+name: VisualEther
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EventHelix/VisualEther
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EventHelix/VisualEther
+identifiers:
+- winget: EventHelix.VisualEther
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EventHelix/VisualEther
+aliases: []

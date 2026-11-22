@@ -1,0 +1,11 @@
+key: galacius/galacius
+publisher: galacius
+name: Galacius
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/galacius/Galacius
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/galacius/Galacius
+identifiers:
+- winget: galacius.Galacius
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/galacius/Galacius
+aliases: []

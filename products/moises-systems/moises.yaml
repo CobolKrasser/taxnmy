@@ -1,0 +1,11 @@
+key: moises-systems/moises
+publisher: moises-systems
+name: Moises
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moises/Moises
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moises/Moises
+identifiers:
+- winget: Moises.Moises
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moises/Moises
+aliases: []

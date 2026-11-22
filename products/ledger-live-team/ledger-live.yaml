@@ -1,0 +1,11 @@
+key: ledger-live-team/ledger-live
+publisher: ledger-live-team
+name: Ledger Live
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LedgerHQ/LedgerLive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LedgerHQ/LedgerLive
+identifiers:
+- winget: LedgerHQ.LedgerLive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LedgerHQ/LedgerLive
+aliases: []

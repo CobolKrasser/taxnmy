@@ -1,0 +1,11 @@
+key: pidgeon-health/pidgeon-cli
+publisher: pidgeon-health
+name: Pidgeon CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PidgeonHealth/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PidgeonHealth/CLI
+identifiers:
+- winget: PidgeonHealth.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PidgeonHealth/CLI
+aliases: []

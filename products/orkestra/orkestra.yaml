@@ -1,0 +1,11 @@
+key: orkestra/orkestra
+publisher: orkestra
+name: Orkestra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrkestraOnline/Orkestra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrkestraOnline/Orkestra
+identifiers:
+- winget: OrkestraOnline.Orkestra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrkestraOnline/Orkestra
+aliases: []

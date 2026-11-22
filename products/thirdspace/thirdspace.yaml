@@ -1,0 +1,11 @@
+key: thirdspace/thirdspace
+publisher: thirdspace
+name: ThirdSpace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wenming/ThirdSpace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wenming/ThirdSpace
+identifiers:
+- winget: wenming.ThirdSpace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wenming/ThirdSpace
+aliases: []

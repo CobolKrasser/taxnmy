@@ -1,0 +1,11 @@
+key: wildfoundry/dataplicity-cli
+publisher: wildfoundry
+name: Dataplicity CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildfoundry/DataplicityCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildfoundry/DataplicityCLI
+identifiers:
+- winget: Wildfoundry.DataplicityCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildfoundry/DataplicityCLI
+aliases: []

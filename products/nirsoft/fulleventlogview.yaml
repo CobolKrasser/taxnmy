@@ -1,0 +1,11 @@
+key: nirsoft/fulleventlogview
+publisher: nirsoft
+name: FullEventLogView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/FullEventLogView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/FullEventLogView
+identifiers:
+- winget: NirSoft.FullEventLogView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/FullEventLogView
+aliases: []

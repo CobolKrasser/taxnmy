@@ -1,0 +1,11 @@
+key: gnucash-development-team/gnucash
+publisher: gnucash-development-team
+name: GnuCash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuCash/GnuCash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuCash/GnuCash
+identifiers:
+- winget: GnuCash.GnuCash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuCash/GnuCash
+aliases: []

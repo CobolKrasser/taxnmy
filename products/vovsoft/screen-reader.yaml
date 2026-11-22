@@ -1,0 +1,12 @@
+key: vovsoft/screen-reader
+publisher: vovsoft
+name: Vovsoft Screen Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ScreenReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ScreenReader
+identifiers:
+- winget: VovSoft.ScreenReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ScreenReader
+aliases:
+- vovsoft/vovsoft-screen-reader

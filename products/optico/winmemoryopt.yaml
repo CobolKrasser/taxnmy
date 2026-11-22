@@ -1,0 +1,11 @@
+key: optico/winmemoryopt
+publisher: optico
+name: WinMemoryOpt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optico/WinMemoryOpt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optico/WinMemoryOpt
+identifiers:
+- winget: Optico.WinMemoryOpt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optico/WinMemoryOpt
+aliases: []

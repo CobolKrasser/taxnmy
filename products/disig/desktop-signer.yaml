@@ -1,0 +1,11 @@
+key: disig/desktop-signer
+publisher: disig
+name: Desktop Signer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Disig/DesktopSigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Disig/DesktopSigner
+identifiers:
+- winget: Disig.DesktopSigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Disig/DesktopSigner
+aliases: []

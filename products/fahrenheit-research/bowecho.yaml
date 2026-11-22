@@ -1,0 +1,11 @@
+key: fahrenheit-research/bowecho
+publisher: fahrenheit-research
+name: BowEcho
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/BowEcho
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/BowEcho
+identifiers:
+- winget: FahrenheitResearch.BowEcho
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/BowEcho
+aliases: []

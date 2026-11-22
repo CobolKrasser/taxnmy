@@ -1,0 +1,11 @@
+key: upright-labs/lister-connect
+publisher: upright-labs
+name: Lister Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UprightLabs/ListerConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UprightLabs/ListerConnect
+identifiers:
+- winget: UprightLabs.ListerConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UprightLabs/ListerConnect
+aliases: []

@@ -1,0 +1,11 @@
+key: cloud-video/pexip-my-meeting-video
+publisher: cloud-video
+name: Pexip (My Meeting Video)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/Pexip/Service
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/Pexip/Service
+identifiers:
+- winget: Pexip.Pexip.Service
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/Pexip/Service
+aliases: []

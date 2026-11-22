@@ -1,0 +1,11 @@
+key: ams-software/photodiva
+publisher: ams-software
+name: PhotoDiva
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoDiva
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoDiva
+identifiers:
+- winget: AMSSoftware.PhotoDiva
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoDiva
+aliases: []

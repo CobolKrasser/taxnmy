@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-redshift-odbc-driver
+publisher: amazon-web-services
+name: Amazon Redshift ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Redshift/ODBC/v1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Redshift/ODBC/v1
+identifiers:
+- winget: Amazon.Redshift.ODBC.v1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Redshift/ODBC/v1
+aliases: []

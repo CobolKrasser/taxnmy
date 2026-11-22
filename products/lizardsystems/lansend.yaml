@@ -1,0 +1,11 @@
+key: lizardsystems/lansend
+publisher: lizardsystems
+name: LanSend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LizardSystems/LanSend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LizardSystems/LanSend
+identifiers:
+- winget: LizardSystems.LanSend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LizardSystems/LanSend
+aliases: []

@@ -1,0 +1,11 @@
+key: dremio/arrow-flight-sql-odbc-driver
+publisher: dremio
+name: Arrow Flight SQL ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dremio/ArrowFlightSQLODBCDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dremio/ArrowFlightSQLODBCDriver
+identifiers:
+- winget: Dremio.ArrowFlightSQLODBCDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dremio/ArrowFlightSQLODBCDriver
+aliases: []

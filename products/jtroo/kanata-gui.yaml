@@ -1,0 +1,11 @@
+key: jtroo/kanata-gui
+publisher: jtroo
+name: Kanata GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jtroo/kanata_gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jtroo/kanata_gui
+identifiers:
+- winget: jtroo.kanata_gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jtroo/kanata_gui
+aliases: []

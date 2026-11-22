@@ -1,0 +1,11 @@
+key: librevault-team/librevault
+publisher: librevault-team
+name: Librevault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrevaultTeam/Librevault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrevaultTeam/Librevault
+identifiers:
+- winget: LibrevaultTeam.Librevault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrevaultTeam/Librevault
+aliases: []

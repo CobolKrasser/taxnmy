@@ -1,0 +1,11 @@
+key: deepl/deepl
+publisher: deepl
+name: DeepL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepL/DeepL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepL/DeepL
+identifiers:
+- winget: DeepL.DeepL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepL/DeepL
+aliases: []

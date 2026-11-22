@@ -1,0 +1,11 @@
+key: us-epa/epa-swmm-64-bit
+publisher: us-epa
+name: EPA SWMM (64-bit)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPA/SWMM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPA/SWMM
+identifiers:
+- winget: EPA.SWMM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPA/SWMM
+aliases: []

@@ -1,0 +1,12 @@
+key: bytifi/cli
+publisher: bytifi
+name: Bytifi CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytifi/Bytifi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytifi/Bytifi
+identifiers:
+- winget: Bytifi.Bytifi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytifi/Bytifi
+aliases:
+- bytifi/bytifi-cli

@@ -1,0 +1,11 @@
+key: andrey-meshkov/dnslookup
+publisher: andrey-meshkov
+name: dnslookup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ameshkov/dnslookup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ameshkov/dnslookup
+identifiers:
+- winget: ameshkov.dnslookup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ameshkov/dnslookup
+aliases: []

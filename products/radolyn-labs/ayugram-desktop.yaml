@@ -1,0 +1,11 @@
+key: radolyn-labs/ayugram-desktop
+publisher: radolyn-labs
+name: AyuGram Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadolynLabs/AyuGramDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadolynLabs/AyuGramDesktop
+identifiers:
+- winget: RadolynLabs.AyuGramDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadolynLabs/AyuGramDesktop
+aliases: []

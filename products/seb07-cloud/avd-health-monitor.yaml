@@ -1,0 +1,11 @@
+key: seb07-cloud/avd-health-monitor
+publisher: seb07-cloud
+name: AVD Health Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seb07-cloud/AVDHealthMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seb07-cloud/AVDHealthMonitor
+identifiers:
+- winget: seb07-cloud.AVDHealthMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seb07-cloud/AVDHealthMonitor
+aliases: []

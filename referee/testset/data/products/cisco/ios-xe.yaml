@@ -1,0 +1,12 @@
+key: cisco/ios-xe
+publisher: cisco
+name: Cisco IOS XE
+kind: operating-system
+source: https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-xe-26/bulletin-c25-2378701.html
+versions:
+  source: https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-xe-26/bulletin-c25-2378701.html
+identifiers:
+- cpe: cpe:2.3:o:cisco:ios_xe
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:cisco:ios_xe&resultsPerPage=1
+aliases:
+- cisco/cisco-ios-xe

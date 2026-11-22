@@ -1,0 +1,12 @@
+key: epic-games/launcher
+publisher: epic-games
+name: Epic Games Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicGamesLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicGamesLauncher
+identifiers:
+- winget: EpicGames.EpicGamesLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicGamesLauncher
+aliases:
+- epic-games/epic-games-launcher

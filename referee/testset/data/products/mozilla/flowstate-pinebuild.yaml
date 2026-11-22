@@ -1,0 +1,12 @@
+key: mozilla/flowstate-pinebuild
+publisher: mozilla
+name: Mozilla Flowstate Pinebuild
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Flowstate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Flowstate
+identifiers:
+- winget: Mozilla.Flowstate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Flowstate
+aliases:
+- mozilla/mozilla-flowstate-pinebuild

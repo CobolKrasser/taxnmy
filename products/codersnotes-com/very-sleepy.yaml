@@ -1,0 +1,11 @@
+key: codersnotes-com/very-sleepy
+publisher: codersnotes-com
+name: Very Sleepy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codersnotes/VerySleepy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codersnotes/VerySleepy
+identifiers:
+- winget: codersnotes.VerySleepy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codersnotes/VerySleepy
+aliases: []

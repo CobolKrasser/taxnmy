@@ -1,0 +1,11 @@
+key: mindgenius/mindgenius
+publisher: mindgenius
+name: MindGenius
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindGenius/MindGenius/20
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindGenius/MindGenius/20
+identifiers:
+- winget: MindGenius.MindGenius.20
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindGenius/MindGenius/20
+aliases: []

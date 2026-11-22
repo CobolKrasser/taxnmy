@@ -1,0 +1,11 @@
+key: techpowerup/nvcleanstall
+publisher: techpowerup
+name: NVCleanstall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/NVCleanstall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/NVCleanstall
+identifiers:
+- winget: TechPowerUp.NVCleanstall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/NVCleanstall
+aliases: []

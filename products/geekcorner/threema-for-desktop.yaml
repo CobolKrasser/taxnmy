@@ -1,0 +1,11 @@
+key: geekcorner/threema-for-desktop
+publisher: geekcorner
+name: Threema For Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeekCorner/threema
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeekCorner/threema
+identifiers:
+- winget: GeekCorner.threema
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeekCorner/threema
+aliases: []

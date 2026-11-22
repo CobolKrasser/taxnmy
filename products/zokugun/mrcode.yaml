@@ -1,0 +1,11 @@
+key: zokugun/mrcode
+publisher: zokugun
+name: MrCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zokugun/MrCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zokugun/MrCode
+identifiers:
+- winget: zokugun.MrCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zokugun/MrCode
+aliases: []

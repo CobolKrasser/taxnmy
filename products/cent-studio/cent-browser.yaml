@@ -1,0 +1,11 @@
+key: cent-studio/cent-browser
+publisher: cent-studio
+name: Cent Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CentStudio/CentBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CentStudio/CentBrowser
+identifiers:
+- winget: CentStudio.CentBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CentStudio/CentBrowser
+aliases: []

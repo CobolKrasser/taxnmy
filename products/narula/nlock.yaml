@@ -1,0 +1,11 @@
+key: narula/nlock
+publisher: narula
+name: NLock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Narula/NLock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Narula/NLock
+identifiers:
+- winget: Narula.NLock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Narula/NLock
+aliases: []

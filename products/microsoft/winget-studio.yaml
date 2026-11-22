@@ -1,0 +1,11 @@
+key: microsoft/winget-studio
+publisher: microsoft
+name: WinGet Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WinGetStudio/Experimental
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WinGetStudio/Experimental
+identifiers:
+- winget: Microsoft.WinGetStudio.Experimental
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WinGetStudio/Experimental
+aliases: []

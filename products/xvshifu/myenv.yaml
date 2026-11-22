@@ -1,0 +1,11 @@
+key: xvshifu/myenv
+publisher: xvshifu
+name: myEnv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XVSHIFU/myEnv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XVSHIFU/myEnv
+identifiers:
+- winget: XVSHIFU.myEnv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XVSHIFU/myEnv
+aliases: []

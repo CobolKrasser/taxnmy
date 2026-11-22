@@ -1,0 +1,11 @@
+key: kde/okular
+publisher: kde
+name: Okular
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular
+identifiers:
+- winget: KDE.Okular
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular
+aliases: []

@@ -1,0 +1,11 @@
+key: xiu2/cloudflarespeedtest
+publisher: xiu2
+name: CloudflareSpeedTest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XIU2/CloudflareSpeedTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XIU2/CloudflareSpeedTest
+identifiers:
+- winget: XIU2.CloudflareSpeedTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XIU2/CloudflareSpeedTest
+aliases: []

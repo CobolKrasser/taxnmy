@@ -1,0 +1,11 @@
+key: nova-max/xbatterystatus
+publisher: nova-max
+name: XBatteryStatus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nova_Max/XBatteryStatus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nova_Max/XBatteryStatus
+identifiers:
+- winget: Nova_Max.XBatteryStatus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nova_Max/XBatteryStatus
+aliases: []

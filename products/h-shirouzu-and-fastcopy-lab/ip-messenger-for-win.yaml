@@ -1,0 +1,11 @@
+key: h-shirouzu-and-fastcopy-lab/ip-messenger-for-win
+publisher: h-shirouzu-and-fastcopy-lab
+name: IP Messenger for Win
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/IPMsg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/IPMsg
+identifiers:
+- winget: FastCopy.IPMsg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/IPMsg
+aliases: []

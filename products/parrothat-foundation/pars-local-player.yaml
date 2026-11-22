@@ -1,0 +1,11 @@
+key: parrothat-foundation/pars-local-player
+publisher: parrothat-foundation
+name: Pars Local Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParrotHat/PLP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParrotHat/PLP
+identifiers:
+- winget: ParrotHat.PLP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParrotHat/PLP
+aliases: []

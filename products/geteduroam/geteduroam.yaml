@@ -1,0 +1,11 @@
+key: geteduroam/geteduroam
+publisher: geteduroam
+name: geteduroam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geteduroam/geteduroam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geteduroam/geteduroam
+identifiers:
+- winget: geteduroam.geteduroam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geteduroam/geteduroam
+aliases: []

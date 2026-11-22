@@ -1,0 +1,11 @@
+key: modeliosoft/modelio-open-source
+publisher: modeliosoft
+name: Modelio Open Source
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modeliosoft/Modelio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modeliosoft/Modelio
+identifiers:
+- winget: Modeliosoft.Modelio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modeliosoft/Modelio
+aliases: []

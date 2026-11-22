@@ -1,0 +1,11 @@
+key: alex-nord/slot-desktop
+publisher: alex-nord
+name: Slot Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlexNord/SlotDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlexNord/SlotDesktop
+identifiers:
+- winget: AlexNord.SlotDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlexNord/SlotDesktop
+aliases: []

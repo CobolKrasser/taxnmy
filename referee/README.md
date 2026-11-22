@@ -42,11 +42,13 @@ built from the same products, so that their sources are real too and only the er
 
 For each case, build a dataset as follows:
 
-1. Copy `products/` and `publishers/` from `main`.
+1. Copy `products/` and `publishers/` from `referee/testset/data/`. That is the test set's own data, fixed:
+   a copy of `main` on 22 November 2026, before the full winget round (TAX-56). A filling round on
+   `main` leaves the outcome of every case as it is. A new case that needs a file of `main` adds it there.
 2. Remove the files in `holdout` and `hide`.
 3. Add the files in `context`. A case that changes an existing file carries that file here, as the
    case was written against it. New data on `main` then leaves the case as it is.
-4. Add the proposal: the files in `holdout` (unchanged from `main`) and the files in `proposal`.
+4. Add the proposal: the files in `holdout` (unchanged from the test set's data) and the files in `proposal`.
 5. Run `tools/lint.py` on it. The findings on the proposal must match the field `lint`.
    - With `error`, the case stops there: the outcome is *reject* on that rule, and no AI is
      called.

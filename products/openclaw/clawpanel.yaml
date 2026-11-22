@@ -1,0 +1,11 @@
+key: openclaw/clawpanel
+publisher: openclaw
+name: ClawPanel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qingchencloud/ClawPanel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qingchencloud/ClawPanel
+identifiers:
+- winget: qingchencloud.ClawPanel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qingchencloud/ClawPanel
+aliases: []

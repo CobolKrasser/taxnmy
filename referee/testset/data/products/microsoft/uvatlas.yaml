@@ -1,0 +1,11 @@
+key: microsoft/uvatlas
+publisher: microsoft
+name: UVAtlas
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/UVAtlas
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/UVAtlas
+identifiers:
+- winget: Microsoft.DirectX.UVAtlas
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/UVAtlas
+aliases: []

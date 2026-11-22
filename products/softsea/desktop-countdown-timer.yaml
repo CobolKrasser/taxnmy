@@ -1,0 +1,11 @@
+key: softsea/desktop-countdown-timer
+publisher: softsea
+name: Desktop Countdown Timer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DesktopCountdownTimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DesktopCountdownTimer
+identifiers:
+- winget: SoftSea.DesktopCountdownTimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DesktopCountdownTimer
+aliases: []

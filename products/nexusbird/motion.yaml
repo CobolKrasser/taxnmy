@@ -1,0 +1,11 @@
+key: nexusbird/motion
+publisher: nexusbird
+name: Motion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexusbird/Motion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexusbird/Motion
+identifiers:
+- winget: Nexusbird.Motion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexusbird/Motion
+aliases: []

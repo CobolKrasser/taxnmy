@@ -1,0 +1,11 @@
+key: ntp/vibekidbright-ide
+publisher: ntp
+name: VibeKidbright IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natthaphon-SNT/vibeKidbright
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natthaphon-SNT/vibeKidbright
+identifiers:
+- winget: Natthaphon-SNT.vibeKidbright
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natthaphon-SNT/vibeKidbright
+aliases: []

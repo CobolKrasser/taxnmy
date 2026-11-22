@@ -1,0 +1,11 @@
+key: cowon/jetaudio-basic
+publisher: cowon
+name: jetAudio Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COWON/jetAudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COWON/jetAudio
+identifiers:
+- winget: COWON.jetAudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COWON/jetAudio
+aliases: []

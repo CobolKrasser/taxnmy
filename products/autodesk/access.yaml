@@ -1,0 +1,12 @@
+key: autodesk/access
+publisher: autodesk
+name: Autodesk Access
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/AutodeskAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/AutodeskAccess
+identifiers:
+- winget: Autodesk.AutodeskAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/AutodeskAccess
+aliases:
+- autodesk/autodesk-access

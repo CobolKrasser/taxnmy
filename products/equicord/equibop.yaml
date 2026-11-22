@@ -1,0 +1,11 @@
+key: equicord/equibop
+publisher: equicord
+name: Equibop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Equicord/Equibop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Equicord/Equibop
+identifiers:
+- winget: Equicord.Equibop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Equicord/Equibop
+aliases: []

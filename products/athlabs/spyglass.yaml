@@ -1,0 +1,11 @@
+key: athlabs/spyglass
+publisher: athlabs
+name: Spyglass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/athlabs/Spyglass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/athlabs/Spyglass
+identifiers:
+- winget: athlabs.Spyglass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/athlabs/Spyglass
+aliases: []

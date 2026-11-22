@@ -1,0 +1,11 @@
+key: remco-stoeten/dora
+publisher: remco-stoeten
+name: Dora
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemcoStoeten/Dora
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemcoStoeten/Dora
+identifiers:
+- winget: RemcoStoeten.Dora
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemcoStoeten/Dora
+aliases: []

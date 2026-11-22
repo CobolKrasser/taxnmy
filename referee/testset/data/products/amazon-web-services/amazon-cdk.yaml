@@ -1,0 +1,17 @@
+key: amazon-web-services/amazon-cdk
+publisher: amazon-web-services
+name: Amazon CDK
+kind: software
+source: https://endoflife.date/amazon-cdk
+versions:
+  source: https://endoflife.date/amazon-cdk
+identifiers:
+- purl: pkg:npm/aws-cdk
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-cdk.md
+- purl: pkg:golang/github.com/aws/aws-cdk-go/awscdk/v2
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-cdk.md
+- purl: pkg:github/aws/aws-cdk-go
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-cdk.md
+- cpe: cpe:2.3:a:amazon:aws_cloud_development_kit
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/amazon-cdk.md
+aliases: []

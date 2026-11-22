@@ -1,0 +1,11 @@
+key: topten-software/vboxheadlesstray
+publisher: topten-software
+name: VBoxHeadlessTray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToptenSoftware/VBoxHeadlessTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToptenSoftware/VBoxHeadlessTray
+identifiers:
+- winget: ToptenSoftware.VBoxHeadlessTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToptenSoftware/VBoxHeadlessTray
+aliases: []

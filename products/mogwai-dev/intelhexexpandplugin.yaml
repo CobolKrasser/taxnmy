@@ -1,0 +1,11 @@
+key: mogwai-dev/intelhexexpandplugin
+publisher: mogwai-dev
+name: IntelHexExpandPlugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mogwai-dev/IntelHexExpandPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mogwai-dev/IntelHexExpandPlugin
+identifiers:
+- winget: mogwai-dev.IntelHexExpandPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mogwai-dev/IntelHexExpandPlugin
+aliases: []

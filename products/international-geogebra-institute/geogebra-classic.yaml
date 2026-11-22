@@ -1,0 +1,13 @@
+key: international-geogebra-institute/geogebra-classic
+publisher: international-geogebra-institute
+name: GeoGebra Classic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Classic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Classic
+identifiers:
+- winget: GeoGebra.Classic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Classic
+- winget: GeoGebra.Classic.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/Classic/5
+aliases: []

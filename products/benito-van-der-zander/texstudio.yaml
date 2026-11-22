@@ -1,0 +1,11 @@
+key: benito-van-der-zander/texstudio
+publisher: benito-van-der-zander
+name: TeXstudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXstudio/TeXstudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXstudio/TeXstudio
+identifiers:
+- winget: TeXstudio.TeXstudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXstudio/TeXstudio
+aliases: []

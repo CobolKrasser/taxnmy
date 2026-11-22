@@ -1,0 +1,11 @@
+key: idrix/dirhash
+publisher: idrix
+name: DirHash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDRIX/DirHash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDRIX/DirHash
+identifiers:
+- winget: IDRIX.DirHash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDRIX/DirHash
+aliases: []

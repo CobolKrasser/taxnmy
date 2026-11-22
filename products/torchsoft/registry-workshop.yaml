@@ -1,0 +1,11 @@
+key: torchsoft/registry-workshop
+publisher: torchsoft
+name: Registry Workshop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Torchsoft/RegistryWorkshop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Torchsoft/RegistryWorkshop
+identifiers:
+- winget: Torchsoft.RegistryWorkshop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Torchsoft/RegistryWorkshop
+aliases: []

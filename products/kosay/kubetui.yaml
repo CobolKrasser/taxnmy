@@ -1,0 +1,11 @@
+key: kosay/kubetui
+publisher: kosay
+name: kubetui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kosay/kubetui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kosay/kubetui
+identifiers:
+- winget: kosay.kubetui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kosay/kubetui
+aliases: []

@@ -1,0 +1,11 @@
+key: neonprime-contributors/neonprime
+publisher: neonprime-contributors
+name: NeonPrime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABowlOfEleven/NeonPrime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABowlOfEleven/NeonPrime
+identifiers:
+- winget: ABowlOfEleven.NeonPrime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABowlOfEleven/NeonPrime
+aliases: []

@@ -1,0 +1,11 @@
+key: sysoverlay/sysoverlay
+publisher: sysoverlay
+name: SysOverlay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReTang/SysOverlay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReTang/SysOverlay
+identifiers:
+- winget: ReTang.SysOverlay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReTang/SysOverlay
+aliases: []

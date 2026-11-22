@@ -1,0 +1,11 @@
+key: pushbullet/pushbullet
+publisher: pushbullet
+name: Pushbullet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pushbullet/Pushbullet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pushbullet/Pushbullet
+identifiers:
+- winget: Pushbullet.Pushbullet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pushbullet/Pushbullet
+aliases: []

@@ -1,0 +1,13 @@
+key: rawtherapee-com/rawtherapee
+publisher: rawtherapee-com
+name: RawTherapee
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RawTherapee/RawTherapee
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RawTherapee/RawTherapee
+identifiers:
+- winget: RawTherapee.RawTherapee
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RawTherapee/RawTherapee
+- winget: RawTherapee.RawTherapee.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RawTherapee/RawTherapee/Dev
+aliases: []

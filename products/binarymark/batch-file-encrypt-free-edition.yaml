@@ -1,0 +1,11 @@
+key: binarymark/batch-file-encrypt-free-edition
+publisher: binarymark
+name: Batch File Encrypt Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileEncrypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileEncrypt
+identifiers:
+- winget: BinaryMark.BatchFileEncrypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileEncrypt
+aliases: []

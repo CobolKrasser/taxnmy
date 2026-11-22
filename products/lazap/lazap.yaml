@@ -1,0 +1,11 @@
+key: lazap/lazap
+publisher: lazap
+name: Lazap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LazapDevelopment/Lazap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LazapDevelopment/Lazap
+identifiers:
+- winget: LazapDevelopment.Lazap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LazapDevelopment/Lazap
+aliases: []

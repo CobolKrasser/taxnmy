@@ -1,0 +1,11 @@
+key: bandev/lux
+publisher: bandev
+name: Lux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackDevey/Lux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackDevey/Lux
+identifiers:
+- winget: JackDevey.Lux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackDevey/Lux
+aliases: []

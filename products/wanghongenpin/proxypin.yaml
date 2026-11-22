@@ -1,0 +1,11 @@
+key: wanghongenpin/proxypin
+publisher: wanghongenpin
+name: ProxyPin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wanghongenpin/ProxyPin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wanghongenpin/ProxyPin
+identifiers:
+- winget: wanghongenpin.ProxyPin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wanghongenpin/ProxyPin
+aliases: []

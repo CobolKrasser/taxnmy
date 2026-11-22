@@ -1,0 +1,11 @@
+key: jetbrains/writerside
+publisher: jetbrains
+name: Writerside
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Writerside/EAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Writerside/EAP
+identifiers:
+- winget: JetBrains.Writerside.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Writerside/EAP
+aliases: []

@@ -1,0 +1,11 @@
+key: ntwind/promptsense
+publisher: ntwind
+name: PromptSense
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/PromptSense
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/PromptSense
+identifiers:
+- winget: ntwind.PromptSense
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/PromptSense
+aliases: []

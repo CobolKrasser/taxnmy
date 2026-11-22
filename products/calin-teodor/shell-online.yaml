@@ -1,0 +1,11 @@
+key: calin-teodor/shell-online
+publisher: calin-teodor
+name: shell.online
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/teoslayer/shell/online
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/teoslayer/shell/online
+identifiers:
+- winget: teoslayer.shell.online
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/teoslayer/shell/online
+aliases: []

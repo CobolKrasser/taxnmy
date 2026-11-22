@@ -1,0 +1,11 @@
+key: brave-software/brave-origin-nightly
+publisher: brave-software
+name: Brave Origin Nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveOrigin/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveOrigin/Nightly
+identifiers:
+- winget: Brave.BraveOrigin.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveOrigin/Nightly
+aliases: []

@@ -1,0 +1,12 @@
+key: wix-toolset/command-line-tools
+publisher: wix-toolset
+name: WiX Toolset Command-Line Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXCLI
+identifiers:
+- winget: WiXToolset.WiXCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiXToolset/WiXCLI
+aliases:
+- wix-toolset/wix-toolset-command-line-tools

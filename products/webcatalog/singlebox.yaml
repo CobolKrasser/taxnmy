@@ -1,0 +1,11 @@
+key: webcatalog/singlebox
+publisher: webcatalog
+name: Singlebox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/Singlebox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/Singlebox
+identifiers:
+- winget: WebCatalogLtd.Singlebox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/Singlebox
+aliases: []

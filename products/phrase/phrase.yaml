@@ -1,0 +1,11 @@
+key: phrase/phrase
+publisher: phrase
+name: Phrase
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phrase/Phrase
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phrase/Phrase
+identifiers:
+- winget: Phrase.Phrase
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phrase/Phrase
+aliases: []

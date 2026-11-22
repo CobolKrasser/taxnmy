@@ -1,0 +1,11 @@
+key: cloudbase/qemu-img
+publisher: cloudbase
+name: qemu-img
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cloudbase/qemu-img
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cloudbase/qemu-img
+identifiers:
+- winget: cloudbase.qemu-img
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cloudbase/qemu-img
+aliases: []

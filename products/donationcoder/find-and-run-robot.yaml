@@ -1,0 +1,11 @@
+key: donationcoder/find-and-run-robot
+publisher: donationcoder
+name: Find and Run Robot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonationCoder/FindandRunRobot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonationCoder/FindandRunRobot
+identifiers:
+- winget: DonationCoder.FindandRunRobot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonationCoder/FindandRunRobot
+aliases: []

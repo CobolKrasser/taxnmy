@@ -1,0 +1,11 @@
+key: riot-games/valorant-asia-pacific-server
+publisher: riot-games
+name: VALORANT (Asia-Pacific server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/AP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/AP
+identifiers:
+- winget: RiotGames.Valorant.AP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/AP
+aliases: []

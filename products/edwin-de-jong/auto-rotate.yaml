@@ -1,0 +1,11 @@
+key: edwin-de-jong/auto-rotate
+publisher: edwin-de-jong
+name: Auto-Rotate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gedejong/AutoRotate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gedejong/AutoRotate
+identifiers:
+- winget: gedejong.AutoRotate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gedejong/AutoRotate
+aliases: []

@@ -1,0 +1,13 @@
+key: srevinsaju/guiscrcpy
+publisher: srevinsaju
+name: guiscrcpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srevinsaju/guiscrcpy/PyQt5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srevinsaju/guiscrcpy/PyQt5
+identifiers:
+- winget: srevinsaju.guiscrcpy.PyQt5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srevinsaju/guiscrcpy/PyQt5
+- winget: srevinsaju.guiscrcpy.PySide2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srevinsaju/guiscrcpy/PySide2
+aliases: []

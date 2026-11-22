@@ -1,0 +1,11 @@
+key: sam-l-huillier/reor
+publisher: sam-l-huillier
+name: Reor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReorProject/Reor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReorProject/Reor
+identifiers:
+- winget: ReorProject.Reor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReorProject/Reor
+aliases: []

@@ -1,0 +1,11 @@
+key: octopus-data/octoparse
+publisher: octopus-data
+name: Octoparse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusData/Octoparse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusData/Octoparse
+identifiers:
+- winget: OctopusData.Octoparse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusData/Octoparse
+aliases: []

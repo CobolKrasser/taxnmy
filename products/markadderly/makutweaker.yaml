@@ -1,0 +1,11 @@
+key: markadderly/makutweaker
+publisher: markadderly
+name: MakuTweaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkAdderly/MakuTweaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkAdderly/MakuTweaker
+identifiers:
+- winget: MarkAdderly.MakuTweaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkAdderly/MakuTweaker
+aliases: []

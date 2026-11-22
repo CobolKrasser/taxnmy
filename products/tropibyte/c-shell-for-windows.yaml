@@ -1,0 +1,11 @@
+key: tropibyte/c-shell-for-windows
+publisher: tropibyte
+name: C Shell for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tropibyte/cshw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tropibyte/cshw
+identifiers:
+- winget: Tropibyte.cshw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tropibyte/cshw
+aliases: []

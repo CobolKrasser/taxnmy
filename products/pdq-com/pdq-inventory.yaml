@@ -1,0 +1,11 @@
+key: pdq-com/pdq-inventory
+publisher: pdq-com
+name: PDQ Inventory
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDQ/PDQInventory
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDQ/PDQInventory
+identifiers:
+- winget: PDQ.PDQInventory
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDQ/PDQInventory
+aliases: []

@@ -1,0 +1,11 @@
+key: renoise/renoise
+publisher: renoise
+name: Renoise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renoise/Renoise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renoise/Renoise
+identifiers:
+- winget: Renoise.Renoise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renoise/Renoise
+aliases: []

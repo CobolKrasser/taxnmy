@@ -1,0 +1,13 @@
+key: www-microsip-org/microsip
+publisher: www-microsip-org
+name: MicroSIP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroSIP/MicroSIP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroSIP/MicroSIP
+identifiers:
+- winget: MicroSIP.MicroSIP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroSIP/MicroSIP
+- winget: MicroSIP.MicroSIP.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroSIP/MicroSIP/Lite
+aliases: []

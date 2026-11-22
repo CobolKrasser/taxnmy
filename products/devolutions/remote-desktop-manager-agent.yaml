@@ -1,0 +1,11 @@
+key: devolutions/remote-desktop-manager-agent
+publisher: devolutions
+name: Remote Desktop Manager Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/RemoteDesktopManagerAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/RemoteDesktopManagerAgent
+identifiers:
+- winget: Devolutions.RemoteDesktopManagerAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/RemoteDesktopManagerAgent
+aliases: []

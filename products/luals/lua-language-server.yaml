@@ -1,0 +1,11 @@
+key: luals/lua-language-server
+publisher: luals
+name: Lua Language Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuaLS/lua-language-server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuaLS/lua-language-server
+identifiers:
+- winget: LuaLS.lua-language-server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuaLS/lua-language-server
+aliases: []

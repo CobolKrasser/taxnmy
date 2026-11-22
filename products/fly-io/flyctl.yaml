@@ -1,0 +1,11 @@
+key: fly-io/flyctl
+publisher: fly-io
+name: flyctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fly-io/flyctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fly-io/flyctl
+identifiers:
+- winget: Fly-io.flyctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fly-io/flyctl
+aliases: []

@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-deskinfo
+publisher: o-and-o-software
+name: O&O DeskInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DeskInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DeskInfo
+identifiers:
+- winget: OO-Software.DeskInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DeskInfo
+aliases: []

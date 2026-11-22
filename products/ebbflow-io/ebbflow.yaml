@@ -1,0 +1,11 @@
+key: ebbflow-io/ebbflow
+publisher: ebbflow-io
+name: ebbflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ebbflow/Ebbflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ebbflow/Ebbflow
+identifiers:
+- winget: Ebbflow.Ebbflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ebbflow/Ebbflow
+aliases: []

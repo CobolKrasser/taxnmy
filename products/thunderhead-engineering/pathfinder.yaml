@@ -1,0 +1,15 @@
+key: thunderhead-engineering/pathfinder
+publisher: thunderhead-engineering
+name: Pathfinder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Pathfinder/2024
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Pathfinder/2024
+identifiers:
+- winget: Thunderhead.Pathfinder.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Pathfinder/2024
+- winget: Thunderhead.Pathfinder.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Pathfinder/2025
+- winget: Thunderhead.Pathfinder.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Pathfinder/2026
+aliases: []

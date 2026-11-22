@@ -1,0 +1,11 @@
+key: virtual-cable-s-l-u/uds-enterprise-client
+publisher: virtual-cable-s-l-u
+name: UDS Enterprise Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualCable/UDSClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualCable/UDSClient
+identifiers:
+- winget: VirtualCable.UDSClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualCable/UDSClient
+aliases: []

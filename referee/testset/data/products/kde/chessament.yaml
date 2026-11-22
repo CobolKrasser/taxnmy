@@ -1,0 +1,11 @@
+key: kde/chessament
+publisher: kde
+name: Chessament
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Chessament
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Chessament
+identifiers:
+- winget: KDE.Chessament
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Chessament
+aliases: []

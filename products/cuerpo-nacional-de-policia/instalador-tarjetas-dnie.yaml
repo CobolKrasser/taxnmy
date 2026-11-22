@@ -1,0 +1,11 @@
+key: cuerpo-nacional-de-policia/instalador-tarjetas-dnie
+publisher: cuerpo-nacional-de-policia
+name: Instalador Tarjetas DNIe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpanishGovernment/InstaladorDNIe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpanishGovernment/InstaladorDNIe
+identifiers:
+- winget: SpanishGovernment.InstaladorDNIe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpanishGovernment/InstaladorDNIe
+aliases: []

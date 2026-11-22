@@ -1,0 +1,11 @@
+key: passportogo/voio
+publisher: passportogo
+name: Voio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Passportogo/Voio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Passportogo/Voio
+identifiers:
+- winget: Passportogo.Voio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Passportogo/Voio
+aliases: []

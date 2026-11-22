@@ -1,0 +1,11 @@
+key: hetzner-cloud/hcloud
+publisher: hetzner-cloud
+name: hcloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HetznerCloud/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HetznerCloud/CLI
+identifiers:
+- winget: HetznerCloud.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HetznerCloud/CLI
+aliases: []

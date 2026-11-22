@@ -1,0 +1,11 @@
+key: calvinchengx/entra-emulator
+publisher: calvinchengx
+name: entra-emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calvinchengx/entra-emulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calvinchengx/entra-emulator
+identifiers:
+- winget: calvinchengx.entra-emulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calvinchengx/entra-emulator
+aliases: []

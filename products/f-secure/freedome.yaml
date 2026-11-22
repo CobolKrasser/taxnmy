@@ -1,0 +1,11 @@
+key: f-secure/freedome
+publisher: f-secure
+name: Freedome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/F-Secure/Freedome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/F-Secure/Freedome
+identifiers:
+- winget: F-Secure.Freedome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/F-Secure/Freedome
+aliases: []

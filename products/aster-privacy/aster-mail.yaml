@@ -1,0 +1,11 @@
+key: aster-privacy/aster-mail
+publisher: aster-privacy
+name: Aster Mail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AsterPrivacy/AsterMail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AsterPrivacy/AsterMail
+identifiers:
+- winget: AsterPrivacy.AsterMail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AsterPrivacy/AsterMail
+aliases: []

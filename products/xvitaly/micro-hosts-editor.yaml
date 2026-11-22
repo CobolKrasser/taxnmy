@@ -1,0 +1,11 @@
+key: xvitaly/micro-hosts-editor
+publisher: xvitaly
+name: Micro Hosts Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xvitaly/MicroHostsEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xvitaly/MicroHostsEditor
+identifiers:
+- winget: xvitaly.MicroHostsEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xvitaly/MicroHostsEditor
+aliases: []

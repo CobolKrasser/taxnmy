@@ -1,0 +1,11 @@
+key: assassing/baidu-pan-files-transfers
+publisher: assassing
+name: Baidu Pan Files Transfers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assassing/BaiduPanFilesTransfers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assassing/BaiduPanFilesTransfers
+identifiers:
+- winget: assassing.BaiduPanFilesTransfers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assassing/BaiduPanFilesTransfers
+aliases: []

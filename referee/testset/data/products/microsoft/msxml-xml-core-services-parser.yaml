@@ -1,0 +1,12 @@
+key: microsoft/msxml-xml-core-services-parser
+publisher: microsoft
+name: Microsoft MSXML (XML Core Services) Parser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSXML/4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSXML/4
+identifiers:
+- winget: Microsoft.MSXML.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSXML/4
+aliases:
+- microsoft/microsoft-msxml-xml-core-services-parser

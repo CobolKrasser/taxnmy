@@ -1,0 +1,11 @@
+key: systweak-software/duplicate-files-fixer
+publisher: systweak-software
+name: Duplicate Files Fixer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/DuplicateFilesFixer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/DuplicateFilesFixer
+identifiers:
+- winget: SystweakSoftware.DuplicateFilesFixer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/DuplicateFilesFixer
+aliases: []

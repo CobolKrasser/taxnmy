@@ -1,0 +1,11 @@
+key: akelpad/akelpad
+publisher: akelpad
+name: AkelPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AkelPad/AkelPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AkelPad/AkelPad
+identifiers:
+- winget: AkelPad.AkelPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AkelPad/AkelPad
+aliases: []

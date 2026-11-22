@@ -1,0 +1,11 @@
+key: arm/windowsperf
+publisher: arm
+name: WindowsPerf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/WindowsPerf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/WindowsPerf
+identifiers:
+- winget: Arm.WindowsPerf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/WindowsPerf
+aliases: []

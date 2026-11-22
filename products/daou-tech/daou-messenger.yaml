@@ -1,0 +1,11 @@
+key: daou-tech/daou-messenger
+publisher: daou-tech
+name: Daou Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaouTech/DaouMessenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaouTech/DaouMessenger
+identifiers:
+- winget: DaouTech.DaouMessenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaouTech/DaouMessenger
+aliases: []

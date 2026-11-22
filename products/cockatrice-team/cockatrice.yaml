@@ -1,0 +1,11 @@
+key: cockatrice-team/cockatrice
+publisher: cockatrice-team
+name: Cockatrice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockatrice/Cockatrice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockatrice/Cockatrice
+identifiers:
+- winget: Cockatrice.Cockatrice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockatrice/Cockatrice
+aliases: []

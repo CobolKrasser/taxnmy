@@ -1,0 +1,12 @@
+key: razer/synapse-4
+publisher: razer
+name: Razer Synapse 4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazerInc/RazerInstaller/Synapse4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazerInc/RazerInstaller/Synapse4
+identifiers:
+- winget: RazerInc.RazerInstaller.Synapse4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazerInc/RazerInstaller/Synapse4
+aliases:
+- razer/razer-synapse-4

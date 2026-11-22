@@ -1,0 +1,11 @@
+key: gstarsoft/dwg-fastview
+publisher: gstarsoft
+name: DWG FastView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gstarsoft/DWGFastView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gstarsoft/DWGFastView
+identifiers:
+- winget: Gstarsoft.DWGFastView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gstarsoft/DWGFastView
+aliases: []

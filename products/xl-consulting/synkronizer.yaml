@@ -1,0 +1,11 @@
+key: xl-consulting/synkronizer
+publisher: xl-consulting
+name: Synkronizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XLConsulting/Synkronizer/11
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XLConsulting/Synkronizer/11
+identifiers:
+- winget: XLConsulting.Synkronizer.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XLConsulting/Synkronizer/11
+aliases: []

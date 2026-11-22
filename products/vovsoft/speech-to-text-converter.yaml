@@ -1,0 +1,12 @@
+key: vovsoft/speech-to-text-converter
+publisher: vovsoft
+name: Vovsoft Speech to Text Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SpeechToTextConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SpeechToTextConverter
+identifiers:
+- winget: VovSoft.SpeechToTextConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SpeechToTextConverter
+aliases:
+- vovsoft/vovsoft-speech-to-text-converter

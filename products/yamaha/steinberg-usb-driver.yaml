@@ -1,0 +1,12 @@
+key: yamaha/steinberg-usb-driver
+publisher: yamaha
+name: Yamaha Steinberg USB Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/SteinbergUSBDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/SteinbergUSBDriver
+identifiers:
+- winget: Yamaha.SteinbergUSBDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/SteinbergUSBDriver
+aliases:
+- yamaha/yamaha-steinberg-usb-driver

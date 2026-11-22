@@ -1,0 +1,11 @@
+key: industrial-and-commercial-bank-of-china/icbcebankassist
+publisher: industrial-and-commercial-bank-of-china
+name: ICBCEBankAssist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCEBankAssist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCEBankAssist
+identifiers:
+- winget: ICBC.ICBCEBankAssist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCEBankAssist
+aliases: []

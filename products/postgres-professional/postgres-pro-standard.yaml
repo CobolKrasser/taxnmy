@@ -1,0 +1,17 @@
+key: postgres-professional/postgres-pro-standard
+publisher: postgres-professional
+name: Postgres Pro Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgresPro/Standard/13
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgresPro/Standard/13
+identifiers:
+- winget: PostgresPro.Standard.13
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgresPro/Standard/13
+- winget: PostgresPro.Standard.14
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgresPro/Standard/14
+- winget: PostgresPro.Standard.15
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgresPro/Standard/15
+- winget: PostgresPro.Standard.17
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgresPro/Standard/17
+aliases: []

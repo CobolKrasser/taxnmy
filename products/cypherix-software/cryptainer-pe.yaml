@@ -1,0 +1,13 @@
+key: cypherix-software/cryptainer-pe
+publisher: cypherix-software
+name: Cryptainer PE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Personal/18
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Personal/18
+identifiers:
+- winget: Cypherix.Cryptainer.Personal.18
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Personal/18
+- winget: Cypherix.Cryptainer.Personal.19
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Personal/19
+aliases: []

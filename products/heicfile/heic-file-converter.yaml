@@ -1,0 +1,11 @@
+key: heicfile/heic-file-converter
+publisher: heicfile
+name: HEIC File Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vertexshare/HEICFileConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vertexshare/HEICFileConverter
+identifiers:
+- winget: Vertexshare.HEICFileConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vertexshare/HEICFileConverter
+aliases: []

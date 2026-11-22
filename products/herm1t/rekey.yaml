@@ -1,0 +1,11 @@
+key: herm1t/rekey
+publisher: herm1t
+name: ReKey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/herm1t/ReKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/herm1t/ReKey
+identifiers:
+- winget: herm1t.ReKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/herm1t/ReKey
+aliases: []

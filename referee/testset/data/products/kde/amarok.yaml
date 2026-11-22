@@ -1,0 +1,11 @@
+key: kde/amarok
+publisher: kde
+name: Amarok
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Amarok
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Amarok
+identifiers:
+- winget: KDE.Amarok
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Amarok
+aliases: []

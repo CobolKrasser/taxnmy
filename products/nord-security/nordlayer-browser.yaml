@@ -1,0 +1,11 @@
+key: nord-security/nordlayer-browser
+publisher: nord-security
+name: NordLayer Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLayerBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLayerBrowser
+identifiers:
+- winget: NordSecurity.NordLayerBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLayerBrowser
+aliases: []

@@ -1,0 +1,11 @@
+key: abbott-laboratories/libreview-device-drivers
+publisher: abbott-laboratories
+name: LibreView Device Drivers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abbott/LibreViewDeviceDrivers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abbott/LibreViewDeviceDrivers
+identifiers:
+- winget: Abbott.LibreViewDeviceDrivers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abbott/LibreViewDeviceDrivers
+aliases: []

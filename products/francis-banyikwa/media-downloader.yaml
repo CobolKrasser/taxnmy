@@ -1,0 +1,11 @@
+key: francis-banyikwa/media-downloader
+publisher: francis-banyikwa
+name: Media Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrancisBanyikwa/MediaDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrancisBanyikwa/MediaDownloader
+identifiers:
+- winget: FrancisBanyikwa.MediaDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrancisBanyikwa/MediaDownloader
+aliases: []

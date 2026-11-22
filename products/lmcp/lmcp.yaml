@@ -1,0 +1,11 @@
+key: lmcp/lmcp
+publisher: lmcp
+name: LMCP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LMCP/LocalMCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LMCP/LocalMCP
+identifiers:
+- winget: LMCP.LocalMCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LMCP/LocalMCP
+aliases: []

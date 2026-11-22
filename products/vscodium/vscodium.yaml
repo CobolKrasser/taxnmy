@@ -1,0 +1,11 @@
+key: vscodium/vscodium
+publisher: vscodium
+name: VSCodium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSCodium/VSCodium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSCodium/VSCodium
+identifiers:
+- winget: VSCodium.VSCodium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VSCodium/VSCodium
+aliases: []

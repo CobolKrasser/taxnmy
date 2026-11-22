@@ -1,0 +1,11 @@
+key: frame-labs/frame
+publisher: frame-labs
+name: Frame
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/floating/frame
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/floating/frame
+identifiers:
+- winget: floating.frame
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/floating/frame
+aliases: []

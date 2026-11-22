@@ -1,0 +1,11 @@
+key: amd/lemonade-server
+publisher: amd
+name: Lemonade Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMD/LemonadeServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMD/LemonadeServer
+identifiers:
+- winget: AMD.LemonadeServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMD/LemonadeServer
+aliases: []

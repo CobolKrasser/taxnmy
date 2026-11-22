@@ -1,0 +1,11 @@
+key: projectteamforyou/omnidesk
+publisher: projectteamforyou
+name: OmniDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectTeamForYou/OmniDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectTeamForYou/OmniDesk
+identifiers:
+- winget: ProjectTeamForYou.OmniDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectTeamForYou/OmniDesk
+aliases: []

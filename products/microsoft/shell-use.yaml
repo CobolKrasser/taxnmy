@@ -1,0 +1,11 @@
+key: microsoft/shell-use
+publisher: microsoft
+name: shell-use
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ShellUse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ShellUse
+identifiers:
+- winget: Microsoft.ShellUse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ShellUse
+aliases: []

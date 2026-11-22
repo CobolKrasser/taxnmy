@@ -1,0 +1,13 @@
+key: microsoft/visual-studio-remote-debugger-for-devices
+publisher: microsoft
+name: Visual Studio Remote Debugger for Devices
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/OnecoreMsvsmon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/OnecoreMsvsmon
+identifiers:
+- winget: Microsoft.VisualStudio.2022.OnecoreMsvsmon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2022/OnecoreMsvsmon
+- winget: Microsoft.VisualStudio.OnecoreMsvsmon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/OnecoreMsvsmon
+aliases: []

@@ -1,0 +1,11 @@
+key: bare-metal-software/baretail
+publisher: bare-metal-software
+name: Baretail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/baremetalsoft/baretail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/baremetalsoft/baretail
+identifiers:
+- winget: baremetalsoft.baretail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/baremetalsoft/baretail
+aliases: []

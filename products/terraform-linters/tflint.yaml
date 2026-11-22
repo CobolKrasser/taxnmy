@@ -1,0 +1,11 @@
+key: terraform-linters/tflint
+publisher: terraform-linters
+name: TFLint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TerraformLinters/tflint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TerraformLinters/tflint
+identifiers:
+- winget: TerraformLinters.tflint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TerraformLinters/tflint
+aliases: []

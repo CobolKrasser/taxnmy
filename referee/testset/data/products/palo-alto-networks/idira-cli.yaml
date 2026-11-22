@@ -1,0 +1,11 @@
+key: palo-alto-networks/idira-cli
+publisher: palo-alto-networks
+name: Idira CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaloAltoNetworks/Idira/Idsec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaloAltoNetworks/Idira/Idsec
+identifiers:
+- winget: PaloAltoNetworks.Idira.Idsec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaloAltoNetworks/Idira/Idsec
+aliases: []

@@ -1,0 +1,12 @@
+key: strem/application
+publisher: strem
+name: Strem Application
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Strem/App
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Strem/App
+identifiers:
+- winget: Strem.App
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Strem/App
+aliases:
+- strem/strem-application

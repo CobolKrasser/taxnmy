@@ -1,0 +1,12 @@
+key: hhd-software/virtual-usb-tools
+publisher: hhd-software
+name: HHD Software Virtual USB Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/VirtualUSBTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/VirtualUSBTools
+identifiers:
+- winget: HHDSoftware.VirtualUSBTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/VirtualUSBTools
+aliases:
+- hhd-software/hhd-software-virtual-usb-tools

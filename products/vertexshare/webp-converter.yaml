@@ -1,0 +1,11 @@
+key: vertexshare/webp-converter
+publisher: vertexshare
+name: Webp Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vertexshare/WebpConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vertexshare/WebpConverter
+identifiers:
+- winget: Vertexshare.WebpConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vertexshare/WebpConverter
+aliases: []

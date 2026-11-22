@@ -1,0 +1,11 @@
+key: google/simba-odbc-driver-for-google-bigquery
+publisher: google
+name: Simba ODBC Driver for Google BigQuery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimbaTechnologies/SimbaODBCDriverforGoogleBigQuery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimbaTechnologies/SimbaODBCDriverforGoogleBigQuery
+identifiers:
+- winget: SimbaTechnologies.SimbaODBCDriverforGoogleBigQuery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimbaTechnologies/SimbaODBCDriverforGoogleBigQuery
+aliases: []

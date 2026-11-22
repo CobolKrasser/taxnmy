@@ -1,0 +1,11 @@
+key: doanduc/multi-screen-recorder
+publisher: doanduc
+name: Multi Screen Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/doanduc/MultiScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/doanduc/MultiScreenRecorder
+identifiers:
+- winget: doanduc.MultiScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/doanduc/MultiScreenRecorder
+aliases: []

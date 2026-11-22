@@ -1,0 +1,12 @@
+key: acemovi/video-editor
+publisher: acemovi
+name: AceMovi Video Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TunesKit/AceMovi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TunesKit/AceMovi
+identifiers:
+- winget: TunesKit.AceMovi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TunesKit/AceMovi
+aliases:
+- acemovi/acemovi-video-editor

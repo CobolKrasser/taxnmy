@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-iso-manager
+publisher: lsoft-technologies
+name: Active@ ISO Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveISOManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveISOManager
+identifiers:
+- winget: LSoftTechnologies.ActiveISOManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveISOManager
+aliases: []

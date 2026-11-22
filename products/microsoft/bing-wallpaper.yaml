@@ -1,0 +1,11 @@
+key: microsoft/bing-wallpaper
+publisher: microsoft
+name: Bing Wallpaper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BingWallpaper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BingWallpaper
+identifiers:
+- winget: Microsoft.BingWallpaper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/BingWallpaper
+aliases: []

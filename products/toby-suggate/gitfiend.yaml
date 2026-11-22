@@ -1,0 +1,11 @@
+key: toby-suggate/gitfiend
+publisher: toby-suggate
+name: GitFiend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TobySuggate/GitFiend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TobySuggate/GitFiend
+identifiers:
+- winget: TobySuggate.GitFiend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TobySuggate/GitFiend
+aliases: []

@@ -1,0 +1,11 @@
+key: dentsusoken/kopi
+publisher: dentsusoken
+name: Kopi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopi-vm/Kopi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopi-vm/Kopi
+identifiers:
+- winget: Kopi-vm.Kopi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopi-vm/Kopi
+aliases: []

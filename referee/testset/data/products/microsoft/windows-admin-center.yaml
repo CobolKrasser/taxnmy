@@ -1,0 +1,11 @@
+key: microsoft/windows-admin-center
+publisher: microsoft
+name: Windows Admin Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAdminCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAdminCenter
+identifiers:
+- winget: Microsoft.WindowsAdminCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsAdminCenter
+aliases: []

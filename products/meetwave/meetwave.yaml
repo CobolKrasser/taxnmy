@@ -1,0 +1,11 @@
+key: meetwave/meetwave
+publisher: meetwave
+name: MeetWave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeetWave/MeetWave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeetWave/MeetWave
+identifiers:
+- winget: MeetWave.MeetWave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeetWave/MeetWave
+aliases: []

@@ -1,0 +1,11 @@
+key: closeio/close
+publisher: closeio
+name: Close
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/closeio/Close
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/closeio/Close
+identifiers:
+- winget: closeio.Close
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/closeio/Close
+aliases: []

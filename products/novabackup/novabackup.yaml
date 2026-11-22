@@ -1,0 +1,11 @@
+key: novabackup/novabackup
+publisher: novabackup
+name: NovaBACKUP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovaBACKUPCorporation/NovaBACKUP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovaBACKUPCorporation/NovaBACKUP
+identifiers:
+- winget: NovaBACKUPCorporation.NovaBACKUP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovaBACKUPCorporation/NovaBACKUP
+aliases: []

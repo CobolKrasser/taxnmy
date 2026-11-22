@@ -1,0 +1,11 @@
+key: monocode/monocode
+publisher: monocode
+name: MonoCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hardbeat920/MonoCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hardbeat920/MonoCode
+identifiers:
+- winget: hardbeat920.MonoCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hardbeat920/MonoCode
+aliases: []

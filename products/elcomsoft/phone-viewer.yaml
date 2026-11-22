@@ -1,0 +1,12 @@
+key: elcomsoft/phone-viewer
+publisher: elcomsoft
+name: Elcomsoft Phone Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/PhoneViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/PhoneViewer
+identifiers:
+- winget: Elcomsoft.PhoneViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/PhoneViewer
+aliases:
+- elcomsoft/elcomsoft-phone-viewer

@@ -1,0 +1,12 @@
+key: movavi/photo-editor
+publisher: movavi
+name: Movavi Photo Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoEditor
+identifiers:
+- winget: Movavi.MovaviPhotoEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPhotoEditor
+aliases:
+- movavi/movavi-photo-editor

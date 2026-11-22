@@ -1,0 +1,11 @@
+key: thewrz/wrzdj-bridge
+publisher: thewrz
+name: WrzDJ Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WrzDJ/WrzDJ-Bridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WrzDJ/WrzDJ-Bridge
+identifiers:
+- winget: WrzDJ.WrzDJ-Bridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WrzDJ/WrzDJ-Bridge
+aliases: []

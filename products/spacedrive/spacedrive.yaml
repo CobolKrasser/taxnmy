@@ -1,0 +1,11 @@
+key: spacedrive/spacedrive
+publisher: spacedrive
+name: Spacedrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacedrive/Spacedrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacedrive/Spacedrive
+identifiers:
+- winget: spacedrive.Spacedrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacedrive/Spacedrive
+aliases: []

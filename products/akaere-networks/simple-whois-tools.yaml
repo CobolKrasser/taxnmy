@@ -1,0 +1,11 @@
+key: akaere-networks/simple-whois-tools
+publisher: akaere-networks
+name: Simple Whois Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akaere/whois
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akaere/whois
+identifiers:
+- winget: Akaere.whois
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akaere/whois
+aliases: []

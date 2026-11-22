@@ -1,0 +1,12 @@
+key: audiocodes/syslog-viewer
+publisher: audiocodes
+name: AudioCodes Syslog Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/SyslogViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/SyslogViewer
+identifiers:
+- winget: AudioCodes.SyslogViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/SyslogViewer
+aliases:
+- audiocodes/audiocodes-syslog-viewer

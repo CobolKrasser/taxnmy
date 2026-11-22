@@ -1,0 +1,11 @@
+key: queueram/texture64
+publisher: queueram
+name: Texture64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/queueRAM/Texture64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/queueRAM/Texture64
+identifiers:
+- winget: queueRAM.Texture64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/queueRAM/Texture64
+aliases: []

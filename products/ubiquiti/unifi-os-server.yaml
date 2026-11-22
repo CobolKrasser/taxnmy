@@ -1,0 +1,11 @@
+key: ubiquiti/unifi-os-server
+publisher: ubiquiti
+name: UniFi OS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/UniFiOSServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/UniFiOSServer
+identifiers:
+- winget: Ubiquiti.UniFiOSServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/UniFiOSServer
+aliases: []

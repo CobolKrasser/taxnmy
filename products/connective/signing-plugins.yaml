@@ -1,0 +1,12 @@
+key: connective/signing-plugins
+publisher: connective
+name: Connective Signing Plugins
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Connective/ConnectiveSigningPlugins
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Connective/ConnectiveSigningPlugins
+identifiers:
+- winget: Connective.ConnectiveSigningPlugins
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Connective/ConnectiveSigningPlugins
+aliases:
+- connective/connective-signing-plugins

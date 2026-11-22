@@ -1,0 +1,11 @@
+key: tokalang/trg
+publisher: tokalang
+name: trg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tokalang/trg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tokalang/trg
+identifiers:
+- winget: Tokalang.trg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tokalang/trg
+aliases: []

@@ -1,0 +1,11 @@
+key: traycer-ai/traycer
+publisher: traycer-ai
+name: Traycer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TraycerAI/Traycer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TraycerAI/Traycer
+identifiers:
+- winget: TraycerAI.Traycer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TraycerAI/Traycer
+aliases: []

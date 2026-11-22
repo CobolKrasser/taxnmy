@@ -1,0 +1,11 @@
+key: epic-games/eos-sdk-c-sharp
+publisher: epic-games
+name: EOS SDK (C#)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicOnlineServicesSDK/CSharp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicOnlineServicesSDK/CSharp
+identifiers:
+- winget: EpicGames.EpicOnlineServicesSDK.CSharp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicOnlineServicesSDK/CSharp
+aliases: []

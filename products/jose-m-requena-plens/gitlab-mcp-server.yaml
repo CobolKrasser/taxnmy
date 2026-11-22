@@ -1,0 +1,11 @@
+key: jose-m-requena-plens/gitlab-mcp-server
+publisher: jose-m-requena-plens
+name: GitLab MCP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jmrplens/gitlab-mcp-server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jmrplens/gitlab-mcp-server
+identifiers:
+- winget: jmrplens.gitlab-mcp-server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jmrplens/gitlab-mcp-server
+aliases: []

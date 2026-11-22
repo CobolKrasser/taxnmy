@@ -1,0 +1,11 @@
+key: jacob-smith/dawg
+publisher: jacob-smith
+name: DAWG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dawg/dawg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dawg/dawg
+identifiers:
+- winget: dawg.dawg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dawg/dawg
+aliases: []

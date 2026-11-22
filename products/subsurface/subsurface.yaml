@@ -1,0 +1,11 @@
+key: subsurface/subsurface
+publisher: subsurface
+name: Subsurface
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Subsurface/Subsurface
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Subsurface/Subsurface
+identifiers:
+- winget: Subsurface.Subsurface
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Subsurface/Subsurface
+aliases: []

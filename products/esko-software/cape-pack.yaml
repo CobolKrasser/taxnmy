@@ -1,0 +1,11 @@
+key: esko-software/cape-pack
+publisher: esko-software
+name: Cape Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Esko/CapePack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Esko/CapePack
+identifiers:
+- winget: Esko.CapePack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Esko/CapePack
+aliases: []

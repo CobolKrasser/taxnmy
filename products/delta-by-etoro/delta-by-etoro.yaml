@@ -1,0 +1,11 @@
+key: delta-by-etoro/delta-by-etoro
+publisher: delta-by-etoro
+name: Delta by eToro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eToro/Delta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eToro/Delta
+identifiers:
+- winget: eToro.Delta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eToro/Delta
+aliases: []

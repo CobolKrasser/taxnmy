@@ -1,0 +1,11 @@
+key: webstudio/webstudio
+publisher: webstudio
+name: Webstudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webstudio/Webstudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webstudio/Webstudio
+identifiers:
+- winget: Webstudio.Webstudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webstudio/Webstudio
+aliases: []

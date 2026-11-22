@@ -1,0 +1,11 @@
+key: dataplant/arccommander
+publisher: dataplant
+name: ArcCommander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataPLANT/ArcCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataPLANT/ArcCommander
+identifiers:
+- winget: DataPLANT.ArcCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataPLANT/ArcCommander
+aliases: []

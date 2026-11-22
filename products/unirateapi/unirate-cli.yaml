@@ -1,0 +1,11 @@
+key: unirateapi/unirate-cli
+publisher: unirateapi
+name: UniRate CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniRateAPI/UniRate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniRateAPI/UniRate
+identifiers:
+- winget: UniRateAPI.UniRate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniRateAPI/UniRate
+aliases: []

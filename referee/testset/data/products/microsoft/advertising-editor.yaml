@@ -1,0 +1,12 @@
+key: microsoft/advertising-editor
+publisher: microsoft
+name: Microsoft Advertising Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AdvertisingEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AdvertisingEditor
+identifiers:
+- winget: Microsoft.AdvertisingEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AdvertisingEditor
+aliases:
+- microsoft/microsoft-advertising-editor

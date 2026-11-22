@@ -1,0 +1,11 @@
+key: mytonwallet/mytonwallet
+publisher: mytonwallet
+name: MyTonWallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyTonWallet/MyTonWallet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyTonWallet/MyTonWallet
+identifiers:
+- winget: MyTonWallet.MyTonWallet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyTonWallet/MyTonWallet
+aliases: []

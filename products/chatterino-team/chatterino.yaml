@@ -1,0 +1,11 @@
+key: chatterino-team/chatterino
+publisher: chatterino-team
+name: Chatterino
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChatterinoTeam/Chatterino
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChatterinoTeam/Chatterino
+identifiers:
+- winget: ChatterinoTeam.Chatterino
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChatterinoTeam/Chatterino
+aliases: []

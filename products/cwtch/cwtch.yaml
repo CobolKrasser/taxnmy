@@ -1,0 +1,11 @@
+key: cwtch/cwtch
+publisher: cwtch
+name: Cwtch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cwtch/Cwtch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cwtch/Cwtch
+identifiers:
+- winget: Cwtch.Cwtch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cwtch/Cwtch
+aliases: []

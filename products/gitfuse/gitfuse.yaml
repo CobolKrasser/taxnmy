@@ -1,0 +1,11 @@
+key: gitfuse/gitfuse
+publisher: gitfuse
+name: GitFuse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitFuse/GitFuse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitFuse/GitFuse
+identifiers:
+- winget: GitFuse.GitFuse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitFuse/GitFuse
+aliases: []

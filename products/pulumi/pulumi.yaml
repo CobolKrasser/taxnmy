@@ -1,0 +1,11 @@
+key: pulumi/pulumi
+publisher: pulumi
+name: Pulumi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulumi/Pulumi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulumi/Pulumi
+identifiers:
+- winget: Pulumi.Pulumi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulumi/Pulumi
+aliases: []

@@ -1,0 +1,11 @@
+key: atlassian/rovo
+publisher: atlassian
+name: Rovo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Rovo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Rovo
+identifiers:
+- winget: Atlassian.Rovo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Rovo
+aliases: []

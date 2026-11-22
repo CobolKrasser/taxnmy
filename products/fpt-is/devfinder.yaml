@@ -1,0 +1,11 @@
+key: fpt-is/devfinder
+publisher: fpt-is
+name: DevFinder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StormShynn/DevFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StormShynn/DevFinder
+identifiers:
+- winget: StormShynn.DevFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StormShynn/DevFinder
+aliases: []

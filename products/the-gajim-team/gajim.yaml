@@ -1,0 +1,11 @@
+key: the-gajim-team/gajim
+publisher: the-gajim-team
+name: Gajim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gajim/Gajim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gajim/Gajim
+identifiers:
+- winget: Gajim.Gajim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gajim/Gajim
+aliases: []

@@ -1,0 +1,11 @@
+key: omsi-launcher-contributors/omsi-launcher
+publisher: omsi-launcher-contributors
+name: omsi-launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmsiLauncher/OmsiLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmsiLauncher/OmsiLauncher
+identifiers:
+- winget: OmsiLauncher.OmsiLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmsiLauncher/OmsiLauncher
+aliases: []

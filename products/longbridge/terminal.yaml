@@ -1,0 +1,12 @@
+key: longbridge/terminal
+publisher: longbridge
+name: Longbridge Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Longbridge/LongbridgeTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Longbridge/LongbridgeTerminal
+identifiers:
+- winget: Longbridge.LongbridgeTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Longbridge/LongbridgeTerminal
+aliases:
+- longbridge/longbridge-terminal

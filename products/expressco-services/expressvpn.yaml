@@ -1,0 +1,11 @@
+key: expressco-services/expressvpn
+publisher: expressco-services
+name: ExpressVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExpressVPN/ExpressVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExpressVPN/ExpressVPN
+identifiers:
+- winget: ExpressVPN.ExpressVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExpressVPN/ExpressVPN
+aliases: []

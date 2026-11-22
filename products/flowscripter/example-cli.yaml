@@ -1,0 +1,11 @@
+key: flowscripter/example-cli
+publisher: flowscripter
+name: Example CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/example-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/example-cli
+identifiers:
+- winget: Flowscripter.example-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/example-cli
+aliases: []

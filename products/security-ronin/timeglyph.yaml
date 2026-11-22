@@ -1,0 +1,11 @@
+key: security-ronin/timeglyph
+publisher: security-ronin
+name: timeglyph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityRonin/timeglyph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityRonin/timeglyph
+identifiers:
+- winget: SecurityRonin.timeglyph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityRonin/timeglyph
+aliases: []

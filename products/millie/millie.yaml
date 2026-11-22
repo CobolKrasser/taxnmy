@@ -1,0 +1,11 @@
+key: millie/millie
+publisher: millie
+name: Millie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Millie/millie/Legacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Millie/millie/Legacy
+identifiers:
+- winget: Millie.millie.Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Millie/millie/Legacy
+aliases: []

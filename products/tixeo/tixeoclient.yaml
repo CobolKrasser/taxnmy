@@ -1,0 +1,11 @@
+key: tixeo/tixeoclient
+publisher: tixeo
+name: TixeoClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tixeo/TixeoClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tixeo/TixeoClient
+identifiers:
+- winget: Tixeo.TixeoClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tixeo/TixeoClient
+aliases: []

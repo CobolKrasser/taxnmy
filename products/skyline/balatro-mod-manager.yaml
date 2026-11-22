@@ -1,0 +1,11 @@
+key: skyline/balatro-mod-manager
+publisher: skyline
+name: Balatro Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skyline/BalatroModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skyline/BalatroModManager
+identifiers:
+- winget: Skyline.BalatroModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skyline/BalatroModManager
+aliases: []

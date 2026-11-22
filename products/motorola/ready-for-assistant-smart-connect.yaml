@@ -1,0 +1,11 @@
+key: motorola/ready-for-assistant-smart-connect
+publisher: motorola
+name: Ready For Assistant / Smart Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Motorola/ReadyForAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Motorola/ReadyForAssistant
+identifiers:
+- winget: Motorola.ReadyForAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Motorola/ReadyForAssistant
+aliases: []

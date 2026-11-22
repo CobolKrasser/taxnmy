@@ -1,0 +1,12 @@
+key: refinitiv/workspace
+publisher: refinitiv
+name: Refinitiv Workspace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSEG/RefinitivWorkspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSEG/RefinitivWorkspace
+identifiers:
+- winget: LSEG.RefinitivWorkspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSEG/RefinitivWorkspace
+aliases:
+- refinitiv/refinitiv-workspace

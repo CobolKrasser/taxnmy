@@ -1,0 +1,11 @@
+key: lithe/lithe
+publisher: lithe
+name: Lithe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/1lck/Lithe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/1lck/Lithe
+identifiers:
+- winget: 1lck.Lithe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/1/1lck/Lithe
+aliases: []

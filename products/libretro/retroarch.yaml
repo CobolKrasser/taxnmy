@@ -1,0 +1,11 @@
+key: libretro/retroarch
+publisher: libretro
+name: RetroArch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Libretro/RetroArch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Libretro/RetroArch
+identifiers:
+- winget: Libretro.RetroArch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Libretro/RetroArch
+aliases: []

@@ -1,0 +1,11 @@
+key: danielsiegl/gitsqlite
+publisher: danielsiegl
+name: gitsqlite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielsiegl/gitsqlite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielsiegl/gitsqlite
+identifiers:
+- winget: danielsiegl.gitsqlite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielsiegl/gitsqlite
+aliases: []

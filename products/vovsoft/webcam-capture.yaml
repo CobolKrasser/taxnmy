@@ -1,0 +1,12 @@
+key: vovsoft/webcam-capture
+publisher: vovsoft
+name: Vovsoft Webcam Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebcamCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebcamCapture
+identifiers:
+- winget: VovSoft.WebcamCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebcamCapture
+aliases:
+- vovsoft/vovsoft-webcam-capture

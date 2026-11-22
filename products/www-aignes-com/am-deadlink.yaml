@@ -1,0 +1,11 @@
+key: www-aignes-com/am-deadlink
+publisher: www-aignes-com
+name: AM-DeadLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aignesberger/DeadLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aignesberger/DeadLink
+identifiers:
+- winget: Aignesberger.DeadLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aignesberger/DeadLink
+aliases: []

@@ -1,0 +1,11 @@
+key: rev-robotics/rev-hardware-client
+publisher: rev-robotics
+name: REV Hardware Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REVRobotics/REVHardwareClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REVRobotics/REVHardwareClient
+identifiers:
+- winget: REVRobotics.REVHardwareClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REVRobotics/REVHardwareClient
+aliases: []

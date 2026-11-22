@@ -1,0 +1,11 @@
+key: florian-gilde/quickrun
+publisher: florian-gilde
+name: QuickRun
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fgilde/QuickRun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fgilde/QuickRun
+identifiers:
+- winget: fgilde.QuickRun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fgilde/QuickRun
+aliases: []

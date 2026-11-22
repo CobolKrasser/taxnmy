@@ -1,0 +1,11 @@
+key: green-18-enterprises/legacy-file-converter
+publisher: green-18-enterprises
+name: Legacy File Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LegacyFileConverter/LegacyFileConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LegacyFileConverter/LegacyFileConverter
+identifiers:
+- winget: LegacyFileConverter.LegacyFileConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LegacyFileConverter/LegacyFileConverter
+aliases: []

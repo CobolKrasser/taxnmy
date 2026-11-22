@@ -1,0 +1,11 @@
+key: flyingpie/windows-terminal-quake
+publisher: flyingpie
+name: windows-terminal-quake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flyingpie/windows-terminal-quake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flyingpie/windows-terminal-quake
+identifiers:
+- winget: flyingpie.windows-terminal-quake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flyingpie/windows-terminal-quake
+aliases: []

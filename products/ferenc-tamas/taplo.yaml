@@ -1,0 +1,11 @@
+key: ferenc-tamas/taplo
+publisher: ferenc-tamas
+name: Taplo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tamasfe/taplo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tamasfe/taplo
+identifiers:
+- winget: tamasfe.taplo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tamasfe/taplo
+aliases: []

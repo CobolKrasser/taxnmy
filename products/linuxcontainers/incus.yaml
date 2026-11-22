@@ -1,0 +1,11 @@
+key: linuxcontainers/incus
+publisher: linuxcontainers
+name: Incus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinuxContainers/Incus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinuxContainers/Incus
+identifiers:
+- winget: LinuxContainers.Incus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinuxContainers/Incus
+aliases: []

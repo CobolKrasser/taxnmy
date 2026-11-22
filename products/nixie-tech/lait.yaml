@@ -1,0 +1,11 @@
+key: nixie-tech/lait
+publisher: nixie-tech
+name: lait
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NixieTechLLC/Lait
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NixieTechLLC/Lait
+identifiers:
+- winget: NixieTechLLC.Lait
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NixieTechLLC/Lait
+aliases: []

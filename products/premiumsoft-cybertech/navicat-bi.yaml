@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-bi
+publisher: premiumsoft-cybertech
+name: Navicat BI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatBI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatBI
+identifiers:
+- winget: PremiumSoft.NavicatBI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatBI
+aliases: []

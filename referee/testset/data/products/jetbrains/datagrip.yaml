@@ -1,0 +1,13 @@
+key: jetbrains/datagrip
+publisher: jetbrains
+name: DataGrip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataGrip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataGrip
+identifiers:
+- winget: JetBrains.DataGrip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataGrip
+- winget: JetBrains.DataGrip.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/DataGrip/EAP
+aliases: []

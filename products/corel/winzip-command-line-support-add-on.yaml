@@ -1,0 +1,11 @@
+key: corel/winzip-command-line-support-add-on
+publisher: corel
+name: WinZip Command Line Support Add-On
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip/CommandLineSupportAddOn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip/CommandLineSupportAddOn
+identifiers:
+- winget: Corel.WinZip.CommandLineSupportAddOn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip/CommandLineSupportAddOn
+aliases: []

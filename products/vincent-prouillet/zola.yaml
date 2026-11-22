@@ -1,0 +1,11 @@
+key: vincent-prouillet/zola
+publisher: vincent-prouillet
+name: zola
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getzola/zola
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getzola/zola
+identifiers:
+- winget: getzola.zola
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getzola/zola
+aliases: []

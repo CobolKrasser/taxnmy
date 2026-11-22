@@ -1,0 +1,11 @@
+key: phcode/phoenix-code
+publisher: phcode
+name: Phoenix Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Core-ai/PhoenixCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Core-ai/PhoenixCode
+identifiers:
+- winget: Core-ai.PhoenixCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Core-ai/PhoenixCode
+aliases: []

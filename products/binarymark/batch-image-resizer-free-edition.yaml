@@ -1,0 +1,11 @@
+key: binarymark/batch-image-resizer-free-edition
+publisher: binarymark
+name: Batch Image Resizer Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageResizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageResizer
+identifiers:
+- winget: BinaryMark.BatchImageResizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchImageResizer
+aliases: []

@@ -1,0 +1,11 @@
+key: logitech/logi-tune
+publisher: logitech
+name: Logi Tune
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LogiTune
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LogiTune
+identifiers:
+- winget: Logitech.LogiTune
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/LogiTune
+aliases: []

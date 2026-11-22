@@ -1,0 +1,11 @@
+key: beijing-antutu-technology/antutu-benchmark
+publisher: beijing-antutu-technology
+name: Antutu Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Antutu/AntutuBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Antutu/AntutuBenchmark
+identifiers:
+- winget: Antutu.AntutuBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Antutu/AntutuBenchmark
+aliases: []

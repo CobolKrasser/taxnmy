@@ -1,0 +1,11 @@
+key: eitsupi/arf-console
+publisher: eitsupi
+name: arf console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eitsupi/arf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eitsupi/arf
+identifiers:
+- winget: eitsupi.arf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eitsupi/arf
+aliases: []

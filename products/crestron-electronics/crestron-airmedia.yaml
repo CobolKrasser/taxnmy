@@ -1,0 +1,11 @@
+key: crestron-electronics/crestron-airmedia
+publisher: crestron-electronics
+name: Crestron AirMedia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crestron/AirMedia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crestron/AirMedia
+identifiers:
+- winget: Crestron.AirMedia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crestron/AirMedia
+aliases: []

@@ -1,0 +1,11 @@
+key: communication-platform/max
+publisher: communication-platform
+name: MAX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CommunicationPlatform/MAX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CommunicationPlatform/MAX
+identifiers:
+- winget: CommunicationPlatform.MAX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CommunicationPlatform/MAX
+aliases: []

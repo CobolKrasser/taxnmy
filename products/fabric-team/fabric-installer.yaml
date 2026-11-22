@@ -1,0 +1,11 @@
+key: fabric-team/fabric-installer
+publisher: fabric-team
+name: Fabric Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FabricMC/FabricInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FabricMC/FabricInstaller
+identifiers:
+- winget: FabricMC.FabricInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FabricMC/FabricInstaller
+aliases: []

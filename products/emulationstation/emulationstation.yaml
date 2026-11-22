@@ -1,0 +1,11 @@
+key: emulationstation/emulationstation
+publisher: emulationstation
+name: EmulationStation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Emulationstation/Emulationstation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Emulationstation/Emulationstation
+identifiers:
+- winget: Emulationstation.Emulationstation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Emulationstation/Emulationstation
+aliases: []

@@ -1,0 +1,11 @@
+key: brightsign/brightauthor
+publisher: brightsign
+name: BrightAuthor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightSign/BrightAuthor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightSign/BrightAuthor
+identifiers:
+- winget: BrightSign.BrightAuthor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightSign/BrightAuthor
+aliases: []

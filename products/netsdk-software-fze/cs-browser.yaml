@@ -1,0 +1,11 @@
+key: netsdk-software-fze/cs-browser
+publisher: netsdk-software-fze
+name: CS Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netsdk/S3Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netsdk/S3Browser
+identifiers:
+- winget: Netsdk.S3Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netsdk/S3Browser
+aliases: []

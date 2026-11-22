@@ -1,0 +1,11 @@
+key: toggl-ou/toggl-track
+publisher: toggl-ou
+name: Toggl Track
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toggl/TogglTrack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toggl/TogglTrack
+identifiers:
+- winget: Toggl.TogglTrack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toggl/TogglTrack
+aliases: []

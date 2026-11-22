@@ -1,0 +1,11 @@
+key: intel/iometer
+publisher: intel
+name: Iometer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/Iometer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/Iometer
+identifiers:
+- winget: Intel.Iometer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/Iometer
+aliases: []

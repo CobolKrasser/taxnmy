@@ -1,0 +1,11 @@
+key: nartac-software/iis-crypto-cli
+publisher: nartac-software
+name: IIS Crypto CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NartacSoftwareInc/IISCryptoCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NartacSoftwareInc/IISCryptoCLI
+identifiers:
+- winget: NartacSoftwareInc.IISCryptoCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NartacSoftwareInc/IISCryptoCLI
+aliases: []

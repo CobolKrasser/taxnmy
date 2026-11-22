@@ -1,0 +1,11 @@
+key: pedro-f-albanese/qrencode-for-windows
+publisher: pedro-f-albanese
+name: QREncode for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PedroAlbanese/QREncode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PedroAlbanese/QREncode
+identifiers:
+- winget: PedroAlbanese.QREncode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PedroAlbanese/QREncode
+aliases: []

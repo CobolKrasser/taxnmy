@@ -1,0 +1,11 @@
+key: cubic-vm/cubic
+publisher: cubic-vm
+name: Cubic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cubic-vm/cubic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cubic-vm/cubic
+identifiers:
+- winget: cubic-vm.cubic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cubic-vm/cubic
+aliases: []

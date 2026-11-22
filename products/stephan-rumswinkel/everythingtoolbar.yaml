@@ -1,0 +1,13 @@
+key: stephan-rumswinkel/everythingtoolbar
+publisher: stephan-rumswinkel
+name: EverythingToolbar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srwi/EverythingToolbar/Deskband
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srwi/EverythingToolbar/Deskband
+identifiers:
+- winget: srwi.EverythingToolbar.Deskband
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srwi/EverythingToolbar/Deskband
+- winget: srwi.EverythingToolbar.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/srwi/EverythingToolbar/Launcher
+aliases: []

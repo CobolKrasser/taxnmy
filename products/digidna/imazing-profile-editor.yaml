@@ -1,0 +1,11 @@
+key: digidna/imazing-profile-editor
+publisher: digidna
+name: iMazing Profile Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazingProfileEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazingProfileEditor
+identifiers:
+- winget: DigiDNA.iMazingProfileEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigiDNA/iMazingProfileEditor
+aliases: []

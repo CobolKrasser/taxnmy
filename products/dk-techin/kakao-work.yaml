@@ -1,0 +1,11 @@
+key: dk-techin/kakao-work
+publisher: dk-techin
+name: Kakao Work
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KakaoEnterprise/KakaoWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KakaoEnterprise/KakaoWork
+identifiers:
+- winget: KakaoEnterprise.KakaoWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KakaoEnterprise/KakaoWork
+aliases: []

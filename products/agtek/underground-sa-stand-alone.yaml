@@ -1,0 +1,12 @@
+key: agtek/underground-sa-stand-alone
+publisher: agtek
+name: AGTEK Underground SA (Stand-Alone)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/UndergroundSA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/UndergroundSA
+identifiers:
+- winget: AGTEK.UndergroundSA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/UndergroundSA
+aliases:
+- agtek/agtek-underground-sa-stand-alone

@@ -1,0 +1,11 @@
+key: works-mobile/works
+publisher: works-mobile
+name: WORKS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorksMobile/NAVERWORKS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorksMobile/NAVERWORKS
+identifiers:
+- winget: WorksMobile.NAVERWORKS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorksMobile/NAVERWORKS
+aliases: []

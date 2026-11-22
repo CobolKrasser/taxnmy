@@ -1,0 +1,11 @@
+key: zed-industries/zed-preview
+publisher: zed-industries
+name: Zed Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Zed/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Zed/Preview
+identifiers:
+- winget: ZedIndustries.Zed.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZedIndustries/Zed/Preview
+aliases: []

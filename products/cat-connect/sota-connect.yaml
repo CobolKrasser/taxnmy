@@ -1,0 +1,11 @@
+key: cat-connect/sota-connect
+publisher: cat-connect
+name: Sota Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatConnect/SotaConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatConnect/SotaConnect
+identifiers:
+- winget: CatConnect.SotaConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatConnect/SotaConnect
+aliases: []

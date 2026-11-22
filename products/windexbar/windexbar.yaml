@@ -1,0 +1,11 @@
+key: windexbar/windexbar
+publisher: windexbar
+name: WindexBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myagmb28Dev/WindexBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myagmb28Dev/WindexBar
+identifiers:
+- winget: myagmb28Dev.WindexBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myagmb28Dev/WindexBar
+aliases: []

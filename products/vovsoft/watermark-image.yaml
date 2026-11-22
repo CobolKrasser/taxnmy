@@ -1,0 +1,12 @@
+key: vovsoft/watermark-image
+publisher: vovsoft
+name: Vovsoft Watermark Image
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WatermarkImage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WatermarkImage
+identifiers:
+- winget: VovSoft.WatermarkImage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WatermarkImage
+aliases:
+- vovsoft/vovsoft-watermark-image

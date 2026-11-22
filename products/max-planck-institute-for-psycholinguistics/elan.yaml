@@ -1,0 +1,11 @@
+key: max-planck-institute-for-psycholinguistics/elan
+publisher: max-planck-institute-for-psycholinguistics
+name: ELAN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MPI/ELAN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MPI/ELAN
+identifiers:
+- winget: MPI.ELAN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MPI/ELAN
+aliases: []

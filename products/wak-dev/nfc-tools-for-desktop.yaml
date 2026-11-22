@@ -1,0 +1,11 @@
+key: wak-dev/nfc-tools-for-desktop
+publisher: wak-dev
+name: NFC Tools For Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wakdev/NFCTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wakdev/NFCTools
+identifiers:
+- winget: wakdev.NFCTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wakdev/NFCTools
+aliases: []

@@ -1,0 +1,11 @@
+key: orpheus-technology/prowritingaid-office-add-in
+publisher: orpheus-technology
+name: ProWritingAid Office Add-in
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrpheusTechnologyLtd/ProWritingAid/OfficeAddIn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrpheusTechnologyLtd/ProWritingAid/OfficeAddIn
+identifiers:
+- winget: OrpheusTechnologyLtd.ProWritingAid.OfficeAddIn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrpheusTechnologyLtd/ProWritingAid/OfficeAddIn
+aliases: []

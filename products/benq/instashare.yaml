@@ -1,0 +1,12 @@
+key: benq/instashare
+publisher: benq
+name: BenQ InstaShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenQ/InstaShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenQ/InstaShare
+identifiers:
+- winget: BenQ.InstaShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenQ/InstaShare
+aliases:
+- benq/benq-instashare

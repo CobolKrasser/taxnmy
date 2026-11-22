@@ -1,0 +1,11 @@
+key: streamlink/streamlink
+publisher: streamlink
+name: Streamlink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlink/Streamlink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlink/Streamlink
+identifiers:
+- winget: Streamlink.Streamlink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlink/Streamlink
+aliases: []

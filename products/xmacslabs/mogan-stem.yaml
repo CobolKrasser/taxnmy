@@ -1,0 +1,11 @@
+key: xmacslabs/mogan-stem
+publisher: xmacslabs
+name: Mogan STEM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoganLab/Mogan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoganLab/Mogan
+identifiers:
+- winget: MoganLab.Mogan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoganLab/Mogan
+aliases: []

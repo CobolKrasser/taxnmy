@@ -1,0 +1,11 @@
+key: coenfin-software/sepa-creator
+publisher: coenfin-software
+name: SEPA Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/SEPACreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/SEPACreator
+identifiers:
+- winget: CoenFin.SEPACreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/SEPACreator
+aliases: []

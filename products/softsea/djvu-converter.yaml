@@ -1,0 +1,11 @@
+key: softsea/djvu-converter
+publisher: softsea
+name: DjVu Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DjVuConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DjVuConverter
+identifiers:
+- winget: SoftSea.DjVuConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DjVuConverter
+aliases: []

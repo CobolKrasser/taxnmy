@@ -1,0 +1,11 @@
+key: sap/kubectl-gardenlogin
+publisher: sap
+name: kubectl-gardenlogin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gardener/gardenlogin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gardener/gardenlogin
+identifiers:
+- winget: Gardener.gardenlogin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gardener/gardenlogin
+aliases: []

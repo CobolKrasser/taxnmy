@@ -1,0 +1,11 @@
+key: dunes-multimedia/winnc
+publisher: dunes-multimedia
+name: WinNc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dunes/WinNc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dunes/WinNc
+identifiers:
+- winget: Dunes.WinNc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dunes/WinNc
+aliases: []

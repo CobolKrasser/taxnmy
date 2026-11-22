@@ -1,0 +1,11 @@
+key: prskr/git-age
+publisher: prskr
+name: git-age
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prskr/git-age
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prskr/git-age
+identifiers:
+- winget: prskr.git-age
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prskr/git-age
+aliases: []

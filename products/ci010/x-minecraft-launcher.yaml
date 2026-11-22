@@ -1,0 +1,11 @@
+key: ci010/x-minecraft-launcher
+publisher: ci010
+name: X Minecraft Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CI010/XMinecraftLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CI010/XMinecraftLauncher
+identifiers:
+- winget: CI010.XMinecraftLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CI010/XMinecraftLauncher
+aliases: []

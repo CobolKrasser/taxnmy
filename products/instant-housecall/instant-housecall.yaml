@@ -1,0 +1,11 @@
+key: instant-housecall/instant-housecall
+publisher: instant-housecall
+name: Instant Housecall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstantHousecall/InstantHousecall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstantHousecall/InstantHousecall
+identifiers:
+- winget: InstantHousecall.InstantHousecall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstantHousecall/InstantHousecall
+aliases: []

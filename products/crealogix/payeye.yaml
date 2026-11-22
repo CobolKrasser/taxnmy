@@ -1,0 +1,11 @@
+key: crealogix/payeye
+publisher: crealogix
+name: PayEye
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CREALOGIX/PayEye
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CREALOGIX/PayEye
+identifiers:
+- winget: CREALOGIX.PayEye
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CREALOGIX/PayEye
+aliases: []

@@ -1,0 +1,11 @@
+key: earendil/pi
+publisher: earendil
+name: pi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EarendilWorks/pi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EarendilWorks/pi
+identifiers:
+- winget: EarendilWorks.pi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EarendilWorks/pi
+aliases: []

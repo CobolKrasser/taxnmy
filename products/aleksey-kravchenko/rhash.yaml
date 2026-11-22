@@ -1,0 +1,11 @@
+key: aleksey-kravchenko/rhash
+publisher: aleksey-kravchenko
+name: RHash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RHash/RHash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RHash/RHash
+identifiers:
+- winget: RHash.RHash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RHash/RHash
+aliases: []

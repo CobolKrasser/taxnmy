@@ -1,0 +1,11 @@
+key: wjj-software/mybase-desktop
+publisher: wjj-software
+name: Mybase Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WjjSoft/MybaseDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WjjSoft/MybaseDesktop
+identifiers:
+- winget: WjjSoft.MybaseDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WjjSoft/MybaseDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: loreo/loreo
+publisher: loreo
+name: Loreo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoreoInc/Loreo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoreoInc/Loreo
+identifiers:
+- winget: LoreoInc.Loreo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoreoInc/Loreo
+aliases: []

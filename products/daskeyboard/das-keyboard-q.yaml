@@ -1,0 +1,11 @@
+key: daskeyboard/das-keyboard-q
+publisher: daskeyboard
+name: Das-Keyboard-Q
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DasKeyboard/DasKeyboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DasKeyboard/DasKeyboard
+identifiers:
+- winget: DasKeyboard.DasKeyboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DasKeyboard/DasKeyboard
+aliases: []

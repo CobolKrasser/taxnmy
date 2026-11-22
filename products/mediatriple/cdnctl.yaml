@@ -1,0 +1,11 @@
+key: mediatriple/cdnctl
+publisher: mediatriple
+name: cdnctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaTriple/cdnctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaTriple/cdnctl
+identifiers:
+- winget: MediaTriple.cdnctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaTriple/cdnctl
+aliases: []

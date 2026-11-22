@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-dvr-recovery
+publisher: diskinternals-research
+name: DiskInternals DVR Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/DVRRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/DVRRecovery
+identifiers:
+- winget: DiskInternals.DVRRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/DVRRecovery
+aliases: []

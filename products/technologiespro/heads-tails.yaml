@@ -1,0 +1,11 @@
+key: technologiespro/heads-tails
+publisher: technologiespro
+name: Heads-Tails
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartHoldemDAPPs/heads-tails
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartHoldemDAPPs/heads-tails
+identifiers:
+- winget: SmartHoldemDAPPs.heads-tails
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartHoldemDAPPs/heads-tails
+aliases: []

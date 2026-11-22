@@ -1,0 +1,11 @@
+key: rizki-rakasiwi/apic-gui
+publisher: rizki-rakasiwi
+name: apic-gui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rizukirr/apic-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rizukirr/apic-gui
+identifiers:
+- winget: rizukirr.apic-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rizukirr/apic-gui
+aliases: []

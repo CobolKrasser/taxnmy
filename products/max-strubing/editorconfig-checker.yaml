@@ -1,0 +1,11 @@
+key: max-strubing/editorconfig-checker
+publisher: max-strubing
+name: EditorConfig-Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EditorConfig-Checker/EditorConfig-Checker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EditorConfig-Checker/EditorConfig-Checker
+identifiers:
+- winget: EditorConfig-Checker.EditorConfig-Checker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EditorConfig-Checker/EditorConfig-Checker
+aliases: []

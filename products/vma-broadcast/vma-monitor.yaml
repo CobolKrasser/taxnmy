@@ -1,0 +1,11 @@
+key: vma-broadcast/vma-monitor
+publisher: vma-broadcast
+name: VMA Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMAMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMAMonitor
+identifiers:
+- winget: VMABroadcast.VMAMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMAMonitor
+aliases: []

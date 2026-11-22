@@ -1,0 +1,12 @@
+key: motion-lab-systems/c3dserver
+publisher: motion-lab-systems
+name: Motion Lab Systems C3Dserver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MotionLabSystems/C3Dserver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MotionLabSystems/C3Dserver
+identifiers:
+- winget: MotionLabSystems.C3Dserver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MotionLabSystems/C3Dserver
+aliases:
+- motion-lab-systems/motion-lab-systems-c3dserver

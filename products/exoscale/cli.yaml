@@ -1,0 +1,12 @@
+key: exoscale/cli
+publisher: exoscale
+name: Exoscale CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exoscale/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exoscale/CLI
+identifiers:
+- winget: Exoscale.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exoscale/CLI
+aliases:
+- exoscale/exoscale-cli

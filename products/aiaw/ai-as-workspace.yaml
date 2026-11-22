@@ -1,0 +1,11 @@
+key: aiaw/ai-as-workspace
+publisher: aiaw
+name: AI as Workspace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroRCr/AIasWorkspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroRCr/AIasWorkspace
+identifiers:
+- winget: NitroRCr.AIasWorkspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroRCr/AIasWorkspace
+aliases: []

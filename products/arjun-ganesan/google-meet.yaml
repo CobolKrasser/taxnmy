@@ -1,0 +1,11 @@
+key: arjun-ganesan/google-meet
+publisher: arjun-ganesan
+name: Google Meet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arjun-g/google-meet-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arjun-g/google-meet-desktop
+identifiers:
+- winget: arjun-g.google-meet-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arjun-g/google-meet-desktop
+aliases: []

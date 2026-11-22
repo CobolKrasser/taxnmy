@@ -1,0 +1,11 @@
+key: passmark-software/osfmount
+publisher: passmark-software
+name: OSFMount
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/OSFMount
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/OSFMount
+identifiers:
+- winget: PassMark.OSFMount
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/OSFMount
+aliases: []

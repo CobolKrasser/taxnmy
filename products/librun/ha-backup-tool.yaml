@@ -1,0 +1,11 @@
+key: librun/ha-backup-tool
+publisher: librun
+name: ha-backup-tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/librun/ha-backup-tool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/librun/ha-backup-tool
+identifiers:
+- winget: librun.ha-backup-tool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/librun/ha-backup-tool
+aliases: []

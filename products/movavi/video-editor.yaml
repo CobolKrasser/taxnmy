@@ -1,0 +1,12 @@
+key: movavi/video-editor
+publisher: movavi
+name: Movavi Video Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoEditor
+identifiers:
+- winget: Movavi.MovaviVideoEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviVideoEditor
+aliases:
+- movavi/movavi-video-editor

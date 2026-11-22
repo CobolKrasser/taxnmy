@@ -1,0 +1,11 @@
+key: renamo-team/renamo-lite
+publisher: renamo-team
+name: Renamo Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renamo/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renamo/Lite
+identifiers:
+- winget: Renamo.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Renamo/Lite
+aliases: []

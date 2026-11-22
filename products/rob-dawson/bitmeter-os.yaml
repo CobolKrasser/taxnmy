@@ -1,0 +1,11 @@
+key: rob-dawson/bitmeter-os
+publisher: rob-dawson
+name: BitMeter OS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codebox/BitMeterOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codebox/BitMeterOS
+identifiers:
+- winget: Codebox.BitMeterOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codebox/BitMeterOS
+aliases: []

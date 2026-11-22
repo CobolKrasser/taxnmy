@@ -1,0 +1,11 @@
+key: nuclino/nuclino
+publisher: nuclino
+name: Nuclino
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nuclino/Nuclino
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nuclino/Nuclino
+identifiers:
+- winget: Nuclino.Nuclino
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nuclino/Nuclino
+aliases: []

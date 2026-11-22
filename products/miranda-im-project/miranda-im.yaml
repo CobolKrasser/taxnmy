@@ -1,0 +1,11 @@
+key: miranda-im-project/miranda-im
+publisher: miranda-im-project
+name: Miranda IM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MirandaIM/MirandaIM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MirandaIM/MirandaIM
+identifiers:
+- winget: MirandaIM.MirandaIM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MirandaIM/MirandaIM
+aliases: []

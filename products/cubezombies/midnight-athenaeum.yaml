@@ -1,0 +1,11 @@
+key: cubezombies/midnight-athenaeum
+publisher: cubezombies
+name: Midnight Athenaeum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cubezombies/MidnightAthenaeum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cubezombies/MidnightAthenaeum
+identifiers:
+- winget: cubezombies.MidnightAthenaeum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cubezombies/MidnightAthenaeum
+aliases: []

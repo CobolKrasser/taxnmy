@@ -1,0 +1,11 @@
+key: lieberlieber-software/lemontree
+publisher: lieberlieber-software
+name: LemonTree
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LieberLieber/LemonTree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LieberLieber/LemonTree
+identifiers:
+- winget: LieberLieber.LemonTree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LieberLieber/LemonTree
+aliases: []

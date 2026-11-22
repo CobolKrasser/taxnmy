@@ -1,0 +1,11 @@
+key: wangnov/codex-app-manager
+publisher: wangnov
+name: Codex App Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wangnov/CodexAppManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wangnov/CodexAppManager
+identifiers:
+- winget: Wangnov.CodexAppManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wangnov/CodexAppManager
+aliases: []

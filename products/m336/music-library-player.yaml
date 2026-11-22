@@ -1,0 +1,11 @@
+key: m336/music-library-player
+publisher: m336
+name: Music Library Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M336/MusicLibraryPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M336/MusicLibraryPlayer
+identifiers:
+- winget: M336.MusicLibraryPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M336/MusicLibraryPlayer
+aliases: []

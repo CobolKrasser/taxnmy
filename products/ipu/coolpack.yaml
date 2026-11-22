@@ -1,0 +1,11 @@
+key: ipu/coolpack
+publisher: ipu
+name: CoolPack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/CoolPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/CoolPack
+identifiers:
+- winget: IPU.CoolPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/CoolPack
+aliases: []

@@ -1,0 +1,12 @@
+key: iobit/unlocker
+publisher: iobit
+name: IObit Unlocker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitUnlocker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitUnlocker
+identifiers:
+- winget: IObit.IObitUnlocker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitUnlocker
+aliases:
+- iobit/iobit-unlocker

@@ -1,0 +1,11 @@
+key: spitfire-audio-holdings/spitfire-audio
+publisher: spitfire-audio-holdings
+name: Spitfire Audio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpitfireAudioHoldingsLtd/SpitfireAudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpitfireAudioHoldingsLtd/SpitfireAudio
+identifiers:
+- winget: SpitfireAudioHoldingsLtd.SpitfireAudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpitfireAudioHoldingsLtd/SpitfireAudio
+aliases: []

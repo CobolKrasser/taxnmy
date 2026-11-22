@@ -1,0 +1,11 @@
+key: piraeus/linstor
+publisher: piraeus
+name: linstor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Piraeus/linstor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Piraeus/linstor
+identifiers:
+- winget: Piraeus.linstor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Piraeus/linstor
+aliases: []

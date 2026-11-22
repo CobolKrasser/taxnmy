@@ -1,0 +1,11 @@
+key: kang/nyaterm
+publisher: kang
+name: NyaTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nyakang/NyaTerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nyakang/NyaTerm
+identifiers:
+- winget: nyakang.NyaTerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nyakang/NyaTerm
+aliases: []

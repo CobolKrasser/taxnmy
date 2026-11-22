@@ -1,0 +1,11 @@
+key: sunpack/sunpack
+publisher: sunpack
+name: SunPack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qinjingxue/SunPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qinjingxue/SunPack
+identifiers:
+- winget: Qinjingxue.SunPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qinjingxue/SunPack
+aliases: []

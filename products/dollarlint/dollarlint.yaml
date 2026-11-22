@@ -1,0 +1,11 @@
+key: dollarlint/dollarlint
+publisher: dollarlint
+name: DollarLint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DollarLint/DollarLint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DollarLint/DollarLint
+identifiers:
+- winget: DollarLint.DollarLint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DollarLint/DollarLint
+aliases: []

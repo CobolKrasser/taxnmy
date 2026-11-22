@@ -1,0 +1,11 @@
+key: peak-system-technik/peak-drivers
+publisher: peak-system-technik
+name: PEAK-Drivers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PEAKSystem/PEAKDrivers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PEAKSystem/PEAKDrivers
+identifiers:
+- winget: PEAKSystem.PEAKDrivers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PEAKSystem/PEAKDrivers
+aliases: []

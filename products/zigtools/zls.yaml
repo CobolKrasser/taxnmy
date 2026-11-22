@@ -1,0 +1,11 @@
+key: zigtools/zls
+publisher: zigtools
+name: zls
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zigtools/zls
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zigtools/zls
+identifiers:
+- winget: zigtools.zls
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zigtools/zls
+aliases: []

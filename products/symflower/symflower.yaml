@@ -1,0 +1,11 @@
+key: symflower/symflower
+publisher: symflower
+name: Symflower
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symflower/SymflowerCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symflower/SymflowerCLI
+identifiers:
+- winget: Symflower.SymflowerCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symflower/SymflowerCLI
+aliases: []

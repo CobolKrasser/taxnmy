@@ -1,0 +1,11 @@
+key: sergey-kazanski/victoria
+publisher: sergey-kazanski
+name: Victoria
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Victoria/Victoria
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Victoria/Victoria
+identifiers:
+- winget: Victoria.Victoria
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Victoria/Victoria
+aliases: []

@@ -1,0 +1,12 @@
+key: msi/afterburner
+publisher: msi
+name: MSI Afterburner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/Afterburner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/Afterburner
+identifiers:
+- winget: Guru3D.Afterburner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/Afterburner
+aliases:
+- msi/msi-afterburner

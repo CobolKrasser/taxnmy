@@ -1,0 +1,11 @@
+key: nirsoft/dhcplogview
+publisher: nirsoft
+name: DHCPLogView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DHCPLogView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DHCPLogView
+identifiers:
+- winget: NirSoft.DHCPLogView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/DHCPLogView
+aliases: []

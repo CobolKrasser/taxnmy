@@ -1,0 +1,11 @@
+key: techpowerup/throttlestop
+publisher: techpowerup
+name: ThrottleStop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/ThrottleStop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/ThrottleStop
+identifiers:
+- winget: TechPowerUp.ThrottleStop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechPowerUp/ThrottleStop
+aliases: []

@@ -1,0 +1,11 @@
+key: theserver-lab/doscript
+publisher: theserver-lab
+name: DoScript
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheServer-lab/DoScript
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheServer-lab/DoScript
+identifiers:
+- winget: TheServer-lab.DoScript
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheServer-lab/DoScript
+aliases: []

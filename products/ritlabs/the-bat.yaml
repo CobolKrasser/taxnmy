@@ -1,0 +1,11 @@
+key: ritlabs/the-bat
+publisher: ritlabs
+name: The Bat!
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ritlabs/TheBat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ritlabs/TheBat
+identifiers:
+- winget: Ritlabs.TheBat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ritlabs/TheBat
+aliases: []

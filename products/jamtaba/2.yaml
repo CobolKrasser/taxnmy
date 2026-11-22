@@ -1,0 +1,12 @@
+key: jamtaba/2
+publisher: jamtaba
+name: JamTaba 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elieserdejesus/JamTaba
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elieserdejesus/JamTaba
+identifiers:
+- winget: elieserdejesus.JamTaba
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elieserdejesus/JamTaba
+aliases:
+- jamtaba/jamtaba-2

@@ -1,0 +1,11 @@
+key: sigmashake/ssg
+publisher: sigmashake
+name: ssg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaShake/SSG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaShake/SSG
+identifiers:
+- winget: SigmaShake.SSG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaShake/SSG
+aliases: []

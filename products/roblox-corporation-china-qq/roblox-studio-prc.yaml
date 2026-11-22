@@ -1,0 +1,11 @@
+key: roblox-corporation-china-qq/roblox-studio-prc
+publisher: roblox-corporation-china-qq
+name: Roblox Studio (PRC)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQ/RobloxStudioCN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQ/RobloxStudioCN
+identifiers:
+- winget: QQ.RobloxStudioCN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQ/RobloxStudioCN
+aliases: []

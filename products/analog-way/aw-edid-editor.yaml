@@ -1,0 +1,11 @@
+key: analog-way/aw-edid-editor
+publisher: analog-way
+name: AW EDID Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogWay/EdidEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogWay/EdidEditor
+identifiers:
+- winget: AnalogWay.EdidEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogWay/EdidEditor
+aliases: []

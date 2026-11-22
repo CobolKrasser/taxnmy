@@ -1,0 +1,11 @@
+key: heidi-health/heidi
+publisher: heidi-health
+name: Heidi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeidiHealth/Heidi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeidiHealth/Heidi
+identifiers:
+- winget: HeidiHealth.Heidi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeidiHealth/Heidi
+aliases: []

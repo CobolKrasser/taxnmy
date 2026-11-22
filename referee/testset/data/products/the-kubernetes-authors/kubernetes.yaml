@@ -1,0 +1,13 @@
+key: the-kubernetes-authors/kubernetes
+publisher: the-kubernetes-authors
+name: Kubernetes
+kind: software
+source: https://kubernetes.io/releases/patch-releases/
+versions:
+  source: https://kubernetes.io/releases/patch-releases/
+identifiers:
+- purl: pkg:github/kubernetes/kubernetes
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes.md
+- cpe: cpe:2.3:a:kubernetes:kubernetes
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes.md
+aliases: []

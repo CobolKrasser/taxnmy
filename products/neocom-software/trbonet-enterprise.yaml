@@ -1,0 +1,11 @@
+key: neocom-software/trbonet-enterprise
+publisher: neocom-software
+name: TRBOnet Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeocomSoftware/TRBOnet/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeocomSoftware/TRBOnet/Enterprise
+identifiers:
+- winget: NeocomSoftware.TRBOnet.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeocomSoftware/TRBOnet/Enterprise
+aliases: []

@@ -1,0 +1,11 @@
+key: ghostyware/ghosttune-converter
+publisher: ghostyware
+name: GhostTune Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostshadowplays/GhostTuneConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostshadowplays/GhostTuneConverter
+identifiers:
+- winget: Ghostshadowplays.GhostTuneConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostshadowplays/GhostTuneConverter
+aliases: []

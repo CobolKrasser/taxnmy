@@ -1,0 +1,13 @@
+key: apple/watchos
+publisher: apple
+name: watchOS
+kind: operating-system
+source: https://www.apple.com/watchos/
+versions:
+  source: https://support.apple.com/en-us/100100
+identifiers:
+- cpe: cpe:2.3:o:apple:watchos
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:apple:watchos&resultsPerPage=1
+- cpe: cpe:2.3:o:apple:watch_os
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/watchos.md
+aliases: []

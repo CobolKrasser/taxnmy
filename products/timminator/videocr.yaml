@@ -1,0 +1,13 @@
+key: timminator/videocr
+publisher: timminator
+name: VideOCR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timminator/VideOCR/CPU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timminator/VideOCR/CPU
+identifiers:
+- winget: timminator.VideOCR.CPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timminator/VideOCR/CPU
+- winget: timminator.VideOCR.GPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timminator/VideOCR/GPU
+aliases: []

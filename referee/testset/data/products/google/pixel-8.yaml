@@ -1,0 +1,11 @@
+key: google/pixel-8
+publisher: google
+name: Pixel 8
+kind: device
+source: https://store.google.com/us/product/pixel_8
+versions:
+  source: https://source.android.com/docs/security/bulletin/pixel
+identifiers:
+- cpe: cpe:2.3:h:google:pixel_8
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:h:google:pixel_8&resultsPerPage=1
+aliases: []

@@ -1,0 +1,11 @@
+key: httrack/winhttrack-website-copier
+publisher: httrack
+name: WinHTTrack Website Copier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XavierRoche/HTTrack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XavierRoche/HTTrack
+identifiers:
+- winget: XavierRoche.HTTrack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XavierRoche/HTTrack
+aliases: []

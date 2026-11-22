@@ -1,0 +1,11 @@
+key: revora/c-and-c-online
+publisher: revora
+name: C&C:Online
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revora/CNCOnline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revora/CNCOnline
+identifiers:
+- winget: Revora.CNCOnline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revora/CNCOnline
+aliases: []

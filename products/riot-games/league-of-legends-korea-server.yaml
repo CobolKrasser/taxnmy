@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-korea-server
+publisher: riot-games
+name: League of Legends (Korea server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/KR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/KR
+identifiers:
+- winget: RiotGames.LeagueOfLegends.KR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/KR
+aliases: []

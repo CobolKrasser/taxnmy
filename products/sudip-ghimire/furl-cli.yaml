@@ -1,0 +1,11 @@
+key: sudip-ghimire/furl-cli
+publisher: sudip-ghimire
+name: furl-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghimiresdp/furl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghimiresdp/furl
+identifiers:
+- winget: ghimiresdp.furl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghimiresdp/furl
+aliases: []

@@ -1,0 +1,11 @@
+key: https-quick123-net/quickredis
+publisher: https-quick123-net
+name: QuickRedis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quick123/quickredis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quick123/quickredis
+identifiers:
+- winget: quick123.quickredis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quick123/quickredis
+aliases: []

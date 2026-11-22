@@ -1,0 +1,11 @@
+key: littleton-robotics/advantage-scope
+publisher: littleton-robotics
+name: Advantage Scope
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MechanicalAdvantage/AdvantageScope
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MechanicalAdvantage/AdvantageScope
+identifiers:
+- winget: MechanicalAdvantage.AdvantageScope
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MechanicalAdvantage/AdvantageScope
+aliases: []

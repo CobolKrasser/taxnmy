@@ -1,0 +1,12 @@
+key: cyber-scarecrow/installer
+publisher: cyber-scarecrow
+name: Cyber Scarecrow Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cyberscarecrow/cyberscarecrow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cyberscarecrow/cyberscarecrow
+identifiers:
+- winget: cyberscarecrow.cyberscarecrow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cyberscarecrow/cyberscarecrow
+aliases:
+- cyber-scarecrow/cyber-scarecrow-installer

@@ -1,0 +1,11 @@
+key: firecubestudios/winver-uwp
+publisher: firecubestudios
+name: Winver UWP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireCubeStudios/WinverUWP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireCubeStudios/WinverUWP
+identifiers:
+- winget: FireCubeStudios.WinverUWP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireCubeStudios/WinverUWP
+aliases: []

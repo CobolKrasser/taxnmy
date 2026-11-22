@@ -1,0 +1,11 @@
+key: windowpin/windowpin
+publisher: windowpin
+name: WindowPin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindowPin/WindowPin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindowPin/WindowPin
+identifiers:
+- winget: WindowPin.WindowPin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindowPin/WindowPin
+aliases: []

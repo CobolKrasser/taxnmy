@@ -1,0 +1,11 @@
+key: flyingsnow-samantha-glocker/mactype
+publisher: flyingsnow-samantha-glocker
+name: MacType
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacType/MacType
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacType/MacType
+identifiers:
+- winget: MacType.MacType
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacType/MacType
+aliases: []

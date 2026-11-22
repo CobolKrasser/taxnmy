@@ -1,0 +1,11 @@
+key: shtil-vpn/shtil-vpn
+publisher: shtil-vpn
+name: Shtil VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShtilVPN/ShtilVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShtilVPN/ShtilVPN
+identifiers:
+- winget: ShtilVPN.ShtilVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShtilVPN/ShtilVPN
+aliases: []

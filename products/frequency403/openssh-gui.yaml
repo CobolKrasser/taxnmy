@@ -1,0 +1,11 @@
+key: frequency403/openssh-gui
+publisher: frequency403
+name: OpenSSH_GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/frequency403/OpenSSHGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/frequency403/OpenSSHGUI
+identifiers:
+- winget: frequency403.OpenSSHGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/frequency403/OpenSSHGUI
+aliases: []

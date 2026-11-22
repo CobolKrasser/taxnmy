@@ -1,0 +1,11 @@
+key: halo-ai-labs/halovoice
+publisher: halo-ai-labs
+name: HaloVoice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaloAILabs/HaloVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaloAILabs/HaloVoice
+identifiers:
+- winget: HaloAILabs.HaloVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaloAILabs/HaloVoice
+aliases: []

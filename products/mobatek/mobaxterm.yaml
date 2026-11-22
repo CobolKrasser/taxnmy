@@ -1,0 +1,11 @@
+key: mobatek/mobaxterm
+publisher: mobatek
+name: MobaXterm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mobatek/MobaXterm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mobatek/MobaXterm
+identifiers:
+- winget: Mobatek.MobaXterm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mobatek/MobaXterm
+aliases: []

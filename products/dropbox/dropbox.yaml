@@ -1,0 +1,11 @@
+key: dropbox/dropbox
+publisher: dropbox
+name: Dropbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/Dropbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/Dropbox
+identifiers:
+- winget: Dropbox.Dropbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dropbox/Dropbox
+aliases: []

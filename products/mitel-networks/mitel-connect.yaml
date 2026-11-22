@@ -1,0 +1,11 @@
+key: mitel-networks/mitel-connect
+publisher: mitel-networks
+name: Mitel Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mitel/MitelConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mitel/MitelConnect
+identifiers:
+- winget: Mitel.MitelConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mitel/MitelConnect
+aliases: []

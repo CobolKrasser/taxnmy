@@ -1,0 +1,11 @@
+key: nssm/nssm
+publisher: nssm
+name: NSSM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NSSM/NSSM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NSSM/NSSM
+identifiers:
+- winget: NSSM.NSSM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NSSM/NSSM
+aliases: []

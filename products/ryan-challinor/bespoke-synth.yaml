@@ -1,0 +1,11 @@
+key: ryan-challinor/bespoke-synth
+publisher: ryan-challinor
+name: Bespoke Synth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BespokeSynth/BespokeSynth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BespokeSynth/BespokeSynth
+identifiers:
+- winget: BespokeSynth.BespokeSynth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BespokeSynth/BespokeSynth
+aliases: []

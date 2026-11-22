@@ -1,0 +1,11 @@
+key: qcsalon/qc-game-client
+publisher: qcsalon
+name: QC Game Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QCSalon/QCGameClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QCSalon/QCGameClient
+identifiers:
+- winget: QCSalon.QCGameClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QCSalon/QCGameClient
+aliases: []

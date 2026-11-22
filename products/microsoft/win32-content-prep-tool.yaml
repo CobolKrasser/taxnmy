@@ -1,0 +1,12 @@
+key: microsoft/win32-content-prep-tool
+publisher: microsoft
+name: Microsoft Win32 Content Prep Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Win32ContentPrepTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Win32ContentPrepTool
+identifiers:
+- winget: Microsoft.Win32ContentPrepTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Win32ContentPrepTool
+aliases:
+- microsoft/microsoft-win32-content-prep-tool

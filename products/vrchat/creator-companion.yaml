@@ -1,0 +1,12 @@
+key: vrchat/creator-companion
+publisher: vrchat
+name: VRChat Creator Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VRChat/CreatorCompanion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VRChat/CreatorCompanion
+identifiers:
+- winget: VRChat.CreatorCompanion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VRChat/CreatorCompanion
+aliases:
+- vrchat/vrchat-creator-companion

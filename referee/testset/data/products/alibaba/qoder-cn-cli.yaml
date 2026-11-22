@@ -1,0 +1,11 @@
+key: alibaba/qoder-cn-cli
+publisher: alibaba
+name: Qoder CN CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/QoderCLI/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/QoderCLI/CN
+identifiers:
+- winget: Alibaba.QoderCLI.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/QoderCLI/CN
+aliases: []

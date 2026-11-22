@@ -1,0 +1,11 @@
+key: seafuture/netpas-vessel-monitor-ais
+publisher: seafuture
+name: Netpas Vessel Monitor AIS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafuture/NetpasVesselMonitorAIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafuture/NetpasVesselMonitorAIS
+identifiers:
+- winget: Seafuture.NetpasVesselMonitorAIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafuture/NetpasVesselMonitorAIS
+aliases: []

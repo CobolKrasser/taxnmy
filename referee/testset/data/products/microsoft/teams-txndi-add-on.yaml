@@ -1,0 +1,12 @@
+key: microsoft/teams-txndi-add-on
+publisher: microsoft
+name: Microsoft Teams TxNDI add-on
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/TeamsTxNDI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/TeamsTxNDI
+identifiers:
+- winget: Microsoft.TeamsTxNDI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/TeamsTxNDI
+aliases:
+- microsoft/microsoft-teams-txndi-add-on

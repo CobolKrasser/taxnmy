@@ -1,0 +1,11 @@
+key: copytranslator/copytranslator
+publisher: copytranslator
+name: CopyTranslator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopyTranslator/CopyTranslator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopyTranslator/CopyTranslator
+identifiers:
+- winget: CopyTranslator.CopyTranslator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopyTranslator/CopyTranslator
+aliases: []

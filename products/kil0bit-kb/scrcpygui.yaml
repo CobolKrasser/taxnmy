@@ -1,0 +1,11 @@
+key: kil0bit-kb/scrcpygui
+publisher: kil0bit-kb
+name: ScrcpyGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kil0bit-kb/scrcpy-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kil0bit-kb/scrcpy-gui
+identifiers:
+- winget: kil0bit-kb.scrcpy-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kil0bit-kb/scrcpy-gui
+aliases: []

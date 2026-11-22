@@ -1,0 +1,11 @@
+key: clone-hero-team/clone-hero
+publisher: clone-hero-team
+name: Clone Hero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloneHeroTeam/CloneHero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloneHeroTeam/CloneHero
+identifiers:
+- winget: CloneHeroTeam.CloneHero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloneHeroTeam/CloneHero
+aliases: []

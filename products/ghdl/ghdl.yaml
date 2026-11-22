@@ -1,0 +1,11 @@
+key: ghdl/ghdl
+publisher: ghdl
+name: GHDL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghdl/ghdl/ucrt64/mcode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghdl/ghdl/ucrt64/mcode
+identifiers:
+- winget: ghdl.ghdl.ucrt64.mcode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghdl/ghdl/ucrt64/mcode
+aliases: []

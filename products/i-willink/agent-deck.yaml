@@ -1,0 +1,11 @@
+key: i-willink/agent-deck
+publisher: i-willink
+name: Agent Deck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iWillink/AgentDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iWillink/AgentDeck
+identifiers:
+- winget: iWillink.AgentDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iWillink/AgentDeck
+aliases: []

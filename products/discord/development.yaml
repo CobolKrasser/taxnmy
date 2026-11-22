@@ -1,0 +1,16 @@
+key: discord/development
+publisher: discord
+name: Discord Development
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Development
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Development
+identifiers:
+- winget: Discord.Discord.Development
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Development
+- winget: Discord.Discord.Development.arm64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Development/arm64
+- winget: Discord.Discord.Development.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/Development/x86
+aliases:
+- discord/discord-development

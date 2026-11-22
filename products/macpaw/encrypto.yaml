@@ -1,0 +1,11 @@
+key: macpaw/encrypto
+publisher: macpaw
+name: Encrypto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacPaw/Encrypto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacPaw/Encrypto
+identifiers:
+- winget: MacPaw.Encrypto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacPaw/Encrypto
+aliases: []

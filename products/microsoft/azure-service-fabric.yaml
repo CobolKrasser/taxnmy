@@ -1,0 +1,12 @@
+key: microsoft/azure-service-fabric
+publisher: microsoft
+name: Microsoft Azure Service Fabric
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ServiceFabricRuntime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ServiceFabricRuntime
+identifiers:
+- winget: Microsoft.ServiceFabricRuntime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ServiceFabricRuntime
+aliases:
+- microsoft/microsoft-azure-service-fabric

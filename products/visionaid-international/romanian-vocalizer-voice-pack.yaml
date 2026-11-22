@@ -1,0 +1,12 @@
+key: visionaid-international/romanian-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Romanian Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Romanian
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Romanian
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Romanian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Romanian
+aliases:
+- visionaid-international/visionaid-international-romanian-vocalizer-voice-pack

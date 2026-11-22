@@ -1,0 +1,11 @@
+key: nethack-devteam/nethack
+publisher: nethack-devteam
+name: Nethack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethack/Nethack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethack/Nethack
+identifiers:
+- winget: Nethack.Nethack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethack/Nethack
+aliases: []

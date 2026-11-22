@@ -1,0 +1,11 @@
+key: ray-hinchliffe/system-information-viewer
+publisher: ray-hinchliffe
+name: System Information Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayHinchliffe/SIV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayHinchliffe/SIV
+identifiers:
+- winget: RayHinchliffe.SIV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayHinchliffe/SIV
+aliases: []

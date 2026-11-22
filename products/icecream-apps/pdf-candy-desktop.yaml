@@ -1,0 +1,11 @@
+key: icecream-apps/pdf-candy-desktop
+publisher: icecream-apps
+name: PDF Candy Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcecreamApps/PDFCandy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcecreamApps/PDFCandy
+identifiers:
+- winget: IcecreamApps.PDFCandy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcecreamApps/PDFCandy
+aliases: []

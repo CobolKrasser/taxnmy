@@ -1,0 +1,11 @@
+key: datadog/dda
+publisher: datadog
+name: dda
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/dda
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/dda
+identifiers:
+- winget: Datadog.dda
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datadog/dda
+aliases: []

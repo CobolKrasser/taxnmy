@@ -1,0 +1,11 @@
+key: asciinema/agg
+publisher: asciinema
+name: agg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asciinema/agg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asciinema/agg
+identifiers:
+- winget: asciinema.agg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asciinema/agg
+aliases: []

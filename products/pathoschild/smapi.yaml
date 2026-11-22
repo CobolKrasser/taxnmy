@@ -1,0 +1,11 @@
+key: pathoschild/smapi
+publisher: pathoschild
+name: SMAPI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pathoschild/SMAPI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pathoschild/SMAPI
+identifiers:
+- winget: Pathoschild.SMAPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pathoschild/SMAPI
+aliases: []

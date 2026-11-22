@@ -1,0 +1,13 @@
+key: quark-software/quarkxpress
+publisher: quark-software
+name: QuarkXPress
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkXPress/2026
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkXPress/2026
+identifiers:
+- winget: Quark.QuarkXPress.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkXPress/2025
+- winget: Quark.QuarkXPress.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkXPress/2026
+aliases: []

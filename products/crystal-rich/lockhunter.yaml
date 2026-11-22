@@ -1,0 +1,11 @@
+key: crystal-rich/lockhunter
+publisher: crystal-rich
+name: LockHunter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/LockHunter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/LockHunter
+identifiers:
+- winget: CrystalRich.LockHunter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/LockHunter
+aliases: []

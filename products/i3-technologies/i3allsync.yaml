@@ -1,0 +1,13 @@
+key: i3-technologies/i3allsync
+publisher: i3-technologies
+name: i3ALLSYNC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i3-Technologies/i3ALLSYNC/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i3-Technologies/i3ALLSYNC/3
+identifiers:
+- winget: i3-Technologies.i3ALLSYNC.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i3-Technologies/i3ALLSYNC/3
+- winget: i3-Technologies.i3ALLSYNC.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/i3-Technologies/i3ALLSYNC/4
+aliases: []

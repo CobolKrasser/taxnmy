@@ -1,0 +1,11 @@
+key: bot-productions/iconviewer
+publisher: bot-productions
+name: IconViewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BotProductions/IconViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BotProductions/IconViewer
+identifiers:
+- winget: BotProductions.IconViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BotProductions/IconViewer
+aliases: []

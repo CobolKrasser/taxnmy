@@ -1,0 +1,11 @@
+key: kazuhito-hokamura/bdash
+publisher: kazuhito-hokamura
+name: Bdash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bdash-app/bdash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bdash-app/bdash
+identifiers:
+- winget: bdash-app.bdash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bdash-app/bdash
+aliases: []

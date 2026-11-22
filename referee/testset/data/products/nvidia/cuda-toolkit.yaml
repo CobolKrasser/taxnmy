@@ -1,0 +1,12 @@
+key: nvidia/cuda-toolkit
+publisher: nvidia
+name: NVIDIA CUDA Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/CUDA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/CUDA
+identifiers:
+- winget: Nvidia.CUDA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/CUDA
+aliases:
+- nvidia/nvidia-cuda-toolkit

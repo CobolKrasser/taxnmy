@@ -1,0 +1,11 @@
+key: magica/poi
+publisher: magica
+name: poi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/poooi/poi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/poooi/poi
+identifiers:
+- winget: poooi.poi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/poooi/poi
+aliases: []

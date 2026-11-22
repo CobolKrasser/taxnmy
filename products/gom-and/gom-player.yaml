@@ -1,0 +1,11 @@
+key: gom-and/gom-player
+publisher: gom-and
+name: GOM Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOMLab/GOMPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOMLab/GOMPlayer
+identifiers:
+- winget: GOMLab.GOMPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOMLab/GOMPlayer
+aliases: []

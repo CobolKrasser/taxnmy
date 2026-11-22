@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-zip-repair
+publisher: diskinternals-research
+name: DiskInternals ZIP Repair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/ZIPRepair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/ZIPRepair
+identifiers:
+- winget: DiskInternals.ZIPRepair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/ZIPRepair
+aliases: []

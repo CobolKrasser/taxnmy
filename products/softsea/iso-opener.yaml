@@ -1,0 +1,11 @@
+key: softsea/iso-opener
+publisher: softsea
+name: ISO Opener
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOOpener
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOOpener
+identifiers:
+- winget: SoftSea.ISOOpener
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOOpener
+aliases: []

@@ -1,0 +1,11 @@
+key: proscan/proscan
+publisher: proscan
+name: ProScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProScan/ProScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProScan/ProScan
+identifiers:
+- winget: ProScan.ProScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProScan/ProScan
+aliases: []

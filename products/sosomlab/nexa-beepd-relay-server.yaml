@@ -1,0 +1,11 @@
+key: sosomlab/nexa-beepd-relay-server
+publisher: sosomlab
+name: nexa-beepd (Relay Server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeepd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeepd
+identifiers:
+- winget: SosomLab.NexaBeepd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeepd
+aliases: []

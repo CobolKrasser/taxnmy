@@ -1,0 +1,11 @@
+key: excelano/xsync
+publisher: excelano
+name: xsync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xsync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xsync
+identifiers:
+- winget: Excelano.xsync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xsync
+aliases: []

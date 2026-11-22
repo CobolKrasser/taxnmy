@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-copilot-cli
+publisher: amazon-web-services
+name: AWS Copilot CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/CopilotCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/CopilotCLI
+identifiers:
+- winget: Amazon.CopilotCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/CopilotCLI
+aliases: []

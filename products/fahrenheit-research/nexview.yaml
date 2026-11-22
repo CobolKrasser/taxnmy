@@ -1,0 +1,11 @@
+key: fahrenheit-research/nexview
+publisher: fahrenheit-research
+name: NexView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/NexView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/NexView
+identifiers:
+- winget: FahrenheitResearch.NexView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/NexView
+aliases: []

@@ -1,0 +1,11 @@
+key: wiimm/wiimms-iso-tools
+publisher: wiimm
+name: Wiimms ISO Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiimm/ISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiimm/ISO
+identifiers:
+- winget: Wiimm.ISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiimm/ISO
+aliases: []

@@ -1,0 +1,11 @@
+key: evanparra-ai/texttimeline-importer
+publisher: evanparra-ai
+name: TextTimeline Importer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TextTimeline/Importer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TextTimeline/Importer
+identifiers:
+- winget: TextTimeline.Importer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TextTimeline/Importer
+aliases: []

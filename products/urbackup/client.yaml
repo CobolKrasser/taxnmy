@@ -1,0 +1,12 @@
+key: urbackup/client
+publisher: urbackup
+name: UrBackup Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UrBackup/UrBackup/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UrBackup/UrBackup/Client
+identifiers:
+- winget: UrBackup.UrBackup.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UrBackup/UrBackup/Client
+aliases:
+- urbackup/urbackup-client

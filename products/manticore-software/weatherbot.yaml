@@ -1,0 +1,11 @@
+key: manticore-software/weatherbot
+publisher: manticore-software
+name: Weatherbot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManticoreSoftware/Weatherbot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManticoreSoftware/Weatherbot
+identifiers:
+- winget: ManticoreSoftware.Weatherbot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManticoreSoftware/Weatherbot
+aliases: []

@@ -1,0 +1,11 @@
+key: apex-download-manager/apex-download-manager
+publisher: apex-download-manager
+name: Apex Download Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThembaTman0/ApexDownloadManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThembaTman0/ApexDownloadManager
+identifiers:
+- winget: ThembaTman0.ApexDownloadManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThembaTman0/ApexDownloadManager
+aliases: []

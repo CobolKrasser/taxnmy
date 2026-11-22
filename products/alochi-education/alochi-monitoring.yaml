@@ -1,0 +1,11 @@
+key: alochi-education/alochi-monitoring
+publisher: alochi-education
+name: Alochi Monitoring
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alochi/Monitoring
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alochi/Monitoring
+identifiers:
+- winget: Alochi.Monitoring
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alochi/Monitoring
+aliases: []

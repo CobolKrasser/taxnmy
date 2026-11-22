@@ -1,0 +1,11 @@
+key: pitan76/modparks-cli
+publisher: pitan76
+name: ModParks CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pitan76/ModParksCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pitan76/ModParksCLI
+identifiers:
+- winget: Pitan76.ModParksCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pitan76/ModParksCLI
+aliases: []

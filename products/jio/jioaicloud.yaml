@@ -1,0 +1,11 @@
+key: jio/jioaicloud
+publisher: jio
+name: JioAICloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jio/JioAICloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jio/JioAICloud
+identifiers:
+- winget: Jio.JioAICloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jio/JioAICloud
+aliases: []

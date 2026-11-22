@@ -1,0 +1,11 @@
+key: yumiusb/yumi-uefi
+publisher: yumiusb
+name: Yumi UEFI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YumiUsb/UEFI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YumiUsb/UEFI
+identifiers:
+- winget: YumiUsb.UEFI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YumiUsb/UEFI
+aliases: []

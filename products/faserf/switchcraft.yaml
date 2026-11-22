@@ -1,0 +1,11 @@
+key: faserf/switchcraft
+publisher: faserf
+name: SwitchCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaserF/SwitchCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaserF/SwitchCraft
+identifiers:
+- winget: FaserF.SwitchCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaserF/SwitchCraft
+aliases: []

@@ -1,0 +1,12 @@
+key: adinstruments/blood-flowmeter
+publisher: adinstruments
+name: ADInstruments Blood FlowMeter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/BloodFlowMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/BloodFlowMeter
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.BloodFlowMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/BloodFlowMeter
+aliases:
+- adinstruments/adinstruments-blood-flowmeter

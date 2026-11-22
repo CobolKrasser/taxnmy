@@ -1,0 +1,11 @@
+key: felix-wotschofsky/sleep-timer
+publisher: felix-wotschofsky
+name: Sleep Timer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/feliskio/sleep-timer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/feliskio/sleep-timer
+identifiers:
+- winget: feliskio.sleep-timer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/feliskio/sleep-timer
+aliases: []

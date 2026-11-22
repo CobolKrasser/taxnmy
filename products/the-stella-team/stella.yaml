@@ -1,0 +1,11 @@
+key: the-stella-team/stella
+publisher: the-stella-team
+name: Stella
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheStellaTeam/Stella
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheStellaTeam/Stella
+identifiers:
+- winget: TheStellaTeam.Stella
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheStellaTeam/Stella
+aliases: []

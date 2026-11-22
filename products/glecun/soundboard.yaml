@@ -1,0 +1,11 @@
+key: glecun/soundboard
+publisher: glecun
+name: soundboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glecun/soundboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glecun/soundboard
+identifiers:
+- winget: Glecun.soundboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glecun/soundboard
+aliases: []

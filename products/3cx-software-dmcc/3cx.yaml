@@ -1,0 +1,11 @@
+key: 3cx-software-dmcc/3cx
+publisher: 3cx-software-dmcc
+name: 3CX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3CX/Softphone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3CX/Softphone
+identifiers:
+- winget: 3CX.Softphone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3CX/Softphone
+aliases: []

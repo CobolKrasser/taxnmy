@@ -1,0 +1,11 @@
+key: google/gemini-api-cli
+publisher: google
+name: Gemini API CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GeminiAPICLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GeminiAPICLI
+identifiers:
+- winget: Google.GeminiAPICLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GeminiAPICLI
+aliases: []

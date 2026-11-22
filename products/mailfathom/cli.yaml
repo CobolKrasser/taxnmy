@@ -1,0 +1,12 @@
+key: mailfathom/cli
+publisher: mailfathom
+name: MailFathom CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailFathom/mfctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailFathom/mfctl
+identifiers:
+- winget: MailFathom.mfctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailFathom/mfctl
+aliases:
+- mailfathom/mailfathom-cli

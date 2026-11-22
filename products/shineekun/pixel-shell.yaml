@@ -1,0 +1,11 @@
+key: shineekun/pixel-shell
+publisher: shineekun
+name: Pixel Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShineeKun/PixelShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShineeKun/PixelShell
+identifiers:
+- winget: ShineeKun.PixelShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShineeKun/PixelShell
+aliases: []

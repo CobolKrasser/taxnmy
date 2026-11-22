@@ -1,0 +1,15 @@
+key: numpy/numpy
+publisher: numpy
+name: NumPy
+kind: software
+source: https://numpy.org/neps/nep-0029-deprecation_policy.html
+versions:
+  source: https://numpy.org/neps/nep-0029-deprecation_policy.html
+identifiers:
+- purl: pkg:pypi/numpy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/numpy.md
+- purl: pkg:github/numpy/numpy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/numpy.md
+- cpe: cpe:2.3:a:numpy:numpy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/numpy.md
+aliases: []

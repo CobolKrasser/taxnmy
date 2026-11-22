@@ -1,0 +1,11 @@
+key: ugetdm-com/uget
+publisher: ugetdm-com
+name: uGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uGetdm/uGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uGetdm/uGet
+identifiers:
+- winget: uGetdm.uGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uGetdm/uGet
+aliases: []

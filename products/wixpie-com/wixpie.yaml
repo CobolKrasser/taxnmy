@@ -1,0 +1,11 @@
+key: wixpie-com/wixpie
+publisher: wixpie-com
+name: WixPie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WixPie/WixPie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WixPie/WixPie
+identifiers:
+- winget: WixPie.WixPie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WixPie/WixPie
+aliases: []

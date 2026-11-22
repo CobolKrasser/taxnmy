@@ -1,0 +1,11 @@
+key: aide/aide
+publisher: aide
+name: Aide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeStory/Aide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeStory/Aide
+identifiers:
+- winget: CodeStory.Aide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeStory/Aide
+aliases: []

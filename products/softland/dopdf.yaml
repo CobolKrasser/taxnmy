@@ -1,0 +1,13 @@
+key: softland/dopdf
+publisher: softland
+name: doPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/doPDF/10
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/doPDF/10
+identifiers:
+- winget: Softland.doPDF.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/doPDF/10
+- winget: Softland.doPDF.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softland/doPDF/11
+aliases: []

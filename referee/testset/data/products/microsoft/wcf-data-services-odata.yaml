@@ -1,0 +1,11 @@
+key: microsoft/wcf-data-services-odata
+publisher: microsoft
+name: WCF Data Services (OData)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WCFDataServices50/ODatav3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WCFDataServices50/ODatav3
+identifiers:
+- winget: Microsoft.WCFDataServices50.ODatav3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WCFDataServices50/ODatav3
+aliases: []

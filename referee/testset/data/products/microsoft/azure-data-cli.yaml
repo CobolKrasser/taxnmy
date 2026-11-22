@@ -1,0 +1,11 @@
+key: microsoft/azure-data-cli
+publisher: microsoft
+name: Azure Data CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/DataCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/DataCLI
+identifiers:
+- winget: Microsoft.Azure.DataCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/DataCLI
+aliases: []

@@ -1,0 +1,13 @@
+key: xgo/llgo
+publisher: xgo
+name: LLGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XGo/LLGo/MSVC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XGo/LLGo/MSVC
+identifiers:
+- winget: XGo.LLGo.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XGo/LLGo/MSVC
+- winget: XGo.LLGo.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XGo/LLGo/MinGW
+aliases: []

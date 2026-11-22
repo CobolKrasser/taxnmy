@@ -1,0 +1,11 @@
+key: alibaba/dingtalk-workspace-cli
+publisher: alibaba
+name: DingTalk Workspace CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalkWorkspaceCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalkWorkspaceCLI
+identifiers:
+- winget: Alibaba.DingTalkWorkspaceCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/DingTalkWorkspaceCLI
+aliases: []

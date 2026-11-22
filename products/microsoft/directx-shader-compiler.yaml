@@ -1,0 +1,11 @@
+key: microsoft/directx-shader-compiler
+publisher: microsoft
+name: DirectX Shader Compiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ShaderCompiler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ShaderCompiler
+identifiers:
+- winget: Microsoft.DirectX.ShaderCompiler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ShaderCompiler
+aliases: []

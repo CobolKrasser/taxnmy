@@ -1,0 +1,11 @@
+key: the-handbrake-team/handbrake
+publisher: the-handbrake-team
+name: HandBrake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandBrake/HandBrake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandBrake/HandBrake
+identifiers:
+- winget: HandBrake.HandBrake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandBrake/HandBrake
+aliases: []

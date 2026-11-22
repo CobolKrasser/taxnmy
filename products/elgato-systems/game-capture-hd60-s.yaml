@@ -1,0 +1,11 @@
+key: elgato-systems/game-capture-hd60-s
+publisher: elgato-systems
+name: Game Capture HD60 S
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/GameCapture/HD60S
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/GameCapture/HD60S
+identifiers:
+- winget: Elgato.GameCapture.HD60S
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/GameCapture/HD60S
+aliases: []

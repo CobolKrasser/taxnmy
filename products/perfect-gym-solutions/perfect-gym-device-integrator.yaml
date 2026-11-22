@@ -1,0 +1,11 @@
+key: perfect-gym-solutions/perfect-gym-device-integrator
+publisher: perfect-gym-solutions
+name: Perfect Gym Device Integrator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerfectGym/DeviceIntegrator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerfectGym/DeviceIntegrator
+identifiers:
+- winget: PerfectGym.DeviceIntegrator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerfectGym/DeviceIntegrator
+aliases: []

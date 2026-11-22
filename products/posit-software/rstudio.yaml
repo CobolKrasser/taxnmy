@@ -1,0 +1,11 @@
+key: posit-software/rstudio
+publisher: posit-software
+name: RStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/RStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/RStudio
+identifiers:
+- winget: Posit.RStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/RStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: icechat-networks/icechat
+publisher: icechat-networks
+name: IceChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IceChat/IceChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IceChat/IceChat
+identifiers:
+- winget: IceChat.IceChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IceChat/IceChat
+aliases: []

@@ -1,0 +1,11 @@
+key: shure/wireless-workbench-6
+publisher: shure
+name: Wireless Workbench 6
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shure/WirelessWorkbench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shure/WirelessWorkbench
+identifiers:
+- winget: Shure.WirelessWorkbench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shure/WirelessWorkbench
+aliases: []

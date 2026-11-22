@@ -1,0 +1,12 @@
+key: kotatogram/desktop
+publisher: kotatogram
+name: Kotatogram Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kotatogram/Kotatogram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kotatogram/Kotatogram
+identifiers:
+- winget: Kotatogram.Kotatogram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kotatogram/Kotatogram
+aliases:
+- kotatogram/kotatogram-desktop

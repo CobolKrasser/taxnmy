@@ -1,0 +1,11 @@
+key: iobit/protected-folder
+publisher: iobit
+name: Protected Folder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/ProtectedFolder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/ProtectedFolder
+identifiers:
+- winget: IObit.ProtectedFolder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/ProtectedFolder
+aliases: []

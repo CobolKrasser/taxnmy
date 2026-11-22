@@ -1,0 +1,11 @@
+key: syntropica-studio/glowsquid-minecraft-launcher
+publisher: syntropica-studio
+name: GlowSquid Minecraft Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syntropica_Studio/GSML
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syntropica_Studio/GSML
+identifiers:
+- winget: Syntropica_Studio.GSML
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syntropica_Studio/GSML
+aliases: []

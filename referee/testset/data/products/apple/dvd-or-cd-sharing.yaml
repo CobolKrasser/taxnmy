@@ -1,0 +1,11 @@
+key: apple/dvd-or-cd-sharing
+publisher: apple
+name: DVD or CD Sharing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/DVDorCDSharing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/DVDorCDSharing
+identifiers:
+- winget: Apple.DVDorCDSharing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/DVDorCDSharing
+aliases: []

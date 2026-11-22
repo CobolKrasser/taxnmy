@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-vpn-client
+publisher: amazon-web-services
+name: AWS VPN Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSVPNClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSVPNClient
+identifiers:
+- winget: Amazon.AWSVPNClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSVPNClient
+aliases: []

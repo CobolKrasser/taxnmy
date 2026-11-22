@@ -1,0 +1,11 @@
+key: pulsejet/edge-and-bing-deflector
+publisher: pulsejet
+name: Edge And Bing Deflector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pulsejet/edgeandbingdeflector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pulsejet/edgeandbingdeflector
+identifiers:
+- winget: pulsejet.edgeandbingdeflector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pulsejet/edgeandbingdeflector
+aliases: []

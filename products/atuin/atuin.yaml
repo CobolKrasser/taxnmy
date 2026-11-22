@@ -1,0 +1,11 @@
+key: atuin/atuin
+publisher: atuin
+name: Atuin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atuinsh/Atuin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atuinsh/Atuin
+identifiers:
+- winget: Atuinsh.Atuin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atuinsh/Atuin
+aliases: []

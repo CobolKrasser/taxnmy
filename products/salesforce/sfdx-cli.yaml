@@ -1,0 +1,11 @@
+key: salesforce/sfdx-cli
+publisher: salesforce
+name: sfdx-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Salesforce/sfdx-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Salesforce/sfdx-cli
+identifiers:
+- winget: Salesforce.sfdx-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Salesforce/sfdx-cli
+aliases: []

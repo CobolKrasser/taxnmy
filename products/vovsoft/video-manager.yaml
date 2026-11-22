@@ -1,0 +1,12 @@
+key: vovsoft/video-manager
+publisher: vovsoft
+name: Vovsoft Video Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VideoManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VideoManager
+identifiers:
+- winget: VovSoft.VideoManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VideoManager
+aliases:
+- vovsoft/vovsoft-video-manager

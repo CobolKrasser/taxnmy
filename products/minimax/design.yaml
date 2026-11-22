@@ -1,0 +1,14 @@
+key: minimax/design
+publisher: minimax
+name: MiniMax Design
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxDesign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxDesign
+identifiers:
+- winget: MiniMax.MiniMaxDesign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxDesign
+- winget: MiniMax.MiniMaxDesign.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniMax/MiniMaxDesign/CN
+aliases:
+- minimax/minimax-design

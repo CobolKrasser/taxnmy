@@ -1,0 +1,11 @@
+key: canonical/ubuntu-pro-for-wsl
+publisher: canonical
+name: Ubuntu Pro for WSL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/UbuntuProforWSL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/UbuntuProforWSL
+identifiers:
+- winget: Canonical.UbuntuProforWSL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/UbuntuProforWSL
+aliases: []

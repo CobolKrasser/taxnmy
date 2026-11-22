@@ -1,0 +1,11 @@
+key: the-sz-development/bennett
+publisher: the-sz-development
+name: Bennett
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bennett
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bennett
+identifiers:
+- winget: the-sz.Bennett
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bennett
+aliases: []

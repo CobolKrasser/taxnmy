@@ -1,0 +1,11 @@
+key: onyx-launcher-contributors/onyx-launcher
+publisher: onyx-launcher-contributors
+name: Onyx Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lonestill/OnyxLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lonestill/OnyxLauncher
+identifiers:
+- winget: Lonestill.OnyxLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lonestill/OnyxLauncher
+aliases: []

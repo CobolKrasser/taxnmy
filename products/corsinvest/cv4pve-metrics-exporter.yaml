@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-metrics-exporter
+publisher: corsinvest
+name: cv4pve-metrics-exporter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/metrics-exporter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/metrics-exporter
+identifiers:
+- winget: Corsinvest.cv4pve.metrics-exporter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/metrics-exporter
+aliases: []

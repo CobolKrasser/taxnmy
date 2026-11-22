@@ -1,0 +1,11 @@
+key: ziad-mr-x-s-software/temp-cleaner-gui
+publisher: ziad-mr-x-s-software
+name: Temp_Cleaner GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Ziad/TCG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Ziad/TCG
+identifiers:
+- winget: Ziad.TCG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Ziad/TCG
+aliases: []

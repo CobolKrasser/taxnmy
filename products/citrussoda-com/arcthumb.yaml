@@ -1,0 +1,11 @@
+key: citrussoda-com/arcthumb
+publisher: citrussoda-com
+name: ArcThumb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CitrusSoda/ArcThumb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CitrusSoda/ArcThumb
+identifiers:
+- winget: CitrusSoda.ArcThumb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CitrusSoda/ArcThumb
+aliases: []

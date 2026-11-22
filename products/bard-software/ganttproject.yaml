@@ -1,0 +1,11 @@
+key: bard-software/ganttproject
+publisher: bard-software
+name: GanttProject
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GanttProject/GanttProject
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GanttProject/GanttProject
+identifiers:
+- winget: GanttProject.GanttProject
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GanttProject/GanttProject
+aliases: []

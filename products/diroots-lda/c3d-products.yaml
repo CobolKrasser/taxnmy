@@ -1,0 +1,11 @@
+key: diroots-lda/c3d-products
+publisher: diroots-lda
+name: C3D Products
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/DiCivil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/DiCivil
+identifiers:
+- winget: DiRoots.DiCivil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/DiCivil
+aliases: []

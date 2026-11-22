@@ -1,0 +1,11 @@
+key: kde/crow-translate
+publisher: kde
+name: Crow Translate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/CrowTranslate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/CrowTranslate
+identifiers:
+- winget: KDE.CrowTranslate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/CrowTranslate
+aliases: []

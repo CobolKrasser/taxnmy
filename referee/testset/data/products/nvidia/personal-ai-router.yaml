@@ -1,0 +1,13 @@
+key: nvidia/personal-ai-router
+publisher: nvidia
+name: Personal AI Router
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PAIR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PAIR
+identifiers:
+- winget: Nvidia.PAIR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PAIR
+- winget: Nvidia.PersonalAIRouter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PersonalAIRouter
+aliases: []

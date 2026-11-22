@@ -1,0 +1,11 @@
+key: topaz-labs/topaz-denoise-ai
+publisher: topaz-labs
+name: Topaz DeNoise AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazDeNoiseAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazDeNoiseAI
+identifiers:
+- winget: TopazLabs.TopazDeNoiseAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazDeNoiseAI
+aliases: []

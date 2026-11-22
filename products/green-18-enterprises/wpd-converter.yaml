@@ -1,0 +1,11 @@
+key: green-18-enterprises/wpd-converter
+publisher: green-18-enterprises
+name: WPD Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMDaniels/WPDConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMDaniels/WPDConverter
+identifiers:
+- winget: PMDaniels.WPDConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMDaniels/WPDConverter
+aliases: []

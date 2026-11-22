@@ -1,0 +1,11 @@
+key: creative-force/kelvin
+publisher: creative-force
+name: Kelvin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CreativeForce/Kelvin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CreativeForce/Kelvin
+identifiers:
+- winget: CreativeForce.Kelvin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CreativeForce/Kelvin
+aliases: []

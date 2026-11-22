@@ -1,0 +1,11 @@
+key: cognirush-labs/mass-image-compressor
+publisher: cognirush-labs
+name: Mass Image Compressor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cognirush/MassImageCompressor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cognirush/MassImageCompressor
+identifiers:
+- winget: Cognirush.MassImageCompressor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cognirush/MassImageCompressor
+aliases: []

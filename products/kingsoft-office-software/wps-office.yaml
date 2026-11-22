@@ -5,4 +5,7 @@ kind: software
 source: https://www.wps.com/whatsnew/pc/
 versions:
   source: https://www.wps.com/whatsnew/pc/
+identifiers:
+- winget: Kingsoft.WPSOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingsoft/WPSOffice
 aliases: []

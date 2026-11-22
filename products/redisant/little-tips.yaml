@@ -1,0 +1,11 @@
+key: redisant/little-tips
+publisher: redisant
+name: Little Tips
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/LittleTips
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/LittleTips
+identifiers:
+- winget: Redisant.LittleTips
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/LittleTips
+aliases: []

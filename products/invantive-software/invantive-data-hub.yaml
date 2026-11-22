@@ -1,0 +1,11 @@
+key: invantive-software/invantive-data-hub
+publisher: invantive-software
+name: Invantive Data Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveDataHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveDataHub
+identifiers:
+- winget: Invantive.InvantiveDataHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveDataHub
+aliases: []

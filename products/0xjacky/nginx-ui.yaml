@@ -1,0 +1,11 @@
+key: 0xjacky/nginx-ui
+publisher: 0xjacky
+name: Nginx UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0xJacky/nginx-ui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0xJacky/nginx-ui
+identifiers:
+- winget: 0xJacky.nginx-ui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0xJacky/nginx-ui
+aliases: []

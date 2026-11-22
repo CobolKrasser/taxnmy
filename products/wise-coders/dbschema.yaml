@@ -1,0 +1,11 @@
+key: wise-coders/dbschema
+publisher: wise-coders
+name: DbSchema
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCoders/DbSchema
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCoders/DbSchema
+identifiers:
+- winget: WiseCoders.DbSchema
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCoders/DbSchema
+aliases: []

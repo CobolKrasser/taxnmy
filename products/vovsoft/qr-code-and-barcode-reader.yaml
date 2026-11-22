@@ -1,0 +1,12 @@
+key: vovsoft/qr-code-and-barcode-reader
+publisher: vovsoft
+name: Vovsoft QR Code And Barcode Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/QRCodeAndBarcodeReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/QRCodeAndBarcodeReader
+identifiers:
+- winget: VovSoft.QRCodeAndBarcodeReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/QRCodeAndBarcodeReader
+aliases:
+- vovsoft/vovsoft-qr-code-and-barcode-reader

@@ -1,0 +1,13 @@
+key: cloudbees/windows-service-wrapper
+publisher: cloudbees
+name: Windows Service Wrapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBees/WindowsServiceWrapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBees/WindowsServiceWrapper
+identifiers:
+- winget: CloudBees.WindowsServiceWrapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBees/WindowsServiceWrapper
+- winget: CloudBees.WindowsServiceWrapper.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudBees/WindowsServiceWrapper/3
+aliases: []

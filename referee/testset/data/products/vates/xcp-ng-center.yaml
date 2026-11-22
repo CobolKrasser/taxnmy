@@ -1,0 +1,11 @@
+key: vates/xcp-ng-center
+publisher: vates
+name: XCP-ng Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XCP-ng/Center
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XCP-ng/Center
+identifiers:
+- winget: XCP-ng.Center
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XCP-ng/Center
+aliases: []

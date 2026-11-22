@@ -1,0 +1,12 @@
+key: teaspeak/client
+publisher: teaspeak
+name: TeaSpeak - Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeaSpeak/TeaClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeaSpeak/TeaClient
+identifiers:
+- winget: TeaSpeak.TeaClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeaSpeak/TeaClient
+aliases:
+- teaspeak/teaspeak-client

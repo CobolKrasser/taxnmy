@@ -1,0 +1,11 @@
+key: mdzip-project/mdzip-studio
+publisher: mdzip-project
+name: MDZip Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MDZip/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MDZip/Studio
+identifiers:
+- winget: MDZip.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MDZip/Studio
+aliases: []

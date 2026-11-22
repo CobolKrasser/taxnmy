@@ -1,0 +1,11 @@
+key: tekumara/github-doctor
+publisher: tekumara
+name: GitHub Doctor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tekumara/gh-doctor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tekumara/gh-doctor
+identifiers:
+- winget: tekumara.gh-doctor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tekumara/gh-doctor
+aliases: []

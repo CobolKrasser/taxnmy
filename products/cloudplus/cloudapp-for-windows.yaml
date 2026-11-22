@@ -1,0 +1,11 @@
+key: cloudplus/cloudapp-for-windows
+publisher: cloudplus
+name: CloudApp for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudApp/CloudApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudApp/CloudApp
+identifiers:
+- winget: CloudApp.CloudApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudApp/CloudApp
+aliases: []

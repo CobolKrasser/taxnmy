@@ -1,0 +1,11 @@
+key: martin-renold-and-the-mypaint-development-team/mypaint
+publisher: martin-renold-and-the-mypaint-development-team
+name: MyPaint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyPaint/MyPaint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyPaint/MyPaint
+identifiers:
+- winget: MyPaint.MyPaint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyPaint/MyPaint
+aliases: []

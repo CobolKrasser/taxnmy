@@ -1,0 +1,11 @@
+key: argo-project/argo-cd
+publisher: argo-project
+name: Argo CD
+kind: software
+source: https://endoflife.date/argo-cd
+versions:
+  source: https://endoflife.date/argo-cd
+identifiers:
+- purl: pkg:github/argoproj/argo-cd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/argo-cd.md
+aliases: []

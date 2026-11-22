@@ -1,0 +1,11 @@
+key: org-asdfjkl/jerry-das-schachprogramm
+publisher: org-asdfjkl
+name: Jerry - Das Schachprogramm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asdfjkl/JerryChess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asdfjkl/JerryChess
+identifiers:
+- winget: asdfjkl.JerryChess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asdfjkl/JerryChess
+aliases: []

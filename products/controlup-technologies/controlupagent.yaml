@@ -1,0 +1,11 @@
+key: controlup-technologies/controlupagent
+publisher: controlup-technologies
+name: ControlUpAgent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/ControlUpAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/ControlUpAgent
+identifiers:
+- winget: ControlUp.ControlUpAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/ControlUpAgent
+aliases: []

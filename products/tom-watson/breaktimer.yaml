@@ -1,0 +1,11 @@
+key: tom-watson/breaktimer
+publisher: tom-watson
+name: BreakTimer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomWatson/BreakTimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomWatson/BreakTimer
+identifiers:
+- winget: TomWatson.BreakTimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomWatson/BreakTimer
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/msix-toolkit
+publisher: microsoft
+name: MSIX Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIX-Toolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIX-Toolkit
+identifiers:
+- winget: Microsoft.MSIX-Toolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIX-Toolkit
+aliases: []

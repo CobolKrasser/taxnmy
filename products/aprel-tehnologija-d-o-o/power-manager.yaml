@@ -1,0 +1,11 @@
+key: aprel-tehnologija-d-o-o/power-manager
+publisher: aprel-tehnologija-d-o-o
+name: Power Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/PowerManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/PowerManager
+identifiers:
+- winget: AprelTech.PowerManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/PowerManager
+aliases: []

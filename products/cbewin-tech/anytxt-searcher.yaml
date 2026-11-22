@@ -1,0 +1,11 @@
+key: cbewin-tech/anytxt-searcher
+publisher: cbewin-tech
+name: AnyTXT Searcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyTXT/AnyTXTSearcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyTXT/AnyTXTSearcher
+identifiers:
+- winget: AnyTXT.AnyTXTSearcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyTXT/AnyTXTSearcher
+aliases: []

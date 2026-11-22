@@ -1,0 +1,11 @@
+key: verbtm/verbtm
+publisher: verbtm
+name: Verbtm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verbtm/Verbtm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verbtm/Verbtm
+identifiers:
+- winget: Verbtm.Verbtm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verbtm/Verbtm
+aliases: []

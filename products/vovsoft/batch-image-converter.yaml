@@ -1,0 +1,12 @@
+key: vovsoft/batch-image-converter
+publisher: vovsoft
+name: Vovsoft Batch Image Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchImageConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchImageConverter
+identifiers:
+- winget: VovSoft.BatchImageConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BatchImageConverter
+aliases:
+- vovsoft/vovsoft-batch-image-converter

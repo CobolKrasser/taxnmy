@@ -1,0 +1,11 @@
+key: microsoft/edit
+publisher: microsoft
+name: Edit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edit
+identifiers:
+- winget: Microsoft.Edit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edit
+aliases: []

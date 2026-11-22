@@ -1,0 +1,11 @@
+key: keysight-technologies/keysight-software-manager-utility
+publisher: keysight-technologies
+name: Keysight Software Manager Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/SoftwareManagerUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/SoftwareManagerUtility
+identifiers:
+- winget: Keysight.SoftwareManagerUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/SoftwareManagerUtility
+aliases: []

@@ -1,0 +1,11 @@
+key: leapbtw/uxplay-windows
+publisher: leapbtw
+name: uxplay-windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leapbtw/uxplay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leapbtw/uxplay
+identifiers:
+- winget: leapbtw.uxplay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leapbtw/uxplay
+aliases: []

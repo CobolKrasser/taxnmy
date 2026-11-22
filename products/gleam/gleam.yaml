@@ -2,10 +2,10 @@ key: gleam/gleam
 publisher: gleam
 name: Gleam
 kind: software
-source: https://endoflife.date/gleam
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gleam/Gleam
 versions:
-  source: https://endoflife.date/gleam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gleam/Gleam
 identifiers:
-- purl: pkg:github/gleam-lang/gleam
-  source: https://endoflife.date/gleam
+- winget: Gleam.Gleam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gleam/Gleam
 aliases: []

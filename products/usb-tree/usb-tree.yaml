@@ -1,0 +1,11 @@
+key: usb-tree/usb-tree
+publisher: usb-tree
+name: USB Tree
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/USBTree/USBTree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/USBTree/USBTree
+identifiers:
+- winget: USBTree.USBTree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/USBTree/USBTree
+aliases: []

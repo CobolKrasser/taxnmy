@@ -1,0 +1,11 @@
+key: lugrain-software/pingtool
+publisher: lugrain-software
+name: PingTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lugrain/PingTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lugrain/PingTool
+identifiers:
+- winget: Lugrain.PingTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lugrain/PingTool
+aliases: []

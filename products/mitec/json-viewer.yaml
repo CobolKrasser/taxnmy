@@ -1,0 +1,12 @@
+key: mitec/json-viewer
+publisher: mitec
+name: MiTeC JSON Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/JsonViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/JsonViewer
+identifiers:
+- winget: MiTeC.JsonViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/JsonViewer
+aliases:
+- mitec/mitec-json-viewer

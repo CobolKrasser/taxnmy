@@ -1,0 +1,11 @@
+key: makeworld/didder
+publisher: makeworld
+name: Didder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makeworld/Didder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makeworld/Didder
+identifiers:
+- winget: makeworld.Didder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makeworld/Didder
+aliases: []

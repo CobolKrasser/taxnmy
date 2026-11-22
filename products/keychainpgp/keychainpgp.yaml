@@ -1,0 +1,11 @@
+key: keychainpgp/keychainpgp
+publisher: keychainpgp
+name: KeychainPGP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeychainPGP/KeychainPGP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeychainPGP/KeychainPGP
+identifiers:
+- winget: KeychainPGP.KeychainPGP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeychainPGP/KeychainPGP
+aliases: []

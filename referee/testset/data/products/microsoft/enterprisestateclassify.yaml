@@ -1,0 +1,11 @@
+key: microsoft/enterprisestateclassify
+publisher: microsoft
+name: EnterpriseStateClassify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EnterpriseStateClassify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EnterpriseStateClassify
+identifiers:
+- winget: Microsoft.EnterpriseStateClassify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EnterpriseStateClassify
+aliases: []

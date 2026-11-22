@@ -1,0 +1,12 @@
+key: optimidoc/cloud-client
+publisher: optimidoc
+name: OptimiDoc Cloud Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optimidoc/OptimidocCloudClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optimidoc/OptimidocCloudClient
+identifiers:
+- winget: Optimidoc.OptimidocCloudClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optimidoc/OptimidocCloudClient
+aliases:
+- optimidoc/optimidoc-cloud-client

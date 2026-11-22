@@ -1,0 +1,11 @@
+key: team-readarr/readarr
+publisher: team-readarr
+name: Readarr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamReadarr/Readarr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamReadarr/Readarr
+identifiers:
+- winget: TeamReadarr.Readarr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamReadarr/Readarr
+aliases: []

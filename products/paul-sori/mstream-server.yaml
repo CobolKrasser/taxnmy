@@ -1,0 +1,11 @@
+key: paul-sori/mstream-server
+publisher: paul-sori
+name: mStream Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulSori/mStreamServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulSori/mStreamServer
+identifiers:
+- winget: PaulSori.mStreamServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulSori/mStreamServer
+aliases: []

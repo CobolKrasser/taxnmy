@@ -1,0 +1,11 @@
+key: timestored/qstudio
+publisher: timestored
+name: QStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TimeStored/QStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TimeStored/QStudio
+identifiers:
+- winget: TimeStored.QStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TimeStored/QStudio
+aliases: []

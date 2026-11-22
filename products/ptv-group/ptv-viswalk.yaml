@@ -1,0 +1,11 @@
+key: ptv-group/ptv-viswalk
+publisher: ptv-group
+name: PTV Viswalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTV/Viswalk/2026
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTV/Viswalk/2026
+identifiers:
+- winget: PTV.Viswalk.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTV/Viswalk/2026
+aliases: []

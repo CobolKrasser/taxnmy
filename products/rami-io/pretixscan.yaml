@@ -1,0 +1,11 @@
+key: rami-io/pretixscan
+publisher: rami-io
+name: pretixSCAN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pretix/PretixSCAN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pretix/PretixSCAN
+identifiers:
+- winget: Pretix.PretixSCAN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pretix/PretixSCAN
+aliases: []

@@ -1,0 +1,11 @@
+key: trane/trace-3d-plus
+publisher: trane
+name: TRACE 3D Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trane/TRACE3DPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trane/TRACE3DPlus
+identifiers:
+- winget: Trane.TRACE3DPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trane/TRACE3DPlus
+aliases: []

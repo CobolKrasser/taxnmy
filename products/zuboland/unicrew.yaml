@@ -1,0 +1,11 @@
+key: zuboland/unicrew
+publisher: zuboland
+name: UNICREW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZUBOLAND/UNICREW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZUBOLAND/UNICREW
+identifiers:
+- winget: ZUBOLAND.UNICREW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZUBOLAND/UNICREW
+aliases: []

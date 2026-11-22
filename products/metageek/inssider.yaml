@@ -1,0 +1,11 @@
+key: metageek/inssider
+publisher: metageek
+name: inSSIDer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaGeek/inSSIDer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaGeek/inSSIDer
+identifiers:
+- winget: MetaGeek.inSSIDer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaGeek/inSSIDer
+aliases: []

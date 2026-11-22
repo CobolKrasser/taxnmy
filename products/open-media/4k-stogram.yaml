@@ -1,0 +1,11 @@
+key: open-media/4k-stogram
+publisher: open-media
+name: 4K Stogram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KStogram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KStogram
+identifiers:
+- winget: OpenMedia.4KStogram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KStogram
+aliases: []

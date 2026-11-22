@@ -1,0 +1,11 @@
+key: lobehub/lobehub
+publisher: lobehub
+name: LobeHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LobeHub/LobeHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LobeHub/LobeHub
+identifiers:
+- winget: LobeHub.LobeHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LobeHub/LobeHub
+aliases: []

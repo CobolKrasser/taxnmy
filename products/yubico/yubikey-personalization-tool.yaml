@@ -1,0 +1,11 @@
+key: yubico/yubikey-personalization-tool
+publisher: yubico
+name: YubiKey Personalization Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubiKeyPersonalizationTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubiKeyPersonalizationTool
+identifiers:
+- winget: Yubico.YubiKeyPersonalizationTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubiKeyPersonalizationTool
+aliases: []

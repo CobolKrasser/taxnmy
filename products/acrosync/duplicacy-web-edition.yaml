@@ -1,0 +1,11 @@
+key: acrosync/duplicacy-web-edition
+publisher: acrosync
+name: Duplicacy Web Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/acrosync/DuplicacyWeb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/acrosync/DuplicacyWeb
+identifiers:
+- winget: acrosync.DuplicacyWeb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/acrosync/DuplicacyWeb
+aliases: []

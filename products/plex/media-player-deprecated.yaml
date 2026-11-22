@@ -1,0 +1,12 @@
+key: plex/media-player-deprecated
+publisher: plex
+name: Plex Media Player (Deprecated)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexMediaPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexMediaPlayer
+identifiers:
+- winget: Plex.PlexMediaPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/PlexMediaPlayer
+aliases:
+- plex/plex-media-player-deprecated

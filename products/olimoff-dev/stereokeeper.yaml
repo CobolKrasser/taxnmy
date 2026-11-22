@@ -1,0 +1,13 @@
+key: olimoff-dev/stereokeeper
+publisher: olimoff-dev
+name: StereoKeeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/StereoKeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/StereoKeeper
+identifiers:
+- winget: OlimoffDev.BluetoothHandsFreeToggle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/BluetoothHandsFreeToggle
+- winget: OlimoffDev.StereoKeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/StereoKeeper
+aliases: []

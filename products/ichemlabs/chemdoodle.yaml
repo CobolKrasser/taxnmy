@@ -1,0 +1,11 @@
+key: ichemlabs/chemdoodle
+publisher: ichemlabs
+name: ChemDoodle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iChemLabs/ChemDoodle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iChemLabs/ChemDoodle
+identifiers:
+- winget: iChemLabs.ChemDoodle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iChemLabs/ChemDoodle
+aliases: []

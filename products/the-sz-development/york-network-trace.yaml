@@ -1,0 +1,11 @@
+key: the-sz-development/york-network-trace
+publisher: the-sz-development
+name: York Network Trace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/York
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/York
+identifiers:
+- winget: the-sz.York
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/York
+aliases: []

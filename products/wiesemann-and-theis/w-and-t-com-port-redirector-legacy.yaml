@@ -1,0 +1,11 @@
+key: wiesemann-and-theis/w-and-t-com-port-redirector-legacy
+publisher: wiesemann-and-theis
+name: W&T COM Port Redirector Legacy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/Com-Legacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/Com-Legacy
+identifiers:
+- winget: Wiesemann-Theis.Com-Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/Com-Legacy
+aliases: []

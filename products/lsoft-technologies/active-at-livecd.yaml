@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-livecd
+publisher: lsoft-technologies
+name: Active@ LiveCD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveLiveCD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveLiveCD
+identifiers:
+- winget: LSoftTechnologies.ActiveLiveCD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveLiveCD
+aliases: []

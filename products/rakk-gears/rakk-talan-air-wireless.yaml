@@ -1,0 +1,11 @@
+key: rakk-gears/rakk-talan-air-wireless
+publisher: rakk-gears
+name: Rakk Talan Air Wireless
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakk/TalanAir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakk/TalanAir
+identifiers:
+- winget: Rakk.TalanAir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakk/TalanAir
+aliases: []

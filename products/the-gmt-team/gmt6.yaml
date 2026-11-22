@@ -1,0 +1,11 @@
+key: the-gmt-team/gmt6
+publisher: the-gmt-team
+name: GMT6
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GenericMappingTools/gmt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GenericMappingTools/gmt
+identifiers:
+- winget: GenericMappingTools.gmt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GenericMappingTools/gmt
+aliases: []

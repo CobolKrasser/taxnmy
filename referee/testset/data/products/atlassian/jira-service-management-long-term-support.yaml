@@ -1,0 +1,11 @@
+key: atlassian/jira-service-management-long-term-support
+publisher: atlassian
+name: Jira Service Management Long Term Support
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/ServiceManagementLTS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/ServiceManagementLTS
+identifiers:
+- winget: Atlassian.ServiceManagementLTS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/ServiceManagementLTS
+aliases: []

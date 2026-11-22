@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-data-studio
+publisher: lsoft-technologies
+name: Active@ Data Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDataStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDataStudio
+identifiers:
+- winget: LSoftTechnologies.ActiveDataStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDataStudio
+aliases: []

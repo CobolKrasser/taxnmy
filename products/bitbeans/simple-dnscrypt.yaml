@@ -1,0 +1,11 @@
+key: bitbeans/simple-dnscrypt
+publisher: bitbeans
+name: Simple DNSCrypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitbeans/SimpleDNSCrypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitbeans/SimpleDNSCrypt
+identifiers:
+- winget: bitbeans.SimpleDNSCrypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitbeans/SimpleDNSCrypt
+aliases: []

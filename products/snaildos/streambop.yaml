@@ -1,0 +1,11 @@
+key: snaildos/streambop
+publisher: snaildos
+name: StreamBop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/StreamBop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/StreamBop
+identifiers:
+- winget: SnailDOS.StreamBop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/StreamBop
+aliases: []

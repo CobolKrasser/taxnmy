@@ -1,0 +1,13 @@
+key: sonos/sonos
+publisher: sonos
+name: Sonos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonos/Controller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonos/Controller
+identifiers:
+- winget: Sonos.Controller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonos/Controller
+- winget: Sonos.S1Controller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonos/S1Controller
+aliases: []

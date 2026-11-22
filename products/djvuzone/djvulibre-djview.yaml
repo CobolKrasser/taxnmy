@@ -1,0 +1,11 @@
+key: djvuzone/djvulibre-djview
+publisher: djvuzone
+name: DjVuLibre DjView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DjVuLibre/DjView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DjVuLibre/DjView
+identifiers:
+- winget: DjVuLibre.DjView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DjVuLibre/DjView
+aliases: []

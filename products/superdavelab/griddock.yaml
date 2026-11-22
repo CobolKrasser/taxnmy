@@ -1,0 +1,11 @@
+key: superdavelab/griddock
+publisher: superdavelab
+name: GridDock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperDaveLab/GridDock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperDaveLab/GridDock
+identifiers:
+- winget: SuperDaveLab.GridDock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperDaveLab/GridDock
+aliases: []

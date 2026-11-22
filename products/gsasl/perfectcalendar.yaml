@@ -1,0 +1,11 @@
+key: gsasl/perfectcalendar
+publisher: gsasl
+name: PerfectCalendar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gsasl/PerfectCalendar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gsasl/PerfectCalendar
+identifiers:
+- winget: Gsasl.PerfectCalendar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gsasl/PerfectCalendar
+aliases: []

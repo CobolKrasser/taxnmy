@@ -1,0 +1,11 @@
+key: resplendence-software-projects-sp/whocrashed-home-edition
+publisher: resplendence-software-projects-sp
+name: WhoCrashed Home Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/WhoCrashed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/WhoCrashed
+identifiers:
+- winget: Resplendence.WhoCrashed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/WhoCrashed
+aliases: []

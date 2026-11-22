@@ -1,0 +1,11 @@
+key: exidex/gauntlet
+publisher: exidex
+name: Gauntlet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exidex/Gauntlet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exidex/Gauntlet
+identifiers:
+- winget: Exidex.Gauntlet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Exidex/Gauntlet
+aliases: []

@@ -1,0 +1,11 @@
+key: videolan/x264
+publisher: videolan
+name: x264
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/x264
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/x264
+identifiers:
+- winget: VideoLAN.x264
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/x264
+aliases: []

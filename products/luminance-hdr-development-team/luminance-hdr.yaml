@@ -1,0 +1,11 @@
+key: luminance-hdr-development-team/luminance-hdr
+publisher: luminance-hdr-development-team
+name: Luminance HDR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuminanceHDR/LuminanceHDR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuminanceHDR/LuminanceHDR
+identifiers:
+- winget: LuminanceHDR.LuminanceHDR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuminanceHDR/LuminanceHDR
+aliases: []

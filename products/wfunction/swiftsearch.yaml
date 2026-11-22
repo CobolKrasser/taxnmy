@@ -1,0 +1,11 @@
+key: wfunction/swiftsearch
+publisher: wfunction
+name: SwiftSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wfunction/SwiftSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wfunction/SwiftSearch
+identifiers:
+- winget: wfunction.SwiftSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wfunction/SwiftSearch
+aliases: []

@@ -1,0 +1,11 @@
+key: relux-informatik/reluxdesktop
+publisher: relux-informatik
+name: ReluxDesktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Relux/ReluxDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Relux/ReluxDesktop
+identifiers:
+- winget: Relux.ReluxDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Relux/ReluxDesktop
+aliases: []

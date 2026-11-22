@@ -1,0 +1,11 @@
+key: utopia/eden-x86-64-arm64-instruction-sets-standard
+publisher: utopia
+name: Eden («x86_64- »/ARM64 instruction sets, standard)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Utopia/Eden/MinGW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Utopia/Eden/MinGW
+identifiers:
+- winget: Utopia.Eden.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Utopia/Eden/MinGW
+aliases: []

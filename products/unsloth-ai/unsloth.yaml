@@ -1,0 +1,11 @@
+key: unsloth-ai/unsloth
+publisher: unsloth-ai
+name: Unsloth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnslothAI/Unsloth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnslothAI/Unsloth
+identifiers:
+- winget: UnslothAI.Unsloth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnslothAI/Unsloth
+aliases: []

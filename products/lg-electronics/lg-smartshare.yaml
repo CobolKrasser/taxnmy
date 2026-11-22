@@ -1,0 +1,11 @@
+key: lg-electronics/lg-smartshare
+publisher: lg-electronics
+name: LG SmartShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LGElectronics/SmartShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LGElectronics/SmartShare
+identifiers:
+- winget: LGElectronics.SmartShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LGElectronics/SmartShare
+aliases: []

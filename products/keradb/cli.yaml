@@ -1,0 +1,12 @@
+key: keradb/cli
+publisher: keradb
+name: KeraDB CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeraDB/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeraDB/CLI
+identifiers:
+- winget: KeraDB.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeraDB/CLI
+aliases:
+- keradb/keradb-cli

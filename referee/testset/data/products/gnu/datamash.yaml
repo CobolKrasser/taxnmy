@@ -1,0 +1,12 @@
+key: gnu/datamash
+publisher: gnu
+name: GNU datamash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/datamash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/datamash
+identifiers:
+- winget: GNU.datamash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/datamash
+aliases:
+- gnu/gnu-datamash

@@ -1,0 +1,11 @@
+key: rivon/tk-copilot
+publisher: rivon
+name: TK Copilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaoyangZhang/RivonClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaoyangZhang/RivonClaw
+identifiers:
+- winget: GaoyangZhang.RivonClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaoyangZhang/RivonClaw
+aliases: []

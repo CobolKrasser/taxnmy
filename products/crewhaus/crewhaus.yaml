@@ -1,0 +1,11 @@
+key: crewhaus/crewhaus
+publisher: crewhaus
+name: crewhaus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrewHaus/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrewHaus/CLI
+identifiers:
+- winget: CrewHaus.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrewHaus/CLI
+aliases: []

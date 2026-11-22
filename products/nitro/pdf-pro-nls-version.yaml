@@ -1,0 +1,12 @@
+key: nitro/pdf-pro-nls-version
+publisher: nitro
+name: Nitro PDF Pro (NLS Version)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroSoftware/NitroPro/NLS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroSoftware/NitroPro/NLS
+identifiers:
+- winget: NitroSoftware.NitroPro.NLS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitroSoftware/NitroPro/NLS
+aliases:
+- nitro/nitro-pdf-pro-nls-version

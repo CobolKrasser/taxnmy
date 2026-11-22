@@ -1,0 +1,11 @@
+key: firedaemon/certify-one
+publisher: firedaemon
+name: Certify One
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/CertifyOne
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/CertifyOne
+identifiers:
+- winget: FireDaemon.CertifyOne
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/CertifyOne
+aliases: []

@@ -1,0 +1,11 @@
+key: opentrack/opentrack
+publisher: opentrack
+name: opentrack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/opentrack/opentrack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/opentrack/opentrack
+identifiers:
+- winget: opentrack.opentrack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/opentrack/opentrack
+aliases: []

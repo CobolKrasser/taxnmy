@@ -1,0 +1,11 @@
+key: var-gg/gitwink
+publisher: var-gg
+name: gitwink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/var-gg/gitwink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/var-gg/gitwink
+identifiers:
+- winget: var-gg.gitwink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/var-gg/gitwink
+aliases: []

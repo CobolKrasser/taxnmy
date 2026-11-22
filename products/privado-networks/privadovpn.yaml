@@ -1,0 +1,11 @@
+key: privado-networks/privadovpn
+publisher: privado-networks
+name: PrivadoVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivadoNetworksAG/PrivadoVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivadoNetworksAG/PrivadoVPN
+identifiers:
+- winget: PrivadoNetworksAG.PrivadoVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrivadoNetworksAG/PrivadoVPN
+aliases: []

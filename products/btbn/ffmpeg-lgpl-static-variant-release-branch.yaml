@@ -1,0 +1,21 @@
+key: btbn/ffmpeg-lgpl-static-variant-release-branch
+publisher: btbn
+name: FFmpeg (LGPL static variant, release branch)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/5/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/5/1
+identifiers:
+- winget: BtbN.FFmpeg.LGPL.5.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/5/1
+- winget: BtbN.FFmpeg.LGPL.6.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/6/1
+- winget: BtbN.FFmpeg.LGPL.7.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/7/1
+- winget: BtbN.FFmpeg.LGPL.8.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/8/0
+- winget: BtbN.FFmpeg.LGPL.8.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/8/1
+- winget: BtbN.FFmpeg.LGPL.9.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/9/0
+aliases: []

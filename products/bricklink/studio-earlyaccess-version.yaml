@@ -1,0 +1,11 @@
+key: bricklink/studio-earlyaccess-version
+publisher: bricklink
+name: Studio EarlyAccess version
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/Studio/EarlyAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/Studio/EarlyAccess
+identifiers:
+- winget: BrickLink.Studio.EarlyAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/Studio/EarlyAccess
+aliases: []

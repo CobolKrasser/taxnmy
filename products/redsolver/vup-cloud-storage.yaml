@@ -1,0 +1,11 @@
+key: redsolver/vup-cloud-storage
+publisher: redsolver
+name: Vup Cloud Storage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vup/Vup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vup/Vup
+identifiers:
+- winget: Vup.Vup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vup/Vup
+aliases: []

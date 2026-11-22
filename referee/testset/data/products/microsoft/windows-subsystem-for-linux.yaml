@@ -1,0 +1,13 @@
+key: microsoft/windows-subsystem-for-linux
+publisher: microsoft
+name: Windows Subsystem for Linux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WSL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WSL
+identifiers:
+- winget: Microsoft.WSL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WSL
+- winget: Microsoft.WSL.PreRelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WSL/PreRelease
+aliases: []

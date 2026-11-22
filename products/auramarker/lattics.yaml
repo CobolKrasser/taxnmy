@@ -1,0 +1,11 @@
+key: auramarker/lattics
+publisher: auramarker
+name: Lattics
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuraMarker/Lattics
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuraMarker/Lattics
+identifiers:
+- winget: AuraMarker.Lattics
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuraMarker/Lattics
+aliases: []

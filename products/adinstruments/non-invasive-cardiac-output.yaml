@@ -1,0 +1,12 @@
+key: adinstruments/non-invasive-cardiac-output
+publisher: adinstruments
+name: ADInstruments Non-Invasive Cardiac Output
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/NICO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/NICO
+identifiers:
+- winget: ADInstruments.LabChart.Extension.NICO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/NICO
+aliases:
+- adinstruments/adinstruments-non-invasive-cardiac-output

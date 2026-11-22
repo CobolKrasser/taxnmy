@@ -1,0 +1,11 @@
+key: hackolade/hackolade
+publisher: hackolade
+name: Hackolade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IntegrIT/Hackolade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IntegrIT/Hackolade
+identifiers:
+- winget: IntegrIT.Hackolade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IntegrIT/Hackolade
+aliases: []

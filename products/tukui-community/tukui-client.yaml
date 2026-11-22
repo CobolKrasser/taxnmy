@@ -1,0 +1,11 @@
+key: tukui-community/tukui-client
+publisher: tukui-community
+name: Tukui Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TukuiCommunity/TukuiClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TukuiCommunity/TukuiClient
+identifiers:
+- winget: TukuiCommunity.TukuiClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TukuiCommunity/TukuiClient
+aliases: []

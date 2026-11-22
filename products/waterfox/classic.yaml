@@ -1,0 +1,12 @@
+key: waterfox/classic
+publisher: waterfox
+name: Waterfox Classic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Waterfox/WaterfoxClassic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Waterfox/WaterfoxClassic
+identifiers:
+- winget: Waterfox.WaterfoxClassic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Waterfox/WaterfoxClassic
+aliases:
+- waterfox/waterfox-classic

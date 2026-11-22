@@ -1,0 +1,15 @@
+key: sublime-hq/sublime-text
+publisher: sublime-hq
+name: Sublime Text
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/3
+identifiers:
+- winget: SublimeHQ.SublimeText.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/3
+- winget: SublimeHQ.SublimeText.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/4
+- winget: SublimeHQ.SublimeText.4.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/4/Dev
+aliases: []

@@ -1,0 +1,11 @@
+key: nvidia/mdl-sdk
+publisher: nvidia
+name: MDL SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/MDL-SDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/MDL-SDK
+identifiers:
+- winget: Nvidia.MDL-SDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/MDL-SDK
+aliases: []

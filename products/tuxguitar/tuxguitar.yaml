@@ -1,0 +1,11 @@
+key: tuxguitar/tuxguitar
+publisher: tuxguitar
+name: TuxGuitar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TuxGuitar/TuxGuitar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TuxGuitar/TuxGuitar
+identifiers:
+- winget: TuxGuitar.TuxGuitar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TuxGuitar/TuxGuitar
+aliases: []

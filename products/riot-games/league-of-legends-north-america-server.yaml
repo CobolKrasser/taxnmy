@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-north-america-server
+publisher: riot-games
+name: League of Legends (North America server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/NA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/NA
+identifiers:
+- winget: RiotGames.LeagueOfLegends.NA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/NA
+aliases: []

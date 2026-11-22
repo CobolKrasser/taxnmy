@@ -1,0 +1,11 @@
+key: tommy-rush/dev-hud
+publisher: tommy-rush
+name: Dev HUD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/soldforaloss/DevHUD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/soldforaloss/DevHUD
+identifiers:
+- winget: soldforaloss.DevHUD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/soldforaloss/DevHUD
+aliases: []

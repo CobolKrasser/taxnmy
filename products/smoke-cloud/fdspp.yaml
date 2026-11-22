@@ -1,0 +1,11 @@
+key: smoke-cloud/fdspp
+publisher: smoke-cloud
+name: FdsPp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmokeCloud/FdsPp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmokeCloud/FdsPp
+identifiers:
+- winget: SmokeCloud.FdsPp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmokeCloud/FdsPp
+aliases: []

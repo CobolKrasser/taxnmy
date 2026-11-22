@@ -1,0 +1,11 @@
+key: chuxinneko/nekocode-desktop
+publisher: chuxinneko
+name: NekoCode Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChuxinNeko/NekoCodeDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChuxinNeko/NekoCodeDesktop
+identifiers:
+- winget: ChuxinNeko.NekoCodeDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChuxinNeko/NekoCodeDesktop
+aliases: []

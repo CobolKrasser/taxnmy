@@ -1,0 +1,13 @@
+key: jetbrains/webstorm
+publisher: jetbrains
+name: WebStorm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/WebStorm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/WebStorm
+identifiers:
+- winget: JetBrains.WebStorm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/WebStorm
+- winget: JetBrains.WebStorm.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/WebStorm/EAP
+aliases: []

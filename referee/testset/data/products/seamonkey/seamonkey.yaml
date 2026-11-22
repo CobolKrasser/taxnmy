@@ -1,0 +1,11 @@
+key: seamonkey/seamonkey
+publisher: seamonkey
+name: SeaMonkey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/SeaMonkey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/SeaMonkey
+identifiers:
+- winget: Mozilla.SeaMonkey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/SeaMonkey
+aliases: []

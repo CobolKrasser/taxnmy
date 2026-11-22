@@ -1,0 +1,11 @@
+key: claws-mail-org/claws-mail
+publisher: claws-mail-org
+name: Claws Mail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClawsMail/ClawsMail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClawsMail/ClawsMail
+identifiers:
+- winget: ClawsMail.ClawsMail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClawsMail/ClawsMail
+aliases: []

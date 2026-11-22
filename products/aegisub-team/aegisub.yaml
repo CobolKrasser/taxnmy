@@ -1,0 +1,11 @@
+key: aegisub-team/aegisub
+publisher: aegisub-team
+name: Aegisub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aegisub/Aegisub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aegisub/Aegisub
+identifiers:
+- winget: Aegisub.Aegisub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aegisub/Aegisub
+aliases: []

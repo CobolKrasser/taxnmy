@@ -1,0 +1,12 @@
+key: skywork-desktop/wsl2
+publisher: skywork-desktop
+name: skywork-desktop-wsl2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skywork/SkyworkDesktop/WSL2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skywork/SkyworkDesktop/WSL2
+identifiers:
+- winget: Skywork.SkyworkDesktop.WSL2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skywork/SkyworkDesktop/WSL2
+aliases:
+- skywork-desktop/skywork-desktop-wsl2

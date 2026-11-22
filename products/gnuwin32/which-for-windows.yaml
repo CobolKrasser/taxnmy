@@ -1,0 +1,11 @@
+key: gnuwin32/which-for-windows
+publisher: gnuwin32
+name: Which for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Which
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Which
+identifiers:
+- winget: GnuWin32.Which
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Which
+aliases: []

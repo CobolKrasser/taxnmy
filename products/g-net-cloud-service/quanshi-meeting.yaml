@@ -1,0 +1,13 @@
+key: g-net-cloud-service/quanshi-meeting
+publisher: g-net-cloud-service
+name: Quanshi Meeting
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quanshi/QuanshiMeeting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quanshi/QuanshiMeeting
+identifiers:
+- winget: Quanshi.QuanshiMeeting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quanshi/QuanshiMeeting
+- winget: Quanshi.QuanshiMeeting.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quanshi/QuanshiMeeting/MSI
+aliases: []

@@ -1,0 +1,11 @@
+key: gulbanana/gg
+publisher: gulbanana
+name: GG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gulbanana/gg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gulbanana/gg
+identifiers:
+- winget: gulbanana.gg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gulbanana/gg
+aliases: []

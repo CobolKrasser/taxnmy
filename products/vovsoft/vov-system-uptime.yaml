@@ -1,0 +1,11 @@
+key: vovsoft/vov-system-uptime
+publisher: vovsoft
+name: Vov System Uptime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovSystemUptime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovSystemUptime
+identifiers:
+- winget: VovSoft.VovSystemUptime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovSystemUptime
+aliases: []

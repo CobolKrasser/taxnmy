@@ -1,0 +1,11 @@
+key: zeronet/zeronet
+publisher: zeronet
+name: ZeroNet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroNet/ZeroNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroNet/ZeroNet
+identifiers:
+- winget: ZeroNet.ZeroNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroNet/ZeroNet
+aliases: []

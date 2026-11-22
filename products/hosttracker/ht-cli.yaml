@@ -1,0 +1,11 @@
+key: hosttracker/ht-cli
+publisher: hosttracker
+name: ht-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HostTracker/ht-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HostTracker/ht-cli
+identifiers:
+- winget: HostTracker.ht-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HostTracker/ht-cli
+aliases: []

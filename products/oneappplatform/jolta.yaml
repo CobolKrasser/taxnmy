@@ -1,0 +1,11 @@
+key: oneappplatform/jolta
+publisher: oneappplatform
+name: Jolta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneAppPlatform/Jolta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneAppPlatform/Jolta
+identifiers:
+- winget: OneAppPlatform.Jolta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneAppPlatform/Jolta
+aliases: []

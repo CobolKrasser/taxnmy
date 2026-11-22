@@ -1,0 +1,11 @@
+key: burntsushi/ripgrep-gnu
+publisher: burntsushi
+name: RipGrep GNU
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/ripgrep/GNU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/ripgrep/GNU
+identifiers:
+- winget: BurntSushi.ripgrep.GNU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/ripgrep/GNU
+aliases: []

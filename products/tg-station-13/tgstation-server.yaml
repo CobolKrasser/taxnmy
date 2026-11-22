@@ -1,0 +1,11 @@
+key: tg-station-13/tgstation-server
+publisher: tg-station-13
+name: tgstation-server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tgstation/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tgstation/Server
+identifiers:
+- winget: Tgstation.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tgstation/Server
+aliases: []

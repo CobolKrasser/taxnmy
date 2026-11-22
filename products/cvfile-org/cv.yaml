@@ -1,0 +1,11 @@
+key: cvfile-org/cv
+publisher: cvfile-org
+name: cv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cvfile/cv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cvfile/cv
+identifiers:
+- winget: cvfile.cv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cvfile/cv
+aliases: []

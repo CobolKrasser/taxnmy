@@ -1,0 +1,11 @@
+key: mario-debono-godotlauncher-org/godot-launcher
+publisher: mario-debono-godotlauncher-org
+name: Godot Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotLauncher/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotLauncher/Launcher
+identifiers:
+- winget: GodotLauncher.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodotLauncher/Launcher
+aliases: []

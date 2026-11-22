@@ -1,0 +1,11 @@
+key: tillitis/tkey-ssh-agent
+publisher: tillitis
+name: TKey SSH Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tillitis/TKeySSHAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tillitis/TKeySSHAgent
+identifiers:
+- winget: Tillitis.TKeySSHAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tillitis/TKeySSHAgent
+aliases: []

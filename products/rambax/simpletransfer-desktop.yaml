@@ -1,0 +1,11 @@
+key: rambax/simpletransfer-desktop
+publisher: rambax
+name: SimpleTransfer Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambax/SimpleTransfer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambax/SimpleTransfer
+identifiers:
+- winget: Rambax.SimpleTransfer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rambax/SimpleTransfer
+aliases: []

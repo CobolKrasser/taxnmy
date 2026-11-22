@@ -1,0 +1,11 @@
+key: microsoft/windows-terminal-preview
+publisher: microsoft
+name: Windows Terminal Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal/Preview
+identifiers:
+- winget: Microsoft.WindowsTerminal.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal/Preview
+aliases: []

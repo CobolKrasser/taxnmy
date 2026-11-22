@@ -1,0 +1,11 @@
+key: google/uiforetw
+publisher: google
+name: UIforETW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/UIforETW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/UIforETW
+identifiers:
+- winget: Google.UIforETW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/UIforETW
+aliases: []

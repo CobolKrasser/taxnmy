@@ -1,0 +1,12 @@
+key: vovsoft/resource-extractor
+publisher: vovsoft
+name: Vovsoft Resource Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ResourceExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ResourceExtractor
+identifiers:
+- winget: VovSoft.ResourceExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ResourceExtractor
+aliases:
+- vovsoft/vovsoft-resource-extractor

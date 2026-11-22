@@ -1,0 +1,11 @@
+key: aserto/topaz
+publisher: aserto
+name: Topaz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/Topaz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/Topaz
+identifiers:
+- winget: Aserto.Topaz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/Topaz
+aliases: []

@@ -1,0 +1,11 @@
+key: virustotal/vt-cli
+publisher: virustotal
+name: vt-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/vt-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/vt-cli
+identifiers:
+- winget: VirusTotal.vt-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/vt-cli
+aliases: []

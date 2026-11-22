@@ -1,0 +1,11 @@
+key: spark-mail/spark-desktop
+publisher: spark-mail
+name: Spark Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Readdle/Spark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Readdle/Spark
+identifiers:
+- winget: Readdle.Spark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Readdle/Spark
+aliases: []

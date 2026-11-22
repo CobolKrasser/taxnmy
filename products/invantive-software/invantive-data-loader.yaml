@@ -1,0 +1,11 @@
+key: invantive-software/invantive-data-loader
+publisher: invantive-software
+name: Invantive Data Loader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveDataLoader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveDataLoader
+identifiers:
+- winget: Invantive.InvantiveDataLoader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveDataLoader
+aliases: []

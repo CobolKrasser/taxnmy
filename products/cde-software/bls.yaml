@@ -1,0 +1,13 @@
+key: cde-software/bls
+publisher: cde-software
+name: BLS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/BLS-2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/BLS-2025
+identifiers:
+- winget: CDESoftware.BLS-2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/BLS-2025
+- winget: CDESoftware.BLS-2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/BLS-2026
+aliases: []

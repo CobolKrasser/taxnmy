@@ -1,0 +1,11 @@
+key: meshcore/meshcore
+publisher: meshcore
+name: MeshCore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshCore/MeshCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshCore/MeshCore
+identifiers:
+- winget: MeshCore.MeshCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshCore/MeshCore
+aliases: []

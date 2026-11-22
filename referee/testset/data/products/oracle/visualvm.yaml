@@ -1,0 +1,11 @@
+key: oracle/visualvm
+publisher: oracle
+name: VisualVM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VisualVM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VisualVM
+identifiers:
+- winget: Oracle.VisualVM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VisualVM
+aliases: []

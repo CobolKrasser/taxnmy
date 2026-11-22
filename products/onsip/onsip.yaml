@@ -1,0 +1,11 @@
+key: onsip/onsip
+publisher: onsip
+name: OnSIP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JunctionNetworks/OnSIP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JunctionNetworks/OnSIP
+identifiers:
+- winget: JunctionNetworks.OnSIP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JunctionNetworks/OnSIP
+aliases: []

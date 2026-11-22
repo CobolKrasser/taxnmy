@@ -1,0 +1,11 @@
+key: trimble/sketchup-viewer
+publisher: trimble
+name: SketchUp Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUpViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUpViewer
+identifiers:
+- winget: Trimble.SketchUpViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUpViewer
+aliases: []

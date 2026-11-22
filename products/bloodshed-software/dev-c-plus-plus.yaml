@@ -1,0 +1,11 @@
+key: bloodshed-software/dev-c-plus-plus
+publisher: bloodshed-software
+name: Dev-C++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orwell/Dev-C++
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orwell/Dev-C++
+identifiers:
+- winget: Orwell.Dev-C++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Orwell/Dev-C++
+aliases: []

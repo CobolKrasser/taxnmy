@@ -1,0 +1,11 @@
+key: browserpass/browserpass
+publisher: browserpass
+name: Browserpass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Browserpass/BrowserpassNative
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Browserpass/BrowserpassNative
+identifiers:
+- winget: Browserpass.BrowserpassNative
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Browserpass/BrowserpassNative
+aliases: []

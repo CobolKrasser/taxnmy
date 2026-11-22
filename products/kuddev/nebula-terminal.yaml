@@ -1,0 +1,11 @@
+key: kuddev/nebula-terminal
+publisher: kuddev
+name: Nebula Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuddev/Pebrel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuddev/Pebrel
+identifiers:
+- winget: Kuddev.Pebrel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuddev/Pebrel
+aliases: []

@@ -1,0 +1,11 @@
+key: theabider/rackstack
+publisher: theabider
+name: RackStack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheAbider/RackStack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheAbider/RackStack
+identifiers:
+- winget: TheAbider.RackStack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheAbider/RackStack
+aliases: []

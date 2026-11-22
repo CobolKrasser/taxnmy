@@ -1,0 +1,11 @@
+key: alesimula/wsa-pacman
+publisher: alesimula
+name: WSA PacMan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alesimula/wsa_pacman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alesimula/wsa_pacman
+identifiers:
+- winget: alesimula.wsa_pacman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alesimula/wsa_pacman
+aliases: []

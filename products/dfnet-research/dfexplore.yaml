@@ -1,0 +1,11 @@
+key: dfnet-research/dfexplore
+publisher: dfnet-research
+name: DFexplore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFexplore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFexplore
+identifiers:
+- winget: DFNetResearch.DFexplore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DFNetResearch/DFexplore
+aliases: []

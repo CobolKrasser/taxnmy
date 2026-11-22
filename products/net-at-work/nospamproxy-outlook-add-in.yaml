@@ -1,0 +1,11 @@
+key: net-at-work/nospamproxy-outlook-add-in
+publisher: net-at-work
+name: NoSpamProxy Outlook add-in
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetAtWork/NoSpamProxyOutlookAddin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetAtWork/NoSpamProxyOutlookAddin
+identifiers:
+- winget: NetAtWork.NoSpamProxyOutlookAddin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetAtWork/NoSpamProxyOutlookAddin
+aliases: []

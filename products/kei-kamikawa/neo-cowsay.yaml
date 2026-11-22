@@ -1,0 +1,11 @@
+key: kei-kamikawa/neo-cowsay
+publisher: kei-kamikawa
+name: Neo Cowsay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codehex/Neo-cowsay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codehex/Neo-cowsay
+identifiers:
+- winget: codehex.Neo-cowsay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codehex/Neo-cowsay
+aliases: []

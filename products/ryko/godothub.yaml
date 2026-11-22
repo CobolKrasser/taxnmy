@@ -1,0 +1,11 @@
+key: ryko/godothub
+publisher: ryko
+name: GodotHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryko/GodotHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryko/GodotHub
+identifiers:
+- winget: Ryko.GodotHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryko/GodotHub
+aliases: []

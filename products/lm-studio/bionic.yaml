@@ -1,0 +1,11 @@
+key: lm-studio/bionic
+publisher: lm-studio
+name: Bionic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/Bionic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/Bionic
+identifiers:
+- winget: ElementLabs.Bionic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/Bionic
+aliases: []

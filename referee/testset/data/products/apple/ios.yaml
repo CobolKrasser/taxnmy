@@ -1,0 +1,11 @@
+key: apple/ios
+publisher: apple
+name: iOS
+kind: operating-system
+source: https://www.apple.com/ios/
+versions:
+  source: https://support.apple.com/en-us/100100
+identifiers:
+- cpe: cpe:2.3:o:apple:iphone_os
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:apple:iphone_os&resultsPerPage=1
+aliases: []

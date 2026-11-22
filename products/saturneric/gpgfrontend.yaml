@@ -1,0 +1,11 @@
+key: saturneric/gpgfrontend
+publisher: saturneric
+name: GpgFrontend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturneric/GpgFrontend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturneric/GpgFrontend
+identifiers:
+- winget: Saturneric.GpgFrontend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturneric/GpgFrontend
+aliases: []

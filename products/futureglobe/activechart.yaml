@@ -1,0 +1,11 @@
+key: futureglobe/activechart
+publisher: futureglobe
+name: ActiveChart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futureglobe/ActiveChart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futureglobe/ActiveChart
+identifiers:
+- winget: Futureglobe.ActiveChart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Futureglobe/ActiveChart
+aliases: []

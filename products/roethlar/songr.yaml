@@ -1,0 +1,11 @@
+key: roethlar/songr
+publisher: roethlar
+name: Songr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roethlar/Songr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roethlar/Songr
+identifiers:
+- winget: Roethlar.Songr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roethlar/Songr
+aliases: []

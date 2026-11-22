@@ -1,0 +1,11 @@
+key: omniedge/omniedgecli
+publisher: omniedge
+name: OmniEdgeCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniEdge/OmniEdgeCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniEdge/OmniEdgeCLI
+identifiers:
+- winget: OmniEdge.OmniEdgeCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniEdge/OmniEdgeCLI
+aliases: []

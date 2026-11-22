@@ -1,0 +1,11 @@
+key: flightdeck/flightdeck
+publisher: flightdeck
+name: FlightDeck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlightDeck/FlightDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlightDeck/FlightDeck
+identifiers:
+- winget: FlightDeck.FlightDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlightDeck/FlightDeck
+aliases: []

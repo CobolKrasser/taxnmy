@@ -1,0 +1,11 @@
+key: vivictorg/vivict-plus-plus
+publisher: vivictorg
+name: Vivict++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vivictorg/vivictpp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vivictorg/vivictpp
+identifiers:
+- winget: vivictorg.vivictpp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vivictorg/vivictpp
+aliases: []

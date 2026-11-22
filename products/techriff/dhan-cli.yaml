@@ -1,0 +1,11 @@
+key: techriff/dhan-cli
+publisher: techriff
+name: Dhan CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techriff/DhanCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techriff/DhanCli
+identifiers:
+- winget: Techriff.DhanCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techriff/DhanCli
+aliases: []

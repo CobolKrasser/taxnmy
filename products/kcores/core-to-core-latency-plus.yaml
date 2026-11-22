@@ -1,0 +1,11 @@
+key: kcores/core-to-core-latency-plus
+publisher: kcores
+name: core-to-core-latency-plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KCORES/core-to-core-latency-plus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KCORES/core-to-core-latency-plus
+identifiers:
+- winget: KCORES.core-to-core-latency-plus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KCORES/core-to-core-latency-plus
+aliases: []

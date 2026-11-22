@@ -1,0 +1,11 @@
+key: hexmostech/ipm
+publisher: hexmostech
+name: IPM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HexmosTech/IPM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HexmosTech/IPM
+identifiers:
+- winget: HexmosTech.IPM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HexmosTech/IPM
+aliases: []

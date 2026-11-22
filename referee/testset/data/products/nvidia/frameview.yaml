@@ -1,0 +1,12 @@
+key: nvidia/frameview
+publisher: nvidia
+name: Nvidia FrameView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/FrameView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/FrameView
+identifiers:
+- winget: Nvidia.FrameView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/FrameView
+aliases:
+- nvidia/nvidia-frameview

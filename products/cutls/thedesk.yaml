@@ -1,0 +1,11 @@
+key: cutls/thedesk
+publisher: cutls
+name: TheDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cutls/TheDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cutls/TheDesk
+identifiers:
+- winget: Cutls.TheDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cutls/TheDesk
+aliases: []

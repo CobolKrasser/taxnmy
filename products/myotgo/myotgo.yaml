@@ -1,0 +1,11 @@
+key: myotgo/myotgo
+publisher: myotgo
+name: MyOTGO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyOTGO/MyOTGO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyOTGO/MyOTGO
+identifiers:
+- winget: MyOTGO.MyOTGO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyOTGO/MyOTGO
+aliases: []

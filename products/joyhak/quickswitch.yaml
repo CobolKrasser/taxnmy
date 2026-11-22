@@ -1,0 +1,11 @@
+key: joyhak/quickswitch
+publisher: joyhak
+name: QuickSwitch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JoyHak/QuickSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JoyHak/QuickSwitch
+identifiers:
+- winget: JoyHak.QuickSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JoyHak/QuickSwitch
+aliases: []

@@ -1,0 +1,11 @@
+key: tolga-o/env2op-cli
+publisher: tolga-o
+name: env2op-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tolgamorf/env2op-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tolgamorf/env2op-cli
+identifiers:
+- winget: tolgamorf.env2op-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tolgamorf/env2op-cli
+aliases: []

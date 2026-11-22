@@ -1,0 +1,12 @@
+key: dji/terra
+publisher: dji
+name: DJI Terra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJITerra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJITerra
+identifiers:
+- winget: DJI.DJITerra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJITerra
+aliases:
+- dji/dji-terra

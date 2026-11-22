@@ -1,0 +1,11 @@
+key: huawei/deveco-studio
+publisher: huawei
+name: DevEco Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/DevEco
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/DevEco
+identifiers:
+- winget: Huawei.DevEco
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/DevEco
+aliases: []

@@ -1,0 +1,11 @@
+key: danfoss/mydrive-insight
+publisher: danfoss
+name: MyDrive Insight
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/MyDrive/Insight
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/MyDrive/Insight
+identifiers:
+- winget: Danfoss.MyDrive.Insight
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/MyDrive/Insight
+aliases: []

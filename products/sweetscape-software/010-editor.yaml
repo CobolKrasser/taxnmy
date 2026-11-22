@@ -1,0 +1,11 @@
+key: sweetscape-software/010-editor
+publisher: sweetscape-software
+name: 010 Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SweetScape/010Editor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SweetScape/010Editor
+identifiers:
+- winget: SweetScape.010Editor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SweetScape/010Editor
+aliases: []

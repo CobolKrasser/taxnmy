@@ -1,0 +1,11 @@
+key: jabbla/sprintplus-viewer
+publisher: jabbla
+name: SprintPlus Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jabbla/SprintPlusViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jabbla/SprintPlusViewer
+identifiers:
+- winget: Jabbla.SprintPlusViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jabbla/SprintPlusViewer
+aliases: []

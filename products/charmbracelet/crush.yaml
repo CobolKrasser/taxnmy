@@ -1,0 +1,11 @@
+key: charmbracelet/crush
+publisher: charmbracelet
+name: crush
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/crush
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/crush
+identifiers:
+- winget: charmbracelet.crush
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/crush
+aliases: []

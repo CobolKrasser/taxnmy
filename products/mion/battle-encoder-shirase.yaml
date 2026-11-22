@@ -1,0 +1,11 @@
+key: mion/battle-encoder-shirase
+publisher: mion
+name: Battle Encoder Shirasé
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mion/BES/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mion/BES/Stable
+identifiers:
+- winget: mion.BES.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mion/BES/Stable
+aliases: []

@@ -1,0 +1,11 @@
+key: isi360/isn-autoit-studio
+publisher: isi360
+name: ISN AutoIt Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/isnetwork/ISNAutoItStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/isnetwork/ISNAutoItStudio
+identifiers:
+- winget: isnetwork.ISNAutoItStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/isnetwork/ISNAutoItStudio
+aliases: []

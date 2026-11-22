@@ -1,0 +1,11 @@
+key: sebastian-mark/wixtool-yellow-edition
+publisher: sebastian-mark
+name: WixTool - Yellow Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drsaint/WixTool/Yellow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drsaint/WixTool/Yellow
+identifiers:
+- winget: drsaint.WixTool.Yellow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drsaint/WixTool/Yellow
+aliases: []

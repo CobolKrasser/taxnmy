@@ -1,0 +1,12 @@
+key: invo/connect
+publisher: invo
+name: Invo Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invo/InvoConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invo/InvoConnect
+identifiers:
+- winget: Invo.InvoConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invo/InvoConnect
+aliases:
+- invo/invo-connect

@@ -1,0 +1,12 @@
+key: autodesk/licensing-service
+publisher: autodesk
+name: Autodesk Licensing Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/LicensingService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/LicensingService
+identifiers:
+- winget: Autodesk.LicensingService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/LicensingService
+aliases:
+- autodesk/autodesk-licensing-service

@@ -1,0 +1,11 @@
+key: openscopeproject/trguing
+publisher: openscopeproject
+name: TrguiNG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScopeProject/TrguiNG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScopeProject/TrguiNG
+identifiers:
+- winget: OpenScopeProject.TrguiNG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScopeProject/TrguiNG
+aliases: []

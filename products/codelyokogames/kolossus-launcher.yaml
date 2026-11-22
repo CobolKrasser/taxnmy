@@ -1,0 +1,11 @@
+key: codelyokogames/kolossus-launcher
+publisher: codelyokogames
+name: Kolossus Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLyokoGames/KolossusLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLyokoGames/KolossusLauncher
+identifiers:
+- winget: CodeLyokoGames.KolossusLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLyokoGames/KolossusLauncher
+aliases: []

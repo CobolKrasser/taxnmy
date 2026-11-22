@@ -1,0 +1,11 @@
+key: xsolla/star-trek-fleet-command
+publisher: xsolla
+name: Star Trek Fleet Command
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scopely/StarTrekFleetCommand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scopely/StarTrekFleetCommand
+identifiers:
+- winget: Scopely.StarTrekFleetCommand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scopely/StarTrekFleetCommand
+aliases: []

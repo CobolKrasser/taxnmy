@@ -1,0 +1,11 @@
+key: yuki-komine/amm-triggerkit
+publisher: yuki-komine
+name: AMM TriggerKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YukiKomine/AutoMuteMusic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YukiKomine/AutoMuteMusic
+identifiers:
+- winget: YukiKomine.AutoMuteMusic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YukiKomine/AutoMuteMusic
+aliases: []

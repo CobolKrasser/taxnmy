@@ -1,0 +1,11 @@
+key: win32ss/supermium
+publisher: win32ss
+name: Supermium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/win32ss/Supermium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/win32ss/Supermium
+identifiers:
+- winget: win32ss.Supermium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/win32ss/Supermium
+aliases: []

@@ -1,0 +1,11 @@
+key: revoland/steam-library-manager
+publisher: revoland
+name: Steam-Library-Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoLand/Steam-Library-Manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoLand/Steam-Library-Manager
+identifiers:
+- winget: RevoLand.Steam-Library-Manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoLand/Steam-Library-Manager
+aliases: []

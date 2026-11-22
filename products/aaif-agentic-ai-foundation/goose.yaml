@@ -1,0 +1,11 @@
+key: aaif-agentic-ai-foundation/goose
+publisher: aaif-agentic-ai-foundation
+name: Goose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgenticAIFoundation/gooseDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgenticAIFoundation/gooseDesktop
+identifiers:
+- winget: AgenticAIFoundation.gooseDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgenticAIFoundation/gooseDesktop
+aliases: []

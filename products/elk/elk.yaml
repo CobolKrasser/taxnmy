@@ -1,0 +1,11 @@
+key: elk/elk
+publisher: elk
+name: Elk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elk/Elk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elk/Elk
+identifiers:
+- winget: Elk.Elk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elk/Elk
+aliases: []

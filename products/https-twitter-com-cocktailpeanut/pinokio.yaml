@@ -1,0 +1,11 @@
+key: https-twitter-com-cocktailpeanut/pinokio
+publisher: https-twitter-com-cocktailpeanut
+name: Pinokio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pinokiocomputer/pinokio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pinokiocomputer/pinokio
+identifiers:
+- winget: pinokiocomputer.pinokio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pinokiocomputer/pinokio
+aliases: []

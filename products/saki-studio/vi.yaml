@@ -1,0 +1,11 @@
+key: saki-studio/vi
+publisher: saki-studio
+name: Vi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SakiStudio/SakiVI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SakiStudio/SakiVI
+identifiers:
+- winget: SakiStudio.SakiVI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SakiStudio/SakiVI
+aliases: []

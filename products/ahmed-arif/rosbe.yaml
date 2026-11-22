@@ -1,0 +1,11 @@
+key: ahmed-arif/rosbe
+publisher: ahmed-arif
+name: RosBE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReactOS/RosBE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReactOS/RosBE
+identifiers:
+- winget: ReactOS.RosBE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReactOS/RosBE
+aliases: []

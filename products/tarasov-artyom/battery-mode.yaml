@@ -1,0 +1,11 @@
+key: tarasov-artyom/battery-mode
+publisher: tarasov-artyom
+name: Battery Mode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TarasovArtyom/BatteryMode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TarasovArtyom/BatteryMode
+identifiers:
+- winget: TarasovArtyom.BatteryMode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TarasovArtyom/BatteryMode
+aliases: []

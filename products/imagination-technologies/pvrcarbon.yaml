@@ -1,0 +1,11 @@
+key: imagination-technologies/pvrcarbon
+publisher: imagination-technologies
+name: PVRCarbon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImaginationTech/PVRCarbon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImaginationTech/PVRCarbon
+identifiers:
+- winget: ImaginationTech.PVRCarbon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImaginationTech/PVRCarbon
+aliases: []

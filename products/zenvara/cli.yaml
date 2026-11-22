@@ -1,0 +1,12 @@
+key: zenvara/cli
+publisher: zenvara
+name: Zenvara CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zenvara/Zen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zenvara/Zen
+identifiers:
+- winget: Zenvara.Zen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zenvara/Zen
+aliases:
+- zenvara/zenvara-cli

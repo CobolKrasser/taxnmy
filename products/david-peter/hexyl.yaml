@@ -1,0 +1,11 @@
+key: david-peter/hexyl
+publisher: david-peter
+name: hexyl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/hexyl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/hexyl
+identifiers:
+- winget: sharkdp.hexyl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/hexyl
+aliases: []

@@ -1,0 +1,11 @@
+key: marti-climent/unigetui-formerly-wingetui-pre-release
+publisher: marti-climent
+name: UniGetUI (formerly WingetUI) - Pre-Release
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartiCliment/UniGetUI/Pre-Release
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartiCliment/UniGetUI/Pre-Release
+identifiers:
+- winget: MartiCliment.UniGetUI.Pre-Release
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartiCliment/UniGetUI/Pre-Release
+aliases: []

@@ -1,0 +1,11 @@
+key: wifimouseserver-authors/wifimouseserver
+publisher: wifimouseserver-authors
+name: WifiMouseServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VividDesigns/WifiMouseServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VividDesigns/WifiMouseServer
+identifiers:
+- winget: VividDesigns.WifiMouseServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VividDesigns/WifiMouseServer
+aliases: []

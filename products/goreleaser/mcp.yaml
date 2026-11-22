@@ -1,0 +1,11 @@
+key: goreleaser/mcp
+publisher: goreleaser
+name: mcp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/mcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/mcp
+identifiers:
+- winget: goreleaser.mcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/mcp
+aliases: []

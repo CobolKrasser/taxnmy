@@ -1,0 +1,11 @@
+key: near-ai/ironclaw
+publisher: near-ai
+name: ironclaw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NearAI/IronClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NearAI/IronClaw
+identifiers:
+- winget: NearAI.IronClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NearAI/IronClaw
+aliases: []

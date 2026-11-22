@@ -1,0 +1,11 @@
+key: greatis-software/regrun-security-suite
+publisher: greatis-software
+name: RegRun Security Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/RegRunCK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/RegRunCK
+identifiers:
+- winget: Greatis.RegRun.RegRunCK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/RegRunCK
+aliases: []

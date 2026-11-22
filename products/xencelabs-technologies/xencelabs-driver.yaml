@@ -1,0 +1,11 @@
+key: xencelabs-technologies/xencelabs-driver
+publisher: xencelabs-technologies
+name: Xencelabs Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xencelabs/Driver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xencelabs/Driver
+identifiers:
+- winget: Xencelabs.Driver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xencelabs/Driver
+aliases: []

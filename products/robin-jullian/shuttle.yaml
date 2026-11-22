@@ -1,0 +1,11 @@
+key: robin-jullian/shuttle
+publisher: robin-jullian
+name: Shuttle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobinJullian/Shuttle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobinJullian/Shuttle
+identifiers:
+- winget: RobinJullian.Shuttle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobinJullian/Shuttle
+aliases: []

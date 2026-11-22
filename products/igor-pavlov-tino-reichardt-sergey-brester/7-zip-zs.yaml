@@ -1,0 +1,11 @@
+key: igor-pavlov-tino-reichardt-sergey-brester/7-zip-zs
+publisher: igor-pavlov-tino-reichardt-sergey-brester
+name: 7-Zip ZS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcmilk/7zip-zstd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcmilk/7zip-zstd
+identifiers:
+- winget: mcmilk.7zip-zstd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcmilk/7zip-zstd
+aliases: []

@@ -1,0 +1,12 @@
+key: 8x8/quality-management
+publisher: 8x8
+name: 8x8 Quality Management
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8x8/QualityManagement
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8x8/QualityManagement
+identifiers:
+- winget: 8x8.QualityManagement
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/8x8/QualityManagement
+aliases:
+- 8x8/8x8-quality-management

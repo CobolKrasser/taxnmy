@@ -1,0 +1,13 @@
+key: kog-games/elsword
+publisher: kog-games
+name: Elsword
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KOG/Elsworld/en
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KOG/Elsworld/en
+identifiers:
+- winget: KOG.Elsworld.en
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KOG/Elsworld/en
+- winget: KOG.Elsworld.es
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KOG/Elsworld/es
+aliases: []

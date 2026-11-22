@@ -1,0 +1,12 @@
+key: cloudtalk/phone
+publisher: cloudtalk
+name: CloudTalk Phone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudTalk/Phone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudTalk/Phone
+identifiers:
+- winget: CloudTalk.Phone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudTalk/Phone
+aliases:
+- cloudtalk/cloudtalk-phone

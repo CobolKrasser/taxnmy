@@ -1,0 +1,15 @@
+key: foxit-software/foxit-pdf-editor
+publisher: foxit-software
+name: Foxit PDF Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/PhantomPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/PhantomPDF
+identifiers:
+- winget: Foxit.PhantomPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/PhantomPDF
+- winget: Foxit.PhantomPDF.Subscription
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/PhantomPDF/Subscription
+- winget: Foxit.PhantomPDF.Subscription.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foxit/PhantomPDF/Subscription/MSI
+aliases: []

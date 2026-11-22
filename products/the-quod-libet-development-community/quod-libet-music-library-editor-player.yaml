@@ -1,0 +1,11 @@
+key: the-quod-libet-development-community/quod-libet-music-library-editor-player
+publisher: the-quod-libet-development-community
+name: Quod Libet - Music Library / Editor / Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuodLibet/QuodLibet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuodLibet/QuodLibet
+identifiers:
+- winget: QuodLibet.QuodLibet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuodLibet/QuodLibet
+aliases: []

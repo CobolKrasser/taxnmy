@@ -1,0 +1,11 @@
+key: swastik-sagar/sfirewall
+publisher: swastik-sagar
+name: sFirewall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwastikSagar/sFirewall/PreRelease
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwastikSagar/sFirewall/PreRelease
+identifiers:
+- winget: SwastikSagar.sFirewall.PreRelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwastikSagar/sFirewall/PreRelease
+aliases: []

@@ -1,0 +1,12 @@
+key: secure-exchanges/outlook-area-sign-form
+publisher: secure-exchanges
+name: Secure Exchanges Outlook Area Sign Form
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureExchanges/SEOASF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureExchanges/SEOASF
+identifiers:
+- winget: SecureExchanges.SEOASF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureExchanges/SEOASF
+aliases:
+- secure-exchanges/secure-exchanges-outlook-area-sign-form

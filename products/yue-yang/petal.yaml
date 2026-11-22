@@ -1,0 +1,11 @@
+key: yue-yang/petal
+publisher: yue-yang
+name: Petal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilime/petal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilime/petal
+identifiers:
+- winget: ilime.petal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilime/petal
+aliases: []

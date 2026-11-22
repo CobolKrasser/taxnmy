@@ -1,0 +1,11 @@
+key: luculent-systems/bluetooth-battery-monitor
+publisher: luculent-systems
+name: Bluetooth Battery Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuculentSystems/BluetoothBatteryMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuculentSystems/BluetoothBatteryMonitor
+identifiers:
+- winget: LuculentSystems.BluetoothBatteryMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuculentSystems/BluetoothBatteryMonitor
+aliases: []

@@ -1,0 +1,11 @@
+key: axcore/tartube
+publisher: axcore
+name: tartube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axcore/tartube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axcore/tartube
+identifiers:
+- winget: axcore.tartube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axcore/tartube
+aliases: []

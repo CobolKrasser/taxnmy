@@ -1,0 +1,11 @@
+key: samuel-imolorhe/altair-graphql-client
+publisher: samuel-imolorhe
+name: Altair GraphQL Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/altair-graphql/altair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/altair-graphql/altair
+identifiers:
+- winget: altair-graphql.altair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/altair-graphql/altair
+aliases: []

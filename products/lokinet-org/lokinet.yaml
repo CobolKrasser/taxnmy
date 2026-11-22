@@ -1,0 +1,11 @@
+key: lokinet-org/lokinet
+publisher: lokinet-org
+name: lokinet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxen-io/lokinet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxen-io/lokinet
+identifiers:
+- winget: oxen-io.lokinet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxen-io/lokinet
+aliases: []

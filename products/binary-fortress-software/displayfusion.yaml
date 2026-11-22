@@ -1,0 +1,11 @@
+key: binary-fortress-software/displayfusion
+publisher: binary-fortress-software
+name: DisplayFusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/DisplayFusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/DisplayFusion
+identifiers:
+- winget: BinaryFortress.DisplayFusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/DisplayFusion
+aliases: []

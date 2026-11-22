@@ -1,0 +1,11 @@
+key: chit/abyss-overlay
+publisher: chit
+name: Abyss Overlay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abyss/AbyssOverlay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abyss/AbyssOverlay
+identifiers:
+- winget: Abyss.AbyssOverlay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abyss/AbyssOverlay
+aliases: []

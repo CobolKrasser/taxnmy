@@ -1,0 +1,11 @@
+key: alois-hartl/aloxbook
+publisher: alois-hartl
+name: AloxBook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AloxBook/AloxBook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AloxBook/AloxBook
+identifiers:
+- winget: AloxBook.AloxBook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AloxBook/AloxBook
+aliases: []

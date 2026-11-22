@@ -1,0 +1,11 @@
+key: bomist/bomist
+publisher: bomist
+name: BOMIST
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BOMIST/BOMIST
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BOMIST/BOMIST
+identifiers:
+- winget: BOMIST.BOMIST
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BOMIST/BOMIST
+aliases: []

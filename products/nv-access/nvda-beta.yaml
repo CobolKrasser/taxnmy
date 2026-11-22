@@ -1,0 +1,11 @@
+key: nv-access/nvda-beta
+publisher: nv-access
+name: NVDA Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA/Beta
+identifiers:
+- winget: NVAccess.NVDA.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA/Beta
+aliases: []

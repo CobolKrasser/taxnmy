@@ -1,0 +1,11 @@
+key: listen-1/listen1-fluent
+publisher: listen-1
+name: Listen1 Fluent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/listen1/listen1/fluent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/listen1/listen1/fluent
+identifiers:
+- winget: listen1.listen1.fluent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/listen1/listen1/fluent
+aliases: []

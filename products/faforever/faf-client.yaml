@@ -1,0 +1,11 @@
+key: faforever/faf-client
+publisher: faforever
+name: FAF Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FAForever/FAFClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FAForever/FAFClient
+identifiers:
+- winget: FAForever.FAFClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FAForever/FAFClient
+aliases: []

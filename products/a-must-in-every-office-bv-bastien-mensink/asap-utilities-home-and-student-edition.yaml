@@ -1,0 +1,11 @@
+key: a-must-in-every-office-bv-bastien-mensink/asap-utilities-home-and-student-edition
+publisher: a-must-in-every-office-bv-bastien-mensink
+name: ASAP Utilities (Home and Student edition)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMustInEveryOffice/ASAPUtilities/HomeStudent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMustInEveryOffice/ASAPUtilities/HomeStudent
+identifiers:
+- winget: AMustInEveryOffice.ASAPUtilities.HomeStudent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMustInEveryOffice/ASAPUtilities/HomeStudent
+aliases: []

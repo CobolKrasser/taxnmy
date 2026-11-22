@@ -1,0 +1,11 @@
+key: softsea/h-264-encoder
+publisher: softsea
+name: H.264 Encoder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/H264Encoder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/H264Encoder
+identifiers:
+- winget: SoftSea.H264Encoder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/H264Encoder
+aliases: []

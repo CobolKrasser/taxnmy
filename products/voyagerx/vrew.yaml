@@ -1,0 +1,11 @@
+key: voyagerx/vrew
+publisher: voyagerx
+name: Vrew
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoyagerX/Vrew
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoyagerX/Vrew
+identifiers:
+- winget: VoyagerX.Vrew
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoyagerX/Vrew
+aliases: []

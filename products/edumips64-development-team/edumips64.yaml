@@ -1,0 +1,11 @@
+key: edumips64-development-team/edumips64
+publisher: edumips64-development-team
+name: EduMIPS64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EduMIPS64/EduMIPS64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EduMIPS64/EduMIPS64
+identifiers:
+- winget: EduMIPS64.EduMIPS64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EduMIPS64/EduMIPS64
+aliases: []

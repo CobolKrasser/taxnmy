@@ -1,0 +1,12 @@
+key: firedaemon/lozenge
+publisher: firedaemon
+name: FireDaemon Lozenge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonLozenge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonLozenge
+identifiers:
+- winget: FireDaemon.FireDaemonLozenge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireDaemon/FireDaemonLozenge
+aliases:
+- firedaemon/firedaemon-lozenge

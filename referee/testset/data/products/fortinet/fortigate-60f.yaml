@@ -1,0 +1,11 @@
+key: fortinet/fortigate-60f
+publisher: fortinet
+name: FortiGate 60F
+kind: device
+source: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-fortiwifi-60f-series.pdf
+versions:
+  source: https://docs.fortinet.com/document/fortigate/7.4.4/fortios-release-notes
+identifiers:
+- cpe: cpe:2.3:h:fortinet:fortigate_60f
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:h:fortinet:fortigate_60f&resultsPerPage=1
+aliases: []

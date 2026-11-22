@@ -1,0 +1,11 @@
+key: sigoden/window-switcher
+publisher: sigoden
+name: Window Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/WindowSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/WindowSwitcher
+identifiers:
+- winget: sigoden.WindowSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/WindowSwitcher
+aliases: []

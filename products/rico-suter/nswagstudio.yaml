@@ -1,0 +1,11 @@
+key: rico-suter/nswagstudio
+publisher: rico-suter
+name: NSwagStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RicoSuter/NSwagStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RicoSuter/NSwagStudio
+identifiers:
+- winget: RicoSuter.NSwagStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RicoSuter/NSwagStudio
+aliases: []

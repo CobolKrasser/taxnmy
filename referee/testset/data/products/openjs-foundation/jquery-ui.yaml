@@ -1,0 +1,17 @@
+key: openjs-foundation/jquery-ui
+publisher: openjs-foundation
+name: jQuery UI
+kind: software
+source: https://endoflife.date/jquery-ui
+versions:
+  source: https://endoflife.date/jquery-ui
+identifiers:
+- purl: pkg:github/jquery/jquery-ui
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jquery-ui.md
+- purl: pkg:maven/org.webjars/jquery-ui
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jquery-ui.md
+- purl: pkg:npm/jquery-ui
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jquery-ui.md
+- purl: pkg:nuget/jQuery.UI.Combined
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jquery-ui.md
+aliases: []

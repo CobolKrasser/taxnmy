@@ -1,0 +1,15 @@
+key: google/chrome
+publisher: google
+name: Chrome
+kind: software
+source: https://endoflife.date/chrome
+versions:
+  source: https://endoflife.date/chrome
+identifiers:
+- cpe: cpe:2.3:a:google:chrome
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/chrome.md
+- winget: Google.Chrome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome
+- homebrew: google-chrome
+  source: https://formulae.brew.sh/cask/google-chrome
+aliases: []

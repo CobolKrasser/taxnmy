@@ -1,0 +1,12 @@
+key: interceptsuite/standard
+publisher: interceptsuite
+name: InterceptSuite Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/InterceptSuite/Standard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/InterceptSuite/Standard
+identifiers:
+- winget: InterceptSuite.InterceptSuite.Standard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/InterceptSuite/Standard
+aliases:
+- interceptsuite/interceptsuite-standard

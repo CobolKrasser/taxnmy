@@ -1,0 +1,11 @@
+key: ghostersk/simple-ftp-server-with-gui
+publisher: ghostersk
+name: Simple FTP Server with GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghostersk/ftp-server-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghostersk/ftp-server-gui
+identifiers:
+- winget: ghostersk.ftp-server-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ghostersk/ftp-server-gui
+aliases: []

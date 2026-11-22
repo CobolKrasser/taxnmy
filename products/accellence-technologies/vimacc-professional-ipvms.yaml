@@ -1,0 +1,11 @@
+key: accellence-technologies/vimacc-professional-ipvms
+publisher: accellence-technologies
+name: vimacc Professional IPVMS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccProfessional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccProfessional
+identifiers:
+- winget: accellence.vimaccProfessional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/accellence/vimaccProfessional
+aliases: []

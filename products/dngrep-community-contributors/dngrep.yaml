@@ -1,0 +1,11 @@
+key: dngrep-community-contributors/dngrep
+publisher: dngrep-community-contributors
+name: dnGREP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dnGrep/dnGrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dnGrep/dnGrep
+identifiers:
+- winget: dnGrep.dnGrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dnGrep/dnGrep
+aliases: []

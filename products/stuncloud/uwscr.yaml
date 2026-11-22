@@ -1,0 +1,11 @@
+key: stuncloud/uwscr
+publisher: stuncloud
+name: UWSCR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stuncloud/uwscr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stuncloud/uwscr
+identifiers:
+- winget: stuncloud.uwscr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stuncloud/uwscr
+aliases: []

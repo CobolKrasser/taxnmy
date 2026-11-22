@@ -1,0 +1,11 @@
+key: gdevelop-team/gdevelop
+publisher: gdevelop-team
+name: GDevelop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDevelop/GDevelop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDevelop/GDevelop
+identifiers:
+- winget: GDevelop.GDevelop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDevelop/GDevelop
+aliases: []

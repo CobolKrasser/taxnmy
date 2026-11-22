@@ -1,0 +1,11 @@
+key: code-systems/turbo-studio
+publisher: code-systems
+name: Turbo Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSystems/TurboStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSystems/TurboStudio
+identifiers:
+- winget: CodeSystems.TurboStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeSystems/TurboStudio
+aliases: []

@@ -1,0 +1,12 @@
+key: bitrecover/windows-live-mail-converter-wizard
+publisher: bitrecover
+name: BitRecover Windows Live Mail Converter Wizard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitRecover/WindowsLiveMailConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitRecover/WindowsLiveMailConverter
+identifiers:
+- winget: BitRecover.WindowsLiveMailConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitRecover/WindowsLiveMailConverter
+aliases:
+- bitrecover/bitrecover-windows-live-mail-converter-wizard

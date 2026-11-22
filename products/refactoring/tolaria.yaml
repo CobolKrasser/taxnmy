@@ -1,0 +1,11 @@
+key: refactoring/tolaria
+publisher: refactoring
+name: Tolaria
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Refactoring/Tolaria
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Refactoring/Tolaria
+identifiers:
+- winget: Refactoring.Tolaria
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Refactoring/Tolaria
+aliases: []

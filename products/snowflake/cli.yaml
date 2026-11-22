@@ -1,0 +1,12 @@
+key: snowflake/cli
+publisher: snowflake
+name: Snowflake CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/SnowflakeCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/SnowflakeCLI
+identifiers:
+- winget: Snowflake.SnowflakeCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/SnowflakeCLI
+aliases:
+- snowflake/snowflake-cli

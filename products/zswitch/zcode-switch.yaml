@@ -1,0 +1,11 @@
+key: zswitch/zcode-switch
+publisher: zswitch
+name: zcode-switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pjpv/zcode-switch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pjpv/zcode-switch
+identifiers:
+- winget: pjpv.zcode-switch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pjpv/zcode-switch
+aliases: []

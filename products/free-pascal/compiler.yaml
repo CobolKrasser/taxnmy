@@ -1,0 +1,12 @@
+key: free-pascal/compiler
+publisher: free-pascal
+name: Free Pascal Compiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreePascal/FreePascalCompiler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreePascal/FreePascalCompiler
+identifiers:
+- winget: FreePascal.FreePascalCompiler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreePascal/FreePascalCompiler
+aliases:
+- free-pascal/free-pascal-compiler

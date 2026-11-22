@@ -1,0 +1,11 @@
+key: accreation/aide
+publisher: accreation
+name: Aide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Accreation/Aide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Accreation/Aide
+identifiers:
+- winget: Accreation.Aide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Accreation/Aide
+aliases: []

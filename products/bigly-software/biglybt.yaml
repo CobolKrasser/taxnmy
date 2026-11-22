@@ -1,0 +1,11 @@
+key: bigly-software/biglybt
+publisher: bigly-software
+name: BiglyBT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiglySoftware/BiglyBT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiglySoftware/BiglyBT
+identifiers:
+- winget: BiglySoftware.BiglyBT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiglySoftware/BiglyBT
+aliases: []

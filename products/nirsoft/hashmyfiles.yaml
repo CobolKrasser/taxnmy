@@ -1,0 +1,11 @@
+key: nirsoft/hashmyfiles
+publisher: nirsoft
+name: HashMyFiles
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/HashMyFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/HashMyFiles
+identifiers:
+- winget: NirSoft.HashMyFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/HashMyFiles
+aliases: []

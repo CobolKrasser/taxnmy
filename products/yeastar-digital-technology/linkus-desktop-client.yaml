@@ -1,0 +1,13 @@
+key: yeastar-digital-technology/linkus-desktop-client
+publisher: yeastar-digital-technology
+name: Linkus Desktop Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeastar/Linkus/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeastar/Linkus/Desktop
+identifiers:
+- winget: Yeastar.Linkus.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeastar/Linkus/Desktop
+- winget: Yeastar.Linkus.Desktop.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yeastar/Linkus/Desktop/MSI
+aliases: []

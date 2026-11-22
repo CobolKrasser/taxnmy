@@ -1,0 +1,11 @@
+key: idisposable/snappy-driver-installer-go-forth
+publisher: idisposable
+name: 'Snappy Driver Installer: Go Forth'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDisposable/SDIGo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDisposable/SDIGo
+identifiers:
+- winget: IDisposable.SDIGo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDisposable/SDIGo
+aliases: []

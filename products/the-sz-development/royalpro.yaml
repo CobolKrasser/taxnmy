@@ -1,0 +1,11 @@
+key: the-sz-development/royalpro
+publisher: the-sz-development
+name: RoyalPro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/RoyalPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/RoyalPro
+identifiers:
+- winget: the-sz.RoyalPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/RoyalPro
+aliases: []

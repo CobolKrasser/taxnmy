@@ -1,0 +1,11 @@
+key: oliver-betz/exiftool-dev
+publisher: oliver-betz
+name: ExifTool - Dev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OliverBetz/ExifTool/Development
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OliverBetz/ExifTool/Development
+identifiers:
+- winget: OliverBetz.ExifTool.Development
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OliverBetz/ExifTool/Development
+aliases: []

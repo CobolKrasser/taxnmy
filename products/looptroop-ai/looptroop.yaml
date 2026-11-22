@@ -1,0 +1,11 @@
+key: looptroop-ai/looptroop
+publisher: looptroop-ai
+name: LoopTroop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoopTroopAI/LoopTroop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoopTroopAI/LoopTroop
+identifiers:
+- winget: LoopTroopAI.LoopTroop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoopTroopAI/LoopTroop
+aliases: []

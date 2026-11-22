@@ -1,0 +1,11 @@
+key: quark-software/quark-update
+publisher: quark-software
+name: Quark Update
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkUpdate
+identifiers:
+- winget: Quark.QuarkUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quark/QuarkUpdate
+aliases: []

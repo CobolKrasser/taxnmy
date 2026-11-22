@@ -1,0 +1,11 @@
+key: beijing-volcano-engine-technology/tosutil
+publisher: beijing-volcano-engine-technology
+name: tosutil
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/tosutil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/tosutil
+identifiers:
+- winget: ByteDance.tosutil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/tosutil
+aliases: []

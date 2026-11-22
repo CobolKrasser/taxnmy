@@ -1,0 +1,11 @@
+key: engage-health-systems/engage-agent
+publisher: engage-health-systems
+name: Engage Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EngageHealth/EngageAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EngageHealth/EngageAgent
+identifiers:
+- winget: EngageHealth.EngageAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EngageHealth/EngageAgent
+aliases: []

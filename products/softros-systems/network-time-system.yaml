@@ -1,0 +1,13 @@
+key: softros-systems/network-time-system
+publisher: softros-systems
+name: Network Time System
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/NetworkTimeSystem/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/NetworkTimeSystem/Client
+identifiers:
+- winget: Softros.NetworkTimeSystem.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/NetworkTimeSystem/Client
+- winget: Softros.NetworkTimeSystem.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/NetworkTimeSystem/Server
+aliases: []

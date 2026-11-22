@@ -1,0 +1,11 @@
+key: syncclipboard/syncclipboard
+publisher: syncclipboard
+name: SyncClipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JericX/SyncClipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JericX/SyncClipboard
+identifiers:
+- winget: JericX.SyncClipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JericX/SyncClipboard
+aliases: []

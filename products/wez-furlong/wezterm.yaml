@@ -1,0 +1,13 @@
+key: wez-furlong/wezterm
+publisher: wez-furlong
+name: WezTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/wezterm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/wezterm
+identifiers:
+- winget: wez.wezterm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/wezterm
+- winget: wez.wezterm.nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/wezterm/nightly
+aliases: []

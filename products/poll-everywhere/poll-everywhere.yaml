@@ -1,0 +1,11 @@
+key: poll-everywhere/poll-everywhere
+publisher: poll-everywhere
+name: Poll Everywhere
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PollEverywhere/PollEverywhere
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PollEverywhere/PollEverywhere
+identifiers:
+- winget: PollEverywhere.PollEverywhere
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PollEverywhere/PollEverywhere
+aliases: []

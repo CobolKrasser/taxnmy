@@ -1,0 +1,11 @@
+key: jetbrains/kotlin
+publisher: jetbrains
+name: Kotlin
+kind: software
+source: https://kotlinlang.org/docs/security.html
+versions:
+  source: https://kotlinlang.org/docs/security.html
+identifiers:
+- cpe: cpe:2.3:a:jetbrains:kotlin
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:jetbrains:kotlin&resultsPerPage=1
+aliases: []

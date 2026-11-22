@@ -1,0 +1,11 @@
+key: https-devcpp-gitee-io-cterm/cterm
+publisher: https-devcpp-gitee-io-cterm
+name: CTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CTerm/CTerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CTerm/CTerm
+identifiers:
+- winget: CTerm.CTerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CTerm/CTerm
+aliases: []

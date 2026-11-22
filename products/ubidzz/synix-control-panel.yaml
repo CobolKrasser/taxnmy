@@ -1,0 +1,11 @@
+key: ubidzz/synix-control-panel
+publisher: ubidzz
+name: Synix Control Panel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ubidzz/Synix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ubidzz/Synix
+identifiers:
+- winget: ubidzz.Synix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ubidzz/Synix
+aliases: []

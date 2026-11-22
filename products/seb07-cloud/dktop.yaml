@@ -1,0 +1,11 @@
+key: seb07-cloud/dktop
+publisher: seb07-cloud
+name: dktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seb07-cloud/dktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seb07-cloud/dktop
+identifiers:
+- winget: seb07-cloud.dktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seb07-cloud/dktop
+aliases: []

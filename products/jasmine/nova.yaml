@@ -1,0 +1,11 @@
+key: jasmine/nova
+publisher: jasmine
+name: Nova
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jasmine/Nova
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jasmine/Nova
+identifiers:
+- winget: Jasmine.Nova
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jasmine/Nova
+aliases: []

@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-redis
+publisher: premiumsoft-cybertech
+name: Navicat for Redis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatRedis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatRedis
+identifiers:
+- winget: PremiumSoft.NavicatRedis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatRedis
+aliases: []

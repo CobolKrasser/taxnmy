@@ -1,0 +1,11 @@
+key: nv-access/nvda
+publisher: nv-access
+name: NVDA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA
+identifiers:
+- winget: NVAccess.NVDA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA
+aliases: []

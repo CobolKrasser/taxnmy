@@ -1,0 +1,11 @@
+key: luigi-auriemma/quickbms
+publisher: luigi-auriemma
+name: QuickBMS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aluigi/QuickBMS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aluigi/QuickBMS
+identifiers:
+- winget: aluigi.QuickBMS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aluigi/QuickBMS
+aliases: []

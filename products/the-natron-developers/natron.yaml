@@ -1,0 +1,11 @@
+key: the-natron-developers/natron
+publisher: the-natron-developers
+name: Natron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natron/Natron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natron/Natron
+identifiers:
+- winget: Natron.Natron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natron/Natron
+aliases: []

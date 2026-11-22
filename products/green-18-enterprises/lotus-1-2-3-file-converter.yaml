@@ -1,0 +1,11 @@
+key: green-18-enterprises/lotus-1-2-3-file-converter
+publisher: green-18-enterprises
+name: Lotus 1-2-3 File Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LotusConverter/Lotus1-2-3FileConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LotusConverter/Lotus1-2-3FileConverter
+identifiers:
+- winget: LotusConverter.Lotus1-2-3FileConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LotusConverter/Lotus1-2-3FileConverter
+aliases: []

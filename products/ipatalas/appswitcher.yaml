@@ -1,0 +1,11 @@
+key: ipatalas/appswitcher
+publisher: ipatalas
+name: AppSwitcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ipatalas/AppSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ipatalas/AppSwitcher
+identifiers:
+- winget: ipatalas.AppSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ipatalas/AppSwitcher
+aliases: []

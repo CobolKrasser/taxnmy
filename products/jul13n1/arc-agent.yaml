@@ -1,0 +1,11 @@
+key: jul13n1/arc-agent
+publisher: jul13n1
+name: Arc Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jul13n1/ArcAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jul13n1/ArcAgent
+identifiers:
+- winget: Jul13n1.ArcAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jul13n1/ArcAgent
+aliases: []

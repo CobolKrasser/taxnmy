@@ -1,0 +1,11 @@
+key: gruntwork/terragrunt
+publisher: gruntwork
+name: Terragrunt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gruntwork/Terragrunt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gruntwork/Terragrunt
+identifiers:
+- winget: Gruntwork.Terragrunt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gruntwork/Terragrunt
+aliases: []

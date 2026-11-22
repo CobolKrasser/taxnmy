@@ -1,0 +1,11 @@
+key: argotronic/argus-monitor
+publisher: argotronic
+name: Argus Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argotronic/ArgusMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argotronic/ArgusMonitor
+identifiers:
+- winget: Argotronic.ArgusMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argotronic/ArgusMonitor
+aliases: []

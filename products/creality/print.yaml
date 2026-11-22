@@ -1,0 +1,12 @@
+key: creality/print
+publisher: creality
+name: Creality Print
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityPrint
+identifiers:
+- winget: Creality.CrealityPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CrealityPrint
+aliases:
+- creality/creality-print

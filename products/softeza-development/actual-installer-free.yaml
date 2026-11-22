@@ -1,0 +1,11 @@
+key: softeza-development/actual-installer-free
+publisher: softeza-development
+name: Actual Installer Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softeza/ActualInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softeza/ActualInstaller
+identifiers:
+- winget: Softeza.ActualInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softeza/ActualInstaller
+aliases: []

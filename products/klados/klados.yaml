@@ -1,0 +1,11 @@
+key: klados/klados
+publisher: klados
+name: Klados
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/klados/Klados
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/klados/Klados
+identifiers:
+- winget: klados.Klados
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/klados/Klados
+aliases: []

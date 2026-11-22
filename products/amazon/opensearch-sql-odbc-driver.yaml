@@ -1,0 +1,11 @@
+key: amazon/opensearch-sql-odbc-driver
+publisher: amazon
+name: OpenSearch SQL ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/OpenSearch/ODBC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/OpenSearch/ODBC
+identifiers:
+- winget: Amazon.OpenSearch.ODBC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/OpenSearch/ODBC
+aliases: []

@@ -1,0 +1,11 @@
+key: derrod/legendary
+publisher: derrod
+name: legendary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/derrod/legendary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/derrod/legendary
+identifiers:
+- winget: derrod.legendary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/derrod/legendary
+aliases: []

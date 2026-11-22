@@ -1,0 +1,11 @@
+key: verizon/one-talk
+publisher: verizon
+name: One Talk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verizon/OneTalk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verizon/OneTalk
+identifiers:
+- winget: Verizon.OneTalk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verizon/OneTalk
+aliases: []

@@ -1,0 +1,11 @@
+key: dvsts-eood/qops
+publisher: dvsts-eood
+name: QOps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DVSTSEOOD/QOps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DVSTSEOOD/QOps
+identifiers:
+- winget: DVSTSEOOD.QOps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DVSTSEOOD/QOps
+aliases: []

@@ -1,0 +1,11 @@
+key: fathom-developers/fathom
+publisher: fathom-developers
+name: Fathom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fathom/Fathom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fathom/Fathom
+identifiers:
+- winget: Fathom.Fathom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fathom/Fathom
+aliases: []

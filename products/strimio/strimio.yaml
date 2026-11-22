@@ -1,0 +1,11 @@
+key: strimio/strimio
+publisher: strimio
+name: Strimio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/strimio/strimio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/strimio/strimio
+identifiers:
+- winget: strimio.strimio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/strimio/strimio
+aliases: []

@@ -1,0 +1,12 @@
+key: vovsoft/time-sync
+publisher: vovsoft
+name: Vovsoft Time Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TimeSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TimeSync
+identifiers:
+- winget: VovSoft.TimeSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TimeSync
+aliases:
+- vovsoft/vovsoft-time-sync

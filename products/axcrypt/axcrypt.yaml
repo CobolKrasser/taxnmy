@@ -1,0 +1,11 @@
+key: axcrypt/axcrypt
+publisher: axcrypt
+name: AxCrypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxCrypt/AxCrypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxCrypt/AxCrypt
+identifiers:
+- winget: AxCrypt.AxCrypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxCrypt/AxCrypt
+aliases: []

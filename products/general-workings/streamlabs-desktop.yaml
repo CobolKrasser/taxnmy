@@ -1,0 +1,11 @@
+key: general-workings/streamlabs-desktop
+publisher: general-workings
+name: Streamlabs Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlabs/Streamlabs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlabs/Streamlabs
+identifiers:
+- winget: Streamlabs.Streamlabs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlabs/Streamlabs
+aliases: []

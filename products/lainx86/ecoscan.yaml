@@ -1,0 +1,11 @@
+key: lainx86/ecoscan
+publisher: lainx86
+name: EcoScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lainx86/EcoScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lainx86/EcoScan
+identifiers:
+- winget: lainx86.EcoScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lainx86/EcoScan
+aliases: []

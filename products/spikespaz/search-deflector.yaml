@@ -1,0 +1,11 @@
+key: spikespaz/search-deflector
+publisher: spikespaz
+name: Search Deflector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SearchDeflector/SearchDeflector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SearchDeflector/SearchDeflector
+identifiers:
+- winget: SearchDeflector.SearchDeflector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SearchDeflector/SearchDeflector
+aliases: []

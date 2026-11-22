@@ -1,0 +1,12 @@
+key: sandisk/memory-zone
+publisher: sandisk
+name: SanDisk Memory Zone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/MemoryZone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/MemoryZone
+identifiers:
+- winget: SanDisk.MemoryZone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/MemoryZone
+aliases:
+- sandisk/sandisk-memory-zone

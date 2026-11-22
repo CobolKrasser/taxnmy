@@ -1,0 +1,11 @@
+key: notion-labs/notion-calendar
+publisher: notion-labs
+name: Notion Calendar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/NotionCalendar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/NotionCalendar
+identifiers:
+- winget: Notion.NotionCalendar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/NotionCalendar
+aliases: []

@@ -1,0 +1,21 @@
+key: btbn/ffmpeg-lgpl-shared-variant-release-branch
+publisher: btbn
+name: FFmpeg (LGPL shared variant, release branch)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/5/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/5/1
+identifiers:
+- winget: BtbN.FFmpeg.LGPL.Shared.5.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/5/1
+- winget: BtbN.FFmpeg.LGPL.Shared.6.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/6/1
+- winget: BtbN.FFmpeg.LGPL.Shared.7.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/7/1
+- winget: BtbN.FFmpeg.LGPL.Shared.8.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/8/0
+- winget: BtbN.FFmpeg.LGPL.Shared.8.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/8/1
+- winget: BtbN.FFmpeg.LGPL.Shared.9.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/LGPL/Shared/9/0
+aliases: []

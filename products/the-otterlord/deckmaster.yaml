@@ -1,0 +1,11 @@
+key: the-otterlord/deckmaster
+publisher: the-otterlord
+name: DeckMaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheOtterlord/DeckMaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheOtterlord/DeckMaster
+identifiers:
+- winget: TheOtterlord.DeckMaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheOtterlord/DeckMaster
+aliases: []

@@ -1,0 +1,11 @@
+key: snaptium-team/snaptium
+publisher: snaptium-team
+name: Snaptium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jetyu/Snaptium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jetyu/Snaptium
+identifiers:
+- winget: jetyu.Snaptium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jetyu/Snaptium
+aliases: []

@@ -1,0 +1,11 @@
+key: editora-globo/valor-pro
+publisher: editora-globo
+name: Valor PRO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EditoraGloboSA/ValorPRO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EditoraGloboSA/ValorPRO
+identifiers:
+- winget: EditoraGloboSA.ValorPRO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EditoraGloboSA/ValorPRO
+aliases: []

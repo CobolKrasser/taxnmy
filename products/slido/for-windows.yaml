@@ -1,0 +1,12 @@
+key: slido/for-windows
+publisher: slido
+name: Slido for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slido/Slido
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slido/Slido
+identifiers:
+- winget: Slido.Slido
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slido/Slido
+aliases:
+- slido/slido-for-windows

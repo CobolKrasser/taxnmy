@@ -1,0 +1,11 @@
+key: markpilot/markpilot
+publisher: markpilot
+name: MarkPilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkPilot/MarkPilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkPilot/MarkPilot
+identifiers:
+- winget: MarkPilot.MarkPilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarkPilot/MarkPilot
+aliases: []

@@ -1,0 +1,11 @@
+key: hanwha-vision-america/wisenet-wave-client
+publisher: hanwha-vision-america
+name: Wisenet WAVE Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanwha/WisenetWAVEClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanwha/WisenetWAVEClient
+identifiers:
+- winget: Hanwha.WisenetWAVEClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanwha/WisenetWAVEClient
+aliases: []

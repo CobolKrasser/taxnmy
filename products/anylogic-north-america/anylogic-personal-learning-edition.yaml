@@ -1,0 +1,11 @@
+key: anylogic-north-america/anylogic-personal-learning-edition
+publisher: anylogic-north-america
+name: AnyLogic Personal Learning Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyLogic/AnyLogic/Personal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyLogic/AnyLogic/Personal
+identifiers:
+- winget: AnyLogic.AnyLogic.Personal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyLogic/AnyLogic/Personal
+aliases: []

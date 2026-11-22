@@ -1,0 +1,11 @@
+key: syncplay/syncplay
+publisher: syncplay
+name: Syncplay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncplay/Syncplay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncplay/Syncplay
+identifiers:
+- winget: Syncplay.Syncplay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncplay/Syncplay
+aliases: []

@@ -1,0 +1,11 @@
+key: unwinder/rivatuner-statistics-server
+publisher: unwinder
+name: Rivatuner Statistics Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/RTSS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/RTSS
+identifiers:
+- winget: Guru3D.RTSS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru3D/RTSS
+aliases: []

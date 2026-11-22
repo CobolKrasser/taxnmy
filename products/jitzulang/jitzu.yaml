@@ -1,0 +1,11 @@
+key: jitzulang/jitzu
+publisher: jitzulang
+name: Jitzu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JitzuLang/Jitzu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JitzuLang/Jitzu
+identifiers:
+- winget: JitzuLang.Jitzu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JitzuLang/Jitzu
+aliases: []

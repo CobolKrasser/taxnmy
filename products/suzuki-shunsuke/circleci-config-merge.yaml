@@ -1,0 +1,11 @@
+key: suzuki-shunsuke/circleci-config-merge
+publisher: suzuki-shunsuke
+name: circleci-config-merge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/suzuki-shunsuke/circleci-config-merge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/suzuki-shunsuke/circleci-config-merge
+identifiers:
+- winget: suzuki-shunsuke.circleci-config-merge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/suzuki-shunsuke/circleci-config-merge
+aliases: []

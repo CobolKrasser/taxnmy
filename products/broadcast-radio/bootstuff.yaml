@@ -1,0 +1,11 @@
+key: broadcast-radio/bootstuff
+publisher: broadcast-radio
+name: BootStuff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/BootStuff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/BootStuff
+identifiers:
+- winget: BroadcastRadio.BootStuff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/BootStuff
+aliases: []

@@ -1,0 +1,11 @@
+key: softros-systems/softros-lan-messenger
+publisher: softros-systems
+name: Softros LAN Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/SoftrosLANMessenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/SoftrosLANMessenger
+identifiers:
+- winget: Softros.SoftrosLANMessenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softros/SoftrosLANMessenger
+aliases: []

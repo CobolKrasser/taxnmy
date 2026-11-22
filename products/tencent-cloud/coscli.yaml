@@ -1,0 +1,11 @@
+key: tencent-cloud/coscli
+publisher: tencent-cloud
+name: COSCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/COSCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/COSCLI
+identifiers:
+- winget: Tencent.COSCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/COSCLI
+aliases: []

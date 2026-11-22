@@ -1,0 +1,11 @@
+key: wl-std/wl-downloader
+publisher: wl-std
+name: WL Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wl-std/WLDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wl-std/WLDownloader
+identifiers:
+- winget: wl-std.WLDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wl-std/WLDownloader
+aliases: []

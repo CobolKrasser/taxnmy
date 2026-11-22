@@ -1,0 +1,11 @@
+key: smilegate/stove
+publisher: smilegate
+name: Stove
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smilegate/Stove
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smilegate/Stove
+identifiers:
+- winget: Smilegate.Stove
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smilegate/Stove
+aliases: []

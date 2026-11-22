@@ -1,0 +1,11 @@
+key: seerge/g-helper-prerelease
+publisher: seerge
+name: G-Helper PreRelease
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seerge/g-helper/PreRelease
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seerge/g-helper/PreRelease
+identifiers:
+- winget: seerge.g-helper.PreRelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seerge/g-helper/PreRelease
+aliases: []

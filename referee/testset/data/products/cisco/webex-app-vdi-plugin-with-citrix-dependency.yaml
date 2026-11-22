@@ -1,0 +1,12 @@
+key: cisco/webex-app-vdi-plugin-with-citrix-dependency
+publisher: cisco
+name: Cisco Webex App VDI Plugin (with Citrix dependency)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexVDIPlugin/Citrix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexVDIPlugin/Citrix
+identifiers:
+- winget: Cisco.WebexVDIPlugin.Citrix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexVDIPlugin/Citrix
+aliases:
+- cisco/cisco-webex-app-vdi-plugin-with-citrix-dependency

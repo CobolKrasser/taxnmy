@@ -1,0 +1,12 @@
+key: mcafee/software-removal
+publisher: mcafee
+name: McAfee Software Removal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/McAfee/MCPR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/McAfee/MCPR
+identifiers:
+- winget: McAfee.MCPR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/McAfee/MCPR
+aliases:
+- mcafee/mcafee-software-removal

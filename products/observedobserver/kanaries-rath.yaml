@@ -1,0 +1,11 @@
+key: observedobserver/kanaries-rath
+publisher: observedobserver
+name: Kanaries Rath
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kanaries/Rath
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kanaries/Rath
+identifiers:
+- winget: Kanaries.Rath
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kanaries/Rath
+aliases: []

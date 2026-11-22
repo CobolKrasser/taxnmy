@@ -1,0 +1,11 @@
+key: autodev-team/autodev-desktop
+publisher: autodev-team
+name: AutoDev Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/phodal/AutoDevDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/phodal/AutoDevDesktop
+identifiers:
+- winget: phodal.AutoDevDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/phodal/AutoDevDesktop
+aliases: []

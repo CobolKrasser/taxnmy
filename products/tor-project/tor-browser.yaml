@@ -1,0 +1,11 @@
+key: tor-project/tor-browser
+publisher: tor-project
+name: Tor Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TorProject/TorBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TorProject/TorBrowser
+identifiers:
+- winget: TorProject.TorBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TorProject/TorBrowser
+aliases: []

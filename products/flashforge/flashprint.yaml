@@ -1,0 +1,11 @@
+key: flashforge/flashprint
+publisher: flashforge
+name: FlashPrint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flashforge/FlashPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flashforge/FlashPrint
+identifiers:
+- winget: Flashforge.FlashPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flashforge/FlashPrint
+aliases: []

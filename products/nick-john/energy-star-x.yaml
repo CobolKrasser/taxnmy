@@ -1,0 +1,11 @@
+key: nick-john/energy-star-x
+publisher: nick-john
+name: Energy Star X
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NickJohn/EnergyStarX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NickJohn/EnergyStarX
+identifiers:
+- winget: NickJohn.EnergyStarX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NickJohn/EnergyStarX
+aliases: []

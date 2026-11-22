@@ -1,0 +1,11 @@
+key: task-manager-plus-contributors/task-manager-plus
+publisher: task-manager-plus-contributors
+name: Task Manager+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskManagerPlus/TaskManagerPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskManagerPlus/TaskManagerPlus
+identifiers:
+- winget: TaskManagerPlus.TaskManagerPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskManagerPlus/TaskManagerPlus
+aliases: []

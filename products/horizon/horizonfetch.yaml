@@ -1,0 +1,11 @@
+key: horizon/horizonfetch
+publisher: horizon
+name: horizonfetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Horizon/Horizonfetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Horizon/Horizonfetch
+identifiers:
+- winget: Horizon.Horizonfetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Horizon/Horizonfetch
+aliases: []

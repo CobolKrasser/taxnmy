@@ -1,0 +1,11 @@
+key: globulario/sensei
+publisher: globulario
+name: Sensei
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Globulario/Sensei
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Globulario/Sensei
+identifiers:
+- winget: Globulario.Sensei
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Globulario/Sensei
+aliases: []

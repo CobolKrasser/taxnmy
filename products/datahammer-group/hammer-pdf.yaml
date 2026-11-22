@@ -1,0 +1,11 @@
+key: datahammer-group/hammer-pdf
+publisher: datahammer-group
+name: Hammer PDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataHammer/HammerPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataHammer/HammerPDF
+identifiers:
+- winget: DataHammer.HammerPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataHammer/HammerPDF
+aliases: []

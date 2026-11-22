@@ -1,0 +1,11 @@
+key: denniezorg/steam-dock-extension
+publisher: denniezorg
+name: Steam Dock Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DennieZorg/SteamDockExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DennieZorg/SteamDockExtension
+identifiers:
+- winget: DennieZorg.SteamDockExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DennieZorg/SteamDockExtension
+aliases: []

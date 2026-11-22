@@ -1,0 +1,11 @@
+key: skaarhoj/keybridge
+publisher: skaarhoj
+name: KeyBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skaarhoj/KeyBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skaarhoj/KeyBridge
+identifiers:
+- winget: Skaarhoj.KeyBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skaarhoj/KeyBridge
+aliases: []

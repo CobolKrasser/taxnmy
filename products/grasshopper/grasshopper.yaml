@@ -1,0 +1,11 @@
+key: grasshopper/grasshopper
+publisher: grasshopper
+name: Grasshopper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grasshopper/Grasshopper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grasshopper/Grasshopper
+identifiers:
+- winget: Grasshopper.Grasshopper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grasshopper/Grasshopper
+aliases: []

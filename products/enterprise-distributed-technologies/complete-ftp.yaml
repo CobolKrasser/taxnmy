@@ -1,0 +1,11 @@
+key: enterprise-distributed-technologies/complete-ftp
+publisher: enterprise-distributed-technologies
+name: Complete FTP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnterpriseDT/CompleteFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnterpriseDT/CompleteFTP
+identifiers:
+- winget: EnterpriseDT.CompleteFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnterpriseDT/CompleteFTP
+aliases: []

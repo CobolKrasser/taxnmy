@@ -1,0 +1,11 @@
+key: ams-software/business-card-maker
+publisher: ams-software
+name: Business Card Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/BusinessCardMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/BusinessCardMaker
+identifiers:
+- winget: AMSSoftware.BusinessCardMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/BusinessCardMaker
+aliases: []

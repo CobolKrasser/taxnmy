@@ -1,0 +1,11 @@
+key: easy2convert-software/easy2convert-png-to-dds
+publisher: easy2convert-software
+name: Easy2Convert PNG to DDS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Easy2Convert/png2dds
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Easy2Convert/png2dds
+identifiers:
+- winget: Easy2Convert.png2dds
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Easy2Convert/png2dds
+aliases: []

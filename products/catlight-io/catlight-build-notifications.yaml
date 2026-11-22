@@ -1,0 +1,11 @@
+key: catlight-io/catlight-build-notifications
+publisher: catlight-io
+name: Catlight build notifications
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ramplio/CatLight
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ramplio/CatLight
+identifiers:
+- winget: Ramplio.CatLight
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ramplio/CatLight
+aliases: []

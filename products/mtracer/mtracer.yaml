@@ -1,0 +1,11 @@
+key: mtracer/mtracer
+publisher: mtracer
+name: mtracer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mtracer/mtracer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mtracer/mtracer
+identifiers:
+- winget: mtracer.mtracer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mtracer/mtracer
+aliases: []

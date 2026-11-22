@@ -1,0 +1,11 @@
+key: watfaq-technologies/powersession
+publisher: watfaq-technologies
+name: PowerSession
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Watfaq/PowerSession
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Watfaq/PowerSession
+identifiers:
+- winget: Watfaq.PowerSession
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Watfaq/PowerSession
+aliases: []

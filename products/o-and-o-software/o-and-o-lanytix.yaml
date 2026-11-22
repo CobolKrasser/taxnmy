@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-lanytix
+publisher: o-and-o-software
+name: O&O Lanytix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/Lanytix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/Lanytix
+identifiers:
+- winget: OO-Software.Lanytix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/Lanytix
+aliases: []

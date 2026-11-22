@@ -1,0 +1,11 @@
+key: olvid/olvid
+publisher: olvid
+name: Olvid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Olvid/Olvid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Olvid/Olvid
+identifiers:
+- winget: Olvid.Olvid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Olvid/Olvid
+aliases: []

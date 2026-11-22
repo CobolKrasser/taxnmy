@@ -1,0 +1,11 @@
+key: co2lab/polvo
+publisher: co2lab
+name: Polvo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2lab/Polvo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2lab/Polvo
+identifiers:
+- winget: co2lab.Polvo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2lab/Polvo
+aliases: []

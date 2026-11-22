@@ -1,0 +1,12 @@
+key: deltaforge/cli
+publisher: deltaforge
+name: DeltaForge CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/CLI
+identifiers:
+- winget: DeltaForge.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/CLI
+aliases:
+- deltaforge/deltaforge-cli

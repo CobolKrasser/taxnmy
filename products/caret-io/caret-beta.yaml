@@ -1,0 +1,11 @@
+key: caret-io/caret-beta
+publisher: caret-io
+name: Caret Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caret/CaretBeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caret/CaretBeta
+identifiers:
+- winget: Caret.CaretBeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caret/CaretBeta
+aliases: []

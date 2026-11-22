@@ -1,0 +1,11 @@
+key: nirsoft/uninstallview
+publisher: nirsoft
+name: UninstallView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/UninstallView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/UninstallView
+identifiers:
+- winget: NirSoft.UninstallView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/UninstallView
+aliases: []

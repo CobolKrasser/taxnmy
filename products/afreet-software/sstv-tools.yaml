@@ -1,0 +1,11 @@
+key: afreet-software/sstv-tools
+publisher: afreet-software
+name: SSTV Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dxatlas/SSTVTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dxatlas/SSTVTools
+identifiers:
+- winget: dxatlas.SSTVTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dxatlas/SSTVTools
+aliases: []

@@ -1,0 +1,12 @@
+key: oomol/studio
+publisher: oomol
+name: OOMOL Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OOMOL/OOMOLStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OOMOL/OOMOLStudio
+identifiers:
+- winget: OOMOL.OOMOLStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OOMOL/OOMOLStudio
+aliases:
+- oomol/oomol-studio

@@ -1,0 +1,11 @@
+key: stephen-sherratt/alice
+publisher: stephen-sherratt
+name: Alice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCaml/Alice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCaml/Alice
+identifiers:
+- winget: OCaml.Alice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCaml/Alice
+aliases: []

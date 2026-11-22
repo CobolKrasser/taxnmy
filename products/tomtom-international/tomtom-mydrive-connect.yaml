@@ -1,0 +1,11 @@
+key: tomtom-international/tomtom-mydrive-connect
+publisher: tomtom-international
+name: TomTom MyDrive Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomTom/MyDriveConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomTom/MyDriveConnect
+identifiers:
+- winget: TomTom.MyDriveConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomTom/MyDriveConnect
+aliases: []

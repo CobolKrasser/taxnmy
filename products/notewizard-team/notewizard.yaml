@@ -1,0 +1,11 @@
+key: notewizard-team/notewizard
+publisher: notewizard-team
+name: NoteWizard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jetyu/NoteWizard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jetyu/NoteWizard
+identifiers:
+- winget: jetyu.NoteWizard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jetyu/NoteWizard
+aliases: []

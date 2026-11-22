@@ -1,0 +1,12 @@
+key: nomachine/cloud-server
+publisher: nomachine
+name: NoMachine Cloud Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/CloudServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/CloudServer
+identifiers:
+- winget: NoMachine.NoMachine.CloudServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/CloudServer
+aliases:
+- nomachine/nomachine-cloud-server

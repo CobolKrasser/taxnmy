@@ -1,0 +1,11 @@
+key: topaz-labs/topaz-sharpen-ai
+publisher: topaz-labs
+name: Topaz Sharpen AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazSharpenAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazSharpenAI
+identifiers:
+- winget: TopazLabs.TopazSharpenAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazSharpenAI
+aliases: []

@@ -1,0 +1,11 @@
+key: learning-machines/materialcraft
+publisher: learning-machines
+name: MaterialCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/MaterialCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/MaterialCraft
+identifiers:
+- winget: ArtCraft.MaterialCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/MaterialCraft
+aliases: []

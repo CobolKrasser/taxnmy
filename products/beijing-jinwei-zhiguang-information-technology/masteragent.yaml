@@ -1,0 +1,11 @@
+key: beijing-jinwei-zhiguang-information-technology/masteragent
+publisher: beijing-jinwei-zhiguang-information-technology
+name: MasterAgent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JinweiZhiguang/MasterAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JinweiZhiguang/MasterAgent
+identifiers:
+- winget: JinweiZhiguang.MasterAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JinweiZhiguang/MasterAgent
+aliases: []

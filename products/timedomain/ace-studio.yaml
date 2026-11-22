@@ -1,0 +1,11 @@
+key: timedomain/ace-studio
+publisher: timedomain
+name: ACE Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACEStudio/ACEStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACEStudio/ACEStudio
+identifiers:
+- winget: ACEStudio.ACEStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACEStudio/ACEStudio
+aliases: []

@@ -1,0 +1,12 @@
+key: ricoh/theta
+publisher: ricoh
+name: RICOH THETA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ricoh/RicohTheta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ricoh/RicohTheta
+identifiers:
+- winget: Ricoh.RicohTheta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ricoh/RicohTheta
+aliases:
+- ricoh/ricoh-theta

@@ -1,0 +1,11 @@
+key: boeing/config-file-validator
+publisher: boeing
+name: Config File Validator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boeing/config-file-validator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boeing/config-file-validator
+identifiers:
+- winget: Boeing.config-file-validator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boeing/config-file-validator
+aliases: []

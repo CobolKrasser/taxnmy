@@ -1,0 +1,11 @@
+key: greatis-software/iqiyi-remover
+publisher: greatis-software
+name: IQIYI Remover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/IQIYIRemover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/IQIYIRemover
+identifiers:
+- winget: Greatis.IQIYIRemover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/IQIYIRemover
+aliases: []

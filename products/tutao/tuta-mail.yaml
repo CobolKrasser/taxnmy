@@ -1,0 +1,11 @@
+key: tutao/tuta-mail
+publisher: tutao
+name: Tuta Mail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tutanota/Tutanota
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tutanota/Tutanota
+identifiers:
+- winget: Tutanota.Tutanota
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tutanota/Tutanota
+aliases: []

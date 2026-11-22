@@ -1,0 +1,11 @@
+key: restic/restic
+publisher: restic
+name: restic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/restic/restic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/restic/restic
+identifiers:
+- winget: restic.restic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/restic/restic
+aliases: []

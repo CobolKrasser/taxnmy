@@ -1,0 +1,11 @@
+key: pirinel/gitblade
+publisher: pirinel
+name: GitBlade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pirinel/GitBlade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pirinel/GitBlade
+identifiers:
+- winget: Pirinel.GitBlade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pirinel/GitBlade
+aliases: []

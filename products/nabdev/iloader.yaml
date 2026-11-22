@@ -1,0 +1,11 @@
+key: nabdev/iloader
+publisher: nabdev
+name: iloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nabdev/iloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nabdev/iloader
+identifiers:
+- winget: nabdev.iloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nabdev/iloader
+aliases: []

@@ -1,0 +1,13 @@
+key: easyclaw-team/easyclaw
+publisher: easyclaw-team
+name: EasyClaw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lingbao/EasyClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lingbao/EasyClaw
+identifiers:
+- winget: Lingbao.EasyClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lingbao/EasyClaw
+- winget: Lingbao.EasyClaw.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lingbao/EasyClaw/CN
+aliases: []

@@ -1,0 +1,11 @@
+key: ystyle/kaf-cli
+publisher: ystyle
+name: kaf-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YSTYLE/kaf-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YSTYLE/kaf-cli
+identifiers:
+- winget: YSTYLE.kaf-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YSTYLE/kaf-cli
+aliases: []

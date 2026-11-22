@@ -1,0 +1,11 @@
+key: david-peter/fd
+publisher: david-peter
+name: fd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/fd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/fd
+identifiers:
+- winget: sharkdp.fd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/fd
+aliases: []

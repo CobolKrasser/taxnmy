@@ -1,0 +1,11 @@
+key: sergey-karpushin/pgptool
+publisher: sergey-karpushin
+name: PGPTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PGPTool/PGPTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PGPTool/PGPTool
+identifiers:
+- winget: PGPTool.PGPTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PGPTool/PGPTool
+aliases: []

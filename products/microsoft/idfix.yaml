@@ -1,0 +1,11 @@
+key: microsoft/idfix
+publisher: microsoft
+name: IdFix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IdFix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IdFix
+identifiers:
+- winget: Microsoft.IdFix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IdFix
+aliases: []

@@ -1,0 +1,11 @@
+key: dascanard/radioss
+publisher: dascanard
+name: Radioss
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DasCanard/Radioss
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DasCanard/Radioss
+identifiers:
+- winget: DasCanard.Radioss
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DasCanard/Radioss
+aliases: []

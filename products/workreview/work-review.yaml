@@ -1,0 +1,11 @@
+key: workreview/work-review
+publisher: workreview
+name: Work Review
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wm94i/WorkReview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wm94i/WorkReview
+identifiers:
+- winget: wm94i.WorkReview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wm94i/WorkReview
+aliases: []

@@ -1,0 +1,11 @@
+key: mod-0-dev/devprofile-cli
+publisher: mod-0-dev
+name: DevProfile CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mod-0-dev/DevProfile/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mod-0-dev/DevProfile/CLI
+identifiers:
+- winget: mod-0-dev.DevProfile.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mod-0-dev/DevProfile/CLI
+aliases: []

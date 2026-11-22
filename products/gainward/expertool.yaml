@@ -1,0 +1,11 @@
+key: gainward/expertool
+publisher: gainward
+name: EXPERTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gainward/EXPERTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gainward/EXPERTool
+identifiers:
+- winget: Gainward.EXPERTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gainward/EXPERTool
+aliases: []

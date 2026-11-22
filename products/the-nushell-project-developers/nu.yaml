@@ -1,0 +1,11 @@
+key: the-nushell-project-developers/nu
+publisher: the-nushell-project-developers
+name: nu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nushell/Nushell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nushell/Nushell
+identifiers:
+- winget: Nushell.Nushell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nushell/Nushell
+aliases: []

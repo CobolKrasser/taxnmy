@@ -1,0 +1,12 @@
+key: microsoft/azure-quick-review
+publisher: microsoft
+name: Microsoft Azure Quick Review
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/QuickReview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/QuickReview
+identifiers:
+- winget: Microsoft.Azure.QuickReview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/QuickReview
+aliases:
+- microsoft/microsoft-azure-quick-review

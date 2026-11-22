@@ -1,0 +1,11 @@
+key: thunderhead-technologies/wxsolution
+publisher: thunderhead-technologies
+name: WxSolution
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxSolution
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxSolution
+identifiers:
+- winget: Thunderhead.WxSolution
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxSolution
+aliases: []

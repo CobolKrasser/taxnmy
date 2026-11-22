@@ -1,0 +1,11 @@
+key: local/multi-cli-studio
+publisher: local
+name: Multi CLI Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Austin-Patrician/MultiCLIStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Austin-Patrician/MultiCLIStudio
+identifiers:
+- winget: Austin-Patrician.MultiCLIStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Austin-Patrician/MultiCLIStudio
+aliases: []

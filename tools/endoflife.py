@@ -8,7 +8,8 @@ A page of a category in `lines` (referee/endoflife.yaml) describes a line of dev
 (a row) is a product of its own (TP3). Every other page is one product. Each page and each model gets
 one outcome with a reason (TR9):
 
-    taken-in   it becomes a product, or part of one (rows with the same key are one product: TP3)
+    taken-in   it becomes a product, or part of one (rows with the same key are one product: TP3); a
+               model the filler no longer supports comes in archived (TP10), with the page as source
     in-tax     TAX has it: a source of a product names the page, or a product has its key or its name
     apart      set apart, with the reason: the list names no publisher for the page, the page is out
                of this round, a name outside the Latin script, or an error of the lint
@@ -76,12 +77,19 @@ class Product:
     identifiers: list = field(default_factory=list)
     members: list = field(default_factory=list)
 
+    @property
+    def ended(self) -> bool:
+        """A model of which every row says it is no longer supported (TP10, TAX-57: archived on intake)."""
+        return bool(self.members) and all(m.maintained is False for m in self.members)
+
     def text(self) -> str:
         url = PAGE.format(slug=self.page)
         data = {"key": self.key, "publisher": self.publisher, "name": self.name, "kind": self.kind,
                 "source": url, "versions": {"source": url},
                 "identifiers": [{k: v, "source": url} for k, v in self.identifiers],
                 "aliases": [a for a in [keyrule.long_form(self.key, self.name)] if a]}  # TAX-54
+        if self.ended:
+            data["archived"] = {"source": url}  # TP10: the filler says the model gets no more support
         return yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=200)
 
 
@@ -285,19 +293,23 @@ def report(items: list[Item], products: dict, publishers: dict, dump: dict, data
     out += [f"| {o} | {by[o]:,} |" for o in ("taken-in", "in-tax", "apart")]
     per: dict[str, Counter] = defaultdict(Counter)
     maintained: Counter = Counter()
+    ended: Counter = Counter()
     category = {p["name"]: p.get("category", "") for p in dump["result"]}
     for i in items:
         if category.get(i.page) in lines_:
             per[i.page][i.outcome] += 1
             if i.outcome == "taken-in" and i.maintained:
                 maintained[i.page] += 1
+            if i.outcome == "taken-in" and products.get(i.product) and products[i.product].ended:
+                ended[i.page] += 1
     out += ["", "Per line of devices (a model is a product, TP3):", "",
-            "| page | models | taken-in | of which still supported | in-tax | apart |", "| --- | ---: | ---: | ---: | ---: | ---: |"]
+            "| page | models | taken-in | of which still supported | of which archived | in-tax | apart |",
+            "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
     for page in sorted(per):
         c = per[page]
-        out.append(f"| {page} | {sum(c.values())} | {c['taken-in']} | {maintained[page]} | {c['in-tax']} | {c['apart']} |")
+        out.append(f"| {page} | {sum(c.values())} | {c['taken-in']} | {maintained[page]} | {ended[page]} | {c['in-tax']} | {c['apart']} |")
     t = sum(per.values(), Counter())
-    out.append(f"| **all** | {sum(t.values())} | {t['taken-in']} | {sum(maintained.values())} | {t['in-tax']} | {t['apart']} |")
+    out.append(f"| **all** | {sum(t.values())} | {t['taken-in']} | {sum(maintained.values())} | {sum(ended.values())} | {t['in-tax']} | {t['apart']} |")
     other = [i for i in items if category.get(i.page) not in lines_]
     c = Counter(i.outcome for i in other)
     out += ["", f"Other pages (one product each): {len(other)}; taken-in {c['taken-in']}, in-tax {c['in-tax']}, "

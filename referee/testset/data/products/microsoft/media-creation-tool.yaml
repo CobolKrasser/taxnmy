@@ -1,0 +1,11 @@
+key: microsoft/media-creation-tool
+publisher: microsoft
+name: Media Creation Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MediaCreationTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MediaCreationTool
+identifiers:
+- winget: Microsoft.MediaCreationTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MediaCreationTool
+aliases: []

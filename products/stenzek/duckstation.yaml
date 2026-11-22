@@ -1,0 +1,11 @@
+key: stenzek/duckstation
+publisher: stenzek
+name: DuckStation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stenzek/DuckStation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stenzek/DuckStation
+identifiers:
+- winget: Stenzek.DuckStation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stenzek/DuckStation
+aliases: []

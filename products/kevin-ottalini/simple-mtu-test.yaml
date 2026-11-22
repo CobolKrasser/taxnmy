@@ -1,0 +1,11 @@
+key: kevin-ottalini/simple-mtu-test
+publisher: kevin-ottalini
+name: Simple MTU Test
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KevinOttalini/SimpleMTUTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KevinOttalini/SimpleMTUTest
+identifiers:
+- winget: KevinOttalini.SimpleMTUTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KevinOttalini/SimpleMTUTest
+aliases: []

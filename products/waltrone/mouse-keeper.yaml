@@ -1,0 +1,12 @@
+key: waltrone/mouse-keeper
+publisher: waltrone
+name: WALTRONE Mouse Keeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WALTRONE/MouseKeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WALTRONE/MouseKeeper
+identifiers:
+- winget: WALTRONE.MouseKeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WALTRONE/MouseKeeper
+aliases:
+- waltrone/waltrone-mouse-keeper

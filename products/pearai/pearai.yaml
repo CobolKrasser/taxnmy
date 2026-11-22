@@ -1,0 +1,11 @@
+key: pearai/pearai
+publisher: pearai
+name: PearAI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PearAI/PearAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PearAI/PearAI
+identifiers:
+- winget: PearAI.PearAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PearAI/PearAI
+aliases: []

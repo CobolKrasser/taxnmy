@@ -1,0 +1,11 @@
+key: imventa-ingenieros/ductzone-airzone-duct-calculation
+publisher: imventa-ingenieros
+name: 'DuctZone: Airzone duct calculation'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airzone/Ductzone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airzone/Ductzone
+identifiers:
+- winget: Airzone.Ductzone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airzone/Ductzone
+aliases: []

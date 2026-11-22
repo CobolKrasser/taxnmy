@@ -1,0 +1,11 @@
+key: carrier/block-load
+publisher: carrier
+name: Block Load
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/BlockLoad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/BlockLoad
+identifiers:
+- winget: Carrier.BlockLoad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/BlockLoad
+aliases: []

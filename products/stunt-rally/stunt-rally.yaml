@@ -1,0 +1,11 @@
+key: stunt-rally/stunt-rally
+publisher: stunt-rally
+name: Stunt Rally
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StuntRally/StuntRally
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StuntRally/StuntRally
+identifiers:
+- winget: StuntRally.StuntRally
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StuntRally/StuntRally
+aliases: []

@@ -1,0 +1,11 @@
+key: proftpd/proftpd
+publisher: proftpd
+name: ProFTPD
+kind: software
+source: https://endoflife.date/proftpd
+versions:
+  source: https://endoflife.date/proftpd
+identifiers:
+- cpe: cpe:2.3:a:proftpd:proftpd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/proftpd.md
+aliases: []

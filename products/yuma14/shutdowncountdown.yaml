@@ -1,0 +1,11 @@
+key: yuma14/shutdowncountdown
+publisher: yuma14
+name: ShutdownCountdown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yuma14/ShutdownCountdown
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yuma14/ShutdownCountdown
+identifiers:
+- winget: yuma14.ShutdownCountdown
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yuma14/ShutdownCountdown
+aliases: []

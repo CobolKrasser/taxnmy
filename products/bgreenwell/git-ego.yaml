@@ -1,0 +1,11 @@
+key: bgreenwell/git-ego
+publisher: bgreenwell
+name: git-ego
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bgreenwell/GitEgo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bgreenwell/GitEgo
+identifiers:
+- winget: bgreenwell.GitEgo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bgreenwell/GitEgo
+aliases: []

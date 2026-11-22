@@ -1,0 +1,11 @@
+key: one-ware/oneware-studio
+publisher: one-ware
+name: OneWare Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneWare/OneWareStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneWare/OneWareStudio
+identifiers:
+- winget: OneWare.OneWareStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneWare/OneWareStudio
+aliases: []

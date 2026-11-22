@@ -1,0 +1,11 @@
+key: yaps/yaps
+publisher: yaps
+name: Yaps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yaps/Yaps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yaps/Yaps
+identifiers:
+- winget: Yaps.Yaps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yaps/Yaps
+aliases: []

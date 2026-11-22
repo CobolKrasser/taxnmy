@@ -1,0 +1,13 @@
+key: winsider-seminars-and-solutions/system-informer
+publisher: winsider-seminars-and-solutions
+name: System Informer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinsiderSS/SystemInformer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinsiderSS/SystemInformer
+identifiers:
+- winget: WinsiderSS.SystemInformer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinsiderSS/SystemInformer
+- winget: WinsiderSS.SystemInformer.Canary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinsiderSS/SystemInformer/Canary
+aliases: []

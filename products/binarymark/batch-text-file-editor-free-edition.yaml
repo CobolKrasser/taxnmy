@@ -1,0 +1,11 @@
+key: binarymark/batch-text-file-editor-free-edition
+publisher: binarymark
+name: Batch Text File Editor Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchTextFileEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchTextFileEditor
+identifiers:
+- winget: BinaryMark.BatchTextFileEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchTextFileEditor
+aliases: []

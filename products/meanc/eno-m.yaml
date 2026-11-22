@@ -1,0 +1,11 @@
+key: meanc/eno-m
+publisher: meanc
+name: ENO-M
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cteros/ENO-M
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cteros/ENO-M
+identifiers:
+- winget: Cteros.ENO-M
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cteros/ENO-M
+aliases: []

@@ -1,0 +1,12 @@
+key: mediahuman/lyrics-finder
+publisher: mediahuman
+name: MediaHuman Lyrics Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/LyricsFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/LyricsFinder
+identifiers:
+- winget: MediaHuman.LyricsFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/LyricsFinder
+aliases:
+- mediahuman/mediahuman-lyrics-finder

@@ -1,0 +1,11 @@
+key: quantumauth-io/quantumauth
+publisher: quantumauth-io
+name: QuantumAuth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quantumauth-io/QuantumAuth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quantumauth-io/QuantumAuth
+identifiers:
+- winget: quantumauth-io.QuantumAuth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quantumauth-io/QuantumAuth
+aliases: []

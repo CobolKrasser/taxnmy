@@ -1,0 +1,11 @@
+key: cardexchange-solutions/cardexchange-pricetag
+publisher: cardexchange-solutions
+name: CardExchange PriceTag
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/PriceTag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/PriceTag
+identifiers:
+- winget: CardExchange.PriceTag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardExchange/PriceTag
+aliases: []

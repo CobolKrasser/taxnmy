@@ -1,0 +1,11 @@
+key: mal/one-wallhaven
+publisher: mal
+name: one-wallhaven
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaLuns/wallhaven-electron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaLuns/wallhaven-electron
+identifiers:
+- winget: MaLuns.wallhaven-electron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaLuns/wallhaven-electron
+aliases: []

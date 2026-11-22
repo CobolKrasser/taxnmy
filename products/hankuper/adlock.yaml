@@ -1,0 +1,11 @@
+key: hankuper/adlock
+publisher: hankuper
+name: AdLock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdLock/AdLock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdLock/AdLock
+identifiers:
+- winget: AdLock.AdLock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdLock/AdLock
+aliases: []

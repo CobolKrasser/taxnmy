@@ -1,0 +1,11 @@
+key: romanitho/winget-autoupdate
+publisher: romanitho
+name: Winget-AutoUpdate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Romanitho/Winget-AutoUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Romanitho/Winget-AutoUpdate
+identifiers:
+- winget: Romanitho.Winget-AutoUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Romanitho/Winget-AutoUpdate
+aliases: []

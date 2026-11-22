@@ -1,0 +1,12 @@
+key: cyberhive/connect
+publisher: cyberhive
+name: CyberHive Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberHive/Connect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberHive/Connect
+identifiers:
+- winget: CyberHive.Connect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberHive/Connect
+aliases:
+- cyberhive/cyberhive-connect

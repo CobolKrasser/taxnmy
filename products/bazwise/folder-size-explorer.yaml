@@ -1,0 +1,11 @@
+key: bazwise/folder-size-explorer
+publisher: bazwise
+name: Folder Size Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazwise/FolderSizeExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazwise/FolderSizeExplorer
+identifiers:
+- winget: Bazwise.FolderSizeExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazwise/FolderSizeExplorer
+aliases: []

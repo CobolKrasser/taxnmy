@@ -1,0 +1,11 @@
+key: newlooper-com/virtualspace
+publisher: newlooper-com
+name: VirtualSpace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewLooper/VirtualSpace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewLooper/VirtualSpace
+identifiers:
+- winget: NewLooper.VirtualSpace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewLooper/VirtualSpace
+aliases: []

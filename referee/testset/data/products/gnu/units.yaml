@@ -1,0 +1,12 @@
+key: gnu/units
+publisher: gnu
+name: GNU Units
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Units
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Units
+identifiers:
+- winget: GNU.Units
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Units
+aliases:
+- gnu/gnu-units

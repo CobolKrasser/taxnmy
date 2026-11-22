@@ -1,0 +1,11 @@
+key: lgdd/lfr-cli
+publisher: lgdd
+name: lfr-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lgdd/lfr-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lgdd/lfr-cli
+identifiers:
+- winget: lgdd.lfr-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lgdd/lfr-cli
+aliases: []

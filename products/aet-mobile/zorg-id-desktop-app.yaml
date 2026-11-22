@@ -1,0 +1,11 @@
+key: aet-mobile/zorg-id-desktop-app
+publisher: aet-mobile
+name: ZORG-ID Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETMobileBV/ZORG-IDDesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETMobileBV/ZORG-IDDesktopApp
+identifiers:
+- winget: AETMobileBV.ZORG-IDDesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AETMobileBV/ZORG-IDDesktopApp
+aliases: []

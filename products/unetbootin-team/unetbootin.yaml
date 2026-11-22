@@ -1,0 +1,11 @@
+key: unetbootin-team/unetbootin
+publisher: unetbootin-team
+name: unetbootin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unetbootin/unetbootin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unetbootin/unetbootin
+identifiers:
+- winget: unetbootin.unetbootin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unetbootin/unetbootin
+aliases: []

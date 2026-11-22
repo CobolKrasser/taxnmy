@@ -1,0 +1,11 @@
+key: openmw-org/openmw
+publisher: openmw-org
+name: OpenMW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMW/OpenMW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMW/OpenMW
+identifiers:
+- winget: OpenMW.OpenMW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMW/OpenMW
+aliases: []

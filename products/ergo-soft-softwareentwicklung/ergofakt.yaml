@@ -1,0 +1,11 @@
+key: ergo-soft-softwareentwicklung/ergofakt
+publisher: ergo-soft-softwareentwicklung
+name: ErgoFAKT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ergosoft/ErgoFAKT_V5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ergosoft/ErgoFAKT_V5
+identifiers:
+- winget: Ergosoft.ErgoFAKT_V5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ergosoft/ErgoFAKT_V5
+aliases: []

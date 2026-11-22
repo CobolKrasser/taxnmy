@@ -1,0 +1,11 @@
+key: the-inference-grid/gridprov
+publisher: the-inference-grid
+name: gridprov
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheInferenceGrid/gridprov
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheInferenceGrid/gridprov
+identifiers:
+- winget: TheInferenceGrid.gridprov
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheInferenceGrid/gridprov
+aliases: []

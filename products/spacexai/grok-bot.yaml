@@ -1,0 +1,11 @@
+key: spacexai/grok-bot
+publisher: spacexai
+name: Grok Bot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xAI/GrokBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xAI/GrokBot
+identifiers:
+- winget: xAI.GrokBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xAI/GrokBot
+aliases: []

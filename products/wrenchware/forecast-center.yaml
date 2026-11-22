@@ -1,0 +1,11 @@
+key: wrenchware/forecast-center
+publisher: wrenchware
+name: Forecast Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wrenchware/ForecastCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wrenchware/ForecastCenter
+identifiers:
+- winget: Wrenchware.ForecastCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wrenchware/ForecastCenter
+aliases: []

@@ -1,0 +1,11 @@
+key: neverball/neverball
+publisher: neverball
+name: Neverball
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neverball/Neverball
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neverball/Neverball
+identifiers:
+- winget: Neverball.Neverball
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neverball/Neverball
+aliases: []

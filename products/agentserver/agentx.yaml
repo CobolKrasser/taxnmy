@@ -1,0 +1,11 @@
+key: agentserver/agentx
+publisher: agentserver
+name: agentx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agentserver/AgentX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agentserver/AgentX
+identifiers:
+- winget: Agentserver.AgentX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agentserver/AgentX
+aliases: []

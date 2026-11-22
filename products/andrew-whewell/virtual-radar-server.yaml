@@ -1,0 +1,11 @@
+key: andrew-whewell/virtual-radar-server
+publisher: andrew-whewell
+name: Virtual Radar Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewWhewell/VirtualRadarServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewWhewell/VirtualRadarServer
+identifiers:
+- winget: AndrewWhewell.VirtualRadarServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndrewWhewell/VirtualRadarServer
+aliases: []

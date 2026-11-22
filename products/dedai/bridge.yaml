@@ -1,0 +1,12 @@
+key: dedai/bridge
+publisher: dedai
+name: DedAI Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DedAI/Bridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DedAI/Bridge
+identifiers:
+- winget: DedAI.Bridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DedAI/Bridge
+aliases:
+- dedai/dedai-bridge

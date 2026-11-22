@@ -1,0 +1,11 @@
+key: groovg/claude-code-usage-taskbar
+publisher: groovg
+name: Claude Code Usage Taskbar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/groovg/ClaudeCodeUsageTaskbar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/groovg/ClaudeCodeUsageTaskbar
+identifiers:
+- winget: groovg.ClaudeCodeUsageTaskbar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/groovg/ClaudeCodeUsageTaskbar
+aliases: []

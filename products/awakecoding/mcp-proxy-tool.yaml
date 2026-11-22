@@ -1,0 +1,11 @@
+key: awakecoding/mcp-proxy-tool
+publisher: awakecoding
+name: MCP Proxy Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awakecoding/mcp-proxy-tool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awakecoding/mcp-proxy-tool
+identifiers:
+- winget: awakecoding.mcp-proxy-tool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awakecoding/mcp-proxy-tool
+aliases: []

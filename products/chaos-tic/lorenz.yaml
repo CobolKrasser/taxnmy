@@ -1,0 +1,11 @@
+key: chaos-tic/lorenz
+publisher: chaos-tic
+name: Lorenz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChaosTic/Lorenz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChaosTic/Lorenz
+identifiers:
+- winget: ChaosTic.Lorenz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChaosTic/Lorenz
+aliases: []

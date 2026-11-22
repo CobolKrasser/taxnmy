@@ -1,0 +1,11 @@
+key: kevinbralten/universal-modbus-diagnostic-tool
+publisher: kevinbralten
+name: Universal Modbus Diagnostic Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KevinBralten/UMDT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KevinBralten/UMDT
+identifiers:
+- winget: KevinBralten.UMDT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KevinBralten/UMDT
+aliases: []

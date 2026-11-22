@@ -1,0 +1,11 @@
+key: ian-walton/jellyfin-mpv-shim
+publisher: ian-walton
+name: Jellyfin MPV Shim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IanWalton/JellyfinMPVShim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IanWalton/JellyfinMPVShim
+identifiers:
+- winget: IanWalton.JellyfinMPVShim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IanWalton/JellyfinMPVShim
+aliases: []

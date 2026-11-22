@@ -1,0 +1,11 @@
+key: shachar-liberman/wiibalancewalker
+publisher: shachar-liberman
+name: WiiBalanceWalker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lshachar/WiiBalanceWalker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lshachar/WiiBalanceWalker
+identifiers:
+- winget: lshachar.WiiBalanceWalker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lshachar/WiiBalanceWalker
+aliases: []

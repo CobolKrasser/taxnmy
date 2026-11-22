@@ -1,0 +1,11 @@
+key: microsoft/remote-iteration-endpoint
+publisher: microsoft
+name: Remote Iteration Endpoint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/RemoteIterationEndpoint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/RemoteIterationEndpoint
+identifiers:
+- winget: Microsoft.Gaming.RemoteIterationEndpoint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/RemoteIterationEndpoint
+aliases: []

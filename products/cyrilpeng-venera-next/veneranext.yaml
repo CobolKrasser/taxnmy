@@ -1,0 +1,11 @@
+key: cyrilpeng-venera-next/veneranext
+publisher: cyrilpeng-venera-next
+name: VeneraNext
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyrilPeng/VeneraNext
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyrilPeng/VeneraNext
+identifiers:
+- winget: CyrilPeng.VeneraNext
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyrilPeng/VeneraNext
+aliases: []

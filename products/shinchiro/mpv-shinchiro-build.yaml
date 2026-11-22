@@ -1,0 +1,11 @@
+key: shinchiro/mpv-shinchiro-build
+publisher: shinchiro
+name: mpv (shinchiro build)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shinchiro/mpv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shinchiro/mpv
+identifiers:
+- winget: shinchiro.mpv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shinchiro/mpv
+aliases: []

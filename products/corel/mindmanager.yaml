@@ -1,0 +1,15 @@
+key: corel/mindmanager
+publisher: corel
+name: MindManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/MindManager/23
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/MindManager/23
+identifiers:
+- winget: Corel.MindManager.23
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/MindManager/23
+- winget: Corel.MindManager.24
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/MindManager/24
+- winget: Corel.MindManager.25
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/MindManager/25
+aliases: []

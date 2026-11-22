@@ -1,0 +1,11 @@
+key: samsung/smart-view
+publisher: samsung
+name: Smart View
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/SmartView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/SmartView
+identifiers:
+- winget: Samsung.SmartView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/SmartView
+aliases: []

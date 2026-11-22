@@ -1,0 +1,11 @@
+key: mscststs-sharp-null/lanservice
+publisher: mscststs-sharp-null
+name: LANService
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mscststs/LANService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mscststs/LANService
+identifiers:
+- winget: mscststs.LANService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mscststs/LANService
+aliases: []

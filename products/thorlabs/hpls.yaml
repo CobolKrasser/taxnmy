@@ -1,0 +1,11 @@
+key: thorlabs/hpls
+publisher: thorlabs
+name: HPLS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/HPLS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/HPLS
+identifiers:
+- winget: Thorlabs.HPLS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/HPLS
+aliases: []

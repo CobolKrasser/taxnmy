@@ -1,0 +1,11 @@
+key: danfoss/tt-service-monitoring-tools
+publisher: danfoss
+name: TT Service Monitoring Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/TTServiceMonitoringTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/TTServiceMonitoringTools
+identifiers:
+- winget: Danfoss.TTServiceMonitoringTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/TTServiceMonitoringTools
+aliases: []

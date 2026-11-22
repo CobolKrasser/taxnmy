@@ -1,0 +1,11 @@
+key: brigham-and-women-s-hospital/whonet-automation-tool
+publisher: brigham-and-women-s-hospital
+name: WHONET Automation Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/AutomationTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/AutomationTool
+identifiers:
+- winget: WHONET.AutomationTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/AutomationTool
+aliases: []

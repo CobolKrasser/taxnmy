@@ -1,0 +1,11 @@
+key: caelum/openasr-desktop
+publisher: caelum
+name: OpenASR Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caelum/OpenASRDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caelum/OpenASRDesktop
+identifiers:
+- winget: Caelum.OpenASRDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caelum/OpenASRDesktop
+aliases: []

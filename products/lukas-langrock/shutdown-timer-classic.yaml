@@ -1,0 +1,11 @@
+key: lukas-langrock/shutdown-timer-classic
+publisher: lukas-langrock
+name: Shutdown Timer Classic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LukasLangrock/ShutdownTimerClassic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LukasLangrock/ShutdownTimerClassic
+identifiers:
+- winget: LukasLangrock.ShutdownTimerClassic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LukasLangrock/ShutdownTimerClassic
+aliases: []

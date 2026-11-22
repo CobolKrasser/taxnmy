@@ -1,0 +1,11 @@
+key: n0-computer/sendme
+publisher: n0-computer
+name: Sendme
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/n0-computer/sendme
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/n0-computer/sendme
+identifiers:
+- winget: n0-computer.sendme
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/n0-computer/sendme
+aliases: []

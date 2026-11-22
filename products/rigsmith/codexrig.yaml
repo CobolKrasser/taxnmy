@@ -1,0 +1,11 @@
+key: rigsmith/codexrig
+publisher: rigsmith
+name: CodexRig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/CodexRig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/CodexRig
+identifiers:
+- winget: RigSmith.CodexRig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/CodexRig
+aliases: []

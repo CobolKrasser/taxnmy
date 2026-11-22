@@ -1,0 +1,11 @@
+key: cornell-university/raven-expedition
+publisher: cornell-university
+name: Raven Expedition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenExpedition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenExpedition
+identifiers:
+- winget: CornellLabOfOrnithology.RavenExpedition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenExpedition
+aliases: []

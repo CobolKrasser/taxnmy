@@ -1,0 +1,11 @@
+key: gearup-portal/stardesk
+publisher: gearup-portal
+name: StarDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardesk/Stardesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardesk/Stardesk
+identifiers:
+- winget: Stardesk.Stardesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardesk/Stardesk
+aliases: []

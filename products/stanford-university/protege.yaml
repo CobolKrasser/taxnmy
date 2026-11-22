@@ -1,0 +1,11 @@
+key: stanford-university/protege
+publisher: stanford-university
+name: Protégé
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stanford/Protege
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stanford/Protege
+identifiers:
+- winget: Stanford.Protege
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stanford/Protege
+aliases: []

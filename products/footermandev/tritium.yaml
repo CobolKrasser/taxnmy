@@ -1,0 +1,11 @@
+key: footermandev/tritium
+publisher: footermandev
+name: Tritium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TritiumLauncher/Tritium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TritiumLauncher/Tritium
+identifiers:
+- winget: TritiumLauncher.Tritium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TritiumLauncher/Tritium
+aliases: []

@@ -1,0 +1,11 @@
+key: matchmycolor/colibri-beta
+publisher: matchmycolor
+name: Colibri Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/matchmycolor/ColibriBeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/matchmycolor/ColibriBeta
+identifiers:
+- winget: matchmycolor.ColibriBeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/matchmycolor/ColibriBeta
+aliases: []

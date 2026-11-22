@@ -1,0 +1,11 @@
+key: srift/srift
+publisher: srift
+name: SRIFT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SRIFT/Srift
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SRIFT/Srift
+identifiers:
+- winget: SRIFT.Srift
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SRIFT/Srift
+aliases: []

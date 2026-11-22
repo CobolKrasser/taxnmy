@@ -1,0 +1,11 @@
+key: motorola-mobility/motorola-mobile-drivers
+publisher: motorola-mobility
+name: Motorola Mobile Drivers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Motorola/MobileDrivers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Motorola/MobileDrivers
+identifiers:
+- winget: Motorola.MobileDrivers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Motorola/MobileDrivers
+aliases: []

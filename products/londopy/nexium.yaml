@@ -1,0 +1,11 @@
+key: londopy/nexium
+publisher: londopy
+name: Nexium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Londopy/Nexium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Londopy/Nexium
+identifiers:
+- winget: Londopy.Nexium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Londopy/Nexium
+aliases: []

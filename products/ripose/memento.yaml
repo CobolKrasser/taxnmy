@@ -1,0 +1,11 @@
+key: ripose/memento
+publisher: ripose
+name: Memento
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ripose/Memento
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ripose/Memento
+identifiers:
+- winget: Ripose.Memento
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ripose/Memento
+aliases: []

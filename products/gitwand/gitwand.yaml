@@ -1,0 +1,11 @@
+key: gitwand/gitwand
+publisher: gitwand
+name: GitWand
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devlint/GitWand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devlint/GitWand
+identifiers:
+- winget: Devlint.GitWand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devlint/GitWand
+aliases: []

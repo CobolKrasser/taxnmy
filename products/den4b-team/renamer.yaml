@@ -1,0 +1,11 @@
+key: den4b-team/renamer
+publisher: den4b-team
+name: ReNamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/den4b/ReNamer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/den4b/ReNamer
+identifiers:
+- winget: den4b.ReNamer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/den4b/ReNamer
+aliases: []

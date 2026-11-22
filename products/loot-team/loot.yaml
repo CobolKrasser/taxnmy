@@ -1,0 +1,11 @@
+key: loot-team/loot
+publisher: loot-team
+name: LOOT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LOOT/LOOT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LOOT/LOOT
+identifiers:
+- winget: LOOT.LOOT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LOOT/LOOT
+aliases: []

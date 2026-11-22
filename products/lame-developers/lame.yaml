@@ -1,0 +1,11 @@
+key: lame-developers/lame
+publisher: lame-developers
+name: LAME
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LAME/LAME
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LAME/LAME
+identifiers:
+- winget: LAME.LAME
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LAME/LAME
+aliases: []

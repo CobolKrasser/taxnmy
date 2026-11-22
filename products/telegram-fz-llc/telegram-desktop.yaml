@@ -1,0 +1,11 @@
+key: telegram-fz-llc/telegram-desktop
+publisher: telegram-fz-llc
+name: Telegram Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telegram/TelegramDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telegram/TelegramDesktop
+identifiers:
+- winget: Telegram.TelegramDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telegram/TelegramDesktop
+aliases: []

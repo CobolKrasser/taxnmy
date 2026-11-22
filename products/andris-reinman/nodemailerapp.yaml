@@ -1,0 +1,11 @@
+key: andris-reinman/nodemailerapp
+publisher: andris-reinman
+name: NodemailerApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nodemailer/nodemailer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nodemailer/nodemailer
+identifiers:
+- winget: nodemailer.nodemailer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nodemailer/nodemailer
+aliases: []

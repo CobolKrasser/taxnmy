@@ -1,0 +1,11 @@
+key: openmpt/openmpt
+publisher: openmpt
+name: OpenMPT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMPT/OpenMPT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMPT/OpenMPT
+identifiers:
+- winget: OpenMPT.OpenMPT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMPT/OpenMPT
+aliases: []

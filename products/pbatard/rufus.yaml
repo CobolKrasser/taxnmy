@@ -1,0 +1,11 @@
+key: pbatard/rufus
+publisher: pbatard
+name: Rufus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rufus/Rufus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rufus/Rufus
+identifiers:
+- winget: Rufus.Rufus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rufus/Rufus
+aliases: []

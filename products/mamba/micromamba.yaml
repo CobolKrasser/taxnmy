@@ -1,0 +1,11 @@
+key: mamba/micromamba
+publisher: mamba
+name: Micromamba
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mamba/Micromamba
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mamba/Micromamba
+identifiers:
+- winget: Mamba.Micromamba
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mamba/Micromamba
+aliases: []

@@ -1,0 +1,11 @@
+key: stilog-ist/vpdesklauncher
+publisher: stilog-ist
+name: VPDeskLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stilog/VPDeskLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stilog/VPDeskLauncher
+identifiers:
+- winget: Stilog.VPDeskLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stilog/VPDeskLauncher
+aliases: []

@@ -1,0 +1,12 @@
+key: mitec/network-meter
+publisher: mitec
+name: MiTeC Network Meter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/NetworkMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/NetworkMeter
+identifiers:
+- winget: MiTeC.NetworkMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/NetworkMeter
+aliases:
+- mitec/mitec-network-meter

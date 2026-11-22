@@ -1,0 +1,11 @@
+key: kmeleonbrowser-org/k-meleon
+publisher: kmeleonbrowser-org
+name: K-Meleon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kmeleonbrowser/K-Meleon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kmeleonbrowser/K-Meleon
+identifiers:
+- winget: kmeleonbrowser.K-Meleon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kmeleonbrowser/K-Meleon
+aliases: []

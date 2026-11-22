@@ -1,0 +1,11 @@
+key: codejunkies/powersaves
+publisher: codejunkies
+name: PowerSaves
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codejunkies/PowerSaves
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codejunkies/PowerSaves
+identifiers:
+- winget: Codejunkies.PowerSaves
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codejunkies/PowerSaves
+aliases: []

@@ -1,0 +1,11 @@
+key: z-dbackup/z-cron
+publisher: z-dbackup
+name: Z-Cron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Z-DBackup/Z-Cron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Z-DBackup/Z-Cron
+identifiers:
+- winget: Z-DBackup.Z-Cron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Z-DBackup/Z-Cron
+aliases: []

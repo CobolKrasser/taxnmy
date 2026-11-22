@@ -1,0 +1,11 @@
+key: brandtactics/bt-youtube-downloader
+publisher: brandtactics
+name: BT YouTube Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrandTactics/BTYouTubeDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrandTactics/BTYouTubeDownloader
+identifiers:
+- winget: BrandTactics.BTYouTubeDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrandTactics/BTYouTubeDownloader
+aliases: []

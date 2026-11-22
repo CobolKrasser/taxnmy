@@ -1,0 +1,11 @@
+key: flymd/flymd
+publisher: flymd
+name: flymd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flyhunterl/FlyMD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flyhunterl/FlyMD
+identifiers:
+- winget: flyhunterl.FlyMD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flyhunterl/FlyMD
+aliases: []

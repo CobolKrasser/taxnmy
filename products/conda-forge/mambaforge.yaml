@@ -1,0 +1,11 @@
+key: conda-forge/mambaforge
+publisher: conda-forge
+name: Mambaforge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Mambaforge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Mambaforge
+identifiers:
+- winget: CondaForge.Mambaforge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Mambaforge
+aliases: []

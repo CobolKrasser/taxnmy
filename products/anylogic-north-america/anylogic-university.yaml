@@ -1,0 +1,11 @@
+key: anylogic-north-america/anylogic-university
+publisher: anylogic-north-america
+name: AnyLogic University
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyLogic/AnyLogic/University
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyLogic/AnyLogic/University
+identifiers:
+- winget: AnyLogic.AnyLogic.University
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyLogic/AnyLogic/University
+aliases: []

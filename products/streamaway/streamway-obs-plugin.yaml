@@ -1,0 +1,11 @@
+key: streamaway/streamway-obs-plugin
+publisher: streamaway
+name: Streamway OBS Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamway/OBSPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamway/OBSPlugin
+identifiers:
+- winget: Streamway.OBSPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamway/OBSPlugin
+aliases: []

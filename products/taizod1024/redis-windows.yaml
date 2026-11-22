@@ -1,0 +1,11 @@
+key: taizod1024/redis-windows
+publisher: taizod1024
+name: redis-windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/taizod1024/redis-windows-fork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/taizod1024/redis-windows-fork
+identifiers:
+- winget: taizod1024.redis-windows-fork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/taizod1024/redis-windows-fork
+aliases: []

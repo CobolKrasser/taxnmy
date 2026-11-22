@@ -1,0 +1,13 @@
+key: jetbrains/pycharm
+publisher: jetbrains
+name: PyCharm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm
+identifiers:
+- winget: JetBrains.PyCharm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm
+- winget: JetBrains.PyCharm.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PyCharm/EAP
+aliases: []

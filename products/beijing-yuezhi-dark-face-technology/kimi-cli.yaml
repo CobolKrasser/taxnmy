@@ -1,0 +1,11 @@
+key: beijing-yuezhi-dark-face-technology/kimi-cli
+publisher: beijing-yuezhi-dark-face-technology
+name: Kimi CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonshotAI/KimiCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonshotAI/KimiCLI
+identifiers:
+- winget: MoonshotAI.KimiCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonshotAI/KimiCLI
+aliases: []

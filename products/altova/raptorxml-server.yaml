@@ -1,0 +1,14 @@
+key: altova/raptorxml-server
+publisher: altova
+name: Altova RaptorXML Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2025
+identifiers:
+- winget: Altova.RaptorXMLServer.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2025
+- winget: Altova.RaptorXMLServer.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/RaptorXMLServer/2026
+aliases:
+- altova/altova-raptorxml-server

@@ -1,0 +1,11 @@
+key: turtle-beach/roccat-swarm
+publisher: turtle-beach
+name: ROCCAT Swarm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TurtleBeach/ROCCATSwarm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TurtleBeach/ROCCATSwarm
+identifiers:
+- winget: TurtleBeach.ROCCATSwarm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TurtleBeach/ROCCATSwarm
+aliases: []

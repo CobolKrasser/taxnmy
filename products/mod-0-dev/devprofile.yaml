@@ -1,0 +1,11 @@
+key: mod-0-dev/devprofile
+publisher: mod-0-dev
+name: DevProfile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mod-0-dev/DevProfile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mod-0-dev/DevProfile
+identifiers:
+- winget: mod-0-dev.DevProfile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mod-0-dev/DevProfile
+aliases: []

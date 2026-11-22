@@ -1,0 +1,11 @@
+key: canact/canact
+publisher: canact
+name: canact
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canact/Canact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canact/Canact
+identifiers:
+- winget: Canact.Canact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canact/Canact
+aliases: []

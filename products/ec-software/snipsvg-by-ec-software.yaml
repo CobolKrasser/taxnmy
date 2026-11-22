@@ -1,0 +1,11 @@
+key: ec-software/snipsvg-by-ec-software
+publisher: ec-software
+name: SnipSVG by EC Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/SnipSVG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/SnipSVG
+identifiers:
+- winget: ECSoftware.SnipSVG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ECSoftware/SnipSVG
+aliases: []

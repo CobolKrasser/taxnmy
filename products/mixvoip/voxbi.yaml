@@ -1,0 +1,11 @@
+key: mixvoip/voxbi
+publisher: mixvoip
+name: Voxbi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIXVoip/Voxbi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIXVoip/Voxbi
+identifiers:
+- winget: MIXVoip.Voxbi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIXVoip/Voxbi
+aliases: []

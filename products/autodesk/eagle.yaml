@@ -1,0 +1,11 @@
+key: autodesk/eagle
+publisher: autodesk
+name: EAGLE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/EAGLE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/EAGLE
+identifiers:
+- winget: Autodesk.EAGLE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autodesk/EAGLE
+aliases: []

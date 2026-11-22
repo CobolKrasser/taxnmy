@@ -1,0 +1,11 @@
+key: pulse-browser/pulse-browser
+publisher: pulse-browser
+name: Pulse Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PulseBroswer/PulseBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PulseBroswer/PulseBrowser
+identifiers:
+- winget: PulseBroswer.PulseBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PulseBroswer/PulseBrowser
+aliases: []

@@ -1,0 +1,11 @@
+key: ppy/osu-lazer
+publisher: ppy
+name: osu!(lazer)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ppy/osu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ppy/osu
+identifiers:
+- winget: ppy.osu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ppy/osu
+aliases: []

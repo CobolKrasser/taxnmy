@@ -1,0 +1,12 @@
+key: livekit/cli
+publisher: livekit
+name: LiveKit CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveKit/LiveKitCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveKit/LiveKitCLI
+identifiers:
+- winget: LiveKit.LiveKitCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveKit/LiveKitCLI
+aliases:
+- livekit/livekit-cli

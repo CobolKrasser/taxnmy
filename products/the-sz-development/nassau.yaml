@@ -1,0 +1,11 @@
+key: the-sz-development/nassau
+publisher: the-sz-development
+name: Nassau
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Nassau
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Nassau
+identifiers:
+- winget: the-sz.Nassau
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Nassau
+aliases: []

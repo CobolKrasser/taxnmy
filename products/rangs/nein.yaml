@@ -1,0 +1,11 @@
+key: rangs/nein
+publisher: rangs
+name: Nein
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RangS/Nein
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RangS/Nein
+identifiers:
+- winget: RangS.Nein
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RangS/Nein
+aliases: []

@@ -1,0 +1,12 @@
+key: ros/chronotrace
+publisher: ros
+name: Ros ChronoTrace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/roshad/RosChronoTrace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/roshad/RosChronoTrace
+identifiers:
+- winget: roshad.RosChronoTrace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/roshad/RosChronoTrace
+aliases:
+- ros/ros-chronotrace

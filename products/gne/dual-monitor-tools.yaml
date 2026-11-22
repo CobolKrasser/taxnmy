@@ -1,0 +1,11 @@
+key: gne/dual-monitor-tools
+publisher: gne
+name: Dual Monitor Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNE/DualMonitorTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNE/DualMonitorTools
+identifiers:
+- winget: GNE.DualMonitorTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNE/DualMonitorTools
+aliases: []

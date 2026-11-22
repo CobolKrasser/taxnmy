@@ -1,0 +1,11 @@
+key: fred-emmott/openkneeboard
+publisher: fred-emmott
+name: OpenKneeboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredEmmott/OpenKneeboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredEmmott/OpenKneeboard
+identifiers:
+- winget: FredEmmott.OpenKneeboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredEmmott/OpenKneeboard
+aliases: []

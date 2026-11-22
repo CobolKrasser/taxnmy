@@ -1,0 +1,11 @@
+key: microsoft/ai-shell
+publisher: microsoft
+name: AI Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AIShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AIShell
+identifiers:
+- winget: Microsoft.AIShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AIShell
+aliases: []

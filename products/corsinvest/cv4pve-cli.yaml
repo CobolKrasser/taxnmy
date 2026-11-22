@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-cli
+publisher: corsinvest
+name: cv4pve-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/cli
+identifiers:
+- winget: Corsinvest.cv4pve.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/cli
+aliases: []

@@ -1,0 +1,11 @@
+key: qiagen-aarhus/clc-network-license-manager
+publisher: qiagen-aarhus
+name: CLC Network License Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QIAGEN/CLCNetworkLicenseManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QIAGEN/CLCNetworkLicenseManager
+identifiers:
+- winget: QIAGEN.CLCNetworkLicenseManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QIAGEN/CLCNetworkLicenseManager
+aliases: []

@@ -1,0 +1,11 @@
+key: kvs/revo-design
+publisher: kvs
+name: Revo Design
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoDesign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoDesign
+identifiers:
+- winget: Revopoint.RevoDesign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoDesign
+aliases: []

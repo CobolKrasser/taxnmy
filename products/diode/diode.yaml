@@ -1,0 +1,11 @@
+key: diode/diode
+publisher: diode
+name: Diode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiodeEditor/Diode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiodeEditor/Diode
+identifiers:
+- winget: DiodeEditor.Diode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiodeEditor/Diode
+aliases: []

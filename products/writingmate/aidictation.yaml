@@ -1,0 +1,11 @@
+key: writingmate/aidictation
+publisher: writingmate
+name: AIDictation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WritingMate/AIDictation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WritingMate/AIDictation
+identifiers:
+- winget: WritingMate.AIDictation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WritingMate/AIDictation
+aliases: []

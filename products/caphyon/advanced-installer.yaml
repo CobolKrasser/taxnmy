@@ -1,0 +1,11 @@
+key: caphyon/advanced-installer
+publisher: caphyon
+name: Advanced Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caphyon/AdvancedInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caphyon/AdvancedInstaller
+identifiers:
+- winget: Caphyon.AdvancedInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Caphyon/AdvancedInstaller
+aliases: []

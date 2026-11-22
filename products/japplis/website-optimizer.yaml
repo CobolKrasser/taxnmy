@@ -1,0 +1,12 @@
+key: japplis/website-optimizer
+publisher: japplis
+name: Japplis Website Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/WebsiteOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/WebsiteOptimizer
+identifiers:
+- winget: Japplis.WebsiteOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/WebsiteOptimizer
+aliases:
+- japplis/japplis-website-optimizer

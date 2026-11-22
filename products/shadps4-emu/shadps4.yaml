@@ -1,0 +1,11 @@
+key: shadps4-emu/shadps4
+publisher: shadps4-emu
+name: shadPS4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shadps4-emu/shadPS4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shadps4-emu/shadPS4
+identifiers:
+- winget: shadps4-emu.shadPS4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shadps4-emu/shadPS4
+aliases: []

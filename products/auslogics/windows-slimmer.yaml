@@ -1,0 +1,12 @@
+key: auslogics/windows-slimmer
+publisher: auslogics
+name: Auslogics Windows Slimmer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/WindowsSlimmer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/WindowsSlimmer
+identifiers:
+- winget: Auslogics.WindowsSlimmer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/WindowsSlimmer
+aliases:
+- auslogics/auslogics-windows-slimmer

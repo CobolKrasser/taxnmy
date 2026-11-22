@@ -1,0 +1,11 @@
+key: coscreen/coscreen
+publisher: coscreen
+name: CoScreen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoScreen/CoScreen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoScreen/CoScreen
+identifiers:
+- winget: CoScreen.CoScreen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoScreen/CoScreen
+aliases: []

@@ -1,0 +1,11 @@
+key: yida/nextchat
+publisher: yida
+name: NextChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextChat/NextChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextChat/NextChat
+identifiers:
+- winget: NextChat.NextChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextChat/NextChat
+aliases: []

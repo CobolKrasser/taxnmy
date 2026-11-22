@@ -1,0 +1,11 @@
+key: namespace-labs/nsc
+publisher: namespace-labs
+name: nsc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Namespace/nsc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Namespace/nsc
+identifiers:
+- winget: Namespace.nsc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Namespace/nsc
+aliases: []

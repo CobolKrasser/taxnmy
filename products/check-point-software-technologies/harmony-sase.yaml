@@ -1,0 +1,11 @@
+key: check-point-software-technologies/harmony-sase
+publisher: check-point-software-technologies
+name: Harmony SASE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perimeter81/HarmonySASE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perimeter81/HarmonySASE
+identifiers:
+- winget: Perimeter81.HarmonySASE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perimeter81/HarmonySASE
+aliases: []

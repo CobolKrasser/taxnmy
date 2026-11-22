@@ -1,0 +1,11 @@
+key: oleksis-fraga/python-launcher
+publisher: oleksis-fraga
+name: Python Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OleksisFraga/PythonLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OleksisFraga/PythonLauncher
+identifiers:
+- winget: OleksisFraga.PythonLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OleksisFraga/PythonLauncher
+aliases: []

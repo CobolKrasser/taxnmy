@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -423,6 +424,17 @@ def read_changed(source: str, root: Path) -> set:
             if line.strip().startswith(("products/", "publishers/")) and (root / line.strip()).is_file()}
 
 
+def lookalike_pairs(findings: list) -> int:
+    """How many pairs of names look alike (TV3), each pair once. A count for the referee, without a
+    limit: the data may hold many (TAX-56)."""
+    pairs = set()
+    for f in findings:
+        m = re.match(r"\w+ '(.+?)' looks like '(.+?)'", f.message) if f.rule == "TV3" else None
+        if m:
+            pairs.add(frozenset(m.groups()))
+    return len(pairs)
+
+
 def main(argv: list[str]) -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     p.add_argument("root", nargs="?", default=str(REPO))
@@ -445,6 +457,7 @@ def main(argv: list[str]) -> int:
         print(f"{files} files checked: {errors} errors, {signals} signals")
     else:
         print(f"{len(changed)} changed files checked against {files}: {errors} errors, {signals} signals")
+    print(f"pairs of names that look alike (TV3): {lookalike_pairs(findings)}, a count without a limit")
     return 1 if errors else 0
 
 

@@ -1,0 +1,11 @@
+key: rfspace/spectravue
+publisher: rfspace
+name: SpectraVue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RFSpace/SpectraVue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RFSpace/SpectraVue
+identifiers:
+- winget: RFSpace.SpectraVue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RFSpace/SpectraVue
+aliases: []

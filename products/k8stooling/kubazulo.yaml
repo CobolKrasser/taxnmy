@@ -1,0 +1,11 @@
+key: k8stooling/kubazulo
+publisher: k8stooling
+name: Kubazulo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K8stooling/Kubazulo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K8stooling/Kubazulo
+identifiers:
+- winget: K8stooling.Kubazulo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K8stooling/Kubazulo
+aliases: []

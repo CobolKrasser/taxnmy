@@ -1,0 +1,11 @@
+key: dtwt/studio-world
+publisher: dtwt
+name: Studio World
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DTWT/StudioWorld
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DTWT/StudioWorld
+identifiers:
+- winget: DTWT.StudioWorld
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DTWT/StudioWorld
+aliases: []

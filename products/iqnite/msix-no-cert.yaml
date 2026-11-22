@@ -1,0 +1,11 @@
+key: iqnite/msix-no-cert
+publisher: iqnite
+name: msix-no-cert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iqnite/msix-no-cert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iqnite/msix-no-cert
+identifiers:
+- winget: iqnite.msix-no-cert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iqnite/msix-no-cert
+aliases: []

@@ -1,0 +1,11 @@
+key: gnu/wget2
+publisher: gnu
+name: Wget2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Wget2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Wget2
+identifiers:
+- winget: GNU.Wget2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Wget2
+aliases: []

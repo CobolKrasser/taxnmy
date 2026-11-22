@@ -1,0 +1,11 @@
+key: secondloop/secondloop
+publisher: secondloop
+name: SecondLoop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecondLoop/SecondLoop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecondLoop/SecondLoop
+identifiers:
+- winget: SecondLoop.SecondLoop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecondLoop/SecondLoop
+aliases: []

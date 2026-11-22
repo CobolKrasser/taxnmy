@@ -1,0 +1,11 @@
+key: x2go-project/x2go-client-for-windows
+publisher: x2go-project
+name: X2Go Client for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X2go/x2goclient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X2go/x2goclient
+identifiers:
+- winget: X2go.x2goclient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X2go/x2goclient
+aliases: []

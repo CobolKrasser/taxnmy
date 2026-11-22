@@ -1,0 +1,12 @@
+key: enercon/scada-remote
+publisher: enercon
+name: ENERCON SCADA Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ENERCON/SCADARemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ENERCON/SCADARemote
+identifiers:
+- winget: ENERCON.SCADARemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ENERCON/SCADARemote
+aliases:
+- enercon/enercon-scada-remote

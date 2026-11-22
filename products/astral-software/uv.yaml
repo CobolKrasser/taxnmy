@@ -1,0 +1,11 @@
+key: astral-software/uv
+publisher: astral-software
+name: uv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv
+identifiers:
+- winget: astral-sh.uv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv
+aliases: []

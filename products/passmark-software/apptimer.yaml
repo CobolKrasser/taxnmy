@@ -1,0 +1,11 @@
+key: passmark-software/apptimer
+publisher: passmark-software
+name: AppTimer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/AppTimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/AppTimer
+identifiers:
+- winget: PassMark.AppTimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/AppTimer
+aliases: []

@@ -1,0 +1,11 @@
+key: mikrotik/the-dude
+publisher: mikrotik
+name: The Dude
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/TheDude
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/TheDude
+identifiers:
+- winget: Mikrotik.TheDude
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mikrotik/TheDude
+aliases: []

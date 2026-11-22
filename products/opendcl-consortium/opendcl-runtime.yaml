@@ -1,0 +1,11 @@
+key: opendcl-consortium/opendcl-runtime
+publisher: opendcl-consortium
+name: OpenDCL Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDCL/Runtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDCL/Runtime
+identifiers:
+- winget: OpenDCL.Runtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDCL/Runtime
+aliases: []

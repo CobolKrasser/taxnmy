@@ -1,0 +1,11 @@
+key: a-ff-data-recovery/find-and-mount
+publisher: a-ff-data-recovery
+name: Find and Mount
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atola/FindandMount
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atola/FindandMount
+identifiers:
+- winget: Atola.FindandMount
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atola/FindandMount
+aliases: []

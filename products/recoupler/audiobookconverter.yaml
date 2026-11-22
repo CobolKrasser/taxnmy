@@ -1,0 +1,11 @@
+key: recoupler/audiobookconverter
+publisher: recoupler
+name: AudioBookConverter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recoupler/AudioBookConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recoupler/AudioBookConverter
+identifiers:
+- winget: Recoupler.AudioBookConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recoupler/AudioBookConverter
+aliases: []

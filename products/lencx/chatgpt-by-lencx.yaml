@@ -1,0 +1,11 @@
+key: lencx/chatgpt-by-lencx
+publisher: lencx
+name: ChatGPT by lencx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lencx/ChatGPT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lencx/ChatGPT
+identifiers:
+- winget: lencx.ChatGPT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lencx/ChatGPT
+aliases: []

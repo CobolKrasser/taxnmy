@@ -1,0 +1,11 @@
+key: charmbracelet/gum
+publisher: charmbracelet
+name: gum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/gum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/gum
+identifiers:
+- winget: charmbracelet.gum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/gum
+aliases: []

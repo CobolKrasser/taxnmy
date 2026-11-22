@@ -1,0 +1,11 @@
+key: heiko-sommerfeldt/phonerlite
+publisher: heiko-sommerfeldt
+name: PhonerLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phoner/PhonerLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phoner/PhonerLite
+identifiers:
+- winget: Phoner.PhonerLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phoner/PhonerLite
+aliases: []

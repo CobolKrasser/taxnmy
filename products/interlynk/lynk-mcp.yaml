@@ -1,0 +1,11 @@
+key: interlynk/lynk-mcp
+publisher: interlynk
+name: lynk-mcp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Interlynk/lynk-mcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Interlynk/lynk-mcp
+identifiers:
+- winget: Interlynk.lynk-mcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Interlynk/lynk-mcp
+aliases: []

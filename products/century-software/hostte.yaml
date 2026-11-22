@@ -1,0 +1,11 @@
+key: century-software/hostte
+publisher: century-software
+name: HostTE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/HostTE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/HostTE
+identifiers:
+- winget: CenSoft.HostTE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/HostTE
+aliases: []

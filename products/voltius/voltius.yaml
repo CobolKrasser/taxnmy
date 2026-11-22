@@ -1,0 +1,11 @@
+key: voltius/voltius
+publisher: voltius
+name: Voltius
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voltius/Voltius
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voltius/Voltius
+identifiers:
+- winget: Voltius.Voltius
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voltius/Voltius
+aliases: []

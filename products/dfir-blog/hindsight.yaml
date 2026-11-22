@@ -1,0 +1,11 @@
+key: dfir-blog/hindsight
+publisher: dfir-blog
+name: Hindsight
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/obsidianforensics/HindsightGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/obsidianforensics/HindsightGUI
+identifiers:
+- winget: obsidianforensics.HindsightGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/obsidianforensics/HindsightGUI
+aliases: []

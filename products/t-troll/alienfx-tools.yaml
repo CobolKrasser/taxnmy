@@ -1,0 +1,11 @@
+key: t-troll/alienfx-tools
+publisher: t-troll
+name: AlienFX Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/T-Troll/AlienFXTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/T-Troll/AlienFXTools
+identifiers:
+- winget: T-Troll.AlienFXTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/T-Troll/AlienFXTools
+aliases: []

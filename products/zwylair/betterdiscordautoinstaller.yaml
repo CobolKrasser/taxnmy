@@ -1,0 +1,11 @@
+key: zwylair/betterdiscordautoinstaller
+publisher: zwylair
+name: BetterDiscordAutoInstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zwylair/BetterDiscordAutoInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zwylair/BetterDiscordAutoInstaller
+identifiers:
+- winget: Zwylair.BetterDiscordAutoInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zwylair/BetterDiscordAutoInstaller
+aliases: []

@@ -1,0 +1,11 @@
+key: f-sharp-community-project-incubation-space/paket
+publisher: f-sharp-community-project-incubation-space
+name: Paket
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fsprojects/Paket
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fsprojects/Paket
+identifiers:
+- winget: fsprojects.Paket
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fsprojects/Paket
+aliases: []

@@ -1,0 +1,11 @@
+key: fasm/flat-assembler
+publisher: fasm
+name: Flat Assembler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fasm/fasm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fasm/fasm
+identifiers:
+- winget: fasm.fasm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fasm/fasm
+aliases: []

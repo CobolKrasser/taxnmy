@@ -1,0 +1,11 @@
+key: geoda-center/geoda
+publisher: geoda-center
+name: GeoDa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoDa/GeoDa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoDa/GeoDa
+identifiers:
+- winget: GeoDa.GeoDa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoDa/GeoDa
+aliases: []

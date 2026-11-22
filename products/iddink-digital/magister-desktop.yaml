@@ -1,0 +1,11 @@
+key: iddink-digital/magister-desktop
+publisher: iddink-digital
+name: Magister Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iddink/MagisterDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iddink/MagisterDesktop
+identifiers:
+- winget: Iddink.MagisterDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iddink/MagisterDesktop
+aliases: []

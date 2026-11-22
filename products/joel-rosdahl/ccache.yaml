@@ -1,0 +1,11 @@
+key: joel-rosdahl/ccache
+publisher: joel-rosdahl
+name: Ccache
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Ccache/Ccache
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Ccache/Ccache
+identifiers:
+- winget: Ccache.Ccache
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Ccache/Ccache
+aliases: []

@@ -1,0 +1,11 @@
+key: ndxcode/eclipseflashtool18
+publisher: ndxcode
+name: EclipseFlashTool18
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDXCode/EclipseFlashTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDXCode/EclipseFlashTool
+identifiers:
+- winget: NDXCode.EclipseFlashTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDXCode/EclipseFlashTool
+aliases: []

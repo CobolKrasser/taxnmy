@@ -1,0 +1,11 @@
+key: defanglabs/defang
+publisher: defanglabs
+name: Defang
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefangLabs/Defang
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefangLabs/Defang
+identifiers:
+- winget: DefangLabs.Defang
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefangLabs/Defang
+aliases: []

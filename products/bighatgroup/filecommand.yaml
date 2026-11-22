@@ -1,0 +1,11 @@
+key: bighatgroup/filecommand
+publisher: bighatgroup
+name: FileCommand
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BigHatGroup/FileCommand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BigHatGroup/FileCommand
+identifiers:
+- winget: BigHatGroup.FileCommand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BigHatGroup/FileCommand
+aliases: []

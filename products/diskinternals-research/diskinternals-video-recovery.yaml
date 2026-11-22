@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-video-recovery
+publisher: diskinternals-research
+name: DiskInternals Video Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/VideoRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/VideoRecovery
+identifiers:
+- winget: DiskInternals.VideoRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/VideoRecovery
+aliases: []

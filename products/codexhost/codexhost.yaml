@@ -1,0 +1,11 @@
+key: codexhost/codexhost
+publisher: codexhost
+name: CodexHost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytePioneer-AI/CodexHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytePioneer-AI/CodexHost
+identifiers:
+- winget: BytePioneer-AI.CodexHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytePioneer-AI/CodexHost
+aliases: []

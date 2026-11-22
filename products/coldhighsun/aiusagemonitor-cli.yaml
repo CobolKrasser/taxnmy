@@ -1,0 +1,11 @@
+key: coldhighsun/aiusagemonitor-cli
+publisher: coldhighsun
+name: AIUsageMonitor.Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coldhighsun/AIUsageMonitor/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coldhighsun/AIUsageMonitor/Cli
+identifiers:
+- winget: coldhighsun.AIUsageMonitor.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coldhighsun/AIUsageMonitor/Cli
+aliases: []

@@ -1,0 +1,11 @@
+key: dystroy/broot
+publisher: dystroy
+name: Broot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dystroy/broot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dystroy/broot
+identifiers:
+- winget: Dystroy.broot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dystroy/broot
+aliases: []

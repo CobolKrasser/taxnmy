@@ -1,0 +1,11 @@
+key: msendpointmgr/intunedebugtools
+publisher: msendpointmgr
+name: IntuneDebugTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSEndpointMgr/IntuneDebugToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSEndpointMgr/IntuneDebugToolkit
+identifiers:
+- winget: MSEndpointMgr.IntuneDebugToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSEndpointMgr/IntuneDebugToolkit
+aliases: []

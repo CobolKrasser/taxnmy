@@ -1,0 +1,11 @@
+key: heshan-aisipai-e-commerce/gai
+publisher: heshan-aisipai-e-commerce
+name: Gai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/GAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/GAI
+identifiers:
+- winget: GAI.GAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/GAI
+aliases: []

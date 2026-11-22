@@ -1,0 +1,11 @@
+key: dmitry-bruhov/winthumbspreloader
+publisher: dmitry-bruhov
+name: WinThumbsPreloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bruhov/WinThumbsPreloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bruhov/WinThumbsPreloader
+identifiers:
+- winget: bruhov.WinThumbsPreloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bruhov/WinThumbsPreloader
+aliases: []

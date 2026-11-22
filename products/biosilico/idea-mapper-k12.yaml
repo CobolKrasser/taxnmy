@@ -1,0 +1,11 @@
+key: biosilico/idea-mapper-k12
+publisher: biosilico
+name: Idea Mapper K12
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BioSilico/IdeaMapper/K12
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BioSilico/IdeaMapper/K12
+identifiers:
+- winget: BioSilico.IdeaMapper.K12
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BioSilico/IdeaMapper/K12
+aliases: []

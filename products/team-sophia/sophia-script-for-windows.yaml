@@ -1,0 +1,11 @@
+key: team-sophia/sophia-script-for-windows
+publisher: team-sophia
+name: Sophia Script for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSophia/SophiaScript
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSophia/SophiaScript
+identifiers:
+- winget: TeamSophia.SophiaScript
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSophia/SophiaScript
+aliases: []

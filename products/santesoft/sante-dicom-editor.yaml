@@ -1,0 +1,11 @@
+key: santesoft/sante-dicom-editor
+publisher: santesoft
+name: Sante DICOM Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomEditor
+identifiers:
+- winget: Santesoft.SanteDicomEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomEditor
+aliases: []

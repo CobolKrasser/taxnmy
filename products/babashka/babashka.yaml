@@ -1,0 +1,11 @@
+key: babashka/babashka
+publisher: babashka
+name: Babashka
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Babashka/Babashka
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Babashka/Babashka
+identifiers:
+- winget: Babashka.Babashka
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Babashka/Babashka
+aliases: []

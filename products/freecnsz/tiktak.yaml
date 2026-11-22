@@ -1,0 +1,11 @@
+key: freecnsz/tiktak
+publisher: freecnsz
+name: TikTak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freecnsz/TikTak
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freecnsz/TikTak
+identifiers:
+- winget: freecnsz.TikTak
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freecnsz/TikTak
+aliases: []

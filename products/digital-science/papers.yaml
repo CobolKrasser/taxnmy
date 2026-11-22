@@ -1,0 +1,11 @@
+key: digital-science/papers
+publisher: digital-science
+name: Papers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScience/Papers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScience/Papers
+identifiers:
+- winget: DigitalScience.Papers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScience/Papers
+aliases: []

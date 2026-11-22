@@ -1,0 +1,11 @@
+key: charmbracelet/wishlist
+publisher: charmbracelet
+name: wishlist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/wishlist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/wishlist
+identifiers:
+- winget: charmbracelet.wishlist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/wishlist
+aliases: []

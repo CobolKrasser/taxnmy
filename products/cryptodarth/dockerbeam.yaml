@@ -1,0 +1,11 @@
+key: cryptodarth/dockerbeam
+publisher: cryptodarth
+name: dockerbeam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cryptodarth/dockerbeam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cryptodarth/dockerbeam
+identifiers:
+- winget: cryptodarth.dockerbeam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cryptodarth/dockerbeam
+aliases: []

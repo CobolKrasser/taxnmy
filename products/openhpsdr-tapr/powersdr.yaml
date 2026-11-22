@@ -1,0 +1,11 @@
+key: openhpsdr-tapr/powersdr
+publisher: openhpsdr-tapr
+name: PowerSDR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenHPSDR-TAPR/PowerSDR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenHPSDR-TAPR/PowerSDR
+identifiers:
+- winget: OpenHPSDR-TAPR.PowerSDR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenHPSDR-TAPR/PowerSDR
+aliases: []

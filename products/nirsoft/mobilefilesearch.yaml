@@ -1,0 +1,11 @@
+key: nirsoft/mobilefilesearch
+publisher: nirsoft
+name: MobileFileSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/MobileFileSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/MobileFileSearch
+identifiers:
+- winget: NirSoft.MobileFileSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/MobileFileSearch
+aliases: []

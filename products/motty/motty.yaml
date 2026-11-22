@@ -1,0 +1,11 @@
+key: motty/motty
+publisher: motty
+name: Motty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/t8y2/Motty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/t8y2/Motty
+identifiers:
+- winget: t8y2.Motty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/t8y2/Motty
+aliases: []

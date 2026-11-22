@@ -1,0 +1,11 @@
+key: dhtdht020/open-shop-channel-downloader
+publisher: dhtdht020
+name: Open Shop Channel Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenShopChannel/Downloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenShopChannel/Downloader
+identifiers:
+- winget: OpenShopChannel.Downloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenShopChannel/Downloader
+aliases: []

@@ -1,0 +1,11 @@
+key: loom/loom
+publisher: loom
+name: Loom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loom/Loom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loom/Loom
+identifiers:
+- winget: Loom.Loom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loom/Loom
+aliases: []

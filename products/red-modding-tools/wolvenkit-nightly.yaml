@@ -1,0 +1,11 @@
+key: red-modding-tools/wolvenkit-nightly
+publisher: red-modding-tools
+name: WolvenKit Nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REDModding/WolvenKit/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REDModding/WolvenKit/Nightly
+identifiers:
+- winget: REDModding.WolvenKit.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REDModding/WolvenKit/Nightly
+aliases: []

@@ -1,0 +1,11 @@
+key: labymedia/labymod-launcher
+publisher: labymedia
+name: LabyMod Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LabyMediaGmbH/LabyModLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LabyMediaGmbH/LabyModLauncher
+identifiers:
+- winget: LabyMediaGmbH.LabyModLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LabyMediaGmbH/LabyModLauncher
+aliases: []

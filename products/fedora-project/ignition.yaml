@@ -1,0 +1,11 @@
+key: fedora-project/ignition
+publisher: fedora-project
+name: ignition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fedora/CoreOS/ignition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fedora/CoreOS/ignition
+identifiers:
+- winget: Fedora.CoreOS.ignition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fedora/CoreOS/ignition
+aliases: []

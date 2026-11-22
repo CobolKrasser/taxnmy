@@ -1,0 +1,11 @@
+key: elastic/beats-winlogbeat
+publisher: elastic
+name: Beats winlogbeat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Winlogbeat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Winlogbeat
+identifiers:
+- winget: Elastic.Winlogbeat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Winlogbeat
+aliases: []

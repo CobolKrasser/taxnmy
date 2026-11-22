@@ -1,0 +1,11 @@
+key: the-wise-monkey/azurevpn-cli
+publisher: the-wise-monkey
+name: AzureVPN-CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheWiseMonkey/AzureVPN-CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheWiseMonkey/AzureVPN-CLI
+identifiers:
+- winget: TheWiseMonkey.AzureVPN-CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheWiseMonkey/AzureVPN-CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: mobisystems/mobidrive
+publisher: mobisystems
+name: MobiDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiDrive
+identifiers:
+- winget: MobiSystems.MobiDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiDrive
+aliases: []

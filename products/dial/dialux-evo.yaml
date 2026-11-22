@@ -1,0 +1,11 @@
+key: dial/dialux-evo
+publisher: dial
+name: DIALux evo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DIAL/DIALux-evo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DIAL/DIALux-evo
+identifiers:
+- winget: DIAL.DIALux-evo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DIAL/DIALux-evo
+aliases: []

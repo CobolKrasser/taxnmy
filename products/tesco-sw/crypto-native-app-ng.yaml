@@ -1,0 +1,11 @@
+key: tesco-sw/crypto-native-app-ng
+publisher: tesco-sw
+name: Crypto Native App NG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TescoSW/CryptoNativeAppNG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TescoSW/CryptoNativeAppNG
+identifiers:
+- winget: TescoSW.CryptoNativeAppNG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TescoSW/CryptoNativeAppNG
+aliases: []

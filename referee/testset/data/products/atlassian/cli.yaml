@@ -1,0 +1,12 @@
+key: atlassian/cli
+publisher: atlassian
+name: Atlassian CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/AtlassianCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/AtlassianCLI
+identifiers:
+- winget: Atlassian.AtlassianCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/AtlassianCLI
+aliases:
+- atlassian/atlassian-cli

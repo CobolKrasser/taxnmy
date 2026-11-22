@@ -1,0 +1,11 @@
+key: rundops/dops
+publisher: rundops
+name: dops
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RunDops/dops
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RunDops/dops
+identifiers:
+- winget: RunDops.dops
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RunDops/dops
+aliases: []

@@ -1,0 +1,11 @@
+key: wahao-mac/igot
+publisher: wahao-mac
+name: iGot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wahao/Electron-iGot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wahao/Electron-iGot
+identifiers:
+- winget: wahao.Electron-iGot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wahao/Electron-iGot
+aliases: []

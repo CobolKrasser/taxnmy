@@ -1,0 +1,11 @@
+key: microsoft/azure-extension-for-command-palette
+publisher: microsoft
+name: Azure extension for Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CmdPalAzureExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CmdPalAzureExtension
+identifiers:
+- winget: Microsoft.CmdPalAzureExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CmdPalAzureExtension
+aliases: []

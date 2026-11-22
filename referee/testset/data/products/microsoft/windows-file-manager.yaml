@@ -1,0 +1,11 @@
+key: microsoft/windows-file-manager
+publisher: microsoft
+name: Windows File Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/winfile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/winfile
+identifiers:
+- winget: Microsoft.winfile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/winfile
+aliases: []

@@ -1,0 +1,11 @@
+key: code-ix/qtop
+publisher: code-ix
+name: QTop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QTop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QTop
+identifiers:
+- winget: Code-iX.QTop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QTop
+aliases: []

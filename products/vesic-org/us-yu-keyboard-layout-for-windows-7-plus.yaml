@@ -1,0 +1,11 @@
+key: vesic-org/us-yu-keyboard-layout-for-windows-7-plus
+publisher: vesic-org
+name: US-YU Keyboard Layout for Windows 7+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vesic/Org/US-YU/keyboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vesic/Org/US-YU/keyboard
+identifiers:
+- winget: Vesic.Org.US-YU.keyboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vesic/Org/US-YU/keyboard
+aliases: []

@@ -1,0 +1,11 @@
+key: kaizen-3c/kaizen-cli
+publisher: kaizen-3c
+name: Kaizen CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaizen3C/KaizenCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaizen3C/KaizenCLI
+identifiers:
+- winget: Kaizen3C.KaizenCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaizen3C/KaizenCLI
+aliases: []

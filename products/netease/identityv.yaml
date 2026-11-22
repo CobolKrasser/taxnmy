@@ -1,0 +1,11 @@
+key: netease/identityv
+publisher: netease
+name: IdentityV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetEase/IdentityV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetEase/IdentityV
+identifiers:
+- winget: NetEase.IdentityV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetEase/IdentityV
+aliases: []

@@ -1,0 +1,12 @@
+key: vovsoft/compare-two-texts
+publisher: vovsoft
+name: Vovsoft Compare Two Texts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CompareTwoTexts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CompareTwoTexts
+identifiers:
+- winget: VovSoft.CompareTwoTexts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CompareTwoTexts
+aliases:
+- vovsoft/vovsoft-compare-two-texts

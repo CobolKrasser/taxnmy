@@ -1,0 +1,11 @@
+key: fahrenheit-research/ffw-bot
+publisher: fahrenheit-research
+name: FFW-BOT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/FFW-BOT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/FFW-BOT
+identifiers:
+- winget: FahrenheitResearch.FFW-BOT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/FFW-BOT
+aliases: []

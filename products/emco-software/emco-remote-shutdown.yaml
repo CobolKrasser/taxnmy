@@ -1,0 +1,11 @@
+key: emco-software/emco-remote-shutdown
+publisher: emco-software
+name: EMCO Remote Shutdown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/RemoteShutdown/7
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/RemoteShutdown/7
+identifiers:
+- winget: EMCO.RemoteShutdown.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMCO/RemoteShutdown/7
+aliases: []

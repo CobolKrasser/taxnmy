@@ -1,0 +1,11 @@
+key: kaika/telefone
+publisher: kaika
+name: telefone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HinoN/Telefone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HinoN/Telefone
+identifiers:
+- winget: HinoN.Telefone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HinoN/Telefone
+aliases: []

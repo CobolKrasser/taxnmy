@@ -1,0 +1,11 @@
+key: carvel/ytt
+publisher: carvel
+name: ytt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carvel/ytt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carvel/ytt
+identifiers:
+- winget: Carvel.ytt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carvel/ytt
+aliases: []

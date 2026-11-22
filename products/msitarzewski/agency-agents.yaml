@@ -1,0 +1,11 @@
+key: msitarzewski/agency-agents
+publisher: msitarzewski
+name: Agency Agents
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/msitarzewski/AgencyAgents
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/msitarzewski/AgencyAgents
+identifiers:
+- winget: msitarzewski.AgencyAgents
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/msitarzewski/AgencyAgents
+aliases: []

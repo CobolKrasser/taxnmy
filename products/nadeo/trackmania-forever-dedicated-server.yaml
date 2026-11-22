@@ -1,0 +1,11 @@
+key: nadeo/trackmania-forever-dedicated-server
+publisher: nadeo
+name: Trackmania Forever Dedicated Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nadeo/TrackmaniaForeverServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nadeo/TrackmaniaForeverServer
+identifiers:
+- winget: Nadeo.TrackmaniaForeverServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nadeo/TrackmaniaForeverServer
+aliases: []

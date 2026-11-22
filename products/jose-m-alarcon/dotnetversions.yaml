@@ -1,0 +1,11 @@
+key: jose-m-alarcon/dotnetversions
+publisher: jose-m-alarcon
+name: DotNetVersions
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jmalarcon/DotNetVersions
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jmalarcon/DotNetVersions
+identifiers:
+- winget: jmalarcon.DotNetVersions
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jmalarcon/DotNetVersions
+aliases: []

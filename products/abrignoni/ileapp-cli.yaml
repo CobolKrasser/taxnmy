@@ -1,0 +1,11 @@
+key: abrignoni/ileapp-cli
+publisher: abrignoni
+name: iLEAPP CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abrignoni/iLEAPP-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abrignoni/iLEAPP-cli
+identifiers:
+- winget: abrignoni.iLEAPP-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abrignoni/iLEAPP-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: icecream-apps/icecream-ebook-reader-6
+publisher: icecream-apps
+name: Icecream Ebook Reader 6
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcecreamApps/IcecreamEbookReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcecreamApps/IcecreamEbookReader
+identifiers:
+- winget: IcecreamApps.IcecreamEbookReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcecreamApps/IcecreamEbookReader
+aliases: []

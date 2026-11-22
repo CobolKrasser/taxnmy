@@ -1,0 +1,11 @@
+key: simulot/immich-go
+publisher: simulot
+name: immich-go
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/simulot/immich-go
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/simulot/immich-go
+identifiers:
+- winget: simulot.immich-go
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/simulot/immich-go
+aliases: []

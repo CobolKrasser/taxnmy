@@ -1,0 +1,12 @@
+key: microsoft/mpi
+publisher: microsoft
+name: Microsoft MPI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/msmpi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/msmpi
+identifiers:
+- winget: Microsoft.msmpi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/msmpi
+aliases:
+- microsoft/microsoft-mpi

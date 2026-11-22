@@ -1,0 +1,11 @@
+key: dbvis-software/dbvisualizer
+publisher: dbvis-software
+name: DbVisualizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBVis/DBVisualizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBVis/DBVisualizer
+identifiers:
+- winget: DBVis.DBVisualizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBVis/DBVisualizer
+aliases: []

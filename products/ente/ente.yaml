@@ -1,0 +1,11 @@
+key: ente/ente
+publisher: ente
+name: ente
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/photos-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/photos-desktop
+identifiers:
+- winget: ente-io.photos-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/photos-desktop
+aliases: []

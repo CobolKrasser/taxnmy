@@ -1,0 +1,11 @@
+key: micahkepe/jsongrep
+publisher: micahkepe
+name: jsongrep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/micahkepe/jsongrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/micahkepe/jsongrep
+identifiers:
+- winget: micahkepe.jsongrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/micahkepe/jsongrep
+aliases: []

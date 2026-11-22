@@ -1,0 +1,11 @@
+key: microsoft/devtunnel
+publisher: microsoft
+name: devtunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/devtunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/devtunnel
+identifiers:
+- winget: Microsoft.devtunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/devtunnel
+aliases: []

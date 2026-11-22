@@ -1,0 +1,12 @@
+key: ezwinports/make
+publisher: ezwinports
+name: 'ezwinports: make'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ezwinports/make
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ezwinports/make
+identifiers:
+- winget: ezwinports.make
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ezwinports/make
+aliases:
+- ezwinports/ezwinports-make

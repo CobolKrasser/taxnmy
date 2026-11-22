@@ -1,0 +1,11 @@
+key: socialchain/pi-network
+publisher: socialchain
+name: Pi Network
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SocialchainInc/PiNetwork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SocialchainInc/PiNetwork
+identifiers:
+- winget: SocialchainInc.PiNetwork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SocialchainInc/PiNetwork
+aliases: []

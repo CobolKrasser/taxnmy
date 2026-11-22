@@ -1,0 +1,11 @@
+key: dosbox-staging/dosbox-staging
+publisher: dosbox-staging
+name: DOSBox Staging
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DOSBoxStaging/DOSBoxStaging
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DOSBoxStaging/DOSBoxStaging
+identifiers:
+- winget: DOSBoxStaging.DOSBoxStaging
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DOSBoxStaging/DOSBoxStaging
+aliases: []

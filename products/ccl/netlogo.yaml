@@ -1,0 +1,11 @@
+key: ccl/netlogo
+publisher: ccl
+name: NetLogo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCL/NetLogo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCL/NetLogo
+identifiers:
+- winget: CCL.NetLogo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCL/NetLogo
+aliases: []

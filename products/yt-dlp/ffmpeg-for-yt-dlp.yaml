@@ -1,0 +1,13 @@
+key: yt-dlp/ffmpeg-for-yt-dlp
+publisher: yt-dlp
+name: FFmpeg for yt-dlp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/FFmpeg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/FFmpeg
+identifiers:
+- winget: yt-dlp.FFmpeg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/FFmpeg
+- winget: yt-dlp.FFmpeg.Shared
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/FFmpeg/Shared
+aliases: []

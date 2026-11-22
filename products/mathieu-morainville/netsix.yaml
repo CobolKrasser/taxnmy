@@ -1,0 +1,11 @@
+key: mathieu-morainville/netsix
+publisher: mathieu-morainville
+name: Netsix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pulsardev/netsix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pulsardev/netsix
+identifiers:
+- winget: pulsardev.netsix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pulsardev/netsix
+aliases: []

@@ -1,0 +1,13 @@
+key: cemu/cemu
+publisher: cemu
+name: Cemu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cemu/Cemu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cemu/Cemu
+identifiers:
+- winget: Cemu.Cemu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cemu/Cemu
+- winget: Cemu.Cemu.Experimental
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cemu/Cemu/Experimental
+aliases: []

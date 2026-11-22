@@ -1,0 +1,11 @@
+key: zenarmor/zenarmor
+publisher: zenarmor
+name: Zenarmor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zenarmor/Zenarmor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zenarmor/Zenarmor
+identifiers:
+- winget: Zenarmor.Zenarmor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zenarmor/Zenarmor
+aliases: []

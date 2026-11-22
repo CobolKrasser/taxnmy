@@ -1,0 +1,11 @@
+key: circleback-ai/circleback
+publisher: circleback-ai
+name: Circleback
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CirclebackAI/Circleback
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CirclebackAI/Circleback
+identifiers:
+- winget: CirclebackAI.Circleback
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CirclebackAI/Circleback
+aliases: []

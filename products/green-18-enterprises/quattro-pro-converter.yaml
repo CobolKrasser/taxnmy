@@ -1,0 +1,11 @@
+key: green-18-enterprises/quattro-pro-converter
+publisher: green-18-enterprises
+name: Quattro Pro Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuattroProConverter/QuattroProConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuattroProConverter/QuattroProConverter
+identifiers:
+- winget: QuattroProConverter.QuattroProConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuattroProConverter/QuattroProConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: dewdb/dewdb
+publisher: dewdb
+name: DewDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DewDB/DewDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DewDB/DewDB
+identifiers:
+- winget: DewDB.DewDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DewDB/DewDB
+aliases: []

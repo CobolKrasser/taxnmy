@@ -1,0 +1,11 @@
+key: avborup/kitty-kattis-cli
+publisher: avborup
+name: Kitty Kattis Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/avborup/kitty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/avborup/kitty
+identifiers:
+- winget: avborup.kitty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/avborup/kitty
+aliases: []

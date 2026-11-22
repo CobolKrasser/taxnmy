@@ -1,0 +1,11 @@
+key: bit4id/universal-mw
+publisher: bit4id
+name: Universal MW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bit4id/UniversalMiddleware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bit4id/UniversalMiddleware
+identifiers:
+- winget: Bit4id.UniversalMiddleware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bit4id/UniversalMiddleware
+aliases: []

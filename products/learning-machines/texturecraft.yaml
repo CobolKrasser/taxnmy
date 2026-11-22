@@ -1,0 +1,11 @@
+key: learning-machines/texturecraft
+publisher: learning-machines
+name: TextureCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/TextureCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/TextureCraft
+identifiers:
+- winget: ArtCraft.TextureCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/TextureCraft
+aliases: []

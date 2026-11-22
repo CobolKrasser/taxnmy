@@ -1,0 +1,11 @@
+key: microsoft/directx-texture-diagnostic-tool
+publisher: microsoft
+name: DirectX Texture Diagnostic Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texdiag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texdiag
+identifiers:
+- winget: Microsoft.DirectXTex.Texdiag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texdiag
+aliases: []

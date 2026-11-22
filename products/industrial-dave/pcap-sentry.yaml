@@ -1,0 +1,11 @@
+key: industrial-dave/pcap-sentry
+publisher: industrial-dave
+name: PCAP Sentry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/industrial-dave/PCAP-Sentry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/industrial-dave/PCAP-Sentry
+identifiers:
+- winget: industrial-dave.PCAP-Sentry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/industrial-dave/PCAP-Sentry
+aliases: []

@@ -1,0 +1,11 @@
+key: thebluesky-net/pail
+publisher: thebluesky-net
+name: Pail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBlueSky/Pail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBlueSky/Pail
+identifiers:
+- winget: TheBlueSky.Pail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBlueSky/Pail
+aliases: []

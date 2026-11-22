@@ -1,0 +1,11 @@
+key: fio/fio
+publisher: fio
+name: fio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fio/fio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fio/fio
+identifiers:
+- winget: fio.fio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fio/fio
+aliases: []

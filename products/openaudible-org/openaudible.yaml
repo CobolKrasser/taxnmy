@@ -1,0 +1,11 @@
+key: openaudible-org/openaudible
+publisher: openaudible-org
+name: OpenAudible
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAudible/OpenAudible
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAudible/OpenAudible
+identifiers:
+- winget: OpenAudible.OpenAudible
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAudible/OpenAudible
+aliases: []

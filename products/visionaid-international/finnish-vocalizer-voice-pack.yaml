@@ -1,0 +1,12 @@
+key: visionaid-international/finnish-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Finnish Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Finnish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Finnish
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Finnish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Finnish
+aliases:
+- visionaid-international/visionaid-international-finnish-vocalizer-voice-pack

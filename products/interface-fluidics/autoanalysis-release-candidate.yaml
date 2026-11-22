@@ -1,0 +1,11 @@
+key: interface-fluidics/autoanalysis-release-candidate
+publisher: interface-fluidics
+name: Autoanalysis Release-Candidate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autoanalysis/Release-Candidate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autoanalysis/Release-Candidate
+identifiers:
+- winget: InterfaceFluidics.Autoanalysis.Release-Candidate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autoanalysis/Release-Candidate
+aliases: []

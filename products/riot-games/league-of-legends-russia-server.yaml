@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-russia-server
+publisher: riot-games
+name: League of Legends (Russia server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/RU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/RU
+identifiers:
+- winget: RiotGames.LeagueOfLegends.RU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/RU
+aliases: []

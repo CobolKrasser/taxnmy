@@ -1,0 +1,11 @@
+key: lynne/cyanrip
+publisher: lynne
+name: cyanrip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cyanreg/cyanrip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cyanreg/cyanrip
+identifiers:
+- winget: cyanreg.cyanrip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cyanreg/cyanrip
+aliases: []

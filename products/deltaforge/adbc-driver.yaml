@@ -1,0 +1,12 @@
+key: deltaforge/adbc-driver
+publisher: deltaforge
+name: DeltaForge ADBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/ADBCDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/ADBCDriver
+identifiers:
+- winget: DeltaForge.ADBCDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaForge/ADBCDriver
+aliases:
+- deltaforge/deltaforge-adbc-driver

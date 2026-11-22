@@ -1,0 +1,11 @@
+key: mehuge/multiping
+publisher: mehuge
+name: MultiPing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mehuge/MultiPing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mehuge/MultiPing
+identifiers:
+- winget: Mehuge.MultiPing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mehuge/MultiPing
+aliases: []

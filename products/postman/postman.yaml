@@ -1,0 +1,13 @@
+key: postman/postman
+publisher: postman
+name: Postman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman
+identifiers:
+- winget: Postman.Postman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman
+- winget: Postman.Postman.arm64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/Postman/arm64
+aliases: []

@@ -1,0 +1,11 @@
+key: sober-lemur/pdfsam-basic
+publisher: sober-lemur
+name: PDFsam Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFsam/PDFsam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFsam/PDFsam
+identifiers:
+- winget: PDFsam.PDFsam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFsam/PDFsam
+aliases: []

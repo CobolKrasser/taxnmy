@@ -1,0 +1,14 @@
+key: intel/openvino-toolkit
+publisher: intel
+name: Intel® OpenVINO Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINOToolkit/2026/2/0
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINOToolkit/2026/2/0
+identifiers:
+- winget: Intel.OpenVINOToolkit.2026.2.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINOToolkit/2026/2/0
+- winget: Intel.OpenVINOToolkit.2026.3.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINOToolkit/2026/3/0
+aliases:
+- intel/intel-openvino-toolkit

@@ -1,0 +1,11 @@
+key: cortexkit/magic-context-dashboard
+publisher: cortexkit
+name: Magic Context Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CortexKit/MagicContextDashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CortexKit/MagicContextDashboard
+identifiers:
+- winget: CortexKit.MagicContextDashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CortexKit/MagicContextDashboard
+aliases: []

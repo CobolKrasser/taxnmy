@@ -1,0 +1,11 @@
+key: reasonix/reasonix
+publisher: reasonix
+name: Reasonix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESEngine/ReasonixDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESEngine/ReasonixDesktop
+identifiers:
+- winget: ESEngine.ReasonixDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESEngine/ReasonixDesktop
+aliases: []

@@ -1,0 +1,12 @@
+key: lando/pushbutton-development-environments
+publisher: lando
+name: Lando - Pushbutton Development Environments
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lando/Lando
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lando/Lando
+identifiers:
+- winget: Lando.Lando
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lando/Lando
+aliases:
+- lando/lando-pushbutton-development-environments

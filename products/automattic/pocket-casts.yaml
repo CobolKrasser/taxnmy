@@ -1,0 +1,11 @@
+key: automattic/pocket-casts
+publisher: automattic
+name: Pocket Casts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/PocketCasts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/PocketCasts
+identifiers:
+- winget: Automattic.PocketCasts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/PocketCasts
+aliases: []

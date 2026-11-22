@@ -1,0 +1,12 @@
+key: movavi/business-suite
+publisher: movavi
+name: Movavi Business Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviBusinessSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviBusinessSuite
+identifiers:
+- winget: Movavi.MovaviBusinessSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviBusinessSuite
+aliases:
+- movavi/movavi-business-suite

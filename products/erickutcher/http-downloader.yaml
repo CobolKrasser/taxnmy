@@ -1,0 +1,11 @@
+key: erickutcher/http-downloader
+publisher: erickutcher
+name: HTTP Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erickutcher/httpdownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erickutcher/httpdownloader
+identifiers:
+- winget: erickutcher.httpdownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erickutcher/httpdownloader
+aliases: []

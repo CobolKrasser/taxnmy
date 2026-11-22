@@ -1,0 +1,11 @@
+key: author-more/penpot-desktop
+publisher: author-more
+name: Penpot Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorMore/PenpotDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorMore/PenpotDesktop
+identifiers:
+- winget: AuthorMore.PenpotDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorMore/PenpotDesktop
+aliases: []

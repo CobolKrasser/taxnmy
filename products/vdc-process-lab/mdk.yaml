@@ -1,0 +1,11 @@
+key: vdc-process-lab/mdk
+publisher: vdc-process-lab
+name: MDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/earubioc/MDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/earubioc/MDK
+identifiers:
+- winget: earubioc.MDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/earubioc/MDK
+aliases: []

@@ -1,0 +1,11 @@
+key: loopjs-com/loop-drop
+publisher: loopjs-com
+name: Loop Drop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmckegg/loopdrop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmckegg/loopdrop
+identifiers:
+- winget: mmckegg.loopdrop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmckegg/loopdrop
+aliases: []

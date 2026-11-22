@@ -1,0 +1,11 @@
+key: danish-myo-technology/myodaq
+publisher: danish-myo-technology
+name: MyoDAQ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoDAQ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoDAQ
+identifiers:
+- winget: DMT.MyoDAQ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoDAQ
+aliases: []

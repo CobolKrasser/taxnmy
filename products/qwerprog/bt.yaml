@@ -1,0 +1,11 @@
+key: qwerprog/bt
+publisher: qwerprog
+name: bt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QwerProg/bt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QwerProg/bt
+identifiers:
+- winget: QwerProg.bt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QwerProg/bt
+aliases: []

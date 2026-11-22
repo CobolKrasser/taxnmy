@@ -1,0 +1,11 @@
+key: microsoft/azure-vpn-client
+publisher: microsoft
+name: Azure VPN Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureVPNClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureVPNClient
+identifiers:
+- winget: Microsoft.AzureVPNClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureVPNClient
+aliases: []

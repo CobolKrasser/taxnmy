@@ -1,0 +1,21 @@
+key: jsoftware/j-language
+publisher: jsoftware
+name: J-language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/4
+identifiers:
+- winget: Jsoftware.J.9.03
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/03
+- winget: Jsoftware.J.9.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/4
+- winget: Jsoftware.J.9.4.slim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/4/slim
+- winget: Jsoftware.J.9.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/5
+- winget: Jsoftware.J.9.5.slim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/5/slim
+- winget: Jsoftware.J.9.6.slim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jsoftware/J/9/6/slim
+aliases: []

@@ -1,0 +1,11 @@
+key: any-do/anydo
+publisher: any-do
+name: Anydo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anydo/Anydo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anydo/Anydo
+identifiers:
+- winget: Anydo.Anydo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anydo/Anydo
+aliases: []

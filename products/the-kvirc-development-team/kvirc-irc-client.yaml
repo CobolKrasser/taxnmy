@@ -1,0 +1,11 @@
+key: the-kvirc-development-team/kvirc-irc-client
+publisher: the-kvirc-development-team
+name: KVIrc IRC Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kvirc/KVIrc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kvirc/KVIrc
+identifiers:
+- winget: kvirc.KVIrc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kvirc/KVIrc
+aliases: []

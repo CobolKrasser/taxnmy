@@ -1,0 +1,12 @@
+key: visionaid-international/arabic-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Arabic Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Arabic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Arabic
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Arabic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Arabic
+aliases:
+- visionaid-international/visionaid-international-arabic-vocalizer-voice-pack

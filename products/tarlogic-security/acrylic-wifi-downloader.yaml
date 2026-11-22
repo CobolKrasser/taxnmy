@@ -1,0 +1,11 @@
+key: tarlogic-security/acrylic-wifi-downloader
+publisher: tarlogic-security
+name: Acrylic WiFi Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarlogic/AcrylicWiFiDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarlogic/AcrylicWiFiDownloader
+identifiers:
+- winget: Tarlogic.AcrylicWiFiDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarlogic/AcrylicWiFiDownloader
+aliases: []

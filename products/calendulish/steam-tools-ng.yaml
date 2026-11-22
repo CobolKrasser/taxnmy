@@ -1,0 +1,11 @@
+key: calendulish/steam-tools-ng
+publisher: calendulish
+name: Steam Tools NG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calendulish/SteamToolsNG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calendulish/SteamToolsNG
+identifiers:
+- winget: calendulish.SteamToolsNG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calendulish/SteamToolsNG
+aliases: []

@@ -1,0 +1,11 @@
+key: jdx/mise-en-place
+publisher: jdx
+name: mise-en-place
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/mise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/mise
+identifiers:
+- winget: jdx.mise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/mise
+aliases: []

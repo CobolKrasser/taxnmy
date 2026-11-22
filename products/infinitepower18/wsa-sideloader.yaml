@@ -1,0 +1,11 @@
+key: infinitepower18/wsa-sideloader
+publisher: infinitepower18
+name: WSA Sideloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/infinitepower18/WSASideloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/infinitepower18/WSASideloader
+identifiers:
+- winget: infinitepower18.WSASideloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/infinitepower18/WSASideloader
+aliases: []

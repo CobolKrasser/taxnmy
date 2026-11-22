@@ -1,0 +1,11 @@
+key: jasp/jasp
+publisher: jasp
+name: JASP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JASP/JASP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JASP/JASP
+identifiers:
+- winget: JASP.JASP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JASP/JASP
+aliases: []

@@ -1,0 +1,11 @@
+key: kunal-jangid/desktop-pets
+publisher: kunal-jangid
+name: Desktop Pets
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KunalJangid/DesktopPets
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KunalJangid/DesktopPets
+identifiers:
+- winget: KunalJangid.DesktopPets
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KunalJangid/DesktopPets
+aliases: []

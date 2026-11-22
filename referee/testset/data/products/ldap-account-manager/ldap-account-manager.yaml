@@ -1,0 +1,11 @@
+key: ldap-account-manager/ldap-account-manager
+publisher: ldap-account-manager
+name: LDAP Account Manager
+kind: software
+source: https://endoflife.date/ldap-account-manager
+versions:
+  source: https://endoflife.date/ldap-account-manager
+identifiers:
+- cpe: cpe:2.3:a:ldap-account-manager:ldap_account_manager
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ldap-account-manager.md
+aliases: []

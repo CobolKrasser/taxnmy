@@ -1,0 +1,11 @@
+key: chezhe/aleph
+publisher: chezhe
+name: aleph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chezhe/Aleph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chezhe/Aleph
+identifiers:
+- winget: chezhe.Aleph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chezhe/Aleph
+aliases: []

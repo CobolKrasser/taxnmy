@@ -1,0 +1,11 @@
+key: digitalvolcano-software/textcrawler-free
+publisher: digitalvolcano-software
+name: TextCrawler Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/TextCrawler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/TextCrawler
+identifiers:
+- winget: DigitalVolcanoSoftware.TextCrawler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/TextCrawler
+aliases: []

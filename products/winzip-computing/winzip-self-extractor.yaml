@@ -1,0 +1,11 @@
+key: winzip-computing/winzip-self-extractor
+publisher: winzip-computing
+name: WinZip Self-Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip/SelfExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip/SelfExtractor
+identifiers:
+- winget: Corel.WinZip.SelfExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip/SelfExtractor
+aliases: []

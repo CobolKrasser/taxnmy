@@ -1,0 +1,11 @@
+key: paragon-software/linux-file-systems-for-windows-by-paragon-software
+publisher: paragon-software
+name: Linux File Systems for Windows by Paragon Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/LinuxFileSystems
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/LinuxFileSystems
+identifiers:
+- winget: Paragon.LinuxFileSystems
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/LinuxFileSystems
+aliases: []

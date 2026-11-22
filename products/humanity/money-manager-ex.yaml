@@ -1,0 +1,11 @@
+key: humanity/money-manager-ex
+publisher: humanity
+name: Money Manager EX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moneymanagerex/moneymanagerex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moneymanagerex/moneymanagerex
+identifiers:
+- winget: moneymanagerex.moneymanagerex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moneymanagerex/moneymanagerex
+aliases: []

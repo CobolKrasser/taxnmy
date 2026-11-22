@@ -1,0 +1,11 @@
+key: grid-team/grid
+publisher: grid-team
+name: Grid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethereum/grid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethereum/grid
+identifiers:
+- winget: Ethereum.grid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethereum/grid
+aliases: []

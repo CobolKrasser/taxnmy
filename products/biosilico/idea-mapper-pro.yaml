@@ -1,0 +1,11 @@
+key: biosilico/idea-mapper-pro
+publisher: biosilico
+name: Idea Mapper Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BioSilico/IdeaMapper/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BioSilico/IdeaMapper/Pro
+identifiers:
+- winget: BioSilico.IdeaMapper.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BioSilico/IdeaMapper/Pro
+aliases: []

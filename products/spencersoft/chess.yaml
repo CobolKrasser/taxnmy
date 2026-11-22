@@ -1,0 +1,11 @@
+key: spencersoft/chess
+publisher: spencersoft
+name: Chess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpencerSoft/Chess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpencerSoft/Chess
+identifiers:
+- winget: SpencerSoft.Chess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpencerSoft/Chess
+aliases: []

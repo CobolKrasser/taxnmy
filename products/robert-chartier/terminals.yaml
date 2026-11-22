@@ -1,0 +1,11 @@
+key: robert-chartier/terminals
+publisher: robert-chartier
+name: Terminals
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terminals/Terminals
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terminals/Terminals
+identifiers:
+- winget: Terminals.Terminals
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terminals/Terminals
+aliases: []

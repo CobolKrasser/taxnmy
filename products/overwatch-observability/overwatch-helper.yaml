@@ -1,0 +1,11 @@
+key: overwatch-observability/overwatch-helper
+publisher: overwatch-observability
+name: Overwatch Helper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overwatchobs/OverwatchHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overwatchobs/OverwatchHelper
+identifiers:
+- winget: Overwatchobs.OverwatchHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overwatchobs/OverwatchHelper
+aliases: []

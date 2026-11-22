@@ -1,0 +1,11 @@
+key: wrike-com/wrike-desktop-app
+publisher: wrike-com
+name: Wrike Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wrike/WrikeDesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wrike/WrikeDesktopApp
+identifiers:
+- winget: Wrike.WrikeDesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wrike/WrikeDesktopApp
+aliases: []

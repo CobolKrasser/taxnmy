@@ -1,0 +1,11 @@
+key: huawei-technologies/welink
+publisher: huawei-technologies
+name: Welink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Welink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Welink
+identifiers:
+- winget: Huawei.Welink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Welink
+aliases: []

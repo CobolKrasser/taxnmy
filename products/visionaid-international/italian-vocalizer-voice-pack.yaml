@@ -1,0 +1,12 @@
+key: visionaid-international/italian-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Italian Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Italian
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Italian
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Italian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Italian
+aliases:
+- visionaid-international/visionaid-international-italian-vocalizer-voice-pack

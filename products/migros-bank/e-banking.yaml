@@ -1,0 +1,12 @@
+key: migros-bank/e-banking
+publisher: migros-bank
+name: Migros Bank E-Banking
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MigrosBank/EBanking
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MigrosBank/EBanking
+identifiers:
+- winget: MigrosBank.EBanking
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MigrosBank/EBanking
+aliases:
+- migros-bank/migros-bank-e-banking

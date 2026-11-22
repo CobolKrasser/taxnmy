@@ -1,0 +1,11 @@
+key: plone-foundation/plone
+publisher: plone-foundation
+name: Plone
+kind: software
+source: https://plone.org/download/release-schedule
+versions:
+  source: https://plone.org/download/release-schedule
+identifiers:
+- cpe: cpe:2.3:a:plone:plone
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/plone.md
+aliases: []

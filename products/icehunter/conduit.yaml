@@ -1,0 +1,11 @@
+key: icehunter/conduit
+publisher: icehunter
+name: conduit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icehunter/conduit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icehunter/conduit
+identifiers:
+- winget: Icehunter.conduit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Icehunter/conduit
+aliases: []

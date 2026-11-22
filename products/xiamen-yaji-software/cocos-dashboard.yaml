@@ -1,0 +1,11 @@
+key: xiamen-yaji-software/cocos-dashboard
+publisher: xiamen-yaji-software
+name: Cocos Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cocos/CocosDashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cocos/CocosDashboard
+identifiers:
+- winget: Cocos.CocosDashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cocos/CocosDashboard
+aliases: []

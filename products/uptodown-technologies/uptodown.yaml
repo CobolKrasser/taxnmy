@@ -1,0 +1,11 @@
+key: uptodown-technologies/uptodown
+publisher: uptodown-technologies
+name: Uptodown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uptodown/UptodownClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uptodown/UptodownClient
+identifiers:
+- winget: Uptodown.UptodownClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uptodown/UptodownClient
+aliases: []

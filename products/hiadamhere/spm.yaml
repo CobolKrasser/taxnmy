@@ -1,0 +1,11 @@
+key: hiadamhere/spm
+publisher: hiadamhere
+name: spm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hiadamhere/spm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hiadamhere/spm
+identifiers:
+- winget: hiadamhere.spm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hiadamhere/spm
+aliases: []

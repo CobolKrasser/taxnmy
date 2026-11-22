@@ -1,0 +1,11 @@
+key: paul-le-gall/covid-19
+publisher: paul-le-gall
+name: Covid-19
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/luapp/Covid-19-cases-overview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/luapp/Covid-19-cases-overview
+identifiers:
+- winget: luapp.Covid-19-cases-overview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/luapp/Covid-19-cases-overview
+aliases: []

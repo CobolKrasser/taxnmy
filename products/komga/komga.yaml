@@ -1,0 +1,11 @@
+key: komga/komga
+publisher: komga
+name: Komga
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gotson/Komga
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gotson/Komga
+identifiers:
+- winget: gotson.Komga
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gotson/Komga
+aliases: []

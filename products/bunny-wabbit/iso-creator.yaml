@@ -1,0 +1,11 @@
+key: bunny-wabbit/iso-creator
+publisher: bunny-wabbit
+name: ISO Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bunny-Wabbit/ISOCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bunny-Wabbit/ISOCreator
+identifiers:
+- winget: Bunny-Wabbit.ISOCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bunny-Wabbit/ISOCreator
+aliases: []

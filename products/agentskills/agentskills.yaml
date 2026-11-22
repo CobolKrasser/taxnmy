@@ -1,0 +1,11 @@
+key: agentskills/agentskills
+publisher: agentskills
+name: AgentSkills
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrlsio/AgentSkills
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrlsio/AgentSkills
+identifiers:
+- winget: chrlsio.AgentSkills
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrlsio/AgentSkills
+aliases: []

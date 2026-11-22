@@ -1,0 +1,11 @@
+key: allanchain/sane-break
+publisher: allanchain
+name: Sane Break
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AllanChain/SaneBreak
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AllanChain/SaneBreak
+identifiers:
+- winget: AllanChain.SaneBreak
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AllanChain/SaneBreak
+aliases: []

@@ -1,0 +1,11 @@
+key: cisco/webex-recorder-and-player
+publisher: cisco
+name: Webex Recorder and Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexRecorderAndPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexRecorderAndPlayer
+identifiers:
+- winget: Cisco.WebexRecorderAndPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/WebexRecorderAndPlayer
+aliases: []

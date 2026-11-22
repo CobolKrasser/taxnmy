@@ -1,0 +1,11 @@
+key: anchore/quill
+publisher: anchore
+name: Quill
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Quill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Quill
+identifiers:
+- winget: Anchore.Quill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Quill
+aliases: []

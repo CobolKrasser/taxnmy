@@ -1,0 +1,11 @@
+key: jaya-kumar-reddy-regalla/local-mock-server
+publisher: jaya-kumar-reddy-regalla
+name: Local Mock Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jayakumarreddy/Local-Mock-Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jayakumarreddy/Local-Mock-Server
+identifiers:
+- winget: jayakumarreddy.Local-Mock-Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jayakumarreddy/Local-Mock-Server
+aliases: []

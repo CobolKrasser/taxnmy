@@ -1,0 +1,11 @@
+key: raku/rakubrew
+publisher: raku
+name: Rakubrew
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Raku/Rakubrew
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Raku/Rakubrew
+identifiers:
+- winget: Raku.Rakubrew
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Raku/Rakubrew
+aliases: []

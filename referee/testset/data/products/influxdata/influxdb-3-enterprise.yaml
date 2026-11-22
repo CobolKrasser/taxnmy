@@ -1,0 +1,11 @@
+key: influxdata/influxdb-3-enterprise
+publisher: influxdata
+name: InfluxDB 3 Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/Enterprise
+identifiers:
+- winget: InfluxData.InfluxDB.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/Enterprise
+aliases: []

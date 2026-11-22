@@ -1,0 +1,11 @@
+key: xinnjie/onekeymap-cli
+publisher: xinnjie
+name: onekeymap-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xinnjie/onekeymap-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xinnjie/onekeymap-cli
+identifiers:
+- winget: xinnjie.onekeymap-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xinnjie/onekeymap-cli
+aliases: []

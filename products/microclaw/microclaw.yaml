@@ -1,0 +1,11 @@
+key: microclaw/microclaw
+publisher: microclaw
+name: MicroClaw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroClaw/MicroClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroClaw/MicroClaw
+identifiers:
+- winget: MicroClaw.MicroClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroClaw/MicroClaw
+aliases: []

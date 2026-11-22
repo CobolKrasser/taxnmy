@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-recovery-server
+publisher: diskinternals-research
+name: DiskInternals Recovery Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/RecoveryServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/RecoveryServer
+identifiers:
+- winget: DiskInternals.RecoveryServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/RecoveryServer
+aliases: []

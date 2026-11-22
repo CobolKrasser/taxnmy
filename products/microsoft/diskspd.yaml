@@ -1,0 +1,11 @@
+key: microsoft/diskspd
+publisher: microsoft
+name: DiskSpd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DiskSpd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DiskSpd
+identifiers:
+- winget: Microsoft.DiskSpd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DiskSpd
+aliases: []

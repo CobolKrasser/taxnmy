@@ -1,0 +1,11 @@
+key: tortoisesvn/tortoisesvn
+publisher: tortoisesvn
+name: TortoiseSVN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseSVN/TortoiseSVN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseSVN/TortoiseSVN
+identifiers:
+- winget: TortoiseSVN.TortoiseSVN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseSVN/TortoiseSVN
+aliases: []

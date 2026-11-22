@@ -1,0 +1,11 @@
+key: avr-dudes/avrdude-mingw
+publisher: avr-dudes
+name: AVRDUDE MinGW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW
+identifiers:
+- winget: AVRDudes.AVRDUDE.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE/MinGW
+aliases: []

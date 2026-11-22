@@ -1,0 +1,12 @@
+key: zorus/archon-agent
+publisher: zorus
+name: Zorus Archon Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZorusInc/ArchonAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZorusInc/ArchonAgent
+identifiers:
+- winget: ZorusInc.ArchonAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZorusInc/ArchonAgent
+aliases:
+- zorus/zorus-archon-agent

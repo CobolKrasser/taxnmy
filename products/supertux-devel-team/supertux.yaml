@@ -1,0 +1,11 @@
+key: supertux-devel-team/supertux
+publisher: supertux-devel-team
+name: SuperTux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperTux/SuperTux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperTux/SuperTux
+identifiers:
+- winget: SuperTux.SuperTux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperTux/SuperTux
+aliases: []

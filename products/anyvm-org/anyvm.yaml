@@ -1,0 +1,11 @@
+key: anyvm-org/anyvm
+publisher: anyvm-org
+name: anyvm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anyvm-org/anyvm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anyvm-org/anyvm
+identifiers:
+- winget: anyvm-org.anyvm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anyvm-org/anyvm
+aliases: []

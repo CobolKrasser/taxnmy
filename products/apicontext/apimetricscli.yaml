@@ -1,0 +1,11 @@
+key: apicontext/apimetricscli
+publisher: apicontext
+name: APImetricsCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APIContext/APImetricsCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APIContext/APImetricsCLI
+identifiers:
+- winget: APIContext.APImetricsCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APIContext/APImetricsCLI
+aliases: []

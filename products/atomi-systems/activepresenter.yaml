@@ -1,0 +1,11 @@
+key: atomi-systems/activepresenter
+publisher: atomi-systems
+name: ActivePresenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atomi/ActivePresenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atomi/ActivePresenter
+identifiers:
+- winget: Atomi.ActivePresenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atomi/ActivePresenter
+aliases: []

@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-diskrecovery
+publisher: o-and-o-software
+name: O&O DiskRecovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskRecovery
+identifiers:
+- winget: OO-Software.DiskRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskRecovery
+aliases: []

@@ -1,0 +1,11 @@
+key: wic-support/wic-reset-utility
+publisher: wic-support
+name: WIC Reset Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WICSupport/wicreset
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WICSupport/wicreset
+identifiers:
+- winget: WICSupport.wicreset
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WICSupport/wicreset
+aliases: []

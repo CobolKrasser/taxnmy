@@ -1,0 +1,11 @@
+key: edrlab/thorium
+publisher: edrlab
+name: Thorium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDRLab/Thorium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDRLab/Thorium
+identifiers:
+- winget: EDRLab.Thorium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDRLab/Thorium
+aliases: []

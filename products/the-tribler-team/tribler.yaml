@@ -1,0 +1,11 @@
+key: the-tribler-team/tribler
+publisher: the-tribler-team
+name: Tribler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tribler/Tribler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tribler/Tribler
+identifiers:
+- winget: Tribler.Tribler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tribler/Tribler
+aliases: []

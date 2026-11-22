@@ -1,0 +1,11 @@
+key: rode-microphones/rodecaster-series-asio-driver
+publisher: rode-microphones
+name: RODECaster Series ASIO Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterSeriesASIODriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterSeriesASIODriver
+identifiers:
+- winget: RODE.RODECasterSeriesASIODriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterSeriesASIODriver
+aliases: []

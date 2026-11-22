@@ -1,0 +1,11 @@
+key: sonicwall/connect-tunnel
+publisher: sonicwall
+name: Connect Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/ConnectTunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/ConnectTunnel
+identifiers:
+- winget: SonicWall.ConnectTunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/ConnectTunnel
+aliases: []

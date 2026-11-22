@@ -1,0 +1,11 @@
+key: syncany-team/syncany
+publisher: syncany-team
+name: Syncany
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncany/Syncany
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncany/Syncany
+identifiers:
+- winget: Syncany.Syncany
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syncany/Syncany
+aliases: []

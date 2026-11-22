@@ -1,0 +1,11 @@
+key: vates/xcp-ng-windows-guest-tools
+publisher: vates
+name: XCP-ng Windows Guest Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XCP-ng/WindowsPvDrivers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XCP-ng/WindowsPvDrivers
+identifiers:
+- winget: XCP-ng.WindowsPvDrivers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XCP-ng/WindowsPvDrivers
+aliases: []

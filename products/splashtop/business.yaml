@@ -1,0 +1,12 @@
+key: splashtop/business
+publisher: splashtop
+name: Splashtop Business
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopBusiness
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopBusiness
+identifiers:
+- winget: Splashtop.SplashtopBusiness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SplashtopBusiness
+aliases:
+- splashtop/splashtop-business

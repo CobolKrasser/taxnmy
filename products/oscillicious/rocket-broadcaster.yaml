@@ -1,0 +1,11 @@
+key: oscillicious/rocket-broadcaster
+publisher: oscillicious
+name: Rocket Broadcaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscillicious/RocketBroadcaster/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscillicious/RocketBroadcaster/Free
+identifiers:
+- winget: Oscillicious.RocketBroadcaster.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscillicious/RocketBroadcaster/Free
+aliases: []

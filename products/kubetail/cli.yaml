@@ -1,0 +1,12 @@
+key: kubetail/cli
+publisher: kubetail
+name: Kubetail CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubetail/Kubetail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubetail/Kubetail
+identifiers:
+- winget: Kubetail.Kubetail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubetail/Kubetail
+aliases:
+- kubetail/kubetail-cli

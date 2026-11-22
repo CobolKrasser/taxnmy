@@ -1,0 +1,11 @@
+key: ccgnomes/vault-manager
+publisher: ccgnomes
+name: Vault Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCGnomes/VaultManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCGnomes/VaultManager
+identifiers:
+- winget: CCGnomes.VaultManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCGnomes/VaultManager
+aliases: []

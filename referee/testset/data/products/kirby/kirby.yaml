@@ -1,0 +1,11 @@
+key: kirby/kirby
+publisher: kirby
+name: Kirby
+kind: software
+source: https://endoflife.date/kirby
+versions:
+  source: https://endoflife.date/kirby
+identifiers:
+- cpe: cpe:2.3:a:getkirby:kirby
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kirby.md
+aliases: []

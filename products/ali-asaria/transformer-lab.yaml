@@ -1,0 +1,11 @@
+key: ali-asaria/transformer-lab
+publisher: ali-asaria
+name: Transformer Lab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransformerLab/TransformerLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransformerLab/TransformerLab
+identifiers:
+- winget: TransformerLab.TransformerLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TransformerLab/TransformerLab
+aliases: []

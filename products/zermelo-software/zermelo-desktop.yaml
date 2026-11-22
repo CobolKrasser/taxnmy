@@ -1,0 +1,11 @@
+key: zermelo-software/zermelo-desktop
+publisher: zermelo-software
+name: Zermelo Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZermeloSoftwareBV/ZermeloDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZermeloSoftwareBV/ZermeloDesktop
+identifiers:
+- winget: ZermeloSoftwareBV.ZermeloDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZermeloSoftwareBV/ZermeloDesktop
+aliases: []

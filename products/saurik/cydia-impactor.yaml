@@ -1,0 +1,11 @@
+key: saurik/cydia-impactor
+publisher: saurik
+name: Cydia Impactor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saurik/CydiaImpactor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saurik/CydiaImpactor
+identifiers:
+- winget: Saurik.CydiaImpactor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saurik/CydiaImpactor
+aliases: []

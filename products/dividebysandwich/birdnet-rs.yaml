@@ -1,0 +1,11 @@
+key: dividebysandwich/birdnet-rs
+publisher: dividebysandwich
+name: BirdNET-RS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/BirdNET-RS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/BirdNET-RS
+identifiers:
+- winget: dividebysandwich.BirdNET-RS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/BirdNET-RS
+aliases: []

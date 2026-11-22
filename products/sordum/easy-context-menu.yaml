@@ -1,0 +1,11 @@
+key: sordum/easy-context-menu
+publisher: sordum
+name: Easy Context MEnu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/EasyContextMenu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/EasyContextMenu
+identifiers:
+- winget: sordum.EasyContextMenu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/EasyContextMenu
+aliases: []

@@ -1,0 +1,11 @@
+key: mistertea/eternal-terminal
+publisher: mistertea
+name: Eternal Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisterTea/EternalTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisterTea/EternalTerminal
+identifiers:
+- winget: MisterTea.EternalTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MisterTea/EternalTerminal
+aliases: []

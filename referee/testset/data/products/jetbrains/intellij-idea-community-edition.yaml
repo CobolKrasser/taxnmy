@@ -1,0 +1,13 @@
+key: jetbrains/intellij-idea-community-edition
+publisher: jetbrains
+name: IntelliJ IDEA Community Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Community
+identifiers:
+- winget: JetBrains.IntelliJIDEA.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Community
+- winget: JetBrains.IntelliJIDEA.Community.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Community/EAP
+aliases: []

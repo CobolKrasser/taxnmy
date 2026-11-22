@@ -1,0 +1,11 @@
+key: https-go-dev/go-programming-language
+publisher: https-go-dev
+name: Go Programming Language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoLang/Go
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoLang/Go
+identifiers:
+- winget: GoLang.Go
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoLang/Go
+aliases: []

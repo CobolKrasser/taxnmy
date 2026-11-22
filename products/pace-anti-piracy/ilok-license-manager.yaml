@@ -1,0 +1,11 @@
+key: pace-anti-piracy/ilok-license-manager
+publisher: pace-anti-piracy
+name: iLok License Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PACE/iLokLicenseManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PACE/iLokLicenseManager
+identifiers:
+- winget: PACE.iLokLicenseManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PACE/iLokLicenseManager
+aliases: []

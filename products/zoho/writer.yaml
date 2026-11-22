@@ -1,0 +1,11 @@
+key: zoho/writer
+publisher: zoho
+name: Writer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Writer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Writer
+identifiers:
+- winget: Zoho.Writer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Writer
+aliases: []

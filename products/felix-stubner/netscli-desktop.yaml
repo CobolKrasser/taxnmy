@@ -1,0 +1,11 @@
+key: felix-stubner/netscli-desktop
+publisher: felix-stubner
+name: NetsCLI Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstubner/netscli/gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstubner/netscli/gui
+identifiers:
+- winget: fstubner.netscli.gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fstubner/netscli/gui
+aliases: []

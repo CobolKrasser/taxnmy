@@ -1,0 +1,11 @@
+key: zhang-astronaut/hardware-monitor-pawnio
+publisher: zhang-astronaut
+name: Hardware Monitor (PawnIO)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhang-astronaut/HardwareMonitorCmdPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhang-astronaut/HardwareMonitorCmdPal
+identifiers:
+- winget: zhang-astronaut.HardwareMonitorCmdPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhang-astronaut/HardwareMonitorCmdPal
+aliases: []

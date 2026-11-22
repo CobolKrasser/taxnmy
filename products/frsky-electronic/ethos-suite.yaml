@@ -1,0 +1,11 @@
+key: frsky-electronic/ethos-suite
+publisher: frsky-electronic
+name: Ethos Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrSky/EthosSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrSky/EthosSuite
+identifiers:
+- winget: FrSky.EthosSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrSky/EthosSuite
+aliases: []

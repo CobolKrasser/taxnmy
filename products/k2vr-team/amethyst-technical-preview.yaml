@@ -1,0 +1,11 @@
+key: k2vr-team/amethyst-technical-preview
+publisher: k2vr-team
+name: Amethyst Technical Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K2VRTeam/AME2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K2VRTeam/AME2
+identifiers:
+- winget: K2VRTeam.AME2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/K2VRTeam/AME2
+aliases: []

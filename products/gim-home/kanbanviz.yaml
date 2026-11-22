@@ -1,0 +1,11 @@
+key: gim-home/kanbanviz
+publisher: gim-home
+name: KanbanViz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GimHome/KanbanViz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GimHome/KanbanViz
+identifiers:
+- winget: GimHome.KanbanViz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GimHome/KanbanViz
+aliases: []

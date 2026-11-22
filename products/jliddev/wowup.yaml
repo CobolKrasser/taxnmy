@@ -1,0 +1,11 @@
+key: jliddev/wowup
+publisher: jliddev
+name: WowUp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/Wowup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/Wowup
+identifiers:
+- winget: WowUp.Wowup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/Wowup
+aliases: []

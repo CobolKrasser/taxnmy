@@ -8,4 +8,14 @@ versions:
 identifiers:
 - purl: pkg:chocolatey/unity
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/unity.md
+- winget: Unity.Unity.2020
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/Unity/2020
+- winget: Unity.Unity.2021
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/Unity/2021
+- winget: Unity.Unity.2022
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/Unity/2022
+- winget: Unity.Unity.2023
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/Unity/2023
+- winget: Unity.Unity.6000
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/Unity/6000
 aliases: []

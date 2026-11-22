@@ -1,0 +1,11 @@
+key: redisant/tinygui
+publisher: redisant
+name: TinyGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/TinyGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/TinyGUI
+identifiers:
+- winget: Redisant.TinyGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/TinyGUI
+aliases: []

@@ -1,0 +1,11 @@
+key: guhan/good-commit
+publisher: guhan
+name: Good Commit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guhan/GoodCommit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guhan/GoodCommit
+identifiers:
+- winget: Guhan.GoodCommit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guhan/GoodCommit
+aliases: []

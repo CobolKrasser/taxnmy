@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-mysql-recovery
+publisher: diskinternals-research
+name: DiskInternals MySQL Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MySQLRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MySQLRecovery
+identifiers:
+- winget: DiskInternals.MySQLRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MySQLRecovery
+aliases: []

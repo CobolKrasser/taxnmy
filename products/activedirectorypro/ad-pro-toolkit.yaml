@@ -1,0 +1,11 @@
+key: activedirectorypro/ad-pro-toolkit
+publisher: activedirectorypro
+name: AD Pro Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDirectoryPro/ADProToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDirectoryPro/ADProToolkit
+identifiers:
+- winget: ActiveDirectoryPro.ADProToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDirectoryPro/ADProToolkit
+aliases: []

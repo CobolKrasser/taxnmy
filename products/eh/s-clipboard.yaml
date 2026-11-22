@@ -1,0 +1,12 @@
+key: eh/s-clipboard
+publisher: eh
+name: Eh's clipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eh/clipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eh/clipboard
+identifiers:
+- winget: Eh.clipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eh/clipboard
+aliases:
+- eh/eh-s-clipboard

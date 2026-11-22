@@ -1,0 +1,11 @@
+key: rocketresearch/compair-cli
+publisher: rocketresearch
+name: Compair CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RocketResearchInc/Compair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RocketResearchInc/Compair
+identifiers:
+- winget: RocketResearchInc.Compair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RocketResearchInc/Compair
+aliases: []

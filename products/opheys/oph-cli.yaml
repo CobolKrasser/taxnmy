@@ -1,0 +1,11 @@
+key: opheys/oph-cli
+publisher: opheys
+name: oph-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opheys/oph-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opheys/oph-cli
+identifiers:
+- winget: Opheys.oph-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opheys/oph-cli
+aliases: []

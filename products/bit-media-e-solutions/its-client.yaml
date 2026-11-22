@@ -1,0 +1,11 @@
+key: bit-media-e-solutions/its-client
+publisher: bit-media-e-solutions
+name: ITS Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitmediae-SolutionsGmbH/ITSClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitmediae-SolutionsGmbH/ITSClient
+identifiers:
+- winget: bitmediae-SolutionsGmbH.ITSClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitmediae-SolutionsGmbH/ITSClient
+aliases: []

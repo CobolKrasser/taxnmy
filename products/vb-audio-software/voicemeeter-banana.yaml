@@ -1,0 +1,11 @@
+key: vb-audio-software/voicemeeter-banana
+publisher: vb-audio-software
+name: Voicemeeter Banana
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter/Banana
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter/Banana
+identifiers:
+- winget: VB-Audio.Voicemeeter.Banana
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter/Banana
+aliases: []

@@ -1,0 +1,11 @@
+key: remeha/recom-pcst
+publisher: remeha
+name: Recom (PCST)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remeha/ServiceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remeha/ServiceTool
+identifiers:
+- winget: Remeha.ServiceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remeha/ServiceTool
+aliases: []

@@ -1,0 +1,11 @@
+key: quotation-factory/higgx-quotation-factory-cli
+publisher: quotation-factory
+name: HiggX - Quotation Factory CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiggX/QFCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiggX/QFCLI
+identifiers:
+- winget: HiggX.QFCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiggX/QFCLI
+aliases: []

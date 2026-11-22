@@ -1,0 +1,11 @@
+key: epicmorg/atlassian-downloader
+publisher: epicmorg
+name: Atlassian Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicMorg/AtlassianDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicMorg/AtlassianDownloader
+identifiers:
+- winget: EpicMorg.AtlassianDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicMorg/AtlassianDownloader
+aliases: []

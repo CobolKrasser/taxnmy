@@ -1,0 +1,11 @@
+key: riri/websearchshortcut
+publisher: riri
+name: WebSearchShortcut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riri/WebSearchShortcut
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riri/WebSearchShortcut
+identifiers:
+- winget: Riri.WebSearchShortcut
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Riri/WebSearchShortcut
+aliases: []

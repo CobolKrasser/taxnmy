@@ -1,0 +1,11 @@
+key: pot-app/pot
+publisher: pot-app
+name: pot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pylogmon/pot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pylogmon/pot
+identifiers:
+- winget: Pylogmon.pot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pylogmon/pot
+aliases: []

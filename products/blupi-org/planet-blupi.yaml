@@ -1,0 +1,11 @@
+key: blupi-org/planet-blupi
+publisher: blupi-org
+name: Planet Blupi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epsitec/PlanetBlupi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epsitec/PlanetBlupi
+identifiers:
+- winget: Epsitec.PlanetBlupi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epsitec/PlanetBlupi
+aliases: []

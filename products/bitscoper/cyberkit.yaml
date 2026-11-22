@@ -1,0 +1,12 @@
+key: bitscoper/cyberkit
+publisher: bitscoper
+name: Bitscoper CyberKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitscoper/BitscoperCyberKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitscoper/BitscoperCyberKit
+identifiers:
+- winget: bitscoper.BitscoperCyberKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bitscoper/BitscoperCyberKit
+aliases:
+- bitscoper/bitscoper-cyberkit

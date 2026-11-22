@@ -1,0 +1,11 @@
+key: gougelet-pierre-e/xnview
+publisher: gougelet-pierre-e
+name: XnView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnView/Classic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnView/Classic
+identifiers:
+- winget: XnSoft.XnView.Classic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnView/Classic
+aliases: []

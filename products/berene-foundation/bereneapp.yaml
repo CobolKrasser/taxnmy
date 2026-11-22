@@ -1,0 +1,11 @@
+key: berene-foundation/bereneapp
+publisher: berene-foundation
+name: BereneApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BereneFoundation/BereneApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BereneFoundation/BereneApp
+identifiers:
+- winget: BereneFoundation.BereneApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BereneFoundation/BereneApp
+aliases: []

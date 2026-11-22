@@ -1,0 +1,11 @@
+key: cerberauth/jwtop
+publisher: cerberauth
+name: jwtop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CerberAuth/jwtop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CerberAuth/jwtop
+identifiers:
+- winget: CerberAuth.jwtop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CerberAuth/jwtop
+aliases: []

@@ -1,0 +1,11 @@
+key: unhappychoice/gittype
+publisher: unhappychoice
+name: GitType
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unhappychoice/gittype
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unhappychoice/gittype
+identifiers:
+- winget: unhappychoice.gittype
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/unhappychoice/gittype
+aliases: []

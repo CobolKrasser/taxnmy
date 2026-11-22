@@ -1,0 +1,11 @@
+key: microsoft/apm-agent-package-manager
+publisher: microsoft
+name: APM – Agent Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/APM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/APM
+identifiers:
+- winget: Microsoft.APM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/APM
+aliases: []

@@ -1,0 +1,11 @@
+key: ailuntx/winmon
+publisher: ailuntx
+name: winmon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ailuntx/Winmon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ailuntx/Winmon
+identifiers:
+- winget: Ailuntx.Winmon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ailuntx/Winmon
+aliases: []

@@ -1,0 +1,11 @@
+key: open-source-developer-daniel-damit/techshell
+publisher: open-source-developer-daniel-damit
+name: TechShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechToolbox/TechShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechToolbox/TechShell
+identifiers:
+- winget: TechToolbox.TechShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechToolbox/TechShell
+aliases: []

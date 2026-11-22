@@ -1,0 +1,13 @@
+key: next-generation-software/mremoteng
+publisher: next-generation-software
+name: mRemoteNG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mRemoteNG/mRemoteNG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mRemoteNG/mRemoteNG
+identifiers:
+- winget: mRemoteNG.mRemoteNG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mRemoteNG/mRemoteNG
+- winget: mRemoteNG.mRemoteNG.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mRemoteNG/mRemoteNG/Nightly
+aliases: []

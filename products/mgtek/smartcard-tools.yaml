@@ -1,0 +1,11 @@
+key: mgtek/smartcard-tools
+publisher: mgtek
+name: SmartCard Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MGTEK/SmartCardTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MGTEK/SmartCardTools
+identifiers:
+- winget: MGTEK.SmartCardTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MGTEK/SmartCardTools
+aliases: []

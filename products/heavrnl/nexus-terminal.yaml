@@ -1,0 +1,11 @@
+key: heavrnl/nexus-terminal
+publisher: heavrnl
+name: Nexus Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heavrnl/NexusTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heavrnl/NexusTerminal
+identifiers:
+- winget: Heavrnl.NexusTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heavrnl/NexusTerminal
+aliases: []

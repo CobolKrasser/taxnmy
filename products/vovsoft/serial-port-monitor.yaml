@@ -1,0 +1,12 @@
+key: vovsoft/serial-port-monitor
+publisher: vovsoft
+name: Vovsoft Serial Port Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SerialPortMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SerialPortMonitor
+identifiers:
+- winget: VovSoft.SerialPortMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SerialPortMonitor
+aliases:
+- vovsoft/vovsoft-serial-port-monitor

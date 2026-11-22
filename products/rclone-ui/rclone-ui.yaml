@@ -1,0 +1,11 @@
+key: rclone-ui/rclone-ui
+publisher: rclone-ui
+name: Rclone UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RcloneUI/RcloneUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RcloneUI/RcloneUI
+identifiers:
+- winget: RcloneUI.RcloneUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RcloneUI/RcloneUI
+aliases: []

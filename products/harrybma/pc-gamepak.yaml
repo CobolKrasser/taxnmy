@@ -1,0 +1,11 @@
+key: harrybma/pc-gamepak
+publisher: harrybma
+name: PC GamePak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HarryBMa/PCGamePak
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HarryBMa/PCGamePak
+identifiers:
+- winget: HarryBMa.PCGamePak
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HarryBMa/PCGamePak
+aliases: []

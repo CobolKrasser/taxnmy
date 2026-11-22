@@ -1,0 +1,11 @@
+key: contour-terminal-emulator/contour
+publisher: contour-terminal-emulator
+name: Contour
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/contour-terminal/Contour
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/contour-terminal/Contour
+identifiers:
+- winget: contour-terminal.Contour
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/contour-terminal/Contour
+aliases: []

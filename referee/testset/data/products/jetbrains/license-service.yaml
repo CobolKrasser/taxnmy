@@ -1,0 +1,12 @@
+key: jetbrains/license-service
+publisher: jetbrains
+name: JetBrains License Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/LicenseService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/LicenseService
+identifiers:
+- winget: JetBrains.LicenseService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/LicenseService
+aliases:
+- jetbrains/jetbrains-license-service

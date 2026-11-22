@@ -1,0 +1,11 @@
+key: christof-muller/deviceshelf
+publisher: christof-muller
+name: DeviceShelf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristofMueller/DeviceShelf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristofMueller/DeviceShelf
+identifiers:
+- winget: ChristofMueller.DeviceShelf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChristofMueller/DeviceShelf
+aliases: []

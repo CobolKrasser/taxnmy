@@ -1,0 +1,11 @@
+key: aprel-tech/hvmanager
+publisher: aprel-tech
+name: HvManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/HVManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/HVManager
+identifiers:
+- winget: AprelTech.HVManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/HVManager
+aliases: []

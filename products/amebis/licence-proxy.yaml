@@ -1,0 +1,12 @@
+key: amebis/licence-proxy
+publisher: amebis
+name: Amebis Licence Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amebis/ALicPos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amebis/ALicPos
+identifiers:
+- winget: Amebis.ALicPos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amebis/ALicPos
+aliases:
+- amebis/amebis-licence-proxy

@@ -1,0 +1,12 @@
+key: auslogics/file-recovery
+publisher: auslogics
+name: Auslogics File Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/FileRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/FileRecovery
+identifiers:
+- winget: Auslogics.FileRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/FileRecovery
+aliases:
+- auslogics/auslogics-file-recovery

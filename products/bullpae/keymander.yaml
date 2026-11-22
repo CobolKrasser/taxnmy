@@ -1,0 +1,11 @@
+key: bullpae/keymander
+publisher: bullpae
+name: keymander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bullpae/keymander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bullpae/keymander
+identifiers:
+- winget: bullpae.keymander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bullpae/keymander
+aliases: []

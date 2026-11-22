@@ -1,0 +1,11 @@
+key: mklabs/staruml
+publisher: mklabs
+name: StarUML
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MKLabs/StarUML
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MKLabs/StarUML
+identifiers:
+- winget: MKLabs.StarUML
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MKLabs/StarUML
+aliases: []

@@ -1,0 +1,11 @@
+key: sam-hocevar/wincompose
+publisher: sam-hocevar
+name: WinCompose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamHocevar/WinCompose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamHocevar/WinCompose
+identifiers:
+- winget: SamHocevar.WinCompose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamHocevar/WinCompose
+aliases: []

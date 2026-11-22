@@ -1,0 +1,11 @@
+key: reothor/elevate-cli
+publisher: reothor
+name: Elevate CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reothor/Elevate/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reothor/Elevate/CLI
+identifiers:
+- winget: Reothor.Elevate.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reothor/Elevate/CLI
+aliases: []

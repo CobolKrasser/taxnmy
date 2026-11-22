@@ -1,0 +1,13 @@
+key: mike-fahrmann/gallery-dl
+publisher: mike-fahrmann
+name: gallery-dl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikf/gallery-dl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikf/gallery-dl
+identifiers:
+- winget: mikf.gallery-dl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikf/gallery-dl
+- winget: mikf.gallery-dl.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikf/gallery-dl/Nightly
+aliases: []

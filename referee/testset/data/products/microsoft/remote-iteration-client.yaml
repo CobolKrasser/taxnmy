@@ -1,0 +1,11 @@
+key: microsoft/remote-iteration-client
+publisher: microsoft
+name: Remote Iteration Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/RemoteIterationClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/RemoteIterationClient
+identifiers:
+- winget: Microsoft.Gaming.RemoteIterationClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/RemoteIterationClient
+aliases: []

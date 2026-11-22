@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-workspaces-applications-client
+publisher: amazon-web-services
+name: Amazon WorkSpaces Applications Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AppStream
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AppStream
+identifiers:
+- winget: Amazon.AppStream
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AppStream
+aliases: []

@@ -1,0 +1,12 @@
+key: visionaid-international/spanish-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Spanish Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Spanish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Spanish
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Spanish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Spanish
+aliases:
+- visionaid-international/visionaid-international-spanish-vocalizer-voice-pack

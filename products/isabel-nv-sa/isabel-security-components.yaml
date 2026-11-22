@@ -1,0 +1,11 @@
+key: isabel-nv-sa/isabel-security-components
+publisher: isabel-nv-sa
+name: Isabel Security Components
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Isabel/IsabelSecurityComponents
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Isabel/IsabelSecurityComponents
+identifiers:
+- winget: Isabel.IsabelSecurityComponents
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Isabel/IsabelSecurityComponents
+aliases: []

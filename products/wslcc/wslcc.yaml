@@ -1,0 +1,11 @@
+key: wslcc/wslcc
+publisher: wslcc
+name: WSLCC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iwvw/WSLCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iwvw/WSLCC
+identifiers:
+- winget: iwvw.WSLCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iwvw/WSLCC
+aliases: []

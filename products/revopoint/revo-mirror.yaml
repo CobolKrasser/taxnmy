@@ -1,0 +1,11 @@
+key: revopoint/revo-mirror
+publisher: revopoint
+name: Revo Mirror
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMirror
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMirror
+identifiers:
+- winget: Revopoint.RevoMirror
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMirror
+aliases: []

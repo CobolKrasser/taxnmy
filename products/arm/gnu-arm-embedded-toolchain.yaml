@@ -1,0 +1,11 @@
+key: arm/gnu-arm-embedded-toolchain
+publisher: arm
+name: GNU Arm Embedded Toolchain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/GnuArmEmbeddedToolchain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/GnuArmEmbeddedToolchain
+identifiers:
+- winget: Arm.GnuArmEmbeddedToolchain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/GnuArmEmbeddedToolchain
+aliases: []

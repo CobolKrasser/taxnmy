@@ -1,0 +1,11 @@
+key: analog-devices/iio-oscilloscope
+publisher: analog-devices
+name: IIO Oscilloscope
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogDevicesInc/IIO-Oscilloscope
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogDevicesInc/IIO-Oscilloscope
+identifiers:
+- winget: AnalogDevicesInc.IIO-Oscilloscope
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogDevicesInc/IIO-Oscilloscope
+aliases: []

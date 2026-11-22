@@ -1,0 +1,11 @@
+key: epigramx/wiimotehook
+publisher: epigramx
+name: WiimoteHook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/epigramx/WiimoteHook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/epigramx/WiimoteHook
+identifiers:
+- winget: epigramx.WiimoteHook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/epigramx/WiimoteHook
+aliases: []

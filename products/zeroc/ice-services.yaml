@@ -1,0 +1,11 @@
+key: zeroc/ice-services
+publisher: zeroc
+name: Ice Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroC/IceServices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroC/IceServices
+identifiers:
+- winget: ZeroC.IceServices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroC/IceServices
+aliases: []

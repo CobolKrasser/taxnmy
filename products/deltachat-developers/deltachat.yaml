@@ -1,0 +1,11 @@
+key: deltachat-developers/deltachat
+publisher: deltachat-developers
+name: DeltaChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaChat/DeltaChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaChat/DeltaChat
+identifiers:
+- winget: DeltaChat.DeltaChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeltaChat/DeltaChat
+aliases: []

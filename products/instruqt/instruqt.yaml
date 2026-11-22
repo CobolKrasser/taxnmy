@@ -1,0 +1,11 @@
+key: instruqt/instruqt
+publisher: instruqt
+name: Instruqt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Instruqt/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Instruqt/CLI
+identifiers:
+- winget: Instruqt.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Instruqt/CLI
+aliases: []

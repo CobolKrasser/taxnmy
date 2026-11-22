@@ -1,0 +1,11 @@
+key: maxime-cote/ttimer
+publisher: maxime-cote
+name: ttimer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ttimer/ttimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ttimer/ttimer
+identifiers:
+- winget: ttimer.ttimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ttimer/ttimer
+aliases: []

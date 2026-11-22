@@ -1,0 +1,11 @@
+key: nmap-project/nmap
+publisher: nmap-project
+name: Nmap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insecure/Nmap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insecure/Nmap
+identifiers:
+- winget: Insecure.Nmap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insecure/Nmap
+aliases: []

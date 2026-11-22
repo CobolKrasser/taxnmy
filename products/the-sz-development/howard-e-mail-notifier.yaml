@@ -1,0 +1,11 @@
+key: the-sz-development/howard-e-mail-notifier
+publisher: the-sz-development
+name: Howard E-Mail Notifier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Howard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Howard
+identifiers:
+- winget: the-sz.Howard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Howard
+aliases: []

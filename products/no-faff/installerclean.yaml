@@ -1,0 +1,11 @@
+key: no-faff/installerclean
+publisher: no-faff
+name: InstallerClean
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoFaff/InstallerClean
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoFaff/InstallerClean
+identifiers:
+- winget: NoFaff.InstallerClean
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoFaff/InstallerClean
+aliases: []

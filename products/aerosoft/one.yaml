@@ -1,0 +1,12 @@
+key: aerosoft/one
+publisher: aerosoft
+name: Aerosoft One
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aerosoft/One
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aerosoft/One
+identifiers:
+- winget: Aerosoft.One
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aerosoft/One
+aliases:
+- aerosoft/aerosoft-one

@@ -1,0 +1,12 @@
+key: vovsoft/podcast-downloader
+publisher: vovsoft
+name: Vovsoft Podcast Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PodcastDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PodcastDownloader
+identifiers:
+- winget: VovSoft.PodcastDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PodcastDownloader
+aliases:
+- vovsoft/vovsoft-podcast-downloader

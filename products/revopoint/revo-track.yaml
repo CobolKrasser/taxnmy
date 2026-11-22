@@ -1,0 +1,11 @@
+key: revopoint/revo-track
+publisher: revopoint
+name: Revo Track
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoTrack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoTrack
+identifiers:
+- winget: Revopoint.RevoTrack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoTrack
+aliases: []

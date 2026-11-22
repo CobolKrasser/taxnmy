@@ -1,0 +1,11 @@
+key: shade/shade
+publisher: shade
+name: Shade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shade/Shade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shade/Shade
+identifiers:
+- winget: Shade.Shade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shade/Shade
+aliases: []

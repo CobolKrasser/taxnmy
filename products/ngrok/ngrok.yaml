@@ -1,0 +1,11 @@
+key: ngrok/ngrok
+publisher: ngrok
+name: Ngrok
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Ngrok/Ngrok
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Ngrok/Ngrok
+identifiers:
+- winget: Ngrok.Ngrok
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Ngrok/Ngrok
+aliases: []

@@ -1,0 +1,11 @@
+key: eazyhood/appcloner
+publisher: eazyhood
+name: AppCloner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EazyHood/AppCloner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EazyHood/AppCloner
+identifiers:
+- winget: EazyHood.AppCloner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EazyHood/AppCloner
+aliases: []

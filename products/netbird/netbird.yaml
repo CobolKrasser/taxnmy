@@ -1,0 +1,11 @@
+key: netbird/netbird
+publisher: netbird
+name: Netbird
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netbird/Netbird
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netbird/Netbird
+identifiers:
+- winget: Netbird.Netbird
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netbird/Netbird
+aliases: []

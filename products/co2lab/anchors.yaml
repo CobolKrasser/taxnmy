@@ -1,0 +1,11 @@
+key: co2lab/anchors
+publisher: co2lab
+name: Anchors
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2lab/Anchors
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2lab/Anchors
+identifiers:
+- winget: co2lab.Anchors
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2lab/Anchors
+aliases: []

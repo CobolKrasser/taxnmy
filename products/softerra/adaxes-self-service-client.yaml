@@ -1,0 +1,11 @@
+key: softerra/adaxes-self-service-client
+publisher: softerra
+name: Adaxes Self-Service Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/AdaxesSelfServiceClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/AdaxesSelfServiceClient
+identifiers:
+- winget: Softerra.AdaxesSelfServiceClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/AdaxesSelfServiceClient
+aliases: []

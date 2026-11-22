@@ -1,0 +1,11 @@
+key: chris-dreysse/qwertz-bridge
+publisher: chris-dreysse
+name: QWERTZ-Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisDreysse/QWERTZ-Bridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisDreysse/QWERTZ-Bridge
+identifiers:
+- winget: ChrisDreysse.QWERTZ-Bridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisDreysse/QWERTZ-Bridge
+aliases: []

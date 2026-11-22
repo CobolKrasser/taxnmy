@@ -1,0 +1,11 @@
+key: mupen64/mupen64
+publisher: mupen64
+name: Mupen64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mupen64/Mupen64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mupen64/Mupen64
+identifiers:
+- winget: Mupen64.Mupen64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mupen64/Mupen64
+aliases: []

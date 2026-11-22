@@ -1,0 +1,11 @@
+key: globalmarinenet/iridium-pilot-site-survey-tool-sst
+publisher: globalmarinenet
+name: Iridium Pilot Site Survey Tool SST
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/IridiumSurvey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/IridiumSurvey
+identifiers:
+- winget: GlobalMarineNet.IridiumSurvey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/IridiumSurvey
+aliases: []

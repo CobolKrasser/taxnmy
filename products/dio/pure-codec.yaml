@@ -1,0 +1,11 @@
+key: dio/pure-codec
+publisher: dio
+name: Pure Codec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dio/PureCodec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dio/PureCodec
+identifiers:
+- winget: Dio.PureCodec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dio/PureCodec
+aliases: []

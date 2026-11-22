@@ -1,0 +1,12 @@
+key: nomachine/workgroup-cloud-server
+publisher: nomachine
+name: NoMachine Workgroup Cloud Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/WorkgroupCloudServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/WorkgroupCloudServer
+identifiers:
+- winget: NoMachine.NoMachine.WorkgroupCloudServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/WorkgroupCloudServer
+aliases:
+- nomachine/nomachine-workgroup-cloud-server

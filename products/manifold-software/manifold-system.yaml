@@ -1,0 +1,15 @@
+key: manifold-software/manifold-system
+publisher: manifold-software
+name: Manifold System
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/Manifold/8
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/Manifold/8
+identifiers:
+- winget: ManifoldSoftware.Manifold.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/Manifold/8
+- winget: ManifoldSoftware.Manifold.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/Manifold/9
+- winget: ManifoldSoftwareLimited.ManifoldSystem9.0.182.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftwareLimited/ManifoldSystem9/0/182/4
+aliases: []

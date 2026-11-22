@@ -1,0 +1,11 @@
+key: riva-farabi/deckboard
+publisher: riva-farabi
+name: Deckboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RivaFarabi/Deckboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RivaFarabi/Deckboard
+identifiers:
+- winget: RivaFarabi.Deckboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RivaFarabi/Deckboard
+aliases: []

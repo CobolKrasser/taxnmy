@@ -1,0 +1,11 @@
+key: dynare-team/dynare
+publisher: dynare-team
+name: Dynare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dynare/Dynare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dynare/Dynare
+identifiers:
+- winget: Dynare.Dynare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dynare/Dynare
+aliases: []

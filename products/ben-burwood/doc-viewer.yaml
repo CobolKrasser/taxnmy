@@ -1,0 +1,11 @@
+key: ben-burwood/doc-viewer
+publisher: ben-burwood
+name: Doc Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenBurwood/DocViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenBurwood/DocViewer
+identifiers:
+- winget: BenBurwood.DocViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenBurwood/DocViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: novabench/novabench
+publisher: novabench
+name: Novabench
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovabenchInc/Novabench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovabenchInc/Novabench
+identifiers:
+- winget: NovabenchInc.Novabench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovabenchInc/Novabench
+aliases: []

@@ -1,0 +1,54 @@
+key: azul/zulu-jdk
+publisher: azul
+name: Azul Zulu JDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/6/JDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/6/JDK
+identifiers:
+- winget: Azul.Zulu.10.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/10/JDK
+- winget: Azul.Zulu.11.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/11/JDK
+- winget: Azul.Zulu.12.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/12/JDK
+- winget: Azul.Zulu.13.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/13/JDK
+- winget: Azul.Zulu.14.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/14/JDK
+- winget: Azul.Zulu.15.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/15/JDK
+- winget: Azul.Zulu.16.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/16/JDK
+- winget: Azul.Zulu.17.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/17/JDK
+- winget: Azul.Zulu.18.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/18/JDK
+- winget: Azul.Zulu.19.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/19/JDK
+- winget: Azul.Zulu.20.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/20/JDK
+- winget: Azul.Zulu.21.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/21/JDK
+- winget: Azul.Zulu.22.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/22/JDK
+- winget: Azul.Zulu.23.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/23/JDK
+- winget: Azul.Zulu.24.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/24/JDK
+- winget: Azul.Zulu.25.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/25/JDK
+- winget: Azul.Zulu.26.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/26/JDK
+- winget: Azul.Zulu.27.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/27/JDK
+- winget: Azul.Zulu.6.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/6/JDK
+- winget: Azul.Zulu.7.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/7/JDK
+- winget: Azul.Zulu.8.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/8/JDK
+- winget: Azul.Zulu.9.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Azul/Zulu/9/JDK
+aliases:
+- azul/azul-zulu-jdk

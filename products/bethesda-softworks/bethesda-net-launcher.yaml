@@ -1,0 +1,11 @@
+key: bethesda-softworks/bethesda-net-launcher
+publisher: bethesda-softworks
+name: Bethesda.net Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bethesda/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bethesda/Launcher
+identifiers:
+- winget: Bethesda.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bethesda/Launcher
+aliases: []

@@ -1,0 +1,12 @@
+key: ipevo/virtualcam-controller
+publisher: ipevo
+name: IPEVO VirtualCam Controller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/VirtualCamController
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/VirtualCamController
+identifiers:
+- winget: IPEVO.VirtualCamController
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/VirtualCamController
+aliases:
+- ipevo/ipevo-virtualcam-controller

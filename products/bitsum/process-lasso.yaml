@@ -1,0 +1,13 @@
+key: bitsum/process-lasso
+publisher: bitsum
+name: Process Lasso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/ProcessLasso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/ProcessLasso
+identifiers:
+- winget: BitSum.ProcessLasso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/ProcessLasso
+- winget: BitSum.ProcessLasso.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/ProcessLasso/Beta
+aliases: []

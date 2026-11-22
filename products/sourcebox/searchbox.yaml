@@ -1,0 +1,11 @@
+key: sourcebox/searchbox
+publisher: sourcebox
+name: SearchBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SourceBox/SearchBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SourceBox/SearchBox
+identifiers:
+- winget: SourceBox.SearchBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SourceBox/SearchBox
+aliases: []

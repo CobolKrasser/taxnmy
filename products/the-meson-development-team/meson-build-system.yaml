@@ -1,0 +1,11 @@
+key: the-meson-development-team/meson-build-system
+publisher: the-meson-development-team
+name: Meson Build System
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mesonbuild/meson
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mesonbuild/meson
+identifiers:
+- winget: mesonbuild.meson
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mesonbuild/meson
+aliases: []

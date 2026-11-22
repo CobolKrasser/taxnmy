@@ -1,0 +1,11 @@
+key: parallels-international/parallels-client-portable
+publisher: parallels-international
+name: Parallels Client portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/outek/Parallels
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/outek/Parallels
+identifiers:
+- winget: outek.Parallels
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/outek/Parallels
+aliases: []

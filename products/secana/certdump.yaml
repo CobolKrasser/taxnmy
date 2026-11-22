@@ -1,0 +1,11 @@
+key: secana/certdump
+publisher: secana
+name: CertDump
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/secana/CertDump
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/secana/CertDump
+identifiers:
+- winget: secana.CertDump
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/secana/CertDump
+aliases: []

@@ -1,0 +1,11 @@
+key: the-atlantis-word-processor-team/atlantis-word-processor
+publisher: the-atlantis-word-processor-team
+name: Atlantis Word Processor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AWP/AtlantisWordProcessor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AWP/AtlantisWordProcessor
+identifiers:
+- winget: AWP.AtlantisWordProcessor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AWP/AtlantisWordProcessor
+aliases: []

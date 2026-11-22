@@ -1,0 +1,11 @@
+key: hydraulic/conveyor
+publisher: hydraulic
+name: Conveyor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hydraulic/Conveyor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hydraulic/Conveyor
+identifiers:
+- winget: Hydraulic.Conveyor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hydraulic/Conveyor
+aliases: []

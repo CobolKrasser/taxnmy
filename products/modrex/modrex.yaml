@@ -1,0 +1,11 @@
+key: modrex/modrex
+publisher: modrex
+name: Modrex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modrexio/Modrex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modrexio/Modrex
+identifiers:
+- winget: Modrexio.Modrex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modrexio/Modrex
+aliases: []

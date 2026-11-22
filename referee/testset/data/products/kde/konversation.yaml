@@ -1,0 +1,11 @@
+key: kde/konversation
+publisher: kde
+name: Konversation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Konversation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Konversation
+identifiers:
+- winget: KDE.Konversation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Konversation
+aliases: []

@@ -1,0 +1,11 @@
+key: maaassistantarknights/maa-cli
+publisher: maaassistantarknights
+name: maa-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaaAssistantArknights/maa-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaaAssistantArknights/maa-cli
+identifiers:
+- winget: MaaAssistantArknights.maa-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaaAssistantArknights/maa-cli
+aliases: []

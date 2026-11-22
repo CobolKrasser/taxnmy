@@ -1,0 +1,11 @@
+key: unity/unity
+publisher: unity
+name: Unity
+kind: software
+source: https://unity.com/releases/unity-6/support
+versions:
+  source: https://unity.com/releases/unity-6/support
+identifiers:
+- purl: pkg:chocolatey/unity
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/unity.md
+aliases: []

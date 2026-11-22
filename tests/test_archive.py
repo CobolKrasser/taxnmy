@@ -191,7 +191,9 @@ class Nothing(unittest.TestCase):
         for path in sorted((REPO / "tools").glob("*.py")):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
-                if path.name != "archive.py":
+                # TAX-57: the first filling from the filler takes in a model it no longer supports as archived
+                # (Fred's decision of 22 November 2026); the filler's word, not an age, decides it.
+                if path.name not in ("archive.py", "endoflife.py"):
                     self.assertNotIn("archived", text, "only tools/archive.py names the field, and it only reads it")
                 self.assertIsNone(re.search(r"stale|inactiv|abandon|last.?update|days.?since|without.?update", text, re.I))
 
@@ -206,7 +208,7 @@ class Break(unittest.TestCase):
 
     def run_cases(self, client, ids=("B61", "B63")):
         proposals = [p for p in pr_referee.testset_proposals(REPO / "referee/testset/cases.yaml") if p["id"] in ids]
-        items = pr_referee.gate_proposals(proposals, Fetcher(pages=self.PAGES), log=QUIET)
+        items = pr_referee.gate_proposals(proposals, Fetcher(pages=self.PAGES), referee.TESTSET_DATA, log=QUIET)
         with tempfile.TemporaryDirectory() as tmp:
             pr_referee.judge(items, Args(Path(tmp) / "runs"), client=client, now=NOW, log=QUIET, sleep=lambda s: None)
         return {i["id"]: i["outcome"] for i in items}

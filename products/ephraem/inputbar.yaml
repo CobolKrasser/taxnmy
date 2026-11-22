@@ -1,0 +1,11 @@
+key: ephraem/inputbar
+publisher: ephraem
+name: InputBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephraem/InputBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephraem/InputBar
+identifiers:
+- winget: Ephraem.InputBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephraem/InputBar
+aliases: []

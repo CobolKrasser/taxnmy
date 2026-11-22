@@ -1,0 +1,12 @@
+key: proton/drive-cli
+publisher: proton
+name: Proton Drive CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonDrive/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonDrive/CLI
+identifiers:
+- winget: Proton.ProtonDrive.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonDrive/CLI
+aliases:
+- proton/proton-drive-cli

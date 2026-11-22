@@ -1,0 +1,11 @@
+key: parsec-cloud/parsec
+publisher: parsec-cloud
+name: Parsec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/Parsec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/Parsec
+identifiers:
+- winget: Parsec.Parsec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/Parsec
+aliases: []

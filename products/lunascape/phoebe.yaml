@@ -1,0 +1,12 @@
+key: lunascape/phoebe
+publisher: lunascape
+name: Lunascape Phoebe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunascape/Phoebe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunascape/Phoebe
+identifiers:
+- winget: Lunascape.Phoebe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunascape/Phoebe
+aliases:
+- lunascape/lunascape-phoebe

@@ -1,0 +1,11 @@
+key: goreleaser/goreleaser
+publisher: goreleaser
+name: goreleaser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/goreleaser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/goreleaser
+identifiers:
+- winget: goreleaser.goreleaser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/goreleaser
+aliases: []

@@ -1,0 +1,11 @@
+key: t3-tools/t3-code
+publisher: t3-tools
+name: T3 Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/T3Tools/T3Code
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/T3Tools/T3Code
+identifiers:
+- winget: T3Tools.T3Code
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/T3Tools/T3Code
+aliases: []

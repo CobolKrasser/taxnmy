@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-boot-disk
+publisher: lsoft-technologies
+name: Active@ Boot Disk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveBootDisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveBootDisk
+identifiers:
+- winget: LSoftTechnologies.ActiveBootDisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveBootDisk
+aliases: []

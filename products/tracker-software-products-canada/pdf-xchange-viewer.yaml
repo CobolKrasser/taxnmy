@@ -1,0 +1,11 @@
+key: tracker-software-products-canada/pdf-xchange-viewer
+publisher: tracker-software-products-canada
+name: PDF-XChange Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrackerSoftware/PDF-XChangeViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrackerSoftware/PDF-XChangeViewer
+identifiers:
+- winget: TrackerSoftware.PDF-XChangeViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrackerSoftware/PDF-XChangeViewer
+aliases: []

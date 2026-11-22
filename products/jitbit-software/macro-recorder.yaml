@@ -1,0 +1,11 @@
+key: jitbit-software/macro-recorder
+publisher: jitbit-software
+name: Macro Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitbit/MacroRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitbit/MacroRecorder
+identifiers:
+- winget: Jitbit.MacroRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitbit/MacroRecorder
+aliases: []

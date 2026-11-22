@@ -1,0 +1,11 @@
+key: psynect/omnimend
+publisher: psynect
+name: OmniMend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psynect/OmniMend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psynect/OmniMend
+identifiers:
+- winget: Psynect.OmniMend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psynect/OmniMend
+aliases: []

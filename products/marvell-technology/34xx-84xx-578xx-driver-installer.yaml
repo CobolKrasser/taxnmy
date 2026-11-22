@@ -1,0 +1,11 @@
+key: marvell-technology/34xx-84xx-578xx-driver-installer
+publisher: marvell-technology
+name: 34xx/84xx/578xx Driver Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Marvell/FastlinQDriverInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Marvell/FastlinQDriverInstaller
+identifiers:
+- winget: Marvell.FastlinQDriverInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Marvell/FastlinQDriverInstaller
+aliases: []

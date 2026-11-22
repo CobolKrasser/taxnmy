@@ -1,0 +1,11 @@
+key: kalmix/askey-cli
+publisher: kalmix
+name: Askey CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kalmix/Askey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kalmix/Askey
+identifiers:
+- winget: Kalmix.Askey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kalmix/Askey
+aliases: []

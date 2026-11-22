@@ -1,0 +1,11 @@
+key: ideamk/ai-viewer
+publisher: ideamk
+name: AI Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/AIViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/AIViewer
+identifiers:
+- winget: IdeaMK.AIViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/AIViewer
+aliases: []

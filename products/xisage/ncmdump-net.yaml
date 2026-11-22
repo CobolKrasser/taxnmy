@@ -1,0 +1,11 @@
+key: xisage/ncmdump-net
+publisher: xisage
+name: ncmdump-net
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiSage/ncmdump-net
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiSage/ncmdump-net
+identifiers:
+- winget: xiSage.ncmdump-net
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiSage/ncmdump-net
+aliases: []

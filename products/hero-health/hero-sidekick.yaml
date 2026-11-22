@@ -1,0 +1,11 @@
+key: hero-health/hero-sidekick
+publisher: hero-health
+name: Hero Sidekick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroHealth/HeroSidekick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroHealth/HeroSidekick
+identifiers:
+- winget: HeroHealth.HeroSidekick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroHealth/HeroSidekick
+aliases: []

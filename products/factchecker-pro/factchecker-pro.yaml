@@ -1,0 +1,11 @@
+key: factchecker-pro/factchecker-pro
+publisher: factchecker-pro
+name: FactChecker Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactcheckerPro/FactCheckerPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactcheckerPro/FactCheckerPro
+identifiers:
+- winget: FactcheckerPro.FactCheckerPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactcheckerPro/FactCheckerPro
+aliases: []

@@ -1,0 +1,11 @@
+key: huawei/audio-assistant-tool
+publisher: huawei
+name: Audio Assistant Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/AudioAssistantTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/AudioAssistantTool
+identifiers:
+- winget: Huawei.AudioAssistantTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/AudioAssistantTool
+aliases: []

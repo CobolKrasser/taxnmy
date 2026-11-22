@@ -1,0 +1,11 @@
+key: eagle-dynamics/dcs-world-openbeta
+publisher: eagle-dynamics
+name: DCS World OpenBeta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EagleDynamics/DCSWorldOpenBeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EagleDynamics/DCSWorldOpenBeta
+identifiers:
+- winget: EagleDynamics.DCSWorldOpenBeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EagleDynamics/DCSWorldOpenBeta
+aliases: []

@@ -1,0 +1,11 @@
+key: renewed-vision/propresenter
+publisher: renewed-vision
+name: ProPresenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RenewedVision/ProPresenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RenewedVision/ProPresenter
+identifiers:
+- winget: RenewedVision.ProPresenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RenewedVision/ProPresenter
+aliases: []

@@ -1,0 +1,11 @@
+key: stefans-tools/sktimestamp
+publisher: stefans-tools
+name: SKTimeStamp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/SKTimeStamp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/SKTimeStamp
+identifiers:
+- winget: StefansTools.SKTimeStamp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/SKTimeStamp
+aliases: []

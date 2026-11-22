@@ -1,0 +1,11 @@
+key: flexense-computing-systems/dupscout
+publisher: flexense-computing-systems
+name: DupScout
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DupScout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DupScout
+identifiers:
+- winget: Flexense.DupScout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DupScout
+aliases: []

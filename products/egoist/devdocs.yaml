@@ -1,0 +1,11 @@
+key: egoist/devdocs
+publisher: egoist
+name: DevDocs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egoist/devdocs-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egoist/devdocs-desktop
+identifiers:
+- winget: egoist.devdocs-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/egoist/devdocs-desktop
+aliases: []

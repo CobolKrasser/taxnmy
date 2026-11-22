@@ -1,0 +1,11 @@
+key: nhn-payco/paycoorder
+publisher: nhn-payco
+name: PayCoOrder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNPAYCO/PayCoOrder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNPAYCO/PayCoOrder
+identifiers:
+- winget: NHNPAYCO.PayCoOrder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNPAYCO/PayCoOrder
+aliases: []

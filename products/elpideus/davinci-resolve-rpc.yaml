@@ -1,0 +1,11 @@
+key: elpideus/davinci-resolve-rpc
+publisher: elpideus
+name: DaVinci Resolve RPC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elpideus/DaVinciResolveRPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elpideus/DaVinciResolveRPC
+identifiers:
+- winget: elpideus.DaVinciResolveRPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elpideus/DaVinciResolveRPC
+aliases: []

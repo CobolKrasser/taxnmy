@@ -1,0 +1,11 @@
+key: flipper-devices/qflipper
+publisher: flipper-devices
+name: qFlipper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlipperDevicesInc/qFlipper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlipperDevicesInc/qFlipper
+identifiers:
+- winget: FlipperDevicesInc.qFlipper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlipperDevicesInc/qFlipper
+aliases: []

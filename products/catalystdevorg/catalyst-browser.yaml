@@ -1,0 +1,11 @@
+key: catalystdevorg/catalyst-browser
+publisher: catalystdevorg
+name: catalyst-browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatalystDevOrg/CatalystBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatalystDevOrg/CatalystBrowser
+identifiers:
+- winget: CatalystDevOrg.CatalystBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatalystDevOrg/CatalystBrowser
+aliases: []

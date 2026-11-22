@@ -1,0 +1,11 @@
+key: envoy49/go-spotify-cli
+publisher: envoy49
+name: Go Spotify Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Envoy49/go-spotify-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Envoy49/go-spotify-cli
+identifiers:
+- winget: Envoy49.go-spotify-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Envoy49/go-spotify-cli
+aliases: []

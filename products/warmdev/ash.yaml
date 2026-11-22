@@ -1,0 +1,11 @@
+key: warmdev/ash
+publisher: warmdev
+name: ash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/warmdev/ash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/warmdev/ash
+identifiers:
+- winget: warmdev.ash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/warmdev/ash
+aliases: []

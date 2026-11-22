@@ -1,0 +1,11 @@
+key: looking-glass/looking-glass
+publisher: looking-glass
+name: Looking Glass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnif/LookingGlass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnif/LookingGlass
+identifiers:
+- winget: gnif.LookingGlass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnif/LookingGlass
+aliases: []

@@ -1,0 +1,11 @@
+key: metacreation-lab/autolume
+publisher: metacreation-lab
+name: Autolume
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetacreationLab/Autolume
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetacreationLab/Autolume
+identifiers:
+- winget: MetacreationLab.Autolume
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetacreationLab/Autolume
+aliases: []

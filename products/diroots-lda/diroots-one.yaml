@@ -1,0 +1,11 @@
+key: diroots-lda/diroots-one
+publisher: diroots-lda
+name: DiRoots.One
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/One
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/One
+identifiers:
+- winget: DiRoots.One
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiRoots/One
+aliases: []

@@ -1,0 +1,11 @@
+key: jurien-hamaker/commitlint
+publisher: jurien-hamaker
+name: Commitlint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Commitlint/Commitlint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Commitlint/Commitlint
+identifiers:
+- winget: Commitlint.Commitlint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Commitlint/Commitlint
+aliases: []

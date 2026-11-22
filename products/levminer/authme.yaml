@@ -1,0 +1,11 @@
+key: levminer/authme
+publisher: levminer
+name: Authme
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Levminer/Authme
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Levminer/Authme
+identifiers:
+- winget: Levminer.Authme
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Levminer/Authme
+aliases: []

@@ -1,0 +1,11 @@
+key: daniel-milde/gdu
+publisher: daniel-milde
+name: gdu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dundee/gdu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dundee/gdu
+identifiers:
+- winget: dundee.gdu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dundee/gdu
+aliases: []

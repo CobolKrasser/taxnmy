@@ -1,0 +1,11 @@
+key: icofx-software/icofx
+publisher: icofx-software
+name: IcoFX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcoFXSoftware/icofx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcoFXSoftware/icofx
+identifiers:
+- winget: IcoFXSoftware.icofx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcoFXSoftware/icofx
+aliases: []

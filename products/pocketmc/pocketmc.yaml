@@ -1,0 +1,11 @@
+key: pocketmc/pocketmc
+publisher: pocketmc
+name: PocketMC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketMC/PocketMC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketMC/PocketMC
+identifiers:
+- winget: PocketMC.PocketMC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketMC/PocketMC
+aliases: []

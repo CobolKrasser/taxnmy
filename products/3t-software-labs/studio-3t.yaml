@@ -1,0 +1,11 @@
+key: 3t-software-labs/studio-3t
+publisher: 3t-software-labs
+name: Studio 3T
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3TSoftwareLabs/Studio3T
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3TSoftwareLabs/Studio3T
+identifiers:
+- winget: 3TSoftwareLabs.Studio3T
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/3TSoftwareLabs/Studio3T
+aliases: []

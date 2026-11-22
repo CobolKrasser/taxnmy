@@ -1,0 +1,11 @@
+key: haiwenhuzhi/seafile
+publisher: haiwenhuzhi
+name: Seafile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafile/Seafile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafile/Seafile
+identifiers:
+- winget: Seafile.Seafile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafile/Seafile
+aliases: []

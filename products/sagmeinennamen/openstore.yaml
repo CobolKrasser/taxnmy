@@ -1,0 +1,11 @@
+key: sagmeinennamen/openstore
+publisher: sagmeinennamen
+name: OpenStore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SagMeinenNamen/OpenStoreInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SagMeinenNamen/OpenStoreInstaller
+identifiers:
+- winget: SagMeinenNamen.OpenStoreInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SagMeinenNamen/OpenStoreInstaller
+aliases: []

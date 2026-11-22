@@ -1,0 +1,12 @@
+key: vovsoft/picture-puzzle
+publisher: vovsoft
+name: Vovsoft Picture Puzzle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PicturePuzzle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PicturePuzzle
+identifiers:
+- winget: VovSoft.PicturePuzzle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PicturePuzzle
+aliases:
+- vovsoft/vovsoft-picture-puzzle

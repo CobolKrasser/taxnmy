@@ -1,0 +1,11 @@
+key: sand-studio/airdroid-business-desktop-client
+publisher: sand-studio
+name: AirDroid Business Desktop Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirDroid/AirDroidBusinessDesktopClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirDroid/AirDroidBusinessDesktopClient
+identifiers:
+- winget: AirDroid.AirDroidBusinessDesktopClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirDroid/AirDroidBusinessDesktopClient
+aliases: []

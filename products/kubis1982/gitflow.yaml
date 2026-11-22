@@ -1,0 +1,11 @@
+key: kubis1982/gitflow
+publisher: kubis1982
+name: GitFlow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubis1982/GitFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubis1982/GitFlow
+identifiers:
+- winget: Kubis1982.GitFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubis1982/GitFlow
+aliases: []

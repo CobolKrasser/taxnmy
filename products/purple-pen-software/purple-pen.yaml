@@ -1,0 +1,11 @@
+key: purple-pen-software/purple-pen
+publisher: purple-pen-software
+name: Purple Pen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Golde/PurplePen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Golde/PurplePen
+identifiers:
+- winget: Golde.PurplePen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Golde/PurplePen
+aliases: []

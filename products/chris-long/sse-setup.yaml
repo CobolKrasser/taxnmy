@@ -1,0 +1,11 @@
+key: chris-long/sse-setup
+publisher: chris-long
+name: SSE Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/SSESetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/SSESetup
+identifiers:
+- winget: ChrisLong.SSESetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChrisLong/SSESetup
+aliases: []

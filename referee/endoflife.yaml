@@ -21,17 +21,12 @@ lines: [device]
 
 # Publishers TAX does not know yet. The source is the page of the filler that names them.
 publishers:
-  amazon: {name: Amazon, page: kindle}
   deciso: {name: Deciso, page: opnsense}
   fairphone: {name: Fairphone, page: fairphone}
   fonticons: {name: Fonticons, page: font-awesome}
-  gleam: {name: Gleam, page: gleam}
   hmd-global: {name: HMD Global, page: nokia}
-  micronaut-foundation: {name: Micronaut Foundation, page: micronaut}
-  motorola-mobility: {name: Motorola Mobility, page: motorola-mobility}
   oneplus: {name: OnePlus, page: oneplus}
   open-robotics: {name: Open Robotics, page: ros}
-  raspberry-pi: {name: Raspberry Pi, page: raspberry-pi}
 
 pages:
   # lines of devices

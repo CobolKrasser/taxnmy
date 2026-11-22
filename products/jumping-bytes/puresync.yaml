@@ -1,0 +1,11 @@
+key: jumping-bytes/puresync
+publisher: jumping-bytes
+name: PureSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JumpingBytes/PureSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JumpingBytes/PureSync
+identifiers:
+- winget: JumpingBytes.PureSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JumpingBytes/PureSync
+aliases: []

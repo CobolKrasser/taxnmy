@@ -1,0 +1,11 @@
+key: oscium/inssider
+publisher: oscium
+name: inSSIDer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/inSSIDer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/inSSIDer
+identifiers:
+- winget: Oscium.inSSIDer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/inSSIDer
+aliases: []

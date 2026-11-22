@@ -1,0 +1,11 @@
+key: travis-goodspeed/mask-rom-tool
+publisher: travis-goodspeed
+name: Mask ROM Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisGoodspeed/MaskROMTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisGoodspeed/MaskROMTool
+identifiers:
+- winget: TravisGoodspeed.MaskROMTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisGoodspeed/MaskROMTool
+aliases: []

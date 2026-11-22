@@ -1,0 +1,11 @@
+key: dukus/digicamcontrol
+publisher: dukus
+name: digiCamControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dukus/digiCamControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dukus/digiCamControl
+identifiers:
+- winget: dukus.digiCamControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dukus/digiCamControl
+aliases: []

@@ -1,0 +1,11 @@
+key: speed-soft/time-sync-client
+publisher: speed-soft
+name: Time-Sync Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Speed-Soft/Time-Sync/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Speed-Soft/Time-Sync/Client
+identifiers:
+- winget: Speed-Soft.Time-Sync.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Speed-Soft/Time-Sync/Client
+aliases: []

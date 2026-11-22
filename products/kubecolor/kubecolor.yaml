@@ -1,0 +1,11 @@
+key: kubecolor/kubecolor
+publisher: kubecolor
+name: kubecolor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubecolor/kubecolor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubecolor/kubecolor
+identifiers:
+- winget: Kubecolor.kubecolor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubecolor/kubecolor
+aliases: []

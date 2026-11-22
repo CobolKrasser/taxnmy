@@ -1,0 +1,11 @@
+key: pixplant/pixplant
+publisher: pixplant
+name: PixPlant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaronStudio/PixPlant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaronStudio/PixPlant
+identifiers:
+- winget: FaronStudio.PixPlant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaronStudio/PixPlant
+aliases: []

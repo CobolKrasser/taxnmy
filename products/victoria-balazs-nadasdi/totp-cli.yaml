@@ -1,0 +1,11 @@
+key: victoria-balazs-nadasdi/totp-cli
+publisher: victoria-balazs-nadasdi
+name: totp-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yitsushi/totp-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yitsushi/totp-cli
+identifiers:
+- winget: yitsushi.totp-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yitsushi/totp-cli
+aliases: []

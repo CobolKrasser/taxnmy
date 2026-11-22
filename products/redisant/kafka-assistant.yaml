@@ -1,0 +1,11 @@
+key: redisant/kafka-assistant
+publisher: redisant
+name: Kafka Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/KafkaAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/KafkaAssistant
+identifiers:
+- winget: Redisant.KafkaAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/KafkaAssistant
+aliases: []

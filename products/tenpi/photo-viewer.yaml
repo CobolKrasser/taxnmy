@@ -1,0 +1,11 @@
+key: tenpi/photo-viewer
+publisher: tenpi
+name: Photo Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/PhotoViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/PhotoViewer
+identifiers:
+- winget: Tenpi.PhotoViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenpi/PhotoViewer
+aliases: []

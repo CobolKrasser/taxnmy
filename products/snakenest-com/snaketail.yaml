@@ -1,0 +1,11 @@
+key: snakenest-com/snaketail
+publisher: snakenest-com
+name: SnakeTail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snakefoot/snaketail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snakefoot/snaketail
+identifiers:
+- winget: snakefoot.snaketail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snakefoot/snaketail
+aliases: []

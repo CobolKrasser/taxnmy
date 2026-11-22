@@ -1,0 +1,11 @@
+key: adela/devmate
+publisher: adela
+name: DevMate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADELA/Devmate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADELA/Devmate
+identifiers:
+- winget: ADELA.Devmate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADELA/Devmate
+aliases: []

@@ -1,0 +1,15 @@
+key: buxuku/video-subtitle-master-cuda
+publisher: buxuku
+name: Video Subtitle Master (CUDA)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CUDA/11/8
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CUDA/11/8
+identifiers:
+- winget: buxuku.SmartSub.CUDA.11.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CUDA/11/8
+- winget: buxuku.SmartSub.CUDA.12.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CUDA/12/2
+- winget: buxuku.SmartSub.CUDA.12.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CUDA/12/4
+aliases: []

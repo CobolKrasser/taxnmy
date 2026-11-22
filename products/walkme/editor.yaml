@@ -1,0 +1,12 @@
+key: walkme/editor
+publisher: walkme
+name: WalkMe Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WalkMe/WalkMeEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WalkMe/WalkMeEditor
+identifiers:
+- winget: WalkMe.WalkMeEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WalkMe/WalkMeEditor
+aliases:
+- walkme/walkme-editor

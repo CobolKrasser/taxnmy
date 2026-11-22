@@ -1,0 +1,12 @@
+key: owncloud/infinite-scale-desktop-client
+publisher: owncloud
+name: ownCloud Infinite Scale Desktop Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ownCloud/ownCloudDesktop/InfiniteScale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ownCloud/ownCloudDesktop/InfiniteScale
+identifiers:
+- winget: ownCloud.ownCloudDesktop.InfiniteScale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ownCloud/ownCloudDesktop/InfiniteScale
+aliases:
+- owncloud/owncloud-infinite-scale-desktop-client

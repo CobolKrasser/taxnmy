@@ -1,0 +1,11 @@
+key: runx-contributors/runx
+publisher: runx-contributors
+name: runx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/horihiro/runx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/horihiro/runx
+identifiers:
+- winget: horihiro.runx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/horihiro/runx
+aliases: []

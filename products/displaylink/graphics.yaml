@@ -1,0 +1,12 @@
+key: displaylink/graphics
+publisher: displaylink
+name: DisplayLink Graphics
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayLink/GraphicsDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayLink/GraphicsDriver
+identifiers:
+- winget: DisplayLink.GraphicsDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayLink/GraphicsDriver
+aliases:
+- displaylink/displaylink-graphics

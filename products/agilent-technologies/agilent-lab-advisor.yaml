@@ -1,0 +1,11 @@
+key: agilent-technologies/agilent-lab-advisor
+publisher: agilent-technologies
+name: Agilent Lab Advisor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agilent/LabAdvisor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agilent/LabAdvisor
+identifiers:
+- winget: Agilent.LabAdvisor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agilent/LabAdvisor
+aliases: []

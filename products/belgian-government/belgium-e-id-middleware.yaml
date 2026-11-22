@@ -1,0 +1,11 @@
+key: belgian-government/belgium-e-id-middleware
+publisher: belgian-government
+name: Belgium e-ID middleware
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelgianGovernment/eIDmiddleware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelgianGovernment/eIDmiddleware
+identifiers:
+- winget: BelgianGovernment.eIDmiddleware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelgianGovernment/eIDmiddleware
+aliases: []

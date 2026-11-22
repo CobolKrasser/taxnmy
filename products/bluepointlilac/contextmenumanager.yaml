@@ -1,0 +1,11 @@
+key: bluepointlilac/contextmenumanager
+publisher: bluepointlilac
+name: ContextMenuManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BluePointLilac/ContextMenuManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BluePointLilac/ContextMenuManager
+identifiers:
+- winget: BluePointLilac.ContextMenuManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BluePointLilac/ContextMenuManager
+aliases: []

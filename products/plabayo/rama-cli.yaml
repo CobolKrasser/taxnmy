@@ -1,0 +1,13 @@
+key: plabayo/rama-cli
+publisher: plabayo
+name: Rama CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plabayo/Rama
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plabayo/Rama
+identifiers:
+- winget: Plabayo.Rama
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plabayo/Rama
+- winget: Plabayo.Rama.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plabayo/Rama/Preview
+aliases: []

@@ -1,0 +1,11 @@
+key: neuralnomadsai/codenomad
+publisher: neuralnomadsai
+name: CodeNomad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeuralNomadsAI/CodeNomad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeuralNomadsAI/CodeNomad
+identifiers:
+- winget: NeuralNomadsAI.CodeNomad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeuralNomadsAI/CodeNomad
+aliases: []

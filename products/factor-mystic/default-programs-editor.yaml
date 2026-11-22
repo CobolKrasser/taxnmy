@@ -1,0 +1,11 @@
+key: factor-mystic/default-programs-editor
+publisher: factor-mystic
+name: Default Programs Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactorMystic/DefaultProgramsEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactorMystic/DefaultProgramsEditor
+identifiers:
+- winget: FactorMystic.DefaultProgramsEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactorMystic/DefaultProgramsEditor
+aliases: []

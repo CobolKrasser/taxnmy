@@ -1,0 +1,11 @@
+key: carifred-com/clear-disk-info
+publisher: carifred-com
+name: Clear Disk Info
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carifred/ClearDiskInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carifred/ClearDiskInfo
+identifiers:
+- winget: Carifred.ClearDiskInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carifred/ClearDiskInfo
+aliases: []

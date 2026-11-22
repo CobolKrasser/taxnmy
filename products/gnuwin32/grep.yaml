@@ -1,0 +1,12 @@
+key: gnuwin32/grep
+publisher: gnuwin32
+name: 'GnuWin32: Grep'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Grep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Grep
+identifiers:
+- winget: GnuWin32.Grep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Grep
+aliases:
+- gnuwin32/gnuwin32-grep

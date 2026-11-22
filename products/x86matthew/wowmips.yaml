@@ -1,0 +1,11 @@
+key: x86matthew/wowmips
+publisher: x86matthew
+name: WoWMIPS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x86matthew/WoWMIPS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x86matthew/WoWMIPS
+identifiers:
+- winget: x86matthew.WoWMIPS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x86matthew/WoWMIPS
+aliases: []

@@ -1,0 +1,11 @@
+key: lyswhut/any-listen
+publisher: lyswhut
+name: any-listen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lyswhut/AnyListen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lyswhut/AnyListen
+identifiers:
+- winget: lyswhut.AnyListen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lyswhut/AnyListen
+aliases: []

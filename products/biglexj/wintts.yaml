@@ -1,0 +1,11 @@
+key: biglexj/wintts
+publisher: biglexj
+name: WinTTS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/biglexj/WinTTS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/biglexj/WinTTS
+identifiers:
+- winget: biglexj.WinTTS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/biglexj/WinTTS
+aliases: []

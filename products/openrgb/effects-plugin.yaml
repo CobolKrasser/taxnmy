@@ -1,0 +1,12 @@
+key: openrgb/effects-plugin
+publisher: openrgb
+name: OpenRGB Effects Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBEffectsPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBEffectsPlugin
+identifiers:
+- winget: OpenRGB.OpenRGBEffectsPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBEffectsPlugin
+aliases:
+- openrgb/openrgb-effects-plugin

@@ -1,0 +1,11 @@
+key: the-wago-dev-team/wagoapp
+publisher: the-wago-dev-team
+name: WagoApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wago/Addons
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wago/Addons
+identifiers:
+- winget: Wago.Addons
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wago/Addons
+aliases: []

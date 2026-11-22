@@ -1,0 +1,11 @@
+key: the-sz-development/portscan
+publisher: the-sz-development
+name: PortScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/PortScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/PortScan
+identifiers:
+- winget: the-sz.PortScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/PortScan
+aliases: []

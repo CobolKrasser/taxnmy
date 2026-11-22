@@ -1,0 +1,11 @@
+key: struis-ict/insearch
+publisher: struis-ict
+name: InSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/InSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/InSearch
+identifiers:
+- winget: StruisICT.InSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/InSearch
+aliases: []

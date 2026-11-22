@@ -1,0 +1,11 @@
+key: creosys/obd-auto-doctor
+publisher: creosys
+name: OBD Auto Doctor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creosys/OBDAutoDoctor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creosys/OBDAutoDoctor
+identifiers:
+- winget: Creosys.OBDAutoDoctor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creosys/OBDAutoDoctor
+aliases: []

@@ -1,0 +1,11 @@
+key: macpaw/clearvpn
+publisher: macpaw
+name: ClearVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacPawWay/ClearVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacPawWay/ClearVPN
+identifiers:
+- winget: MacPawWay.ClearVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MacPawWay/ClearVPN
+aliases: []

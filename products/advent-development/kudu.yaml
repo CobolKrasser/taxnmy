@@ -1,0 +1,11 @@
+key: advent-development/kudu
+publisher: advent-development
+name: Kudu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdventDevelopmentInc/Kudu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdventDevelopmentInc/Kudu
+identifiers:
+- winget: AdventDevelopmentInc.Kudu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdventDevelopmentInc/Kudu
+aliases: []

@@ -1,0 +1,11 @@
+key: yumin-zhan/winlinker
+publisher: yumin-zhan
+name: WinLinker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YuminZhan/WinLinker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YuminZhan/WinLinker
+identifiers:
+- winget: YuminZhan.WinLinker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YuminZhan/WinLinker
+aliases: []

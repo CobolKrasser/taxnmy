@@ -1,0 +1,11 @@
+key: myiam/due2-cli
+publisher: myiam
+name: Due2 CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myiam/Due2/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myiam/Due2/CLI
+identifiers:
+- winget: myiam.Due2.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myiam/Due2/CLI
+aliases: []

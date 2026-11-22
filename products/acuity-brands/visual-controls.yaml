@@ -1,0 +1,11 @@
+key: acuity-brands/visual-controls
+publisher: acuity-brands
+name: Visual Controls
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcuityBrands/VisualControls
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcuityBrands/VisualControls
+identifiers:
+- winget: AcuityBrands.VisualControls
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcuityBrands/VisualControls
+aliases: []

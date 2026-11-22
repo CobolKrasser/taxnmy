@@ -1,0 +1,11 @@
+key: seiko-epson/epson-scan-ocr-component
+publisher: seiko-epson
+name: EPSON Scan OCR Component
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/Scan/OCRComponent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/Scan/OCRComponent
+identifiers:
+- winget: EPSON.Scan.OCRComponent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/Scan/OCRComponent
+aliases: []

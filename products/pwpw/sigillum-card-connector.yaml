@@ -1,0 +1,11 @@
+key: pwpw/sigillum-card-connector
+publisher: pwpw
+name: Sigillum Card Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PWPW/SigillumCardConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PWPW/SigillumCardConnector
+identifiers:
+- winget: PWPW.SigillumCardConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PWPW/SigillumCardConnector
+aliases: []

@@ -1,0 +1,11 @@
+key: sliksvn-and-the-sharpsvn-project/slik-subversion
+publisher: sliksvn-and-the-sharpsvn-project
+name: Slik Subversion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slik/Subversion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slik/Subversion
+identifiers:
+- winget: Slik.Subversion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slik/Subversion
+aliases: []

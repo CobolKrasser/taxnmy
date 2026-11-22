@@ -1,0 +1,11 @@
+key: luki-labs/craft
+publisher: luki-labs
+name: Craft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LukiLabs/Craft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LukiLabs/Craft
+identifiers:
+- winget: LukiLabs.Craft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LukiLabs/Craft
+aliases: []

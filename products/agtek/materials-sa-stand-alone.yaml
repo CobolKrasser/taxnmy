@@ -1,0 +1,12 @@
+key: agtek/materials-sa-stand-alone
+publisher: agtek
+name: AGTEK Materials SA (Stand-Alone)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/MaterialsSA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/MaterialsSA
+identifiers:
+- winget: AGTEK.MaterialsSA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/MaterialsSA
+aliases:
+- agtek/agtek-materials-sa-stand-alone

@@ -1,0 +1,12 @@
+key: dji/assistant-2-for-mavic
+publisher: dji
+name: DJI Assistant 2 For Mavic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ForMavic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ForMavic
+identifiers:
+- winget: DJI.DJIAssistant2.ForMavic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ForMavic
+aliases:
+- dji/dji-assistant-2-for-mavic

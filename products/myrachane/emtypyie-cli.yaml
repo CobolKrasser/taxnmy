@@ -1,0 +1,11 @@
+key: myrachane/emtypyie-cli
+publisher: myrachane
+name: emtypyie-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myrachane/emtypyie-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myrachane/emtypyie-cli
+identifiers:
+- winget: myrachane.emtypyie-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/myrachane/emtypyie-cli
+aliases: []

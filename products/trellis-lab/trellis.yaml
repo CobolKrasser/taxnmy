@@ -1,0 +1,11 @@
+key: trellis-lab/trellis
+publisher: trellis-lab
+name: Trellis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrellisLab/Trellis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrellisLab/Trellis
+identifiers:
+- winget: TrellisLab.Trellis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrellisLab/Trellis
+aliases: []

@@ -1,0 +1,11 @@
+key: ccp-ehf/eve-online
+publisher: ccp-ehf
+name: eve-online
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCPGames/EVEOnline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCPGames/EVEOnline
+identifiers:
+- winget: CCPGames.EVEOnline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCPGames/EVEOnline
+aliases: []

@@ -1,0 +1,11 @@
+key: agent-card/ai-catalog
+publisher: agent-card
+name: ai-catalog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentCard/AICatalog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentCard/AICatalog
+identifiers:
+- winget: AgentCard.AICatalog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgentCard/AICatalog
+aliases: []

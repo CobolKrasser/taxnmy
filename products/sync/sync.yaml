@@ -1,0 +1,11 @@
+key: sync/sync
+publisher: sync
+name: Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sync/Sync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sync/Sync
+identifiers:
+- winget: Sync.Sync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sync/Sync
+aliases: []

@@ -1,0 +1,11 @@
+key: localtools/subtitle-converter
+publisher: localtools
+name: Subtitle Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/localtools/SubtitleConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/localtools/SubtitleConverter
+identifiers:
+- winget: localtools.SubtitleConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/localtools/SubtitleConverter
+aliases: []

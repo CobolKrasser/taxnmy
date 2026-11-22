@@ -1,0 +1,11 @@
+key: persistence-of-vision-raytracer/pov-ray-for-windows
+publisher: persistence-of-vision-raytracer
+name: POV-Ray for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PersistenceOfVisionRaytracer/POVRay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PersistenceOfVisionRaytracer/POVRay
+identifiers:
+- winget: PersistenceOfVisionRaytracer.POVRay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PersistenceOfVisionRaytracer/POVRay
+aliases: []

@@ -1,0 +1,11 @@
+key: peter-thornqvist/ini-translator
+publisher: peter-thornqvist
+name: Ini Translator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IniTranslator/IniTranslator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IniTranslator/IniTranslator
+identifiers:
+- winget: IniTranslator.IniTranslator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IniTranslator/IniTranslator
+aliases: []

@@ -1,0 +1,11 @@
+key: kaitai-project/kaitai-struct-compiler
+publisher: kaitai-project
+name: Kaitai Struct compiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaitai/StructCompiler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaitai/StructCompiler
+identifiers:
+- winget: Kaitai.StructCompiler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaitai/StructCompiler
+aliases: []

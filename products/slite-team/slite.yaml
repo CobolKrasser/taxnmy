@@ -1,0 +1,11 @@
+key: slite-team/slite
+publisher: slite-team
+name: Slite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slite/Slite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slite/Slite
+identifiers:
+- winget: Slite.Slite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slite/Slite
+aliases: []

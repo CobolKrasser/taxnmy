@@ -1,0 +1,11 @@
+key: quadren/arc
+publisher: quadren
+name: Arc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quadren/Arc/Prerelease
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quadren/Arc/Prerelease
+identifiers:
+- winget: Quadren.Arc.Prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quadren/Arc/Prerelease
+aliases: []

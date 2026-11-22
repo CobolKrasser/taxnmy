@@ -1,0 +1,11 @@
+key: kuajingzhiyan/roxybrowser
+publisher: kuajingzhiyan
+name: RoxyBrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoxyBrowser/RoxyBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoxyBrowser/RoxyBrowser
+identifiers:
+- winget: RoxyBrowser.RoxyBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoxyBrowser/RoxyBrowser
+aliases: []

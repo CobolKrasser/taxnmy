@@ -1,0 +1,11 @@
+key: softsea/free-mkv-player
+publisher: softsea
+name: Free MKV Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/FreeMKVPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/FreeMKVPlayer
+identifiers:
+- winget: SoftSea.FreeMKVPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/FreeMKVPlayer
+aliases: []

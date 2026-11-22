@@ -1,0 +1,11 @@
+key: plex/plexamp
+publisher: plex
+name: Plexamp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/Plexamp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/Plexamp
+identifiers:
+- winget: Plex.Plexamp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/Plexamp
+aliases: []

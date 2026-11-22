@@ -1,0 +1,11 @@
+key: microsoft/sdelete
+publisher: microsoft
+name: SDelete
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/SDelete
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/SDelete
+identifiers:
+- winget: Microsoft.Sysinternals.SDelete
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/SDelete
+aliases: []

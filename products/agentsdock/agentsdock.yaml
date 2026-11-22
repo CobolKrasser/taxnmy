@@ -1,0 +1,11 @@
+key: agentsdock/agentsdock
+publisher: agentsdock
+name: AgentsDock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhengyiLuo/AgentsDock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhengyiLuo/AgentsDock
+identifiers:
+- winget: ZhengyiLuo.AgentsDock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhengyiLuo/AgentsDock
+aliases: []

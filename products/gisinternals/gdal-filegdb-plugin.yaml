@@ -1,0 +1,11 @@
+key: gisinternals/gdal-filegdb-plugin
+publisher: gisinternals
+name: GDAL FileGDB plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/FileGDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/FileGDB
+identifiers:
+- winget: GISInternals.GDAL.FileGDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/FileGDB
+aliases: []

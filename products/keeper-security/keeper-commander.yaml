@@ -1,0 +1,11 @@
+key: keeper-security/keeper-commander
+publisher: keeper-security
+name: Keeper Commander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/Commander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/Commander
+identifiers:
+- winget: KeeperSecurity.Commander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/Commander
+aliases: []
