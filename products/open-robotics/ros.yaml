@@ -1,0 +1,11 @@
+key: open-robotics/ros
+publisher: open-robotics
+name: ROS
+kind: software
+source: https://endoflife.date/ros
+versions:
+  source: https://endoflife.date/ros
+identifiers:
+- purl: pkg:github/ros/ros
+  source: https://endoflife.date/ros
+aliases: []

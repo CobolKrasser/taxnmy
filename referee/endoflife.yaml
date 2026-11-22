@@ -1,0 +1,68 @@
+# endoflife.date as a filler (TAX-57): the data tools/endoflife.py needs, so that the code names no
+# brand and no product (TG4). A maintainer changes it with a pull request.
+#
+# The filler names no publisher in a field of its own. `pages` gives, per page (its name on the
+# filler), the publisher of what the page describes. A page whose category is in `lines` describes a
+# line of devices, with the models as rows: each model is a product of its own (TP3). `prefix`: the
+# words a model on that page is written after, when the row leaves them out ("18 Pro" on the page of
+# the iPhone is the iPhone 18 Pro).
+version: 1
+
+# Other addresses of a page of the filler, as sources in TAX already name them. `{slug}` is the page.
+also:
+  - 'https://github.com/endoflife-date/endoflife.date/blob/master/products/{slug}.md'
+
+# The kind of product per category of the filler; any other category is software.
+kinds:
+  device: device
+  os: operating-system
+
+lines: [device]
+
+# Publishers TAX does not know yet. The source is the page of the filler that names them.
+publishers:
+  deciso: {name: Deciso, page: opnsense}
+  fairphone: {name: Fairphone, page: fairphone}
+  fonticons: {name: Fonticons, page: font-awesome}
+  hmd-global: {name: HMD Global, page: nokia}
+  oneplus: {name: OnePlus, page: oneplus}
+  open-robotics: {name: Open Robotics, page: ros}
+
+pages:
+  # lines of devices
+  apple-watch: {publisher: apple, prefix: Apple Watch}
+  chromecast: {publisher: google}
+  fairphone: {publisher: fairphone}
+  google-nexus: {publisher: google}
+  ipad: {publisher: apple}
+  iphone: {publisher: apple, prefix: iPhone}
+  kindle: {publisher: amazon}
+  motorola-mobility: {publisher: motorola-mobility}
+  nokia: {publisher: hmd-global}
+  oneplus: {publisher: oneplus, prefix: OnePlus}
+  pixel: {publisher: google}
+  pixel-watch: {publisher: google}
+  raspberry-pi: {publisher: raspberry-pi, prefix: Raspberry Pi}
+  samsung-galaxy-tab: {publisher: samsung}
+  samsung-galaxy-watch: {publisher: samsung}
+  samsung-mobile: {publisher: samsung}
+  sns-hardware: {publisher: stormshield, prefix: Stormshield}
+  sony-xperia: {publisher: sony}
+  surface: {publisher: microsoft}
+  # software
+  external-dns: {publisher: the-kubernetes-authors}
+  font-awesome: {publisher: fonticons}
+  gleam: {publisher: gleam}
+  karpenter: {publisher: the-kubernetes-authors}
+  kubernetes-node-feature-discovery: {publisher: the-kubernetes-authors}
+  micronaut: {publisher: micronaut-foundation}
+  opnsense: {publisher: deciso}
+  ros: {publisher: open-robotics}
+  ros-2: {publisher: open-robotics}
+
+# Pages that stay out of this round, with the reason.
+apart:
+  intel-processors: processors and graphics cards; it is not settled that they are products with updates
+  nvidia-gpu: processors and graphics cards; it is not settled that they are products with updates
+  pci-dss: a standard, not a product
+  tls: a standard, not a product

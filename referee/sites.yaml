@@ -78,6 +78,7 @@ imports:
 # takes in from it. `{folder}` is the folder of the package in the filler's repository.
 fillers:
   winget: 'https://github.com/microsoft/winget-pkgs/tree/master/{folder}'
+  endoflife: 'https://endoflife.date/{slug}'
 
 # Datasets of third parties that name products (TE8): a finder of candidates, never the publisher's
 # own page. Owners as tools/guard.py `owner` gives them.

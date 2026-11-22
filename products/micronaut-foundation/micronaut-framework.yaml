@@ -1,0 +1,13 @@
+key: micronaut-foundation/micronaut-framework
+publisher: micronaut-foundation
+name: Micronaut Framework
+kind: software
+source: https://endoflife.date/micronaut
+versions:
+  source: https://endoflife.date/micronaut
+identifiers:
+- purl: pkg:github/micronaut-projects/micronaut-core
+  source: https://endoflife.date/micronaut
+- purl: pkg:maven/io.micronaut/micronaut-core
+  source: https://endoflife.date/micronaut
+aliases: []

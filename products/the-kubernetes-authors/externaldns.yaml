@@ -1,0 +1,11 @@
+key: the-kubernetes-authors/externaldns
+publisher: the-kubernetes-authors
+name: ExternalDNS
+kind: software
+source: https://endoflife.date/external-dns
+versions:
+  source: https://endoflife.date/external-dns
+identifiers:
+- purl: pkg:github/kubernetes-sigs/external-dns
+  source: https://endoflife.date/external-dns
+aliases: []
