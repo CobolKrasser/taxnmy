@@ -40,6 +40,9 @@ Every part of a key is derived from the name as the source writes it:
 4. **Publisher only:** a legal form at the end is dropped (`Inc.`, `GmbH`, `B.V.`, `& Cie. KG`, …).
    `Synology Inc.` and `Synology` are one publisher. The legal form is dropped before step 2.
 5. **Version only:** spaces become `-`; `.`, `+` and `_` stay. Step 2 does not apply.
+6. **Product only:** when the product part starts with the whole publisher part, those words are
+   dropped: `Adobe Acrobat` by Adobe becomes `adobe/acrobat`. When nothing is left, the part stays
+   (`dapr/dapr`). The long form, `adobe/adobe-acrobat`, is an alias of the product (TAX-54).
 
 Examples:
 
@@ -48,6 +51,7 @@ Examples:
 | Synology Inc., DS224+ | `synology/ds224-plus` |
 | AVM GmbH, FRITZ!Box 7590 AX | `avm/fritz-box-7590-ax` |
 | Microsoft, C# | `microsoft/c-sharp` |
+| Adobe, Adobe Acrobat | `adobe/acrobat` |
 | Miele & Cie. KG, Dialogoven DO 7860 | `miele/dialogoven-do-7860` |
 | Synology, DS224+, 7.2.1-69057 Update 5 | `synology/ds224-plus@7.2.1-69057-update-5` |
 
