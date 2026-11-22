@@ -1,0 +1,11 @@
+key: deciso/opnsense
+publisher: deciso
+name: OPNsense
+kind: software
+source: https://endoflife.date/opnsense
+versions:
+  source: https://endoflife.date/opnsense
+identifiers:
+- cpe: cpe:2.3:a:opnsense:opnsense
+  source: https://endoflife.date/opnsense
+aliases: []

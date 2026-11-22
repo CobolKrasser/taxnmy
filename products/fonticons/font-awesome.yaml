@@ -1,0 +1,15 @@
+key: fonticons/font-awesome
+publisher: fonticons
+name: Font Awesome
+kind: software
+source: https://endoflife.date/font-awesome
+versions:
+  source: https://endoflife.date/font-awesome
+identifiers:
+- purl: pkg:github/fortawesome/font-awesome
+  source: https://endoflife.date/font-awesome
+- purl: pkg:npm/%40fortawesome/fontawesome-svg-core
+  source: https://endoflife.date/font-awesome
+- cpe: cpe:2.3:a:fontawesome:font_awesome
+  source: https://endoflife.date/font-awesome
+aliases: []

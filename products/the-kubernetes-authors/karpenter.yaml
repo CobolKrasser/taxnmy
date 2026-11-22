@@ -1,0 +1,11 @@
+key: the-kubernetes-authors/karpenter
+publisher: the-kubernetes-authors
+name: Karpenter
+kind: software
+source: https://endoflife.date/karpenter
+versions:
+  source: https://endoflife.date/karpenter
+identifiers:
+- purl: pkg:github/kubernetes-sigs/karpenter
+  source: https://endoflife.date/karpenter
+aliases: []
