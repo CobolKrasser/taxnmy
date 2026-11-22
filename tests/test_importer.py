@@ -141,9 +141,9 @@ class PlanTest(Base):
 
     def test_keys_and_publishers(self):
         out = importer.plan(self.rows(), self.root)
-        self.assertEqual(out[0].key, "acme/acme-widget")
+        self.assertEqual(out[0].key, "acme/widget")
         self.assertFalse(out[0].new_publisher)
-        self.assertEqual(out[1].of, "acme/acme-widget")
+        self.assertEqual(out[1].of, "acme/widget")
         self.assertEqual(out[2].key, "acme/multiple-products", "a series is parked under the listed name")
         self.assertEqual(out[3].key, "acme/widget-core", "an edition too, not under the product it belongs to")
         self.assertEqual(out[4].of, "acme/router-os")
@@ -178,7 +178,7 @@ class PlanTest(Base):
         classes = {"acme": {"widget": {"class": "alias", "of": "Acme Widget"},
                             "ros-classic": {"class": "alias", "of": "acme/router-os"}}}
         extra = importer.add_grouped_aliases(out, classes)
-        self.assertEqual(out[0].aliases, ["acme/widget"])
+        self.assertEqual(out[0].aliases, ["acme/acme-widget"], "the long form (TAX-54); the grouped alias is the key itself")
         self.assertEqual(extra, {"acme/router-os": ["acme/ros-classic"]})
         files = importer.files_of(out, {}, extra, self.root)
         self.assertEqual(yaml.safe_load(files["products/acme/router-os.yaml"])["aliases"], ["acme/ros", "acme/ros-classic"])
@@ -251,7 +251,7 @@ class PagesTest(Base):
         self.assertIn("Set aside by the find round or the grouping (not counted): 4 products.", report)
         self.assertIn("Provisional count, before the verdict of the referee:** 2 of 3", report)
         self.assertNotRegex(report, r"\*\*stop\*\*|gaat door", "before the verdict no word on going on (TAX-39)")
-        accept = {"verdicts": [{"id": "products/acme/acme-widget.yaml", "outcome": "accept"}]}
+        accept = {"verdicts": [{"id": "products/acme/widget.yaml", "outcome": "accept"}]}
         self.assertEqual(self.counted(out, accept), (2, 3, 4, True, True), "after the verdict: two of three, stop")
 
 
@@ -260,7 +260,7 @@ class FilesTest(Base):
         out = importer.plan(self.rows(), self.root)
         pubs = importer.check_pages(out, FakeFetcher(pages()))
         files = importer.files_of(out, pubs, {}, self.root)
-        self.assertEqual(sorted(files), ["products/acme/acme-widget.yaml", "products/beta-systems/beta-box.yaml",
+        self.assertEqual(sorted(files), ["products/acme/widget.yaml", "products/beta-systems/beta-box.yaml",
                                          "publishers/beta-systems.yaml"])
         for rel, text in files.items():
             schema = json.loads((REPO / "schema" / ("product" if rel.startswith("products/") else "publisher")).with_suffix(
@@ -305,7 +305,7 @@ class ClosedRoundTest(Base):
         o = next(o for o in got["outcomes"] if o.row.name == "Acme Widget" and o.row.listed == "Widget")
         self.assertEqual(o.outcome, "candidate")
         self.assertEqual(o.instead, [[self.CLOSED, self.OTHER]])
-        item = next(i for i in got["items"] if i["id"] == "products/acme/acme-widget.yaml")
+        item = next(i for i in got["items"] if i["id"] == "products/acme/widget.yaml")
         self.assertEqual(item["outcome"], "pending", item["reason"])
         self.assertIn(f'instead-of="{self.CLOSED}"', item["message"])
         self.assertEqual(f.asked.count(self.CLOSED), 1, "the closed page is not asked again")
@@ -373,7 +373,7 @@ class ProposeTest(Base):
         got = importer.propose(self.args(), FakeFetcher(pages()), self.root, NOW, QUIET)
         self.assertEqual(sorted(p.relative_to(self.root) for p in self.root.rglob("*")), before)
         out = self.tmp / "out"
-        self.assertTrue((out / "data/products/acme/acme-widget.yaml").is_file())
+        self.assertTrue((out / "data/products/acme/widget.yaml").is_file())
         parked = yaml.safe_load((out / "data/referee/parked.yaml").read_text())["parked"]
         self.assertEqual(len(parked), 5)
         self.assertIn("| candidate | for the referee | 2 |", got["report"])
@@ -518,7 +518,7 @@ class GatedTest(ProposeTest):
         data = json.loads(gated.read_text())
         self.assertEqual((data["version"], data["pr"], data["fork"]), (1, None, False))
         self.assertEqual(sorted(i["id"] for i in data["items"]),
-                         ["products/acme/acme-widget.yaml", "products/beta-systems/beta-box.yaml"])
+                         ["products/acme/widget.yaml", "products/beta-systems/beta-box.yaml"])
         items = data["items"]
         importer.pr_referee.judge(items, argparse.Namespace(live=False))
         self.assertEqual({i["outcome"] for i in items}, {"parked"}, "a dry judge parks what it was not asked")
@@ -633,7 +633,7 @@ class TrialCountTest(unittest.TestCase):
             "Acme;Widget;Acme;https://acme.example/;Acme Widget;software;https://acme.example/widget;https://acme.example/widget/notes;"])])
         classes = {"acme": {"acme-w": {"class": "alias", "of": "Acme Widget"}}}
         out = importer.plan(rows, root, classes)
-        self.assertEqual((out[0].outcome, out[0].of), ("alias", "acme/acme-widget"), "the product comes in a later row")
+        self.assertEqual((out[0].outcome, out[0].of), ("alias", "acme/widget"), "the product comes in a later row")
         self.assertEqual(out[1].outcome, "candidate")
 
     def test_the_count_command(self):
@@ -965,27 +965,27 @@ class EditionTest(Base):
     def test_an_edition_of_a_product_of_the_same_proposal_is_set_apart(self):
         out = self.plan({"acme": {"acme-widget-pro": {"class": "edition", "of": "Acme Widget"}}}, [PRO] + ROWS)
         o = out[0]
-        self.assertEqual((o.reason, o.of), ("grouped-edition", "acme/acme-widget"), "also when that row comes later")
+        self.assertEqual((o.reason, o.of), ("grouped-edition", "acme/widget"), "also when that row comes later")
         self.assertIn("row 261118-kev-groep-01.csv:3", o.detail)
-        out = self.plan({"acme": {"acme-widget-pro": {"class": "series", "of": "acme/acme-widget"}}}, ROWS + [PRO])
+        out = self.plan({"acme": {"acme-widget-pro": {"class": "series", "of": "acme/widget"}}}, ROWS + [PRO])
         self.assertEqual(out[-1].reason, "grouped-edition", "a part of a product: the same")
 
     def test_an_edition_of_no_product_is_the_product(self):
         """BIND 9, Kentico Xperience 13: the grouping names a product that is neither in TAX nor proposed."""
         out = self.plan({"acme": {"acme-ghost-9": {"class": "edition", "of": "Acme Ghost"}}}, ROWS + [GHOST])
         o = out[-1]
-        self.assertEqual((o.outcome, o.key, o.of), ("candidate", "acme/acme-ghost-9", ""))
-        self.assertIn("edition or range of acme/acme-ghost, which is not in TAX and not proposed", o.detail)
+        self.assertEqual((o.outcome, o.key, o.of), ("candidate", "acme/ghost-9", ""))
+        self.assertIn("edition or range of acme/ghost, which is not in TAX and not proposed", o.detail)
         self.assertEqual(importer.orphans(out, importer.existing_keys(self.root)), [])
 
     def test_an_edition_of_no_product_gets_the_outcome_of_a_product(self):
         rows = [GHOST.replace("https://acme.example/g9/notes", ""), GHOST.replace(";software;", ";;").replace("g9", "g8")
                 .replace("Ghost 9", "Ghost 8")]
-        classes = {"acme": {"acme-ghost-9": {"class": "edition", "of": "acme/acme-ghost"},
+        classes = {"acme": {"acme-ghost-9": {"class": "edition", "of": "acme/ghost"},
                             "acme-ghost-8": {"class": "edition", "of": None}}}
         out = self.plan(classes, rows)
         self.assertEqual([(o.outcome, o.reason) for o in out], [("parked", "no-versions"), ("parked", "no-kind")])
-        self.assertIn("acme/acme-ghost", out[0].detail)
+        self.assertIn("acme/ghost", out[0].detail)
         out = self.plan({"acme": {"router-os-2": {"class": "edition", "of": "acme/ghost"}}},
                         ["Acme;ROS 2;Acme;;ROS;software;https://acme.example/os2;https://acme.example/os2/n;"])
         self.assertEqual((out[0].outcome, out[0].reason, out[0].of), ("alias", "existing", "acme/router-os"),
@@ -1051,8 +1051,8 @@ class DoubtTest(Base):
         o = importer.plan(self.rows([PRO, ROWS[0]]), self.root, self.CLASSES)
         msg = "<proposal>\nx\n</proposal>\n\n<signals>\nnone\n</signals>\n\n<decided>\nTK2: yes (code)\nJudge only: TP3, TP5\n" \
               "</decided>\n\n<identity>\nnone\n</identity>\n"
-        items = [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TP3", "TP5"], "message": msg},
-                 {"id": "products/acme/acme-widget.yaml", "outcome": "pending", "ai_rules": ["TP3", "TP5"], "message": msg}]
+        items = [{"id": "products/acme/widget-pro.yaml", "outcome": "pending", "ai_rules": ["TP3", "TP5"], "message": msg},
+                 {"id": "products/acme/widget.yaml", "outcome": "pending", "ai_rules": ["TP3", "TP5"], "message": msg}]
         o[0].doubt += "."  # a reason ends with a full stop: one, not two
         importer.mark_doubt(o, items)
         self.assertIn("TK2: yes (code)\nTP3 in part: the grouping, which sees only the names of this publisher, could not "
@@ -1060,7 +1060,7 @@ class DoubtTest(Base):
                       "Judge only: TP3, TP5\n", items[0]["message"])
         self.assertEqual(items[0]["doubt"], "the names do not settle it.")
         self.assertEqual(items[1]["message"], msg, "no doubt, no line")
-        bare = {"id": "products/acme/acme-widget-pro.yaml", "outcome": "pending", "ai_rules": ["TP3"],
+        bare = {"id": "products/acme/widget-pro.yaml", "outcome": "pending", "ai_rules": ["TP3"],
                 "message": "<signals>\nnone\n</signals>\n\n<identity>\nnone\n</identity>\n"}
         importer.mark_doubt(o, [bare])
         self.assertIn("</signals>\n\n<decided>\nTP3 in part: ", bare["message"])
@@ -1069,12 +1069,12 @@ class DoubtTest(Base):
     def test_the_count_shows_what_the_referee_made_of_it(self):
         out = importer.plan(self.rows([PRO, PRO.replace("https://acme.example/pro/notes", "").replace("Pro", "Max")]),
                             self.root, {"acme": {**self.CLASSES["acme"], "acme-widget-max": self.CLASSES["acme"]["acme-widget-pro"]}})
-        verdicts = {"verdicts": [{"id": "products/acme/acme-widget-pro.yaml", "outcome": "parked", "rule": "TP3",
+        verdicts = {"verdicts": [{"id": "products/acme/widget-pro.yaml", "outcome": "parked", "rule": "TP3",
                                   "reason": "TP3: an edition", "waits_for": "better-proposal"}]}
         text = importer.final_report(out, verdicts, set())
         self.assertIn("**Proposed after doubt in the grouping** (TAX-44): 1 products; parked: 1", text)
-        self.assertIn("- acme/acme-widget-pro: parked (TP3: an edition)", text)
-        self.assertNotIn("- acme/acme-widget-max", text, "not proposed: it had no versions page")
+        self.assertIn("- acme/widget-pro: parked (TP3: an edition)", text)
+        self.assertNotIn("- acme/widget-max", text, "not proposed: it had no versions page")
 
     def test_the_reasons_of_a_run_before_tax_44(self):
         names = self.tmp / "names.json"

@@ -362,6 +362,9 @@ def as_product(o: Outcome, taken: dict) -> None:
         o.reason = "no-publisher-page"
     else:
         o.outcome, o.reason = "candidate", ""
+        long = keyrule.long_form(o.key, row.name) if row.name else None
+        if long and long not in o.aliases:  # TAX-54: the form with the publisher in front
+            o.aliases.append(long)
         if NOTE_UNSUPPORTED.search(row.note):
             o.detail = "no longer supported, says the finder (TP1 is for the referee)"
         taken[o.key] = o

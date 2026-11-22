@@ -43,7 +43,7 @@ cases:
   type: holdout-device
   expect: [accept]
   lint: pass
-  holdout: [products/shelly/shelly-plus-1pm.yaml]
+  holdout: [products/shelly/plus-1pm.yaml]
 - id: G05
   type: holdout-device
   expect: [parked]
@@ -134,7 +134,7 @@ cases:
   type: tr4-signal
   expect: [accept]
   lint: signal
-  holdout: [products/oracle/oracle-graalvm.yaml]
+  holdout: [products/oracle/graalvm.yaml]
   note: Shares cpe oracle:graalvm with GraalVM Community Edition. Separate builds, licences and release pages, so its own update stream.
 - id: G21
   type: tr4-signal
@@ -165,7 +165,7 @@ cases:
   type: related-publisher
   expect: [accept, parked]
   lint: pass
-  holdout: [products/alibaba/alibaba-dragonwell.yaml, publishers/alibaba.yaml]
+  holdout: [products/alibaba/dragonwell.yaml, publishers/alibaba.yaml]
   note: The dataset keeps alibaba-cloud. The publisher source in fase 1 is an endoflife.date page; if it does not show who publishes, parked is right.
 
 # New proposals.
@@ -277,7 +277,7 @@ cases:
   type: ai-model
   expect: [accept, parked]
   lint: pass
-  holdout: [products/openai/openai-api-models.yaml, publishers/openai.yaml]
+  holdout: [products/openai/api-models.yaml, publishers/openai.yaml]
   verify: [https://developers.openai.com/api/docs/deprecations]
   note: As H01. The publisher source is OpenAI's own deprecations page; openai.com/about answers 403 to a plain fetch. "OpenAI API Models" is the name endoflife.date gives the product. OpenAI has no overarching name for its models, so whether this is a name (TK2) is a real border case, and parked is right too (run A2 review §1, point 5).
 
@@ -306,10 +306,10 @@ cases:
   expect: [reject]
   rules: [TE1]
   lint: error TE1
-  hide: [products/apple/apple-watch-ultra.yaml]
+  hide: [products/apple/watch-ultra.yaml]
   proposal:
-    products/apple/apple-watch-ultra.yaml: |
-      key: apple/apple-watch-ultra
+    products/apple/watch-ultra.yaml: |
+      key: apple/watch-ultra
       publisher: apple
       name: Apple Watch Ultra
       kind: device
@@ -443,12 +443,12 @@ cases:
 - id: B09
   type: word-order-duplicate
   expect: [alias]
-  alias_of: apple/apple-tv-4k-3rd-generation
+  alias_of: apple/tv-4k-3rd-generation
   rules: [TP3]
   lint: signal
   proposal:
-    products/apple/apple-tv-3rd-generation-4k.yaml: |
-      key: apple/apple-tv-3rd-generation-4k
+    products/apple/tv-3rd-generation-4k.yaml: |
+      key: apple/tv-3rd-generation-4k
       publisher: apple
       name: Apple TV 3rd generation 4K
       kind: device
@@ -460,12 +460,12 @@ cases:
 - id: B10
   type: word-order-duplicate
   expect: [alias]
-  alias_of: shelly/shelly-plus-1pm
+  alias_of: shelly/plus-1pm
   rules: [TP3]
   lint: signal
   proposal:
-    products/shelly/shelly-1pm-plus.yaml: |
-      key: shelly/shelly-1pm-plus
+    products/shelly/1pm-plus.yaml: |
+      key: shelly/1pm-plus
       publisher: shelly
       name: Shelly 1PM Plus
       kind: device
@@ -514,12 +514,12 @@ cases:
 - id: B13
   type: variant
   expect: [alias, reject]
-  alias_of: apple/apple-watch-ultra
+  alias_of: apple/watch-ultra
   rules: [TP3, TK2]
   lint: pass
   proposal:
-    products/apple/apple-watch-ultra-with-alpine-loop.yaml: |
-      key: apple/apple-watch-ultra-with-alpine-loop
+    products/apple/watch-ultra-with-alpine-loop.yaml: |
+      key: apple/watch-ultra-with-alpine-loop
       publisher: apple
       name: Apple Watch Ultra with Alpine Loop
       kind: device
@@ -608,10 +608,10 @@ cases:
   expect: [reject]
   rules: [TK2]
   lint: pass
-  hide: [products/apple/apple-tv-4k-3rd-generation.yaml]
+  hide: [products/apple/tv-4k-3rd-generation.yaml]
   proposal:
-    products/apple/apple-tv-4k-3e-generatie.yaml: |
-      key: apple/apple-tv-4k-3e-generatie
+    products/apple/tv-4k-3e-generatie.yaml: |
+      key: apple/tv-4k-3e-generatie
       publisher: apple
       name: Apple TV 4K (3e generatie)
       kind: device
@@ -626,10 +626,10 @@ cases:
   expect: [reject]
   rules: [TK2]
   lint: pass
-  hide: [products/apple/apple-watch-ultra.yaml]
+  hide: [products/apple/watch-ultra.yaml]
   proposal:
-    products/apple/apple-horloge-ultra.yaml: |
-      key: apple/apple-horloge-ultra
+    products/apple/horloge-ultra.yaml: |
+      key: apple/horloge-ultra
       publisher: apple
       name: Apple Horloge Ultra
       kind: device
@@ -646,8 +646,8 @@ cases:
   rules: [TP1, TE1]
   lint: pass
   proposal:
-    products/shelly/shelly-plus-9pm.yaml: |
-      key: shelly/shelly-plus-9pm
+    products/shelly/plus-9pm.yaml: |
+      key: shelly/plus-9pm
       publisher: shelly
       name: Shelly Plus 9PM
       kind: device
@@ -992,8 +992,8 @@ cases:
   rules: [TP3]
   lint: pass
   proposal:
-    products/github/github-com.yaml: |
-      key: github/github-com
+    products/github/com.yaml: |
+      key: github/com
       publisher: github
       name: GitHub.com
       kind: software
@@ -1026,8 +1026,8 @@ cases:
   rules: [TP3]
   lint: pass
   proposal:
-    products/microsoft/microsoft-entra-id.yaml: |
-      key: microsoft/microsoft-entra-id
+    products/microsoft/entra-id.yaml: |
+      key: microsoft/entra-id
       publisher: microsoft
       name: Microsoft Entra ID
       kind: software
@@ -1277,8 +1277,8 @@ cases:
   - accept
   lint: pass
   context:
-    products/adobe/adobe-coldfusion.yaml: |
-      key: adobe/adobe-coldfusion
+    products/adobe/coldfusion.yaml: |
+      key: adobe/coldfusion
       publisher: adobe
       name: Adobe ColdFusion
       kind: software
@@ -1289,10 +1289,10 @@ cases:
       - cpe: cpe:2.3:a:adobe:coldfusion
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
       aliases:
-      - adobe/coldfusion
+      - adobe/adobe-coldfusion
   proposal:
-    products/adobe/adobe-coldfusion.yaml: |
-      key: adobe/adobe-coldfusion
+    products/adobe/coldfusion.yaml: |
+      key: adobe/coldfusion
       publisher: adobe
       name: Adobe ColdFusion
       kind: software
@@ -1303,7 +1303,7 @@ cases:
       - cpe: cpe:2.3:a:adobe:coldfusion
         source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
       aliases:
-      - adobe/coldfusion
+      - adobe/adobe-coldfusion
   note: 'TAX-40. One of the six of the trial of the KEV round (TAX-27): only the alias adobe/coldfusion is added to a product in TAX. Judged on the alias alone: its name is the product''s own, so a source
     of the product writes it. TP3, TP5, TP1 and TE1 are not judged again.'
 - id: G31
@@ -1746,10 +1746,10 @@ cases:
   expect: [reject]
   rules: [TK3]
   lint: error TK3
-  delete: [products/shelly/shelly-plus-1pm.yaml]
+  delete: [products/shelly/plus-1pm.yaml]
   proposal:
-    products/shelly/shelly-plus-1-pm.yaml: |
-      key: shelly/shelly-plus-1pm
+    products/shelly/plus-1-pm.yaml: |
+      key: shelly/plus-1pm
       publisher: shelly
       name: Shelly Plus 1PM
       kind: device
@@ -1772,8 +1772,8 @@ cases:
   rules: [TK3]
   lint: error TK3
   context:
-    products/adobe/adobe-acrobat.yaml: |
-      key: adobe/adobe-acrobat
+    products/adobe/acrobat.yaml: |
+      key: adobe/acrobat
       publisher: adobe
       name: Adobe Acrobat
       kind: software
@@ -1781,10 +1781,10 @@ cases:
       versions:
         source: https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html
       aliases:
-      - adobe/acrobat
+      - adobe/adobe-acrobat
   proposal:
-    products/adobe/adobe-acrobat.yaml: |
-      key: adobe/adobe-acrobat
+    products/adobe/acrobat.yaml: |
+      key: adobe/acrobat
       publisher: adobe
       name: Adobe Acrobat
       kind: software

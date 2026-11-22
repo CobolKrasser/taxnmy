@@ -169,11 +169,13 @@ def check_product(rec: Record, publishers: set, findings: list) -> None:
     if pub_part != publisher:
         _s2(rec, findings, ("key",), [f"key {key!r} does not start with the publisher {publisher!r}"])
     try:
-        expected = keyrule.product_part(name)
+        expected = keyrule.product_part(name, pub_part)
     except keyrule.KeyRuleError as exc:
         _s2(rec, findings, ("name",), [f"name {name!r}: {exc}"])
     else:
-        if prod_part != expected:
+        if prod_part != expected and keyrule.without_publisher(prod_part, pub_part) != prod_part:
+            _s2(rec, findings, ("key",), [f"key {key!r} starts with its publisher {pub_part!r}; expected {pub_part}/{expected}, with {key!r} as an alias (TAX-54)"])
+        elif prod_part != expected:
             _s2(rec, findings, ("key",), [f"key {key!r} does not follow the writing rule for name {name!r}; expected {pub_part}/{expected}"])
     if rec.file != f"products/{key}.yaml":
         _s2(rec, findings, ("key",), [f"key {key!r} does not match the file name; expected products/{key}.yaml"])
