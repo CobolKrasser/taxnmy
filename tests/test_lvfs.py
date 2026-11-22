@@ -15,8 +15,8 @@ sys.path.insert(0, str(REPO / "tools"))
 import lint  # noqa: E402
 import lvfs  # noqa: E402
 
-LIST = {"version": 1, "page": "https://lvfs.example/devices/{id}", "whole": ["X-System"],
-        "parts": ["X-ManagementEngine", "X-NetworkInterface"], "settings": ["X-Configuration"]}
+LIST = {"version": 1, "page": "https://lvfs.example/devices/{id}", "devices": ["X-System", "X-Device", "X-NetworkInterface"],
+        "named": ["X-ManagementEngine"], "parts": ["X-EmbeddedController"], "settings": ["X-Configuration"]}
 
 
 def component(ident, name, developer, *cats):
@@ -29,8 +29,11 @@ METADATA = gzip.compress(("<?xml version='1.0'?><components origin='lvfs'>" + ""
     component("com.acme.book9.firmware", "Book 9", "Acme", "X-System"),
     component("com.acme.book9.eu.firmware", "Book 9", "Acme", "X-System"),          # the same product
     component("com.acme.dock.firmware", "Dock 2 Firmware", "Acme", "X-Device"),     # 'Firmware' is off
-    component("com.acme.me.firmware", "Book 9 ME", "Acme", "X-ManagementEngine"),   # a part
-    component("com.acme.wwan.firmware", "Modem X", "Acme", "X-Device", "X-NetworkInterface"),
+    component("com.acme.me.firmware", "Book 9", "Acme", "X-ManagementEngine"),      # the firmware of Book 9
+    component("com.acme.me2.firmware", "Book 7", "Acme", "X-ManagementEngine"),     # Book 7 is not in the round
+    component("com.acme.ec.firmware", "Book 9 EC", "Acme", "X-EmbeddedController"),  # a part
+    component("com.acme.wwan.firmware", "Modem X", "Acme", "X-Device", "X-NetworkInterface"),  # a device
+    component("com.acme.new.firmware", "Thing", "Acme", "X-Device", "X-Hologram"),  # a category not in the list
     component("com.acme.kek.firmware", "Secure Boot KEK", "Acme", "X-Configuration", "X-System"),
     component("com.zed.pad.firmware", "Pad", "Zed Labs", "X-Device"),               # a new publisher
     component("com.acme.old.firmware", "Old Book", "Acme", "X-System"),             # in TAX
@@ -58,17 +61,20 @@ class LvfsTest(unittest.TestCase):
 
     def test_every_component_has_one_outcome_with_a_reason(self):
         got, _ = self.run_round()
-        self.assertEqual(len(got["items"]), 8)
+        self.assertEqual(len(got["items"]), 11)
         for i in got["items"]:
             self.assertIn(i.outcome, ("taken-in", "in-tax", "apart"))
             self.assertTrue(i.reason, i.name)
 
     def test_the_outcomes(self):
         got, by = self.run_round()
-        self.assertEqual(set(got["products"]), {"acme/book-9", "acme/dock-2", "zed-labs/pad"})
+        self.assertEqual(set(got["products"]), {"acme/book-9", "acme/book-7", "acme/dock-2", "acme/modem-x", "zed-labs/pad"})
         self.assertEqual(by["com.acme.book9.eu.firmware"].product, "acme/book-9", "the same key: one product")
-        self.assertIn("a part", by["com.acme.me.firmware"].reason)
-        self.assertIn("a part", by["com.acme.wwan.firmware"].reason)
+        self.assertEqual(by["com.acme.me.firmware"].product, "acme/book-9", "the device its name names")
+        self.assertIn("names", by["com.acme.me.firmware"].reason)
+        self.assertEqual(got["products"]["acme/book-9"].source, "https://lvfs.example/devices/com.acme.book9.firmware")
+        self.assertIn("a part", by["com.acme.ec.firmware"].reason)
+        self.assertIn("X-Hologram", by["com.acme.new.firmware"].reason)
         self.assertIn("a setting", by["com.acme.kek.firmware"].reason)
         self.assertEqual((by["com.acme.old.firmware"].outcome, by["com.acme.old.firmware"].product), ("in-tax", "acme/old-book"))
 
@@ -91,7 +97,8 @@ class LvfsTest(unittest.TestCase):
     def test_the_list_of_the_repository(self):
         data = lvfs.load_list()
         self.assertIn("{id}", data["page"])
-        self.assertTrue(set(data["parts"]).isdisjoint(data["whole"]))
+        lists = [set(data[k]) for k in ("devices", "named", "parts", "settings")]
+        self.assertEqual(sum(map(len, lists)), len(set().union(*lists)), "a category is in one list only")
 
 
 if __name__ == "__main__":

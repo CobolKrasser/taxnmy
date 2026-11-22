@@ -4,8 +4,10 @@ round, with no AI call. The first filling by the maintainer, with only the basic
 
 The round reads the metadata that a fwupd client fetches (`fwupdmgr refresh`), as a local file; it
 fetches nothing itself (Fred, 22 November 2026). Each component is a device (criterion 4), unless its
-categories say it is a part of a device with its own firmware (outside TAX-23) or a setting; those are set
-apart with that reason. The page on which LVFS describes the device is the source of the product and of
+categories say it is a part of a device with its own firmware (outside TAX-23), a setting, or a category
+the list does not know; those are set apart with that reason. A component whose category says it is the
+firmware of the device its name names (a management engine, a TPM) becomes a product only when that
+device is not in TAX or in the round yet. The page on which LVFS describes the device is the source of the product and of
 its versions (criterion 2); its releases are its versions (TP3). The name and the publisher are as the
 metadata writes them (`name`, `developer_name`, criterion 3); components that give the same key are one
 product. A publisher TAX knows keeps its key and its source; a new one gets the page of LVFS as source.
@@ -62,20 +64,27 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
     """(items, products by key, new publishers by key, publishers by key: [] for the files)."""
     data = data or load_list()
     tax = csaf.Tax(root)
-    whole, parts, settings = (set(data.get(k) or []) for k in ("whole", "parts", "settings"))
+    devices, named, parts, settings = (set(data.get(k) or []) for k in ("devices", "named", "parts", "settings"))
     items: list[csaf.Item] = []
     products: dict[str, csaf.Product] = {}
     spellings: dict[str, Counter] = defaultdict(Counter)
     first: dict[str, str] = {}
-    for c in sorted(comps, key=lambda c: (c["developer"], c["name"], len(c["id"]), c["id"])):  # the shortest id is the source
+    # a component of `named` comes after the devices, so that it finds the device its name names
+    order = sorted(comps, key=lambda c: (bool(c["categories"] & named), c["developer"], c["name"], len(c["id"]), c["id"]))
+    for c in order:  # the shortest id is the source
         page = data["page"].format(id=c["id"])
         item = csaf.Item(page, c["developer"], c["name"])
         items.append(item)
-        if c["categories"] & settings:
+        cats = c["categories"]
+        unknown = sorted(cats - devices - named - parts - settings)
+        if cats & settings:
             csaf._set(item, "apart", "a setting, no product (its category)")
             continue
-        if c["categories"] & parts and not c["categories"] & whole:
+        if cats & parts:
             csaf._set(item, "apart", "a part of a device with its own firmware, outside TAX-23 (its category)")
+            continue
+        if unknown or not cats:
+            csaf._set(item, "apart", f"a category that referee/lvfs.yaml does not list: {', '.join(unknown) or 'none'}")
             continue
         if not c["developer"] or not c["name"] or not c["id"]:
             csaf._set(item, "apart", "the metadata gives no developer, no name or no id, so no key (TK2)")
@@ -93,7 +102,8 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
             continue
         if key in products:
             products[key].items.append(item)
-            csaf._set(item, "taken-in", "the same key as another component: one product (TP3)", key)
+            csaf._set(item, "taken-in", "the firmware of the device its name names (its category)" if cats & named
+                      else "the same key as another component: one product (TP3)", key)
             continue
         products[key] = csaf.Product(key, pub, name, page, "device", RULE, [], [], [item])
         csaf._set(item, "taken-in", RULE, key)

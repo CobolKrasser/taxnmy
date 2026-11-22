@@ -9,11 +9,14 @@ version: 1
 # Where LVFS describes a device: the source of the product and of its versions (criterion 2).
 page: 'https://fwupd.org/lvfs/devices/{id}'
 
-# Categories of a component. A component with a category of `parts` is a part of a device with its own
-# firmware, outside TAX-23, unless it also has a category of `whole`. One with a category of `settings`
-# is no product. Every other component is a device.
-whole: [X-System]
-parts: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEngine, X-EmbeddedController,
-        X-Controller, X-ThunderboltController, X-TPM, X-BaseboardManagementController, X-Touchpad,
-        X-FingerprintReader, X-NetworkInterface, X-SolidStateDrive, X-Drive]
+# The categories of a component, as Fred approved the analyst's verdict per category (22 November 2026).
+# A component with a category of `settings` is no product; one with a category of `parts` is a part of a
+# device with its own firmware, outside TAX-23; one with a category of `named` is the firmware of the device
+# its name names, and becomes a product only when that device is not in TAX or in the round yet. Every other
+# component whose categories are all in `devices` is a device. A component with a category in none of the
+# lists (a new one of LVFS), or with none, is set apart with that reason.
+devices: [X-System, X-Device, X-Dock, X-UsbDock, X-Keyboard, X-FlashDrive, X-SolidStateDrive, X-Drive,
+          X-NetworkInterface, X-Touchpad, X-FingerprintReader]
+named: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEngine, X-TPM]
+parts: [X-EmbeddedController, X-Controller, X-ThunderboltController, X-BaseboardManagementController]
 settings: [X-Configuration]
