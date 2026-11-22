@@ -1,0 +1,11 @@
+key: samsung/easy-connection-to-screen
+publisher: samsung
+name: Easy Connection to Screen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasyConnectionToScreen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasyConnectionToScreen
+identifiers:
+- winget: Samsung.EasyConnectionToScreen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasyConnectionToScreen
+aliases: []

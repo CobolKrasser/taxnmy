@@ -1,0 +1,11 @@
+key: dovecot/pigeonhole
+publisher: dovecot
+name: Pigeonhole
+kind: software
+source: https://endoflife.date/pigeonhole
+versions:
+  source: https://endoflife.date/pigeonhole
+identifiers:
+- cpe: cpe:2.3:a:dovecot:pigeonhole
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/pigeonhole.md
+aliases: []

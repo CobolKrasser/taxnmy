@@ -1,0 +1,11 @@
+key: microsoft/lingering-object-liquidator-lol
+publisher: microsoft
+name: Lingering Object Liquidator (LoL)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LingeringObjectLiquidator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LingeringObjectLiquidator
+identifiers:
+- winget: Microsoft.LingeringObjectLiquidator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LingeringObjectLiquidator
+aliases: []

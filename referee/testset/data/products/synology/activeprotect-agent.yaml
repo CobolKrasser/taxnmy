@@ -1,0 +1,11 @@
+key: synology/activeprotect-agent
+publisher: synology
+name: ActiveProtect Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/ActiveProtectAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/ActiveProtectAgent
+identifiers:
+- winget: Synology.ActiveProtectAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/ActiveProtectAgent
+aliases: []

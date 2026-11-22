@@ -1,0 +1,12 @@
+key: microsoft/net-framework-developer-pack-kb2861696
+publisher: microsoft
+name: Microsoft .NET Framework Developer Pack (KB2861696)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack/4/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack/4/5
+identifiers:
+- winget: Microsoft.DotNet.Framework.DeveloperPack.4.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack/4/5
+aliases:
+- microsoft/microsoft-net-framework-developer-pack-kb2861696

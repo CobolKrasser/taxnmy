@@ -1,0 +1,11 @@
+key: gnu/fisicalab
+publisher: gnu
+name: FisicaLab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/FisicaLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/FisicaLab
+identifiers:
+- winget: GNU.FisicaLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/FisicaLab
+aliases: []

@@ -1,0 +1,11 @@
+key: apple/visionos
+publisher: apple
+name: visionOS
+kind: operating-system
+source: https://endoflife.date/visionos
+versions:
+  source: https://endoflife.date/visionos
+identifiers:
+- cpe: cpe:2.3:o:apple:visionos
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/visionos.md
+aliases: []

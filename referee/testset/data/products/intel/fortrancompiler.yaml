@@ -1,0 +1,11 @@
+key: intel/fortrancompiler
+publisher: intel
+name: FortranCompiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/FortranCompiler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/FortranCompiler
+identifiers:
+- winget: Intel.FortranCompiler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/FortranCompiler
+aliases: []

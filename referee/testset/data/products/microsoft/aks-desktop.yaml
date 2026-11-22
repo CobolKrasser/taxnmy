@@ -1,0 +1,11 @@
+key: microsoft/aks-desktop
+publisher: microsoft
+name: AKS desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AKSdesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AKSdesktop
+identifiers:
+- winget: Microsoft.AKSdesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AKSdesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/surface
+publisher: microsoft
+name: Surface
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceApp
+identifiers:
+- winget: Microsoft.SurfaceApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceApp
+aliases: []

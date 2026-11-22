@@ -1,0 +1,11 @@
+key: microsoft/windows-11-installation-assistant
+publisher: microsoft
+name: Windows 11 Installation Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsInstallationAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsInstallationAssistant
+identifiers:
+- winget: Microsoft.WindowsInstallationAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsInstallationAssistant
+aliases: []

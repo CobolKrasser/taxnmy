@@ -1,0 +1,13 @@
+key: hashicorp/nomad
+publisher: hashicorp
+name: Nomad
+kind: software
+source: https://developer.hashicorp.com/nomad/docs/ce-license-support
+versions:
+  source: https://developer.hashicorp.com/nomad/docs/ce-license-support
+identifiers:
+- cpe: cpe:2.3:a:hashicorp:nomad
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nomad.md
+- winget: Hashicorp.Nomad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Nomad
+aliases: []

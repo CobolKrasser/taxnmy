@@ -1,0 +1,11 @@
+key: microsoft/debugview
+publisher: microsoft
+name: DebugView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/DebugView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/DebugView
+identifiers:
+- winget: Microsoft.Sysinternals.DebugView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/DebugView
+aliases: []

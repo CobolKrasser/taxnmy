@@ -1,0 +1,13 @@
+key: ceph/ceph
+publisher: ceph
+name: Ceph
+kind: software
+source: https://docs.ceph.com/en/latest/releases/general/
+versions:
+  source: https://docs.ceph.com/en/latest/releases/general/
+identifiers:
+- purl: pkg:github/ceph/ceph
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ceph.md
+- cpe: cpe:2.3:a:ceph:ceph
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:ceph:ceph&resultsPerPage=1
+aliases: []

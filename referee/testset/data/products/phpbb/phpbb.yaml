@@ -1,0 +1,11 @@
+key: phpbb/phpbb
+publisher: phpbb
+name: phpBB
+kind: software
+source: https://endoflife.date/phpbb
+versions:
+  source: https://endoflife.date/phpbb
+identifiers:
+- cpe: cpe:2.3:a:phpbb:phpbb
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/phpbb.md
+aliases: []

@@ -1,0 +1,11 @@
+key: influxdata/chronograf
+publisher: influxdata
+name: Chronograf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Chronograf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Chronograf
+identifiers:
+- winget: InfluxData.Chronograf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/Chronograf
+aliases: []

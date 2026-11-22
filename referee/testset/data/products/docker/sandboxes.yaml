@@ -1,0 +1,12 @@
+key: docker/sandboxes
+publisher: docker
+name: Docker Sandboxes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/sbx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/sbx
+identifiers:
+- winget: Docker.sbx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/sbx
+aliases:
+- docker/docker-sandboxes

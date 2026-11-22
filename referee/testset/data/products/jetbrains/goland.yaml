@@ -1,0 +1,13 @@
+key: jetbrains/goland
+publisher: jetbrains
+name: GoLand
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GoLand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GoLand
+identifiers:
+- winget: JetBrains.GoLand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GoLand
+- winget: JetBrains.GoLand.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/GoLand/EAP
+aliases: []

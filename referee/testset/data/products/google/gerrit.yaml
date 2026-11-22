@@ -1,0 +1,11 @@
+key: google/gerrit
+publisher: google
+name: Gerrit
+kind: software
+source: https://endoflife.date/gerrit
+versions:
+  source: https://endoflife.date/gerrit
+identifiers:
+- cpe: cpe:2.3:a:google:gerrit
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/gerrit.md
+aliases: []

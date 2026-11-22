@@ -1,0 +1,12 @@
+key: ibm/mq
+publisher: ibm
+name: IBM MQ
+kind: software
+source: https://www.ibm.com/support/pages/ibm-mq-faq-long-term-support-and-continuous-delivery-releases
+versions:
+  source: https://www.ibm.com/support/pages/ibm-mq-faq-long-term-support-and-continuous-delivery-releases
+identifiers:
+- cpe: cpe:2.3:a:ibm:mq
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ibm-mq.md
+aliases:
+- ibm/ibm-mq

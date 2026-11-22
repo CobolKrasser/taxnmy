@@ -1,0 +1,11 @@
+key: mozilla/crash-firefox-intentionally
+publisher: mozilla
+name: Crash Firefox Intentionally
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/CrashFirefoxIntentionally
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/CrashFirefoxIntentionally
+identifiers:
+- winget: Mozilla.CrashFirefoxIntentionally
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/CrashFirefoxIntentionally
+aliases: []

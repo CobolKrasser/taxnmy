@@ -1,0 +1,11 @@
+key: google/protobuf
+publisher: google
+name: protobuf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Protobuf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Protobuf
+identifiers:
+- winget: Google.Protobuf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Protobuf
+aliases: []

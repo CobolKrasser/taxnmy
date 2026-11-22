@@ -1,0 +1,11 @@
+key: apple/foundationdb
+publisher: apple
+name: FoundationDB
+kind: software
+source: https://endoflife.date/foundationdb
+versions:
+  source: https://endoflife.date/foundationdb
+identifiers:
+- purl: pkg:github/apple/foundationdb
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/foundationdb.md
+aliases: []

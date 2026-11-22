@@ -1,0 +1,12 @@
+key: github/desktop-beta
+publisher: github
+name: GitHub Desktop Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/GitHubDesktop/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/GitHubDesktop/Beta
+identifiers:
+- winget: GitHub.GitHubDesktop.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/GitHubDesktop/Beta
+aliases:
+- github/github-desktop-beta

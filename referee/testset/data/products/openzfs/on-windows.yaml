@@ -1,0 +1,12 @@
+key: openzfs/on-windows
+publisher: openzfs
+name: OpenZFS On Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenZFS/OpenZFS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenZFS/OpenZFS
+identifiers:
+- winget: OpenZFS.OpenZFS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenZFS/OpenZFS
+aliases:
+- openzfs/openzfs-on-windows

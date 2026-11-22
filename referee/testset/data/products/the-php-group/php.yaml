@@ -1,0 +1,17 @@
+key: the-php-group/php
+publisher: the-php-group
+name: PHP
+kind: software
+source: https://www.php.net/
+versions:
+  source: https://www.php.net/releases/
+identifiers:
+- purl: pkg:generic/php
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/php.md
+- cpe: cpe:2.3:a:php:php
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/php.md
+- purl: pkg:generic/php-cli
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/php.md
+- purl: pkg:generic/php-fpm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/php.md
+aliases: []

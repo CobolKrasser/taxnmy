@@ -1,0 +1,11 @@
+key: valve/steam-link
+publisher: valve
+name: Steam Link
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valve/SteamLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valve/SteamLink
+identifiers:
+- winget: Valve.SteamLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valve/SteamLink
+aliases: []

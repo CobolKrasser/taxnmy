@@ -1,0 +1,11 @@
+key: vmware/esxi
+publisher: vmware
+name: ESXi
+kind: operating-system
+source: https://knowledge.broadcom.com/external/article?articleNumber=341609
+versions:
+  source: https://knowledge.broadcom.com/external/article?articleNumber=316595
+identifiers:
+- cpe: cpe:2.3:o:vmware:esxi
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:vmware:esxi&resultsPerPage=1
+aliases: []

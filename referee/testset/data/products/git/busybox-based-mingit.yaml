@@ -1,0 +1,11 @@
+key: git/busybox-based-mingit
+publisher: git
+name: BusyBox-based MinGit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/MinGit/BusyBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/MinGit/BusyBox
+identifiers:
+- winget: Git.MinGit.BusyBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/MinGit/BusyBox
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/ctrl2cap
+publisher: microsoft
+name: Ctrl2Cap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Ctrl2Cap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Ctrl2Cap
+identifiers:
+- winget: Microsoft.Sysinternals.Ctrl2Cap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Ctrl2Cap
+aliases: []

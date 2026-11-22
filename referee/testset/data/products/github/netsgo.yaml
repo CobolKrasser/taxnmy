@@ -1,0 +1,11 @@
+key: github/netsgo
+publisher: github
+name: NetsGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zsio/NetsGo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zsio/NetsGo
+identifiers:
+- winget: zsio.NetsGo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zsio/NetsGo
+aliases: []

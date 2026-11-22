@@ -1,0 +1,12 @@
+key: puppet/bolt
+publisher: puppet
+name: Puppet Bolt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Puppet/puppet-bolt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Puppet/puppet-bolt
+identifiers:
+- winget: Puppet.puppet-bolt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Puppet/puppet-bolt
+aliases:
+- puppet/puppet-bolt

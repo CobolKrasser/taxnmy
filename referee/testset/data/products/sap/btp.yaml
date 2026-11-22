@@ -1,0 +1,11 @@
+key: sap/btp
+publisher: sap
+name: btp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/btp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/btp
+identifiers:
+- winget: SAP.btp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/btp
+aliases: []

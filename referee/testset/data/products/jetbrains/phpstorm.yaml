@@ -1,0 +1,13 @@
+key: jetbrains/phpstorm
+publisher: jetbrains
+name: PhpStorm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PhpStorm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PhpStorm
+identifiers:
+- winget: JetBrains.PhpStorm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PhpStorm
+- winget: JetBrains.PhpStorm.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/PhpStorm/EAP
+aliases: []

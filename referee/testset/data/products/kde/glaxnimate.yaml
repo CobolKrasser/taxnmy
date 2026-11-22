@@ -1,0 +1,13 @@
+key: kde/glaxnimate
+publisher: kde
+name: Glaxnimate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Glaxnimate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Glaxnimate
+identifiers:
+- winget: KDE.Glaxnimate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Glaxnimate
+- winget: KDE.Glaxnimate.AppX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Glaxnimate/AppX
+aliases: []

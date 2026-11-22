@@ -1,0 +1,11 @@
+key: dell/rvtools
+publisher: dell
+name: RVTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robware/RVTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robware/RVTools
+identifiers:
+- winget: Robware.RVTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robware/RVTools
+aliases: []

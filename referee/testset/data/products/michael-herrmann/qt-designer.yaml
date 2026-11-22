@@ -1,0 +1,11 @@
+key: michael-herrmann/qt-designer
+publisher: michael-herrmann
+name: Qt Designer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qt/QtDesigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qt/QtDesigner
+identifiers:
+- winget: Qt.QtDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qt/QtDesigner
+aliases: []

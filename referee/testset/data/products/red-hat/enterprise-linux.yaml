@@ -1,0 +1,12 @@
+key: red-hat/enterprise-linux
+publisher: red-hat
+name: Red Hat Enterprise Linux
+kind: operating-system
+source: https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux
+versions:
+  source: https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates
+identifiers:
+- cpe: cpe:2.3:o:redhat:enterprise_linux
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:redhat:enterprise_linux&resultsPerPage=1
+aliases:
+- red-hat/red-hat-enterprise-linux

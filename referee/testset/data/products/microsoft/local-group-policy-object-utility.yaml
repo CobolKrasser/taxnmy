@@ -1,0 +1,11 @@
+key: microsoft/local-group-policy-object-utility
+publisher: microsoft
+name: Local Group Policy Object Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/LGPO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/LGPO
+identifiers:
+- winget: Microsoft.SecurityComplianceToolkit.LGPO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/LGPO
+aliases: []

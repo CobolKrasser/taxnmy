@@ -1,0 +1,11 @@
+key: heroku/heroku
+publisher: heroku
+name: heroku
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heroku/HerokuCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heroku/HerokuCLI
+identifiers:
+- winget: Heroku.HerokuCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heroku/HerokuCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: palo-alto-networks/prisma-access-browser
+publisher: palo-alto-networks
+name: Prisma Access Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaloAltoNetworks/PrismaAccessBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaloAltoNetworks/PrismaAccessBrowser
+identifiers:
+- winget: PaloAltoNetworks.PrismaAccessBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaloAltoNetworks/PrismaAccessBrowser
+aliases: []

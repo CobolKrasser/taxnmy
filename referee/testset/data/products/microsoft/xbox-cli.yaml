@@ -1,0 +1,11 @@
+key: microsoft/xbox-cli
+publisher: microsoft
+name: XBOX CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/XBOXDeveloperCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/XBOXDeveloperCLI
+identifiers:
+- winget: Microsoft.Gaming.XBOXDeveloperCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/XBOXDeveloperCLI
+aliases: []

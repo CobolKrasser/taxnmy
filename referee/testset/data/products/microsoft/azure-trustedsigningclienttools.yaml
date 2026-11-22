@@ -1,0 +1,12 @@
+key: microsoft/azure-trustedsigningclienttools
+publisher: microsoft
+name: Microsoft.Azure.TrustedSigningClientTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/TrustedSigningClientTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/TrustedSigningClientTools
+identifiers:
+- winget: Microsoft.Azure.TrustedSigningClientTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/TrustedSigningClientTools
+aliases:
+- microsoft/microsoft-azure-trustedsigningclienttools

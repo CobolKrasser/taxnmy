@@ -1,0 +1,15 @@
+key: vue/vue
+publisher: vue
+name: Vue
+kind: software
+source: https://vuejs.org/about/releases.html
+versions:
+  source: https://vuejs.org/about/releases.html
+identifiers:
+- purl: pkg:npm/vue
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vue.md
+- purl: pkg:github/vuejs/vue
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vue.md
+- purl: pkg:github/vuejs/core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vue.md
+aliases: []

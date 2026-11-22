@@ -1,0 +1,11 @@
+key: samsung/easy-migration
+publisher: samsung
+name: Easy Migration
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasyMigration
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasyMigration
+identifiers:
+- winget: Samsung.EasyMigration
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/EasyMigration
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/windows
+publisher: microsoft
+name: Windows
+kind: operating-system
+source: https://learn.microsoft.com/en-us/windows/release-health/
+versions:
+  source: https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/windows.md
+aliases: []

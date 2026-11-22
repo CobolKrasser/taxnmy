@@ -1,0 +1,11 @@
+key: microsoft/surface-duo-api30-emulator
+publisher: microsoft
+name: Surface Duo API30 Emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceDuoEmulator/Android11
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceDuoEmulator/Android11
+identifiers:
+- winget: Microsoft.SurfaceDuoEmulator.Android11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceDuoEmulator/Android11
+aliases: []

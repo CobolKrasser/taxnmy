@@ -1,0 +1,11 @@
+key: postfix/postfix
+publisher: postfix
+name: Postfix
+kind: software
+source: https://www.postfix.org/announcements.html
+versions:
+  source: https://www.postfix.org/announcements.html
+identifiers:
+- cpe: cpe:2.3:a:postfix:postfix
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/postfix.md
+aliases: []

@@ -1,0 +1,13 @@
+key: kde/falkon
+publisher: kde
+name: Falkon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Falkon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Falkon
+identifiers:
+- winget: KDE.Falkon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Falkon
+- winget: KDE.Falkon.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Falkon/Nightly
+aliases: []

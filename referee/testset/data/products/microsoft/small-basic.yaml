@@ -1,0 +1,12 @@
+key: microsoft/small-basic
+publisher: microsoft
+name: Microsoft Small Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SmallBasic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SmallBasic
+identifiers:
+- winget: Microsoft.SmallBasic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SmallBasic
+aliases:
+- microsoft/microsoft-small-basic

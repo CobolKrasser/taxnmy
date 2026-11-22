@@ -1,0 +1,13 @@
+key: canon/eos-5d-mark-iv
+publisher: canon
+name: EOS 5D Mark IV
+kind: device
+source: https://sg.canon/en/support/0400852102
+versions:
+  source: https://sg.canon/en/support/0400852102
+identifiers:
+- cpe: cpe:2.3:h:canon:eos_5d_mark_iv
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:h:canon:eos_5d_mark_iv&resultsPerPage=1
+- cpe: cpe:2.3:o:canon:eos_5d_mark_iv_firmware
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:canon:eos_5d_mark_iv_firmware&resultsPerPage=1
+aliases: []

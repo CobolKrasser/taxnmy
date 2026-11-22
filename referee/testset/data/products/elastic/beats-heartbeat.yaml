@@ -1,0 +1,11 @@
+key: elastic/beats-heartbeat
+publisher: elastic
+name: Beats heartbeat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Heartbeat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Heartbeat
+identifiers:
+- winget: Elastic.Heartbeat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Heartbeat
+aliases: []

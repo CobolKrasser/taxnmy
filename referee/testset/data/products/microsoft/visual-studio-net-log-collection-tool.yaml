@@ -1,0 +1,12 @@
+key: microsoft/visual-studio-net-log-collection-tool
+publisher: microsoft
+name: Microsoft Visual Studio/.NET Log Collection Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSDotNetLogCollect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSDotNetLogCollect
+identifiers:
+- winget: Microsoft.VSDotNetLogCollect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VSDotNetLogCollect
+aliases:
+- microsoft/microsoft-visual-studio-net-log-collection-tool

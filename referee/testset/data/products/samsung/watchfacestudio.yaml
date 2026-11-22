@@ -1,0 +1,11 @@
+key: samsung/watchfacestudio
+publisher: samsung
+name: WatchFaceStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/WatchFaceStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/WatchFaceStudio
+identifiers:
+- winget: Samsung.WatchFaceStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/WatchFaceStudio
+aliases: []

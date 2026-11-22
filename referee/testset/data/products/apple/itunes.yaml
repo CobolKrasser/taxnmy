@@ -1,0 +1,11 @@
+key: apple/itunes
+publisher: apple
+name: iTunes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/iTunes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/iTunes
+identifiers:
+- winget: Apple.iTunes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/iTunes
+aliases: []

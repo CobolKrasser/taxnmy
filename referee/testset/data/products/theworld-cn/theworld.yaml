@@ -1,0 +1,11 @@
+key: theworld-cn/theworld
+publisher: theworld-cn
+name: TheWorld
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phoenix/TheWorld
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phoenix/TheWorld
+identifiers:
+- winget: Phoenix.TheWorld
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Phoenix/TheWorld
+aliases: []

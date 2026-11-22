@@ -1,0 +1,11 @@
+key: kde/kfourinline
+publisher: kde
+name: kfourinline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KFourInLine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KFourInLine
+identifiers:
+- winget: KDE.KFourInLine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KFourInLine
+aliases: []

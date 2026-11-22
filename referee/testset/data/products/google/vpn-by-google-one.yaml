@@ -1,0 +1,11 @@
+key: google/vpn-by-google-one
+publisher: google
+name: VPN by Google One
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/VPNByGoogleOne
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/VPNByGoogleOne
+identifiers:
+- winget: Google.VPNByGoogleOne
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/VPNByGoogleOne
+aliases: []

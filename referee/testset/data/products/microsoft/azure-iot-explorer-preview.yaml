@@ -1,0 +1,11 @@
+key: microsoft/azure-iot-explorer-preview
+publisher: microsoft
+name: Azure IoT Explorer Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/IoTExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/IoTExplorer
+identifiers:
+- winget: Microsoft.Azure.IoTExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/IoTExplorer
+aliases: []

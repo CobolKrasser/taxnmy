@@ -1,0 +1,12 @@
+key: microsoft/net-core-runtime-x64
+publisher: microsoft
+name: Microsoft .NET Core Runtime - (x64)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/AspNetCore/2_1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/AspNetCore/2_1
+identifiers:
+- winget: Microsoft.DotNet.AspNetCore.2_1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/AspNetCore/2_1
+aliases:
+- microsoft/microsoft-net-core-runtime-x64

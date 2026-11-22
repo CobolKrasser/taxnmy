@@ -1,0 +1,11 @@
+key: microsoft/internet-explorer
+publisher: microsoft
+name: Internet Explorer
+kind: software
+source: https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge
+versions:
+  source: https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge
+identifiers:
+- cpe: cpe:2.3:a:microsoft:internet_explorer
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:microsoft:internet_explorer&resultsPerPage=1
+aliases: []

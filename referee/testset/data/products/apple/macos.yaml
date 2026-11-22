@@ -1,0 +1,11 @@
+key: apple/macos
+publisher: apple
+name: macOS
+kind: operating-system
+source: https://www.apple.com/macos/
+versions:
+  source: https://support.apple.com/en-us/100100
+identifiers:
+- cpe: cpe:2.3:o:apple:macos
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:apple:macos&resultsPerPage=1
+aliases: []

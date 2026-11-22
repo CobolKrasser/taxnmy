@@ -1,0 +1,11 @@
+key: jetbrains/fleet-launcher-public-preview
+publisher: jetbrains
+name: Fleet Launcher (Public Preview)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/FleetLauncher/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/FleetLauncher/Preview
+identifiers:
+- winget: JetBrains.FleetLauncher.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/FleetLauncher/Preview
+aliases: []

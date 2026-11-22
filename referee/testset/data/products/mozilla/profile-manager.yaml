@@ -1,0 +1,11 @@
+key: mozilla/profile-manager
+publisher: mozilla
+name: Profile Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/ProfileManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/ProfileManager
+identifiers:
+- winget: Mozilla.ProfileManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/ProfileManager
+aliases: []

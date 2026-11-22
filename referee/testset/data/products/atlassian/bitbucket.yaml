@@ -1,0 +1,11 @@
+key: atlassian/bitbucket
+publisher: atlassian
+name: Bitbucket
+kind: software
+source: https://confluence.atlassian.com/enterprise/atlassian-enterprise-releases-948227420.html
+versions:
+  source: https://confluence.atlassian.com/enterprise/atlassian-enterprise-releases-948227420.html
+identifiers:
+- cpe: cpe:2.3:a:atlassian:bitbucket
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bitbucket.md
+aliases: []

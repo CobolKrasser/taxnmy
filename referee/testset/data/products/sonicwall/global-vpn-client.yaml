@@ -1,0 +1,11 @@
+key: sonicwall/global-vpn-client
+publisher: sonicwall
+name: Global VPN Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/GlobalVPNClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/GlobalVPNClient
+identifiers:
+- winget: SonicWall.GlobalVPNClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/GlobalVPNClient
+aliases: []

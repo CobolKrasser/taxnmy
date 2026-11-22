@@ -1,0 +1,13 @@
+key: openjs-foundation/node-js
+publisher: openjs-foundation
+name: Node.js
+kind: software
+source: https://endoflife.date/nodejs
+versions:
+  source: https://endoflife.date/nodejs
+identifiers:
+- purl: pkg:generic/node
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nodejs.md
+- cpe: cpe:2.3:a:nodejs:node.js
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nodejs.md
+aliases: []

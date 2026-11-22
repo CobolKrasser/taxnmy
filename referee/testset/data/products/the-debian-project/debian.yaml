@@ -1,0 +1,11 @@
+key: the-debian-project/debian
+publisher: the-debian-project
+name: Debian
+kind: operating-system
+source: https://www.debian.org/releases/
+versions:
+  source: https://www.debian.org/releases/
+identifiers:
+- cpe: cpe:2.3:o:debian:debian_linux
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:debian:debian_linux&resultsPerPage=1
+aliases: []

@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-cloudwatch-agent
+publisher: amazon-web-services
+name: Amazon CloudWatch Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/CloudWatchAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/CloudWatchAgent
+identifiers:
+- winget: Amazon.CloudWatchAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/CloudWatchAgent
+aliases: []

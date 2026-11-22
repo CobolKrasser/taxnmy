@@ -1,0 +1,11 @@
+key: gam-team/got-your-back
+publisher: gam-team
+name: Got Your Back
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/GotYourBack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/GotYourBack
+identifiers:
+- winget: GAM-Team.GotYourBack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAM-Team/GotYourBack
+aliases: []

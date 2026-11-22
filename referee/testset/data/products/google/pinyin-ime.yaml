@@ -1,0 +1,12 @@
+key: google/pinyin-ime
+publisher: google
+name: Google Pinyin IME
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Pinyin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Pinyin
+identifiers:
+- winget: Google.Pinyin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Pinyin
+aliases:
+- google/google-pinyin-ime

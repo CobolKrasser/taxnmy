@@ -1,0 +1,11 @@
+key: google/container-optimized-os-cos
+publisher: google
+name: Container-Optimized OS (COS)
+kind: operating-system
+source: https://endoflife.date/cos
+versions:
+  source: https://endoflife.date/cos
+identifiers:
+- cpe: cpe:2.3:o:google:container-optimized_os
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/cos.md
+aliases: []

@@ -1,0 +1,12 @@
+key: microsoft/sync-framework-provider-services
+publisher: microsoft
+name: Microsoft Sync Framework Provider Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/ProviderServices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/ProviderServices
+identifiers:
+- winget: Microsoft.SyncFramework.ProviderServices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/ProviderServices
+aliases:
+- microsoft/microsoft-sync-framework-provider-services

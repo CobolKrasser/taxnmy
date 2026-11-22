@@ -1,0 +1,11 @@
+key: microsoft/windows-package-manager-manifest-creator
+publisher: microsoft
+name: Windows Package Manager Manifest Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WingetCreate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WingetCreate
+identifiers:
+- winget: Microsoft.WingetCreate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WingetCreate
+aliases: []

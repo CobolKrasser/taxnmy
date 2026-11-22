@@ -1,0 +1,11 @@
+key: microsoft/windows-device-recovery-tool
+publisher: microsoft
+name: Windows Device Recovery Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsDeviceRecoveryTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsDeviceRecoveryTool
+identifiers:
+- winget: Microsoft.WindowsDeviceRecoveryTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsDeviceRecoveryTool
+aliases: []

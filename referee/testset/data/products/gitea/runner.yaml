@@ -1,0 +1,12 @@
+key: gitea/runner
+publisher: gitea
+name: Gitea Runner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitea/Runner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitea/Runner
+identifiers:
+- winget: Gitea.Runner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitea/Runner
+aliases:
+- gitea/gitea-runner

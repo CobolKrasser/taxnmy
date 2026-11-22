@@ -1,0 +1,11 @@
+key: samsung/touch-logon
+publisher: samsung
+name: Touch Logon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/TouchLogon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/TouchLogon
+identifiers:
+- winget: Samsung.TouchLogon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/TouchLogon
+aliases: []

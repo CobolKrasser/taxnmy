@@ -1,0 +1,11 @@
+key: microsoft/fslogix
+publisher: microsoft
+name: FSLogix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FSLogix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FSLogix
+identifiers:
+- winget: Microsoft.FSLogix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/FSLogix
+aliases: []

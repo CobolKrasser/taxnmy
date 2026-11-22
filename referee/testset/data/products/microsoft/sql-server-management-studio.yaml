@@ -1,0 +1,16 @@
+key: microsoft/sql-server-management-studio
+publisher: microsoft
+name: Microsoft SQL Server Management Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServerManagementStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServerManagementStudio
+identifiers:
+- winget: Microsoft.SQLServerManagementStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServerManagementStudio
+- winget: Microsoft.SQLServerManagementStudio.21
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServerManagementStudio/21
+- winget: Microsoft.SQLServerManagementStudio.22
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServerManagementStudio/22
+aliases:
+- microsoft/microsoft-sql-server-management-studio

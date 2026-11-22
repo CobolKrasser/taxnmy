@@ -1,0 +1,13 @@
+key: hashicorp/packer
+publisher: hashicorp
+name: Packer
+kind: software
+source: https://endoflife.date/hashicorp-packer
+versions:
+  source: https://endoflife.date/hashicorp-packer
+identifiers:
+- cpe: cpe:2.3:a:hashicorp:packer
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hashicorp-packer.md
+- winget: Hashicorp.Packer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Packer
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/lightgbm
+publisher: microsoft
+name: LightGBM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LightGBM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LightGBM
+identifiers:
+- winget: Microsoft.LightGBM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LightGBM
+aliases: []

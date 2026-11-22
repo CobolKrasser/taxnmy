@@ -1,0 +1,11 @@
+key: jetbrains/thinkrail-cli
+publisher: jetbrains
+name: ThinkRail CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ThinkRailCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ThinkRailCLI
+identifiers:
+- winget: JetBrains.ThinkRailCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/ThinkRailCLI
+aliases: []

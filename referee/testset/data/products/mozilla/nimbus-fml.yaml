@@ -1,0 +1,11 @@
+key: mozilla/nimbus-fml
+publisher: mozilla
+name: nimbus-fml
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Nimbus/FML
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Nimbus/FML
+identifiers:
+- winget: Mozilla.Nimbus.FML
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Nimbus/FML
+aliases: []

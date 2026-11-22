@@ -1,0 +1,11 @@
+key: centreon/centreon
+publisher: centreon
+name: Centreon
+kind: software
+source: https://docs.centreon.com/docs/releases/lifecycle/
+versions:
+  source: https://docs.centreon.com/docs/releases/lifecycle/
+identifiers:
+- cpe: cpe:2.3:a:centreon:centreon
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/centreon.md
+aliases: []

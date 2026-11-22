@@ -1,0 +1,11 @@
+key: microsoft/debug-diagnostic-tool
+publisher: microsoft
+name: Debug Diagnostic Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DebugDiag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DebugDiag
+identifiers:
+- winget: Microsoft.DebugDiag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DebugDiag
+aliases: []

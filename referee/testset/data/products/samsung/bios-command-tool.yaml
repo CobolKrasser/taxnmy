@@ -1,0 +1,12 @@
+key: samsung/bios-command-tool
+publisher: samsung
+name: Samsung BIOS Command Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/BIOSCommandTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/BIOSCommandTool
+identifiers:
+- winget: Samsung.BIOSCommandTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/BIOSCommandTool
+aliases:
+- samsung/samsung-bios-command-tool

@@ -1,0 +1,9 @@
+key: microsoft/configuration-manager
+publisher: microsoft
+name: Configuration Manager
+kind: software
+source: https://learn.microsoft.com/en-us/intune/configmgr/core/servers/manage/current-branch-versions-supported
+versions:
+  source: https://learn.microsoft.com/en-us/intune/configmgr/core/servers/manage/updates
+aliases:
+- microsoft/microsoft-configuration-manager

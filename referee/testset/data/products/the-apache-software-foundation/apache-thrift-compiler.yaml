@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/apache-thrift-compiler
+publisher: the-apache-software-foundation
+name: Apache Thrift Compiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Thrift
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Thrift
+identifiers:
+- winget: Apache.Thrift
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Thrift
+aliases: []

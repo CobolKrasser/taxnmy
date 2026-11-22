@@ -1,0 +1,11 @@
+key: scala/scala
+publisher: scala
+name: Scala
+kind: software
+source: https://www.scala-lang.org/download/all.html
+versions:
+  source: https://www.scala-lang.org/download/all.html
+identifiers:
+- cpe: cpe:2.3:a:scala-lang:scala
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/scala.md
+aliases: []

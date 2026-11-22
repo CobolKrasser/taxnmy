@@ -1,0 +1,12 @@
+key: pixel-and-tonic/craft-cms
+publisher: pixel-and-tonic
+name: Craft CMS
+kind: software
+source: https://craftcms.com/knowledge-base/supported-versions
+versions:
+  source: https://craftcms.com/knowledge-base/supported-versions
+identifiers:
+- cpe: cpe:2.3:a:craftcms:craft_cms
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/craft-cms.md
+aliases:
+- pixel-and-tonic/cms

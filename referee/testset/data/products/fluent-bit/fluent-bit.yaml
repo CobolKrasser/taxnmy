@@ -1,0 +1,11 @@
+key: fluent-bit/fluent-bit
+publisher: fluent-bit
+name: Fluent Bit
+kind: software
+source: https://fluentbit.io/announcements/older-versions
+versions:
+  source: https://fluentbit.io/announcements/older-versions
+identifiers:
+- purl: pkg:github/fluent/fluent-bit
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/fluent-bit.md
+aliases: []

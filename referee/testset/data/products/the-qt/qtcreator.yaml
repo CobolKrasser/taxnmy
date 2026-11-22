@@ -1,0 +1,11 @@
+key: the-qt/qtcreator
+publisher: the-qt
+name: QtCreator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheQtCompanyLtd/QtCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheQtCompanyLtd/QtCreator
+identifiers:
+- winget: TheQtCompanyLtd.QtCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheQtCompanyLtd/QtCreator
+aliases: []

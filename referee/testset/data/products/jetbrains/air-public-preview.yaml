@@ -1,0 +1,11 @@
+key: jetbrains/air-public-preview
+publisher: jetbrains
+name: Air (Public Preview)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Air/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Air/Preview
+identifiers:
+- winget: JetBrains.Air.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Air/Preview
+aliases: []

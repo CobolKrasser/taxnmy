@@ -1,0 +1,11 @@
+key: sap/ocm-cli
+publisher: sap
+name: ocm-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Open-Component-Model/ocm-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Open-Component-Model/ocm-cli
+identifiers:
+- winget: Open-Component-Model.ocm-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Open-Component-Model/ocm-cli
+aliases: []

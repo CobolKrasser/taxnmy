@@ -1,0 +1,11 @@
+key: amazon-web-services/kindle-previewer
+publisher: amazon-web-services
+name: Kindle Previewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/KindlePreviewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/KindlePreviewer
+identifiers:
+- winget: Amazon.KindlePreviewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/KindlePreviewer
+aliases: []

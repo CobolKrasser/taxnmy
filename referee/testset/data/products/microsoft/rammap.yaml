@@ -1,0 +1,11 @@
+key: microsoft/rammap
+publisher: microsoft
+name: RAMMap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RAMMap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RAMMap
+identifiers:
+- winget: Microsoft.Sysinternals.RAMMap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/RAMMap
+aliases: []

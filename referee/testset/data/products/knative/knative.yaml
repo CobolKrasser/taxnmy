@@ -1,0 +1,11 @@
+key: knative/knative
+publisher: knative
+name: Knative
+kind: software
+source: https://endoflife.date/knative
+versions:
+  source: https://endoflife.date/knative
+identifiers:
+- purl: pkg:github/knative/serving
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/knative.md
+aliases: []

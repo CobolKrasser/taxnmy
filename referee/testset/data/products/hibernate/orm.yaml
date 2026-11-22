@@ -1,0 +1,16 @@
+key: hibernate/orm
+publisher: hibernate
+name: Hibernate ORM
+kind: software
+source: https://hibernate.org/support/maintenance-policy/
+versions:
+  source: https://hibernate.org/support/maintenance-policy/
+identifiers:
+- cpe: cpe:2.3:a:hibernate:hibernate_orm
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md
+- purl: pkg:maven/org.hibernate.orm/hibernate-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md
+- purl: pkg:maven/org.hibernate/hibernate-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hibernate-orm.md
+aliases:
+- hibernate/hibernate-orm

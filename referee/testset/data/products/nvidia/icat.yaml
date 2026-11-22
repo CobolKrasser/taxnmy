@@ -1,0 +1,11 @@
+key: nvidia/icat
+publisher: nvidia
+name: ICAT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/ICAT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/ICAT
+identifiers:
+- winget: Nvidia.ICAT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/ICAT
+aliases: []

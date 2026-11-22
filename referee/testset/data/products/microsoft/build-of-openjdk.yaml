@@ -1,0 +1,11 @@
+key: microsoft/build-of-openjdk
+publisher: microsoft
+name: Build of OpenJDK
+kind: software
+source: https://learn.microsoft.com/en-us/java/openjdk/support
+versions:
+  source: https://learn.microsoft.com/en-us/java/openjdk/support
+identifiers:
+- homebrew: microsoft-openjdk
+  source: https://formulae.brew.sh/cask/microsoft-openjdk
+aliases: []

@@ -1,0 +1,11 @@
+key: netgate/pfsense-ce
+publisher: netgate
+name: pfSense CE
+kind: operating-system
+source: https://www.netgate.com/pfsense-plus-software/software-types
+versions:
+  source: https://docs.netgate.com/pfsense/en/latest/releases/versions.html
+identifiers:
+- cpe: cpe:2.3:a:netgate:pfsense
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:netgate:pfsense&resultsPerPage=1
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/zoomit
+publisher: microsoft
+name: ZoomIt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ZoomIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ZoomIt
+identifiers:
+- winget: Microsoft.Sysinternals.ZoomIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ZoomIt
+aliases: []

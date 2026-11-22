@@ -1,0 +1,11 @@
+key: microsoft/msn-explorer
+publisher: microsoft
+name: MSN Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSNExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSNExplorer
+identifiers:
+- winget: Microsoft.MSNExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSNExplorer
+aliases: []

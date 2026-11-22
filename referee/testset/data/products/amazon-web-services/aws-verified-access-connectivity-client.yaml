@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-verified-access-connectivity-client
+publisher: amazon-web-services
+name: AWS Verified Access Connectivity Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSVerifiedAccessClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSVerifiedAccessClient
+identifiers:
+- winget: Amazon.AWSVerifiedAccessClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSVerifiedAccessClient
+aliases: []

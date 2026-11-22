@@ -1,0 +1,15 @@
+key: microsoft/windows-software-development-kit
+publisher: microsoft
+name: Windows Software Development Kit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsSDK/10/0/19041
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsSDK/10/0/19041
+identifiers:
+- winget: Microsoft.WindowsSDK.10.0.19041
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsSDK/10/0/19041
+- winget: Microsoft.WindowsSDK.10.0.20348
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsSDK/10/0/20348
+- winget: Microsoft.WindowsSDK.10.0.22000
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsSDK/10/0/22000
+aliases: []

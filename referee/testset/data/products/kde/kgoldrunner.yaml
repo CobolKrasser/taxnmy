@@ -1,0 +1,11 @@
+key: kde/kgoldrunner
+publisher: kde
+name: kgoldrunner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KGoldrunner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KGoldrunner
+identifiers:
+- winget: KDE.KGoldrunner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KGoldrunner
+aliases: []

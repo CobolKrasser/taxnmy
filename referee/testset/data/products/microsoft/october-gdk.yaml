@@ -1,0 +1,11 @@
+key: microsoft/october-gdk
+publisher: microsoft
+name: October GDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GDK
+identifiers:
+- winget: Microsoft.Gaming.GDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GDK
+aliases: []

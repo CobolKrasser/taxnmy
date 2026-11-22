@@ -1,0 +1,13 @@
+key: microsoft/visual-studio-community
+publisher: microsoft
+name: Visual Studio Community
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Community
+identifiers:
+- winget: Microsoft.VisualStudio.2022.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2022/Community
+- winget: Microsoft.VisualStudio.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Community
+aliases: []

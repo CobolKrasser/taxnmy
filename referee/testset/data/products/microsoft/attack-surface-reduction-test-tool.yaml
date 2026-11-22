@@ -1,0 +1,11 @@
+key: microsoft/attack-surface-reduction-test-tool
+publisher: microsoft
+name: Attack Surface Reduction Test Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ASRTestTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ASRTestTool
+identifiers:
+- winget: Microsoft.ASRTestTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ASRTestTool
+aliases: []

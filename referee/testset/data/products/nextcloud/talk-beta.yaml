@@ -1,0 +1,12 @@
+key: nextcloud/talk-beta
+publisher: nextcloud
+name: Nextcloud Talk Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/Talk/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/Talk/Beta
+identifiers:
+- winget: Nextcloud.Talk.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/Talk/Beta
+aliases:
+- nextcloud/nextcloud-talk-beta

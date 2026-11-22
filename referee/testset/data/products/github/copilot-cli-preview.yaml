@@ -1,0 +1,11 @@
+key: github/copilot-cli-preview
+publisher: github
+name: Copilot CLI (Preview)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/Copilot/Prerelease
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/Copilot/Prerelease
+identifiers:
+- winget: GitHub.Copilot.Prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/Copilot/Prerelease
+aliases: []

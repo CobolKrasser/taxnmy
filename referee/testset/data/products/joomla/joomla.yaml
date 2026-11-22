@@ -1,0 +1,11 @@
+key: joomla/joomla
+publisher: joomla
+name: Joomla!
+kind: software
+source: https://endoflife.date/joomla
+versions:
+  source: https://endoflife.date/joomla
+identifiers:
+- cpe: cpe:2.3:a:joomla:joomla\!
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/joomla.md
+aliases: []

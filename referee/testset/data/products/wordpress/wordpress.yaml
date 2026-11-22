@@ -1,0 +1,11 @@
+key: wordpress/wordpress
+publisher: wordpress
+name: WordPress
+kind: software
+source: https://wordpress.org/about/
+versions:
+  source: https://wordpress.org/download/releases/
+identifiers:
+- cpe: cpe:2.3:a:wordpress:wordpress
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:wordpress:wordpress&resultsPerPage=1
+aliases: []

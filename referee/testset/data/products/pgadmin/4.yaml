@@ -1,0 +1,12 @@
+key: pgadmin/4
+publisher: pgadmin
+name: pgAdmin 4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/pgAdmin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/pgAdmin
+identifiers:
+- winget: PostgreSQL.pgAdmin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/pgAdmin
+aliases:
+- pgadmin/pgadmin-4

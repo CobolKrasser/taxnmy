@@ -1,0 +1,11 @@
+key: microsoft/bits-manager
+publisher: microsoft
+name: BITS Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/bitsmanager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/bitsmanager
+identifiers:
+- winget: Microsoft.bitsmanager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/bitsmanager
+aliases: []

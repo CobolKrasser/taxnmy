@@ -1,0 +1,11 @@
+key: microsoft/sql-server-integration-services-projects
+publisher: microsoft
+name: SQL Server Integration Services Projects
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DataTools/IntegrationServices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DataTools/IntegrationServices
+identifiers:
+- winget: Microsoft.DataTools.IntegrationServices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DataTools/IntegrationServices
+aliases: []

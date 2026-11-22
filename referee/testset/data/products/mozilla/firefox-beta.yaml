@@ -1,0 +1,11 @@
+key: mozilla/firefox-beta
+publisher: mozilla
+name: Firefox Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Firefox/Beta/MSIX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Firefox/Beta/MSIX
+identifiers:
+- winget: Mozilla.Firefox.Beta.MSIX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Firefox/Beta/MSIX
+aliases: []

@@ -1,0 +1,11 @@
+key: samsung/smart-switch
+publisher: samsung
+name: Smart Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/SmartSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/SmartSwitch
+identifiers:
+- winget: Samsung.SmartSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/SmartSwitch
+aliases: []

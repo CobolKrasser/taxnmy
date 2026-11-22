@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-quick
+publisher: amazon-web-services
+name: Amazon Quick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Quick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Quick
+identifiers:
+- winget: Amazon.Quick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Quick
+aliases: []

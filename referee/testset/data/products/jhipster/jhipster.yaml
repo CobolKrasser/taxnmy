@@ -1,0 +1,11 @@
+key: jhipster/jhipster
+publisher: jhipster
+name: JHipster
+kind: software
+source: https://www.jhipster.tech/releases/
+versions:
+  source: https://www.jhipster.tech/releases/
+identifiers:
+- cpe: cpe:2.3:a:jhipster:jhipster
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jhipster.md
+aliases: []

@@ -1,0 +1,18 @@
+key: microsoft/sql-server-express
+publisher: microsoft
+name: Microsoft SQL Server Express
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2017/Express
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2017/Express
+identifiers:
+- winget: Microsoft.SQLServer.2017.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2017/Express
+- winget: Microsoft.SQLServer.2019.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2019/Express
+- winget: Microsoft.SQLServer.2022.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2022/Express
+- winget: Microsoft.SQLServer.2025.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2025/Express
+aliases:
+- microsoft/microsoft-sql-server-express

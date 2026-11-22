@@ -1,0 +1,11 @@
+key: gitlab/glab
+publisher: gitlab
+name: GLab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GLab/GLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GLab/GLab
+identifiers:
+- winget: GLab.GLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GLab/GLab
+aliases: []

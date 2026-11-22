@@ -1,0 +1,11 @@
+key: microsoft/windows-application-driver
+publisher: microsoft
+name: Windows Application Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsApplicationDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsApplicationDriver
+identifiers:
+- winget: Microsoft.WindowsApplicationDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsApplicationDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: synology/synologyc2identityldapsync
+publisher: synology
+name: SynologyC2IdentityLDAPSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/C2IdentityLDAPSyncTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/C2IdentityLDAPSyncTool
+identifiers:
+- winget: Synology.C2IdentityLDAPSyncTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/C2IdentityLDAPSyncTool
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/handle
+publisher: microsoft
+name: Handle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Handle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Handle
+identifiers:
+- winget: Microsoft.Sysinternals.Handle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Handle
+aliases: []

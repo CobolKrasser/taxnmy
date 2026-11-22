@@ -1,0 +1,13 @@
+key: mariadb-foundation/mariadb-server
+publisher: mariadb-foundation
+name: MariaDB Server
+kind: software
+source: https://mariadb.org/download/
+versions:
+  source: https://mariadb.com/docs/release-notes/community-server
+identifiers:
+- cpe: cpe:2.3:a:mariadb:mariadb
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:mariadb:mariadb&resultsPerPage=1
+- purl: pkg:brew/mariadb
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mariadb.md
+aliases: []

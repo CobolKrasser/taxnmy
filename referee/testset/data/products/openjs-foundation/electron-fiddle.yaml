@@ -1,0 +1,11 @@
+key: openjs-foundation/electron-fiddle
+publisher: openjs-foundation
+name: Electron Fiddle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCommunity/ElectronFiddle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCommunity/ElectronFiddle
+identifiers:
+- winget: ElectronCommunity.ElectronFiddle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCommunity/ElectronFiddle
+aliases: []

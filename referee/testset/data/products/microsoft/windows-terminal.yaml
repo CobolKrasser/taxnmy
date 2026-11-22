@@ -1,0 +1,11 @@
+key: microsoft/windows-terminal
+publisher: microsoft
+name: Windows Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal
+identifiers:
+- winget: Microsoft.WindowsTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal
+aliases: []

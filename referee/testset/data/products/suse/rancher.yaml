@@ -1,0 +1,11 @@
+key: suse/rancher
+publisher: suse
+name: Rancher
+kind: software
+source: https://endoflife.date/rancher
+versions:
+  source: https://endoflife.date/rancher
+identifiers:
+- cpe: cpe:2.3:a:suse:rancher
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/rancher.md
+aliases: []

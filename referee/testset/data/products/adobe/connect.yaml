@@ -1,0 +1,14 @@
+key: adobe/connect
+publisher: adobe
+name: Adobe Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Connect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Connect
+identifiers:
+- winget: Adobe.AdobeConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/AdobeConnect
+- winget: Adobe.Connect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Connect
+aliases:
+- adobe/adobe-connect

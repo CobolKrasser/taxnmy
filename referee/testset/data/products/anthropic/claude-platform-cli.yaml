@@ -1,0 +1,11 @@
+key: anthropic/claude-platform-cli
+publisher: anthropic
+name: Claude Platform CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Ant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Ant
+identifiers:
+- winget: Anthropic.Ant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Ant
+aliases: []

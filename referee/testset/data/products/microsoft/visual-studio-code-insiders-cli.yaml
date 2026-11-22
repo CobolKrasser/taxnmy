@@ -1,0 +1,12 @@
+key: microsoft/visual-studio-code-insiders-cli
+publisher: microsoft
+name: Microsoft Visual Studio Code Insiders CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/Insiders/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/Insiders/CLI
+identifiers:
+- winget: Microsoft.VisualStudioCode.Insiders.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/Insiders/CLI
+aliases:
+- microsoft/microsoft-visual-studio-code-insiders-cli

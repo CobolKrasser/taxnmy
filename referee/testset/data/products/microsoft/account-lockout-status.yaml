@@ -1,0 +1,11 @@
+key: microsoft/account-lockout-status
+publisher: microsoft
+name: Account Lockout Status
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AccountLockoutStatus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AccountLockoutStatus
+identifiers:
+- winget: Microsoft.AccountLockoutStatus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AccountLockoutStatus
+aliases: []

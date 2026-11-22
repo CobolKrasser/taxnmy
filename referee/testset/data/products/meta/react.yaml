@@ -1,0 +1,15 @@
+key: meta/react
+publisher: meta
+name: React
+kind: software
+source: https://react.dev/community/versioning-policy
+versions:
+  source: https://react.dev/community/versioning-policy
+identifiers:
+- purl: pkg:github/facebook/react
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/react.md
+- purl: pkg:npm/react
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/react.md
+- cpe: cpe:2.3:a:facebook:react
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/react.md
+aliases: []

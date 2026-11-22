@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-cloudhsm-ksp
+publisher: amazon-web-services
+name: AWS CloudHSM KSP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCloudHSM/KSP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCloudHSM/KSP
+identifiers:
+- winget: Amazon.AWSCloudHSM.KSP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AWSCloudHSM/KSP
+aliases: []

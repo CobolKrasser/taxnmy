@@ -1,0 +1,13 @@
+key: nestjs/nestjs
+publisher: nestjs
+name: NestJS
+kind: software
+source: https://endoflife.date/nestjs
+versions:
+  source: https://endoflife.date/nestjs
+identifiers:
+- purl: pkg:npm/%40nestjs/core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nestjs.md
+- purl: pkg:github/nestjs/nest
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/nestjs.md
+aliases: []

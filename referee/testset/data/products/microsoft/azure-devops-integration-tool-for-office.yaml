@@ -1,0 +1,11 @@
+key: microsoft/azure-devops-integration-tool-for-office
+publisher: microsoft
+name: Azure DevOps Integration Tool for Office
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureDevOpsOfficeIntegration/2019
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureDevOpsOfficeIntegration/2019
+identifiers:
+- winget: Microsoft.AzureDevOpsOfficeIntegration.2019
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureDevOpsOfficeIntegration/2019
+aliases: []

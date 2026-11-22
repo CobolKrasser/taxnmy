@@ -1,0 +1,11 @@
+key: the-apache-software-foundation/apache-apisix
+publisher: the-apache-software-foundation
+name: Apache APISIX
+kind: software
+source: https://endoflife.date/apache-apisix
+versions:
+  source: https://endoflife.date/apache-apisix
+identifiers:
+- cpe: cpe:2.3:a:apache:apisix
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-apisix.md
+aliases: []

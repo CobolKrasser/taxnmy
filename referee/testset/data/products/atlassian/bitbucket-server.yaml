@@ -1,0 +1,11 @@
+key: atlassian/bitbucket-server
+publisher: atlassian
+name: Bitbucket Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Bitbucket
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Bitbucket
+identifiers:
+- winget: Atlassian.Bitbucket
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atlassian/Bitbucket
+aliases: []

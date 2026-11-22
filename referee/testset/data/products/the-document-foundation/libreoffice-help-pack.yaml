@@ -1,0 +1,11 @@
+key: the-document-foundation/libreoffice-help-pack
+publisher: the-document-foundation
+name: LibreOffice Help Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/HelpPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/HelpPack
+identifiers:
+- winget: TheDocumentFoundation.LibreOffice.HelpPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/HelpPack
+aliases: []

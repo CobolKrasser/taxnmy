@@ -1,0 +1,11 @@
+key: google/firebase-cli-tools
+publisher: google
+name: Firebase CLI Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/FirebaseCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/FirebaseCLI
+identifiers:
+- winget: Google.FirebaseCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/FirebaseCLI
+aliases: []

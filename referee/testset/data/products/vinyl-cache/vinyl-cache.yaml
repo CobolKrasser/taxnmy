@@ -1,0 +1,15 @@
+key: vinyl-cache/vinyl-cache
+publisher: vinyl-cache
+name: Vinyl Cache
+kind: software
+source: https://vinyl-cache.org/releases/index.html
+versions:
+  source: https://vinyl-cache.org/releases/index.html
+identifiers:
+- purl: pkg:brew/varnish
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vinyl-cache.md
+- cpe: cpe:2.3:a:varnish_cache_project:varnish_cache
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/vinyl-cache.md
+- cpe: cpe:2.3:a:vinyl-cache:vinyl_cache
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:vinyl-cache:vinyl_cache&resultsPerPage=1
+aliases: []

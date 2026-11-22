@@ -1,0 +1,8 @@
+key: jenkins-project/jenkins
+publisher: jenkins-project
+name: Jenkins
+kind: software
+source: https://www.jenkins.io/
+versions:
+  source: https://www.jenkins.io/changelog-stable/
+aliases: []

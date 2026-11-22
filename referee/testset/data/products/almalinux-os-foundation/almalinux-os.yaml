@@ -1,0 +1,11 @@
+key: almalinux-os-foundation/almalinux-os
+publisher: almalinux-os-foundation
+name: AlmaLinux OS
+kind: operating-system
+source: https://wiki.almalinux.org/release-notes/
+versions:
+  source: https://wiki.almalinux.org/release-notes/
+identifiers:
+- cpe: cpe:2.3:o:almalinux:almalinux
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/almalinux.md
+aliases: []

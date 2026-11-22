@@ -1,0 +1,11 @@
+key: google/chrome-remote-desktop-host
+publisher: google
+name: Chrome Remote Desktop Host
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/ChromeRemoteDesktopHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/ChromeRemoteDesktopHost
+identifiers:
+- winget: Google.ChromeRemoteDesktopHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/ChromeRemoteDesktopHost
+aliases: []

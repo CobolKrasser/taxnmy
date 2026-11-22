@@ -1,0 +1,11 @@
+key: grafana-labs/grafanaenterprise
+publisher: grafana-labs
+name: GrafanaEnterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Grafana/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Grafana/Enterprise
+identifiers:
+- winget: GrafanaLabs.Grafana.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/Grafana/Enterprise
+aliases: []

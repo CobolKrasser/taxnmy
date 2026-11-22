@@ -1,0 +1,11 @@
+key: mongodb/mongodb
+publisher: mongodb
+name: MongoDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Server
+identifiers:
+- winget: MongoDB.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Server
+aliases: []

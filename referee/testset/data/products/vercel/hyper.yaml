@@ -1,0 +1,11 @@
+key: vercel/hyper
+publisher: vercel
+name: Hyper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vercel/Hyper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vercel/Hyper
+identifiers:
+- winget: Vercel.Hyper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vercel/Hyper
+aliases: []

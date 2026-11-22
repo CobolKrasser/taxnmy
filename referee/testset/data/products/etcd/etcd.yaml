@@ -1,0 +1,15 @@
+key: etcd/etcd
+publisher: etcd
+name: etcd
+kind: software
+source: https://endoflife.date/etcd
+versions:
+  source: https://endoflife.date/etcd
+identifiers:
+- purl: pkg:github/etcd-io/etcd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/etcd.md
+- purl: pkg:golang/github.com/etcd-io/etcd
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/etcd.md
+- cpe: cpe:2.3:a:etcd:etcd
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:etcd:etcd&resultsPerPage=1
+aliases: []

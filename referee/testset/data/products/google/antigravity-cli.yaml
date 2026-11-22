@@ -1,0 +1,11 @@
+key: google/antigravity-cli
+publisher: google
+name: Antigravity CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AntigravityCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AntigravityCLI
+identifiers:
+- winget: Google.AntigravityCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AntigravityCLI
+aliases: []

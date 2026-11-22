@@ -1,0 +1,11 @@
+key: kde/bovo
+publisher: kde
+name: bovo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Bovo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Bovo
+identifiers:
+- winget: KDE.Bovo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Bovo
+aliases: []

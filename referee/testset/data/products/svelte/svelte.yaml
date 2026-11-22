@@ -1,0 +1,15 @@
+key: svelte/svelte
+publisher: svelte
+name: Svelte
+kind: software
+source: https://endoflife.date/svelte
+versions:
+  source: https://endoflife.date/svelte
+identifiers:
+- purl: pkg:npm/svelte
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/svelte.md
+- purl: pkg:github/sveltejs/svelte
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/svelte.md
+- cpe: cpe:2.3:a:svelte:svelte
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/svelte.md
+aliases: []

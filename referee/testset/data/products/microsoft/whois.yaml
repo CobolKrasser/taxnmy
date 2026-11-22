@@ -1,0 +1,11 @@
+key: microsoft/whois
+publisher: microsoft
+name: Whois
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Whois
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Whois
+identifiers:
+- winget: Microsoft.Sysinternals.Whois
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/Whois
+aliases: []

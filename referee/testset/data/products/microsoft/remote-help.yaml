@@ -1,0 +1,11 @@
+key: microsoft/remote-help
+publisher: microsoft
+name: Remote help
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteHelp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteHelp
+identifiers:
+- winget: Microsoft.RemoteHelp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteHelp
+aliases: []

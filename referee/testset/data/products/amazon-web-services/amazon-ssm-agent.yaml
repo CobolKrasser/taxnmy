@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-ssm-agent
+publisher: amazon-web-services
+name: Amazon SSM Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SSMAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SSMAgent
+identifiers:
+- winget: Amazon.SSMAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SSMAgent
+aliases: []

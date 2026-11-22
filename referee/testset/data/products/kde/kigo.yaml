@@ -1,0 +1,11 @@
+key: kde/kigo
+publisher: kde
+name: kigo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kigo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kigo
+identifiers:
+- winget: KDE.Kigo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kigo
+aliases: []

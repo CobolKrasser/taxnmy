@@ -1,0 +1,11 @@
+key: microsoft/hanword-hwp-document-converter-for-microsoft-word
+publisher: microsoft
+name: Hanword HWP document converter for Microsoft Word
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HwpConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HwpConverter
+identifiers:
+- winget: Microsoft.HwpConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/HwpConverter
+aliases: []

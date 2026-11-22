@@ -1,0 +1,11 @@
+key: jaeger/jaeger
+publisher: jaeger
+name: Jaeger
+kind: software
+source: https://endoflife.date/jaeger
+versions:
+  source: https://endoflife.date/jaeger
+identifiers:
+- cpe: cpe:2.3:a:linuxfoundation:jaeger
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jaeger.md
+aliases: []

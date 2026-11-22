@@ -1,0 +1,12 @@
+key: google/chrome-canary
+publisher: google
+name: Google Chrome Canary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Canary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Canary
+identifiers:
+- winget: Google.Chrome.Canary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Canary
+aliases:
+- google/google-chrome-canary

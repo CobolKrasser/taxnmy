@@ -1,0 +1,11 @@
+key: intel/clear-linux
+publisher: intel
+name: Clear Linux
+kind: operating-system
+source: https://endoflife.date/clear-linux
+versions:
+  source: https://endoflife.date/clear-linux
+identifiers:
+- cpe: cpe:2.3:o:intel:clear-linux-os
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/clearlinux.md
+aliases: []
