@@ -1,0 +1,12 @@
+key: sonicwall/netextender
+publisher: sonicwall
+name: SonicWall NetExtender
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/NetExtender
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/NetExtender
+identifiers:
+- winget: SonicWall.NetExtender
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonicWall/NetExtender
+aliases:
+- sonicwall/sonicwall-netextender

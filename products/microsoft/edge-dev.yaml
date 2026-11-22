@@ -1,0 +1,12 @@
+key: microsoft/edge-dev
+publisher: microsoft
+name: Microsoft Edge Dev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edge/Dev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edge/Dev
+identifiers:
+- winget: Microsoft.Edge.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edge/Dev
+aliases:
+- microsoft/microsoft-edge-dev

@@ -1,0 +1,10 @@
+key: red-hat/satellite
+publisher: red-hat
+name: Red Hat Satellite
+kind: software
+source: https://access.redhat.com/support/policy/updates/satellite
+versions:
+  source: https://access.redhat.com/support/policy/updates/satellite
+identifiers: []
+aliases:
+- red-hat/red-hat-satellite

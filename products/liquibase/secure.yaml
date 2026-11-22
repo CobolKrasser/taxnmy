@@ -1,0 +1,16 @@
+key: liquibase/secure
+publisher: liquibase
+name: Liquibase Secure
+kind: software
+source: https://docs.liquibase.com/secure/supported-versions-6-0-2
+versions:
+  source: https://docs.liquibase.com/secure/supported-versions-6-0-2
+identifiers:
+- purl: pkg:maven/com.liquibase/liquibase-commercial
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/liquibase-secure.md
+- purl: pkg:maven/org.liquibase/liquibase-commercial
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/liquibase-secure.md
+- homebrew: liquibase-secure
+  source: https://formulae.brew.sh/cask/liquibase-secure
+aliases:
+- liquibase/liquibase-secure

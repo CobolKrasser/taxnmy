@@ -1,0 +1,12 @@
+key: neo4j/desktop
+publisher: neo4j
+name: Neo4j Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neo4j/Neo4jDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neo4j/Neo4jDesktop
+identifiers:
+- winget: Neo4j.Neo4jDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neo4j/Neo4jDesktop
+aliases:
+- neo4j/neo4j-desktop

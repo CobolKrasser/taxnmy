@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: Dapr.CLI.Preview
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dapr/CLI/Preview
-aliases: []
+- winget: Dapr.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dapr/CLI
+aliases:
+- dapr/dapr-cli

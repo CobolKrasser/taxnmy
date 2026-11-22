@@ -1,0 +1,12 @@
+key: nvidia/physx-legacy
+publisher: nvidia
+name: NVIDIA PhysX (Legacy)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PhysXLegacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PhysXLegacy
+identifiers:
+- winget: Nvidia.PhysXLegacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PhysXLegacy
+aliases:
+- nvidia/nvidia-physx-legacy

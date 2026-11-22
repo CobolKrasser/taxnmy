@@ -1,0 +1,12 @@
+key: microsoft/net-framework-runtime
+publisher: microsoft
+name: Microsoft .NET Framework Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/Runtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/Runtime
+identifiers:
+- winget: Microsoft.DotNet.Framework.Runtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/Runtime
+aliases:
+- microsoft/microsoft-net-framework-runtime

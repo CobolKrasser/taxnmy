@@ -1,0 +1,10 @@
+key: cisco/secure-firewall-management-center
+publisher: cisco
+name: Cisco Secure Firewall Management Center
+kind: software
+source: https://www.cisco.com/c/en/us/support/security/defense-center/series.html
+versions:
+  source: https://www.cisco.com/c/en/us/support/security/defense-center/products-release-notes-list.html
+aliases:
+- cisco/cisco-secure-firewall-management-center
+- cisco/cisco-secure-firewall-management-center-fmc

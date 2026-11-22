@@ -1,0 +1,14 @@
+key: kubernetes-csi/node-driver-registrar
+publisher: kubernetes-csi
+name: Kubernetes CSI Node Driver Registrar
+kind: software
+source: https://endoflife.date/kubernetes-csi-node-driver-registrar
+versions:
+  source: https://endoflife.date/kubernetes-csi-node-driver-registrar
+identifiers:
+- purl: pkg:github/kubernetes-csi/node-driver-registrar
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes-csi-node-driver-registrar.md
+- purl: pkg:golang/github.com/kubernetes-csi/node-driver-registrar
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes-csi-node-driver-registrar.md
+aliases:
+- kubernetes-csi/kubernetes-csi-node-driver-registrar

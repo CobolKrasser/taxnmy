@@ -1,0 +1,12 @@
+key: microsoft/sqlpackage
+publisher: microsoft
+name: Microsoft SqlPackage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SqlPackage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SqlPackage
+identifiers:
+- winget: Microsoft.SqlPackage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SqlPackage
+aliases:
+- microsoft/microsoft-sqlpackage

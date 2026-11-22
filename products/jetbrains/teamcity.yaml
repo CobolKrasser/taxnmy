@@ -5,4 +5,8 @@ kind: software
 source: https://www.jetbrains.com/teamcity/features/
 versions:
   source: https://www.jetbrains.com/help/teamcity/what-s-new-in-teamcity.html
-aliases: []
+identifiers:
+- winget: JetBrains.TeamCity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/TeamCity
+aliases:
+- jetbrains/jetbrains-teamcity

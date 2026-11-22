@@ -1,0 +1,10 @@
+key: openai/api-models
+publisher: openai
+name: OpenAI API Models
+kind: software
+source: https://endoflife.date/openai-api-models
+versions:
+  source: https://developers.openai.com/api/docs/deprecations
+identifiers: []
+aliases:
+- openai/openai-api-models

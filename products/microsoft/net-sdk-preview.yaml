@@ -1,0 +1,12 @@
+key: microsoft/net-sdk-preview
+publisher: microsoft
+name: Microsoft .NET SDK Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/Preview
+identifiers:
+- winget: Microsoft.DotNet.SDK.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/Preview
+aliases:
+- microsoft/microsoft-net-sdk-preview

@@ -1,0 +1,12 @@
+key: cisco/jabber
+publisher: cisco
+name: Cisco Jabber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Jabber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Jabber
+identifiers:
+- winget: Cisco.Jabber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/Jabber
+aliases:
+- cisco/cisco-jabber

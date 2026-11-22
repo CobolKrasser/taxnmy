@@ -1,0 +1,12 @@
+key: microsoft/azure-guest-proxy-agent-allow-list-tool
+publisher: microsoft
+name: Microsoft Azure Guest Proxy Agent - Allow List Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/GuestProxyAgent/AllowListTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/GuestProxyAgent/AllowListTool
+identifiers:
+- winget: Microsoft.Azure.GuestProxyAgent.AllowListTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/GuestProxyAgent/AllowListTool
+aliases:
+- microsoft/microsoft-azure-guest-proxy-agent-allow-list-tool

@@ -1,0 +1,12 @@
+key: harbor/cli
+publisher: harbor
+name: Harbor CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoHarbor/Harbor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoHarbor/Harbor
+identifiers:
+- winget: GoHarbor.Harbor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoHarbor/Harbor
+aliases:
+- harbor/harbor-cli

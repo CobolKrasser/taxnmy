@@ -1,0 +1,12 @@
+key: mongodb/atlas-cli
+publisher: mongodb
+name: MongoDB Atlas CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/MongoDBAtlasCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/MongoDBAtlasCLI
+identifiers:
+- winget: MongoDB.MongoDBAtlasCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/MongoDBAtlasCLI
+aliases:
+- mongodb/mongodb-atlas-cli

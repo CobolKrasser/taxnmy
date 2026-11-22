@@ -1,0 +1,12 @@
+key: dell/system-update
+publisher: dell
+name: Dell System Update
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/SystemUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/SystemUpdate
+identifiers:
+- winget: Dell.SystemUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/SystemUpdate
+aliases:
+- dell/dell-system-update

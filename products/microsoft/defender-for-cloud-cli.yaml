@@ -1,0 +1,12 @@
+key: microsoft/defender-for-cloud-cli
+publisher: microsoft
+name: Microsoft Defender for Cloud CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DefenderForCloud/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DefenderForCloud/CLI
+identifiers:
+- winget: Microsoft.DefenderForCloud.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DefenderForCloud/CLI
+aliases:
+- microsoft/microsoft-defender-for-cloud-cli

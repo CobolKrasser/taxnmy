@@ -1,0 +1,12 @@
+key: mongodb/compass-community
+publisher: mongodb
+name: MongoDB Compass Community
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Compass/Community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Compass/Community
+identifiers:
+- winget: MongoDB.Compass.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Compass/Community
+aliases:
+- mongodb/mongodb-compass-community

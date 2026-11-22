@@ -1,0 +1,12 @@
+key: mongodb/tools
+publisher: mongodb
+name: MongoDB Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/DatabaseTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/DatabaseTools
+identifiers:
+- winget: MongoDB.DatabaseTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/DatabaseTools
+aliases:
+- mongodb/mongodb-tools

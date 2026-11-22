@@ -1,0 +1,12 @@
+key: muteme/client
+publisher: muteme
+name: MuteMe-Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MuteMe/MuteMe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MuteMe/MuteMe
+identifiers:
+- winget: MuteMe.MuteMe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MuteMe/MuteMe
+aliases:
+- muteme/muteme-client

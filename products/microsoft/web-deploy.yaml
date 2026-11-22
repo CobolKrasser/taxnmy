@@ -1,0 +1,12 @@
+key: microsoft/web-deploy
+publisher: microsoft
+name: Microsoft Web Deploy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WebDeploy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WebDeploy
+identifiers:
+- winget: Microsoft.WebDeploy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WebDeploy
+aliases:
+- microsoft/microsoft-web-deploy

@@ -1,0 +1,12 @@
+key: canon/pcl6-driver
+publisher: canon
+name: Canon PCL6 Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canon/GPCL6_V4_PrinterDriver_V21/00
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canon/GPCL6_V4_PrinterDriver_V21/00
+identifiers:
+- winget: Canon.GPCL6_V4_PrinterDriver_V21.00
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canon/GPCL6_V4_PrinterDriver_V21/00
+aliases:
+- canon/canon-pcl6-driver

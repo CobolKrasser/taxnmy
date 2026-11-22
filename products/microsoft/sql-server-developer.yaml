@@ -1,0 +1,18 @@
+key: microsoft/sql-server-developer
+publisher: microsoft
+name: Microsoft SQL Server Developer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2017/Developer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2017/Developer
+identifiers:
+- winget: Microsoft.SQLServer.2017.Developer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2017/Developer
+- winget: Microsoft.SQLServer.2019.Developer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2019/Developer
+- winget: Microsoft.SQLServer.2022.Developer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2022/Developer
+- winget: Microsoft.SQLServer.2025.Developer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SQLServer/2025/Developer
+aliases:
+- microsoft/microsoft-sql-server-developer

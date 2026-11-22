@@ -1,0 +1,12 @@
+key: microsoft/azure-arc-setup
+publisher: microsoft
+name: Microsoft Azure Arc Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ArcSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ArcSetup
+identifiers:
+- winget: Microsoft.Azure.ArcSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ArcSetup
+aliases:
+- microsoft/microsoft-azure-arc-setup

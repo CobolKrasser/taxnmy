@@ -1,0 +1,12 @@
+key: microsoft/update-health-tools-windows-11-21h2
+publisher: microsoft
+name: Microsoft Update Health Tools (Windows 11 ==21H2)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateHealthTools/W11-21H2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateHealthTools/W11-21H2
+identifiers:
+- winget: Microsoft.UpdateHealthTools.W11-21H2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateHealthTools/W11-21H2
+aliases:
+- microsoft/microsoft-update-health-tools-windows-11-21h2

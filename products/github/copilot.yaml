@@ -1,0 +1,12 @@
+key: github/copilot
+publisher: github
+name: GitHub Copilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/CopilotApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/CopilotApp
+identifiers:
+- winget: GitHub.CopilotApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/CopilotApp
+aliases:
+- github/github-copilot

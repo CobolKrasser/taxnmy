@@ -1,0 +1,12 @@
+key: cisco/webex-meetings
+publisher: cisco
+name: Cisco Webex Meetings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/CiscoWebexMeetings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/CiscoWebexMeetings
+identifiers:
+- winget: Cisco.CiscoWebexMeetings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/CiscoWebexMeetings
+aliases:
+- cisco/cisco-webex-meetings

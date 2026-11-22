@@ -1,0 +1,12 @@
+key: github/cli
+publisher: github
+name: GitHub CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/cli
+identifiers:
+- winget: GitHub.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/cli
+aliases:
+- github/github-cli

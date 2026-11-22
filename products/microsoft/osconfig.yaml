@@ -1,0 +1,12 @@
+key: microsoft/osconfig
+publisher: microsoft
+name: Microsoft OSConfig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OSConfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OSConfig
+identifiers:
+- winget: Microsoft.OSConfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OSConfig
+aliases:
+- microsoft/microsoft-osconfig

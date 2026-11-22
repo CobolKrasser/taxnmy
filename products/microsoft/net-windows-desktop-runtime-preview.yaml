@@ -1,0 +1,12 @@
+key: microsoft/net-windows-desktop-runtime-preview
+publisher: microsoft
+name: Microsoft .NET Windows Desktop Runtime Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/DesktopRuntime/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/DesktopRuntime/Preview
+identifiers:
+- winget: Microsoft.DotNet.DesktopRuntime.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/DesktopRuntime/Preview
+aliases:
+- microsoft/microsoft-net-windows-desktop-runtime-preview
