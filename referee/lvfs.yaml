@@ -1,0 +1,19 @@
+# LVFS as a filler (TAX-23): the data tools/lvfs.py needs, so that the code names no brand and no
+# address (TG4). A maintainer changes it with a pull request.
+#
+# The round reads the AppStream metadata that a fwupd client fetches (`fwupdmgr refresh`), once, as a
+# file the maintainer gives it (Fred, 22 November 2026: "route 1, fwupd"). The round itself fetches
+# nothing from LVFS, and no firmware (.cab).
+version: 1
+
+# Where LVFS describes a device: the source of the product and of its versions (criterion 2).
+page: 'https://fwupd.org/lvfs/devices/{id}'
+
+# Categories of a component. A component with a category of `parts` is a part of a device with its own
+# firmware, outside TAX-23, unless it also has a category of `whole`. One with a category of `settings`
+# is no product. Every other component is a device.
+whole: [X-System]
+parts: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEngine, X-EmbeddedController,
+        X-Controller, X-ThunderboltController, X-TPM, X-BaseboardManagementController, X-Touchpad,
+        X-FingerprintReader, X-NetworkInterface, X-SolidStateDrive, X-Drive]
+settings: [X-Configuration]

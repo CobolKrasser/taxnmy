@@ -419,9 +419,11 @@ def machine_sources(urls: list[str]) -> list[dict]:
 
 
 def publisher_text(key: str, pub: dict, urls: list[str]) -> str:
-    return yaml.safe_dump({"key": key, "name": pub["name"], "source": pub["source"],
-                           "machine_sources": machine_sources(urls), "aliases": []},
-                          sort_keys=False, allow_unicode=True, width=200)
+    data = {"key": key, "name": pub["name"], "source": pub["source"]}
+    if urls:
+        data["machine_sources"] = machine_sources(urls)
+    data["aliases"] = []
+    return yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=200)
 
 
 def with_machine_sources(text: str, urls: list[str]) -> str:
