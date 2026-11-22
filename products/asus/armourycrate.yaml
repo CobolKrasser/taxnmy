@@ -1,0 +1,11 @@
+key: asus/armourycrate
+publisher: asus
+name: ArmouryCrate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/ArmouryCrate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/ArmouryCrate
+identifiers:
+- winget: Asus.ArmouryCrate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/ArmouryCrate
+aliases: []

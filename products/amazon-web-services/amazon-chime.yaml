@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-chime
+publisher: amazon-web-services
+name: Amazon Chime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Chime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Chime
+identifiers:
+- winget: Amazon.Chime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Chime
+aliases: []

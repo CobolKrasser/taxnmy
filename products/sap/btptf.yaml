@@ -1,0 +1,11 @@
+key: sap/btptf
+publisher: sap
+name: btptf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/btptf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/btptf
+identifiers:
+- winget: SAP.btptf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/btptf
+aliases: []

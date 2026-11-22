@@ -1,0 +1,11 @@
+key: microsoft/directx-texture-converter
+publisher: microsoft
+name: DirectX Texture Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texconv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texconv
+identifiers:
+- winget: Microsoft.DirectXTex.Texconv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectXTex/Texconv
+aliases: []

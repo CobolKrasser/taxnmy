@@ -1,0 +1,11 @@
+key: microsoft/microsoft-azure-artifactsigningclienttools
+publisher: microsoft
+name: Microsoft.Azure.ArtifactSigningClientTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ArtifactSigningClientTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ArtifactSigningClientTools
+identifiers:
+- winget: Microsoft.Azure.ArtifactSigningClientTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/ArtifactSigningClientTools
+aliases: []

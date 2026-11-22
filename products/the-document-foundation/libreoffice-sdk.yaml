@@ -1,0 +1,11 @@
+key: the-document-foundation/libreoffice-sdk
+publisher: the-document-foundation
+name: LibreOffice SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/SDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/SDK
+identifiers:
+- winget: TheDocumentFoundation.LibreOffice.SDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice/SDK
+aliases: []

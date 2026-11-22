@@ -1,0 +1,11 @@
+key: kde/neochat
+publisher: kde
+name: NeoChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/NeoChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/NeoChat
+identifiers:
+- winget: KDE.NeoChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/NeoChat
+aliases: []

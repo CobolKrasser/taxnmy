@@ -1,0 +1,11 @@
+key: jetbrains/jetbrains-dotpeek
+publisher: jetbrains
+name: JetBrains dotPeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotPeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotPeek
+identifiers:
+- winget: JetBrains.dotPeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/dotPeek
+aliases: []

@@ -1,0 +1,11 @@
+key: docker/docker-desktop
+publisher: docker
+name: Docker Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerDesktop
+identifiers:
+- winget: Docker.DockerDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: splunk/universalforwarder
+publisher: splunk
+name: UniversalForwarder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splunk/UniversalForwarder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splunk/UniversalForwarder
+identifiers:
+- winget: Splunk.UniversalForwarder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splunk/UniversalForwarder
+aliases: []

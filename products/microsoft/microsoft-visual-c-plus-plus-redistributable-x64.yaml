@@ -1,0 +1,13 @@
+key: microsoft/microsoft-visual-c-plus-plus-redistributable-x64
+publisher: microsoft
+name: Microsoft Visual C++ Redistributable - x64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCRedist/2008/x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCRedist/2008/x64
+identifiers:
+- winget: Microsoft.VCRedist.2008.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCRedist/2008/x64
+- winget: Microsoft.VCRedist.2010.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCRedist/2010/x64
+aliases: []

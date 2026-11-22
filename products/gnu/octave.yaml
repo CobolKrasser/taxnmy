@@ -1,0 +1,11 @@
+key: gnu/octave
+publisher: gnu
+name: Octave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Octave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Octave
+identifiers:
+- winget: GNU.Octave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Octave
+aliases: []

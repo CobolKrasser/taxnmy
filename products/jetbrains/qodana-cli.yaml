@@ -1,0 +1,11 @@
+key: jetbrains/qodana-cli
+publisher: jetbrains
+name: Qodana CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/QodanaCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/QodanaCLI
+identifiers:
+- winget: JetBrains.QodanaCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/QodanaCLI
+aliases: []

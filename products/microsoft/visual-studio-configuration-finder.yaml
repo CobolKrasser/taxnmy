@@ -1,0 +1,11 @@
+key: microsoft/visual-studio-configuration-finder
+publisher: microsoft
+name: Visual Studio Configuration Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/ConfigFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/ConfigFinder
+identifiers:
+- winget: Microsoft.VisualStudio.ConfigFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/ConfigFinder
+aliases: []

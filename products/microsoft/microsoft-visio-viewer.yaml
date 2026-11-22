@@ -1,0 +1,11 @@
+key: microsoft/microsoft-visio-viewer
+publisher: microsoft
+name: Microsoft Visio Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisioViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisioViewer
+identifiers:
+- winget: Microsoft.VisioViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisioViewer
+aliases: []

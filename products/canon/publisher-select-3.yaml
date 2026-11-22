@@ -1,0 +1,11 @@
+key: canon/publisher-select-3
+publisher: canon
+name: Publisher Select 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canon/PublisherSelect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canon/PublisherSelect
+identifiers:
+- winget: Canon.PublisherSelect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canon/PublisherSelect
+aliases: []

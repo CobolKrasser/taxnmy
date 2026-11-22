@@ -1,0 +1,11 @@
+key: omnissa/workspace-one-intelligent-hub-installer
+publisher: omnissa
+name: Workspace ONE Intelligent Hub Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONEIntelligentHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONEIntelligentHub
+identifiers:
+- winget: Omnissa.WorkspaceONEIntelligentHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONEIntelligentHub
+aliases: []

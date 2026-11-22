@@ -1,0 +1,11 @@
+key: grafana-labs/xk6
+publisher: grafana-labs
+name: xk6
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/xk6
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/xk6
+identifiers:
+- winget: GrafanaLabs.xk6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrafanaLabs/xk6
+aliases: []

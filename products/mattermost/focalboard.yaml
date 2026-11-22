@@ -1,0 +1,11 @@
+key: mattermost/focalboard
+publisher: mattermost
+name: Focalboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mattermost/Focalboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mattermost/Focalboard
+identifiers:
+- winget: Mattermost.Focalboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mattermost/Focalboard
+aliases: []

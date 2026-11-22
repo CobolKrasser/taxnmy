@@ -1,0 +1,13 @@
+key: jetbrains/jetbrains-mps
+publisher: jetbrains
+name: JetBrains MPS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/MPS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/MPS
+identifiers:
+- winget: JetBrains.MPS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/MPS
+- winget: JetBrains.MPS.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/MPS/EAP
+aliases: []

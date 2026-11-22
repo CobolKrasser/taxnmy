@@ -1,0 +1,11 @@
+key: microsoft/opencltm-opengl-and-vulkan-compatibility-pack
+publisher: microsoft
+name: OpenCL™, OpenGL®, and Vulkan® Compatibility Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenCLGLVulkanCompatibilityPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenCLGLVulkanCompatibilityPack
+identifiers:
+- winget: Microsoft.OpenCLGLVulkanCompatibilityPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenCLGLVulkanCompatibilityPack
+aliases: []

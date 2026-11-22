@@ -1,0 +1,11 @@
+key: microsoft/error-lookup-tool
+publisher: microsoft
+name: Error Lookup Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/err
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/err
+identifiers:
+- winget: Microsoft.err
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/err
+aliases: []

@@ -1,0 +1,11 @@
+key: dell/dell-command-update
+publisher: dell
+name: Dell Command | Update
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandUpdate
+identifiers:
+- winget: Dell.CommandUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/CommandUpdate
+aliases: []

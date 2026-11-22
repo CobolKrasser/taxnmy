@@ -1,0 +1,11 @@
+key: intel/intel-binary-configuration-tool-for-intel-fsp
+publisher: intel
+name: Intel Binary Configuration Tool for Intel FSP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/BCT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/BCT
+identifiers:
+- winget: Intel.BCT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/BCT
+aliases: []

@@ -1,0 +1,17 @@
+key: microsoft/visual-studio-buildtools
+publisher: microsoft
+name: Visual Studio BuildTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/BuildTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/BuildTools
+identifiers:
+- winget: Microsoft.VisualStudio.2017.BuildTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2017/BuildTools
+- winget: Microsoft.VisualStudio.2019.BuildTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2019/BuildTools
+- winget: Microsoft.VisualStudio.2022.BuildTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2022/BuildTools
+- winget: Microsoft.VisualStudio.BuildTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/BuildTools
+aliases: []

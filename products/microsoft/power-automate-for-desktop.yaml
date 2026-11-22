@@ -1,0 +1,11 @@
+key: microsoft/power-automate-for-desktop
+publisher: microsoft
+name: Power Automate for desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateDesktop
+identifiers:
+- winget: Microsoft.PowerAutomateDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateDesktop
+aliases: []

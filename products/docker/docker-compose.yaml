@@ -1,0 +1,11 @@
+key: docker/docker-compose
+publisher: docker
+name: Docker Compose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCompose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCompose
+identifiers:
+- winget: Docker.DockerCompose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCompose
+aliases: []

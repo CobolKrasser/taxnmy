@@ -1,0 +1,11 @@
+key: apple/apple-application-support-64-bit
+publisher: apple
+name: Apple Application Support (64-bit)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/AppleApplicationSupport/x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/AppleApplicationSupport/x64
+identifiers:
+- winget: Apple.AppleApplicationSupport.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/AppleApplicationSupport/x64
+aliases: []

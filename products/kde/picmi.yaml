@@ -1,0 +1,11 @@
+key: kde/picmi
+publisher: kde
+name: picmi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Picmi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Picmi
+identifiers:
+- winget: KDE.Picmi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Picmi
+aliases: []

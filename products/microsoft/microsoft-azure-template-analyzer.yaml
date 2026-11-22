@@ -1,0 +1,11 @@
+key: microsoft/microsoft-azure-template-analyzer
+publisher: microsoft
+name: Microsoft Azure Template Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/TemplateAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/TemplateAnalyzer
+identifiers:
+- winget: Microsoft.Azure.TemplateAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/TemplateAnalyzer
+aliases: []

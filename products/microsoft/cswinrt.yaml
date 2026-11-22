@@ -1,0 +1,11 @@
+key: microsoft/cswinrt
+publisher: microsoft
+name: CsWinRT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CsWinRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CsWinRT
+identifiers:
+- winget: Microsoft.CsWinRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CsWinRT
+aliases: []

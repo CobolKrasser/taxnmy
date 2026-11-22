@@ -1,0 +1,11 @@
+key: microsoft/windows-cloud-io-protection-driver
+publisher: microsoft
+name: Windows Cloud IO Protection driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsCloudIOProtectionDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsCloudIOProtectionDriver
+identifiers:
+- winget: Microsoft.WindowsCloudIOProtectionDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsCloudIOProtectionDriver
+aliases: []

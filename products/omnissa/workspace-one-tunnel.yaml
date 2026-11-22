@@ -1,0 +1,11 @@
+key: omnissa/workspace-one-tunnel
+publisher: omnissa
+name: Workspace ONE Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONE/Tunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONE/Tunnel
+identifiers:
+- winget: Omnissa.WorkspaceONE.Tunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Omnissa/WorkspaceONE/Tunnel
+aliases: []

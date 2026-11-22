@@ -1,0 +1,11 @@
+key: jetbrains/jetbrains-hub
+publisher: jetbrains
+name: JetBrains Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Hub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Hub
+identifiers:
+- winget: JetBrains.Hub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Hub
+aliases: []

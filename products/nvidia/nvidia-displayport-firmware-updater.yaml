@@ -1,0 +1,11 @@
+key: nvidia/nvidia-displayport-firmware-updater
+publisher: nvidia
+name: NVIDIA DisplayPort Firmware Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/DisplayPortFirmwareUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/DisplayPortFirmwareUpdater
+identifiers:
+- winget: Nvidia.DisplayPortFirmwareUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/DisplayPortFirmwareUpdater
+aliases: []

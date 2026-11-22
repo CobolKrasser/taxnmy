@@ -1,0 +1,11 @@
+key: microsoft/devskim-cli-net-tool
+publisher: microsoft
+name: DevSkim CLI (.NET Tool)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DevSkim/CLI/DotNetTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DevSkim/CLI/DotNetTool
+identifiers:
+- winget: Microsoft.DevSkim.CLI.DotNetTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DevSkim/CLI/DotNetTool
+aliases: []

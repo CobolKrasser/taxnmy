@@ -1,0 +1,11 @@
+key: openvpn/openvpn-connect
+publisher: openvpn
+name: OpenVPN Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVPNTechnologies/OpenVPNConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVPNTechnologies/OpenVPNConnect
+identifiers:
+- winget: OpenVPNTechnologies.OpenVPNConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVPNTechnologies/OpenVPNConnect
+aliases: []

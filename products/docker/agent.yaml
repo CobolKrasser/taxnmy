@@ -1,0 +1,11 @@
+key: docker/agent
+publisher: docker
+name: Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/Agent
+identifiers:
+- winget: Docker.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/Agent
+aliases: []

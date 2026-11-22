@@ -1,0 +1,11 @@
+key: google/google-updater
+publisher: google
+name: Google Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleUpdater
+identifiers:
+- winget: Google.GoogleUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleUpdater
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/kaidan
+publisher: kde
+name: Kaidan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kaidan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kaidan
+identifiers:
+- winget: KDE.Kaidan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kaidan
+aliases: []

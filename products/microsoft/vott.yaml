@@ -1,0 +1,11 @@
+key: microsoft/vott
+publisher: microsoft
+name: vott
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/vott
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/vott
+identifiers:
+- winget: Microsoft.vott
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/vott
+aliases: []

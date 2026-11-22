@@ -1,0 +1,11 @@
+key: microsoft/azure-monitor-agent
+publisher: microsoft
+name: Azure Monitor Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureMonitorAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureMonitorAgent
+identifiers:
+- winget: Microsoft.AzureMonitorAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AzureMonitorAgent
+aliases: []

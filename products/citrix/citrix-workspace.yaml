@@ -1,0 +1,13 @@
+key: citrix/citrix-workspace
+publisher: citrix
+name: Citrix Workspace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citrix/Workspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citrix/Workspace
+identifiers:
+- winget: Citrix.Workspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citrix/Workspace
+- winget: Citrix.Workspace.LTSR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Citrix/Workspace/LTSR
+aliases: []

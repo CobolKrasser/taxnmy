@@ -1,0 +1,11 @@
+key: microsoft/microsoft-defender-for-endpoint-client-analyzer
+publisher: microsoft
+name: Microsoft Defender for Endpoint Client Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MDEClientAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MDEClientAnalyzer
+identifiers:
+- winget: Microsoft.MDEClientAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MDEClientAnalyzer
+aliases: []

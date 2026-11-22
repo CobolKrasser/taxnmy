@@ -1,0 +1,11 @@
+key: google/google-web-designer
+publisher: google
+name: Google Web Designer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleWebDesigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleWebDesigner
+identifiers:
+- winget: Google.GoogleWebDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleWebDesigner
+aliases: []

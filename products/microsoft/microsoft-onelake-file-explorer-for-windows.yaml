@@ -1,0 +1,11 @@
+key: microsoft/microsoft-onelake-file-explorer-for-windows
+publisher: microsoft
+name: Microsoft OneLake file explorer for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneLakeFileExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneLakeFileExplorer
+identifiers:
+- winget: Microsoft.OneLakeFileExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneLakeFileExplorer
+aliases: []

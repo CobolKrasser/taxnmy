@@ -1,0 +1,11 @@
+key: apple/safari
+publisher: apple
+name: Safari
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Safari
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Safari
+identifiers:
+- winget: Apple.Safari
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/Safari
+aliases: []

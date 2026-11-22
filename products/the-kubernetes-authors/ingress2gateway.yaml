@@ -1,0 +1,11 @@
+key: the-kubernetes-authors/ingress2gateway
+publisher: the-kubernetes-authors
+name: ingress2gateway
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/ingress2gateway
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/ingress2gateway
+identifiers:
+- winget: Kubernetes.ingress2gateway
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/ingress2gateway
+aliases: []

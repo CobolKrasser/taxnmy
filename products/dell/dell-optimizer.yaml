@@ -1,0 +1,11 @@
+key: dell/dell-optimizer
+publisher: dell
+name: Dell Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/Optimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/Optimizer
+identifiers:
+- winget: Dell.Optimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dell/Optimizer
+aliases: []

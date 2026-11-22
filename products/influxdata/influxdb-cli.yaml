@@ -1,0 +1,11 @@
+key: influxdata/influxdb-cli
+publisher: influxdata
+name: InfluxDB CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/CLI
+identifiers:
+- winget: InfluxData.InfluxDB.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfluxData/InfluxDB/CLI
+aliases: []

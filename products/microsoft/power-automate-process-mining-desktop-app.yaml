@@ -1,0 +1,11 @@
+key: microsoft/power-automate-process-mining-desktop-app
+publisher: microsoft
+name: Power Automate Process Mining desktop app
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateProcessMining
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateProcessMining
+identifiers:
+- winget: Microsoft.PowerAutomateProcessMining
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateProcessMining
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/winui-search
+publisher: microsoft
+name: winui-search
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/winui-search
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/winui-search
+identifiers:
+- winget: Microsoft.winui-search
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/winui-search
+aliases: []

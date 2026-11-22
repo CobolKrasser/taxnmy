@@ -1,0 +1,11 @@
+key: ptc/ptc-product-view-express
+publisher: ptc
+name: PTC Product View Express
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTC/CreoView/Express
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTC/CreoView/Express
+identifiers:
+- winget: PTC.CreoView.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTC/CreoView/Express
+aliases: []

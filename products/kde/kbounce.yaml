@@ -1,0 +1,11 @@
+key: kde/kbounce
+publisher: kde
+name: kbounce
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KBounce
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KBounce
+identifiers:
+- winget: KDE.KBounce
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KBounce
+aliases: []

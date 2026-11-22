@@ -1,0 +1,11 @@
+key: synology/beestation
+publisher: synology
+name: BeeStation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/BeeStation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/BeeStation
+identifiers:
+- winget: Synology.BeeStation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/BeeStation
+aliases: []

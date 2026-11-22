@@ -1,0 +1,11 @@
+key: bellsoft/liberica-nik-jdk-17
+publisher: bellsoft
+name: Liberica NIK (JDK 17)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/23/JDK17
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/23/JDK17
+identifiers:
+- winget: BellSoft.LibericaNIK.23.JDK17
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaNIK/23/JDK17
+aliases: []

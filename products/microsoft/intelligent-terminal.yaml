@@ -1,0 +1,11 @@
+key: microsoft/intelligent-terminal
+publisher: microsoft
+name: Intelligent Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IntelligentTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IntelligentTerminal
+identifiers:
+- winget: Microsoft.IntelligentTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IntelligentTerminal
+aliases: []

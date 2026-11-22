@@ -1,0 +1,11 @@
+key: microsoft/microsoft-application-request-routing
+publisher: microsoft
+name: Microsoft Application Request Routing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/ApplicationRequestRouting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/ApplicationRequestRouting
+identifiers:
+- winget: Microsoft.IIS.ApplicationRequestRouting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/ApplicationRequestRouting
+aliases: []

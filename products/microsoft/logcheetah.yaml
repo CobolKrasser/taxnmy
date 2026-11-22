@@ -1,0 +1,11 @@
+key: microsoft/logcheetah
+publisher: microsoft
+name: LogCheetah
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LogCheetah
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LogCheetah
+identifiers:
+- winget: Microsoft.LogCheetah
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/LogCheetah
+aliases: []

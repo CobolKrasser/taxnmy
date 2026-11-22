@@ -1,0 +1,11 @@
+key: microsoft/dependency-agent
+publisher: microsoft
+name: Dependency Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DependencyAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DependencyAgent
+identifiers:
+- winget: Microsoft.DependencyAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DependencyAgent
+aliases: []

@@ -1,0 +1,13 @@
+key: microsoft/remote-tools-for-visual-studio
+publisher: microsoft
+name: Remote Tools for Visual Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/RemoteTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/RemoteTools
+identifiers:
+- winget: Microsoft.VisualStudio.2022.RemoteTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/2022/RemoteTools
+- winget: Microsoft.VisualStudio.RemoteTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/RemoteTools
+aliases: []

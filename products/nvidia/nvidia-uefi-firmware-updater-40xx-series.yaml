@@ -1,0 +1,11 @@
+key: nvidia/nvidia-uefi-firmware-updater-40xx-series
+publisher: nvidia
+name: NVIDIA UEFI Firmware Updater (40xx series)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/UEFIFirmwareUpdater40xx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/UEFIFirmwareUpdater40xx
+identifiers:
+- winget: Nvidia.UEFIFirmwareUpdater40xx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/UEFIFirmwareUpdater40xx
+aliases: []

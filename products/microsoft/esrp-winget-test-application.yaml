@@ -1,0 +1,11 @@
+key: microsoft/esrp-winget-test-application
+publisher: microsoft
+name: ESRP Winget Test Application
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ESRPWingetTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ESRPWingetTest
+identifiers:
+- winget: Microsoft.ESRPWingetTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ESRPWingetTest
+aliases: []

@@ -1,0 +1,11 @@
+key: graylog/graylog-sidecar
+publisher: graylog
+name: Graylog Sidecar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GraylogInc/GraylogSidecar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GraylogInc/GraylogSidecar
+identifiers:
+- winget: GraylogInc.GraylogSidecar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GraylogInc/GraylogSidecar
+aliases: []

@@ -1,0 +1,11 @@
+key: jetbrains/aqua-public-preview
+publisher: jetbrains
+name: Aqua (Public Preview)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Aqua/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Aqua/Preview
+identifiers:
+- winget: JetBrains.Aqua.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/Aqua/Preview
+aliases: []

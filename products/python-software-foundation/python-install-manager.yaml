@@ -1,0 +1,11 @@
+key: python-software-foundation/python-install-manager
+publisher: python-software-foundation
+name: Python Install Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Python/PythonInstallManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Python/PythonInstallManager
+identifiers:
+- winget: Python.PythonInstallManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Python/PythonInstallManager
+aliases: []

@@ -1,0 +1,13 @@
+key: microsoft/microsoft-net-framework-developer-pack
+publisher: microsoft
+name: Microsoft .NET Framework Developer Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack_4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack_4
+identifiers:
+- winget: Microsoft.DotNet.Framework.DeveloperPack.4.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack/4/6
+- winget: Microsoft.DotNet.Framework.DeveloperPack_4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Framework/DeveloperPack_4
+aliases: []

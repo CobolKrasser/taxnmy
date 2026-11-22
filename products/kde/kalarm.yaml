@@ -1,0 +1,11 @@
+key: kde/kalarm
+publisher: kde
+name: kalarm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KAlarm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KAlarm
+identifiers:
+- winget: KDE.KAlarm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KAlarm
+aliases: []

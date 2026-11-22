@@ -1,0 +1,11 @@
+key: samsung/samsung-allshare
+publisher: samsung
+name: Samsung AllShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/AllShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/AllShare
+identifiers:
+- winget: Samsung.AllShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/AllShare
+aliases: []

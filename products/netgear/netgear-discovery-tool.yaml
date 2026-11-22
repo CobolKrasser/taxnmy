@@ -1,0 +1,11 @@
+key: netgear/netgear-discovery-tool
+publisher: netgear
+name: NETGEAR Discovery Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETGEAR/DiscoveryTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETGEAR/DiscoveryTool
+identifiers:
+- winget: NETGEAR.DiscoveryTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NETGEAR/DiscoveryTool
+aliases: []

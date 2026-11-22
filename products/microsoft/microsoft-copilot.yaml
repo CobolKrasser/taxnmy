@@ -1,0 +1,11 @@
+key: microsoft/microsoft-copilot
+publisher: microsoft
+name: Microsoft Copilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Copilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Copilot
+identifiers:
+- winget: Microsoft.Copilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Copilot
+aliases: []

@@ -1,0 +1,11 @@
+key: google/google-workspace-cli
+publisher: google
+name: Google Workspace CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/WorkspaceCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/WorkspaceCLI
+identifiers:
+- winget: Google.WorkspaceCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/WorkspaceCLI
+aliases: []

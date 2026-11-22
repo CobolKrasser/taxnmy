@@ -1,0 +1,11 @@
+key: hashicorp/hashicorp-terraform-rc
+publisher: hashicorp
+name: Hashicorp Terraform RC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/RC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/RC
+identifiers:
+- winget: Hashicorp.Terraform.RC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform/RC
+aliases: []

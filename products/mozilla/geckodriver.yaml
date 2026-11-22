@@ -1,0 +1,11 @@
+key: mozilla/geckodriver
+publisher: mozilla
+name: geckodriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/GeckoDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/GeckoDriver
+identifiers:
+- winget: Mozilla.GeckoDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/GeckoDriver
+aliases: []

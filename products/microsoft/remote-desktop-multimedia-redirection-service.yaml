@@ -1,0 +1,11 @@
+key: microsoft/remote-desktop-multimedia-redirection-service
+publisher: microsoft
+name: Remote Desktop Multimedia Redirection Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteDesktopMMRService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteDesktopMMRService
+identifiers:
+- winget: Microsoft.RemoteDesktopMMRService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RemoteDesktopMMRService
+aliases: []

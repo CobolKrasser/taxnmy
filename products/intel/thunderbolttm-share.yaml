@@ -1,0 +1,11 @@
+key: intel/thunderbolttm-share
+publisher: intel
+name: Thunderbolt™ Share
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/ThunderboltShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/ThunderboltShare
+identifiers:
+- winget: Intel.ThunderboltShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/ThunderboltShare
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/microsoft-surface-hub-recovery-tool
+publisher: microsoft
+name: Microsoft Surface Hub Recovery Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceHubRecoveryTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceHubRecoveryTool
+identifiers:
+- winget: Microsoft.SurfaceHubRecoveryTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SurfaceHubRecoveryTool
+aliases: []

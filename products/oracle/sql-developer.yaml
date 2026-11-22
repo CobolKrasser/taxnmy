@@ -1,0 +1,11 @@
+key: oracle/sql-developer
+publisher: oracle
+name: SQL Developer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/SQLDeveloper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/SQLDeveloper
+identifiers:
+- winget: Oracle.SQLDeveloper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/SQLDeveloper
+aliases: []

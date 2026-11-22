@@ -1,0 +1,11 @@
+key: oracle/sqlcl
+publisher: oracle
+name: SQLcl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/SQLcl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/SQLcl
+identifiers:
+- winget: Oracle.SQLcl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/SQLcl
+aliases: []

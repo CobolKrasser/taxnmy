@@ -1,0 +1,11 @@
+key: microsoft/visual-studio-enterprise-insiders
+publisher: microsoft
+name: Visual Studio Enterprise Insiders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Enterprise/Insiders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Enterprise/Insiders
+identifiers:
+- winget: Microsoft.VisualStudio.Enterprise.Insiders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Enterprise/Insiders
+aliases: []

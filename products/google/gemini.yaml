@@ -1,0 +1,11 @@
+key: google/gemini
+publisher: google
+name: Gemini
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GeminiDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GeminiDesktop
+identifiers:
+- winget: Google.GeminiDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GeminiDesktop
+aliases: []

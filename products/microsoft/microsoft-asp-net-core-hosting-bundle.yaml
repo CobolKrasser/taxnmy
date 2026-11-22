@@ -1,0 +1,25 @@
+key: microsoft/microsoft-asp-net-core-hosting-bundle
+publisher: microsoft
+name: Microsoft ASP.NET Core Hosting Bundle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/5
+identifiers:
+- winget: Microsoft.DotNet.HostingBundle.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/10
+- winget: Microsoft.DotNet.HostingBundle.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/11
+- winget: Microsoft.DotNet.HostingBundle.3_1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/3_1
+- winget: Microsoft.DotNet.HostingBundle.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/5
+- winget: Microsoft.DotNet.HostingBundle.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/6
+- winget: Microsoft.DotNet.HostingBundle.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/7
+- winget: Microsoft.DotNet.HostingBundle.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/8
+- winget: Microsoft.DotNet.HostingBundle.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/HostingBundle/9
+aliases: []

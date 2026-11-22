@@ -1,0 +1,11 @@
+key: acronis-international/acronis-cyber-protect-home-office
+publisher: acronis-international
+name: Acronis Cyber Protect Home Office
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acronis/CyberProtectHomeOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acronis/CyberProtectHomeOffice
+identifiers:
+- winget: Acronis.CyberProtectHomeOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acronis/CyberProtectHomeOffice
+aliases: []

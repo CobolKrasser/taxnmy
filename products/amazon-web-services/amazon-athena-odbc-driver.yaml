@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-athena-odbc-driver
+publisher: amazon-web-services
+name: Amazon Athena ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AthenaODBCDriver/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AthenaODBCDriver/2
+identifiers:
+- winget: Amazon.AthenaODBCDriver.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/AthenaODBCDriver/2
+aliases: []

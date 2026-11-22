@@ -1,0 +1,11 @@
+key: microsoft/microsoft-edge-webdriver
+publisher: microsoft
+name: Microsoft Edge WebDriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EdgeDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EdgeDriver
+identifiers:
+- winget: Microsoft.EdgeDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/EdgeDriver
+aliases: []

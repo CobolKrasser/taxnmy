@@ -1,0 +1,11 @@
+key: jetbrains/fleet-launcher-early-access-program
+publisher: jetbrains
+name: Fleet Launcher (Early Access Program)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/FleetLauncher/EAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/FleetLauncher/EAP
+identifiers:
+- winget: JetBrains.FleetLauncher.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/FleetLauncher/EAP
+aliases: []

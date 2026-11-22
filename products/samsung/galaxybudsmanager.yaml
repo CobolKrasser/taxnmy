@@ -1,0 +1,11 @@
+key: samsung/galaxybudsmanager
+publisher: samsung
+name: GalaxyBudsManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/GalaxyBudsManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/GalaxyBudsManager
+identifiers:
+- winget: Samsung.GalaxyBudsManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Samsung/GalaxyBudsManager
+aliases: []

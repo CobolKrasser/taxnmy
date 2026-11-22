@@ -1,0 +1,11 @@
+key: couchbase/couchbase-server-community-edition
+publisher: couchbase
+name: Couchbase Server Community Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchbase/ServerCommunity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchbase/ServerCommunity
+identifiers:
+- winget: Couchbase.ServerCommunity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchbase/ServerCommunity
+aliases: []

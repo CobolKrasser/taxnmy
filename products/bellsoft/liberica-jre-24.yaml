@@ -1,0 +1,11 @@
+key: bellsoft/liberica-jre-24
+publisher: bellsoft
+name: Liberica JRE 24
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaJRE/25
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaJRE/25
+identifiers:
+- winget: BellSoft.LibericaJRE.25
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BellSoft/LibericaJRE/25
+aliases: []

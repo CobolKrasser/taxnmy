@@ -1,0 +1,11 @@
+key: synology/synology-chat
+publisher: synology
+name: Synology Chat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/ChatClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/ChatClient
+identifiers:
+- winget: Synology.ChatClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/ChatClient
+aliases: []

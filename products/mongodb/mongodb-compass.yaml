@@ -1,0 +1,11 @@
+key: mongodb/mongodb-compass
+publisher: mongodb
+name: MongoDB Compass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Compass/Full
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Compass/Full
+identifiers:
+- winget: MongoDB.Compass.Full
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MongoDB/Compass/Full
+aliases: []

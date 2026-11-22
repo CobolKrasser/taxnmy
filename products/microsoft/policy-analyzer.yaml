@@ -1,0 +1,11 @@
+key: microsoft/policy-analyzer
+publisher: microsoft
+name: Policy Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/PolicyAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/PolicyAnalyzer
+identifiers:
+- winget: Microsoft.SecurityComplianceToolkit.PolicyAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SecurityComplianceToolkit/PolicyAnalyzer
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/kollision
+publisher: kde
+name: kollision
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kollision
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kollision
+identifiers:
+- winget: KDE.Kollision
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kollision
+aliases: []

@@ -1,0 +1,11 @@
+key: kde/skrooge
+publisher: kde
+name: Skrooge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Skrooge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Skrooge
+identifiers:
+- winget: KDE.Skrooge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Skrooge
+aliases: []

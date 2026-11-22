@@ -1,0 +1,11 @@
+key: google/google
+publisher: google
+name: Google
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleAppForDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleAppForDesktop
+identifiers:
+- winget: Google.GoogleAppForDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/GoogleAppForDesktop
+aliases: []

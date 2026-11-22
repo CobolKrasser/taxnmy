@@ -1,0 +1,11 @@
+key: red-hat/virtio-win-guest-tools
+publisher: red-hat
+name: Virtio-win-guest-tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/VirtIO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/VirtIO
+identifiers:
+- winget: RedHat.VirtIO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/VirtIO
+aliases: []

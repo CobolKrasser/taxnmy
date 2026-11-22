@@ -1,0 +1,11 @@
+key: microsoft/microsoft-access-database-engine
+publisher: microsoft
+name: Microsoft Access database engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AccessDatabaseEngine/2016
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AccessDatabaseEngine/2016
+identifiers:
+- winget: Microsoft.AccessDatabaseEngine.2016
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AccessDatabaseEngine/2016
+aliases: []

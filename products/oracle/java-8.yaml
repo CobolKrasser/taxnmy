@@ -1,0 +1,11 @@
+key: oracle/java-8
+publisher: oracle
+name: Java 8
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JavaRuntimeEnvironment
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JavaRuntimeEnvironment
+identifiers:
+- winget: Oracle.JavaRuntimeEnvironment
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/JavaRuntimeEnvironment
+aliases: []

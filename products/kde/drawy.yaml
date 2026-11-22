@@ -1,0 +1,11 @@
+key: kde/drawy
+publisher: kde
+name: Drawy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Drawy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Drawy
+identifiers:
+- winget: KDE.Drawy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Drawy
+aliases: []

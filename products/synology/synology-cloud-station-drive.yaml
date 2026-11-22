@@ -1,0 +1,11 @@
+key: synology/synology-cloud-station-drive
+publisher: synology
+name: Synology Cloud Station Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CloudStationDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CloudStationDrive
+identifiers:
+- winget: Synology.CloudStationDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synology/CloudStationDrive
+aliases: []

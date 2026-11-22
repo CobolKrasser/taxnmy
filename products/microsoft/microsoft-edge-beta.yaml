@@ -1,0 +1,11 @@
+key: microsoft/microsoft-edge-beta
+publisher: microsoft
+name: Microsoft Edge Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edge/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edge/Beta
+identifiers:
+- winget: Microsoft.Edge.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Edge/Beta
+aliases: []

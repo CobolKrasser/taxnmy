@@ -1,0 +1,11 @@
+key: microsoft/applocker-policy-converter
+publisher: microsoft
+name: AppLocker Policy Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppLockerPolicyConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppLockerPolicyConverter
+identifiers:
+- winget: Microsoft.AppLockerPolicyConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppLockerPolicyConverter
+aliases: []

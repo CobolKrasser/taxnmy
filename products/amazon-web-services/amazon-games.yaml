@@ -1,0 +1,11 @@
+key: amazon-web-services/amazon-games
+publisher: amazon-web-services
+name: Amazon Games
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Games
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Games
+identifiers:
+- winget: Amazon.Games
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Games
+aliases: []

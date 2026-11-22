@@ -1,0 +1,11 @@
+key: zabbix/zabbix-agent
+publisher: zabbix
+name: Zabbix Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zabbix/Agent/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zabbix/Agent/2
+identifiers:
+- winget: Zabbix.Agent.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zabbix/Agent/2
+aliases: []

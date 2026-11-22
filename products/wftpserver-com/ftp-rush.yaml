@@ -1,0 +1,11 @@
+key: wftpserver-com/ftp-rush
+publisher: wftpserver-com
+name: FTP Rush
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WingSoft/FTPRush
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WingSoft/FTPRush
+identifiers:
+- winget: WingSoft.FTPRush
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WingSoft/FTPRush
+aliases: []

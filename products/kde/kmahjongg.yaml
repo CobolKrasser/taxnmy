@@ -1,0 +1,11 @@
+key: kde/kmahjongg
+publisher: kde
+name: kmahjongg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KMahjongg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KMahjongg
+identifiers:
+- winget: KDE.KMahjongg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KMahjongg
+aliases: []

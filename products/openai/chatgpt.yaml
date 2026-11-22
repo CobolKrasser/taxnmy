@@ -1,0 +1,11 @@
+key: openai/chatgpt
+publisher: openai
+name: ChatGPT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/ChatGPT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/ChatGPT
+identifiers:
+- winget: OpenAI.ChatGPT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAI/ChatGPT
+aliases: []

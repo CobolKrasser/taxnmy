@@ -1,0 +1,11 @@
+key: microsoft/outlook-for-windows
+publisher: microsoft
+name: Outlook for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Outlook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Outlook
+identifiers:
+- winget: Microsoft.Outlook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Outlook
+aliases: []

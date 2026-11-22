@@ -1,0 +1,11 @@
+key: nvidia/nvidia-physx-system-software
+publisher: nvidia
+name: NVIDIA PhysX System Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PhysX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PhysX
+identifiers:
+- winget: Nvidia.PhysX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nvidia/PhysX
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/windows-journal
+publisher: microsoft
+name: Windows Journal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsJournal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsJournal
+identifiers:
+- winget: Microsoft.WindowsJournal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsJournal
+aliases: []

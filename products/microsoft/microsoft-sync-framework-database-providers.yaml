@@ -1,0 +1,11 @@
+key: microsoft/microsoft-sync-framework-database-providers
+publisher: microsoft
+name: Microsoft Sync Framework Database Providers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/DatabaseProviders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/DatabaseProviders
+identifiers:
+- winget: Microsoft.SyncFramework.DatabaseProviders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SyncFramework/DatabaseProviders
+aliases: []

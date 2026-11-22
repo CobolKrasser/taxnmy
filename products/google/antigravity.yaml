@@ -1,0 +1,11 @@
+key: google/antigravity
+publisher: google
+name: Antigravity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Antigravity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Antigravity
+identifiers:
+- winget: Google.Antigravity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Antigravity
+aliases: []

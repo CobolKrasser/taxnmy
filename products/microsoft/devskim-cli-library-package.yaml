@@ -1,0 +1,11 @@
+key: microsoft/devskim-cli-library-package
+publisher: microsoft
+name: DevSkim CLI (Library package)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DevSkim/CLI/LibraryPackage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DevSkim/CLI/LibraryPackage
+identifiers:
+- winget: Microsoft.DevSkim.CLI.LibraryPackage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DevSkim/CLI/LibraryPackage
+aliases: []

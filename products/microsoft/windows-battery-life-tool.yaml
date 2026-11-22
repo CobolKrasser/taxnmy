@@ -1,0 +1,11 @@
+key: microsoft/windows-battery-life-tool
+publisher: microsoft
+name: Windows Battery Life Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsBatteryLifeTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsBatteryLifeTool
+identifiers:
+- winget: Microsoft.WindowsBatteryLifeTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsBatteryLifeTool
+aliases: []

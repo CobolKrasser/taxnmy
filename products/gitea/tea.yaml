@@ -1,0 +1,11 @@
+key: gitea/tea
+publisher: gitea
+name: tea
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitea/tea
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitea/tea
+identifiers:
+- winget: Gitea.tea
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitea/tea
+aliases: []

@@ -1,0 +1,11 @@
+key: hashicorp/hashicorp-terraform-language-server
+publisher: hashicorp
+name: HashiCorp Terraform Language Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/TerraformLanguageServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/TerraformLanguageServer
+identifiers:
+- winget: Hashicorp.TerraformLanguageServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/TerraformLanguageServer
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/xbox-game-package-manager
+publisher: microsoft
+name: Xbox Game Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GDK/XboxGamePackageManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GDK/XboxGamePackageManager
+identifiers:
+- winget: Microsoft.Gaming.GDK.XboxGamePackageManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/GDK/XboxGamePackageManager
+aliases: []

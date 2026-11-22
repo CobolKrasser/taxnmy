@@ -1,0 +1,11 @@
+key: gnu/gnu-solfege
+publisher: gnu
+name: GNU Solfege
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Solfege
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Solfege
+identifiers:
+- winget: GNU.Solfege
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GNU/Solfege
+aliases: []

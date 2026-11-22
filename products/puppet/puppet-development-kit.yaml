@@ -1,0 +1,11 @@
+key: puppet/puppet-development-kit
+publisher: puppet
+name: Puppet Development Kit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Puppet/pdk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Puppet/pdk
+identifiers:
+- winget: Puppet.pdk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Puppet/pdk
+aliases: []

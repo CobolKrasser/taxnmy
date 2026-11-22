@@ -1,0 +1,11 @@
+key: microsoft/typescript-sdk
+publisher: microsoft
+name: TypeScript SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Extensions/TypeScript
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Extensions/TypeScript
+identifiers:
+- winget: Microsoft.VisualStudio.Extensions.TypeScript
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudio/Extensions/TypeScript
+aliases: []

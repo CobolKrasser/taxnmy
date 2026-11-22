@@ -1,0 +1,11 @@
+key: microsoft/microsoft-net-native-runtime
+publisher: microsoft
+name: Microsoft .NET Native Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Native/Runtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Native/Runtime
+identifiers:
+- winget: Microsoft.DotNet.Native.Runtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/Native/Runtime
+aliases: []

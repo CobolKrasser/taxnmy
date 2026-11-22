@@ -1,0 +1,11 @@
+key: duckduckgo/duckduckgo
+publisher: duckduckgo
+name: DuckDuckGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckDuckGo/DesktopBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckDuckGo/DesktopBrowser
+identifiers:
+- winget: DuckDuckGo.DesktopBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckDuckGo/DesktopBrowser
+aliases: []

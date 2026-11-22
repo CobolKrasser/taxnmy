@@ -1,0 +1,11 @@
+key: jetbrains/intellij-idea-educational-edition
+publisher: jetbrains
+name: IntelliJ IDEA Educational Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Educational
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Educational
+identifiers:
+- winget: JetBrains.IntelliJIDEA.Educational
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/IntelliJIDEA/Educational
+aliases: []

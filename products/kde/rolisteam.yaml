@@ -1,0 +1,11 @@
+key: kde/rolisteam
+publisher: kde
+name: Rolisteam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Rolisteam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Rolisteam
+identifiers:
+- winget: KDE.Rolisteam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Rolisteam
+aliases: []

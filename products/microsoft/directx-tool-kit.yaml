@@ -1,0 +1,13 @@
+key: microsoft/directx-tool-kit
+publisher: microsoft
+name: DirectX Tool Kit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ToolKit/XWBTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ToolKit/XWBTool
+identifiers:
+- winget: Microsoft.DirectX.ToolKit.MakeSpriteFont
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ToolKit/MakeSpriteFont
+- winget: Microsoft.DirectX.ToolKit.XWBTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DirectX/ToolKit/XWBTool
+aliases: []

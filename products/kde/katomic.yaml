@@ -1,0 +1,11 @@
+key: kde/katomic
+publisher: kde
+name: katomic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KAtomic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KAtomic
+identifiers:
+- winget: KDE.KAtomic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/KAtomic
+aliases: []

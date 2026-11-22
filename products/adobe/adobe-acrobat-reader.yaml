@@ -1,0 +1,13 @@
+key: adobe/adobe-acrobat-reader
+publisher: adobe
+name: Adobe Acrobat Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Acrobat/Reader/32-bit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Acrobat/Reader/32-bit
+identifiers:
+- winget: Adobe.Acrobat.Reader.32-bit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Acrobat/Reader/32-bit
+- winget: Adobe.Acrobat.Reader.64-bit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adobe/Acrobat/Reader/64-bit
+aliases: []

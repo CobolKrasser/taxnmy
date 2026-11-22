@@ -1,0 +1,11 @@
+key: couchbase/couchbase-server-enterprise-edition
+publisher: couchbase
+name: Couchbase Server Enterprise Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchbase/ServerEnterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchbase/ServerEnterprise
+identifiers:
+- winget: Couchbase.ServerEnterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Couchbase/ServerEnterprise
+aliases: []

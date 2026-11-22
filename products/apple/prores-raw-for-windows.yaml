@@ -1,0 +1,11 @@
+key: apple/prores-raw-for-windows
+publisher: apple
+name: ProRes RAW for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/ProResRAWforWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/ProResRAWforWindows
+identifiers:
+- winget: Apple.ProResRAWforWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apple/ProResRAWforWindows
+aliases: []

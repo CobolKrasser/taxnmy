@@ -1,0 +1,11 @@
+key: microsoft/active-directory-rights-management-services-client
+publisher: microsoft
+name: Active Directory Rights Management Services Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RMSClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RMSClient
+identifiers:
+- winget: Microsoft.RMSClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/RMSClient
+aliases: []

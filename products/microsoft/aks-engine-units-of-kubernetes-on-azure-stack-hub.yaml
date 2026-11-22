@@ -1,0 +1,11 @@
+key: microsoft/aks-engine-units-of-kubernetes-on-azure-stack-hub
+publisher: microsoft
+name: AKS Engine - Units of Kubernetes on Azure Stack Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/aks-engine-azurestack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/aks-engine-azurestack
+identifiers:
+- winget: Microsoft.Azure.aks-engine-azurestack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/aks-engine-azurestack
+aliases: []

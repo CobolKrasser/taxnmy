@@ -1,0 +1,25 @@
+key: microsoft/microsoft-net-sdk
+publisher: microsoft
+name: Microsoft .NET SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/5
+identifiers:
+- winget: Microsoft.DotNet.SDK.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/10
+- winget: Microsoft.DotNet.SDK.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/11
+- winget: Microsoft.DotNet.SDK.3_1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/3_1
+- winget: Microsoft.DotNet.SDK.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/5
+- winget: Microsoft.DotNet.SDK.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/6
+- winget: Microsoft.DotNet.SDK.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/7
+- winget: Microsoft.DotNet.SDK.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/8
+- winget: Microsoft.DotNet.SDK.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK/9
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/iis-url-rewrite-module
+publisher: microsoft
+name: IIS URL Rewrite Module
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/URLRewrite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/URLRewrite
+identifiers:
+- winget: Microsoft.IIS.URLRewrite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/IIS/URLRewrite
+aliases: []

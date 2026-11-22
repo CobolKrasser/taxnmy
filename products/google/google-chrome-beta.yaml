@@ -1,0 +1,13 @@
+key: google/google-chrome-beta
+publisher: google
+name: Google Chrome Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Beta
+identifiers:
+- winget: Google.Chrome.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Beta
+- winget: Google.Chrome.Beta.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/Beta/EXE
+aliases: []

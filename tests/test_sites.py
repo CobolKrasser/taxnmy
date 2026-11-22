@@ -19,7 +19,7 @@ class SitesTest(unittest.TestCase):
         names = [n for key in ("ai_chats", "owner_in_path", "owner_in_host", "many_owners", "api_hosts", "datasets")
                  for n in data[key]]
         names += [re.sub(r"^https?://([^/]+).*$", r"\1", u) for us in data["finders"].values() for u in us if "://" in u]
-        names += [re.sub(r"^https?://([^/]+).*$", r"\1", u) for u in (data["project_url"], *data["imports"].values())]
+        names += [re.sub(r"^https?://([^/]+).*$", r"\1", u) for u in (data["project_url"], *data["imports"].values(), *data["fillers"].values())]
         hits = [f"{p.name}: {n}" for p in sorted((REPO / "tools").glob("*.py")) for n in names
                 if n in p.read_text(encoding="utf-8")]
         self.assertEqual(hits, [])

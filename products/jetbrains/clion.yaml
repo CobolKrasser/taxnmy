@@ -1,0 +1,13 @@
+key: jetbrains/clion
+publisher: jetbrains
+name: CLion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/CLion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/CLion
+identifiers:
+- winget: JetBrains.CLion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/CLion
+- winget: JetBrains.CLion.EAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/CLion/EAP
+aliases: []
