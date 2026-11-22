@@ -1,0 +1,12 @@
+key: avaya/breeze-platform
+publisher: avaya
+name: Avaya Breeze Platform
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:avaya:breeze_platform
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- avaya/avaya-breeze-platform

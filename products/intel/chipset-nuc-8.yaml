@@ -1,0 +1,12 @@
+key: intel/chipset-nuc-8
+publisher: intel
+name: Intel Chipset NUC 8
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:intel:chipset_device_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- intel/intel-chipset-nuc-8

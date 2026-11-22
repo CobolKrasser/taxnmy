@@ -1,0 +1,12 @@
+key: ibm/security-guardium-insights
+publisher: ibm
+name: IBM Security Guardium Insights
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:security_guardium
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-security-guardium-insights

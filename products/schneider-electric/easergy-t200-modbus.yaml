@@ -1,0 +1,8 @@
+key: schneider-electric/easergy-t200-modbus
+publisher: schneider-electric
+name: Easergy T200 (Modbus)
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,11 @@
+key: ncp/secure-enterprise-vpn-server
+publisher: ncp
+name: Secure Enterprise VPN Server
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ncp-e:secure_enterprise_vpn_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

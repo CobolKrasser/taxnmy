@@ -1,0 +1,18 @@
+key: red-hat/subscription-asset-manager-for-rhel-6-server
+publisher: red-hat
+name: Red Hat Subscription Asset Manager for RHEL 6 Server
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:rhel_sam:1.1
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:rhel_sam:1.2
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:rhel_sam:1.3
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:rhel_sam:1.4
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-subscription-asset-manager-for-rhel-6-server

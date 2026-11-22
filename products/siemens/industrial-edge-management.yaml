@@ -1,0 +1,11 @@
+key: siemens/industrial-edge-management
+publisher: siemens
+name: Industrial Edge Management
+kind: software
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:siemens:industrial_edge_management
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases: []

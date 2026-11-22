@@ -1,0 +1,12 @@
+key: emc/data-domain-os
+publisher: emc
+name: EMC Data Domain OS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:emc:data_domain_os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- emc/emc-data-domain-os

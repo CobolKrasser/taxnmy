@@ -1,0 +1,11 @@
+key: cisco/meeting-management
+publisher: cisco
+name: Meeting Management
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:meeting_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

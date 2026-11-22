@@ -1,0 +1,14 @@
+key: avm/fritz-box
+publisher: avm
+name: AVM FRITZ!Box
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:avm:fritzos
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:o:avm:fritz%21_os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- avm/avm-fritz-box

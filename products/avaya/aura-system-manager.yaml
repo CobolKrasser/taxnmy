@@ -1,0 +1,11 @@
+key: avaya/aura-system-manager
+publisher: avaya
+name: Aura System Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:avaya:aura_system_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

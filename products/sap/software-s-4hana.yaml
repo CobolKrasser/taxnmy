@@ -1,0 +1,12 @@
+key: sap/software-s-4hana
+publisher: sap
+name: SAP Software S/4HANA
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:sap
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-software-s-4hana

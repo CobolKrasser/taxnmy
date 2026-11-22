@@ -1,0 +1,11 @@
+key: abb/symphony-melody
+publisher: abb
+name: Symphony Melody
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:abb:symphony_melody
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

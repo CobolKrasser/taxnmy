@@ -1,0 +1,12 @@
+key: ibm/tivoli-network-manager
+publisher: ibm
+name: IBM Tivoli Network Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:tivoli_network_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-tivoli-network-manager

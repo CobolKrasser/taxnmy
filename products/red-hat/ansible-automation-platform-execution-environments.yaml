@@ -1,0 +1,11 @@
+key: red-hat/ansible-automation-platform-execution-environments
+publisher: red-hat
+name: Ansible Automation Platform Execution Environments
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:ansible_core
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

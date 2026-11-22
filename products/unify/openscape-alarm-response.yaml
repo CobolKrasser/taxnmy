@@ -1,0 +1,12 @@
+key: unify/openscape-alarm-response
+publisher: unify
+name: Unify OpenScape Alarm Response
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:unify:openscape_alarm_response
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- unify/unify-openscape-alarm-response

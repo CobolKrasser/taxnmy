@@ -1,0 +1,12 @@
+key: microsoft/sharepoint-foundation-sp1
+publisher: microsoft
+name: Microsoft SharePoint Foundation SP1
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:sharepoint_foundation_2013
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-sharepoint-foundation-sp1

@@ -1,0 +1,12 @@
+key: axis/os
+publisher: axis
+name: Axis OS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:axis:axis_os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- axis/axis-os

@@ -1,0 +1,11 @@
+key: oracle/retail-xstore-point-of-service
+publisher: oracle
+name: Retail Xstore Point of Service
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:retail_point-of-service
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

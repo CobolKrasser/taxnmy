@@ -1,0 +1,12 @@
+key: red-hat/mrg-messaging-for-rhel-6-server-v-3
+publisher: red-hat
+name: Red Hat MRG Messaging for RHEL 6 Server v.3
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:enterprise_mrg
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-mrg-messaging-for-rhel-6-server-v-3

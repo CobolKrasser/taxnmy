@@ -1,0 +1,12 @@
+key: cisco/prime-data-center-network-manager-dcnm
+publisher: cisco
+name: Cisco Prime Data Center Network Manager (DCNM)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:prime_data_center_network_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-prime-data-center-network-manager-dcnm

@@ -1,0 +1,12 @@
+key: cisco/unity-connection
+publisher: cisco
+name: Cisco Unity Connection
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:unity_connection
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-unity-connection

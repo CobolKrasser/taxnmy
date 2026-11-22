@@ -1,0 +1,12 @@
+key: sap/business-information-warehouse-bw
+publisher: sap
+name: SAP Business Information Warehouse (BW)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:business_information_warehouse
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-business-information-warehouse-bw

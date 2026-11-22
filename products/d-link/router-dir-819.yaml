@@ -1,0 +1,12 @@
+key: d-link/router-dir-819
+publisher: d-link
+name: D-LINK Router DIR 819
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:d-link:router
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- d-link/d-link-router-dir-819

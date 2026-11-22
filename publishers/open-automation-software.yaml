@@ -1,0 +1,8 @@
+key: open-automation-software
+name: Open Automation Software
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

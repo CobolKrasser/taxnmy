@@ -1,0 +1,12 @@
+key: cisco/small-business
+publisher: cisco
+name: Cisco Small Business
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:small_business
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-small-business

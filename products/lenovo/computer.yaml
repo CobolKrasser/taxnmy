@@ -1,0 +1,13 @@
+key: lenovo/computer
+publisher: lenovo
+name: Computer
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:lenovo:computer
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:o:lenovo:lenovo_computer
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

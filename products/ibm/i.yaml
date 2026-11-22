@@ -1,0 +1,12 @@
+key: ibm/i
+publisher: ibm
+name: IBM i
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:ibm:i
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-i

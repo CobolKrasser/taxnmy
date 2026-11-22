@@ -1,0 +1,11 @@
+key: stackable/opa
+publisher: stackable
+name: opa
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:oci/opa
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

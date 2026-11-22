@@ -1,4 +1,8 @@
 key: zkteco
 name: ZKTeco
 source: https://www.zkteco.com/en/ZKBioTime/ZKBioTime
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

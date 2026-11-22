@@ -1,0 +1,11 @@
+key: microsoft/asp-net
+publisher: microsoft
+name: ASP.NET
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:asp.net
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: extreme-networks/hiveos
+publisher: extreme-networks
+name: Extreme Networks HiveOS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:extremenetworks:hiveos
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- extreme-networks/extreme-networks-hiveos

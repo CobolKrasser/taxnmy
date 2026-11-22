@@ -1,0 +1,12 @@
+key: d-link/access-point-ap-dwl-2600ap
+publisher: d-link
+name: D-LINK Access Point (AP) DWL-2600AP
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:d-link:access_point
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- d-link/d-link-access-point-ap-dwl-2600ap

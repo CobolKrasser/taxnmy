@@ -1,0 +1,12 @@
+key: red-hat/insights-proxy
+publisher: red-hat
+name: Red Hat Insights proxy
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:insights_proxy
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-insights-proxy

@@ -1,0 +1,12 @@
+key: oracle/supply-chain
+publisher: oracle
+name: Oracle Supply Chain
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:supply_chain
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- oracle/oracle-supply-chain

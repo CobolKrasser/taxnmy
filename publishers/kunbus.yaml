@@ -1,0 +1,8 @@
+key: kunbus
+name: KUNBUS
+source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+aliases: []

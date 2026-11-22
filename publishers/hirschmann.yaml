@@ -1,0 +1,8 @@
+key: hirschmann
+name: Hirschmann
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: red-hat/hpc-solution-for-rhel-5-server
+publisher: red-hat
+name: Red Hat HPC Solution for RHEL 5 Server
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:hpc_solution
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-hpc-solution-for-rhel-5-server

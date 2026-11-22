@@ -1,0 +1,12 @@
+key: oracle/utilities-applications
+publisher: oracle
+name: Oracle Utilities Applications
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:utilities
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- oracle/oracle-utilities-applications

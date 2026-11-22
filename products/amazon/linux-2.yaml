@@ -1,0 +1,12 @@
+key: amazon/linux-2
+publisher: amazon
+name: Amazon Linux 2
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:amazon:linux_2
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- amazon/amazon-linux-2

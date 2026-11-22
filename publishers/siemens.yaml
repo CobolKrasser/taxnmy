@@ -1,4 +1,8 @@
 key: siemens
 name: Siemens
 source: https://www.siemens.com/de-ch/support/siemens-software-center/
+machine_sources:
+- url: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
 aliases: []

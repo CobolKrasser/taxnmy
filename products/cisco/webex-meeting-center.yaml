@@ -1,0 +1,12 @@
+key: cisco/webex-meeting-center
+publisher: cisco
+name: Cisco WebEx Meeting Center
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:webex_meeting_center
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-webex-meeting-center

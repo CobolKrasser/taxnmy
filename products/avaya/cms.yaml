@@ -1,0 +1,12 @@
+key: avaya/cms
+publisher: avaya
+name: Avaya CMS
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:avaya:call_management_system_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- avaya/avaya-cms

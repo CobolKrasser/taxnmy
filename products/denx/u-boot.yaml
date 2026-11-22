@@ -1,0 +1,12 @@
+key: denx/u-boot
+publisher: denx
+name: DENX U-Boot
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:denx:u-boot
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- denx/denx-u-boot

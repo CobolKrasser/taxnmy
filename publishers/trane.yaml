@@ -1,4 +1,8 @@
 key: trane
 name: Trane
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trane/TRACE3DPlus
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

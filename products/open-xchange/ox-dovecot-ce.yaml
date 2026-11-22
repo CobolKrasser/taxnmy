@@ -1,0 +1,11 @@
+key: open-xchange/ox-dovecot-ce
+publisher: open-xchange
+name: OX Dovecot CE
+kind: software
+source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:open-xchange:dovecot
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: netapp/storagegrid
+publisher: netapp
+name: NetApp StorageGRID
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:netapp:storagegrid
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- netapp/netapp-storagegrid

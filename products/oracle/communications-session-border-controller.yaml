@@ -1,0 +1,11 @@
+key: oracle/communications-session-border-controller
+publisher: oracle
+name: Communications Session Border Controller
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:communications_session_border_controller
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

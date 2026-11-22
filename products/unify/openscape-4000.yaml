@@ -1,0 +1,11 @@
+key: unify/openscape-4000
+publisher: unify
+name: OpenScape 4000
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:unify:openscape_4000
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

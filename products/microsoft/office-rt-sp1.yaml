@@ -1,0 +1,12 @@
+key: microsoft/office-rt-sp1
+publisher: microsoft
+name: Microsoft Office RT SP1
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:office_2013_rt
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-office-rt-sp1

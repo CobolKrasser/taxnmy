@@ -1,0 +1,12 @@
+key: ibm/maximo-asset-management
+publisher: ibm
+name: IBM Maximo Asset Management
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:maximo_asset_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-maximo-asset-management

@@ -1,0 +1,12 @@
+key: eset/nod32-antivirus
+publisher: eset
+name: ESET NOD32 Antivirus
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:eset:nod32
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- eset/eset-nod32-antivirus

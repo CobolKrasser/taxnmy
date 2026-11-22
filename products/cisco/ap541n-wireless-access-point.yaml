@@ -1,0 +1,12 @@
+key: cisco/ap541n-wireless-access-point
+publisher: cisco
+name: Cisco AP541N Wireless Access Point
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:ap541n_wireless_access_point
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-ap541n-wireless-access-point

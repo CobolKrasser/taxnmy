@@ -1,0 +1,11 @@
+key: huawei-software-technologies/huawei-ac6805
+publisher: huawei-software-technologies
+name: Huawei AC6805
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:huawei:ac6805_firmware
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

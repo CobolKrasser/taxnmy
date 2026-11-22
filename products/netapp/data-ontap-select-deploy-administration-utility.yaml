@@ -1,0 +1,12 @@
+key: netapp/data-ontap-select-deploy-administration-utility
+publisher: netapp
+name: NetApp Data ONTAP Select Deploy administration utility
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:netapp:data_ontap
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- netapp/netapp-data-ontap-select-deploy-administration-utility

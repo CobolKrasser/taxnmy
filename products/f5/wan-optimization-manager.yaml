@@ -1,0 +1,12 @@
+key: f5/wan-optimization-manager
+publisher: f5
+name: F5 WAN Optimization Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f5:big-ip_wan_optimization_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- f5/f5-wan-optimization-manager

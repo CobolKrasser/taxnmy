@@ -1,0 +1,11 @@
+key: proofpoint/insider-threat-management
+publisher: proofpoint
+name: Insider Threat Management
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:proofpoint:insider_threat_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,11 @@
+key: tanium/endpoint-management
+publisher: tanium
+name: Endpoint Management
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tanium:endpoint_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

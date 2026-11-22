@@ -1,0 +1,12 @@
+key: citrix/systems-citrix-gateway
+publisher: citrix
+name: Citrix Systems Citrix Gateway
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:citrix:gateway
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- citrix/citrix-systems-citrix-gateway

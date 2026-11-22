@@ -1,0 +1,11 @@
+key: smartbear-software/smartbear-soapui
+publisher: smartbear-software
+name: SmartBear SoapUI
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:smartbear:soapui
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

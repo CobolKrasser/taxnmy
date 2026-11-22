@@ -1,0 +1,12 @@
+key: hpe/loadrunner-software
+publisher: hpe
+name: HPE Loadrunner Software
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:hp:loadrunner
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hpe/hpe-loadrunner-software

@@ -1,0 +1,12 @@
+key: netscout/arbor-sightline
+publisher: netscout
+name: Netscout Arbor Sightline
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:netscout:arbor_sightline
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- netscout/netscout-arbor-sightline

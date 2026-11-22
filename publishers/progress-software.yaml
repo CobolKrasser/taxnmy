@@ -1,4 +1,8 @@
 key: progress-software
 name: Progress Software Corporation
 source: https://www.progress.com/network-monitoring
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

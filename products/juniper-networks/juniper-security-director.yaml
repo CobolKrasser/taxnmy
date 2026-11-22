@@ -1,0 +1,11 @@
+key: juniper-networks/juniper-security-director
+publisher: juniper-networks
+name: Juniper Security Director
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:juniper:security_director
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

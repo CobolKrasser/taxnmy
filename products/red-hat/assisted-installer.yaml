@@ -1,0 +1,12 @@
+key: red-hat/assisted-installer
+publisher: red-hat
+name: Red Hat Assisted Installer
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:assisted_installer
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-assisted-installer

@@ -1,0 +1,12 @@
+key: microsoft/sql-server-odbc-driver-cu5
+publisher: microsoft
+name: Microsoft SQL Server ODBC Driver CU5
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:sql_server_2022
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-sql-server-odbc-driver-cu5

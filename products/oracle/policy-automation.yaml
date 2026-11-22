@@ -1,0 +1,11 @@
+key: oracle/policy-automation
+publisher: oracle
+name: Policy Automation
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:policy_automation
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

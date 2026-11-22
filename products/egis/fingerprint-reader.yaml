@@ -1,0 +1,8 @@
+key: egis/fingerprint-reader
+publisher: egis
+name: Fingerprint Reader
+kind: device
+source: https://fwupd.org/lvfs/devices/com.egis.lenovo.moc.9201.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.egis.lenovo.moc.9201.firmware
+aliases: []

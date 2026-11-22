@@ -1,0 +1,12 @@
+key: oracle/vm-3-extended-lifecycle-support-els
+publisher: oracle
+name: Oracle VM 3 Extended Lifecycle Support (ELS)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:vm
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- oracle/oracle-vm-3-extended-lifecycle-support-els

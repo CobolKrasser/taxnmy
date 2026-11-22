@@ -1,4 +1,8 @@
 key: acronis-international
 name: Acronis International GmbH
 source: https://www.acronis.com/en/products/cyber-infrastructure/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

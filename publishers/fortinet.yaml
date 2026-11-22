@@ -1,4 +1,8 @@
 key: fortinet
 name: Fortinet
 source: https://www.fortinet.com/corporate/about-us/about-us
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

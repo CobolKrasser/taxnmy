@@ -1,0 +1,12 @@
+key: microsoft/azure-arc-enabled-servers
+publisher: microsoft
+name: Microsoft Azure Arc-Enabled Servers
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:azure
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-azure-arc-enabled-servers

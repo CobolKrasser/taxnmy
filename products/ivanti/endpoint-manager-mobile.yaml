@@ -1,0 +1,13 @@
+key: ivanti/endpoint-manager-mobile
+publisher: ivanti
+name: Endpoint Manager Mobile
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ivanti:endpoint_manager_mobile
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:ivanti:endpoint_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

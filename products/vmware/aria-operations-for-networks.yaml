@@ -1,0 +1,11 @@
+key: vmware/aria-operations-for-networks
+publisher: vmware
+name: Aria Operations for Networks
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:aria_operations_for_networks
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

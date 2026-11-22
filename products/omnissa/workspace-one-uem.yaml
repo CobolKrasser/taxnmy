@@ -1,0 +1,11 @@
+key: omnissa/workspace-one-uem
+publisher: omnissa
+name: Workspace ONE UEM
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:omnissa:workspace_one_uem
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

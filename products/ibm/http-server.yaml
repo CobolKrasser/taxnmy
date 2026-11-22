@@ -1,0 +1,11 @@
+key: ibm/http-server
+publisher: ibm
+name: HTTP Server
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:http_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

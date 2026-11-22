@@ -1,0 +1,12 @@
+key: vmware/vrealize-suite-lifecycle-manager
+publisher: vmware
+name: VMware vRealize Suite Lifecycle Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:vrealize_suite_lifecycle_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- vmware/vmware-vrealize-suite-lifecycle-manager

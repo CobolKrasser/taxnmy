@@ -1,0 +1,12 @@
+key: microsoft/visual-studio-update-3
+publisher: microsoft
+name: Microsoft Visual Studio Update 3
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:visual_studio_2015
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-visual-studio-update-3

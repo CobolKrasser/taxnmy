@@ -1,0 +1,12 @@
+key: amd/prozessor-epyc
+publisher: amd
+name: AMD Prozessor EPYC
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:amd:amd_processor
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- amd/amd-prozessor-epyc

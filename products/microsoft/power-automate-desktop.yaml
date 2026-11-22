@@ -1,0 +1,12 @@
+key: microsoft/power-automate-desktop
+publisher: microsoft
+name: Microsoft Power Automate Desktop
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:power_automate_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-power-automate-desktop

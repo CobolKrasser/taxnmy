@@ -1,0 +1,12 @@
+key: ibm/tivoli-netcool-omnibus
+publisher: ibm
+name: IBM Tivoli Netcool/OMNIbus
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:tivoli_netcool%2fomnibus
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-tivoli-netcool-omnibus

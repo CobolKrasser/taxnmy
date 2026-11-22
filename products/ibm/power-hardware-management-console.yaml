@@ -1,0 +1,12 @@
+key: ibm/power-hardware-management-console
+publisher: ibm
+name: IBM Power Hardware Management Console
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:hardware_management_console
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-power-hardware-management-console

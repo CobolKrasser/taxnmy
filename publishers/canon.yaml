@@ -1,4 +1,8 @@
 key: canon
 name: Canon
 source: https://sg.canon/en/support/0400852102
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

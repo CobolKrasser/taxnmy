@@ -1,0 +1,12 @@
+key: codesys/development-system
+publisher: codesys
+name: CODESYS Development System
+kind: software
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:codesys:development_system
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- codesys/codesys-development-system

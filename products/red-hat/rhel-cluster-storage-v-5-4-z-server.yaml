@@ -1,0 +1,11 @@
+key: red-hat/rhel-cluster-storage-v-5-4-z-server
+publisher: red-hat
+name: RHEL Cluster-Storage (v. 5.4.Z server)
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:rhel_cluster_storage
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

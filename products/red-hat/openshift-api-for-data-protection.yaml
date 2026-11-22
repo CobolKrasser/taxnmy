@@ -1,0 +1,11 @@
+key: red-hat/openshift-api-for-data-protection
+publisher: red-hat
+name: OpenShift API for Data Protection
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:openshift_api_data_protection
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

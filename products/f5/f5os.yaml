@@ -1,0 +1,12 @@
+key: f5/f5os
+publisher: f5
+name: F5 F5OS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:f5:f5os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- f5/f5-f5os

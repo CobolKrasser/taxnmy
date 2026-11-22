@@ -1,0 +1,11 @@
+key: tenable-security/nessus
+publisher: tenable-security
+name: Nessus
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tenable:nessus
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

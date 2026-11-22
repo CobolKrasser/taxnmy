@@ -1,0 +1,12 @@
+key: ibm/rational-application-developer-for-websphere-software
+publisher: ibm
+name: IBM Rational Application Developer for WebSphere Software
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:rational_application_developer_for_websphere_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-rational-application-developer-for-websphere-software

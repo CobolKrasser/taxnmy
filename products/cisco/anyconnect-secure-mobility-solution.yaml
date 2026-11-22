@@ -1,0 +1,11 @@
+key: cisco/anyconnect-secure-mobility-solution
+publisher: cisco
+name: AnyConnect Secure Mobility Solution
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:anyconnect_secure_mobility_client
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

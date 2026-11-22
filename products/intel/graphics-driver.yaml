@@ -1,0 +1,11 @@
+key: intel/graphics-driver
+publisher: intel
+name: Graphics Driver
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:intel:graphic_driver
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

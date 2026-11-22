@@ -1,0 +1,11 @@
+key: commons-io/commons-io
+publisher: commons-io
+name: commons-io
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:maven/commons-io/commons-io
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

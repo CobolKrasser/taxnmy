@@ -1,0 +1,11 @@
+key: ncp/secure-enterprise-management
+publisher: ncp
+name: Secure Enterprise Management
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ncp-e:secure_enterprise_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

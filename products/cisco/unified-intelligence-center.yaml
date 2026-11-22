@@ -1,0 +1,12 @@
+key: cisco/unified-intelligence-center
+publisher: cisco
+name: Cisco Unified Intelligence Center
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:unified_intelligence_center
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-unified-intelligence-center

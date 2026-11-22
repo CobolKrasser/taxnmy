@@ -1,0 +1,12 @@
+key: cisco/telepresence-system-ex-series
+publisher: cisco
+name: Cisco TelePresence System EX Series
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:telepresence_system_ex_series
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-telepresence-system-ex-series

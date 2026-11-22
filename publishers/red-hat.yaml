@@ -1,4 +1,11 @@
 key: red-hat
 name: Red Hat
 source: https://www.redhat.com/en/about/company
+machine_sources:
+- url: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+  format: csaf-provider
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- url: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
 aliases: []

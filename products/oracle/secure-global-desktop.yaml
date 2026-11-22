@@ -1,0 +1,11 @@
+key: oracle/secure-global-desktop
+publisher: oracle
+name: Secure Global Desktop
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:secure_global_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

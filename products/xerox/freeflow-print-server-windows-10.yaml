@@ -1,0 +1,12 @@
+key: xerox/freeflow-print-server-windows-10
+publisher: xerox
+name: Xerox FreeFlow Print Server / Windows 10
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:xerox:freeflow_print_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- xerox/xerox-freeflow-print-server-windows-10

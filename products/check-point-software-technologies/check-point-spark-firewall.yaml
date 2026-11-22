@@ -1,0 +1,11 @@
+key: check-point-software-technologies/check-point-spark-firewall
+publisher: check-point-software-technologies
+name: Check Point Spark Firewall
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:checkpoint:spark_firewall
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

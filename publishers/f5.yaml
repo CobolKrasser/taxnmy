@@ -1,4 +1,8 @@
 key: f5
 name: F5
 source: https://nginx.org/en/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

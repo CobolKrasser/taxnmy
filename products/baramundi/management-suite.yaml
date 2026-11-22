@@ -1,0 +1,12 @@
+key: baramundi/management-suite
+publisher: baramundi
+name: Baramundi Management Suite
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:baramundi:management_suite
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- baramundi/baramundi-management-suite

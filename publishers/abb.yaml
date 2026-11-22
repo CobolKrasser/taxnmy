@@ -1,4 +1,8 @@
 key: abb
 name: ABB
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/i-busTool
+machine_sources:
+- url: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
 aliases: []

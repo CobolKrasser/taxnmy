@@ -1,0 +1,12 @@
+key: red-hat/jboss-enterprise-application-platform-for-rhel-6-server
+publisher: red-hat
+name: Red Hat JBoss Enterprise Application Platform for RHEL 6 Server
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:jboss_enterprise_application_platform
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-jboss-enterprise-application-platform-for-rhel-6-server

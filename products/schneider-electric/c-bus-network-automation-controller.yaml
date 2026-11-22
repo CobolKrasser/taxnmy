@@ -1,0 +1,9 @@
+key: schneider-electric/c-bus-network-automation-controller
+publisher: schneider-electric
+name: Schneider Electric C-Bus Network Automation Controller
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases:
+- schneider-electric/schneider-electric-c-bus-network-automation-controller

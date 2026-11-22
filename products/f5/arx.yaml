@@ -1,0 +1,11 @@
+key: f5/arx
+publisher: f5
+name: ARX
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f5:arx
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

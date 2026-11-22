@@ -1,0 +1,11 @@
+key: oracle/communications-unified-inventory-management
+publisher: oracle
+name: communications_unified_inventory_management
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:communications_unified_inventory_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

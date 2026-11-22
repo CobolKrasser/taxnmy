@@ -1,0 +1,12 @@
+key: hpe/switch-aruba
+publisher: hpe
+name: HPE Switch Aruba
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:hp:switch
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hpe/hpe-switch-aruba

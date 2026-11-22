@@ -1,0 +1,12 @@
+key: typo3/extension-fluid-components
+publisher: typo3
+name: TYPO3 Extension Fluid Components
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:typo3:typo3_extension
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- typo3/typo3-extension-fluid-components

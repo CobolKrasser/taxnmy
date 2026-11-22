@@ -1,0 +1,11 @@
+key: huawei-software-technologies/huawei-imaster-nce-campus
+publisher: huawei-software-technologies
+name: Huawei iMaster NCE-Campus
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:huawei:imaster_nce-campus
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

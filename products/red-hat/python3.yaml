@@ -1,0 +1,11 @@
+key: red-hat/python3
+publisher: red-hat
+name: python3
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:rpm/redhat/python3
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

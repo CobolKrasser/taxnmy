@@ -1,0 +1,12 @@
+key: hpe/intelligent-management-center-imc
+publisher: hpe
+name: HPE Intelligent Management Center (IMC)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:hp:intelligent_management_center
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hpe/hpe-intelligent-management-center-imc

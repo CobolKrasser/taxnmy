@@ -1,0 +1,12 @@
+key: red-hat/openshift-application-runtimes-node-js-10
+publisher: red-hat
+name: Red Hat OpenShift Application Runtimes Node.js 10
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:openshift_application_runtimes
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-openshift-application-runtimes-node-js-10

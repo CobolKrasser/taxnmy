@@ -1,0 +1,12 @@
+key: lexmark/multifunction-printer
+publisher: lexmark
+name: Lexmark Multifunction Printer
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:lexmark:multifunction_printer
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- lexmark/lexmark-multifunction-printer

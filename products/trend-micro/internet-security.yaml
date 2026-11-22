@@ -1,0 +1,11 @@
+key: trend-micro/internet-security
+publisher: trend-micro
+name: Internet Security
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:trendmicro:internet_security
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

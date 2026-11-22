@@ -1,0 +1,11 @@
+key: veeam-software/management-pack-for-system-center
+publisher: veeam-software
+name: Management Pack for System Center
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:veeam:management_pack
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: xerox/freeflow-print-server-9
+publisher: xerox
+name: Xerox FreeFlow Print Server 9
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:xerox:freeflow_print_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- xerox/xerox-freeflow-print-server-9

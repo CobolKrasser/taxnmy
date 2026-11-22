@@ -1,0 +1,12 @@
+key: alcatel-lucent-enterprise/omniswitch
+publisher: alcatel-lucent-enterprise
+name: Alcatel Lucent Enterprise OmniSwitch
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:alcatel-lucent:omniswitch
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- alcatel-lucent-enterprise/alcatel-lucent-enterprise-omniswitch

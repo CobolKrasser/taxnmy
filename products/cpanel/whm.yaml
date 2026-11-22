@@ -1,0 +1,12 @@
+key: cpanel/whm
+publisher: cpanel
+name: cPanel/WHM
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cpanel:cpanel_whm
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cpanel/cpanel-whm

@@ -1,0 +1,12 @@
+key: vmware/carbon-black-cloud-workload
+publisher: vmware
+name: VMware Carbon Black Cloud Workload
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:carbon_black_cloud_workload
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- vmware/vmware-carbon-black-cloud-workload

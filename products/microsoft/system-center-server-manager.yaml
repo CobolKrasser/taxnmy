@@ -1,0 +1,12 @@
+key: microsoft/system-center-server-manager
+publisher: microsoft
+name: Microsoft System Center Server Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:system_center_2016_server_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-system-center-server-manager

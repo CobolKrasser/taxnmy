@@ -1,0 +1,11 @@
+key: siemens/simatic-wincc
+publisher: siemens
+name: SIMATIC WinCC
+kind: software
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:siemens:simatic_wincc
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases: []

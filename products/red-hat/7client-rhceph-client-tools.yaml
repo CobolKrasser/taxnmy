@@ -1,0 +1,11 @@
+key: red-hat/7client-rhceph-client-tools
+publisher: red-hat
+name: 7Client-RHCEPH- -Client-Tools
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:ceph_storage
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

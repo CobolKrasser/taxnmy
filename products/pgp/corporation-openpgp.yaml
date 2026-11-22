@@ -1,0 +1,12 @@
+key: pgp/corporation-openpgp
+publisher: pgp
+name: PGP Corporation OpenPGP
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:pgp:openpgp
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- pgp/pgp-corporation-openpgp

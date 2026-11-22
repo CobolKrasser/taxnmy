@@ -1,4 +1,8 @@
 key: konica-minolta
 name: Konica Minolta
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KonicaMinolta/UniversalPrinterDriverPCL6
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

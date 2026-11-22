@@ -1,0 +1,11 @@
+key: siemens/siprotec-4-7sj66
+publisher: siemens
+name: SIPROTEC 4 7SJ66
+kind: device
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:siemens:siprotec
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases: []

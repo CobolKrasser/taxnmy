@@ -1,0 +1,11 @@
+key: unify/openscape-desk-phone
+publisher: unify
+name: OpenScape Desk Phone
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:unify:openscape_deskphone
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

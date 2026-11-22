@@ -1,0 +1,12 @@
+key: f-secure/messaging-security-gateway
+publisher: f-secure
+name: F-Secure Messaging Security Gateway
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:f-secure:messaging_secure_gateway
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- f-secure/f-secure-messaging-security-gateway

@@ -1,4 +1,8 @@
 key: juniper-networks
 name: Juniper Networks
 source: https://www.juniper.net/support/eol/screenos_archive.html
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

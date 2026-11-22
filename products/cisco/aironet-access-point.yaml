@@ -1,0 +1,13 @@
+key: cisco/aironet-access-point
+publisher: cisco
+name: Aironet Access Point
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:cisco:aironet_access_point_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:h:cisco:aironet_3500
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

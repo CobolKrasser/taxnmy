@@ -1,0 +1,12 @@
+key: red-hat/wildfly
+publisher: red-hat
+name: Red Hat WildFly
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:wildfly
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-wildfly

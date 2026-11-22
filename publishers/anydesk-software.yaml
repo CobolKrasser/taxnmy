@@ -1,4 +1,8 @@
 key: anydesk-software
 name: AnyDesk Software GmbH
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyDesk/AnyDesk
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

@@ -1,0 +1,12 @@
+key: cisco/small-business-300-series-managed-switches
+publisher: cisco
+name: Cisco Small Business 300 Series Managed Switches
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:small_business_300_series_managed_switches
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-small-business-300-series-managed-switches

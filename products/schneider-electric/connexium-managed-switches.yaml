@@ -1,0 +1,8 @@
+key: schneider-electric/connexium-managed-switches
+publisher: schneider-electric
+name: Connexium Managed Switches
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,22 @@
+key: red-hat/openshift-workload-availability
+publisher: red-hat
+name: Red Hat OpenShift Workload Availability
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:workload_availability_nhc
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:workload_availability_snr
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:workload_availability_sbr
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:workload_availability_mdr
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:workload_availability_far
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:workload_availability_nmo
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-openshift-workload-availability

@@ -1,0 +1,11 @@
+key: microsoft/windows-vista-x64-edition-service-pack-2
+publisher: microsoft
+name: Windows Vista x64 Edition Service Pack 2
+kind: operating-system
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_vista
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

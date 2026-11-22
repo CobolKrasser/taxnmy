@@ -1,0 +1,11 @@
+key: rocket-software/remote-desktop
+publisher: rocket-software
+name: Remote Desktop
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:rocket:remote_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

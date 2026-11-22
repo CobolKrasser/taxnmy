@@ -1,0 +1,12 @@
+key: blackberry/blackberry-athoc-server
+publisher: blackberry
+name: BlackBerry BlackBerry AtHoc Server
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:blackberry:blackberry_os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- blackberry/blackberry-blackberry-athoc-server

@@ -1,0 +1,15 @@
+key: microsoft/excel
+publisher: microsoft
+name: Excel
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:excel
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:microsoft:excel_2013
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:microsoft:excel_2016
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,11 @@
+key: com-jcraft/jsch
+publisher: com-jcraft
+name: jsch
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:maven/com.jcraft/jsch
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

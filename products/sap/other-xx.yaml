@@ -1,0 +1,12 @@
+key: sap/other-xx
+publisher: sap
+name: SAP Other (XX)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:other
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-other-xx

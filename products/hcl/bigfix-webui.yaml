@@ -1,0 +1,12 @@
+key: hcl/bigfix-webui
+publisher: hcl
+name: HCL BigFix WebUI
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:hcltech:bigfix
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hcl/hcl-bigfix-webui

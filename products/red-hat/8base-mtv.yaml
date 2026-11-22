@@ -1,0 +1,11 @@
+key: red-hat/8base-mtv
+publisher: red-hat
+name: 8Base-MTV
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:migration_toolkit_virtualization
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

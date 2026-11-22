@@ -1,0 +1,11 @@
+key: red-hat/gnutls
+publisher: red-hat
+name: gnutls
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:rpm/redhat/gnutls
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: atlassian/fisheye
+publisher: atlassian
+name: Atlassian Fisheye
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:atlassian:fisheye
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- atlassian/atlassian-fisheye

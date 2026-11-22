@@ -1,0 +1,11 @@
+key: stackable/trino-operator
+publisher: stackable
+name: trino-operator
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:oci/trino-operator
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: nvidia/treiber
+publisher: nvidia
+name: Nvidia Treiber
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:nvidia:display_driver
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- nvidia/nvidia-treiber

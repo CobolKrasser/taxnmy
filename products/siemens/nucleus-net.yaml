@@ -1,0 +1,11 @@
+key: siemens/nucleus-net
+publisher: siemens
+name: Nucleus NET
+kind: software
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:siemens:nucleus_net
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases: []

@@ -1,4 +1,8 @@
 key: nginx
 name: nginx
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nginx/nginx-prometheus-exporter
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

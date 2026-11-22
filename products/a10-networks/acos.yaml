@@ -1,0 +1,11 @@
+key: a10-networks/acos
+publisher: a10-networks
+name: ACOS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:a10networks:advanced_core_operating_system
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

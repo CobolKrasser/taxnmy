@@ -1,0 +1,12 @@
+key: hp/designjet-taa-compliant
+publisher: hp
+name: HP DesignJet TAA compliant
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:hp:designjet
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hp/hp-designjet-taa-compliant

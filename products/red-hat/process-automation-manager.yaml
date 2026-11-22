@@ -1,0 +1,12 @@
+key: red-hat/process-automation-manager
+publisher: red-hat
+name: Red Hat Process Automation Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:process_automation_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-process-automation-manager

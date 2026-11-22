@@ -1,0 +1,11 @@
+key: red-hat/satellite-tools-v-7-7-tus-server
+publisher: red-hat
+name: Satellite Tools (v. 7.7.TUS Server)
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:rhel_satellite_tools
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

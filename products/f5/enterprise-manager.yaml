@@ -1,0 +1,11 @@
+key: f5/enterprise-manager
+publisher: f5
+name: Enterprise Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f5:enterprise_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

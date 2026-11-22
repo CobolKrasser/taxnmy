@@ -1,0 +1,11 @@
+key: eset/protect
+publisher: eset
+name: PROTECT
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:eset:protect
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

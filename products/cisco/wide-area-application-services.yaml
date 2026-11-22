@@ -1,0 +1,12 @@
+key: cisco/wide-area-application-services
+publisher: cisco
+name: Cisco Wide Area Application Services
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:wide_area_application_services
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-wide-area-application-services

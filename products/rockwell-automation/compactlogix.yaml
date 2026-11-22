@@ -1,0 +1,11 @@
+key: rockwell-automation/compactlogix
+publisher: rockwell-automation
+name: CompactLogix
+kind: operating-system
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:rockwellautomation:compactlogix
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

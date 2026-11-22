@@ -1,0 +1,11 @@
+key: ibm/websphere-mq
+publisher: ibm
+name: WebSphere MQ
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:websphere_mq
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

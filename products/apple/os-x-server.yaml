@@ -1,0 +1,12 @@
+key: apple/os-x-server
+publisher: apple
+name: Apple OS X Server
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:apple:os_x_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- apple/apple-os-x-server

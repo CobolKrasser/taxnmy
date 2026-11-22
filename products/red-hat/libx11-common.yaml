@@ -1,0 +1,11 @@
+key: red-hat/libx11-common
+publisher: red-hat
+name: libX11-common
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:rpm/redhat/libX11-common
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

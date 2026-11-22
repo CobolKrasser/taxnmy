@@ -1,0 +1,12 @@
+key: sap/cross-application-components-ca
+publisher: sap
+name: SAP Cross-Application Components (CA)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:cross_application_components
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-cross-application-components-ca

@@ -1,0 +1,12 @@
+key: cisco/unified-meetingplace-mp
+publisher: cisco
+name: Cisco Unified MeetingPlace (MP)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:unified_meetingplace
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-unified-meetingplace-mp

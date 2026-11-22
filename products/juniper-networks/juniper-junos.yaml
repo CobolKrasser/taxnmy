@@ -1,0 +1,11 @@
+key: juniper-networks/juniper-junos
+publisher: juniper-networks
+name: Juniper JUNOS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:juniper:junos
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

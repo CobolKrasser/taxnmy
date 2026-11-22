@@ -1,0 +1,12 @@
+key: cisco/secure-access-control-server-acs
+publisher: cisco
+name: Cisco Secure Access Control Server (ACS)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:secure_access_control_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-secure-access-control-server-acs

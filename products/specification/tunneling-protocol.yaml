@@ -1,0 +1,11 @@
+key: specification/tunneling-protocol
+publisher: specification
+name: Tunneling Protocol
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:specification:tunneling_protocol
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

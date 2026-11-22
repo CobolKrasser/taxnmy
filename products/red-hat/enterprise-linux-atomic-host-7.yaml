@@ -1,0 +1,12 @@
+key: red-hat/enterprise-linux-atomic-host-7
+publisher: red-hat
+name: Red Hat Enterprise Linux Atomic Host 7
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:rhel_atomic
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-enterprise-linux-atomic-host-7

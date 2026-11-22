@@ -1,0 +1,11 @@
+key: ibm/content-manager
+publisher: ibm
+name: Content Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:content_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

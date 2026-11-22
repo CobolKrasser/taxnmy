@@ -1,4 +1,8 @@
 key: watchguard-technologies
 name: WatchGuard Technologies
 source: https://www.watchguard.com/wgrd-products/firewall-appliances
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

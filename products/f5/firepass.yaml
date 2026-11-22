@@ -1,0 +1,12 @@
+key: f5/firepass
+publisher: f5
+name: F5 FirePass
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f5:firepass
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- f5/f5-firepass

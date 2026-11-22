@@ -1,0 +1,11 @@
+key: red-hat/network-observability-netobserv
+publisher: red-hat
+name: Network Observability (NETOBSERV)
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:network_observ_optr
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

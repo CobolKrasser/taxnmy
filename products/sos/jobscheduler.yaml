@@ -1,0 +1,11 @@
+key: sos/jobscheduler
+publisher: sos
+name: JobScheduler
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sos_gmbh:jobscheduler
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

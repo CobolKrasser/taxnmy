@@ -1,0 +1,12 @@
+key: seppmail/secure-e-mail-gateway
+publisher: seppmail
+name: SEPPmail Secure E-Mail Gateway
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:seppmail:secure_e-mail_gateway
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- seppmail/seppmail-secure-e-mail-gateway

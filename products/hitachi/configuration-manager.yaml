@@ -1,0 +1,11 @@
+key: hitachi/configuration-manager
+publisher: hitachi
+name: Configuration Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:hitachi:configuration_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

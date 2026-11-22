@@ -1,0 +1,12 @@
+key: apache/traffic-server
+publisher: apache
+name: Apache Traffic Server
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:apache:traffic_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- apache/apache-traffic-server

@@ -1,0 +1,12 @@
+key: cisco/unified-intelligent-contact-management-enterprise
+publisher: cisco
+name: Cisco Unified Intelligent Contact Management Enterprise
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:unified_intelligent_contact_management_enterprise
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-unified-intelligent-contact-management-enterprise

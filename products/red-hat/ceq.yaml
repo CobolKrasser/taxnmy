@@ -1,0 +1,11 @@
+key: red-hat/ceq
+publisher: red-hat
+name: CEQ
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:apache_camel_quarkus
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

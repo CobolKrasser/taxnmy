@@ -1,0 +1,8 @@
+key: nozomi-networks
+name: Nozomi Networks
+source: https://csaf.data.security.nozominetworks.com/provider-metadata.json
+machine_sources:
+- url: https://csaf.data.security.nozominetworks.com/provider-metadata.json
+  format: csaf-provider
+  source: https://csaf.data.security.nozominetworks.com/provider-metadata.json
+aliases: []

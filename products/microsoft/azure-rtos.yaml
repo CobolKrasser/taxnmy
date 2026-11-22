@@ -1,0 +1,11 @@
+key: microsoft/azure-rtos
+publisher: microsoft
+name: Azure RTOS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:microsoft:azure_rtos
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []
