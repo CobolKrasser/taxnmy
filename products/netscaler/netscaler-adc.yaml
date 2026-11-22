@@ -1,0 +1,9 @@
+key: netscaler/netscaler-adc
+publisher: netscaler
+name: NetScaler ADC
+kind: device
+source: https://docs.netscaler.com/en-us/citrix-adc/current-release.html
+versions:
+  source: https://docs.netscaler.com/en-us/citrix-adc/current-release/citrix-adc-release-notes.html
+aliases:
+- netscaler/netscaler-gateway
