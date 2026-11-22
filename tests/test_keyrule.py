@@ -86,6 +86,9 @@ class RuleTest(unittest.TestCase):
         self.assertEqual(keyrule.long_form("acme/widget", "Acme Widget"), "acme/acme-widget")
         self.assertIsNone(keyrule.long_form("acme/widget", "Widget"))
         self.assertIsNone(keyrule.long_form("acme/acme", "Acme"))
+        name = "Acme " + "word " * 13  # 69 characters with the publisher, 64 without
+        self.assertEqual(len(keyrule.product_part(name, "acme")), 64)
+        self.assertIsNone(keyrule.long_form(keyrule.make_key("Acme", name), name), "a long form over 64 is no alias")
 
     def test_key_form(self):
         self.assertTrue(keyrule.key_problems("Synology/DS224+"))
