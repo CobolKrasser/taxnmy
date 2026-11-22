@@ -65,6 +65,7 @@ LIST = ROOT / "referee/csaf.yaml"
 KIND = {"h": "device", "o": "operating-system", "a": "software"}
 ORDER = ("device", "operating-system", "software")
 FORMAT = "csaf-provider"
+FEED_BYTES = 200_000_000  # a ROLIE feed with 15,000 entries is about 35 MB
 IDENTIFIER_ERROR = re.compile(r"^identifiers/(\d+)/")
 
 
@@ -525,6 +526,7 @@ def fetch(dump: Path, data: dict | None = None, fetcher=None, log=print) -> Coun
     honest User-Agent, robots.txt, one request per second per site. A refusal is written down and not
     tried again (criterion 10). Advisories already in the dump are not fetched again."""
     import fetch as fetching
+    fetching.MAX_BYTES = max(fetching.MAX_BYTES, FEED_BYTES)  # a ROLIE feed of a coordinator is larger than a page
     data = data or load_list()
     f = fetcher or fetching.Fetcher(use_browser=False, timeout=60)
     dump.mkdir(parents=True, exist_ok=True)
