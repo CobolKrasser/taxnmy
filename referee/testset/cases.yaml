@@ -65,9 +65,9 @@ cases:
 - id: G08
   type: holdout-device
   expect: [parked]
-  lint: pass
+  lint: signal
   holdout: [products/google/pixel-8.yaml]
-  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product source now redirects to the shop page of a refurbished device, another product, so the expected answer is parked (waiting for a better proposal).
+  note: Since TAX-38 (19 November 2026) a source that redirects to another address is doubt. Here its product source now redirects to the shop page of a refurbished device, another product, so the expected answer is parked (waiting for a better proposal). Since TAX-57 the lint gives a TV3 signal, because google/pixel-6 looks like google/pixel-8.
 - id: G09
   type: holdout-device
   expect: [accept]
@@ -741,6 +741,12 @@ cases:
   expect: [reject]
   rules: [TP5, TP1]
   lint: pass
+  context:
+    publishers/amazon.yaml: |
+      key: amazon
+      name: Amazon
+      source: https://endoflife.date/kindle
+      aliases: []
   proposal:
     publishers/amazon.yaml: |
       key: amazon
