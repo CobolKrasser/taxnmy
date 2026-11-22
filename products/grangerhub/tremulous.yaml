@@ -1,0 +1,11 @@
+key: grangerhub/tremulous
+publisher: grangerhub
+name: Tremulous
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrangerHub/Tremulous
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrangerHub/Tremulous
+identifiers:
+- winget: GrangerHub.Tremulous
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrangerHub/Tremulous
+aliases: []

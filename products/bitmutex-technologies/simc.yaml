@@ -1,0 +1,11 @@
+key: bitmutex-technologies/simc
+publisher: bitmutex-technologies
+name: simc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitmutex/Simc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitmutex/Simc
+identifiers:
+- winget: Bitmutex.Simc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitmutex/Simc
+aliases: []

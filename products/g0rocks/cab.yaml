@@ -1,0 +1,11 @@
+key: g0rocks/cab
+publisher: g0rocks
+name: Cab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/G0rocks/Cab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/G0rocks/Cab
+identifiers:
+- winget: G0rocks.Cab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/G0rocks/Cab
+aliases: []

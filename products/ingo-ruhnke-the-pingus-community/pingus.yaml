@@ -1,0 +1,11 @@
+key: ingo-ruhnke-the-pingus-community/pingus
+publisher: ingo-ruhnke-the-pingus-community
+name: Pingus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IngoRuhnke/Pingus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IngoRuhnke/Pingus
+identifiers:
+- winget: IngoRuhnke.Pingus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IngoRuhnke/Pingus
+aliases: []

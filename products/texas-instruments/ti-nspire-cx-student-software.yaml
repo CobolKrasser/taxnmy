@@ -1,0 +1,11 @@
+key: texas-instruments/ti-nspire-cx-student-software
+publisher: texas-instruments
+name: TI-Nspire CX Student Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Nspire/CXStudent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Nspire/CXStudent
+identifiers:
+- winget: TexasInstruments.TI-Nspire.CXStudent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Nspire/CXStudent
+aliases: []

@@ -1,0 +1,11 @@
+key: btbn/ffmpeg-gpl-static-variant-master-branch
+publisher: btbn
+name: FFmpeg (GPL static variant, master branch)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/GPL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/GPL
+identifiers:
+- winget: BtbN.FFmpeg.GPL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BtbN/FFmpeg/GPL
+aliases: []

@@ -1,0 +1,11 @@
+key: pastebar-app/pastebar
+publisher: pastebar-app
+name: PasteBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteBar/PasteBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteBar/PasteBar
+identifiers:
+- winget: PasteBar.PasteBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteBar/PasteBar
+aliases: []

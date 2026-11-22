@@ -1,0 +1,11 @@
+key: mino/mytoolapp-setup
+publisher: mino
+name: MyToolApp Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mino/MyToolAppSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mino/MyToolAppSetup
+identifiers:
+- winget: Mino.MyToolAppSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mino/MyToolAppSetup
+aliases: []

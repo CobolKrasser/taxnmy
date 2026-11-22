@@ -1,0 +1,11 @@
+key: azion-technologies/azion-cli
+publisher: azion-technologies
+name: Azion CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aziontech/azion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aziontech/azion
+identifiers:
+- winget: aziontech.azion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aziontech/azion
+aliases: []

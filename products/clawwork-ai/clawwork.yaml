@@ -1,0 +1,11 @@
+key: clawwork-ai/clawwork
+publisher: clawwork-ai
+name: ClawWork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClawWork/ClawWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClawWork/ClawWork
+identifiers:
+- winget: ClawWork.ClawWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClawWork/ClawWork
+aliases: []

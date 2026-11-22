@@ -1,0 +1,11 @@
+key: cometnetwork/bitcomet
+publisher: cometnetwork
+name: BitComet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CometNetwork/BitComet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CometNetwork/BitComet
+identifiers:
+- winget: CometNetwork.BitComet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CometNetwork/BitComet
+aliases: []

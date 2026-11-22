@@ -1,0 +1,11 @@
+key: kubescape/kubescape
+publisher: kubescape
+name: kubescape
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubescape/kubescape
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubescape/kubescape
+identifiers:
+- winget: kubescape.kubescape
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubescape/kubescape
+aliases: []

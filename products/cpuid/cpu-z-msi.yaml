@@ -1,0 +1,12 @@
+key: cpuid/cpu-z-msi
+publisher: cpuid
+name: CPUID CPU-Z MSI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/MSI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/MSI
+identifiers:
+- winget: CPUID.CPU-Z.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/MSI
+aliases:
+- cpuid/cpuid-cpu-z-msi

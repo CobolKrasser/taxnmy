@@ -1,0 +1,11 @@
+key: timeware-uk/timeware-biostar-agent
+publisher: timeware-uk
+name: timeware Biostar Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timeware/BiostarAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timeware/BiostarAgent
+identifiers:
+- winget: timeware.BiostarAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timeware/BiostarAgent
+aliases: []

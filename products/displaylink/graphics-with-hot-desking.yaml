@@ -1,0 +1,12 @@
+key: displaylink/graphics-with-hot-desking
+publisher: displaylink
+name: DisplayLink Graphics (with Hot Desking)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayLink/GraphicsDriver/HotDesking
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayLink/GraphicsDriver/HotDesking
+identifiers:
+- winget: DisplayLink.GraphicsDriver.HotDesking
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayLink/GraphicsDriver/HotDesking
+aliases:
+- displaylink/displaylink-graphics-with-hot-desking

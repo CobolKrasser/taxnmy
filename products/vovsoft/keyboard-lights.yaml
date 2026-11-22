@@ -1,0 +1,12 @@
+key: vovsoft/keyboard-lights
+publisher: vovsoft
+name: Vovsoft Keyboard Lights
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeyboardLights
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeyboardLights
+identifiers:
+- winget: VovSoft.KeyboardLights
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeyboardLights
+aliases:
+- vovsoft/vovsoft-keyboard-lights

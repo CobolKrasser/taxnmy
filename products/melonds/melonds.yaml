@@ -1,0 +1,11 @@
+key: melonds/melonds
+publisher: melonds
+name: melonDS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/melonDS/melonDS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/melonDS/melonDS
+identifiers:
+- winget: melonDS.melonDS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/melonDS/melonDS
+aliases: []

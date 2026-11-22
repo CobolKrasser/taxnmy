@@ -1,0 +1,11 @@
+key: chillblast/cryo-slate-keyboard
+publisher: chillblast
+name: Cryo Slate Keyboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chillblast/CryoSlate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chillblast/CryoSlate
+identifiers:
+- winget: Chillblast.CryoSlate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chillblast/CryoSlate
+aliases: []

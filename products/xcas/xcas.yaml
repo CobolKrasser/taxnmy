@@ -1,0 +1,13 @@
+key: xcas/xcas
+publisher: xcas
+name: Xcas
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcas/Xcas
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcas/Xcas
+identifiers:
+- winget: Xcas.Xcas
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcas/Xcas
+- winget: Xcas.Xcas.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcas/Xcas/MinGW
+aliases: []

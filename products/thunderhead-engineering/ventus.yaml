@@ -1,0 +1,15 @@
+key: thunderhead-engineering/ventus
+publisher: thunderhead-engineering
+name: Ventus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Ventus/2024
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Ventus/2024
+identifiers:
+- winget: Thunderhead.Ventus.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Ventus/2024
+- winget: Thunderhead.Ventus.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Ventus/2025
+- winget: Thunderhead.Ventus.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/Ventus/2026
+aliases: []

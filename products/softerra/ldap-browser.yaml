@@ -1,0 +1,12 @@
+key: softerra/ldap-browser
+publisher: softerra
+name: Softerra LDAP Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPBrowser
+identifiers:
+- winget: Softerra.LDAPBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Softerra/LDAPBrowser
+aliases:
+- softerra/softerra-ldap-browser

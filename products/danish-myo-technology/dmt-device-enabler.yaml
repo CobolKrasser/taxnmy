@@ -1,0 +1,11 @@
+key: danish-myo-technology/dmt-device-enabler
+publisher: danish-myo-technology
+name: DMT Device Enabler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/DMTDeviceEnabler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/DMTDeviceEnabler
+identifiers:
+- winget: DMT.DMTDeviceEnabler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/DMTDeviceEnabler
+aliases: []

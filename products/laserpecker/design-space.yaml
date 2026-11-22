@@ -1,0 +1,12 @@
+key: laserpecker/design-space
+publisher: laserpecker
+name: LaserPecker Design Space
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LaserPecker/LaserPeckerDesignSpace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LaserPecker/LaserPeckerDesignSpace
+identifiers:
+- winget: LaserPecker.LaserPeckerDesignSpace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LaserPecker/LaserPeckerDesignSpace
+aliases:
+- laserpecker/laserpecker-design-space

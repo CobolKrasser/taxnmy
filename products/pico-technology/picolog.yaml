@@ -1,0 +1,11 @@
+key: pico-technology/picolog
+publisher: pico-technology
+name: PicoLog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicoTechnology/PicoLog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicoTechnology/PicoLog
+identifiers:
+- winget: PicoTechnology.PicoLog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicoTechnology/PicoLog
+aliases: []

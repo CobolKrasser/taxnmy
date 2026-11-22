@@ -1,0 +1,13 @@
+key: qiazo/picguard
+publisher: qiazo
+name: PicGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insco/PicGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insco/PicGuard
+identifiers:
+- winget: Insco.PicGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insco/PicGuard
+- winget: PicGuard.PicGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGuard/PicGuard
+aliases: []

@@ -1,0 +1,11 @@
+key: rii7/alarm
+publisher: rii7
+name: Alarm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/Alarm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/Alarm
+identifiers:
+- winget: RII7.Alarm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RII7/Alarm
+aliases: []

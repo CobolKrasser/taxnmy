@@ -1,0 +1,11 @@
+key: arndawg/tmux-windows
+publisher: arndawg
+name: tmux-windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arndawg/tmux-windows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arndawg/tmux-windows
+identifiers:
+- winget: arndawg.tmux-windows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arndawg/tmux-windows
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/powertoys
+publisher: microsoft
+name: PowerToys
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerToys
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerToys
+identifiers:
+- winget: Microsoft.PowerToys
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerToys
+aliases: []

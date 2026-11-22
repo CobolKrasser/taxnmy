@@ -1,0 +1,11 @@
+key: microsoft/azure-batch-explorer
+publisher: microsoft
+name: Azure Batch Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/BatchExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/BatchExplorer
+identifiers:
+- winget: Microsoft.Azure.BatchExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/BatchExplorer
+aliases: []

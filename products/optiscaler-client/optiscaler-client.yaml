@@ -1,0 +1,11 @@
+key: optiscaler-client/optiscaler-client
+publisher: optiscaler-client
+name: Optiscaler Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agustinm28/OptiscalerClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agustinm28/OptiscalerClient
+identifiers:
+- winget: Agustinm28.OptiscalerClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agustinm28/OptiscalerClient
+aliases: []

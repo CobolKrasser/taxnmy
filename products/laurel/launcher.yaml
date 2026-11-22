@@ -1,0 +1,12 @@
+key: laurel/launcher
+publisher: laurel
+name: Laurel Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Laurel/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Laurel/Launcher
+identifiers:
+- winget: Laurel.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Laurel/Launcher
+aliases:
+- laurel/laurel-launcher

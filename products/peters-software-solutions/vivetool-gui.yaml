@@ -1,0 +1,11 @@
+key: peters-software-solutions/vivetool-gui
+publisher: peters-software-solutions
+name: ViVeTool GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterStrick/ViVeTool-GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterStrick/ViVeTool-GUI
+identifiers:
+- winget: PeterStrick.ViVeTool-GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterStrick/ViVeTool-GUI
+aliases: []

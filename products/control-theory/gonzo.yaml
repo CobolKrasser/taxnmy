@@ -1,0 +1,11 @@
+key: control-theory/gonzo
+publisher: control-theory
+name: Gonzo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/control-theory/gonzo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/control-theory/gonzo
+identifiers:
+- winget: control-theory.gonzo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/control-theory/gonzo
+aliases: []

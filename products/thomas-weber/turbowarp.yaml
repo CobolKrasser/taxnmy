@@ -1,0 +1,11 @@
+key: thomas-weber/turbowarp
+publisher: thomas-weber
+name: TurboWarp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GarboMuffin/TurboWarp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GarboMuffin/TurboWarp
+identifiers:
+- winget: GarboMuffin.TurboWarp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GarboMuffin/TurboWarp
+aliases: []

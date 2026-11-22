@@ -1,0 +1,11 @@
+key: eigent-ai/eigent
+publisher: eigent-ai
+name: Eigent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eigent/Eigent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eigent/Eigent
+identifiers:
+- winget: Eigent.Eigent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eigent/Eigent
+aliases: []

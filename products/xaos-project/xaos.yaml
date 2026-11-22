@@ -1,0 +1,11 @@
+key: xaos-project/xaos
+publisher: xaos-project
+name: XaoS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XaoSProject/XaoS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XaoSProject/XaoS
+identifiers:
+- winget: XaoSProject.XaoS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XaoSProject/XaoS
+aliases: []

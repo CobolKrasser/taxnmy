@@ -1,0 +1,11 @@
+key: gold872/elastic
+publisher: gold872
+name: Elastic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gold872/Elastic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gold872/Elastic
+identifiers:
+- winget: Gold872.Elastic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gold872/Elastic
+aliases: []

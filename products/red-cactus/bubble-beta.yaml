@@ -1,0 +1,11 @@
+key: red-cactus/bubble-beta
+publisher: red-cactus
+name: Bubble Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCactus/BubbleBeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCactus/BubbleBeta
+identifiers:
+- winget: RedCactus.BubbleBeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCactus/BubbleBeta
+aliases: []

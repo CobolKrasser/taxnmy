@@ -1,0 +1,12 @@
+key: hhd-software/virtual-serial-port-tools
+publisher: hhd-software
+name: HHD Software Virtual Serial Port Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/VirtualSerialPortTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/VirtualSerialPortTools
+identifiers:
+- winget: HHDSoftware.VirtualSerialPortTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/VirtualSerialPortTools
+aliases:
+- hhd-software/hhd-software-virtual-serial-port-tools

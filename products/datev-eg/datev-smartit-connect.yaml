@@ -1,0 +1,11 @@
+key: datev-eg/datev-smartit-connect
+publisher: datev-eg
+name: DATEV-SmartIT Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DATEV/SmartITConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DATEV/SmartITConnect
+identifiers:
+- winget: DATEV.SmartITConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DATEV/SmartITConnect
+aliases: []

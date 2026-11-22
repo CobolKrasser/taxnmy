@@ -1,0 +1,11 @@
+key: leen-hawk/gproxy-cli
+publisher: leen-hawk
+name: GPROXY CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeenHawk/GPROXY/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeenHawk/GPROXY/CLI
+identifiers:
+- winget: LeenHawk.GPROXY.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeenHawk/GPROXY/CLI
+aliases: []

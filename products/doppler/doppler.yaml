@@ -1,0 +1,11 @@
+key: doppler/doppler
+publisher: doppler
+name: doppler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doppler/doppler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doppler/doppler
+identifiers:
+- winget: Doppler.doppler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doppler/doppler
+aliases: []

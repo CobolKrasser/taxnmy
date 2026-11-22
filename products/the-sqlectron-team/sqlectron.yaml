@@ -1,0 +1,11 @@
+key: the-sqlectron-team/sqlectron
+publisher: the-sqlectron-team
+name: sqlectron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sqlectron/sqlectron-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sqlectron/sqlectron-gui
+identifiers:
+- winget: sqlectron.sqlectron-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sqlectron/sqlectron-gui
+aliases: []

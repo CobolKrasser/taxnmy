@@ -1,0 +1,11 @@
+key: honor-device/honorsuite
+publisher: honor-device
+name: HonorSuite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Honor/HonorSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Honor/HonorSuite
+identifiers:
+- winget: Honor.HonorSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Honor/HonorSuite
+aliases: []

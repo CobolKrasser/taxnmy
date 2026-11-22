@@ -1,0 +1,11 @@
+key: airsquared/blobsaver
+publisher: airsquared
+name: blobsaver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airsquared/Blobsaver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airsquared/Blobsaver
+identifiers:
+- winget: Airsquared.Blobsaver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airsquared/Blobsaver
+aliases: []

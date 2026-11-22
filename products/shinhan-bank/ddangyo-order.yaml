@@ -1,0 +1,11 @@
+key: shinhan-bank/ddangyo-order
+publisher: shinhan-bank
+name: Ddangyo Order
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SinhanBank/DdangyoOrder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SinhanBank/DdangyoOrder
+identifiers:
+- winget: SinhanBank.DdangyoOrder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SinhanBank/DdangyoOrder
+aliases: []

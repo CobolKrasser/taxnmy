@@ -1,0 +1,11 @@
+key: ninja-build/ninja
+publisher: ninja-build
+name: ninja
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Ninja-build/Ninja
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Ninja-build/Ninja
+identifiers:
+- winget: Ninja-build.Ninja
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Ninja-build/Ninja
+aliases: []

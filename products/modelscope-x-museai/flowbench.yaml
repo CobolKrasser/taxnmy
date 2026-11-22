@@ -1,0 +1,11 @@
+key: modelscope-x-museai/flowbench
+publisher: modelscope-x-museai
+name: FlowBench
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModelScope/FlowBench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModelScope/FlowBench
+identifiers:
+- winget: ModelScope.FlowBench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModelScope/FlowBench
+aliases: []

@@ -1,0 +1,11 @@
+key: garmin-ltd-or-its-subsidiaries/garmin-basecamp
+publisher: garmin-ltd-or-its-subsidiaries
+name: Garmin BaseCamp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Garmin/BaseCamp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Garmin/BaseCamp
+identifiers:
+- winget: Garmin.BaseCamp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Garmin/BaseCamp
+aliases: []

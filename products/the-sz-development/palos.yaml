@@ -1,0 +1,11 @@
+key: the-sz-development/palos
+publisher: the-sz-development
+name: Palos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Palos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Palos
+identifiers:
+- winget: the-sz.Palos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Palos
+aliases: []

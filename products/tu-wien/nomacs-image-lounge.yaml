@@ -1,0 +1,13 @@
+key: tu-wien/nomacs-image-lounge
+publisher: tu-wien
+name: nomacs - Image Lounge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomacs/nomacs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomacs/nomacs
+identifiers:
+- winget: nomacs.nomacs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomacs/nomacs
+- winget: nomacs.nomacs.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nomacs/nomacs/Beta
+aliases: []

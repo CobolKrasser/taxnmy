@@ -1,0 +1,11 @@
+key: brutal-chess-team/brutal-chess
+publisher: brutal-chess-team
+name: Brutal Chess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrutalChess/BrutalChess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrutalChess/BrutalChess
+identifiers:
+- winget: BrutalChess.BrutalChess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrutalChess/BrutalChess
+aliases: []

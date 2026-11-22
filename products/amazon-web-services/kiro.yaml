@@ -1,0 +1,11 @@
+key: amazon-web-services/kiro
+publisher: amazon-web-services
+name: Kiro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Kiro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Kiro
+identifiers:
+- winget: Amazon.Kiro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Kiro
+aliases: []

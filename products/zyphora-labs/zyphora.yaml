@@ -1,0 +1,11 @@
+key: zyphora-labs/zyphora
+publisher: zyphora-labs
+name: Zyphora
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zyphora/Zyphora
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zyphora/Zyphora
+identifiers:
+- winget: Zyphora.Zyphora
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zyphora/Zyphora
+aliases: []

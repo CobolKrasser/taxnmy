@@ -1,0 +1,11 @@
+key: os-labs/reactype
+publisher: os-labs
+name: ReacType
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/open-source-labs/ReacType
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/open-source-labs/ReacType
+identifiers:
+- winget: open-source-labs.ReacType
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/open-source-labs/ReacType
+aliases: []

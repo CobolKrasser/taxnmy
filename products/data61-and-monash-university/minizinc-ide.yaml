@@ -1,0 +1,11 @@
+key: data61-and-monash-university/minizinc-ide
+publisher: data61-and-monash-university
+name: MiniZinc IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniZinc/MiniZincIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniZinc/MiniZincIDE
+identifiers:
+- winget: MiniZinc.MiniZincIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniZinc/MiniZincIDE
+aliases: []

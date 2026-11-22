@@ -1,0 +1,12 @@
+key: movavi/powerpoint-to-video-converter
+publisher: movavi
+name: Movavi PowerPoint To Video Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPowerPointToVideoConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPowerPointToVideoConverter
+identifiers:
+- winget: Movavi.MovaviPowerPointToVideoConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviPowerPointToVideoConverter
+aliases:
+- movavi/movavi-powerpoint-to-video-converter

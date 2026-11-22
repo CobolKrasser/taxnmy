@@ -1,0 +1,11 @@
+key: eran-ifrah/codelite
+publisher: eran-ifrah
+name: CodeLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLite/CodeLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLite/CodeLite
+identifiers:
+- winget: CodeLite.CodeLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLite/CodeLite
+aliases: []

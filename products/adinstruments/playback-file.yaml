@@ -1,0 +1,12 @@
+key: adinstruments/playback-file
+publisher: adinstruments
+name: ADInstruments Playback File
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/PlaybackFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/PlaybackFile
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.PlaybackFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/PlaybackFile
+aliases:
+- adinstruments/adinstruments-playback-file

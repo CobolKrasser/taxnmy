@@ -1,0 +1,13 @@
+key: blueberry-software/flashback-express
+publisher: blueberry-software
+name: Flashback Express
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackExpress/6
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackExpress/6
+identifiers:
+- winget: Blueberry.FlashbackExpress.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackExpress/6
+- winget: Blueberry.FlashbackExpress.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackExpress/7
+aliases: []

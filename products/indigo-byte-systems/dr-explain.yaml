@@ -1,0 +1,11 @@
+key: indigo-byte-systems/dr-explain
+publisher: indigo-byte-systems
+name: Dr.Explain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IndigoByte/DrExplain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IndigoByte/DrExplain
+identifiers:
+- winget: IndigoByte.DrExplain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IndigoByte/DrExplain
+aliases: []

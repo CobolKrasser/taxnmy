@@ -1,0 +1,11 @@
+key: softplan-sistemas/web-signer
+publisher: softplan-sistemas
+name: Web Signer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftplanSistemas/WebSigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftplanSistemas/WebSigner
+identifiers:
+- winget: SoftplanSistemas.WebSigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftplanSistemas/WebSigner
+aliases: []

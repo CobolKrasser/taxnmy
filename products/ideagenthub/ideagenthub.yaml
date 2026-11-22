@@ -1,0 +1,11 @@
+key: ideagenthub/ideagenthub
+publisher: ideagenthub
+name: IDEAgentHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDEAgentHub/AgentHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDEAgentHub/AgentHub
+identifiers:
+- winget: IDEAgentHub.AgentHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDEAgentHub/AgentHub
+aliases: []

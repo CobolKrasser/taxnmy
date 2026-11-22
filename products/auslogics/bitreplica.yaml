@@ -1,0 +1,12 @@
+key: auslogics/bitreplica
+publisher: auslogics
+name: Auslogics BitReplica
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/BitReplica
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/BitReplica
+identifiers:
+- winget: Auslogics.BitReplica
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/BitReplica
+aliases:
+- auslogics/auslogics-bitreplica

@@ -1,0 +1,12 @@
+key: adinstruments/ecg-analysis
+publisher: adinstruments
+name: ADInstruments ECG Analysis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/ECGAnalysis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/ECGAnalysis
+identifiers:
+- winget: ADInstruments.LabChart.Module.ECGAnalysis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/ECGAnalysis
+aliases:
+- adinstruments/adinstruments-ecg-analysis

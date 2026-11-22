@@ -1,0 +1,11 @@
+key: coral-creek-software/sqlite-expert-personal
+publisher: coral-creek-software
+name: SQLite Expert Personal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoralCreek/SQLiteExpert/Personal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoralCreek/SQLiteExpert/Personal
+identifiers:
+- winget: CoralCreek.SQLiteExpert.Personal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoralCreek/SQLiteExpert/Personal
+aliases: []

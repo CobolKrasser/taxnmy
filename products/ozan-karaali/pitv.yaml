@@ -1,0 +1,11 @@
+key: ozan-karaali/pitv
+publisher: ozan-karaali
+name: PiTV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozankaraali/PiTV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozankaraali/PiTV
+identifiers:
+- winget: ozankaraali.PiTV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozankaraali/PiTV
+aliases: []

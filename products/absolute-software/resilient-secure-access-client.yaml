@@ -1,0 +1,11 @@
+key: absolute-software/resilient-secure-access-client
+publisher: absolute-software
+name: Resilient Secure Access Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Absolute/ResilientSecureAccessClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Absolute/ResilientSecureAccessClient
+identifiers:
+- winget: Absolute.ResilientSecureAccessClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Absolute/ResilientSecureAccessClient
+aliases: []

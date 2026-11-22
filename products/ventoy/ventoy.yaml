@@ -1,0 +1,11 @@
+key: ventoy/ventoy
+publisher: ventoy
+name: Ventoy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Ventoy/Ventoy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Ventoy/Ventoy
+identifiers:
+- winget: Ventoy.Ventoy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Ventoy/Ventoy
+aliases: []

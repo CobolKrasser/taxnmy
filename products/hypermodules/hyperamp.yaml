@@ -1,0 +1,11 @@
+key: hypermodules/hyperamp
+publisher: hypermodules
+name: Hyperamp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hypermodules/Hyperamp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hypermodules/Hyperamp
+identifiers:
+- winget: Hypermodules.Hyperamp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hypermodules/Hyperamp
+aliases: []

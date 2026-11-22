@@ -1,0 +1,11 @@
+key: a-house-for-code/ubi
+publisher: a-house-for-code
+name: ubi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/houseabsolute/ubi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/houseabsolute/ubi
+identifiers:
+- winget: houseabsolute.ubi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/houseabsolute/ubi
+aliases: []

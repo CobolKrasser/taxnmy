@@ -1,0 +1,11 @@
+key: vcmi/vcmi
+publisher: vcmi
+name: VCMI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcmi/vcmi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcmi/vcmi
+identifiers:
+- winget: vcmi.vcmi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcmi/vcmi
+aliases: []

@@ -1,0 +1,11 @@
+key: dwango/n-air
+publisher: dwango
+name: N-Air
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/niconico/nair/live
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/niconico/nair/live
+identifiers:
+- winget: niconico.nair.live
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/niconico/nair/live
+aliases: []

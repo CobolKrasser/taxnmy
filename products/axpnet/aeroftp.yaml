@@ -1,0 +1,11 @@
+key: axpnet/aeroftp
+publisher: axpnet
+name: AeroFTP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axpnet/AeroFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axpnet/AeroFTP
+identifiers:
+- winget: axpnet.AeroFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axpnet/AeroFTP
+aliases: []

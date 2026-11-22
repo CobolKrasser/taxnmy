@@ -1,0 +1,11 @@
+key: redisant/iec104-server-simulator
+publisher: redisant
+name: IEC104 Server Simulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC104ServerSimulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC104ServerSimulator
+identifiers:
+- winget: Redisant.IEC104ServerSimulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC104ServerSimulator
+aliases: []

@@ -1,0 +1,11 @@
+key: ookla/speedtest-by-ookla
+publisher: ookla
+name: Speedtest by Ookla
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ookla/Speedtest/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ookla/Speedtest/Desktop
+identifiers:
+- winget: Ookla.Speedtest.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ookla/Speedtest/Desktop
+aliases: []

@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-vietnam-server
+publisher: riot-games
+name: League of Legends (Vietnam server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/VN2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/VN2
+identifiers:
+- winget: RiotGames.LeagueOfLegends.VN2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/VN2
+aliases: []

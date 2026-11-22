@@ -1,0 +1,11 @@
+key: national-instruments/ni-daqmx
+publisher: national-instruments
+name: NI-DAQmx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-daqmx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-daqmx
+identifiers:
+- winget: NI.ni-daqmx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-daqmx
+aliases: []

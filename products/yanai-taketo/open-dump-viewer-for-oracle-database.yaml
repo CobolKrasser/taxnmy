@@ -1,0 +1,13 @@
+key: yanai-taketo/open-dump-viewer-for-oracle-database
+publisher: yanai-taketo
+name: Open DUMP Viewer for Oracle database
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDumpViewer/OpenDumpViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDumpViewer/OpenDumpViewer
+identifiers:
+- winget: OpenDumpViewer.OpenDumpViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDumpViewer/OpenDumpViewer
+- winget: OpenDumpViewer.OpenDumpViewer.BETA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDumpViewer/OpenDumpViewer/BETA
+aliases: []

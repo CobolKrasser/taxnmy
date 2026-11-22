@@ -1,0 +1,11 @@
+key: advanced-card-systems/acs-unified-pc-sc-driver
+publisher: advanced-card-systems
+name: ACS Unified PC/SC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACS/UnifiedPCSCDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACS/UnifiedPCSCDriver
+identifiers:
+- winget: ACS.UnifiedPCSCDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACS/UnifiedPCSCDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: lets-go-purple/purple-plus
+publisher: lets-go-purple
+name: Purple+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Purple/PurplePlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Purple/PurplePlus
+identifiers:
+- winget: Purple.PurplePlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Purple/PurplePlus
+aliases: []

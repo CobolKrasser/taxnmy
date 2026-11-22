@@ -1,0 +1,11 @@
+key: mindersec/minder
+publisher: mindersec
+name: minder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mindersec/minder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mindersec/minder
+identifiers:
+- winget: mindersec.minder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mindersec/minder
+aliases: []

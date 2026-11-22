@@ -1,0 +1,11 @@
+key: nirosoftware/serialflow-cli
+publisher: nirosoftware
+name: SerialFlow CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nirosoftware/SerialFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nirosoftware/SerialFlow
+identifiers:
+- winget: Nirosoftware.SerialFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nirosoftware/SerialFlow
+aliases: []

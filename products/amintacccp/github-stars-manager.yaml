@@ -1,0 +1,11 @@
+key: amintacccp/github-stars-manager
+publisher: amintacccp
+name: GitHub Stars Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmintaCCCP/GithubStarsManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmintaCCCP/GithubStarsManager
+identifiers:
+- winget: AmintaCCCP.GithubStarsManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmintaCCCP/GithubStarsManager
+aliases: []

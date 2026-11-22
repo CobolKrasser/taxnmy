@@ -1,0 +1,11 @@
+key: weatherwise/weatherwise
+publisher: weatherwise
+name: WeatherWise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeatherWise/WeatherWise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeatherWise/WeatherWise
+identifiers:
+- winget: WeatherWise.WeatherWise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeatherWise/WeatherWise
+aliases: []

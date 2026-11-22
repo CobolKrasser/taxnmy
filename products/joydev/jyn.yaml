@@ -1,0 +1,11 @@
+key: joydev/jyn
+publisher: joydev
+name: jyn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joyint/jyn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joyint/jyn
+identifiers:
+- winget: joyint.jyn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joyint/jyn
+aliases: []

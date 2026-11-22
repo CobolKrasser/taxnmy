@@ -1,0 +1,11 @@
+key: the-ultra-authors/ultra
+publisher: the-ultra-authors
+name: Ultra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ultra/Ultra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ultra/Ultra
+identifiers:
+- winget: Ultra.Ultra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ultra/Ultra
+aliases: []

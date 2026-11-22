@@ -1,0 +1,11 @@
+key: sirstrap/ui
+publisher: sirstrap
+name: UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sirstrap/UI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sirstrap/UI
+identifiers:
+- winget: Sirstrap.UI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sirstrap/UI
+aliases: []

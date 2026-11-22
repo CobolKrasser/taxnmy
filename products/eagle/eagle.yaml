@@ -1,0 +1,11 @@
+key: eagle/eagle
+publisher: eagle
+name: Eagle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ogdesign/Eagle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ogdesign/Eagle
+identifiers:
+- winget: ogdesign.Eagle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ogdesign/Eagle
+aliases: []

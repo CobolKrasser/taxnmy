@@ -1,0 +1,11 @@
+key: zoitechat/zoite-chat
+publisher: zoitechat
+name: Zoite Chat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZoiteChat/ZoiteChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZoiteChat/ZoiteChat
+identifiers:
+- winget: ZoiteChat.ZoiteChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZoiteChat/ZoiteChat
+aliases: []

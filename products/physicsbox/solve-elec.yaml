@@ -1,0 +1,11 @@
+key: physicsbox/solve-elec
+publisher: physicsbox
+name: Solve Elec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhysicsBox/SolveElec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhysicsBox/SolveElec
+identifiers:
+- winget: PhysicsBox.SolveElec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhysicsBox/SolveElec
+aliases: []

@@ -1,0 +1,11 @@
+key: mochasoft/mocha-telnet
+publisher: mochasoft
+name: Mocha Telnet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MochaSoft/MochaTelnet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MochaSoft/MochaTelnet
+identifiers:
+- winget: MochaSoft.MochaTelnet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MochaSoft/MochaTelnet
+aliases: []

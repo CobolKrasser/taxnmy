@@ -1,0 +1,11 @@
+key: here-technologies/maps-cli
+publisher: here-technologies
+name: Maps CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/MAPMAKING/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/MAPMAKING/CLI
+identifiers:
+- winget: HERE.MAPMAKING.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/MAPMAKING/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: gyldendal/ordnett-pluss
+publisher: gyldendal
+name: Ordnett Pluss
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyldendal/OrdnettPluss
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyldendal/OrdnettPluss
+identifiers:
+- winget: Gyldendal.OrdnettPluss
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyldendal/OrdnettPluss
+aliases: []

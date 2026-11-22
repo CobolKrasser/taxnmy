@@ -1,0 +1,12 @@
+key: realvnc/server
+publisher: realvnc
+name: RealVNC Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCServer
+identifiers:
+- winget: RealVNC.VNCServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCServer
+aliases:
+- realvnc/realvnc-server

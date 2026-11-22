@@ -1,0 +1,11 @@
+key: ferro-software/ftpuse
+publisher: ferro-software
+name: FtpUse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FerroSoftware/FtpUse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FerroSoftware/FtpUse
+identifiers:
+- winget: FerroSoftware.FtpUse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FerroSoftware/FtpUse
+aliases: []

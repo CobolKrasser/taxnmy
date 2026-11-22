@@ -1,0 +1,11 @@
+key: icyshadow5/repomanager
+publisher: icyshadow5
+name: RepoManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcyShadow5/RepoManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcyShadow5/RepoManager
+identifiers:
+- winget: IcyShadow5.RepoManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IcyShadow5/RepoManager
+aliases: []

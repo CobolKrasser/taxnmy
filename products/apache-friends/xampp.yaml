@@ -1,0 +1,13 @@
+key: apache-friends/xampp
+publisher: apache-friends
+name: XAMPP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheFriends/Xampp/8/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheFriends/Xampp/8/1
+identifiers:
+- winget: ApacheFriends.Xampp.8.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheFriends/Xampp/8/1
+- winget: ApacheFriends.Xampp.8.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheFriends/Xampp/8/2
+aliases: []

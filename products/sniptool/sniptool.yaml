@@ -1,0 +1,11 @@
+key: sniptool/sniptool
+publisher: sniptool
+name: Sniptool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sniptool/Sniptool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sniptool/Sniptool
+identifiers:
+- winget: Sniptool.Sniptool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sniptool/Sniptool
+aliases: []

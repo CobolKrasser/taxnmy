@@ -1,0 +1,11 @@
+key: haiwenhuzhi/seadrive
+publisher: haiwenhuzhi
+name: SeaDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafile/Seadrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafile/Seadrive
+identifiers:
+- winget: Seafile.Seadrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafile/Seadrive
+aliases: []

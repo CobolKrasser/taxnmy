@@ -1,0 +1,11 @@
+key: activestate-software/activestate-komodo-ide
+publisher: activestate-software
+name: ActiveState Komodo IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveState/KomodoIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveState/KomodoIDE
+identifiers:
+- winget: ActiveState.KomodoIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveState/KomodoIDE
+aliases: []

@@ -1,0 +1,11 @@
+key: siarhei-kuchuk/ftps-server
+publisher: siarhei-kuchuk
+name: FTPS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiarheiKuchuk/FtpsServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiarheiKuchuk/FtpsServer
+identifiers:
+- winget: SiarheiKuchuk.FtpsServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiarheiKuchuk/FtpsServer
+aliases: []

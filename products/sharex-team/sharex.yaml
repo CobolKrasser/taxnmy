@@ -1,0 +1,11 @@
+key: sharex-team/sharex
+publisher: sharex-team
+name: ShareX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareX/ShareX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareX/ShareX
+identifiers:
+- winget: ShareX.ShareX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShareX/ShareX
+aliases: []

@@ -1,0 +1,12 @@
+key: buildkite/agent
+publisher: buildkite
+name: Buildkite Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buildkite/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buildkite/Agent
+identifiers:
+- winget: Buildkite.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buildkite/Agent
+aliases:
+- buildkite/buildkite-agent

@@ -1,0 +1,11 @@
+key: oa-team/openarena
+publisher: oa-team
+name: OpenArena
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenArena/OpenArena
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenArena/OpenArena
+identifiers:
+- winget: OpenArena.OpenArena
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenArena/OpenArena
+aliases: []

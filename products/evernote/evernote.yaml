@@ -1,0 +1,11 @@
+key: evernote/evernote
+publisher: evernote
+name: Evernote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evernote/Evernote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evernote/Evernote
+identifiers:
+- winget: Evernote.Evernote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evernote/Evernote
+aliases: []

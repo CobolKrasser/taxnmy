@@ -1,0 +1,11 @@
+key: logitech/logi-options-plus
+publisher: logitech
+name: Logi Options+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/OptionsPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/OptionsPlus
+identifiers:
+- winget: Logitech.OptionsPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/OptionsPlus
+aliases: []

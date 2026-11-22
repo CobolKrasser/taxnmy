@@ -1,0 +1,11 @@
+key: pigtech/pigcloud-cli
+publisher: pigtech
+name: PigCloud CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PigTech/PigCloudCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PigTech/PigCloudCLI
+identifiers:
+- winget: PigTech.PigCloudCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PigTech/PigCloudCLI
+aliases: []

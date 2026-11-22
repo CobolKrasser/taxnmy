@@ -1,0 +1,12 @@
+key: opendsc/resources
+publisher: opendsc
+name: OpenDsc Resources
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Resources
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Resources
+identifiers:
+- winget: OpenDsc.Resources
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Resources
+aliases:
+- opendsc/opendsc-resources

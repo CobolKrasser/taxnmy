@@ -1,0 +1,11 @@
+key: shinokada/gitstart
+publisher: shinokada
+name: GITSTART
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shinokada/Gitstart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shinokada/Gitstart
+identifiers:
+- winget: Shinokada.Gitstart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shinokada/Gitstart
+aliases: []

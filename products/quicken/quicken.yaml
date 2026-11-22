@@ -1,0 +1,11 @@
+key: quicken/quicken
+publisher: quicken
+name: Quicken
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quicken/Quicken
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quicken/Quicken
+identifiers:
+- winget: Quicken.Quicken
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quicken/Quicken
+aliases: []

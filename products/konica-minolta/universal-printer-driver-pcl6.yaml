@@ -1,0 +1,12 @@
+key: konica-minolta/universal-printer-driver-pcl6
+publisher: konica-minolta
+name: Konica Minolta Universal Printer Driver PCL6
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KonicaMinolta/UniversalPrinterDriverPCL6
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KonicaMinolta/UniversalPrinterDriverPCL6
+identifiers:
+- winget: KonicaMinolta.UniversalPrinterDriverPCL6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KonicaMinolta/UniversalPrinterDriverPCL6
+aliases:
+- konica-minolta/konica-minolta-universal-printer-driver-pcl6

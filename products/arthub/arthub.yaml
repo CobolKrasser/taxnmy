@@ -1,0 +1,11 @@
+key: arthub/arthub
+publisher: arthub
+name: ArtHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/ArtHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/ArtHub
+identifiers:
+- winget: Tencent.ArtHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/ArtHub
+aliases: []

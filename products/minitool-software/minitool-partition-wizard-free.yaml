@@ -1,0 +1,11 @@
+key: minitool-software/minitool-partition-wizard-free
+publisher: minitool-software
+name: MiniTool Partition Wizard Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniTool/PartitionWizard/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniTool/PartitionWizard/Free
+identifiers:
+- winget: MiniTool.PartitionWizard.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniTool/PartitionWizard/Free
+aliases: []

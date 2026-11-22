@@ -1,0 +1,11 @@
+key: yetone/nextai-translator
+publisher: yetone
+name: NextAI Translator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yetone/NextAITranslator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yetone/NextAITranslator
+identifiers:
+- winget: yetone.NextAITranslator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yetone/NextAITranslator
+aliases: []

@@ -1,0 +1,11 @@
+key: joydev/joy
+publisher: joydev
+name: joy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joyint/joy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joyint/joy
+identifiers:
+- winget: joyint.joy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/joyint/joy
+aliases: []

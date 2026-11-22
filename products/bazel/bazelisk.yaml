@@ -1,0 +1,11 @@
+key: bazel/bazelisk
+publisher: bazel
+name: Bazelisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazel/Bazelisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazel/Bazelisk
+identifiers:
+- winget: Bazel.Bazelisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazel/Bazelisk
+aliases: []

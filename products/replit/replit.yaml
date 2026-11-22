@@ -1,0 +1,11 @@
+key: replit/replit
+publisher: replit
+name: Replit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Replit/Replit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Replit/Replit
+identifiers:
+- winget: Replit.Replit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Replit/Replit
+aliases: []

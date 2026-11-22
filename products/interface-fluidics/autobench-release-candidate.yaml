@@ -1,0 +1,11 @@
+key: interface-fluidics/autobench-release-candidate
+publisher: interface-fluidics
+name: Autobench Release-Candidate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autobench/Release-Candidate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autobench/Release-Candidate
+identifiers:
+- winget: InterfaceFluidics.Autobench.Release-Candidate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autobench/Release-Candidate
+aliases: []

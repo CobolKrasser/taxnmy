@@ -1,0 +1,11 @@
+key: jousse/concentre
+publisher: jousse
+name: Concentré
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jousse/pomodorolm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jousse/pomodorolm
+identifiers:
+- winget: jousse.pomodorolm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jousse/pomodorolm
+aliases: []

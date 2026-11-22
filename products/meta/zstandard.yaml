@@ -1,0 +1,11 @@
+key: meta/zstandard
+publisher: meta
+name: Zstandard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/Zstandard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/Zstandard
+identifiers:
+- winget: Meta.Zstandard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/Zstandard
+aliases: []

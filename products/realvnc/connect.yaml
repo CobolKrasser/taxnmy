@@ -1,0 +1,12 @@
+key: realvnc/connect
+publisher: realvnc
+name: RealVNC Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/RealVNCConnct
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/RealVNCConnct
+identifiers:
+- winget: RealVNC.RealVNCConnct
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/RealVNCConnct
+aliases:
+- realvnc/realvnc-connect

@@ -1,0 +1,11 @@
+key: persepolis-team/persepolis-download-manager
+publisher: persepolis-team
+name: Persepolis Download Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PersepolisDownloadManager/Persepolis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PersepolisDownloadManager/Persepolis
+identifiers:
+- winget: PersepolisDownloadManager.Persepolis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PersepolisDownloadManager/Persepolis
+aliases: []

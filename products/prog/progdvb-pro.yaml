@@ -1,0 +1,11 @@
+key: prog/progdvb-pro
+publisher: prog
+name: ProgDVB Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgDVB/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgDVB/Professional
+identifiers:
+- winget: Prog.ProgDVB.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgDVB/Professional
+aliases: []

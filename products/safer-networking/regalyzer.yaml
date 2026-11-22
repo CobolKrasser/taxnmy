@@ -1,0 +1,11 @@
+key: safer-networking/regalyzer
+publisher: safer-networking
+name: RegAlyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaferNetworking/RegAlyzer/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaferNetworking/RegAlyzer/1
+identifiers:
+- winget: SaferNetworking.RegAlyzer.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaferNetworking/RegAlyzer/1
+aliases: []

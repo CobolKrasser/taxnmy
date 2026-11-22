@@ -1,0 +1,12 @@
+key: octopus-deploy/tentacle
+publisher: octopus-deploy
+name: Octopus Deploy Tentacle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Tentacle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Tentacle
+identifiers:
+- winget: OctopusDeploy.Tentacle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Tentacle
+aliases:
+- octopus-deploy/octopus-deploy-tentacle

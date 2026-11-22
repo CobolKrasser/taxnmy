@@ -1,0 +1,11 @@
+key: termius/termius
+publisher: termius
+name: Termius
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termius/Termius
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termius/Termius
+identifiers:
+- winget: Termius.Termius
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termius/Termius
+aliases: []

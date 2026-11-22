@@ -1,0 +1,12 @@
+key: pdf-xchange/standard
+publisher: pdf-xchange
+name: PDF-XChange Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrackerSoftware/PDF-XChangeStandard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrackerSoftware/PDF-XChangeStandard
+identifiers:
+- winget: TrackerSoftware.PDF-XChangeStandard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrackerSoftware/PDF-XChangeStandard
+aliases:
+- pdf-xchange/pdf-xchange-standard

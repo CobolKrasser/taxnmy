@@ -1,0 +1,11 @@
+key: darsono/hots-hosts
+publisher: darsono
+name: HOTS Hosts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Darsono/HOTSHosts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Darsono/HOTSHosts
+identifiers:
+- winget: Darsono.HOTSHosts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Darsono/HOTSHosts
+aliases: []

@@ -1,0 +1,11 @@
+key: sysprogs/smartty
+publisher: sysprogs
+name: SmarTTY
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sysprogs/SmarTTY
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sysprogs/SmarTTY
+identifiers:
+- winget: Sysprogs.SmarTTY
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sysprogs/SmarTTY
+aliases: []

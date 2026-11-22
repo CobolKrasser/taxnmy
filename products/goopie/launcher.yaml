@@ -1,0 +1,12 @@
+key: goopie/launcher
+publisher: goopie
+name: Goopie Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/birabittoh/GoopieLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/birabittoh/GoopieLauncher
+identifiers:
+- winget: birabittoh.GoopieLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/birabittoh/GoopieLauncher
+aliases:
+- goopie/goopie-launcher

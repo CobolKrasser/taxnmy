@@ -1,0 +1,11 @@
+key: fathah/hermes-agent
+publisher: fathah
+name: Hermes Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fathah/HermesDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fathah/HermesDesktop
+identifiers:
+- winget: fathah.HermesDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fathah/HermesDesktop
+aliases: []

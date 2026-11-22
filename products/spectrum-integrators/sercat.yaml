@@ -1,0 +1,11 @@
+key: spectrum-integrators/sercat
+publisher: spectrum-integrators
+name: sercat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpectrumIntegrators/Sercat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpectrumIntegrators/Sercat
+identifiers:
+- winget: SpectrumIntegrators.Sercat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpectrumIntegrators/Sercat
+aliases: []

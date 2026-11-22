@@ -1,0 +1,11 @@
+key: fahrenheit-research/genericradar
+publisher: fahrenheit-research
+name: GenericRadar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/GenericRadar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/GenericRadar
+identifiers:
+- winget: FahrenheitResearch.GenericRadar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/GenericRadar
+aliases: []

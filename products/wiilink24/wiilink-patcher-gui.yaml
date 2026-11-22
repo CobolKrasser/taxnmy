@@ -1,0 +1,11 @@
+key: wiilink24/wiilink-patcher-gui
+publisher: wiilink24
+name: WiiLink Patcher (GUI)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiiLink24/PatcherGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiiLink24/PatcherGUI
+identifiers:
+- winget: WiiLink24.PatcherGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiiLink24/PatcherGUI
+aliases: []

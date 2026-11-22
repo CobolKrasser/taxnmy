@@ -1,0 +1,11 @@
+key: ccgnomes/vault-flasher
+publisher: ccgnomes
+name: Vault Flasher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCGnomes/VaultFlasher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCGnomes/VaultFlasher
+identifiers:
+- winget: CCGnomes.VaultFlasher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCGnomes/VaultFlasher
+aliases: []

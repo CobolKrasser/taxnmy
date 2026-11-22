@@ -1,0 +1,12 @@
+key: logitech/unifying-software
+publisher: logitech
+name: Logitech Unifying Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/UnifyingSoftware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/UnifyingSoftware
+identifiers:
+- winget: Logitech.UnifyingSoftware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/UnifyingSoftware
+aliases:
+- logitech/logitech-unifying-software

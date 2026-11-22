@@ -1,0 +1,11 @@
+key: brightpilot/brightpilot
+publisher: brightpilot
+name: BrightPilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightPilot/BrightPilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightPilot/BrightPilot
+identifiers:
+- winget: BrightPilot.BrightPilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightPilot/BrightPilot
+aliases: []

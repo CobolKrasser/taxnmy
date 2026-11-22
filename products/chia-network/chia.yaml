@@ -1,0 +1,11 @@
+key: chia-network/chia
+publisher: chia-network
+name: Chia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChiaNetwork/GUIforChiaBlockchain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChiaNetwork/GUIforChiaBlockchain
+identifiers:
+- winget: ChiaNetwork.GUIforChiaBlockchain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChiaNetwork/GUIforChiaBlockchain
+aliases: []

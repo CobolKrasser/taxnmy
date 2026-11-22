@@ -1,0 +1,11 @@
+key: softfever/orcaslicer
+publisher: softfever
+name: OrcaSlicer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftFever/OrcaSlicer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftFever/OrcaSlicer
+identifiers:
+- winget: SoftFever.OrcaSlicer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftFever/OrcaSlicer
+aliases: []

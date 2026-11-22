@@ -1,0 +1,11 @@
+key: thorlabs/fwxc
+publisher: thorlabs
+name: FWxC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/FWxC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/FWxC
+identifiers:
+- winget: Thorlabs.FWxC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/FWxC
+aliases: []

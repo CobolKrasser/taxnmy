@@ -1,0 +1,11 @@
+key: josm/josm
+publisher: josm
+name: JOSM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenStreetMap/Josm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenStreetMap/Josm
+identifiers:
+- winget: OpenStreetMap.Josm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenStreetMap/Josm
+aliases: []

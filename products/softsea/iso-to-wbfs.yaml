@@ -1,0 +1,13 @@
+key: softsea/iso-to-wbfs
+publisher: softsea
+name: ISO to WBFS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOtoWBFS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOtoWBFS
+identifiers:
+- winget: SoftSea.ISOtoWBFS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOtoWBFS
+- winget: SoftSea.WBFStoISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/WBFStoISO
+aliases: []

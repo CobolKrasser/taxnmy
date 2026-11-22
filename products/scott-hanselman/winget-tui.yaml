@@ -1,0 +1,11 @@
+key: scott-hanselman/winget-tui
+publisher: scott-hanselman
+name: winget-tui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanselman/WingetTUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanselman/WingetTUI
+identifiers:
+- winget: Hanselman.WingetTUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanselman/WingetTUI
+aliases: []

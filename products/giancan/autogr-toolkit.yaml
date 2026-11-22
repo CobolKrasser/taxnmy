@@ -1,0 +1,11 @@
+key: giancan/autogr-toolkit
+publisher: giancan
+name: AutoGR Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Giancan/AutoGRToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Giancan/AutoGRToolkit
+identifiers:
+- winget: Giancan.AutoGRToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Giancan/AutoGRToolkit
+aliases: []

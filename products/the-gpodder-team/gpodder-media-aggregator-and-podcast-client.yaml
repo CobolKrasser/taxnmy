@@ -1,0 +1,11 @@
+key: the-gpodder-team/gpodder-media-aggregator-and-podcast-client
+publisher: the-gpodder-team
+name: gPodder - Media aggregator and podcast client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gPodder/gPodder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gPodder/gPodder
+identifiers:
+- winget: gPodder.gPodder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gPodder/gPodder
+aliases: []

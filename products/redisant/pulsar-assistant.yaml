@@ -1,0 +1,11 @@
+key: redisant/pulsar-assistant
+publisher: redisant
+name: Pulsar Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/PulsarAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/PulsarAssistant
+identifiers:
+- winget: Redisant.PulsarAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/PulsarAssistant
+aliases: []

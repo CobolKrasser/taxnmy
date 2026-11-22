@@ -1,0 +1,11 @@
+key: bosse/romfs
+publisher: bosse
+name: RomFs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/romfs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/romfs
+identifiers:
+- winget: bosse.romfs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/romfs
+aliases: []

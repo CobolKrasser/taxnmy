@@ -1,0 +1,11 @@
+key: skim-rs/skim
+publisher: skim-rs
+name: skim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skim-rs/skim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skim-rs/skim
+identifiers:
+- winget: skim-rs.skim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skim-rs/skim
+aliases: []

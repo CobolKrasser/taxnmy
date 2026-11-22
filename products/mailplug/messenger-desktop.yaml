@@ -1,0 +1,12 @@
+key: mailplug/messenger-desktop
+publisher: mailplug
+name: MAILPLUG Messenger Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAILPLUGInc/MAILPLUGMessengerDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAILPLUGInc/MAILPLUGMessengerDesktop
+identifiers:
+- winget: MAILPLUGInc.MAILPLUGMessengerDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAILPLUGInc/MAILPLUGMessengerDesktop
+aliases:
+- mailplug/mailplug-messenger-desktop

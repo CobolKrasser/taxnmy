@@ -1,0 +1,11 @@
+key: ridoit/ridoguard
+publisher: ridoit
+name: RidoGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RidoIT/RidoGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RidoIT/RidoGuard
+identifiers:
+- winget: RidoIT.RidoGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RidoIT/RidoGuard
+aliases: []

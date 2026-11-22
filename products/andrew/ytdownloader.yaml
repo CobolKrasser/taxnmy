@@ -1,0 +1,11 @@
+key: andrew/ytdownloader
+publisher: andrew
+name: YTDownloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aandrew-me/ytDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aandrew-me/ytDownloader
+identifiers:
+- winget: aandrew-me.ytDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aandrew-me/ytDownloader
+aliases: []

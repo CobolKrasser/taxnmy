@@ -1,0 +1,11 @@
+key: beijing-yinli-catapult-technology/trae-cn
+publisher: beijing-yinli-catapult-technology
+name: Trae CN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Trae/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Trae/CN
+identifiers:
+- winget: ByteDance.Trae.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Trae/CN
+aliases: []

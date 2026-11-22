@@ -1,0 +1,12 @@
+key: geoparquet/validator
+publisher: geoparquet
+name: GeoParquet Validator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoParquet/Validator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoParquet/Validator
+identifiers:
+- winget: GeoParquet.Validator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoParquet/Validator
+aliases:
+- geoparquet/geoparquet-validator

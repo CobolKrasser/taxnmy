@@ -1,0 +1,11 @@
+key: adguard-software/adguard
+publisher: adguard-software
+name: AdGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuard
+identifiers:
+- winget: AdGuard.AdGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuard
+aliases: []

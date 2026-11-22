@@ -1,0 +1,12 @@
+key: mamp/and-mamp-pro
+publisher: mamp
+name: MAMP & MAMP PRO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMP/MAMP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMP/MAMP
+identifiers:
+- winget: MAMP.MAMP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAMP/MAMP
+aliases:
+- mamp/mamp-and-mamp-pro

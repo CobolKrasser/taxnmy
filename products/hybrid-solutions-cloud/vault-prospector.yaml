@@ -1,0 +1,11 @@
+key: hybrid-solutions-cloud/vault-prospector
+publisher: hybrid-solutions-cloud
+name: Vault Prospector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HybridSolutionsCloud/VaultProspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HybridSolutionsCloud/VaultProspector
+identifiers:
+- winget: HybridSolutionsCloud.VaultProspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HybridSolutionsCloud/VaultProspector
+aliases: []

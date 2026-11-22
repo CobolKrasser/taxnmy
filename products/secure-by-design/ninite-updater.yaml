@@ -1,0 +1,11 @@
+key: secure-by-design/ninite-updater
+publisher: secure-by-design
+name: Ninite Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureByDesignInc/NiniteUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureByDesignInc/NiniteUpdater
+identifiers:
+- winget: SecureByDesignInc.NiniteUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecureByDesignInc/NiniteUpdater
+aliases: []

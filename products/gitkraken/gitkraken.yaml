@@ -1,0 +1,11 @@
+key: gitkraken/gitkraken
+publisher: gitkraken
+name: GitKraken
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axosoft/GitKraken
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axosoft/GitKraken
+identifiers:
+- winget: Axosoft.GitKraken
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axosoft/GitKraken
+aliases: []

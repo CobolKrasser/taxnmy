@@ -1,0 +1,11 @@
+key: recol/dlss-updater
+publisher: recol
+name: DLSS Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recol/DLSSUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recol/DLSSUpdater
+identifiers:
+- winget: Recol.DLSSUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recol/DLSSUpdater
+aliases: []

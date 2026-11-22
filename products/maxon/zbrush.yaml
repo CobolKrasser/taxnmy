@@ -1,0 +1,15 @@
+key: maxon/zbrush
+publisher: maxon
+name: ZBrush
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/ZBrush/2024
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/ZBrush/2024
+identifiers:
+- winget: Maxon.ZBrush.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/ZBrush/2024
+- winget: Maxon.ZBrush.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/ZBrush/2025
+- winget: Maxon.ZBrush.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/ZBrush/2026
+aliases: []

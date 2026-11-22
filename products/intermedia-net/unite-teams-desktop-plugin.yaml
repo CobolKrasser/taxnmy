@@ -1,0 +1,11 @@
+key: intermedia-net/unite-teams-desktop-plugin
+publisher: intermedia-net
+name: Unite Teams Desktop plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intermedia/UniteTeamsDesktopPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intermedia/UniteTeamsDesktopPlugin
+identifiers:
+- winget: Intermedia.UniteTeamsDesktopPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intermedia/UniteTeamsDesktopPlugin
+aliases: []

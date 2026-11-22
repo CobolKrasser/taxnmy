@@ -1,0 +1,11 @@
+key: cardpresso/id-all
+publisher: cardpresso
+name: ID-All
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardPresso/ID-All
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardPresso/ID-All
+identifiers:
+- winget: CardPresso.ID-All
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CardPresso/ID-All
+aliases: []

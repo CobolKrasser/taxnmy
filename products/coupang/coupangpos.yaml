@@ -1,0 +1,11 @@
+key: coupang/coupangpos
+publisher: coupang
+name: CoupangPOS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coupang/CoupangPOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coupang/CoupangPOS
+identifiers:
+- winget: Coupang.CoupangPOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coupang/CoupangPOS
+aliases: []

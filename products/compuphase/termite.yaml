@@ -1,0 +1,11 @@
+key: compuphase/termite
+publisher: compuphase
+name: Termite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Compuphase/Termite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Compuphase/Termite
+identifiers:
+- winget: Compuphase.Termite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Compuphase/Termite
+aliases: []

@@ -1,0 +1,11 @@
+key: charmbracelet/freeze
+publisher: charmbracelet
+name: freeze
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/freeze
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/freeze
+identifiers:
+- winget: charmbracelet.freeze
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/freeze
+aliases: []

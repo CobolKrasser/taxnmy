@@ -1,0 +1,11 @@
+key: netpack-online-solutions/xfb
+publisher: netpack-online-solutions
+name: XFB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netpack/XFB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netpack/XFB
+identifiers:
+- winget: Netpack.XFB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netpack/XFB
+aliases: []

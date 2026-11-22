@@ -1,0 +1,11 @@
+key: zelenkov/wixtrim-wix-designer
+publisher: zelenkov
+name: WixTrim - WiX Designer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zelenkov/WixTrim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zelenkov/WixTrim
+identifiers:
+- winget: zelenkov.WixTrim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zelenkov/WixTrim
+aliases: []

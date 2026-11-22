@@ -1,0 +1,12 @@
+key: itop/voicy
+publisher: itop
+name: iTop Voicy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopVoicy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopVoicy
+identifiers:
+- winget: iTop.iTopVoicy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iTop/iTopVoicy
+aliases:
+- itop/itop-voicy

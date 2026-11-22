@@ -1,0 +1,11 @@
+key: ideamk/eps-viewer
+publisher: ideamk
+name: EPS Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/EPSViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/EPSViewer
+identifiers:
+- winget: IdeaMK.EPSViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/EPSViewer
+aliases: []

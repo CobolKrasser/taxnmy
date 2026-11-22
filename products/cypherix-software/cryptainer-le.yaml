@@ -1,0 +1,13 @@
+key: cypherix-software/cryptainer-le
+publisher: cypherix-software
+name: Cryptainer LE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Lite/18
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Lite/18
+identifiers:
+- winget: Cypherix.Cryptainer.Lite.18
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Lite/18
+- winget: Cypherix.Cryptainer.Lite.19
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/Cryptainer/Lite/19
+aliases: []

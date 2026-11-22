@@ -1,0 +1,12 @@
+key: adinstruments/labchart
+publisher: adinstruments
+name: ADInstruments LabChart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart
+identifiers:
+- winget: ADInstruments.LabChart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart
+aliases:
+- adinstruments/adinstruments-labchart

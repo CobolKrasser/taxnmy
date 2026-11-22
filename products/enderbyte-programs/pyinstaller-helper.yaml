@@ -1,0 +1,11 @@
+key: enderbyte-programs/pyinstaller-helper
+publisher: enderbyte-programs
+name: Pyinstaller Helper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/PyinstallerHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/PyinstallerHelper
+identifiers:
+- winget: EnderbytePrograms.PyinstallerHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnderbytePrograms/PyinstallerHelper
+aliases: []

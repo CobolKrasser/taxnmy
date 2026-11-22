@@ -1,0 +1,11 @@
+key: greatis-software/gwx-stopper
+publisher: greatis-software
+name: GWX Stopper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/GWXStopper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/GWXStopper
+identifiers:
+- winget: Greatis.GWXStopper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/GWXStopper
+aliases: []

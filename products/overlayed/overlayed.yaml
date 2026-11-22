@@ -1,0 +1,11 @@
+key: overlayed/overlayed
+publisher: overlayed
+name: Overlayed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OverlayedDev/Overlayed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OverlayedDev/Overlayed
+identifiers:
+- winget: OverlayedDev.Overlayed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OverlayedDev/Overlayed
+aliases: []

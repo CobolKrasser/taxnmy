@@ -1,0 +1,12 @@
+key: terramate/cli
+publisher: terramate
+name: Terramate CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terramate/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terramate/CLI
+identifiers:
+- winget: Terramate.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terramate/CLI
+aliases:
+- terramate/terramate-cli

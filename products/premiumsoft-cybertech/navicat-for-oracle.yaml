@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-oracle
+publisher: premiumsoft-cybertech
+name: Navicat for Oracle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatOracle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatOracle
+identifiers:
+- winget: PremiumSoft.NavicatOracle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatOracle
+aliases: []

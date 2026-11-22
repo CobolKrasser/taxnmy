@@ -1,0 +1,12 @@
+key: ahkflow/cli
+publisher: ahkflow
+name: AHKFlow CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AHKFlow/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AHKFlow/CLI
+identifiers:
+- winget: AHKFlow.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AHKFlow/CLI
+aliases:
+- ahkflow/ahkflow-cli

@@ -1,0 +1,11 @@
+key: colmidad/commandcodego-manager
+publisher: colmidad
+name: CommandCodeGo Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/learningdog1/CommandCodeGoManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/learningdog1/CommandCodeGoManager
+identifiers:
+- winget: learningdog1.CommandCodeGoManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/learningdog1/CommandCodeGoManager
+aliases: []

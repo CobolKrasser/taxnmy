@@ -1,0 +1,11 @@
+key: highlevel/highlevel
+publisher: highlevel
+name: HighLevel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighLevel/HighLevel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighLevel/HighLevel
+identifiers:
+- winget: HighLevel.HighLevel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighLevel/HighLevel
+aliases: []

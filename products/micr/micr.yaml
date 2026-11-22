@@ -1,0 +1,11 @@
+key: micr/micr
+publisher: micr
+name: Micr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicrInc/Micr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicrInc/Micr
+identifiers:
+- winget: MicrInc.Micr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicrInc/Micr
+aliases: []

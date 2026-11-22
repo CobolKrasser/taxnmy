@@ -1,0 +1,11 @@
+key: flexense-computing-systems/diskboss-server
+publisher: flexense-computing-systems
+name: DiskBoss Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskBossServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskBossServer
+identifiers:
+- winget: Flexense.DiskBossServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskBossServer
+aliases: []

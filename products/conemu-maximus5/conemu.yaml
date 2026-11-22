@@ -1,0 +1,11 @@
+key: conemu-maximus5/conemu
+publisher: conemu-maximus5
+name: ConEmu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maximus5/ConEmu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maximus5/ConEmu
+identifiers:
+- winget: Maximus5.ConEmu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maximus5/ConEmu
+aliases: []

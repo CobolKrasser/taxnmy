@@ -1,0 +1,11 @@
+key: mozilla/zen-browser
+publisher: mozilla
+name: Zen Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zen-Team/Zen-Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zen-Team/Zen-Browser
+identifiers:
+- winget: Zen-Team.Zen-Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zen-Team/Zen-Browser
+aliases: []

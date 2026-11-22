@@ -1,0 +1,11 @@
+key: cmake/freedv
+publisher: cmake
+name: FreeDV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeDV/FreeDV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeDV/FreeDV
+identifiers:
+- winget: FreeDV.FreeDV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeDV/FreeDV
+aliases: []

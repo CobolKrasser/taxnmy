@@ -1,0 +1,11 @@
+key: oxygen-cloud/odrive
+publisher: oxygen-cloud
+name: odrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OxygenCloud/odrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OxygenCloud/odrive
+identifiers:
+- winget: OxygenCloud.odrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OxygenCloud/odrive
+aliases: []

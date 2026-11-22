@@ -1,0 +1,12 @@
+key: jriver/media-center
+publisher: jriver
+name: JRiver Media Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JRiver/MediaCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JRiver/MediaCenter
+identifiers:
+- winget: JRiver.MediaCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JRiver/MediaCenter
+aliases:
+- jriver/jriver-media-center

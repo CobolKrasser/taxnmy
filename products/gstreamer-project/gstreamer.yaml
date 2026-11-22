@@ -1,0 +1,11 @@
+key: gstreamer-project/gstreamer
+publisher: gstreamer-project
+name: GStreamer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gstreamerproject/gstreamer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gstreamerproject/gstreamer
+identifiers:
+- winget: gstreamerproject.gstreamer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gstreamerproject/gstreamer
+aliases: []

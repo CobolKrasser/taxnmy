@@ -1,0 +1,11 @@
+key: jackett/jackett
+publisher: jackett
+name: Jackett
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jackett/Jackett
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jackett/Jackett
+identifiers:
+- winget: Jackett.Jackett
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jackett/Jackett
+aliases: []

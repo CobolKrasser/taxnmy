@@ -1,0 +1,11 @@
+key: ppsspp-project/ppsspp
+publisher: ppsspp-project
+name: PPSSPP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PPSSPPTeam/PPSSPP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PPSSPPTeam/PPSSPP
+identifiers:
+- winget: PPSSPPTeam.PPSSPP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PPSSPPTeam/PPSSPP
+aliases: []

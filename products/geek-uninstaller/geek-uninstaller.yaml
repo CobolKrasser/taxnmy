@@ -1,0 +1,11 @@
+key: geek-uninstaller/geek-uninstaller
+publisher: geek-uninstaller
+name: Geek Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeekUninstaller/GeekUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeekUninstaller/GeekUninstaller
+identifiers:
+- winget: GeekUninstaller.GeekUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeekUninstaller/GeekUninstaller
+aliases: []

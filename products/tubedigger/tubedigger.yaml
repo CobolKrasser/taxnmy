@@ -1,0 +1,11 @@
+key: tubedigger/tubedigger
+publisher: tubedigger
+name: TubeDigger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TubeDigger/TubeDigger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TubeDigger/TubeDigger
+identifiers:
+- winget: TubeDigger.TubeDigger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TubeDigger/TubeDigger
+aliases: []

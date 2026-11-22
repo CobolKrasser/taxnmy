@@ -1,0 +1,11 @@
+key: dennis-meuwissen/dvd-flick
+publisher: dennis-meuwissen
+name: DVD Flick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DVDFlick/DVDFlick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DVDFlick/DVDFlick
+identifiers:
+- winget: DVDFlick.DVDFlick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DVDFlick/DVDFlick
+aliases: []

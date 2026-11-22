@@ -1,0 +1,11 @@
+key: ivi-foundation/ivi-shared-components
+publisher: ivi-foundation
+name: IVI Shared Components
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IviFoundation/SharedComponents
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IviFoundation/SharedComponents
+identifiers:
+- winget: IviFoundation.SharedComponents
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IviFoundation/SharedComponents
+aliases: []

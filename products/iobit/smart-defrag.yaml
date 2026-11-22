@@ -1,0 +1,11 @@
+key: iobit/smart-defrag
+publisher: iobit
+name: Smart Defrag
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/SmartDefrag
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/SmartDefrag
+identifiers:
+- winget: IObit.SmartDefrag
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/SmartDefrag
+aliases: []

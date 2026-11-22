@@ -1,0 +1,11 @@
+key: wild-dog/openbpx
+publisher: wild-dog
+name: OpenBPX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilddogJP/OpenBPX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilddogJP/OpenBPX
+identifiers:
+- winget: WilddogJP.OpenBPX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilddogJP/OpenBPX
+aliases: []

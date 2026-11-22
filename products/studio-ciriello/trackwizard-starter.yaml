@@ -1,0 +1,11 @@
+key: studio-ciriello/trackwizard-starter
+publisher: studio-ciriello
+name: TrackWizard Starter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioCiriello/TrackWizardStarter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioCiriello/TrackWizardStarter
+identifiers:
+- winget: StudioCiriello.TrackWizardStarter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioCiriello/TrackWizardStarter
+aliases: []

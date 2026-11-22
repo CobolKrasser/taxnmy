@@ -1,0 +1,11 @@
+key: tts-webui/ignition
+publisher: tts-webui
+name: Ignition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TTS-WebUI/Ignition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TTS-WebUI/Ignition
+identifiers:
+- winget: TTS-WebUI.Ignition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TTS-WebUI/Ignition
+aliases: []

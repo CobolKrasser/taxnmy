@@ -1,0 +1,11 @@
+key: upx/upx
+publisher: upx
+name: UPX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UPX/UPX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UPX/UPX
+identifiers:
+- winget: UPX.UPX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UPX/UPX
+aliases: []

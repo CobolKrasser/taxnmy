@@ -1,0 +1,11 @@
+key: okkosh/fn-key-lock
+publisher: okkosh
+name: FN Key Lock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okkosh/fnlock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okkosh/fnlock
+identifiers:
+- winget: okkosh.fnlock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okkosh/fnlock
+aliases: []

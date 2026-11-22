@@ -1,0 +1,11 @@
+key: einsvier/blitztext-windows
+publisher: einsvier
+name: BlitzText Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EinsVier/BlitzText
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EinsVier/BlitzText
+identifiers:
+- winget: EinsVier.BlitzText
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EinsVier/BlitzText
+aliases: []

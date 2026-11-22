@@ -1,0 +1,13 @@
+key: universal-ctags/universal-ctags
+publisher: universal-ctags
+name: Universal Ctags
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalCtags/Ctags
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalCtags/Ctags
+identifiers:
+- winget: UniversalCtags.Ctags
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalCtags/Ctags
+- winget: UniversalCtags.Ctags.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalCtags/Ctags/Nightly
+aliases: []

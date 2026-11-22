@@ -1,0 +1,11 @@
+key: pdf-labs/pdftk-the-pdf-toolkit
+publisher: pdf-labs
+name: PDFtk - The PDF Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFLabs/PDFtk/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFLabs/PDFtk/Free
+identifiers:
+- winget: PDFLabs.PDFtk.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFLabs/PDFtk/Free
+aliases: []

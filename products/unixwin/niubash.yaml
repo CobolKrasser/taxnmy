@@ -1,0 +1,11 @@
+key: unixwin/niubash
+publisher: unixwin
+name: Niubash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unixwin/Niubash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unixwin/Niubash
+identifiers:
+- winget: Unixwin.Niubash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unixwin/Niubash
+aliases: []

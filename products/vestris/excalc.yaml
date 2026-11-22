@@ -1,0 +1,11 @@
+key: vestris/excalc
+publisher: vestris
+name: excalc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vestris/Excalc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vestris/Excalc
+identifiers:
+- winget: Vestris.Excalc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vestris/Excalc
+aliases: []

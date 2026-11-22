@@ -1,0 +1,13 @@
+key: grain/grain
+publisher: grain
+name: Grain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grain/Grain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grain/Grain
+identifiers:
+- winget: Grain.Grain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grain/Grain
+- winget: GrainIntelligence.Grain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GrainIntelligence/Grain
+aliases: []

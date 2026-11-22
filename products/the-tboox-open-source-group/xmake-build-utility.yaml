@@ -1,0 +1,11 @@
+key: the-tboox-open-source-group/xmake-build-utility
+publisher: the-tboox-open-source-group
+name: XMake build utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmake-io/Xmake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmake-io/Xmake
+identifiers:
+- winget: Xmake-io.Xmake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xmake-io/Xmake
+aliases: []

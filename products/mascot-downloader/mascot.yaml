@@ -1,0 +1,11 @@
+key: mascot-downloader/mascot
+publisher: mascot-downloader
+name: Mascot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alymurtza/Mascot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alymurtza/Mascot
+identifiers:
+- winget: alymurtza.Mascot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alymurtza/Mascot
+aliases: []

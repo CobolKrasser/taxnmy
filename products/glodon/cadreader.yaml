@@ -1,0 +1,11 @@
+key: glodon/cadreader
+publisher: glodon
+name: CADReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glodon/CADReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glodon/CADReader
+identifiers:
+- winget: Glodon.CADReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Glodon/CADReader
+aliases: []

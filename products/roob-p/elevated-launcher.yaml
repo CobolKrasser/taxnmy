@@ -1,0 +1,11 @@
+key: roob-p/elevated-launcher
+publisher: roob-p
+name: Elevated Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/roob-p/ElevatedLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/roob-p/ElevatedLauncher
+identifiers:
+- winget: roob-p.ElevatedLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/roob-p/ElevatedLauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: cde-software/tbrac
+publisher: cde-software
+name: TBRAC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/TBRAC-2024
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/TBRAC-2024
+identifiers:
+- winget: CDESoftware.TBRAC-2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CDESoftware/TBRAC-2024
+aliases: []

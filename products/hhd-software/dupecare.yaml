@@ -1,0 +1,12 @@
+key: hhd-software/dupecare
+publisher: hhd-software
+name: HHD Software DupeCare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/DupeCare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/DupeCare
+identifiers:
+- winget: HHDSoftware.DupeCare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/DupeCare
+aliases:
+- hhd-software/hhd-software-dupecare

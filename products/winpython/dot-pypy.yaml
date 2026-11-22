@@ -1,0 +1,12 @@
+key: winpython/dot-pypy
+publisher: winpython
+name: winpython-dot-pypy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winpython/winpython-dot-pypy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winpython/winpython-dot-pypy
+identifiers:
+- winget: winpython.winpython-dot-pypy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winpython/winpython-dot-pypy
+aliases:
+- winpython/winpython-dot-pypy

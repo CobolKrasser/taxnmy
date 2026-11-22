@@ -1,0 +1,11 @@
+key: wagnardsoft/display-driver-uninstaller
+publisher: wagnardsoft
+name: Display Driver Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wagnardsoft/DisplayDriverUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wagnardsoft/DisplayDriverUninstaller
+identifiers:
+- winget: Wagnardsoft.DisplayDriverUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wagnardsoft/DisplayDriverUninstaller
+aliases: []

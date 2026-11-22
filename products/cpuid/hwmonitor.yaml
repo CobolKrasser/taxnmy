@@ -1,0 +1,12 @@
+key: cpuid/hwmonitor
+publisher: cpuid
+name: CPUID HWMonitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/HWMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/HWMonitor
+identifiers:
+- winget: CPUID.HWMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/HWMonitor
+aliases:
+- cpuid/cpuid-hwmonitor

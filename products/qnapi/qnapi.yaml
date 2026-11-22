@@ -1,0 +1,11 @@
+key: qnapi/qnapi
+publisher: qnapi
+name: QNapi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNapi/QNapi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNapi/QNapi
+identifiers:
+- winget: QNapi.QNapi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNapi/QNapi
+aliases: []

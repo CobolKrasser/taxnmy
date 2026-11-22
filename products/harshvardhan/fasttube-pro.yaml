@@ -1,0 +1,11 @@
+key: harshvardhan/fasttube-pro
+publisher: harshvardhan
+name: FastTube Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastTube/FastTube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastTube/FastTube
+identifiers:
+- winget: FastTube.FastTube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastTube/FastTube
+aliases: []

@@ -1,0 +1,11 @@
+key: mixxx-project/mixxx
+publisher: mixxx-project
+name: Mixxx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mixxx/Mixxx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mixxx/Mixxx
+identifiers:
+- winget: Mixxx.Mixxx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mixxx/Mixxx
+aliases: []

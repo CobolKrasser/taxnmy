@@ -1,0 +1,11 @@
+key: https-ifile-space/ifilespace
+publisher: https-ifile-space
+name: iFileSpace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFileSpace/iFileSpace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFileSpace/iFileSpace
+identifiers:
+- winget: iFileSpace.iFileSpace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFileSpace/iFileSpace
+aliases: []

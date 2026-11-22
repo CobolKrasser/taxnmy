@@ -1,0 +1,11 @@
+key: nass-e-k/printbutton
+publisher: nass-e-k
+name: PrintButton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/PrintButton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/PrintButton
+identifiers:
+- winget: NASS.PrintButton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/PrintButton
+aliases: []

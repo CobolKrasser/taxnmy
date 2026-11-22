@@ -1,0 +1,11 @@
+key: bruno-lemos/devhub
+publisher: bruno-lemos
+name: DevHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevHub/DevHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevHub/DevHub
+identifiers:
+- winget: DevHub.DevHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevHub/DevHub
+aliases: []

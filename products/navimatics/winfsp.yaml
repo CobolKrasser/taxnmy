@@ -1,0 +1,11 @@
+key: navimatics/winfsp
+publisher: navimatics
+name: WinFsp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFsp/WinFsp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFsp/WinFsp
+identifiers:
+- winget: WinFsp.WinFsp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFsp/WinFsp
+aliases: []

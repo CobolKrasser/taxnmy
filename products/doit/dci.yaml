@@ -1,0 +1,11 @@
+key: doit/dci
+publisher: doit
+name: dci
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoiT/dci
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoiT/dci
+identifiers:
+- winget: DoiT.dci
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoiT/dci
+aliases: []

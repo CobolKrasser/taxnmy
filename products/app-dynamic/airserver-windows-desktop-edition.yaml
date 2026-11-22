@@ -1,0 +1,11 @@
+key: app-dynamic/airserver-windows-desktop-edition
+publisher: app-dynamic
+name: AirServer Windows Desktop Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppDynamic/AirServerWindowsDesktopEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppDynamic/AirServerWindowsDesktopEdition
+identifiers:
+- winget: AppDynamic.AirServerWindowsDesktopEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppDynamic/AirServerWindowsDesktopEdition
+aliases: []

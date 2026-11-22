@@ -1,0 +1,11 @@
+key: kingtoolbox/windterm
+publisher: kingtoolbox
+name: WindTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kingToolbox/WindTerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kingToolbox/WindTerm
+identifiers:
+- winget: kingToolbox.WindTerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kingToolbox/WindTerm
+aliases: []

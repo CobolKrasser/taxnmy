@@ -1,0 +1,11 @@
+key: maigo-erit/tockler
+publisher: maigo-erit
+name: Tockler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maygo/tockler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maygo/tockler
+identifiers:
+- winget: maygo.tockler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maygo/tockler
+aliases: []

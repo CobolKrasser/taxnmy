@@ -1,0 +1,11 @@
+key: scalar/scalar
+publisher: scalar
+name: Scalar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APIDocumentation/Scalar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APIDocumentation/Scalar
+identifiers:
+- winget: APIDocumentation.Scalar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APIDocumentation/Scalar
+aliases: []

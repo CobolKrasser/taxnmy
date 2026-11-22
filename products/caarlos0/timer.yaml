@@ -1,0 +1,11 @@
+key: caarlos0/timer
+publisher: caarlos0
+name: timer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/caarlos0/timer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/caarlos0/timer
+identifiers:
+- winget: caarlos0.timer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/caarlos0/timer
+aliases: []

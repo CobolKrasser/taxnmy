@@ -1,0 +1,12 @@
+key: lenovo/quick-clean
+publisher: lenovo
+name: Lenovo Quick Clean
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/QuickClean
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/QuickClean
+identifiers:
+- winget: Lenovo.QuickClean
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/QuickClean
+aliases:
+- lenovo/lenovo-quick-clean

@@ -1,0 +1,11 @@
+key: micronaut-foundation/micronaut-launch
+publisher: micronaut-foundation
+name: Micronaut Launch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Micronaut/Launch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Micronaut/Launch
+identifiers:
+- winget: Micronaut.Launch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Micronaut/Launch
+aliases: []

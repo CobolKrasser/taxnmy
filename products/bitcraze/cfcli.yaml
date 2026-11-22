@@ -1,0 +1,11 @@
+key: bitcraze/cfcli
+publisher: bitcraze
+name: cfcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitcraze/cfcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitcraze/cfcli
+identifiers:
+- winget: Bitcraze.cfcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitcraze/cfcli
+aliases: []

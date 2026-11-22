@@ -1,0 +1,11 @@
+key: saxo-broko/official-app-for-https-saxobroko-com
+publisher: saxo-broko
+name: Official app for https://saxobroko.com
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saxo_Broko/Officialapp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saxo_Broko/Officialapp
+identifiers:
+- winget: Saxo_Broko.Officialapp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saxo_Broko/Officialapp
+aliases: []

@@ -1,0 +1,11 @@
+key: slp-studio/linux-practice
+publisher: slp-studio
+name: Linux Practice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/slp-studio/LinuxPractice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/slp-studio/LinuxPractice
+identifiers:
+- winget: slp-studio.LinuxPractice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/slp-studio/LinuxPractice
+aliases: []

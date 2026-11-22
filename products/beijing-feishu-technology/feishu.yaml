@@ -1,0 +1,11 @@
+key: beijing-feishu-technology/feishu
+publisher: beijing-feishu-technology
+name: Feishu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu
+identifiers:
+- winget: ByteDance.Feishu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu
+aliases: []

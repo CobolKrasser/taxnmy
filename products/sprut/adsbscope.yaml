@@ -1,0 +1,11 @@
+key: sprut/adsbscope
+publisher: sprut
+name: adsbScope
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sprut/ADSBScope
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sprut/ADSBScope
+identifiers:
+- winget: Sprut.ADSBScope
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sprut/ADSBScope
+aliases: []

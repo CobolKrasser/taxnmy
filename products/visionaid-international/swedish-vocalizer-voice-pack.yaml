@@ -1,0 +1,12 @@
+key: visionaid-international/swedish-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Swedish Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Swedish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Swedish
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Swedish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Swedish
+aliases:
+- visionaid-international/visionaid-international-swedish-vocalizer-voice-pack

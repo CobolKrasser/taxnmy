@@ -1,0 +1,14 @@
+key: akka/cli
+publisher: akka
+name: Akka CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akka/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akka/Cli
+identifiers:
+- winget: Akka.AkkaCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akka/AkkaCli
+- winget: Akka.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akka/Cli
+aliases:
+- akka/akka-cli

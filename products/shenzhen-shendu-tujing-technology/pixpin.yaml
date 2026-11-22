@@ -1,0 +1,13 @@
+key: shenzhen-shendu-tujing-technology/pixpin
+publisher: shenzhen-shendu-tujing-technology
+name: PixPin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixPin/PixPin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixPin/PixPin
+identifiers:
+- winget: PixPin.PixPin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixPin/PixPin
+- winget: PixPin.PixPin.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PixPin/PixPin/Beta
+aliases: []

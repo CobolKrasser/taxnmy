@@ -1,0 +1,11 @@
+key: vamc-consulting/vegha
+publisher: vamc-consulting
+name: Vegha
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vegha/Vegha
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vegha/Vegha
+identifiers:
+- winget: Vegha.Vegha
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vegha/Vegha
+aliases: []

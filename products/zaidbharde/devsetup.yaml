@@ -1,0 +1,11 @@
+key: zaidbharde/devsetup
+publisher: zaidbharde
+name: DevSetup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zaidbharde/DevSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zaidbharde/DevSetup
+identifiers:
+- winget: zaidbharde.DevSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zaidbharde/DevSetup
+aliases: []

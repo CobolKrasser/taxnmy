@@ -1,0 +1,11 @@
+key: newcloud/newss-student
+publisher: newcloud
+name: NewSS Student
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/NewSSStudent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/NewSSStudent
+identifiers:
+- winget: NewCloud.NewSSStudent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/NewSSStudent
+aliases: []

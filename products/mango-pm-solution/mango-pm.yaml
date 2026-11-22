@@ -1,0 +1,11 @@
+key: mango-pm-solution/mango-pm
+publisher: mango-pm-solution
+name: Mango PM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WonderIdea/MangoPresentationMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WonderIdea/MangoPresentationMaker
+identifiers:
+- winget: WonderIdea.MangoPresentationMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WonderIdea/MangoPresentationMaker
+aliases: []

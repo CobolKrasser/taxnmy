@@ -5,4 +5,7 @@ kind: software
 source: https://trueconf.com/blog/update/trueconf-8-5-2
 versions:
   source: https://trueconf.com/products/changelog.html#client
+identifiers:
+- winget: TrueConf.TrueConf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrueConf/TrueConf
 aliases: []

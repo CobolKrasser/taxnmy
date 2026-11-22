@@ -1,0 +1,11 @@
+key: noaa-science-on-a-sphere/sos-explorer
+publisher: noaa-science-on-a-sphere
+name: SOS Explorer®
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NOAA/SOSx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NOAA/SOSx
+identifiers:
+- winget: NOAA.SOSx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NOAA/SOSx
+aliases: []

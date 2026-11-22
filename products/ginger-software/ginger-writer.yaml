@@ -1,0 +1,11 @@
+key: ginger-software/ginger-writer
+publisher: ginger-software
+name: Ginger Writer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ginger/GingerWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ginger/GingerWriter
+identifiers:
+- winget: Ginger.GingerWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ginger/GingerWriter
+aliases: []

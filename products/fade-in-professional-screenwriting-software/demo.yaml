@@ -1,0 +1,12 @@
+key: fade-in-professional-screenwriting-software/demo
+publisher: fade-in-professional-screenwriting-software
+name: Fade In Professional Screenwriting Software Demo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FadeIn/FadeIn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FadeIn/FadeIn
+identifiers:
+- winget: FadeIn.FadeIn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FadeIn/FadeIn
+aliases:
+- fade-in-professional-screenwriting-software/fade-in-professional-screenwriting-software-demo

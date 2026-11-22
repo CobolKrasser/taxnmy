@@ -1,0 +1,11 @@
+key: alecdotdev/markpad
+publisher: alecdotdev
+name: Markpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alecdotdev/Markpad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alecdotdev/Markpad
+identifiers:
+- winget: alecdotdev.Markpad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alecdotdev/Markpad
+aliases: []

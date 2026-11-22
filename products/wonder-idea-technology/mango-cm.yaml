@@ -1,0 +1,11 @@
+key: wonder-idea-technology/mango-cm
+publisher: wonder-idea-technology
+name: Mango CM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WonderIdea/MangoCharacterMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WonderIdea/MangoCharacterMaker
+identifiers:
+- winget: WonderIdea.MangoCharacterMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WonderIdea/MangoCharacterMaker
+aliases: []

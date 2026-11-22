@@ -1,0 +1,11 @@
+key: nurgo-software/aquasnap
+publisher: nurgo-software
+name: AquaSnap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NurgoSoftware/AquaSnap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NurgoSoftware/AquaSnap
+identifiers:
+- winget: NurgoSoftware.AquaSnap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NurgoSoftware/AquaSnap
+aliases: []

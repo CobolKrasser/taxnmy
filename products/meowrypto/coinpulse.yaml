@@ -1,0 +1,11 @@
+key: meowrypto/coinpulse
+publisher: meowrypto
+name: CoinPulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meowrypto/CoinPulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meowrypto/CoinPulse
+identifiers:
+- winget: Meowrypto.CoinPulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meowrypto/CoinPulse
+aliases: []

@@ -1,0 +1,12 @@
+key: teamviewer/host
+publisher: teamviewer
+name: TeamViewer Host
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer/Host
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer/Host
+identifiers:
+- winget: TeamViewer.TeamViewer.Host
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer/Host
+aliases:
+- teamviewer/teamviewer-host

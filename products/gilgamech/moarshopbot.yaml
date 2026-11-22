@@ -1,0 +1,11 @@
+key: gilgamech/moarshopbot
+publisher: gilgamech
+name: MoarShopBot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gilgamech/MoarShopBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gilgamech/MoarShopBot
+identifiers:
+- winget: Gilgamech.MoarShopBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gilgamech/MoarShopBot
+aliases: []

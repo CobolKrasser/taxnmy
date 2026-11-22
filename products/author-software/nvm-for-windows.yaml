@@ -1,0 +1,11 @@
+key: author-software/nvm-for-windows
+publisher: author-software
+name: NVM for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorSoftware/NVMWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorSoftware/NVMWindows
+identifiers:
+- winget: AuthorSoftware.NVMWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorSoftware/NVMWindows
+aliases: []

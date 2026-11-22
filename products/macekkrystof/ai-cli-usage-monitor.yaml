@@ -1,0 +1,11 @@
+key: macekkrystof/ai-cli-usage-monitor
+publisher: macekkrystof
+name: AI CLI Usage Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macekkrystof/ClaudeCodeUsageMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macekkrystof/ClaudeCodeUsageMonitor
+identifiers:
+- winget: macekkrystof.ClaudeCodeUsageMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macekkrystof/ClaudeCodeUsageMonitor
+aliases: []

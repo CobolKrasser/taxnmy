@@ -1,0 +1,11 @@
+key: dev-fynn/winget-repo-client
+publisher: dev-fynn
+name: Winget-Repo Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev-fYnn/Winget-Repo-Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev-fYnn/Winget-Repo-Client
+identifiers:
+- winget: dev-fYnn.Winget-Repo-Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev-fYnn/Winget-Repo-Client
+aliases: []

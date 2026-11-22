@@ -1,0 +1,12 @@
+key: microdicom/dicom-viewer
+publisher: microdicom
+name: MicroDicom DICOM Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroDicom/DICOMViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroDicom/DICOMViewer
+identifiers:
+- winget: MicroDicom.DICOMViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroDicom/DICOMViewer
+aliases:
+- microdicom/microdicom-dicom-viewer

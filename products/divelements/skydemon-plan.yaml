@@ -1,0 +1,11 @@
+key: divelements/skydemon-plan
+publisher: divelements
+name: SkyDemon Plan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Divelements/SkyDemon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Divelements/SkyDemon
+identifiers:
+- winget: Divelements.SkyDemon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Divelements/SkyDemon
+aliases: []

@@ -1,0 +1,11 @@
+key: crystal-art-software/newsleecher
+publisher: crystal-art-software
+name: NewsLeecher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalArtSoftware/NewsLeecher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalArtSoftware/NewsLeecher
+identifiers:
+- winget: CrystalArtSoftware.NewsLeecher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalArtSoftware/NewsLeecher
+aliases: []

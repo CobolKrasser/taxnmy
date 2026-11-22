@@ -1,0 +1,11 @@
+key: adinstruments/lt-sampling
+publisher: adinstruments
+name: Lt Sampling
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LtSampling
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LtSampling
+identifiers:
+- winget: ADInstruments.LtSampling
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LtSampling
+aliases: []

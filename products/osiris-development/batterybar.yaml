@@ -1,0 +1,11 @@
+key: osiris-development/batterybar
+publisher: osiris-development
+name: BatteryBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OsirisDevelopment/BatteryBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OsirisDevelopment/BatteryBar
+identifiers:
+- winget: OsirisDevelopment.BatteryBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OsirisDevelopment/BatteryBar
+aliases: []

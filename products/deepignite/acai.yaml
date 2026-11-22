@@ -1,0 +1,11 @@
+key: deepignite/acai
+publisher: deepignite
+name: Acai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepIgnite/Acai
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepIgnite/Acai
+identifiers:
+- winget: DeepIgnite.Acai
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepIgnite/Acai
+aliases: []

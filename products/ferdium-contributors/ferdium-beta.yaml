@@ -1,0 +1,11 @@
+key: ferdium-contributors/ferdium-beta
+publisher: ferdium-contributors
+name: Ferdium Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Ferdium/Ferdium/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Ferdium/Ferdium/Beta
+identifiers:
+- winget: Ferdium.Ferdium.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Ferdium/Ferdium/Beta
+aliases: []

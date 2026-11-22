@@ -1,0 +1,12 @@
+key: opendsc/resources-portable
+publisher: opendsc
+name: OpenDsc Resources Portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Resources/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Resources/Portable
+identifiers:
+- winget: OpenDsc.Resources.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenDsc/Resources/Portable
+aliases:
+- opendsc/opendsc-resources-portable

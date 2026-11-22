@@ -1,0 +1,11 @@
+key: wsurge/wsurge
+publisher: wsurge
+name: wsurge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wsurge/wsurge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wsurge/wsurge
+identifiers:
+- winget: wsurge.wsurge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wsurge/wsurge
+aliases: []

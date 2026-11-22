@@ -1,0 +1,11 @@
+key: throneproj/throne
+publisher: throneproj
+name: Throne
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Throneproj/Throne
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Throneproj/Throne
+identifiers:
+- winget: Throneproj.Throne
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Throneproj/Throne
+aliases: []

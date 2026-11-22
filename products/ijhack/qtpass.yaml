@@ -1,0 +1,11 @@
+key: ijhack/qtpass
+publisher: ijhack
+name: QtPass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IJHack/QtPass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IJHack/QtPass
+identifiers:
+- winget: IJHack.QtPass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IJHack/QtPass
+aliases: []

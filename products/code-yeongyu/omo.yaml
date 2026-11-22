@@ -1,0 +1,13 @@
+key: code-yeongyu/omo
+publisher: code-yeongyu
+name: OmO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code-yeongyu/OmO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code-yeongyu/OmO
+identifiers:
+- winget: code-yeongyu.OmO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code-yeongyu/OmO
+- winget: code-yeongyu.OmO.Baseline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code-yeongyu/OmO/Baseline
+aliases: []

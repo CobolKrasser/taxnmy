@@ -1,0 +1,11 @@
+key: the-maxthon-authors/maxthon
+publisher: the-maxthon-authors
+name: Maxthon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon
+identifiers:
+- winget: Maxthon.Maxthon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon
+aliases: []

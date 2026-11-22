@@ -1,0 +1,11 @@
+key: learning-machines/soundcraft
+publisher: learning-machines
+name: SoundCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/SoundCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/SoundCraft
+identifiers:
+- winget: ArtCraft.SoundCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/SoundCraft
+aliases: []

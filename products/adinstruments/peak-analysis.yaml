@@ -1,0 +1,12 @@
+key: adinstruments/peak-analysis
+publisher: adinstruments
+name: ADInstruments Peak Analysis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/PeakAnalysis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/PeakAnalysis
+identifiers:
+- winget: ADInstruments.LabChart.Module.PeakAnalysis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/PeakAnalysis
+aliases:
+- adinstruments/adinstruments-peak-analysis

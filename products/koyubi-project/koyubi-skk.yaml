@@ -1,0 +1,11 @@
+key: koyubi-project/koyubi-skk
+publisher: koyubi-project
+name: Koyubi SKK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Koyubi/SKK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Koyubi/SKK
+identifiers:
+- winget: Koyubi.SKK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Koyubi/SKK
+aliases: []

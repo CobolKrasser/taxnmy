@@ -1,0 +1,11 @@
+key: coldsand803/dsh-desktop
+publisher: coldsand803
+name: DSH Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdSand803/DSHDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdSand803/DSHDesktop
+identifiers:
+- winget: ColdSand803.DSHDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColdSand803/DSHDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: audient/sono
+publisher: audient
+name: Sono
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/Sono
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/Sono
+identifiers:
+- winget: Audient.Sono
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/Sono
+aliases: []

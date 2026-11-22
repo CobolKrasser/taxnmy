@@ -1,0 +1,12 @@
+key: mullvad-vpn/loader
+publisher: mullvad-vpn
+name: Mullvad VPN loader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPNLoader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPNLoader
+identifiers:
+- winget: MullvadVPN.MullvadVPNLoader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPNLoader
+aliases:
+- mullvad-vpn/mullvad-vpn-loader

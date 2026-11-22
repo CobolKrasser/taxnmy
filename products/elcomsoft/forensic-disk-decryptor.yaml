@@ -1,0 +1,12 @@
+key: elcomsoft/forensic-disk-decryptor
+publisher: elcomsoft
+name: Elcomsoft Forensic Disk Decryptor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/ForensicDiskDecryptor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/ForensicDiskDecryptor
+identifiers:
+- winget: Elcomsoft.ForensicDiskDecryptor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/ForensicDiskDecryptor
+aliases:
+- elcomsoft/elcomsoft-forensic-disk-decryptor

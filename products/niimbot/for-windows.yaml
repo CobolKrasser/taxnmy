@@ -1,0 +1,12 @@
+key: niimbot/for-windows
+publisher: niimbot
+name: NIIMBOT for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Niimbot/NIIMBOT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Niimbot/NIIMBOT
+identifiers:
+- winget: Niimbot.NIIMBOT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Niimbot/NIIMBOT
+aliases:
+- niimbot/niimbot-for-windows

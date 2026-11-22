@@ -1,0 +1,11 @@
+key: the-sz-development/trion
+publisher: the-sz-development
+name: Trion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Trion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Trion
+identifiers:
+- winget: the-sz.Trion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Trion
+aliases: []

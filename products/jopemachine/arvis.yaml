@@ -1,0 +1,11 @@
+key: jopemachine/arvis
+publisher: jopemachine
+name: Arvis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jopemachine/Arvis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jopemachine/Arvis
+identifiers:
+- winget: jopemachine.Arvis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jopemachine/Arvis
+aliases: []

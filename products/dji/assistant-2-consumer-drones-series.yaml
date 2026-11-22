@@ -1,0 +1,12 @@
+key: dji/assistant-2-consumer-drones-series
+publisher: dji
+name: DJI Assistant 2 (Consumer Drones Series)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ConsumerDronesSeries
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ConsumerDronesSeries
+identifiers:
+- winget: DJI.DJIAssistant2.ConsumerDronesSeries
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ConsumerDronesSeries
+aliases:
+- dji/dji-assistant-2-consumer-drones-series

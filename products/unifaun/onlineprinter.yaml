@@ -1,0 +1,12 @@
+key: unifaun/onlineprinter
+publisher: unifaun
+name: Unifaun OnlinePrinter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unifaun/UnifaunOnlinePrinter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unifaun/UnifaunOnlinePrinter
+identifiers:
+- winget: Unifaun.UnifaunOnlinePrinter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unifaun/UnifaunOnlinePrinter
+aliases:
+- unifaun/unifaun-onlineprinter

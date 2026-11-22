@@ -1,0 +1,11 @@
+key: kang-lin-studio/rabbit-remote-control
+publisher: kang-lin-studio
+name: Rabbit Remote Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KangLin/RabbitRemoteControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KangLin/RabbitRemoteControl
+identifiers:
+- winget: KangLin.RabbitRemoteControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KangLin/RabbitRemoteControl
+aliases: []

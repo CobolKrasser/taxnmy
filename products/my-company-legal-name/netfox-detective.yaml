@@ -1,0 +1,11 @@
+key: my-company-legal-name/netfox-detective
+publisher: my-company-legal-name
+name: Netfox.Detective
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BUT/NetfoxDetective
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BUT/NetfoxDetective
+identifiers:
+- winget: BUT.NetfoxDetective
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BUT/NetfoxDetective
+aliases: []

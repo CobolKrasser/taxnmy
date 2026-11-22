@@ -1,0 +1,11 @@
+key: gaijin-network/starconflict-launcher
+publisher: gaijin-network
+name: StarConflict Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/StarConflict
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/StarConflict
+identifiers:
+- winget: GaijinNetwork.StarConflict
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/StarConflict
+aliases: []

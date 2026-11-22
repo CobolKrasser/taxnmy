@@ -1,0 +1,11 @@
+key: promptexecution/ledgrrr
+publisher: promptexecution
+name: ledgrrr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PromptExecution/ledgrrr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PromptExecution/ledgrrr
+identifiers:
+- winget: PromptExecution.ledgrrr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PromptExecution/ledgrrr
+aliases: []

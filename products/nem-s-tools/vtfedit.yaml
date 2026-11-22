@@ -1,0 +1,11 @@
+key: nem-s-tools/vtfedit
+publisher: nem-s-tools
+name: VTFEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyanGregg/VTFEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyanGregg/VTFEdit
+identifiers:
+- winget: RyanGregg.VTFEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyanGregg/VTFEdit
+aliases: []

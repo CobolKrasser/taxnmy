@@ -1,0 +1,11 @@
+key: gnome-and-yorba-foundation/shotwell
+publisher: gnome-and-yorba-foundation
+name: Shotwell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Shotwell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Shotwell
+identifiers:
+- winget: gnome.Shotwell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Shotwell
+aliases: []

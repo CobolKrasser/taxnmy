@@ -1,0 +1,11 @@
+key: gdiobjects/xbar
+publisher: gdiobjects
+name: xBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gdiObjects/xBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gdiObjects/xBar
+identifiers:
+- winget: gdiObjects.xBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gdiObjects/xBar
+aliases: []

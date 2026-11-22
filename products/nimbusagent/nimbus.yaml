@@ -1,0 +1,11 @@
+key: nimbusagent/nimbus
+publisher: nimbusagent
+name: Nimbus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbusAgent/Nimbus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbusAgent/Nimbus
+identifiers:
+- winget: NimbusAgent.Nimbus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimbusAgent/Nimbus
+aliases: []

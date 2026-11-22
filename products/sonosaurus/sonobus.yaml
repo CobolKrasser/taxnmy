@@ -1,0 +1,11 @@
+key: sonosaurus/sonobus
+publisher: sonosaurus
+name: SonoBus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonosaurus/SonoBus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonosaurus/SonoBus
+identifiers:
+- winget: Sonosaurus.SonoBus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sonosaurus/SonoBus
+aliases: []

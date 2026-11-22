@@ -1,0 +1,11 @@
+key: softwareok/q-dir
+publisher: softwareok
+name: Q-Dir
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/Q-Dir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/Q-Dir
+identifiers:
+- winget: SoftwareOK.Q-Dir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/Q-Dir
+aliases: []

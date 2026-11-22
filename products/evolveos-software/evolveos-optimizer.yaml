@@ -1,0 +1,11 @@
+key: evolveos-software/evolveos-optimizer
+publisher: evolveos-software
+name: EvolveOS Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvolveOS/Optimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvolveOS/Optimizer
+identifiers:
+- winget: EvolveOS.Optimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvolveOS/Optimizer
+aliases: []

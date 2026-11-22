@@ -1,0 +1,11 @@
+key: bartels-media/macrorecorder
+publisher: bartels-media
+name: MacroRecorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartelsMedia/MacroRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartelsMedia/MacroRecorder
+identifiers:
+- winget: BartelsMedia.MacroRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BartelsMedia/MacroRecorder
+aliases: []

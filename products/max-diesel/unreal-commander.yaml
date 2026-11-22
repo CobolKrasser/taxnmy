@@ -1,0 +1,13 @@
+key: max-diesel/unreal-commander
+publisher: max-diesel
+name: Unreal Commander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxDiesel/UnrealCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxDiesel/UnrealCommander
+identifiers:
+- winget: MaxDiesel.UnrealCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxDiesel/UnrealCommander
+- winget: MaxDiesel.UnrealCommander.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxDiesel/UnrealCommander/Beta
+aliases: []

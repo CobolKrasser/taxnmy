@@ -1,0 +1,11 @@
+key: the-sz-development/lacey
+publisher: the-sz-development
+name: Lacey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Lacey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Lacey
+identifiers:
+- winget: the-sz.Lacey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Lacey
+aliases: []

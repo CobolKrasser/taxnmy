@@ -1,0 +1,11 @@
+key: webosbrew/webos-dev-manager
+publisher: webosbrew
+name: webOS Dev Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/webosbrew/webOSDevManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/webosbrew/webOSDevManager
+identifiers:
+- winget: webosbrew.webOSDevManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/webosbrew/webOSDevManager
+aliases: []

@@ -1,0 +1,11 @@
+key: tingping/plist-viewer
+publisher: tingping
+name: Plist Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TingPing/plist-viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TingPing/plist-viewer
+identifiers:
+- winget: TingPing.plist-viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TingPing/plist-viewer
+aliases: []

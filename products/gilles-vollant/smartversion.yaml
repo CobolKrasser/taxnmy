@@ -1,0 +1,11 @@
+key: gilles-vollant/smartversion
+publisher: gilles-vollant
+name: Smartversion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gvollant/Smartversion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gvollant/Smartversion
+identifiers:
+- winget: gvollant.Smartversion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gvollant/Smartversion
+aliases: []

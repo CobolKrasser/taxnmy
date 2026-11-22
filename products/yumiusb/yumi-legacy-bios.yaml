@@ -1,0 +1,11 @@
+key: yumiusb/yumi-legacy-bios
+publisher: yumiusb
+name: Yumi Legacy (BIOS)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YumiUsb/Legacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YumiUsb/Legacy
+identifiers:
+- winget: YumiUsb.Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YumiUsb/Legacy
+aliases: []

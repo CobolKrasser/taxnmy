@@ -1,0 +1,11 @@
+key: abrignoni/aleapp-cli
+publisher: abrignoni
+name: ALEAPP CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abrignoni/ALEAPP-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abrignoni/ALEAPP-cli
+identifiers:
+- winget: abrignoni.ALEAPP-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abrignoni/ALEAPP-cli
+aliases: []

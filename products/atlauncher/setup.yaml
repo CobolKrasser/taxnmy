@@ -1,0 +1,12 @@
+key: atlauncher/setup
+publisher: atlauncher
+name: ATLauncher Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATLauncher/ATLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATLauncher/ATLauncher
+identifiers:
+- winget: ATLauncher.ATLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATLauncher/ATLauncher
+aliases:
+- atlauncher/atlauncher-setup

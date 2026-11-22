@@ -1,0 +1,11 @@
+key: solidcraft-contributors/solidcraft
+publisher: solidcraft-contributors
+name: SolidCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bherbruck/SolidCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bherbruck/SolidCraft
+identifiers:
+- winget: bherbruck.SolidCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bherbruck/SolidCraft
+aliases: []

@@ -1,0 +1,11 @@
+key: samygo/sammywidgets
+publisher: samygo
+name: SammyWidgets
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/SammyWidgets
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/SammyWidgets
+identifiers:
+- winget: SamyGO.SammyWidgets
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/SammyWidgets
+aliases: []

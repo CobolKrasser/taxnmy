@@ -1,0 +1,11 @@
+key: mlcousek/claude-usage-tray
+publisher: mlcousek
+name: Claude Usage Tray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlcousek/ClaudeUsageTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlcousek/ClaudeUsageTray
+identifiers:
+- winget: mlcousek.ClaudeUsageTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlcousek/ClaudeUsageTray
+aliases: []

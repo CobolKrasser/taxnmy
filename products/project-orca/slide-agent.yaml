@@ -1,0 +1,11 @@
+key: project-orca/slide-agent
+publisher: project-orca
+name: Slide Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slide/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slide/Agent
+identifiers:
+- winget: Slide.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slide/Agent
+aliases: []

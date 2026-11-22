@@ -1,0 +1,11 @@
+key: fission-project/fission-cli
+publisher: fission-project
+name: Fission CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fission/Fission/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fission/Fission/CLI
+identifiers:
+- winget: Fission.Fission.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fission/Fission/CLI
+aliases: []

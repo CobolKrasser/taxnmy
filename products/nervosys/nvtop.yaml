@@ -1,0 +1,11 @@
+key: nervosys/nvtop
+publisher: nervosys
+name: NVTOP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nervosys/Nvtop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nervosys/Nvtop
+identifiers:
+- winget: Nervosys.Nvtop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nervosys/Nvtop
+aliases: []

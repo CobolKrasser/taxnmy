@@ -1,0 +1,11 @@
+key: symphony-communication-services/symphony-messaging
+publisher: symphony-communication-services
+name: Symphony Messaging
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symphony/Symphony
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symphony/Symphony
+identifiers:
+- winget: Symphony.Symphony
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Symphony/Symphony
+aliases: []

@@ -1,0 +1,11 @@
+key: daniel-scalzi/helios-launcher
+publisher: daniel-scalzi
+name: Helios Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dscalzi/HeliosLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dscalzi/HeliosLauncher
+identifiers:
+- winget: dscalzi.HeliosLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dscalzi/HeliosLauncher
+aliases: []

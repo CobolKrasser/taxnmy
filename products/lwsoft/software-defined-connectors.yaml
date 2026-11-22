@@ -1,0 +1,11 @@
+key: lwsoft/software-defined-connectors
+publisher: lwsoft
+name: Software Defined Connectors
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LwSoft/SoftwareDefinedConnectors
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LwSoft/SoftwareDefinedConnectors
+identifiers:
+- winget: LwSoft.SoftwareDefinedConnectors
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LwSoft/SoftwareDefinedConnectors
+aliases: []

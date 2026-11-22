@@ -1,0 +1,11 @@
+key: dreamsourcelab/dsview
+publisher: dreamsourcelab
+name: DSView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DreamSourceLab/DSView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DreamSourceLab/DSView
+identifiers:
+- winget: DreamSourceLab.DSView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DreamSourceLab/DSView
+aliases: []

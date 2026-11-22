@@ -1,0 +1,11 @@
+key: open-source/grisbi
+publisher: open-source
+name: Grisbi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSource/Grisbi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSource/Grisbi
+identifiers:
+- winget: OpenSource.Grisbi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSource/Grisbi
+aliases: []

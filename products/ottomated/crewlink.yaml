@@ -1,0 +1,11 @@
+key: ottomated/crewlink
+publisher: ottomated
+name: CrewLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ottomated/CrewLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ottomated/CrewLink
+identifiers:
+- winget: Ottomated.CrewLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ottomated/CrewLink
+aliases: []

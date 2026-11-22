@@ -5,4 +5,7 @@ kind: software
 source: https://notepad-plus-plus.org/downloads/
 versions:
   source: https://notepad-plus-plus.org/downloads/
+identifiers:
+- winget: Notepad++.Notepad++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notepad++/Notepad++
 aliases: []

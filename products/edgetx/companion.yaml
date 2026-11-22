@@ -1,0 +1,12 @@
+key: edgetx/companion
+publisher: edgetx
+name: EdgeTX Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgeTX/Companion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgeTX/Companion
+identifiers:
+- winget: EdgeTX.Companion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdgeTX/Companion
+aliases:
+- edgetx/edgetx-companion

@@ -1,0 +1,11 @@
+key: hms-industrial-networks/talk2m-connection-checker
+publisher: hms-industrial-networks
+name: Talk2M Connection Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/Talk2MConnectionChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/Talk2MConnectionChecker
+identifiers:
+- winget: HMS.Talk2MConnectionChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMS/Talk2MConnectionChecker
+aliases: []

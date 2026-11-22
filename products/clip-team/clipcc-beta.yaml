@@ -1,0 +1,11 @@
+key: clip-team/clipcc-beta
+publisher: clip-team
+name: ClipCC Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipTeam/ClipCC/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipTeam/ClipCC/Beta
+identifiers:
+- winget: ClipTeam.ClipCC.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipTeam/ClipCC/Beta
+aliases: []

@@ -1,0 +1,11 @@
+key: connecting-apps/kemforge
+publisher: connecting-apps
+name: Kemforge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConnectingApps/Kemforge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConnectingApps/Kemforge
+identifiers:
+- winget: ConnectingApps.Kemforge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ConnectingApps/Kemforge
+aliases: []

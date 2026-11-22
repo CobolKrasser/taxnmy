@@ -1,0 +1,11 @@
+key: ilastik-interactive-machine-learning-for-bio-image-analysis/ilastik
+publisher: ilastik-interactive-machine-learning-for-bio-image-analysis
+name: ilastik
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilastik/ilastik
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilastik/ilastik
+identifiers:
+- winget: ilastik.ilastik
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilastik/ilastik
+aliases: []

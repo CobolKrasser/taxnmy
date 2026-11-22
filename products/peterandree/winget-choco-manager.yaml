@@ -1,0 +1,11 @@
+key: peterandree/winget-choco-manager
+publisher: peterandree
+name: winget-choco-manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/peterandree/winget-chocolatey-manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/peterandree/winget-chocolatey-manager
+identifiers:
+- winget: peterandree.winget-chocolatey-manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/peterandree/winget-chocolatey-manager
+aliases: []

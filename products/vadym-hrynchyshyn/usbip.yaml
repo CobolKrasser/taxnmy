@@ -1,0 +1,11 @@
+key: vadym-hrynchyshyn/usbip
+publisher: vadym-hrynchyshyn
+name: USBip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vadimgrn/usbip-win2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vadimgrn/usbip-win2
+identifiers:
+- winget: vadimgrn.usbip-win2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vadimgrn/usbip-win2
+aliases: []

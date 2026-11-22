@@ -1,0 +1,11 @@
+key: chemaxon/jchem-net-api
+publisher: chemaxon
+name: JChem .NET API
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/jchemdotnetapi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/jchemdotnetapi
+identifiers:
+- winget: ChemAxon.jchemdotnetapi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemAxon/jchemdotnetapi
+aliases: []

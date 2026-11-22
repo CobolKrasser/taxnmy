@@ -1,0 +1,11 @@
+key: rigsmith/rigsmith
+publisher: rigsmith
+name: RigSmith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/Rigsmith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/Rigsmith
+identifiers:
+- winget: RigSmith.Rigsmith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/Rigsmith
+aliases: []

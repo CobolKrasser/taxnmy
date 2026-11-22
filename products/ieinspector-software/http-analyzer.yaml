@@ -1,0 +1,11 @@
+key: ieinspector-software/http-analyzer
+publisher: ieinspector-software
+name: HTTP Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IEInspector/HTTPAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IEInspector/HTTPAnalyzer
+identifiers:
+- winget: IEInspector.HTTPAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IEInspector/HTTPAnalyzer
+aliases: []

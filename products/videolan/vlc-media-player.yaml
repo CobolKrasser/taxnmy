@@ -1,0 +1,13 @@
+key: videolan/vlc-media-player
+publisher: videolan
+name: VLC media player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/VLC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/VLC
+identifiers:
+- winget: VideoLAN.VLC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/VLC
+- winget: VideoLAN.VLC.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoLAN/VLC/Nightly
+aliases: []

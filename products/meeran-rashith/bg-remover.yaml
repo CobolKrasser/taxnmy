@@ -1,0 +1,11 @@
+key: meeran-rashith/bg-remover
+publisher: meeran-rashith
+name: BG Remover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeeranRashith/BGRemover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeeranRashith/BGRemover
+identifiers:
+- winget: MeeranRashith.BGRemover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeeranRashith/BGRemover
+aliases: []

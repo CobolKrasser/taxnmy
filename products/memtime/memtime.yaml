@@ -1,0 +1,11 @@
+key: memtime/memtime
+publisher: memtime
+name: memtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/memtime/memtime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/memtime/memtime
+identifiers:
+- winget: memtime.memtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/memtime/memtime
+aliases: []

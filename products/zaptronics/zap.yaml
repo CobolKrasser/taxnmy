@@ -1,0 +1,11 @@
+key: zaptronics/zap
+publisher: zaptronics
+name: Zap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zaptronics/Zap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zaptronics/Zap
+identifiers:
+- winget: Zaptronics.Zap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zaptronics/Zap
+aliases: []

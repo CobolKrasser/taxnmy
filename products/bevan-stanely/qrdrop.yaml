@@ -1,0 +1,11 @@
+key: bevan-stanely/qrdrop
+publisher: bevan-stanely
+name: qrdrop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stan-Ely/qrdrop-app
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stan-Ely/qrdrop-app
+identifiers:
+- winget: Stan-Ely.qrdrop-app
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stan-Ely/qrdrop-app
+aliases: []

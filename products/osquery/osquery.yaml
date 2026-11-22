@@ -1,0 +1,11 @@
+key: osquery/osquery
+publisher: osquery
+name: osquery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osquery/osquery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osquery/osquery
+identifiers:
+- winget: osquery.osquery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osquery/osquery
+aliases: []

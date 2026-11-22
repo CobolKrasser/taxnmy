@@ -1,0 +1,11 @@
+key: yummyzzzz/coreinstaller-exe
+publisher: yummyzzzz
+name: CoreInstaller.exe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yummyzzzz/CoreInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yummyzzzz/CoreInstaller
+identifiers:
+- winget: yummyzzzz.CoreInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yummyzzzz/CoreInstaller
+aliases: []

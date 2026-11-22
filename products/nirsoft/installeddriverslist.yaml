@@ -1,0 +1,11 @@
+key: nirsoft/installeddriverslist
+publisher: nirsoft
+name: InstalledDriversList
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InstalledDriversList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InstalledDriversList
+identifiers:
+- winget: NirSoft.InstalledDriversList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InstalledDriversList
+aliases: []

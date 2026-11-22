@@ -1,0 +1,12 @@
+key: 0patch/agent
+publisher: 0patch
+name: 0patch Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACROSSecurity/0patch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACROSSecurity/0patch
+identifiers:
+- winget: ACROSSecurity.0patch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACROSSecurity/0patch
+aliases:
+- 0patch/0patch-agent

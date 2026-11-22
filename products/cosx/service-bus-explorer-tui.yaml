@@ -1,0 +1,11 @@
+key: cosx/service-bus-explorer-tui
+publisher: cosx
+name: Service Bus Explorer TUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosX/ServiceBusExplorerTui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosX/ServiceBusExplorerTui
+identifiers:
+- winget: CosX.ServiceBusExplorerTui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosX/ServiceBusExplorerTui
+aliases: []

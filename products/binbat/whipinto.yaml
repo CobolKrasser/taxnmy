@@ -1,0 +1,11 @@
+key: binbat/whipinto
+publisher: binbat
+name: whipinto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binbat/whipinto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binbat/whipinto
+identifiers:
+- winget: binbat.whipinto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binbat/whipinto
+aliases: []

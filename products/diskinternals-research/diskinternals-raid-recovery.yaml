@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-raid-recovery
+publisher: diskinternals-research
+name: DiskInternals RAID Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/RAIDRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/RAIDRecovery
+identifiers:
+- winget: DiskInternals.RAIDRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/RAIDRecovery
+aliases: []

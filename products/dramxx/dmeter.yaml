@@ -1,0 +1,11 @@
+key: dramxx/dmeter
+publisher: dramxx
+name: dMeter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dramxx/dMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dramxx/dMeter
+identifiers:
+- winget: dramxx.dMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dramxx/dMeter
+aliases: []

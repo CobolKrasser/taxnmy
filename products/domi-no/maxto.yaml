@@ -1,0 +1,11 @@
+key: domi-no/maxto
+publisher: domi-no
+name: MaxTo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Domino/MaxTo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Domino/MaxTo
+identifiers:
+- winget: Domino.MaxTo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Domino/MaxTo
+aliases: []

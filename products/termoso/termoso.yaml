@@ -1,0 +1,11 @@
+key: termoso/termoso
+publisher: termoso
+name: Termoso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termoso/Termoso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termoso/Termoso
+identifiers:
+- winget: Termoso.Termoso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Termoso/Termoso
+aliases: []

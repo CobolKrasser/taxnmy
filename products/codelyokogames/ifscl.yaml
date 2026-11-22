@@ -1,0 +1,11 @@
+key: codelyokogames/ifscl
+publisher: codelyokogames
+name: IFSCL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLyokoGames/IFSCL/Standalone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLyokoGames/IFSCL/Standalone
+identifiers:
+- winget: CodeLyokoGames.IFSCL.Standalone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeLyokoGames/IFSCL/Standalone
+aliases: []

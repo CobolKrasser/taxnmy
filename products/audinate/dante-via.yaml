@@ -1,0 +1,11 @@
+key: audinate/dante-via
+publisher: audinate
+name: Dante Via
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audinate/DanteVia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audinate/DanteVia
+identifiers:
+- winget: Audinate.DanteVia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audinate/DanteVia
+aliases: []

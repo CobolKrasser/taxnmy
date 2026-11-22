@@ -1,0 +1,11 @@
+key: intel/presentmon-console
+publisher: intel
+name: PresentMon Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/PresentMon/Console
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/PresentMon/Console
+identifiers:
+- winget: Intel.PresentMon.Console
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/PresentMon/Console
+aliases: []

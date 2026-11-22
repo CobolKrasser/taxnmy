@@ -1,0 +1,12 @@
+key: brotje/service-tool-pcst
+publisher: brotje
+name: Brötje Service Tool (PCST)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brotje/ServiceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brotje/ServiceTool
+identifiers:
+- winget: Brotje.ServiceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brotje/ServiceTool
+aliases:
+- brotje/brotje-service-tool-pcst

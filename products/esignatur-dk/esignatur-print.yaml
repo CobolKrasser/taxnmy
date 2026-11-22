@@ -1,0 +1,11 @@
+key: esignatur-dk/esignatur-print
+publisher: esignatur-dk
+name: esignatur Print
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/esignatur/esignaturPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/esignatur/esignaturPrint
+identifiers:
+- winget: esignatur.esignaturPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/esignatur/esignaturPrint
+aliases: []

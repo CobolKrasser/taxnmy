@@ -1,0 +1,11 @@
+key: ajax-systems/ajax-pro-desktop
+publisher: ajax-systems
+name: Ajax PRO Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ajax/AjaxPRODesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ajax/AjaxPRODesktop
+identifiers:
+- winget: Ajax.AjaxPRODesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ajax/AjaxPRODesktop
+aliases: []

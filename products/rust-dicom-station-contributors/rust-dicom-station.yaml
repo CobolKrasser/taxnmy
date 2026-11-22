@@ -1,0 +1,11 @@
+key: rust-dicom-station-contributors/rust-dicom-station
+publisher: rust-dicom-station-contributors
+name: Rust DICOM Station
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RDS/RustDICOMStation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RDS/RustDICOMStation
+identifiers:
+- winget: RDS.RustDICOMStation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RDS/RustDICOMStation
+aliases: []

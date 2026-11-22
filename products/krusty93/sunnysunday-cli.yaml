@@ -1,0 +1,11 @@
+key: krusty93/sunnysunday-cli
+publisher: krusty93
+name: SunnySunday.Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Krusty93/SunnySunday
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Krusty93/SunnySunday
+identifiers:
+- winget: Krusty93.SunnySunday
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Krusty93/SunnySunday
+aliases: []

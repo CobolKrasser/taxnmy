@@ -1,0 +1,11 @@
+key: nolanderc/glsl-analyzer
+publisher: nolanderc
+name: glsl analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nolanderc/glsl_analyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nolanderc/glsl_analyzer
+identifiers:
+- winget: nolanderc.glsl_analyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nolanderc/glsl_analyzer
+aliases: []

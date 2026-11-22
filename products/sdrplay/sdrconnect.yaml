@@ -1,0 +1,12 @@
+key: sdrplay/sdrconnect
+publisher: sdrplay
+name: SDRplay SDRconnect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDRplay/SDRconnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDRplay/SDRconnect
+identifiers:
+- winget: SDRplay.SDRconnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SDRplay/SDRconnect
+aliases:
+- sdrplay/sdrplay-sdrconnect

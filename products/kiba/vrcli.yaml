@@ -1,0 +1,11 @@
+key: kiba/vrcli
+publisher: kiba
+name: VRCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kibalab/VRCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kibalab/VRCLI
+identifiers:
+- winget: kibalab.VRCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kibalab/VRCLI
+aliases: []

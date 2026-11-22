@@ -1,0 +1,11 @@
+key: gnome/gedit-text-editor
+publisher: gnome
+name: gedit Text Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gedit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gedit
+identifiers:
+- winget: gnome.gedit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gedit
+aliases: []

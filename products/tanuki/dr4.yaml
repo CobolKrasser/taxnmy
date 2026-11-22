@@ -1,0 +1,12 @@
+key: tanuki/dr4
+publisher: tanuki
+name: tanuki-dr4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tanuki-/tanuki-dr4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tanuki-/tanuki-dr4
+identifiers:
+- winget: tanuki-.tanuki-dr4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tanuki-/tanuki-dr4
+aliases:
+- tanuki/tanuki-dr4

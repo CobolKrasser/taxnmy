@@ -1,0 +1,11 @@
+key: softsea/cbr-reader
+publisher: softsea
+name: CBR Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CBRReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CBRReader
+identifiers:
+- winget: SoftSea.CBRReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CBRReader
+aliases: []

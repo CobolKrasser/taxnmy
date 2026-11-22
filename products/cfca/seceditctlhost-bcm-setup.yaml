@@ -1,0 +1,11 @@
+key: cfca/seceditctlhost-bcm-setup
+publisher: cfca
+name: SecEditCtlHost.BCM.Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BCM/SecEditCtl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BCM/SecEditCtl
+identifiers:
+- winget: BCM.SecEditCtl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BCM/SecEditCtl
+aliases: []

@@ -1,0 +1,11 @@
+key: gog-com/gog-galaxy
+publisher: gog-com
+name: GOG GALAXY
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOG/Galaxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOG/Galaxy
+identifiers:
+- winget: GOG.Galaxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOG/Galaxy
+aliases: []

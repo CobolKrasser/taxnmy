@@ -1,0 +1,11 @@
+key: doom-explorer/doom-explorer
+publisher: doom-explorer
+name: Doom Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoomExplorer/DoomExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoomExplorer/DoomExplorer
+identifiers:
+- winget: DoomExplorer.DoomExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoomExplorer/DoomExplorer
+aliases: []

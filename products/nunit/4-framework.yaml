@@ -1,0 +1,12 @@
+key: nunit/4-framework
+publisher: nunit
+name: NUnit 4 Framework
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NUnit/NUnit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NUnit/NUnit
+identifiers:
+- winget: NUnit.NUnit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NUnit/NUnit
+aliases:
+- nunit/nunit-4-framework

@@ -1,0 +1,11 @@
+key: itch/itch
+publisher: itch
+name: itch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ItchIo/Itch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ItchIo/Itch
+identifiers:
+- winget: ItchIo.Itch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ItchIo/Itch
+aliases: []

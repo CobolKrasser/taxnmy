@@ -1,0 +1,11 @@
+key: just-install-developers/just-install
+publisher: just-install-developers
+name: just-install
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/just-install/just-install
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/just-install/just-install
+identifiers:
+- winget: just-install.just-install
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/just-install/just-install
+aliases: []

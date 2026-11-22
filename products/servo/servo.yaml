@@ -1,0 +1,11 @@
+key: servo/servo
+publisher: servo
+name: Servo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Servo/Servo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Servo/Servo
+identifiers:
+- winget: Servo.Servo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Servo/Servo
+aliases: []

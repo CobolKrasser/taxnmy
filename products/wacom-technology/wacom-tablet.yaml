@@ -1,0 +1,11 @@
+key: wacom-technology/wacom-tablet
+publisher: wacom-technology
+name: Wacom Tablet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wacom/WacomTabletDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wacom/WacomTabletDriver
+identifiers:
+- winget: Wacom.WacomTabletDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wacom/WacomTabletDriver
+aliases: []

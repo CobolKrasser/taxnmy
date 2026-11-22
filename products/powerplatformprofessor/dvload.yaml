@@ -1,0 +1,11 @@
+key: powerplatformprofessor/dvload
+publisher: powerplatformprofessor
+name: dvload
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerPlatformProfessor/dvload
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerPlatformProfessor/dvload
+identifiers:
+- winget: PowerPlatformProfessor.dvload
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerPlatformProfessor/dvload
+aliases: []

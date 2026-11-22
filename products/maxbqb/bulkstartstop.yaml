@@ -1,0 +1,11 @@
+key: maxbqb/bulkstartstop
+publisher: maxbqb
+name: BulkStartStop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxBQb/BulkStartStop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxBQb/BulkStartStop
+identifiers:
+- winget: MaxBQb.BulkStartStop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaxBQb/BulkStartStop
+aliases: []

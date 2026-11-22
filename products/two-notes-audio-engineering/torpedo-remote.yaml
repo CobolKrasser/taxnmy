@@ -1,0 +1,11 @@
+key: two-notes-audio-engineering/torpedo-remote
+publisher: two-notes-audio-engineering
+name: Torpedo Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwonotesAudioEngineering/TorpedoRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwonotesAudioEngineering/TorpedoRemote
+identifiers:
+- winget: TwonotesAudioEngineering.TorpedoRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwonotesAudioEngineering/TorpedoRemote
+aliases: []

@@ -1,0 +1,11 @@
+key: acorn-labs/clio
+publisher: acorn-labs
+name: clio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gptscript-ai/clio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gptscript-ai/clio
+identifiers:
+- winget: gptscript-ai.clio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gptscript-ai/clio
+aliases: []

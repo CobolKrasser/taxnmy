@@ -1,0 +1,11 @@
+key: tldx-solutions/tl-dv
+publisher: tldx-solutions
+name: tl;dv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldx/tldv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldx/tldv
+identifiers:
+- winget: tldx.tldv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldx/tldv
+aliases: []

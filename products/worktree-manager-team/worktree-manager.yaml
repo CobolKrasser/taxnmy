@@ -1,0 +1,11 @@
+key: worktree-manager-team/worktree-manager
+publisher: worktree-manager-team
+name: Worktree Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/guoyongchang/WorktreeManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/guoyongchang/WorktreeManager
+identifiers:
+- winget: guoyongchang.WorktreeManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/guoyongchang/WorktreeManager
+aliases: []

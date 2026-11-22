@@ -1,0 +1,11 @@
+key: psmux/terminalmap
+publisher: psmux
+name: TerminalMap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psmux/TerminalMap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psmux/TerminalMap
+identifiers:
+- winget: psmux.TerminalMap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/psmux/TerminalMap
+aliases: []

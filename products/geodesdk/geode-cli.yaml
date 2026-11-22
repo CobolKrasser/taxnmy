@@ -1,0 +1,11 @@
+key: geodesdk/geode-cli
+publisher: geodesdk
+name: Geode CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeodeSDK/GeodeCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeodeSDK/GeodeCLI
+identifiers:
+- winget: GeodeSDK.GeodeCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeodeSDK/GeodeCLI
+aliases: []

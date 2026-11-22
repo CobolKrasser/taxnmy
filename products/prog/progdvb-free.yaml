@@ -1,0 +1,11 @@
+key: prog/progdvb-free
+publisher: prog
+name: ProgDVB Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgDVB/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgDVB/Free
+identifiers:
+- winget: Prog.ProgDVB.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgDVB/Free
+aliases: []

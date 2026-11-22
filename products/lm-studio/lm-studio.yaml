@@ -1,0 +1,11 @@
+key: lm-studio/lm-studio
+publisher: lm-studio
+name: LM Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/LMStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/LMStudio
+identifiers:
+- winget: ElementLabs.LMStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/LMStudio
+aliases: []

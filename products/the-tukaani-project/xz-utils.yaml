@@ -1,0 +1,11 @@
+key: the-tukaani-project/xz-utils
+publisher: the-tukaani-project
+name: XZ Utils
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TukaaniProject/XZUtils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TukaaniProject/XZUtils
+identifiers:
+- winget: TukaaniProject.XZUtils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TukaaniProject/XZUtils
+aliases: []

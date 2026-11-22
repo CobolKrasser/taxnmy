@@ -1,0 +1,11 @@
+key: the-ecosia-browser-authors/ecosia-browser
+publisher: the-ecosia-browser-authors
+name: Ecosia Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ecosia/EcosiaBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ecosia/EcosiaBrowser
+identifiers:
+- winget: Ecosia.EcosiaBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ecosia/EcosiaBrowser
+aliases: []

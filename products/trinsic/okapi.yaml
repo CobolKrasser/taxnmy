@@ -1,0 +1,11 @@
+key: trinsic/okapi
+publisher: trinsic
+name: okapi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/trinsic/okapi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/trinsic/okapi
+identifiers:
+- winget: trinsic.okapi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/trinsic/okapi
+aliases: []

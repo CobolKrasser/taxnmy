@@ -1,0 +1,11 @@
+key: tonhowtf/omniget
+publisher: tonhowtf
+name: OmniGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tonhowtf/OmniGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tonhowtf/OmniGet
+identifiers:
+- winget: tonhowtf.OmniGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tonhowtf/OmniGet
+aliases: []

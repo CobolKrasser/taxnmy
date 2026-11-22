@@ -1,0 +1,11 @@
+key: backstaff/installbuilder-professional-for-windows
+publisher: backstaff
+name: InstallBuilder Professional for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Professional
+identifiers:
+- winget: BackstaffSoftware.InstallBuilder.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Professional
+aliases: []

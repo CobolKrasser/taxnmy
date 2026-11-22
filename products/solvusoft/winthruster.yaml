@@ -1,0 +1,11 @@
+key: solvusoft/winthruster
+publisher: solvusoft
+name: WinThruster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Solvusoft/WinThruster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Solvusoft/WinThruster
+identifiers:
+- winget: Solvusoft.WinThruster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Solvusoft/WinThruster
+aliases: []

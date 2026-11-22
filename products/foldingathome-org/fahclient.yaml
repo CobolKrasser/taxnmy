@@ -1,0 +1,11 @@
+key: foldingathome-org/fahclient
+publisher: foldingathome-org
+name: FAHClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoldingAtHome/FoldingAtHome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoldingAtHome/FoldingAtHome
+identifiers:
+- winget: FoldingAtHome.FoldingAtHome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoldingAtHome/FoldingAtHome
+aliases: []

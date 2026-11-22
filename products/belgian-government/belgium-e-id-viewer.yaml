@@ -1,0 +1,11 @@
+key: belgian-government/belgium-e-id-viewer
+publisher: belgian-government
+name: Belgium e-ID viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelgianGovernment/eIDViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelgianGovernment/eIDViewer
+identifiers:
+- winget: BelgianGovernment.eIDViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelgianGovernment/eIDViewer
+aliases: []

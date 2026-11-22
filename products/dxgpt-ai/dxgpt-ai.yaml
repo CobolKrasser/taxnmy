@@ -1,0 +1,11 @@
+key: dxgpt-ai/dxgpt-ai
+publisher: dxgpt-ai
+name: DxGPT-Ai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBerserkers888/DxGPT-AI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBerserkers888/DxGPT-AI
+identifiers:
+- winget: CodeBerserkers888.DxGPT-AI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBerserkers888/DxGPT-AI
+aliases: []

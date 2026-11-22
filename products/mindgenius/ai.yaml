@@ -1,0 +1,12 @@
+key: mindgenius/ai
+publisher: mindgenius
+name: MindGenius AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindGenius/MindGenius/AI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindGenius/MindGenius/AI
+identifiers:
+- winget: MindGenius.MindGenius.AI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MindGenius/MindGenius/AI
+aliases:
+- mindgenius/mindgenius-ai

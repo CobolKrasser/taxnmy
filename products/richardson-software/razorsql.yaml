@@ -1,0 +1,11 @@
+key: richardson-software/razorsql
+publisher: richardson-software
+name: RazorSQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RichardsonSoftware/RazorSQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RichardsonSoftware/RazorSQL
+identifiers:
+- winget: RichardsonSoftware.RazorSQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RichardsonSoftware/RazorSQL
+aliases: []

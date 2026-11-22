@@ -1,0 +1,11 @@
+key: hibitsoftware/hibit-startup-manager
+publisher: hibitsoftware
+name: HiBit Startup Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiBitSoftware/StartUpManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiBitSoftware/StartUpManager
+identifiers:
+- winget: HiBitSoftware.StartUpManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiBitSoftware/StartUpManager
+aliases: []

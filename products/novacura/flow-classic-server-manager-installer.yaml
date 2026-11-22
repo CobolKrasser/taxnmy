@@ -1,0 +1,12 @@
+key: novacura/flow-classic-server-manager-installer
+publisher: novacura
+name: Novacura Flow Classic Server Manager Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowServerManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowServerManager
+identifiers:
+- winget: Novacura.FlowServerManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowServerManager
+aliases:
+- novacura/novacura-flow-classic-server-manager-installer

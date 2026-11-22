@@ -1,0 +1,11 @@
+key: branch-blocks/branch
+publisher: branch-blocks
+name: Branch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BranchBlocks/Branch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BranchBlocks/Branch
+identifiers:
+- winget: BranchBlocks.Branch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BranchBlocks/Branch
+aliases: []

@@ -1,0 +1,11 @@
+key: 34u/multibasecs-home-deprecated
+publisher: 34u
+name: MultiBaseCS Home (Deprecated)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/34u/MultiBaseCSHome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/34u/MultiBaseCSHome
+identifiers:
+- winget: 34u.MultiBaseCSHome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/34u/MultiBaseCSHome
+aliases: []

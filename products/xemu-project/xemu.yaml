@@ -1,0 +1,11 @@
+key: xemu-project/xemu
+publisher: xemu-project
+name: xemu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xemu-project/xemu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xemu-project/xemu
+identifiers:
+- winget: xemu-project.xemu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xemu-project/xemu
+aliases: []

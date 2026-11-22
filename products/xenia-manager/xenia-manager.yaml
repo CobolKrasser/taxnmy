@@ -1,0 +1,11 @@
+key: xenia-manager/xenia-manager
+publisher: xenia-manager
+name: Xenia Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XeniaManager/XeniaManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XeniaManager/XeniaManager
+identifiers:
+- winget: XeniaManager.XeniaManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XeniaManager/XeniaManager
+aliases: []

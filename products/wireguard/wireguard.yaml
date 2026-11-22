@@ -1,0 +1,11 @@
+key: wireguard/wireguard
+publisher: wireguard
+name: WireGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WireGuard/WireGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WireGuard/WireGuard
+identifiers:
+- winget: WireGuard.WireGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WireGuard/WireGuard
+aliases: []

@@ -1,0 +1,11 @@
+key: toevi/winmd
+publisher: toevi
+name: WinMD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/toevi/WinMD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/toevi/WinMD
+identifiers:
+- winget: toevi.WinMD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/toevi/WinMD
+aliases: []

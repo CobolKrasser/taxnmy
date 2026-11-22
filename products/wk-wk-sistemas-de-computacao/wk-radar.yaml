@@ -1,0 +1,11 @@
+key: wk-wk-sistemas-de-computacao/wk-radar
+publisher: wk-wk-sistemas-de-computacao
+name: WK Radar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WK/WKRadar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WK/WKRadar
+identifiers:
+- winget: WK.WKRadar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WK/WKRadar
+aliases: []

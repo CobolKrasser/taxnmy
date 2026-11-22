@@ -1,0 +1,11 @@
+key: qiazo/fafa-runner
+publisher: qiazo
+name: FaFa Runner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaFaRunner/FaFaRunner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaFaRunner/FaFaRunner
+identifiers:
+- winget: FaFaRunner.FaFaRunner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FaFaRunner/FaFaRunner
+aliases: []

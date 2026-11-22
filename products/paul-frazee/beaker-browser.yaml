@@ -1,0 +1,11 @@
+key: paul-frazee/beaker-browser
+publisher: paul-frazee
+name: Beaker Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulFrazee/BeakerBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulFrazee/BeakerBrowser
+identifiers:
+- winget: PaulFrazee.BeakerBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulFrazee/BeakerBrowser
+aliases: []

@@ -1,0 +1,11 @@
+key: tagecode/chm-assistant
+publisher: tagecode
+name: CHM Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TageCode/CHMAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TageCode/CHMAssistant
+identifiers:
+- winget: TageCode.CHMAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TageCode/CHMAssistant
+aliases: []

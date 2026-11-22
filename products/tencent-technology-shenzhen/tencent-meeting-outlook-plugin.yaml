@@ -1,0 +1,11 @@
+key: tencent-technology-shenzhen/tencent-meeting-outlook-plugin
+publisher: tencent-technology-shenzhen
+name: Tencent Meeting Outlook Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeMeetOutlookPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeMeetOutlookPlugin
+identifiers:
+- winget: Tencent.WeMeetOutlookPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeMeetOutlookPlugin
+aliases: []

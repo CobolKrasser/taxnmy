@@ -1,0 +1,11 @@
+key: kayapater/video-downloader
+publisher: kayapater
+name: Video Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kayapater/VideoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kayapater/VideoDownloader
+identifiers:
+- winget: kayapater.VideoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kayapater/VideoDownloader
+aliases: []

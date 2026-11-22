@@ -1,0 +1,11 @@
+key: ic005k/opencore-auxiliary-tools
+publisher: ic005k
+name: OpenCore Auxiliary Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ic005k/OCAuxiliaryTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ic005k/OCAuxiliaryTools
+identifiers:
+- winget: ic005k.OCAuxiliaryTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ic005k/OCAuxiliaryTools
+aliases: []

@@ -1,0 +1,12 @@
+key: serverless/framework
+publisher: serverless
+name: Serverless Framework
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverless/Serverless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverless/Serverless
+identifiers:
+- winget: Serverless.Serverless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Serverless/Serverless
+aliases:
+- serverless/serverless-framework

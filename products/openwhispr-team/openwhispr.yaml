@@ -1,0 +1,11 @@
+key: openwhispr-team/openwhispr
+publisher: openwhispr-team
+name: OpenWhispr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhispr/OpenWhispr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhispr/OpenWhispr
+identifiers:
+- winget: OpenWhispr.OpenWhispr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhispr/OpenWhispr
+aliases: []

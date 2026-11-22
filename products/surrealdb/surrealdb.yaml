@@ -1,0 +1,11 @@
+key: surrealdb/surrealdb
+publisher: surrealdb
+name: SurrealDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SurrealDB/SurrealDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SurrealDB/SurrealDB
+identifiers:
+- winget: SurrealDB.SurrealDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SurrealDB/SurrealDB
+aliases: []

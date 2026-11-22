@@ -1,0 +1,11 @@
+key: niubi-technology/niubi-partition-editor-server-edition
+publisher: niubi-technology
+name: NIUBI Partition Editor Server Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Server
+identifiers:
+- winget: NIUBI.PartitionEditor.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Server
+aliases: []

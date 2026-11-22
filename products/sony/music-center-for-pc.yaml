@@ -1,0 +1,11 @@
+key: sony/music-center-for-pc
+publisher: sony
+name: Music Center for PC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sony/MusicCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sony/MusicCenter
+identifiers:
+- winget: Sony.MusicCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sony/MusicCenter
+aliases: []

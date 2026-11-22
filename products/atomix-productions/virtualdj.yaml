@@ -1,0 +1,11 @@
+key: atomix-productions/virtualdj
+publisher: atomix-productions
+name: VirtualDJ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtomixProductions/VirtualDJ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtomixProductions/VirtualDJ
+identifiers:
+- winget: AtomixProductions.VirtualDJ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtomixProductions/VirtualDJ
+aliases: []

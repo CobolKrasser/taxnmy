@@ -1,0 +1,11 @@
+key: skycoin/skywire
+publisher: skycoin
+name: Skywire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skycoin/Skywire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skycoin/Skywire
+identifiers:
+- winget: Skycoin.Skywire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skycoin/Skywire
+aliases: []

@@ -1,0 +1,11 @@
+key: dremin/retrobar
+publisher: dremin
+name: RetroBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dremin/RetroBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dremin/RetroBar
+identifiers:
+- winget: dremin.RetroBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dremin/RetroBar
+aliases: []

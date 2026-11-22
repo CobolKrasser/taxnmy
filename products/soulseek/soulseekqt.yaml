@@ -1,0 +1,11 @@
+key: soulseek/soulseekqt
+publisher: soulseek
+name: SoulseekQt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soulseek/SoulseekQt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soulseek/SoulseekQt
+identifiers:
+- winget: Soulseek.SoulseekQt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soulseek/SoulseekQt
+aliases: []

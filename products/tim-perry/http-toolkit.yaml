@@ -1,0 +1,11 @@
+key: tim-perry/http-toolkit
+publisher: tim-perry
+name: HTTP Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTTPToolKit/HTTPToolKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTTPToolKit/HTTPToolKit
+identifiers:
+- winget: HTTPToolKit.HTTPToolKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTTPToolKit/HTTPToolKit
+aliases: []

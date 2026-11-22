@@ -1,0 +1,11 @@
+key: ansgar-becker/heidisql
+publisher: ansgar-becker
+name: HeidiSQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeidiSQL/HeidiSQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeidiSQL/HeidiSQL
+identifiers:
+- winget: HeidiSQL.HeidiSQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeidiSQL/HeidiSQL
+aliases: []

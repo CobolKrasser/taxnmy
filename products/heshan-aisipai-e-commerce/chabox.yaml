@@ -1,0 +1,11 @@
+key: heshan-aisipai-e-commerce/chabox
+publisher: heshan-aisipai-e-commerce
+name: ChaBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/ChaBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/ChaBox
+identifiers:
+- winget: GAI.ChaBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/ChaBox
+aliases: []

@@ -1,0 +1,11 @@
+key: mbason-ai/mbason-copilot
+publisher: mbason-ai
+name: Mbason Copilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MbasonAI/Copilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MbasonAI/Copilot
+identifiers:
+- winget: MbasonAI.Copilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MbasonAI/Copilot
+aliases: []

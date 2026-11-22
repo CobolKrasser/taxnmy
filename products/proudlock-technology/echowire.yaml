@@ -1,0 +1,11 @@
+key: proudlock-technology/echowire
+publisher: proudlock-technology
+name: Echowire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Echowire/Echowire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Echowire/Echowire
+identifiers:
+- winget: Echowire.Echowire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Echowire/Echowire
+aliases: []

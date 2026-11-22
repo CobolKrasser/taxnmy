@@ -1,0 +1,11 @@
+key: softsea/pdf-cutter
+publisher: softsea
+name: PDF Cutter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PDFCutter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PDFCutter
+identifiers:
+- winget: SoftSea.PDFCutter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PDFCutter
+aliases: []

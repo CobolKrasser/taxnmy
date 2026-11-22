@@ -1,0 +1,11 @@
+key: crystal-rich/usb-safely-remove
+publisher: crystal-rich
+name: USB Safely Remove
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/USBSafelyRemove
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/USBSafelyRemove
+identifiers:
+- winget: CrystalRich.USBSafelyRemove
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/USBSafelyRemove
+aliases: []

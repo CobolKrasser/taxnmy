@@ -1,0 +1,11 @@
+key: muwoo/rubick
+publisher: muwoo
+name: rubick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rubick/Rubick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rubick/Rubick
+identifiers:
+- winget: Rubick.Rubick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rubick/Rubick
+aliases: []

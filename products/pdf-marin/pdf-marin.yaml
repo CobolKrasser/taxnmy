@@ -1,0 +1,11 @@
+key: pdf-marin/pdf-marin
+publisher: pdf-marin
+name: PDF MARIN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFMarin/PDFMarin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFMarin/PDFMarin
+identifiers:
+- winget: PDFMarin.PDFMarin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFMarin/PDFMarin
+aliases: []

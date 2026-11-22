@@ -1,0 +1,11 @@
+key: peculiar-ventures/fortify
+publisher: peculiar-ventures
+name: Fortify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeculiarVentures/Fortify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeculiarVentures/Fortify
+identifiers:
+- winget: PeculiarVentures.Fortify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeculiarVentures/Fortify
+aliases: []

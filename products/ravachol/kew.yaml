@@ -1,0 +1,11 @@
+key: ravachol/kew
+publisher: ravachol
+name: kew
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ravachol/kew
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ravachol/kew
+identifiers:
+- winget: Ravachol.kew
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ravachol/kew
+aliases: []

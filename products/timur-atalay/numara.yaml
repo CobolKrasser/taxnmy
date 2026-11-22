@@ -1,0 +1,11 @@
+key: timur-atalay/numara
+publisher: timur-atalay
+name: Numara
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bornova/numara
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bornova/numara
+identifiers:
+- winget: bornova.numara
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bornova/numara
+aliases: []

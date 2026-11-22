@@ -1,0 +1,11 @@
+key: nhn-kcp/kcppos-plus
+publisher: nhn-kcp
+name: KCPPOS plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNKCP/KCPPOSplus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNKCP/KCPPOSplus
+identifiers:
+- winget: NHNKCP.KCPPOSplus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNKCP/KCPPOSplus
+aliases: []

@@ -1,0 +1,11 @@
+key: builtbybel/appcopier
+publisher: builtbybel
+name: Appcopier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Builtbybel/Appcopier
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Builtbybel/Appcopier
+identifiers:
+- winget: Builtbybel.Appcopier
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Builtbybel/Appcopier
+aliases: []

@@ -1,0 +1,11 @@
+key: alexandre-oliveira/claude-code-tray-unofficial
+publisher: alexandre-oliveira
+name: Claude Code Tray (unofficial)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alegauss/ClaudeCodeTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alegauss/ClaudeCodeTray
+identifiers:
+- winget: alegauss.ClaudeCodeTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alegauss/ClaudeCodeTray
+aliases: []

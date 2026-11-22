@@ -1,0 +1,11 @@
+key: chris-maltby/gb-studio
+publisher: chris-maltby
+name: GB Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrismaltby/gb-studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrismaltby/gb-studio
+identifiers:
+- winget: chrismaltby.gb-studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrismaltby/gb-studio
+aliases: []

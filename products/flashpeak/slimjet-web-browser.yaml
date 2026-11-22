@@ -1,0 +1,11 @@
+key: flashpeak/slimjet-web-browser
+publisher: flashpeak
+name: Slimjet Web Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlashPeak/Slimjet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlashPeak/Slimjet
+identifiers:
+- winget: FlashPeak.Slimjet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlashPeak/Slimjet
+aliases: []

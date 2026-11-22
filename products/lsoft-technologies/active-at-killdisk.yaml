@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-killdisk
+publisher: lsoft-technologies
+name: Active@ KillDisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveKillDisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveKillDisk
+identifiers:
+- winget: LSoftTechnologies.ActiveKillDisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveKillDisk
+aliases: []

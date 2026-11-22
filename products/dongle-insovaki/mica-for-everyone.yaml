@@ -1,0 +1,11 @@
+key: dongle-insovaki/mica-for-everyone
+publisher: dongle-insovaki
+name: Mica For Everyone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicaForEveryone/MicaForEveryone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicaForEveryone/MicaForEveryone
+identifiers:
+- winget: MicaForEveryone.MicaForEveryone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicaForEveryone/MicaForEveryone
+aliases: []

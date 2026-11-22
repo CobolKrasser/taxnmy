@@ -1,0 +1,11 @@
+key: openrefine/openrefine
+publisher: openrefine
+name: OpenRefine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRefine/OpenRefine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRefine/OpenRefine
+identifiers:
+- winget: OpenRefine.OpenRefine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRefine/OpenRefine
+aliases: []

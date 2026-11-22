@@ -1,0 +1,11 @@
+key: openlp-developers/openlp
+publisher: openlp-developers
+name: OpenLP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLPDevelopers/OpenLP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLPDevelopers/OpenLP
+identifiers:
+- winget: OpenLPDevelopers.OpenLP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLPDevelopers/OpenLP
+aliases: []

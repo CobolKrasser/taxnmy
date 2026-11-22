@@ -1,0 +1,11 @@
+key: snap-net/snap-net
+publisher: snap-net
+name: Snap.Net
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnapNet/SnapNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnapNet/SnapNet
+identifiers:
+- winget: SnapNet.SnapNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnapNet/SnapNet
+aliases: []

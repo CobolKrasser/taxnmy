@@ -1,0 +1,12 @@
+key: vovsoft/merge-multiple-folders
+publisher: vovsoft
+name: Vovsoft Merge Multiple Folders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeMultipleFolders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeMultipleFolders
+identifiers:
+- winget: VovSoft.MergeMultipleFolders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MergeMultipleFolders
+aliases:
+- vovsoft/vovsoft-merge-multiple-folders

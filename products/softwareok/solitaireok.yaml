@@ -1,0 +1,11 @@
+key: softwareok/solitaireok
+publisher: softwareok
+name: SolitaireOK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/SolitaireOK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/SolitaireOK
+identifiers:
+- winget: SoftwareOK.SolitaireOK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/SolitaireOK
+aliases: []

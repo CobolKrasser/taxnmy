@@ -1,0 +1,11 @@
+key: lightkey-sources/lightkey-business-edition
+publisher: lightkey-sources
+name: Lightkey Business edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lightkey/Lightkey/Business
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lightkey/Lightkey/Business
+identifiers:
+- winget: Lightkey.Lightkey.Business
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lightkey/Lightkey/Business
+aliases: []

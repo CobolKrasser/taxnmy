@@ -1,0 +1,12 @@
+key: stream-pi/server
+publisher: stream-pi
+name: Stream-Pi Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stream-Pi/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stream-Pi/Server
+identifiers:
+- winget: Stream-Pi.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stream-Pi/Server
+aliases:
+- stream-pi/stream-pi-server

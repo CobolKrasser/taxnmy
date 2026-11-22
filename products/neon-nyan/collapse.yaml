@@ -1,0 +1,11 @@
+key: neon-nyan/collapse
+publisher: neon-nyan
+name: Collapse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollapseLauncher/Collapse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollapseLauncher/Collapse
+identifiers:
+- winget: CollapseLauncher.Collapse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollapseLauncher/Collapse
+aliases: []

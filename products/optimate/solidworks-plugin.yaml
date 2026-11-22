@@ -1,0 +1,12 @@
+key: optimate/solidworks-plugin
+publisher: optimate
+name: Optimate SOLIDWORKS Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optimate/OptimateSOLIDWORKSPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optimate/OptimateSOLIDWORKSPlugin
+identifiers:
+- winget: Optimate.OptimateSOLIDWORKSPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Optimate/OptimateSOLIDWORKSPlugin
+aliases:
+- optimate/optimate-solidworks-plugin

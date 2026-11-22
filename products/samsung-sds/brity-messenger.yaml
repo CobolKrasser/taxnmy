@@ -1,0 +1,11 @@
+key: samsung-sds/brity-messenger
+publisher: samsung-sds
+name: Brity Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsungSDS/BrityMessenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsungSDS/BrityMessenger
+identifiers:
+- winget: SamsungSDS.BrityMessenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsungSDS/BrityMessenger
+aliases: []

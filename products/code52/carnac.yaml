@@ -1,0 +1,11 @@
+key: code52/carnac
+publisher: code52
+name: carnac
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code52/Carnac
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code52/Carnac
+identifiers:
+- winget: code52.Carnac
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/code52/Carnac
+aliases: []

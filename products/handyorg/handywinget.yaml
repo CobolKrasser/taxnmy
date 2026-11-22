@@ -1,0 +1,11 @@
+key: handyorg/handywinget
+publisher: handyorg
+name: HandyWinget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandyOrg/HandyWinget-GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandyOrg/HandyWinget-GUI
+identifiers:
+- winget: HandyOrg.HandyWinget-GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandyOrg/HandyWinget-GUI
+aliases: []

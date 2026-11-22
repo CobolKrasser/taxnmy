@@ -1,0 +1,11 @@
+key: compubench/gfxbench
+publisher: compubench
+name: GFXBench
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompuBench/GFXBench
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompuBench/GFXBench
+identifiers:
+- winget: CompuBench.GFXBench
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompuBench/GFXBench
+aliases: []

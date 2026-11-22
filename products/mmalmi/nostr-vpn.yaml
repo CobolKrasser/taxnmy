@@ -1,0 +1,11 @@
+key: mmalmi/nostr-vpn
+publisher: mmalmi
+name: Nostr VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmalmi/nostr-vpn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmalmi/nostr-vpn
+identifiers:
+- winget: mmalmi.nostr-vpn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmalmi/nostr-vpn
+aliases: []

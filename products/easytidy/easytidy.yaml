@@ -1,0 +1,11 @@
+key: easytidy/easytidy
+publisher: easytidy
+name: EasyTidy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyTidy/EasyTidy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyTidy/EasyTidy
+identifiers:
+- winget: EasyTidy.EasyTidy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyTidy/EasyTidy
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/coreutils-for-windows
+publisher: microsoft
+name: Coreutils for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Coreutils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Coreutils
+identifiers:
+- winget: Microsoft.Coreutils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Coreutils
+aliases: []

@@ -1,0 +1,11 @@
+key: insynchq/insync
+publisher: insynchq
+name: Insync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insynchq/Insync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insynchq/Insync
+identifiers:
+- winget: Insynchq.Insync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insynchq/Insync
+aliases: []

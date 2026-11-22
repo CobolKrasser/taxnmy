@@ -1,0 +1,11 @@
+key: multica/multica
+publisher: multica
+name: Multica
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multica/MulticaDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multica/MulticaDesktop
+identifiers:
+- winget: Multica.MulticaDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multica/MulticaDesktop
+aliases: []

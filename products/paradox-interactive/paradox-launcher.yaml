@@ -1,0 +1,11 @@
+key: paradox-interactive/paradox-launcher
+publisher: paradox-interactive
+name: Paradox Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParadoxInteractive/ParadoxLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParadoxInteractive/ParadoxLauncher
+identifiers:
+- winget: ParadoxInteractive.ParadoxLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParadoxInteractive/ParadoxLauncher
+aliases: []

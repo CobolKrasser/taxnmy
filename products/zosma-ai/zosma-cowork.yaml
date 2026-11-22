@@ -1,0 +1,11 @@
+key: zosma-ai/zosma-cowork
+publisher: zosma-ai
+name: Zosma Cowork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZosmaAI/ZosmaCowork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZosmaAI/ZosmaCowork
+identifiers:
+- winget: ZosmaAI.ZosmaCowork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZosmaAI/ZosmaCowork
+aliases: []

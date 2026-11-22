@@ -1,0 +1,11 @@
+key: ookla/speedtest-cli
+publisher: ookla
+name: Speedtest CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ookla/Speedtest/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ookla/Speedtest/CLI
+identifiers:
+- winget: Ookla.Speedtest.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ookla/Speedtest/CLI
+aliases: []

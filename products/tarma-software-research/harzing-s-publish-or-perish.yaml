@@ -1,0 +1,11 @@
+key: tarma-software-research/harzing-s-publish-or-perish
+publisher: tarma-software-research
+name: Harzing's Publish or Perish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarma/PublishOrPerish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarma/PublishOrPerish
+identifiers:
+- winget: Tarma.PublishOrPerish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarma/PublishOrPerish
+aliases: []

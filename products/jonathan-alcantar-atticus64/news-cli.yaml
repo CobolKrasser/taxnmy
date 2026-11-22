@@ -1,0 +1,11 @@
+key: jonathan-alcantar-atticus64/news-cli
+publisher: jonathan-alcantar-atticus64
+name: News CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atticus64/news
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atticus64/news
+identifiers:
+- winget: Atticus64.news
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atticus64/news
+aliases: []

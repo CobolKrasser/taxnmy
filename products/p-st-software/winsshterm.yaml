@@ -1,0 +1,11 @@
+key: p-st-software/winsshterm
+publisher: p-st-software
+name: WinSSHTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/P-StSoftware/WinSSHTerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/P-StSoftware/WinSSHTerm
+identifiers:
+- winget: P-StSoftware.WinSSHTerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/P-StSoftware/WinSSHTerm
+aliases: []

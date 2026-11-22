@@ -1,0 +1,11 @@
+key: roman-16/proton-cli
+publisher: roman-16
+name: proton-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roman-16/ProtonCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roman-16/ProtonCLI
+identifiers:
+- winget: Roman-16.ProtonCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Roman-16/ProtonCLI
+aliases: []

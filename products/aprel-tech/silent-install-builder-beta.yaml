@@ -1,0 +1,11 @@
+key: aprel-tech/silent-install-builder-beta
+publisher: aprel-tech
+name: Silent Install Builder Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/SilentInstallBuilder/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/SilentInstallBuilder/Beta
+identifiers:
+- winget: AprelTech.SilentInstallBuilder.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AprelTech/SilentInstallBuilder/Beta
+aliases: []

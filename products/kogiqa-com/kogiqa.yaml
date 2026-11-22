@@ -1,0 +1,11 @@
+key: kogiqa-com/kogiqa
+publisher: kogiqa-com
+name: kogiQA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atagon/com/kogiQA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atagon/com/kogiQA
+identifiers:
+- winget: atagon.com.kogiQA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atagon/com/kogiQA
+aliases: []

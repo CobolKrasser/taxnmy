@@ -1,0 +1,11 @@
+key: skdata/orm-core
+publisher: skdata
+name: ORM_Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKDataAS/ORMCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKDataAS/ORMCore
+identifiers:
+- winget: SKDataAS.ORMCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKDataAS/ORMCore
+aliases: []

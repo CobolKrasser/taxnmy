@@ -1,0 +1,11 @@
+key: blastapps/fluent-search
+publisher: blastapps
+name: Fluent Search
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlastApps/FluentSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlastApps/FluentSearch
+identifiers:
+- winget: BlastApps.FluentSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlastApps/FluentSearch
+aliases: []

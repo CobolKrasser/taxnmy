@@ -1,0 +1,11 @@
+key: greatis-software/regrun-reanimator
+publisher: greatis-software
+name: RegRun Reanimator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Reanimator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Reanimator
+identifiers:
+- winget: Greatis.RegRun.Reanimator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Reanimator
+aliases: []

@@ -1,0 +1,11 @@
+key: gpac/gpac
+publisher: gpac
+name: GPAC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPAC/GPAC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPAC/GPAC
+identifiers:
+- winget: GPAC.GPAC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPAC/GPAC
+aliases: []

@@ -1,0 +1,11 @@
+key: rstudio-pbc/quarto
+publisher: rstudio-pbc
+name: Quarto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Quarto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Quarto
+identifiers:
+- winget: Posit.Quarto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Quarto
+aliases: []

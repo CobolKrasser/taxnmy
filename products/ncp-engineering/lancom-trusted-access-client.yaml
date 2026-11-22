@@ -1,0 +1,11 @@
+key: ncp-engineering/lancom-trusted-access-client
+publisher: ncp-engineering
+name: LANCOM Trusted Access Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/TrustedAccessClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/TrustedAccessClient
+identifiers:
+- winget: LANCOM.TrustedAccessClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/TrustedAccessClient
+aliases: []

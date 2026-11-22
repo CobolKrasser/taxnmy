@@ -1,0 +1,11 @@
+key: anidavid/autolangswitcher
+publisher: anidavid
+name: AutoLangSwitcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AniDavid/AutoLangSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AniDavid/AutoLangSwitcher
+identifiers:
+- winget: AniDavid.AutoLangSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AniDavid/AutoLangSwitcher
+aliases: []

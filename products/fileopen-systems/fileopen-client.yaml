@@ -1,0 +1,13 @@
+key: fileopen-systems/fileopen-client
+publisher: fileopen-systems
+name: FileOpen Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileOpenSystems/FileOpenClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileOpenSystems/FileOpenClient
+identifiers:
+- winget: FileOpen.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileOpen/Client
+- winget: FileOpenSystems.FileOpenClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileOpenSystems/FileOpenClient
+aliases: []

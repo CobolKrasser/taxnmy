@@ -1,0 +1,11 @@
+key: otto-zumkeller/qr-code-reader
+publisher: otto-zumkeller
+name: QR-Code Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OttoZumkeller/QR-CodeReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OttoZumkeller/QR-CodeReader
+identifiers:
+- winget: OttoZumkeller.QR-CodeReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OttoZumkeller/QR-CodeReader
+aliases: []

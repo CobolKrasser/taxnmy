@@ -1,0 +1,11 @@
+key: liquit-software/liquit-workspace-powershell
+publisher: liquit-software
+name: Liquit Workspace PowerShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquit/Workspace/PowerShell42
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquit/Workspace/PowerShell42
+identifiers:
+- winget: Liquit.Workspace.PowerShell42
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquit/Workspace/PowerShell42
+aliases: []

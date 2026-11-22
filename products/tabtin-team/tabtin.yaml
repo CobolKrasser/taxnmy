@@ -1,0 +1,11 @@
+key: tabtin-team/tabtin
+publisher: tabtin-team
+name: TabTin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabTin/TabTin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabTin/TabTin
+identifiers:
+- winget: TabTin.TabTin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabTin/TabTin
+aliases: []

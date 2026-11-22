@@ -1,0 +1,11 @@
+key: pastebridge/pastebridge
+publisher: pastebridge
+name: PasteBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteBridge/PasteBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteBridge/PasteBridge
+identifiers:
+- winget: PasteBridge.PasteBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteBridge/PasteBridge
+aliases: []

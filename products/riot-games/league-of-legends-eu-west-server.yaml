@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-eu-west-server
+publisher: riot-games
+name: League of Legends (EU West server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/EUW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/EUW
+identifiers:
+- winget: RiotGames.LeagueOfLegends.EUW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/EUW
+aliases: []

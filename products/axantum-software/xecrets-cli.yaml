@@ -1,0 +1,11 @@
+key: axantum-software/xecrets-cli
+publisher: axantum-software
+name: Xecrets Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axantum/XecretsCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axantum/XecretsCli
+identifiers:
+- winget: Axantum.XecretsCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axantum/XecretsCli
+aliases: []

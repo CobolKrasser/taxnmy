@@ -1,0 +1,11 @@
+key: xiles/nexusfont
+publisher: xiles
+name: nexusfont
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiles/NexusFont
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiles/NexusFont
+identifiers:
+- winget: xiles.NexusFont
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiles/NexusFont
+aliases: []

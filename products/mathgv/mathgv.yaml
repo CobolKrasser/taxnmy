@@ -1,0 +1,11 @@
+key: mathgv/mathgv
+publisher: mathgv
+name: MathGV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregVanMullem/MathGV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregVanMullem/MathGV
+identifiers:
+- winget: GregVanMullem.MathGV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregVanMullem/MathGV
+aliases: []

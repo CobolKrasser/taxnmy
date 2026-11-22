@@ -1,0 +1,11 @@
+key: sandisk/dashboard
+publisher: sandisk
+name: Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/Dashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/Dashboard
+identifiers:
+- winget: SanDisk.Dashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SanDisk/Dashboard
+aliases: []

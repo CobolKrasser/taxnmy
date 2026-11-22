@@ -1,0 +1,11 @@
+key: taskslinger/taskslinger
+publisher: taskslinger
+name: TaskSlinger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskSlinger/TaskSlinger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskSlinger/TaskSlinger
+identifiers:
+- winget: TaskSlinger.TaskSlinger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaskSlinger/TaskSlinger
+aliases: []

@@ -1,0 +1,11 @@
+key: thatonecalculator/discord-rpc-maker
+publisher: thatonecalculator
+name: Discord RPC Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThatOneCalculator/DiscordRPCMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThatOneCalculator/DiscordRPCMaker
+identifiers:
+- winget: ThatOneCalculator.DiscordRPCMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThatOneCalculator/DiscordRPCMaker
+aliases: []

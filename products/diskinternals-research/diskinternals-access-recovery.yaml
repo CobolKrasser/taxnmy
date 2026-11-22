@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-access-recovery
+publisher: diskinternals-research
+name: DiskInternals Access Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/AccessRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/AccessRecovery
+identifiers:
+- winget: DiskInternals.AccessRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/AccessRecovery
+aliases: []

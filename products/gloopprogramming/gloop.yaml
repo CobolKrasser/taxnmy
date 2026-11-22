@@ -1,0 +1,11 @@
+key: gloopprogramming/gloop
+publisher: gloopprogramming
+name: Gloop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GloopProgramming/Gloop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GloopProgramming/Gloop
+identifiers:
+- winget: GloopProgramming.Gloop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GloopProgramming/Gloop
+aliases: []

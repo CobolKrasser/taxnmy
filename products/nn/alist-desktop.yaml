@@ -1,0 +1,11 @@
+key: nn/alist-desktop
+publisher: nn
+name: alist-desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AList/AListDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AList/AListDesktop
+identifiers:
+- winget: AList.AListDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AList/AListDesktop
+aliases: []

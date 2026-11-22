@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-boot-cd
+publisher: diskinternals-research
+name: DiskInternals Boot CD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/BootableRecoveryCD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/BootableRecoveryCD
+identifiers:
+- winget: DiskInternals.BootableRecoveryCD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/BootableRecoveryCD
+aliases: []

@@ -1,0 +1,11 @@
+key: faithlife/logos-bible-software
+publisher: faithlife
+name: Logos Bible Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Faithlife/Logos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Faithlife/Logos
+identifiers:
+- winget: Faithlife.Logos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Faithlife/Logos
+aliases: []

@@ -1,0 +1,11 @@
+key: v2fly/v2ray-core
+publisher: v2fly
+name: v2ray-core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2fly/v2ray-core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2fly/v2ray-core
+identifiers:
+- winget: v2fly.v2ray-core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2fly/v2ray-core
+aliases: []

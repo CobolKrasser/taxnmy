@@ -1,0 +1,11 @@
+key: saito-games/mage-bros
+publisher: saito-games
+name: Mage Bros
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/MageBros
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/MageBros
+identifiers:
+- winget: SaitoGames.MageBros
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaitoGames/MageBros
+aliases: []

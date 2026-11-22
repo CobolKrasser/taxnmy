@@ -1,0 +1,11 @@
+key: anchorfree/touchvpn
+publisher: anchorfree
+name: TouchVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnchorFree/TouchVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnchorFree/TouchVPN
+identifiers:
+- winget: AnchorFree.TouchVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnchorFree/TouchVPN
+aliases: []

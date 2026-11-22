@@ -1,0 +1,11 @@
+key: dokany-project/dokan-library
+publisher: dokany-project
+name: Dokan Library
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dokan-dev/Dokany
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dokan-dev/Dokany
+identifiers:
+- winget: dokan-dev.Dokany
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dokan-dev/Dokany
+aliases: []

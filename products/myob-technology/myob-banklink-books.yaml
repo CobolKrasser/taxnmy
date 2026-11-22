@@ -1,0 +1,11 @@
+key: myob-technology/myob-banklink-books
+publisher: myob-technology
+name: MYOB BankLink Books
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYOB/BankLinkBooks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYOB/BankLinkBooks
+identifiers:
+- winget: MYOB.BankLinkBooks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYOB/BankLinkBooks
+aliases: []

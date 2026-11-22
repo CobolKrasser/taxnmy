@@ -1,0 +1,11 @@
+key: henderson-software/cdripper
+publisher: henderson-software
+name: CDRipper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HendersonSoftware/CDRipper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HendersonSoftware/CDRipper
+identifiers:
+- winget: HendersonSoftware.CDRipper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HendersonSoftware/CDRipper
+aliases: []

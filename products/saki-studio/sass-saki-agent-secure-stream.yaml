@@ -1,0 +1,11 @@
+key: saki-studio/sass-saki-agent-secure-stream
+publisher: saki-studio
+name: SASS (Saki Agent Secure Stream)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SakiStudio/SakiSSH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SakiStudio/SakiSSH
+identifiers:
+- winget: SakiStudio.SakiSSH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SakiStudio/SakiSSH
+aliases: []

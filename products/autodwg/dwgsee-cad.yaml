@@ -1,0 +1,11 @@
+key: autodwg/dwgsee-cad
+publisher: autodwg
+name: DWGSee CAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoDWG/DWGSeeCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoDWG/DWGSeeCAD
+identifiers:
+- winget: AutoDWG.DWGSeeCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoDWG/DWGSeeCAD
+aliases: []

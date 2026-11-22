@@ -1,0 +1,11 @@
+key: tj-group/tigerjython
+publisher: tj-group
+name: TigerJython
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TJGroup/TigerJython
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TJGroup/TigerJython
+identifiers:
+- winget: TJGroup.TigerJython
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TJGroup/TigerJython
+aliases: []

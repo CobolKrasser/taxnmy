@@ -1,0 +1,11 @@
+key: pearson-education/testnav
+publisher: pearson-education
+name: TestNav
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pearson/TestNav
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pearson/TestNav
+identifiers:
+- winget: Pearson.TestNav
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pearson/TestNav
+aliases: []

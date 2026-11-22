@@ -1,0 +1,11 @@
+key: jdx/usage
+publisher: jdx
+name: usage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/usage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/usage
+identifiers:
+- winget: jdx.usage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/usage
+aliases: []

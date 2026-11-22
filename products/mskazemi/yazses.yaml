@@ -1,0 +1,11 @@
+key: mskazemi/yazses
+publisher: mskazemi
+name: YazSes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSKazemi/YazSes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSKazemi/YazSes
+identifiers:
+- winget: MSKazemi.YazSes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSKazemi/YazSes
+aliases: []

@@ -1,0 +1,11 @@
+key: abacus-research/abaclient
+publisher: abacus-research
+name: AbaClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abacus/AbaClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abacus/AbaClient
+identifiers:
+- winget: Abacus.AbaClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Abacus/AbaClient
+aliases: []

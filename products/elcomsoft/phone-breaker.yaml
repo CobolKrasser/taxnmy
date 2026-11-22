@@ -1,0 +1,12 @@
+key: elcomsoft/phone-breaker
+publisher: elcomsoft
+name: Elcomsoft Phone Breaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/PhoneBreaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/PhoneBreaker
+identifiers:
+- winget: Elcomsoft.PhoneBreaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/PhoneBreaker
+aliases:
+- elcomsoft/elcomsoft-phone-breaker

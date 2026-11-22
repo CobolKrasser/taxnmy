@@ -1,0 +1,11 @@
+key: tricerat/screwdrivers-client
+publisher: tricerat
+name: ScrewDrivers Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tricerat/ScrewDriversClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tricerat/ScrewDriversClient
+identifiers:
+- winget: Tricerat.ScrewDriversClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tricerat/ScrewDriversClient
+aliases: []

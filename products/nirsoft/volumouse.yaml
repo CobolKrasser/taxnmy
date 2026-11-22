@@ -1,0 +1,11 @@
+key: nirsoft/volumouse
+publisher: nirsoft
+name: Volumouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/Volumouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/Volumouse
+identifiers:
+- winget: NirSoft.Volumouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/Volumouse
+aliases: []

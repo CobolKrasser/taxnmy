@@ -1,0 +1,11 @@
+key: gmsh/gmsh
+publisher: gmsh
+name: Gmsh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gmsh/gmsh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gmsh/gmsh
+identifiers:
+- winget: gmsh.gmsh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gmsh/gmsh
+aliases: []

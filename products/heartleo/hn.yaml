@@ -1,0 +1,11 @@
+key: heartleo/hn
+publisher: heartleo
+name: hn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heartleo/hn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heartleo/hn
+identifiers:
+- winget: heartleo.hn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heartleo/hn
+aliases: []

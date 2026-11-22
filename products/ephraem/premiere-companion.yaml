@@ -1,0 +1,11 @@
+key: ephraem/premiere-companion
+publisher: ephraem
+name: Premiere Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephraem/PremiereCompanion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephraem/PremiereCompanion
+identifiers:
+- winget: Ephraem.PremiereCompanion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ephraem/PremiereCompanion
+aliases: []

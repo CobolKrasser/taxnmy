@@ -1,0 +1,11 @@
+key: deskshare/ftp-manager-lite
+publisher: deskshare
+name: FTP Manager Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskShare/FTPManagerLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskShare/FTPManagerLite
+identifiers:
+- winget: DeskShare.FTPManagerLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskShare/FTPManagerLite
+aliases: []

@@ -1,0 +1,12 @@
+key: remeha/pro
+publisher: remeha
+name: Remeha PRO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remeha/PRO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remeha/PRO
+identifiers:
+- winget: Remeha.PRO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remeha/PRO
+aliases:
+- remeha/remeha-pro

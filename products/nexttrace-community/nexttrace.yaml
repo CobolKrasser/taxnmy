@@ -1,0 +1,11 @@
+key: nexttrace-community/nexttrace
+publisher: nexttrace-community
+name: NextTrace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextTrace/NextTrace/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextTrace/NextTrace/Core
+identifiers:
+- winget: NextTrace.NextTrace.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NextTrace/NextTrace/Core
+aliases: []

@@ -1,0 +1,11 @@
+key: bytical-solutions-private/nerva
+publisher: bytical-solutions-private
+name: Nerva
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytical/Nerva
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytical/Nerva
+identifiers:
+- winget: Bytical.Nerva
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytical/Nerva
+aliases: []

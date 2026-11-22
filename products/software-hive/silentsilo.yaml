@@ -1,0 +1,11 @@
+key: software-hive/silentsilo
+publisher: software-hive
+name: SilentSilo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareHive/SilentSilo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareHive/SilentSilo
+identifiers:
+- winget: SoftwareHive.SilentSilo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareHive/SilentSilo
+aliases: []

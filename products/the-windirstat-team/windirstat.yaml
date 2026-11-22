@@ -1,0 +1,13 @@
+key: the-windirstat-team/windirstat
+publisher: the-windirstat-team
+name: WinDirStat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinDirStat/WinDirStat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinDirStat/WinDirStat
+identifiers:
+- winget: WinDirStat.WinDirStat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinDirStat/WinDirStat
+- winget: WinDirStat.WinDirStat.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinDirStat/WinDirStat/Beta
+aliases: []

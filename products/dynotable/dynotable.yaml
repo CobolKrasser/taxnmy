@@ -1,0 +1,11 @@
+key: dynotable/dynotable
+publisher: dynotable
+name: DynoTable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynoTable/DynoTable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynoTable/DynoTable
+identifiers:
+- winget: DynoTable.DynoTable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynoTable/DynoTable
+aliases: []

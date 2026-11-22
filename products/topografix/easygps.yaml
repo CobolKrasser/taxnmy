@@ -1,0 +1,11 @@
+key: topografix/easygps
+publisher: topografix
+name: EasyGPS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopoGrafix/EasyGPS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopoGrafix/EasyGPS
+identifiers:
+- winget: TopoGrafix.EasyGPS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopoGrafix/EasyGPS
+aliases: []

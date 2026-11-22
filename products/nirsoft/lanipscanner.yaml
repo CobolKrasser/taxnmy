@@ -1,0 +1,11 @@
+key: nirsoft/lanipscanner
+publisher: nirsoft
+name: LANIPScanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/LANIPScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/LANIPScanner
+identifiers:
+- winget: NirSoft.LANIPScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/LANIPScanner
+aliases: []

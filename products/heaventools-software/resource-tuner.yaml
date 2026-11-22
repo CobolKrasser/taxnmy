@@ -1,0 +1,11 @@
+key: heaventools-software/resource-tuner
+publisher: heaventools-software
+name: Resource Tuner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heaventools/ResourceTuner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heaventools/ResourceTuner
+identifiers:
+- winget: Heaventools.ResourceTuner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Heaventools/ResourceTuner
+aliases: []

@@ -1,0 +1,11 @@
+key: ryzen-controller-team/ryzen-controller
+publisher: ryzen-controller-team
+name: Ryzen Controller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyzenControllerTeam/RyzenController
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyzenControllerTeam/RyzenController
+identifiers:
+- winget: RyzenControllerTeam.RyzenController
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyzenControllerTeam/RyzenController
+aliases: []

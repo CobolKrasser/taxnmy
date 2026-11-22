@@ -1,0 +1,11 @@
+key: texas-instruments/ti-nspire-cx-cas-student-software
+publisher: texas-instruments
+name: TI-Nspire CX CAS Student Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Nspire/CXCASStudent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Nspire/CXCASStudent
+identifiers:
+- winget: TexasInstruments.TI-Nspire.CXCASStudent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Nspire/CXCASStudent
+aliases: []

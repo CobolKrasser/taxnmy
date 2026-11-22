@@ -1,0 +1,12 @@
+key: remote-utilities/viewer
+publisher: remote-utilities
+name: Remote Utilities - Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoteUtilities/Viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoteUtilities/Viewer
+identifiers:
+- winget: RemoteUtilities.Viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoteUtilities/Viewer
+aliases:
+- remote-utilities/remote-utilities-viewer

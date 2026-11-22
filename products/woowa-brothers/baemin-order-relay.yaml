@@ -1,0 +1,11 @@
+key: woowa-brothers/baemin-order-relay
+publisher: woowa-brothers
+name: Baemin Order Relay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WoowaBrothersCorp/BaeminOrder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WoowaBrothersCorp/BaeminOrder
+identifiers:
+- winget: WoowaBrothersCorp.BaeminOrder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WoowaBrothersCorp/BaeminOrder
+aliases: []

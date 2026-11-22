@@ -1,0 +1,11 @@
+key: relmer/tcdir
+publisher: relmer
+name: TCDir
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/relmer/TCDir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/relmer/TCDir
+identifiers:
+- winget: relmer.TCDir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/relmer/TCDir
+aliases: []

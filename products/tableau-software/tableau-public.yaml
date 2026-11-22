@@ -1,0 +1,11 @@
+key: tableau-software/tableau-public
+publisher: tableau-software
+name: Tableau Public
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tableau/Public
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tableau/Public
+identifiers:
+- winget: Tableau.Public
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tableau/Public
+aliases: []

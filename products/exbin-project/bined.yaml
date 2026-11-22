@@ -1,0 +1,11 @@
+key: exbin-project/bined
+publisher: exbin-project
+name: BinEd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExBinProject/BinEd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExBinProject/BinEd
+identifiers:
+- winget: ExBinProject.BinEd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExBinProject/BinEd
+aliases: []

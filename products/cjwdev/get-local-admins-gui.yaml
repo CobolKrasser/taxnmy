@@ -1,0 +1,11 @@
+key: cjwdev/get-local-admins-gui
+publisher: cjwdev
+name: Get Local Admins GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/GetLocalAdminsGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/GetLocalAdminsGUI
+identifiers:
+- winget: Cjwdev.GetLocalAdminsGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/GetLocalAdminsGUI
+aliases: []

@@ -1,0 +1,11 @@
+key: gamebanana/modboy
+publisher: gamebanana
+name: Modboy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gamebanana/Modboy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gamebanana/Modboy
+identifiers:
+- winget: Gamebanana.Modboy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gamebanana/Modboy
+aliases: []

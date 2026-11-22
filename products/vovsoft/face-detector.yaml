@@ -1,0 +1,12 @@
+key: vovsoft/face-detector
+publisher: vovsoft
+name: Vovsoft Face Detector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FaceDetector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FaceDetector
+identifiers:
+- winget: VovSoft.FaceDetector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FaceDetector
+aliases:
+- vovsoft/vovsoft-face-detector

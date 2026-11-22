@@ -1,0 +1,11 @@
+key: openpencil-contributors/openpencil-cli
+publisher: openpencil-contributors
+name: OpenPencil CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZSeven-W/OpenPencil/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZSeven-W/OpenPencil/CLI
+identifiers:
+- winget: ZSeven-W.OpenPencil.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZSeven-W/OpenPencil/CLI
+aliases: []

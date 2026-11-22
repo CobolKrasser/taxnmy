@@ -1,0 +1,12 @@
+key: ramsoft/dicomproxy
+publisher: ramsoft
+name: RamSoft DicomProxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamSoft/DicomProxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamSoft/DicomProxy
+identifiers:
+- winget: RamSoft.DicomProxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamSoft/DicomProxy
+aliases:
+- ramsoft/ramsoft-dicomproxy

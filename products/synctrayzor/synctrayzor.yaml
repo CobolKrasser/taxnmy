@@ -1,0 +1,11 @@
+key: synctrayzor/synctrayzor
+publisher: synctrayzor
+name: SyncTrayzor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncTrayzor/SyncTrayzor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncTrayzor/SyncTrayzor
+identifiers:
+- winget: SyncTrayzor.SyncTrayzor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncTrayzor/SyncTrayzor
+aliases: []

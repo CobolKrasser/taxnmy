@@ -1,0 +1,11 @@
+key: fsenore/vvv-virtual-volumes-view
+publisher: fsenore
+name: VVV (Virtual Volumes View)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fsenore/VVV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fsenore/VVV
+identifiers:
+- winget: fsenore.VVV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fsenore/VVV
+aliases: []

@@ -1,0 +1,11 @@
+key: wisdom-software/motionstudio
+publisher: wisdom-software
+name: MotionStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/MotionStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/MotionStudio
+identifiers:
+- winget: WisdomSoftware.MotionStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/MotionStudio
+aliases: []

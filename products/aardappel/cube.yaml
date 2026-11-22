@@ -1,0 +1,11 @@
+key: aardappel/cube
+publisher: aardappel
+name: Cube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aardappel/Cube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aardappel/Cube
+identifiers:
+- winget: Aardappel.Cube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aardappel/Cube
+aliases: []

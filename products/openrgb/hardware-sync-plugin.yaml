@@ -1,0 +1,12 @@
+key: openrgb/hardware-sync-plugin
+publisher: openrgb
+name: OpenRGB Hardware Sync Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBHardwareSyncPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBHardwareSyncPlugin
+identifiers:
+- winget: OpenRGB.OpenRGBHardwareSyncPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGBHardwareSyncPlugin
+aliases:
+- openrgb/openrgb-hardware-sync-plugin

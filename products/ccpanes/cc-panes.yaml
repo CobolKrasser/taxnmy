@@ -1,0 +1,11 @@
+key: ccpanes/cc-panes
+publisher: ccpanes
+name: cc-panes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wuxiran/CC-Panes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wuxiran/CC-Panes
+identifiers:
+- winget: wuxiran.CC-Panes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wuxiran/CC-Panes
+aliases: []

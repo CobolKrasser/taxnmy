@@ -1,0 +1,11 @@
+key: stratus-advanced-technologies/constellation
+publisher: stratus-advanced-technologies
+name: constellation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stratusadv/constellation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stratusadv/constellation
+identifiers:
+- winget: stratusadv.constellation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stratusadv/constellation
+aliases: []

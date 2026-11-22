@@ -1,0 +1,13 @@
+key: 7s2p/effie
+publisher: 7s2p
+name: Effie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7S2P/Effie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7S2P/Effie
+identifiers:
+- winget: 7S2P.Effie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7S2P/Effie
+- winget: 7S2P.Effie.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/7/7S2P/Effie/CN
+aliases: []

@@ -1,0 +1,11 @@
+key: greatis-software/edge-reset-button
+publisher: greatis-software
+name: Edge Reset Button
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/EdgeResetButton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/EdgeResetButton
+identifiers:
+- winget: Greatis.EdgeResetButton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/EdgeResetButton
+aliases: []

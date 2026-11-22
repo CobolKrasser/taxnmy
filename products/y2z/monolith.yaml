@@ -1,0 +1,11 @@
+key: y2z/monolith
+publisher: y2z
+name: monolith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Y2Z/Monolith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Y2Z/Monolith
+identifiers:
+- winget: Y2Z.Monolith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Y2Z/Monolith
+aliases: []

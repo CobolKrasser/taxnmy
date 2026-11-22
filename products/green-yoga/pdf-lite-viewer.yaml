@@ -1,0 +1,11 @@
+key: green-yoga/pdf-lite-viewer
+publisher: green-yoga
+name: PDF Lite Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreenYogaInc/PDFLiteViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreenYogaInc/PDFLiteViewer
+identifiers:
+- winget: GreenYogaInc.PDFLiteViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreenYogaInc/PDFLiteViewer
+aliases: []

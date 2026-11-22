@@ -1,0 +1,12 @@
+key: onekey/wallet
+publisher: onekey
+name: OneKey Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneKey/OneKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneKey/OneKey
+identifiers:
+- winget: OneKey.OneKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneKey/OneKey
+aliases:
+- onekey/onekey-wallet

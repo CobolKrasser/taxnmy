@@ -1,0 +1,11 @@
+key: newell-rubbermaid/dymo-label
+publisher: newell-rubbermaid
+name: DYMO Label
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOLabel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOLabel
+identifiers:
+- winget: DYMO.DYMOLabel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOLabel
+aliases: []

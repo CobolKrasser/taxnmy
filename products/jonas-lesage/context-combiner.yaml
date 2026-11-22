@@ -1,0 +1,11 @@
+key: jonas-lesage/context-combiner
+publisher: jonas-lesage
+name: Context Combiner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccmb/ccmb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccmb/ccmb
+identifiers:
+- winget: ccmb.ccmb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccmb/ccmb
+aliases: []

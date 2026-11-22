@@ -1,0 +1,11 @@
+key: veirt/weathr
+publisher: veirt
+name: weathr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veirt/weathr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veirt/weathr
+identifiers:
+- winget: Veirt.weathr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veirt/weathr
+aliases: []

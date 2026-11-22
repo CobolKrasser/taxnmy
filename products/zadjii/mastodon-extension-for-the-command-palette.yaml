@@ -1,0 +1,11 @@
+key: zadjii/mastodon-extension-for-the-command-palette
+publisher: zadjii
+name: Mastodon Extension for the Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zadjii/MastodonForCmdPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zadjii/MastodonForCmdPal
+identifiers:
+- winget: zadjii.MastodonForCmdPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zadjii/MastodonForCmdPal
+aliases: []

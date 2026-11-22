@@ -1,0 +1,11 @@
+key: the-sz-development/cdinfo
+publisher: the-sz-development
+name: CDInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CDInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CDInfo
+identifiers:
+- winget: the-sz.CDInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CDInfo
+aliases: []

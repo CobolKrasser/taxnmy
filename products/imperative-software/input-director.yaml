@@ -1,0 +1,11 @@
+key: imperative-software/input-director
+publisher: imperative-software
+name: Input Director
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImperativeSoftware/InputDirector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImperativeSoftware/InputDirector
+identifiers:
+- winget: ImperativeSoftware.InputDirector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImperativeSoftware/InputDirector
+aliases: []

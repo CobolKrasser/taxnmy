@@ -1,0 +1,11 @@
+key: scalix-world/scalix-cloud-cli
+publisher: scalix-world
+name: Scalix Cloud CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScalixWorld/ScalixCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScalixWorld/ScalixCloud
+identifiers:
+- winget: ScalixWorld.ScalixCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScalixWorld/ScalixCloud
+aliases: []

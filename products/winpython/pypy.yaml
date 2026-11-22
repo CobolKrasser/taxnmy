@@ -1,0 +1,12 @@
+key: winpython/pypy
+publisher: winpython
+name: winpython-pypy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winpython/winpython-pypy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winpython/winpython-pypy
+identifiers:
+- winget: winpython.winpython-pypy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/winpython/winpython-pypy
+aliases:
+- winpython/winpython-pypy

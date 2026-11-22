@@ -1,0 +1,11 @@
+key: captain-vii/corral
+publisher: captain-vii
+name: Corral
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaptainVII/Corral
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaptainVII/Corral
+identifiers:
+- winget: CaptainVII.Corral
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaptainVII/Corral
+aliases: []

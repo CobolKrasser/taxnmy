@@ -1,0 +1,11 @@
+key: lupinho-net/hardlinkbackup
+publisher: lupinho-net
+name: HardlinkBackup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lupinho/HardlinkBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lupinho/HardlinkBackup
+identifiers:
+- winget: Lupinho.HardlinkBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lupinho/HardlinkBackup
+aliases: []

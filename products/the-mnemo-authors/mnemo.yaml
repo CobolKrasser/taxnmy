@@ -1,0 +1,11 @@
+key: the-mnemo-authors/mnemo
+publisher: the-mnemo-authors
+name: Mnemo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnifferLP/Mnemo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnifferLP/Mnemo
+identifiers:
+- winget: SnifferLP.Mnemo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnifferLP/Mnemo
+aliases: []

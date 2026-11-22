@@ -1,0 +1,11 @@
+key: daniel-perez-martinez/titan-ssh
+publisher: daniel-perez-martinez
+name: titan-ssh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanielPerezMartinez/TitanSSH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanielPerezMartinez/TitanSSH
+identifiers:
+- winget: DanielPerezMartinez.TitanSSH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanielPerezMartinez/TitanSSH
+aliases: []

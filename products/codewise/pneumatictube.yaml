@@ -1,0 +1,11 @@
+key: codewise/pneumatictube
+publisher: codewise
+name: PneumaticTube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeWise/PneumaticTube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeWise/PneumaticTube
+identifiers:
+- winget: CodeWise.PneumaticTube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeWise/PneumaticTube
+aliases: []

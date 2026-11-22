@@ -1,0 +1,11 @@
+key: mobisystems/mobioffice
+publisher: mobisystems
+name: MobiOffice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiOffice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiOffice
+identifiers:
+- winget: MobiSystems.MobiOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiOffice
+aliases: []

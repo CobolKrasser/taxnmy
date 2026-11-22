@@ -1,0 +1,11 @@
+key: the-sz-development/checksum
+publisher: the-sz-development
+name: CheckSum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CheckSum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CheckSum
+identifiers:
+- winget: the-sz.CheckSum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/CheckSum
+aliases: []

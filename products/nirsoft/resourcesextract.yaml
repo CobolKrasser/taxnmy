@@ -1,0 +1,11 @@
+key: nirsoft/resourcesextract
+publisher: nirsoft
+name: ResourcesExtract
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ResourcesExtract
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ResourcesExtract
+identifiers:
+- winget: NirSoft.ResourcesExtract
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ResourcesExtract
+aliases: []

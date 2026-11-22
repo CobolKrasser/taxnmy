@@ -1,0 +1,11 @@
+key: prusa-research/prusaslicer
+publisher: prusa-research
+name: PrusaSlicer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prusa3D/PrusaSlicer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prusa3D/PrusaSlicer
+identifiers:
+- winget: Prusa3D.PrusaSlicer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prusa3D/PrusaSlicer
+aliases: []

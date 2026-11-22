@@ -1,0 +1,11 @@
+key: selurs-software/hybrid
+publisher: selurs-software
+name: Hybrid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Selur/Hybrid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Selur/Hybrid
+identifiers:
+- winget: Selur.Hybrid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Selur/Hybrid
+aliases: []

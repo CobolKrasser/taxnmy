@@ -1,0 +1,11 @@
+key: thorlabs/sls60x
+publisher: thorlabs
+name: SLS60x
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/SLS60x
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/SLS60x
+identifiers:
+- winget: Thorlabs.SLS60x
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/SLS60x
+aliases: []

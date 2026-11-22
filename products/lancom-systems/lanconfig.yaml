@@ -1,0 +1,11 @@
+key: lancom-systems/lanconfig
+publisher: lancom-systems
+name: LANconfig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANconfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANconfig
+identifiers:
+- winget: LANCOM.LANconfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANconfig
+aliases: []

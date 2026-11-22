@@ -1,0 +1,11 @@
+key: advanced-micro-devices/amd-software-cloud-edition
+publisher: advanced-micro-devices
+name: 'AMD Software: Cloud Edition'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMD/AMDSoftwareCloudEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMD/AMDSoftwareCloudEdition
+identifiers:
+- winget: AMD.AMDSoftwareCloudEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMD/AMDSoftwareCloudEdition
+aliases: []

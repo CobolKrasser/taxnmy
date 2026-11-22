@@ -1,0 +1,11 @@
+key: stepfun/stepcode
+publisher: stepfun
+name: StepCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StepFun/StepCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StepFun/StepCode
+identifiers:
+- winget: StepFun.StepCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StepFun/StepCode
+aliases: []

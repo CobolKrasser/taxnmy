@@ -1,0 +1,11 @@
+key: columnar/dbc
+publisher: columnar
+name: dbc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Columnar/dbc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Columnar/dbc
+identifiers:
+- winget: Columnar.dbc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Columnar/dbc
+aliases: []

@@ -1,0 +1,11 @@
+key: pocketbase/pocketbase
+publisher: pocketbase
+name: PocketBase
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketBase/PocketBase
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketBase/PocketBase
+identifiers:
+- winget: PocketBase.PocketBase
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PocketBase/PocketBase
+aliases: []

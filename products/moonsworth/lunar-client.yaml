@@ -1,0 +1,11 @@
+key: moonsworth/lunar-client
+publisher: moonsworth
+name: Lunar Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moonsworth/LunarClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moonsworth/LunarClient
+identifiers:
+- winget: Moonsworth.LunarClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moonsworth/LunarClient
+aliases: []

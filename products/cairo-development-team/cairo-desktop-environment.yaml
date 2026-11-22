@@ -1,0 +1,11 @@
+key: cairo-development-team/cairo-desktop-environment
+publisher: cairo-development-team
+name: Cairo Desktop Environment
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cairo/Cairo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cairo/Cairo
+identifiers:
+- winget: Cairo.Cairo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cairo/Cairo
+aliases: []

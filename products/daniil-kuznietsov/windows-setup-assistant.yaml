@@ -1,0 +1,11 @@
+key: daniil-kuznietsov/windows-setup-assistant
+publisher: daniil-kuznietsov
+name: Windows Setup Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaniilKuznietsov/WindowsSetupAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaniilKuznietsov/WindowsSetupAssistant
+identifiers:
+- winget: DaniilKuznietsov.WindowsSetupAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaniilKuznietsov/WindowsSetupAssistant
+aliases: []

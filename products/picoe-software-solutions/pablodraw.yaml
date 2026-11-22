@@ -1,0 +1,11 @@
+key: picoe-software-solutions/pablodraw
+publisher: picoe-software-solutions
+name: PabloDraw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cwensley/PabloDraw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cwensley/PabloDraw
+identifiers:
+- winget: cwensley.PabloDraw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cwensley/PabloDraw
+aliases: []

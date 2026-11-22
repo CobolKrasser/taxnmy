@@ -1,0 +1,11 @@
+key: crystal-rich/internetoff
+publisher: crystal-rich
+name: InternetOff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/InternetOff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/InternetOff
+identifiers:
+- winget: CrystalRich.InternetOff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalRich/InternetOff
+aliases: []

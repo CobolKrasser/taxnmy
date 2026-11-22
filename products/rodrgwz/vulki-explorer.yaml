@@ -1,0 +1,11 @@
+key: rodrgwz/vulki-explorer
+publisher: rodrgwz
+name: Vulki Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vulki/VulkiExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vulki/VulkiExplorer
+identifiers:
+- winget: Vulki.VulkiExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vulki/VulkiExplorer
+aliases: []

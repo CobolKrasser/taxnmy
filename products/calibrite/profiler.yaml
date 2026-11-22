@@ -1,0 +1,12 @@
+key: calibrite/profiler
+publisher: calibrite
+name: calibrite PROFILER
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Calibrite/PROFILER
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Calibrite/PROFILER
+identifiers:
+- winget: Calibrite.PROFILER
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Calibrite/PROFILER
+aliases:
+- calibrite/calibrite-profiler

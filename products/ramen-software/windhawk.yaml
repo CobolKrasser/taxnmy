@@ -1,0 +1,11 @@
+key: ramen-software/windhawk
+publisher: ramen-software
+name: Windhawk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamenSoftware/Windhawk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamenSoftware/Windhawk
+identifiers:
+- winget: RamenSoftware.Windhawk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamenSoftware/Windhawk
+aliases: []

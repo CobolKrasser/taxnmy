@@ -1,0 +1,11 @@
+key: tabby-developers/tabby
+publisher: tabby-developers
+name: Tabby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eugeny/Tabby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eugeny/Tabby
+identifiers:
+- winget: Eugeny.Tabby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eugeny/Tabby
+aliases: []

@@ -1,0 +1,11 @@
+key: cab-plus-s/scanprix
+publisher: cab-plus-s
+name: ScanPrix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CABS/ScanPrix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CABS/ScanPrix
+identifiers:
+- winget: CABS.ScanPrix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CABS/ScanPrix
+aliases: []

@@ -1,0 +1,11 @@
+key: topaz-labs/topaz-photo-ai
+publisher: topaz-labs
+name: Topaz Photo AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazPhotoAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazPhotoAI
+identifiers:
+- winget: TopazLabs.TopazPhotoAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopazLabs/TopazPhotoAI
+aliases: []

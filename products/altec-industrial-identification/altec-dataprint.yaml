@@ -1,0 +1,11 @@
+key: altec-industrial-identification/altec-dataprint
+publisher: altec-industrial-identification
+name: Altec DataPrint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALTEC/AltecDataPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALTEC/AltecDataPrint
+identifiers:
+- winget: ALTEC.AltecDataPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALTEC/AltecDataPrint
+aliases: []

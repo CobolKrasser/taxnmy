@@ -1,0 +1,11 @@
+key: atani/mysh
+publisher: atani
+name: mysh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/mysh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/mysh
+identifiers:
+- winget: atani.mysh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/atani/mysh
+aliases: []

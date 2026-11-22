@@ -1,0 +1,12 @@
+key: movavi/academic
+publisher: movavi
+name: Movavi Academic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviAcademic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviAcademic
+identifiers:
+- winget: Movavi.MovaviAcademic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Movavi/MovaviAcademic
+aliases:
+- movavi/movavi-academic

@@ -1,0 +1,11 @@
+key: jurplel-and-qview-contributors/qview-nightly
+publisher: jurplel-and-qview-contributors
+name: qView Nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jurplel/qView/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jurplel/qView/Nightly
+identifiers:
+- winget: jurplel.qView.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jurplel/qView/Nightly
+aliases: []

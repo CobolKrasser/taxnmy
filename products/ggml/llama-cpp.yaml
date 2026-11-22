@@ -1,0 +1,11 @@
+key: ggml/llama-cpp
+publisher: ggml
+name: llama.cpp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ggml/llamacpp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ggml/llamacpp
+identifiers:
+- winget: ggml.llamacpp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ggml/llamacpp
+aliases: []

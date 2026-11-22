@@ -1,0 +1,11 @@
+key: nickknissen/tailscale-command-palette
+publisher: nickknissen
+name: Tailscale Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nickknissen/TailscaleCommandPalette
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nickknissen/TailscaleCommandPalette
+identifiers:
+- winget: nickknissen.TailscaleCommandPalette
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nickknissen/TailscaleCommandPalette
+aliases: []

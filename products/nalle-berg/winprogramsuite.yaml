@@ -1,0 +1,11 @@
+key: nalle-berg/winprogramsuite
+publisher: nalle-berg
+name: WinProgramSuite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NalleBerg/WinProgramSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NalleBerg/WinProgramSuite
+identifiers:
+- winget: NalleBerg.WinProgramSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NalleBerg/WinProgramSuite
+aliases: []

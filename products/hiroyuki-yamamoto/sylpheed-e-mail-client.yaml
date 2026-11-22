@@ -1,0 +1,11 @@
+key: hiroyuki-yamamoto/sylpheed-e-mail-client
+publisher: hiroyuki-yamamoto
+name: Sylpheed E-Mail Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sylpheed/Sylpheed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sylpheed/Sylpheed
+identifiers:
+- winget: Sylpheed.Sylpheed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sylpheed/Sylpheed
+aliases: []

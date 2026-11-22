@@ -1,0 +1,11 @@
+key: aurelio-avila/pc-tweaker-uninstaller
+publisher: aurelio-avila
+name: PC Tweaker Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/PCTweakerUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/PCTweakerUninstaller
+identifiers:
+- winget: AurelioAvila.PCTweakerUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/PCTweakerUninstaller
+aliases: []

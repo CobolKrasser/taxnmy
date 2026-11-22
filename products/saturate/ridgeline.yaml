@@ -1,0 +1,11 @@
+key: saturate/ridgeline
+publisher: saturate
+name: Ridgeline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturate/Ridgeline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturate/Ridgeline
+identifiers:
+- winget: Saturate.Ridgeline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Saturate/Ridgeline
+aliases: []

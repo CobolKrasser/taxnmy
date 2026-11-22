@@ -1,0 +1,11 @@
+key: owl-labs/meeting-owl
+publisher: owl-labs
+name: Meeting Owl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OwlLabs/MeetingOwl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OwlLabs/MeetingOwl
+identifiers:
+- winget: OwlLabs.MeetingOwl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OwlLabs/MeetingOwl
+aliases: []

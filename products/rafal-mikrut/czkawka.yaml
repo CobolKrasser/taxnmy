@@ -1,0 +1,13 @@
+key: rafal-mikrut/czkawka
+publisher: rafal-mikrut
+name: Czkawka
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/czkawka/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/czkawka/cli
+identifiers:
+- winget: qarmin.czkawka.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/czkawka/cli
+- winget: qarmin.czkawka.gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/czkawka/gui
+aliases: []

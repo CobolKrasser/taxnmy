@@ -1,0 +1,11 @@
+key: kuaishou/klingai
+publisher: kuaishou
+name: KlingAI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuaishou/KlingAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuaishou/KlingAI
+identifiers:
+- winget: Kuaishou.KlingAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuaishou/KlingAI
+aliases: []

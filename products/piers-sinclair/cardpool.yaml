@@ -1,0 +1,11 @@
+key: piers-sinclair/cardpool
+publisher: piers-sinclair
+name: CardPool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiersSinclair/CardPool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiersSinclair/CardPool
+identifiers:
+- winget: PiersSinclair.CardPool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiersSinclair/CardPool
+aliases: []

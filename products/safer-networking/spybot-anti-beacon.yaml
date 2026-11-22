@@ -1,0 +1,11 @@
+key: safer-networking/spybot-anti-beacon
+publisher: safer-networking
+name: Spybot Anti-Beacon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaferNetworking/SpybotAntiBeacon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaferNetworking/SpybotAntiBeacon
+identifiers:
+- winget: SaferNetworking.SpybotAntiBeacon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaferNetworking/SpybotAntiBeacon
+aliases: []

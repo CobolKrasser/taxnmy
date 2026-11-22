@@ -1,0 +1,11 @@
+key: xploview/xploview
+publisher: xploview
+name: xploview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview
+identifiers:
+- winget: xploview.xploview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xploview/xploview
+aliases: []

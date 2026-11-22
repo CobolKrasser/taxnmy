@@ -1,0 +1,11 @@
+key: solid-clouds/frontiers-launcher
+publisher: solid-clouds
+name: Frontiers Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidClouds/Frontiers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidClouds/Frontiers
+identifiers:
+- winget: SolidClouds.Frontiers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidClouds/Frontiers
+aliases: []

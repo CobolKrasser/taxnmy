@@ -1,0 +1,11 @@
+key: pothosware/pothossdr
+publisher: pothosware
+name: PothosSDR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pothosware/PothosSDR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pothosware/PothosSDR
+identifiers:
+- winget: Pothosware.PothosSDR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pothosware/PothosSDR
+aliases: []

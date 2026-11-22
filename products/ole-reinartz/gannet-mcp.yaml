@@ -1,0 +1,11 @@
+key: ole-reinartz/gannet-mcp
+publisher: ole-reinartz
+name: gannet-mcp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OleReinartz/GannetMcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OleReinartz/GannetMcp
+identifiers:
+- winget: OleReinartz.GannetMcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OleReinartz/GannetMcp
+aliases: []

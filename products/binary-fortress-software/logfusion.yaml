@@ -1,0 +1,11 @@
+key: binary-fortress-software/logfusion
+publisher: binary-fortress-software
+name: LogFusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/LogFusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/LogFusion
+identifiers:
+- winget: BinaryFortress.LogFusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/LogFusion
+aliases: []

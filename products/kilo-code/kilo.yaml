@@ -1,0 +1,13 @@
+key: kilo-code/kilo
+publisher: kilo-code
+name: Kilo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiloCode/Kilo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiloCode/Kilo
+identifiers:
+- winget: KiloCode.Kilo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiloCode/Kilo
+- winget: KiloCode.Kilo.Baseline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiloCode/Kilo/Baseline
+aliases: []

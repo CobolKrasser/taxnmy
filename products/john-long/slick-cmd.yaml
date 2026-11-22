@@ -1,0 +1,11 @@
+key: john-long/slick-cmd
+publisher: john-long
+name: Slick Cmd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/johnlng/slickcmd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/johnlng/slickcmd
+identifiers:
+- winget: johnlng.slickcmd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/johnlng/slickcmd
+aliases: []

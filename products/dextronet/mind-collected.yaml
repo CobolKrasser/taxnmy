@@ -1,0 +1,11 @@
+key: dextronet/mind-collected
+publisher: dextronet
+name: Mind Collected
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dextronet/MindCollected
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dextronet/MindCollected
+identifiers:
+- winget: Dextronet.MindCollected
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dextronet/MindCollected
+aliases: []

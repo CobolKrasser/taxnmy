@@ -1,0 +1,11 @@
+key: century-software/tinyterm-plus-for-web
+publisher: century-software
+name: TinyTERM Plus for Web
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/TinyTERMPlusforWeb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/TinyTERMPlusforWeb
+identifiers:
+- winget: CenSoft.TinyTERMPlusforWeb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/TinyTERMPlusforWeb
+aliases: []

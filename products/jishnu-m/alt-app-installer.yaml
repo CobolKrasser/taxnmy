@@ -1,0 +1,11 @@
+key: jishnu-m/alt-app-installer
+publisher: jishnu-m
+name: Alt App Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mjishnu/altappinstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mjishnu/altappinstaller
+identifiers:
+- winget: mjishnu.altappinstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mjishnu/altappinstaller
+aliases: []

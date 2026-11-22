@@ -1,0 +1,11 @@
+key: graeme-winn/deckman-c-map-demo
+publisher: graeme-winn
+name: Deckman C-Map Demo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/DfW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/DfW
+identifiers:
+- winget: GlobalMarineNet.DfW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalMarineNet/DfW
+aliases: []

@@ -1,0 +1,11 @@
+key: passmark-software/rebooter
+publisher: passmark-software
+name: Rebooter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Rebooter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Rebooter
+identifiers:
+- winget: PassMark.Rebooter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Rebooter
+aliases: []

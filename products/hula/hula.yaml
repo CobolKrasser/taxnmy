@@ -1,0 +1,11 @@
+key: hula/hula
+publisher: hula
+name: HuLa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HuLaSpark/HuLa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HuLaSpark/HuLa
+identifiers:
+- winget: HuLaSpark.HuLa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HuLaSpark/HuLa
+aliases: []

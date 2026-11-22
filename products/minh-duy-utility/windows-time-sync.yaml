@@ -1,0 +1,11 @@
+key: minh-duy-utility/windows-time-sync
+publisher: minh-duy-utility
+name: Windows Time Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/WindowsTimeSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/WindowsTimeSync
+identifiers:
+- winget: Buffer124.WindowsTimeSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/WindowsTimeSync
+aliases: []

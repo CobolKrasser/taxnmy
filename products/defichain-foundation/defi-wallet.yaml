@@ -1,0 +1,11 @@
+key: defichain-foundation/defi-wallet
+publisher: defichain-foundation
+name: DeFi Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/defi/defi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/defi/defi
+identifiers:
+- winget: defi.defi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/defi/defi
+aliases: []

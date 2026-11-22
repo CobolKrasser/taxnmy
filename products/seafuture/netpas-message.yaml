@@ -1,0 +1,11 @@
+key: seafuture/netpas-message
+publisher: seafuture
+name: Netpas Message
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafuture/NetpasMessage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafuture/NetpasMessage
+identifiers:
+- winget: Seafuture.NetpasMessage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seafuture/NetpasMessage
+aliases: []

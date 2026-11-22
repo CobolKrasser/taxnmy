@@ -1,0 +1,11 @@
+key: kubus/bcf-manager-for-autocad
+publisher: kubus
+name: BCF Manager for AutoCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BCFManager/AutoCAD/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BCFManager/AutoCAD/2025
+identifiers:
+- winget: Kubus.BCFManager.AutoCAD.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BCFManager/AutoCAD/2025
+aliases: []

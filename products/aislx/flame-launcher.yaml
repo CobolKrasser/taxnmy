@@ -1,0 +1,11 @@
+key: aislx/flame-launcher
+publisher: aislx
+name: Flame Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aislx/FlameLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aislx/FlameLauncher
+identifiers:
+- winget: aislx.FlameLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aislx/FlameLauncher
+aliases: []

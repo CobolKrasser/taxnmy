@@ -1,0 +1,11 @@
+key: vivi/vivi
+publisher: vivi
+name: Vivi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivi/Vivi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivi/Vivi
+identifiers:
+- winget: Vivi.Vivi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivi/Vivi
+aliases: []

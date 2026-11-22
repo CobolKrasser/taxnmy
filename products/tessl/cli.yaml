@@ -1,0 +1,12 @@
+key: tessl/cli
+publisher: tessl
+name: Tessl CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tessl/tessl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tessl/tessl
+identifiers:
+- winget: tessl.tessl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tessl/tessl
+aliases:
+- tessl/tessl-cli

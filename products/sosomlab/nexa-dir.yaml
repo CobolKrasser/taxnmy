@@ -1,0 +1,13 @@
+key: sosomlab/nexa-dir
+publisher: sosomlab
+name: Nexa Dir
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaDir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaDir
+identifiers:
+- winget: SosomLab.NexaDir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaDir
+- winget: SosomLab.NexaDir.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaDir/Portable
+aliases: []

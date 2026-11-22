@@ -1,0 +1,12 @@
+key: upcloud/cli
+publisher: upcloud
+name: upcloud-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpCloud/upcloud-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpCloud/upcloud-cli
+identifiers:
+- winget: UpCloud.upcloud-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpCloud/upcloud-cli
+aliases:
+- upcloud/upcloud-cli

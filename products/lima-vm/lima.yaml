@@ -1,0 +1,11 @@
+key: lima-vm/lima
+publisher: lima-vm
+name: Lima
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lima/Lima
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lima/Lima
+identifiers:
+- winget: Lima.Lima
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lima/Lima
+aliases: []

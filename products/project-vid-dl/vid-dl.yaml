@@ -1,0 +1,11 @@
+key: project-vid-dl/vid-dl
+publisher: project-vid-dl
+name: Vid-dl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectVid/VidDl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectVid/VidDl
+identifiers:
+- winget: ProjectVid.VidDl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectVid/VidDl
+aliases: []

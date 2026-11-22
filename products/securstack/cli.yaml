@@ -1,0 +1,12 @@
+key: securstack/cli
+publisher: securstack
+name: SecurStack CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurStack/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurStack/CLI
+identifiers:
+- winget: SecurStack.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurStack/CLI
+aliases:
+- securstack/securstack-cli

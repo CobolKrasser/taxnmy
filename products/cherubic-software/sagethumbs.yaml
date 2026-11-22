@@ -1,0 +1,11 @@
+key: cherubic-software/sagethumbs
+publisher: cherubic-software
+name: SageThumbs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CherubicSoftware/SageThumbs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CherubicSoftware/SageThumbs
+identifiers:
+- winget: CherubicSoftware.SageThumbs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CherubicSoftware/SageThumbs
+aliases: []

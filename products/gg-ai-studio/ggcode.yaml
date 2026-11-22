@@ -1,0 +1,11 @@
+key: gg-ai-studio/ggcode
+publisher: gg-ai-studio
+name: ggcode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gg/ai/ggcode-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gg/ai/ggcode-cli
+identifiers:
+- winget: gg.ai.ggcode-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gg/ai/ggcode-cli
+aliases: []

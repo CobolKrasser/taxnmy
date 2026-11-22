@@ -1,0 +1,12 @@
+key: xerox/workplace-cloud-client
+publisher: xerox
+name: Xerox Workplace Cloud Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xerox/WorkplaceCloudClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xerox/WorkplaceCloudClient
+identifiers:
+- winget: Xerox.WorkplaceCloudClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xerox/WorkplaceCloudClient
+aliases:
+- xerox/xerox-workplace-cloud-client

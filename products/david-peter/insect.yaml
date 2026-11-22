@@ -1,0 +1,11 @@
+key: david-peter/insect
+publisher: david-peter
+name: insect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/insect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/insect
+identifiers:
+- winget: sharkdp.insect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/insect
+aliases: []

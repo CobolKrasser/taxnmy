@@ -1,0 +1,11 @@
+key: secure-scuttlebutt-consortium/patchwork
+publisher: secure-scuttlebutt-consortium
+name: Patchwork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SSBC/Patchwork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SSBC/Patchwork
+identifiers:
+- winget: SSBC.Patchwork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SSBC/Patchwork
+aliases: []

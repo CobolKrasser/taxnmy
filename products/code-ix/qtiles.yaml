@@ -1,0 +1,11 @@
+key: code-ix/qtiles
+publisher: code-ix
+name: QTiles
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QTiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QTiles
+identifiers:
+- winget: Code-iX.QTiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QTiles
+aliases: []

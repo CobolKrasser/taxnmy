@@ -1,0 +1,11 @@
+key: jv-electromech/gekko-pro-ide
+publisher: jv-electromech
+name: Gekko Pro IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JVElectromech/GekkoProIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JVElectromech/GekkoProIDE
+identifiers:
+- winget: JVElectromech.GekkoProIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JVElectromech/GekkoProIDE
+aliases: []

@@ -1,0 +1,11 @@
+key: evexi/evexicli
+publisher: evexi
+name: EvexiCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evexi/EvexiCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evexi/EvexiCLI
+identifiers:
+- winget: Evexi.EvexiCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evexi/EvexiCLI
+aliases: []

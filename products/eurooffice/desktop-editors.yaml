@@ -1,0 +1,12 @@
+key: eurooffice/desktop-editors
+publisher: eurooffice
+name: EuroOffice Desktop Editors
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuroOffice/DesktopEditors
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuroOffice/DesktopEditors
+identifiers:
+- winget: EuroOffice.DesktopEditors
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuroOffice/DesktopEditors
+aliases:
+- eurooffice/eurooffice-desktop-editors

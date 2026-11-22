@@ -1,0 +1,11 @@
+key: unified-intents/unified-remote-server
+publisher: unified-intents
+name: Unified Remote Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnifiedIntents/UnifiedRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnifiedIntents/UnifiedRemote
+identifiers:
+- winget: UnifiedIntents.UnifiedRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnifiedIntents/UnifiedRemote
+aliases: []

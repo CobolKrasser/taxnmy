@@ -1,0 +1,11 @@
+key: oldest/serveradmin
+publisher: oldest
+name: ServerAdmin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OLDest/ServerAdmin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OLDest/ServerAdmin
+identifiers:
+- winget: OLDest.ServerAdmin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OLDest/ServerAdmin
+aliases: []

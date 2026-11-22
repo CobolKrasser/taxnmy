@@ -1,0 +1,11 @@
+key: vibesmiths/heatsync
+publisher: vibesmiths
+name: HeatSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VibeSmiths/HeatSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VibeSmiths/HeatSync
+identifiers:
+- winget: VibeSmiths.HeatSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VibeSmiths/HeatSync
+aliases: []

@@ -1,0 +1,11 @@
+key: chillicream/nitro-cli
+publisher: chillicream
+name: Nitro CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliCream/Nitro/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliCream/Nitro/CLI
+identifiers:
+- winget: ChilliCream.Nitro.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliCream/Nitro/CLI
+aliases: []

@@ -1,0 +1,11 @@
+key: gisinternals/gdal-oracle-plugin
+publisher: gisinternals
+name: GDAL Oracle plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/Oracle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/Oracle
+identifiers:
+- winget: GISInternals.GDAL.Oracle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GISInternals/GDAL/Oracle
+aliases: []

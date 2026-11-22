@@ -1,0 +1,11 @@
+key: datalust/seqcli
+publisher: datalust
+name: seqcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/seqcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/seqcli
+identifiers:
+- winget: Datalust.seqcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/seqcli
+aliases: []

@@ -1,0 +1,11 @@
+key: network-optix/nx-meta-client
+publisher: network-optix
+name: Nx Meta Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Client
+identifiers:
+- winget: NetworkOptix.NxMeta.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Client
+aliases: []

@@ -1,0 +1,11 @@
+key: ursa-minor/copytrans-studio
+publisher: ursa-minor
+name: CopyTrans Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopyTrans/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopyTrans/Studio
+identifiers:
+- winget: CopyTrans.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CopyTrans/Studio
+aliases: []

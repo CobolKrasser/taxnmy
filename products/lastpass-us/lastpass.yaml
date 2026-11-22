@@ -1,0 +1,11 @@
+key: lastpass-us/lastpass
+publisher: lastpass-us
+name: LastPass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LastPass/LastPass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LastPass/LastPass
+identifiers:
+- winget: LastPass.LastPass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LastPass/LastPass
+aliases: []

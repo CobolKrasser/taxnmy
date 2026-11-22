@@ -1,0 +1,11 @@
+key: mshell-team/mshell
+publisher: mshell-team
+name: MShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inspoaibox/Mshell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inspoaibox/Mshell
+identifiers:
+- winget: inspoaibox.Mshell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inspoaibox/Mshell
+aliases: []

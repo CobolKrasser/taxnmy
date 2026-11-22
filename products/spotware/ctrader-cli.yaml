@@ -1,0 +1,11 @@
+key: spotware/ctrader-cli
+publisher: spotware
+name: cTrader CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spotware/cTrader/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spotware/cTrader/CLI
+identifiers:
+- winget: Spotware.cTrader.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spotware/cTrader/CLI
+aliases: []

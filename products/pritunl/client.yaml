@@ -1,0 +1,12 @@
+key: pritunl/client
+publisher: pritunl
+name: Pritunl Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pritunl/PritunlClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pritunl/PritunlClient
+identifiers:
+- winget: Pritunl.PritunlClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pritunl/PritunlClient
+aliases:
+- pritunl/pritunl-client

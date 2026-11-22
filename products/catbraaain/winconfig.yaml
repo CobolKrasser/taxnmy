@@ -1,0 +1,11 @@
+key: catbraaain/winconfig
+publisher: catbraaain
+name: winconfig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatBraaain/winconfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatBraaain/winconfig
+identifiers:
+- winget: CatBraaain.winconfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatBraaain/winconfig
+aliases: []

@@ -1,0 +1,11 @@
+key: greyclab/g-mic-qt-for-gimp
+publisher: greyclab
+name: G'MIC-Qt for GIMP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreycLab/GMIC-Qt/GIMP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreycLab/GMIC-Qt/GIMP
+identifiers:
+- winget: GreycLab.GMIC-Qt.GIMP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GreycLab/GMIC-Qt/GIMP
+aliases: []

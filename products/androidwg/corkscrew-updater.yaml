@@ -1,0 +1,11 @@
+key: androidwg/corkscrew-updater
+publisher: androidwg
+name: Corkscrew Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/androidWG/Corkscrew
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/androidWG/Corkscrew
+identifiers:
+- winget: androidWG.Corkscrew
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/androidWG/Corkscrew
+aliases: []

@@ -1,0 +1,11 @@
+key: zs-yg/moonviewer
+publisher: zs-yg
+name: MoonViewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zsyg/MoonViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zsyg/MoonViewer
+identifiers:
+- winget: zsyg.MoonViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zsyg/MoonViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: colorlogic/copra
+publisher: colorlogic
+name: CoPrA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/CoPrA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/CoPrA
+identifiers:
+- winget: ColorLogic.CoPrA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/CoPrA
+aliases: []

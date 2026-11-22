@@ -1,0 +1,12 @@
+key: nozbe/personal
+publisher: nozbe
+name: Nozbe Personal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nozbe/NozbePersonal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nozbe/NozbePersonal
+identifiers:
+- winget: Nozbe.NozbePersonal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nozbe/NozbePersonal
+aliases:
+- nozbe/nozbe-personal

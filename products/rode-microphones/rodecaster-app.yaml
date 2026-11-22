@@ -1,0 +1,11 @@
+key: rode-microphones/rodecaster-app
+publisher: rode-microphones
+name: RODECaster App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterApp
+identifiers:
+- winget: RODE.RODECasterApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterApp
+aliases: []

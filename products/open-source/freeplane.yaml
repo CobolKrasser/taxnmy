@@ -1,0 +1,11 @@
+key: open-source/freeplane
+publisher: open-source
+name: Freeplane
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freeplane/Freeplane
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freeplane/Freeplane
+identifiers:
+- winget: Freeplane.Freeplane
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freeplane/Freeplane
+aliases: []

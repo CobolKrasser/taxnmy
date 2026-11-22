@@ -1,0 +1,11 @@
+key: sourmesen/mesen-s
+publisher: sourmesen
+name: Mesen-S
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SourMesen/Mesen-S
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SourMesen/Mesen-S
+identifiers:
+- winget: SourMesen.Mesen-S
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SourMesen/Mesen-S
+aliases: []

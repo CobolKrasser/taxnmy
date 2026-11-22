@@ -1,0 +1,11 @@
+key: paranoia-works/paranoia-file-and-text-encryption
+publisher: paranoia-works
+name: Paranoia File & Text Encryption
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParanoiaWorks/PFTE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParanoiaWorks/PFTE
+identifiers:
+- winget: ParanoiaWorks.PFTE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ParanoiaWorks/PFTE
+aliases: []

@@ -1,0 +1,12 @@
+key: hhd-software/device-monitoring-studio
+publisher: hhd-software
+name: HHD Software Device Monitoring Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/DeviceMonitoringStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/DeviceMonitoringStudio
+identifiers:
+- winget: HHDSoftware.DeviceMonitoringStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/DeviceMonitoringStudio
+aliases:
+- hhd-software/hhd-software-device-monitoring-studio

@@ -1,0 +1,11 @@
+key: kicad/kicad
+publisher: kicad
+name: KiCad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiCad/KiCad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiCad/KiCad
+identifiers:
+- winget: KiCad.KiCad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KiCad/KiCad
+aliases: []

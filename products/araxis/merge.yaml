@@ -1,0 +1,12 @@
+key: araxis/merge
+publisher: araxis
+name: Araxis Merge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Araxis/Merge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Araxis/Merge
+identifiers:
+- winget: Araxis.Merge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Araxis/Merge
+aliases:
+- araxis/araxis-merge

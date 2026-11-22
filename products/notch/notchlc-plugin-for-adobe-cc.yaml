@@ -1,0 +1,11 @@
+key: notch/notchlc-plugin-for-adobe-cc
+publisher: notch
+name: NotchLC Plugin for Adobe CC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notch/NotchLC/AdobeCCPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notch/NotchLC/AdobeCCPlugin
+identifiers:
+- winget: Notch.NotchLC.AdobeCCPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notch/NotchLC/AdobeCCPlugin
+aliases: []

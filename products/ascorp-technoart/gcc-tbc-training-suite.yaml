@@ -1,0 +1,11 @@
+key: ascorp-technoart/gcc-tbc-training-suite
+publisher: ascorp-technoart
+name: GCC-TBC Training Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgrawalComputers/GCCTBCTrainingSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgrawalComputers/GCCTBCTrainingSuite
+identifiers:
+- winget: AgrawalComputers.GCCTBCTrainingSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgrawalComputers/GCCTBCTrainingSuite
+aliases: []

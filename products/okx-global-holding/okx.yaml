@@ -1,0 +1,11 @@
+key: okx-global-holding/okx
+publisher: okx-global-holding
+name: OKX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OKX/OKX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OKX/OKX
+identifiers:
+- winget: OKX.OKX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OKX/OKX
+aliases: []

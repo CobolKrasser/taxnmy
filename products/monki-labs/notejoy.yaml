@@ -1,0 +1,11 @@
+key: monki-labs/notejoy
+publisher: monki-labs
+name: Notejoy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonkiLabs/Notejoy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonkiLabs/Notejoy
+identifiers:
+- winget: MonkiLabs.Notejoy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonkiLabs/Notejoy
+aliases: []

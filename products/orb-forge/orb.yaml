@@ -1,0 +1,13 @@
+key: orb-forge/orb
+publisher: orb-forge
+name: Orb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrbForge/Orb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrbForge/Orb
+identifiers:
+- winget: OrbForge.Orb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrbForge/Orb
+- winget: OrbForge.Orb.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrbForge/Orb/EXE
+aliases: []

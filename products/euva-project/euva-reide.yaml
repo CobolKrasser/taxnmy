@@ -1,0 +1,11 @@
+key: euva-project/euva-reide
+publisher: euva-project
+name: EUVA-reIDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Euva-Project/EUVA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Euva-Project/EUVA
+identifiers:
+- winget: Euva-Project.EUVA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Euva-Project/EUVA
+aliases: []

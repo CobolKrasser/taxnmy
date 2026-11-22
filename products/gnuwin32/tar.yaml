@@ -1,0 +1,11 @@
+key: gnuwin32/tar
+publisher: gnuwin32
+name: Tar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Tar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Tar
+identifiers:
+- winget: GnuWin32.Tar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Tar
+aliases: []

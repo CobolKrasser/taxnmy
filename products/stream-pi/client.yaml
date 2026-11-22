@@ -1,0 +1,12 @@
+key: stream-pi/client
+publisher: stream-pi
+name: Stream-Pi Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stream-Pi/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stream-Pi/Client
+identifiers:
+- winget: Stream-Pi.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stream-Pi/Client
+aliases:
+- stream-pi/stream-pi-client

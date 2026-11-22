@@ -1,0 +1,11 @@
+key: codeium/devin
+publisher: codeium
+name: Devin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CognitionAI/DevinDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CognitionAI/DevinDesktop
+identifiers:
+- winget: CognitionAI.DevinDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CognitionAI/DevinDesktop
+aliases: []

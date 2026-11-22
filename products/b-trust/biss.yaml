@@ -1,0 +1,11 @@
+key: b-trust/biss
+publisher: b-trust
+name: BISS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/B-trust/BISS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/B-trust/BISS
+identifiers:
+- winget: B-trust.BISS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/B-trust/BISS
+aliases: []

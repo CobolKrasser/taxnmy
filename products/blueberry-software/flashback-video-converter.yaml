@@ -1,0 +1,11 @@
+key: blueberry-software/flashback-video-converter
+publisher: blueberry-software
+name: Flashback Video Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackVideoConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackVideoConverter
+identifiers:
+- winget: Blueberry.FlashbackVideoConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashbackVideoConverter
+aliases: []

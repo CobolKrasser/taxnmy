@@ -1,0 +1,11 @@
+key: smapit-project/smapit-manager
+publisher: smapit-project
+name: SmapIt Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmapItProject/SmapIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmapItProject/SmapIt
+identifiers:
+- winget: SmapItProject.SmapIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmapItProject/SmapIt
+aliases: []

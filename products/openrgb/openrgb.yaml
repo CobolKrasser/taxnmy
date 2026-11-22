@@ -1,0 +1,11 @@
+key: openrgb/openrgb
+publisher: openrgb
+name: OpenRGB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGB
+identifiers:
+- winget: OpenRGB.OpenRGB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRGB/OpenRGB
+aliases: []

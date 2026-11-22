@@ -1,0 +1,11 @@
+key: storj-labs/uplink
+publisher: storj-labs
+name: Uplink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Storj/Uplink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Storj/Uplink
+identifiers:
+- winget: Storj.Uplink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Storj/Uplink
+aliases: []

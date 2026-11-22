@@ -1,0 +1,11 @@
+key: krajowa-izba-rozliczeniowa/szafir-host
+publisher: krajowa-izba-rozliczeniowa
+name: Szafir Host
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KIR/SzafirHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KIR/SzafirHost
+identifiers:
+- winget: KIR.SzafirHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KIR/SzafirHost
+aliases: []

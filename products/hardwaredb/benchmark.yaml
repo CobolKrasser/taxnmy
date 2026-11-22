@@ -1,0 +1,12 @@
+key: hardwaredb/benchmark
+publisher: hardwaredb
+name: hardwareDB Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hardwareDB/Benchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hardwareDB/Benchmark
+identifiers:
+- winget: hardwareDB.Benchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hardwareDB/Benchmark
+aliases:
+- hardwaredb/hardwaredb-benchmark

@@ -1,0 +1,11 @@
+key: avid-technology/avid-link
+publisher: avid-technology
+name: Avid Link
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avid/AvidLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avid/AvidLink
+identifiers:
+- winget: Avid.AvidLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avid/AvidLink
+aliases: []

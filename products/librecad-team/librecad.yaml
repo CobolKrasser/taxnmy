@@ -1,0 +1,11 @@
+key: librecad-team/librecad
+publisher: librecad-team
+name: LibreCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreCAD/LibreCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreCAD/LibreCAD
+identifiers:
+- winget: LibreCAD.LibreCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreCAD/LibreCAD
+aliases: []

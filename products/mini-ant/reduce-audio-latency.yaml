@@ -1,0 +1,11 @@
+key: mini-ant/reduce-audio-latency
+publisher: mini-ant
+name: Reduce Audio Latency
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniantGit/REAL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniantGit/REAL
+identifiers:
+- winget: MiniantGit.REAL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniantGit/REAL
+aliases: []

@@ -1,0 +1,11 @@
+key: team-at-deck/deck
+publisher: team-at-deck
+name: DECK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sfx101/deck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sfx101/deck
+identifiers:
+- winget: sfx101.deck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sfx101/deck
+aliases: []

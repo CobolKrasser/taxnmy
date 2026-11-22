@@ -1,0 +1,11 @@
+key: charmbracelet/markscribe
+publisher: charmbracelet
+name: markscribe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/markscribe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/markscribe
+identifiers:
+- winget: charmbracelet.markscribe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/markscribe
+aliases: []

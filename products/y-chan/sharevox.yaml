@@ -1,0 +1,15 @@
+key: y-chan/sharevox
+publisher: y-chan
+name: SHAREVOX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/y-chan/SHAREVOX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/y-chan/SHAREVOX
+identifiers:
+- winget: y-chan.SHAREVOX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/y-chan/SHAREVOX
+- winget: y-chan.SHAREVOX.CPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/y-chan/SHAREVOX/CPU
+- winget: y-chan.SHAREVOX.NVIDIA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/y-chan/SHAREVOX/NVIDIA
+aliases: []

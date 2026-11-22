@@ -1,0 +1,11 @@
+key: ethereum/geth
+publisher: ethereum
+name: Geth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethereum/geth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethereum/geth
+identifiers:
+- winget: Ethereum.geth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Ethereum/geth
+aliases: []

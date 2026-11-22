@@ -1,0 +1,12 @@
+key: lucanet/software-manager
+publisher: lucanet
+name: Lucanet.Software Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lucanet/LucanetSoftwareManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lucanet/LucanetSoftwareManager
+identifiers:
+- winget: Lucanet.LucanetSoftwareManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lucanet/LucanetSoftwareManager
+aliases:
+- lucanet/lucanet-software-manager

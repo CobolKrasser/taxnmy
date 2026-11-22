@@ -1,0 +1,11 @@
+key: discover-worthy/discoverworthy-roost
+publisher: discover-worthy
+name: DiscoverWorthy Roost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscoverWorthy/Roost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscoverWorthy/Roost
+identifiers:
+- winget: DiscoverWorthy.Roost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscoverWorthy/Roost
+aliases: []

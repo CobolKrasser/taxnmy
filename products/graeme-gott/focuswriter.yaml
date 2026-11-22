@@ -1,0 +1,11 @@
+key: graeme-gott/focuswriter
+publisher: graeme-gott
+name: FocusWriter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GottCode/FocusWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GottCode/FocusWriter
+identifiers:
+- winget: GottCode.FocusWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GottCode/FocusWriter
+aliases: []

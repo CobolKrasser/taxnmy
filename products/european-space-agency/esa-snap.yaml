@@ -1,0 +1,11 @@
+key: european-space-agency/esa-snap
+publisher: european-space-agency
+name: ESA SNAP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuropeanSpaceAgency/SNAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuropeanSpaceAgency/SNAP
+identifiers:
+- winget: EuropeanSpaceAgency.SNAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuropeanSpaceAgency/SNAP
+aliases: []

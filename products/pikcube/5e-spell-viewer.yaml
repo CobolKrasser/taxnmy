@@ -1,0 +1,11 @@
+key: pikcube/5e-spell-viewer
+publisher: pikcube
+name: 5e Spell Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pikcube/5eSpellViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pikcube/5eSpellViewer
+identifiers:
+- winget: Pikcube.5eSpellViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pikcube/5eSpellViewer
+aliases: []

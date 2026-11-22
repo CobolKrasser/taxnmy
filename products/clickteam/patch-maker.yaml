@@ -1,0 +1,11 @@
+key: clickteam/patch-maker
+publisher: clickteam
+name: Patch Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clickteam/PatchMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clickteam/PatchMaker
+identifiers:
+- winget: Clickteam.PatchMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clickteam/PatchMaker
+aliases: []

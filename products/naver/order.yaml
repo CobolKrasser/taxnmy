@@ -1,0 +1,12 @@
+key: naver/order
+publisher: naver
+name: NAVER Order
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/Order
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/Order
+identifiers:
+- winget: NAVER.Order
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/Order
+aliases:
+- naver/naver-order

@@ -1,0 +1,12 @@
+key: ebralec/windows
+publisher: ebralec
+name: eBralec Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eBralec/eBralec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eBralec/eBralec
+identifiers:
+- winget: eBralec.eBralec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eBralec/eBralec
+aliases:
+- ebralec/ebralec-windows

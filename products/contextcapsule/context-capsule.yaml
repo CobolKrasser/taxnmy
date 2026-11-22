@@ -1,0 +1,11 @@
+key: contextcapsule/context-capsule
+publisher: contextcapsule
+name: Context Capsule
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContextCapsule/ContextCapsule
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContextCapsule/ContextCapsule
+identifiers:
+- winget: ContextCapsule.ContextCapsule
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContextCapsule/ContextCapsule
+aliases: []

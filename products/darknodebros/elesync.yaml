@@ -1,0 +1,11 @@
+key: darknodebros/elesync
+publisher: darknodebros
+name: EleSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darknodebros/EleSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darknodebros/EleSync
+identifiers:
+- winget: darknodebros.EleSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/darknodebros/EleSync
+aliases: []

@@ -1,0 +1,11 @@
+key: xsa/bs
+publisher: xsa
+name: BS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fuyoo/BSRDC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fuyoo/BSRDC
+identifiers:
+- winget: fuyoo.BSRDC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fuyoo/BSRDC
+aliases: []

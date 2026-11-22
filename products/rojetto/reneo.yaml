@@ -1,0 +1,17 @@
+key: rojetto/reneo
+publisher: rojetto
+name: ReNeo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojetto/ReNeo/NeoQWERTZ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojetto/ReNeo/NeoQWERTZ
+identifiers:
+- winget: Rojetto.ReNeo.3l
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojetto/ReNeo/3l
+- winget: Rojetto.ReNeo.NeoQWERTZ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojetto/ReNeo/NeoQWERTZ
+- winget: Rojetto.ReNeo.bone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojetto/ReNeo/bone
+- winget: Rojetto.ReNeo.neo2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojetto/ReNeo/neo2
+aliases: []

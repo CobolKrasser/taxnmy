@@ -1,0 +1,11 @@
+key: grdl/git-get
+publisher: grdl
+name: git-get
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/grdl/git-get
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/grdl/git-get
+identifiers:
+- winget: grdl.git-get
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/grdl/git-get
+aliases: []

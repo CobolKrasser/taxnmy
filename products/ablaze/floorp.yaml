@@ -1,0 +1,12 @@
+key: ablaze/floorp
+publisher: ablaze
+name: Ablaze Floorp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ablaze/Floorp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ablaze/Floorp
+identifiers:
+- winget: Ablaze.Floorp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ablaze/Floorp
+aliases:
+- ablaze/ablaze-floorp

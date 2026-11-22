@@ -1,0 +1,11 @@
+key: xaymars-technology-workshop/amd-encoder-for-obs-studio
+publisher: xaymars-technology-workshop
+name: AMD Encoder for OBS Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/obs-amd-encoder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/obs-amd-encoder
+identifiers:
+- winget: OBSProject.obs-amd-encoder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/obs-amd-encoder
+aliases: []

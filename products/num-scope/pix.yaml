@@ -1,0 +1,11 @@
+key: num-scope/pix
+publisher: num-scope
+name: Pix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/num-scope/pix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/num-scope/pix
+identifiers:
+- winget: num-scope.pix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/num-scope/pix
+aliases: []

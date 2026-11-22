@@ -1,0 +1,11 @@
+key: mhoon/util
+publisher: mhoon
+name: util
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mhoon/reg-macros
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mhoon/reg-macros
+identifiers:
+- winget: mhoon.reg-macros
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mhoon/reg-macros
+aliases: []

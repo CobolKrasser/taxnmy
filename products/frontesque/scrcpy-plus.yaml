@@ -1,0 +1,11 @@
+key: frontesque/scrcpy-plus
+publisher: frontesque
+name: scrcpy+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Frontesque/scrcpy+
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Frontesque/scrcpy+
+identifiers:
+- winget: Frontesque.scrcpy+
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Frontesque/scrcpy+
+aliases: []

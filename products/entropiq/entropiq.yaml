@@ -1,0 +1,11 @@
+key: entropiq/entropiq
+publisher: entropiq
+name: entropiq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EntropiQ/agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EntropiQ/agent
+identifiers:
+- winget: EntropiQ.agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EntropiQ/agent
+aliases: []

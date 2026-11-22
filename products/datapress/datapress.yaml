@@ -1,0 +1,11 @@
+key: datapress/datapress
+publisher: datapress
+name: DataPress
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/datap-rs/DataPress
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/datap-rs/DataPress
+identifiers:
+- winget: datap-rs.DataPress
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/datap-rs/DataPress
+aliases: []

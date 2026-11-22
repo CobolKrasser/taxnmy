@@ -1,0 +1,11 @@
+key: klcp/k-lite-codec-pack-basic
+publisher: klcp
+name: K-Lite Codec Pack Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodecGuide/K-LiteCodecPack/Basic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodecGuide/K-LiteCodecPack/Basic
+identifiers:
+- winget: CodecGuide.K-LiteCodecPack.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodecGuide/K-LiteCodecPack/Basic
+aliases: []

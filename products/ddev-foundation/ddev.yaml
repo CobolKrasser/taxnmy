@@ -1,0 +1,11 @@
+key: ddev-foundation/ddev
+publisher: ddev-foundation
+name: DDEV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DDEVFoundation/DDEV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DDEVFoundation/DDEV
+identifiers:
+- winget: DDEVFoundation.DDEV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DDEVFoundation/DDEV
+aliases: []

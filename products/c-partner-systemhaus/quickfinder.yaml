@@ -1,0 +1,11 @@
+key: c-partner-systemhaus/quickfinder
+publisher: c-partner-systemhaus
+name: QuickFinder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/C-PartnerSystemhausGmbH/QuickFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/C-PartnerSystemhausGmbH/QuickFinder
+identifiers:
+- winget: C-PartnerSystemhausGmbH.QuickFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/C-PartnerSystemhausGmbH/QuickFinder
+aliases: []

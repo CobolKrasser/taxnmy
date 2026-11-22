@@ -1,0 +1,11 @@
+key: james-king/phonepresenter
+publisher: james-king
+name: PhonePresenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhonePresenter/PhonePresenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhonePresenter/PhonePresenter
+identifiers:
+- winget: PhonePresenter.PhonePresenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhonePresenter/PhonePresenter
+aliases: []

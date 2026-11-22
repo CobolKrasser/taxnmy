@@ -1,0 +1,12 @@
+key: nextmv/cli
+publisher: nextmv
+name: Nextmv.CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextmv/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextmv/CLI
+identifiers:
+- winget: Nextmv.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextmv/CLI
+aliases:
+- nextmv/nextmv-cli

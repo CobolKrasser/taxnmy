@@ -1,0 +1,12 @@
+key: bloomberg/terminal
+publisher: bloomberg
+name: Bloomberg Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloomberg/BloombergTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloomberg/BloombergTerminal
+identifiers:
+- winget: Bloomberg.BloombergTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bloomberg/BloombergTerminal
+aliases:
+- bloomberg/bloomberg-terminal

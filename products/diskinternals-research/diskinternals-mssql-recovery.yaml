@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-mssql-recovery
+publisher: diskinternals-research
+name: DiskInternals MSSQL Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MSSQLRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MSSQLRecovery
+identifiers:
+- winget: DiskInternals.MSSQLRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/MSSQLRecovery
+aliases: []

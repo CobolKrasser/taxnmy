@@ -1,0 +1,11 @@
+key: remote-mouse/remote-mouse
+publisher: remote-mouse
+name: Remote Mouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EmoteInteractive/RemoteMouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EmoteInteractive/RemoteMouse
+identifiers:
+- winget: EmoteInteractive.RemoteMouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EmoteInteractive/RemoteMouse
+aliases: []

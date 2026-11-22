@@ -1,0 +1,11 @@
+key: tom-hudson/gron
+publisher: tom-hudson
+name: gron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomHudson/gron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomHudson/gron
+identifiers:
+- winget: TomHudson.gron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomHudson/gron
+aliases: []

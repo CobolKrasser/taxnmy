@@ -1,0 +1,11 @@
+key: gleam/gleam
+publisher: gleam
+name: Gleam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gleam/Gleam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gleam/Gleam
+identifiers:
+- winget: Gleam.Gleam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gleam/Gleam
+aliases: []

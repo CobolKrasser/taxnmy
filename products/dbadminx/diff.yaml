@@ -1,0 +1,11 @@
+key: dbadminx/diff
+publisher: dbadminx
+name: Diff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBAdminX/Diff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBAdminX/Diff
+identifiers:
+- winget: DBAdminX.Diff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBAdminX/Diff
+aliases: []

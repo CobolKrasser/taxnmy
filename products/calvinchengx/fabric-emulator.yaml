@@ -1,0 +1,11 @@
+key: calvinchengx/fabric-emulator
+publisher: calvinchengx
+name: fabric-emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calvinchengx/fabric-emulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calvinchengx/fabric-emulator
+identifiers:
+- winget: calvinchengx.fabric-emulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calvinchengx/fabric-emulator
+aliases: []

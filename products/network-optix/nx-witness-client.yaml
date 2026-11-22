@@ -1,0 +1,11 @@
+key: network-optix/nx-witness-client
+publisher: network-optix
+name: Nx Witness Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxWitness/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxWitness/Client
+identifiers:
+- winget: NetworkOptix.NxWitness.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxWitness/Client
+aliases: []

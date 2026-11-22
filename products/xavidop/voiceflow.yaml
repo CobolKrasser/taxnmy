@@ -1,0 +1,11 @@
+key: xavidop/voiceflow
+publisher: xavidop
+name: voiceflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xavidop/voiceflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xavidop/voiceflow
+identifiers:
+- winget: xavidop.voiceflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xavidop/voiceflow
+aliases: []

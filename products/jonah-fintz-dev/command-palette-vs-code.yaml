@@ -1,0 +1,11 @@
+key: jonah-fintz-dev/command-palette-vs-code
+publisher: jonah-fintz-dev
+name: Command Palette - VS Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonahFintzDEV/CommandPalette-VSCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonahFintzDEV/CommandPalette-VSCode
+identifiers:
+- winget: JonahFintzDEV.CommandPalette-VSCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonahFintzDEV/CommandPalette-VSCode
+aliases: []

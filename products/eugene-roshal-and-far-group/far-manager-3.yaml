@@ -1,0 +1,11 @@
+key: eugene-roshal-and-far-group/far-manager-3
+publisher: eugene-roshal-and-far-group
+name: Far Manager 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FarManager/FarManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FarManager/FarManager
+identifiers:
+- winget: FarManager.FarManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FarManager/FarManager
+aliases: []

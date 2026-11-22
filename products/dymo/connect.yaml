@@ -1,0 +1,12 @@
+key: dymo/connect
+publisher: dymo
+name: DYMO Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOConnect
+identifiers:
+- winget: DYMO.DYMOConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOConnect
+aliases:
+- dymo/dymo-connect

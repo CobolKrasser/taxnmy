@@ -1,0 +1,11 @@
+key: iamscottxu/obs-rtsp-server-plugin
+publisher: iamscottxu
+name: OBS RTSP Server Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iamscottxu/obs-rtspserver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iamscottxu/obs-rtspserver
+identifiers:
+- winget: iamscottxu.obs-rtspserver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iamscottxu/obs-rtspserver
+aliases: []

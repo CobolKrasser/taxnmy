@@ -1,0 +1,11 @@
+key: protocol-labs/ipfs-desktop
+publisher: protocol-labs
+name: IPFS Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPFS/IPFS-Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPFS/IPFS-Desktop
+identifiers:
+- winget: IPFS.IPFS-Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPFS/IPFS-Desktop
+aliases: []

@@ -1,0 +1,11 @@
+key: mathew-manoj/mia-agent
+publisher: mathew-manoj
+name: Mia Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mach50/MiaAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mach50/MiaAgent
+identifiers:
+- winget: Mach50.MiaAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mach50/MiaAgent
+aliases: []

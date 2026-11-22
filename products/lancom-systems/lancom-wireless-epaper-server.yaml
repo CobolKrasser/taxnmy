@@ -1,0 +1,11 @@
+key: lancom-systems/lancom-wireless-epaper-server
+publisher: lancom-systems
+name: LANCOM Wireless ePaper Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/WirelessePaperServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/WirelessePaperServer
+identifiers:
+- winget: LANCOM.WirelessePaperServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/WirelessePaperServer
+aliases: []

@@ -1,0 +1,11 @@
+key: kubus/bcf-manager-stand-alone
+publisher: kubus
+name: BCF Manager - Stand Alone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BCFManager/Standalone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BCFManager/Standalone
+identifiers:
+- winget: Kubus.BCFManager.Standalone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BCFManager/Standalone
+aliases: []

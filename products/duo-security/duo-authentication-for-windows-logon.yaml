@@ -1,0 +1,11 @@
+key: duo-security/duo-authentication-for-windows-logon
+publisher: duo-security
+name: Duo Authentication for Windows Logon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/Duo2FAAuthenticationforWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/Duo2FAAuthenticationforWindows
+identifiers:
+- winget: DuoSecurity.Duo2FAAuthenticationforWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/Duo2FAAuthenticationforWindows
+aliases: []

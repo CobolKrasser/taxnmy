@@ -1,0 +1,11 @@
+key: neovim-io/neovim
+publisher: neovim-io
+name: Neovim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neovim/Neovim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neovim/Neovim
+identifiers:
+- winget: Neovim.Neovim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neovim/Neovim
+aliases: []

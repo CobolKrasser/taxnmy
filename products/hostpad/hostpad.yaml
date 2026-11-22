@@ -1,0 +1,11 @@
+key: hostpad/hostpad
+publisher: hostpad
+name: Hostpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hostpad/Hostpad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hostpad/Hostpad
+identifiers:
+- winget: Hostpad.Hostpad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hostpad/Hostpad
+aliases: []

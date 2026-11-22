@@ -1,0 +1,11 @@
+key: chengdu-weilonghui-technology/wifbox
+publisher: chengdu-weilonghui-technology
+name: wifbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WlhEx/WIFbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WlhEx/WIFbox
+identifiers:
+- winget: WlhEx.WIFbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WlhEx/WIFbox
+aliases: []

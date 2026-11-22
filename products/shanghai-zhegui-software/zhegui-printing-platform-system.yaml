@@ -1,0 +1,11 @@
+key: shanghai-zhegui-software/zhegui-printing-platform-system
+publisher: shanghai-zhegui-software
+name: Zhegui printing platform system
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_print
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_print
+identifiers:
+- winget: Zheguisoft.zg_print
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_print
+aliases: []

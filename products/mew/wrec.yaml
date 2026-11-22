@@ -1,0 +1,11 @@
+key: mew/wrec
+publisher: mew
+name: Wrec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mew/Wrec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mew/Wrec
+identifiers:
+- winget: Mew.Wrec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mew/Wrec
+aliases: []

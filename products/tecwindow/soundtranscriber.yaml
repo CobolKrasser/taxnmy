@@ -1,0 +1,11 @@
+key: tecwindow/soundtranscriber
+publisher: tecwindow
+name: SoundTranscriber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecwindow/SoundTranscriber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecwindow/SoundTranscriber
+identifiers:
+- winget: tecwindow.SoundTranscriber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tecwindow/SoundTranscriber
+aliases: []

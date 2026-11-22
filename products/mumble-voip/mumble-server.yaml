@@ -1,0 +1,11 @@
+key: mumble-voip/mumble-server
+publisher: mumble-voip
+name: Mumble Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mumble/Mumble/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mumble/Mumble/Server
+identifiers:
+- winget: Mumble.Mumble.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mumble/Mumble/Server
+aliases: []

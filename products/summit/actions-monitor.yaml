@@ -1,0 +1,11 @@
+key: summit/actions-monitor
+publisher: summit
+name: Actions Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summit/ActionsMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summit/ActionsMonitor
+identifiers:
+- winget: Summit.ActionsMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summit/ActionsMonitor
+aliases: []

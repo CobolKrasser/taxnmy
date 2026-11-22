@@ -1,0 +1,11 @@
+key: belfius/belfiusconnector
+publisher: belfius
+name: BelfiusConnector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belfius/BelfiusConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belfius/BelfiusConnector
+identifiers:
+- winget: Belfius.BelfiusConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belfius/BelfiusConnector
+aliases: []

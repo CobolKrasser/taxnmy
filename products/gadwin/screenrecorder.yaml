@@ -1,0 +1,12 @@
+key: gadwin/screenrecorder
+publisher: gadwin
+name: Gadwin ScreenRecorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/ScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/ScreenRecorder
+identifiers:
+- winget: Gadwin.ScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/ScreenRecorder
+aliases:
+- gadwin/gadwin-screenrecorder

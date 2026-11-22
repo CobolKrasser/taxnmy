@@ -1,0 +1,11 @@
+key: national-instruments/ni-visa
+publisher: national-instruments
+name: NI-VISA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-visa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-visa
+identifiers:
+- winget: NI.ni-visa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-visa
+aliases: []

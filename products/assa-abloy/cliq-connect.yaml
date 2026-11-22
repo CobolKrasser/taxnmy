@@ -1,0 +1,11 @@
+key: assa-abloy/cliq-connect
+publisher: assa-abloy
+name: CLIQ Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASSAABLOY/CLIQConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASSAABLOY/CLIQConnect
+identifiers:
+- winget: ASSAABLOY.CLIQConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASSAABLOY/CLIQConnect
+aliases: []

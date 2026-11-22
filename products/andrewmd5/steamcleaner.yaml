@@ -1,0 +1,11 @@
+key: andrewmd5/steamcleaner
+publisher: andrewmd5
+name: SteamCleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codeusa/SteamCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codeusa/SteamCleaner
+identifiers:
+- winget: Codeusa.SteamCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codeusa/SteamCleaner
+aliases: []

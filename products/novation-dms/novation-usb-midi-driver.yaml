@@ -1,0 +1,11 @@
+key: novation-dms/novation-usb-midi-driver
+publisher: novation-dms
+name: Novation USB Midi Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovationDMS/USBMidiDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovationDMS/USBMidiDriver
+identifiers:
+- winget: NovationDMS.USBMidiDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovationDMS/USBMidiDriver
+aliases: []

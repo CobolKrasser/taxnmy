@@ -1,0 +1,11 @@
+key: shiori/shiori
+publisher: shiori
+name: shiori
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/go-shiori/shiori
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/go-shiori/shiori
+identifiers:
+- winget: go-shiori.shiori
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/go-shiori/shiori
+aliases: []

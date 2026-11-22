@@ -1,0 +1,11 @@
+key: fluxdown/fluxdown
+publisher: fluxdown
+name: FluxDown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zerx-lab/FluxDown
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zerx-lab/FluxDown
+identifiers:
+- winget: zerx-lab.FluxDown
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zerx-lab/FluxDown
+aliases: []

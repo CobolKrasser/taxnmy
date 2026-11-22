@@ -1,0 +1,11 @@
+key: wyrestorm-technologies/wyrestorm-management-suite
+publisher: wyrestorm-technologies
+name: WyreStorm Management Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WyreStorm/ManagementSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WyreStorm/ManagementSuite
+identifiers:
+- winget: WyreStorm.ManagementSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WyreStorm/ManagementSuite
+aliases: []

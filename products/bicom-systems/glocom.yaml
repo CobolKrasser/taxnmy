@@ -1,0 +1,11 @@
+key: bicom-systems/glocom
+publisher: bicom-systems
+name: gloCOM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/gloCOM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/gloCOM
+identifiers:
+- winget: BicomSystems.gloCOM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BicomSystems/gloCOM
+aliases: []

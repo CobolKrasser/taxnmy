@@ -1,0 +1,11 @@
+key: nachosc/screentuner
+publisher: nachosc
+name: ScreenTuner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NachoSC/ScreenTuner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NachoSC/ScreenTuner
+identifiers:
+- winget: NachoSC.ScreenTuner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NachoSC/ScreenTuner
+aliases: []

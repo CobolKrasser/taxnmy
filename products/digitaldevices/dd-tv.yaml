@@ -1,0 +1,11 @@
+key: digitaldevices/dd-tv
+publisher: digitaldevices
+name: DD-TV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalDevices/DD-TV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalDevices/DD-TV
+identifiers:
+- winget: DigitalDevices.DD-TV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalDevices/DD-TV
+aliases: []

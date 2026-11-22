@@ -1,0 +1,11 @@
+key: itsnateai/syncthingtray
+publisher: itsnateai
+name: SyncthingTray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/itsnateai/SyncthingTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/itsnateai/SyncthingTray
+identifiers:
+- winget: itsnateai.SyncthingTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/itsnateai/SyncthingTray
+aliases: []

@@ -1,0 +1,11 @@
+key: madis-vain/upcount
+publisher: madis-vain
+name: Upcount
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madisvain/upcount
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madisvain/upcount
+identifiers:
+- winget: madisvain.upcount
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madisvain/upcount
+aliases: []

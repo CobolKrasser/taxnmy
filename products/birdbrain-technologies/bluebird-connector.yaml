@@ -1,0 +1,11 @@
+key: birdbrain-technologies/bluebird-connector
+publisher: birdbrain-technologies
+name: BlueBird Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirdBrain/BlueBirdConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirdBrain/BlueBirdConnector
+identifiers:
+- winget: BirdBrain.BlueBirdConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirdBrain/BlueBirdConnector
+aliases: []

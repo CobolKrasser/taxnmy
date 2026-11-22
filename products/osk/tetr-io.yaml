@@ -1,0 +1,11 @@
+key: osk/tetr-io
+publisher: osk
+name: TETR.IO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osk/tetr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osk/tetr
+identifiers:
+- winget: osk.tetr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osk/tetr
+aliases: []

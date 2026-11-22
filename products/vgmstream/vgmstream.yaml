@@ -1,0 +1,11 @@
+key: vgmstream/vgmstream
+publisher: vgmstream
+name: vgmstream
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vgmstream/vgmstream
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vgmstream/vgmstream
+identifiers:
+- winget: vgmstream.vgmstream
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vgmstream/vgmstream
+aliases: []

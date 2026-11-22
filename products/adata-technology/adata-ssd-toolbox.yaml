@@ -1,0 +1,11 @@
+key: adata-technology/adata-ssd-toolbox
+publisher: adata-technology
+name: ADATA SSD Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADATA/SSDToolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADATA/SSDToolbox
+identifiers:
+- winget: ADATA.SSDToolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADATA/SSDToolbox
+aliases: []

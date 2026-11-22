@@ -1,0 +1,12 @@
+key: vovsoft/executable-bit-scanner
+publisher: vovsoft
+name: Vovsoft Executable Bit Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ExecutableBitScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ExecutableBitScanner
+identifiers:
+- winget: VovSoft.ExecutableBitScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ExecutableBitScanner
+aliases:
+- vovsoft/vovsoft-executable-bit-scanner

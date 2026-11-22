@@ -1,0 +1,11 @@
+key: kirra-enterprises/presenter-version-5-premium-edition
+publisher: kirra-enterprises
+name: Presenter Version 5 Premium Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirraEnterprises/Presenter/Premium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirraEnterprises/Presenter/Premium
+identifiers:
+- winget: KirraEnterprises.Presenter.Premium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirraEnterprises/Presenter/Premium
+aliases: []

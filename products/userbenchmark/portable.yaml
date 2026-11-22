@@ -1,0 +1,12 @@
+key: userbenchmark/portable
+publisher: userbenchmark
+name: UserBenchmark (Portable)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UserBenchmark/UserBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UserBenchmark/UserBenchmark
+identifiers:
+- winget: UserBenchmark.UserBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UserBenchmark/UserBenchmark
+aliases:
+- userbenchmark/userbenchmark-portable

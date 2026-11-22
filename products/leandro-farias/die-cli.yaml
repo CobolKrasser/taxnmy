@@ -1,0 +1,11 @@
+key: leandro-farias/die-cli
+publisher: leandro-farias
+name: die-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leandrofariasldf/die-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leandrofariasldf/die-cli
+identifiers:
+- winget: leandrofariasldf.die-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leandrofariasldf/die-cli
+aliases: []

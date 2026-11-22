@@ -1,0 +1,11 @@
+key: notion-repackaged/notion-enhanced
+publisher: notion-repackaged
+name: Notion Enhanced
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotionRepackaged/NotionEnhanced
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotionRepackaged/NotionEnhanced
+identifiers:
+- winget: NotionRepackaged.NotionEnhanced
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotionRepackaged/NotionEnhanced
+aliases: []

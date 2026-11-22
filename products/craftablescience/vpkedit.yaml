@@ -1,0 +1,11 @@
+key: craftablescience/vpkedit
+publisher: craftablescience
+name: VPKEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/craftablescience/VPKEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/craftablescience/VPKEdit
+identifiers:
+- winget: craftablescience.VPKEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/craftablescience/VPKEdit
+aliases: []

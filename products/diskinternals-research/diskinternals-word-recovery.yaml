@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-word-recovery
+publisher: diskinternals-research
+name: DiskInternals Word Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/WordRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/WordRecovery
+identifiers:
+- winget: DiskInternals.WordRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/WordRecovery
+aliases: []

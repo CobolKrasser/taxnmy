@@ -1,0 +1,13 @@
+key: wingware/wing
+publisher: wingware
+name: Wing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing
+identifiers:
+- winget: Wingware.Wing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing
+- winget: Wingware.Wing.101
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing/101
+aliases: []

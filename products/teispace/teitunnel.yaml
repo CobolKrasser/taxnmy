@@ -1,0 +1,11 @@
+key: teispace/teitunnel
+publisher: teispace
+name: Teitunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teispace/Teitunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teispace/Teitunnel
+identifiers:
+- winget: Teispace.Teitunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teispace/Teitunnel
+aliases: []

@@ -1,0 +1,11 @@
+key: rethunk-tech/mortar
+publisher: rethunk-tech
+name: Mortar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RethunkTech/Mortar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RethunkTech/Mortar
+identifiers:
+- winget: RethunkTech.Mortar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RethunkTech/Mortar
+aliases: []

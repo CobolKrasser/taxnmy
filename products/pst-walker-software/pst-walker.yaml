@@ -1,0 +1,11 @@
+key: pst-walker-software/pst-walker
+publisher: pst-walker-software
+name: PST Walker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PSTWalker/PSTWalker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PSTWalker/PSTWalker
+identifiers:
+- winget: PSTWalker.PSTWalker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PSTWalker/PSTWalker
+aliases: []

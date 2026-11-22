@@ -1,0 +1,11 @@
+key: endy1328/simple-sync
+publisher: endy1328
+name: simple sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Endy1328/SimpleSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Endy1328/SimpleSync
+identifiers:
+- winget: Endy1328.SimpleSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Endy1328/SimpleSync
+aliases: []

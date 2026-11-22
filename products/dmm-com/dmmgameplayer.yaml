@@ -1,0 +1,11 @@
+key: dmm-com/dmmgameplayer
+publisher: dmm-com
+name: DMMGamePlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMM/GamePlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMM/GamePlayer
+identifiers:
+- winget: DMM.GamePlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMM/GamePlayer
+aliases: []

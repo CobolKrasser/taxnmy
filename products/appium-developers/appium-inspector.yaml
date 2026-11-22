@@ -1,0 +1,11 @@
+key: appium-developers/appium-inspector
+publisher: appium-developers
+name: Appium Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppiumDevelopers/AppiumInspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppiumDevelopers/AppiumInspector
+identifiers:
+- winget: AppiumDevelopers.AppiumInspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppiumDevelopers/AppiumInspector
+aliases: []

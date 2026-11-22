@@ -1,0 +1,11 @@
+key: m336/video-recorder
+publisher: m336
+name: Video Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M336/VideoRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M336/VideoRecorder
+identifiers:
+- winget: M336.VideoRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M336/VideoRecorder
+aliases: []

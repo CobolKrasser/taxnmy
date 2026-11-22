@@ -1,0 +1,12 @@
+key: keytos/connect
+publisher: keytos
+name: Keytos Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keytos/KeytosConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keytos/KeytosConnect
+identifiers:
+- winget: Keytos.KeytosConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keytos/KeytosConnect
+aliases:
+- keytos/keytos-connect

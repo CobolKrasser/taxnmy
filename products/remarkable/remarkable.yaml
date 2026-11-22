@@ -1,0 +1,11 @@
+key: remarkable/remarkable
+publisher: remarkable
+name: reMarkable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/reMarkable/reMarkableCompanionApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/reMarkable/reMarkableCompanionApp
+identifiers:
+- winget: reMarkable.reMarkableCompanionApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/reMarkable/reMarkableCompanionApp
+aliases: []

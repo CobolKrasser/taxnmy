@@ -1,0 +1,11 @@
+key: genesys/genesyscloud
+publisher: genesys
+name: GenesysCloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genesys/GenesysCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genesys/GenesysCloud
+identifiers:
+- winget: Genesys.GenesysCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genesys/GenesysCloud
+aliases: []

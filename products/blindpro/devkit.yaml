@@ -1,0 +1,11 @@
+key: blindpro/devkit
+publisher: blindpro
+name: devkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blindpro/devkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blindpro/devkit
+identifiers:
+- winget: blindpro.devkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blindpro/devkit
+aliases: []

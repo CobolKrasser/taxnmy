@@ -1,0 +1,11 @@
+key: keeweb/keeweb
+publisher: keeweb
+name: KeeWeb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeWeb/KeeWeb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeWeb/KeeWeb
+identifiers:
+- winget: KeeWeb.KeeWeb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeWeb/KeeWeb
+aliases: []

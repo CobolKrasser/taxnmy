@@ -1,0 +1,12 @@
+key: outcasts/fuseforks
+publisher: outcasts
+name: Outcasts Fuseforks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Outcasts/Fuseforks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Outcasts/Fuseforks
+identifiers:
+- winget: Outcasts.Fuseforks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Outcasts/Fuseforks
+aliases:
+- outcasts/outcasts-fuseforks

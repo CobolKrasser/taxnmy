@@ -1,0 +1,12 @@
+key: elcomsoft/updater
+publisher: elcomsoft
+name: Elcomsoft Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/ElcomsoftUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/ElcomsoftUpdater
+identifiers:
+- winget: Elcomsoft.ElcomsoftUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/ElcomsoftUpdater
+aliases:
+- elcomsoft/elcomsoft-updater

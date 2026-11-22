@@ -1,0 +1,11 @@
+key: meta/oculus-platform-utility
+publisher: meta
+name: Oculus Platform Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/OculusPlatformUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/OculusPlatformUtility
+identifiers:
+- winget: Meta.OculusPlatformUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/OculusPlatformUtility
+aliases: []

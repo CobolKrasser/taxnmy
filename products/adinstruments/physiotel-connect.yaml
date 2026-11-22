@@ -1,0 +1,12 @@
+key: adinstruments/physiotel-connect
+publisher: adinstruments
+name: ADInstruments PhysioTel Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/PhysioTelConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/PhysioTelConnect
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.PhysioTelConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/PhysioTelConnect
+aliases:
+- adinstruments/adinstruments-physiotel-connect

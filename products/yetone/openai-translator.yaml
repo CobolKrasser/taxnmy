@@ -1,0 +1,11 @@
+key: yetone/openai-translator
+publisher: yetone
+name: OpenAI Translator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yetone/OpenAITranslator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yetone/OpenAITranslator
+identifiers:
+- winget: yetone.OpenAITranslator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yetone/OpenAITranslator
+aliases: []

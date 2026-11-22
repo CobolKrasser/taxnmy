@@ -1,0 +1,11 @@
+key: doron177/battery-hub
+publisher: doron177
+name: Battery Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DORON177/BatteryHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DORON177/BatteryHub
+identifiers:
+- winget: DORON177.BatteryHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DORON177/BatteryHub
+aliases: []

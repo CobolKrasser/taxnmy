@@ -1,0 +1,11 @@
+key: sovera/pulse
+publisher: sovera
+name: Pulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sovera/Pulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sovera/Pulse
+identifiers:
+- winget: Sovera.Pulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sovera/Pulse
+aliases: []

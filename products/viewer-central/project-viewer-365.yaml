@@ -1,0 +1,11 @@
+key: viewer-central/project-viewer-365
+publisher: viewer-central
+name: Project Viewer 365
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Housatonic/ProjectViewer365
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Housatonic/ProjectViewer365
+identifiers:
+- winget: Housatonic.ProjectViewer365
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Housatonic/ProjectViewer365
+aliases: []

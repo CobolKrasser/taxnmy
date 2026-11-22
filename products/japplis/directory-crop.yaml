@@ -1,0 +1,11 @@
+key: japplis/directory-crop
+publisher: japplis
+name: Directory Crop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/DirectoryCrop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/DirectoryCrop
+identifiers:
+- winget: Japplis.DirectoryCrop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/DirectoryCrop
+aliases: []

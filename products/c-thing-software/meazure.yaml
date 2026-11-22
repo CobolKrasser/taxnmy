@@ -1,0 +1,11 @@
+key: c-thing-software/meazure
+publisher: c-thing-software
+name: Meazure
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CThingSoftware/Meazure
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CThingSoftware/Meazure
+identifiers:
+- winget: CThingSoftware.Meazure
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CThingSoftware/Meazure
+aliases: []

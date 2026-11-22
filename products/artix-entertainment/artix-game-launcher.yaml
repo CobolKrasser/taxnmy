@@ -1,0 +1,11 @@
+key: artix-entertainment/artix-game-launcher
+publisher: artix-entertainment
+name: Artix Game Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atrix/AtrixLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atrix/AtrixLauncher
+identifiers:
+- winget: Atrix.AtrixLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Atrix/AtrixLauncher
+aliases: []

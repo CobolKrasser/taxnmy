@@ -1,0 +1,11 @@
+key: cfx-re/fivem
+publisher: cfx-re
+name: FiveM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cfx/re/FiveM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cfx/re/FiveM
+identifiers:
+- winget: Cfx.re.FiveM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cfx/re/FiveM
+aliases: []

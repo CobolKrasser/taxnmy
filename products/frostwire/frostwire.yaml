@@ -1,0 +1,11 @@
+key: frostwire/frostwire
+publisher: frostwire
+name: FrostWire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrostWire/FrostWire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrostWire/FrostWire
+identifiers:
+- winget: FrostWire.FrostWire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrostWire/FrostWire
+aliases: []

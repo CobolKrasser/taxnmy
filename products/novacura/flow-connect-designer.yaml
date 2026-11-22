@@ -1,0 +1,11 @@
+key: novacura/flow-connect-designer
+publisher: novacura
+name: Flow Connect Designer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowConnectDesigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowConnectDesigner
+identifiers:
+- winget: Novacura.FlowConnectDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novacura/FlowConnectDesigner
+aliases: []

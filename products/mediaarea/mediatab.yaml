@@ -1,0 +1,11 @@
+key: mediaarea/mediatab
+publisher: mediaarea
+name: MediaTab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaTab/MediaTab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaTab/MediaTab
+identifiers:
+- winget: MediaTab.MediaTab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaTab/MediaTab
+aliases: []

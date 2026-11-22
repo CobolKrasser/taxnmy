@@ -1,0 +1,11 @@
+key: babyworm/video-viewer
+publisher: babyworm
+name: Video Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/babyworm/VideoViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/babyworm/VideoViewer
+identifiers:
+- winget: babyworm.VideoViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/babyworm/VideoViewer
+aliases: []

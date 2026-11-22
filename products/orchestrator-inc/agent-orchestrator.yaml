@@ -1,0 +1,11 @@
+key: orchestrator-inc/agent-orchestrator
+publisher: orchestrator-inc
+name: Agent Orchestrator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrchestratorInc/AgentOrchestrator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrchestratorInc/AgentOrchestrator
+identifiers:
+- winget: OrchestratorInc.AgentOrchestrator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrchestratorInc/AgentOrchestrator
+aliases: []

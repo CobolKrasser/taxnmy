@@ -1,0 +1,11 @@
+key: the-gretl-team/gretl
+publisher: the-gretl-team
+name: gretl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gretl/gretl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gretl/gretl
+identifiers:
+- winget: gretl.gretl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gretl/gretl
+aliases: []

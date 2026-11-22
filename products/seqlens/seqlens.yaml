@@ -1,0 +1,11 @@
+key: seqlens/seqlens
+publisher: seqlens
+name: SeqLens
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeqLens/SeqLens
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeqLens/SeqLens
+identifiers:
+- winget: SeqLens.SeqLens
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeqLens/SeqLens
+aliases: []

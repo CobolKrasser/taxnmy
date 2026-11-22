@@ -1,0 +1,11 @@
+key: zachtbeer/sqldatapack
+publisher: zachtbeer
+name: SqlDataPack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zachtbeer/SqlDataPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zachtbeer/SqlDataPack
+identifiers:
+- winget: zachtbeer.SqlDataPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zachtbeer/SqlDataPack
+aliases: []

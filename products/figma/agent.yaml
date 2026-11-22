@@ -1,0 +1,12 @@
+key: figma/agent
+publisher: figma
+name: Figma Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Figma/FigmaAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Figma/FigmaAgent
+identifiers:
+- winget: Figma.FigmaAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Figma/FigmaAgent
+aliases:
+- figma/figma-agent

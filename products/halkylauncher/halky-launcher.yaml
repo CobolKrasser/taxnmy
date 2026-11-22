@@ -1,0 +1,11 @@
+key: halkylauncher/halky-launcher
+publisher: halkylauncher
+name: Halky Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalkyLauncher/HalkyLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalkyLauncher/HalkyLauncher
+identifiers:
+- winget: HalkyLauncher.HalkyLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalkyLauncher/HalkyLauncher
+aliases: []

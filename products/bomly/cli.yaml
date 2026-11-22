@@ -1,0 +1,12 @@
+key: bomly/cli
+publisher: bomly
+name: Bomly CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bomly/BomlyCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bomly/BomlyCLI
+identifiers:
+- winget: Bomly.BomlyCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bomly/BomlyCLI
+aliases:
+- bomly/bomly-cli

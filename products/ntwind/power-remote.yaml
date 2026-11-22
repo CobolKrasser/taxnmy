@@ -1,0 +1,11 @@
+key: ntwind/power-remote
+publisher: ntwind
+name: Power Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/PowerRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/PowerRemote
+identifiers:
+- winget: ntwind.PowerRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/PowerRemote
+aliases: []

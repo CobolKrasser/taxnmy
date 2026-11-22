@@ -1,0 +1,11 @@
+key: awesomeness/notes
+publisher: awesomeness
+name: Notes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nuttyartist/notes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nuttyartist/notes
+identifiers:
+- winget: nuttyartist.notes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nuttyartist/notes
+aliases: []

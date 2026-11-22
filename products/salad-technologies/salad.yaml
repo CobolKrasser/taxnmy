@@ -1,0 +1,11 @@
+key: salad-technologies/salad
+publisher: salad-technologies
+name: Salad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaladTechnologies/Salad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaladTechnologies/Salad
+identifiers:
+- winget: SaladTechnologies.Salad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaladTechnologies/Salad
+aliases: []

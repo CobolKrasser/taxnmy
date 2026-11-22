@@ -1,0 +1,11 @@
+key: nexova/updatehub
+publisher: nexova
+name: UpdateHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexova/UpdateHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexova/UpdateHub
+identifiers:
+- winget: Nexova.UpdateHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexova/UpdateHub
+aliases: []

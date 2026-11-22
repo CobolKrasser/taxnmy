@@ -1,0 +1,11 @@
+key: team-shinkansen/hakchi2-ce
+publisher: team-shinkansen
+name: Hakchi2 CE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamShinkansen/Hakchi2-CE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamShinkansen/Hakchi2-CE
+identifiers:
+- winget: TeamShinkansen.Hakchi2-CE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamShinkansen/Hakchi2-CE
+aliases: []

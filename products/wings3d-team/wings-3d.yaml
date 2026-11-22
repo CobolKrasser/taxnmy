@@ -1,0 +1,11 @@
+key: wings3d-team/wings-3d
+publisher: wings3d-team
+name: Wings 3D
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wings3D/Wings3D
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wings3D/Wings3D
+identifiers:
+- winget: Wings3D.Wings3D
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wings3D/Wings3D
+aliases: []

@@ -1,0 +1,11 @@
+key: hetman-software/hetman-data-recovery-pack
+publisher: hetman-software
+name: Hetman Data Recovery Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/DataRecoveryPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/DataRecoveryPack
+identifiers:
+- winget: Hetman.DataRecoveryPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/DataRecoveryPack
+aliases: []

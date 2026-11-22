@@ -1,0 +1,11 @@
+key: ente-io/ente-auth
+publisher: ente-io
+name: Ente Auth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/auth-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/auth-desktop
+identifiers:
+- winget: ente-io.auth-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/auth-desktop
+aliases: []

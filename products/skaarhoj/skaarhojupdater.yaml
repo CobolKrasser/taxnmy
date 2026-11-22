@@ -1,0 +1,11 @@
+key: skaarhoj/skaarhojupdater
+publisher: skaarhoj
+name: SKAARHOJUpdater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKAARHOJApS/SKAARHOJUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKAARHOJApS/SKAARHOJUpdater
+identifiers:
+- winget: SKAARHOJApS.SKAARHOJUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SKAARHOJApS/SKAARHOJUpdater
+aliases: []

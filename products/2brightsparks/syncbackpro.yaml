@@ -1,0 +1,11 @@
+key: 2brightsparks/syncbackpro
+publisher: 2brightsparks
+name: SyncBackPro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackPro
+identifiers:
+- winget: 2BrightSparks.SyncBackPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackPro
+aliases: []

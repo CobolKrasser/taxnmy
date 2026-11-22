@@ -1,0 +1,11 @@
+key: geomitron/bridge
+publisher: geomitron
+name: Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geomitron/Bridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geomitron/Bridge
+identifiers:
+- winget: Geomitron.Bridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geomitron/Bridge
+aliases: []

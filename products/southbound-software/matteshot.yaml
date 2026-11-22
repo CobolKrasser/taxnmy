@@ -1,0 +1,11 @@
+key: southbound-software/matteshot
+publisher: southbound-software
+name: Matteshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SouthboundSoftware/Matteshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SouthboundSoftware/Matteshot
+identifiers:
+- winget: SouthboundSoftware.Matteshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SouthboundSoftware/Matteshot
+aliases: []

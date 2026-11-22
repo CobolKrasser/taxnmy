@@ -1,0 +1,11 @@
+key: ravitz-computers/webbit
+publisher: ravitz-computers
+name: Webbit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RC/Webbit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RC/Webbit
+identifiers:
+- winget: RC.Webbit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RC/Webbit
+aliases: []

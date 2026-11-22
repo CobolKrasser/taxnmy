@@ -1,0 +1,11 @@
+key: heshan-aisipai-e-commerce/filetools
+publisher: heshan-aisipai-e-commerce
+name: FileTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/FileTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/FileTools
+identifiers:
+- winget: GAI.FileTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/FileTools
+aliases: []

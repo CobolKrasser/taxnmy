@@ -1,0 +1,11 @@
+key: ccharness/ccharness
+publisher: ccharness
+name: CCHarness
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Technicalflight/CCHarness
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Technicalflight/CCHarness
+identifiers:
+- winget: Technicalflight.CCHarness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Technicalflight/CCHarness
+aliases: []

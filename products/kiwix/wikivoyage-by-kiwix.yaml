@@ -1,0 +1,11 @@
+key: kiwix/wikivoyage-by-kiwix
+publisher: kiwix
+name: Wikivoyage by Kiwix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/Wikivoyage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/Wikivoyage
+identifiers:
+- winget: Kiwix.Wikivoyage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/Wikivoyage
+aliases: []

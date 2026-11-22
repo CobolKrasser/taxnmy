@@ -1,0 +1,11 @@
+key: kiro-crew/kirocrew
+publisher: kiro-crew
+name: KiroCrew
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/KiroCrew
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/KiroCrew
+identifiers:
+- winget: Amazon.KiroCrew
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/KiroCrew
+aliases: []

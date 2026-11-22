@@ -1,0 +1,11 @@
+key: axodotdev/dist
+publisher: axodotdev
+name: dist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axodotdev/dist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axodotdev/dist
+identifiers:
+- winget: axodotdev.dist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axodotdev/dist
+aliases: []

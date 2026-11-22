@@ -1,0 +1,11 @@
+key: gama-platform/gama
+publisher: gama-platform
+name: Gama
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GamaPlatform/Gama
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GamaPlatform/Gama
+identifiers:
+- winget: GamaPlatform.Gama
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GamaPlatform/Gama
+aliases: []

@@ -1,0 +1,11 @@
+key: prefix-dev/pixi
+publisher: prefix-dev
+name: pixi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prefix-dev/pixi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prefix-dev/pixi
+identifiers:
+- winget: prefix-dev.pixi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/prefix-dev/pixi
+aliases: []

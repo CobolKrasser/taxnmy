@@ -1,0 +1,11 @@
+key: maxima-team/maxima-computer-algebra-system
+publisher: maxima-team
+name: Maxima computer algebra system
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaximaTeam/Maxima
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaximaTeam/Maxima
+identifiers:
+- winget: MaximaTeam.Maxima
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MaximaTeam/Maxima
+aliases: []

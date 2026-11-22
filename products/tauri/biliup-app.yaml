@@ -1,0 +1,11 @@
+key: tauri/biliup-app
+publisher: tauri
+name: biliup-app
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForgQi/biliup-app
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForgQi/biliup-app
+identifiers:
+- winget: ForgQi.biliup-app
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForgQi/biliup-app
+aliases: []

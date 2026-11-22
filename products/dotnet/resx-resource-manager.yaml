@@ -1,0 +1,11 @@
+key: dotnet/resx-resource-manager
+publisher: dotnet
+name: ResX Resource Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotnet/ResXResourceManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotnet/ResXResourceManager
+identifiers:
+- winget: dotnet.ResXResourceManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotnet/ResXResourceManager
+aliases: []

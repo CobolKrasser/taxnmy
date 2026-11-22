@@ -1,0 +1,11 @@
+key: regify/regipay-desktop
+publisher: regify
+name: regipay desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regipayDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regipayDesktop
+identifiers:
+- winget: regify.regipayDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regipayDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: nebinfra-technologies/nebguard
+publisher: nebinfra-technologies
+name: NebGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nebinfra/nebguard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nebinfra/nebguard
+identifiers:
+- winget: nebinfra.nebguard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nebinfra/nebguard
+aliases: []

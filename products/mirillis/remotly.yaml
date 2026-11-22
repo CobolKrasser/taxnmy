@@ -1,0 +1,11 @@
+key: mirillis/remotly
+publisher: mirillis
+name: Remotly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MirillisLtd/Remotly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MirillisLtd/Remotly
+identifiers:
+- winget: MirillisLtd.Remotly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MirillisLtd/Remotly
+aliases: []

@@ -1,0 +1,11 @@
+key: nirsoft/networkusageview
+publisher: nirsoft
+name: NetworkUsageView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkUsageView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkUsageView
+identifiers:
+- winget: NirSoft.NetworkUsageView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkUsageView
+aliases: []

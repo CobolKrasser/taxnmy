@@ -1,0 +1,13 @@
+key: sigrok/pulseview
+publisher: sigrok
+name: PulseView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigrok/PulseView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigrok/PulseView
+identifiers:
+- winget: Sigrok.PulseView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigrok/PulseView
+- winget: Sigrok.PulseView.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigrok/PulseView/Nightly
+aliases: []

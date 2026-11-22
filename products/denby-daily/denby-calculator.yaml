@@ -1,0 +1,11 @@
+key: denby-daily/denby-calculator
+publisher: denby-daily
+name: Denby Calculator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Denby/Calculator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Denby/Calculator
+identifiers:
+- winget: Denby.Calculator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Denby/Calculator
+aliases: []

@@ -1,0 +1,11 @@
+key: airspy/ads-b-spy
+publisher: airspy
+name: ADS-B Spy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/AdsbSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/AdsbSpy
+identifiers:
+- winget: Airspy.AdsbSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Airspy/AdsbSpy
+aliases: []

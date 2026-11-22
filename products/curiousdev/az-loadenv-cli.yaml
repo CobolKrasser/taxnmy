@@ -1,0 +1,11 @@
+key: curiousdev/az-loadenv-cli
+publisher: curiousdev
+name: az-loadenv-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/curiousdev/az-loadenv-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/curiousdev/az-loadenv-cli
+identifiers:
+- winget: curiousdev.az-loadenv-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/curiousdev/az-loadenv-cli
+aliases: []

@@ -1,0 +1,11 @@
+key: polemus/omnigit
+publisher: polemus
+name: Omnigit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Polemus/Omnigit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Polemus/Omnigit
+identifiers:
+- winget: Polemus.Omnigit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Polemus/Omnigit
+aliases: []

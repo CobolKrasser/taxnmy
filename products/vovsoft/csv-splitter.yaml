@@ -1,0 +1,12 @@
+key: vovsoft/csv-splitter
+publisher: vovsoft
+name: Vovsoft CSV Splitter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVSplitter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVSplitter
+identifiers:
+- winget: VovSoft.CSVSplitter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVSplitter
+aliases:
+- vovsoft/vovsoft-csv-splitter

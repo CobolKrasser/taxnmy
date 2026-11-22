@@ -1,0 +1,11 @@
+key: sawtooth-software/lighthouse-studio
+publisher: sawtooth-software
+name: Lighthouse Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SawtoothSoftware/LighthouseStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SawtoothSoftware/LighthouseStudio
+identifiers:
+- winget: SawtoothSoftware.LighthouseStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SawtoothSoftware/LighthouseStudio
+aliases: []

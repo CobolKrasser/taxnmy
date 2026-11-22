@@ -1,0 +1,11 @@
+key: phase-lock-labs/spedyctl
+publisher: phase-lock-labs
+name: spedyctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhaseLockLabs/spedyctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhaseLockLabs/spedyctl
+identifiers:
+- winget: PhaseLockLabs.spedyctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PhaseLockLabs/spedyctl
+aliases: []

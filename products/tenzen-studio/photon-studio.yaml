@@ -1,0 +1,11 @@
+key: tenzen-studio/photon-studio
+publisher: tenzen-studio
+name: Photon Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenzenStudio/PhotonStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenzenStudio/PhotonStudio
+identifiers:
+- winget: TenzenStudio.PhotonStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenzenStudio/PhotonStudio
+aliases: []

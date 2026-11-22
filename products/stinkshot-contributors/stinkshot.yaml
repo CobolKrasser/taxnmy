@@ -1,0 +1,11 @@
+key: stinkshot-contributors/stinkshot
+publisher: stinkshot-contributors
+name: Stinkshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stinkshot/Stinkshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stinkshot/Stinkshot
+identifiers:
+- winget: Stinkshot.Stinkshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stinkshot/Stinkshot
+aliases: []

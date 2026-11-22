@@ -1,0 +1,11 @@
+key: toitware/jaguar
+publisher: toitware
+name: Jaguar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toit/Jaguar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toit/Jaguar
+identifiers:
+- winget: Toit.Jaguar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toit/Jaguar
+aliases: []

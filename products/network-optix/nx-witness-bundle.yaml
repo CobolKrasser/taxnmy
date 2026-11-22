@@ -1,0 +1,11 @@
+key: network-optix/nx-witness-bundle
+publisher: network-optix
+name: Nx Witness Bundle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxWitness/Bundle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxWitness/Bundle
+identifiers:
+- winget: NetworkOptix.NxWitness.Bundle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxWitness/Bundle
+aliases: []

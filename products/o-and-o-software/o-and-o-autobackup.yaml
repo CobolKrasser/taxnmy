@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-autobackup
+publisher: o-and-o-software
+name: O&O AutoBackup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/AutoBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/AutoBackup
+identifiers:
+- winget: OO-Software.AutoBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/AutoBackup
+aliases: []

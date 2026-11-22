@@ -1,0 +1,11 @@
+key: asana/asana
+publisher: asana
+name: Asana
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asana/Asana
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asana/Asana
+identifiers:
+- winget: Asana.Asana
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asana/Asana
+aliases: []

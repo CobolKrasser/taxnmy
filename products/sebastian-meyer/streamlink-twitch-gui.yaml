@@ -1,0 +1,11 @@
+key: sebastian-meyer/streamlink-twitch-gui
+publisher: sebastian-meyer
+name: Streamlink Twitch GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlink/Streamlink/TwitchGui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlink/Streamlink/TwitchGui
+identifiers:
+- winget: Streamlink.Streamlink.TwitchGui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Streamlink/Streamlink/TwitchGui
+aliases: []

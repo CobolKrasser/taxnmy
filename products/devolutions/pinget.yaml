@@ -1,0 +1,11 @@
+key: devolutions/pinget
+publisher: devolutions
+name: Pinget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Pinget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Pinget
+identifiers:
+- winget: Devolutions.Pinget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Pinget
+aliases: []

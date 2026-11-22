@@ -1,0 +1,11 @@
+key: syrize/openfic
+publisher: syrize
+name: OpenFic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syrize/OpenFic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syrize/OpenFic
+identifiers:
+- winget: Syrize.OpenFic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syrize/OpenFic
+aliases: []

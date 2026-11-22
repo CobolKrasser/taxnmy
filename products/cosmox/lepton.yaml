@@ -1,0 +1,11 @@
+key: cosmox/lepton
+publisher: cosmox
+name: Lepton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmoX/Lepton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmoX/Lepton
+identifiers:
+- winget: CosmoX.Lepton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmoX/Lepton
+aliases: []

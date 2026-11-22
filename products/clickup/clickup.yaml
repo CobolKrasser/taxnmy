@@ -1,0 +1,11 @@
+key: clickup/clickup
+publisher: clickup
+name: ClickUp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClickUp/ClickUp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClickUp/ClickUp
+identifiers:
+- winget: ClickUp.ClickUp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClickUp/ClickUp
+aliases: []

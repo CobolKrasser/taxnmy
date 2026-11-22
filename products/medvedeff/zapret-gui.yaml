@@ -1,0 +1,11 @@
+key: medvedeff/zapret-gui
+publisher: medvedeff
+name: Zapret GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medvedeff/ZapretGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medvedeff/ZapretGUI
+identifiers:
+- winget: Medvedeff.ZapretGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medvedeff/ZapretGUI
+aliases: []

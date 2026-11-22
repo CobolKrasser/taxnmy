@@ -1,0 +1,12 @@
+key: vovsoft/broken-link-detector
+publisher: vovsoft
+name: Vovsoft Broken Link Detector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BrokenLinkDetector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BrokenLinkDetector
+identifiers:
+- winget: VovSoft.BrokenLinkDetector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/BrokenLinkDetector
+aliases:
+- vovsoft/vovsoft-broken-link-detector

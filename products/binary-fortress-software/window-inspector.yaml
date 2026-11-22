@@ -1,0 +1,11 @@
+key: binary-fortress-software/window-inspector
+publisher: binary-fortress-software
+name: Window Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/WindowInspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/WindowInspector
+identifiers:
+- winget: BinaryFortress.WindowInspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/WindowInspector
+aliases: []

@@ -1,0 +1,11 @@
+key: collective-software/click-paste
+publisher: collective-software
+name: Click Paste
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollectiveSoftware/ClickPaste
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollectiveSoftware/ClickPaste
+identifiers:
+- winget: CollectiveSoftware.ClickPaste
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollectiveSoftware/ClickPaste
+aliases: []

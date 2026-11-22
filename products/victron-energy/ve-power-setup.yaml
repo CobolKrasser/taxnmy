@@ -1,0 +1,11 @@
+key: victron-energy/ve-power-setup
+publisher: victron-energy
+name: VE Power Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VEPowerSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VEPowerSetup
+identifiers:
+- winget: VictronEnergy.VEPowerSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/VEPowerSetup
+aliases: []

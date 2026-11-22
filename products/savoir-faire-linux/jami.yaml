@@ -1,0 +1,13 @@
+key: savoir-faire-linux/jami
+publisher: savoir-faire-linux
+name: Jami
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFLinux/Jami
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFLinux/Jami
+identifiers:
+- winget: SFLinux.Jami
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFLinux/Jami
+- winget: SFLinux.Jami.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SFLinux/Jami/Beta
+aliases: []

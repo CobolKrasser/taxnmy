@@ -1,0 +1,11 @@
+key: convectiva/agentwatcher
+publisher: convectiva
+name: AgentWatcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Convectiva/AgentWatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Convectiva/AgentWatcher
+identifiers:
+- winget: Convectiva.AgentWatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Convectiva/AgentWatcher
+aliases: []

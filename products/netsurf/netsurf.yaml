@@ -1,0 +1,11 @@
+key: netsurf/netsurf
+publisher: netsurf
+name: NetSurf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSurf/NetSurf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSurf/NetSurf
+identifiers:
+- winget: NetSurf.NetSurf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSurf/NetSurf
+aliases: []

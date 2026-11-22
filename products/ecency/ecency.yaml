@@ -1,0 +1,11 @@
+key: ecency/ecency
+publisher: ecency
+name: Ecency
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Esteem/Esteem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Esteem/Esteem
+identifiers:
+- winget: Esteem.Esteem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Esteem/Esteem
+aliases: []

@@ -1,0 +1,11 @@
+key: kubus/bimcollab-zoom
+publisher: kubus
+name: BIMcollab Zoom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BIMcollabZoom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BIMcollabZoom
+identifiers:
+- winget: Kubus.BIMcollabZoom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubus/BIMcollabZoom
+aliases: []

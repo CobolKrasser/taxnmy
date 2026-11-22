@@ -1,0 +1,11 @@
+key: miller-puckette/pure-data
+publisher: miller-puckette
+name: Pure Data
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MillerPuckette/PureData
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MillerPuckette/PureData
+identifiers:
+- winget: MillerPuckette.PureData
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MillerPuckette/PureData
+aliases: []

@@ -1,0 +1,11 @@
+key: witte-software/modbus-poll
+publisher: witte-software
+name: Modbus Poll
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusPoll
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusPoll
+identifiers:
+- winget: WitteSoftware.ModbusPoll
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusPoll
+aliases: []

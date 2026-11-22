@@ -1,0 +1,11 @@
+key: wbswitch/workbuddy-switch
+publisher: wbswitch
+name: workbuddy-switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChangeXbc/WorkBuddySwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChangeXbc/WorkBuddySwitch
+identifiers:
+- winget: ChangeXbc.WorkBuddySwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChangeXbc/WorkBuddySwitch
+aliases: []

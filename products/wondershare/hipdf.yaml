@@ -1,0 +1,12 @@
+key: wondershare/hipdf
+publisher: wondershare
+name: Wondershare HiPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/HiPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/HiPDF
+identifiers:
+- winget: Wondershare.HiPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/HiPDF
+aliases:
+- wondershare/wondershare-hipdf

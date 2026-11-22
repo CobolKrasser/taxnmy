@@ -1,0 +1,11 @@
+key: danielmiessler/fabric
+publisher: danielmiessler
+name: Fabric
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielmiessler/Fabric
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielmiessler/Fabric
+identifiers:
+- winget: danielmiessler.Fabric
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danielmiessler/Fabric
+aliases: []

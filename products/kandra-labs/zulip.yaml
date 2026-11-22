@@ -1,0 +1,11 @@
+key: kandra-labs/zulip
+publisher: kandra-labs
+name: Zulip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zulip/Zulip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zulip/Zulip
+identifiers:
+- winget: Zulip.Zulip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zulip/Zulip
+aliases: []

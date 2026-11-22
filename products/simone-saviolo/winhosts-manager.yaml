@@ -1,0 +1,11 @@
+key: simone-saviolo/winhosts-manager
+publisher: simone-saviolo
+name: WinHosts Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Savissimo/WinHostsManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Savissimo/WinHostsManager
+identifiers:
+- winget: Savissimo.WinHostsManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Savissimo/WinHostsManager
+aliases: []

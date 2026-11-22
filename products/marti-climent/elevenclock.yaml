@@ -1,0 +1,11 @@
+key: marti-climent/elevenclock
+publisher: marti-climent
+name: ElevenClock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SomePythonThings/ElevenClock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SomePythonThings/ElevenClock
+identifiers:
+- winget: SomePythonThings.ElevenClock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SomePythonThings/ElevenClock
+aliases: []

@@ -1,0 +1,11 @@
+key: rakuten-kobo/kobo
+publisher: rakuten-kobo
+name: Kobo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakuten/Kobo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakuten/Kobo
+identifiers:
+- winget: Rakuten.Kobo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakuten/Kobo
+aliases: []

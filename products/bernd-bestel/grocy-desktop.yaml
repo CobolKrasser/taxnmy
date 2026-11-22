@@ -1,0 +1,11 @@
+key: bernd-bestel/grocy-desktop
+publisher: bernd-bestel
+name: grocy-desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BerndBestel/grocy-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BerndBestel/grocy-desktop
+identifiers:
+- winget: BerndBestel.grocy-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BerndBestel/grocy-desktop
+aliases: []

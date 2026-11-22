@@ -1,0 +1,11 @@
+key: danything/wslc-compose
+publisher: danything
+name: wslc-compose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danything/wslc-compose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danything/wslc-compose
+identifiers:
+- winget: danything.wslc-compose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/danything/wslc-compose
+aliases: []

@@ -1,0 +1,11 @@
+key: mikhalchankasm/office-live-mcp
+publisher: mikhalchankasm
+name: Office Live MCP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikhalchankasm/OfficeLiveMCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikhalchankasm/OfficeLiveMCP
+identifiers:
+- winget: mikhalchankasm.OfficeLiveMCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mikhalchankasm/OfficeLiveMCP
+aliases: []

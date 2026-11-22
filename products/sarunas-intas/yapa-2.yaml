@@ -1,0 +1,11 @@
+key: sarunas-intas/yapa-2
+publisher: sarunas-intas
+name: YAPA-2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YetAnotherPomodoroApp/YAPA2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YetAnotherPomodoroApp/YAPA2
+identifiers:
+- winget: YetAnotherPomodoroApp.YAPA2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YetAnotherPomodoroApp/YAPA2
+aliases: []

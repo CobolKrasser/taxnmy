@@ -1,0 +1,11 @@
+key: ilpianista/ilpianista
+publisher: ilpianista
+name: ilpianista
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilpianista/winaskpass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilpianista/winaskpass
+identifiers:
+- winget: ilpianista.winaskpass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ilpianista/winaskpass
+aliases: []

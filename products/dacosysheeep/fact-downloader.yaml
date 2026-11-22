@@ -1,0 +1,11 @@
+key: dacosysheeep/fact-downloader
+publisher: dacosysheeep
+name: Fact downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaCosySheeep/FactDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaCosySheeep/FactDownloader
+identifiers:
+- winget: DaCosySheeep.FactDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaCosySheeep/FactDownloader
+aliases: []

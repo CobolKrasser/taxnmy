@@ -1,0 +1,11 @@
+key: haali/language-switcher
+publisher: haali
+name: Language Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Haali/WinUtils/lswitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Haali/WinUtils/lswitch
+identifiers:
+- winget: Haali.WinUtils.lswitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Haali/WinUtils/lswitch
+aliases: []

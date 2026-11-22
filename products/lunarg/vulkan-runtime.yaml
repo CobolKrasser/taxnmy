@@ -1,0 +1,11 @@
+key: lunarg/vulkan-runtime
+publisher: lunarg
+name: Vulkan Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KhronosGroup/VulkanRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KhronosGroup/VulkanRT
+identifiers:
+- winget: KhronosGroup.VulkanRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KhronosGroup/VulkanRT
+aliases: []

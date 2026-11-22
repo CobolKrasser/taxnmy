@@ -1,0 +1,12 @@
+key: xonsh/winget
+publisher: xonsh
+name: xonsh-winget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xonsh/xonsh-winget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xonsh/xonsh-winget
+identifiers:
+- winget: xonsh.xonsh-winget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xonsh/xonsh-winget
+aliases:
+- xonsh/xonsh-winget

@@ -1,0 +1,11 @@
+key: codingwonders-software/dismtools-preview
+publisher: codingwonders-software
+name: DISMTools Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodingWondersSoftware/DISMTools/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodingWondersSoftware/DISMTools/Preview
+identifiers:
+- winget: CodingWondersSoftware.DISMTools.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodingWondersSoftware/DISMTools/Preview
+aliases: []

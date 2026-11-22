@@ -1,0 +1,11 @@
+key: jakedorony/monitor-input-switcher
+publisher: jakedorony
+name: Monitor Input Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jakedorony/MonitorInputSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jakedorony/MonitorInputSwitcher
+identifiers:
+- winget: jakedorony.MonitorInputSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jakedorony/MonitorInputSwitcher
+aliases: []

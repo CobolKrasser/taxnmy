@@ -1,0 +1,11 @@
+key: defined-networking/dnclient-server
+publisher: defined-networking
+name: DNClient Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefinedNet/DNClient/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefinedNet/DNClient/Server
+identifiers:
+- winget: DefinedNet.DNClient.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DefinedNet/DNClient/Server
+aliases: []

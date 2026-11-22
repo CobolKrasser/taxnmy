@@ -1,0 +1,12 @@
+key: last-fm/desktop-scrobbler
+publisher: last-fm
+name: Last.fm Desktop Scrobbler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LastFM/LastFMDesktopScrobbler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LastFM/LastFMDesktopScrobbler
+identifiers:
+- winget: LastFM.LastFMDesktopScrobbler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LastFM/LastFMDesktopScrobbler
+aliases:
+- last-fm/last-fm-desktop-scrobbler

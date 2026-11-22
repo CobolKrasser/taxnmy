@@ -1,0 +1,11 @@
+key: dmde-software/dmde-data-recovery-software
+publisher: dmde-software
+name: DMDE Data Recovery Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMDE/DataRecovery/GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMDE/DataRecovery/GUI
+identifiers:
+- winget: DMDE.DataRecovery.GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMDE/DataRecovery/GUI
+aliases: []

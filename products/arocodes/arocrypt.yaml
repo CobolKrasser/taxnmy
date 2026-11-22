@@ -1,0 +1,11 @@
+key: arocodes/arocrypt
+publisher: arocodes
+name: AroCrypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OfficialAroCodes/AroCrypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OfficialAroCodes/AroCrypt
+identifiers:
+- winget: OfficialAroCodes.AroCrypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OfficialAroCodes/AroCrypt
+aliases: []

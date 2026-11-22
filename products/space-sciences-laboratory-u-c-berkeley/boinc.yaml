@@ -1,0 +1,11 @@
+key: space-sciences-laboratory-u-c-berkeley/boinc
+publisher: space-sciences-laboratory-u-c-berkeley
+name: BOINC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UCBerkeley/BOINC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UCBerkeley/BOINC
+identifiers:
+- winget: UCBerkeley.BOINC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UCBerkeley/BOINC
+aliases: []

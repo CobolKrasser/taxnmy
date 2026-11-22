@@ -1,0 +1,11 @@
+key: kubri/kubri
+publisher: kubri
+name: Kubri
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubri/Kubri
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubri/Kubri
+identifiers:
+- winget: Kubri.Kubri
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubri/Kubri
+aliases: []

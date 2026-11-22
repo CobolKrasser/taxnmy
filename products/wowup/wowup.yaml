@@ -1,0 +1,11 @@
+key: wowup/wowup
+publisher: wowup
+name: WowUp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/Wowup/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/Wowup/Beta
+identifiers:
+- winget: WowUp.Wowup.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WowUp/Wowup/Beta
+aliases: []

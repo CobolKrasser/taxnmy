@@ -1,0 +1,11 @@
+key: david-moore/ipfilter
+publisher: david-moore
+name: IPFilter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavidMoore/IPFilterUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavidMoore/IPFilterUpdater
+identifiers:
+- winget: DavidMoore.IPFilterUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavidMoore/IPFilterUpdater
+aliases: []

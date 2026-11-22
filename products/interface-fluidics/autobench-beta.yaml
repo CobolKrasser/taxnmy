@@ -1,0 +1,11 @@
+key: interface-fluidics/autobench-beta
+publisher: interface-fluidics
+name: Autobench Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autobench/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autobench/Beta
+identifiers:
+- winget: InterfaceFluidics.Autobench.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterfaceFluidics/Autobench/Beta
+aliases: []

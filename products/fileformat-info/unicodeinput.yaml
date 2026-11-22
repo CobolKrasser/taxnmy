@@ -1,0 +1,11 @@
+key: fileformat-info/unicodeinput
+publisher: fileformat-info
+name: UnicodeInput
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileFormatDotInfo/UnicodeInput
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileFormatDotInfo/UnicodeInput
+identifiers:
+- winget: FileFormatDotInfo.UnicodeInput
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileFormatDotInfo/UnicodeInput
+aliases: []

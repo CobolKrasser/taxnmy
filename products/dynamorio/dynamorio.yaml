@@ -1,0 +1,11 @@
+key: dynamorio/dynamorio
+publisher: dynamorio
+name: DynamoRIO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynamoRIO/DynamoRIO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynamoRIO/DynamoRIO
+identifiers:
+- winget: DynamoRIO.DynamoRIO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynamoRIO/DynamoRIO
+aliases: []

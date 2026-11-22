@@ -1,0 +1,11 @@
+key: american-astronomical-society/aas-worldwide-telescope
+publisher: american-astronomical-society
+name: AAS WorldWide Telescope
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AAS/WorldWideTelescope
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AAS/WorldWideTelescope
+identifiers:
+- winget: AAS.WorldWideTelescope
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AAS/WorldWideTelescope
+aliases: []

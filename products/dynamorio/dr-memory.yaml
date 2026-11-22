@@ -1,0 +1,11 @@
+key: dynamorio/dr-memory
+publisher: dynamorio
+name: Dr. Memory
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynamoRIO/drmemory
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynamoRIO/drmemory
+identifiers:
+- winget: DynamoRIO.drmemory
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DynamoRIO/drmemory
+aliases: []

@@ -1,0 +1,11 @@
+key: binarymark/batch-word-replace-free-edition
+publisher: binarymark
+name: Batch Word Replace Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchWordReplace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchWordReplace
+identifiers:
+- winget: BinaryMark.BatchWordReplace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchWordReplace
+aliases: []

@@ -1,0 +1,11 @@
+key: mehmet-ali-keskin/local-cargo
+publisher: mehmet-ali-keskin
+name: Local Cargo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mehmetali011/LocalCargo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mehmetali011/LocalCargo
+identifiers:
+- winget: mehmetali011.LocalCargo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mehmetali011/LocalCargo
+aliases: []

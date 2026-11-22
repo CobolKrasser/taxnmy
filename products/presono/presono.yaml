@@ -1,0 +1,11 @@
+key: presono/presono
+publisher: presono
+name: presono
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/presono/presono
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/presono/presono
+identifiers:
+- winget: presono.presono
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/presono/presono
+aliases: []

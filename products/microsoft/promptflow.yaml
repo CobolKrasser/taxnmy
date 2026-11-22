@@ -1,0 +1,12 @@
+key: microsoft/promptflow
+publisher: microsoft
+name: Microsoft Promptflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Promptflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Promptflow
+identifiers:
+- winget: Microsoft.Promptflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Promptflow
+aliases:
+- microsoft/microsoft-promptflow

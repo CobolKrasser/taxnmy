@@ -1,0 +1,11 @@
+key: cfca/seceditctlhostadv-icbc-setup
+publisher: cfca
+name: SecEditCtlHostAdv.ICBC.Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/SecEditCtl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/SecEditCtl
+identifiers:
+- winget: ICBC.SecEditCtl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/SecEditCtl
+aliases: []

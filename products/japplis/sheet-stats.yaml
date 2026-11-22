@@ -1,0 +1,11 @@
+key: japplis/sheet-stats
+publisher: japplis
+name: Sheet Stats
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/SheetStats
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/SheetStats
+identifiers:
+- winget: Japplis.SheetStats
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/SheetStats
+aliases: []

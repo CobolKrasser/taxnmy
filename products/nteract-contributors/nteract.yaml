@@ -1,0 +1,11 @@
+key: nteract-contributors/nteract
+publisher: nteract-contributors
+name: nteract
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nteract/nteract
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nteract/nteract
+identifiers:
+- winget: nteract.nteract
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nteract/nteract
+aliases: []

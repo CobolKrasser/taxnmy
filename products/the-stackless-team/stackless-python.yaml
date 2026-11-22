@@ -1,0 +1,11 @@
+key: the-stackless-team/stackless-python
+publisher: the-stackless-team
+name: Stackless Python
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stackless/stackless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stackless/stackless
+identifiers:
+- winget: stackless.stackless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stackless/stackless
+aliases: []

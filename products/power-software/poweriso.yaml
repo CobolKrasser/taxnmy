@@ -1,0 +1,11 @@
+key: power-software/poweriso
+publisher: power-software
+name: PowerISO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerSoftware/PowerISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerSoftware/PowerISO
+identifiers:
+- winget: PowerSoftware.PowerISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerSoftware/PowerISO
+aliases: []

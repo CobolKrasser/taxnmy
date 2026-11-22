@@ -1,0 +1,11 @@
+key: dashlane/dashlane
+publisher: dashlane
+name: Dashlane
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dashlane/Dashlane
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dashlane/Dashlane
+identifiers:
+- winget: Dashlane.Dashlane
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dashlane/Dashlane
+aliases: []

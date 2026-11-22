@@ -1,0 +1,11 @@
+key: the-virtualgl-project/virtualgl-utils
+publisher: the-virtualgl-project
+name: VirtualGL-Utils
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualGL/VirtualGL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualGL/VirtualGL
+identifiers:
+- winget: VirtualGL.VirtualGL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualGL/VirtualGL
+aliases: []

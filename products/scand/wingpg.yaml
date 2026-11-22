@@ -1,0 +1,11 @@
+key: scand/wingpg
+publisher: scand
+name: WinGPG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scand/WinGPG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scand/WinGPG
+identifiers:
+- winget: Scand.WinGPG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scand/WinGPG
+aliases: []

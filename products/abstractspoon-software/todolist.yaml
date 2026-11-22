@@ -1,0 +1,11 @@
+key: abstractspoon-software/todolist
+publisher: abstractspoon-software
+name: ToDoList
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbstractSpoon/ToDoList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbstractSpoon/ToDoList
+identifiers:
+- winget: AbstractSpoon.ToDoList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbstractSpoon/ToDoList
+aliases: []

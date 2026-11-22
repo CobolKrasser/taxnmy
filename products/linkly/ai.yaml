@@ -1,0 +1,12 @@
+key: linkly/ai
+publisher: linkly
+name: Linkly AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinklyAI/LinklyAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinklyAI/LinklyAI
+identifiers:
+- winget: LinklyAI.LinklyAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinklyAI/LinklyAI
+aliases:
+- linkly/linkly-ai

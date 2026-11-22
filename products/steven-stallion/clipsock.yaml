@@ -1,0 +1,11 @@
+key: steven-stallion/clipsock
+publisher: steven-stallion
+name: ClipSock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipSock/ClipSock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipSock/ClipSock
+identifiers:
+- winget: ClipSock.ClipSock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipSock/ClipSock
+aliases: []

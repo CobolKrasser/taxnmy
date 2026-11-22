@@ -1,0 +1,13 @@
+key: openlist-team/openlist
+publisher: openlist-team
+name: OpenList
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenList
+identifiers:
+- winget: OpenListTeam.OpenList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenList
+- winget: OpenListTeam.OpenList.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenListTeam/OpenList/Lite
+aliases: []

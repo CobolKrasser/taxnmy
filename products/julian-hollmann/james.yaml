@@ -1,0 +1,11 @@
+key: julian-hollmann/james
+publisher: julian-hollmann
+name: James
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/james/james
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/james/james
+identifiers:
+- winget: james.james
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/james/james
+aliases: []

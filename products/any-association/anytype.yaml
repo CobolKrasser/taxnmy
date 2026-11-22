@@ -1,0 +1,11 @@
+key: any-association/anytype
+publisher: any-association
+name: Anytype
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyAssociation/Anytype
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyAssociation/Anytype
+identifiers:
+- winget: AnyAssociation.Anytype
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyAssociation/Anytype
+aliases: []

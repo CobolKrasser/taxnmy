@@ -1,0 +1,11 @@
+key: impero-solutions/vision-teacher-for-chromebooks-machine-wide-installer
+publisher: impero-solutions
+name: Vision Teacher for Chromebooks Machine-Wide Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netop/VisionTeacher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netop/VisionTeacher
+identifiers:
+- winget: Netop.VisionTeacher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netop/VisionTeacher
+aliases: []

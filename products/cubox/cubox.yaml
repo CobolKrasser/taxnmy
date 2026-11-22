@@ -1,0 +1,11 @@
+key: cubox/cubox
+publisher: cubox
+name: Cubox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OddLab/Cubox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OddLab/Cubox
+identifiers:
+- winget: OddLab.Cubox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OddLab/Cubox
+aliases: []

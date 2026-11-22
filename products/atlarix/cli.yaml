@@ -1,0 +1,12 @@
+key: atlarix/cli
+publisher: atlarix
+name: Atlarix CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmariahAK/AtlarixCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmariahAK/AtlarixCLI
+identifiers:
+- winget: AmariahAK.AtlarixCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmariahAK/AtlarixCLI
+aliases:
+- atlarix/atlarix-cli

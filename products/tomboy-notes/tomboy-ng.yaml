@@ -1,0 +1,11 @@
+key: tomboy-notes/tomboy-ng
+publisher: tomboy-notes
+name: tomboy-ng
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomboyNotes/tomboy-ng
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomboyNotes/tomboy-ng
+identifiers:
+- winget: TomboyNotes.tomboy-ng
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TomboyNotes/tomboy-ng
+aliases: []

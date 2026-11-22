@@ -1,0 +1,11 @@
+key: cockos/reaper
+publisher: cockos
+name: REAPER
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockos/REAPER
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockos/REAPER
+identifiers:
+- winget: Cockos.REAPER
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockos/REAPER
+aliases: []

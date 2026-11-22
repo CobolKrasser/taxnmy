@@ -1,0 +1,13 @@
+key: laurent-cozic/joplin
+publisher: laurent-cozic
+name: Joplin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Joplin/Joplin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Joplin/Joplin
+identifiers:
+- winget: Joplin.Joplin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Joplin/Joplin
+- winget: Joplin.Joplin.Pre-release
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Joplin/Joplin/Pre-release
+aliases: []

@@ -1,0 +1,11 @@
+key: the-scribus-team/scribus
+publisher: the-scribus-team
+name: Scribus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scribus/Scribus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scribus/Scribus
+identifiers:
+- winget: Scribus.Scribus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scribus/Scribus
+aliases: []

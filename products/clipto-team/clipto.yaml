@@ -1,0 +1,11 @@
+key: clipto-team/clipto
+publisher: clipto-team
+name: Clipto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CliptoTeam/Clipto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CliptoTeam/Clipto
+identifiers:
+- winget: CliptoTeam.Clipto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CliptoTeam/Clipto
+aliases: []

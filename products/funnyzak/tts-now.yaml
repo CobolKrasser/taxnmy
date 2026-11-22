@@ -1,0 +1,11 @@
+key: funnyzak/tts-now
+publisher: funnyzak
+name: TTS Now
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/funnyzak/TTSNow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/funnyzak/TTSNow
+identifiers:
+- winget: funnyzak.TTSNow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/funnyzak/TTSNow
+aliases: []

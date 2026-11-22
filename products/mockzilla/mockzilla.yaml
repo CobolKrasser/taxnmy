@@ -1,0 +1,11 @@
+key: mockzilla/mockzilla
+publisher: mockzilla
+name: Mockzilla
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mockzilla/Mockzilla
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mockzilla/Mockzilla
+identifiers:
+- winget: Mockzilla.Mockzilla
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mockzilla/Mockzilla
+aliases: []

@@ -1,0 +1,11 @@
+key: software-companions/gerbview
+publisher: software-companions
+name: GerbView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/GerbView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/GerbView
+identifiers:
+- winget: SoftwareCompanions.GerbView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/GerbView
+aliases: []

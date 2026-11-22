@@ -1,0 +1,11 @@
+key: coas-software-systems/donkey-for-oracle
+publisher: coas-software-systems
+name: Donkey for Oracle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COAS/Donkey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COAS/Donkey
+identifiers:
+- winget: COAS.Donkey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/COAS/Donkey
+aliases: []

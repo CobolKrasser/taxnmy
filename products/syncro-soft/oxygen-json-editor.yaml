@@ -1,0 +1,11 @@
+key: syncro-soft/oxygen-json-editor
+publisher: syncro-soft
+name: Oxygen JSON Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncROSoft/OxygenJSONEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncROSoft/OxygenJSONEditor
+identifiers:
+- winget: SyncROSoft.OxygenJSONEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SyncROSoft/OxygenJSONEditor
+aliases: []

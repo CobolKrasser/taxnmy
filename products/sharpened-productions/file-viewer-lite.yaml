@@ -1,0 +1,11 @@
+key: sharpened-productions/file-viewer-lite
+publisher: sharpened-productions
+name: File Viewer Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sharpened/FileViewerLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sharpened/FileViewerLite
+identifiers:
+- winget: Sharpened.FileViewerLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sharpened/FileViewerLite
+aliases: []

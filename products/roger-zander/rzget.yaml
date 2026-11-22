@@ -1,0 +1,11 @@
+key: roger-zander/rzget
+publisher: roger-zander
+name: RZGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RogerZander/RZGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RogerZander/RZGet
+identifiers:
+- winget: RogerZander.RZGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RogerZander/RZGet
+aliases: []

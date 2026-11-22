@@ -1,0 +1,11 @@
+key: teamviewer-germany/teamviewer-quicksupport
+publisher: teamviewer-germany
+name: TeamViewer QuickSupport
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer/QuickSupport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer/QuickSupport
+identifiers:
+- winget: TeamViewer.TeamViewer.QuickSupport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamViewer/TeamViewer/QuickSupport
+aliases: []

@@ -1,0 +1,11 @@
+key: aclap/downloadhelper-coapp
+publisher: aclap
+name: DownloadHelper CoApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACLAP/DownloadHelperCoApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACLAP/DownloadHelperCoApp
+identifiers:
+- winget: ACLAP.DownloadHelperCoApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACLAP/DownloadHelperCoApp
+aliases: []

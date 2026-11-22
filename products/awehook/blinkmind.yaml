@@ -1,0 +1,11 @@
+key: awehook/blinkmind
+publisher: awehook
+name: BlinkMind
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awehook/BlinkMind
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awehook/BlinkMind
+identifiers:
+- winget: awehook.BlinkMind
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/awehook/BlinkMind
+aliases: []

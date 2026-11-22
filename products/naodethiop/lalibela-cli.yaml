@@ -1,0 +1,11 @@
+key: naodethiop/lalibela-cli
+publisher: naodethiop
+name: Lalibela CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NaodEthiop/Lalibela
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NaodEthiop/Lalibela
+identifiers:
+- winget: NaodEthiop.Lalibela
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NaodEthiop/Lalibela
+aliases: []

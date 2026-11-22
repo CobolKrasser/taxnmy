@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-philippines-server
+publisher: riot-games
+name: League of Legends (Philippines server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/PH2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/PH2
+identifiers:
+- winget: RiotGames.LeagueOfLegends.PH2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/PH2
+aliases: []

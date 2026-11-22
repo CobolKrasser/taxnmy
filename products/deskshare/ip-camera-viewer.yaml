@@ -1,0 +1,11 @@
+key: deskshare/ip-camera-viewer
+publisher: deskshare
+name: IP Camera Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskShare/IPCameraViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskShare/IPCameraViewer
+identifiers:
+- winget: DeskShare.IPCameraViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskShare/IPCameraViewer
+aliases: []

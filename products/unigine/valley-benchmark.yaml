@@ -1,0 +1,12 @@
+key: unigine/valley-benchmark
+publisher: unigine
+name: Unigine Valley Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/ValleyBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/ValleyBenchmark
+identifiers:
+- winget: Unigine.ValleyBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/ValleyBenchmark
+aliases:
+- unigine/unigine-valley-benchmark

@@ -1,0 +1,11 @@
+key: heco-cli/heco
+publisher: heco-cli
+name: HecO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HecO-CLI/HecO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HecO-CLI/HecO
+identifiers:
+- winget: HecO-CLI.HecO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HecO-CLI/HecO
+aliases: []

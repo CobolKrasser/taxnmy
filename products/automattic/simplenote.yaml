@@ -1,0 +1,11 @@
+key: automattic/simplenote
+publisher: automattic
+name: Simplenote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/Simplenote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/Simplenote
+identifiers:
+- winget: Automattic.Simplenote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/Simplenote
+aliases: []

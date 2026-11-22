@@ -1,0 +1,11 @@
+key: dbeaver/dbeaver
+publisher: dbeaver
+name: DBeaver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Community
+identifiers:
+- winget: DBeaver.DBeaver.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Community
+aliases: []

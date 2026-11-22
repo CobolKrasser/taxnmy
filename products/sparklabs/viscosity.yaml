@@ -1,0 +1,11 @@
+key: sparklabs/viscosity
+publisher: sparklabs
+name: Viscosity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparkLabs/Viscosity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparkLabs/Viscosity
+identifiers:
+- winget: SparkLabs.Viscosity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SparkLabs/Viscosity
+aliases: []

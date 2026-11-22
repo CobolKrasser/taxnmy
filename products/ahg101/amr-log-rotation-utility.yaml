@@ -1,0 +1,11 @@
+key: ahg101/amr-log-rotation-utility
+publisher: ahg101
+name: Amr Log Rotation Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahg101/AmrLogRotation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahg101/AmrLogRotation
+identifiers:
+- winget: ahg101.AmrLogRotation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahg101/AmrLogRotation
+aliases: []

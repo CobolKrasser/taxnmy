@@ -1,0 +1,11 @@
+key: tarma-software-research/installmate
+publisher: tarma-software-research
+name: InstallMate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarma/InstallMate/11
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarma/InstallMate/11
+identifiers:
+- winget: Tarma.InstallMate.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tarma/InstallMate/11
+aliases: []

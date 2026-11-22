@@ -1,0 +1,11 @@
+key: norsehorse/relaypony
+publisher: norsehorse
+name: RelayPony
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NorseHorse/RelayPony
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NorseHorse/RelayPony
+identifiers:
+- winget: NorseHorse.RelayPony
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NorseHorse/RelayPony
+aliases: []

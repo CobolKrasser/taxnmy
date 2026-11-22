@@ -1,0 +1,11 @@
+key: deskflow/deskflow
+publisher: deskflow
+name: Deskflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deskflow/Deskflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deskflow/Deskflow
+identifiers:
+- winget: Deskflow.Deskflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deskflow/Deskflow
+aliases: []

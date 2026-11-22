@@ -1,0 +1,11 @@
+key: pinta-community/pinta
+publisher: pinta-community
+name: Pinta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinta/Pinta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinta/Pinta
+identifiers:
+- winget: Pinta.Pinta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinta/Pinta
+aliases: []

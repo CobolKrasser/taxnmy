@@ -1,0 +1,11 @@
+key: bundesamtes-fur-sicherheit-in-der-informationstechnik/ausweisapp
+publisher: bundesamtes-fur-sicherheit-in-der-informationstechnik
+name: AusweisApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Governikus/AusweisApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Governikus/AusweisApp
+identifiers:
+- winget: Governikus.AusweisApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Governikus/AusweisApp
+aliases: []

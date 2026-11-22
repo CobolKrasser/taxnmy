@@ -1,0 +1,11 @@
+key: medvedik-juraj-simlovic/ted-notepad
+publisher: medvedik-juraj-simlovic
+name: TED Notepad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jsimlo/tednotepad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jsimlo/tednotepad
+identifiers:
+- winget: jsimlo.tednotepad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jsimlo/tednotepad
+aliases: []

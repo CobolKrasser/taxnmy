@@ -1,0 +1,14 @@
+key: bluebeam/revu
+publisher: bluebeam
+name: Bluebeam Revu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/Revu/20
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/Revu/20
+identifiers:
+- winget: Bluebeam.Revu.20
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/Revu/20
+- winget: Bluebeam.Revu.21
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/Revu/21
+aliases:
+- bluebeam/bluebeam-revu

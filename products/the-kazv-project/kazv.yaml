@@ -1,0 +1,11 @@
+key: the-kazv-project/kazv
+publisher: the-kazv-project
+name: kazv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheKazvProject/kazv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheKazvProject/kazv
+identifiers:
+- winget: TheKazvProject.kazv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheKazvProject/kazv
+aliases: []

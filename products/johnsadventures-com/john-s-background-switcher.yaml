@@ -1,0 +1,11 @@
+key: johnsadventures-com/john-s-background-switcher
+publisher: johnsadventures-com
+name: John's Background Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/johnsadventures/JohnsBackgroundSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/johnsadventures/JohnsBackgroundSwitcher
+identifiers:
+- winget: johnsadventures.JohnsBackgroundSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/johnsadventures/JohnsBackgroundSwitcher
+aliases: []

@@ -1,0 +1,14 @@
+key: vovsoft/csv-to-json-converter
+publisher: vovsoft
+name: Vovsoft CSV to JSON Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoJSONConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoJSONConverter
+identifiers:
+- winget: VovSoft.CSVtoJSONConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoJSONConverter
+- winget: VovSoft.JSONtoCSVConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/JSONtoCSVConverter
+aliases:
+- vovsoft/vovsoft-csv-to-json-converter

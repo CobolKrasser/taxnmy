@@ -1,0 +1,11 @@
+key: picgo/picgo
+publisher: picgo
+name: PicGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGo/PicGo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGo/PicGo
+identifiers:
+- winget: PicGo.PicGo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicGo/PicGo
+aliases: []

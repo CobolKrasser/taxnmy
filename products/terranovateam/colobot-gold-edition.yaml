@@ -1,0 +1,11 @@
+key: terranovateam/colobot-gold-edition
+publisher: terranovateam
+name: 'Colobot: Gold Edition'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epsitec/Colobot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epsitec/Colobot
+identifiers:
+- winget: Epsitec.Colobot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Epsitec/Colobot
+aliases: []

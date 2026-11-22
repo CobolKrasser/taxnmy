@@ -1,0 +1,11 @@
+key: mellowmill/studio
+publisher: mellowmill
+name: Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MellowMill/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MellowMill/Studio
+identifiers:
+- winget: MellowMill.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MellowMill/Studio
+aliases: []

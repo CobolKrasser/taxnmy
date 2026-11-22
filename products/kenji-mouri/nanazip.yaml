@@ -1,0 +1,11 @@
+key: kenji-mouri/nanazip
+publisher: kenji-mouri
+name: NanaZip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M2Team/NanaZip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M2Team/NanaZip
+identifiers:
+- winget: M2Team.NanaZip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M2Team/NanaZip
+aliases: []

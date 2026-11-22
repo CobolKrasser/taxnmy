@@ -1,0 +1,13 @@
+key: microsoft/garnet-net
+publisher: microsoft
+name: Garnet (.NET)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Garnet/DN8
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Garnet/DN8
+identifiers:
+- winget: Microsoft.Garnet.DN8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Garnet/DN8
+- winget: Microsoft.Garnet.DN9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Garnet/DN9
+aliases: []

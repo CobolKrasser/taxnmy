@@ -1,0 +1,11 @@
+key: trigger-segfault/wiimote-audio-player
+publisher: trigger-segfault
+name: Wiimote Audio Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/trigger-segfault/WiimoteAudioPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/trigger-segfault/WiimoteAudioPlayer
+identifiers:
+- winget: trigger-segfault.WiimoteAudioPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/trigger-segfault/WiimoteAudioPlayer
+aliases: []

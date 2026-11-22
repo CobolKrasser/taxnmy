@@ -1,0 +1,11 @@
+key: digua/chatlab
+publisher: digua
+name: ChatLab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hellodigua/ChatLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hellodigua/ChatLab
+identifiers:
+- winget: hellodigua.ChatLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hellodigua/ChatLab
+aliases: []

@@ -1,0 +1,14 @@
+key: teradata/tools-and-utilities-base
+publisher: teradata
+name: Teradata Tools and Utilities - Base
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TTUBase
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TTUBase
+identifiers:
+- winget: Teradata.TTUBase
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TTUBase
+- winget: Teradata.TeradataBaseSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TeradataBaseSuite
+aliases:
+- teradata/teradata-tools-and-utilities-base

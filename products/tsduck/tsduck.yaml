@@ -1,0 +1,11 @@
+key: tsduck/tsduck
+publisher: tsduck
+name: TSDuck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TSDuck/TSDuck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TSDuck/TSDuck
+identifiers:
+- winget: TSDuck.TSDuck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TSDuck/TSDuck
+aliases: []

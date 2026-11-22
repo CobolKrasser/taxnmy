@@ -1,0 +1,11 @@
+key: ntwind-software/hidden-start
+publisher: ntwind-software
+name: Hidden Start
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/HiddenStart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/HiddenStart
+identifiers:
+- winget: ntwind.HiddenStart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/HiddenStart
+aliases: []

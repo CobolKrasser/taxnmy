@@ -1,0 +1,11 @@
+key: alist/alist
+publisher: alist
+name: Alist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AList/AList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AList/AList
+identifiers:
+- winget: AList.AList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AList/AList
+aliases: []

@@ -1,0 +1,11 @@
+key: pi-desktop/pi-desktop
+publisher: pi-desktop
+name: pi Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/justhil/piDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/justhil/piDesktop
+identifiers:
+- winget: justhil.piDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/justhil/piDesktop
+aliases: []

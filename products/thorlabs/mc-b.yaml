@@ -1,0 +1,11 @@
+key: thorlabs/mc-b
+publisher: thorlabs
+name: MC B
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MC2000B
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MC2000B
+identifiers:
+- winget: Thorlabs.MC2000B
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MC2000B
+aliases: []

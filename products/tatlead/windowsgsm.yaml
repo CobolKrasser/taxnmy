@@ -1,0 +1,11 @@
+key: tatlead/windowsgsm
+publisher: tatlead
+name: WindowsGSM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TatLead/WindowsGSM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TatLead/WindowsGSM
+identifiers:
+- winget: TatLead.WindowsGSM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TatLead/WindowsGSM
+aliases: []

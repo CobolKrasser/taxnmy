@@ -1,0 +1,11 @@
+key: woa-tools-official/woa-toolbox
+publisher: woa-tools-official
+name: WOA Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WOAToolsOfficial/WOAToolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WOAToolsOfficial/WOAToolbox
+identifiers:
+- winget: WOAToolsOfficial.WOAToolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WOAToolsOfficial/WOAToolbox
+aliases: []

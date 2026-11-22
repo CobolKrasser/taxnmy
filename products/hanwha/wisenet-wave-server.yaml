@@ -1,0 +1,11 @@
+key: hanwha/wisenet-wave-server
+publisher: hanwha
+name: Wisenet WAVE Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HanwhaVision/WisenetWAVEVMS/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HanwhaVision/WisenetWAVEVMS/Server
+identifiers:
+- winget: HanwhaVision.WisenetWAVEVMS.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HanwhaVision/WisenetWAVEVMS/Server
+aliases: []

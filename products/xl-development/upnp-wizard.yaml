@@ -1,0 +1,11 @@
+key: xl-development/upnp-wizard
+publisher: xl-development
+name: UPnP Wizard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XLDevelopment/UPnPWizard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XLDevelopment/UPnPWizard
+identifiers:
+- winget: XLDevelopment.UPnPWizard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XLDevelopment/UPnPWizard
+aliases: []

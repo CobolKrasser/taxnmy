@@ -1,0 +1,11 @@
+key: openchamber/openchamber
+publisher: openchamber
+name: OpenChamber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenChamber/OpenChamber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenChamber/OpenChamber
+identifiers:
+- winget: OpenChamber.OpenChamber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenChamber/OpenChamber
+aliases: []

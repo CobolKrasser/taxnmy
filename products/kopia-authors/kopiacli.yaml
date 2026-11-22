@@ -1,0 +1,11 @@
+key: kopia-authors/kopiacli
+publisher: kopia-authors
+name: KopiaCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopia/KopiaCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopia/KopiaCLI
+identifiers:
+- winget: Kopia.KopiaCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopia/KopiaCLI
+aliases: []

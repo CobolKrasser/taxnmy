@@ -1,0 +1,11 @@
+key: aionui/officecli
+publisher: aionui
+name: OfficeCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOfficeAI/OfficeCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOfficeAI/OfficeCLI
+identifiers:
+- winget: iOfficeAI.OfficeCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOfficeAI/OfficeCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: nexus-maintainers/nexus-launcher
+publisher: nexus-maintainers
+name: Nexus Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chelal233/NexusLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chelal233/NexusLauncher
+identifiers:
+- winget: chelal233.NexusLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chelal233/NexusLauncher
+aliases: []

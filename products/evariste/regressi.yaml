@@ -1,0 +1,13 @@
+key: evariste/regressi
+publisher: evariste
+name: Regressi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Regressi/Regressi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Regressi/Regressi
+identifiers:
+- winget: Regressi.Regressi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Regressi/Regressi
+- winget: Regressi.Regressi64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Regressi/Regressi64
+aliases: []

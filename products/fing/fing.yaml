@@ -1,0 +1,11 @@
+key: fing/fing
+publisher: fing
+name: Fing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fing/Fing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fing/Fing
+identifiers:
+- winget: Fing.Fing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fing/Fing
+aliases: []

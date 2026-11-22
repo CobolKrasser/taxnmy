@@ -1,0 +1,11 @@
+key: toolport/toolport
+publisher: toolport
+name: Toolport
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toolport/Toolport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toolport/Toolport
+identifiers:
+- winget: Toolport.Toolport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toolport/Toolport
+aliases: []

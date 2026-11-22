@@ -1,0 +1,11 @@
+key: lite-xl-team/lite-xl
+publisher: lite-xl-team
+name: Lite XL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiteXLTeam/LiteXL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiteXLTeam/LiteXL
+identifiers:
+- winget: LiteXLTeam.LiteXL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiteXLTeam/LiteXL
+aliases: []

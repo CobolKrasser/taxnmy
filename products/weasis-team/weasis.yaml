@@ -1,0 +1,11 @@
+key: weasis-team/weasis
+publisher: weasis-team
+name: Weasis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeasisTeam/Weasis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeasisTeam/Weasis
+identifiers:
+- winget: WeasisTeam.Weasis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeasisTeam/Weasis
+aliases: []

@@ -1,0 +1,11 @@
+key: repass-cloud/cursedelete-2
+publisher: repass-cloud
+name: CurseDelete 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RePassCloud/cursedelete
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RePassCloud/cursedelete
+identifiers:
+- winget: RePassCloud.cursedelete
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RePassCloud/cursedelete
+aliases: []

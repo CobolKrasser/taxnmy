@@ -1,0 +1,11 @@
+key: raul-argente/argente-startup-manager
+publisher: raul-argente
+name: Argente Startup Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/StartupManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/StartupManager
+identifiers:
+- winget: Argente.StartupManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/StartupManager
+aliases: []

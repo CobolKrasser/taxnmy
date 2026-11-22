@@ -1,0 +1,11 @@
+key: nrafinia/csmesh
+publisher: nrafinia
+name: CsMesh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nRafinia/CsMesh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nRafinia/CsMesh
+identifiers:
+- winget: nRafinia.CsMesh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nRafinia/CsMesh
+aliases: []

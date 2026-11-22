@@ -1,0 +1,11 @@
+key: nstr-dev/igitt
+publisher: nstr-dev
+name: Igitt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nstr/Igitt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nstr/Igitt
+identifiers:
+- winget: Nstr.Igitt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nstr/Igitt
+aliases: []

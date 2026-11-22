@@ -1,0 +1,11 @@
+key: securityxploded/exe-64bit-detector
+publisher: securityxploded
+name: EXE 64bit Detector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityXploded/Exe64bitDetector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityXploded/Exe64bitDetector
+identifiers:
+- winget: SecurityXploded.Exe64bitDetector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurityXploded/Exe64bitDetector
+aliases: []

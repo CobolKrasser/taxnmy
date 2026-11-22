@@ -1,0 +1,11 @@
+key: kimchi/kimchi
+publisher: kimchi
+name: Kimchi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CastAI/Kimchi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CastAI/Kimchi
+identifiers:
+- winget: CastAI.Kimchi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CastAI/Kimchi
+aliases: []

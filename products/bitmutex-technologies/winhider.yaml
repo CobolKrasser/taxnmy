@@ -1,0 +1,11 @@
+key: bitmutex-technologies/winhider
+publisher: bitmutex-technologies
+name: winhider
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitmutex/Winhider
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitmutex/Winhider
+identifiers:
+- winget: Bitmutex.Winhider
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitmutex/Winhider
+aliases: []

@@ -1,0 +1,12 @@
+key: winngs/star
+publisher: winngs
+name: WinNGS STAR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/STAR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/STAR
+identifiers:
+- winget: WinNGS.STAR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/STAR
+aliases:
+- winngs/winngs-star

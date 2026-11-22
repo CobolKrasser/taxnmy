@@ -1,0 +1,11 @@
+key: compegps-team/twonav-land
+publisher: compegps-team
+name: TwoNav Land
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompeGPS/TwoNavLand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompeGPS/TwoNavLand
+identifiers:
+- winget: CompeGPS.TwoNavLand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CompeGPS/TwoNavLand
+aliases: []

@@ -1,0 +1,11 @@
+key: quickzdev/iscribby
+publisher: quickzdev
+name: iScribby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuickzDev/iScribby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuickzDev/iScribby
+identifiers:
+- winget: QuickzDev.iScribby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuickzDev/iScribby
+aliases: []

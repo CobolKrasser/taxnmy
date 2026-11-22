@@ -1,0 +1,11 @@
+key: uutils/diffutils
+publisher: uutils
+name: diffutils
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uutils/diffutils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uutils/diffutils
+identifiers:
+- winget: uutils.diffutils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uutils/diffutils
+aliases: []

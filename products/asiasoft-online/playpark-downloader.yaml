@@ -1,0 +1,11 @@
+key: asiasoft-online/playpark-downloader
+publisher: asiasoft-online
+name: Playpark Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AsiasoftOnline/PlayparkDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AsiasoftOnline/PlayparkDownloader
+identifiers:
+- winget: AsiasoftOnline.PlayparkDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AsiasoftOnline/PlayparkDownloader
+aliases: []

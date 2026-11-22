@@ -1,0 +1,11 @@
+key: netsdk-software-fze/rdpguard
+publisher: netsdk-software-fze
+name: RdpGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netsdk/RdpGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netsdk/RdpGuard
+identifiers:
+- winget: Netsdk.RdpGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netsdk/RdpGuard
+aliases: []

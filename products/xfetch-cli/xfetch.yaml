@@ -1,0 +1,11 @@
+key: xfetch-cli/xfetch
+publisher: xfetch-cli
+name: xfetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xfetch-cli/Xfetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xfetch-cli/Xfetch
+identifiers:
+- winget: Xfetch-cli.Xfetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xfetch-cli/Xfetch
+aliases: []

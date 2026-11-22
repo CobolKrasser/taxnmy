@@ -1,0 +1,11 @@
+key: jetbrains/ktor-cli
+publisher: jetbrains
+name: Ktor CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/KtorCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/KtorCLI
+identifiers:
+- winget: JetBrains.KtorCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JetBrains/KtorCLI
+aliases: []

@@ -1,0 +1,12 @@
+key: winstep/xtreme
+publisher: winstep
+name: Winstep Xtreme
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinStep/Xtreme
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinStep/Xtreme
+identifiers:
+- winget: WinStep.Xtreme
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinStep/Xtreme
+aliases:
+- winstep/winstep-xtreme

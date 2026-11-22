@@ -1,0 +1,11 @@
+key: tien-do-nam/localsend
+publisher: tien-do-nam
+name: LocalSend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend
+identifiers:
+- winget: LocalSend.LocalSend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend
+aliases: []

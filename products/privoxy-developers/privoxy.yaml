@@ -1,0 +1,11 @@
+key: privoxy-developers/privoxy
+publisher: privoxy-developers
+name: Privoxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Privoxy/Privoxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Privoxy/Privoxy
+identifiers:
+- winget: Privoxy.Privoxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Privoxy/Privoxy
+aliases: []

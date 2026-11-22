@@ -1,0 +1,11 @@
+key: xtls/xray-core
+publisher: xtls
+name: Xray-core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XTLS/Xray-core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XTLS/Xray-core
+identifiers:
+- winget: XTLS.Xray-core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XTLS/Xray-core
+aliases: []

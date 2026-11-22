@@ -1,0 +1,11 @@
+key: armagetron-advanced-team/armagetron-advanced
+publisher: armagetron-advanced-team
+name: Armagetron Advanced
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArmagetronAdvanced/ArmagetronAdvanced
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArmagetronAdvanced/ArmagetronAdvanced
+identifiers:
+- winget: ArmagetronAdvanced.ArmagetronAdvanced
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArmagetronAdvanced/ArmagetronAdvanced
+aliases: []

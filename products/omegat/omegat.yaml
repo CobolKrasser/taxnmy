@@ -1,0 +1,11 @@
+key: omegat/omegat
+publisher: omegat
+name: OmegaT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmegaT/OmegaT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmegaT/OmegaT
+identifiers:
+- winget: OmegaT.OmegaT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmegaT/OmegaT
+aliases: []

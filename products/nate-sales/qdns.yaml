@@ -1,0 +1,11 @@
+key: nate-sales/qdns
+publisher: nate-sales
+name: qdns
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/natesales/q
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/natesales/q
+identifiers:
+- winget: natesales.q
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/natesales/q
+aliases: []

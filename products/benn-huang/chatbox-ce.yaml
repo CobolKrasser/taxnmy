@@ -1,0 +1,11 @@
+key: benn-huang/chatbox-ce
+publisher: benn-huang
+name: Chatbox CE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bin-Huang/Chatbox/CommunityEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bin-Huang/Chatbox/CommunityEdition
+identifiers:
+- winget: Bin-Huang.Chatbox.CommunityEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bin-Huang/Chatbox/CommunityEdition
+aliases: []

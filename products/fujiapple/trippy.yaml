@@ -1,0 +1,11 @@
+key: fujiapple/trippy
+publisher: fujiapple
+name: Trippy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FujiApple/Trippy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FujiApple/Trippy
+identifiers:
+- winget: FujiApple.Trippy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FujiApple/Trippy
+aliases: []

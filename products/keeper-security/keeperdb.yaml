@@ -1,0 +1,11 @@
+key: keeper-security/keeperdb
+publisher: keeper-security
+name: KeeperDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/KeeperDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/KeeperDB
+identifiers:
+- winget: KeeperSecurity.KeeperDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeeperSecurity/KeeperDB
+aliases: []

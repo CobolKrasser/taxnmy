@@ -1,0 +1,12 @@
+key: vovsoft/filename-lister
+publisher: vovsoft
+name: Vovsoft Filename Lister
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FilenameLister
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FilenameLister
+identifiers:
+- winget: VovSoft.FilenameLister
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FilenameLister
+aliases:
+- vovsoft/vovsoft-filename-lister

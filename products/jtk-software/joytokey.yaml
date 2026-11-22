@@ -1,0 +1,11 @@
+key: jtk-software/joytokey
+publisher: jtk-software
+name: JoyToKey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTKsoftware/JoyToKey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTKsoftware/JoyToKey
+identifiers:
+- winget: JTKsoftware.JoyToKey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTKsoftware/JoyToKey
+aliases: []

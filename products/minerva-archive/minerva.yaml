@@ -1,0 +1,11 @@
+key: minerva-archive/minerva
+publisher: minerva-archive
+name: Minerva
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/minerva/worker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/minerva/worker
+identifiers:
+- winget: minerva.worker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/minerva/worker
+aliases: []

@@ -1,0 +1,11 @@
+key: esb-consultancy/esbfincalc-pro-trial
+publisher: esb-consultancy
+name: ESBFinCalc Pro TRIAL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBFinCalc/Pro/Trial
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBFinCalc/Pro/Trial
+identifiers:
+- winget: ESBConsultancy.ESBFinCalc.Pro.Trial
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBFinCalc/Pro/Trial
+aliases: []

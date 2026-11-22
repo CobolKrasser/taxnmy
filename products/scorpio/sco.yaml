@@ -1,0 +1,11 @@
+key: scorpio/sco
+publisher: scorpio
+name: sco
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scorpio/sco
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scorpio/sco
+identifiers:
+- winget: Scorpio.sco
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scorpio/sco
+aliases: []

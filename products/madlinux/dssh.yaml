@@ -1,0 +1,11 @@
+key: madlinux/dssh
+publisher: madlinux
+name: dssh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madLinux/dssh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madLinux/dssh
+identifiers:
+- winget: madLinux.dssh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/madLinux/dssh
+aliases: []

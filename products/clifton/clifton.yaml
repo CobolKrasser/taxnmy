@@ -1,0 +1,11 @@
+key: clifton/clifton
+publisher: clifton
+name: Clifton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clifton/clifton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clifton/clifton
+identifiers:
+- winget: clifton.clifton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clifton/clifton
+aliases: []

@@ -1,0 +1,11 @@
+key: cc-partner/cc-partner
+publisher: cc-partner
+name: cc-partner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmletgo/cc-partner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmletgo/cc-partner
+identifiers:
+- winget: mmletgo.cc-partner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mmletgo/cc-partner
+aliases: []

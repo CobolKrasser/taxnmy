@@ -1,0 +1,12 @@
+key: high-logic/fontcreator
+publisher: high-logic
+name: High-Logic FontCreator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/High-Logic/FontCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/High-Logic/FontCreator
+identifiers:
+- winget: High-Logic.FontCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/High-Logic/FontCreator
+aliases:
+- high-logic/high-logic-fontcreator

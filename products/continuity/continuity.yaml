@@ -1,0 +1,11 @@
+key: continuity/continuity
+publisher: continuity
+name: Continuity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Continuity/Continuity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Continuity/Continuity
+identifiers:
+- winget: Continuity.Continuity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Continuity/Continuity
+aliases: []

@@ -1,0 +1,11 @@
+key: upnote/upnote
+publisher: upnote
+name: UpNote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpNote/UpNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpNote/UpNote
+identifiers:
+- winget: UpNote.UpNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpNote/UpNote
+aliases: []

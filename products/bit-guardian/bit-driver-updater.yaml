@@ -1,0 +1,11 @@
+key: bit-guardian/bit-driver-updater
+publisher: bit-guardian
+name: Bit Driver Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitGuardian/BitDriverUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitGuardian/BitDriverUpdater
+identifiers:
+- winget: BitGuardian.BitDriverUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitGuardian/BitDriverUpdater
+aliases: []

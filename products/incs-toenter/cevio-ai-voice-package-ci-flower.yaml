@@ -1,0 +1,11 @@
+key: incs-toenter/cevio-ai-voice-package-ci-flower
+publisher: incs-toenter
+name: CeVIO AI Voice Package - Ci flower
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Ci/Flower
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Ci/Flower
+identifiers:
+- winget: Ci.Flower
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Ci/Flower
+aliases: []

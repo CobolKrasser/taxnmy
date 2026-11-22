@@ -1,0 +1,11 @@
+key: agentty/agentty
+publisher: agentty
+name: agentty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentty/agentty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentty/agentty
+identifiers:
+- winget: agentty.agentty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentty/agentty
+aliases: []

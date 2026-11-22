@@ -1,0 +1,11 @@
+key: hedge-ops-software/people-work
+publisher: hedge-ops-software
+name: People Work
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeopleWork/PeopleWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeopleWork/PeopleWork
+identifiers:
+- winget: PeopleWork.PeopleWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeopleWork/PeopleWork
+aliases: []

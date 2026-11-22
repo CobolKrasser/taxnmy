@@ -1,0 +1,12 @@
+key: msi/gaming-intelligence
+publisher: msi
+name: MSI Gaming Intelligence
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/GamingIntelligence
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/GamingIntelligence
+identifiers:
+- winget: MSI.GamingIntelligence
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/GamingIntelligence
+aliases:
+- msi/msi-gaming-intelligence

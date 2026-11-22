@@ -1,0 +1,12 @@
+key: ringcentral/app-vdi-plugin
+publisher: ringcentral
+name: RingCentral App VDI Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralVDIUniversalPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralVDIUniversalPlugin
+identifiers:
+- winget: RingCentral.RingCentralVDIUniversalPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RingCentral/RingCentralVDIUniversalPlugin
+aliases:
+- ringcentral/ringcentral-app-vdi-plugin

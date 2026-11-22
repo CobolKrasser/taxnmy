@@ -1,0 +1,11 @@
+key: smartbear-software/readyapi
+publisher: smartbear-software
+name: ReadyAPI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/ReadyAPI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/ReadyAPI
+identifiers:
+- winget: SmartBear.ReadyAPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/ReadyAPI
+aliases: []

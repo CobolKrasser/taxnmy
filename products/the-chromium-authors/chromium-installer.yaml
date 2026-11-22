@@ -1,0 +1,15 @@
+key: the-chromium-authors/chromium-installer
+publisher: the-chromium-authors
+name: Chromium Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX
+identifiers:
+- winget: RobRich999.Chromium_Clang.AVX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX
+- winget: RobRich999.Chromium_Clang.AVX2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX2
+- winget: RobRich999.Chromium_Clang.AVX512
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX512
+aliases: []

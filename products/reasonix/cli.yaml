@@ -1,0 +1,12 @@
+key: reasonix/cli
+publisher: reasonix
+name: Reasonix CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESEngine/ReasonixCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESEngine/ReasonixCLI
+identifiers:
+- winget: ESEngine.ReasonixCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESEngine/ReasonixCLI
+aliases:
+- reasonix/reasonix-cli

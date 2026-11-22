@@ -1,0 +1,11 @@
+key: scott-hanselman/peekdesktop
+publisher: scott-hanselman
+name: PeekDesktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanselman/PeekDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanselman/PeekDesktop
+identifiers:
+- winget: Hanselman.PeekDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hanselman/PeekDesktop
+aliases: []

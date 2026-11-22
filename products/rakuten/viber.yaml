@@ -1,0 +1,11 @@
+key: rakuten/viber
+publisher: rakuten
+name: Viber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakuten/Viber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakuten/Viber
+identifiers:
+- winget: Rakuten.Viber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakuten/Viber
+aliases: []

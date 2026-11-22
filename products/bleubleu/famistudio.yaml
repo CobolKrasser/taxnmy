@@ -1,0 +1,11 @@
+key: bleubleu/famistudio
+publisher: bleubleu
+name: FamiStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BleuBleu/FamiStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BleuBleu/FamiStudio
+identifiers:
+- winget: BleuBleu.FamiStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BleuBleu/FamiStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: demerzel-solutions/nethermind
+publisher: demerzel-solutions
+name: Nethermind
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethermind/Nethermind
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethermind/Nethermind
+identifiers:
+- winget: Nethermind.Nethermind
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethermind/Nethermind
+aliases: []

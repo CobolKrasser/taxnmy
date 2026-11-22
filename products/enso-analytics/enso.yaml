@@ -1,0 +1,11 @@
+key: enso-analytics/enso
+publisher: enso-analytics
+name: Enso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnsoAnalytics/Enso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnsoAnalytics/Enso
+identifiers:
+- winget: EnsoAnalytics.Enso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnsoAnalytics/Enso
+aliases: []

@@ -1,0 +1,11 @@
+key: the-tinygo-authors/tinygo
+publisher: the-tinygo-authors
+name: TinyGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tinygo-org/tinygo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tinygo-org/tinygo
+identifiers:
+- winget: tinygo-org.tinygo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tinygo-org/tinygo
+aliases: []

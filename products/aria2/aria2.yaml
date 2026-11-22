@@ -1,0 +1,11 @@
+key: aria2/aria2
+publisher: aria2
+name: aria2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aria2/aria2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aria2/aria2
+identifiers:
+- winget: aria2.aria2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aria2/aria2
+aliases: []

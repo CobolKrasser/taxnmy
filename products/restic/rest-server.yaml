@@ -1,0 +1,12 @@
+key: restic/rest-server
+publisher: restic
+name: Restic REST Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/restic/server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/restic/server
+identifiers:
+- winget: restic.server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/restic/server
+aliases:
+- restic/restic-rest-server

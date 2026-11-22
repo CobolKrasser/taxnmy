@@ -1,0 +1,12 @@
+key: getscreen/me-dashboard
+publisher: getscreen
+name: Getscreen.me Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Getscreenme/Dashboard/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Getscreenme/Dashboard/Beta
+identifiers:
+- winget: Getscreenme.Dashboard.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Getscreenme/Dashboard/Beta
+aliases:
+- getscreen/getscreen-me-dashboard

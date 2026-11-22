@@ -1,0 +1,12 @@
+key: vovsoft/convert-video-to-audio
+publisher: vovsoft
+name: Vovsoft Convert Video to Audio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ConvertVideoToAudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ConvertVideoToAudio
+identifiers:
+- winget: VovSoft.ConvertVideoToAudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ConvertVideoToAudio
+aliases:
+- vovsoft/vovsoft-convert-video-to-audio

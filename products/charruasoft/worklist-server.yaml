@@ -1,0 +1,12 @@
+key: charruasoft/worklist-server
+publisher: charruasoft
+name: CharruaSoft Worklist Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/CharruaWorklistServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/CharruaWorklistServer
+identifiers:
+- winget: CharruaSoft.CharruaWorklistServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/CharruaWorklistServer
+aliases:
+- charruasoft/charruasoft-worklist-server

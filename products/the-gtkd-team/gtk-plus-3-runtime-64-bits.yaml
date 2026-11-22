@@ -1,0 +1,11 @@
+key: the-gtkd-team/gtk-plus-3-runtime-64-bits
+publisher: the-gtkd-team
+name: Gtk+ 3 Runtime (64 bits)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GtkD/GtkPlusRuntime/x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GtkD/GtkPlusRuntime/x64
+identifiers:
+- winget: GtkD.GtkPlusRuntime.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GtkD/GtkPlusRuntime/x64
+aliases: []

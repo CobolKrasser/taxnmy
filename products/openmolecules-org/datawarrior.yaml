@@ -1,0 +1,11 @@
+key: openmolecules-org/datawarrior
+publisher: openmolecules-org
+name: DataWarrior
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openmolecules/DataWarrior
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openmolecules/DataWarrior
+identifiers:
+- winget: openmolecules.DataWarrior
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openmolecules/DataWarrior
+aliases: []

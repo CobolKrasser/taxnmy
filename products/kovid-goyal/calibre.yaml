@@ -1,0 +1,11 @@
+key: kovid-goyal/calibre
+publisher: kovid-goyal
+name: calibre
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre
+identifiers:
+- winget: calibre.calibre
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre
+aliases: []

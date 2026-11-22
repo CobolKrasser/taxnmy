@@ -1,0 +1,11 @@
+key: openclaw/oc-claw
+publisher: openclaw
+name: oc-claw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rainnoon/OC-Claw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rainnoon/OC-Claw
+identifiers:
+- winget: rainnoon.OC-Claw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rainnoon/OC-Claw
+aliases: []

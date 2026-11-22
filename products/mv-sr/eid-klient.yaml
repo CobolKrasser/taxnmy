@@ -1,0 +1,11 @@
+key: mv-sr/eid-klient
+publisher: mv-sr
+name: eID Klient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlovakGovernment/eIDKlient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlovakGovernment/eIDKlient
+identifiers:
+- winget: SlovakGovernment.eIDKlient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlovakGovernment/eIDKlient
+aliases: []

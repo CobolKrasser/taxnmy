@@ -1,0 +1,11 @@
+key: tweaking4all-com/miniwol
+publisher: tweaking4all-com
+name: miniWOL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking4All/MiniWOL2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking4All/MiniWOL2
+identifiers:
+- winget: Tweaking4All.MiniWOL2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking4All/MiniWOL2
+aliases: []

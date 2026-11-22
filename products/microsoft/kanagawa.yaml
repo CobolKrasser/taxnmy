@@ -1,0 +1,11 @@
+key: microsoft/kanagawa
+publisher: microsoft
+name: Kanagawa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Kanagawa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Kanagawa
+identifiers:
+- winget: Microsoft.Kanagawa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Kanagawa
+aliases: []

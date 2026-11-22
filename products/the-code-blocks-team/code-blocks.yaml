@@ -1,0 +1,11 @@
+key: the-code-blocks-team/code-blocks
+publisher: the-code-blocks-team
+name: Code::Blocks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBlocks/CodeBlocks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBlocks/CodeBlocks
+identifiers:
+- winget: CodeBlocks.CodeBlocks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBlocks/CodeBlocks
+aliases: []

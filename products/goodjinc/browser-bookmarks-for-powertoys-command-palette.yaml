@@ -1,0 +1,11 @@
+key: goodjinc/browser-bookmarks-for-powertoys-command-palette
+publisher: goodjinc
+name: Browser Bookmarks for PowerToys Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOODJINC/CmdPalBrowserBookmarks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOODJINC/CmdPalBrowserBookmarks
+identifiers:
+- winget: GOODJINC.CmdPalBrowserBookmarks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GOODJINC/CmdPalBrowserBookmarks
+aliases: []

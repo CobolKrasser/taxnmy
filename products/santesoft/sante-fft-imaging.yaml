@@ -1,0 +1,11 @@
+key: santesoft/sante-fft-imaging
+publisher: santesoft
+name: Sante FFT Imaging
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteFftImaging
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteFftImaging
+identifiers:
+- winget: Santesoft.SanteFftImaging
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteFftImaging
+aliases: []

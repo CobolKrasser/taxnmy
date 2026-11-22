@@ -1,0 +1,11 @@
+key: redisant/rabbitmq-assistant
+publisher: redisant
+name: RabbitMQ Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RabbitMQAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RabbitMQAssistant
+identifiers:
+- winget: Redisant.RabbitMQAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RabbitMQAssistant
+aliases: []

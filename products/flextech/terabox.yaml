@@ -1,0 +1,11 @@
+key: flextech/terabox
+publisher: flextech
+name: TeraBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/TeraBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/TeraBox
+identifiers:
+- winget: Baidu.TeraBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/TeraBox
+aliases: []

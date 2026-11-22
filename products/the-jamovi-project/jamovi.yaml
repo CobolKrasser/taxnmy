@@ -1,0 +1,13 @@
+key: the-jamovi-project/jamovi
+publisher: the-jamovi-project
+name: jamovi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Solid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Solid
+identifiers:
+- winget: Jamovi.Desktop.Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Legacy
+- winget: Jamovi.Desktop.Solid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Solid
+aliases: []

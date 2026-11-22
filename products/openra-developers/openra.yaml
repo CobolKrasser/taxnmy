@@ -1,0 +1,13 @@
+key: openra-developers/openra
+publisher: openra-developers
+name: OpenRA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRA/OpenRA/Release
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRA/OpenRA/Release
+identifiers:
+- winget: OpenRA.OpenRA.Playtest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRA/OpenRA/Playtest
+- winget: OpenRA.OpenRA.Release
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRA/OpenRA/Release
+aliases: []

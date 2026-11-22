@@ -1,0 +1,11 @@
+key: banbuds/v-s-whitty-full-week
+publisher: banbuds
+name: V.S. Whitty Full Week
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Banbuds/VsWhitty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Banbuds/VsWhitty
+identifiers:
+- winget: Banbuds.VsWhitty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Banbuds/VsWhitty
+aliases: []

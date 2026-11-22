@@ -1,0 +1,11 @@
+key: j5create/j5-usb-display-adapter
+publisher: j5create
+name: j5 USB DISPLAY ADAPTER
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/j5create/Driver-JUA365
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/j5create/Driver-JUA365
+identifiers:
+- winget: j5create.Driver-JUA365
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/j5create/Driver-JUA365
+aliases: []

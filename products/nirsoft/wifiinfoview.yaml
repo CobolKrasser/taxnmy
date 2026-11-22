@@ -1,0 +1,11 @@
+key: nirsoft/wifiinfoview
+publisher: nirsoft
+name: WifiInfoView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WifiInfoView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WifiInfoView
+identifiers:
+- winget: NirSoft.WifiInfoView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WifiInfoView
+aliases: []

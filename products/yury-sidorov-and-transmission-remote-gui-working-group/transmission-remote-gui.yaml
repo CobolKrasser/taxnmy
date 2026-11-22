@@ -1,0 +1,11 @@
+key: yury-sidorov-and-transmission-remote-gui-working-group/transmission-remote-gui
+publisher: yury-sidorov-and-transmission-remote-gui-working-group
+name: Transmission Remote GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterDaveHello/TransmissionRemoteGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterDaveHello/TransmissionRemoteGUI
+identifiers:
+- winget: PeterDaveHello.TransmissionRemoteGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PeterDaveHello/TransmissionRemoteGUI
+aliases: []

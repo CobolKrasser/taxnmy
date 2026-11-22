@@ -1,0 +1,11 @@
+key: mail-ru/icq-new
+publisher: mail-ru
+name: ICQ New
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailRu/ICQNew
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailRu/ICQNew
+identifiers:
+- winget: MailRu.ICQNew
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailRu/ICQNew
+aliases: []

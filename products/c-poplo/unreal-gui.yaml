@@ -1,0 +1,11 @@
+key: c-poplo/unreal-gui
+publisher: c-poplo
+name: Unreal-GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/C-POPLO/Unreal-GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/C-POPLO/Unreal-GUI
+identifiers:
+- winget: C-POPLO.Unreal-GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/C-POPLO/Unreal-GUI
+aliases: []

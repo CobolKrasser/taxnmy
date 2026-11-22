@@ -1,0 +1,11 @@
+key: webcatalog/switchbar
+publisher: webcatalog
+name: Switchbar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/Switchbar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/Switchbar
+identifiers:
+- winget: WebCatalogLtd.Switchbar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/Switchbar
+aliases: []

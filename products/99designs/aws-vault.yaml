@@ -1,0 +1,11 @@
+key: 99designs/aws-vault
+publisher: 99designs
+name: aws-vault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/99designs/aws-vault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/99designs/aws-vault
+identifiers:
+- winget: 99designs.aws-vault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/99designs/aws-vault
+aliases: []

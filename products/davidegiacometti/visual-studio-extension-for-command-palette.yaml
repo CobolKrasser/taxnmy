@@ -1,0 +1,11 @@
+key: davidegiacometti/visual-studio-extension-for-command-palette
+publisher: davidegiacometti
+name: Visual Studio Extension for Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/davidegiacometti/VisualStudioForCmdPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/davidegiacometti/VisualStudioForCmdPal
+identifiers:
+- winget: davidegiacometti.VisualStudioForCmdPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/davidegiacometti/VisualStudioForCmdPal
+aliases: []

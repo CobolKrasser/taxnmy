@@ -1,0 +1,13 @@
+key: jelle-glebbeek/open-video-downloader
+publisher: jelle-glebbeek
+name: Open Video Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jely2002/youtube-dl-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jely2002/youtube-dl-gui
+identifiers:
+- winget: StefanLobbenmeier.youtube-dl-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefanLobbenmeier/youtube-dl-gui
+- winget: jely2002.youtube-dl-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jely2002/youtube-dl-gui
+aliases: []

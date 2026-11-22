@@ -1,0 +1,11 @@
+key: sinclair-community-college/make-me-admin
+publisher: sinclair-community-college
+name: Make Me Admin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pseymour/MakeMeAdmin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pseymour/MakeMeAdmin
+identifiers:
+- winget: pseymour.MakeMeAdmin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pseymour/MakeMeAdmin
+aliases: []

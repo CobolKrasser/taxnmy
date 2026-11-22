@@ -1,0 +1,11 @@
+key: riot-games/valorant-korea-server
+publisher: riot-games
+name: VALORANT (Korea server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/KR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/KR
+identifiers:
+- winget: RiotGames.Valorant.KR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/KR
+aliases: []

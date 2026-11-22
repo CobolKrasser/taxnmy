@@ -1,0 +1,11 @@
+key: michael-m-builov/sed
+publisher: michael-m-builov
+name: sed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mbuilov/sed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mbuilov/sed
+identifiers:
+- winget: mbuilov.sed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mbuilov/sed
+aliases: []

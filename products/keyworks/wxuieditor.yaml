@@ -1,0 +1,11 @@
+key: keyworks/wxuieditor
+publisher: keyworks
+name: wxUiEditor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyWorks/wxUiEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyWorks/wxUiEditor
+identifiers:
+- winget: KeyWorks.wxUiEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyWorks/wxUiEditor
+aliases: []

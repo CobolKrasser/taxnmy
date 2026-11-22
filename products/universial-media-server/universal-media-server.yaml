@@ -1,0 +1,11 @@
+key: universial-media-server/universal-media-server
+publisher: universial-media-server
+name: Universal Media Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalMediaServer/UniversalMediaServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalMediaServer/UniversalMediaServer
+identifiers:
+- winget: UniversalMediaServer.UniversalMediaServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalMediaServer/UniversalMediaServer
+aliases: []

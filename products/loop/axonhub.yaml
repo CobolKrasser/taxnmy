@@ -1,0 +1,11 @@
+key: loop/axonhub
+publisher: loop
+name: AxonHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/looplj/AxonHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/looplj/AxonHub
+identifiers:
+- winget: looplj.AxonHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/looplj/AxonHub
+aliases: []

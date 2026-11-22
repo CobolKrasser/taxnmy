@@ -1,0 +1,12 @@
+key: vovsoft/ip-scanner
+publisher: vovsoft
+name: Vovsoft IP Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/IPScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/IPScanner
+identifiers:
+- winget: VovSoft.IPScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/IPScanner
+aliases:
+- vovsoft/vovsoft-ip-scanner

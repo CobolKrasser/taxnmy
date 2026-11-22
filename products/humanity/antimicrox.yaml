@@ -1,0 +1,13 @@
+key: humanity/antimicrox
+publisher: humanity
+name: AntiMicroX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicroX/antimicrox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicroX/antimicrox
+identifiers:
+- winget: AntiMicroX.antimicrox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicroX/antimicrox
+- winget: AntiMicroX.antimicroxPortable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntiMicroX/antimicroxPortable
+aliases: []

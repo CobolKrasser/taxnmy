@@ -1,0 +1,11 @@
+key: torsten-mahr/mdviewer-plus-for-windows
+publisher: torsten-mahr
+name: MDViewer+ for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trsdn/MDViewerPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trsdn/MDViewerPlus
+identifiers:
+- winget: Trsdn.MDViewerPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trsdn/MDViewerPlus
+aliases: []

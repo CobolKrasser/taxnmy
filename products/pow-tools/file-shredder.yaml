@@ -1,0 +1,11 @@
+key: pow-tools/file-shredder
+publisher: pow-tools
+name: File Shredder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowTools/FileShredder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowTools/FileShredder
+identifiers:
+- winget: PowTools.FileShredder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowTools/FileShredder
+aliases: []

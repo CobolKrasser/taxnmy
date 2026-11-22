@@ -1,0 +1,11 @@
+key: nice-software/nice-dcv-session-manager-agent
+publisher: nice-software
+name: NICE DCV Session Manager Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NICESoftware/AmazonDCVSessionManagerAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NICESoftware/AmazonDCVSessionManagerAgent
+identifiers:
+- winget: NICESoftware.AmazonDCVSessionManagerAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NICESoftware/AmazonDCVSessionManagerAgent
+aliases: []

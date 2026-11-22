@@ -1,0 +1,11 @@
+key: webrecorder-software/replayweb-page
+publisher: webrecorder-software
+name: ReplayWeb.page
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/webrecorder/replayweb-page
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/webrecorder/replayweb-page
+identifiers:
+- winget: webrecorder.replayweb-page
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/webrecorder/replayweb-page
+aliases: []

@@ -1,0 +1,11 @@
+key: tandem-communications/tandem
+publisher: tandem-communications
+name: Tandem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tandem/Tandem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tandem/Tandem
+identifiers:
+- winget: Tandem.Tandem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tandem/Tandem
+aliases: []

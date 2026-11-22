@@ -1,0 +1,11 @@
+key: ringcentral/avaya-cloud-office-for-teams-desktop-plugin
+publisher: ringcentral
+name: Avaya Cloud Office for Teams Desktop Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/CloudOfficeForTeamsDesktopPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/CloudOfficeForTeamsDesktopPlugin
+identifiers:
+- winget: Avaya.CloudOfficeForTeamsDesktopPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/CloudOfficeForTeamsDesktopPlugin
+aliases: []

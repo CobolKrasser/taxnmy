@@ -1,0 +1,12 @@
+key: vonage/business
+publisher: vonage
+name: Vonage Business
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vonage/VonageBusiness
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vonage/VonageBusiness
+identifiers:
+- winget: Vonage.VonageBusiness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vonage/VonageBusiness
+aliases:
+- vonage/vonage-business

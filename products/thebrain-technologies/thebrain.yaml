@@ -1,0 +1,11 @@
+key: thebrain-technologies/thebrain
+publisher: thebrain-technologies
+name: TheBrain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBrain/TheBrain
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBrain/TheBrain
+identifiers:
+- winget: TheBrain.TheBrain
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBrain/TheBrain
+aliases: []

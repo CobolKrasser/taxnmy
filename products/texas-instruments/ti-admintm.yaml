@@ -1,0 +1,11 @@
+key: texas-instruments/ti-admintm
+publisher: texas-instruments
+name: TI-Admin™
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Admin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Admin
+identifiers:
+- winget: TexasInstruments.TI-Admin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TexasInstruments/TI-Admin
+aliases: []

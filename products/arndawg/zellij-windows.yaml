@@ -1,0 +1,11 @@
+key: arndawg/zellij-windows
+publisher: arndawg
+name: zellij-windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arndawg/zellij-windows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arndawg/zellij-windows
+identifiers:
+- winget: arndawg.zellij-windows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/arndawg/zellij-windows
+aliases: []

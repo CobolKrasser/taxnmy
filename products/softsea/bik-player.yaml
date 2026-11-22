@@ -1,0 +1,11 @@
+key: softsea/bik-player
+publisher: softsea
+name: BIK Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/BIKPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/BIKPlayer
+identifiers:
+- winget: SoftSea.BIKPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/BIKPlayer
+aliases: []

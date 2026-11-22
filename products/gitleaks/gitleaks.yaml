@@ -1,0 +1,11 @@
+key: gitleaks/gitleaks
+publisher: gitleaks
+name: Gitleaks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitleaks/Gitleaks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitleaks/Gitleaks
+identifiers:
+- winget: Gitleaks.Gitleaks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitleaks/Gitleaks
+aliases: []

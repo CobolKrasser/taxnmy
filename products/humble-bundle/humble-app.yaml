@@ -1,0 +1,11 @@
+key: humble-bundle/humble-app
+publisher: humble-bundle
+name: Humble App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HumbleBundle/HumbleApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HumbleBundle/HumbleApp
+identifiers:
+- winget: HumbleBundle.HumbleApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HumbleBundle/HumbleApp
+aliases: []

@@ -1,0 +1,11 @@
+key: xk72/charles-proxy
+publisher: xk72
+name: Charles Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XK72/Charles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XK72/Charles
+identifiers:
+- winget: XK72.Charles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XK72/Charles
+aliases: []

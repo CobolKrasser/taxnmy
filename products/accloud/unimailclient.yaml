@@ -1,0 +1,11 @@
+key: accloud/unimailclient
+publisher: accloud
+name: UnimailClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACCloud/UnimailClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACCloud/UnimailClient
+identifiers:
+- winget: ACCloud.UnimailClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACCloud/UnimailClient
+aliases: []

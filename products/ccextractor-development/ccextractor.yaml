@@ -1,0 +1,11 @@
+key: ccextractor-development/ccextractor
+publisher: ccextractor-development
+name: CCExtractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCExtractor/CCExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCExtractor/CCExtractor
+identifiers:
+- winget: CCExtractor.CCExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCExtractor/CCExtractor
+aliases: []

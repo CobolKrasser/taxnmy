@@ -1,0 +1,12 @@
+key: lenovo/update-retriever
+publisher: lenovo
+name: Lenovo Update Retriever
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/UpdateRetriever
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/UpdateRetriever
+identifiers:
+- winget: Lenovo.UpdateRetriever
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/UpdateRetriever
+aliases:
+- lenovo/lenovo-update-retriever

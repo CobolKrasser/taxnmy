@@ -1,0 +1,11 @@
+key: linsmod/proxied
+publisher: linsmod
+name: proxied
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/linsmod/proxied
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/linsmod/proxied
+identifiers:
+- winget: linsmod.proxied
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/linsmod/proxied
+aliases: []

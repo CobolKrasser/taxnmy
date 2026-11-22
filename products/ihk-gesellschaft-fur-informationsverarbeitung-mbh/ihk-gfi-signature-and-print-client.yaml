@@ -1,0 +1,11 @@
+key: ihk-gesellschaft-fur-informationsverarbeitung-mbh/ihk-gfi-signature-and-print-client
+publisher: ihk-gesellschaft-fur-informationsverarbeitung-mbh
+name: IHK-GfI signature and print client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IHK/SignaturePrintClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IHK/SignaturePrintClient
+identifiers:
+- winget: IHK.SignaturePrintClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IHK/SignaturePrintClient
+aliases: []

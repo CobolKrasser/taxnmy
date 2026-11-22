@@ -1,0 +1,11 @@
+key: xin-yue/dev-flow
+publisher: xin-yue
+name: dev-flow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xin_yue/DevFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xin_yue/DevFlow
+identifiers:
+- winget: xin_yue.DevFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xin_yue/DevFlow
+aliases: []

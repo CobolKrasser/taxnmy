@@ -1,0 +1,11 @@
+key: jonas-van-den-berg/music-presence
+publisher: jonas-van-den-berg
+name: Music Presence
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ungive/MusicPresence
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ungive/MusicPresence
+identifiers:
+- winget: ungive.MusicPresence
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/ungive/MusicPresence
+aliases: []

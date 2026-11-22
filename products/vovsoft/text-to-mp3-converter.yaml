@@ -1,0 +1,12 @@
+key: vovsoft/text-to-mp3-converter
+publisher: vovsoft
+name: Vovsoft Text to MP3 Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToMP3Converter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToMP3Converter
+identifiers:
+- winget: VovSoft.TextToMP3Converter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextToMP3Converter
+aliases:
+- vovsoft/vovsoft-text-to-mp3-converter

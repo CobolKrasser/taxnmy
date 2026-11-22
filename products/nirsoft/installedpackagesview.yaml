@@ -1,0 +1,11 @@
+key: nirsoft/installedpackagesview
+publisher: nirsoft
+name: InstalledPackagesView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InstalledPackagesView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InstalledPackagesView
+identifiers:
+- winget: NirSoft.InstalledPackagesView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/InstalledPackagesView
+aliases: []

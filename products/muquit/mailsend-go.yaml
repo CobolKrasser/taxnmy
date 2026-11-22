@@ -1,0 +1,11 @@
+key: muquit/mailsend-go
+publisher: muquit
+name: mailsend-go
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muquit/mailsend-go
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muquit/mailsend-go
+identifiers:
+- winget: muquit.mailsend-go
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muquit/mailsend-go
+aliases: []

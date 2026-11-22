@@ -1,0 +1,11 @@
+key: ccmesh/ccmesh
+publisher: ccmesh
+name: ccMesh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VkRainB/ccMesh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VkRainB/ccMesh
+identifiers:
+- winget: VkRainB.ccMesh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VkRainB/ccMesh
+aliases: []

@@ -1,0 +1,11 @@
+key: masaodev/quick-dash-launcher
+publisher: masaodev
+name: Quick Dash Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/masaodev/quick-dash-launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/masaodev/quick-dash-launcher
+identifiers:
+- winget: masaodev.quick-dash-launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/masaodev/quick-dash-launcher
+aliases: []

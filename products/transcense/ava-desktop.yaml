@@ -1,0 +1,11 @@
+key: transcense/ava-desktop
+publisher: transcense
+name: Ava Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvaCC/AvaDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvaCC/AvaDesktop
+identifiers:
+- winget: AvaCC.AvaDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AvaCC/AvaDesktop
+aliases: []

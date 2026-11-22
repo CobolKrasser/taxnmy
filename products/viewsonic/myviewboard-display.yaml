@@ -1,0 +1,11 @@
+key: viewsonic/myviewboard-display
+publisher: viewsonic
+name: myViewBoard Display
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/myViewBoard/Display
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/myViewBoard/Display
+identifiers:
+- winget: ViewSonic.myViewBoard.Display
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/myViewBoard/Display
+aliases: []

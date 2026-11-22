@@ -1,0 +1,11 @@
+key: ricardo-villalba/smplayer
+publisher: ricardo-villalba
+name: SMPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMPlayer/SMPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMPlayer/SMPlayer
+identifiers:
+- winget: SMPlayer.SMPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMPlayer/SMPlayer
+aliases: []

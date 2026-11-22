@@ -1,0 +1,11 @@
+key: newreleases/newreleases
+publisher: newreleases
+name: NewReleases
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewReleases/NewReleasesCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewReleases/NewReleasesCLI
+identifiers:
+- winget: NewReleases.NewReleasesCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewReleases/NewReleasesCLI
+aliases: []

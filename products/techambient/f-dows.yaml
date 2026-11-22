@@ -1,0 +1,11 @@
+key: techambient/f-dows
+publisher: techambient
+name: F-dows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techambient/Fdows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techambient/Fdows
+identifiers:
+- winget: Techambient.Fdows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techambient/Fdows
+aliases: []

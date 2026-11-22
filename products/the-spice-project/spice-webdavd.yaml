@@ -1,0 +1,11 @@
+key: the-spice-project/spice-webdavd
+publisher: the-spice-project
+name: Spice webdavd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spice/SpiceWebDAVd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spice/SpiceWebDAVd
+identifiers:
+- winget: Spice.SpiceWebDAVd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spice/SpiceWebDAVd
+aliases: []

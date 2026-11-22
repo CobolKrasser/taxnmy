@@ -1,0 +1,11 @@
+key: gaijin-network/war-thunder-launcher
+publisher: gaijin-network
+name: War Thunder Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/WarThunder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/WarThunder
+identifiers:
+- winget: GaijinNetwork.WarThunder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/WarThunder
+aliases: []

@@ -1,0 +1,11 @@
+key: openscad/openscad
+publisher: openscad
+name: OpenSCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSCAD/OpenSCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSCAD/OpenSCAD
+identifiers:
+- winget: OpenSCAD.OpenSCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSCAD/OpenSCAD
+aliases: []

@@ -1,0 +1,11 @@
+key: victor-aremu/switch
+publisher: victor-aremu
+name: Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahkohd/switch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahkohd/switch
+identifiers:
+- winget: ahkohd.switch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ahkohd/switch
+aliases: []

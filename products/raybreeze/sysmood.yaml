@@ -1,0 +1,11 @@
+key: raybreeze/sysmood
+publisher: raybreeze
+name: SysMood
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayBreeze/SysMood
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayBreeze/SysMood
+identifiers:
+- winget: RayBreeze.SysMood
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RayBreeze/SysMood
+aliases: []

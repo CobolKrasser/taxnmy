@@ -1,0 +1,11 @@
+key: mastersigner/master-signer-agent
+publisher: mastersigner
+name: Master Signer Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterSigner/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterSigner/Agent
+identifiers:
+- winget: MasterSigner.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasterSigner/Agent
+aliases: []

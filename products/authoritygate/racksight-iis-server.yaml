@@ -1,0 +1,11 @@
+key: authoritygate/racksight-iis-server
+publisher: authoritygate
+name: RackSight IIS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/RackSightIISServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/RackSightIISServer
+identifiers:
+- winget: AuthorityGate.RackSightIISServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/RackSightIISServer
+aliases: []

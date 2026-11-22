@@ -1,0 +1,11 @@
+key: fluxer-platform/fluxer-canary
+publisher: fluxer-platform
+name: Fluxer Canary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxer/Fluxer/Canary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxer/Fluxer/Canary
+identifiers:
+- winget: Fluxer.Fluxer.Canary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxer/Fluxer/Canary
+aliases: []

@@ -1,0 +1,11 @@
+key: goshkow/zapret-hub
+publisher: goshkow
+name: Zapret Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goshkow/ZapretHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goshkow/ZapretHub
+identifiers:
+- winget: goshkow.ZapretHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goshkow/ZapretHub
+aliases: []

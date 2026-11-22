@@ -1,0 +1,11 @@
+key: chris-davis/smartrename
+publisher: chris-davis
+name: SmartRename
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrdavis/smartrename
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrdavis/smartrename
+identifiers:
+- winget: chrdavis.smartrename
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chrdavis/smartrename
+aliases: []

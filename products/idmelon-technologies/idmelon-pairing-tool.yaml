@@ -1,0 +1,11 @@
+key: idmelon-technologies/idmelon-pairing-tool
+publisher: idmelon-technologies
+name: IDmelon Pairing Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDmelon/IDmelonPairingTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDmelon/IDmelonPairingTool
+identifiers:
+- winget: IDmelon.IDmelonPairingTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDmelon/IDmelonPairingTool
+aliases: []

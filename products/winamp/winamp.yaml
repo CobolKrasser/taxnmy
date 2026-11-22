@@ -1,0 +1,11 @@
+key: winamp/winamp
+publisher: winamp
+name: Winamp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Winamp/Winamp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Winamp/Winamp
+identifiers:
+- winget: Winamp.Winamp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Winamp/Winamp
+aliases: []

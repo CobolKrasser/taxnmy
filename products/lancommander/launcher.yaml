@@ -1,0 +1,12 @@
+key: lancommander/launcher
+publisher: lancommander
+name: LANCommander Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCommander/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCommander/Launcher
+identifiers:
+- winget: LANCommander.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCommander/Launcher
+aliases:
+- lancommander/lancommander-launcher

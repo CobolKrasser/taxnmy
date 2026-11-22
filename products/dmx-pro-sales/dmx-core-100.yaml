@@ -1,0 +1,11 @@
+key: dmx-pro-sales/dmx-core-100
+publisher: dmx-pro-sales
+name: DMX Core 100
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMXProSales/DMXCore100
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMXProSales/DMXCore100
+identifiers:
+- winget: DMXProSales.DMXCore100
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMXProSales/DMXCore100
+aliases: []

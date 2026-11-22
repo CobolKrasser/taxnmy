@@ -1,0 +1,12 @@
+key: auslogics/registry-cleaner
+publisher: auslogics
+name: Auslogics Registry Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/RegistryCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/RegistryCleaner
+identifiers:
+- winget: Auslogics.RegistryCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/RegistryCleaner
+aliases:
+- auslogics/auslogics-registry-cleaner

@@ -1,0 +1,11 @@
+key: codeby-se/rigstats
+publisher: codeby-se
+name: RIGStats
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codeby/RIGStats
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codeby/RIGStats
+identifiers:
+- winget: Codeby.RIGStats
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codeby/RIGStats
+aliases: []

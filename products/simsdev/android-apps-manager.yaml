@@ -1,0 +1,11 @@
+key: simsdev/android-apps-manager
+publisher: simsdev
+name: Android Apps Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SIMSDEV/AndroidAppsManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SIMSDEV/AndroidAppsManager
+identifiers:
+- winget: SIMSDEV.AndroidAppsManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SIMSDEV/AndroidAppsManager
+aliases: []

@@ -1,0 +1,11 @@
+key: red-hat/qemu-guest-agent
+publisher: red-hat
+name: QEMU guest agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMUGuestAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMUGuestAgent
+identifiers:
+- winget: SoftwareFreedomConservancy.QEMUGuestAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMUGuestAgent
+aliases: []

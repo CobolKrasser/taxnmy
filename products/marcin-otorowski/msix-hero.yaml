@@ -1,0 +1,11 @@
+key: marcin-otorowski/msix-hero
+publisher: marcin-otorowski
+name: MSIX Hero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcinOtorowski/MSIXHero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcinOtorowski/MSIXHero
+identifiers:
+- winget: MarcinOtorowski.MSIXHero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MarcinOtorowski/MSIXHero
+aliases: []

@@ -1,0 +1,11 @@
+key: wargaming-net/world-of-warships-modstation
+publisher: wargaming-net
+name: World of Warships ModStation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wargaming/WorldOfWarshipsModStation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wargaming/WorldOfWarshipsModStation
+identifiers:
+- winget: Wargaming.WorldOfWarshipsModStation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wargaming/WorldOfWarshipsModStation
+aliases: []

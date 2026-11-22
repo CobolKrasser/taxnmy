@@ -1,0 +1,11 @@
+key: smart-technologies/smart-education-software
+publisher: smart-technologies
+name: SMART Education Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTNotebook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTNotebook
+identifiers:
+- winget: SMARTTechnologies.SMARTNotebook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTNotebook
+aliases: []

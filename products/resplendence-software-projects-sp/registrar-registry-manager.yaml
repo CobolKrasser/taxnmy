@@ -1,0 +1,11 @@
+key: resplendence-software-projects-sp/registrar-registry-manager
+publisher: resplendence-software-projects-sp
+name: Registrar Registry Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/RegistrarRegistryManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/RegistrarRegistryManager
+identifiers:
+- winget: Resplendence.RegistrarRegistryManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/RegistrarRegistryManager
+aliases: []

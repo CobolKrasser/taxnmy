@@ -1,0 +1,11 @@
+key: flint-organisation/flintc
+publisher: flint-organisation
+name: flintc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Flintc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Flintc
+identifiers:
+- winget: Flint.Flintc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Flintc
+aliases: []

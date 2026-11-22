@@ -1,0 +1,11 @@
+key: rode-microphones/rodecaster-virtual-device-driver
+publisher: rode-microphones
+name: RØDECaster Virtual Device Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterVirtualDeviceDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterVirtualDeviceDriver
+identifiers:
+- winget: RODE.RODECasterVirtualDeviceDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RODE/RODECasterVirtualDeviceDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: nirsoft/tcplogview
+publisher: nirsoft
+name: TcpLogView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/TcpLogView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/TcpLogView
+identifiers:
+- winget: NirSoft.TcpLogView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/TcpLogView
+aliases: []

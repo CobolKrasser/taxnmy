@@ -1,0 +1,11 @@
+key: the-sz-development/spencer
+publisher: the-sz-development
+name: Spencer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Spencer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Spencer
+identifiers:
+- winget: the-sz.Spencer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Spencer
+aliases: []

@@ -1,0 +1,11 @@
+key: cosmic-predator/chibi-cli
+publisher: cosmic-predator
+name: Chibi CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmicPredator/Chibi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmicPredator/Chibi
+identifiers:
+- winget: CosmicPredator.Chibi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CosmicPredator/Chibi
+aliases: []

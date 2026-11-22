@@ -1,0 +1,11 @@
+key: flexense-computing-systems/disksorter
+publisher: flexense-computing-systems
+name: DiskSorter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskSorter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskSorter
+identifiers:
+- winget: Flexense.DiskSorter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskSorter
+aliases: []

@@ -1,0 +1,11 @@
+key: nv-access/nvda-rc
+publisher: nv-access
+name: NVDA RC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA/RC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA/RC
+identifiers:
+- winget: NVAccess.NVDA.RC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NVAccess/NVDA/RC
+aliases: []

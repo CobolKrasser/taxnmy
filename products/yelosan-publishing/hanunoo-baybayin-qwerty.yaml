@@ -1,0 +1,11 @@
+key: yelosan-publishing/hanunoo-baybayin-qwerty
+publisher: yelosan-publishing
+name: Hanunoo Baybayin (QWERTY)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yelosan/PH-UKL/HanoQRTY
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yelosan/PH-UKL/HanoQRTY
+identifiers:
+- winget: yelosan.PH-UKL.HanoQRTY
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yelosan/PH-UKL/HanoQRTY
+aliases: []

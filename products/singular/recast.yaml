@@ -1,0 +1,12 @@
+key: singular/recast
+publisher: singular
+name: Singular Recast
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Singular/Recast
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Singular/Recast
+identifiers:
+- winget: Singular.Recast
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Singular/Recast
+aliases:
+- singular/singular-recast

@@ -1,0 +1,11 @@
+key: bildungsportal/next-exam-student
+publisher: bildungsportal
+name: Next-Exam-Student
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bildungsportal/Next-Exam-Student
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bildungsportal/Next-Exam-Student
+identifiers:
+- winget: Bildungsportal.Next-Exam-Student
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bildungsportal/Next-Exam-Student
+aliases: []

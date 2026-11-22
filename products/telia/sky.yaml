@@ -1,0 +1,12 @@
+key: telia/sky
+publisher: telia
+name: Telia Sky
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telia/Norway/TeliaSky
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telia/Norway/TeliaSky
+identifiers:
+- winget: Telia.Norway.TeliaSky
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telia/Norway/TeliaSky
+aliases:
+- telia/telia-sky

@@ -1,0 +1,12 @@
+key: devolutions/gateway
+publisher: devolutions
+name: Devolutions Gateway
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Gateway
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Gateway
+identifiers:
+- winget: Devolutions.Gateway
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Gateway
+aliases:
+- devolutions/devolutions-gateway

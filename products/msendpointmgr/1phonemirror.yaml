@@ -1,0 +1,11 @@
+key: msendpointmgr/1phonemirror
+publisher: msendpointmgr
+name: 1PhoneMirror
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSEndpointMgr/1PhoneMirror
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSEndpointMgr/1PhoneMirror
+identifiers:
+- winget: MSEndpointMgr.1PhoneMirror
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSEndpointMgr/1PhoneMirror
+aliases: []

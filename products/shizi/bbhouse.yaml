@@ -1,0 +1,11 @@
+key: shizi/bbhouse
+publisher: shizi
+name: BBHouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/endcloud/BBHouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/endcloud/BBHouse
+identifiers:
+- winget: endcloud.BBHouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/endcloud/BBHouse
+aliases: []

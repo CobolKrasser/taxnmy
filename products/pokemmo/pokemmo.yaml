@@ -1,0 +1,11 @@
+key: pokemmo/pokemmo
+publisher: pokemmo
+name: PokeMMO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PokeMMO/PokeMMO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PokeMMO/PokeMMO
+identifiers:
+- winget: PokeMMO.PokeMMO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PokeMMO/PokeMMO
+aliases: []

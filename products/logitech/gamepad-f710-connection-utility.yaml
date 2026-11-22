@@ -1,0 +1,12 @@
+key: logitech/gamepad-f710-connection-utility
+publisher: logitech
+name: Logitech Gamepad F710 Connection Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/F710ConnectUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/F710ConnectUtility
+identifiers:
+- winget: Logitech.F710ConnectUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/F710ConnectUtility
+aliases:
+- logitech/logitech-gamepad-f710-connection-utility

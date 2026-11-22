@@ -1,0 +1,11 @@
+key: liquit-software/liquit-workspace-agent
+publisher: liquit-software
+name: Liquit Workspace Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquit/Workspace/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquit/Workspace/Agent
+identifiers:
+- winget: Liquit.Workspace.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquit/Workspace/Agent
+aliases: []

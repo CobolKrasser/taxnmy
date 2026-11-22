@@ -1,0 +1,11 @@
+key: softsea/isodisk
+publisher: softsea
+name: ISODisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISODisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISODisk
+identifiers:
+- winget: SoftSea.ISODisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISODisk
+aliases: []

@@ -1,0 +1,11 @@
+key: recly/recly
+publisher: recly
+name: Recly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recly/Recly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recly/Recly
+identifiers:
+- winget: Recly.Recly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Recly/Recly
+aliases: []

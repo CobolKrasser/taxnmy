@@ -1,0 +1,14 @@
+key: vovsoft/image-to-pdf-converter
+publisher: vovsoft
+name: Vovsoft Image to PDF Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImageToPDFConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImageToPDFConverter
+identifiers:
+- winget: VovSoft.ImageToPDFConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImageToPDFConverter
+- winget: VovSoft.PDFtoImageConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PDFtoImageConverter
+aliases:
+- vovsoft/vovsoft-image-to-pdf-converter

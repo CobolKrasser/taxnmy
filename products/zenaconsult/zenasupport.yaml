@@ -1,0 +1,11 @@
+key: zenaconsult/zenasupport
+publisher: zenaconsult
+name: ZenaSupport
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zenaconsult/zenasupport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zenaconsult/zenasupport
+identifiers:
+- winget: zenaconsult.zenasupport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zenaconsult/zenasupport
+aliases: []

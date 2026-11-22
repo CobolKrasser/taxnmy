@@ -1,0 +1,11 @@
+key: arnstein-skara/app-center
+publisher: arnstein-skara
+name: App Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArnsteinSkara/AppCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArnsteinSkara/AppCenter
+identifiers:
+- winget: ArnsteinSkara.AppCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArnsteinSkara/AppCenter
+aliases: []

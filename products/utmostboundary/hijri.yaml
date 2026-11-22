@@ -1,0 +1,11 @@
+key: utmostboundary/hijri
+publisher: utmostboundary
+name: hijri
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UtmostBoundary/hijri
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UtmostBoundary/hijri
+identifiers:
+- winget: UtmostBoundary.hijri
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UtmostBoundary/hijri
+aliases: []

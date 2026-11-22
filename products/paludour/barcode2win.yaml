@@ -1,0 +1,11 @@
+key: paludour/barcode2win
+publisher: paludour
+name: Barcode2Win
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paludour/Barcode2Win
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paludour/Barcode2Win
+identifiers:
+- winget: Paludour.Barcode2Win
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paludour/Barcode2Win
+aliases: []

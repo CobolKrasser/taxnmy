@@ -1,0 +1,12 @@
+key: vovsoft/world-heatmap-creator
+publisher: vovsoft
+name: Vovsoft World Heatmap Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WorldHeatmapCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WorldHeatmapCreator
+identifiers:
+- winget: VovSoft.WorldHeatmapCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WorldHeatmapCreator
+aliases:
+- vovsoft/vovsoft-world-heatmap-creator

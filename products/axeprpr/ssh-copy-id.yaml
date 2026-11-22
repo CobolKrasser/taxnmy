@@ -1,0 +1,11 @@
+key: axeprpr/ssh-copy-id
+publisher: axeprpr
+name: SSH Copy ID
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axeprpr/SSHCopyID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axeprpr/SSHCopyID
+identifiers:
+- winget: axeprpr.SSHCopyID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/axeprpr/SSHCopyID
+aliases: []

@@ -1,0 +1,11 @@
+key: binarybananallc/whipdesk
+publisher: binarybananallc
+name: WhipDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryBanana/WhipDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryBanana/WhipDesk
+identifiers:
+- winget: BinaryBanana.WhipDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryBanana/WhipDesk
+aliases: []

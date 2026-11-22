@@ -1,0 +1,11 @@
+key: globalrelay/global-relay
+publisher: globalrelay
+name: Global Relay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalRelay/GlobalRelay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalRelay/GlobalRelay
+identifiers:
+- winget: GlobalRelay.GlobalRelay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalRelay/GlobalRelay
+aliases: []

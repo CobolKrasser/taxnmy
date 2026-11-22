@@ -1,0 +1,11 @@
+key: softsea/rar-file-extractor
+publisher: softsea
+name: RAR File Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/RARFileExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/RARFileExtractor
+identifiers:
+- winget: SoftSea.RARFileExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/RARFileExtractor
+aliases: []

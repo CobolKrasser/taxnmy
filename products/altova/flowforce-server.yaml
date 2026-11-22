@@ -1,0 +1,14 @@
+key: altova/flowforce-server
+publisher: altova
+name: Altova FlowForce Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/FlowForceServer/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/FlowForceServer/2025
+identifiers:
+- winget: Altova.FlowForceServer.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/FlowForceServer/2025
+- winget: Altova.FlowForceServer.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/FlowForceServer/2026
+aliases:
+- altova/altova-flowforce-server

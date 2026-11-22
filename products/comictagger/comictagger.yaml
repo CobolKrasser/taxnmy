@@ -1,0 +1,11 @@
+key: comictagger/comictagger
+publisher: comictagger
+name: ComicTagger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComicTagger/ComicTagger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComicTagger/ComicTagger
+identifiers:
+- winget: ComicTagger.ComicTagger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComicTagger/ComicTagger
+aliases: []

@@ -1,0 +1,12 @@
+key: distill/web-monitor
+publisher: distill
+name: Distill Web Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neemb/Distill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neemb/Distill
+identifiers:
+- winget: Neemb.Distill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neemb/Distill
+aliases:
+- distill/distill-web-monitor

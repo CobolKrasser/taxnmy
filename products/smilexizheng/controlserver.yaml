@@ -1,0 +1,11 @@
+key: smilexizheng/controlserver
+publisher: smilexizheng
+name: ControlServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/smilexizheng/ControlServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/smilexizheng/ControlServer
+identifiers:
+- winget: smilexizheng.ControlServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/smilexizheng/ControlServer
+aliases: []

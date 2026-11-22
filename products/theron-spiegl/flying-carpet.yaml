@@ -1,0 +1,11 @@
+key: theron-spiegl/flying-carpet
+publisher: theron-spiegl
+name: Flying Carpet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spieglt/FlyingCarpet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spieglt/FlyingCarpet
+identifiers:
+- winget: spieglt.FlyingCarpet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spieglt/FlyingCarpet
+aliases: []

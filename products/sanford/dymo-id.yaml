@@ -1,0 +1,11 @@
+key: sanford/dymo-id
+publisher: sanford
+name: DYMO ID
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOID
+identifiers:
+- winget: DYMO.DYMOID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DYMO/DYMOID
+aliases: []

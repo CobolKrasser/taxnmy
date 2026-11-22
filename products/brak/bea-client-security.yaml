@@ -1,0 +1,11 @@
+key: brak/bea-client-security
+publisher: brak
+name: beA Client Security
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRAK/beAClientSecurity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRAK/beAClientSecurity
+identifiers:
+- winget: BRAK.beAClientSecurity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRAK/beAClientSecurity
+aliases: []

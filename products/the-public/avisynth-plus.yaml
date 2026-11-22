@@ -1,0 +1,11 @@
+key: the-public/avisynth-plus
+publisher: the-public
+name: AviSynth+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AviSynth/AviSynthPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AviSynth/AviSynthPlus
+identifiers:
+- winget: AviSynth.AviSynthPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AviSynth/AviSynthPlus
+aliases: []

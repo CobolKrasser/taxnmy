@@ -1,0 +1,13 @@
+key: nut-dot-net/winnut
+publisher: nut-dot-net
+name: WinNUT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nutdotnet/WinNUT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nutdotnet/WinNUT
+identifiers:
+- winget: nutdotnet.WinNUT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nutdotnet/WinNUT
+- winget: nutdotnet.WinNUT.Prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nutdotnet/WinNUT/Prerelease
+aliases: []

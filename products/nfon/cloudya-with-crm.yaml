@@ -1,0 +1,11 @@
+key: nfon/cloudya-with-crm
+publisher: nfon
+name: Cloudya (with CRM)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NFON/Cloudya/CRM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NFON/Cloudya/CRM
+identifiers:
+- winget: NFON.Cloudya.CRM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NFON/Cloudya/CRM
+aliases: []

@@ -1,0 +1,11 @@
+key: pengfei-xu/flyenv
+publisher: pengfei-xu
+name: FlyEnv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpf0000/FlyEnv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpf0000/FlyEnv
+identifiers:
+- winget: xpf0000.FlyEnv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpf0000/FlyEnv
+aliases: []

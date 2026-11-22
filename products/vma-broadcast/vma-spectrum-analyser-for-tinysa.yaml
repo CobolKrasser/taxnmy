@@ -1,0 +1,11 @@
+key: vma-broadcast/vma-spectrum-analyser-for-tinysa
+publisher: vma-broadcast
+name: VMA Spectrum Analyser for TinySA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMASpectrumAnalyser/TinySA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMASpectrumAnalyser/TinySA
+identifiers:
+- winget: VMABroadcast.VMASpectrumAnalyser.TinySA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMABroadcast/VMASpectrumAnalyser/TinySA
+aliases: []

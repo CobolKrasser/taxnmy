@@ -1,0 +1,11 @@
+key: sanford-lincoln/lsnet
+publisher: sanford-lincoln
+name: lsnet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sanford/lsnet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sanford/lsnet
+identifiers:
+- winget: Sanford.lsnet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sanford/lsnet
+aliases: []

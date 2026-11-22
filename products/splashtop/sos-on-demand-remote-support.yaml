@@ -1,0 +1,12 @@
+key: splashtop/sos-on-demand-remote-support
+publisher: splashtop
+name: Splashtop SOS - On-Demand Remote Support
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SOS
+identifiers:
+- winget: Splashtop.SOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splashtop/SOS
+aliases:
+- splashtop/splashtop-sos-on-demand-remote-support

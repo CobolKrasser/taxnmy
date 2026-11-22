@@ -1,0 +1,11 @@
+key: violet2code/magnify-snap
+publisher: violet2code
+name: Magnify.Snap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/violet2code/MagnifySnap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/violet2code/MagnifySnap
+identifiers:
+- winget: violet2code.MagnifySnap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/violet2code/MagnifySnap
+aliases: []

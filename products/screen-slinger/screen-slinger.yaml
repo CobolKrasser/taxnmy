@@ -1,0 +1,11 @@
+key: screen-slinger/screen-slinger
+publisher: screen-slinger
+name: Screen Slinger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenSlinger/ScreenSlinger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenSlinger/ScreenSlinger
+identifiers:
+- winget: ScreenSlinger.ScreenSlinger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenSlinger/ScreenSlinger
+aliases: []

@@ -1,0 +1,11 @@
+key: pikenote/taskbar-groups
+publisher: pikenote
+name: Taskbar Groups
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PikeNote/TaskbarGroups
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PikeNote/TaskbarGroups
+identifiers:
+- winget: PikeNote.TaskbarGroups
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PikeNote/TaskbarGroups
+aliases: []

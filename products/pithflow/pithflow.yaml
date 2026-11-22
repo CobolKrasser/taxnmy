@@ -1,0 +1,11 @@
+key: pithflow/pithflow
+publisher: pithflow
+name: Pithflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pithflow/Pithflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pithflow/Pithflow
+identifiers:
+- winget: Pithflow.Pithflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pithflow/Pithflow
+aliases: []

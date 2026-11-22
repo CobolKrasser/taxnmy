@@ -1,0 +1,11 @@
+key: kylon/sharedown
+publisher: kylon
+name: Sharedown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kylon/sharedown
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kylon/sharedown
+identifiers:
+- winget: kylon.sharedown
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kylon/sharedown
+aliases: []

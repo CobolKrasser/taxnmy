@@ -1,0 +1,12 @@
+key: fluxzero/cli
+publisher: fluxzero
+name: Fluxzero CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxzero/FluxzeroCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxzero/FluxzeroCLI
+identifiers:
+- winget: Fluxzero.FluxzeroCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxzero/FluxzeroCLI
+aliases:
+- fluxzero/fluxzero-cli

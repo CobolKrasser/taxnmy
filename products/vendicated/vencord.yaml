@@ -1,0 +1,15 @@
+key: vendicated/vencord
+publisher: vendicated
+name: Vencord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vendicated/Vencord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vendicated/Vencord
+identifiers:
+- winget: Vendicated.Vencord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vendicated/Vencord
+- winget: Vendicated.Vencord.Canary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vendicated/Vencord/Canary
+- winget: Vendicated.Vencord.PTB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vendicated/Vencord/PTB
+aliases: []

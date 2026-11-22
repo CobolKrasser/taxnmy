@@ -1,0 +1,11 @@
+key: hidemyshare/hidemyshare
+publisher: hidemyshare
+name: HideMyShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HideMyShare/HideMyShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HideMyShare/HideMyShare
+identifiers:
+- winget: HideMyShare.HideMyShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HideMyShare/HideMyShare
+aliases: []

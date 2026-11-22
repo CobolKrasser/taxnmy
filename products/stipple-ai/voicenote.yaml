@@ -1,0 +1,11 @@
+key: stipple-ai/voicenote
+publisher: stipple-ai
+name: VoiceNote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stipple/VoiceNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stipple/VoiceNote
+identifiers:
+- winget: Stipple.VoiceNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stipple/VoiceNote
+aliases: []

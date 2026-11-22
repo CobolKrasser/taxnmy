@@ -1,0 +1,12 @@
+key: lianja/app-builder
+publisher: lianja
+name: Lianja App Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lianja/LianjaAppBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lianja/LianjaAppBuilder
+identifiers:
+- winget: Lianja.LianjaAppBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lianja/LianjaAppBuilder
+aliases:
+- lianja/lianja-app-builder

@@ -1,0 +1,12 @@
+key: softperfect/wifi-guard
+publisher: softperfect
+name: SoftPerfect WiFi Guard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/WiFiGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/WiFiGuard
+identifiers:
+- winget: SoftPerfect.WiFiGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/WiFiGuard
+aliases:
+- softperfect/softperfect-wifi-guard

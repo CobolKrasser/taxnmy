@@ -1,0 +1,11 @@
+key: namecoin-project/namecoin-core-client
+publisher: namecoin-project
+name: Namecoin Core Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NamecoinProject/NamecoinCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NamecoinProject/NamecoinCore
+identifiers:
+- winget: NamecoinProject.NamecoinCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NamecoinProject/NamecoinCore
+aliases: []

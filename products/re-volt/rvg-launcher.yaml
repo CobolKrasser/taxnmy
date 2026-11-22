@@ -1,0 +1,11 @@
+key: re-volt/rvg-launcher
+publisher: re-volt
+name: RVG Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/re-volt/RVGLLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/re-volt/RVGLLauncher
+identifiers:
+- winget: re-volt.RVGLLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/re-volt/RVGLLauncher
+aliases: []

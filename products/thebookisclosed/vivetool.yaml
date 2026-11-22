@@ -1,0 +1,11 @@
+key: thebookisclosed/vivetool
+publisher: thebookisclosed
+name: ViveTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thebookisclosed/Vive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thebookisclosed/Vive
+identifiers:
+- winget: thebookisclosed.Vive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thebookisclosed/Vive
+aliases: []

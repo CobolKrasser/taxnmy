@@ -1,0 +1,11 @@
+key: riok/kreya
+publisher: riok
+name: Kreya
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/riok/Kreya
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/riok/Kreya
+identifiers:
+- winget: riok.Kreya
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/riok/Kreya
+aliases: []

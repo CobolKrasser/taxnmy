@@ -1,0 +1,11 @@
+key: red-cactus/bubble
+publisher: red-cactus
+name: Bubble
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCactus/Bubble
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCactus/Bubble
+identifiers:
+- winget: RedCactus.Bubble
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCactus/Bubble
+aliases: []

@@ -1,0 +1,11 @@
+key: texthelp/autocorrect
+publisher: texthelp
+name: AutoCorrect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Texthelp/AutoCorrect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Texthelp/AutoCorrect
+identifiers:
+- winget: Texthelp.AutoCorrect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Texthelp/AutoCorrect
+aliases: []

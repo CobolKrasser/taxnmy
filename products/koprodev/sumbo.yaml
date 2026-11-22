@@ -1,0 +1,11 @@
+key: koprodev/sumbo
+publisher: koprodev
+name: Sumbo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/koprodev/Sumbo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/koprodev/Sumbo
+identifiers:
+- winget: koprodev.Sumbo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/koprodev/Sumbo
+aliases: []

@@ -1,0 +1,12 @@
+key: securepoint/ssl-vpn
+publisher: securepoint
+name: Securepoint SSL VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurepointGmbH/SecurepointSSLVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurepointGmbH/SecurepointSSLVPN
+identifiers:
+- winget: SecurepointGmbH.SecurepointSSLVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecurepointGmbH/SecurepointSSLVPN
+aliases:
+- securepoint/securepoint-ssl-vpn

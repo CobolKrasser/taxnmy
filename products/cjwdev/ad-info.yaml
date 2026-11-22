@@ -1,0 +1,11 @@
+key: cjwdev/ad-info
+publisher: cjwdev
+name: AD Info
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADInfo/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADInfo/Free
+identifiers:
+- winget: Cjwdev.ADInfo.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADInfo/Free
+aliases: []

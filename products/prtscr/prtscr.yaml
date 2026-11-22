@@ -1,0 +1,11 @@
+key: prtscr/prtscr
+publisher: prtscr
+name: PrtScr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BieleckiLtd/PrtScr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BieleckiLtd/PrtScr
+identifiers:
+- winget: BieleckiLtd.PrtScr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BieleckiLtd/PrtScr
+aliases: []

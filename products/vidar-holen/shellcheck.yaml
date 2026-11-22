@@ -1,0 +1,11 @@
+key: vidar-holen/shellcheck
+publisher: vidar-holen
+name: ShellCheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/koalaman/shellcheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/koalaman/shellcheck
+identifiers:
+- winget: koalaman.shellcheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/koalaman/shellcheck
+aliases: []

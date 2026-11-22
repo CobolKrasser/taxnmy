@@ -1,0 +1,12 @@
+key: vovsoft/prime-number-counter
+publisher: vovsoft
+name: Vovsoft Prime Number Counter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PrimeNumberCounter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PrimeNumberCounter
+identifiers:
+- winget: VovSoft.PrimeNumberCounter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PrimeNumberCounter
+aliases:
+- vovsoft/vovsoft-prime-number-counter

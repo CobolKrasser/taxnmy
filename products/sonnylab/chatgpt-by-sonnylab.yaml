@@ -1,0 +1,11 @@
+key: sonnylab/chatgpt-by-sonnylab
+publisher: sonnylab
+name: ChatGPT by sonnylab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sonnylab/chatgpt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sonnylab/chatgpt
+identifiers:
+- winget: sonnylab.chatgpt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sonnylab/chatgpt
+aliases: []

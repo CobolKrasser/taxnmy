@@ -1,0 +1,11 @@
+key: daiven-reyes/localdock
+publisher: daiven-reyes
+name: LocalDock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaivenReyes/LocalDock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaivenReyes/LocalDock
+identifiers:
+- winget: DaivenReyes.LocalDock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaivenReyes/LocalDock
+aliases: []

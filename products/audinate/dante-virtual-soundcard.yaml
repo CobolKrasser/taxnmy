@@ -1,0 +1,11 @@
+key: audinate/dante-virtual-soundcard
+publisher: audinate
+name: Dante Virtual Soundcard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audinate/DanteVirtualSoundcard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audinate/DanteVirtualSoundcard
+identifiers:
+- winget: Audinate.DanteVirtualSoundcard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audinate/DanteVirtualSoundcard
+aliases: []

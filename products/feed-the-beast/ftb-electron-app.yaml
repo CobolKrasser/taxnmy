@@ -1,0 +1,11 @@
+key: feed-the-beast/ftb-electron-app
+publisher: feed-the-beast
+name: FTB Electron App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FTB/App
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FTB/App
+identifiers:
+- winget: FTB.App
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FTB/App
+aliases: []

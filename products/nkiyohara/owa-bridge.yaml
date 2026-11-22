@@ -1,0 +1,11 @@
+key: nkiyohara/owa-bridge
+publisher: nkiyohara
+name: owa-bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkiyohara/OWABridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkiyohara/OWABridge
+identifiers:
+- winget: nkiyohara.OWABridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkiyohara/OWABridge
+aliases: []

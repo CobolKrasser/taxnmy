@@ -1,0 +1,12 @@
+key: luxtrust/middleware
+publisher: luxtrust
+name: LuxTrust Middleware
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuxTrust/LuxTrustMiddleware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuxTrust/LuxTrustMiddleware
+identifiers:
+- winget: LuxTrust.LuxTrustMiddleware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuxTrust/LuxTrustMiddleware
+aliases:
+- luxtrust/luxtrust-middleware

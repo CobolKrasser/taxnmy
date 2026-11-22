@@ -1,0 +1,11 @@
+key: gaijin-network/crsed-launcher
+publisher: gaijin-network
+name: CRSED Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/CRSED
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/CRSED
+identifiers:
+- winget: GaijinNetwork.CRSED
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/CRSED
+aliases: []

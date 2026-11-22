@@ -1,0 +1,11 @@
+key: oleg-shilo/win-sudo
+publisher: oleg-shilo
+name: win-sudo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oleg-shilo/win-sudo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oleg-shilo/win-sudo
+identifiers:
+- winget: oleg-shilo.win-sudo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oleg-shilo/win-sudo
+aliases: []

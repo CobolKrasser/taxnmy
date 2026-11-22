@@ -1,0 +1,11 @@
+key: smallpdf/smallpdf
+publisher: smallpdf
+name: Smallpdf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/raimo/Smallpdf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/raimo/Smallpdf
+identifiers:
+- winget: raimo.Smallpdf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/raimo/Smallpdf
+aliases: []

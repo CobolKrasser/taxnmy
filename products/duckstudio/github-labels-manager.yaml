@@ -1,0 +1,11 @@
+key: duckstudio/github-labels-manager
+publisher: duckstudio
+name: GitHub Labels Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/GitHubLabelsManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/GitHubLabelsManager
+identifiers:
+- winget: DuckStudio.GitHubLabelsManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuckStudio/GitHubLabelsManager
+aliases: []

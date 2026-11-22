@@ -1,0 +1,11 @@
+key: bcssov/irony-mod-manager
+publisher: bcssov
+name: Irony Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bcssov/IronyModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bcssov/IronyModManager
+identifiers:
+- winget: bcssov.IronyModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bcssov/IronyModManager
+aliases: []

@@ -1,0 +1,11 @@
+key: pyonkichi/claunch
+publisher: pyonkichi
+name: CLaunch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pyonkichi/CLaunch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pyonkichi/CLaunch
+identifiers:
+- winget: Pyonkichi.CLaunch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pyonkichi/CLaunch
+aliases: []

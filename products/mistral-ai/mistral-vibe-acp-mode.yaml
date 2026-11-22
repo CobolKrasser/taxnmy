@@ -1,0 +1,11 @@
+key: mistral-ai/mistral-vibe-acp-mode
+publisher: mistral-ai
+name: Mistral Vibe (ACP mode)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MistralAI/MistralVibe/ACP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MistralAI/MistralVibe/ACP
+identifiers:
+- winget: MistralAI.MistralVibe.ACP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MistralAI/MistralVibe/ACP
+aliases: []

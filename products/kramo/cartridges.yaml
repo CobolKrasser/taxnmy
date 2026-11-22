@@ -1,0 +1,11 @@
+key: kramo/cartridges
+publisher: kramo
+name: Cartridges
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kramo/Cartridges
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kramo/Cartridges
+identifiers:
+- winget: kramo.Cartridges
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kramo/Cartridges
+aliases: []

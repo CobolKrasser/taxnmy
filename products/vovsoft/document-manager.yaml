@@ -1,0 +1,12 @@
+key: vovsoft/document-manager
+publisher: vovsoft
+name: Vovsoft Document Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DocumentManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DocumentManager
+identifiers:
+- winget: VovSoft.DocumentManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DocumentManager
+aliases:
+- vovsoft/vovsoft-document-manager

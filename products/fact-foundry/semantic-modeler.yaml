@@ -1,0 +1,11 @@
+key: fact-foundry/semantic-modeler
+publisher: fact-foundry
+name: Semantic Modeler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactFoundry/SemanticModeler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactFoundry/SemanticModeler
+identifiers:
+- winget: FactFoundry.SemanticModeler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactFoundry/SemanticModeler
+aliases: []

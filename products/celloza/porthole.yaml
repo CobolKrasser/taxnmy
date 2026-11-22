@@ -1,0 +1,11 @@
+key: celloza/porthole
+publisher: celloza
+name: Porthole
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/celloza/Porthole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/celloza/Porthole
+identifiers:
+- winget: celloza.Porthole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/celloza/Porthole
+aliases: []

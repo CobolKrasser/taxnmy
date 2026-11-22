@@ -1,0 +1,11 @@
+key: shiyu/skiff
+publisher: shiyu
+name: skiff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrizzleTime/Skiff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrizzleTime/Skiff
+identifiers:
+- winget: DrizzleTime.Skiff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrizzleTime/Skiff
+aliases: []

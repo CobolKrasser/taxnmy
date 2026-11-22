@@ -1,0 +1,11 @@
+key: cilium/hubble
+publisher: cilium
+name: Hubble
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cilium/Hubble
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cilium/Hubble
+identifiers:
+- winget: Cilium.Hubble
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cilium/Hubble
+aliases: []

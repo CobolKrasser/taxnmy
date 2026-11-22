@@ -1,0 +1,11 @@
+key: kingston-digital/kingston-ssd-manager-x64
+publisher: kingston-digital
+name: Kingston SSD Manager x64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingston/SSDManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingston/SSDManager
+identifiers:
+- winget: Kingston.SSDManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingston/SSDManager
+aliases: []

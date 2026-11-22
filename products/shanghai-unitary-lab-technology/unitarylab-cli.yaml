@@ -1,0 +1,11 @@
+key: shanghai-unitary-lab-technology/unitarylab-cli
+publisher: shanghai-unitary-lab-technology
+name: UnitaryLab CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnitaryLab/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnitaryLab/CLI
+identifiers:
+- winget: UnitaryLab.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnitaryLab/CLI
+aliases: []

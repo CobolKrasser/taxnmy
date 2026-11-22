@@ -1,0 +1,11 @@
+key: team-aie/aie
+publisher: team-aie
+name: aie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/team-aie/aie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/team-aie/aie
+identifiers:
+- winget: team-aie.aie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/team-aie/aie
+aliases: []

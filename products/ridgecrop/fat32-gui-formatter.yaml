@@ -1,0 +1,11 @@
+key: ridgecrop/fat32-gui-formatter
+publisher: ridgecrop
+name: FAT32 GUI Formatter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ridgecrop/guiformat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ridgecrop/guiformat
+identifiers:
+- winget: Ridgecrop.guiformat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ridgecrop/guiformat
+aliases: []

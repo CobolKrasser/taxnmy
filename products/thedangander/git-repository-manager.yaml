@@ -1,0 +1,11 @@
+key: thedangander/git-repository-manager
+publisher: thedangander
+name: Git Repository Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thedangander/GitRepoManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thedangander/GitRepoManager
+identifiers:
+- winget: thedangander.GitRepoManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thedangander/GitRepoManager
+aliases: []

@@ -1,0 +1,11 @@
+key: obs-project/obs-studio
+publisher: obs-project
+name: OBS Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/OBSStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/OBSStudio
+identifiers:
+- winget: OBSProject.OBSStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/OBSStudio
+aliases: []

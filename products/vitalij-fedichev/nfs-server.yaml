@@ -1,0 +1,11 @@
+key: vitalij-fedichev/nfs-server
+publisher: vitalij-fedichev
+name: NFS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VitalijFedichev/NFSServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VitalijFedichev/NFSServer
+identifiers:
+- winget: VitalijFedichev.NFSServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VitalijFedichev/NFSServer
+aliases: []

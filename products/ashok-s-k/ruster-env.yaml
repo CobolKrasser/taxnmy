@@ -1,0 +1,11 @@
+key: ashok-s-k/ruster-env
+publisher: ashok-s-k
+name: ruster-env
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AshokSK/ruster-env
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AshokSK/ruster-env
+identifiers:
+- winget: AshokSK.ruster-env
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AshokSK/ruster-env
+aliases: []

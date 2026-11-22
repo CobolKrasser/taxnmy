@@ -1,0 +1,11 @@
+key: igor-mundstein/windows-memory-cleaner
+publisher: igor-mundstein
+name: Windows Memory Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IgorMundstein/WinMemoryCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IgorMundstein/WinMemoryCleaner
+identifiers:
+- winget: IgorMundstein.WinMemoryCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IgorMundstein/WinMemoryCleaner
+aliases: []

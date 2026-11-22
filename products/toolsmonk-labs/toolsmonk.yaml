@@ -1,0 +1,11 @@
+key: toolsmonk-labs/toolsmonk
+publisher: toolsmonk-labs
+name: ToolsMonk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToolsMonk/ToolsMonk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToolsMonk/ToolsMonk
+identifiers:
+- winget: ToolsMonk.ToolsMonk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToolsMonk/ToolsMonk
+aliases: []

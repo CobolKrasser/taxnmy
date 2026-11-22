@@ -1,0 +1,11 @@
+key: gnome-project/planner
+publisher: gnome-project
+name: Planner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Planner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Planner
+identifiers:
+- winget: gnome.Planner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Planner
+aliases: []

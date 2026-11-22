@@ -1,0 +1,11 @@
+key: evolis/badge-studio
+publisher: evolis
+name: Badge Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evolis/BadgeStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evolis/BadgeStudio
+identifiers:
+- winget: Evolis.BadgeStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evolis/BadgeStudio
+aliases: []

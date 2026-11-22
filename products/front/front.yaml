@@ -1,0 +1,11 @@
+key: front/front
+publisher: front
+name: Front
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrontApp/Front
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrontApp/Front
+identifiers:
+- winget: FrontApp.Front
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FrontApp/Front
+aliases: []

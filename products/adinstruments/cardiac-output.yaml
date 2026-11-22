@@ -1,0 +1,12 @@
+key: adinstruments/cardiac-output
+publisher: adinstruments
+name: ADInstruments Cardiac Output
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/CardiacOutput
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/CardiacOutput
+identifiers:
+- winget: ADInstruments.LabChart.Module.CardiacOutput
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/CardiacOutput
+aliases:
+- adinstruments/adinstruments-cardiac-output

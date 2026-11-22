@@ -1,0 +1,11 @@
+key: stockfish/stockfish
+publisher: stockfish
+name: Stockfish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stockfish/Stockfish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stockfish/Stockfish
+identifiers:
+- winget: Stockfish.Stockfish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stockfish/Stockfish
+aliases: []

@@ -1,0 +1,11 @@
+key: jaap-karssenberg/zim-desktop-wiki
+publisher: jaap-karssenberg
+name: Zim Desktop Wiki
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zimwiki/Zim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zimwiki/Zim
+identifiers:
+- winget: Zimwiki.Zim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zimwiki/Zim
+aliases: []

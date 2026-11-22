@@ -1,0 +1,11 @@
+key: google/flatbuffers
+publisher: google
+name: flatbuffers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/flatbuffers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/flatbuffers
+identifiers:
+- winget: Google.flatbuffers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/flatbuffers
+aliases: []

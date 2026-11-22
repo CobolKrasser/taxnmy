@@ -1,0 +1,11 @@
+key: meeting-ringer/meeting-ringer
+publisher: meeting-ringer
+name: Meeting Ringer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeetingRinger/MeetingRinger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeetingRinger/MeetingRinger
+identifiers:
+- winget: MeetingRinger.MeetingRinger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeetingRinger/MeetingRinger
+aliases: []

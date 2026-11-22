@@ -1,0 +1,11 @@
+key: hatayama/unity-cli-loop
+publisher: hatayama
+name: Unity CLI Loop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hatayama/uloop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hatayama/uloop
+identifiers:
+- winget: hatayama.uloop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hatayama/uloop
+aliases: []

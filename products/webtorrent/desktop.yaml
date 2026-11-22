@@ -1,0 +1,12 @@
+key: webtorrent/desktop
+publisher: webtorrent
+name: WebTorrent Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebTorrent/WebTorrentDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebTorrent/WebTorrentDesktop
+identifiers:
+- winget: WebTorrent.WebTorrentDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebTorrent/WebTorrentDesktop
+aliases:
+- webtorrent/webtorrent-desktop

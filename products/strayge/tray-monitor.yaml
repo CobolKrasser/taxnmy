@@ -1,0 +1,11 @@
+key: strayge/tray-monitor
+publisher: strayge
+name: tray-monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/strayge/tray-monitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/strayge/tray-monitor
+identifiers:
+- winget: strayge.tray-monitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/strayge/tray-monitor
+aliases: []

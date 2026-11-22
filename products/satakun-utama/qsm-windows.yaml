@@ -1,0 +1,11 @@
+key: satakun-utama/qsm-windows
+publisher: satakun-utama
+name: QSM.Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinesOfCodes/QSM/Windows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinesOfCodes/QSM/Windows
+identifiers:
+- winget: LinesOfCodes.QSM.Windows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinesOfCodes/QSM/Windows
+aliases: []

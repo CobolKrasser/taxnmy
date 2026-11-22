@@ -1,0 +1,11 @@
+key: michael-placzek/network-doctor
+publisher: michael-placzek
+name: Network Doctor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heymaikol/NetworkDoctor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heymaikol/NetworkDoctor
+identifiers:
+- winget: heymaikol.NetworkDoctor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heymaikol/NetworkDoctor
+aliases: []

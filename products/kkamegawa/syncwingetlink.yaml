@@ -1,0 +1,11 @@
+key: kkamegawa/syncwingetlink
+publisher: kkamegawa
+name: syncwingetlink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kkamegawa/syncwingetlink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kkamegawa/syncwingetlink
+identifiers:
+- winget: kkamegawa.syncwingetlink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kkamegawa/syncwingetlink
+aliases: []

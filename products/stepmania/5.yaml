@@ -1,0 +1,12 @@
+key: stepmania/5
+publisher: stepmania
+name: StepMania 5
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StepMania/StepMania
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StepMania/StepMania
+identifiers:
+- winget: StepMania.StepMania
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StepMania/StepMania
+aliases:
+- stepmania/stepmania-5

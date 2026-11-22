@@ -1,0 +1,11 @@
+key: obs-project/obs-studio-beta
+publisher: obs-project
+name: OBS Studio Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/OBSStudio/Pre-release
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/OBSStudio/Pre-release
+identifiers:
+- winget: OBSProject.OBSStudio.Pre-release
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBSProject/OBSStudio/Pre-release
+aliases: []

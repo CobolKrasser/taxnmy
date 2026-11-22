@@ -1,0 +1,12 @@
+key: openpubkey/ssh
+publisher: openpubkey
+name: OpenPubkey SSH
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openpubkey/opkssh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openpubkey/opkssh
+identifiers:
+- winget: openpubkey.opkssh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openpubkey/opkssh
+aliases:
+- openpubkey/openpubkey-ssh

@@ -1,0 +1,11 @@
+key: olive-team/olive-video-editor
+publisher: olive-team
+name: Olive Video Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OliveTeam/OliveVideoEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OliveTeam/OliveVideoEditor
+identifiers:
+- winget: OliveTeam.OliveVideoEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OliveTeam/OliveVideoEditor
+aliases: []

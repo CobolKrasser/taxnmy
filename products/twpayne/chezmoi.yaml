@@ -1,0 +1,11 @@
+key: twpayne/chezmoi
+publisher: twpayne
+name: chezmoi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/twpayne/chezmoi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/twpayne/chezmoi
+identifiers:
+- winget: twpayne.chezmoi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/twpayne/chezmoi
+aliases: []

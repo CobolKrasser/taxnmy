@@ -1,0 +1,11 @@
+key: jordancoin/codemap
+publisher: jordancoin
+name: codemap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JordanCoin/codemap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JordanCoin/codemap
+identifiers:
+- winget: JordanCoin.codemap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JordanCoin/codemap
+aliases: []

@@ -1,0 +1,11 @@
+key: nitrokey/nitropy
+publisher: nitrokey
+name: Nitropy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitrokeyGmbH/Nitropy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitrokeyGmbH/Nitropy
+identifiers:
+- winget: NitrokeyGmbH.Nitropy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NitrokeyGmbH/Nitropy
+aliases: []

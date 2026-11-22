@@ -1,0 +1,12 @@
+key: ultimaker/cura
+publisher: ultimaker
+name: Ultimaker Cura
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ultimaker/Cura
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ultimaker/Cura
+identifiers:
+- winget: Ultimaker.Cura
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ultimaker/Cura
+aliases:
+- ultimaker/ultimaker-cura

@@ -1,0 +1,11 @@
+key: outer-wilds-mods/outer-wilds-mod-manager
+publisher: outer-wilds-mods
+name: Outer Wilds Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OuterWildsMods/OuterWildsModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OuterWildsMods/OuterWildsModManager
+identifiers:
+- winget: OuterWildsMods.OuterWildsModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OuterWildsMods/OuterWildsModManager
+aliases: []

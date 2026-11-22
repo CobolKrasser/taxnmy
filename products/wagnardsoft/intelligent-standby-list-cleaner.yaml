@@ -1,0 +1,11 @@
+key: wagnardsoft/intelligent-standby-list-cleaner
+publisher: wagnardsoft
+name: Intelligent standby list cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wagnardsoft/ISLC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wagnardsoft/ISLC
+identifiers:
+- winget: Wagnardsoft.ISLC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wagnardsoft/ISLC
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/dsc
+publisher: microsoft
+name: DSC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DSC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DSC
+identifiers:
+- winget: Microsoft.DSC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DSC
+aliases: []

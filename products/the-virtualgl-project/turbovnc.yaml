@@ -1,0 +1,11 @@
+key: the-virtualgl-project/turbovnc
+publisher: the-virtualgl-project
+name: TurboVNC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualGL/TurboVNC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualGL/TurboVNC
+identifiers:
+- winget: VirtualGL.TurboVNC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualGL/TurboVNC
+aliases: []

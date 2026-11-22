@@ -1,0 +1,11 @@
+key: venko/classic-generator
+publisher: venko
+name: Classic Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/venko/ClassicGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/venko/ClassicGenerator
+identifiers:
+- winget: venko.ClassicGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/venko/ClassicGenerator
+aliases: []

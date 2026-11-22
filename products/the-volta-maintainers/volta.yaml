@@ -1,0 +1,11 @@
+key: the-volta-maintainers/volta
+publisher: the-volta-maintainers
+name: Volta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Volta/Volta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Volta/Volta
+identifiers:
+- winget: Volta.Volta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Volta/Volta
+aliases: []

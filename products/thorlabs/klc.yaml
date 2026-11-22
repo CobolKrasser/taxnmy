@@ -1,0 +1,11 @@
+key: thorlabs/klc
+publisher: thorlabs
+name: KLC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/KLC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/KLC
+identifiers:
+- winget: Thorlabs.KLC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/KLC
+aliases: []

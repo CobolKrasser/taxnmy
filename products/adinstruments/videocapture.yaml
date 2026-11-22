@@ -1,0 +1,12 @@
+key: adinstruments/videocapture
+publisher: adinstruments
+name: ADInstruments VideoCapture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/VideoCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/VideoCapture
+identifiers:
+- winget: ADInstruments.LabChart.Module.VideoCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/VideoCapture
+aliases:
+- adinstruments/adinstruments-videocapture

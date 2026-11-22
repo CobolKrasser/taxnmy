@@ -1,0 +1,11 @@
+key: pranav-nexus/omniget
+publisher: pranav-nexus
+name: OmniGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexus/OmniGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexus/OmniGet
+identifiers:
+- winget: Nexus.OmniGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexus/OmniGet
+aliases: []

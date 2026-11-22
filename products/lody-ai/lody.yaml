@@ -1,0 +1,11 @@
+key: lody-ai/lody
+publisher: lody-ai
+name: Lody
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lody/Lody
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lody/Lody
+identifiers:
+- winget: Lody.Lody
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lody/Lody
+aliases: []

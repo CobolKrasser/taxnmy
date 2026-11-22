@@ -1,0 +1,11 @@
+key: qinghai/nosqlbooster-for-mongodb
+publisher: qinghai
+name: NoSQLBooster for MongoDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoSQLBooster/NoSQLBooster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoSQLBooster/NoSQLBooster
+identifiers:
+- winget: NoSQLBooster.NoSQLBooster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoSQLBooster/NoSQLBooster
+aliases: []

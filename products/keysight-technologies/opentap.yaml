@@ -1,0 +1,11 @@
+key: keysight-technologies/opentap
+publisher: keysight-technologies
+name: OpenTAP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/OpenTAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/OpenTAP
+identifiers:
+- winget: Keysight.OpenTAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keysight/OpenTAP
+aliases: []

@@ -1,0 +1,11 @@
+key: liquidaty/zsv
+publisher: liquidaty
+name: zsv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/liquidaty/zsv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/liquidaty/zsv
+identifiers:
+- winget: liquidaty.zsv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/liquidaty/zsv
+aliases: []

@@ -1,0 +1,11 @@
+key: schemasmith/schemasmith
+publisher: schemasmith
+name: SchemaSmith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchemaSmith/SchemaSmith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchemaSmith/SchemaSmith
+identifiers:
+- winget: SchemaSmith.SchemaSmith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchemaSmith/SchemaSmith
+aliases: []

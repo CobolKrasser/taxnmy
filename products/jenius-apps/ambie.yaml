@@ -1,0 +1,11 @@
+key: jenius-apps/ambie
+publisher: jenius-apps
+name: Ambie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeniusApps/Ambie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeniusApps/Ambie
+identifiers:
+- winget: JeniusApps.Ambie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeniusApps/Ambie
+aliases: []

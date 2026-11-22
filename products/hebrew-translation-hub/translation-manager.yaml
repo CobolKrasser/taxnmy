@@ -1,0 +1,11 @@
+key: hebrew-translation-hub/translation-manager
+publisher: hebrew-translation-hub
+name: Translation Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTH/TranslationManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTH/TranslationManager
+identifiers:
+- winget: HTH.TranslationManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTH/TranslationManager
+aliases: []

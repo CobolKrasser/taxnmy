@@ -1,0 +1,12 @@
+key: vovsoft/hex-viewer
+publisher: vovsoft
+name: Vovsoft Hex Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HexViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HexViewer
+identifiers:
+- winget: VovSoft.HexViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HexViewer
+aliases:
+- vovsoft/vovsoft-hex-viewer

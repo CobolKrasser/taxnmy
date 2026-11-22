@@ -1,0 +1,11 @@
+key: hugin-developer-team/hugin
+publisher: hugin-developer-team
+name: Hugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugin/Hugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugin/Hugin
+identifiers:
+- winget: Hugin.Hugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugin/Hugin
+aliases: []

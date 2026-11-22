@@ -1,0 +1,17 @@
+key: trimble/sketchup
+publisher: trimble
+name: SketchUp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2023
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2023
+identifiers:
+- winget: Trimble.SketchUp.2023
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2023
+- winget: Trimble.SketchUp.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2025
+- winget: Trimble.SketchUp.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2026
+- winget: Trimble.SketchUp.2027
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2027
+aliases: []

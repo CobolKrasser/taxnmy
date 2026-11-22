@@ -1,0 +1,11 @@
+key: openrpa/openrpa
+publisher: openrpa
+name: OpenRPA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRPAApS/OpenRPA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRPAApS/OpenRPA
+identifiers:
+- winget: OpenRPAApS.OpenRPA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRPAApS/OpenRPA
+aliases: []

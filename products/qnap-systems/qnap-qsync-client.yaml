@@ -1,0 +1,11 @@
+key: qnap-systems/qnap-qsync-client
+publisher: qnap-systems
+name: QNAP Qsync Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/Qsync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/Qsync
+identifiers:
+- winget: QNAP.Qsync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/Qsync
+aliases: []

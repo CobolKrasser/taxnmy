@@ -1,0 +1,11 @@
+key: algorand-foundation/algokit
+publisher: algorand-foundation
+name: AlgoKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlgorandFoundation/AlgoKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlgorandFoundation/AlgoKit
+identifiers:
+- winget: AlgorandFoundation.AlgoKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlgorandFoundation/AlgoKit
+aliases: []

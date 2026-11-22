@@ -1,0 +1,12 @@
+key: tulip/player
+publisher: tulip
+name: Tulip Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tulip/TulipPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tulip/TulipPlayer
+identifiers:
+- winget: Tulip.TulipPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tulip/TulipPlayer
+aliases:
+- tulip/tulip-player

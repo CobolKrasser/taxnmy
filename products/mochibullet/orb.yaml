@@ -1,0 +1,11 @@
+key: mochibullet/orb
+publisher: mochibullet
+name: orb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MochiBullet/orb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MochiBullet/orb
+identifiers:
+- winget: MochiBullet.orb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MochiBullet/orb
+aliases: []

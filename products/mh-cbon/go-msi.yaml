@@ -1,0 +1,11 @@
+key: mh-cbon/go-msi
+publisher: mh-cbon
+name: go-msi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mh-cbon/go-msi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mh-cbon/go-msi
+identifiers:
+- winget: mh-cbon.go-msi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mh-cbon/go-msi
+aliases: []

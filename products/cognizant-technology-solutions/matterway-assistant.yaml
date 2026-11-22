@@ -1,0 +1,11 @@
+key: cognizant-technology-solutions/matterway-assistant
+publisher: cognizant-technology-solutions
+name: Matterway Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Matterway/MatterwayAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Matterway/MatterwayAssistant
+identifiers:
+- winget: Matterway.MatterwayAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Matterway/MatterwayAssistant
+aliases: []

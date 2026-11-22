@@ -1,0 +1,11 @@
+key: firat-kutay/comrade
+publisher: firat-kutay
+name: comrade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cli/comrade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cli/comrade
+identifiers:
+- winget: cli.comrade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cli/comrade
+aliases: []

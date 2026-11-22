@@ -1,0 +1,11 @@
+key: sakura-editor/sakura-editor
+publisher: sakura-editor
+name: SAKURA Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sakura-editor/sakura
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sakura-editor/sakura
+identifiers:
+- winget: sakura-editor.sakura
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sakura-editor/sakura
+aliases: []

@@ -1,0 +1,12 @@
+key: satsignal-software/runtime-libraries
+publisher: satsignal-software
+name: SatSignal Software - Runtime Libraries
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatSignal/Runtimes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatSignal/Runtimes
+identifiers:
+- winget: SatSignal.Runtimes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatSignal/Runtimes
+aliases:
+- satsignal-software/satsignal-software-runtime-libraries

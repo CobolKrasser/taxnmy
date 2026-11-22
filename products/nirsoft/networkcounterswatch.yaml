@@ -1,0 +1,11 @@
+key: nirsoft/networkcounterswatch
+publisher: nirsoft
+name: NetworkCountersWatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkCountersWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkCountersWatch
+identifiers:
+- winget: NirSoft.NetworkCountersWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkCountersWatch
+aliases: []

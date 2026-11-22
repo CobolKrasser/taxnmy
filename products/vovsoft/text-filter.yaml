@@ -1,0 +1,12 @@
+key: vovsoft/text-filter
+publisher: vovsoft
+name: Vovsoft Text Filter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextFilter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextFilter
+identifiers:
+- winget: VovSoft.TextFilter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/TextFilter
+aliases:
+- vovsoft/vovsoft-text-filter

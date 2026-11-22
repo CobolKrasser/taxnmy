@@ -1,0 +1,11 @@
+key: bostrot/wsl-manager
+publisher: bostrot
+name: WSL Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bostrot/WSLManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bostrot/WSLManager
+identifiers:
+- winget: Bostrot.WSLManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bostrot/WSLManager
+aliases: []

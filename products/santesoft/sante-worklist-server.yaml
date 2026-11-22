@@ -1,0 +1,11 @@
+key: santesoft/sante-worklist-server
+publisher: santesoft
+name: Sante Worklist Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteWorklistServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteWorklistServer
+identifiers:
+- winget: Santesoft.SanteWorklistServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteWorklistServer
+aliases: []

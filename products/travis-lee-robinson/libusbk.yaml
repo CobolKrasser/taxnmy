@@ -1,0 +1,11 @@
+key: travis-lee-robinson/libusbk
+publisher: travis-lee-robinson
+name: libusbK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcuee/libusbK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcuee/libusbK
+identifiers:
+- winget: mcuee.libusbK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcuee/libusbK
+aliases: []

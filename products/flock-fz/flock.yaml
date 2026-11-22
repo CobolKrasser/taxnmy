@@ -1,0 +1,11 @@
+key: flock-fz/flock
+publisher: flock-fz
+name: Flock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlockFZ/Flock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlockFZ/Flock
+identifiers:
+- winget: FlockFZ.Flock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlockFZ/Flock
+aliases: []

@@ -1,0 +1,11 @@
+key: shrimpbrime/sb-ssd-temps
+publisher: shrimpbrime
+name: SB SSD Temps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonBauer/SBSSDTemps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonBauer/SBSSDTemps
+identifiers:
+- winget: JonBauer.SBSSDTemps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonBauer/SBSSDTemps
+aliases: []

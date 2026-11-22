@@ -1,0 +1,11 @@
+key: allround-automations/pl-sql-developer
+publisher: allround-automations
+name: PL/SQL Developer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AllroundAutomations/PLSQLDeveloper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AllroundAutomations/PLSQLDeveloper
+identifiers:
+- winget: AllroundAutomations.PLSQLDeveloper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AllroundAutomations/PLSQLDeveloper
+aliases: []

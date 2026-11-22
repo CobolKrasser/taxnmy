@@ -1,0 +1,11 @@
+key: the-raku-community/rakudo-star
+publisher: the-raku-community
+name: Rakudo Star
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo/Star
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo/Star
+identifiers:
+- winget: Rakudo.Rakudo.Star
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo/Star
+aliases: []

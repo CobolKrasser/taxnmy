@@ -1,0 +1,11 @@
+key: bytedance/capcut
+publisher: bytedance
+name: CapCut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/CapCut
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/CapCut
+identifiers:
+- winget: ByteDance.CapCut
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/CapCut
+aliases: []

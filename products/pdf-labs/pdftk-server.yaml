@@ -1,0 +1,11 @@
+key: pdf-labs/pdftk-server
+publisher: pdf-labs
+name: PDFtk Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFLabs/PDFtk/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFLabs/PDFtk/Server
+identifiers:
+- winget: PDFLabs.PDFtk.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFLabs/PDFtk/Server
+aliases: []

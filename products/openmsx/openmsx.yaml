@@ -1,0 +1,11 @@
+key: openmsx/openmsx
+publisher: openmsx
+name: openMSX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openMSX/openMSX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openMSX/openMSX
+identifiers:
+- winget: openMSX.openMSX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openMSX/openMSX
+aliases: []

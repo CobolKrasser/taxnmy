@@ -1,0 +1,12 @@
+key: cenvero/fleet
+publisher: cenvero
+name: Cenvero Fleet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cenvero/Fleet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cenvero/Fleet
+identifiers:
+- winget: Cenvero.Fleet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cenvero/Fleet
+aliases:
+- cenvero/cenvero-fleet

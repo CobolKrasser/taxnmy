@@ -1,0 +1,11 @@
+key: softsea/dvd-to-iso
+publisher: softsea
+name: DVD to ISO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DVDtoISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DVDtoISO
+identifiers:
+- winget: SoftSea.DVDtoISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DVDtoISO
+aliases: []

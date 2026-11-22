@@ -1,0 +1,11 @@
+key: fahrenheit-research/rusty-weather
+publisher: fahrenheit-research
+name: Rusty Weather
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustyWeather
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustyWeather
+identifiers:
+- winget: FahrenheitResearch.RustyWeather
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/RustyWeather
+aliases: []

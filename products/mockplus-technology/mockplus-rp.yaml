@@ -1,0 +1,11 @@
+key: mockplus-technology/mockplus-rp
+publisher: mockplus-technology
+name: Mockplus RP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mockplus/MockplusRP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mockplus/MockplusRP
+identifiers:
+- winget: Mockplus.MockplusRP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mockplus/MockplusRP
+aliases: []

@@ -1,0 +1,11 @@
+key: sa7mon/s3scanner
+publisher: sa7mon
+name: S3Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sa7mon/S3Scanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sa7mon/S3Scanner
+identifiers:
+- winget: sa7mon.S3Scanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sa7mon/S3Scanner
+aliases: []

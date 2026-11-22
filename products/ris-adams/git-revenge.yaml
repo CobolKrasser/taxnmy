@@ -1,0 +1,11 @@
+key: ris-adams/git-revenge
+publisher: ris-adams
+name: Git Revenge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitRevenge/GitRevenge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitRevenge/GitRevenge
+identifiers:
+- winget: GitRevenge.GitRevenge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitRevenge/GitRevenge
+aliases: []

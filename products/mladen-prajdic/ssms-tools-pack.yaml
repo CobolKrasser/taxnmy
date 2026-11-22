@@ -1,0 +1,11 @@
+key: mladen-prajdic/ssms-tools-pack
+publisher: mladen-prajdic
+name: SSMS Tools Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MladenPrajdic/SSMSToolsPack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MladenPrajdic/SSMSToolsPack
+identifiers:
+- winget: MladenPrajdic.SSMSToolsPack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MladenPrajdic/SSMSToolsPack
+aliases: []

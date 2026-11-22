@@ -1,0 +1,11 @@
+key: aptistock/aptistockx
+publisher: aptistock
+name: AptiStockX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AptiStock/AptiStockX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AptiStock/AptiStockX
+identifiers:
+- winget: AptiStock.AptiStockX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AptiStock/AptiStockX
+aliases: []

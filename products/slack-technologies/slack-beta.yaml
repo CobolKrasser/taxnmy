@@ -1,0 +1,11 @@
+key: slack-technologies/slack-beta
+publisher: slack-technologies
+name: Slack Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackTechnologies/Slack/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackTechnologies/Slack/Beta
+identifiers:
+- winget: SlackTechnologies.Slack.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackTechnologies/Slack/Beta
+aliases: []

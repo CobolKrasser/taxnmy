@@ -1,0 +1,11 @@
+key: project-jupyter/jupyterlab
+publisher: project-jupyter
+name: JupyterLab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectJupyter/JupyterLab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectJupyter/JupyterLab
+identifiers:
+- winget: ProjectJupyter.JupyterLab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectJupyter/JupyterLab
+aliases: []

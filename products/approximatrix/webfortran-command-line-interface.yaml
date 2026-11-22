@@ -1,0 +1,11 @@
+key: approximatrix/webfortran-command-line-interface
+publisher: approximatrix
+name: WebFortran Command Line Interface
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Approximatrix/WebFortran
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Approximatrix/WebFortran
+identifiers:
+- winget: Approximatrix.WebFortran
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Approximatrix/WebFortran
+aliases: []

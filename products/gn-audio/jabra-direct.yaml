@@ -1,0 +1,11 @@
+key: gn-audio/jabra-direct
+publisher: gn-audio
+name: Jabra Direct
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jabra/Direct
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jabra/Direct
+identifiers:
+- winget: Jabra.Direct
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jabra/Direct
+aliases: []

@@ -1,0 +1,12 @@
+key: wezops/agent
+publisher: wezops
+name: WezOps Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WezOps/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WezOps/Agent
+identifiers:
+- winget: WezOps.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WezOps/Agent
+aliases:
+- wezops/wezops-agent

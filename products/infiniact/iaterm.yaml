@@ -1,0 +1,11 @@
+key: infiniact/iaterm
+publisher: infiniact
+name: IATerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Infiniact/IATerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Infiniact/IATerm
+identifiers:
+- winget: Infiniact.IATerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Infiniact/IATerm
+aliases: []

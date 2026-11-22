@@ -1,0 +1,11 @@
+key: streamerbot/streamer-bot
+publisher: streamerbot
+name: streamer.bot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/streamerbot/streamerbot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/streamerbot/streamerbot
+identifiers:
+- winget: streamerbot.streamerbot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/streamerbot/streamerbot
+aliases: []

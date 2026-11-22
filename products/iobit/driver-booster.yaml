@@ -1,0 +1,11 @@
+key: iobit/driver-booster
+publisher: iobit
+name: Driver Booster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/DriverBooster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/DriverBooster
+identifiers:
+- winget: IObit.DriverBooster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/DriverBooster
+aliases: []

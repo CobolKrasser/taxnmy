@@ -1,0 +1,11 @@
+key: tessariq/taskrail
+publisher: tessariq
+name: taskrail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tessariq/Taskrail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tessariq/Taskrail
+identifiers:
+- winget: Tessariq.Taskrail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tessariq/Taskrail
+aliases: []

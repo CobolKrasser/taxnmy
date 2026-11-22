@@ -1,0 +1,11 @@
+key: bnc-consultoria/aplica-ai
+publisher: bnc-consultoria
+name: Aplica AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BNCConsultoria/AplicaAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BNCConsultoria/AplicaAI
+identifiers:
+- winget: BNCConsultoria.AplicaAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BNCConsultoria/AplicaAI
+aliases: []

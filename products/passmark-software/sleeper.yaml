@@ -1,0 +1,11 @@
+key: passmark-software/sleeper
+publisher: passmark-software
+name: Sleeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Sleeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Sleeper
+identifiers:
+- winget: PassMark.Sleeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/Sleeper
+aliases: []

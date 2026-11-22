@@ -1,0 +1,11 @@
+key: merciapp/merciapp
+publisher: merciapp
+name: MerciApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/J2S3/MerciApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/J2S3/MerciApp
+identifiers:
+- winget: J2S3.MerciApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/J2S3/MerciApp
+aliases: []

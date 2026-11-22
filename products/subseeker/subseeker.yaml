@@ -1,0 +1,11 @@
+key: subseeker/subseeker
+publisher: subseeker
+name: SubSeeker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubSeeker/SubSeeker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubSeeker/SubSeeker
+identifiers:
+- winget: SubSeeker.SubSeeker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SubSeeker/SubSeeker
+aliases: []

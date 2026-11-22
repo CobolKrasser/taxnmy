@@ -1,0 +1,11 @@
+key: maxrave-dev/simpmusic
+publisher: maxrave-dev
+name: SimpMusic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maxrave-dev/SimpMusic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maxrave-dev/SimpMusic
+identifiers:
+- winget: maxrave-dev.SimpMusic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maxrave-dev/SimpMusic
+aliases: []

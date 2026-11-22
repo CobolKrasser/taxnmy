@@ -1,0 +1,11 @@
+key: speedcrunch/speedcrunch
+publisher: speedcrunch
+name: SpeedCrunch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpeedCrunch/SpeedCrunch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpeedCrunch/SpeedCrunch
+identifiers:
+- winget: SpeedCrunch.SpeedCrunch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpeedCrunch/SpeedCrunch
+aliases: []

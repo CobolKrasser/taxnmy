@@ -1,0 +1,12 @@
+key: yt-dlp/nightly
+publisher: yt-dlp
+name: yt-dlp-nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/yt-dlp/nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/yt-dlp/nightly
+identifiers:
+- winget: yt-dlp.yt-dlp.nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yt-dlp/yt-dlp/nightly
+aliases:
+- yt-dlp/yt-dlp-nightly

@@ -1,0 +1,11 @@
+key: west-wind-technologies/documentation-monster
+publisher: west-wind-technologies
+name: Documentation Monster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WestWind/DocumentationMonster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WestWind/DocumentationMonster
+identifiers:
+- winget: WestWind.DocumentationMonster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WestWind/DocumentationMonster
+aliases: []

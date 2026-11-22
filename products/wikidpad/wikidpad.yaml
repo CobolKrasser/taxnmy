@@ -1,0 +1,13 @@
+key: wikidpad/wikidpad
+publisher: wikidpad
+name: WikidPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikidPad/WikidPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikidPad/WikidPad
+identifiers:
+- winget: WikidPad.WikidPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikidPad/WikidPad
+- winget: WikidPad.WikidPad.Alpha
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikidPad/WikidPad/Alpha
+aliases: []

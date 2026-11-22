@@ -1,0 +1,11 @@
+key: omicronlab/avro-keyboard
+publisher: omicronlab
+name: Avro Keyboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmicronLab/Avro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmicronLab/Avro
+identifiers:
+- winget: OmicronLab.Avro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmicronLab/Avro
+aliases: []

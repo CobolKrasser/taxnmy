@@ -1,0 +1,11 @@
+key: invantive-software/invantive-web-service
+publisher: invantive-software
+name: Invantive Web Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveWebService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveWebService
+identifiers:
+- winget: Invantive.InvantiveWebService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveWebService
+aliases: []

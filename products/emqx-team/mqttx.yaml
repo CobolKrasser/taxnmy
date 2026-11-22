@@ -1,0 +1,11 @@
+key: emqx-team/mqttx
+publisher: emqx-team
+name: MQTTX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMQ/MQTTX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMQ/MQTTX
+identifiers:
+- winget: EMQ.MQTTX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EMQ/MQTTX
+aliases: []

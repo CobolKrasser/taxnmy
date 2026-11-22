@@ -1,0 +1,11 @@
+key: portx/ptx
+publisher: portx
+name: ptx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortX/ptx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortX/ptx
+identifiers:
+- winget: PortX.ptx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortX/ptx
+aliases: []

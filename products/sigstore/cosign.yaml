@@ -1,0 +1,11 @@
+key: sigstore/cosign
+publisher: sigstore
+name: cosign
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Cosign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Cosign
+identifiers:
+- winget: Sigstore.Cosign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Cosign
+aliases: []

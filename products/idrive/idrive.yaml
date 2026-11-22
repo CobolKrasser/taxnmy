@@ -1,0 +1,13 @@
+key: idrive/idrive
+publisher: idrive
+name: IDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDrive/IDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDrive/IDrive
+identifiers:
+- winget: IDrive.IDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDrive/IDrive
+- winget: IDrive.IDriveThinClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IDrive/IDriveThinClient
+aliases: []

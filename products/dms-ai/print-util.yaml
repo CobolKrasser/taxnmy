@@ -1,0 +1,11 @@
+key: dms-ai/print-util
+publisher: dms-ai
+name: print-util
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMS-AI/PrintUtil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMS-AI/PrintUtil
+identifiers:
+- winget: DMS-AI.PrintUtil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMS-AI/PrintUtil
+aliases: []

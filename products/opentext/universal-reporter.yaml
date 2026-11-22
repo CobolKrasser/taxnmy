@@ -1,0 +1,12 @@
+key: opentext/universal-reporter
+publisher: opentext
+name: OpenText Universal Reporter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webroot/UniversalReporter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webroot/UniversalReporter
+identifiers:
+- winget: Webroot.UniversalReporter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webroot/UniversalReporter
+aliases:
+- opentext/opentext-universal-reporter

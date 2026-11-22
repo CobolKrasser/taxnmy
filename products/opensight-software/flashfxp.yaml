@@ -1,0 +1,11 @@
+key: opensight-software/flashfxp
+publisher: opensight-software
+name: FlashFXP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSight/FlashFXP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSight/FlashFXP
+identifiers:
+- winget: OpenSight.FlashFXP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSight/FlashFXP
+aliases: []

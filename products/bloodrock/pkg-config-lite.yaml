@@ -1,0 +1,11 @@
+key: bloodrock/pkg-config-lite
+publisher: bloodrock
+name: Pkg Config Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bloodrock/pkg-config-lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bloodrock/pkg-config-lite
+identifiers:
+- winget: bloodrock.pkg-config-lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bloodrock/pkg-config-lite
+aliases: []

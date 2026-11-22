@@ -1,0 +1,11 @@
+key: startisback-com/startisback-plus-plus
+publisher: startisback-com
+name: StartIsBack++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StartIsBack/StartIsBack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StartIsBack/StartIsBack
+identifiers:
+- winget: StartIsBack.StartIsBack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StartIsBack/StartIsBack
+aliases: []

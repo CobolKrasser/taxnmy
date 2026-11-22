@@ -1,0 +1,11 @@
+key: nightmaretv/nightmare-tv
+publisher: nightmaretv
+name: Nightmare TV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NightmareTv/NightmareTV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NightmareTv/NightmareTV
+identifiers:
+- winget: NightmareTv.NightmareTV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NightmareTv/NightmareTV
+aliases: []

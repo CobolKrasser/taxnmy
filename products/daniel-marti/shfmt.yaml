@@ -1,0 +1,11 @@
+key: daniel-marti/shfmt
+publisher: daniel-marti
+name: shfmt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mvdan/shfmt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mvdan/shfmt
+identifiers:
+- winget: mvdan.shfmt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mvdan/shfmt
+aliases: []

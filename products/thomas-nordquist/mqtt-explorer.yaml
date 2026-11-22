@@ -1,0 +1,13 @@
+key: thomas-nordquist/mqtt-explorer
+publisher: thomas-nordquist
+name: MQTT Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thomasnordquist/MQTT-Explorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thomasnordquist/MQTT-Explorer
+identifiers:
+- winget: thomasnordquist.MQTT-Explorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thomasnordquist/MQTT-Explorer
+- winget: thomasnordquist.MQTT-Explorer.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/thomasnordquist/MQTT-Explorer/Beta
+aliases: []

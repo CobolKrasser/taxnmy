@@ -1,0 +1,11 @@
+key: nirsoft/usblogview
+publisher: nirsoft
+name: USBLogView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/USBLogView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/USBLogView
+identifiers:
+- winget: NirSoft.USBLogView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/USBLogView
+aliases: []

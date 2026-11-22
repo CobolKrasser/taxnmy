@@ -1,0 +1,11 @@
+key: invantive-software/invantive-estate-for-windows
+publisher: invantive-software
+name: Invantive Estate for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveEstateForWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveEstateForWindows
+identifiers:
+- winget: Invantive.InvantiveEstateForWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveEstateForWindows
+aliases: []

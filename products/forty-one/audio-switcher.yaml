@@ -1,0 +1,11 @@
+key: forty-one/audio-switcher
+publisher: forty-one
+name: Audio Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortyOneLtd/AudioSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortyOneLtd/AudioSwitcher
+identifiers:
+- winget: FortyOneLtd.AudioSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortyOneLtd/AudioSwitcher
+aliases: []

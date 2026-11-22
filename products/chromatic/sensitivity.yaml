@@ -1,0 +1,11 @@
+key: chromatic/sensitivity
+publisher: chromatic
+name: Sensitivity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatic/Sensitivity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatic/Sensitivity
+identifiers:
+- winget: Chromatic.Sensitivity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatic/Sensitivity
+aliases: []

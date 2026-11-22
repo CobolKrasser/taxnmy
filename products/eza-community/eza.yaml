@@ -1,0 +1,11 @@
+key: eza-community/eza
+publisher: eza-community
+name: eza
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eza-community/eza
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eza-community/eza
+identifiers:
+- winget: eza-community.eza
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eza-community/eza
+aliases: []

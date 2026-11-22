@@ -1,0 +1,11 @@
+key: discobox-ai/discobox
+publisher: discobox-ai
+name: Discobox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discobox/Discobox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discobox/Discobox
+identifiers:
+- winget: Discobox.Discobox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discobox/Discobox
+aliases: []

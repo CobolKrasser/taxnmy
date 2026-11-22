@@ -1,0 +1,11 @@
+key: the-geany-developer-team/geany
+publisher: the-geany-developer-team
+name: Geany
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geany/Geany
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geany/Geany
+identifiers:
+- winget: Geany.Geany
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geany/Geany
+aliases: []

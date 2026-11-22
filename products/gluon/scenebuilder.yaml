@@ -1,0 +1,13 @@
+key: gluon/scenebuilder
+publisher: gluon
+name: SceneBuilder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gluon/SceneBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gluon/SceneBuilder
+identifiers:
+- winget: Gluon.SceneBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gluon/SceneBuilder
+- winget: Gluon.SceneBuilder.18
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gluon/SceneBuilder/18
+aliases: []

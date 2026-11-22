@@ -1,0 +1,11 @@
+key: shaka-project/shaka-packager
+publisher: shaka-project
+name: Shaka Packager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShakaProject/ShakaPackager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShakaProject/ShakaPackager
+identifiers:
+- winget: ShakaProject.ShakaPackager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShakaProject/ShakaPackager
+aliases: []

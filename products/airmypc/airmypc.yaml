@@ -1,0 +1,11 @@
+key: airmypc/airmypc
+publisher: airmypc
+name: AirMyPC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirMyPC/AirMyPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirMyPC/AirMyPC
+identifiers:
+- winget: AirMyPC.AirMyPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirMyPC/AirMyPC
+aliases: []

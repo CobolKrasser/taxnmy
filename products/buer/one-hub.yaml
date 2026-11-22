@@ -1,0 +1,11 @@
+key: buer/one-hub
+publisher: buer
+name: One Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartialBE/OneHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartialBE/OneHub
+identifiers:
+- winget: MartialBE.OneHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartialBE/OneHub
+aliases: []

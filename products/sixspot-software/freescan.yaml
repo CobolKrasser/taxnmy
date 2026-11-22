@@ -1,0 +1,11 @@
+key: sixspot-software/freescan
+publisher: sixspot-software
+name: FreeSCAN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sixspot/freescan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sixspot/freescan
+identifiers:
+- winget: sixspot.freescan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sixspot/freescan
+aliases: []

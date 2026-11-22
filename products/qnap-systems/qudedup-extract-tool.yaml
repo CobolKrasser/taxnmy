@@ -1,0 +1,11 @@
+key: qnap-systems/qudedup-extract-tool
+publisher: qnap-systems
+name: QuDedup Extract Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/QuDedupExtractTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/QuDedupExtractTool
+identifiers:
+- winget: QNAP.QuDedupExtractTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QNAP/QuDedupExtractTool
+aliases: []

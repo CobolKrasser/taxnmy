@@ -1,0 +1,12 @@
+key: fossa/cli
+publisher: fossa
+name: fossa-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FOSSA/FOSSA-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FOSSA/FOSSA-cli
+identifiers:
+- winget: FOSSA.FOSSA-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FOSSA/FOSSA-cli
+aliases:
+- fossa/fossa-cli

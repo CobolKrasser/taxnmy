@@ -1,0 +1,11 @@
+key: callmarcus/dji-metadata-embedder-desktop
+publisher: callmarcus
+name: DJI Metadata Embedder Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CallMarcus/DJIMetadataEmbedder/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CallMarcus/DJIMetadataEmbedder/Desktop
+identifiers:
+- winget: CallMarcus.DJIMetadataEmbedder.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CallMarcus/DJIMetadataEmbedder/Desktop
+aliases: []

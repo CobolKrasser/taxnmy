@@ -1,0 +1,11 @@
+key: digital-detective/dcode
+publisher: digital-detective
+name: DCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalDetective/DCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalDetective/DCode
+identifiers:
+- winget: DigitalDetective.DCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalDetective/DCode
+aliases: []

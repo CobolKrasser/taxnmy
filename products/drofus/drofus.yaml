@@ -1,0 +1,13 @@
+key: drofus/drofus
+publisher: drofus
+name: dRofus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dRofus/dRofus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dRofus/dRofus
+identifiers:
+- winget: dRofus.dRofus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dRofus/dRofus
+- winget: dRofus.dRofus.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dRofus/dRofus/EXE
+aliases: []

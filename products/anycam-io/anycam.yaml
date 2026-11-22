@@ -1,0 +1,11 @@
+key: anycam-io/anycam
+publisher: anycam-io
+name: AnyCam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anycam-io/AnyCam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anycam-io/AnyCam
+identifiers:
+- winget: anycam-io.AnyCam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anycam-io/AnyCam
+aliases: []

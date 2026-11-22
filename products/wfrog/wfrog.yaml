@@ -1,0 +1,11 @@
+key: wfrog/wfrog
+publisher: wfrog
+name: Wfrog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfrog/Wfrog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfrog/Wfrog
+identifiers:
+- winget: Wfrog.Wfrog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfrog/Wfrog
+aliases: []

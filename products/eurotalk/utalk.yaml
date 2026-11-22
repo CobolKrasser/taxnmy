@@ -1,0 +1,11 @@
+key: eurotalk/utalk
+publisher: eurotalk
+name: uTalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuroTalk/uTalk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuroTalk/uTalk
+identifiers:
+- winget: EuroTalk.uTalk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EuroTalk/uTalk
+aliases: []

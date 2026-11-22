@@ -1,0 +1,11 @@
+key: clyplabs/clypdat
+publisher: clyplabs
+name: ClypDat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClypLabs/ClypDat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClypLabs/ClypDat
+identifiers:
+- winget: ClypLabs.ClypDat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClypLabs/ClypDat
+aliases: []

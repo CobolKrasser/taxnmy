@@ -1,0 +1,11 @@
+key: lollapalooza/usage
+publisher: lollapalooza
+name: usage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lollapalooza/usage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lollapalooza/usage
+identifiers:
+- winget: lollapalooza.usage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lollapalooza/usage
+aliases: []

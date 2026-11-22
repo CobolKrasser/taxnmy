@@ -1,0 +1,11 @@
+key: mustafif/minerva
+publisher: mustafif
+name: minerva
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MKProj/Minerva
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MKProj/Minerva
+identifiers:
+- winget: MKProj.Minerva
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MKProj/Minerva
+aliases: []

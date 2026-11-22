@@ -1,0 +1,11 @@
+key: last-hit-team/last-hit
+publisher: last-hit-team
+name: last-hit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/last-hit-team/last-hit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/last-hit-team/last-hit
+identifiers:
+- winget: last-hit-team.last-hit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/last-hit-team/last-hit
+aliases: []

@@ -1,0 +1,11 @@
+key: simon-steele/programmer-s-notepad
+publisher: simon-steele
+name: Programmer's Notepad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonSteele/ProgrammersNotepad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonSteele/ProgrammersNotepad
+identifiers:
+- winget: SimonSteele.ProgrammersNotepad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonSteele/ProgrammersNotepad
+aliases: []

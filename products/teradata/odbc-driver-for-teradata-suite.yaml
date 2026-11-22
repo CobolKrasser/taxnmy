@@ -1,0 +1,11 @@
+key: teradata/odbc-driver-for-teradata-suite
+publisher: teradata
+name: ODBC Driver for Teradata - Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TTUOdbc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TTUOdbc
+identifiers:
+- winget: Teradata.TTUOdbc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/TTUOdbc
+aliases: []

@@ -1,0 +1,11 @@
+key: martin-storsjo/llvm-mingw-msvcrt-runtime
+publisher: martin-storsjo
+name: LLVM MinGW (MSVCRT runtime)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinStorsjo/LLVM-MinGW/MSVCRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinStorsjo/LLVM-MinGW/MSVCRT
+identifiers:
+- winget: MartinStorsjo.LLVM-MinGW.MSVCRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinStorsjo/LLVM-MinGW/MSVCRT
+aliases: []

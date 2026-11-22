@@ -1,0 +1,11 @@
+key: sz-chkt/leaklog
+publisher: sz-chkt
+name: Leaklog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SZCHKT/Leaklog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SZCHKT/Leaklog
+identifiers:
+- winget: SZCHKT.Leaklog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SZCHKT/Leaklog
+aliases: []

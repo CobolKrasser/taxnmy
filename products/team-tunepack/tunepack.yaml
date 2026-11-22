@@ -1,0 +1,11 @@
+key: team-tunepack/tunepack
+publisher: team-tunepack
+name: Tunepack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tunepack/Tunepack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tunepack/Tunepack
+identifiers:
+- winget: Tunepack.Tunepack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tunepack/Tunepack
+aliases: []

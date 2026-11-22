@@ -1,0 +1,11 @@
+key: try2love/codex-mobile-bridge
+publisher: try2love
+name: Codex Mobile Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/try2love/CodexMobileBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/try2love/CodexMobileBridge
+identifiers:
+- winget: try2love.CodexMobileBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/try2love/CodexMobileBridge
+aliases: []

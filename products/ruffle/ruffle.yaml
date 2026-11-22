@@ -1,0 +1,13 @@
+key: ruffle/ruffle
+publisher: ruffle
+name: Ruffle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ruffle/Ruffle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ruffle/Ruffle
+identifiers:
+- winget: Ruffle.Ruffle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ruffle/Ruffle
+- winget: Ruffle.Ruffle.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ruffle/Ruffle/Nightly
+aliases: []

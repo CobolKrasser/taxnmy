@@ -1,0 +1,12 @@
+key: mafold/cli
+publisher: mafold
+name: Mafold CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mafold/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mafold/CLI
+identifiers:
+- winget: Mafold.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mafold/CLI
+aliases:
+- mafold/mafold-cli

@@ -1,0 +1,11 @@
+key: guardian-eye-team/guardian-eye
+publisher: guardian-eye-team
+name: Guardian Eye
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuardianEye/GuardianEye
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuardianEye/GuardianEye
+identifiers:
+- winget: GuardianEye.GuardianEye
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuardianEye/GuardianEye
+aliases: []

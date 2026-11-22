@@ -1,0 +1,11 @@
+key: example-com/opencowork
+publisher: example-com
+name: OpenCoWork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIDotNet/OpenCowork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIDotNet/OpenCowork
+identifiers:
+- winget: AIDotNet.OpenCowork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIDotNet/OpenCowork
+aliases: []

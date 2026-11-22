@@ -1,0 +1,11 @@
+key: realtime-soft/ultramon
+publisher: realtime-soft
+name: UltraMon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealtimeSoft/UltraMon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealtimeSoft/UltraMon
+identifiers:
+- winget: RealtimeSoft.UltraMon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealtimeSoft/UltraMon
+aliases: []

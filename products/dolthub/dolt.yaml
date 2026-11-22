@@ -1,0 +1,11 @@
+key: dolthub/dolt
+publisher: dolthub
+name: Dolt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoltHub/Dolt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoltHub/Dolt
+identifiers:
+- winget: DoltHub.Dolt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoltHub/Dolt
+aliases: []

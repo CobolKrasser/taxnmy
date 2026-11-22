@@ -1,0 +1,11 @@
+key: corsixth-team/corsixth
+publisher: corsixth-team
+name: CorsixTH
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorsixTH/CorsixTH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorsixTH/CorsixTH
+identifiers:
+- winget: CorsixTH.CorsixTH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorsixTH/CorsixTH
+aliases: []

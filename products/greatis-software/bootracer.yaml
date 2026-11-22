@@ -1,0 +1,11 @@
+key: greatis-software/bootracer
+publisher: greatis-software
+name: BootRacer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootRacer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootRacer
+identifiers:
+- winget: Greatis.BootRacer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootRacer
+aliases: []

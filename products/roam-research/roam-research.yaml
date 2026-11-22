@@ -1,0 +1,11 @@
+key: roam-research/roam-research
+publisher: roam-research
+name: Roam Research
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoamResearch/RoamResearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoamResearch/RoamResearch
+identifiers:
+- winget: RoamResearch.RoamResearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoamResearch/RoamResearch
+aliases: []

@@ -1,0 +1,11 @@
+key: justsong/one-api
+publisher: justsong
+name: One API
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JustSong/OneAPI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JustSong/OneAPI
+identifiers:
+- winget: JustSong.OneAPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JustSong/OneAPI
+aliases: []

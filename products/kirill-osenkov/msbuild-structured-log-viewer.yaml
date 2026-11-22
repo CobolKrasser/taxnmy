@@ -1,0 +1,11 @@
+key: kirill-osenkov/msbuild-structured-log-viewer
+publisher: kirill-osenkov
+name: MSBuild Structured Log Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirillOsenkov/MSBuildStructuredLogViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirillOsenkov/MSBuildStructuredLogViewer
+identifiers:
+- winget: KirillOsenkov.MSBuildStructuredLogViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KirillOsenkov/MSBuildStructuredLogViewer
+aliases: []

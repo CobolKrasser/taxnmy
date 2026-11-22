@@ -1,0 +1,11 @@
+key: python-packaging-authority/hatch
+publisher: python-packaging-authority
+name: Hatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPA/Hatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPA/Hatch
+identifiers:
+- winget: PyPA.Hatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPA/Hatch
+aliases: []

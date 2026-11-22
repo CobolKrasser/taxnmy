@@ -1,0 +1,12 @@
+key: adinstruments/labchart-reader
+publisher: adinstruments
+name: ADInstruments LabChart Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChartReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChartReader
+identifiers:
+- winget: ADInstruments.LabChartReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChartReader
+aliases:
+- adinstruments/adinstruments-labchart-reader

@@ -10,4 +10,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/libreoffice.md
 - homebrew: libreoffice
   source: https://formulae.brew.sh/cask/libreoffice
+- winget: TheDocumentFoundation.LibreOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheDocumentFoundation/LibreOffice
 aliases: []

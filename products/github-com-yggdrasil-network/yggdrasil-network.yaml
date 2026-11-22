@@ -1,0 +1,11 @@
+key: github-com-yggdrasil-network/yggdrasil-network
+publisher: github-com-yggdrasil-network
+name: Yggdrasil Network
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YggdrasilNetwork/Yggdrasil
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YggdrasilNetwork/Yggdrasil
+identifiers:
+- winget: YggdrasilNetwork.Yggdrasil
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YggdrasilNetwork/Yggdrasil
+aliases: []

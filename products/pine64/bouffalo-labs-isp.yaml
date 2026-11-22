@@ -1,0 +1,11 @@
+key: pine64/bouffalo-labs-isp
+publisher: pine64
+name: Bouffalo Labs ISP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PINE64/BLISP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PINE64/BLISP
+identifiers:
+- winget: PINE64.BLISP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PINE64/BLISP
+aliases: []

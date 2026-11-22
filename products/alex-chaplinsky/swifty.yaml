@@ -1,0 +1,11 @@
+key: alex-chaplinsky/swifty
+publisher: alex-chaplinsky
+name: Swifty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/swiftyapp/swifty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/swiftyapp/swifty
+identifiers:
+- winget: swiftyapp.swifty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/swiftyapp/swifty
+aliases: []

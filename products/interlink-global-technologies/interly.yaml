@@ -1,0 +1,11 @@
+key: interlink-global-technologies/interly
+publisher: interlink-global-technologies
+name: Interly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterlinkGlobal/Interly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterlinkGlobal/Interly
+identifiers:
+- winget: InterlinkGlobal.Interly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterlinkGlobal/Interly
+aliases: []

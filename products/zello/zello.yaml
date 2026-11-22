@@ -1,0 +1,11 @@
+key: zello/zello
+publisher: zello
+name: Zello
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZelloInc/Zello
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZelloInc/Zello
+identifiers:
+- winget: ZelloInc.Zello
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZelloInc/Zello
+aliases: []

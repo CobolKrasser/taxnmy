@@ -1,0 +1,11 @@
+key: philips-professional-display-solutions/philips-interact-client
+publisher: philips-professional-display-solutions
+name: Philips Interact Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/Interact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/Interact
+identifiers:
+- winget: Philips.Interact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/Interact
+aliases: []

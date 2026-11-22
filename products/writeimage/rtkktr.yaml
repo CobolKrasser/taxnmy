@@ -1,0 +1,11 @@
+key: writeimage/rtkktr
+publisher: writeimage
+name: rtkktr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rtkktr/WriteImage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rtkktr/WriteImage
+identifiers:
+- winget: rtkktr.WriteImage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rtkktr/WriteImage
+aliases: []

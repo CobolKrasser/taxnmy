@@ -1,0 +1,11 @@
+key: sosomlab/nexa-coffee
+publisher: sosomlab
+name: Nexa Coffee
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaCoffee
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaCoffee
+identifiers:
+- winget: SosomLab.NexaCoffee
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaCoffee
+aliases: []

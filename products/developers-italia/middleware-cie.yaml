@@ -1,0 +1,11 @@
+key: developers-italia/middleware-cie
+publisher: developers-italia
+name: Middleware CIE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Italia/CieMiddleware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Italia/CieMiddleware
+identifiers:
+- winget: Italia.CieMiddleware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Italia/CieMiddleware
+aliases: []

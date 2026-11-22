@@ -1,0 +1,11 @@
+key: veyon-solutions/veyon
+publisher: veyon-solutions
+name: Veyon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VeyonSolutions/Veyon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VeyonSolutions/Veyon
+identifiers:
+- winget: VeyonSolutions.Veyon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VeyonSolutions/Veyon
+aliases: []

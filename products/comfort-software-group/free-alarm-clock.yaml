@@ -1,0 +1,11 @@
+key: comfort-software-group/free-alarm-clock
+publisher: comfort-software-group
+name: Free Alarm Clock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/FreeAlarmClock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/FreeAlarmClock
+identifiers:
+- winget: ComfortSoftwareGroup.FreeAlarmClock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/FreeAlarmClock
+aliases: []

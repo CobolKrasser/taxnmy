@@ -1,0 +1,12 @@
+key: thorlabs/xa
+publisher: thorlabs
+name: Thorlabs XA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/XA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/XA
+identifiers:
+- winget: Thorlabs.XA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/XA
+aliases:
+- thorlabs/thorlabs-xa

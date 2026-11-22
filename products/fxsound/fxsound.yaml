@@ -1,0 +1,13 @@
+key: fxsound/fxsound
+publisher: fxsound
+name: FxSound
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FxSound/FxSound
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FxSound/FxSound
+identifiers:
+- winget: FxSound.FxSound
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FxSound/FxSound
+- winget: FxSound.FxSound.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FxSound/FxSound/Beta
+aliases: []

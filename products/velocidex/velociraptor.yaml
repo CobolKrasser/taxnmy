@@ -1,0 +1,11 @@
+key: velocidex/velociraptor
+publisher: velocidex
+name: Velociraptor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Velocidex/Velociraptor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Velocidex/Velociraptor
+identifiers:
+- winget: Velocidex.Velociraptor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Velocidex/Velociraptor
+aliases: []

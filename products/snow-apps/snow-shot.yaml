@@ -1,0 +1,11 @@
+key: snow-apps/snow-shot
+publisher: snow-apps
+name: Snow Shot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mg-chao/snow-shot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mg-chao/snow-shot
+identifiers:
+- winget: mg-chao.snow-shot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mg-chao/snow-shot
+aliases: []

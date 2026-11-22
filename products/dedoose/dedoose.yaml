@@ -1,0 +1,11 @@
+key: dedoose/dedoose
+publisher: dedoose
+name: Dedoose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dedoose/Dedoose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dedoose/Dedoose
+identifiers:
+- winget: Dedoose.Dedoose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dedoose/Dedoose
+aliases: []

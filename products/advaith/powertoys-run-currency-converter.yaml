@@ -1,0 +1,11 @@
+key: advaith/powertoys-run-currency-converter
+publisher: advaith
+name: PowerToys-Run-Currency-Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/advaith/CurrencyConverterPowerToys
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/advaith/CurrencyConverterPowerToys
+identifiers:
+- winget: advaith.CurrencyConverterPowerToys
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/advaith/CurrencyConverterPowerToys
+aliases: []

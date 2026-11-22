@@ -1,0 +1,11 @@
+key: west-wind-technologies/west-wind-websurge
+publisher: west-wind-technologies
+name: West Wind WebSurge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WestWind/WebSurge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WestWind/WebSurge
+identifiers:
+- winget: WestWind.WebSurge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WestWind/WebSurge
+aliases: []

@@ -1,0 +1,11 @@
+key: axialis-software/axialis-cursorworkshop
+publisher: axialis-software
+name: Axialis CursorWorkshop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axialis/CursorWorkshop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axialis/CursorWorkshop
+identifiers:
+- winget: Axialis.CursorWorkshop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Axialis/CursorWorkshop
+aliases: []

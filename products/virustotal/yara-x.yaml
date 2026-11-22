@@ -1,0 +1,11 @@
+key: virustotal/yara-x
+publisher: virustotal
+name: YARA-X
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/YARA-X
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/YARA-X
+identifiers:
+- winget: VirusTotal.YARA-X
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/YARA-X
+aliases: []

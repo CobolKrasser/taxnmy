@@ -1,0 +1,11 @@
+key: melkam/dupliscan
+publisher: melkam
+name: DupliScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Melkam/DupliScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Melkam/DupliScan
+identifiers:
+- winget: Melkam.DupliScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Melkam/DupliScan
+aliases: []

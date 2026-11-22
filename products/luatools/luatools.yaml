@@ -1,0 +1,11 @@
+key: luatools/luatools
+publisher: luatools
+name: LuaTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuaTools/LuaTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuaTools/LuaTools
+identifiers:
+- winget: LuaTools.LuaTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuaTools/LuaTools
+aliases: []

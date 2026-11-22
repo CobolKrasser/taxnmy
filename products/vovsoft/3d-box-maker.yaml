@@ -1,0 +1,12 @@
+key: vovsoft/3d-box-maker
+publisher: vovsoft
+name: Vovsoft 3D Box Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/3DBoxMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/3DBoxMaker
+identifiers:
+- winget: VovSoft.3DBoxMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/3DBoxMaker
+aliases:
+- vovsoft/vovsoft-3d-box-maker

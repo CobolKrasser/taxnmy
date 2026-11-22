@@ -1,0 +1,11 @@
+key: francisco-salgueiro/en-croissant
+publisher: francisco-salgueiro
+name: en-croissant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnCroissant/EnCroissant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnCroissant/EnCroissant
+identifiers:
+- winget: EnCroissant.EnCroissant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnCroissant/EnCroissant
+aliases: []

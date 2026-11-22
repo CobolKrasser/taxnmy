@@ -1,0 +1,11 @@
+key: crowdstrike/perseus
+publisher: crowdstrike
+name: Perseus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdStrike/Perseus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdStrike/Perseus
+identifiers:
+- winget: CrowdStrike.Perseus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdStrike/Perseus
+aliases: []

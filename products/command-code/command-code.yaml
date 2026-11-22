@@ -1,0 +1,11 @@
+key: command-code/command-code
+publisher: command-code
+name: Command Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CommandCode/CommandCodeDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CommandCode/CommandCodeDesktop
+identifiers:
+- winget: CommandCode.CommandCodeDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CommandCode/CommandCodeDesktop
+aliases: []

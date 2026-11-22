@@ -1,0 +1,11 @@
+key: ccpku/pku-gateway
+publisher: ccpku
+name: PKU_Gateway
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pku/gateway
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pku/gateway
+identifiers:
+- winget: pku.gateway
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pku/gateway
+aliases: []

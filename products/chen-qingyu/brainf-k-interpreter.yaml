@@ -1,0 +1,11 @@
+key: chen-qingyu/brainf-k-interpreter
+publisher: chen-qingyu
+name: Brainf**k interpreter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChenQingYu/BF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChenQingYu/BF
+identifiers:
+- winget: ChenQingYu.BF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChenQingYu/BF
+aliases: []

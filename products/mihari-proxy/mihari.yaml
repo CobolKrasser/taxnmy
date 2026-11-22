@@ -1,0 +1,11 @@
+key: mihari-proxy/mihari
+publisher: mihari-proxy
+name: Mihari
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihari/Mihari
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihari/Mihari
+identifiers:
+- winget: Mihari.Mihari
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihari/Mihari
+aliases: []

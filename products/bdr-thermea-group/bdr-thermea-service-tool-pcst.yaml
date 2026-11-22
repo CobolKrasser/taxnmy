@@ -1,0 +1,11 @@
+key: bdr-thermea-group/bdr-thermea-service-tool-pcst
+publisher: bdr-thermea-group
+name: BDR Thermea Service Tool (PCST)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BDRThermea/ServiceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BDRThermea/ServiceTool
+identifiers:
+- winget: BDRThermea.ServiceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BDRThermea/ServiceTool
+aliases: []

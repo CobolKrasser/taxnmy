@@ -1,0 +1,12 @@
+key: ashampoo/app
+publisher: ashampoo
+name: Ashampoo App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ashampoo/AshampooApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ashampoo/AshampooApp
+identifiers:
+- winget: Ashampoo.AshampooApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ashampoo/AshampooApp
+aliases:
+- ashampoo/ashampoo-app

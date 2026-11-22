@@ -1,0 +1,11 @@
+key: pmx/setup-test
+publisher: pmx
+name: Setup_test
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMX/Setup_test
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMX/Setup_test
+identifiers:
+- winget: PMX.Setup_test
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PMX/Setup_test
+aliases: []

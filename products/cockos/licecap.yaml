@@ -1,0 +1,11 @@
+key: cockos/licecap
+publisher: cockos
+name: LICEcap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockos/LICEcap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockos/LICEcap
+identifiers:
+- winget: Cockos.LICEcap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cockos/LICEcap
+aliases: []

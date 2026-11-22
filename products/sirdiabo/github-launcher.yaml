@@ -1,0 +1,11 @@
+key: sirdiabo/github-launcher
+publisher: sirdiabo
+name: Github Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirDiabo/GithubLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirDiabo/GithubLauncher
+identifiers:
+- winget: SirDiabo.GithubLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirDiabo/GithubLauncher
+aliases: []

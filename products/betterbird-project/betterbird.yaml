@@ -1,0 +1,11 @@
+key: betterbird-project/betterbird
+publisher: betterbird-project
+name: Betterbird
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Betterbird/Betterbird
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Betterbird/Betterbird
+identifiers:
+- winget: Betterbird.Betterbird
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Betterbird/Betterbird
+aliases: []

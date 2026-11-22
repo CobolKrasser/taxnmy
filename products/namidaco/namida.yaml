@@ -1,0 +1,11 @@
+key: namidaco/namida
+publisher: namidaco
+name: Namida
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/namidaco/Namida
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/namidaco/Namida
+identifiers:
+- winget: namidaco.Namida
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/namidaco/Namida
+aliases: []

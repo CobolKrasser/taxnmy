@@ -1,0 +1,11 @@
+key: colorlogic/colorant
+publisher: colorlogic
+name: ColorAnt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/ColorAnt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/ColorAnt
+identifiers:
+- winget: ColorLogic.ColorAnt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/ColorAnt
+aliases: []

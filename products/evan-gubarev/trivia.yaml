@@ -1,0 +1,11 @@
+key: evan-gubarev/trivia
+publisher: evan-gubarev
+name: Trivia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trivia-Bot-Apps/trivia-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trivia-Bot-Apps/trivia-desktop
+identifiers:
+- winget: Trivia-Bot-Apps.trivia-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trivia-Bot-Apps/trivia-desktop
+aliases: []

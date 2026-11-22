@@ -1,0 +1,11 @@
+key: bitwarden/bitwarden
+publisher: bitwarden
+name: Bitwarden
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden
+identifiers:
+- winget: Bitwarden.Bitwarden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden
+aliases: []

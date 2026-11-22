@@ -1,0 +1,11 @@
+key: lazytyper/lazytyper
+publisher: lazytyper
+name: LazyTyper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oldcai/LazyTyper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oldcai/LazyTyper
+identifiers:
+- winget: oldcai.LazyTyper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oldcai/LazyTyper
+aliases: []

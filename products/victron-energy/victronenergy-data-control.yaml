@@ -1,0 +1,11 @@
+key: victron-energy/victronenergy-data-control
+publisher: victron-energy
+name: VictronEnergy Data Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/DataControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/DataControl
+identifiers:
+- winget: VictronEnergy.DataControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictronEnergy/DataControl
+aliases: []

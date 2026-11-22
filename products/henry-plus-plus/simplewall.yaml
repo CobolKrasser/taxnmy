@@ -1,0 +1,11 @@
+key: henry-plus-plus/simplewall
+publisher: henry-plus-plus
+name: simplewall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/simplewall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/simplewall
+identifiers:
+- winget: Henry++.simplewall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/simplewall
+aliases: []

@@ -1,0 +1,11 @@
+key: http-gadgetsrevived-com/windows-desktop-gadgets
+publisher: http-gadgetsrevived-com
+name: Windows Desktop Gadgets
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GadgetsRevived/GadgetsRevived
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GadgetsRevived/GadgetsRevived
+identifiers:
+- winget: GadgetsRevived.GadgetsRevived
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GadgetsRevived/GadgetsRevived
+aliases: []

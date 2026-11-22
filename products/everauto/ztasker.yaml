@@ -1,0 +1,11 @@
+key: everauto/ztasker
+publisher: everauto
+name: zTasker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/everauto/zTasker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/everauto/zTasker
+identifiers:
+- winget: everauto.zTasker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/everauto/zTasker
+aliases: []

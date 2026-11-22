@@ -1,0 +1,11 @@
+key: keith-martin/ssis-multiple-hash
+publisher: keith-martin
+name: SSIS Multiple Hash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/keif888/SSISMHash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/keif888/SSISMHash
+identifiers:
+- winget: keif888.SSISMHash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/keif888/SSISMHash
+aliases: []

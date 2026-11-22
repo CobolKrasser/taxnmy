@@ -1,0 +1,11 @@
+key: srcbox-net/gkrellm-for-windows
+publisher: srcbox-net
+name: GkrellM for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SrcBox/GKrellM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SrcBox/GKrellM
+identifiers:
+- winget: SrcBox.GKrellM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SrcBox/GKrellM
+aliases: []

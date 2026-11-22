@@ -1,0 +1,11 @@
+key: riverscript/riverscript
+publisher: riverscript
+name: RiverScript
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiverScript/RiverScript
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiverScript/RiverScript
+identifiers:
+- winget: RiverScript.RiverScript
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiverScript/RiverScript
+aliases: []

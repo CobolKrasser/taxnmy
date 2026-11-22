@@ -1,0 +1,11 @@
+key: stellantis-europe/peugeot-update
+publisher: stellantis-europe
+name: Peugeot Update
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellantis/PeugeotUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellantis/PeugeotUpdate
+identifiers:
+- winget: Stellantis.PeugeotUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellantis/PeugeotUpdate
+aliases: []

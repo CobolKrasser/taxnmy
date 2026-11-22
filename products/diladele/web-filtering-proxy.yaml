@@ -1,0 +1,11 @@
+key: diladele/web-filtering-proxy
+publisher: diladele
+name: Web Filtering Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diladele/WebProxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diladele/WebProxy
+identifiers:
+- winget: Diladele.WebProxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diladele/WebProxy
+aliases: []

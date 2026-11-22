@@ -1,0 +1,11 @@
+key: softsea/pc-screen-capture
+publisher: softsea
+name: PC Screen Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PCScreenCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PCScreenCapture
+identifiers:
+- winget: SoftSea.PCScreenCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PCScreenCapture
+aliases: []

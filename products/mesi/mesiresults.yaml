@@ -1,0 +1,11 @@
+key: mesi/mesiresults
+publisher: mesi
+name: MESIresults
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MESI/MESIresults
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MESI/MESIresults
+identifiers:
+- winget: MESI.MESIresults
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MESI/MESIresults
+aliases: []

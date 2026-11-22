@@ -1,0 +1,11 @@
+key: junaid-islam/surge-downloader
+publisher: junaid-islam
+name: Surge Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/surge-downloader/surge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/surge-downloader/surge
+identifiers:
+- winget: surge-downloader.surge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/surge-downloader/surge
+aliases: []

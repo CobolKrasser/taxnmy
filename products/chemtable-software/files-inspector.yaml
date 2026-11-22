@@ -1,0 +1,11 @@
+key: chemtable-software/files-inspector
+publisher: chemtable-software
+name: Files Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/FilesInspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/FilesInspector
+identifiers:
+- winget: ChemTableSoftware.FilesInspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/FilesInspector
+aliases: []

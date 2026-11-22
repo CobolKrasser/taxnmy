@@ -1,0 +1,11 @@
+key: elves/elvish
+publisher: elves
+name: elvish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elves/elvish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elves/elvish
+identifiers:
+- winget: elves.elvish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elves/elvish
+aliases: []

@@ -1,0 +1,12 @@
+key: channel/talk-for-desktop
+publisher: channel
+name: Channel Talk for Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChannelCorporation/ChannelTalkforDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChannelCorporation/ChannelTalkforDesktop
+identifiers:
+- winget: ChannelCorporation.ChannelTalkforDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChannelCorporation/ChannelTalkforDesktop
+aliases:
+- channel/channel-talk-for-desktop

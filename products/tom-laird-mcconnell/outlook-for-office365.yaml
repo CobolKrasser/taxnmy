@@ -1,0 +1,11 @@
+key: tom-laird-mcconnell/outlook-for-office365
+publisher: tom-laird-mcconnell
+name: Outlook for Office365
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tomlm/electron-outlook-365
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tomlm/electron-outlook-365
+identifiers:
+- winget: tomlm.electron-outlook-365
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tomlm/electron-outlook-365
+aliases: []

@@ -1,0 +1,11 @@
+key: starkrats/toolbox
+publisher: starkrats
+name: Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starkrats/Toolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starkrats/Toolbox
+identifiers:
+- winget: Starkrats.Toolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starkrats/Toolbox
+aliases: []

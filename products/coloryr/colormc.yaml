@@ -1,0 +1,11 @@
+key: coloryr/colormc
+publisher: coloryr
+name: ColorMC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coloryr/ColorMC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coloryr/ColorMC
+identifiers:
+- winget: Coloryr.ColorMC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coloryr/ColorMC
+aliases: []

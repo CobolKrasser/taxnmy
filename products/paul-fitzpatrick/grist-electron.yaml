@@ -1,0 +1,11 @@
+key: paul-fitzpatrick/grist-electron
+publisher: paul-fitzpatrick
+name: grist-electron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GristLabs/GristDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GristLabs/GristDesktop
+identifiers:
+- winget: GristLabs.GristDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GristLabs/GristDesktop
+aliases: []

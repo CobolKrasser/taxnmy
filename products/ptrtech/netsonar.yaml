@@ -1,0 +1,11 @@
+key: ptrtech/netsonar
+publisher: ptrtech
+name: NetSonar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTRTECH/NetSonar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTRTECH/NetSonar
+identifiers:
+- winget: PTRTECH.NetSonar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTRTECH/NetSonar
+aliases: []

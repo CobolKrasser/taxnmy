@@ -1,0 +1,11 @@
+key: kiwix/wikivoyage-by-kiwix-electron-edition
+publisher: kiwix
+name: Wikivoyage by Kiwix Electron Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/Wikivoyage/Electron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/Wikivoyage/Electron
+identifiers:
+- winget: Kiwix.Wikivoyage.Electron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kiwix/Wikivoyage/Electron
+aliases: []

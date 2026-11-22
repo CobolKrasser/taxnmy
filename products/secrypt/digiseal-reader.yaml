@@ -1,0 +1,11 @@
+key: secrypt/digiseal-reader
+publisher: secrypt
+name: digiSeal reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/secrypt/digiSealreader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/secrypt/digiSealreader
+identifiers:
+- winget: secrypt.digiSealreader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/secrypt/digiSealreader
+aliases: []

@@ -1,0 +1,16 @@
+key: discord/ptb
+publisher: discord
+name: Discord PTB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/PTB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/PTB
+identifiers:
+- winget: Discord.Discord.PTB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/PTB
+- winget: Discord.Discord.PTB.arm64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/PTB/arm64
+- winget: Discord.Discord.PTB.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discord/Discord/PTB/x86
+aliases:
+- discord/discord-ptb

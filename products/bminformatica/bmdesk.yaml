@@ -1,0 +1,11 @@
+key: bminformatica/bmdesk
+publisher: bminformatica
+name: BMDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bminformatica/BMDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bminformatica/BMDesk
+identifiers:
+- winget: Bminformatica.BMDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bminformatica/BMDesk
+aliases: []

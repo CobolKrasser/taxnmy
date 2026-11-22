@@ -1,0 +1,11 @@
+key: ideamk/raw-image-viewer
+publisher: ideamk
+name: RAW Image Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/RAWImageViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/RAWImageViewer
+identifiers:
+- winget: IdeaMK.RAWImageViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/RAWImageViewer
+aliases: []

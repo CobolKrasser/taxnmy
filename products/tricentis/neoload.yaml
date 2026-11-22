@@ -1,0 +1,11 @@
+key: tricentis/neoload
+publisher: tricentis
+name: NeoLoad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tricentis/NeoLoad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tricentis/NeoLoad
+identifiers:
+- winget: Tricentis.NeoLoad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tricentis/NeoLoad
+aliases: []

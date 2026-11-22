@@ -1,0 +1,11 @@
+key: marquis-kurt/hyperspace-desktop
+publisher: marquis-kurt
+name: Hyperspace Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HyperspaceDev/HyperspaceDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HyperspaceDev/HyperspaceDesktop
+identifiers:
+- winget: HyperspaceDev.HyperspaceDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HyperspaceDev/HyperspaceDesktop
+aliases: []

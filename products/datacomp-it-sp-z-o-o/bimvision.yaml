@@ -1,0 +1,11 @@
+key: datacomp-it-sp-z-o-o/bimvision
+publisher: datacomp-it-sp-z-o-o
+name: BIMvision
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datacomp/BIMvision
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datacomp/BIMvision
+identifiers:
+- winget: Datacomp.BIMvision
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datacomp/BIMvision
+aliases: []

@@ -1,0 +1,11 @@
+key: automation/fmu-api
+publisher: automation
+name: fmu-api
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automation/fmu-api
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automation/fmu-api
+identifiers:
+- winget: Automation.fmu-api
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automation/fmu-api
+aliases: []

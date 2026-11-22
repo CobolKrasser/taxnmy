@@ -1,0 +1,11 @@
+key: goto/logmein-resolve-desktop-console
+publisher: goto
+name: LogMeIn Resolve Desktop Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/LogMeInResolveDesktopConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/LogMeInResolveDesktopConsole
+identifiers:
+- winget: GoTo.LogMeInResolveDesktopConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/LogMeInResolveDesktopConsole
+aliases: []

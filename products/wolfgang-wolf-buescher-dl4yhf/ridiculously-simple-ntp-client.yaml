@@ -1,0 +1,11 @@
+key: wolfgang-wolf-buescher-dl4yhf/ridiculously-simple-ntp-client
+publisher: wolfgang-wolf-buescher-dl4yhf
+name: Ridiculously Simple NTP Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolfgangBuescher/rsNTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolfgangBuescher/rsNTP
+identifiers:
+- winget: WolfgangBuescher.rsNTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolfgangBuescher/rsNTP
+aliases: []

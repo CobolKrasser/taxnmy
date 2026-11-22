@@ -1,0 +1,11 @@
+key: olimoff-dev/devprojex
+publisher: olimoff-dev
+name: DevProjex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/DevProjex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/DevProjex
+identifiers:
+- winget: OlimoffDev.DevProjex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlimoffDev/DevProjex
+aliases: []

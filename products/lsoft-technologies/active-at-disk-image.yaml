@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-disk-image
+publisher: lsoft-technologies
+name: Active@ Disk Image
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDiskImage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDiskImage
+identifiers:
+- winget: LSoftTechnologies.ActiveDiskImage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveDiskImage
+aliases: []

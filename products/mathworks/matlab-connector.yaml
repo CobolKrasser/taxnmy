@@ -1,0 +1,11 @@
+key: mathworks/matlab-connector
+publisher: mathworks
+name: MATLAB Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MathWorks/MATLABConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MathWorks/MATLABConnector
+identifiers:
+- winget: MathWorks.MATLABConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MathWorks/MATLABConnector
+aliases: []

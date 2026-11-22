@@ -1,0 +1,11 @@
+key: pawel-lidwin/comet
+publisher: pawel-lidwin
+name: Comet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/imLinguin/comet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/imLinguin/comet
+identifiers:
+- winget: imLinguin.comet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/imLinguin/comet
+aliases: []

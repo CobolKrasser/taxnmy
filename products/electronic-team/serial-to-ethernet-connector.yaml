@@ -1,0 +1,11 @@
+key: electronic-team/serial-to-ethernet-connector
+publisher: electronic-team
+name: Serial to Ethernet Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/SerialOverEthernet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/SerialOverEthernet
+identifiers:
+- winget: ElectronicTeam.SerialOverEthernet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/SerialOverEthernet
+aliases: []

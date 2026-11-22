@@ -1,0 +1,11 @@
+key: xcomart/rulogman
+publisher: xcomart
+name: rulogman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Rulogman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Rulogman
+identifiers:
+- winget: Xcomart.Rulogman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Rulogman
+aliases: []

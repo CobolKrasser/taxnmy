@@ -1,0 +1,11 @@
+key: open-media/4k-video-downloader
+publisher: open-media
+name: 4K Video Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KVideoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KVideoDownloader
+identifiers:
+- winget: OpenMedia.4KVideoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KVideoDownloader
+aliases: []

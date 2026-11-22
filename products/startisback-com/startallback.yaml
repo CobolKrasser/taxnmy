@@ -1,0 +1,11 @@
+key: startisback-com/startallback
+publisher: startisback-com
+name: StartAllBack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StartIsBack/StartAllBack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StartIsBack/StartAllBack
+identifiers:
+- winget: StartIsBack.StartAllBack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StartIsBack/StartAllBack
+aliases: []

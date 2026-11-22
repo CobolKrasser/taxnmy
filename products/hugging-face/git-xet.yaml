@@ -1,0 +1,11 @@
+key: hugging-face/git-xet
+publisher: hugging-face
+name: Git-Xet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HuggingFace/Git-Xet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HuggingFace/Git-Xet
+identifiers:
+- winget: HuggingFace.Git-Xet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HuggingFace/Git-Xet
+aliases: []

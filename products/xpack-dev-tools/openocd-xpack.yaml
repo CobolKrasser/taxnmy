@@ -1,0 +1,11 @@
+key: xpack-dev-tools/openocd-xpack
+publisher: xpack-dev-tools
+name: openocd-xpack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpack-dev-tools/openocd-xpack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpack-dev-tools/openocd-xpack
+identifiers:
+- winget: xpack-dev-tools.openocd-xpack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpack-dev-tools/openocd-xpack
+aliases: []

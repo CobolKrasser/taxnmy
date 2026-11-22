@@ -1,0 +1,11 @@
+key: learning-machines/deckcraft
+publisher: learning-machines
+name: DeckCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/DeckCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/DeckCraft
+identifiers:
+- winget: ArtCraft.DeckCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/DeckCraft
+aliases: []

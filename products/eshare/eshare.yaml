@@ -1,0 +1,13 @@
+key: eshare/eshare
+publisher: eshare
+name: EShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EShare/EShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EShare/EShare
+identifiers:
+- winget: EShare.EShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EShare/EShare
+- winget: EShare.EShare.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EShare/EShare/EXE
+aliases: []

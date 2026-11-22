@@ -1,0 +1,11 @@
+key: shivu516/windows-hello-fix
+publisher: shivu516
+name: Windows Hello Fix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shivu516/WindowsHelloFix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shivu516/WindowsHelloFix
+identifiers:
+- winget: Shivu516.WindowsHelloFix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shivu516/WindowsHelloFix
+aliases: []

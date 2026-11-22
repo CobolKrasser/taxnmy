@@ -1,0 +1,12 @@
+key: auslogics/boostspeed
+publisher: auslogics
+name: Auslogics BoostSpeed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/BoostSpeed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/BoostSpeed
+identifiers:
+- winget: Auslogics.BoostSpeed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/BoostSpeed
+aliases:
+- auslogics/auslogics-boostspeed

@@ -1,0 +1,11 @@
+key: 360-security-center/360-zip
+publisher: 360-security-center
+name: 360 Zip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/360Zip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/360Zip
+identifiers:
+- winget: 360.360Zip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/360Zip
+aliases: []

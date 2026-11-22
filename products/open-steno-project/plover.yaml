@@ -1,0 +1,11 @@
+key: open-steno-project/plover
+publisher: open-steno-project
+name: Plover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenStenoProject/Plover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenStenoProject/Plover
+identifiers:
+- winget: OpenStenoProject.Plover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenStenoProject/Plover
+aliases: []

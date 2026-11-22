@@ -1,0 +1,13 @@
+key: recherche-solutions/mdreader
+publisher: recherche-solutions
+name: mdreader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/recherchesolutions/mdreader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/recherchesolutions/mdreader
+identifiers:
+- winget: mdreadercontributors.mdreader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mdreadercontributors/mdreader
+- winget: recherchesolutions.mdreader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/recherchesolutions/mdreader
+aliases: []

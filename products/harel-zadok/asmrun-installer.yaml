@@ -1,0 +1,11 @@
+key: harel-zadok/asmrun-installer
+publisher: harel-zadok
+name: asmrun-installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/com/harelzadok/asmrun-installer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/com/harelzadok/asmrun-installer
+identifiers:
+- winget: com.harelzadok.asmrun-installer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/com/harelzadok/asmrun-installer
+aliases: []

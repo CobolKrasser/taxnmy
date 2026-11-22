@@ -1,0 +1,11 @@
+key: ashok-p-nadkarni/magicsplat-tcl-tk-for-windows-64-bit
+publisher: ashok-p-nadkarni
+name: Magicsplat Tcl/Tk for Windows (64-bit)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicsplat/TclTk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicsplat/TclTk
+identifiers:
+- winget: Magicsplat.TclTk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicsplat/TclTk
+aliases: []

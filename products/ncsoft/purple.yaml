@@ -1,0 +1,11 @@
+key: ncsoft/purple
+publisher: ncsoft
+name: PURPLE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCSoft/Purple
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCSoft/Purple
+identifiers:
+- winget: NCSoft.Purple
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCSoft/Purple
+aliases: []

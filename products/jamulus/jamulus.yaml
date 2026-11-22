@@ -1,0 +1,11 @@
+key: jamulus/jamulus
+publisher: jamulus
+name: Jamulus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VolkerFischer/Jamulus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VolkerFischer/Jamulus
+identifiers:
+- winget: VolkerFischer.Jamulus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VolkerFischer/Jamulus
+aliases: []

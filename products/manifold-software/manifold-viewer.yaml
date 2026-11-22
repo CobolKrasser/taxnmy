@@ -1,0 +1,11 @@
+key: manifold-software/manifold-viewer
+publisher: manifold-software
+name: Manifold Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/ManifoldViewer/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/ManifoldViewer/9
+identifiers:
+- winget: ManifoldSoftware.ManifoldViewer.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManifoldSoftware/ManifoldViewer/9
+aliases: []

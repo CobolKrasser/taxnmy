@@ -1,0 +1,11 @@
+key: teradata/loom
+publisher: teradata
+name: Loom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/Loom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/Loom
+identifiers:
+- winget: Teradata.Loom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Teradata/Loom
+aliases: []

@@ -1,0 +1,11 @@
+key: supercollider-community/supercollider
+publisher: supercollider-community
+name: SuperCollider
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperCollider/SuperCollider
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperCollider/SuperCollider
+identifiers:
+- winget: SuperCollider.SuperCollider
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperCollider/SuperCollider
+aliases: []

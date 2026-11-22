@@ -1,0 +1,11 @@
+key: invowk/invowk
+publisher: invowk
+name: invowk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invowk/Invowk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invowk/Invowk
+identifiers:
+- winget: Invowk.Invowk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invowk/Invowk
+aliases: []

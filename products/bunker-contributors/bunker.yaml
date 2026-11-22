@@ -1,0 +1,11 @@
+key: bunker-contributors/bunker
+publisher: bunker-contributors
+name: Bunker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bunker/Bunker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bunker/Bunker
+identifiers:
+- winget: Bunker.Bunker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bunker/Bunker
+aliases: []

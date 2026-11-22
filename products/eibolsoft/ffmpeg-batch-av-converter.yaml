@@ -1,0 +1,11 @@
+key: eibolsoft/ffmpeg-batch-av-converter
+publisher: eibolsoft
+name: FFmpeg Batch AV Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eibol/FFmpegBatchAVConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eibol/FFmpegBatchAVConverter
+identifiers:
+- winget: eibol.FFmpegBatchAVConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eibol/FFmpegBatchAVConverter
+aliases: []

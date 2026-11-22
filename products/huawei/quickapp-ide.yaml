@@ -1,0 +1,12 @@
+key: huawei/quickapp-ide
+publisher: huawei
+name: Huawei QuickApp IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/QuickAppIde
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/QuickAppIde
+identifiers:
+- winget: Huawei.QuickAppIde
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/QuickAppIde
+aliases:
+- huawei/huawei-quickapp-ide

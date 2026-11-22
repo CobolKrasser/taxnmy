@@ -1,0 +1,11 @@
+key: harman-international/adobe-air
+publisher: harman-international
+name: Adobe AIR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HARMAN/AdobeAIR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HARMAN/AdobeAIR
+identifiers:
+- winget: HARMAN.AdobeAIR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HARMAN/AdobeAIR
+aliases: []

@@ -1,0 +1,11 @@
+key: fateam/fagram
+publisher: fateam
+name: FAgram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FajoX1/FAgramDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FajoX1/FAgramDesktop
+identifiers:
+- winget: FajoX1.FAgramDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FajoX1/FAgramDesktop
+aliases: []

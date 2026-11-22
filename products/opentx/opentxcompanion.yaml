@@ -1,0 +1,11 @@
+key: opentx/opentxcompanion
+publisher: opentx
+name: OpenTXCompanion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTX/OpenTXCompanion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTX/OpenTXCompanion
+identifiers:
+- winget: OpenTX.OpenTXCompanion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTX/OpenTXCompanion
+aliases: []

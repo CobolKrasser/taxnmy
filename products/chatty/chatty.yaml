@@ -1,0 +1,11 @@
+key: chatty/chatty
+publisher: chatty
+name: Chatty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chatty/Chatty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chatty/Chatty
+identifiers:
+- winget: Chatty.Chatty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chatty/Chatty
+aliases: []

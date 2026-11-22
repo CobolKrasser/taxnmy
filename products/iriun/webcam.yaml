@@ -1,0 +1,12 @@
+key: iriun/webcam
+publisher: iriun
+name: Iriun Webcam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iriun/IriunWebcam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iriun/IriunWebcam
+identifiers:
+- winget: Iriun.IriunWebcam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iriun/IriunWebcam
+aliases:
+- iriun/iriun-webcam

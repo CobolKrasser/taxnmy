@@ -1,0 +1,11 @@
+key: proseflow/proseflow
+publisher: proseflow
+name: ProseFlow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSXPrime/ProseFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSXPrime/ProseFlow
+identifiers:
+- winget: LSXPrime.ProseFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSXPrime/ProseFlow
+aliases: []

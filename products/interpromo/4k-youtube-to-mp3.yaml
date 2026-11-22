@@ -1,0 +1,11 @@
+key: interpromo/4k-youtube-to-mp3
+publisher: interpromo
+name: 4K YouTube to MP3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KYoutubetoMP3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KYoutubetoMP3
+identifiers:
+- winget: OpenMedia.4KYoutubetoMP3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KYoutubetoMP3
+aliases: []

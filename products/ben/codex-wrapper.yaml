@@ -1,0 +1,11 @@
+key: ben/codex-wrapper
+publisher: ben
+name: codex-wrapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cexll/codex-wrapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cexll/codex-wrapper
+identifiers:
+- winget: cexll.codex-wrapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cexll/codex-wrapper
+aliases: []

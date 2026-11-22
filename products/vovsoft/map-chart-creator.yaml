@@ -1,0 +1,12 @@
+key: vovsoft/map-chart-creator
+publisher: vovsoft
+name: Vovsoft Map Chart Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MapChartCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MapChartCreator
+identifiers:
+- winget: VovSoft.MapChartCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MapChartCreator
+aliases:
+- vovsoft/vovsoft-map-chart-creator

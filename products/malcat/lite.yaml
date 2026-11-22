@@ -1,0 +1,12 @@
+key: malcat/lite
+publisher: malcat
+name: Malcat Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Malcat/MalcatLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Malcat/MalcatLite
+identifiers:
+- winget: Malcat.MalcatLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Malcat/MalcatLite
+aliases:
+- malcat/malcat-lite

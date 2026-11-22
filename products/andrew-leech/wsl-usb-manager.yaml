@@ -1,0 +1,11 @@
+key: andrew-leech/wsl-usb-manager
+publisher: andrew-leech
+name: WSL USB Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alelec/WSLUSBManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alelec/WSLUSBManager
+identifiers:
+- winget: alelec.WSLUSBManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/alelec/WSLUSBManager
+aliases: []

@@ -1,0 +1,12 @@
+key: vovsoft/disk-monitor-gadget
+publisher: vovsoft
+name: Vovsoft Disk Monitor Gadget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiskMonitorGadget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiskMonitorGadget
+identifiers:
+- winget: VovSoft.DiskMonitorGadget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiskMonitorGadget
+aliases:
+- vovsoft/vovsoft-disk-monitor-gadget

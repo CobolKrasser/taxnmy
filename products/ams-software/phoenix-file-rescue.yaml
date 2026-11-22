@@ -1,0 +1,11 @@
+key: ams-software/phoenix-file-rescue
+publisher: ams-software
+name: Phoenix File Rescue
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhoenixFileRescue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhoenixFileRescue
+identifiers:
+- winget: AMSSoftware.PhoenixFileRescue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhoenixFileRescue
+aliases: []

@@ -1,0 +1,11 @@
+key: jpinert/keepalive
+publisher: jpinert
+name: KeepAlive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPInert/BT-KeepAlive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPInert/BT-KeepAlive
+identifiers:
+- winget: JPInert.BT-KeepAlive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JPInert/BT-KeepAlive
+aliases: []

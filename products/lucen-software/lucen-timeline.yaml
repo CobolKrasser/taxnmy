@@ -1,0 +1,11 @@
+key: lucen-software/lucen-timeline
+publisher: lucen-software
+name: Lucen Timeline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lucen/LucenTimeline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lucen/LucenTimeline
+identifiers:
+- winget: Lucen.LucenTimeline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lucen/LucenTimeline
+aliases: []

@@ -1,0 +1,12 @@
+key: voyager-software/infinity-saas-client
+publisher: voyager-software
+name: Voyager Software Infinity SaaS Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IkiruPeople/VoyagerInfinitySaaSClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IkiruPeople/VoyagerInfinitySaaSClient
+identifiers:
+- winget: IkiruPeople.VoyagerInfinitySaaSClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IkiruPeople/VoyagerInfinitySaaSClient
+aliases:
+- voyager-software/voyager-software-infinity-saas-client

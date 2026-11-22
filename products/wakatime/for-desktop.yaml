@@ -1,0 +1,12 @@
+key: wakatime/for-desktop
+publisher: wakatime
+name: WakaTime for Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wakatime/DesktopWakatime
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wakatime/DesktopWakatime
+identifiers:
+- winget: Wakatime.DesktopWakatime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wakatime/DesktopWakatime
+aliases:
+- wakatime/wakatime-for-desktop

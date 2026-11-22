@@ -1,0 +1,11 @@
+key: tetrate/wazero
+publisher: tetrate
+name: wazero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tetrate/wazero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tetrate/wazero
+identifiers:
+- winget: Tetrate.wazero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tetrate/wazero
+aliases: []

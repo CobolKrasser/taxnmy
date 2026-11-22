@@ -1,0 +1,12 @@
+key: ingenico/usb-drivers
+publisher: ingenico
+name: Ingenico USB Drivers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ingenico/IngenicoUSBDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ingenico/IngenicoUSBDriver
+identifiers:
+- winget: Ingenico.IngenicoUSBDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ingenico/IngenicoUSBDriver
+aliases:
+- ingenico/ingenico-usb-drivers

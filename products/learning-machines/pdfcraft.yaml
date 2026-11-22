@@ -1,0 +1,11 @@
+key: learning-machines/pdfcraft
+publisher: learning-machines
+name: PdfCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/PdfCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/PdfCraft
+identifiers:
+- winget: ArtCraft.PdfCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/PdfCraft
+aliases: []

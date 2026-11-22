@@ -1,0 +1,11 @@
+key: devart/tmetric-desktop
+publisher: devart
+name: TMetric Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devart/TMetric
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devart/TMetric
+identifiers:
+- winget: Devart.TMetric
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devart/TMetric
+aliases: []

@@ -1,0 +1,11 @@
+key: beijing-xiaomi-mobile-software/xiaomi-mimo-ai
+publisher: beijing-xiaomi-mobile-software
+name: Xiaomi MiMo AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoDesktop
+identifiers:
+- winget: Xiaomi.MiMoDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiaomi/MiMoDesktop
+aliases: []

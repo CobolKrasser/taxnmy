@@ -1,0 +1,11 @@
+key: scott-brogden/ditto
+publisher: scott-brogden
+name: Ditto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Ditto/Ditto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Ditto/Ditto
+identifiers:
+- winget: Ditto.Ditto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Ditto/Ditto
+aliases: []

@@ -1,0 +1,11 @@
+key: open-geospatial-solutions/rustgis
+publisher: open-geospatial-solutions
+name: RustGIS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGeos/RustGIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGeos/RustGIS
+identifiers:
+- winget: OpenGeos.RustGIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGeos/RustGIS
+aliases: []

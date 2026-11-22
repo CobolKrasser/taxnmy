@@ -1,0 +1,12 @@
+key: occt/mono
+publisher: occt
+name: OCCT Mono
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCBase/OCCT/Personal/Mono
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCBase/OCCT/Personal/Mono
+identifiers:
+- winget: OCBase.OCCT.Personal.Mono
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCBase/OCCT/Personal/Mono
+aliases:
+- occt/occt-mono

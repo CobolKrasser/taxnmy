@@ -1,0 +1,11 @@
+key: aroum/che
+publisher: aroum
+name: che
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aroum/che
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aroum/che
+identifiers:
+- winget: aroum.che
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aroum/che
+aliases: []

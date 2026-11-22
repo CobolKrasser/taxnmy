@@ -1,0 +1,11 @@
+key: servers-com/srvctl
+publisher: servers-com
+name: srvctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ServersCom/srvctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ServersCom/srvctl
+identifiers:
+- winget: ServersCom.srvctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ServersCom/srvctl
+aliases: []

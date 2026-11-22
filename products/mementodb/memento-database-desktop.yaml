@@ -1,0 +1,11 @@
+key: mementodb/memento-database-desktop
+publisher: mementodb
+name: Memento Database Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MementoDB/MementoDatabaseDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MementoDB/MementoDatabaseDesktop
+identifiers:
+- winget: MementoDB.MementoDatabaseDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MementoDB/MementoDatabaseDesktop
+aliases: []

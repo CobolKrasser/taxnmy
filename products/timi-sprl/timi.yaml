@@ -1,0 +1,11 @@
+key: timi-sprl/timi
+publisher: timi-sprl
+name: TIMi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TIMi/TIMi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TIMi/TIMi
+identifiers:
+- winget: TIMi.TIMi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TIMi/TIMi
+aliases: []

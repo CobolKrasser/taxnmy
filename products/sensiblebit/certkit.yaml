@@ -1,0 +1,11 @@
+key: sensiblebit/certkit
+publisher: sensiblebit
+name: CertKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SensibleBit/CertKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SensibleBit/CertKit
+identifiers:
+- winget: SensibleBit.CertKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SensibleBit/CertKit
+aliases: []

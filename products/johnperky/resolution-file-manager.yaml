@@ -1,0 +1,11 @@
+key: johnperky/resolution-file-manager
+publisher: johnperky
+name: Resolution File Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JohnPerky/ResolutionFileManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JohnPerky/ResolutionFileManager
+identifiers:
+- winget: JohnPerky.ResolutionFileManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JohnPerky/ResolutionFileManager
+aliases: []

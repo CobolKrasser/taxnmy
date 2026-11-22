@@ -1,0 +1,11 @@
+key: freedom-terminal/koegaki
+publisher: freedom-terminal
+name: Koegaki
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreedomTerminal/Koegaki
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreedomTerminal/Koegaki
+identifiers:
+- winget: FreedomTerminal.Koegaki
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreedomTerminal/Koegaki
+aliases: []

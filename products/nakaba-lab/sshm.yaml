@@ -1,0 +1,11 @@
+key: nakaba-lab/sshm
+publisher: nakaba-lab
+name: sshm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NakabaLab/sshm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NakabaLab/sshm
+identifiers:
+- winget: NakabaLab.sshm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NakabaLab/sshm
+aliases: []

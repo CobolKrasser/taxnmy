@@ -1,0 +1,11 @@
+key: vleerapp/vleer
+publisher: vleerapp
+name: Vleer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vleer/Vleer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vleer/Vleer
+identifiers:
+- winget: Vleer.Vleer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vleer/Vleer
+aliases: []

@@ -1,0 +1,11 @@
+key: dan-sherwin/devlogbus
+publisher: dan-sherwin
+name: DevLogBus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanSherwin/DevLogBus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanSherwin/DevLogBus
+identifiers:
+- winget: DanSherwin.DevLogBus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DanSherwin/DevLogBus
+aliases: []

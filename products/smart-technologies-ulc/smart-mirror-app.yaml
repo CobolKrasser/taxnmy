@@ -1,0 +1,11 @@
+key: smart-technologies-ulc/smart-mirror-app
+publisher: smart-technologies-ulc
+name: SMART Mirror App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTMirror
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTMirror
+identifiers:
+- winget: SMARTTechnologies.SMARTMirror
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTMirror
+aliases: []

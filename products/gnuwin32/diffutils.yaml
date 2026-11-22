@@ -1,0 +1,12 @@
+key: gnuwin32/diffutils
+publisher: gnuwin32
+name: 'GnuWin32: DiffUtils'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/DiffUtils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/DiffUtils
+identifiers:
+- winget: GnuWin32.DiffUtils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/DiffUtils
+aliases:
+- gnuwin32/gnuwin32-diffutils

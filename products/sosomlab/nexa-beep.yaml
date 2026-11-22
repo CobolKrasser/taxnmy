@@ -1,0 +1,13 @@
+key: sosomlab/nexa-beep
+publisher: sosomlab
+name: Nexa Beep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeep
+identifiers:
+- winget: SosomLab.NexaBeep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeep
+- winget: SosomLab.NexaBeep.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaBeep/Portable
+aliases: []

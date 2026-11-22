@@ -1,0 +1,11 @@
+key: andreas-auernhammer/minisign
+publisher: andreas-auernhammer
+name: minisign
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aead/minisign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aead/minisign
+identifiers:
+- winget: aead.minisign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aead/minisign
+aliases: []

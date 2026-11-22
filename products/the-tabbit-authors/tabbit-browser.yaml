@@ -1,0 +1,11 @@
+key: the-tabbit-authors/tabbit-browser
+publisher: the-tabbit-authors
+name: Tabbit Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meituan/TabbitBrowser/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meituan/TabbitBrowser/CN
+identifiers:
+- winget: Meituan.TabbitBrowser.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meituan/TabbitBrowser/CN
+aliases: []

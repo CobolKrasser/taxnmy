@@ -1,0 +1,11 @@
+key: the-r-foundation/rtools
+publisher: the-r-foundation
+name: Rtools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RProject/Rtools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RProject/Rtools
+identifiers:
+- winget: RProject.Rtools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RProject/Rtools
+aliases: []

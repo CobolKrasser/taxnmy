@@ -1,0 +1,11 @@
+key: assassing/brutalityextractor-cli
+publisher: assassing
+name: BrutalityExtractor Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assassing/BrutalityExtractor/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assassing/BrutalityExtractor/Cli
+identifiers:
+- winget: assassing.BrutalityExtractor.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assassing/BrutalityExtractor/Cli
+aliases: []

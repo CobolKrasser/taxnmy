@@ -1,0 +1,11 @@
+key: anaconda/miniconda3
+publisher: anaconda
+name: Miniconda3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anaconda/Miniconda3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anaconda/Miniconda3
+identifiers:
+- winget: Anaconda.Miniconda3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anaconda/Miniconda3
+aliases: []

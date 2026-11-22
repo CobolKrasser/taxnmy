@@ -1,0 +1,11 @@
+key: ipu/seccool
+publisher: ipu
+name: SecCool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/SecCool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/SecCool
+identifiers:
+- winget: IPU.SecCool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/SecCool
+aliases: []

@@ -1,0 +1,11 @@
+key: xznder/spotget
+publisher: xznder
+name: spotget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xznder1984/spotget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xznder1984/spotget
+identifiers:
+- winget: Xznder1984.spotget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xznder1984/spotget
+aliases: []

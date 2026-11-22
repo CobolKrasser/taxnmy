@@ -1,0 +1,11 @@
+key: rankftw/reshade-hdr-installer
+publisher: rankftw
+name: ReShade HDR Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RankFTW/RHI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RankFTW/RHI
+identifiers:
+- winget: RankFTW.RHI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RankFTW/RHI
+aliases: []

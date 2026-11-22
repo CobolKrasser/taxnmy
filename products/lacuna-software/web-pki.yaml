@@ -1,0 +1,11 @@
+key: lacuna-software/web-pki
+publisher: lacuna-software
+name: Web PKI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LacunaSoftware/WebPKI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LacunaSoftware/WebPKI
+identifiers:
+- winget: LacunaSoftware.WebPKI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LacunaSoftware/WebPKI
+aliases: []

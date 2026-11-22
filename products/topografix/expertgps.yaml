@@ -1,0 +1,11 @@
+key: topografix/expertgps
+publisher: topografix
+name: ExpertGPS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopoGrafix/ExpertGPS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopoGrafix/ExpertGPS
+identifiers:
+- winget: TopoGrafix.ExpertGPS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TopoGrafix/ExpertGPS
+aliases: []

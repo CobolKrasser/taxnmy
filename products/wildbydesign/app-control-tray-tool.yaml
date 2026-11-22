@@ -1,0 +1,11 @@
+key: wildbydesign/app-control-tray-tool
+publisher: wildbydesign
+name: App Control Tray Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WildByDesign/AppControlTrayTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WildByDesign/AppControlTrayTool
+identifiers:
+- winget: WildByDesign.AppControlTrayTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WildByDesign/AppControlTrayTool
+aliases: []

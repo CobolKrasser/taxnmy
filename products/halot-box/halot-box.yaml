@@ -1,0 +1,11 @@
+key: halot-box/halot-box
+publisher: halot-box
+name: HALOT BOX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/HALOTBOX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/HALOTBOX
+identifiers:
+- winget: Creality.HALOTBOX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/HALOTBOX
+aliases: []

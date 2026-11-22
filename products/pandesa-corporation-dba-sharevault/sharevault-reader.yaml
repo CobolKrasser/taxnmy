@@ -1,0 +1,11 @@
+key: pandesa-corporation-dba-sharevault/sharevault-reader
+publisher: pandesa-corporation-dba-sharevault
+name: ShareVault Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pandesa/ShareVaultReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pandesa/ShareVaultReader
+identifiers:
+- winget: Pandesa.ShareVaultReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pandesa/ShareVaultReader
+aliases: []

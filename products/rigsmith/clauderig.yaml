@@ -1,0 +1,11 @@
+key: rigsmith/clauderig
+publisher: rigsmith
+name: ClaudeRig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ClaudeRig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ClaudeRig
+identifiers:
+- winget: RigSmith.ClaudeRig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ClaudeRig
+aliases: []

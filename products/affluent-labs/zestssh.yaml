@@ -1,0 +1,11 @@
+key: affluent-labs/zestssh
+publisher: affluent-labs
+name: ZestSSH
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AffluentLabs/ZestSSH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AffluentLabs/ZestSSH
+identifiers:
+- winget: AffluentLabs.ZestSSH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AffluentLabs/ZestSSH
+aliases: []

@@ -1,0 +1,11 @@
+key: sigstore/gitsign
+publisher: sigstore
+name: gitsign
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Gitsign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Gitsign
+identifiers:
+- winget: Sigstore.Gitsign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sigstore/Gitsign
+aliases: []

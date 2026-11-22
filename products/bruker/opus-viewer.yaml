@@ -1,0 +1,11 @@
+key: bruker/opus-viewer
+publisher: bruker
+name: OPUS Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bruker/OPUS-Viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bruker/OPUS-Viewer
+identifiers:
+- winget: Bruker.OPUS-Viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bruker/OPUS-Viewer
+aliases: []

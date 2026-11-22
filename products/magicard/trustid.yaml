@@ -1,0 +1,11 @@
+key: magicard/trustid
+publisher: magicard
+name: TrustID
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicard/TrustID
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicard/TrustID
+identifiers:
+- winget: Magicard.TrustID
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicard/TrustID
+aliases: []

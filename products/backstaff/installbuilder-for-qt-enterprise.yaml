@@ -1,0 +1,11 @@
+key: backstaff/installbuilder-for-qt-enterprise
+publisher: backstaff
+name: InstallBuilder for Qt Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Qt/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Qt/Enterprise
+identifiers:
+- winget: BackstaffSoftware.InstallBuilder.Qt.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder/Qt/Enterprise
+aliases: []

@@ -1,0 +1,11 @@
+key: softsea/pc-shredder
+publisher: softsea
+name: PC Shredder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PCShredder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PCShredder
+identifiers:
+- winget: SoftSea.PCShredder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/PCShredder
+aliases: []

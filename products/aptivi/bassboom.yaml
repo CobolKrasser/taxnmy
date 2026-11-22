@@ -1,0 +1,11 @@
+key: aptivi/bassboom
+publisher: aptivi
+name: BassBoom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/BassBoom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/BassBoom
+identifiers:
+- winget: Aptivi.BassBoom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aptivi/BassBoom
+aliases: []

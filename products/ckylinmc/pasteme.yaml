@@ -1,0 +1,11 @@
+key: ckylinmc/pasteme
+publisher: ckylinmc
+name: PasteMe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CKylinMC/PasteMe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CKylinMC/PasteMe
+identifiers:
+- winget: CKylinMC.PasteMe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CKylinMC/PasteMe
+aliases: []

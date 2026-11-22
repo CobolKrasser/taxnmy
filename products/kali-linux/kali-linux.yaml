@@ -1,0 +1,11 @@
+key: kali-linux/kali-linux
+publisher: kali-linux
+name: Kali Linux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OffSec/KaliLinux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OffSec/KaliLinux
+identifiers:
+- winget: OffSec.KaliLinux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OffSec/KaliLinux
+aliases: []

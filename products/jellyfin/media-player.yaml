@@ -1,0 +1,12 @@
+key: jellyfin/media-player
+publisher: jellyfin
+name: Jellyfin Media Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/JellyfinMediaPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/JellyfinMediaPlayer
+identifiers:
+- winget: Jellyfin.JellyfinMediaPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/JellyfinMediaPlayer
+aliases:
+- jellyfin/jellyfin-media-player

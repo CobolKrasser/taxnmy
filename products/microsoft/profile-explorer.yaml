@@ -1,0 +1,11 @@
+key: microsoft/profile-explorer
+publisher: microsoft
+name: Profile Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProfileExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProfileExplorer
+identifiers:
+- winget: Microsoft.ProfileExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProfileExplorer
+aliases: []

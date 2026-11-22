@@ -1,0 +1,11 @@
+key: brio/folder-size
+publisher: brio
+name: Folder Size
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brio/FolderSize
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brio/FolderSize
+identifiers:
+- winget: Brio.FolderSize
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brio/FolderSize
+aliases: []

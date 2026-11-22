@@ -1,0 +1,13 @@
+key: ngwin/picpick
+publisher: ngwin
+name: PicPick
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGWIN/PicPick
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGWIN/PicPick
+identifiers:
+- winget: NGWIN.PicPick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGWIN/PicPick
+- winget: NGWIN.PicPick.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGWIN/PicPick/Beta
+aliases: []

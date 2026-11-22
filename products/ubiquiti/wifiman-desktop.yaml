@@ -1,0 +1,11 @@
+key: ubiquiti/wifiman-desktop
+publisher: ubiquiti
+name: WiFiman Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/WiFimanDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/WiFimanDesktop
+identifiers:
+- winget: Ubiquiti.WiFimanDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/WiFimanDesktop
+aliases: []

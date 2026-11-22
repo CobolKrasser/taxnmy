@@ -1,0 +1,11 @@
+key: tex-users-group/texworks
+publisher: tex-users-group
+name: TeXworks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TUG/TeXworks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TUG/TeXworks
+identifiers:
+- winget: TUG.TeXworks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TUG/TeXworks
+aliases: []

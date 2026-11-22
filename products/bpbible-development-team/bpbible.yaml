@@ -1,0 +1,11 @@
+key: bpbible-development-team/bpbible
+publisher: bpbible-development-team
+name: BPBible
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BPBible/BPBible
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BPBible/BPBible
+identifiers:
+- winget: BPBible.BPBible
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BPBible/BPBible
+aliases: []

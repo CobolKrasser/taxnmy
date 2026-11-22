@@ -1,0 +1,11 @@
+key: mediahuman/mtube
+publisher: mediahuman
+name: mTube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/mTube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/mTube
+identifiers:
+- winget: MediaHuman.mTube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaHuman/mTube
+aliases: []

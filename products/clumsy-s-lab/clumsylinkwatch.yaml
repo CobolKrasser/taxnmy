@@ -1,0 +1,11 @@
+key: clumsy-s-lab/clumsylinkwatch
+publisher: clumsy-s-lab
+name: ClumsyLinkWatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClumsysLab/ClumsyLinkWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClumsysLab/ClumsyLinkWatch
+identifiers:
+- winget: ClumsysLab.ClumsyLinkWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClumsysLab/ClumsyLinkWatch
+aliases: []

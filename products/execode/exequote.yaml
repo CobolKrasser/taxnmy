@@ -1,0 +1,11 @@
+key: execode/exequote
+publisher: execode
+name: exeQuote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Execode/exeQuote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Execode/exeQuote
+identifiers:
+- winget: Execode.exeQuote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Execode/exeQuote
+aliases: []

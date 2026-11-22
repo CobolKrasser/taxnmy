@@ -1,0 +1,11 @@
+key: nickthegrizzly/beam-mod-manager
+publisher: nickthegrizzly
+name: Beam Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NickTheGrizzly/BeamModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NickTheGrizzly/BeamModManager
+identifiers:
+- winget: NickTheGrizzly.BeamModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NickTheGrizzly/BeamModManager
+aliases: []

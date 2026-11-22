@@ -1,0 +1,11 @@
+key: k0sproject/k0sctl
+publisher: k0sproject
+name: k0sctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k0sproject/k0sctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k0sproject/k0sctl
+identifiers:
+- winget: k0sproject.k0sctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k0sproject/k0sctl
+aliases: []

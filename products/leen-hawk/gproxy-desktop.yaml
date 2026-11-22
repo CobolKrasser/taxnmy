@@ -1,0 +1,11 @@
+key: leen-hawk/gproxy-desktop
+publisher: leen-hawk
+name: GPROXY Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeenHawk/GPROXY/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeenHawk/GPROXY/Desktop
+identifiers:
+- winget: LeenHawk.GPROXY.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LeenHawk/GPROXY/Desktop
+aliases: []

@@ -1,0 +1,11 @@
+key: sidero-labs/talosctl
+publisher: sidero-labs
+name: talosctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sidero/talosctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sidero/talosctl
+identifiers:
+- winget: Sidero.talosctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sidero/talosctl
+aliases: []

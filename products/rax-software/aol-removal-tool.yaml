@@ -1,0 +1,11 @@
+key: rax-software/aol-removal-tool
+publisher: rax-software
+name: AOL Removal Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAXSoftware/AOLRemovalTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAXSoftware/AOLRemovalTool
+identifiers:
+- winget: RAXSoftware.AOLRemovalTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAXSoftware/AOLRemovalTool
+aliases: []

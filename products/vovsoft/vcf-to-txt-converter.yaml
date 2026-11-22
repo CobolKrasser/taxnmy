@@ -1,0 +1,12 @@
+key: vovsoft/vcf-to-txt-converter
+publisher: vovsoft
+name: Vovsoft VCF to TXT Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoTXTConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoTXTConverter
+identifiers:
+- winget: VovSoft.VCFtoTXTConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoTXTConverter
+aliases:
+- vovsoft/vovsoft-vcf-to-txt-converter

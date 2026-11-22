@@ -1,0 +1,12 @@
+key: deltek/maconomy
+publisher: deltek
+name: Deltek Maconomy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deltek/Maconomy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deltek/Maconomy
+identifiers:
+- winget: Deltek.Maconomy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deltek/Maconomy
+aliases:
+- deltek/deltek-maconomy

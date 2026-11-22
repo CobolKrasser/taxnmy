@@ -1,0 +1,11 @@
+key: techhit/jumptowindow
+publisher: techhit
+name: JumpToWindow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechHit/JumpToWindow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechHit/JumpToWindow
+identifiers:
+- winget: TechHit.JumpToWindow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechHit/JumpToWindow
+aliases: []

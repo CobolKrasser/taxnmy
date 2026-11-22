@@ -1,0 +1,11 @@
+key: redisant/modbus-slave-emulator
+publisher: redisant
+name: Modbus Slave Emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ModbusSlaveEmulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ModbusSlaveEmulator
+identifiers:
+- winget: Redisant.ModbusSlaveEmulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ModbusSlaveEmulator
+aliases: []

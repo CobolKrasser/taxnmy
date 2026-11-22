@@ -1,0 +1,12 @@
+key: concourse/fly
+publisher: concourse
+name: Concourse Fly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Concourse/Fly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Concourse/Fly
+identifiers:
+- winget: Concourse.Fly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Concourse/Fly
+aliases:
+- concourse/concourse-fly

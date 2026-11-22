@@ -1,0 +1,11 @@
+key: psenix/overlaytimer
+publisher: psenix
+name: OverlayTimer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psenix/OverlayTimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psenix/OverlayTimer
+identifiers:
+- winget: Psenix.OverlayTimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Psenix/OverlayTimer
+aliases: []

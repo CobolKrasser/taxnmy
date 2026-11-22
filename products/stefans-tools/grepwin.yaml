@@ -1,0 +1,11 @@
+key: stefans-tools/grepwin
+publisher: stefans-tools
+name: grepWin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/grepWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/grepWin
+identifiers:
+- winget: StefansTools.grepWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StefansTools/grepWin
+aliases: []

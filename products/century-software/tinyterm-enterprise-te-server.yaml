@@ -1,0 +1,11 @@
+key: century-software/tinyterm-enterprise-te-server
+publisher: century-software
+name: TinyTERM Enterprise TE Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/TinyTERMEnterpriceTEServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/TinyTERMEnterpriceTEServer
+identifiers:
+- winget: CenSoft.TinyTERMEnterpriceTEServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CenSoft/TinyTERMEnterpriceTEServer
+aliases: []

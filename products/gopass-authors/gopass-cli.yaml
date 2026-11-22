@@ -1,0 +1,11 @@
+key: gopass-authors/gopass-cli
+publisher: gopass-authors
+name: Gopass CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gopass/gopass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gopass/gopass
+identifiers:
+- winget: gopass.gopass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gopass/gopass
+aliases: []

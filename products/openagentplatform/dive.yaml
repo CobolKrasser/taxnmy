@@ -1,0 +1,11 @@
+key: openagentplatform/dive
+publisher: openagentplatform
+name: Dive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAgentPlatform/Dive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAgentPlatform/Dive
+identifiers:
+- winget: OpenAgentPlatform.Dive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenAgentPlatform/Dive
+aliases: []

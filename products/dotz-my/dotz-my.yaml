@@ -1,0 +1,11 @@
+key: dotz-my/dotz-my
+publisher: dotz-my
+name: dotz.my
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvaLing/dotzmy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvaLing/dotzmy
+identifiers:
+- winget: EvaLing.dotzmy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvaLing/dotzmy
+aliases: []

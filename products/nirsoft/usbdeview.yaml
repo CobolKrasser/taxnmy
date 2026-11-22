@@ -1,0 +1,11 @@
+key: nirsoft/usbdeview
+publisher: nirsoft
+name: USBDeview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/USBDeview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/USBDeview
+identifiers:
+- winget: NirSoft.USBDeview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/USBDeview
+aliases: []

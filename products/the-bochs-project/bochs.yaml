@@ -1,0 +1,11 @@
+key: the-bochs-project/bochs
+publisher: the-bochs-project
+name: Bochs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bochs/Bochs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bochs/Bochs
+identifiers:
+- winget: Bochs.Bochs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bochs/Bochs
+aliases: []

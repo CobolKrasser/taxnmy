@@ -1,0 +1,11 @@
+key: dod-cyber-exchange/stig-viewer
+publisher: dod-cyber-exchange
+name: STIG Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoD/STIGViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoD/STIGViewer
+identifiers:
+- winget: DoD.STIGViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoD/STIGViewer
+aliases: []

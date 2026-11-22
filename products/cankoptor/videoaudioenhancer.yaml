@@ -1,0 +1,11 @@
+key: cankoptor/videoaudioenhancer
+publisher: cankoptor
+name: VideoAudioEnhancer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cankoptor/VAE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cankoptor/VAE
+identifiers:
+- winget: cankoptor.VAE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cankoptor/VAE
+aliases: []

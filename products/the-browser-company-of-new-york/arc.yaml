@@ -1,0 +1,11 @@
+key: the-browser-company-of-new-york/arc
+publisher: the-browser-company-of-new-york
+name: Arc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBrowserCompany/Arc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBrowserCompany/Arc
+identifiers:
+- winget: TheBrowserCompany.Arc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheBrowserCompany/Arc
+aliases: []

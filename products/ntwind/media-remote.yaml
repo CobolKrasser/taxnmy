@@ -1,0 +1,11 @@
+key: ntwind/media-remote
+publisher: ntwind
+name: Media Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/MediaRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/MediaRemote
+identifiers:
+- winget: ntwind.MediaRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/MediaRemote
+aliases: []

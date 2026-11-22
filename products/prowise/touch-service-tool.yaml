@@ -1,0 +1,14 @@
+key: prowise/touch-service-tool
+publisher: prowise
+name: Prowise Touch Service Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/TouchServiceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/TouchServiceTool
+identifiers:
+- winget: Prowise.TouchServiceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/TouchServiceTool
+- winget: Prowise.TouchServiceTool.NFC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prowise/TouchServiceTool/NFC
+aliases:
+- prowise/prowise-touch-service-tool

@@ -1,0 +1,11 @@
+key: desksoft/smartcapture
+publisher: desksoft
+name: SmartCapture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/SmartCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/SmartCapture
+identifiers:
+- winget: DeskSoft.SmartCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/SmartCapture
+aliases: []

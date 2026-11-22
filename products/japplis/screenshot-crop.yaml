@@ -1,0 +1,11 @@
+key: japplis/screenshot-crop
+publisher: japplis
+name: Screenshot Crop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/ScreenshotCrop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/ScreenshotCrop
+identifiers:
+- winget: Japplis.ScreenshotCrop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/ScreenshotCrop
+aliases: []

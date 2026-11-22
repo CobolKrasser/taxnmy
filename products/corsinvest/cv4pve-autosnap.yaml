@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-autosnap
+publisher: corsinvest
+name: cv4pve-autosnap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/autosnap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/autosnap
+identifiers:
+- winget: Corsinvest.cv4pve.autosnap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/autosnap
+aliases: []

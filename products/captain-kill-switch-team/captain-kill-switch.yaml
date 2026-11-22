@@ -1,0 +1,11 @@
+key: captain-kill-switch-team/captain-kill-switch
+publisher: captain-kill-switch-team
+name: Captain Kill Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaptainKillSwitch/CaptainKillSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaptainKillSwitch/CaptainKillSwitch
+identifiers:
+- winget: CaptainKillSwitch.CaptainKillSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaptainKillSwitch/CaptainKillSwitch
+aliases: []

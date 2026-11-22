@@ -1,0 +1,12 @@
+key: opencode/cli
+publisher: opencode
+name: OpenCode CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anomaly/OpenCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anomaly/OpenCode
+identifiers:
+- winget: Anomaly.OpenCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anomaly/OpenCode
+aliases:
+- opencode/opencode-cli

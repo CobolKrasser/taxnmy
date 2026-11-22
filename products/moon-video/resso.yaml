@@ -1,0 +1,11 @@
+key: moon-video/resso
+publisher: moon-video
+name: Resso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Resso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Resso
+identifiers:
+- winget: ByteDance.Resso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Resso
+aliases: []

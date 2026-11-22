@@ -1,0 +1,11 @@
+key: pavel-cvrcek/mozbackup
+publisher: pavel-cvrcek
+name: MozBackup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JasnaPaka/MozBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JasnaPaka/MozBackup
+identifiers:
+- winget: JasnaPaka.MozBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JasnaPaka/MozBackup
+aliases: []

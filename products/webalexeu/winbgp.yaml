@@ -1,0 +1,11 @@
+key: webalexeu/winbgp
+publisher: webalexeu
+name: WinBGP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebalexEU/WinBGP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebalexEU/WinBGP
+identifiers:
+- winget: WebalexEU.WinBGP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebalexEU/WinBGP
+aliases: []

@@ -1,0 +1,11 @@
+key: devtechprofile/capframex-capture-and-analysis-tool
+publisher: devtechprofile
+name: CapFrameX Capture and Analysis Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CXWorld/CapFrameX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CXWorld/CapFrameX
+identifiers:
+- winget: CXWorld.CapFrameX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CXWorld/CapFrameX
+aliases: []

@@ -1,0 +1,11 @@
+key: openobserve/openobserve
+publisher: openobserve
+name: OpenObserve
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openobserve/openobserve
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openobserve/openobserve
+identifiers:
+- winget: openobserve.openobserve
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/openobserve/openobserve
+aliases: []

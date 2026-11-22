@@ -1,0 +1,11 @@
+key: discover-worthy/discoverworthy-scratchpad
+publisher: discover-worthy
+name: DiscoverWorthy Scratchpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscoverWorthy/Scratchpad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscoverWorthy/Scratchpad
+identifiers:
+- winget: DiscoverWorthy.Scratchpad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiscoverWorthy/Scratchpad
+aliases: []

@@ -1,0 +1,12 @@
+key: adinstruments/hrv
+publisher: adinstruments
+name: ADInstruments HRV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/HRV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/HRV
+identifiers:
+- winget: ADInstruments.LabChart.Module.HRV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/HRV
+aliases:
+- adinstruments/adinstruments-hrv

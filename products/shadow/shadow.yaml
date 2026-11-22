@@ -1,0 +1,11 @@
+key: shadow/shadow
+publisher: shadow
+name: Shadow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shadow/Shadow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shadow/Shadow
+identifiers:
+- winget: Shadow.Shadow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shadow/Shadow
+aliases: []

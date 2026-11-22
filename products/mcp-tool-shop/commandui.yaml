@@ -1,0 +1,11 @@
+key: mcp-tool-shop/commandui
+publisher: mcp-tool-shop
+name: CommandUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcp-tool-shop/CommandUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcp-tool-shop/CommandUI
+identifiers:
+- winget: mcp-tool-shop.CommandUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mcp-tool-shop/CommandUI
+aliases: []

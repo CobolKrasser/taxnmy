@@ -1,0 +1,11 @@
+key: dmitry-chapyshev/aspia-client
+publisher: dmitry-chapyshev
+name: Aspia Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DmitryChapyshev/AspiaClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DmitryChapyshev/AspiaClient
+identifiers:
+- winget: DmitryChapyshev.AspiaClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DmitryChapyshev/AspiaClient
+aliases: []

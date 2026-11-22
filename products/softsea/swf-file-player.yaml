@@ -1,0 +1,11 @@
+key: softsea/swf-file-player
+publisher: softsea
+name: SWF File Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/SWFFilePlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/SWFFilePlayer
+identifiers:
+- winget: SoftSea.SWFFilePlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/SWFFilePlayer
+aliases: []

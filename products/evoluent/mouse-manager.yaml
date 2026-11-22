@@ -1,0 +1,12 @@
+key: evoluent/mouse-manager
+publisher: evoluent
+name: Evoluent Mouse Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evoluent/EvoluentMouseManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evoluent/EvoluentMouseManager
+identifiers:
+- winget: Evoluent.EvoluentMouseManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Evoluent/EvoluentMouseManager
+aliases:
+- evoluent/evoluent-mouse-manager

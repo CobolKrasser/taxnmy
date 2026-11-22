@@ -1,0 +1,11 @@
+key: trigone/remote-system-monitor-server
+publisher: trigone
+name: Remote System Monitor Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trigone/SystemMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trigone/SystemMonitor
+identifiers:
+- winget: Trigone.SystemMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trigone/SystemMonitor
+aliases: []

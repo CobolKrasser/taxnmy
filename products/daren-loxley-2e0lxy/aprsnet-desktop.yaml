@@ -1,0 +1,11 @@
+key: daren-loxley-2e0lxy/aprsnet-desktop
+publisher: daren-loxley-2e0lxy
+name: APRSNET Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarenLoxley/APRS-Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarenLoxley/APRS-Client
+identifiers:
+- winget: DarenLoxley.APRS-Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DarenLoxley/APRS-Client
+aliases: []

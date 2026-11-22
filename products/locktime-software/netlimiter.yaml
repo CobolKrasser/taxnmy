@@ -1,0 +1,11 @@
+key: locktime-software/netlimiter
+publisher: locktime-software
+name: NetLimiter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocktimeSoftware/NetLimiter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocktimeSoftware/NetLimiter
+identifiers:
+- winget: LocktimeSoftware.NetLimiter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocktimeSoftware/NetLimiter
+aliases: []

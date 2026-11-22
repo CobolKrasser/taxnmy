@@ -1,0 +1,11 @@
+key: vetta/vetta
+publisher: vetta
+name: Vetta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVetta/Vetta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVetta/Vetta
+identifiers:
+- winget: OpenVetta.Vetta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenVetta/Vetta
+aliases: []

@@ -1,0 +1,11 @@
+key: inferencehub/inferencehub
+publisher: inferencehub
+name: InferenceHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InferenceHub/InferenceHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InferenceHub/InferenceHub
+identifiers:
+- winget: InferenceHub.InferenceHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InferenceHub/InferenceHub
+aliases: []

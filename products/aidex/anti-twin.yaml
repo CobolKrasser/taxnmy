@@ -1,0 +1,11 @@
+key: aidex/anti-twin
+publisher: aidex
+name: Anti-Twin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aidex/AntiTwin/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aidex/AntiTwin/Portable
+identifiers:
+- winget: Aidex.AntiTwin.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aidex/AntiTwin/Portable
+aliases: []

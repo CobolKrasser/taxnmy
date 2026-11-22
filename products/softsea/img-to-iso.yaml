@@ -1,0 +1,11 @@
+key: softsea/img-to-iso
+publisher: softsea
+name: IMG to ISO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/IMGtoISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/IMGtoISO
+identifiers:
+- winget: SoftSea.IMGtoISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/IMGtoISO
+aliases: []

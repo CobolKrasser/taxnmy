@@ -1,0 +1,11 @@
+key: orf/gping
+publisher: orf
+name: gping
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/orf/gping
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/orf/gping
+identifiers:
+- winget: orf.gping
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/orf/gping
+aliases: []

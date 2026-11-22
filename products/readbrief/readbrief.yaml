@@ -1,0 +1,11 @@
+key: readbrief/readbrief
+publisher: readbrief
+name: ReadBrief
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CJSen/ReadBrief
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CJSen/ReadBrief
+identifiers:
+- winget: CJSen.ReadBrief
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CJSen/ReadBrief
+aliases: []

@@ -1,0 +1,11 @@
+key: factory-ai/factory
+publisher: factory-ai
+name: Factory
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactoryAI/Factory
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactoryAI/Factory
+identifiers:
+- winget: FactoryAI.Factory
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FactoryAI/Factory
+aliases: []

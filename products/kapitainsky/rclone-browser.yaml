@@ -1,0 +1,11 @@
+key: kapitainsky/rclone-browser
+publisher: kapitainsky
+name: Rclone Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kapitainsky/RcloneBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kapitainsky/RcloneBrowser
+identifiers:
+- winget: kapitainsky.RcloneBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kapitainsky/RcloneBrowser
+aliases: []

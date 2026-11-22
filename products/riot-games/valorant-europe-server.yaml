@@ -1,0 +1,11 @@
+key: riot-games/valorant-europe-server
+publisher: riot-games
+name: VALORANT (Europe server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/EU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/EU
+identifiers:
+- winget: RiotGames.Valorant.EU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/Valorant/EU
+aliases: []

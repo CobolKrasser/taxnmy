@@ -1,0 +1,11 @@
+key: red-software/rad-pdf
+publisher: red-software
+name: RAD PDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedSoftware/RadPdf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedSoftware/RadPdf
+identifiers:
+- winget: RedSoftware.RadPdf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedSoftware/RadPdf
+aliases: []

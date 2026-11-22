@@ -1,0 +1,11 @@
+key: freelancer-technology/freelancer-desktop-app
+publisher: freelancer-technology
+name: Freelancer Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freelancer/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freelancer/Desktop
+identifiers:
+- winget: Freelancer.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freelancer/Desktop
+aliases: []

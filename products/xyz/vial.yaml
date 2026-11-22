@@ -1,0 +1,11 @@
+key: xyz/vial
+publisher: xyz
+name: Vial
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vial/Vial
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vial/Vial
+identifiers:
+- winget: Vial.Vial
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vial/Vial
+aliases: []

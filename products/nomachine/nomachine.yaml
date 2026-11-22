@@ -1,0 +1,11 @@
+key: nomachine/nomachine
+publisher: nomachine
+name: NoMachine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine
+identifiers:
+- winget: NoMachine.NoMachine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine
+aliases: []

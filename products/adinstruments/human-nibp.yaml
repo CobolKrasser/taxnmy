@@ -1,0 +1,12 @@
+key: adinstruments/human-nibp
+publisher: adinstruments
+name: ADInstruments Human NIBP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/HumanNIBP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/HumanNIBP
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.HumanNIBP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/HumanNIBP
+aliases:
+- adinstruments/adinstruments-human-nibp

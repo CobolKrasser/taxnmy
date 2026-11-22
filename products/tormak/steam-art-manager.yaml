@@ -1,0 +1,11 @@
+key: tormak/steam-art-manager
+publisher: tormak
+name: Steam Art Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisLane/SteamArtManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisLane/SteamArtManager
+identifiers:
+- winget: TravisLane.SteamArtManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TravisLane/SteamArtManager
+aliases: []

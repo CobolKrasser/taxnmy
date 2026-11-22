@@ -1,0 +1,11 @@
+key: ovito-gmbh-germany/ovito-basic
+publisher: ovito-gmbh-germany
+name: OVITO Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ovito/ovito-basic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ovito/ovito-basic
+identifiers:
+- winget: ovito.ovito-basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ovito/ovito-basic
+aliases: []

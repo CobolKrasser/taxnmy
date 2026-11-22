@@ -1,0 +1,11 @@
+key: shogixyz/shogigui
+publisher: shogixyz
+name: ShogiGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shogixyz/ShogiGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shogixyz/ShogiGUI
+identifiers:
+- winget: shogixyz.ShogiGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shogixyz/ShogiGUI
+aliases: []

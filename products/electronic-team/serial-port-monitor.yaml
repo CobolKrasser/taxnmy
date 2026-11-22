@@ -1,0 +1,11 @@
+key: electronic-team/serial-port-monitor
+publisher: electronic-team
+name: Serial Port Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eltima/SerialPortMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eltima/SerialPortMonitor
+identifiers:
+- winget: Eltima.SerialPortMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eltima/SerialPortMonitor
+aliases: []

@@ -1,0 +1,14 @@
+key: altova/diffdog-server
+publisher: altova
+name: Altova DiffDog Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDogServer/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDogServer/2025
+identifiers:
+- winget: Altova.DiffDogServer.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDogServer/2025
+- winget: Altova.DiffDogServer.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDogServer/2026
+aliases:
+- altova/altova-diffdog-server

@@ -1,0 +1,11 @@
+key: syncthing-foundation/syncthing
+publisher: syncthing-foundation
+name: Syncthing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BillStewart/SyncthingWindowsSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BillStewart/SyncthingWindowsSetup
+identifiers:
+- winget: BillStewart.SyncthingWindowsSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BillStewart/SyncthingWindowsSetup
+aliases: []

@@ -1,0 +1,11 @@
+key: arylmera/token-dashboard
+publisher: arylmera
+name: Token Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arylmera/TokenDashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arylmera/TokenDashboard
+identifiers:
+- winget: Arylmera.TokenDashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arylmera/TokenDashboard
+aliases: []

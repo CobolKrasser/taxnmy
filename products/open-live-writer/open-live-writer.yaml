@@ -1,0 +1,11 @@
+key: open-live-writer/open-live-writer
+publisher: open-live-writer
+name: Open Live Writer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLiveWriter/OpenLiveWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLiveWriter/OpenLiveWriter
+identifiers:
+- winget: OpenLiveWriter.OpenLiveWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLiveWriter/OpenLiveWriter
+aliases: []

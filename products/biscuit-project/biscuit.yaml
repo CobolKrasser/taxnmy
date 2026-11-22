@@ -1,0 +1,11 @@
+key: biscuit-project/biscuit
+publisher: biscuit-project
+name: Biscuit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Biscuit/Biscuit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Biscuit/Biscuit
+identifiers:
+- winget: Biscuit.Biscuit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Biscuit/Biscuit
+aliases: []

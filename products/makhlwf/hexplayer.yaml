@@ -1,0 +1,11 @@
+key: makhlwf/hexplayer
+publisher: makhlwf
+name: HexPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makhlwf/HexPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makhlwf/HexPlayer
+identifiers:
+- winget: makhlwf.HexPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makhlwf/HexPlayer
+aliases: []

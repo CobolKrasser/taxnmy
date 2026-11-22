@@ -1,0 +1,12 @@
+key: vovsoft/match-pairs
+publisher: vovsoft
+name: Vovsoft Match Pairs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MatchPairs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MatchPairs
+identifiers:
+- winget: VovSoft.MatchPairs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/MatchPairs
+aliases:
+- vovsoft/vovsoft-match-pairs

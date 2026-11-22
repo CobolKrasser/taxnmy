@@ -1,0 +1,11 @@
+key: fred-emmott/fred-s-controller-tester
+publisher: fred-emmott
+name: Fred's Controller Tester
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredEmmott/FredsControllerTester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredEmmott/FredsControllerTester
+identifiers:
+- winget: FredEmmott.FredsControllerTester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FredEmmott/FredsControllerTester
+aliases: []

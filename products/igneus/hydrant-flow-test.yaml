@@ -1,0 +1,12 @@
+key: igneus/hydrant-flow-test
+publisher: igneus
+name: Igneus Hydrant Flow Test
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Igneus/HydrantFlowTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Igneus/HydrantFlowTest
+identifiers:
+- winget: Igneus.HydrantFlowTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Igneus/HydrantFlowTest
+aliases:
+- igneus/igneus-hydrant-flow-test

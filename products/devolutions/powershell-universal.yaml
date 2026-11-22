@@ -1,0 +1,11 @@
+key: devolutions/powershell-universal
+publisher: devolutions
+name: PowerShell Universal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/PowerShellUniversal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/PowerShellUniversal
+identifiers:
+- winget: Devolutions.PowerShellUniversal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/PowerShellUniversal
+aliases: []

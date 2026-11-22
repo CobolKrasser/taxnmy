@@ -1,0 +1,11 @@
+key: raul-argente/argente-system-manager
+publisher: raul-argente
+name: Argente System Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SystemManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SystemManager
+identifiers:
+- winget: Argente.SystemManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SystemManager
+aliases: []

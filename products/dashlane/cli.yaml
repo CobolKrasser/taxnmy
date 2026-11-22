@@ -1,0 +1,12 @@
+key: dashlane/cli
+publisher: dashlane
+name: Dashlane CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dashlane/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dashlane/CLI
+identifiers:
+- winget: Dashlane.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dashlane/CLI
+aliases:
+- dashlane/dashlane-cli

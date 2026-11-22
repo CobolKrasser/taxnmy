@@ -1,0 +1,11 @@
+key: mickael-guessant/davmail
+publisher: mickael-guessant
+name: DavMail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mguessan/davmail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mguessan/davmail
+identifiers:
+- winget: mguessan.davmail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mguessan/davmail
+aliases: []

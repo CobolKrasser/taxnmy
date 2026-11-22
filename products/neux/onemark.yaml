@@ -1,0 +1,11 @@
+key: neux/onemark
+publisher: neux
+name: OneMark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neux/OneMark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neux/OneMark
+identifiers:
+- winget: Neux.OneMark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neux/OneMark
+aliases: []

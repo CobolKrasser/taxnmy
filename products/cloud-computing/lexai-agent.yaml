@@ -1,0 +1,11 @@
+key: cloud-computing/lexai-agent
+publisher: cloud-computing
+name: LexAI Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudComputing/LexAI-Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudComputing/LexAI-Agent
+identifiers:
+- winget: CloudComputing.LexAI-Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudComputing/LexAI-Agent
+aliases: []

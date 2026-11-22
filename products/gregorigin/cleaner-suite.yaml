@@ -1,0 +1,11 @@
+key: gregorigin/cleaner-suite
+publisher: gregorigin
+name: Cleaner Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregOrigin/CleanerSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregOrigin/CleanerSuite
+identifiers:
+- winget: GregOrigin.CleanerSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregOrigin/CleanerSuite
+aliases: []

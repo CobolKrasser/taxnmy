@@ -1,0 +1,11 @@
+key: basilisk-development-team/basilisk
+publisher: basilisk-development-team
+name: Basilisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basilisk/Basilisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basilisk/Basilisk
+identifiers:
+- winget: Basilisk.Basilisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basilisk/Basilisk
+aliases: []

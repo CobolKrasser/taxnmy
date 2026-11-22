@@ -1,0 +1,11 @@
+key: loko-technologies/onyx-code
+publisher: loko-technologies
+name: Onyx Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loko/OnyxCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loko/OnyxCode
+identifiers:
+- winget: Loko.OnyxCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Loko/OnyxCode
+aliases: []

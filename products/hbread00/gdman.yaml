@@ -1,0 +1,11 @@
+key: hbread00/gdman
+publisher: hbread00
+name: GDMan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gdman/GDMan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gdman/GDMan
+identifiers:
+- winget: gdman.GDMan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gdman/GDMan
+aliases: []

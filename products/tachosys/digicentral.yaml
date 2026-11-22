@@ -1,0 +1,11 @@
+key: tachosys/digicentral
+publisher: tachosys
+name: digiCentral
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiCentral
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiCentral
+identifiers:
+- winget: Tachosys.digiCentral
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiCentral
+aliases: []

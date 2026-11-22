@@ -1,0 +1,11 @@
+key: flexense-computing-systems/syncbreeze-server
+publisher: flexense-computing-systems
+name: SyncBreeze Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/SyncBreezeServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/SyncBreezeServer
+identifiers:
+- winget: Flexense.SyncBreezeServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/SyncBreezeServer
+aliases: []

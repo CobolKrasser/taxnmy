@@ -1,0 +1,11 @@
+key: institute-for-human-and-machine-cognition/ihmc-cmaptools
+publisher: institute-for-human-and-machine-cognition
+name: IHMC CmapTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IHMC/CmapTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IHMC/CmapTools
+identifiers:
+- winget: IHMC.CmapTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IHMC/CmapTools
+aliases: []

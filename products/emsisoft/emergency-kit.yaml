@@ -1,0 +1,12 @@
+key: emsisoft/emergency-kit
+publisher: emsisoft
+name: Emsisoft Emergency Kit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Emsisoft/EmergencyKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Emsisoft/EmergencyKit
+identifiers:
+- winget: Emsisoft.EmergencyKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Emsisoft/EmergencyKit
+aliases:
+- emsisoft/emsisoft-emergency-kit

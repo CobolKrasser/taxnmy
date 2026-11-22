@@ -1,0 +1,11 @@
+key: telcoray/digital-detox
+publisher: telcoray
+name: Digital Detox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/telcoray/DigitalDetox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/telcoray/DigitalDetox
+identifiers:
+- winget: telcoray.DigitalDetox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/telcoray/DigitalDetox
+aliases: []

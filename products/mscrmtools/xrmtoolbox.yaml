@@ -1,0 +1,11 @@
+key: mscrmtools/xrmtoolbox
+publisher: mscrmtools
+name: XrmToolBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MscrmTools/XrmToolBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MscrmTools/XrmToolBox
+identifiers:
+- winget: MscrmTools.XrmToolBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MscrmTools/XrmToolBox
+aliases: []

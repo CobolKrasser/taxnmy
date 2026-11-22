@@ -1,0 +1,11 @@
+key: languagetoolergmbh/languagetool-for-desktop
+publisher: languagetoolergmbh
+name: LanguageTool for Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Learneo/LanguageTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Learneo/LanguageTool
+identifiers:
+- winget: Learneo.LanguageTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Learneo/LanguageTool
+aliases: []

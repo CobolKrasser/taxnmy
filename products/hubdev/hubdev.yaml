@@ -1,0 +1,11 @@
+key: hubdev/hubdev
+publisher: hubdev
+name: HubDev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HubDev/HubDev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HubDev/HubDev
+identifiers:
+- winget: HubDev.HubDev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HubDev/HubDev
+aliases: []

@@ -1,0 +1,11 @@
+key: tatsh/winprefs
+publisher: tatsh
+name: WinPrefs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/WinPrefs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/WinPrefs
+identifiers:
+- winget: Tatsh.WinPrefs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/WinPrefs
+aliases: []

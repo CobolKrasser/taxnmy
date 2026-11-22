@@ -1,0 +1,11 @@
+key: termio-soft-jp-com/termiowin
+publisher: termio-soft-jp-com
+name: TermioWin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/termio/soft-jp/com/TermioWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/termio/soft-jp/com/TermioWin
+identifiers:
+- winget: termio.soft-jp.com.TermioWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/termio/soft-jp/com/TermioWin
+aliases: []

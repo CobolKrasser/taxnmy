@@ -1,0 +1,11 @@
+key: euso/eparaksts-token-signing
+publisher: euso
+name: eParaksts Token Signing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eParaksts/eParakstsTokenSigning
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eParaksts/eParakstsTokenSigning
+identifiers:
+- winget: eParaksts.eParakstsTokenSigning
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eParaksts/eParakstsTokenSigning
+aliases: []

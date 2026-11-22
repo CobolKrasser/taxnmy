@@ -1,0 +1,11 @@
+key: emuell/restic-browser
+publisher: emuell
+name: restic-browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/emuell/restic-browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/emuell/restic-browser
+identifiers:
+- winget: emuell.restic-browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/emuell/restic-browser
+aliases: []

@@ -1,0 +1,11 @@
+key: jack-mallers/zap
+publisher: jack-mallers
+name: Zap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LN-Zap/zap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LN-Zap/zap
+identifiers:
+- winget: LN-Zap.zap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LN-Zap/zap
+aliases: []

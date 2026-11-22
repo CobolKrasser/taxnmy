@@ -1,0 +1,11 @@
+key: stellorbit/chordlaunchpad
+publisher: stellorbit
+name: ChordLaunchpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellorbit/ChordLaunchpad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellorbit/ChordLaunchpad
+identifiers:
+- winget: Stellorbit.ChordLaunchpad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellorbit/ChordLaunchpad
+aliases: []

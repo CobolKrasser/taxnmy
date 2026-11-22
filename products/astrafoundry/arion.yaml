@@ -1,0 +1,11 @@
+key: astrafoundry/arion
+publisher: astrafoundry
+name: Arion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstraFoundry/Arion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstraFoundry/Arion
+identifiers:
+- winget: AstraFoundry.Arion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstraFoundry/Arion
+aliases: []

@@ -1,0 +1,11 @@
+key: emoacht/rawinput-touchpad
+publisher: emoacht
+name: RawInput Touchpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/emoacht/RawInputTouchPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/emoacht/RawInputTouchPad
+identifiers:
+- winget: emoacht.RawInputTouchPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/emoacht/RawInputTouchPad
+aliases: []

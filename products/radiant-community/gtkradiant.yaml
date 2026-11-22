@@ -1,0 +1,11 @@
+key: radiant-community/gtkradiant
+publisher: radiant-community
+name: GtkRadiant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadiantCommunity/GtkRadiant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadiantCommunity/GtkRadiant
+identifiers:
+- winget: RadiantCommunity.GtkRadiant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadiantCommunity/GtkRadiant
+aliases: []

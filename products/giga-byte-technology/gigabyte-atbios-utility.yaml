@@ -1,0 +1,11 @@
+key: giga-byte-technology/gigabyte-atbios-utility
+publisher: giga-byte-technology
+name: Gigabyte atBIOS utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIGABYTE/BIOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIGABYTE/BIOS
+identifiers:
+- winget: GIGABYTE.BIOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIGABYTE/BIOS
+aliases: []

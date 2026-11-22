@@ -1,0 +1,11 @@
+key: https-github-com-owu/wsl-dashboard
+publisher: https-github-com-owu
+name: WSL Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Owu/WSLDashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Owu/WSLDashboard
+identifiers:
+- winget: Owu.WSLDashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Owu/WSLDashboard
+aliases: []

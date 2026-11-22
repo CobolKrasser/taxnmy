@@ -1,0 +1,11 @@
+key: memvid/memory-cli
+publisher: memvid
+name: Memory CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Memvid/MemoryCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Memvid/MemoryCLI
+identifiers:
+- winget: Memvid.MemoryCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Memvid/MemoryCLI
+aliases: []

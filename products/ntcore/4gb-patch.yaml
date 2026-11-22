@@ -1,0 +1,11 @@
+key: ntcore/4gb-patch
+publisher: ntcore
+name: 4GB Patch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTCore/4GBPatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTCore/4GBPatch
+identifiers:
+- winget: NTCore.4GBPatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTCore/4GBPatch
+aliases: []

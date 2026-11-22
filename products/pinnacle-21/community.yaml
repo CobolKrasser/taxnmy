@@ -1,0 +1,12 @@
+key: pinnacle-21/community
+publisher: pinnacle-21
+name: Pinnacle 21 Community
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinnacle21/Pinnacle21/Community
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinnacle21/Pinnacle21/Community
+identifiers:
+- winget: Pinnacle21.Pinnacle21.Community
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinnacle21/Pinnacle21/Community
+aliases:
+- pinnacle-21/pinnacle-21-community

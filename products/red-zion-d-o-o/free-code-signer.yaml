@@ -1,0 +1,11 @@
+key: red-zion-d-o-o/free-code-signer
+publisher: red-zion-d-o-o
+name: Free Code Signer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REDZION/FreeCodeSigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REDZION/FreeCodeSigner
+identifiers:
+- winget: REDZION.FreeCodeSigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REDZION/FreeCodeSigner
+aliases: []

@@ -1,0 +1,11 @@
+key: sidero-labs/omnictl
+publisher: sidero-labs
+name: omnictl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sidero/omnictl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sidero/omnictl
+identifiers:
+- winget: Sidero.omnictl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sidero/omnictl
+aliases: []

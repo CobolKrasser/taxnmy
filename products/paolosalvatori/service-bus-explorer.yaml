@@ -1,0 +1,11 @@
+key: paolosalvatori/service-bus-explorer
+publisher: paolosalvatori
+name: Service Bus Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/paolosalvatori/ServiceBusExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/paolosalvatori/ServiceBusExplorer
+identifiers:
+- winget: paolosalvatori.ServiceBusExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/paolosalvatori/ServiceBusExplorer
+aliases: []

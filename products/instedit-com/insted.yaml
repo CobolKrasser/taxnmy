@@ -1,0 +1,11 @@
+key: instedit-com/insted
+publisher: instedit-com
+name: InstEd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstEd/InstEd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstEd/InstEd
+identifiers:
+- winget: InstEd.InstEd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstEd/InstEd
+aliases: []

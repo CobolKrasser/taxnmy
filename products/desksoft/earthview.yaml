@@ -1,0 +1,11 @@
+key: desksoft/earthview
+publisher: desksoft
+name: EarthView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/EarthView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/EarthView
+identifiers:
+- winget: DeskSoft.EarthView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/EarthView
+aliases: []

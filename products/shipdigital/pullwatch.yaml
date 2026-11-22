@@ -1,0 +1,11 @@
+key: shipdigital/pullwatch
+publisher: shipdigital
+name: PullWatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShipDigital/PullWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShipDigital/PullWatch
+identifiers:
+- winget: ShipDigital.PullWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShipDigital/PullWatch
+aliases: []

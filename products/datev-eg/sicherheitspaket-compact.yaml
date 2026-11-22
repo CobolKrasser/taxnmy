@@ -1,0 +1,11 @@
+key: datev-eg/sicherheitspaket-compact
+publisher: datev-eg
+name: Sicherheitspaket compact
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DATEV/SicherheitspaketCompact
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DATEV/SicherheitspaketCompact
+identifiers:
+- winget: DATEV.SicherheitspaketCompact
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DATEV/SicherheitspaketCompact
+aliases: []

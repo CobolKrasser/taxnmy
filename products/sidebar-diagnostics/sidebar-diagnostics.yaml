@@ -1,0 +1,11 @@
+key: sidebar-diagnostics/sidebar-diagnostics
+publisher: sidebar-diagnostics
+name: Sidebar Diagnostics
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcadeRenegade/SidebarDiagnostics
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcadeRenegade/SidebarDiagnostics
+identifiers:
+- winget: ArcadeRenegade.SidebarDiagnostics
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcadeRenegade/SidebarDiagnostics
+aliases: []

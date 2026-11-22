@@ -5,4 +5,7 @@ kind: software
 source: https://www.papercut.com/products/ng/
 versions:
   source: https://www.papercut.com/products/ng/release-history/
+identifiers:
+- winget: PaperCutSoftware.NG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/NG
 aliases: []

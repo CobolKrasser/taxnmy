@@ -1,0 +1,11 @@
+key: derailed/k9s
+publisher: derailed
+name: k9s
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Derailed/k9s
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Derailed/k9s
+identifiers:
+- winget: Derailed.k9s
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Derailed/k9s
+aliases: []

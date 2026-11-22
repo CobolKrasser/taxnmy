@@ -1,0 +1,11 @@
+key: http-splayer-org/splayer
+publisher: http-splayer-org
+name: SPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shooter/SPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shooter/SPlayer
+identifiers:
+- winget: Shooter.SPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shooter/SPlayer
+aliases: []

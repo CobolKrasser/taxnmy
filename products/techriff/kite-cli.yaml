@@ -1,0 +1,11 @@
+key: techriff/kite-cli
+publisher: techriff
+name: Kite CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techriff/KiteCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techriff/KiteCli
+identifiers:
+- winget: Techriff.KiteCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Techriff/KiteCli
+aliases: []

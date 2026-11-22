@@ -1,0 +1,11 @@
+key: redfireforge/redfireforge
+publisher: redfireforge
+name: RedfireForge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redfireforge/RedfireForge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redfireforge/RedfireForge
+identifiers:
+- winget: redfireforge.RedfireForge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/redfireforge/RedfireForge
+aliases: []

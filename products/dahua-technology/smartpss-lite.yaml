@@ -1,0 +1,11 @@
+key: dahua-technology/smartpss-lite
+publisher: dahua-technology
+name: SmartPSS Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dahua/SmartPSSLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dahua/SmartPSSLite
+identifiers:
+- winget: Dahua.SmartPSSLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dahua/SmartPSSLite
+aliases: []

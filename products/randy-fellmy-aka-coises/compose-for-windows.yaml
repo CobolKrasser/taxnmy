@@ -1,0 +1,11 @@
+key: randy-fellmy-aka-coises/compose-for-windows
+publisher: randy-fellmy-aka-coises
+name: Compose for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coises/ComposeForWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coises/ComposeForWindows
+identifiers:
+- winget: Coises.ComposeForWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coises/ComposeForWindows
+aliases: []

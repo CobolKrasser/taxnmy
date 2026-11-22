@@ -1,0 +1,11 @@
+key: mountain-loop-labs/yaak
+publisher: mountain-loop-labs
+name: Yaak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yaak/app
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yaak/app
+identifiers:
+- winget: Yaak.app
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yaak/app
+aliases: []

@@ -1,0 +1,12 @@
+key: microdicom/shell-extension
+publisher: microdicom
+name: MicroDicom Shell Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroDicom/ShellExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroDicom/ShellExtension
+identifiers:
+- winget: MicroDicom.ShellExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MicroDicom/ShellExtension
+aliases:
+- microdicom/microdicom-shell-extension

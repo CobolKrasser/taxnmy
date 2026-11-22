@@ -1,0 +1,11 @@
+key: bernd-homuth/schild-report
+publisher: bernd-homuth
+name: schild.report
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/schild-report/schild-report
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/schild-report/schild-report
+identifiers:
+- winget: schild-report.schild-report
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/schild-report/schild-report
+aliases: []

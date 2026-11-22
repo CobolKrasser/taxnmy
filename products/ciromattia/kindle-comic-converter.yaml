@@ -1,0 +1,11 @@
+key: ciromattia/kindle-comic-converter
+publisher: ciromattia
+name: Kindle Comic Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ciromattia/KCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ciromattia/KCC
+identifiers:
+- winget: ciromattia.KCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ciromattia/KCC
+aliases: []

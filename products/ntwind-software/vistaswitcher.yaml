@@ -1,0 +1,11 @@
+key: ntwind-software/vistaswitcher
+publisher: ntwind-software
+name: VistaSwitcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/VistaSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/VistaSwitcher
+identifiers:
+- winget: ntwind.VistaSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/VistaSwitcher
+aliases: []

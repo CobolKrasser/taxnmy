@@ -1,0 +1,13 @@
+key: rejetto/hfs
+publisher: rejetto
+name: hfs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rejetto/hfs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rejetto/hfs
+identifiers:
+- winget: rejetto.hfs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rejetto/hfs
+- winget: rejetto.hfs.prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rejetto/hfs/prerelease
+aliases: []

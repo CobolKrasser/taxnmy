@@ -1,0 +1,12 @@
+key: liner/workspace
+publisher: liner
+name: Liner Workspace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liner/LinerWorkspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liner/LinerWorkspace
+identifiers:
+- winget: Liner.LinerWorkspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liner/LinerWorkspace
+aliases:
+- liner/liner-workspace

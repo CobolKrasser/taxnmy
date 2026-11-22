@@ -1,0 +1,11 @@
+key: dev47apps/droidcam-obs-plugin
+publisher: dev47apps
+name: DroidCam OBS Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev47apps/DroidCamOBSPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev47apps/DroidCamOBSPlugin
+identifiers:
+- winget: dev47apps.DroidCamOBSPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dev47apps/DroidCamOBSPlugin
+aliases: []

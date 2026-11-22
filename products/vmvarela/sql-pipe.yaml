@@ -1,0 +1,11 @@
+key: vmvarela/sql-pipe
+publisher: vmvarela
+name: sql-pipe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vmvarela/sql-pipe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vmvarela/sql-pipe
+identifiers:
+- winget: vmvarela.sql-pipe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vmvarela/sql-pipe
+aliases: []

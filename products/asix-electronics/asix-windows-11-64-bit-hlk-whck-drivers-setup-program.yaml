@@ -1,0 +1,11 @@
+key: asix-electronics/asix-windows-11-64-bit-hlk-whck-drivers-setup-program
+publisher: asix-electronics
+name: ASIX Windows 11 64-bit HLK/WHCK Drivers Setup Program
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASIX/AX88179DriverSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASIX/AX88179DriverSetup
+identifiers:
+- winget: ASIX.AX88179DriverSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ASIX/AX88179DriverSetup
+aliases: []

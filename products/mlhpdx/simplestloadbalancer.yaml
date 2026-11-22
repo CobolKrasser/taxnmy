@@ -1,0 +1,11 @@
+key: mlhpdx/simplestloadbalancer
+publisher: mlhpdx
+name: SimplestLoadBalancer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlhpdx/SimplestLoadBalancer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlhpdx/SimplestLoadBalancer
+identifiers:
+- winget: mlhpdx.SimplestLoadBalancer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlhpdx/SimplestLoadBalancer
+aliases: []

@@ -1,0 +1,11 @@
+key: voodoosoft/cyberlock
+publisher: voodoosoft
+name: CyberLock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoodooSoft/CyberLock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoodooSoft/CyberLock
+identifiers:
+- winget: VoodooSoft.CyberLock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoodooSoft/CyberLock
+aliases: []

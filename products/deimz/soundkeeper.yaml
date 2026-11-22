@@ -1,0 +1,11 @@
+key: deimz/soundkeeper
+publisher: deimz
+name: SoundKeeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deimz/SoundKeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deimz/SoundKeeper
+identifiers:
+- winget: Deimz.SoundKeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deimz/SoundKeeper
+aliases: []

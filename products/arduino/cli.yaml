@@ -1,0 +1,12 @@
+key: arduino/cli
+publisher: arduino
+name: Arduino CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/CLI
+identifiers:
+- winget: ArduinoSA.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArduinoSA/CLI
+aliases:
+- arduino/arduino-cli

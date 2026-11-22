@@ -1,0 +1,11 @@
+key: martin-bresson/executor
+publisher: martin-bresson
+name: Executor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinBresson/Executor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinBresson/Executor
+identifiers:
+- winget: MartinBresson.Executor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinBresson/Executor
+aliases: []

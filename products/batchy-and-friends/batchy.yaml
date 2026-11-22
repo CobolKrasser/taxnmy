@@ -1,0 +1,11 @@
+key: batchy-and-friends/batchy
+publisher: batchy-and-friends
+name: Batchy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BatchyAndFriends/Batchy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BatchyAndFriends/Batchy
+identifiers:
+- winget: BatchyAndFriends.Batchy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BatchyAndFriends/Batchy
+aliases: []

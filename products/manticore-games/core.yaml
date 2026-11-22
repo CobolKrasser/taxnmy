@@ -1,0 +1,11 @@
+key: manticore-games/core
+publisher: manticore-games
+name: Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManticoreGames/Core
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManticoreGames/Core
+identifiers:
+- winget: ManticoreGames.Core
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ManticoreGames/Core
+aliases: []

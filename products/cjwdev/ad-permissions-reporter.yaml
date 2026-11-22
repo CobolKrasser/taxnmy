@@ -1,0 +1,11 @@
+key: cjwdev/ad-permissions-reporter
+publisher: cjwdev
+name: AD Permissions Reporter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADPermissionsReporter/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADPermissionsReporter/Free
+identifiers:
+- winget: Cjwdev.ADPermissionsReporter.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ADPermissionsReporter/Free
+aliases: []

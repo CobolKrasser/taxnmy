@@ -1,0 +1,11 @@
+key: balazs-tihanyi/nclass
+publisher: balazs-tihanyi
+name: NClass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BalazsTihanyi/NClass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BalazsTihanyi/NClass
+identifiers:
+- winget: BalazsTihanyi.NClass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BalazsTihanyi/NClass
+aliases: []

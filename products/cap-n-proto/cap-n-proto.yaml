@@ -1,0 +1,11 @@
+key: cap-n-proto/cap-n-proto
+publisher: cap-n-proto
+name: Cap’n Proto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/capnproto/capnproto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/capnproto/capnproto
+identifiers:
+- winget: capnproto.capnproto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/capnproto/capnproto
+aliases: []

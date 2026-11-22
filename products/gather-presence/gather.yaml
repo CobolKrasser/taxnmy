@@ -1,0 +1,11 @@
+key: gather-presence/gather
+publisher: gather-presence
+name: Gather
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gather/Gather
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gather/Gather
+identifiers:
+- winget: Gather.Gather
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gather/Gather
+aliases: []

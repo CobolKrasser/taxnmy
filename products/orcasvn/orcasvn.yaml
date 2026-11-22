@@ -1,0 +1,11 @@
+key: orcasvn/orcasvn
+publisher: orcasvn
+name: OrcaSVN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrcaSVN/OrcaSVN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrcaSVN/OrcaSVN
+identifiers:
+- winget: OrcaSVN.OrcaSVN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrcaSVN/OrcaSVN
+aliases: []

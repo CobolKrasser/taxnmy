@@ -1,0 +1,11 @@
+key: anchore/syft
+publisher: anchore
+name: Syft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Syft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Syft
+identifiers:
+- winget: Anchore.Syft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Syft
+aliases: []

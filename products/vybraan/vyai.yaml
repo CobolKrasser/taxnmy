@@ -1,0 +1,11 @@
+key: vybraan/vyai
+publisher: vybraan
+name: vyai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vybraan/vyai
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vybraan/vyai
+identifiers:
+- winget: Vybraan.vyai
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vybraan/vyai
+aliases: []

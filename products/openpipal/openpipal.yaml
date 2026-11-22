@@ -1,0 +1,11 @@
+key: openpipal/openpipal
+publisher: openpipal
+name: OpenPipal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPipal/OpenPipal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPipal/OpenPipal
+identifiers:
+- winget: OpenPipal.OpenPipal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPipal/OpenPipal
+aliases: []

@@ -1,0 +1,11 @@
+key: wilhelm-happe/netradio
+publisher: wilhelm-happe
+name: NetRadio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilhelmHappe/NetRadio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilhelmHappe/NetRadio
+identifiers:
+- winget: WilhelmHappe.NetRadio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WilhelmHappe/NetRadio
+aliases: []

@@ -1,0 +1,11 @@
+key: comfort-software-group/comfort-on-screen-keyboard-pro
+publisher: comfort-software-group
+name: Comfort On-Screen Keyboard Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/ComfortOSK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/ComfortOSK
+identifiers:
+- winget: ComfortSoftwareGroup.ComfortOSK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/ComfortOSK
+aliases: []

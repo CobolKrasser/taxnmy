@@ -1,0 +1,12 @@
+key: forthwith/cli
+publisher: forthwith
+name: Forthwith CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForthwithLLC/ForthwithCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForthwithLLC/ForthwithCLI
+identifiers:
+- winget: ForthwithLLC.ForthwithCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForthwithLLC/ForthwithCLI
+aliases:
+- forthwith/forthwith-cli

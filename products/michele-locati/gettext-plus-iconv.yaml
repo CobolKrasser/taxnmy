@@ -1,0 +1,11 @@
+key: michele-locati/gettext-plus-iconv
+publisher: michele-locati
+name: gettext + iconv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlocati/GetText
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlocati/GetText
+identifiers:
+- winget: mlocati.GetText
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlocati/GetText
+aliases: []

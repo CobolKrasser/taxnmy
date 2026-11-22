@@ -1,0 +1,11 @@
+key: pixel/schedule-timer
+publisher: pixel
+name: Schedule Timer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pixel/ScheduleTimer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pixel/ScheduleTimer
+identifiers:
+- winget: Pixel.ScheduleTimer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pixel/ScheduleTimer
+aliases: []

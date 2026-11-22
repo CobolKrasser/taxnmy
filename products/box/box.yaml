@@ -1,0 +1,11 @@
+key: box/box
+publisher: box
+name: Box
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/Box
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/Box
+identifiers:
+- winget: Box.Box
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Box/Box
+aliases: []

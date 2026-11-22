@@ -1,0 +1,11 @@
+key: pingrank-gg/pingrank-gg
+publisher: pingrank-gg
+name: PingRank.gg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PingRank/PingRank
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PingRank/PingRank
+identifiers:
+- winget: PingRank.PingRank
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PingRank/PingRank
+aliases: []

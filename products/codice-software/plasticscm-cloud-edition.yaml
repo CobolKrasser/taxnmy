@@ -1,0 +1,11 @@
+key: codice-software/plasticscm-cloud-edition
+publisher: codice-software
+name: PlasticSCM Cloud Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codice/PlasticSCM/CloudEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codice/PlasticSCM/CloudEdition
+identifiers:
+- winget: Codice.PlasticSCM.CloudEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codice/PlasticSCM/CloudEdition
+aliases: []

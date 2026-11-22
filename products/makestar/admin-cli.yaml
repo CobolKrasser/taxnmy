@@ -1,0 +1,12 @@
+key: makestar/admin-cli
+publisher: makestar
+name: Makestar Admin CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Makestar/MakestarAdminCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Makestar/MakestarAdminCLI
+identifiers:
+- winget: Makestar.MakestarAdminCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Makestar/MakestarAdminCLI
+aliases:
+- makestar/makestar-admin-cli

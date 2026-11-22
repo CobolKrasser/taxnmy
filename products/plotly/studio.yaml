@@ -1,0 +1,12 @@
+key: plotly/studio
+publisher: plotly
+name: Plotly Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plotly/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plotly/Studio
+identifiers:
+- winget: Plotly.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plotly/Studio
+aliases:
+- plotly/plotly-studio

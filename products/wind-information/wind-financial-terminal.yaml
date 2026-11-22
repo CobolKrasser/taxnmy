@@ -1,0 +1,11 @@
+key: wind-information/wind-financial-terminal
+publisher: wind-information
+name: Wind Financial Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wind/WindFinancialTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wind/WindFinancialTerminal
+identifiers:
+- winget: Wind.WindFinancialTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wind/WindFinancialTerminal
+aliases: []

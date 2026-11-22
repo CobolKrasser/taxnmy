@@ -1,0 +1,11 @@
+key: thinkreader-contributors/thinkreader
+publisher: thinkreader-contributors
+name: ThinkReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhangzejing/ThinkReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhangzejing/ThinkReader
+identifiers:
+- winget: zhangzejing.ThinkReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhangzejing/ThinkReader
+aliases: []

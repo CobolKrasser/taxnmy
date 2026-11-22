@@ -1,0 +1,11 @@
+key: omnidicom/omnidicom
+publisher: omnidicom
+name: OmniDICOM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniDICOM/OmniDICOM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniDICOM/OmniDICOM
+identifiers:
+- winget: OmniDICOM.OmniDICOM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmniDICOM/OmniDICOM
+aliases: []

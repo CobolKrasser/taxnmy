@@ -1,0 +1,11 @@
+key: jiayou/filesystem-watcher-utility
+publisher: jiayou
+name: FileSystem Watcher Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JIAYOU/FSWT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JIAYOU/FSWT
+identifiers:
+- winget: JIAYOU.FSWT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JIAYOU/FSWT
+aliases: []

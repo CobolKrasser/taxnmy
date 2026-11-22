@@ -1,0 +1,11 @@
+key: david-peter/pastel
+publisher: david-peter
+name: pastel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/pastel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/pastel
+identifiers:
+- winget: sharkdp.pastel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/pastel
+aliases: []

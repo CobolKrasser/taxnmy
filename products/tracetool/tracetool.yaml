@@ -1,0 +1,11 @@
+key: tracetool/tracetool
+publisher: tracetool
+name: Tracetool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tracetool/Tracetool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tracetool/Tracetool
+identifiers:
+- winget: Tracetool.Tracetool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tracetool/Tracetool
+aliases: []

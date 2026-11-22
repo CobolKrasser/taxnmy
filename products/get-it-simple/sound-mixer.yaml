@@ -1,0 +1,11 @@
+key: get-it-simple/sound-mixer
+publisher: get-it-simple
+name: Sound Mixer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GetItSimple/SoundMixer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GetItSimple/SoundMixer
+identifiers:
+- winget: GetItSimple.SoundMixer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GetItSimple/SoundMixer
+aliases: []

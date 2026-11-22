@@ -1,0 +1,11 @@
+key: lwks-software/lightworks
+publisher: lwks-software
+name: Lightworks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LWKS/Lightworks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LWKS/Lightworks
+identifiers:
+- winget: LWKS.Lightworks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LWKS/Lightworks
+aliases: []

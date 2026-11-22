@@ -1,0 +1,11 @@
+key: google/perfetto
+publisher: google
+name: Perfetto
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Perfetto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Perfetto
+identifiers:
+- winget: Google.Perfetto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Perfetto
+aliases: []

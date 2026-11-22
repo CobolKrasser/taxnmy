@@ -1,0 +1,11 @@
+key: eh-s-stuff/ehmodpack
+publisher: eh-s-stuff
+name: ehmodpack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eh/Modpack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eh/Modpack
+identifiers:
+- winget: Eh.Modpack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eh/Modpack
+aliases: []

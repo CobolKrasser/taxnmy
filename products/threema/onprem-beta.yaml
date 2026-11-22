@@ -1,0 +1,12 @@
+key: threema/onprem-beta
+publisher: threema
+name: Threema OnPrem Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/OnPrem/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/OnPrem/2
+identifiers:
+- winget: Threema.Threema.OnPrem.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Threema/Threema/OnPrem/2
+aliases:
+- threema/threema-onprem-beta

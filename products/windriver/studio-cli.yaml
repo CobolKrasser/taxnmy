@@ -1,0 +1,11 @@
+key: windriver/studio-cli
+publisher: windriver
+name: studio-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindRiver/studio-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindRiver/studio-cli
+identifiers:
+- winget: WindRiver.studio-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WindRiver/studio-cli
+aliases: []

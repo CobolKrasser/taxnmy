@@ -1,0 +1,11 @@
+key: the-tropy-developers-and-contributors/tropy
+publisher: the-tropy-developers-and-contributors
+name: Tropy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScholar/Tropy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScholar/Tropy
+identifiers:
+- winget: DigitalScholar.Tropy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalScholar/Tropy
+aliases: []

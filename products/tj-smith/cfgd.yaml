@@ -1,0 +1,11 @@
+key: tj-smith/cfgd
+publisher: tj-smith
+name: cfgd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TJSmith/cfgd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TJSmith/cfgd
+identifiers:
+- winget: TJSmith.cfgd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TJSmith/cfgd
+aliases: []

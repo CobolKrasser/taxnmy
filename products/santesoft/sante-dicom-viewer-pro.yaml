@@ -1,0 +1,11 @@
+key: santesoft/sante-dicom-viewer-pro
+publisher: santesoft
+name: Sante DICOM Viewer Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomViewerPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomViewerPro
+identifiers:
+- winget: Santesoft.SanteDicomViewerPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Santesoft/SanteDicomViewerPro
+aliases: []

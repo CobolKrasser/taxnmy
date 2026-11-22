@@ -1,0 +1,11 @@
+key: soulsguild/soul-stack
+publisher: soulsguild
+name: Soul Stack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoulsGuild/SoulStack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoulsGuild/SoulStack
+identifiers:
+- winget: SoulsGuild.SoulStack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoulsGuild/SoulStack
+aliases: []

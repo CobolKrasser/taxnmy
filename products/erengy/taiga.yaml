@@ -1,0 +1,11 @@
+key: erengy/taiga
+publisher: erengy
+name: Taiga
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erengy/Taiga
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erengy/Taiga
+identifiers:
+- winget: erengy.Taiga
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/erengy/Taiga
+aliases: []

@@ -1,0 +1,11 @@
+key: chillibits/ccom
+publisher: chillibits
+name: CCom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliBits/CCom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliBits/CCom
+identifiers:
+- winget: ChilliBits.CCom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChilliBits/CCom
+aliases: []

@@ -1,0 +1,11 @@
+key: sigoden/opscan
+publisher: sigoden
+name: opscan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/opscan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/opscan
+identifiers:
+- winget: sigoden.opscan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sigoden/opscan
+aliases: []

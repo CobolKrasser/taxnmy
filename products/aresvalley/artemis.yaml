@@ -1,0 +1,11 @@
+key: aresvalley/artemis
+publisher: aresvalley
+name: Artemis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AresValley/Artemis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AresValley/Artemis
+identifiers:
+- winget: AresValley.Artemis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AresValley/Artemis
+aliases: []

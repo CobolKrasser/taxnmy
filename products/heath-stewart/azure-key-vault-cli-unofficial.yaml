@@ -1,0 +1,11 @@
+key: heath-stewart/azure-key-vault-cli-unofficial
+publisher: heath-stewart
+name: Azure Key Vault CLI (Unofficial)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heaths/akv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heaths/akv
+identifiers:
+- winget: heaths.akv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/heaths/akv
+aliases: []

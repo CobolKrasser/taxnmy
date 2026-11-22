@@ -1,0 +1,11 @@
+key: lkraider/keywise
+publisher: lkraider
+name: Keywise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lkraider/Keywise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lkraider/Keywise
+identifiers:
+- winget: lkraider.Keywise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lkraider/Keywise
+aliases: []

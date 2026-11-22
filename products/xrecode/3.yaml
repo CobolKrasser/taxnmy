@@ -1,0 +1,12 @@
+key: xrecode/3
+publisher: xrecode
+name: XRECODE 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XRECODE/XRECODE3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XRECODE/XRECODE3
+identifiers:
+- winget: XRECODE.XRECODE3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XRECODE/XRECODE3
+aliases:
+- xrecode/xrecode-3

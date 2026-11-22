@@ -1,0 +1,11 @@
+key: antibody-software/wizmouse
+publisher: antibody-software
+name: WizMouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizMouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizMouse
+identifiers:
+- winget: AntibodySoftware.WizMouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizMouse
+aliases: []

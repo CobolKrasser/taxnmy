@@ -1,0 +1,11 @@
+key: the-sz-development/bisbee
+publisher: the-sz-development
+name: Bisbee
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bisbee
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bisbee
+identifiers:
+- winget: the-sz.Bisbee
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bisbee
+aliases: []

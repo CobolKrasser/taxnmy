@@ -40,16 +40,17 @@ PACKAGES = [
     ("Acme.Glider.3", "Acme Inc.", "Glider 3"),
     ("Acme.Kite.fr", "Acme Inc.", "Kite (fr)"),             # a variant marker: one product
     ("Acme.Kite.de", "Acme Inc.", "Kite (de)"),
-    ("Acme.Hammer", "Acme Inc.", "Hammer"),                 # the key of a product in TAX: a duplicate
-    ("Other.Drill", "Acme Inc.", "Drill", "https://example.org/"),  # the name of a publisher in TAX, another domain
+    ("Acme.Hammer", "Acme Inc.", "Hammer"),                 # the key of a product in TAX: it gets the winget id
+    ("Other.Drill", "Acme Inc.", "Drill", "https://example.org/"),  # the name of a publisher in TAX: another domain stops nothing
     ("Zed.Pad", "Zed Labs", "Pad 2024"),                       # a new publisher
     ("Zed.Pen.Lite", "Zed Labs", "Pen Lite"),                  # the same words in another order: one product
     ("Zed.LitePen", "Zed Labs", "Lite Pen"),
     ("Zed.Note", "Zed Labs", "Note"),
-    ("Acmee.Tool", "Acmee", "Tool"),                           # a publisher like an existing one (TV3)
+    ("Acmee.Tool", "Acmee", "Tool"),                           # a publisher like an existing one (TV3): a signal only
     ("Han.Zi", "Han", "汉字"),                                  # a name outside the Latin script
     ("Mail.Box", "Jo Doe jo@mail.example", "Box"),             # an e-mail address in a name
-    ("Acme.Saw", "Saw Makers", "Saw"),                          # only the id names a publisher in TAX
+    ("Acme.Anvil", "Acme Inc.", "Acme Anvil"),                  # TAX-54: the short key, the long form an alias
+    ("Acme.Saw", "Saw Makers", "Saw"),                          # only the id names a publisher in TAX (TV2): a new one
 ]
 
 
@@ -99,13 +100,15 @@ class WingetTest(unittest.TestCase):
         self.assertEqual(outcome["Acme.Glider.2"], ("taken-in", "acme/glider"))
         self.assertEqual(outcome["Acme.Glider.3"], ("taken-in", "acme/glider"))
         self.assertEqual(outcome["Acme.Kite.fr"], ("taken-in", "acme/kite"))
-        self.assertEqual(outcome["Acme.Hammer"], ("apart", "acme/hammer"))
-        self.assertIn("duplicate", by["Acme.Hammer"].reason)
+        self.assertEqual(outcome["Acme.Hammer"], ("in-tax", "acme/hammer"))
+        self.assertEqual(outcome["Other.Drill"], ("taken-in", "acme/drill"))
+        self.assertEqual(outcome["Acmee.Tool"], ("taken-in", "acmee/tool"))
+        self.assertEqual(outcome["Acme.Saw"], ("taken-in", "saw-makers/saw"))
+        self.assertEqual(outcome["Acme.Anvil"], ("taken-in", "acme/anvil"))
         self.assertEqual(outcome["Zed.Pad"], ("taken-in", "zed-labs/pad"))
         self.assertEqual(outcome["Zed.LitePen"], ("taken-in", "zed-labs/lite-pen"))
         self.assertEqual(outcome["Zed.Pen.Lite"], ("taken-in", "zed-labs/lite-pen"))
-        for ident, word in (("Other.Drill", "another domain"), ("Acmee.Tool", "TV3"), ("Han.Zi", "Latin"),
-                            ("Mail.Box", "e-mail"), ("Acme.Saw", "only the winget id")):
+        for ident, word in (("Han.Zi", "Latin"), ("Mail.Box", "e-mail")):
             self.assertEqual(by[ident].outcome, "apart", ident)
             self.assertIn(word, by[ident].reason, ident)
 
@@ -116,14 +119,36 @@ class WingetTest(unittest.TestCase):
         self.assertEqual((glider["name"], glider["source"], glider["versions"]["source"]), ("Glider", page, page))
         self.assertEqual([i["winget"] for i in glider["identifiers"]], ["Acme.Glider.2", "Acme.Glider.3"])
         self.assertEqual(glider["identifiers"][1]["source"], winget.PAGE.format(folder="manifests/a/Acme/Glider/3"))
-        self.assertEqual(set(got["publishers"]), {"zed-labs"}, "a known publisher gets no second file")
+        self.assertEqual(set(got["publishers"]), {"zed-labs", "acmee", "saw-makers"}, "a known publisher gets no second file")
+        self.assertEqual(got["publishers"]["saw-makers"]["name"], "Saw Makers", "as the manifest writes it")
         zed = yaml.safe_load(winget.publisher_text("zed-labs", got["publishers"]["zed-labs"]))
         self.assertEqual((zed["name"], zed["source"]), ("Zed Labs", winget.PAGE.format(folder="manifests/z/Zed/LitePen")))
+
+    def test_the_short_key_has_the_long_form_as_alias(self):
+        got, _ = self.run_round()
+        anvil = yaml.safe_load(got["products"]["acme/anvil"].text())
+        self.assertEqual((anvil["key"], anvil["name"], anvil["aliases"]), ("acme/anvil", "Acme Anvil", ["acme/acme-anvil"]))
 
     def test_what_is_written_passes_the_lint(self):
         self.run_round(write=True)
         self.assertTrue((self.root / "products/acme/sled.yaml").is_file())
         self.assertEqual([f for f in lint.lint(self.root) if f.level == "error"], [])
+
+    def test_a_product_in_tax_gets_the_winget_id(self):
+        before = (self.root / "products/acme/hammer.yaml").read_text()
+        rocket = (self.root / "products/acme/rocket.yaml").read_text()
+        self.run_round(write=True)
+        after = (self.root / "products/acme/hammer.yaml").read_text()
+        page = winget.PAGE.format(folder="manifests/a/Acme/Hammer")
+        self.assertEqual(after, before.replace("aliases: []", f"identifiers:\n- winget: Acme.Hammer\n  source: {page}\naliases: []"))
+        self.assertEqual((self.root / "products/acme/rocket.yaml").read_text(), rocket, "its winget id is there already")
+
+    def test_an_id_joins_the_identifiers_there(self):
+        text = "key: a/b\nidentifiers:\n- cpe: x\n  source: https://example.com/\naliases:\n- a/c\n"
+        p = winget.Package(id="A.B", folder="manifests/a/A/B", version="1", publisher="A", name="B")
+        got = yaml.safe_load(winget.with_winget(text, [p]))
+        self.assertEqual(got["identifiers"][1], {"winget": "A.B", "source": p.page})
+        self.assertEqual(got["aliases"], ["a/c"])
 
     def test_scope_known_leaves_new_publishers_for_later(self):
         got, by = self.run_round("known")
@@ -133,15 +158,16 @@ class WingetTest(unittest.TestCase):
     def test_batches_keep_a_publisher_with_its_products(self):
         got, _ = self.run_round(size=4)
         parts = got["batches"]
-        self.assertEqual(sum(map(len, parts)), len(got["products"]) + len(got["publishers"]))
+        self.assertEqual(sum(map(len, parts)), len(got["products"]) + len(got["publishers"]) + len(got["extend"]))
         zed = [i for i, b in enumerate(parts) if any(rel.endswith(("zed-labs.yaml",)) or "/zed-labs/" in rel for rel in b)]
         self.assertEqual(len(zed), 1)
         self.assertTrue(all(len(b) <= 4 for b in parts if not any("/acme/" in r for r in b)))
 
     def test_the_report_counts_per_outcome_and_reason(self):
         got, _ = self.run_round()
-        self.assertIn("| taken-in | 9 |", got["report"])
-        self.assertIn("| apart | 6 |", got["report"])
+        self.assertIn("| taken-in | 13 |", got["report"])
+        self.assertIn("| in-tax | 2 |", got["report"])
+        self.assertIn("| apart | 2 |", got["report"])
         outcomes = json.loads((self.tmp / "out/outcomes.json").read_text())
         self.assertEqual(len(outcomes), len(PACKAGES))
 
@@ -157,7 +183,7 @@ class BaseNameTest(unittest.TestCase):
 
 
 class NoBrandTest(unittest.TestCase):
-    """TG4: the importer names no publisher of the dataset."""
+    """TG4: the importer names no publisher of a fixed list (the data of the test set, TAX-56)."""
 
     def test_no_publisher_name_in_the_code(self):
         code = (REPO / "tools/winget.py").read_text().lower()

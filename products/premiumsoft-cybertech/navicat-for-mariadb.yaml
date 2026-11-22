@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-mariadb
+publisher: premiumsoft-cybertech
+name: Navicat for MariaDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMariaDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMariaDB
+identifiers:
+- winget: PremiumSoft.NavicatMariaDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMariaDB
+aliases: []

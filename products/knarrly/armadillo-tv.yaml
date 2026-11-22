@@ -1,0 +1,11 @@
+key: knarrly/armadillo-tv
+publisher: knarrly
+name: Armadillo TV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Knarrly/ArmadilloTV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Knarrly/ArmadilloTV
+identifiers:
+- winget: Knarrly.ArmadilloTV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Knarrly/ArmadilloTV
+aliases: []

@@ -1,0 +1,11 @@
+key: atnsoft/key-manager
+publisher: atnsoft
+name: Key Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATNSOFT/KeyManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATNSOFT/KeyManager
+identifiers:
+- winget: ATNSOFT.KeyManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATNSOFT/KeyManager
+aliases: []

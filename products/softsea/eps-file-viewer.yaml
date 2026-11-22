@@ -1,0 +1,11 @@
+key: softsea/eps-file-viewer
+publisher: softsea
+name: EPS File Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/EPSFileViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/EPSFileViewer
+identifiers:
+- winget: SoftSea.EPSFileViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/EPSFileViewer
+aliases: []

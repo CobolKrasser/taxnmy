@@ -1,0 +1,11 @@
+key: mozilla-xiphorg-and-or-ietf/opus-tools
+publisher: mozilla-xiphorg-and-or-ietf
+name: opus-tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/opus-tools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/opus-tools
+identifiers:
+- winget: Mozilla.opus-tools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/opus-tools
+aliases: []

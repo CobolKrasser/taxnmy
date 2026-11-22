@@ -1,0 +1,11 @@
+key: romcenter/romcenter
+publisher: romcenter
+name: Romcenter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Romcenter/Romcenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Romcenter/Romcenter
+identifiers:
+- winget: Romcenter.Romcenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Romcenter/Romcenter
+aliases: []

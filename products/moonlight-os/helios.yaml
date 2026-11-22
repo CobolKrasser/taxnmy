@@ -1,0 +1,11 @@
+key: moonlight-os/helios
+publisher: moonlight-os
+name: Helios
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonlightOS/Helios
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonlightOS/Helios
+identifiers:
+- winget: MoonlightOS.Helios
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonlightOS/Helios
+aliases: []

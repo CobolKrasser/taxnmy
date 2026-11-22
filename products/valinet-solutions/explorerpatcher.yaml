@@ -1,0 +1,11 @@
+key: valinet-solutions/explorerpatcher
+publisher: valinet-solutions
+name: ExplorerPatcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/valinet/ExplorerPatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/valinet/ExplorerPatcher
+identifiers:
+- winget: valinet.ExplorerPatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/valinet/ExplorerPatcher
+aliases: []

@@ -1,0 +1,11 @@
+key: alibaba-cloud/qoder-cn-ide
+publisher: alibaba-cloud
+name: Qoder CN IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/QoderIDE/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/QoderIDE/CN
+identifiers:
+- winget: Alibaba.QoderIDE.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Alibaba/QoderIDE/CN
+aliases: []

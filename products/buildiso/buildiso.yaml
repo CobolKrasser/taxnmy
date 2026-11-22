@@ -1,0 +1,11 @@
+key: buildiso/buildiso
+publisher: buildiso
+name: BuildIso
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BuildIso/BuildIso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BuildIso/BuildIso
+identifiers:
+- winget: BuildIso.BuildIso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BuildIso/BuildIso
+aliases: []

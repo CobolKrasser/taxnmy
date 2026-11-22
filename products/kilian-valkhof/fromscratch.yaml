@@ -1,0 +1,11 @@
+key: kilian-valkhof/fromscratch
+publisher: kilian-valkhof
+name: FromScratch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kilian/fromscratch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kilian/fromscratch
+identifiers:
+- winget: kilian.fromscratch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kilian/fromscratch
+aliases: []

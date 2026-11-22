@@ -1,0 +1,11 @@
+key: ghisler-software/total-commander
+publisher: ghisler-software
+name: Total Commander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghisler/TotalCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghisler/TotalCommander
+identifiers:
+- winget: Ghisler.TotalCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghisler/TotalCommander
+aliases: []

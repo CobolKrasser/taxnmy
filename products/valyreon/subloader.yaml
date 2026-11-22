@@ -1,0 +1,11 @@
+key: valyreon/subloader
+publisher: valyreon
+name: Subloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valyreon/Subloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valyreon/Subloader
+identifiers:
+- winget: Valyreon.Subloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valyreon/Subloader
+aliases: []

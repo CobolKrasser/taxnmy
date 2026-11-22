@@ -1,0 +1,11 @@
+key: distributed-creation/splice
+publisher: distributed-creation
+name: Splice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splice/DesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splice/DesktopApp
+identifiers:
+- winget: Splice.DesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Splice/DesktopApp
+aliases: []

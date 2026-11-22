@@ -1,0 +1,11 @@
+key: open-cli-collective/retune
+publisher: open-cli-collective
+name: Retune
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/Retune
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/Retune
+identifiers:
+- winget: OpenCLICollective.Retune
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/Retune
+aliases: []

@@ -1,0 +1,11 @@
+key: donislawdev/bean-network-tester
+publisher: donislawdev
+name: Bean Network Tester
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonislawDev/BeanNetworkTester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonislawDev/BeanNetworkTester
+identifiers:
+- winget: DonislawDev.BeanNetworkTester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonislawDev/BeanNetworkTester
+aliases: []

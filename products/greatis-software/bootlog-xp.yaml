@@ -1,0 +1,11 @@
+key: greatis-software/bootlog-xp
+publisher: greatis-software
+name: BootLog XP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootLogXP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootLogXP
+identifiers:
+- winget: Greatis.BootLogXP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/BootLogXP
+aliases: []

@@ -1,0 +1,11 @@
+key: gravitational/teleport-connect
+publisher: gravitational
+name: Teleport Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gravitational/TeleportConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gravitational/TeleportConnect
+identifiers:
+- winget: Gravitational.TeleportConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gravitational/TeleportConnect
+aliases: []

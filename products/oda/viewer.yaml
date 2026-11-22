@@ -1,0 +1,12 @@
+key: oda/viewer
+publisher: oda
+name: ODA Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ODA/ODAViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ODA/ODAViewer
+identifiers:
+- winget: ODA.ODAViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ODA/ODAViewer
+aliases:
+- oda/oda-viewer

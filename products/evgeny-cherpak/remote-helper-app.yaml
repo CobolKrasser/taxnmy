@@ -1,0 +1,11 @@
+key: evgeny-cherpak/remote-helper-app
+publisher: evgeny-cherpak
+name: Remote Helper App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvgenyCherpak/RemoteHelperApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvgenyCherpak/RemoteHelperApp
+identifiers:
+- winget: EvgenyCherpak.RemoteHelperApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvgenyCherpak/RemoteHelperApp
+aliases: []

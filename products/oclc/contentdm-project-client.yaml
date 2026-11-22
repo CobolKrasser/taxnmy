@@ -1,0 +1,11 @@
+key: oclc/contentdm-project-client
+publisher: oclc
+name: CONTENTdm Project Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCLC/CONTENTdmProjectClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCLC/CONTENTdmProjectClient
+identifiers:
+- winget: OCLC.CONTENTdmProjectClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCLC/CONTENTdmProjectClient
+aliases: []

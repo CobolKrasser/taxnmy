@@ -1,0 +1,12 @@
+key: wildix/integration-service
+publisher: wildix
+name: Wildix Integration Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildix/WildixIntegrationService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildix/WildixIntegrationService
+identifiers:
+- winget: Wildix.WildixIntegrationService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildix/WildixIntegrationService
+aliases:
+- wildix/wildix-integration-service

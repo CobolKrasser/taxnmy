@@ -1,0 +1,11 @@
+key: davide-maggi/koncierge-cli
+publisher: davide-maggi
+name: Koncierge CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavideMaggi/Koncierge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavideMaggi/Koncierge
+identifiers:
+- winget: DavideMaggi.Koncierge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavideMaggi/Koncierge
+aliases: []

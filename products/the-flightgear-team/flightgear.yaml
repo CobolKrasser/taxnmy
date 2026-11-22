@@ -1,0 +1,11 @@
+key: the-flightgear-team/flightgear
+publisher: the-flightgear-team
+name: FlightGear
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlightGear/FlightGear
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlightGear/FlightGear
+identifiers:
+- winget: FlightGear.FlightGear
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlightGear/FlightGear
+aliases: []

@@ -1,0 +1,11 @@
+key: tailscale/tailcat
+publisher: tailscale
+name: tailcat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tailscale/tailcat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tailscale/tailcat
+identifiers:
+- winget: Tailscale.tailcat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tailscale/tailcat
+aliases: []

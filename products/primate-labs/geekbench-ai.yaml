@@ -1,0 +1,11 @@
+key: primate-labs/geekbench-ai
+publisher: primate-labs
+name: Geekbench AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/GeekbenchAI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/GeekbenchAI
+identifiers:
+- winget: PrimateLabs.GeekbenchAI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimateLabs/GeekbenchAI
+aliases: []

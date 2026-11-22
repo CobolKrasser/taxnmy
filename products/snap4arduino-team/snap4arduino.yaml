@@ -1,0 +1,11 @@
+key: snap4arduino-team/snap4arduino
+publisher: snap4arduino-team
+name: Snap4Arduino
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BernatRomagosa/Snap4Arduino
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BernatRomagosa/Snap4Arduino
+identifiers:
+- winget: BernatRomagosa.Snap4Arduino
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BernatRomagosa/Snap4Arduino
+aliases: []

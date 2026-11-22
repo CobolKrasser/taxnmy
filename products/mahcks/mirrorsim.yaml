@@ -1,0 +1,11 @@
+key: mahcks/mirrorsim
+publisher: mahcks
+name: MirrorSim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mahcks/MirrorSim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mahcks/MirrorSim
+identifiers:
+- winget: Mahcks.MirrorSim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mahcks/MirrorSim
+aliases: []

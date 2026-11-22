@@ -1,0 +1,11 @@
+key: mozilla/sccache
+publisher: mozilla
+name: sccache
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/sccache
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/sccache
+identifiers:
+- winget: Mozilla.sccache
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/sccache
+aliases: []

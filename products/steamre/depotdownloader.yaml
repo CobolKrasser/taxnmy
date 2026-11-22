@@ -1,0 +1,11 @@
+key: steamre/depotdownloader
+publisher: steamre
+name: DepotDownloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamRE/DepotDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamRE/DepotDownloader
+identifiers:
+- winget: SteamRE.DepotDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamRE/DepotDownloader
+aliases: []

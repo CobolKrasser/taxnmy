@@ -1,0 +1,11 @@
+key: sdr-radio-com/sdr-television
+publisher: sdr-radio-com
+name: SDR Television
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonG4ELI/SDR-Television
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonG4ELI/SDR-Television
+identifiers:
+- winget: SimonG4ELI.SDR-Television
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SimonG4ELI/SDR-Television
+aliases: []

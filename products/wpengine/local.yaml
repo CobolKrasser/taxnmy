@@ -1,0 +1,11 @@
+key: wpengine/local
+publisher: wpengine
+name: Local
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flywheel/Local
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flywheel/Local
+identifiers:
+- winget: Flywheel.Local
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flywheel/Local
+aliases: []

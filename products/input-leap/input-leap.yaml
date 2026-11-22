@@ -1,0 +1,11 @@
+key: input-leap/input-leap
+publisher: input-leap
+name: input-leap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/input-leap/input-leap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/input-leap/input-leap
+identifiers:
+- winget: input-leap.input-leap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/input-leap/input-leap
+aliases: []

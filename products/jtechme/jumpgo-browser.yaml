@@ -1,0 +1,11 @@
+key: jtechme/jumpgo-browser
+publisher: jtechme
+name: JumpGo Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTechMe/JumpGoBrowser/Legacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTechMe/JumpGoBrowser/Legacy
+identifiers:
+- winget: JTechMe.JumpGoBrowser.Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTechMe/JumpGoBrowser/Legacy
+aliases: []

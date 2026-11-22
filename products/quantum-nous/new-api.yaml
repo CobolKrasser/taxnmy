@@ -1,0 +1,11 @@
+key: quantum-nous/new-api
+publisher: quantum-nous
+name: New API
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuantumNous/NewAPI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuantumNous/NewAPI
+identifiers:
+- winget: QuantumNous.NewAPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuantumNous/NewAPI
+aliases: []

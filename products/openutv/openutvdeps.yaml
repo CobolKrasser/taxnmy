@@ -1,0 +1,11 @@
+key: openutv/openutvdeps
+publisher: openutv
+name: OpenUTVDeps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenUTV/OpenUTVDeps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenUTV/OpenUTVDeps
+identifiers:
+- winget: OpenUTV.OpenUTVDeps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenUTV/OpenUTVDeps
+aliases: []

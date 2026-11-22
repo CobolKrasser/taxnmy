@@ -1,0 +1,11 @@
+key: the-oscar-team/oscar
+publisher: the-oscar-team
+name: OSCAR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheOSCARTeam/OSCAR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheOSCARTeam/OSCAR
+identifiers:
+- winget: TheOSCARTeam.OSCAR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheOSCARTeam/OSCAR
+aliases: []

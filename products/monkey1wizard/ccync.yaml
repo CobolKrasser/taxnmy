@@ -1,0 +1,11 @@
+key: monkey1wizard/ccync
+publisher: monkey1wizard
+name: ccync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monkey1Wizard/ccync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monkey1Wizard/ccync
+identifiers:
+- winget: Monkey1Wizard.ccync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monkey1Wizard/ccync
+aliases: []

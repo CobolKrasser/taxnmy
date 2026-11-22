@@ -1,0 +1,11 @@
+key: siarheim/light-downloader
+publisher: siarheim
+name: Light Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiarheiM/LightDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiarheiM/LightDownloader
+identifiers:
+- winget: SiarheiM.LightDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiarheiM/LightDownloader
+aliases: []

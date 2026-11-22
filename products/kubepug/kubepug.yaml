@@ -1,0 +1,11 @@
+key: kubepug/kubepug
+publisher: kubepug
+name: kubepug
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubepug/kubepug
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubepug/kubepug
+identifiers:
+- winget: kubepug.kubepug
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kubepug/kubepug
+aliases: []

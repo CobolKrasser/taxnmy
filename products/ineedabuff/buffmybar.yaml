@@ -1,0 +1,11 @@
+key: ineedabuff/buffmybar
+publisher: ineedabuff
+name: BuffMyBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IneedABUFF/BuffMyBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IneedABUFF/BuffMyBar
+identifiers:
+- winget: IneedABUFF.BuffMyBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IneedABUFF/BuffMyBar
+aliases: []

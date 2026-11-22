@@ -1,0 +1,11 @@
+key: mozilla/ghostery-private-browser
+publisher: mozilla
+name: Ghostery Private Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostery/GhosteryDawn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostery/GhosteryDawn
+identifiers:
+- winget: Ghostery.GhosteryDawn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Ghostery/GhosteryDawn
+aliases: []

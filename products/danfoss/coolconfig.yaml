@@ -1,0 +1,11 @@
+key: danfoss/coolconfig
+publisher: danfoss
+name: CoolConfig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/CoolConfig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/CoolConfig
+identifiers:
+- winget: Danfoss.CoolConfig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Danfoss/CoolConfig
+aliases: []

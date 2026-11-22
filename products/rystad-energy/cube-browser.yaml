@@ -1,0 +1,11 @@
+key: rystad-energy/cube-browser
+publisher: rystad-energy
+name: Cube Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RystadEnergy/CubeBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RystadEnergy/CubeBrowser
+identifiers:
+- winget: RystadEnergy.CubeBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RystadEnergy/CubeBrowser
+aliases: []

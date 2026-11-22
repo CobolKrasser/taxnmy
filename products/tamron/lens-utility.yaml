@@ -1,0 +1,12 @@
+key: tamron/lens-utility
+publisher: tamron
+name: TAMRON Lens Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tamron/LensUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tamron/LensUtility
+identifiers:
+- winget: Tamron.LensUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tamron/LensUtility
+aliases:
+- tamron/tamron-lens-utility

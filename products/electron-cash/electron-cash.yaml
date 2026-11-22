@@ -1,0 +1,11 @@
+key: electron-cash/electron-cash
+publisher: electron-cash
+name: Electron Cash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCash/ElectronCash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCash/ElectronCash
+identifiers:
+- winget: ElectronCash.ElectronCash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronCash/ElectronCash
+aliases: []

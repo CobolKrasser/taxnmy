@@ -1,0 +1,11 @@
+key: remnote/remnote
+publisher: remnote
+name: RemNote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemNote/RemNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemNote/RemNote
+identifiers:
+- winget: RemNote.RemNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemNote/RemNote
+aliases: []

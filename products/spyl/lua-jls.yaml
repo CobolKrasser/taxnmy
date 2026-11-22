@@ -1,0 +1,11 @@
+key: spyl/lua-jls
+publisher: spyl
+name: Lua JLS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JavaLikeScript/LuaJLS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JavaLikeScript/LuaJLS
+identifiers:
+- winget: JavaLikeScript.LuaJLS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JavaLikeScript/LuaJLS
+aliases: []

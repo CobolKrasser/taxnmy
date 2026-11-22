@@ -1,0 +1,11 @@
+key: iosgods/sideloadly
+publisher: iosgods
+name: Sideloadly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOSGods/Sideloadly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOSGods/Sideloadly
+identifiers:
+- winget: iOSGods.Sideloadly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iOSGods/Sideloadly
+aliases: []

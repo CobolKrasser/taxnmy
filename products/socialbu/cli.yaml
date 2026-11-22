@@ -1,0 +1,12 @@
+key: socialbu/cli
+publisher: socialbu
+name: SocialBu CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SocialBu/SocialBuCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SocialBu/SocialBuCLI
+identifiers:
+- winget: SocialBu.SocialBuCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SocialBu/SocialBuCLI
+aliases:
+- socialbu/socialbu-cli

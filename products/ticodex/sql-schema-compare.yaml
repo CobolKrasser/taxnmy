@@ -1,0 +1,11 @@
+key: ticodex/sql-schema-compare
+publisher: ticodex
+name: SQL Schema Compare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TiCodeX/SQLSchemaCompare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TiCodeX/SQLSchemaCompare
+identifiers:
+- winget: TiCodeX.SQLSchemaCompare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TiCodeX/SQLSchemaCompare
+aliases: []

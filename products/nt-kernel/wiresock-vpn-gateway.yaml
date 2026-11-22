@@ -1,0 +1,11 @@
+key: nt-kernel/wiresock-vpn-gateway
+publisher: nt-kernel
+name: WireSock VPN Gateway
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTKERNEL/WireSockVPNGateway
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTKERNEL/WireSockVPNGateway
+identifiers:
+- winget: NTKERNEL.WireSockVPNGateway
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NTKERNEL/WireSockVPNGateway
+aliases: []

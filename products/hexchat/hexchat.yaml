@@ -1,0 +1,11 @@
+key: hexchat/hexchat
+publisher: hexchat
+name: HexChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HexChat/HexChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HexChat/HexChat
+identifiers:
+- winget: HexChat.HexChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HexChat/HexChat
+aliases: []

@@ -1,0 +1,13 @@
+key: bram-moolenaar-et-al/vim
+publisher: bram-moolenaar-et-al
+name: Vim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vim/vim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vim/vim
+identifiers:
+- winget: vim.vim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vim/vim
+- winget: vim.vim.nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vim/vim/nightly
+aliases: []

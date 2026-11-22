@@ -1,0 +1,12 @@
+key: easymorph/hub
+publisher: easymorph
+name: EasyMorph Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyMorph/EasyMorphHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyMorph/EasyMorphHub
+identifiers:
+- winget: EasyMorph.EasyMorphHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyMorph/EasyMorphHub
+aliases:
+- easymorph/easymorph-hub

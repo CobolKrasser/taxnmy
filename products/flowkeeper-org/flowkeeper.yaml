@@ -1,0 +1,11 @@
+key: flowkeeper-org/flowkeeper
+publisher: flowkeeper-org
+name: Flowkeeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowkeeper/Flowkeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowkeeper/Flowkeeper
+identifiers:
+- winget: Flowkeeper.Flowkeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowkeeper/Flowkeeper
+aliases: []

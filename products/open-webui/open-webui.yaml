@@ -1,0 +1,11 @@
+key: open-webui/open-webui
+publisher: open-webui
+name: Open WebUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWebUI/OpenWebUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWebUI/OpenWebUI
+identifiers:
+- winget: OpenWebUI.OpenWebUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWebUI/OpenWebUI
+aliases: []

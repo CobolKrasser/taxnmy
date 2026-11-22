@@ -1,0 +1,12 @@
+key: postman/agent
+publisher: postman
+name: Postman Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/PostmanAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/PostmanAgent
+identifiers:
+- winget: Postman.PostmanAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postman/PostmanAgent
+aliases:
+- postman/postman-agent

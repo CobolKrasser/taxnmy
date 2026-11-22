@@ -1,0 +1,12 @@
+key: raspberry-pi/imager
+publisher: raspberry-pi
+name: Raspberry Pi Imager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaspberryPiFoundation/RaspberryPiImager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaspberryPiFoundation/RaspberryPiImager
+identifiers:
+- winget: RaspberryPiFoundation.RaspberryPiImager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaspberryPiFoundation/RaspberryPiImager
+aliases:
+- raspberry-pi/raspberry-pi-imager

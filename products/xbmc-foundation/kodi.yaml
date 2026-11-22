@@ -1,0 +1,11 @@
+key: xbmc-foundation/kodi
+publisher: xbmc-foundation
+name: Kodi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XBMCFoundation/Kodi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XBMCFoundation/Kodi
+identifiers:
+- winget: XBMCFoundation.Kodi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XBMCFoundation/Kodi
+aliases: []

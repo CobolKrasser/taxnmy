@@ -1,0 +1,11 @@
+key: almarfeld/config-doctor
+publisher: almarfeld
+name: Config Doctor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALMARFELD/ConfigDoctor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALMARFELD/ConfigDoctor
+identifiers:
+- winget: ALMARFELD.ConfigDoctor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALMARFELD/ConfigDoctor
+aliases: []

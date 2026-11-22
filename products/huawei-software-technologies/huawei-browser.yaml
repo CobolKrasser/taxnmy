@@ -1,0 +1,11 @@
+key: huawei-software-technologies/huawei-browser
+publisher: huawei-software-technologies
+name: HUAWEI Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiBrowser
+identifiers:
+- winget: Huawei.HuaweiBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiBrowser
+aliases: []

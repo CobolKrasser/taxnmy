@@ -1,0 +1,12 @@
+key: ivideon/client
+publisher: ivideon
+name: Ivideon Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivideon/Ivideon/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivideon/Ivideon/Client
+identifiers:
+- winget: Ivideon.Ivideon.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivideon/Ivideon/Client
+aliases:
+- ivideon/ivideon-client

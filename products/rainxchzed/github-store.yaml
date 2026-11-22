@@ -1,0 +1,11 @@
+key: rainxchzed/github-store
+publisher: rainxchzed
+name: GitHub Store
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zed/rainxch/githubstore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zed/rainxch/githubstore
+identifiers:
+- winget: zed.rainxch.githubstore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zed/rainxch/githubstore
+aliases: []

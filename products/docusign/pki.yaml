@@ -1,0 +1,12 @@
+key: docusign/pki
+publisher: docusign
+name: Docusign PKI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DocuSign/DocusignPKI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DocuSign/DocusignPKI
+identifiers:
+- winget: DocuSign.DocusignPKI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DocuSign/DocusignPKI
+aliases:
+- docusign/docusign-pki

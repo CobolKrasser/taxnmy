@@ -1,0 +1,12 @@
+key: vovsoft/proxy-server
+publisher: vovsoft
+name: Vovsoft Proxy Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxyServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxyServer
+identifiers:
+- winget: VovSoft.ProxyServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxyServer
+aliases:
+- vovsoft/vovsoft-proxy-server

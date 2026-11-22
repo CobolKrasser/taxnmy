@@ -1,0 +1,12 @@
+key: ubiquiti/unifi-network-server
+publisher: ubiquiti
+name: Ubiquiti UniFi Network Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/UniFiNetworkServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/UniFiNetworkServer
+identifiers:
+- winget: Ubiquiti.UniFiNetworkServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Ubiquiti/UniFiNetworkServer
+aliases:
+- ubiquiti/ubiquiti-unifi-network-server

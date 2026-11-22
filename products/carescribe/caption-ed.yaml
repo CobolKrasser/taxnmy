@@ -1,0 +1,11 @@
+key: carescribe/caption-ed
+publisher: carescribe
+name: Caption.Ed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CareScribe/CaptionEd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CareScribe/CaptionEd
+identifiers:
+- winget: CareScribe.CaptionEd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CareScribe/CaptionEd
+aliases: []

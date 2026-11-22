@@ -1,0 +1,12 @@
+key: yandex/browser
+publisher: yandex
+name: Yandex Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Browser
+identifiers:
+- winget: Yandex.Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Browser
+aliases:
+- yandex/yandex-browser

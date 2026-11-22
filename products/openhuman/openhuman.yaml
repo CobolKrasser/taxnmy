@@ -1,0 +1,11 @@
+key: openhuman/openhuman
+publisher: openhuman
+name: OpenHuman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyHumansAI/OpenHuman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyHumansAI/OpenHuman
+identifiers:
+- winget: TinyHumansAI.OpenHuman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyHumansAI/OpenHuman
+aliases: []

@@ -1,0 +1,11 @@
+key: myvoipapp/minisipserver
+publisher: myvoipapp
+name: miniSIPServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYVOIPAPP/miniSIPServer/5C
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYVOIPAPP/miniSIPServer/5C
+identifiers:
+- winget: MYVOIPAPP.miniSIPServer.5C
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MYVOIPAPP/miniSIPServer/5C
+aliases: []

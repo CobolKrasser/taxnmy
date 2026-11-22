@@ -1,0 +1,11 @@
+key: sasler/troublescout
+publisher: sasler
+name: TroubleScout
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sasler/TroubleScout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sasler/TroubleScout
+identifiers:
+- winget: sasler.TroubleScout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sasler/TroubleScout
+aliases: []

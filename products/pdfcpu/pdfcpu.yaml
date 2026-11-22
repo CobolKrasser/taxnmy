@@ -1,0 +1,11 @@
+key: pdfcpu/pdfcpu
+publisher: pdfcpu
+name: pdfcpu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pdfcpu/pdfcpu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pdfcpu/pdfcpu
+identifiers:
+- winget: pdfcpu.pdfcpu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pdfcpu/pdfcpu
+aliases: []

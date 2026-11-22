@@ -1,0 +1,11 @@
+key: electronic-team/virtual-serial-port-driver
+publisher: electronic-team
+name: Virtual Serial Port Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/VirtualSerialPortDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/VirtualSerialPortDriver
+identifiers:
+- winget: ElectronicTeam.VirtualSerialPortDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/VirtualSerialPortDriver
+aliases: []

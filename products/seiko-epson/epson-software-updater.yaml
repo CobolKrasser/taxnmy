@@ -1,0 +1,11 @@
+key: seiko-epson/epson-software-updater
+publisher: seiko-epson
+name: Epson Software Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/SoftwareUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/SoftwareUpdater
+identifiers:
+- winget: EPSON.SoftwareUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/SoftwareUpdater
+aliases: []

@@ -1,0 +1,12 @@
+key: vovsoft/file-splitter-and-joiner
+publisher: vovsoft
+name: Vovsoft File Splitter And Joiner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FileSplitterAndJoiner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FileSplitterAndJoiner
+identifiers:
+- winget: VovSoft.FileSplitterAndJoiner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FileSplitterAndJoiner
+aliases:
+- vovsoft/vovsoft-file-splitter-and-joiner

@@ -1,0 +1,11 @@
+key: nittray/nittray
+publisher: nittray
+name: NitTray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinkaiQi/NitTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinkaiQi/NitTray
+identifiers:
+- winget: LinkaiQi.NitTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinkaiQi/NitTray
+aliases: []

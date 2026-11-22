@@ -1,0 +1,11 @@
+key: hocinechero/eyeguard
+publisher: hocinechero
+name: EyeGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hocinechero/EyeGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hocinechero/EyeGuard
+identifiers:
+- winget: hocinechero.EyeGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hocinechero/EyeGuard
+aliases: []

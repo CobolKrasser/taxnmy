@@ -1,0 +1,11 @@
+key: here-technologies/olp-cli-native
+publisher: here-technologies
+name: OLP CLI Native
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/OLPCLI/NATIVE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/OLPCLI/NATIVE
+identifiers:
+- winget: HERE.OLPCLI.NATIVE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/OLPCLI/NATIVE
+aliases: []

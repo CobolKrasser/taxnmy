@@ -1,0 +1,11 @@
+key: stixez/synccrate
+publisher: stixez
+name: SyncCrate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stixez/SyncCrate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stixez/SyncCrate
+identifiers:
+- winget: stixez.SyncCrate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stixez/SyncCrate
+aliases: []

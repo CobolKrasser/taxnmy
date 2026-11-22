@@ -1,0 +1,11 @@
+key: signum/signum
+publisher: signum
+name: Signum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Signum/Signum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Signum/Signum
+identifiers:
+- winget: Signum.Signum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Signum/Signum
+aliases: []

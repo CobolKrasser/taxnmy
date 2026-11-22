@@ -1,0 +1,11 @@
+key: charruasoft/charrua-workstation
+publisher: charruasoft
+name: Charrua WorkStation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/CharruaWorkStation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/CharruaWorkStation
+identifiers:
+- winget: CharruaSoft.CharruaWorkStation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CharruaSoft/CharruaWorkStation
+aliases: []

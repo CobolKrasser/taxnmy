@@ -1,0 +1,11 @@
+key: adrien-allard/file-converter
+publisher: adrien-allard
+name: File Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdrienAllard/FileConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdrienAllard/FileConverter
+identifiers:
+- winget: AdrienAllard.FileConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdrienAllard/FileConverter
+aliases: []

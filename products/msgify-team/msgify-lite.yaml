@@ -1,0 +1,11 @@
+key: msgify-team/msgify-lite
+publisher: msgify-team
+name: Msgify Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Msgify/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Msgify/Lite
+identifiers:
+- winget: Msgify.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Msgify/Lite
+aliases: []

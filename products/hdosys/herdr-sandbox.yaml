@@ -1,0 +1,11 @@
+key: hdosys/herdr-sandbox
+publisher: hdosys
+name: Herdr Sandbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdosys/herdr-sandbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdosys/herdr-sandbox
+identifiers:
+- winget: hdosys.herdr-sandbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdosys/herdr-sandbox
+aliases: []

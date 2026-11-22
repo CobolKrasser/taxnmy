@@ -1,0 +1,11 @@
+key: hiro-systems/clarinet
+publisher: hiro-systems
+name: clarinet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroSystems/Clarinet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroSystems/Clarinet
+identifiers:
+- winget: HiroSystems.Clarinet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroSystems/Clarinet
+aliases: []

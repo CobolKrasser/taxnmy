@@ -1,0 +1,11 @@
+key: devcentr/ibex
+publisher: devcentr
+name: Ibex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevCentr/Ibex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevCentr/Ibex
+identifiers:
+- winget: DevCentr.Ibex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevCentr/Ibex
+aliases: []

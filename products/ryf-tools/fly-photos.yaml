@@ -1,0 +1,11 @@
+key: ryf-tools/fly-photos
+publisher: ryf-tools
+name: Fly Photos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/riyasy/FlyPhotos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/riyasy/FlyPhotos
+identifiers:
+- winget: riyasy.FlyPhotos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/riyasy/FlyPhotos
+aliases: []

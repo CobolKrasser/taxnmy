@@ -1,0 +1,11 @@
+key: the-zdaemon-team/zdaemon
+publisher: the-zdaemon-team
+name: ZDaemon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheZDaemonTeam/ZDaemon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheZDaemonTeam/ZDaemon
+identifiers:
+- winget: TheZDaemonTeam.ZDaemon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheZDaemonTeam/ZDaemon
+aliases: []

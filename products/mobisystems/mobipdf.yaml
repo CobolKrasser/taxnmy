@@ -1,0 +1,11 @@
+key: mobisystems/mobipdf
+publisher: mobisystems
+name: MobiPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiPDF
+identifiers:
+- winget: MobiSystems.MobiPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MobiSystems/MobiPDF
+aliases: []

@@ -1,0 +1,11 @@
+key: goreleaser/nfpm
+publisher: goreleaser
+name: nfpm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/nfpm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/nfpm
+identifiers:
+- winget: goreleaser.nfpm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/nfpm
+aliases: []

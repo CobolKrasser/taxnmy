@@ -1,0 +1,11 @@
+key: skymatic/cryptomator
+publisher: skymatic
+name: Cryptomator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cryptomator/Cryptomator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cryptomator/Cryptomator
+identifiers:
+- winget: Cryptomator.Cryptomator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cryptomator/Cryptomator
+aliases: []

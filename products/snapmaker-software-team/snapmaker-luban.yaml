@@ -1,0 +1,11 @@
+key: snapmaker-software-team/snapmaker-luban
+publisher: snapmaker-software-team
+name: Snapmaker Luban
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/Luban
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/Luban
+identifiers:
+- winget: Snapmaker.Luban
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/Luban
+aliases: []

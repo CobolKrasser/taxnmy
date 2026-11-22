@@ -1,0 +1,11 @@
+key: jgaa-s-internet/war-setup
+publisher: jgaa-s-internet
+name: War Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jgaa/WarSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jgaa/WarSetup
+identifiers:
+- winget: jgaa.WarSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jgaa/WarSetup
+aliases: []

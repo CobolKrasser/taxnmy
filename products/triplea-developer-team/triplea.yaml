@@ -1,0 +1,11 @@
+key: triplea-developer-team/triplea
+publisher: triplea-developer-team
+name: TripleA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TripleAGame/TripleA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TripleAGame/TripleA
+identifiers:
+- winget: TripleAGame.TripleA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TripleAGame/TripleA
+aliases: []

@@ -1,0 +1,11 @@
+key: xpipe-ug-haftungsbeschrankt/xpipe
+publisher: xpipe-ug-haftungsbeschrankt
+name: XPipe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpipe-io/xpipe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpipe-io/xpipe
+identifiers:
+- winget: xpipe-io.xpipe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpipe-io/xpipe
+aliases: []

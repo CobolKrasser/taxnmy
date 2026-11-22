@@ -1,0 +1,11 @@
+key: the-spice-project/spice-agent
+publisher: the-spice-project
+name: Spice agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spice/VDAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spice/VDAgent
+identifiers:
+- winget: Spice.VDAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spice/VDAgent
+aliases: []

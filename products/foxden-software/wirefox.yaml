@@ -1,0 +1,11 @@
+key: foxden-software/wirefox
+publisher: foxden-software
+name: WireFox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoxDenSoftware/WireFox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoxDenSoftware/WireFox
+identifiers:
+- winget: FoxDenSoftware.WireFox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoxDenSoftware/WireFox
+aliases: []

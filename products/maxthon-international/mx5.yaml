@@ -1,0 +1,11 @@
+key: maxthon-international/mx5
+publisher: maxthon-international
+name: MX5
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon/5
+identifiers:
+- winget: Maxthon.Maxthon.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon/5
+aliases: []

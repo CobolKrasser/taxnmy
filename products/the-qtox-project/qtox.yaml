@@ -1,0 +1,11 @@
+key: the-qtox-project/qtox
+publisher: the-qtox-project
+name: qTox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tox/qTox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tox/qTox
+identifiers:
+- winget: Tox.qTox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tox/qTox
+aliases: []

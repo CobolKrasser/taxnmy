@@ -1,0 +1,11 @@
+key: techygeekshome/shortgeek
+publisher: techygeekshome
+name: ShortGeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/ShortGeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/ShortGeek
+identifiers:
+- winget: TechyGeeksHome.ShortGeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/ShortGeek
+aliases: []

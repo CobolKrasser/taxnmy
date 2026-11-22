@@ -1,0 +1,11 @@
+key: bt-cn/aingdesk
+publisher: bt-cn
+name: AingDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baota/AingDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baota/AingDesk
+identifiers:
+- winget: Baota.AingDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baota/AingDesk
+aliases: []

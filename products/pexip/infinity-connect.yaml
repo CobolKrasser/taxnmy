@@ -1,0 +1,11 @@
+key: pexip/infinity-connect
+publisher: pexip
+name: Infinity Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/InfinityConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/InfinityConnect
+identifiers:
+- winget: Pexip.InfinityConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/InfinityConnect
+aliases: []

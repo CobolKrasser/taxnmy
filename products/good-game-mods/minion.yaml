@@ -1,0 +1,11 @@
+key: good-game-mods/minion
+publisher: good-game-mods
+name: Minion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoodGameMods/Minion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoodGameMods/Minion
+identifiers:
+- winget: GoodGameMods.Minion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoodGameMods/Minion
+aliases: []

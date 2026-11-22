@@ -1,0 +1,14 @@
+key: thorlabs/apt
+publisher: thorlabs
+name: Thorlabs APT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/APT/x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/APT/x64
+identifiers:
+- winget: Thorlabs.APT.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/APT/x64
+- winget: Thorlabs.APT.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/APT/x86
+aliases:
+- thorlabs/thorlabs-apt

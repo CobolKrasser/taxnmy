@@ -1,0 +1,12 @@
+key: vovsoft/print-multiple-web-pages
+publisher: vovsoft
+name: Vovsoft Print Multiple Web Pages
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PrintMultipleWebPages
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PrintMultipleWebPages
+identifiers:
+- winget: VovSoft.PrintMultipleWebPages
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PrintMultipleWebPages
+aliases:
+- vovsoft/vovsoft-print-multiple-web-pages

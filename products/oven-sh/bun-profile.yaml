@@ -1,0 +1,11 @@
+key: oven-sh/bun-profile
+publisher: oven-sh
+name: Bun Profile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Profile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Profile
+identifiers:
+- winget: Oven-sh.Bun.Profile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Profile
+aliases: []

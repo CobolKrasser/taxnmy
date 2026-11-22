@@ -1,0 +1,11 @@
+key: stand-by-soft/moos-project-viewer
+publisher: stand-by-soft
+name: MOOS Project Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StandBySoft/MOOSProjectViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StandBySoft/MOOSProjectViewer
+identifiers:
+- winget: StandBySoft.MOOSProjectViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StandBySoft/MOOSProjectViewer
+aliases: []

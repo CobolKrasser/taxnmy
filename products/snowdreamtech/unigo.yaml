@@ -1,0 +1,11 @@
+key: snowdreamtech/unigo
+publisher: snowdreamtech
+name: unigo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowdreamTech/unigo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowdreamTech/unigo
+identifiers:
+- winget: SnowdreamTech.unigo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowdreamTech/unigo
+aliases: []

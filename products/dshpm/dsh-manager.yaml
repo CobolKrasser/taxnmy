@@ -1,0 +1,11 @@
+key: dshpm/dsh-manager
+publisher: dshpm
+name: DSH Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liaoyuanxinghuo/DSHManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liaoyuanxinghuo/DSHManager
+identifiers:
+- winget: Liaoyuanxinghuo.DSHManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liaoyuanxinghuo/DSHManager
+aliases: []

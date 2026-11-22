@@ -1,0 +1,11 @@
+key: ice-data-services/ice-xl
+publisher: ice-data-services
+name: ICE XL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICE/ICEXL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICE/ICEXL
+identifiers:
+- winget: ICE.ICEXL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICE/ICEXL
+aliases: []

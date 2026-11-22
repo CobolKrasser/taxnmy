@@ -1,0 +1,11 @@
+key: greatis-software/unhackme
+publisher: greatis-software
+name: UnHackMe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/UnHackMe/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/UnHackMe/Stable
+identifiers:
+- winget: Greatis.UnHackMe.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/UnHackMe/Stable
+aliases: []

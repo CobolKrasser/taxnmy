@@ -1,0 +1,11 @@
+key: clip-team/clipcc
+publisher: clip-team
+name: ClipCC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipTeam/ClipCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipTeam/ClipCC
+identifiers:
+- winget: ClipTeam.ClipCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClipTeam/ClipCC
+aliases: []

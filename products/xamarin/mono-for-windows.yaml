@@ -1,0 +1,11 @@
+key: xamarin/mono-for-windows
+publisher: xamarin
+name: Mono for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mono/Mono
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mono/Mono
+identifiers:
+- winget: Mono.Mono
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mono/Mono
+aliases: []

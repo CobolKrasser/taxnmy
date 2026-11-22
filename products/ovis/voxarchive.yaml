@@ -1,0 +1,11 @@
+key: ovis/voxarchive
+publisher: ovis
+name: VoxArchive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EsheepDev/VoxArchive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EsheepDev/VoxArchive
+identifiers:
+- winget: EsheepDev.VoxArchive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EsheepDev/VoxArchive
+aliases: []

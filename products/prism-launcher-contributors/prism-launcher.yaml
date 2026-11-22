@@ -1,0 +1,11 @@
+key: prism-launcher-contributors/prism-launcher
+publisher: prism-launcher-contributors
+name: Prism Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrismLauncher/PrismLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrismLauncher/PrismLauncher
+identifiers:
+- winget: PrismLauncher.PrismLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrismLauncher/PrismLauncher
+aliases: []

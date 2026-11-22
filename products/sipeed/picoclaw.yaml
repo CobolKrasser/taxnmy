@@ -1,0 +1,11 @@
+key: sipeed/picoclaw
+publisher: sipeed
+name: PicoClaw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sipeed/PicoClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sipeed/PicoClaw
+identifiers:
+- winget: Sipeed.PicoClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sipeed/PicoClaw
+aliases: []

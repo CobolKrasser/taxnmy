@@ -1,0 +1,11 @@
+key: cai/casecurebrowser
+publisher: cai
+name: CASecureBrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CAI/CASecureBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CAI/CASecureBrowser
+identifiers:
+- winget: CAI.CASecureBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CAI/CASecureBrowser
+aliases: []

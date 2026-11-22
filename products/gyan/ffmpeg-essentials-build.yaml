@@ -1,0 +1,11 @@
+key: gyan/ffmpeg-essentials-build
+publisher: gyan
+name: FFmpeg (Essentials Build)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg/Essentials
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg/Essentials
+identifiers:
+- winget: Gyan.FFmpeg.Essentials
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg/Essentials
+aliases: []

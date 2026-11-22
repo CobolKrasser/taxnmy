@@ -1,0 +1,11 @@
+key: unident/onepix-client
+publisher: unident
+name: Onepix Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unident/Onepix/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unident/Onepix/Client
+identifiers:
+- winget: Unident.Onepix.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unident/Onepix/Client
+aliases: []

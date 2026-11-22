@@ -1,0 +1,11 @@
+key: swiftlist-developer/swiftlist
+publisher: swiftlist-developer
+name: SwiftList
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwiftList/SwiftList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwiftList/SwiftList
+identifiers:
+- winget: SwiftList.SwiftList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SwiftList/SwiftList
+aliases: []

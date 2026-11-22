@@ -1,0 +1,12 @@
+key: vovsoft/diagram-maker
+publisher: vovsoft
+name: Vovsoft Diagram Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiagramMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiagramMaker
+identifiers:
+- winget: VovSoft.DiagramMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiagramMaker
+aliases:
+- vovsoft/vovsoft-diagram-maker

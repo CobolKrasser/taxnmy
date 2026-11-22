@@ -1,0 +1,11 @@
+key: lite-xl-team/lite-xl-plugin-manager
+publisher: lite-xl-team
+name: Lite XL Plugin Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiteXLTeam/LPM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiteXLTeam/LPM
+identifiers:
+- winget: LiteXLTeam.LPM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiteXLTeam/LPM
+aliases: []

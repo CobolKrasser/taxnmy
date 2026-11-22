@@ -1,0 +1,13 @@
+key: lilypond/lilypond
+publisher: lilypond
+name: LilyPond
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LilyPond/LilyPond
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LilyPond/LilyPond
+identifiers:
+- winget: LilyPond.LilyPond
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LilyPond/LilyPond
+- winget: LilyPond.LilyPond.Unstable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LilyPond/LilyPond/Unstable
+aliases: []

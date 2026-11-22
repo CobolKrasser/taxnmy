@@ -1,0 +1,11 @@
+key: arnob-paul/symlink-creator
+publisher: arnob-paul
+name: Symlink Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArnobPaul/SymlinkCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArnobPaul/SymlinkCreator
+identifiers:
+- winget: ArnobPaul.SymlinkCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArnobPaul/SymlinkCreator
+aliases: []

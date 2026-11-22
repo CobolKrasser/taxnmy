@@ -1,0 +1,11 @@
+key: national-instruments/ni-system-configuration
+publisher: national-instruments
+name: NI System Configuration
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-systemconfiguration
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-systemconfiguration
+identifiers:
+- winget: NI.ni-systemconfiguration
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-systemconfiguration
+aliases: []

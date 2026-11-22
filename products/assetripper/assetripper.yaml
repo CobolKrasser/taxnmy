@@ -1,0 +1,11 @@
+key: assetripper/assetripper
+publisher: assetripper
+name: AssetRipper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AssetRipper/AssetRipper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AssetRipper/AssetRipper
+identifiers:
+- winget: AssetRipper.AssetRipper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AssetRipper/AssetRipper
+aliases: []

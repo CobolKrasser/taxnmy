@@ -1,0 +1,11 @@
+key: datronicsoft/spacedesk-windows-viewer
+publisher: datronicsoft
+name: spacedesk Windows VIEWER
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datronicsoft/SpacedeskViewer/Client/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datronicsoft/SpacedeskViewer/Client/Beta
+identifiers:
+- winget: Datronicsoft.SpacedeskViewer.Client.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datronicsoft/SpacedeskViewer/Client/Beta
+aliases: []

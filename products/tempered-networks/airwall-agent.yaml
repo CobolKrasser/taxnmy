@@ -1,0 +1,11 @@
+key: tempered-networks/airwall-agent
+publisher: tempered-networks
+name: Airwall Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tempered/Airwall/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tempered/Airwall/Agent
+identifiers:
+- winget: Tempered.Airwall.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tempered/Airwall/Agent
+aliases: []

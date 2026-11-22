@@ -1,0 +1,11 @@
+key: hyperion-project/hyperion-ambient-light
+publisher: hyperion-project
+name: Hyperion Ambient Light
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hyperion/Hyperion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hyperion/Hyperion
+identifiers:
+- winget: Hyperion.Hyperion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hyperion/Hyperion
+aliases: []

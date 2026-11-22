@@ -1,0 +1,11 @@
+key: jagex/oldschool-runescape
+publisher: jagex
+name: Oldschool RuneScape
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jagex/OldSchoolRunescape
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jagex/OldSchoolRunescape
+identifiers:
+- winget: Jagex.OldSchoolRunescape
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jagex/OldSchoolRunescape
+aliases: []

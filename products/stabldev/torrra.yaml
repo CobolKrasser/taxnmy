@@ -1,0 +1,11 @@
+key: stabldev/torrra
+publisher: stabldev
+name: torrra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stabldev/torrra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stabldev/torrra
+identifiers:
+- winget: stabldev.torrra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stabldev/torrra
+aliases: []

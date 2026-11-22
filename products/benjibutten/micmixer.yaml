@@ -1,0 +1,11 @@
+key: benjibutten/micmixer
+publisher: benjibutten
+name: MicMixer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenjiButten/MicMixer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenjiButten/MicMixer
+identifiers:
+- winget: BenjiButten.MicMixer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenjiButten/MicMixer
+aliases: []

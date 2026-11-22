@@ -1,0 +1,11 @@
+key: clayton-errington/network-status-check
+publisher: clayton-errington
+name: Network-Status-Check
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cjerrington/net-check
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cjerrington/net-check
+identifiers:
+- winget: cjerrington.net-check
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cjerrington/net-check
+aliases: []

@@ -1,0 +1,11 @@
+key: garmin-ltd-or-its-subsidiaries/garmin-express
+publisher: garmin-ltd-or-its-subsidiaries
+name: Garmin Express
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Garmin/Express
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Garmin/Express
+identifiers:
+- winget: Garmin.Express
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Garmin/Express
+aliases: []

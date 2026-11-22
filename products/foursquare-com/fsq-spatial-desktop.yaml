@@ -1,0 +1,11 @@
+key: foursquare-com/fsq-spatial-desktop
+publisher: foursquare-com
+name: FSQ Spatial Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foursquare/FSQ-Spatial-Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foursquare/FSQ-Spatial-Desktop
+identifiers:
+- winget: Foursquare.FSQ-Spatial-Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Foursquare/FSQ-Spatial-Desktop
+aliases: []

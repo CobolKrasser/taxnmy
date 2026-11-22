@@ -1,0 +1,11 @@
+key: opera-software/opera-developer
+publisher: opera-software
+name: Opera developer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/Opera/Dev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/Opera/Dev
+identifiers:
+- winget: Opera.Opera.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/Opera/Dev
+aliases: []

@@ -1,0 +1,11 @@
+key: iridiumio/compactgui
+publisher: iridiumio
+name: CompactGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IridiumIO/CompactGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IridiumIO/CompactGUI
+identifiers:
+- winget: IridiumIO.CompactGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IridiumIO/CompactGUI
+aliases: []

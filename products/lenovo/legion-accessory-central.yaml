@@ -1,0 +1,11 @@
+key: lenovo/legion-accessory-central
+publisher: lenovo
+name: Legion Accessory Central
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/LegionAccessoryCentral
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/LegionAccessoryCentral
+identifiers:
+- winget: Lenovo.LegionAccessoryCentral
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/LegionAccessoryCentral
+aliases: []

@@ -1,0 +1,11 @@
+key: homedev/patchcleaner-portable
+publisher: homedev
+name: PatchCleaner Portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HomeDev/PatchCleanerPortable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HomeDev/PatchCleanerPortable
+identifiers:
+- winget: HomeDev.PatchCleanerPortable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HomeDev/PatchCleanerPortable
+aliases: []

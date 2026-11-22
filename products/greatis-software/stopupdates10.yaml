@@ -1,0 +1,11 @@
+key: greatis-software/stopupdates10
+publisher: greatis-software
+name: StopUpdates10
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/StopUpdates10
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/StopUpdates10
+identifiers:
+- winget: Greatis.StopUpdates10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/StopUpdates10
+aliases: []

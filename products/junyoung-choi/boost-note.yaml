@@ -1,0 +1,11 @@
+key: junyoung-choi/boost-note
+publisher: junyoung-choi
+name: Boost Note
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/boostio/boostnote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/boostio/boostnote
+identifiers:
+- winget: boostio.boostnote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/boostio/boostnote
+aliases: []

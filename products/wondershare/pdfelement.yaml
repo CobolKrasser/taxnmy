@@ -1,0 +1,22 @@
+key: wondershare/pdfelement
+publisher: wondershare
+name: Wondershare PDFelement
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/8
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/8
+identifiers:
+- winget: Wondershare.PDFelement.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/10
+- winget: Wondershare.PDFelement.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/11
+- winget: Wondershare.PDFelement.12
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/12
+- winget: Wondershare.PDFelement.13
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/13
+- winget: Wondershare.PDFelement.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/8
+- winget: Wondershare.PDFelement.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/9
+aliases:
+- wondershare/wondershare-pdfelement

@@ -1,0 +1,11 @@
+key: inibuilds/inimanager
+publisher: inibuilds
+name: iniManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iniBuilds/iniManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iniBuilds/iniManager
+identifiers:
+- winget: iniBuilds.iniManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iniBuilds/iniManager
+aliases: []

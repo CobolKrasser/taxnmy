@@ -1,0 +1,11 @@
+key: acer/autodetectserialnumber
+publisher: acer
+name: AutoDetectSerialNumber
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acer/AutoDetectSerialNumber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acer/AutoDetectSerialNumber
+identifiers:
+- winget: Acer.AutoDetectSerialNumber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acer/AutoDetectSerialNumber
+aliases: []

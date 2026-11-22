@@ -1,0 +1,11 @@
+key: abbodi1406/visual-c-plus-plus-redistributable-aio
+publisher: abbodi1406
+name: Visual C++ Redistributable AIO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abbodi1406/vcredist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abbodi1406/vcredist
+identifiers:
+- winget: abbodi1406.vcredist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/abbodi1406/vcredist
+aliases: []

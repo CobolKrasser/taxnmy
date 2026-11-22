@@ -1,0 +1,11 @@
+key: jonas-john/remove-empty-directories
+publisher: jonas-john
+name: Remove Empty Directories
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonasJohn/RED/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonasJohn/RED/Beta
+identifiers:
+- winget: JonasJohn.RED.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JonasJohn/RED/Beta
+aliases: []

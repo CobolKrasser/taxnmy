@@ -1,0 +1,11 @@
+key: digital-watchdog/dw-spectrum-server
+publisher: digital-watchdog
+name: DW Spectrum Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DW/Spectrum/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DW/Spectrum/Server
+identifiers:
+- winget: DW.Spectrum.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DW/Spectrum/Server
+aliases: []

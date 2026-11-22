@@ -1,0 +1,11 @@
+key: app-by-troye/koodo-reader
+publisher: app-by-troye
+name: Koodo Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppByTroye/KoodoReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppByTroye/KoodoReader
+identifiers:
+- winget: AppByTroye.KoodoReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppByTroye/KoodoReader
+aliases: []

@@ -1,0 +1,17 @@
+key: ej-technologies/jprofiler-agent
+publisher: ej-technologies
+name: JProfiler Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/JProfiler/13/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/JProfiler/13/Agent
+identifiers:
+- winget: ej-technologies.JProfiler.13.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/JProfiler/13/Agent
+- winget: ej-technologies.JProfiler.14.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/JProfiler/14/Agent
+- winget: ej-technologies.JProfiler.15.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/JProfiler/15/Agent
+- winget: ej-technologies.JProfiler.16.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/JProfiler/16/Agent
+aliases: []

@@ -1,0 +1,12 @@
+key: mitec/icon-explorer
+publisher: mitec
+name: MiTeC Icon Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/IconExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/IconExplorer
+identifiers:
+- winget: MiTeC.IconExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/IconExplorer
+aliases:
+- mitec/mitec-icon-explorer

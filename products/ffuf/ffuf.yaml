@@ -1,0 +1,11 @@
+key: ffuf/ffuf
+publisher: ffuf
+name: ffuf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ffuf/ffuf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ffuf/ffuf
+identifiers:
+- winget: ffuf.ffuf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ffuf/ffuf
+aliases: []

@@ -1,0 +1,11 @@
+key: reiner-sct/morris
+publisher: reiner-sct
+name: morris
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReinerSCT/morris
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReinerSCT/morris
+identifiers:
+- winget: ReinerSCT.morris
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReinerSCT/morris
+aliases: []

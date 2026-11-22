@@ -1,0 +1,11 @@
+key: the-linux-foundation/opentofu
+publisher: the-linux-foundation
+name: OpenTofu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu/Alpha
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu/Alpha
+identifiers:
+- winget: OpenTofu.Tofu.Alpha
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu/Alpha
+aliases: []

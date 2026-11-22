@@ -1,0 +1,11 @@
+key: dynobo/normcap
+publisher: dynobo
+name: NormCap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dynobo/NormCap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dynobo/NormCap
+identifiers:
+- winget: dynobo.NormCap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dynobo/NormCap
+aliases: []

@@ -1,0 +1,11 @@
+key: posit-software-pbc/positron
+publisher: posit-software-pbc
+name: Positron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Positron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Positron
+identifiers:
+- winget: Posit.Positron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Positron
+aliases: []

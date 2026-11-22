@@ -1,0 +1,11 @@
+key: regify/regibox
+publisher: regify
+name: regibox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regibox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regibox
+identifiers:
+- winget: regify.regibox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regibox
+aliases: []

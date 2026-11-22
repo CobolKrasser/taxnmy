@@ -1,0 +1,13 @@
+key: vivaldi-technologies/vivaldi
+publisher: vivaldi-technologies
+name: Vivaldi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivaldi/Vivaldi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivaldi/Vivaldi
+identifiers:
+- winget: Vivaldi.Vivaldi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivaldi/Vivaldi
+- winget: Vivaldi.Vivaldi.Snapshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vivaldi/Vivaldi/Snapshot
+aliases: []

@@ -1,0 +1,11 @@
+key: 0state/scafld
+publisher: 0state
+name: scafld
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0state/scafld
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0state/scafld
+identifiers:
+- winget: 0state.scafld
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0state/scafld
+aliases: []

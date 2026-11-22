@@ -1,0 +1,11 @@
+key: cromis/alcove
+publisher: cromis
+name: Alcove
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cromis/Alcove
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cromis/Alcove
+identifiers:
+- winget: Cromis.Alcove
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cromis/Alcove
+aliases: []

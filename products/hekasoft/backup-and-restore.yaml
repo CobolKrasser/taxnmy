@@ -1,0 +1,12 @@
+key: hekasoft/backup-and-restore
+publisher: hekasoft
+name: Hekasoft Backup & Restore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hekasoft/Backup-Restore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hekasoft/Backup-Restore
+identifiers:
+- winget: Hekasoft.Backup-Restore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hekasoft/Backup-Restore
+aliases:
+- hekasoft/hekasoft-backup-and-restore

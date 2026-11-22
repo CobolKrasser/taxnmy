@@ -1,0 +1,11 @@
+key: code-jelly/launchy
+publisher: code-jelly
+name: Launchy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeJelly/Launchy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeJelly/Launchy
+identifiers:
+- winget: CodeJelly.Launchy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeJelly/Launchy
+aliases: []

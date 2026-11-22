@@ -1,0 +1,11 @@
+key: auscaster/runx
+publisher: auscaster
+name: runx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/runxhq/runx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/runxhq/runx
+identifiers:
+- winget: runxhq.runx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/runxhq/runx
+aliases: []

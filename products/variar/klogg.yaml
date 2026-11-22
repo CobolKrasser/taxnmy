@@ -1,0 +1,11 @@
+key: variar/klogg
+publisher: variar
+name: klogg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/variar/klogg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/variar/klogg
+identifiers:
+- winget: variar.klogg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/variar/klogg
+aliases: []

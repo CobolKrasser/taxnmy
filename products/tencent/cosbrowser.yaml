@@ -1,0 +1,11 @@
+key: tencent/cosbrowser
+publisher: tencent
+name: cosbrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/COSBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/COSBrowser
+identifiers:
+- winget: Tencent.COSBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/COSBrowser
+aliases: []

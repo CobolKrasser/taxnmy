@@ -1,0 +1,11 @@
+key: till-friebe/tubecards
+publisher: till-friebe
+name: TubeCards
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TillFriebe/TubeCards
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TillFriebe/TubeCards
+identifiers:
+- winget: TillFriebe.TubeCards
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TillFriebe/TubeCards
+aliases: []

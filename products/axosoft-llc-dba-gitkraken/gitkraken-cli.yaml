@@ -1,0 +1,11 @@
+key: axosoft-llc-dba-gitkraken/gitkraken-cli
+publisher: axosoft-llc-dba-gitkraken
+name: GitKraken CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitKraken/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitKraken/cli
+identifiers:
+- winget: GitKraken.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitKraken/cli
+aliases: []

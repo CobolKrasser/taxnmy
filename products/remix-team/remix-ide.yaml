@@ -1,0 +1,11 @@
+key: remix-team/remix-ide
+publisher: remix-team
+name: Remix IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemixTeam/RemixIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemixTeam/RemixIDE
+identifiers:
+- winget: RemixTeam.RemixIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemixTeam/RemixIDE
+aliases: []

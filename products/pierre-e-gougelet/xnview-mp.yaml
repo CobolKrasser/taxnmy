@@ -1,0 +1,11 @@
+key: pierre-e-gougelet/xnview-mp
+publisher: pierre-e-gougelet
+name: XnView MP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnViewMP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnViewMP
+identifiers:
+- winget: XnSoft.XnViewMP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnViewMP
+aliases: []

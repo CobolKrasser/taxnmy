@@ -1,0 +1,11 @@
+key: embarcadero-technologies/embarcadero-dev-c-plus-plus
+publisher: embarcadero-technologies
+name: Embarcadero Dev-C++
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Embarcadero/Dev-C++
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Embarcadero/Dev-C++
+identifiers:
+- winget: Embarcadero.Dev-C++
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Embarcadero/Dev-C++
+aliases: []

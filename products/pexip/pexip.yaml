@@ -1,0 +1,11 @@
+key: pexip/pexip
+publisher: pexip
+name: Pexip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/Pexip/SecureMeetings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/Pexip/SecureMeetings
+identifiers:
+- winget: Pexip.Pexip.SecureMeetings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pexip/Pexip/SecureMeetings
+aliases: []

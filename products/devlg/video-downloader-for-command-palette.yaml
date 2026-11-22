@@ -1,0 +1,11 @@
+key: devlg/video-downloader-for-command-palette
+publisher: devlg
+name: Video Downloader for Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevLG/CmdPalVideoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevLG/CmdPalVideoDownloader
+identifiers:
+- winget: DevLG.CmdPalVideoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevLG/CmdPalVideoDownloader
+aliases: []

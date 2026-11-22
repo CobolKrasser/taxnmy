@@ -1,0 +1,11 @@
+key: maca134/dayz-launcher
+publisher: maca134
+name: DayZ Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maca134/DZLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maca134/DZLauncher
+identifiers:
+- winget: Maca134.DZLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maca134/DZLauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: arks-layer/pso2-tweaker
+publisher: arks-layer
+name: PSO2 Tweaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arks-Layer/PSO2Tweaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arks-Layer/PSO2Tweaker
+identifiers:
+- winget: Arks-Layer.PSO2Tweaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arks-Layer/PSO2Tweaker
+aliases: []

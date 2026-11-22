@@ -1,0 +1,11 @@
+key: foundrylabs/devbook
+publisher: foundrylabs
+name: Devbook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoundryLabs/Devbook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoundryLabs/Devbook
+identifiers:
+- winget: FoundryLabs.Devbook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FoundryLabs/Devbook
+aliases: []

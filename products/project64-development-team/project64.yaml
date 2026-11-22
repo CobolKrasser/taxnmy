@@ -1,0 +1,11 @@
+key: project64-development-team/project64
+publisher: project64-development-team
+name: Project64
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Project64/Project64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Project64/Project64
+identifiers:
+- winget: Project64.Project64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Project64/Project64
+aliases: []

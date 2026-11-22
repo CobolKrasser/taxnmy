@@ -1,0 +1,11 @@
+key: scythe-labs/reaper
+publisher: scythe-labs
+name: Reaper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScytheLabs/Reaper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScytheLabs/Reaper
+identifiers:
+- winget: ScytheLabs.Reaper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScytheLabs/Reaper
+aliases: []

@@ -1,0 +1,11 @@
+key: hobbyist-software/bonjour-browser
+publisher: hobbyist-software
+name: Bonjour Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HobbyistSoftware/BonjourBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HobbyistSoftware/BonjourBrowser
+identifiers:
+- winget: HobbyistSoftware.BonjourBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HobbyistSoftware/BonjourBrowser
+aliases: []

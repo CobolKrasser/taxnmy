@@ -1,0 +1,11 @@
+key: ezb-systems/ultraiso-premium
+publisher: ezb-systems
+name: UltraISO Premium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EZBSystems/UltraISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EZBSystems/UltraISO
+identifiers:
+- winget: EZBSystems.UltraISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EZBSystems/UltraISO
+aliases: []

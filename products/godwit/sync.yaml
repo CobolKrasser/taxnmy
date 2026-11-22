@@ -1,0 +1,12 @@
+key: godwit/sync
+publisher: godwit
+name: Godwit Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodwitIO/GodwitSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodwitIO/GodwitSync
+identifiers:
+- winget: GodwitIO.GodwitSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GodwitIO/GodwitSync
+aliases:
+- godwit/godwit-sync

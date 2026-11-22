@@ -1,0 +1,11 @@
+key: coenfin-software/auditfile-converter
+publisher: coenfin-software
+name: Auditfile Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/AuditfileConverterAndAnalyser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/AuditfileConverterAndAnalyser
+identifiers:
+- winget: CoenFin.AuditfileConverterAndAnalyser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/AuditfileConverterAndAnalyser
+aliases: []

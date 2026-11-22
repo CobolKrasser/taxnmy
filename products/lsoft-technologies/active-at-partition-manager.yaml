@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-partition-manager
+publisher: lsoft-technologies
+name: Active@ Partition Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActivePartitionManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActivePartitionManager
+identifiers:
+- winget: LSoftTechnologies.ActivePartitionManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActivePartitionManager
+aliases: []

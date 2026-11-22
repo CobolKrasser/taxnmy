@@ -1,0 +1,11 @@
+key: jziolkowski/tasmota-device-manager
+publisher: jziolkowski
+name: Tasmota Device Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jziolkowski/tdm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jziolkowski/tdm
+identifiers:
+- winget: jziolkowski.tdm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jziolkowski/tdm
+aliases: []

@@ -1,0 +1,11 @@
+key: rimsort/rimsort
+publisher: rimsort
+name: RimSort
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RimSort/RimSort
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RimSort/RimSort
+identifiers:
+- winget: RimSort.RimSort
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RimSort/RimSort
+aliases: []

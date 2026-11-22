@@ -1,0 +1,11 @@
+key: z-ai/z-code
+publisher: z-ai
+name: Z Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhipuAI/ZCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhipuAI/ZCode
+identifiers:
+- winget: ZhipuAI.ZCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhipuAI/ZCode
+aliases: []

@@ -1,0 +1,11 @@
+key: tide/tide
+publisher: tide
+name: Tide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tide/Tide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tide/Tide
+identifiers:
+- winget: Tide.Tide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tide/Tide
+aliases: []

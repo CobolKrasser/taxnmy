@@ -1,0 +1,11 @@
+key: cypherix-software/secure-it
+publisher: cypherix-software
+name: Secure IT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/SecureIT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/SecureIT
+identifiers:
+- winget: Cypherix.SecureIT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/SecureIT
+aliases: []

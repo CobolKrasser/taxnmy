@@ -1,0 +1,11 @@
+key: imagewriter-developers/win32diskimager
+publisher: imagewriter-developers
+name: Win32DiskImager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Win32diskimager/win32diskimager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Win32diskimager/win32diskimager
+identifiers:
+- winget: Win32diskimager.win32diskimager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Win32diskimager/win32diskimager
+aliases: []

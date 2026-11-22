@@ -1,0 +1,18 @@
+key: altova/diffdog-enterprise-edition
+publisher: altova
+name: Altova DiffDog Enterprise Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDog/2023/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDog/2023/Enterprise
+identifiers:
+- winget: Altova.DiffDog.2023.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDog/2023/Enterprise
+- winget: Altova.DiffDog.2024.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDog/2024/Enterprise
+- winget: Altova.DiffDog.2025.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDog/2025/Enterprise
+- winget: Altova.DiffDog.2026.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/DiffDog/2026/Enterprise
+aliases:
+- altova/altova-diffdog-enterprise-edition

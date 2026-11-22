@@ -1,0 +1,12 @@
+key: aserto/cli
+publisher: aserto
+name: Aserto CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/CLI
+identifiers:
+- winget: Aserto.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aserto/CLI
+aliases:
+- aserto/aserto-cli

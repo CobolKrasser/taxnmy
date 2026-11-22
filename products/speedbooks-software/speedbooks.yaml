@@ -1,0 +1,11 @@
+key: speedbooks-software/speedbooks
+publisher: speedbooks-software
+name: Speedbooks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Speedbooks/Speedbooks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Speedbooks/Speedbooks
+identifiers:
+- winget: Speedbooks.Speedbooks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Speedbooks/Speedbooks
+aliases: []

@@ -1,0 +1,11 @@
+key: wisdom-software/screenhunter
+publisher: wisdom-software
+name: ScreenHunter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/ScreenHunter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/ScreenHunter
+identifiers:
+- winget: WisdomSoftware.ScreenHunter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/ScreenHunter
+aliases: []

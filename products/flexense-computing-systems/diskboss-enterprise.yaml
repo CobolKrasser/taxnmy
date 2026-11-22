@@ -1,0 +1,11 @@
+key: flexense-computing-systems/diskboss-enterprise
+publisher: flexense-computing-systems
+name: DiskBoss Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskBossEnterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskBossEnterprise
+identifiers:
+- winget: Flexense.DiskBossEnterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flexense/DiskBossEnterprise
+aliases: []

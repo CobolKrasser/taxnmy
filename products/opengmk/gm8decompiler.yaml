@@ -1,0 +1,11 @@
+key: opengmk/gm8decompiler
+publisher: opengmk
+name: GM8Decompiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGMK/GM8Decompiler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGMK/GM8Decompiler
+identifiers:
+- winget: OpenGMK.GM8Decompiler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGMK/GM8Decompiler
+aliases: []

@@ -1,0 +1,11 @@
+key: notharshhaa/devops-tools-installer
+publisher: notharshhaa
+name: DevOps Tools Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotHarshhaa/DevOpsToolsInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotHarshhaa/DevOpsToolsInstaller
+identifiers:
+- winget: NotHarshhaa.DevOpsToolsInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotHarshhaa/DevOpsToolsInstaller
+aliases: []

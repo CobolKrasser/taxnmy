@@ -1,0 +1,11 @@
+key: gibson-ridge-software/gr2analyst-3
+publisher: gibson-ridge-software
+name: GR2Analyst 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GR2Analyst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GR2Analyst
+identifiers:
+- winget: GRLevelX.GR2Analyst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GR2Analyst
+aliases: []

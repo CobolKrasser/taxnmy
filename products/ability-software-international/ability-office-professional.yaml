@@ -1,0 +1,13 @@
+key: ability-software-international/ability-office-professional
+publisher: ability-software-international
+name: Ability Office Professional
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ability/AbilityOffice/8/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ability/AbilityOffice/8/Professional
+identifiers:
+- winget: Ability.AbilityOffice.10.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ability/AbilityOffice/10/Professional
+- winget: Ability.AbilityOffice.8.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ability/AbilityOffice/8/Professional
+aliases: []

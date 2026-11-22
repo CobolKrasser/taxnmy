@@ -1,0 +1,11 @@
+key: the-handbrake-team/handbrake-cli
+publisher: the-handbrake-team
+name: HandBrake CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandBrake/HandBrake/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandBrake/HandBrake/CLI
+identifiers:
+- winget: HandBrake.HandBrake.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandBrake/HandBrake/CLI
+aliases: []

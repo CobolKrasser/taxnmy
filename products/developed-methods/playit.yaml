@@ -1,0 +1,11 @@
+key: developed-methods/playit
+publisher: developed-methods
+name: playit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevelopedMethods/playit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevelopedMethods/playit
+identifiers:
+- winget: DevelopedMethods.playit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevelopedMethods/playit
+aliases: []

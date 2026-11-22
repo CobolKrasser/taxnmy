@@ -1,0 +1,11 @@
+key: patentlobster/stinker
+publisher: patentlobster
+name: Stinker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatentLobster/stinker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatentLobster/stinker
+identifiers:
+- winget: PatentLobster.stinker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PatentLobster/stinker
+aliases: []

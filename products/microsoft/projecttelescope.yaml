@@ -1,0 +1,11 @@
+key: microsoft/projecttelescope
+publisher: microsoft
+name: ProjectTelescope
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProjectTelescope
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProjectTelescope
+identifiers:
+- winget: Microsoft.ProjectTelescope
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/ProjectTelescope
+aliases: []

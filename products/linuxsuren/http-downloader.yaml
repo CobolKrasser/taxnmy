@@ -1,0 +1,11 @@
+key: linuxsuren/http-downloader
+publisher: linuxsuren
+name: HTTP downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinuxSuRen/HTTPdownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinuxSuRen/HTTPdownloader
+identifiers:
+- winget: LinuxSuRen.HTTPdownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinuxSuRen/HTTPdownloader
+aliases: []

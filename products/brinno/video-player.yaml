@@ -1,0 +1,12 @@
+key: brinno/video-player
+publisher: brinno
+name: Brinno Video Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brinno/BrinnoVideoPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brinno/BrinnoVideoPlayer
+identifiers:
+- winget: Brinno.BrinnoVideoPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brinno/BrinnoVideoPlayer
+aliases:
+- brinno/brinno-video-player

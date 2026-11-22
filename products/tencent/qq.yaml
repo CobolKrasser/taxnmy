@@ -1,0 +1,11 @@
+key: tencent/qq
+publisher: tencent
+name: QQ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQ/NT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQ/NT
+identifiers:
+- winget: Tencent.QQ.NT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQ/NT
+aliases: []

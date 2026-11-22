@@ -1,0 +1,11 @@
+key: 0-don/clippy
+publisher: 0-don
+name: Clippy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0-don/clippy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0-don/clippy
+identifiers:
+- winget: 0-don.clippy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0-don/clippy
+aliases: []

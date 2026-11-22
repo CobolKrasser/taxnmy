@@ -1,0 +1,14 @@
+key: geeks3d/furmark
+publisher: geeks3d
+name: Geeks3D FurMark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geeks3D/FurMark/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geeks3D/FurMark/1
+identifiers:
+- winget: Geeks3D.FurMark.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geeks3D/FurMark/1
+- winget: Geeks3D.FurMark.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geeks3D/FurMark/2
+aliases:
+- geeks3d/geeks3d-furmark

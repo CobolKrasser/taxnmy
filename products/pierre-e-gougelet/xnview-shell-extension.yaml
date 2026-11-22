@@ -1,0 +1,11 @@
+key: pierre-e-gougelet/xnview-shell-extension
+publisher: pierre-e-gougelet
+name: XnView Shell Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnShell
+identifiers:
+- winget: XnSoft.XnShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnShell
+aliases: []

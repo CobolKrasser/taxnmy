@@ -1,0 +1,11 @@
+key: dreamsourcelab/dswave
+publisher: dreamsourcelab
+name: DSWave
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DreamSourceLab/DSWave
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DreamSourceLab/DSWave
+identifiers:
+- winget: DreamSourceLab.DSWave
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DreamSourceLab/DSWave
+aliases: []

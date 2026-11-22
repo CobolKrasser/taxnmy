@@ -1,0 +1,11 @@
+key: stack-exchange/dnscontrol
+publisher: stack-exchange
+name: DNSControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StackExchange/DNSControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StackExchange/DNSControl
+identifiers:
+- winget: StackExchange.DNSControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StackExchange/DNSControl
+aliases: []

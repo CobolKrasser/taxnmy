@@ -1,0 +1,11 @@
+key: open-proxy-space/unfx-proxy-checker
+publisher: open-proxy-space
+name: Unfx Proxy Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assnctr/unfx-proxy-checker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assnctr/unfx-proxy-checker
+identifiers:
+- winget: assnctr.unfx-proxy-checker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/assnctr/unfx-proxy-checker
+aliases: []

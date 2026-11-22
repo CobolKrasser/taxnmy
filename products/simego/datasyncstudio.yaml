@@ -1,0 +1,11 @@
+key: simego/datasyncstudio
+publisher: simego
+name: DataSyncStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simego/DataSyncStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simego/DataSyncStudio
+identifiers:
+- winget: Simego.DataSyncStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Simego/DataSyncStudio
+aliases: []

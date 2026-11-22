@@ -1,0 +1,11 @@
+key: michal-trojnara/torget
+publisher: michal-trojnara
+name: torget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MichalTrojnara/torget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MichalTrojnara/torget
+identifiers:
+- winget: MichalTrojnara.torget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MichalTrojnara/torget
+aliases: []

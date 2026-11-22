@@ -1,0 +1,11 @@
+key: roon-labs/roon
+publisher: roon-labs
+name: Roon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoonLabs/RoonServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoonLabs/RoonServer
+identifiers:
+- winget: RoonLabs.RoonServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoonLabs/RoonServer
+aliases: []

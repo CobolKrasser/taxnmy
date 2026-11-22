@@ -1,0 +1,12 @@
+key: yandex/disk
+publisher: yandex
+name: Yandex.Disk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Disk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Disk
+identifiers:
+- winget: Yandex.Disk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Disk
+aliases:
+- yandex/yandex-disk

@@ -1,0 +1,11 @@
+key: green-18-enterprises/microsoft-works-file-converter
+publisher: green-18-enterprises
+name: Microsoft Works File Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorksConverter/MicrosoftWorksFileConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorksConverter/MicrosoftWorksFileConverter
+identifiers:
+- winget: WorksConverter.MicrosoftWorksFileConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorksConverter/MicrosoftWorksFileConverter
+aliases: []

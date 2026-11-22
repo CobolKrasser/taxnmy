@@ -1,0 +1,11 @@
+key: tromosm/fluxlan
+publisher: tromosm
+name: FluxLAN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/FluxLan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/FluxLan
+identifiers:
+- winget: tromoSM.FluxLan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/FluxLan
+aliases: []

@@ -1,0 +1,11 @@
+key: pinvou/pinvou3
+publisher: pinvou
+name: pinvou3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinvou/PinvouAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinvou/PinvouAgent
+identifiers:
+- winget: Pinvou.PinvouAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinvou/PinvouAgent
+aliases: []

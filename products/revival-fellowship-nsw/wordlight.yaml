@@ -1,0 +1,11 @@
+key: revival-fellowship-nsw/wordlight
+publisher: revival-fellowship-nsw
+name: WordLight
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revival/WordLight
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revival/WordLight
+identifiers:
+- winget: Revival.WordLight
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revival/WordLight
+aliases: []

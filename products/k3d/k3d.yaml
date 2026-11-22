@@ -1,0 +1,11 @@
+key: k3d/k3d
+publisher: k3d
+name: k3d
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k3d/k3d
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k3d/k3d
+identifiers:
+- winget: k3d.k3d
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/k3d/k3d
+aliases: []

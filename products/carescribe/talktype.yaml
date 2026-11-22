@@ -1,0 +1,11 @@
+key: carescribe/talktype
+publisher: carescribe
+name: TalkType
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CareScribe/TalkType
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CareScribe/TalkType
+identifiers:
+- winget: CareScribe.TalkType
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CareScribe/TalkType
+aliases: []

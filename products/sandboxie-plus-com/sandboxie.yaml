@@ -1,0 +1,11 @@
+key: sandboxie-plus-com/sandboxie
+publisher: sandboxie-plus-com
+name: Sandboxie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandboxie/Classic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandboxie/Classic
+identifiers:
+- winget: Sandboxie.Classic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandboxie/Classic
+aliases: []

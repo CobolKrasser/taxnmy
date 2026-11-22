@@ -1,0 +1,11 @@
+key: edrawsoft/edraw-diagram-component
+publisher: edrawsoft
+name: Edraw Diagram Component
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/ViewerComponent/Diagram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/ViewerComponent/Diagram
+identifiers:
+- winget: EdrawSoft.ViewerComponent.Diagram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/ViewerComponent/Diagram
+aliases: []

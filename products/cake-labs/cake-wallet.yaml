@@ -1,0 +1,11 @@
+key: cake-labs/cake-wallet
+publisher: cake-labs
+name: Cake Wallet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CakeWallet/CakeWallet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CakeWallet/CakeWallet
+identifiers:
+- winget: CakeWallet.CakeWallet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CakeWallet/CakeWallet
+aliases: []
