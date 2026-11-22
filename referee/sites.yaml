@@ -74,6 +74,11 @@ imports:
   kev: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
   cve: https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/{year}/{bucket}/{cve}.json
 
+# The page on which a filler describes a package (TAX-19): the source of what the first filling
+# takes in from it. `{folder}` is the folder of the package in the filler's repository.
+fillers:
+  winget: 'https://github.com/microsoft/winget-pkgs/tree/master/{folder}'
+
 # Datasets of third parties that name products (TE8): a finder of candidates, never the publisher's
 # own page. Owners as tools/guard.py `owner` gives them.
 datasets: [endoflife.date, github.com/endoflife-date]

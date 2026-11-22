@@ -351,10 +351,10 @@ def _version_key(v: str):
 VERSION_IN_ID = re.compile(r"\.v?\d+$", re.I)
 
 
-def count_winget(dump: Path, tax: Tax | None = None) -> dict:
+def winget_packages(dump: Path):
     """One stream over the tar.gz. A file manifests/<l>/<id path>/<version>/<file>.yaml; per package only
-    the files of its highest version are kept."""
-    tax = tax or Tax()
+    the files of its highest version are kept. Yields (the folder of the package in the repository, its
+    newest version, the top-level keys of its manifests): the keys of the default locale come first."""
     newest: dict[str, tuple[list, str, dict[str, str]]] = {}
     with tarfile.open(dump, "r|gz") as tar:
         for m in tar:
@@ -363,7 +363,7 @@ def count_winget(dump: Path, tax: Tax | None = None) -> dict:
             parts = m.name.split("/")
             if len(parts) < 6 or parts[1] != "manifests":
                 continue
-            pkg, version, fname = "/".join(parts[3:-2]), parts[-2], parts[-1]
+            pkg, version, fname = "/".join(parts[1:-2]), parts[-2], parts[-1]  # manifests/<l>/<id path>
             if ".installer." in fname:
                 continue
             vk = _version_key(version)
@@ -373,8 +373,6 @@ def count_winget(dump: Path, tax: Tax | None = None) -> dict:
             elif version != cur[1]:
                 continue
             cur[2][fname] = tar.extractfile(m).read().decode("utf-8", "replace")
-    pubs: dict[str, dict] = {}
-    rows = []
     for pkg, (_, version, files) in newest.items():
         merged: dict[str, str] = {}
         default = None
@@ -388,6 +386,16 @@ def count_winget(dump: Path, tax: Tax | None = None) -> dict:
             if ".locale." in fname:
                 for k, v in _top_level(text).items():
                     merged.setdefault(k, v)
+        yield pkg, version, merged
+
+
+def count_winget(dump: Path, tax: Tax | None = None) -> dict:
+    """Per package its newest version: what code can fill, and whether it is in TAX."""
+    tax = tax or Tax()
+    pubs: dict[str, dict] = {}
+    rows = []
+    for folder, version, merged in winget_packages(dump):
+        pkg = folder.split("/", 2)[2]
         ident = merged.get("PackageIdentifier") or pkg.replace("/", ".")
         publisher = merged.get("Publisher", "")
         name = merged.get("PackageName", "")
