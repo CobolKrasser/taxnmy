@@ -1,0 +1,12 @@
+key: eset/endpoint-antivirus
+publisher: eset
+name: ESET Endpoint Antivirus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/EndpointAntivirus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/EndpointAntivirus
+identifiers:
+- winget: ESET.EndpointAntivirus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESET/EndpointAntivirus
+aliases:
+- eset/eset-endpoint-antivirus

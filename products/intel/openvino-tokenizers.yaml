@@ -1,0 +1,12 @@
+key: intel/openvino-tokenizers
+publisher: intel
+name: Intel® OpenVINO Tokenizers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINO/Tokenizers/2026/3/0
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINO/Tokenizers/2026/3/0
+identifiers:
+- winget: Intel.OpenVINO.Tokenizers.2026.3.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OpenVINO/Tokenizers/2026/3/0
+aliases:
+- intel/intel-openvino-tokenizers

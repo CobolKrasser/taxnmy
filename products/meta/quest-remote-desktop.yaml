@@ -1,0 +1,12 @@
+key: meta/quest-remote-desktop
+publisher: meta
+name: Meta Quest Remote Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/QuestRemoteDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/QuestRemoteDesktop
+identifiers:
+- winget: Meta.QuestRemoteDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meta/QuestRemoteDesktop
+aliases:
+- meta/meta-quest-remote-desktop

@@ -85,7 +85,7 @@ class Product:
         data = {"key": self.key, "publisher": self.publisher, "name": self.name, "kind": "software",
                 "source": page, "versions": {"source": page},
                 "identifiers": [{"winget": p.id, "source": p.page} for p in sorted(self.members, key=lambda p: p.id)],
-                "aliases": []}
+                "aliases": [a for a in [keyrule.long_form(self.key, self.name)] if a]}  # TAX-54
         return yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=200)
 
 
@@ -182,7 +182,7 @@ def plan(packages: list[Package], root: Path = ROOT, scope: str = "known") -> tu
             continue
         try:
             pub = known or keyrule.publisher_part(p.publisher)
-            part = keyrule.product_part(base_name(p.name, p.id))
+            part = keyrule.product_part(base_name(p.name, p.id), pub)
         except keyrule.KeyRuleError:
             _set(p, "apart", "a name outside the Latin script (TK2)")
             continue
@@ -190,6 +190,9 @@ def plan(packages: list[Package], root: Path = ROOT, scope: str = "known") -> tu
             _set(p, "apart", "a name that gives no key (TK2)")
             continue
         key = f"{pub}/{part}"
+        long = keyrule.long_form(key, base_name(p.name, p.id))
+        if long in keys_in_tax:  # TAX-54: the long form is a key or alias in TAX
+            key = long
         if key in keys_in_tax:
             _set(p, "apart", "a duplicate: a product in TAX has this key (TK3)", key)
             continue

@@ -1,0 +1,12 @@
+key: git/for-windows-sdk
+publisher: git
+name: Git for Windows SDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/SDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/SDK
+identifiers:
+- winget: Git.SDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/SDK
+aliases:
+- git/git-for-windows-sdk

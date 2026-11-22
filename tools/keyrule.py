@@ -6,6 +6,9 @@
    at the start or end are dropped.
 4. Publisher only: a legal form at the end is dropped, before step 2.
 5. Version only: spaces become "-"; ".", "+" and "_" stay; step 2 does not apply.
+6. Product only: when the product part starts with the whole publisher part, those words are dropped
+   (TAX-54: "adobe/adobe-acrobat" becomes "adobe/acrobat"). When nothing is left, the part stays as it
+   is ("dapr/dapr"). The long form can be an alias of the product.
 
 Only the Latin script is accepted. The rule holds no knowledge of brands or
 products (TG4): the only list is one of legal forms.
@@ -110,12 +113,20 @@ def publisher_part(name: str) -> str:
     return part
 
 
-def product_part(name: str) -> str:
+def without_publisher(part: str, publisher: str) -> str:
+    """Step 6: the product part without the publisher part at its start, if something is left."""
+    if publisher and part.startswith(publisher + "-"):
+        return part[len(publisher) + 1:]
+    return part
+
+
+def product_part(name: str, publisher: str | None = None) -> str:
+    """The product part of a key; with `publisher` (a publisher part) step 6 applies."""
     _check_latin(name)
     part = _part(fold(name))
     if not part:
         raise KeyRuleError("the name has no Latin letters or digits")
-    return part
+    return without_publisher(part, publisher or "")
 
 
 def version_part(version: str) -> str:
@@ -126,8 +137,19 @@ def version_part(version: str) -> str:
     return part
 
 
+def long_form(key: str, name: str) -> str | None:
+    """The key with the publisher in front, when step 6 made it shorter (TAX-54: an alias of the product)."""
+    pub, _, part = key.partition("/")
+    try:
+        full = product_part(name)
+    except KeyRuleError:
+        return None
+    return f"{pub}/{full}" if full != part and without_publisher(full, pub) == part else None
+
+
 def make_key(publisher: str, product: str, version: str | None = None) -> str:
-    key = f"{publisher_part(publisher)}/{product_part(product)}"
+    pub = publisher_part(publisher)
+    key = f"{pub}/{product_part(product, pub)}"
     if version is not None:
         key += "@" + version_part(version)
     return key

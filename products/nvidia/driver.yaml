@@ -1,0 +1,10 @@
+key: nvidia/driver
+publisher: nvidia
+name: NVIDIA Driver
+kind: software
+source: https://endoflife.date/nvidia
+versions:
+  source: https://www.nvidia.com/en-us/drivers/
+identifiers: []
+aliases:
+- nvidia/nvidia-driver

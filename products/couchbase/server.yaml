@@ -1,0 +1,16 @@
+key: couchbase/server
+publisher: couchbase
+name: Couchbase Server
+kind: software
+source: https://endoflife.date/couchbase-server
+versions:
+  source: https://endoflife.date/couchbase-server
+identifiers:
+- cpe: cpe:2.3:a:couchbase:couchbase_server
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/couchbase-server.md
+- homebrew: couchbase-server-community
+  source: https://formulae.brew.sh/cask/couchbase-server-community
+- homebrew: couchbase-server-enterprise
+  source: https://formulae.brew.sh/cask/couchbase-server-enterprise
+aliases:
+- couchbase/couchbase-server

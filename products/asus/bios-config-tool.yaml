@@ -1,0 +1,12 @@
+key: asus/bios-config-tool
+publisher: asus
+name: ASUS BIOS Config Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/BIOSConfigTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/BIOSConfigTool
+identifiers:
+- winget: Asus.BIOSConfigTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Asus/BIOSConfigTool
+aliases:
+- asus/asus-bios-config-tool

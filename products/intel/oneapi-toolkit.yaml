@@ -1,0 +1,12 @@
+key: intel/oneapi-toolkit
+publisher: intel
+name: Intel® oneAPI Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OneAPI/Toolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OneAPI/Toolkit
+identifiers:
+- winget: Intel.OneAPI.Toolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/OneAPI/Toolkit
+aliases:
+- intel/intel-oneapi-toolkit

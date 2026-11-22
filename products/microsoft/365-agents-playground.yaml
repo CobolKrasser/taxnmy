@@ -1,0 +1,12 @@
+key: microsoft/365-agents-playground
+publisher: microsoft
+name: Microsoft 365 Agents Playground
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/M365AgentsPlayground
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/M365AgentsPlayground
+identifiers:
+- winget: Microsoft.M365AgentsPlayground
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/M365AgentsPlayground
+aliases:
+- microsoft/microsoft-365-agents-playground

@@ -267,7 +267,7 @@ publishers:
   status: checked
   existing:
   - gitlab/gitlab
-  - gitlab/gitlab-runner
+  - gitlab/runner
   names:
   - name: "Community and Enterprise Editions"
     seen: {"kev": 1}
@@ -291,7 +291,7 @@ publishers:
   name: "Citrix"
   status: checked
   existing:
-  - citrix/citrix-virtual-apps-and-desktops
+  - citrix/virtual-apps-and-desktops
   names:
   - name: "ADC"
     seen: {"cna": 9}
@@ -599,7 +599,7 @@ publishers:
   name: "Adobe"
   status: checked
   existing:
-  - adobe/adobe-coldfusion
+  - adobe/coldfusion
   - adobe/magento
   names:
   - name: "Acrobat"
@@ -633,7 +633,7 @@ publishers:
     seen: {"cna": 1}
     versions: ["Adobe ColdFusion ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier"]
     expect: ["edition", "doubt"]
-    of: ["adobe/adobe-coldfusion", null]
+    of: ["adobe/coldfusion", null]
   - name: "Adobe Commerce"
     seen: {"cna": 5}
     versions: ["2.4.9, 2.4.8-p5, 2.4.7-p10, 2.4.6-p15, 2.4.5-p17, 2.4.4-p18", "2.4.9-2026-jul, 2.4.8-2026-jul, 2.4.7-2026-jul, 2.4.6-2026-jul, 2.4.5-2026-jul, 2.4.4-2026-jul", "2.4.9-2026-jul, 2.4.8-2026-aug, 2.4.7-2026-aug, 2.4.6-2026-aug, 2.4.5-2026-aug, 2.4.4-2026-aug", "2.4.9-2026-aug, 2.4.8-2026-aug, 2.4.7-2026-aug, 2.4.6-2026-aug, 2.4.5-2026-aug, 2.4.4-2026-aug"]
@@ -658,19 +658,19 @@ publishers:
     seen: {"kev": 5, "cna": 3}
     versions: ["2021.12", "2023.0.0.330468", "cf2023U1"]
     expect: "alias"
-    of: "adobe/adobe-coldfusion"
+    of: "adobe/coldfusion"
   - name: "ColdFusion 2023"
     seen: {"cna": 1}
     versions: ["20", "21"]
     together: ["ColdFusion 2025"]
     expect: "edition"
-    of: "adobe/adobe-coldfusion"
+    of: "adobe/coldfusion"
   - name: "ColdFusion 2025"
     seen: {"cna": 1}
     versions: ["9", "10"]
     together: ["ColdFusion 2023"]
     expect: "edition"
-    of: "adobe/adobe-coldfusion"
+    of: "adobe/coldfusion"
   - name: "Commerce and Magento"
     spellings: ["Commerce and Magento"]
     seen: {"kev": 4}
@@ -826,7 +826,7 @@ publishers:
   name: "Cisco"
   status: checked
   existing:
-  - cisco/cisco-ios-xe
+  - cisco/ios-xe
   - cisco/clamav
   names:
   - name: "Adaptive Security Appliance (ASA)"
@@ -893,13 +893,13 @@ publishers:
     versions: ["16.9.1", "16.9.2", "16.9.3", "16.9.4"]
     together: ["Cisco IOS XE Software", "IOS"]
     expect: ["edition", "doubt"]
-    of: ["cisco/cisco-ios-xe", null]
+    of: ["cisco/ios-xe", null]
   - name: "Cisco IOS XE Software"
     seen: {"cna": 1}
     versions: ["3.5.0E", "3.5.1E", "3.5.2E", "3.5.3E"]
     together: ["Cisco IOS XE Catalyst SD-WAN", "IOS"]
     expect: "alias"
-    of: "cisco/cisco-ios-xe"
+    of: "cisco/ios-xe"
   - name: "Cisco ISE Passive Identity Connector"
     seen: {"cna": 2}
     versions: ["3.4.0", "3.5.0", "3.2.0", "3.1.0"]

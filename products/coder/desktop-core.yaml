@@ -1,0 +1,12 @@
+key: coder/desktop-core
+publisher: coder
+name: Coder Desktop (Core)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coder/CoderDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coder/CoderDesktop
+identifiers:
+- winget: Coder.CoderDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coder/CoderDesktop
+aliases:
+- coder/coder-desktop-core

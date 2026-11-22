@@ -1,0 +1,12 @@
+key: podman/cli
+publisher: podman
+name: Podman CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Podman/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Podman/CLI
+identifiers:
+- winget: Podman.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Podman/CLI
+aliases:
+- podman/podman-cli

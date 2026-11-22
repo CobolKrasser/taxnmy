@@ -1,0 +1,12 @@
+key: google/talk
+publisher: google
+name: Google Talk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Talk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Talk
+identifiers:
+- winget: Google.Talk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Talk
+aliases:
+- google/google-talk

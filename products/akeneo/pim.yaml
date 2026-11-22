@@ -1,0 +1,14 @@
+key: akeneo/pim
+publisher: akeneo
+name: Akeneo PIM
+kind: software
+source: https://help.akeneo.com/en_US/akeneo-pim/akeneo-pim-product-support-dates
+versions:
+  source: https://help.akeneo.com/en_US/akeneo-pim/akeneo-pim-product-support-dates
+identifiers:
+- cpe: cpe:2.3:a:akeneo:product_information_management
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/akeneo-pim.md
+- purl: pkg:github/akeneo/pim-community-dev
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/akeneo-pim.md
+aliases:
+- akeneo/akeneo-pim

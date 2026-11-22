@@ -1,0 +1,12 @@
+key: mozilla/thunderbird-beta
+publisher: mozilla
+name: Mozilla Thunderbird Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Thunderbird/Beta/MSIX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Thunderbird/Beta/MSIX
+identifiers:
+- winget: Mozilla.Thunderbird.Beta.MSIX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Thunderbird/Beta/MSIX
+aliases:
+- mozilla/mozilla-thunderbird-beta

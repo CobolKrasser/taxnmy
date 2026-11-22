@@ -1,0 +1,12 @@
+key: microsoft/update-health-tools-windows-10
+publisher: microsoft
+name: Microsoft Update Health Tools (Windows 10)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateHealthTools/W10
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateHealthTools/W10
+identifiers:
+- winget: Microsoft.UpdateHealthTools.W10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/UpdateHealthTools/W10
+aliases:
+- microsoft/microsoft-update-health-tools-windows-10

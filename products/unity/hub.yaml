@@ -1,0 +1,12 @@
+key: unity/hub
+publisher: unity
+name: Unity Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/UnityHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/UnityHub
+identifiers:
+- winget: Unity.UnityHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unity/UnityHub
+aliases:
+- unity/unity-hub

@@ -1,0 +1,12 @@
+key: apple/watch-ultra
+publisher: apple
+name: Apple Watch Ultra
+kind: device
+source: https://support.apple.com/en-us/108056
+versions:
+  source: https://support.apple.com/en-us/100100
+identifiers:
+- cpe: cpe:2.3:h:apple:watch_ultra
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:h:apple:watch_ultra&resultsPerPage=1
+aliases:
+- apple/apple-watch-ultra

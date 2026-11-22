@@ -1,0 +1,12 @@
+key: oracle/apex
+publisher: oracle
+name: Oracle APEX
+kind: software
+source: https://www.oracle.com/database/technologies/appdev/apex/collateral/#assistance
+versions:
+  source: https://www.oracle.com/database/technologies/appdev/apex/collateral/#assistance
+identifiers:
+- cpe: cpe:2.3:a:oracle:apex
+  source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:oracle:apex&resultsPerPage=1
+aliases:
+- oracle/oracle-apex

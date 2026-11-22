@@ -74,6 +74,19 @@ class RuleTest(unittest.TestCase):
         self.assertTrue(keyrule.part_problems("a" * 65, "product part"))
         self.assertFalse(keyrule.part_problems("a" * 64, "product part"))
 
+    def test_the_publisher_in_front_is_dropped(self):
+        """TAX-54: the product part does not repeat the publisher part; when nothing is left, it stays."""
+        self.assertEqual(keyrule.make_key("Acme Inc.", "Acme Widget Pro"), "acme/widget-pro")
+        self.assertEqual(keyrule.make_key("Acme", "Acme"), "acme/acme")
+        self.assertEqual(keyrule.make_key("Acme Labs", "Acme Widget"), "acme-labs/acme-widget", "only the whole publisher part")
+        self.assertEqual(keyrule.make_key("Acme", "Acmeware"), "acme/acmeware", "only whole words")
+        self.assertEqual(keyrule.product_part("Acme Widget"), "acme-widget", "without a publisher the part is whole")
+
+    def test_the_long_form(self):
+        self.assertEqual(keyrule.long_form("acme/widget", "Acme Widget"), "acme/acme-widget")
+        self.assertIsNone(keyrule.long_form("acme/widget", "Widget"))
+        self.assertIsNone(keyrule.long_form("acme/acme", "Acme"))
+
     def test_key_form(self):
         self.assertTrue(keyrule.key_problems("Synology/DS224+"))
         self.assertTrue(keyrule.key_problems("synology"))

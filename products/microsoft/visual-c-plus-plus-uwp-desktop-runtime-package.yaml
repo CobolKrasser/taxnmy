@@ -1,0 +1,12 @@
+key: microsoft/visual-c-plus-plus-uwp-desktop-runtime-package
+publisher: microsoft
+name: Microsoft Visual C++ UWP Desktop Runtime Package
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCLibs/Desktop/14
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCLibs/Desktop/14
+identifiers:
+- winget: Microsoft.VCLibs.Desktop.14
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCLibs/Desktop/14
+aliases:
+- microsoft/microsoft-visual-c-plus-plus-uwp-desktop-runtime-package

@@ -1,0 +1,12 @@
+key: microsoft/visual-c-plus-plus-runtime-package-uwp-desktop-bridge
+publisher: microsoft
+name: Microsoft Visual C++ Runtime Package (UWP Desktop Bridge)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCLibs/12
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCLibs/12
+identifiers:
+- winget: Microsoft.VCLibs.12
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VCLibs/12
+aliases:
+- microsoft/microsoft-visual-c-plus-plus-runtime-package-uwp-desktop-bridge

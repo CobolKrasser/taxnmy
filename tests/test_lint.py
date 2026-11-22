@@ -55,6 +55,16 @@ class LintTest(unittest.TestCase):
     def test_repository_passes(self):
         self.assertEqual([f for f in lint.lint(REPO) if f.level == "error"], [])
 
+    def test_a_key_that_starts_with_its_publisher(self):
+        """TAX-54: the lint rejects the long form; the short form passes, with the long one as alias."""
+        long = PRODUCT.replace("ds224-plus", "synology-ds224-plus").replace("name: DS224+", "name: Synology DS224+")
+        self.write("products/synology/synology-ds224-plus.yaml", long)
+        self.assertOnly("TK2", 1, "products/synology/synology-ds224-plus.yaml", "starts with its publisher")
+        (self.root / "products/synology/synology-ds224-plus.yaml").unlink()
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("name: DS224+", "name: Synology DS224+")
+                   .replace("aliases: []", "aliases:\n- synology/synology-ds224-plus"))
+        self.assertEqual(self.errors(), [])
+
     def test_changed_files_only(self):
         """TAX-16: with a list of changed files, findings only on those, compared with all files."""
         cpe = "identifiers:\n- cpe: cpe:2.3:o:synology:diskstation_manager\n  source: https://nvd.example/\n"

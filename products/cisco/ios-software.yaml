@@ -1,0 +1,10 @@
+key: cisco/ios-software
+publisher: cisco
+name: Cisco IOS Software
+kind: operating-system
+source: https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-software-releases-listing.html
+versions:
+  source: https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-software-releases-listing.html
+aliases:
+- cisco/cisco-ios-software
+- cisco/ios

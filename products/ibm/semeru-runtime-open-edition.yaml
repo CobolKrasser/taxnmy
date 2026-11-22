@@ -1,0 +1,66 @@
+key: ibm/semeru-runtime-open-edition
+publisher: ibm
+name: IBM Semeru Runtime Open Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/8/JDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/8/JDK
+identifiers:
+- winget: IBM.Semeru.11.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/11/JDK
+- winget: IBM.Semeru.11.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/11/JRE
+- winget: IBM.Semeru.16.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/16/JDK
+- winget: IBM.Semeru.16.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/16/JRE
+- winget: IBM.Semeru.17.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/17/JDK
+- winget: IBM.Semeru.17.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/17/JRE
+- winget: IBM.Semeru.18.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/18/JDK
+- winget: IBM.Semeru.18.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/18/JRE
+- winget: IBM.Semeru.19.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/19/JDK
+- winget: IBM.Semeru.19.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/19/JRE
+- winget: IBM.Semeru.20.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/20/JDK
+- winget: IBM.Semeru.20.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/20/JRE
+- winget: IBM.Semeru.21.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/21/JDK
+- winget: IBM.Semeru.21.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/21/JRE
+- winget: IBM.Semeru.22.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/22/JDK
+- winget: IBM.Semeru.22.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/22/JRE
+- winget: IBM.Semeru.23.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/23/JDK
+- winget: IBM.Semeru.23.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/23/JRE
+- winget: IBM.Semeru.24.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/24/JDK
+- winget: IBM.Semeru.24.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/24/JRE
+- winget: IBM.Semeru.25.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/25/JDK
+- winget: IBM.Semeru.25.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/25/JRE
+- winget: IBM.Semeru.26.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/26/JDK
+- winget: IBM.Semeru.26.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/26/JRE
+- winget: IBM.Semeru.27.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/27/JDK
+- winget: IBM.Semeru.27.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/27/JRE
+- winget: IBM.Semeru.8.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/8/JDK
+- winget: IBM.Semeru.8.JRE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IBM/Semeru/8/JRE
+aliases:
+- ibm/ibm-semeru-runtime-open-edition

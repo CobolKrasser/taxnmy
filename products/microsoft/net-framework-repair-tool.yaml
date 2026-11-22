@@ -1,0 +1,12 @@
+key: microsoft/net-framework-repair-tool
+publisher: microsoft
+name: Microsoft .NET Framework Repair Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/RepairTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/RepairTool
+identifiers:
+- winget: Microsoft.DotNet.RepairTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/RepairTool
+aliases:
+- microsoft/microsoft-net-framework-repair-tool
