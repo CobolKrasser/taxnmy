@@ -188,7 +188,7 @@ class PlanTest(Base):
 class PagesTest(Base):
     def outcomes(self, fetcher, rows=ROWS):
         out = importer.plan(self.rows(rows), self.root)
-        pubs = importer.check_pages(out, fetcher, getattr(fetcher, "final", {}))
+        pubs = importer.check_pages(out, fetcher, getattr(fetcher, "final", {}), data_root=self.root)
         importer.follow(out)
         return out, pubs
 
@@ -259,7 +259,7 @@ class PagesTest(Base):
 class FilesTest(Base):
     def test_the_files_pass_the_schemas(self):
         out = importer.plan(self.rows(), self.root)
-        pubs = importer.check_pages(out, FakeFetcher(pages()))
+        pubs = importer.check_pages(out, FakeFetcher(pages()), data_root=self.root)
         files = importer.files_of(out, pubs, {}, self.root)
         self.assertEqual(sorted(files), ["products/acme/widget.yaml", "products/beta-systems/beta-box.yaml",
                                          "publishers/beta-systems.yaml"])
@@ -890,7 +890,7 @@ class EndAddressTest(Base):
 
     def outcomes(self, fetcher, rows=ROWS):
         out = importer.plan(self.rows(rows), self.root)
-        pubs = importer.check_pages(out, fetcher)
+        pubs = importer.check_pages(out, fetcher, data_root=self.root)
         importer.follow(out)
         return out, pubs
 

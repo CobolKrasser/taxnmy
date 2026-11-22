@@ -2,6 +2,7 @@
 REQUIREMENTS.md (TAX-33). The runs of the referee stay as they were written, and the data may hold
 a product name that looks like a rule number; both are left out."""
 
+import os
 import re
 import unittest
 from pathlib import Path
@@ -13,6 +14,16 @@ NUMBER = re.compile(r"\bT[PKERVG][0-9]{1,2}\b")
 DEFINED = re.compile(r"^\| (T[PKERVG][0-9]{1,2}) \|", re.M)  # the first cell of a row of a rule table
 
 
+def files(root: Path) -> list[Path]:
+    """Every file under root, without walking into the folders of SKIP: the data is not read (TAX-56)."""
+    out = []
+    for folder, dirs, names in os.walk(root):
+        rel = Path(folder).relative_to(root).as_posix() + "/"
+        dirs[:] = [d for d in dirs if not (rel.lstrip("./") + d + "/").startswith(SKIP)]
+        out += [Path(folder) / n for n in names]
+    return sorted(out)
+
+
 def defined(root: Path = REPO) -> set[str]:
     return set(DEFINED.findall((root / "REQUIREMENTS.md").read_text(encoding="utf-8")))
 
@@ -20,7 +31,7 @@ def defined(root: Path = REPO) -> set[str]:
 def unknown_numbers(root: Path = REPO) -> list[str]:
     rules = defined(root)
     hits = []
-    for path in sorted(root.rglob("*")):
+    for path in files(root):
         rel = path.relative_to(root).as_posix()
         if not path.is_file() or rel.startswith(SKIP) or "/." in "/" + rel or path.suffix not in TEXT:
             continue
