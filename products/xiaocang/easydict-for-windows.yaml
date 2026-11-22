@@ -1,0 +1,11 @@
+key: xiaocang/easydict-for-windows
+publisher: xiaocang
+name: Easydict for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiaocang/EasydictforWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiaocang/EasydictforWindows
+identifiers:
+- winget: xiaocang.EasydictforWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiaocang/EasydictforWindows
+aliases: []

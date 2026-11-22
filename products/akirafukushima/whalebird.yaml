@@ -1,0 +1,11 @@
+key: akirafukushima/whalebird
+publisher: akirafukushima
+name: Whalebird
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/h3poteto/whalebird-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/h3poteto/whalebird-desktop
+identifiers:
+- winget: h3poteto.whalebird-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/h3poteto/whalebird-desktop
+aliases: []

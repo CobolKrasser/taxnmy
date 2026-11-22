@@ -1,0 +1,11 @@
+key: jarwin/inflow
+publisher: jarwin
+name: InFlow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InFlowPayAI/InFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InFlowPayAI/InFlow
+identifiers:
+- winget: InFlowPayAI.InFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InFlowPayAI/InFlow
+aliases: []

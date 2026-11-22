@@ -1,0 +1,11 @@
+key: odamex/odamex
+publisher: odamex
+name: Odamex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Odamex/Odamex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Odamex/Odamex
+identifiers:
+- winget: Odamex.Odamex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Odamex/Odamex
+aliases: []

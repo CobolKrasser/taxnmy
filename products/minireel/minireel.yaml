@@ -1,0 +1,11 @@
+key: minireel/minireel
+publisher: minireel
+name: MiniReel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniReel/MiniReel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniReel/MiniReel
+identifiers:
+- winget: MiniReel.MiniReel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiniReel/MiniReel
+aliases: []

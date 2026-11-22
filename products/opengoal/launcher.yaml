@@ -1,0 +1,12 @@
+key: opengoal/launcher
+publisher: opengoal
+name: OpenGOAL Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGOAL/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGOAL/Launcher
+identifiers:
+- winget: OpenGOAL.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenGOAL/Launcher
+aliases:
+- opengoal/opengoal-launcher

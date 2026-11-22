@@ -1,0 +1,11 @@
+key: hanewin-software/hanewin-dhcp-server
+publisher: hanewin-software
+name: haneWIN DHCP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/DHCPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/DHCPServer
+identifiers:
+- winget: haneWIN.DHCPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/DHCPServer
+aliases: []

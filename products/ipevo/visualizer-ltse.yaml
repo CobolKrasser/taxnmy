@@ -1,0 +1,11 @@
+key: ipevo/visualizer-ltse
+publisher: ipevo
+name: Visualizer LTSE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/VisualizerLTSE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/VisualizerLTSE
+identifiers:
+- winget: IPEVO.VisualizerLTSE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/VisualizerLTSE
+aliases: []

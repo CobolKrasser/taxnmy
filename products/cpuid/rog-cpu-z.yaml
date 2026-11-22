@@ -1,0 +1,12 @@
+key: cpuid/rog-cpu-z
+publisher: cpuid
+name: CPUID ROG CPU-Z
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/ROG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/ROG
+identifiers:
+- winget: CPUID.CPU-Z.ROG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/ROG
+aliases:
+- cpuid/cpuid-rog-cpu-z

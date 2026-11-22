@@ -1,0 +1,11 @@
+key: satoshilabs/trezor-suite
+publisher: satoshilabs
+name: Trezor Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatoshiLabs/trezor-suite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatoshiLabs/trezor-suite
+identifiers:
+- winget: SatoshiLabs.trezor-suite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatoshiLabs/trezor-suite
+aliases: []

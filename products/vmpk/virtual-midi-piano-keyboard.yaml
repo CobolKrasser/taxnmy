@@ -1,0 +1,11 @@
+key: vmpk/virtual-midi-piano-keyboard
+publisher: vmpk
+name: Virtual MIDI Piano Keyboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMPK/VMPK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMPK/VMPK
+identifiers:
+- winget: VMPK.VMPK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VMPK/VMPK
+aliases: []

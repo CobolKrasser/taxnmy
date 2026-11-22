@@ -1,0 +1,11 @@
+key: redscientist-labs/rtc-launcher
+publisher: redscientist-labs
+name: RTC Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redscientist/RTC-Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redscientist/RTC-Launcher
+identifiers:
+- winget: Redscientist.RTC-Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redscientist/RTC-Launcher
+aliases: []

@@ -1,0 +1,11 @@
+key: raynersec/hyper-v-switch
+publisher: raynersec
+name: Hyper-V-Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaynerSec/Hyper-V-Switch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaynerSec/Hyper-V-Switch
+identifiers:
+- winget: RaynerSec.Hyper-V-Switch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaynerSec/Hyper-V-Switch
+aliases: []

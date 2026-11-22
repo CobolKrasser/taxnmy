@@ -1,0 +1,11 @@
+key: brightblock/hyprlayer-cli
+publisher: brightblock
+name: Hyprlayer CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightBlock/Hyprlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightBlock/Hyprlayer
+identifiers:
+- winget: BrightBlock.Hyprlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrightBlock/Hyprlayer
+aliases: []

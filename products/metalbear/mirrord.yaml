@@ -1,0 +1,11 @@
+key: metalbear/mirrord
+publisher: metalbear
+name: mirrord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetalBear/mirrord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetalBear/mirrord
+identifiers:
+- winget: MetalBear.mirrord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetalBear/mirrord
+aliases: []

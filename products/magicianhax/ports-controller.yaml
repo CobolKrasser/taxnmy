@@ -1,0 +1,11 @@
+key: magicianhax/ports-controller
+publisher: magicianhax
+name: Ports Controller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicianhax/PortsController
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicianhax/PortsController
+identifiers:
+- winget: Magicianhax.PortsController
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Magicianhax/PortsController
+aliases: []

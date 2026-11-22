@@ -1,0 +1,11 @@
+key: taxdome/taxdome
+publisher: taxdome
+name: TaxDome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaxDomeLLC/TaxDome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaxDomeLLC/TaxDome
+identifiers:
+- winget: TaxDomeLLC.TaxDome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TaxDomeLLC/TaxDome
+aliases: []

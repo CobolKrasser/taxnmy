@@ -1,0 +1,11 @@
+key: amdphreak/evolution-engine
+publisher: amdphreak
+name: Evolution Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMDphreak/EvolutionEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMDphreak/EvolutionEngine
+identifiers:
+- winget: AMDphreak.EvolutionEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMDphreak/EvolutionEngine
+aliases: []

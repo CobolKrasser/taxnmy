@@ -1,0 +1,11 @@
+key: binarymark/streaming-video-downloader-lite
+publisher: binarymark
+name: Streaming Video Downloader Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/StreamingVideoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/StreamingVideoDownloader
+identifiers:
+- winget: BinaryMark.StreamingVideoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/StreamingVideoDownloader
+aliases: []

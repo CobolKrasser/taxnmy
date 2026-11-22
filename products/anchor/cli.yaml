@@ -1,0 +1,11 @@
+key: anchor/cli
+publisher: anchor
+name: cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchor/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchor/cli
+identifiers:
+- winget: Anchor.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchor/cli
+aliases: []

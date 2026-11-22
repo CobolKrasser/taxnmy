@@ -1,0 +1,11 @@
+key: beeswax-pat/scrib-desktop
+publisher: beeswax-pat
+name: Scrib Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeeswaxPat/ScribDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeeswaxPat/ScribDesktop
+identifiers:
+- winget: BeeswaxPat.ScribDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeeswaxPat/ScribDesktop
+aliases: []

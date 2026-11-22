@@ -1,0 +1,11 @@
+key: nats-authors/nats-command-line-interface
+publisher: nats-authors
+name: NATS Command Line Interface
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/CLI
+identifiers:
+- winget: NATSAuthors.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NATSAuthors/CLI
+aliases: []

@@ -1,0 +1,12 @@
+key: proton/meet
+publisher: proton
+name: Proton Meet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMeet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMeet
+identifiers:
+- winget: Proton.ProtonMeet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonMeet
+aliases:
+- proton/proton-meet

@@ -1,0 +1,11 @@
+key: mpc-hc-team/mpc-hc
+publisher: mpc-hc-team
+name: MPC-HC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clsid2/mpc-hc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clsid2/mpc-hc
+identifiers:
+- winget: clsid2.mpc-hc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/clsid2/mpc-hc
+aliases: []

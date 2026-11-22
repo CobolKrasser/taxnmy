@@ -1,0 +1,11 @@
+key: creativeprojects/resticprofile
+publisher: creativeprojects
+name: resticprofile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/creativeprojects/resticprofile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/creativeprojects/resticprofile
+identifiers:
+- winget: creativeprojects.resticprofile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/creativeprojects/resticprofile
+aliases: []

@@ -1,0 +1,11 @@
+key: meop/winenvedit
+publisher: meop
+name: WinEnvEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meop/WinEnvEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meop/WinEnvEdit
+identifiers:
+- winget: meop.WinEnvEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/meop/WinEnvEdit
+aliases: []

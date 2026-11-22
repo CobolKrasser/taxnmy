@@ -1,0 +1,11 @@
+key: naps2-software/naps2
+publisher: naps2-software
+name: NAPS2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyanfish/NAPS2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyanfish/NAPS2
+identifiers:
+- winget: Cyanfish.NAPS2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyanfish/NAPS2
+aliases: []

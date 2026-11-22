@@ -1,0 +1,11 @@
+key: edpb/website-audit
+publisher: edpb
+name: website-audit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDPB/WebsiteAuditTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDPB/WebsiteAuditTool
+identifiers:
+- winget: EDPB.WebsiteAuditTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDPB/WebsiteAuditTool
+aliases: []

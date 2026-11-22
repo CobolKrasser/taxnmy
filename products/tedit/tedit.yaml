@@ -1,0 +1,11 @@
+key: tedit/tedit
+publisher: tedit
+name: TEdit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TEdit/TEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TEdit/TEdit
+identifiers:
+- winget: TEdit.TEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TEdit/TEdit
+aliases: []

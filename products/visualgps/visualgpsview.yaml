@@ -1,0 +1,11 @@
+key: visualgps/visualgpsview
+publisher: visualgps
+name: VisualGPSView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualGPS/VisualGPSView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualGPS/VisualGPSView
+identifiers:
+- winget: VisualGPS.VisualGPSView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisualGPS/VisualGPSView
+aliases: []

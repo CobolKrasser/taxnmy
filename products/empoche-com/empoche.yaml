@@ -1,0 +1,11 @@
+key: empoche-com/empoche
+publisher: empoche-com
+name: Empoche
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Empoche/Empoche
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Empoche/Empoche
+identifiers:
+- winget: Empoche.Empoche
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Empoche/Empoche
+aliases: []

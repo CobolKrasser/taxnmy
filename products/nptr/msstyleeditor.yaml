@@ -1,0 +1,11 @@
+key: nptr/msstyleeditor
+publisher: nptr
+name: msstyleEditor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nptr/msstyleEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nptr/msstyleEditor
+identifiers:
+- winget: nptr.msstyleEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nptr/msstyleEditor
+aliases: []

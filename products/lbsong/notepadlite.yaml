@@ -1,0 +1,11 @@
+key: lbsong/notepadlite
+publisher: lbsong
+name: NotepadLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LBSong/NotepadLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LBSong/NotepadLite
+identifiers:
+- winget: LBSong.NotepadLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LBSong/NotepadLite
+aliases: []

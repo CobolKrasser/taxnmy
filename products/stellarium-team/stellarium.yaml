@@ -1,0 +1,11 @@
+key: stellarium-team/stellarium
+publisher: stellarium-team
+name: Stellarium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellarium/Stellarium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellarium/Stellarium
+identifiers:
+- winget: Stellarium.Stellarium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellarium/Stellarium
+aliases: []

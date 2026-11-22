@@ -1,0 +1,12 @@
+key: long-at/test
+publisher: long-at
+name: Long AT Test
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LongAT/LongATTest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LongAT/LongATTest
+identifiers:
+- winget: LongAT.LongATTest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LongAT/LongATTest
+aliases:
+- long-at/long-at-test

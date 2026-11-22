@@ -1,0 +1,11 @@
+key: notch/notchlc-plugin-for-avi-and-legacy-quicktime
+publisher: notch
+name: NotchLC Plugin for AVI & Legacy QuickTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notch/NotchLC/QuickTimeAVIPlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notch/NotchLC/QuickTimeAVIPlugin
+identifiers:
+- winget: Notch.NotchLC.QuickTimeAVIPlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notch/NotchLC/QuickTimeAVIPlugin
+aliases: []

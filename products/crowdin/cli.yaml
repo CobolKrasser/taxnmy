@@ -1,0 +1,12 @@
+key: crowdin/cli
+publisher: crowdin
+name: Crowdin CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crowdin/CrowdinCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crowdin/CrowdinCLI
+identifiers:
+- winget: Crowdin.CrowdinCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crowdin/CrowdinCLI
+aliases:
+- crowdin/crowdin-cli

@@ -1,0 +1,11 @@
+key: otter-browser-team/otter-browser
+publisher: otter-browser-team
+name: Otter Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OtterBrowserTeam/OtterBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OtterBrowserTeam/OtterBrowser
+identifiers:
+- winget: OtterBrowserTeam.OtterBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OtterBrowserTeam/OtterBrowser
+aliases: []

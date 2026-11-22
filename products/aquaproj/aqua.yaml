@@ -1,0 +1,11 @@
+key: aquaproj/aqua
+publisher: aquaproj
+name: aqua
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aquaproj/aqua
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aquaproj/aqua
+identifiers:
+- winget: aquaproj.aqua
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aquaproj/aqua
+aliases: []

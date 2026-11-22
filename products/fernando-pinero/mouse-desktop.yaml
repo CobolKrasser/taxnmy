@@ -1,0 +1,11 @@
+key: fernando-pinero/mouse-desktop
+publisher: fernando-pinero
+name: mouse-desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fpinero/mouse-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fpinero/mouse-desktop
+identifiers:
+- winget: fpinero.mouse-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fpinero/mouse-desktop
+aliases: []

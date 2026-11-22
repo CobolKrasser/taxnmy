@@ -1,0 +1,11 @@
+key: aitherium/aithershell
+publisher: aitherium
+name: AitherShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aitherium/AitherShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aitherium/AitherShell
+identifiers:
+- winget: Aitherium.AitherShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aitherium/AitherShell
+aliases: []

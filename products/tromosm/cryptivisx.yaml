@@ -1,0 +1,11 @@
+key: tromosm/cryptivisx
+publisher: tromosm
+name: CryptivisX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/CryptivisX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/CryptivisX
+identifiers:
+- winget: tromoSM.CryptivisX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/CryptivisX
+aliases: []

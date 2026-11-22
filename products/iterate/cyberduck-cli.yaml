@@ -1,0 +1,11 @@
+key: iterate/cyberduck-cli
+publisher: iterate
+name: Cyberduck CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/CyberduckCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/CyberduckCLI
+identifiers:
+- winget: Iterate.CyberduckCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterate/CyberduckCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: goaaats/xivlauncher
+publisher: goaaats
+name: XIVLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goatcorp/XIVLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goatcorp/XIVLauncher
+identifiers:
+- winget: goatcorp.XIVLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goatcorp/XIVLauncher
+aliases: []

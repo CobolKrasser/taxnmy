@@ -1,0 +1,11 @@
+key: janetlang/janet
+publisher: janetlang
+name: Janet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanetLang/Janet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanetLang/Janet
+identifiers:
+- winget: JanetLang.Janet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanetLang/Janet
+aliases: []

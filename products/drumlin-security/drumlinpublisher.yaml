@@ -1,0 +1,11 @@
+key: drumlin-security/drumlinpublisher
+publisher: drumlin-security
+name: DrumlinPublisher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrumlinSecurity/DrumlinPublisher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrumlinSecurity/DrumlinPublisher
+identifiers:
+- winget: DrumlinSecurity.DrumlinPublisher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrumlinSecurity/DrumlinPublisher
+aliases: []

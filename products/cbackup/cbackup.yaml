@@ -1,0 +1,11 @@
+key: cbackup/cbackup
+publisher: cbackup
+name: CBackup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CBackup/CBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CBackup/CBackup
+identifiers:
+- winget: CBackup.CBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CBackup/CBackup
+aliases: []

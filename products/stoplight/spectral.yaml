@@ -1,0 +1,11 @@
+key: stoplight/spectral
+publisher: stoplight
+name: Spectral
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Spectral
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Spectral
+identifiers:
+- winget: Stoplight.Spectral
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stoplight/Spectral
+aliases: []

@@ -1,0 +1,11 @@
+key: basedash/basedash
+publisher: basedash
+name: Basedash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basedash/Basedash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basedash/Basedash
+identifiers:
+- winget: Basedash.Basedash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Basedash/Basedash
+aliases: []

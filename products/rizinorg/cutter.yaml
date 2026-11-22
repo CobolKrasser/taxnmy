@@ -1,0 +1,11 @@
+key: rizinorg/cutter
+publisher: rizinorg
+name: Cutter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rizin/Cutter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rizin/Cutter
+identifiers:
+- winget: Rizin.Cutter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rizin/Cutter
+aliases: []

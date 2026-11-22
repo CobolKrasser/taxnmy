@@ -1,0 +1,12 @@
+key: logitech/solar-app
+publisher: logitech
+name: Logitech Solar App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Solar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Solar
+identifiers:
+- winget: Logitech.Solar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Solar
+aliases:
+- logitech/logitech-solar-app

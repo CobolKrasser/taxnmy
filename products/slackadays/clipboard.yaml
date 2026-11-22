@@ -1,0 +1,11 @@
+key: slackadays/clipboard
+publisher: slackadays
+name: Clipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slackadays/Clipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slackadays/Clipboard
+identifiers:
+- winget: Slackadays.Clipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Slackadays/Clipboard
+aliases: []

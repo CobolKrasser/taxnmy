@@ -1,0 +1,11 @@
+key: winauth/winauth
+publisher: winauth
+name: WinAuth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinAuth/WinAuth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinAuth/WinAuth
+identifiers:
+- winget: WinAuth.WinAuth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinAuth/WinAuth
+aliases: []

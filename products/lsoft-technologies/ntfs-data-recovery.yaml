@@ -1,0 +1,11 @@
+key: lsoft-technologies/ntfs-data-recovery
+publisher: lsoft-technologies
+name: NTFS Data Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/NTFSDataRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/NTFSDataRecovery
+identifiers:
+- winget: LSoftTechnologies.NTFSDataRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/NTFSDataRecovery
+aliases: []

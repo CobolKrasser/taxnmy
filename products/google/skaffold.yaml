@@ -1,0 +1,11 @@
+key: google/skaffold
+publisher: google
+name: Skaffold
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/ContainerTools/Skaffold
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/ContainerTools/Skaffold
+identifiers:
+- winget: Google.ContainerTools.Skaffold
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/ContainerTools/Skaffold
+aliases: []

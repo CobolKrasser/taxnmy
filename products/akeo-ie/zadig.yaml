@@ -1,0 +1,11 @@
+key: akeo-ie/zadig
+publisher: akeo-ie
+name: Zadig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/akeo/ie/Zadig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/akeo/ie/Zadig
+identifiers:
+- winget: akeo.ie.Zadig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/akeo/ie/Zadig
+aliases: []

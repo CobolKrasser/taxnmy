@@ -1,0 +1,11 @@
+key: matkrin/bashd
+publisher: matkrin
+name: bashd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/matkrin/bashd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/matkrin/bashd
+identifiers:
+- winget: matkrin.bashd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/matkrin/bashd
+aliases: []

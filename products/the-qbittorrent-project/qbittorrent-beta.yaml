@@ -1,0 +1,11 @@
+key: the-qbittorrent-project/qbittorrent-beta
+publisher: the-qbittorrent-project
+name: qBittorrent Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qBittorrent/qBittorrent/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qBittorrent/qBittorrent/Beta
+identifiers:
+- winget: qBittorrent.qBittorrent.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qBittorrent/qBittorrent/Beta
+aliases: []

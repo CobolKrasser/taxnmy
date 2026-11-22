@@ -1,0 +1,11 @@
+key: bytedance/coze
+publisher: bytedance
+name: Coze
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Coze
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Coze
+identifiers:
+- winget: ByteDance.Coze
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Coze
+aliases: []

@@ -1,0 +1,12 @@
+key: locklizard/safeguard-pdf-writer-enterprise
+publisher: locklizard
+name: Locklizard Safeguard - PDF Writer Enterprise
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFWriter/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFWriter/Enterprise
+identifiers:
+- winget: Locklizard.SafeguardPDFWriter.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFWriter/Enterprise
+aliases:
+- locklizard/locklizard-safeguard-pdf-writer-enterprise

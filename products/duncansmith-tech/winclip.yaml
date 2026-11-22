@@ -1,0 +1,11 @@
+key: duncansmith-tech/winclip
+publisher: duncansmith-tech
+name: WinClip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinClip/WinClip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinClip/WinClip
+identifiers:
+- winget: WinClip.WinClip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinClip/WinClip
+aliases: []

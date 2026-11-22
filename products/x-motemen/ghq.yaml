@@ -1,0 +1,11 @@
+key: x-motemen/ghq
+publisher: x-motemen
+name: ghq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x-motemen/ghq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x-motemen/ghq
+identifiers:
+- winget: x-motemen.ghq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/x-motemen/ghq
+aliases: []

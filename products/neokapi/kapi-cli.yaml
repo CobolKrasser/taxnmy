@@ -1,0 +1,11 @@
+key: neokapi/kapi-cli
+publisher: neokapi
+name: Kapi CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neokapi/KapiCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neokapi/KapiCli
+identifiers:
+- winget: Neokapi.KapiCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neokapi/KapiCli
+aliases: []

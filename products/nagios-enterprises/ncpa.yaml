@@ -1,0 +1,11 @@
+key: nagios-enterprises/ncpa
+publisher: nagios-enterprises
+name: NCPA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nagios/NCPA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nagios/NCPA
+identifiers:
+- winget: Nagios.NCPA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nagios/NCPA
+aliases: []

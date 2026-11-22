@@ -1,0 +1,11 @@
+key: kristian-duske/trenchbroom
+publisher: kristian-duske
+name: TrenchBroom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrenchBroom/TrenchBroom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrenchBroom/TrenchBroom
+identifiers:
+- winget: TrenchBroom.TrenchBroom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TrenchBroom/TrenchBroom
+aliases: []

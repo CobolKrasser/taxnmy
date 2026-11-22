@@ -1,0 +1,11 @@
+key: opera-software/opera-air
+publisher: opera-software
+name: Opera Air
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/OperaAir
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/OperaAir
+identifiers:
+- winget: Opera.OperaAir
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opera/OperaAir
+aliases: []

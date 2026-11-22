@@ -1,0 +1,11 @@
+key: neko/ollama-operator
+publisher: neko
+name: Ollama Operator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nekomeowww/OllamaOperator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nekomeowww/OllamaOperator
+identifiers:
+- winget: nekomeowww.OllamaOperator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nekomeowww/OllamaOperator
+aliases: []

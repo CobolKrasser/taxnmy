@@ -1,0 +1,11 @@
+key: indent/access
+publisher: indent
+name: Access
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Indent/Access
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Indent/Access
+identifiers:
+- winget: Indent.Access
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Indent/Access
+aliases: []

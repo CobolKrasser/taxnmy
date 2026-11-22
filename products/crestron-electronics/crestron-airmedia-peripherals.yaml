@@ -1,0 +1,11 @@
+key: crestron-electronics/crestron-airmedia-peripherals
+publisher: crestron-electronics
+name: Crestron AirMedia Peripherals
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crestron/AirMediaPeripherals
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crestron/AirMediaPeripherals
+identifiers:
+- winget: Crestron.AirMediaPeripherals
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Crestron/AirMediaPeripherals
+aliases: []

@@ -1,0 +1,11 @@
+key: sourcegraph/amp-cli
+publisher: sourcegraph
+name: Amp CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sourcegraph/Amp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sourcegraph/Amp
+identifiers:
+- winget: Sourcegraph.Amp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sourcegraph/Amp
+aliases: []

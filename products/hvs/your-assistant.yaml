@@ -1,0 +1,11 @@
+key: hvs/your-assistant
+publisher: hvs
+name: Your Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HVS/YourAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HVS/YourAssistant
+identifiers:
+- winget: HVS.YourAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HVS/YourAssistant
+aliases: []

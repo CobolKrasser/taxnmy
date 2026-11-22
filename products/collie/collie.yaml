@@ -1,0 +1,11 @@
+key: collie/collie
+publisher: collie
+name: Collie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Colliehq/Collie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Colliehq/Collie
+identifiers:
+- winget: Colliehq.Collie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Colliehq/Collie
+aliases: []

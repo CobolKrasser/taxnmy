@@ -1,0 +1,11 @@
+key: nirsoft/ipnetinfo
+publisher: nirsoft
+name: IPNetInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/IPNetInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/IPNetInfo
+identifiers:
+- winget: NirSoft.IPNetInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/IPNetInfo
+aliases: []

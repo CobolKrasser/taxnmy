@@ -1,0 +1,13 @@
+key: digitalvolcano-software/duplicate-cleaner-pro
+publisher: digitalvolcano-software
+name: Duplicate Cleaner Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/DuplicateCleaner/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/DuplicateCleaner/5
+identifiers:
+- winget: DigitalVolcanoSoftware.DuplicateCleaner.4.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/DuplicateCleaner/4/Pro
+- winget: DigitalVolcanoSoftware.DuplicateCleaner.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/DuplicateCleaner/5
+aliases: []

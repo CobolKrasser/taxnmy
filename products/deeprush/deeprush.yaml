@@ -1,0 +1,11 @@
+key: deeprush/deeprush
+publisher: deeprush
+name: DeepRush
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepRush/DeepRush
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepRush/DeepRush
+identifiers:
+- winget: DeepRush.DeepRush
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepRush/DeepRush
+aliases: []

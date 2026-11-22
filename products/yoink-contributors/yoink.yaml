@@ -1,0 +1,11 @@
+key: yoink-contributors/yoink
+publisher: yoink-contributors
+name: Yoink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JasperDevs/Yoink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JasperDevs/Yoink
+identifiers:
+- winget: JasperDevs.Yoink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JasperDevs/Yoink
+aliases: []

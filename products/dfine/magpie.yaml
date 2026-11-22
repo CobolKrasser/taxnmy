@@ -1,0 +1,11 @@
+key: dfine/magpie
+publisher: dfine
+name: magpie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/newdee/Magpie
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/newdee/Magpie
+identifiers:
+- winget: newdee.Magpie
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/newdee/Magpie
+aliases: []

@@ -1,0 +1,11 @@
+key: inkdrop/inkdrop
+publisher: inkdrop
+name: Inkdrop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Inkdrop/Inkdrop/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Inkdrop/Inkdrop/Portable
+identifiers:
+- winget: Inkdrop.Inkdrop.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Inkdrop/Inkdrop/Portable
+aliases: []

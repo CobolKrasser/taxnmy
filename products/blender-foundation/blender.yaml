@@ -10,4 +10,10 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/blender.md
 - homebrew: blender
   source: https://formulae.brew.sh/cask/blender
+- winget: BlenderFoundation.Blender
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlenderFoundation/Blender
+- winget: BlenderFoundation.Blender.LTS.4.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlenderFoundation/Blender/LTS/4/2
+- winget: BlenderFoundation.Blender.LTS.4.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlenderFoundation/Blender/LTS/4/5
 aliases: []

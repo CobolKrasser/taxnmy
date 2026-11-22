@@ -1,0 +1,11 @@
+key: thorlabs/xplatform
+publisher: thorlabs
+name: xPlatform
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/xPlatform
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/xPlatform
+identifiers:
+- winget: Thorlabs.xPlatform
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/xPlatform
+aliases: []

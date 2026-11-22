@@ -1,0 +1,11 @@
+key: ascensio-system-sia/avs-audio-editor
+publisher: ascensio-system-sia
+name: AVS Audio Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSAudioEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSAudioEditor
+identifiers:
+- winget: Ascensio.AVSAudioEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSAudioEditor
+aliases: []

@@ -1,0 +1,11 @@
+key: nirsoft/wireless-network-watcher
+publisher: nirsoft
+name: Wireless Network Watcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WirelessNetworkWatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WirelessNetworkWatcher
+identifiers:
+- winget: NirSoft.WirelessNetworkWatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WirelessNetworkWatcher
+aliases: []

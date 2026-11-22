@@ -1,0 +1,11 @@
+key: neumetrix/httpwatch-basic
+publisher: neumetrix
+name: HttpWatch Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neumetrix/HttpWatch/Basic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neumetrix/HttpWatch/Basic
+identifiers:
+- winget: Neumetrix.HttpWatch.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neumetrix/HttpWatch/Basic
+aliases: []

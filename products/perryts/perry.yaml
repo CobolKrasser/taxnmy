@@ -1,0 +1,11 @@
+key: perryts/perry
+publisher: perryts
+name: Perry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerryTS/Perry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerryTS/Perry
+identifiers:
+- winget: PerryTS.Perry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerryTS/Perry
+aliases: []

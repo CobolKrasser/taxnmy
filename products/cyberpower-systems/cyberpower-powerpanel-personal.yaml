@@ -1,0 +1,13 @@
+key: cyberpower-systems/cyberpower-powerpanel-personal
+publisher: cyberpower-systems
+name: CyberPower PowerPanel Personal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberPowerSystems/PowerPanel/Personal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberPowerSystems/PowerPanel/Personal
+identifiers:
+- winget: CyberPowerSystems.PowerPanel.Business.Management
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberPowerSystems/PowerPanel/Business/Management
+- winget: CyberPowerSystems.PowerPanel.Personal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberPowerSystems/PowerPanel/Personal
+aliases: []

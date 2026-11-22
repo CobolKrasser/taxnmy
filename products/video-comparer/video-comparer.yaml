@@ -1,0 +1,11 @@
+key: video-comparer/video-comparer
+publisher: video-comparer
+name: Video Comparer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoComparer/VideoComparer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoComparer/VideoComparer
+identifiers:
+- winget: VideoComparer.VideoComparer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VideoComparer/VideoComparer
+aliases: []

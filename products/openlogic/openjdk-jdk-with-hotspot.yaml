@@ -1,0 +1,22 @@
+key: openlogic/openjdk-jdk-with-hotspot
+publisher: openlogic
+name: OpenLogic-OpenJDK JDK with Hotspot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/8/JDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/8/JDK
+identifiers:
+- winget: OpenLogic.OpenJDK.11.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/11/JDK
+- winget: OpenLogic.OpenJDK.17.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/17/JDK
+- winget: OpenLogic.OpenJDK.21.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/21/JDK
+- winget: OpenLogic.OpenJDK.22.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/22/JDK
+- winget: OpenLogic.OpenJDK.25.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/25/JDK
+- winget: OpenLogic.OpenJDK.8.JDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenLogic/OpenJDK/8/JDK
+aliases:
+- openlogic/openlogic-openjdk-jdk-with-hotspot

@@ -1,0 +1,12 @@
+key: tikzedt/beta
+publisher: tikzedt
+name: TikzEdt Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TikzEdt/TikzEdtBeta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TikzEdt/TikzEdtBeta
+identifiers:
+- winget: TikzEdt.TikzEdtBeta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TikzEdt/TikzEdtBeta
+aliases:
+- tikzedt/tikzedt-beta

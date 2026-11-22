@@ -1,0 +1,11 @@
+key: redisant/modbus-master-emulator
+publisher: redisant
+name: Modbus Master Emulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ModbusMasterEmulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ModbusMasterEmulator
+identifiers:
+- winget: Redisant.ModbusMasterEmulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ModbusMasterEmulator
+aliases: []

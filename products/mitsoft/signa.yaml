@@ -1,0 +1,11 @@
+key: mitsoft/signa
+publisher: mitsoft
+name: Signa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MitSoft/Signa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MitSoft/Signa
+identifiers:
+- winget: MitSoft.Signa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MitSoft/Signa
+aliases: []

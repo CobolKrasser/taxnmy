@@ -1,0 +1,11 @@
+key: maxime-doyen/homebank
+publisher: maxime-doyen
+name: HomeBank
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HomeBank/HomeBank
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HomeBank/HomeBank
+identifiers:
+- winget: HomeBank.HomeBank
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HomeBank/HomeBank
+aliases: []

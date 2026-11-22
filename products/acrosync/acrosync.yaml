@@ -1,0 +1,11 @@
+key: acrosync/acrosync
+publisher: acrosync
+name: Acrosync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/acrosync/acrosync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/acrosync/acrosync
+identifiers:
+- winget: acrosync.acrosync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/acrosync/acrosync
+aliases: []

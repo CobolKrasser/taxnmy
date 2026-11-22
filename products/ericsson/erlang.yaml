@@ -8,6 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:erlang:erlang\/otp
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/erlang.md
+- winget: Erlang.ErlangOTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Erlang/ErlangOTP
 aliases:
 - ericsson/erlang-otp
 - ericsson/otp

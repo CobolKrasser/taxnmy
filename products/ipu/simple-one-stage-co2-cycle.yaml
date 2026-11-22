@@ -1,0 +1,11 @@
+key: ipu/simple-one-stage-co2-cycle
+publisher: ipu
+name: Simple One Stage CO2 Cycle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/SimpleOneStageCO2Cycle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/SimpleOneStageCO2Cycle
+identifiers:
+- winget: IPU.SimpleOneStageCO2Cycle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/SimpleOneStageCO2Cycle
+aliases: []

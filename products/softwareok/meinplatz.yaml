@@ -1,0 +1,11 @@
+key: softwareok/meinplatz
+publisher: softwareok
+name: MeinPlatz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/MeinPlatz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/MeinPlatz
+identifiers:
+- winget: SoftwareOK.MeinPlatz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/MeinPlatz
+aliases: []

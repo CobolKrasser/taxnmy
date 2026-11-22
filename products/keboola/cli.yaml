@@ -1,0 +1,12 @@
+key: keboola/cli
+publisher: keboola
+name: Keboola CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keboola/KeboolaCLI2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keboola/KeboolaCLI2
+identifiers:
+- winget: Keboola.KeboolaCLI2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keboola/KeboolaCLI2
+aliases:
+- keboola/keboola-cli

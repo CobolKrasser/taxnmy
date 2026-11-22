@@ -1,0 +1,11 @@
+key: gold-band/gold-band
+publisher: gold-band
+name: Gold Band
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diodeme/GoldBand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diodeme/GoldBand
+identifiers:
+- winget: Diodeme.GoldBand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diodeme/GoldBand
+aliases: []

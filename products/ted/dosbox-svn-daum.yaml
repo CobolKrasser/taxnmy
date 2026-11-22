@@ -1,0 +1,11 @@
+key: ted/dosbox-svn-daum
+publisher: ted
+name: DOSBox SVN-Daum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/ykhwong/DOSBoxSVN-Daum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/ykhwong/DOSBoxSVN-Daum
+identifiers:
+- winget: ykhwong.DOSBoxSVN-Daum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/ykhwong/DOSBoxSVN-Daum
+aliases: []

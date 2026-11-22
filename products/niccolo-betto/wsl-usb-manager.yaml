@@ -1,0 +1,11 @@
+key: niccolo-betto/wsl-usb-manager
+publisher: niccolo-betto
+name: WSL USB Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nickbeth/wsl-usb-manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nickbeth/wsl-usb-manager
+identifiers:
+- winget: nickbeth.wsl-usb-manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nickbeth/wsl-usb-manager
+aliases: []

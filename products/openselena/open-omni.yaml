@@ -1,0 +1,11 @@
+key: openselena/open-omni
+publisher: openselena
+name: Open Omni
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSelena/OpenOmni
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSelena/OpenOmni
+identifiers:
+- winget: OpenSelena.OpenOmni
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSelena/OpenOmni
+aliases: []

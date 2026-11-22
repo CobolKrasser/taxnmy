@@ -1,0 +1,11 @@
+key: makoto-arai/zenith
+publisher: makoto-arai
+name: Zenith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MakotoArai/Zenith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MakotoArai/Zenith
+identifiers:
+- winget: MakotoArai.Zenith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MakotoArai/Zenith
+aliases: []

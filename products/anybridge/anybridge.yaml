@@ -1,0 +1,11 @@
+key: anybridge/anybridge
+publisher: anybridge
+name: AnyBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/soulvon/AnyBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/soulvon/AnyBridge
+identifiers:
+- winget: soulvon.AnyBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/soulvon/AnyBridge
+aliases: []

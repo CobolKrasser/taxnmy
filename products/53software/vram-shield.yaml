@@ -1,0 +1,11 @@
+key: 53software/vram-shield
+publisher: 53software
+name: VRAM Shield
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/5/53Software/VRAMShield
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/5/53Software/VRAMShield
+identifiers:
+- winget: 53Software.VRAMShield
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/5/53Software/VRAMShield
+aliases: []

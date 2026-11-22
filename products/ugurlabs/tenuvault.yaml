@@ -1,0 +1,11 @@
+key: ugurlabs/tenuvault
+publisher: ugurlabs
+name: tenuvault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UgurLabs/TenuVault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UgurLabs/TenuVault
+identifiers:
+- winget: UgurLabs.TenuVault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UgurLabs/TenuVault
+aliases: []

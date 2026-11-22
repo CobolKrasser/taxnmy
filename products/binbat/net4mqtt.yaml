@@ -1,0 +1,11 @@
+key: binbat/net4mqtt
+publisher: binbat
+name: net4mqtt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binbat/net4mqtt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binbat/net4mqtt
+identifiers:
+- winget: binbat.net4mqtt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binbat/net4mqtt
+aliases: []

@@ -1,0 +1,11 @@
+key: electronic-arts/ea-app
+publisher: electronic-arts
+name: EA app
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicArts/EADesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicArts/EADesktop
+identifiers:
+- winget: ElectronicArts.EADesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicArts/EADesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-latin-america-south-server
+publisher: riot-games
+name: League of Legends (Latin America South server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/LA2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/LA2
+identifiers:
+- winget: RiotGames.LeagueOfLegends.LA2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/LA2
+aliases: []

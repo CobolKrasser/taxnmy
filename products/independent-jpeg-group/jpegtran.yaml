@@ -1,0 +1,11 @@
+key: independent-jpeg-group/jpegtran
+publisher: independent-jpeg-group
+name: jpegtran
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IJG/jpegtran
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IJG/jpegtran
+identifiers:
+- winget: IJG.jpegtran
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IJG/jpegtran
+aliases: []

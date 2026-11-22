@@ -1,0 +1,11 @@
+key: helbling-verlagsgesellschaft-m-b-h/helbling-media-app
+publisher: helbling-verlagsgesellschaft-m-b-h
+name: HELBLING Media App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helbling/MediaApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helbling/MediaApp
+identifiers:
+- winget: Helbling.MediaApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Helbling/MediaApp
+aliases: []

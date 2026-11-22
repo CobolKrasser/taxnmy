@@ -1,0 +1,12 @@
+key: flowscripter/io-cli
+publisher: flowscripter
+name: Flowscripter IO CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/flowscripter-io-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/flowscripter-io-cli
+identifiers:
+- winget: Flowscripter.flowscripter-io-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowscripter/flowscripter-io-cli
+aliases:
+- flowscripter/flowscripter-io-cli

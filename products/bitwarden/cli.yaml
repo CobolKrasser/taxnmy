@@ -1,0 +1,12 @@
+key: bitwarden/cli
+publisher: bitwarden
+name: Bitwarden CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/CLI
+identifiers:
+- winget: Bitwarden.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/CLI
+aliases:
+- bitwarden/bitwarden-cli

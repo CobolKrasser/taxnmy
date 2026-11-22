@@ -1,0 +1,12 @@
+key: proxykit/cli
+publisher: proxykit
+name: ProxyKit CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProxyKit/ProxyKitCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProxyKit/ProxyKitCLI
+identifiers:
+- winget: ProxyKit.ProxyKitCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProxyKit/ProxyKitCLI
+aliases:
+- proxykit/proxykit-cli

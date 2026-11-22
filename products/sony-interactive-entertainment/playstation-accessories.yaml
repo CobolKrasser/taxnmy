@@ -1,0 +1,11 @@
+key: sony-interactive-entertainment/playstation-accessories
+publisher: sony-interactive-entertainment
+name: PlayStation Accessories
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlayStation/PlayStationAccessories
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlayStation/PlayStationAccessories
+identifiers:
+- winget: PlayStation.PlayStationAccessories
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PlayStation/PlayStationAccessories
+aliases: []

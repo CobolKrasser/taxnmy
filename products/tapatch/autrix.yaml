@@ -1,0 +1,11 @@
+key: tapatch/autrix
+publisher: tapatch
+name: Autrix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TAPATCH/Autrix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TAPATCH/Autrix
+identifiers:
+- winget: TAPATCH.Autrix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TAPATCH/Autrix
+aliases: []

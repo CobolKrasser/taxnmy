@@ -1,0 +1,12 @@
+key: softperfect/switch-port-mapper
+publisher: softperfect
+name: SoftPerfect Switch Port Mapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/SwitchPortMapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/SwitchPortMapper
+identifiers:
+- winget: SoftPerfect.SwitchPortMapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/SwitchPortMapper
+aliases:
+- softperfect/softperfect-switch-port-mapper

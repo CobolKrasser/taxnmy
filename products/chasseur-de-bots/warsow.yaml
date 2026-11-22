@@ -1,0 +1,11 @@
+key: chasseur-de-bots/warsow
+publisher: chasseur-de-bots
+name: Warsow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChasseurdeBots/Warsow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChasseurdeBots/Warsow
+identifiers:
+- winget: ChasseurdeBots.Warsow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChasseurdeBots/Warsow
+aliases: []

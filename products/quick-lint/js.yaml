@@ -1,0 +1,12 @@
+key: quick-lint/js
+publisher: quick-lint
+name: quick-lint-js
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quick-lint/quick-lint-js
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quick-lint/quick-lint-js
+identifiers:
+- winget: quick-lint.quick-lint-js
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quick-lint/quick-lint-js
+aliases:
+- quick-lint/quick-lint-js

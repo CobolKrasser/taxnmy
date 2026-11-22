@@ -1,0 +1,11 @@
+key: en-dev/aube
+publisher: en-dev
+name: aube
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aube/aube
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aube/aube
+identifiers:
+- winget: aube.aube
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aube/aube
+aliases: []

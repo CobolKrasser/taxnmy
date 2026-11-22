@@ -1,0 +1,11 @@
+key: fidlej/fish-fillets-next-generation
+publisher: fidlej
+name: Fish Fillets - Next Generation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fidlej/fillets
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fidlej/fillets
+identifiers:
+- winget: fidlej.fillets
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fidlej/fillets
+aliases: []

@@ -1,0 +1,11 @@
+key: piui/piui
+publisher: piui
+name: PiUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lehhair/PiUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lehhair/PiUI
+identifiers:
+- winget: lehhair.PiUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lehhair/PiUI
+aliases: []

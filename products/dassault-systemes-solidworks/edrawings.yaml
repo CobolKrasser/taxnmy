@@ -1,0 +1,11 @@
+key: dassault-systemes-solidworks/edrawings
+publisher: dassault-systemes-solidworks
+name: eDrawings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidWorks/eDrawings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidWorks/eDrawings
+identifiers:
+- winget: SolidWorks.eDrawings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidWorks/eDrawings
+aliases: []

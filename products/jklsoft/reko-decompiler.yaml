@@ -1,0 +1,11 @@
+key: jklsoft/reko-decompiler
+publisher: jklsoft
+name: Reko decompiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uxmal/reko
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uxmal/reko
+identifiers:
+- winget: uxmal.reko
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uxmal/reko
+aliases: []

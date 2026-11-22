@@ -1,0 +1,11 @@
+key: allplayer/allplayer
+publisher: allplayer
+name: ALLPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALLPlayer/ALLPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALLPlayer/ALLPlayer
+identifiers:
+- winget: ALLPlayer.ALLPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ALLPlayer/ALLPlayer
+aliases: []

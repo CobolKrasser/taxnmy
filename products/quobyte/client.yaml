@@ -1,0 +1,12 @@
+key: quobyte/client
+publisher: quobyte
+name: quobyte-client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quobyte/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quobyte/Client
+identifiers:
+- winget: Quobyte.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quobyte/Client
+aliases:
+- quobyte/quobyte-client

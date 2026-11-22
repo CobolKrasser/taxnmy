@@ -1,0 +1,11 @@
+key: activestate-software/activestate-komodo-edit
+publisher: activestate-software
+name: ActiveState Komodo Edit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveState/KomodoEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveState/KomodoEdit
+identifiers:
+- winget: ActiveState.KomodoEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveState/KomodoEdit
+aliases: []

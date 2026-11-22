@@ -1,0 +1,11 @@
+key: cmdwarden/cmdwarden
+publisher: cmdwarden
+name: CmdWarden
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BasantPandey/CmdWarden
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BasantPandey/CmdWarden
+identifiers:
+- winget: BasantPandey.CmdWarden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BasantPandey/CmdWarden
+aliases: []

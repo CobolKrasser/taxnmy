@@ -1,0 +1,11 @@
+key: londopy/hidedesktopapps
+publisher: londopy
+name: HideDesktopApps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Londopy/HideDesktopApps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Londopy/HideDesktopApps
+identifiers:
+- winget: Londopy.HideDesktopApps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Londopy/HideDesktopApps
+aliases: []

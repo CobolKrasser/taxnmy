@@ -1,0 +1,11 @@
+key: seeboop/seeboop
+publisher: seeboop
+name: SeeBoop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeeBoop/SeeBoop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeeBoop/SeeBoop
+identifiers:
+- winget: SeeBoop.SeeBoop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeeBoop/SeeBoop
+aliases: []

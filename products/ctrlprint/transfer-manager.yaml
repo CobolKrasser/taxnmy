@@ -1,0 +1,12 @@
+key: ctrlprint/transfer-manager
+publisher: ctrlprint
+name: CtrlPrint Transfer Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CtrlPrint/CtrlPrintTransferManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CtrlPrint/CtrlPrintTransferManager
+identifiers:
+- winget: CtrlPrint.CtrlPrintTransferManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CtrlPrint/CtrlPrintTransferManager
+aliases:
+- ctrlprint/ctrlprint-transfer-manager

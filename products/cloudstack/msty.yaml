@@ -1,0 +1,11 @@
+key: cloudstack/msty
+publisher: cloudstack
+name: Msty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudStack/Msty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudStack/Msty
+identifiers:
+- winget: CloudStack.Msty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudStack/Msty
+aliases: []

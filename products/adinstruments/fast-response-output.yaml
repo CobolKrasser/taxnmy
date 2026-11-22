@@ -1,0 +1,12 @@
+key: adinstruments/fast-response-output
+publisher: adinstruments
+name: ADInstruments Fast Response Output
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/FastResponseOutput
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/FastResponseOutput
+identifiers:
+- winget: ADInstruments.LabChart.Extension.FastResponseOutput
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Extension/FastResponseOutput
+aliases:
+- adinstruments/adinstruments-fast-response-output

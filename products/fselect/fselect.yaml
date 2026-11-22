@@ -1,0 +1,11 @@
+key: fselect/fselect
+publisher: fselect
+name: fselect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fselect/fselect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fselect/fselect
+identifiers:
+- winget: fselect.fselect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fselect/fselect
+aliases: []

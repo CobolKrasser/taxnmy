@@ -1,0 +1,11 @@
+key: wallnode/wallnode
+publisher: wallnode
+name: WALLNODE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wallnode/Wallnode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wallnode/Wallnode
+identifiers:
+- winget: Wallnode.Wallnode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wallnode/Wallnode
+aliases: []

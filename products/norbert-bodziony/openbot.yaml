@@ -1,0 +1,11 @@
+key: norbert-bodziony/openbot
+publisher: norbert-bodziony
+name: OpenBot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SynthetifyLabs/OpenBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SynthetifyLabs/OpenBot
+identifiers:
+- winget: SynthetifyLabs.OpenBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SynthetifyLabs/OpenBot
+aliases: []

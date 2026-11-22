@@ -1,0 +1,11 @@
+key: tree/janusx
+publisher: tree
+name: JanusX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TreeX-xx/JanusX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TreeX-xx/JanusX
+identifiers:
+- winget: TreeX-xx.JanusX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TreeX-xx/JanusX
+aliases: []

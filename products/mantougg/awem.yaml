@@ -1,0 +1,11 @@
+key: mantougg/awem
+publisher: mantougg
+name: awem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mantougg/awem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mantougg/awem
+identifiers:
+- winget: mantougg.awem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mantougg/awem
+aliases: []

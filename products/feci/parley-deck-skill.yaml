@@ -1,0 +1,11 @@
+key: feci/parley-deck-skill
+publisher: feci
+name: Parley Deck Skill
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feci/ParleyDeckSkill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feci/ParleyDeckSkill
+identifiers:
+- winget: Feci.ParleyDeckSkill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Feci/ParleyDeckSkill
+aliases: []

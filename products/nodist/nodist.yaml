@@ -1,0 +1,11 @@
+key: nodist/nodist
+publisher: nodist
+name: Nodist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nodist/Nodist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nodist/Nodist
+identifiers:
+- winget: Nodist.Nodist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nodist/Nodist
+aliases: []

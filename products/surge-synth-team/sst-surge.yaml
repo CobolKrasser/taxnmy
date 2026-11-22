@@ -1,0 +1,11 @@
+key: surge-synth-team/sst-surge
+publisher: surge-synth-team
+name: SST Surge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SurgeSynth/Surge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SurgeSynth/Surge
+identifiers:
+- winget: SurgeSynth.Surge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SurgeSynth/Surge
+aliases: []

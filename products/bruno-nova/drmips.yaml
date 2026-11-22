@@ -1,0 +1,11 @@
+key: bruno-nova/drmips
+publisher: bruno-nova
+name: DrMIPS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunoNova/DrMIPS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunoNova/DrMIPS
+identifiers:
+- winget: BrunoNova.DrMIPS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunoNova/DrMIPS
+aliases: []

@@ -1,0 +1,12 @@
+key: logitech/setpoint
+publisher: logitech
+name: Logitech SetPoint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/SetPoint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/SetPoint
+identifiers:
+- winget: Logitech.SetPoint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/SetPoint
+aliases:
+- logitech/logitech-setpoint

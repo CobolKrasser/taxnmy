@@ -1,0 +1,11 @@
+key: the-jamovi-project/jamovi-desktop
+publisher: the-jamovi-project
+name: Jamovi Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Current
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Current
+identifiers:
+- winget: Jamovi.Desktop.Current
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jamovi/Desktop/Current
+aliases: []

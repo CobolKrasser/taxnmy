@@ -1,0 +1,11 @@
+key: walkingwifi/local-mcp-tunnel
+publisher: walkingwifi
+name: Local MCP Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WalkingWiFi/LocalMCPTunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WalkingWiFi/LocalMCPTunnel
+identifiers:
+- winget: WalkingWiFi.LocalMCPTunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WalkingWiFi/LocalMCPTunnel
+aliases: []

@@ -1,0 +1,11 @@
+key: evemon-development-team/evemon
+publisher: evemon-development-team
+name: EVEMon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EVEMonDevelopmentTeam/EVEMon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EVEMonDevelopmentTeam/EVEMon
+identifiers:
+- winget: EVEMonDevelopmentTeam.EVEMon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EVEMonDevelopmentTeam/EVEMon
+aliases: []

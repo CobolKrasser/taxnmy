@@ -1,0 +1,11 @@
+key: marlocarlo/omp-manager
+publisher: marlocarlo
+name: OMP Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/OmpManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/OmpManager
+identifiers:
+- winget: marlocarlo.OmpManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/marlocarlo/OmpManager
+aliases: []

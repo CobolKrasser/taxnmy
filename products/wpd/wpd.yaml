@@ -1,0 +1,11 @@
+key: wpd/wpd
+publisher: wpd
+name: WPD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WPD/WPD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WPD/WPD
+identifiers:
+- winget: WPD.WPD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WPD/WPD
+aliases: []

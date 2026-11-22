@@ -1,0 +1,11 @@
+key: google/osv-scanner
+publisher: google
+name: OSV Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/OSVScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/OSVScanner
+identifiers:
+- winget: Google.OSVScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/OSVScanner
+aliases: []

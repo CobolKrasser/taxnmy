@@ -1,0 +1,11 @@
+key: kingpindev/vice-sonar
+publisher: kingpindev
+name: VICE Sonar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingpindev/VICESonar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingpindev/VICESonar
+identifiers:
+- winget: Kingpindev.VICESonar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kingpindev/VICESonar
+aliases: []

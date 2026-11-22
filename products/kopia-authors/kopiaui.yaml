@@ -1,0 +1,11 @@
+key: kopia-authors/kopiaui
+publisher: kopia-authors
+name: KopiaUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopia/KopiaUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopia/KopiaUI
+identifiers:
+- winget: Kopia.KopiaUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kopia/KopiaUI
+aliases: []

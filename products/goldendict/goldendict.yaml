@@ -1,0 +1,11 @@
+key: goldendict/goldendict
+publisher: goldendict
+name: GoldenDict
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoldenDict/GoldenDict
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoldenDict/GoldenDict
+identifiers:
+- winget: GoldenDict.GoldenDict
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoldenDict/GoldenDict
+aliases: []

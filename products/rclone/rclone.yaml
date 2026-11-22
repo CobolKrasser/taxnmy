@@ -1,0 +1,11 @@
+key: rclone/rclone
+publisher: rclone
+name: Rclone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rclone/Rclone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rclone/Rclone
+identifiers:
+- winget: Rclone.Rclone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rclone/Rclone
+aliases: []

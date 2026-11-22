@@ -1,0 +1,11 @@
+key: donutware/fladder
+publisher: donutware
+name: Fladder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonutWare/Fladder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonutWare/Fladder
+identifiers:
+- winget: DonutWare.Fladder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonutWare/Fladder
+aliases: []

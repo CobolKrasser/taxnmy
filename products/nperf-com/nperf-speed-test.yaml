@@ -1,0 +1,11 @@
+key: nperf-com/nperf-speed-test
+publisher: nperf-com
+name: nPerf Speed Test
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nPerf/nPerf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nPerf/nPerf
+identifiers:
+- winget: nPerf.nPerf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nPerf/nPerf
+aliases: []

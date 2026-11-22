@@ -1,0 +1,11 @@
+key: cabin-interactive/hamrs-pro
+publisher: cabin-interactive
+name: HAMRS Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CabinInteractive/HAMRSPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CabinInteractive/HAMRSPro
+identifiers:
+- winget: CabinInteractive.HAMRSPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CabinInteractive/HAMRSPro
+aliases: []

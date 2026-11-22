@@ -1,0 +1,11 @@
+key: adguard/dns-proxy
+publisher: adguard
+name: DNS Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/dnsproxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/dnsproxy
+identifiers:
+- winget: AdGuard.dnsproxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/dnsproxy
+aliases: []

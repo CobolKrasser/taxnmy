@@ -1,0 +1,12 @@
+key: draytek/smart-vpn-client
+publisher: draytek
+name: DrayTek Smart VPN Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrayTek/SmartVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrayTek/SmartVPN
+identifiers:
+- winget: DrayTek.SmartVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DrayTek/SmartVPN
+aliases:
+- draytek/draytek-smart-vpn-client

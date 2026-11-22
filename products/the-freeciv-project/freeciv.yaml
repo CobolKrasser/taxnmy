@@ -1,0 +1,11 @@
+key: the-freeciv-project/freeciv
+publisher: the-freeciv-project
+name: Freeciv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCiv/FreeCiv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCiv/FreeCiv
+identifiers:
+- winget: FreeCiv.FreeCiv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeCiv/FreeCiv
+aliases: []

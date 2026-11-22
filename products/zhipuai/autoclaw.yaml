@@ -1,0 +1,11 @@
+key: zhipuai/autoclaw
+publisher: zhipuai
+name: AutoClaw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhipuAI/AutoClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhipuAI/AutoClaw
+identifiers:
+- winget: ZhipuAI.AutoClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhipuAI/AutoClaw
+aliases: []

@@ -1,0 +1,11 @@
+key: samsidparty/topnotify
+publisher: samsidparty
+name: TopNotify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/TopNotify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/TopNotify
+identifiers:
+- winget: SamsidParty.TopNotify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/TopNotify
+aliases: []

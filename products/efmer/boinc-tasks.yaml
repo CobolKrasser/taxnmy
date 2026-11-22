@@ -1,0 +1,11 @@
+key: efmer/boinc-tasks
+publisher: efmer
+name: Boinc Tasks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eFMer/BoincTasks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eFMer/BoincTasks
+identifiers:
+- winget: eFMer.BoincTasks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eFMer/BoincTasks
+aliases: []

@@ -1,0 +1,11 @@
+key: adamant-foundation/adamant-messenger
+publisher: adamant-foundation
+name: ADAMANT Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adamant/Messenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adamant/Messenger
+identifiers:
+- winget: Adamant.Messenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Adamant/Messenger
+aliases: []

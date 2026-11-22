@@ -1,0 +1,11 @@
+key: ispotify/ispotify
+publisher: ispotify
+name: iSpotify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISpotify/ISpotify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISpotify/ISpotify
+identifiers:
+- winget: ISpotify.ISpotify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ISpotify/ISpotify
+aliases: []

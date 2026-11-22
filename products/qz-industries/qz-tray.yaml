@@ -1,0 +1,11 @@
+key: qz-industries/qz-tray
+publisher: qz-industries
+name: QZ Tray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QZIndustries/QZTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QZIndustries/QZTray
+identifiers:
+- winget: QZIndustries.QZTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QZIndustries/QZTray
+aliases: []

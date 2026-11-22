@@ -1,0 +1,11 @@
+key: comfort-software-group/hot-alarm-clock
+publisher: comfort-software-group
+name: Hot Alarm Clock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/HotAlarmClock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/HotAlarmClock
+identifiers:
+- winget: ComfortSoftwareGroup.HotAlarmClock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/HotAlarmClock
+aliases: []

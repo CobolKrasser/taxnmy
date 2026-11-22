@@ -1,0 +1,11 @@
+key: xiaoyouchr/ghost-downloader
+publisher: xiaoyouchr
+name: Ghost Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoYouChR/GhostDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoYouChR/GhostDownloader
+identifiers:
+- winget: XiaoYouChR.GhostDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XiaoYouChR/GhostDownloader
+aliases: []

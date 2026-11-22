@@ -1,0 +1,12 @@
+key: vovsoft/health-break-reminder
+publisher: vovsoft
+name: Vovsoft Health Break Reminder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HealthBreakReminder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HealthBreakReminder
+identifiers:
+- winget: VovSoft.HealthBreakReminder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/HealthBreakReminder
+aliases:
+- vovsoft/vovsoft-health-break-reminder

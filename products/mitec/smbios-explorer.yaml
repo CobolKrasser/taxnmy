@@ -1,0 +1,12 @@
+key: mitec/smbios-explorer
+publisher: mitec
+name: MiTeC SMBIOS Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/SMBIOSExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/SMBIOSExplorer
+identifiers:
+- winget: MiTeC.SMBIOSExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/SMBIOSExplorer
+aliases:
+- mitec/mitec-smbios-explorer

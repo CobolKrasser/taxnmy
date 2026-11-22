@@ -1,0 +1,11 @@
+key: shaka-project/shaka-packager-mpd-generator
+publisher: shaka-project
+name: Shaka Packager MPD Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShakaProject/MpdGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShakaProject/MpdGenerator
+identifiers:
+- winget: ShakaProject.MpdGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShakaProject/MpdGenerator
+aliases: []

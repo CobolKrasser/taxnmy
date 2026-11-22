@@ -1,0 +1,11 @@
+key: falcosoft/vst-midi-system-synth-falcomod
+publisher: falcosoft
+name: VST MIDI System Synth (Falcomod)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Falcosoft/VSTMidiDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Falcosoft/VSTMidiDriver
+identifiers:
+- winget: Falcosoft.VSTMidiDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Falcosoft/VSTMidiDriver
+aliases: []

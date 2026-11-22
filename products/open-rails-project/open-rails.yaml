@@ -1,0 +1,11 @@
+key: open-rails-project/open-rails
+publisher: open-rails-project
+name: Open Rails
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRails/OpenRails
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRails/OpenRails
+identifiers:
+- winget: OpenRails.OpenRails
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenRails/OpenRails
+aliases: []

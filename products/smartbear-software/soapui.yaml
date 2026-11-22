@@ -1,0 +1,11 @@
+key: smartbear-software/soapui
+publisher: smartbear-software
+name: SoapUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/SoapUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/SoapUI
+identifiers:
+- winget: SmartBear.SoapUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartBear/SoapUI
+aliases: []

@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-file-recovery
+publisher: lsoft-technologies
+name: Active@ File Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveFileRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveFileRecovery
+identifiers:
+- winget: LSoftTechnologies.ActiveFileRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveFileRecovery
+aliases: []

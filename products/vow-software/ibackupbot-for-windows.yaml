@@ -1,0 +1,11 @@
+key: vow-software/ibackupbot-for-windows
+publisher: vow-software
+name: iBackupBot for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VOWSoft/iBackupBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VOWSoft/iBackupBot
+identifiers:
+- winget: VOWSoft.iBackupBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VOWSoft/iBackupBot
+aliases: []

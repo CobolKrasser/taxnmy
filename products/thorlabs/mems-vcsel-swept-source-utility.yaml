@@ -1,0 +1,11 @@
+key: thorlabs/mems-vcsel-swept-source-utility
+publisher: thorlabs
+name: MEMS VCSEL Swept Source Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MEMSVCSEL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MEMSVCSEL
+identifiers:
+- winget: Thorlabs.MEMSVCSEL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MEMSVCSEL
+aliases: []

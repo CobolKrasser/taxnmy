@@ -1,0 +1,12 @@
+key: bitvise/ssh-server
+publisher: bitvise
+name: Bitvise SSH Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitvise/SSH/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitvise/SSH/Server
+identifiers:
+- winget: Bitvise.SSH.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitvise/SSH/Server
+aliases:
+- bitvise/bitvise-ssh-server

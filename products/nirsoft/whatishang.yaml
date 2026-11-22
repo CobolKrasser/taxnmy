@@ -1,0 +1,11 @@
+key: nirsoft/whatishang
+publisher: nirsoft
+name: WhatIsHang
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WhatIsHang
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WhatIsHang
+identifiers:
+- winget: NirSoft.WhatIsHang
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/WhatIsHang
+aliases: []

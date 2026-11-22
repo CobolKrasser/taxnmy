@@ -1,0 +1,12 @@
+key: cloudstic/cli
+publisher: cloudstic
+name: Cloudstic CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudstic/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudstic/CLI
+identifiers:
+- winget: Cloudstic.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cloudstic/CLI
+aliases:
+- cloudstic/cloudstic-cli

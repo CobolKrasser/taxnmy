@@ -1,0 +1,11 @@
+key: naver-cloud/naver-works-drive
+publisher: naver-cloud
+name: NAVER WORKS Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVERCloudCorp/NAVERWORKSDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVERCloudCorp/NAVERWORKSDrive
+identifiers:
+- winget: NAVERCloudCorp.NAVERWORKSDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVERCloudCorp/NAVERWORKSDrive
+aliases: []

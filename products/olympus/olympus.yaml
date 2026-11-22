@@ -1,0 +1,11 @@
+key: olympus/olympus
+publisher: olympus
+name: Olympus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Olympus/Olympus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Olympus/Olympus
+identifiers:
+- winget: Olympus.Olympus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Olympus/Olympus
+aliases: []

@@ -1,0 +1,12 @@
+key: pnpm/preview
+publisher: pnpm
+name: pnpm Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pnpm/pnpm/preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pnpm/pnpm/preview
+identifiers:
+- winget: pnpm.pnpm.preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pnpm/pnpm/preview
+aliases:
+- pnpm/pnpm-preview

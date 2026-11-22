@@ -1,0 +1,11 @@
+key: autoit-team/autoit
+publisher: autoit-team
+name: AutoIt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoIt/AutoIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoIt/AutoIt
+identifiers:
+- winget: AutoIt.AutoIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoIt/AutoIt
+aliases: []

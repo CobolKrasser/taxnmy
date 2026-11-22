@@ -1,0 +1,11 @@
+key: citro-labs/ego-lite
+publisher: citro-labs
+name: ego (lite)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CitroLabs/EgoLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CitroLabs/EgoLite
+identifiers:
+- winget: CitroLabs.EgoLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CitroLabs/EgoLite
+aliases: []

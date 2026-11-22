@@ -1,0 +1,11 @@
+key: lightzone-project/lightzone
+publisher: lightzone-project
+name: LightZone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LightZoneProject/LightZone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LightZoneProject/LightZone
+identifiers:
+- winget: LightZoneProject.LightZone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LightZoneProject/LightZone
+aliases: []

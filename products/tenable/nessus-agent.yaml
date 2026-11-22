@@ -1,0 +1,11 @@
+key: tenable/nessus-agent
+publisher: tenable
+name: Nessus Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/NessusAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/NessusAgent
+identifiers:
+- winget: Tenable.NessusAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/NessusAgent
+aliases: []

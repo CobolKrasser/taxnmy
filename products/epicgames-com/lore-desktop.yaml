@@ -1,0 +1,11 @@
+key: epicgames-com/lore-desktop
+publisher: epicgames-com
+name: Lore Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/LoreDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/LoreDesktop
+identifiers:
+- winget: EpicGames.LoreDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/LoreDesktop
+aliases: []

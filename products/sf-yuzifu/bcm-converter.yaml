@@ -1,0 +1,11 @@
+key: sf-yuzifu/bcm-converter
+publisher: sf-yuzifu
+name: bcm converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sf-yuzifu/bcm_convertor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sf-yuzifu/bcm_convertor
+identifiers:
+- winget: sf-yuzifu.bcm_convertor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sf-yuzifu/bcm_convertor
+aliases: []

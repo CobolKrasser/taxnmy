@@ -1,0 +1,11 @@
+key: synchestra/specscore
+publisher: synchestra
+name: SpecScore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synchestra/SpecScore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synchestra/SpecScore
+identifiers:
+- winget: Synchestra.SpecScore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synchestra/SpecScore
+aliases: []

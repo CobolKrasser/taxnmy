@@ -1,0 +1,11 @@
+key: desowin/usbpcap
+publisher: desowin
+name: USBPcap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/desowin/USBPcap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/desowin/USBPcap
+identifiers:
+- winget: desowin.USBPcap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/desowin/USBPcap
+aliases: []

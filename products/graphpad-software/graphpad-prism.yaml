@@ -1,0 +1,11 @@
+key: graphpad-software/graphpad-prism
+publisher: graphpad-software
+name: GraphPad Prism
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GraphPad/Prism
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GraphPad/Prism
+identifiers:
+- winget: GraphPad.Prism
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GraphPad/Prism
+aliases: []

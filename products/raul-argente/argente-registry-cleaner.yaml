@@ -1,0 +1,11 @@
+key: raul-argente/argente-registry-cleaner
+publisher: raul-argente
+name: Argente Registry Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/RegistryCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/RegistryCleaner
+identifiers:
+- winget: Argente.RegistryCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/RegistryCleaner
+aliases: []

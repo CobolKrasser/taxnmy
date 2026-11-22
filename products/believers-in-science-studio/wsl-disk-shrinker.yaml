@@ -1,0 +1,11 @@
+key: believers-in-science-studio/wsl-disk-shrinker
+publisher: believers-in-science-studio
+name: WSL Disk Shrinker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiSS/WSLDiskShrinker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiSS/WSLDiskShrinker
+identifiers:
+- winget: BiSS.WSLDiskShrinker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiSS/WSLDiskShrinker
+aliases: []

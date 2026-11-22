@@ -1,0 +1,11 @@
+key: giray-havur/agent-history-tether
+publisher: giray-havur
+name: agent-history-tether
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/havurgiray/aht
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/havurgiray/aht
+identifiers:
+- winget: havurgiray.aht
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/havurgiray/aht
+aliases: []

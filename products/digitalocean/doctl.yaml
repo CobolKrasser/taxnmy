@@ -1,0 +1,11 @@
+key: digitalocean/doctl
+publisher: digitalocean
+name: doctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalOcean/Doctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalOcean/Doctl
+identifiers:
+- winget: DigitalOcean.Doctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalOcean/Doctl
+aliases: []

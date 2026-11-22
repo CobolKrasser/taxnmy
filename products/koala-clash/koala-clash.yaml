@@ -1,0 +1,11 @@
+key: koala-clash/koala-clash
+publisher: koala-clash
+name: Koala Clash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coolcoala/KoalaClash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coolcoala/KoalaClash
+identifiers:
+- winget: coolcoala.KoalaClash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/coolcoala/KoalaClash
+aliases: []

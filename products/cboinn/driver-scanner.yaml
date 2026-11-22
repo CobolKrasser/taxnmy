@@ -1,0 +1,12 @@
+key: cboinn/driver-scanner
+publisher: cboinn
+name: Cboinn Driver Scanner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cboinn/DriverScanner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cboinn/DriverScanner
+identifiers:
+- winget: Cboinn.DriverScanner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cboinn/DriverScanner
+aliases:
+- cboinn/cboinn-driver-scanner

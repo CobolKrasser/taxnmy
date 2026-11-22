@@ -1,0 +1,11 @@
+key: ozone10/dark7zip
+publisher: ozone10
+name: Dark7zip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozone10/7zip/Dark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozone10/7zip/Dark
+identifiers:
+- winget: ozone10.7zip.Dark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozone10/7zip/Dark
+aliases: []

@@ -1,0 +1,11 @@
+key: craft-edge/easy-cut-studio
+publisher: craft-edge
+name: Easy Cut Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CraftEdge/EasyCutStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CraftEdge/EasyCutStudio
+identifiers:
+- winget: CraftEdge.EasyCutStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CraftEdge/EasyCutStudio
+aliases: []

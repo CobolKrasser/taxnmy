@@ -1,0 +1,11 @@
+key: esb-consultancy/esbcalc
+publisher: esb-consultancy
+name: ESBCalc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBCalc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBCalc
+identifiers:
+- winget: ESBConsultancy.ESBCalc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ESBConsultancy/ESBCalc
+aliases: []

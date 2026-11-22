@@ -1,0 +1,11 @@
+key: jrsoftware-org/inno-setup-6
+publisher: jrsoftware-org
+name: Inno Setup 6
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JRSoftware/InnoSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JRSoftware/InnoSetup
+identifiers:
+- winget: JRSoftware.InnoSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JRSoftware/InnoSetup
+aliases: []

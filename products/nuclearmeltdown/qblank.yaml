@@ -1,0 +1,11 @@
+key: nuclearmeltdown/qblank
+publisher: nuclearmeltdown
+name: qBlank
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuclearMeltdown/qBlank
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuclearMeltdown/qBlank
+identifiers:
+- winget: NuclearMeltdown.qBlank
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuclearMeltdown/qBlank
+aliases: []

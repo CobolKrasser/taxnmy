@@ -1,0 +1,11 @@
+key: michael-w-olesen/coxswain
+publisher: michael-w-olesen
+name: Coxswain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mwo-dk/Coxswain/Terminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mwo-dk/Coxswain/Terminal
+identifiers:
+- winget: mwo-dk.Coxswain.Terminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mwo-dk/Coxswain/Terminal
+aliases: []

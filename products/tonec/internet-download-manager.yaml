@@ -1,0 +1,11 @@
+key: tonec/internet-download-manager
+publisher: tonec
+name: Internet Download Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tonec/InternetDownloadManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tonec/InternetDownloadManager
+identifiers:
+- winget: Tonec.InternetDownloadManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tonec/InternetDownloadManager
+aliases: []

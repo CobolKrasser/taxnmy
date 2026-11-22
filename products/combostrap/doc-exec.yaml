@@ -1,0 +1,11 @@
+key: combostrap/doc-exec
+publisher: combostrap
+name: doc-exec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/combostrap/doc-exec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/combostrap/doc-exec
+identifiers:
+- winget: combostrap.doc-exec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/combostrap/doc-exec
+aliases: []

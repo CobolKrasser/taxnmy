@@ -1,0 +1,11 @@
+key: tessapp/tess
+publisher: tessapp
+name: Tess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squitch/Tess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squitch/Tess
+identifiers:
+- winget: Squitch.Tess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squitch/Tess
+aliases: []

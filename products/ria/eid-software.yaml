@@ -1,0 +1,11 @@
+key: ria/eid-software
+publisher: ria
+name: eID software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RIA/eIDsoftware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RIA/eIDsoftware
+identifiers:
+- winget: RIA.eIDsoftware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RIA/eIDsoftware
+aliases: []

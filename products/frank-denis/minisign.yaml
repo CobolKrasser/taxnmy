@@ -1,0 +1,11 @@
+key: frank-denis/minisign
+publisher: frank-denis
+name: Minisign
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jedisct1/minisign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jedisct1/minisign
+identifiers:
+- winget: jedisct1.minisign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jedisct1/minisign
+aliases: []

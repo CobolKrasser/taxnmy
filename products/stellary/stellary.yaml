@@ -1,0 +1,11 @@
+key: stellary/stellary
+publisher: stellary
+name: Stellary
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellary/Stellary
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellary/Stellary
+identifiers:
+- winget: Stellary.Stellary
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellary/Stellary
+aliases: []

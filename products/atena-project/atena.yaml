@@ -1,0 +1,11 @@
+key: atena-project/atena
+publisher: atena-project
+name: Atena
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtenaProject/Atena
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtenaProject/Atena
+identifiers:
+- winget: AtenaProject.Atena
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtenaProject/Atena
+aliases: []

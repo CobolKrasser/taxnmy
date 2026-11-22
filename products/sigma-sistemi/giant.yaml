@@ -1,0 +1,11 @@
+key: sigma-sistemi/giant
+publisher: sigma-sistemi
+name: Giant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaSistemi/Giant2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaSistemi/Giant2
+identifiers:
+- winget: SigmaSistemi.Giant2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SigmaSistemi/Giant2
+aliases: []

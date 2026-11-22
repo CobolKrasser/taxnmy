@@ -1,0 +1,11 @@
+key: morpheus/bazarr
+publisher: morpheus
+name: Bazarr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morpheus/Bazarr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morpheus/Bazarr
+identifiers:
+- winget: Morpheus.Bazarr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morpheus/Bazarr
+aliases: []

@@ -1,0 +1,12 @@
+key: vovsoft/watermark-video
+publisher: vovsoft
+name: Vovsoft Watermark Video
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WatermarkVideo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WatermarkVideo
+identifiers:
+- winget: VovSoft.WatermarkVideo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WatermarkVideo
+aliases:
+- vovsoft/vovsoft-watermark-video

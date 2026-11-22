@@ -1,0 +1,11 @@
+key: seventh-string-software/transcribe
+publisher: seventh-string-software
+name: Transcribe!
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeventhString/Transcribe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeventhString/Transcribe
+identifiers:
+- winget: SeventhString.Transcribe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SeventhString/Transcribe
+aliases: []

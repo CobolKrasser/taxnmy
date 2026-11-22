@@ -1,0 +1,11 @@
+key: platten/playlist-forge
+publisher: platten
+name: Playlist Forge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Platten/Playlistforge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Platten/Playlistforge
+identifiers:
+- winget: Platten.Playlistforge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Platten/Playlistforge
+aliases: []

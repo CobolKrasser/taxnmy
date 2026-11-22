@@ -1,0 +1,13 @@
+key: icsharpcode-team/ilspy
+publisher: icsharpcode-team
+name: ILSpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/icsharpcode/ILSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/icsharpcode/ILSpy
+identifiers:
+- winget: icsharpcode.ILSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/icsharpcode/ILSpy
+- winget: icsharpcode.ILSpy.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/icsharpcode/ILSpy/Preview
+aliases: []

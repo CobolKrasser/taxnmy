@@ -1,0 +1,11 @@
+key: kontsedal/monghoul
+publisher: kontsedal
+name: Monghoul
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monghoul/Monghoul
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monghoul/Monghoul
+identifiers:
+- winget: Monghoul.Monghoul
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monghoul/Monghoul
+aliases: []

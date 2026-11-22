@@ -1,0 +1,11 @@
+key: comfort-software-group/comfort-keys-pro
+publisher: comfort-software-group
+name: Comfort Keys Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/ComfortKeysPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/ComfortKeysPro
+identifiers:
+- winget: ComfortSoftwareGroup.ComfortKeysPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComfortSoftwareGroup/ComfortKeysPro
+aliases: []

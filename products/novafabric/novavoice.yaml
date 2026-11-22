@@ -1,0 +1,11 @@
+key: novafabric/novavoice
+publisher: novafabric
+name: NovaVoice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovaFabric/NovaVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovaFabric/NovaVoice
+identifiers:
+- winget: NovaFabric.NovaVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovaFabric/NovaVoice
+aliases: []

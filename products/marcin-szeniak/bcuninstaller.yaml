@@ -1,0 +1,11 @@
+key: marcin-szeniak/bcuninstaller
+publisher: marcin-szeniak
+name: BCUninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Klocman/BulkCrapUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Klocman/BulkCrapUninstaller
+identifiers:
+- winget: Klocman.BulkCrapUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Klocman/BulkCrapUninstaller
+aliases: []

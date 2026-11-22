@@ -1,0 +1,11 @@
+key: logic647/memorysql
+publisher: logic647
+name: MemorySQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logic647/MemorySQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logic647/MemorySQL
+identifiers:
+- winget: Logic647.MemorySQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logic647/MemorySQL
+aliases: []

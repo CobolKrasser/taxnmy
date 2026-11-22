@@ -1,0 +1,13 @@
+key: zwsoft/zwcad-mfg
+publisher: zwsoft
+name: ZWCAD MFG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCAD/Mechanical/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCAD/Mechanical/2025
+identifiers:
+- winget: ZWSOFT.ZWCAD.Mechanical.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCAD/Mechanical/2025
+- winget: ZWSOFT.ZWCAD.Mechanical.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCAD/Mechanical/2026
+aliases: []

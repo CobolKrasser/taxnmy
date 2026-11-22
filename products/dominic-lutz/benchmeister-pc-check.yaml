@@ -1,0 +1,11 @@
+key: dominic-lutz/benchmeister-pc-check
+publisher: dominic-lutz
+name: BenchMeister PC-Check
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominicLutz/BenchMeisterPCCheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominicLutz/BenchMeisterPCCheck
+identifiers:
+- winget: DominicLutz.BenchMeisterPCCheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominicLutz/BenchMeisterPCCheck
+aliases: []

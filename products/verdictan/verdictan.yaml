@@ -1,0 +1,11 @@
+key: verdictan/verdictan
+publisher: verdictan
+name: Verdictan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verdictan/Verdictan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verdictan/Verdictan
+identifiers:
+- winget: Verdictan.Verdictan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verdictan/Verdictan
+aliases: []

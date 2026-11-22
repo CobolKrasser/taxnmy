@@ -1,0 +1,11 @@
+key: david-peter/bat
+publisher: david-peter
+name: bat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/bat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/bat
+identifiers:
+- winget: sharkdp.bat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sharkdp/bat
+aliases: []

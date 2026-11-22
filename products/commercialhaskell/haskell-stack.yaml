@@ -1,0 +1,11 @@
+key: commercialhaskell/haskell-stack
+publisher: commercialhaskell
+name: Haskell Stack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/commercialhaskell/stack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/commercialhaskell/stack
+identifiers:
+- winget: commercialhaskell.stack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/commercialhaskell/stack
+aliases: []

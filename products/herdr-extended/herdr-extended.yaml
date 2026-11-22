@@ -1,0 +1,11 @@
+key: herdr-extended/herdr-extended
+publisher: herdr-extended
+name: Herdr Extended
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdosys/herdr-win
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdosys/herdr-win
+identifiers:
+- winget: hdosys.herdr-win
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdosys/herdr-win
+aliases: []

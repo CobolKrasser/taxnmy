@@ -1,0 +1,11 @@
+key: riley-testut/altserver
+publisher: riley-testut
+name: AltServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RileyTestut/AltServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RileyTestut/AltServer
+identifiers:
+- winget: RileyTestut.AltServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RileyTestut/AltServer
+aliases: []

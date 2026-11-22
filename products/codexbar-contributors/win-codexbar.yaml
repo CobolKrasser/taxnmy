@@ -1,0 +1,11 @@
+key: codexbar-contributors/win-codexbar
+publisher: codexbar-contributors
+name: Win-CodexBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Finesssee/Win-CodexBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Finesssee/Win-CodexBar
+identifiers:
+- winget: Finesssee.Win-CodexBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Finesssee/Win-CodexBar
+aliases: []

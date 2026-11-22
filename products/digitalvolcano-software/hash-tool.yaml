@@ -1,0 +1,11 @@
+key: digitalvolcano-software/hash-tool
+publisher: digitalvolcano-software
+name: Hash Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/HashTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/HashTool
+identifiers:
+- winget: DigitalVolcanoSoftware.HashTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DigitalVolcanoSoftware/HashTool
+aliases: []

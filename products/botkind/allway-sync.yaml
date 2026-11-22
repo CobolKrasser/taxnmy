@@ -1,0 +1,11 @@
+key: botkind/allway-sync
+publisher: botkind
+name: Allway Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Botkind/AllwaySync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Botkind/AllwaySync
+identifiers:
+- winget: Botkind.AllwaySync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Botkind/AllwaySync
+aliases: []

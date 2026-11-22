@@ -1,0 +1,11 @@
+key: black-cat-systems/atomic-pc
+publisher: black-cat-systems
+name: Atomic PC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackCatSystems/Atomic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackCatSystems/Atomic
+identifiers:
+- winget: BlackCatSystems.Atomic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlackCatSystems/Atomic
+aliases: []

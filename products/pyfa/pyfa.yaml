@@ -1,0 +1,11 @@
+key: pyfa/pyfa
+publisher: pyfa
+name: pyfa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyfa/pyfa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyfa/pyfa
+identifiers:
+- winget: pyfa.pyfa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pyfa/pyfa
+aliases: []

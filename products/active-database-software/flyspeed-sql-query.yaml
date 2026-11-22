@@ -1,0 +1,11 @@
+key: active-database-software/flyspeed-sql-query
+publisher: active-database-software
+name: FlySpeed SQL Query
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDatabaseSoftware/FlySpeedSQLQuery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDatabaseSoftware/FlySpeedSQLQuery
+identifiers:
+- winget: ActiveDatabaseSoftware.FlySpeedSQLQuery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ActiveDatabaseSoftware/FlySpeedSQLQuery
+aliases: []

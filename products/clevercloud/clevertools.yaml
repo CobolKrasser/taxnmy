@@ -1,0 +1,11 @@
+key: clevercloud/clevertools
+publisher: clevercloud
+name: CleverTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverCloud/CleverTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverCloud/CleverTools
+identifiers:
+- winget: CleverCloud.CleverTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverCloud/CleverTools
+aliases: []

@@ -1,0 +1,11 @@
+key: kcl-lang/kcl
+publisher: kcl-lang
+name: kcl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kcl-lang/kcl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kcl-lang/kcl
+identifiers:
+- winget: kcl-lang.kcl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kcl-lang/kcl
+aliases: []

@@ -1,0 +1,11 @@
+key: epic-games/epic-online-services
+publisher: epic-games
+name: Epic Online Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicOnlineServices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicOnlineServices
+identifiers:
+- winget: EpicGames.EpicOnlineServices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicOnlineServices
+aliases: []

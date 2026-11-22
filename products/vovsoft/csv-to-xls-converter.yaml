@@ -1,0 +1,14 @@
+key: vovsoft/csv-to-xls-converter
+publisher: vovsoft
+name: Vovsoft CSV to XLS Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoXLSConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoXLSConverter
+identifiers:
+- winget: VovSoft.CSVtoXLSConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CSVtoXLSConverter
+- winget: VovSoft.XLStoCSVConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/XLStoCSVConverter
+aliases:
+- vovsoft/vovsoft-csv-to-xls-converter

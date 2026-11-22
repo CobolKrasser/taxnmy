@@ -1,0 +1,11 @@
+key: gfgroyal/gfglock
+publisher: gfgroyal
+name: gfgLock
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gfgRoyal/gfgLock
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gfgRoyal/gfgLock
+identifiers:
+- winget: gfgRoyal.gfgLock
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gfgRoyal/gfgLock
+aliases: []

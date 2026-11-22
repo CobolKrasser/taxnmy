@@ -1,0 +1,11 @@
+key: rubymetric/chsrc
+publisher: rubymetric
+name: chsrc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyMetric/chsrc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyMetric/chsrc
+identifiers:
+- winget: RubyMetric.chsrc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyMetric/chsrc
+aliases: []

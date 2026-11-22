@@ -1,0 +1,11 @@
+key: archis/arcdlp
+publisher: archis
+name: ArcDLP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/archisvaze/ArcDLP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/archisvaze/ArcDLP
+identifiers:
+- winget: archisvaze.ArcDLP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/archisvaze/ArcDLP
+aliases: []

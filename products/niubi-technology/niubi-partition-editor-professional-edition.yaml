@@ -1,0 +1,11 @@
+key: niubi-technology/niubi-partition-editor-professional-edition
+publisher: niubi-technology
+name: NIUBI Partition Editor Professional Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Professional
+identifiers:
+- winget: NIUBI.PartitionEditor.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Professional
+aliases: []

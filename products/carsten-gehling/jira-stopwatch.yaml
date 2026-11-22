@@ -1,0 +1,11 @@
+key: carsten-gehling/jira-stopwatch
+publisher: carsten-gehling
+name: Jira StopWatch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CarstenGehling/JiraStopWatch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CarstenGehling/JiraStopWatch
+identifiers:
+- winget: CarstenGehling.JiraStopWatch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CarstenGehling/JiraStopWatch
+aliases: []

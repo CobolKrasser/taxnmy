@@ -1,0 +1,11 @@
+key: cookieboty/nomi
+publisher: cookieboty
+name: Nomi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cookieboty/Nomi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cookieboty/Nomi
+identifiers:
+- winget: Cookieboty.Nomi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cookieboty/Nomi
+aliases: []

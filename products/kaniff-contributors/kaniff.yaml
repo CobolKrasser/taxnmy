@@ -1,0 +1,11 @@
+key: kaniff-contributors/kaniff
+publisher: kaniff-contributors
+name: Kaniff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaniff/Kaniff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaniff/Kaniff
+identifiers:
+- winget: Kaniff.Kaniff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaniff/Kaniff
+aliases: []

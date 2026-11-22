@@ -1,0 +1,11 @@
+key: pierre-e-gougelet/xnconvert
+publisher: pierre-e-gougelet
+name: XnConvert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnConvert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnConvert
+identifiers:
+- winget: XnSoft.XnConvert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XnSoft/XnConvert
+aliases: []

@@ -1,0 +1,12 @@
+key: innovaphone/myapps
+publisher: innovaphone
+name: innovaphone myApps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Innovaphone/myApps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Innovaphone/myApps
+identifiers:
+- winget: Innovaphone.myApps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Innovaphone/myApps
+aliases:
+- innovaphone/innovaphone-myapps

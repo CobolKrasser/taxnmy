@@ -1,0 +1,11 @@
+key: teddy-z/driver-store-explorer
+publisher: teddy-z
+name: Driver Store Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lostindark/DriverStoreExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lostindark/DriverStoreExplorer
+identifiers:
+- winget: lostindark.DriverStoreExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lostindark/DriverStoreExplorer
+aliases: []

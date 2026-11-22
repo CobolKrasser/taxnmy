@@ -1,0 +1,11 @@
+key: talkdesk/talkdesk
+publisher: talkdesk
+name: Talkdesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Talkdesk/Talkdesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Talkdesk/Talkdesk
+identifiers:
+- winget: Talkdesk.Talkdesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Talkdesk/Talkdesk
+aliases: []

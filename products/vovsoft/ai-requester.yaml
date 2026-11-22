@@ -1,0 +1,12 @@
+key: vovsoft/ai-requester
+publisher: vovsoft
+name: Vovsoft AI Requester
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AIRequester
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AIRequester
+identifiers:
+- winget: VovSoft.AIRequester
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AIRequester
+aliases:
+- vovsoft/vovsoft-ai-requester

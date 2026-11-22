@@ -1,0 +1,11 @@
+key: medixant/radiant-dicom-viewer
+publisher: medixant
+name: RadiAnt DICOM Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medixant/RadiAntDICOMViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medixant/RadiAntDICOMViewer
+identifiers:
+- winget: Medixant.RadiAntDICOMViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medixant/RadiAntDICOMViewer
+aliases: []

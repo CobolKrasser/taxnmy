@@ -1,0 +1,11 @@
+key: samygo/signal-checker-for-dvb-t
+publisher: samygo
+name: Signal Checker for DVB-T
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/SignalChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/SignalChecker
+identifiers:
+- winget: SamyGO.SignalChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamyGO/SignalChecker
+aliases: []

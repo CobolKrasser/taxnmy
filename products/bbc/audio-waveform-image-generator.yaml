@@ -1,0 +1,11 @@
+key: bbc/audio-waveform-image-generator
+publisher: bbc
+name: Audio Waveform Image Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BBC/audiowaveform
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BBC/audiowaveform
+identifiers:
+- winget: BBC.audiowaveform
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BBC/audiowaveform
+aliases: []

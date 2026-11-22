@@ -1,0 +1,11 @@
+key: buffer124/netscan
+publisher: buffer124
+name: netscan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/NetScanPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/NetScanPro
+identifiers:
+- winget: Buffer124.NetScanPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buffer124/NetScanPro
+aliases: []

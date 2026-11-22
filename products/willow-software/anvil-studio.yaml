@@ -1,0 +1,11 @@
+key: willow-software/anvil-studio
+publisher: willow-software
+name: Anvil Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WillowSoftware/AnvilStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WillowSoftware/AnvilStudio
+identifiers:
+- winget: WillowSoftware.AnvilStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WillowSoftware/AnvilStudio
+aliases: []

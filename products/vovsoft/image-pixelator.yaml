@@ -1,0 +1,12 @@
+key: vovsoft/image-pixelator
+publisher: vovsoft
+name: Vovsoft Image Pixelator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImagePixelator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImagePixelator
+identifiers:
+- winget: VovSoft.ImagePixelator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ImagePixelator
+aliases:
+- vovsoft/vovsoft-image-pixelator

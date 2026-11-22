@@ -1,0 +1,11 @@
+key: oire-software/sic
+publisher: oire-software
+name: SIC!
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oire/Sic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oire/Sic
+identifiers:
+- winget: Oire.Sic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oire/Sic
+aliases: []

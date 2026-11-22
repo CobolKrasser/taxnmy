@@ -1,0 +1,11 @@
+key: even-balance/punkbuster-service-installer
+publisher: even-balance
+name: PunkBuster Service Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvenBalance/PunkBusterServiceInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvenBalance/PunkBusterServiceInstaller
+identifiers:
+- winget: EvenBalance.PunkBusterServiceInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvenBalance/PunkBusterServiceInstaller
+aliases: []

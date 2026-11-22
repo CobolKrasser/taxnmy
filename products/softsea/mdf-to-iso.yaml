@@ -1,0 +1,11 @@
+key: softsea/mdf-to-iso
+publisher: softsea
+name: MDF to ISO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MDFtoISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MDFtoISO
+identifiers:
+- winget: SoftSea.MDFtoISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MDFtoISO
+aliases: []

@@ -1,0 +1,12 @@
+key: high-logic/scanahand
+publisher: high-logic
+name: High-Logic Scanahand
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/High-Logic/Scanahand
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/High-Logic/Scanahand
+identifiers:
+- winget: High-Logic.Scanahand
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/High-Logic/Scanahand
+aliases:
+- high-logic/high-logic-scanahand

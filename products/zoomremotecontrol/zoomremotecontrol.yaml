@@ -1,0 +1,11 @@
+key: zoomremotecontrol/zoomremotecontrol
+publisher: zoomremotecontrol
+name: ZoomRemoteControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomRemoteControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomRemoteControl
+identifiers:
+- winget: Zoom.ZoomRemoteControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomRemoteControl
+aliases: []

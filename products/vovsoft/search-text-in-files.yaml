@@ -1,0 +1,12 @@
+key: vovsoft/search-text-in-files
+publisher: vovsoft
+name: Vovsoft Search Text In Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SearchTextInFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SearchTextInFiles
+identifiers:
+- winget: VovSoft.SearchTextInFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SearchTextInFiles
+aliases:
+- vovsoft/vovsoft-search-text-in-files

@@ -1,0 +1,13 @@
+key: sosomlab/nexa-memkeeper
+publisher: sosomlab
+name: Nexa MemKeeper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaMemKeeper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaMemKeeper
+identifiers:
+- winget: SosomLab.NexaMemKeeper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaMemKeeper
+- winget: SosomLab.NexaMemKeeper.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaMemKeeper/Portable
+aliases: []

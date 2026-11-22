@@ -1,0 +1,11 @@
+key: cryptotech/cryptocard-cloudsigner
+publisher: cryptotech
+name: CryptoCard CloudSigner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTech/CloudSigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTech/CloudSigner
+identifiers:
+- winget: CryptoTech.CloudSigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTech/CloudSigner
+aliases: []

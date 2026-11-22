@@ -1,0 +1,11 @@
+key: boundaryml/baml
+publisher: boundaryml
+name: BAML
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoundaryML/BAML
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoundaryML/BAML
+identifiers:
+- winget: BoundaryML.BAML
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoundaryML/BAML
+aliases: []

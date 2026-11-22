@@ -1,0 +1,12 @@
+key: adinstruments/dmt-normalization
+publisher: adinstruments
+name: ADInstruments DMT Normalization
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/DMTNormalization
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/DMTNormalization
+identifiers:
+- winget: ADInstruments.LabChart.Module.DMTNormalization
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/Module/DMTNormalization
+aliases:
+- adinstruments/adinstruments-dmt-normalization

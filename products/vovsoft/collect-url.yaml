@@ -1,0 +1,12 @@
+key: vovsoft/collect-url
+publisher: vovsoft
+name: Vovsoft Collect URL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CollectURL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CollectURL
+identifiers:
+- winget: VovSoft.CollectURL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CollectURL
+aliases:
+- vovsoft/vovsoft-collect-url

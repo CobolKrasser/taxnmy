@@ -1,0 +1,11 @@
+key: adhoc-synectic-systems/deposito-digital-d2
+publisher: adhoc-synectic-systems
+name: Depósito Digital (D2)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CORPME/D2/2025
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CORPME/D2/2025
+identifiers:
+- winget: CORPME.D2.2025
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CORPME/D2/2025
+aliases: []

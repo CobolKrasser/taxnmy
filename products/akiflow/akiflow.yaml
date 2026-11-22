@@ -1,0 +1,11 @@
+key: akiflow/akiflow
+publisher: akiflow
+name: Akiflow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akiflow/Akiflow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akiflow/Akiflow
+identifiers:
+- winget: Akiflow.Akiflow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Akiflow/Akiflow
+aliases: []

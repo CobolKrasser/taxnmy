@@ -1,0 +1,11 @@
+key: xcomart/rudbman
+publisher: xcomart
+name: rudbman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Rudbman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Rudbman
+identifiers:
+- winget: Xcomart.Rudbman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xcomart/Rudbman
+aliases: []

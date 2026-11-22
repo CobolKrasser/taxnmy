@@ -1,0 +1,11 @@
+key: redisant/garnet-assistant
+publisher: redisant
+name: Garnet Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/GarnetAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/GarnetAssistant
+identifiers:
+- winget: Redisant.GarnetAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/GarnetAssistant
+aliases: []

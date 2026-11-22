@@ -1,0 +1,11 @@
+key: evercraft-labs/maestri
+publisher: evercraft-labs
+name: Maestri
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvercraftLabs/Maestri
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvercraftLabs/Maestri
+identifiers:
+- winget: EvercraftLabs.Maestri
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EvercraftLabs/Maestri
+aliases: []

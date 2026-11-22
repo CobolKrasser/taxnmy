@@ -1,0 +1,11 @@
+key: unipro/ugene
+publisher: unipro
+name: UGENE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unipro/UGENE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unipro/UGENE
+identifiers:
+- winget: Unipro.UGENE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unipro/UGENE
+aliases: []

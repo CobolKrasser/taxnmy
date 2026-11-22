@@ -1,0 +1,11 @@
+key: mit/xfoil
+publisher: mit
+name: XFOIL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/XFOIL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/XFOIL
+identifiers:
+- winget: MIT.XFOIL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/XFOIL
+aliases: []

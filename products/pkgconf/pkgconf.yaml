@@ -1,0 +1,11 @@
+key: pkgconf/pkgconf
+publisher: pkgconf
+name: pkgconf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pkgconf/pkgconf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pkgconf/pkgconf
+identifiers:
+- winget: pkgconf.pkgconf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pkgconf/pkgconf
+aliases: []

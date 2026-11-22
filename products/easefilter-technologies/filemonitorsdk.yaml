@@ -1,0 +1,11 @@
+key: easefilter-technologies/filemonitorsdk
+publisher: easefilter-technologies
+name: FileMonitorSDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseFilter/FileMonitorSDK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseFilter/FileMonitorSDK
+identifiers:
+- winget: EaseFilter.FileMonitorSDK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseFilter/FileMonitorSDK
+aliases: []

@@ -1,0 +1,11 @@
+key: apps2samsung/apps2samsung
+publisher: apps2samsung
+name: Apps2Samsung
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apps2Samsung/Apps2Samsung
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apps2Samsung/Apps2Samsung
+identifiers:
+- winget: Apps2Samsung.Apps2Samsung
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apps2Samsung/Apps2Samsung
+aliases: []

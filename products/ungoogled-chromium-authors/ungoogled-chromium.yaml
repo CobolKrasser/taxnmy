@@ -1,0 +1,11 @@
+key: ungoogled-chromium-authors/ungoogled-chromium
+publisher: ungoogled-chromium-authors
+name: ungoogled-chromium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eloston/ungoogled-chromium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eloston/ungoogled-chromium
+identifiers:
+- winget: eloston.ungoogled-chromium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eloston/ungoogled-chromium
+aliases: []

@@ -1,0 +1,11 @@
+key: bjoern-boeckle/mqtt-presence
+publisher: bjoern-boeckle
+name: mqtt-presence
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BjoernBoeckle/mqtt-presence
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BjoernBoeckle/mqtt-presence
+identifiers:
+- winget: BjoernBoeckle.mqtt-presence
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BjoernBoeckle/mqtt-presence
+aliases: []

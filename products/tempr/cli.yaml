@@ -1,0 +1,12 @@
+key: tempr/cli
+publisher: tempr
+name: Tempr CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tempr/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tempr/Cli
+identifiers:
+- winget: Tempr.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tempr/Cli
+aliases:
+- tempr/tempr-cli

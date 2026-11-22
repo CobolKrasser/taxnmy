@@ -1,0 +1,11 @@
+key: softsea/iso-compressor
+publisher: softsea
+name: ISO Compressor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOCompressor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOCompressor
+identifiers:
+- winget: SoftSea.ISOCompressor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ISOCompressor
+aliases: []

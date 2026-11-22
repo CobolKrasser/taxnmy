@@ -1,0 +1,11 @@
+key: chromatic/registry
+publisher: chromatic
+name: Registry
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatic/Registry
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatic/Registry
+identifiers:
+- winget: Chromatic.Registry
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromatic/Registry
+aliases: []

@@ -1,0 +1,11 @@
+key: datapower/save-wizard-for-ps4-max
+publisher: datapower
+name: Save Wizard for PS4 MAX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataPower/SaveWizardforPS4MAX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataPower/SaveWizardforPS4MAX
+identifiers:
+- winget: DataPower.SaveWizardforPS4MAX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataPower/SaveWizardforPS4MAX
+aliases: []

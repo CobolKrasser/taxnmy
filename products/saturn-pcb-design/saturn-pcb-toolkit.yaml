@@ -1,0 +1,11 @@
+key: saturn-pcb-design/saturn-pcb-toolkit
+publisher: saturn-pcb-design
+name: Saturn PCB Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaturnPCBDesign/SaturnPCBToolkit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaturnPCBDesign/SaturnPCBToolkit
+identifiers:
+- winget: SaturnPCBDesign.SaturnPCBToolkit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaturnPCBDesign/SaturnPCBToolkit
+aliases: []

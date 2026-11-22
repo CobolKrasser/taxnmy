@@ -1,0 +1,11 @@
+key: microlife/watchbp-analyzer
+publisher: microlife
+name: WatchBP Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microlife/WatchBPAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microlife/WatchBPAnalyzer
+identifiers:
+- winget: Microlife.WatchBPAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microlife/WatchBPAnalyzer
+aliases: []

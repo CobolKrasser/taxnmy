@@ -1,0 +1,11 @@
+key: miau-lghtouch/obs-virtualcam
+publisher: miau-lghtouch
+name: obs-virtualcam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiauLightouch/obs-virtual-cam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiauLightouch/obs-virtual-cam
+identifiers:
+- winget: MiauLightouch.obs-virtual-cam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiauLightouch/obs-virtual-cam
+aliases: []

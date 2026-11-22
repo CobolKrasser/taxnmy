@@ -1,0 +1,12 @@
+key: dimonsmart/ollamachat
+publisher: dimonsmart
+name: DimonSmart.OllamaChat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/OllamaChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/OllamaChat
+identifiers:
+- winget: DimonSmart.OllamaChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/OllamaChat
+aliases:
+- dimonsmart/dimonsmart-ollamachat

@@ -1,0 +1,11 @@
+key: tanel-t/audioswitch
+publisher: tanel-t
+name: AudioSwitch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sirWest/AudioSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sirWest/AudioSwitch
+identifiers:
+- winget: sirWest.AudioSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sirWest/AudioSwitch
+aliases: []

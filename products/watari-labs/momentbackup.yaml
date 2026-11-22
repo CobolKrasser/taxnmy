@@ -1,0 +1,11 @@
+key: watari-labs/momentbackup
+publisher: watari-labs
+name: MomentBackup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatariLabs/MomentBackup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatariLabs/MomentBackup
+identifiers:
+- winget: WatariLabs.MomentBackup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatariLabs/MomentBackup
+aliases: []

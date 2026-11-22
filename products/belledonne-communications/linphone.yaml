@@ -1,0 +1,11 @@
+key: belledonne-communications/linphone
+publisher: belledonne-communications
+name: Linphone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelledonneCommunications/Linphone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelledonneCommunications/Linphone
+identifiers:
+- winget: BelledonneCommunications.Linphone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BelledonneCommunications/Linphone
+aliases: []

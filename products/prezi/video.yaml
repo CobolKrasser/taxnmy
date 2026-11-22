@@ -1,0 +1,12 @@
+key: prezi/video
+publisher: prezi
+name: Prezi Video
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prezi/PreziVideo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prezi/PreziVideo
+identifiers:
+- winget: Prezi.PreziVideo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prezi/PreziVideo
+aliases:
+- prezi/prezi-video

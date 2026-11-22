@@ -1,0 +1,11 @@
+key: data-tools/cat-cli
+publisher: data-tools
+name: CAT CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataTools/CATCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataTools/CATCLI
+identifiers:
+- winget: DataTools.CATCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataTools/CATCLI
+aliases: []

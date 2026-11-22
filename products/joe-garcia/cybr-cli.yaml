@@ -1,0 +1,11 @@
+key: joe-garcia/cybr-cli
+publisher: joe-garcia
+name: cybr-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfamousJoeG/cybr-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfamousJoeG/cybr-cli
+identifiers:
+- winget: InfamousJoeG.cybr-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InfamousJoeG/cybr-cli
+aliases: []

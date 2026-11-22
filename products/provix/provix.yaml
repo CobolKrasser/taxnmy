@@ -1,0 +1,11 @@
+key: provix/provix
+publisher: provix
+name: Provix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Provix/Provix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Provix/Provix
+identifiers:
+- winget: Provix.Provix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Provix/Provix
+aliases: []

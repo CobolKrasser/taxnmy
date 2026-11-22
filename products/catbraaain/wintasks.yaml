@@ -1,0 +1,11 @@
+key: catbraaain/wintasks
+publisher: catbraaain
+name: wintasks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatBraaain/wintasks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatBraaain/wintasks
+identifiers:
+- winget: CatBraaain.wintasks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatBraaain/wintasks
+aliases: []

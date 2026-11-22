@@ -1,0 +1,11 @@
+key: hamster-republic-productions/bob-the-hamster-vga
+publisher: hamster-republic-productions
+name: Bob the Hamster VGA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HamsterRepublic/BobTheHamsterVGA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HamsterRepublic/BobTheHamsterVGA
+identifiers:
+- winget: HamsterRepublic.BobTheHamsterVGA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HamsterRepublic/BobTheHamsterVGA
+aliases: []

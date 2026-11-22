@@ -1,0 +1,11 @@
+key: dynalist/dynalist
+publisher: dynalist
+name: Dynalist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dynalist/Dynalist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dynalist/Dynalist
+identifiers:
+- winget: Dynalist.Dynalist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dynalist/Dynalist
+aliases: []

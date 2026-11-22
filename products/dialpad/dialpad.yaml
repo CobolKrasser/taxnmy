@@ -1,0 +1,11 @@
+key: dialpad/dialpad
+publisher: dialpad
+name: Dialpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/Dialpad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/Dialpad
+identifiers:
+- winget: Dialpad.Dialpad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/Dialpad
+aliases: []

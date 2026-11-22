@@ -1,0 +1,13 @@
+key: squirrels/reflector
+publisher: squirrels
+name: Reflector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/3
+identifiers:
+- winget: Squirrels.Reflector.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/3
+- winget: Squirrels.Reflector.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Squirrels/Reflector/4
+aliases: []

@@ -1,0 +1,11 @@
+key: sonorahq/sonora
+publisher: sonorahq
+name: Sonora
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonoraHQ/Sonora
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonoraHQ/Sonora
+identifiers:
+- winget: SonoraHQ.Sonora
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SonoraHQ/Sonora
+aliases: []

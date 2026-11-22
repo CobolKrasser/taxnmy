@@ -1,0 +1,11 @@
+key: oscium/metageek-app
+publisher: oscium
+name: MetaGeek App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/MetaGeekApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/MetaGeekApp
+identifiers:
+- winget: Oscium.MetaGeekApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/MetaGeekApp
+aliases: []

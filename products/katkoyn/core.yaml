@@ -1,0 +1,12 @@
+key: katkoyn/core
+publisher: katkoyn
+name: KatKoyn Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KatKoyn/KatKoynCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KatKoyn/KatKoynCore
+identifiers:
+- winget: KatKoyn.KatKoynCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KatKoyn/KatKoynCore
+aliases:
+- katkoyn/katkoyn-core

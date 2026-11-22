@@ -1,0 +1,11 @@
+key: hdrover/discord-drover
+publisher: hdrover
+name: Discord Drover
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdrover/DiscordDrover
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdrover/DiscordDrover
+identifiers:
+- winget: hdrover.DiscordDrover
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hdrover/DiscordDrover
+aliases: []

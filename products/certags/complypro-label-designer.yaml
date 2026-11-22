@@ -1,0 +1,11 @@
+key: certags/complypro-label-designer
+publisher: certags
+name: ComplyPro Label Designer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certags/ComplyPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certags/ComplyPro
+identifiers:
+- winget: Certags.ComplyPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Certags/ComplyPro
+aliases: []

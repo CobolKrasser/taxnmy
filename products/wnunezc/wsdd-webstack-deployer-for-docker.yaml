@@ -1,0 +1,11 @@
+key: wnunezc/wsdd-webstack-deployer-for-docker
+publisher: wnunezc
+name: WSDD - WebStack Deployer for Docker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wnunezc/WSDD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wnunezc/WSDD
+identifiers:
+- winget: wnunezc.WSDD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wnunezc/WSDD
+aliases: []

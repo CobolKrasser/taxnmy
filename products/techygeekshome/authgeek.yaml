@@ -1,0 +1,11 @@
+key: techygeekshome/authgeek
+publisher: techygeekshome
+name: AuthGeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/AuthGeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/AuthGeek
+identifiers:
+- winget: TechyGeeksHome.AuthGeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/AuthGeek
+aliases: []

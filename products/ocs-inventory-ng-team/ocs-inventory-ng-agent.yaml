@@ -1,0 +1,11 @@
+key: ocs-inventory-ng-team/ocs-inventory-ng-agent
+publisher: ocs-inventory-ng-team
+name: OCS Inventory NG Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCSInventoryNG/WindowsAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCSInventoryNG/WindowsAgent
+identifiers:
+- winget: OCSInventoryNG.WindowsAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCSInventoryNG/WindowsAgent
+aliases: []

@@ -1,0 +1,11 @@
+key: badluma/comprobot
+publisher: badluma
+name: Comprobot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/badluma/Comprobot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/badluma/Comprobot
+identifiers:
+- winget: badluma.Comprobot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/badluma/Comprobot
+aliases: []

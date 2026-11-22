@@ -1,0 +1,11 @@
+key: pyrosoft-productions/virtual-display-driver
+publisher: pyrosoft-productions
+name: Virtual Display Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualDrivers/Virtual-Display-Driver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualDrivers/Virtual-Display-Driver
+identifiers:
+- winget: VirtualDrivers.Virtual-Display-Driver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirtualDrivers/Virtual-Display-Driver
+aliases: []

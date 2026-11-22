@@ -1,0 +1,11 @@
+key: runtimenotes-labs/sideband
+publisher: runtimenotes-labs
+name: sideband
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RuntimeNotesLabs/Sideband
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RuntimeNotesLabs/Sideband
+identifiers:
+- winget: RuntimeNotesLabs.Sideband
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RuntimeNotesLabs/Sideband
+aliases: []

@@ -1,0 +1,11 @@
+key: bluej-team/bluej
+publisher: bluej-team
+name: BlueJ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueJTeam/BlueJ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueJTeam/BlueJ
+identifiers:
+- winget: BlueJTeam.BlueJ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueJTeam/BlueJ
+aliases: []

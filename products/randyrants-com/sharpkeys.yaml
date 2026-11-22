@@ -1,0 +1,11 @@
+key: randyrants-com/sharpkeys
+publisher: randyrants-com
+name: SharpKeys
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RandyRants/SharpKeys
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RandyRants/SharpKeys
+identifiers:
+- winget: RandyRants.SharpKeys
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RandyRants/SharpKeys
+aliases: []

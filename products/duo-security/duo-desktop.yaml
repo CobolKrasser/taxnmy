@@ -1,0 +1,11 @@
+key: duo-security/duo-desktop
+publisher: duo-security
+name: Duo Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/DuoDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/DuoDesktop
+identifiers:
+- winget: DuoSecurity.DuoDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/DuoDesktop
+aliases: []

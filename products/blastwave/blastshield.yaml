@@ -1,0 +1,11 @@
+key: blastwave/blastshield
+publisher: blastwave
+name: BlastShield
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlastWave/BlastShield
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlastWave/BlastShield
+identifiers:
+- winget: BlastWave.BlastShield
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlastWave/BlastShield
+aliases: []

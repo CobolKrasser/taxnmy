@@ -1,0 +1,11 @@
+key: lyx/lyx
+publisher: lyx
+name: LyX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LyX/LyX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LyX/LyX
+identifiers:
+- winget: LyX.LyX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LyX/LyX
+aliases: []

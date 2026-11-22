@@ -1,0 +1,11 @@
+key: receita-federal-do-brasil/receitanet-bx
+publisher: receita-federal-do-brasil
+name: Receitanet BX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/ReceitanetBX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/ReceitanetBX
+identifiers:
+- winget: ReceitaFederaldoBrasil.ReceitanetBX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReceitaFederaldoBrasil/ReceitanetBX
+aliases: []

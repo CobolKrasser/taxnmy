@@ -1,0 +1,11 @@
+key: cyber-intel-systems/cyber-intel-classification-banner
+publisher: cyber-intel-systems
+name: Cyber Intel Classification Banner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberIntelSystems/CICB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberIntelSystems/CICB
+identifiers:
+- winget: CyberIntelSystems.CICB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberIntelSystems/CICB
+aliases: []

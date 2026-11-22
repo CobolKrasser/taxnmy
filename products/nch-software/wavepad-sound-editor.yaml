@@ -1,0 +1,11 @@
+key: nch-software/wavepad-sound-editor
+publisher: nch-software
+name: WavePad Sound Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/WavePad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/WavePad
+identifiers:
+- winget: NCHSoftware.WavePad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/WavePad
+aliases: []

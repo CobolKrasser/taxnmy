@@ -1,0 +1,12 @@
+key: deepin/cloud-print-server
+publisher: deepin
+name: Deepin Cloud Print Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnionTech/DeepinCloudPrintServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnionTech/DeepinCloudPrintServer
+identifiers:
+- winget: UnionTech.DeepinCloudPrintServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnionTech/DeepinCloudPrintServer
+aliases:
+- deepin/deepin-cloud-print-server

@@ -1,0 +1,11 @@
+key: penguin-labs/cacher
+publisher: penguin-labs
+name: Cacher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PenguinLabs/Cacher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PenguinLabs/Cacher
+identifiers:
+- winget: PenguinLabs.Cacher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PenguinLabs/Cacher
+aliases: []

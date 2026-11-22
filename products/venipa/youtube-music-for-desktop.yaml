@@ -1,0 +1,11 @@
+key: venipa/youtube-music-for-desktop
+publisher: venipa
+name: YouTube Music for Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/venipa/ytmdesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/venipa/ytmdesktop
+identifiers:
+- winget: venipa.ytmdesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/venipa/ytmdesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: techygeekshome/soundgeek
+publisher: techygeekshome
+name: SoundGeek
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/SoundGeek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/SoundGeek
+identifiers:
+- winget: TechyGeeksHome.SoundGeek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechyGeeksHome/SoundGeek
+aliases: []

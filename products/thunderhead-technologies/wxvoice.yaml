@@ -1,0 +1,11 @@
+key: thunderhead-technologies/wxvoice
+publisher: thunderhead-technologies
+name: WxVoice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxVoice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxVoice
+identifiers:
+- winget: Thunderhead.WxVoice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thunderhead/WxVoice
+aliases: []

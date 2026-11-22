@@ -1,0 +1,11 @@
+key: ps/kube-dev-dashboard
+publisher: ps
+name: Kube Dev Dashboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PS/KubeDevDashboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PS/KubeDevDashboard
+identifiers:
+- winget: PS.KubeDevDashboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PS/KubeDevDashboard
+aliases: []

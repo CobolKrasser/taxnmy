@@ -1,0 +1,11 @@
+key: llvm/llvm
+publisher: llvm
+name: LLVM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LLVM/LLVM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LLVM/LLVM
+identifiers:
+- winget: LLVM.LLVM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LLVM/LLVM
+aliases: []

@@ -1,0 +1,11 @@
+key: tristan-tang/agent-island
+publisher: tristan-tang
+name: Agent Island
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TristanTang/AgentIsland
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TristanTang/AgentIsland
+identifiers:
+- winget: TristanTang.AgentIsland
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TristanTang/AgentIsland
+aliases: []

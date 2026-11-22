@@ -1,0 +1,11 @@
+key: heshan-aisipai-e-commerce/fileshows
+publisher: heshan-aisipai-e-commerce
+name: FileShows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/FileShows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/FileShows
+identifiers:
+- winget: GAI.FileShows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GAI/FileShows
+aliases: []

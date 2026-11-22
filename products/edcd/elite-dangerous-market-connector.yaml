@@ -1,0 +1,11 @@
+key: edcd/elite-dangerous-market-connector
+publisher: edcd
+name: Elite Dangerous Market Connector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDCD/EliteDangerousMarketConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDCD/EliteDangerousMarketConnector
+identifiers:
+- winget: EDCD.EliteDangerousMarketConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EDCD/EliteDangerousMarketConnector
+aliases: []

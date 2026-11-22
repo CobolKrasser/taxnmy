@@ -1,0 +1,11 @@
+key: lambda/openexr-viewer
+publisher: lambda
+name: openexr-viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lambda/openexr-viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lambda/openexr-viewer
+identifiers:
+- winget: Lambda.openexr-viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lambda/openexr-viewer
+aliases: []

@@ -1,0 +1,11 @@
+key: binarymark/batch-docs-free-edition
+publisher: binarymark
+name: Batch Docs Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchDocs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchDocs
+identifiers:
+- winget: BinaryMark.BatchDocs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchDocs
+aliases: []

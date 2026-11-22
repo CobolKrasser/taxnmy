@@ -1,0 +1,11 @@
+key: kbkkb/apiswitch
+publisher: kbkkb
+name: APISwitch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kbkkb/APISwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kbkkb/APISwitch
+identifiers:
+- winget: kbkkb.APISwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kbkkb/APISwitch
+aliases: []

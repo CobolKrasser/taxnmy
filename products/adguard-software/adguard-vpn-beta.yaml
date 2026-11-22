@@ -1,0 +1,11 @@
+key: adguard-software/adguard-vpn-beta
+publisher: adguard-software
+name: AdGuard VPN Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN/Beta
+identifiers:
+- winget: AdGuard.AdGuardVPN.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN/Beta
+aliases: []

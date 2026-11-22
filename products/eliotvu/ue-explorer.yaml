@@ -1,0 +1,11 @@
+key: eliotvu/ue-explorer
+publisher: eliotvu
+name: UE Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eliot/UEExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eliot/UEExplorer
+identifiers:
+- winget: Eliot.UEExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eliot/UEExplorer
+aliases: []

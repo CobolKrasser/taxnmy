@@ -1,0 +1,11 @@
+key: bitsum/coreprio
+publisher: bitsum
+name: Coreprio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/Coreprio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/Coreprio
+identifiers:
+- winget: BitSum.Coreprio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BitSum/Coreprio
+aliases: []

@@ -1,0 +1,12 @@
+key: sangoma/meet
+publisher: sangoma
+name: Sangoma Meet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaMeet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaMeet
+identifiers:
+- winget: Sangoma.SangomaMeet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaMeet
+aliases:
+- sangoma/sangoma-meet

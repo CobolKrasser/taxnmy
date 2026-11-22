@@ -1,0 +1,11 @@
+key: invantive-software/invantive-query-tool
+publisher: invantive-software
+name: Invantive Query Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveQueryTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveQueryTool
+identifiers:
+- winget: Invantive.InvantiveQueryTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Invantive/InvantiveQueryTool
+aliases: []

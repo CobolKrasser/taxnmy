@@ -1,0 +1,11 @@
+key: legeling/prompthub
+publisher: legeling
+name: PromptHub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/legeling/PromptHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/legeling/PromptHub
+identifiers:
+- winget: legeling.PromptHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/legeling/PromptHub
+aliases: []

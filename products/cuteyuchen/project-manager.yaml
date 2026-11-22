@@ -1,0 +1,11 @@
+key: cuteyuchen/project-manager
+publisher: cuteyuchen
+name: Project Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cuteyuchen/ProjectManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cuteyuchen/ProjectManager
+identifiers:
+- winget: cuteyuchen.ProjectManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cuteyuchen/ProjectManager
+aliases: []

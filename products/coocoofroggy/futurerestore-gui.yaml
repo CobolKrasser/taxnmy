@@ -1,0 +1,11 @@
+key: coocoofroggy/futurerestore-gui
+publisher: coocoofroggy
+name: FutureRestore GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoocooFroggy/FutureRestore-GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoocooFroggy/FutureRestore-GUI
+identifiers:
+- winget: CoocooFroggy.FutureRestore-GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoocooFroggy/FutureRestore-GUI
+aliases: []

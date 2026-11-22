@@ -1,0 +1,11 @@
+key: sergey-filippov/registry-finder
+publisher: sergey-filippov
+name: Registry Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SergeyFilippov/RegistryFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SergeyFilippov/RegistryFinder
+identifiers:
+- winget: SergeyFilippov.RegistryFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SergeyFilippov/RegistryFinder
+aliases: []

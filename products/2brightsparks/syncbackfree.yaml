@@ -1,0 +1,11 @@
+key: 2brightsparks/syncbackfree
+publisher: 2brightsparks
+name: SyncBackFree
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackFree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackFree
+identifiers:
+- winget: 2BrightSparks.SyncBackFree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackFree
+aliases: []

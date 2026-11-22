@@ -1,0 +1,12 @@
+key: japplis/toolbox
+publisher: japplis
+name: Japplis Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Toolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Toolbox
+identifiers:
+- winget: Japplis.Toolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Toolbox
+aliases:
+- japplis/japplis-toolbox

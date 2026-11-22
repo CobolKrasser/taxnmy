@@ -1,0 +1,11 @@
+key: sumdog/yenka-spanish
+publisher: sumdog
+name: Yenka (Spanish)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/ES
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/ES
+identifiers:
+- winget: Sumdog.Yenka.ES
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sumdog/Yenka/ES
+aliases: []

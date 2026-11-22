@@ -1,0 +1,11 @@
+key: zenithsdr/zenithsdr
+publisher: zenithsdr
+name: ZenithSDR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZenithSDR/ZenithSDR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZenithSDR/ZenithSDR
+identifiers:
+- winget: ZenithSDR.ZenithSDR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZenithSDR/ZenithSDR
+aliases: []

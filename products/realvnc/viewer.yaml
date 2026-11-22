@@ -1,0 +1,12 @@
+key: realvnc/viewer
+publisher: realvnc
+name: RealVNC Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCViewer
+identifiers:
+- winget: RealVNC.VNCViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RealVNC/VNCViewer
+aliases:
+- realvnc/realvnc-viewer

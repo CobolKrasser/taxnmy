@@ -1,0 +1,11 @@
+key: softsea/chm-viewer
+publisher: softsea
+name: CHM Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CHMViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CHMViewer
+identifiers:
+- winget: SoftSea.CHMViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/CHMViewer
+aliases: []

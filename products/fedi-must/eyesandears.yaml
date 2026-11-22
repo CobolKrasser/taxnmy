@@ -1,0 +1,11 @@
+key: fedi-must/eyesandears
+publisher: fedi-must
+name: EyesAndEars
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FediMust/EyesAndEars
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FediMust/EyesAndEars
+identifiers:
+- winget: FediMust.EyesAndEars
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FediMust/EyesAndEars
+aliases: []

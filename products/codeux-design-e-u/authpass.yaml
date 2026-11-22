@@ -1,0 +1,11 @@
+key: codeux-design-e-u/authpass
+publisher: codeux-design-e-u
+name: AuthPass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Authpass/Authpass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Authpass/Authpass
+identifiers:
+- winget: Authpass.Authpass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Authpass/Authpass
+aliases: []

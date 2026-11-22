@@ -1,0 +1,12 @@
+key: dimonsmart/pdfcropper-cli
+publisher: dimonsmart
+name: DimonSmart.PdfCropper.Cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/PdfCropper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/PdfCropper
+identifiers:
+- winget: DimonSmart.PdfCropper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DimonSmart/PdfCropper
+aliases:
+- dimonsmart/dimonsmart-pdfcropper-cli

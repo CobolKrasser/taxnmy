@@ -1,0 +1,11 @@
+key: xiugoutv-project/xiugoutv
+publisher: xiugoutv-project
+name: XiugouTV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qfw66/XiugouTV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qfw66/XiugouTV
+identifiers:
+- winget: qfw66.XiugouTV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qfw66/XiugouTV
+aliases: []

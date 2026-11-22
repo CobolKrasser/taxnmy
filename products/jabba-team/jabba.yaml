@@ -1,0 +1,11 @@
+key: jabba-team/jabba
+publisher: jabba-team
+name: jabba
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jabba-team/jabba
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jabba-team/jabba
+identifiers:
+- winget: jabba-team.jabba
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jabba-team/jabba
+aliases: []

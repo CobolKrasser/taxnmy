@@ -1,0 +1,12 @@
+key: vovsoft/network-alarmer
+publisher: vovsoft
+name: Vovsoft Network Alarmer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NetworkAlarmer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NetworkAlarmer
+identifiers:
+- winget: VovSoft.NetworkAlarmer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NetworkAlarmer
+aliases:
+- vovsoft/vovsoft-network-alarmer

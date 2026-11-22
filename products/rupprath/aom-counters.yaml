@@ -1,0 +1,11 @@
+key: rupprath/aom-counters
+publisher: rupprath
+name: AoM Counters
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rupprath/AoMCounters
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rupprath/AoMCounters
+identifiers:
+- winget: Rupprath.AoMCounters
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rupprath/AoMCounters
+aliases: []

@@ -1,0 +1,11 @@
+key: nidzoki/win-alias
+publisher: nidzoki
+name: win-alias
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nidzoki/win-alias
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nidzoki/win-alias
+identifiers:
+- winget: Nidzoki.win-alias
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nidzoki/win-alias
+aliases: []

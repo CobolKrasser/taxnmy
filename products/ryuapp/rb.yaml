@@ -1,0 +1,11 @@
+key: ryuapp/rb
+publisher: ryuapp
+name: rb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryuapp/Rb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryuapp/Rb
+identifiers:
+- winget: Ryuapp.Rb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Ryuapp/Rb
+aliases: []

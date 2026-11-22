@@ -1,0 +1,11 @@
+key: sebastian-solnica/procgov
+publisher: sebastian-solnica
+name: procgov
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LowLevelDesign/ProcessGovernor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LowLevelDesign/ProcessGovernor
+identifiers:
+- winget: LowLevelDesign.ProcessGovernor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LowLevelDesign/ProcessGovernor
+aliases: []

@@ -1,0 +1,11 @@
+key: intel/assistive-context-aware-toolkit
+publisher: intel
+name: Assistive Context-Aware Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/ACAT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/ACAT
+identifiers:
+- winget: Intel.ACAT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/ACAT
+aliases: []

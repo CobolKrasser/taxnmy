@@ -1,0 +1,11 @@
+key: adguard-software/adguard-vpn
+publisher: adguard-software
+name: AdGuard VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN
+identifiers:
+- winget: AdGuard.AdGuardVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN
+aliases: []

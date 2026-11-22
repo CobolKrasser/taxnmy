@@ -1,0 +1,11 @@
+key: clip2net/clip2net
+publisher: clip2net
+name: Clip2net
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clip2net/Clip2net
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clip2net/Clip2net
+identifiers:
+- winget: Clip2net.Clip2net
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clip2net/Clip2net
+aliases: []

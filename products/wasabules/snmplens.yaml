@@ -1,0 +1,11 @@
+key: wasabules/snmplens
+publisher: wasabules
+name: SnmpLens
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasabules/SnmpLens
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasabules/SnmpLens
+identifiers:
+- winget: Wasabules.SnmpLens
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wasabules/SnmpLens
+aliases: []

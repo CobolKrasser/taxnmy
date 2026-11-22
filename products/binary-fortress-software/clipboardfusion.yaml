@@ -1,0 +1,11 @@
+key: binary-fortress-software/clipboardfusion
+publisher: binary-fortress-software
+name: ClipboardFusion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/ClipboardFusion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/ClipboardFusion
+identifiers:
+- winget: BinaryFortress.ClipboardFusion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFortress/ClipboardFusion
+aliases: []

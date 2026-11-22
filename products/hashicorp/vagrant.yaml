@@ -1,0 +1,11 @@
+key: hashicorp/vagrant
+publisher: hashicorp
+name: Vagrant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vagrant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vagrant
+identifiers:
+- winget: Hashicorp.Vagrant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vagrant
+aliases: []

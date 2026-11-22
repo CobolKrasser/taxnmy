@@ -1,0 +1,11 @@
+key: softwareok/desktopok
+publisher: softwareok
+name: DesktopOK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/DesktopOK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/DesktopOK
+identifiers:
+- winget: SoftwareOK.DesktopOK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/DesktopOK
+aliases: []

@@ -1,0 +1,11 @@
+key: the-sz-development/bear
+publisher: the-sz-development
+name: Bear
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bear
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bear
+identifiers:
+- winget: the-sz.Bear
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Bear
+aliases: []

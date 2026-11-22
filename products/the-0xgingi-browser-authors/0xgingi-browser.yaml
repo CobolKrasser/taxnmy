@@ -1,0 +1,11 @@
+key: the-0xgingi-browser-authors/0xgingi-browser
+publisher: the-0xgingi-browser-authors
+name: 0xGingi-Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0xGingi/Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0xGingi/Browser
+identifiers:
+- winget: 0xGingi.Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/0/0xGingi/Browser
+aliases: []

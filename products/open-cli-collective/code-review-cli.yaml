@@ -1,0 +1,11 @@
+key: open-cli-collective/code-review-cli
+publisher: open-cli-collective
+name: Code Review CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/codereview-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/codereview-cli
+identifiers:
+- winget: OpenCLICollective.codereview-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/codereview-cli
+aliases: []

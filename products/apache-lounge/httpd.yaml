@@ -1,0 +1,12 @@
+key: apache-lounge/httpd
+publisher: apache-lounge
+name: Apache Lounge httpd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheLounge/httpd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheLounge/httpd
+identifiers:
+- winget: ApacheLounge.httpd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ApacheLounge/httpd
+aliases:
+- apache-lounge/apache-lounge-httpd

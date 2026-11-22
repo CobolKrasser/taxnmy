@@ -1,0 +1,11 @@
+key: opticon/opn-companion-application
+publisher: opticon
+name: OPN Companion Application
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opticon/OPNCompanionApplication
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opticon/OPNCompanionApplication
+identifiers:
+- winget: Opticon.OPNCompanionApplication
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Opticon/OPNCompanionApplication
+aliases: []

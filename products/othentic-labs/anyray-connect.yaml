@@ -1,0 +1,11 @@
+key: othentic-labs/anyray-connect
+publisher: othentic-labs
+name: Anyray Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anyray/Connect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anyray/Connect
+identifiers:
+- winget: Anyray.Connect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anyray/Connect
+aliases: []

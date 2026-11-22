@@ -1,0 +1,11 @@
+key: kayapater/winkit
+publisher: kayapater
+name: WinKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kayapater/WinKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kayapater/WinKit
+identifiers:
+- winget: kayapater.WinKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kayapater/WinKit
+aliases: []

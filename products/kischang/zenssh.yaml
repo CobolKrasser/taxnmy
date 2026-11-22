@@ -1,0 +1,11 @@
+key: kischang/zenssh
+publisher: kischang
+name: ZenSSH
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kisChang/ZenSSH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kisChang/ZenSSH
+identifiers:
+- winget: kisChang.ZenSSH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kisChang/ZenSSH
+aliases: []

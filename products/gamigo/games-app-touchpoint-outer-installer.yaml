@@ -1,0 +1,11 @@
+key: gamigo/games-app-touchpoint-outer-installer
+publisher: gamigo
+name: Games App touchpoint outer installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gamigo/WildTangentGamesApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gamigo/WildTangentGamesApp
+identifiers:
+- winget: gamigo.WildTangentGamesApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gamigo/WildTangentGamesApp
+aliases: []

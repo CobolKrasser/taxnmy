@@ -1,0 +1,11 @@
+key: dumbaspl/csgo-account-checker
+publisher: dumbaspl
+name: CSGO account checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dumbasPL/CSGOAccountChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dumbasPL/CSGOAccountChecker
+identifiers:
+- winget: dumbasPL.CSGOAccountChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dumbasPL/CSGOAccountChecker
+aliases: []

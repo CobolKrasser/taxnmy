@@ -1,0 +1,11 @@
+key: hanewin-software/hanewin-lldp-agent
+publisher: hanewin-software
+name: haneWIN LLDP Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/LLDPAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/LLDPAgent
+identifiers:
+- winget: haneWIN.LLDPAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/LLDPAgent
+aliases: []

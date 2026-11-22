@@ -1,0 +1,11 @@
+key: the-mcomix-team/mcomix
+publisher: the-mcomix-team
+name: MComix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MComix/MComix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MComix/MComix
+identifiers:
+- winget: MComix.MComix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MComix/MComix
+aliases: []

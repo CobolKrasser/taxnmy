@@ -1,0 +1,11 @@
+key: freenginx/nginx
+publisher: freenginx
+name: nginx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freenginx/nginx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freenginx/nginx
+identifiers:
+- winget: freenginx.nginx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/freenginx/nginx
+aliases: []

@@ -1,0 +1,11 @@
+key: falconnl93/wsl-toolbox
+publisher: falconnl93
+name: WSL Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FalconNL93/WSLToolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FalconNL93/WSLToolbox
+identifiers:
+- winget: FalconNL93.WSLToolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FalconNL93/WSLToolbox
+aliases: []

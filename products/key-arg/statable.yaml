@@ -1,0 +1,11 @@
+key: key-arg/statable
+publisher: key-arg
+name: statable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyArg/Statable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyArg/Statable
+identifiers:
+- winget: KeyArg.Statable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KeyArg/Statable
+aliases: []

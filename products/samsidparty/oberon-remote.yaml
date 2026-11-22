@@ -1,0 +1,11 @@
+key: samsidparty/oberon-remote
+publisher: samsidparty
+name: Oberon Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/OberonRemote/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/OberonRemote/Server
+identifiers:
+- winget: SamsidParty.OberonRemote.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SamsidParty/OberonRemote/Server
+aliases: []

@@ -1,0 +1,11 @@
+key: avanquest-pdfforge/pdfcreator-terminal-server
+publisher: avanquest-pdfforge
+name: PDFCreator Terminal Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avanquestpdfforge/PDFCreator-Terminal-Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avanquestpdfforge/PDFCreator-Terminal-Server
+identifiers:
+- winget: Avanquestpdfforge.PDFCreator-Terminal-Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avanquestpdfforge/PDFCreator-Terminal-Server
+aliases: []

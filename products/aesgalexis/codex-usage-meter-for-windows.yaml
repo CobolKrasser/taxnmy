@@ -1,0 +1,11 @@
+key: aesgalexis/codex-usage-meter-for-windows
+publisher: aesgalexis
+name: Codex Usage Meter for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aesgalexis/CodexUsageMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aesgalexis/CodexUsageMeter
+identifiers:
+- winget: aesgalexis.CodexUsageMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aesgalexis/CodexUsageMeter
+aliases: []

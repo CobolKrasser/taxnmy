@@ -1,0 +1,11 @@
+key: enineapps/green-dotter
+publisher: enineapps
+name: Green Dotter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnineApps/GreenDotter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnineApps/GreenDotter
+identifiers:
+- winget: EnineApps.GreenDotter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnineApps/GreenDotter
+aliases: []

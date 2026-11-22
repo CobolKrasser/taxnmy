@@ -1,0 +1,11 @@
+key: soheilous/genlauncher
+publisher: soheilous
+name: GenLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soheilous/GenLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soheilous/GenLauncher
+identifiers:
+- winget: Soheilous.GenLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Soheilous/GenLauncher
+aliases: []

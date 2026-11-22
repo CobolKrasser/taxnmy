@@ -1,0 +1,11 @@
+key: corsinvest/cv4pve-vdi
+publisher: corsinvest
+name: cv4pve-vdi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/vdi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/vdi
+identifiers:
+- winget: Corsinvest.cv4pve.vdi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corsinvest/cv4pve/vdi
+aliases: []

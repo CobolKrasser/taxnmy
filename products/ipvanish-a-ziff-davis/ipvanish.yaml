@@ -1,0 +1,11 @@
+key: ipvanish-a-ziff-davis/ipvanish
+publisher: ipvanish-a-ziff-davis
+name: IPVanish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPVanish/IPVanish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPVanish/IPVanish
+identifiers:
+- winget: IPVanish.IPVanish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPVanish/IPVanish
+aliases: []

@@ -1,0 +1,11 @@
+key: guilded/guilded
+publisher: guilded
+name: Guilded
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guilded/Guilded
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guilded/Guilded
+identifiers:
+- winget: Guilded.Guilded
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guilded/Guilded
+aliases: []

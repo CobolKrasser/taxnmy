@@ -1,0 +1,11 @@
+key: avplugins/avplugins
+publisher: avplugins
+name: AVPlugins
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comix/FastMeetingAVPlugins
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comix/FastMeetingAVPlugins
+identifiers:
+- winget: Comix.FastMeetingAVPlugins
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Comix/FastMeetingAVPlugins
+aliases: []

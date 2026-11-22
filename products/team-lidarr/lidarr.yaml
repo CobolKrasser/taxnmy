@@ -1,0 +1,11 @@
+key: team-lidarr/lidarr
+publisher: team-lidarr
+name: Lidarr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamLidarr/Lidarr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamLidarr/Lidarr
+identifiers:
+- winget: TeamLidarr.Lidarr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamLidarr/Lidarr
+aliases: []

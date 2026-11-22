@@ -1,0 +1,11 @@
+key: ravensburger/tiptoi-manager
+publisher: ravensburger
+name: tiptoi Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RavensburgerAG/tiptoiManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RavensburgerAG/tiptoiManager
+identifiers:
+- winget: RavensburgerAG.tiptoiManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RavensburgerAG/tiptoiManager
+aliases: []

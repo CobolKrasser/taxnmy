@@ -1,0 +1,11 @@
+key: mega/megasync
+publisher: mega
+name: MEGAsync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mega/MEGASync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mega/MEGASync
+identifiers:
+- winget: Mega.MEGASync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mega/MEGASync
+aliases: []

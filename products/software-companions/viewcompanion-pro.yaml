@@ -1,0 +1,11 @@
+key: software-companions/viewcompanion-pro
+publisher: software-companions
+name: ViewCompanion Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionPro
+identifiers:
+- winget: SoftwareCompanions.ViewCompanionPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionPro
+aliases: []

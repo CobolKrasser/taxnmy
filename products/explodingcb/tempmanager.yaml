@@ -1,0 +1,11 @@
+key: explodingcb/tempmanager
+publisher: explodingcb
+name: tempmanager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExplodingCB/tempmanager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExplodingCB/tempmanager
+identifiers:
+- winget: ExplodingCB.tempmanager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExplodingCB/tempmanager
+aliases: []

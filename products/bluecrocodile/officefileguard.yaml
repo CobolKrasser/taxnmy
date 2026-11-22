@@ -1,0 +1,11 @@
+key: bluecrocodile/officefileguard
+publisher: bluecrocodile
+name: OfficeFileGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueCrocodile/OfficeFileGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueCrocodile/OfficeFileGuard
+identifiers:
+- winget: BlueCrocodile.OfficeFileGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BlueCrocodile/OfficeFileGuard
+aliases: []

@@ -1,0 +1,11 @@
+key: bridge-communications/askclyde
+publisher: bridge-communications
+name: AskClyde
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BridgeCommunications/AskClyde
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BridgeCommunications/AskClyde
+identifiers:
+- winget: BridgeCommunications.AskClyde
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BridgeCommunications/AskClyde
+aliases: []

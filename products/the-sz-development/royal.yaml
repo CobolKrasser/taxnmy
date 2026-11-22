@@ -1,0 +1,11 @@
+key: the-sz-development/royal
+publisher: the-sz-development
+name: Royal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Royal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Royal
+identifiers:
+- winget: the-sz.Royal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Royal
+aliases: []

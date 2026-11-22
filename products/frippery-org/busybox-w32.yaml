@@ -1,0 +1,11 @@
+key: frippery-org/busybox-w32
+publisher: frippery-org
+name: busybox-w32
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/frippery/busybox-w32
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/frippery/busybox-w32
+identifiers:
+- winget: frippery.busybox-w32
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/frippery/busybox-w32
+aliases: []

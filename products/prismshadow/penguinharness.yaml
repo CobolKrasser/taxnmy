@@ -1,0 +1,11 @@
+key: prismshadow/penguinharness
+publisher: prismshadow
+name: PenguinHarness
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrismShadow/PenguinHarness
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrismShadow/PenguinHarness
+identifiers:
+- winget: PrismShadow.PenguinHarness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrismShadow/PenguinHarness
+aliases: []

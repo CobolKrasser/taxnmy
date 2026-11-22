@@ -1,0 +1,11 @@
+key: o2csi/candeo
+publisher: o2csi
+name: Candeo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/O2CSI/Candeo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/O2CSI/Candeo
+identifiers:
+- winget: O2CSI.Candeo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/O2CSI/Candeo
+aliases: []

@@ -1,0 +1,11 @@
+key: flameshot-org/flameshot
+publisher: flameshot-org
+name: Flameshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flameshot/Flameshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flameshot/Flameshot
+identifiers:
+- winget: Flameshot.Flameshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flameshot/Flameshot
+aliases: []

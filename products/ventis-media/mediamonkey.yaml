@@ -1,0 +1,15 @@
+key: ventis-media/mediamonkey
+publisher: ventis-media
+name: MediaMonkey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VentisMedia/MediaMonkey/4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VentisMedia/MediaMonkey/4
+identifiers:
+- winget: VentisMedia.MediaMonkey.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VentisMedia/MediaMonkey/2024
+- winget: VentisMedia.MediaMonkey.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VentisMedia/MediaMonkey/4
+- winget: VentisMedia.MediaMonkey.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VentisMedia/MediaMonkey/5
+aliases: []

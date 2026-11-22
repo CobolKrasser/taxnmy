@@ -1,0 +1,11 @@
+key: duo-security/duo-device-health
+publisher: duo-security
+name: Duo Device Health
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/DuoDeviceHealth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/DuoDeviceHealth
+identifiers:
+- winget: DuoSecurity.DuoDeviceHealth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuoSecurity/DuoDeviceHealth
+aliases: []

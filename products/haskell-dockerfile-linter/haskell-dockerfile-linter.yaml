@@ -1,0 +1,11 @@
+key: haskell-dockerfile-linter/haskell-dockerfile-linter
+publisher: haskell-dockerfile-linter
+name: Haskell Dockerfile Linter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hadolint/hadolint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hadolint/hadolint
+identifiers:
+- winget: hadolint.hadolint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hadolint/hadolint
+aliases: []

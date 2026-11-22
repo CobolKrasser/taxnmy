@@ -1,0 +1,11 @@
+key: live-for-speed/live-for-speed
+publisher: live-for-speed
+name: Live for Speed
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveForSpeed/LiveForSpeed
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveForSpeed/LiveForSpeed
+identifiers:
+- winget: LiveForSpeed.LiveForSpeed
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveForSpeed/LiveForSpeed
+aliases: []

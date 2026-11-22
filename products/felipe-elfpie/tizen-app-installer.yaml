@@ -1,0 +1,11 @@
+key: felipe-elfpie/tizen-app-installer
+publisher: felipe-elfpie
+name: Tizen App Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elfpie/TizenAppInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elfpie/TizenAppInstaller
+identifiers:
+- winget: elfpie.TizenAppInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/elfpie/TizenAppInstaller
+aliases: []

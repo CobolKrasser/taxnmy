@@ -1,0 +1,11 @@
+key: chemtable-software/soft-organizer
+publisher: chemtable-software
+name: Soft Organizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/SoftOrganizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/SoftOrganizer
+identifiers:
+- winget: ChemTableSoftware.SoftOrganizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/SoftOrganizer
+aliases: []

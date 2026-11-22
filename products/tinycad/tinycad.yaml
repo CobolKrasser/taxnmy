@@ -1,0 +1,11 @@
+key: tinycad/tinycad
+publisher: tinycad
+name: TinyCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyCAD/TinyCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyCAD/TinyCAD
+identifiers:
+- winget: TinyCAD.TinyCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TinyCAD/TinyCAD
+aliases: []

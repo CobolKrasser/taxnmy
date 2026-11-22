@@ -1,0 +1,11 @@
+key: rebon/rebon
+publisher: rebon
+name: Rebon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RebonAI/RebonDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RebonAI/RebonDesktop
+identifiers:
+- winget: RebonAI.RebonDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RebonAI/RebonDesktop
+aliases: []

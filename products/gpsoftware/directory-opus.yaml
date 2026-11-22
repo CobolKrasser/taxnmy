@@ -1,0 +1,11 @@
+key: gpsoftware/directory-opus
+publisher: gpsoftware
+name: Directory Opus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPSoftware/DirectoryOpus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPSoftware/DirectoryOpus
+identifiers:
+- winget: GPSoftware.DirectoryOpus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GPSoftware/DirectoryOpus
+aliases: []

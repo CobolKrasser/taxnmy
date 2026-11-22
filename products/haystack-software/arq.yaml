@@ -1,0 +1,11 @@
+key: haystack-software/arq
+publisher: haystack-software
+name: Arq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaystackSoftware/Arq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaystackSoftware/Arq
+identifiers:
+- winget: HaystackSoftware.Arq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HaystackSoftware/Arq
+aliases: []

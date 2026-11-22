@@ -1,0 +1,11 @@
+key: regify/regibill-desktop
+publisher: regify
+name: regibill desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regibillDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regibillDesktop
+identifiers:
+- winget: regify.regibillDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/regify/regibillDesktop
+aliases: []

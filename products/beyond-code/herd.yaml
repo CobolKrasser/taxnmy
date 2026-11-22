@@ -1,0 +1,11 @@
+key: beyond-code/herd
+publisher: beyond-code
+name: Herd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeyondCode/Herd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeyondCode/Herd
+identifiers:
+- winget: BeyondCode.Herd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeyondCode/Herd
+aliases: []

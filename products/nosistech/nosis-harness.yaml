@@ -1,0 +1,11 @@
+key: nosistech/nosis-harness
+publisher: nosistech
+name: Nosis Harness
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nosistech/NosisHarness
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nosistech/NosisHarness
+identifiers:
+- winget: Nosistech.NosisHarness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nosistech/NosisHarness
+aliases: []

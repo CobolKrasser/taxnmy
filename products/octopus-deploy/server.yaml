@@ -1,0 +1,12 @@
+key: octopus-deploy/server
+publisher: octopus-deploy
+name: Octopus Deploy Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Server
+identifiers:
+- winget: OctopusDeploy.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OctopusDeploy/Server
+aliases:
+- octopus-deploy/octopus-deploy-server

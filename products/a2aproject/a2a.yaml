@@ -1,0 +1,11 @@
+key: a2aproject/a2a
+publisher: a2aproject
+name: a2a
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/a2aproject/a2acli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/a2aproject/a2acli
+identifiers:
+- winget: a2aproject.a2acli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/a2aproject/a2acli
+aliases: []

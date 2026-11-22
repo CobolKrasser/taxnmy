@@ -1,0 +1,11 @@
+key: 2brightsparks/syncbackse
+publisher: 2brightsparks
+name: SyncBackSE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackSE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackSE
+identifiers:
+- winget: 2BrightSparks.SyncBackSE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/2/2BrightSparks/SyncBackSE
+aliases: []

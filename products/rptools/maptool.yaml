@@ -1,0 +1,11 @@
+key: rptools/maptool
+publisher: rptools
+name: MapTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RPTools/MapTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RPTools/MapTool
+identifiers:
+- winget: RPTools.MapTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RPTools/MapTool
+aliases: []

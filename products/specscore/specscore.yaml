@@ -1,0 +1,11 @@
+key: specscore/specscore
+publisher: specscore
+name: SpecScore
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecScore/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecScore/CLI
+identifiers:
+- winget: SpecScore.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpecScore/CLI
+aliases: []

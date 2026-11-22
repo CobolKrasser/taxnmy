@@ -1,0 +1,11 @@
+key: thorlabs/pockelscelldriver
+publisher: thorlabs
+name: PockelsCellDriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/PCD1K
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/PCD1K
+identifiers:
+- winget: Thorlabs.PCD1K
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/PCD1K
+aliases: []

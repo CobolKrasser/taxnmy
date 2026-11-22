@@ -1,0 +1,11 @@
+key: mdzip-project/mdzip-cli
+publisher: mdzip-project
+name: MDZip CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MDZip/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MDZip/Cli
+identifiers:
+- winget: MDZip.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MDZip/Cli
+aliases: []

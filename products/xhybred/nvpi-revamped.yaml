@@ -1,0 +1,11 @@
+key: xhybred/nvpi-revamped
+publisher: xhybred
+name: NVPI Revamped
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xHybred/NVPIRevamped
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xHybred/NVPIRevamped
+identifiers:
+- winget: xHybred.NVPIRevamped
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xHybred/NVPIRevamped
+aliases: []

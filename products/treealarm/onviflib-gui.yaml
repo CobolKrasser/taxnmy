@@ -1,0 +1,11 @@
+key: treealarm/onviflib-gui
+publisher: treealarm
+name: OnvifLib.Gui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/treealarm/OnvifLib/Gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/treealarm/OnvifLib/Gui
+identifiers:
+- winget: treealarm.OnvifLib.Gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/treealarm/OnvifLib/Gui
+aliases: []

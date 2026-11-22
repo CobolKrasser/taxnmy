@@ -1,0 +1,11 @@
+key: dotpdn/paint-net
+publisher: dotpdn
+name: paint.net
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet
+identifiers:
+- winget: dotPDN.PaintDotNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet
+aliases: []

@@ -1,0 +1,11 @@
+key: tenorio-labs/inkwell
+publisher: tenorio-labs
+name: Inkwell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenorioLabs/Inkwell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenorioLabs/Inkwell
+identifiers:
+- winget: TenorioLabs.Inkwell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenorioLabs/Inkwell
+aliases: []

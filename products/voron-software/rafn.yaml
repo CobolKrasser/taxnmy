@@ -1,0 +1,11 @@
+key: voron-software/rafn
+publisher: voron-software
+name: Rafn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoronSoftware/Rafn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoronSoftware/Rafn
+identifiers:
+- winget: VoronSoftware.Rafn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoronSoftware/Rafn
+aliases: []

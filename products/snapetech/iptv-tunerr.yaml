@@ -1,0 +1,11 @@
+key: snapetech/iptv-tunerr
+publisher: snapetech
+name: IPTV Tunerr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snapetech/iptvtunerr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snapetech/iptvtunerr
+identifiers:
+- winget: snapetech.iptvtunerr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/snapetech/iptvtunerr
+aliases: []

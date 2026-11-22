@@ -1,0 +1,11 @@
+key: kurt-zimmermann/eventlogviewer
+publisher: kurt-zimmermann
+name: EventLogViewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KurtZimmermann/EventLogViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KurtZimmermann/EventLogViewer
+identifiers:
+- winget: KurtZimmermann.EventLogViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KurtZimmermann/EventLogViewer
+aliases: []

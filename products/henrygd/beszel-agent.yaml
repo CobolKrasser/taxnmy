@@ -1,0 +1,11 @@
+key: henrygd/beszel-agent
+publisher: henrygd
+name: beszel-agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/henrygd/beszel-agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/henrygd/beszel-agent
+identifiers:
+- winget: henrygd.beszel-agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/henrygd/beszel-agent
+aliases: []

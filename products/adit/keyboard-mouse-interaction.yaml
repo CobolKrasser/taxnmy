@@ -1,0 +1,11 @@
+key: adit/keyboard-mouse-interaction
+publisher: adit
+name: Keyboard Mouse Interaction
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/User123/KeyboardMouseInteraction
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/User123/KeyboardMouseInteraction
+identifiers:
+- winget: User123.KeyboardMouseInteraction
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/User123/KeyboardMouseInteraction
+aliases: []

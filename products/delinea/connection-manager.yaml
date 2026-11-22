@@ -1,0 +1,12 @@
+key: delinea/connection-manager
+publisher: delinea
+name: Delinea Connection Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/DelineaConnectionManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/DelineaConnectionManager
+identifiers:
+- winget: Delinea.DelineaConnectionManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/DelineaConnectionManager
+aliases:
+- delinea/delinea-connection-manager

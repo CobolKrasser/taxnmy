@@ -1,0 +1,11 @@
+key: sandover/ergo
+publisher: sandover
+name: ergo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandover/Ergo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandover/Ergo
+identifiers:
+- winget: Sandover.Ergo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sandover/Ergo
+aliases: []

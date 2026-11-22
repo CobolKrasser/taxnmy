@@ -1,0 +1,11 @@
+key: aperture-internet-laboratory/hysteria
+publisher: aperture-internet-laboratory
+name: Hysteria
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/apernet/Hysteria
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/apernet/Hysteria
+identifiers:
+- winget: apernet.Hysteria
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/apernet/Hysteria
+aliases: []

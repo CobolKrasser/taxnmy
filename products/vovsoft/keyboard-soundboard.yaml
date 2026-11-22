@@ -1,0 +1,12 @@
+key: vovsoft/keyboard-soundboard
+publisher: vovsoft
+name: Vovsoft Keyboard Soundboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeyboardSoundboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeyboardSoundboard
+identifiers:
+- winget: VovSoft.KeyboardSoundboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeyboardSoundboard
+aliases:
+- vovsoft/vovsoft-keyboard-soundboard

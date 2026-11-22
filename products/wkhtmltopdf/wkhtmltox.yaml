@@ -1,0 +1,11 @@
+key: wkhtmltopdf/wkhtmltox
+publisher: wkhtmltopdf
+name: wkhtmltox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wkhtmltopdf/wkhtmltox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wkhtmltopdf/wkhtmltox
+identifiers:
+- winget: wkhtmltopdf.wkhtmltox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wkhtmltopdf/wkhtmltox
+aliases: []

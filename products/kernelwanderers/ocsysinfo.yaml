@@ -1,0 +1,11 @@
+key: kernelwanderers/ocsysinfo
+publisher: kernelwanderers
+name: OCSysInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KernelWanderers/OCSysInfo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KernelWanderers/OCSysInfo
+identifiers:
+- winget: KernelWanderers.OCSysInfo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KernelWanderers/OCSysInfo
+aliases: []

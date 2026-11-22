@@ -1,0 +1,11 @@
+key: windeskctl/windeskctl
+publisher: windeskctl
+name: windeskctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/windeskctl/windeskctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/windeskctl/windeskctl
+identifiers:
+- winget: windeskctl.windeskctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/windeskctl/windeskctl
+aliases: []

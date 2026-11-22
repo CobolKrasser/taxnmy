@@ -1,0 +1,11 @@
+key: genotrance/px
+publisher: genotrance
+name: Px
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/genotrance/px
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/genotrance/px
+identifiers:
+- winget: genotrance.px
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/genotrance/px
+aliases: []

@@ -1,0 +1,12 @@
+key: nomachine/enterprise-cloud-server
+publisher: nomachine
+name: NoMachine Enterprise Cloud Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/EnterpriseCloudServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/EnterpriseCloudServer
+identifiers:
+- winget: NoMachine.NoMachine.EnterpriseCloudServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/EnterpriseCloudServer
+aliases:
+- nomachine/nomachine-enterprise-cloud-server

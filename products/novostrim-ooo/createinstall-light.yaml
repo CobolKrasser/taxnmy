@@ -1,0 +1,11 @@
+key: novostrim-ooo/createinstall-light
+publisher: novostrim-ooo
+name: CreateInstall Light
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novostrim/CreateInstall/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novostrim/CreateInstall/Lite
+identifiers:
+- winget: Novostrim.CreateInstall.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novostrim/CreateInstall/Lite
+aliases: []

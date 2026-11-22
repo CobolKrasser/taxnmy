@@ -1,0 +1,11 @@
+key: microsoft/comate
+publisher: microsoft
+name: Comate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/Comate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/Comate
+identifiers:
+- winget: Baidu.Comate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/Comate
+aliases: []

@@ -1,0 +1,11 @@
+key: nativesoft/nativerest
+publisher: nativesoft
+name: NativeRest
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NativeSoft/NativeRest
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NativeSoft/NativeRest
+identifiers:
+- winget: NativeSoft.NativeRest
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NativeSoft/NativeRest
+aliases: []

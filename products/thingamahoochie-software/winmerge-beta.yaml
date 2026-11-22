@@ -1,0 +1,11 @@
+key: thingamahoochie-software/winmerge-beta
+publisher: thingamahoochie-software
+name: WinMerge Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinMerge/WinMerge/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinMerge/WinMerge/Beta
+identifiers:
+- winget: WinMerge.WinMerge.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinMerge/WinMerge/Beta
+aliases: []

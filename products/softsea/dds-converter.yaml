@@ -1,0 +1,11 @@
+key: softsea/dds-converter
+publisher: softsea
+name: DDS Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DDSConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DDSConverter
+identifiers:
+- winget: SoftSea.DDSConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DDSConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: devcom/lua
+publisher: devcom
+name: Lua
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/Lua
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/Lua
+identifiers:
+- winget: DEVCOM.Lua
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/Lua
+aliases: []

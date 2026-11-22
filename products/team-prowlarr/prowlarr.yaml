@@ -1,0 +1,11 @@
+key: team-prowlarr/prowlarr
+publisher: team-prowlarr
+name: Prowlarr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamProwlarr/Prowlarr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamProwlarr/Prowlarr
+identifiers:
+- winget: TeamProwlarr.Prowlarr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamProwlarr/Prowlarr
+aliases: []

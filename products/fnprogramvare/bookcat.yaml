@@ -1,0 +1,11 @@
+key: fnprogramvare/bookcat
+publisher: fnprogramvare
+name: BookCAT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FNPrg/BookCAT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FNPrg/BookCAT
+identifiers:
+- winget: FNPrg.BookCAT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FNPrg/BookCAT
+aliases: []

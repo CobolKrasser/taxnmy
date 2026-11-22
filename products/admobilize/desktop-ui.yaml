@@ -1,0 +1,12 @@
+key: admobilize/desktop-ui
+publisher: admobilize
+name: AdMobilize Desktop UI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/DesktopUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/DesktopUI
+identifiers:
+- winget: Admobilize.AdMobilize.DesktopUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/DesktopUI
+aliases:
+- admobilize/admobilize-desktop-ui

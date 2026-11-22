@@ -1,0 +1,11 @@
+key: health-info-net/hin-client
+publisher: health-info-net
+name: HIN Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HealthInfoNet/HINClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HealthInfoNet/HINClient
+identifiers:
+- winget: HealthInfoNet.HINClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HealthInfoNet/HINClient
+aliases: []

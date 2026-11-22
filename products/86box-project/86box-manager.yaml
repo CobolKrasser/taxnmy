@@ -1,0 +1,11 @@
+key: 86box-project/86box-manager
+publisher: 86box-project
+name: 86Box Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/86Box/86BoxManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/86Box/86BoxManager
+identifiers:
+- winget: 86Box.86BoxManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/86Box/86BoxManager
+aliases: []

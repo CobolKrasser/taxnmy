@@ -1,0 +1,12 @@
+key: vovsoft/customer-tracker
+publisher: vovsoft
+name: Vovsoft Customer Tracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CustomerTracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CustomerTracker
+identifiers:
+- winget: VovSoft.CustomerTracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CustomerTracker
+aliases:
+- vovsoft/vovsoft-customer-tracker

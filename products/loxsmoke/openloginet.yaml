@@ -1,0 +1,11 @@
+key: loxsmoke/openloginet
+publisher: loxsmoke
+name: OpenLogiNet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoxSmoke/OpenLogiNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoxSmoke/OpenLogiNet
+identifiers:
+- winget: LoxSmoke.OpenLogiNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LoxSmoke/OpenLogiNet
+aliases: []

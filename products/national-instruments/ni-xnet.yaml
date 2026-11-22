@@ -1,0 +1,11 @@
+key: national-instruments/ni-xnet
+publisher: national-instruments
+name: NI-XNET
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-xnet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-xnet
+identifiers:
+- winget: NI.ni-xnet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-xnet
+aliases: []

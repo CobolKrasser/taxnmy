@@ -1,0 +1,11 @@
+key: sqlitestudio-pl/sqlitestudio
+publisher: sqlitestudio-pl
+name: SQLiteStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PawelSalawa/SQLiteStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PawelSalawa/SQLiteStudio
+identifiers:
+- winget: PawelSalawa.SQLiteStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PawelSalawa/SQLiteStudio
+aliases: []

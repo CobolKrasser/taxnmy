@@ -1,0 +1,11 @@
+key: winflexbison/flex-and-bison-for-microsoft-windows
+publisher: winflexbison
+name: Flex and Bison for Microsoft Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFlexBison/win_flex_bison
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFlexBison/win_flex_bison
+identifiers:
+- winget: WinFlexBison.win_flex_bison
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinFlexBison/win_flex_bison
+aliases: []

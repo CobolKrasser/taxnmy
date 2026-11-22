@@ -1,0 +1,11 @@
+key: datalust/seq
+publisher: datalust
+name: Seq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/Seq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/Seq
+identifiers:
+- winget: Datalust.Seq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datalust/Seq
+aliases: []

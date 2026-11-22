@@ -1,0 +1,11 @@
+key: parsec-cloud/parsec-virtual-usb-adapter-driver
+publisher: parsec-cloud
+name: Parsec Virtual USB Adapter Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/ParsecVUD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/ParsecVUD
+identifiers:
+- winget: Parsec.ParsecVUD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/ParsecVUD
+aliases: []

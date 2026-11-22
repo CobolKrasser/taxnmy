@@ -1,0 +1,11 @@
+key: ivysci/ivysci
+publisher: ivysci
+name: ivySCI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IvyScience/ivySCI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IvyScience/ivySCI
+identifiers:
+- winget: IvyScience.ivySCI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IvyScience/ivySCI
+aliases: []

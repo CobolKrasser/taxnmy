@@ -1,0 +1,11 @@
+key: bisq/bisq
+publisher: bisq
+name: Bisq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bisq/Bisq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bisq/Bisq
+identifiers:
+- winget: Bisq.Bisq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bisq/Bisq
+aliases: []

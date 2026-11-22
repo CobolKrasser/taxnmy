@@ -1,0 +1,11 @@
+key: wiremux/wiremux
+publisher: wiremux
+name: Wiremux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiremux/Wiremux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiremux/Wiremux
+identifiers:
+- winget: Wiremux.Wiremux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiremux/Wiremux
+aliases: []

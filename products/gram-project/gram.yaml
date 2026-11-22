@@ -1,0 +1,11 @@
+key: gram-project/gram
+publisher: gram-project
+name: Gram
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GramEditor/Gram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GramEditor/Gram
+identifiers:
+- winget: GramEditor.Gram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GramEditor/Gram
+aliases: []

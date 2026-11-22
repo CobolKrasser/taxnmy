@@ -1,0 +1,11 @@
+key: cjwdev/service-permissions-reporter-beta
+publisher: cjwdev
+name: Service Permissions Reporter BETA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ServicePermissionsReporter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ServicePermissionsReporter
+identifiers:
+- winget: Cjwdev.ServicePermissionsReporter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cjwdev/ServicePermissionsReporter
+aliases: []

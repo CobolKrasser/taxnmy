@@ -1,0 +1,11 @@
+key: marko-matosevic/winsnipper
+publisher: marko-matosevic
+name: WinSnipper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2matosevic/WinSnipper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2matosevic/WinSnipper
+identifiers:
+- winget: v2matosevic.WinSnipper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/v2matosevic/WinSnipper
+aliases: []

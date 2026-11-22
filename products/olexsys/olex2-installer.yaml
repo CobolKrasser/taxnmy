@@ -1,0 +1,11 @@
+key: olexsys/olex2-installer
+publisher: olexsys
+name: Olex2 Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlexSysLtd/Olex2Installer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlexSysLtd/Olex2Installer
+identifiers:
+- winget: OlexSysLtd.Olex2Installer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OlexSysLtd/Olex2Installer
+aliases: []

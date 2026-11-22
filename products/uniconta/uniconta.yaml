@@ -1,0 +1,11 @@
+key: uniconta/uniconta
+publisher: uniconta
+name: Uniconta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uniconta/Uniconta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uniconta/Uniconta
+identifiers:
+- winget: Uniconta.Uniconta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uniconta/Uniconta
+aliases: []

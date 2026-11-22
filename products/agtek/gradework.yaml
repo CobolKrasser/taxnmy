@@ -1,0 +1,12 @@
+key: agtek/gradework
+publisher: agtek
+name: AGTEK Gradework
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/Gradework
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/Gradework
+identifiers:
+- winget: AGTEK.Gradework
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/Gradework
+aliases:
+- agtek/agtek-gradework

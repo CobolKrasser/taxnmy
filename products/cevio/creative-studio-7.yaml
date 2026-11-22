@@ -1,0 +1,12 @@
+key: cevio/creative-studio-7
+publisher: cevio
+name: CeVIO Creative Studio 7
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CeVIO/CeVIOCS7
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CeVIO/CeVIOCS7
+identifiers:
+- winget: CeVIO.CeVIOCS7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CeVIO/CeVIOCS7
+aliases:
+- cevio/cevio-creative-studio-7

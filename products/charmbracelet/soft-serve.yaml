@@ -1,0 +1,11 @@
+key: charmbracelet/soft-serve
+publisher: charmbracelet
+name: Soft Serve
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/soft-serve
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/soft-serve
+identifiers:
+- winget: charmbracelet.soft-serve
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/charmbracelet/soft-serve
+aliases: []

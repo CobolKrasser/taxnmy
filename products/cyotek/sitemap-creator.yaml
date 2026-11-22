@@ -1,0 +1,12 @@
+key: cyotek/sitemap-creator
+publisher: cyotek
+name: Cyotek Sitemap Creator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/SitemapCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/SitemapCreator
+identifiers:
+- winget: Cyotek.SitemapCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/SitemapCreator
+aliases:
+- cyotek/cyotek-sitemap-creator

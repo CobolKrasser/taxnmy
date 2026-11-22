@@ -1,0 +1,13 @@
+key: voiden/voiden
+publisher: voiden
+name: Voiden
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voiden/Voiden
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voiden/Voiden
+identifiers:
+- winget: Voiden.Voiden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voiden/Voiden
+- winget: VoidenHQ.Voiden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoidenHQ/Voiden
+aliases: []

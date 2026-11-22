@@ -1,0 +1,11 @@
+key: byvoid/opencc
+publisher: byvoid
+name: OpenCC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BYVoid/OpenCC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BYVoid/OpenCC
+identifiers:
+- winget: BYVoid.OpenCC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BYVoid/OpenCC
+aliases: []

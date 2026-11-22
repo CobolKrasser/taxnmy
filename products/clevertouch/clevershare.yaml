@@ -1,0 +1,13 @@
+key: clevertouch/clevershare
+publisher: clevertouch
+name: Clevershare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clevertouch/Clevershare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clevertouch/Clevershare
+identifiers:
+- winget: Clevertouch.Clevershare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clevertouch/Clevershare
+- winget: Clevertouch.Clevershare.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Clevertouch/Clevershare/EXE
+aliases: []

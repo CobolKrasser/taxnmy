@@ -1,0 +1,11 @@
+key: analog-devices/ltspice
+publisher: analog-devices
+name: LTspice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogDevices/LTspice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogDevices/LTspice
+identifiers:
+- winget: AnalogDevices.LTspice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnalogDevices/LTspice
+aliases: []

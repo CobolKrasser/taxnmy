@@ -1,0 +1,11 @@
+key: chawye-hsu/gnu-nano-for-windows
+publisher: chawye-hsu
+name: GNU nano for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChawyeHsu/Nano
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChawyeHsu/Nano
+identifiers:
+- winget: ChawyeHsu.Nano
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChawyeHsu/Nano
+aliases: []

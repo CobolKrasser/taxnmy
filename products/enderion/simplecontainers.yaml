@@ -1,0 +1,11 @@
+key: enderion/simplecontainers
+publisher: enderion
+name: SimpleContainers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enderion/SimpleContainers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enderion/SimpleContainers
+identifiers:
+- winget: Enderion.SimpleContainers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enderion/SimpleContainers
+aliases: []

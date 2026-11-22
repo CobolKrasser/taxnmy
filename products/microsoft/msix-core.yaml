@@ -1,0 +1,11 @@
+key: microsoft/msix-core
+publisher: microsoft
+name: MSIX Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIXCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIXCore
+identifiers:
+- winget: Microsoft.MSIXCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/MSIXCore
+aliases: []

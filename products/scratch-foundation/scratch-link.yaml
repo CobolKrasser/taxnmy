@@ -1,0 +1,11 @@
+key: scratch-foundation/scratch-link
+publisher: scratch-foundation
+name: Scratch Link
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/ScratchLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/ScratchLink
+identifiers:
+- winget: MITMediaLab.ScratchLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/ScratchLink
+aliases: []

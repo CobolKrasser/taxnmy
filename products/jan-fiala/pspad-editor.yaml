@@ -1,0 +1,13 @@
+key: jan-fiala/pspad-editor
+publisher: jan-fiala
+name: PSPad editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanFiala/PSPad/x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanFiala/PSPad/x64
+identifiers:
+- winget: JanFiala.PSPad.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanFiala/PSPad/x64
+- winget: JanFiala.PSPad.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JanFiala/PSPad/x86
+aliases: []

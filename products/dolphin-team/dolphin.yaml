@@ -1,0 +1,11 @@
+key: dolphin-team/dolphin
+publisher: dolphin-team
+name: Dolphin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DolphinEmulator/Dolphin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DolphinEmulator/Dolphin
+identifiers:
+- winget: DolphinEmulator.Dolphin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DolphinEmulator/Dolphin
+aliases: []

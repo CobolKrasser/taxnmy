@@ -1,0 +1,11 @@
+key: scryer-media/scryer
+publisher: scryer-media
+name: Scryer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScryerMedia/Scryer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScryerMedia/Scryer
+identifiers:
+- winget: ScryerMedia.Scryer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScryerMedia/Scryer
+aliases: []

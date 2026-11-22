@@ -1,0 +1,11 @@
+key: teraterm-project/tera-term-5
+publisher: teraterm-project
+name: Tera Term 5
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeraTermProject/teraterm5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeraTermProject/teraterm5
+identifiers:
+- winget: TeraTermProject.teraterm5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeraTermProject/teraterm5
+aliases: []

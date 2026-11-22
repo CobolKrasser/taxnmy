@@ -1,0 +1,12 @@
+key: steelseries/gg
+publisher: steelseries
+name: SteelSeries GG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/GG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/GG
+identifiers:
+- winget: SteelSeries.GG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/GG
+aliases:
+- steelseries/steelseries-gg

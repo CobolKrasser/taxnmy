@@ -1,0 +1,11 @@
+key: mk1-enterprise/kit
+publisher: mk1-enterprise
+name: KiT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SPRIC76/KIT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SPRIC76/KIT
+identifiers:
+- winget: SPRIC76.KIT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SPRIC76/KIT
+aliases: []

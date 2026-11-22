@@ -1,0 +1,11 @@
+key: cogin/queueexplorer
+publisher: cogin
+name: QueueExplorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cogin/QueueExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cogin/QueueExplorer
+identifiers:
+- winget: Cogin.QueueExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cogin/QueueExplorer
+aliases: []

@@ -1,0 +1,11 @@
+key: hanewin-software/hanewin-dns-server
+publisher: hanewin-software
+name: haneWIN DNS Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/DNSServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/DNSServer
+identifiers:
+- winget: haneWIN.DNSServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/DNSServer
+aliases: []

@@ -1,0 +1,11 @@
+key: jumping-bytes/clipboard-master
+publisher: jumping-bytes
+name: Clipboard Master
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JumpingBytes/ClipboardMaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JumpingBytes/ClipboardMaster
+identifiers:
+- winget: JumpingBytes.ClipboardMaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JumpingBytes/ClipboardMaster
+aliases: []

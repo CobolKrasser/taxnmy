@@ -1,0 +1,11 @@
+key: bozbez/win-capture-audio
+publisher: bozbez
+name: win-capture-audio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bozbez/WinCaptureAudio/beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bozbez/WinCaptureAudio/beta
+identifiers:
+- winget: bozbez.WinCaptureAudio.beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bozbez/WinCaptureAudio/beta
+aliases: []

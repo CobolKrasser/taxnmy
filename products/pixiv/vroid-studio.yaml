@@ -1,0 +1,11 @@
+key: pixiv/vroid-studio
+publisher: pixiv
+name: VRoid Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pixivInc/VRoidStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pixivInc/VRoidStudio
+identifiers:
+- winget: pixivInc.VRoidStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pixivInc/VRoidStudio
+aliases: []

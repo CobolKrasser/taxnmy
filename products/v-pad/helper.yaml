@@ -1,0 +1,12 @@
+key: v-pad/helper
+publisher: v-pad
+name: V-Pad Helper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPad/Helper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPad/Helper
+identifiers:
+- winget: VPad.Helper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VPad/Helper
+aliases:
+- v-pad/v-pad-helper

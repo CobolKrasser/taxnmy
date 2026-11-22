@@ -1,0 +1,11 @@
+key: aceisx/minibar
+publisher: aceisx
+name: MiniBar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AceisX/MiniBar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AceisX/MiniBar
+identifiers:
+- winget: AceisX.MiniBar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AceisX/MiniBar
+aliases: []

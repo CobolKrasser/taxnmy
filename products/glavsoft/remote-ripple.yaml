@@ -1,0 +1,11 @@
+key: glavsoft/remote-ripple
+publisher: glavsoft
+name: Remote Ripple
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlavSoft/RemoteRipple
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlavSoft/RemoteRipple
+identifiers:
+- winget: GlavSoft.RemoteRipple
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlavSoft/RemoteRipple
+aliases: []

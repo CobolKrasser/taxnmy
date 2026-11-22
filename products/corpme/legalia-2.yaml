@@ -1,0 +1,11 @@
+key: corpme/legalia-2
+publisher: corpme
+name: Legalia 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CORPME/Legalia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CORPME/Legalia
+identifiers:
+- winget: CORPME.Legalia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CORPME/Legalia
+aliases: []

@@ -1,0 +1,11 @@
+key: duxbury-systems/dbt
+publisher: duxbury-systems
+name: DBT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuxburySystems/DBT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuxburySystems/DBT
+identifiers:
+- winget: DuxburySystems.DBT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DuxburySystems/DBT
+aliases: []

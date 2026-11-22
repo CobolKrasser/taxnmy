@@ -1,0 +1,11 @@
+key: openai/opencodex
+publisher: openai
+name: OpenCodex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyensX/OpenCodex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyensX/OpenCodex
+identifiers:
+- winget: RyensX.OpenCodex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RyensX/OpenCodex
+aliases: []

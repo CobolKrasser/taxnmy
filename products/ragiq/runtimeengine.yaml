@@ -1,0 +1,12 @@
+key: ragiq/runtimeengine
+publisher: ragiq
+name: RagIQ RuntimeEngine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RagIQ/RuntimeEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RagIQ/RuntimeEngine
+identifiers:
+- winget: RagIQ.RuntimeEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RagIQ/RuntimeEngine
+aliases:
+- ragiq/ragiq-runtimeengine

@@ -1,0 +1,11 @@
+key: vs-revo-group/revo-registry-cleaner
+publisher: vs-revo-group
+name: Revo Registry Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoUninstaller/RevoRegistryCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoUninstaller/RevoRegistryCleaner
+identifiers:
+- winget: RevoUninstaller.RevoRegistryCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoUninstaller/RevoRegistryCleaner
+aliases: []

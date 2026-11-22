@@ -1,0 +1,11 @@
+key: mauro-bieg/panwriter
+publisher: mauro-bieg
+name: PanWriter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mb21/panwriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mb21/panwriter
+identifiers:
+- winget: mb21.panwriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mb21/panwriter
+aliases: []

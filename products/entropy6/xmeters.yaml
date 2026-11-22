@@ -1,0 +1,11 @@
+key: entropy6/xmeters
+publisher: entropy6
+name: XMeters
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Entropy6/XMeters
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Entropy6/XMeters
+identifiers:
+- winget: Entropy6.XMeters
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Entropy6/XMeters
+aliases: []

@@ -1,0 +1,11 @@
+key: quotient-im/quaternion
+publisher: quotient-im
+name: Quaternion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quotient-im/Quaternion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quotient-im/Quaternion
+identifiers:
+- winget: quotient-im.Quaternion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/quotient-im/Quaternion
+aliases: []

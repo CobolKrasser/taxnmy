@@ -1,0 +1,11 @@
+key: wizards-of-the-coast/mtga-launcher
+publisher: wizards-of-the-coast
+name: MTGA Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WizardsoftheCoast/MTGALauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WizardsoftheCoast/MTGALauncher
+identifiers:
+- winget: WizardsoftheCoast.MTGALauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WizardsoftheCoast/MTGALauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: atomicjar/testcontainers-desktop
+publisher: atomicjar
+name: Testcontainers Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtomicJar/Testcontainers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtomicJar/Testcontainers
+identifiers:
+- winget: AtomicJar.Testcontainers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtomicJar/Testcontainers
+aliases: []

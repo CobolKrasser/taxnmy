@@ -1,0 +1,11 @@
+key: softwareok/find-same-images-ok
+publisher: softwareok
+name: Find.Same.Images.OK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FindSameImagesOK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FindSameImagesOK
+identifiers:
+- winget: SoftwareOK.FindSameImagesOK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/FindSameImagesOK
+aliases: []

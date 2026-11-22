@@ -1,0 +1,11 @@
+key: writage/writage
+publisher: writage
+name: Writage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/writage/writage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/writage/writage
+identifiers:
+- winget: writage.writage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/writage/writage
+aliases: []

@@ -1,0 +1,11 @@
+key: peartree-forge/sparkdown
+publisher: peartree-forge
+name: SparkDown
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PearTreeForge/SparkDown
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PearTreeForge/SparkDown
+identifiers:
+- winget: PearTreeForge.SparkDown
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PearTreeForge/SparkDown
+aliases: []

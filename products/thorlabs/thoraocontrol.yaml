@@ -1,0 +1,11 @@
+key: thorlabs/thoraocontrol
+publisher: thorlabs
+name: ThorAOControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorAOControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorAOControl
+identifiers:
+- winget: Thorlabs.ThorAOControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorAOControl
+aliases: []

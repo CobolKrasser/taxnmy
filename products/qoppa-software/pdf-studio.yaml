@@ -1,0 +1,11 @@
+key: qoppa-software/pdf-studio
+publisher: qoppa-software
+name: PDF Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qoppa/PDFStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qoppa/PDFStudio
+identifiers:
+- winget: Qoppa.PDFStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qoppa/PDFStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: pcvisit-software/pcvisit-support
+publisher: pcvisit-software
+name: pcvisit Support
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcvisit/pcvisitSupport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcvisit/pcvisitSupport
+identifiers:
+- winget: pcvisit.pcvisitSupport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pcvisit/pcvisitSupport
+aliases: []

@@ -1,0 +1,11 @@
+key: fair-data-innovations-hub/fairshare
+publisher: fair-data-innovations-hub
+name: FAIRshare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fairdataihub/FAIRshare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fairdataihub/FAIRshare
+identifiers:
+- winget: fairdataihub.FAIRshare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fairdataihub/FAIRshare
+aliases: []

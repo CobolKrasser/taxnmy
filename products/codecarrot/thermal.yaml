@@ -1,0 +1,11 @@
+key: codecarrot/thermal
+publisher: codecarrot
+name: Thermal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gitthermal/thermal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gitthermal/thermal
+identifiers:
+- winget: gitthermal.thermal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gitthermal/thermal
+aliases: []

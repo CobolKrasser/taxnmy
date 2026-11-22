@@ -1,0 +1,12 @@
+key: redisant/toolbox
+publisher: redisant
+name: Redisant Toolbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RedisantToolbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RedisantToolbox
+identifiers:
+- winget: Redisant.RedisantToolbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RedisantToolbox
+aliases:
+- redisant/redisant-toolbox

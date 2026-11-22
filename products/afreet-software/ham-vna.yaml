@@ -1,0 +1,11 @@
+key: afreet-software/ham-vna
+publisher: afreet-software
+name: Ham VNA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AfreetSoftware/HamVNA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AfreetSoftware/HamVNA
+identifiers:
+- winget: AfreetSoftware.HamVNA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AfreetSoftware/HamVNA
+aliases: []

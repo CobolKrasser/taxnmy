@@ -1,0 +1,11 @@
+key: basaba/kusto-terminal
+publisher: basaba
+name: Kusto Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/basaba/KustoTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/basaba/KustoTerminal
+identifiers:
+- winget: basaba.KustoTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/basaba/KustoTerminal
+aliases: []

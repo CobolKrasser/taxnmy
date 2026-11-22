@@ -1,0 +1,11 @@
+key: stacklok/minder
+publisher: stacklok
+name: minder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/minder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/minder
+identifiers:
+- winget: stacklok.minder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/minder
+aliases: []

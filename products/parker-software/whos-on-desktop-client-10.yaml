@@ -1,0 +1,11 @@
+key: parker-software/whos-on-desktop-client-10
+publisher: parker-software
+name: Whos On Desktop Client 10
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhosOn/WhosOnDesktopClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhosOn/WhosOnDesktopClient
+identifiers:
+- winget: WhosOn.WhosOnDesktopClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhosOn/WhosOnDesktopClient
+aliases: []

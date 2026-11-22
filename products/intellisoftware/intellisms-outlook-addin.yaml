@@ -1,0 +1,11 @@
+key: intellisoftware/intellisms-outlook-addin
+publisher: intellisoftware
+name: IntelliSMS Outlook Addin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IntelliSoftware/IntelliSMSOutlookAddin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IntelliSoftware/IntelliSMSOutlookAddin
+identifiers:
+- winget: IntelliSoftware.IntelliSMSOutlookAddin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IntelliSoftware/IntelliSMSOutlookAddin
+aliases: []

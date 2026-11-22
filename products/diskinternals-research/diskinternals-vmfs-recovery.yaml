@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-vmfs-recovery
+publisher: diskinternals-research
+name: DiskInternals VMFS Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/VMFSRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/VMFSRecovery
+identifiers:
+- winget: DiskInternals.VMFSRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/VMFSRecovery
+aliases: []

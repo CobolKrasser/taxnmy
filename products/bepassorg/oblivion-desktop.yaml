@@ -1,0 +1,11 @@
+key: bepassorg/oblivion-desktop
+publisher: bepassorg
+name: Oblivion Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BepassOrg/OblivionDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BepassOrg/OblivionDesktop
+identifiers:
+- winget: BepassOrg.OblivionDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BepassOrg/OblivionDesktop
+aliases: []

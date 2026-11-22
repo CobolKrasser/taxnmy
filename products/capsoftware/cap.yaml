@@ -1,0 +1,11 @@
+key: capsoftware/cap
+publisher: capsoftware
+name: Cap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CapSoftware/Cap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CapSoftware/Cap
+identifiers:
+- winget: CapSoftware.Cap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CapSoftware/Cap
+aliases: []

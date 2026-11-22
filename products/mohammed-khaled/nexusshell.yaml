@@ -1,0 +1,11 @@
+key: mohammed-khaled/nexusshell
+publisher: mohammed-khaled
+name: NexusShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MF/NexusShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MF/NexusShell
+identifiers:
+- winget: MF.NexusShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MF/NexusShell
+aliases: []

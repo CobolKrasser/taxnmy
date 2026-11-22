@@ -1,0 +1,11 @@
+key: microsoft/sbom-tool
+publisher: microsoft
+name: SBOM Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SBOMTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SBOMTool
+identifiers:
+- winget: Microsoft.SBOMTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/SBOMTool
+aliases: []

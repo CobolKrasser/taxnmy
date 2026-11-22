@@ -1,0 +1,11 @@
+key: macabacus/macabacus
+publisher: macabacus
+name: Macabacus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macabacus/Macabacus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macabacus/Macabacus
+identifiers:
+- winget: Macabacus.Macabacus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macabacus/Macabacus
+aliases: []

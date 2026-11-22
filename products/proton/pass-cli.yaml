@@ -1,0 +1,12 @@
+key: proton/pass-cli
+publisher: proton
+name: Proton Pass CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonPass/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonPass/CLI
+identifiers:
+- winget: Proton.ProtonPass.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonPass/CLI
+aliases:
+- proton/proton-pass-cli

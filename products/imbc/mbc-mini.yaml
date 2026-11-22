@@ -1,0 +1,11 @@
+key: imbc/mbc-mini
+publisher: imbc
+name: MBC mini
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iMBC/mini
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iMBC/mini
+identifiers:
+- winget: iMBC.mini
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iMBC/mini
+aliases: []

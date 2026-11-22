@@ -1,0 +1,11 @@
+key: reversinglabs/safe-viewer
+publisher: reversinglabs
+name: SAFE Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReversingLabs/SAFEViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReversingLabs/SAFEViewer
+identifiers:
+- winget: ReversingLabs.SAFEViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReversingLabs/SAFEViewer
+aliases: []

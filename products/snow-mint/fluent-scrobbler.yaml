@@ -1,0 +1,11 @@
+key: snow-mint/fluent-scrobbler
+publisher: snow-mint
+name: Fluent Scrobbler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowMint/FluentScrobbler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowMint/FluentScrobbler
+identifiers:
+- winget: SnowMint.FluentScrobbler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnowMint/FluentScrobbler
+aliases: []

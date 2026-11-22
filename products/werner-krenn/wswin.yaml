@@ -1,0 +1,11 @@
+key: werner-krenn/wswin
+publisher: werner-krenn
+name: WsWin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WernerKrenn/WsWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WernerKrenn/WsWin
+identifiers:
+- winget: WernerKrenn.WsWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WernerKrenn/WsWin
+aliases: []

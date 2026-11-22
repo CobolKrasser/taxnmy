@@ -1,0 +1,11 @@
+key: rtk-ai/rtk
+publisher: rtk-ai
+name: rtk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rtk-ai/rtk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rtk-ai/rtk
+identifiers:
+- winget: rtk-ai.rtk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rtk-ai/rtk
+aliases: []

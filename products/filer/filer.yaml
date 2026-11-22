@@ -1,0 +1,11 @@
+key: filer/filer
+publisher: filer
+name: filer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/no010/filer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/no010/filer
+identifiers:
+- winget: no010.filer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/no010/filer
+aliases: []

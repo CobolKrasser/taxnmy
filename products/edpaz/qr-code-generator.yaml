@@ -1,0 +1,11 @@
+key: edpaz/qr-code-generator
+publisher: edpaz
+name: QR Code Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/edpaz/QRCodeGenerator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/edpaz/QRCodeGenerator
+identifiers:
+- winget: edpaz.QRCodeGenerator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/edpaz/QRCodeGenerator
+aliases: []

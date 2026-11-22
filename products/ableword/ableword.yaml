@@ -1,0 +1,11 @@
+key: ableword/ableword
+publisher: ableword
+name: AbleWord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbleWord/AbleWord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbleWord/AbleWord
+identifiers:
+- winget: AbleWord.AbleWord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AbleWord/AbleWord
+aliases: []

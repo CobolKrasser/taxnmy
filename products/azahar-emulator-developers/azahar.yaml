@@ -1,0 +1,11 @@
+key: azahar-emulator-developers/azahar
+publisher: azahar-emulator-developers
+name: Azahar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar/MSYS2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar/MSYS2
+identifiers:
+- winget: AzaharEmu.Azahar.MSYS2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar/MSYS2
+aliases: []

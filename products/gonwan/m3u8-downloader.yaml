@@ -1,0 +1,11 @@
+key: gonwan/m3u8-downloader
+publisher: gonwan
+name: M3U8 Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gonwan/M3U8-Downloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gonwan/M3U8-Downloader
+identifiers:
+- winget: gonwan.M3U8-Downloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gonwan/M3U8-Downloader
+aliases: []

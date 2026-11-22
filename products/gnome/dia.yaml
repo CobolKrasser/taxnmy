@@ -1,0 +1,11 @@
+key: gnome/dia
+publisher: gnome
+name: Dia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Dia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Dia
+identifiers:
+- winget: gnome.Dia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Dia
+aliases: []

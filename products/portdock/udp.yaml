@@ -1,0 +1,12 @@
+key: portdock/udp
+publisher: portdock
+name: PortDock UDP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortDock/UDP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortDock/UDP
+identifiers:
+- winget: PortDock.UDP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortDock/UDP
+aliases:
+- portdock/portdock-udp

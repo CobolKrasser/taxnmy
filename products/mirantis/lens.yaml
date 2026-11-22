@@ -1,0 +1,11 @@
+key: mirantis/lens
+publisher: mirantis
+name: Lens
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirantis/Lens
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirantis/Lens
+identifiers:
+- winget: Mirantis.Lens
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirantis/Lens
+aliases: []

@@ -1,0 +1,11 @@
+key: nch-software/mixpad
+publisher: nch-software
+name: MixPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/MixPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/MixPad
+identifiers:
+- winget: NCHSoftware.MixPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/MixPad
+aliases: []

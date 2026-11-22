@@ -1,0 +1,11 @@
+key: spqrk-it-services/phrasevault
+publisher: spqrk-it-services
+name: PhraseVault
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ptmrio/phrasevault
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ptmrio/phrasevault
+identifiers:
+- winget: ptmrio.phrasevault
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ptmrio/phrasevault
+aliases: []

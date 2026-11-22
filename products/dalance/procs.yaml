@@ -1,0 +1,11 @@
+key: dalance/procs
+publisher: dalance
+name: procs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dalance/procs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dalance/procs
+identifiers:
+- winget: dalance.procs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dalance/procs
+aliases: []

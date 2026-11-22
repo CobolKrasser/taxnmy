@@ -1,0 +1,11 @@
+key: lubos-hasko/manager
+publisher: lubos-hasko
+name: Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LubosHasko/Manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LubosHasko/Manager
+identifiers:
+- winget: LubosHasko.Manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LubosHasko/Manager
+aliases: []

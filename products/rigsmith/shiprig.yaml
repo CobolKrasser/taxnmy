@@ -1,0 +1,11 @@
+key: rigsmith/shiprig
+publisher: rigsmith
+name: ShipRig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ShipRig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ShipRig
+identifiers:
+- winget: RigSmith.ShipRig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ShipRig
+aliases: []

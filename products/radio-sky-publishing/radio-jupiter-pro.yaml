@@ -1,0 +1,11 @@
+key: radio-sky-publishing/radio-jupiter-pro
+publisher: radio-sky-publishing
+name: Radio-Jupiter Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/RadioJupiter/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/RadioJupiter/Pro
+identifiers:
+- winget: RadioSky.RadioJupiter.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RadioSky/RadioJupiter/Pro
+aliases: []

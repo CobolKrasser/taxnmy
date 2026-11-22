@@ -1,0 +1,11 @@
+key: browserworks/waterfox
+publisher: browserworks
+name: Waterfox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Waterfox/Waterfox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Waterfox/Waterfox
+identifiers:
+- winget: Waterfox.Waterfox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Waterfox/Waterfox
+aliases: []

@@ -1,0 +1,11 @@
+key: claration/impactor-cli
+publisher: claration
+name: Impactor CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLARATION/Impactor/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLARATION/Impactor/CLI
+identifiers:
+- winget: CLARATION.Impactor.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLARATION/Impactor/CLI
+aliases: []

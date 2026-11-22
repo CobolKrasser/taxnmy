@@ -1,0 +1,11 @@
+key: andy-bochmann/devkill
+publisher: andy-bochmann
+name: DevKill
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndyBochmann/DevKill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndyBochmann/DevKill
+identifiers:
+- winget: AndyBochmann.DevKill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AndyBochmann/DevKill
+aliases: []

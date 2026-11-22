@@ -1,0 +1,11 @@
+key: acigo/crm-satmar
+publisher: acigo
+name: CRM Satmar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acigo/CRMSatmar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acigo/CRMSatmar
+identifiers:
+- winget: Acigo.CRMSatmar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Acigo/CRMSatmar
+aliases: []

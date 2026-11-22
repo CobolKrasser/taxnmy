@@ -1,0 +1,11 @@
+key: briano/uwphook
+publisher: briano
+name: UWPHook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brianlima/uwphook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brianlima/uwphook
+identifiers:
+- winget: brianlima.uwphook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brianlima/uwphook
+aliases: []

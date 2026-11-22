@@ -1,0 +1,11 @@
+key: waveapps/keyecho
+publisher: waveapps
+name: KeyEcho
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZacharyL2/KeyEcho
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZacharyL2/KeyEcho
+identifiers:
+- winget: ZacharyL2.KeyEcho
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZacharyL2/KeyEcho
+aliases: []

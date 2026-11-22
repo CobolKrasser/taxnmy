@@ -1,0 +1,11 @@
+key: sensirion/viewer-software-usb-rs485
+publisher: sensirion
+name: Viewer Software USB/RS485
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sensirion/Viewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sensirion/Viewer
+identifiers:
+- winget: Sensirion.Viewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sensirion/Viewer
+aliases: []

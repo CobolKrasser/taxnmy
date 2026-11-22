@@ -1,0 +1,11 @@
+key: owlplug/owlplug
+publisher: owlplug
+name: OwlPlug
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OwlPlug/OwlPlug
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OwlPlug/OwlPlug
+identifiers:
+- winget: OwlPlug.OwlPlug
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OwlPlug/OwlPlug
+aliases: []

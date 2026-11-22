@@ -1,0 +1,11 @@
+key: univrsal/input-overlay
+publisher: univrsal
+name: input-overlay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/univrsal/input-overlay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/univrsal/input-overlay
+identifiers:
+- winget: univrsal.input-overlay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/univrsal/input-overlay
+aliases: []

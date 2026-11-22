@@ -1,0 +1,12 @@
+key: adinstruments/kent
+publisher: adinstruments
+name: ADInstruments Kent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/Kent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/Kent
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.Kent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/Kent
+aliases:
+- adinstruments/adinstruments-kent

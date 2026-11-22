@@ -1,0 +1,11 @@
+key: redisant/iec61850clientsimulator
+publisher: redisant
+name: IEC61850ClientSimulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC61850ClientSimulator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC61850ClientSimulator
+identifiers:
+- winget: Redisant.IEC61850ClientSimulator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/IEC61850ClientSimulator
+aliases: []

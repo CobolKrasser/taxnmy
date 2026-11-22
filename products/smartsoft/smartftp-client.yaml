@@ -1,0 +1,11 @@
+key: smartsoft/smartftp-client
+publisher: smartsoft
+name: SmartFTP Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartSoft/SmartFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartSoft/SmartFTP
+identifiers:
+- winget: SmartSoft.SmartFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartSoft/SmartFTP
+aliases: []

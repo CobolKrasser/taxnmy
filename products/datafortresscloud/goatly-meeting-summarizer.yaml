@@ -1,0 +1,11 @@
+key: datafortresscloud/goatly-meeting-summarizer
+publisher: datafortresscloud
+name: GOATLY Meeting Summarizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataFortressCloud/GOATLYMeetingSummarizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataFortressCloud/GOATLYMeetingSummarizer
+identifiers:
+- winget: DataFortressCloud.GOATLYMeetingSummarizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DataFortressCloud/GOATLYMeetingSummarizer
+aliases: []

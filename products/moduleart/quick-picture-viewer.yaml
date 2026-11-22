@@ -1,0 +1,11 @@
+key: moduleart/quick-picture-viewer
+publisher: moduleart
+name: Quick Picture Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModuleArt/QuickPictureViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModuleArt/QuickPictureViewer
+identifiers:
+- winget: ModuleArt.QuickPictureViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModuleArt/QuickPictureViewer
+aliases: []

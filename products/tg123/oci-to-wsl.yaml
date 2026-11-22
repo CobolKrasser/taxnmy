@@ -1,0 +1,11 @@
+key: tg123/oci-to-wsl
+publisher: tg123
+name: oci-to-wsl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tg123/oci-to-wsl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tg123/oci-to-wsl
+identifiers:
+- winget: tg123.oci-to-wsl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tg123/oci-to-wsl
+aliases: []

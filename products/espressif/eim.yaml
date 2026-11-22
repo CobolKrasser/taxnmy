@@ -1,0 +1,11 @@
+key: espressif/eim
+publisher: espressif
+name: eim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Espressif/eim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Espressif/eim
+identifiers:
+- winget: Espressif.eim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Espressif/eim
+aliases: []

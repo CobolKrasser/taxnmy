@@ -1,0 +1,11 @@
+key: maddev/buttercup
+publisher: maddev
+name: Buttercup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buttercup/Buttercup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buttercup/Buttercup
+identifiers:
+- winget: Buttercup.Buttercup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Buttercup/Buttercup
+aliases: []

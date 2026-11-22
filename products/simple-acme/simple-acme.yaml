@@ -1,0 +1,11 @@
+key: simple-acme/simple-acme
+publisher: simple-acme
+name: simple-acme
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/simple-acme/simple-acme
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/simple-acme/simple-acme
+identifiers:
+- winget: simple-acme.simple-acme
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/simple-acme/simple-acme
+aliases: []

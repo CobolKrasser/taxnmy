@@ -1,0 +1,11 @@
+key: dinaup-cli/dinaup-cli
+publisher: dinaup-cli
+name: Dinaup.CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dinaup/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dinaup/CLI
+identifiers:
+- winget: Dinaup.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dinaup/CLI
+aliases: []

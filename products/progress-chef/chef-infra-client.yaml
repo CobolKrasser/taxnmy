@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:chef:chef
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/chef-infra-client.md
+- winget: ChefSoftware.InfraClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChefSoftware/InfraClient
 aliases: []

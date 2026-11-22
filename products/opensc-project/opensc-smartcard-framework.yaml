@@ -1,0 +1,11 @@
+key: opensc-project/opensc-smartcard-framework
+publisher: opensc-project
+name: OpenSC smartcard framework
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSC/OpenSC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSC/OpenSC
+identifiers:
+- winget: OpenSC.OpenSC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSC/OpenSC
+aliases: []

@@ -1,0 +1,11 @@
+key: agntcy/shadictl
+publisher: agntcy
+name: shadictl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGNTCY/shadictl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGNTCY/shadictl
+identifiers:
+- winget: AGNTCY.shadictl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGNTCY/shadictl
+aliases: []

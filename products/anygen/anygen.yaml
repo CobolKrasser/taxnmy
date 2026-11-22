@@ -1,0 +1,11 @@
+key: anygen/anygen
+publisher: anygen
+name: AnyGen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/AnyGen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/AnyGen
+identifiers:
+- winget: ByteDance.AnyGen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/AnyGen
+aliases: []

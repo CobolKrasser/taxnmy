@@ -1,0 +1,11 @@
+key: wikimedia-project/huggle
+publisher: wikimedia-project
+name: Huggle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikimediaProject/Huggle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikimediaProject/Huggle
+identifiers:
+- winget: WikimediaProject.Huggle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikimediaProject/Huggle
+aliases: []

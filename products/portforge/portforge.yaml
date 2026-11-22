@@ -1,0 +1,11 @@
+key: portforge/portforge
+publisher: portforge
+name: portforge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortForge/PortForge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortForge/PortForge
+identifiers:
+- winget: PortForge.PortForge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PortForge/PortForge
+aliases: []

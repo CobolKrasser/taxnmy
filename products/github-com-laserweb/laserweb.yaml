@@ -1,0 +1,11 @@
+key: github-com-laserweb/laserweb
+publisher: github-com-laserweb
+name: LaserWeb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LaserWeb/LaserWeb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LaserWeb/LaserWeb
+identifiers:
+- winget: LaserWeb.LaserWeb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LaserWeb/LaserWeb
+aliases: []

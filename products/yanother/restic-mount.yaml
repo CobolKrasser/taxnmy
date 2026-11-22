@@ -1,0 +1,11 @@
+key: yanother/restic-mount
+publisher: yanother
+name: restic-mount
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yanother/restic-mount
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yanother/restic-mount
+identifiers:
+- winget: Yanother.restic-mount
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yanother/restic-mount
+aliases: []

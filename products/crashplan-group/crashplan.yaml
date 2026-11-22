@@ -1,0 +1,11 @@
+key: crashplan-group/crashplan
+publisher: crashplan-group
+name: CrashPlan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrashPlan/CrashPlan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrashPlan/CrashPlan
+identifiers:
+- winget: CrashPlan.CrashPlan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrashPlan/CrashPlan
+aliases: []

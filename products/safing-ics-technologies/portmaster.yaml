@@ -1,0 +1,11 @@
+key: safing-ics-technologies/portmaster
+publisher: safing-ics-technologies
+name: Portmaster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Safing/Portmaster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Safing/Portmaster
+identifiers:
+- winget: Safing.Portmaster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Safing/Portmaster
+aliases: []

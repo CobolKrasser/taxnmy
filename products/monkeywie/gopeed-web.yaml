@@ -1,0 +1,11 @@
+key: monkeywie/gopeed-web
+publisher: monkeywie
+name: Gopeed Web
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/monkeyWie/Gopeed/Web
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/monkeyWie/Gopeed/Web
+identifiers:
+- winget: monkeyWie.Gopeed.Web
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/monkeyWie/Gopeed/Web
+aliases: []

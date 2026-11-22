@@ -1,0 +1,11 @@
+key: learning-machines/vectorcraft
+publisher: learning-machines
+name: VectorCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/VectorCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/VectorCraft
+identifiers:
+- winget: ArtCraft.VectorCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/VectorCraft
+aliases: []

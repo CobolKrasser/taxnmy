@@ -1,0 +1,12 @@
+key: plogue/chipspeech
+publisher: plogue
+name: Plogue chipspeech
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/plogue/chipspeech
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/plogue/chipspeech
+identifiers:
+- winget: plogue.chipspeech
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/plogue/chipspeech
+aliases:
+- plogue/plogue-chipspeech

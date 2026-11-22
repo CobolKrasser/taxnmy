@@ -1,0 +1,11 @@
+key: jam-software/filelist
+publisher: jam-software
+name: FileList
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/FileList
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/FileList
+identifiers:
+- winget: JAMSoftware.FileList
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/FileList
+aliases: []

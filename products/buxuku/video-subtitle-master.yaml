@@ -1,0 +1,11 @@
+key: buxuku/video-subtitle-master
+publisher: buxuku
+name: Video Subtitle Master
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CPU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CPU
+identifiers:
+- winget: buxuku.SmartSub.CPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buxuku/SmartSub/CPU
+aliases: []

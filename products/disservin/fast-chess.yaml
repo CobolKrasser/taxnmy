@@ -1,0 +1,11 @@
+key: disservin/fast-chess
+publisher: disservin
+name: Fast Chess
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Disservin/FastChess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Disservin/FastChess
+identifiers:
+- winget: Disservin.FastChess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Disservin/FastChess
+aliases: []

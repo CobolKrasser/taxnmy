@@ -1,0 +1,11 @@
+key: nhn-bugs/bugs
+publisher: nhn-bugs
+name: Bugs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNBugs/Bugs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNBugs/Bugs
+identifiers:
+- winget: NHNBugs.Bugs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NHNBugs/Bugs
+aliases: []

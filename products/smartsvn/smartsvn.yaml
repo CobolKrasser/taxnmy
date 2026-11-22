@@ -1,0 +1,11 @@
+key: smartsvn/smartsvn
+publisher: smartsvn
+name: SmartSVN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartSVN/SmartSVN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartSVN/SmartSVN
+identifiers:
+- winget: SmartSVN.SmartSVN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SmartSVN/SmartSVN
+aliases: []

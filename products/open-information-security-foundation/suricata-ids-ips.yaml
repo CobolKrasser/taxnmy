@@ -1,0 +1,11 @@
+key: open-information-security-foundation/suricata-ids-ips
+publisher: open-information-security-foundation
+name: Suricata IDS/IPS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OISF/Suricata
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OISF/Suricata
+identifiers:
+- winget: OISF.Suricata
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OISF/Suricata
+aliases: []

@@ -1,0 +1,11 @@
+key: janea-systems/memurai-developer
+publisher: janea-systems
+name: Memurai Developer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Memurai/MemuraiDeveloper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Memurai/MemuraiDeveloper
+identifiers:
+- winget: Memurai.MemuraiDeveloper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Memurai/MemuraiDeveloper
+aliases: []

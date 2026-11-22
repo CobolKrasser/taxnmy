@@ -1,0 +1,11 @@
+key: authgate-cli/authgate-cli
+publisher: authgate-cli
+name: authgate-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Authgate/authgate-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Authgate/authgate-cli
+identifiers:
+- winget: Authgate.authgate-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Authgate/authgate-cli
+aliases: []

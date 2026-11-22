@@ -1,0 +1,11 @@
+key: time-clock-wizard/timeclockwizard
+publisher: time-clock-wizard
+name: Timeclockwizard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TimeClockWizard/TimeClockWizard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TimeClockWizard/TimeClockWizard
+identifiers:
+- winget: TimeClockWizard.TimeClockWizard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TimeClockWizard/TimeClockWizard
+aliases: []

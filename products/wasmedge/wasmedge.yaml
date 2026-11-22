@@ -1,0 +1,11 @@
+key: wasmedge/wasmedge
+publisher: wasmedge
+name: WasmEdge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WasmEdge/WasmEdge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WasmEdge/WasmEdge
+identifiers:
+- winget: WasmEdge.WasmEdge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WasmEdge/WasmEdge
+aliases: []

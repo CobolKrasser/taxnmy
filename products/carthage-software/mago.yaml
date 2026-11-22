@@ -1,0 +1,11 @@
+key: carthage-software/mago
+publisher: carthage-software
+name: Mago
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CarthageSoftware/Mago
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CarthageSoftware/Mago
+identifiers:
+- winget: CarthageSoftware.Mago
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CarthageSoftware/Mago
+aliases: []

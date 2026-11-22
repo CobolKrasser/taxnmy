@@ -1,0 +1,11 @@
+key: hammadxcm/phantom
+publisher: hammadxcm
+name: Phantom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hammadxcm/go-phantom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hammadxcm/go-phantom
+identifiers:
+- winget: hammadxcm.go-phantom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hammadxcm/go-phantom
+aliases: []

@@ -1,0 +1,11 @@
+key: yyztools/yyztools
+publisher: yyztools
+name: yyzTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yyzTools/yyzTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yyzTools/yyzTools
+identifiers:
+- winget: yyzTools.yyzTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/yyzTools/yyzTools
+aliases: []

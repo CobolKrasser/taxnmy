@@ -1,0 +1,11 @@
+key: ternix/ternix
+publisher: ternix
+name: Ternix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Ternix/Ternix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Ternix/Ternix
+identifiers:
+- winget: Ternix.Ternix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Ternix/Ternix
+aliases: []

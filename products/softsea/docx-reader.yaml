@@ -1,0 +1,11 @@
+key: softsea/docx-reader
+publisher: softsea
+name: Docx Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DocxReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DocxReader
+identifiers:
+- winget: SoftSea.DocxReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DocxReader
+aliases: []

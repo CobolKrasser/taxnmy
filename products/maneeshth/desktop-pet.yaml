@@ -1,0 +1,11 @@
+key: maneeshth/desktop-pet
+publisher: maneeshth
+name: Desktop Pet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maneeshth/DesktopPet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maneeshth/DesktopPet
+identifiers:
+- winget: maneeshth.DesktopPet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maneeshth/DesktopPet
+aliases: []

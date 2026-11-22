@@ -1,0 +1,11 @@
+key: klcp/k-lite-mega-codec-pack
+publisher: klcp
+name: K-Lite Mega Codec Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodecGuide/K-LiteCodecPack/Mega
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodecGuide/K-LiteCodecPack/Mega
+identifiers:
+- winget: CodecGuide.K-LiteCodecPack.Mega
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodecGuide/K-LiteCodecPack/Mega
+aliases: []

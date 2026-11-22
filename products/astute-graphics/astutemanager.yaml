@@ -1,0 +1,11 @@
+key: astute-graphics/astutemanager
+publisher: astute-graphics
+name: AstuteManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstuteGraphics/AstuteManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstuteGraphics/AstuteManager
+identifiers:
+- winget: AstuteGraphics.AstuteManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AstuteGraphics/AstuteManager
+aliases: []

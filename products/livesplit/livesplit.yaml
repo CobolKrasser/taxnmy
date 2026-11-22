@@ -1,0 +1,11 @@
+key: livesplit/livesplit
+publisher: livesplit
+name: LiveSplit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveSplit/LiveSplit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveSplit/LiveSplit
+identifiers:
+- winget: LiveSplit.LiveSplit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiveSplit/LiveSplit
+aliases: []

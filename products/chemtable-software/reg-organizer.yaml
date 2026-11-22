@@ -1,0 +1,11 @@
+key: chemtable-software/reg-organizer
+publisher: chemtable-software
+name: Reg Organizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/RegOrganizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/RegOrganizer
+identifiers:
+- winget: ChemTableSoftware.RegOrganizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/RegOrganizer
+aliases: []

@@ -1,0 +1,11 @@
+key: ipevo/camcontrol
+publisher: ipevo
+name: CAMCONTROL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/CamControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/CamControl
+identifiers:
+- winget: IPEVO.CamControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/CamControl
+aliases: []

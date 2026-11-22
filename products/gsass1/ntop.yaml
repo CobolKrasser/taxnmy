@@ -1,0 +1,11 @@
+key: gsass1/ntop
+publisher: gsass1
+name: NTop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gsass1/NTop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gsass1/NTop
+identifiers:
+- winget: gsass1.NTop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gsass1/NTop
+aliases: []

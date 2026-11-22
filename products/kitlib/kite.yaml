@@ -1,0 +1,11 @@
+key: kitlib/kite
+publisher: kitlib
+name: kite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KitLib/Kite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KitLib/Kite
+identifiers:
+- winget: KitLib.Kite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KitLib/Kite
+aliases: []

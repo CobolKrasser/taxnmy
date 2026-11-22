@@ -1,0 +1,11 @@
+key: stormix/deadlock-mod-manager
+publisher: stormix
+name: Deadlock Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stormix/DeadlockModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stormix/DeadlockModManager
+identifiers:
+- winget: Stormix.DeadlockModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stormix/DeadlockModManager
+aliases: []

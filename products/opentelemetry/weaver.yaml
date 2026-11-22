@@ -1,0 +1,11 @@
+key: opentelemetry/weaver
+publisher: opentelemetry
+name: Weaver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTelemetry/Weaver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTelemetry/Weaver
+identifiers:
+- winget: OpenTelemetry.Weaver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTelemetry/Weaver
+aliases: []

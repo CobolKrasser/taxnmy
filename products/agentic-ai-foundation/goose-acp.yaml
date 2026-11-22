@@ -1,0 +1,11 @@
+key: agentic-ai-foundation/goose-acp
+publisher: agentic-ai-foundation
+name: goose ACP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgenticAIFoundation/gooseACP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgenticAIFoundation/gooseACP
+identifiers:
+- winget: AgenticAIFoundation.gooseACP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AgenticAIFoundation/gooseACP
+aliases: []

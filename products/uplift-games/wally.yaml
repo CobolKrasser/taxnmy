@@ -1,0 +1,11 @@
+key: uplift-games/wally
+publisher: uplift-games
+name: Wally
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpliftGames/wally
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpliftGames/wally
+identifiers:
+- winget: UpliftGames.wally
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UpliftGames/wally
+aliases: []

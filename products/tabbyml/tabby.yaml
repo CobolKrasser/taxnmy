@@ -1,0 +1,11 @@
+key: tabbyml/tabby
+publisher: tabbyml
+name: Tabby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabbyML/Tabby
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabbyML/Tabby
+identifiers:
+- winget: TabbyML.Tabby
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabbyML/Tabby
+aliases: []

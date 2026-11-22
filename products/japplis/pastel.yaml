@@ -1,0 +1,12 @@
+key: japplis/pastel
+publisher: japplis
+name: Japplis Pastel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Pastel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Pastel
+identifiers:
+- winget: Japplis.Pastel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Japplis/Pastel
+aliases:
+- japplis/japplis-pastel

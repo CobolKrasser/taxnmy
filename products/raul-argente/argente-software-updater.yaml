@@ -1,0 +1,11 @@
+key: raul-argente/argente-software-updater
+publisher: raul-argente
+name: Argente Software Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SoftwareUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SoftwareUpdater
+identifiers:
+- winget: Argente.SoftwareUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SoftwareUpdater
+aliases: []

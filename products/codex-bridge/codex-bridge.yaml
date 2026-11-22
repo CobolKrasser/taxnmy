@@ -1,0 +1,11 @@
+key: codex-bridge/codex-bridge
+publisher: codex-bridge
+name: Codex Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fanch-hui/CodexBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fanch-hui/CodexBridge
+identifiers:
+- winget: Fanch-hui.CodexBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fanch-hui/CodexBridge
+aliases: []

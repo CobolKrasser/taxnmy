@@ -1,0 +1,11 @@
+key: singtown/openmv-mcp-server
+publisher: singtown
+name: OpenMV MCP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SingTown/openmv-mcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SingTown/openmv-mcp
+identifiers:
+- winget: SingTown.openmv-mcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SingTown/openmv-mcp
+aliases: []

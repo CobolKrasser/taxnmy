@@ -1,0 +1,11 @@
+key: open-policy-agent/open-policy-agent
+publisher: open-policy-agent
+name: Open Policy Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/open-policy-agent/opa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/open-policy-agent/opa
+identifiers:
+- winget: open-policy-agent.opa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/open-policy-agent/opa
+aliases: []

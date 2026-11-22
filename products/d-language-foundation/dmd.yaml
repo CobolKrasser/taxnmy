@@ -1,0 +1,11 @@
+key: d-language-foundation/dmd
+publisher: d-language-foundation
+name: DMD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dlang/DMD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dlang/DMD
+identifiers:
+- winget: Dlang.DMD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dlang/DMD
+aliases: []

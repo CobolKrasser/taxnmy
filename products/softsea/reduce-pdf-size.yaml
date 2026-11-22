@@ -1,0 +1,11 @@
+key: softsea/reduce-pdf-size
+publisher: softsea
+name: Reduce PDF Size
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ReducePDFSize
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ReducePDFSize
+identifiers:
+- winget: SoftSea.ReducePDFSize
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/ReducePDFSize
+aliases: []

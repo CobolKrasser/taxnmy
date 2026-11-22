@@ -1,0 +1,11 @@
+key: paytalab/pass-order
+publisher: paytalab
+name: Pass Order
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaytaLab/PassOrder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaytaLab/PassOrder
+identifiers:
+- winget: PaytaLab.PassOrder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaytaLab/PassOrder
+aliases: []

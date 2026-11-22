@@ -1,0 +1,11 @@
+key: matthias-koefferlein/klayout-layout-viewer-and-editor
+publisher: matthias-koefferlein
+name: Klayout - Layout Viewer And Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KLayout/KLayout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KLayout/KLayout
+identifiers:
+- winget: KLayout.KLayout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KLayout/KLayout
+aliases: []

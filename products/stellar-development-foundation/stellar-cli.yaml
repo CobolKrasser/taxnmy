@@ -1,0 +1,11 @@
+key: stellar-development-foundation/stellar-cli
+publisher: stellar-development-foundation
+name: Stellar CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellar/StellarCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellar/StellarCLI
+identifiers:
+- winget: Stellar.StellarCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stellar/StellarCLI
+aliases: []

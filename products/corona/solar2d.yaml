@@ -1,0 +1,11 @@
+key: corona/solar2d
+publisher: corona
+name: Solar2D
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corona/Solar2D
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corona/Solar2D
+identifiers:
+- winget: Corona.Solar2D
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corona/Solar2D
+aliases: []

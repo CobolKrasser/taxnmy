@@ -1,0 +1,11 @@
+key: antstream/antstream
+publisher: antstream
+name: Antstream
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntstreamLtd/Antstream
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntstreamLtd/Antstream
+identifiers:
+- winget: AntstreamLtd.Antstream
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntstreamLtd/Antstream
+aliases: []

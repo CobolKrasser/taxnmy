@@ -1,0 +1,11 @@
+key: dmitry-chapyshev/aspia-host
+publisher: dmitry-chapyshev
+name: Aspia Host
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DmitryChapyshev/AspiaHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DmitryChapyshev/AspiaHost
+identifiers:
+- winget: DmitryChapyshev.AspiaHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DmitryChapyshev/AspiaHost
+aliases: []

@@ -1,0 +1,11 @@
+key: hongkong-jiho/gihosoft-video-trimmer
+publisher: hongkong-jiho
+name: Gihosoft Video Trimmer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gihosoft/FreeVideoCutter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gihosoft/FreeVideoCutter
+identifiers:
+- winget: Gihosoft.FreeVideoCutter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gihosoft/FreeVideoCutter
+aliases: []

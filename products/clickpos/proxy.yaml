@@ -1,0 +1,12 @@
+key: clickpos/proxy
+publisher: clickpos
+name: ClickPOS Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClickPOS/ClickPOSProxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClickPOS/ClickPOSProxy
+identifiers:
+- winget: ClickPOS.ClickPOSProxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClickPOS/ClickPOSProxy
+aliases:
+- clickpos/clickpos-proxy

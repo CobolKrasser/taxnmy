@@ -1,0 +1,11 @@
+key: spring-sg/dola
+publisher: spring-sg
+name: Dola
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Dola
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Dola
+identifiers:
+- winget: ByteDance.Dola
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Dola
+aliases: []

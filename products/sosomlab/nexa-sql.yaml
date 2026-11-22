@@ -1,0 +1,11 @@
+key: sosomlab/nexa-sql
+publisher: sosomlab
+name: Nexa SQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaSQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaSQL
+identifiers:
+- winget: SosomLab.NexaSQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SosomLab/NexaSQL
+aliases: []

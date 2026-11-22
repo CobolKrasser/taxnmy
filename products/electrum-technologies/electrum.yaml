@@ -1,0 +1,11 @@
+key: electrum-technologies/electrum
+publisher: electrum-technologies
+name: Electrum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Electrum/Electrum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Electrum/Electrum
+identifiers:
+- winget: Electrum.Electrum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Electrum/Electrum
+aliases: []

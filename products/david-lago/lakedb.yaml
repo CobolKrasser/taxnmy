@@ -1,0 +1,11 @@
+key: david-lago/lakedb
+publisher: david-lago
+name: LakeDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavidLago/LakeDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavidLago/LakeDB
+identifiers:
+- winget: DavidLago.LakeDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DavidLago/LakeDB
+aliases: []

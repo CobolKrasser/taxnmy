@@ -1,0 +1,11 @@
+key: mgth/little-big-mouse
+publisher: mgth
+name: Little Big Mouse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mgth/LittleBigMouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mgth/LittleBigMouse
+identifiers:
+- winget: mgth.LittleBigMouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mgth/LittleBigMouse
+aliases: []

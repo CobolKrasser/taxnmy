@@ -1,0 +1,11 @@
+key: clash-verge-rev/clash-verge
+publisher: clash-verge-rev
+name: Clash Verge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClashVergeRev/ClashVergeRev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClashVergeRev/ClashVergeRev
+identifiers:
+- winget: ClashVergeRev.ClashVergeRev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClashVergeRev/ClashVergeRev
+aliases: []

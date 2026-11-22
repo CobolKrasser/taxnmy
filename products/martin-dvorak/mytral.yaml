@@ -1,0 +1,11 @@
+key: martin-dvorak/mytral
+publisher: martin-dvorak
+name: MyTraL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mytral/Mytral
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mytral/Mytral
+identifiers:
+- winget: Mytral.Mytral
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mytral/Mytral
+aliases: []

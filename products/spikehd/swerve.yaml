@@ -1,0 +1,11 @@
+key: spikehd/swerve
+publisher: spikehd
+name: swerve
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpikeHD/swerve
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpikeHD/swerve
+identifiers:
+- winget: SpikeHD.swerve
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpikeHD/swerve
+aliases: []

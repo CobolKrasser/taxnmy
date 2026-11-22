@@ -1,0 +1,11 @@
+key: videoclinic/dms-desktop
+publisher: videoclinic
+name: DMS Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Videoclinic/DMSDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Videoclinic/DMSDesktop
+identifiers:
+- winget: Videoclinic.DMSDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Videoclinic/DMSDesktop
+aliases: []

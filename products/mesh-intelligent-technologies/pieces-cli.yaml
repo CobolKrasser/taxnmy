@@ -1,0 +1,11 @@
+key: mesh-intelligent-technologies/pieces-cli
+publisher: mesh-intelligent-technologies
+name: Pieces CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshIntelligentTechnologies/PiecesCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshIntelligentTechnologies/PiecesCLI
+identifiers:
+- winget: MeshIntelligentTechnologies.PiecesCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeshIntelligentTechnologies/PiecesCLI
+aliases: []

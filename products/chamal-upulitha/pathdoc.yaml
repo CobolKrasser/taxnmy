@@ -1,0 +1,11 @@
+key: chamal-upulitha/pathdoc
+publisher: chamal-upulitha
+name: pathdoc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chamal-code/pathdoc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chamal-code/pathdoc
+identifiers:
+- winget: chamal-code.pathdoc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chamal-code/pathdoc
+aliases: []

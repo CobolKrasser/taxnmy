@@ -1,0 +1,11 @@
+key: chainner-org/chainner
+publisher: chainner-org
+name: chaiNNer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chaiNNer-org/chaiNNer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chaiNNer-org/chaiNNer
+identifiers:
+- winget: chaiNNer-org.chaiNNer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chaiNNer-org/chaiNNer
+aliases: []

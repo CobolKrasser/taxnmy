@@ -1,0 +1,11 @@
+key: thewawar/simple-http-server
+publisher: thewawar
+name: simple-http-server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheWaWaR/simple-http-server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheWaWaR/simple-http-server
+identifiers:
+- winget: TheWaWaR.simple-http-server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheWaWaR/simple-http-server
+aliases: []

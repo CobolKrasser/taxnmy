@@ -1,0 +1,11 @@
+key: heroic-games-launcher/gogdl
+publisher: heroic-games-launcher
+name: GOGDL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroicGamesLauncher/GOGDL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroicGamesLauncher/GOGDL
+identifiers:
+- winget: HeroicGamesLauncher.GOGDL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeroicGamesLauncher/GOGDL
+aliases: []

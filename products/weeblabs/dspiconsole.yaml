@@ -1,0 +1,11 @@
+key: weeblabs/dspiconsole
+publisher: weeblabs
+name: DSPiConsole
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeebLabs/DSPiConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeebLabs/DSPiConsole
+identifiers:
+- winget: WeebLabs.DSPiConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeebLabs/DSPiConsole
+aliases: []

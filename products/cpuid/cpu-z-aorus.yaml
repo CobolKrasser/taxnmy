@@ -1,0 +1,12 @@
+key: cpuid/cpu-z-aorus
+publisher: cpuid
+name: CPUID CPU-Z Aorus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/AORUS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/AORUS
+identifiers:
+- winget: CPUID.CPU-Z.AORUS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/CPU-Z/AORUS
+aliases:
+- cpuid/cpuid-cpu-z-aorus

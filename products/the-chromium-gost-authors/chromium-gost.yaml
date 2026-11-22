@@ -1,0 +1,11 @@
+key: the-chromium-gost-authors/chromium-gost
+publisher: the-chromium-gost-authors
+name: Chromium-Gost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoPro/Chromium-Gost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoPro/Chromium-Gost
+identifiers:
+- winget: CryptoPro.Chromium-Gost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoPro/Chromium-Gost
+aliases: []

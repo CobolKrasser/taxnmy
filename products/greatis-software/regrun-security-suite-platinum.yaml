@@ -1,0 +1,11 @@
+key: greatis-software/regrun-security-suite-platinum
+publisher: greatis-software
+name: RegRun Security Suite Platinum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Platinum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Platinum
+identifiers:
+- winget: Greatis.RegRun.Platinum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Platinum
+aliases: []

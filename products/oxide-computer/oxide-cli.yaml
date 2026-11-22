@@ -1,0 +1,11 @@
+key: oxide-computer/oxide-cli
+publisher: oxide-computer
+name: Oxide CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OxideComputer/OxideCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OxideComputer/OxideCLI
+identifiers:
+- winget: OxideComputer.OxideCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OxideComputer/OxideCLI
+aliases: []

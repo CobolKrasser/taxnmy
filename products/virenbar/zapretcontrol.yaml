@@ -1,0 +1,11 @@
+key: virenbar/zapretcontrol
+publisher: virenbar
+name: ZapretControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Virenbar/ZapretControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Virenbar/ZapretControl
+identifiers:
+- winget: Virenbar.ZapretControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Virenbar/ZapretControl
+aliases: []

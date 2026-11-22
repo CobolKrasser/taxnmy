@@ -1,0 +1,11 @@
+key: eric-cogen/gauntletci
+publisher: eric-cogen
+name: GauntletCI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EricCogen/GauntletCI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EricCogen/GauntletCI
+identifiers:
+- winget: EricCogen.GauntletCI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EricCogen/GauntletCI
+aliases: []

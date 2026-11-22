@@ -1,0 +1,12 @@
+key: naver/whale
+publisher: naver
+name: Naver Whale
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/Whale
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/Whale
+identifiers:
+- winget: NAVER.Whale
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NAVER/Whale
+aliases:
+- naver/naver-whale

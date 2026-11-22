@@ -1,0 +1,11 @@
+key: dygma-lab/bazecor
+publisher: dygma-lab
+name: Bazecor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DygmaLabs/Bazecor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DygmaLabs/Bazecor
+identifiers:
+- winget: DygmaLabs.Bazecor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DygmaLabs/Bazecor
+aliases: []

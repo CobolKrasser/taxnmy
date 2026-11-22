@@ -1,0 +1,11 @@
+key: the-lua-for-windows-project-and-lua-and-tecgraf-puc-rio/lua-for-windows
+publisher: the-lua-for-windows-project-and-lua-and-tecgraf-puc-rio
+name: Lua for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rjpcomputing/luaforwindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rjpcomputing/luaforwindows
+identifiers:
+- winget: rjpcomputing.luaforwindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rjpcomputing/luaforwindows
+aliases: []

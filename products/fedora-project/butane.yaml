@@ -1,0 +1,11 @@
+key: fedora-project/butane
+publisher: fedora-project
+name: butane
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fedora/CoreOS/butane
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fedora/CoreOS/butane
+identifiers:
+- winget: Fedora.CoreOS.butane
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fedora/CoreOS/butane
+aliases: []

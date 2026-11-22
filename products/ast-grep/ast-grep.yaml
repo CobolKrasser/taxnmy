@@ -1,0 +1,11 @@
+key: ast-grep/ast-grep
+publisher: ast-grep
+name: ast-grep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ast-grep/ast-grep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ast-grep/ast-grep
+identifiers:
+- winget: ast-grep.ast-grep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ast-grep/ast-grep
+aliases: []

@@ -1,0 +1,11 @@
+key: sangoma-technologies/zulu
+publisher: sangoma-technologies
+name: Zulu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/Zulu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/Zulu
+identifiers:
+- winget: Sangoma.Zulu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/Zulu
+aliases: []

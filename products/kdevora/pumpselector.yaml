@@ -1,0 +1,11 @@
+key: kdevora/pumpselector
+publisher: kdevora
+name: PumpSelector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kdevora/PumpSelector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kdevora/PumpSelector
+identifiers:
+- winget: Kdevora.PumpSelector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kdevora/PumpSelector
+aliases: []

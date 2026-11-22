@@ -1,0 +1,11 @@
+key: acoustid/chromaprint
+publisher: acoustid
+name: Chromaprint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcoustID/Chromaprint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcoustID/Chromaprint
+identifiers:
+- winget: AcoustID.Chromaprint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcoustID/Chromaprint
+aliases: []

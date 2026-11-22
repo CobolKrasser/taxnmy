@@ -1,0 +1,11 @@
+key: r-charan/wiki
+publisher: r-charan
+name: wiki
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RCharan/wiki
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RCharan/wiki
+identifiers:
+- winget: RCharan.wiki
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RCharan/wiki
+aliases: []

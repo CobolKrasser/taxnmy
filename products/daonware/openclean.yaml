@@ -1,0 +1,11 @@
+key: daonware/openclean
+publisher: daonware
+name: OpenClean
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaonWare/OpenClean
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaonWare/OpenClean
+identifiers:
+- winget: DaonWare.OpenClean
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaonWare/OpenClean
+aliases: []

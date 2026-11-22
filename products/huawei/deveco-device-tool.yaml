@@ -1,0 +1,11 @@
+key: huawei/deveco-device-tool
+publisher: huawei
+name: DevEco Device Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/DevEcoDeviceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/DevEcoDeviceTool
+identifiers:
+- winget: Huawei.DevEcoDeviceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/DevEcoDeviceTool
+aliases: []

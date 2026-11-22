@@ -1,0 +1,13 @@
+key: erik-hanel-et-al/numere-framework-for-numerical-computations
+publisher: erik-hanel-et-al
+name: NumeRe - Framework for Numerical Computations
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NumeRe/NumeRe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NumeRe/NumeRe
+identifiers:
+- winget: NumeRe.NumeRe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NumeRe/NumeRe
+- winget: NumeRe.NumeRe.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NumeRe/NumeRe/Portable
+aliases: []

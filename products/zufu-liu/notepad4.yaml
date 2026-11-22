@@ -1,0 +1,13 @@
+key: zufu-liu/notepad4
+publisher: zufu-liu
+name: Notepad4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zufuliu/notepad4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zufuliu/notepad4
+identifiers:
+- winget: zufuliu.notepad4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zufuliu/notepad4
+- winget: zufuliu.notepad4.AVX2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zufuliu/notepad4/AVX2
+aliases: []

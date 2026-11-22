@@ -1,0 +1,11 @@
+key: timschneeb/galaxy-buds-manager-unofficial
+publisher: timschneeb
+name: Galaxy Buds Manager (Unofficial)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timschneeb/GalaxyBudsClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timschneeb/GalaxyBudsClient
+identifiers:
+- winget: timschneeb.GalaxyBudsClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timschneeb/GalaxyBudsClient
+aliases: []

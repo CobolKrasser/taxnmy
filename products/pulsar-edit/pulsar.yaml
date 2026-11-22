@@ -1,0 +1,11 @@
+key: pulsar-edit/pulsar
+publisher: pulsar-edit
+name: Pulsar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulsar-Edit/Pulsar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulsar-Edit/Pulsar
+identifiers:
+- winget: Pulsar-Edit.Pulsar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulsar-Edit/Pulsar
+aliases: []

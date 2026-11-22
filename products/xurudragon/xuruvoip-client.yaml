@@ -1,0 +1,11 @@
+key: xurudragon/xuruvoip-client
+publisher: xurudragon
+name: XuruVOIP Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XuruDragon/XuruVOIPClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XuruDragon/XuruVOIPClient
+identifiers:
+- winget: XuruDragon.XuruVOIPClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XuruDragon/XuruVOIPClient
+aliases: []

@@ -1,0 +1,11 @@
+key: acco-brands/kensington-dockworks
+publisher: acco-brands
+name: Kensington DockWorks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/DockWorks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/DockWorks
+identifiers:
+- winget: Kensington.DockWorks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/DockWorks
+aliases: []

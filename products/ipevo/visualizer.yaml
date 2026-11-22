@@ -1,0 +1,11 @@
+key: ipevo/visualizer
+publisher: ipevo
+name: Visualizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/Visualizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/Visualizer
+identifiers:
+- winget: IPEVO.Visualizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPEVO/Visualizer
+aliases: []

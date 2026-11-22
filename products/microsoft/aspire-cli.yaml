@@ -1,0 +1,13 @@
+key: microsoft/aspire-cli
+publisher: microsoft
+name: Aspire CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Aspire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Aspire
+identifiers:
+- winget: Microsoft.Aspire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Aspire
+- winget: Microsoft.Aspire.Prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Aspire/Prerelease
+aliases: []

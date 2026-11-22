@@ -1,0 +1,11 @@
+key: bandisoft-com/bandizip
+publisher: bandisoft-com
+name: Bandizip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bandisoft/Bandizip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bandisoft/Bandizip
+identifiers:
+- winget: Bandisoft.Bandizip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bandisoft/Bandizip
+aliases: []

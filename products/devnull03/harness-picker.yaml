@@ -1,0 +1,11 @@
+key: devnull03/harness-picker
+publisher: devnull03
+name: harness-picker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/devnull03/HarnessPicker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/devnull03/HarnessPicker
+identifiers:
+- winget: devnull03.HarnessPicker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/devnull03/HarnessPicker
+aliases: []

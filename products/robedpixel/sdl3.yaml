@@ -1,0 +1,11 @@
+key: robedpixel/sdl3
+publisher: robedpixel
+name: SDL3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobedPixel/SDL3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobedPixel/SDL3
+identifiers:
+- winget: RobedPixel.SDL3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobedPixel/SDL3
+aliases: []

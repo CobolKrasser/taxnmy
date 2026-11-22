@@ -1,0 +1,11 @@
+key: com-blueedgetechno-win11react/win11react
+publisher: com-blueedgetechno-win11react
+name: Win11React
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blueedge/win11react
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blueedge/win11react
+identifiers:
+- winget: blueedge.win11react
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blueedge/win11react
+aliases: []

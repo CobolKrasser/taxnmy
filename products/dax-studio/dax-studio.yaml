@@ -1,0 +1,11 @@
+key: dax-studio/dax-studio
+publisher: dax-studio
+name: DAX Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaxStudio/DaxStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaxStudio/DaxStudio
+identifiers:
+- winget: DaxStudio.DaxStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DaxStudio/DaxStudio
+aliases: []

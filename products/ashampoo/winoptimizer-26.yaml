@@ -1,0 +1,12 @@
+key: ashampoo/winoptimizer-26
+publisher: ashampoo
+name: Ashampoo WinOptimizer 26
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iMobieInc/Ashampoo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iMobieInc/Ashampoo
+identifiers:
+- winget: iMobieInc.Ashampoo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iMobieInc/Ashampoo
+aliases:
+- ashampoo/ashampoo-winoptimizer-26

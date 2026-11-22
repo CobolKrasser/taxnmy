@@ -1,0 +1,11 @@
+key: ernestas-kvedaras/redis-gui
+publisher: ernestas-kvedaras
+name: redis-gui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ekvedaras/redis-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ekvedaras/redis-gui
+identifiers:
+- winget: ekvedaras.redis-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ekvedaras/redis-gui
+aliases: []

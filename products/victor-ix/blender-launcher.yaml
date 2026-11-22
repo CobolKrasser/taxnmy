@@ -1,0 +1,11 @@
+key: victor-ix/blender-launcher
+publisher: victor-ix
+name: Blender Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictorIX/BlenderLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictorIX/BlenderLauncher
+identifiers:
+- winget: VictorIX.BlenderLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VictorIX/BlenderLauncher
+aliases: []

@@ -1,0 +1,11 @@
+key: html-tidy-advocacy-community-group/tidy-html5
+publisher: html-tidy-advocacy-community-group
+name: tidy-html5
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTACG/tidy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTACG/tidy
+identifiers:
+- winget: HTACG.tidy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HTACG/tidy
+aliases: []

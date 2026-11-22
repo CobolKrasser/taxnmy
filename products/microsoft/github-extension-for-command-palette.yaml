@@ -1,0 +1,11 @@
+key: microsoft/github-extension-for-command-palette
+publisher: microsoft
+name: GitHub extension for Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CmdPalGitHubExtension
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CmdPalGitHubExtension
+identifiers:
+- winget: Microsoft.CmdPalGitHubExtension
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/CmdPalGitHubExtension
+aliases: []

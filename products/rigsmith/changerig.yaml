@@ -1,0 +1,11 @@
+key: rigsmith/changerig
+publisher: rigsmith
+name: ChangeRig
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ChangeRig
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ChangeRig
+identifiers:
+- winget: RigSmith.ChangeRig
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RigSmith/ChangeRig
+aliases: []

@@ -1,0 +1,11 @@
+key: devolutions/jetsocat
+publisher: devolutions
+name: Jetsocat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Jetsocat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Jetsocat
+identifiers:
+- winget: Devolutions.Jetsocat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Jetsocat
+aliases: []

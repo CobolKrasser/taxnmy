@@ -1,0 +1,12 @@
+key: portnox/agentp
+publisher: portnox
+name: Portnox AgentP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Portnox/AgentP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Portnox/AgentP
+identifiers:
+- winget: Portnox.AgentP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Portnox/AgentP
+aliases:
+- portnox/portnox-agentp

@@ -1,0 +1,11 @@
+key: flick9000/winscript
+publisher: flick9000
+name: WinScript
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flick9000/WinScript
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flick9000/WinScript
+identifiers:
+- winget: flick9000.WinScript
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flick9000/WinScript
+aliases: []

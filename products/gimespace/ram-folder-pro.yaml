@@ -1,0 +1,12 @@
+key: gimespace/ram-folder-pro
+publisher: gimespace
+name: GiMeSpace RAM Folder Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GiMeSpace/RAMTempFolderPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GiMeSpace/RAMTempFolderPro
+identifiers:
+- winget: GiMeSpace.RAMTempFolderPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GiMeSpace/RAMTempFolderPro
+aliases:
+- gimespace/gimespace-ram-folder-pro

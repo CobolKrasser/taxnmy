@@ -1,0 +1,11 @@
+key: cr-zhichen/codex-tweaks
+publisher: cr-zhichen
+name: Codex Tweaks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodexTweaks/CodexTweaks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodexTweaks/CodexTweaks
+identifiers:
+- winget: CodexTweaks.CodexTweaks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodexTweaks/CodexTweaks
+aliases: []

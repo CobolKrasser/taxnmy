@@ -1,0 +1,11 @@
+key: curveseries/curveseries
+publisher: curveseries
+name: CURVESERIES
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CurveSeries/CurveSeries
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CurveSeries/CurveSeries
+identifiers:
+- winget: CurveSeries.CurveSeries
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CurveSeries/CurveSeries
+aliases: []

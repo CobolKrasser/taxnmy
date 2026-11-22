@@ -1,0 +1,12 @@
+key: qualica/dfss
+publisher: qualica
+name: Qualica DFSS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QualicaGmbH/Qualica
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QualicaGmbH/Qualica
+identifiers:
+- winget: QualicaGmbH.Qualica
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QualicaGmbH/Qualica
+aliases:
+- qualica/qualica-dfss

@@ -1,0 +1,11 @@
+key: ag-projects/blink
+publisher: ag-projects
+name: Blink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGProjects/Blink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGProjects/Blink
+identifiers:
+- winget: AGProjects.Blink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGProjects/Blink
+aliases: []

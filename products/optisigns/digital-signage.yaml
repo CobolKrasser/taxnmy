@@ -1,0 +1,12 @@
+key: optisigns/digital-signage
+publisher: optisigns
+name: OptiSigns Digital Signage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OptiSigns/OptiSignsDigitalSignage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OptiSigns/OptiSignsDigitalSignage
+identifiers:
+- winget: OptiSigns.OptiSignsDigitalSignage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OptiSigns/OptiSignsDigitalSignage
+aliases:
+- optisigns/optisigns-digital-signage

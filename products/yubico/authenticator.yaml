@@ -1,0 +1,12 @@
+key: yubico/authenticator
+publisher: yubico
+name: Yubico Authenticator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/Authenticator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/Authenticator
+identifiers:
+- winget: Yubico.Authenticator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/Authenticator
+aliases:
+- yubico/yubico-authenticator

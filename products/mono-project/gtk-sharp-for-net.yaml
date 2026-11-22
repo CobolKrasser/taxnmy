@@ -1,0 +1,11 @@
+key: mono-project/gtk-sharp-for-net
+publisher: mono-project
+name: GTK# for .NET
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mono/GTKSharpforDotNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mono/GTKSharpforDotNet
+identifiers:
+- winget: Mono.GTKSharpforDotNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mono/GTKSharpforDotNet
+aliases: []

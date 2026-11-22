@@ -1,0 +1,11 @@
+key: blaadje/todolist
+publisher: blaadje
+name: Todolist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blaadje/Todolist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blaadje/Todolist
+identifiers:
+- winget: blaadje.Todolist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/blaadje/Todolist
+aliases: []

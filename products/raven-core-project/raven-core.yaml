@@ -1,0 +1,11 @@
+key: raven-core-project/raven-core
+publisher: raven-core-project
+name: Raven Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RavenProject/RavenCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RavenProject/RavenCore
+identifiers:
+- winget: RavenProject.RavenCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RavenProject/RavenCore
+aliases: []

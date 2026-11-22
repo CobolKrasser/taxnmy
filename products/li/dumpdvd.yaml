@@ -1,0 +1,11 @@
+key: li/dumpdvd
+publisher: li
+name: DumpDVD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Li/DumpDVD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Li/DumpDVD
+identifiers:
+- winget: Li.DumpDVD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Li/DumpDVD
+aliases: []

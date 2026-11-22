@@ -1,0 +1,11 @@
+key: coderex/coderex
+publisher: coderex
+name: Coderex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coderex/Coderex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coderex/Coderex
+identifiers:
+- winget: Coderex.Coderex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coderex/Coderex
+aliases: []

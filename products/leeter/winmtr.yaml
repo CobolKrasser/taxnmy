@@ -1,0 +1,11 @@
+key: leeter/winmtr
+publisher: leeter
+name: WinMTR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leeter/WinMTR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leeter/WinMTR
+identifiers:
+- winget: leeter.WinMTR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/leeter/WinMTR
+aliases: []

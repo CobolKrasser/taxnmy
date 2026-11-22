@@ -1,0 +1,11 @@
+key: blizzard-entertainment/battle-net-setup
+publisher: blizzard-entertainment
+name: Battle.net Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blizzard/BattleNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blizzard/BattleNet
+identifiers:
+- winget: Blizzard.BattleNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blizzard/BattleNet
+aliases: []

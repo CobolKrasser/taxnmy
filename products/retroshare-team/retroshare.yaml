@@ -1,0 +1,11 @@
+key: retroshare-team/retroshare
+publisher: retroshare-team
+name: RetroShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Retroshare/Retroshare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Retroshare/Retroshare
+identifiers:
+- winget: Retroshare.Retroshare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Retroshare/Retroshare
+aliases: []

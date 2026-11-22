@@ -1,0 +1,11 @@
+key: geteduroam/getgovroam
+publisher: geteduroam
+name: getgovroam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geteduroam/getgovroam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geteduroam/getgovroam
+identifiers:
+- winget: geteduroam.getgovroam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geteduroam/getgovroam
+aliases: []

@@ -1,0 +1,11 @@
+key: gdretools/godot-re-tools
+publisher: gdretools
+name: Godot RE Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDRETools/gdsdecomp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDRETools/gdsdecomp
+identifiers:
+- winget: GDRETools.gdsdecomp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDRETools/gdsdecomp
+aliases: []

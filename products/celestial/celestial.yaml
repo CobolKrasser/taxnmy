@@ -1,0 +1,11 @@
+key: celestial/celestial
+publisher: celestial
+name: Celestial
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiusPP/Celestial
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiusPP/Celestial
+identifiers:
+- winget: PiusPP.Celestial
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PiusPP/Celestial
+aliases: []

@@ -1,0 +1,11 @@
+key: czech-technical-university/qtrvsim
+publisher: czech-technical-university
+name: QtRvSim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cvut/qtrvsim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cvut/qtrvsim
+identifiers:
+- winget: cvut.qtrvsim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cvut/qtrvsim
+aliases: []

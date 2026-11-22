@@ -1,0 +1,11 @@
+key: binaryfetch-cli/binaryfetch
+publisher: binaryfetch-cli
+name: BinaryFetch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFetch-CLI/BinaryFetch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFetch-CLI/BinaryFetch
+identifiers:
+- winget: BinaryFetch-CLI.BinaryFetch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryFetch-CLI/BinaryFetch
+aliases: []

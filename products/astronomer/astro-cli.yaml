@@ -1,0 +1,11 @@
+key: astronomer/astro-cli
+publisher: astronomer
+name: Astro CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Astronomer/Astro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Astronomer/Astro
+identifiers:
+- winget: Astronomer.Astro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Astronomer/Astro
+aliases: []

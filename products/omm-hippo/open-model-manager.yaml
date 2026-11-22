@@ -1,0 +1,11 @@
+key: omm-hippo/open-model-manager
+publisher: omm-hippo
+name: Open Model Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmmHippo/OMM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmmHippo/OMM
+identifiers:
+- winget: OmmHippo.OMM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OmmHippo/OMM
+aliases: []

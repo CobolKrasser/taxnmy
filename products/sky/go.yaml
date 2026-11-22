@@ -1,0 +1,12 @@
+key: sky/go
+publisher: sky
+name: Sky Go
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sky/SkyGo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sky/SkyGo
+identifiers:
+- winget: Sky.SkyGo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sky/SkyGo
+aliases:
+- sky/sky-go

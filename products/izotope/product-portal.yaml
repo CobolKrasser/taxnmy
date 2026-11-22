@@ -1,0 +1,11 @@
+key: izotope/product-portal
+publisher: izotope
+name: Product Portal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iZotope/ProductPortal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iZotope/ProductPortal
+identifiers:
+- winget: iZotope.ProductPortal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iZotope/ProductPortal
+aliases: []

@@ -1,0 +1,11 @@
+key: kakao-entertainment/melon-player
+publisher: kakao-entertainment
+name: Melon Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KakaoEntertainmentCorp/MelonPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KakaoEntertainmentCorp/MelonPlayer
+identifiers:
+- winget: KakaoEntertainmentCorp.MelonPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KakaoEntertainmentCorp/MelonPlayer
+aliases: []

@@ -1,0 +1,12 @@
+key: skillhub/desktop
+publisher: skillhub
+name: SkillHub Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skillhub/SkillHubDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skillhub/SkillHubDesktop
+identifiers:
+- winget: Skillhub.SkillHubDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skillhub/SkillHubDesktop
+aliases:
+- skillhub/skillhub-desktop

@@ -1,0 +1,11 @@
+key: ajax-systems/ajax-desktop
+publisher: ajax-systems
+name: Ajax Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ajax/AjaxDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ajax/AjaxDesktop
+identifiers:
+- winget: Ajax.AjaxDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ajax/AjaxDesktop
+aliases: []

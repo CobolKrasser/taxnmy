@@ -1,0 +1,13 @@
+key: philips-speechlive/philips-speechlive
+publisher: philips-speechlive
+name: Philips SpeechLive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SpeechLive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SpeechLive
+identifiers:
+- winget: Philips.SpeechLive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SpeechLive
+- winget: Philips.SpeechLive.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SpeechLive/MSI
+aliases: []

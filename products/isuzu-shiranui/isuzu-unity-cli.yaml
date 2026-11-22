@@ -1,0 +1,11 @@
+key: isuzu-shiranui/isuzu-unity-cli
+publisher: isuzu-shiranui
+name: isuzu-unity-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IsuzuShiranui/IsuzuUnityCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IsuzuShiranui/IsuzuUnityCli
+identifiers:
+- winget: IsuzuShiranui.IsuzuUnityCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IsuzuShiranui/IsuzuUnityCli
+aliases: []

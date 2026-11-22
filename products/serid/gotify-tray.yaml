@@ -1,0 +1,11 @@
+key: serid/gotify-tray
+publisher: serid
+name: Gotify Tray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/serid/GotifyTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/serid/GotifyTray
+identifiers:
+- winget: serid.GotifyTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/serid/GotifyTray
+aliases: []

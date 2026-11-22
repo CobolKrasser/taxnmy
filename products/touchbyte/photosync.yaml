@@ -1,0 +1,11 @@
+key: touchbyte/photosync
+publisher: touchbyte
+name: PhotoSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/touchbyte/PhotoSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/touchbyte/PhotoSync
+identifiers:
+- winget: touchbyte.PhotoSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/touchbyte/PhotoSync
+aliases: []

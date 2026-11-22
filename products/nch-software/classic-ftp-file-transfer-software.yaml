@@ -1,0 +1,11 @@
+key: nch-software/classic-ftp-file-transfer-software
+publisher: nch-software
+name: Classic FTP File Transfer Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/ClassicFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/ClassicFTP
+identifiers:
+- winget: NCHSoftware.ClassicFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/ClassicFTP
+aliases: []

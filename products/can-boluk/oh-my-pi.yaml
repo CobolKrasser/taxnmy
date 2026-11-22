@@ -1,0 +1,11 @@
+key: can-boluk/oh-my-pi
+publisher: can-boluk
+name: oh-my-pi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/can1357/oh-my-pi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/can1357/oh-my-pi
+identifiers:
+- winget: can1357.oh-my-pi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/can1357/oh-my-pi
+aliases: []

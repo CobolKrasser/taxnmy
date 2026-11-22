@@ -1,0 +1,11 @@
+key: goto/gotoassist-agent-desktop-console
+publisher: goto
+name: GoToAssist Agent Desktop Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToAssistAgentDesktopConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToAssistAgentDesktopConsole
+identifiers:
+- winget: GoTo.GoToAssistAgentDesktopConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToAssistAgentDesktopConsole
+aliases: []

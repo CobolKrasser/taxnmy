@@ -1,0 +1,11 @@
+key: novostrim-ooo/createinstall
+publisher: novostrim-ooo
+name: CreateInstall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novostrim/CreateInstall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novostrim/CreateInstall
+identifiers:
+- winget: Novostrim.CreateInstall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novostrim/CreateInstall
+aliases: []

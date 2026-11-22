@@ -1,0 +1,11 @@
+key: stacklok/thv
+publisher: stacklok
+name: thv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/thv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/thv
+identifiers:
+- winget: stacklok.thv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/thv
+aliases: []

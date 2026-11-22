@@ -1,0 +1,11 @@
+key: feng-hao/onecopy-electron
+publisher: feng-hao
+name: onecopy-electron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshiFuu/onecopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshiFuu/onecopy
+identifiers:
+- winget: HiroshiFuu.onecopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HiroshiFuu/onecopy
+aliases: []

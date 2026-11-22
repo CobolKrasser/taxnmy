@@ -1,0 +1,11 @@
+key: mtga/mtga
+publisher: mtga
+name: MTGA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiFangKNT/MTGA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiFangKNT/MTGA
+identifiers:
+- winget: BiFangKNT.MTGA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BiFangKNT/MTGA
+aliases: []

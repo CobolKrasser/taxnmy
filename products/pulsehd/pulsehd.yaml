@@ -1,0 +1,11 @@
+key: pulsehd/pulsehd
+publisher: pulsehd
+name: PulseHD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PulseHD/PulseHD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PulseHD/PulseHD
+identifiers:
+- winget: PulseHD.PulseHD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PulseHD/PulseHD
+aliases: []

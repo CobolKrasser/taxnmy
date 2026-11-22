@@ -1,0 +1,13 @@
+key: boardmix/boardmix
+publisher: boardmix
+name: boardmix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/BoardMix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/BoardMix
+identifiers:
+- winget: Bosyun.BoardMix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/BoardMix
+- winget: Bosyun.BoardMix.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bosyun/BoardMix/CN
+aliases: []

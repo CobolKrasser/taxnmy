@@ -1,0 +1,11 @@
+key: colorlogic/zepra
+publisher: colorlogic
+name: ZePrA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/ZePrA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/ZePrA
+identifiers:
+- winget: ColorLogic.ZePrA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ColorLogic/ZePrA
+aliases: []

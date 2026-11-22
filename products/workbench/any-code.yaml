@@ -1,0 +1,11 @@
+key: workbench/any-code
+publisher: workbench
+name: Any Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anyme123/AnyCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anyme123/AnyCode
+identifiers:
+- winget: anyme123.AnyCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/anyme123/AnyCode
+aliases: []

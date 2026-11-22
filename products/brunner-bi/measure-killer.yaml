@@ -1,0 +1,11 @@
+key: brunner-bi/measure-killer
+publisher: brunner-bi
+name: Measure Killer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunnerBI/MeasureKiller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunnerBI/MeasureKiller
+identifiers:
+- winget: BrunnerBI.MeasureKiller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrunnerBI/MeasureKiller
+aliases: []

@@ -1,0 +1,11 @@
+key: jazzdelightsme/wingetpathupdater
+publisher: jazzdelightsme
+name: WingetPathUpdater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jazzdelightsme/WingetPathUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jazzdelightsme/WingetPathUpdater
+identifiers:
+- winget: jazzdelightsme.WingetPathUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jazzdelightsme/WingetPathUpdater
+aliases: []

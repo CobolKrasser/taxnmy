@@ -1,0 +1,11 @@
+key: comiccatcher/comiccatcher
+publisher: comiccatcher
+name: ComicCatcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComicCatcher/ComicCatcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComicCatcher/ComicCatcher
+identifiers:
+- winget: ComicCatcher.ComicCatcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ComicCatcher/ComicCatcher
+aliases: []

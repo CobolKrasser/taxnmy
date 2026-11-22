@@ -1,0 +1,11 @@
+key: engineering-at-fullstory/grpcurl
+publisher: engineering-at-fullstory
+name: gRPCurl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fullstorydev/grpcurl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fullstorydev/grpcurl
+identifiers:
+- winget: fullstorydev.grpcurl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fullstorydev/grpcurl
+aliases: []

@@ -1,0 +1,11 @@
+key: studio-code-ai/lya-studio-coder
+publisher: studio-code-ai
+name: Lya Studio Coder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioCodeAI/LyaStudioCoder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioCodeAI/LyaStudioCoder
+identifiers:
+- winget: StudioCodeAI.LyaStudioCoder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioCodeAI/LyaStudioCoder
+aliases: []

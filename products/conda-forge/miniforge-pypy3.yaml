@@ -1,0 +1,11 @@
+key: conda-forge/miniforge-pypy3
+publisher: conda-forge
+name: Miniforge-pypy3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Miniforge3/PyPy3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Miniforge3/PyPy3
+identifiers:
+- winget: CondaForge.Miniforge3.PyPy3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CondaForge/Miniforge3/PyPy3
+aliases: []

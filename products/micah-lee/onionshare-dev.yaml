@@ -1,0 +1,11 @@
+key: micah-lee/onionshare-dev
+publisher: micah-lee
+name: OnionShare Dev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionShare/OnionShare/Dev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionShare/OnionShare/Dev
+identifiers:
+- winget: OnionShare.OnionShare.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionShare/OnionShare/Dev
+aliases: []

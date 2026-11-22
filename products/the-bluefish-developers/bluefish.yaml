@@ -1,0 +1,11 @@
+key: the-bluefish-developers/bluefish
+publisher: the-bluefish-developers
+name: Bluefish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluefish/Bluefish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluefish/Bluefish
+identifiers:
+- winget: Bluefish.Bluefish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluefish/Bluefish
+aliases: []

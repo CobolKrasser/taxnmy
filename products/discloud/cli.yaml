@@ -1,0 +1,12 @@
+key: discloud/cli
+publisher: discloud
+name: Discloud CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discloud/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discloud/CLI
+identifiers:
+- winget: Discloud.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Discloud/CLI
+aliases:
+- discloud/discloud-cli

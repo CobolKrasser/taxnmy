@@ -1,0 +1,11 @@
+key: binarymark/batch-photo-face-free-edition
+publisher: binarymark
+name: Batch Photo Face Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchPhotoFace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchPhotoFace
+identifiers:
+- winget: BinaryMark.BatchPhotoFace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchPhotoFace
+aliases: []

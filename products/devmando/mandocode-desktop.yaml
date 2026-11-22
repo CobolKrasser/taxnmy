@@ -1,0 +1,11 @@
+key: devmando/mandocode-desktop
+publisher: devmando
+name: MandoCode Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevMando/MandoCode/Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevMando/MandoCode/Desktop
+identifiers:
+- winget: DevMando.MandoCode.Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevMando/MandoCode/Desktop
+aliases: []

@@ -1,0 +1,11 @@
+key: overwolf/curseforge
+publisher: overwolf
+name: CurseForge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overwolf/CurseForge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overwolf/CurseForge
+identifiers:
+- winget: Overwolf.CurseForge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Overwolf/CurseForge
+aliases: []

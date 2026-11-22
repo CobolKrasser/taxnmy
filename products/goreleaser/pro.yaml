@@ -1,0 +1,12 @@
+key: goreleaser/pro
+publisher: goreleaser
+name: goreleaser-pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/goreleaser-pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/goreleaser-pro
+identifiers:
+- winget: goreleaser.goreleaser-pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goreleaser/goreleaser-pro
+aliases:
+- goreleaser/goreleaser-pro

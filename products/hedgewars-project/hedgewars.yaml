@@ -1,0 +1,11 @@
+key: hedgewars-project/hedgewars
+publisher: hedgewars-project
+name: Hedgewars
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hedgewars/Hedgewars
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hedgewars/Hedgewars
+identifiers:
+- winget: Hedgewars.Hedgewars
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hedgewars/Hedgewars
+aliases: []

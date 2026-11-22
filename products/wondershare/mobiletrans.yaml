@@ -1,0 +1,12 @@
+key: wondershare/mobiletrans
+publisher: wondershare
+name: Wondershare MobileTrans
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/MobileTrans
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/MobileTrans
+identifiers:
+- winget: Wondershare.MobileTrans
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/MobileTrans
+aliases:
+- wondershare/wondershare-mobiletrans

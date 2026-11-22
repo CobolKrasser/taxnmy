@@ -1,0 +1,11 @@
+key: huawei/codearts-agent
+publisher: huawei
+name: CodeArts Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/CodeArtsAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/CodeArtsAgent
+identifiers:
+- winget: Huawei.CodeArtsAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/CodeArtsAgent
+aliases: []

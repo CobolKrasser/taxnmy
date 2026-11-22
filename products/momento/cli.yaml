@@ -1,0 +1,12 @@
+key: momento/cli
+publisher: momento
+name: Momento CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Momento/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Momento/cli
+identifiers:
+- winget: Momento.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Momento/cli
+aliases:
+- momento/momento-cli

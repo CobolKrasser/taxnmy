@@ -1,0 +1,11 @@
+key: bluebeam/bluebeamocr
+publisher: bluebeam
+name: BluebeamOCR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/BluebeamOCR/21
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/BluebeamOCR/21
+identifiers:
+- winget: Bluebeam.BluebeamOCR.21
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bluebeam/BluebeamOCR/21
+aliases: []

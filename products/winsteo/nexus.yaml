@@ -1,0 +1,11 @@
+key: winsteo/nexus
+publisher: winsteo
+name: Nexus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinStep/Nexus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinStep/Nexus
+identifiers:
+- winget: WinStep.Nexus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinStep/Nexus
+aliases: []

@@ -1,0 +1,11 @@
+key: cornell-university/raven-compass
+publisher: cornell-university
+name: Raven Compass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenCompass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenCompass
+identifiers:
+- winget: CornellLabOfOrnithology.RavenCompass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CornellLabOfOrnithology/RavenCompass
+aliases: []

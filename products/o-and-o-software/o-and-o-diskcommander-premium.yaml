@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-diskcommander-premium
+publisher: o-and-o-software
+name: O&O DiskCommander Premium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskCommander/Premium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskCommander/Premium
+identifiers:
+- winget: OO-Software.DiskCommander.Premium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/DiskCommander/Premium
+aliases: []

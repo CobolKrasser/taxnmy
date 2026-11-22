@@ -1,0 +1,11 @@
+key: rojo/rojo
+publisher: rojo
+name: Rojo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojo/Rojo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojo/Rojo
+identifiers:
+- winget: Rojo.Rojo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rojo/Rojo
+aliases: []

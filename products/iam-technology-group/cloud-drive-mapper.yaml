@@ -1,0 +1,11 @@
+key: iam-technology-group/cloud-drive-mapper
+publisher: iam-technology-group
+name: Cloud Drive Mapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IAMCloud/CloudDriveMapperV3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IAMCloud/CloudDriveMapperV3
+identifiers:
+- winget: IAMCloud.CloudDriveMapperV3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IAMCloud/CloudDriveMapperV3
+aliases: []

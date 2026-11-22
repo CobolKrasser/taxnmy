@@ -1,0 +1,11 @@
+key: iterative/data-version-control
+publisher: iterative
+name: Data Version Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterative/DVC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterative/DVC
+identifiers:
+- winget: Iterative.DVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Iterative/DVC
+aliases: []

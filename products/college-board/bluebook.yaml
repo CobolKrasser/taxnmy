@@ -1,0 +1,11 @@
+key: college-board/bluebook
+publisher: college-board
+name: Bluebook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollegeBoard/Bluebook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollegeBoard/Bluebook
+identifiers:
+- winget: CollegeBoard.Bluebook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CollegeBoard/Bluebook
+aliases: []

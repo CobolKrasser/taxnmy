@@ -1,0 +1,11 @@
+key: crazymax/windowsspyblocker
+publisher: crazymax
+name: WindowsSpyBlocker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyMax/WindowsSpyBlocker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyMax/WindowsSpyBlocker
+identifiers:
+- winget: CrazyMax.WindowsSpyBlocker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyMax/WindowsSpyBlocker
+aliases: []

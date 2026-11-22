@@ -1,0 +1,11 @@
+key: open-phd-guiding/phd-2
+publisher: open-phd-guiding
+name: PHD 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPHDGuiding/PHD2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPHDGuiding/PHD2
+identifiers:
+- winget: OpenPHDGuiding.PHD2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPHDGuiding/PHD2
+aliases: []

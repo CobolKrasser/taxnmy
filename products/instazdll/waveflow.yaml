@@ -1,0 +1,11 @@
+key: instazdll/waveflow
+publisher: instazdll
+name: WaveFlow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstaZDLL/WaveFlow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstaZDLL/WaveFlow
+identifiers:
+- winget: InstaZDLL.WaveFlow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InstaZDLL/WaveFlow
+aliases: []

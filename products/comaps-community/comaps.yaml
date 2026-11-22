@@ -1,0 +1,11 @@
+key: comaps-community/comaps
+publisher: comaps-community
+name: CoMaps
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoMaps/CoMaps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoMaps/CoMaps
+identifiers:
+- winget: CoMaps.CoMaps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoMaps/CoMaps
+aliases: []

@@ -1,0 +1,11 @@
+key: microsoft/openssh-preview
+publisher: microsoft
+name: OpenSSH Preview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenSSH/Preview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenSSH/Preview
+identifiers:
+- winget: Microsoft.OpenSSH.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OpenSSH/Preview
+aliases: []

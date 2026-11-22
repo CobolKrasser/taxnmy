@@ -1,0 +1,12 @@
+key: vovsoft/find-and-replace-multiple-files
+publisher: vovsoft
+name: Vovsoft Find And Replace Multiple Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FindAndReplaceMultipleFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FindAndReplaceMultipleFiles
+identifiers:
+- winget: VovSoft.FindAndReplaceMultipleFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/FindAndReplaceMultipleFiles
+aliases:
+- vovsoft/vovsoft-find-and-replace-multiple-files

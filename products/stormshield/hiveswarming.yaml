@@ -1,0 +1,11 @@
+key: stormshield/hiveswarming
+publisher: stormshield
+name: HiveSwarming
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StormshieldSAS/HiveSwarming
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StormshieldSAS/HiveSwarming
+identifiers:
+- winget: StormshieldSAS.HiveSwarming
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StormshieldSAS/HiveSwarming
+aliases: []

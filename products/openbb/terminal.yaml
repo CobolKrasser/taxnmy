@@ -1,0 +1,12 @@
+key: openbb/terminal
+publisher: openbb
+name: OpenBB Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBB-finance/OpenBBTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBB-finance/OpenBBTerminal
+identifiers:
+- winget: OpenBB-finance.OpenBBTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenBB-finance/OpenBBTerminal
+aliases:
+- openbb/openbb-terminal

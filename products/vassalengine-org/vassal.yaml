@@ -1,0 +1,11 @@
+key: vassalengine-org/vassal
+publisher: vassalengine-org
+name: VASSAL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vassalengine/VASSAL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vassalengine/VASSAL
+identifiers:
+- winget: vassalengine.VASSAL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vassalengine/VASSAL
+aliases: []

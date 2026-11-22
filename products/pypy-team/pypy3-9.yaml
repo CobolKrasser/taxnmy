@@ -1,0 +1,11 @@
+key: pypy-team/pypy3-9
+publisher: pypy-team
+name: PyPy3.9
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPy/PyPy/3/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPy/PyPy/3/9
+identifiers:
+- winget: PyPy.PyPy.3.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPy/PyPy/3/9
+aliases: []

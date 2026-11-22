@@ -1,0 +1,11 @@
+key: the-fwupd-team/fwupd
+publisher: the-fwupd-team
+name: fwupd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fwupd/fwupd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fwupd/fwupd
+identifiers:
+- winget: fwupd.fwupd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/fwupd/fwupd
+aliases: []

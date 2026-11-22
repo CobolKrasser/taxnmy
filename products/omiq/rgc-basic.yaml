@@ -1,0 +1,11 @@
+key: omiq/rgc-basic
+publisher: omiq
+name: RGC-BASIC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/omiq/RGC-BASIC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/omiq/RGC-BASIC
+identifiers:
+- winget: omiq.RGC-BASIC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/omiq/RGC-BASIC
+aliases: []

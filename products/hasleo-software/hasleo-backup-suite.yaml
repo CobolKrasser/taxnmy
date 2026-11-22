@@ -1,0 +1,11 @@
+key: hasleo-software/hasleo-backup-suite
+publisher: hasleo-software
+name: Hasleo Backup Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hasleo/BackupSuiteFree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hasleo/BackupSuiteFree
+identifiers:
+- winget: Hasleo.BackupSuiteFree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hasleo/BackupSuiteFree
+aliases: []

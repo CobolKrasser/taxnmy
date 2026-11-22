@@ -1,0 +1,11 @@
+key: loic-nogues/picturama
+publisher: loic-nogues
+name: Picturama
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/picturama/picturama
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/picturama/picturama
+identifiers:
+- winget: picturama.picturama
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/picturama/picturama
+aliases: []

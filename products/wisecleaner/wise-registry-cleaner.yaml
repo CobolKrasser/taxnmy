@@ -1,0 +1,11 @@
+key: wisecleaner/wise-registry-cleaner
+publisher: wisecleaner
+name: Wise Registry Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/RegistryCleaner/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/RegistryCleaner/Portable
+identifiers:
+- winget: WiseCleaner.RegistryCleaner.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/RegistryCleaner/Portable
+aliases: []

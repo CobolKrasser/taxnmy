@@ -1,0 +1,13 @@
+key: youtube-dl/youtube-dl
+publisher: youtube-dl
+name: youtube-dl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/youtube-dl/youtube-dl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/youtube-dl/youtube-dl
+identifiers:
+- winget: youtube-dl.youtube-dl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/youtube-dl/youtube-dl
+- winget: youtube-dl.youtube-dl.nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/youtube-dl/youtube-dl/nightly
+aliases: []

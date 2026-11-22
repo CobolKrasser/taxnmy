@@ -1,0 +1,11 @@
+key: x-io-technologies/x-imu3-gui
+publisher: x-io-technologies
+name: x-IMU3 GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xioTechnologies/x-IMU3GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xioTechnologies/x-IMU3GUI
+identifiers:
+- winget: xioTechnologies.x-IMU3GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xioTechnologies/x-IMU3GUI
+aliases: []

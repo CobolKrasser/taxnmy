@@ -1,0 +1,11 @@
+key: avr-dudes/avrdude
+publisher: avr-dudes
+name: AVRDUDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE
+identifiers:
+- winget: AVRDudes.AVRDUDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVRDudes/AVRDUDE
+aliases: []

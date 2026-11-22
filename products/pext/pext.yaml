@@ -1,0 +1,11 @@
+key: pext/pext
+publisher: pext
+name: Pext
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pext/Pext
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pext/Pext
+identifiers:
+- winget: Pext.Pext
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pext/Pext
+aliases: []

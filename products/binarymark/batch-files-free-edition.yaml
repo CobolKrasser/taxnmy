@@ -1,0 +1,11 @@
+key: binarymark/batch-files-free-edition
+publisher: binarymark
+name: Batch Files Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFiles
+identifiers:
+- winget: BinaryMark.BatchFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFiles
+aliases: []

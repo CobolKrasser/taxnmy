@@ -1,0 +1,12 @@
+key: voltura/air
+publisher: voltura
+name: Voltura Air
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voltura/Air
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voltura/Air
+identifiers:
+- winget: Voltura.Air
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Voltura/Air
+aliases:
+- voltura/voltura-air

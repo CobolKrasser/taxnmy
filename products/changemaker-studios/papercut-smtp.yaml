@@ -1,0 +1,11 @@
+key: changemaker-studios/papercut-smtp
+publisher: changemaker-studios
+name: Papercut SMTP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChangemakerStudios/Papercut-SMTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChangemakerStudios/Papercut-SMTP
+identifiers:
+- winget: ChangemakerStudios.Papercut-SMTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChangemakerStudios/Papercut-SMTP
+aliases: []

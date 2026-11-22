@@ -1,0 +1,11 @@
+key: zhengzhou-huake-import-and-export-trade/ifile
+publisher: zhengzhou-huake-import-and-export-trade
+name: iFile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFileSpace/iFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFileSpace/iFile
+identifiers:
+- winget: iFileSpace.iFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFileSpace/iFile
+aliases: []

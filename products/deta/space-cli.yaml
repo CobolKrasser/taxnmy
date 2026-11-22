@@ -1,0 +1,12 @@
+key: deta/space-cli
+publisher: deta
+name: Deta Space CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deta/Space/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deta/Space/CLI
+identifiers:
+- winget: Deta.Space.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deta/Space/CLI
+aliases:
+- deta/deta-space-cli

@@ -1,0 +1,11 @@
+key: raul-argente/argente-uninstall-manager
+publisher: raul-argente
+name: Argente Uninstall Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/UninstallManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/UninstallManager
+identifiers:
+- winget: Argente.UninstallManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/UninstallManager
+aliases: []

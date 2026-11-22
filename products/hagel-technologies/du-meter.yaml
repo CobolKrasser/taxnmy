@@ -1,0 +1,11 @@
+key: hagel-technologies/du-meter
+publisher: hagel-technologies
+name: DU Meter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HagelTechnologiesLtd/DUMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HagelTechnologiesLtd/DUMeter
+identifiers:
+- winget: HagelTechnologiesLtd.DUMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HagelTechnologiesLtd/DUMeter
+aliases: []

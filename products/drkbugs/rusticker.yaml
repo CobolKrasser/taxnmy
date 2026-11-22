@@ -1,0 +1,11 @@
+key: drkbugs/rusticker
+publisher: drkbugs
+name: rusticker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drkbugs/rusticker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drkbugs/rusticker
+identifiers:
+- winget: drkbugs.rusticker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drkbugs/rusticker
+aliases: []

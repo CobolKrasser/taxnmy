@@ -1,0 +1,11 @@
+key: electron-store-team/electron-store
+publisher: electron-store-team
+name: Electron Store
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Electron-Store/electron-app-store
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Electron-Store/electron-app-store
+identifiers:
+- winget: Electron-Store.electron-app-store
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Electron-Store/electron-app-store
+aliases: []

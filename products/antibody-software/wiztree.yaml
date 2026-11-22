@@ -1,0 +1,11 @@
+key: antibody-software/wiztree
+publisher: antibody-software
+name: WizTree
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizTree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizTree
+identifiers:
+- winget: AntibodySoftware.WizTree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizTree
+aliases: []

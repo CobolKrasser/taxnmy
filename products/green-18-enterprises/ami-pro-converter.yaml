@@ -1,0 +1,11 @@
+key: green-18-enterprises/ami-pro-converter
+publisher: green-18-enterprises
+name: Ami Pro Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmiProConverter/AmiProConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmiProConverter/AmiProConverter
+identifiers:
+- winget: AmiProConverter.AmiProConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmiProConverter/AmiProConverter
+aliases: []

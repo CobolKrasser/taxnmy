@@ -1,0 +1,12 @@
+key: gastronova/impresion
+publisher: gastronova
+name: Gastronova Impresión
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gastronova/Impresion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gastronova/Impresion
+identifiers:
+- winget: Gastronova.Impresion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gastronova/Impresion
+aliases:
+- gastronova/gastronova-impresion

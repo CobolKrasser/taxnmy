@@ -1,0 +1,11 @@
+key: core-ftp/mini-sftp-server
+publisher: core-ftp
+name: Mini SFTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/MiniSFTPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/MiniSFTPServer
+identifiers:
+- winget: CoreFTP.MiniSFTPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/MiniSFTPServer
+aliases: []

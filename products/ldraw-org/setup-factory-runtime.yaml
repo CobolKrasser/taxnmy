@@ -1,0 +1,11 @@
+key: ldraw-org/setup-factory-runtime
+publisher: ldraw-org
+name: Setup Factory Runtime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LDraw/AIOI/2024
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LDraw/AIOI/2024
+identifiers:
+- winget: LDraw.AIOI.2024
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LDraw/AIOI/2024
+aliases: []

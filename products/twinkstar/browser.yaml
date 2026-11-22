@@ -1,0 +1,12 @@
+key: twinkstar/browser
+publisher: twinkstar
+name: Twinkstar Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twinkstar/TwinkstarBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twinkstar/TwinkstarBrowser
+identifiers:
+- winget: Twinkstar.TwinkstarBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twinkstar/TwinkstarBrowser
+aliases:
+- twinkstar/twinkstar-browser

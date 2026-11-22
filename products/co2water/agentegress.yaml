@@ -1,0 +1,11 @@
+key: co2water/agentegress
+publisher: co2water
+name: agentegress
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2water/agentegress
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2water/agentegress
+identifiers:
+- winget: co2water.agentegress
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/co2water/agentegress
+aliases: []

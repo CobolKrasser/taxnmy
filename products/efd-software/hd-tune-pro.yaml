@@ -1,0 +1,11 @@
+key: efd-software/hd-tune-pro
+publisher: efd-software
+name: HD Tune Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFDSoftware/HDTunePro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFDSoftware/HDTunePro
+identifiers:
+- winget: EFDSoftware.HDTunePro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EFDSoftware/HDTunePro
+aliases: []

@@ -1,0 +1,11 @@
+key: sharex-team/sharenot
+publisher: sharex-team
+name: ShareNot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cosebdd/ShareNot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cosebdd/ShareNot
+identifiers:
+- winget: Cosebdd.ShareNot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cosebdd/ShareNot
+aliases: []

@@ -1,0 +1,11 @@
+key: digital-watchdog/dw-spectrum-client
+publisher: digital-watchdog
+name: DW Spectrum Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DW/Spectrum/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DW/Spectrum/Client
+identifiers:
+- winget: DW.Spectrum.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DW/Spectrum/Client
+aliases: []

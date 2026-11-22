@@ -1,0 +1,11 @@
+key: macmod/ldapx
+publisher: macmod
+name: ldapx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macmod/ldapx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macmod/ldapx
+identifiers:
+- winget: Macmod.ldapx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macmod/ldapx
+aliases: []

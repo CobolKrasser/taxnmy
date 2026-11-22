@@ -1,0 +1,11 @@
+key: flakroup/mcontroltray
+publisher: flakroup
+name: MControlTray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flakroup/MControlTray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flakroup/MControlTray
+identifiers:
+- winget: Flakroup.MControlTray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flakroup/MControlTray
+aliases: []

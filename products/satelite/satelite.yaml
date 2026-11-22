@@ -1,0 +1,11 @@
+key: satelite/satelite
+publisher: satelite
+name: Satelite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zn0wii/Satelite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zn0wii/Satelite
+identifiers:
+- winget: zn0wii.Satelite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zn0wii/Satelite
+aliases: []

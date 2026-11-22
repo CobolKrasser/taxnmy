@@ -1,0 +1,11 @@
+key: bsnes-emu/bsnes
+publisher: bsnes-emu
+name: bsnes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bsnes-emu/BSNES
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bsnes-emu/BSNES
+identifiers:
+- winget: bsnes-emu.BSNES
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bsnes-emu/BSNES
+aliases: []

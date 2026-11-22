@@ -1,0 +1,11 @@
+key: reothor/elevate-audit
+publisher: reothor
+name: Elevate Audit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reothor/Elevate/Audit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reothor/Elevate/Audit
+identifiers:
+- winget: Reothor.Elevate.Audit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reothor/Elevate/Audit
+aliases: []

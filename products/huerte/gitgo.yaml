@@ -1,0 +1,11 @@
+key: huerte/gitgo
+publisher: huerte
+name: GitGo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huerte/GitGo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huerte/GitGo
+identifiers:
+- winget: Huerte.GitGo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huerte/GitGo
+aliases: []

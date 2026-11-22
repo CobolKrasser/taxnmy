@@ -1,0 +1,11 @@
+key: winngs/flashdeg
+publisher: winngs
+name: FlashDEG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/FlashDEG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/FlashDEG
+identifiers:
+- winget: WinNGS.FlashDEG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinNGS/FlashDEG
+aliases: []

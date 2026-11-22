@@ -1,0 +1,11 @@
+key: polaris/polaris
+publisher: polaris
+name: polaris
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/misxzaiz/Polaris
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/misxzaiz/Polaris
+identifiers:
+- winget: misxzaiz.Polaris
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/misxzaiz/Polaris
+aliases: []

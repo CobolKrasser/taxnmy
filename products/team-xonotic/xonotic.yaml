@@ -1,0 +1,11 @@
+key: team-xonotic/xonotic
+publisher: team-xonotic
+name: Xonotic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xonotic/Xonotic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xonotic/Xonotic
+identifiers:
+- winget: Xonotic.Xonotic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xonotic/Xonotic
+aliases: []

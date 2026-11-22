@@ -1,0 +1,12 @@
+key: vovsoft/keyword-combiner
+publisher: vovsoft
+name: Vovsoft Keyword Combiner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeywordCombiner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeywordCombiner
+identifiers:
+- winget: VovSoft.KeywordCombiner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/KeywordCombiner
+aliases:
+- vovsoft/vovsoft-keyword-combiner

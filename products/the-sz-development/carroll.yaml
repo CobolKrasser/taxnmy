@@ -1,0 +1,11 @@
+key: the-sz-development/carroll
+publisher: the-sz-development
+name: Carroll
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Carroll
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Carroll
+identifiers:
+- winget: the-sz.Carroll
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Carroll
+aliases: []

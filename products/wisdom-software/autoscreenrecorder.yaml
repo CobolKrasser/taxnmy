@@ -1,0 +1,11 @@
+key: wisdom-software/autoscreenrecorder
+publisher: wisdom-software
+name: AutoScreenRecorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/AutoScreenRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/AutoScreenRecorder
+identifiers:
+- winget: WisdomSoftware.AutoScreenRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WisdomSoftware/AutoScreenRecorder
+aliases: []

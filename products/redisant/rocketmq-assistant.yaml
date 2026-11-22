@@ -1,0 +1,11 @@
+key: redisant/rocketmq-assistant
+publisher: redisant
+name: RocketMQ Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RocketMQAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RocketMQAssistant
+identifiers:
+- winget: Redisant.RocketMQAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/RocketMQAssistant
+aliases: []

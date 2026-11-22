@@ -1,0 +1,11 @@
+key: tanaka-masayuki/wsl-usb-identity-manager
+publisher: tanaka-masayuki
+name: WSL USB Identity Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tanakamasayuki/WSLUSBIdentityManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tanakamasayuki/WSLUSBIdentityManager
+identifiers:
+- winget: tanakamasayuki.WSLUSBIdentityManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tanakamasayuki/WSLUSBIdentityManager
+aliases: []

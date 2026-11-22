@@ -1,0 +1,11 @@
+key: danish-myo-technology/driver-package
+publisher: danish-myo-technology
+name: Driver Package
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/DMTDriverPackage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/DMTDriverPackage
+identifiers:
+- winget: DMT.DMTDriverPackage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/DMTDriverPackage
+aliases: []

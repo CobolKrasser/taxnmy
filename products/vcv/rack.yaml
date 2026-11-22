@@ -1,0 +1,12 @@
+key: vcv/rack
+publisher: vcv
+name: VCV Rack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VCVRack/VCVRack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VCVRack/VCVRack
+identifiers:
+- winget: VCVRack.VCVRack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VCVRack/VCVRack
+aliases:
+- vcv/vcv-rack

@@ -1,0 +1,11 @@
+key: double-gis/2gis
+publisher: double-gis
+name: 2GIS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoubleGIS/2GIS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoubleGIS/2GIS
+identifiers:
+- winget: DoubleGIS.2GIS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DoubleGIS/2GIS
+aliases: []

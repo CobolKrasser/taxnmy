@@ -1,0 +1,11 @@
+key: chaython/windows-maintenance-tool
+publisher: chaython
+name: Windows Maintenance Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chaython/WindowsMaintenanceTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chaython/WindowsMaintenanceTool
+identifiers:
+- winget: Chaython.WindowsMaintenanceTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chaython/WindowsMaintenanceTool
+aliases: []

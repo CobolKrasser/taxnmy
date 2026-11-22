@@ -1,0 +1,11 @@
+key: cato-networks/cato-enterprise-browser
+publisher: cato-networks
+name: Cato Enterprise Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatoNetworks/CatoEnterpriseBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatoNetworks/CatoEnterpriseBrowser
+identifiers:
+- winget: CatoNetworks.CatoEnterpriseBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CatoNetworks/CatoEnterpriseBrowser
+aliases: []

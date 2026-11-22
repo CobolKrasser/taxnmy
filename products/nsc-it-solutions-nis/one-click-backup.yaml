@@ -1,0 +1,11 @@
+key: nsc-it-solutions-nis/one-click-backup
+publisher: nsc-it-solutions-nis
+name: One-Click-Backup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIS/One-Click-Backup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIS/One-Click-Backup
+identifiers:
+- winget: NIS.One-Click-Backup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIS/One-Click-Backup
+aliases: []

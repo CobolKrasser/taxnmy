@@ -1,0 +1,11 @@
+key: george-m-howard/git-roost
+publisher: george-m-howard
+name: git-roost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gmhoward9289-ops/git-roost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gmhoward9289-ops/git-roost
+identifiers:
+- winget: gmhoward9289-ops.git-roost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gmhoward9289-ops/git-roost
+aliases: []

@@ -1,0 +1,11 @@
+key: the-sz-development/norwood
+publisher: the-sz-development
+name: Norwood
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Norwood
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Norwood
+identifiers:
+- winget: the-sz.Norwood
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Norwood
+aliases: []

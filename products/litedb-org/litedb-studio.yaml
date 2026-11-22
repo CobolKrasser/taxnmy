@@ -1,0 +1,11 @@
+key: litedb-org/litedb-studio
+publisher: litedb-org
+name: LiteDB Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/litedb-org/LiteDBStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/litedb-org/LiteDBStudio
+identifiers:
+- winget: litedb-org.LiteDBStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/litedb-org/LiteDBStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: tier1settings/tier1suite
+publisher: tier1settings
+name: Tier1Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tier1Settings/Tier1Suite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tier1Settings/Tier1Suite
+identifiers:
+- winget: Tier1Settings.Tier1Suite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tier1Settings/Tier1Suite
+aliases: []

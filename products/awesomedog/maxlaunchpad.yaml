@@ -1,0 +1,11 @@
+key: awesomedog/maxlaunchpad
+publisher: awesomedog
+name: MaxLaunchpad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/MaxLaunchpad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/MaxLaunchpad
+identifiers:
+- winget: AwesomeDog.MaxLaunchpad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/MaxLaunchpad
+aliases: []

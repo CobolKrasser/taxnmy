@@ -1,0 +1,11 @@
+key: boxstar/deepvocal-toolbox
+publisher: boxstar
+name: DeepVocal ToolBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boxstar/DeepVocalToolBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boxstar/DeepVocalToolBox
+identifiers:
+- winget: Boxstar.DeepVocalToolBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Boxstar/DeepVocalToolBox
+aliases: []

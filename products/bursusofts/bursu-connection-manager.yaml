@@ -1,0 +1,11 @@
+key: bursusofts/bursu-connection-manager
+publisher: bursusofts
+name: BURSU Connection Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BURSUsofts/BURSUcm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BURSUsofts/BURSUcm
+identifiers:
+- winget: BURSUsofts.BURSUcm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BURSUsofts/BURSUcm
+aliases: []

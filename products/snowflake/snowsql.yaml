@@ -1,0 +1,12 @@
+key: snowflake/snowsql
+publisher: snowflake
+name: Snowflake SnowSQL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/SnowSQL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/SnowSQL
+identifiers:
+- winget: Snowflake.SnowSQL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/SnowSQL
+aliases:
+- snowflake/snowflake-snowsql

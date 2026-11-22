@@ -1,0 +1,11 @@
+key: moltis/moltis
+publisher: moltis
+name: Moltis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moltis/Moltis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moltis/Moltis
+identifiers:
+- winget: Moltis.Moltis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Moltis/Moltis
+aliases: []

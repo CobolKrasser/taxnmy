@@ -1,0 +1,11 @@
+key: kmturley/studiorack-app
+publisher: kmturley
+name: StudioRack App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioRack/StudioRack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioRack/StudioRack
+identifiers:
+- winget: StudioRack.StudioRack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StudioRack/StudioRack
+aliases: []

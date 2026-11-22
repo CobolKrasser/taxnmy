@@ -1,0 +1,11 @@
+key: wez-furlong/atomicparsley
+publisher: wez-furlong
+name: AtomicParsley
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/atomicparsley
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/atomicparsley
+identifiers:
+- winget: wez.atomicparsley
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wez/atomicparsley
+aliases: []

@@ -1,0 +1,11 @@
+key: revopoint/revo-metro
+publisher: revopoint
+name: Revo Metro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMetro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMetro
+identifiers:
+- winget: Revopoint.RevoMetro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Revopoint/RevoMetro
+aliases: []

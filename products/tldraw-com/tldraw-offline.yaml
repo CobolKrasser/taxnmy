@@ -1,0 +1,11 @@
+key: tldraw-com/tldraw-offline
+publisher: tldraw-com
+name: tldraw offline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldraw/tldraw-offline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldraw/tldraw-offline
+identifiers:
+- winget: tldraw.tldraw-offline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldraw/tldraw-offline
+aliases: []

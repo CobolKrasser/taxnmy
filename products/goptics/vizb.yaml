@@ -1,0 +1,11 @@
+key: goptics/vizb
+publisher: goptics
+name: Vizb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goptics/vizb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goptics/vizb
+identifiers:
+- winget: goptics.vizb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goptics/vizb
+aliases: []

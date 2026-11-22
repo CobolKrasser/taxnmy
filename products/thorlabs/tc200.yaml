@@ -1,0 +1,11 @@
+key: thorlabs/tc200
+publisher: thorlabs
+name: TC200
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/TC200
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/TC200
+identifiers:
+- winget: Thorlabs.TC200
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/TC200
+aliases: []

@@ -1,0 +1,25 @@
+key: rubyinstaller-team/ruby
+publisher: rubyinstaller-team
+name: Ruby
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/2/6
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/2/6
+identifiers:
+- winget: RubyInstallerTeam.Ruby.2.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/2/6
+- winget: RubyInstallerTeam.Ruby.2.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/2/7
+- winget: RubyInstallerTeam.Ruby.3.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/3/0
+- winget: RubyInstallerTeam.Ruby.3.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/3/1
+- winget: RubyInstallerTeam.Ruby.3.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/3/2
+- winget: RubyInstallerTeam.Ruby.3.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/3/3
+- winget: RubyInstallerTeam.Ruby.3.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/3/4
+- winget: RubyInstallerTeam.Ruby.4.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/Ruby/4/0
+aliases: []

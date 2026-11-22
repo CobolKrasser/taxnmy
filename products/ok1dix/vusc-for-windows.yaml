@@ -1,0 +1,11 @@
+key: ok1dix/vusc-for-windows
+publisher: ok1dix
+name: VUSC for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OK1DIX/VUSC4WIN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OK1DIX/VUSC4WIN
+identifiers:
+- winget: OK1DIX.VUSC4WIN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OK1DIX/VUSC4WIN
+aliases: []

@@ -1,0 +1,11 @@
+key: vergil/printbridge
+publisher: vergil
+name: PrintBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vergil/PrintBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vergil/PrintBridge
+identifiers:
+- winget: Vergil.PrintBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vergil/PrintBridge
+aliases: []

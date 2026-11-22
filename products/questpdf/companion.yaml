@@ -1,0 +1,12 @@
+key: questpdf/companion
+publisher: questpdf
+name: QuestPDF.Companion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuestPDF/Companion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuestPDF/Companion
+identifiers:
+- winget: QuestPDF.Companion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuestPDF/Companion
+aliases:
+- questpdf/questpdf-companion

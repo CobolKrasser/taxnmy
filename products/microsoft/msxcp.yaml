@@ -1,0 +1,11 @@
+key: microsoft/msxcp
+publisher: microsoft
+name: MSXCP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jaimecartodb/MSXCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jaimecartodb/MSXCP
+identifiers:
+- winget: jaimecartodb.MSXCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jaimecartodb/MSXCP
+aliases: []

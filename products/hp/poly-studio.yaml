@@ -1,0 +1,11 @@
+key: hp/poly-studio
+publisher: hp
+name: Poly Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Poly/PolyStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Poly/PolyStudio
+identifiers:
+- winget: Poly.PolyStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Poly/PolyStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: webyog/sqlyog-community
+publisher: webyog
+name: SQLyog Community
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webyog/SQLyogCommunity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webyog/SQLyogCommunity
+identifiers:
+- winget: Webyog.SQLyogCommunity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Webyog/SQLyogCommunity
+aliases: []

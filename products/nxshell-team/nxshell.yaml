@@ -1,0 +1,11 @@
+key: nxshell-team/nxshell
+publisher: nxshell-team
+name: NxShell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NxShellTeam/NxShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NxShellTeam/NxShell
+identifiers:
+- winget: NxShellTeam.NxShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NxShellTeam/NxShell
+aliases: []

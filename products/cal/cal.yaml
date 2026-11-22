@@ -1,0 +1,11 @@
+key: cal/cal
+publisher: cal
+name: Cal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cal/Cal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cal/Cal
+identifiers:
+- winget: Cal.Cal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cal/Cal
+aliases: []

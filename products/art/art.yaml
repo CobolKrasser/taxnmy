@@ -1,0 +1,11 @@
+key: art/art
+publisher: art
+name: ART
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ART/ART
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ART/ART
+identifiers:
+- winget: ART.ART
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ART/ART
+aliases: []

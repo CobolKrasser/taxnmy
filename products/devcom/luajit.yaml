@@ -1,0 +1,11 @@
+key: devcom/luajit
+publisher: devcom
+name: LuaJIT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/LuaJIT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/LuaJIT
+identifiers:
+- winget: DEVCOM.LuaJIT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/LuaJIT
+aliases: []

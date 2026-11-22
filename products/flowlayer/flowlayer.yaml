@@ -1,0 +1,11 @@
+key: flowlayer/flowlayer
+publisher: flowlayer
+name: FlowLayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlowLayer/FlowLayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlowLayer/FlowLayer
+identifiers:
+- winget: FlowLayer.FlowLayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlowLayer/FlowLayer
+aliases: []

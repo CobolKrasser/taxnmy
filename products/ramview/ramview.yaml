@@ -1,0 +1,11 @@
+key: ramview/ramview
+publisher: ramview
+name: RAMView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAMView/RAMView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAMView/RAMView
+identifiers:
+- winget: RAMView.RAMView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAMView/RAMView
+aliases: []

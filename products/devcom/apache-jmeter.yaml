@@ -1,0 +1,11 @@
+key: devcom/apache-jmeter
+publisher: devcom
+name: Apache JMeter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/JMeter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/JMeter
+identifiers:
+- winget: DEVCOM.JMeter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DEVCOM/JMeter
+aliases: []

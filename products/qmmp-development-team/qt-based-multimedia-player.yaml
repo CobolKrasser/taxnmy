@@ -1,0 +1,11 @@
+key: qmmp-development-team/qt-based-multimedia-player
+publisher: qmmp-development-team
+name: Qt-based Multimedia Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QmmpDevelopmentTeam/qmmp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QmmpDevelopmentTeam/qmmp
+identifiers:
+- winget: QmmpDevelopmentTeam.qmmp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QmmpDevelopmentTeam/qmmp
+aliases: []

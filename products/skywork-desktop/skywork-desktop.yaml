@@ -1,0 +1,11 @@
+key: skywork-desktop/skywork-desktop
+publisher: skywork-desktop
+name: skywork-desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skywork/SkyworkDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skywork/SkyworkDesktop
+identifiers:
+- winget: Skywork.SkyworkDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skywork/SkyworkDesktop
+aliases: []

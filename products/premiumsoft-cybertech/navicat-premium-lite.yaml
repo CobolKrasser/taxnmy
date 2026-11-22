@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-premium-lite
+publisher: premiumsoft-cybertech
+name: Navicat Premium Lite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatPremiumLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatPremiumLite
+identifiers:
+- winget: PremiumSoft.NavicatPremiumLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatPremiumLite
+aliases: []

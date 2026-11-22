@@ -1,0 +1,11 @@
+key: donkrage/regpack
+publisher: donkrage
+name: regpack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/donkrage/regpack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/donkrage/regpack
+identifiers:
+- winget: donkrage.regpack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/donkrage/regpack
+aliases: []

@@ -1,0 +1,11 @@
+key: calibre-ebook-com/calibre-portable
+publisher: calibre-ebook-com
+name: calibre portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/portable
+identifiers:
+- winget: calibre.calibre.portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/portable
+aliases: []

@@ -1,0 +1,11 @@
+key: avidemux/avidemux
+publisher: avidemux
+name: Avidemux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avidemux/Avidemux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avidemux/Avidemux
+identifiers:
+- winget: Avidemux.Avidemux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avidemux/Avidemux
+aliases: []

@@ -1,0 +1,11 @@
+key: excelsis-contributors/excelsis-helper
+publisher: excelsis-contributors
+name: Excelsis Helper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelsis/ExcelsisHelper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelsis/ExcelsisHelper
+identifiers:
+- winget: Excelsis.ExcelsisHelper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelsis/ExcelsisHelper
+aliases: []

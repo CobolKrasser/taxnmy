@@ -1,0 +1,11 @@
+key: izantech/winspaces
+publisher: izantech
+name: WinSpaces
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/izantech/WinSpaces
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/izantech/WinSpaces
+identifiers:
+- winget: izantech.WinSpaces
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/izantech/WinSpaces
+aliases: []

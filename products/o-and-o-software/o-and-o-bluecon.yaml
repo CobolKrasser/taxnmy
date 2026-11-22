@@ -1,0 +1,11 @@
+key: o-and-o-software/o-and-o-bluecon
+publisher: o-and-o-software
+name: O&O BlueCon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/BlueCon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/BlueCon
+identifiers:
+- winget: OO-Software.BlueCon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OO-Software/BlueCon
+aliases: []

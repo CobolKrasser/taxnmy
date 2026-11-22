@@ -1,0 +1,12 @@
+key: docusign/edit
+publisher: docusign
+name: Docusign Edit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DocuSign/DocusignEdit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DocuSign/DocusignEdit
+identifiers:
+- winget: DocuSign.DocusignEdit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DocuSign/DocusignEdit
+aliases:
+- docusign/docusign-edit

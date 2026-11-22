@@ -1,0 +1,11 @@
+key: brecht-sanders/winlibs-posix-threads-msvcrt-runtime
+publisher: brecht-sanders
+name: WinLibs (POSIX threads, MSVCRT runtime)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/POSIX/MSVCRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/POSIX/MSVCRT
+identifiers:
+- winget: BrechtSanders.WinLibs.POSIX.MSVCRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrechtSanders/WinLibs/POSIX/MSVCRT
+aliases: []

@@ -1,0 +1,11 @@
+key: bonnie-boni/cli-music
+publisher: bonnie-boni
+name: CLI Music
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BonnieBoni/CliMusic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BonnieBoni/CliMusic
+identifiers:
+- winget: BonnieBoni.CliMusic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BonnieBoni/CliMusic
+aliases: []

@@ -1,0 +1,11 @@
+key: infracost/infracost
+publisher: infracost
+name: Infracost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Infracost/Infracost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Infracost/Infracost
+identifiers:
+- winget: Infracost.Infracost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Infracost/Infracost
+aliases: []

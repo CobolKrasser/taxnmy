@@ -1,0 +1,11 @@
+key: pizi-0/scrcpy-gui
+publisher: pizi-0
+name: Scrcpy GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pizi/scrcpygui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pizi/scrcpygui
+identifiers:
+- winget: pizi.scrcpygui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pizi/scrcpygui
+aliases: []

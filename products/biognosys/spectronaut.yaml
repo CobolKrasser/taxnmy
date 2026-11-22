@@ -1,0 +1,11 @@
+key: biognosys/spectronaut
+publisher: biognosys
+name: Spectronaut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Biognosys/Spectronaut
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Biognosys/Spectronaut
+identifiers:
+- winget: Biognosys.Spectronaut
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Biognosys/Spectronaut
+aliases: []

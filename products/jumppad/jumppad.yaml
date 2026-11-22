@@ -1,0 +1,11 @@
+key: jumppad/jumppad
+publisher: jumppad
+name: Jumppad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jumppad/jumppad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jumppad/jumppad
+identifiers:
+- winget: jumppad.jumppad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jumppad/jumppad
+aliases: []

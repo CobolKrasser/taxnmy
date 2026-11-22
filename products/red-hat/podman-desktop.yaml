@@ -1,0 +1,11 @@
+key: red-hat/podman-desktop
+publisher: red-hat
+name: Podman Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/Podman-Desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/Podman-Desktop
+identifiers:
+- winget: RedHat.Podman-Desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/Podman-Desktop
+aliases: []

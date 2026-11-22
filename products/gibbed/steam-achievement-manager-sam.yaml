@@ -1,0 +1,11 @@
+key: gibbed/steam-achievement-manager-sam
+publisher: gibbed
+name: Steam Achievement Manager (SAM)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gibbed/SteamAchievementManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gibbed/SteamAchievementManager
+identifiers:
+- winget: Gibbed.SteamAchievementManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gibbed/SteamAchievementManager
+aliases: []

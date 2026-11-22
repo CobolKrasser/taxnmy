@@ -1,0 +1,11 @@
+key: wolicheng-tech/wo-mic
+publisher: wolicheng-tech
+name: WO Mic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wolicheng/WOMic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wolicheng/WOMic
+identifiers:
+- winget: Wolicheng.WOMic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wolicheng/WOMic
+aliases: []

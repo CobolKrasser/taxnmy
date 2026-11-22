@@ -1,0 +1,11 @@
+key: opennoteblockstudio/minecraft-note-block-studio
+publisher: opennoteblockstudio
+name: Minecraft Note Block Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenNoteBlockStudio/MinecraftNoteBlockStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenNoteBlockStudio/MinecraftNoteBlockStudio
+identifiers:
+- winget: OpenNoteBlockStudio.MinecraftNoteBlockStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenNoteBlockStudio/MinecraftNoteBlockStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: the-gimp-team/gimp-nightly
+publisher: the-gimp-team
+name: GIMP Nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP/Nightly
+identifiers:
+- winget: GIMP.GIMP.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP/Nightly
+aliases: []

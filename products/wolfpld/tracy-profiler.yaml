@@ -1,0 +1,11 @@
+key: wolfpld/tracy-profiler
+publisher: wolfpld
+name: Tracy Profiler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wolfpld/tracy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wolfpld/tracy
+identifiers:
+- winget: wolfpld.tracy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wolfpld/tracy
+aliases: []

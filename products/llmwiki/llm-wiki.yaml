@@ -1,0 +1,11 @@
+key: llmwiki/llm-wiki
+publisher: llmwiki
+name: LLM Wiki
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nashsu/LLMWiki
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nashsu/LLMWiki
+identifiers:
+- winget: nashsu.LLMWiki
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nashsu/LLMWiki
+aliases: []

@@ -1,0 +1,13 @@
+key: naked-agility-with-martin-hinshelwood/azure-devops-migration-tools
+publisher: naked-agility-with-martin-hinshelwood
+name: Azure DevOps Migration Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkdAgility/AzureDevOpsMigrationTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkdAgility/AzureDevOpsMigrationTools
+identifiers:
+- winget: nkdAgility.AzureDevOpsMigrationTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkdAgility/AzureDevOpsMigrationTools
+- winget: nkdAgility.AzureDevOpsMigrationTools.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nkdAgility/AzureDevOpsMigrationTools/Preview
+aliases: []

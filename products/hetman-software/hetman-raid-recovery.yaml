@@ -1,0 +1,11 @@
+key: hetman-software/hetman-raid-recovery
+publisher: hetman-software
+name: Hetman RAID Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/RAIDRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/RAIDRecovery
+identifiers:
+- winget: Hetman.RAIDRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/RAIDRecovery
+aliases: []

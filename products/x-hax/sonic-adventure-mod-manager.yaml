@@ -1,0 +1,11 @@
+key: x-hax/sonic-adventure-mod-manager
+publisher: x-hax
+name: Sonic Adventure Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X-Hax/SAModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X-Hax/SAModManager
+identifiers:
+- winget: X-Hax.SAModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X-Hax/SAModManager
+aliases: []

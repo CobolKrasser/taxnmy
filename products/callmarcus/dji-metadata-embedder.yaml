@@ -1,0 +1,11 @@
+key: callmarcus/dji-metadata-embedder
+publisher: callmarcus
+name: DJI Metadata Embedder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CallMarcus/DJIMetadataEmbedder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CallMarcus/DJIMetadataEmbedder
+identifiers:
+- winget: CallMarcus.DJIMetadataEmbedder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CallMarcus/DJIMetadataEmbedder
+aliases: []

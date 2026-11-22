@@ -1,0 +1,11 @@
+key: drpepper/dsh-agent
+publisher: drpepper
+name: DSH Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makise2060/DSH-Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makise2060/DSH-Agent
+identifiers:
+- winget: makise2060.DSH-Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/makise2060/DSH-Agent
+aliases: []

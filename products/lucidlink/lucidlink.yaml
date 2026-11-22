@@ -1,0 +1,11 @@
+key: lucidlink/lucidlink
+publisher: lucidlink
+name: LucidLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LucidLink/LucidLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LucidLink/LucidLink
+identifiers:
+- winget: LucidLink.LucidLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LucidLink/LucidLink
+aliases: []

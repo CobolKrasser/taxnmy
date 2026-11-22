@@ -1,0 +1,12 @@
+key: modrinth/app
+publisher: modrinth
+name: Modrinth App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modrinth/ModrinthApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modrinth/ModrinthApp
+identifiers:
+- winget: Modrinth.ModrinthApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Modrinth/ModrinthApp
+aliases:
+- modrinth/modrinth-app

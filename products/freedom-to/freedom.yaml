@@ -1,0 +1,11 @@
+key: freedom-to/freedom
+publisher: freedom-to
+name: Freedom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freedom/Freedom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freedom/Freedom
+identifiers:
+- winget: Freedom.Freedom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Freedom/Freedom
+aliases: []

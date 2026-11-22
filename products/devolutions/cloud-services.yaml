@@ -1,0 +1,12 @@
+key: devolutions/cloud-services
+publisher: devolutions
+name: Devolutions Cloud Services
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Cloud/Services
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Cloud/Services
+identifiers:
+- winget: Devolutions.Cloud.Services
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Devolutions/Cloud/Services
+aliases:
+- devolutions/devolutions-cloud-services

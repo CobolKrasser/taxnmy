@@ -1,0 +1,11 @@
+key: myheritage-com/myheritage-family-tree-builder
+publisher: myheritage-com
+name: MyHeritage Family Tree Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyHeritage/FamilyTreeBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyHeritage/FamilyTreeBuilder
+identifiers:
+- winget: MyHeritage.FamilyTreeBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MyHeritage/FamilyTreeBuilder
+aliases: []

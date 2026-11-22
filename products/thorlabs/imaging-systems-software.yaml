@@ -1,0 +1,12 @@
+key: thorlabs/imaging-systems-software
+publisher: thorlabs
+name: Thorlabs Imaging Systems Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorlabsImagingSystemsSoftware
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorlabsImagingSystemsSoftware
+identifiers:
+- winget: Thorlabs.ThorlabsImagingSystemsSoftware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/ThorlabsImagingSystemsSoftware
+aliases:
+- thorlabs/thorlabs-imaging-systems-software

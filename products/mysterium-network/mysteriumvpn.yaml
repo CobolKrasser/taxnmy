@@ -1,0 +1,11 @@
+key: mysterium-network/mysteriumvpn
+publisher: mysterium-network
+name: MysteriumVPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MysteriumNetwork/Mysterium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MysteriumNetwork/Mysterium
+identifiers:
+- winget: MysteriumNetwork.Mysterium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MysteriumNetwork/Mysterium
+aliases: []

@@ -1,0 +1,11 @@
+key: niubi-technology/niubi-partition-editor-technician-edition
+publisher: niubi-technology
+name: NIUBI Partition Editor Technician Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Technician
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Technician
+identifiers:
+- winget: NIUBI.PartitionEditor.Technician
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NIUBI/PartitionEditor/Technician
+aliases: []

@@ -1,0 +1,11 @@
+key: binancetech/binance
+publisher: binancetech
+name: Binance
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinanceTech/Binance
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinanceTech/Binance
+identifiers:
+- winget: BinanceTech.Binance
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinanceTech/Binance
+aliases: []

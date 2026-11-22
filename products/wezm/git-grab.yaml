@@ -1,0 +1,11 @@
+key: wezm/git-grab
+publisher: wezm
+name: git-grab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wezm/git-grab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wezm/git-grab
+identifiers:
+- winget: wezm.git-grab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wezm/git-grab
+aliases: []

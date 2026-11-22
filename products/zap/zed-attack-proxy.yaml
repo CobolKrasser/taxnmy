@@ -1,0 +1,11 @@
+key: zap/zed-attack-proxy
+publisher: zap
+name: Zed Attack Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZAP/ZAP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZAP/ZAP
+identifiers:
+- winget: ZAP.ZAP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZAP/ZAP
+aliases: []

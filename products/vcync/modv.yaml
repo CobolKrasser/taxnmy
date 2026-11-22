@@ -1,0 +1,11 @@
+key: vcync/modv
+publisher: vcync
+name: modV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcync/modV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcync/modV
+identifiers:
+- winget: vcync.modV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcync/modV
+aliases: []

@@ -1,0 +1,11 @@
+key: code-ix/qnetwork
+publisher: code-ix
+name: QNetwork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QNetwork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QNetwork
+identifiers:
+- winget: Code-iX.QNetwork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Code-iX/QNetwork
+aliases: []

@@ -1,0 +1,11 @@
+key: mirc/mirc
+publisher: mirc
+name: mIRC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mIRC/mIRC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mIRC/mIRC
+identifiers:
+- winget: mIRC.mIRC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mIRC/mIRC
+aliases: []

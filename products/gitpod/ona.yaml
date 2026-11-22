@@ -1,0 +1,11 @@
+key: gitpod/ona
+publisher: gitpod
+name: Ona
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitpod/Ona
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitpod/Ona
+identifiers:
+- winget: Gitpod.Ona
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitpod/Ona
+aliases: []

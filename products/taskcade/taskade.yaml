@@ -1,0 +1,11 @@
+key: taskcade/taskade
+publisher: taskcade
+name: Taskade
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taskcade/Taskade
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taskcade/Taskade
+identifiers:
+- winget: Taskcade.Taskade
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taskcade/Taskade
+aliases: []

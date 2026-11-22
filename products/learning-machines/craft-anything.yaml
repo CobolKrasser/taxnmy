@@ -1,0 +1,11 @@
+key: learning-machines/craft-anything
+publisher: learning-machines
+name: Craft Anything
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/CraftAnything
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/CraftAnything
+identifiers:
+- winget: ArtCraft.CraftAnything
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/CraftAnything
+aliases: []

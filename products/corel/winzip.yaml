@@ -1,0 +1,11 @@
+key: corel/winzip
+publisher: corel
+name: WinZip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip
+identifiers:
+- winget: Corel.WinZip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Corel/WinZip
+aliases: []

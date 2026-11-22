@@ -1,0 +1,11 @@
+key: massachusetts-institute-of-technology/mit-kerberos-for-windows
+publisher: massachusetts-institute-of-technology
+name: MIT Kerberos for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/Kerberos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/Kerberos
+identifiers:
+- winget: MIT.Kerberos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/Kerberos
+aliases: []

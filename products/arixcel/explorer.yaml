@@ -1,0 +1,12 @@
+key: arixcel/explorer
+publisher: arixcel
+name: Arixcel Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arixcel/ArixcelExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arixcel/ArixcelExplorer
+identifiers:
+- winget: Arixcel.ArixcelExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arixcel/ArixcelExplorer
+aliases:
+- arixcel/arixcel-explorer

@@ -1,0 +1,11 @@
+key: scaleway/cli
+publisher: scaleway
+name: cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scaleway/cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scaleway/cli
+identifiers:
+- winget: Scaleway.cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scaleway/cli
+aliases: []

@@ -1,0 +1,12 @@
+key: nickvision/parabolic
+publisher: nickvision
+name: Nickvision Parabolic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nickvision/Parabolic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nickvision/Parabolic
+identifiers:
+- winget: Nickvision.Parabolic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nickvision/Parabolic
+aliases:
+- nickvision/nickvision-parabolic

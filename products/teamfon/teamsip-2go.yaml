@@ -1,0 +1,11 @@
+key: teamfon/teamsip-2go
+publisher: teamfon
+name: TeamSIP 2go
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamFON/TeamSIP2go
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamFON/TeamSIP2go
+identifiers:
+- winget: TeamFON.TeamSIP2go
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamFON/TeamSIP2go
+aliases: []

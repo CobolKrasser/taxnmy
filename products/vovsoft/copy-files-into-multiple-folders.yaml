@@ -1,0 +1,12 @@
+key: vovsoft/copy-files-into-multiple-folders
+publisher: vovsoft
+name: Vovsoft Copy Files Into Multiple Folders
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CopyFilesIntoMultipleFolders
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CopyFilesIntoMultipleFolders
+identifiers:
+- winget: VovSoft.CopyFilesIntoMultipleFolders
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CopyFilesIntoMultipleFolders
+aliases:
+- vovsoft/vovsoft-copy-files-into-multiple-folders

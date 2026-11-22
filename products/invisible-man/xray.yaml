@@ -1,0 +1,12 @@
+key: invisible-man/xray
+publisher: invisible-man
+name: Invisible Man XRay
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InvisibleMan/InvisibleManXRay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InvisibleMan/InvisibleManXRay
+identifiers:
+- winget: InvisibleMan.InvisibleManXRay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InvisibleMan/InvisibleManXRay
+aliases:
+- invisible-man/invisible-man-xray

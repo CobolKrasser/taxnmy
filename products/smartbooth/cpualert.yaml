@@ -1,0 +1,11 @@
+key: smartbooth/cpualert
+publisher: smartbooth
+name: CPUAlert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/CPUAlert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/CPUAlert
+identifiers:
+- winget: Smartbooth.CPUAlert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/CPUAlert
+aliases: []

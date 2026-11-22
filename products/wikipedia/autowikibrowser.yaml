@@ -1,0 +1,11 @@
+key: wikipedia/autowikibrowser
+publisher: wikipedia
+name: AutoWikiBrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikimediaProject/AutoWikiBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikimediaProject/AutoWikiBrowser
+identifiers:
+- winget: WikimediaProject.AutoWikiBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WikimediaProject/AutoWikiBrowser
+aliases: []

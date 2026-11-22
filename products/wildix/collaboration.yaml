@@ -1,0 +1,12 @@
+key: wildix/collaboration
+publisher: wildix
+name: Wildix Collaboration
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildix/WildixCollaboration
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildix/WildixCollaboration
+identifiers:
+- winget: Wildix.WildixCollaboration
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wildix/WildixCollaboration
+aliases:
+- wildix/wildix-collaboration

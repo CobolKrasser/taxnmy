@@ -1,0 +1,12 @@
+key: proton/vpn
+publisher: proton
+name: Proton VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonVPN
+identifiers:
+- winget: Proton.ProtonVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonVPN
+aliases:
+- proton/proton-vpn

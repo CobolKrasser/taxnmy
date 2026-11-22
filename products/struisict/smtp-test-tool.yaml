@@ -1,0 +1,11 @@
+key: struisict/smtp-test-tool
+publisher: struisict
+name: SMTP Test Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/SmtpTestTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/SmtpTestTool
+identifiers:
+- winget: StruisICT.SmtpTestTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StruisICT/SmtpTestTool
+aliases: []

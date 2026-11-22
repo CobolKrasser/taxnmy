@@ -1,0 +1,11 @@
+key: aurelio-avila/tweaky-driver
+publisher: aurelio-avila
+name: Tweaky Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/TweakyDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/TweakyDriver
+identifiers:
+- winget: AurelioAvila.TweakyDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AurelioAvila/TweakyDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: mozilla/dot-browser
+publisher: mozilla
+name: Dot Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dothq/DotBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dothq/DotBrowser
+identifiers:
+- winget: Dothq.DotBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dothq/DotBrowser
+aliases: []

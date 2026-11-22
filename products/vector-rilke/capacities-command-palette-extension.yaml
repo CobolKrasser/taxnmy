@@ -1,0 +1,11 @@
+key: vector-rilke/capacities-command-palette-extension
+publisher: vector-rilke
+name: Capacities Command Palette Extension
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VectorRilke/CmdPal-Capacities
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VectorRilke/CmdPal-Capacities
+identifiers:
+- winget: VectorRilke.CmdPal-Capacities
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VectorRilke/CmdPal-Capacities
+aliases: []

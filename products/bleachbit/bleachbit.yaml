@@ -1,0 +1,11 @@
+key: bleachbit/bleachbit
+publisher: bleachbit
+name: BleachBit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BleachBit/BleachBit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BleachBit/BleachBit
+identifiers:
+- winget: BleachBit.BleachBit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BleachBit/BleachBit
+aliases: []

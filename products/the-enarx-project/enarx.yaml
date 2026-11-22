@@ -1,0 +1,11 @@
+key: the-enarx-project/enarx
+publisher: the-enarx-project
+name: enarx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnarxProject/enarx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnarxProject/enarx
+identifiers:
+- winget: EnarxProject.enarx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EnarxProject/enarx
+aliases: []

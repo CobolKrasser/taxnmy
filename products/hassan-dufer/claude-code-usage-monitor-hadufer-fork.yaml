@@ -1,0 +1,11 @@
+key: hassan-dufer/claude-code-usage-monitor-hadufer-fork
+publisher: hassan-dufer
+name: Claude Code Usage Monitor (hadufer fork)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hadufer/ClaudeCodeUsageMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hadufer/ClaudeCodeUsageMonitor
+identifiers:
+- winget: hadufer.ClaudeCodeUsageMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hadufer/ClaudeCodeUsageMonitor
+aliases: []

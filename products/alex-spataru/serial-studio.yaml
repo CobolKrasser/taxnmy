@@ -1,0 +1,11 @@
+key: alex-spataru/serial-studio
+publisher: alex-spataru
+name: Serial Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialStudio/SerialStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialStudio/SerialStudio
+identifiers:
+- winget: SerialStudio.SerialStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SerialStudio/SerialStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: hetman-software/hetman-file-repair
+publisher: hetman-software
+name: Hetman File Repair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/FileRepair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/FileRepair
+identifiers:
+- winget: Hetman.FileRepair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/FileRepair
+aliases: []

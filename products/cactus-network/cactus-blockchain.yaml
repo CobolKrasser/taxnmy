@@ -1,0 +1,11 @@
+key: cactus-network/cactus-blockchain
+publisher: cactus-network
+name: Cactus Blockchain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CactusNetwork/CactusBlockchainGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CactusNetwork/CactusBlockchainGUI
+identifiers:
+- winget: CactusNetwork.CactusBlockchainGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CactusNetwork/CactusBlockchainGUI
+aliases: []

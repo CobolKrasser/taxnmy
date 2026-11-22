@@ -1,0 +1,11 @@
+key: crystalidea-software/anytoiso
+publisher: crystalidea-software
+name: AnyToISO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/AnyToISO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/AnyToISO
+identifiers:
+- winget: CrystalIDEASoftware.AnyToISO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/AnyToISO
+aliases: []

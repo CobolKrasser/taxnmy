@@ -1,0 +1,13 @@
+key: zhongyang219/trafficmonitor
+publisher: zhongyang219
+name: TrafficMonitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhongyang219/TrafficMonitor/Full
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhongyang219/TrafficMonitor/Full
+identifiers:
+- winget: zhongyang219.TrafficMonitor.Full
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhongyang219/TrafficMonitor/Full
+- winget: zhongyang219.TrafficMonitor.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zhongyang219/TrafficMonitor/Lite
+aliases: []

@@ -1,0 +1,11 @@
+key: parsify-technologies/parsify
+publisher: parsify-technologies
+name: Parsify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntoniKepinski/ParsifyDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntoniKepinski/ParsifyDesktop
+identifiers:
+- winget: AntoniKepinski.ParsifyDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntoniKepinski/ParsifyDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: gqrx-sdr/gqrx
+publisher: gqrx-sdr
+name: gqrx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gqrx-sdr/gqrx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gqrx-sdr/gqrx
+identifiers:
+- winget: gqrx-sdr.gqrx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gqrx-sdr/gqrx
+aliases: []

@@ -1,0 +1,11 @@
+key: german-cancer-research-center-dkfz/mitk-medical-imaging-and-interaction-toolkit
+publisher: german-cancer-research-center-dkfz
+name: MITK - Medical Imaging and Interaction Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITK/MITK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITK/MITK
+identifiers:
+- winget: MITK.MITK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITK/MITK
+aliases: []

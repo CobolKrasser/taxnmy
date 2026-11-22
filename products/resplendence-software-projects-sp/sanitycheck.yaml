@@ -1,0 +1,11 @@
+key: resplendence-software-projects-sp/sanitycheck
+publisher: resplendence-software-projects-sp
+name: SanityCheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/SanityCheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/SanityCheck
+identifiers:
+- winget: Resplendence.SanityCheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Resplendence/SanityCheck
+aliases: []

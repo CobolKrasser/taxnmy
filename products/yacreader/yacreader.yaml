@@ -1,0 +1,11 @@
+key: yacreader/yacreader
+publisher: yacreader
+name: YACReader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YACReader/YACReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YACReader/YACReader
+identifiers:
+- winget: YACReader.YACReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YACReader/YACReader
+aliases: []

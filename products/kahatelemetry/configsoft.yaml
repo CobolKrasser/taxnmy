@@ -1,0 +1,11 @@
+key: kahatelemetry/configsoft
+publisher: kahatelemetry
+name: ConfigSoft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/ConfigSoft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/ConfigSoft
+identifiers:
+- winget: ADInstruments.ConfigSoft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/ConfigSoft
+aliases: []

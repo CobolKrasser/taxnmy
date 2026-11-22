@@ -1,0 +1,11 @@
+key: bohdan-koudelka/file-search-manager
+publisher: bohdan-koudelka
+name: File Search Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BohdanKoudelka/FileSearchManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BohdanKoudelka/FileSearchManager
+identifiers:
+- winget: BohdanKoudelka.FileSearchManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BohdanKoudelka/FileSearchManager
+aliases: []

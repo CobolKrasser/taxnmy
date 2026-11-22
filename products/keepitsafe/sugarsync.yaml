@@ -1,0 +1,11 @@
+key: keepitsafe/sugarsync
+publisher: keepitsafe
+name: SugarSync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPVanish/SugarSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPVanish/SugarSync
+identifiers:
+- winget: IPVanish.SugarSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPVanish/SugarSync
+aliases: []

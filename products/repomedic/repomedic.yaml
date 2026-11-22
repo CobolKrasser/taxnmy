@@ -1,0 +1,11 @@
+key: repomedic/repomedic
+publisher: repomedic
+name: repomedic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/repomedic/repomedic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/repomedic/repomedic
+identifiers:
+- winget: repomedic.repomedic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/repomedic/repomedic
+aliases: []

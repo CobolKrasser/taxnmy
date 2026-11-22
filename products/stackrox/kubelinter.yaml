@@ -1,0 +1,11 @@
+key: stackrox/kubelinter
+publisher: stackrox
+name: KubeLinter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stackrox/kube-linter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stackrox/kube-linter
+identifiers:
+- winget: stackrox.kube-linter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stackrox/kube-linter
+aliases: []

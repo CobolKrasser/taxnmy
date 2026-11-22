@@ -1,0 +1,11 @@
+key: ptv-group/ptv-vissim
+publisher: ptv-group
+name: PTV Vissim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTV/Vissim/2026
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTV/Vissim/2026
+identifiers:
+- winget: PTV.Vissim.2026
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PTV/Vissim/2026
+aliases: []

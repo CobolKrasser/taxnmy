@@ -1,0 +1,11 @@
+key: open-cli-collective/spotify-cli
+publisher: open-cli-collective
+name: Spotify CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/spotify-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/spotify-cli
+identifiers:
+- winget: OpenCLICollective.spotify-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/spotify-cli
+aliases: []

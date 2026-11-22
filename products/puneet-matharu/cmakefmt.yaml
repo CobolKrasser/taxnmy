@@ -1,0 +1,11 @@
+key: puneet-matharu/cmakefmt
+publisher: puneet-matharu
+name: cmakefmt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cmakefmt/cmakefmt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cmakefmt/cmakefmt
+identifiers:
+- winget: cmakefmt.cmakefmt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cmakefmt/cmakefmt
+aliases: []

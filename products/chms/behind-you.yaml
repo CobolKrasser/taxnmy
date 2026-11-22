@@ -1,0 +1,11 @@
+key: chms/behind-you
+publisher: chms
+name: Behind you
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHMS/Behindyou
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHMS/Behindyou
+identifiers:
+- winget: CHMS.Behindyou
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHMS/Behindyou
+aliases: []

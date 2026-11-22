@@ -1,0 +1,11 @@
+key: astral/ruff
+publisher: astral
+name: Ruff
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/ruff
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/ruff
+identifiers:
+- winget: astral-sh.ruff
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/ruff
+aliases: []

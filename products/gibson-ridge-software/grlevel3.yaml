@@ -1,0 +1,11 @@
+key: gibson-ridge-software/grlevel3
+publisher: gibson-ridge-software
+name: GRLevel3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GRLevel3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GRLevel3
+identifiers:
+- winget: GRLevelX.GRLevel3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRLevelX/GRLevel3
+aliases: []

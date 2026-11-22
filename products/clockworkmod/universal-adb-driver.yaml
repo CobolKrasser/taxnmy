@@ -1,0 +1,11 @@
+key: clockworkmod/universal-adb-driver
+publisher: clockworkmod
+name: Universal Adb Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClockworkMod/UniversalADBDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClockworkMod/UniversalADBDriver
+identifiers:
+- winget: ClockworkMod.UniversalADBDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClockworkMod/UniversalADBDriver
+aliases: []

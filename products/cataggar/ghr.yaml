@@ -1,0 +1,11 @@
+key: cataggar/ghr
+publisher: cataggar
+name: ghr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cataggar/ghr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cataggar/ghr
+identifiers:
+- winget: cataggar.ghr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cataggar/ghr
+aliases: []

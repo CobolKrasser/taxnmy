@@ -1,0 +1,11 @@
+key: unigine/heaven-benchmark
+publisher: unigine
+name: Heaven Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/HeavenBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/HeavenBenchmark
+identifiers:
+- winget: Unigine.HeavenBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unigine/HeavenBenchmark
+aliases: []

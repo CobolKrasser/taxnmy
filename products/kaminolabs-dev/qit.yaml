@@ -1,0 +1,11 @@
+key: kaminolabs-dev/qit
+publisher: kaminolabs-dev
+name: Qit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaminolabs/Qit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaminolabs/Qit
+identifiers:
+- winget: Kaminolabs.Qit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kaminolabs/Qit
+aliases: []

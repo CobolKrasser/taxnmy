@@ -1,0 +1,11 @@
+key: pypy-team/pypy2-7
+publisher: pypy-team
+name: PyPy2.7
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPy/PyPy/2/7
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPy/PyPy/2/7
+identifiers:
+- winget: PyPy.PyPy.2.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PyPy/PyPy/2/7
+aliases: []

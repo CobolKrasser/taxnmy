@@ -1,0 +1,11 @@
+key: lyncwizard-com/teams-wizard
+publisher: lyncwizard-com
+name: Teams Wizard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LyncWizard/TeamsWizard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LyncWizard/TeamsWizard
+identifiers:
+- winget: LyncWizard.TeamsWizard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LyncWizard/TeamsWizard
+aliases: []

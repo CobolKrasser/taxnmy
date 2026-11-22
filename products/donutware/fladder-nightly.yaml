@@ -1,0 +1,11 @@
+key: donutware/fladder-nightly
+publisher: donutware
+name: Fladder - Nightly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonutWare/Fladder/Nightly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonutWare/Fladder/Nightly
+identifiers:
+- winget: DonutWare.Fladder.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DonutWare/Fladder/Nightly
+aliases: []

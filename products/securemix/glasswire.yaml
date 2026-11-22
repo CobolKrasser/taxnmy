@@ -1,0 +1,11 @@
+key: securemix/glasswire
+publisher: securemix
+name: GlassWire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlassWire/GlassWire/Lite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlassWire/GlassWire/Lite
+identifiers:
+- winget: GlassWire.GlassWire.Lite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlassWire/GlassWire/Lite
+aliases: []

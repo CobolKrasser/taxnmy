@@ -1,0 +1,11 @@
+key: wingware/wing-personal
+publisher: wingware
+name: Wing Personal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing/Personal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing/Personal
+identifiers:
+- winget: Wingware.Wing.Personal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wingware/Wing/Personal
+aliases: []

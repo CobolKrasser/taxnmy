@@ -1,0 +1,11 @@
+key: devpossible/desktoppossible
+publisher: devpossible
+name: DesktopPossible
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevPossible/DesktopPossible
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevPossible/DesktopPossible
+identifiers:
+- winget: DevPossible.DesktopPossible
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevPossible/DesktopPossible
+aliases: []

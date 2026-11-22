@@ -1,0 +1,11 @@
+key: roon-labs/roonbridge
+publisher: roon-labs
+name: RoonBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoonLabs/RoonBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoonLabs/RoonBridge
+identifiers:
+- winget: RoonLabs.RoonBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoonLabs/RoonBridge
+aliases: []

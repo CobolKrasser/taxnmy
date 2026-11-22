@@ -1,0 +1,11 @@
+key: lifeat/lifeat
+publisher: lifeat
+name: LifeAt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LifeAt/LifeAt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LifeAt/LifeAt
+identifiers:
+- winget: LifeAt.LifeAt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LifeAt/LifeAt
+aliases: []

@@ -1,0 +1,11 @@
+key: kessriga-jeukal/flamberge
+publisher: kessriga-jeukal
+name: flamberge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kessriga/Flamberge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kessriga/Flamberge
+identifiers:
+- winget: Kessriga.Flamberge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kessriga/Flamberge
+aliases: []

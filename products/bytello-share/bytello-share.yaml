@@ -1,0 +1,11 @@
+key: bytello-share/bytello-share
+publisher: bytello-share
+name: Bytello Share
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytello/BytelloShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytello/BytelloShare
+identifiers:
+- winget: Bytello.BytelloShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bytello/BytelloShare
+aliases: []

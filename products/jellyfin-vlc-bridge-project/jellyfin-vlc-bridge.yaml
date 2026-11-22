@@ -1,0 +1,11 @@
+key: jellyfin-vlc-bridge-project/jellyfin-vlc-bridge
+publisher: jellyfin-vlc-bridge-project
+name: Jellyfin VLC Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrySer66/JellyfinVlcBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrySer66/JellyfinVlcBridge
+identifiers:
+- winget: CrySer66.JellyfinVlcBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrySer66/JellyfinVlcBridge
+aliases: []

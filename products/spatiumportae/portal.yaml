@@ -1,0 +1,11 @@
+key: spatiumportae/portal
+publisher: spatiumportae
+name: portal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpatiumPortae/portal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpatiumPortae/portal
+identifiers:
+- winget: SpatiumPortae.portal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpatiumPortae/portal
+aliases: []

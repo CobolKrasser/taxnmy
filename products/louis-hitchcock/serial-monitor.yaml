@@ -1,0 +1,11 @@
+key: louis-hitchcock/serial-monitor
+publisher: louis-hitchcock
+name: Serial Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LouisHitchcock/SerialMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LouisHitchcock/SerialMonitor
+identifiers:
+- winget: LouisHitchcock.SerialMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LouisHitchcock/SerialMonitor
+aliases: []

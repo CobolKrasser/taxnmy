@@ -1,0 +1,11 @@
+key: saas-group/tower
+publisher: saas-group
+name: Tower
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaaSGroup/Tower
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaaSGroup/Tower
+identifiers:
+- winget: SaaSGroup.Tower
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SaaSGroup/Tower
+aliases: []

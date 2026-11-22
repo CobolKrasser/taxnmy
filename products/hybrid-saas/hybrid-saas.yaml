@@ -1,0 +1,11 @@
+key: hybrid-saas/hybrid-saas
+publisher: hybrid-saas
+name: hybrid-saas
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HybridSaaS/HybridSaaS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HybridSaaS/HybridSaaS
+identifiers:
+- winget: HybridSaaS.HybridSaaS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HybridSaaS/HybridSaaS
+aliases: []

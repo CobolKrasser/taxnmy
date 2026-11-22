@@ -1,0 +1,11 @@
+key: the-xiphos-development-team/xiphos
+publisher: the-xiphos-development-team
+name: Xiphos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/crosswire/xiphos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/crosswire/xiphos
+identifiers:
+- winget: crosswire.xiphos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/crosswire/xiphos
+aliases: []

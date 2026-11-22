@@ -1,0 +1,11 @@
+key: octonove/pdflocal
+publisher: octonove
+name: PDFLocal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Octonove/PDFLocal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Octonove/PDFLocal
+identifiers:
+- winget: Octonove.PDFLocal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Octonove/PDFLocal
+aliases: []

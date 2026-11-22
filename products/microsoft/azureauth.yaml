@@ -1,0 +1,11 @@
+key: microsoft/azureauth
+publisher: microsoft
+name: AzureAuth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Auth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Auth
+identifiers:
+- winget: Microsoft.Azure.Auth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/Auth
+aliases: []

@@ -1,0 +1,11 @@
+key: ideamk/tga-viewer
+publisher: ideamk
+name: TGA Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/TGAViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/TGAViewer
+identifiers:
+- winget: IdeaMK.TGAViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/TGAViewer
+aliases: []

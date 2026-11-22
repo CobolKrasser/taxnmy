@@ -1,0 +1,12 @@
+key: vovsoft/regex-extractor
+publisher: vovsoft
+name: Vovsoft RegEx Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RegExExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RegExExtractor
+identifiers:
+- winget: VovSoft.RegExExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RegExExtractor
+aliases:
+- vovsoft/vovsoft-regex-extractor

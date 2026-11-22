@@ -1,0 +1,11 @@
+key: ipaget/ipaget
+publisher: ipaget
+name: iPAGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iPAGet/iPAGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iPAGet/iPAGet
+identifiers:
+- winget: iPAGet.iPAGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iPAGet/iPAGet
+aliases: []

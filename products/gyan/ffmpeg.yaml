@@ -1,0 +1,13 @@
+key: gyan/ffmpeg
+publisher: gyan
+name: FFmpeg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg
+identifiers:
+- winget: Gyan.FFmpeg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg
+- winget: Gyan.FFmpeg.Shared
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gyan/FFmpeg/Shared
+aliases: []

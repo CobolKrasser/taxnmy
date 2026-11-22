@@ -1,0 +1,11 @@
+key: spacemesh/spacemesh
+publisher: spacemesh
+name: Spacemesh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spacemesh/Spacemesh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spacemesh/Spacemesh
+identifiers:
+- winget: Spacemesh.Spacemesh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spacemesh/Spacemesh
+aliases: []

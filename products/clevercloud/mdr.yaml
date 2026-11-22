@@ -1,0 +1,11 @@
+key: clevercloud/mdr
+publisher: clevercloud
+name: mdr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverCloud/mdr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverCloud/mdr
+identifiers:
+- winget: CleverCloud.mdr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverCloud/mdr
+aliases: []

@@ -1,0 +1,11 @@
+key: robomatter/robotc
+publisher: robomatter
+name: ROBOTC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/ROBOTC/VEXRobotics
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/ROBOTC/VEXRobotics
+identifiers:
+- winget: Robomatter.ROBOTC.VEXRobotics
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/ROBOTC/VEXRobotics
+aliases: []

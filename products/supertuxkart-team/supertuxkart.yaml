@@ -1,0 +1,11 @@
+key: supertuxkart-team/supertuxkart
+publisher: supertuxkart-team
+name: SuperTuxKart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperTuxKart/SuperTuxKart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperTuxKart/SuperTuxKart
+identifiers:
+- winget: SuperTuxKart.SuperTuxKart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperTuxKart/SuperTuxKart
+aliases: []

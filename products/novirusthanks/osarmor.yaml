@@ -1,0 +1,16 @@
+key: novirusthanks/osarmor
+publisher: novirusthanks
+name: NoVirusThanks OSArmor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/OSArmor/Personal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/OSArmor/Personal
+identifiers:
+- winget: NoVirusThanks.OSArmor.Business
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/OSArmor/Business
+- winget: NoVirusThanks.OSArmor.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/OSArmor/Enterprise
+- winget: NoVirusThanks.OSArmor.Personal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoVirusThanks/OSArmor/Personal
+aliases:
+- novirusthanks/novirusthanks-osarmor

@@ -1,0 +1,13 @@
+key: tabular-editor/tabular-editor
+publisher: tabular-editor
+name: Tabular Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabularEditor/TabularEditor/2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabularEditor/TabularEditor/2
+identifiers:
+- winget: TabularEditor.TabularEditor.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabularEditor/TabularEditor/2
+- winget: TabularEditor.TabularEditor.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TabularEditor/TabularEditor/3
+aliases: []

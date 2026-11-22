@@ -1,0 +1,11 @@
+key: david-stells/entrachecks
+publisher: david-stells
+name: EntraChecks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stells/EntraChecks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stells/EntraChecks
+identifiers:
+- winget: Stells.EntraChecks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stells/EntraChecks
+aliases: []

@@ -1,0 +1,11 @@
+key: eiffel-software/eiffelstudio-x64-standard
+publisher: eiffel-software
+name: EiffelStudio (x64) Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EiffelSoftware/EiffelStudio/Stable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EiffelSoftware/EiffelStudio/Stable
+identifiers:
+- winget: EiffelSoftware.EiffelStudio.Stable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EiffelSoftware/EiffelStudio/Stable
+aliases: []

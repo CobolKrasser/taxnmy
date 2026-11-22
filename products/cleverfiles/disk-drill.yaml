@@ -1,0 +1,11 @@
+key: cleverfiles/disk-drill
+publisher: cleverfiles
+name: Disk Drill
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverFiles/DiskDrill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverFiles/DiskDrill
+identifiers:
+- winget: CleverFiles.DiskDrill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CleverFiles/DiskDrill
+aliases: []

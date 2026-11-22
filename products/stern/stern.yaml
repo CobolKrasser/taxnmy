@@ -1,0 +1,11 @@
+key: stern/stern
+publisher: stern
+name: stern
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stern/stern
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stern/stern
+identifiers:
+- winget: stern.stern
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stern/stern
+aliases: []

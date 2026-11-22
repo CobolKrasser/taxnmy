@@ -1,0 +1,12 @@
+key: vanden-broele/eid-signer-2
+publisher: vanden-broele
+name: Vanden Broele eID-Signer 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VandenBroele/eIDSigner2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VandenBroele/eIDSigner2
+identifiers:
+- winget: VandenBroele.eIDSigner2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VandenBroele/eIDSigner2
+aliases:
+- vanden-broele/vanden-broele-eid-signer-2

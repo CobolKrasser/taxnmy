@@ -1,0 +1,11 @@
+key: yukino-song/apollo
+publisher: yukino-song
+name: Apollo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClassicOldSong/Apollo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClassicOldSong/Apollo
+identifiers:
+- winget: ClassicOldSong.Apollo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClassicOldSong/Apollo
+aliases: []

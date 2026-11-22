@@ -1,0 +1,12 @@
+key: project-env/cli
+publisher: project-env
+name: Project-Env CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectEnv/ProjectEnvCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectEnv/ProjectEnvCli
+identifiers:
+- winget: ProjectEnv.ProjectEnvCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProjectEnv/ProjectEnvCli
+aliases:
+- project-env/project-env-cli

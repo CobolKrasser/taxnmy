@@ -1,0 +1,11 @@
+key: stacklok/frizbee
+publisher: stacklok
+name: frizbee
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/frizbee
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/frizbee
+identifiers:
+- winget: stacklok.frizbee
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stacklok/frizbee
+aliases: []

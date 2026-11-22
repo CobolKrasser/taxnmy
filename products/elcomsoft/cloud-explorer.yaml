@@ -1,0 +1,12 @@
+key: elcomsoft/cloud-explorer
+publisher: elcomsoft
+name: Elcomsoft Cloud eXplorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/CloudeXplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/CloudeXplorer
+identifiers:
+- winget: Elcomsoft.CloudeXplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elcomsoft/CloudeXplorer
+aliases:
+- elcomsoft/elcomsoft-cloud-explorer

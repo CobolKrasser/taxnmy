@@ -1,0 +1,11 @@
+key: newsgator-technologies/feeddemon
+publisher: newsgator-technologies
+name: FeedDemon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewsGator/FeedDemon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewsGator/FeedDemon
+identifiers:
+- winget: NewsGator.FeedDemon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewsGator/FeedDemon
+aliases: []

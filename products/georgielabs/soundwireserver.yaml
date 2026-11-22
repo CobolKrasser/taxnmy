@@ -1,0 +1,11 @@
+key: georgielabs/soundwireserver
+publisher: georgielabs
+name: SoundWireServer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeorgieLabs/SoundWireServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeorgieLabs/SoundWireServer
+identifiers:
+- winget: GeorgieLabs.SoundWireServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeorgieLabs/SoundWireServer
+aliases: []

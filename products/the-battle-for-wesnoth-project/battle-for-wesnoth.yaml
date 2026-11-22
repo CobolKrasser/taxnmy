@@ -1,0 +1,11 @@
+key: the-battle-for-wesnoth-project/battle-for-wesnoth
+publisher: the-battle-for-wesnoth-project
+name: Battle for Wesnoth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wesnoth/BattleForWesnoth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wesnoth/BattleForWesnoth
+identifiers:
+- winget: Wesnoth.BattleForWesnoth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wesnoth/BattleForWesnoth
+aliases: []

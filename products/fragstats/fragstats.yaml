@@ -1,0 +1,11 @@
+key: fragstats/fragstats
+publisher: fragstats
+name: Fragstats
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fragstats/Fragstats
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fragstats/Fragstats
+identifiers:
+- winget: Fragstats.Fragstats
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fragstats/Fragstats
+aliases: []

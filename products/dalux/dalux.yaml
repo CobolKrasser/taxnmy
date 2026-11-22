@@ -1,0 +1,13 @@
+key: dalux/dalux
+publisher: dalux
+name: Dalux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dalux/Dalux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dalux/Dalux
+identifiers:
+- winget: Dalux.Dalux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dalux/Dalux
+- winget: Dalux.Dalux.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dalux/Dalux/MSI
+aliases: []

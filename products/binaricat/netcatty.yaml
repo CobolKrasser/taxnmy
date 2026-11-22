@@ -1,0 +1,11 @@
+key: binaricat/netcatty
+publisher: binaricat
+name: Netcatty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binaricat/Netcatty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binaricat/Netcatty
+identifiers:
+- winget: binaricat.Netcatty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/binaricat/Netcatty
+aliases: []

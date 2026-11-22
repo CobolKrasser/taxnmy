@@ -1,0 +1,11 @@
+key: cisco/cloud-pbx
+publisher: cisco
+name: Cloud PBX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telekom/CloudPBX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telekom/CloudPBX
+identifiers:
+- winget: Telekom.CloudPBX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telekom/CloudPBX
+aliases: []

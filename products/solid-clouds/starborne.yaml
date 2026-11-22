@@ -1,0 +1,11 @@
+key: solid-clouds/starborne
+publisher: solid-clouds
+name: Starborne
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidClouds/Starborne
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidClouds/Starborne
+identifiers:
+- winget: SolidClouds.Starborne
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SolidClouds/Starborne
+aliases: []

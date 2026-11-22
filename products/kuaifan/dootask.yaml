@@ -1,0 +1,11 @@
+key: kuaifan/dootask
+publisher: kuaifan
+name: DooTask
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KuaiFan/DooTask
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KuaiFan/DooTask
+identifiers:
+- winget: KuaiFan.DooTask
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KuaiFan/DooTask
+aliases: []

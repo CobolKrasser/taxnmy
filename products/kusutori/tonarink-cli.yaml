@@ -1,0 +1,11 @@
+key: kusutori/tonarink-cli
+publisher: kusutori
+name: tonarink-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kusutori/tonarink-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kusutori/tonarink-cli
+identifiers:
+- winget: kusutori.tonarink-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kusutori/tonarink-cli
+aliases: []

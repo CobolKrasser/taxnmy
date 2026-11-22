@@ -14,4 +14,14 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/php.md
 - purl: pkg:generic/php-fpm
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/php.md
+- winget: PHP.PHP.8.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/8/2
+- winget: PHP.PHP.8.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/8/3
+- winget: PHP.PHP.8.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/8/4
+- winget: PHP.PHP.8.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/8/5
+- winget: PHP.PHP.8.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHP/PHP/8/6
 aliases: []

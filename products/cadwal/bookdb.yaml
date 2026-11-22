@@ -1,0 +1,11 @@
+key: cadwal/bookdb
+publisher: cadwal
+name: BookDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cadwal/BookDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cadwal/BookDB
+identifiers:
+- winget: cadwal.BookDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cadwal/BookDB
+aliases: []

@@ -1,0 +1,11 @@
+key: jens-reimann/oidc-command-line-client
+publisher: jens-reimann
+name: OIDC command line client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ctron/oidc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ctron/oidc
+identifiers:
+- winget: ctron.oidc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ctron/oidc
+aliases: []

@@ -1,0 +1,11 @@
+key: obsidian/obsidian
+publisher: obsidian
+name: Obsidian
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Obsidian/Obsidian
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Obsidian/Obsidian
+identifiers:
+- winget: Obsidian.Obsidian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Obsidian/Obsidian
+aliases: []

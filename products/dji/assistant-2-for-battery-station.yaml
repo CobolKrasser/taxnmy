@@ -1,0 +1,12 @@
+key: dji/assistant-2-for-battery-station
+publisher: dji
+name: DJI Assistant 2 For Battery Station
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ForBatteryStation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ForBatteryStation
+identifiers:
+- winget: DJI.DJIAssistant2.ForBatteryStation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DJI/DJIAssistant2/ForBatteryStation
+aliases:
+- dji/dji-assistant-2-for-battery-station

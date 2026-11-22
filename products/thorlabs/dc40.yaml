@@ -1,0 +1,12 @@
+key: thorlabs/dc40
+publisher: thorlabs
+name: Thorlabs DC40
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/DC40
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/DC40
+identifiers:
+- winget: Thorlabs.DC40
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/DC40
+aliases:
+- thorlabs/thorlabs-dc40

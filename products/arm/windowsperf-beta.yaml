@@ -1,0 +1,11 @@
+key: arm/windowsperf-beta
+publisher: arm
+name: WindowsPerf Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/WindowsPerf/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/WindowsPerf/Beta
+identifiers:
+- winget: Arm.WindowsPerf.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arm/WindowsPerf/Beta
+aliases: []

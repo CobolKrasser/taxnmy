@@ -1,0 +1,11 @@
+key: graphviz/graphviz
+publisher: graphviz
+name: Graphviz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graphviz/Graphviz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graphviz/Graphviz
+identifiers:
+- winget: Graphviz.Graphviz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Graphviz/Graphviz
+aliases: []

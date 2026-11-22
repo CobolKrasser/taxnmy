@@ -1,0 +1,11 @@
+key: schoolcraft/worksheet-crafter
+publisher: schoolcraft
+name: Worksheet Crafter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchoolCraft/WorksheetCrafter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchoolCraft/WorksheetCrafter
+identifiers:
+- winget: SchoolCraft.WorksheetCrafter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SchoolCraft/WorksheetCrafter
+aliases: []

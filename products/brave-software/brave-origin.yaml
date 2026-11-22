@@ -1,0 +1,11 @@
+key: brave-software/brave-origin
+publisher: brave-software
+name: Brave Origin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveOrigin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveOrigin
+identifiers:
+- winget: Brave.BraveOrigin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/BraveOrigin
+aliases: []

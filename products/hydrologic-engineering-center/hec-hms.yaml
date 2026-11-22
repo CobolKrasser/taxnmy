@@ -1,0 +1,11 @@
+key: hydrologic-engineering-center/hec-hms
+publisher: hydrologic-engineering-center
+name: HEC-HMS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydrologicEngineeringCenter/HEC-HMS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydrologicEngineeringCenter/HEC-HMS
+identifiers:
+- winget: HydrologicEngineeringCenter.HEC-HMS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydrologicEngineeringCenter/HEC-HMS
+aliases: []

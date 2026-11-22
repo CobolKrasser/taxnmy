@@ -1,0 +1,11 @@
+key: superdavelab/ledgersprout
+publisher: superdavelab
+name: LedgerSprout
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperDaveLab/LedgerSprout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperDaveLab/LedgerSprout
+identifiers:
+- winget: SuperDaveLab.LedgerSprout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SuperDaveLab/LedgerSprout
+aliases: []

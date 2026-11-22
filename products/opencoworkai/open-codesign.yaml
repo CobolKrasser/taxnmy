@@ -1,0 +1,11 @@
+key: opencoworkai/open-codesign
+publisher: opencoworkai
+name: Open CoDesign
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCoworkAI/OpenCoDesign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCoworkAI/OpenCoDesign
+identifiers:
+- winget: OpenCoworkAI.OpenCoDesign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCoworkAI/OpenCoDesign
+aliases: []

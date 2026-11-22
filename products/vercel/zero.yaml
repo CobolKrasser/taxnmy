@@ -1,0 +1,11 @@
+key: vercel/zero
+publisher: vercel
+name: Zero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vercel/Zero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vercel/Zero
+identifiers:
+- winget: Vercel.Zero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vercel/Zero
+aliases: []

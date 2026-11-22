@@ -1,0 +1,11 @@
+key: novitas-web-works/novaterm
+publisher: novitas-web-works
+name: NovaTerm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovitasWebWorks/NovaTerm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovitasWebWorks/NovaTerm
+identifiers:
+- winget: NovitasWebWorks.NovaTerm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NovitasWebWorks/NovaTerm
+aliases: []

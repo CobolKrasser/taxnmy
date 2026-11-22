@@ -1,0 +1,11 @@
+key: steamdb/steam-token-dumper
+publisher: steamdb
+name: Steam Token Dumper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamDatabase/SteamTokenDumper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamDatabase/SteamTokenDumper
+identifiers:
+- winget: SteamDatabase.SteamTokenDumper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteamDatabase/SteamTokenDumper
+aliases: []

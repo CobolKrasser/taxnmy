@@ -1,0 +1,11 @@
+key: compuphase/pawn-embedded-scripting-language
+publisher: compuphase
+name: Pawn embedded scripting language
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Compuphase/Pawn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Compuphase/Pawn
+identifiers:
+- winget: Compuphase.Pawn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Compuphase/Pawn
+aliases: []

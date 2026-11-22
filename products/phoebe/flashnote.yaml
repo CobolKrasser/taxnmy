@@ -1,0 +1,11 @@
+key: phoebe/flashnote
+publisher: phoebe
+name: FlashNote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ranger1112/FlashNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ranger1112/FlashNote
+identifiers:
+- winget: ranger1112.FlashNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ranger1112/FlashNote
+aliases: []

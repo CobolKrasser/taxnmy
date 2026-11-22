@@ -1,0 +1,11 @@
+key: jefferson-kline/ars
+publisher: jefferson-kline
+name: ARS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeffLepp/AgentsRideShotgun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeffLepp/AgentsRideShotgun
+identifiers:
+- winget: JeffLepp.AgentsRideShotgun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JeffLepp/AgentsRideShotgun
+aliases: []

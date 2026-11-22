@@ -1,0 +1,11 @@
+key: eunolabs/eunox-mcp
+publisher: eunolabs
+name: eunox-mcp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eunolabs/eunox-mcp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eunolabs/eunox-mcp
+identifiers:
+- winget: eunolabs.eunox-mcp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eunolabs/eunox-mcp
+aliases: []

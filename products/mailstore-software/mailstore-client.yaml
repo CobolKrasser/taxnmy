@@ -1,0 +1,11 @@
+key: mailstore-software/mailstore-client
+publisher: mailstore-software
+name: MailStore Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailStore/MailStoreClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailStore/MailStoreClient
+identifiers:
+- winget: MailStore.MailStoreClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MailStore/MailStoreClient
+aliases: []

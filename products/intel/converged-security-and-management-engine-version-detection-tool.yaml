@@ -1,0 +1,11 @@
+key: intel/converged-security-and-management-engine-version-detection-tool
+publisher: intel
+name: Intel Converged Security and Management Engine Version Detection Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/CSMEVDT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/CSMEVDT
+identifiers:
+- winget: Intel.CSMEVDT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intel/CSMEVDT
+aliases: []

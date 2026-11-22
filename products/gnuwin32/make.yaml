@@ -1,0 +1,12 @@
+key: gnuwin32/make
+publisher: gnuwin32
+name: 'GnuWin32: Make'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Make
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Make
+identifiers:
+- winget: GnuWin32.Make
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Make
+aliases:
+- gnuwin32/gnuwin32-make

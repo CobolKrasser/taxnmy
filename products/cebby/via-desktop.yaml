@@ -1,0 +1,11 @@
+key: cebby/via-desktop
+publisher: cebby
+name: via-desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cebby2420/VIADesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cebby2420/VIADesktop
+identifiers:
+- winget: cebby2420.VIADesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cebby2420/VIADesktop
+aliases: []

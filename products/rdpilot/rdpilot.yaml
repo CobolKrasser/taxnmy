@@ -1,0 +1,11 @@
+key: rdpilot/rdpilot
+publisher: rdpilot
+name: RDPilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RDPilot/RDPilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RDPilot/RDPilot
+identifiers:
+- winget: RDPilot.RDPilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RDPilot/RDPilot
+aliases: []

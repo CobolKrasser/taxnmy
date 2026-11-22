@@ -1,0 +1,11 @@
+key: uwe-sieber/usb-device-tree-viewer
+publisher: uwe-sieber
+name: USB Device Tree Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/UsbTreeView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/UsbTreeView
+identifiers:
+- winget: UweSieber.UsbTreeView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/UsbTreeView
+aliases: []

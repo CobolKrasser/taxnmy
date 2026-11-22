@@ -1,0 +1,12 @@
+key: prog/media-server-for-large-networks
+publisher: prog
+name: Prog Media Server for large networks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgMediaServer/Large
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgMediaServer/Large
+identifiers:
+- winget: Prog.ProgMediaServer.Large
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgMediaServer/Large
+aliases:
+- prog/prog-media-server-for-large-networks

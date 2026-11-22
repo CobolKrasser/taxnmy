@@ -1,0 +1,11 @@
+key: pulse/syspulse
+publisher: pulse
+name: SysPulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulse/SysPulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulse/SysPulse
+identifiers:
+- winget: Pulse.SysPulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pulse/SysPulse
+aliases: []

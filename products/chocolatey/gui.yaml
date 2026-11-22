@@ -1,0 +1,12 @@
+key: chocolatey/gui
+publisher: chocolatey
+name: Chocolatey GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/ChocolateyGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/ChocolateyGUI
+identifiers:
+- winget: Chocolatey.ChocolateyGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/ChocolateyGUI
+aliases:
+- chocolatey/chocolatey-gui

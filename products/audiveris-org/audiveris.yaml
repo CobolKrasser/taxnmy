@@ -1,0 +1,11 @@
+key: audiveris-org/audiveris
+publisher: audiveris-org
+name: Audiveris
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/audiveris/org/Audiveris
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/audiveris/org/Audiveris
+identifiers:
+- winget: audiveris.org.Audiveris
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/audiveris/org/Audiveris
+aliases: []

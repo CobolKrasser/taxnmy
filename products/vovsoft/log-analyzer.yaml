@@ -1,0 +1,12 @@
+key: vovsoft/log-analyzer
+publisher: vovsoft
+name: Vovsoft Log Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/LogAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/LogAnalyzer
+identifiers:
+- winget: VovSoft.LogAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/LogAnalyzer
+aliases:
+- vovsoft/vovsoft-log-analyzer

@@ -1,0 +1,11 @@
+key: the-powder-toy-developers/the-powder-toy
+publisher: the-powder-toy-developers
+name: The Powder Toy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePowderToy/ThePowderToy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePowderToy/ThePowderToy
+identifiers:
+- winget: ThePowderToy.ThePowderToy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThePowderToy/ThePowderToy
+aliases: []

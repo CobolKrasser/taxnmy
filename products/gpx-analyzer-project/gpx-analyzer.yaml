@@ -1,0 +1,11 @@
+key: gpx-analyzer-project/gpx-analyzer
+publisher: gpx-analyzer-project
+name: GPX Analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coderise/gpx-analyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coderise/gpx-analyzer
+identifiers:
+- winget: Coderise.gpx-analyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coderise/gpx-analyzer
+aliases: []

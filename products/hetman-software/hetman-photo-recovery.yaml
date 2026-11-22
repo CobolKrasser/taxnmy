@@ -1,0 +1,11 @@
+key: hetman-software/hetman-photo-recovery
+publisher: hetman-software
+name: Hetman Photo Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/PhotoRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/PhotoRecovery
+identifiers:
+- winget: Hetman.PhotoRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/PhotoRecovery
+aliases: []

@@ -1,0 +1,15 @@
+key: ojdkbuild-open-source-project/openjdk
+publisher: ojdkbuild-open-source-project
+name: OpenJDK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/11/jdk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/11/jdk
+identifiers:
+- winget: ojdkbuild.openjdk.11.jdk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/11/jdk
+- winget: ojdkbuild.openjdk.13.jdk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/13/jdk
+- winget: ojdkbuild.openjdk.14.jdk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ojdkbuild/openjdk/14/jdk
+aliases: []

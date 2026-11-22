@@ -1,0 +1,11 @@
+key: broadcast-radio/audio-monitor
+publisher: broadcast-radio
+name: Audio Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/AudioMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/AudioMonitor
+identifiers:
+- winget: BroadcastRadio.AudioMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/AudioMonitor
+aliases: []

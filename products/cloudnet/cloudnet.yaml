@@ -1,0 +1,11 @@
+key: cloudnet/cloudnet
+publisher: cloudnet
+name: CloudNet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cloudnet/cloudnet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cloudnet/cloudnet
+identifiers:
+- winget: cloudnet.cloudnet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cloudnet/cloudnet
+aliases: []

@@ -1,0 +1,11 @@
+key: handruin/spdif-keep-alive-utility
+publisher: handruin
+name: SPDIF Keep Alive utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/handruin/spdif-ka
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/handruin/spdif-ka
+identifiers:
+- winget: handruin.spdif-ka
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/handruin/spdif-ka
+aliases: []

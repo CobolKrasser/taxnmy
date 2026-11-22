@@ -1,0 +1,11 @@
+key: snapxl/snapx
+publisher: snapxl
+name: SnapX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnapXL/SnapX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnapXL/SnapX
+identifiers:
+- winget: SnapXL.SnapX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnapXL/SnapX
+aliases: []

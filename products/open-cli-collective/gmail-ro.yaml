@@ -1,0 +1,11 @@
+key: open-cli-collective/gmail-ro
+publisher: open-cli-collective
+name: gmail-ro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/gmail-ro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/gmail-ro
+identifiers:
+- winget: OpenCLICollective.gmail-ro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/gmail-ro
+aliases: []

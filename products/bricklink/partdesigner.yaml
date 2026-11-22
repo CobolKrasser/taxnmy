@@ -1,0 +1,11 @@
+key: bricklink/partdesigner
+publisher: bricklink
+name: PartDesigner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/PartDesigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/PartDesigner
+identifiers:
+- winget: BrickLink.PartDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/PartDesigner
+aliases: []

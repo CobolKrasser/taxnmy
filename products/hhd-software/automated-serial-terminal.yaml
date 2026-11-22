@@ -1,0 +1,12 @@
+key: hhd-software/automated-serial-terminal
+publisher: hhd-software
+name: HHD Software Automated Serial Terminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/AutomatedSerialTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/AutomatedSerialTerminal
+identifiers:
+- winget: HHDSoftware.AutomatedSerialTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HHDSoftware/AutomatedSerialTerminal
+aliases:
+- hhd-software/hhd-software-automated-serial-terminal

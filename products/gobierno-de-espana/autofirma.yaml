@@ -1,0 +1,11 @@
+key: gobierno-de-espana/autofirma
+publisher: gobierno-de-espana
+name: Autofirma
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpanishGovernment/Autofirma
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpanishGovernment/Autofirma
+identifiers:
+- winget: SpanishGovernment.Autofirma
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SpanishGovernment/Autofirma
+aliases: []

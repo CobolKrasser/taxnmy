@@ -1,0 +1,11 @@
+key: anssol-labs/hangar
+publisher: anssol-labs
+name: Hangar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnssolLabs/Hangar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnssolLabs/Hangar
+identifiers:
+- winget: AnssolLabs.Hangar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnssolLabs/Hangar
+aliases: []

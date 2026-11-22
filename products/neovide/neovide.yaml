@@ -1,0 +1,11 @@
+key: neovide/neovide
+publisher: neovide
+name: Neovide
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neovide/Neovide
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neovide/Neovide
+identifiers:
+- winget: Neovide.Neovide
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Neovide/Neovide
+aliases: []

@@ -1,0 +1,11 @@
+key: firealpaca-com/firealpaca
+publisher: firealpaca-com
+name: FireAlpaca
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireAlpaca/FireAlpaca
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireAlpaca/FireAlpaca
+identifiers:
+- winget: FireAlpaca.FireAlpaca
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FireAlpaca/FireAlpaca
+aliases: []

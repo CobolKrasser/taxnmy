@@ -1,0 +1,11 @@
+key: excelano/slipcase
+publisher: excelano
+name: slipcase
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/slipcase-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/slipcase-cli
+identifiers:
+- winget: Excelano.slipcase-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/slipcase-cli
+aliases: []

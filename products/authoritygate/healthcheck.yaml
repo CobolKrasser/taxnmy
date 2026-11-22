@@ -1,0 +1,12 @@
+key: authoritygate/healthcheck
+publisher: authoritygate
+name: AuthorityGate HealthCheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/HealthCheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/HealthCheck
+identifiers:
+- winget: AuthorityGate.HealthCheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AuthorityGate/HealthCheck
+aliases:
+- authoritygate/authoritygate-healthcheck

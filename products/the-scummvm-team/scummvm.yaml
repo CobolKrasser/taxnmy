@@ -1,0 +1,11 @@
+key: the-scummvm-team/scummvm
+publisher: the-scummvm-team
+name: ScummVM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScummVM/ScummVM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScummVM/ScummVM
+identifiers:
+- winget: ScummVM.ScummVM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScummVM/ScummVM
+aliases: []

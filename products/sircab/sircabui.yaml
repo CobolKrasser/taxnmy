@@ -1,0 +1,11 @@
+key: sircab/sircabui
+publisher: sircab
+name: SirCabUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirCab/SirCabUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirCab/SirCabUI
+identifiers:
+- winget: SirCab.SirCabUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SirCab/SirCabUI
+aliases: []

@@ -1,0 +1,13 @@
+key: ollama/ollama
+publisher: ollama
+name: Ollama
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ollama/Ollama
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ollama/Ollama
+identifiers:
+- winget: Ollama.Ollama
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ollama/Ollama
+- winget: Ollama.Ollama.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Ollama/Ollama/Portable
+aliases: []

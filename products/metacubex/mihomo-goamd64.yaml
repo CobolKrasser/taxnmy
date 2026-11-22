@@ -1,0 +1,13 @@
+key: metacubex/mihomo-goamd64
+publisher: metacubex
+name: Mihomo (GOAMD64=)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/Mihomo/GOAMD64v1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/Mihomo/GOAMD64v1
+identifiers:
+- winget: MetaCubeX.Mihomo.GOAMD64v1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/Mihomo/GOAMD64v1
+- winget: MetaCubeX.Mihomo.GOAMD64v2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MetaCubeX/Mihomo/GOAMD64v2
+aliases: []

@@ -1,0 +1,11 @@
+key: prodirt/ntfs-folder-audit
+publisher: prodirt
+name: NTFS Folder Audit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProDirt/NTFSFolderAudit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProDirt/NTFSFolderAudit
+identifiers:
+- winget: ProDirt.NTFSFolderAudit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/ProDirt/NTFSFolderAudit
+aliases: []

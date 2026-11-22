@@ -1,0 +1,11 @@
+key: ecor-ventures/nvm-for-windows
+publisher: ecor-ventures
+name: NVM for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreyButler/NVMforWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreyButler/NVMforWindows
+identifiers:
+- winget: CoreyButler.NVMforWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreyButler/NVMforWindows
+aliases: []

@@ -1,0 +1,11 @@
+key: learnosity/questionmark-secure-browser
+publisher: learnosity
+name: Questionmark Secure Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Learnosity/QuestionmarkSecure
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Learnosity/QuestionmarkSecure
+identifiers:
+- winget: Learnosity.QuestionmarkSecure
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Learnosity/QuestionmarkSecure
+aliases: []

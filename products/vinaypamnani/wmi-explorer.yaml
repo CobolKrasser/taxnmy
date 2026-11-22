@@ -1,0 +1,11 @@
+key: vinaypamnani/wmi-explorer
+publisher: vinaypamnani
+name: WMI Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vinaypamnani/WMIExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vinaypamnani/WMIExplorer
+identifiers:
+- winget: vinaypamnani.WMIExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vinaypamnani/WMIExplorer
+aliases: []

@@ -1,0 +1,11 @@
+key: gjergj/testmyapp
+publisher: gjergj
+name: testmyapp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gjergj/testmyapp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gjergj/testmyapp
+identifiers:
+- winget: gjergj.testmyapp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gjergj/testmyapp
+aliases: []

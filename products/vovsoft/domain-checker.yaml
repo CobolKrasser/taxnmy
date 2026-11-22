@@ -1,0 +1,12 @@
+key: vovsoft/domain-checker
+publisher: vovsoft
+name: Vovsoft Domain Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DomainChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DomainChecker
+identifiers:
+- winget: VovSoft.DomainChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DomainChecker
+aliases:
+- vovsoft/vovsoft-domain-checker

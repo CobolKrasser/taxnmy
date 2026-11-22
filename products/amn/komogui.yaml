@@ -1,0 +1,11 @@
+key: amn/komogui
+publisher: amn
+name: KomoGUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/KomoGUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/KomoGUI
+identifiers:
+- winget: AmN.KomoGUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmN/KomoGUI
+aliases: []

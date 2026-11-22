@@ -1,0 +1,11 @@
+key: ezb-systems/easyboot
+publisher: ezb-systems
+name: EasyBoot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EZBSystems/EasyBoot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EZBSystems/EasyBoot
+identifiers:
+- winget: EZBSystems.EasyBoot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EZBSystems/EasyBoot
+aliases: []

@@ -1,0 +1,11 @@
+key: koalafacts/heroparser-cli
+publisher: koalafacts
+name: HeroParser CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KoalaFacts/HeroParser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KoalaFacts/HeroParser
+identifiers:
+- winget: KoalaFacts.HeroParser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KoalaFacts/HeroParser
+aliases: []

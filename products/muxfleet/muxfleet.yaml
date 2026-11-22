@@ -1,0 +1,11 @@
+key: muxfleet/muxfleet
+publisher: muxfleet
+name: MUXFleet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MUXFleet/MUXFleet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MUXFleet/MUXFleet
+identifiers:
+- winget: MUXFleet.MUXFleet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MUXFleet/MUXFleet
+aliases: []

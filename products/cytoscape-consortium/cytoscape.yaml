@@ -1,0 +1,11 @@
+key: cytoscape-consortium/cytoscape
+publisher: cytoscape-consortium
+name: Cytoscape
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cytoscape/Cytoscape
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cytoscape/Cytoscape
+identifiers:
+- winget: Cytoscape.Cytoscape
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cytoscape/Cytoscape
+aliases: []

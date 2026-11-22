@@ -1,0 +1,13 @@
+key: imagemagick-studio/imagemagick-q16-hdri
+publisher: imagemagick-studio
+name: ImageMagick Q16-HDRI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q16-HDRI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q16-HDRI
+identifiers:
+- winget: ImageMagick.ImageMagick
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/ImageMagick
+- winget: ImageMagick.Q16-HDRI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/Q16-HDRI
+aliases: []

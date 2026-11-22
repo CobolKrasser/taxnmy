@@ -1,0 +1,11 @@
+key: audient/evo
+publisher: audient
+name: EVO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/EVO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/EVO
+identifiers:
+- winget: Audient.EVO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Audient/EVO
+aliases: []

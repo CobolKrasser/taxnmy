@@ -1,0 +1,11 @@
+key: probably/backscene
+publisher: probably
+name: BackScene
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Probably/BackScene
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Probably/BackScene
+identifiers:
+- winget: Probably.BackScene
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Probably/BackScene
+aliases: []

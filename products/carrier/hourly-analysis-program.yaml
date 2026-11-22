@@ -1,0 +1,11 @@
+key: carrier/hourly-analysis-program
+publisher: carrier
+name: Hourly Analysis Program
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/HourlyAnalysisProgram
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/HourlyAnalysisProgram
+identifiers:
+- winget: Carrier.HourlyAnalysisProgram
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carrier/HourlyAnalysisProgram
+aliases: []

@@ -1,0 +1,12 @@
+key: microsoft/azure-guest-proxy-agent
+publisher: microsoft
+name: Microsoft Azure Guest Proxy Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/GuestProxyAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/GuestProxyAgent
+identifiers:
+- winget: Microsoft.Azure.GuestProxyAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Azure/GuestProxyAgent
+aliases:
+- microsoft/microsoft-azure-guest-proxy-agent

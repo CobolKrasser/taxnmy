@@ -1,0 +1,11 @@
+key: ozas/speech2text
+publisher: ozas
+name: speech2text
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozas/speech2text
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozas/speech2text
+identifiers:
+- winget: ozas.speech2text
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ozas/speech2text
+aliases: []

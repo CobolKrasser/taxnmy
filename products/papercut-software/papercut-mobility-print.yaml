@@ -1,0 +1,11 @@
+key: papercut-software/papercut-mobility-print
+publisher: papercut-software
+name: PaperCut Mobility Print
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/MobilityPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/MobilityPrint
+identifiers:
+- winget: PaperCutSoftware.MobilityPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaperCutSoftware/MobilityPrint
+aliases: []

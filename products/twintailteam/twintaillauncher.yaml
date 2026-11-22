@@ -1,0 +1,11 @@
+key: twintailteam/twintaillauncher
+publisher: twintailteam
+name: twintaillauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwintailTeam/TTL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwintailTeam/TTL
+identifiers:
+- winget: TwintailTeam.TTL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TwintailTeam/TTL
+aliases: []

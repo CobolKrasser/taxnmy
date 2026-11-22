@@ -1,0 +1,11 @@
+key: peter-steinberger/gogcli
+publisher: peter-steinberger
+name: gogcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/steipete/gogcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/steipete/gogcli
+identifiers:
+- winget: steipete.gogcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/steipete/gogcli
+aliases: []

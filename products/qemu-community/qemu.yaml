@@ -1,0 +1,11 @@
+key: qemu-community/qemu
+publisher: qemu-community
+name: QEMU
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMU
+identifiers:
+- winget: SoftwareFreedomConservancy.QEMU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMU
+aliases: []

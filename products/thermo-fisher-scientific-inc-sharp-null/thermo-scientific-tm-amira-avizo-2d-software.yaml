@@ -1,0 +1,11 @@
+key: thermo-fisher-scientific-inc-sharp-null/thermo-scientific-tm-amira-avizo-2d-software
+publisher: thermo-fisher-scientific-inc-sharp-null
+name: Thermo Scientific TM Amira-Avizo 2D Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThermoFisher/AmiraAvizo2D
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThermoFisher/AmiraAvizo2D
+identifiers:
+- winget: ThermoFisher.AmiraAvizo2D
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThermoFisher/AmiraAvizo2D
+aliases: []

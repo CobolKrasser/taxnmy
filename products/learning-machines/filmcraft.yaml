@@ -1,0 +1,11 @@
+key: learning-machines/filmcraft
+publisher: learning-machines
+name: FilmCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/FilmCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/FilmCraft
+identifiers:
+- winget: ArtCraft.FilmCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/FilmCraft
+aliases: []

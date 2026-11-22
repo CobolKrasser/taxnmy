@@ -1,0 +1,11 @@
+key: nirsoft/appcrashview
+publisher: nirsoft
+name: AppCrashView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AppCrashView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AppCrashView
+identifiers:
+- winget: NirSoft.AppCrashView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AppCrashView
+aliases: []

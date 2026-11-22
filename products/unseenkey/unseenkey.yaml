@@ -1,0 +1,11 @@
+key: unseenkey/unseenkey
+publisher: unseenkey
+name: Unseenkey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unseenkey/Unseenkey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unseenkey/Unseenkey
+identifiers:
+- winget: Unseenkey.Unseenkey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unseenkey/Unseenkey
+aliases: []

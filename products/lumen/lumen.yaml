@@ -1,0 +1,11 @@
+key: lumen/lumen
+publisher: lumen
+name: Lumen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lumen/Lumen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lumen/Lumen
+identifiers:
+- winget: Lumen.Lumen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lumen/Lumen
+aliases: []

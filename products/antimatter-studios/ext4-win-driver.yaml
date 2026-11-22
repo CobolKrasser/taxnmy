@@ -1,0 +1,11 @@
+key: antimatter-studios/ext4-win-driver
+publisher: antimatter-studios
+name: ext4-win-driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntimatterStudios/ext4-win-driver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntimatterStudios/ext4-win-driver
+identifiers:
+- winget: AntimatterStudios.ext4-win-driver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntimatterStudios/ext4-win-driver
+aliases: []

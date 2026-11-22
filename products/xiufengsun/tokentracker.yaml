@@ -1,0 +1,11 @@
+key: xiufengsun/tokentracker
+publisher: xiufengsun
+name: TokenTracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiufengsun/TokenTracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiufengsun/TokenTracker
+identifiers:
+- winget: xiufengsun.TokenTracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xiufengsun/TokenTracker
+aliases: []

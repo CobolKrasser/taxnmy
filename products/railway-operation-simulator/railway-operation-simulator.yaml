@@ -1,0 +1,11 @@
+key: railway-operation-simulator/railway-operation-simulator
+publisher: railway-operation-simulator
+name: Railway Operation Simulator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RailOS/RailOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RailOS/RailOS
+identifiers:
+- winget: RailOS.RailOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RailOS/RailOS
+aliases: []

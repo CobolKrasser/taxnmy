@@ -1,0 +1,11 @@
+key: gnome/ekiga
+publisher: gnome
+name: Ekiga
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Ekiga
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Ekiga
+identifiers:
+- winget: gnome.Ekiga
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Ekiga
+aliases: []

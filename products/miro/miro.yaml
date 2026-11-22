@@ -1,0 +1,13 @@
+key: miro/miro
+publisher: miro
+name: Miro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miro/Miro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miro/Miro
+identifiers:
+- winget: Miro.Miro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miro/Miro
+- winget: Miro.Miro-PDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Miro/Miro-PDF
+aliases: []

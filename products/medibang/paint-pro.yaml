@@ -1,0 +1,12 @@
+key: medibang/paint-pro
+publisher: medibang
+name: MediBang Paint Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medibang/MediBangPaintPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medibang/MediBangPaintPro
+identifiers:
+- winget: Medibang.MediBangPaintPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Medibang/MediBangPaintPro
+aliases:
+- medibang/medibang-paint-pro

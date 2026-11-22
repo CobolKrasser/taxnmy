@@ -1,0 +1,11 @@
+key: fellow-insights/fellow
+publisher: fellow-insights
+name: Fellow
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FellowInsights/Fellow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FellowInsights/Fellow
+identifiers:
+- winget: FellowInsights.Fellow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FellowInsights/Fellow
+aliases: []

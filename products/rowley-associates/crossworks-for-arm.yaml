@@ -1,0 +1,11 @@
+key: rowley-associates/crossworks-for-arm
+publisher: rowley-associates
+name: CrossWorks for ARM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rowley/CrossWorks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rowley/CrossWorks
+identifiers:
+- winget: Rowley.CrossWorks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rowley/CrossWorks
+aliases: []

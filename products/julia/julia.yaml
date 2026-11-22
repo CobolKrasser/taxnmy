@@ -10,4 +10,8 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/julia.md
 - homebrew: julia-app
   source: https://formulae.brew.sh/cask/julia-app
+- winget: Julialang.Julia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Julialang/Julia
+- winget: Julialang.Juliaup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Julialang/Juliaup
 aliases: []

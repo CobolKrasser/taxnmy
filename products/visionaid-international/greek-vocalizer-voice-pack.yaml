@@ -1,0 +1,12 @@
+key: visionaid-international/greek-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Greek Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Greek
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Greek
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Greek
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Greek
+aliases:
+- visionaid-international/visionaid-international-greek-vocalizer-voice-pack

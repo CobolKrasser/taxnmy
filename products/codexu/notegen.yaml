@@ -1,0 +1,11 @@
+key: codexu/notegen
+publisher: codexu
+name: NoteGen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codexu/NoteGen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codexu/NoteGen
+identifiers:
+- winget: codexu.NoteGen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/codexu/NoteGen
+aliases: []

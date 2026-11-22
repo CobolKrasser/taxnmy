@@ -1,0 +1,13 @@
+key: edrawsoft/orgcharting
+publisher: edrawsoft
+name: OrgCharting
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/OrgCharting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/OrgCharting
+identifiers:
+- winget: EdrawSoft.OrgCharting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/OrgCharting
+- winget: EdrawSoft.OrgCharting.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EdrawSoft/OrgCharting/CN
+aliases: []

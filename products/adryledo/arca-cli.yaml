@@ -1,0 +1,11 @@
+key: adryledo/arca-cli
+publisher: adryledo
+name: Arca CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/adryledo/ArcaCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/adryledo/ArcaCLI
+identifiers:
+- winget: adryledo.ArcaCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/adryledo/ArcaCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: arrayfire/arrayfire
+publisher: arrayfire
+name: ArrayFire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArrayFire/ArrayFire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArrayFire/ArrayFire
+identifiers:
+- winget: ArrayFire.ArrayFire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArrayFire/ArrayFire
+aliases: []

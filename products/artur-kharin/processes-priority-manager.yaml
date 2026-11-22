@@ -1,0 +1,11 @@
+key: artur-kharin/processes-priority-manager
+publisher: artur-kharin
+name: Processes Priority Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArturKharin/ProcessesPriorityManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArturKharin/ProcessesPriorityManager
+identifiers:
+- winget: ArturKharin.ProcessesPriorityManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArturKharin/ProcessesPriorityManager
+aliases: []

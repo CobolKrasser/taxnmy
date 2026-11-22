@@ -1,0 +1,13 @@
+key: dominik-reichl/keepass
+publisher: dominik-reichl
+name: KeePass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominikReichl/KeePass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominikReichl/KeePass
+identifiers:
+- winget: DominikReichl.KeePass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominikReichl/KeePass
+- winget: DominikReichl.KeePass.Classic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominikReichl/KeePass/Classic
+aliases: []

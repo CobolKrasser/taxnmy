@@ -1,0 +1,11 @@
+key: mucommander/mucommander
+publisher: mucommander
+name: muCommander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muCommander/muCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muCommander/muCommander
+identifiers:
+- winget: muCommander.muCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muCommander/muCommander
+aliases: []

@@ -1,0 +1,11 @@
+key: f3d-app/f3d
+publisher: f3d-app
+name: F3D
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/f3d-app/f3d
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/f3d-app/f3d
+identifiers:
+- winget: f3d-app.f3d
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/f3d-app/f3d
+aliases: []

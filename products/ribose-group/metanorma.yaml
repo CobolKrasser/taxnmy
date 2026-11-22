@@ -1,0 +1,11 @@
+key: ribose-group/metanorma
+publisher: ribose-group
+name: Metanorma
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Metanorma/Metanorma
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Metanorma/Metanorma
+identifiers:
+- winget: Metanorma.Metanorma
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Metanorma/Metanorma
+aliases: []

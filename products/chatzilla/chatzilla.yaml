@@ -1,0 +1,11 @@
+key: chatzilla/chatzilla
+publisher: chatzilla
+name: ChatZilla
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChatZilla/ChatZilla
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChatZilla/ChatZilla
+identifiers:
+- winget: ChatZilla.ChatZilla
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChatZilla/ChatZilla
+aliases: []

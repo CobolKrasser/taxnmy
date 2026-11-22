@@ -1,0 +1,11 @@
+key: trappist/agent-cat
+publisher: trappist
+name: Agent Cat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trappist/AgentCat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trappist/AgentCat
+identifiers:
+- winget: Trappist.AgentCat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trappist/AgentCat
+aliases: []

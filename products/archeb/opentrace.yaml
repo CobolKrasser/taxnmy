@@ -1,0 +1,11 @@
+key: archeb/opentrace
+publisher: archeb
+name: OpenTrace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Archeb/OpenTrace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Archeb/OpenTrace
+identifiers:
+- winget: Archeb.OpenTrace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Archeb/OpenTrace
+aliases: []

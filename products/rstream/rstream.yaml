@@ -1,0 +1,11 @@
+key: rstream/rstream
+publisher: rstream
+name: rstream
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rstream/rstream
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rstream/rstream
+identifiers:
+- winget: rstream.rstream
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rstream/rstream
+aliases: []

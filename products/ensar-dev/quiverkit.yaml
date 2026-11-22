@@ -1,0 +1,11 @@
+key: ensar-dev/quiverkit
+publisher: ensar-dev
+name: QuiverKit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ensardev/QuiverKit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ensardev/QuiverKit
+identifiers:
+- winget: ensardev.QuiverKit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ensardev/QuiverKit
+aliases: []

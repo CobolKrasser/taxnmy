@@ -1,0 +1,11 @@
+key: vysor/vysor
+publisher: vysor
+name: Vysor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vysor/Vysor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vysor/Vysor
+identifiers:
+- winget: Vysor.Vysor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vysor/Vysor
+aliases: []

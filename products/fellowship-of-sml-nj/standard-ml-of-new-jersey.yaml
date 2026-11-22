@@ -1,0 +1,11 @@
+key: fellowship-of-sml-nj/standard-ml-of-new-jersey
+publisher: fellowship-of-sml-nj
+name: Standard ML of New Jersey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMLNJ/SMLNJ/Legacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMLNJ/SMLNJ/Legacy
+identifiers:
+- winget: SMLNJ.SMLNJ.Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMLNJ/SMLNJ/Legacy
+aliases: []

@@ -1,0 +1,11 @@
+key: kizuna-ai/cevio-ai-voice-package-sharp-kzn
+publisher: kizuna-ai
+name: 'CeVIO AI Voice Package - #kzn'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KizunaAIInc/kzn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KizunaAIInc/kzn
+identifiers:
+- winget: KizunaAIInc.kzn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KizunaAIInc/kzn
+aliases: []

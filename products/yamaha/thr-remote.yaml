@@ -1,0 +1,12 @@
+key: yamaha/thr-remote
+publisher: yamaha
+name: Yamaha THR Remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/THRRemote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/THRRemote
+identifiers:
+- winget: Yamaha.THRRemote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/THRRemote
+aliases:
+- yamaha/yamaha-thr-remote

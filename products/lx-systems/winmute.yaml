@@ -1,0 +1,11 @@
+key: lx-systems/winmute
+publisher: lx-systems
+name: WinMute
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LX-Systems/WinMute
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LX-Systems/WinMute
+identifiers:
+- winget: LX-Systems.WinMute
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LX-Systems/WinMute
+aliases: []

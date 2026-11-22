@@ -1,0 +1,11 @@
+key: terrapane-group/aes-crypt
+publisher: terrapane-group
+name: AES Crypt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terrapane/AESCrypt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terrapane/AESCrypt
+identifiers:
+- winget: Terrapane.AESCrypt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Terrapane/AESCrypt
+aliases: []

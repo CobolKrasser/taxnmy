@@ -1,0 +1,11 @@
+key: halfbaked/hotpotatoes
+publisher: halfbaked
+name: HotPotatoes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalfBaked/HotPotatoes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalfBaked/HotPotatoes
+identifiers:
+- winget: HalfBaked.HotPotatoes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalfBaked/HotPotatoes
+aliases: []

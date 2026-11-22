@@ -1,0 +1,11 @@
+key: rubberduck/rubberduck
+publisher: rubberduck
+name: Rubberduck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rubberduck/Rubberduck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rubberduck/Rubberduck
+identifiers:
+- winget: Rubberduck.Rubberduck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rubberduck/Rubberduck
+aliases: []

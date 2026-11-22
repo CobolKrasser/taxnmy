@@ -1,0 +1,11 @@
+key: hanewin-software/hanewin-tftp-server
+publisher: hanewin-software
+name: haneWIN TFTP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/TFTPServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/TFTPServer
+identifiers:
+- winget: haneWIN.TFTPServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/haneWIN/TFTPServer
+aliases: []

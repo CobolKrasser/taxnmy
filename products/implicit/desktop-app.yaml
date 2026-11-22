@@ -1,0 +1,12 @@
+key: implicit/desktop-app
+publisher: implicit
+name: Implicit Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImplicitInc/ImplicitDesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImplicitInc/ImplicitDesktopApp
+identifiers:
+- winget: ImplicitInc.ImplicitDesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImplicitInc/ImplicitDesktopApp
+aliases:
+- implicit/implicit-desktop-app

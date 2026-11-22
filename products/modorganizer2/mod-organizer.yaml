@@ -1,0 +1,11 @@
+key: modorganizer2/mod-organizer
+publisher: modorganizer2
+name: Mod Organizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModOrganizer2/modorganizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModOrganizer2/modorganizer
+identifiers:
+- winget: ModOrganizer2.modorganizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModOrganizer2/modorganizer
+aliases: []

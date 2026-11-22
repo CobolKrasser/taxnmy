@@ -1,0 +1,11 @@
+key: coherent-graphics/cpdf
+publisher: coherent-graphics
+name: Cpdf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoherentGraphics/Cpdf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoherentGraphics/Cpdf
+identifiers:
+- winget: CoherentGraphics.Cpdf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoherentGraphics/Cpdf
+aliases: []

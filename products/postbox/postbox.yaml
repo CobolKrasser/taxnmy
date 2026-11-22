@@ -1,0 +1,11 @@
+key: postbox/postbox
+publisher: postbox
+name: Postbox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postbox/Postbox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postbox/Postbox
+identifiers:
+- winget: Postbox.Postbox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postbox/Postbox
+aliases: []

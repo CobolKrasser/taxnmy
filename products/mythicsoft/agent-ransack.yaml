@@ -1,0 +1,11 @@
+key: mythicsoft/agent-ransack
+publisher: mythicsoft
+name: Agent Ransack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mythicsoft/AgentRansack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mythicsoft/AgentRansack
+identifiers:
+- winget: Mythicsoft.AgentRansack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mythicsoft/AgentRansack
+aliases: []

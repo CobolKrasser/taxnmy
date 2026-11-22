@@ -1,0 +1,11 @@
+key: awesomedog/infrss-server
+publisher: awesomedog
+name: infrss-server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/infrss-server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/infrss-server
+identifiers:
+- winget: AwesomeDog.infrss-server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AwesomeDog/infrss-server
+aliases: []

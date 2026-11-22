@@ -1,0 +1,11 @@
+key: glenn-delahoy/sdio-backup-drivers
+publisher: glenn-delahoy
+name: SDIO Backup Drivers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin/BackupDrivers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin/BackupDrivers
+identifiers:
+- winget: GlennDelahoy.SnappyDriverInstallerOrigin.BackupDrivers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin/BackupDrivers
+aliases: []

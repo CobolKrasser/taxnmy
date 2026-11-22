@@ -1,0 +1,11 @@
+key: greatis-software/regrun-security-suite-gold
+publisher: greatis-software
+name: RegRun Security Suite Gold
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Gold
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Gold
+identifiers:
+- winget: Greatis.RegRun.Gold
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Greatis/RegRun/Gold
+aliases: []

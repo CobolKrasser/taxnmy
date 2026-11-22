@@ -1,0 +1,11 @@
+key: joel-charles/station
+publisher: joel-charles
+name: Station
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Station/Station
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Station/Station
+identifiers:
+- winget: Station.Station
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Station/Station
+aliases: []

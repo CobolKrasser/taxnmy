@@ -1,0 +1,11 @@
+key: monsieurtib/service-bus-tui
+publisher: monsieurtib
+name: service-bus-tui
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonsieurTib/service-bus-tui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonsieurTib/service-bus-tui
+identifiers:
+- winget: MonsieurTib.service-bus-tui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MonsieurTib/service-bus-tui
+aliases: []

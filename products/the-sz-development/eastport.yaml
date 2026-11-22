@@ -1,0 +1,11 @@
+key: the-sz-development/eastport
+publisher: the-sz-development
+name: Eastport
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Eastport
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Eastport
+identifiers:
+- winget: the-sz.Eastport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Eastport
+aliases: []

@@ -1,0 +1,11 @@
+key: umage-ai/codeshellmanager
+publisher: umage-ai
+name: CodeShellManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UmageAI/CodeShellManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UmageAI/CodeShellManager
+identifiers:
+- winget: UmageAI.CodeShellManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UmageAI/CodeShellManager
+aliases: []

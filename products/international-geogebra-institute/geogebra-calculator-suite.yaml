@@ -1,0 +1,11 @@
+key: international-geogebra-institute/geogebra-calculator-suite
+publisher: international-geogebra-institute
+name: GeoGebra Calculator Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/CalculatorSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/CalculatorSuite
+identifiers:
+- winget: GeoGebra.CalculatorSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/CalculatorSuite
+aliases: []

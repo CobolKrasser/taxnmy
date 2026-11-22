@@ -1,0 +1,11 @@
+key: mayhul-arora/heartbeat
+publisher: mayhul-arora
+name: Heartbeat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeartbeatChat/Heartbeat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeartbeatChat/Heartbeat
+identifiers:
+- winget: HeartbeatChat.Heartbeat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HeartbeatChat/Heartbeat
+aliases: []

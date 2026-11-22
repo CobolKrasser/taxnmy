@@ -1,0 +1,11 @@
+key: flux/f-lux
+publisher: flux
+name: f.lux
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flux/flux
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flux/flux
+identifiers:
+- winget: flux.flux
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/flux/flux
+aliases: []

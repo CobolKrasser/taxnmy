@@ -1,0 +1,11 @@
+key: hydrus-network/hydrus-network
+publisher: hydrus-network
+name: Hydrus Network
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydrusNetwork/HydrusNetwork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydrusNetwork/HydrusNetwork
+identifiers:
+- winget: HydrusNetwork.HydrusNetwork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HydrusNetwork/HydrusNetwork
+aliases: []

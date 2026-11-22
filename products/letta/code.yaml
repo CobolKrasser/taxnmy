@@ -1,0 +1,12 @@
+key: letta/code
+publisher: letta
+name: Letta Code
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Letta/LettaCode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Letta/LettaCode
+identifiers:
+- winget: Letta.LettaCode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Letta/LettaCode
+aliases:
+- letta/letta-code

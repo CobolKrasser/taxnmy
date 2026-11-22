@@ -1,0 +1,13 @@
+key: besware/artweaver-free
+publisher: besware
+name: Artweaver Free
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Besware/Artweaver/7/Free
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Besware/Artweaver/7/Free
+identifiers:
+- winget: Besware.Artweaver.7.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Besware/Artweaver/7/Free
+- winget: Besware.Artweaver.8.Free
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Besware/Artweaver/8/Free
+aliases: []

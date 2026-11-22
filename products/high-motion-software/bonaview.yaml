@@ -1,0 +1,11 @@
+key: high-motion-software/bonaview
+publisher: high-motion-software
+name: BonAView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/BonAView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/BonAView
+identifiers:
+- winget: HighMotionSoftware.BonAView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HighMotionSoftware/BonAView
+aliases: []

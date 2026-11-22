@@ -1,0 +1,11 @@
+key: buildpacks/pack
+publisher: buildpacks
+name: pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buildpacks/pack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buildpacks/pack
+identifiers:
+- winget: buildpacks.pack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/buildpacks/pack
+aliases: []

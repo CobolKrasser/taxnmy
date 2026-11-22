@@ -1,0 +1,12 @@
+key: another/redis-desktop-manager
+publisher: another
+name: Another Redis Desktop Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qishibo/AnotherRedisDesktopManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qishibo/AnotherRedisDesktopManager
+identifiers:
+- winget: qishibo.AnotherRedisDesktopManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qishibo/AnotherRedisDesktopManager
+aliases:
+- another/another-redis-desktop-manager

@@ -1,0 +1,11 @@
+key: kitemaker/kitemaker
+publisher: kitemaker
+name: Kitemaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitemaker/Kitemaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitemaker/Kitemaker
+identifiers:
+- winget: Kitemaker.Kitemaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitemaker/Kitemaker
+aliases: []

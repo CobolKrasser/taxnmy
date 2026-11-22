@@ -1,0 +1,11 @@
+key: lrclib/lrcget
+publisher: lrclib
+name: LRCGET
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LRCLIB/LRCGET
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LRCLIB/LRCGET
+identifiers:
+- winget: LRCLIB.LRCGET
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LRCLIB/LRCGET
+aliases: []

@@ -1,0 +1,11 @@
+key: defisym/ffmpeg-win32-gpl-shared-variant-master-branch
+publisher: defisym
+name: FFmpeg (Win32, GPL shared variant, master branch)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Defisym/FFmpeg/GPL/Shared
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Defisym/FFmpeg/GPL/Shared
+identifiers:
+- winget: Defisym.FFmpeg.GPL.Shared
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Defisym/FFmpeg/GPL/Shared
+aliases: []

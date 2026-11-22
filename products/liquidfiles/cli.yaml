@@ -1,0 +1,12 @@
+key: liquidfiles/cli
+publisher: liquidfiles
+name: LiquidFiles CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/LiquidFilesCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/LiquidFilesCLI
+identifiers:
+- winget: LiquidFiles.LiquidFilesCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LiquidFiles/LiquidFilesCLI
+aliases:
+- liquidfiles/liquidfiles-cli

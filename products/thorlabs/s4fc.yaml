@@ -1,0 +1,11 @@
+key: thorlabs/s4fc
+publisher: thorlabs
+name: S4FC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/S4FC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/S4FC
+identifiers:
+- winget: Thorlabs.S4FC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/S4FC
+aliases: []

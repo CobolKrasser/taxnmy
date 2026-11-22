@@ -1,0 +1,11 @@
+key: amule-team/amule-portable
+publisher: amule-team
+name: aMule Portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aMule/aMule/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aMule/aMule/Portable
+identifiers:
+- winget: aMule.aMule.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aMule/aMule/Portable
+aliases: []

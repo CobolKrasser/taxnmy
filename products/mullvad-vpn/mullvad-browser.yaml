@@ -1,0 +1,11 @@
+key: mullvad-vpn/mullvad-browser
+publisher: mullvad-vpn
+name: Mullvad Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadBrowser
+identifiers:
+- winget: MullvadVPN.MullvadBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadBrowser
+aliases: []

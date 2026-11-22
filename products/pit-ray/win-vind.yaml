@@ -1,0 +1,11 @@
+key: pit-ray/win-vind
+publisher: pit-ray
+name: win-vind
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pit-ray/win-vind
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pit-ray/win-vind
+identifiers:
+- winget: pit-ray.win-vind
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pit-ray/win-vind
+aliases: []

@@ -1,0 +1,11 @@
+key: gaphor-community/gaphor
+publisher: gaphor-community
+name: Gaphor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gaphor/gaphor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gaphor/gaphor
+identifiers:
+- winget: gaphor.gaphor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gaphor/gaphor
+aliases: []

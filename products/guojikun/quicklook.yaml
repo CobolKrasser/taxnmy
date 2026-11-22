@@ -1,0 +1,11 @@
+key: guojikun/quicklook
+publisher: guojikun
+name: quicklook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuoJikun/QuickLook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuoJikun/QuickLook
+identifiers:
+- winget: GuoJikun.QuickLook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GuoJikun/QuickLook
+aliases: []

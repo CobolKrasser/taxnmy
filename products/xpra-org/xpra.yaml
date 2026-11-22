@@ -1,0 +1,13 @@
+key: xpra-org/xpra
+publisher: xpra-org
+name: Xpra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpra-org/xpra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpra-org/xpra
+identifiers:
+- winget: xpra-org.xpra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpra-org/xpra
+- winget: xpra-org.xpra.lts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xpra-org/xpra/lts
+aliases: []

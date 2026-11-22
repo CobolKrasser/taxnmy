@@ -1,0 +1,11 @@
+key: wjj-software/mybase-server
+publisher: wjj-software
+name: Mybase Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WjjSoft/MybaseServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WjjSoft/MybaseServer
+identifiers:
+- winget: WjjSoft.MybaseServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WjjSoft/MybaseServer
+aliases: []

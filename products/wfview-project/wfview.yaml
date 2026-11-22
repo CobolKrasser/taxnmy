@@ -1,0 +1,11 @@
+key: wfview-project/wfview
+publisher: wfview-project
+name: wfview
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfview/Wfview
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfview/Wfview
+identifiers:
+- winget: Wfview.Wfview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wfview/Wfview
+aliases: []

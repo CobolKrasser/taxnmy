@@ -1,0 +1,11 @@
+key: g-d-g-software/paquet-builder
+publisher: g-d-g-software
+name: Paquet Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDGSoftware/PaquetBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDGSoftware/PaquetBuilder
+identifiers:
+- winget: GDGSoftware.PaquetBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDGSoftware/PaquetBuilder
+aliases: []

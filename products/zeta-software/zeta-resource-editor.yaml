@@ -1,0 +1,11 @@
+key: zeta-software/zeta-resource-editor
+publisher: zeta-software
+name: Zeta Resource Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZetaSoftwareGmbH/ZetaResourceEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZetaSoftwareGmbH/ZetaResourceEditor
+identifiers:
+- winget: ZetaSoftwareGmbH.ZetaResourceEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZetaSoftwareGmbH/ZetaResourceEditor
+aliases: []

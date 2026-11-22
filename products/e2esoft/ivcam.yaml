@@ -1,0 +1,11 @@
+key: e2esoft/ivcam
+publisher: e2esoft
+name: iVCam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/e2eSoft/iVCam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/e2eSoft/iVCam
+identifiers:
+- winget: e2eSoft.iVCam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/e2eSoft/iVCam
+aliases: []

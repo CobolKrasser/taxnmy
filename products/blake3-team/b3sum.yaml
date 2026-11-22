@@ -1,0 +1,11 @@
+key: blake3-team/b3sum
+publisher: blake3-team
+name: b3sum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BLAKE3-Team/b3sum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BLAKE3-Team/b3sum
+identifiers:
+- winget: BLAKE3-Team.b3sum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BLAKE3-Team/b3sum
+aliases: []

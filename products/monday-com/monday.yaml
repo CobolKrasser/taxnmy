@@ -1,0 +1,11 @@
+key: monday-com/monday
+publisher: monday-com
+name: monday
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/monday/monday
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/monday/monday
+identifiers:
+- winget: monday.monday
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/monday/monday
+aliases: []

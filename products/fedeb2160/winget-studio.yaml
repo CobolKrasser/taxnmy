@@ -1,0 +1,11 @@
+key: fedeb2160/winget-studio
+publisher: fedeb2160
+name: WinGet Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FedeB2160/WinGetStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FedeB2160/WinGetStudio
+identifiers:
+- winget: FedeB2160.WinGetStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FedeB2160/WinGetStudio
+aliases: []

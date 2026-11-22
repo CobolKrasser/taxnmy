@@ -1,0 +1,11 @@
+key: shift-technologies/shift
+publisher: shift-technologies
+name: Shift
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shift/Shift
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shift/Shift
+identifiers:
+- winget: Shift.Shift
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Shift/Shift
+aliases: []

@@ -1,0 +1,11 @@
+key: wimysoft/wimygit
+publisher: wimysoft
+name: WimyGit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wimysoft/WimyGit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wimysoft/WimyGit
+identifiers:
+- winget: Wimysoft.WimyGit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wimysoft/WimyGit
+aliases: []

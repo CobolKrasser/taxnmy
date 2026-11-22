@@ -1,0 +1,12 @@
+key: adinstruments/coda
+publisher: adinstruments
+name: ADInstruments CODA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/CODA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/CODA
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.CODA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/CODA
+aliases:
+- adinstruments/adinstruments-coda

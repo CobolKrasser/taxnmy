@@ -1,0 +1,11 @@
+key: wingtk/gvsbuild
+publisher: wingtk
+name: gvsbuild
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wingtk/gvsbuild/GTK4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wingtk/gvsbuild/GTK4
+identifiers:
+- winget: wingtk.gvsbuild.GTK4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wingtk/gvsbuild/GTK4
+aliases: []

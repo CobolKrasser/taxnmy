@@ -1,0 +1,11 @@
+key: tmfgroup/wol-manager
+publisher: tmfgroup
+name: WOL Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/toevi/WOLManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/toevi/WOLManager
+identifiers:
+- winget: toevi.WOLManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/toevi/WOLManager
+aliases: []

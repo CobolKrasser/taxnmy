@@ -1,0 +1,11 @@
+key: sacloud/usacloud
+publisher: sacloud
+name: usacloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sacloud/usacloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sacloud/usacloud
+identifiers:
+- winget: sacloud.usacloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sacloud/usacloud
+aliases: []

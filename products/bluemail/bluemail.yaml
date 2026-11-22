@@ -1,0 +1,11 @@
+key: bluemail/bluemail
+publisher: bluemail
+name: BlueMail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blix/BlueMail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blix/BlueMail
+identifiers:
+- winget: Blix.BlueMail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blix/BlueMail
+aliases: []

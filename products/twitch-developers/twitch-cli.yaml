@@ -1,0 +1,11 @@
+key: twitch-developers/twitch-cli
+publisher: twitch-developers
+name: Twitch CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twitch/TwitchCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twitch/TwitchCLI
+identifiers:
+- winget: Twitch.TwitchCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Twitch/TwitchCLI
+aliases: []

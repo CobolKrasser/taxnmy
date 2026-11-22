@@ -1,0 +1,11 @@
+key: eli-weitzman/eli-s-enterprise-tech-toolkit
+publisher: eli-weitzman
+name: Eli's Enterprise Tech Toolkit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EliWeitzman/ETT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EliWeitzman/ETT
+identifiers:
+- winget: EliWeitzman.ETT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EliWeitzman/ETT
+aliases: []

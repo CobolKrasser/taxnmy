@@ -1,0 +1,11 @@
+key: beetlebot/fount
+publisher: beetlebot
+name: Fount
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeetleBot/Fount
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeetleBot/Fount
+identifiers:
+- winget: BeetleBot.Fount
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeetleBot/Fount
+aliases: []

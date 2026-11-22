@@ -1,0 +1,11 @@
+key: imagination-technologies/pvrtextool
+publisher: imagination-technologies
+name: PVRTexTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImaginationTech/PVRTexTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImaginationTech/PVRTexTool
+identifiers:
+- winget: ImaginationTech.PVRTexTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImaginationTech/PVRTexTool
+aliases: []

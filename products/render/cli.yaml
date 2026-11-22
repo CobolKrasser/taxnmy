@@ -1,0 +1,12 @@
+key: render/cli
+publisher: render
+name: Render CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Render/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Render/CLI
+identifiers:
+- winget: Render.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Render/CLI
+aliases:
+- render/render-cli

@@ -1,0 +1,11 @@
+key: who-else/ping
+publisher: who-else
+name: Ping
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhoElse/Ping
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhoElse/Ping
+identifiers:
+- winget: WhoElse.Ping
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhoElse/Ping
+aliases: []

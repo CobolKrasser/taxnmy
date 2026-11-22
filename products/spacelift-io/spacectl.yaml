@@ -1,0 +1,11 @@
+key: spacelift-io/spacectl
+publisher: spacelift-io
+name: spacectl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacelift-io/spacectl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacelift-io/spacectl
+identifiers:
+- winget: spacelift-io.spacectl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spacelift-io/spacectl
+aliases: []

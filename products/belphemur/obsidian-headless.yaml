@@ -1,0 +1,11 @@
+key: belphemur/obsidian-headless
+publisher: belphemur
+name: obsidian-headless
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belphemur/ObsidianHeadless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belphemur/ObsidianHeadless
+identifiers:
+- winget: Belphemur.ObsidianHeadless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Belphemur/ObsidianHeadless
+aliases: []

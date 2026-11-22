@@ -1,0 +1,11 @@
+key: jacktrip/jacktrip
+publisher: jacktrip
+name: JackTrip
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackTrip/JackTrip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackTrip/JackTrip
+identifiers:
+- winget: JackTrip.JackTrip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JackTrip/JackTrip
+aliases: []

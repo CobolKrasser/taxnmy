@@ -1,0 +1,11 @@
+key: paragon-software/hfs-plus-for-windows-by-paragon-software
+publisher: paragon-software
+name: HFS+ for Windows by Paragon Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/HFS+
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/HFS+
+identifiers:
+- winget: Paragon.HFS+
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Paragon/HFS+
+aliases: []

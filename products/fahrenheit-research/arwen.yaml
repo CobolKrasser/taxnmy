@@ -1,0 +1,11 @@
+key: fahrenheit-research/arwen
+publisher: fahrenheit-research
+name: ArWen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/ArWen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/ArWen
+identifiers:
+- winget: FahrenheitResearch.ArWen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FahrenheitResearch/ArWen
+aliases: []

@@ -1,0 +1,11 @@
+key: airshipper-contributors/airshipper
+publisher: airshipper-contributors
+name: Airshipper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veloren/Airshipper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veloren/Airshipper
+identifiers:
+- winget: Veloren.Airshipper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Veloren/Airshipper
+aliases: []

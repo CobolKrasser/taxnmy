@@ -1,0 +1,11 @@
+key: diskuv/dkml-native
+publisher: diskuv
+name: DkML Native
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diskuv/OCaml
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diskuv/OCaml
+identifiers:
+- winget: Diskuv.OCaml
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Diskuv/OCaml
+aliases: []

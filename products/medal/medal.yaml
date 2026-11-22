@@ -1,0 +1,11 @@
+key: medal/medal
+publisher: medal
+name: Medal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MedalB/V/Medal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MedalB/V/Medal
+identifiers:
+- winget: MedalB.V.Medal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MedalB/V/Medal
+aliases: []

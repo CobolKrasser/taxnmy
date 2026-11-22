@@ -1,0 +1,11 @@
+key: microsoft/gvfs
+publisher: microsoft
+name: GVFS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VFSforGit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VFSforGit
+identifiers:
+- winget: Microsoft.VFSforGit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VFSforGit
+aliases: []

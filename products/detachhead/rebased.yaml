@@ -1,0 +1,11 @@
+key: detachhead/rebased
+publisher: detachhead
+name: Rebased
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/detachhead/rebased
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/detachhead/rebased
+identifiers:
+- winget: detachhead.rebased
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/detachhead/rebased
+aliases: []

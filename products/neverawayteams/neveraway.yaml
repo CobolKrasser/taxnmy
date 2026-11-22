@@ -1,0 +1,11 @@
+key: neverawayteams/neveraway
+publisher: neverawayteams
+name: NeverAway
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeverAwayTeams/NeverAway
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeverAwayTeams/NeverAway
+identifiers:
+- winget: NeverAwayTeams.NeverAway
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NeverAwayTeams/NeverAway
+aliases: []

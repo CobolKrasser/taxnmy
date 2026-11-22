@@ -1,0 +1,11 @@
+key: open-science-tools/psychopy
+publisher: open-science-tools
+name: PsychoPy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScienceTools/PsychoPy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScienceTools/PsychoPy
+identifiers:
+- winget: OpenScienceTools.PsychoPy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenScienceTools/PsychoPy
+aliases: []

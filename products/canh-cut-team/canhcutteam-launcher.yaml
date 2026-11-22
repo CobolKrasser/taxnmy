@@ -1,0 +1,11 @@
+key: canh-cut-team/canhcutteam-launcher
+publisher: canh-cut-team
+name: CanhCutTeam Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CanhCutTeam/CanhCutTeamLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CanhCutTeam/CanhCutTeamLauncher
+identifiers:
+- winget: CanhCutTeam.CanhCutTeamLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CanhCutTeam/CanhCutTeamLauncher
+aliases: []

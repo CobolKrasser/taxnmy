@@ -1,0 +1,11 @@
+key: aomei-international-network/aomei-backupper
+publisher: aomei-international-network
+name: AOMEI Backupper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/Backupper/Standard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/Backupper/Standard
+identifiers:
+- winget: AOMEI.Backupper.Standard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AOMEI/Backupper/Standard
+aliases: []

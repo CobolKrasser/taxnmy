@@ -1,0 +1,11 @@
+key: cpuid/powermax
+publisher: cpuid
+name: powerMAX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/powerMAX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/powerMAX
+identifiers:
+- winget: CPUID.powerMAX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/powerMAX
+aliases: []

@@ -1,0 +1,11 @@
+key: hewel/jmsr
+publisher: hewel
+name: jmsr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pigfun/jmsr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pigfun/jmsr
+identifiers:
+- winget: pigfun.jmsr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pigfun/jmsr
+aliases: []

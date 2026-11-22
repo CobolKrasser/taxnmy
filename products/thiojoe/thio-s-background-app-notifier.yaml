@@ -1,0 +1,11 @@
+key: thiojoe/thio-s-background-app-notifier
+publisher: thiojoe
+name: Thio's Background App Notifier
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThioJoe/BackgroundAppNotifier
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThioJoe/BackgroundAppNotifier
+identifiers:
+- winget: ThioJoe.BackgroundAppNotifier
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThioJoe/BackgroundAppNotifier
+aliases: []

@@ -1,0 +1,11 @@
+key: henry-plus-plus/free-shooter
+publisher: henry-plus-plus
+name: Free Shooter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/freeshooter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/freeshooter
+identifiers:
+- winget: Henry++.freeshooter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Henry++/freeshooter
+aliases: []

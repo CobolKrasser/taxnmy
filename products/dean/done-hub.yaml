@@ -1,0 +1,11 @@
+key: dean/done-hub
+publisher: dean
+name: Done Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deanxv/DoneHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deanxv/DoneHub
+identifiers:
+- winget: deanxv.DoneHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/deanxv/DoneHub
+aliases: []

@@ -1,0 +1,11 @@
+key: nakashima-makoto/foton
+publisher: nakashima-makoto
+name: foton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gifnksm/foton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gifnksm/foton
+identifiers:
+- winget: gifnksm.foton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gifnksm/foton
+aliases: []

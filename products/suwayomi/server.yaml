@@ -1,0 +1,12 @@
+key: suwayomi/server
+publisher: suwayomi
+name: Suwayomi Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Suwayomi/Suwayomi-Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Suwayomi/Suwayomi-Server
+identifiers:
+- winget: Suwayomi.Suwayomi-Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Suwayomi/Suwayomi-Server
+aliases:
+- suwayomi/suwayomi-server

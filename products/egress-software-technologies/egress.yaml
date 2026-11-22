@@ -1,0 +1,11 @@
+key: egress-software-technologies/egress
+publisher: egress-software-technologies
+name: Egress
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egress/Egress
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egress/Egress
+identifiers:
+- winget: Egress.Egress
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Egress/Egress
+aliases: []

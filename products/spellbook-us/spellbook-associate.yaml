@@ -1,0 +1,11 @@
+key: spellbook-us/spellbook-associate
+publisher: spellbook-us
+name: Spellbook Associate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spellbook/Associate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spellbook/Associate
+identifiers:
+- winget: Spellbook.Associate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spellbook/Associate
+aliases: []

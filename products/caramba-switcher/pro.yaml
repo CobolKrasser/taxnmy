@@ -1,0 +1,12 @@
+key: caramba-switcher/pro
+publisher: caramba-switcher
+name: Caramba Switcher Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SergeyMoskalev/CarambaSwitcher/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SergeyMoskalev/CarambaSwitcher/Pro
+identifiers:
+- winget: SergeyMoskalev.CarambaSwitcher.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SergeyMoskalev/CarambaSwitcher/Pro
+aliases:
+- caramba-switcher/caramba-switcher-pro

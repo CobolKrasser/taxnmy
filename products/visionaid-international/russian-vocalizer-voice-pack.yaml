@@ -1,0 +1,12 @@
+key: visionaid-international/russian-vocalizer-voice-pack
+publisher: visionaid-international
+name: VisionAid International Russian Vocalizer Voice Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Russian
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Russian
+identifiers:
+- winget: VisionAid.NuanceVocalizerVoicePack.Russian
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisionAid/NuanceVocalizerVoicePack/Russian
+aliases:
+- visionaid-international/visionaid-international-russian-vocalizer-voice-pack

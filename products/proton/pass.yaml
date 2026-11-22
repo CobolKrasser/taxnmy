@@ -1,0 +1,12 @@
+key: proton/pass
+publisher: proton
+name: Proton Pass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonPass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonPass
+identifiers:
+- winget: Proton.ProtonPass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Proton/ProtonPass
+aliases:
+- proton/proton-pass

@@ -1,0 +1,11 @@
+key: gittuf/git-remote-gittuf
+publisher: gittuf
+name: git-remote-gittuf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gittuf/git-remote-gittuf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gittuf/git-remote-gittuf
+identifiers:
+- winget: gittuf.git-remote-gittuf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gittuf/git-remote-gittuf
+aliases: []

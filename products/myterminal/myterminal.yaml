@@ -1,0 +1,11 @@
+key: myterminal/myterminal
+publisher: myterminal
+name: MyTerminal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/MyTerminal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/MyTerminal
+identifiers:
+- winget: CrazyFigure.MyTerminal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/MyTerminal
+aliases: []

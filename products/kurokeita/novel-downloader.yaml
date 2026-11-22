@@ -1,0 +1,11 @@
+key: kurokeita/novel-downloader
+publisher: kurokeita
+name: novel-downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kurokeita/NovelDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kurokeita/NovelDownloader
+identifiers:
+- winget: Kurokeita.NovelDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kurokeita/NovelDownloader
+aliases: []

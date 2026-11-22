@@ -1,0 +1,13 @@
+key: lark-technologies/lark
+publisher: lark-technologies
+name: Lark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Lark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Lark
+identifiers:
+- winget: ByteDance.Lark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Lark
+- winget: ByteDance.Lark.MSI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Lark/MSI
+aliases: []

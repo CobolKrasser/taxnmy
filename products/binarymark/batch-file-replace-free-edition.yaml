@@ -1,0 +1,11 @@
+key: binarymark/batch-file-replace-free-edition
+publisher: binarymark
+name: Batch File Replace Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileReplace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileReplace
+identifiers:
+- winget: BinaryMark.BatchFileReplace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileReplace
+aliases: []

@@ -1,0 +1,11 @@
+key: bilisail/bilisail
+publisher: bilisail
+name: BiliSail
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CKopoer/BiliSail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CKopoer/BiliSail
+identifiers:
+- winget: CKopoer.BiliSail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CKopoer/BiliSail
+aliases: []

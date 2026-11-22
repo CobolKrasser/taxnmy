@@ -1,0 +1,11 @@
+key: polargoose/coffeebean
+publisher: polargoose
+name: CoffeeBean
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/CoffeeBean
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/CoffeeBean
+identifiers:
+- winget: PolarGoose.CoffeeBean
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/CoffeeBean
+aliases: []

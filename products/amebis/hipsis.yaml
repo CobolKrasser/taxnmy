@@ -1,0 +1,12 @@
+key: amebis/hipsis
+publisher: amebis
+name: Amebis Hipsis
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amebis/Hipsis
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amebis/Hipsis
+identifiers:
+- winget: Amebis.Hipsis
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amebis/Hipsis
+aliases:
+- amebis/amebis-hipsis

@@ -1,0 +1,11 @@
+key: redducks/cemui
+publisher: redducks
+name: CemUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedDucks/CemUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedDucks/CemUI
+identifiers:
+- winget: RedDucks.CemUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedDucks/CemUI
+aliases: []

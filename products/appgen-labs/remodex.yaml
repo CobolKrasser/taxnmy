@@ -1,0 +1,11 @@
+key: appgen-labs/remodex
+publisher: appgen-labs
+name: Remodex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppGenLabs/Remodex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppGenLabs/Remodex
+identifiers:
+- winget: AppGenLabs.Remodex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppGenLabs/Remodex
+aliases: []

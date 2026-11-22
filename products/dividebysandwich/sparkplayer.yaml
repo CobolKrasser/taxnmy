@@ -1,0 +1,11 @@
+key: dividebysandwich/sparkplayer
+publisher: dividebysandwich
+name: SparkPlayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/SparkPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/SparkPlayer
+identifiers:
+- winget: dividebysandwich.SparkPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dividebysandwich/SparkPlayer
+aliases: []

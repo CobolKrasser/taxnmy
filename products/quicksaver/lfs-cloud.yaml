@@ -1,0 +1,11 @@
+key: quicksaver/lfs-cloud
+publisher: quicksaver
+name: LFS Cloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quicksaver/LFSCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quicksaver/LFSCloud
+identifiers:
+- winget: Quicksaver.LFSCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quicksaver/LFSCloud
+aliases: []

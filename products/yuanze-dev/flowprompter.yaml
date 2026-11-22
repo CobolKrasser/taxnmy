@@ -1,0 +1,11 @@
+key: yuanze-dev/flowprompter
+publisher: yuanze-dev
+name: FlowPrompter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Principle/FlowPrompter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Principle/FlowPrompter
+identifiers:
+- winget: Principle.FlowPrompter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Principle/FlowPrompter
+aliases: []

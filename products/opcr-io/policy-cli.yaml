@@ -1,0 +1,11 @@
+key: opcr-io/policy-cli
+publisher: opcr-io
+name: Policy CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPolicyContainers/Policy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPolicyContainers/Policy
+identifiers:
+- winget: OpenPolicyContainers.Policy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenPolicyContainers/Policy
+aliases: []

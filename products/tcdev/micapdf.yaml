@@ -1,0 +1,11 @@
+key: tcdev/micapdf
+publisher: tcdev
+name: MicaPDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TCDev/MicaPDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TCDev/MicaPDF
+identifiers:
+- winget: TCDev.MicaPDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TCDev/MicaPDF
+aliases: []

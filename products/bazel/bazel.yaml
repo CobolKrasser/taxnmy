@@ -1,0 +1,11 @@
+key: bazel/bazel
+publisher: bazel
+name: Bazel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazel/Bazel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazel/Bazel
+identifiers:
+- winget: Bazel.Bazel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bazel/Bazel
+aliases: []

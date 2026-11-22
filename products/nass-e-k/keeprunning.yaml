@@ -1,0 +1,11 @@
+key: nass-e-k/keeprunning
+publisher: nass-e-k
+name: KeepRunning
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/KeepRunning
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/KeepRunning
+identifiers:
+- winget: NASS.KeepRunning
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/KeepRunning
+aliases: []

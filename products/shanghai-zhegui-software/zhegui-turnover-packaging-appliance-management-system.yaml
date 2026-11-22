@@ -1,0 +1,11 @@
+key: shanghai-zhegui-software/zhegui-turnover-packaging-appliance-management-system
+publisher: shanghai-zhegui-software
+name: Zhegui turnover packaging appliance management system
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_pkg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_pkg
+identifiers:
+- winget: Zheguisoft.zg_pkg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zheguisoft/zg_pkg
+aliases: []

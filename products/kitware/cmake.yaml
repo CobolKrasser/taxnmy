@@ -1,0 +1,11 @@
+key: kitware/cmake
+publisher: kitware
+name: CMake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/CMake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/CMake
+identifiers:
+- winget: Kitware.CMake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kitware/CMake
+aliases: []

@@ -1,0 +1,11 @@
+key: cygwin/cygwin
+publisher: cygwin
+name: Cygwin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/Cygwin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/Cygwin
+identifiers:
+- winget: Cygwin.Cygwin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/Cygwin
+aliases: []

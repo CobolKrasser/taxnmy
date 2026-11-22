@@ -1,0 +1,12 @@
+key: gnuwin32/bison
+publisher: gnuwin32
+name: 'GnuWin32: Bison'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Bison
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Bison
+identifiers:
+- winget: GnuWin32.Bison
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Bison
+aliases:
+- gnuwin32/gnuwin32-bison

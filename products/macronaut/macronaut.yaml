@@ -1,0 +1,11 @@
+key: macronaut/macronaut
+publisher: macronaut
+name: Macronaut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macronaut/Macronaut
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macronaut/Macronaut
+identifiers:
+- winget: Macronaut.Macronaut
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Macronaut/Macronaut
+aliases: []

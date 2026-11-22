@@ -1,0 +1,12 @@
+key: auslogics/driver-updater
+publisher: auslogics
+name: Auslogics Driver Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/DriverUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/DriverUpdater
+identifiers:
+- winget: Auslogics.DriverUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/DriverUpdater
+aliases:
+- auslogics/auslogics-driver-updater

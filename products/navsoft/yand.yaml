@@ -1,0 +1,11 @@
+key: navsoft/yand
+publisher: navsoft
+name: YaND
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDBlist/YaND
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDBlist/YaND
+identifiers:
+- winget: NDBlist.YaND
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NDBlist/YaND
+aliases: []

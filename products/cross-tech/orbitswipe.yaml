@@ -1,0 +1,11 @@
+key: cross-tech/orbitswipe
+publisher: cross-tech
+name: OrbitSwipe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrossTech/OrbitSwipe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrossTech/OrbitSwipe
+identifiers:
+- winget: CrossTech.OrbitSwipe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrossTech/OrbitSwipe
+aliases: []

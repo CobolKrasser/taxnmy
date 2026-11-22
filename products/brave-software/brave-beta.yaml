@@ -1,0 +1,11 @@
+key: brave-software/brave-beta
+publisher: brave-software
+name: Brave Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/Brave/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/Brave/Beta
+identifiers:
+- winget: Brave.Brave.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brave/Brave/Beta
+aliases: []

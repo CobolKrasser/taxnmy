@@ -1,0 +1,11 @@
+key: ccswitch/cc-switch-remote
+publisher: ccswitch
+name: cc-switch-remote
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zz920/cc-switch-remote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zz920/cc-switch-remote
+identifiers:
+- winget: zz920.cc-switch-remote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zz920/cc-switch-remote
+aliases: []

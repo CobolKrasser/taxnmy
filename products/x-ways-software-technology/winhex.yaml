@@ -1,0 +1,11 @@
+key: x-ways-software-technology/winhex
+publisher: x-ways-software-technology
+name: WinHex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X-Ways/WinHex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X-Ways/WinHex
+identifiers:
+- winget: X-Ways.WinHex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/X-Ways/WinHex
+aliases: []

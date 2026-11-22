@@ -1,0 +1,11 @@
+key: jonas-chevalier/direnv
+publisher: jonas-chevalier
+name: direnv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/direnv/direnv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/direnv/direnv
+identifiers:
+- winget: direnv.direnv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/direnv/direnv
+aliases: []

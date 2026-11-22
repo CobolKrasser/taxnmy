@@ -1,0 +1,11 @@
+key: national-instruments/ni-package-manager
+publisher: national-instruments
+name: NI Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-packagemanager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-packagemanager
+identifiers:
+- winget: NI.ni-packagemanager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NI/ni-packagemanager
+aliases: []

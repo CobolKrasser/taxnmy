@@ -1,0 +1,11 @@
+key: kharkevich-engineering-lab/ds-delivery-station
+publisher: kharkevich-engineering-lab
+name: DS (Delivery Station)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeliveryStation/ds
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeliveryStation/ds
+identifiers:
+- winget: DeliveryStation.ds
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeliveryStation/ds
+aliases: []

@@ -1,0 +1,15 @@
+key: the-hugo-authors/hugo
+publisher: the-hugo-authors
+name: Hugo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugo/Hugo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugo/Hugo
+identifiers:
+- winget: Hugo.Hugo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugo/Hugo
+- winget: Hugo.Hugo.Deploy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugo/Hugo/Deploy
+- winget: Hugo.Hugo.Extended
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hugo/Hugo/Extended
+aliases: []

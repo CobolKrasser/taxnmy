@@ -1,0 +1,11 @@
+key: monotype-imaging/monotype-fonts
+publisher: monotype-imaging
+name: Monotype Fonts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monotype/MonotypeFonts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monotype/MonotypeFonts
+identifiers:
+- winget: Monotype.MonotypeFonts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Monotype/MonotypeFonts
+aliases: []

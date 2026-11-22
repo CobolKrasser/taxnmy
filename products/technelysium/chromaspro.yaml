@@ -1,0 +1,11 @@
+key: technelysium/chromaspro
+publisher: technelysium
+name: ChromasPro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Technelysium/Chromas/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Technelysium/Chromas/Pro
+identifiers:
+- winget: Technelysium.Chromas.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Technelysium/Chromas/Pro
+aliases: []

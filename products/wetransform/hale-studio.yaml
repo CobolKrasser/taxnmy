@@ -1,0 +1,11 @@
+key: wetransform/hale-studio
+publisher: wetransform
+name: hale studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wetransform/HaleStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wetransform/HaleStudio
+identifiers:
+- winget: Wetransform.HaleStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wetransform/HaleStudio
+aliases: []

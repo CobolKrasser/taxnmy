@@ -1,0 +1,11 @@
+key: algento-cloud-computing/botim
+publisher: algento-cloud-computing
+name: Botim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Algento/Botim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Algento/Botim
+identifiers:
+- winget: Algento.Botim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Algento/Botim
+aliases: []

@@ -1,0 +1,11 @@
+key: arashi-vision/insta360-link-controller
+publisher: arashi-vision
+name: Insta360 Link Controller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insta360/Link/Controller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insta360/Link/Controller
+identifiers:
+- winget: Insta360.Link.Controller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Insta360/Link/Controller
+aliases: []

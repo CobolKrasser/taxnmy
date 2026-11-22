@@ -1,0 +1,11 @@
+key: kevin-boss/port
+publisher: kevin-boss
+name: port
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kevinboss/port
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kevinboss/port
+identifiers:
+- winget: kevinboss.port
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kevinboss/port
+aliases: []

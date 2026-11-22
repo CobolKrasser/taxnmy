@@ -1,0 +1,11 @@
+key: notary-project/notation-cli
+publisher: notary-project
+name: Notation CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotaryProject/Notation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotaryProject/Notation
+identifiers:
+- winget: NotaryProject.Notation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NotaryProject/Notation
+aliases: []

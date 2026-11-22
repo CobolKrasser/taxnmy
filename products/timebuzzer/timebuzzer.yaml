@@ -1,0 +1,11 @@
+key: timebuzzer/timebuzzer
+publisher: timebuzzer
+name: timeBuzzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timeBuzzer/timeBuzzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timeBuzzer/timeBuzzer
+identifiers:
+- winget: timeBuzzer.timeBuzzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timeBuzzer/timeBuzzer
+aliases: []

@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-taiwan-server
+publisher: riot-games
+name: League of Legends (Taiwan server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/TW2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/TW2
+identifiers:
+- winget: RiotGames.LeagueOfLegends.TW2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/TW2
+aliases: []

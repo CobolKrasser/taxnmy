@@ -1,0 +1,12 @@
+key: filemail/desktop-app
+publisher: filemail
+name: Filemail Desktop App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filemail/DesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filemail/DesktopApp
+identifiers:
+- winget: Filemail.DesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Filemail/DesktopApp
+aliases:
+- filemail/filemail-desktop-app

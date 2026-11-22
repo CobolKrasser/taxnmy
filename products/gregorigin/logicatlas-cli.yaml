@@ -1,0 +1,11 @@
+key: gregorigin/logicatlas-cli
+publisher: gregorigin
+name: LogicAtlas CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregOrigin/LogicAtlasCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregOrigin/LogicAtlasCLI
+identifiers:
+- winget: GregOrigin.LogicAtlasCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregOrigin/LogicAtlasCLI
+aliases: []

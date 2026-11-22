@@ -1,0 +1,11 @@
+key: oscium/chanalyzer
+publisher: oscium
+name: Chanalyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/Chanalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/Chanalyzer
+identifiers:
+- winget: Oscium.Chanalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oscium/Chanalyzer
+aliases: []

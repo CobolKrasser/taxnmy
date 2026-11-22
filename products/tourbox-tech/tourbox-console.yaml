@@ -1,0 +1,11 @@
+key: tourbox-tech/tourbox-console
+publisher: tourbox-tech
+name: TourBox Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TourBox/TourBoxConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TourBox/TourBoxConsole
+identifiers:
+- winget: TourBox.TourBoxConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TourBox/TourBoxConsole
+aliases: []

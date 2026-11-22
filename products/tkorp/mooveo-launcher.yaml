@@ -1,0 +1,11 @@
+key: tkorp/mooveo-launcher
+publisher: tkorp
+name: Mooveo Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TKORP/MooveoLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TKORP/MooveoLauncher
+identifiers:
+- winget: TKORP.MooveoLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TKORP/MooveoLauncher
+aliases: []

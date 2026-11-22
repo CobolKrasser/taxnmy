@@ -1,0 +1,11 @@
+key: r2cuerdame/wslpad
+publisher: r2cuerdame
+name: WSLPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/r2cuerdame/WSLPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/r2cuerdame/WSLPad
+identifiers:
+- winget: r2cuerdame.WSLPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/r2cuerdame/WSLPad
+aliases: []

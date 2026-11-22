@@ -1,0 +1,11 @@
+key: artem-v-navrotskiy-marat-radchenko/octobuild
+publisher: artem-v-navrotskiy-marat-radchenko
+name: octobuild
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/octobuild/octobuild
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/octobuild/octobuild
+identifiers:
+- winget: octobuild.octobuild
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/octobuild/octobuild
+aliases: []

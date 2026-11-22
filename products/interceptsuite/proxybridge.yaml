@@ -1,0 +1,11 @@
+key: interceptsuite/proxybridge
+publisher: interceptsuite
+name: ProxyBridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/ProxyBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/ProxyBridge
+identifiers:
+- winget: InterceptSuite.ProxyBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InterceptSuite/ProxyBridge
+aliases: []

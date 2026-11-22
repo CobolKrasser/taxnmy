@@ -1,0 +1,11 @@
+key: libvips/libvips
+publisher: libvips
+name: libvips
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libvips/libvips
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libvips/libvips
+identifiers:
+- winget: libvips.libvips
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/libvips/libvips
+aliases: []

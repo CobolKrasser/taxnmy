@@ -1,0 +1,11 @@
+key: flushtech/ghost-drop
+publisher: flushtech
+name: Ghost-Drop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlushTech/Ghost-Drop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlushTech/Ghost-Drop
+identifiers:
+- winget: FlushTech.Ghost-Drop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlushTech/Ghost-Drop
+aliases: []

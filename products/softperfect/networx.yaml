@@ -1,0 +1,11 @@
+key: softperfect/networx
+publisher: softperfect
+name: NetWorx
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/NetWorx
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/NetWorx
+identifiers:
+- winget: SoftPerfect.NetWorx
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftPerfect/NetWorx
+aliases: []

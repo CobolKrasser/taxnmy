@@ -1,0 +1,11 @@
+key: crazyfigure/noteboard
+publisher: crazyfigure
+name: NoteBoard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/NoteBoard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/NoteBoard
+identifiers:
+- winget: CrazyFigure.NoteBoard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/NoteBoard
+aliases: []

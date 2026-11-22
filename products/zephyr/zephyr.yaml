@@ -1,0 +1,11 @@
+key: zephyr/zephyr
+publisher: zephyr
+name: Zephyr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Juwan/Zephyr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Juwan/Zephyr
+identifiers:
+- winget: Juwan.Zephyr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Juwan/Zephyr
+aliases: []

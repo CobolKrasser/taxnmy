@@ -1,0 +1,11 @@
+key: surfshark/surfshark
+publisher: surfshark
+name: Surfshark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Surfshark/Surfshark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Surfshark/Surfshark
+identifiers:
+- winget: Surfshark.Surfshark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Surfshark/Surfshark
+aliases: []

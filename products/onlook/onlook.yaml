@@ -1,0 +1,11 @@
+key: onlook/onlook
+publisher: onlook
+name: Onlook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnOff/Onlook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnOff/Onlook
+identifiers:
+- winget: OnOff.Onlook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnOff/Onlook
+aliases: []

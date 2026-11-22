@@ -1,0 +1,11 @@
+key: smartbooth/pingalert
+publisher: smartbooth
+name: PingAlert
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/PingAlert
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/PingAlert
+identifiers:
+- winget: Smartbooth.PingAlert
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartbooth/PingAlert
+aliases: []

@@ -1,0 +1,12 @@
+key: zerotier/one
+publisher: zerotier
+name: ZeroTier One
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroTier/ZeroTierOne
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroTier/ZeroTierOne
+identifiers:
+- winget: ZeroTier.ZeroTierOne
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroTier/ZeroTierOne
+aliases:
+- zerotier/zerotier-one

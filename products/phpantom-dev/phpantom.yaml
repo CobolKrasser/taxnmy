@@ -1,0 +1,11 @@
+key: phpantom-dev/phpantom
+publisher: phpantom-dev
+name: PHPantom
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHPantom/LSP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHPantom/LSP
+identifiers:
+- winget: PHPantom.LSP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PHPantom/LSP
+aliases: []

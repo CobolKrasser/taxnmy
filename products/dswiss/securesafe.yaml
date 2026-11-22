@@ -1,0 +1,11 @@
+key: dswiss/securesafe
+publisher: dswiss
+name: SecureSafe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DSwiss/SecureSafe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DSwiss/SecureSafe
+identifiers:
+- winget: DSwiss.SecureSafe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DSwiss/SecureSafe
+aliases: []

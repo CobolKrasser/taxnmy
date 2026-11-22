@@ -1,0 +1,11 @@
+key: quassel/quasselirc
+publisher: quassel
+name: QuasselIRC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quassel/QuasselIRC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quassel/QuasselIRC
+identifiers:
+- winget: Quassel.QuasselIRC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quassel/QuasselIRC
+aliases: []

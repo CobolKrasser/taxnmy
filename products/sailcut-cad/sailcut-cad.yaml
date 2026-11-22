@@ -1,0 +1,11 @@
+key: sailcut-cad/sailcut-cad
+publisher: sailcut-cad
+name: Sailcut CAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sailcut/SailcutCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sailcut/SailcutCAD
+identifiers:
+- winget: Sailcut.SailcutCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sailcut/SailcutCAD
+aliases: []

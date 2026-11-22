@@ -1,0 +1,11 @@
+key: tieb62/newzenlauncher
+publisher: tieb62
+name: NewzenLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewzenMC/NewzenLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewzenMC/NewzenLauncher
+identifiers:
+- winget: NewzenMC.NewzenLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewzenMC/NewzenLauncher
+aliases: []

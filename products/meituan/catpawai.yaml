@@ -1,0 +1,11 @@
+key: meituan/catpawai
+publisher: meituan
+name: CatPawAI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meituan/CatPaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meituan/CatPaw
+identifiers:
+- winget: Meituan.CatPaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meituan/CatPaw
+aliases: []

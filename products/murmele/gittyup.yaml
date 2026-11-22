@@ -1,0 +1,11 @@
+key: murmele/gittyup
+publisher: murmele
+name: Gittyup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Murmele/Gittyup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Murmele/Gittyup
+identifiers:
+- winget: Murmele.Gittyup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Murmele/Gittyup
+aliases: []

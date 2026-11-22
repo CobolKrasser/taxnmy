@@ -1,0 +1,11 @@
+key: the-sz-development/skypefocusfix
+publisher: the-sz-development
+name: SkypeFocusFix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/SkypeFocusFix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/SkypeFocusFix
+identifiers:
+- winget: the-sz.SkypeFocusFix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/SkypeFocusFix
+aliases: []

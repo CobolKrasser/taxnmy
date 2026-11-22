@@ -1,0 +1,11 @@
+key: aladin-communication/aladin-ebook
+publisher: aladin-communication
+name: Aladin eBook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aladin/eBook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aladin/eBook
+identifiers:
+- winget: Aladin.eBook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aladin/eBook
+aliases: []

@@ -1,0 +1,11 @@
+key: tweaking4all/rename-my-tv-series
+publisher: tweaking4all
+name: Rename My TV Series
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking4All/RenameMyTVSeries
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking4All/RenameMyTVSeries
+identifiers:
+- winget: Tweaking4All.RenameMyTVSeries
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tweaking4All/RenameMyTVSeries
+aliases: []

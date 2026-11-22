@@ -1,0 +1,11 @@
+key: delinea/thycotic-directory-services-agent
+publisher: delinea
+name: Thycotic Directory Services Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticDirectoryServicesAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticDirectoryServicesAgent
+identifiers:
+- winget: Delinea.ThycoticDirectoryServicesAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Delinea/ThycoticDirectoryServicesAgent
+aliases: []

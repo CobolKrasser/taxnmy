@@ -1,0 +1,25 @@
+key: rubyinstaller-team/ruby-with-msys2
+publisher: rubyinstaller-team
+name: Ruby with MSYS2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/2/6
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/2/6
+identifiers:
+- winget: RubyInstallerTeam.RubyWithDevKit.2.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/2/6
+- winget: RubyInstallerTeam.RubyWithDevKit.2.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/2/7
+- winget: RubyInstallerTeam.RubyWithDevKit.3.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/3/0
+- winget: RubyInstallerTeam.RubyWithDevKit.3.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/3/1
+- winget: RubyInstallerTeam.RubyWithDevKit.3.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/3/2
+- winget: RubyInstallerTeam.RubyWithDevKit.3.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/3/3
+- winget: RubyInstallerTeam.RubyWithDevKit.3.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/3/4
+- winget: RubyInstallerTeam.RubyWithDevKit.4.0
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RubyInstallerTeam/RubyWithDevKit/4/0
+aliases: []

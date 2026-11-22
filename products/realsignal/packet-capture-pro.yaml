@@ -1,0 +1,11 @@
+key: realsignal/packet-capture-pro
+publisher: realsignal
+name: Packet Capture Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALSIGNAL/PacketCapturePro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALSIGNAL/PacketCapturePro
+identifiers:
+- winget: REALSIGNAL.PacketCapturePro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALSIGNAL/PacketCapturePro
+aliases: []

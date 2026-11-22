@@ -1,0 +1,11 @@
+key: syndicode/infekt-nfo-viewer
+publisher: syndicode
+name: iNFekt NFO Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/syndicode/iNFekt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/syndicode/iNFekt
+identifiers:
+- winget: syndicode.iNFekt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/syndicode/iNFekt
+aliases: []

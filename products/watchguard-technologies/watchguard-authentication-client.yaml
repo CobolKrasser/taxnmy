@@ -1,0 +1,11 @@
+key: watchguard-technologies/watchguard-authentication-client
+publisher: watchguard-technologies
+name: WatchGuard Authentication Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatchGuard/WatchGuardAuthenticationClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatchGuard/WatchGuardAuthenticationClient
+identifiers:
+- winget: WatchGuard.WatchGuardAuthenticationClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WatchGuard/WatchGuardAuthenticationClient
+aliases: []

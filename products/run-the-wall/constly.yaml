@@ -1,0 +1,11 @@
+key: run-the-wall/constly
+publisher: run-the-wall
+name: Constly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RunTheWall/Constly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RunTheWall/Constly
+identifiers:
+- winget: RunTheWall.Constly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RunTheWall/Constly
+aliases: []

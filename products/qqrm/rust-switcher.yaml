@@ -1,0 +1,11 @@
+key: qqrm/rust-switcher
+publisher: qqrm
+name: Rust Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQRM/RustSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQRM/RustSwitcher
+identifiers:
+- winget: QQRM.RustSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QQRM/RustSwitcher
+aliases: []

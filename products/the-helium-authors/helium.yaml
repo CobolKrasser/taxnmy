@@ -1,0 +1,11 @@
+key: the-helium-authors/helium
+publisher: the-helium-authors
+name: Helium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImputNet/Helium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImputNet/Helium
+identifiers:
+- winget: ImputNet.Helium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImputNet/Helium
+aliases: []

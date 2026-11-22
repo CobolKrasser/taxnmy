@@ -1,0 +1,12 @@
+key: coligo-connect/configuration-tool
+publisher: coligo-connect
+name: Coligo Connect Configuration Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summa/ColigoConnectConfigurationTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summa/ColigoConnectConfigurationTool
+identifiers:
+- winget: Summa.ColigoConnectConfigurationTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summa/ColigoConnectConfigurationTool
+aliases:
+- coligo-connect/coligo-connect-configuration-tool

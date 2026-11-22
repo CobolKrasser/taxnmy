@@ -1,0 +1,11 @@
+key: saucelabs/forwarder
+publisher: saucelabs
+name: forwarder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SauceLabs/forwarder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SauceLabs/forwarder
+identifiers:
+- winget: SauceLabs.forwarder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SauceLabs/forwarder
+aliases: []

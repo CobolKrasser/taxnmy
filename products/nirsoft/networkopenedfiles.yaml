@@ -1,0 +1,11 @@
+key: nirsoft/networkopenedfiles
+publisher: nirsoft
+name: NetworkOpenedFiles
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkOpenedFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkOpenedFiles
+identifiers:
+- winget: NirSoft.NetworkOpenedFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/NetworkOpenedFiles
+aliases: []

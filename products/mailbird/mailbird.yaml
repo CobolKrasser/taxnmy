@@ -1,0 +1,11 @@
+key: mailbird/mailbird
+publisher: mailbird
+name: Mailbird
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mailbird/Mailbird
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mailbird/Mailbird
+identifiers:
+- winget: Mailbird.Mailbird
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mailbird/Mailbird
+aliases: []

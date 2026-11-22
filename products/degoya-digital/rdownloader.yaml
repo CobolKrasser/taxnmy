@@ -1,0 +1,11 @@
+key: degoya-digital/rdownloader
+publisher: degoya-digital
+name: rDownloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/degoya/rDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/degoya/rDownloader
+identifiers:
+- winget: degoya.rDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/degoya/rDownloader
+aliases: []

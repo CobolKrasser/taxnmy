@@ -1,0 +1,11 @@
+key: acorn-labs/acorn
+publisher: acorn-labs
+name: Acorn
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcornLabs/Acorn
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcornLabs/Acorn
+identifiers:
+- winget: AcornLabs.Acorn
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AcornLabs/Acorn
+aliases: []

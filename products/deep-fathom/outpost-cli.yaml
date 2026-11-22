@@ -1,0 +1,12 @@
+key: deep-fathom/outpost-cli
+publisher: deep-fathom
+name: Deep Fathom Outpost CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepFathom/Outpost/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepFathom/Outpost/Cli
+identifiers:
+- winget: DeepFathom.Outpost.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepFathom/Outpost/Cli
+aliases:
+- deep-fathom/deep-fathom-outpost-cli

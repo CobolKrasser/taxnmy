@@ -1,0 +1,11 @@
+key: ccseer/pinstack
+publisher: ccseer
+name: PinStack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccseer/PinStack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccseer/PinStack
+identifiers:
+- winget: ccseer.PinStack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ccseer/PinStack
+aliases: []

@@ -1,0 +1,11 @@
+key: powerformer/open-design
+publisher: powerformer
+name: Open Design
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Powerformer/OpenDesign
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Powerformer/OpenDesign
+identifiers:
+- winget: Powerformer.OpenDesign
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Powerformer/OpenDesign
+aliases: []

@@ -1,0 +1,11 @@
+key: ataraxy-labs/sem
+publisher: ataraxy-labs
+name: sem
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtaraxyLabs/sem
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtaraxyLabs/sem
+identifiers:
+- winget: AtaraxyLabs.sem
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AtaraxyLabs/sem
+aliases: []

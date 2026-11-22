@@ -1,0 +1,11 @@
+key: vovsoft/vov-sticky-notes
+publisher: vovsoft
+name: Vov Sticky Notes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovStickyNotes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovStickyNotes
+identifiers:
+- winget: VovSoft.VovStickyNotes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VovStickyNotes
+aliases: []

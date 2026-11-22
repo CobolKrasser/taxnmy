@@ -1,0 +1,12 @@
+key: vovsoft/external-link-detector
+publisher: vovsoft
+name: Vovsoft External Link Detector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ExternalLinkDetector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ExternalLinkDetector
+identifiers:
+- winget: VovSoft.ExternalLinkDetector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ExternalLinkDetector
+aliases:
+- vovsoft/vovsoft-external-link-detector

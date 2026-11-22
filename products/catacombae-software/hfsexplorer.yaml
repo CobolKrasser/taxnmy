@@ -1,0 +1,11 @@
+key: catacombae-software/hfsexplorer
+publisher: catacombae-software
+name: HFSExplorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catacombae/HFSExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catacombae/HFSExplorer
+identifiers:
+- winget: Catacombae.HFSExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Catacombae/HFSExplorer
+aliases: []

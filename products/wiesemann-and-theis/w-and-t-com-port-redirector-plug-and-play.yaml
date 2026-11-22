@@ -1,0 +1,11 @@
+key: wiesemann-and-theis/w-and-t-com-port-redirector-plug-and-play
+publisher: wiesemann-and-theis
+name: W&T COM Port Redirector Plug & Play
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/Com-PnP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/Com-PnP
+identifiers:
+- winget: Wiesemann-Theis.Com-PnP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/Com-PnP
+aliases: []

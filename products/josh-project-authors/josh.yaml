@@ -1,0 +1,11 @@
+key: josh-project-authors/josh
+publisher: josh-project-authors
+name: Josh
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JoshProject/Josh
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JoshProject/Josh
+identifiers:
+- winget: JoshProject.Josh
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JoshProject/Josh
+aliases: []

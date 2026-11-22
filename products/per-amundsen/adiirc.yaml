@@ -1,0 +1,11 @@
+key: per-amundsen/adiirc
+publisher: per-amundsen
+name: AdiIRC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerAmundsen/AdiIRC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerAmundsen/AdiIRC
+identifiers:
+- winget: PerAmundsen.AdiIRC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PerAmundsen/AdiIRC
+aliases: []

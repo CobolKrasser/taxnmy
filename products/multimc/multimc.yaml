@@ -1,0 +1,11 @@
+key: multimc/multimc
+publisher: multimc
+name: MultiMC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MultiMC/MultiMC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MultiMC/MultiMC
+identifiers:
+- winget: MultiMC.MultiMC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MultiMC/MultiMC
+aliases: []

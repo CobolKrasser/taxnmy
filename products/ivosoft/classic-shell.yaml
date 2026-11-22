@@ -1,0 +1,11 @@
+key: ivosoft/classic-shell
+publisher: ivosoft
+name: Classic Shell
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IvoSoft/ClassicShell
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IvoSoft/ClassicShell
+identifiers:
+- winget: IvoSoft.ClassicShell
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IvoSoft/ClassicShell
+aliases: []

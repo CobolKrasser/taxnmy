@@ -1,0 +1,11 @@
+key: zagrios/bsmanager
+publisher: zagrios
+name: BSManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zagrios/BSManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zagrios/BSManager
+identifiers:
+- winget: Zagrios.BSManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zagrios/BSManager
+aliases: []

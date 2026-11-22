@@ -1,0 +1,11 @@
+key: ipu/cooltools
+publisher: ipu
+name: CoolTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/CoolTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/CoolTools
+identifiers:
+- winget: IPU.CoolTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/CoolTools
+aliases: []

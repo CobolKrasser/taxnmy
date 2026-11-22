@@ -1,0 +1,13 @@
+key: herdr/herdr
+publisher: herdr
+name: herdr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/Herdr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/Herdr
+identifiers:
+- winget: Herdr.Herdr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/Herdr
+- winget: Herdr.Herdr.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Herdr/Herdr/Preview
+aliases: []

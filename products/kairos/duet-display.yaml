@@ -1,0 +1,11 @@
+key: kairos/duet-display
+publisher: kairos
+name: Duet Display
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kairos/DuetDisplay
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kairos/DuetDisplay
+identifiers:
+- winget: Kairos.DuetDisplay
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kairos/DuetDisplay
+aliases: []

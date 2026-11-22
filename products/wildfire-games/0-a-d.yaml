@@ -1,0 +1,11 @@
+key: wildfire-games/0-a-d
+publisher: wildfire-games
+name: 0 A.D.
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WildfireGames/0AD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WildfireGames/0AD
+identifiers:
+- winget: WildfireGames.0AD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WildfireGames/0AD
+aliases: []

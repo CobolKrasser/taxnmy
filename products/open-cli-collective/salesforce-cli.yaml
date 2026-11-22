@@ -1,0 +1,11 @@
+key: open-cli-collective/salesforce-cli
+publisher: open-cli-collective
+name: Salesforce CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/salesforce-cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/salesforce-cli
+identifiers:
+- winget: OpenCLICollective.salesforce-cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenCLICollective/salesforce-cli
+aliases: []

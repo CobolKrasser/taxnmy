@@ -1,0 +1,11 @@
+key: sol-pbc/solstone
+publisher: sol-pbc
+name: solstone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/solpbc/Solstone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/solpbc/Solstone
+identifiers:
+- winget: solpbc.Solstone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/solpbc/Solstone
+aliases: []

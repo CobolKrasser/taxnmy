@@ -1,0 +1,11 @@
+key: dzonder/sshells
+publisher: dzonder
+name: SSHells
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dzonder/sshells
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dzonder/sshells
+identifiers:
+- winget: dzonder.sshells
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dzonder/sshells
+aliases: []

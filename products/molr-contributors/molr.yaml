@@ -1,0 +1,11 @@
+key: molr-contributors/molr
+publisher: molr-contributors
+name: Molr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/molr-ai/Molr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/molr-ai/Molr
+identifiers:
+- winget: molr-ai.Molr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/molr-ai/Molr
+aliases: []

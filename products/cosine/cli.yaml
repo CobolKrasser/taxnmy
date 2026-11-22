@@ -1,0 +1,11 @@
+key: cosine/cli
+publisher: cosine
+name: CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cosine/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cosine/CLI
+identifiers:
+- winget: Cosine.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cosine/CLI
+aliases: []

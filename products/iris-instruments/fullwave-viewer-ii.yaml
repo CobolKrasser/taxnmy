@@ -1,0 +1,11 @@
+key: iris-instruments/fullwave-viewer-ii
+publisher: iris-instruments
+name: FullWave Viewer II
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/FullWaveViewerII
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/FullWaveViewerII
+identifiers:
+- winget: IrisInstruments.FullWaveViewerII
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/FullWaveViewerII
+aliases: []

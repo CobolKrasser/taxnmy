@@ -1,0 +1,11 @@
+key: softsea/djvu-viewer
+publisher: softsea
+name: DjVu Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DjVuViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DjVuViewer
+identifiers:
+- winget: SoftSea.DjVuViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/DjVuViewer
+aliases: []

@@ -1,0 +1,11 @@
+key: smartsheet/smartsheet
+publisher: smartsheet
+name: Smartsheet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartsheet/Smartsheet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartsheet/Smartsheet
+identifiers:
+- winget: Smartsheet.Smartsheet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smartsheet/Smartsheet
+aliases: []

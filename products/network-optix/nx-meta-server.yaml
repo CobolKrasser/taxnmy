@@ -1,0 +1,11 @@
+key: network-optix/nx-meta-server
+publisher: network-optix
+name: Nx Meta Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Server
+identifiers:
+- winget: NetworkOptix.NxMeta.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Server
+aliases: []

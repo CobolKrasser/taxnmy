@@ -1,0 +1,12 @@
+key: vovsoft/auto-mouse-clicker
+publisher: vovsoft
+name: Vovsoft Auto Mouse Clicker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AutoMouseClicker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AutoMouseClicker
+identifiers:
+- winget: VovSoft.AutoMouseClicker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/AutoMouseClicker
+aliases:
+- vovsoft/vovsoft-auto-mouse-clicker

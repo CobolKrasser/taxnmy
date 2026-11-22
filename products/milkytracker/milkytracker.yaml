@@ -1,0 +1,11 @@
+key: milkytracker/milkytracker
+publisher: milkytracker
+name: MilkyTracker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MilkyTracker/MilkyTracker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MilkyTracker/MilkyTracker
+identifiers:
+- winget: MilkyTracker.MilkyTracker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MilkyTracker/MilkyTracker
+aliases: []

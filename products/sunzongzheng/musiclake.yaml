@@ -1,0 +1,11 @@
+key: sunzongzheng/musiclake
+publisher: sunzongzheng
+name: MusicLake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sunzongzheng/music
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sunzongzheng/music
+identifiers:
+- winget: sunzongzheng.music
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sunzongzheng/music
+aliases: []

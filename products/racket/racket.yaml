@@ -1,0 +1,11 @@
+key: racket/racket
+publisher: racket
+name: Racket
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Racket/Racket
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Racket/Racket
+identifiers:
+- winget: Racket.Racket
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Racket/Racket
+aliases: []

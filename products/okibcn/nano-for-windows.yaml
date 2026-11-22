@@ -1,0 +1,11 @@
+key: okibcn/nano-for-windows
+publisher: okibcn
+name: nano for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okibcn/nano
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okibcn/nano
+identifiers:
+- winget: okibcn.nano
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/okibcn/nano
+aliases: []

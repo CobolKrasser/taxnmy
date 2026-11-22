@@ -1,0 +1,11 @@
+key: compusolve/minutetraq
+publisher: compusolve
+name: MinuteTraq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IQM2/MinuteTraq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IQM2/MinuteTraq
+identifiers:
+- winget: IQM2.MinuteTraq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IQM2/MinuteTraq
+aliases: []

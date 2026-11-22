@@ -1,0 +1,11 @@
+key: softwareok/this-is-my-file
+publisher: softwareok
+name: This Is My File
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/ThisIsMyFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/ThisIsMyFile
+identifiers:
+- winget: SoftwareOK.ThisIsMyFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareOK/ThisIsMyFile
+aliases: []

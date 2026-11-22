@@ -1,0 +1,11 @@
+key: timus-networks/timus-connect
+publisher: timus-networks
+name: Timus Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timus/TimusConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timus/TimusConnect
+identifiers:
+- winget: Timus.TimusConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timus/TimusConnect
+aliases: []

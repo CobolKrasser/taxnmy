@@ -1,0 +1,11 @@
+key: rob-walsh/bertbrowser
+publisher: rob-walsh
+name: BertBrowser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobWalsh/BertBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobWalsh/BertBrowser
+identifiers:
+- winget: RobWalsh.BertBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobWalsh/BertBrowser
+aliases: []

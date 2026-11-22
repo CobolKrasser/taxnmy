@@ -1,0 +1,11 @@
+key: appit/videodownloader
+publisher: appit
+name: VideoDownloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APPIT/VideoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APPIT/VideoDownloader
+identifiers:
+- winget: APPIT.VideoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/APPIT/VideoDownloader
+aliases: []

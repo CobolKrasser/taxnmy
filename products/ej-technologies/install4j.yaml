@@ -1,0 +1,15 @@
+key: ej-technologies/install4j
+publisher: ej-technologies
+name: install4j
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/install4j/9
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/install4j/9
+identifiers:
+- winget: ej-technologies.install4j.10
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/install4j/10
+- winget: ej-technologies.install4j.11
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/install4j/11
+- winget: ej-technologies.install4j.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ej-technologies/install4j/9
+aliases: []

@@ -1,0 +1,11 @@
+key: rclone-manager/rclone-manager
+publisher: rclone-manager
+name: RClone Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RClone-Manager/rclone-manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RClone-Manager/rclone-manager
+identifiers:
+- winget: RClone-Manager.rclone-manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RClone-Manager/rclone-manager
+aliases: []

@@ -1,0 +1,11 @@
+key: krowork/krowork
+publisher: krowork
+name: KroWork
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuaishou/KroWork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuaishou/KroWork
+identifiers:
+- winget: Kuaishou.KroWork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kuaishou/KroWork
+aliases: []

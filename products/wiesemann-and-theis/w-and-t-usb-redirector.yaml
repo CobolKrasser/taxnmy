@@ -1,0 +1,11 @@
+key: wiesemann-and-theis/w-and-t-usb-redirector
+publisher: wiesemann-and-theis
+name: W&T USB Redirector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/USB-Redirector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/USB-Redirector
+identifiers:
+- winget: Wiesemann-Theis.USB-Redirector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wiesemann-Theis/USB-Redirector
+aliases: []

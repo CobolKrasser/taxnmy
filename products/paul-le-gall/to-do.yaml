@@ -1,0 +1,11 @@
+key: paul-le-gall/to-do
+publisher: paul-le-gall
+name: To Do
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/luapp/ToDo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/luapp/ToDo
+identifiers:
+- winget: luapp.ToDo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/luapp/ToDo
+aliases: []

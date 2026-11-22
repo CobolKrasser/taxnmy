@@ -1,0 +1,12 @@
+key: vovsoft/webcam-motion-detector
+publisher: vovsoft
+name: Vovsoft Webcam Motion Detector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebcamMotionDetector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebcamMotionDetector
+identifiers:
+- winget: VovSoft.WebcamMotionDetector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/WebcamMotionDetector
+aliases:
+- vovsoft/vovsoft-webcam-motion-detector

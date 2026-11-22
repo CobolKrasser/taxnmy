@@ -1,0 +1,13 @@
+key: librepcb-developers/librepcb
+publisher: librepcb-developers
+name: LibrePCB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrePCB/LibrePCB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrePCB/LibrePCB
+identifiers:
+- winget: LibrePCB.LibrePCB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrePCB/LibrePCB
+- winget: LibrePCB.LibrePCB.Preview
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibrePCB/LibrePCB/Preview
+aliases: []

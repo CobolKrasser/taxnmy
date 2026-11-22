@@ -1,0 +1,11 @@
+key: microsoft/xbox-live-developer-tools
+publisher: microsoft
+name: Xbox Live Developer Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/XboxLiveDeveloperTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/XboxLiveDeveloperTools
+identifiers:
+- winget: Microsoft.Gaming.XboxLiveDeveloperTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Gaming/XboxLiveDeveloperTools
+aliases: []

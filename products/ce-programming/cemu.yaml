@@ -1,0 +1,11 @@
+key: ce-programming/cemu
+publisher: ce-programming
+name: CEmu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CE-Programming/CEmu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CE-Programming/CEmu
+identifiers:
+- winget: CE-Programming.CEmu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CE-Programming/CEmu
+aliases: []

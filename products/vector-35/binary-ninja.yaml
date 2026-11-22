@@ -1,0 +1,11 @@
+key: vector-35/binary-ninja
+publisher: vector-35
+name: Binary Ninja
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vector35/BinaryNinja
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vector35/BinaryNinja
+identifiers:
+- winget: Vector35.BinaryNinja
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vector35/BinaryNinja
+aliases: []

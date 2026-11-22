@@ -1,0 +1,11 @@
+key: pasteintofile/paste-into-file
+publisher: pasteintofile
+name: Paste Into File
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteIntoFile/PasteIntoFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteIntoFile/PasteIntoFile
+identifiers:
+- winget: PasteIntoFile.PasteIntoFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PasteIntoFile/PasteIntoFile
+aliases: []

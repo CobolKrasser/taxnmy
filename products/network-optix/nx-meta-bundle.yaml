@@ -1,0 +1,11 @@
+key: network-optix/nx-meta-bundle
+publisher: network-optix
+name: Nx Meta Bundle
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Bundle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Bundle
+identifiers:
+- winget: NetworkOptix.NxMeta.Bundle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetworkOptix/NxMeta/Bundle
+aliases: []

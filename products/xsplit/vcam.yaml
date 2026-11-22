@@ -1,0 +1,12 @@
+key: xsplit/vcam
+publisher: xsplit
+name: XSplit VCam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitVCam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitVCam
+identifiers:
+- winget: SplitmediaLabs.XSplitVCam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitVCam
+aliases:
+- xsplit/xsplit-vcam

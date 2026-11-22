@@ -1,0 +1,11 @@
+key: thomas-gossler/outlook-calendar-sync
+publisher: thomas-gossler
+name: Outlook Calendar Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThomasGossler/OutlookCalendarSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThomasGossler/OutlookCalendarSync
+identifiers:
+- winget: ThomasGossler.OutlookCalendarSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThomasGossler/OutlookCalendarSync
+aliases: []

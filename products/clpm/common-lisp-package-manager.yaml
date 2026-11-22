@@ -1,0 +1,11 @@
+key: clpm/common-lisp-package-manager
+publisher: clpm
+name: Common Lisp Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLPM/CLPM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLPM/CLPM
+identifiers:
+- winget: CLPM.CLPM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CLPM/CLPM
+aliases: []

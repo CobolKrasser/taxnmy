@@ -1,0 +1,11 @@
+key: andrey-borodin/progtv
+publisher: andrey-borodin
+name: ProgTV
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgTV/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgTV/3
+identifiers:
+- winget: Prog.ProgTV.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Prog/ProgTV/3
+aliases: []

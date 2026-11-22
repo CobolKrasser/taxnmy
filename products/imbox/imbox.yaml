@@ -1,0 +1,11 @@
+key: imbox/imbox
+publisher: imbox
+name: ImBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImBox/ImBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImBox/ImBox
+identifiers:
+- winget: ImBox.ImBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImBox/ImBox
+aliases: []

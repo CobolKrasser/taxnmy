@@ -1,0 +1,12 @@
+key: ia/writer
+publisher: ia
+name: iA Writer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iA/iAWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iA/iAWriter
+identifiers:
+- winget: iA.iAWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iA/iAWriter
+aliases:
+- ia/ia-writer

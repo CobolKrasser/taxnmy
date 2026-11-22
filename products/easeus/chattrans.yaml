@@ -1,0 +1,12 @@
+key: easeus/chattrans
+publisher: easeus
+name: EaseUS ChatTrans
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/ChatTrans
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/ChatTrans
+identifiers:
+- winget: EaseUS.ChatTrans
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EaseUS/ChatTrans
+aliases:
+- easeus/easeus-chattrans

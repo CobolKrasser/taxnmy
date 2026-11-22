@@ -1,0 +1,12 @@
+key: tinysa/app
+publisher: tinysa
+name: tinySA-App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tinySA/tinySA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tinySA/tinySA
+identifiers:
+- winget: tinySA.tinySA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tinySA/tinySA
+aliases:
+- tinysa/tinysa-app

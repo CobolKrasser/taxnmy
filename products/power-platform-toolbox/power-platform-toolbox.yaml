@@ -1,0 +1,11 @@
+key: power-platform-toolbox/power-platform-toolbox
+publisher: power-platform-toolbox
+name: Power Platform ToolBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerPlatformToolBox/PowerPlatformToolBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerPlatformToolBox/PowerPlatformToolBox
+identifiers:
+- winget: PowerPlatformToolBox.PowerPlatformToolBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerPlatformToolBox/PowerPlatformToolBox
+aliases: []

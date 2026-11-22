@@ -1,0 +1,11 @@
+key: technobo/tcno-account-switcher
+publisher: technobo
+name: TcNo Account Switcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechNobo/TcNoAccountSwitcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechNobo/TcNoAccountSwitcher
+identifiers:
+- winget: TechNobo.TcNoAccountSwitcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TechNobo/TcNoAccountSwitcher
+aliases: []

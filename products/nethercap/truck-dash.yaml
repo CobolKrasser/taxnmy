@@ -1,0 +1,11 @@
+key: nethercap/truck-dash
+publisher: nethercap
+name: Truck Dash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethercap/TruckDash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethercap/TruckDash
+identifiers:
+- winget: Nethercap.TruckDash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nethercap/TruckDash
+aliases: []

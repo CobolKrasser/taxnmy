@@ -1,0 +1,11 @@
+key: streamhush/streamhush
+publisher: streamhush
+name: StreamHush
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StreamHush/StreamHush
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StreamHush/StreamHush
+identifiers:
+- winget: StreamHush.StreamHush
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StreamHush/StreamHush
+aliases: []

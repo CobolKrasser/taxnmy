@@ -1,0 +1,11 @@
+key: hidecode365/winlauncher
+publisher: hidecode365
+name: WinLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hidecode365/WinLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hidecode365/WinLauncher
+identifiers:
+- winget: hidecode365.WinLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hidecode365/WinLauncher
+aliases: []

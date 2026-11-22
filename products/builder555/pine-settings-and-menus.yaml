@@ -1,0 +1,11 @@
+key: builder555/pine-settings-and-menus
+publisher: builder555
+name: Pine Settings and Menus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/builder555/PineSAM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/builder555/PineSAM
+identifiers:
+- winget: builder555.PineSAM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/builder555/PineSAM
+aliases: []

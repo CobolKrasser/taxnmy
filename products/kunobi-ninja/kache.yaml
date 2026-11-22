@@ -1,0 +1,13 @@
+key: kunobi-ninja/kache
+publisher: kunobi-ninja
+name: kache
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kache
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kache
+identifiers:
+- winget: kunobi-ninja.kache
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kache
+- winget: kunobi-ninja.kache.Unstable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/kunobi-ninja/kache/Unstable
+aliases: []

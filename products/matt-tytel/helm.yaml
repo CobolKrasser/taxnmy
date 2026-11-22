@@ -1,0 +1,11 @@
+key: matt-tytel/helm
+publisher: matt-tytel
+name: Helm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MattTytel/Helm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MattTytel/Helm
+identifiers:
+- winget: MattTytel.Helm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MattTytel/Helm
+aliases: []

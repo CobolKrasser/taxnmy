@@ -1,0 +1,11 @@
+key: mlt-hub/ard
+publisher: mlt-hub
+name: ard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlt-hub/ard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlt-hub/ard
+identifiers:
+- winget: mlt-hub.ard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mlt-hub/ard
+aliases: []

@@ -1,0 +1,11 @@
+key: modelmaker-tools/simplemind-pro
+publisher: modelmaker-tools
+name: SimpleMind Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModelMakerTools/SimpleMindPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModelMakerTools/SimpleMindPro
+identifiers:
+- winget: ModelMakerTools.SimpleMindPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/ModelMakerTools/SimpleMindPro
+aliases: []

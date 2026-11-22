@@ -1,0 +1,11 @@
+key: druva-technologies/adconnector
+publisher: druva-technologies
+name: ADConnector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Druva/ADConnector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Druva/ADConnector
+identifiers:
+- winget: Druva.ADConnector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Druva/ADConnector
+aliases: []

@@ -1,0 +1,11 @@
+key: gezip/kbintake
+publisher: gezip
+name: KBIntake
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeziP/KBIntake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeziP/KBIntake
+identifiers:
+- winget: GeziP.KBIntake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeziP/KBIntake
+aliases: []

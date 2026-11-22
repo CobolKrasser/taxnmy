@@ -1,0 +1,11 @@
+key: arnica/depsguard
+publisher: arnica
+name: DepsGuard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arnica/DepsGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arnica/DepsGuard
+identifiers:
+- winget: Arnica.DepsGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Arnica/DepsGuard
+aliases: []

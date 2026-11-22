@@ -1,0 +1,12 @@
+key: gnuwin32/cpio
+publisher: gnuwin32
+name: 'GnuWin32: Cpio'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Cpio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Cpio
+identifiers:
+- winget: GnuWin32.Cpio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Cpio
+aliases:
+- gnuwin32/gnuwin32-cpio

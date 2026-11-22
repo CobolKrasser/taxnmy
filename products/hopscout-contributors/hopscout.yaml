@@ -1,0 +1,11 @@
+key: hopscout-contributors/hopscout
+publisher: hopscout-contributors
+name: hopscout
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABowlOfEleven/hopscout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABowlOfEleven/hopscout
+identifiers:
+- winget: ABowlOfEleven.hopscout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABowlOfEleven/hopscout
+aliases: []

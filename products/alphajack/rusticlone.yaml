@@ -1,0 +1,11 @@
+key: alphajack/rusticlone
+publisher: alphajack
+name: rusticlone
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlphaJack/Rusticlone
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlphaJack/Rusticlone
+identifiers:
+- winget: AlphaJack.Rusticlone
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AlphaJack/Rusticlone
+aliases: []

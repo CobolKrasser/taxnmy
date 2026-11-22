@@ -1,0 +1,11 @@
+key: june-fabrics-technology/pdanet-plus
+publisher: june-fabrics-technology
+name: PdaNet+
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JuneFabrics/PdaNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JuneFabrics/PdaNet
+identifiers:
+- winget: JuneFabrics.PdaNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JuneFabrics/PdaNet
+aliases: []

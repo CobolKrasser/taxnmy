@@ -1,0 +1,11 @@
+key: sirius/sirius
+publisher: sirius
+name: SIRIUS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiriusMS/SIRIUS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiriusMS/SIRIUS
+identifiers:
+- winget: SiriusMS.SIRIUS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SiriusMS/SIRIUS
+aliases: []

@@ -1,0 +1,11 @@
+key: creality/crstudio
+publisher: creality
+name: CRStudio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CRStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CRStudio
+identifiers:
+- winget: Creality.CRStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Creality/CRStudio
+aliases: []

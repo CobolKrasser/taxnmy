@@ -1,0 +1,11 @@
+key: aurelien-gateau/pixel-wheels
+publisher: aurelien-gateau
+name: Pixel Wheels
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agateau/PixelWheels
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agateau/PixelWheels
+identifiers:
+- winget: agateau.PixelWheels
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agateau/PixelWheels
+aliases: []

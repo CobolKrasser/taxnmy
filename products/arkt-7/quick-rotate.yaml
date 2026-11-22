@@ -1,0 +1,11 @@
+key: arkt-7/quick-rotate
+publisher: arkt-7
+name: Quick Rotate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArKT-7/QuickRotate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArKT-7/QuickRotate
+identifiers:
+- winget: ArKT-7.QuickRotate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArKT-7/QuickRotate
+aliases: []

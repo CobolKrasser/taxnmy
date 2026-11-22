@@ -1,0 +1,12 @@
+key: morningstar/direct-prerequisite
+publisher: morningstar
+name: Morningstar Direct Prerequisite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morningstar/MorningstarDirectPrerequisite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morningstar/MorningstarDirectPrerequisite
+identifiers:
+- winget: Morningstar.MorningstarDirectPrerequisite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Morningstar/MorningstarDirectPrerequisite
+aliases:
+- morningstar/morningstar-direct-prerequisite

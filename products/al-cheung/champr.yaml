@@ -1,0 +1,11 @@
+key: al-cheung/champr
+publisher: al-cheung
+name: ChampR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cangzhang/champ-r
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cangzhang/champ-r
+identifiers:
+- winget: cangzhang.champ-r
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cangzhang/champ-r
+aliases: []

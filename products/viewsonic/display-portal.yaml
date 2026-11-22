@@ -1,0 +1,11 @@
+key: viewsonic/display-portal
+publisher: viewsonic
+name: Display Portal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/DisplayPortal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/DisplayPortal
+identifiers:
+- winget: ViewSonic.DisplayPortal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/DisplayPortal
+aliases: []

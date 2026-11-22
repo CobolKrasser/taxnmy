@@ -1,0 +1,11 @@
+key: tweaking-technologies/tweakshot-screen-capture
+publisher: tweaking-technologies
+name: TweakShot Screen Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TweakingTechnologies/TweakShotScreenCapture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TweakingTechnologies/TweakShotScreenCapture
+identifiers:
+- winget: TweakingTechnologies.TweakShotScreenCapture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TweakingTechnologies/TweakShotScreenCapture
+aliases: []

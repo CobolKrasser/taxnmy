@@ -1,0 +1,11 @@
+key: theloop705/nova
+publisher: theloop705
+name: Nova
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheLoop705/NovaIPTV
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheLoop705/NovaIPTV
+identifiers:
+- winget: TheLoop705.NovaIPTV
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TheLoop705/NovaIPTV
+aliases: []

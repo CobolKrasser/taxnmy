@@ -1,0 +1,11 @@
+key: balanceballs/nekot
+publisher: balanceballs
+name: Nekot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BalanceBalls/Nekot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BalanceBalls/Nekot
+identifiers:
+- winget: BalanceBalls.Nekot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BalanceBalls/Nekot
+aliases: []

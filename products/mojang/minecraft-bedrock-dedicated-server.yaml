@@ -1,0 +1,11 @@
+key: mojang/minecraft-bedrock-dedicated-server
+publisher: mojang
+name: Minecraft Bedrock Dedicated Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mojang/BedrockDedicatedServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mojang/BedrockDedicatedServer
+identifiers:
+- winget: Mojang.BedrockDedicatedServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mojang/BedrockDedicatedServer
+aliases: []

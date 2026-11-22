@@ -1,0 +1,12 @@
+key: vovsoft/vcf-to-xls-converter
+publisher: vovsoft
+name: Vovsoft VCF to XLS Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoXLSConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoXLSConverter
+identifiers:
+- winget: VovSoft.VCFtoXLSConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/VCFtoXLSConverter
+aliases:
+- vovsoft/vovsoft-vcf-to-xls-converter

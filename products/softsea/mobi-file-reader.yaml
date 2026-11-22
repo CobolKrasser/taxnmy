@@ -1,0 +1,11 @@
+key: softsea/mobi-file-reader
+publisher: softsea
+name: Mobi File Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MobiFileReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MobiFileReader
+identifiers:
+- winget: SoftSea.MobiFileReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/MobiFileReader
+aliases: []

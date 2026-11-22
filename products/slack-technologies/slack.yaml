@@ -1,0 +1,11 @@
+key: slack-technologies/slack
+publisher: slack-technologies
+name: Slack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackTechnologies/Slack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackTechnologies/Slack
+identifiers:
+- winget: SlackTechnologies.Slack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SlackTechnologies/Slack
+aliases: []

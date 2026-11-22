@@ -1,0 +1,11 @@
+key: 34u/multibasecs-server-deprecated
+publisher: 34u
+name: MultiBaseCS Server (Deprecated)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/34u/MultiBaseCSServer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/34u/MultiBaseCSServer
+identifiers:
+- winget: 34u.MultiBaseCSServer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/34u/MultiBaseCSServer
+aliases: []

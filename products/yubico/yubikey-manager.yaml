@@ -1,0 +1,11 @@
+key: yubico/yubikey-manager
+publisher: yubico
+name: YubiKey Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubikeyManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubikeyManager
+identifiers:
+- winget: Yubico.YubikeyManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yubico/YubikeyManager
+aliases: []

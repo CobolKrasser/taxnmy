@@ -1,0 +1,12 @@
+key: gnuwin32/gzip
+publisher: gnuwin32
+name: 'GnuWin32: Gzip'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Gzip
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Gzip
+identifiers:
+- winget: GnuWin32.Gzip
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Gzip
+aliases:
+- gnuwin32/gnuwin32-gzip

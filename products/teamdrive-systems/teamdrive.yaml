@@ -1,0 +1,11 @@
+key: teamdrive-systems/teamdrive
+publisher: teamdrive-systems
+name: TeamDrive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamDriveSystems/TeamDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamDriveSystems/TeamDrive
+identifiers:
+- winget: TeamDriveSystems.TeamDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamDriveSystems/TeamDrive
+aliases: []

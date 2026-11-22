@@ -1,0 +1,11 @@
+key: jackson-khasky/steamlibrarylauncher
+publisher: jackson-khasky
+name: SteamLibraryLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jack/SteamLibraryLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jack/SteamLibraryLauncher
+identifiers:
+- winget: Jack.SteamLibraryLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jack/SteamLibraryLauncher
+aliases: []

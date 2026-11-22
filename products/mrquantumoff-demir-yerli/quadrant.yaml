@@ -1,0 +1,11 @@
+key: mrquantumoff-demir-yerli/quadrant
+publisher: mrquantumoff-demir-yerli
+name: Quadrant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuadrantMC/Quadrant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuadrantMC/Quadrant
+identifiers:
+- winget: QuadrantMC.Quadrant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuadrantMC/Quadrant
+aliases: []

@@ -1,0 +1,11 @@
+key: megadev/plitch
+publisher: megadev
+name: PLITCH
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MegaDev/PLITCH
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MegaDev/PLITCH
+identifiers:
+- winget: MegaDev.PLITCH
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MegaDev/PLITCH
+aliases: []

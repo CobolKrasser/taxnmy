@@ -1,0 +1,11 @@
+key: team-adfreehaven-jalap-group/cloudserverpc
+publisher: team-adfreehaven-jalap-group
+name: CloudServerPC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jalapGroup/CloudServerPC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jalapGroup/CloudServerPC
+identifiers:
+- winget: jalapGroup.CloudServerPC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jalapGroup/CloudServerPC
+aliases: []

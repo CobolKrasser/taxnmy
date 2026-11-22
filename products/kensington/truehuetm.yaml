@@ -1,0 +1,12 @@
+key: kensington/truehuetm
+publisher: kensington
+name: Kensington TrueHue™
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/TrueHue
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/TrueHue
+identifiers:
+- winget: Kensington.TrueHue
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/TrueHue
+aliases:
+- kensington/kensington-truehuetm

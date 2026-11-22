@@ -1,0 +1,11 @@
+key: tritium-legal-technologies/tritium
+publisher: tritium-legal-technologies
+name: Tritium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TritiumLegal/Tritium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TritiumLegal/Tritium
+identifiers:
+- winget: TritiumLegal.Tritium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TritiumLegal/Tritium
+aliases: []

@@ -1,0 +1,12 @@
+key: cyotek/color-palette-editor
+publisher: cyotek
+name: Cyotek Color Palette Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/ColorPaletteEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/ColorPaletteEditor
+identifiers:
+- winget: Cyotek.ColorPaletteEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cyotek/ColorPaletteEditor
+aliases:
+- cyotek/cyotek-color-palette-editor

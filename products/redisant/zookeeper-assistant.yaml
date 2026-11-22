@@ -1,0 +1,11 @@
+key: redisant/zookeeper-assistant
+publisher: redisant
+name: ZooKeeper Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ZooKeeperAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ZooKeeperAssistant
+identifiers:
+- winget: Redisant.ZooKeeperAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/ZooKeeperAssistant
+aliases: []

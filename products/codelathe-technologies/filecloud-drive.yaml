@@ -1,0 +1,11 @@
+key: codelathe-technologies/filecloud-drive
+publisher: codelathe-technologies
+name: FileCloud Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileCloud/FileCloudDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileCloud/FileCloudDrive
+identifiers:
+- winget: FileCloud.FileCloudDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FileCloud/FileCloudDrive
+aliases: []

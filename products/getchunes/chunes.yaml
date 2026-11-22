@@ -1,0 +1,11 @@
+key: getchunes/chunes
+publisher: getchunes
+name: Chunes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getchunes/Chunes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getchunes/Chunes
+identifiers:
+- winget: getchunes.Chunes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/getchunes/Chunes
+aliases: []

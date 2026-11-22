@@ -1,0 +1,11 @@
+key: bricklink/studio
+publisher: bricklink
+name: Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/Studio
+identifiers:
+- winget: BrickLink.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrickLink/Studio
+aliases: []

@@ -1,0 +1,12 @@
+key: unity/devops-version-control
+publisher: unity
+name: Unity DevOps Version Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codice/PlasticSCM/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codice/PlasticSCM/Enterprise
+identifiers:
+- winget: Codice.PlasticSCM.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Codice/PlasticSCM/Enterprise
+aliases:
+- unity/unity-devops-version-control

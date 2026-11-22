@@ -1,0 +1,11 @@
+key: marbou92/ffx-compatibility-tool
+publisher: marbou92
+name: FFX Compatibility Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Marbou92/FFXCompatibilityTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Marbou92/FFXCompatibilityTool
+identifiers:
+- winget: Marbou92.FFXCompatibilityTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Marbou92/FFXCompatibilityTool
+aliases: []

@@ -1,0 +1,11 @@
+key: puredev-software/10x
+publisher: puredev-software
+name: 10x
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PureDevSoftware/10x
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PureDevSoftware/10x
+identifiers:
+- winget: PureDevSoftware.10x
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PureDevSoftware/10x
+aliases: []

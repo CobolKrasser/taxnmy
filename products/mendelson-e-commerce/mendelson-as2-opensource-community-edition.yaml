@@ -1,0 +1,11 @@
+key: mendelson-e-commerce/mendelson-as2-opensource-community-edition
+publisher: mendelson-e-commerce
+name: mendelson AS2 (OpenSource Community Edition)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mendelson/AS2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mendelson/AS2
+identifiers:
+- winget: mendelson.AS2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mendelson/AS2
+aliases: []

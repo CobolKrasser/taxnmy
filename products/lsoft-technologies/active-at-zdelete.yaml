@@ -1,0 +1,11 @@
+key: lsoft-technologies/active-at-zdelete
+publisher: lsoft-technologies
+name: Active@ ZDelete
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveZDelete
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveZDelete
+identifiers:
+- winget: LSoftTechnologies.ActiveZDelete
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LSoftTechnologies/ActiveZDelete
+aliases: []

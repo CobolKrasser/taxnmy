@@ -1,0 +1,11 @@
+key: czech-educational-and-research-network/ultragrid
+publisher: czech-educational-and-research-network
+name: UltraGrid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CESNET/UltraGrid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CESNET/UltraGrid
+identifiers:
+- winget: CESNET.UltraGrid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CESNET/UltraGrid
+aliases: []

@@ -1,0 +1,11 @@
+key: oneworks-ai/oneworks
+publisher: oneworks-ai
+name: OneWorks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneWorks/OneWorks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneWorks/OneWorks
+identifiers:
+- winget: OneWorks.OneWorks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OneWorks/OneWorks
+aliases: []

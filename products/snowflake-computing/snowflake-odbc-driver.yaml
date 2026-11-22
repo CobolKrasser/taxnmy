@@ -1,0 +1,11 @@
+key: snowflake-computing/snowflake-odbc-driver
+publisher: snowflake-computing
+name: Snowflake ODBC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/OdbcDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/OdbcDriver
+identifiers:
+- winget: Snowflake.OdbcDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snowflake/OdbcDriver
+aliases: []

@@ -1,0 +1,11 @@
+key: binarymark/batch-encoding-converter-free-edition
+publisher: binarymark
+name: Batch Encoding Converter Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchEncodingConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchEncodingConverter
+identifiers:
+- winget: BinaryMark.BatchEncodingConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchEncodingConverter
+aliases: []

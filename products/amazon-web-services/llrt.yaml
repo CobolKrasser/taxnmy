@@ -1,0 +1,11 @@
+key: amazon-web-services/llrt
+publisher: amazon-web-services
+name: LLRT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/LLRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/LLRT
+identifiers:
+- winget: Amazon.LLRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/LLRT
+aliases: []

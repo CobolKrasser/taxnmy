@@ -1,0 +1,11 @@
+key: yamaha/musicsoft-downloader
+publisher: yamaha
+name: Musicsoft Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/MusicsoftDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/MusicsoftDownloader
+identifiers:
+- winget: Yamaha.MusicsoftDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yamaha/MusicsoftDownloader
+aliases: []

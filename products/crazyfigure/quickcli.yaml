@@ -1,0 +1,11 @@
+key: crazyfigure/quickcli
+publisher: crazyfigure
+name: QuickCli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/QuickCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/QuickCli
+identifiers:
+- winget: CrazyFigure.QuickCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrazyFigure/QuickCli
+aliases: []

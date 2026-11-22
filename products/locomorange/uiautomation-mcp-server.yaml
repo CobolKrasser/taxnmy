@@ -1,0 +1,11 @@
+key: locomorange/uiautomation-mcp-server
+publisher: locomorange
+name: UIAutomation MCP Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locomorange/UIAutomationMCP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locomorange/UIAutomationMCP
+identifiers:
+- winget: Locomorange.UIAutomationMCP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locomorange/UIAutomationMCP
+aliases: []

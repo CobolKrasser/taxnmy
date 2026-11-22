@@ -1,0 +1,12 @@
+key: screencloud/player
+publisher: screencloud
+name: ScreenCloud Player
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenCloud/ScreenCloudPlayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenCloud/ScreenCloudPlayer
+identifiers:
+- winget: ScreenCloud.ScreenCloudPlayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScreenCloud/ScreenCloudPlayer
+aliases:
+- screencloud/screencloud-player

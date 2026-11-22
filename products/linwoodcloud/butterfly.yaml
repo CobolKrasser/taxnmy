@@ -1,0 +1,13 @@
+key: linwoodcloud/butterfly
+publisher: linwoodcloud
+name: Butterfly
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodCloud/Butterfly
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodCloud/Butterfly
+identifiers:
+- winget: LinwoodCloud.Butterfly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodCloud/Butterfly
+- winget: LinwoodCloud.Butterfly.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LinwoodCloud/Butterfly/Nightly
+aliases: []

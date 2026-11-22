@@ -1,0 +1,11 @@
+key: gittuf/gittuf
+publisher: gittuf
+name: gittuf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gittuf/gittuf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gittuf/gittuf
+identifiers:
+- winget: gittuf.gittuf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gittuf/gittuf
+aliases: []

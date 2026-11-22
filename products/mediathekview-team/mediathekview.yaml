@@ -1,0 +1,11 @@
+key: mediathekview-team/mediathekview
+publisher: mediathekview-team
+name: MediathekView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediathekViewTeam/MediathekView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediathekViewTeam/MediathekView
+identifiers:
+- winget: MediathekViewTeam.MediathekView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediathekViewTeam/MediathekView
+aliases: []

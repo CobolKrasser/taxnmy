@@ -1,0 +1,11 @@
+key: forecaster-cyber/picaso-open-source
+publisher: forecaster-cyber
+name: Picaso - Open Source
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForecasterCyber/Picaso
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForecasterCyber/Picaso
+identifiers:
+- winget: ForecasterCyber.Picaso
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/ForecasterCyber/Picaso
+aliases: []

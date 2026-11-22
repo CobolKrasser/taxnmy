@@ -1,0 +1,11 @@
+key: evandro-araujo/sshfs-win-manager
+publisher: evandro-araujo
+name: SSHFS-Win Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/evsar3/sshfs-win-manager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/evsar3/sshfs-win-manager
+identifiers:
+- winget: evsar3.sshfs-win-manager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/evsar3/sshfs-win-manager
+aliases: []

@@ -1,0 +1,12 @@
+key: pinner/cli
+publisher: pinner
+name: Pinner CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinner/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinner/Cli
+identifiers:
+- winget: Pinner.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pinner/Cli
+aliases:
+- pinner/pinner-cli

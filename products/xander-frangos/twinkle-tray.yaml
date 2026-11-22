@@ -1,0 +1,11 @@
+key: xander-frangos/twinkle-tray
+publisher: xander-frangos
+name: Twinkle Tray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xanderfrangos/twinkletray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xanderfrangos/twinkletray
+identifiers:
+- winget: xanderfrangos.twinkletray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xanderfrangos/twinkletray
+aliases: []

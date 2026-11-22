@@ -1,0 +1,11 @@
+key: domcyrus/rustnet
+publisher: domcyrus
+name: RustNet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/domcyrus/RustNet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/domcyrus/RustNet
+identifiers:
+- winget: domcyrus.RustNet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/domcyrus/RustNet
+aliases: []

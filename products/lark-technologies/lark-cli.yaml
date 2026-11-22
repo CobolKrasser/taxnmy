@@ -1,0 +1,11 @@
+key: lark-technologies/lark-cli
+publisher: lark-technologies
+name: Lark CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/LarkCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/LarkCLI
+identifiers:
+- winget: ByteDance.LarkCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/LarkCLI
+aliases: []

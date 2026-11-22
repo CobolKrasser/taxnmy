@@ -1,0 +1,11 @@
+key: novicon/munixo-client
+publisher: novicon
+name: munixo Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novicon/Munixo/Client
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novicon/Munixo/Client
+identifiers:
+- winget: Novicon.Munixo.Client
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Novicon/Munixo/Client
+aliases: []

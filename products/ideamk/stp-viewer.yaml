@@ -1,0 +1,11 @@
+key: ideamk/stp-viewer
+publisher: ideamk
+name: STP Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/STPViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/STPViewer
+identifiers:
+- winget: IdeaMK.STPViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/STPViewer
+aliases: []

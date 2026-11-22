@@ -1,0 +1,11 @@
+key: miktex-org/miktex
+publisher: miktex-org
+name: MiKTeX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiKTeX/MiKTeX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiKTeX/MiKTeX
+identifiers:
+- winget: MiKTeX.MiKTeX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiKTeX/MiKTeX
+aliases: []

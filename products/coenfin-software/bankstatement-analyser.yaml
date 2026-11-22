@@ -1,0 +1,11 @@
+key: coenfin-software/bankstatement-analyser
+publisher: coenfin-software
+name: BankStatement Analyser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/BankStatementAnalyser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/BankStatementAnalyser
+identifiers:
+- winget: CoenFin.BankStatementAnalyser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoenFin/BankStatementAnalyser
+aliases: []

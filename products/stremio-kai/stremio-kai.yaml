@@ -1,0 +1,11 @@
+key: stremio-kai/stremio-kai
+publisher: stremio-kai
+name: Stremio Kai
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Allecsc/StremioKai
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Allecsc/StremioKai
+identifiers:
+- winget: Allecsc.StremioKai
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Allecsc/StremioKai
+aliases: []

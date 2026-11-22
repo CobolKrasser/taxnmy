@@ -1,0 +1,11 @@
+key: mujx/nheko
+publisher: mujx
+name: Nheko
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NhekoReborn/Nheko
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NhekoReborn/Nheko
+identifiers:
+- winget: NhekoReborn.Nheko
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NhekoReborn/Nheko
+aliases: []

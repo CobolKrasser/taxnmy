@@ -8,4 +8,14 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:canonical:ubuntu_linux
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:o:canonical:ubuntu_linux&resultsPerPage=1
+- winget: Canonical.Ubuntu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Ubuntu
+- winget: Canonical.Ubuntu.1804
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Ubuntu/1804
+- winget: Canonical.Ubuntu.2004
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Ubuntu/2004
+- winget: Canonical.Ubuntu.2204
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Ubuntu/2204
+- winget: Canonical.Ubuntu.2404
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Canonical/Ubuntu/2404
 aliases: []

@@ -1,0 +1,11 @@
+key: flowy-ai/flowy-aipc
+publisher: flowy-ai
+name: Flowy AIPC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlowyAI/Flowy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlowyAI/Flowy
+identifiers:
+- winget: FlowyAI.Flowy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlowyAI/Flowy
+aliases: []

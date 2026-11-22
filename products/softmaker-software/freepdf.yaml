@@ -1,0 +1,11 @@
+key: softmaker-software/freepdf
+publisher: softmaker-software
+name: FreePDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftMaker/FreePDF
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftMaker/FreePDF
+identifiers:
+- winget: SoftMaker.FreePDF
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftMaker/FreePDF
+aliases: []

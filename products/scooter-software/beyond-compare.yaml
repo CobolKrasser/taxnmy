@@ -1,0 +1,13 @@
+key: scooter-software/beyond-compare
+publisher: scooter-software
+name: Beyond Compare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScooterSoftware/BeyondCompare/4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScooterSoftware/BeyondCompare/4
+identifiers:
+- winget: ScooterSoftware.BeyondCompare.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScooterSoftware/BeyondCompare/4
+- winget: ScooterSoftware.BeyondCompare.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScooterSoftware/BeyondCompare/5
+aliases: []

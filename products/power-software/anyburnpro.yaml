@@ -1,0 +1,11 @@
+key: power-software/anyburnpro
+publisher: power-software
+name: AnyBurnPro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerSoftware/AnyBurn/Pro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerSoftware/AnyBurn/Pro
+identifiers:
+- winget: PowerSoftware.AnyBurn.Pro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PowerSoftware/AnyBurn/Pro
+aliases: []

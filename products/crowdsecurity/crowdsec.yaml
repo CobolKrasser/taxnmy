@@ -1,0 +1,11 @@
+key: crowdsecurity/crowdsec
+publisher: crowdsecurity
+name: CrowdSec
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdSecurity/CrowdSec
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdSecurity/CrowdSec
+identifiers:
+- winget: CrowdSecurity.CrowdSec
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdSecurity/CrowdSec
+aliases: []

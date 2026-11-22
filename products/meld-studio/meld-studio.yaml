@@ -1,0 +1,11 @@
+key: meld-studio/meld-studio
+publisher: meld-studio
+name: Meld Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeldStudio/MeldStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeldStudio/MeldStudio
+identifiers:
+- winget: MeldStudio.MeldStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeldStudio/MeldStudio
+aliases: []

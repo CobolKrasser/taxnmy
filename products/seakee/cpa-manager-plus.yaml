@@ -1,0 +1,11 @@
+key: seakee/cpa-manager-plus
+publisher: seakee
+name: CPA Manager Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seakee/CPAManagerPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seakee/CPAManagerPlus
+identifiers:
+- winget: seakee.CPAManagerPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/seakee/CPAManagerPlus
+aliases: []

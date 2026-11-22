@@ -1,0 +1,11 @@
+key: alexander-birkner/kubyl
+publisher: alexander-birkner
+name: Kubyl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirknerAlex/Kubyl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirknerAlex/Kubyl
+identifiers:
+- winget: BirknerAlex.Kubyl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BirknerAlex/Kubyl
+aliases: []

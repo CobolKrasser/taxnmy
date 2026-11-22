@@ -1,0 +1,11 @@
+key: ivan-zahariev/izarc-command-line-add-on
+publisher: ivan-zahariev
+name: IZArc Command Line Add-On
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IZArc/IZArcCommandLineAddon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IZArc/IZArcCommandLineAddon
+identifiers:
+- winget: IZArc.IZArcCommandLineAddon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IZArc/IZArcCommandLineAddon
+aliases: []

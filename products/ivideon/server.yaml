@@ -1,0 +1,12 @@
+key: ivideon/server
+publisher: ivideon
+name: Ivideon Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivideon/Ivideon/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivideon/Ivideon/Server
+identifiers:
+- winget: Ivideon.Ivideon.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Ivideon/Ivideon/Server
+aliases:
+- ivideon/ivideon-server

@@ -1,0 +1,11 @@
+key: bestrui/octopus
+publisher: bestrui
+name: Octopus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BESTRUI/Octopus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BESTRUI/Octopus
+identifiers:
+- winget: BESTRUI.Octopus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BESTRUI/Octopus
+aliases: []

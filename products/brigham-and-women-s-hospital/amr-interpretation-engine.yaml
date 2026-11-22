@@ -1,0 +1,11 @@
+key: brigham-and-women-s-hospital/amr-interpretation-engine
+publisher: brigham-and-women-s-hospital
+name: AMR Interpretation Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/AMRIE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/AMRIE
+identifiers:
+- winget: WHONET.AMRIE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WHONET/AMRIE
+aliases: []

@@ -1,0 +1,11 @@
+key: ams-software/photoworks
+publisher: ams-software
+name: PhotoWorks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoWorks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoWorks
+identifiers:
+- winget: AMSSoftware.PhotoWorks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AMSSoftware/PhotoWorks
+aliases: []

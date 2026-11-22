@@ -1,0 +1,11 @@
+key: lunasans/n-mailclient
+publisher: lunasans
+name: N-MailClient
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunasans/NMailClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunasans/NMailClient
+identifiers:
+- winget: Lunasans.NMailClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lunasans/NMailClient
+aliases: []

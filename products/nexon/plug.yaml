@@ -1,0 +1,12 @@
+key: nexon/plug
+publisher: nexon
+name: Nexon Plug
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexon/NexonPlug
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexon/NexonPlug
+identifiers:
+- winget: Nexon.NexonPlug
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nexon/NexonPlug
+aliases:
+- nexon/nexon-plug

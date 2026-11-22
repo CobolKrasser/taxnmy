@@ -1,0 +1,11 @@
+key: the-gramps-project/grampsaio
+publisher: the-gramps-project
+name: GrampsAIO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gramps/Gramps
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gramps/Gramps
+identifiers:
+- winget: Gramps.Gramps
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gramps/Gramps
+aliases: []

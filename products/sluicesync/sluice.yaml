@@ -1,0 +1,11 @@
+key: sluicesync/sluice
+publisher: sluicesync
+name: sluice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sluicesync/sluice
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sluicesync/sluice
+identifiers:
+- winget: sluicesync.sluice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sluicesync/sluice
+aliases: []

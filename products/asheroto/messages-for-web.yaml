@@ -1,0 +1,11 @@
+key: asheroto/messages-for-web
+publisher: asheroto
+name: Messages for Web
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asheroto/MessagesforWeb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asheroto/MessagesforWeb
+identifiers:
+- winget: asheroto.MessagesforWeb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/asheroto/MessagesforWeb
+aliases: []

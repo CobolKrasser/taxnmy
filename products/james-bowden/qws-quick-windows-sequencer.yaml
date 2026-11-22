@@ -1,0 +1,11 @@
+key: james-bowden/qws-quick-windows-sequencer
+publisher: james-bowden
+name: QWS Quick Windows Sequencer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jamesbowden/qws
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jamesbowden/qws
+identifiers:
+- winget: jamesbowden.qws
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jamesbowden/qws
+aliases: []

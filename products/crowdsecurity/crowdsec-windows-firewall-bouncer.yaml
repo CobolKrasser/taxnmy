@@ -1,0 +1,11 @@
+key: crowdsecurity/crowdsec-windows-firewall-bouncer
+publisher: crowdsecurity
+name: CrowdSec Windows Firewall Bouncer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdSecurity/CrowdSecWindowsFirewallBouncer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdSecurity/CrowdSecWindowsFirewallBouncer
+identifiers:
+- winget: CrowdSecurity.CrowdSecWindowsFirewallBouncer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrowdSecurity/CrowdSecWindowsFirewallBouncer
+aliases: []

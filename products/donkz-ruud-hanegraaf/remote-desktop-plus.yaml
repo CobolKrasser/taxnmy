@@ -1,0 +1,11 @@
+key: donkz-ruud-hanegraaf/remote-desktop-plus
+publisher: donkz-ruud-hanegraaf
+name: Remote Desktop Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Donkz/RemoteDesktopPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Donkz/RemoteDesktopPlus
+identifiers:
+- winget: Donkz.RemoteDesktopPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Donkz/RemoteDesktopPlus
+aliases: []

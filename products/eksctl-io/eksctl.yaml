@@ -1,0 +1,11 @@
+key: eksctl-io/eksctl
+publisher: eksctl-io
+name: eksctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eksctl/eksctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eksctl/eksctl
+identifiers:
+- winget: eksctl.eksctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eksctl/eksctl
+aliases: []

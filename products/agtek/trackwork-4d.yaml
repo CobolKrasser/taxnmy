@@ -1,0 +1,12 @@
+key: agtek/trackwork-4d
+publisher: agtek
+name: AGTEK Trackwork 4D
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/Trackwork
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/Trackwork
+identifiers:
+- winget: AGTEK.Trackwork
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AGTEK/Trackwork
+aliases:
+- agtek/agtek-trackwork-4d

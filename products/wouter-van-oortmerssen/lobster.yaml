@@ -1,0 +1,11 @@
+key: wouter-van-oortmerssen/lobster
+publisher: wouter-van-oortmerssen
+name: lobster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aardappel/lobster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aardappel/lobster
+identifiers:
+- winget: Aardappel.lobster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aardappel/lobster
+aliases: []

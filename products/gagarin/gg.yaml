@@ -1,0 +1,11 @@
+key: gagarin/gg
+publisher: gagarin
+name: gg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gagarin/gg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gagarin/gg
+identifiers:
+- winget: Gagarin.gg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gagarin/gg
+aliases: []

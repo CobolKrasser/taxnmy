@@ -1,0 +1,11 @@
+key: general-outline/outline
+publisher: general-outline
+name: Outline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralOutline/Outline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralOutline/Outline
+identifiers:
+- winget: GeneralOutline.Outline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralOutline/Outline
+aliases: []

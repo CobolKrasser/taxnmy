@@ -1,0 +1,11 @@
+key: eligian-labs/piicrawler-cli
+publisher: eligian-labs
+name: PIICrawler CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EligianLabs/PIICrawlerCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EligianLabs/PIICrawlerCLI
+identifiers:
+- winget: EligianLabs.PIICrawlerCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EligianLabs/PIICrawlerCLI
+aliases: []

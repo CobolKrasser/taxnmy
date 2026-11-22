@@ -1,0 +1,11 @@
+key: cypherix-software/decypherit
+publisher: cypherix-software
+name: DeCypherIt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/DeCypherIT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/DeCypherIT
+identifiers:
+- winget: Cypherix.DeCypherIT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cypherix/DeCypherIT
+aliases: []

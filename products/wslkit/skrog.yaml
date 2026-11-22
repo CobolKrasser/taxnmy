@@ -1,0 +1,11 @@
+key: wslkit/skrog
+publisher: wslkit
+name: Skrog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wslkit/skrog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wslkit/skrog
+identifiers:
+- winget: wslkit.skrog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wslkit/skrog
+aliases: []

@@ -1,0 +1,11 @@
+key: theron-spiegl/winage
+publisher: theron-spiegl
+name: winage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spieglt/winage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spieglt/winage
+identifiers:
+- winget: spieglt.winage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/spieglt/winage
+aliases: []

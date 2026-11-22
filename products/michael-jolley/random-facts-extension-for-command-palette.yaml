@@ -1,0 +1,11 @@
+key: michael-jolley/random-facts-extension-for-command-palette
+publisher: michael-jolley
+name: Random facts extension for Command Palette
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MichaelJolley/RandomFactsForCmdPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MichaelJolley/RandomFactsForCmdPal
+identifiers:
+- winget: MichaelJolley.RandomFactsForCmdPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MichaelJolley/RandomFactsForCmdPal
+aliases: []

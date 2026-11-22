@@ -1,0 +1,11 @@
+key: cloud-imperium-games/rsi-launcher
+publisher: cloud-imperium-games
+name: RSI Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudImperiumGames/RSILauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudImperiumGames/RSILauncher
+identifiers:
+- winget: CloudImperiumGames.RSILauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudImperiumGames/RSILauncher
+aliases: []

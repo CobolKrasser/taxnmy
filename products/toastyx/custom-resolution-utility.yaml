@@ -1,0 +1,11 @@
+key: toastyx/custom-resolution-utility
+publisher: toastyx
+name: Custom Resolution Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToastyX/CustomResolutionUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToastyX/CustomResolutionUtility
+identifiers:
+- winget: ToastyX.CustomResolutionUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToastyX/CustomResolutionUtility
+aliases: []

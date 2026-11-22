@@ -1,0 +1,11 @@
+key: pcgen-project/pcgen
+publisher: pcgen-project
+name: PCGen
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCGen/PCGen
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCGen/PCGen
+identifiers:
+- winget: PCGen.PCGen
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PCGen/PCGen
+aliases: []

@@ -1,0 +1,13 @@
+key: the-alire-developers/alire
+publisher: the-alire-developers
+name: Alire
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaLang/Alire
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaLang/Alire
+identifiers:
+- winget: AdaLang.Alire
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaLang/Alire
+- winget: AdaLang.Alire.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdaLang/Alire/Portable
+aliases: []

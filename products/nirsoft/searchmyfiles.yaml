@@ -1,0 +1,11 @@
+key: nirsoft/searchmyfiles
+publisher: nirsoft
+name: SearchMyFiles
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/SearchMyFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/SearchMyFiles
+identifiers:
+- winget: NirSoft.SearchMyFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/SearchMyFiles
+aliases: []

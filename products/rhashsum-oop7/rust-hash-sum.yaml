@@ -1,0 +1,11 @@
+key: rhashsum-oop7/rust-hash-sum
+publisher: rhashsum-oop7
+name: Rust Hash Sum
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rhashsum/RustHashSum
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rhashsum/RustHashSum
+identifiers:
+- winget: rhashsum.RustHashSum
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/rhashsum/RustHashSum
+aliases: []

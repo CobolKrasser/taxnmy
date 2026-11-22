@@ -1,0 +1,11 @@
+key: cyclonedx-team/cyclonedx-cli
+publisher: cyclonedx-team
+name: CycloneDX CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CycloneDX/CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CycloneDX/CLI
+identifiers:
+- winget: CycloneDX.CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CycloneDX/CLI
+aliases: []

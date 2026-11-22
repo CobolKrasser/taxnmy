@@ -1,0 +1,11 @@
+key: synheart-ai/synheart
+publisher: synheart-ai
+name: Synheart
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SynheartAI/Synheart
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SynheartAI/Synheart
+identifiers:
+- winget: SynheartAI.Synheart
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SynheartAI/Synheart
+aliases: []

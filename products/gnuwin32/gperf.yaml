@@ -1,0 +1,12 @@
+key: gnuwin32/gperf
+publisher: gnuwin32
+name: 'GnuWin32: Gperf'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Gperf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Gperf
+identifiers:
+- winget: GnuWin32.Gperf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuWin32/Gperf
+aliases:
+- gnuwin32/gnuwin32-gperf

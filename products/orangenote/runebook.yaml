@@ -1,0 +1,11 @@
+key: orangenote/runebook
+publisher: orangenote
+name: RuneBook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrangeNote/RuneBook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrangeNote/RuneBook
+identifiers:
+- winget: OrangeNote.RuneBook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OrangeNote/RuneBook
+aliases: []

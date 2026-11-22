@@ -1,0 +1,12 @@
+key: wemod/beta
+publisher: wemod
+name: WeMod Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeMod/WeMod/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeMod/WeMod/Beta
+identifiers:
+- winget: WeMod.WeMod.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WeMod/WeMod/Beta
+aliases:
+- wemod/wemod-beta

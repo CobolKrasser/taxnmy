@@ -1,0 +1,11 @@
+key: librewolf/librewolf
+publisher: librewolf
+name: LibreWolf
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreWolf/LibreWolf
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreWolf/LibreWolf
+identifiers:
+- winget: LibreWolf.LibreWolf
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreWolf/LibreWolf
+aliases: []

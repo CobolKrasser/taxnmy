@@ -1,0 +1,12 @@
+key: zint/barcode-generator
+publisher: zint
+name: Zint Barcode Generator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zint/Zint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zint/Zint
+identifiers:
+- winget: Zint.Zint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zint/Zint
+aliases:
+- zint/zint-barcode-generator

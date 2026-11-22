@@ -1,0 +1,11 @@
+key: slowscript/warpinator
+publisher: slowscript
+name: Warpinator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/slowscript/Warpinator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/slowscript/Warpinator
+identifiers:
+- winget: slowscript.Warpinator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/slowscript/Warpinator
+aliases: []

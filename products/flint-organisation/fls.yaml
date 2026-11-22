@@ -1,0 +1,11 @@
+key: flint-organisation/fls
+publisher: flint-organisation
+name: fls
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Fls
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Fls
+identifiers:
+- winget: Flint.Fls
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flint/Fls
+aliases: []

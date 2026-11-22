@@ -1,0 +1,11 @@
+key: jernej-simoncic/wget
+publisher: jernej-simoncic
+name: Wget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JernejSimoncic/Wget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JernejSimoncic/Wget
+identifiers:
+- winget: JernejSimoncic.Wget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JernejSimoncic/Wget
+aliases: []

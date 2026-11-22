@@ -1,0 +1,11 @@
+key: reginald/reginald
+publisher: reginald
+name: Reginald
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reginald/Reginald
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reginald/Reginald
+identifiers:
+- winget: Reginald.Reginald
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reginald/Reginald
+aliases: []

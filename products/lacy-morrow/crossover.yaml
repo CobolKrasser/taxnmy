@@ -1,0 +1,11 @@
+key: lacy-morrow/crossover
+publisher: lacy-morrow
+name: CrossOver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LacyMorrow/CrossOver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LacyMorrow/CrossOver
+identifiers:
+- winget: LacyMorrow.CrossOver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LacyMorrow/CrossOver
+aliases: []

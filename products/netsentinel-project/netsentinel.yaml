@@ -1,0 +1,11 @@
+key: netsentinel-project/netsentinel
+publisher: netsentinel-project
+name: NetSentinel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSentinel/NetSentinel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSentinel/NetSentinel
+identifiers:
+- winget: NetSentinel.NetSentinel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSentinel/NetSentinel
+aliases: []

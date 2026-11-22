@@ -1,0 +1,11 @@
+key: genymobile/scrcpy
+publisher: genymobile
+name: scrcpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genymobile/scrcpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genymobile/scrcpy
+identifiers:
+- winget: Genymobile.scrcpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Genymobile/scrcpy
+aliases: []

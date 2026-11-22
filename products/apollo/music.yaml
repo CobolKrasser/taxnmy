@@ -1,0 +1,12 @@
+key: apollo/music
+publisher: apollo
+name: Apollo Music
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apollo/Music
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apollo/Music
+identifiers:
+- winget: Apollo.Music
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apollo/Music
+aliases:
+- apollo/apollo-music

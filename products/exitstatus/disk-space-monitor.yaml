@@ -1,0 +1,11 @@
+key: exitstatus/disk-space-monitor
+publisher: exitstatus
+name: Disk Space Monitor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExitStatus/DiskSpaceMonitor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExitStatus/DiskSpaceMonitor
+identifiers:
+- winget: ExitStatus.DiskSpaceMonitor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExitStatus/DiskSpaceMonitor
+aliases: []

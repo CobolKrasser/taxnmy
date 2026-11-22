@@ -1,0 +1,11 @@
+key: microsoft/appinstaller-file-builder
+publisher: microsoft
+name: AppInstaller File Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppInstallerFileBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppInstallerFileBuilder
+identifiers:
+- winget: Microsoft.AppInstallerFileBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/AppInstallerFileBuilder
+aliases: []

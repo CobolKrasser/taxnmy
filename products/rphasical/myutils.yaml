@@ -1,0 +1,11 @@
+key: rphasical/myutils
+publisher: rphasical
+name: MyUtils
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rphasical/MyUtils
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rphasical/MyUtils
+identifiers:
+- winget: Rphasical.MyUtils
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rphasical/MyUtils
+aliases: []

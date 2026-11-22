@@ -1,0 +1,11 @@
+key: picotorrent-contributors/picotorrent
+publisher: picotorrent-contributors
+name: PicoTorrent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicoTorrent/PicoTorrent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicoTorrent/PicoTorrent
+identifiers:
+- winget: PicoTorrent.PicoTorrent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PicoTorrent/PicoTorrent
+aliases: []

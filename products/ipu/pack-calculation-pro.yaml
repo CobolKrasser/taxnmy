@@ -1,0 +1,11 @@
+key: ipu/pack-calculation-pro
+publisher: ipu
+name: Pack Calculation Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/PackCalculationPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/PackCalculationPro
+identifiers:
+- winget: IPU.PackCalculationPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IPU/PackCalculationPro
+aliases: []

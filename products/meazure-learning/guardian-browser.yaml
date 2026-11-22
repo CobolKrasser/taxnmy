@@ -1,0 +1,11 @@
+key: meazure-learning/guardian-browser
+publisher: meazure-learning
+name: Guardian Browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meazure/GuardianBrowser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meazure/GuardianBrowser
+identifiers:
+- winget: Meazure.GuardianBrowser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Meazure/GuardianBrowser
+aliases: []

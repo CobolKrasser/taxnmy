@@ -1,0 +1,11 @@
+key: james-studer/azure-devops-project-repo-downloader
+publisher: james-studer
+name: Azure DevOps Project Repo Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevOps/BulkRepoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevOps/BulkRepoDownloader
+identifiers:
+- winget: DevOps.BulkRepoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevOps/BulkRepoDownloader
+aliases: []

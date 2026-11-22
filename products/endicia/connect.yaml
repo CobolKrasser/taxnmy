@@ -1,0 +1,12 @@
+key: endicia/connect
+publisher: endicia
+name: Endicia Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Endicia/EndiciaConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Endicia/EndiciaConnect
+identifiers:
+- winget: Endicia.EndiciaConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Endicia/EndiciaConnect
+aliases:
+- endicia/endicia-connect

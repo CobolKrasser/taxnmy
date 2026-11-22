@@ -1,0 +1,11 @@
+key: general-arcade/sdl2-gamepad-tool
+publisher: general-arcade
+name: SDL2 Gamepad Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralArcade/SDL2GamepadTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralArcade/SDL2GamepadTool
+identifiers:
+- winget: GeneralArcade.SDL2GamepadTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeneralArcade/SDL2GamepadTool
+aliases: []

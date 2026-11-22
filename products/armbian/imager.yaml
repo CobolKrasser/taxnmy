@@ -1,0 +1,12 @@
+key: armbian/imager
+publisher: armbian
+name: Armbian Imager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/armbian/imager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/armbian/imager
+identifiers:
+- winget: armbian.imager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/armbian/imager
+aliases:
+- armbian/armbian-imager

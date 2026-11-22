@@ -1,0 +1,12 @@
+key: datto/windows-agent
+publisher: datto
+name: Datto Windows Agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/WindowsAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/WindowsAgent
+identifiers:
+- winget: Datto.WindowsAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Datto/WindowsAgent
+aliases:
+- datto/datto-windows-agent

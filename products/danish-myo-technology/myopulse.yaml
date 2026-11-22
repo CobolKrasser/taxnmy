@@ -1,0 +1,11 @@
+key: danish-myo-technology/myopulse
+publisher: danish-myo-technology
+name: MyoPULSE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoPULSE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoPULSE
+identifiers:
+- winget: DMT.MyoPULSE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DMT/MyoPULSE
+aliases: []

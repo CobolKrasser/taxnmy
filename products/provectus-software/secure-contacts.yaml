@@ -1,0 +1,11 @@
+key: provectus-software/secure-contacts
+publisher: provectus-software
+name: Secure Contacts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/SecureContacts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/SecureContacts
+identifiers:
+- winget: PVS.SecureContacts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PVS/SecureContacts
+aliases: []

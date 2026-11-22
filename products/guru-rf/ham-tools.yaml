@@ -1,0 +1,11 @@
+key: guru-rf/ham-tools
+publisher: guru-rf
+name: ham-tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru-RF/ham-tools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru-RF/ham-tools
+identifiers:
+- winget: Guru-RF.ham-tools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Guru-RF/ham-tools
+aliases: []

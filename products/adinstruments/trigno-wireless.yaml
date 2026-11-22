@@ -1,0 +1,12 @@
+key: adinstruments/trigno-wireless
+publisher: adinstruments
+name: ADInstruments Trigno Wireless
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/TrignoWireless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/TrignoWireless
+identifiers:
+- winget: ADInstruments.LabChart.DeviceEnabler.TrignoWireless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ADInstruments/LabChart/DeviceEnabler/TrignoWireless
+aliases:
+- adinstruments/adinstruments-trigno-wireless

@@ -1,0 +1,12 @@
+key: lenovo/service-bridge
+publisher: lenovo
+name: Lenovo Service Bridge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/ServiceBridge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/ServiceBridge
+identifiers:
+- winget: Lenovo.ServiceBridge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/ServiceBridge
+aliases:
+- lenovo/lenovo-service-bridge

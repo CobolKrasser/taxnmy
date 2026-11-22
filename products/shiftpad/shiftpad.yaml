@@ -1,0 +1,11 @@
+key: shiftpad/shiftpad
+publisher: shiftpad
+name: ShiftPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiftPad/ShiftPad
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiftPad/ShiftPad
+identifiers:
+- winget: ShiftPad.ShiftPad
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShiftPad/ShiftPad
+aliases: []

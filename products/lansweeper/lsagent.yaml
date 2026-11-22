@@ -1,0 +1,11 @@
+key: lansweeper/lsagent
+publisher: lansweeper
+name: LsAgent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lansweeper/LsAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lansweeper/LsAgent
+identifiers:
+- winget: Lansweeper.LsAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lansweeper/LsAgent
+aliases: []

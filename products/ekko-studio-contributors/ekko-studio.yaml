@@ -1,0 +1,11 @@
+key: ekko-studio-contributors/ekko-studio
+publisher: ekko-studio-contributors
+name: Ekko Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EKKOLearnAI/EkkoStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EKKOLearnAI/EkkoStudio
+identifiers:
+- winget: EKKOLearnAI.EkkoStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EKKOLearnAI/EkkoStudio
+aliases: []

@@ -1,0 +1,11 @@
+key: chris-putnam/binmerge
+publisher: chris-putnam
+name: binmerge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/putnam/binmerge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/putnam/binmerge
+identifiers:
+- winget: putnam.binmerge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/putnam/binmerge
+aliases: []

@@ -1,0 +1,17 @@
+key: huanghongxun/hello-minecraft-launcher-dev
+publisher: huanghongxun
+name: Hello Minecraft! Launcher Dev
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Dev
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Dev
+identifiers:
+- winget: HMCL.HMCL.Dev
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Dev
+- winget: HMCL.HMCL.Dev.CNB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Dev/CNB
+- winget: HMCL.HMCL.Dev.Maven
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Dev/Maven
+- winget: HMCL.HMCL.Dev.Maven.TencentCloudMirror
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HMCL/HMCL/Dev/Maven/TencentCloudMirror
+aliases: []

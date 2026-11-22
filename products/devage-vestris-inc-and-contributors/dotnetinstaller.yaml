@@ -1,0 +1,11 @@
+key: devage-vestris-inc-and-contributors/dotnetinstaller
+publisher: devage-vestris-inc-and-contributors
+name: dotNetInstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotNetInstaller/dotNetInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotNetInstaller/dotNetInstaller
+identifiers:
+- winget: dotNetInstaller.dotNetInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotNetInstaller/dotNetInstaller
+aliases: []

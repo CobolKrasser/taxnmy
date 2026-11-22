@@ -1,0 +1,11 @@
+key: agisoft/metashape-standard
+publisher: agisoft
+name: Metashape Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agisoft/Metashape/Standard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agisoft/Metashape/Standard
+identifiers:
+- winget: Agisoft.Metashape.Standard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Agisoft/Metashape/Standard
+aliases: []

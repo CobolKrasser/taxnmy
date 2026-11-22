@@ -1,0 +1,11 @@
+key: aaa-internet-publishing/wtfast
+publisher: aaa-internet-publishing
+name: WTFast
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AAAInternetPublishing/WTFast
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AAAInternetPublishing/WTFast
+identifiers:
+- winget: AAAInternetPublishing.WTFast
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AAAInternetPublishing/WTFast
+aliases: []

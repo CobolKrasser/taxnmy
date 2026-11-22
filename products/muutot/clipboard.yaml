@@ -1,0 +1,11 @@
+key: muutot/clipboard
+publisher: muutot
+name: Clipboard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muutot/Clipboard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muutot/Clipboard
+identifiers:
+- winget: muutot.Clipboard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/muutot/Clipboard
+aliases: []

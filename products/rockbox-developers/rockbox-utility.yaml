@@ -1,0 +1,11 @@
+key: rockbox-developers/rockbox-utility
+publisher: rockbox-developers
+name: Rockbox Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rockbox/RockboxUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rockbox/RockboxUtility
+identifiers:
+- winget: Rockbox.RockboxUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rockbox/RockboxUtility
+aliases: []

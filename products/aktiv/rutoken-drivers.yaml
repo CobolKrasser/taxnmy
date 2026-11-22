@@ -1,0 +1,11 @@
+key: aktiv/rutoken-drivers
+publisher: aktiv
+name: Rutoken Drivers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AktivCo/RutokenDrivers
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AktivCo/RutokenDrivers
+identifiers:
+- winget: AktivCo.RutokenDrivers
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AktivCo/RutokenDrivers
+aliases: []

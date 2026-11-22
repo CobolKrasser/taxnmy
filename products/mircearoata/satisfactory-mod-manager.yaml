@@ -1,0 +1,11 @@
+key: mircearoata/satisfactory-mod-manager
+publisher: mircearoata
+name: Satisfactory Mod Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatisfactoryModding/SatisfactoryModManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatisfactoryModding/SatisfactoryModManager
+identifiers:
+- winget: SatisfactoryModding.SatisfactoryModManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SatisfactoryModding/SatisfactoryModManager
+aliases: []

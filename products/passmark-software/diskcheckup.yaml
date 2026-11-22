@@ -1,0 +1,11 @@
+key: passmark-software/diskcheckup
+publisher: passmark-software
+name: DiskCheckup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/DiskCheckup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/DiskCheckup
+identifiers:
+- winget: PassMark.DiskCheckup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PassMark/DiskCheckup
+aliases: []

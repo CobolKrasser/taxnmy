@@ -1,0 +1,11 @@
+key: brad-buchanan/code-org-maker-app
+publisher: brad-buchanan
+name: Code.org Maker App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeOrg/MakerApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeOrg/MakerApp
+identifiers:
+- winget: CodeOrg.MakerApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeOrg/MakerApp
+aliases: []

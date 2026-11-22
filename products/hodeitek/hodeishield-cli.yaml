@@ -1,0 +1,11 @@
+key: hodeitek/hodeishield-cli
+publisher: hodeitek
+name: HodeiShield CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hodeitek/HodeiShield
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hodeitek/HodeiShield
+identifiers:
+- winget: Hodeitek.HodeiShield
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hodeitek/HodeiShield
+aliases: []

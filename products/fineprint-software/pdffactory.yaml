@@ -1,0 +1,11 @@
+key: fineprint-software/pdffactory
+publisher: fineprint-software
+name: pdfFactory
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FineprintSoftware/pdfFactory
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FineprintSoftware/pdfFactory
+identifiers:
+- winget: FineprintSoftware.pdfFactory
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FineprintSoftware/pdfFactory
+aliases: []

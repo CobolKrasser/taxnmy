@@ -1,0 +1,11 @@
+key: bandicam/bandicam
+publisher: bandicam
+name: Bandicam
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/Bandicam
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/Bandicam
+identifiers:
+- winget: BandicamCompany.Bandicam
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/Bandicam
+aliases: []

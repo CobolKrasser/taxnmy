@@ -1,0 +1,11 @@
+key: aquashot/aquashot
+publisher: aquashot
+name: Aquashot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aquashot/Aquashot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aquashot/Aquashot
+identifiers:
+- winget: Aquashot.Aquashot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Aquashot/Aquashot
+aliases: []

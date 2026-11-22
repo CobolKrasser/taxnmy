@@ -1,0 +1,11 @@
+key: tachosys/digicentral-authenticate
+publisher: tachosys
+name: digiCentral Authenticate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiCentralAuthenticate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiCentralAuthenticate
+identifiers:
+- winget: Tachosys.digiCentralAuthenticate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tachosys/digiCentralAuthenticate
+aliases: []

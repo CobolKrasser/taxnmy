@@ -1,0 +1,12 @@
+key: vovsoft/disk-benchmark
+publisher: vovsoft
+name: Vovsoft Disk Benchmark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiskBenchmark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiskBenchmark
+identifiers:
+- winget: VovSoft.DiskBenchmark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DiskBenchmark
+aliases:
+- vovsoft/vovsoft-disk-benchmark

@@ -1,0 +1,11 @@
+key: lean-fro/elan
+publisher: lean-fro
+name: Elan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lean/Elan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lean/Elan
+identifiers:
+- winget: Lean.Elan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lean/Elan
+aliases: []

@@ -1,0 +1,11 @@
+key: herm1t/autolauncher
+publisher: herm1t
+name: AutoLauncher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/herm1t/AutoLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/herm1t/AutoLauncher
+identifiers:
+- winget: herm1t.AutoLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/herm1t/AutoLauncher
+aliases: []

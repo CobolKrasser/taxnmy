@@ -1,0 +1,11 @@
+key: anrry/opencherry-desktop
+publisher: anrry
+name: OpenCherry Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/4/4nrry/OpenCherryDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/4/4nrry/OpenCherryDesktop
+identifiers:
+- winget: 4nrry.OpenCherryDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/4/4nrry/OpenCherryDesktop
+aliases: []

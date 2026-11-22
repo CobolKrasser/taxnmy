@@ -1,0 +1,11 @@
+key: timon-kach/rapidraw
+publisher: timon-kach
+name: RapidRAW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberTimon/RapidRAW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberTimon/RapidRAW
+identifiers:
+- winget: CyberTimon.RapidRAW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberTimon/RapidRAW
+aliases: []

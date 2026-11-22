@@ -1,0 +1,11 @@
+key: zeroclaw-labs/zeroclaw
+publisher: zeroclaw-labs
+name: ZeroClaw
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroClawLabs/ZeroClaw
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroClawLabs/ZeroClaw
+identifiers:
+- winget: ZeroClawLabs.ZeroClaw
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZeroClawLabs/ZeroClaw
+aliases: []

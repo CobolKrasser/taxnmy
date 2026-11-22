@@ -1,0 +1,11 @@
+key: alice-team-carnegie-mellon-university/alice
+publisher: alice-team-carnegie-mellon-university
+name: Alice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMU/Alice/3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMU/Alice/3
+identifiers:
+- winget: CMU.Alice.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMU/Alice/3
+aliases: []

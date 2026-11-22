@@ -1,0 +1,11 @@
+key: machine-learning-group-university-of-waikato-hamilton-nz/weka
+publisher: machine-learning-group-university-of-waikato-hamilton-nz
+name: Weka
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversityOfWaikato/Weka
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversityOfWaikato/Weka
+identifiers:
+- winget: UniversityOfWaikato.Weka
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversityOfWaikato/Weka
+aliases: []

@@ -1,0 +1,11 @@
+key: gaijin-network/enlisted-launcher
+publisher: gaijin-network
+name: Enlisted Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/Enlisted
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/Enlisted
+identifiers:
+- winget: GaijinNetwork.Enlisted
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GaijinNetwork/Enlisted
+aliases: []

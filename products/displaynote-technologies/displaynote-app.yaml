@@ -1,0 +1,11 @@
+key: displaynote-technologies/displaynote-app
+publisher: displaynote-technologies
+name: DisplayNote App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayNote/PhilipsScreenShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayNote/PhilipsScreenShare
+identifiers:
+- winget: DisplayNote.PhilipsScreenShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DisplayNote/PhilipsScreenShare
+aliases: []

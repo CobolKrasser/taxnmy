@@ -1,0 +1,13 @@
+key: huawei-technologies/cangjie
+publisher: huawei-technologies
+name: Cangjie
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/LTS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/LTS
+identifiers:
+- winget: Huawei.Cangjie.LTS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/LTS
+- winget: Huawei.Cangjie.STS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/STS
+aliases: []

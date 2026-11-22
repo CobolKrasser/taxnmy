@@ -1,0 +1,11 @@
+key: bytedance/effect-house
+publisher: bytedance
+name: Effect House
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/EffectHouse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/EffectHouse
+identifiers:
+- winget: ByteDance.EffectHouse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/EffectHouse
+aliases: []

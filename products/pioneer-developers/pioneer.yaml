@@ -1,0 +1,11 @@
+key: pioneer-developers/pioneer
+publisher: pioneer-developers
+name: Pioneer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PioneerDevelopers/Pioneer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PioneerDevelopers/Pioneer
+identifiers:
+- winget: PioneerDevelopers.Pioneer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PioneerDevelopers/Pioneer
+aliases: []

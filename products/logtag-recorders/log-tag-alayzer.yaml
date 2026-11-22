@@ -1,0 +1,11 @@
+key: logtag-recorders/log-tag-alayzer
+publisher: logtag-recorders
+name: Log Tag Alayzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogTag/LogTagAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogTag/LogTagAnalyzer
+identifiers:
+- winget: LogTag.LogTagAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LogTag/LogTagAnalyzer
+aliases: []

@@ -1,0 +1,11 @@
+key: airost/remotedeck
+publisher: airost
+name: RemoteDeck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AiRost/RemoteDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AiRost/RemoteDeck
+identifiers:
+- winget: AiRost.RemoteDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AiRost/RemoteDeck
+aliases: []

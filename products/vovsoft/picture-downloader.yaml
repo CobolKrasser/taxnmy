@@ -1,0 +1,12 @@
+key: vovsoft/picture-downloader
+publisher: vovsoft
+name: Vovsoft Picture Downloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PictureDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PictureDownloader
+identifiers:
+- winget: VovSoft.PictureDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PictureDownloader
+aliases:
+- vovsoft/vovsoft-picture-downloader

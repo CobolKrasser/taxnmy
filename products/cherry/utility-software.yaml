@@ -1,0 +1,12 @@
+key: cherry/utility-software
+publisher: cherry
+name: CHERRY Utility Software
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHERRY/UTILITY
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHERRY/UTILITY
+identifiers:
+- winget: CHERRY.UTILITY
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CHERRY/UTILITY
+aliases:
+- cherry/cherry-utility-software

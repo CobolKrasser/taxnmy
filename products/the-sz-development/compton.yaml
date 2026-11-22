@@ -1,0 +1,11 @@
+key: the-sz-development/compton
+publisher: the-sz-development
+name: Compton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Compton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Compton
+identifiers:
+- winget: the-sz.Compton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Compton
+aliases: []

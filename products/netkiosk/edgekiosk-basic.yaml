@@ -1,0 +1,12 @@
+key: netkiosk/edgekiosk-basic
+publisher: netkiosk
+name: Netkiosk EdgeKiosk Basic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netkiosk/EdgeKiosk/Basic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netkiosk/EdgeKiosk/Basic
+identifiers:
+- winget: Netkiosk.EdgeKiosk.Basic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Netkiosk/EdgeKiosk/Basic
+aliases:
+- netkiosk/netkiosk-edgekiosk-basic

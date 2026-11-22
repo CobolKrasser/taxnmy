@@ -1,0 +1,11 @@
+key: dnspyex/dnspy
+publisher: dnspyex
+name: dnSpy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dnSpyEx/dnSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dnSpyEx/dnSpy
+identifiers:
+- winget: dnSpyEx.dnSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dnSpyEx/dnSpy
+aliases: []

@@ -1,0 +1,11 @@
+key: carmix/hexwalk
+publisher: carmix
+name: HexWalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carmix/HexWalk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carmix/HexWalk
+identifiers:
+- winget: Carmix.HexWalk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Carmix/HexWalk
+aliases: []

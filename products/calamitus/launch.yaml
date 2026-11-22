@@ -1,0 +1,11 @@
+key: calamitus/launch
+publisher: calamitus
+name: launch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Calamitus/Launch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Calamitus/Launch
+identifiers:
+- winget: Calamitus.Launch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Calamitus/Launch
+aliases: []

@@ -1,0 +1,11 @@
+key: sebastian-mark/wixtool-alpha-red-edition
+publisher: sebastian-mark
+name: WixTool Alpha - Red Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drsaint/WixTool/Red
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drsaint/WixTool/Red
+identifiers:
+- winget: drsaint.WixTool.Red
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/drsaint/WixTool/Red
+aliases: []

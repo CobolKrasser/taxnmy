@@ -1,0 +1,11 @@
+key: redisant/bacnet-explorer
+publisher: redisant
+name: BACnet Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/BACnetExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/BACnetExplorer
+identifiers:
+- winget: Redisant.BACnetExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/BACnetExplorer
+aliases: []

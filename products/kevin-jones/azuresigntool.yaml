@@ -1,0 +1,11 @@
+key: kevin-jones/azuresigntool
+publisher: kevin-jones
+name: AzureSignTool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcsjones/AzureSignTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcsjones/AzureSignTool
+identifiers:
+- winget: vcsjones.AzureSignTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/vcsjones/AzureSignTool
+aliases: []

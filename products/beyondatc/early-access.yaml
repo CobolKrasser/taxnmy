@@ -1,0 +1,12 @@
+key: beyondatc/early-access
+publisher: beyondatc
+name: BeyondATC Early Access
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeyondATC/Client/EarlyAccess
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeyondATC/Client/EarlyAccess
+identifiers:
+- winget: BeyondATC.Client.EarlyAccess
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeyondATC/Client/EarlyAccess
+aliases:
+- beyondatc/beyondatc-early-access

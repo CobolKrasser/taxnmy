@@ -1,0 +1,11 @@
+key: scighost/starward
+publisher: scighost
+name: Starward
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scighost/Starward
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scighost/Starward
+identifiers:
+- winget: Scighost.Starward
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scighost/Starward
+aliases: []

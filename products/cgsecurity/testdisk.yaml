@@ -1,0 +1,11 @@
+key: cgsecurity/testdisk
+publisher: cgsecurity
+name: TestDisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CGSecurity/TestDisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CGSecurity/TestDisk
+identifiers:
+- winget: CGSecurity.TestDisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CGSecurity/TestDisk
+aliases: []

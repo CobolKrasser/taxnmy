@@ -1,0 +1,12 @@
+key: webcatalog/desktop
+publisher: webcatalog
+name: WebCatalog Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/WebCatalog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/WebCatalog
+identifiers:
+- winget: WebCatalogLtd.WebCatalog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WebCatalogLtd/WebCatalog
+aliases:
+- webcatalog/webcatalog-desktop

@@ -1,0 +1,11 @@
+key: stack-holdings/caddy
+publisher: stack-holdings
+name: Caddy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaddyServer/Caddy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaddyServer/Caddy
+identifiers:
+- winget: CaddyServer.Caddy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaddyServer/Caddy
+aliases: []

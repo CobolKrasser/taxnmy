@@ -1,0 +1,12 @@
+key: tradeskillmaster/application
+publisher: tradeskillmaster
+name: TradeSkillMaster Application
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TradeSkillMaster/Application
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TradeSkillMaster/Application
+identifiers:
+- winget: TradeSkillMaster.Application
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TradeSkillMaster/Application
+aliases:
+- tradeskillmaster/tradeskillmaster-application

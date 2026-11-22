@@ -1,0 +1,11 @@
+key: excelano/xray
+publisher: excelano
+name: xray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xray
+identifiers:
+- winget: Excelano.xray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Excelano/xray
+aliases: []

@@ -1,0 +1,11 @@
+key: gruntwork/cloud-nuke
+publisher: gruntwork
+name: cloud-nuke
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gruntwork/cloud-nuke
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gruntwork/cloud-nuke
+identifiers:
+- winget: Gruntwork.cloud-nuke
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gruntwork/cloud-nuke
+aliases: []

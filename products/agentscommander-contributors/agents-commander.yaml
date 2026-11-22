@@ -1,0 +1,11 @@
+key: agentscommander-contributors/agents-commander
+publisher: agentscommander-contributors
+name: Agents Commander
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mblua/AgentsCommander
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mblua/AgentsCommander
+identifiers:
+- winget: mblua.AgentsCommander
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mblua/AgentsCommander
+aliases: []

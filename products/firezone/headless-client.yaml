@@ -1,0 +1,12 @@
+key: firezone/headless-client
+publisher: firezone
+name: Firezone Headless Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firezone/Client/Headless
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firezone/Client/Headless
+identifiers:
+- winget: Firezone.Client.Headless
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Firezone/Client/Headless
+aliases:
+- firezone/firezone-headless-client

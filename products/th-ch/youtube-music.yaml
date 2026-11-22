@@ -1,0 +1,11 @@
+key: th-ch/youtube-music
+publisher: th-ch
+name: YouTube Music
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/th-ch/YouTubeMusic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/th-ch/YouTubeMusic
+identifiers:
+- winget: th-ch.YouTubeMusic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/th-ch/YouTubeMusic
+aliases: []

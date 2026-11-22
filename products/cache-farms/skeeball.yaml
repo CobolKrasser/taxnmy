@@ -1,0 +1,11 @@
+key: cache-farms/skeeball
+publisher: cache-farms
+name: Skeeball
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CacheFarms/SkeeBall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CacheFarms/SkeeBall
+identifiers:
+- winget: CacheFarms.SkeeBall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CacheFarms/SkeeBall
+aliases: []

@@ -1,0 +1,11 @@
+key: sjoerd-langkemper/checkmate-mp3-checker
+publisher: sjoerd-langkemper
+name: Checkmate MP3 checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sjord/Checkmate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sjord/Checkmate
+identifiers:
+- winget: Sjord.Checkmate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sjord/Checkmate
+aliases: []

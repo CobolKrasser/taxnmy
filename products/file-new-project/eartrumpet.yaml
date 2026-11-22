@@ -1,0 +1,11 @@
+key: file-new-project/eartrumpet
+publisher: file-new-project
+name: EarTrumpet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/File-New-Project/EarTrumpet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/File-New-Project/EarTrumpet
+identifiers:
+- winget: File-New-Project.EarTrumpet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/File-New-Project/EarTrumpet
+aliases: []

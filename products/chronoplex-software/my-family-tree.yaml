@@ -1,0 +1,11 @@
+key: chronoplex-software/my-family-tree
+publisher: chronoplex-software
+name: My Family Tree
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChronoplexSoftware/MyFamilyTree
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChronoplexSoftware/MyFamilyTree
+identifiers:
+- winget: ChronoplexSoftware.MyFamilyTree
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChronoplexSoftware/MyFamilyTree
+aliases: []

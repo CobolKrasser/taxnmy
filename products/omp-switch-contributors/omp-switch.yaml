@@ -1,0 +1,11 @@
+key: omp-switch-contributors/omp-switch
+publisher: omp-switch-contributors
+name: OMP Switch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skh2945932142/OMPSwitch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skh2945932142/OMPSwitch
+identifiers:
+- winget: skh2945932142.OMPSwitch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/skh2945932142/OMPSwitch
+aliases: []

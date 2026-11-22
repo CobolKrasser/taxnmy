@@ -1,0 +1,11 @@
+key: opentabletdriver-developers/opentabletdriver
+publisher: opentabletdriver-developers
+name: OpenTabletDriver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTabletDriver/OpenTabletDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTabletDriver/OpenTabletDriver
+identifiers:
+- winget: OpenTabletDriver.OpenTabletDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTabletDriver/OpenTabletDriver
+aliases: []

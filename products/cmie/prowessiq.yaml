@@ -1,0 +1,11 @@
+key: cmie/prowessiq
+publisher: cmie
+name: ProwessIQ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMIE/ProwessIQ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMIE/ProwessIQ
+identifiers:
+- winget: CMIE.ProwessIQ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMIE/ProwessIQ
+aliases: []

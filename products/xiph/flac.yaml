@@ -1,0 +1,11 @@
+key: xiph/flac
+publisher: xiph
+name: FLAC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiph/FLAC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiph/FLAC
+identifiers:
+- winget: Xiph.FLAC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xiph/FLAC
+aliases: []

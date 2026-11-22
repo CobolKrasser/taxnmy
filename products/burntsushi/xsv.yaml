@@ -1,0 +1,13 @@
+key: burntsushi/xsv
+publisher: burntsushi
+name: xsv
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/xsv/GNU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/xsv/GNU
+identifiers:
+- winget: BurntSushi.xsv.GNU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/xsv/GNU
+- winget: BurntSushi.xsv.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/xsv/MSVC
+aliases: []

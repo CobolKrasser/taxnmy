@@ -1,0 +1,11 @@
+key: cryptotech/cryptocard-graphite-suite
+publisher: cryptotech
+name: CryptoCard Graphite Suite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTech/CryptoCardSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTech/CryptoCardSuite
+identifiers:
+- winget: CryptoTech.CryptoCardSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CryptoTech/CryptoCardSuite
+aliases: []

@@ -1,0 +1,12 @@
+key: intralinks/designer
+publisher: intralinks
+name: Intralinks Designer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intralinks/IntralinksDesigner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intralinks/IntralinksDesigner
+identifiers:
+- winget: Intralinks.IntralinksDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Intralinks/IntralinksDesigner
+aliases:
+- intralinks/intralinks-designer

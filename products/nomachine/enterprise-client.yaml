@@ -1,0 +1,12 @@
+key: nomachine/enterprise-client
+publisher: nomachine
+name: NoMachine Enterprise Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/EnterpriseClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/EnterpriseClient
+identifiers:
+- winget: NoMachine.NoMachine.EnterpriseClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NoMachine/NoMachine/EnterpriseClient
+aliases:
+- nomachine/nomachine-enterprise-client

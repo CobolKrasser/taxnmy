@@ -1,0 +1,12 @@
+key: vovsoft/ram-monitor-gadget
+publisher: vovsoft
+name: Vovsoft RAM Monitor Gadget
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RAMMonitorGadget
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RAMMonitorGadget
+identifiers:
+- winget: VovSoft.RAMMonitorGadget
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/RAMMonitorGadget
+aliases:
+- vovsoft/vovsoft-ram-monitor-gadget

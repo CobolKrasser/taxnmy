@@ -1,0 +1,11 @@
+key: karenware-com/karen-s-replicator
+publisher: karenware-com
+name: Karen's Replicator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KarenWare/KarensReplicator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KarenWare/KarensReplicator
+identifiers:
+- winget: KarenWare.KarensReplicator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KarenWare/KarensReplicator
+aliases: []

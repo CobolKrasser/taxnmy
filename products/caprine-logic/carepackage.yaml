@@ -1,0 +1,11 @@
+key: caprine-logic/carepackage
+publisher: caprine-logic
+name: CarePackage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaprineLogic/CarePackage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaprineLogic/CarePackage
+identifiers:
+- winget: CaprineLogic.CarePackage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CaprineLogic/CarePackage
+aliases: []

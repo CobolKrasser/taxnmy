@@ -1,0 +1,11 @@
+key: littlebitbig/displaymagiciansetup
+publisher: littlebitbig
+name: DisplayMagicianSetup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/terrymacdonald/DisplayMagician
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/terrymacdonald/DisplayMagician
+identifiers:
+- winget: terrymacdonald.DisplayMagician
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/terrymacdonald/DisplayMagician
+aliases: []

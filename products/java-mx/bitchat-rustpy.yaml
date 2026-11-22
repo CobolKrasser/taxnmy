@@ -1,0 +1,11 @@
+key: java-mx/bitchat-rustpy
+publisher: java-mx
+name: BitChat RustPy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Java-Mx/BitChat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Java-Mx/BitChat
+identifiers:
+- winget: Java-Mx.BitChat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Java-Mx/BitChat
+aliases: []

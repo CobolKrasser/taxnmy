@@ -1,0 +1,11 @@
+key: raycho/raycho
+publisher: raycho
+name: raycho
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/raycho/raycho
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/raycho/raycho
+identifiers:
+- winget: raycho.raycho
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/raycho/raycho
+aliases: []

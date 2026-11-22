@@ -1,0 +1,11 @@
+key: kls-soft/backupcraft
+publisher: kls-soft
+name: BackupCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KLSSoft/BackupCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KLSSoft/BackupCraft
+identifiers:
+- winget: KLSSoft.BackupCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KLSSoft/BackupCraft
+aliases: []

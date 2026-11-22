@@ -1,0 +1,11 @@
+key: qobuz/qobuz
+publisher: qobuz
+name: Qobuz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qobuz/Qobuz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qobuz/Qobuz
+identifiers:
+- winget: Qobuz.Qobuz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Qobuz/Qobuz
+aliases: []

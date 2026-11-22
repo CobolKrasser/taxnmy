@@ -1,0 +1,11 @@
+key: broadcast-radio/myriad-playout
+publisher: broadcast-radio
+name: Myriad Playout
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadPlayout
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadPlayout
+identifiers:
+- winget: BroadcastRadio.MyriadPlayout
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BroadcastRadio/MyriadPlayout
+aliases: []

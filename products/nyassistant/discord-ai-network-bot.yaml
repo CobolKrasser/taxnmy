@@ -1,0 +1,11 @@
+key: nyassistant/discord-ai-network-bot
+publisher: nyassistant
+name: discord-ai-network-bot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nyassistant/DiscordAiNetworkBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nyassistant/DiscordAiNetworkBot
+identifiers:
+- winget: Nyassistant.DiscordAiNetworkBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nyassistant/DiscordAiNetworkBot
+aliases: []

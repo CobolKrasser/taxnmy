@@ -1,0 +1,13 @@
+key: victorlin/everythingcmdpal
+publisher: victorlin
+name: EverythingCmdPal
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lin-ycv/EverythingCmdPal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lin-ycv/EverythingCmdPal
+identifiers:
+- winget: lin-ycv.EverythingCmdPal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lin-ycv/EverythingCmdPal
+- winget: lin-ycv.EverythingCmdPal3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/lin-ycv/EverythingCmdPal3
+aliases: []

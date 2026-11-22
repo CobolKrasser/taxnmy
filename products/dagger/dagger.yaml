@@ -1,0 +1,11 @@
+key: dagger/dagger
+publisher: dagger
+name: dagger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dagger/Cli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dagger/Cli
+identifiers:
+- winget: Dagger.Cli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dagger/Cli
+aliases: []

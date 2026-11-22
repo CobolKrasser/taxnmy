@@ -1,0 +1,11 @@
+key: redisant/etcd-assistant
+publisher: redisant
+name: Etcd Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/EtcdAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/EtcdAssistant
+identifiers:
+- winget: Redisant.EtcdAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/EtcdAssistant
+aliases: []

@@ -1,0 +1,11 @@
+key: arcana-development/adtempus-console
+publisher: arcana-development
+name: adTempus Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcanaDevelopment/adTempus/5/Console
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcanaDevelopment/adTempus/5/Console
+identifiers:
+- winget: ArcanaDevelopment.adTempus.5.Console
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArcanaDevelopment/adTempus/5/Console
+aliases: []

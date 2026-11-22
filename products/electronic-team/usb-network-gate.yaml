@@ -1,0 +1,11 @@
+key: electronic-team/usb-network-gate
+publisher: electronic-team
+name: USB Network Gate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/USBNetworkGate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/USBNetworkGate
+identifiers:
+- winget: ElectronicTeam.USBNetworkGate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElectronicTeam/USBNetworkGate
+aliases: []

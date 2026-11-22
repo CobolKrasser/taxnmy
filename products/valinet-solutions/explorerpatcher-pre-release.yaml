@@ -1,0 +1,11 @@
+key: valinet-solutions/explorerpatcher-pre-release
+publisher: valinet-solutions
+name: ExplorerPatcher Pre-Release
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/valinet/ExplorerPatcher/Prerelease
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/valinet/ExplorerPatcher/Prerelease
+identifiers:
+- winget: valinet.ExplorerPatcher.Prerelease
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/valinet/ExplorerPatcher/Prerelease
+aliases: []

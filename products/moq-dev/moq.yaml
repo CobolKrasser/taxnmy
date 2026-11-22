@@ -1,0 +1,11 @@
+key: moq-dev/moq
+publisher: moq-dev
+name: moq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moq-dev/moq
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moq-dev/moq
+identifiers:
+- winget: moq-dev.moq
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/moq-dev/moq
+aliases: []

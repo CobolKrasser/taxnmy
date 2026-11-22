@@ -1,0 +1,11 @@
+key: thales/safenet-authentication-client
+publisher: thales
+name: SafeNet Authentication Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thales/SafeNetAuthenticationClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thales/SafeNetAuthenticationClient
+identifiers:
+- winget: Thales.SafeNetAuthenticationClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thales/SafeNetAuthenticationClient
+aliases: []

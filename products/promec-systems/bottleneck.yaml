@@ -1,0 +1,11 @@
+key: promec-systems/bottleneck
+publisher: promec-systems
+name: Bottleneck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PromecSystems/Bottleneck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PromecSystems/Bottleneck
+identifiers:
+- winget: PromecSystems.Bottleneck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PromecSystems/Bottleneck
+aliases: []

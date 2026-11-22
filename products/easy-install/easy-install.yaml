@@ -1,0 +1,11 @@
+key: easy-install/easy-install
+publisher: easy-install
+name: easy-install
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/easy-install/easy-install
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/easy-install/easy-install
+identifiers:
+- winget: easy-install.easy-install
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/easy-install/easy-install
+aliases: []

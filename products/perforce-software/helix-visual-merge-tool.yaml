@@ -1,0 +1,11 @@
+key: perforce-software/helix-visual-merge-tool
+publisher: perforce-software
+name: Helix Visual Merge Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perforce/P4Merge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perforce/P4Merge
+identifiers:
+- winget: Perforce.P4Merge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Perforce/P4Merge
+aliases: []

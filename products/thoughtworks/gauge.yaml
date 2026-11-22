@@ -1,0 +1,11 @@
+key: thoughtworks/gauge
+publisher: thoughtworks
+name: Gauge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gauge/Gauge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gauge/Gauge
+identifiers:
+- winget: Gauge.Gauge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gauge/Gauge
+aliases: []

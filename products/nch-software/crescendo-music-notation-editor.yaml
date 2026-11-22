@@ -1,0 +1,11 @@
+key: nch-software/crescendo-music-notation-editor
+publisher: nch-software
+name: Crescendo Music Notation Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/Crescendo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/Crescendo
+identifiers:
+- winget: NCHSoftware.Crescendo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NCHSoftware/Crescendo
+aliases: []

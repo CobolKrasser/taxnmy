@@ -1,0 +1,11 @@
+key: uncaged/uncaged
+publisher: uncaged
+name: Uncaged
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uncaged/Uncaged
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uncaged/Uncaged
+identifiers:
+- winget: Uncaged.Uncaged
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Uncaged/Uncaged
+aliases: []

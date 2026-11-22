@@ -1,0 +1,11 @@
+key: xdpxi/sponge
+publisher: xdpxi
+name: Sponge
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xdpxi/sponge
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xdpxi/sponge
+identifiers:
+- winget: xdpxi.sponge
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xdpxi/sponge
+aliases: []

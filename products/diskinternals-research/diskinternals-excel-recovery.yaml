@@ -1,0 +1,11 @@
+key: diskinternals-research/diskinternals-excel-recovery
+publisher: diskinternals-research
+name: DiskInternals Excel Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/ExcelRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/ExcelRecovery
+identifiers:
+- winget: DiskInternals.ExcelRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DiskInternals/ExcelRecovery
+aliases: []

@@ -1,0 +1,11 @@
+key: grz-software/meshcam
+publisher: grz-software
+name: MeshCAM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRZ/MeshCAM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRZ/MeshCAM
+identifiers:
+- winget: GRZ.MeshCAM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRZ/MeshCAM
+aliases: []

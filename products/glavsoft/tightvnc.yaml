@@ -1,0 +1,11 @@
+key: glavsoft/tightvnc
+publisher: glavsoft
+name: TightVNC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlavSoft/TightVNC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlavSoft/TightVNC
+identifiers:
+- winget: GlavSoft.TightVNC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlavSoft/TightVNC
+aliases: []

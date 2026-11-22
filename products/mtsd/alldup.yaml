@@ -1,0 +1,11 @@
+key: mtsd/alldup
+publisher: mtsd
+name: AllDup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MTSD/AllDup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MTSD/AllDup
+identifiers:
+- winget: MTSD.AllDup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MTSD/AllDup
+aliases: []

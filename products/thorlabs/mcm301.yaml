@@ -1,0 +1,11 @@
+key: thorlabs/mcm301
+publisher: thorlabs
+name: MCM301
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MCM301
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MCM301
+identifiers:
+- winget: Thorlabs.MCM301
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thorlabs/MCM301
+aliases: []

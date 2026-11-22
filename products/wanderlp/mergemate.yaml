@@ -1,0 +1,11 @@
+key: wanderlp/mergemate
+publisher: wanderlp
+name: MergeMate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wanderlp/MergeMate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wanderlp/MergeMate
+identifiers:
+- winget: wanderlp.MergeMate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wanderlp/MergeMate
+aliases: []

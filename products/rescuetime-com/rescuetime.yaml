@@ -1,0 +1,11 @@
+key: rescuetime-com/rescuetime
+publisher: rescuetime-com
+name: RescueTime
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RescueTime/DesktopApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RescueTime/DesktopApp
+identifiers:
+- winget: RescueTime.DesktopApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RescueTime/DesktopApp
+aliases: []

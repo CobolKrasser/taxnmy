@@ -1,0 +1,12 @@
+key: zivver/office-plugin
+publisher: zivver
+name: Zivver Office Plugin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zivver/ZivverOfficePlugin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zivver/ZivverOfficePlugin
+identifiers:
+- winget: Zivver.ZivverOfficePlugin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zivver/ZivverOfficePlugin
+aliases:
+- zivver/zivver-office-plugin

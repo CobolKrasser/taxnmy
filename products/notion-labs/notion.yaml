@@ -1,0 +1,11 @@
+key: notion-labs/notion
+publisher: notion-labs
+name: Notion
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/Notion
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/Notion
+identifiers:
+- winget: Notion.Notion
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Notion/Notion
+aliases: []

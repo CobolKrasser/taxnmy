@@ -1,0 +1,11 @@
+key: gregthedev/minidump-explorer
+publisher: gregthedev
+name: Minidump Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregTheDev/MinidumpExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregTheDev/MinidumpExplorer
+identifiers:
+- winget: GregTheDev.MinidumpExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GregTheDev/MinidumpExplorer
+aliases: []

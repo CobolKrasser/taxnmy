@@ -1,0 +1,12 @@
+key: lenovo/system-update
+publisher: lenovo
+name: Lenovo System Update
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/SystemUpdate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/SystemUpdate
+identifiers:
+- winget: Lenovo.SystemUpdate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lenovo/SystemUpdate
+aliases:
+- lenovo/lenovo-system-update

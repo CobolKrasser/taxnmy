@@ -1,0 +1,12 @@
+key: teamgroup/ssd-s-m-a-r-t-tool
+publisher: teamgroup
+name: TeamGroup SSD S.M.A.R.T. Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamGroup/SMARTTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamGroup/SMARTTool
+identifiers:
+- winget: TeamGroup.SMARTTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamGroup/SMARTTool
+aliases:
+- teamgroup/teamgroup-ssd-s-m-a-r-t-tool

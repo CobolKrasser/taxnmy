@@ -1,0 +1,11 @@
+key: maze-mei/dx-manager
+publisher: maze-mei
+name: DX Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maze-mei/DXManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maze-mei/DXManager
+identifiers:
+- winget: maze-mei.DXManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/maze-mei/DXManager
+aliases: []

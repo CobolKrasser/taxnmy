@@ -1,0 +1,11 @@
+key: kerio-technologies/kerio-outlook-connector-offline-edition
+publisher: kerio-technologies
+name: Kerio Outlook Connector (Offline Edition)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KerioTechnologiesInc/KerioOutlookConnector/OfflineEdition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KerioTechnologiesInc/KerioOutlookConnector/OfflineEdition
+identifiers:
+- winget: KerioTechnologiesInc.KerioOutlookConnector.OfflineEdition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KerioTechnologiesInc/KerioOutlookConnector/OfflineEdition
+aliases: []

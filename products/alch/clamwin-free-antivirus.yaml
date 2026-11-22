@@ -1,0 +1,11 @@
+key: alch/clamwin-free-antivirus
+publisher: alch
+name: ClamWin Free Antivirus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClamWin/ClamWin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClamWin/ClamWin
+identifiers:
+- winget: ClamWin.ClamWin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ClamWin/ClamWin
+aliases: []

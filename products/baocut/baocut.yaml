@@ -1,0 +1,13 @@
+key: baocut/baocut
+publisher: baocut
+name: BaoCut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JimLiu/BaoCut/CPU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JimLiu/BaoCut/CPU
+identifiers:
+- winget: JimLiu.BaoCut.CPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JimLiu/BaoCut/CPU
+- winget: JimLiu.BaoCut.Vulkan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JimLiu/BaoCut/Vulkan
+aliases: []

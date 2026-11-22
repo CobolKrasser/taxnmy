@@ -1,0 +1,12 @@
+key: microsoft/gameinput
+publisher: microsoft
+name: Microsoft GameInput
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/GameInput
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/GameInput
+identifiers:
+- winget: Microsoft.GameInput
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/GameInput
+aliases:
+- microsoft/microsoft-gameinput

@@ -1,0 +1,11 @@
+key: fortran-programming-language-community/fortran-package-manager
+publisher: fortran-programming-language-community
+name: Fortran Package Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm
+identifiers:
+- winget: FortranLang.fpm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm
+aliases: []

@@ -1,0 +1,11 @@
+key: whatpulse/whatpulse
+publisher: whatpulse
+name: WhatPulse
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhatPulse/WhatPulse
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhatPulse/WhatPulse
+identifiers:
+- winget: WhatPulse.WhatPulse
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WhatPulse/WhatPulse
+aliases: []

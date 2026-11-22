@@ -1,0 +1,11 @@
+key: cumulus-mx/cumulus-mx
+publisher: cumulus-mx
+name: Cumulus MX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CumulusMX/CumulusMX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CumulusMX/CumulusMX
+identifiers:
+- winget: CumulusMX.CumulusMX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CumulusMX/CumulusMX
+aliases: []

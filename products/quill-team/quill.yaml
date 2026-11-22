@@ -1,0 +1,11 @@
+key: quill-team/quill
+publisher: quill-team
+name: Quill
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuillNotes/Quill
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuillNotes/Quill
+identifiers:
+- winget: QuillNotes.Quill
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuillNotes/Quill
+aliases: []

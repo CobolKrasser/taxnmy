@@ -1,0 +1,11 @@
+key: boris-yakubchik/video-hub-app-3-demo
+publisher: boris-yakubchik
+name: Video Hub App 3 demo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/whyboris/Video-Hub-App/Demo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/whyboris/Video-Hub-App/Demo
+identifiers:
+- winget: whyboris.Video-Hub-App.Demo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/whyboris/Video-Hub-App/Demo
+aliases: []

@@ -1,0 +1,11 @@
+key: microstockr/microstockr
+publisher: microstockr
+name: Microstockr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microstockr/Desktopapp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microstockr/Desktopapp
+identifiers:
+- winget: Microstockr.Desktopapp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microstockr/Desktopapp
+aliases: []

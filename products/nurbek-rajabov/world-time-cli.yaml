@@ -1,0 +1,11 @@
+key: nurbek-rajabov/world-time-cli
+publisher: nurbek-rajabov
+name: World Time CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorldTimeCLI/WorldTimeCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorldTimeCLI/WorldTimeCLI
+identifiers:
+- winget: WorldTimeCLI.WorldTimeCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WorldTimeCLI/WorldTimeCLI
+aliases: []

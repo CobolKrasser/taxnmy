@@ -1,0 +1,11 @@
+key: jambo/runenv-desktop
+publisher: jambo
+name: RunEnv Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JamboCompany/RunEnv
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JamboCompany/RunEnv
+identifiers:
+- winget: JamboCompany.RunEnv
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JamboCompany/RunEnv
+aliases: []

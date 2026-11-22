@@ -1,0 +1,11 @@
+key: curl/curl
+publisher: curl
+name: cURL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cURL/cURL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cURL/cURL
+identifiers:
+- winget: cURL.cURL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cURL/cURL
+aliases: []

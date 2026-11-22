@@ -1,0 +1,11 @@
+key: ansh-patel/recallos
+publisher: ansh-patel
+name: RecallOS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnshPatel/RecallOS
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnshPatel/RecallOS
+identifiers:
+- winget: AnshPatel.RecallOS
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnshPatel/RecallOS
+aliases: []

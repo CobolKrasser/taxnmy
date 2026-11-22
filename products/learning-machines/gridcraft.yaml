@@ -1,0 +1,11 @@
+key: learning-machines/gridcraft
+publisher: learning-machines
+name: GridCraft
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/GridCraft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/GridCraft
+identifiers:
+- winget: ArtCraft.GridCraft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArtCraft/GridCraft
+aliases: []

@@ -1,0 +1,11 @@
+key: autumn-bee/rustscan
+publisher: autumn-bee
+name: RustScan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bee-san/RustScan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bee-san/RustScan
+identifiers:
+- winget: bee-san.RustScan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bee-san/RustScan
+aliases: []

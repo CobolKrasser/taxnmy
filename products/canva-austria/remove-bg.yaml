@@ -1,0 +1,11 @@
+key: canva-austria/remove-bg
+publisher: canva-austria
+name: remove.bg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoveBG/RemoveBG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoveBG/RemoveBG
+identifiers:
+- winget: RemoveBG.RemoveBG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RemoveBG/RemoveBG
+aliases: []

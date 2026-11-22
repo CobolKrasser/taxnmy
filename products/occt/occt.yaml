@@ -1,0 +1,11 @@
+key: occt/occt
+publisher: occt
+name: OCCT
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCBase/OCCT/Personal
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCBase/OCCT/Personal
+identifiers:
+- winget: OCBase.OCCT.Personal
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OCBase/OCCT/Personal
+aliases: []

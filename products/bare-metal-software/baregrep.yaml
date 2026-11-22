@@ -1,0 +1,11 @@
+key: bare-metal-software/baregrep
+publisher: bare-metal-software
+name: BareGrep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/baremetalsoft/baregrep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/baremetalsoft/baregrep
+identifiers:
+- winget: baremetalsoft.baregrep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/baremetalsoft/baregrep
+aliases: []

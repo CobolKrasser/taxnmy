@@ -1,0 +1,11 @@
+key: shikechen/jwtdecoder
+publisher: shikechen
+name: JwtDecoder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShikeChen/JwtDecoder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShikeChen/JwtDecoder
+identifiers:
+- winget: ShikeChen.JwtDecoder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ShikeChen/JwtDecoder
+aliases: []

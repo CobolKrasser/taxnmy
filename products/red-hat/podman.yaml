@@ -1,0 +1,11 @@
+key: red-hat/podman
+publisher: red-hat
+name: Podman
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/Podman
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/Podman
+identifiers:
+- winget: RedHat.Podman
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedHat/Podman
+aliases: []

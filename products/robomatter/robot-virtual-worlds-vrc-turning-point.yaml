@@ -1,0 +1,11 @@
+key: robomatter/robot-virtual-worlds-vrc-turning-point
+publisher: robomatter
+name: Robot Virtual Worlds - VRC Turning Point
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/RobotVirtualWorlds/VRCTurningPoint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/RobotVirtualWorlds/VRCTurningPoint
+identifiers:
+- winget: Robomatter.RobotVirtualWorlds.VRCTurningPoint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/RobotVirtualWorlds/VRCTurningPoint
+aliases: []

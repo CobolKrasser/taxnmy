@@ -1,0 +1,11 @@
+key: raul-argente/argente-system-repair
+publisher: raul-argente
+name: Argente System Repair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SystemRepair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SystemRepair
+identifiers:
+- winget: Argente.SystemRepair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Argente/SystemRepair
+aliases: []

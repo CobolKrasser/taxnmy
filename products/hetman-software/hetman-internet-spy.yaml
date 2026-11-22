@@ -1,0 +1,11 @@
+key: hetman-software/hetman-internet-spy
+publisher: hetman-software
+name: Hetman Internet Spy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/InternetSpy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/InternetSpy
+identifiers:
+- winget: Hetman.InternetSpy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hetman/InternetSpy
+aliases: []

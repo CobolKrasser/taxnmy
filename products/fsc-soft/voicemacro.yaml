@@ -1,0 +1,11 @@
+key: fsc-soft/voicemacro
+publisher: fsc-soft
+name: VoiceMacro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FSC-SOFT/VoiceMacro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FSC-SOFT/VoiceMacro
+identifiers:
+- winget: FSC-SOFT.VoiceMacro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FSC-SOFT/VoiceMacro
+aliases: []

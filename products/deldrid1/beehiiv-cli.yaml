@@ -1,0 +1,11 @@
+key: deldrid1/beehiiv-cli
+publisher: deldrid1
+name: Beehiiv CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deldrid1/BeehiivCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deldrid1/BeehiivCLI
+identifiers:
+- winget: Deldrid1.BeehiivCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Deldrid1/BeehiivCLI
+aliases: []

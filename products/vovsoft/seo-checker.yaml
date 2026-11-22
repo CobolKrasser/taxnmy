@@ -1,0 +1,12 @@
+key: vovsoft/seo-checker
+publisher: vovsoft
+name: Vovsoft SEO Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SEOChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SEOChecker
+identifiers:
+- winget: VovSoft.SEOChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SEOChecker
+aliases:
+- vovsoft/vovsoft-seo-checker

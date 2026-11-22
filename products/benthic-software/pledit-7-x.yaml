@@ -1,0 +1,12 @@
+key: benthic-software/pledit-7-x
+publisher: benthic-software
+name: 'Benthic Software: PLEdit 7.x'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/PLEdit/7
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/PLEdit/7
+identifiers:
+- winget: BenthicSoftware.PLEdit.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenthicSoftware/PLEdit/7
+aliases:
+- benthic-software/benthic-software-pledit-7-x

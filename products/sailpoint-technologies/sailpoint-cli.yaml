@@ -1,0 +1,11 @@
+key: sailpoint-technologies/sailpoint-cli
+publisher: sailpoint-technologies
+name: SailPoint CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SailPoint/SailPointCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SailPoint/SailPointCLI
+identifiers:
+- winget: SailPoint.SailPointCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SailPoint/SailPointCLI
+aliases: []

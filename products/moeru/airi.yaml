@@ -1,0 +1,11 @@
+key: moeru/airi
+publisher: moeru
+name: AIRI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoeruAI/AIRI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoeruAI/AIRI
+identifiers:
+- winget: MoeruAI.AIRI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoeruAI/AIRI
+aliases: []

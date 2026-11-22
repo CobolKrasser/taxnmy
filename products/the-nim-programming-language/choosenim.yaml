@@ -1,0 +1,11 @@
+key: the-nim-programming-language/choosenim
+publisher: the-nim-programming-language
+name: ChooseNim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimLang/ChooseNim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimLang/ChooseNim
+identifiers:
+- winget: NimLang.ChooseNim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NimLang/ChooseNim
+aliases: []

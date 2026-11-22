@@ -1,0 +1,11 @@
+key: the-chromium-authors/chromium
+publisher: the-chromium-authors
+name: Chromium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hibbiki/Chromium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hibbiki/Chromium
+identifiers:
+- winget: Hibbiki.Chromium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hibbiki/Chromium
+aliases: []

@@ -1,0 +1,11 @@
+key: beaglesoftware/beagleeditor-toolchain
+publisher: beaglesoftware
+name: BeagleEditor Toolchain
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeagleSoftware/BeTL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeagleSoftware/BeTL
+identifiers:
+- winget: BeagleSoftware.BeTL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BeagleSoftware/BeTL
+aliases: []

@@ -1,0 +1,11 @@
+key: the-lego-group/lego-education-spiketm-legacy-app
+publisher: the-lego-group
+name: LEGO® Education SPIKE™ Legacy App
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/LEGOEducationSPIKE/Legacy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/LEGOEducationSPIKE/Legacy
+identifiers:
+- winget: LEGO.LEGOEducationSPIKE.Legacy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/LEGOEducationSPIKE/Legacy
+aliases: []

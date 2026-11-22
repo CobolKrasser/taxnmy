@@ -1,0 +1,11 @@
+key: daniel-duan/tre-command
+publisher: daniel-duan
+name: tre-command
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/duan/tre
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/duan/tre
+identifiers:
+- winget: duan.tre
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/duan/tre
+aliases: []

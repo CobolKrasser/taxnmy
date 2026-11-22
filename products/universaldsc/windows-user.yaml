@@ -1,0 +1,11 @@
+key: universaldsc/windows-user
+publisher: universaldsc
+name: Windows User
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalDsc/User
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalDsc/User
+identifiers:
+- winget: UniversalDsc.User
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UniversalDsc/User
+aliases: []

@@ -1,0 +1,11 @@
+key: spatie/ray
+publisher: spatie
+name: Ray
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spatie/Ray
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spatie/Ray
+identifiers:
+- winget: Spatie.Ray
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spatie/Ray
+aliases: []

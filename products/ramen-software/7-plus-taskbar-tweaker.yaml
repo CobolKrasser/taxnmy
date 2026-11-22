@@ -1,0 +1,11 @@
+key: ramen-software/7-plus-taskbar-tweaker
+publisher: ramen-software
+name: 7+ Taskbar Tweaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamenSoftware/7+TaskbarTweaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamenSoftware/7+TaskbarTweaker
+identifiers:
+- winget: RamenSoftware.7+TaskbarTweaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RamenSoftware/7+TaskbarTweaker
+aliases: []

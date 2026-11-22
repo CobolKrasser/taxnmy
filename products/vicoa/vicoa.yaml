@@ -1,0 +1,11 @@
+key: vicoa/vicoa
+publisher: vicoa
+name: Vicoa
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vicoa/Vicoa
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vicoa/Vicoa
+identifiers:
+- winget: Vicoa.Vicoa
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vicoa/Vicoa
+aliases: []

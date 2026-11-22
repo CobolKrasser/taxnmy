@@ -1,0 +1,11 @@
+key: aethersdr-project/aethersdr
+publisher: aethersdr-project
+name: AetherSDR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AetherSDR/AetherSDR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AetherSDR/AetherSDR
+identifiers:
+- winget: AetherSDR.AetherSDR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AetherSDR/AetherSDR
+aliases: []

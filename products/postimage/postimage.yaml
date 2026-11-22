@@ -1,0 +1,11 @@
+key: postimage/postimage
+publisher: postimage
+name: Postimage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postimage/Postimage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postimage/Postimage
+identifiers:
+- winget: Postimage.Postimage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Postimage/Postimage
+aliases: []

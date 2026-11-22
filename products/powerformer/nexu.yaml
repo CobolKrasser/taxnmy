@@ -1,0 +1,11 @@
+key: powerformer/nexu
+publisher: powerformer
+name: Nexu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Powerformer/nexu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Powerformer/nexu
+identifiers:
+- winget: Powerformer.nexu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Powerformer/nexu
+aliases: []

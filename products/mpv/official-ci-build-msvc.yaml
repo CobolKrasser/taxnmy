@@ -1,0 +1,12 @@
+key: mpv/official-ci-build-msvc
+publisher: mpv
+name: MPV (Official CI build, MSVC)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mpv-player/mpv-CI/MSVC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mpv-player/mpv-CI/MSVC
+identifiers:
+- winget: mpv-player.mpv-CI.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mpv-player/mpv-CI/MSVC
+aliases:
+- mpv/mpv-official-ci-build-msvc

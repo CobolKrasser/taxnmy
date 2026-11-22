@@ -1,0 +1,11 @@
+key: danilo-bargen/tealdeer
+publisher: danilo-bargen
+name: tealdeer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbrgn/tealdeer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbrgn/tealdeer
+identifiers:
+- winget: dbrgn.tealdeer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbrgn/tealdeer
+aliases: []

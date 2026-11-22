@@ -1,0 +1,11 @@
+key: curl/trurl
+publisher: curl
+name: trurl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cURL/trurl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cURL/trurl
+identifiers:
+- winget: cURL.trurl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cURL/trurl
+aliases: []

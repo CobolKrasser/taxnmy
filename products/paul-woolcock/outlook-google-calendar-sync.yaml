@@ -1,0 +1,13 @@
+key: paul-woolcock/outlook-google-calendar-sync
+publisher: paul-woolcock
+name: Outlook Google Calendar Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulWoolcock/SyncOutlookandGooglecalendars
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulWoolcock/SyncOutlookandGooglecalendars
+identifiers:
+- winget: PaulWoolcock.SyncOutlookandGooglecalendars
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulWoolcock/SyncOutlookandGooglecalendars
+- winget: PaulWoolcock.SyncOutlookandGooglecalendars.alpha
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PaulWoolcock/SyncOutlookandGooglecalendars/alpha
+aliases: []

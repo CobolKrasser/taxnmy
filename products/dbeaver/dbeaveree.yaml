@@ -1,0 +1,11 @@
+key: dbeaver/dbeaveree
+publisher: dbeaver
+name: DBeaverEE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Enterprise
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Enterprise
+identifiers:
+- winget: DBeaver.DBeaver.Enterprise
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DBeaver/DBeaver/Enterprise
+aliases: []

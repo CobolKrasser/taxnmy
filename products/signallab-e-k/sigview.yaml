@@ -1,0 +1,11 @@
+key: signallab-e-k/sigview
+publisher: signallab-e-k
+name: SIGVIEW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SignalLab/SIGVIEW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SignalLab/SIGVIEW
+identifiers:
+- winget: SignalLab.SIGVIEW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SignalLab/SIGVIEW
+aliases: []

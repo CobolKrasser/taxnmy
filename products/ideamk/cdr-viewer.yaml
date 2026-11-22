@@ -1,0 +1,11 @@
+key: ideamk/cdr-viewer
+publisher: ideamk
+name: CDR Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/CDRViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/CDRViewer
+identifiers:
+- winget: IdeaMK.CDRViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/CDRViewer
+aliases: []

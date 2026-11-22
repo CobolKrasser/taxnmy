@@ -1,0 +1,11 @@
+key: quadrillion-labs/qualia
+publisher: quadrillion-labs
+name: Qualia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quadrillion/Qualia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quadrillion/Qualia
+identifiers:
+- winget: Quadrillion.Qualia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Quadrillion/Qualia
+aliases: []

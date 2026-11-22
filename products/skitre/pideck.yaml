@@ -1,0 +1,11 @@
+key: skitre/pideck
+publisher: skitre
+name: PiDeck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skitre/PiDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skitre/PiDeck
+identifiers:
+- winget: Skitre.PiDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skitre/PiDeck
+aliases: []

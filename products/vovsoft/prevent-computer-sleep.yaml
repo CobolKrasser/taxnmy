@@ -1,0 +1,12 @@
+key: vovsoft/prevent-computer-sleep
+publisher: vovsoft
+name: Vovsoft Prevent Computer Sleep
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PreventComputerSleep
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PreventComputerSleep
+identifiers:
+- winget: VovSoft.PreventComputerSleep
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/PreventComputerSleep
+aliases:
+- vovsoft/vovsoft-prevent-computer-sleep

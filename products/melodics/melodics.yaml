@@ -1,0 +1,11 @@
+key: melodics/melodics
+publisher: melodics
+name: Melodics
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Melodics/Melodics
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Melodics/Melodics
+identifiers:
+- winget: Melodics.Melodics
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Melodics/Melodics
+aliases: []

@@ -1,0 +1,11 @@
+key: international-geogebra-institute/geogebra-graphing-calculator
+publisher: international-geogebra-institute
+name: GeoGebra Graphing Calculator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/GraphingCalculator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/GraphingCalculator
+identifiers:
+- winget: GeoGebra.GraphingCalculator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GeoGebra/GraphingCalculator
+aliases: []

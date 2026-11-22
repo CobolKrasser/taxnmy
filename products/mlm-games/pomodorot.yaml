@@ -1,0 +1,11 @@
+key: mlm-games/pomodorot
+publisher: mlm-games
+name: Pomodorot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MLMGames/Pomodorot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MLMGames/Pomodorot
+identifiers:
+- winget: MLMGames.Pomodorot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MLMGames/Pomodorot
+aliases: []

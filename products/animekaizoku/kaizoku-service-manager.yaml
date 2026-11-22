@@ -1,0 +1,11 @@
+key: animekaizoku/kaizoku-service-manager
+publisher: animekaizoku
+name: Kaizoku Service Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnimeKaizoku/KaizokuServiceManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnimeKaizoku/KaizokuServiceManager
+identifiers:
+- winget: AnimeKaizoku.KaizokuServiceManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnimeKaizoku/KaizokuServiceManager
+aliases: []

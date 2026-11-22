@@ -1,0 +1,11 @@
+key: trimble/winest
+publisher: trimble
+name: WinEst
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinEst/WinEst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinEst/WinEst
+identifiers:
+- winget: WinEst.WinEst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WinEst/WinEst
+aliases: []

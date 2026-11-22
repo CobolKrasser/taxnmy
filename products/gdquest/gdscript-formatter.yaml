@@ -1,0 +1,11 @@
+key: gdquest/gdscript-formatter
+publisher: gdquest
+name: GDScript Formatter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDQuest/GDScript/Formatter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDQuest/GDScript/Formatter
+identifiers:
+- winget: GDQuest.GDScript.Formatter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GDQuest/GDScript/Formatter
+aliases: []

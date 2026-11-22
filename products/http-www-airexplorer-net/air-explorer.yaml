@@ -1,0 +1,11 @@
+key: http-www-airexplorer-net/air-explorer
+publisher: http-www-airexplorer-net
+name: Air Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirExplorer/AirExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirExplorer/AirExplorer
+identifiers:
+- winget: AirExplorer.AirExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirExplorer/AirExplorer
+aliases: []

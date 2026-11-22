@@ -1,0 +1,11 @@
+key: zype/compass
+publisher: zype
+name: Compass
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zype/Compass
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zype/Compass
+identifiers:
+- winget: Zype.Compass
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zype/Compass
+aliases: []

@@ -1,0 +1,13 @@
+key: vice-team/vice
+publisher: vice-team
+name: VICE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VICE-Team/VICE/GTK3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VICE-Team/VICE/GTK3
+identifiers:
+- winget: VICE-Team.VICE.GTK3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VICE-Team/VICE/GTK3
+- winget: VICE-Team.VICE.SDL2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VICE-Team/VICE/SDL2
+aliases: []

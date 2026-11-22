@@ -1,0 +1,11 @@
+key: bosse/filedisk
+publisher: bosse
+name: FileDisk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/filedisk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/filedisk
+identifiers:
+- winget: bosse.filedisk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bosse/filedisk
+aliases: []

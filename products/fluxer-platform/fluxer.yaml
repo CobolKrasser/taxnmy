@@ -1,0 +1,11 @@
+key: fluxer-platform/fluxer
+publisher: fluxer-platform
+name: Fluxer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxer/Fluxer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxer/Fluxer
+identifiers:
+- winget: Fluxer.Fluxer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fluxer/Fluxer
+aliases: []

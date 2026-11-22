@@ -1,0 +1,11 @@
+key: echocat/watch
+publisher: echocat
+name: watch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/echocat/watch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/echocat/watch
+identifiers:
+- winget: echocat.watch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/echocat/watch
+aliases: []

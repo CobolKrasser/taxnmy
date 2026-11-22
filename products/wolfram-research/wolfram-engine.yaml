@@ -1,0 +1,11 @@
+key: wolfram-research/wolfram-engine
+publisher: wolfram-research
+name: Wolfram Engine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolframResearch/WolframEngine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolframResearch/WolframEngine
+identifiers:
+- winget: WolframResearch.WolframEngine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WolframResearch/WolframEngine
+aliases: []

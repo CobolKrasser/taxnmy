@@ -1,0 +1,11 @@
+key: anchore/grype
+publisher: anchore
+name: Grype
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Grype
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Grype
+identifiers:
+- winget: Anchore.Grype
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anchore/Grype
+aliases: []

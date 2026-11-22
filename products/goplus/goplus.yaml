@@ -1,0 +1,11 @@
+key: goplus/goplus
+publisher: goplus
+name: goplus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goplus/xgo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goplus/xgo
+identifiers:
+- winget: goplus.xgo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/goplus/xgo
+aliases: []

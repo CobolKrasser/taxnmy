@@ -1,0 +1,11 @@
+key: greymd/greymd
+publisher: greymd
+name: greymd
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/greymd/greymd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/greymd/greymd
+identifiers:
+- winget: greymd.greymd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/greymd/greymd
+aliases: []

@@ -1,0 +1,11 @@
+key: amrali-eg/file-encoding-checker
+publisher: amrali-eg
+name: File Encoding Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amrali-eg/EncodingChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amrali-eg/EncodingChecker
+identifiers:
+- winget: amrali-eg.EncodingChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/amrali-eg/EncodingChecker
+aliases: []

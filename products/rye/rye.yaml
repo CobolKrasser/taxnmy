@@ -1,0 +1,11 @@
+key: rye/rye
+publisher: rye
+name: Rye
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rye/Rye
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rye/Rye
+identifiers:
+- winget: Rye.Rye
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rye/Rye
+aliases: []

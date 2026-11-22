@@ -1,0 +1,12 @@
+key: minitab/modules
+publisher: minitab
+name: Minitab Modules
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Minitab/MinitabModules
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Minitab/MinitabModules
+identifiers:
+- winget: Minitab.MinitabModules
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Minitab/MinitabModules
+aliases:
+- minitab/minitab-modules

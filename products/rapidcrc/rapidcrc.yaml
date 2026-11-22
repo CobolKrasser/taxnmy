@@ -1,0 +1,11 @@
+key: rapidcrc/rapidcrc
+publisher: rapidcrc
+name: RapidCRC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OV2/RapidCRCUnicode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OV2/RapidCRCUnicode
+identifiers:
+- winget: OV2.RapidCRCUnicode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OV2/RapidCRCUnicode
+aliases: []

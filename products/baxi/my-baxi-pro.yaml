@@ -1,0 +1,11 @@
+key: baxi/my-baxi-pro
+publisher: baxi
+name: My Baxi PRO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baxi/MyBaxiPRO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baxi/MyBaxiPRO
+identifiers:
+- winget: Baxi.MyBaxiPRO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baxi/MyBaxiPRO
+aliases: []

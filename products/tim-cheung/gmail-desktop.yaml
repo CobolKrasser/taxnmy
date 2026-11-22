@@ -1,0 +1,11 @@
+key: tim-cheung/gmail-desktop
+publisher: tim-cheung
+name: Gmail Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timche/gmail-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timche/gmail-desktop
+identifiers:
+- winget: timche.gmail-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/timche/gmail-desktop
+aliases: []

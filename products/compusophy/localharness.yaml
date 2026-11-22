@@ -1,0 +1,11 @@
+key: compusophy/localharness
+publisher: compusophy
+name: localharness
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/compusophy/localharness
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/compusophy/localharness
+identifiers:
+- winget: compusophy.localharness
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/compusophy/localharness
+aliases: []

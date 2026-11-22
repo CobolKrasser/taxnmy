@@ -1,0 +1,11 @@
+key: cm-informatik/cmi-lehreroffice
+publisher: cm-informatik
+name: CMI LehrerOffice
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMI/LehrerOfficeDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMI/LehrerOfficeDesktop
+identifiers:
+- winget: CMI.LehrerOfficeDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMI/LehrerOfficeDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: thinkscape/zee-drive
+publisher: thinkscape
+name: Zee Drive
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thinkscape/ZeeDrive
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thinkscape/ZeeDrive
+identifiers:
+- winget: Thinkscape.ZeeDrive
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Thinkscape/ZeeDrive
+aliases: []

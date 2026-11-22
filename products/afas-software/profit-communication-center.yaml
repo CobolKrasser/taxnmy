@@ -1,0 +1,17 @@
+key: afas-software/profit-communication-center
+publisher: afas-software
+name: Profit Communication Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AFAS/ProfitCommunicationCenter/1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AFAS/ProfitCommunicationCenter/1
+identifiers:
+- winget: AFAS.ProfitCommunicationCenter.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AFAS/ProfitCommunicationCenter/1
+- winget: AFAS.ProfitCommunicationCenter.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AFAS/ProfitCommunicationCenter/6
+- winget: AFAS.ProfitCommunicationCenter.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AFAS/ProfitCommunicationCenter/7
+- winget: AFAS.ProfitCommunicationCenter.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AFAS/ProfitCommunicationCenter/8
+aliases: []

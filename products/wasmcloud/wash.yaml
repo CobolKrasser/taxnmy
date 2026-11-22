@@ -1,0 +1,11 @@
+key: wasmcloud/wash
+publisher: wasmcloud
+name: wash
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wasmCloud/wash
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wasmCloud/wash
+identifiers:
+- winget: wasmCloud.wash
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wasmCloud/wash
+aliases: []

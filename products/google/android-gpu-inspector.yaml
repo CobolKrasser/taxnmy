@@ -1,0 +1,11 @@
+key: google/android-gpu-inspector
+publisher: google
+name: Android GPU Inspector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidGPUInspector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidGPUInspector
+identifiers:
+- winget: Google.AndroidGPUInspector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/AndroidGPUInspector
+aliases: []

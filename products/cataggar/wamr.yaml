@@ -1,0 +1,11 @@
+key: cataggar/wamr
+publisher: cataggar
+name: wamr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cataggar/wamr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cataggar/wamr
+identifiers:
+- winget: cataggar.wamr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cataggar/wamr
+aliases: []

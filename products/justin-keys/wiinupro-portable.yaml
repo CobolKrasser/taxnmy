@@ -1,0 +1,11 @@
+key: justin-keys/wiinupro-portable
+publisher: justin-keys
+name: WiinUPro (Portable)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JustinKeys/WiinUPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JustinKeys/WiinUPro
+identifiers:
+- winget: JustinKeys.WiinUPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JustinKeys/WiinUPro
+aliases: []

@@ -1,0 +1,11 @@
+key: quiet-md/quiet-md
+publisher: quiet-md
+name: quiet.md
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/s1dashu/QuietMd
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/s1dashu/QuietMd
+identifiers:
+- winget: s1dashu.QuietMd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/s1dashu/QuietMd
+aliases: []

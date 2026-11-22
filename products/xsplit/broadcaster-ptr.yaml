@@ -1,0 +1,12 @@
+key: xsplit/broadcaster-ptr
+publisher: xsplit
+name: XSplit Broadcaster PTR
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitBroadcaster/PTR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitBroadcaster/PTR
+identifiers:
+- winget: SplitmediaLabs.XSplitBroadcaster.PTR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SplitmediaLabs/XSplitBroadcaster/PTR
+aliases:
+- xsplit/xsplit-broadcaster-ptr

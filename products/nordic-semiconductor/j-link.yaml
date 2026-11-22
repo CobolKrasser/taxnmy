@@ -1,0 +1,11 @@
+key: nordic-semiconductor/j-link
+publisher: nordic-semiconductor
+name: J-Link
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordicSemiconductor/JLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordicSemiconductor/JLink
+identifiers:
+- winget: NordicSemiconductor.JLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordicSemiconductor/JLink
+aliases: []

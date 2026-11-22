@@ -1,0 +1,11 @@
+key: iris-instruments/electre-terra-sequencer
+publisher: iris-instruments
+name: Electre Terra Sequencer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/ElectreTerraSequencer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/ElectreTerraSequencer
+identifiers:
+- winget: IrisInstruments.ElectreTerraSequencer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IrisInstruments/ElectreTerraSequencer
+aliases: []

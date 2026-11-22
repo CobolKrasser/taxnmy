@@ -1,0 +1,11 @@
+key: clark/us3browser
+publisher: clark
+name: us3browser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UCloud/US3Browser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UCloud/US3Browser
+identifiers:
+- winget: UCloud.US3Browser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UCloud/US3Browser
+aliases: []

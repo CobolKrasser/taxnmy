@@ -1,0 +1,11 @@
+key: anydesk-software/anydesk
+publisher: anydesk-software
+name: AnyDesk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyDesk/AnyDesk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyDesk/AnyDesk
+identifiers:
+- winget: AnyDesk.AnyDesk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AnyDesk/AnyDesk
+aliases: []

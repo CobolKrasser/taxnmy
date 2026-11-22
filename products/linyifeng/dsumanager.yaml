@@ -1,0 +1,11 @@
+key: linyifeng/dsumanager
+publisher: linyifeng
+name: DSUManager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/breeze2/DSUManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/breeze2/DSUManager
+identifiers:
+- winget: breeze2.DSUManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/breeze2/DSUManager
+aliases: []

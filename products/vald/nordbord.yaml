@@ -1,0 +1,12 @@
+key: vald/nordbord
+publisher: vald
+name: VALD NordBord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VALD/NordBord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VALD/NordBord
+identifiers:
+- winget: VALD.NordBord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VALD/NordBord
+aliases:
+- vald/vald-nordbord

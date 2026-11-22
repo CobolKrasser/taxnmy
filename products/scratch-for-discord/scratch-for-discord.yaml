@@ -1,0 +1,11 @@
+key: scratch-for-discord/scratch-for-discord
+publisher: scratch-for-discord
+name: Scratch For Discord
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScratchForDiscord/ScratchForDiscord
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScratchForDiscord/ScratchForDiscord
+identifiers:
+- winget: ScratchForDiscord.ScratchForDiscord
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/ScratchForDiscord/ScratchForDiscord
+aliases: []

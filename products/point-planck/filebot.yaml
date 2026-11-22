@@ -1,0 +1,11 @@
+key: point-planck/filebot
+publisher: point-planck
+name: FileBot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PointPlanck/FileBot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PointPlanck/FileBot
+identifiers:
+- winget: PointPlanck.FileBot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PointPlanck/FileBot
+aliases: []

@@ -1,0 +1,11 @@
+key: amulet/amulet
+publisher: amulet
+name: Amulet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amulet/Amulet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amulet/Amulet
+identifiers:
+- winget: Amulet.Amulet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amulet/Amulet
+aliases: []

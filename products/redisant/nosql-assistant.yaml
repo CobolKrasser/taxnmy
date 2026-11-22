@@ -1,0 +1,11 @@
+key: redisant/nosql-assistant
+publisher: redisant
+name: NoSql Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/NoSQLAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/NoSQLAssistant
+identifiers:
+- winget: Redisant.NoSQLAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Redisant/NoSQLAssistant
+aliases: []

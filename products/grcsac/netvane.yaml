@@ -1,0 +1,11 @@
+key: grcsac/netvane
+publisher: grcsac
+name: NetVane
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRCSAC/NetVane
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRCSAC/NetVane
+identifiers:
+- winget: GRCSAC.NetVane
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GRCSAC/NetVane
+aliases: []

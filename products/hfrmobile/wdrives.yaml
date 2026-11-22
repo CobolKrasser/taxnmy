@@ -1,0 +1,11 @@
+key: hfrmobile/wdrives
+publisher: hfrmobile
+name: WDrives
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hfrmobile/WDrives
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hfrmobile/WDrives
+identifiers:
+- winget: hfrmobile.WDrives
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/hfrmobile/WDrives
+aliases: []

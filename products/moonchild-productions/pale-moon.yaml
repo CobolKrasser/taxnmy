@@ -1,0 +1,11 @@
+key: moonchild-productions/pale-moon
+publisher: moonchild-productions
+name: Pale Moon
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonchildProductions/PaleMoon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonchildProductions/PaleMoon
+identifiers:
+- winget: MoonchildProductions.PaleMoon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoonchildProductions/PaleMoon
+aliases: []

@@ -1,0 +1,11 @@
+key: burntsushi/ripgrep-msvc
+publisher: burntsushi
+name: RipGrep MSVC
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/ripgrep/MSVC
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/ripgrep/MSVC
+identifiers:
+- winget: BurntSushi.ripgrep.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BurntSushi/ripgrep/MSVC
+aliases: []

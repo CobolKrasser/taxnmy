@@ -1,0 +1,11 @@
+key: mightymorgs/remotefs
+publisher: mightymorgs
+name: remotefs
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mightymorgs/remotefs
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mightymorgs/remotefs
+identifiers:
+- winget: mightymorgs.remotefs
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/mightymorgs/remotefs
+aliases: []

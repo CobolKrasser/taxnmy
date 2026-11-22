@@ -1,0 +1,11 @@
+key: the-eraser-project/eraser
+publisher: the-eraser-project
+name: Eraser
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eraser/Eraser
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eraser/Eraser
+identifiers:
+- winget: Eraser.Eraser
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Eraser/Eraser
+aliases: []

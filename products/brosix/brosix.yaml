@@ -1,0 +1,11 @@
+key: brosix/brosix
+publisher: brosix
+name: Brosix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brosix/Brosix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brosix/Brosix
+identifiers:
+- winget: Brosix.Brosix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Brosix/Brosix
+aliases: []

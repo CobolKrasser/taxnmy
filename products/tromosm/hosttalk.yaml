@@ -1,0 +1,11 @@
+key: tromosm/hosttalk
+publisher: tromosm
+name: HostTalk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/HostTalk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/HostTalk
+identifiers:
+- winget: tromoSM.HostTalk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tromoSM/HostTalk
+aliases: []

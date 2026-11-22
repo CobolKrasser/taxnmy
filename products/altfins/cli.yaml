@@ -1,0 +1,12 @@
+key: altfins/cli
+publisher: altfins
+name: altFINS CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/altfins/af
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/altfins/af
+identifiers:
+- winget: altfins.af
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/altfins/af
+aliases:
+- altfins/altfins-cli

@@ -1,0 +1,11 @@
+key: martin-storsjo/llvm-mingw-ucrt-runtime
+publisher: martin-storsjo
+name: LLVM MinGW (UCRT runtime)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinStorsjo/LLVM-MinGW/UCRT
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinStorsjo/LLVM-MinGW/UCRT
+identifiers:
+- winget: MartinStorsjo.LLVM-MinGW.UCRT
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinStorsjo/LLVM-MinGW/UCRT
+aliases: []

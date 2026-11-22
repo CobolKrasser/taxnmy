@@ -1,0 +1,11 @@
+key: sand-studio/airdroid
+publisher: sand-studio
+name: AirDroid
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirDroid/AirDroid
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirDroid/AirDroid
+identifiers:
+- winget: AirDroid.AirDroid
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AirDroid/AirDroid
+aliases: []

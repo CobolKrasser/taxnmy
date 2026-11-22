@@ -1,0 +1,11 @@
+key: admobilize/malos-vision
+publisher: admobilize
+name: Malos-Vision
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/MalosVision
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/MalosVision
+identifiers:
+- winget: Admobilize.AdMobilize.MalosVision
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Admobilize/AdMobilize/MalosVision
+aliases: []

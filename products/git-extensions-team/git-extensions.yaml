@@ -1,0 +1,11 @@
+key: git-extensions-team/git-extensions
+publisher: git-extensions-team
+name: Git Extensions
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitExtensionsTeam/GitExtensions
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitExtensionsTeam/GitExtensions
+identifiers:
+- winget: GitExtensionsTeam.GitExtensions
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitExtensionsTeam/GitExtensions
+aliases: []

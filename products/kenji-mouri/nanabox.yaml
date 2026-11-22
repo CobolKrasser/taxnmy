@@ -1,0 +1,11 @@
+key: kenji-mouri/nanabox
+publisher: kenji-mouri
+name: NanaBox
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M2Team/NanaBox
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M2Team/NanaBox
+identifiers:
+- winget: M2Team.NanaBox
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/M2Team/NanaBox
+aliases: []

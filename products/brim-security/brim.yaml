@@ -1,0 +1,11 @@
+key: brim-security/brim
+publisher: brim-security
+name: Brim
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brimdata/brim
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brimdata/brim
+identifiers:
+- winget: brimdata.brim
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/brimdata/brim
+aliases: []

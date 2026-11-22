@@ -1,0 +1,11 @@
+key: snaildos/snailkm
+publisher: snaildos
+name: SnailKM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/SnailKM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/SnailKM
+identifiers:
+- winget: SnailDOS.SnailKM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/SnailKM
+aliases: []

@@ -1,0 +1,11 @@
+key: steampunk-labs/aws-loggy
+publisher: steampunk-labs
+name: AWS Loggy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteampunkLabs/AWSLoggy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteampunkLabs/AWSLoggy
+identifiers:
+- winget: SteampunkLabs.AWSLoggy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteampunkLabs/AWSLoggy
+aliases: []

@@ -1,0 +1,11 @@
+key: softkvm/softkvm
+publisher: softkvm
+name: SoftKVM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/996xiaozhe/SoftKVM/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/996xiaozhe/SoftKVM/Beta
+identifiers:
+- winget: 996xiaozhe.SoftKVM.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/9/996xiaozhe/SoftKVM/Beta
+aliases: []

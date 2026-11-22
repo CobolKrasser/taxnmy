@@ -1,0 +1,11 @@
+key: roger-lacelles/veecad
+publisher: roger-lacelles
+name: VeeCAD
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VeeCAD/VeeCAD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VeeCAD/VeeCAD
+identifiers:
+- winget: VeeCAD.VeeCAD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VeeCAD/VeeCAD
+aliases: []

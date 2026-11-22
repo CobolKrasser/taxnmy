@@ -1,0 +1,11 @@
+key: treasure-data/td-agent
+publisher: treasure-data
+name: Td-agent
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TreasureData/TDAgent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TreasureData/TDAgent
+identifiers:
+- winget: TreasureData.TDAgent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TreasureData/TDAgent
+aliases: []

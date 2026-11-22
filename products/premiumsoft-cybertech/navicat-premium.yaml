@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-premium
+publisher: premiumsoft-cybertech
+name: Navicat Premium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatPremium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatPremium
+identifiers:
+- winget: PremiumSoft.NavicatPremium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatPremium
+aliases: []

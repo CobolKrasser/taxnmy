@@ -1,0 +1,11 @@
+key: tengo/kbcalc
+publisher: tengo
+name: kbCalc
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tengolabs/kbCalc
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tengolabs/kbCalc
+identifiers:
+- winget: Tengolabs.kbCalc
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tengolabs/kbCalc
+aliases: []

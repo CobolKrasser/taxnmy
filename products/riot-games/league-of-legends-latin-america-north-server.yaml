@@ -1,0 +1,11 @@
+key: riot-games/league-of-legends-latin-america-north-server
+publisher: riot-games
+name: League of Legends (Latin America North server)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/LA1
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/LA1
+identifiers:
+- winget: RiotGames.LeagueOfLegends.LA1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RiotGames/LeagueOfLegends/LA1
+aliases: []

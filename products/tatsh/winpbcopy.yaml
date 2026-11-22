@@ -1,0 +1,11 @@
+key: tatsh/winpbcopy
+publisher: tatsh
+name: winpbcopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/winpbcopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/winpbcopy
+identifiers:
+- winget: Tatsh.winpbcopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tatsh/winpbcopy
+aliases: []

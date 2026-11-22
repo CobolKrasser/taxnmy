@@ -1,0 +1,11 @@
+key: teamslop/slopcode
+publisher: teamslop
+name: SlopCode
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSlop/Slopcode
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSlop/Slopcode
+identifiers:
+- winget: TeamSlop.Slopcode
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSlop/Slopcode
+aliases: []

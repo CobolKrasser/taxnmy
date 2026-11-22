@@ -5,4 +5,7 @@ kind: software
 source: https://www.win-rar.com/
 versions:
   source: https://www.rarlab.com/rarnew.htm
+identifiers:
+- winget: RARLab.WinRAR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RARLab/WinRAR
 aliases: []

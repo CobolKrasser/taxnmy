@@ -1,0 +1,11 @@
+key: brf-tech/filex
+publisher: brf-tech
+name: filex
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRFTech/filex
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRFTech/filex
+identifiers:
+- winget: BRFTech.filex
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BRFTech/filex
+aliases: []

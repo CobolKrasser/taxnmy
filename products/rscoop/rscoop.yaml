@@ -1,0 +1,11 @@
+key: rscoop/rscoop
+publisher: rscoop
+name: rscoop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmarBego/Rscoop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmarBego/Rscoop
+identifiers:
+- winget: AmarBego.Rscoop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AmarBego/Rscoop
+aliases: []

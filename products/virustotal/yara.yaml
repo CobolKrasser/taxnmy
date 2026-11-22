@@ -1,0 +1,11 @@
+key: virustotal/yara
+publisher: virustotal
+name: YARA
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/YARA
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/YARA
+identifiers:
+- winget: VirusTotal.YARA
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VirusTotal/YARA
+aliases: []

@@ -1,0 +1,11 @@
+key: try-hard-studios/solo
+publisher: try-hard-studios
+name: Solo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TryHardStudios/Solo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TryHardStudios/Solo
+identifiers:
+- winget: TryHardStudios.Solo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TryHardStudios/Solo
+aliases: []

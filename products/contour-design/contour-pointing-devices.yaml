@@ -1,0 +1,11 @@
+key: contour-design/contour-pointing-devices
+publisher: contour-design
+name: Contour Pointing Devices
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContourDesign/ContourPointingDevices
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContourDesign/ContourPointingDevices
+identifiers:
+- winget: ContourDesign.ContourPointingDevices
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContourDesign/ContourPointingDevices
+aliases: []

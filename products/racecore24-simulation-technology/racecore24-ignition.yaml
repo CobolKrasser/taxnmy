@@ -1,0 +1,11 @@
+key: racecore24-simulation-technology/racecore24-ignition
+publisher: racecore24-simulation-technology
+name: RaceCore24 Ignition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaceCore24/Ignition
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaceCore24/Ignition
+identifiers:
+- winget: RaceCore24.Ignition
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RaceCore24/Ignition
+aliases: []

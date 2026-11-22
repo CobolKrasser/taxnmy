@@ -1,0 +1,11 @@
+key: yann-hamon/kubeconform
+publisher: yann-hamon
+name: kubeconform
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YannHamon/kubeconform
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YannHamon/kubeconform
+identifiers:
+- winget: YannHamon.kubeconform
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YannHamon/kubeconform
+aliases: []

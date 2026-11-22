@@ -1,0 +1,11 @@
+key: klang/kmusicplayer
+publisher: klang
+name: kmusicplayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Klang/kmusicplayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Klang/kmusicplayer
+identifiers:
+- winget: Klang.kmusicplayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Klang/kmusicplayer
+aliases: []

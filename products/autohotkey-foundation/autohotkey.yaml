@@ -1,0 +1,11 @@
+key: autohotkey-foundation/autohotkey
+publisher: autohotkey-foundation
+name: AutoHotkey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoHotkey/AutoHotkey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoHotkey/AutoHotkey
+identifiers:
+- winget: AutoHotkey.AutoHotkey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AutoHotkey/AutoHotkey
+aliases: []

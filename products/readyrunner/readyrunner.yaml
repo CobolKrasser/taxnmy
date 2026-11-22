@@ -1,0 +1,11 @@
+key: readyrunner/readyrunner
+publisher: readyrunner
+name: ReadyRunner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flinto/ReadyRunner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flinto/ReadyRunner
+identifiers:
+- winget: Flinto.ReadyRunner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flinto/ReadyRunner
+aliases: []

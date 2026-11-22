@@ -1,0 +1,12 @@
+key: kopiorapido/cli
+publisher: kopiorapido
+name: KopioRapido CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KopioRapido/KopioRapido
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KopioRapido/KopioRapido
+identifiers:
+- winget: KopioRapido.KopioRapido
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KopioRapido/KopioRapido
+aliases:
+- kopiorapido/kopiorapido-cli

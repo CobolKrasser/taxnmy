@@ -1,0 +1,11 @@
+key: shloop/google-book-scraper
+publisher: shloop
+name: Google Book Scraper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shloop/gbscraper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shloop/gbscraper
+identifiers:
+- winget: shloop.gbscraper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shloop/gbscraper
+aliases: []

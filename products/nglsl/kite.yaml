@@ -1,0 +1,11 @@
+key: nglsl/kite
+publisher: nglsl
+name: Kite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGLSL/Kite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGLSL/Kite
+identifiers:
+- winget: NGLSL.Kite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NGLSL/Kite
+aliases: []

@@ -1,0 +1,11 @@
+key: vs-revo-group/revo-uninstaller
+publisher: vs-revo-group
+name: Revo Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoUninstaller/RevoUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoUninstaller/RevoUninstaller
+identifiers:
+- winget: RevoUninstaller.RevoUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RevoUninstaller/RevoUninstaller
+aliases: []

@@ -1,0 +1,11 @@
+key: harness-lens/harness-lens
+publisher: harness-lens
+name: Harness Lens
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HarnessLens/HarnessLens
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HarnessLens/HarnessLens
+identifiers:
+- winget: HarnessLens.HarnessLens
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HarnessLens/HarnessLens
+aliases: []

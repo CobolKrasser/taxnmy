@@ -1,0 +1,18 @@
+key: altova/stylevision-professional-edition
+publisher: altova
+name: Altova StyleVision Professional Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/StyleVision/2023/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/StyleVision/2023/Professional
+identifiers:
+- winget: Altova.StyleVision.2023.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/StyleVision/2023/Professional
+- winget: Altova.StyleVision.2024.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/StyleVision/2024/Professional
+- winget: Altova.StyleVision.2025.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/StyleVision/2025/Professional
+- winget: Altova.StyleVision.2026.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/StyleVision/2026/Professional
+aliases:
+- altova/altova-stylevision-professional-edition

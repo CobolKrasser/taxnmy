@@ -1,0 +1,11 @@
+key: here-technologies/olp-cli
+publisher: here-technologies
+name: OLP CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/OLPCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/OLPCLI
+identifiers:
+- winget: HERE.OLPCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HERE/OLPCLI
+aliases: []

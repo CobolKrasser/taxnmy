@@ -1,0 +1,11 @@
+key: contour-design/contour-multimedia-controller
+publisher: contour-design
+name: Contour Multimedia Controller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContourDesign/ContourShuttle
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContourDesign/ContourShuttle
+identifiers:
+- winget: ContourDesign.ContourShuttle
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ContourDesign/ContourShuttle
+aliases: []

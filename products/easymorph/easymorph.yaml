@@ -1,0 +1,11 @@
+key: easymorph/easymorph
+publisher: easymorph
+name: EasyMorph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyMorph/EasyMorph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyMorph/EasyMorph
+identifiers:
+- winget: EasyMorph.EasyMorph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EasyMorph/EasyMorph
+aliases: []

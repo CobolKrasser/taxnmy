@@ -1,0 +1,12 @@
+key: reshade/setup
+publisher: reshade
+name: ReShade Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reshade/Setup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reshade/Setup
+identifiers:
+- winget: Reshade.Setup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reshade/Setup
+aliases:
+- reshade/reshade-setup

@@ -1,0 +1,11 @@
+key: antibody-software/wizfile
+publisher: antibody-software
+name: WizFile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizFile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizFile
+identifiers:
+- winget: AntibodySoftware.WizFile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizFile
+aliases: []

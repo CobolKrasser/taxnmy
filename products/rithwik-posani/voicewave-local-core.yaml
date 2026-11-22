@@ -1,0 +1,11 @@
+key: rithwik-posani/voicewave-local-core
+publisher: rithwik-posani
+name: VoiceWave Local Core
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoiceWave/LocalCore
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoiceWave/LocalCore
+identifiers:
+- winget: VoiceWave.LocalCore
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VoiceWave/LocalCore
+aliases: []

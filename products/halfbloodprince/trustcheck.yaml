@@ -1,0 +1,11 @@
+key: halfbloodprince/trustcheck
+publisher: halfbloodprince
+name: trustcheck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalfbloodPrince/trustcheck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalfbloodPrince/trustcheck
+identifiers:
+- winget: HalfbloodPrince.trustcheck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HalfbloodPrince/trustcheck
+aliases: []

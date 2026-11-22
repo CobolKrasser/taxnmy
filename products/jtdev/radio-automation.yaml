@@ -1,0 +1,11 @@
+key: jtdev/radio-automation
+publisher: jtdev
+name: Radio Automation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTDev/RadioAutomation
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTDev/RadioAutomation
+identifiers:
+- winget: JTDev.RadioAutomation
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JTDev/RadioAutomation
+aliases: []

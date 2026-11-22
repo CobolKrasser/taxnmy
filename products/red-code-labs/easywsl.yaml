@@ -1,0 +1,11 @@
+key: red-code-labs/easywsl
+publisher: red-code-labs
+name: easyWSL
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCodeLabs/easyWSL
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCodeLabs/easyWSL
+identifiers:
+- winget: RedCodeLabs.easyWSL
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedCodeLabs/easyWSL
+aliases: []

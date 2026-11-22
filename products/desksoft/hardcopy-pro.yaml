@@ -1,0 +1,11 @@
+key: desksoft/hardcopy-pro
+publisher: desksoft
+name: HardCopy Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/HardCopyPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/HardCopyPro
+identifiers:
+- winget: DeskSoft.HardCopyPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeskSoft/HardCopyPro
+aliases: []

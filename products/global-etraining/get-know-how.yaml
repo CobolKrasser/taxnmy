@@ -1,0 +1,11 @@
+key: global-etraining/get-know-how
+publisher: global-etraining
+name: GeT Know-How
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalETraining/GeTKnowHow
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalETraining/GeTKnowHow
+identifiers:
+- winget: GlobalETraining.GeTKnowHow
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlobalETraining/GeTKnowHow
+aliases: []

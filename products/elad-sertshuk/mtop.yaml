@@ -1,0 +1,11 @@
+key: elad-sertshuk/mtop
+publisher: elad-sertshuk
+name: mtop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eladser/mtop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eladser/mtop
+identifiers:
+- winget: eladser.mtop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eladser/mtop
+aliases: []

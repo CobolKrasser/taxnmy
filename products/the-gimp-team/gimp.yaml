@@ -1,0 +1,15 @@
+key: the-gimp-team/gimp
+publisher: the-gimp-team
+name: GIMP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP
+identifiers:
+- winget: GIMP.GIMP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP
+- winget: GIMP.GIMP.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP/2
+- winget: GIMP.GIMP.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GIMP/GIMP/3
+aliases: []

@@ -1,0 +1,11 @@
+key: net-foundation/dev-proxy
+publisher: net-foundation
+name: Dev Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevProxy/DevProxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevProxy/DevProxy
+identifiers:
+- winget: DevProxy.DevProxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DevProxy/DevProxy
+aliases: []

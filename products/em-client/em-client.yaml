@@ -1,0 +1,11 @@
+key: em-client/em-client
+publisher: em-client
+name: eM Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMClient/eMClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMClient/eMClient
+identifiers:
+- winget: eMClient.eMClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMClient/eMClient
+aliases: []

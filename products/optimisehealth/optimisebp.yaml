@@ -1,0 +1,11 @@
+key: optimisehealth/optimisebp
+publisher: optimisehealth
+name: OptimiseBP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OptimiseHealth/OptimiseBPDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OptimiseHealth/OptimiseBPDesktop
+identifiers:
+- winget: OptimiseHealth.OptimiseBPDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OptimiseHealth/OptimiseBPDesktop
+aliases: []

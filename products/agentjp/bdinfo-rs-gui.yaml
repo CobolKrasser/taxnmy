@@ -1,0 +1,11 @@
+key: agentjp/bdinfo-rs-gui
+publisher: agentjp
+name: bdinfo-rs GUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentjp/bdinfo-rs-gui
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentjp/bdinfo-rs-gui
+identifiers:
+- winget: agentjp.bdinfo-rs-gui
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/agentjp/bdinfo-rs-gui
+aliases: []

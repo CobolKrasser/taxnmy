@@ -1,0 +1,11 @@
+key: cubesoft/cubeice
+publisher: cubesoft
+name: CubeICE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubeSoft/CubeICE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubeSoft/CubeICE
+identifiers:
+- winget: CubeSoft.CubeICE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CubeSoft/CubeICE
+aliases: []

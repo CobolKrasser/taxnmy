@@ -1,0 +1,11 @@
+key: carlos-castillo/agent-console
+publisher: carlos-castillo
+name: Agent Console
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CylCastillo/AgentConsole
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CylCastillo/AgentConsole
+identifiers:
+- winget: CylCastillo.AgentConsole
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CylCastillo/AgentConsole
+aliases: []

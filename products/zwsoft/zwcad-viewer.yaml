@@ -1,0 +1,11 @@
+key: zwsoft/zwcad-viewer
+publisher: zwsoft
+name: ZWCAD Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCADViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCADViewer
+identifiers:
+- winget: ZWSOFT.ZWCADViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/ZWCADViewer
+aliases: []

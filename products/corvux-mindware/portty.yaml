@@ -1,0 +1,11 @@
+key: corvux-mindware/portty
+publisher: corvux-mindware
+name: Portty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorvuxMindware/Portty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorvuxMindware/Portty
+identifiers:
+- winget: CorvuxMindware.Portty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CorvuxMindware/Portty
+aliases: []

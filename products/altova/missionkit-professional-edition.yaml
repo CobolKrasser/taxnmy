@@ -1,0 +1,18 @@
+key: altova/missionkit-professional-edition
+publisher: altova
+name: Altova MissionKit Professional Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MissionKit/2023/Professional
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MissionKit/2023/Professional
+identifiers:
+- winget: Altova.MissionKit.2023.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MissionKit/2023/Professional
+- winget: Altova.MissionKit.2024.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MissionKit/2024/Professional
+- winget: Altova.MissionKit.2025.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MissionKit/2025/Professional
+- winget: Altova.MissionKit.2026.Professional
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Altova/MissionKit/2026/Professional
+aliases:
+- altova/altova-missionkit-professional-edition

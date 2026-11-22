@@ -1,0 +1,12 @@
+key: logmein/client
+publisher: logmein
+name: LogMeIn Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/LogMeInClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/LogMeInClient
+identifiers:
+- winget: GoTo.LogMeInClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/LogMeInClient
+aliases:
+- logmein/logmein-client

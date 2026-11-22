@@ -1,0 +1,11 @@
+key: dinamo-networks/hsm-dinamo
+publisher: dinamo-networks
+name: HSM Dinamo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DinamoNetworks/HSMDinamo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DinamoNetworks/HSMDinamo
+identifiers:
+- winget: DinamoNetworks.HSMDinamo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DinamoNetworks/HSMDinamo
+aliases: []

@@ -1,0 +1,11 @@
+key: softmaker-software/softmaker-office-nx
+publisher: softmaker-software
+name: SoftMaker Office NX
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftMaker/Office/NX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftMaker/Office/NX
+identifiers:
+- winget: SoftMaker.Office.NX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftMaker/Office/NX
+aliases: []

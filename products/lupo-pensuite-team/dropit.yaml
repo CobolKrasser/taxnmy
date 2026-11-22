@@ -1,0 +1,11 @@
+key: lupo-pensuite-team/dropit
+publisher: lupo-pensuite-team
+name: DropIt
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LupoPenSuite/DropIt
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LupoPenSuite/DropIt
+identifiers:
+- winget: LupoPenSuite.DropIt
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LupoPenSuite/DropIt
+aliases: []

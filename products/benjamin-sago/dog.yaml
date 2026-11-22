@@ -1,0 +1,11 @@
+key: benjamin-sago/dog
+publisher: benjamin-sago
+name: dog
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ogham/dog
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ogham/dog
+identifiers:
+- winget: ogham.dog
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ogham/dog
+aliases: []

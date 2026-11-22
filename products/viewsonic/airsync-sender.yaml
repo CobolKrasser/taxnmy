@@ -1,0 +1,11 @@
+key: viewsonic/airsync-sender
+publisher: viewsonic
+name: AirSync Sender
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/AirSyncSender
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/AirSyncSender
+identifiers:
+- winget: ViewSonic.AirSyncSender
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/ViewSonic/AirSyncSender
+aliases: []

@@ -1,0 +1,11 @@
+key: syntevo/smartgit
+publisher: syntevo
+name: SmartGit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syntevo/SmartGit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syntevo/SmartGit
+identifiers:
+- winget: Syntevo.SmartGit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Syntevo/SmartGit
+aliases: []

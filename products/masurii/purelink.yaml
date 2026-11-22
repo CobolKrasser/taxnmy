@@ -1,0 +1,11 @@
+key: masurii/purelink
+publisher: masurii
+name: purelink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasuRii/PureLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasuRii/PureLink
+identifiers:
+- winget: MasuRii.PureLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MasuRii/PureLink
+aliases: []

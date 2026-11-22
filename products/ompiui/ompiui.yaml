@@ -1,0 +1,11 @@
+key: ompiui/ompiui
+publisher: ompiui
+name: OMPiUI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chenming0v0/OMPiUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chenming0v0/OMPiUI
+identifiers:
+- winget: chenming0v0.OMPiUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/chenming0v0/OMPiUI
+aliases: []

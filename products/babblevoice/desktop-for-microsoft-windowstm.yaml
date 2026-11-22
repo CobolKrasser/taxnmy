@@ -1,0 +1,12 @@
+key: babblevoice/desktop-for-microsoft-windowstm
+publisher: babblevoice
+name: babblevoice Desktop for Microsoft Windows™
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Babble/babblevoiceDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Babble/babblevoiceDesktop
+identifiers:
+- winget: Babble.babblevoiceDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Babble/babblevoiceDesktop
+aliases:
+- babblevoice/babblevoice-desktop-for-microsoft-windowstm

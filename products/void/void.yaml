@@ -1,0 +1,11 @@
+key: void/void
+publisher: void
+name: Void
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlassDevtools/Void
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlassDevtools/Void
+identifiers:
+- winget: GlassDevtools.Void
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GlassDevtools/Void
+aliases: []

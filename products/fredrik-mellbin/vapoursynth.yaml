@@ -1,0 +1,11 @@
+key: fredrik-mellbin/vapoursynth
+publisher: fredrik-mellbin
+name: VapourSynth
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VapourSynth/VapourSynth
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VapourSynth/VapourSynth
+identifiers:
+- winget: VapourSynth.VapourSynth
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VapourSynth/VapourSynth
+aliases: []

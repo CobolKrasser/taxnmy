@@ -1,0 +1,12 @@
+key: vovsoft/sound-recorder
+publisher: vovsoft
+name: Vovsoft Sound Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SoundRecorder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SoundRecorder
+identifiers:
+- winget: VovSoft.SoundRecorder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/SoundRecorder
+aliases:
+- vovsoft/vovsoft-sound-recorder

@@ -1,0 +1,13 @@
+key: rafal-mikrut/krokiet
+publisher: rafal-mikrut
+name: Krokiet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/krokiet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/krokiet
+identifiers:
+- winget: qarmin.krokiet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/krokiet
+- winget: qarmin.krokiet.vulkan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qarmin/krokiet/vulkan
+aliases: []

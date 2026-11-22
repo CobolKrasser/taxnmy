@@ -1,0 +1,11 @@
+key: the-code-blocks-team/code-blocks-with-mingw
+publisher: the-code-blocks-team
+name: Code::Blocks with MinGW
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBlocks/CodeBlocks/MinGW
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBlocks/CodeBlocks/MinGW
+identifiers:
+- winget: CodeBlocks.CodeBlocks.MinGW
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CodeBlocks/CodeBlocks/MinGW
+aliases: []

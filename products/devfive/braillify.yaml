@@ -1,0 +1,11 @@
+key: devfive/braillify
+publisher: devfive
+name: Braillify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Braillify/Braillify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Braillify/Braillify
+identifiers:
+- winget: Braillify.Braillify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Braillify/Braillify
+aliases: []

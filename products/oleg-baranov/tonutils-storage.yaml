@@ -1,0 +1,11 @@
+key: oleg-baranov/tonutils-storage
+publisher: oleg-baranov
+name: Tonutils Storage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xssnick/tonutils-storage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xssnick/tonutils-storage
+identifiers:
+- winget: xssnick.tonutils-storage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xssnick/tonutils-storage
+aliases: []

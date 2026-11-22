@@ -1,0 +1,11 @@
+key: a-wandersick/aerozoom-beta
+publisher: a-wandersick
+name: AeroZoom Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wandersick/AeroZoom
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wandersick/AeroZoom
+identifiers:
+- winget: wandersick.AeroZoom
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wandersick/AeroZoom
+aliases: []

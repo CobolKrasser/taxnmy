@@ -1,0 +1,11 @@
+key: nordlayer/nordlayer
+publisher: nordlayer
+name: NordLayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLayer
+identifiers:
+- winget: NordSecurity.NordLayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NordSecurity/NordLayer
+aliases: []

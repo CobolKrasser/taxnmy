@@ -1,0 +1,12 @@
+key: xplicittrust/network-access
+publisher: xplicittrust
+name: XplicitTrust Network Access
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XplicitTrust/Agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XplicitTrust/Agent
+identifiers:
+- winget: XplicitTrust.Agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XplicitTrust/Agent
+aliases:
+- xplicittrust/xplicittrust-network-access

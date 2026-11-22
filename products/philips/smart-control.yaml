@@ -1,0 +1,11 @@
+key: philips/smart-control
+publisher: philips
+name: Smart Control
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SmartControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SmartControl
+identifiers:
+- winget: Philips.SmartControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/SmartControl
+aliases: []

@@ -1,0 +1,11 @@
+key: chemtable-software/registry-life
+publisher: chemtable-software
+name: Registry Life
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/RegistryLife
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/RegistryLife
+identifiers:
+- winget: ChemTableSoftware.RegistryLife
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ChemTableSoftware/RegistryLife
+aliases: []

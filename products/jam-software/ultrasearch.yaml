@@ -1,0 +1,11 @@
+key: jam-software/ultrasearch
+publisher: jam-software
+name: UltraSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/UltraSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/UltraSearch
+identifiers:
+- winget: JAMSoftware.UltraSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JAMSoftware/UltraSearch
+aliases: []

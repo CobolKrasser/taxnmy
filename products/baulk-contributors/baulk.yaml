@@ -1,0 +1,11 @@
+key: baulk-contributors/baulk
+publisher: baulk-contributors
+name: Baulk
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baulk/Baulk
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baulk/Baulk
+identifiers:
+- winget: Baulk.Baulk
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baulk/Baulk
+aliases: []

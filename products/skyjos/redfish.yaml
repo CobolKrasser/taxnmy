@@ -1,0 +1,11 @@
+key: skyjos/redfish
+publisher: skyjos
+name: Redfish
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skyjos/Redfish
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skyjos/Redfish
+identifiers:
+- winget: Skyjos.Redfish
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Skyjos/Redfish
+aliases: []

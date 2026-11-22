@@ -1,0 +1,12 @@
+key: remio/host
+publisher: remio
+name: Remio Host
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remio/RemioHost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remio/RemioHost
+identifiers:
+- winget: Remio.RemioHost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Remio/RemioHost
+aliases:
+- remio/remio-host

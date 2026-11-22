@@ -1,0 +1,11 @@
+key: tidepool-project/tidepool-uploader
+publisher: tidepool-project
+name: Tidepool Uploader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tidepool/TidepoolUploader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tidepool/TidepoolUploader
+identifiers:
+- winget: Tidepool.TidepoolUploader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tidepool/TidepoolUploader
+aliases: []

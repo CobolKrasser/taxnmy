@@ -1,0 +1,11 @@
+key: hyact/wb-switch-plus
+publisher: hyact
+name: WB-Switch-Plus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hyact/WBSwitchPlus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hyact/WBSwitchPlus
+identifiers:
+- winget: Hyact.WBSwitchPlus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hyact/WBSwitchPlus
+aliases: []

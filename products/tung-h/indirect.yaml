@@ -1,0 +1,11 @@
+key: tung-h/indirect
+publisher: tung-h
+name: Indirect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TungH/Indirect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TungH/Indirect
+identifiers:
+- winget: TungH.Indirect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TungH/Indirect
+aliases: []

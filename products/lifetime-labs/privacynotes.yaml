@@ -1,0 +1,11 @@
+key: lifetime-labs/privacynotes
+publisher: lifetime-labs
+name: PrivacyNotes
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LifetimeLabs/PrivacyNotes
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LifetimeLabs/PrivacyNotes
+identifiers:
+- winget: LifetimeLabs.PrivacyNotes
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LifetimeLabs/PrivacyNotes
+aliases: []

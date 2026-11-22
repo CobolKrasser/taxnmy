@@ -1,0 +1,11 @@
+key: ideamk/igs-viewer
+publisher: ideamk
+name: IGS Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/IGSViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/IGSViewer
+identifiers:
+- winget: IdeaMK.IGSViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IdeaMK/IGSViewer
+aliases: []

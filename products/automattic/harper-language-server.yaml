@@ -1,0 +1,11 @@
+key: automattic/harper-language-server
+publisher: automattic
+name: Harper Language Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/harper-ls
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/harper-ls
+identifiers:
+- winget: Automattic.harper-ls
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Automattic/harper-ls
+aliases: []

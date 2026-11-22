@@ -1,0 +1,11 @@
+key: xmn/bettertrumpet
+publisher: xmn
+name: BetterTrumpet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xmn/BetterTrumpet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xmn/BetterTrumpet
+identifiers:
+- winget: xmn.BetterTrumpet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/xmn/BetterTrumpet
+aliases: []

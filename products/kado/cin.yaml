@@ -1,0 +1,11 @@
+key: kado/cin
+publisher: kado
+name: cin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kado/Cin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kado/Cin
+identifiers:
+- winget: Kado.Cin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kado/Cin
+aliases: []

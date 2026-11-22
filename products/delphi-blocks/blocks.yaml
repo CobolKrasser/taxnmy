@@ -1,0 +1,11 @@
+key: delphi-blocks/blocks
+publisher: delphi-blocks
+name: Blocks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DelphiBlocks/Blocks
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DelphiBlocks/Blocks
+identifiers:
+- winget: DelphiBlocks.Blocks
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DelphiBlocks/Blocks
+aliases: []

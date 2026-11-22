@@ -1,0 +1,11 @@
+key: arashi-vision/insta360-studio
+publisher: arashi-vision
+name: Insta360 Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArashiVisionInc/Insta360Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArashiVisionInc/Insta360Studio
+identifiers:
+- winget: ArashiVisionInc.Insta360Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ArashiVisionInc/Insta360Studio
+aliases: []

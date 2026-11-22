@@ -1,0 +1,11 @@
+key: consumer-solucoes-em-tecnologia/consumer
+publisher: consumer-solucoes-em-tecnologia
+name: Consumer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Consumer/Windows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Consumer/Windows
+identifiers:
+- winget: Consumer.Windows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Consumer/Windows
+aliases: []

@@ -1,0 +1,11 @@
+key: software-companions/viewcompanion-standard
+publisher: software-companions
+name: ViewCompanion Standard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionStandard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionStandard
+identifiers:
+- winget: SoftwareCompanions.ViewCompanionStandard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareCompanions/ViewCompanionStandard
+aliases: []

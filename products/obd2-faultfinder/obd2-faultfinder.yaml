@@ -1,0 +1,11 @@
+key: obd2-faultfinder/obd2-faultfinder
+publisher: obd2-faultfinder
+name: OBD2 FaultFinder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBD2FaultFinder/OBD2FaultFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBD2FaultFinder/OBD2FaultFinder
+identifiers:
+- winget: OBD2FaultFinder.OBD2FaultFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OBD2FaultFinder/OBD2FaultFinder
+aliases: []

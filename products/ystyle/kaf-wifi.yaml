@@ -1,0 +1,11 @@
+key: ystyle/kaf-wifi
+publisher: ystyle
+name: kaf-wifi
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YSTYLE/kaf-wifi
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YSTYLE/kaf-wifi
+identifiers:
+- winget: YSTYLE.kaf-wifi
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/YSTYLE/kaf-wifi
+aliases: []

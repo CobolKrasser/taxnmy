@@ -1,0 +1,11 @@
+key: parsec-cloud/parsec-virtual-display-driver
+publisher: parsec-cloud
+name: Parsec Virtual Display Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/ParsecVDD
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/ParsecVDD
+identifiers:
+- winget: Parsec.ParsecVDD
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Parsec/ParsecVDD
+aliases: []

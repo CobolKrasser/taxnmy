@@ -1,0 +1,11 @@
+key: robotis/dynamixel-wizard-cli
+publisher: robotis
+name: DYNAMIXEL Wizard CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ROBOTIS/DynamixelWizardCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ROBOTIS/DynamixelWizardCLI
+identifiers:
+- winget: ROBOTIS.DynamixelWizardCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ROBOTIS/DynamixelWizardCLI
+aliases: []

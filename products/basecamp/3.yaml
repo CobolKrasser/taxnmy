@@ -1,0 +1,12 @@
+key: basecamp/3
+publisher: basecamp
+name: Basecamp 3
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BasecampLLC/Basecamp3
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BasecampLLC/Basecamp3
+identifiers:
+- winget: BasecampLLC.Basecamp3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BasecampLLC/Basecamp3
+aliases:
+- basecamp/basecamp-3

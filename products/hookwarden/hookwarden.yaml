@@ -1,0 +1,11 @@
+key: hookwarden/hookwarden
+publisher: hookwarden
+name: hookwarden
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hookwarden/Hookwarden
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hookwarden/Hookwarden
+identifiers:
+- winget: Hookwarden.Hookwarden
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hookwarden/Hookwarden
+aliases: []

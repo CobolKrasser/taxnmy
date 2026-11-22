@@ -1,0 +1,11 @@
+key: jde-projects/simple-account-balancer
+publisher: jde-projects
+name: Simple Account Balancer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleAccountBalancer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleAccountBalancer
+identifiers:
+- winget: JDE-Projects.SimpleAccountBalancer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JDE-Projects/SimpleAccountBalancer
+aliases: []

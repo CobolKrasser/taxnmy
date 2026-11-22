@@ -1,0 +1,11 @@
+key: ninjacheetah/nusget
+publisher: ninjacheetah
+name: NUSGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NinjaCheetah/NUSGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NinjaCheetah/NUSGet
+identifiers:
+- winget: NinjaCheetah.NUSGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NinjaCheetah/NUSGet
+aliases: []

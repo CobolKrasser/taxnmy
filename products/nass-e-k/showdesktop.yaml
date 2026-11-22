@@ -1,0 +1,11 @@
+key: nass-e-k/showdesktop
+publisher: nass-e-k
+name: ShowDesktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/ShowDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/ShowDesktop
+identifiers:
+- winget: NASS.ShowDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NASS/ShowDesktop
+aliases: []

@@ -1,0 +1,11 @@
+key: seagate/seatools
+publisher: seagate
+name: SeaTools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seagate/SeaTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seagate/SeaTools
+identifiers:
+- winget: Seagate.SeaTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Seagate/SeaTools
+aliases: []

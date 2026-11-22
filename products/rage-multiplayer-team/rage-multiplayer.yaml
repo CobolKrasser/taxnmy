@@ -1,0 +1,11 @@
+key: rage-multiplayer-team/rage-multiplayer
+publisher: rage-multiplayer-team
+name: RAGE Multiplayer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAGEMultiplayerTeam/RAGEMultiplayer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAGEMultiplayerTeam/RAGEMultiplayer
+identifiers:
+- winget: RAGEMultiplayerTeam.RAGEMultiplayer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RAGEMultiplayerTeam/RAGEMultiplayer
+aliases: []

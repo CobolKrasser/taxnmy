@@ -1,0 +1,11 @@
+key: ingitdb/ingitdb
+publisher: ingitdb
+name: ingitdb
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ingitdb/ingitdb
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ingitdb/ingitdb
+identifiers:
+- winget: ingitdb.ingitdb
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ingitdb/ingitdb
+aliases: []

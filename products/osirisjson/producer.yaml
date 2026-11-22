@@ -1,0 +1,12 @@
+key: osirisjson/producer
+publisher: osirisjson
+name: osirisjson-producer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osirisjson/osirisjson-producer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osirisjson/osirisjson-producer
+identifiers:
+- winget: osirisjson.osirisjson-producer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/osirisjson/osirisjson-producer
+aliases:
+- osirisjson/osirisjson-producer

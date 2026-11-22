@@ -1,0 +1,11 @@
+key: quin-gillespie/fedra
+publisher: quin-gillespie
+name: Fedra
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuinGillespie/Fedra
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuinGillespie/Fedra
+identifiers:
+- winget: QuinGillespie.Fedra
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/QuinGillespie/Fedra
+aliases: []

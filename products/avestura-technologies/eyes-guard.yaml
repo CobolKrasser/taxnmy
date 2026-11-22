@@ -1,0 +1,11 @@
+key: avestura-technologies/eyes-guard
+publisher: avestura-technologies
+name: Eyes Guard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avestura/EyesGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avestura/EyesGuard
+identifiers:
+- winget: Avestura.EyesGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avestura/EyesGuard
+aliases: []

@@ -1,0 +1,11 @@
+key: jokot/git-swap
+publisher: jokot
+name: git-swap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jokot/git-swap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jokot/git-swap
+identifiers:
+- winget: jokot.git-swap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jokot/git-swap
+aliases: []

@@ -1,0 +1,11 @@
+key: instaloader/instaloader
+publisher: instaloader
+name: instaloader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/instaloader/instaloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/instaloader/instaloader
+identifiers:
+- winget: instaloader.instaloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/instaloader/instaloader
+aliases: []

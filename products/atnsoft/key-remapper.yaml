@@ -1,0 +1,11 @@
+key: atnsoft/key-remapper
+publisher: atnsoft
+name: Key Remapper
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATNSOFT/KeyRemapper
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATNSOFT/KeyRemapper
+identifiers:
+- winget: ATNSOFT.KeyRemapper
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ATNSOFT/KeyRemapper
+aliases: []

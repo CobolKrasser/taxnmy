@@ -1,0 +1,11 @@
+key: daniel-girardeau-montaut/cloudcompare
+publisher: daniel-girardeau-montaut
+name: CloudCompare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudCompare/CloudCompare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudCompare/CloudCompare
+identifiers:
+- winget: CloudCompare.CloudCompare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CloudCompare/CloudCompare
+aliases: []

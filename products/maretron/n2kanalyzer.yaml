@@ -1,0 +1,11 @@
+key: maretron/n2kanalyzer
+publisher: maretron
+name: N2KAnalyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maretron/N2KAnalyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maretron/N2KAnalyzer
+identifiers:
+- winget: Maretron.N2KAnalyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maretron/N2KAnalyzer
+aliases: []

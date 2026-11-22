@@ -1,0 +1,11 @@
+key: travis-meyer/sunsama
+publisher: travis-meyer
+name: Sunsama
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summay/Sunsama
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summay/Sunsama
+identifiers:
+- winget: Summay.Sunsama
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summay/Sunsama
+aliases: []

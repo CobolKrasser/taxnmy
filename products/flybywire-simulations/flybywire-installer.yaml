@@ -1,0 +1,11 @@
+key: flybywire-simulations/flybywire-installer
+publisher: flybywire-simulations
+name: FlyByWire Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlyByWireSimulations/FlyByWireSimulationsInstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlyByWireSimulations/FlyByWireSimulationsInstaller
+identifiers:
+- winget: FlyByWireSimulations.FlyByWireSimulationsInstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FlyByWireSimulations/FlyByWireSimulationsInstaller
+aliases: []

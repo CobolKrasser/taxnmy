@@ -1,0 +1,11 @@
+key: oldj/switchhosts
+publisher: oldj
+name: SwitchHosts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oldj/switchhosts
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oldj/switchhosts
+identifiers:
+- winget: oldj.switchhosts
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oldj/switchhosts
+aliases: []

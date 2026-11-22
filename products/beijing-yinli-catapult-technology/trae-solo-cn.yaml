@@ -1,0 +1,11 @@
+key: beijing-yinli-catapult-technology/trae-solo-cn
+publisher: beijing-yinli-catapult-technology
+name: TRAE SOLO CN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/TraeWork/CN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/TraeWork/CN
+identifiers:
+- winget: ByteDance.TraeWork.CN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/TraeWork/CN
+aliases: []

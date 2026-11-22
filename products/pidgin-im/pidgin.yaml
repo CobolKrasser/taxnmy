@@ -1,0 +1,11 @@
+key: pidgin-im/pidgin
+publisher: pidgin-im
+name: Pidgin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pidgin/Pidgin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pidgin/Pidgin
+identifiers:
+- winget: Pidgin.Pidgin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Pidgin/Pidgin
+aliases: []

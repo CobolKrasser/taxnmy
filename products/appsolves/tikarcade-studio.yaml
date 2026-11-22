@@ -1,0 +1,11 @@
+key: appsolves/tikarcade-studio
+publisher: appsolves
+name: TikArcade Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppSolves/TikArcade-Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppSolves/TikArcade-Studio
+identifiers:
+- winget: AppSolves.TikArcade-Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AppSolves/TikArcade-Studio
+aliases: []

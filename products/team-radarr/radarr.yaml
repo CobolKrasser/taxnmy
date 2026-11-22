@@ -1,0 +1,11 @@
+key: team-radarr/radarr
+publisher: team-radarr
+name: Radarr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamRadarr/Radarr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamRadarr/Radarr
+identifiers:
+- winget: TeamRadarr.Radarr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamRadarr/Radarr
+aliases: []

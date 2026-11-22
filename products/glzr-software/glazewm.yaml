@@ -1,0 +1,11 @@
+key: glzr-software/glazewm
+publisher: glzr-software
+name: GlazeWM
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/glzr-io/glazewm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/glzr-io/glazewm
+identifiers:
+- winget: glzr-io.glazewm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/glzr-io/glazewm
+aliases: []

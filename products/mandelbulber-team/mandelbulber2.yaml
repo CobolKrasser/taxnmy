@@ -1,0 +1,11 @@
+key: mandelbulber-team/mandelbulber2
+publisher: mandelbulber-team
+name: Mandelbulber2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mandelbulber/Mandelbulber
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mandelbulber/Mandelbulber
+identifiers:
+- winget: Mandelbulber.Mandelbulber
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mandelbulber/Mandelbulber
+aliases: []

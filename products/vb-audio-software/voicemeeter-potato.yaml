@@ -1,0 +1,11 @@
+key: vb-audio-software/voicemeeter-potato
+publisher: vb-audio-software
+name: Voicemeeter Potato
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter/Potato
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter/Potato
+identifiers:
+- winget: VB-Audio.Voicemeeter.Potato
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VB-Audio/Voicemeeter/Potato
+aliases: []

@@ -1,0 +1,11 @@
+key: softsea/utm-converter
+publisher: softsea
+name: UTM Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/UTMConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/UTMConverter
+identifiers:
+- winget: SoftSea.UTMConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftSea/UTMConverter
+aliases: []

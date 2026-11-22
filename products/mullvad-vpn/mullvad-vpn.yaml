@@ -1,0 +1,13 @@
+key: mullvad-vpn/mullvad-vpn
+publisher: mullvad-vpn
+name: Mullvad VPN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPN
+identifiers:
+- winget: MullvadVPN.MullvadVPN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPN
+- winget: MullvadVPN.MullvadVPN.beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MullvadVPN/MullvadVPN/beta
+aliases: []

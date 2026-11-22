@@ -1,0 +1,11 @@
+key: querz/mca-selector
+publisher: querz
+name: MCA Selector
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Querz/MCASelector
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Querz/MCASelector
+identifiers:
+- winget: Querz.MCASelector
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/Querz/MCASelector
+aliases: []

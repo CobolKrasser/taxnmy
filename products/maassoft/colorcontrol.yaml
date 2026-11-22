@@ -1,0 +1,11 @@
+key: maassoft/colorcontrol
+publisher: maassoft
+name: ColorControl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maassoft/ColorControl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maassoft/ColorControl
+identifiers:
+- winget: Maassoft.ColorControl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maassoft/ColorControl
+aliases: []

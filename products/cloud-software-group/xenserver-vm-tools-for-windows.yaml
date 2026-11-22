@@ -1,0 +1,11 @@
+key: cloud-software-group/xenserver-vm-tools-for-windows
+publisher: cloud-software-group
+name: XenServer VM Tools for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XenServer/XenTools
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XenServer/XenTools
+identifiers:
+- winget: XenServer.XenTools
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XenServer/XenTools
+aliases: []

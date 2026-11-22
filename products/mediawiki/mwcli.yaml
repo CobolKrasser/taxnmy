@@ -1,0 +1,11 @@
+key: mediawiki/mwcli
+publisher: mediawiki
+name: mwcli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wikimedia/mwcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wikimedia/mwcli
+identifiers:
+- winget: wikimedia.mwcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/wikimedia/mwcli
+aliases: []

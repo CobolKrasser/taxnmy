@@ -1,0 +1,11 @@
+key: trojan-unicorn-ventures/agentbus
+publisher: trojan-unicorn-ventures
+name: agentbus
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ericfitz/agentbus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ericfitz/agentbus
+identifiers:
+- winget: ericfitz.agentbus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ericfitz/agentbus
+aliases: []

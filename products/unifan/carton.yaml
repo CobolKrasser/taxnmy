@@ -1,0 +1,11 @@
+key: unifan/carton
+publisher: unifan
+name: carton
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unifan/Carton
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unifan/Carton
+identifiers:
+- winget: Unifan.Carton
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Unifan/Carton
+aliases: []

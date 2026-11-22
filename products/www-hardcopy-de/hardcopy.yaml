@@ -1,0 +1,11 @@
+key: www-hardcopy-de/hardcopy
+publisher: www-hardcopy-de
+name: Hardcopy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sw4you/Hardcopy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sw4you/Hardcopy
+identifiers:
+- winget: sw4you.Hardcopy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sw4you/Hardcopy
+aliases: []

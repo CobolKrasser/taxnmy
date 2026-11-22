@@ -1,0 +1,11 @@
+key: tortoisegit/tortoisegit
+publisher: tortoisegit
+name: TortoiseGit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseGit/TortoiseGit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseGit/TortoiseGit
+identifiers:
+- winget: TortoiseGit.TortoiseGit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseGit/TortoiseGit
+aliases: []

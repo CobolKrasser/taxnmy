@@ -1,0 +1,11 @@
+key: spotify/spotify
+publisher: spotify
+name: Spotify
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spotify/Spotify
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spotify/Spotify
+identifiers:
+- winget: Spotify.Spotify
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Spotify/Spotify
+aliases: []

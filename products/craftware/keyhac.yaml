@@ -1,0 +1,11 @@
+key: craftware/keyhac
+publisher: craftware
+name: Keyhac
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craftware/Keyhac
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craftware/Keyhac
+identifiers:
+- winget: Craftware.Keyhac
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Craftware/Keyhac
+aliases: []

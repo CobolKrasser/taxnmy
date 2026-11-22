@@ -1,0 +1,11 @@
+key: doist/todoist
+publisher: doist
+name: Todoist
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doist/Todoist
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doist/Todoist
+identifiers:
+- winget: Doist.Todoist
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doist/Todoist
+aliases: []

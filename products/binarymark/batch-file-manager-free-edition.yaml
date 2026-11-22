@@ -1,0 +1,11 @@
+key: binarymark/batch-file-manager-free-edition
+publisher: binarymark
+name: Batch File Manager Free Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileManager
+identifiers:
+- winget: BinaryMark.BatchFileManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BinaryMark/BatchFileManager
+aliases: []

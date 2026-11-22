@@ -1,0 +1,12 @@
+key: navigraph/hub
+publisher: navigraph
+name: Navigraph Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navigraph/NavigraphHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navigraph/NavigraphHub
+identifiers:
+- winget: Navigraph.NavigraphHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Navigraph/NavigraphHub
+aliases:
+- navigraph/navigraph-hub

@@ -1,0 +1,11 @@
+key: signal-messenger/signal-beta
+publisher: signal-messenger
+name: Signal Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhisperSystems/Signal/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhisperSystems/Signal/Beta
+identifiers:
+- winget: OpenWhisperSystems.Signal.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhisperSystems/Signal/Beta
+aliases: []

@@ -1,0 +1,11 @@
+key: addlayer/dbine
+publisher: addlayer
+name: DBine
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AddLayer/DBine
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AddLayer/DBine
+identifiers:
+- winget: AddLayer.DBine
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AddLayer/DBine
+aliases: []

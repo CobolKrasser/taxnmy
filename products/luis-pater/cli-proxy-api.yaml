@@ -1,0 +1,11 @@
+key: luis-pater/cli-proxy-api
+publisher: luis-pater
+name: CLI Proxy API
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuisPater/CLIProxyAPI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuisPater/CLIProxyAPI
+identifiers:
+- winget: LuisPater.CLIProxyAPI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LuisPater/CLIProxyAPI
+aliases: []

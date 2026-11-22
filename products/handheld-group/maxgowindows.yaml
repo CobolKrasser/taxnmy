@@ -1,0 +1,11 @@
+key: handheld-group/maxgowindows
+publisher: handheld-group
+name: MaxGoWindows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandheldGroup/MaxGoWindows
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandheldGroup/MaxGoWindows
+identifiers:
+- winget: HandheldGroup.MaxGoWindows
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HandheldGroup/MaxGoWindows
+aliases: []

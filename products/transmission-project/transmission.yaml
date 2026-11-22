@@ -1,0 +1,11 @@
+key: transmission-project/transmission
+publisher: transmission-project
+name: Transmission
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Transmission/Transmission
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Transmission/Transmission
+identifiers:
+- winget: Transmission.Transmission
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Transmission/Transmission
+aliases: []

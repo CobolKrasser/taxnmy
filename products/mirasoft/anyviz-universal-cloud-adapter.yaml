@@ -1,0 +1,11 @@
+key: mirasoft/anyviz-universal-cloud-adapter
+publisher: mirasoft
+name: AnyViz Universal Cloud Adapter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirasoft/AnyVizCloudAdapter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirasoft/AnyVizCloudAdapter
+identifiers:
+- winget: Mirasoft.AnyVizCloudAdapter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mirasoft/AnyVizCloudAdapter
+aliases: []

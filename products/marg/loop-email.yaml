@@ -1,0 +1,13 @@
+key: marg/loop-email
+publisher: marg
+name: Loop Email
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InTheLoop/LoopEmail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InTheLoop/LoopEmail
+identifiers:
+- winget: InTheLoop.LoopEmail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InTheLoop/LoopEmail
+- winget: InTheLoop.LoopEmail.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/InTheLoop/LoopEmail/Beta
+aliases: []

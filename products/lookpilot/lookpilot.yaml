@@ -1,0 +1,11 @@
+key: lookpilot/lookpilot
+publisher: lookpilot
+name: LookPilot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reblexis/LookPilot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reblexis/LookPilot
+identifiers:
+- winget: Reblexis.LookPilot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Reblexis/LookPilot
+aliases: []

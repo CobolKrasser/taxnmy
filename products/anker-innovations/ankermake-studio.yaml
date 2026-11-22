@@ -1,0 +1,11 @@
+key: anker-innovations/ankermake-studio
+publisher: anker-innovations
+name: AnkerMake Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anker/AnkerMake
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anker/AnkerMake
+identifiers:
+- winget: Anker.AnkerMake
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anker/AnkerMake
+aliases: []

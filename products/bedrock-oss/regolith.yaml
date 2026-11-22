@@ -1,0 +1,11 @@
+key: bedrock-oss/regolith
+publisher: bedrock-oss
+name: regolith
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bedrock-OSS/regolith
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bedrock-OSS/regolith
+identifiers:
+- winget: Bedrock-OSS.regolith
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bedrock-OSS/regolith
+aliases: []

@@ -1,0 +1,11 @@
+key: toitware/toit
+publisher: toitware
+name: Toit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toit/Toit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toit/Toit
+identifiers:
+- winget: Toit.Toit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Toit/Toit
+aliases: []

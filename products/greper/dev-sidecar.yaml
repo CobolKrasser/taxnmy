@@ -1,0 +1,11 @@
+key: greper/dev-sidecar
+publisher: greper
+name: dev-sidecar
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/docmirror/dev-sidecar
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/docmirror/dev-sidecar
+identifiers:
+- winget: docmirror.dev-sidecar
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/docmirror/dev-sidecar
+aliases: []

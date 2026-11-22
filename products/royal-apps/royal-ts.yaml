@@ -1,0 +1,15 @@
+key: royal-apps/royal-ts
+publisher: royal-apps
+name: Royal TS
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalTS/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalTS/5
+identifiers:
+- winget: RoyalApps.RoyalTS.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalTS/5
+- winget: RoyalApps.RoyalTS.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalTS/6
+- winget: RoyalApps.RoyalTS.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RoyalApps/RoyalTS/7
+aliases: []

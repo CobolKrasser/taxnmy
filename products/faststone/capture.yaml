@@ -1,0 +1,12 @@
+key: faststone/capture
+publisher: faststone
+name: FastStone Capture
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastStone/Capture
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastStone/Capture
+identifiers:
+- winget: FastStone.Capture
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastStone/Capture
+aliases:
+- faststone/faststone-capture

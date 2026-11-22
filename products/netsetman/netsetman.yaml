@@ -1,0 +1,11 @@
+key: netsetman/netsetman
+publisher: netsetman
+name: NetSetMan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSetMan/NetSetMan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSetMan/NetSetMan
+identifiers:
+- winget: NetSetMan.NetSetMan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NetSetMan/NetSetMan
+aliases: []

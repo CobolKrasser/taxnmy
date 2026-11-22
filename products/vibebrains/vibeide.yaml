@@ -1,0 +1,11 @@
+key: vibebrains/vibeide
+publisher: vibebrains
+name: VibeIDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VibeBrains/VibeIDE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VibeBrains/VibeIDE
+identifiers:
+- winget: VibeBrains.VibeIDE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VibeBrains/VibeIDE
+aliases: []

@@ -1,0 +1,11 @@
+key: edgeever-contributors/edgeever
+publisher: edgeever-contributors
+name: EdgeEver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tianma-if/EdgeEver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tianma-if/EdgeEver
+identifiers:
+- winget: tianma-if.EdgeEver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tianma-if/EdgeEver
+aliases: []

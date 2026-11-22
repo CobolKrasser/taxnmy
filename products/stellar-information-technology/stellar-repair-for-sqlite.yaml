@@ -1,0 +1,11 @@
+key: stellar-information-technology/stellar-repair-for-sqlite
+publisher: stellar-information-technology
+name: Stellar Repair for SQLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairforSQLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairforSQLite
+identifiers:
+- winget: StellarDataRecovery.StellarRepairforSQLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StellarDataRecovery/StellarRepairforSQLite
+aliases: []

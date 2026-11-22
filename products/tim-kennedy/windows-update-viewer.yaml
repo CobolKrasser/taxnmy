@@ -1,0 +1,11 @@
+key: tim-kennedy/windows-update-viewer
+publisher: tim-kennedy
+name: Windows Update Viewer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timthreetwelve/WUView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timthreetwelve/WUView
+identifiers:
+- winget: Timthreetwelve.WUView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Timthreetwelve/WUView
+aliases: []

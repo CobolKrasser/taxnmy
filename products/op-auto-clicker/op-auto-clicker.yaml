@@ -1,0 +1,11 @@
+key: op-auto-clicker/op-auto-clicker
+publisher: op-auto-clicker
+name: OP Auto Clicker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OPAutoClicker/OPAutoClicker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OPAutoClicker/OPAutoClicker
+identifiers:
+- winget: OPAutoClicker.OPAutoClicker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OPAutoClicker/OPAutoClicker
+aliases: []

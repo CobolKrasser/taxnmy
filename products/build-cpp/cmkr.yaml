@@ -1,0 +1,11 @@
+key: build-cpp/cmkr
+publisher: build-cpp
+name: cmkr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build-cpp/cmkr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build-cpp/cmkr
+identifiers:
+- winget: build-cpp.cmkr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/build-cpp/cmkr
+aliases: []

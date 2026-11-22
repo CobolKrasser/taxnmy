@@ -1,0 +1,11 @@
+key: aptos-foundation/aptos
+publisher: aptos-foundation
+name: Aptos
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AptosCore/aptos
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AptosCore/aptos
+identifiers:
+- winget: AptosCore.aptos
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AptosCore/aptos
+aliases: []

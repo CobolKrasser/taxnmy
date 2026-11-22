@@ -1,0 +1,11 @@
+key: versent/saml2aws
+publisher: versent
+name: saml2aws
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Versent/saml2aws
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Versent/saml2aws
+identifiers:
+- winget: Versent.saml2aws
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Versent/saml2aws
+aliases: []

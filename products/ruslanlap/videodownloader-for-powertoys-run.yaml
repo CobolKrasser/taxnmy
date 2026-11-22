@@ -1,0 +1,11 @@
+key: ruslanlap/videodownloader-for-powertoys-run
+publisher: ruslanlap
+name: VideoDownloader for PowerToys Run
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ruslanlap/PowerToysRun-VideoDownloader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ruslanlap/PowerToysRun-VideoDownloader
+identifiers:
+- winget: ruslanlap.PowerToysRun-VideoDownloader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ruslanlap/PowerToysRun-VideoDownloader
+aliases: []

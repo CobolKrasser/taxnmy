@@ -1,0 +1,11 @@
+key: xenia/xenia
+publisher: xenia
+name: Xenia
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xenia/Xenia
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xenia/Xenia
+identifiers:
+- winget: Xenia.Xenia
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xenia/Xenia
+aliases: []

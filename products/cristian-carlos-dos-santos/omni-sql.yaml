@@ -1,0 +1,11 @@
+key: cristian-carlos-dos-santos/omni-sql
+publisher: cristian-carlos-dos-santos
+name: omni-sql
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cccadet/omni-sql
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cccadet/omni-sql
+identifiers:
+- winget: cccadet.omni-sql
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/cccadet/omni-sql
+aliases: []

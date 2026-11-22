@@ -1,0 +1,11 @@
+key: summa/coligo-desktop
+publisher: summa
+name: Coligo DESKTOP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summa/ColigoDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summa/ColigoDesktop
+identifiers:
+- winget: Summa.ColigoDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Summa/ColigoDesktop
+aliases: []

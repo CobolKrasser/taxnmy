@@ -1,0 +1,11 @@
+key: fiji-team/fiji-imagej
+publisher: fiji-team
+name: Fiji ImageJ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fiji/ImageJ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fiji/ImageJ
+identifiers:
+- winget: Fiji.ImageJ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Fiji/ImageJ
+aliases: []

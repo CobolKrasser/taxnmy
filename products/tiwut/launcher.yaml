@@ -1,0 +1,12 @@
+key: tiwut/launcher
+publisher: tiwut
+name: Tiwut Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tiwut/Launcher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tiwut/Launcher
+identifiers:
+- winget: Tiwut.Launcher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tiwut/Launcher
+aliases:
+- tiwut/tiwut-launcher

@@ -1,0 +1,11 @@
+key: ascensio-system-sia/avs-video-remaker
+publisher: ascensio-system-sia
+name: AVS Video ReMaker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSVideoReMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSVideoReMaker
+identifiers:
+- winget: Ascensio.AVSVideoReMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Ascensio/AVSVideoReMaker
+aliases: []

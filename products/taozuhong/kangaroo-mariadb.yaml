@@ -1,0 +1,11 @@
+key: taozuhong/kangaroo-mariadb
+publisher: taozuhong
+name: Kangaroo MariaDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taozuhong/KangarooMariaDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taozuhong/KangarooMariaDB
+identifiers:
+- winget: Taozuhong.KangarooMariaDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Taozuhong/KangarooMariaDB
+aliases: []

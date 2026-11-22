@@ -1,0 +1,11 @@
+key: sourcegit-scm/sourcegit
+publisher: sourcegit-scm
+name: SourceGit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sourcegit-scm/SourceGit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sourcegit-scm/SourceGit
+identifiers:
+- winget: sourcegit-scm.SourceGit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sourcegit-scm/SourceGit
+aliases: []

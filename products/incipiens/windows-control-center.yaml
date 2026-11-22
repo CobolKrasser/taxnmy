@@ -1,0 +1,11 @@
+key: incipiens/windows-control-center
+publisher: incipiens
+name: Windows Control Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Incipiens/WindowsControlCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Incipiens/WindowsControlCenter
+identifiers:
+- winget: Incipiens.WindowsControlCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/Incipiens/WindowsControlCenter
+aliases: []

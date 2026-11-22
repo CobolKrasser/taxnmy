@@ -1,0 +1,11 @@
+key: zane-schepke/wg-tunnel
+publisher: zane-schepke
+name: WG Tunnel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WGTunnel/WGTunnel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WGTunnel/WGTunnel
+identifiers:
+- winget: WGTunnel.WGTunnel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WGTunnel/WGTunnel
+aliases: []

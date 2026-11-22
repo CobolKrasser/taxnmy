@@ -1,0 +1,11 @@
+key: tenacity-team/tenacity
+publisher: tenacity-team
+name: Tenacity
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenacityTeam/Tenacity
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenacityTeam/Tenacity
+identifiers:
+- winget: TenacityTeam.Tenacity
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TenacityTeam/Tenacity
+aliases: []

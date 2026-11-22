@@ -1,0 +1,12 @@
+key: vovsoft/create-image-gallery
+publisher: vovsoft
+name: Vovsoft Create Image Gallery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CreateImageGallery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CreateImageGallery
+identifiers:
+- winget: VovSoft.CreateImageGallery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/CreateImageGallery
+aliases:
+- vovsoft/vovsoft-create-image-gallery

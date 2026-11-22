@@ -1,0 +1,11 @@
+key: the-sz-development/medford
+publisher: the-sz-development
+name: Medford
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Medford
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Medford
+identifiers:
+- winget: the-sz.Medford
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/the-sz/Medford
+aliases: []

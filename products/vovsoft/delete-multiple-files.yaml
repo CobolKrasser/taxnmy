@@ -1,0 +1,12 @@
+key: vovsoft/delete-multiple-files
+publisher: vovsoft
+name: Vovsoft Delete Multiple Files
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DeleteMultipleFiles
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DeleteMultipleFiles
+identifiers:
+- winget: VovSoft.DeleteMultipleFiles
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/DeleteMultipleFiles
+aliases:
+- vovsoft/vovsoft-delete-multiple-files

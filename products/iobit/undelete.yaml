@@ -1,0 +1,12 @@
+key: iobit/undelete
+publisher: iobit
+name: IObit Undelete
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitUndelete
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitUndelete
+identifiers:
+- winget: IObit.IObitUndelete
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/IObitUndelete
+aliases:
+- iobit/iobit-undelete

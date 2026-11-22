@@ -1,0 +1,11 @@
+key: bauerapps/rightnote-installer
+publisher: bauerapps
+name: RightNote Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bauerapps/RightNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bauerapps/RightNote
+identifiers:
+- winget: Bauerapps.RightNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bauerapps/RightNote
+aliases: []

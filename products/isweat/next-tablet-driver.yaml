@@ -1,0 +1,11 @@
+key: isweat/next-tablet-driver
+publisher: isweat
+name: Next Tablet Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iSweat/NextTabletDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iSweat/NextTabletDriver
+identifiers:
+- winget: iSweat.NextTabletDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iSweat/NextTabletDriver
+aliases: []

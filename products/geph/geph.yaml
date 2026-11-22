@@ -1,0 +1,11 @@
+key: geph/geph
+publisher: geph
+name: Geph
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geph/Geph
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geph/Geph
+identifiers:
+- winget: Geph.Geph
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Geph/Geph
+aliases: []

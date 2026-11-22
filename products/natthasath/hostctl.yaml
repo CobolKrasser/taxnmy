@@ -1,0 +1,11 @@
+key: natthasath/hostctl
+publisher: natthasath
+name: hostctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natthasath/hostctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natthasath/hostctl
+identifiers:
+- winget: Natthasath.hostctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Natthasath/hostctl
+aliases: []

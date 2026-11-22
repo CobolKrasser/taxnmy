@@ -1,0 +1,11 @@
+key: ilovepdf-s-l/ilovepdf
+publisher: ilovepdf-s-l
+name: iLovePDF
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iLovePDF/iLovePDFDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iLovePDF/iLovePDFDesktop
+identifiers:
+- winget: iLovePDF.iLovePDFDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iLovePDF/iLovePDFDesktop
+aliases: []

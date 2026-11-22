@@ -1,0 +1,11 @@
+key: multilogin/multilogin
+publisher: multilogin
+name: Multilogin
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multilogin/Multilogin
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multilogin/Multilogin
+identifiers:
+- winget: Multilogin.Multilogin
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Multilogin/Multilogin
+aliases: []

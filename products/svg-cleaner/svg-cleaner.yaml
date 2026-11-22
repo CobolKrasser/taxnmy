@@ -1,0 +1,11 @@
+key: svg-cleaner/svg-cleaner
+publisher: svg-cleaner
+name: SVG Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazrFalcon/SVGCleaner/GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazrFalcon/SVGCleaner/GUI
+identifiers:
+- winget: RazrFalcon.SVGCleaner.GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RazrFalcon/SVGCleaner/GUI
+aliases: []

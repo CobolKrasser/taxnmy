@@ -1,0 +1,11 @@
+key: visorcraft/mongrel
+publisher: visorcraft
+name: Mongrel
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisorCraft/Mongrel
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisorCraft/Mongrel
+identifiers:
+- winget: VisorCraft.Mongrel
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VisorCraft/Mongrel
+aliases: []

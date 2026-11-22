@@ -1,0 +1,12 @@
+key: locklizard/safeguard-pdf-writer
+publisher: locklizard
+name: Locklizard Safeguard - PDF Writer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFWriter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFWriter
+identifiers:
+- winget: Locklizard.SafeguardPDFWriter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Locklizard/SafeguardPDFWriter
+aliases:
+- locklizard/locklizard-safeguard-pdf-writer

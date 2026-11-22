@@ -1,0 +1,11 @@
+key: synacor/zimbra-desktop
+publisher: synacor
+name: Zimbra Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synacor/ZimbraDesktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synacor/ZimbraDesktop
+identifiers:
+- winget: Synacor.ZimbraDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Synacor/ZimbraDesktop
+aliases: []

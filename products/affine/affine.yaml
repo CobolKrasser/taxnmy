@@ -1,0 +1,11 @@
+key: affine/affine
+publisher: affine
+name: AFFiNE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToEverything/AFFiNE
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToEverything/AFFiNE
+identifiers:
+- winget: ToEverything.AFFiNE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ToEverything/AFFiNE
+aliases: []

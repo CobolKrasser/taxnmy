@@ -1,0 +1,11 @@
+key: confold/confold
+publisher: confold
+name: Confold
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Confold/Confold
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Confold/Confold
+identifiers:
+- winget: Confold.Confold
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Confold/Confold
+aliases: []

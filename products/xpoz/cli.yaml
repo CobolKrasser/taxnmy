@@ -1,0 +1,12 @@
+key: xpoz/cli
+publisher: xpoz
+name: xpoz-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xpoz/XpozCli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xpoz/XpozCli
+identifiers:
+- winget: Xpoz.XpozCli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/Xpoz/XpozCli
+aliases:
+- xpoz/xpoz-cli

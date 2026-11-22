@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-sqlite
+publisher: premiumsoft-cybertech
+name: Navicat for SQLite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatSQLite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatSQLite
+identifiers:
+- winget: PremiumSoft.NavicatSQLite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatSQLite
+aliases: []

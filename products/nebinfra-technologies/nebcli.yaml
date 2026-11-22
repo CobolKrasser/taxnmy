@@ -1,0 +1,11 @@
+key: nebinfra-technologies/nebcli
+publisher: nebinfra-technologies
+name: NebCLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nebinfra/nebcli
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nebinfra/nebcli
+identifiers:
+- winget: nebinfra.nebcli
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/nebinfra/nebcli
+aliases: []

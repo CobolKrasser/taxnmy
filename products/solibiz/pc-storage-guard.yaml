@@ -1,0 +1,11 @@
+key: solibiz/pc-storage-guard
+publisher: solibiz
+name: PC Storage Guard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Solibiz/PCStorageGuard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Solibiz/PCStorageGuard
+identifiers:
+- winget: Solibiz.PCStorageGuard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Solibiz/PCStorageGuard
+aliases: []

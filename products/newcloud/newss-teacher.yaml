@@ -1,0 +1,11 @@
+key: newcloud/newss-teacher
+publisher: newcloud
+name: NewSS Teacher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/NewSSTeacher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/NewSSTeacher
+identifiers:
+- winget: NewCloud.NewSSTeacher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NewCloud/NewSSTeacher
+aliases: []

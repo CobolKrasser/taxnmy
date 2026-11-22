@@ -1,0 +1,12 @@
+key: inpixio/photo-studio-12-demo
+publisher: inpixio
+name: inPixio Photo Studio 12 Demo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inPixio/inPixioPhotoStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inPixio/inPixioPhotoStudio
+identifiers:
+- winget: inPixio.inPixioPhotoStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/inPixio/inPixioPhotoStudio
+aliases:
+- inpixio/inpixio-photo-studio-12-demo

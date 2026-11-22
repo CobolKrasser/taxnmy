@@ -1,0 +1,11 @@
+key: controlup-technologies/controlup-remote-dx-microsoft-avd-rdp
+publisher: controlup-technologies
+name: ControlUp Remote DX - Microsoft AVD/RDP
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Microsoft
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Microsoft
+identifiers:
+- winget: ControlUp.RemoteDX.Microsoft
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/ControlUp/RemoteDX/Microsoft
+aliases: []

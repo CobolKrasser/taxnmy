@@ -1,0 +1,11 @@
+key: ria/digidoc4-client
+publisher: ria
+name: DigiDoc4 Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RIA/DigiDoc4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RIA/DigiDoc4
+identifiers:
+- winget: RIA.DigiDoc4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RIA/DigiDoc4
+aliases: []

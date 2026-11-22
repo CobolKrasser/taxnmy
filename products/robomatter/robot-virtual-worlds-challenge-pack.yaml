@@ -1,0 +1,11 @@
+key: robomatter/robot-virtual-worlds-challenge-pack
+publisher: robomatter
+name: Robot Virtual Worlds - Challenge Pack
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/RobotVirtualWorlds/ChallengePack
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/RobotVirtualWorlds/ChallengePack
+identifiers:
+- winget: Robomatter.RobotVirtualWorlds.ChallengePack
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Robomatter/RobotVirtualWorlds/ChallengePack
+aliases: []

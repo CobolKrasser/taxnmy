@@ -1,0 +1,11 @@
+key: hermann-schinagl/ln-command-line-hardlinks
+publisher: hermann-schinagl
+name: Ln - Command line Hardlinks
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HermannSchinagl/ln
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HermannSchinagl/ln
+identifiers:
+- winget: HermannSchinagl.ln
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HermannSchinagl/ln
+aliases: []

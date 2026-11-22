@@ -1,0 +1,12 @@
+key: vovsoft/network-authenticator
+publisher: vovsoft
+name: Vovsoft Network Authenticator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NetworkAuthenticator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NetworkAuthenticator
+identifiers:
+- winget: VovSoft.NetworkAuthenticator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/NetworkAuthenticator
+aliases:
+- vovsoft/vovsoft-network-authenticator

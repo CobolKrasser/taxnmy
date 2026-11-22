@@ -1,0 +1,11 @@
+key: rand-lee/sc-compose
+publisher: rand-lee
+name: sc-compose
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/randlee/sc-compose
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/randlee/sc-compose
+identifiers:
+- winget: randlee.sc-compose
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/randlee/sc-compose
+aliases: []

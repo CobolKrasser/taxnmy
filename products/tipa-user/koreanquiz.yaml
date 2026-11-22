@@ -1,0 +1,11 @@
+key: tipa-user/koreanquiz
+publisher: tipa-user
+name: KoreanQuiz
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tipa_User/KoreanQuiz
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tipa_User/KoreanQuiz
+identifiers:
+- winget: Tipa_User.KoreanQuiz
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tipa_User/KoreanQuiz
+aliases: []

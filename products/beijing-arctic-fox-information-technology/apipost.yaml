@@ -1,0 +1,11 @@
+key: beijing-arctic-fox-information-technology/apipost
+publisher: beijing-arctic-fox-information-technology
+name: Apipost
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apipost/ApiPost
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apipost/ApiPost
+identifiers:
+- winget: Apipost.ApiPost
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apipost/ApiPost
+aliases: []

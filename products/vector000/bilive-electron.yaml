@@ -1,0 +1,11 @@
+key: vector000/bilive-electron
+publisher: vector000
+name: Bilive_Electron
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vector000/bilive_electron
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vector000/bilive_electron
+identifiers:
+- winget: Vector000.bilive_electron
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Vector000/bilive_electron
+aliases: []

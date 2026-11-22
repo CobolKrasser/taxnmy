@@ -1,0 +1,11 @@
+key: extendoffice-com/office-tab
+publisher: extendoffice-com
+name: Office Tab
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExtendOffice/OfficeTab
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExtendOffice/OfficeTab
+identifiers:
+- winget: ExtendOffice.OfficeTab
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ExtendOffice/OfficeTab
+aliases: []

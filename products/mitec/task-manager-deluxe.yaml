@@ -1,0 +1,12 @@
+key: mitec/task-manager-deluxe
+publisher: mitec
+name: MiTeC Task Manager DeLuxe
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/TaskManagerDeLuxe
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/TaskManagerDeLuxe
+identifiers:
+- winget: MiTeC.TaskManagerDeLuxe
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MiTeC/TaskManagerDeLuxe
+aliases:
+- mitec/mitec-task-manager-deluxe

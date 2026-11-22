@@ -1,0 +1,11 @@
+key: premiumsoft-cybertech/navicat-for-mongodb
+publisher: premiumsoft-cybertech
+name: Navicat for MongoDB
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMongoDB
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMongoDB
+identifiers:
+- winget: PremiumSoft.NavicatMongoDB
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PremiumSoft/NavicatMongoDB
+aliases: []

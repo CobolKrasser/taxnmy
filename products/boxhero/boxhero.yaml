@@ -1,0 +1,11 @@
+key: boxhero/boxhero
+publisher: boxhero
+name: BoxHero
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoxHero/BoxHero
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoxHero/BoxHero
+identifiers:
+- winget: BoxHero.BoxHero
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BoxHero/BoxHero
+aliases: []

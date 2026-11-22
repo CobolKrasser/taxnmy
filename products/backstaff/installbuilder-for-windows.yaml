@@ -1,0 +1,11 @@
+key: backstaff/installbuilder-for-windows
+publisher: backstaff
+name: InstallBuilder for Windows
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder
+identifiers:
+- winget: BackstaffSoftware.InstallBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BackstaffSoftware/InstallBuilder
+aliases: []

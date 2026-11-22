@@ -1,0 +1,11 @@
+key: flowseal/tg-ws-proxy
+publisher: flowseal
+name: TG WS Proxy
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowseal/TGWSProxy
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowseal/TGWSProxy
+identifiers:
+- winget: Flowseal.TGWSProxy
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Flowseal/TGWSProxy
+aliases: []

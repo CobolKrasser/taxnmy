@@ -1,0 +1,12 @@
+key: iobit/uninstaller
+publisher: iobit
+name: IObit Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/Uninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/Uninstaller
+identifiers:
+- winget: IObit.Uninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/Uninstaller
+aliases:
+- iobit/iobit-uninstaller

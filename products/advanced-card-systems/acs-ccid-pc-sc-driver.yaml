@@ -1,0 +1,11 @@
+key: advanced-card-systems/acs-ccid-pc-sc-driver
+publisher: advanced-card-systems
+name: ACS CCID PC/SC Driver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACS/CCIDPCSCDriver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACS/CCIDPCSCDriver
+identifiers:
+- winget: ACS.CCIDPCSCDriver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ACS/CCIDPCSCDriver
+aliases: []

@@ -1,0 +1,19 @@
+key: joseph-albahari/linqpad
+publisher: joseph-albahari
+name: LINQPad
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/5
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/5
+identifiers:
+- winget: LINQPad.LINQPad.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/5
+- winget: LINQPad.LINQPad.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/6
+- winget: LINQPad.LINQPad.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/7
+- winget: LINQPad.LINQPad.8
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/8
+- winget: LINQPad.LINQPad.9
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LINQPad/LINQPad/9
+aliases: []

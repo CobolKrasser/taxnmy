@@ -1,0 +1,11 @@
+key: cambridge-university-press/cambridge-reader
+publisher: cambridge-university-press
+name: Cambridge Reader
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CambridgeUniversityPress/CambridgeReader
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CambridgeUniversityPress/CambridgeReader
+identifiers:
+- winget: CambridgeUniversityPress.CambridgeReader
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CambridgeUniversityPress/CambridgeReader
+aliases: []

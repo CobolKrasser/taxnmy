@@ -1,0 +1,13 @@
+key: shirowanisan/coeiroink
+publisher: shirowanisan
+name: COEIROINK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shirowanisan/COEIROINK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shirowanisan/COEIROINK
+identifiers:
+- winget: shirowanisan.COEIROINK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shirowanisan/COEIROINK
+- winget: shirowanisan.COEIROINK.GPU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/shirowanisan/COEIROINK/GPU
+aliases: []

@@ -1,0 +1,11 @@
+key: secretlul/winmedic
+publisher: secretlul
+name: WinMedic
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecretLUL/WinMedic
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecretLUL/WinMedic
+identifiers:
+- winget: SecretLUL.WinMedic
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecretLUL/WinMedic
+aliases: []

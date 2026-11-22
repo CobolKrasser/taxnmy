@@ -1,0 +1,11 @@
+key: iobit/ifun-screenshot
+publisher: iobit
+name: iFun Screenshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/iFunScreenshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/iFunScreenshot
+identifiers:
+- winget: IObit.iFunScreenshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IObit/iFunScreenshot
+aliases: []

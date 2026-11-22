@@ -1,0 +1,11 @@
+key: doublebridge-technologies/rosetta-ectd-viewer-desktop-edition
+publisher: doublebridge-technologies
+name: ROSETTA eCTD Viewer Desktop Edition
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doublebridge/ROSETTAeCTDViewer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doublebridge/ROSETTAeCTDViewer
+identifiers:
+- winget: Doublebridge.ROSETTAeCTDViewer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Doublebridge/ROSETTAeCTDViewer
+aliases: []

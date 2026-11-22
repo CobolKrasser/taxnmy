@@ -1,0 +1,12 @@
+key: vovsoft/proxy-checker
+publisher: vovsoft
+name: Vovsoft Proxy Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxyChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxyChecker
+identifiers:
+- winget: VovSoft.ProxyChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/VovSoft/ProxyChecker
+aliases:
+- vovsoft/vovsoft-proxy-checker

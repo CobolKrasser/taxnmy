@@ -1,0 +1,11 @@
+key: iobend/iobend
+publisher: iobend
+name: IOBend
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IOBend/IOBend
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IOBend/IOBend
+identifiers:
+- winget: IOBend.IOBend
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/IOBend/IOBend
+aliases: []

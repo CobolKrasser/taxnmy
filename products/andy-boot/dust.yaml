@@ -1,0 +1,11 @@
+key: andy-boot/dust
+publisher: andy-boot
+name: Dust
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bootandy/dust
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bootandy/dust
+identifiers:
+- winget: bootandy.dust
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/bootandy/dust
+aliases: []

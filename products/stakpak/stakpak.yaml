@@ -1,0 +1,11 @@
+key: stakpak/stakpak
+publisher: stakpak
+name: Stakpak
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stakpak/agent
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stakpak/agent
+identifiers:
+- winget: stakpak.agent
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/stakpak/agent
+aliases: []

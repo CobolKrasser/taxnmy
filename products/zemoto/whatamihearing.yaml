@@ -1,0 +1,11 @@
+key: zemoto/whatamihearing
+publisher: zemoto
+name: WhatAmIHearing
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zemoto/WhatAmIHearing
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zemoto/WhatAmIHearing
+identifiers:
+- winget: zemoto.WhatAmIHearing
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/zemoto/WhatAmIHearing
+aliases: []

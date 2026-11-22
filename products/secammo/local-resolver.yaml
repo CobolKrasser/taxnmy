@@ -1,0 +1,12 @@
+key: secammo/local-resolver
+publisher: secammo
+name: SecAmmo Local Resolver
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecAmmo/LocalResolver
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecAmmo/LocalResolver
+identifiers:
+- winget: SecAmmo.LocalResolver
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SecAmmo/LocalResolver
+aliases:
+- secammo/secammo-local-resolver

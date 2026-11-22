@@ -1,0 +1,11 @@
+key: universal-debloater-alliance/universal-android-debloater-next-generation
+publisher: universal-debloater-alliance
+name: Universal Android Debloater Next Generation
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Universal-Debloater-Alliance/uad-ng
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Universal-Debloater-Alliance/uad-ng
+identifiers:
+- winget: Universal-Debloater-Alliance.uad-ng
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/Universal-Debloater-Alliance/uad-ng
+aliases: []

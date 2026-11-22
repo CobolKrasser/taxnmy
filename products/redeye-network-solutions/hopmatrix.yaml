@@ -1,0 +1,11 @@
+key: redeye-network-solutions/hopmatrix
+publisher: redeye-network-solutions
+name: HopMatrix
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/HopMatrix
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/HopMatrix
+identifiers:
+- winget: RedEyeNetworks.HopMatrix
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RedEyeNetworks/HopMatrix
+aliases: []

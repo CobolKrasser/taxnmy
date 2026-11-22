@@ -1,0 +1,11 @@
+key: puredev-software/framepro
+publisher: puredev-software
+name: FramePro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PureDevSoftware/FramePro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PureDevSoftware/FramePro
+identifiers:
+- winget: PureDevSoftware.FramePro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PureDevSoftware/FramePro
+aliases: []
