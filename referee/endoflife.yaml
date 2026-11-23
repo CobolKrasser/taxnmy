@@ -49,6 +49,10 @@ pages:
   sns-hardware: {publisher: stormshield, prefix: Stormshield}
   sony-xperia: {publisher: sony}
   surface: {publisher: microsoft}
+  # generations of graphics cards: a row is a generation, the product as the filler names it (TAX-57)
+  nvidia-gpu: {publisher: nvidia, prefix: NVIDIA}
+  # generations of processors: Fred, 23 November 2026; active support counts as updates (microcode)
+  intel-processors: {publisher: intel, prefix: Intel}
   # software
   external-dns: {publisher: the-kubernetes-authors}
   font-awesome: {publisher: fonticons}
@@ -62,7 +66,5 @@ pages:
 
 # Pages that stay out of this round, with the reason.
 apart:
-  intel-processors: processors and graphics cards; it is not settled that they are products with updates
-  nvidia-gpu: processors and graphics cards; it is not settled that they are products with updates
   pci-dss: a standard, not a product
   tls: a standard, not a product

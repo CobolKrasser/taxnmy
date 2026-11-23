@@ -1,0 +1,10 @@
+key: nvidia/consumer-turing-tu1xx
+publisher: nvidia
+name: NVIDIA Consumer Turing (TU1xX)
+kind: device
+source: https://endoflife.date/nvidia-gpu
+versions:
+  source: https://endoflife.date/nvidia-gpu
+identifiers: []
+aliases:
+- nvidia/nvidia-consumer-turing-tu1xx

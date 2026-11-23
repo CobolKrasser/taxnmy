@@ -1,0 +1,72 @@
+page,model,outcome,reason,product,name,maintained,source
+intel-processors,Panther Lake,taken-in,,intel/panther-lake,Intel Panther Lake,True,https://endoflife.date/intel-processors
+intel-processors,Arrow Lake,taken-in,,intel/arrow-lake,Intel Arrow Lake,True,https://endoflife.date/intel-processors
+intel-processors,Lunar Lake,taken-in,,intel/lunar-lake,Intel Lunar Lake,True,https://endoflife.date/intel-processors
+intel-processors,Meteor Lake,taken-in,,intel/meteor-lake,Intel Meteor Lake,True,https://endoflife.date/intel-processors
+intel-processors,Raptor Lake,taken-in,,intel/raptor-lake,Intel Raptor Lake,True,https://endoflife.date/intel-processors
+intel-processors,Alder Lake,taken-in,,intel/alder-lake,Intel Alder Lake,True,https://endoflife.date/intel-processors
+intel-processors,Rocket Lake,taken-in,,intel/rocket-lake,Intel Rocket Lake,True,https://endoflife.date/intel-processors
+intel-processors,Jasper Lake,taken-in,,intel/jasper-lake,Intel Jasper Lake,True,https://endoflife.date/intel-processors
+intel-processors,Elkhart Lake,taken-in,,intel/elkhart-lake,Intel Elkhart Lake,True,https://endoflife.date/intel-processors
+intel-processors,Tiger Lake,taken-in,,intel/tiger-lake,Intel Tiger Lake,True,https://endoflife.date/intel-processors
+intel-processors,Lakefield,taken-in,,intel/lakefield,Intel Lakefield,False,https://endoflife.date/intel-processors
+intel-processors,Ice Lake,taken-in,,intel/ice-lake,Intel Ice Lake,True,https://endoflife.date/intel-processors
+intel-processors,Comet Lake,taken-in,,intel/comet-lake,Intel Comet Lake,True,https://endoflife.date/intel-processors
+intel-processors,Cannon Lake,taken-in,,intel/cannon-lake,Intel Cannon Lake,False,https://endoflife.date/intel-processors
+intel-processors,Gemini Lake,taken-in,,intel/gemini-lake,Intel Gemini Lake,False,https://endoflife.date/intel-processors
+intel-processors,Coffee Lake,taken-in,,intel/coffee-lake,Intel Coffee Lake,False,https://endoflife.date/intel-processors
+intel-processors,Apollo Lake,taken-in,,intel/apollo-lake,Intel Apollo Lake,False,https://endoflife.date/intel-processors
+intel-processors,Kaby Lake,taken-in,,intel/kaby-lake,Intel Kaby Lake,False,https://endoflife.date/intel-processors
+intel-processors,Skylake,taken-in,,intel/skylake,Intel Skylake,False,https://endoflife.date/intel-processors
+intel-processors,Braswell,taken-in,,intel/braswell,Intel Braswell,False,https://endoflife.date/intel-processors
+intel-processors,Broadwell,taken-in,,intel/broadwell,Intel Broadwell,False,https://endoflife.date/intel-processors
+intel-processors,Broadwell (Xeon E7v4/E7v4),taken-in,,intel/broadwell-xeon-e7v4-e7v4,Intel Broadwell (Xeon E7v4/E7v4),False,https://endoflife.date/intel-processors
+intel-processors,Broadwell DE,taken-in,,intel/broadwell-de,Intel Broadwell DE,False,https://endoflife.date/intel-processors
+intel-processors,Devil's Canyon,taken-in,,intel/devil-s-canyon,Intel Devil's Canyon,False,https://endoflife.date/intel-processors
+intel-processors,Bay Trail,taken-in,,intel/bay-trail,Intel Bay Trail,False,https://endoflife.date/intel-processors
+intel-processors,Avoton,taken-in,,intel/avoton,Intel Avoton,False,https://endoflife.date/intel-processors
+intel-processors,Haswell,taken-in,,intel/haswell,Intel Haswell,False,https://endoflife.date/intel-processors
+intel-processors,Haswell (Xeon E5v3/E7v3),taken-in,,intel/haswell-xeon-e5v3-e7v3,Intel Haswell (Xeon E5v3/E7v3),False,https://endoflife.date/intel-processors
+intel-processors,Crystal Well,taken-in,,intel/crystal-well,Intel Crystal Well,False,https://endoflife.date/intel-processors
+intel-processors,Briarwood,taken-in,,intel/briarwood,Intel Briarwood,False,https://endoflife.date/intel-processors
+intel-processors,Cherry Trail,taken-in,,intel/cherry-trail,Intel Cherry Trail,False,https://endoflife.date/intel-processors
+intel-processors,Centerton,taken-in,,intel/centerton,Intel Centerton,False,https://endoflife.date/intel-processors
+intel-processors,Ivy Bridge,taken-in,,intel/ivy-bridge,Intel Ivy Bridge,False,https://endoflife.date/intel-processors
+intel-processors,Ivy Bridge (Xeon E5v2/E7v2),taken-in,,intel/ivy-bridge-xeon-e5v2-e7v2,Intel Ivy Bridge (Xeon E5v2/E7v2),False,https://endoflife.date/intel-processors
+nvidia-gpu,Mobile Professional Blackwell (GB20x),taken-in,,nvidia/mobile-professional-blackwell-gb20x,NVIDIA Mobile Professional Blackwell (GB20x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Blackwell (GB20x),taken-in,,nvidia/professional-blackwell-gb20x,NVIDIA Professional Blackwell (GB20x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Blackwell (GB20x),taken-in,,nvidia/mobile-consumer-blackwell-gb20x,NVIDIA Mobile Consumer Blackwell (GB20x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Blackwell (GB20x),taken-in,,nvidia/consumer-blackwell-gb20x,NVIDIA Consumer Blackwell (GB20x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Professional Ada Lovelace (AD10x),taken-in,,nvidia/mobile-professional-ada-lovelace-ad10x,NVIDIA Mobile Professional Ada Lovelace (AD10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Ada Lovelace (AD10x),taken-in,,nvidia/mobile-consumer-ada-lovelace-ad10x,NVIDIA Mobile Consumer Ada Lovelace (AD10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Ada Lovelace (AD1xx),taken-in,,nvidia/professional-ada-lovelace-ad1xx,NVIDIA Professional Ada Lovelace (AD1xx),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Ada Lovelace (AD1xx),taken-in,,nvidia/consumer-ada-lovelace-ad1xx,NVIDIA Consumer Ada Lovelace (AD1xx),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Professional Ampere (GA10x),taken-in,,nvidia/mobile-professional-ampere-ga10x,NVIDIA Mobile Professional Ampere (GA10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Ampere (GA10x),taken-in,,nvidia/mobile-consumer-ampere-ga10x,NVIDIA Mobile Consumer Ampere (GA10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Ampere (GA10x),taken-in,,nvidia/professional-ampere-ga10x,NVIDIA Professional Ampere (GA10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Ampere (GA10x),taken-in,,nvidia/consumer-ampere-ga10x,NVIDIA Consumer Ampere (GA10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Professional Turing (TU1xX),taken-in,,nvidia/mobile-professional-turing-tu1xx,NVIDIA Mobile Professional Turing (TU1xX),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Turing (TU1xX),taken-in,,nvidia/mobile-consumer-turing-tu1xx,NVIDIA Mobile Consumer Turing (TU1xX),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Turing (TU1xX),taken-in,,nvidia/consumer-turing-tu1xx,NVIDIA Consumer Turing (TU1xX),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Turing (TU1xX),taken-in,,nvidia/professional-turing-tu1xx,NVIDIA Professional Turing (TU1xX),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Volta (GV100),taken-in,,nvidia/professional-volta-gv100,NVIDIA Professional Volta (GV100),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Professional Pascal (GP10x),taken-in,,nvidia/mobile-professional-pascal-gp10x,NVIDIA Mobile Professional Pascal (GP10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Pascal (GP10x),taken-in,,nvidia/mobile-consumer-pascal-gp10x,NVIDIA Mobile Consumer Pascal (GP10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Pascal (GP10x),taken-in,,nvidia/consumer-pascal-gp10x,NVIDIA Consumer Pascal (GP10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Pascal (GP10x),taken-in,,nvidia/professional-pascal-gp10x,NVIDIA Professional Pascal (GP10x),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Professional Maxwell (GMxxx),taken-in,,nvidia/mobile-professional-maxwell-gmxxx,NVIDIA Mobile Professional Maxwell (GMxxx),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Maxwell (GMxxx),taken-in,,nvidia/professional-maxwell-gmxxx,NVIDIA Professional Maxwell (GMxxx),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Maxwell (GMxxx),taken-in,,nvidia/mobile-consumer-maxwell-gmxxx,NVIDIA Mobile Consumer Maxwell (GMxxx),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Maxwell (GMxxx),taken-in,,nvidia/consumer-maxwell-gmxxx,NVIDIA Consumer Maxwell (GMxxx),True,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Kepler (GKxxx),taken-in,,nvidia/professional-kepler-gkxxx,NVIDIA Professional Kepler (GKxxx),False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Kepler (GKxxx),taken-in,,nvidia/consumer-kepler-gkxxx,NVIDIA Consumer Kepler (GKxxx),False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Professional Kepler (GKxxx),taken-in,,nvidia/mobile-professional-kepler-gkxxx,NVIDIA Mobile Professional Kepler (GKxxx),False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Mobile Consumer Kepler (GKxxx),taken-in,,nvidia/mobile-consumer-kepler-gkxxx,NVIDIA Mobile Consumer Kepler (GKxxx),False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Professional Fermi (GF1xx)**,taken-in,,nvidia/professional-fermi-gf1xx,NVIDIA Professional Fermi (GF1xx)**,False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Fermi (GF1xx)*,taken-in,,nvidia/consumer-fermi-gf1xx,NVIDIA Consumer Fermi (GF1xx)*,False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,"Consumer Tesla (Cxx, G8x, G9x, GT2xx, ION)",taken-in,,nvidia/consumer-tesla-cxx-g8x-g9x-gt2xx-ion,"NVIDIA Consumer Tesla (Cxx, G8x, G9x, GT2xx, ION)",False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,"Consumer Curie (NV4x, G7x)",taken-in,,nvidia/consumer-curie-nv4x-g7x,"NVIDIA Consumer Curie (NV4x, G7x)",False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Rankine (NV3x),taken-in,,nvidia/consumer-rankine-nv3x,NVIDIA Consumer Rankine (NV3x),False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,"Consumer Kelvin (NV1x, NV2x)",taken-in,,nvidia/consumer-kelvin-nv1x-nv2x,"NVIDIA Consumer Kelvin (NV1x, NV2x)",False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Celsius (NV1x),taken-in,,nvidia/consumer-celsius-nv1x,NVIDIA Consumer Celsius (NV1x),False,https://endoflife.date/nvidia-gpu
+nvidia-gpu,Consumer Fahrenheit (NVx),taken-in,,nvidia/consumer-fahrenheit-nvx,NVIDIA Consumer Fahrenheit (NVx),False,https://endoflife.date/nvidia-gpu
