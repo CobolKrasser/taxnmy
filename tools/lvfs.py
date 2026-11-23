@@ -79,6 +79,7 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
     spellings: dict[str, Counter] = defaultdict(Counter)
     first: dict[str, str] = {}
     additions = data.get("row_additions") or []
+    listed = data.get("rows") or {}  # rows written with a space or "and", read by a person or a model (TAX-62)
     names: dict[str, list] = defaultdict(list)
     for c in comps:
         names[c["developer"]].append(c["name"])
@@ -87,8 +88,8 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
     aliases: dict[str, str] = {}  # the other models of the rows in the round -> their product
     # a component of `named` comes after the devices, so that it finds the device its name names; a row of
     # models comes after the single models, so that it finds a model the round already has (TAX-62)
-    order = sorted(comps, key=lambda c: (bool(c["categories"] & named), modelrow.is_row(c["name"]), c["developer"],
-                                         c["name"], len(c["id"]), c["id"]))
+    order = sorted(comps, key=lambda c: (bool(c["categories"] & named), modelrow.is_row(c["name"]) or c["name"] in listed,
+                                         c["developer"], c["name"], len(c["id"]), c["id"]))
     for c in order:  # the shortest id is the source
         page = data["page"].format(id=c["id"])
         item = csaf.Item(page, c["developer"], c["name"])
@@ -109,8 +110,9 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
             continue
         try:
             pub = tax.publisher(c["developer"]) or keyrule.publisher_part(c["developer"])
-            if modelrow.is_row(c["name"]):
-                found = _row(c["name"], pub, [c["developer"], pub], series.get(c["developer"], set()), additions)
+            if modelrow.is_row(c["name"]) or c["name"] in listed:
+                found = _row(c["name"], pub, [c["developer"], pub], series.get(c["developer"], set()), additions,
+                             listed.get(c["name"]))
                 if isinstance(found, str):
                     csaf._set(item, "apart", found)
                     continue
@@ -166,9 +168,10 @@ def _publisher(c: dict, pub: str, page: str, tax, spellings: dict, first: dict) 
         first.setdefault(pub, page)
 
 
-def _row(name: str, pub: str, brands: list, series: set, additions: list):
-    """(the models, their keys) of a row of models, or the reason it is set apart (TAX-62)."""
-    models, why = modelrow.models(name, brands, series, additions)
+def _row(name: str, pub: str, brands: list, series: set, additions: list, listed: list | None = None):
+    """(the models, their keys) of a row of models, or the reason it is set apart (TAX-62). `listed`: the
+    models of the row as referee/lvfs.yaml gives them."""
+    models, why = (listed, "") if listed else modelrow.models(name, brands, series, additions)
     if why:
         return why
     by_key: dict[str, str] = {}
@@ -203,10 +206,12 @@ def report(items, products, publishers, signals, before: int, removed: int = 0) 
 def rows_in_tax(root: Path, data: dict) -> list[Path]:
     """The products of LVFS in TAX whose name is a row of models: written before the rule of TAX-62."""
     prefix = data["page"].split("{")[0]
+    listed = data.get("rows") or {}
     out = []
     for f in sorted((root / "products").glob("*/*.yaml")):
         d = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
-        if str(d.get("source", "")).startswith(prefix) and modelrow.is_row(str(d.get("name", ""))):
+        name = str(d.get("name", ""))
+        if str(d.get("source", "")).startswith(prefix) and (modelrow.is_row(name) or name in listed):
             out.append(f)
     return out
 

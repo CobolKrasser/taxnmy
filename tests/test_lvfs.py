@@ -15,7 +15,7 @@ sys.path.insert(0, str(REPO / "tools"))
 import lint  # noqa: E402
 import lvfs  # noqa: E402
 
-LIST = {"version": 1, "row_additions": [], "page": "https://lvfs.example/devices/{id}", "devices": ["X-System", "X-Device", "X-NetworkInterface"],
+LIST = {"version": 1, "row_additions": [], "rows": {"Book 11 and Pad 12": ["Book 11", "Pad 12"]}, "page": "https://lvfs.example/devices/{id}", "devices": ["X-System", "X-Device", "X-NetworkInterface"],
         "named": ["X-ManagementEngine"], "parts": ["X-EmbeddedController"], "settings": ["X-Configuration"]}
 
 
@@ -40,6 +40,7 @@ METADATA = gzip.compress(("<?xml version='1.0'?><components origin='lvfs'>" + ""
     component("com.acme.row.firmware", "Book 5/Slate 6", "Acme", "X-System"),       # a row of models (TAX-62)
     component("com.acme.row2.firmware", "Slate 6, Acme Book 5", "Acme", "X-System"),  # the same models
     component("com.acme.row3.firmware", "Book 9/Book 10", "Acme", "X-System"),      # Book 9 is in the round
+    component("com.acme.row5.firmware", "Book 11 and Pad 12", "Acme", "X-System"),  # a row the list reads
     component("com.acme.row4.firmware", "Book 8x0/Book 8x0 Aero/Slate Fire G7 Notebook PC S70", "Acme", "X-System"),
 ]) + "</components>").encode())
 
@@ -65,7 +66,7 @@ class LvfsTest(unittest.TestCase):
 
     def test_every_component_has_one_outcome_with_a_reason(self):
         got, _ = self.run_round()
-        self.assertEqual(len(got["items"]), 15)
+        self.assertEqual(len(got["items"]), 16)
         for i in got["items"]:
             self.assertIn(i.outcome, ("taken-in", "in-tax", "apart"))
             self.assertTrue(i.reason, i.name)
@@ -73,7 +74,7 @@ class LvfsTest(unittest.TestCase):
     def test_the_outcomes(self):
         got, by = self.run_round()
         self.assertEqual(set(got["products"]), {"acme/book-9", "acme/book-7", "acme/dock-2", "acme/modem-x", "zed-labs/pad",
-                                                "acme/book-5"})
+                                                "acme/book-5", "acme/book-11"})
         self.assertEqual(by["com.acme.book9.eu.firmware"].product, "acme/book-9", "the same key: one product")
         self.assertEqual(by["com.acme.me.firmware"].product, "acme/book-9", "the device its name names")
         self.assertIn("names", by["com.acme.me.firmware"].reason)
@@ -91,6 +92,8 @@ class LvfsTest(unittest.TestCase):
         self.assertEqual(by["com.acme.row3.firmware"].outcome, "apart", "a model the round already has")
         self.assertIn("acme/book-9", by["com.acme.row3.firmware"].reason)
         self.assertIn("addition for the whole row", by["com.acme.row4.firmware"].reason)
+        pad = yaml.safe_load(got["products"]["acme/book-11"].text())
+        self.assertEqual(pad["aliases"], ["acme/pad-12"], "a row with a space or 'and', as the list reads it")
 
     def test_a_row_in_tax_is_made_anew(self):
         old = self.root / "products/acme/book-5-slate-6.yaml"
