@@ -21,6 +21,11 @@ class ModelRowTest(unittest.TestCase):
         self.assertTrue(modelrow.is_row("Book 5431, Slate 3470"))
         self.assertFalse(modelrow.is_row("Book 14 (A/B)"), "a slash in brackets is no row")
         self.assertFalse(modelrow.is_row("Book 14"))
+        self.assertFalse(modelrow.is_row("Field UEFI/ATF"), "no number, so no model")
+        self.assertFalse(modelrow.is_row("USB-C/A Universal Dock G2"), "a slash between letters is part of the name")
+        self.assertFalse(modelrow.is_row("Book 9 I/O Board"))
+        self.assertTrue(modelrow.is_row("Book T580/P52s"))
+        self.assertTrue(modelrow.is_row("NV4XMB,ME,MZ"))
 
     def test_full_models(self):
         self.assertEqual(models("Book 5431, Slate 3470"), (["Book 5431", "Slate 3470"], ""))

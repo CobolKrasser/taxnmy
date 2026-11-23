@@ -19,12 +19,15 @@ import re
 
 MAX_NAME = 100
 DIGIT = re.compile(r"\d")
-SPLIT = re.compile(r"/|,")
+SPLIT = re.compile(r"(?<!\b[A-Za-z])(?<!\b[A-Za-z]{2})/(?![A-Za-z]{1,2}\b)|,")  # not in C/A, I/O or A/V
 
 
 def is_row(name: str) -> bool:
-    """A slash or a comma outside brackets."""
-    return bool(SPLIT.search(name)) and not re.search(r"\([^)]*[/,][^)]*\)", name)
+    """A slash or a comma outside brackets, in a name with a number: a model has a number, so a name without
+    one (such as "UEFI/ATF") names no row of models. A slash between two letters or pairs of letters
+    ("USB-C/A", "I/O") belongs to the name."""
+    return (bool(SPLIT.search(name)) and bool(DIGIT.search(name))
+            and not re.search(r"\([^)]*[/,][^)]*\)", name))
 
 
 def clean(part: str, brands=(), additions=()) -> str:
