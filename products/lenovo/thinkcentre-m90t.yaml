@@ -1,0 +1,11 @@
+key: lenovo/thinkcentre-m90t
+publisher: lenovo
+name: ThinkCentre M90t
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M90t_M90s_M80t_M80s.ME.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M90t_M90s_M80t_M80s.ME.firmware
+aliases:
+- lenovo/thinkcentre-m90s
+- lenovo/thinkcentre-m80t
+- lenovo/thinkcentre-m80s

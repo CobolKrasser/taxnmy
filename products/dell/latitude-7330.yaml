@@ -1,0 +1,10 @@
+key: dell/latitude-7330
+publisher: dell
+name: Latitude 7330
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi7f981d65.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi7f981d65.firmware
+aliases:
+- dell/latitude-7430
+- dell/latitude-7530

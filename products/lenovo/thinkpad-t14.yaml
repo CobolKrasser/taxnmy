@@ -1,0 +1,11 @@
+key: lenovo/thinkpad-t14
+publisher: lenovo
+name: ThinkPad T14
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA2.camera.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA2.camera.firmware
+aliases:
+- lenovo/thinkpad-p14s
+- lenovo/thinkpad-t15
+- lenovo/thinkpad-p15s

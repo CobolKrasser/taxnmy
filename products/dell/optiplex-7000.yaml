@@ -1,0 +1,9 @@
+key: dell/optiplex-7000
+publisher: dell
+name: OptiPlex 7000
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi896e9574.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi896e9574.firmware
+aliases:
+- dell/optiplex-xe4-series

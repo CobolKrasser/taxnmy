@@ -1,0 +1,9 @@
+key: dell/latitude-5x01
+publisher: dell
+name: Latitude 5X01
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi0eecff0c.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi0eecff0c.firmware
+aliases:
+- dell/precision-3541

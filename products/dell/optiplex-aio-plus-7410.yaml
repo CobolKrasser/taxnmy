@@ -1,0 +1,10 @@
+key: dell/optiplex-aio-plus-7410
+publisher: dell
+name: OptiPlex AIO Plus 7410
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefie2097c5c.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie2097c5c.firmware
+aliases:
+- dell/optiplex-aio-7410-65w
+- dell/optiplex-aio-7410-35w

@@ -1,0 +1,10 @@
+key: dell/latitude-7320
+publisher: dell
+name: Latitude 7320
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi85686610.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi85686610.firmware
+aliases:
+- dell/latitude-7420
+- dell/latitude-7520

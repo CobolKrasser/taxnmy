@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-t580
+publisher: lenovo
+name: ThinkPad T580
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN27ET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN27ET.firmware
+aliases:
+- lenovo/thinkpad-p52s

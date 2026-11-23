@@ -1,0 +1,11 @@
+key: lenovo/kbg6aznv256g-la
+publisher: lenovo
+name: KBG6AZNV256G LA
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
+aliases:
+- lenovo/kbg6aznt256g-la
+- lenovo/kbg6aznv512g-la
+- lenovo/kbg6aznt512g-la

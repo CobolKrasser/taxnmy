@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-t14-gen-7
+publisher: lenovo
+name: ThinkPad T14 Gen 7
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4TSG05W.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4TSG05W.firmware
+aliases:
+- lenovo/thinkpad-t16-gen-5

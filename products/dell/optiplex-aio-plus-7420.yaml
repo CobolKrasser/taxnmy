@@ -1,0 +1,10 @@
+key: dell/optiplex-aio-plus-7420
+publisher: dell
+name: OptiPlex AIO Plus 7420
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi3a988588.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi3a988588.firmware
+aliases:
+- dell/optiplex-aio-7420-65w
+- dell/optiplex-aio-7420-35w

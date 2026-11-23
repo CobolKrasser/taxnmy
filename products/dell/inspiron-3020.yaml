@@ -1,0 +1,9 @@
+key: dell/inspiron-3020
+publisher: dell
+name: Inspiron 3020
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi4ce0507f.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi4ce0507f.firmware
+aliases:
+- dell/inspiron-3020-s

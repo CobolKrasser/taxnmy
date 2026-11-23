@@ -1,0 +1,9 @@
+key: dell/g3-3500
+publisher: dell
+name: G3 3500
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware
+aliases:
+- dell/g5-5500

@@ -1,0 +1,9 @@
+key: dell/optiplex-7400-aio
+publisher: dell
+name: OptiPlex 7400 AIO
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefif6e92d90.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefif6e92d90.firmware
+aliases:
+- dell/optiplex-5400-aio

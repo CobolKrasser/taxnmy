@@ -1,0 +1,11 @@
+key: lenovo/kxg8aznv512g-la
+publisher: lenovo
+name: KXG8AZNV512G LA
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
+aliases:
+- lenovo/kxg8aznv1t02-la
+- lenovo/kxg8aznv2t04-la
+- lenovo/kxg8azn84t09-la

@@ -1,0 +1,13 @@
+key: dell/inspiron-5402
+publisher: dell
+name: Inspiron 5402
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi8319e082.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi8319e082.firmware
+aliases:
+- dell/inspiron-5409
+- dell/inspiron-5502
+- dell/inspiron-5509
+- dell/vostro-5402
+- dell/vostro-5502
