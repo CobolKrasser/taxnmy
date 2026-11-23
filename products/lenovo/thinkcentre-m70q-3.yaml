@@ -1,0 +1,9 @@
+key: lenovo/thinkcentre-m70q-3
+publisher: lenovo
+name: ThinkCentre M70q-3
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M43.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M43.BIOS.firmware
+aliases:
+- lenovo/thinkcentre-m750q

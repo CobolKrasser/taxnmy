@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-l14-gen-6
+publisher: lenovo
+name: ThinkPad L14 Gen 6
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2UET.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2UET.BIOS.firmware
+aliases:
+- lenovo/thinkpad-l16-gen-2

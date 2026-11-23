@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-t14s-gen-3
+publisher: lenovo
+name: ThinkPad T14s Gen 3
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CRM.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CRM.firmware
+aliases:
+- lenovo/thinkpad-x13-gen-3

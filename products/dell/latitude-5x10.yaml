@@ -1,0 +1,9 @@
+key: dell/latitude-5x10
+publisher: dell
+name: Latitude 5X10
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi886f6d91.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi886f6d91.firmware
+aliases:
+- dell/precision-3550

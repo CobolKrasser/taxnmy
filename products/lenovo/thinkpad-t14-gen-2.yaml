@@ -1,0 +1,11 @@
+key: lenovo/thinkpad-t14-gen-2
+publisher: lenovo
+name: ThinkPad T14 Gen 2
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34ET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34ET.firmware
+aliases:
+- lenovo/thinkpad-p14s-gen-2
+- lenovo/thinkpad-t15-gen-2
+- lenovo/thinkpad-p15s-gen-2

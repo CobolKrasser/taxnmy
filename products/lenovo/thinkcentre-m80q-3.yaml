@@ -1,0 +1,10 @@
+key: lenovo/thinkcentre-m80q-3
+publisher: lenovo
+name: ThinkCentre M80q-3
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M4G.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4G.BIOS.firmware
+aliases:
+- lenovo/thinkcentre-m90q-3
+- lenovo/thinkstation-p360tiny

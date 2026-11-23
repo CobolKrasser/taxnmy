@@ -1,0 +1,9 @@
+key: dell/precision-7680
+publisher: dell
+name: Precision 7680
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi2a1fbc19.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi2a1fbc19.firmware
+aliases:
+- dell/precision-7780
