@@ -341,11 +341,25 @@ def several(vendor: str) -> bool:
     return sum(1 for p in parts if keyrule.strip_legal_form(p).strip(" .")) >= 3 and vendor.count(",") >= 2
 
 
-def plan(docs, root: Path = ROOT, data: dict | None = None, dictionary: dict | None = None):
+KINDS = ("device", "operating-system", "software")
+AI_RULE = "R11 the kind an AI run gave (Fred, 23 November 2026)"
+
+
+def read_kinds(path: Path) -> dict[tuple[str, str], str]:
+    """(vendor, name) -> the kind an AI run gave, from a CSV with the columns vendor, name and kind (TAX-23).
+    The file stays outside the repository; a kind other than the three of TAX (`unknown`) is kept as given."""
+    with path.open(newline="", encoding="utf-8") as f:
+        return {(r["vendor"], r["name"]): r["kind"].strip() for r in csv.DictReader(f)}
+
+
+def plan(docs, root: Path = ROOT, data: dict | None = None, dictionary: dict | None = None,
+         kinds: dict | None = None):
     """(items, products by key, new publishers by key: {name, source}, publishers by key: their addresses).
-    `docs` yields (address, CSAF document as dict)."""
+    `docs` yields (address, CSAF document as dict). `kinds`: the kind an AI run gave per (vendor, name), used
+    only when no rule gives one (R11)."""
     data = data or load_list()
     dictionary = dictionary or {}
+    kinds = kinds or {}
     tax = Tax(root)
     role = {a["url"]: a.get("role", "vendor") for a in data.get("addresses") or []}
     rank = {u: (role[u] != "vendor", i) for i, u in enumerate(role)}
@@ -392,6 +406,14 @@ def plan(docs, root: Path = ROOT, data: dict | None = None, dictionary: dict | N
                 _set(item, "in-tax", "TAX has its key, its long form, or its CPE or purl (TK3): no new file", have)
             continue
         kind, rule = kind_of(es, clean, item0.vendor, dictionary)
+        given = [kinds[(i.vendor, i.name)] for i, _, _ in members if (i.vendor, i.name) in kinds]
+        if not kind and given:
+            known = Counter(k for k in given if k in KINDS)
+            if not known:
+                for item, _, _ in members:
+                    _set(item, "apart", "no kind: the AI run could not tell the kind either (unknown)", key)
+                continue
+            kind, rule = known.most_common(1)[0][0], AI_RULE
         if not kind:
             for item, _, _ in members:
                 _set(item, "apart", "no kind: no CPE, purl, firmware, model number or relation, and not in the "
@@ -613,14 +635,16 @@ def report(items: list[Item], products: dict, publishers: dict, refusals: list, 
     rules = Counter(p.rule for p in products.values())
     out = ["## CSAF as a filler (TAX-23)", "",
            f"{len(items):,} products as the addresses name them. {len(products):,} products and {len(publishers):,} "
-           f"new publishers. No AI call. {len(signals)} signals of the lint, for a person.", "",
+           f"new publishers. No AI call in the round"
+           + (f"; {rules[AI_RULE]:,} kinds from an AI run before it (R11)" if rules[AI_RULE] else "")
+           + f". {len(signals)} signals of the lint, for a person.", "",
            "| outcome | products as named |", "| --- | ---: |"]
     out += [f"| {o} | {by[o]:,} |" for o in ("taken-in", "in-tax", "apart")]
     out += ["", "| kind | products taken in |", "| --- | ---: |"]
     out += [f"| {k} | {kinds[k]:,} |" for k in ORDER]
     out += ["", f"Devices in TAX: {devices_before:,} before, {devices_before + kinds['device']:,} after.", "",
             "| rule that gave the kind | products |", "| --- | ---: |"]
-    out += [f"| {r} | {rules[r]:,} |" for r in RULES]
+    out += [f"| {r} | {rules[r]:,} |" for r in (*RULES, AI_RULE) if r in RULES or rules[r]]
     per: dict[str, Counter] = defaultdict(Counter)
     for i in items:
         per[i.address][i.outcome] += 1
@@ -644,10 +668,10 @@ def devices(root: Path) -> int:
 
 
 def run(docs, out: Path, root: Path = ROOT, write: bool = False, data: dict | None = None,
-        dictionary: dict | None = None, refusals: list = ()) -> dict:
+        dictionary: dict | None = None, refusals: list = (), kinds: dict | None = None) -> dict:
     data = data or load_list()
     before = devices(root)
-    items, products, publishers, addresses = plan(docs, root, data, dictionary)
+    items, products, publishers, addresses = plan(docs, root, data, dictionary, kinds)
     dropped: list = []
     signals = [f for f in guard(products, publishers, addresses, root, dropped) if f.level == "signal"]
     files = files_of(products, publishers, addresses, root)
@@ -679,13 +703,14 @@ def main(argv=None) -> int:
     r.add_argument("--out", required=True)
     r.add_argument("--root", default=str(ROOT))
     r.add_argument("--write", action="store_true", help="write into the dataset (else OUT/data)")
+    r.add_argument("--kinds", help="a CSV (vendor, name, kind) of an AI run, for what no rule gives a kind (R11)")
     a = p.parse_args(argv)
     if a.cmd == "fetch":
         print(dict(fetch(Path(a.dump))))
         return 0
     dictionary = read_dictionary(Path(a.cpe_dictionary)) if a.cpe_dictionary else {}
     got = run(read_dump(Path(a.dump)), Path(a.out), Path(a.root), a.write, dictionary=dictionary,
-              refusals=refused(Path(a.dump)))
+              refusals=refused(Path(a.dump)), kinds=read_kinds(Path(a.kinds)) if a.kinds else None)
     print(got["report"], end="")
     return 0
 
