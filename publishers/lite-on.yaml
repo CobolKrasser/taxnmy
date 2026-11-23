@@ -1,4 +1,8 @@
 key: lite-on
 name: Lite-On
 source: https://fwupd.org/lvfs/devices/com.liteon.24G.firmware
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

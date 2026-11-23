@@ -1,4 +1,8 @@
 key: cyberpower-systems
 name: CyberPower Systems, Inc.
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CyberPowerSystems/PowerPanel/Business/Management
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

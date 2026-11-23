@@ -1,0 +1,9 @@
+key: grassroots/dicom-gdcm
+publisher: grassroots
+name: Grassroots DICOM (GDCM)
+kind: software
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- grassroots/grassroots-dicom-gdcm

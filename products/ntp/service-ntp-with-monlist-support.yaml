@@ -1,0 +1,9 @@
+key: ntp/service-ntp-with-monlist-support
+publisher: ntp
+name: NTP service NTP (with MONLIST support)
+kind: software
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- ntp/ntp-service-ntp-with-monlist-support

@@ -1,0 +1,9 @@
+key: omron/plc-cs-series
+publisher: omron
+name: Omron PLC CS series
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- omron/omron-plc-cs-series

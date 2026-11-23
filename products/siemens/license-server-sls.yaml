@@ -1,0 +1,9 @@
+key: siemens/license-server-sls
+publisher: siemens
+name: Siemens License Server (SLS)
+kind: software
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases:
+- siemens/siemens-license-server-sls

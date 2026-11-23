@@ -1,4 +1,8 @@
 key: aver
 name: AVer
 source: https://fwupd.org/lvfs/devices/com.aver.cam340plus.firmware
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

@@ -1,4 +1,8 @@
 key: maxhub
 name: MAXHUB
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MAXHUB/MAXHUBShare
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

@@ -1,0 +1,9 @@
+key: ge/ml1600-switch
+publisher: ge
+name: GE ML1600 Switch
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- ge/ge-ml1600-switch

@@ -1,0 +1,8 @@
+key: kunbus/linux-image-revpi
+publisher: kunbus
+name: linux-image-revpi
+kind: operating-system
+source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+aliases: []

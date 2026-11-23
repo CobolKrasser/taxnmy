@@ -1,4 +1,8 @@
 key: the-php-group
 name: The PHP Group
 source: https://www.php.net/license/
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

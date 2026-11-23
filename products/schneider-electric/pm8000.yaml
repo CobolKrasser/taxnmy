@@ -1,0 +1,8 @@
+key: schneider-electric/pm8000
+publisher: schneider-electric
+name: PM8000
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

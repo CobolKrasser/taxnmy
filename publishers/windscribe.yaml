@@ -1,4 +1,8 @@
 key: windscribe
 name: Windscribe Limited
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Windscribe/Windscribe
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

@@ -1,0 +1,9 @@
+key: sick/scan-xd
+publisher: sick
+name: sick_scan_xd
+kind: software
+source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+aliases:
+- sick/sick-scan-xd

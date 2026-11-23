@@ -1,0 +1,8 @@
+key: b-and-r-industrial-automation
+name: B&R Industrial Automation GmbH
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases: []

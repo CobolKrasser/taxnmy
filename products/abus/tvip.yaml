@@ -1,0 +1,9 @@
+key: abus/tvip
+publisher: abus
+name: ABUS TVIP
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- abus/abus-tvip

@@ -1,0 +1,8 @@
+key: canary-labs
+name: Canary Labs
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,9 @@
+key: sick/safetyscanners-base-cpp-driver
+publisher: sick
+name: Sick_Safetyscanners_Base CPP Driver
+kind: software
+source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+aliases:
+- sick/sick-safetyscanners-base-cpp-driver

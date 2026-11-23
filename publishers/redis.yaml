@@ -1,4 +1,8 @@
 key: redis
 name: Redis
 source: https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []
