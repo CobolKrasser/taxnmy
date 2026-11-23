@@ -1,0 +1,12 @@
+key: skoda/software
+publisher: skoda
+name: Škoda Software
+kind: device
+source: https://www.skoda-auto.com/emobility/software-update
+versions:
+  source: https://www.skoda-auto.com/emobility/software-update
+aliases:
+- skoda/skoda-software
+- skoda/elroq
+- skoda/enyaq
+- skoda/enyaq-coupe

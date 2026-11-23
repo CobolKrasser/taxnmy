@@ -1,0 +1,12 @@
+key: cupra/ota-update
+publisher: cupra
+name: CUPRA OTA Update
+kind: device
+source: https://www.cupra.com/en/owners/ota-updates/updates-electric-vehicles
+versions:
+  source: https://www.cupra.com/en/owners/ota-updates/updates-electric-vehicles
+aliases:
+- cupra/cupra-ota-update
+- cupra/born
+- cupra/raval
+- cupra/tavascan
