@@ -15,7 +15,7 @@ product. A publisher TAX knows keeps its key and its source; a new one gets the 
 The categories and the page are data in referee/lvfs.yaml (TG4). The writing of the files and the lint
 are those of tools/csaf.py.
 
-    python tools/lvfs.py --metadata firmware.xml.zst --out OUT [--write]
+    python tools/lvfs.py --metadata firmware.xml.zst --out OUT [--write [--replace-rows]]
 """
 
 from __future__ import annotations
@@ -35,10 +35,12 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import csaf  # noqa: E402
 import keyrule  # noqa: E402
+import modelrow  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 LIST = ROOT / "referee/lvfs.yaml"
 RULE = "a component of LVFS: a device"
+ROW = "a row of models: the first model is the name and the key, the others are aliases (TAX-62)"
 
 
 def load_list(path: Path = LIST) -> dict:
@@ -76,8 +78,17 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
     products: dict[str, csaf.Product] = {}
     spellings: dict[str, Counter] = defaultdict(Counter)
     first: dict[str, str] = {}
-    # a component of `named` comes after the devices, so that it finds the device its name names
-    order = sorted(comps, key=lambda c: (bool(c["categories"] & named), c["developer"], c["name"], len(c["id"]), c["id"]))
+    additions = data.get("row_additions") or []
+    names: dict[str, list] = defaultdict(list)
+    for c in comps:
+        names[c["developer"]].append(c["name"])
+    series = {dev: modelrow.series_of(n, [dev], additions) for dev, n in names.items()}
+    rows: dict[frozenset, str] = {}  # the models of a row -> its product
+    aliases: dict[str, str] = {}  # the other models of the rows in the round -> their product
+    # a component of `named` comes after the devices, so that it finds the device its name names; a row of
+    # models comes after the single models, so that it finds a model the round already has (TAX-62)
+    order = sorted(comps, key=lambda c: (bool(c["categories"] & named), modelrow.is_row(c["name"]), c["developer"],
+                                         c["name"], len(c["id"]), c["id"]))
     for c in order:  # the shortest id is the source
         page = data["page"].format(id=c["id"])
         item = csaf.Item(page, c["developer"], c["name"])
@@ -96,9 +107,36 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
         if not c["developer"] or not c["name"] or not c["id"]:
             csaf._set(item, "apart", "the metadata gives no developer, no name or no id, so no key (TK2)")
             continue
-        name = csaf.product_name(c["name"])
         try:
             pub = tax.publisher(c["developer"]) or keyrule.publisher_part(c["developer"])
+            if modelrow.is_row(c["name"]):
+                found = _row(c["name"], pub, [c["developer"], pub], series.get(c["developer"], set()), additions)
+                if isinstance(found, str):
+                    csaf._set(item, "apart", found)
+                    continue
+                models, keys = found
+                same = rows.get(frozenset(keys))
+                if same:
+                    products[same].items.append(item)
+                    csaf._set(item, "taken-in", "names the same models as another row: one product (TAX-62)", same)
+                    continue
+                owners = {tax.has(k, m, []) for k, m in zip(keys, models)}
+                if len(owners) == 1 and "" not in owners:
+                    csaf._set(item, "in-tax", "TAX has its models as one product (TK3): no new file", owners.pop())
+                    continue
+                have = next((tax.has(k, m, []) or k for k, m in zip(keys, models)
+                             if tax.has(k, m, []) or k in products or k in aliases), "")
+                if have:
+                    csaf._set(item, "apart", f"a row of models with a model TAX or the round already has: {have} (TAX-62)")
+                    continue
+                key, name = keys[0], models[0]
+                products[key] = csaf.Product(key, pub, name, page, "device", ROW, [], [], [item], keys[1:])
+                rows[frozenset(keys)] = key
+                aliases.update((k, key) for k in keys[1:])
+                csaf._set(item, "taken-in", ROW, key)
+                _publisher(c, pub, page, tax, spellings, first)
+                continue
+            name = csaf.product_name(c["name"])
             key = f"{pub}/{keyrule.product_part(name, pub)}"
         except keyrule.KeyRuleError:
             csaf._set(item, "apart", "a name outside the Latin script, so no key (TK2)")
@@ -107,6 +145,9 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
         if have:
             csaf._set(item, "in-tax", "TAX has its key or its long form (TK3): no new file", have)
             continue
+        if key in aliases:
+            csaf._set(item, "apart", f"a model of a row of models in the round: {aliases[key]} (TAX-62)")
+            continue
         if key in products:
             products[key].items.append(item)
             csaf._set(item, "taken-in", "the firmware of the device its name names (its category)" if cats & named
@@ -114,21 +155,43 @@ def plan(comps: list[dict], root: Path = ROOT, data: dict | None = None):
             continue
         products[key] = csaf.Product(key, pub, name, page, "device", RULE, [], [], [item])
         csaf._set(item, "taken-in", RULE, key)
-        if not tax.publisher(c["developer"]) and pub not in tax.census.publishers:
-            spellings[pub][c["developer"]] += 1
-            first.setdefault(pub, page)
+        _publisher(c, pub, page, tax, spellings, first)
     new = {pub: {"name": n.most_common(1)[0][0], "source": first[pub]} for pub, n in spellings.items()}
     return items, products, new, {pub: [] for pub in new}
 
 
-def report(items, products, publishers, signals, before: int) -> str:
+def _publisher(c: dict, pub: str, page: str, tax, spellings: dict, first: dict) -> None:
+    if not tax.publisher(c["developer"]) and pub not in tax.census.publishers:
+        spellings[pub][c["developer"]] += 1
+        first.setdefault(pub, page)
+
+
+def _row(name: str, pub: str, brands: list, series: set, additions: list):
+    """(the models, their keys) of a row of models, or the reason it is set apart (TAX-62)."""
+    models, why = modelrow.models(name, brands, series, additions)
+    if why:
+        return why
+    by_key: dict[str, str] = {}
+    for m in models:
+        by_key.setdefault(f"{pub}/{keyrule.product_part(m, pub)}", m)  # one model per key, the first
+    keys, models = list(by_key), list(by_key.values())
+    bad = next((p for k in keys for p in keyrule.key_problems(k)), "")
+    if bad:
+        return f"a row of models: no valid key: {bad}"
+    return models, keys
+
+
+def report(items, products, publishers, signals, before: int, removed: int = 0) -> str:
     by = Counter(i.outcome for i in items)
     out = ["## LVFS as a filler (TAX-23)", "",
            f"{len(items):,} components. {len(products):,} devices and {len(publishers):,} new publishers. "
            f"No AI call; nothing fetched. {len(signals)} signals of the lint, for a person.", "",
            "| outcome | components |", "| --- | ---: |"]
     out += [f"| {o} | {by[o]:,} |" for o in ("taken-in", "in-tax", "apart")]
-    out += ["", f"Devices in TAX: {before:,} before, {before + len(products):,} after.", "",
+    if removed:
+        out += ["", f"{removed:,} products of LVFS whose name is a row of models were taken out first, and made anew "
+                "with the rule of TAX-62 where it can read them."]
+    out += ["", f"Devices in TAX: {before:,} before, {before - removed + len(products):,} after.", "",
             "| publisher | devices |", "| --- | ---: |"]
     out += [f"| {p} | {n:,} |" for p, n in Counter(p.publisher for p in products.values()).most_common()]
     reasons = Counter((i.outcome, i.reason) for i in items if i.outcome != "taken-in" or i.reason != RULE)
@@ -137,9 +200,31 @@ def report(items, products, publishers, signals, before: int) -> str:
     return "\n".join(out) + "\n"
 
 
-def run(metadata: bytes, out: Path, root: Path = ROOT, write: bool = False, data: dict | None = None) -> dict:
+def rows_in_tax(root: Path, data: dict) -> list[Path]:
+    """The products of LVFS in TAX whose name is a row of models: written before the rule of TAX-62."""
+    prefix = data["page"].split("{")[0]
+    out = []
+    for f in sorted((root / "products").glob("*/*.yaml")):
+        d = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+        if str(d.get("source", "")).startswith(prefix) and modelrow.is_row(str(d.get("name", ""))):
+            out.append(f)
+    return out
+
+
+def run(metadata: bytes, out: Path, root: Path = ROOT, write: bool = False, data: dict | None = None,
+        replace_rows: bool = False) -> dict:
+    """With `replace_rows` (and `write`), the products of LVFS whose name is a row of models are taken out of
+    TAX first, and the round makes them anew with the rule (TAX-62): a product with a wrong key is thrown
+    away and made anew, without the old key as an alias (the PO, 23 November 2026)."""
     data = data or load_list()
     before = csaf.devices(root)
+    removed = []
+    if replace_rows:
+        if not write:
+            raise SystemExit("--replace-rows takes products out of TAX: only with --write (on a copy for a dry run)")
+        removed = [f.relative_to(root).as_posix() for f in rows_in_tax(root, data)]
+        for rel in removed:
+            (root / rel).unlink()
     items, products, publishers, addresses = plan(components(metadata), root, data)
     signals = [f for f in csaf.guard(products, publishers, addresses, root) if f.level == "signal"]
     files = csaf.files_of(products, publishers, addresses, root)
@@ -148,7 +233,7 @@ def run(metadata: bytes, out: Path, root: Path = ROOT, write: bool = False, data
     for rel, text in files.items():
         (target / rel).parent.mkdir(parents=True, exist_ok=True)
         (target / rel).write_text(text, encoding="utf-8")
-    text = report(items, products, publishers, signals, before)
+    text = report(items, products, publishers, signals, before, len(removed))
     (out / "report.md").write_text(text, encoding="utf-8")
     (out / "outcomes.json").write_text(json.dumps([asdict(i) for i in items], indent=0, ensure_ascii=False) + "\n",
                                        encoding="utf-8")
@@ -156,8 +241,10 @@ def run(metadata: bytes, out: Path, root: Path = ROOT, write: bool = False, data
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["page", "developer", "name", "outcome", "reason", "product"])
         w.writerows([i.address, i.vendor, i.name, i.outcome, i.reason, i.product] for i in items if i.outcome != "taken-in")
+    if removed:
+        (out / "removed.txt").write_text("".join(f"{r}\n" for r in removed), encoding="utf-8")
     return {"items": items, "products": products, "publishers": publishers, "files": files, "signals": signals,
-            "report": text}
+            "report": text, "removed": removed}
 
 
 def main(argv=None) -> int:
@@ -166,8 +253,10 @@ def main(argv=None) -> int:
     p.add_argument("--out", required=True)
     p.add_argument("--root", default=str(ROOT))
     p.add_argument("--write", action="store_true", help="write into the dataset (else OUT/data)")
+    p.add_argument("--replace-rows", action="store_true",
+                   help="take the LVFS products whose name is a row of models out first, and make them anew (TAX-62)")
     a = p.parse_args(argv)
-    got = run(Path(a.metadata).read_bytes(), Path(a.out), Path(a.root), a.write)
+    got = run(Path(a.metadata).read_bytes(), Path(a.out), Path(a.root), a.write, replace_rows=a.replace_rows)
     print(got["report"], end="")
     return 0
 

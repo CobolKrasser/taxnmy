@@ -26,3 +26,7 @@ named: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEng
 parts: [X-EmbeddedController, X-Controller, X-ThunderboltController, X-BaseboardManagementController,
         X-VideoDisplay, X-InputController]
 settings: [X-Configuration]
+
+# A row of models (TAX-62): words in a name that are no part of a model, as regular expressions. They are
+# dropped before the rule reads the row (the analyst, PR #89).
+row_additions: ['\s*-?\s*China HDD Protection', '\s+DALI\b', '\s+LCN\b', '\s+BCL\b']

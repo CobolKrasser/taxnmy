@@ -262,13 +262,14 @@ class Product:
     identifiers: list = field(default_factory=list)
     entries: list = field(default_factory=list)
     items: list = field(default_factory=list)
+    aliases: list = field(default_factory=list)  # the other models of a row of models (TAX-62)
 
     def text(self) -> str:
         data = {"key": self.key, "publisher": self.publisher, "name": self.name, "kind": self.kind,
                 "source": self.source, "versions": {"source": self.source}}
         if self.identifiers:
             data["identifiers"] = [{k: v, "source": self.source} for k, v in self.identifiers]
-        data["aliases"] = [a for a in [keyrule.long_form(self.key, self.name)] if a]  # TAX-54
+        data["aliases"] = [a for a in [keyrule.long_form(self.key, self.name), *self.aliases] if a]  # TAX-54
         return yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=200)
 
 
