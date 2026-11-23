@@ -15,7 +15,7 @@ product. A publisher TAX knows keeps its key and its source; a new one gets the 
 The categories and the page are data in referee/lvfs.yaml (TG4). The writing of the files and the lint
 are those of tools/csaf.py.
 
-    python tools/lvfs.py --metadata firmware.xml.gz --out OUT [--write]
+    python tools/lvfs.py --metadata firmware.xml.zst --out OUT [--write]
 """
 
 from __future__ import annotations
@@ -49,9 +49,16 @@ def load_list(path: Path = LIST) -> dict:
 
 
 def components(metadata: bytes) -> list[dict]:
-    """(id, name, developer, categories) of every component of the metadata, gzipped or not."""
+    """(id, name, developer, categories) of every component of the metadata: plain, gzip or zstd. The full
+    metadata a current fwupd client reads is firmware.xml.zst; firmware.xml.gz is an extract for old clients."""
     if metadata[:2] == b"\x1f\x8b":
         metadata = gzip.decompress(metadata)
+    elif metadata[:4] == b"\x28\xb5\x2f\xfd":
+        try:
+            from compression import zstd  # Python 3.14 and later
+        except ImportError:
+            raise SystemExit("reading firmware.xml.zst needs Python 3.14 or later (compression.zstd)") from None
+        metadata = zstd.decompress(metadata)
     root = ET.fromstring(metadata)
     if root.tag != "components":
         raise SystemExit("no AppStream metadata")
@@ -155,7 +162,7 @@ def run(metadata: bytes, out: Path, root: Path = ROOT, write: bool = False, data
 
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    p.add_argument("--metadata", required=True, help="firmware.xml.gz as a fwupd client fetches it")
+    p.add_argument("--metadata", required=True, help="firmware.xml.zst (or .gz) as a fwupd client fetches it")
     p.add_argument("--out", required=True)
     p.add_argument("--root", default=str(ROOT))
     p.add_argument("--write", action="store_true", help="write into the dataset (else OUT/data)")

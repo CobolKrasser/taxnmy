@@ -15,8 +15,14 @@ page: 'https://fwupd.org/lvfs/devices/{id}'
 # its name names, and becomes a product only when that device is not in TAX or in the round yet. Every other
 # component whose categories are all in `devices` is a device. A component with a category in none of the
 # lists (a new one of LVFS), or with none, is set apart with that reason.
+#
+# The categories of the full metadata (firmware.xml.zst) that the extract did not have, as Fred approved them
+# (23 November 2026): X-Gpu to X-Headset a device of its own, X-Battery and X-CpuMicrocode the device the
+# name names, X-VideoDisplay and X-InputController a part.
 devices: [X-System, X-Device, X-Dock, X-UsbDock, X-Keyboard, X-FlashDrive, X-SolidStateDrive, X-Drive,
-          X-NetworkInterface, X-Touchpad, X-FingerprintReader]
-named: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEngine, X-TPM]
-parts: [X-EmbeddedController, X-Controller, X-ThunderboltController, X-BaseboardManagementController]
+          X-NetworkInterface, X-Touchpad, X-FingerprintReader,
+          X-Gpu, X-GraphicsTablet, X-Mouse, X-UsbReceiver, X-Camera, X-Headset]
+named: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEngine, X-TPM, X-Battery, X-CpuMicrocode]
+parts: [X-EmbeddedController, X-Controller, X-ThunderboltController, X-BaseboardManagementController,
+        X-VideoDisplay, X-InputController]
 settings: [X-Configuration]
