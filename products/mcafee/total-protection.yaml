@@ -1,0 +1,12 @@
+key: mcafee/total-protection
+publisher: mcafee
+name: McAfee Total Protection
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:mcafee:total_protection_suite
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- mcafee/mcafee-total-protection

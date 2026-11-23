@@ -1,0 +1,12 @@
+key: barracuda-networks/web-application-firewall
+publisher: barracuda-networks
+name: Barracuda Networks Web Application Firewall
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:barracudanetworks:web_application_firewall
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- barracuda-networks/barracuda-networks-web-application-firewall

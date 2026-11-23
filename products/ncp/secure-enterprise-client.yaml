@@ -1,0 +1,12 @@
+key: ncp/secure-enterprise-client
+publisher: ncp
+name: NCP Secure Enterprise Client
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ncp:vpn_secure_client
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ncp/ncp-secure-enterprise-client

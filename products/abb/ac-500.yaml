@@ -1,0 +1,12 @@
+key: abb/ac-500
+publisher: abb
+name: ABB AC-500
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:abb:ac-500
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- abb/abb-ac-500

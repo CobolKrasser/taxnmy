@@ -1,0 +1,12 @@
+key: oracle/timesten-in-memory-database
+publisher: oracle
+name: Oracle TimesTen In-Memory Database
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:times_ten_in-memory_database
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- oracle/oracle-timesten-in-memory-database
