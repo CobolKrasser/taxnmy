@@ -1,0 +1,8 @@
+key: lvfs/fakedevice
+publisher: lvfs
+name: FakeDevice
+kind: device
+source: https://fwupd.org/lvfs/devices/org.fwupd.fakedevice.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/org.fwupd.fakedevice.firmware
+aliases: []

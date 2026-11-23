@@ -1,0 +1,8 @@
+key: hp/dev-one
+publisher: hp
+name: Dev One
+kind: device
+source: https://fwupd.org/lvfs/devices/com.hp.laptop.devone.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.devone.firmware
+aliases: []

@@ -1,0 +1,8 @@
+key: hp/usb-camera
+publisher: hp
+name: USB camera
+kind: device
+source: https://fwupd.org/lvfs/devices/com.hp.camera.05C80445.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.hp.camera.05C80445.firmware
+aliases: []

@@ -1,0 +1,8 @@
+key: nvidia/dgx-spark-tpm-fw
+publisher: nvidia
+name: DGX Spark TPM FW
+kind: device
+source: https://fwupd.org/lvfs/devices/com.nvidia.dgx.spark.tpm.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.nvidia.dgx.spark.tpm.firmware
+aliases: []

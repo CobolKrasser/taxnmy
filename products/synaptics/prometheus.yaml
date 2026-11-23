@@ -1,0 +1,8 @@
+key: synaptics/prometheus
+publisher: synaptics
+name: Prometheus
+kind: device
+source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.firmware
+aliases: []

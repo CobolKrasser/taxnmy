@@ -94,6 +94,11 @@ class LvfsTest(unittest.TestCase):
         self.assertIn("No AI call; nothing fetched", got["report"])
         self.assertEqual([f for f in lint.lint(self.root) if f.level == "error"], [])
 
+    @unittest.skipUnless(sys.version_info >= (3, 14), "compression.zstd is Python 3.14 and later")
+    def test_the_full_metadata_is_zstd(self):
+        from compression import zstd
+        self.assertEqual(lvfs.components(zstd.compress(gzip.decompress(METADATA))), lvfs.components(METADATA))
+
     def test_the_list_of_the_repository(self):
         data = lvfs.load_list()
         self.assertIn("{id}", data["page"])
