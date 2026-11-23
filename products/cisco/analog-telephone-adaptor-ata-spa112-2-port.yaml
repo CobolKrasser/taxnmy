@@ -1,0 +1,12 @@
+key: cisco/analog-telephone-adaptor-ata-spa112-2-port
+publisher: cisco
+name: Cisco Analog Telephone Adaptor (ATA) SPA112 2-Port
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:ata
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-analog-telephone-adaptor-ata-spa112-2-port

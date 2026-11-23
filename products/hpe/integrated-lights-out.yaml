@@ -1,0 +1,12 @@
+key: hpe/integrated-lights-out
+publisher: hpe
+name: HPE Integrated Lights-Out
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:hp:integrated_lights-out
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hpe/hpe-integrated-lights-out

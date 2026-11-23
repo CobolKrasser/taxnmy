@@ -1,0 +1,11 @@
+key: dell/secure-connect-gateway
+publisher: dell
+name: Secure Connect Gateway
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:dell:secure_connect_gateway
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

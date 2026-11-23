@@ -1,0 +1,11 @@
+key: red-hat/openshift-security-profiles-operator-1
+publisher: red-hat
+name: OpenShift Security Profiles Operator 1
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:openshift_security_profiles_operator
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

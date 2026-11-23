@@ -1,0 +1,11 @@
+key: microsoft/surface-hub
+publisher: microsoft
+name: Surface Hub
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:microsoft:surface_hub
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

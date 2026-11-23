@@ -1,0 +1,11 @@
+key: trend-micro/apex-central
+publisher: trend-micro
+name: Apex Central
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:trendmicro:apex_central
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

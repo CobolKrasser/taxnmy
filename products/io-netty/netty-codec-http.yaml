@@ -1,0 +1,11 @@
+key: io-netty/netty-codec-http
+publisher: io-netty
+name: netty-codec-http
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:maven/io.netty/netty-codec-http
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

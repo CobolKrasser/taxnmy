@@ -1,0 +1,11 @@
+key: absolute-software/secure-access
+publisher: absolute-software
+name: Secure Access
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:absolute:secure_access
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

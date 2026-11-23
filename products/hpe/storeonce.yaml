@@ -1,0 +1,11 @@
+key: hpe/storeonce
+publisher: hpe
+name: StoreOnce
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:hpe:storeonce
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

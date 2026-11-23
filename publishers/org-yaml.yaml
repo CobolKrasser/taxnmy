@@ -1,0 +1,8 @@
+key: org-yaml
+name: org.yaml
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,11 @@
+key: moxa/nport-6000-series
+publisher: moxa
+name: NPort 6000 series
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:moxa:nport
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

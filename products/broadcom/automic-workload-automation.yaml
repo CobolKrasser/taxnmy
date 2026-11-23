@@ -1,0 +1,11 @@
+key: broadcom/automic-workload-automation
+publisher: broadcom
+name: Automic Workload Automation
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:broadcom:automic_workload_automation
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

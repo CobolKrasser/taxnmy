@@ -1,0 +1,8 @@
+key: hp/soc-fw-primary
+publisher: hp
+name: SoC FW Primary
+kind: device
+source: https://fwupd.org/lvfs/devices/com.hp.socfw.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.hp.socfw.firmware
+aliases: []

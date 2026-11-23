@@ -1,0 +1,11 @@
+key: stackable/druid
+publisher: stackable
+name: druid
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:oci/druid
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

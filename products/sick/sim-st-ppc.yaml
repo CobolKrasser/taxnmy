@@ -1,0 +1,9 @@
+key: sick/sim-st-ppc
+publisher: sick
+name: SICK SIM ST (PPC)
+kind: device
+source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+aliases:
+- sick/sick-sim-st-ppc

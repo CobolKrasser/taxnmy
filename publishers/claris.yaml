@@ -1,4 +1,8 @@
 key: claris
 name: Claris
 source: https://support.claris.com/s/article/Claris-support-policy?language=en_US
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

@@ -1,0 +1,11 @@
+key: foxit-software/foxit-reader
+publisher: foxit-software
+name: Foxit Reader
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:foxitsoftware:foxit_reader
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

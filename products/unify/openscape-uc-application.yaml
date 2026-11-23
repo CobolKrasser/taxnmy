@@ -1,0 +1,11 @@
+key: unify/openscape-uc-application
+publisher: unify
+name: OpenScape UC Application
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:unify:openscape_uc_application
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

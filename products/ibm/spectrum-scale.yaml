@@ -1,0 +1,12 @@
+key: ibm/spectrum-scale
+publisher: ibm
+name: IBM Spectrum Scale
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:spectrum_scale
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-spectrum-scale

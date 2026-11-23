@@ -1,0 +1,11 @@
+key: nutanix/ahv
+publisher: nutanix
+name: AHV
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:nutanix:ahv
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

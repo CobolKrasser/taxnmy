@@ -1,0 +1,11 @@
+key: siemens/simatic-s7-1500-cpu
+publisher: siemens
+name: SIMATIC S7-1500 CPU
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:siemens:simatic_s7
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

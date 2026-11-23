@@ -1,0 +1,8 @@
+key: nvidia/dgx-spark-soc-fw
+publisher: nvidia
+name: DGX Spark SoC FW
+kind: device
+source: https://fwupd.org/lvfs/devices/com.nvidia.dgx.spark.socfw.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.nvidia.dgx.spark.socfw.firmware
+aliases: []

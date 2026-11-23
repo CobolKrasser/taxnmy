@@ -1,0 +1,11 @@
+key: microsoft/skype-for-business
+publisher: microsoft
+name: Skype for Business
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:skype_for_business_2016
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

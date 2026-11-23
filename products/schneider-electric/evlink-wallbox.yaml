@@ -1,0 +1,8 @@
+key: schneider-electric/evlink-wallbox
+publisher: schneider-electric
+name: EVLink WallBox
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

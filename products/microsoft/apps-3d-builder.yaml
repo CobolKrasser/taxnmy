@@ -1,0 +1,12 @@
+key: microsoft/apps-3d-builder
+publisher: microsoft
+name: Microsoft Apps 3D Builder
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:apps
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-apps-3d-builder

@@ -1,0 +1,12 @@
+key: ibm/rational-clearcase
+publisher: ibm
+name: IBM Rational ClearCase
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:rational_clearcase
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-rational-clearcase

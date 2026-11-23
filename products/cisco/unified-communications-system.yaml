@@ -1,0 +1,11 @@
+key: cisco/unified-communications-system
+publisher: cisco
+name: Unified Communications System
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:unified_communications_system
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

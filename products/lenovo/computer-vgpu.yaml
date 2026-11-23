@@ -1,0 +1,12 @@
+key: lenovo/computer-vgpu
+publisher: lenovo
+name: Lenovo Computer vGPU
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:lenovo:lenovo_computer
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- lenovo/lenovo-computer-vgpu

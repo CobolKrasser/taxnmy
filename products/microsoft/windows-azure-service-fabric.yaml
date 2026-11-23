@@ -1,0 +1,12 @@
+key: microsoft/windows-azure-service-fabric
+publisher: microsoft
+name: Microsoft Windows Azure Service Fabric
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:windows_azure
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-windows-azure-service-fabric

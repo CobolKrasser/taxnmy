@@ -1,0 +1,12 @@
+key: ibm/websphere-service-registry-and-repository
+publisher: ibm
+name: IBM WebSphere Service Registry and Repository
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:websphere_service_registry_and_repository
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-websphere-service-registry-and-repository

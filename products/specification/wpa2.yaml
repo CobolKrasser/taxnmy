@@ -1,0 +1,12 @@
+key: specification/wpa2
+publisher: specification
+name: Specification WPA2
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:ieee:wpa2
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- specification/specification-wpa2

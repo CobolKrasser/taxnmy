@@ -1,0 +1,11 @@
+key: autodesk/3ds-max
+publisher: autodesk
+name: 3ds Max
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:autodesk:3ds_max
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

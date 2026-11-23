@@ -1,0 +1,12 @@
+key: cisco/prime-collaboration-provisioning
+publisher: cisco
+name: Cisco Prime Collaboration Provisioning
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:prime_collaboration
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-prime-collaboration-provisioning

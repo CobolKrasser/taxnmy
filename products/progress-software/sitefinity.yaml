@@ -1,0 +1,11 @@
+key: progress-software/sitefinity
+publisher: progress-software
+name: Sitefinity
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:progress:sitefinity
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

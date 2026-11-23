@@ -1,0 +1,11 @@
+key: tibco/spotfire-statistics-services
+publisher: tibco
+name: Spotfire Statistics Services
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tibco:spotfire_statistics_services
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

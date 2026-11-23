@@ -1,0 +1,12 @@
+key: microsoft/windows-10-windows-terminal
+publisher: microsoft
+name: Microsoft Windows 10 Windows Terminal
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_10
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-windows-10-windows-terminal

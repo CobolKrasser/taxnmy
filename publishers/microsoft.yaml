@@ -1,4 +1,11 @@
 key: microsoft
 name: Microsoft
 source: https://www.microsoft.com/en-us/about
+machine_sources:
+- url: https://www.se.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+- url: https://www.sick.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
 aliases: []

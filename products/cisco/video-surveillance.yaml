@@ -1,0 +1,14 @@
+key: cisco/video-surveillance
+publisher: cisco
+name: Cisco Video Surveillance
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:video_surveillance_ip_gateway_encoder_decoder
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:cisco:video_surveillance_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-video-surveillance

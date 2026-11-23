@@ -1,0 +1,11 @@
+key: microsoft/windows-10
+publisher: microsoft
+name: Windows 10
+kind: operating-system
+source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_10
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,11 @@
+key: red-hat/self-service-automation-portal
+publisher: red-hat
+name: Self-service automation portal
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:ansible_portal
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

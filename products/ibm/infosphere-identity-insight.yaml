@@ -1,0 +1,12 @@
+key: ibm/infosphere-identity-insight
+publisher: ibm
+name: IBM InfoSphere Identity Insight
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:infosphere_identity_insight
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-infosphere-identity-insight

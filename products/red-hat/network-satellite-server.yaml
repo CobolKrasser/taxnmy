@@ -1,0 +1,12 @@
+key: red-hat/network-satellite-server
+publisher: red-hat
+name: Red Hat Network Satellite Server
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:redhat:network_satelite_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-network-satellite-server

@@ -1,0 +1,11 @@
+key: red-hat/cluster-observability-operator
+publisher: red-hat
+name: Cluster Observability Operator
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:cluster_observability_operator
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

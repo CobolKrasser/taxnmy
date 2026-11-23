@@ -1,0 +1,11 @@
+key: juniper-networks/juniper-ex-series-ex46xx
+publisher: juniper-networks
+name: Juniper EX Series EX46xx
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:juniper:ex
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

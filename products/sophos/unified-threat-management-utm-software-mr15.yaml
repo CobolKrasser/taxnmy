@@ -1,0 +1,12 @@
+key: sophos/unified-threat-management-utm-software-mr15
+publisher: sophos
+name: Sophos Unified Threat Management (UTM) Software MR15
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sophos:unified_threat_management_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sophos/sophos-unified-threat-management-utm-software-mr15

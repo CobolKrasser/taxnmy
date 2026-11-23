@@ -1,0 +1,11 @@
+key: rockwell-automation/studio-5000
+publisher: rockwell-automation
+name: Studio 5000
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:rockwellautomation:studio_5000
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

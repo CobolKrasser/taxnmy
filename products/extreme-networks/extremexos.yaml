@@ -1,0 +1,12 @@
+key: extreme-networks/extremexos
+publisher: extreme-networks
+name: Extreme Networks ExtremeXOS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:extremenetworks:extremexos
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- extreme-networks/extreme-networks-extremexos

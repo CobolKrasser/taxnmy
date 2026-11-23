@@ -1,0 +1,12 @@
+key: red-hat/fuse-intergration-services-based-on-fuse-r13
+publisher: red-hat
+name: Red Hat Fuse Intergration Services based on Fuse R13
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:jboss_fuse
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-fuse-intergration-services-based-on-fuse-r13

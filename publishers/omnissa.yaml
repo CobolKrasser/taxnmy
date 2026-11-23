@@ -1,4 +1,8 @@
 key: omnissa
 name: Omnissa
 source: https://www.omnissa.com/omnissa-security-response/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

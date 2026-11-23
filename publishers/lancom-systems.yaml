@@ -1,4 +1,8 @@
 key: lancom-systems
 name: LANCOM Systems GmbH
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LANCOM/LANconfig
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

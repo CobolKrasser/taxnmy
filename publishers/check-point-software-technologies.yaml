@@ -1,4 +1,8 @@
 key: check-point-software-technologies
 name: Check Point Software Technologies Ltd.
 source: https://www.checkpoint.com/quantum/next-generation-firewall/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

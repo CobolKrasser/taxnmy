@@ -1,0 +1,11 @@
+key: vmware/aria-operations-for-logs
+publisher: vmware
+name: Aria Operations for Logs
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:aria_operations_for_logs
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

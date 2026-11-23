@@ -1,4 +1,8 @@
 key: suse
 name: SUSE
 source: https://www.suse.com/support/update/
+machine_sources:
+- url: https://www.se.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
 aliases: []

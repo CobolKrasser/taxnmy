@@ -1,0 +1,14 @@
+key: microsoft/system-center-orchestrator
+publisher: microsoft
+name: Microsoft System Center Orchestrator
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:system_center_2016_orchestrator
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:microsoft:system_center_2019_orchestrator
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-system-center-orchestrator

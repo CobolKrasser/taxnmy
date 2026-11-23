@@ -1,0 +1,11 @@
+key: f5/big-ip-access-policy-manager
+publisher: f5
+name: BIG-IP Access Policy Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f5:big-ip_access_policy_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

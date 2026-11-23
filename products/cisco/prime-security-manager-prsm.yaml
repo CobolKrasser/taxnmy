@@ -1,0 +1,12 @@
+key: cisco/prime-security-manager-prsm
+publisher: cisco
+name: Cisco Prime Security Manager (PRSM)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:prime_security_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-prime-security-manager-prsm

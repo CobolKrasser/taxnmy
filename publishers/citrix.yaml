@@ -1,4 +1,8 @@
 key: citrix
 name: Citrix
 source: https://www.citrix.com/support/product-lifecycle/product-matrix
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

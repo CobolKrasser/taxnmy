@@ -1,0 +1,12 @@
+key: citrix/systems-xen-desktop
+publisher: citrix
+name: Citrix Systems Xen Desktop
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:citrix:xen_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- citrix/citrix-systems-xen-desktop

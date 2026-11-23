@@ -1,0 +1,12 @@
+key: oracle/java-se-embedded-8u161
+publisher: oracle
+name: Oracle Java SE Embedded 8u161
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:java_se_embedded
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- oracle/oracle-java-se-embedded-8u161

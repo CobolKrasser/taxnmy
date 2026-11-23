@@ -1,0 +1,12 @@
+key: sap/business-intelligence-bi
+publisher: sap
+name: SAP Business Intelligence (BI)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:business_intelligence
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-business-intelligence-bi

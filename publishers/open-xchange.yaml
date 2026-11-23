@@ -1,0 +1,8 @@
+key: open-xchange
+name: Open-Xchange GmbH
+source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+aliases: []

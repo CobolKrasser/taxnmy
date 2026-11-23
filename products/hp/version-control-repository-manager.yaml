@@ -1,0 +1,12 @@
+key: hp/version-control-repository-manager
+publisher: hp
+name: HP Version Control Repository Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:hp:version_control_repository_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- hp/hp-version-control-repository-manager

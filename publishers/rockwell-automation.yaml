@@ -1,0 +1,8 @@
+key: rockwell-automation
+name: Rockwell Automation
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://www.se.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

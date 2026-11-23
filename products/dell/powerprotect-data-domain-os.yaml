@@ -1,0 +1,12 @@
+key: dell/powerprotect-data-domain-os
+publisher: dell
+name: Dell PowerProtect Data Domain OS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:dell:powerprotect_data_domain_os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- dell/dell-powerprotect-data-domain-os

@@ -1,0 +1,12 @@
+key: red-hat/storage-ceph
+publisher: red-hat
+name: Red Hat Storage ceph
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:storage
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-storage-ceph

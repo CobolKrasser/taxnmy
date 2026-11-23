@@ -1,0 +1,12 @@
+key: ibm/business-automation-workflow-enterprise-service-bus
+publisher: ibm
+name: IBM Business Automation Workflow Enterprise Service Bus
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:business_automation_workflow
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-business-automation-workflow-enterprise-service-bus

@@ -1,0 +1,11 @@
+key: phoenix-contact/tc-router
+publisher: phoenix-contact
+name: TC ROUTER
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:phoenixcontact:tc_router
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

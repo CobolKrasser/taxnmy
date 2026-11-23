@@ -1,0 +1,11 @@
+key: dell/computer
+publisher: dell
+name: Computer
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:dell:dell_computer
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

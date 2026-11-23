@@ -1,4 +1,8 @@
 key: sick
 name: SICK AG
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SICK/FlexiSoftDesigner
+machine_sources:
+- url: https://www.sick.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
 aliases: []

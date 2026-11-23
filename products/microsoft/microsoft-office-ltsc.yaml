@@ -1,0 +1,14 @@
+key: microsoft/microsoft-office-ltsc
+publisher: microsoft
+name: Microsoft Microsoft Office LTSC
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:microsoft_office_ltsc_2021
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:microsoft:microsoft_office_ltsc_2024
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-microsoft-office-ltsc

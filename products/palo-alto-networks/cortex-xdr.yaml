@@ -1,0 +1,11 @@
+key: palo-alto-networks/cortex-xdr
+publisher: palo-alto-networks
+name: Cortex XDR
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:paloaltonetworks:cortex_xdr
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

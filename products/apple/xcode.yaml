@@ -1,0 +1,12 @@
+key: apple/xcode
+publisher: apple
+name: Apple Xcode
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:apple:xcode
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- apple/apple-xcode

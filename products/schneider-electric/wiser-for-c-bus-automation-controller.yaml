@@ -1,0 +1,9 @@
+key: schneider-electric/wiser-for-c-bus-automation-controller
+publisher: schneider-electric
+name: Schneider Electric Wiser for C-Bus Automation Controller
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases:
+- schneider-electric/schneider-electric-wiser-for-c-bus-automation-controller

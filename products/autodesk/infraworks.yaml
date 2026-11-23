@@ -1,0 +1,11 @@
+key: autodesk/infraworks
+publisher: autodesk
+name: InfraWorks
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:autodesk:infraworks
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

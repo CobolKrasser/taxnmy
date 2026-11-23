@@ -1,4 +1,8 @@
 key: typo3
 name: TYPO3
 source: https://get.typo3.org/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

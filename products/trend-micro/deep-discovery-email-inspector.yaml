@@ -1,0 +1,11 @@
+key: trend-micro/deep-discovery-email-inspector
+publisher: trend-micro
+name: Deep Discovery Email Inspector
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:trendmicro:deep_discovery_email_inspector
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

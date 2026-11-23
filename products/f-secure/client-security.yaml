@@ -1,0 +1,12 @@
+key: f-secure/client-security
+publisher: f-secure
+name: F-Secure Client Security
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f-secure:client_security
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- f-secure/f-secure-client-security

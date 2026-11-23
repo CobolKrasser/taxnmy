@@ -1,0 +1,11 @@
+key: open-xchange/ox-app-suite-backend
+publisher: open-xchange
+name: OX App Suite backend
+kind: software
+source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:open-xchange:app_suite
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+aliases: []

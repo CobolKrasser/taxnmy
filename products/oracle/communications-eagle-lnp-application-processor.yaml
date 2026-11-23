@@ -1,0 +1,11 @@
+key: oracle/communications-eagle-lnp-application-processor
+publisher: oracle
+name: Communications EAGLE LNP Application Processor
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:communications_eagle_lnp_application_processor
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

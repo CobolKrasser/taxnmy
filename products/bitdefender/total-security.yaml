@@ -1,0 +1,12 @@
+key: bitdefender/total-security
+publisher: bitdefender
+name: Bitdefender Total Security
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:bitdefender:total_security
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- bitdefender/bitdefender-total-security

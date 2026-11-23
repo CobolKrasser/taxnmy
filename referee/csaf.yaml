@@ -1,0 +1,42 @@
+# CSAF as a filler (TAX-23): the data tools/csaf.py needs, so that the code names no brand, no product
+# and no address (TG4, criterion 9). A maintainer changes it with a pull request.
+#
+# `addresses`: the CSAF addresses the round reads, each the provider-metadata.json of a provider as
+# the list of the BSI gives them (`aggregator`, 22 November 2026). `role` is the publisher category of
+# the provider: `vendor` writes about its own products, `coordinator` about the products of others
+# (Fred, 22 November 2026: both come in; the source is the address that names the product). When both
+# name a product, it is one product, and the address of a vendor is its source.
+version: 1
+
+aggregator: 'https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json'
+
+addresses:
+  - {url: 'https://www.se.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://security.access.redhat.com/data/csaf/v2/provider-metadata.json', role: vendor}
+  - {url: 'https://www.huawei.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://www.open-xchange.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://intevation.de/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://csaf.data.security.nozominetworks.com/provider-metadata.json', role: vendor}
+  - {url: 'https://psirt.abb.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://www.sick.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://www.innomic.com/.well-known/csaf/provider-metadata.json', role: vendor}
+  - {url: 'https://aggregator.cert-bund.de/.well-known/csaf-aggregator/www_hitachienergy_com_cybersecurity_alerts-and-notifications/provider-metadata.json', role: vendor}
+  - {url: 'https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json', role: coordinator}
+  - {url: 'https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json', role: coordinator}
+
+# The CPE dictionary of the NVD as one file (rule R8): a public feed, read once per round.
+cpe_dictionary: 'https://nvd.nist.gov/feeds/json/cpe/2.0/nvdcpe-2.0.tar.gz'
+
+# Names a product tree gives as the vendor that name no publisher: such a product is set apart.
+not_publishers: [open source, multiple, unknown, n/a, various, other]
+
+# Words in a vendor field that name a security team, not a publisher (a provider writing about the
+# components of others): such a product is set apart.
+team_words: [psirt, productcert, product security]
+
+# Parts of a path whose directories and feeds the round does not read: VEX documents (csaf_vex) give the
+# status of a vulnerability per product, tens of thousands of them, for the products the advisories name.
+skip_paths: [/vex/]

@@ -1,0 +1,11 @@
+key: palo-alto-networks/cortex-xsoar
+publisher: palo-alto-networks
+name: Cortex XSOAR
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:paloaltonetworks:cortex_xsoar
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

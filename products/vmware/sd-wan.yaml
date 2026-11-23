@@ -1,0 +1,13 @@
+key: vmware/sd-wan
+publisher: vmware
+name: SD-WAN
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:sd-wan
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:vmware:sd-wan_by_velocloud
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

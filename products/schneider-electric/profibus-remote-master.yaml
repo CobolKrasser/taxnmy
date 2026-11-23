@@ -1,0 +1,8 @@
+key: schneider-electric/profibus-remote-master
+publisher: schneider-electric
+name: Profibus Remote Master
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

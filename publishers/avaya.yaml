@@ -1,4 +1,8 @@
 key: avaya
 name: Avaya LLC
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Avaya/AvayaWorkplace
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

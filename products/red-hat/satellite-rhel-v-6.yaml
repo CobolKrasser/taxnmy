@@ -1,0 +1,12 @@
+key: red-hat/satellite-rhel-v-6
+publisher: red-hat
+name: Red Hat Satellite (RHEL v.6)
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:network_satellite
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-satellite-rhel-v-6

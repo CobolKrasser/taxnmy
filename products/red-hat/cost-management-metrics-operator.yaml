@@ -1,0 +1,11 @@
+key: red-hat/cost-management-metrics-operator
+publisher: red-hat
+name: Cost Management Metrics Operator
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:cost_management
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

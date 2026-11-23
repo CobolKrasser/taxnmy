@@ -1,0 +1,11 @@
+key: unify/openscape-sbc
+publisher: unify
+name: OpenScape SBC
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:unify:openscape_sbc
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

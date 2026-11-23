@@ -1,0 +1,11 @@
+key: sonicwall/email-security
+publisher: sonicwall
+name: Email Security
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sonicwall:email_security
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

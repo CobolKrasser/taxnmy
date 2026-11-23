@@ -1,0 +1,11 @@
+key: trend-micro/worry-free-business-security
+publisher: trend-micro
+name: Worry-Free Business Security
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:trendmicro:worry-free_business_security
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

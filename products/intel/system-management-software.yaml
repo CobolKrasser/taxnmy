@@ -1,0 +1,12 @@
+key: intel/system-management-software
+publisher: intel
+name: Intel System Management Software
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:intel:system_management_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- intel/intel-system-management-software

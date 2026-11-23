@@ -1,0 +1,12 @@
+key: lexmark/universal-print-driver
+publisher: lexmark
+name: Lexmark Universal Print Driver
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:lexmark:universal_print_driver
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- lexmark/lexmark-universal-print-driver

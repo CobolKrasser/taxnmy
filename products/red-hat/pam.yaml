@@ -1,0 +1,11 @@
+key: red-hat/pam
+publisher: red-hat
+name: pam
+kind: software
+source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:rpm/redhat/pam
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases: []

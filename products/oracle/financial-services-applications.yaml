@@ -1,0 +1,11 @@
+key: oracle/financial-services-applications
+publisher: oracle
+name: Financial Services Applications
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:financial_services_applications
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

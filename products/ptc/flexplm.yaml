@@ -1,0 +1,11 @@
+key: ptc/flexplm
+publisher: ptc
+name: FlexPLM
+kind: software
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ptc:flexplm
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases: []

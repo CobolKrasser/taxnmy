@@ -1,0 +1,12 @@
+key: tribe29/checkmk-2-1-0p27
+publisher: tribe29
+name: tribe29 checkmk 2.1.0p27
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tribe29:checkmk
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- tribe29/tribe29-checkmk-2-1-0p27

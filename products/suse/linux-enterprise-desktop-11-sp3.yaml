@@ -1,0 +1,12 @@
+key: suse/linux-enterprise-desktop-11-sp3
+publisher: suse
+name: SUSE Linux Enterprise Desktop 11 SP3
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:suse:linux_enterprise_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- suse/suse-linux-enterprise-desktop-11-sp3

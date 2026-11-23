@@ -1,0 +1,12 @@
+key: emc/networker
+publisher: emc
+name: EMC NetWorker
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:emc:networker
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- emc/emc-networker

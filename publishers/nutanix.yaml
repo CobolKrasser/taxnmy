@@ -1,4 +1,8 @@
 key: nutanix
 name: Nutanix
 source: https://portal.nutanix.com/page/security/security-advisories
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

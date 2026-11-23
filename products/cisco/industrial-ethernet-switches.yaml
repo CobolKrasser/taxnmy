@@ -1,0 +1,12 @@
+key: cisco/industrial-ethernet-switches
+publisher: cisco
+name: Cisco Industrial Ethernet Switches
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:industrial_ethernet_switches
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-industrial-ethernet-switches

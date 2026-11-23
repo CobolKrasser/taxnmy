@@ -1,0 +1,12 @@
+key: nutanix/objects
+publisher: nutanix
+name: Nutanix Objects
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:nutanix:objects
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- nutanix/nutanix-objects

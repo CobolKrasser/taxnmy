@@ -1,0 +1,11 @@
+key: suse/linux
+publisher: suse
+name: Linux
+kind: operating-system
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:suse:suse_linux
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

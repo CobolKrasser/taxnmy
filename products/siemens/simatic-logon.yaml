@@ -1,0 +1,11 @@
+key: siemens/simatic-logon
+publisher: siemens
+name: SIMATIC Logon
+kind: software
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:siemens:simatic_logon
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: siemens/simatic-s7-1500
+publisher: siemens
+name: Siemens SIMATIC S7 1500
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:siemens:simatic_s7
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- siemens/siemens-simatic-s7-1500

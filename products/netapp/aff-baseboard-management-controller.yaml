@@ -1,0 +1,12 @@
+key: netapp/aff-baseboard-management-controller
+publisher: netapp
+name: NetApp AFF Baseboard Management Controller
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:netapp:aff
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- netapp/netapp-aff-baseboard-management-controller

@@ -1,4 +1,8 @@
 key: sonicwall
 name: SonicWall
 source: https://www.sonicwall.com/products/remote-access/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

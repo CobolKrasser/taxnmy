@@ -1,0 +1,11 @@
+key: tibco/activematrix
+publisher: tibco
+name: ActiveMatrix
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tibco:activematrix_businessworks
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

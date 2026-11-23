@@ -1,0 +1,11 @@
+key: check-point-software-technologies/check-point-mobile-access
+publisher: check-point-software-technologies
+name: Check Point Mobile Access
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:checkpoint:mobile_access
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

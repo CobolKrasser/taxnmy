@@ -1,0 +1,12 @@
+key: unify/openscape-xpert-clients
+publisher: unify
+name: Unify OpenScape Xpert Clients
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:unify:openscape_xpert
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- unify/unify-openscape-xpert-clients

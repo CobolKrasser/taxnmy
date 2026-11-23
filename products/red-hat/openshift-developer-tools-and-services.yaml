@@ -1,0 +1,13 @@
+key: red-hat/openshift-developer-tools-and-services
+publisher: red-hat
+name: OpenShift Developer Tools and Services
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:source_to_image
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:ocp_tools
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

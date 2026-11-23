@@ -1,0 +1,11 @@
+key: avaya/aura-experience-portal
+publisher: avaya
+name: Aura Experience Portal
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:avaya:aura_experience_portal
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

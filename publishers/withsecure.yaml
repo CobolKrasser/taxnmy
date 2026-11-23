@@ -1,4 +1,8 @@
 key: withsecure
 name: WithSecure Corporation
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WithSecure/ElementsAgent
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

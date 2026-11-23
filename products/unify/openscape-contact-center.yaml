@@ -1,0 +1,11 @@
+key: unify/openscape-contact-center
+publisher: unify
+name: OpenScape Contact Center
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:unify:openscape_contact_center
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

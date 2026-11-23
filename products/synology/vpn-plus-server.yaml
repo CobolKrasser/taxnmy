@@ -1,0 +1,11 @@
+key: synology/vpn-plus-server
+publisher: synology
+name: VPN Plus Server
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:synology:vpn_plus_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,12 @@
+key: red-hat/in-vehicle-os-variant
+publisher: red-hat
+name: Red Hat In-Vehicle-OS Variant
+kind: operating-system
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:redhat:rhivos
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-in-vehicle-os-variant

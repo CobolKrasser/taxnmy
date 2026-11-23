@@ -1,0 +1,12 @@
+key: intel/amt-sdk
+publisher: intel
+name: Intel AMT SDK
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:intel:active_management_technology_software_development_kit
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- intel/intel-amt-sdk

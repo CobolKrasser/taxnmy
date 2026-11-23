@@ -1,0 +1,12 @@
+key: red-hat/openshift-service-on-aws
+publisher: red-hat
+name: Red Hat OpenShift Service on AWS
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:openshift_service_on_aws
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-openshift-service-on-aws

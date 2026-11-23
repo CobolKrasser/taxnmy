@@ -1,0 +1,11 @@
+key: red-hat/satellite-client-6-for-rhel-6
+publisher: red-hat
+name: Satellite Client 6 for RHEL 6
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:rhel_satellite_client
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

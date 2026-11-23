@@ -1,0 +1,11 @@
+key: symantec/data-loss-prevention
+publisher: symantec
+name: Data Loss Prevention
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:symantec:data_loss_prevention
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

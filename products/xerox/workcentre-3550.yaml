@@ -1,0 +1,12 @@
+key: xerox/workcentre-3550
+publisher: xerox
+name: Xerox WorkCentre 3550
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:xerox:workcentre
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- xerox/xerox-workcentre-3550

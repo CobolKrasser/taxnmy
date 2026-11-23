@@ -1,0 +1,12 @@
+key: sap/enterprise-portal-ep
+publisher: sap
+name: SAP Enterprise Portal (EP)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:enterprise_portal
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-enterprise-portal-ep

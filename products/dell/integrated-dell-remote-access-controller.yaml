@@ -1,0 +1,12 @@
+key: dell/integrated-dell-remote-access-controller
+publisher: dell
+name: Dell integrated Dell Remote Access Controller
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:dell:idrac
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- dell/dell-integrated-dell-remote-access-controller

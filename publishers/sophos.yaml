@@ -1,4 +1,8 @@
 key: sophos
 name: Sophos
 source: https://www.sophos.com/en-us/products/next-gen-firewall/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

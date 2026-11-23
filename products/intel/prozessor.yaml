@@ -1,0 +1,12 @@
+key: intel/prozessor
+publisher: intel
+name: Intel Prozessor
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:intel:intel_prozessor
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- intel/intel-prozessor

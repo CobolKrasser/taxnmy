@@ -1,0 +1,11 @@
+key: red-hat/agentic-cluster-security-suite
+publisher: red-hat
+name: agentic cluster security suite
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:agentic_cluster_security_suite
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases: []

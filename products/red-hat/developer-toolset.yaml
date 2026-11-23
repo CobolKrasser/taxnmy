@@ -1,0 +1,12 @@
+key: red-hat/developer-toolset
+publisher: red-hat
+name: Red Hat Developer Toolset
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:developer_toolset
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-developer-toolset

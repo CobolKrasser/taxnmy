@@ -1,0 +1,13 @@
+key: suse/linux-enterprise-desktop
+publisher: suse
+name: Linux Enterprise Desktop
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:suse:linux_enterprise_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:o:suse:suse_linux
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

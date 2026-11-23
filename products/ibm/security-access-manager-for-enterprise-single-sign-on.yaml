@@ -1,0 +1,12 @@
+key: ibm/security-access-manager-for-enterprise-single-sign-on
+publisher: ibm
+name: IBM Security Access Manager for Enterprise Single Sign-On
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:security_access_manager_for_enterprise_single_sign_on
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-security-access-manager-for-enterprise-single-sign-on

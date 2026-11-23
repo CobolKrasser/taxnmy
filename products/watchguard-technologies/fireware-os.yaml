@@ -1,0 +1,11 @@
+key: watchguard-technologies/fireware-os
+publisher: watchguard-technologies
+name: Fireware OS
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:watchguard:fireware_os
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

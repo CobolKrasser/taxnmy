@@ -1,0 +1,12 @@
+key: cisco/wireless-access-point-wap371
+publisher: cisco
+name: Cisco Wireless Access Point WAP371
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:wap
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-wireless-access-point-wap371

@@ -1,0 +1,12 @@
+key: cisco/unified-communications-domain-manager-cucdm
+publisher: cisco
+name: Cisco Unified Communications Domain Manager (CUCDM)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:cisco:unified_communications_domain_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-unified-communications-domain-manager-cucdm

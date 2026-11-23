@@ -1,0 +1,11 @@
+key: ibm/app-connect-enterprise
+publisher: ibm
+name: App Connect Enterprise
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:app_connect_enterprise
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

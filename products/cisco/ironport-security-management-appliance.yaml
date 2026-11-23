@@ -1,0 +1,12 @@
+key: cisco/ironport-security-management-appliance
+publisher: cisco
+name: Cisco IronPort Security Management Appliance
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:cisco:ironport_security_management_appliance
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- cisco/cisco-ironport-security-management-appliance

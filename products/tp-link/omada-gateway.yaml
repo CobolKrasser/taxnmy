@@ -1,0 +1,12 @@
+key: tp-link/omada-gateway
+publisher: tp-link
+name: TP-Link Omada Gateway
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tp-link:omada_gateway
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- tp-link/tp-link-omada-gateway

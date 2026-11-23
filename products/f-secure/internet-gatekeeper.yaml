@@ -1,0 +1,12 @@
+key: f-secure/internet-gatekeeper
+publisher: f-secure
+name: F-Secure Internet Gatekeeper
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:f-secure:internet_gatekeeper
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- f-secure/f-secure-internet-gatekeeper

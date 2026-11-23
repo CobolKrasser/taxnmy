@@ -1,0 +1,12 @@
+key: festo/cpx
+publisher: festo
+name: FESTO CPX
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:festo:cpx
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- festo/festo-cpx

@@ -1,0 +1,12 @@
+key: nginx/nginx-njs-v-0feca92
+publisher: nginx
+name: NGINX NGINX NJS v.0feca92
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:nginx:nginx
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- nginx/nginx-nginx-njs-v-0feca92

@@ -1,0 +1,12 @@
+key: unify/openscape-cordless-ip
+publisher: unify
+name: Unify OpenScape Cordless IP
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:unify:openscape_cordless_ip
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- unify/unify-openscape-cordless-ip

@@ -1,0 +1,12 @@
+key: atoss/staff-efficiency-suite
+publisher: atoss
+name: ATOSS Staff Efficiency Suite
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:atoss:staff_efficiency_suite
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- atoss/atoss-staff-efficiency-suite

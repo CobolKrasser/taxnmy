@@ -1,4 +1,8 @@
 key: tp-link
 name: TP-Link
 source: https://www.tp-link.com/uk/support/download/tl-wa855re/
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases: []

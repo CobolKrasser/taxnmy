@@ -1,0 +1,11 @@
+key: oracle/communications-messaging-server
+publisher: oracle
+name: Communications Messaging Server
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:oracle:communications_messaging_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

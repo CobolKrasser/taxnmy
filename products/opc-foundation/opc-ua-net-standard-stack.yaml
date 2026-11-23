@@ -1,0 +1,11 @@
+key: opc-foundation/opc-ua-net-standard-stack
+publisher: opc-foundation
+name: OPC UA .NET Standard Stack
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:opcfoundation:ua_.net_standard_stack
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

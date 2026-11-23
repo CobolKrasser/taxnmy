@@ -1,4 +1,8 @@
 key: asus
 name: ASUS
 source: https://www.asus.com/support/download-center/
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

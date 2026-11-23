@@ -1,0 +1,14 @@
+key: microsoft/exchange-server-cumulative-update-23
+publisher: microsoft
+name: Microsoft Exchange Server Cumulative Update 23
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:exchange_server_2013
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:microsoft:exchange_server_2016
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-exchange-server-cumulative-update-23

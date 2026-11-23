@@ -1,0 +1,11 @@
+key: kunbus/picontrol
+publisher: kunbus
+name: picontrol
+kind: software
+source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- purl: pkg:deb/revolutionpi/picontrol
+  source: https://psirt.kunbus.com/.well-known/csaf/provider-metadata.json
+aliases: []

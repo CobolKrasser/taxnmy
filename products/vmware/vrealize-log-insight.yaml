@@ -1,0 +1,12 @@
+key: vmware/vrealize-log-insight
+publisher: vmware
+name: VMware vRealize Log Insight
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:vcenter_log_insight
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- vmware/vmware-vrealize-log-insight

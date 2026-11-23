@@ -1,0 +1,12 @@
+key: avaya/session-border-controller
+publisher: avaya
+name: Avaya Session Border Controller
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:avaya:session_border_controller
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- avaya/avaya-session-border-controller

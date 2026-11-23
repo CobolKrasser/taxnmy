@@ -1,0 +1,12 @@
+key: canonical/snap
+publisher: canonical
+name: Canonical Snap
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:canonical:snapd
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- canonical/canonical-snap

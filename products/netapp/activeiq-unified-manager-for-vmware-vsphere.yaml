@@ -1,0 +1,12 @@
+key: netapp/activeiq-unified-manager-for-vmware-vsphere
+publisher: netapp
+name: NetApp ActiveIQ Unified Manager for VMware vSphere
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:netapp:active_iq_unified_manager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- netapp/netapp-activeiq-unified-manager-for-vmware-vsphere

@@ -1,0 +1,11 @@
+key: dell/recoverpoint-for-virtual-machines
+publisher: dell
+name: RecoverPoint for Virtual Machines
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:dell:recoverpoint_for_virtual_machines
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

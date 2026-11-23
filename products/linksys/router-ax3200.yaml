@@ -1,0 +1,12 @@
+key: linksys/router-ax3200
+publisher: linksys
+name: Linksys Router AX3200
+kind: device
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:linksys:router
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- linksys/linksys-router-ax3200

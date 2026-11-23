@@ -1,0 +1,11 @@
+key: netapp/data-ontap
+publisher: netapp
+name: Data ONTAP
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:netapp:data_ontap
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

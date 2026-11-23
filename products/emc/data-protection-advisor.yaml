@@ -1,0 +1,12 @@
+key: emc/data-protection-advisor
+publisher: emc
+name: EMC Data Protection Advisor
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:emc:data_protection_advisor
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- emc/emc-data-protection-advisor

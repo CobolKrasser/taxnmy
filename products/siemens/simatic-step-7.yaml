@@ -1,0 +1,11 @@
+key: siemens/simatic-step-7
+publisher: siemens
+name: SIMATIC STEP 7
+kind: software
+source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+versions:
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:siemens:simatic_step_7
+  source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+aliases: []

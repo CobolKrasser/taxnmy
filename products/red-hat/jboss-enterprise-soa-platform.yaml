@@ -1,0 +1,12 @@
+key: red-hat/jboss-enterprise-soa-platform
+publisher: red-hat
+name: Red Hat JBoss Enterprise SOA Platform
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:jboss_enterprise_soa_platform
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-jboss-enterprise-soa-platform

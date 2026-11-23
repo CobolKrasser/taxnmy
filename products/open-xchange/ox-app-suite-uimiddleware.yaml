@@ -1,0 +1,11 @@
+key: open-xchange/ox-app-suite-uimiddleware
+publisher: open-xchange
+name: OX App Suite uimiddleware
+kind: software
+source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:open-xchange:uimiddleware
+  source: https://www.open-xchange.com/.well-known/csaf/provider-metadata.json
+aliases: []

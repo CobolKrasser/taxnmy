@@ -1,0 +1,13 @@
+key: rsa/bsafe
+publisher: rsa
+name: BSAFE
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:rsa:bsafe_micro_edition_suite
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- cpe: cpe:2.3:a:rsa:bsafe
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

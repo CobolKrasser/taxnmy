@@ -1,4 +1,8 @@
 key: wibu-systems
 name: WIBU-SYSTEMS AG
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wibu-Systems/CodeMeterRuntimeKit
+machine_sources:
+- url: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
 aliases: []

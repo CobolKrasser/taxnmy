@@ -1,0 +1,11 @@
+key: intel/xeon
+publisher: intel
+name: Xeon
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:h:intel:xeon
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

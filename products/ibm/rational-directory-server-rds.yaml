@@ -1,0 +1,12 @@
+key: ibm/rational-directory-server-rds
+publisher: ibm
+name: IBM Rational Directory Server (RDS)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ibm:rational_directory_server
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- ibm/ibm-rational-directory-server-rds

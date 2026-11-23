@@ -1,0 +1,11 @@
+key: apache/log4cxx
+publisher: apache
+name: Log4cxx
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:apache:log4cxx
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

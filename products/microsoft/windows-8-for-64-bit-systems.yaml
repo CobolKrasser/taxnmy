@@ -1,0 +1,11 @@
+key: microsoft/windows-8-for-64-bit-systems
+publisher: microsoft
+name: Windows 8 for 64-bit Systems
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_8
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

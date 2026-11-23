@@ -1,0 +1,12 @@
+key: sap/supplier-relationship-management-srm
+publisher: sap
+name: SAP Supplier Relationship Management (SRM)
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:sap:supplier_relationship_management
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- sap/sap-supplier-relationship-management-srm

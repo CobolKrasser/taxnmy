@@ -1,0 +1,12 @@
+key: xerox/versalink
+publisher: xerox
+name: Xerox Versalink
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:xerox:versalink
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- xerox/xerox-versalink

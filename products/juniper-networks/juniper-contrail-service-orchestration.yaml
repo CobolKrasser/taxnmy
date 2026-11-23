@@ -1,0 +1,11 @@
+key: juniper-networks/juniper-contrail-service-orchestration
+publisher: juniper-networks
+name: Juniper Contrail Service Orchestration
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:juniper:contrail_service_orchestration
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

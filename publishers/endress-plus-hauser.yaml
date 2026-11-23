@@ -1,0 +1,8 @@
+key: endress-plus-hauser
+name: Endress+Hauser
+source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://www.sick.com/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.sick.com/.well-known/csaf/provider-metadata.json
+aliases: []

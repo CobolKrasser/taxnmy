@@ -1,0 +1,11 @@
+key: citrix/xenserver
+publisher: citrix
+name: XenServer
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:citrix:xenserver
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

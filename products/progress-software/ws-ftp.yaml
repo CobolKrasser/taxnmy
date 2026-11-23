@@ -1,0 +1,11 @@
+key: progress-software/ws-ftp
+publisher: progress-software
+name: WS_FTP
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:progress:ws_ftp
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

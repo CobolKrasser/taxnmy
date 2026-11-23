@@ -1,0 +1,12 @@
+key: specification/http-2
+publisher: specification
+name: Specification http/2
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:ietf:http2
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- specification/specification-http-2
