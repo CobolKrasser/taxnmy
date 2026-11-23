@@ -1,0 +1,9 @@
+key: dell/precision-7560
+publisher: dell
+name: Precision 7560
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefib9870160.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefib9870160.firmware
+aliases:
+- dell/precision-7760

@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-p1-gen-2
+publisher: lenovo
+name: ThinkPad P1 Gen 2
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2OETXXP.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2OETXXP.firmware
+aliases:
+- lenovo/thinkpad-x1-extreme-2nd

@@ -1,0 +1,10 @@
+key: lenovo/kxg6aznv256g-toshiba
+publisher: lenovo
+name: KXG6AZNV256G TOSHIBA
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
+aliases:
+- lenovo/kxg6aznv512g-toshiba
+- lenovo/kxg6aznv1t02-toshiba

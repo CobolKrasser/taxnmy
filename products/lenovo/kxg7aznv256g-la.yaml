@@ -1,0 +1,10 @@
+key: lenovo/kxg7aznv256g-la
+publisher: lenovo
+name: KXG7AZNV256G LA
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
+aliases:
+- lenovo/kxg7aznv512g-la
+- lenovo/kxg7aznv1t02-la

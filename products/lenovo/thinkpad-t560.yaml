@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-t560
+publisher: lenovo
+name: ThinkPad T560
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1KET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1KET.firmware
+aliases:
+- lenovo/thinkpad-p50s

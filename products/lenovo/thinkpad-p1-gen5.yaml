@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-p1-gen5
+publisher: lenovo
+name: ThinkPad P1 Gen5
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3JRO.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3JRO.firmware
+aliases:
+- lenovo/thinkpad-x1-extreme-5

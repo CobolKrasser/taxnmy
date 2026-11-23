@@ -1,0 +1,9 @@
+key: dell/latitude-3420
+publisher: dell
+name: Latitude 3420
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi4104b500.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi4104b500.firmware
+aliases:
+- dell/latitude-3520

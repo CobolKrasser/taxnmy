@@ -1,0 +1,10 @@
+key: dell/vostro-3400
+publisher: dell
+name: Vostro 3400
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi5436e16d.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi5436e16d.firmware
+aliases:
+- dell/inspiron-3501
+- dell/vostro-3500

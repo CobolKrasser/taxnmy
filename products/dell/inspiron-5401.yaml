@@ -1,0 +1,11 @@
+key: dell/inspiron-5401
+publisher: dell
+name: Inspiron 5401
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefif40156b6.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefif40156b6.firmware
+aliases:
+- dell/inspiron-5501
+- dell/vostro-5401
+- dell/vostro-5501

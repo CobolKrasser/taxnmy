@@ -26,3 +26,39 @@ named: [X-ManagementEngine, X-CorporateManagementEngine, X-ConsumerManagementEng
 parts: [X-EmbeddedController, X-Controller, X-ThunderboltController, X-BaseboardManagementController,
         X-VideoDisplay, X-InputController]
 settings: [X-Configuration]
+
+# A row of models (TAX-62): words in a name that are no part of a model, as regular expressions. They are
+# dropped before the rule reads the row (the analyst, PR #89).
+row_additions: ['\s*-?\s*China HDD Protection', '\s+DALI\b', '\s+LCN\b', '\s+BCL\b']
+
+# Rows of models written with a space, an underscore or "and" instead of a slash or a comma, which the rule
+# cannot see. Read one by one by a model, not by an API call (Fred, 23 November 2026: "Bij LVFS splits die
+# producten ook maar. Gebruik je AI logica daar"): the name as LVFS writes it, and its models, the first being
+# the name and the key. A name with doubt stays whole and is not in this list: capacities of an SSD, chipsets,
+# an addition for the whole row ("... AMD"), a model that cannot be completed without doubt, and a model TAX
+# already has under another spelling.
+rows:
+  'ThinkPad T580 P52s': [ThinkPad T580, ThinkPad P52s]
+  'ThinkPad X395 T495s': [ThinkPad X395, ThinkPad T495s]
+  'ThinkPad P1 and X1 Extreme': [ThinkPad P1, ThinkPad X1 Extreme]
+  'ThinkPad P1 X1 Extreme': [ThinkPad P1, ThinkPad X1 Extreme]
+  'ThinkPad P1 Gen2 X1 Extreme 2nd Consumer': [ThinkPad P1 Gen 2, ThinkPad X1 Extreme 2nd]
+  'ThinkPad P1 Gen2 X1 Extreme 2nd Corporate': [ThinkPad P1 Gen 2, ThinkPad X1 Extreme 2nd]
+  'ThinkPad P1 Gen3 X1 Extreme 3rd Consumer': [ThinkPad P1 Gen 3, ThinkPad X1 Extreme 3rd]
+  'ThinkPad P1 Gen3 X1 Extreme 3rd Corporate': [ThinkPad P1 Gen 3, ThinkPad X1 Extreme 3rd]
+  'ThinkPad T14 Gen 1 ThinkPad P14s Gen 1': [ThinkPad T14 Gen 1, ThinkPad P14s Gen 1]
+  'ThinkPad T14 Gen 2i P14s Gen 2i': [ThinkPad T14 Gen 2i, ThinkPad P14s Gen 2i]
+  'ThinkPad T14 Gen 2i_ThinkPad P14s Gen 2i': [ThinkPad T14 Gen 2i, ThinkPad P14s Gen 2i]
+  'ThinkPad T14 Gen 3 P14s Gen 3': [ThinkPad T14 Gen 3, ThinkPad P14s Gen 3]
+  'ThinkPad T14 Gen3 P14s Gen3': [ThinkPad T14 Gen 3, ThinkPad P14s Gen 3]
+  'ThinkPad T15 Gen 2 P15s Gen 2': [ThinkPad T15 Gen 2, ThinkPad P15s Gen 2]
+  'ThinkPad T16 Gen 1 P16s Gen 1': [ThinkPad T16 Gen 1, ThinkPad P16s Gen 1]
+  'ThinkPad T16 Gen1 P16s Gen1': [ThinkPad T16 Gen 1, ThinkPad P16s Gen 1]
+  'ThinkPad L14 and L15 Gen 3': [ThinkPad L14 Gen 3, ThinkPad L15 Gen 3]
+  'ThinkPad L14 and L15 Gen3': [ThinkPad L14 Gen 3, ThinkPad L15 Gen 3]
+  'ThinkPad L14 and L15 Gen 3 Vpro MEFW': [ThinkPad L14 Gen 3, ThinkPad L15 Gen 3]
+  'ThinkPad L14 and L15 Gen 3 NonVpro MEFW': [ThinkPad L14 Gen 3, ThinkPad L15 Gen 3]
+  'ThinkPad L14 L15 Gen 4': [ThinkPad L14 Gen 4, ThinkPad L15 Gen 4]
+  'ThinkCentre M90ts_ThinkCentre M80ts_ThinkCentre M70ts': [ThinkCentre M90ts, ThinkCentre M80ts, ThinkCentre M70ts]
+  'Think M950ts_Think M70ts-4': [ThinkCentre M950ts, ThinkCentre M70ts-4]
+  'ThinkCentre Neo 50q Gen4 and IdeaCentre Mini5i': [ThinkCentre Neo 50q Gen 4, IdeaCentre Mini 5i]

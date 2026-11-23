@@ -1,0 +1,11 @@
+key: lenovo/thinkcentre-m90q-2
+publisher: lenovo
+name: ThinkCentre M90q-2
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M3J.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M3J.BIOS.firmware
+aliases:
+- lenovo/thinkcentre-m70q-2
+- lenovo/thinkcentre-m740q
+- lenovo/thinkstation-p350tiny

@@ -1,0 +1,9 @@
+key: dell/vostro-3890
+publisher: dell
+name: Vostro 3890
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi50fd0507.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi50fd0507.firmware
+aliases:
+- dell/vostro-3690

@@ -1,0 +1,10 @@
+key: lenovo/thinkpad-e14-gen-7
+publisher: lenovo
+name: ThinkPad E14 Gen 7
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2YET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2YET.firmware
+aliases:
+- lenovo/thinkpad-l14p-gen-6
+- lenovo/thinkpad-e16-gen-3-intel

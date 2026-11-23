@@ -1,0 +1,10 @@
+key: lenovo/thinkcentre-m90ts
+publisher: lenovo
+name: ThinkCentre M90ts
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M90ts_M80ts_M70ts.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M90ts_M80ts_M70ts.BIOS.firmware
+aliases:
+- lenovo/thinkcentre-m80ts
+- lenovo/thinkcentre-m70ts

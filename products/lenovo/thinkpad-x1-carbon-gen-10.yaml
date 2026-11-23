@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-x1-carbon-gen-10
+publisher: lenovo
+name: ThinkPad X1 Carbon Gen 10
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ATR.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ATR.firmware
+aliases:
+- lenovo/thinkpad-x1-yoga-gen-7

@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-p1
+publisher: lenovo
+name: ThinkPad P1
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2ERM.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2ERM.firmware
+aliases:
+- lenovo/thinkpad-x1-extreme

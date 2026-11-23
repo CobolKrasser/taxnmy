@@ -1,0 +1,9 @@
+key: lenovo/thinkcentre-m950ts
+publisher: lenovo
+name: ThinkCentre M950ts
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
+aliases:
+- lenovo/thinkcentre-m70ts-4

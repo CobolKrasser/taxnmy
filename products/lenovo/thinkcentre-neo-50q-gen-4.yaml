@@ -1,0 +1,9 @@
+key: lenovo/thinkcentre-neo-50q-gen-4
+publisher: lenovo
+name: ThinkCentre Neo 50q Gen 4
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.M4Y.BIOS.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4Y.BIOS.firmware
+aliases:
+- lenovo/ideacentre-mini-5i

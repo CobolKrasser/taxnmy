@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-t15p-gen3
+publisher: lenovo
+name: ThinkPad T15P GEN3
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ECZNTC7231.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ECZNTC7231.firmware
+aliases:
+- lenovo/thinkpad-p15v-gen3

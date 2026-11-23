@@ -1,0 +1,10 @@
+key: lenovo/thinkpad-t14p-gen-4
+publisher: lenovo
+name: ThinkPad T14p Gen 4
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4WSG08W.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4WSG08W.firmware
+aliases:
+- lenovo/thinkpad-p14s-gen-7
+- lenovo/thinkpad-p16s-gen-5

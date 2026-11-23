@@ -1,0 +1,10 @@
+key: lenovo/thinkpad-p15-gen-2i
+publisher: lenovo
+name: ThinkPad P15 Gen 2i
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN37ET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN37ET.firmware
+aliases:
+- lenovo/thinkpad-p17-gen-2i
+- lenovo/thinkpad-t15g-gen-2i

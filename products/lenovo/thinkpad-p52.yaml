@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-p52
+publisher: lenovo
+name: ThinkPad P52
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CET.firmware
+aliases:
+- lenovo/thinkpad-p72

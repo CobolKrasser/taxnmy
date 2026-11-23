@@ -1,0 +1,9 @@
+key: dell/latitude-3500
+publisher: dell
+name: Latitude 3500
+kind: device
+source: https://fwupd.org/lvfs/devices/com.dell.uefi26c8eaca.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi26c8eaca.firmware
+aliases:
+- dell/latitude-3400

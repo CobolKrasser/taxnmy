@@ -1,0 +1,9 @@
+key: lenovo/thinkpad-p53
+publisher: lenovo
+name: ThinkPad P53
+kind: device
+source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2NET.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2NET.firmware
+aliases:
+- lenovo/thinkpad-p73
