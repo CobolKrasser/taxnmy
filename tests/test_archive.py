@@ -192,7 +192,7 @@ class Nothing(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
                 # TAX-57: the first filling from the filler takes in a model it no longer supports as archived
-                # (Fred's decision of 22 November 2026); the filler's word, not an age, decides it.
+                # (the PO's decision of 22 November 2026); the filler's word, not an age, decides it.
                 if path.name not in ("archive.py", "endoflife.py"):
                     self.assertNotIn("archived", text, "only tools/archive.py names the field, and it only reads it")
                 self.assertIsNone(re.search(r"stale|inactiv|abandon|last.?update|days.?since|without.?update", text, re.I))

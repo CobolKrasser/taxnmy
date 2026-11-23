@@ -53,7 +53,7 @@ Sony twice. Running each query once would have cost 3 searches instead of 7, abo
 | G07 | reject (S8) | the Samsung page now redirects to the Galaxy Tab S10 | data: a current source (review of run A, §3) |
 | G12, G17, G21, G22 | human (S5) | no source shows who publishes; the publisher sources are endoflife.date pages or tags | data: the round of filling in publisher sources (review of run A, §2) |
 | G09 | human (S8) | the versions source refuses, and what was found does not show versions | data: Dell's catalog in `machine_sources` of `publishers/dell.yaml`, once its source is checked |
-| G06, B15 | human | Sony refuses, and the search finds only sony.nl | data: another open source (the analyst's question to Fred) |
+| G06, B15 | human | Sony refuses, and the search finds only sony.nl | data: another open source (the analyst's question to the PO) |
 | G03 | human (S8) | the NVD API timed out on one CPE | harness: one retry on a timeout of the API step |
 | H02 | human (S4, S6) | the referee doubts whether "OpenAI API Models" is one product and a name, rather than a catalogue and a label | a choice: allow *human* in `expect`, or another name |
 
