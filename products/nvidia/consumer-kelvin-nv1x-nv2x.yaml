@@ -1,0 +1,12 @@
+key: nvidia/consumer-kelvin-nv1x-nv2x
+publisher: nvidia
+name: NVIDIA Consumer Kelvin (NV1x, NV2x)
+kind: device
+source: https://endoflife.date/nvidia-gpu
+versions:
+  source: https://endoflife.date/nvidia-gpu
+identifiers: []
+aliases:
+- nvidia/nvidia-consumer-kelvin-nv1x-nv2x
+archived:
+  source: https://endoflife.date/nvidia-gpu

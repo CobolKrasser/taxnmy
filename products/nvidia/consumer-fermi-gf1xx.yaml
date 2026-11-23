@@ -1,0 +1,12 @@
+key: nvidia/consumer-fermi-gf1xx
+publisher: nvidia
+name: NVIDIA Consumer Fermi (GF1xx)*
+kind: device
+source: https://endoflife.date/nvidia-gpu
+versions:
+  source: https://endoflife.date/nvidia-gpu
+identifiers: []
+aliases:
+- nvidia/nvidia-consumer-fermi-gf1xx
+archived:
+  source: https://endoflife.date/nvidia-gpu
