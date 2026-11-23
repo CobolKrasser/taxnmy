@@ -142,7 +142,7 @@ rejected on TE1. A change of the scope goes through a pull request, like any oth
 publishers/<publisher>.yaml          one file per publisher
 products/<publisher>/<product>.yaml  one file per product
 schema/                              JSON schemas for both files
-tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness, the count of candidate sources (`census.py`), the filling from winget (`winget.py`) and from endoflife.date (`endoflife.py`) and the finders of a source of the publisher itself, for a publisher (`ownsource.py`) and for a product (`ownversions.py`)
+tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness, the count of candidate sources (`census.py`), the filling from winget (`winget.py`) from endoflife.date (`endoflife.py`) and of electric cars from Open EV Data and fueleconomy.gov (`ev.py`), and the finders of a source of the publisher itself, for a publisher (`ownsource.py`) and for a product (`ownversions.py`)
 tests/                               tests for the lint and the harness
 referee/                             prompt, test set and runs of the referee (TP1, TP3, TP5, TK2 and TE1)
 ```
@@ -158,6 +158,7 @@ Anthropic Python SDK (`requirements-referee.txt`); see [referee/README.md](refer
 ## Licence
 
 The data (`products/`, `publishers/`) is licensed under [CC BY 4.0](LICENSE). Data from
-endoflife.date is used under its MIT licence, with attribution; see [NOTICE](NOTICE).
+endoflife.date is used under its MIT licence, with attribution, and data from Open EV Data under
+the CDLA-Permissive-2.0; see [NOTICE](NOTICE).
 
 The code (`schema/`, `tools/`, `tests/`) is licensed under the [MIT licence](LICENSE-CODE).

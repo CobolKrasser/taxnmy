@@ -1,0 +1,170 @@
+# Electric cars as a filler (TAX-59): the data tools/ev.py needs, so that the code names no brand and
+# no model (TG4). A maintainer changes it with a pull request.
+#
+# The models come from Open EV Data (a release on GitHub, CDLA-Permissive-2.0, see NOTICE) and from
+# the FE Guide of fueleconomy.gov (sheet EV, model years 2026 and 2027). A trim, a drivetrain or a
+# wheel size is a variant of a model (TP3). A model only comes into TAX with a page of the
+# manufacturer that publishes its versions (TP1); that page also decides what the product is
+# (Fred, 22 and 23 November 2026):
+#
+#   - the manufacturer publishes one series of versions for several models: those models are one
+#     product, with the name the manufacturer gives the series; the model names become aliases;
+#   - the manufacturer publishes the versions per model: each model is a product of its own.
+#
+# `brands`, per brand as Open EV Data writes it:
+#   fueleconomy  the names of the brand in the column Division of the FE Guide, when they differ
+#   publisher    {key, name}: the short name of the brand, not that of a legal person (TAX-54)
+#   products     each with `name`, `versions` (the page) and `models` (the names the page uses; a row
+#                belongs to the model whose words it all has, the longest first). A product with
+#                `series: true` is one series for all its models: the models become aliases.
+#   apart        the reason when no model of the brand comes in: refuses, none or other
+#
+# The pages of the 12 brands with a source for the versions were read by the builder on 23 November
+# 2026; robots.txt allows each of them. The other 59 brands are as the analyst found them (TAX-59,
+# comment 12368).
+version: 1
+
+reasons:
+  refuses: "the manufacturer's page refuses our reader (TE5); work for the maintainer"
+  none: "the manufacturer publishes no versions (TP1)"
+  other: "the version page of the manufacturer does not name the model (TP1)"
+
+brands:
+  # one series for several models
+  Volkswagen:
+    publisher: {key: volkswagen, name: Volkswagen}
+    products:
+      - name: ID. Software
+        series: true
+        versions: 'https://www.volkswagen.at/elektroauto/software-und-konnektivitaet/id-software-updates'
+        models: [ID.3, ID.4, ID.5, ID.7, ID. Buzz]
+  Škoda:
+    publisher: {key: skoda, name: Škoda}
+    products:
+      - name: Škoda Software
+        series: true
+        versions: 'https://www.skoda-auto.com/emobility/software-update'
+        models: [Elroq, Enyaq, Enyaq Coupé]
+  Cupra:
+    publisher: {key: cupra, name: CUPRA}
+    products:
+      - name: CUPRA OTA Update
+        series: true
+        versions: 'https://www.cupra.com/en/owners/ota-updates/updates-electric-vehicles'
+        models: [Raval, Born, Tavascan]
+  Jaguar:
+    publisher: {key: jaguar, name: Jaguar}
+    products:
+      - name: Jaguar OS
+        series: true
+        versions: 'https://www.jaguar.com/ownership/software-update.html'
+        models: [I-PACE]
+  Land Rover:
+    publisher: {key: land-rover, name: Land Rover}
+    products:
+      - name: Land Rover OS
+        series: true
+        versions: 'https://www.landrover.com/ownership/software-update/index.html'
+        models: [Range Rover, Range Rover Sport, Range Rover Velar, Range Rover Evoque]
+  XPeng:
+    publisher: {key: xpeng, name: XPENG}
+    products:
+      - name: XOS
+        series: true
+        versions: 'https://www.xpeng.com/news/0198df0f0bb998ab5d958a02815f00a4'
+        models: [G6, G9, G9L, P7, P7+, X9]
+  # per model
+  Polestar:
+    fueleconomy: [Polestar Automotive USA Inc]
+    publisher: {key: polestar, name: Polestar}
+    products:
+      - {name: Polestar 2, versions: 'https://www.polestar.com/uk/manual/polestar-2/2026/software-updates/', models: [Polestar 2]}
+      - {name: Polestar 3, versions: 'https://www.polestar.com/uk/manual/polestar-3/2026/software-updates/', models: [Polestar 3]}
+      - {name: Polestar 4, versions: 'https://www.polestar.com/uk/manual/polestar-4/2026/software-updates/', models: [Polestar 4]}
+      - {name: Polestar 5, versions: 'https://www.polestar.com/uk/manual/polestar-5/2026/software-updates/', models: [Polestar 5]}
+  Zeekr:
+    publisher: {key: zeekr, name: Zeekr}
+    products:
+      - {name: 7X, versions: 'https://www.zeekr.eu/ota/software-updatezeekr7x-15', models: [7X]}
+  Hyundai:
+    fueleconomy: [HYUNDAI MOTOR COMPANY]
+    publisher: {key: hyundai, name: Hyundai}
+    products:
+      - {name: IONIQ 5, versions: &hyundai 'https://www.hyundai.com/au/en/owning/ota-updates', models: [IONIQ 5]}
+      - {name: IONIQ 5 N, versions: *hyundai, models: [IONIQ 5 N]}
+      - {name: IONIQ 6, versions: *hyundai, models: [IONIQ 6]}
+      - {name: KONA Electric, versions: *hyundai, models: [KONA Electric]}
+  Genesis:
+    publisher: {key: genesis, name: Genesis}
+    products:
+      - {name: GV60, versions: &genesis 'https://www.genesis.com/kr/en/support/notice.html', models: [GV60]}
+      - {name: Electrified G80, versions: *genesis, models: [Electrified G80]}
+      - {name: Electrified GV70, versions: *genesis, models: [Electrified GV70]}
+  # read, but the page names none of the brand's models in the sources
+  Honda: {apart: other}  # the page lists the Japanese models with Honda CONNECT; no Prologue, e:NP2 or e:NS2
+  Changan: {apart: other}  # the page covers the Deepal S05 and S07 for Europe; the sources have models for China
+
+  # a page found that refuses our reader (17)
+  Audi: {apart: refuses}
+  BMW: {apart: refuses}
+  Cadillac: {apart: refuses}
+  Chevrolet: {apart: refuses}
+  Citroën: {apart: refuses}
+  DS Automobiles: {apart: refuses}
+  Lexus: {apart: refuses, fueleconomy: [LEXUS]}
+  Lotus: {apart: refuses}
+  Maserati: {apart: refuses, fueleconomy: [MASERATI]}
+  Mercedes-Benz: {apart: refuses}
+  Mini: {apart: refuses}
+  Peugeot: {apart: refuses}
+  Rimac: {apart: refuses, fueleconomy: [Bugatti Rimac]}
+  Rivian: {apart: refuses}
+  Smart: {apart: refuses}
+  VinFast: {apart: refuses, fueleconomy: [Hai Phong manufacturing plant]}
+  Volvo: {apart: refuses, fueleconomy: ["Volvo Cars of North America, LLC"]}
+
+  # only a general page, without versions (17)
+  Tesla: {apart: none, fueleconomy: [Tesla Motors]}
+  Toyota: {apart: none, fueleconomy: [TOYOTA]}
+  Porsche: {apart: none}
+  Renault: {apart: none}
+  Nissan: {apart: none, fueleconomy: [NISSAN]}
+  Ford: {apart: none}
+  BYD: {apart: none}
+  Dacia: {apart: none}
+  GWM: {apart: none}
+  Lucid: {apart: none, fueleconomy: [Lucid USA Inc.]}
+  Kia: {apart: none, fueleconomy: [KIA]}
+  Subaru: {apart: none}
+  Rolls-Royce: {apart: none, fueleconomy: [Rolls-Royce Motor Cars Limited]}
+  Acura: {apart: none}
+  Dodge: {apart: none}
+  GMC: {apart: none}
+  Jeep: {apart: none}
+
+  # no page of the manufacturer found (25)
+  Automobili Pininfarina: {apart: none}
+  Chery: {apart: none}
+  Dongfeng: {apart: none}
+  FangChengBao: {apart: none}
+  Faraday Future: {apart: none}
+  Ferrari: {apart: none}
+  Fiat: {apart: none, fueleconomy: [FIAT]}
+  GAC Aion: {apart: none}
+  Geely: {apart: none}
+  HiPhi: {apart: none}
+  Hongqi: {apart: none}
+  IM Motors: {apart: none}
+  Karma Automotive: {apart: none}
+  Leapmotor: {apart: none}
+  M-Hero: {apart: none}
+  McLaren: {apart: none}
+  MG Motor: {apart: none}
+  Mitsubishi: {apart: none, fueleconomy: [MITSUBISHI MOTORS]}
+  Nammi: {apart: none}
+  NIO: {apart: none}
+  Rising Auto: {apart: none}
+  Roewe: {apart: none}
+  Tata Motors: {apart: none}
+  Voyah: {apart: none}
+  YangWang: {apart: none}
