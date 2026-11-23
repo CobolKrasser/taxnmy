@@ -75,7 +75,7 @@ S4 and S5, but not on S7 and S8."*
 - **B15:** *human* in A2, because Sony refused. In M and W it is *alias* of `sony/ilce-7m4`, as
   `expect` wants.
 
-The decision on R13 is Fred's.
+The decision on R13 is the PO's.
 
 ## Budget
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """winget as a filler (TAX-19): the manifests of winget-pkgs become products in TAX, in one round, with
-no AI call. The first filling by the maintainer, with only basic logic (Fred, 22 November 2026): the page
+no AI call. The first filling by the maintainer, with only basic logic (the PO, 22 November 2026): the page
 on which winget describes a package is the source of the product, of its versions and of a new
 publisher. The lint guards what goes in; only an error of the lint stops a file.
 
@@ -128,7 +128,7 @@ def _set(p: Package, outcome: str, reason: str = "", product: str = "") -> None:
 def plan(packages: list[Package], root: Path = ROOT, scope: str = "all") -> tuple[dict, dict, dict]:
     """(products by key, new publishers by key: {name, page}, products in TAX by key: the packages whose
     winget id they get). Every package gets its outcome here or in `guard` (the lint). Only basic logic
-    (TAX-19, Fred 22 November 2026): a domain, a lookalike (TV3), the id prefix (TV2) and the limit per
+    (TAX-19, the PO, 22 November 2026): a domain, a lookalike (TV3), the id prefix (TV2) and the limit per
     submitter (TV8) stop no package."""
     tax = census.Tax(root)
     winget_on = {}
