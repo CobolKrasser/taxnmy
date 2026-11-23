@@ -929,6 +929,7 @@ https://fwupd.org/lvfs/devices/com.hp.camera.05C80445.firmware,HP,USB camera,in-
 https://fwupd.org/lvfs/devices/com.hp.USBCG6.firmware.usbcg6,HP,USB-C 100W G6,in-tax,TAX has its key or its long form (TK3): no new file,hp/usb-c-100w-g6
 https://fwupd.org/lvfs/devices/com.hp.USBCG6.firmware.usbcg6.zip,HP,USB-C 100W G6,in-tax,TAX has its key or its long form (TK3): no new file,hp/usb-c-100w-g6
 https://fwupd.org/lvfs/devices/com.hp.Dock_USBC_G5.ccgx.dmc.firmware,HP,USB-C G5,in-tax,TAX has its key or its long form (TK3): no new file,hp/usb-c-g5
+https://fwupd.org/lvfs/devices/com.hp.Dock_USBC_A_Universal_G2.ccgx.dmc.firmware,HP,USB-C/A Universal G2,in-tax,TAX has its key or its long form (TK3): no new file,hp/usb-c-a-universal-g2
 https://fwupd.org/lvfs/devices/com.hp.workstation.Q50.firmware,HP,Z2 G4 Workstation,in-tax,TAX has its key or its long form (TK3): no new file,hp/z2-g4-workstation
 https://fwupd.org/lvfs/devices/com.hp.workstation.Q50.firmware,HP,Z2 G4 Workstation,in-tax,TAX has its key or its long form (TK3): no new file,hp/z2-g4-workstation
 https://fwupd.org/lvfs/devices/com.hp.workstation.Q50.firmware,HP,Z2 G4 Workstation,in-tax,TAX has its key or its long form (TK3): no new file,hp/z2-g4-workstation
@@ -946,6 +947,7 @@ https://fwupd.org/lvfs/devices/com.hp.workstation.P62.firmware,HP,Z4 G4 Core-X W
 https://fwupd.org/lvfs/devices/com.hp.workstation.P61.firmware,HP,Z4 G4 Xeon-W Workstation,in-tax,TAX has its key or its long form (TK3): no new file,hp/z4-g4-xeon-w-workstation
 https://fwupd.org/lvfs/devices/com.hp.workstation.system.U65.firmware,HP,Z6 G5 A U65 Workstation,in-tax,TAX has its key or its long form (TK3): no new file,hp/z6-g5-a-u65-workstation
 https://fwupd.org/lvfs/devices/com.hp.workstation.system.U60.firmware,HP,Z8 G5 U60 Workstation,in-tax,TAX has its key or its long form (TK3): no new file,hp/z8-g5-u60-workstation
+https://fwupd.org/lvfs/devices/com.hp.laptop.system.X84.firmware,HP,ZBook 8 G1as/ak 14 inch Mobile Workstation PC X84,in-tax,TAX has its key or its long form (TK3): no new file,hp/zbook-8-g1as-ak-14-inch-mobile-workstation-pc-x84
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.W96.firmware,HP,ZBook Fury 16 G11 Mobile Workstation PC W96,in-tax,TAX has its key or its long form (TK3): no new file,hp/zbook-fury-16-g11-mobile-workstation-pc-w96
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.W98.firmware,HP,ZBook Fury 16 G11 Mobile Workstation PC W98,in-tax,TAX has its key or its long form (TK3): no new file,hp/zbook-fury-16-g11-mobile-workstation-pc-w98
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.V96.firmware,HP,ZBook Fury G10 Mobile Workstation PC V96,in-tax,TAX has its key or its long form (TK3): no new file,hp/zbook-fury-g10-mobile-workstation-pc
@@ -1508,8 +1510,6 @@ https://fwupd.org/lvfs/devices/com.lenovo.t99w696_iot.a2_nec.firmware,Lenovo,T99
 https://fwupd.org/lvfs/devices/com.lenovo.t99w696_iot.at_nec.firmware,Lenovo,T99W696,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/t99w696
 https://fwupd.org/lvfs/devices/com.lenovo.t99w696_iot.vz_ext.firmware,Lenovo,T99W696,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/t99w696
 https://fwupd.org/lvfs/devices/com.lenovo.t99w696_iot.vz_ext.firmware,Lenovo,T99W696,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/t99w696
-https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.EC.firmware,Lenovo,Think M950ts_Think M70ts-4,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
-https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware,Lenovo,Think M950ts_Think M70ts-4,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/think-m950ts-think-m70ts-4
 https://fwupd.org/lvfs/devices/com.lenovo.M1W.BIOS.firmware,Lenovo,ThinkCentre M625q,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-m625q
 https://fwupd.org/lvfs/devices/com.lenovo.M1W.BIOS.firmware,Lenovo,ThinkCentre M625q,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-m625q
 https://fwupd.org/lvfs/devices/com.lenovo.M1W.BIOS.firmware,Lenovo,ThinkCentre M625q,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-m625q
@@ -1660,10 +1660,8 @@ https://fwupd.org/lvfs/devices/com.lenovo.M5P.BIOS.firmware,Lenovo,ThinkCentre M
 https://fwupd.org/lvfs/devices/com.lenovo.M5P.BIOS.firmware,Lenovo,ThinkCentre M90q-6 P3Tiny NeoUltra,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-m90q-6-p3tiny-neoultra
 https://fwupd.org/lvfs/devices/com.lenovo.M5P.EC.firmware,Lenovo,ThinkCentre M90q-6 Q870,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.M5P.EC.firmware,Lenovo,ThinkCentre M90q-6 Q870,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
-https://fwupd.org/lvfs/devices/com.lenovo.M90ts_M80ts_M70ts.BIOS.firmware,Lenovo,ThinkCentre M90ts_ThinkCentre M80ts_ThinkCentre M70ts,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-m90ts-thinkcentre-m80ts-thinkcentre-m70ts
 https://fwupd.org/lvfs/devices/com.lenovo.M6D.EC.firmware,Lenovo,ThinkCentre Neo 50q Gen 6,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.M6D.BIOS.firmware,Lenovo,ThinkCentre Neo 50q Gen 6,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-neo-50q-gen-6
-https://fwupd.org/lvfs/devices/com.lenovo.M4Y.BIOS.firmware,Lenovo,ThinkCentre Neo 50q Gen4 and IdeaCentre Mini5i,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-neo-50q-gen4-and-ideacentre-mini5i
 https://fwupd.org/lvfs/devices/com.lenovo.M5X.BIOS.firmware,Lenovo,ThinkCentre Neo Tiny Gen5,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-neo-tiny-gen5
 https://fwupd.org/lvfs/devices/com.lenovo.M5X.BIOS.firmware,Lenovo,ThinkCentre Neo Tiny Gen5,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-neo-tiny-gen5
 https://fwupd.org/lvfs/devices/com.lenovo.M5X.BIOS.firmware,Lenovo,ThinkCentre Neo Tiny Gen5,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkcentre-neo-tiny-gen5
@@ -1739,11 +1737,8 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1FET.firmware,Lenovo,ThinkPad
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1FET.firmware,Lenovo,ThinkPad L13-Gen2 Consumer,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l13-gen2-consumer
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UET.firmware,Lenovo,ThinkPad L13Gen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l13gen3
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1TET.firmware,Lenovo,ThinkPad L13YogaGen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l13yogagen3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR24ET.firmware,Lenovo,ThinkPad L14 L15 Gen 4,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-l15-gen-4
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1YHT.firmware,Lenovo,ThinkPad L14 L15 Gen3 AMD,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR25HT.firmware,Lenovo,ThinkPad L14 L15 Gen4 AMD,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XHT.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XET.firmware,Lenovo,ThinkPad L14 and L15 Gen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen3
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR17HT20W.firmware,Lenovo,ThinkPad L14-L15,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR25ET.BIOS.firmware,Lenovo,ThinkPad L1415 Gen 4 AMD,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l1415-gen-4-amd
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1YET.BIOS.firmware,Lenovo,ThinkPad L14L15 Gen3 AMD,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14l15-gen3-amd
@@ -2406,27 +2401,6 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2LETxxW.firmware,Lenovo,Think
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2LETxxW.firmware,Lenovo,ThinkPad X390 Yoga,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x390-yoga
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2LETxxW.firmware,Lenovo,ThinkPad X390 Yoga,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x390-yoga
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2LTF_AssistMode.firmware,Lenovo,ThinkPad X390 Yoga,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXP.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR13ETXXW.firmware,Lenovo,ThinkPad X395 T495s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x395-t495s
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4DET.firmware,Lenovo,ThinkPad X9-14 Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x9-14-gen-1
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4DSG17.NoVpr.firmware,Lenovo,ThinkPad X9-14 Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x9-14-gen-1
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4DSG17W.Vpro.firmware,Lenovo,ThinkPad X9-14 Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-x9-14-gen-1
@@ -2981,6 +2955,7 @@ https://fwupd.org/lvfs/devices/com.msi.MS_C931.socfw.firmware,MSI,MS_C931 SoC FW
 https://fwupd.org/lvfs/devices/com.msi.MS_C931_1.usbpd.firmware,MSI,MS_C931 USB-C PD FW,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.msi.ms15g2.firmware,MSI,ms15g2,in-tax,TAX has its key or its long form (TK3): no new file,msi/ms15g2
 https://fwupd.org/lvfs/devices/com.maxlinear.mxl862xx.firmware,MaxLinear,MxL862xx,in-tax,TAX has its key or its long form (TK3): no new file,maxlinear/mxl862xx
+https://fwupd.org/lvfs/devices/com.mellanox.bf.aarch64.firmware,Mellanox,BlueField UEFI/ATF,in-tax,TAX has its key or its long form (TK3): no new file,mellanox/bluefield-uefi-atf
 https://fwupd.org/lvfs/devices/com.microsoft.kek.microsoft.029c2135.firmware,Microsoft,Secure Boot KEK,apart,"a setting, no product (its category)",
 https://fwupd.org/lvfs/devices/com.microsoft.kek.microsoft.04310ddc.firmware,Microsoft,Secure Boot KEK,apart,"a setting, no product (its category)",
 https://fwupd.org/lvfs/devices/com.microsoft.kek.microsoft.04b1423e.firmware,Microsoft,Secure Boot KEK,apart,"a setting, no product (its category)",
@@ -3254,7 +3229,7 @@ https://fwupd.org/lvfs/devices/com.hp.laptop.system.T90.firmware,HP,Elite Dragon
 https://fwupd.org/lvfs/devices/com.hp.desktop.system.U01.firmware,HP,Elite SFF 800 SFF/Tower 8x0/Z1 G9 Desktop PC U01,apart,a row of models: a part starts with no known series name: 'Tower 8x0',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.W70.firmware,HP,"Elite x360-830/830/840/860 13/14/16 inch G11 Notebook PC, ZBook Firefly 14/16 inch G11 Mobile Workstation PC W70",apart,a row of models: the name is longer than 100 characters,
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.W74.firmware,HP,EliteBook 630/640/660 13.3/14/16 inch G11 Notebook PC W74,apart,a row of models: a part is shortened and cannot be completed without doubt: '660 13.3',
-https://fwupd.org/lvfs/devices/com.hp.laptop.system.X70.firmware,HP,EliteBook 8 G1i 13/14/16 inch Notebook AI/Workstation PC X70,apart,a row of models: a part is shortened and cannot be completed without doubt: '16 inch Notebook AI',
+https://fwupd.org/lvfs/devices/com.hp.laptop.system.X70.firmware,HP,EliteBook 8 G1i 13/14/16 inch Notebook AI/Workstation PC X70,apart,a row of models: the last part carries an addition for the whole row: '16 inch Notebook AI/Workstation PC X70',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.U71.firmware,HP,EliteBook 8x0/1040/Zbook Firefly/x360 1040 2-in-1 G9 Notebook PC U71,apart,a row of models: a part is no model: 'Zbook Firefly',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.V70.firmware,HP,EliteBook 8x0/1040/Zbook Firefly/x360 830/1040 2-in-1 G10 Notebook PC V70,apart,a row of models: a part is no model: 'Zbook Firefly',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.U70.firmware,HP,EliteBook 8x0/1040/Zbook Firefly/x360 830/1040 2-in-1 G9 Notebook PC U70,apart,a row of models: a part is no model: 'Zbook Firefly',
@@ -3265,16 +3240,14 @@ https://fwupd.org/lvfs/devices/com.hp.laptop.system.T39.firmware,HP,EliteBook 8x
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.T76.firmware,HP,EliteBook 8x0/8x0 Aero/Zbook Firefly G8 Notebook PC T76,apart,a row of models: a part is shortened and cannot be completed without doubt: '8x0 Aero',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.T93.firmware,HP,EliteBook x360 1030/1040 G8 Notebook PC T93,apart,a row of models: the last part carries an addition for the whole row: '1040 G8 Notebook PC T93',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.W90.firmware,HP,EliteBook x360-1040/1040 14 inch G11 Notebook PC W90,apart,a row of models: the last part carries an addition for the whole row: '1040 14 inch G11 Notebook PC W90',
-https://fwupd.org/lvfs/devices/com.hp.laptop.system.X82.firmware,HP,EliteBook/ZBook 8 G1a/ah 14/16 inch Notebook/Workstation PC X82,apart,a row of models: a part starts with no known series name: 'ah 14',
+https://fwupd.org/lvfs/devices/com.hp.laptop.system.X82.firmware,HP,EliteBook/ZBook 8 G1a/ah 14/16 inch Notebook/Workstation PC X82,apart,a row of models: a part starts with no known series name: 'Workstation PC X82',
 https://fwupd.org/lvfs/devices/com.hp.desktop.system.X01.firmware,HP,EliteDesk 8 G1i/G1i E Desktop AI PC,apart,a row of models: the last part carries an addition for the whole row: 'G1i E Desktop AI PC',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.X72.firmware,HP,ProBook 4 G1i 14/16 inch Notebook AI PC X72,apart,a row of models: the last part carries an addition for the whole row: '16 inch Notebook AI PC X72',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.W72.firmware,HP,ProBook 440/460 14/16 inch G11 Notebook PC W72,apart,a row of models: a part is shortened and cannot be completed without doubt: '460 14',
 https://fwupd.org/lvfs/devices/com.hp.desktop.system.X03.firmware,HP,ProDesk 4 G1i/G1i E Desktop AI PC,apart,a row of models: the last part carries an addition for the whole row: 'G1i E Desktop AI PC',
-https://fwupd.org/lvfs/devices/com.hp.Dock_USBC_A_Universal_G2.ccgx.dmc.firmware,HP,USB-C/A Universal G2,apart,a row of models: a part starts with no known series name: 'A Universal G2',
 https://fwupd.org/lvfs/devices/com.hp.workstation.system.U61.firmware,HP,"Z4, Z6 and Z8 Fury G5 U61 Workstation",apart,a row of models: the last part carries an addition for the whole row: 'Z6 and Z8 Fury G5 U61 Workstation',
 https://fwupd.org/lvfs/devices/com.hp.workstation.M60.firmware,HP,Z440/Z640/Z840 Workstation,apart,a row of models: a part is shortened and cannot be completed without doubt: 'Z640',
 https://fwupd.org/lvfs/devices/com.hp.workstation.P60.firmware,HP,Z6 G4/Z8 G4 Workstation,apart,a row of models: a part is shortened and cannot be completed without doubt: 'Z8 G4 Workstation',
-https://fwupd.org/lvfs/devices/com.hp.laptop.system.X84.firmware,HP,ZBook 8 G1as/ak 14 inch Mobile Workstation PC X84,apart,a row of models: a part starts with no known series name: 'ak 14 inch Mobile Workstation PC X84',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.X96.firmware,HP,ZBook Fury G1i 16/18 inch Mobile Workstation PC X96,apart,a row of models: the last part carries an addition for the whole row: '18 inch Mobile Workstation PC X96',
 https://fwupd.org/lvfs/devices/com.hp.laptop.system.T92.firmware,HP,ZBook Studio/Create G8 Notebook PC T92,apart,a row of models: a part starts with no known series name: 'Create G8 Notebook PC T92',
 https://fwupd.org/lvfs/devices/com.lenovo.CA5.firmware,Lenovo,"CA5-8D256, CA5-8D512",apart,a row of models: a part is shortened and cannot be completed without doubt: 'CA5-8D512',
@@ -3296,6 +3269,7 @@ https://fwupd.org/lvfs/devices/com.lenovo.bg5-nvme-ssd.firmware,Lenovo,KBG5AZNV2
 https://fwupd.org/lvfs/devices/com.lenovo.xg5-nvme-ssd.firmware,Lenovo,KXG5AZNV256G/KXG5AZNV512G/KXG5AZNV1T02,apart,a row of models: a part is shortened and cannot be completed without doubt: 'KXG5AZNV512G',
 https://fwupd.org/lvfs/devices/com.lenovo.xg5-SLCEnhance-nvme-ssd.firmware,Lenovo,KXG5AZNV512G TOSHIBA / KXG5AZNV1T02 TOSHIBA,apart,a row of models with a model TAX or the round already has: lenovo/kxg5aznv512g-toshiba (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.xg5-SLCEnhance-nvme-ssd.firmware,Lenovo,KXG5AZNV512G TOSHIBA / KXG5AZNV1T02 TOSHIBA,apart,a row of models with a model TAX or the round already has: lenovo/kxg5aznv512g-toshiba (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.EC.firmware,Lenovo,Think M950ts_Think M70ts-4,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.M2W..EC.firmware,Lenovo,"ThinkCentre M70q, ThinkCentre M80q, ThinkCentre M90q, ThinkCentre M730q, ThinkCentre M930q, ThinkStation P340tiny",apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.M2W.BIOS.firmware,Lenovo,"ThinkCentre M70q, ThinkCentre M80q, ThinkCentre M90q, ThinkCentre M730q, ThinkCentre M930q, ThinkStation P340tiny",apart,a row of models: the name is longer than 100 characters,
 https://fwupd.org/lvfs/devices/com.lenovo.M43.BIOS.firmware,Lenovo,"ThinkCentre M70q-3, ThinkCentre M750q",apart,a row of models with a model TAX or the round already has: lenovo/thinkcentre-m750q (TAX-62),
@@ -3340,6 +3314,7 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2VET.BIOS.firmware,Lenovo,Thi
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2VCZNTC7251.firmware,Lenovo,ThinkPad L14 Gen 6/ L16 Gen 2 Nuvoton TPM,apart,a row of models: a part is shortened and cannot be completed without doubt: 'L16 Gen 2 Nuvoton TPM',
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR17HT.firmware,Lenovo,ThinkPad L14 Gen1 / L15 Gen 1,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1JHT.firmware,Lenovo,ThinkPad L14 Gen2 / L15 Gen 2,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XHT.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR24HT.firmware,Lenovo,ThinkPad L14/L15 Gen 4,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2OHT.firmware,Lenovo,ThinkPad P1 Gen 2/X1 Extreme 2nd,apart,"a part of a device with its own firmware, outside TAX-23 (its category)",
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2VET.firmware,Lenovo,ThinkPad P1 Gen 3/X1 3rd,apart,a row of models: a part is shortened and cannot be completed without doubt: 'X1 3rd',
@@ -3593,7 +3568,6 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c_P_Version.firmw
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c_P_Version.firmware,Lenovo,ThinkStation P520/ThinkStation P520c_P_Version,apart,a row of models with a model TAX or the round already has: lenovo/thinkstation-p520 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c_P_Version.firmware,Lenovo,ThinkStation P520/ThinkStation P520c_P_Version,apart,a row of models with a model TAX or the round already has: lenovo/thinkstation-p520 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c_P_Version.firmware,Lenovo,ThinkStation P520/ThinkStation P520c_P_Version,apart,a row of models with a model TAX or the round already has: lenovo/thinkstation-p520 (TAX-62),
-https://fwupd.org/lvfs/devices/com.mellanox.bf.aarch64.firmware,Mellanox,BlueField UEFI/ATF,apart,a row of models: a part is no model: 'BlueField UEFI',
 https://fwupd.org/lvfs/devices/com.novacustom.NS5_7x.system.firmware,NovaCustom,NS5x / NS7x,apart,a row of models: a part is shortened and cannot be completed without doubt: 'NS7x',
 https://fwupd.org/lvfs/devices/com.novacustom.NS5x.system.firmware,NovaCustom,NS5x/NS7x,apart,a row of models: a part is shortened and cannot be completed without doubt: 'NS7x',
 https://fwupd.org/lvfs/devices/com.novacustom.NV4XMB_ME_MZ.2.2A.system.firmware,NovaCustom,"NV4XMB,ME,MZ",apart,a row of models: a part is no model: 'ME',
@@ -3622,14 +3596,6 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1FRM.firmware,Lenovo,ThinkPad
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1FRN_a.firmware,Lenovo,ThinkPad L13 Gen 2,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l13-gen-2
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UMA.firmware,Lenovo,ThinkPad L13 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l13-gen-3
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UMB.firmware,Lenovo,ThinkPad L13 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l13-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMA.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMA.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMA.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMB.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMB.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMB.firmware,Lenovo,ThinkPad L14 and L15 Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMA.firmware,Lenovo,ThinkPad L14 and L15 Gen 3 NonVpro MEFW,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3-nonvpro-mefw
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XMB.firmware,Lenovo,ThinkPad L14 and L15 Gen 3 Vpro MEFW,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l14-and-l15-gen-3-vpro-mefw
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1XRM.firmware,Lenovo,ThinkPad L570,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l570
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1XRN.firmware,Lenovo,ThinkPad L570,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-l570
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN40RM.firmware,Lenovo,ThinkPad P1 Gen 4,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen-4
@@ -3642,12 +3608,6 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48RM_FirmwareId.firmware,Leno
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48RM_FirmwareId.firmware,Lenovo,ThinkPad P1 Gen 7,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen-7
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48RN_FirmwareId.firmware,Lenovo,ThinkPad P1 Gen 7,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen-7
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48RN_FirmwareId.firmware,Lenovo,ThinkPad P1 Gen 7,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen-7
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2ORN.firmware,Lenovo,ThinkPad P1 Gen2 X1 Extreme 2nd Consumer,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen2-x1-extreme-2nd-consumer
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2ORM.firmware,Lenovo,ThinkPad P1 Gen2 X1 Extreme 2nd Corporate,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen2-x1-extreme-2nd-corporate
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2VRN.firmware,Lenovo,ThinkPad P1 Gen3 X1 Extreme 3rd Consumer,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen3-x1-extreme-3rd-consumer
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2VRM.firmware,Lenovo,ThinkPad P1 Gen3 X1 Extreme 3rd Corporate,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-gen3-x1-extreme-3rd-corporate
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CRMP1X1.firmware,Lenovo,ThinkPad P1 and X1 Extreme,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-and-x1-extreme
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CRNP1X1.firmware,Lenovo,ThinkPad P1 and X1 Extreme,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p1-and-x1-extreme
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FRM.firmware,Lenovo,ThinkPad P16 Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p16-gen-1
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FRM.firmware,Lenovo,ThinkPad P16 Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p16-gen-1
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FRM.firmware,Lenovo,ThinkPad P16 Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p16-gen-1
@@ -3688,27 +3648,9 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadP71RM.firmware,Lenovo,ThinkPad
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadP71RN.firmware,Lenovo,ThinkPad P71,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p71
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1URMP71.firmware,Lenovo,ThinkPad P71,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p71
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1URNP71.firmware,Lenovo,ThinkPad P71,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-p71
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2XBL_00060108.firmware,Lenovo,ThinkPad T14 Gen 1 ThinkPad P14s Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-1-thinkpad-p14s-gen-1
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34ET_00060108.firmware,Lenovo,ThinkPad T14 Gen 2i P14s Gen 2i,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-2i-p14s-gen-2i
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34BL_00060109.firmware,Lenovo,ThinkPad T14 Gen 2i_ThinkPad P14s Gen 2i,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-2i-thinkpad-p14s-gen-2i
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_00050532.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-3-p14s-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_0006011e.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-3-p14s-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_0006011f.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-3-p14s-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_000703B6.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen-3-p14s-gen-3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_00050532.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen3-p14s-gen3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_0006011E.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen3-p14s-gen3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_0006011f.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen3-p14s-gen3
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_000703B6.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14-gen3-p14s-gen3
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1NBL_00070225.firmware,Lenovo,ThinkPad T14s Gen 2 AMD,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14s-gen-2-amd
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN35BL_00060100.firmware,Lenovo,ThinkPad T14s Gen 2i,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14s-gen-2i
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN35BL_00070225.firmware,Lenovo,ThinkPad T14s Gen 2i,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t14s-gen-2i
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34BL_00070236.firmware,Lenovo,ThinkPad T15 Gen 2 P15s Gen 2,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t15-gen-2-p15s-gen-2
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_00060120.firmware,Lenovo,ThinkPad T16 Gen 1 P16s Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t16-gen-1-p16s-gen-1
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_000703C6.firmware,Lenovo,ThinkPad T16 Gen 1 P16s Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t16-gen-1-p16s-gen-1
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_000703D6.firmware,Lenovo,ThinkPad T16 Gen 1 P16s Gen 1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t16-gen-1-p16s-gen-1
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_00060120.firmware,Lenovo,ThinkPad T16 Gen1 P16s Gen1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t16-gen1-p16s-gen1
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_000703C6.firmware,Lenovo,ThinkPad T16 Gen1 P16s Gen1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t16-gen1-p16s-gen1
-https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_000703D6.firmware,Lenovo,ThinkPad T16 Gen1 P16s Gen1,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t16-gen1-p16s-gen1
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR07RM.firmware,Lenovo,ThinkPad T460p,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t460p
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1CRM.firmware,Lenovo,ThinkPad T460s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t460s
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1CRM.firmware,Lenovo,ThinkPad T460s,in-tax,TAX has its key or its long form (TK3): no new file,lenovo/thinkpad-t460s
@@ -3862,10 +3804,25 @@ https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1MBL_00060108.firmware,Lenovo
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1MBL_00060109.firmware,Lenovo,ThinkPad T14 Gen 2/P14s Gen 2,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-2 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3MRM.firmware,Lenovo,ThinkPad T14 Gen 3 / P14s Gen 3 / T16 Gen 1 / P16s Gen 1 Nuvoton,apart,a row of models: a part is shortened and cannot be completed without doubt: 'P16s Gen 1 Nuvoton',
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3MRN.firmware,Lenovo,ThinkPad T14 Gen 3 / P14s Gen 3 / T16 Gen 1 / P16s Gen 1 Nuvoton,apart,a row of models: a part is shortened and cannot be completed without doubt: 'P16s Gen 1 Nuvoton',
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_00050532.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_0006011e.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_0006011f.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_000703B6.firmware,Lenovo,ThinkPad T14 Gen 3 P14s Gen 3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23CZIFX152216832.firmware,Lenovo,ThinkPad T14 Gen3 AMD / T16 Gen1 AMD,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen3-amd (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_00050532.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_0006011E.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_0006011f.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_000703B6.firmware,Lenovo,ThinkPad T14 Gen3 P14s Gen3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen-3 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BCZIFX152216832.firmware,Lenovo,ThinkPad T14 Gen3/T16 Gen1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t14-gen3 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CRM.firmware,Lenovo,ThinkPad T14s Gen 3 / X13 Gen 3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-x13-gen-3 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CRN.firmware,Lenovo,ThinkPad T14s Gen 3 / X13 Gen 3,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-x13-gen-3 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34BL_00070236.firmware,Lenovo,ThinkPad T15 Gen 2 P15s Gen 2,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t15-gen-2 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_00060120.firmware,Lenovo,ThinkPad T16 Gen 1 P16s Gen 1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t16-gen-1 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_000703C6.firmware,Lenovo,ThinkPad T16 Gen 1 P16s Gen 1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t16-gen-1 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23BL_000703D6.firmware,Lenovo,ThinkPad T16 Gen 1 P16s Gen 1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t16-gen-1 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_00060120.firmware,Lenovo,ThinkPad T16 Gen1 P16s Gen1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t16-gen-1 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_000703C6.firmware,Lenovo,ThinkPad T16 Gen1 P16s Gen1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t16-gen-1 (TAX-62),
+https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BBL_000703D6.firmware,Lenovo,ThinkPad T16 Gen1 P16s Gen1,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t16-gen-1 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2IRM.firmware,Lenovo,ThinkPad T490/ThinkPad P43s/ThinkPad T590/ThinkPad P53s,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t490 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2IRN.firmware,Lenovo,ThinkPad T490/ThinkPad P43s/ThinkPad T590/ThinkPad P53s,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t490 (TAX-62),
 https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2RRN.firmware,Lenovo,ThinkPad T490/ThinkPad T590 CML,apart,a row of models with a model TAX or the round already has: lenovo/thinkpad-t490 (TAX-62),

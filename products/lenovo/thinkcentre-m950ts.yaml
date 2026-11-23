@@ -1,8 +1,9 @@
-key: lenovo/think-m950ts-think-m70ts-4
+key: lenovo/thinkcentre-m950ts
 publisher: lenovo
-name: Think M950ts_Think M70ts-4
+name: ThinkCentre M950ts
 kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
-aliases: []
+aliases:
+- lenovo/thinkcentre-m70ts-4

@@ -1,8 +1,9 @@
-key: lenovo/thinkpad-p1-gen3-x1-extreme-3rd-consumer
+key: lenovo/thinkpad-p1-gen-3
 publisher: lenovo
-name: ThinkPad P1 Gen3 X1 Extreme 3rd Consumer
+name: ThinkPad P1 Gen 3
 kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2VRN.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2VRN.firmware
-aliases: []
+aliases:
+- lenovo/thinkpad-x1-extreme-3rd

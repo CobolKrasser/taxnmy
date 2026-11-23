@@ -1,8 +1,10 @@
-key: lenovo/thinkcentre-m90ts-thinkcentre-m80ts-thinkcentre-m70ts
+key: lenovo/thinkcentre-m90ts
 publisher: lenovo
-name: ThinkCentre M90ts_ThinkCentre M80ts_ThinkCentre M70ts
+name: ThinkCentre M90ts
 kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M90ts_M80ts_M70ts.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M90ts_M80ts_M70ts.BIOS.firmware
-aliases: []
+aliases:
+- lenovo/thinkcentre-m80ts
+- lenovo/thinkcentre-m70ts

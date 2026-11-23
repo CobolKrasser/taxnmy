@@ -1,8 +1,9 @@
-key: lenovo/thinkpad-l14-and-l15-gen3
+key: lenovo/thinkpad-l14-gen-3
 publisher: lenovo
-name: ThinkPad L14 and L15 Gen3
+name: ThinkPad L14 Gen 3
 kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1XET.firmware
-aliases: []
+aliases:
+- lenovo/thinkpad-l15-gen-3

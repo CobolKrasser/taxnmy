@@ -1,8 +1,9 @@
-key: lenovo/thinkpad-l14-l15-gen-4
+key: lenovo/thinkpad-l14-gen-4
 publisher: lenovo
-name: ThinkPad L14 L15 Gen 4
+name: ThinkPad L14 Gen 4
 kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR24ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR24ET.firmware
-aliases: []
+aliases:
+- lenovo/thinkpad-l15-gen-4
