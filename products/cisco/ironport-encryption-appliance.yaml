@@ -1,7 +1,7 @@
 key: cisco/ironport-encryption-appliance
 publisher: cisco
 name: Cisco IronPort Encryption Appliance
-kind: software
+kind: device
 source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 versions:
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
