@@ -1,0 +1,8 @@
+key: intevation
+name: Intevation GmbH
+source: https://intevation.de/.well-known/csaf/provider-metadata.json
+machine_sources:
+- url: https://intevation.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://intevation.de/.well-known/csaf/provider-metadata.json
+aliases: []

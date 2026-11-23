@@ -1,0 +1,8 @@
+key: schneider-electric/modicon-managed-switch
+publisher: schneider-electric
+name: Modicon Managed Switch
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

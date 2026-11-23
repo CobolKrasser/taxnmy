@@ -121,6 +121,18 @@ class CsafTest(unittest.TestCase):
             self.assertEqual(by[(COORD, vendor, name)].outcome, "apart", vendor)
         self.assertIn("several vendors", by[(COORD, "Alpha, Beta, Gamma", "Box")].reason)
 
+    def test_the_kind_of_an_ai_run_only_where_no_rule_gives_one(self):
+        kinds_csv = self.tmp / "kinds.csv"
+        kinds_csv.write_text("nr,vendor,name,kind,why\n1,Acme Corp,Mystery,device,a box\n"
+                             "2,Acme Corp,Router 9,software,wrong\n", encoding="utf-8")
+        got, by = self.run_round(kinds=csaf.read_kinds(kinds_csv))
+        self.assertEqual((got["products"]["acme/mystery"].kind, got["products"]["acme/mystery"].rule[:3]), ("device", "R11"))
+        self.assertEqual(got["products"]["acme/router-9"].rule[:2], "R1", "a rule goes before the AI run")
+        self.assertIn("kinds from an AI run", got["report"])
+        _, by = self.run_round(kinds={("Acme Corp", "Mystery"): "unknown"})
+        self.assertEqual(by[(VENDOR, "Acme Corp", "Mystery")].outcome, "apart")
+        self.assertIn("unknown", by[(VENDOR, "Acme Corp", "Mystery")].reason)
+
     def test_variants_and_versions_are_one_product(self):
         got, by = self.run_round()
         self.assertEqual(by[(VENDOR, "Acme Corp", "Sensor Q7 (6AB1234-5CD01)")].product, "acme/sensor-q7")

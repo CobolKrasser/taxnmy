@@ -1,0 +1,8 @@
+key: schneider-electric/scd2200
+publisher: schneider-electric
+name: SCD2200
+kind: device
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases: []

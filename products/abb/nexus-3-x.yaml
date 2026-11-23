@@ -1,0 +1,8 @@
+key: abb/nexus-3-x
+publisher: abb
+name: NEXUS-3-x
+kind: device
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases: []

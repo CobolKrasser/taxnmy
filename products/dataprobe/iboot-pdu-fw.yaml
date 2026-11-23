@@ -1,0 +1,9 @@
+key: dataprobe/iboot-pdu-fw
+publisher: dataprobe
+name: Dataprobe iBoot-PDU FW
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- dataprobe/dataprobe-iboot-pdu-fw

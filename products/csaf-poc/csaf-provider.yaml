@@ -1,0 +1,8 @@
+key: csaf-poc/csaf-provider
+publisher: csaf-poc
+name: csaf_provider
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

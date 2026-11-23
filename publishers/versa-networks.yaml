@@ -1,4 +1,8 @@
 key: versa-networks
 name: Versa Networks
 source: https://docs.versa-networks.com/Management_and_Orchestration/Versa_Director
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []

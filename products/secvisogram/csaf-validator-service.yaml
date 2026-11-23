@@ -1,0 +1,8 @@
+key: secvisogram/csaf-validator-service
+publisher: secvisogram
+name: csaf-validator-service
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

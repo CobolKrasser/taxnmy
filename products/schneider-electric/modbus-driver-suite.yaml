@@ -1,0 +1,9 @@
+key: schneider-electric/modbus-driver-suite
+publisher: schneider-electric
+name: Schneider Electric Modbus Driver Suite
+kind: software
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases:
+- schneider-electric/schneider-electric-modbus-driver-suite

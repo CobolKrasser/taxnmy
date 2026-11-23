@@ -1,0 +1,9 @@
+key: binom3/power-meters
+publisher: binom3
+name: BINOM3 power meters
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- binom3/binom3-power-meters

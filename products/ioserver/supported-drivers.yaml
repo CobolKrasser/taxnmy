@@ -1,0 +1,9 @@
+key: ioserver/supported-drivers
+publisher: ioserver
+name: IOServer Supported drivers
+kind: software
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- ioserver/ioserver-supported-drivers

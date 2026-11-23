@@ -1,0 +1,9 @@
+key: baxter/spectrum-iq-lvp
+publisher: baxter
+name: Baxter Spectrum IQ LVP
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- baxter/baxter-spectrum-iq-lvp

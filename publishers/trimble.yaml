@@ -1,4 +1,8 @@
 key: trimble
 name: Trimble, Inc.
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/SketchUp/2022
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 aliases: []
