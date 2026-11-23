@@ -1,0 +1,8 @@
+key: synaptics/prometheus-fingerprint-reader
+publisher: synaptics
+name: Prometheus Fingerprint Reader
+kind: device
+source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.0x106.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.0x106.firmware
+aliases: []

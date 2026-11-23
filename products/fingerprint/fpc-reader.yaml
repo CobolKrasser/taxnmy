@@ -1,0 +1,8 @@
+key: fingerprint/fpc-reader
+publisher: fingerprint
+name: FPC Reader
+kind: device
+source: https://fwupd.org/lvfs/devices/com.fingerprints.lenovo.cs23r.d805.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.fingerprints.lenovo.cs23r.d805.firmware
+aliases: []

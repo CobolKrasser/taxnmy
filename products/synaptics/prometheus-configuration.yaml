@@ -1,0 +1,8 @@
+key: synaptics/prometheus-configuration
+publisher: synaptics
+name: Prometheus Configuration
+kind: device
+source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config
+versions:
+  source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config
+aliases: []

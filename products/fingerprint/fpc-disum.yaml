@@ -1,0 +1,8 @@
+key: fingerprint/fpc-disum
+publisher: fingerprint
+name: FPC Disum
+kind: device
+source: https://fwupd.org/lvfs/devices/com.fingerprints.lenfy.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.fingerprints.lenfy.firmware
+aliases: []

@@ -1,0 +1,8 @@
+key: msi/ms-c931-tpm-fw
+publisher: msi
+name: MS_C931 TPM FW
+kind: device
+source: https://fwupd.org/lvfs/devices/com.msi.MS_C931.tpm.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.msi.MS_C931.tpm.firmware
+aliases: []
