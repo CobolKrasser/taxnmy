@@ -36,18 +36,23 @@ jobs:
           BASE: ${{ github.event.pull_request.base.sha }}
         run: |
           # On a pull request: findings only on its own data files, compared with the whole dataset (TAX-16).
-          # The whole dataset when the rules themselves change, or a data file is deleted or renamed
-          # (that can break a file the pull request did not touch). On main: always the whole dataset.
+          # A deleted data file can break only a product whose publisher file is gone (TE1): those products
+          # are linted too, not the whole dataset, which takes over 10 minutes for the lookalikes (TV3) alone.
+          # A rename counts as a deletion and an addition. The whole dataset when the rules themselves change.
+          # On main: always the whole dataset.
           if [ -n "$BASE" ]; then
-            git diff --name-only --diff-filter=AM "$BASE"...HEAD > changed.txt
-            if git diff --name-only "$BASE"...HEAD | grep -qE '^(schema/|tools/lint\.py|tools/keyrule\.py)' \
-               || git diff --name-only --diff-filter=DR "$BASE"...HEAD | grep -qE '^(products|publishers)/'; then
-              echo "The rules changed, or a data file was deleted or renamed: the whole dataset."
+            git diff --no-renames --name-only --diff-filter=AM "$BASE"...HEAD > changed.txt
+            if git diff --name-only "$BASE"...HEAD | grep -qE '^(schema/|tools/lint\.py|tools/keyrule\.py)'; then
+              echo "The rules changed: the whole dataset."
               python tools/lint.py
             else
+              for pub in $(git diff --no-renames --name-only --diff-filter=D "$BASE"...HEAD \
+                           | sed -n 's|^publishers/\(.*\)\.yaml$|\1|p'); do
+                echo "Publisher $pub deleted: its products are linted too."
+                grep -rlE "^publisher: ['\"]?$pub['\"]?$" products >> changed.txt || true
+              done
               python tools/lint.py --changed changed.txt
             fi
           else
             python tools/lint.py
           fi
-
