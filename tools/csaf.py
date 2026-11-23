@@ -146,12 +146,16 @@ def entries(data: dict, address: str) -> list[Entry] | None:
 ORDER_NUMBER = re.compile(r"\(\s*([^()]*\d[^()]*)\)")
 VERSION_IN_BRACKETS = re.compile(r"\(\s*v\.?\s*[\d.]+\s*\)", re.I)
 FIRMWARE_AT_END = re.compile(r"[\s,-]+firmware\s*$", re.I)
+VERSION_BOUND = re.compile(r"\s*[<>≤≥]=?.*$", re.S)  # "Apache Sling < 3.1.12", "Oracle Siebel CRM <=" (TAX-2)
 
 
 def product_name(name: str) -> str:
-    """The name without the parts that mark a variant or a version (TP3): an order number in brackets (no
-    lower-case letters in it), a version in brackets, and the word firmware at the end."""
-    out = VERSION_IN_BRACKETS.sub(" ", name)
+    """The name without the parts that mark a variant or a version (TP3): a version bound and all after it
+    ("< 2.14.0", ">="), an order number in brackets (no lower-case letters in it), a version in brackets,
+    and the word firmware at the end. A name that is only a version bound stays as it is, and the lint
+    sets it apart."""
+    out = VERSION_BOUND.sub("", name) or name
+    out = VERSION_IN_BRACKETS.sub(" ", out)
     out = ORDER_NUMBER.sub(lambda m: " " if not re.search(r"[a-z]", m.group(1)) else m.group(0), out)
     out = FIRMWARE_AT_END.sub("", out)
     out = re.sub(r"\s+", " ", out).strip(" -–,:/")
