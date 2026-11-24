@@ -139,6 +139,9 @@ class CsafTest(unittest.TestCase):
         self.assertEqual(got["products"]["acme/sensor-q7"].name, "Sensor Q7")
         self.assertEqual(csaf.product_name("Enterprise Linux AppStream (v. 9)"), "Enterprise Linux AppStream")
         self.assertEqual(csaf.product_name("Bed (enabled with Wireless)"), "Bed (enabled with Wireless)")
+        self.assertEqual(csaf.product_name("Sling < 3.1.12"), "Sling", "a version bound goes, with all after it (TAX-2)")
+        self.assertEqual(csaf.product_name("Siebel CRM <="), "Siebel CRM")
+        self.assertEqual(csaf.product_name("CPU family <V4.x (incl. variants)"), "CPU family")
         self.assertNotIn("acme/panel-v1-0", got["products"], "a version is no product of its own (TP3)")
 
     def test_the_source_is_the_address_of_the_vendor_before_the_coordinator(self):

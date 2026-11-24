@@ -1,0 +1,12 @@
+key: symantec/advanced-secure-gateway
+publisher: symantec
+name: Symantec Advanced Secure Gateway
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:symantec:advanced_secure_gateway
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- symantec/symantec-advanced-secure-gateway

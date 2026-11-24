@@ -1,0 +1,12 @@
+key: vmware/workspace-one-boxer
+publisher: vmware
+name: VMware Workspace One Boxer
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:vmware:workspace_one
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- vmware/vmware-workspace-one-boxer

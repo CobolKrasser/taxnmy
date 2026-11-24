@@ -48,7 +48,8 @@ PACKAGES = [
     ("Zed.Note", "Zed Labs", "Note"),
     ("Acmee.Tool", "Acmee", "Tool"),                           # a publisher like an existing one (TV3): a signal only
     ("Han.Zi", "Han", "汉字"),                                  # a name outside the Latin script
-    ("Mail.Box", "Jo Doe jo@mail.example", "Box"),             # an e-mail address in a name
+    ("Mail.Box", "Jo Doe jo@mail.example", "Box"),             # an e-mail address in a name: it goes (TAX-2)
+    ("Mail.Only", "only@mail.example", "Only"),                 # a publisher that is only an e-mail address
     ("Acme.Anvil", "Acme Inc.", "Acme Anvil"),                  # TAX-54: the short key, the long form an alias
     ("Acme.Saw", "Saw Makers", "Saw"),                          # only the id names a publisher in TAX (TV2): a new one
 ]
@@ -93,7 +94,7 @@ class WingetTest(unittest.TestCase):
             self.assertTrue(p.outcome == "taken-in" or p.reason, p.id)
 
     def test_the_outcomes(self):
-        _, by = self.run_round()
+        got, by = self.run_round()
         outcome = {i: (p.outcome, p.product) for i, p in by.items()}
         self.assertEqual(outcome["Acme.Rocket"], ("in-tax", "acme/rocket"))
         self.assertEqual(outcome["Acme.Sled"], ("taken-in", "acme/sled"))
@@ -108,7 +109,9 @@ class WingetTest(unittest.TestCase):
         self.assertEqual(outcome["Zed.Pad"], ("taken-in", "zed-labs/pad"))
         self.assertEqual(outcome["Zed.LitePen"], ("taken-in", "zed-labs/lite-pen"))
         self.assertEqual(outcome["Zed.Pen.Lite"], ("taken-in", "zed-labs/lite-pen"))
-        for ident, word in (("Han.Zi", "Latin"), ("Mail.Box", "e-mail")):
+        self.assertEqual(outcome["Mail.Box"], ("taken-in", "jo-doe/box"), "the address goes, the product comes in")
+        self.assertEqual(got["publishers"]["jo-doe"]["name"], "Jo Doe", "no address in the publisher")
+        for ident, word in (("Han.Zi", "Latin"), ("Mail.Only", "e-mail")):
             self.assertEqual(by[ident].outcome, "apart", ident)
             self.assertIn(word, by[ident].reason, ident)
 
@@ -119,7 +122,7 @@ class WingetTest(unittest.TestCase):
         self.assertEqual((glider["name"], glider["source"], glider["versions"]["source"]), ("Glider", page, page))
         self.assertEqual([i["winget"] for i in glider["identifiers"]], ["Acme.Glider.2", "Acme.Glider.3"])
         self.assertEqual(glider["identifiers"][1]["source"], winget.PAGE.format(folder="manifests/a/Acme/Glider/3"))
-        self.assertEqual(set(got["publishers"]), {"zed-labs", "acmee", "saw-makers"}, "a known publisher gets no second file")
+        self.assertEqual(set(got["publishers"]), {"zed-labs", "acmee", "saw-makers", "jo-doe"}, "a known publisher gets no second file")
         self.assertEqual(got["publishers"]["saw-makers"]["name"], "Saw Makers", "as the manifest writes it")
         zed = yaml.safe_load(winget.publisher_text("zed-labs", got["publishers"]["zed-labs"]))
         self.assertEqual((zed["name"], zed["source"]), ("Zed Labs", winget.PAGE.format(folder="manifests/z/Zed/LitePen")))
@@ -165,7 +168,7 @@ class WingetTest(unittest.TestCase):
 
     def test_the_report_counts_per_outcome_and_reason(self):
         got, _ = self.run_round()
-        self.assertIn("| taken-in | 13 |", got["report"])
+        self.assertIn("| taken-in | 14 |", got["report"])
         self.assertIn("| in-tax | 2 |", got["report"])
         self.assertIn("| apart | 2 |", got["report"])
         outcomes = json.loads((self.tmp / "out/outcomes.json").read_text())

@@ -1,0 +1,12 @@
+key: symantec/content-analysis
+publisher: symantec
+name: Symantec Content Analysis
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:symantec:content_analysis
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- symantec/symantec-content-analysis

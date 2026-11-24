@@ -1,0 +1,12 @@
+key: avg/anti-virus
+publisher: avg
+name: AVG Anti-Virus
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:avg:anti-virus
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- avg/avg-anti-virus

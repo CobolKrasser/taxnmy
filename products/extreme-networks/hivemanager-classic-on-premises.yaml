@@ -1,0 +1,12 @@
+key: extreme-networks/hivemanager-classic-on-premises
+publisher: extreme-networks
+name: Extreme Networks HiveManager Classic On-Premises
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:extremenetworks:hivemanager
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- extreme-networks/extreme-networks-hivemanager-classic-on-premises

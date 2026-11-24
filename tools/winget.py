@@ -54,6 +54,13 @@ SIZE = 2000
 VERSION_PARTS = tuple(rule for label, rule in census.VERSION_RULES if label in ("dotted number", "v-number", "year"))
 NUMBER_PART = re.compile(r"v?(\d+)", re.I)
 EMAIL = re.compile(r"[^\s<>@]+@[^\s<>@]+\.[a-z]{2,}", re.I)
+EMAIL_WITH_MARKS = re.compile(r"\s*[<(\[]?\s*(?:mailto:)?" + EMAIL.pattern + r"\s*[>)\]]?", re.I)
+
+
+def without_email(text: str) -> str:
+    """The text without its e-mail addresses and the brackets around them: "Ann Lee <ann@lee.example>"
+    gives "Ann Lee". What is left of separators at the ends goes too."""
+    return re.sub(r"\s+", " ", EMAIL_WITH_MARKS.sub(" ", text)).strip(" ,;:-|/")
 
 
 @dataclass
@@ -161,9 +168,11 @@ def plan(packages: list[Package], root: Path = ROOT, scope: str = "all") -> tupl
         if not p.publisher or not p.name:
             _set(p, "apart", "the manifest gives no publisher or no name, so no key (TK2)")
             continue
-        if EMAIL.search(p.publisher) or EMAIL.search(p.name):
-            _set(p, "apart", "a name that holds an e-mail address: TAX is public and keeps none")
-            continue
+        if EMAIL.search(p.publisher) or EMAIL.search(p.name):  # TAX is public and keeps no e-mail address (TAX-2)
+            p.publisher, p.name = without_email(p.publisher), without_email(p.name)
+            if not p.publisher or not p.name:
+                _set(p, "apart", "a name that is only an e-mail address: TAX is public and keeps none")
+                continue
         domain = census.owner(p.publisher_url) if p.publisher_url else None
         known = tax.publisher([p.publisher], [domain] if domain else [])
         if not known:

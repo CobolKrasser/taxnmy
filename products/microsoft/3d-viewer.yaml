@@ -1,0 +1,12 @@
+key: microsoft/3d-viewer
+publisher: microsoft
+name: Microsoft 3D Viewer
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:3d_viewer
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-3d-viewer

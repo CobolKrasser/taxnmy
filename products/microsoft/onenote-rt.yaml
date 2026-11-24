@@ -1,0 +1,12 @@
+key: microsoft/onenote-rt
+publisher: microsoft
+name: Microsoft OneNote RT
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microsoft:onenote_2013_rt
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/microsoft-onenote-rt

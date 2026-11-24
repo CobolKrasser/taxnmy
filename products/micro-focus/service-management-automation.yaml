@@ -1,0 +1,12 @@
+key: micro-focus/service-management-automation
+publisher: micro-focus
+name: Micro Focus Service Management Automation
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:microfocus:service_management_automation
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- micro-focus/micro-focus-service-management-automation

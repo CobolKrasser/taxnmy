@@ -1,0 +1,12 @@
+key: intel/oneapi-math-kernel-library
+publisher: intel
+name: Intel oneAPI Math Kernel Library
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:intel:math_kernel_library
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- intel/intel-oneapi-math-kernel-library

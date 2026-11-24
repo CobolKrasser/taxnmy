@@ -1,0 +1,12 @@
+key: owncloud/owncloud-app-for-android
+publisher: owncloud
+name: ownCloud ownCloud app for Android
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:owncloud:owncloud
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- owncloud/owncloud-owncloud-app-for-android
