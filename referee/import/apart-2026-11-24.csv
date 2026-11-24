@@ -90,7 +90,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 89,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source FreeRDP,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",freerdp/freerdp
 90,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,Schweitzer Engineering Laboratories,R123,,apart,the AI run could not tell (unknown),
 91,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/WindowsTerminal/Preview,,Windows Terminal Preview,Microsoft.WindowsTerminal.Preview,in-tax,TAX has this winget id (TK3): no new file,microsoft/windows-terminal-preview
-92,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source cpio,,in-tax,TAX has the product under another publisher (gnuwin32/cpio): no second product,gnuwin32/cpio
+92,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source cpio,,taken-in,"the analyst: GNU cpio is another product than the Windows port gnuwin32/cpio, with its own releases (TP3)",gnu/cpio
 93,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,RustDesk,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",rustdesk/rustdesk
 94,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source PHP 5.3.x < 5.3.27,,in-tax,TAX has the product under this publisher (TK3): no new file,the-php-group/php
 95,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,FreeRADIUS,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",freeradius/freeradius
@@ -558,7 +558,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 557,csaf,https://www.se.com/.well-known/csaf/provider-metadata.json,Schneider Electric,EcoStruxure™ Power Operation (EPO) 2022 Advanced Reporting and Dashboards Module,,apart,TK2: product part 'ecostruxure-power-operation-advanced-reporting-and-dashboards-module' is 68 characters; the maximum is 64,schneider-electric/ecostruxure-power-operation-advanced-reporting-and-dashboards-module
 558,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source Linux Kernel < 5.16 RC1,,in-tax,TAX has the product under this publisher (TK3): no new file,the-linux-kernel-organization/linux-kernel
 559,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,Siemens,Annual Shading,,apart,the AI run could not tell (unknown),
-560,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,patch,,in-tax,TAX has the product under another publisher (gnuwin32/patch): no second product,gnuwin32/patch
+560,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,patch,,taken-in,"the analyst: GNU patch is another product than the Windows port gnuwin32/patch, with its own releases (TP3)",gnu/patch
 561,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,SiRcom,SMART Alert (SiSA),,apart,the AI run could not tell (unknown),
 562,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SAP/SapMachine/23/JRE,,SapMachine 23 JRE,SAP.SapMachine.23.JRE,in-tax,TAX has this winget id (TK3): no new file,sap/sapmachine-jre
 563,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer,,Process Explorer,Microsoft.Sysinternals.ProcessExplorer,in-tax,TAX has this winget id (TK3): no new file,microsoft/process-explorer
@@ -568,7 +568,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 567,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source Wireshark < 3.6.9,,in-tax,TAX has the product under this publisher (TK3): no new file,wireshark-foundation/wireshark
 568,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source OPNsense,,in-tax,TAX has the product under this publisher (TK3): no new file,deciso/opnsense
 569,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source dbus < 1.12.24-0+deb11u1,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",freedesktop-org/d-bus
-570,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,GNU tar,,in-tax,"TAX has the product under another publisher (gnuwin32/tar, red-hat/tar, rhel/tar): no second product",gnuwin32/tar
+570,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,GNU tar,,taken-in,"the analyst: GNU tar is another product than the Windows port gnuwin32/tar, with its own releases (TP3)",gnu/tar
 571,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source binutils,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",gnu/binutils
 572,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source Ghostscript 9.55.0,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",artifex-software/ghostscript
 573,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,3S-Smart Software Solutions GmbH,CODESYS Control for BeagleBone containing the webserver CmpWebServer,,in-tax,TAX has the product under another publisher (3s-smart-software-solutions/codesys-control-for-beaglebone): no second product,3s-smart-software-solutions/codesys-control-for-beaglebone
@@ -579,7 +579,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 578,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source ffmpeg wrapper for Java <= 0.7.0,,apart,the AI run could not tell (unknown),
 579,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,General Electric (GE),ToolBoxST OS,,apart,the AI run could not tell (unknown),
 580,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source Gitea < 1.18.4,,in-tax,TAX has the product under this publisher (TK3): no new file,gitea/gitea
-581,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,gzip,,in-tax,TAX has the product under another publisher (gnuwin32/gzip): no second product,gnuwin32/gzip
+581,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,gzip,,taken-in,"the analyst: GNU gzip is another product than the Windows port gnuwin32/gzip, with its own releases (TP3)",gnu/gzip
 582,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,"Schneider Electric Software, LLC",PLC Simulator for Unity Pro (former name of EcoStruxure Control Expert),,in-tax,TAX has the product under another publisher (schneider-electric-software/plc-simulator-for-ecostruxure-control-expert): no second product,schneider-electric-software/plc-simulator-for-ecostruxure-control-expert
 583,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,"Sensormatic Electronics, LLC, a subsidiary of Johnson Controls Inc.",C-CURE 9000,,in-tax,TAX has the product under this publisher (TK3): no new file,johnson-controls/c-cure-9000
 584,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source QEMU,,in-tax,TAX has the product under this publisher (TK3): no new file,qemu-community/qemu
@@ -886,7 +886,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 885,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,"Sensormatic Electronics, LLC, Johnson Controls Inc.",Flex Gen 2,,apart,the AI run could not tell (unknown),
 886,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,GE Healthcare,AW,,apart,the AI run could not tell (unknown),
 887,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Asterisk,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",sangoma/asterisk
-888,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,cpio,,in-tax,TAX has the product under another publisher (gnuwin32/cpio): no second product,gnuwin32/cpio
+888,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,cpio,,taken-in,"the analyst: GNU cpio is another product than the Windows port gnuwin32/cpio, with its own releases (TP3)",gnu/cpio
 889,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,"Schneider Electric Software, LLC",Premium processors with integrated Ethernet COPRO TSXP574634 TSXP575634 TSXP576634,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",schneider-electric/modicon-premium-processor
 890,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Git/SDK,,Git for Windows SDK,Git.SDK,in-tax,TAX has this winget id (TK3): no new file,git/for-windows-sdk
 891,csaf,https://www.se.com/.well-known/csaf/provider-metadata.json,Schneider Electric,WebHMI,,apart,the AI run could not tell (unknown),
@@ -1126,7 +1126,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 1125,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AquaSecurity/Trivy,,Trivy,AquaSecurity.Trivy,in-tax,TAX has this winget id (TK3): no new file,aqua-security-software/trivy
 1126,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,vm2,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",patrik-simek/vm2
 1127,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source git for Windows < 2.39.2,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",git/for-windows
-1128,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source GNU tar,,in-tax,"TAX has the product under another publisher (gnuwin32/tar, red-hat/tar, rhel/tar): no second product",gnuwin32/tar
+1128,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source GNU tar,,taken-in,"the analyst: GNU tar is another product than the Windows port gnuwin32/tar, with its own releases (TP3)",gnu/tar
 1129,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Inst,,Eclipse Installer,EclipseFoundation.Eclipse.Inst,in-tax,TAX has this winget id (TK3): no new file,eclipse-foundation/eclipse-installer
 1130,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,"ABB, Phoenix Contact, Schneider Electric, Siemens, and WAGO",750-831 Controller,,in-tax,TAX has the product under this publisher (TK3): no new file,wago/750-831
 1131,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source PHP,,in-tax,TAX has the product under this publisher (TK3): no new file,the-php-group/php
@@ -1269,7 +1269,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 1268,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Grub,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",gnu/grub
 1269,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,Mitsubishi Electric Corporation,MELSEC iQ-F Series CPU module FX5S-80MR/ES (sold in limited regions),,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",mitsubishi-electric/melsec-iq-f-fx5s
 1270,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,jabberd,,apart,the AI run could not tell (unknown),
-1271,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source GNU tar <= 1.33,,in-tax,"TAX has the product under another publisher (gnuwin32/tar, red-hat/tar, rhel/tar): no second product",gnuwin32/tar
+1271,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source GNU tar <= 1.33,,taken-in,"the analyst: GNU tar is another product than the Windows port gnuwin32/tar, with its own releases (TP3)",gnu/tar
 1272,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source GitLab >= 16.2.0,,in-tax,TAX has the product under this publisher (TK3): no new file,gitlab/gitlab
 1273,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,Xiiaozet,LK100W,,apart,the AI run could not tell (unknown),
 1274,csaf,https://www.sick.com/.well-known/csaf/provider-metadata.json,Endress+Hauser,MEAC300-FNADE4,,apart,the AI run could not tell (unknown),
@@ -1430,7 +1430,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 1429,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/CrashFirefoxIntentionally,,Crash Firefox Intentionally,Mozilla.CrashFirefoxIntentionally,in-tax,TAX has this winget id (TK3): no new file,mozilla/crash-firefox-intentionally
 1430,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source cURL 7.7 < 7.31.0,,in-tax,TAX has the product under this publisher (TK3): no new file,curl/curl
 1431,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JFrog/Conan,,Conan Package Manager,JFrog.Conan,in-tax,TAX has this winget id (TK3): no new file,jfrog/conan-package-manager
-1432,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source patch,,in-tax,TAX has the product under another publisher (gnuwin32/patch): no second product,gnuwin32/patch
+1432,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source patch,,taken-in,"the analyst: GNU patch is another product than the Windows port gnuwin32/patch, with its own releases (TP3)",gnu/patch
 1433,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Coolify,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",coollabs/coolify
 1434,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source xpdf 4.04,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",glyph/xpdf
 1435,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source Webmin < 2.001,,in-tax,TAX has the product under this publisher (TK3): no new file,webmin/webmin
