@@ -1,0 +1,8 @@
+key: wso2/api-manager
+publisher: wso2
+name: API Manager
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

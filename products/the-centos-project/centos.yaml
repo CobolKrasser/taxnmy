@@ -1,0 +1,8 @@
+key: the-centos-project/centos
+publisher: the-centos-project
+name: CentOS
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

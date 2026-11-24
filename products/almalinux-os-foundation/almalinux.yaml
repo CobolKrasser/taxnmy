@@ -1,0 +1,8 @@
+key: almalinux-os-foundation/almalinux
+publisher: almalinux-os-foundation
+name: AlmaLinux
+kind: operating-system
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases: []

@@ -1,0 +1,8 @@
+key: misp-project/misp
+publisher: misp-project
+name: MISP
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []

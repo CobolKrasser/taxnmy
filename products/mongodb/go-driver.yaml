@@ -1,0 +1,9 @@
+key: mongodb/go-driver
+publisher: mongodb
+name: MongoDB Go Driver
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- mongodb/mongodb-go-driver
