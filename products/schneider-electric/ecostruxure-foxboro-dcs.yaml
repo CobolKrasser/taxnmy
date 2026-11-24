@@ -1,0 +1,9 @@
+key: schneider-electric/ecostruxure-foxboro-dcs
+publisher: schneider-electric
+name: EcoStruxure Foxboro DCS
+kind: software
+source: https://www.se.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://www.se.com/.well-known/csaf/provider-metadata.json
+aliases:
+- schneider-electric/ecostruxuretm-foxboro-dcs
