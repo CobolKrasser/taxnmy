@@ -446,7 +446,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 445,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,GE Healthcare,AWS,,apart,the AI run could not tell (unknown),
 446,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source vim < 9.0.1392,,in-tax,TAX has the product under this publisher (TK3): no new file,bram-moolenaar-et-al/vim
 447,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,multiple,Amazon FreeRTOS,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",amazon-web-services/freertos
-448,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,wget,,in-tax,TAX has the product under another publisher (jernej-simoncic/wget): no second product,jernej-simoncic/wget
+448,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,wget,,moved,TAX had the product under jernej-simoncic/wget; it moves to its maker (PO 24 November 2026),gnu/wget
 449,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu/Alpha,,OpenTofu,OpenTofu.Tofu.Alpha,in-tax,TAX has this winget id (TK3): no new file,the-linux-foundation/opentofu
 450,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,WSO2 API Manager,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",wso2/api-manager
 451,winget,https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SoftwareFreedomConservancy/QEMUGuestAgent,,QEMU guest agent,SoftwareFreedomConservancy.QEMUGuestAgent,in-tax,TAX has this winget id (TK3): no new file,red-hat/qemu-guest-agent
@@ -910,7 +910,7 @@ nr,list,source,vendor,name,winget_id,outcome,reason,product
 909,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source System Security Services Daemon (SSSD),,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",sssd/sssd
 910,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source Cacti < 1.2.14,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",the-cacti-group/cacti
 911,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,Koyo,H0-ECOM100 (For DirectLogic DL06 Series Programmable Logic Controllers),,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",koyo/h0-ecom100
-912,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source wget,,in-tax,TAX has the product under another publisher (jernej-simoncic/wget): no second product,jernej-simoncic/wget
+912,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source wget,,moved,TAX had the product under jernej-simoncic/wget; it moves to its maker (PO 24 November 2026),gnu/wget
 913,csaf,https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json,Siemens,"SIMATIC HMI Comfort Panels, HMI Multi Panels, HMI Mobile Panels (incl. SIPLUS variants)",,apart,the AI run rejected it: no product for TAX,
 914,csaf,https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json,multiple,BlackBerry QNX OS for Medical,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",blackberry/qnx-os-for-medical
 915,csaf,https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json,Open Source,Open Source systemd 253,,taken-in,"the publisher, the name and the kind of the AI run (TAX-2)",systemd/systemd
