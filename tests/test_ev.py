@@ -67,8 +67,21 @@ FE = [["Model Year", "Mfr Name", "Division", "Carline"],
       ["2026", "Nothing", "Nothing", "N2 AWD"],
       ["2026", "Stranger", "Stranger", "Q1"]]  # a brand the list does not name
 
+RDW_FUEL = ["AA01", "AA02", "AA03", "AA04", "AA05", "AA06"]
+RDW_VEHICLES = [
+    {"kenteken": "AA01", "voertuigsoort": "Personenauto", "merk": "ACME", "handelsbenaming": "VOLT3 LONG RANGE"},
+    {"kenteken": "AA02", "voertuigsoort": "Personenauto", "merk": "ACME", "handelsbenaming": "VOLT3 LONG RANGE"},  # twice
+    {"kenteken": "AA03", "voertuigsoort": "Bromfiets", "merk": "ZED", "handelsbenaming": "Z2 SCOOTER"},
+    {"kenteken": "AA04", "voertuigsoort": "Motorfiets", "merk": "SPARK", "handelsbenaming": "SPARK Q9 PRO"},
+    {"kenteken": "AA05", "voertuigsoort": "Oplegger", "merk": "ACME", "handelsbenaming": "TRAILER"},  # not a kind read
+    {"kenteken": "AA06", "voertuigsoort": "Personenauto", "merk": "ZED", "handelsbenaming": "Z3"},
+    {"kenteken": "BB01", "voertuigsoort": "Personenauto", "merk": "ACME", "handelsbenaming": "VOLT 8"},  # not electric
+]
+
 LIST = {"version": 1,
-        "reasons": {"refuses": "refuses", "none": "no versions", "other": "the page does not name the model"},
+        "reasons": {"refuses": "refuses", "none": "no versions", "other": "the page does not name the model",
+                    "unsearched": "not looked for"},
+        "rdw": {"kinds": {"Personenauto": "car", "Bromfiets": "moped", "Motorfiets": "motorcycle"}},
         "brands": {
             "Acme": {"fueleconomy": ["ACME MOTORS"], "publisher": {"key": "acme", "name": "Acme"},
                      "products": [{"name": "Volt 3", "versions": "https://acme.example/updates", "models": ["Volt 3"]},
@@ -95,6 +108,10 @@ class EvTest(unittest.TestCase):
         self.oev.write_text(json.dumps(OEV))
         self.fe = self.tmp / "fe.xlsx"
         xlsx(self.fe, FE)
+        self.rdw = self.tmp / "rdw"
+        self.rdw.mkdir()
+        (self.rdw / "fuel.jsonl").write_text("".join(json.dumps({"kenteken": k}) + "\n" for k in RDW_FUEL))
+        (self.rdw / "vehicles.jsonl").write_text("".join(json.dumps(v) + "\n" for v in RDW_VEHICLES))
 
     def tearDown(self):
         shutil.rmtree(self.tmp)
@@ -157,19 +174,79 @@ class EvTest(unittest.TestCase):
     def test_the_apart_list(self):
         self.run_round()
         lines = (self.tmp / "out/apart.csv").read_text().splitlines()
-        self.assertEqual(lines[0], "brand,model,sources,outcome,reason,product")
-        self.assertIn("Closed,C1,open-ev-data,apart,refuses,", lines)
+        self.assertEqual(lines[0], "brand,model,kinds,sources,outcome,reason,product")
+        self.assertIn("Closed,C1,car,open-ev-data,apart,refuses,", lines)
         self.assertFalse(any(line.startswith("Zed,") for line in lines))
 
     def test_the_list_of_the_repository(self):
         data = ev.load_list()
         self.assertEqual(len(data["brands"]), 71, "the 71 brands of TAX-59")
         counts = {r: sum(1 for b in data["brands"].values() if b.get("apart") == r) for r in data["reasons"]}
-        self.assertEqual(counts, {"refuses": 17, "none": 42, "other": 2})
+        self.assertEqual(counts, {"refuses": 17, "none": 42, "other": 2, "unsearched": 0})
+        self.assertIn("Personenauto", data["rdw"]["kinds"])
         for brand, entry in data["brands"].items():
             for p in entry.get("products") or []:
                 self.assertTrue(p["versions"].startswith("https://"), brand)
                 self.assertTrue(p["models"], brand)
+
+    def test_the_rdw_gives_one_row_per_brand_trade_name_and_kind(self):
+        rows = ev.read_rdw(self.rdw, LIST["rdw"]["kinds"])
+        self.assertEqual([(r.brand, r.model, r.kind) for r in rows],
+                         [("ACME", "VOLT3 LONG RANGE", "car"), ("ZED", "Z2 SCOOTER", "moped"),
+                          ("SPARK", "SPARK Q9 PRO", "motorcycle"), ("ZED", "Z3", "car")])
+
+    def test_the_rdw_leaves_out_old_vehicles_and_rare_trade_names(self):
+        vehicles = [{"kenteken": f"CC{i:02}", "voertuigsoort": "Personenauto", "merk": "ACME", "handelsbenaming": "VOLT 4",
+                     "datum_eerste_toelating": "20240101"} for i in range(3)]
+        vehicles += [{"kenteken": "CC90", "voertuigsoort": "Personenauto", "merk": "ACME", "handelsbenaming": "VOLT 4",
+                      "datum_eerste_toelating": "19720301"},  # converted: its first date stays
+                     {"kenteken": "CC91", "voertuigsoort": "Personenauto", "merk": "ACME", "handelsbenaming": "ONE OFF",
+                      "datum_eerste_toelating": "20240101"}]
+        (self.rdw / "fuel.jsonl").write_text("".join(json.dumps({"kenteken": v["kenteken"]}) + "\n" for v in vehicles))
+        (self.rdw / "vehicles.jsonl").write_text("".join(json.dumps(v) + "\n" for v in vehicles))
+        dropped = ev.Counter()
+        rows = ev.read_rdw(self.rdw, {"Personenauto": "car"}, since=2010, at_least=2, dropped=dropped)
+        self.assertEqual([(r.brand, r.model) for r in rows], [("ACME", "VOLT 4")])
+        self.assertEqual(dropped, {"vehicles admitted before 2010": 1, "vehicles of a trade name with fewer than 2": 1,
+                                   "trade names with fewer than 2 vehicles": 1})
+
+    def test_the_rdw_in_the_round(self):
+        got = ev.run(self.oev, [self.fe], self.tmp / "out", self.root, data=LIST, rdw=self.rdw)
+        by = {(m.brand, m.name): m for m in got["models"]}
+        self.assertEqual(by[("Acme", "Volt 3")].sources, {"open-ev-data", "fueleconomy", "rdw"},
+                         "VOLT3 is Volt 3: letters and digits apart, the brand in capitals")
+        self.assertEqual((by[("Zed", "Z2")].product, by[("Zed", "Z2")].kinds), ("zed/os", {"car", "moped"}))
+        self.assertEqual((by[("Zed", "Z3")].outcome, by[("Zed", "Z3")].reason), ("apart", "the page does not name the model"))
+        spark = by[("SPARK", "Q9")]
+        self.assertEqual((spark.outcome, spark.reason, spark.kinds), ("apart", "not looked for", {"motorcycle"}),
+                         "a brand outside the list: its first word after the brand")
+        self.assertIn("| motorcycle | 1 | 0 | 0 | 1 | 1 |", got["report"])
+
+    def test_a_series_in_tax_gets_a_model_of_the_rdw_as_alias(self):
+        write(self.root, "publishers/zed.yaml", "key: zed\nname: Zed\nsource: https://zed.example/os\naliases: []\n")
+        write(self.root, "products/zed/os.yaml", "key: zed/os\npublisher: zed\nname: Zed OS\nkind: device\n"
+                                                 "source: https://zed.example/os\nversions:\n  source: https://zed.example/os\n"
+                                                 "aliases:\n- zed/zed-os\n- zed/z1\n- zed/z2\n")
+        data = {**LIST, "brands": {**LIST["brands"], "Zed": {**LIST["brands"]["Zed"]}}}
+        data["brands"]["Zed"]["products"] = [{**LIST["brands"]["Zed"]["products"][0], "models": ["Z1", "Z2", "Z3"]}]
+        got = ev.run(self.oev, [self.fe], self.tmp / "out", self.root, data=data, rdw=self.rdw, write=True)
+        by = {(m.brand, m.name): m for m in got["models"]}
+        self.assertEqual((by[("Zed", "Z1")].outcome, by[("Zed", "Z3")].outcome), ("in-tax", "taken-in"))
+        os = yaml.safe_load((self.root / "products/zed/os.yaml").read_text())
+        self.assertEqual(os["aliases"], ["zed/zed-os", "zed/z1", "zed/z2", "zed/z3"], "the file in TAX keeps what it had")
+        self.assertIn("1 products in TAX with a model more, 1 new aliases", got["report"])
+        self.assertEqual([f for f in lint.lint(self.root) if f.level == "error"], [])
+
+    def test_a_row_of_the_rdw_is_electric_without_saying_so(self):
+        data = {**LIST, "rdw": {**LIST["rdw"], "implied": ["Electric"]}}
+        data["brands"] = {**LIST["brands"], "Acme": {**LIST["brands"]["Acme"]}}
+        data["brands"]["Acme"]["products"] = [*LIST["brands"]["Acme"]["products"],
+                                              {"name": "Volt 8 Electric", "versions": "https://acme.example/updates",
+                                               "models": ["Volt 8 Electric"]}]
+        (self.rdw / "fuel.jsonl").write_text(json.dumps({"kenteken": "BB01"}) + "\n")
+        got = ev.run(self.oev, [self.fe], self.tmp / "out", self.root, data=data, rdw=self.rdw)
+        by = {(m.brand, m.name): m for m in got["models"]}
+        self.assertEqual(by[("Acme", "Volt 8 Electric")].product, "acme/volt-8-electric", "VOLT 8 of the RDW")
 
 
 if __name__ == "__main__":

@@ -1,8 +1,10 @@
-# Electric cars as a filler (TAX-59): the data tools/ev.py needs, so that the code names no brand and
-# no model (TG4). A maintainer changes it with a pull request.
+# Electric vehicles as a filler (TAX-59): the data tools/ev.py needs, so that the code names no brand
+# and no model (TG4). A maintainer changes it with a pull request.
 #
-# The models come from Open EV Data (a release on GitHub, CDLA-Permissive-2.0, see NOTICE) and from
-# the FE Guide of fueleconomy.gov (sheet EV, model years 2026 and 2027). A trim, a drivetrain or a
+# The models come from Open EV Data (a release on GitHub, CDLA-Permissive-2.0, see NOTICE), from the
+# FE Guide of fueleconomy.gov (sheet EV, model years 2026 and 2027) and from the open data of the RDW
+# (Gekentekende_voertuigen and its fuel, public domain): the motor vehicles registered in the
+# Netherlands that run on electricity only, also mopeds and motorcycles. A trim, a drivetrain or a
 # wheel size is a variant of a model (TP3). A model only comes into TAX with a page of the
 # manufacturer that publishes its versions (TP1); that page also decides what the product is
 # (Fred, 22 and 23 November 2026):
@@ -13,11 +15,15 @@
 #
 # `brands`, per brand as Open EV Data writes it:
 #   fueleconomy  the names of the brand in the column Division of the FE Guide, when they differ
+#   rdw          the names of the brand in the column merk of the RDW, when they differ
 #   publisher    {key, name}: the short name of the brand, not that of a legal person (TAX-54)
 #   products     each with `name`, `versions` (the page) and `models` (the names the page uses; a row
 #                belongs to the model whose words it all has, the longest first). A product with
 #                `series: true` is one series for all its models: the models become aliases.
 #   apart        the reason when no model of the brand comes in: refuses, none or other
+#
+# A brand of the RDW that is not among these 71 has had no search for a version page: its models stay
+# apart with the reason `unsearched`.
 #
 # The pages of the 12 brands with a source for the versions were read by the builder on 23 November
 # 2026; robots.txt allows each of them. The other 59 brands are as the analyst found them (TAX-59,
@@ -28,10 +34,32 @@ reasons:
   refuses: "the manufacturer's page refuses our reader (TE5); work for the maintainer"
   none: "the manufacturer publishes no versions (TP1)"
   other: "the version page of the manufacturer does not name the model (TP1)"
+  unsearched: "not among the 71 brands of TAX-59: no version page of the manufacturer looked for (TP1)"
+
+# The kinds of vehicle of the RDW (voertuigsoort) that are read, and how the round names them.
+# `since`: a vehicle first admitted before this year is left out (an old vehicle converted to
+# electricity keeps its first date). `at_least`: a trade name with fewer vehicles is left out (a one-off
+# import or conversion).
+# `implied`: words a row of the RDW has without writing them, since it is fully electric (the RDW writes
+# "G80" for the Electrified G80).
+rdw:
+  since: 2010
+  at_least: 10
+  implied: [Electric, Electrified]
+  kinds:
+    Personenauto: car
+    Bedrijfsauto: commercial vehicle
+    Bus: bus
+    Motorfiets: motorcycle
+    Motorfiets met zijspan: motorcycle
+    Bromfiets: moped
+    Driewielig motorrijtuig: three-wheeler
+    Motorrijtuig met beperkte snelheid: microcar
 
 brands:
   # one series for several models
   Volkswagen:
+    rdw: [VW]
     publisher: {key: volkswagen, name: Volkswagen}
     products:
       - name: ID. Software
@@ -106,7 +134,7 @@ brands:
 
   # a page found that refuses our reader (17)
   Audi: {apart: refuses}
-  BMW: {apart: refuses}
+  BMW: {apart: refuses, rdw: [BMW I]}
   Cadillac: {apart: refuses}
   Chevrolet: {apart: refuses}
   Citroën: {apart: refuses}
@@ -159,7 +187,7 @@ brands:
   Leapmotor: {apart: none}
   M-Hero: {apart: none}
   McLaren: {apart: none}
-  MG Motor: {apart: none}
+  MG Motor: {apart: none, rdw: [MG]}
   Mitsubishi: {apart: none, fueleconomy: [MITSUBISHI MOTORS]}
   Nammi: {apart: none}
   NIO: {apart: none}
