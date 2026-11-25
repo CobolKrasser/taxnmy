@@ -180,9 +180,9 @@ class EvTest(unittest.TestCase):
 
     def test_the_list_of_the_repository(self):
         data = ev.load_list()
-        self.assertEqual(len(data["brands"]), 71, "the 71 brands of TAX-59")
+        self.assertEqual(len(data["brands"]), 72, "the 71 brands of TAX-59 and Zero Motorcycles of the RDW prompt")
         counts = {r: sum(1 for b in data["brands"].values() if b.get("apart") == r) for r in data["reasons"]}
-        self.assertEqual(counts, {"refuses": 17, "none": 42, "other": 2, "unsearched": 0})
+        self.assertEqual(counts, {"refuses": 16, "none": 41, "other": 1, "unsearched": 0})
         self.assertIn("Personenauto", data["rdw"]["kinds"])
         for brand, entry in data["brands"].items():
             for p in entry.get("products") or []:

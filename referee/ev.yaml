@@ -22,12 +22,13 @@
 #                `series: true` is one series for all its models: the models become aliases.
 #   apart        the reason when no model of the brand comes in: refuses, none or other
 #
-# A brand of the RDW that is not among these 71 has had no search for a version page: its models stay
+# A brand of the RDW that is not among these brands has had no search for a version page: its models stay
 # apart with the reason `unsearched`.
 #
 # The pages of the 12 brands with a source for the versions were read by the builder on 23 November
 # 2026; robots.txt allows each of them. The other 59 brands are as the analyst found them (TAX-59,
-# comment 12368).
+# comment 12368). The pages of Lotus, Lucid, Changan (Deepal) and Zero Motorcycles were found by the
+# prompt for the models of the RDW and read by the analyst on 25 November 2026 (TAX-59, comment 12466).
 version: 1
 
 reasons:
@@ -101,6 +102,21 @@ brands:
         series: true
         versions: 'https://www.xpeng.com/news/0198df0f0bb998ab5d958a02815f00a4'
         models: [G6, G9, G9L, P7, P7+, X9]
+  Lotus:
+    publisher: {key: lotus, name: Lotus}
+    products:
+      - name: Lotus Hyper OS
+        series: true
+        versions: 'https://www.lotuscars.com/en-GB/support/over-the-air-updates/version-history'
+        models: [Eletre, Emeya]
+  Zero Motorcycles:  # the series is in TAX from CSAF ("Zero Motorcycles firmware"): its models become aliases
+    rdw: [ZERO MOTORCYCLES]
+    publisher: {key: zero-motorcycles, name: Zero Motorcycles}
+    products:
+      - name: Zero Motorcycles
+        series: true
+        versions: 'https://zeromotorcycles.com/firmware'
+        models: [DS, DSR, DSR/X, FXE, S, SR, SR/F, SR/S]
   # per model
   Polestar:
     fueleconomy: [Polestar Automotive USA Inc]
@@ -128,11 +144,23 @@ brands:
       - {name: GV60, versions: &genesis 'https://www.genesis.com/kr/en/support/notice.html', models: [GV60]}
       - {name: Electrified G80, versions: *genesis, models: [Electrified G80]}
       - {name: Electrified GV70, versions: *genesis, models: [Electrified GV70]}
+  Lucid:
+    fueleconomy: [Lucid USA Inc.]
+    rdw: [LUCID MOTORS]
+    publisher: {key: lucid, name: Lucid}
+    products:
+      - {name: Lucid Air, versions: &lucid 'https://lucidmotors.com/knowledge/vehicles/over-the-air/software-updates', models: [Air]}
+      - {name: Lucid Gravity, versions: *lucid, models: [Gravity]}
+  Changan:  # the page covers the Deepal S05 and S07 for Europe, which the RDW writes under the brand DEEPAL
+    rdw: [DEEPAL]
+    publisher: {key: changan, name: Changan}
+    products:
+      - {name: Deepal S05, versions: &changan 'https://www.changaneurope.com/uk/owners/software-and-updates/software-release-notes', models: [S05]}
+      - {name: Deepal S07, versions: *changan, models: [S07]}
   # read, but the page names none of the brand's models in the sources
   Honda: {apart: other}  # the page lists the Japanese models with Honda CONNECT; no Prologue, e:NP2 or e:NS2
-  Changan: {apart: other}  # the page covers the Deepal S05 and S07 for Europe; the sources have models for China
 
-  # a page found that refuses our reader (17)
+  # a page found that refuses our reader (16)
   Audi: {apart: refuses}
   BMW: {apart: refuses, rdw: [BMW I]}
   Cadillac: {apart: refuses}
@@ -140,7 +168,6 @@ brands:
   Citroën: {apart: refuses}
   DS Automobiles: {apart: refuses}
   Lexus: {apart: refuses, fueleconomy: [LEXUS]}
-  Lotus: {apart: refuses}
   Maserati: {apart: refuses, fueleconomy: [MASERATI]}
   Mercedes-Benz: {apart: refuses}
   Mini: {apart: refuses}
@@ -151,7 +178,7 @@ brands:
   VinFast: {apart: refuses, fueleconomy: [Hai Phong manufacturing plant]}
   Volvo: {apart: refuses, fueleconomy: ["Volvo Cars of North America, LLC"]}
 
-  # only a general page, without versions (17)
+  # only a general page, without versions (16)
   Tesla: {apart: none, fueleconomy: [Tesla Motors]}
   Toyota: {apart: none, fueleconomy: [TOYOTA]}
   Porsche: {apart: none}
@@ -161,7 +188,6 @@ brands:
   BYD: {apart: none}
   Dacia: {apart: none}
   GWM: {apart: none}
-  Lucid: {apart: none, fueleconomy: [Lucid USA Inc.]}
   Kia: {apart: none, fueleconomy: [KIA]}
   Subaru: {apart: none}
   Rolls-Royce: {apart: none, fueleconomy: [Rolls-Royce Motor Cars Limited]}
