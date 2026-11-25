@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/CobolKrasser/taxnmy/schema/product.schema.json",
   "title": "TAXNMY product",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "One product that can receive updates. Stored as products/<publisher>/<product>.yaml. The form of the key (rule TK2) and uniqueness (rule TK3) are checked by tools/lint.py, not by this schema. A product has no parent field: software does not need a parent product.",
   "type": "object",
   "additionalProperties": false,
@@ -31,13 +31,32 @@
       "$ref": "#/$defs/url"
     },
     "versions": {
-      "description": "Where the versions of this product are published. For a device, the versions are its firmware.",
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["source"],
-      "properties": {
-        "source": { "$ref": "#/$defs/url" }
-      }
+      "description": "Where the versions of this product are published (`source`). For a device, the versions are its firmware. A product of which the publisher publishes no versions, but says itself that it gets updates (rule TP1, TAX-67), has instead `published: false` and the page where the publisher says so (`updates`). When the publisher later publishes the versions, a change replaces both with `source`.",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source"],
+          "properties": {
+            "source": { "$ref": "#/$defs/url" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["published", "updates"],
+          "properties": {
+            "published": {
+              "description": "false: the publisher publishes no versions of this product. A reader sees it without opening a source.",
+              "const": false
+            },
+            "updates": {
+              "description": "The page of the publisher on which it says itself that the product gets updates.",
+              "$ref": "#/$defs/url"
+            }
+          }
+        }
+      ]
     },
     "identifiers": {
       "description": "Existing codes for this product, each with its own source.",

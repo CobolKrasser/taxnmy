@@ -66,6 +66,9 @@ aliases: []
 
 - `source` is the page where the name and kind of the product can be read.
 - `versions.source` is the page where the versions of the product are published.
+- When the publisher publishes no versions but says itself that the product gets updates (TP1), write
+  `versions:` with `published: false` and `updates:`, the page where the publisher says so, instead of
+  `source`. A file holds one of the two forms.
 - Each identifier holds exactly one code (`cpe`, `purl`, `gtin`, `winget` or `homebrew`) and a `source`.
 - A GTIN is written in quotes, so leading zeros are kept.
 - A product has no parent field. Software does not need to name the operating system it runs on.

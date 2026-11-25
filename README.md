@@ -83,6 +83,13 @@ with the page of the publisher that names it. A second source, when there is one
 A product file names the source of its versions (`versions.source`). How a version is built up is
 observed per product, with its source (TP4).
 
+A product of which the publisher publishes no versions, but says itself that it gets updates, is a
+product too (TP1, TAX-67): a vehicle that only gets updates over the air, for example. Its file holds
+`versions.published: false`, so a reader sees it without opening a source, and `versions.updates`, the
+page where the publisher says so. When the publisher later publishes the versions, a change replaces
+both with `versions.source`. How a product is updated (over the air, by the driver, at a dealer) is not
+recorded.
+
 ### Identifiers
 
 Existing codes are identifiers of a product, each with a source of its own (TK4): purl (without

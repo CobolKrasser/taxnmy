@@ -24,10 +24,11 @@ def files(root: Path) -> list[Path]:
 
 
 def is_name(rel: str, line: str) -> bool:
-    """A product name, not a rule: the name field of a proposed file, or a name in an example of the
-    writing rule."""
+    """A product name, not a rule: the name field of a proposed file, a name in an example of the
+    writing rule, or the models of a brand in referee/ev.yaml (Audi S6, MG S5)."""
     stripped = line.lstrip()
-    return stripped.startswith("name: ") or (rel == "tests/test_keyrule.py" and stripped.startswith('(("'))
+    return (stripped.startswith("name: ") or (rel == "tests/test_keyrule.py" and stripped.startswith('(("'))
+            or (rel == "referee/ev.yaml" and ("models: [" in line or "others: [" in line)))  # model names (TAX-67)
 
 
 def old_numbers(root: Path = REPO) -> list[str]:

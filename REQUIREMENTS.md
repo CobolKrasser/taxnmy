@@ -26,7 +26,7 @@ a **person**, a **measurement**, or the **set-up** of the repository and its wor
 
 | # | requirement | by |
 | --- | --- | --- |
-| TP1 | A product is something that can receive updates, and of which a source publishes the versions. It carries two names, as a source writes them: the publisher and the product. | code where it can, otherwise AI |
+| TP1 | A product is something that can receive updates, and of which a source publishes the versions, or of which the publisher says itself that it gets updates. It carries two names, as a source writes them: the publisher and the product. | code where it can, otherwise AI |
 | TP2 | A product has one kind: device, operating system or software. | code |
 | TP3 | A product gets a key of its own if it has an update stream of its own, or can be affected by a vulnerability on its own. Otherwise it is a variant of an existing product. | AI; code checks the quote |
 | TP4 | A version is the text a source publishes about this product. Within a product a version is unique. Firmware is the version of a device. | AI |

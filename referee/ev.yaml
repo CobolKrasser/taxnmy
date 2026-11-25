@@ -20,7 +20,12 @@
 #   products     each with `name`, `versions` (the page) and `models` (the names the page uses; a row
 #                belongs to the model whose words it all has, the longest first). A product with
 #                `series: true` is one series for all its models: the models become aliases.
-#   apart        the reason when no model of the brand comes in: refuses, none or other
+#                A product of which the manufacturer publishes no versions has `updates` instead of
+#                `versions`: the page where it says itself that the model gets updates (TP1, TAX-67).
+#   apart        the reason when no model of the brand comes in: refuses, none, other or taken; with
+#                products, the reason for the models of the brand that no page names
+#   others       models of the brand that are models of their own, though a page's model name would
+#                catch them (iX1 has all the words of iX): they stay apart
 #
 # A brand of the RDW that is not among these brands has had no search for a version page: its models stay
 # apart with the reason `unsearched`.
@@ -29,6 +34,9 @@
 # 2026; robots.txt allows each of them. The other 59 brands are as the analyst found them (TAX-59,
 # comment 12368). The pages of Lotus, Lucid, Changan (Deepal) and Zero Motorcycles were found by the
 # prompt for the models of the RDW and read by the analyst on 25 November 2026 (TAX-59, comment 12466).
+# The pages with `updates` were found by the two prompts for the models of the RDW; the analyst
+# approved 77 rows on 25 November 2026 (TAX-59, comments 12466 and 12471; TAX-67, comment 12472):
+# the sporty Audi models are trims of the A6 and Q6 e-tron on the same page (TP3).
 version: 1
 
 reasons:
@@ -36,6 +44,7 @@ reasons:
   none: "the manufacturer publishes no versions (TP1)"
   other: "the version page of the manufacturer does not name the model (TP1)"
   unsearched: "not among the 71 brands of TAX-59: no version page of the manufacturer looked for (TP1)"
+  taken: "the key of the publisher is that of another publisher in TAX (TK3); a key for the manufacturer is work for the maintainer"
 
 # The kinds of vehicle of the RDW (voertuigsoort) that are read, and how the round names them.
 # `since`: a vehicle first admitted before this year is left out (an old vehicle converted to
@@ -74,6 +83,8 @@ brands:
         series: true
         versions: 'https://www.skoda-auto.com/emobility/software-update'
         models: [Elroq, Enyaq, Enyaq Coupé]
+      - {name: Epiq, updates: 'https://www.skoda-storyboard.com/en/press-kits/skoda-epiq-press-kit-2/connectivity-intuitive-digital-services-and-seamless-vehicle-access/', models: [Epiq]}
+      - {name: Peaq, updates: 'https://www.skoda-storyboard.com/en/press-kits/skoda-peaq-press-kit-2/connectivity-vertical-infotainment-display-and-sonos-premiumsound-system-set-the-peaq-apart/', models: [Peaq]}
   Cupra:
     publisher: {key: cupra, name: CUPRA}
     products:
@@ -102,6 +113,9 @@ brands:
         series: true
         versions: 'https://www.xpeng.com/news/0198df0f0bb998ab5d958a02815f00a4'
         models: [G6, G9, G9L, P7, P7+, X9]
+      - {name: XPENG G7, updates: 'https://www.xiaopeng.com/g7.html', models: [G7]}
+      - {name: XPENG L03, updates: 'https://www.xpeng.com/model/L03', models: [L03]}
+      - {name: XPENG MONA M03, updates: 'https://www.xiaopeng.com/m03.html', models: [Mona M03]}
   Lotus:
     publisher: {key: lotus, name: Lotus}
     products:
@@ -130,6 +144,10 @@ brands:
     publisher: {key: zeekr, name: Zeekr}
     products:
       - {name: 7X, versions: 'https://www.zeekr.eu/ota/software-updatezeekr7x-15', models: [7X]}
+      - {name: Zeekr 001, updates: 'https://www.zeekr.eu/ota/softwareupdate-zeekr001-1-4', models: ['001']}
+      - {name: Zeekr 7GT, updates: 'https://press-be.zeekr.eu/de-zeekr-7gt-is-vanaf-vandaag-leverbaar', models: [7GT]}
+      - {name: Zeekr X, updates: 'https://www.zeekr.eu/en-nl/ota/software-update-zeekrx-1-4', models: [X]}
+      - {name: ZEEKR 009, updates: 'https://www.zeekrlife.com/en-au/posts/zeekr-009-receives-intelligence-upgrade-with-os-2-2-1-update/', models: ['009']}
   Hyundai:
     fueleconomy: [HYUNDAI MOTOR COMPANY]
     publisher: {key: hyundai, name: Hyundai}
@@ -138,6 +156,8 @@ brands:
       - {name: IONIQ 5 N, versions: *hyundai, models: [IONIQ 5 N]}
       - {name: IONIQ 6, versions: *hyundai, models: [IONIQ 6]}
       - {name: KONA Electric, versions: *hyundai, models: [KONA Electric]}
+      - {name: INSTER, updates: 'https://www.hyundai.com/nl/nl/over-the-air-updates/voertuigsoftware-updates.html', models: [INSTER]}
+      - {name: IONIQ 9, updates: 'https://www.hyundai.com/nl/nl/over-the-air-updates/voertuigsoftware-updates.html', models: [IONIQ 9]}
   Genesis:
     publisher: {key: genesis, name: Genesis}
     products:
@@ -156,13 +176,182 @@ brands:
     publisher: {key: changan, name: Changan}
     products:
       - {name: Deepal S05, versions: &changan 'https://www.changaneurope.com/uk/owners/software-and-updates/software-release-notes', models: [S05]}
-      - {name: Deepal S07, versions: *changan, models: [S07]}
-  # read, but the page names none of the brand's models in the sources
-  Honda: {apart: other}  # the page lists the Japanese models with Honda CONNECT; no Prologue, e:NP2 or e:NS2
-
-  # a page found that refuses our reader (16)
-  Audi: {apart: refuses}
-  BMW: {apart: refuses, rdw: [BMW I]}
+      - {name: Deepal S07, versions: *changan, models: [S07, Deepal S7]}  # the second name is how Open EV Data writes it (TAX-59, comment 12471)
+  # the manufacturer publishes no versions, but says on this page itself that the model gets updates
+  # (TP1, TAX-67): the product has `versions.published: false` and the page as `versions.updates`
+  Audi:
+    apart: refuses  # the models that no page names
+    publisher: {key: audi, name: Audi}
+    products:
+      - {name: A6 e-tron, updates: 'https://www.audi.com/en/press-releases/rethinking-the-upper-mid-size-segment-the-audi-a6-e-tron-sets-standards-in-design-and-range-16120', models: [A6 e-tron, S6]}
+      - {name: Q6 e-tron, updates: 'https://www.audi.com/en/the-audi-q6-e-tron-electric-mobility-on-a-new-level-15929/the-facts-15948', models: [Q6 e-tron, SQ6]}
+  BMW:
+    rdw: [BMW I]
+    apart: refuses  # the models that no page names
+    others: [iX1, iX2, iX3]
+    publisher: {key: bmw, name: BMW}
+    products:
+      - {name: BMW i4, updates: 'https://newsroom.bmwgroup.com/global/16-million-bmw-vehicles-in-88-countries-capable-of-over-the-air-updates/', models: [i4]}
+      - {name: BMW i5, updates: 'https://faq.bmwusa.com/s/article/Which-new-vehicles-will-come-equipped-from-the-factory-with-BMW-Operating-System-85-llQp6?language=en_US', models: [i5]}
+      - {name: BMW 7 Series, updates: 'https://faq.bmwusa.com/s/article/Which-new-vehicles-will-come-equipped-from-the-factory-with-BMW-Operating-System-85-llQp6?language=en_US', models: [i7]}
+      - {name: BMW iX, updates: 'https://faq.bmwusa.com/s/article/BMW-iX-from-032025-Technology-Software-upgrade-MY26-kw2OC?language=en_US', models: [iX]}
+  Porsche:
+    apart: none  # the models that no page names
+    publisher: {key: porsche, name: Porsche}
+    products:
+      - {name: Cayenne Electric, updates: 'https://ask.porsche.com/pr/en-PR/over-the-air-software-updates/', models: [Cayenne]}
+      - {name: Macan Electric, updates: 'https://ask.porsche.com/pr/en-PR/over-the-air-software-updates/', models: [Macan]}
+  Renault:
+    apart: none  # the models that no page names
+    publisher: {key: renault, name: Renault}
+    products:
+      - {name: Renault 4 E-Tech electric, updates: 'https://www.renault.co.uk/electric-vehicles/r4-e-tech-electric/technology-and-services.html', models: [4 E-Tech]}
+      - {name: Renault 5 E-Tech electric, updates: 'https://www.renault.co.uk/electric-vehicles/r5-e-tech-electric/technology-and-connectivity.html', models: [5 E-Tech]}
+      - {name: Megane E-Tech electric, updates: 'https://www.renault.co.uk/electric-vehicles/megane-electric/connected-services.html', models: [Megane E-Tech Electric]}
+      - {name: Scenic E-Tech electric, updates: 'https://renault.co.uk/electric-vehicles/scenic/connected-services.html', models: [Scenic E-Tech]}
+  Smart:
+    apart: refuses  # the models that no page names
+    publisher: {key: smart, name: smart}
+    products:
+      - {name: 'smart #1', updates: 'https://media.smart.com/en-CEU/260582-more-convenience-and-driving-pleasure-smart-delivers-sixth-free-over-the-air-update/', models: ['#1']}
+      - {name: 'smart #3', updates: 'https://media.smart.com/en-CEU/260582-more-convenience-and-driving-pleasure-smart-delivers-sixth-free-over-the-air-update/', models: ['#3']}
+      - {name: 'smart #5', updates: 'https://media.smart.com/en-CEU/270985-smart-5-ota-update-adds-apple-wallet-key-and-enhanced-safety-features/', models: ['#5']}
+  Acura:
+    apart: none  # the models that no page names
+    publisher: {key: acura, name: Acura}
+    products:
+      - {name: ZDX, updates: 'https://acuranews.com/en-US/releases/release-28a0418eb9f96c2502c6b994171bce2d-first-acura-ev-2024-zdx-marks-first-acura-integration-of-google-built-in-for-seamless-on-the-go-connectivity', models: [ZDX]}
+  Faraday Future:
+    apart: none  # the models that no page names
+    publisher: {key: faraday-future, name: Faraday Future}
+    products:
+      - {name: FF 91 2.0, updates: 'https://www.ff.com/us/press-room/FF-launches-the-ultimate-AI-luxury-FF91/', models: [FF 91]}
+  Honda:  # the page lists the Japanese models with Honda CONNECT; no Prologue, e:NP2 or e:NS2
+    apart: other  # the models that no page names
+    publisher: {key: honda, name: Honda}
+    products:
+      - {name: 'e:Ny1', updates: 'https://hondanews.eu/eu/lt/cars/media/pressreleases/442971/2023-honda-eny1-press-kit', models: ['e:Ny1']}
+  Karma Automotive:
+    apart: none  # the models that no page names
+    publisher: {key: karma, name: Karma}
+    products:
+      - {name: Revero, updates: 'https://portal.karmaautomotive.com/karmab2c/en/campaigns_revero', models: [Revero]}
+  Kia:
+    fueleconomy: [KIA]
+    apart: none  # the models that no page names
+    publisher: {key: kia, name: Kia}
+    products:
+      - {name: EV3, updates: 'https://www.kia.com/uk/owners/ota-controller-updates/', models: [EV3]}
+      - {name: EV4, updates: 'https://www.kia.com/uk/owners/ota-controller-updates/', models: [EV4]}
+      - {name: EV5, updates: 'https://www.kia.com/uk/owners/ota-controller-updates/', models: [EV5]}
+      - {name: EV6, updates: 'https://www.kia.com/uk/owners/ota-controller-updates/', models: [EV6]}
+      - {name: EV9, updates: 'https://www.kia.com/uk/owners/ota-controller-updates/', models: [EV9]}
+      - {name: PV5, updates: 'https://www.kia.com/uk/owners/ota-controller-updates/', models: [PV5]}
+  Mitsubishi:
+    fueleconomy: [MITSUBISHI MOTORS]
+    apart: none  # the models that no page names
+    publisher: {key: mitsubishi-motors, name: Mitsubishi Motors}
+    products:
+      - {name: Eclipse Cross, updates: 'https://www.mitsubishi-motors.com/en/newsroom/newsrelease/2025/20250918_2.html', models: [Eclipse Cross]}
+  Nissan:
+    fueleconomy: [NISSAN]
+    apart: none  # the models that no page names
+    publisher: {key: nissan, name: Nissan}
+    products:
+      - {name: ARIYA, updates: 'https://www.nissanusa.com/owners/connect/features-apps/over-the-air-update-capability.html', models: [Ariya]}
+  Rimac:
+    fueleconomy: [Bugatti Rimac]
+    apart: refuses  # the models that no page names
+    publisher: {key: rimac, name: Rimac}
+    products:
+      - {name: Nevera, updates: 'https://www.rimac-newsroom.com/press-releases/rimac-automobili/rimac-nevera-is-the-world-s-fastest-accelerating-production-car', models: [Nevera]}
+  Aiways:
+    publisher: {key: aiways, name: Aiways}
+    products:
+      - {name: Aiways U5, updates: 'https://ai-ways.eu/', models: [U5]}
+  BYD:
+    apart: none  # the models that no page names
+    publisher: {key: byd, name: BYD}
+    products:
+      - {name: BYD TANG, updates: 'https://www.byd.com/eu/electric-cars/tang', models: [Tang]}
+  GAC Aion:
+    apart: none  # the models that no page names
+    publisher: {key: gac, name: GAC}
+    products:
+      - {name: AION V, updates: 'https://www.gacgroup.com/en/news/article/aion-officially-launches-in-the-uk--accelerating-global-expansion-and-redefining-smart-mobility-in-europe-343', models: [Aion V]}
+  Geely:
+    apart: none  # the models that no page names
+    publisher: {key: geely, name: Geely}
+    products:
+      - {name: Geely EX5, updates: 'https://www.geely.com/en/news/2025/geely-ex5-global-sales-milestone', models: [EX5]}
+  IM Motors:
+    apart: none  # the models that no page names
+    publisher: {key: im, name: IM}
+    products:
+      - {name: IM LS6, updates: 'https://www.immotors.com/website/news_detail/196', models: [LS6]}
+  Li Auto:
+    publisher: {key: li-auto, name: Li Auto}
+    products:
+      - {name: Li i6, updates: 'https://www.lixiang.com/community/detail/article/2226827.html', models: [I6]}
+  MG Motor:
+    rdw: [MG]
+    apart: none  # the models that no page names
+    others: [S5]
+    publisher: {key: mg, name: MG}
+    products:
+      - {name: MG4, updates: 'https://news.mgmotor.eu/es/press/mg-ismart/', models: [MG4]}
+      - {name: MG5, updates: 'https://news.mgmotor.eu/es/press/mg-ismart/', models: [MG5]}
+  NIO:  # one car under two names, ES in China and EL in Europe: one product, the EL name an alias (TAX-59, comment 12471)
+    apart: none  # the models that no page names
+    publisher: {key: nio, name: NIO}
+    products:
+      - {name: ES6, series: true, updates: 'https://www.nio.com/es6', models: [ES6, EL6]}
+      - {name: ES7, series: true, updates: 'https://www.nio.com/es7', models: [ES7, EL7]}
+      - {name: NIO ES8, series: true, updates: 'https://www.nio.com/news/nio-announces-fota-availability-norway', models: [ES8, EL8]}
+      - {name: NIO ET5, updates: 'https://www.nio.com/news/nio-announces-expansion-german-dutch-danish-swedish-markets-european-launch-event', models: [ET5]}
+      - {name: NIO ET7, updates: 'https://www.nio.com/news/nio-announces-expansion-german-dutch-danish-swedish-markets-european-launch-event', models: [ET7]}
+      - {name: EC6, updates: 'https://www.nio.com/ec6', models: [EC6]}
+      - {name: EC7, updates: 'https://www.nio.com/ec7', models: [EC7]}
+      - {name: firefly, updates: 'https://www.firefly.world/news/20250917001', models: [Firefly]}
+  DAF:
+    publisher: {key: daf, name: DAF}
+    products:
+      - {name: DAF XD, updates: 'https://www.daf.com/en/news-and-media/news-articles/global/2024/daf-presents-a-full-suite-of-product-innovations-at-the-iaa-2024', models: [XD]}
+      - {name: DAF XF, updates: 'https://www.daf.com/en/news-and-media/news-articles/global/2024/daf-presents-a-full-suite-of-product-innovations-at-the-iaa-2024', models: [XF]}
+      - {name: DAF XG, updates: 'https://www.daf.com/en/news-and-media/news-articles/global/2024/daf-presents-a-full-suite-of-product-innovations-at-the-iaa-2024', models: [XG]}
+  Segway:
+    publisher: {key: segway, name: Segway}
+    products:
+      - {name: E110SE, updates: 'https://se-en.segway.com/escooter/products/e110se.html', models: [E110SE]}
+      - {name: E150S, updates: 'https://eu-en.segway.com/content/segway-ninebot/eu/en/segway/escooter/products/e150s.html', models: [E150S]}
+      - {name: E250S, updates: 'https://eu-en.segway.com/content/segway-ninebot/eu/en/segway/escooter/products/e250s.html', models: [E250S]}
+  STARK:
+    publisher: {key: stark, name: STARK}
+    products:
+      - {name: VARG, updates: 'https://starkfuture.com/products/stark-varg', models: [VARG]}
+  Alpine:
+    publisher: {key: alpine, name: Alpine}
+    products:
+      - {name: A290, updates: 'https://www.user-manual.alpinecars.com/en/electric-vehicle/charging-programming-1', models: [A290]}
+  Dacia:
+    apart: none  # the models that no page names
+    publisher: {key: dacia, name: Dacia}
+    products:
+      - {name: Spring, updates: 'https://www.user-manual.dacia.com/en/electric-vehicle/charging-programming-0', models: [Spring]}
+  Ford:
+    apart: none  # the models that no page names
+    publisher: {key: ford, name: Ford}
+    products:
+      - {name: E-Tourneo Courier, updates: 'https://www.ford.co.uk/cars/e-tourneo-courier', models: [E-Tourneo Courier]}
+      - {name: E-Transit Courier, updates: 'https://www.ford.co.uk/vans-and-pickups/all-new-e-transit-courier', models: [E-Transit Courier]}
+      - {name: Mustang Mach-E, updates: 'https://ford.co.uk/technology/software-updates', models: [Mustang Mach-E]}
+      - {name: Puma Gen-E, updates: 'https://www.ford.co.uk/cars/puma-gen-e', models: [Puma Gen-E, PUMA]}
+  JAECOO:
+    publisher: {key: jaecoo, name: JAECOO}
+    products:
+      - {name: JAECOO E5, updates: 'https://jaecoo.co.uk/jaecoo-5-ev', models: [JAECOO5]}  # the RDW writes JAECOO5
+  LiveWire: {apart: taken}  # its model gets updates (TAX-59, comment 12466), but `livewire` is the Livewire of PHP
+  # a page found that refuses our reader (12)
   Cadillac: {apart: refuses}
   Chevrolet: {apart: refuses}
   Citroën: {apart: refuses}
@@ -172,51 +361,33 @@ brands:
   Mercedes-Benz: {apart: refuses}
   Mini: {apart: refuses}
   Peugeot: {apart: refuses}
-  Rimac: {apart: refuses, fueleconomy: [Bugatti Rimac]}
   Rivian: {apart: refuses}
-  Smart: {apart: refuses}
   VinFast: {apart: refuses, fueleconomy: [Hai Phong manufacturing plant]}
   Volvo: {apart: refuses, fueleconomy: ["Volvo Cars of North America, LLC"]}
 
-  # only a general page, without versions (16)
+  # only a general page, without versions (8)
   Tesla: {apart: none, fueleconomy: [Tesla Motors]}
   Toyota: {apart: none, fueleconomy: [TOYOTA]}
-  Porsche: {apart: none}
-  Renault: {apart: none}
-  Nissan: {apart: none, fueleconomy: [NISSAN]}
-  Ford: {apart: none}
-  BYD: {apart: none}
-  Dacia: {apart: none}
   GWM: {apart: none}
-  Kia: {apart: none, fueleconomy: [KIA]}
   Subaru: {apart: none}
   Rolls-Royce: {apart: none, fueleconomy: [Rolls-Royce Motor Cars Limited]}
-  Acura: {apart: none}
   Dodge: {apart: none}
   GMC: {apart: none}
   Jeep: {apart: none}
 
-  # no page of the manufacturer found (25)
+  # no page of the manufacturer found (17)
   Automobili Pininfarina: {apart: none}
   Chery: {apart: none}
   Dongfeng: {apart: none}
   FangChengBao: {apart: none}
-  Faraday Future: {apart: none}
   Ferrari: {apart: none}
   Fiat: {apart: none, fueleconomy: [FIAT]}
-  GAC Aion: {apart: none}
-  Geely: {apart: none}
   HiPhi: {apart: none}
   Hongqi: {apart: none}
-  IM Motors: {apart: none}
-  Karma Automotive: {apart: none}
   Leapmotor: {apart: none}
   M-Hero: {apart: none}
   McLaren: {apart: none}
-  MG Motor: {apart: none, rdw: [MG]}
-  Mitsubishi: {apart: none, fueleconomy: [MITSUBISHI MOTORS]}
   Nammi: {apart: none}
-  NIO: {apart: none}
   Rising Auto: {apart: none}
   Roewe: {apart: none}
   Tata Motors: {apart: none}
