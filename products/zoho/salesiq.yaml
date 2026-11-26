@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Zoho.SalesIQ
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/SalesIQ
-aliases: []
+aliases:
+- zoho-salesiq/salesiq

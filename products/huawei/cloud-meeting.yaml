@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Huawei.HuaweiCloudMeeting
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiCloudMeeting
-aliases: []
+aliases:
+- huawei-technologies/huawei-cloud-meeting

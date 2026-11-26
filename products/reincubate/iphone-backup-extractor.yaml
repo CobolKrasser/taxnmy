@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ReincubateLtd.iPhoneBackupExtractorSetup
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/iPhoneBackupExtractorSetup
-aliases: []
+aliases:
+- reincubate-software/iphone-backup-extractor

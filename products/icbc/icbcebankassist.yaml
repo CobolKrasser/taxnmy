@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ICBC.ICBCEBankAssist
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ICBC/ICBCEBankAssist
-aliases: []
+aliases:
+- industrial-and-commercial-bank-of-china/icbcebankassist

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AudioCodes.INIViewerEditor
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/INIViewerEditor
-aliases: []
+aliases:
+- audiocodes-ltd-sharp-null/ini-viewer-and-editor

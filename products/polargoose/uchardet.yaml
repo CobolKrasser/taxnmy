@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: PolarGoose.uchardet
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/uchardet
-aliases: []
+aliases:
+- polargoose-freedesktop/uchardet

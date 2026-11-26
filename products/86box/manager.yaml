@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: 86Box.86BoxManager
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/8/86Box/86BoxManager
-aliases: []
+aliases:
+- 86box-project/86box-manager

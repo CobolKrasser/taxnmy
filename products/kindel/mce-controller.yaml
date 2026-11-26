@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kindel.mcec
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kindel/mcec
-aliases: []
+aliases:
+- kindel-systems/mce-controller

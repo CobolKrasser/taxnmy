@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Wondershare.DemoCreator
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/DemoCreator
-aliases: []
+aliases:
+- wondershare-software/wondershare-democreator

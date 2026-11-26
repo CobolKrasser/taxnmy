@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: loft-sh.vcluster
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/loft-sh/vcluster
-aliases: []
+aliases:
+- loft-sh/vcluster

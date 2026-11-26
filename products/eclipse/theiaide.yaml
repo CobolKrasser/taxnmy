@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EclipseFoundation.TheiaIDE
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/TheiaIDE
-aliases: []
+aliases:
+- eclipse-foundation/theiaide

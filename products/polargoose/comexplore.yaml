@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: PolarGoose.comexplore
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/comexplore
-aliases: []
+aliases:
+- polargoose-trieck/comexplore

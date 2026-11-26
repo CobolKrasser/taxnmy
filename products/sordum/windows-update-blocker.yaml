@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sordum.WindowsUpdateBlocker
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/WindowsUpdateBlocker
-aliases: []
+aliases:
+- sordum-org/windows-update-blocker

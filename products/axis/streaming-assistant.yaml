@@ -10,4 +10,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisStreamingAssistant/x64
 - winget: AXIS.AxisStreamingAssistant.x86
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisStreamingAssistant/x86
-aliases: []
+aliases:
+- axis-communications/axis-streaming-assistant

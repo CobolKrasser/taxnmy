@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ntwind.windowspace
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/windowspace
-aliases: []
+aliases:
+- ntwind-software/windowspace

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Snapmaker.Luban
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Snapmaker/Luban
-aliases: []
+aliases:
+- snapmaker-software-team/snapmaker-luban

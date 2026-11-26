@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ZWSOFT.NetworkLicenseManager
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/NetworkLicenseManager
-aliases: []
+aliases:
+- zwsoft-co-ltd-guangzhou/zwsoft-network-license-manager

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Baidu.DuMate
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/DuMate
-aliases: []
+aliases:
+- baidu-qianfan/dumate

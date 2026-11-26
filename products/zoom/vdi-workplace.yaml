@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Zoom.Zoom.VDI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/Zoom/VDI
-aliases: []
+aliases:
+- zoom-video-communications/zoom-vdi-workplace

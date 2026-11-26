@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: NirSoft.AlternateStreamView
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AlternateStreamView
-aliases: []
+aliases:
+- nir-sofer/alternatestreamview

@@ -10,4 +10,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOS
 - winget: BrowserOS.BrowserOSCLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BrowserOS/BrowserOSCLI
-aliases: []
+aliases:
+- browseros-software/browseros

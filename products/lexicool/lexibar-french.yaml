@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Lexicool.Lexibar.FR
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/FR
-aliases: []
+aliases:
+- lexicool-com/lexibar-french

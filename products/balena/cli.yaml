@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Balena.BalenaCLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/BalenaCLI
-aliases: []
+aliases:
+- balena-inc-https-balena-io/balena-cli

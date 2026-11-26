@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Chill-Astro.Lamina
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chill-Astro/Lamina
-aliases: []
+aliases:
+- chill-astro-software/lamina

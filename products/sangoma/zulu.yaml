@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Sangoma.Zulu
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/Zulu
-aliases: []
+aliases:
+- sangoma-technologies/zulu

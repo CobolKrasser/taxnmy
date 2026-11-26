@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sordum.ReIcon
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ReIcon
-aliases: []
+aliases:
+- sordum-team/restore-desktop-icon-layouts

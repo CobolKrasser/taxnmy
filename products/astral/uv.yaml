@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: astral-sh.uv
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv
-aliases: []
+aliases:
+- astral-software/uv

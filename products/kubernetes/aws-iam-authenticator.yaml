@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kubernetes.aws-iam-authenticator
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/aws-iam-authenticator
-aliases: []
+aliases:
+- the-kubernetes-authors/aws-iam-authenticator

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Jitsi.Meet
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Meet
-aliases: []
+aliases:
+- jitsi-team/jitsi-meet

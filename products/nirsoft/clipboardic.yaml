@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: NirSoft.Clipboardic
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/Clipboardic
-aliases: []
+aliases:
+- nir-sofer/clipboardic

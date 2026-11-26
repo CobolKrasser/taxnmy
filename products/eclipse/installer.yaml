@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EclipseFoundation.Eclipse.Inst
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Inst
-aliases: []
+aliases:
+- eclipse-foundation/eclipse-installer

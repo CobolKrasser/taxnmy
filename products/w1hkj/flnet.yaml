@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: w1hkj.flnet
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/w1hkj/flnet
-aliases: []
+aliases:
+- w1hkj-software/flnet

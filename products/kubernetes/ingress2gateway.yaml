@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kubernetes.ingress2gateway
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/ingress2gateway
-aliases: []
+aliases:
+- the-kubernetes-authors/ingress2gateway

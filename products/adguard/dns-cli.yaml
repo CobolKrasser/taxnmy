@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AdGuard.AdGuardDNSCLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardDNSCLI
-aliases: []
+aliases:
+- adguard-software/adguard-dns-cli

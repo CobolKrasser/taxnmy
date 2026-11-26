@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WiseCleaner.WiseToys
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseToys
-aliases: []
+aliases:
+- wisecleaner-com/wise-toys

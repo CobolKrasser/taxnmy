@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sikalabs.slu
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slu
-aliases: []
+aliases:
+- ondrej-sika-and-sikalabs/slu

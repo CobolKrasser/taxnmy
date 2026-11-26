@@ -8,4 +8,5 @@ versions:
 identifiers:
 - purl: pkg:maven/org.apache.derby/derby
   source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- org-apache-derby/derby

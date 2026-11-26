@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: UweSieber.USBDLM
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/USBDLM
-aliases: []
+aliases:
+- uwe-sieber-de/usb-drive-letter-manager

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kubernetes.kwokctl
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kwokctl
-aliases: []
+aliases:
+- the-kubernetes-authors/kwokctl

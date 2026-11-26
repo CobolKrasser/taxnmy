@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: w1hkj.flmsg
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/w1hkj/flmsg
-aliases: []
+aliases:
+- w1hkj-software/flmsg

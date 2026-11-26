@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: OnionShare.OnionShare
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OnionShare/OnionShare
-aliases: []
+aliases:
+- micah-lee-et-al/onionshare

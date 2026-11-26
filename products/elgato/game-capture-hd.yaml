@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Elgato.GameCapture.HD
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/GameCapture/HD
-aliases: []
+aliases:
+- elgato-systems/elgato-game-capture-hd

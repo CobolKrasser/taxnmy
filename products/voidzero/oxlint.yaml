@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: oxc-project.oxlint
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxc-project/oxlint
-aliases: []
+aliases:
+- voidzero-inc-and-contributors/oxlint

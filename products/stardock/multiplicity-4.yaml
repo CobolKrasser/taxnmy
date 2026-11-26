@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: StardockSystems.Multiplicity4
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/Multiplicity4
-aliases: []
+aliases:
+- stardock-systems/multiplicity-4

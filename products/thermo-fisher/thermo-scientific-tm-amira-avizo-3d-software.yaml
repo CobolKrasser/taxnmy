@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ThermoFisher.AmiraAvizo3D
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/ThermoFisher/AmiraAvizo3D
-aliases: []
+aliases:
+- thermo-fisher-scientific-inc-sharp-null/thermo-scientific-tm-amira-avizo-3d-software

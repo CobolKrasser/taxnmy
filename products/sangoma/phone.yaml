@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Sangoma.SangomaPhone
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sangoma/SangomaPhone
-aliases: []
+aliases:
+- sangoma-technologies/sangoma-phone

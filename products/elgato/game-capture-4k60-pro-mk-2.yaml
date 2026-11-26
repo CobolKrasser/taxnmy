@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Elgato.GameCapture.4K60ProMK2
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/GameCapture/4K60ProMK2
-aliases: []
+aliases:
+- elgato-systems/game-capture-4k60-pro-mk-2

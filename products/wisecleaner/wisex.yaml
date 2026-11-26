@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WiseCleaner.WiseX
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseX
-aliases: []
+aliases:
+- wisecleaner-com/wisex

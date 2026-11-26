@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EPSON.MyEpsonPortal
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/MyEpsonPortal
-aliases: []
+aliases:
+- seiko-epson/myepson-portal

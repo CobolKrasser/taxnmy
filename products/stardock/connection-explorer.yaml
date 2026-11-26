@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: StardockSystems.ConnectionExplorer
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/ConnectionExplorer
-aliases: []
+aliases:
+- stardock-systems/connection-explorer

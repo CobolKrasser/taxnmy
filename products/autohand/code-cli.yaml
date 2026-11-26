@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Autohand.AutohandCodeCLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Autohand/AutohandCodeCLI
-aliases: []
+aliases:
+- autohand-ai/autohand-code-cli

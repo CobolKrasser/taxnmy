@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EPSON.EpsonConnectPrinterSetup
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonConnectPrinterSetup
-aliases: []
+aliases:
+- seiko-epson/epson-connect-printer-setup

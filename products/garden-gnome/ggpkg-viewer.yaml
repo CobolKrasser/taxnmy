@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: GardenGnome.GGPKGViewer
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GardenGnome/GGPKGViewer
-aliases: []
+aliases:
+- garden-gnome-software/ggpkg-viewer

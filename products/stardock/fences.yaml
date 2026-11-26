@@ -10,4 +10,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Fences/4
 - winget: Stardock.Fences.5
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Fences/5
-aliases: []
+aliases:
+- stardock-software/stardock-fences

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sordum.NetDisabler
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/NetDisabler
-aliases: []
+aliases:
+- sordum-org/net-disabler

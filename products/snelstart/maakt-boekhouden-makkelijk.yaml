@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: SnelStart.SnelStart.EXE
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnelStart/SnelStart/EXE
-aliases: []
+aliases:
+- snelstart-software/snelstart-maakt-boekhouden-makkelijk

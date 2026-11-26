@@ -12,4 +12,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX2
 - winget: RobRich999.Chromium_Clang.AVX512
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RobRich999/Chromium_Clang/AVX512
-aliases: []
+aliases:
+- the-chromium-authors/chromium-installer

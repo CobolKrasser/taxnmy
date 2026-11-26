@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Stremio.StremioService
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stremio/StremioService
-aliases: []
+aliases:
+- smart-code-ood/stremio-service

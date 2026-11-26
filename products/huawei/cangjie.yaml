@@ -10,4 +10,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/LTS
 - winget: Huawei.Cangjie.STS
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/STS
-aliases: []
+aliases:
+- huawei-technologies/cangjie

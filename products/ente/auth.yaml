@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ente-io.auth-desktop
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/auth-desktop
-aliases: []
+aliases:
+- ente-io/ente-auth

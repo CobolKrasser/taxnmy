@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Rakudo.Rakudo.Star
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo/Star
-aliases: []
+aliases:
+- the-raku-community/rakudo-star

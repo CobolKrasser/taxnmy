@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Huawei.Cangjie.STS.OHOS
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/STS/OHOS
-aliases: []
+aliases:
+- huawei-technologies/cangjie-sts-ohos

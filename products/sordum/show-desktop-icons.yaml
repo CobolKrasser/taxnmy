@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sordum.ShowDesktopIcons
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ShowDesktopIcons
-aliases: []
+aliases:
+- sordum-org/show-desktop-icons

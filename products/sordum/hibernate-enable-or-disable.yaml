@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sordum.HibernateEnableOrDisable
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/HibernateEnableOrDisable
-aliases: []
+aliases:
+- sordum-team/hibernate-enable-or-disable

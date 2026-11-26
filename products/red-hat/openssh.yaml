@@ -8,4 +8,5 @@ versions:
 identifiers:
 - purl: pkg:rpm/rhel/openssh
   source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- rhel/openssh

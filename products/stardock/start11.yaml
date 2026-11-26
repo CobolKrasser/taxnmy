@@ -10,4 +10,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Start11/v1
 - winget: Stardock.Start11.v2
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Start11/v2
-aliases: []
+aliases:
+- stardock-software/stardock-start11

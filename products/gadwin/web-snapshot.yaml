@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Gadwin.WebSnapshot
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/WebSnapshot
-aliases: []
+aliases:
+- gadwin-systems/gadwin-web-snapshot

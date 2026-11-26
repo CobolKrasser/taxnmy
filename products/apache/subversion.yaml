@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:apache:subversion
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:apache:subversion&resultsPerPage=1
-aliases: []
+aliases:
+- the-apache-software-foundation/apache-subversion

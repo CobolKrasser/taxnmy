@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Mihomo-Party.Clash-Party
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mihomo-Party/Clash-Party
-aliases: []
+aliases:
+- mihomo-party-org/clash-party

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: MeinbergGlobal.DeviceManager
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/DeviceManager
-aliases: []
+aliases:
+- meinberg-funkuhren/meinberg-device-manager

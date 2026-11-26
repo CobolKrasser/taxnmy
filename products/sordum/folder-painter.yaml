@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: sordum.FolderPainter
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/FolderPainter
-aliases: []
+aliases:
+- sordum-team/folder-painter

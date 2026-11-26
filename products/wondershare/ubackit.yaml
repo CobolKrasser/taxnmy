@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Wondershare.UBackit
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/UBackit
-aliases: []
+aliases:
+- wondershare-technology/wondershare-ubackit

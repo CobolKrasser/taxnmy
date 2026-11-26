@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: StardockSystems.Fences6
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/Fences6
-aliases: []
+aliases:
+- stardock-systems/fences-6

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EclipseFoundation.Eclipse.Modeling
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Modeling
-aliases: []
+aliases:
+- eclipse-foundation/eclipse-modeling-tools

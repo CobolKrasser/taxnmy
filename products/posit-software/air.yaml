@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Posit.Air
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Air
-aliases: []
+aliases:
+- posit-software-pbc/air

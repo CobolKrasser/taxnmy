@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Maxthon.Maxthon
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxthon/Maxthon
-aliases: []
+aliases:
+- the-maxthon-authors/maxthon

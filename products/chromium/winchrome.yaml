@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: macchrome.winchrome
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macchrome/winchrome
-aliases: []
+aliases:
+- the-chromium-authors/winchrome

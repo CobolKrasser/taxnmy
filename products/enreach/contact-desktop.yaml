@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Enreach.Contact
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Enreach/Contact
-aliases: []
+aliases:
+- enreach-holding/enreach-contact-desktop

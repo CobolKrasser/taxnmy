@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Apache.Thrift
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Thrift
-aliases: []
+aliases:
+- the-apache-software-foundation/apache-thrift-compiler

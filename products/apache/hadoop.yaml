@@ -14,4 +14,5 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md
 - purl: pkg:maven/org.apache.hadoop/hadoop-core
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md
-aliases: []
+aliases:
+- the-apache-software-foundation/apache-hadoop

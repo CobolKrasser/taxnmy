@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EPSON.EpsonNetPrint
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetPrint
-aliases: []
+aliases:
+- seiko-epson/epsonnet-print

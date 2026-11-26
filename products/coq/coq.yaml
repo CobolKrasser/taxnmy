@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Coq.CoqPlatform
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform
-aliases: []
+aliases:
+- the-coq-team/coq

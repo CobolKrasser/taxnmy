@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: TeamSpeakSystems.TeamSpeakClient
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient
-aliases: []
+aliases:
+- teamspeak-systems/teamspeak-3-client

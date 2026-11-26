@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: LEGO.MindstormsEduEV3Classroom
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LEGO/MindstormsEduEV3Classroom
-aliases: []
+aliases:
+- lego-system/lego-mindstorms-education-ev3-classroom

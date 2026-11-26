@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: oxc-project.oxfmt
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxc-project/oxfmt
-aliases: []
+aliases:
+- voidzero-inc-and-contributors/oxfmt

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kubernetes.kubectl
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kubectl
-aliases: []
+aliases:
+- the-kubernetes-authors/kubernetes-cli

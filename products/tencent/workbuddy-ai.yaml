@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Tencent.WorkBuddy.Global
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WorkBuddy/Global
-aliases: []
+aliases:
+- tencent-technology-shenzhen/workbuddy-ai

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: NirSoft.ShortcutsMan
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ShortcutsMan
-aliases: []
+aliases:
+- nir-sofer/shortcutsman

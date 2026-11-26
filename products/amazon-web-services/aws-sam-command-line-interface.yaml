@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Amazon.SAM-CLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SAM-CLI
-aliases: []
+aliases:
+- aws-serverless-applications/aws-sam-command-line-interface

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ente-io.ente.CLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ente-io/ente/CLI
-aliases: []
+aliases:
+- ente-io/ente-cli

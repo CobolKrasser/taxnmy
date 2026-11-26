@@ -5,4 +5,5 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52kbd.release.b0.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52kbd.release.b0.firmware
-aliases: []
+aliases:
+- nordic/nrf-desktop-nrf52kbd-release-b0

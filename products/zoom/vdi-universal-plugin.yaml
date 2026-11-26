@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Zoom.ZoomVDIUniversalPlugin
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomVDIUniversalPlugin
-aliases: []
+aliases:
+- zoom-video-communications/zoom-vdi-universal-plugin

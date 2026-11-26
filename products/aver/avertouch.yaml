@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AVer.AVerTouch
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AVer/AVerTouch
-aliases: []
+aliases:
+- aver-information/avertouch

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: StardockSystems.DeskScapes2026
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/DeskScapes2026
-aliases: []
+aliases:
+- stardock-systems/deskscapes

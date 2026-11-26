@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EclipseFoundation.Eclipse.JEE
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/JEE
-aliases: []
+aliases:
+- eclipse-foundation/eclipse-ide-for-enterprise-java-and-web-developers

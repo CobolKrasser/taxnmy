@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: SnailDOS.Fifo
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/Fifo
-aliases: []
+aliases:
+- snaildos-team/fifo

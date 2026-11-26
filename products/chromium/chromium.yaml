@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Hibbiki.Chromium
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hibbiki/Chromium
-aliases: []
+aliases:
+- the-chromium-authors/chromium

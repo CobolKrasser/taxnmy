@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Elgato.StreamDeck
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/StreamDeck
-aliases: []
+aliases:
+- corsair-memory/elgato-stream-deck

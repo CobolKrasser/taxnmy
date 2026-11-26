@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Rustlang.Rustup
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rustup
-aliases: []
+aliases:
+- the-rust-programming-language/rustup-the-rust-toolchain-installer

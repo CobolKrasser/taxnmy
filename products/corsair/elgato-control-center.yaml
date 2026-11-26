@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Elgato.ControlCenter
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/ControlCenter
-aliases: []
+aliases:
+- corsair-memory/elgato-control-center

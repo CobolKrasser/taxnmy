@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: HP.HPCMSL
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/HP/HPCMSL
-aliases: []
+aliases:
+- hp-development/hp-client-management-script-library

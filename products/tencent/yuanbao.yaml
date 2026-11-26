@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Tencent.Yuanbao
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Yuanbao
-aliases: []
+aliases:
+- tencent-technology-shenzhen/tencent-yuanbao

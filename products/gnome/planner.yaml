@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: gnome.Planner
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Planner
-aliases: []
+aliases:
+- gnome-project/planner

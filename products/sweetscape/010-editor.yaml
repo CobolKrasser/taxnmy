@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: SweetScape.010Editor
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SweetScape/010Editor
-aliases: []
+aliases:
+- sweetscape-software/010-editor

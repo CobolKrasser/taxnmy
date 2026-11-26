@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EclipseFoundation.Mosquitto
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Mosquitto
-aliases: []
+aliases:
+- eclipse-foundation/eclipse-mosquitto-mqtt-broker

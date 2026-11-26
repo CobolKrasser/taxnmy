@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kensington.FingerprintApplication
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/FingerprintApplication
-aliases: []
+aliases:
+- kensington-computer-products-group/kensington-fingerprint-application

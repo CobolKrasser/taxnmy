@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: GillesVollantSoftware.WinImage
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GillesVollantSoftware/WinImage
-aliases: []
+aliases:
+- gilles-vollant-software/winimage

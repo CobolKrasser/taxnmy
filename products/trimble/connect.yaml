@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Trimble.TrimbleConnect
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/TrimbleConnect
-aliases: []
+aliases:
+- trimble-inc-and-affiliates/trimble-connect

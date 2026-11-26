@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Stardock.Groupy.v2
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Groupy/v2
-aliases: []
+aliases:
+- stardock-systems/groupy2

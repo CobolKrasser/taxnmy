@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Espressif.EIM-CLI
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Espressif/EIM-CLI
-aliases: []
+aliases:
+- espressif-systems/esp-idf-installation-manager-cli

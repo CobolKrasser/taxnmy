@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AXIS.AXISOptimizer
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AXISOptimizer
-aliases: []
+aliases:
+- axis-communications/axis-optimizer

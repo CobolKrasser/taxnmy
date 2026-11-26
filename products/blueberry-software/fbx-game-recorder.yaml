@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Blueberry.FBX
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FBX
-aliases: []
+aliases:
+- blueberry-software-uk/fbx-game-recorder

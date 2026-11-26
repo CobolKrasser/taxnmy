@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WiseCleaner.WiseVideoConverter
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseVideoConverter
-aliases: []
+aliases:
+- wisecleaner-com/wise-video-converter

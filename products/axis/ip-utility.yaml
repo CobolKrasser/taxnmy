@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AXIS.AxisIPUtility
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisIPUtility
-aliases: []
+aliases:
+- axis-communications/axis-ip-utility

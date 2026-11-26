@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EclipseFoundation.SUMO
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/SUMO
-aliases: []
+aliases:
+- eclipse-foundation/sumo

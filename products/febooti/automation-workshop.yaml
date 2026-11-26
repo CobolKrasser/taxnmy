@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Febooti.AutomationWorkshop
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/AutomationWorkshop
-aliases: []
+aliases:
+- febooti-software/febooti-automation-workshop

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: EPSON.ScanSmart
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/ScanSmart
-aliases: []
+aliases:
+- seiko-epson/epson-scansmart

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Oven-sh.Bun.BaselineProfile
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/BaselineProfile
-aliases: []
+aliases:
+- oven-sh/bun-baseline-profile

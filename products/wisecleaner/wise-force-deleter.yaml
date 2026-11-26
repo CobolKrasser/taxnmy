@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WiseCleaner.WiseForceDeleter
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseForceDeleter
-aliases: []
+aliases:
+- wisecleaner-com/wise-force-deleter

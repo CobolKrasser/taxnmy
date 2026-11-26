@@ -8,4 +8,5 @@ versions:
 identifiers:
 - purl: pkg:github/kubernetes-sigs/karpenter
   source: https://endoflife.date/karpenter
-aliases: []
+aliases:
+- the-kubernetes-authors/karpenter

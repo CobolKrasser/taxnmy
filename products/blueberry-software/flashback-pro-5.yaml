@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Blueberry.FlashBackPro
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FlashBackPro
-aliases: []
+aliases:
+- blueberry-software-uk/flashback-pro-5

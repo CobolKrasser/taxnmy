@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: PolarGoose.ClangFormat
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/ClangFormat
-aliases: []
+aliases:
+- polargoose-llvm/clangformat

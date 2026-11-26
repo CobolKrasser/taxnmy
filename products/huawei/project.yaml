@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Huawei.IdeaShareProject
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShareProject
-aliases: []
+aliases:
+- huawei-technologies/project

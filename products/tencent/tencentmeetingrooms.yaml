@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Tencent.TencentMeetingRooms
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentMeetingRooms
-aliases: []
+aliases:
+- tencent-technology-shenzhen/tencentmeetingrooms

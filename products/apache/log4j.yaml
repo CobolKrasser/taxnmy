@@ -12,4 +12,5 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/log4j.md
 - purl: pkg:maven/log4j/log4j
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/log4j.md
-aliases: []
+aliases:
+- the-apache-software-foundation/apache-log4j

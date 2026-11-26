@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: SMARTTechnologies.SMARTMirror
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTMirror
-aliases: []
+aliases:
+- smart-technologies-ulc/smart-mirror-app

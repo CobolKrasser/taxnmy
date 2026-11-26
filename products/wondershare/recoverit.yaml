@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Wondershare.Recoverit
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Recoverit
-aliases: []
+aliases:
+- wondershare-software/wondershare-recoverit

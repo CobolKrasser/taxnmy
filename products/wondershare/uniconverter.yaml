@@ -18,4 +18,5 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/UniConverter/17
 - winget: Wondershare.UniConverter.18
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/UniConverter/18
-aliases: []
+aliases:
+- wondershare-software/wondershare-uniconverter

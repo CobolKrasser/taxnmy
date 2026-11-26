@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: gnome.Glade
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Glade
-aliases: []
+aliases:
+- gnome-project/glade

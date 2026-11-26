@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Gadwin.GeForms
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/GeForms
-aliases: []
+aliases:
+- gadwin-systems/geforms

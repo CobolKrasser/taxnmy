@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ntwind.WinSnap
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/WinSnap
-aliases: []
+aliases:
+- ntwind-software/winsnap

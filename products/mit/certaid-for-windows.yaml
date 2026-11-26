@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: MIT.CertAid
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MIT/CertAid
-aliases: []
+aliases:
+- mit-is-and-t/certaid-for-windows

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Kubernetes.krew
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/krew
-aliases: []
+aliases:
+- the-kubernetes-authors/krew

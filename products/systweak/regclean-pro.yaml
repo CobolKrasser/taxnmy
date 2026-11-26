@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: SystweakSoftware.RegCleanPro
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/RegCleanPro
-aliases: []
+aliases:
+- systweak-software/regclean-pro

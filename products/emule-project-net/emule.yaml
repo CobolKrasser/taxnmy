@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: eMule.eMule
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule
-aliases: []
+aliases:
+- emule-project-net-sharp-null/emule

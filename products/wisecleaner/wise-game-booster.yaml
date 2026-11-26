@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WiseCleaner.WiseGameBooster
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseGameBooster
-aliases: []
+aliases:
+- wisecleaner-com/wise-game-booster

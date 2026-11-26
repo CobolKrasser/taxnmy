@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Apache.NetBeans
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/NetBeans
-aliases: []
+aliases:
+- the-apache-software-foundation/apache-netbeans-ide

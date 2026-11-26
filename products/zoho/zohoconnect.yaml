@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Zoho.Connect
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Connect
-aliases: []
+aliases:
+- zoho-connect/zohoconnect

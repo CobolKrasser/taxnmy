@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Apache.DirectoryStudio
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/DirectoryStudio
-aliases: []
+aliases:
+- the-apache-software-foundation/apache-directory-studio

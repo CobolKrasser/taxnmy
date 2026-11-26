@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WiseCleaner.WiseCare365
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseCare365
-aliases: []
+aliases:
+- wisecleaner-com/wise-care-365

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: SystweakSoftware.AdvancedDiskRecovery
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedDiskRecovery
-aliases: []
+aliases:
+- systweak-software/advanced-disk-recovery

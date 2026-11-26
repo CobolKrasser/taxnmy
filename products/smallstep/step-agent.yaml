@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Smallstep.step-agent
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smallstep/step-agent
-aliases: []
+aliases:
+- smallstep-labs/step-agent

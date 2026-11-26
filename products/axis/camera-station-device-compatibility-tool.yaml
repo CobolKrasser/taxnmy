@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AXIS.AxisDeviceCompatibilityTool
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisDeviceCompatibilityTool
-aliases: []
+aliases:
+- axis-communications/axis-camera-station-device-compatibility-tool

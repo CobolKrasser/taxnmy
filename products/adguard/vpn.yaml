@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: AdGuard.AdGuardVPN
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardVPN
-aliases: []
+aliases:
+- adguard-software/adguard-vpn

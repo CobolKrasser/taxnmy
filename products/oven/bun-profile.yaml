@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Oven-sh.Bun.Profile
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Profile
-aliases: []
+aliases:
+- oven-sh/bun-profile

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Cygwin.CygwinSetup
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/CygwinSetup
-aliases: []
+aliases:
+- cygwin-authors/cygwin-setup

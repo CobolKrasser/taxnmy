@@ -5,4 +5,5 @@ kind: device
 source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- b-and-r-industrial-automation/ppt30-operating-system

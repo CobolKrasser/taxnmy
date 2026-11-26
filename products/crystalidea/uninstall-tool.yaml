@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: CrystalIDEASoftware.UninstallTool
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/UninstallTool
-aliases: []
+aliases:
+- crystalidea-software/uninstall-tool

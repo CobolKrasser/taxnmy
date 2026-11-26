@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: PolarGoose.minisat
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/minisat
-aliases: []
+aliases:
+- polargoose-niklasso/minisat

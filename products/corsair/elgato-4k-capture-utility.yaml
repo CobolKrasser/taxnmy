@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Elgato.4KCaptureUtility
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/4KCaptureUtility
-aliases: []
+aliases:
+- corsair-memory/elgato-4k-capture-utility

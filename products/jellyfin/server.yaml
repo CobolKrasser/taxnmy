@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Jellyfin.Server
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/Server
-aliases: []
+aliases:
+- the-jellyfin-project/jellyfin-server

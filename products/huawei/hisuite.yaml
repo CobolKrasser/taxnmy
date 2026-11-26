@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: Huawei.HiSuite
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HiSuite
-aliases: []
+aliases:
+- huawei-technologies/hisuite

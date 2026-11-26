@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ntwind.AltTabTer
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/AltTabTer
-aliases: []
+aliases:
+- ntwind-software/alt-tab-terminator

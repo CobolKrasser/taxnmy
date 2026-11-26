@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: MSI.MSICenter
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MSI/MSICenter
-aliases: []
+aliases:
+- micro-star-international/msi-center-sdk-plus-app

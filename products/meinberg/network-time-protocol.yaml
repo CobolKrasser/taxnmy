@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: MeinbergGlobal.NTP
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/NTP
-aliases: []
+aliases:
+- meinberg-global/network-time-protocol

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: CrystalIDEASoftware.AnyToISO
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/AnyToISO
-aliases: []
+aliases:
+- crystalidea-software/anytoiso

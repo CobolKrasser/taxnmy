@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: ODA.ODAFileConverter
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/ODA/ODAFileConverter
-aliases: []
+aliases:
+- oda/odafileconverter
