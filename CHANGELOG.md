@@ -11,6 +11,21 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 3.0.0 — 2026-11-25
+
+- Product: `versions` takes one of two forms (rule TP1, TAX-67). Either `source`, the page where the
+  versions are published, as before; or `published: false` with `updates`, the page where the
+  publisher says itself that the product gets updates, for a product of which the publisher
+  publishes no versions. `published: false` marks such a product, so a reader sees it without
+  opening a source. A file holds exactly one of the two forms; the lint refuses a product with
+  neither.
+- When the publisher later publishes the versions, an ordinary change replaces `published` and
+  `updates` with `source`.
+- How a product is updated (over the air, by the driver, at a dealer) is not recorded: there is no
+  field for it (decision of the product owner, 25 November 2026).
+- Major: every existing file stays valid and unchanged, but `versions.source` is no longer present in
+  every file, so a reader that expects it must read `versions.published` first.
+
 ## 2.1.0 — 2026-11-20
 
 - Product: two new optional fields, `archived` and `resumed`, each with the `source` of the

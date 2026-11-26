@@ -73,9 +73,16 @@ def read(src: Source | None) -> bool:
     return src is not None and src.status.isdigit() and int(src.status) < 300 and bool(src.text.strip())
 
 
+def versions_page(product: dict):
+    """`versions.source`; for a product of which the publisher publishes no versions (TP1, TAX-67), the
+    page where the publisher says it gets updates (`versions.updates`)."""
+    versions = product.get("versions") or {}
+    return versions.get("source") or versions.get("updates")
+
+
 def sources_of(product: dict, publisher: dict) -> list[str]:
-    """Every source URL of the product, its versions, its codes and its publisher."""
-    urls = [product.get("source"), (product.get("versions") or {}).get("source")]
+    """Every source URL of the product, its versions (or its updates), its codes and its publisher."""
+    urls = [product.get("source"), versions_page(product)]
     urls += [i.get("source") for i in product.get("identifiers") or [] if isinstance(i, dict)]
     urls.append(publisher.get("source"))
     return [u for u in urls if isinstance(u, str)]
@@ -95,8 +102,8 @@ def ai_chat(product: dict, publisher: dict) -> dict | None:
 
 
 def same_owner(product: dict, publisher: dict) -> str | None:
-    """The owner of both `versions.source` and the publisher's `source`, or None."""
-    versions = (product.get("versions") or {}).get("source")
+    """The owner of both `versions.source` (or `versions.updates`) and the publisher's `source`, or None."""
+    versions = versions_page(product)
     pub_source = publisher.get("source")
     if not isinstance(versions, str) or not isinstance(pub_source, str):
         return None
@@ -107,12 +114,13 @@ def same_owner(product: dict, publisher: dict) -> str | None:
 def tr5(product: dict, publisher: dict, own: dict, new_publisher: bool) -> dict | None:
     """Yes only for a publisher TAX already holds, and a versions source that was read."""
     domain = same_owner(product, publisher)
-    src = own.get((product.get("versions") or {}).get("source"))
+    src = own.get(versions_page(product))
     if domain is None or new_publisher or not read(src):
         return None
     if src.final_url and owner(src.final_url) != domain:
         return None  # TAX-38: it ended on another domain, so it is no source on the publisher's domain
-    return judgment("yes", f"the versions are published on {domain}, the publisher's own domain, and were read")
+    what = "the versions are published" if (product.get("versions") or {}).get("source") else "the publisher says it gets updates"
+    return judgment("yes", f"{what} on {domain}, the publisher's own domain, and were read")
 
 
 def tr6(product: dict, publisher: dict, texts: dict) -> dict | None:

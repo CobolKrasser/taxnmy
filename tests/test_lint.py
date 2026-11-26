@@ -113,7 +113,41 @@ class LintTest(unittest.TestCase):
 
     def test_s1_missing_source_of_versions(self):
         self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("  source: https://www.synology.com/en-global/releaseNote/DSM\n", "  {}\n").replace("versions:\n  {}", "versions: {}"))
-        self.assertOnly("TE1", 6, contains="'source' is a required property")
+        self.assertOnly("TE1", 6, contains="needs `source`")
+
+    # TP1, TAX-67: a product of which the publisher publishes no versions, but says it gets updates
+    NO_VERSIONS = "versions:\n  published: false\n  updates: https://www.synology.com/en-global/support/updates\n"
+    WITH_VERSIONS = "versions:\n  source: https://www.synology.com/en-global/releaseNote/DSM\n"
+
+    def test_tp1_product_without_published_versions_passes(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(self.WITH_VERSIONS, self.NO_VERSIONS))
+        self.assertEqual(self.run_lint(), [])
+
+    def test_tp1_no_versions_needs_the_updates_page(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(self.WITH_VERSIONS, "versions:\n  published: false\n"))
+        self.assertOnly("TE1", 6, contains="needs `source`")
+
+    def test_tp1_updates_page_needs_the_mark(self):
+        """Without `published: false` a reader cannot see that no versions are published."""
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(
+            self.WITH_VERSIONS, "versions:\n  updates: https://www.synology.com/en-global/support/updates\n"))
+        self.assertOnly("TE1", 6, contains="needs `source`")
+
+    def test_tp1_published_true_is_not_a_form(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(
+            self.WITH_VERSIONS, "versions:\n  published: true\n  updates: https://www.synology.com/en-global/support/updates\n"))
+        self.assertOnly("TE1", 6, contains="needs `source`")
+
+    def test_tp1_versions_source_and_mark_together_fail(self):
+        """A version source ends the mark: a file does not hold both (TAX-67, point 5)."""
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(
+            self.WITH_VERSIONS, self.WITH_VERSIONS + "  published: false\n  updates: https://www.synology.com/en-global/support/updates\n"))
+        self.assertOnly("TE1", 6, contains="needs `source`")
+
+    def test_tp1_updates_page_is_checked_as_an_address(self):
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(
+            self.WITH_VERSIONS, "versions:\n  published: false\n  updates: https://192.168.1.10/updates\n"))
+        self.assertOnly("TE1", 8, contains="versions/updates")
 
     def test_s1_identifier_without_source(self):
         self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []", "identifiers:\n  - gtin: \"4711174724857\""))

@@ -97,16 +97,26 @@ def parse(rel: str, text: str, findings: list, lines: bool = True) -> Record | N
     return Record(rel, data, _line_map(node) if node is not None else {})
 
 
+# What a field that takes one of several forms needs, in words: the schema's own message ("is not valid
+# under any of the given schemas") does not say it.
+ONE_OF = {
+    "versions": "needs `source`, the page where the versions are published, or, when the publisher publishes no "
+                "versions (TP1, TAX-67), `published: false` with `updates`, the page where the publisher says "
+                "itself that the product gets updates; nothing else",
+}
+
+
 def check_schema(rec: Record, validator, findings: list) -> bool:
     errors = sorted(validator.iter_errors(rec.data), key=lambda e: list(map(str, e.absolute_path)))
     for err in errors:
         where = "/".join(map(str, err.absolute_path))
-        msg = f"{where}: {err.message}" if where else err.message
+        message = ONE_OF.get(where, err.message) if err.validator == "oneOf" else err.message
+        msg = f"{where}: {message}" if where else message
         findings.append(Finding(rec.file, rec.line(*err.absolute_path), "TE1", msg))
     return not errors
 
 
-URL_FIELDS = {"source", "url", "second_source"}  # the fields that hold a URL, wherever they are
+URL_FIELDS = {"source", "url", "second_source", "updates"}  # the fields that hold a URL, wherever they are
 
 
 def _urls(node, path=()):

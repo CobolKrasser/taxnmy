@@ -37,6 +37,15 @@ class GateTest(unittest.TestCase):
         p = product(versions={"source": "https://releases.other.example/widget-2"})
         self.assertNotIn("TP5", gate.decide(p, PUBLISHER, [page(p["versions"]["source"], "Firmware 1.0")], new_publisher=False))
 
+    def test_s5_with_the_updates_page_when_no_versions_are_published(self):
+        """TP1, TAX-67: without versions, the page where the publisher says the product gets updates counts."""
+        url = "https://support.acme.example/widget-2/updates"
+        p = product(versions={"published": False, "updates": url})
+        self.assertIn(url, gate.sources_of(p, PUBLISHER))
+        decided = gate.decide(p, PUBLISHER, [page(url, "Widget 2 gets updates over the air")], new_publisher=False)
+        self.assertEqual(decided["TP5"]["verdict"], "yes")
+        self.assertIn("says it gets updates", decided["TP5"]["reason"])
+
     def test_s5_only_when_the_versions_source_was_read(self):
         """TAX-24: a closed versions source shows nothing, wherever it is (G06)."""
         url = product()["versions"]["source"]

@@ -281,8 +281,12 @@ def moves(old: dict, new: dict) -> tuple[str, list[tuple[str, str, str]]]:
     if "publisher" in old and new.get("publisher") != old.get("publisher"):
         who = f"the publisher {old.get('publisher')!r} becomes {new.get('publisher')!r}"
     out = []
+    versions = lambda d: d.get("versions") if isinstance(d.get("versions"), dict) else {}  # noqa: E731
+    # The page of the versions, or of the updates when the publisher publishes no versions (TP1, TAX-67):
+    # a version source on the site of the updates page ends the mark with an ordinary change.
+    label = "versions.source" if versions(old).get("source") else "versions.updates"
     for label, get in (("source", lambda d: d.get("source")),
-                       ("versions.source", lambda d: (d.get("versions") or {}).get("source") if isinstance(d.get("versions"), dict) else None)):
+                       (label, lambda d: versions(d).get("source") or versions(d).get("updates"))):
         a, b = get(old), get(new)
         if isinstance(a, str) and a != b and _owners([a]) != _owners([b]):
             out.append((label, a, b if isinstance(b, str) else ""))

@@ -163,6 +163,14 @@ class ReplacedTest(unittest.TestCase):
         pub = {"key": "acme", "name": "Acme", "source": "https://acme.example/about"}
         self.assertTrue(guard.moves(pub, {**pub, "source": "https://acme.example.net/about"})[1])
 
+    def test_an_updates_page_moves_too(self):
+        """TP1, TAX-67: the page where the publisher says the product gets updates is a source like the others."""
+        old = {**self.OLD, "versions": {"published": False, "updates": "https://www.synology.com/en-global/support/updates"}}
+        moved = guard.moves(old, {**old, "versions": {"published": False, "updates": "https://www.synoloqy.com/updates"}})
+        self.assertEqual(moved[1][0][0], "versions.updates")
+        same = guard.moves(old, {**old, "versions": {"source": "https://www.synology.com/en-global/releaseNote/DSM"}})
+        self.assertEqual(same, ("", []), "a version source on the same site ends the mark with an ordinary change")
+
     def test_what_is_not_a_move(self):
         self.assertEqual(self.moves(), ("", []))
         self.assertEqual(self.moves(versions={"source": "https://www.synology.com/en-global/releaseNote/DSM"}), ("", []),

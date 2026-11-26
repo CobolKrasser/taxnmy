@@ -23,7 +23,7 @@ the AI. A code that another register gave a product is an **identifier**.
 
 | term | meaning |
 | --- | --- |
-| product | something that can receive updates, and of which a source publishes the versions (TP1) |
+| product | something that can receive updates, and of which a source publishes the versions, or of which the publisher says itself that it gets updates (TP1) |
 | publisher | whoever publishes the updates of a product (TP5). Not: the seller, the maker of the casing or the shop |
 | kind | device, operating system or software (TP2); in the schema `device`, `operating-system`, `software` |
 | device | a physical product that carries firmware. *Hardware* is not a term |
@@ -60,6 +60,7 @@ the AI. A code that another register gave a product is an **identifier**.
 | provenance | the source with a value |
 | product source | the page where the name and the kind of the product are; in the schema `source` |
 | versions source | the page where the versions of the product are published; in the schema `versions.source` |
+| updates page | for a product of which the publisher publishes no versions: the page where the publisher says itself that the product gets updates; in the schema `versions.updates`, with `versions.published: false` (TP1) |
 | publisher source | the page where the publisher uses its name; in the schema `source` |
 | machine-readable source | a file the publisher publishes for programs and not for people, in a fixed format: an update catalog, AppStream metadata, CSAF; in the schema `machine_sources` |
 | reliable source | a source of which the publisher wrote the value itself (TE3) |

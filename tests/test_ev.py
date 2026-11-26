@@ -9,6 +9,7 @@ import zipfile
 from pathlib import Path
 
 import yaml
+from collections import Counter
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "tools"))
@@ -180,14 +181,54 @@ class EvTest(unittest.TestCase):
 
     def test_the_list_of_the_repository(self):
         data = ev.load_list()
-        self.assertEqual(len(data["brands"]), 72, "the 71 brands of TAX-59 and Zero Motorcycles of the RDW prompt")
+        self.assertEqual(len(data["brands"]), 80, "the 71 brands of TAX-59, Zero Motorcycles of the RDW prompt and 8 "
+                                                  "brands of the RDW with a page that says a model gets updates (TAX-67)")
         counts = {r: sum(1 for b in data["brands"].values() if b.get("apart") == r) for r in data["reasons"]}
-        self.assertEqual(counts, {"refuses": 16, "none": 41, "other": 1, "unsearched": 0})
+        self.assertEqual(counts, {"refuses": 16, "none": 41, "other": 1, "unsearched": 0, "taken": 1})
         self.assertIn("Personenauto", data["rdw"]["kinds"])
+        pages = Counter()
         for brand, entry in data["brands"].items():
             for p in entry.get("products") or []:
-                self.assertTrue(p["versions"].startswith("https://"), brand)
+                self.assertTrue(ev.page_of(p).startswith("https://"), brand)
                 self.assertTrue(p["models"], brand)
+                pages["updates" if p.get("updates") else "versions"] += 1
+        self.assertEqual(pages["updates"], 69, "77 rows approved by the analyst: 1 apart (LiveWire), 7 another name or trim of a product")
+
+    def test_a_model_with_updates_but_no_versions(self):
+        """TP1, TAX-67: the manufacturer says the model gets updates, and publishes no versions."""
+        data = {**LIST, "brands": {**LIST["brands"],
+                                   "Nothing": {"apart": "none", "publisher": {"key": "nothing", "name": "Nothing"},
+                                               "products": [{"name": "N1", "updates": "https://nothing.example/n1/ota",
+                                                             "models": ["N1"]}]}}}
+        got = ev.run(self.oev, [self.fe], self.tmp / "out", self.root, data=data, write=True)
+        by = {(m.brand, m.name): m for m in got["models"]}
+        self.assertEqual(by[("Nothing", "N1")].product, "nothing/n1")
+        self.assertEqual((by[("Nothing", "N2")].outcome, by[("Nothing", "N2")].reason), ("apart", "no versions"),
+                         "the brand's reason for the models that no page names")
+        n1 = yaml.safe_load((self.root / "products/nothing/n1.yaml").read_text())
+        self.assertEqual((n1["source"], n1["versions"]), ("https://nothing.example/n1/ota",
+                                                          {"published": False, "updates": "https://nothing.example/n1/ota"}))
+        self.assertEqual(got["publishers"]["nothing"]["source"], "https://nothing.example/n1/ota")
+        self.assertIn("*updates* https://nothing.example/n1/ota", got["report"])
+        self.assertEqual([f for f in lint.lint(self.root) if f.level == "error"], [])
+
+    def test_a_product_has_either_versions_or_updates(self):
+        path = self.tmp / "ev.yaml"
+        for product in ({"name": "N1", "models": ["N1"]},
+                        {"name": "N1", "versions": "https://a.example/", "updates": "https://a.example/", "models": ["N1"]}):
+            path.write_text(yaml.safe_dump({**LIST, "brands": {"Nothing": {"publisher": {"key": "n", "name": "N"},
+                                                                           "products": [product]}}}))
+            with self.assertRaises(SystemExit):
+                ev.load_list(path)
+
+    def test_a_model_of_its_own_that_a_page_model_would_catch(self):
+        data = {**LIST, "brands": {**LIST["brands"], "Acme": {**LIST["brands"]["Acme"], "others": ["Volt 3 N"]}}}
+        data["brands"]["Acme"]["products"] = [p for p in LIST["brands"]["Acme"]["products"] if p["name"] != "Volt 3 N"]
+        got = ev.run(self.oev, [self.fe], self.tmp / "out", self.root, data=data)
+        by = {(m.brand, m.name): m for m in got["models"]}
+        self.assertEqual((by[("Acme", "Volt 3 N")].outcome, by[("Acme", "Volt 3 N")].reason),
+                         ("apart", "the page does not name the model"), "not a trim of Volt 3")
+        self.assertEqual(by[("Acme", "Volt 3")].rows, 3, "Volt 3 N is not among them")
 
     def test_the_rdw_gives_one_row_per_brand_trade_name_and_kind(self):
         rows = ev.read_rdw(self.rdw, LIST["rdw"]["kinds"])

@@ -6,7 +6,10 @@ source of the product and of its versions. The lint guards what goes in.
 
 The lists are Open EV Data (the JSON of a release), the FE Guide of fueleconomy.gov (the sheet EV of
 each model year, as .xlsx) and the open data of the RDW (`read_rdw`: the fully electric motor vehicles
-registered in the Netherlands, one row per brand, trade name and kind). A row of any list is a trim of
+registered in the Netherlands, one row per brand, trade name and kind). A model also comes in with a
+page of the manufacturer that says itself that the model gets updates, when it publishes no versions
+(TP1, TAX-67): the product then has `versions.published: false` and that page as `versions.updates`.
+A row of any list is a trim of
 a model: a drivetrain, a battery or a wheel size is a variant (TP3). A row belongs to the model of its brand whose words it all has, the
 longest first: on the version page of the brand (referee/ev.yaml), else in Open EV Data.
 
@@ -191,11 +194,12 @@ class Product:
     key: str
     publisher: str
     name: str
-    versions: str
+    versions: str  # the page: of the versions, or, with `updates`, where the manufacturer says the model gets updates
     series: bool
     models: list = field(default_factory=list)  # Model
     names: list = field(default_factory=list)  # the page's names of the models that came in
     existing: dict | None = None  # the file in TAX, for a series in TAX that gets a model as an alias
+    updates: bool = False  # the manufacturer publishes no versions, but says the model gets updates (TP1, TAX-67)
 
     def aliases(self) -> list[str]:
         out = list((self.existing or {}).get("aliases") or []) or [keyrule.long_form(self.key, self.name)]  # TAX-54
@@ -209,8 +213,9 @@ class Product:
     def text(self) -> str:
         if self.existing is not None:
             return yaml.safe_dump({**self.existing, "aliases": self.aliases()}, sort_keys=False, allow_unicode=True, width=200)
+        versions = {"published": False, "updates": self.versions} if self.updates else {"source": self.versions}
         data = {"key": self.key, "publisher": self.publisher, "name": self.name, "kind": "device",
-                "source": self.versions, "versions": {"source": self.versions}, "aliases": self.aliases()}
+                "source": self.versions, "versions": versions, "aliases": self.aliases()}
         return yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=200)
 
 
@@ -219,11 +224,19 @@ def load_list(path: Path = LIST) -> dict:
     if data.get("version") != 1:
         raise SystemExit(f"{path}: not version 1")
     for brand, entry in (data.get("brands") or {}).items():
-        if bool(entry.get("products")) == bool(entry.get("apart")):
-            raise SystemExit(f"{path}: {brand} needs either products or apart")
+        if not entry.get("products") and not entry.get("apart"):
+            raise SystemExit(f"{path}: {brand} needs products, apart or both")
         if entry.get("apart") and entry["apart"] not in data.get("reasons", {}):
             raise SystemExit(f"{path}: {brand}: unknown reason {entry['apart']!r}")
+        for p in entry.get("products") or []:
+            if bool(p.get("versions")) == bool(p.get("updates")):
+                raise SystemExit(f"{path}: {brand}: {p.get('name')!r} needs either versions or updates")
     return data
+
+
+def page_of(p: dict) -> str:
+    """The page of a product of referee/ev.yaml: its versions, or where the manufacturer says it gets updates."""
+    return p.get("versions") or p["updates"]
 
 
 def brand_of(data: dict) -> dict[str, str]:
@@ -257,10 +270,12 @@ def models_of(rows: list[Row], data: dict) -> tuple[list[Model], dict, list[Row]
         if r.source == RDW:  # a row of the RDW is fully electric: "G80" there is the "Electrified G80"
             have |= implied
         names = {n: p for p in products for n in p["models"]}
+        names.update({n: None for n in (data["brands"].get(brand) or {}).get("others") or []})  # a model of its own
         hit = best(names, have)
         if hit:
             name = hit
-            page[(brand, name)] = names[hit]
+            if names[hit]:
+                page[(brand, name)] = names[hit]
         elif r.source == OEV:
             name = r.model
         else:  # a carline or trade name: the model of Open EV Data it has, else its first word after the brand
@@ -305,12 +320,9 @@ def plan(rows: list[Row], root: Path = ROOT, data: dict | None = None) -> tuple[
         if entry is None:
             _set(m, "apart", data["reasons"]["unsearched"])
             continue
-        if entry.get("apart"):
-            _set(m, "apart", data["reasons"][entry["apart"]])
-            continue
         p = page.get((m.brand, keyrule.fold(m.name)))
-        if not p:
-            _set(m, "apart", data["reasons"]["other"])
+        if not p:  # `apart` of a brand with products: the reason for its models that no page names
+            _set(m, "apart", data["reasons"][entry.get("apart") or "other"])
             continue
         pub = entry["publisher"]["key"]
         key = f"{pub}/{keyrule.product_part(p['name'], pub)}"
@@ -320,7 +332,7 @@ def plan(rows: list[Row], root: Path = ROOT, data: dict | None = None) -> tuple[
                 alias = f"{pub}/{keyrule.product_part(m.name, pub)}"
                 if p.get("series") and alias not in tax.keys and have in tax.files:
                     # a model of a series in TAX that the series does not name yet: it becomes an alias
-                    prod = products.setdefault(have, Product(have, pub, p["name"], p["versions"], True,
+                    prod = products.setdefault(have, Product(have, pub, p["name"], page_of(p), True,
                                                              existing=tax.files[have]))
                     prod.models.append(m)
                     prod.names.append(m.name)
@@ -329,13 +341,14 @@ def plan(rows: list[Row], root: Path = ROOT, data: dict | None = None) -> tuple[
                     _set(m, "in-tax", "TAX has the key or the long form of its product", have)
                 break
         else:
-            prod = products.setdefault(key, Product(key, pub, p["name"], p["versions"], bool(p.get("series"))))
+            prod = products.setdefault(key, Product(key, pub, p["name"], page_of(p), bool(p.get("series")),
+                                                    updates=bool(p.get("updates"))))
             prod.models.append(m)
             if m.name not in prod.names:
                 prod.names.append(m.name)
             _set(m, "taken-in", "", key)
             if pub not in tax.publishers and pub not in publishers:
-                publishers[pub] = {"name": entry["publisher"]["name"], "source": p["versions"]}
+                publishers[pub] = {"name": entry["publisher"]["name"], "source": page_of(p)}
     return models, products, publishers, unknown
 
 
@@ -409,11 +422,12 @@ def report(models: list[Model], products: dict, publishers: dict, signals: list,
             reasons[(m.outcome, m.reason)].append(m)
     for (o, r), ms in sorted(reasons.items(), key=lambda x: (x[0][0], -len(x[1]))):
         out.append(f"| {o} | {r} | {len(ms)} | {len({m.brand for m in ms})} |")
-    out += ["", "Products:", "", "| key | name | models | aliases | versions |", "| --- | --- | --- | --- | --- |"]
+    out += ["", "Products (a page marked *updates*: the manufacturer publishes no versions, but says the model gets updates):",
+            "", "| key | name | models | aliases | page |", "| --- | --- | --- | --- | --- |"]
     for key, p in sorted(products.items()):
         mark = " (in TAX)" if p.existing is not None else ""
         out.append(f"| `{key}`{mark} | {p.name} | {', '.join(m.name for m in p.models)} | "
-                   f"{', '.join(f'`{a}`' for a in p.new_aliases()) or '-'} | {p.versions} |")
+                   f"{', '.join(f'`{a}`' for a in p.new_aliases()) or '-'} | {'*updates* ' if p.updates else ''}{p.versions} |")
     if dropped:
         out += ["", "Left out of the RDW: " + "; ".join(f"{n:,} {what}" for what, n in sorted(dropped.items())) + "."]
     if unknown:
