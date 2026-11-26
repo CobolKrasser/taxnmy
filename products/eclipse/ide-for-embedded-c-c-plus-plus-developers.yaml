@@ -1,0 +1,11 @@
+key: eclipse/ide-for-embedded-c-c-plus-plus-developers
+publisher: eclipse
+name: Eclipse IDE for Embedded C/C++ Developers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/EmbedCPP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/EmbedCPP
+identifiers:
+- winget: EclipseFoundation.Eclipse.EmbedCPP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/EmbedCPP
+aliases: []

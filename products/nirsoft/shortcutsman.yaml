@@ -1,0 +1,11 @@
+key: nirsoft/shortcutsman
+publisher: nirsoft
+name: ShortcutsMan
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ShortcutsMan
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ShortcutsMan
+identifiers:
+- winget: NirSoft.ShortcutsMan
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/ShortcutsMan
+aliases: []

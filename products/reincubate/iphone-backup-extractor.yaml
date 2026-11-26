@@ -1,0 +1,11 @@
+key: reincubate/iphone-backup-extractor
+publisher: reincubate
+name: iPhone Backup Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/iPhoneBackupExtractorSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/iPhoneBackupExtractorSetup
+identifiers:
+- winget: ReincubateLtd.iPhoneBackupExtractorSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/iPhoneBackupExtractorSetup
+aliases: []

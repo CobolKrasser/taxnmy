@@ -1,0 +1,11 @@
+key: verizon/cloud
+publisher: verizon
+name: Verizon Cloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verizon/VerizonCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verizon/VerizonCloud
+identifiers:
+- winget: Verizon.VerizonCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Verizon/VerizonCloud
+aliases: []

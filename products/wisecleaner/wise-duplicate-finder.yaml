@@ -1,0 +1,11 @@
+key: wisecleaner/wise-duplicate-finder
+publisher: wisecleaner
+name: Wise Duplicate Finder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDuplicateFinder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDuplicateFinder
+identifiers:
+- winget: WiseCleaner.WiseDuplicateFinder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDuplicateFinder
+aliases: []

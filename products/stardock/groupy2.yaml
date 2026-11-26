@@ -1,0 +1,11 @@
+key: stardock/groupy2
+publisher: stardock
+name: Groupy2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Groupy/v2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Groupy/v2
+identifiers:
+- winget: Stardock.Groupy.v2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Groupy/v2
+aliases: []

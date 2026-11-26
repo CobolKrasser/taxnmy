@@ -1,0 +1,11 @@
+key: kubernetes/kind
+publisher: kubernetes
+name: kind
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kind
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kind
+identifiers:
+- winget: Kubernetes.kind
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kind
+aliases: []

@@ -1,0 +1,11 @@
+key: smart-code/stremio-service
+publisher: smart-code
+name: Stremio Service
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stremio/StremioService
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stremio/StremioService
+identifiers:
+- winget: Stremio.StremioService
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stremio/StremioService
+aliases: []

@@ -1,0 +1,11 @@
+key: meinberg/device-manager
+publisher: meinberg
+name: Meinberg Device Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/DeviceManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/DeviceManager
+identifiers:
+- winget: MeinbergGlobal.DeviceManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/DeviceManager
+aliases: []

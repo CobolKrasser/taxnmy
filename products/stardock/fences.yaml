@@ -1,0 +1,13 @@
+key: stardock/fences
+publisher: stardock
+name: Stardock Fences
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Fences/4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Fences/4
+identifiers:
+- winget: Stardock.Fences.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Fences/4
+- winget: Stardock.Fences.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Fences/5
+aliases: []

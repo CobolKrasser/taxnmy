@@ -1,0 +1,11 @@
+key: jellyfin/ffmpeg
+publisher: jellyfin
+name: Jellyfin FFmpeg
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/FFmpeg
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/FFmpeg
+identifiers:
+- winget: Jellyfin.FFmpeg
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/FFmpeg
+aliases: []

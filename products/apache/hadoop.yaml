@@ -1,0 +1,17 @@
+key: apache/hadoop
+publisher: apache
+name: Apache Hadoop
+kind: software
+source: https://endoflife.date/apache-hadoop
+versions:
+  source: https://cwiki.apache.org/confluence/spaces/HADOOP/pages/89071895/Hadoop+Active+Release+Lines
+identifiers:
+- cpe: cpe:2.3:a:apache:hadoop
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md
+- cpe: cpe:2.3:a:cloudera:hadoop
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md
+- purl: pkg:github/apache/hadoop
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md
+- purl: pkg:maven/org.apache.hadoop/hadoop-core
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-hadoop.md
+aliases: []

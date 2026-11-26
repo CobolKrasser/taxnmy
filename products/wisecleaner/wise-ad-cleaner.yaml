@@ -1,0 +1,11 @@
+key: wisecleaner/wise-ad-cleaner
+publisher: wisecleaner
+name: Wise AD Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseADCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseADCleaner
+identifiers:
+- winget: WiseCleaner.WiseADCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseADCleaner
+aliases: []

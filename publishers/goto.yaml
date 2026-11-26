@@ -1,4 +1,5 @@
 key: goto
 name: GoTo
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GoTo/GoToAssistAgentDesktopConsole
-aliases: []
+aliases:
+- goto-group

@@ -1,0 +1,11 @@
+key: eclipse/ide-for-c-c-plus-plus-developers
+publisher: eclipse
+name: Eclipse IDE for C/C++ Developers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/CPP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/CPP
+identifiers:
+- winget: EclipseFoundation.Eclipse.CPP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/CPP
+aliases: []

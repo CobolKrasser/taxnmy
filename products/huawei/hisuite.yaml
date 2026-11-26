@@ -1,0 +1,11 @@
+key: huawei/hisuite
+publisher: huawei
+name: HiSuite
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HiSuite
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HiSuite
+identifiers:
+- winget: Huawei.HiSuite
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HiSuite
+aliases: []

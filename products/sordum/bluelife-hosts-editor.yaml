@@ -1,0 +1,11 @@
+key: sordum/bluelife-hosts-editor
+publisher: sordum
+name: BlueLife Hosts Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/BlueLifeHostsEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/BlueLifeHostsEditor
+identifiers:
+- winget: sordum.BlueLifeHostsEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/BlueLifeHostsEditor
+aliases: []

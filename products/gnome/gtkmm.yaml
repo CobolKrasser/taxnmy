@@ -1,0 +1,11 @@
+key: gnome/gtkmm
+publisher: gnome
+name: gtkmm
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gtkmm
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gtkmm
+identifiers:
+- winget: gnome.gtkmm
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/gtkmm
+aliases: []

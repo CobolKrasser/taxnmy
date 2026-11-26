@@ -1,0 +1,11 @@
+key: wisecleaner/wise-video-converter
+publisher: wisecleaner
+name: Wise Video Converter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseVideoConverter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseVideoConverter
+identifiers:
+- winget: WiseCleaner.WiseVideoConverter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseVideoConverter
+aliases: []

@@ -1,0 +1,11 @@
+key: epson/epsonnet-config-portable
+publisher: epson
+name: EpsonNet Config Portable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetConfig/Portable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetConfig/Portable
+identifiers:
+- winget: EPSON.EpsonNetConfig.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetConfig/Portable
+aliases: []

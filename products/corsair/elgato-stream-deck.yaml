@@ -1,0 +1,11 @@
+key: corsair/elgato-stream-deck
+publisher: corsair
+name: Elgato Stream Deck
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/StreamDeck
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/StreamDeck
+identifiers:
+- winget: Elgato.StreamDeck
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/StreamDeck
+aliases: []

@@ -1,0 +1,11 @@
+key: epson/event-manager
+publisher: epson
+name: Epson Event Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EventManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EventManager
+identifiers:
+- winget: EPSON.EventManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EventManager
+aliases: []

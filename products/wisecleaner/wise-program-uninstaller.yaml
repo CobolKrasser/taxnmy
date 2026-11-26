@@ -1,0 +1,11 @@
+key: wisecleaner/wise-program-uninstaller
+publisher: wisecleaner
+name: Wise Program Uninstaller
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseProgramUninstaller
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseProgramUninstaller
+identifiers:
+- winget: WiseCleaner.WiseProgramUninstaller
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseProgramUninstaller
+aliases: []

@@ -1,0 +1,11 @@
+key: zoho/salesiq
+publisher: zoho
+name: SalesIQ
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/SalesIQ
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/SalesIQ
+identifiers:
+- winget: Zoho.SalesIQ
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/SalesIQ
+aliases: []

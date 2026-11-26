@@ -1,0 +1,11 @@
+key: ntwind/winsnap
+publisher: ntwind
+name: WinSnap
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/WinSnap
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/WinSnap
+identifiers:
+- winget: ntwind.WinSnap
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/WinSnap
+aliases: []

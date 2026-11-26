@@ -1,0 +1,13 @@
+key: axis/streaming-assistant
+publisher: axis
+name: AXIS Streaming Assistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisStreamingAssistant/x64
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisStreamingAssistant/x64
+identifiers:
+- winget: AXIS.AxisStreamingAssistant.x64
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisStreamingAssistant/x64
+- winget: AXIS.AxisStreamingAssistant.x86
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisStreamingAssistant/x86
+aliases: []

@@ -1,0 +1,9 @@
+key: apache/hugegraph-server
+publisher: apache
+name: HugeGraph-Server
+kind: software
+source: https://hugegraph.apache.org/docs/quickstart/hugegraph/hugegraph-server/
+versions:
+  source: https://hugegraph.apache.org/docs/download/download/
+aliases:
+- the-apache-software-foundation/apache-hugegraph-server

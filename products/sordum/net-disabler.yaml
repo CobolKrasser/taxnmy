@@ -1,0 +1,11 @@
+key: sordum/net-disabler
+publisher: sordum
+name: Net Disabler
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/NetDisabler
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/NetDisabler
+identifiers:
+- winget: sordum.NetDisabler
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/NetDisabler
+aliases: []

@@ -1,0 +1,11 @@
+key: rust/mdbook
+publisher: rust
+name: mdBook
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/mdBook
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/mdBook
+identifiers:
+- winget: Rustlang.mdBook
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/mdBook
+aliases: []

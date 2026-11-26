@@ -1,0 +1,11 @@
+key: sordum/hibernate-enable-or-disable
+publisher: sordum
+name: Hibernate Enable or Disable
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/HibernateEnableOrDisable
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/HibernateEnableOrDisable
+identifiers:
+- winget: sordum.HibernateEnableOrDisable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/HibernateEnableOrDisable
+aliases: []

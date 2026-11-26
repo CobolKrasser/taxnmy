@@ -1,0 +1,11 @@
+key: audiocodes/sbc-configuration-wizard
+publisher: audiocodes
+name: SBC Configuration Wizard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/SBCConfigurationWizard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/SBCConfigurationWizard
+identifiers:
+- winget: AudioCodes.SBCConfigurationWizard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/SBCConfigurationWizard
+aliases: []

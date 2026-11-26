@@ -1,0 +1,11 @@
+key: maxon/app-installer
+publisher: maxon
+name: Maxon App Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/MaxonApp
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/MaxonApp
+identifiers:
+- winget: Maxon.MaxonApp
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Maxon/MaxonApp
+aliases: []

@@ -1,0 +1,11 @@
+key: wisecleaner/wise-toys
+publisher: wisecleaner
+name: Wise Toys
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseToys
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseToys
+identifiers:
+- winget: WiseCleaner.WiseToys
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseToys
+aliases: []

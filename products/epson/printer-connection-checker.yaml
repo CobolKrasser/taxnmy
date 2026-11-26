@@ -1,0 +1,11 @@
+key: epson/printer-connection-checker
+publisher: epson
+name: Epson Printer Connection Checker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PrinterConnectionChecker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PrinterConnectionChecker
+identifiers:
+- winget: EPSON.PrinterConnectionChecker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/PrinterConnectionChecker
+aliases: []

@@ -1,0 +1,11 @@
+key: wisecleaner/wise-jetsearch
+publisher: wisecleaner
+name: Wise JetSearch
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseJetSearch
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseJetSearch
+identifiers:
+- winget: WiseCleaner.WiseJetSearch
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseJetSearch
+aliases: []

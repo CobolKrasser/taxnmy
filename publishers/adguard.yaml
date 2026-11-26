@@ -1,4 +1,5 @@
 key: adguard
 name: AdGuard
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardHome
-aliases: []
+aliases:
+- adguard-software

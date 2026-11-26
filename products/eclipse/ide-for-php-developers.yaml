@@ -1,0 +1,11 @@
+key: eclipse/ide-for-php-developers
+publisher: eclipse
+name: Eclipse IDE for PHP Developers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/PHP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/PHP
+identifiers:
+- winget: EclipseFoundation.Eclipse.PHP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/PHP
+aliases: []

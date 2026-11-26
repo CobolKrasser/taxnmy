@@ -1,0 +1,11 @@
+key: carnegie-mellon-university/clan
+publisher: carnegie-mellon-university
+name: CLAN
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMU/CLAN
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMU/CLAN
+identifiers:
+- winget: CMU.CLAN
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CMU/CLAN
+aliases: []

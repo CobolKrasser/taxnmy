@@ -1,0 +1,11 @@
+key: huawei/project
+publisher: huawei
+name: Project
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShareProject
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShareProject
+identifiers:
+- winget: Huawei.IdeaShareProject
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShareProject
+aliases: []

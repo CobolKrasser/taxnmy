@@ -1,0 +1,11 @@
+key: adguard/dns-cli
+publisher: adguard
+name: AdGuard DNS CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardDNSCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardDNSCLI
+identifiers:
+- winget: AdGuard.AdGuardDNSCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardDNSCLI
+aliases: []

@@ -1,0 +1,11 @@
+key: reincubate/dmg-extractor
+publisher: reincubate
+name: DMG Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/DMGExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/DMGExtractor
+identifiers:
+- winget: ReincubateLtd.DMGExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/DMGExtractor
+aliases: []

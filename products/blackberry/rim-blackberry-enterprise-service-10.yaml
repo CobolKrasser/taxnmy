@@ -1,0 +1,12 @@
+key: blackberry/rim-blackberry-enterprise-service-10
+publisher: blackberry
+name: RIM BlackBerry Enterprise Service 10
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:rim:blackberry_enterprise_service
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- rim/rim-blackberry-enterprise-service-10

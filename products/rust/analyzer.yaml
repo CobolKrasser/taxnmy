@@ -1,0 +1,11 @@
+key: rust/analyzer
+publisher: rust
+name: rust-analyzer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/rust-analyzer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/rust-analyzer
+identifiers:
+- winget: Rustlang.rust-analyzer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/rust-analyzer
+aliases: []

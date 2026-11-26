@@ -1,4 +1,5 @@
 key: balena
 name: Balena Ltd.
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/Etcher
-aliases: []
+aliases:
+- balena-inc-https-balena-io

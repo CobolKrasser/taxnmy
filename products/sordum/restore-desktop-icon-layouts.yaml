@@ -1,0 +1,11 @@
+key: sordum/restore-desktop-icon-layouts
+publisher: sordum
+name: Restore Desktop Icon Layouts
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ReIcon
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ReIcon
+identifiers:
+- winget: sordum.ReIcon
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ReIcon
+aliases: []

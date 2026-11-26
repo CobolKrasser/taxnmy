@@ -1,0 +1,11 @@
+key: eclipse/sumo
+publisher: eclipse
+name: SUMO
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/SUMO
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/SUMO
+identifiers:
+- winget: EclipseFoundation.SUMO
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/SUMO
+aliases: []

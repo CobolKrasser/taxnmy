@@ -1,0 +1,11 @@
+key: wisecleaner/wise-folder-hider
+publisher: wisecleaner
+name: Wise Folder Hider
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseFolderHider
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseFolderHider
+identifiers:
+- winget: WiseCleaner.WiseFolderHider
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseFolderHider
+aliases: []

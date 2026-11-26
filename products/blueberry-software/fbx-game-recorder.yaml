@@ -1,0 +1,11 @@
+key: blueberry-software/fbx-game-recorder
+publisher: blueberry-software
+name: FBX Game Recorder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FBX
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FBX
+identifiers:
+- winget: Blueberry.FBX
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Blueberry/FBX
+aliases: []

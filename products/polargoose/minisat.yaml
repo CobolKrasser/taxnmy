@@ -1,0 +1,11 @@
+key: polargoose/minisat
+publisher: polargoose
+name: minisat
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/minisat
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/minisat
+identifiers:
+- winget: PolarGoose.minisat
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/minisat
+aliases: []

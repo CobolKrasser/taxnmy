@@ -1,0 +1,11 @@
+key: wisecleaner/wise-force-deleter
+publisher: wisecleaner
+name: Wise Force Deleter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseForceDeleter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseForceDeleter
+identifiers:
+- winget: WiseCleaner.WiseForceDeleter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseForceDeleter
+aliases: []

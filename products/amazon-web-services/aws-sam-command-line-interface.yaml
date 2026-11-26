@@ -1,0 +1,11 @@
+key: amazon-web-services/aws-sam-command-line-interface
+publisher: amazon-web-services
+name: AWS SAM Command Line Interface
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SAM-CLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SAM-CLI
+identifiers:
+- winget: Amazon.SAM-CLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/SAM-CLI
+aliases: []

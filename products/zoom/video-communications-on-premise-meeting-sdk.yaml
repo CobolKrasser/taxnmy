@@ -1,0 +1,12 @@
+key: zoom/video-communications-on-premise-meeting-sdk
+publisher: zoom
+name: Zoom Video Communications On-Premise Meeting SDK
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:zoom:on_premise
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- zoom-video-communications/zoom-video-communications-on-premise-meeting-sdk

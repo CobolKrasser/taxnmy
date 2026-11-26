@@ -1,0 +1,11 @@
+key: coq/coq
+publisher: coq
+name: Coq
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform
+identifiers:
+- winget: Coq.CoqPlatform
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coq/CoqPlatform
+aliases: []

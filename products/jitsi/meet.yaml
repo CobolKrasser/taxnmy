@@ -1,0 +1,11 @@
+key: jitsi/meet
+publisher: jitsi
+name: Jitsi Meet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Meet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Meet
+identifiers:
+- winget: Jitsi.Meet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jitsi/Meet
+aliases: []

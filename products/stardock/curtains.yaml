@@ -1,0 +1,11 @@
+key: stardock/curtains
+publisher: stardock
+name: Stardock Curtains
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Curtains
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Curtains
+identifiers:
+- winget: Stardock.Curtains
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stardock/Curtains
+aliases: []

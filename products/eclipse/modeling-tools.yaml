@@ -1,0 +1,11 @@
+key: eclipse/modeling-tools
+publisher: eclipse
+name: Eclipse Modeling Tools
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Modeling
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Modeling
+identifiers:
+- winget: EclipseFoundation.Eclipse.Modeling
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Modeling
+aliases: []

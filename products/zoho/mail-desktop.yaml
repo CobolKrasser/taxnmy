@@ -1,0 +1,12 @@
+key: zoho/mail-desktop
+publisher: zoho
+name: Zoho Mail - Desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Mail
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Mail
+identifiers:
+- winget: Zoho.Mail
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoho/Mail
+aliases:
+- zoho-mail/zoho-mail-desktop

@@ -1,0 +1,11 @@
+key: stanford-university/chuck
+publisher: stanford-university
+name: ChucK
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCRMA/ChucK
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCRMA/ChucK
+identifiers:
+- winget: CCRMA.ChucK
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CCRMA/ChucK
+aliases: []

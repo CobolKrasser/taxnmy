@@ -1,0 +1,12 @@
+key: systweak/software-updater
+publisher: systweak
+name: Systweak Software Updater
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/SystweakSoftwareUpdater
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/SystweakSoftwareUpdater
+identifiers:
+- winget: SystweakSoftware.SystweakSoftwareUpdater
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/SystweakSoftwareUpdater
+aliases:
+- systweak-software/systweak-software-updater

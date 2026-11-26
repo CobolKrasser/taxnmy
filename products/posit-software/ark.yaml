@@ -1,0 +1,11 @@
+key: posit-software/ark
+publisher: posit-software
+name: Ark
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Ark
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Ark
+identifiers:
+- winget: Posit.Ark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Ark
+aliases: []

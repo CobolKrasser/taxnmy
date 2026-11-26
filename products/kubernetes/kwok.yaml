@@ -1,0 +1,11 @@
+key: kubernetes/kwok
+publisher: kubernetes
+name: kwok
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kwok
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kwok
+identifiers:
+- winget: Kubernetes.kwok
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kwok
+aliases: []

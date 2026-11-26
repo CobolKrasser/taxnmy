@@ -1,0 +1,11 @@
+key: chocolatey/chocolatey
+publisher: chocolatey
+name: Chocolatey
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/Chocolatey
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/Chocolatey
+identifiers:
+- winget: Chocolatey.Chocolatey
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/Chocolatey
+aliases: []

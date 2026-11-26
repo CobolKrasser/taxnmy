@@ -1,0 +1,11 @@
+key: febooti/automation-workshop
+publisher: febooti
+name: Febooti Automation Workshop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/AutomationWorkshop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/AutomationWorkshop
+identifiers:
+- winget: Febooti.AutomationWorkshop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/AutomationWorkshop
+aliases: []

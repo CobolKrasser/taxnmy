@@ -1,0 +1,11 @@
+key: huawei/cangjie-sts-android
+publisher: huawei
+name: Cangjie (STS) Android
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/STS/Android
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/STS/Android
+identifiers:
+- winget: Huawei.Cangjie.STS.Android
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/Cangjie/STS/Android
+aliases: []

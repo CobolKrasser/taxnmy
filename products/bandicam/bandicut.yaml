@@ -1,0 +1,11 @@
+key: bandicam/bandicut
+publisher: bandicam
+name: Bandicut
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/Bandicut
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/Bandicut
+identifiers:
+- winget: BandicamCompany.Bandicut
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BandicamCompany/Bandicut
+aliases: []

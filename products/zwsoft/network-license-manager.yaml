@@ -1,0 +1,11 @@
+key: zwsoft/network-license-manager
+publisher: zwsoft
+name: ZWSOFT Network License Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/NetworkLicenseManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/NetworkLicenseManager
+identifiers:
+- winget: ZWSOFT.NetworkLicenseManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZWSOFT/NetworkLicenseManager
+aliases: []

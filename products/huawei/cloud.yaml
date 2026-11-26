@@ -1,0 +1,11 @@
+key: huawei/cloud
+publisher: huawei
+name: Cloud
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiMobileCloud
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiMobileCloud
+identifiers:
+- winget: Huawei.HuaweiMobileCloud
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiMobileCloud
+aliases: []

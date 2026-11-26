@@ -1,0 +1,11 @@
+key: reincubate/blackberry-backup-extractor
+publisher: reincubate
+name: BlackBerry Backup Extractor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/BlackBerryBackupExtractor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/BlackBerryBackupExtractor
+identifiers:
+- winget: ReincubateLtd.BlackBerryBackupExtractor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ReincubateLtd/BlackBerryBackupExtractor
+aliases: []

@@ -1,0 +1,11 @@
+key: axis/camera-station-device-compatibility-tool
+publisher: axis
+name: AXIS Camera Station Device Compatibility Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisDeviceCompatibilityTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisDeviceCompatibilityTool
+identifiers:
+- winget: AXIS.AxisDeviceCompatibilityTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisDeviceCompatibilityTool
+aliases: []

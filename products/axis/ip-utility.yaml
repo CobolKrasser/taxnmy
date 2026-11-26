@@ -1,0 +1,11 @@
+key: axis/ip-utility
+publisher: axis
+name: AXIS IP Utility
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisIPUtility
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisIPUtility
+identifiers:
+- winget: AXIS.AxisIPUtility
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AxisIPUtility
+aliases: []

@@ -1,0 +1,11 @@
+key: logitech/camera-settings
+publisher: logitech
+name: Logitech Camera Settings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/CameraSettings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/CameraSettings
+identifiers:
+- winget: Logitech.CameraSettings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/CameraSettings
+aliases: []

@@ -1,0 +1,11 @@
+key: systweak/advanced-system-optimizer
+publisher: systweak
+name: Advanced System Optimizer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedSystemOptimizer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedSystemOptimizer
+identifiers:
+- winget: SystweakSoftware.AdvancedSystemOptimizer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedSystemOptimizer
+aliases: []

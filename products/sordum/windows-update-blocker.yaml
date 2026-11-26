@@ -1,0 +1,11 @@
+key: sordum/windows-update-blocker
+publisher: sordum
+name: Windows Update Blocker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/WindowsUpdateBlocker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/WindowsUpdateBlocker
+identifiers:
+- winget: sordum.WindowsUpdateBlocker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/WindowsUpdateBlocker
+aliases: []

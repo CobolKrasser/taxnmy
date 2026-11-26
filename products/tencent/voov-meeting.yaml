@@ -1,0 +1,11 @@
+key: tencent/voov-meeting
+publisher: tencent
+name: VooV Meeting
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/VooVMeeting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/VooVMeeting
+identifiers:
+- winget: Tencent.VooVMeeting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/VooVMeeting
+aliases: []

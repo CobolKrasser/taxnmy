@@ -1,0 +1,11 @@
+key: sordum/folder-painter
+publisher: sordum
+name: Folder Painter
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/FolderPainter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/FolderPainter
+identifiers:
+- winget: sordum.FolderPainter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/FolderPainter
+aliases: []

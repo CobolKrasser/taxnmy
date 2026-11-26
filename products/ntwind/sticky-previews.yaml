@@ -1,0 +1,11 @@
+key: ntwind/sticky-previews
+publisher: ntwind
+name: Sticky Previews
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/StickyPreviews
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/StickyPreviews
+identifiers:
+- winget: ntwind.StickyPreviews
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/StickyPreviews
+aliases: []

@@ -1,4 +1,9 @@
 key: dassault-systemes
 name: Dassault Systèmes
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Scilab/Scilab
-aliases: []
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- dassault

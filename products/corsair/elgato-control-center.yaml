@@ -1,0 +1,11 @@
+key: corsair/elgato-control-center
+publisher: corsair
+name: Elgato Control Center
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/ControlCenter
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/ControlCenter
+identifiers:
+- winget: Elgato.ControlCenter
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/ControlCenter
+aliases: []

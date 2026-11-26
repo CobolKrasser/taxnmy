@@ -1,0 +1,11 @@
+key: balena/cli
+publisher: balena
+name: balena-cli
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/BalenaCLI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/BalenaCLI
+identifiers:
+- winget: Balena.BalenaCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Balena/BalenaCLI
+aliases: []

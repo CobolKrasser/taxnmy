@@ -1,0 +1,11 @@
+key: corsair/elgato-studio
+publisher: corsair
+name: Elgato Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/Studio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/Studio
+identifiers:
+- winget: Elgato.Studio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/Studio
+aliases: []

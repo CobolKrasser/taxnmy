@@ -1,0 +1,11 @@
+key: crystalidea/uninstall-tool
+publisher: crystalidea
+name: Uninstall Tool
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/UninstallTool
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/UninstallTool
+identifiers:
+- winget: CrystalIDEASoftware.UninstallTool
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalIDEASoftware/UninstallTool
+aliases: []

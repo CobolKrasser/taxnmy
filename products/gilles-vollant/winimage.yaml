@@ -1,0 +1,11 @@
+key: gilles-vollant/winimage
+publisher: gilles-vollant
+name: WinImage
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GillesVollantSoftware/WinImage
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GillesVollantSoftware/WinImage
+identifiers:
+- winget: GillesVollantSoftware.WinImage
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GillesVollantSoftware/WinImage
+aliases: []

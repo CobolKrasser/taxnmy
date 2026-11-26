@@ -1,0 +1,11 @@
+key: audiocodes/ini-viewer-and-editor
+publisher: audiocodes
+name: INI Viewer & Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/INIViewerEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/INIViewerEditor
+identifiers:
+- winget: AudioCodes.INIViewerEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/INIViewerEditor
+aliases: []

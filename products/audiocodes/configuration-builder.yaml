@@ -1,0 +1,11 @@
+key: audiocodes/configuration-builder
+publisher: audiocodes
+name: Configuration Builder
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/ConfigurationBuilder
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/ConfigurationBuilder
+identifiers:
+- winget: AudioCodes.ConfigurationBuilder
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AudioCodes/ConfigurationBuilder
+aliases: []
