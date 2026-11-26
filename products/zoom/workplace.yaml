@@ -8,5 +8,11 @@ versions:
 identifiers:
 - winget: Zoom.Zoom
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/Zoom
+- cpe: cpe:2.3:a:zoom:workplace
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- winget: Zoom.Zoom.EXE
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/Zoom/EXE
 aliases:
 - zoom/zoom-workplace
+- zoom-video-communications/workplace
+- zoom-video-communications/zoom-workplace

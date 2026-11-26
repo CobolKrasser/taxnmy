@@ -14,4 +14,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
 - purl: pkg:scoop/bun
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
-aliases: []
+- winget: Oven-sh.Bun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun
+aliases:
+- oven-sh/bun

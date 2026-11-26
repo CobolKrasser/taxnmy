@@ -1,0 +1,27 @@
+key: apache/groovy
+publisher: apache
+name: Apache Groovy
+kind: software
+source: https://groovy.apache.org/versioning.html
+versions:
+  source: https://groovy.apache.org/versioning.html
+identifiers:
+- cpe: cpe:2.3:a:apache:groovy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-groovy.md
+- purl: pkg:maven/org.apache.groovy/groovy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-groovy.md
+- purl: pkg:maven/org.codehaus.groovy/groovy
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-groovy.md
+- purl: pkg:maven/org.codehaus.groovy/groovy-all
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-groovy.md
+- winget: Apache.Groovy.2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Groovy/2
+- winget: Apache.Groovy.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Groovy/3
+- winget: Apache.Groovy.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Groovy/4
+- winget: Apache.Groovy.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/Groovy/5
+aliases:
+- the-apache-software-foundation/apache-groovy
+- the-apache-software-foundation/groovy

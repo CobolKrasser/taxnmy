@@ -5,4 +5,5 @@ machine_sources:
 - url: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
   format: csaf-provider
   source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- abb-s-p-a-abb-sace-division

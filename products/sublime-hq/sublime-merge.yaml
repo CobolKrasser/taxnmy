@@ -10,4 +10,7 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeMerge
 - winget: SublimeHQ.SublimeMerge.Dev
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeMerge/Dev
-aliases: []
+- winget: SublimeHQ.SublimeMerge.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeMerge/Portable
+aliases:
+- sublimehq/sublime-merge

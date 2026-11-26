@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: PuTTY.PuTTY
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PuTTY/PuTTY
-aliases: []
+aliases:
+- putty/putty

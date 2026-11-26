@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: WiseCleaner.RegistryCleaner.Portable
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/RegistryCleaner/Portable
-aliases: []
+- winget: WiseCleaner.WiseRegistryCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseRegistryCleaner
+aliases:
+- wisecleaner-com/wise-registry-cleaner

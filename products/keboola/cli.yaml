@@ -8,5 +8,8 @@ versions:
 identifiers:
 - winget: Keboola.KeboolaCLI2
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keboola/KeboolaCLI2
+- winget: Keboola.KeboolaCLI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Keboola/KeboolaCLI
 aliases:
 - keboola/keboola-cli
+- keboola-industries/keboola-cli

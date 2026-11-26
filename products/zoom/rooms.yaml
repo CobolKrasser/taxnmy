@@ -1,0 +1,15 @@
+key: zoom/rooms
+publisher: zoom
+name: Rooms
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:zoom:rooms
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- winget: Zoom.ZoomRooms
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/Zoom/ZoomRooms
+aliases:
+- zoom-video-communications/rooms
+- zoom-video-communications/zoom-rooms

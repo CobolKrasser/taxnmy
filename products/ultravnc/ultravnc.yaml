@@ -8,4 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:ultravnc:ultravnc
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+- winget: uvncbvba.UltraVNC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/uvncbvba/UltraVNC
+aliases:
+- uvnc-bvba/ultravnc

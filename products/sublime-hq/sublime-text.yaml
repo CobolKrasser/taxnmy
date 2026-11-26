@@ -12,4 +12,7 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/4
 - winget: SublimeHQ.SublimeText.4.Dev
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/4/Dev
-aliases: []
+- winget: SublimeHQ.SublimeText.3.Portable
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SublimeHQ/SublimeText/3/Portable
+aliases:
+- sublimehq/sublime-text

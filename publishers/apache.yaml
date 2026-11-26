@@ -9,5 +9,7 @@ machine_sources:
   format: csaf-provider
   source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
 aliases:
+- apache-netbeans
 - org-apache-derby
 - org-apache-mina
+- the-apache-software-foundation

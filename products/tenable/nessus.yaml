@@ -8,5 +8,8 @@ versions:
 identifiers:
 - winget: Tenable.Nessus
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tenable/Nessus
+- cpe: cpe:2.3:a:tenable:nessus
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 aliases:
 - tenable/tenable-nessus
+- tenable-security/nessus

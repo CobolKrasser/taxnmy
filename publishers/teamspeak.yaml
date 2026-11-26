@@ -1,4 +1,5 @@
 key: teamspeak
 name: TeamSpeak
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient/Beta/5
-aliases: []
+aliases:
+- teamspeak-systems

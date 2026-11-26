@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: Coninfer.ECLiPSeCLP.7.0
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coninfer/ECLiPSeCLP/7/0
-aliases: []
+- winget: Coninfer.ECLiPSeCLP.7.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Coninfer/ECLiPSeCLP/7/1
+aliases:
+- coninfer-ltd-sharp-null/eclipse-constraint-logic-programming-system-version

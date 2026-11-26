@@ -10,5 +10,8 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepSeek/DeepSeekHarness
 - winget: Sakana-yuyu.DeepSeekHarnessDesktop
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sakana-yuyu/DeepSeekHarnessDesktop
+- winget: DeepSeek.DeepSeekHarnessDesktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DeepSeek/DeepSeekHarnessDesktop
 aliases:
 - deepseek/deepseek-harness
+- hangzhou-deepseek-artificial-intelligence/deepseek-harness

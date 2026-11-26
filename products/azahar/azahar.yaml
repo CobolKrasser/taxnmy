@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: AzaharEmu.Azahar
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar
-aliases: []
+- winget: AzaharEmu.Azahar.MSYS2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AzaharEmu/Azahar/MSYS2
+aliases:
+- azahar-emulator-developers/azahar

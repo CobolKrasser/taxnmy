@@ -8,5 +8,8 @@ versions:
 identifiers:
 - winget: TeamSpeakSystems.TeamSpeakClient.Beta.5
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient/Beta/5
+- winget: TeamSpeakSystems.TeamSpeakClient.Beta.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient/Beta/6
 aliases:
 - teamspeak/teamspeak-beta
+- teamspeak-systems/teamspeak-beta
