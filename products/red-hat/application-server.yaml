@@ -1,0 +1,23 @@
+key: red-hat/application-server
+publisher: red-hat
+name: Red Hat Application Server
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:rhel_application_server
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-application-server-3as
+- red-hat/application-server-3es
+- red-hat/red-hat-application-server-3es
+- red-hat/application-server-3ws
+- red-hat/red-hat-application-server-3ws
+- red-hat/application-server-4as
+- red-hat/red-hat-application-server-4as
+- red-hat/application-server-4es
+- red-hat/red-hat-application-server-4es
+- red-hat/application-server-4ws
+- red-hat/red-hat-application-server-4ws
+- red-hat/application-server-3as

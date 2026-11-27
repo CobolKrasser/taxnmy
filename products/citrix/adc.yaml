@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:citrix:application_delivery_controller_firmware
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- citrix/systems-adc
+- citrix/citrix-systems-adc

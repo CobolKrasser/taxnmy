@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:juniper:junos_space
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- juniper-networks/juniper-junos-space

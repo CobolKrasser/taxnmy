@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:h:huawei:router
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- huawei-software-technologies/router

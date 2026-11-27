@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:zohocorp:servicedesk_plus
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- zoho/manageengine-servicedesk-plus-14
+- zoho/zoho-manageengine-servicedesk-plus-14

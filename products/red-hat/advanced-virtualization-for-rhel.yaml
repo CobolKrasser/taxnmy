@@ -8,4 +8,9 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:advanced_virtualization
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/advanced-virtualization-for-rhel-8-4-0-eus
+- red-hat/advanced-virtualization-for-rhel-8-4-0-z
+- red-hat/advanced-virtualization-for-rhel-8-5-0-z
+- red-hat/enterprise-linux-8-advanced-virtualization
+- red-hat/red-hat-enterprise-linux-8-advanced-virtualization

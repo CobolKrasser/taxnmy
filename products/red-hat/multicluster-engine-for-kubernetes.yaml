@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:multicluster_engine
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/multicluster-engine-for-kubernetes-for-rhel-8
+- red-hat/multicluster-engine-for-kubernetes-for-rhel-9

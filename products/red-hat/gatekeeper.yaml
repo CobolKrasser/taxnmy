@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:gatekeeper
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/gatekeeper-for-rhel-9

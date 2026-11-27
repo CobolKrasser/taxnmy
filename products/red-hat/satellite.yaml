@@ -5,6 +5,34 @@ kind: software
 source: https://access.redhat.com/support/policy/updates/satellite
 versions:
   source: https://access.redhat.com/support/policy/updates/satellite
-identifiers: []
+identifiers:
+- cpe: cpe:2.3:a:redhat:satellite
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:satellite_capsule
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:satellite_maintenance
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:satellite_utils
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+- cpe: cpe:2.3:a:redhat:network_satellite
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
 aliases:
 - red-hat/red-hat-satellite
+- red-hat/satellite-for-rhel-7
+- red-hat/red-hat-satellite-for-rhel-7
+- red-hat/satellite-for-rhel-8
+- red-hat/red-hat-satellite-for-rhel-8
+- red-hat/satellite-for-rhel-9
+- red-hat/red-hat-satellite-for-rhel-9
+- red-hat/satellite-rhel-v-4
+- red-hat/red-hat-satellite-rhel-v-4
+- red-hat/satellite-rhel-v-4-as
+- red-hat/red-hat-satellite-rhel-v-4-as
+- red-hat/satellite-rhel-v-5
+- red-hat/red-hat-satellite-rhel-v-5
+- red-hat/satellite-rhel-v-6
+- red-hat/red-hat-satellite-rhel-v-6
+- red-hat/satellite-v-rhel-v-3-as
+- red-hat/red-hat-satellite-v-rhel-v-3-as
+- red-hat/satellite-v-rhel-v-4-as
+- red-hat/red-hat-satellite-v-rhel-v-4-as

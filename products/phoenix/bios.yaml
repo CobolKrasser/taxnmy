@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:phoenix:securecore_technology
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- phoenix/technologies-bios
+- phoenix/phoenix-technologies-bios

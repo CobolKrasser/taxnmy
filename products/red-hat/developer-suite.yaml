@@ -1,0 +1,17 @@
+key: red-hat/developer-suite
+publisher: red-hat
+name: Red Hat Developer Suite
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:rhel_developer_suite
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-developer-suite-v-3-as-v-4
+- red-hat/developer-suite-v-3-es-v-4
+- red-hat/red-hat-developer-suite-v-3-es-v-4
+- red-hat/developer-suite-v-3-ws-v-4
+- red-hat/red-hat-developer-suite-v-3-ws-v-4
+- red-hat/developer-suite-v-3-as-v-4

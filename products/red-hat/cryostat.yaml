@@ -1,0 +1,14 @@
+key: red-hat/cryostat
+publisher: red-hat
+name: Cryostat
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:cryostat
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/cryostat-3-on-rhel-8
+- red-hat/cryostat-4-on-rhel-9
+- red-hat/cryostat-2-on-rhel-8

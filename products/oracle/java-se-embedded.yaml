@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:oracle:java_se_embedded
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- oracle/java-se-embedded-8u161
+- oracle/oracle-java-se-embedded-8u161
