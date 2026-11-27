@@ -62,3 +62,19 @@ rows:
   'ThinkCentre M90ts_ThinkCentre M80ts_ThinkCentre M70ts': [ThinkCentre M90ts, ThinkCentre M80ts, ThinkCentre M70ts]
   'Think M950ts_Think M70ts-4': [ThinkCentre M950ts, ThinkCentre M70ts-4]
   'ThinkCentre Neo 50q Gen4 and IdeaCentre Mini5i': [ThinkCentre Neo 50q Gen 4, IdeaCentre Mini 5i]
+
+# Products of LVFS that one product took in as an alias when the register was made free of doubles (TAX-66),
+# with the id of LVFS that was the source of each. The product that holds the alias came from that id as well,
+# so it carries the GUIDs LVFS names at it (TAX-68, tools/references.py).
+folded:
+  lenovo/thinkpad-l13-gen2: com.lenovo.ThinkPadR1FET.firmware
+  lenovo/thinkpad-l13gen3: com.lenovo.ThinkPadR1UET.firmware
+  lenovo/thinkpad-l14-gen6: com.lenovo.ThinkPadR2SSG.firmware
+  lenovo/thinkpad-l14-gen7: com.lenovo.ThinkPadR3GSG.firmware
+  lenovo/thinkpad-p16-gen1: com.lenovo.ThinkPadN3FBL_000100D4.firmware
+  lenovo/thinkpad-t14-gen3: com.lenovo.ThinkPadN3BCZNTC7231.firmware
+  lenovo/thinkpad-x13-gen3: com.lenovo.ThinkPadN3CCZIFX152216832.firmware
+  lenovo/thinkpad-x13-yoga-gen1: com.lenovo.ThinkPadN2UET.firmware
+  lenovo/thinkpad-x13yogagen1: com.lenovo.ThinkPadN2UET.firmware
+  lenovo/thinkpad-x13yogagen2: com.lenovo.ThinkPadN39ET.firmware
+  lenovo/thinkpad-x1yoga3rd: com.lenovo.ThinkPadN25ET.firmware

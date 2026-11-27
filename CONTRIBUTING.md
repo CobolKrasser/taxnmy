@@ -61,6 +61,10 @@ identifiers:                         # optional; each code with its own source
     source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Example/App
   - homebrew: example
     source: https://formulae.brew.sh/cask/example
+  - lvfs: 84a777b5-f450-5bef-9493-3ef15a2ebe88
+    source: https://fwupd.org/lvfs/devices/com.example.device.firmware
+  - endoflife: example
+    source: https://endoflife.date/example
 aliases: []
 ```
 
@@ -69,7 +73,7 @@ aliases: []
 - When the publisher publishes no versions but says itself that the product gets updates (TP1), write
   `versions:` with `published: false` and `updates:`, the page where the publisher says so, instead of
   `source`. A file holds one of the two forms.
-- Each identifier holds exactly one code (`cpe`, `purl`, `gtin`, `winget` or `homebrew`) and a `source`.
+- Each identifier holds exactly one code (`cpe`, `purl`, `gtin`, `winget`, `homebrew`, `lvfs` or `endoflife`) and a `source`.
 - A GTIN is written in quotes, so leading zeros are kept.
 - A product has no parent field. Software does not need to name the operating system it runs on.
 

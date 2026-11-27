@@ -50,9 +50,9 @@ def load_list(path: Path = LIST) -> dict:
     return data
 
 
-def components(metadata: bytes) -> list[dict]:
-    """(id, name, developer, categories) of every component of the metadata: plain, gzip or zstd. The full
-    metadata a current fwupd client reads is firmware.xml.zst; firmware.xml.gz is an extract for old clients."""
+def decompress(metadata: bytes) -> bytes:
+    """The metadata as XML: plain, gzip or zstd. The full metadata a current fwupd client reads is
+    firmware.xml.zst; firmware.xml.gz is an extract for old clients."""
     if metadata[:2] == b"\x1f\x8b":
         metadata = gzip.decompress(metadata)
     elif metadata[:4] == b"\x28\xb5\x2f\xfd":
@@ -61,7 +61,12 @@ def components(metadata: bytes) -> list[dict]:
         except ImportError:
             raise SystemExit("reading firmware.xml.zst needs Python 3.14 or later (compression.zstd)") from None
         metadata = zstd.decompress(metadata)
-    root = ET.fromstring(metadata)
+    return metadata
+
+
+def components(metadata: bytes) -> list[dict]:
+    """(id, name, developer, categories) of every component of the metadata (see `decompress`)."""
+    root = ET.fromstring(decompress(metadata))
     if root.tag != "components":
         raise SystemExit("no AppStream metadata")
     return [{"id": (c.findtext("id") or "").strip(), "name": (c.findtext("name") or "").strip(),

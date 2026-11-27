@@ -254,6 +254,26 @@ class LintTest(unittest.TestCase):
         self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []", "identifiers:\n  - winget: not an id\n    source: https://example.org/a"))
         self.assertOnly("TE1", 9, contains="identifiers/0")
 
+    def test_lvfs_and_endoflife_have_the_form_of_their_kind(self):
+        """TAX-68, criterion 1: a GUID of LVFS and a page name of endoflife pass; a value without the form of
+        its kind is refused."""
+        good = ("  - lvfs: 84a777b5-f450-5bef-9493-3ef15a2ebe88\n    source: https://lvfs.example/a\n"
+                "  - endoflife: akeneo-pim\n    source: https://endoflife.example/akeneo-pim\n")
+        self.write("products/synology/ds224-plus.yaml", PRODUCT.replace("identifiers: []\n", "identifiers:\n" + good))
+        self.assertEqual(self.errors(), [])
+        for bad in ("lvfs: 84A777B5-F450-5BEF-9493-3EF15A2EBE88", "lvfs: 84a777b5f4505bef94933ef15a2ebe88",
+                    "lvfs: '{84a777b5-f450-5bef-9493-3ef15a2ebe88}'", "lvfs: com.example.device.firmware",
+                    "endoflife: Node.js", "endoflife: nodejs/", "endoflife: -nodejs", "endoflife: node js"):
+            with self.subTest(bad=bad):
+                self.write("products/synology/ds224-plus.yaml", PRODUCT.replace(
+                    "identifiers: []", f"identifiers:\n  - {bad}\n    source: https://example.org/a"))
+                self.assertOnly("TE1", 9, contains="identifiers/0")
+
+    def test_s3_lvfs_on_another_product_is_a_signal(self):
+        ident = "  - lvfs: 84a777b5-f450-5bef-9493-3ef15a2ebe88\n    source: https://example.org/a\n"
+        found = self._two_with(ident, ident)
+        self.assertEqual({(f.rule, f.level) for f in found}, {("TK4", "signal")})
+
     def test_s3_gtin_is_a_signal(self):
         found = self._two_with("  - gtin: \"4711174724857\"\n    source: https://example.org/a\n",
                                "  - gtin: \"04711174724857\"\n    source: https://example.org/b\n")

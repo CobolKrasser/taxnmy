@@ -267,7 +267,7 @@ def check_unique_all(records: list, kind: str, findings: list, wanted) -> None:
     codes: dict[tuple, list] = {}
     for rec in records:
         for i, ident in enumerate(rec.data.get("identifiers", [])):
-            for field, norm in (("purl", _norm_purl), ("cpe", _norm_cpe), ("gtin", _norm_gtin), ("winget", str.lower), ("homebrew", str.lower)):
+            for field, norm in (("purl", _norm_purl), ("cpe", _norm_cpe), ("gtin", _norm_gtin), ("winget", str.lower), ("homebrew", str.lower), ("lvfs", str.lower), ("endoflife", str)):
                 if field in ident:
                     codes.setdefault((field, norm(ident[field])), []).append((rec, ("identifiers", i, field)))
     for (field, value), hits in sorted(codes.items()):

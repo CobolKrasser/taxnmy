@@ -249,7 +249,7 @@ def second_source(publisher: dict, texts: dict) -> str:
 
 # --------------------------------------------------------------------------- TV5: replacing what exists
 
-CODES = ("cpe", "purl", "gtin", "winget", "homebrew")
+CODES = ("cpe", "purl", "gtin", "winget", "homebrew", "lvfs", "endoflife")
 
 
 def _owners(urls) -> set:
