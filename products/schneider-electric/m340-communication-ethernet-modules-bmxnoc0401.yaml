@@ -5,4 +5,6 @@ kind: device
 source: https://www.se.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://www.se.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- schneider-electric/m340-communication-ethernet-modules-bmx-noc-0401
+- schneider-electric-software/m340-communication-ethernet-modules-bmx-noc-0401

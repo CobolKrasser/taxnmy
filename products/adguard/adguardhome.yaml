@@ -8,4 +8,8 @@ versions:
 identifiers:
 - winget: AdGuard.AdGuardHome.Beta
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardHome/Beta
-aliases: []
+- winget: AdGuard.AdGuardHome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuardHome
+aliases:
+- adguard/home
+- adguard/adguard-home

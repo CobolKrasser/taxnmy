@@ -5,4 +5,5 @@ kind: device
 source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
 versions:
   source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
-aliases: []
+aliases:
+- siemens/simatic-et200ecopn-ai-8xrtd-tc-m12-l

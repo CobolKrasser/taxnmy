@@ -5,4 +5,8 @@ kind: software
 source: https://www.sick.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://www.sick.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- sick/flexisoftdesigner
+identifiers:
+- winget: SICK.FlexiSoftDesigner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SICK/FlexiSoftDesigner

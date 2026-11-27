@@ -5,4 +5,5 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN25RG.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN25RG.firmware
-aliases: []
+aliases:
+- lenovo/thinkpad-x1yoga3rd

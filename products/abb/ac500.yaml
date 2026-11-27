@@ -5,4 +5,9 @@ kind: device
 source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- abb/ac-500
+- abb/abb-ac-500
+identifiers:
+- cpe: cpe:2.3:h:abb:ac-500
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json

@@ -5,4 +5,5 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN39RM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN39RM.firmware
-aliases: []
+aliases:
+- lenovo/thinkpad-x13yogagen2
