@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: Musescore.Musescore
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Musescore/Musescore
-aliases: []
+- winget: Musescore.Musescore.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Musescore/Musescore/3
+aliases:
+- werner-schweer-and-others/musescore
