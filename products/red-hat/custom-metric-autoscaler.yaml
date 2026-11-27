@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:openshift_custom_metrics_autoscaler
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/custom-metric-autoscaler-operator-for-red-hat-openshift

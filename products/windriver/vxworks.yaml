@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:windriver:vxworks
   source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
-aliases: []
+aliases:
+- windriver/wind-river-vxworks

@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:convert2rhel
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/convert2rhel-for-rhel-7
+- red-hat/convert2rhel-for-rhel-8

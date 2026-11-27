@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:rhel_sjis
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/s-jis-for-red-hat-enteprise-linux-6-server
+- red-hat/sjis-v-5-9-z-server

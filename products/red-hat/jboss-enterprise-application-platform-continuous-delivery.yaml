@@ -8,4 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:jboss_enterprise_application_platform_cd
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/eap-cd-14-tech-preview
+- red-hat/eap-cd-19-tech-preview
+- red-hat/eap-cd-20-tech-preview

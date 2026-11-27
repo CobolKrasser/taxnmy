@@ -8,4 +8,10 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:openjdk_els
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/openjdk-11-els-for-rhel-7
+- red-hat/red-hat-openjdk-11-els-for-rhel-7
+- red-hat/openjdk-11-els-for-rhel-8
+- red-hat/red-hat-openjdk-11-els-for-rhel-8
+- red-hat/openjdk-11-els-for-rhel-9
+- red-hat/red-hat-openjdk-11-els-for-rhel-9

@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:rhosemc
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/middleware-rhel-7-containers-for-openshift

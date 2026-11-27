@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:cryostat
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/cryostat-3-on-rhel-8
+- red-hat/cryostat-4-on-rhel-9

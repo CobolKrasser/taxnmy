@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:rhel_dotnet
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/net-core-on-red-hat-enterprise-linux-server
+- red-hat/net-core-on-red-hat-enterprise-linux-workstation

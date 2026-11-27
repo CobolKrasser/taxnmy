@@ -8,4 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:logging
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/logging-subsystem-for-red-hat-openshift
+- red-hat/openshift-logging
+- red-hat/rhol-for-rhel-8
+- red-hat/rhol-for-rhel-9

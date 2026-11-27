@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:openshift_compliance_operator
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/openshift-compliance-operator-on-rhel-8
+- red-hat/red-hat-openshift-compliance-operator-on-rhel-8

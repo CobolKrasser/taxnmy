@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:sos_gmbh:jobscheduler
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- sos/gmbh-jobscheduler
+- sos/sos-gmbh-jobscheduler

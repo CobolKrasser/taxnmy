@@ -10,4 +10,6 @@ identifiers:
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 - cpe: cpe:2.3:o:suse:suse_linux
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- suse/linux-enterprise-desktop-11-sp3
+- suse/suse-linux-enterprise-desktop-11-sp3

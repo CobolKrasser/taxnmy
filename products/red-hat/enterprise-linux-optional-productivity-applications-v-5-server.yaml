@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:rhel_productivity
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/rhel-optional-productivity-applications-v-5-server

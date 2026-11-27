@@ -8,4 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:amq_streams
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/amq-streams
+- red-hat/red-hat-amq-streams
+- red-hat/amq-streams-1
+- red-hat/red-hat-amq-streams-1

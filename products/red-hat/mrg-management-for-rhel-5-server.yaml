@@ -8,4 +8,9 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:enterprise_mrg
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/mrg-management-for-rhel-5-server-v-2
+- red-hat/mrg-management-for-rhel-6-computenode-v-2
+- red-hat/red-hat-mrg-management-for-rhel-6-computenode-v-2
+- red-hat/mrg-management-for-rhel-6-server-v-2
+- red-hat/red-hat-mrg-management-for-rhel-6-server-v-2

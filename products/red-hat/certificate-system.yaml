@@ -8,4 +8,14 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:certificate_system
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/certificate-system-8
+- red-hat/red-hat-certificate-system-8
+- red-hat/certificate-system-for-4as
+- red-hat/red-hat-certificate-system-for-4as
+- red-hat/certificate-system-for-4es
+- red-hat/red-hat-certificate-system-for-4es
+- red-hat/certificate-system-for-red-hat-enterprise-server-7
+- red-hat/red-hat-certificate-system-for-red-hat-enterprise-server-7
+- red-hat/certificate-system-for-rhel-8
+- red-hat/red-hat-certificate-system-for-rhel-8

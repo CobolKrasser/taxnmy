@@ -8,4 +8,5 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:cloudforms_tools:1
   source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
-aliases: []
+aliases:
+- red-hat/cloudforms-tools-for-rhel-6-server
