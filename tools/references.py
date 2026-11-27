@@ -4,7 +4,9 @@
 A product of LVFS (its `source` is the page of LVFS for one id) carries every GUID that LVFS names at that
 id: the GUID a device reports to fwupd itself (`<provides><firmware type="flashed">`). A product that took in
 another product of LVFS as an alias (`folded` in referee/lvfs.yaml) carries the GUIDs of that id as well. A
-GUID that LVFS names at more than one id points to no single product: it goes onto no product and is listed.
+GUID that LVFS names at more than one id points to no single product: it goes onto no product and is listed. So
+does a GUID that would go onto more than one product, as when one id is the source of several products (TAX-68,
+comment 12535).
 The source of a GUID is the page of LVFS for its id.
 
 A product of endoflife (its `source` is a page of endoflife) carries the name of that page, when the page is
@@ -96,7 +98,9 @@ def _pattern(template: str, group: str) -> re.Pattern:
 
 
 def plan(root: Path, by_id: dict[str, set] | None, pages: set | None, lv: dict | None = None) -> dict:
-    """What each product gets. {"add": {file: [identifiers]}, "withheld": {key: [(guid, ids)]}, counts}."""
+    """What each product gets. {"add": {file: (identifiers, text)}, "withheld": {key: [(guid, ids)]},
+    "several": {guid: [keys]}, counts}. A GUID that would go onto more than one product (an id that is the
+    source of several products) points to no single product either: it goes onto none and is listed."""
     lv = lv or lvfs.load_list()
     page_lvfs = lv["page"]
     is_lvfs = _pattern(page_lvfs, "id")
@@ -106,14 +110,20 @@ def plan(root: Path, by_id: dict[str, set] | None, pages: set | None, lv: dict |
     add: dict[str, list] = {}
     withheld: dict[str, list] = defaultdict(list)
     counts = defaultdict(int)
+    planned = []
+    owners: dict[str, set] = defaultdict(set)  # GUID -> the products that carry it or would get it
     for f in sorted((root / "products").glob("*/*.yaml")):
         text = f.read_text(encoding="utf-8")
         data = yaml.safe_load(text) or {}
         have = {(k, str(v)) for i in data.get("identifiers") or [] for k, v in i.items() if k != "source"}
+        for k, v in have:
+            if k == "lvfs":
+                owners[v].add(data["key"])
         new = []
         source = str(data.get("source", ""))
         m = is_lvfs.match(source)
-        if m and by_id is not None:
+        of_lvfs = bool(m and by_id is not None)
+        if of_lvfs:
             counts["lvfs products"] += 1
             ids = [m.group("v")] + [i for a, i in folded.items() if a in (data.get("aliases") or [])]
             for ident in dict.fromkeys(ids):
@@ -122,7 +132,7 @@ def plan(root: Path, by_id: dict[str, set] | None, pages: set | None, lv: dict |
                         withheld[data["key"]].append((g, many[g]))
                     elif ("lvfs", g) not in have and g not in {x["lvfs"] for x in new}:
                         new.append({"lvfs": g, "source": page_lvfs.format(id=ident)})
-            counts["lvfs products with a guid"] += bool(new)
+                        owners[g].add(data["key"])
         m = is_eol.match(source)
         if m and pages is not None:
             counts["endoflife products"] += 1
@@ -131,6 +141,12 @@ def plan(root: Path, by_id: dict[str, set] | None, pages: set | None, lv: dict |
                 counts["endoflife products of a page that is one product"] += 1
                 if ("endoflife", slug) not in have:
                     new.append({"endoflife": slug, "source": source})
+        planned.append((f, text, data, new, of_lvfs))
+    several = {g: sorted(k) for g, k in sorted(owners.items()) if len(k) > 1}
+    for f, text, data, new, of_lvfs in planned:
+        new = [i for i in new if i.get("lvfs") not in several]
+        if of_lvfs:
+            counts["lvfs products with a guid"] += any("lvfs" in i for i in new)
         if new:
             after = insert(text, new)
             want = {**data, "identifiers": [*(data.get("identifiers") or []), *new]}
@@ -138,7 +154,7 @@ def plan(root: Path, by_id: dict[str, set] | None, pages: set | None, lv: dict |
             if yaml.safe_load(after) != want or removed not in ([], ["- identifiers: []"]):
                 raise SystemExit(f"{f}: the identifiers cannot be added without changing the file; it is left to a person")
             add[f.relative_to(root).as_posix()] = (new, after)
-    return {"add": add, "withheld": dict(withheld), "shared": many, "counts": dict(counts)}
+    return {"add": add, "withheld": dict(withheld), "several": several, "shared": many, "counts": dict(counts)}
 
 
 def report(result: dict) -> str:
@@ -154,12 +170,17 @@ def report(result: dict) -> str:
            f"| GUIDs added | {n_lvfs:,} |",
            f"| GUIDs LVFS names at more than one id (all of LVFS) | {len(result['shared']):,} |",
            f"| of which at a product of TAX, withheld | {len({g for v in result['withheld'].values() for g, _ in v}):,} |",
+           f"| GUIDs of one id that would go onto more than one product, withheld | {len(result['several']):,} |",
            f"| products of endoflife | {c.get('endoflife products', 0):,} |",
            f"| of which of a page that is one product | {c.get('endoflife products of a page that is one product', 0):,} |",
            f"| page names added | {n_eol:,} |", ""]
     if result["withheld"]:
         out += ["### GUIDs withheld: LVFS names them at more than one id", "", "| product | GUID | ids |", "| --- | --- | --- |"]
         out += [f"| {k} | {g} | {', '.join(ids)} |" for k, v in sorted(result["withheld"].items()) for g, ids in v]
+        out += [""]
+    if result["several"]:
+        out += ["### GUIDs withheld: they would go onto more than one product", "", "| GUID | products |", "| --- | --- |"]
+        out += [f"| {g} | {', '.join(keys)} |" for g, keys in result["several"].items()]
     return "\n".join(out) + "\n"
 
 
@@ -176,7 +197,9 @@ def run(root: Path, out: Path, metadata: bytes | None, dump: dict | None, write:
         (target / rel).write_text(text, encoding="utf-8")
     text = report(result)
     (out / "report.md").write_text(text, encoding="utf-8")
-    (out / "withheld.json").write_text(json.dumps(result["withheld"], indent=1) + "\n", encoding="utf-8")
+    (out / "withheld.json").write_text(json.dumps({"at more than one id": result["withheld"],
+                                                   "onto more than one product": result["several"]}, indent=1) + "\n",
+                                      encoding="utf-8")
     result["report"] = text
     return result
 

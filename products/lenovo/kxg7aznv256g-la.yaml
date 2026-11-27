@@ -5,13 +5,6 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
-identifiers:
-- lvfs: 26827e47-43ee-5116-b07d-fecea8736615
-  source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
-- lvfs: 4f9ecdb4-52d0-5537-b447-faee1d849941
-  source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
-- lvfs: bf83ec90-70b3-5310-9329-5a9227051d7e
-  source: https://fwupd.org/lvfs/devices/com.lenovo.xg7-nvme-ssd.firmware
 aliases:
 - lenovo/kxg7aznv512g-la
 - lenovo/kxg7aznv1t02-la

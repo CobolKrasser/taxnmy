@@ -25,6 +25,7 @@ G_OLD = "33333333-3333-5333-8333-333333333333"
 G_SHARED = "44444444-4444-5444-8444-444444444444"
 G_DOCK = "55555555-5555-5555-8555-555555555555"
 G_OTHER = "66666666-6666-5666-8666-666666666666"
+G_SLATE = "77777777-7777-5777-8777-777777777777"
 
 
 def component(ident, *guids, kind="flashed"):
@@ -40,6 +41,7 @@ METADATA = gzip.compress(("<?xml version='1.0'?><components origin='lvfs'>" + ""
     component("com.zed.dock.firmware", G_SHARED),                    # G_SHARED: at two ids
     component("com.acme.pad.firmware", G_OTHER, kind="runtime"),     # not a GUID the device reports as flashed
     component("com.acme.other.firmware", "not-a-guid"),
+    component("com.acme.slate.firmware", G_SLATE),                   # one id, the source of two products
 ]) + "</components>").encode())
 
 DUMP = {"result": [
@@ -69,6 +71,8 @@ class ReferencesTest(unittest.TestCase):
         self.write("products/zed/dock.yaml", product("zed/dock", PAGE.format(id="com.zed.dock.firmware"),
                                                      identifiers="", aliases="aliases: []\narchived:\n  source: https://zed.example/end\n"))
         self.write("products/acme/pad.yaml", product("acme/pad", PAGE.format(id="com.acme.pad.firmware")))
+        self.write("products/acme/slate-1.yaml", product("acme/slate-1", PAGE.format(id="com.acme.slate.firmware")))
+        self.write("products/acme/slate-2.yaml", product("acme/slate-2", PAGE.format(id="com.acme.slate.firmware")))
         self.write("products/acme/gone.yaml", product("acme/gone", PAGE.format(id="com.acme.gone.firmware")))
         self.write("products/acme/elsewhere.yaml", product("acme/elsewhere", "https://acme.example/book-9"))
         self.write("products/openjs/rocket.yaml", product("openjs/rocket", "https://endoflife.date/rocket", kind="software"))
@@ -114,6 +118,17 @@ class ReferencesTest(unittest.TestCase):
         listed = {(k, g) for k, v in got["withheld"].items() for g, _ in v}
         self.assertEqual(listed, {("acme/dock", G_SHARED), ("zed/dock", G_SHARED)})
         self.assertIn(f"| zed/dock | {G_SHARED} | com.acme.dock.firmware, com.zed.dock.firmware |", got["report"])
+
+    def test_a_guid_that_would_go_onto_more_than_one_product_goes_onto_none_and_is_listed(self):
+        """TAX-68, comment 12535: one id is the source of two products, so its GUID points to neither."""
+        got = self.run_round()
+        self.assertEqual(self.codes("products/acme/slate-1.yaml", "lvfs"), [])
+        self.assertEqual(self.codes("products/acme/slate-2.yaml", "lvfs"), [])
+        self.assertEqual(got["several"], {G_SLATE: ["acme/slate-1", "acme/slate-2"]})
+        self.assertEqual(got["counts"]["lvfs products with a guid"], 2, "book-9 and acme/dock")
+        self.assertIn(f"| {G_SLATE} | acme/slate-1, acme/slate-2 |", got["report"])
+        self.assertEqual(self.codes("products/acme/dock.yaml", "lvfs"), [(G_DOCK, PAGE.format(id="com.acme.dock.firmware"))],
+                         "a GUID on one product stays")
 
     def test_a_product_of_a_page_that_is_one_product_carries_its_name(self):
         """Criterion 3: the page name, with the page as source; a page of a line of devices gives none."""
