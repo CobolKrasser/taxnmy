@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi6f7e3aed.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi6f7e3aed.firmware
+identifiers:
+- lvfs: 6f7e3aed-fd32-42fb-a3ad-74189864a599
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi6f7e3aed.firmware
 aliases:
 - dell/pro-16-plus-pb16250
 - dell/pro-13-plus-pb13250

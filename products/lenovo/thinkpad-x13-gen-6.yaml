@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4LSGXXW.VproNew.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4LSGXXW.VproNew.firmware
+identifiers:
+- lvfs: da6b5517-b8a0-4028-9b59-23c3ede398d1
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4LSGXXW.VproNew.firmware
 aliases: []

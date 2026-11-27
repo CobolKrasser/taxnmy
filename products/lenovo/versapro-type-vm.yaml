@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.nec.NECN1CRM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.nec.NECN1CRM.firmware
+identifiers:
+- lvfs: 62fb54f3-3c50-4e07-9700-345e3aca428a
+  source: https://fwupd.org/lvfs/devices/com.nec.NECN1CRM.firmware
 aliases: []

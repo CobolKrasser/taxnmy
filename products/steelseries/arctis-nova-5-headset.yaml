@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.steelseries.Arctis-Nova-5-Headset.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.steelseries.Arctis-Nova-5-Headset.firmware
+identifiers:
+- lvfs: 28139f69-1ba5-51a2-8ab2-ef83cf2b2824
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Arctis-Nova-5-Headset.firmware
+- lvfs: 3722381d-29fb-572f-895b-8584d94a7a77
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Arctis-Nova-5-Headset.firmware
 aliases: []

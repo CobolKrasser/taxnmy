@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.devone.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.devone.firmware
+identifiers:
+- lvfs: 9f7962c7-7d0e-473d-8a01-c168912f1f14
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.devone.firmware
 aliases: []

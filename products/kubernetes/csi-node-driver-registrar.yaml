@@ -10,6 +10,8 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes-csi-node-driver-registrar.md
 - purl: pkg:golang/github.com/kubernetes-csi/node-driver-registrar
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/kubernetes-csi-node-driver-registrar.md
+- endoflife: kubernetes-csi-node-driver-registrar
+  source: https://endoflife.date/kubernetes-csi-node-driver-registrar
 aliases:
 - kubernetes-csi/kubernetes-csi-node-driver-registrar
 - kubernetes-csi/node-driver-registrar

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.asus.CX3402CBA.CM3401FFA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.asus.CX3402CBA.CM3401FFA.firmware
+identifiers:
+- lvfs: 48ba2915-0ec4-5e22-a101-1a5c8f226c4e
+  source: https://fwupd.org/lvfs/devices/com.asus.CX3402CBA.CM3401FFA.firmware
 aliases: []

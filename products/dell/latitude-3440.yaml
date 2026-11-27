@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi0c012c1f.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi0c012c1f.firmware
+identifiers:
+- lvfs: 0c012c1f-06e2-4148-aa30-87d4c59751eb
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi0c012c1f.firmware
 aliases:
 - dell/latitude-3540

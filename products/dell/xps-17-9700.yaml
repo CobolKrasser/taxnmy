@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi7d606caf.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi7d606caf.firmware
+identifiers:
+- lvfs: 7d606caf-92d8-47ad-9400-77ec5326af68
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi7d606caf.firmware
 aliases:
 - dell/precision-5750

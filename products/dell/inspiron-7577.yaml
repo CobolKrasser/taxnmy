@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi7d0d2c9e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi7d0d2c9e.firmware
+identifiers:
+- lvfs: 7d0d2c9e-8da3-46dc-8e44-32c33919c211
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi7d0d2c9e.firmware
 aliases:
 - dell/vostro-7570

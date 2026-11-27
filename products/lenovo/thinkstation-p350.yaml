@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.P350.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.P350.BIOS.firmware
+identifiers:
+- lvfs: 217ffa80-0bf7-4d48-b1d8-35be2c18f641
+  source: https://fwupd.org/lvfs/devices/com.lenovo.P350.BIOS.firmware
 aliases: []

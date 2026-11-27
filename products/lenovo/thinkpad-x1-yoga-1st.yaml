@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1FRM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1FRM.firmware
+identifiers:
+- lvfs: cb3c1682-5386-4591-bd29-7c1f441b7ccb
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1FRM.firmware
 aliases: []

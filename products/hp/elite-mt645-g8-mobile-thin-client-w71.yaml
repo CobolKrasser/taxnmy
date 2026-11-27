@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W71.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W71.firmware
+identifiers:
+- lvfs: ee1c3c91-7b66-4e44-8164-48794d4190dc
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W71.firmware
 aliases: []

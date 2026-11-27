@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.msi.ms15g2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.msi.ms15g2.firmware
+identifiers:
+- lvfs: 51fb53e2-0229-456b-b36f-83b781b415a1
+  source: https://fwupd.org/lvfs/devices/com.msi.ms15g2.firmware
 aliases: []

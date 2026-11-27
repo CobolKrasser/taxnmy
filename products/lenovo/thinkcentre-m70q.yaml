@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M43.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M43.BIOS.firmware
+identifiers:
+- lvfs: 1ff9c2e4-1fe1-48a9-9440-6ab40d748641
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M43.BIOS.firmware
 aliases:
 - lenovo/thinkcentre-m750q

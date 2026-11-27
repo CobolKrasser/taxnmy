@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefiad971d77.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefiad971d77.firmware
+identifiers:
+- lvfs: ad971d77-4495-408c-9f7b-c39790511b8e
+  source: https://fwupd.org/lvfs/devices/com.dell.uefiad971d77.firmware
 aliases:
 - dell/precision-3571

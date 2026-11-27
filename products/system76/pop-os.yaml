@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/pop-os
 versions:
   source: https://endoflife.date/pop-os
-identifiers: []
+identifiers:
+- endoflife: pop-os
+  source: https://endoflife.date/pop-os
 aliases: []

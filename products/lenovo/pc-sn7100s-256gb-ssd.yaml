@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.SN7100S.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.SN7100S.firmware
+identifiers:
+- lvfs: 26181b19-728e-5202-80da-7d62aacd1772
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN7100S.firmware
+- lvfs: 30a83edc-7758-5186-b206-6156a605afa9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN7100S.firmware
+- lvfs: 4abbd596-5030-56da-8820-d6a973afdc76
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN7100S.firmware
+- lvfs: c770fdab-ec6b-5cb4-8409-78acf7637167
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN7100S.firmware
 aliases: []

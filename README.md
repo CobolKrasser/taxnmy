@@ -93,8 +93,10 @@ recorded.
 ### Identifiers
 
 Existing codes are identifiers of a product, each with a source of its own (TK4): purl (without
-version and qualifiers), winget package identifier, Homebrew token, CPE (vendor and product) and
-GTIN. An identifier that is already on another product is a signal: the proposal goes to the
+version and qualifiers), winget package identifier, Homebrew token, CPE (vendor and product), GTIN,
+the GUID a device reports itself to fwupd as LVFS names it (`lvfs`), and the name of the page of
+endoflife.date that describes this one product (`endoflife`). A page of endoflife.date that lists
+the models of a line of devices names no product, so its name is no identifier. An identifier that is already on another product is a signal: the proposal goes to the
 referee, which checks with TP3 whether it is a product of its own.
 
 ### Aliases
@@ -149,7 +151,7 @@ rejected on TE1. A change of the scope goes through a pull request, like any oth
 publishers/<publisher>.yaml          one file per publisher
 products/<publisher>/<product>.yaml  one file per product
 schema/                              JSON schemas for both files
-tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness, the count of candidate sources (`census.py`), the filling from winget (`winget.py`) from endoflife.date (`endoflife.py`) and of electric vehicles from Open EV Data, fueleconomy.gov and the RDW (`ev.py`), and the finders of a source of the publisher itself, for a publisher (`ownsource.py`) and for a product (`ownversions.py`)
+tools/                               the lint (writing rule, TE1, TK2 and TK3), the referee harness, the count of candidate sources (`census.py`), the filling from winget (`winget.py`) from endoflife.date (`endoflife.py`), the references of LVFS and endoflife.date (`references.py`) and of electric vehicles from Open EV Data, fueleconomy.gov and the RDW (`ev.py`), and the finders of a source of the publisher itself, for a publisher (`ownsource.py`) and for a product (`ownversions.py`)
 tests/                               tests for the lint and the harness
 referee/                             prompt, test set and runs of the referee (TP1, TP3, TP5, TK2 and TE1)
 ```

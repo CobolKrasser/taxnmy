@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2HRN.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2HRN.firmware
+identifiers:
+- lvfs: c3e4be53-e714-4ea1-bb9c-7fe13a98b556
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2HRN.firmware
 aliases: []

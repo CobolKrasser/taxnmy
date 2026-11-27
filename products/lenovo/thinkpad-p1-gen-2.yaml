@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2OETXXP.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2OETXXP.firmware
+identifiers:
+- lvfs: cade7cd0-aba5-4885-945d-b2a8fc3d5033
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2OETXXP.firmware
 aliases:
 - lenovo/thinkpad-x1-extreme-2nd

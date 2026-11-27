@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefic889fe16.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefic889fe16.firmware
+identifiers:
+- lvfs: c889fe16-3473-4714-945f-bbb7394f2439
+  source: https://fwupd.org/lvfs/devices/com.dell.uefic889fe16.firmware
 aliases: []

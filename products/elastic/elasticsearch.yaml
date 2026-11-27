@@ -16,4 +16,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/elasticsearch.md
 - winget: Elastic.Elasticsearch
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elastic/Elasticsearch
+- endoflife: elasticsearch
+  source: https://endoflife.date/elasticsearch
 aliases: []

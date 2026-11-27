@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.adl.horizon
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.adl.horizon
+identifiers:
+- lvfs: 634fefb2-7099-4e5c-8b85-bd458132f51e
+  source: https://fwupd.org/lvfs/devices/com.starlabs.adl.horizon
 aliases: []

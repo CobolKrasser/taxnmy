@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.Y97.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.Y97.firmware
+identifiers:
+- lvfs: 77819e9c-4a37-4421-a5ac-4d852fbdcdf5
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.Y97.firmware
 aliases: []

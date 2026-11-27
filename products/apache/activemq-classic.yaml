@@ -10,6 +10,8 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
 - purl: pkg:maven/org.apache.activemq/activemq-broker
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-activemq.md
+- endoflife: apache-activemq
+  source: https://endoflife.date/apache-activemq
 aliases:
 - the-apache-software-foundation/apache-activemq
 - the-apache-software-foundation/activemq

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
+identifiers:
+- lvfs: 0929d219-916f-4940-897a-3058bec13206
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M950ts_M70ts-4.BIOS.firmware
 aliases:
 - lenovo/thinkcentre-m70ts-4

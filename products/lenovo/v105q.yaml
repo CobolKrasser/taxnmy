@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.V105q.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.V105q.BIOS.firmware
+identifiers:
+- lvfs: b276bb2c-1230-4477-a6ed-14a826d4f023
+  source: https://fwupd.org/lvfs/devices/com.lenovo.V105q.BIOS.firmware
 aliases: []

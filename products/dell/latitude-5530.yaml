@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi5966a2de.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi5966a2de.firmware
+identifiers:
+- lvfs: 5966a2de-6382-44e8-8d49-8816e196dfc8
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi5966a2de.firmware
 aliases: []

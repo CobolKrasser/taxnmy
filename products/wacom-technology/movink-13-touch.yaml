@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.TouchFW.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.TouchFW.firmware
+identifiers:
+- lvfs: 87a37392-f3be-5ff3-bd58-86f7238f6456
+  source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.TouchFW.firmware
 aliases: []

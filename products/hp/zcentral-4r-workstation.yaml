@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.P63.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.P63.firmware
+identifiers:
+- lvfs: 2e025b95-8999-4b1b-8373-e12a2d2a4b2a
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.P63.firmware
 aliases: []

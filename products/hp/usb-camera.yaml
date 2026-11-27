@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.camera.05C80445.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.camera.05C80445.firmware
+identifiers:
+- lvfs: 76954b43-15d2-5a64-b930-cb796244082e
+  source: https://fwupd.org/lvfs/devices/com.hp.camera.05C80445.firmware
 aliases: []

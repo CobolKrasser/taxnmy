@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guid3585e58d.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guid3585e58d.firmware
+identifiers:
+- lvfs: 3585e58d-f465-505e-9b59-eb029f94f935
+  source: https://fwupd.org/lvfs/devices/com.dell.guid3585e58d.firmware
 aliases: []

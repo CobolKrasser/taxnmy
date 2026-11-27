@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.lite.adl
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.lite.adl
+identifiers:
+- lvfs: 975cd0e6-c540-4e2b-906c-72c0d0d1e40d
+  source: https://fwupd.org/lvfs/devices/com.starlabs.lite.adl
 aliases: []

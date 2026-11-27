@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.AM611.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.AM611.firmware
+identifiers:
+- lvfs: 13502fdf-c159-5c01-ba8b-cfeb98b8a207
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM611.firmware
+- lvfs: 71113292-8848-5fb7-a21b-9c99428e4039
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM611.firmware
+- lvfs: 9f94dd0d-447c-566a-9a77-ff7f8afe7af0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM611.firmware
+- lvfs: b5cc948e-e027-5bf0-aab3-ce0eea178ff6
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM611.firmware
 aliases: []

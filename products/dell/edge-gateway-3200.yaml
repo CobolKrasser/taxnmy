@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi80a2f406.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi80a2f406.firmware
+identifiers:
+- lvfs: 80a2f406-fd10-4734-b752-c987ba23747b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi80a2f406.firmware
 aliases: []

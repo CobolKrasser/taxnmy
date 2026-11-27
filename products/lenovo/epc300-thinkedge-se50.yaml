@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.EPC300ThinkEdgeSE50.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.EPC300ThinkEdgeSE50.firmware
+identifiers:
+- lvfs: baf59408-4286-45f3-a934-857a49fd9c07
+  source: https://fwupd.org/lvfs/devices/com.lenovo.EPC300ThinkEdgeSE50.firmware
 aliases: []

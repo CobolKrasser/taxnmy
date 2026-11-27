@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN35BL_00070216.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN35BL_00070216.firmware
+identifiers:
+- lvfs: 47d506c6-70ea-45d3-88ee-cc28fcce52f4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN35BL_00070216.firmware
 aliases: []

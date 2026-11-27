@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie5b48636.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie5b48636.firmware
+identifiers:
+- lvfs: e5b48636-52b5-412a-86a1-c32d05c99b07
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie5b48636.firmware
 aliases: []

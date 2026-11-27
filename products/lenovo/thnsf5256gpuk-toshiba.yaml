@@ -5,5 +5,10 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.xg4-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.xg4-nvme-ssd.firmware
+identifiers:
+- lvfs: 4a4c1947-a482-5b40-80f0-ccede13320e3
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg4-nvme-ssd.firmware
+- lvfs: df794d53-e6c5-5992-8728-3611268e33b4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg4-nvme-ssd.firmware
 aliases:
 - lenovo/thnsf5512gpuk-toshiba

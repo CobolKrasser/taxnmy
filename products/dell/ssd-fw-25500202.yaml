@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.112592.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.112592.firmware
+identifiers:
+- lvfs: 0643e177-8b57-4078-b599-58304bce74cf
+  source: https://fwupd.org/lvfs/devices/com.dell.112592.firmware
 aliases: []

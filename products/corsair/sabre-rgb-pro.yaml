@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.corsair.vise.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.corsair.vise.firmware
+identifiers:
+- lvfs: 7eb05392-a5e0-529a-991b-1910a4bce8cf
+  source: https://fwupd.org/lvfs/devices/com.corsair.vise.firmware
 aliases: []

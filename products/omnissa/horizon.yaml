@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/horizon
 versions:
   source: https://endoflife.date/horizon
-identifiers: []
+identifiers:
+- endoflife: horizon
+  source: https://endoflife.date/horizon
 aliases:
 - omnissa/omnissa-horizon

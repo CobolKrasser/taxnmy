@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4HSGXXW.VproNew.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4HSGXXW.VproNew.firmware
+identifiers:
+- lvfs: e44428fb-169d-41e0-b38d-639851a7ff63
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4HSGXXW.VproNew.firmware
 aliases: []

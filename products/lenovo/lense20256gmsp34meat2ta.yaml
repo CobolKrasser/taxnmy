@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.LENSE20256GMSP34MEAT2TA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.LENSE20256GMSP34MEAT2TA.firmware
+identifiers:
+- lvfs: add1cbe4-4916-5115-8202-9a3e9e69e64e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.LENSE20256GMSP34MEAT2TA.firmware
 aliases: []

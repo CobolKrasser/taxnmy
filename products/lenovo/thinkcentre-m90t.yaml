@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M90t_M90s_M80t_M80s.ME.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M90t_M90s_M80t_M80s.ME.firmware
+identifiers:
+- lvfs: d40359b9-fd87-4e9d-8601-983ccdbf99ea
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M90t_M90s_M80t_M80s.ME.firmware
 aliases:
 - lenovo/thinkcentre-m90s
 - lenovo/thinkcentre-m80t

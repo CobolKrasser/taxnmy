@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefife8873de.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefife8873de.firmware
+identifiers:
+- lvfs: fe8873de-d500-4cb8-a075-cb8eb73fcfa4
+  source: https://fwupd.org/lvfs/devices/com.dell.uefife8873de.firmware
 aliases: []

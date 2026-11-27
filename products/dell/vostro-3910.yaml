@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.ueficd0a418b.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.ueficd0a418b.firmware
+identifiers:
+- lvfs: cd0a418b-8722-b538-ed3d-2e55ed36f179
+  source: https://fwupd.org/lvfs/devices/com.dell.ueficd0a418b.firmware
 aliases:
 - dell/vostro-3710

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U03.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U03.firmware
+identifiers:
+- lvfs: 6b828df1-8ffa-4cae-b04e-3f0f2ee37a9a
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U03.firmware
 aliases: []

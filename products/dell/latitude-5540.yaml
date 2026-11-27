@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi24e6d799.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi24e6d799.firmware
+identifiers:
+- lvfs: 24e6d799-c364-4c34-817e-020a080c29a9
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi24e6d799.firmware
 aliases:
 - dell/precision-3580

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.Mini.tier2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.Mini.tier2.firmware
+identifiers:
+- lvfs: d636c717-44c4-5fcf-9d7f-b96f9c5f6608
+  source: https://fwupd.org/lvfs/devices/com.lenovo.Mini.tier2.firmware
 aliases: []

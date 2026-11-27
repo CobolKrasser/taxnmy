@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi1c6b780a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi1c6b780a.firmware
+identifiers:
+- lvfs: 1c6b780a-c405-444d-b103-64198fb50ef9
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi1c6b780a.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.PM9C1a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.PM9C1a.firmware
+identifiers:
+- lvfs: b7875b50-8232-4e4d-a8f6-8e27b5ae8e90
+  source: https://fwupd.org/lvfs/devices/com.dell.PM9C1a.firmware
 aliases: []

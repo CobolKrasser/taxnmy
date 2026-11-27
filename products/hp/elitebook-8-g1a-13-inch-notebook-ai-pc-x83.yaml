@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X83.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X83.firmware
+identifiers:
+- lvfs: f1d152a1-699b-4fe3-1ebb-6a6c44046960
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X83.firmware
 aliases: []

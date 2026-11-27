@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT160ANC.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT160ANC.firmware
+identifiers:
+- lvfs: 4920b88b-c7ef-5434-bdb1-e22ce7042afc
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT160ANC.firmware
 aliases: []

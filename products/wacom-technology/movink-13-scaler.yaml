@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.scaler.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.scaler.firmware
+identifiers:
+- lvfs: d68637e9-ac2d-5128-8515-08a8d28295aa
+  source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.scaler.firmware
 aliases: []

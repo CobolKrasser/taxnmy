@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkCentre.M75q-2CZN.System.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkCentre.M75q-2CZN.System.firmware
+identifiers:
+- lvfs: b8d95ca2-933f-40ba-85b7-7ceaf1cb6eca
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkCentre.M75q-2CZN.System.firmware
 aliases: []

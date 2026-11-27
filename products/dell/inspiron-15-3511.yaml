@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi13d184d1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi13d184d1.firmware
+identifiers:
+- lvfs: 13d184d1-4fae-589a-92ec-1cbb8d519a34
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi13d184d1.firmware
 aliases:
 - dell/vostro-15-3510

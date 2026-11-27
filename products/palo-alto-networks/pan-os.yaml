@@ -5,6 +5,8 @@ kind: operating-system
 source: https://endoflife.date/panos
 versions:
   source: https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary
-identifiers: []
+identifiers:
+- endoflife: panos
+  source: https://endoflife.date/panos
 aliases:
 - palo-alto-networks/palo-alto-networks-pan-os

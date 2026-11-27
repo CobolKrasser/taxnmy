@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.DTH246E.main.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.DTH246E.main.firmware
+identifiers:
+- lvfs: c8a3230c-9a13-5258-ac15-952bdc977fcc
+  source: https://fwupd.org/lvfs/devices/com.wacom.DTH246E.main.firmware
 aliases: []

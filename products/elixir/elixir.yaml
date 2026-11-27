@@ -9,4 +9,6 @@ identifiers: []
 identifiers:
 - winget: Elixir.Elixir
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elixir/Elixir
+- endoflife: elixir
+  source: https://endoflife.date/elixir
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M4E.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M4E.BIOS.firmware
+identifiers:
+- lvfs: a450373f-9413-44ce-b74b-8bfebe0e9a4a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4E.BIOS.firmware
 aliases: []

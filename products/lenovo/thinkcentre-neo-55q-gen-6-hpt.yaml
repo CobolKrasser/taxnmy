@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M66.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M66.BIOS.firmware
+identifiers:
+- lvfs: e7ce5aa9-a997-4259-9c51-93e3e965b6d6
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M66.BIOS.firmware
 aliases: []

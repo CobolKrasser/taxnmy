@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/big-ip
 versions:
   source: https://endoflife.date/big-ip
-identifiers: []
+identifiers:
+- endoflife: big-ip
+  source: https://endoflife.date/big-ip
 aliases: []

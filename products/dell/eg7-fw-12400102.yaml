@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guid169c6a49.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guid169c6a49.firmware
+identifiers:
+- lvfs: 169c6a49-91ca-4277-928f-9d72f4c3cf0f
+  source: https://fwupd.org/lvfs/devices/com.dell.guid169c6a49.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefiaecf8a53.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefiaecf8a53.firmware
+identifiers:
+- lvfs: aecf8a53-cd41-4c16-8744-bd8e3725e28e
+  source: https://fwupd.org/lvfs/devices/com.dell.uefiaecf8a53.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.BC711_TBG.256GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.BC711_TBG.256GB.firmware
+identifiers:
+- lvfs: 4386d878-6877-5834-9b33-5401ea23cdd1
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BC711_TBG.256GB.firmware
 aliases: []

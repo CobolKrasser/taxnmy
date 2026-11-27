@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guidc158b272.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guidc158b272.firmware
+identifiers:
+- lvfs: 6cbe1efe-825a-11ed-a1eb-0242ac120002
+  source: https://fwupd.org/lvfs/devices/com.dell.guidc158b272.firmware
+- lvfs: c158b272-e1fb-5d79-ab63-62da7a3e20f0
+  source: https://fwupd.org/lvfs/devices/com.dell.guidc158b272.firmware
 aliases: []

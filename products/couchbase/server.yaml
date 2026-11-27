@@ -12,5 +12,7 @@ identifiers:
   source: https://formulae.brew.sh/cask/couchbase-server-community
 - homebrew: couchbase-server-enterprise
   source: https://formulae.brew.sh/cask/couchbase-server-enterprise
+- endoflife: couchbase-server
+  source: https://endoflife.date/couchbase-server
 aliases:
 - couchbase/couchbase-server

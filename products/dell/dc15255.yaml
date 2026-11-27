@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefied90dab1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefied90dab1.firmware
+identifiers:
+- lvfs: ed90dab1-73e3-4ff7-9094-fc08ba45b220
+  source: https://fwupd.org/lvfs/devices/com.dell.uefied90dab1.firmware
 aliases: []

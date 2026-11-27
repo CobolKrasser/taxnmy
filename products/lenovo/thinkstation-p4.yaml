@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkstation.P4.System.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkstation.P4.System.firmware
+identifiers:
+- lvfs: a801cd01-ad9a-4b4a-bafe-62b351f5b74e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkstation.P4.System.firmware
 aliases: []

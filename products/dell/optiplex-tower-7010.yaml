@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi4c9bb0f4.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi4c9bb0f4.firmware
+identifiers:
+- lvfs: 4c9bb0f4-c7a1-499d-9b01-bc2aa6516e00
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi4c9bb0f4.firmware
 aliases:
 - dell/optiplex-micro-7010
 - dell/optiplex-sff-7010

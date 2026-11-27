@@ -16,4 +16,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/yarn.md
 - winget: Yarn.Yarn
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yarn/Yarn
+- endoflife: yarn
+  source: https://endoflife.date/yarn
 aliases: []

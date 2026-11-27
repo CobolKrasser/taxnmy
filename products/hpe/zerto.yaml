@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/zerto
 versions:
   source: https://endoflife.date/zerto
-identifiers: []
+identifiers:
+- endoflife: zerto
+  source: https://endoflife.date/zerto
 aliases:
 - hpe/hpe-zerto

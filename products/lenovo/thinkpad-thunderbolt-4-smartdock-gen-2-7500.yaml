@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadThunderbolt4SmartDockGen2.ccgx.dmc.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadThunderbolt4SmartDockGen2.ccgx.dmc.firmware
+identifiers:
+- lvfs: b8b0a595-c914-57c3-89e5-d226f9a6cdc8
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadThunderbolt4SmartDockGen2.ccgx.dmc.firmware
 aliases: []

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefib94a01c2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefib94a01c2.firmware
+identifiers:
+- lvfs: b94a01c2-67f9-4e92-9805-0e446a413939
+  source: https://fwupd.org/lvfs/devices/com.dell.uefib94a01c2.firmware
 aliases:
 - dell/g15-5521

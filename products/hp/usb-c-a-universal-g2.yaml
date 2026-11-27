@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.Dock_USBC_A_Universal_G2.ccgx.dmc.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.Dock_USBC_A_Universal_G2.ccgx.dmc.firmware
+identifiers:
+- lvfs: 731ccdb9-233b-570d-b3e3-2a2d2dad8460
+  source: https://fwupd.org/lvfs/devices/com.hp.Dock_USBC_A_Universal_G2.ccgx.dmc.firmware
 aliases: []

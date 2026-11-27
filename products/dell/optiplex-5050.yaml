@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi1367a91a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi1367a91a.firmware
+identifiers:
+- lvfs: 1367a91a-5560-4d8e-aa56-6f32ca80719b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi1367a91a.firmware
 aliases: []

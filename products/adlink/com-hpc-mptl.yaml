@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.COM-HPC-mPTL.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.COM-HPC-mPTL.firmware
+identifiers:
+- lvfs: 3be7e558-cc36-4507-8577-4059388d1bcf
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.COM-HPC-mPTL.firmware
 aliases: []

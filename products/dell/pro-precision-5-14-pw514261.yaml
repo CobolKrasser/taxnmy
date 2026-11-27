@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefidcd4ec12.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefidcd4ec12.firmware
+identifiers:
+- lvfs: dcd4ec12-2264-4507-86a4-bc79bf3a78eb
+  source: https://fwupd.org/lvfs/devices/com.dell.uefidcd4ec12.firmware
 aliases:
 - dell/pro-precision-5-16-pw516261

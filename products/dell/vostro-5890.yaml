@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi3834d4f0.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi3834d4f0.firmware
+identifiers:
+- lvfs: 3834d4f0-4f82-4ff5-80f1-05ba58958923
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi3834d4f0.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.MT2-MT.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.MT2-MT.firmware
+identifiers:
+- lvfs: 8d3c1860-9e66-424b-9f8f-69f4b4e43e79
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.MT2-MT.firmware
 aliases: []

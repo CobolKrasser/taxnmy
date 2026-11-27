@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.aver.cam520pro3.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.aver.cam520pro3.firmware
+identifiers:
+- lvfs: f215a656-345a-55d0-b284-446f19c4e14c
+  source: https://fwupd.org/lvfs/devices/com.aver.cam520pro3.firmware
 aliases: []

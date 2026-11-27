@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hughski.ColorHugALS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hughski.ColorHugALS.firmware
+identifiers:
+- lvfs: 84f40464-9272-4ef7-9399-cd95f12da696
+  source: https://fwupd.org/lvfs/devices/com.hughski.ColorHugALS.firmware
 aliases: []

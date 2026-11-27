@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkcentre_M67.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkcentre_M67.BIOS.firmware
+identifiers:
+- lvfs: 6323fde9-7109-4f23-b7ae-afdd6d6bd352
+  source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkcentre_M67.BIOS.firmware
 aliases: []

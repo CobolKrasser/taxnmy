@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3IRN.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3IRN.firmware
+identifiers:
+- lvfs: cc5ed31d-63ec-4615-8956-fac70caddcfa
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3IRN.firmware
 aliases: []

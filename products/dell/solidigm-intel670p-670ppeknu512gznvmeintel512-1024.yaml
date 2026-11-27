@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.Intel-INTEL670P-670PSSDPEKNU512_1024_2048.7003
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.Intel-INTEL670P-670PSSDPEKNU512_1024_2048.7003
+identifiers:
+- lvfs: b74d4ab0-9ac8-5a30-a6f5-4ace5bdb39ae
+  source: https://fwupd.org/lvfs/devices/com.dell.Intel-INTEL670P-670PSSDPEKNU512_1024_2048.7003
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P3Ultra.System.Firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P3Ultra.System.Firmware
+identifiers:
+- lvfs: ed151d94-9d52-4a39-b0aa-c0088fdcaa4f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P3Ultra.System.Firmware
 aliases: []

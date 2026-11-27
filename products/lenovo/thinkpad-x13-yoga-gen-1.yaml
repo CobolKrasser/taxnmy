@@ -5,6 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2URM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2URM.firmware
+identifiers:
+- lvfs: c66fada5-ea35-4e93-9c6f-c0667999808a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2URM.firmware
+- lvfs: 6638a779-1bfd-4a61-92b2-47db1ba2b5e0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2UET.firmware
 aliases:
 - lenovo/thinkpad-x13-yoga-gen1
 - lenovo/thinkpad-x13yogagen1

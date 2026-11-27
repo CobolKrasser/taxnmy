@@ -14,4 +14,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/terraform.md
 - winget: Hashicorp.Terraform
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Terraform
+- endoflife: terraform
+  source: https://endoflife.date/terraform
 aliases: []

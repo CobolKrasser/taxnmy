@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN47ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN47ET.firmware
+identifiers:
+- lvfs: dceb93a1-33cf-4ff8-a9b7-c7709caa46f9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN47ET.firmware
 aliases:
 - lenovo/thinkpad-t16-gen-3

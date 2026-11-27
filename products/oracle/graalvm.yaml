@@ -8,5 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:oracle:graalvm
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:oracle:graalvm&resultsPerPage=1
+- endoflife: oracle-graalvm
+  source: https://endoflife.date/oracle-graalvm
 aliases:
 - oracle/oracle-graalvm

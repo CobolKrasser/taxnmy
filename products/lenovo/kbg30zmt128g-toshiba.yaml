@@ -5,6 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.bg3-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.bg3-nvme-ssd.firmware
+identifiers:
+- lvfs: 0b5b142e-958a-582c-a4c0-a56ebfed4f71
+  source: https://fwupd.org/lvfs/devices/com.lenovo.bg3-nvme-ssd.firmware
+- lvfs: 0ef4d815-4096-55cc-a212-6792b80b85c1
+  source: https://fwupd.org/lvfs/devices/com.lenovo.bg3-nvme-ssd.firmware
+- lvfs: 8cd5328e-c626-5df1-b7fa-1268d0cb91b6
+  source: https://fwupd.org/lvfs/devices/com.lenovo.bg3-nvme-ssd.firmware
 aliases:
 - lenovo/kbg30zmt256g-toshiba
 - lenovo/kbg30zmt512g-toshiba

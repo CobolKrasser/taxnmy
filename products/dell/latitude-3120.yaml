@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi109ad491.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi109ad491.firmware
+identifiers:
+- lvfs: 109ad491-ec35-478c-b08b-fdd292438e15
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi109ad491.firmware
 aliases: []

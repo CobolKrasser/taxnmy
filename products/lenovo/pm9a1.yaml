@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PM9A1.low.firmware.v031101
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PM9A1.low.firmware.v031101
+identifiers:
+- lvfs: 021111e3-91a1-5b2a-a847-deeca50b1211
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9A1.low.firmware.v031101
+- lvfs: af35834a-86e9-5d6e-af3b-78ce4a42cf4a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9A1.low.firmware.v031101
+- lvfs: c0e40d86-e47a-57fe-8ed1-453e6d83a586
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9A1.low.firmware.v031101
 aliases: []

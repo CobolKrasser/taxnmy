@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.TravelHubGen2.tier1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.TravelHubGen2.tier1.firmware
+identifiers:
+- lvfs: 3fc55e47-f57a-55bd-9f41-ac60280bd689
+  source: https://fwupd.org/lvfs/devices/com.lenovo.TravelHubGen2.tier1.firmware
 aliases: []

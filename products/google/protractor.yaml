@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:npm/protractor
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/protractor.md
+- endoflife: protractor
+  source: https://endoflife.date/protractor
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.altusmetrum.ChaosKey.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.altusmetrum.ChaosKey.firmware
+identifiers:
+- lvfs: b62500d7-c981-595b-a798-eb6cf4d4942b
+  source: https://fwupd.org/lvfs/devices/com.altusmetrum.ChaosKey.firmware
 aliases: []

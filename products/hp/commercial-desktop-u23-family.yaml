@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U23.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U23.firmware
+identifiers:
+- lvfs: bd00b2ee-699b-42df-97d5-4a7af778c6ea
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U23.firmware
 aliases: []

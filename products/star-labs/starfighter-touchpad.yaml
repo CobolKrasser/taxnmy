@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.F1.touchpad
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.F1.touchpad
+identifiers:
+- lvfs: 2a62ed27-652b-5223-8a24-53e40176e152
+  source: https://fwupd.org/lvfs/devices/com.starlabs.F1.touchpad
 aliases: []

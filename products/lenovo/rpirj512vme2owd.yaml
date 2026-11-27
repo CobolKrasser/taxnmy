@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.RPIRJ512VME2OWD.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.RPIRJ512VME2OWD.firmware
+identifiers:
+- lvfs: fea49a1d-e54a-5ee5-b2f7-f90fcd3d280b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.RPIRJ512VME2OWD.firmware
 aliases: []

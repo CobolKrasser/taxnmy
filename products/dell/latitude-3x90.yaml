@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi55a0d58a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi55a0d58a.firmware
+identifiers:
+- lvfs: 55a0d58a-a0c1-fe00-9bb7-6a85940d42d2
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi55a0d58a.firmware
 aliases: []

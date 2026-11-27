@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.ueficbe49cca.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.ueficbe49cca.firmware
+identifiers:
+- lvfs: cbe49cca-492b-93e8-b0f4-f693501f271b
+  source: https://fwupd.org/lvfs/devices/com.dell.ueficbe49cca.firmware
 aliases: []

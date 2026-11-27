@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.system76.thelio_io_2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.system76.thelio_io_2.firmware
+identifiers:
+- lvfs: 64d6ae55-2566-56f0-9b97-83c276c27ce1
+  source: https://fwupd.org/lvfs/devices/com.system76.thelio_io_2.firmware
 aliases: []

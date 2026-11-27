@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.DTK168.main.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.DTK168.main.firmware
+identifiers:
+- lvfs: ee436ca2-77b7-5d33-8039-ed9f409cb882
+  source: https://fwupd.org/lvfs/devices/com.wacom.DTK168.main.firmware
 aliases: []

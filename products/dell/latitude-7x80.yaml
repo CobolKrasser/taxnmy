@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi53f51f56.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi53f51f56.firmware
+identifiers:
+- lvfs: 53f51f56-eff2-4516-9dda-ed501b3f0f8a
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi53f51f56.firmware
 aliases: []

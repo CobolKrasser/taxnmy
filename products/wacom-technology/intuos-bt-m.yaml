@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.CTL-6100WL.main-r2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.CTL-6100WL.main-r2.firmware
+identifiers:
+- lvfs: 75818833-f4f8-5a18-95b9-9e5b50aacccb
+  source: https://fwupd.org/lvfs/devices/com.wacom.CTL-6100WL.main-r2.firmware
 aliases: []

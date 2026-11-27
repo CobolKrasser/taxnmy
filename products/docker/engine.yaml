@@ -8,5 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:docker:engine
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/docker-engine.md
+- endoflife: docker-engine
+  source: https://endoflife.date/docker-engine
 aliases:
 - docker/docker-engine

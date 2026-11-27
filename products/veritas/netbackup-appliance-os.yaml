@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/netbackup-appliance-os
 versions:
   source: https://sort.veritas.com/eosl
-identifiers: []
+identifiers:
+- endoflife: netbackup-appliance-os
+  source: https://endoflife.date/netbackup-appliance-os
 aliases: []

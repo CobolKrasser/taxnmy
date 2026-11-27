@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi690ce1ed.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi690ce1ed.firmware
+identifiers:
+- lvfs: 690ce1ed-d917-4e38-af0e-34a348e0cf4e
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi690ce1ed.firmware
 aliases: []

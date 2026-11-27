@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi7f981d65.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi7f981d65.firmware
+identifiers:
+- lvfs: 7f981d65-75a1-4a7e-abad-fe43ff251839
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi7f981d65.firmware
 aliases:
 - dell/latitude-7430
 - dell/latitude-7530

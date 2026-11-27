@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.CL4.4D256.Q79.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.CL4.4D256.Q79.firmware
+identifiers:
+- lvfs: f79bc3aa-d1ca-5e0f-9587-0beedb63f92b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.CL4.4D256.Q79.firmware
 aliases: []

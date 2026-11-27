@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.RPIRJ256VME2MWD.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.RPIRJ256VME2MWD.firmware
+identifiers:
+- lvfs: a86440ad-d2f4-5158-b0c1-9b88049d177c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.RPIRJ256VME2MWD.firmware
 aliases: []

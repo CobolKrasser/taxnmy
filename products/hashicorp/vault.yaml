@@ -10,4 +10,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/hashicorp-vault.md
 - winget: Hashicorp.Vault
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vault
+- endoflife: hashicorp-vault
+  source: https://endoflife.date/hashicorp-vault
 aliases: []

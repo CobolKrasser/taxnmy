@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi4518ef25.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi4518ef25.firmware
+identifiers:
+- lvfs: 4518ef25-ac00-4350-9367-35481797da51
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi4518ef25.firmware
 aliases: []

@@ -9,4 +9,6 @@ identifiers: []
 identifiers:
 - winget: dbtLabs.dbt-core
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dbtLabs/dbt-core
+- endoflife: dbt-core
+  source: https://endoflife.date/dbt-core
 aliases: []

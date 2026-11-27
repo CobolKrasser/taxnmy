@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ANSICopilot
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ANSICopilot
+identifiers:
+- lvfs: b61b20c3-9a41-5fe3-a715-de43aac39316
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ANSICopilot
 aliases: []

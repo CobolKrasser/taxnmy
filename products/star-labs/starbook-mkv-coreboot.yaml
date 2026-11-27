@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.tgl
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.tgl
+identifiers:
+- lvfs: 78681eee-2edc-4575-a861-d593f8145ce0
+  source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.tgl
 aliases: []

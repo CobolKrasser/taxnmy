@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.P61.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.P61.firmware
+identifiers:
+- lvfs: a5a57425-67ad-4a0f-80d2-1a14830e5f24
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.P61.firmware
 aliases: []

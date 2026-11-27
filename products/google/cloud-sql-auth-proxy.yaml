@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/cloud-sql-auth-proxy
 versions:
   source: https://endoflife.date/cloud-sql-auth-proxy
-identifiers: []
+identifiers:
+- endoflife: cloud-sql-auth-proxy
+  source: https://endoflife.date/cloud-sql-auth-proxy
 aliases: []

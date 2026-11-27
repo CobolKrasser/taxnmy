@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/vmware-harbor-registry
 versions:
   source: https://endoflife.date/vmware-harbor-registry
-identifiers: []
+identifiers:
+- endoflife: vmware-harbor-registry
+  source: https://endoflife.date/vmware-harbor-registry
 aliases: []

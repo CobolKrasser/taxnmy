@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.CTC4110WL.main.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.CTC4110WL.main.firmware
+identifiers:
+- lvfs: 6233dc1f-c5d3-5b07-be69-c7a21b277281
+  source: https://fwupd.org/lvfs/devices/com.wacom.CTC4110WL.main.firmware
+- lvfs: b36d4aa2-e5c9-5239-8109-63bc8248ade0
+  source: https://fwupd.org/lvfs/devices/com.wacom.CTC4110WL.main.firmware
 aliases: []

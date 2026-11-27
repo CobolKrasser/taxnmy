@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U93.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U93.firmware
+identifiers:
+- lvfs: eefd3a9a-e7a1-4155-853a-15352c451808
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U93.firmware
 aliases: []

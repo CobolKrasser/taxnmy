@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefia81a55fe.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefia81a55fe.firmware
+identifiers:
+- lvfs: a81a55fe-7418-4244-bfba-c5bad95efec2
+  source: https://fwupd.org/lvfs/devices/com.dell.uefia81a55fe.firmware
 aliases: []

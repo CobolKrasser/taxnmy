@@ -10,4 +10,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/boundary.md
 - winget: Hashicorp.Boundary
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Boundary
+- endoflife: boundary
+  source: https://endoflife.date/boundary
 aliases: []

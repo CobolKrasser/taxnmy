@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi10c40550.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi10c40550.firmware
+identifiers:
+- lvfs: 10c40550-3da1-44aa-8332-74d09bd1b14f
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi10c40550.firmware
 aliases: []

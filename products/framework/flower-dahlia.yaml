@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.dahlia.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.dahlia.BIOS.firmware
+identifiers:
+- lvfs: 3cf54c16-1a6d-4acd-b42b-47e899df4cf9
+  source: https://fwupd.org/lvfs/devices/work.frame.dahlia.BIOS.firmware
 aliases: []

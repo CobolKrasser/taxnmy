@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X78.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X78.firmware
+identifiers:
+- lvfs: 38e8137a-250c-4bc0-a0c3-6de3024f5f98
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X78.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.eposaudio.IMPACT630.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.eposaudio.IMPACT630.firmware
+identifiers:
+- lvfs: 3c33ed8e-ec02-5d85-94ac-ceb3227c988f
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.IMPACT630.firmware
 aliases: []

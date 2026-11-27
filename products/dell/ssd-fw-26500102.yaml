@@ -5,4 +5,15 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
+identifiers:
+- lvfs: 39d3b762-e189-5e99-b5f7-8e4189328fa8
+  source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
+- lvfs: 5fa9c6da-6e49-5971-9a8a-9ed1754668c2
+  source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
+- lvfs: 60232aa7-0678-5395-8b62-570a7507b287
+  source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
+- lvfs: aa43543a-7cb7-5633-8443-b282e0a2a541
+  source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
+- lvfs: ec10eeb0-80c7-4da6-b9fb-6269be214b66
+  source: https://fwupd.org/lvfs/devices/com.dell.114315.firmware
 aliases: []

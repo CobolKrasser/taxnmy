@@ -8,5 +8,7 @@ versions:
 identifiers:
 - purl: pkg:github/kubernetes-sigs/node-feature-discovery
   source: https://endoflife.date/kubernetes-node-feature-discovery
+- endoflife: kubernetes-node-feature-discovery
+  source: https://endoflife.date/kubernetes-node-feature-discovery
 aliases:
 - the-kubernetes-authors/kubernetes-node-feature-discovery

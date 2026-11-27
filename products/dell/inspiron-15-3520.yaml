@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi86cb8db0.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi86cb8db0.firmware
+identifiers:
+- lvfs: 86cb8db0-84f3-4340-8b2f-682c305f2083
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi86cb8db0.firmware
 aliases:
 - dell/vostro-3520
 - dell/vostro-3420

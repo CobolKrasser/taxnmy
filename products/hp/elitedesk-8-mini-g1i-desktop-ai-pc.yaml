@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X21.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X21.firmware
+identifiers:
+- lvfs: 610a43b0-9802-4355-b500-022ee939310b
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X21.firmware
 aliases: []

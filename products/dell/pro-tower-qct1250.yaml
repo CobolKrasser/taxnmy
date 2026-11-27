@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi3490edef.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi3490edef.firmware
+identifiers:
+- lvfs: 3490edef-2dc7-4245-8174-8491bc127c8b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi3490edef.firmware
 aliases:
 - dell/pro-micro-qcm1250
 - dell/pro-slim-qcs1250

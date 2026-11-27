@@ -5,6 +5,15 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
+identifiers:
+- lvfs: 223acc9d-09d1-5703-829b-ce7fb0d48891
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
+- lvfs: 61d8e624-ce30-5b65-9cad-046aaa84106c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
+- lvfs: a6443b01-6ab1-5524-be2e-1986163abb79
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
+- lvfs: dd1bcae7-92a5-5359-a00e-ceeccde5f0d4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg8-nvme-ssd.firmware
 aliases:
 - lenovo/kxg8aznv1t02-la
 - lenovo/kxg8aznv2t04-la

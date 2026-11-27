@@ -8,5 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:antixlinux:antix_linux
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/antix-linux.md
+- endoflife: antix
+  source: https://endoflife.date/antix
 aliases:
 - antix/antix-linux

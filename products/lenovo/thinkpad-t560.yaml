@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1KET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1KET.firmware
+identifiers:
+- lvfs: 0b145790-0d11-4dee-9c2a-19ddbcbb200c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1KET.firmware
 aliases:
 - lenovo/thinkpad-p50s

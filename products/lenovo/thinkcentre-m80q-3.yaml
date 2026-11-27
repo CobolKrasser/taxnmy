@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M4G.EC.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M4G.EC.firmware
+identifiers:
+- lvfs: ac9f0ce2-be16-4ebd-82d8-c79581036cdd
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4G.EC.firmware
 aliases:
 - lenovo/thinkcentre-m90q-3
 - lenovo/thinkstation-p360tiny

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/tw.com.goodway.guid8dd3a077
 versions:
   source: https://fwupd.org/lvfs/devices/tw.com.goodway.guid8dd3a077
+identifiers:
+- lvfs: 8dd3a077-d20b-576a-bbca-f831088e421b
+  source: https://fwupd.org/lvfs/devices/tw.com.goodway.guid8dd3a077
 aliases: []

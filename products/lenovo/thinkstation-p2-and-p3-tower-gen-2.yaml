@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.S0M.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.S0M.BIOS.firmware
+identifiers:
+- lvfs: 7162f5d6-e510-4eb7-956f-ba6cda4e99d8
+  source: https://fwupd.org/lvfs/devices/com.lenovo.S0M.BIOS.firmware
 aliases: []

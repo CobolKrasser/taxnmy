@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.steelseries.Aerox-3-Wireless-Mouse.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.steelseries.Aerox-3-Wireless-Mouse.firmware
+identifiers:
+- lvfs: 4f3fac7c-981b-58cc-bb58-8a3b90f31c9c
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Aerox-3-Wireless-Mouse.firmware
+- lvfs: 541b2713-d367-5240-a443-bed07f09ffbf
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Aerox-3-Wireless-Mouse.firmware
+- lvfs: ac7d7cbb-7ef5-5466-ab3d-e70ced97ee61
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Aerox-3-Wireless-Mouse.firmware
 aliases: []

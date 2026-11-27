@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT1x5.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT1x5.firmware
+identifiers:
+- lvfs: 07148bbd-06e6-5962-ade0-79b3bbb96bd6
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT1x5.firmware
+- lvfs: 0d44f3a1-ba4b-54af-a7f8-561e76555950
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT1x5.firmware
 aliases: []

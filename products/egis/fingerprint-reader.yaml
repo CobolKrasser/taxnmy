@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.egis.lenovo.moc.9201.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.egis.lenovo.moc.9201.firmware
+identifiers:
+- lvfs: 1d4c2f5f-943c-5bd7-b707-ce99a0499989
+  source: https://fwupd.org/lvfs/devices/com.egis.lenovo.moc.9201.firmware
 aliases: []

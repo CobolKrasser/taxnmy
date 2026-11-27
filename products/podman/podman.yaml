@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:podman_project:podman
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/podman.md
+- endoflife: podman
+  source: https://endoflife.date/podman
 aliases: []

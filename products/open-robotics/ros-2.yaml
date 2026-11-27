@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/ros-2
 versions:
   source: https://endoflife.date/ros-2
-identifiers: []
+identifiers:
+- endoflife: ros-2
+  source: https://endoflife.date/ros-2
 aliases: []

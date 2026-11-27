@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR02ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR02ET.firmware
+identifiers:
+- lvfs: 29ca1559-e603-4237-ba5c-2c55348da93e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR02ET.firmware
 aliases: []

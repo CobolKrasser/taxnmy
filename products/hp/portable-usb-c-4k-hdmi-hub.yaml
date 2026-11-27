@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.Cypher.Merged.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.Cypher.Merged.firmware
+identifiers:
+- lvfs: f6b32c07-9d67-5258-9264-4bb41bc486c7
+  source: https://fwupd.org/lvfs/devices/com.hp.Cypher.Merged.firmware
 aliases: []

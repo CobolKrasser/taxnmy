@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3XETXXW.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3XETXXW.firmware
+identifiers:
+- lvfs: a0fd4aef-f691-4c90-a089-7dd4f4481db0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3XETXXW.firmware
 aliases:
 - lenovo/thinkpad-x1-yoga-8th

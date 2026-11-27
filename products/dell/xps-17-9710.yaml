@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefif9241bf7.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefif9241bf7.firmware
+identifiers:
+- lvfs: f9241bf7-b0a8-4f8b-a224-a7dfbf35cb35
+  source: https://fwupd.org/lvfs/devices/com.dell.uefif9241bf7.firmware
 aliases:
 - dell/precision-5760

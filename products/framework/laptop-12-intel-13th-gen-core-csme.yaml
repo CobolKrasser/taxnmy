@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop12.RPL.CSME.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop12.RPL.CSME.firmware
+identifiers:
+- lvfs: 0f74c56d-d5ba-4942-96fa-d37560f40554
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop12.RPL.CSME.firmware
 aliases: []

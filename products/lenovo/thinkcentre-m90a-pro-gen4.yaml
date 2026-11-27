@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M90aPro-4.EC.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M90aPro-4.EC.firmware
+identifiers:
+- lvfs: 473a9a39-cbdb-43d2-9019-b651333dd86f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M90aPro-4.EC.firmware
 aliases: []

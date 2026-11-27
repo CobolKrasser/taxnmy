@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi398c4c37.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi398c4c37.firmware
+identifiers:
+- lvfs: 398c4c37-8057-4fe2-acaa-c567937c61b8
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi398c4c37.firmware
 aliases:
 - dell/precision-5570

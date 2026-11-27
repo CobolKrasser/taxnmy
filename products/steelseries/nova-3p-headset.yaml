@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-Headset.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-Headset.firmware
+identifiers:
+- lvfs: 3ee717ca-ccc3-593a-a789-b648ca589c2f
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-Headset.firmware
+- lvfs: 58ab431b-fafd-5a33-877c-b42b8bb24c74
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-Headset.firmware
+- lvfs: 8de6b474-c01f-50ec-b44f-892069a95e58
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-Headset.firmware
 aliases: []

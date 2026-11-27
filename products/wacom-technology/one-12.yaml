@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.titan.emr.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.titan.emr.firmware
+identifiers:
+- lvfs: f69e78d8-ff54-5162-8b90-90f6d37fc5bc
+  source: https://fwupd.org/lvfs/devices/com.wacom.titan.emr.firmware
 aliases: []

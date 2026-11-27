@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U62.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U62.firmware
+identifiers:
+- lvfs: 0bd1da99-355f-4f8a-9bde-0ba88279885a
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U62.firmware
 aliases: []

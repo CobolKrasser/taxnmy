@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.onlogic.hx52x.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.onlogic.hx52x.firmware
+identifiers:
+- lvfs: 7ec3ec2a-4db7-4065-ad05-087fbb4eb094
+  source: https://fwupd.org/lvfs/devices/com.onlogic.hx52x.firmware
 aliases: []

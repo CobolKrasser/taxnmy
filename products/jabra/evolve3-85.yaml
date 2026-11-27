@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.jabra.evolve385.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.jabra.evolve385.firmware
+identifiers:
+- lvfs: 5537904a-881e-5b02-a809-ce0d4e735a7e
+  source: https://fwupd.org/lvfs/devices/com.jabra.evolve385.firmware
+- lvfs: 59cc8326-9c1a-5b31-b7fc-2ddeb72cbd98
+  source: https://fwupd.org/lvfs/devices/com.jabra.evolve385.firmware
+- lvfs: eda035d9-938d-56fa-9c3f-3b808b05d6ec
+  source: https://fwupd.org/lvfs/devices/com.jabra.evolve385.firmware
 aliases: []

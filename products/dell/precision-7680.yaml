@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi2a1fbc19.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi2a1fbc19.firmware
+identifiers:
+- lvfs: 2a1fbc19-7ecd-4f08-b2d6-0191f048d66b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi2a1fbc19.firmware
 aliases:
 - dell/precision-7780

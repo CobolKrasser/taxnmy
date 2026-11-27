@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefidb72c932.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefidb72c932.firmware
+identifiers:
+- lvfs: db72c932-b3c6-4640-b382-3f4619ab447b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefidb72c932.firmware
 aliases: []

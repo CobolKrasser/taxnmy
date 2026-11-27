@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:owasp:dependency-track
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/dependency-track.md
+- endoflife: dependency-track
+  source: https://endoflife.date/dependency-track
 aliases: []

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi8e159ea5.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi8e159ea5.firmware
+identifiers:
+- lvfs: 8e159ea5-9be2-4095-ba50-fc450cd5c2c9
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi8e159ea5.firmware
 aliases:
 - dell/vostro-14-3440

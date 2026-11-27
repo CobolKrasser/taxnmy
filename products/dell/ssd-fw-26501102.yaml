@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.114301.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.114301.firmware
+identifiers:
+- lvfs: fa262a1a-b92b-4055-8988-956382bf031f
+  source: https://fwupd.org/lvfs/devices/com.dell.114301.firmware
 aliases: []

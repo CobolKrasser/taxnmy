@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop.PTL.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop.PTL.BIOS.firmware
+identifiers:
+- lvfs: d57397ab-2de9-4fb2-94f0-6045991d9c9e
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop.PTL.BIOS.firmware
 aliases: []

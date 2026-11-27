@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3GDH.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3GDH.firmware
+identifiers:
+- lvfs: 7c8c8f35-04f2-b78b-0913-5d540211746b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3GDH.firmware
 aliases:
 - lenovo/thinkpad-z16-gen-1

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.RW101R.kt.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.RW101R.kt.firmware
+identifiers:
+- lvfs: bbe18502-e155-5e4a-a10b-2681987e9303
+  source: https://fwupd.org/lvfs/devices/com.lenovo.RW101R.kt.firmware
 aliases: []

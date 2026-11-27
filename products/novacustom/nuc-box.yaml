@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.novacustom.NUC_BOX.nuc_box.system.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.novacustom.NUC_BOX.nuc_box.system.firmware
+identifiers:
+- lvfs: 6f3f1f8c-f0a1-42d4-adee-14b476f9e066
+  source: https://fwupd.org/lvfs/devices/com.novacustom.NUC_BOX.nuc_box.system.firmware
 aliases: []

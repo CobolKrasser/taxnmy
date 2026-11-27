@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefib7d33140.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefib7d33140.firmware
+identifiers:
+- lvfs: b7d33140-0d50-47bd-afb5-2ea8b4857470
+  source: https://fwupd.org/lvfs/devices/com.dell.uefib7d33140.firmware
 aliases:
 - dell/optiplex-micro-7020
 - dell/optiplex-sff-7020

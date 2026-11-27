@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.caldigit.ts4.pd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.caldigit.ts4.pd.firmware
+identifiers:
+- lvfs: 707d7941-3129-53d9-a205-47a659d94fe3
+  source: https://fwupd.org/lvfs/devices/com.caldigit.ts4.pd.firmware
 aliases: []

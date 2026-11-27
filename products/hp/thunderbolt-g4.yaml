@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.Dock_Thunderbolt_G4.ccgx.dmc.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.Dock_Thunderbolt_G4.ccgx.dmc.firmware
+identifiers:
+- lvfs: 3d044770-6074-5514-b094-3b7c5dbeb5fc
+  source: https://fwupd.org/lvfs/devices/com.hp.Dock_Thunderbolt_G4.ccgx.dmc.firmware
 aliases: []

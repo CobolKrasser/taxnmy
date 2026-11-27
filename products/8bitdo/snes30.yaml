@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.8bitdo.snes30.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.8bitdo.snes30.firmware
+identifiers:
+- lvfs: 8baed357-638e-5b54-b582-0476bf7d6348
+  source: https://fwupd.org/lvfs/devices/com.8bitdo.snes30.firmware
 aliases: []

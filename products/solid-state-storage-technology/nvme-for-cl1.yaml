@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.ssstc.guidda6c6856.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.ssstc.guidda6c6856.firmware
+identifiers:
+- lvfs: c7ab5f4e-213d-52fe-b26e-7fdc0c2f3d1c
+  source: https://fwupd.org/lvfs/devices/com.ssstc.guidda6c6856.firmware
+- lvfs: da6c6856-9c1f-5f3d-98fc-5d2179f21b18
+  source: https://fwupd.org/lvfs/devices/com.ssstc.guidda6c6856.firmware
 aliases: []

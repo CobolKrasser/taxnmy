@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.Express-PTL-R3.1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.Express-PTL-R3.1.firmware
+identifiers:
+- lvfs: a2bce142-50d6-4ebe-8030-fabc4f8039a3
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.Express-PTL-R3.1.firmware
 aliases: []

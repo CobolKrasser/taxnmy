@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U76.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U76.firmware
+identifiers:
+- lvfs: fcab3607-50b9-4504-b0ca-3661e1f9498e
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U76.firmware
 aliases: []

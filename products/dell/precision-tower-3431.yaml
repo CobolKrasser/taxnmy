@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi2712bb02.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi2712bb02.firmware
+identifiers:
+- lvfs: 2712bb02-7cb3-41c0-9ba9-a47d71f5c0c9
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi2712bb02.firmware
 aliases: []

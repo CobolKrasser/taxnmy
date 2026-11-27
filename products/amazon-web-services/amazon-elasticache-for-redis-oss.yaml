@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/amazon-elasticache-redis
 versions:
   source: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/engine-versions.html
-identifiers: []
+identifiers:
+- endoflife: amazon-elasticache-redis
+  source: https://endoflife.date/amazon-elasticache-redis
 aliases: []

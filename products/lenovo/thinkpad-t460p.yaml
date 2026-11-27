@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR07ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR07ET.firmware
+identifiers:
+- lvfs: 90ef2839-18d5-4bca-8f7c-9f846031d025
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR07ET.firmware
 aliases: []

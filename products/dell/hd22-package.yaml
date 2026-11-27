@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.wd19fc7c6f01.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.wd19fc7c6f01.firmware
+identifiers:
+- lvfs: fc7c6f01-9d2a-5bb5-89eb-59542fb93c46
+  source: https://fwupd.org/lvfs/devices/com.dell.wd19fc7c6f01.firmware
 aliases: []

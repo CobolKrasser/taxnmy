@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT160TANC.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT160TANC.firmware
+identifiers:
+- lvfs: 68a392d6-20a3-5cb9-b06c-a1659f933e7e
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.ADAPT160TANC.firmware
 aliases: []

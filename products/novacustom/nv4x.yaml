@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.novacustom.NV41MZ.system.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.novacustom.NV41MZ.system.firmware
+identifiers:
+- lvfs: 41a8fb3d-213a-5a8a-b0f4-e2a7c55aaf80
+  source: https://fwupd.org/lvfs/devices/com.novacustom.NV41MZ.system.firmware
+- lvfs: 969f1a73-7dc3-57ae-9d71-a26d8b7ba2e0
+  source: https://fwupd.org/lvfs/devices/com.novacustom.NV41MZ.system.firmware
+- lvfs: 9a8c30e2-1b7e-5b28-9632-fc2fbf8cd0ba
+  source: https://fwupd.org/lvfs/devices/com.novacustom.NV41MZ.system.firmware
 aliases: []

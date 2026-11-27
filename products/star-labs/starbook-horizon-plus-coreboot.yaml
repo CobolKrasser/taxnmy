@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.rpl.u
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.rpl.u
+identifiers:
+- lvfs: 41627bd8-70a0-490d-b834-5de90ccfb56d
+  source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.rpl.u
 aliases: []

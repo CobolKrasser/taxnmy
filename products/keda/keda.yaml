@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:github/kedacore/keda
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/keda.md
+- endoflife: keda
+  source: https://endoflife.date/keda
 aliases: []

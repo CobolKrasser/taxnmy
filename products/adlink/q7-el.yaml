@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.Q7-EL.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.Q7-EL.firmware
+identifiers:
+- lvfs: 5857af2e-b0ed-412f-8713-948d57b31d8f
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.Q7-EL.firmware
 aliases: []

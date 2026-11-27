@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M6N.TPM.IFX.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M6N.TPM.IFX.firmware
+identifiers:
+- lvfs: f47ae399-d678-4e31-a85b-248f1925e63b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M6N.TPM.IFX.firmware
 aliases: []

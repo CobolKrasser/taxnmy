@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.2100AI.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.2100AI.firmware
+identifiers:
+- lvfs: 810be8ce-0962-54a5-ac1a-722529447ab7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2100AI.firmware
+- lvfs: 90d830b1-17e6-5754-b518-f256cb8e311d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2100AI.firmware
+- lvfs: f21eb0d7-fc4d-58c4-9dea-bd351778821b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2100AI.firmware
 aliases: []

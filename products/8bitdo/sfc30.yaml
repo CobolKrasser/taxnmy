@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.8bitdo.sfc30.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.8bitdo.sfc30.firmware
+identifiers:
+- lvfs: f94d3231-f6e1-5ef3-a4a0-dc819d74ae54
+  source: https://fwupd.org/lvfs/devices/com.8bitdo.sfc30.firmware
 aliases: []

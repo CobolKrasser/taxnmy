@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN38ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN38ET.firmware
+identifiers:
+- lvfs: 28155bd3-6555-4913-830d-c4533ae85e92
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN38ET.firmware
 aliases:
 - lenovo/thinkpad-p15v-gen-2i

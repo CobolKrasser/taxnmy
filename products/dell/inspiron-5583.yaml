@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi321ba194.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi321ba194.firmware
+identifiers:
+- lvfs: 321ba194-7ac2-41f0-9513-8c5873d332d0
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi321ba194.firmware
 aliases:
 - dell/inspiron-5584

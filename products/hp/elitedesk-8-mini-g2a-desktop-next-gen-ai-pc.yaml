@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.Y26.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.Y26.firmware
+identifiers:
+- lvfs: e7689943-9a29-4224-b041-58a968383ac9
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.Y26.firmware
 aliases: []

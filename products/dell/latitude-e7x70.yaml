@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi212026ee.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi212026ee.firmware
+identifiers:
+- lvfs: 212026ee-fde4-4d08-ac41-c62cb4036a42
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi212026ee.firmware
 aliases: []

@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-USB-Receiver.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-USB-Receiver.firmware
+identifiers:
+- lvfs: 6ae8d498-6d33-517a-93d9-74b682c851a4
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-USB-Receiver.firmware
+- lvfs: cfbf0cbf-93c6-54c2-a0ff-d67458946c15
+  source: https://fwupd.org/lvfs/devices/com.steelseries.Nova-3P-USB-Receiver.firmware
 aliases: []

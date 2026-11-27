@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi896e9574.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi896e9574.firmware
+identifiers:
+- lvfs: 896e9574-be96-4884-fcc8-259e3cf60a2d
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi896e9574.firmware
 aliases:
 - dell/optiplex-xe4-series

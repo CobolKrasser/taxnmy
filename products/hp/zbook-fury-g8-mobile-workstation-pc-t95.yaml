@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.T95.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.T95.firmware
+identifiers:
+- lvfs: 42b16981-f4bd-4151-abe7-44a47396dad9
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.T95.firmware
 aliases: []

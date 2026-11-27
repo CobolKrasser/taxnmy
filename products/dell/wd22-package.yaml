@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.wd197fb217aa.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.wd197fb217aa.firmware
+identifiers:
+- lvfs: 7fb217aa-2312-5c99-a853-56d865c76815
+  source: https://fwupd.org/lvfs/devices/com.dell.wd197fb217aa.firmware
 aliases: []

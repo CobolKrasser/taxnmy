@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.novacustom.V5xTNC_TND_TNE.V540TNx.system.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.novacustom.V5xTNC_TND_TNE.V540TNx.system.firmware
+identifiers:
+- lvfs: ec380f40-ad1b-40e9-b5a2-99ab56be66d3
+  source: https://fwupd.org/lvfs/devices/com.novacustom.V5xTNC_TND_TNE.V540TNx.system.firmware
 aliases: []

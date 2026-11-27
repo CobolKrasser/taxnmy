@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YET.firmware
+identifiers:
+- lvfs: a4653948-f2ae-4ec4-869a-f01f69b46273
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YET.firmware
 aliases:
 - lenovo/thinkpad-x13-gen-1

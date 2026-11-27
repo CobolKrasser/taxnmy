@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2WBL_00050299.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2WBL_00050299.firmware
+identifiers:
+- lvfs: ddfba33e-ab05-4f34-8829-0b80858c5123
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2WBL_00050299.firmware
 aliases: []

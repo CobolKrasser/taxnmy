@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.maxlinear.mxl862xx.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.maxlinear.mxl862xx.firmware
+identifiers:
+- lvfs: 9ac715d5-9e4c-53da-9801-05d8366855b6
+  source: https://fwupd.org/lvfs/devices/com.maxlinear.mxl862xx.firmware
+- lvfs: d2a6f602-d988-5425-b686-5c1081576cce
+  source: https://fwupd.org/lvfs/devices/com.maxlinear.mxl862xx.firmware
 aliases: []

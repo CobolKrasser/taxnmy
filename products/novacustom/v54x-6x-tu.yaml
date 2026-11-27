@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.novacustom.V54x_6x_TU.V540TU.system.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.novacustom.V54x_6x_TU.V540TU.system.firmware
+identifiers:
+- lvfs: f4deb4f3-f673-48fe-a481-627357b00b6a
+  source: https://fwupd.org/lvfs/devices/com.novacustom.V54x_6x_TU.V540TU.system.firmware
 aliases: []

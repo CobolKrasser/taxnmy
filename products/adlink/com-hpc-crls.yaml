@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.COM-HPC-cRLS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.COM-HPC-cRLS.firmware
+identifiers:
+- lvfs: 91b1d0be-8a4f-4ae3-881d-3f30a0e740f2
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.COM-HPC-cRLS.firmware
 aliases: []

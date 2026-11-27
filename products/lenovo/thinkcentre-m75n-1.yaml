@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M33.ECFW.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M33.ECFW.firmware
+identifiers:
+- lvfs: 4a969e91-fe47-49ae-af5d-f12882d10f8e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M33.ECFW.firmware
 aliases: []

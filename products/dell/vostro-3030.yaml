@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefied7f8936.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefied7f8936.firmware
+identifiers:
+- lvfs: ed7f8936-d56e-4c69-8617-a4464da6b98c
+  source: https://fwupd.org/lvfs/devices/com.dell.uefied7f8936.firmware
 aliases:
 - dell/vostro-3030s

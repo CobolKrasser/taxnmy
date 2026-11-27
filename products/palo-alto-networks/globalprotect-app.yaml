@@ -8,5 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:paloaltonetworks:globalprotect
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/pan-gp.md
+- endoflife: pangp
+  source: https://endoflife.date/pangp
 aliases:
 - palo-alto-networks/palo-alto-networks-globalprotect-app

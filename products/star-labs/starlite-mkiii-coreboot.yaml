@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.lite.glk
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.lite.glk
+identifiers:
+- lvfs: 5070631a-0521-4177-bb78-1672c6716a03
+  source: https://fwupd.org/lvfs/devices/com.starlabs.lite.glk
 aliases: []

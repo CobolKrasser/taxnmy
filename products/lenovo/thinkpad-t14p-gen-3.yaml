@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2WSGXXW.NonVprofirmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2WSGXXW.NonVprofirmware
+identifiers:
+- lvfs: b3c91490-0749-420d-9225-efa161b2f908
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2WSGXXW.NonVprofirmware
 aliases:
 - lenovo/thinkpad-p14s-gen-6
 - lenovo/thinkpad-p16s-gen-4

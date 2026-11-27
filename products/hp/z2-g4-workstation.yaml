@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.Q50.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.Q50.firmware
+identifiers:
+- lvfs: 53d45766-b6b6-43f9-8c4d-d3d8020427fe
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.Q50.firmware
 aliases: []

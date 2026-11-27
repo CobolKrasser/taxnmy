@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.Gen2.SynaMST.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.Gen2.SynaMST.firmware
+identifiers:
+- lvfs: cf1bdd9f-29bc-5dab-9d14-dad7a4e06d16
+  source: https://fwupd.org/lvfs/devices/com.lenovo.Gen2.SynaMST.firmware
 aliases: []

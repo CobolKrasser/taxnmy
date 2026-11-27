@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3EET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3EET.firmware
+identifiers:
+- lvfs: 4e1c5927-e848-47af-aaa6-565f6fce997d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3EET.firmware
 aliases:
 - lenovo/thinkpad-t15p-gen-3

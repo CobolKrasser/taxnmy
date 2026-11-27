@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4BSGXXW.Vpro.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4BSGXXW.Vpro.firmware
+identifiers:
+- lvfs: 815a4e4a-fd97-4bb0-b55f-cba7608f3748
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4BSGXXW.Vpro.firmware
 aliases:
 - lenovo/thinkpad-x1-2-in-1-10th

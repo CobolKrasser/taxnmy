@@ -5,6 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
+identifiers:
+- lvfs: 7907bb58-84c2-5473-bcca-255d8f33a347
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
+- lvfs: d0831dc7-f39b-50dc-bc13-a4f0c315c0ba
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
+- lvfs: e04d75fa-e2db-5d35-8549-f971acda90e8
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-nvme-ssd.firmware
 aliases:
 - lenovo/kxg6aznv512g-toshiba
 - lenovo/kxg6aznv1t02-toshiba

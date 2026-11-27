@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/sharepoint
 versions:
   source: https://learn.microsoft.com/en-us/lifecycle/products/?terms=SharePoint%20Server
-identifiers: []
+identifiers:
+- endoflife: sharepoint
+  source: https://endoflife.date/sharepoint
 aliases:
 - microsoft/sharepoint-server

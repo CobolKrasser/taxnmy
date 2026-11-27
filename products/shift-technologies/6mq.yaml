@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/eco.shift.axolotl.abl.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/eco.shift.axolotl.abl.firmware
+identifiers:
+- lvfs: 1fbf6d7c-cc44-5d0d-9d55-74d7d61c4f68
+  source: https://fwupd.org/lvfs/devices/eco.shift.axolotl.abl.firmware
+- lvfs: 80c0cda2-2333-5f00-bcfd-c1830216585a
+  source: https://fwupd.org/lvfs/devices/eco.shift.axolotl.abl.firmware
+- lvfs: 9adc34d6-c729-51de-98ca-9066fcf85630
+  source: https://fwupd.org/lvfs/devices/eco.shift.axolotl.abl.firmware
+- lvfs: a1ea18c7-9f12-5ff0-8887-7d81f92ec261
+  source: https://fwupd.org/lvfs/devices/eco.shift.axolotl.abl.firmware
 aliases: []

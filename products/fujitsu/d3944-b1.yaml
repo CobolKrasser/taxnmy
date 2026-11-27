@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.fujitsu.D3944-B1.uefi.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.fujitsu.D3944-B1.uefi.firmware
+identifiers:
+- lvfs: ca2c5e98-764a-4910-9af7-10b9aee44eed
+  source: https://fwupd.org/lvfs/devices/com.fujitsu.D3944-B1.uefi.firmware
 aliases: []

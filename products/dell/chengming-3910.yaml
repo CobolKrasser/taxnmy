@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefidab3d70d.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefidab3d70d.firmware
+identifiers:
+- lvfs: dab3d70d-84d1-421a-9a09-b133b1d2d65b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefidab3d70d.firmware
 aliases:
 - dell/chengming-3911

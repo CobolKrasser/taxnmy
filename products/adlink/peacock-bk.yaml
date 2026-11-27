@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.Peacock-BK.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.Peacock-BK.firmware
+identifiers:
+- lvfs: 4c611468-3db7-40ea-8dc5-c13a89cf0a15
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.Peacock-BK.firmware
 aliases: []

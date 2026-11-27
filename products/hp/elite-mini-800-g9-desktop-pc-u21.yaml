@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U21.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U21.firmware
+identifiers:
+- lvfs: 836e24fd-1231-4317-8a6b-8110dab9259e
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.U21.firmware
 aliases: []

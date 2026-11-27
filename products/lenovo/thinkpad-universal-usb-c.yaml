@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.usbcundk28.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.usbcundk28.firmware
+identifiers:
+- lvfs: ca341c20-bb7b-572b-baf0-cd23cad99425
+  source: https://fwupd.org/lvfs/devices/com.lenovo.usbcundk28.firmware
 aliases: []

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi6788b858.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi6788b858.firmware
+identifiers:
+- lvfs: 6788b858-cd88-4044-a110-7cc098085b06
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi6788b858.firmware
 aliases:
 - dell/latitude-3550

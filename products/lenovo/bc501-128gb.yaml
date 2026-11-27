@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.BC501.128GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.BC501.128GB.firmware
+identifiers:
+- lvfs: 36939208-3862-547e-ab3f-a7e13035b0ee
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BC501.128GB.firmware
+- lvfs: 812accea-cb1f-5d60-bdc7-5f7d2459840a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BC501.128GB.firmware
 aliases: []

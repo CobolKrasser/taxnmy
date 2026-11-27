@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/de.extracomputer.D3724-REx.uefi.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/de.extracomputer.D3724-REx.uefi.firmware
+identifiers:
+- lvfs: def41966-5b56-4205-af27-333732345245
+  source: https://fwupd.org/lvfs/devices/de.extracomputer.D3724-REx.uefi.firmware
 aliases: []

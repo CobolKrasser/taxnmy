@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP320.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP320.firmware
+identifiers:
+- lvfs: 50138620-0ee2-4164-89b8-de522cb87c90
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP320.firmware
 aliases: []

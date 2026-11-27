@@ -16,7 +16,7 @@ No rule is left untested because code settled another one (TAX-24). Where code c
 rule that stays with the AI, `partly` says what it found, and the AI gets that as a note:
 
 - TE1: the literal values are the product name, in the text of the product's `source`, and each
-  code (cpe, purl, gtin, winget, homebrew), in the text of its own `source`. Code finds them, but
+  code (cpe, purl, gtin, winget, homebrew, lvfs, endoflife), in the text of its own `source`. Code finds them, but
   `kind` is a classification, not a literal value, so TE1 itself stays with the AI.
 - TP5: for a publisher proposed together with the product, both URLs come from the proposal. That
   they share a domain shows where the versions are, not who publishes them: a wrong publisher
@@ -44,7 +44,7 @@ MAX_NAME = 40  # TK2: a longer name may be a description, so the AI judges it
 # README "What the lint does not check yet", proposal 1: an AI chat is never a source (TE1).
 AI_CHAT_DOMAINS = sites.names("ai_chats")  # referee/sites.yaml (TG4)
 
-CODES = ("cpe", "purl", "gtin", "winget", "homebrew")
+CODES = ("cpe", "purl", "gtin", "winget", "homebrew", "lvfs", "endoflife")
 
 # Domains and owners (registrable, owner and the lists of sites with many owners) are in tools/guard.py,
 # which the lint shares (TV3). The lists there are classes of sites, not products.
@@ -66,7 +66,7 @@ def appears(value: str, text: str, after: str = r"\w") -> bool:
 
 # What may not follow a code in a text, so that a longer code is not taken for it. A CPE may be
 # followed by its version fields (a colon); the others may not run on.
-CODE_TAIL = {"cpe": r"[\w.\-*]", "purl": r"[\w./\-+%@]", "gtin": r"\d", "winget": r"[\w.\-+]", "homebrew": r"[\w@.\-+]"}
+CODE_TAIL = {"cpe": r"[\w.\-*]", "purl": r"[\w./\-+%@]", "gtin": r"\d", "winget": r"[\w.\-+]", "homebrew": r"[\w@.\-+]", "lvfs": r"[\w\-]", "endoflife": r"[\w\-]"}
 
 
 def read(src: Source | None) -> bool:

@@ -16,5 +16,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/bun.md
 - winget: Oven-sh.Bun
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun
+- endoflife: bun
+  source: https://endoflife.date/bun
 aliases:
 - oven-sh/bun

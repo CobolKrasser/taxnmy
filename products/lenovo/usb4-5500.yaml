@@ -5,5 +5,10 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.usb4-dock-5500.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.usb4-dock-5500.firmware
+identifiers:
+- lvfs: 6f9fdaf3-7626-550f-b1d7-da99bf57ee49
+  source: https://fwupd.org/lvfs/devices/com.lenovo.usb4-dock-5500.firmware
+- lvfs: 7a461812-e8b0-57ff-b313-dec92a243f32
+  source: https://fwupd.org/lvfs/devices/com.lenovo.usb4-dock-5500.firmware
 aliases:
 - lenovo/usb4-5000

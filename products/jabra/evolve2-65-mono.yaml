@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.jabra.jabraevolve265mono.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.jabra.jabraevolve265mono.firmware
+identifiers:
+- lvfs: 283104ef-4945-52d4-8f16-c1f2385cbb40
+  source: https://fwupd.org/lvfs/devices/com.jabra.jabraevolve265mono.firmware
+- lvfs: 4ceed892-f969-5028-ad2d-0981e06637dc
+  source: https://fwupd.org/lvfs/devices/com.jabra.jabraevolve265mono.firmware
+- lvfs: 64f5b2bb-a7fb-50d9-a01f-75b716c2413b
+  source: https://fwupd.org/lvfs/devices/com.jabra.jabraevolve265mono.firmware
+- lvfs: dd1a4b2d-c24c-53cf-a1ac-2d9d90b212bc
+  source: https://fwupd.org/lvfs/devices/com.jabra.jabraevolve265mono.firmware
 aliases: []

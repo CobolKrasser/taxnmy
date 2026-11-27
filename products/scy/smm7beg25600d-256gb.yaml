@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.shichuangyi.smm7beg25600d.256gb.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.shichuangyi.smm7beg25600d.256gb.firmware
+identifiers:
+- lvfs: 9ca00f55-5c59-5eca-87ec-c97adc529ab6
+  source: https://fwupd.org/lvfs/devices/com.shichuangyi.smm7beg25600d.256gb.firmware
+- lvfs: f5324d21-5725-5f86-8f8f-a9e86be0607f
+  source: https://fwupd.org/lvfs/devices/com.shichuangyi.smm7beg25600d.256gb.firmware
 aliases: []

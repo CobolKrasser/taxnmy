@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.xg6-p-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.xg6-p-nvme-ssd.firmware
+identifiers:
+- lvfs: 73a0c81f-2555-56a5-bb6a-c2aeab2213d1
+  source: https://fwupd.org/lvfs/devices/com.dell.xg6-p-nvme-ssd.firmware
 aliases: []

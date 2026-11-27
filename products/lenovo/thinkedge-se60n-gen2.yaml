@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.se60n.gen2.bios
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.se60n.gen2.bios
+identifiers:
+- lvfs: 0ba5afeb-9779-4e19-8d9b-c61c3c456e4a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.se60n.gen2.bios
 aliases: []

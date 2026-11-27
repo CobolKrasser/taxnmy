@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.formelife.studio.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.formelife.studio.firmware
+identifiers:
+- lvfs: d9e11b1b-bd57-4160-b641-0f7df9486fbc
+  source: https://fwupd.org/lvfs/devices/com.formelife.studio.firmware
 aliases: []

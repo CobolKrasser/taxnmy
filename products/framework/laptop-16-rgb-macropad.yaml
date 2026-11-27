@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.Macropad
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.Macropad
+identifiers:
+- lvfs: aa1f48fb-ae6f-5f3f-96eb-1ce0002cdae3
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.Macropad
 aliases: []

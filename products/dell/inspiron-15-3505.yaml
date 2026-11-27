@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi64f781fc.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi64f781fc.firmware
+identifiers:
+- lvfs: 64f781fc-422b-5e1a-adea-8e828ae92634
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi64f781fc.firmware
 aliases:
 - dell/vostro-3505

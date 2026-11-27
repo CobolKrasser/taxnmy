@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X88.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X88.firmware
+identifiers:
+- lvfs: a5b30c99-c8b0-4928-9a33-6e76ce25867b
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X88.firmware
 aliases: []

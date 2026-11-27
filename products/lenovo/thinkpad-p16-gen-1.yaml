@@ -5,5 +5,10 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FET.firmware
+identifiers:
+- lvfs: 3c363f0d-2e32-441f-85c6-2d3d8573b35c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FET.firmware
+- lvfs: be69a01c-4e36-4248-819e-ab29b3358e13
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3FBL_000100D4.firmware
 aliases:
 - lenovo/thinkpad-p16-gen1

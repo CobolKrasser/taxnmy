@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.P360.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.P360.BIOS.firmware
+identifiers:
+- lvfs: 1e477afe-8de9-44f9-8102-17fbfa1fe5b7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.P360.BIOS.firmware
 aliases: []

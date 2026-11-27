@@ -5,5 +5,10 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52kbd.release.fast.pair.smp.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52kbd.release.fast.pair.smp.firmware
+identifiers:
+- lvfs: aea3331c-607e-5e49-b186-440cfc3f11f9
+  source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52kbd.release.fast.pair.smp.firmware
+- lvfs: be2359f1-5ee0-56a3-82f2-19b18b8e468c
+  source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52kbd.release.fast.pair.smp.firmware
 aliases:
 - nordic/nrf-desktop-nrf52kbd-release-fast-pair-smp

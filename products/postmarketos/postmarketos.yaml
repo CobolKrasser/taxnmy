@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/postmarketos
 versions:
   source: https://endoflife.date/postmarketos
-identifiers: []
+identifiers:
+- endoflife: postmarketos
+  source: https://endoflife.date/postmarketos
 aliases: []

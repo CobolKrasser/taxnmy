@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/nutanix-prism
 versions:
   source: https://www.nutanix.com/support-services/support-policies-and-faqs
-identifiers: []
+identifiers:
+- endoflife: nutanix-prism
+  source: https://endoflife.date/nutanix-prism
 aliases:
 - nutanix/nutanix-prism-central

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP5.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP5.firmware
+identifiers:
+- lvfs: 8ab4e7fc-4f4f-4bf5-a02a-1ab340da9028
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP5.firmware
 aliases: []

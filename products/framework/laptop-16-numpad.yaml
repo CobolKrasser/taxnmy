@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.Numpad
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.Numpad
+identifiers:
+- lvfs: 7812afb5-8506-5e90-8881-8f5f9a5b0e75
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.Numpad
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.eposaudio.IMPACT660ANC.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.eposaudio.IMPACT660ANC.firmware
+identifiers:
+- lvfs: 34779c26-9651-597b-83f4-2a7703781481
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.IMPACT660ANC.firmware
 aliases: []

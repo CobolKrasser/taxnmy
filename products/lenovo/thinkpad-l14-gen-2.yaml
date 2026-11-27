@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1JET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1JET.firmware
+identifiers:
+- lvfs: 2efb2b3c-2363-4c0c-8d47-9b6427b449b3
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1JET.firmware
 aliases:
 - lenovo/thinkpad-l15-gen-2

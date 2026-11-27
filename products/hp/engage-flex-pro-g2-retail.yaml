@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.V30.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.V30.firmware
+identifiers:
+- lvfs: 3075109a-62d9-40f7-ad15-df3b5b0c435c
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.V30.firmware
 aliases: []

@@ -5,6 +5,15 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
+identifiers:
+- lvfs: 539b7e94-0ed1-5441-bd4a-15b6f7a2437c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
+- lvfs: acf516d0-88c6-5de3-abf6-164df7c47b5b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
+- lvfs: cbb133ed-41c0-5dad-8624-169e04cc1c73
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
+- lvfs: cfb5a105-7bdd-54d9-bc3b-da3976b1111c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BG6.AXLA.firmware
 aliases:
 - lenovo/kbg6aznt256g-la
 - lenovo/kbg6aznv512g-la

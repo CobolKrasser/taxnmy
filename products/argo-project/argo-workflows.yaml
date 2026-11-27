@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:github/argoproj/argo-workflows
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/argo-workflows.md
+- endoflife: argo-workflows
+  source: https://endoflife.date/argo-workflows
 aliases: []

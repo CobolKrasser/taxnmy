@@ -11,6 +11,16 @@ The version follows [Semantic Versioning](https://semver.org/):
   a new kind;
 - **patch**: a change that does not change which files are valid, such as a description.
 
+## 3.1.0 — 2026-11-27
+
+- Product: two new kinds of identifier (TAX-68). `lvfs`: a GUID that a device reports itself to
+  fwupd, as LVFS names it at the device, in lower case. `endoflife`: the name of a page of
+  endoflife.date that describes this one product, as the API of endoflife.date names it. Each has a
+  `source`, like every identifier. The schema refuses a value that does not have the form of its kind.
+- A page of endoflife.date that lists the models of a line of devices names no product: its name is
+  not an identifier of any of them.
+- Existing files stay valid; readers that do not know the kinds can ignore them.
+
 ## 3.0.0 — 2026-11-25
 
 - Product: `versions` takes one of two forms (rule TP1, TAX-67). Either `source`, the page where the

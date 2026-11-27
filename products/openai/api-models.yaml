@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/openai-api-models
 versions:
   source: https://developers.openai.com/api/docs/deprecations
-identifiers: []
+identifiers:
+- endoflife: openai-api-models
+  source: https://endoflife.date/openai-api-models
 aliases:
 - openai/openai-api-models

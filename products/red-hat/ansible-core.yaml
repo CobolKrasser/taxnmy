@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:redhat:ansible
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/ansible-core.md
+- endoflife: ansible-core
+  source: https://endoflife.date/ansible-core
 aliases: []

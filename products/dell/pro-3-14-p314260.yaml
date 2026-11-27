@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi104ae1b7.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi104ae1b7.firmware
+identifiers:
+- lvfs: 104ae1b7-9984-4702-b65a-22223271da94
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi104ae1b7.firmware
 aliases:
 - dell/pro-3-16-p316260
 - dell/pro-5-14-p514260

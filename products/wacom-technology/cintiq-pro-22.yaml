@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.DTH-227.main.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.DTH-227.main.firmware
+identifiers:
+- lvfs: 84ff21d4-9219-5c13-acf2-a74a503604e4
+  source: https://fwupd.org/lvfs/devices/com.wacom.DTH-227.main.firmware
 aliases: []

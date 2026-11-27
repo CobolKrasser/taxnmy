@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.P330.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.P330.BIOS.firmware
+identifiers:
+- lvfs: 6bfea39f-87d3-4be0-9afb-39c8632dea45
+  source: https://fwupd.org/lvfs/devices/com.lenovo.P330.BIOS.firmware
 aliases: []

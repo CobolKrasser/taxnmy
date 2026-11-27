@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA2.camera.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA2.camera.firmware
+identifiers:
+- lvfs: d259f270-fd49-4393-b1ab-64278cfd2a8d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA2.camera.firmware
 aliases:
 - lenovo/thinkpad-p14s
 - lenovo/thinkpad-t15

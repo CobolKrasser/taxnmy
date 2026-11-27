@@ -5,5 +5,10 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52840dk.mcuboot.qspi.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52840dk.mcuboot.qspi.firmware
+identifiers:
+- lvfs: 43b38427-fdf5-5400-a23c-f3eb7ea00e7c
+  source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52840dk.mcuboot.qspi.firmware
+- lvfs: a0c4f196-bfd2-5d07-b1db-bebf1701528f
+  source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52840dk.mcuboot.qspi.firmware
 aliases:
 - nordic/nrf-desktop-nrf52840dk-mcuboot-qspi

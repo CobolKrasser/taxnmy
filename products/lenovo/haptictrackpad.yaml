@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.sensel.pg2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.sensel.pg2.firmware
+identifiers:
+- lvfs: 940ccbfc-ce9f-4b99-ae99-666db2c06195
+  source: https://fwupd.org/lvfs/devices/com.lenovo.sensel.pg2.firmware
 aliases: []

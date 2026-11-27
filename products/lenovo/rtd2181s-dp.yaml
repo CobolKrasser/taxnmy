@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.TravelHubGen2.rtd2181s.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.TravelHubGen2.rtd2181s.firmware
+identifiers:
+- lvfs: 0ff4bb9f-9bc1-56c3-8076-db1ccec7a9ac
+  source: https://fwupd.org/lvfs/devices/com.lenovo.TravelHubGen2.rtd2181s.firmware
 aliases: []

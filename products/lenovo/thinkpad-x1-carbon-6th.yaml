@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN23ETXXP.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN23ETXXP.firmware
+identifiers:
+- lvfs: 99d47dfe-68fc-4a6f-b541-32e003c886fb
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN23ETXXP.firmware
 aliases: []

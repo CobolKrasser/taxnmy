@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi1db0a61a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi1db0a61a.firmware
+identifiers:
+- lvfs: 1db0a61a-a8f0-4301-9d02-c7809463c59d
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi1db0a61a.firmware
 aliases:
 - dell/pro-max-16

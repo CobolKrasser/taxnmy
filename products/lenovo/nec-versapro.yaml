@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA20.camera.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA20.camera.firmware
+identifiers:
+- lvfs: a14836f2-a22e-49d0-a412-dc66cdcc10af
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2YA20.camera.firmware
 aliases: []

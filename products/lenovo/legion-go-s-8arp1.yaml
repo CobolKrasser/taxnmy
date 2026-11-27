@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.LegionGoS8ARP1.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.LegionGoS8ARP1.BIOS.firmware
+identifiers:
+- lvfs: 36a4e61a-b574-4c07-b1e1-761f40d358ce
+  source: https://fwupd.org/lvfs/devices/com.lenovo.LegionGoS8ARP1.BIOS.firmware
 aliases: []

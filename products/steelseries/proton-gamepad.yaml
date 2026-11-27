@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.steelseries.gamepad.Proton.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.steelseries.gamepad.Proton.firmware
+identifiers:
+- lvfs: 4efc3458-1805-5bd2-8054-418537ac9b4e
+  source: https://fwupd.org/lvfs/devices/com.steelseries.gamepad.Proton.firmware
+- lvfs: 7e140fc1-6bb1-5158-a2b3-5736390750b8
+  source: https://fwupd.org/lvfs/devices/com.steelseries.gamepad.Proton.firmware
 aliases: []

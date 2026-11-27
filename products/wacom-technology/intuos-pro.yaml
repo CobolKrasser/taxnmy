@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.PTK470.sub-cpu.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.PTK470.sub-cpu.firmware
+identifiers:
+- lvfs: 57e26306-5d0b-5216-9452-bdc9dad5ff67
+  source: https://fwupd.org/lvfs/devices/com.wacom.PTK470.sub-cpu.firmware
 aliases: []

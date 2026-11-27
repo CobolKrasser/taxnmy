@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefia4279c9d.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefia4279c9d.firmware
+identifiers:
+- lvfs: a4279c9d-80a0-4ec3-9dfa-051d59a6392b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefia4279c9d.firmware
 aliases:
 - dell/vostro-3530
 - dell/vostro-3430

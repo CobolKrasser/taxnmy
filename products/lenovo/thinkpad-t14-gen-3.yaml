@@ -5,6 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BET.firmware
+identifiers:
+- lvfs: 4174782a-7813-405e-86f5-c878eb1a1da7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BET.firmware
+- lvfs: d8562729-eca0-480f-bf57-4815f85531e7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3BCZNTC7231.firmware
 aliases:
 - lenovo/thinkpad-p14s-gen-3
 - lenovo/thinkpad-t16-gen-1

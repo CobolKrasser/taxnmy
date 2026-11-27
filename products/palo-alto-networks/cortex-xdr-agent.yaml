@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/cortex-xdr
 versions:
   source: https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary
-identifiers: []
+identifiers:
+- endoflife: cortex-xdr
+  source: https://endoflife.date/cortex-xdr
 aliases:
 - palo-alto-networks/palo-alto-networks-cortex-xdr-agent

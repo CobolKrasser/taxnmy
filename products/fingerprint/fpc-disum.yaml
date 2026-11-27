@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.fingerprints.lenfy.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.fingerprints.lenfy.firmware
+identifiers:
+- lvfs: bcb666d2-d13b-5295-b6ef-32a3f4ba8737
+  source: https://fwupd.org/lvfs/devices/com.fingerprints.lenfy.firmware
 aliases: []

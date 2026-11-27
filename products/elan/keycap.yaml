@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.elan.keycap.firmware.F1409A
 versions:
   source: https://fwupd.org/lvfs/devices/com.elan.keycap.firmware.F1409A
+identifiers:
+- lvfs: 17cb822c-015e-5ee1-94a9-850c8e586437
+  source: https://fwupd.org/lvfs/devices/com.elan.keycap.firmware.F1409A
 aliases: []

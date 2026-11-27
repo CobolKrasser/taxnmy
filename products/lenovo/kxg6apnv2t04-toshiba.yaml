@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-2TB-nvme-ssd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-2TB-nvme-ssd.firmware
+identifiers:
+- lvfs: 91e4d3c3-dac8-5583-b9d0-5e0a208228d6
+  source: https://fwupd.org/lvfs/devices/com.lenovo.xg6-2TB-nvme-ssd.firmware
 aliases: []

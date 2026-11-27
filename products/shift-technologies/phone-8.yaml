@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/eco.shift.otter.abl.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/eco.shift.otter.abl.firmware
+identifiers:
+- lvfs: 33dd432d-2615-58ad-98e1-ea2156d215bb
+  source: https://fwupd.org/lvfs/devices/eco.shift.otter.abl.firmware
+- lvfs: 67c7794d-af25-565d-b5ce-9a42da0e93e8
+  source: https://fwupd.org/lvfs/devices/eco.shift.otter.abl.firmware
+- lvfs: 69290045-1ca1-585f-bece-0ed098381b90
+  source: https://fwupd.org/lvfs/devices/eco.shift.otter.abl.firmware
+- lvfs: f6017f0c-945c-5b06-8bf1-0c0b044adb7f
+  source: https://fwupd.org/lvfs/devices/eco.shift.otter.abl.firmware
 aliases: []

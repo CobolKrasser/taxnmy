@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.novacustom.NV4xPZ.v2.1.system.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.novacustom.NV4xPZ.v2.1.system.firmware
+identifiers:
+- lvfs: b79b7279-79a4-47cf-ab2f-8636c541f2d0
+  source: https://fwupd.org/lvfs/devices/com.novacustom.NV4xPZ.v2.1.system.firmware
 aliases: []

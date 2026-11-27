@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefief23c90e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefief23c90e.firmware
+identifiers:
+- lvfs: ef23c90e-2292-469f-bfc2-56bb69bcb923
+  source: https://fwupd.org/lvfs/devices/com.dell.uefief23c90e.firmware
 aliases:
 - dell/vostro-3535

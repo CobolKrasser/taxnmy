@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefia58b1115.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefia58b1115.firmware
+identifiers:
+- lvfs: a58b1115-337f-4731-9a7e-a3c64f1a5dd4
+  source: https://fwupd.org/lvfs/devices/com.dell.uefia58b1115.firmware
 aliases:
 - dell/vostro-16-5640

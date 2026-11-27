@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi9a5670e3.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi9a5670e3.firmware
+identifiers:
+- lvfs: 9a5670e3-f05e-45be-a427-626fc54bc958
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi9a5670e3.firmware
 aliases:
 - dell/pro-16-pc16250

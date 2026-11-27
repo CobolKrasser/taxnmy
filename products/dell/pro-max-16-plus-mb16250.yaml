@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi8f2b3e1a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi8f2b3e1a.firmware
+identifiers:
+- lvfs: 8f2b3e1a-5c6d-4e92-a1b7-f0d9c8b4a5e2
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi8f2b3e1a.firmware
 aliases:
 - dell/pro-max-18-plus-mb18250

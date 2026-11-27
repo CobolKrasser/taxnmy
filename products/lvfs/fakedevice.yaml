@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/org.fwupd.fakedevice.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/org.fwupd.fakedevice.firmware
+identifiers:
+- lvfs: b585990a-003e-5270-89d5-3705a17f9a43
+  source: https://fwupd.org/lvfs/devices/org.fwupd.fakedevice.firmware
 aliases: []

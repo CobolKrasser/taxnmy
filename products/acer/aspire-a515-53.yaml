@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.Acer.Pikachu_WL.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.Acer.Pikachu_WL.firmware
+identifiers:
+- lvfs: a512977b-26cf-4da6-9839-59483ed675d3
+  source: https://fwupd.org/lvfs/devices/com.Acer.Pikachu_WL.firmware
 aliases:
 - acer/aspire-a515-53g

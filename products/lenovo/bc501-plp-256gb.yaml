@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.BC501_PLP.256GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.BC501_PLP.256GB.firmware
+identifiers:
+- lvfs: e187179f-1bdc-5520-b557-da7978a0f742
+  source: https://fwupd.org/lvfs/devices/com.lenovo.BC501_PLP.256GB.firmware
 aliases: []

@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3HET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3HET.firmware
+identifiers:
+- lvfs: 02d70834-4ab5-498e-84bc-3b6fa688e008
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3HET.firmware
+- lvfs: 7426dc50-86b1-4b57-b46b-08fa31814baa
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3HET.firmware
 aliases: []

@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN37ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN37ET.firmware
+identifiers:
+- lvfs: a1392d82-62d5-4e24-863a-0f682993408f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN37ET.firmware
 aliases:
 - lenovo/thinkpad-p17-gen-2i
 - lenovo/thinkpad-t15g-gen-2i

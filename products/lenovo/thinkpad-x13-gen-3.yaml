@@ -5,6 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CLU_00050529.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CLU_00050529.firmware
+identifiers:
+- lvfs: 4c1f7a62-673f-4664-8c47-1d7f19bb2f29
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CLU_00050529.firmware
+- lvfs: 3ece032e-e388-40e2-914b-10115b11c756
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3CCZIFX152216832.firmware
 aliases:
 - lenovo/thinkpad-x13-gen3
 - lenovo/thinkpad-t14s-gen3

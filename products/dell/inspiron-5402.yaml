@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi8319e082.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi8319e082.firmware
+identifiers:
+- lvfs: 8319e082-2a00-4970-ad17-19bdb5466aff
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi8319e082.firmware
 aliases:
 - dell/inspiron-5409
 - dell/inspiron-5502

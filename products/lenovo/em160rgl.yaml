@@ -5,4 +5,17 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
+identifiers:
+- lvfs: 001c50c1-289e-5c27-99cd-5186cc75e80c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
+- lvfs: 412d0667-f5d1-564b-be43-8ff9a7cf3125
+  source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
+- lvfs: 96daff9f-2931-586a-94dd-37fb189c5460
+  source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
+- lvfs: c3e2450f-5ea8-58d7-b55e-5b3e3b828f51
+  source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
+- lvfs: ce6d500c-c9f1-5b45-91dc-3880a0e7cf28
+  source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
+- lvfs: f552d67f-170c-546b-8aae-1a9739f23d83
+  source: https://fwupd.org/lvfs/devices/com.lenovo.quectel.QUECTEL.em160.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop.Ryzen7040.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop.Ryzen7040.BIOS.firmware
+identifiers:
+- lvfs: b5f7dcc1-568c-50f8-a4dd-e39d1f93fda1
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop.Ryzen7040.BIOS.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop12.RPL.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop12.RPL.BIOS.firmware
+identifiers:
+- lvfs: 6bc0986c-d281-5ba3-965c-2f8d13e1eee8
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop12.RPL.BIOS.firmware
 aliases: []
