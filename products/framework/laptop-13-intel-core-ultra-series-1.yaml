@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop.MTL.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop.MTL.BIOS.firmware
+identifiers:
+- lvfs: 72cecb9b-2b37-5ec2-a9ff-c739aabaadf3
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop.MTL.BIOS.firmware
 aliases: []

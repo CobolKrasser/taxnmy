@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.gigabyte.atom.socfw.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.gigabyte.atom.socfw.firmware
+identifiers:
+- lvfs: 4d1026a8-1c63-42be-8616-69725d4dfc2c
+  source: https://fwupd.org/lvfs/devices/com.gigabyte.atom.socfw.firmware
 aliases: []

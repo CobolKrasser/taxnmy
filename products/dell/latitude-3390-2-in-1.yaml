@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi19b41595.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi19b41595.firmware
+identifiers:
+- lvfs: 19b41595-a017-4aef-a266-777ce01101ac
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi19b41595.firmware
 aliases: []

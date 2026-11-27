@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie0f614ed.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie0f614ed.firmware
+identifiers:
+- lvfs: e0f614ed-fb82-467a-a34e-71172cc07e4d
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie0f614ed.firmware
 aliases:
 - dell/edge-gateway-5100

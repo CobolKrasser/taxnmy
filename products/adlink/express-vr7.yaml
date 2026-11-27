@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.Express-VR7.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.Express-VR7.firmware
+identifiers:
+- lvfs: a722359a-234a-4055-a7e9-a6341aba601e
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.Express-VR7.firmware
 aliases: []

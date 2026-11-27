@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.110001.512GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.110001.512GB.firmware
+identifiers:
+- lvfs: 179a39a0-42d6-5c48-a12b-e3d681643334
+  source: https://fwupd.org/lvfs/devices/com.dell.110001.512GB.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.PTK870.main.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.PTK870.main.firmware
+identifiers:
+- lvfs: 02bd4da6-db85-54ad-a90a-5ea4f2cac2d6
+  source: https://fwupd.org/lvfs/devices/com.wacom.PTK870.main.firmware
 aliases: []

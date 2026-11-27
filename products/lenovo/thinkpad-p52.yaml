@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CET.firmware
+identifiers:
+- lvfs: 1e1fe415-74e8-49e1-9508-106b3d13d50d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2CET.firmware
 aliases:
 - lenovo/thinkpad-p72

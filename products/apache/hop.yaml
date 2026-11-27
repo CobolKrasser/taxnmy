@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/apache-hop
 versions:
   source: https://endoflife.date/apache-hop
-identifiers: []
+identifiers:
+- endoflife: apache-hop
+  source: https://endoflife.date/apache-hop
 aliases:
 - the-apache-software-foundation/apache-hop

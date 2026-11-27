@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.109526.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.109526.firmware
+identifiers:
+- lvfs: 947efa37-c647-2041-b9b6-6c79b57e63e1
+  source: https://fwupd.org/lvfs/devices/com.dell.109526.firmware
 aliases: []

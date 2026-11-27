@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi0e6ac702.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi0e6ac702.firmware
+identifiers:
+- lvfs: 0e6ac702-2b37-4b20-8c01-c31f0801aa7a
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi0e6ac702.firmware
 aliases: []

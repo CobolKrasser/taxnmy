@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X44.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X44.firmware
+identifiers:
+- lvfs: 633ed4b3-f1da-45ea-54b3-2416892cac24
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X44.firmware
 aliases: []

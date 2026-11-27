@@ -8,5 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:azul:zulu
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/azul-zulu.md
+- endoflife: azul-zulu
+  source: https://endoflife.date/azul-zulu
 aliases:
 - azul/azul-zulu

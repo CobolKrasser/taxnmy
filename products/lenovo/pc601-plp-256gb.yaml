@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PC601_PLP.256GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PC601_PLP.256GB.firmware
+identifiers:
+- lvfs: 13f9bf93-3d08-5b33-b0bf-47dd61e202b7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PC601_PLP.256GB.firmware
 aliases: []

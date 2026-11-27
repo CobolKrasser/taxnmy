@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPad.Thunderbolt4.dock.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPad.Thunderbolt4.dock.firmware
+identifiers:
+- lvfs: 275e4695-9b4e-5263-835e-8681bec8cd1a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPad.Thunderbolt4.dock.firmware
+- lvfs: ba3efaf3-4e18-5209-aa15-1401537203a3
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPad.Thunderbolt4.dock.firmware
 aliases: []

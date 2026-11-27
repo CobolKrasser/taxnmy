@@ -8,5 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:adobe:coldfusion
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/coldfusion.md
+- endoflife: coldfusion
+  source: https://endoflife.date/coldfusion
 aliases:
 - adobe/adobe-coldfusion

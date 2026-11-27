@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefia472a89c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefia472a89c.firmware
+identifiers:
+- lvfs: a472a89c-42ab-c171-228e-e182e424af76
+  source: https://fwupd.org/lvfs/devices/com.dell.uefia472a89c.firmware
 aliases: []

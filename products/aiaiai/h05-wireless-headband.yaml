@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.AIAIAI.H05.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.AIAIAI.H05.firmware
+identifiers:
+- lvfs: 7e8318e1-27ae-55e4-a7a7-a35eff60e9bf
+  source: https://fwupd.org/lvfs/devices/com.AIAIAI.H05.firmware
 aliases: []

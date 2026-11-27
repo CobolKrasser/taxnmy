@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.x50.X50.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.x50.X50.firmware
+identifiers:
+- lvfs: a675914c-eca6-49d6-8796-a1303ff457cc
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.x50.X50.firmware
 aliases: []

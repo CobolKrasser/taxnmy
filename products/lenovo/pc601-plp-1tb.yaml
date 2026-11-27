@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PC601_PLP.1TB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PC601_PLP.1TB.firmware
+identifiers:
+- lvfs: 5f57480e-f06d-528f-868e-2a5f2f8e79b2
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PC601_PLP.1TB.firmware
 aliases: []

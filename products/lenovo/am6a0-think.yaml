@@ -5,4 +5,15 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
+identifiers:
+- lvfs: 561055aa-e055-595a-a104-86be953b197b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
+- lvfs: 63ef7ef8-3e9b-5642-a91b-f99e40a86a76
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
+- lvfs: a220e721-0c8c-517f-bd13-5529b0fca1d7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
+- lvfs: bb7992b5-cb15-519c-91b8-51fd1e0ede65
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
+- lvfs: d6fb1ccf-0dcf-53e8-acfd-74cfbc34c94e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.Think.firmware
 aliases: []

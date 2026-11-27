@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2DET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2DET.firmware
+identifiers:
+- lvfs: 1fcf9905-056d-43c1-b552-f1e421dd90ae
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2DET.firmware
 aliases:
 - lenovo/thinkpad-p14s-gen-5
 - lenovo/thinkpad-p16s-gen-3

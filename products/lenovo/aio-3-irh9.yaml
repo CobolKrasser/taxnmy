@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.O6A.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.O6A.BIOS.firmware
+identifiers:
+- lvfs: 9d831d27-b953-4a69-9518-ba12c0256189
+  source: https://fwupd.org/lvfs/devices/com.lenovo.O6A.BIOS.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/org.linaro.DeveloperBox.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/org.linaro.DeveloperBox.firmware
+identifiers:
+- lvfs: 50b94ce5-8b63-4849-8af4-ea479356f0e3
+  source: https://fwupd.org/lvfs/devices/org.linaro.DeveloperBox.firmware
 aliases: []

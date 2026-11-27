@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P360Ultra.System.Firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P360Ultra.System.Firmware
+identifiers:
+- lvfs: 30f7d170-97ea-4b91-8981-6eeac438c62c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P360Ultra.System.Firmware
 aliases: []

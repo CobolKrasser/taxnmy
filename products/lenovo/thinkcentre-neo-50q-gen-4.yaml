@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M4Y.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M4Y.BIOS.firmware
+identifiers:
+- lvfs: c964ad86-b3ea-43ce-940c-6f4870aa8d61
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4Y.BIOS.firmware
 aliases:
 - lenovo/ideacentre-mini-5i

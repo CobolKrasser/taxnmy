@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi1610b70e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi1610b70e.firmware
+identifiers:
+- lvfs: 1610b70e-2db1-41d0-bcaf-19ad38fff695
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi1610b70e.firmware
 aliases:
 - dell/inspiron-15-7000-gaming

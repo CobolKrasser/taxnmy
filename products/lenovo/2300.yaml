@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.2300.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.2300.firmware
+identifiers:
+- lvfs: 0e0645bc-ea3e-51ed-97d8-0cf0a4fad05f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2300.firmware
+- lvfs: 2b65be04-69ee-528c-a418-aae7519db9b9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2300.firmware
+- lvfs: 92794e8c-e2cb-522d-af8e-4538170ea1ea
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2300.firmware
+- lvfs: a1c33815-8d7b-5714-b493-5af78b3d6e61
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2300.firmware
 aliases: []

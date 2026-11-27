@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi74863653.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi74863653.firmware
+identifiers:
+- lvfs: 74863653-3f05-4ed9-ba06-3f84854252c5
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi74863653.firmware
 aliases:
 - dell/latitude-3530

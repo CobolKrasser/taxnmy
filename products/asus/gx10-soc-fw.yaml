@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.asus.gx10dgx.socfw.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.asus.gx10dgx.socfw.firmware
+identifiers:
+- lvfs: f1392323-3920-4598-a932-ef06360cf403
+  source: https://fwupd.org/lvfs/devices/com.asus.gx10dgx.socfw.firmware
 aliases: []

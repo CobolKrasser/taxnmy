@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi886f6d91.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi886f6d91.firmware
+identifiers:
+- lvfs: 886f6d91-ca04-4ea7-a440-6e55d4b178f3
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi886f6d91.firmware
 aliases:
 - dell/precision-3550

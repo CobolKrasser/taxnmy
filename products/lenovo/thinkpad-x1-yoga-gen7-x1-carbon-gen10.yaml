@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ABL_00050438.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ABL_00050438.firmware
+identifiers:
+- lvfs: ae6f152b-d804-4651-8f31-4782a59ffa5c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3ABL_00050438.firmware
 aliases: []

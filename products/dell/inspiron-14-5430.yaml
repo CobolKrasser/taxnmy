@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefic5e1348e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefic5e1348e.firmware
+identifiers:
+- lvfs: c5e1348e-99ce-4861-9cab-b98919ce9d28
+  source: https://fwupd.org/lvfs/devices/com.dell.uefic5e1348e.firmware
 aliases:
 - dell/inspiron-14-7430-2-in-1
 - dell/inspiron-16-5630

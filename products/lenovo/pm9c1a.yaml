@@ -5,4 +5,17 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
+identifiers:
+- lvfs: 48a8b90e-6c66-53fc-8a32-9d0b69b1dfda
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
+- lvfs: 842b681c-c2ff-53b9-9a46-9c0e43013e05
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
+- lvfs: 8d3065b6-c28c-5484-a93d-5ffcf3035fa7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
+- lvfs: b7f255aa-1ef7-5248-860f-93d2a532007f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
+- lvfs: d6e1f31d-755b-5445-91cc-95bc3e798285
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
+- lvfs: e63ffd68-3834-5375-8507-02f3f89bbeb9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM9C1a.firmware.TNB
 aliases: []

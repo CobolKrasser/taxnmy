@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guid1cd7457a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guid1cd7457a.firmware
+identifiers:
+- lvfs: 1cd7457a-27a9-4af9-912b-73af953d94b4
+  source: https://fwupd.org/lvfs/devices/com.dell.guid1cd7457a.firmware
 aliases: []

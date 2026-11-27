@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.CTL-4100WL.main-r2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.CTL-4100WL.main-r2.firmware
+identifiers:
+- lvfs: 5fa47ceb-91cb-5f5e-a35a-97e082d8b408
+  source: https://fwupd.org/lvfs/devices/com.wacom.CTL-4100WL.main-r2.firmware
 aliases: []

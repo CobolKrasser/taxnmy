@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W77.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W77.firmware
+identifiers:
+- lvfs: 27b49886-41a0-4955-38a3-92f903b1b283
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W77.firmware
 aliases: []

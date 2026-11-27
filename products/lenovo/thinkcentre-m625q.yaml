@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M1W.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M1W.BIOS.firmware
+identifiers:
+- lvfs: 6c8702e5-b8eb-48b2-8bb5-21230fcb9569
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M1W.BIOS.firmware
 aliases: []

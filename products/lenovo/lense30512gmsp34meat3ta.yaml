@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.LENSE30512GMSP34MEAT3TA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.LENSE30512GMSP34MEAT3TA.firmware
+identifiers:
+- lvfs: 0a2bdb12-23de-5728-829f-b1674e12dde0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.LENSE30512GMSP34MEAT3TA.firmware
 aliases: []

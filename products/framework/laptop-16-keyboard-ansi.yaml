@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ANSI
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ANSI
+identifiers:
+- lvfs: bf9a4319-494f-5c88-9637-72f97222cac9
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ANSI
 aliases: []

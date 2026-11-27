@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.system76.launch_2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.system76.launch_2.firmware
+identifiers:
+- lvfs: eb3b1738-f197-5bd8-aa45-80abeff4ff39
+  source: https://fwupd.org/lvfs/devices/com.system76.launch_2.firmware
 aliases: []

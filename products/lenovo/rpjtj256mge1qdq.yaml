@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.RPJTJ256MGE1QDQ.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.RPJTJ256MGE1QDQ.firmware
+identifiers:
+- lvfs: ef2c5e28-35a3-56d7-9d56-f369e530079e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.RPJTJ256MGE1QDQ.firmware
 aliases: []

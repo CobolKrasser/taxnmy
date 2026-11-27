@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.elan.firmware.P1515D
 versions:
   source: https://fwupd.org/lvfs/devices/com.elan.firmware.P1515D
+identifiers:
+- lvfs: 958b96ed-70c4-5ab0-8543-6e0759f0fe6a
+  source: https://fwupd.org/lvfs/devices/com.elan.firmware.P1515D
 aliases: []

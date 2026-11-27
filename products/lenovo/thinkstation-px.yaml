@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkstation.PX.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkstation.PX.firmware
+identifiers:
+- lvfs: b730e25f-6423-47a0-bf89-9c21e94c3c00
+  source: https://fwupd.org/lvfs/devices/com.lenovo.Thinkstation.PX.firmware
 aliases: []

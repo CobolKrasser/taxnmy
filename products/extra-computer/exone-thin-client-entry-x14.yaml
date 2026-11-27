@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/de.extracomputer.K3921-Hxx.uefi.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/de.extracomputer.K3921-Hxx.uefi.firmware
+identifiers:
+- lvfs: def41966-5b56-4205-af27-333932314878
+  source: https://fwupd.org/lvfs/devices/de.extracomputer.K3921-Hxx.uefi.firmware
 aliases: []

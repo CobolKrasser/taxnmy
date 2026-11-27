@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi50fd0507.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi50fd0507.firmware
+identifiers:
+- lvfs: 50fd0507-d591-4b78-b89b-4bb508d90f4d
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi50fd0507.firmware
 aliases:
 - dell/vostro-3690

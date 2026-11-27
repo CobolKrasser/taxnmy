@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M5P.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M5P.BIOS.firmware
+identifiers:
+- lvfs: a441cfe4-a5ed-49a1-9316-ce3837721451
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M5P.BIOS.firmware
 aliases: []

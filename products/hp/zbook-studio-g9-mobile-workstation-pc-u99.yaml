@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U99.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U99.firmware
+identifiers:
+- lvfs: 74a43e84-0f76-4153-8422-d52922dd112c
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U99.firmware
 aliases: []

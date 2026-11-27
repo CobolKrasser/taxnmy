@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.aver.cam340plus.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.aver.cam340plus.firmware
+identifiers:
+- lvfs: 7bbcf913-9ce9-55d5-86e1-9d3530881226
+  source: https://fwupd.org/lvfs/devices/com.aver.cam340plus.firmware
 aliases: []

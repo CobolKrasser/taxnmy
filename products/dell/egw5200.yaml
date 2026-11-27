@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi963b673e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi963b673e.firmware
+identifiers:
+- lvfs: 963b673e-6df3-47c5-b4ea-a973236cf39f
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi963b673e.firmware
 aliases: []

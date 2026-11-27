@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefib2f23729.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefib2f23729.firmware
+identifiers:
+- lvfs: b2f23729-cdc8-459b-ad6d-88066eaf5ef2
+  source: https://fwupd.org/lvfs/devices/com.dell.uefib2f23729.firmware
 aliases:
 - dell/pro-max-slim-fcs1250
 - dell/pro-max-tower-t2-fct2250

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PM981.2TB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PM981.2TB.firmware
+identifiers:
+- lvfs: 11632747-978a-5050-a1d1-4e96359f68b9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM981.2TB.firmware
 aliases: []

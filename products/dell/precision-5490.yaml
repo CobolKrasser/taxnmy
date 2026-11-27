@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi95bfa901.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi95bfa901.firmware
+identifiers:
+- lvfs: 95bfa901-77dd-4c44-b191-4f2836c9e1f8
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi95bfa901.firmware
 aliases: []

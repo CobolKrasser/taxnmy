@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.byte.twl
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.byte.twl
+identifiers:
+- lvfs: fb17c9c8-0cb6-43bf-9a8b-4642c61e2ac3
+  source: https://fwupd.org/lvfs/devices/com.starlabs.byte.twl
 aliases: []

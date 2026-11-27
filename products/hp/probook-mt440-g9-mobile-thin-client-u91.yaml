@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U91.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U91.firmware
+identifiers:
+- lvfs: 9c606eaa-37d8-4dad-810e-ec94a7abe16f
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U91.firmware
 aliases: []

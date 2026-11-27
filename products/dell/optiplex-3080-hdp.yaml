@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefic8923fa6.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefic8923fa6.firmware
+identifiers:
+- lvfs: c8923fa6-74f0-49cd-a79b-800729696194
+  source: https://fwupd.org/lvfs/devices/com.dell.uefic8923fa6.firmware
 aliases: []

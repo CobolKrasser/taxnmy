@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4WSG08W.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4WSG08W.firmware
+identifiers:
+- lvfs: 9c644583-a92c-46fb-b3fa-d3d499ce0469
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4WSG08W.firmware
 aliases:
 - lenovo/thinkpad-p14s-gen-7
 - lenovo/thinkpad-p16s-gen-5

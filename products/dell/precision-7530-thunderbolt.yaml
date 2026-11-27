@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.tbtc50677e2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.tbtc50677e2.firmware
+identifiers:
+- lvfs: c50677e2-fbcb-5f7a-b109-cd3de11a6401
+  source: https://fwupd.org/lvfs/devices/com.dell.tbtc50677e2.firmware
 aliases: []

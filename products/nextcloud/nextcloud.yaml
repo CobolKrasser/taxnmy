@@ -12,4 +12,6 @@ identifiers:
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:nextcloud:nextcloud&resultsPerPage=1
 - winget: Nextcloud.NextcloudDesktop
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/Nextcloud/NextcloudDesktop
+- endoflife: nextcloud
+  source: https://endoflife.date/nextcloud
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PC611_TBG.1TB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PC611_TBG.1TB.firmware
+identifiers:
+- lvfs: 06f40517-864f-57be-9dad-d48bec1667e0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PC611_TBG.1TB.firmware
 aliases: []

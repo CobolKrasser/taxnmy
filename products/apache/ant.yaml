@@ -12,5 +12,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-ant.md
 - purl: pkg:maven/org.apache.ant/ant
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-ant.md
+- endoflife: ant
+  source: https://endoflife.date/ant
 aliases:
 - the-apache-software-foundation/apache-ant

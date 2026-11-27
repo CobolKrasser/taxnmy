@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.msi.MS_C931.socfw.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.msi.MS_C931.socfw.firmware
+identifiers:
+- lvfs: 632db1a2-f5c9-40ec-b700-ebcff320e2a2
+  source: https://fwupd.org/lvfs/devices/com.msi.MS_C931.socfw.firmware
 aliases: []

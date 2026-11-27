@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1VET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1VET.firmware
+identifiers:
+- lvfs: b6cc2fe8-576b-4827-8587-d6ff519813b7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN1VET.firmware
 aliases:
 - lenovo/thinkpad-p51s

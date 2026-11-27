@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefibee843ec.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefibee843ec.firmware
+identifiers:
+- lvfs: bee843ec-fff9-4ef9-a991-aa8271465263
+  source: https://fwupd.org/lvfs/devices/com.dell.uefibee843ec.firmware
 aliases:
 - dell/16-dc16250

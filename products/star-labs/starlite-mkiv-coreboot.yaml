@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.lite.glkr
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.lite.glkr
+identifiers:
+- lvfs: a0382981-b0e3-4ae5-98c4-cbf6c7a16860
+  source: https://fwupd.org/lvfs/devices/com.starlabs.lite.glkr
 aliases: []

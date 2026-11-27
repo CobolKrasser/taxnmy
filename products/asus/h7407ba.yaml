@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.asus.H7407BA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.asus.H7407BA.firmware
+identifiers:
+- lvfs: 3a794ff5-e2c0-507d-8c03-7651206411ce
+  source: https://fwupd.org/lvfs/devices/com.asus.H7407BA.firmware
 aliases: []

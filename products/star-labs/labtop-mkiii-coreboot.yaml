@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.labtop.kbl
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.labtop.kbl
+identifiers:
+- lvfs: 9f84eb61-f9c5-489a-baf4-c9ad13d72060
+  source: https://fwupd.org/lvfs/devices/com.starlabs.labtop.kbl
 aliases: []

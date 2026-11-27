@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefid25c2263.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefid25c2263.firmware
+identifiers:
+- lvfs: d25c2263-5073-41bc-8b29-2f3fed3ea1a1
+  source: https://fwupd.org/lvfs/devices/com.dell.uefid25c2263.firmware
 aliases:
 - dell/pro-16-pc16255

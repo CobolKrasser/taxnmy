@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3NCZNTC7251.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3NCZNTC7251.firmware
+identifiers:
+- lvfs: 7852eefe-18c3-4bdd-bbe3-dbbdb2cae6ec
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3NCZNTC7251.firmware
 aliases: []

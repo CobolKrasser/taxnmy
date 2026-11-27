@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi4ce0507f.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi4ce0507f.firmware
+identifiers:
+- lvfs: 4ce0507f-d132-442c-a719-72c988334f02
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi4ce0507f.firmware
 aliases:
 - dell/inspiron-3020-s

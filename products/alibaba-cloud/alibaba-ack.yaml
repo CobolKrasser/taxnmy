@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/alibaba-ack
 versions:
   source: https://www.alibabacloud.com/help/en/ack/ack-managed-and-ack-dedicated/user-guide/support-for-kubernetes-versions
-identifiers: []
+identifiers:
+- endoflife: alibaba-ack
+  source: https://endoflife.date/alibaba-ack
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guid10215a6e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guid10215a6e.firmware
+identifiers:
+- lvfs: 10215a6e-5eb4-5fe4-a3d0-1ff4b3295840
+  source: https://fwupd.org/lvfs/devices/com.dell.guid10215a6e.firmware
 aliases: []

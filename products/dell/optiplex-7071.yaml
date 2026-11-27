@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi25ea881d.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi25ea881d.firmware
+identifiers:
+- lvfs: 25ea881d-237b-44bc-8ad0-402d7a925125
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi25ea881d.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3IET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3IET.firmware
+identifiers:
+- lvfs: 562a0522-d1a0-4b88-ad34-3cfda8788412
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3IET.firmware
 aliases: []

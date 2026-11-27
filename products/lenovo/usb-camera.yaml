@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.thinkpad.C7FLH30.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.thinkpad.C7FLH30.firmware
+identifiers:
+- lvfs: 1b9ce00f-4721-582f-a3d9-86987c27728f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.thinkpad.C7FLH30.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.RPETJ512MGE2QDQ.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.RPETJ512MGE2QDQ.firmware
+identifiers:
+- lvfs: 1cabba58-9014-5a19-b40f-a6aa4b45676f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.RPETJ512MGE2QDQ.firmware
 aliases: []

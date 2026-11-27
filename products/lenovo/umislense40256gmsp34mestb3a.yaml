@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.UMISLENSE40256GMSP34MESTB3A.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.UMISLENSE40256GMSP34MESTB3A.firmware
+identifiers:
+- lvfs: 6490443f-861d-5733-99c0-52bd869c3b31
+  source: https://fwupd.org/lvfs/devices/com.lenovo.UMISLENSE40256GMSP34MESTB3A.firmware
 aliases: []

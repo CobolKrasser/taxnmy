@@ -16,4 +16,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/clamav.md
 - winget: Cisco.ClamAV
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cisco/ClamAV
+- endoflife: clamav
+  source: https://endoflife.date/clamav
 aliases: []

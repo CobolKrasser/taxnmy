@@ -8,5 +8,7 @@ versions:
 identifiers:
 - purl: pkg:github/kubernetes-sigs/external-dns
   source: https://endoflife.date/external-dns
+- endoflife: external-dns
+  source: https://endoflife.date/external-dns
 aliases:
 - the-kubernetes-authors/externaldns

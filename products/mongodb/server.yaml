@@ -10,5 +10,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mongodb.md
 - cpe: cpe:2.3:a:mongodb-org-server:mongodb-org-server
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mongodb.md
+- endoflife: mongodb
+  source: https://endoflife.date/mongodb
 aliases:
 - mongodb/mongodb-server

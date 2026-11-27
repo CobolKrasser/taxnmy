@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.KS_68XT2_B6Q.512GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.KS_68XT2_B6Q.512GB.firmware
+identifiers:
+- lvfs: f2021489-8ab3-204c-ac3a-2bf2d633a2e8
+  source: https://fwupd.org/lvfs/devices/com.dell.KS_68XT2_B6Q.512GB.firmware
 aliases: []

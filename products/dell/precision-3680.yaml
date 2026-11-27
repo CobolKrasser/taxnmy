@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie428af72.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie428af72.firmware
+identifiers:
+- lvfs: e428af72-e060-4eb0-9dc7-b0699960816d
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie428af72.firmware
 aliases: []

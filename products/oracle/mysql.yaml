@@ -16,4 +16,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/mysql.md
 - winget: Oracle.MySQL
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/MySQL
+- endoflife: mysql
+  source: https://endoflife.date/mysql
 aliases: []

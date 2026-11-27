@@ -5,6 +5,8 @@ kind: operating-system
 source: https://endoflife.date/sns-firmware
 versions:
   source: https://documentation.stormshield.eu/PLC/SNS/en/Content/SNS_Product_Life_Cycle/Matrices_firmwares.htm
-identifiers: []
+identifiers:
+- endoflife: sns-firmware
+  source: https://endoflife.date/sns-firmware
 aliases:
 - stormshield/stormshield-firmware

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.cExpress-MTL.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.cExpress-MTL.firmware
+identifiers:
+- lvfs: d20b789e-42fb-43b2-9d7d-62cdbbd285c1
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.cExpress-MTL.firmware
 aliases: []

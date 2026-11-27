@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefiaee2604a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefiaee2604a.firmware
+identifiers:
+- lvfs: aee2604a-7e36-4738-918d-a8eb8e307e65
+  source: https://fwupd.org/lvfs/devices/com.dell.uefiaee2604a.firmware
 aliases: []

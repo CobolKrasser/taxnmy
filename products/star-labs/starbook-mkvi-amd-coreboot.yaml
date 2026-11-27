@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.cezanne
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.cezanne
+identifiers:
+- lvfs: 2ef5db2f-2791-4e62-bd7b-fdb23f83c615
+  source: https://fwupd.org/lvfs/devices/com.starlabs.starbook.cezanne
 aliases: []

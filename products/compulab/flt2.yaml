@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.compulab.flt2.sec.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.compulab.flt2.sec.firmware
+identifiers:
+- lvfs: 49ff2877-8596-4460-9a97-e70d90609e25
+  source: https://fwupd.org/lvfs/devices/com.compulab.flt2.sec.firmware
 aliases: []

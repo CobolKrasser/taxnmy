@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi0eecff0c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi0eecff0c.firmware
+identifiers:
+- lvfs: 0eecff0c-95b8-4ade-9717-8f4f3edc9e09
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi0eecff0c.firmware
 aliases:
 - dell/precision-3541

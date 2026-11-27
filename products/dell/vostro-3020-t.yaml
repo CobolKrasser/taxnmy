@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie87c7e22.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie87c7e22.firmware
+identifiers:
+- lvfs: e87c7e22-406e-4ead-929f-745242cf9177
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie87c7e22.firmware
 aliases:
 - dell/vostro-3020-sff

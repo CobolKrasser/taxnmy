@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi8dc8f450.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi8dc8f450.firmware
+identifiers:
+- lvfs: 8dc8f450-cfdc-4f62-811f-43a36598501a
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi8dc8f450.firmware
 aliases:
 - dell/inspiron-14-5418
 - dell/inspiron-15-5510

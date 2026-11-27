@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M2A.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M2A.BIOS.firmware
+identifiers:
+- lvfs: fabf672c-d2ee-487e-9e73-8e0d7f86483c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M2A.BIOS.firmware
 aliases: []

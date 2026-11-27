@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefif40156b6.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefif40156b6.firmware
+identifiers:
+- lvfs: f40156b6-6c8c-4e72-91b0-ba272435792a
+  source: https://fwupd.org/lvfs/devices/com.dell.uefif40156b6.firmware
 aliases:
 - dell/inspiron-5501
 - dell/vostro-5401

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi079a47ec.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi079a47ec.firmware
+identifiers:
+- lvfs: 079a47ec-bfbc-456b-bfff-125fe9306717
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi079a47ec.firmware
 aliases: []

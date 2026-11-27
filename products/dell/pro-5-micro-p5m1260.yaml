@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie8730f7c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie8730f7c.firmware
+identifiers:
+- lvfs: e8730f7c-d3c4-40a9-9474-667fbf0fdfac
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie8730f7c.firmware
 aliases: []

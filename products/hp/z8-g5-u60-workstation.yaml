@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U60.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U60.firmware
+identifiers:
+- lvfs: 33abd8a4-d8a8-42e0-8653-1901d32c5089
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U60.firmware
 aliases: []

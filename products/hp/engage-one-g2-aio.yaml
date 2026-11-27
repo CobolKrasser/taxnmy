@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.EngageOneG2.firmware.engageoneg2
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.EngageOneG2.firmware.engageoneg2
+identifiers:
+- lvfs: d10aeafa-1857-5d5b-a2c1-cf9688af0997
+  source: https://fwupd.org/lvfs/devices/com.hp.EngageOneG2.firmware.engageoneg2
 aliases: []

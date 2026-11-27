@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie2097c5c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie2097c5c.firmware
+identifiers:
+- lvfs: e2097c5c-f2b4-4b83-992d-9417864b0022
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie2097c5c.firmware
 aliases:
 - dell/optiplex-aio-7410-65w
 - dell/optiplex-aio-7410-35w

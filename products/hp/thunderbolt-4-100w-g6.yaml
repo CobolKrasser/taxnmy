@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.USB4G6.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.USB4G6.firmware
+identifiers:
+- lvfs: ca84d307-39ea-532a-9ad0-2f8b756c9d53
+  source: https://fwupd.org/lvfs/devices/com.hp.USB4G6.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.108859.256GB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.108859.256GB.firmware
+identifiers:
+- lvfs: 9c283e08-8270-5181-986f-3ce7b3814692
+  source: https://fwupd.org/lvfs/devices/com.dell.108859.256GB.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.128G.Think.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.128G.Think.firmware
+identifiers:
+- lvfs: eccdf649-1f67-5e70-8721-12f83a55c8cf
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM6A0.128G.Think.firmware
 aliases: []

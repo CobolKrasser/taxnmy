@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi43ca3264.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi43ca3264.firmware
+identifiers:
+- lvfs: 43ca3264-d791-4df8-9695-7b13a7361a0d
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi43ca3264.firmware
 aliases: []

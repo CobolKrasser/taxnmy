@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:oracle:openjdk
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openjdk-builds-from-oracle.md
+- endoflife: openjdk-builds-from-oracle
+  source: https://endoflife.date/openjdk-builds-from-oracle
 aliases: []

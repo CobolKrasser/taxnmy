@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3ISG.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3ISG.BIOS.firmware
+identifiers:
+- lvfs: a97f982d-8060-4577-b431-76402b7a6cd9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3ISG.BIOS.firmware
 aliases: []

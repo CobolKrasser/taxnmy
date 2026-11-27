@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.Gen2.VLIUSBQ7.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.Gen2.VLIUSBQ7.firmware
+identifiers:
+- lvfs: 4ec36768-1858-5e9b-9d35-40e6143c3cd4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.Gen2.VLIUSBQ7.firmware
 aliases: []

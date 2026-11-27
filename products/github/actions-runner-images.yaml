@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/github-actions-runner-images
 versions:
   source: https://endoflife.date/github-actions-runner-images
-identifiers: []
+identifiers:
+- endoflife: github-actions-runner-images
+  source: https://endoflife.date/github-actions-runner-images
 aliases:
 - github/github-actions-runner-images

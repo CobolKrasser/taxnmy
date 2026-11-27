@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2HETXXP.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2HETXXP.firmware
+identifiers:
+- lvfs: 8197ac2e-1e4b-4850-846f-ba1673b62cda
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2HETXXP.firmware
 aliases:
 - lenovo/thinkpad-x1-yoga-4th

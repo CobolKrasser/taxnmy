@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/amazon-mq-rabbitmq
 versions:
   source: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-version-support.html
-identifiers: []
+identifiers:
+- endoflife: amazon-mq-rabbitmq
+  source: https://endoflife.date/amazon-mq-rabbitmq
 aliases: []

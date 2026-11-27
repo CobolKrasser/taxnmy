@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/org.pine64.naoi-os.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/org.pine64.naoi-os.firmware
+identifiers:
+- lvfs: d18f31f1-a3fa-55a2-b4ed-decfbc1e004d
+  source: https://fwupd.org/lvfs/devices/org.pine64.naoi-os.firmware
+- lvfs: db379a33-254f-5140-b37e-d36ae7e5c039
+  source: https://fwupd.org/lvfs/devices/org.pine64.naoi-os.firmware
 aliases: []

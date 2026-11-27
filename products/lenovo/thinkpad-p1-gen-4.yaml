@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN40RM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN40RM.firmware
+identifiers:
+- lvfs: 38a375e4-3927-42a2-ab34-e250d748b698
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN40RM.firmware
 aliases: []

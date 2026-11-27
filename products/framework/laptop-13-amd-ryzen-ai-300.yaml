@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop.RyzenAI300.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop.RyzenAI300.BIOS.firmware
+identifiers:
+- lvfs: 9c13b7f1-d618-5d68-be61-6b17881014a7
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop.RyzenAI300.BIOS.firmware
 aliases: []

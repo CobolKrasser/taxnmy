@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi74992bad.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi74992bad.firmware
+identifiers:
+- lvfs: 74992bad-d49d-4f82-bb77-bbe865bea34e
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi74992bad.firmware
 aliases: []

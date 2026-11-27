@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi250874dc.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi250874dc.firmware
+identifiers:
+- lvfs: 250874dc-b268-48ab-ac3a-583de17082be
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi250874dc.firmware
 aliases: []

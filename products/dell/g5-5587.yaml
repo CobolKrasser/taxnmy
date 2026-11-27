@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie6aaeec2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie6aaeec2.firmware
+identifiers:
+- lvfs: e6aaeec2-f62b-46d3-882b-513d06bcf715
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie6aaeec2.firmware
 aliases:
 - dell/g7-7588
 - dell/vostro-7580

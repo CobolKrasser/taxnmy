@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.elan.firmware.80SJ
 versions:
   source: https://fwupd.org/lvfs/devices/com.elan.firmware.80SJ
+identifiers:
+- lvfs: a3bc76ea-5c64-56c8-ad9a-a81bd16e278a
+  source: https://fwupd.org/lvfs/devices/com.elan.firmware.80SJ
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi643c862d.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi643c862d.firmware
+identifiers:
+- lvfs: 643c862d-501e-49fd-ad2b-6056e17a12fe
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi643c862d.firmware
 aliases: []

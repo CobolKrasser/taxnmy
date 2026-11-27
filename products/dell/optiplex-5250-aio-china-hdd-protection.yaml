@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi416d1c90.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi416d1c90.firmware
+identifiers:
+- lvfs: 416d1c90-66ba-4f26-af1c-dcc056073c4f
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi416d1c90.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.corsair.tongs.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.corsair.tongs.firmware
+identifiers:
+- lvfs: 9896f0c3-6682-5392-80f6-0ba462918645
+  source: https://fwupd.org/lvfs/devices/com.corsair.tongs.firmware
 aliases: []

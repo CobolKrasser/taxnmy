@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.se50a.gen1.bios
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.se50a.gen1.bios
+identifiers:
+- lvfs: 79a23928-cb3c-48c9-b43a-0396f2470bc2
+  source: https://fwupd.org/lvfs/devices/com.lenovo.se50a.gen1.bios
 aliases: []

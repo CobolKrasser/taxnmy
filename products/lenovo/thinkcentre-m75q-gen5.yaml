@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M55.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M55.BIOS.firmware
+identifiers:
+- lvfs: a59c5462-b9c7-41a1-8faa-ad435a42b0f0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M55.BIOS.firmware
 aliases: []

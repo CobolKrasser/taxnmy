@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.adlinktech.cExpress-RLP-R3.1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.adlinktech.cExpress-RLP-R3.1.firmware
+identifiers:
+- lvfs: 2118fe64-ba1b-479c-8d18-347da5ecc169
+  source: https://fwupd.org/lvfs/devices/com.adlinktech.cExpress-RLP-R3.1.firmware
 aliases: []

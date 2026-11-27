@@ -46,5 +46,7 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenJS/NodeJS/8
 - winget: OpenJS.NodeJS.LTS
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenJS/NodeJS/LTS
+- endoflife: nodejs
+  source: https://endoflife.date/nodejs
 aliases:
 - node-js-foundation/node-js

@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi43df793a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi43df793a.firmware
+identifiers:
+- lvfs: 43df793a-4a71-5ca7-bf7b-61bdc49455e6
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi43df793a.firmware
 aliases:
 - dell/inspiron-5593
 - dell/inspiron-3493

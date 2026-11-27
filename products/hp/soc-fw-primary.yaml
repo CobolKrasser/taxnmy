@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.socfw.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.socfw.firmware
+identifiers:
+- lvfs: 0f5bb700-74e8-4e13-a99e-bf9476fe157e
+  source: https://fwupd.org/lvfs/devices/com.hp.socfw.firmware
 aliases: []

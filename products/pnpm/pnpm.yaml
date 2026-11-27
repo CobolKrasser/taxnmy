@@ -16,4 +16,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/pnpm.md
 - winget: pnpm.pnpm
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/pnpm/pnpm
+- endoflife: pnpm
+  source: https://endoflife.date/pnpm
 aliases: []

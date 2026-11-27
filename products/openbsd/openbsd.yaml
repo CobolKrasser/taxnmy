@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:o:openbsd:openbsd
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/openbsd.md
+- endoflife: openbsd
+  source: https://endoflife.date/openbsd
 aliases: []

@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi5436e16d.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi5436e16d.firmware
+identifiers:
+- lvfs: 5436e16d-4788-6c95-22d6-e5a0c1f9935a
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi5436e16d.firmware
 aliases:
 - dell/inspiron-3501
 - dell/vostro-3500

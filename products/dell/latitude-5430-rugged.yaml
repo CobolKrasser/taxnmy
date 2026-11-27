@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefic116894a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefic116894a.firmware
+identifiers:
+- lvfs: c116894a-4338-4daa-96ee-bdc6f7e525d8
+  source: https://fwupd.org/lvfs/devices/com.dell.uefic116894a.firmware
 aliases: []

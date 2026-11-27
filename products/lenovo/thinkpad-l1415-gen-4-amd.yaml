@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR25ET.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR25ET.BIOS.firmware
+identifiers:
+- lvfs: 50e45c69-6eba-4c28-b395-472e0ac3094a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR25ET.BIOS.firmware
 aliases: []

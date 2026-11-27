@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi2c1b48e9.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi2c1b48e9.firmware
+identifiers:
+- lvfs: 2c1b48e9-b12c-4cc3-a00b-2ab01b08e229
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi2c1b48e9.firmware
 aliases:
 - dell/xps-16-da16260

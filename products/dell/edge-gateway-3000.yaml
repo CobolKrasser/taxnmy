@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi21f94926.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi21f94926.firmware
+identifiers:
+- lvfs: 21f94926-ce92-421c-b275-84392db26185
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi21f94926.firmware
 aliases:
 - dell/edge-gateway-3001
 - dell/edge-gateway-3002

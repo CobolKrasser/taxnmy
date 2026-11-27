@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi26c8eaca.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi26c8eaca.firmware
+identifiers:
+- lvfs: 26c8eaca-2130-4de1-9d59-33a8134514be
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi26c8eaca.firmware
 aliases:
 - dell/latitude-3400

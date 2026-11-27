@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:sonarsource:sonarqube
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/sonarqube-community.md
+- endoflife: sonarqube-community
+  source: https://endoflife.date/sonarqube-community
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M4X.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M4X.BIOS.firmware
+identifiers:
+- lvfs: 75c077d1-1584-49f5-a16f-65e9606a354a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4X.BIOS.firmware
 aliases: []

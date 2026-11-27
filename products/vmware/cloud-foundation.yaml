@@ -8,4 +8,6 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:vmware:cloud_foundation
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:vmware:cloud_foundation&resultsPerPage=1
+- endoflife: vmware-cloud-foundation
+  source: https://endoflife.date/vmware-cloud-foundation
 aliases: []

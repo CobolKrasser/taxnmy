@@ -14,4 +14,6 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu/Beta
 - winget: OpenTofu.Tofu.RC
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenTofu/Tofu/RC
+- endoflife: opentofu
+  source: https://endoflife.date/opentofu
 aliases: []

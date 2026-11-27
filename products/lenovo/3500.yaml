@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.3500.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.3500.firmware
+identifiers:
+- lvfs: 0004bdc7-e4ed-5eb3-9058-6946150720bd
+  source: https://fwupd.org/lvfs/devices/com.lenovo.3500.firmware
+- lvfs: 00b9b703-d631-53d8-b6b7-d72b89551ef8
+  source: https://fwupd.org/lvfs/devices/com.lenovo.3500.firmware
+- lvfs: 91a4c3fa-e39a-51ea-8ce3-751740a8fa42
+  source: https://fwupd.org/lvfs/devices/com.lenovo.3500.firmware
 aliases: []

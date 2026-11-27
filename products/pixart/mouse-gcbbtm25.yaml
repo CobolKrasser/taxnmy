@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.pixart.GCBBTM25.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.pixart.GCBBTM25.firmware
+identifiers:
+- lvfs: 657c927f-1889-596d-a0f1-d2abd9c067ab
+  source: https://fwupd.org/lvfs/devices/com.pixart.GCBBTM25.firmware
 aliases: []

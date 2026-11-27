@@ -5,5 +5,10 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UMA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UMA.firmware
+identifiers:
+- lvfs: c83c8c4e-42d4-4b3b-bc78-8e2ac6a95228
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UMA.firmware
+- lvfs: 4af1a248-3863-46a6-a3ee-9e9048f58af4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR1UET.firmware
 aliases:
 - lenovo/thinkpad-l13gen3

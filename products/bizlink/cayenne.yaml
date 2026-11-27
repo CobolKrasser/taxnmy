@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.bizlinktech.cayenne.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.bizlinktech.cayenne.firmware
+identifiers:
+- lvfs: 38e99c69-0a2e-5feb-90f1-71cb4be138e7
+  source: https://fwupd.org/lvfs/devices/com.bizlinktech.cayenne.firmware
 aliases: []

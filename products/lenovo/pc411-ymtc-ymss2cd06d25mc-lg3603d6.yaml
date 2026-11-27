@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PC411-YMTC_YMSS2CD06D25MC-LG3603D6.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PC411-YMTC_YMSS2CD06D25MC-LG3603D6.firmware
+identifiers:
+- lvfs: 5b653e35-0117-535d-b5f1-217114208bb3
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PC411-YMTC_YMSS2CD06D25MC-LG3603D6.firmware
 aliases: []

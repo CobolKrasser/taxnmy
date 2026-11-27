@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/nvidia
 versions:
   source: https://www.nvidia.com/en-us/drivers/
-identifiers: []
+identifiers:
+- endoflife: nvidia
+  source: https://endoflife.date/nvidia
 aliases:
 - nvidia/nvidia-driver

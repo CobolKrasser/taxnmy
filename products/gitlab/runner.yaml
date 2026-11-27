@@ -12,5 +12,7 @@ identifiers:
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:gitlab:gitlab_runner&resultsPerPage=1
 - winget: Gitlab.Runner
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gitlab/Runner
+- endoflife: gitlab-runner
+  source: https://endoflife.date/gitlab-runner
 aliases:
 - gitlab/gitlab-runner

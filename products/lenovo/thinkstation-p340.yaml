@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.P340.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.P340.BIOS.firmware
+identifiers:
+- lvfs: ff9ec742-9aec-4f92-9036-39315876579b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.P340.BIOS.firmware
 aliases: []

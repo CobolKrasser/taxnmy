@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3JRO.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3JRO.firmware
+identifiers:
+- lvfs: 2d9ea625-256b-7882-2103-da49b102ef33
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN3JRO.firmware
 aliases:
 - lenovo/thinkpad-x1-extreme-5

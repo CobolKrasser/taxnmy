@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.ueficd2d1a90.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.ueficd2d1a90.firmware
+identifiers:
+- lvfs: cd2d1a90-4e20-42fd-8e4a-4674177ac416
+  source: https://fwupd.org/lvfs/devices/com.dell.ueficd2d1a90.firmware
 aliases: []

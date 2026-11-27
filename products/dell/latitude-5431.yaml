@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi0be3fcb0.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi0be3fcb0.firmware
+identifiers:
+- lvfs: 0be3fcb0-98c1-4632-b14c-ab0a5a6b1037
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi0be3fcb0.firmware
 aliases:
 - dell/precision-3470

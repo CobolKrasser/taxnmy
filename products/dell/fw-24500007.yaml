@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.111094.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.111094.firmware
+identifiers:
+- lvfs: fe252dc0-f1eb-41a9-809d-eecd009c84f6
+  source: https://fwupd.org/lvfs/devices/com.dell.111094.firmware
 aliases: []

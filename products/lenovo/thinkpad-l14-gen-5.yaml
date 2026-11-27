@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2HET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2HET.firmware
+identifiers:
+- lvfs: ea9b5001-5bef-4058-87b2-687ce4cb5bb4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR2HET.firmware
 aliases:
 - lenovo/thinkpad-l16-gen-1

@@ -12,5 +12,7 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/GNU
 - winget: Rustlang.Rust.MSVC
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/MSVC
+- endoflife: rust
+  source: https://endoflife.date/rust
 aliases:
 - the-rust-project-developers/rust

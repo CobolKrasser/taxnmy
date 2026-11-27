@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop.MTL.CSME.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop.MTL.CSME.firmware
+identifiers:
+- lvfs: 32d8d677-eebc-4947-8f8a-0693a45240e5
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop.MTL.CSME.firmware
 aliases: []

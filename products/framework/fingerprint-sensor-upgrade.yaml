@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.goodixmoc19c9fa32b8c3.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.goodixmoc19c9fa32b8c3.firmware
+identifiers:
+- lvfs: 1e8c8470-a49c-571a-82fd-19c9fa32b8c3
+  source: https://fwupd.org/lvfs/devices/work.frame.goodixmoc19c9fa32b8c3.firmware
+- lvfs: 4abeae35-c8f4-5adc-935f-5afbe7c5fe28
+  source: https://fwupd.org/lvfs/devices/work.frame.goodixmoc19c9fa32b8c3.firmware
 aliases: []

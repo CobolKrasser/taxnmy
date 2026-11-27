@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PC711_TBG.1TB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PC711_TBG.1TB.firmware
+identifiers:
+- lvfs: 867711b5-67ef-56e4-8085-0aa777d4de72
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PC711_TBG.1TB.firmware
 aliases: []

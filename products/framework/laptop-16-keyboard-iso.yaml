@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ISO
 versions:
   source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ISO
+identifiers:
+- lvfs: a1295418-923e-54d4-b4a4-29b8b7076067
+  source: https://fwupd.org/lvfs/devices/work.frame.Laptop16.Inputmodules.ISO
 aliases: []

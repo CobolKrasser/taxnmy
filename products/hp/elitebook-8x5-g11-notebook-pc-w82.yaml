@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W82.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W82.firmware
+identifiers:
+- lvfs: 4a131a12-ebf2-41cf-a561-9b10995e175f
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W82.firmware
 aliases: []

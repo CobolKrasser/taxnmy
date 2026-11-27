@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.108789.1TB.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.108789.1TB.firmware
+identifiers:
+- lvfs: f0f46bf9-cd4e-5bb2-884c-7ff53224cc30
+  source: https://fwupd.org/lvfs/devices/com.dell.108789.1TB.firmware
 aliases: []

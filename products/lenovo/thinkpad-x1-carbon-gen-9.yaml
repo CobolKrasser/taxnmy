@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN32TR.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN32TR.firmware
+identifiers:
+- lvfs: aa096a98-94e6-479b-92f7-5771f6f2d96f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN32TR.firmware
 aliases:
 - lenovo/thinkpad-x1-yoga-gen-6

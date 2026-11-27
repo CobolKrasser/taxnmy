@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2WHA.camera.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2WHA.camera.firmware
+identifiers:
+- lvfs: 2f757bb8-ca9b-4c6a-a393-a5c9d1909994
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2WHA.camera.firmware
 aliases: []

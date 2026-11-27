@@ -5,5 +5,7 @@ kind: software
 source: https://endoflife.date/amazon-documentdb
 versions:
   source: https://endoflife.date/amazon-documentdb
-identifiers: []
+identifiers:
+- endoflife: amazon-documentdb
+  source: https://endoflife.date/amazon-documentdb
 aliases: []

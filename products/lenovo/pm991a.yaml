@@ -5,4 +5,13 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PM991a.firmware.v051701
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PM991a.firmware.v051701
+identifiers:
+- lvfs: 4b47f80a-82aa-54ed-aaec-8be94d371223
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM991a.firmware.v051701
+- lvfs: 5ae77667-65c2-5f6b-ac27-46439a421333
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM991a.firmware.v051701
+- lvfs: 723f0950-fc72-5745-a144-e92a8c0d0c82
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM991a.firmware.v051701
+- lvfs: ae5108d9-59e7-5609-aff2-832a2e8182ab
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PM991a.firmware.v051701
 aliases: []

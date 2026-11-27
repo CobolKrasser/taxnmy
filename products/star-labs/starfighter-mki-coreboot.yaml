@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.starlabs.starfighter.rpl
 versions:
   source: https://fwupd.org/lvfs/devices/com.starlabs.starfighter.rpl
+identifiers:
+- lvfs: ac75492e-18ad-477d-a719-710a0ddb6c2c
+  source: https://fwupd.org/lvfs/devices/com.starlabs.starfighter.rpl
 aliases: []

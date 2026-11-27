@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.amd.Desktop.RyzenAIMax300.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.amd.Desktop.RyzenAIMax300.BIOS.firmware
+identifiers:
+- lvfs: 07b49333-279c-47be-be97-852a4dfe8885
+  source: https://fwupd.org/lvfs/devices/com.amd.Desktop.RyzenAIMax300.BIOS.firmware
 aliases: []

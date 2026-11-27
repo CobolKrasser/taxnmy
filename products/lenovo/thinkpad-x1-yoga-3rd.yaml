@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN25RG.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN25RG.firmware
+identifiers:
+- lvfs: fc5552dc-7882-409b-9b98-699361c74fc4
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN25ET.firmware
 aliases:
 - lenovo/thinkpad-x1yoga3rd

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.SN820.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.SN820.firmware
+identifiers:
+- lvfs: d665cfca-5c7e-50bb-ab20-2038a002a8f6
+  source: https://fwupd.org/lvfs/devices/com.dell.SN820.firmware
 aliases: []

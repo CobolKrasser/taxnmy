@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.PM991a.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.PM991a.firmware
+identifiers:
+- lvfs: f49677c5-4921-4733-81fa-69a09abbcc4d
+  source: https://fwupd.org/lvfs/devices/com.dell.PM991a.firmware
 aliases: []

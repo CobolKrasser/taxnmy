@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.xfusion.fusionxpark.socfw.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.xfusion.fusionxpark.socfw.firmware
+identifiers:
+- lvfs: 11f5dd1a-79c4-4641-b279-a30adee14d3e
+  source: https://fwupd.org/lvfs/devices/com.xfusion.fusionxpark.socfw.firmware
 aliases: []

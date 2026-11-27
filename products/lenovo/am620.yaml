@@ -5,4 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.AM620.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.AM620.firmware
+identifiers:
+- lvfs: 83f5c44e-578a-5a7a-8755-6e99234be8ba
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM620.firmware
+- lvfs: ac46bba6-7d05-521e-a487-1dbaf22fe61a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM620.firmware
+- lvfs: df8b035b-c73a-515e-8484-c7687ff38472
+  source: https://fwupd.org/lvfs/devices/com.lenovo.AM620.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M5J.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M5J.BIOS.firmware
+identifiers:
+- lvfs: 42d1cf55-d978-4e65-92cc-2452891ad833
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M5J.BIOS.firmware
 aliases: []

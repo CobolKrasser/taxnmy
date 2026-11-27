@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.wd198ceeeffd.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.wd198ceeeffd.firmware
+identifiers:
+- lvfs: 8ceeeffd-51b6-580c-9b75-69143227aff8
+  source: https://fwupd.org/lvfs/devices/com.dell.wd198ceeeffd.firmware
 aliases: []

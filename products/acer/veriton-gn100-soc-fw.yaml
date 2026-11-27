@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.acer.veriton.gn100.socfw.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.acer.veriton.gn100.socfw.firmware
+identifiers:
+- lvfs: dfae723a-632e-45d7-95fd-273093abf480
+  source: https://fwupd.org/lvfs/devices/com.acer.veriton.gn100.socfw.firmware
 aliases: []

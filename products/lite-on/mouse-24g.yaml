@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.liteon.24G.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.liteon.24G.firmware
+identifiers:
+- lvfs: 23b93d7d-c430-50ce-b906-506fde69114b
+  source: https://fwupd.org/lvfs/devices/com.liteon.24G.firmware
 aliases: []

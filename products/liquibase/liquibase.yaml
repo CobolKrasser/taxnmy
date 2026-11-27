@@ -10,4 +10,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/liquibase.md
 - winget: Liquibase.Liquibase
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Liquibase/Liquibase
+- endoflife: liquibase
+  source: https://endoflife.date/liquibase
 aliases: []

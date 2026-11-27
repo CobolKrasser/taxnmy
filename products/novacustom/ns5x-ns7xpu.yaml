@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.novacustom.NS5x_NS7xPU.v2.1.system.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.novacustom.NS5x_NS7xPU.v2.1.system.firmware
+identifiers:
+- lvfs: 742d22fb-1043-4994-9154-7a30679de5f0
+  source: https://fwupd.org/lvfs/devices/com.novacustom.NS5x_NS7xPU.v2.1.system.firmware
 aliases: []

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi1d07da58.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi1d07da58.firmware
+identifiers:
+- lvfs: 1d07da58-67e1-4feb-a74c-50ffb7a70776
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi1d07da58.firmware
 aliases:
 - dell/pro-p31x265

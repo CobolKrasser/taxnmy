@@ -14,5 +14,7 @@ identifiers:
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:etcd:etcd&resultsPerPage=1
 - winget: etcd-io.etcd
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/etcd-io/etcd
+- endoflife: etcd
+  source: https://endoflife.date/etcd
 aliases:
 - etcd-io/etcd

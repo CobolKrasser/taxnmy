@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefid6567c12.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefid6567c12.firmware
+identifiers:
+- lvfs: d6567c12-3408-4238-8101-64c3a23f5c0b
+  source: https://fwupd.org/lvfs/devices/com.dell.uefid6567c12.firmware
 aliases:
 - dell/pro-rugged-14-pr514260

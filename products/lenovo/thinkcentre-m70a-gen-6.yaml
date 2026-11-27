@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M5V.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M5V.BIOS.firmware
+identifiers:
+- lvfs: 4041911b-01be-40ae-a99e-476d86d46cf0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M5V.BIOS.firmware
 aliases: []

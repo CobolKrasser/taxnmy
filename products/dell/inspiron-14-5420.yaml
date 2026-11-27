@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi44b86646.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi44b86646.firmware
+identifiers:
+- lvfs: 44b86646-b290-43cd-b2ce-b88996ab7efa
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi44b86646.firmware
 aliases:
 - dell/inspiron-16-5620
 - dell/vostro-5620

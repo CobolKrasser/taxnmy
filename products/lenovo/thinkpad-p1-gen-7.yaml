@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48ET.firmware
+identifiers:
+- lvfs: 361e26ce-012c-41fd-b887-3d4f924e602a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN48ET.firmware
 aliases: []

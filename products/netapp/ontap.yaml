@@ -5,6 +5,8 @@ kind: operating-system
 source: https://endoflife.date/netapp-ontap
 versions:
   source: https://mysupport.netapp.com/site/info/version-support
-identifiers: []
+identifiers:
+- endoflife: netapp-ontap
+  source: https://endoflife.date/netapp-ontap
 aliases:
 - netapp/netapp-ontap

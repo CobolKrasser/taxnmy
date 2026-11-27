@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.luxshare.travel.dock.tier1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.luxshare.travel.dock.tier1.firmware
+identifiers:
+- lvfs: cdb90852-e901-595d-881b-83b26d37c3b3
+  source: https://fwupd.org/lvfs/devices/com.luxshare.travel.dock.tier1.firmware
 aliases: []

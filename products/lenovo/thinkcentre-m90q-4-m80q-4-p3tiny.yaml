@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M4W.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M4W.BIOS.firmware
+identifiers:
+- lvfs: 8a15883b-8f20-4aaf-a7d8-ceb35316fb3d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M4W.BIOS.firmware
 aliases: []

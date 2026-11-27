@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.DTH-172.main.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.DTH-172.main.firmware
+identifiers:
+- lvfs: 7919fced-aa8c-5582-8986-4d8849ba4c8d
+  source: https://fwupd.org/lvfs/devices/com.wacom.DTH-172.main.firmware
 aliases: []

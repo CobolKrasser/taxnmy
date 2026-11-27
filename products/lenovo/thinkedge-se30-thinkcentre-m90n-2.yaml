@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M3F.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M3F.BIOS.firmware
+identifiers:
+- lvfs: 361ef871-3556-4f09-b1df-936dd257205e
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M3F.BIOS.firmware
 aliases: []

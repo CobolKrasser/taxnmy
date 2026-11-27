@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.Acer.Happy_WC.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.Acer.Happy_WC.firmware
+identifiers:
+- lvfs: 12b99262-648c-4365-bafd-eb869fb71345
+  source: https://fwupd.org/lvfs/devices/com.Acer.Happy_WC.firmware
 aliases:
 - acer/aspire-a315-55g

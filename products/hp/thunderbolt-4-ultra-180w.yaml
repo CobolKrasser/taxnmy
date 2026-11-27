@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.USB4G6.firmware.hendrix
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.USB4G6.firmware.hendrix
+identifiers:
+- lvfs: 539fad43-dd80-56cd-b684-dfc3f9ce2546
+  source: https://fwupd.org/lvfs/devices/com.hp.USB4G6.firmware.hendrix
 aliases: []

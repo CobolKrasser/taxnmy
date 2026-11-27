@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi7d5f2036.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi7d5f2036.firmware
+identifiers:
+- lvfs: 7d5f2036-70a7-4edb-9b1c-73d1f1b68c2e
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi7d5f2036.firmware
 aliases: []

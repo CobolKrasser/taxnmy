@@ -5,6 +5,11 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3ESG.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3ESG.firmware
+identifiers:
+- lvfs: d7f2b737-aa9d-4efb-a0ed-dc1693322839
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3ESG.firmware
+- lvfs: b6cc81dc-b6bb-49f9-acb5-2c183514dc09
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR3GSG.firmware
 aliases:
 - lenovo/thinkpad-l16-gen-3
 - lenovo/thinkpad-l14-gen7

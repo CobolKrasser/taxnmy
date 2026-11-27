@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.eposaudio.USBED01.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.eposaudio.USBED01.firmware
+identifiers:
+- lvfs: e01f6ee4-e295-5352-9559-a4685e3324ac
+  source: https://fwupd.org/lvfs/devices/com.eposaudio.USBED01.firmware
 aliases: []

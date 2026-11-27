@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/tw.com.goodway.guidd9350ca69
 versions:
   source: https://fwupd.org/lvfs/devices/tw.com.goodway.guidd9350ca69
+identifiers:
+- lvfs: 9350ca69-cd71-591f-a561-ce0f7f2560aa
+  source: https://fwupd.org/lvfs/devices/tw.com.goodway.guidd9350ca69
 aliases: []

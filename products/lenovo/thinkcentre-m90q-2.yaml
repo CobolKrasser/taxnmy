@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M3J.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M3J.BIOS.firmware
+identifiers:
+- lvfs: e68fd560-549f-4690-a018-ccecb0fda8af
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M3J.BIOS.firmware
 aliases:
 - lenovo/thinkcentre-m70q-2
 - lenovo/thinkcentre-m740q

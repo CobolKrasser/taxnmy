@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi4104b500.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi4104b500.firmware
+identifiers:
+- lvfs: 4104b500-a254-4301-b572-bf79fd450d49
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi4104b500.firmware
 aliases:
 - dell/latitude-3520

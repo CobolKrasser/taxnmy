@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.ueficec92681.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.ueficec92681.firmware
+identifiers:
+- lvfs: cec92681-7c50-4276-90b6-219f70c8410c
+  source: https://fwupd.org/lvfs/devices/com.dell.ueficec92681.firmware
 aliases:
 - dell/latitude-3510

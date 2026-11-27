@@ -10,5 +10,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/beats.md
 - cpe: cpe:2.3:a:elastic:elastic_beats
   source: https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3:a:elastic:elastic_beats&resultsPerPage=1
+- endoflife: beats
+  source: https://endoflife.date/beats
 aliases:
 - elastic/elastic-beats

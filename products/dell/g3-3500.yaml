@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware
+identifiers:
+- lvfs: 6482caa5-9513-405a-8a30-4ea80a8f3914
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware
 aliases:
 - dell/g5-5500

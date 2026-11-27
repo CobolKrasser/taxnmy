@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.intel.arc.b70_c91.intel.ibc.fwcode.update.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.intel.arc.b70_c91.intel.ibc.fwcode.update.firmware
+identifiers:
+- lvfs: eb0805bf-ba03-57d4-a2d8-017517b22058
+  source: https://fwupd.org/lvfs/devices/com.intel.arc.b70_c91.intel.ibc.fwcode.update.firmware
 aliases: []

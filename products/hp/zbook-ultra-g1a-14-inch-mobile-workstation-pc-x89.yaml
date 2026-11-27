@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X89.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X89.firmware
+identifiers:
+- lvfs: 6b887c32-2e1f-462a-a1bc-2d08ce9ffac5
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X89.firmware
 aliases: []

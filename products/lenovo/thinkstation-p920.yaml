@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP920.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP920.firmware
+identifiers:
+- lvfs: 7dd2b461-e454-40c0-98cc-21ce74ee0dda
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP920.firmware
 aliases: []

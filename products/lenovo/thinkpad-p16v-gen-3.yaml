@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4GET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4GET.firmware
+identifiers:
+- lvfs: 0a34b5dd-d6f6-4e99-89e8-cfe04ec3f5e6
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN4GET.firmware
 aliases: []

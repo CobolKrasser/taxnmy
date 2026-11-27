@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:npm/quasar
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/quasar.md
+- endoflife: quasar
+  source: https://endoflife.date/quasar
 aliases: []

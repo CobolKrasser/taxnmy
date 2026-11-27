@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X74.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X74.firmware
+identifiers:
+- lvfs: f493fd32-6890-400e-9aaa-f024fa65ada4
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.X74.firmware
 aliases: []

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi1e87be7c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi1e87be7c.firmware
+identifiers:
+- lvfs: 1e87be7c-f101-4872-885b-66ef9f03efce
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi1e87be7c.firmware
 aliases:
 - dell/pro-rugged-12-tablet-ra02260

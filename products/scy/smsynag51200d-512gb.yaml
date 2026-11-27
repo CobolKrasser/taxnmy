@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.shichuangyi.smsynag51200d.512gb.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.shichuangyi.smsynag51200d.512gb.firmware
+identifiers:
+- lvfs: bc45cea5-8d39-503b-8f58-22f6ae250d28
+  source: https://fwupd.org/lvfs/devices/com.shichuangyi.smsynag51200d.512gb.firmware
 aliases: []

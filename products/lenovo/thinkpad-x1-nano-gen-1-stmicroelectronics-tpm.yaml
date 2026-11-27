@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2TCZSTM10303.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2TCZSTM10303.firmware
+identifiers:
+- lvfs: 8aa15f66-f71c-42ed-882f-a3b8625c37fc
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2TCZSTM10303.firmware
 aliases: []

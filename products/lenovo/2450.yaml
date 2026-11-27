@@ -5,4 +5,17 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
+identifiers:
+- lvfs: 1660bf03-fa15-57c4-9cb2-9c924f234c73
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
+- lvfs: 4bced811-3671-505b-a055-c1346a3aa564
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
+- lvfs: 6e9b238d-2663-51ef-bed3-ad123a21bf0a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
+- lvfs: 827a19f4-aaa9-5ec7-8150-fcc212e168c0
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
+- lvfs: b44c784d-65c2-5574-b719-c36e9f45e282
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
+- lvfs: df15b171-64a2-5656-912b-4a2737331ea5
+  source: https://fwupd.org/lvfs/devices/com.lenovo.2450.firmware
 aliases: []

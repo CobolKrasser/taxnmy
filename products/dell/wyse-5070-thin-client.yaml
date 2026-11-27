@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefib68b18a3.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefib68b18a3.firmware
+identifiers:
+- lvfs: b68b18a3-adb2-44c8-9c22-b686cceb9c08
+  source: https://fwupd.org/lvfs/devices/com.dell.uefib68b18a3.firmware
 aliases: []

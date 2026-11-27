@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.0x106.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.0x106.firmware
+identifiers:
+- lvfs: cc9d6a06-d4ff-58ff-bba1-24feab149fb2
+  source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.0x106.firmware
 aliases: []

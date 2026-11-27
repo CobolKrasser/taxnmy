@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.titan.bsu.wac.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.titan.bsu.wac.firmware
+identifiers:
+- lvfs: 243e31f8-1d54-5d80-a5dd-67f0cf4f148d
+  source: https://fwupd.org/lvfs/devices/com.wacom.titan.bsu.wac.firmware
 aliases: []

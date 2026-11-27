@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2XBL_00060108.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2XBL_00060108.firmware
+identifiers:
+- lvfs: 3561f83d-a655-44d6-a0de-6f5c07ee8f16
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2XBL_00060108.firmware
 aliases:
 - lenovo/thinkpad-p14s-gen-1

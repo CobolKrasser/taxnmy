@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie54a6096.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie54a6096.firmware
+identifiers:
+- lvfs: e54a6096-69cd-49f5-8715-f9a4f61455cc
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie54a6096.firmware
 aliases:
 - dell/precision-7770

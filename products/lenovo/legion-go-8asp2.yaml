@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.LegionGo8ASP2.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.LegionGo8ASP2.BIOS.firmware
+identifiers:
+- lvfs: 1bb9e6b7-afd5-4502-9060-93d3ebb668f3
+  source: https://fwupd.org/lvfs/devices/com.lenovo.LegionGo8ASP2.BIOS.firmware
 aliases: []

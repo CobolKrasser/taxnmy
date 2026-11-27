@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.mntre.pocket_reform.input10.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.mntre.pocket_reform.input10.firmware
+identifiers:
+- lvfs: a515e8b3-d950-5228-a136-ebaed3e376e8
+  source: https://fwupd.org/lvfs/devices/com.mntre.pocket_reform.input10.firmware
 aliases: []

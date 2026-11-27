@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.asus.H7607BA.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.asus.H7607BA.firmware
+identifiers:
+- lvfs: 97686c57-e102-5ecf-ae23-27647f24f0ca
+  source: https://fwupd.org/lvfs/devices/com.asus.H7607BA.firmware
 aliases: []

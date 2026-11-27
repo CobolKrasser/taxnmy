@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationM70A.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationM70A.BIOS.firmware
+identifiers:
+- lvfs: 398d3770-c4c5-4d48-8b66-4b947caeccd8
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationM70A.BIOS.firmware
 aliases: []

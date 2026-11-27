@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.P3UltraSFFG2.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.P3UltraSFFG2.BIOS.firmware
+identifiers:
+- lvfs: ed06c7ec-937b-4a1c-a080-aea75acf1320
+  source: https://fwupd.org/lvfs/devices/com.lenovo.P3UltraSFFG2.BIOS.firmware
 aliases: []

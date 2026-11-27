@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN30ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN30ET.firmware
+identifiers:
+- lvfs: e1678770-bdc9-47f9-8d90-340e28b6f196
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN30ET.firmware
 aliases:
 - lenovo/thinkpad-p17-gen-1
 - lenovo/thinkpad-p15g-gen-1

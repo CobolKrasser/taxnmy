@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.MainFW.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.MainFW.firmware
+identifiers:
+- lvfs: 8be194af-06c7-5f53-8441-2d0b01b045ee
+  source: https://fwupd.org/lvfs/devices/com.wacom.movink-13.MainFW.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.PGX.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.PGX.BIOS.firmware
+identifiers:
+- lvfs: 60907481-d386-4848-bc6e-92aadbb87fac
+  source: https://fwupd.org/lvfs/devices/com.lenovo.PGX.BIOS.firmware
 aliases: []

@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefidf3bd39e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefidf3bd39e.firmware
+identifiers:
+- lvfs: df3bd39e-0a58-606c-8bb3-29394efd0093
+  source: https://fwupd.org/lvfs/devices/com.dell.uefidf3bd39e.firmware
 aliases:
 - dell/chengming-3901

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U90.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U90.firmware
+identifiers:
+- lvfs: deb2c70f-a292-49cf-9372-8e572ccdcdda
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.U90.firmware
 aliases: []

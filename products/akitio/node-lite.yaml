@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.akitio.NodeLite.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.akitio.NodeLite.firmware
+identifiers:
+- lvfs: 56795381-eb4b-590b-9c1b-ed56b52b0170
+  source: https://fwupd.org/lvfs/devices/com.akitio.NodeLite.firmware
 aliases: []

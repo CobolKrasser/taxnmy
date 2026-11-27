@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefif90be13c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefif90be13c.firmware
+identifiers:
+- lvfs: f90be13c-2383-47bc-936f-4b7ba031ec69
+  source: https://fwupd.org/lvfs/devices/com.dell.uefif90be13c.firmware
 aliases:
 - dell/vostro-5590
 - dell/inspiron-5490

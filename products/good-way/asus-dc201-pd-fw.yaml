@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/tw.com.goodway.guidaddeb408
 versions:
   source: https://fwupd.org/lvfs/devices/tw.com.goodway.guidaddeb408
+identifiers:
+- lvfs: addeb408-9be5-5d2b-b7c9-5ad309009002
+  source: https://fwupd.org/lvfs/devices/tw.com.goodway.guidaddeb408
 aliases: []

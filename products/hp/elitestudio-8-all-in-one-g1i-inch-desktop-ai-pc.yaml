@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X11.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X11.firmware
+identifiers:
+- lvfs: b0993bd4-fd32-411f-bbfb-2eccffdb3586
+  source: https://fwupd.org/lvfs/devices/com.hp.desktop.system.X11.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guid803360f1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guid803360f1.firmware
+identifiers:
+- lvfs: 803360f1-2557-4623-a19d-5c3b2838e9a4
+  source: https://fwupd.org/lvfs/devices/com.dell.guid803360f1.firmware
 aliases: []

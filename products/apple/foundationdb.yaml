@@ -8,4 +8,6 @@ versions:
 identifiers:
 - purl: pkg:github/apple/foundationdb
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/foundationdb.md
+- endoflife: foundationdb
+  source: https://endoflife.date/foundationdb
 aliases: []

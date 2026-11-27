@@ -5,4 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.111956.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.111956.firmware
+identifiers:
+- lvfs: 831b133e-af70-4d89-a99a-00c59eedf816
+  source: https://fwupd.org/lvfs/devices/com.dell.111956.firmware
+- lvfs: 96287346-505b-5b8d-9d35-582e890c029b
+  source: https://fwupd.org/lvfs/devices/com.dell.111956.firmware
 aliases: []

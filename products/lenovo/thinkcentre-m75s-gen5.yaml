@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M75s-5.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M75s-5.BIOS.firmware
+identifiers:
+- lvfs: 200d8461-a5dd-4bef-978c-a3f48603650b
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M75s-5.BIOS.firmware
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U65.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U65.firmware
+identifiers:
+- lvfs: 26424dd8-442f-4ae0-b6ff-04fa69964357
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.system.U65.firmware
 aliases: []

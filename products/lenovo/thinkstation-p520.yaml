@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c.firmware
+identifiers:
+- lvfs: b422e9db-bc3e-47df-bbec-cdbbf0380d73
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStationP520_P520c.firmware
 aliases:
 - lenovo/thinkstation-p520c

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi8090f0af.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi8090f0af.firmware
+identifiers:
+- lvfs: 8090f0af-74b9-4137-b238-a4e40c686a38
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi8090f0af.firmware
 aliases: []

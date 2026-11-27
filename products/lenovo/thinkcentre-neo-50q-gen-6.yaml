@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.M6D.BIOS.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.M6D.BIOS.firmware
+identifiers:
+- lvfs: a4ef6350-fbbf-4156-a6c1-2bc6ddecf13a
+  source: https://fwupd.org/lvfs/devices/com.lenovo.M6D.BIOS.firmware
 aliases: []

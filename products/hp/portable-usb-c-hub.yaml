@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.Jubilee.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.Jubilee.firmware
+identifiers:
+- lvfs: 9460bbc1-c464-5de7-98c6-fffc361ae999
+  source: https://fwupd.org/lvfs/devices/com.hp.Jubilee.firmware
 aliases: []

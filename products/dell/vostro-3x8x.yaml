@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi99831e40.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi99831e40.firmware
+identifiers:
+- lvfs: 99831e40-4637-4291-2c7a-858d4a969a19
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi99831e40.firmware
 aliases: []

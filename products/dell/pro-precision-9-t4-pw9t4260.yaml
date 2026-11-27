@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie7fa581f.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie7fa581f.firmware
+identifiers:
+- lvfs: e7fa581f-dac6-4845-a419-1d99f0256ae6
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie7fa581f.firmware
 aliases:
 - dell/pro-precision-9-t6-pw9t6260
 - dell/pro-precision-9-t2-pw9t2260

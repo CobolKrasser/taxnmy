@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/de.extracomputer.D3544-H1.uefi.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/de.extracomputer.D3544-H1.uefi.firmware
+identifiers:
+- lvfs: def41966-5b56-4205-af27-333534344831
+  source: https://fwupd.org/lvfs/devices/de.extracomputer.D3544-H1.uefi.firmware
 aliases: []

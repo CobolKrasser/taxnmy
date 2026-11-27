@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.corsair.bora.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.corsair.bora.firmware
+identifiers:
+- lvfs: b7b0728e-94e9-5ad5-999f-c6a359a9ddd4
+  source: https://fwupd.org/lvfs/devices/com.corsair.bora.firmware
 aliases: []

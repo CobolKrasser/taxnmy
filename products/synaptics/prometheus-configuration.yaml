@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config
 versions:
   source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config
+identifiers:
+- lvfs: 7c5a1e62-38fa-5859-9337-09dbac6377e4
+  source: https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config
 aliases: []

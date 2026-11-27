@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guid690e40e2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guid690e40e2.firmware
+identifiers:
+- lvfs: 690e40e2-2141-4710-93a6-8a2ba6890c99
+  source: https://fwupd.org/lvfs/devices/com.dell.guid690e40e2.firmware
 aliases: []

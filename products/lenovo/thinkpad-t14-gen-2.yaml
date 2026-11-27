@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34ET.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34ET.firmware
+identifiers:
+- lvfs: 973a10fa-79c0-453e-b78c-27b55cc0e6eb
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN34ET.firmware
 aliases:
 - lenovo/thinkpad-p14s-gen-2
 - lenovo/thinkpad-t15-gen-2

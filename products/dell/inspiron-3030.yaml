@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefie5e4fed6.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefie5e4fed6.firmware
+identifiers:
+- lvfs: e5e4fed6-44bd-446c-9cb8-b577d1f69444
+  source: https://fwupd.org/lvfs/devices/com.dell.uefie5e4fed6.firmware
 aliases:
 - dell/inspiron-3030s

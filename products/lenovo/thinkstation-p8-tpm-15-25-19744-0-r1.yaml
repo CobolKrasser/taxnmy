@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P8.TPM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P8.TPM.firmware
+identifiers:
+- lvfs: 8e7704e7-3b92-4abc-a670-686c2ee8332d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkStation.P8.TPM.firmware
 aliases: []

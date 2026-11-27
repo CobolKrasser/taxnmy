@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.workstation.x52.X52.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.workstation.x52.X52.firmware
+identifiers:
+- lvfs: 37d05291-d476-4e44-8587-e11508964a69
+  source: https://fwupd.org/lvfs/devices/com.hp.workstation.x52.X52.firmware
 aliases: []

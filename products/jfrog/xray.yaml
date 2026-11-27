@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/jfrog-xray
 versions:
   source: https://docs.jfrog.com/releases/docs/security-end-of-life
-identifiers: []
+identifiers:
+- endoflife: jfrog-xray
+  source: https://endoflife.date/jfrog-xray
 aliases:
 - jfrog/jfrog-xray

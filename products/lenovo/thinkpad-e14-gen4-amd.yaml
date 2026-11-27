@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR20CZNTC7231.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR20CZNTC7231.firmware
+identifiers:
+- lvfs: 0c3fa921-3dfe-18ef-d711-3e7d3d94d05f
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR20CZNTC7231.firmware
 aliases:
 - lenovo/thinkpad-e15-gen4-amd

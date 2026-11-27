@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.fujitsu.P2711.tier1.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.fujitsu.P2711.tier1.firmware
+identifiers:
+- lvfs: 529aef05-17f0-5578-8a60-9af55aac0beb
+  source: https://fwupd.org/lvfs/devices/com.fujitsu.P2711.tier1.firmware
 aliases: []

@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23CZNTC7231.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23CZNTC7231.firmware
+identifiers:
+- lvfs: 01ae569c-30cd-44bc-8437-5e329c6a391c
+  source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadR23CZNTC7231.firmware
 aliases:
 - lenovo/thinkpad-t16-gen1-amd
 - lenovo/thinkpad-p16s-gen1-amd

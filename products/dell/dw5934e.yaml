@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.dw5934e.a2.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.dw5934e.a2.firmware
+identifiers:
+- lvfs: 7ca1b783-2000-5b15-8ac0-ef10449f053a
+  source: https://fwupd.org/lvfs/devices/com.dell.dw5934e.a2.firmware
 aliases: []

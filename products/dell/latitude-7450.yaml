@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi50be4d1e.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi50be4d1e.firmware
+identifiers:
+- lvfs: 50be4d1e-1b8c-41d7-8ce0-1711552e65ec
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi50be4d1e.firmware
 aliases: []

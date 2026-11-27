@@ -5,6 +5,9 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi85686610.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi85686610.firmware
+identifiers:
+- lvfs: 85686610-06c3-4be4-97c5-565e3d149fc9
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi85686610.firmware
 aliases:
 - dell/latitude-7420
 - dell/latitude-7520

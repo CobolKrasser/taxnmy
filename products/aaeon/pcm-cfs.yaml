@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.aaeon.pcmcfs.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.aaeon.pcmcfs.firmware
+identifiers:
+- lvfs: 683129f7-22cd-453b-baad-4e3f9838aaa3
+  source: https://fwupd.org/lvfs/devices/com.aaeon.pcmcfs.firmware
 aliases: []

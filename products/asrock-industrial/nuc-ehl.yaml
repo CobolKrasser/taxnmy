@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.asrock.nuc-ehl.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.asrock.nuc-ehl.firmware
+identifiers:
+- lvfs: 8eb58e16-d802-43b1-8784-aebd6614cb18
+  source: https://fwupd.org/lvfs/devices/com.asrock.nuc-ehl.firmware
 aliases: []

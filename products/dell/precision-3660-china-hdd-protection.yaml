@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefid6b43c3b.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefid6b43c3b.firmware
+identifiers:
+- lvfs: d6b43c3b-6542-476c-86de-f9bf24abfac6
+  source: https://fwupd.org/lvfs/devices/com.dell.uefid6b43c3b.firmware
 aliases: []

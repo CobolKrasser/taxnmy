@@ -14,4 +14,6 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/grunt.md
 - winget: Grunt.Grunt
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Grunt/Grunt
+- endoflife: grunt
+  source: https://endoflife.date/grunt
 aliases: []

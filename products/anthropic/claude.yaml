@@ -8,5 +8,7 @@ versions:
 identifiers:
 - winget: Anthropic.Claude
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Claude
+- endoflife: claude
+  source: https://endoflife.date/claude
 aliases:
 - anthropic-pbc/claude

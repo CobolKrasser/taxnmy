@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/mxlinux
 versions:
   source: https://endoflife.date/mxlinux
-identifiers: []
+identifiers:
+- endoflife: mxlinux
+  source: https://endoflife.date/mxlinux
 aliases: []

@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefia1b334de.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefia1b334de.firmware
+identifiers:
+- lvfs: a1b334de-aa3c-4358-ba0d-31c91df1a856
+  source: https://fwupd.org/lvfs/devices/com.dell.uefia1b334de.firmware
 aliases: []

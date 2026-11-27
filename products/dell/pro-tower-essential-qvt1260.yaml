@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefi02e60b29.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefi02e60b29.firmware
+identifiers:
+- lvfs: 02e60b29-9624-45b6-8850-a7736be484de
+  source: https://fwupd.org/lvfs/devices/com.dell.uefi02e60b29.firmware
 aliases:
 - dell/pro-slim-essential-qvs1260

@@ -5,6 +5,8 @@ kind: operating-system
 source: https://endoflife.date/sns-smc
 versions:
   source: https://endoflife.date/sns-smc
-identifiers: []
+identifiers:
+- endoflife: sns-smc
+  source: https://endoflife.date/sns-smc
 aliases:
 - stormshield/stormshield-management-center

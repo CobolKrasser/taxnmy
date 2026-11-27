@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefia888c891.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefia888c891.firmware
+identifiers:
+- lvfs: a888c891-9ebf-4e33-8957-3794273defe4
+  source: https://fwupd.org/lvfs/devices/com.dell.uefia888c891.firmware
 aliases:
 - dell/precision-5770

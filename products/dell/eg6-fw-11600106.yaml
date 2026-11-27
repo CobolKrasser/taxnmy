@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.guida342de14.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.guida342de14.firmware
+identifiers:
+- lvfs: a342de14-5b40-11ee-8c99-0242ac120002
+  source: https://fwupd.org/lvfs/devices/com.dell.guida342de14.firmware
 aliases: []

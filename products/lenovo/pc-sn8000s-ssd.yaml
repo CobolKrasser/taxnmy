@@ -5,4 +5,21 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+identifiers:
+- lvfs: 0b10779f-2289-58f9-8fa3-75ef9c2a8756
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: 10f0c502-682c-59ef-bd77-51224ed28cf7
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: 579b1ffb-83a2-5719-bab9-8a8ce0c13f32
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: 5a62d6cc-d740-5710-9956-6c0afc2c2209
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: 6a49cddf-1cf9-5fc5-bf0a-8d11485090fa
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: 9b58135b-44ef-535b-ba6f-49c4c580cca6
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: b87c3e20-37ee-5a8e-8f2c-37716909b12d
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
+- lvfs: ef8f4fc9-975c-517a-9e40-00a21f0e72cf
+  source: https://fwupd.org/lvfs/devices/com.lenovo.SN8000S.firmware
 aliases: []

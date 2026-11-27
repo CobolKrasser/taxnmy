@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W98.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W98.firmware
+identifiers:
+- lvfs: 1f009a00-68a7-4577-35b6-526da932ef81
+  source: https://fwupd.org/lvfs/devices/com.hp.laptop.system.W98.firmware
 aliases: []

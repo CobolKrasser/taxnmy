@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.YogaUKCN.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.YogaUKCN.firmware
+identifiers:
+- lvfs: 63423692-59b4-4671-9116-e2d241ebf2b9
+  source: https://fwupd.org/lvfs/devices/com.lenovo.YogaUKCN.firmware
 aliases: []

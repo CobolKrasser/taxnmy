@@ -5,5 +5,7 @@ kind: operating-system
 source: https://endoflife.date/truenas
 versions:
   source: https://endoflife.date/truenas
-identifiers: []
+identifiers:
+- endoflife: truenas
+  source: https://endoflife.date/truenas
 aliases: []

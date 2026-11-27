@@ -5,5 +5,8 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.dell.uefif6e92d90.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.dell.uefif6e92d90.firmware
+identifiers:
+- lvfs: f6e92d90-57f0-4e51-8bc3-94ed447a2f3f
+  source: https://fwupd.org/lvfs/devices/com.dell.uefif6e92d90.firmware
 aliases:
 - dell/optiplex-5400-aio

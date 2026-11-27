@@ -5,4 +5,7 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.8bitdo.nes30pro.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.8bitdo.nes30pro.firmware
+identifiers:
+- lvfs: 4fa94782-9ab0-531f-b038-a3e79ddf4b19
+  source: https://fwupd.org/lvfs/devices/com.8bitdo.nes30pro.firmware
 aliases: []

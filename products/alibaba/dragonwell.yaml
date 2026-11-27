@@ -5,6 +5,8 @@ kind: software
 source: https://endoflife.date/alibaba-dragonwell
 versions:
   source: https://endoflife.date/alibaba-dragonwell
-identifiers: []
+identifiers:
+- endoflife: alibaba-dragonwell
+  source: https://endoflife.date/alibaba-dragonwell
 aliases:
 - alibaba/alibaba-dragonwell
