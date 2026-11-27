@@ -1,0 +1,9 @@
+key: schneider-electric/magelis-hmistu-series
+publisher: schneider-electric
+name: Magelis HMISTU series
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- schneider-electric-software/magelis-hmistu-series

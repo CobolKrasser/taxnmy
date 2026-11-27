@@ -1,9 +1,11 @@
 key: schneider-electric/software-update
 publisher: schneider-electric
 name: Schneider Electric Software Update
-kind: device
+kind: software
 source: https://www.se.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://www.se.com/.well-known/csaf/provider-metadata.json
 aliases:
 - schneider-electric/schneider-electric-software-update
+- schneider-electric-software/update
+- schneider-electric-software/schneider-electric-software-update
