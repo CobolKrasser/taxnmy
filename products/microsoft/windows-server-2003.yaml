@@ -1,0 +1,13 @@
+key: microsoft/windows-server-2003
+publisher: microsoft
+name: Windows Server 2003
+kind: operating-system
+source: https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2003-
+versions:
+  source: https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2003-
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_server_2003
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- microsoft/windows-server-x64-edition-service-pack-2
+- microsoft/windows-server-with-sp2-for-itanium-based-systems
