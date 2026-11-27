@@ -1,0 +1,12 @@
+key: les-ferch/winsetview
+publisher: les-ferch
+name: WinSetView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LesFerch/WinSetView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LesFerch/WinSetView
+identifiers:
+- winget: LesFerch.WinSetView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LesFerch/WinSetView
+aliases:
+- lesferch/winsetview

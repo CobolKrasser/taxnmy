@@ -1,0 +1,12 @@
+key: aryan-bhosale/sh-guard
+publisher: aryan-bhosale
+name: sh-guard
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aryanbhosale/sh-guard
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aryanbhosale/sh-guard
+identifiers:
+- winget: aryanbhosale.sh-guard
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/aryanbhosale/sh-guard
+aliases:
+- aryanbhosale/sh-guard

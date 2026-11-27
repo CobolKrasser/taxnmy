@@ -1,0 +1,12 @@
+key: prime-build/lightcrosshair
+publisher: prime-build
+name: LightCrosshair
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/LightCrosshair
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/LightCrosshair
+identifiers:
+- winget: PrimeBuild.LightCrosshair
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/LightCrosshair
+aliases:
+- primebuild/lightcrosshair

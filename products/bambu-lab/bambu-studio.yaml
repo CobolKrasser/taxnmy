@@ -1,0 +1,12 @@
+key: bambu-lab/bambu-studio
+publisher: bambu-lab
+name: Bambu Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bambulab/Bambustudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bambulab/Bambustudio
+identifiers:
+- winget: Bambulab.Bambustudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bambulab/Bambustudio
+aliases:
+- bambulab/bambu-studio

@@ -1,0 +1,12 @@
+key: jesse-duffield/lazydocker
+publisher: jesse-duffield
+name: Lazydocker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JesseDuffield/Lazydocker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JesseDuffield/Lazydocker
+identifiers:
+- winget: JesseDuffield.Lazydocker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/JesseDuffield/Lazydocker
+aliases:
+- jesseduffield/lazydocker

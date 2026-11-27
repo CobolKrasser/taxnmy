@@ -1,0 +1,12 @@
+key: open-media/4k-slideshow-maker
+publisher: open-media
+name: 4K Slideshow Maker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KSlideshowMaker
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KSlideshowMaker
+identifiers:
+- winget: OpenMedia.4KSlideshowMaker
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenMedia/4KSlideshowMaker
+aliases:
+- openmedia/4k-slideshow-maker

@@ -1,4 +1,5 @@
 key: prime-build
 name: Prime Build
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PrimeBuild/ThreadPilot
-aliases: []
+aliases:
+- primebuild
