@@ -1,0 +1,15 @@
+key: red-hat/enterprise-linux-desktop
+publisher: red-hat
+name: Red Hat Enterprise Linux Desktop
+kind: operating-system
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:o:redhat:enterprise_linux_desktop
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- red-hat/red-hat-enterprise-linux-desktop-7
+- red-hat/enterprise-linux-desktop-v-7
+- red-hat/red-hat-enterprise-linux-desktop-v-7
+- red-hat/enterprise-linux-desktop-7

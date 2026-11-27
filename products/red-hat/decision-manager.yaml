@@ -1,0 +1,14 @@
+key: red-hat/decision-manager
+publisher: red-hat
+name: Red Hat Decision Manager
+kind: software
+source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+versions:
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:redhat:jboss_enterprise_brms_platform
+  source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+aliases:
+- red-hat/red-hat-decision-manager-7
+- red-hat/rhdm
+- red-hat/decision-manager-7
