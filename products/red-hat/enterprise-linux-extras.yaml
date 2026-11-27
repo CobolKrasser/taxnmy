@@ -1,6 +1,6 @@
-key: red-hat/desktop-version-3-extras
+key: red-hat/enterprise-linux-extras
 publisher: red-hat
-name: Red Hat Desktop version 3 Extras
+name: Red Hat Enterprise Linux Extras
 kind: software
 source: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
 versions:
@@ -28,3 +28,4 @@ aliases:
 - red-hat/red-hat-enterprise-linux-ws-version-3-extras
 - red-hat/enterprise-linux-ws-version-4-extras
 - red-hat/red-hat-enterprise-linux-ws-version-4-extras
+- red-hat/desktop-version-3-extras
