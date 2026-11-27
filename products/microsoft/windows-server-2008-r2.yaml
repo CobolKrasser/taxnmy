@@ -4,5 +4,10 @@ name: Windows Server 2008 R2
 kind: operating-system
 source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 versions:
-  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
-aliases: []
+  source: https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2008-r2
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_server_2008_r2
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- microsoft/windows-server-r2-sp1
+- microsoft/microsoft-windows-server-r2-sp1

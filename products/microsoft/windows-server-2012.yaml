@@ -1,0 +1,11 @@
+key: microsoft/windows-server-2012
+publisher: microsoft
+name: Windows Server 2012
+kind: operating-system
+source: https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2012
+versions:
+  source: https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2012
+identifiers:
+- cpe: cpe:2.3:o:microsoft:windows_server_2012
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases: []
