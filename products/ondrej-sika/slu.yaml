@@ -1,0 +1,12 @@
+key: ondrej-sika/slu
+publisher: ondrej-sika
+name: slu
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slu
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slu
+identifiers:
+- winget: sikalabs.slu
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slu
+aliases:
+- ondrej-sika-and-sikalabs/slu

@@ -1,0 +1,12 @@
+key: emule-project-net/emule
+publisher: emule-project-net
+name: eMule
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule
+identifiers:
+- winget: eMule.eMule
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/eMule/eMule
+aliases:
+- emule-project-net-sharp-null/emule

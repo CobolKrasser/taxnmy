@@ -1,0 +1,12 @@
+key: teamspeak/3-client
+publisher: teamspeak
+name: TeamSpeak 3 Client
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient
+identifiers:
+- winget: TeamSpeakSystems.TeamSpeakClient
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeamSpeakSystems/TeamSpeakClient
+aliases:
+- teamspeak-systems/teamspeak-3-client

@@ -1,0 +1,12 @@
+key: tencent/workbuddy-ai
+publisher: tencent
+name: WorkBuddy AI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WorkBuddy/Global
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WorkBuddy/Global
+identifiers:
+- winget: Tencent.WorkBuddy.Global
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WorkBuddy/Global
+aliases:
+- tencent-technology-shenzhen/workbuddy-ai

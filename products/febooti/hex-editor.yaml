@@ -1,0 +1,12 @@
+key: febooti/hex-editor
+publisher: febooti
+name: Febooti Hex Editor
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/HexEditor
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/HexEditor
+identifiers:
+- winget: Febooti.HexEditor
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/Febooti/HexEditor
+aliases:
+- febooti-software/febooti-hex-editor

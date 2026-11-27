@@ -1,0 +1,12 @@
+key: chill-astro/lamina
+publisher: chill-astro
+name: Lamina
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chill-Astro/Lamina
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chill-Astro/Lamina
+identifiers:
+- winget: Chill-Astro.Lamina
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chill-Astro/Lamina
+aliases:
+- chill-astro-software/lamina

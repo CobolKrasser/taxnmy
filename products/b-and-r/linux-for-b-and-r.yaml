@@ -1,0 +1,9 @@
+key: b-and-r/linux-for-b-and-r
+publisher: b-and-r
+name: Linux for B&R
+kind: operating-system
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases:
+- b-and-r-industrial-automation/linux-for-b-and-r

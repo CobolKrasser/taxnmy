@@ -1,0 +1,12 @@
+key: dialpad/meetings
+publisher: dialpad
+name: Dialpad Meetings
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/DialpadMeetings
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/DialpadMeetings
+identifiers:
+- winget: Dialpad.DialpadMeetings
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/DialpadMeetings
+aliases:
+- dialpad-meetings/dialpad-meetings

@@ -1,0 +1,12 @@
+key: western-digital/wd-security
+publisher: western-digital
+name: WD Security
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WesternDigital/Security
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WesternDigital/Security
+identifiers:
+- winget: WesternDigital.Security
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WesternDigital/Security
+aliases:
+- western-digital-technologies/wd-security

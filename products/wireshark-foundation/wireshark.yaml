@@ -14,4 +14,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/wireshark.md
 - homebrew: wireshark-app
   source: https://formulae.brew.sh/cask/wireshark-app
-aliases: []
+- winget: WiresharkFoundation.Wireshark
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiresharkFoundation/Wireshark
+aliases:
+- the-wireshark-developer-community-https-www-wireshark-org/wireshark

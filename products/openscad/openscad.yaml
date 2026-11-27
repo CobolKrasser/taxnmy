@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: OpenSCAD.OpenSCAD
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSCAD/OpenSCAD
-aliases: []
+- winget: OpenSCAD.OpenSCAD.Nightly
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenSCAD/OpenSCAD/Nightly
+aliases:
+- the-openscad-developers/openscad

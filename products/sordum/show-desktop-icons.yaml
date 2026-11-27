@@ -1,0 +1,12 @@
+key: sordum/show-desktop-icons
+publisher: sordum
+name: Show Desktop Icons
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ShowDesktopIcons
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ShowDesktopIcons
+identifiers:
+- winget: sordum.ShowDesktopIcons
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/ShowDesktopIcons
+aliases:
+- sordum-org/show-desktop-icons

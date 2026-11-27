@@ -1,0 +1,12 @@
+key: stardock/connection-explorer
+publisher: stardock
+name: Connection Explorer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/ConnectionExplorer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/ConnectionExplorer
+identifiers:
+- winget: StardockSystems.ConnectionExplorer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/ConnectionExplorer
+aliases:
+- stardock-systems/connection-explorer

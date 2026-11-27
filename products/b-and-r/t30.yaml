@@ -1,0 +1,9 @@
+key: b-and-r/t30
+publisher: b-and-r
+name: T30
+kind: device
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases:
+- b-and-r-industrial-automation/t30

@@ -8,5 +8,8 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:apache:openoffice
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+- winget: Apache.OpenOffice
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/OpenOffice
 aliases:
 - apache/apache-openoffice
+- the-apache-software-foundation/openoffice

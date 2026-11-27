@@ -1,0 +1,12 @@
+key: pwpw/sigillum-manager
+publisher: pwpw
+name: Sigillum Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PWPW/SigillumManager
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PWPW/SigillumManager
+identifiers:
+- winget: PWPW.SigillumManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PWPW/SigillumManager
+aliases:
+- pwpw-s-a-sigillum/sigillum-manager

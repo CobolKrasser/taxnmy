@@ -1,0 +1,9 @@
+key: b-and-r/ppc50
+publisher: b-and-r
+name: PPC50
+kind: device
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases:
+- b-and-r-industrial-automation/ppc50

@@ -1,0 +1,12 @@
+key: snaildos/fifo
+publisher: snaildos
+name: Fifo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/Fifo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/Fifo
+identifiers:
+- winget: SnailDOS.Fifo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SnailDOS/Fifo
+aliases:
+- snaildos-team/fifo

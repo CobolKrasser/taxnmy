@@ -1,0 +1,12 @@
+key: eclipse/ide-for-java-developers
+publisher: eclipse
+name: Eclipse IDE for Java Developers
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Java
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Java
+identifiers:
+- winget: EclipseFoundation.Eclipse.Java
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Java
+aliases:
+- eclipse-foundation/eclipse-ide-for-java-developers

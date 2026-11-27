@@ -1,0 +1,12 @@
+key: corsair/elgato-wave-link
+publisher: corsair
+name: Elgato Wave Link
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/WaveLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/WaveLink
+identifiers:
+- winget: Elgato.WaveLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/WaveLink
+aliases:
+- corsair-memory/elgato-wave-link

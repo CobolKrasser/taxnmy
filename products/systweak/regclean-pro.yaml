@@ -1,0 +1,12 @@
+key: systweak/regclean-pro
+publisher: systweak
+name: RegClean Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/RegCleanPro
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/RegCleanPro
+identifiers:
+- winget: SystweakSoftware.RegCleanPro
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/RegCleanPro
+aliases:
+- systweak-software/regclean-pro

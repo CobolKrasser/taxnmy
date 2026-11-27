@@ -1,0 +1,12 @@
+key: axis/file-player-launcher
+publisher: axis
+name: AXIS File Player Launcher
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxisCommunicationsAB/FilePlayerLauncher
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxisCommunicationsAB/FilePlayerLauncher
+identifiers:
+- winget: AxisCommunicationsAB.FilePlayerLauncher
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AxisCommunicationsAB/FilePlayerLauncher
+aliases:
+- axis-communications/axis-file-player-launcher

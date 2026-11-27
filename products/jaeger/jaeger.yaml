@@ -8,4 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:linuxfoundation:jaeger
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/jaeger.md
-aliases: []
+- winget: jaegertracing.jaeger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jaegertracing/jaeger
+aliases:
+- jaegertracing/jaeger

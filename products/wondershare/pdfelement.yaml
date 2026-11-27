@@ -18,5 +18,10 @@ identifiers:
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/8
 - winget: Wondershare.PDFelement.9
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/9
+- winget: Wondershare.PDFelement.6
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/6
+- winget: Wondershare.PDFelement.7
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/PDFelement/7
 aliases:
 - wondershare/wondershare-pdfelement
+- wondershare-software/wondershare-pdfelement

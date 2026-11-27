@@ -1,0 +1,12 @@
+key: eclipse/mosquitto-mqtt-broker
+publisher: eclipse
+name: Eclipse Mosquitto MQTT broker
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Mosquitto
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Mosquitto
+identifiers:
+- winget: EclipseFoundation.Mosquitto
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Mosquitto
+aliases:
+- eclipse-foundation/eclipse-mosquitto-mqtt-broker

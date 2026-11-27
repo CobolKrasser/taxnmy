@@ -1,0 +1,12 @@
+key: meinberg/network-time-protocol
+publisher: meinberg
+name: Network Time Protocol
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/NTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/NTP
+identifiers:
+- winget: MeinbergGlobal.NTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MeinbergGlobal/NTP
+aliases:
+- meinberg-global/network-time-protocol

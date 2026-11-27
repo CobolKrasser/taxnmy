@@ -1,0 +1,12 @@
+key: adguard/beta
+publisher: adguard
+name: AdGuard Beta
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuard/Beta
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuard/Beta
+identifiers:
+- winget: AdGuard.AdGuard.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AdGuard/AdGuard/Beta
+aliases:
+- adguard-software/adguard-beta

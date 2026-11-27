@@ -1,0 +1,12 @@
+key: yandex/messenger
+publisher: yandex
+name: Yandex Messenger
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Messenger
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Messenger
+identifiers:
+- winget: Yandex.Messenger
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/y/Yandex/Messenger
+aliases:
+- yandex-chats/yandex-messenger

@@ -1,0 +1,12 @@
+key: wisecleaner/wise-note
+publisher: wisecleaner
+name: Wise Note
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseNote
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseNote
+identifiers:
+- winget: WiseCleaner.WiseNote
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseNote
+aliases:
+- wisecleaner-com/wise-note

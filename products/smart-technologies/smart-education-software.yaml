@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: SMARTTechnologies.SMARTNotebook
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMARTTechnologies/SMARTNotebook
-aliases: []
+- winget: SMART.SMARTEducationSoftware
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SMART/SMARTEducationSoftware
+aliases:
+- smart-technologies-ulc/smart-education-software

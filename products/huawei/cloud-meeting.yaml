@@ -1,0 +1,12 @@
+key: huawei/cloud-meeting
+publisher: huawei
+name: HUAWEI CLOUD Meeting
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiCloudMeeting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiCloudMeeting
+identifiers:
+- winget: Huawei.HuaweiCloudMeeting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/HuaweiCloudMeeting
+aliases:
+- huawei-technologies/huawei-cloud-meeting

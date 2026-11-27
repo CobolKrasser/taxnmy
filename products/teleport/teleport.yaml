@@ -12,4 +12,7 @@ identifiers:
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/teleport.md
 - homebrew: teleport-suite
   source: https://formulae.brew.sh/cask/teleport-suite
-aliases: []
+- winget: Gravitational.Teleport
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gravitational/Teleport
+aliases:
+- gravitational/teleport

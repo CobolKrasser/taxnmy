@@ -1,4 +1,9 @@
 key: isc
 name: ISC
 source: https://kb.isc.org/docs/aa-00896
-aliases: []
+machine_sources:
+- url: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- internet-systems-consortium

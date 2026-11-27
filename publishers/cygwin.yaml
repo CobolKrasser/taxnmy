@@ -1,4 +1,5 @@
 key: cygwin
 name: Cygwin
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/Cygwin
-aliases: []
+aliases:
+- cygwin-authors

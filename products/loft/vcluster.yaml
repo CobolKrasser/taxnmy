@@ -1,0 +1,12 @@
+key: loft/vcluster
+publisher: loft
+name: vcluster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/loft-sh/vcluster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/loft-sh/vcluster
+identifiers:
+- winget: loft-sh.vcluster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/loft-sh/vcluster
+aliases:
+- loft-sh/vcluster

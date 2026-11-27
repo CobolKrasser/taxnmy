@@ -1,0 +1,12 @@
+key: wondershare/anismall
+publisher: wondershare
+name: Wondershare AniSmall
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/AniSmall
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/AniSmall
+identifiers:
+- winget: Wondershare.AniSmall
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/AniSmall
+aliases:
+- wondershare-software/wondershare-anismall

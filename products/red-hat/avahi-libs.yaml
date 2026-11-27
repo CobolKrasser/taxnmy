@@ -8,4 +8,7 @@ versions:
 identifiers:
 - purl: pkg:rpm/redhat/avahi-libs
   source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
-aliases: []
+- purl: pkg:rpm/rhel/avahi-libs
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases:
+- rhel/avahi-libs

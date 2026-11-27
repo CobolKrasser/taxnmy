@@ -1,0 +1,12 @@
+key: eclipse/theiablueprint
+publisher: eclipse
+name: TheiaBlueprint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/TheiaBlueprint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/TheiaBlueprint
+identifiers:
+- winget: EclipseFoundation.TheiaBlueprint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/TheiaBlueprint
+aliases:
+- eclipse-foundation/theiablueprint

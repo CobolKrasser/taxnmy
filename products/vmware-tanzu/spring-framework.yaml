@@ -8,4 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:vmware_tanzu:spring_framework
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+- cpe: cpe:2.3:a:pivotal_software:spring_framework
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- pivotal/spring-framework

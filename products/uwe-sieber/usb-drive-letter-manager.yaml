@@ -1,0 +1,12 @@
+key: uwe-sieber/usb-drive-letter-manager
+publisher: uwe-sieber
+name: USB Drive Letter Manager
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/USBDLM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/USBDLM
+identifiers:
+- winget: UweSieber.USBDLM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UweSieber/USBDLM
+aliases:
+- uwe-sieber-de/usb-drive-letter-manager

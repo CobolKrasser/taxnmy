@@ -1,0 +1,12 @@
+key: cygwin/setup
+publisher: cygwin
+name: Cygwin Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/CygwinSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/CygwinSetup
+identifiers:
+- winget: Cygwin.CygwinSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Cygwin/CygwinSetup
+aliases:
+- cygwin-authors/cygwin-setup

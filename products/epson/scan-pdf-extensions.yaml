@@ -1,0 +1,12 @@
+key: epson/scan-pdf-extensions
+publisher: epson
+name: Epson Scan PDF Extensions
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/Scan/PDFExtensions
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/Scan/PDFExtensions
+identifiers:
+- winget: EPSON.Scan.PDFExtensions
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/Scan/PDFExtensions
+aliases:
+- seiko-epson/epson-scan-pdf-extensions

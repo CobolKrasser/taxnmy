@@ -1,0 +1,9 @@
+key: nordic-semiconductor/nrf-desktop-nrf52840dk-release
+publisher: nordic-semiconductor
+name: nrf_desktop nrf52840dk release
+kind: device
+source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52840dk.release.firmware
+versions:
+  source: https://fwupd.org/lvfs/devices/com.nordic.nrf_desktop.nrf52840dk.release.firmware
+aliases:
+- nordic/nrf-desktop-nrf52840dk-release

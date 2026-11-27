@@ -1,0 +1,12 @@
+key: kubernetes/metrics-server
+publisher: kubernetes
+name: Kubernetes Metrics Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/metrics-server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/metrics-server
+identifiers:
+- winget: Kubernetes.metrics-server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/metrics-server
+aliases:
+- the-kubernetes-authors/kubernetes-metrics-server

@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: Stremio.Stremio
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stremio/Stremio
-aliases: []
+- winget: Stremio.Stremio.Beta
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stremio/Stremio/Beta
+aliases:
+- smart-code-ood/stremio

@@ -1,0 +1,12 @@
+key: epson/connect-printer-setup
+publisher: epson
+name: Epson Connect Printer Setup
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonConnectPrinterSetup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonConnectPrinterSetup
+identifiers:
+- winget: EPSON.EpsonConnectPrinterSetup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonConnectPrinterSetup
+aliases:
+- seiko-epson/epson-connect-printer-setup

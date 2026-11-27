@@ -1,0 +1,9 @@
+key: gnome/libxml2
+publisher: gnome
+name: libxml2
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- gnome-project/libxml2

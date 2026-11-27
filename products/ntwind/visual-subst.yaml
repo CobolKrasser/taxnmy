@@ -1,0 +1,12 @@
+key: ntwind/visual-subst
+publisher: ntwind
+name: Visual Subst
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/VisualSubst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/VisualSubst
+identifiers:
+- winget: ntwind.VisualSubst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/VisualSubst
+aliases:
+- ntwind-software/visual-subst

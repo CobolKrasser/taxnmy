@@ -1,0 +1,12 @@
+key: wisecleaner/wise-disk-cleaner
+publisher: wisecleaner
+name: Wise Disk Cleaner
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDiskCleaner
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDiskCleaner
+identifiers:
+- winget: WiseCleaner.WiseDiskCleaner
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDiskCleaner
+aliases:
+- wisecleaner-com/wise-disk-cleaner

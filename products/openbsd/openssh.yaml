@@ -1,0 +1,9 @@
+key: openbsd/openssh
+publisher: openbsd
+name: OpenSSH
+kind: software
+source: https://www.openssh.org/
+versions:
+  source: https://www.openssh.org/releasenotes.html
+aliases:
+- openbsd-project/openssh

@@ -1,4 +1,8 @@
 key: polargoose
 name: PolarGoose
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/BluetoothDevicePairing
-aliases: []
+aliases:
+- polargoose-freedesktop
+- polargoose-llvm
+- polargoose-niklasso
+- polargoose-trieck

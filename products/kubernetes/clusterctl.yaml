@@ -1,0 +1,12 @@
+key: kubernetes/clusterctl
+publisher: kubernetes
+name: clusterctl
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/clusterctl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/clusterctl
+identifiers:
+- winget: Kubernetes.clusterctl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/clusterctl
+aliases:
+- the-kubernetes-authors/clusterctl

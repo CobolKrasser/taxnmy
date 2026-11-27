@@ -1,0 +1,12 @@
+key: rust/rustup-the-rust-toolchain-installer
+publisher: rust
+name: 'Rustup: the Rust toolchain installer'
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rustup
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rustup
+identifiers:
+- winget: Rustlang.Rustup
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rustup
+aliases:
+- the-rust-programming-language/rustup-the-rust-toolchain-installer

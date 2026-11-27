@@ -8,4 +8,9 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:rust-lang:rust
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/rust.md
-aliases: []
+- winget: Rustlang.Rust.GNU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/GNU
+- winget: Rustlang.Rust.MSVC
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/MSVC
+aliases:
+- the-rust-project-developers/rust

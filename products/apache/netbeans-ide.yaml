@@ -1,0 +1,12 @@
+key: apache/netbeans-ide
+publisher: apache
+name: Apache NetBeans IDE
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/NetBeans
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/NetBeans
+identifiers:
+- winget: Apache.NetBeans
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/NetBeans
+aliases:
+- the-apache-software-foundation/apache-netbeans-ide

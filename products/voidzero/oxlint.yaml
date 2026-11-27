@@ -1,0 +1,12 @@
+key: voidzero/oxlint
+publisher: voidzero
+name: oxlint
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxc-project/oxlint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxc-project/oxlint
+identifiers:
+- winget: oxc-project.oxlint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/oxc-project/oxlint
+aliases:
+- voidzero-inc-and-contributors/oxlint

@@ -1,0 +1,12 @@
+key: qgis/ltr
+publisher: qgis
+name: QGIS (LTR)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSGeo/QGIS_LTR
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSGeo/QGIS_LTR
+identifiers:
+- winget: OSGeo.QGIS_LTR
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OSGeo/QGIS_LTR
+aliases:
+- qgis-org/qgis-ltr

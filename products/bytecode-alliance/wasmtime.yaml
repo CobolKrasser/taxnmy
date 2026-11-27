@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: BytecodeAlliance.Wasmtime.Portable
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime/Portable
-aliases: []
+- winget: BytecodeAlliance.Wasmtime
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BytecodeAlliance/Wasmtime
+aliases:
+- crane-station/wasmtime

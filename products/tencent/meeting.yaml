@@ -1,0 +1,12 @@
+key: tencent/meeting
+publisher: tencent
+name: Tencent Meeting
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentMeeting
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentMeeting
+identifiers:
+- winget: Tencent.TencentMeeting
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentMeeting
+aliases:
+- tencent-technology-shenzhen/tencent-meeting

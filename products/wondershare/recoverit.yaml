@@ -1,0 +1,12 @@
+key: wondershare/recoverit
+publisher: wondershare
+name: Wondershare Recoverit
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Recoverit
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Recoverit
+identifiers:
+- winget: Wondershare.Recoverit
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/Recoverit
+aliases:
+- wondershare-software/wondershare-recoverit

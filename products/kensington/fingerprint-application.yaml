@@ -1,0 +1,12 @@
+key: kensington/fingerprint-application
+publisher: kensington
+name: Kensington Fingerprint Application
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/FingerprintApplication
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/FingerprintApplication
+identifiers:
+- winget: Kensington.FingerprintApplication
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kensington/FingerprintApplication
+aliases:
+- kensington-computer-products-group/kensington-fingerprint-application

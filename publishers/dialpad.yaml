@@ -1,4 +1,5 @@
 key: dialpad
 name: Dialpad
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Dialpad/Dialpad
-aliases: []
+aliases:
+- dialpad-meetings

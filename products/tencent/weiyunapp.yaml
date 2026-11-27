@@ -1,0 +1,12 @@
+key: tencent/weiyunapp
+publisher: tencent
+name: WeiyunApp
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Weiyun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Weiyun
+identifiers:
+- winget: Tencent.Weiyun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/Weiyun
+aliases:
+- tencent-com/weiyunapp

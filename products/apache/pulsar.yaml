@@ -1,0 +1,12 @@
+key: apache/pulsar
+publisher: apache
+name: Apache Pulsar
+kind: software
+source: https://pulsar.apache.org/contribute/release-policy/
+versions:
+  source: https://pulsar.apache.org/contribute/release-policy/
+identifiers:
+- cpe: cpe:2.3:a:apache:pulsar
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/apache-pulsar.md
+aliases:
+- the-apache-software-foundation/apache-pulsar

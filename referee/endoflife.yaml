@@ -54,11 +54,11 @@ pages:
   # generations of processors: Fred, 23 November 2026; active support counts as updates (microcode)
   intel-processors: {publisher: intel, prefix: Intel}
   # software
-  external-dns: {publisher: the-kubernetes-authors}
+  external-dns: {publisher: kubernetes}
   font-awesome: {publisher: fonticons}
   gleam: {publisher: gleam}
-  karpenter: {publisher: the-kubernetes-authors}
-  kubernetes-node-feature-discovery: {publisher: the-kubernetes-authors}
+  karpenter: {publisher: kubernetes}
+  kubernetes-node-feature-discovery: {publisher: kubernetes}
   micronaut: {publisher: micronaut-foundation}
   opnsense: {publisher: deciso}
   ros: {publisher: open-robotics}

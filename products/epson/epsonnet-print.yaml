@@ -1,0 +1,12 @@
+key: epson/epsonnet-print
+publisher: epson
+name: EpsonNet Print
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetPrint
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetPrint
+identifiers:
+- winget: EPSON.EpsonNetPrint
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonNetPrint
+aliases:
+- seiko-epson/epsonnet-print

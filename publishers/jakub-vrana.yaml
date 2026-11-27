@@ -1,4 +1,9 @@
 key: jakub-vrana
 name: Jakub Vrána
 source: https://www.adminer.org/
-aliases: []
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- adminer

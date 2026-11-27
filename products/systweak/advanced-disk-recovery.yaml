@@ -1,0 +1,12 @@
+key: systweak/advanced-disk-recovery
+publisher: systweak
+name: Advanced Disk Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedDiskRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedDiskRecovery
+identifiers:
+- winget: SystweakSoftware.AdvancedDiskRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SystweakSoftware/AdvancedDiskRecovery
+aliases:
+- systweak-software/advanced-disk-recovery

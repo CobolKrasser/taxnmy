@@ -1,0 +1,12 @@
+key: stardock/multiplicity-4
+publisher: stardock
+name: Multiplicity 4
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/Multiplicity4
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/Multiplicity4
+identifiers:
+- winget: StardockSystems.Multiplicity4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StardockSystems/Multiplicity4
+aliases:
+- stardock-systems/multiplicity-4

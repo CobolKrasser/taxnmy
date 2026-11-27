@@ -1,0 +1,12 @@
+key: kubernetes/aws-iam-authenticator
+publisher: kubernetes
+name: AWS IAM Authenticator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/aws-iam-authenticator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/aws-iam-authenticator
+identifiers:
+- winget: Kubernetes.aws-iam-authenticator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/aws-iam-authenticator
+aliases:
+- the-kubernetes-authors/aws-iam-authenticator

@@ -5,4 +5,8 @@ kind: software
 source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
 versions:
   source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
-aliases: []
+identifiers:
+- winget: ABB.e-Design
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/ABB/e-Design
+aliases:
+- abb-s-p-a-abb-sace-division/e-design

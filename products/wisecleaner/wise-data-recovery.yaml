@@ -1,0 +1,12 @@
+key: wisecleaner/wise-data-recovery
+publisher: wisecleaner
+name: Wise Data Recovery
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDataRecovery
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDataRecovery
+identifiers:
+- winget: WiseCleaner.WiseDataRecovery
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseDataRecovery
+aliases:
+- wisecleaner-com/wise-data-recovery

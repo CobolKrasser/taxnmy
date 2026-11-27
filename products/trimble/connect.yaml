@@ -1,0 +1,12 @@
+key: trimble/connect
+publisher: trimble
+name: Trimble Connect
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/TrimbleConnect
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/TrimbleConnect
+identifiers:
+- winget: Trimble.TrimbleConnect
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Trimble/TrimbleConnect
+aliases:
+- trimble-inc-and-affiliates/trimble-connect

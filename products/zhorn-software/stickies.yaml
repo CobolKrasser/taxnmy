@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: ZhornSoftware.Stickies
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/z/ZhornSoftware/Stickies
-aliases: []
+- winget: Stickies.Stickies
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stickies/Stickies
+aliases:
+- stickies/stickies

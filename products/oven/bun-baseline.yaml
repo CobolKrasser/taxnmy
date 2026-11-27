@@ -1,0 +1,12 @@
+key: oven/bun-baseline
+publisher: oven
+name: Bun Baseline
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Baseline
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Baseline
+identifiers:
+- winget: Oven-sh.Bun.Baseline
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/Baseline
+aliases:
+- oven-sh/bun-baseline

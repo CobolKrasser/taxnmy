@@ -1,0 +1,12 @@
+key: corsair/elgato-camera-hub
+publisher: corsair
+name: Elgato Camera Hub
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/CameraHub
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/CameraHub
+identifiers:
+- winget: Elgato.CameraHub
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Elgato/CameraHub
+aliases:
+- corsair-memory/elgato-camera-hub

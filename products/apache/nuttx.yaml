@@ -1,0 +1,9 @@
+key: apache/nuttx
+publisher: apache
+name: NuttX
+kind: operating-system
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- the-apache-software-foundation/nuttx

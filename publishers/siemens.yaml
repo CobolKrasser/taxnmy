@@ -5,4 +5,8 @@ machine_sources:
 - url: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
   format: csaf-provider
   source: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
-aliases: []
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- simens

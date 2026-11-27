@@ -1,0 +1,12 @@
+key: signify/hue-sync
+publisher: signify
+name: Hue Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/HueSync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/HueSync
+identifiers:
+- winget: Philips.HueSync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Philips/HueSync
+aliases:
+- signify-netherlands/hue-sync

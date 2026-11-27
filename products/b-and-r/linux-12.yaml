@@ -1,0 +1,9 @@
+key: b-and-r/linux-12
+publisher: b-and-r
+name: B&R Linux 12
+kind: operating-system
+source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+aliases:
+- b-and-r-industrial-automation/b-and-r-linux-12

@@ -8,4 +8,7 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:axis:device_manager
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+- winget: AXIS.AXISDeviceManager
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AXIS/AXISDeviceManager
+aliases:
+- axis-communications/axis-device-manager

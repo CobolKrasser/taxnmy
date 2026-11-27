@@ -1,0 +1,12 @@
+key: nirsoft/alternatestreamview
+publisher: nirsoft
+name: AlternateStreamView
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AlternateStreamView
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AlternateStreamView
+identifiers:
+- winget: NirSoft.AlternateStreamView
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NirSoft/AlternateStreamView
+aliases:
+- nir-sofer/alternatestreamview

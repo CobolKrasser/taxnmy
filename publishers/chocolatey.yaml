@@ -1,4 +1,5 @@
 key: chocolatey
 name: Chocolatey
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chocolatey/ChocolateyGUI
-aliases: []
+aliases:
+- chocolatey-software

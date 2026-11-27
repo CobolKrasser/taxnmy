@@ -1,0 +1,12 @@
+key: tenable/nessus-network-monitor
+publisher: tenable
+name: Nessus Network Monitor
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:tenable:nessus_network_monitor
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- tenable-security/nessus-network-monitor

@@ -1,0 +1,12 @@
+key: mediaarea/mediainfo
+publisher: mediaarea
+name: MediaInfo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaArea/MediaInfo/GUI
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaArea/MediaInfo/GUI
+identifiers:
+- winget: MediaArea.MediaInfo.GUI
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaArea/MediaInfo/GUI
+aliases:
+- mediaarea-net/mediainfo

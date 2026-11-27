@@ -1,0 +1,12 @@
+key: polargoose/uchardet
+publisher: polargoose
+name: uchardet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/uchardet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/uchardet
+identifiers:
+- winget: PolarGoose.uchardet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PolarGoose/uchardet
+aliases:
+- polargoose-freedesktop/uchardet

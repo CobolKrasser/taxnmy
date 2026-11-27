@@ -8,4 +8,5 @@ versions:
 identifiers:
 - winget: WitteSoftware.ModbusSlave
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusSlave
-aliases: []
+aliases:
+- modbus-tools/modbus-slave

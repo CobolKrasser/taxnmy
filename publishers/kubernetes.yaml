@@ -1,4 +1,6 @@
 key: kubernetes
 name: Kubernetes
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/minikube
-aliases: []
+aliases:
+- kubernetes-csi
+- the-kubernetes-authors

@@ -1,0 +1,12 @@
+key: posit-software/air
+publisher: posit-software
+name: Air
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Air
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Air
+identifiers:
+- winget: Posit.Air
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Posit/Air
+aliases:
+- posit-software-pbc/air

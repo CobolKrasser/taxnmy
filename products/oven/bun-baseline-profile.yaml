@@ -1,0 +1,12 @@
+key: oven/bun-baseline-profile
+publisher: oven
+name: Bun Baseline Profile
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/BaselineProfile
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/BaselineProfile
+identifiers:
+- winget: Oven-sh.Bun.BaselineProfile
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oven-sh/Bun/BaselineProfile
+aliases:
+- oven-sh/bun-baseline-profile

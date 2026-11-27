@@ -1,0 +1,12 @@
+key: auslogics/chillmate
+publisher: auslogics
+name: Auslogics ChillMate
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/ChillMate
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/ChillMate
+identifiers:
+- winget: Auslogics.ChillMate
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Auslogics/ChillMate
+aliases:
+- auslogics-labs/auslogics-chillmate

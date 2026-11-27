@@ -1,0 +1,12 @@
+key: kubernetes/cli
+publisher: kubernetes
+name: Kubernetes CLI
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kubectl
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kubectl
+identifiers:
+- winget: Kubernetes.kubectl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/Kubernetes/kubectl
+aliases:
+- the-kubernetes-authors/kubernetes-cli

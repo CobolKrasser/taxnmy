@@ -8,4 +8,11 @@ versions:
 identifiers:
 - cpe: cpe:2.3:a:firebird:firebird
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+- winget: FirebirdProject.Firebird.3
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FirebirdProject/Firebird/3
+- winget: FirebirdProject.Firebird.4
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FirebirdProject/Firebird/4
+- winget: FirebirdProject.Firebird.5
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FirebirdProject/Firebird/5
+aliases:
+- firebird-project/firebird

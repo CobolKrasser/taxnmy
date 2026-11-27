@@ -1,0 +1,12 @@
+key: amazon/music
+publisher: amazon
+name: Amazon Music
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Music
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Music
+identifiers:
+- winget: Amazon.Music
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Music
+aliases:
+- amazon-com-services/amazon-music

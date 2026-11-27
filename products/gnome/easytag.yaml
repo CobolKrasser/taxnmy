@@ -1,0 +1,12 @@
+key: gnome/easytag
+publisher: gnome
+name: EasyTAG
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/EasyTAG
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/EasyTAG
+identifiers:
+- winget: gnome.EasyTAG
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/EasyTAG
+aliases:
+- gnome-project/easytag

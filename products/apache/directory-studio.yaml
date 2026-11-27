@@ -1,0 +1,12 @@
+key: apache/directory-studio
+publisher: apache
+name: Apache Directory Studio
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/DirectoryStudio
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/DirectoryStudio
+identifiers:
+- winget: Apache.DirectoryStudio
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Apache/DirectoryStudio
+aliases:
+- the-apache-software-foundation/apache-directory-studio

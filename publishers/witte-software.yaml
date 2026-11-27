@@ -1,4 +1,9 @@
 key: witte-software
 name: Witte Software
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WitteSoftware/ModbusPoll
-aliases: []
+machine_sources:
+- url: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+  format: csaf-provider
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- modbus-tools

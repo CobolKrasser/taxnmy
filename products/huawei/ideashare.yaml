@@ -1,0 +1,12 @@
+key: huawei/ideashare
+publisher: huawei
+name: IdeaShare
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShare
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShare
+identifiers:
+- winget: Huawei.IdeaShare
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Huawei/IdeaShare
+aliases:
+- huawei-technologies/ideashare

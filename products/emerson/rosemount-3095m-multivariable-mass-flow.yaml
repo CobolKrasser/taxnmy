@@ -1,0 +1,9 @@
+key: emerson/rosemount-3095m-multivariable-mass-flow
+publisher: emerson
+name: Rosemount 3095M MultiVariable Mass Flow
+kind: device
+source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+versions:
+  source: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json
+aliases:
+- emerson-process-management/rosemount-3095m-multivariable-mass-flow

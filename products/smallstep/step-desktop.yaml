@@ -1,0 +1,12 @@
+key: smallstep/step-desktop
+publisher: smallstep
+name: step-desktop
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smallstep/step-desktop
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smallstep/step-desktop
+identifiers:
+- winget: Smallstep.step-desktop
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Smallstep/step-desktop
+aliases:
+- smallstep-labs/step-desktop

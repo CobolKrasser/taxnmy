@@ -1,0 +1,12 @@
+key: zoom/client
+publisher: zoom
+name: Zoom Client
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:zoom:zoom_client
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- zoom-video-communications/zoom-client

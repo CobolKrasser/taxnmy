@@ -1,0 +1,12 @@
+key: ondrej-sika/slr
+publisher: ondrej-sika
+name: slr
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slr
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slr
+identifiers:
+- winget: sikalabs.slr
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sikalabs/slr
+aliases:
+- ondrej-sika-and-sikalabs/slr

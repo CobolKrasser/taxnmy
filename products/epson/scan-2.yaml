@@ -1,0 +1,12 @@
+key: epson/scan-2
+publisher: epson
+name: Epson Scan 2
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonScan2
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonScan2
+identifiers:
+- winget: EPSON.EpsonScan2
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EPSON/EpsonScan2
+aliases:
+- seiko-epson/epson-scan-2

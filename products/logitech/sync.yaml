@@ -1,0 +1,12 @@
+key: logitech/sync
+publisher: logitech
+name: Logitech Sync
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Sync
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Sync
+identifiers:
+- winget: Logitech.Sync
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logitech/Sync
+aliases:
+- logitech-europe/logitech-sync

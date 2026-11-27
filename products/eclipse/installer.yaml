@@ -1,0 +1,12 @@
+key: eclipse/installer
+publisher: eclipse
+name: Eclipse Installer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Inst
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Inst
+identifiers:
+- winget: EclipseFoundation.Eclipse.Inst
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EclipseFoundation/Eclipse/Inst
+aliases:
+- eclipse-foundation/eclipse-installer

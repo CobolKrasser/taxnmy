@@ -1,0 +1,13 @@
+key: blackberry/rim-blackberry-desktop-software
+publisher: blackberry
+name: RIM BlackBerry Desktop-Software
+kind: software
+source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+versions:
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+identifiers:
+- cpe: cpe:2.3:a:rim:blackberry_desktop_software
+  source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+aliases:
+- rim/rim-blackberry-desktop-software
+- rim/blackberry-desktop-software

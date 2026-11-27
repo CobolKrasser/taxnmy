@@ -1,0 +1,12 @@
+key: lexicool/lexibar-russian
+publisher: lexicool
+name: Lexibar Russian
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/RU
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/RU
+identifiers:
+- winget: Lexicool.Lexibar.RU
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Lexicool/Lexibar/RU
+aliases:
+- lexicool-com/lexibar-russian

@@ -1,4 +1,5 @@
 key: chromium
 name: Chromium
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/Chromium/ChromeDriver
-aliases: []
+aliases:
+- the-chromium-authors

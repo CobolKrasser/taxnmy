@@ -1,0 +1,12 @@
+key: apache/solr
+publisher: apache
+name: Apache Solr
+kind: software
+source: https://solr.apache.org/downloads.html#about-versions-and-support
+versions:
+  source: https://solr.apache.org/downloads.html#about-versions-and-support
+identifiers:
+- cpe: cpe:2.3:a:apache:solr
+  source: https://github.com/endoflife-date/endoflife.date/blob/master/products/solr.md
+aliases:
+- the-apache-software-foundation/apache-solr

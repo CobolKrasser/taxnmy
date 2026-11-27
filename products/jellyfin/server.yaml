@@ -1,0 +1,12 @@
+key: jellyfin/server
+publisher: jellyfin
+name: Jellyfin Server
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/Server
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/Server
+identifiers:
+- winget: Jellyfin.Server
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/Jellyfin/Server
+aliases:
+- the-jellyfin-project/jellyfin-server

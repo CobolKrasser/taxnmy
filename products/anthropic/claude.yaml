@@ -5,5 +5,8 @@ kind: software
 source: https://endoflife.date/claude
 versions:
   source: https://endoflife.date/claude
-identifiers: []
-aliases: []
+identifiers:
+- winget: Anthropic.Claude
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Anthropic/Claude
+aliases:
+- anthropic-pbc/claude

@@ -1,0 +1,12 @@
+key: rust/gnu-llvm
+publisher: rust
+name: Rust (GNU LLVM)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/GNU/LLVM
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/GNU/LLVM
+identifiers:
+- winget: Rustlang.Rust.GNU.LLVM
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rustlang/Rust/GNU/LLVM
+aliases:
+- the-rust-project-developers/rust-gnu-llvm

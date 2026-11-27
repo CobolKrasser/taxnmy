@@ -1,0 +1,12 @@
+key: astral/ty
+publisher: astral
+name: ty
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/ty
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/ty
+identifiers:
+- winget: astral-sh.ty
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/ty
+aliases:
+- astral-software/ty

@@ -1,0 +1,12 @@
+key: wisecleaner/wise-game-booster
+publisher: wisecleaner
+name: Wise Game Booster
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseGameBooster
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseGameBooster
+identifiers:
+- winget: WiseCleaner.WiseGameBooster
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiseCleaner/WiseGameBooster
+aliases:
+- wisecleaner-com/wise-game-booster

@@ -8,4 +8,7 @@ versions:
 identifiers:
 - purl: pkg:rpm/redhat/tar
   source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
-aliases: []
+- purl: pkg:rpm/rhel/tar
+  source: https://advisories.stackable.tech/.well-known/csaf/provider-metadata.json
+aliases:
+- rhel/tar

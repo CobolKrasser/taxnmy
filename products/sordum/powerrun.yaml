@@ -1,0 +1,12 @@
+key: sordum/powerrun
+publisher: sordum
+name: PowerRun
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/PowerRun
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/PowerRun
+identifiers:
+- winget: sordum.PowerRun
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/sordum/PowerRun
+aliases:
+- sordum-org/powerrun

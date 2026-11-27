@@ -1,0 +1,12 @@
+key: chromium/winchrome
+publisher: chromium
+name: winchrome
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macchrome/winchrome
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macchrome/winchrome
+identifiers:
+- winget: macchrome.winchrome
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/macchrome/winchrome
+aliases:
+- the-chromium-authors/winchrome

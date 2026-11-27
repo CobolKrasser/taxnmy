@@ -1,0 +1,12 @@
+key: raku/rakudo
+publisher: raku
+name: Rakudo
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo
+identifiers:
+- winget: Rakudo.Rakudo
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/Rakudo/Rakudo
+aliases:
+- the-raku-community/rakudo

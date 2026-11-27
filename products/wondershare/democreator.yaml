@@ -1,0 +1,12 @@
+key: wondershare/democreator
+publisher: wondershare
+name: Wondershare DemoCreator
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/DemoCreator
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/DemoCreator
+identifiers:
+- winget: Wondershare.DemoCreator
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/Wondershare/DemoCreator
+aliases:
+- wondershare-software/wondershare-democreator

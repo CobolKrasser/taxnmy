@@ -1,0 +1,12 @@
+key: gadwin/web-snapshot
+publisher: gadwin
+name: Gadwin Web Snapshot
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/WebSnapshot
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/WebSnapshot
+identifiers:
+- winget: Gadwin.WebSnapshot
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Gadwin/WebSnapshot
+aliases:
+- gadwin-systems/gadwin-web-snapshot

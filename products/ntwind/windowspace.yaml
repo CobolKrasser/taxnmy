@@ -1,0 +1,12 @@
+key: ntwind/windowspace
+publisher: ntwind
+name: WindowSpace
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/windowspace
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/windowspace
+identifiers:
+- winget: ntwind.windowspace
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/ntwind/windowspace
+aliases:
+- ntwind-software/windowspace

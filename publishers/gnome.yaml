@@ -1,4 +1,5 @@
 key: gnome
 name: GNOME
 source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/gnome/Dia
-aliases: []
+aliases:
+- gnome-project
