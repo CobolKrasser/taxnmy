@@ -1,0 +1,12 @@
+key: ben-burwood/dataframer
+publisher: ben-burwood
+name: DataFramer
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenBurwood/DataFramer
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenBurwood/DataFramer
+identifiers:
+- winget: BenBurwood.DataFramer
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/BenBurwood/DataFramer
+aliases:
+- benburwood/dataframer

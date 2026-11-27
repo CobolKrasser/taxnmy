@@ -1,0 +1,12 @@
+key: ractive/saturnus-command-line
+publisher: ractive
+name: saturnus (command line)
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ractive/saturnus
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ractive/saturnus
+identifiers:
+- winget: ractive.saturnus
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/ractive/saturnus
+aliases:
+- at-ractive/saturnus-command-line

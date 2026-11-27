@@ -1,0 +1,12 @@
+key: ahmed-samy/imagetype
+publisher: ahmed-samy
+name: ImageType
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhmedSamy/ImageType
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhmedSamy/ImageType
+identifiers:
+- winget: AhmedSamy.ImageType
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhmedSamy/ImageType
+aliases:
+- ahmed-samy-elkhouly/imagetype

@@ -1,0 +1,12 @@
+key: nuits-jp/gistget
+publisher: nuits-jp
+name: GistGet
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuitsJp/GistGet
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuitsJp/GistGet
+identifiers:
+- winget: NuitsJp.GistGet
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/n/NuitsJp/GistGet
+aliases:
+- nuitsjp/gistget

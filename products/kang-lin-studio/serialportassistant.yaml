@@ -1,0 +1,12 @@
+key: kang-lin-studio/serialportassistant
+publisher: kang-lin-studio
+name: SerialPortAssistant
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KangLin/SerialPortAssistant
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KangLin/SerialPortAssistant
+identifiers:
+- winget: KangLin.SerialPortAssistant
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KangLin/SerialPortAssistant
+aliases:
+- kanglin-studio/serialportassistant

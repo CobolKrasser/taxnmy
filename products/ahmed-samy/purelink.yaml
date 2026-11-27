@@ -1,0 +1,12 @@
+key: ahmed-samy/purelink
+publisher: ahmed-samy
+name: PureLink
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhmedSamy/PureLink
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhmedSamy/PureLink
+identifiers:
+- winget: AhmedSamy.PureLink
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AhmedSamy/PureLink
+aliases:
+- ahmed-samy-el-khouly/purelink

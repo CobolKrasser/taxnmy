@@ -1,0 +1,12 @@
+key: gorilladevs/ferium
+publisher: gorilladevs
+name: Ferium
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GorillaDevs/Ferium
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GorillaDevs/Ferium
+identifiers:
+- winget: GorillaDevs.Ferium
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GorillaDevs/Ferium
+aliases:
+- gorilla-devs/ferium

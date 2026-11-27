@@ -1,0 +1,12 @@
+key: core-ftp/pro
+publisher: core-ftp
+name: Core FTP Pro
+kind: software
+source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/CoreFTP
+versions:
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/CoreFTP
+identifiers:
+- winget: CoreFTP.CoreFTP
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CoreFTP/CoreFTP
+aliases:
+- coreftp/core-ftp-pro
