@@ -8,4 +8,7 @@ versions:
 identifiers:
 - purl: pkg:github/argoproj/argo-cd
   source: https://github.com/endoflife-date/endoflife.date/blob/master/products/argo-cd.md
-aliases: []
+- winget: argoproj.argocd
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/argoproj/argocd
+aliases:
+- argo-project/argocd

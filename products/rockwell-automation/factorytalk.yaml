@@ -10,4 +10,5 @@ identifiers:
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
 - cpe: cpe:2.3:a:rockwell_automation:factorytalk
   source: https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- rockwell-automation/factory-talk

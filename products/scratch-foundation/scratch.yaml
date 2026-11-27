@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: MITMediaLab.Scratch.3
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/Scratch/3
-aliases: []
+- winget: MITMediaLab.Scratch.1
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MITMediaLab/Scratch/1
+aliases:
+- lifelong-kindergarten-group-at-mit-media-lab/scratch

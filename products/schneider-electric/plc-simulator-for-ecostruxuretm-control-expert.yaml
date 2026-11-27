@@ -1,8 +1,9 @@
 key: schneider-electric/plc-simulator-for-ecostruxuretm-control-expert
 publisher: schneider-electric
 name: PLC Simulator for EcoStruxure™ Control Expert
-kind: device
+kind: software
 source: https://www.se.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://www.se.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- schneider-electric-software/plc-simulator-for-ecostruxure-control-expert

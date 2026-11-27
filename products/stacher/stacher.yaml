@@ -8,4 +8,7 @@ versions:
 identifiers:
 - winget: Stacher.Stacher
   source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stacher/Stacher
-aliases: []
+- winget: Stacher.youtube-dl
+  source: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Stacher/youtube-dl
+aliases:
+- stacherio/stacher

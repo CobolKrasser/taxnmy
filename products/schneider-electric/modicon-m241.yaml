@@ -1,8 +1,9 @@
 key: schneider-electric/modicon-m241
 publisher: schneider-electric
 name: Modicon M241
-kind: software
+kind: device
 source: https://www.se.com/.well-known/csaf/provider-metadata.json
 versions:
   source: https://www.se.com/.well-known/csaf/provider-metadata.json
-aliases: []
+aliases:
+- schneider-electric-software/modicon-m241

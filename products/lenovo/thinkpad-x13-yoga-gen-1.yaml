@@ -5,4 +5,6 @@ kind: device
 source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2URM.firmware
 versions:
   source: https://fwupd.org/lvfs/devices/com.lenovo.ThinkPadN2URM.firmware
-aliases: []
+aliases:
+- lenovo/thinkpad-x13-yoga-gen1
+- lenovo/thinkpad-x13yogagen1
